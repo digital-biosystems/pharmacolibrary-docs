@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;J05A&quot;,&quot;href&quot;:&quot;atc/J05A.md&quot;},{&quot;label&quot;:&quot;amprenavir&quot;,&quot;href&quot;:&quot;drugs/drug_amprenavir/&quot;},{&quot;label&quot;:&quot;Okusanya_2007 \u00b7 median&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Amprenavir_Johnson2014_reference&quot;,&quot;label&quot;:&quot;Johnson_2014_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_amprenavir/Amprenavir_Johnson2014_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amprenavir_Okusanya2007_mean&quot;,&quot;label&quot;:&quot;Okusanya_2007_mean&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_amprenavir/Amprenavir_Okusanya2007_mean.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amprenavir_Okusanya2007_median&quot;,&quot;label&quot;:&quot;Okusanya_2007_median&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_amprenavir/Amprenavir_Okusanya2007_median.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Amprenavir_Johnson2014_reference&quot;,&quot;label&quot;:&quot;Johnson_2014_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_amprenavir/Amprenavir_Johnson2014_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amprenavir_Okusanya2007_mean&quot;,&quot;label&quot;:&quot;Okusanya_2007_mean&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_amprenavir/Amprenavir_Okusanya2007_mean.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amprenavir_Okusanya2007_median&quot;,&quot;label&quot;:&quot;Okusanya_2007_median&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_amprenavir/Amprenavir_Okusanya2007_median.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # amprenavir — `Amprenavir_Okusanya2007_median`
 
-> ## <span class="pk-badge pk-badge--green">extracted</span>
+> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -15,19 +15,25 @@
 
 **Model:** A simulatable model was generated — see the **Models** and **Simulation** tabs.
 
-> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+### Reviewer guidance
+
+**Every check that could be run on this record passed.**
+
+<sub>reviewed by rule template (no LLM)</sub>
+
+> ⚠️ **STALE** — review status `curated_candidate` (reviewed 2026-10-07 14:32:43.552673+00:00) predates the upstream re-run (2026-10-07 15:09:32.023492+00:00). Current validate status: `extracted`.
 
 ## Citation
 Okusanya O et al., Compartmental pharmacokinetic analysis…, Antimicrobial agents and ch… (2007)
   ·  DOI: [10.1128/AAC.00570-06](https://doi.org/10.1128/AAC.00570-06)
 
 ## Model component
-<dbs-pgx drug="amprenavir" model-id="Amprenavir_Okusanya2007_median" status="extracted" stale="false" population="healthy HIV-seronegative adults" measured-compound="amprenavir" parameterization="apparent" topology="2C"></dbs-pgx>
+<dbs-pgx drug="amprenavir" model-id="Amprenavir_Okusanya2007_median" status="extracted" stale="true" population="HIV-seronegative healthy adults" measured-compound="amprenavir" parameterization="apparent" topology="2C"></dbs-pgx>
 
 **Model structure:** 2-compartment, oral mammillary model — template `PK_2C_enteral`.  
-**Parameters:** 11 extracted.
+**Parameters:** 12 extracted.
 
-**Parameterization:** CL/F, V1/F, V2/F — apparent, F unknown (apparent — bioavailability not identifiable).
+**Parameterization:** CLnorm/F, V1/F, V2/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
 ## Parameters
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
@@ -35,7 +41,8 @@ Okusanya O et al., Compartmental pharmacokinetic analysis…, Antimicrobial agen
 | Vc/F (liters/kg) | `Q290` · V1/F | 0.987 | liters/kg | 0.06909 | [l] / [kg] | not captured | exact (1.0) | tab_1:row1:col2 | — | not captured |
 | Vp/F (liters/kg) | `Q82` · V2/F | 5.61 | liters/kg | 0.39270000000000005 | [l] / [kg] | not captured | exact (1.0) | tab_1:row2:col2 | — | not captured |
 | CLd (liters/h/kg) | `Q30` · Q | 0.320 | liters/h/kg | 6.222222222222222e-06 | [l] / [[h] · [kg]] | not captured | exact (1.0) | tab_1:row3:col2 | — | not captured |
-| CLt/F (liters/h/kg) | `Q27` · CL/F | 0.917 | liters/h/kg | 1.7830555555555556e-05 | [l] / [[h] · [kg]] | not captured | llm (0.6) | tab_1:row4:col2 | — | not captured |
+| CLt/F (liters/h/kg) | `Q355` · CLnorm/F | 0.917 | liters/h/kg | 1.7830555555555556e-05 | [l] / [[h] · [kg]] | not captured | llm (0.6) | tab_1:row4:col2 | — | not captured |
+| Fraction recycled | `Q43` · FR | 0.065 | not captured | not captured | not captured | not captured | llm (0.6) | tab_1:row6:col2 | — | not captured |
 | TLag (h) | `Q83` · tlag | 0.013 | h | 46.8 | [h] | not captured | exact (1.0) | tab_1:row8:col2 | — | not captured |
 | ka (h Ϫ1 ) | `Q49` · kabs | 0.995 | h Ϫ1 | 0.0002763888888888889 | [1] / [h] | not captured | exact (1.0) | tab_1:row9:col2 | — | not captured |
 | kel (h Ϫ1 ) | `Q47` · kel | 0.963 | h Ϫ1 | 0.0002675 | [1] / [h] | not captured | exact (1.0) | tab_1:row10:col2 | — | not captured |
@@ -51,12 +58,8 @@ Okusanya O et al., Compartmental pharmacokinetic analysis…, Antimicrobial agen
 
 ## Departures & gaps
 
-**Deviations:**
-- `apparent_assumption`: F=1, Fm=1, no molar correction (parameterization=apparent)
-
 **Interpretation flags:**
-- dropped duplicate Q27 ('CLb/F (liters/h/kg)', value '0.090') — already have one for this compound
-- dropped unlinked row (NIL): 'Fraction recycled' — extend the ontology if this is a real PK parameter (source ['tab_1:row6:col2'])
+- dropped duplicate Q355 ('CLb/F (liters/h/kg)', value '0.090') — already have one for this compound
 - dropped unlinked row (NIL): 'Recycling time (h)' — extend the ontology if this is a real PK parameter (source ['tab_1:row7:col2'])
 - apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=amprenavir
 - population split: 'median' subgroup of Okusanya_2007 (paper reports 2 populations: mean, median)
@@ -70,14 +73,14 @@ Okusanya O et al., Compartmental pharmacokinetic analysis…, Antimicrobial agen
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 11 | not captured | not captured | not captured |
+| C0_has_structural_params | pass | not captured | 12 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
-| C5_dimension_Q27 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['tab_1:row4:col2'] |
 | C5_dimension_Q290 | pass | [length] ** 3 | not captured | not captured | not captured | ['tab_1:row1:col2'] |
 | C5_dimension_Q30 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['tab_1:row3:col2'] |
 | C5_dimension_Q301 | pass | 1 / [time] | not captured | not captured | not captured | ['tab_1:row11:col2'] |
 | C5_dimension_Q302 | pass | 1 / [time] | not captured | not captured | not captured | ['tab_1:row12:col2'] |
+| C5_dimension_Q355 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['tab_1:row4:col2'] |
 | C5_dimension_Q47 | pass | 1 / [time] | not captured | not captured | not captured | ['tab_1:row10:col2'] |
 | C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['tab_1:row9:col2'] |
 | C5_dimension_Q57 | pass | [time] | not captured | not captured | not captured | ['tab_1:row13:col2'] |
@@ -86,9 +89,20 @@ Okusanya O et al., Compartmental pharmacokinetic analysis…, Antimicrobial agen
 | C5_dimension_Q83 | pass | [time] | not captured | not captured | not captured | ['tab_1:row8:col2'] |
 | C7_apparent_coherence | pass | not captured | not captured | not captured | not captured | not captured |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
-| C9_phys_window_Q27 | pass | clearance within physiological range | 64.2 L/h | not captured | not captured | ['tab_1:row4:col2'] |
 | C9_phys_window_Q290 | pass | volume within physiological range | 69.1 L | not captured | not captured | ['tab_1:row1:col2'] |
 | C9_phys_window_Q82 | pass | volume within physiological range | 393 L | not captured | not captured | ['tab_1:row2:col2'] |
+
+**Reviewer per-scenario checks:**
+
+| check | scenario | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|---|
+| T0_analyte_identity | not captured | pass | not captured | not captured | not captured | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | not captured | skipped | not captured | not captured | not captured | no covariate effects in record |
+| T3_apparent_invariant | not captured | pass | not captured | F=Fm=1, no molar correction | not captured | apparent params must not be double-corrected |
+| T3_output_variable | not captured | pass | C_central (measured=amprenavir) | central.C | not captured | output must be the measured/analyte compartment |
+| T3_param_coverage | not captured | pass | 9 scholar param(s) emitted or defaulted | 9 covered | not captured | all structural parameters accounted for |
+| T3_topology_template | not captured | pass | 2C → PK_2C* | PK_2C_enteral | not captured | engineer template must match the scholar topology |
+| T6_deviations | not captured | pass | not captured | all deviations documented+quantified | not captured | LLM adjudication → deterministic rule |
 
 <details class="legend">
 <summary>Check legend — what each column means</summary>
@@ -98,6 +112,9 @@ Okusanya O et al., Compartmental pharmacokinetic analysis…, Antimicrobial agen
 ## Raw artifacts
 
 - scholar stages: `../../../knowledgebase/drugs/drug_amprenavir/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Okusanya_2007` / `Okusanya_2007::median`)
+- model: `../../../knowledgebase/drugs/drug_amprenavir/models/modelica/Amprenavir_Okusanya2007_median.mo`
+- deviation: `../../../knowledgebase/drugs/drug_amprenavir/models/modelica/Amprenavir_Okusanya2007_median.deviation.json`
+- sim: `../../../knowledgebase/drugs/drug_amprenavir/models/modelica/Amprenavir_Okusanya2007_median.json`
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -106,12 +123,12 @@ Okusanya O et al., Compartmental pharmacokinetic analysis…, Antimicrobial agen
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_amprenavir/Amprenavir_Okusanya2007_median/Amprenavir_Okusanya2007_median_modelica.zip" download>Amprenavir_Okusanya2007_median_modelica.zip</a> <span class="pk-size">(4.1 kB)</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_amprenavir/Amprenavir_Okusanya2007_median/Amprenavir_Okusanya2007_median_fmi.zip" download>Amprenavir_Okusanya2007_median_fmi.zip</a> <span class="pk-size">(4.3 kB)</span><br><a href="models/fmu/PK_2C_enteral.fmu" download>PK_2C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_amprenavir/Amprenavir_Okusanya2007_median/Amprenavir_Okusanya2007_median_matlab.zip" download>Amprenavir_Okusanya2007_median_matlab.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_amprenavir/Amprenavir_Okusanya2007_median/Amprenavir_Okusanya2007_median_matlab_simbio.zip" download>Amprenavir_Okusanya2007_median_matlab_simbio.zip</a> <span class="pk-size">(2.8 kB)</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_amprenavir/Amprenavir_Okusanya2007_median/Amprenavir_Okusanya2007_median_sbml.zip" download>Amprenavir_Okusanya2007_median_sbml.zip</a> <span class="pk-size">(2.8 kB)</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_amprenavir/Amprenavir_Okusanya2007_median/Amprenavir_Okusanya2007_median_cellml.zip" download>Amprenavir_Okusanya2007_median_cellml.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_amprenavir/Amprenavir_Okusanya2007_median/Amprenavir_Okusanya2007_median_fmi.zip" download>Amprenavir_Okusanya2007_median_fmi.zip</a> <span class="pk-size">(4.1 kB)</span><br><a href="models/fmu/PK_2C_enteral.fmu" download>PK_2C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_amprenavir/Amprenavir_Okusanya2007_median/Amprenavir_Okusanya2007_median_matlab.zip" download>Amprenavir_Okusanya2007_median_matlab.zip</a> <span class="pk-size">(3.2 kB)</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_amprenavir/Amprenavir_Okusanya2007_median/Amprenavir_Okusanya2007_median_matlab_simbio.zip" download>Amprenavir_Okusanya2007_median_matlab_simbio.zip</a> <span class="pk-size">(2.7 kB)</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_amprenavir/Amprenavir_Okusanya2007_median/Amprenavir_Okusanya2007_median_sbml.zip" download>Amprenavir_Okusanya2007_median_sbml.zip</a> <span class="pk-size">(2.7 kB)</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_amprenavir/Amprenavir_Okusanya2007_median/Amprenavir_Okusanya2007_median_cellml.zip" download>Amprenavir_Okusanya2007_median_cellml.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
 </tbody></table>
 <p>Each archive holds the model source, a script that simulates it against the appropriate library, and a README describing both and how to run them.</p>
 <p><b>FMI is two downloads.</b> The archive holds this record's parameters and its driver; the simulator itself is <code>PK_2C_enteral.fmu</code>, one compiled template shared by every model of this structure. Take the FMU once, keep it beside the script (or pass <code>--fmu PATH</code>). Running it reproduces the model-specific FMU exactly.</p>
@@ -128,4 +145,4 @@ Okusanya O et al., Compartmental pharmacokinetic analysis…, Antimicrobial agen
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 13:10 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 15:09 UTC</sub>

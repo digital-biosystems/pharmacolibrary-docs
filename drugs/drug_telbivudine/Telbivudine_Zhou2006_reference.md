@@ -4,7 +4,7 @@
 
 # telbivudine — `Telbivudine_Zhou2006_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -14,14 +14,22 @@
 
 **Model:** No model was generated from this record.
 
-> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+### Reviewer guidance
+
+**No volume or clearance — not a compartmental population PK model.**
+
+The paper reports no distribution volume and no clearance or elimination rate; it is an exposure/outcome paper.
+
+<sub>reviewed by rule template (no LLM)</sub>
+
+> ⚠️ **STALE** — review status `rejected` (reviewed 2026-10-07 14:42:50.562858+00:00) predates the upstream re-run (2026-10-07 16:25:19.204194+00:00). Current validate status: `needs_review`.
 
 ## Citation
 Zhou XJ et al., Pharmacokinetics of telbivudine followi…, Antimicrobial agents and ch… (2006)
   ·  DOI: [10.1128/AAC.50.3.874-879.2006](https://doi.org/10.1128/AAC.50.3.874-879.2006)
 
 ## Model component
-<dbs-pgx drug="telbivudine" model-id="Telbivudine_Zhou2006_reference" status="rejected" stale="false" population="adult patients with chronic hepatitis B virus infection" measured-compound="telbivudine" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<dbs-pgx drug="telbivudine" model-id="Telbivudine_Zhou2006_reference" status="needs_review" stale="true" population="adults with chronic hepatitis B virus infection" measured-compound="telbivudine" parameterization="mechanistic" topology="1C"></dbs-pgx>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 3 extracted.
@@ -29,13 +37,13 @@ Zhou XJ et al., Pharmacokinetics of telbivudine followi…, Antimicrobial agents
 **Parameterization:** mechanistic.
 
 ## Parameters
-> ⚠️ This record is not accepted (current status `rejected`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
+> ⚠️ This record is not accepted (current status `needs_review`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| C max (g/ml) SS h | `Q32` · Cmax | 5.02 | not captured | not captured | not captured | not captured | llm (0.6) | Zhou_2006_table_2:row1:col3, Zhou_2006_table_2:row1:col4 | — | not captured |
-| Ratio c | `Q21` · AUC ratio | 6.67 | not captured | not captured | not captured | not captured | llm (0.6) | Zhou_2006_table_2:row2:col1, Zhou_2006_table_2:row2:col2, Zhou_2006_table_2:row2:col3, Zhou_2006_table_2:row2:col4 | — | not captured |
-| C trough (g/ml), d SS | `Q37` · Ctrough | 1.60 | not captured | not captured | not captured | not captured | boundary (0.8) | Zhou_2006_table_2:row3:col1, Zhou_2006_table_2:row3:col2 | — | not captured |
+| C max (g/ml) SS h | `Q32` · Cmax | 2.91 | µg/ml | not captured | µg/ml | not captured | llm (0.6) | Zhou_2006_table_2:row1:col3, Zhou_2006_table_2:row1:col4 | — | not captured |
+| C trough (g/ml), d SS | `Q37` · Ctrough | 0.75 | µg/ml | not captured | µg/ml | not captured | llm_confirmed (0.6) | Zhou_2006_table_2:row3:col1, Zhou_2006_table_2:row3:col2 | — | not captured |
+| cut-off value | `Q22` · CL | 50.0 | mL/min | 8.333333333333332e-07 | L/h | not captured | review_gapfill (0.7) | Jiang_2016:review | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -45,7 +53,11 @@ Zhou XJ et al., Pharmacokinetics of telbivudine followi…, Antimicrobial agents
 ## Departures & gaps
 
 **Interpretation flags:**
+- dropped unlinked row (NIL): 'Ratio c' — extend the ontology if this is a real PK parameter (source ['Zhou_2006_table_2:row2:col1', 'Zhou_2006_table_2:row2:col2', 'Zhou_2006_table_2:row2:col3', 'Zhou_2006_table_2:row2:col4'])
+- implicit units: 'C max (g/ml) SS h' → µg/ml (from the paper text: "Table 2 footnotes state Cmax values as 'g/ml' (µg/ml), e.g., '3.00 and 2.25 g/ml, respectively, for Cmax'.")
+- implicit units: 'C trough (g/ml), d SS' → µg/ml (from the paper text: "Table 2 footnote d reports Ctrough as '0.88 ± 0.59 g/ml' (µg/ml), same concentration unit as Cmax.")
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=telbivudine
+- gap-filled Q22 (CL) from Jiang_2016's review values (primary lacked it)
 - skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
 - skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
 
@@ -55,7 +67,7 @@ Zhou XJ et al., Pharmacokinetics of telbivudine followi…, Antimicrobial agents
 - unparsed cell Zhou_2006_table_2:row3:col3 = '1.45 (0.17) 3.0 (0.4-4.0) 2.1 (1.2-4.0) 3.0 (0.8) 3.6 (0.6) 41.3 (8.4)'
 - unparsed cell Zhou_2006_table_2:row3:col4 = '1.40 (0.40) 2.9 (1.9-3.0) 1.9 (1.9-2.9) 3.1 (1.4) 3.5 (0.9) 29.5 (9.1)'
 - companion parameter table 2 transcribed (8 record(s))
-- no LLM table selection; kept 2 deterministically-scored parameter table(s)
+- LLM selected parameter table(s) 2
 
 ## Validation
 
@@ -63,11 +75,14 @@ Zhou XJ et al., Pharmacokinetics of telbivudine followi…, Antimicrobial agents
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 3 | not captured | not captured | not captured |
-| C0b_disposition_core | fail | not captured | not captured | not captured | not captured | not captured |
-| C5_unit_missing_Q32 | fail | [mass] / [length] ** 3 | not captured | not captured | not captured | ['Zhou_2006_table_2:row1:col3', 'Zhou_2006_table_2:row1:col4'] |
-| C5_unit_missing_Q37 | fail | [mass] / [length] ** 3 | not captured | not captured | not captured | ['Zhou_2006_table_2:row3:col1', 'Zhou_2006_table_2:row3:col2'] |
+| C0_has_structural_params | pass | not captured | 2 | not captured | not captured | not captured |
+| C0c_disposition_complete | fail | not captured | not captured | not captured | not captured | not captured |
+| C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Jiang_2016:review'] |
+| C5_dimension_Q32 | pass | [mass] / [length] ** 3 | not captured | not captured | not captured | ['Zhou_2006_table_2:row1:col3', 'Zhou_2006_table_2:row1:col4'] |
+| C5_dimension_Q37 | pass | [mass] / [length] ** 3 | not captured | not captured | not captured | ['Zhou_2006_table_2:row3:col1', 'Zhou_2006_table_2:row3:col2'] |
+| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 50.0 | not captured | not captured | ['Jiang_2016:review'] |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
+| C9_phys_window_Q22 | pass | clearance within physiological range | 3 L/h | not captured | not captured | ['Jiang_2016:review'] |
 
 <details class="legend">
 <summary>Check legend — what each column means</summary>
@@ -81,9 +96,19 @@ Zhou XJ et al., Pharmacokinetics of telbivudine followi…, Antimicrobial agents
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
-## Models
+## Downloadable models
 
-<p>No downloads: this record is <b>rejected</b>, so it is not published as a model. Any archives generated for it before the verdict have been removed — a download outlives the page that explains it.</p>
+<div class="pk-models-grid"><div class="pk-models-table">
+<table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
+</tbody></table>
+<p>No bundles have been generated for this record yet. When the engineer emits them they appear here automatically — this page reports what is on disk and generates nothing itself.</p>
+</div></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
@@ -92,4 +117,4 @@ _No web simulator for this record: its structure has no shared WebAssembly templ
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 14:08 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 16:25 UTC</sub>

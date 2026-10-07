@@ -4,7 +4,7 @@
 
 # tenofovir disoproxil — `TenofovirDisoproxil_Scott2023_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -14,18 +14,26 @@
 
 **Model:** No model was generated from this record.
 
-> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+### Reviewer guidance
 
-> **Dose compound ≠ measured compound:** dosed `tenofovir_disoproxil`, measured `tenofovir`.
+**Tenofovir's apparent clearance (16.7 L/h) is physiologically implausible for pregnant adults, indicating an extraction error.**
+
+The apparent clearance of tenofovir is listed as 16.7 L/h, which falls outside the physiological window for the population. This magnitude mismatch is inconsistent with the peripheral volume of distribution recorded as 190 L/h. The findings confirm that the clearance value was extracted with an incorrect scale or unit conversion. Extracted — tenofovir disoproxil: CLm/F 16.7 L/h, V1/F 58.8 L, Q/F 13.8 L/h, V2/F 190 L/h, kabs 0.616 /h.
+
+<sub>reviewed by qwen3.8-27b</sub>
+
+> ⚠️ **STALE** — review status `rejected` (reviewed 2026-10-07 14:43:02.330514+00:00) predates the upstream re-run (2026-10-07 16:32:17.767507+00:00). Current validate status: `rejected`.
+
+> **Dose compound ≠ measured compound:** dosed `tenofovir disoproxil fumarate/emtricitabine`, measured `tenofovir (TFV)`.
 
 ## Citation
 Scott RK et al., Clinical trial simulation to evaluate t…, Frontiers in reproductive h… (2023)
   ·  DOI: [10.3389/frph.2023.1224580](https://doi.org/10.3389/frph.2023.1224580)
 
 ## Model component
-<dbs-pgx drug="tenofovir disoproxil" model-id="TenofovirDisoproxil_Scott2023_reference" status="rejected" stale="false" population="pregnant adults" measured-compound="tenofovir" parameterization="apparent" topology="parent_metabolite"></dbs-pgx>
+<dbs-pgx drug="tenofovir disoproxil" model-id="TenofovirDisoproxil_Scott2023_reference" status="rejected" stale="true" population="cisgender women at risk of HIV (PrEP), pregnancy simulation" measured-compound="tenofovir (TFV)" parameterization="apparent" topology="general_linear"></dbs-pgx>
 
-**Model structure:** parent + metabolite; no model was built for this record.  
+**Model structure:** general linear; no model was built for this record.  
 **Parameters:** 5 extracted.
 
 **Parameterization:** CLm/F, Q/F, V1/F, V2/F — apparent, F unknown (apparent — bioavailability not identifiable).
@@ -54,16 +62,15 @@ Scott RK et al., Clinical trial simulation to evaluate t…, Frontiers in reprod
 - dropped value-less row: 'CL/F increment during 2nd trimester (%)' (captured trailing unit '%' for child rows)
 - dropped value-less row: 'CL/F increment during 3rd trimester (%)' (captured trailing unit '%' for child rows)
 - dropped value-less row: 'CL/F increment during pregnancy (%)' (captured trailing unit '%' for child rows)
-- metabolite tenofovir: Q27→Q351 — only the metabolite is measured and fm is not identifiable, so its CL/V are apparent (fm-divided)
-- apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=tenofovir
+- metabolite tenofovir (tfv): Q27→Q351 — only the metabolite is measured and fm is not identifiable, so its CL/V are apparent (fm-divided)
+- apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=tenofovir (TFV)
 - held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
 - topology: transfer parameter unlinked (Q100) — add Kfm/formation-rate/rate-constant to the ontology; routing to review
 - template fit: none — only the metabolite is modelled — no parent compartment
 - status held at route_to_review — not promoted
-- row roles: 3 per-group rows of tenofovir covariate_effect but 0 reference group(s) — kept as printed
-- row roles: 3 per-group rows of tenofovir residual_error but 0 reference group(s) — kept as printed
-- row roles (LLM): model_class=compartmental; 17/17 row label(s) assigned, 20 linked by role; re-tagged parent→tenofovir ×40, parent→emtricitabine ×1
-- molar mass: none found for 'tenofovir' — its concentrations stay mass-only
+- row roles: 3 per-group rows of tenofovir (TFV) covariate_effect but 0 reference group(s) — kept as printed
+- row roles: 3 per-group rows of tenofovir (TFV) residual_error but 0 reference group(s) — kept as printed
+- row roles (LLM): model_class=compartmental; 17/17 row label(s) assigned, 20 linked by role; re-tagged parent→tenofovir (TFV) ×40, parent→emtricitabine (FTC) ×1
 - skipped review gap-fill of TLAG: primary's parameterization (rate-constant / ka-only) does not use it
 
 **Extraction notes:**
@@ -86,7 +93,6 @@ Scott RK et al., Clinical trial simulation to evaluate t…, Frontiers in reprod
 - unparsed cell Scott_2023_table_3:row11:col1 = '85.4%'
 - companion parameter table 3 transcribed (19 record(s), model stage 'final')
 - LLM selected parameter table(s) 2, 3
-- LLM region Scott_2023:results_prose: Error code: 429 - {'error': {'message': 'Rate limit exceeded for api_key: 8d79104cac3d0b5a8019d9c3dd60ff02e7a84591fb3552ddb3bbcabd52b31d23. Limit type: max_parallel_requests. Current limit: 4, Remaining: 0. Limit resets at: 2026-10-07 14:53:05 UTC', 'type': 'throttling_error', 'param': None, 'code': '429'}}
 
 ## Validation
 
@@ -103,7 +109,7 @@ Scott RK et al., Clinical trial simulation to evaluate t…, Frontiers in reprod
 | C5_dimension_Q69 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['T2:row3:col1', 'T2:row3:col2', 'Scott_2023_table_3:row2:col1', 'Scott_2023_table_3:row2:col2'] |
 | C5_dimension_Q82 | fail | [length] ** 3 / [time] | L/h | not captured | not captured | ['T2:row4:col1', 'T2:row4:col2', 'Scott_2023_table_3:row3:col1', 'Scott_2023_table_3:row3:col2'] |
 | C7_apparent_coherence | pass | not captured | not captured | not captured | not captured | not captured |
-| C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
+| C8_topology | fail | ontology-linked transfer parameter on every edge | ['none'] | not captured | not captured | not captured |
 | C9_phys_window_Q290 | pass | volume within physiological range | 58.8 L | not captured | not captured | ['T2:row2:col1', 'T2:row2:col2', 'Scott_2023_table_3:row1:col1', 'Scott_2023_table_3:row1:col2'] |
 | C9_phys_window_Q82 | fail | volume within physiological range | 0.0528 L | not captured | not captured | ['T2:row4:col1', 'T2:row4:col2', 'Scott_2023_table_3:row3:col1', 'Scott_2023_table_3:row3:col2'] |
 
@@ -130,4 +136,4 @@ _No web simulator for this record: its structure has no shared WebAssembly templ
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 14:21 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 16:32 UTC</sub>

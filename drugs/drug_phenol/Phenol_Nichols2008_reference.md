@@ -27,17 +27,19 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which m
 
 <sub>reviewed by rule template (no LLM)</sub>
 
-> ⚠️ **STALE** — review status `needs_review` (reviewed 2026-10-05 09:30:11.999145+00:00) predates the upstream re-run (2026-10-06 21:45:41.650056+00:00). Current validate status: `needs_review`.
+> ⚠️ **STALE** — review status `needs_review` (reviewed 2026-10-05 09:30:11.999145+00:00) predates the upstream re-run (2026-10-07 14:45:59.579830+00:00). Current validate status: `needs_review`.
+
+> **Dose compound ≠ measured compound:** dosed `phenol`, measured `phenol and phenyl glucuronide`.
 
 ## Citation
 Nichols JW et al., Use of online microdialysis sampling to…, Drug metabolism and disposi… (2008)
   ·  DOI: [10.1124/dmd.107.020123](https://doi.org/10.1124/dmd.107.020123)
 
 ## Model component
-<dbs-pgx drug="phenol" model-id="Phenol_Nichols2008_reference" status="needs_review" stale="true" population="rainbow trout" measured-compound="phenol" parameterization="mechanistic" topology="parent_metabolite"></dbs-pgx>
+<dbs-pgx drug="phenol" model-id="Phenol_Nichols2008_reference" status="needs_review" stale="true" population="rainbow trout" measured-compound="phenol and phenyl glucuronide" parameterization="mechanistic" topology="parent_metabolite"></dbs-pgx>
 
 **Model structure:** parent + metabolite; no model was built for this record.  
-**Parameters:** 4 extracted.
+**Parameters:** 6 extracted.
 
 **Parameterization:** mechanistic.
 
@@ -46,9 +48,12 @@ Nichols JW et al., Use of online microdialysis sampling to…, Drug metabolism a
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| PG clearance constant | `Q22` · CL | 15.7 | ml/kg/h | 3.0527777777777776e-07 | [ml] / [[h] · [kg]] | not captured | exact (1.0) | Nichols_2008:abstract | — | not captured |
+| fraction of infused PG eliminated in urine | `Q45` · fm | 93 | % | not captured | [%] | not captured | exact (1.0) | Nichols_2008:abstract | — | not captured |
+| ratio of peak PG concentration in urine to blood | `Q33` · Cmax_ratio | 3.4 | not captured | not captured | not captured | not captured | llm_corrected (0.6) | Nichols_2008:abstract | — | not captured |
+| fitted PG clearance constant | `Q22` · CL | 15.7 | ml/kg/h | 3.0527777777777776e-07 | [ml] / [[h] · [kg]] | not captured | exact (1.0) | Nichols_2008:abstract | — | not captured |
+| ratio of fitted PG clearance constant to reported glomerular filtration rate | `Q31` · CL_ratio | 2.6 | not captured | not captured | not captured | not captured | llm_corrected (0.6) | Nichols_2008:abstract | — | not captured |
 | glucuronidation rate | `Q305` · kfm | 0.049 | /h | 1.3611111111111111e-05 | [1] / [h] | not captured | exact (1.0) | Nichols_2008:abstract | — | not captured |
-| VTFV | `Q61` · V | 2660.0 | L | 2.66 | L | not captured | review_gapfill (0.7) | Thoueille_2023:review | — | not captured |
+| fraction of total rate of PH elimination | `Q900` · equation variable | 7 | % | not captured | [%] | not captured | llm (0.6) | Nichols_2008:abstract | — | not captured |
 | Ka | `Q49` · kabs | 0.0069 | min-1 | 0.00011499999999999999 | 1/h | not captured | review_gapfill (0.7) | Nishida_1995:review | — | not captured |
 
 <details class="legend">
@@ -59,18 +64,19 @@ Nichols JW et al., Use of online microdialysis sampling to…, Drug metabolism a
 ## Departures & gaps
 
 **Interpretation flags:**
-- apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=phenol
-- template fit: none — only the metabolite is modelled — no parent compartment
-- row roles (LLM): model_class=compartmental; 2/2 row label(s) assigned, 2 linked by role; re-tagged phenol→phenyl glucuronide ×2
+- apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=phenol and phenyl glucuronide
+- template fit: none — other model — not a compartmental parent–metabolite model
+- row roles (LLM): model_class=other; 6/6 row label(s) assigned, 3 linked by role; re-tagged phenol and phenyl glucuronide→phenyl glucuronide ×5
+- molar mass: no plausible PubChem entry for 'phenol and phenyl glucuronide' ('phenol and phenyl glucuronide') — left in mass units
+- molar mass: none found for 'phenol and phenyl glucuronide' — its concentrations stay mass-only
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
-- gap-filled Q61 (V) from Thoueille_2023's review values (primary lacked it)
 - skipped review gap-fill of V2: primary is PARENT_METABOLITE (peripheral family needs ≥2C)
 - skipped review gap-fill of Q: primary is PARENT_METABOLITE (peripheral family needs ≥2C)
 - gap-filled Q49 (kabs) from Nishida_1995's review values (primary lacked it)
 - skipped review gap-fill of TLAG: primary's parameterization (rate-constant / ka-only) does not use it
 
 **Extraction notes:**
-- no GROBID TEI available — transcribed from abstract in Nichols_2008_metadata.yaml (2 record(s)); values are summary statistics, not a fitted model
+- no GROBID TEI available — transcribed from abstract in Nichols_2008_metadata.yaml (6 record(s)); values are summary statistics, not a fitted model
 
 ## Validation
 
@@ -101,17 +107,16 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 2 | not captured | not captured | not captured |
+| C0_has_structural_params | pass | not captured | 5 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | fail | not captured | not captured | not captured | not captured | not captured |
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Nichols_2008:abstract'] |
 | C5_dimension_Q305 | pass | 1 / [time] | not captured | not captured | not captured | ['Nichols_2008:abstract'] |
 | C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['Nishida_1995:review'] |
-| C5_dimension_Q61 | pass | [length] ** 3 | not captured | not captured | not captured | ['Thoueille_2023:review'] |
+| C5_unit_missing_Q31 | fail | [length] ** 3 / [time] | not captured | not captured | not captured | ['Nichols_2008:abstract'] |
 | C6_cl_magnitude | pass | &lt;= 90.0 L/h | 15.7 | not captured | not captured | ['Nichols_2008:abstract'] |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
 | C9_phys_window_Q22 | pass | clearance within physiological range | 1.1 L/h | not captured | not captured | ['Nichols_2008:abstract'] |
-| C9_phys_window_Q61 | pass | volume within physiological range | 2.66e+03 L | not captured | not captured | ['Thoueille_2023:review'] |
 
 <details class="legend">
 <summary>Check legend — what each column means</summary>
@@ -146,4 +151,4 @@ _No web simulator for this record: its structure has no shared WebAssembly templ
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-06 21:45 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 14:45 UTC</sub>

@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;J05A&quot;,&quot;href&quot;:&quot;atc/J05A.md&quot;},{&quot;label&quot;:&quot;asunaprevir&quot;,&quot;href&quot;:&quot;drugs/drug_asunaprevir/&quot;},{&quot;label&quot;:&quot;Zhu_2018 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Asunaprevir_Osawa2018_reference&quot;,&quot;label&quot;:&quot;Osawa_2018_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_asunaprevir/Asunaprevir_Osawa2018_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Asunaprevir_Osawa2018_reference&quot;,&quot;label&quot;:&quot;Osawa_2018_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_asunaprevir/Asunaprevir_Osawa2018_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Asunaprevir_Zhu2018_reference&quot;,&quot;label&quot;:&quot;Zhu_2018_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_asunaprevir/Asunaprevir_Zhu2018_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # asunaprevir — `Asunaprevir_Zhu2018_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span>
+> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -13,34 +13,41 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
-**Model:** No model was generated from this record.
+**Model:** A simulatable model was generated — see the **Models** and **Simulation** tabs.
 
-> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+### Reviewer guidance
+
+**Kabs has no unit.**
+
+Without a unit the value cannot be converted, so the model cannot use it. Extracted — asunaprevir: CL/F 50.8 L/h, V1/F 47.6 L, kabs 0.484, Q/F 21.6 L/h, V2/F 561 L, D1 1.12 h.
+
+<sub>reviewed by rule template (no LLM)</sub>
+
+> ⚠️ **STALE** — review status `needs_review` (reviewed 2026-10-07 14:32:43.663445+00:00) predates the upstream re-run (2026-10-07 15:17:41.068364+00:00). Current validate status: `extracted`.
 
 ## Citation
 Zhu L et al., Population Pharmacokinetic Analysis of…, Infectious diseases and the… (2018)
   ·  DOI: [10.1007/s40121-018-0197-y](https://doi.org/10.1007/s40121-018-0197-y)
 
 ## Model component
-<dbs-pgx drug="asunaprevir" model-id="Asunaprevir_Zhu2018_reference" status="needs_review" stale="false" population="HCV-infected subjects" measured-compound="asunaprevir" parameterization="apparent" topology="2C"></dbs-pgx>
+<dbs-pgx drug="asunaprevir" model-id="Asunaprevir_Zhu2018_reference" status="extracted" stale="true" population="adults with chronic HCV infection" measured-compound="asunaprevir" parameterization="apparent" topology="2C"></dbs-pgx>
 
-**Model structure:** 2-compartment; no model was built for this record.  
-**Parameters:** 6 extracted, plus 2 covariate effects.
+**Model structure:** 2-compartment, oral mammillary model — template `PK_2C_enteral`.  
+**Parameters:** 7 extracted, plus 2 covariate effects.
 
 **Parameterization:** CL/F, Q/F, V1/F, V2/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
 ## Parameters
-> ⚠️ This record is not accepted (current status `needs_review`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
-
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
 | CL/F (L/h) | `Q27` · CL/F | 50.8 | L/h | 1.411111111111111e-05 | [l] / [h] | 4.1 | exact (1.0) | Tab2:row2:col1, Tab2:row2:col2 | — | not captured |
 | Vc/F (L) | `Q290` · V1/F | 47.6 | L | 0.0476 | [l] | 5.3 | exact (1.0) | Tab2:row3:col1, Tab2:row3:col2 | — | not captured |
-| Ka (1/h) | `Q49` · kabs | 0.484 | not captured | not captured | not captured | 0.036 | exact (1.0) | Tab2:row4:col1, Tab2:row4:col2 | — | not captured |
+| Ka (1/h) | `Q49` · kabs | 0.484 | 1/h | 0.00013444444444444444 | 1/h | 0.036 | exact (1.0) | Tab2:row4:col1, Tab2:row4:col2 | — | not captured |
 | Q/F (L/h) | `Q69` · Q/F | 21.6 | L/h | 6e-06 | [l] / [h] | 1.9 | exact (1.0) | Tab2:row5:col1, Tab2:row5:col2 | — | not captured |
 | Vp/F (L) | `Q82` · V2/F | 561 | L | 0.561 | [l] | 45 | exact (1.0) | Tab2:row6:col1, Tab2:row6:col2 | — | not captured |
 | D1 (h) | `Q310` · D1 | 1.12 | h | 4032.0000000000005 | [h] | 0.07 | exact (1.0) | Tab2:row7:col1, Tab2:row7:col2 | — | not captured |
-| vp_weight | `Q900` · vp_weight | 1.42 | not captured | not captured | not captured | 0.416 | not captured (not captured) | Tab2:row14:col1, Tab2:row14:col2 | — | not captured |
+| Relative F1 ~ 600 mg | `Q87` · Frel | 0.65 | not captured | not captured | not captured | 0.09 | llm_corrected (0.6) | Tab2:row23:col1, Tab2:row23:col2 | — | not captured |
+| theta_q64_weight_power | `Q900` · theta_q64_weight_power | 1.42 | not captured | not captured | not captured | 0.416 | not captured (not captured) | Tab2:row14:col1, Tab2:row14:col2 | — | not captured |
 | theta_q22_race_power | `Q900` · theta_q22_race_power | 0.0386 | not captured | not captured | not captured | 0.071 | not captured (not captured) | Tab2:row15:col1, Tab2:row15:col2 | — | not captured |
 
 <details class="legend">
@@ -48,12 +55,11 @@ Zhu L et al., Population Pharmacokinetic Analysis of…, Infectious diseases and
 <table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>label (paper)</code></td><td>the row or statistic label exactly as printed in the paper (label_verbatim) — never normalised, so it can be found in the PDF.</td></tr><tr><td><code>Q-code · name</code></td><td>the ontology parameter this label was matched to (Q22 = clearance, Q27 = CL/F, Q49 = ka, Q57 = half-life, …) and its canonical name. The Q-code, not the label, is what scoring and cross-paper merging use.</td></tr><tr><td><code>value</code></td><td>the estimate as reported in the paper.</td></tr><tr><td><code>unit</code></td><td>the unit as printed (unit_verbatim).</td></tr><tr><td><code>value_si</code></td><td>the value converted to the canonical unit. Empty when no conversion was possible — usually an unparseable or missing unit.</td></tr><tr><td><code>unit_canonical</code></td><td>the canonical unit for that Q-code, i.e. what value_si is expressed in.</td></tr><tr><td><code>RSE%</code></td><td>relative standard error of the estimate, when the paper reports one.</td></tr><tr><td><code>link</code></td><td>how the label was matched to the Q-code, with confidence. exact / boundary / fuzzy / tv_prefix / caption_compartment / special_case are deterministic string matches; llm, llm_confirmed, llm_corrected involved the model; review and review_gapfill come from the secondary review tier, the latter filling a parameter the primary extraction missed; boundary_relink is a corrected match.</td></tr><tr><td><code>source</code></td><td>where in the paper the number came from: colN = that column of the located table, other_prose = running text, review = the secondary tier, pgx = a pharmacogenomic record.</td></tr><tr><td><code>covariates</code></td><td>covariate effects attached to this parameter (e.g. weight on CL).</td></tr><tr><td><code>IIV</code></td><td>inter-individual variability reported for this parameter.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>the field is absent from the KB artifact — nothing was recorded. This is NOT the same as zero or empty: the value is unknown, not measured to be nothing.</td></tr><tr><td><code>—</code></td><td>deliberately not shown: the column does not apply to this row.</td></tr><tr><td><code>not verified</code></td><td>the record is not in an accepted state (see the badge and the note above the table); the numbers are shown as extracted, not endorsed.</td></tr></tbody></table>
 </details>
 
-### Unresolved rows _(no Q-code or no value — not parameters)_
-| label (paper) | Q-code | value | link |
-|---|---|---|---|
-| F | Q40 | not captured | exact |
-
 ## Departures & gaps
+
+**Deviations:**
+- `defaulted_parameters`: ['Tlag']
+- `apparent_assumption`: F=1, Fm=1, no molar correction (parameterization=apparent)
 
 **Interpretation flags:**
 - table section residual_error: 'ε' routed out of structural estimates ('Residual errorc')
@@ -63,7 +69,6 @@ Zhu L et al., Population Pharmacokinetic Analysis of…, Infectious diseases and
 - dropped value-less row: 'CL ~ age'
 - dropped value-less row: 'Vc ~ female'
 - dropped value-less row: 'CL ~ female'
-- covariate level 'Vp ~ weight' → Q900:vp_weight = 1.42 (power on Q27)
 - dropped value-less row: 'CL ~ Asian Race'
 - dropped value-less row: 'CL ~ Other Race'
 - dropped value-less row: 'CL ~ baseline AST'
@@ -71,18 +76,16 @@ Zhu L et al., Population Pharmacokinetic Analysis of…, Infectious diseases and
 - dropped value-less row: 'Vc ~ cirrhosis'
 - dropped value-less row: 'CL ~ cirrhosis'
 - dropped value-less row: 'Ka ~ tablet'
-- dropped unlinked row (NIL): 'Relative F1 ~ 600 mg' — extend the ontology if this is a real PK parameter (source ['Tab2:row23:col1', 'Tab2:row23:col2'])
 - dropped duplicate Q27 ('CL/F', value '0.168') — already have one for this compound
 - dropped duplicate Q290 ('Vc/F', value '2.19') — already have one for this compound
 - dropped duplicate Q49 ('Ka', value '0.300') — already have one for this compound
 - dropped duplicate Q82 ('Vp/F', value '0.777') — already have one for this compound
-- dropped value-less row: 'a'
-- dropped value-less row: 'b'
-- dropped value-less row: 'c'
+- dropped value-less row: 'aEstimates referenced to a non-cirrhotic, male, 70-kg, 55-year-old White subject with baseline AST of 60 IU/L receiving the soft-gel prior to induction'
+- dropped value-less row: 'bBootstrap statistics derived from 449 out of 500 samples. RSE equals estimate/mean × 100 for non-transformed parameters, and equals SE × 100 for log-transformed parameters'
+- covariate effect for Q64 has no base parameter row (kept as unattached equation-variable)
 - covariate effect for Q22 has no base parameter row (kept as unattached equation-variable)
+- implicit units: 'Ka (1/h)' → 1/h (from the popPK convention: 'The paper does not state a unit for Ka. As a first-order absorption rate constant in population PK, Ka is conventionally')
 - apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=asunaprevir
-- bound model equation to Q40 (Fab): F = 561*(Weight/70)^
-- Q40 (Fab) is equation-defined: value moved to equation-variable 'F'; equation kept verbatim
 - skipped review gap-fill of TLAG: primary's parameterization (rate-constant / ka-only) does not use it
 
 **Extraction notes:**
@@ -125,7 +128,6 @@ Zhu L et al., Population Pharmacokinetic Analysis of…, Infectious diseases and
 - unparsed cell Tab2:row28:col3 = '0.444, 1.101'
 - unparsed cell Tab2:row30:col3 = '0.36, 0.407'
 - LLM selected parameter table(s) 2
-- captured model equation F = 561*(Weight/70)^
 
 ## Validation
 
@@ -136,13 +138,12 @@ Zhu L et al., Population Pharmacokinetic Analysis of…, Infectious diseases and
 | C0_has_structural_params | pass | not captured | 7 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
-| C2_reference | pass | not captured | not captured | not captured | not captured | not captured |
 | C5_dimension_Q27 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Tab2:row2:col1', 'Tab2:row2:col2'] |
 | C5_dimension_Q290 | pass | [length] ** 3 | not captured | not captured | not captured | ['Tab2:row3:col1', 'Tab2:row3:col2'] |
 | C5_dimension_Q310 | pass | [time] | not captured | not captured | not captured | ['Tab2:row7:col1', 'Tab2:row7:col2'] |
+| C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['Tab2:row4:col1', 'Tab2:row4:col2'] |
 | C5_dimension_Q69 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Tab2:row5:col1', 'Tab2:row5:col2'] |
 | C5_dimension_Q82 | pass | [length] ** 3 | not captured | not captured | not captured | ['Tab2:row6:col1', 'Tab2:row6:col2'] |
-| C5_unit_missing_Q49 | fail | 1 / [time] | not captured | not captured | not captured | ['Tab2:row4:col1', 'Tab2:row4:col2'] |
 | C7_apparent_coherence | pass | not captured | not captured | not captured | not captured | not captured |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
 | C9_phys_window_Q27 | pass | clearance within physiological range | 50.8 L/h | not captured | not captured | ['Tab2:row2:col1', 'Tab2:row2:col2'] |
@@ -165,21 +166,26 @@ Zhu L et al., Population Pharmacokinetic Analysis of…, Infectious diseases and
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_asunaprevir/Asunaprevir_Zhu2018_reference/Asunaprevir_Zhu2018_reference_modelica.zip" download>Asunaprevir_Zhu2018_reference_modelica.zip</a> <span class="pk-size">(4.7 kB)</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_asunaprevir/Asunaprevir_Zhu2018_reference/Asunaprevir_Zhu2018_reference_fmi.zip" download>Asunaprevir_Zhu2018_reference_fmi.zip</a> <span class="pk-size">(4.3 kB)</span><br><a href="models/fmu/PK_2C_enteral.fmu" download>PK_2C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_asunaprevir/Asunaprevir_Zhu2018_reference/Asunaprevir_Zhu2018_reference_matlab.zip" download>Asunaprevir_Zhu2018_reference_matlab.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_asunaprevir/Asunaprevir_Zhu2018_reference/Asunaprevir_Zhu2018_reference_matlab_simbio.zip" download>Asunaprevir_Zhu2018_reference_matlab_simbio.zip</a> <span class="pk-size">(2.8 kB)</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_asunaprevir/Asunaprevir_Zhu2018_reference/Asunaprevir_Zhu2018_reference_sbml.zip" download>Asunaprevir_Zhu2018_reference_sbml.zip</a> <span class="pk-size">(2.7 kB)</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_asunaprevir/Asunaprevir_Zhu2018_reference/Asunaprevir_Zhu2018_reference_cellml.zip" download>Asunaprevir_Zhu2018_reference_cellml.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
 </tbody></table>
-<p>No bundles have been generated for this record yet. When the engineer emits them they appear here automatically — this page reports what is on disk and generates nothing itself.</p>
-</div></div>
+<p>Each archive holds the model source, a script that simulates it against the appropriate library, and a README describing both and how to run them.</p>
+<p><b>FMI is two downloads.</b> The archive holds this record's parameters and its driver; the simulator itself is <code>PK_2C_enteral.fmu</code>, one compiled template shared by every model of this structure. Take the FMU once, keep it beside the script (or pass <code>--fmu PATH</code>). Running it reproduces the model-specific FMU exactly.</p>
+</div><figure class="pk-models-diagram"><img src="drugs/drug_asunaprevir/Asunaprevir_Zhu2018_reference/Asunaprevir_Zhu2018_reference.svg" alt="Asunaprevir_Zhu2018_reference diagram"><figcaption>Model diagram (Modelica) using Pharmacolibrary v26.09 components, rendered by OpenModelica 1.26.7.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+**Administration: oral** — 100 mg, single dose, first-order absorption (ka 0.484 /h, F 1). Doses in the paper: 100, 200, 600 mg.
+
+<dbs-fmusim paramsurl="drugs/drug_asunaprevir/Asunaprevir_Zhu2018_reference/Asunaprevir_Zhu2018_reference_params.json" metaurl="assets/fmu/PK_2C_enteral.vr.json" wasmurl="assets/fmu/PK_2C_enteral.js" controlsurl="drugs/drug_asunaprevir/Asunaprevir_Zhu2018_reference/Asunaprevir_Zhu2018_reference_sim_controls.json"></dbs-fmusim>
+
+<sub>Runs this record's model in the browser as WebAssembly. Sliders start at the extracted values; the reference check compares the browser's peak against the FMPy result recorded when the record was built, and is withheld once a value has been edited. Template `PK_2C_enteral` · parameters `Asunaprevir_Zhu2018_reference_params.json` · controls `Asunaprevir_Zhu2018_reference_sim_controls.json`. A slider marked *simulator value* is running on the template's own default because this record does not pin that parameter.</sub>
 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 13:15 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 15:17 UTC</sub>

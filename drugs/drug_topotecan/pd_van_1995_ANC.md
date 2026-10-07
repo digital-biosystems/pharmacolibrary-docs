@@ -2,7 +2,7 @@
 <div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Topotecan_Lger2004_reference&quot;,&quot;label&quot;:&quot;L\u00e9ger_2004_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_topotecan/Topotecan_Lger2004_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# percentage decrease in absolute neutrophil count — PD  <span class="pk-badge pk-badge--orange">needs review</span>
+# percentage decrease in absolute neutrophil count — PD  <span class="pk-badge pk-badge--green">extracted</span>
 
 <details class="pk-legend"><summary>What the PGx badges mean — evidence, and whether a model runs</summary><table><tbody><tr><td><span class="pk-badge pk-badge--green">quantitative</span></td><td>the paper gives the effect of each phenotype (or genotype) on a named model parameter — a θ per category.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">qualitative</span></td><td>the paper links the gene to the drug but states no effect size on a model parameter, so it changes no model.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">guideline estimate</span></td><td>the effect comes from a CPIC / DPWG dosing guideline, not from this paper's numbers.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">safety allele</span></td><td>a risk allele for an adverse reaction (an HLA type, G6PD deficiency …): it changes no PK/PD parameter.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>the extraction is incomplete or inconsistent.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted.</td></tr><tr><td><span class="pk-badge pk-badge--green">▶ simulatable</span></td><td>the paper's popPK model runs per phenotype in the browser (Simulation tab); its PGx Modelica model is under Models.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">model only</span></td><td>a PGx Modelica model exists but has no in-browser simulator.</td></tr></tbody></table></details>
 
@@ -14,15 +14,19 @@
 
 ## What this record describes
 
-**As extracted:** Topotecan (concentrations from this paper's PK model) drives percentage decrease in absolute neutrophil count (in %): direct linear effect.
+**As extracted:** Topotecan (concentrations from this paper's PK model) drives percentage decrease in absolute neutrophil count: direct linear effect.
 
 **Model:** No model was generated from this record.
+
+> Topotecan concentrations (nM) act on the percentage decrease in absolute neutrophil count (ANC). The paper excerpts do not specify the mechanism or any potency or rate values.
+>
+> <sub>in the paper's terms — summarised by gpt-6-luna from the paper's text; not checked by a person</sub>
 
 - **paper:** `van_1995`
 - **model family:** `linear`
 - **driver:** `pk_record`
 - **tier:** descriptive
-- **effect:** inhibition/unknown
+- **effect:** inhibition/additive
 
 ## Citation
 van Warmerdam LJ et al., Pharmacokinetics and pharmacodynamics o…, Cancer chemotherapy and pha… (1995)

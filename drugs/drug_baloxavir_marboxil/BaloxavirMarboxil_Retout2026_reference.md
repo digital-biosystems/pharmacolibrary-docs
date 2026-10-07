@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;J05A&quot;,&quot;href&quot;:&quot;atc/J05A.md&quot;},{&quot;label&quot;:&quot;baloxavir marboxil&quot;,&quot;href&quot;:&quot;drugs/drug_baloxavir_marboxil/&quot;},{&quot;label&quot;:&quot;Retout_2026 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;BaloxavirMarboxil_Kim2022_reference&quot;,&quot;label&quot;:&quot;Kim_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_baloxavir_marboxil/BaloxavirMarboxil_Kim2022_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;BaloxavirMarboxil_Retout2026_reference&quot;,&quot;label&quot;:&quot;Retout_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_baloxavir_marboxil/BaloxavirMarboxil_Retout2026_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;BaloxavirMarboxil_Kim2022_reference&quot;,&quot;label&quot;:&quot;Kim_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_baloxavir_marboxil/BaloxavirMarboxil_Kim2022_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;BaloxavirMarboxil_Retout2026_reference&quot;,&quot;label&quot;:&quot;Retout_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_baloxavir_marboxil/BaloxavirMarboxil_Retout2026_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # baloxavir marboxil — `BaloxavirMarboxil_Retout2026_reference`
 
-> ## <span class="pk-badge pk-badge--green">extracted</span>
+> ## <span class="pk-badge pk-badge--green" title="covariates_not_exercised: the record defines covariate effects (weight on clearance, renal function …) but the engineer simulated only the reference individual, so those scenarios were never run. The base model still reproduces the paper; what is missing is the covariate curves.">extracted</span> <span class="pk-badge pk-badge--stale">stale</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -15,16 +15,26 @@
 
 **Model:** A simulatable model was generated — see the **Models** and **Simulation** tabs.
 
-> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+> **Caveat** (`covariates_not_exercised`): the record defines covariate effects (weight on clearance, renal function …) but the engineer simulated only the reference individual, so those scenarios were never run. The base model still reproduces the paper; what is missing is the covariate curves.
 
-> **Dose compound ≠ measured compound:** dosed `baloxavir_marboxil`, measured `baloxavir`.
+### Reviewer guidance
+
+**Baloxavir marboxil apparent peripheral volume 260 L was not extracted, and covariate effects were not simulated for children aged 1 to &lt;12 years.**
+
+The record lists V2/F as 260 L, but the simulation engine failed to cover this parameter, leaving it undefined in the executed model. Additionally, covariates for race and age on clearance and absorption were not exercised, so only the reference individual was simulated. Extracted — baloxavir: CLm/F 11 L/h, V1/F 735 L, Q/F 2.12 L/h, V2/F 260 L, kabs 1.39 1/h, tlag 0.223 h.
+
+<sub>reviewed by qwen3.8-27b</sub>
+
+> ⚠️ **STALE** — review status `needs_review` (reviewed 2026-10-07 14:33:32.582847+00:00) predates the upstream re-run (2026-10-07 15:33:08.758662+00:00). Current validate status: `extracted`.
+
+> **Dose compound ≠ measured compound:** dosed `baloxavir marboxil`, measured `baloxavir acid`.
 
 ## Citation
 Retout S et al., Population Pharmacokinetic and Exposure…, Clinical pharmacology and t… (2026)
   ·  DOI: [10.1002/cpt.70204](https://doi.org/10.1002/cpt.70204)
 
 ## Model component
-<dbs-pgx drug="baloxavir marboxil" model-id="BaloxavirMarboxil_Retout2026_reference" status="extracted" stale="false" population="children aged 1 to &lt;12 years" measured-compound="baloxavir" parameterization="apparent" topology="1C"></dbs-pgx>
+<dbs-pgx drug="baloxavir marboxil" model-id="BaloxavirMarboxil_Retout2026_reference" status="extracted" stale="true" population="patients aged ≥1 year with influenza (treatment and post-exposure prophylaxis)" measured-compound="baloxavir acid" parameterization="apparent" topology="1C"></dbs-pgx>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 6 extracted, plus 5 covariate effects.
@@ -34,15 +44,16 @@ Retout S et al., Population Pharmacokinetic and Exposure…, Clinical pharmacolo
 ## Parameters
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| CL/F | `Q351` · CLm/F | 11.02 | L/h | 3.0611111111111112e-06 | L/h | 1.87 | exact (1.0) | cpt70204-tbl-0001:row2:col2, cpt70204-tbl-0001:row2:col3 | — | not captured |
-| Vc/F | `Q290` · V1/F | 735 | L | 0.735 | L | 2.12 | exact (1.0) | cpt70204-tbl-0001:row3:col2, cpt70204-tbl-0001:row3:col3 | — | not captured |
-| Q/F | `Q69` · Q/F | 2.12 | L/h | 5.88888888888889e-07 | L/h | 5.2 | exact (1.0) | cpt70204-tbl-0001:row4:col2, cpt70204-tbl-0001:row4:col3 | — | not captured |
-| Vp/F | `Q82` · V2/F | 260 | L | 0.26 | L | 6.68 | exact (1.0) | cpt70204-tbl-0001:row5:col2, cpt70204-tbl-0001:row5:col3 | — | not captured |
-| ka | `Q49` · kabs | 1.39 | 1/h | 0.0003861111111111111 | 1/h | 14.6 | exact (1.0) | cpt70204-tbl-0001:row6:col1, cpt70204-tbl-0001:row6:col2, cpt70204-tbl-0001:row6:col3 | — | not captured |
+| CL/F | `Q351` · CLm/F | 11.02 | L/h | 3.0611111111111112e-06 | L/h | 1.87 | exact (1.0) | cpt70204-tbl-0001:row2:col2, cpt70204-tbl-0001:row2:col3, cpt70204-tbl-0001:footnote | — | not captured |
+| Vc/F | `Q290` · V1/F | 735 | L | 0.735 | L | 2.12 | exact (1.0) | cpt70204-tbl-0001:row3:col2, cpt70204-tbl-0001:row3:col3, cpt70204-tbl-0001:footnote | — | not captured |
+| Q/F | `Q69` · Q/F | 2.12 | L/h | 5.88888888888889e-07 | L/h | 5.2 | exact (1.0) | cpt70204-tbl-0001:row4:col2, cpt70204-tbl-0001:row4:col3, cpt70204-tbl-0001:footnote | — | not captured |
+| Vp/F | `Q82` · V2/F | 260 | L | 0.26 | L | 6.68 | exact (1.0) | cpt70204-tbl-0001:row5:col2, cpt70204-tbl-0001:row5:col3, cpt70204-tbl-0001:footnote | — | not captured |
+| ka | `Q49` · kabs | 1.39 | 1/h | 0.0003861111111111111 | 1/h | 14.6 | exact (1.0) | cpt70204-tbl-0001:row6:col1, cpt70204-tbl-0001:row6:col2, cpt70204-tbl-0001:row6:col3, cpt70204-tbl-0001:footnote | — | not captured |
 | Tlag | `Q83` · tlag | 0.223 | h | 802.8000000000001 | h | 39.6 | exact (1.0) | cpt70204-tbl-0001:row7:col2, cpt70204-tbl-0001:row7:col3 | — | not captured |
-| theta_cl_f_race | `Q900` · theta_cl_f_race | 0.504 | not captured | not captured | not captured | 2.4 | not captured (not captured) | cpt70204-tbl-0001:row28:col2, cpt70204-tbl-0001:row28:col3 | — | not captured |
+| Effect of BW on CL/F, Q/F | `Q900` · equation variable | 0.467 | not captured | not captured | not captured | 5.61 | llm_corrected (0.6) | cpt70204-tbl-0001:row26:col2, cpt70204-tbl-0001:row26:col3 | — | not captured |
+| theta_equation_variable_race | `Q900` · theta_equation_variable_race | 0.504 | not captured | not captured | not captured | 2.4 | not captured (not captured) | cpt70204-tbl-0001:row28:col2, cpt70204-tbl-0001:row28:col3 | — | not captured |
 | theta_q76_race | `Q900` · theta_q76_race | 0.335 | not captured | not captured | not captured | 5.28 | not captured (not captured) | cpt70204-tbl-0001:row29:col2, cpt70204-tbl-0001:row29:col3 | — | not captured |
-| theta_q_f_race | `Q900` · theta_q_f_race | 0.391 | not captured | not captured | not captured | 7.21 | not captured (not captured) | cpt70204-tbl-0001:row30:col2, cpt70204-tbl-0001:row30:col3 | — | not captured |
+| theta_equation_variable_race | `Q900` · theta_equation_variable_race | 0.391 | not captured | not captured | not captured | 7.21 | not captured (not captured) | cpt70204-tbl-0001:row30:col2, cpt70204-tbl-0001:row30:col3 | — | not captured |
 | theta_kabs_sex | `Q900` · theta_kabs_sex | 0.205 | not captured | not captured | not captured | 36.4 | not captured (not captured) | cpt70204-tbl-0001:row31:col2, cpt70204-tbl-0001:row31:col3 | — | not captured |
 | theta_kabs_age | `Q900` · theta_kabs_age | 0.242 | not captured | not captured | not captured | 21.4 | not captured (not captured) | cpt70204-tbl-0001:row32:col2, cpt70204-tbl-0001:row32:col3 | — | not captured |
 
@@ -58,24 +69,20 @@ Retout S et al., Population Pharmacokinetic and Exposure…, Clinical pharmacolo
 
 **Interpretation flags:**
 - column 'unit' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
-- dropped unlinked row (NIL): 'Effect of BW on CL/F, Q/F' — extend the ontology if this is a real PK parameter (source ['cpt70204-tbl-0001:row26:col2', 'cpt70204-tbl-0001:row26:col3'])
-- dropped unlinked row (NIL): 'Effect of BW on Vc/F, Vp/F' — extend the ontology if this is a real PK parameter (source ['cpt70204-tbl-0001:row27:col2', 'cpt70204-tbl-0001:row27:col3'])
+- dropped duplicate Q900 ('Effect of BW on Vc/F, Vp/F', value '0.887') — already have one for this compound
 - covariate effect for Q76 has no base parameter row (kept as unattached equation-variable)
-- implicit units: 'CL/F' → L/h (from the paper text: 'Prior assessments have characterized baloxavir popPK using data from healthy volunteers and adolescent and adult patient')
-- implicit units: 'Vc/F' → L (from the popPK convention: 'Vc/F (735) is a volume of distribution parameter; the standard unit for this parameter in population PK is liters (L), c')
-- implicit units: 'Q/F' → L/h (from the popPK convention: 'Q/F (2.12) is an intercompartmental clearance parameter; the standard unit for this parameter in population PK is liters')
-- implicit units: 'Vp/F' → L (from the popPK convention: 'Vp/F (260) is a volume of distribution parameter; the standard unit for this parameter in population PK is liters (L), c')
-- implicit units: 'ka' → 1/h (from the popPK convention: 'ka (1.39) is a first-order absorption rate constant; the standard unit for first-order rate constants is reciprocal hour')
-- implicit units: 'Tlag' → h (from the popPK convention: 'Tlag (0.223) is a lag time parameter; the standard unit for lag times in population PK is hours (h).')
-- metabolite baloxavir: Q27→Q351 — only the metabolite is measured and fm is not identifiable, so its CL/V are apparent (fm-divided)
-- apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=baloxavir
+- implicit units: 'CL/F' → L/h (from the paper text: "Text states oral drug clearance values '10.8 L/h versus 11.0 L/h, respectively', matching CL/F = 11.02 in Table 1.")
+- implicit units: 'Vc/F' → L (from the popPK convention: 'No unit stated for Vc/F; central volumes of distribution are conventionally in L, consistent with value 735.')
+- implicit units: 'Q/F' → L/h (from the popPK convention: 'No unit stated for Q/F; intercompartmental clearances are conventionally in L/h, consistent with value 2.12.')
+- implicit units: 'Vp/F' → L (from the popPK convention: 'No unit stated for Vp/F; peripheral volumes of distribution are conventionally in L, consistent with value 260.')
+- implicit units: 'ka' → 1/h (from the popPK convention: 'No unit stated for ka; first-order absorption rate constants are conventionally in 1/h, consistent with value 1.39.')
+- implicit units: 'Tlag' → h (from the popPK convention: 'No unit stated for Tlag; absorption lag times are conventionally in h, consistent with value 0.223.')
+- metabolite baloxavir acid: Q27→Q351 — only the metabolite is measured and fm is not identifiable, so its CL/V are apparent (fm-divided)
+- apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=baloxavir acid
 - template fit: none — only the metabolite is modelled — no parent compartment
 - structure disagreement: deterministic 1C vs LLM 2C — review compartment count
-- row roles (LLM): model_class=compartmental; 25/25 row label(s) assigned, 19 linked by role
-- molar mass: PubChem entry choice failed (JSONDecodeError)
-- molar mass: none of 4 PubChem candidate(s) is 'baloxavir' (LLM) — left in mass units
-- molar mass: none found for 'baloxavir' — its concentrations stay mass-only
-- review gap-fill skipped: this record measures 'baloxavir', not baloxavir_marboxil — the review values are the parent's
+- row roles (LLM): model_class=compartmental; 25/25 row label(s) assigned, 24 linked by role
+- review gap-fill skipped: this record measures 'baloxavir acid', not baloxavir_marboxil — the review values are the parent's
 
 **Extraction notes:**
 - unparsed cell cpt70204-tbl-0001:row9:col2 = '45.60%'
@@ -111,16 +118,29 @@ Retout S et al., Population Pharmacokinetic and Exposure…, Clinical pharmacolo
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
 | C2_reference | pass | not captured | not captured | not captured | not captured | not captured |
-| C5_dimension_Q290 | pass | [length] ** 3 | not captured | not captured | not captured | ['cpt70204-tbl-0001:row3:col2', 'cpt70204-tbl-0001:row3:col3'] |
-| C5_dimension_Q351 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['cpt70204-tbl-0001:row2:col2', 'cpt70204-tbl-0001:row2:col3'] |
-| C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['cpt70204-tbl-0001:row6:col1', 'cpt70204-tbl-0001:row6:col2', 'cpt70204-tbl-0001:row6:col3'] |
-| C5_dimension_Q69 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['cpt70204-tbl-0001:row4:col2', 'cpt70204-tbl-0001:row4:col3'] |
-| C5_dimension_Q82 | pass | [length] ** 3 | not captured | not captured | not captured | ['cpt70204-tbl-0001:row5:col2', 'cpt70204-tbl-0001:row5:col3'] |
+| C5_dimension_Q290 | pass | [length] ** 3 | not captured | not captured | not captured | ['cpt70204-tbl-0001:row3:col2', 'cpt70204-tbl-0001:row3:col3', 'cpt70204-tbl-0001:footnote'] |
+| C5_dimension_Q351 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['cpt70204-tbl-0001:row2:col2', 'cpt70204-tbl-0001:row2:col3', 'cpt70204-tbl-0001:footnote'] |
+| C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['cpt70204-tbl-0001:row6:col1', 'cpt70204-tbl-0001:row6:col2', 'cpt70204-tbl-0001:row6:col3', 'cpt70204-tbl-0001:footnote'] |
+| C5_dimension_Q69 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['cpt70204-tbl-0001:row4:col2', 'cpt70204-tbl-0001:row4:col3', 'cpt70204-tbl-0001:footnote'] |
+| C5_dimension_Q82 | pass | [length] ** 3 | not captured | not captured | not captured | ['cpt70204-tbl-0001:row5:col2', 'cpt70204-tbl-0001:row5:col3', 'cpt70204-tbl-0001:footnote'] |
 | C5_dimension_Q83 | pass | [time] | not captured | not captured | not captured | ['cpt70204-tbl-0001:row7:col2', 'cpt70204-tbl-0001:row7:col3'] |
 | C7_apparent_coherence | pass | not captured | not captured | not captured | not captured | not captured |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
-| C9_phys_window_Q290 | pass | volume within physiological range | 735 L | not captured | not captured | ['cpt70204-tbl-0001:row3:col2', 'cpt70204-tbl-0001:row3:col3'] |
-| C9_phys_window_Q82 | pass | volume within physiological range | 260 L | not captured | not captured | ['cpt70204-tbl-0001:row5:col2', 'cpt70204-tbl-0001:row5:col3'] |
+| C9_phys_window_Q290 | pass | volume within physiological range | 735 L | not captured | not captured | ['cpt70204-tbl-0001:row3:col2', 'cpt70204-tbl-0001:row3:col3', 'cpt70204-tbl-0001:footnote'] |
+| C9_phys_window_Q82 | pass | volume within physiological range | 260 L | not captured | not captured | ['cpt70204-tbl-0001:row5:col2', 'cpt70204-tbl-0001:row5:col3', 'cpt70204-tbl-0001:footnote'] |
+
+**Reviewer per-scenario checks:**
+
+| check | scenario | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|---|
+| T2_covariates_not_exercised | (all) | fail | not captured | not captured | not captured | record has covariate_effects but the engineer simulated only the reference individual — covariate scenarios were not exercised |
+| T0_analyte_identity | not captured | pass | not captured | not captured | not captured | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T3_apparent_invariant | not captured | pass | not captured | F=Fm=1, no molar correction | not captured | apparent params must not be double-corrected |
+| T3_output_variable | not captured | pass | C_central (measured=baloxavir) | central.C | not captured | output must be the measured/analyte compartment |
+| T3_param_coverage | not captured | fail | 5 scholar param(s) emitted or defaulted | 4 covered | not captured | neither emitted nor in defaulted[]: ['V2/F'] |
+| T3_topology_template | not captured | pass | 1C → PK_1C* | PK_1C_enteral | not captured | engineer template must match the scholar topology |
+| T6_deviations | not captured | pass | not captured | all deviations documented+quantified | not captured | LLM adjudication → deterministic rule |
+| T1_cmax | reference | skipped | not captured | 5.1772250275190754e-05 | not captured | non-numeric value |
 
 <details class="legend">
 <summary>Check legend — what each column means</summary>
@@ -130,6 +150,9 @@ Retout S et al., Population Pharmacokinetic and Exposure…, Clinical pharmacolo
 ## Raw artifacts
 
 - scholar stages: `../../../knowledgebase/drugs/drug_baloxavir_marboxil/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Retout_2026` / `Retout_2026::reference`)
+- model: `../../../knowledgebase/drugs/drug_baloxavir_marboxil/models/modelica/BaloxavirMarboxil_Retout2026_reference.mo`
+- deviation: `../../../knowledgebase/drugs/drug_baloxavir_marboxil/models/modelica/BaloxavirMarboxil_Retout2026_reference.deviation.json`
+- sim: `../../../knowledgebase/drugs/drug_baloxavir_marboxil/models/modelica/BaloxavirMarboxil_Retout2026_reference.json`
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -138,7 +161,7 @@ Retout S et al., Population Pharmacokinetic and Exposure…, Clinical pharmacolo
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_baloxavir_marboxil/BaloxavirMarboxil_Retout2026_reference/BaloxavirMarboxil_Retout2026_reference_modelica.zip" download>BaloxavirMarboxil_Retout2026_reference_modelica.zip</a> <span class="pk-size">(5.5 kB)</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_baloxavir_marboxil/BaloxavirMarboxil_Retout2026_reference/BaloxavirMarboxil_Retout2026_reference_modelica.zip" download>BaloxavirMarboxil_Retout2026_reference_modelica.zip</a> <span class="pk-size">(5.4 kB)</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_baloxavir_marboxil/BaloxavirMarboxil_Retout2026_reference/BaloxavirMarboxil_Retout2026_reference_fmi.zip" download>BaloxavirMarboxil_Retout2026_reference_fmi.zip</a> <span class="pk-size">(4.3 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
@@ -160,4 +183,4 @@ Retout S et al., Population Pharmacokinetic and Exposure…, Clinical pharmacolo
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 13:30 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 15:33 UTC</sub>

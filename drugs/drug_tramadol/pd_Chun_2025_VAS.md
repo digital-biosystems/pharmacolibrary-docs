@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N02A&quot;,&quot;href&quot;:&quot;atc/N02A.md&quot;},{&quot;label&quot;:&quot;tramadol&quot;,&quot;href&quot;:&quot;drugs/drug_tramadol/&quot;},{&quot;label&quot;:&quot;Chun_2025 \u00b7 PD pain score&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Tramadol_Dziubina2026_reference&quot;,&quot;label&quot;:&quot;Dziubina_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tramadol/Tramadol_Dziubina2026_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Tramadol_Ekstrand2026_reference&quot;,&quot;label&quot;:&quot;Ekstrand_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tramadol/Tramadol_Ekstrand2026_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Tramadol_Garrido2006_reference&quot;,&quot;label&quot;:&quot;Garrido_2006_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tramadol/Tramadol_Garrido2006_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Tramadol_Pypendop2008_reference&quot;,&quot;label&quot;:&quot;Pypendop_2008_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tramadol/Tramadol_Pypendop2008_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Tramadol_SoriaChacartegui2026_reference&quot;,&quot;label&quot;:&quot;Soria-Chacartegui_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tramadol/Tramadol_SoriaChacartegui2026_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Tramadol_Bao2023_reference&quot;,&quot;label&quot;:&quot;Bao_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tramadol/Tramadol_Bao2023_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Tramadol_Ekstrand2026_reference&quot;,&quot;label&quot;:&quot;Ekstrand_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tramadol/Tramadol_Ekstrand2026_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Tramadol_Garrido2006_reference&quot;,&quot;label&quot;:&quot;Garrido_2006_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tramadol/Tramadol_Garrido2006_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Tramadol_Pypendop2008_reference&quot;,&quot;label&quot;:&quot;Pypendop_2008_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tramadol/Tramadol_Pypendop2008_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Tramadol_Bao2023_reference&quot;,&quot;label&quot;:&quot;Bao_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tramadol/Tramadol_Bao2023_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # pain score — PD  <span class="pk-badge pk-badge--red">rejected</span>
@@ -14,12 +14,16 @@
 
 ## What this record describes
 
-**As extracted:** (1R,2R)‐M1 (measured concentrations) drive pain score: direct Emax (saturable) effect.
+**As extracted:** (1R,2R)-M1 (measured concentrations) drive pain score: delayed effect through an effect compartment.
 
 **Model:** A model was generated (see the **Models** tab); it has no in-browser simulator.
 
+> The unbound plasma concentration of the active metabolite (1R,2R)-M1 inhibits the VAS pain score through an Emax model featuring an effect compartment (dCe/dt = ke0 * (Cp - Ce)) to account for the delay between plasma levels and response. Key parameter estimates include an IC50 of 2.91 nmol/L (for patients without diabetes) and a ke0 of 0.0398 h⁻¹.
+>
+> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+
 - **paper:** `Chun_2025`
-- **model family:** `emax`
+- **model family:** `effect_compartment`
 - **driver:** `conc_no_pk`
 - **tier:** population
 - **effect:** inhibition/proportional
@@ -35,6 +39,7 @@ Chun D et al., Enhanced Sensitivity to Tramadol in Dia…, CPT: pharmacometrics 
 | PD (effect) | Imax | `Q323` · not captured | 0.908 | not captured | not captured | llm (not captured) | Chun_2025:pdv3 |
 | PD (effect) | PD0 | `Q324` · not captured | 0.464 | not captured | not captured | llm (not captured) | Chun_2025:pdv3 |
 | PD (effect) | IC50 | `Q322` · not captured | 2.36 | nmol/L | not captured | llm (not captured) | Chun_2025:pdv3 |
+| variability | omega_Imax | `Q312` · not captured | 8.97 | not captured | not captured | llm (not captured) | Chun_2025:pdv3 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -58,7 +63,8 @@ Closed-form check points (response, SI): `at_0` = 0.464, `at_EC50` = 0.01, `at_i
 Deviations:
 
 - `defaulted_parameters` — gamma
-- `pd_binding_off_target_driver` — driver compound '(1R,2R)‐M1' is not 'tramadol' nor one of its metabolites — the curve belongs to that compound's exposure (S12)
+- `pd_binding_family_inferred` — the record's model family is effect_compartment; read from the parameters: Emax/Imax and EC50/IC50 without a Hill coefficient — Emax
+- `pd_binding_off_target_driver` — driver compound '(1R,2R)-M1' is not 'tramadol' nor one of its metabolites — the curve belongs to that compound's exposure (S12)
 - `pd_binding_imax_as_negative_emax` — Imax (Q323) enters SigmoidEmaxSweep as −Emax
 
 ## Review
@@ -76,7 +82,7 @@ Verdict <span class="pk-badge pk-badge--red">rejected</span> · route to `schola
 
 Blocking:
 
-- off_target_driver: '(1R,2R)‐M1' is not 'tramadol' (S12)
+- off_target_driver: '(1R,2R)-M1' is not 'tramadol' (S12)
 
 Advisory:
 

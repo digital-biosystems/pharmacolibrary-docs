@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;J05A&quot;,&quot;href&quot;:&quot;atc/J05A.md&quot;},{&quot;label&quot;:&quot;stavudine&quot;,&quot;href&quot;:&quot;drugs/drug_stavudine/&quot;},{&quot;label&quot;:&quot;Tatsunami_2001 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Stavudine_Panhard2007_reference&quot;,&quot;label&quot;:&quot;Panhard_2007_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_stavudine/Stavudine_Panhard2007_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Stavudine_Jullien2007_reference&quot;,&quot;label&quot;:&quot;Jullien_2007_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_stavudine/Stavudine_Jullien2007_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Stavudine_Panhard2007_reference&quot;,&quot;label&quot;:&quot;Panhard_2007_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_stavudine/Stavudine_Panhard2007_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Stavudine_Sinxadi2010_reference&quot;,&quot;label&quot;:&quot;Sinxadi_2010_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_stavudine/Stavudine_Sinxadi2010_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # stavudine — `Stavudine_Tatsunami2001_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -15,14 +15,22 @@
 
 **Model:** No model was generated from this record.
 
-> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+### Reviewer guidance
+
+**No volume or clearance — not a compartmental population PK model.**
+
+The paper reports no distribution volume and no clearance or elimination rate; it is an exposure/outcome paper. Only the abstract was available, so reported summary statistics stand in for a fitted model.
+
+<sub>reviewed by rule template (no LLM)</sub>
+
+> ⚠️ **STALE** — review status `rejected` (reviewed 2026-10-07 14:42:50.521648+00:00) predates the upstream re-run (2026-10-07 16:17:04.861481+00:00). Current validate status: `rejected`.
 
 ## Citation
 Tatsunami S et al., Determination of pharmacokinetic parame…, European journal of drug me… (2001)
   ·  DOI: [10.1007/BF03190387](https://doi.org/10.1007/BF03190387)
 
 ## Model component
-<dbs-pgx drug="stavudine" model-id="Stavudine_Tatsunami2001_reference" status="rejected" stale="false" population="Japanese patients infected with HIV-1" measured-compound="stavudine" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<dbs-pgx drug="stavudine" model-id="Stavudine_Tatsunami2001_reference" status="rejected" stale="true" population="Japanese HIV-1 infected adults (asymptomatic carriers)" measured-compound="stavudine" parameterization="mechanistic" topology="1C"></dbs-pgx>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 6 extracted.
@@ -36,7 +44,7 @@ Tatsunami S et al., Determination of pharmacokinetic parame…, European journal
 |---|---|---|---|---|---|---|---|---|---|---|
 | Tmax | `Q56` · tmax | 0.96 | hr | 3456.0 | [h] | not captured | exact (1.0) | Tatsunami_2001:abstract | — | not captured |
 | Cmax | `Q32` · Cmax | 478 | ng/mL | not captured | [ng] / [ml] | not captured | exact (1.0) | Tatsunami_2001:abstract | — | not captured |
-| AUC0-infinity | `Q17` · AUC∞ | 1112 | ng x hr/mL | not captured | [[h] · [ng]] / [ml] | not captured | llm (0.6) | Tatsunami_2001:abstract | — | not captured |
+| AUC0-infinity | `Q17` · AUC∞ | 1112 | ng·h/mL | not captured | ng·h/mL | not captured | llm (0.6) | Tatsunami_2001:abstract | — | not captured |
 | t 1/2 | `Q57` · t1/2z | 1.26 | hr | 4536.0 | [h] | not captured | space_fold (0.95) | Tatsunami_2001:abstract | — | not captured |
 | first-order absorption rate constant | `Q49` · kabs | 11.1 | /h | 0.0030833333333333333 | 1/h | not captured | review_gapfill (0.7) | Sinxadi_2010:review | — | not captured |
 | absorption lag time | `Q83` · tlag | 0.41 | h | 1476.0 | h | not captured | review_gapfill (0.7) | Sinxadi_2010:review | — | not captured |
@@ -50,9 +58,8 @@ Tatsunami S et al., Determination of pharmacokinetic parame…, European journal
 
 **Interpretation flags:**
 - unit_dimension_unknown: 'ng x hr/mL' (AUC∞)
+- implicit units: 'AUC0-infinity' → ng·h/mL (from the popPK convention: 'No unit stated in text or table caption; AUC values are conventionally reported in concentration×time units, e.g. ng·h/m')
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=stavudine
-- held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
-- status held at route_to_review — not promoted
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
 - skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
 - skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
@@ -70,12 +77,12 @@ Tatsunami S et al., Determination of pharmacokinetic parame…, European journal
 |---|---|---|---|---|---|---|
 | C0_has_structural_params | pass | not captured | 4 | not captured | not captured | not captured |
 | C0b_disposition_core | fail | not captured | not captured | not captured | not captured | not captured |
+| C5_dimension_Q17 | pass | [mass] * [time] / [length] ** 3 | not captured | not captured | not captured | ['Tatsunami_2001:abstract'] |
 | C5_dimension_Q32 | pass | [mass] / [length] ** 3 | not captured | not captured | not captured | ['Tatsunami_2001:abstract'] |
 | C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['Sinxadi_2010:review'] |
 | C5_dimension_Q56 | pass | [time] | not captured | not captured | not captured | ['Tatsunami_2001:abstract'] |
 | C5_dimension_Q57 | pass | [time] | not captured | not captured | not captured | ['Tatsunami_2001:abstract'] |
 | C5_dimension_Q83 | pass | [time] | not captured | not captured | not captured | ['Sinxadi_2010:review'] |
-| C5_unit_missing_Q17 | fail | [mass] * [time] / [length] ** 3 | ng x hr/mL | not captured | not captured | ['Tatsunami_2001:abstract'] |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
 
 <details class="legend">
@@ -101,4 +108,4 @@ _No web simulator for this record: its structure has no shared WebAssembly templ
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 13:55 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 16:17 UTC</sub>

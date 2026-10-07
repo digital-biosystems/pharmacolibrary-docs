@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N02B&quot;,&quot;href&quot;:&quot;atc/N02B.md&quot;},{&quot;label&quot;:&quot;metamizole sodium&quot;,&quot;href&quot;:&quot;drugs/drug_metamizole_sodium/&quot;},{&quot;label&quot;:&quot;Blaser_2021 \u00b7 naproxen&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;MetamizoleSodium_Corvino2023_reference&quot;,&quot;label&quot;:&quot;Corvino_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_metamizole_sodium/MetamizoleSodium_Corvino2023_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;MetamizoleSodium_Ekobena2025_reference&quot;,&quot;label&quot;:&quot;Ekobena_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_metamizole_sodium/MetamizoleSodium_Ekobena2025_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;MetamizoleSodium_Stoschus2025_reference&quot;,&quot;label&quot;:&quot;Stoschus_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_metamizole_sodium/MetamizoleSodium_Stoschus2025_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;MetamizoleSodium_Ekobena2025_reference&quot;,&quot;label&quot;:&quot;Ekobena_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_metamizole_sodium/MetamizoleSodium_Ekobena2025_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;MetamizoleSodium_Stoschus2025_reference&quot;,&quot;label&quot;:&quot;Stoschus_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_metamizole_sodium/MetamizoleSodium_Stoschus2025_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -25,35 +25,35 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 
 <sub>reviewed by rule template (no LLM)</sub>
 
-> ⚠️ **STALE** — review status `needs_review` (reviewed 2026-10-05 09:27:52.116325+00:00) predates the upstream re-run (2026-10-07 06:25:14.608941+00:00). Current validate status: `needs_review`.
+> ⚠️ **STALE** — review status `needs_review` (reviewed 2026-10-05 09:27:52.116325+00:00) predates the upstream re-run (2026-10-07 15:27:16.433954+00:00). Current validate status: `needs_review`.
 
-> **Dose compound ≠ measured compound:** dosed `metamizole`, measured `4-methylaminoantipyrine (4-MAA)`.
+> **Dose compound ≠ measured compound:** dosed `metamizole`, measured `4-methylaminoantipyrine`.
 
 ## Citation
 Blaser LS et al., Comparative Effects of Metamizole (Dipy…, Frontiers in pharmacology (2021)
   ·  DOI: [10.3389/fphar.2021.620635](https://doi.org/10.3389/fphar.2021.620635)
 
 ## Model component
-<dbs-pgx drug="metamizole sodium" model-id="MetamizoleSodium_Blaser2021_naproxen" status="needs_review" stale="true" population="healthy salt-depleted men" measured-compound="4-methylaminoantipyrine (4-MAA)" parameterization="apparent" topology="general_linear"></dbs-pgx>
+<dbs-pgx drug="metamizole sodium" model-id="MetamizoleSodium_Blaser2021_naproxen" status="needs_review" stale="true" population="healthy salt-depleted adults" measured-compound="4-methylaminoantipyrine" parameterization="apparent" topology="general_linear"></dbs-pgx>
 
 **Model structure:** general linear; no model was built for this record.  
 **Parameters:** 10 extracted.
 
-**Parameterization:** CLm/F, V1/F — apparent, F unknown (apparent — bioavailability not identifiable).
+**Parameterization:** V1/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
 ## Parameters
 > ⚠️ This record is not accepted (current status `needs_review`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| Ka (1/h) | `Q49` · kabs | 0.538 | n = 7 | not captured | [n=7] | not captured | exact (1.0) | T3:row1:col2, T3:row1:col3 | — | not captured |
+| Ka (1/h) | `Q49` · kabs | 0.538 | 1/h | 0.00014944444444444445 | 1/h | not captured | exact (1.0) | T3:row1:col2, T3:row1:col3 | — | not captured |
 | V1/F (L) | `Q290` · V1/F | 3.27 | L | 0.00327 | [l] | not captured | exact (1.0) | T3:row2:col3 | — | not captured |
 | k12 (1/h) | `Q30` · Q | 0.185 | n = 7 | not captured | [n=7] | not captured | exact (1.0) | T3:row3:col2, T3:row3:col3 | — | not captured |
-| k14 (1/h) | `Q99` · Q2 | 1.334 | n = 7 | not captured | [n=7] | not captured | exact (1.0) | T3:row4:col2, T3:row4:col3 | — | not captured |
-| k10 (1/h) | `Q351` · CLm/F | 0.213 | n = 7 | not captured | [n=7] | not captured | exact (1.0) | T3:row5:col2, T3:row5:col3 | — | not captured |
+| k14 (1/h) | `Q305` · kfm | 1.334 | 1/h | 0.00037055555555555556 | 1/h | not captured | exact (1.0) | T3:row4:col2, T3:row4:col3 | — | not captured |
+| k10 (1/h) | `Q47` · kel | 0.213 | 1/h | 5.9166666666666664e-05 | 1/h | not captured | exact (1.0) | T3:row5:col2, T3:row5:col3 | — | not captured |
 | k23 (1/h) | `Q30` · Q | 0.009 | n = 7 | not captured | [n=7] | not captured | exact (1.0) | T3:row7:col2, T3:row7:col3 | — | not captured |
-| k24 (1/h) | `Q99` · Q2 | 2.275 | n = 7 | not captured | [n=7] | not captured | exact (1.0) | T3:row8:col2, T3:row8:col3 | — | not captured |
-| T1/2 K01 (h) | `Q60` · t1/2β | 1.708 | h | 6148.8 | [h] | not captured | llm_corrected (0.6) | T3:row15:col2, T3:row15:col3 | — | not captured |
+| k24 (1/h) | `Q305` · kfm | 2.275 | 1/h | 0.0006319444444444444 | 1/h | not captured | exact (1.0) | T3:row8:col2, T3:row8:col3 | — | not captured |
+| T1/2 K01 (h) | `Q57` · t1/2z | 1.708 | h | 6148.8 | [h] | not captured | llm_confirmed (0.6) | T3:row15:col2, T3:row15:col3 | — | not captured |
 | T1/2 4-AA (h) | `Q57` · t1/2z | 2.14 | h | 7704.0 | [h] | not captured | llm_confirmed (0.6) | T3:row17:col2, T3:row17:col3 | — | not captured |
 | T1/2 4-AAA (h) | `Q57` · t1/2z | 1.00 | h | 3600.0 | [h] | not captured | llm_confirmed (0.6) | T3:row18:col2, T3:row18:col3 | — | not captured |
 
@@ -66,7 +66,6 @@ Blaser LS et al., Comparative Effects of Metamizole (Dipy…, Frontiers in pharm
 | label (paper) | Q-code | value | link |
 |---|---|---|---|
 | V2/F (L) | Q290 | not captured | exact |
-| T1/2 4-MAA (h) | Q57 | not captured | llm_confirmed |
 | T1/2 4-FAA (h) | Q57 | not captured | llm_confirmed |
 
 ## Departures & gaps
@@ -75,21 +74,27 @@ Blaser LS et al., Comparative Effects of Metamizole (Dipy…, Frontiers in pharm
 - dropped unlinked row (NIL): 'Metamizole (n = 8)' — extend the ontology if this is a real PK parameter (source ['T3:row0:col2', 'T3:row0:col3'])
 - unit_dimension_unknown: 'n = 7' (kabs)
 - unit_dimension_unknown: 'n = 7' (Q)
-- unit_dimension_unknown: 'n = 7' (Q2)
-- unit_dimension_unknown: 'n = 7' (CL)
+- unit_dimension_unknown: 'n = 7' (kfm)
+- unit_dimension_unknown: 'n = 7' (kel)
+- dropped duplicate Q57 ('T1/2 4-MAA (h)', value None) — already have one for this compound
 - dropped PD-category row 'EC50 (µM)' → Q321 (EC50, category G11) — pharmacodynamic parameters belong to scholarpd, not the PK model (source ['T3:row20:col3'])
 - dropped unlinked row (NIL): 'N' — extend the ontology if this is a real PK parameter (source ['T3:row21:col3'])
 - dropped PD-category row 'E0 b' → Q324 (E0, category G11) — pharmacodynamic parameters belong to scholarpd, not the PK model (source ['T3:row22:col3'])
-- dropped unlinked row (NIL): 'Emax b' — extend the ontology if this is a real PK parameter (source ['T3:row23:col3'])
-- metabolite 4-methylaminoantipyrine (4-maa): Q22→Q351 — only the metabolite is measured and fm is not identifiable, so its CL/V are apparent (fm-divided)
-- apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=4-methylaminoantipyrine (4-MAA)
+- dropped PD-category row 'Emax b' → Q320 (Emax, category G11) — pharmacodynamic parameters belong to scholarpd, not the PK model (source ['T3:row23:col3'])
+- implicit units: 'Ka (1/h)' → 1/h (from the paper text: "The table caption explicitly states: 'T1/2, half-life... Tmax, time to maximum plasma concentration.' However, for rate ")
+- implicit units: 'k12 (1/h)' — the LLM proposed '1/h', whose dimension does not fit Q30; left unset
+- implicit units: 'k14 (1/h)' → 1/h (from the popPK convention: "k14 is described as a 'First-order rate constant governing formation of a metabolite'. First-order rate constants are ex")
+- implicit units: 'k10 (1/h)' → 1/h (from the popPK convention: "k10 is the 'Elimination rate constant'. Elimination rate constants are first-order rate constants. The standard unit is ")
+- implicit units: 'k23 (1/h)' — the LLM proposed '1/h', whose dimension does not fit Q30; left unset
+- implicit units: 'k24 (1/h)' → 1/h (from the popPK convention: "k24 is described as a 'First-order rate constant governing formation of a metabolite'. First-order rate constants are ex")
+- apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=4-methylaminoantipyrine
 - held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
-- topology: 4 first-order transfer(s) across 6 compounds → general_linear
+- topology: 5 first-order transfer(s) across 5 compounds → general_linear
 - template fit: none — only the metabolite is modelled — no parent compartment
 - status held at route_to_review — not promoted
-- population split: 'naproxen (n = 7)' subgroup of Blaser_2021 (paper reports 2 populations: metamizole (n = 8), naproxen (n = 7))
-- row roles (LLM): model_class=compartmental; 26/26 row label(s) assigned, 28 linked by role; re-tagged metamizole→4-methylaminoantipyrine (4-MAA) ×12, parent→4-methylaminoantipyrine (4-MAA) ×24, metamizole→4-aminoantipyrine (4-AA) ×5, parent→4-aminoantipyrine (4-AA) ×7, metamizole→4-acetylaminoantipyrine (4-AAA) ×3, metamizole→4-formylaminoantipyrine (4-FAA) ×3, parent→4-acetylaminoantipyrine (4-AAA) ×2, parent→4-formylaminoantipyrine (4-FAA) ×1
-- review gap-fill skipped: this record measures '4-methylaminoantipyrine (4-MAA)', not metamizole_sodium — the review values are the parent's
+- population split: 'naproxen (n = 7)' subgroup of Blaser_2021 (paper reports 6 populations: 4-aa, 4-aaa, 4-faa, 4-maa, metamizole (n = 8), naproxen (n = 7))
+- row roles (LLM): model_class=compartmental; 26/26 row label(s) assigned, 28 linked by role; re-tagged parent→4-methylaminoantipyrine ×15, naproxen→4-methylaminoantipyrine ×12, parent→4-aminoantipyrine ×7, naproxen→4-aminoantipyrine ×7, parent→4-acetylaminoantipyrine ×3, naproxen→4-acetylaminoantipyrine ×2, parent→4-formylaminoantipyrine ×1, naproxen→4-formylaminoantipyrine ×1, parent→6-keto-prostaglandin F1alpha ×4, naproxen→6-keto-prostaglandin F1alpha ×4
+- review gap-fill skipped: this record measures '4-methylaminoantipyrine', not metamizole_sodium — the review values are the parent's
 
 **Extraction notes:**
 - unparsed cell T3:row6:col3 = '16.8 ± 5.58a'
@@ -158,17 +163,16 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 | C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
 | C5_dimension_Q290 | pass | [length] ** 3 | not captured | not captured | not captured | ['T3:row2:col3'] |
 | C5_dimension_Q290 | pass | [length] ** 3 | not captured | not captured | not captured | ['T3:row6:col2'] |
-| C5_dimension_Q57 | pass | [time] | not captured | not captured | not captured | ['T3:row16:col2'] |
+| C5_dimension_Q305 | pass | 1 / [time] | not captured | not captured | not captured | ['T3:row4:col2', 'T3:row4:col3'] |
+| C5_dimension_Q305 | pass | 1 / [time] | not captured | not captured | not captured | ['T3:row8:col2', 'T3:row8:col3'] |
+| C5_dimension_Q47 | pass | 1 / [time] | not captured | not captured | not captured | ['T3:row5:col2', 'T3:row5:col3'] |
+| C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['T3:row1:col2', 'T3:row1:col3'] |
+| C5_dimension_Q57 | pass | [time] | not captured | not captured | not captured | ['T3:row15:col2', 'T3:row15:col3'] |
 | C5_dimension_Q57 | pass | [time] | not captured | not captured | not captured | ['T3:row17:col2', 'T3:row17:col3'] |
 | C5_dimension_Q57 | pass | [time] | not captured | not captured | not captured | ['T3:row18:col2', 'T3:row18:col3'] |
 | C5_dimension_Q57 | pass | [time] | not captured | not captured | not captured | ['T3:row19:col2'] |
-| C5_dimension_Q60 | pass | [time] | not captured | not captured | not captured | ['T3:row15:col2', 'T3:row15:col3'] |
 | C5_unit_missing_Q30 | fail | [length] ** 3 / [time] | n = 7 | not captured | not captured | ['T3:row3:col2', 'T3:row3:col3'] |
 | C5_unit_missing_Q30 | fail | [length] ** 3 / [time] | n = 7 | not captured | not captured | ['T3:row7:col2', 'T3:row7:col3'] |
-| C5_unit_missing_Q351 | fail | [length] ** 3 / [time] | n = 7 | not captured | not captured | ['T3:row5:col2', 'T3:row5:col3'] |
-| C5_unit_missing_Q49 | fail | 1 / [time] | n = 7 | not captured | not captured | ['T3:row1:col2', 'T3:row1:col3'] |
-| C5_unit_missing_Q99 | fail | [length] ** 3 / [time] | n = 7 | not captured | not captured | ['T3:row4:col2', 'T3:row4:col3'] |
-| C5_unit_missing_Q99 | fail | [length] ** 3 / [time] | n = 7 | not captured | not captured | ['T3:row8:col2', 'T3:row8:col3'] |
 | C7_apparent_coherence | pass | not captured | not captured | not captured | not captured | not captured |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
 | C9_phys_window_Q290 | pass | volume within physiological range | 3.27 L | not captured | not captured | ['T3:row2:col3'] |
@@ -206,4 +210,4 @@ _No web simulator for this record: its structure has no shared WebAssembly templ
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 06:25 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 15:27 UTC</sub>

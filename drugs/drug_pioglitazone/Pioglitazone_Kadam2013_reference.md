@@ -4,7 +4,7 @@
 
 # pioglitazone — `Pioglitazone_Kadam2013_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.778). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.778). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -24,26 +24,26 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on `parame
 
 <sub>reviewed by rule template (no LLM)</sub>
 
+> ⚠️ **STALE** — review status `needs_review` (reviewed 2026-10-05 09:30:24.112423+00:00) predates the upstream re-run (2026-10-07 16:11:21.552847+00:00). Current validate status: `rejected`.
+
 ## Citation
 Kadam R et al., Effect of Cytochrome P450 2C8*3 on the…, Biological & pharmaceutical… (2013)
   ·  DOI: [10.1248/bpb.b12-00657](https://doi.org/10.1248/bpb.b12-00657)
 
 ## Model component
-<dbs-pgx drug="pioglitazone" model-id="Pioglitazone_Kadam2013_reference" status="needs_review" stale="false" population="healthy Caucasian volunteers" measured-compound="pioglitazone" parameterization="apparent" topology="2C"></dbs-pgx>
+<dbs-pgx drug="pioglitazone" model-id="Pioglitazone_Kadam2013_reference" status="rejected" stale="true" population="healthy Caucasian volunteers" measured-compound="pioglitazone" parameterization="apparent" topology="1C"></dbs-pgx>
 
-**Model structure:** 2-compartment; no model was built for this record.  
-**Parameters:** 3 extracted.
+**Model structure:** 1-compartment; no model was built for this record.  
+**Parameters:** 1 extracted.
 
-**Parameterization:** V/F, V1/F — apparent, F unknown (apparent — bioavailability not identifiable).
+**Parameterization:** V2/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
 ## Parameters
-> ⚠️ This record is not accepted (current status `needs_review`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
+> ⚠️ This record is not accepted (current status `rejected`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| V c /F (L)=θ 2 | `Q290` · V1/F | 22.1 | L | 0.0221 | L | not captured | llm (0.6) | tab_2:row5:col1, tab_2:row5:col2, tab_2:row5:col3, tab_2:row5:col4, tab_2:row5:col5, tab_2:row5:col6, tab_2:row5:col7, tab_2:row5:col8, tab_2:row5:col9 | — | not captured |
-| V p /F (L)=θ 4 | `Q76` · V/F | 26.3 | L | 0.0263 | L | not captured | llm (0.6) | tab_2:row7:col1, tab_2:row7:col4, tab_2:row7:col7 | — | not captured |
-| K a (h -1 )=θ 5 | `Q49` · kabs | 2.08 | 1/h | 0.0005777777777777778 | 1/h | not captured | llm (0.6) | tab_2:row8:col1, tab_2:row8:col2, tab_2:row8:col3, tab_2:row8:col4, tab_2:row8:col5, tab_2:row8:col6, tab_2:row8:col7, tab_2:row8:col8, tab_2:row8:col9 | — | not captured |
+| V c /F (L)=θ 2 | `Q82` · V2/F | 22.1 | L | 0.0221 | L | not captured | llm (0.6) | tab_2:row5:col1, tab_2:row5:col2, tab_2:row5:col3, tab_2:row5:col4, tab_2:row5:col5, tab_2:row5:col6, tab_2:row5:col7, tab_2:row5:col8, tab_2:row5:col9 | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -53,15 +53,13 @@ Kadam R et al., Effect of Cytochrome P450 2C8*3 on the…, Biological & pharmace
 ## Departures & gaps
 
 **Interpretation flags:**
-- unit_dimension_unknown: 'CYP2C8' (V1/F)
-- unit_dimension_unknown: 'CYP2C8' (V/F)
-- unit_dimension_unknown: 'CYP2C8' (kabs)
-- implicit units: 'V c /F (L)=θ 2' → L (from the paper text: "Table 3 footnote states: 'V c /F=central volume of distribution, L'")
-- implicit units: 'V p /F (L)=θ 4' → L (from the paper text: "Table 3 footnote states: 'V p /F=peripheral volume of distribution, L'")
-- implicit units: 'K a (h -1 )=θ 5' → 1/h (from the paper text: "Table 3 footnote states: 'K a =absorption rate constant, h -1'")
+- unit_dimension_unknown: 'CYP2C8' (V2/F)
+- dropped duplicate Q82 ('V p /F (L)=θ 4', value '26.3') — already have one for this compound
+- dropped unlinked row (NIL): 'K a (h -1 )=θ 5' — extend the ontology if this is a real PK parameter (source ['tab_2:row8:col1', 'tab_2:row8:col2', 'tab_2:row8:col3', 'tab_2:row8:col4', 'tab_2:row8:col5', 'tab_2:row8:col6', 'tab_2:row8:col7', 'tab_2:row8:col8', 'tab_2:row8:col9'])
+- implicit units: 'V c /F (L)=θ 2' → L (from the paper text: "The text under 'Figures and Tables' states: 'The two-compartment model was parameterized on CL/F (L/h), central volume o")
 - apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=pioglitazone
-- structure disagreement: deterministic 2C vs LLM 1C — review compartment count
-- skipped review gap-fill of TLAG: primary's parameterization (rate-constant / ka-only) does not use it
+- structure disagreement: deterministic 1C vs LLM 2C — review compartment count
+- skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
 
 **Extraction notes:**
 - unparsed cell tab_2:row9:col3 = '43.0 a) %'
@@ -109,16 +107,13 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 3 | not captured | not captured | not captured |
+| C0_has_structural_params | pass | not captured | 1 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | fail | not captured | not captured | not captured | not captured | not captured |
-| C5_dimension_Q290 | pass | [length] ** 3 | not captured | not captured | not captured | ['tab_2:row5:col1', 'tab_2:row5:col2', 'tab_2:row5:col3', 'tab_2:row5:col4', 'tab_2:row5:col5', 'tab_2:row5:col6', 'tab_2:row5:col7', 'tab_2:row5:col8', 'tab_2:row5:col9'] |
-| C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['tab_2:row8:col1', 'tab_2:row8:col2', 'tab_2:row8:col3', 'tab_2:row8:col4', 'tab_2:row8:col5', 'tab_2:row8:col6', 'tab_2:row8:col7', 'tab_2:row8:col8', 'tab_2:row8:col9'] |
-| C5_dimension_Q76 | pass | [length] ** 3 | not captured | not captured | not captured | ['tab_2:row7:col1', 'tab_2:row7:col4', 'tab_2:row7:col7'] |
+| C5_dimension_Q82 | pass | [length] ** 3 | not captured | not captured | not captured | ['tab_2:row5:col1', 'tab_2:row5:col2', 'tab_2:row5:col3', 'tab_2:row5:col4', 'tab_2:row5:col5', 'tab_2:row5:col6', 'tab_2:row5:col7', 'tab_2:row5:col8', 'tab_2:row5:col9'] |
 | C7_apparent_coherence | pass | not captured | not captured | not captured | not captured | not captured |
-| C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
-| C9_phys_window_Q290 | pass | volume within physiological range | 22.1 L | not captured | not captured | ['tab_2:row5:col1', 'tab_2:row5:col2', 'tab_2:row5:col3', 'tab_2:row5:col4', 'tab_2:row5:col5', 'tab_2:row5:col6', 'tab_2:row5:col7', 'tab_2:row5:col8', 'tab_2:row5:col9'] |
-| C9_phys_window_Q76 | pass | volume within physiological range | 26.3 L | not captured | not captured | ['tab_2:row7:col1', 'tab_2:row7:col4', 'tab_2:row7:col7'] |
+| C8_topology | fail | not captured | not captured | not captured | not captured | not captured |
+| C9_phys_window_Q82 | pass | volume within physiological range | 22.1 L | not captured | not captured | ['tab_2:row5:col1', 'tab_2:row5:col2', 'tab_2:row5:col3', 'tab_2:row5:col4', 'tab_2:row5:col5', 'tab_2:row5:col6', 'tab_2:row5:col7', 'tab_2:row5:col8', 'tab_2:row5:col9'] |
 
 <details class="legend">
 <summary>Check legend — what each column means</summary>
@@ -132,19 +127,9 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
-## Downloadable models
+## Models
 
-<div class="pk-models-grid"><div class="pk-models-table">
-<table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-</tbody></table>
-<p>No bundles have been generated for this record yet. When the engineer emits them they appear here automatically — this page reports what is on disk and generates nothing itself.</p>
-</div></div>
+<p>No downloads: this record is <b>rejected</b>, so it is not published as a model. Any archives generated for it before the verdict have been removed — a download outlives the page that explains it.</p>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
@@ -153,4 +138,4 @@ _No web simulator for this record: its structure has no shared WebAssembly templ
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-05 02:46 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 16:11 UTC</sub>

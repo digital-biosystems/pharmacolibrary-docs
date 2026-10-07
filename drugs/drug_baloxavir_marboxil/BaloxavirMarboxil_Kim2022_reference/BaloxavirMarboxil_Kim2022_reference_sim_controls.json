@@ -89,11 +89,11 @@
  {
   "key": "stop_time",
   "label": "Simulated time",
-  "unit": "d",
-  "scale": 1.1574074074074073e-05,
-  "min": 1.0,
-  "max": 12.0,
-  "step": 0.5,
+  "unit": "h",
+  "scale": 0.0002777777777777778,
+  "min": 5.0,
+  "max": 84.0,
+  "step": 1.0,
   "sim": true
  }
 ]

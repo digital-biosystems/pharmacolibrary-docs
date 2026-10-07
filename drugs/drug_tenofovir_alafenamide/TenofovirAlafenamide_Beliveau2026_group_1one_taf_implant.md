@@ -4,7 +4,7 @@
 
 # tenofovir alafenamide — `TenofovirAlafenamide_Beliveau2026_group_1one_taf_implant`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -14,14 +14,22 @@
 
 **Model:** No model was generated from this record.
 
-> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+### Reviewer guidance
+
+**The paper reports none of the model's key parameters.**
+
+No clearance, volume or rate constant of the model is reported in it. No parameter values were extracted.
+
+<sub>reviewed by rule template (no LLM)</sub>
+
+> ⚠️ **STALE** — review status `rejected` (reviewed 2026-10-07 14:42:50.610702+00:00) predates the upstream re-run (2026-10-07 16:27:43.308819+00:00). Current validate status: `rejected`.
 
 ## Citation
 Beliveau M et al., Population pharmacokinetics of tenofovi…, Scientific reports (2026)
   ·  DOI: [10.1038/s41598-026-48746-2](https://doi.org/10.1038/s41598-026-48746-2)
 
 ## Model component
-<dbs-pgx drug="tenofovir alafenamide" model-id="TenofovirAlafenamide_Beliveau2026_group_1one_taf_implant" status="rejected" stale="false" population="South African women" measured-compound="tenofovir alafenamide" parameterization="mechanistic" topology="general_linear"></dbs-pgx>
+<dbs-pgx drug="tenofovir alafenamide" model-id="TenofovirAlafenamide_Beliveau2026_group_1one_taf_implant" status="rejected" stale="true" population="South African women in HIV PrEP trial" measured-compound="tenofovir alafenamide" parameterization="mechanistic" topology="general_linear"></dbs-pgx>
 
 **Model structure:** general linear; no model was built for this record.  
 **Parameters:** 0 extracted.
@@ -36,21 +44,25 @@ _No resolved parameters._
 ## Departures & gaps
 
 **Interpretation flags:**
-- dropped unlinked row (NIL): 'Mean (SD)' — extend the ontology if this is a real PK parameter (source ['Tab5:row2:col1', 'Tab5:row6:col1', 'Tab5:row10:col1'])
-- dropped unlinked row (NIL): 'Median (CV%)' — extend the ontology if this is a real PK parameter (source ['Tab5:row3:col1', 'Tab5:row7:col1', 'Tab5:row11:col1'])
+- dropped unlinked row (NIL): 'Mean (SD)' — extend the ontology if this is a real PK parameter (source ['Beliveau_2026_table_5:row1:col1', 'Beliveau_2026_table_5:row5:col1', 'Beliveau_2026_table_5:row9:col1'])
+- dropped unlinked row (NIL): 'Median (CV%)' — extend the ontology if this is a real PK parameter (source ['Beliveau_2026_table_5:row2:col1', 'Beliveau_2026_table_5:row6:col1', 'Beliveau_2026_table_5:row10:col1'])
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=tenofovir alafenamide
 - topology: transfer parameter unlinked (Q100) — add Kfm/formation-rate/rate-constant to the ontology; routing to review
 - template fit: none — only the metabolite is modelled — no parent compartment
 - status held at route_to_review — not promoted
-- population split: 'group 1one taf implant(n = 6)' subgroup of Beliveau_2026 (paper reports 4 populations: group 1one taf implant(n = 6), group 2 aone taf implant(n = 12), group 2 ctwo taf implants(n = 12), overall(n = 30))
-- row roles (LLM): model_class=compartmental; 3/3 row label(s) assigned, 0 linked by role
+- population split: 'group 1one taf implant(n = 6)' subgroup of Beliveau_2026 (paper reports 5 populations: estimate, group 1one taf implant(n = 6), group 2 aone taf implant(n = 12), group 2 ctwo taf implants(n = 12), overall(n = 30))
+- row roles (LLM): model_class=compartmental; 12/12 row label(s) assigned, 9 linked by role; re-tagged parent→tenofovir (TFV) ×4, parent→tenofovir diphosphate (TFV-DP) ×6
 - review gap-fill skipped: this record carries no value of its own, and a model assembled entirely from other papers is not this paper's model
 
 **Extraction notes:**
-- companion parameter table 4 transcribed (1 record(s))
-- LLM selected parameter table(s) 4, 5
-- LLM region Beliveau_2026:discussion_prose: Error code: 429 - {'error': {'message': 'Rate limit exceeded for api_key: 8d79104cac3d0b5a8019d9c3dd60ff02e7a84591fb3552ddb3bbcabd52b31d23. Limit type: max_parallel_requests. Current limit: 4, Remaining: 0. Limit resets at: 2026-10-07 14:44:01 UTC', 'type': 'throttling_error', 'param': None, 'code': '429'}}
-- LLM region Beliveau_2026:other_prose: Error code: 429 - {'error': {'message': 'Rate limit exceeded for api_key: 8d79104cac3d0b5a8019d9c3dd60ff02e7a84591fb3552ddb3bbcabd52b31d23. Limit type: max_parallel_requests. Current limit: 4, Remaining: 0. Limit resets at: 2026-10-07 14:44:07 UTC', 'type': 'throttling_error', 'param': None, 'code': '429'}}
+- unparsed cell Beliveau_2026_table_3:row1:col1 = '0.924a'
+- unparsed cell Beliveau_2026_table_3:row4:col1 = '1360 ×'
+- unparsed cell Beliveau_2026_table_3:row5:col1 = '0.2257 ×'
+- unparsed cell Beliveau_2026_table_3:row6:col1 = '0.2981×'
+- unparsed cell Beliveau_2026_table_3:row7:col1 = '0.039×'
+- companion parameter table 3 transcribed (13 record(s))
+- companion parameter table 5 transcribed (24 record(s))
+- LLM selected parameter table(s) 3, 4, 5
 
 ## Validation
 
@@ -60,7 +72,7 @@ _No resolved parameters._
 |---|---|---|---|---|---|---|
 | C0_has_structural_params | fail | not captured | 0 | not captured | not captured | not captured |
 | C0b_disposition_core | fail | not captured | not captured | not captured | not captured | not captured |
-| C8_topology | fail | ontology-linked transfer parameter on every edge | ['none', 'none'] | not captured | not captured | not captured |
+| C8_topology | fail | ontology-linked transfer parameter on every edge | ['unknown', 'unknown'] | not captured | not captured | not captured |
 
 <details class="legend">
 <summary>Check legend — what each column means</summary>
@@ -85,4 +97,4 @@ _No web simulator for this record: its structure has no shared WebAssembly templ
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 14:13 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 16:27 UTC</sub>

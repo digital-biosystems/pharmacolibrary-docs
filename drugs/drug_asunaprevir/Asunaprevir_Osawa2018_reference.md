@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;J05A&quot;,&quot;href&quot;:&quot;atc/J05A.md&quot;},{&quot;label&quot;:&quot;asunaprevir&quot;,&quot;href&quot;:&quot;drugs/drug_asunaprevir/&quot;},{&quot;label&quot;:&quot;Osawa_2018 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Asunaprevir_Osawa2018_reference&quot;,&quot;label&quot;:&quot;Osawa_2018_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_asunaprevir/Asunaprevir_Osawa2018_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Asunaprevir_Osawa2018_reference&quot;,&quot;label&quot;:&quot;Osawa_2018_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_asunaprevir/Asunaprevir_Osawa2018_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Asunaprevir_Zhu2018_reference&quot;,&quot;label&quot;:&quot;Zhu_2018_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_asunaprevir/Asunaprevir_Zhu2018_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # asunaprevir — `Asunaprevir_Osawa2018_reference`
 
-> ## <span class="pk-badge pk-badge--green">extracted</span>
+> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -15,14 +15,20 @@
 
 **Model:** A simulatable model was generated — see the **Models** and **Simulation** tabs.
 
-> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+### Reviewer guidance
+
+**Every check that could be run on this record passed.**
+
+<sub>reviewed by rule template (no LLM)</sub>
+
+> ⚠️ **STALE** — review status `curated_candidate` (reviewed 2026-10-07 14:32:43.660410+00:00) predates the upstream re-run (2026-10-07 15:17:39.261768+00:00). Current validate status: `extracted`.
 
 ## Citation
 Osawa M et al., Population Pharmacokinetic Analysis for…, Journal of clinical pharmac… (2018)
   ·  DOI: [10.1002/jcph.1274](https://doi.org/10.1002/jcph.1274)
 
 ## Model component
-<dbs-pgx drug="asunaprevir" model-id="Asunaprevir_Osawa2018_reference" status="extracted" stale="false" population="Japanese subjects with chronic hepatitis C virus infection" measured-compound="asunaprevir" parameterization="apparent" topology="1C"></dbs-pgx>
+<dbs-pgx drug="asunaprevir" model-id="Asunaprevir_Osawa2018_reference" status="extracted" stale="true" population="Japanese adults with chronic HCV genotype 1 infection" measured-compound="asunaprevir" parameterization="apparent" topology="1C"></dbs-pgx>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 3 extracted.
@@ -43,10 +49,6 @@ Osawa M et al., Population Pharmacokinetic Analysis for…, Journal of clinical 
 
 ## Departures & gaps
 
-**Deviations:**
-- `defaulted_parameters`: ['Tlag']
-- `apparent_assumption`: F=1, Fm=1, no molar correction (parameterization=apparent)
-
 **Interpretation flags:**
 - table section residual_error: 'σ' routed out of structural estimates ('Residual error')
 - unit_dimension_unknown: 'h‐1' (kabs)
@@ -57,8 +59,8 @@ Osawa M et al., Population Pharmacokinetic Analysis for…, Journal of clinical 
 - dropped duplicate Q27 ('CL/F', value '0.155') — already have one for this compound
 - dropped duplicate Q76 ('V/F', value '0.145') — already have one for this compound
 - dropped duplicate Q49 ('Ka', value '0.756') — already have one for this compound
-- dropped duplicate Q76 ('CL/F: V/F', value '0.141') — already have one for this compound
-- implicit units: 'Ka (h‐1)' → 1/h (from the paper text: 'The text states: "Ka was 0.865 h‐1 (5.97 RSE%)" and "The first‐order absorption rate constant was 0.23 h‐1". The table f')
+- dropped duplicate Q27 ('CL/F: V/F', value '0.141') — already have one for this compound
+- implicit units: 'Ka (h‐1)' → 1/h (from the paper text: 'Text states "Ka was 0.865 h‐1 (5.97 RSE%)"; table caption also lists Ka (h‐1).')
 - apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=asunaprevir
 - skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
 - skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
@@ -112,6 +114,19 @@ Osawa M et al., Population Pharmacokinetic Analysis for…, Journal of clinical 
 | C9_phys_window_Q27 | pass | clearance within physiological range | 5.29 L/h | not captured | not captured | ['jcph1274-tbl-0002:row3:col2', 'jcph1274-tbl-0002:row3:col3'] |
 | C9_phys_window_Q76 | pass | volume within physiological range | 64.2 L | not captured | not captured | ['jcph1274-tbl-0002:row4:col2', 'jcph1274-tbl-0002:row4:col3'] |
 
+**Reviewer per-scenario checks:**
+
+| check | scenario | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|---|
+| T0_analyte_identity | not captured | pass | not captured | not captured | not captured | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | not captured | skipped | not captured | not captured | not captured | no covariate effects in record |
+| T3_apparent_invariant | not captured | pass | not captured | F=Fm=1, no molar correction | not captured | apparent params must not be double-corrected |
+| T3_output_variable | not captured | pass | C_central (measured=asunaprevir) | central.C | not captured | output must be the measured/analyte compartment |
+| T3_param_coverage | not captured | pass | 3 scholar param(s) emitted or defaulted | 3 covered | not captured | all structural parameters accounted for |
+| T3_topology_template | not captured | pass | 1C → PK_1C* | PK_1C_enteral | not captured | engineer template must match the scholar topology |
+| T6_deviations | not captured | pass | not captured | all deviations documented+quantified | not captured | LLM adjudication → deterministic rule |
+| T1_cmax | reference | skipped | 1.0 | 0.0001215924091030302 | not captured | unresolved concentration unit (exp 'hours', sim 'kg/m3') |
+
 <details class="legend">
 <summary>Check legend — what each column means</summary>
 <table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>check</code></td><td>the check id. C0_has_structural_params = at least one numeric structural parameter; C0b_disposition_core = a volume OR a clearance/elimination term (neither means an exposure/outcome paper, not popPK — rejected); C0c_disposition_complete = BOTH a volume AND a clearance/elimination term, which is what the engineer needs to build (one without the other routes to review, never to the engineer); C1_half_life(_beta) = reported half-life against V and CL; C2_reference = covariate scenarios are sign-plausible; C3_cl_dose_auc = CL against dose/AUC; C4_auc_closed_form = AUC recomputed in closed form; C5_dimension_&lt;Qcode&gt; = the parameter's units carry the dimension its Q-code requires.</td></tr><tr><td><code>status</code></td><td>pass, fail, or skipped. A skipped check had nothing to compare — the paper did not report the input it needs — and is not evidence against the record. The scholar table lists only pass and fail; the reviewer table also shows skipped, with the reason in note.</td></tr><tr><td><code>expected</code></td><td>the value the check required, from the paper or from the ontology.</td></tr><tr><td><code>obtained</code></td><td>what the record actually yields.</td></tr><tr><td><code>ratio</code></td><td>obtained / expected, where the check is a numeric comparison.</td></tr><tr><td><code>tol</code></td><td>the tolerance the ratio had to fall within to pass.</td></tr><tr><td><code>source</code></td><td>the artifact the expected value was taken from.</td></tr><tr><td><code>scenario</code></td><td>reviewer table only — the covariate scenario the check was run under.</td></tr><tr><td><code>note</code></td><td>why a check was skipped, or how it was judged.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>the field is absent from the KB artifact — nothing was recorded. This is NOT the same as zero or empty: the value is unknown, not measured to be nothing.</td></tr><tr><td><code>—</code></td><td>deliberately not shown: the column does not apply to this row.</td></tr><tr><td><code>not verified</code></td><td>the record is not in an accepted state (see the badge and the note above the table); the numbers are shown as extracted, not endorsed.</td></tr></tbody></table>
@@ -120,6 +135,9 @@ Osawa M et al., Population Pharmacokinetic Analysis for…, Journal of clinical 
 ## Raw artifacts
 
 - scholar stages: `../../../knowledgebase/drugs/drug_asunaprevir/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Osawa_2018` / `Osawa_2018::reference`)
+- model: `../../../knowledgebase/drugs/drug_asunaprevir/models/modelica/Asunaprevir_Osawa2018_reference.mo`
+- deviation: `../../../knowledgebase/drugs/drug_asunaprevir/models/modelica/Asunaprevir_Osawa2018_reference.deviation.json`
+- sim: `../../../knowledgebase/drugs/drug_asunaprevir/models/modelica/Asunaprevir_Osawa2018_reference.json`
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -128,12 +146,12 @@ Osawa M et al., Population Pharmacokinetic Analysis for…, Journal of clinical 
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_asunaprevir/Asunaprevir_Osawa2018_reference/Asunaprevir_Osawa2018_reference_modelica.zip" download>Asunaprevir_Osawa2018_reference_modelica.zip</a> <span class="pk-size">(4.7 kB)</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_asunaprevir/Asunaprevir_Osawa2018_reference/Asunaprevir_Osawa2018_reference_fmi.zip" download>Asunaprevir_Osawa2018_reference_fmi.zip</a> <span class="pk-size">(4.3 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_asunaprevir/Asunaprevir_Osawa2018_reference/Asunaprevir_Osawa2018_reference_matlab.zip" download>Asunaprevir_Osawa2018_reference_matlab.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_asunaprevir/Asunaprevir_Osawa2018_reference/Asunaprevir_Osawa2018_reference_matlab_simbio.zip" download>Asunaprevir_Osawa2018_reference_matlab_simbio.zip</a> <span class="pk-size">(2.8 kB)</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_asunaprevir/Asunaprevir_Osawa2018_reference/Asunaprevir_Osawa2018_reference_sbml.zip" download>Asunaprevir_Osawa2018_reference_sbml.zip</a> <span class="pk-size">(2.6 kB)</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_asunaprevir/Asunaprevir_Osawa2018_reference/Asunaprevir_Osawa2018_reference_cellml.zip" download>Asunaprevir_Osawa2018_reference_cellml.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_asunaprevir/Asunaprevir_Osawa2018_reference/Asunaprevir_Osawa2018_reference_fmi.zip" download>Asunaprevir_Osawa2018_reference_fmi.zip</a> <span class="pk-size">(4.1 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_asunaprevir/Asunaprevir_Osawa2018_reference/Asunaprevir_Osawa2018_reference_matlab.zip" download>Asunaprevir_Osawa2018_reference_matlab.zip</a> <span class="pk-size">(3.2 kB)</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_asunaprevir/Asunaprevir_Osawa2018_reference/Asunaprevir_Osawa2018_reference_matlab_simbio.zip" download>Asunaprevir_Osawa2018_reference_matlab_simbio.zip</a> <span class="pk-size">(2.6 kB)</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_asunaprevir/Asunaprevir_Osawa2018_reference/Asunaprevir_Osawa2018_reference_sbml.zip" download>Asunaprevir_Osawa2018_reference_sbml.zip</a> <span class="pk-size">(2.4 kB)</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_asunaprevir/Asunaprevir_Osawa2018_reference/Asunaprevir_Osawa2018_reference_cellml.zip" download>Asunaprevir_Osawa2018_reference_cellml.zip</a> <span class="pk-size">(2.9 kB)</span></td></tr>
 </tbody></table>
 <p>Each archive holds the model source, a script that simulates it against the appropriate library, and a README describing both and how to run them.</p>
 <p><b>FMI is two downloads.</b> The archive holds this record's parameters and its driver; the simulator itself is <code>PK_1C_enteral.fmu</code>, one compiled template shared by every model of this structure. Take the FMU once, keep it beside the script (or pass <code>--fmu PATH</code>). Running it reproduces the model-specific FMU exactly.</p>
@@ -150,4 +168,4 @@ Osawa M et al., Population Pharmacokinetic Analysis for…, Journal of clinical 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 13:15 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 15:17 UTC</sub>

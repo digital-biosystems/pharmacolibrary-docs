@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;J05A&quot;,&quot;href&quot;:&quot;atc/J05A.md&quot;},{&quot;label&quot;:&quot;abacavir&quot;,&quot;href&quot;:&quot;drugs/drug_abacavir/&quot;},{&quot;label&quot;:&quot;Chandasana_2024_2 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Abacavir_Chupradit2024_reference&quot;,&quot;label&quot;:&quot;Chupradit_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_abacavir/Abacavir_Chupradit2024_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Abacavir_Fauchet2014_reference&quot;,&quot;label&quot;:&quot;Fauchet_2014_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_abacavir/Abacavir_Fauchet2014_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Abacavir_Ji2024_reference&quot;,&quot;label&quot;:&quot;Ji_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_abacavir/Abacavir_Ji2024_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Abacavir_Zhang2015_reference&quot;,&quot;label&quot;:&quot;Zhang_2015_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_abacavir/Abacavir_Zhang2015_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Abacavir_Chupradit2024_reference&quot;,&quot;label&quot;:&quot;Chupradit_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_abacavir/Abacavir_Chupradit2024_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Abacavir_Fauchet2014_reference&quot;,&quot;label&quot;:&quot;Fauchet_2014_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_abacavir/Abacavir_Fauchet2014_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Abacavir_Zhang2015_reference&quot;,&quot;label&quot;:&quot;Zhang_2015_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_abacavir/Abacavir_Zhang2015_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Abacavir_Ji2024_reference&quot;,&quot;label&quot;:&quot;Ji_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_abacavir/Abacavir_Ji2024_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -25,19 +25,19 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 
 <sub>reviewed by glm-5.3-flash</sub>
 
-> ⚠️ **STALE** — review status `needs_review` (reviewed 2026-09-28 14:35:50.746810+00:00) predates the upstream re-run (2026-10-07 12:38:08.219470+00:00). Current validate status: `needs_review`.
+> ⚠️ **STALE** — review status `needs_review` (reviewed 2026-09-28 14:35:50.746810+00:00) predates the upstream re-run (2026-10-07 14:49:32.511034+00:00). Current validate status: `needs_review`.
 
-> **Dose compound ≠ measured compound:** dosed `ABC/DTG/3TC FDC`, measured `abacavir`.
+> **Dose compound ≠ measured compound:** dosed `abacavir/dolutegravir/lamivudine FDC`, measured `abacavir`.
 
 ## Citation
 Chandasana H et al., Population Pharmacokinetic Modeling of…, Infectious diseases and the… (2024)
   ·  DOI: [10.1007/s40121-024-01008-y](https://doi.org/10.1007/s40121-024-01008-y)
 
 ## Model component
-<dbs-pgx drug="abacavir" model-id="Abacavir_Chandasana2024v2_reference" status="needs_review" stale="true" population="children with HIV-1" measured-compound="abacavir" parameterization="apparent" topology="2C"></dbs-pgx>
+<dbs-pgx drug="abacavir" model-id="Abacavir_Chandasana2024v2_reference" status="needs_review" stale="true" population="children with HIV-1 (IMPAACT 2019)" measured-compound="abacavir" parameterization="apparent" topology="2C"></dbs-pgx>
 
 **Model structure:** 2-compartment; no model was built for this record.  
-**Parameters:** 8 extracted, plus 5 covariate effects.
+**Parameters:** 8 extracted, plus 6 covariate effects.
 
 **Parameterization:** CL/F, Q/F, V1/F, V2/F, V3/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
@@ -51,25 +51,21 @@ Chandasana H et al., Population Pharmacokinetic Modeling of…, Infectious disea
 | Absorption rate constant, KA [h−1] | `Q49` · kabs | 2.08 | 1/h | 0.0005777777777777778 | 1/h | 2.31 | llm_confirmed (0.6) | Chandasana_2024_2_table_1:row2:col1, Chandasana_2024_2_table_3:row0:col1 | — | 107 (None% RSE) |
 | Intercompartment clearance, Q/F [l/h] | `Q69` · Q/F | 1.69 | l/h | 4.694444444444444e-07 | [l] / [h] | 7.87 | llm_corrected (0.6) | Chandasana_2024_2_table_1:row3:col1 | — | 67.9 (None% RSE) |
 | Apparent peripheral compartment volume of distribution, V3/F [l] | `Q78` · V3/F | 23.0 | l | 0.023 | [l] | 17.4 | llm_corrected (0.6) | Chandasana_2024_2_table_1:row4:col1 | — | 91.9 (None% RSE) |
-| F, tablet ARROW PK Substudy Part 2 | `Q900` · equation variable | 1.62 | not captured | not captured | not captured | 8.02 | llm (0.6) | Chandasana_2024_2_table_1:row5:col1 | — | not captured |
+| F, tablet ARROW PK Substudy Part 2 | `Q40` · Fab | 1.62 | not captured | not captured | not captured | 8.02 | llm (0.6) | Chandasana_2024_2_table_1:row5:col1 | — | not captured |
 | Apparent central volume of distribution, V/F [l] | `Q290` · V1/F | 23.1 | l | 0.023100000000000002 | [l] | 2.42 | llm_confirmed (0.6) | Chandasana_2024_2_table_2:row1:col1, Chandasana_2024_2_table_3:row2:col1 | — | not captured |
-| F, fasted FCT | `Q40` · Fab | 1.00 | not captured | not captured | not captured | not captured | llm (0.6) | Chandasana_2024_2_table_2:row4:col1 | — | not captured |
-| Lag time ALAG1 (h) | `Q83` · tlag | 0.297 | h | 1069.2 | [h] | 12.1 | boundary (0.8) | Chandasana_2024_2_table_3:row1:col1 | — | not captured |
+| Maturation half time, TM50 [PMA weeks] | `Q900` · equation variable | 52.2 | FMAT | not captured | [fmat] | not captured | llm (0.6) | Chandasana_2024_2_table_2:row10:col1 | — | not captured |
+| Lag time ALAG1 (h) | `Q83` · tlag | 0.297 | h | 1069.2 | [h] | 12.1 | llm_confirmed (0.6) | Chandasana_2024_2_table_3:row1:col1 | — | not captured |
 | theta_cl_f_wt_power | `Q900` · theta_cl_f_wt_power | 0.794 | not captured | not captured | not captured | not captured | not captured (not captured) | Chandasana_2024_2_table_1:row7:col1 | — | not captured |
+| theta_v2_f_wt_power | `Q900` · theta_v2_f_wt_power | 0.698 | not captured | not captured | not captured | not captured | not captured (not captured) | Chandasana_2024_2_table_1:row8:col1 | — | not captured |
 | theta_cl_f_wt_power | `Q900` · theta_cl_f_wt_power | 0.455 | not captured | not captured | not captured | 4.15 | not captured (not captured) | Chandasana_2024_2_table_2:row7:col1 | — | not captured |
-| theta_q76_wt_power | `Q900` · theta_q76_wt_power | 0.556 | not captured | not captured | not captured | 3.87 | not captured (not captured) | Chandasana_2024_2_table_2:row8:col1 | — | not captured |
+| theta_q353_wt_power | `Q900` · theta_q353_wt_power | 0.556 | not captured | not captured | not captured | 3.87 | not captured (not captured) | Chandasana_2024_2_table_2:row8:col1 | — | not captured |
 | theta_cl_f_wt_power | `Q900` · theta_cl_f_wt_power | 0.758 | not captured | not captured | not captured | 7.07 | not captured (not captured) | Chandasana_2024_2_table_3:row6:col1 | — | not captured |
-| theta_q1_wt_power | `Q900` · theta_q1_wt_power | 0.677 | not captured | not captured | not captured | 8.98 | not captured (not captured) | Chandasana_2024_2_table_3:row7:col1 | — | not captured |
+| theta_q76_wt_power | `Q900` · theta_q76_wt_power | 0.677 | not captured | not captured | not captured | 8.98 | not captured (not captured) | Chandasana_2024_2_table_3:row7:col1 | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
 <table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>label (paper)</code></td><td>the row or statistic label exactly as printed in the paper (label_verbatim) — never normalised, so it can be found in the PDF.</td></tr><tr><td><code>Q-code · name</code></td><td>the ontology parameter this label was matched to (Q22 = clearance, Q27 = CL/F, Q49 = ka, Q57 = half-life, …) and its canonical name. The Q-code, not the label, is what scoring and cross-paper merging use.</td></tr><tr><td><code>value</code></td><td>the estimate as reported in the paper.</td></tr><tr><td><code>unit</code></td><td>the unit as printed (unit_verbatim).</td></tr><tr><td><code>value_si</code></td><td>the value converted to the canonical unit. Empty when no conversion was possible — usually an unparseable or missing unit.</td></tr><tr><td><code>unit_canonical</code></td><td>the canonical unit for that Q-code, i.e. what value_si is expressed in.</td></tr><tr><td><code>RSE%</code></td><td>relative standard error of the estimate, when the paper reports one.</td></tr><tr><td><code>link</code></td><td>how the label was matched to the Q-code, with confidence. exact / boundary / fuzzy / tv_prefix / caption_compartment / special_case are deterministic string matches; llm, llm_confirmed, llm_corrected involved the model; review and review_gapfill come from the secondary review tier, the latter filling a parameter the primary extraction missed; boundary_relink is a corrected match.</td></tr><tr><td><code>source</code></td><td>where in the paper the number came from: colN = that column of the located table, other_prose = running text, review = the secondary tier, pgx = a pharmacogenomic record.</td></tr><tr><td><code>covariates</code></td><td>covariate effects attached to this parameter (e.g. weight on CL).</td></tr><tr><td><code>IIV</code></td><td>inter-individual variability reported for this parameter.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>the field is absent from the KB artifact — nothing was recorded. This is NOT the same as zero or empty: the value is unknown, not measured to be nothing.</td></tr><tr><td><code>—</code></td><td>deliberately not shown: the column does not apply to this row.</td></tr><tr><td><code>not verified</code></td><td>the record is not in an accepted state (see the badge and the note above the table); the numbers are shown as extracted, not endorsed.</td></tr></tbody></table>
 </details>
-
-### Unresolved rows _(no Q-code or no value — not parameters)_
-| label (paper) | Q-code | value | link |
-|---|---|---|---|
-| Weight bands | Q319 | not captured | llm |
 
 ## Departures & gaps
 
@@ -87,24 +83,28 @@ Chandasana H et al., Population Pharmacokinetic Modeling of…, Infectious disea
 - table section residual_error: 'Additive error [mg/l]' routed out of structural estimates ('Residual error')
 - column 'auc0–24(µg*h/ml)' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
 - column 'c24(µg/ml)' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
-- dropped unlinked row (NIL): 'V/2F ~ (WT/15.6)' — extend the ontology if this is a real PK parameter (source ['Chandasana_2024_2_table_1:row8:col1'])
+- dropped unlinked row (NIL): 'Weight bands' — extend the ontology if this is a real PK parameter (source ['Tab4:row0:col3', 'Tab4:row0:col4'])
 - dropped duplicate Q27 ('Apparent clearance, CL/F [l/h]', value '9.16') — already have one for this compound
 - dropped duplicate Q49 ('Absorption rate constant, KA, FCT [h−1]', value '0.854') — already have one for this compound
 - dropped duplicate Q49 ('Absorption rate constant, KA ~ DT and granules [h−1]', value '2.04') — already have one for this compound
-- dropped unlinked row (NIL): 'Maturation half time, TM50 [PMA weeks]' — extend the ontology if this is a real PK parameter (source ['Chandasana_2024_2_table_2:row10:col1'])
+- unit_dimension_unknown: 'FMAT' (equation variable)
 - dropped PD-category row 'Hill coefficient related to the slope of the enzyme maturation process' → Q325 (Hill, category G11) — pharmacodynamic parameters belong to scholarpd, not the PK model (source ['Chandasana_2024_2_table_2:row11:col1'])
+- covariate category for Ct from footnote/prose kept as documentation only (['Tab4:footnote'])
+- NIL: refused to back-fill base 'AUC' from footnote/prose loose number 37 (source ['Tab4:footnote']); the table cell was unparseable — needs review
+- covariate category for AUC from footnote/prose kept as documentation only (['Tab4:footnote'])
+- NIL: refused to back-fill base 'NIL' from footnote/prose loose number 6.3 (source ['Tab4:footnote']); the table cell was unparseable — needs review
+- covariate effect for Q353 has no base parameter row (kept as unattached equation-variable)
 - covariate effect for Q76 has no base parameter row (kept as unattached equation-variable)
-- covariate effect for Q1 has no base parameter row (kept as unattached equation-variable)
-- implicit units: 'Absorption rate constant, KA [h−1]' → 1/h (from the paper text: "The parameter line explicitly states the unit as '[h−1]' next to the value 2.08.")
+- implicit units: 'Absorption rate constant, KA [h−1]' → 1/h (from the paper text: 'Table 2 footnote/parameter list states KA [h−1] = 2.08, i.e., reciprocal hours.')
 - apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=abacavir
-- structure disagreement: deterministic 2C vs LLM 3C — review compartment count
+- held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
+- status held at route_to_review — not promoted
 
 **Extraction notes:**
 - companion parameter table 1 transcribed (14 record(s))
 - companion parameter table 2 transcribed (18 record(s))
 - companion parameter table 3 transcribed (16 record(s))
 - LLM selected parameter table(s) 1, 2, 3, 4
-- LLM region Tab4:footnote: Error code: 429 - {'error': {'message': 'Rate limit exceeded for api_key: 8d79104cac3d0b5a8019d9c3dd60ff02e7a84591fb3552ddb3bbcabd52b31d23. Limit type: max_parallel_requests. Current limit: 4, Remaining: 0. Limit resets at: 2026-10-07 13:09:39 UTC', 'type': 'throttling_error', 'param': None, 'code': '429'}}
 
 ## Validation
 
@@ -185,4 +185,4 @@ _No web simulator for this record: its structure has no shared WebAssembly templ
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 12:38 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 14:49 UTC</sub>

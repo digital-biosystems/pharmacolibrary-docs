@@ -4,7 +4,7 @@
 
 # tenofovir disoproxil — `TenofovirDisoproxil_Burns2015_base`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -14,18 +14,26 @@
 
 **Model:** No model was generated from this record.
 
-> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+### Reviewer guidance
 
-> **Dose compound ≠ measured compound:** dosed `tenofovir_disoproxil`, measured `tenofovir`.
+**Tenofovir diphosphate is an orphan metabolite, and the intercompartmental clearance parameter uses a rate constant unit.**
+
+The record defines tenofovir diphosphate as a metabolite, but the link from the parent tenofovir has an unknown relation type, making it an unreachable compartment. Additionally, the intercompartmental clearance parameter (Q) has a dimension mismatch, where a rate constant unit was applied to a clearance parameter. A unit for a reported parameter could not be converted to SI units. Extracted — tenofovir disoproxil: kabs 9.81 h−1, V1/F 404 L, Q 0.604 h−1, kel 0.13 h−1, tlag 0.5 h; tenofovir_diphosphate: kfm 0.017 h−1, kel 0.013 h−1.
+
+<sub>reviewed by qwen3.8-27b</sub>
+
+> ⚠️ **STALE** — review status `rejected` (reviewed 2026-10-07 14:42:56.802805+00:00) predates the upstream re-run (2026-10-07 16:32:05.847711+00:00). Current validate status: `rejected`.
+
+> **Dose compound ≠ measured compound:** dosed `tenofovir disoproxil fumarate`, measured `tenofovir`.
 
 ## Citation
 Burns RN et al., Population pharmacokinetics of tenofovi…, Journal of clinical pharmac… (2015)
   ·  DOI: [10.1002/jcph.461](https://doi.org/10.1002/jcph.461)
 
 ## Model component
-<dbs-pgx drug="tenofovir disoproxil" model-id="TenofovirDisoproxil_Burns2015_base" status="rejected" stale="false" population="healthy women" measured-compound="tenofovir" parameterization="apparent" topology="general_linear"></dbs-pgx>
+<dbs-pgx drug="tenofovir disoproxil" model-id="TenofovirDisoproxil_Burns2015_base" status="rejected" stale="true" population="healthy women" measured-compound="tenofovir" parameterization="apparent" topology="parent_metabolite"></dbs-pgx>
 
-**Model structure:** general linear; no model was built for this record.  
+**Model structure:** parent + metabolite; no model was built for this record.  
 **Parameters:** 7 extracted.
 
 **Parameterization:** V1/F — apparent, F unknown (apparent — bioavailability not identifiable).
@@ -56,8 +64,8 @@ Burns RN et al., Population pharmacokinetics of tenofovi…, Journal of clinical
 ## Departures & gaps
 
 **Interpretation flags:**
-- dropped unlinked row (NIL): 'Obj Func' — extend the ontology if this is a real PK parameter (source ['jcph461-tbl-0001:row2:col1'])
-- dropped duplicate Q900 ('Condition #', value '149') — already have one for this compound
+- dropped duplicate Q900 ('Obj Func', value '2586') — already have one for this compound
+- dropped unlinked row (NIL): 'Condition #' — extend the ontology if this is a real PK parameter (source ['jcph461-tbl-0001:row3:col1'])
 - unit_dimension_mismatch: 'K23 (h−1)' → Q30 (unit '1 / [time]' vs ontology '[length] ** 3 / [time]') — route to review
 - unit_dimension_mismatch: 'K32 (h−1)' → Q30 (unit '1 / [time]' vs ontology '[length] ** 3 / [time]') — route to review
 - dropped duplicate Q30 ('K32 (h−1)', value '0.37') — already have one for this compound
@@ -65,13 +73,12 @@ Burns RN et al., Population pharmacokinetics of tenofovi…, Journal of clinical
 - dropped unlinked row (NIL): 'Proportional, TFV‐DP (PBMC) (%CV)' — extend the ontology if this is a real PK parameter (source ['jcph461-tbl-0001:row19:col1'])
 - apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=tenofovir
 - held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
-- topology: transfer parameter unlinked (Q100) — add Kfm/formation-rate/rate-constant to the ontology; routing to review
 - template fit: none — only the metabolite is modelled — no parent compartment
 - status held at route_to_review — not promoted
 - model-stage split: 'base model' is the base model of Burns_2015 (paper reports 2 stages: base model, final model); same population, different model-building step
-- row roles (LLM): model_class=compartmental; 18/18 row label(s) assigned, 16 linked by role; re-tagged parent→tenofovir ×23, parent→tenofovir_diphosphate ×6
+- row roles (LLM): model_class=compartmental; 18/18 row label(s) assigned, 16 linked by role; re-tagged parent→tenofovir ×21, parent→tenofovir-diphosphate ×8
 - skipped review gap-fill of CL: primary's parameterization (rate-constant / ka-only) does not use it
-- skipped review gap-fill of V2: primary is GENERAL_LINEAR (peripheral family needs ≥2C)
+- skipped review gap-fill of V2: primary is PARENT_METABOLITE (peripheral family needs ≥2C)
 
 **Extraction notes:**
 - unparsed cell jcph461-tbl-0001:row5:col2 = '10.15 (1.08–45.4)'
@@ -103,7 +110,7 @@ Burns RN et al., Population pharmacokinetics of tenofovi…, Journal of clinical
 - unparsed cell jcph461-tbl-0001:row18:col4 = '27.36 (22.95–31.71)'
 - unparsed cell jcph461-tbl-0001:row19:col2 = '30.71 (27.12–35.16)'
 - unparsed cell jcph461-tbl-0001:row19:col4 = '30.89 (27.08–35.11)'
-- LLM region Burns_2015:results_prose: Error code: 429 - {'error': {'message': 'Rate limit exceeded for api_key: 8d79104cac3d0b5a8019d9c3dd60ff02e7a84591fb3552ddb3bbcabd52b31d23. Limit type: max_parallel_requests. Current limit: 4, Remaining: 0. Limit resets at: 2026-10-07 14:52:25 UTC', 'type': 'throttling_error', 'param': None, 'code': '429'}}
+- LLM selected parameter table(s) 1
 
 ## Validation
 
@@ -122,7 +129,7 @@ Burns RN et al., Population pharmacokinetics of tenofovi…, Journal of clinical
 | C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['jcph461-tbl-0001:row5:col1'] |
 | C5_dimension_Q83 | pass | [time] | not captured | not captured | not captured | ['jcph461-tbl-0001:row13:col1'] |
 | C7_apparent_coherence | pass | not captured | not captured | not captured | not captured | not captured |
-| C8_topology | fail | ontology-linked transfer parameter on every edge | ['none'] | not captured | not captured | not captured |
+| C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
 | C9_phys_window_Q290 | pass | volume within physiological range | 404 L | not captured | not captured | ['jcph461-tbl-0001:row6:col1'] |
 
 <details class="legend">
@@ -148,4 +155,4 @@ _No web simulator for this record: its structure has no shared WebAssembly templ
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 14:21 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 16:32 UTC</sub>

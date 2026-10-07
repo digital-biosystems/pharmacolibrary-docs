@@ -18,11 +18,20 @@ Clevudine is an antiviral drug investigated for the treatment of hepatitis B. It
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 12:48 | 0:33 | 0/0/0 | 0/0/0 | 0/0/0 | 29,979/353 | einfracz / qwen3.8-27b | 1 | 0/1 | 1/0 | 0 |
+| 2026-10-07 15:25 | 0:18 | 0/0/0 | 0/1/0 | 0/0/0 | 34,061/1,099 | ollama / glm-5.3-flash | 1 | 0/1 | 1/0 | 0 |
 
 ## popPK records
 
 _not available_
+
+## Pharmacodynamics (PD)
+
+| status | detail | about | model | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Abdelhamed_2003_CCC_DNA](drugs/drug_clevudine/pd_Abdelhamed_2003_CCC_DNA.md) | nuclear HBV covalently closed circular (CCC) DNA ← clevudine · direct sigmoid Emax (Hill) effect | — | Abdelhamed AM et al., Comparison of anti-hepatitis B virus ac…, Antimicrobial agents and ch… (2003) | [10.1128/AAC.47.1.324-336.2003](https://doi.org/10.1128/AAC.47.1.324-336.2003) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Abdelhamed_2003_extracellular_DNA](drugs/drug_clevudine/pd_Abdelhamed_2003_extracellular_DNA.md) | extracellular HBV DNA ← clevudine · direct sigmoid Emax (Hill) effect | — | Abdelhamed AM et al., Comparison of anti-hepatitis B virus ac…, Antimicrobial agents and ch… (2003) | [10.1128/AAC.47.1.324-336.2003](https://doi.org/10.1128/AAC.47.1.324-336.2003) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Abdelhamed_2003_nuclear_RC_DNA](drugs/drug_clevudine/pd_Abdelhamed_2003_nuclear_RC_DNA.md) | nuclear HBV relaxed circular DNA ← clevudine · direct sigmoid Emax (Hill) effect | — | Abdelhamed AM et al., Comparison of anti-hepatitis B virus ac…, Antimicrobial agents and ch… (2003) | [10.1128/AAC.47.1.324-336.2003](https://doi.org/10.1128/AAC.47.1.324-336.2003) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Abdelhamed_2003_replicative_intermediate_DNA](drugs/drug_clevudine/pd_Abdelhamed_2003_replicative_intermediate_DNA.md) | cytoplasmic HBV replicative intermediate DNA ← clevudine · direct sigmoid Emax (Hill) effect | — | Abdelhamed AM et al., Comparison of anti-hepatitis B virus ac…, Antimicrobial agents and ch… (2003) | [10.1128/AAC.47.1.324-336.2003](https://doi.org/10.1128/AAC.47.1.324-336.2003) |
 
 <details class="legend">
 <summary>Badge legend — what each badge means</summary>
@@ -41,9 +50,11 @@ _not available_
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Abdelhamed_2003 | irrelevant | 0 | 0 | The study is an in-vitro virological assay measuring antiviral activity (EC50) and HBV DNA levels, not a pharmacokinetic study reporting disposition parameters for clevudine. |
-| popPK | Chu_1998 | irrelevant | 0 | 0 | The study investigates L-FMAU (a different drug), not clevudine, and contains no quantitative PK parameters for the target drug. |
-| popPK | Squires_2020 | irrelevant | 2 | 0 | The study focuses on a new prodrug (ATI-2173) and uses clevudine as a reference compound, reporting no compartmental PK parameters (CL, V, Q, ka) for clevudine itself, with data limited to relative exposure comparisons and specific qualitative mentions. |
+| popPK | Abdelhamed_2003 | irrelevant | 0 | 0 | In vitro antiviral efficacy study (EC50) in HepG2 cells with no pharmacokinetic disposition parameters for clevudine. |
+| popPK | Chu_1998 | irrelevant | 3 | 1 | Clevudine (L-FMAU) is the subject drug, but only qualitative statements (e.g., "respectable bioavailability in rats") appear with no numeric PK parameters in the evidence. |
+| popPK | Ma_1996 | irrelevant | 0 | 0 | This is a structure-activity synthesis/antiviral potency study in vitro with no pharmacokinetic disposition parameters for clevudine (L-FMAU). |
+| popPK | Ma_1997 | irrelevant | 0 | 0 | This is a chemistry/synthesis and in-vitro antiviral activity paper with no pharmacokinetic parameters for clevudine. |
+| popPK | Squires_2020 | irrelevant | 2 | 1 | Clevudine is the prodrug backbone of ATI-2173; PK data (rat plasma/tissue levels, monkey hepatic extraction) are described only qualitatively or as "data not shown"/figures, with no numeric disposition parameters for clevudine itself. |
 
 ---
 <sub>Generated by `docs.py` (scholarv2)</sub>

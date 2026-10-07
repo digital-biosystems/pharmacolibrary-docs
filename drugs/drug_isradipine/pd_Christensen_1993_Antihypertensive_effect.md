@@ -13,12 +13,16 @@
 
 ## What this record describes
 
-**As extracted:** Isradipine drives Antihypertensive effect (in mmHg): direct Emax (saturable) effect.
+**As extracted:** Isradipine drives Antihypertensive effect (in mmHg) (inhibition; the model form was not identified).
 
 **Model:** No model was generated from this record.
 
+> The paper does not provide full text to specify the mechanism by which isradipine concentrations affect the antihypertensive response, though the record indicates an Emax model with an inhibitory effect. The record lists two Emax values of 10/3 mmHg and 23/14 mmHg, but no potency or rate parameters are stated.
+>
+> <sub>in the paper's terms — summarised by qwen3.8:27b-mtp-q8_0 from the paper's text; not checked by a person</sub>
+
 - **paper:** `Christensen_1993`
-- **model family:** `emax`
+- **model family:** `unknown`
 - **driver:** `not_resolved`
 - **tier:** descriptive
 - **effect:** inhibition/unknown

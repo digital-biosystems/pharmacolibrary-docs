@@ -13,16 +13,16 @@
 
 ## What this record describes
 
-**As extracted:** Ubrogepant (measured concentrations) drives 2-hour pain relief: categorical (graded) response model.
+**As extracted:** Ubrogepant (measured concentrations) drives 2-hour pain relief: direct Emax (saturable) effect.
 
 **Model:** No model was generated from this record.
 
-> The model describes a direct concentration-dependent Emax effect of ubrogepant on the binary 2-hour pain relief response, with an EC50 of 41.9 nM and an Emax of 1.12. The paper does not specify a physiological mechanism (e.g., inhibition of production or elimination) for this effect.
+> The model links 2-hour pain relief to ubrogepant C2hour concentrations using a logit-based additive Emax form, without specifying the underlying physiological mechanism (e.g., production vs. inhibition) in the excerpts. The estimated EC50 was 41.9 nM and Emax was 1.12.
 >
-> <sub>in the paper's terms — summarised by qwen3.8:27b-mtp-q8_0 from the paper's text; not checked by a person</sub>
+> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
 
 - **paper:** `Li_2020`
-- **model family:** `categorical`
+- **model family:** `emax`
 - **driver:** `conc_no_pk`
 - **tier:** population
 - **effect:** stimulation/additive
@@ -36,9 +36,9 @@ Li CC et al., Making Better Dose Decisions: Using Exp…, Clinical and translati
 |---|---|---|---|---|---|---|---|
 | PD (effect) | Emax | `Q320` · not captured | 1.12 | not captured | not captured | llm (not captured) | Li_2020:pdv3 |
 | PD (effect) | EC50 | `Q321` · not captured | 41.9 | nM | not captured | llm (not captured) | Li_2020:pdv3 |
-| PD (effect) | β0 | `Q344` · not captured | –2.09 | not captured | not captured | llm (not captured) | Li_2020:pdv3 |
-| model term | β1,pbo | `Q900` · not captured | 1.83 | not captured | not captured | llm (not captured) | Li_2020:pdv3 |
-| model term | Headache severity | `Q900` · not captured | -0.563 | not captured | not captured | llm (not captured) | Li_2020:pdv3 |
+| PD (effect) | β0 | `Q344` · not captured | -2.09 | not captured | not captured | llm (not captured) | Li_2020:pdv3 |
+| — | β1 | `Q100` · not captured | 1.83 | not captured | not captured | nil (not captured) | Li_2020:pdv3 |
+| — | Headache severity | `Q100` · not captured | -0.563 | not captured | not captured | nil (not captured) | Li_2020:pdv3 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

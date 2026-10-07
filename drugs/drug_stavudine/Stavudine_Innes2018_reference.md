@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;J05A&quot;,&quot;href&quot;:&quot;atc/J05A.md&quot;},{&quot;label&quot;:&quot;stavudine&quot;,&quot;href&quot;:&quot;drugs/drug_stavudine/&quot;},{&quot;label&quot;:&quot;Innes_2018 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Stavudine_Panhard2007_reference&quot;,&quot;label&quot;:&quot;Panhard_2007_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_stavudine/Stavudine_Panhard2007_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Stavudine_Jullien2007_reference&quot;,&quot;label&quot;:&quot;Jullien_2007_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_stavudine/Stavudine_Jullien2007_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Stavudine_Panhard2007_reference&quot;,&quot;label&quot;:&quot;Panhard_2007_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_stavudine/Stavudine_Panhard2007_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Stavudine_Sinxadi2010_reference&quot;,&quot;label&quot;:&quot;Sinxadi_2010_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_stavudine/Stavudine_Sinxadi2010_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # stavudine — `Stavudine_Innes2018_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -15,7 +15,15 @@
 
 **Model:** No model was generated from this record.
 
-> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+### Reviewer guidance
+
+**CLm/F, V1, Q and V2 have no unit.**
+
+Without a unit the value cannot be converted, so the model cannot use it. A reported unit could not be converted (CLm/F, V1, Q and V2), so that value has no SI equivalent. None of the extracted parameters is stavudine's own; they describe stavudine triphosphate. Extracted — stavudine triphosphate: CLm/F 230 n = 23, V1 1.04e+03 n = 23, Q 238 n = 23, V2 3.03e+03 n = 23, kabs 11.1 /h, tlag 0.41 h.
+
+<sub>reviewed by rule template (no LLM)</sub>
+
+> ⚠️ **STALE** — review status `needs_review` (reviewed 2026-10-07 14:42:50.471812+00:00) predates the upstream re-run (2026-10-07 16:16:53.981804+00:00). Current validate status: `needs_review`.
 
 > **Dose compound ≠ measured compound:** dosed `stavudine`, measured `stavudine triphosphate`.
 
@@ -24,10 +32,10 @@ Innes S et al., Can We Improve Stavudine's Safety Profi…, Antimicrobial agents
   ·  DOI: [10.1128/AAC.00761-18](https://doi.org/10.1128/AAC.00761-18)
 
 ## Model component
-<dbs-pgx drug="stavudine" model-id="Stavudine_Innes2018_reference" status="needs_review" stale="false" population="HIV-infected children and adults" measured-compound="stavudine triphosphate" parameterization="apparent" topology="1C"></dbs-pgx>
+<dbs-pgx drug="stavudine" model-id="Stavudine_Innes2018_reference" status="needs_review" stale="true" population="HIV-infected children and adults on stavudine" measured-compound="stavudine triphosphate" parameterization="apparent" topology="1C"></dbs-pgx>
 
 **Model structure:** 1-compartment; no model was built for this record.  
-**Parameters:** 6 extracted.
+**Parameters:** 5 extracted.
 
 **Parameterization:** CLm/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
@@ -36,7 +44,6 @@ Innes S et al., Can We Improve Stavudine's Safety Profi…, Antimicrobial agents
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| CL (1012 cells/h) | `Q351` · CLm/F | 230 | n = 23 | not captured | [n=23] | 454 | exact (1.0) | T2:row1:col1, T2:row1:col2 | — | not captured |
 | Vc (1012 cells) | `Q63` · V1 | 1037 | n = 23 | not captured | [n=23] | 2569 | exact (1.0) | T2:row2:col1, T2:row2:col2 | — | not captured |
 | Q (1012 cells/h) | `Q30` · Q | 238 | n = 23 | not captured | [n=23] | 469 | exact (1.0) | T2:row3:col1, T2:row3:col2 | — | not captured |
 | Vp (1012 cells) | `Q64` · V2 | 3027 | n = 23 | not captured | [n=23] | 7500 | exact (1.0) | T2:row4:col1, T2:row4:col2 | — | not captured |
@@ -51,20 +58,20 @@ Innes S et al., Can We Improve Stavudine's Safety Profi…, Antimicrobial agents
 ### Unresolved rows _(no Q-code or no value — not parameters)_
 | label (paper) | Q-code | value | link |
 |---|---|---|---|
+| Parametera | Q351 | not captured | llm |
 | F | Q40 | not captured | exact |
 
 ## Departures & gaps
 
 **Interpretation flags:**
-- dropped unlinked row (NIL): 'Parametera' — extend the ontology if this is a real PK parameter (source ['T2:row0:col1', 'T2:row0:col2'])
 - unit_dimension_unknown: 'n = 23' (CL)
+- dropped duplicate Q22 ('CL (1012 cells/h)', value '230') — already have one for this compound
 - unit_dimension_unknown: 'n = 23' (V1)
 - unit_dimension_unknown: 'n = 23' (Q)
 - unit_dimension_unknown: 'n = 23' (V2)
-- implicit units: 'CL (1012 cells/h)' — the LLM proposed '10^12 cells/h', whose dimension does not fit Q22; left unset
-- implicit units: 'Vc (1012 cells)' — the LLM proposed '10^12 cells', whose dimension does not fit Q63; left unset
-- implicit units: 'Q (1012 cells/h)' — the LLM proposed '10^12 cells/h', whose dimension does not fit Q30; left unset
-- implicit units: 'Vp (1012 cells)' — the LLM proposed '10^12 cells', whose dimension does not fit Q64; left unset
+- implicit units: 'Vc (1012 cells)' — the LLM proposed '1012 cells', whose dimension does not fit Q63; left unset
+- implicit units: 'Q (1012 cells/h)' — the LLM proposed '1012 cells/h', whose dimension does not fit Q30; left unset
+- implicit units: 'Vp (1012 cells)' — the LLM proposed '1012 cells', whose dimension does not fit Q64; left unset
 - metabolite stavudine triphosphate: Q22→Q351 — only the metabolite is measured and fm is not identifiable, so its CL/V are apparent (fm-divided)
 - apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=stavudine triphosphate
 - held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
@@ -84,14 +91,12 @@ Innes S et al., Can We Improve Stavudine's Safety Profi…, Antimicrobial agents
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 4 | not captured | not captured | not captured |
+| C0_has_structural_params | pass | not captured | 3 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
-| C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
-| C2_base_Q351 | pass | 230.0 | 230.0 | 1.0 | 0.05 | footnote reference category |
+| C0c_disposition_complete | fail | not captured | not captured | not captured | not captured | not captured |
 | C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['Sinxadi_2010:review'] |
 | C5_dimension_Q83 | pass | [time] | not captured | not captured | not captured | ['Sinxadi_2010:review'] |
 | C5_unit_missing_Q30 | fail | [length] ** 3 / [time] | n = 23 | not captured | not captured | ['T2:row3:col1', 'T2:row3:col2'] |
-| C5_unit_missing_Q351 | fail | [length] ** 3 / [time] | n = 23 | not captured | not captured | ['T2:row1:col1', 'T2:row1:col2'] |
 | C5_unit_missing_Q63 | fail | [length] ** 3 | n = 23 | not captured | not captured | ['T2:row2:col1', 'T2:row2:col2'] |
 | C5_unit_missing_Q64 | fail | [length] ** 3 | n = 23 | not captured | not captured | ['T2:row4:col1', 'T2:row4:col2'] |
 | C7_apparent_coherence | pass | not captured | not captured | not captured | not captured | not captured |
@@ -130,4 +135,4 @@ _No web simulator for this record: its structure has no shared WebAssembly templ
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 13:55 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 16:16 UTC</sub>

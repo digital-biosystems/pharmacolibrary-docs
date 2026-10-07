@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C02K&quot;,&quot;href&quot;:&quot;atc/C02K.md&quot;},{&quot;label&quot;:&quot;sotatercept&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Sotatercept_AitOudhia2024_reference&quot;,&quot;label&quot;:&quot;Ait-Oudhia_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_sotatercept/Sotatercept_AitOudhia2024_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Sotatercept_AitOudhia2024_reference&quot;,&quot;label&quot;:&quot;Ait-Oudhia_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_sotatercept/Sotatercept_AitOudhia2024_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 # sotatercept
 
@@ -18,13 +18,23 @@ Sotatercept is a fusion-protein medication used to treat pulmonary arterial hype
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-06 16:39 | 6:04 | 1/0/0 | 0/0/0 | 0/0/0 | 89,497/17,418 | ollama / qwen3.8:27b-mtp-q8_0 | 3 | 0/3 | 3/0 | 0 |
+| 2026-10-07 15:32 | 2:12 | 1/0/0 | 1/1/0 | 0/0/0 | 88,057/7,733 | einfracz / qwen3.8-27b | 4 | 0/4 | 4/0 | 0 |
 
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.667). The first reading is what the record holds.">cross-check: disputed</span> | [Ait-Oudhia_2024_reference](drugs/drug_sotatercept/Sotatercept_AitOudhia2024_reference.md) | ▶ model + simulator | 2-compartment, oral | 6 (+3 cov.) | Ait-Oudhia S et al., Population pharmacokinetic modeling of…, CPT: pharmacometrics & syst… (2024) | [10.1002/psp4.13166](https://doi.org/10.1002/psp4.13166) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.667). The first reading is what the record holds.">cross-check: disputed</span><br><sub>caveat: the record defines covariate effects (weight on clearance, renal function …) but the engineer simulated only…</sub><br><sub>STALE — current validate: extracted</sub><br><sub>route_to: `engineer_replication`</sub> | [Ait-Oudhia_2024_reference](drugs/drug_sotatercept/Sotatercept_AitOudhia2024_reference.md) | ▶ model + simulator | 2-compartment, oral | 6 (+3 cov.) | Ait-Oudhia S et al., Population pharmacokinetic modeling of…, CPT: pharmacometrics & syst… (2024) | [10.1002/psp4.13166](https://doi.org/10.1002/psp4.13166) |
+
+## Pharmacodynamics (PD)
+
+| status | detail | about | model | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--green">extracted</span> | [Ait-Oudhia_2025_6MWD](drugs/drug_sotatercept/pd_Ait_Oudhia_2025_6MWD.md) | 6-minute walk distance ← sotatercept · direct Emax (saturable) effect | — | Ait-Oudhia S et al., Population Pharmacokinetic/Pharmacodyna…, Clinical pharmacology and t… (2025) | [10.1002/cpt.3524](https://doi.org/10.1002/cpt.3524) |
+| <span class="pk-badge pk-badge--green">reviewed — candidate</span> | [Ait-Oudhia_2025_PVR](drugs/drug_sotatercept/pd_Ait_Oudhia_2025_PVR.md) | pulmonary vascular resistance ← sotatercept · direct linear effect | model (no simulator) | Ait-Oudhia S et al., Population Pharmacokinetic/Pharmacodyna…, Clinical pharmacology and t… (2025) | [10.1002/cpt.3524](https://doi.org/10.1002/cpt.3524) |
+| <span class="pk-badge pk-badge--orange">needs review</span> | [Ait-Oudhia_2025_Hgb](drugs/drug_sotatercept/pd_Ait_Oudhia_2025_Hgb.md) | hemoglobin ← sotatercept · direct sigmoid Emax (Hill) effect | model (no simulator) | Ait-Oudhia S et al., Population Pharmacokinetic/Pharmacodyna…, Clinical pharmacology and t… (2025) | [10.1002/cpt.3524](https://doi.org/10.1002/cpt.3524) |
+| <span class="pk-badge pk-badge--orange">needs review</span> | [Ait-Oudhia_2025_NT_proBNP](drugs/drug_sotatercept/pd_Ait_Oudhia_2025_NT_proBNP.md) | time to NT‐proBNP &lt; 300 pg/mL ← sotatercept · time-to-event model | — | Ait-Oudhia S et al., Population Pharmacokinetic/Pharmacodyna…, Clinical pharmacology and t… (2025) | [10.1002/cpt.3524](https://doi.org/10.1002/cpt.3524) |
+| <span class="pk-badge pk-badge--red">rejected</span> | [Sherman_2013_hemoglobin](drugs/drug_sotatercept/pd_Sherman_2013_hemoglobin.md) | hemoglobin biomarker turnover ← sotatercept | — | Sherman ML et al., Multiple-dose, safety, pharmacokinetic,…, Journal of clinical pharmac… (2013) | [10.1002/jcph.160](https://doi.org/10.1002/jcph.160) |
 
 ## ADME sites
 
@@ -46,34 +56,23 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 - **PubMed hits:** 14 matched, 14 returned
 - **screened:** 2  ·  **relevant:** 1
-- **records:** 1  ·  extracted 1  ·  needs_review 0  ·  rejected 0  ·  stale 0
+- **records:** 1  ·  extracted 1  ·  needs_review 0  ·  rejected 0  ·  stale 1
 - **scholar-agent fallback query used:** True
-
-## Full text wanted
-
-_1 paper(s) judged relevant from the abstract, with no full text on disk — paywalled, or the resolver could not reach them. Follow the DOI, then save the PDF into `papers/` as `&lt;save as&gt;.pdf` and re-run the extraction._
-
-| save as | citation | domain | score | DOI | PubMed | why wanted |
-|---|---|---|---|---|---|---|
-| `Ait-Oudhia_2025.pdf` | Ait-Oudhia S et al., Population Pharmacokinetic/Pharmacodyna…, Clinical pharmacology and t… (2025) | pd | 5 | [10.1002/cpt.3524](https://doi.org/10.1002/cpt.3524) | [39668469](https://www.ncbi.nlm.nih.gov/pubmed/39668469) | metadata signals extractable PD data (Exposure-Response) |
-
-<sub>queue written 2026-10-06T16:34:14.618703+00:00</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
 | PD | Ait-Oudhia_2024 | not_relevant | 0 | 0 | The paper focuses exclusively on population pharmacokinetic (PK) modeling and does not report pharmacodynamic (PD) or exposure-response relationships. |
-| popPK | Ait-Oudhia_2025 | irrelevant | 0 | 0 | no_text gate: only 171 chars of text extracted (&lt; 400) |
-| PGx | Bose_2019 | not_relevant | 0 | 0 | The paper is a review of myelofibrosis treatments and does not mention sotatercept or any pharmacogenomic effects on its PK/PD parameters. |
-| popPK | Cabré_2026 | irrelevant | 0 | 0 | The paper is a narrative review of cardiovascular pharmacotherapy and does not report quantitative pharmacokinetic parameters for sotatercept. |
+| popPK | Ait-Oudhia_2025 | irrelevant | 3 | 1 | The paper describes exposure-response (E-R) and PK/PD models for efficacy and safety endpoints but does not report the structural population PK parameters (CL, V, Q, ka) or a standalone population PK model for sotatercept. |
+| PGx | Bose_2019 | not_relevant | 0 | 0 | The paper is a review of myelofibrosis treatments and does not mention sotatercept, genetic variants, or pharmacokinetic parameters. |
+| popPK | Cabré_2026 | irrelevant | 0 | 0 | The paper is a narrative review of cardiovascular pharmacotherapy that does not report any quantitative pharmacokinetic parameters for sotatercept. |
 | PD | Cabré_2026 | not_relevant | 0 | 0 | The text is a narrative review of cardiovascular pharmacotherapy and does not contain any specific data, analysis, or numeric parameters for sotatercept. |
 | popPK | Coyne_2019 | irrelevant | 0 | 0 | The paper reports clinical efficacy and safety outcomes (hemoglobin, bone density, vascular calcification) but contains no pharmacokinetic parameters or disposition data for sotatercept. |
-| PGx | Miranda_2025 | not_relevant | 1 | 0 | The paper explicitly states that BMPR2 genetic variant status was not associated with significant differences in treatment effects, reporting a null result rather than a pharmacogenomic effect. |
-| PGx | Montani_2025 | not_relevant | 2 | 5 | The study reports that clinical efficacy (PVR, 6MWD) and safety were consistent regardless of genotype, indicating no differential pharmacodynamic effect of the drug based on genetic status. |
-| popPK | Rothman_2025 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics and efficacy of imatinib, not sotatercept. |
+| PGx | Miranda_2025 | not_relevant | 0 | 0 | The paper states that BMPR2 genetic variant status was not associated with significant differences in treatment effects, reporting a lack of pharmacogenomic effect rather than describing a specific PK/PD parameter modification. |
+| popPK | Rothman_2025 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of imatinib, not sotatercept. |
 | popPK | Sherman_2013 | relevant | 8 | 2 | The paper is a PK study of sotatercept reporting a terminal half-life, but lacks other quantitative disposition parameters like clearance or volume of distribution in the provided text. |
-| PGx | Yoshida_2026 | not_relevant | 0 | 0 | The paper is a clinical trial protocol for sotatercept in congenital heart disease and does not report pharmacogenomic effects on PK or PD parameters. |
+| PGx | Yoshida_2026 | not_relevant | 0 | 0 | The paper is a clinical trial protocol for sotatercept in pulmonary arterial hypertension and does not report any pharmacogenomic data or associations between genetic variants and PK/PD parameters. |
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-10-06 16:34 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-10-07 15:30 UTC</sub>

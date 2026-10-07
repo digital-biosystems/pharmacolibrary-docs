@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;B05C&quot;,&quot;href&quot;:&quot;atc/B05C.md&quot;},{&quot;label&quot;:&quot;glucose&quot;,&quot;href&quot;:&quot;drugs/drug_glucose/&quot;},{&quot;label&quot;:&quot;Sarhan_2025 \u00b7 PGx UMOD&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Glucose_Chotsiri2024_reference&quot;,&quot;label&quot;:&quot;Chotsiri_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_glucose/Glucose_Chotsiri2024_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Glucose_Hwang2020_reference&quot;,&quot;label&quot;:&quot;Hwang_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_glucose/Glucose_Hwang2020_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Glucose_Liu2017_reference&quot;,&quot;label&quot;:&quot;Liu_2017_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_glucose/Glucose_Liu2017_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Glucose_Wang2023_reference&quot;,&quot;label&quot;:&quot;Wang_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_glucose/Glucose_Wang2023_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Glucose_Xiang2025_reference&quot;,&quot;label&quot;:&quot;Xiang_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_glucose/Glucose_Xiang2025_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # UMOD — PGx  <span class="pk-badge pk-badge--neutral" title="the paper links the gene to the drug but states no effect size on a model parameter, so it changes no model.">qualitative</span>
@@ -12,8 +13,8 @@
 - **what it is:** qualitative — the paper links the gene to the drug but states no effect size on a model parameter, so it changes no model.
 - **source:** this paper, `Sarhan_2025` — [doi](https://doi.org/10.3390/pharmaceutics17080959)
 - **gene:** UMOD
-- **mechanism:** target — the gene's product is what the drug acts on
-- **applies to:** pharmacodynamics (response)
+- **mechanism:** not stated in the paper
+- **applies to:** not stated in the paper
 - **parameter it changes:** NIL (`Q100`)
 - **effect:** not quantified
 - **phenotype groups:** the paper's genotype groups were not mapped to standard phenotypes

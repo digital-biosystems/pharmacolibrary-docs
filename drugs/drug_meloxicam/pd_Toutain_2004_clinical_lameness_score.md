@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;M01A&quot;,&quot;href&quot;:&quot;atc/M01A.md&quot;},{&quot;label&quot;:&quot;meloxicam&quot;,&quot;href&quot;:&quot;drugs/drug_meloxicam/&quot;},{&quot;label&quot;:&quot;Toutain_2004 \u00b7 PD clinical lameness score&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Meloxicam_Lehr2010_reference&quot;,&quot;label&quot;:&quot;Lehr_2010_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_meloxicam/Meloxicam_Lehr2010_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Meloxicam_Aoyama2017_reference&quot;,&quot;label&quot;:&quot;Aoyama_2017_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_meloxicam/Meloxicam_Aoyama2017_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Meloxicam_Lehr2010_reference&quot;,&quot;label&quot;:&quot;Lehr_2010_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_meloxicam/Meloxicam_Lehr2010_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # clinical lameness score — PD  <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">horse</span>
@@ -16,15 +16,19 @@
 
 ## What this record describes
 
-**As extracted:** Meloxicam (the dose) drives clinical lameness score (in units): direct sigmoid Emax (Hill) effect.
+**As extracted:** Meloxicam (concentrations from the PK model of Aoyama_2017) drives clinical lameness score (in units): direct sigmoid Emax (Hill) effect.
 
 **Model:** A model was generated (see the **Models** tab); it has no in-browser simulator.
 
+> The paper does not describe the pharmacodynamic mechanism linking meloxicam dose to the clinical lameness score. The record indicates a sigmoid Emax model where dose drives the response, with a reported ED50 of 0.265 mg/kg and Emax of 9.16 units, though the direction is listed as stimulation despite no supporting text.
+>
+> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+
 - **paper:** `Toutain_2004`
 - **model family:** `sigmoid_emax`
-- **driver:** `dose_only`
+- **driver:** `cited_pk`
 - **tier:** descriptive
-- **effect:** stimulation/unknown
+- **effect:** inhibition/additive
 
 ## Citation
 Toutain PL et al., Pharmacokinetic-pharmacodynamic relatio…, American journal of veterin… (2004)
@@ -33,8 +37,10 @@ Toutain PL et al., Pharmacokinetic-pharmacodynamic relatio…, American journal 
 ## Parameters
 | role | label (paper) | Q-code · name | value | unit | value_si | link | source |
 |---|---|---|---|---|---|---|---|
-| PD (effect) | ED50 | `Q321` · not captured | 0.265 | mg/kg | not captured | llm (not captured) | Toutain_2004:pdv3 |
-| PD (effect) | Emax | `Q320` · not captured | 9.16 | units | not captured | llm (not captured) | Toutain_2004:pdv3 |
+| — | median effective dose | `Q100` · not captured | 0.265 | mg/kg | not captured | nil (not captured) | Toutain_2004:pdv3 |
+| PD (effect) | Emax | `Q323` · not captured | 9.16 | units | not captured | direction (not captured) | Toutain_2004:pdv3 |
+| PD (effect) | median effective concentration | `Q321` · not captured | 195 | ng/mL | not captured | llm (not captured) | Toutain_2004:pdv3 |
+| PD (effect) | Hill coefficient | `Q325` · not captured | extremely high | not captured | not captured | exact (not captured) | Toutain_2004:pdv3 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -49,15 +55,16 @@ Toutain PL et al., Pharmacokinetic-pharmacodynamic relatio…, American journal 
 | parameter | value (paper units) | SI |
 |---|---|---|
 | E0 | 0 | — |
-| Emax | 9.16 units | — |
-| EC50 | 0.265 mg/kg | 2.65e-07 1 |
+| Emax | -9.16 units | — |
+| EC50 | 195 ng/mL | 0.000195 kg/m3 |
 | gamma | 1 | — |
 
-Closed-form check points (response, SI): `at_0` = 0, `at_EC50` = 4.58, `at_inf` = 9.16
+Closed-form check points (response, SI): `at_0` = 0, `at_EC50` = -4.58, `at_inf` = -9.16
 
 Deviations:
 
 - `defaulted_parameters` — E0, gamma
+- `pd_binding_imax_as_negative_emax` — Imax (Q323) enters SigmoidEmaxSweep as −Emax
 
 ## Review
 
@@ -68,7 +75,7 @@ Verdict <span class="pk-badge pk-badge--orange">needs review</span> · route to 
 | `T0_driver` | pass | driver is the drug, a synonym or one of its metabolites (or unnamed) |
 | `T1_closed_form` | pass | engineer's check points reproduced from the bound parameters |
 | `T1b_fmu` | skipped | template FMU / fmpy not available — advisory only |
-| `T2_direction` | pass | the response rises, as direct effect predicts |
+| `T2_direction` | pass | the response falls, as direct effect predicts |
 | `T3_plausibility` | pass | EC50, gamma, Imax and baseline in range |
 | `T4_defaults` | fail | a core parameter took a library default: E0 |
 
@@ -83,12 +90,12 @@ Advisory:
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_meloxicam/Meloxicam_Toutain2004_PD_clinical_lameness_score/Meloxicam_Toutain2004_PD_clinical_lameness_score_modelica.zip" download>Meloxicam_Toutain2004_PD_clinical_lameness_score_modelica.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_meloxicam/Meloxicam_Toutain2004_PD_clinical_lameness_score/Meloxicam_Toutain2004_PD_clinical_lameness_score_modelica.zip" download>Meloxicam_Toutain2004_PD_clinical_lameness_score_modelica.zip</a> <span class="pk-size">(3.2 kB)</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_meloxicam/Meloxicam_Toutain2004_PD_clinical_lameness_score/Meloxicam_Toutain2004_PD_clinical_lameness_score_matlab.zip" download>Meloxicam_Toutain2004_PD_clinical_lameness_score_matlab.zip</a> <span class="pk-size">(3.2 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_meloxicam/Meloxicam_Toutain2004_PD_clinical_lameness_score/Meloxicam_Toutain2004_PD_clinical_lameness_score_sbml.zip" download>Meloxicam_Toutain2004_PD_clinical_lameness_score_sbml.zip</a> <span class="pk-size">(2.6 kB)</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_meloxicam/Meloxicam_Toutain2004_PD_clinical_lameness_score/Meloxicam_Toutain2004_PD_clinical_lameness_score_cellml.zip" download>Meloxicam_Toutain2004_PD_clinical_lameness_score_cellml.zip</a> <span class="pk-size">(2.5 kB)</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_meloxicam/Meloxicam_Toutain2004_PD_clinical_lameness_score/Meloxicam_Toutain2004_PD_clinical_lameness_score_sbml.zip" download>Meloxicam_Toutain2004_PD_clinical_lameness_score_sbml.zip</a> <span class="pk-size">(2.7 kB)</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_meloxicam/Meloxicam_Toutain2004_PD_clinical_lameness_score/Meloxicam_Toutain2004_PD_clinical_lameness_score_cellml.zip" download>Meloxicam_Toutain2004_PD_clinical_lameness_score_cellml.zip</a> <span class="pk-size">(2.6 kB)</span></td></tr>
 </tbody></table>
 <p>Each archive holds the model source, a script that simulates it against the appropriate library, and a README describing both and how to run them.</p>
 </div></div>

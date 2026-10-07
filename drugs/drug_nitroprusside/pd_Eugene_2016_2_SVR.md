@@ -13,12 +13,16 @@
 
 ## What this record describes
 
-**As extracted:** Sodium nitroprusside (the dose) drives systemic vascular resistance (in %SVR): direct sigmoid Emax (Hill) effect.
+**As extracted:** Sodium nitroprusside (the dose) drives systemic vascular resistance (in %): direct Emax (saturable) effect.
 
 **Model:** No model was generated from this record.
 
+> The record describes a sigmoid Emax model where sodium nitroprusside dose (mcg/kg/min) inhibits systemic vascular resistance (%SVR) in a proportional manner. The paper does not provide the mechanism or key potency and rate values.
+>
+> <sub>in the paper's terms — summarised by qwen3.8:27b-mtp-q8_0 from the paper's text; not checked by a person</sub>
+
 - **paper:** `Eugene_2016_2`
-- **model family:** `sigmoid_emax`
+- **model family:** `emax`
 - **driver:** `dose_only`
 - **tier:** descriptive
 - **effect:** inhibition/proportional

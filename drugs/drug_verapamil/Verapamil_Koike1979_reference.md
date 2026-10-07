@@ -24,13 +24,13 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 
 <sub>reviewed by qwen3.8:27b-mtp-q8_0</sub>
 
-> ⚠️ **STALE** — review status `rejected` (reviewed 2026-09-29 19:13:13.779601+00:00) predates the upstream re-run (2026-10-07 04:23:08.157818+00:00). Current validate status: `rejected`.
+> ⚠️ **STALE** — review status `rejected` (reviewed 2026-09-29 19:13:13.779601+00:00) predates the upstream re-run (2026-10-07 15:22:01.272470+00:00). Current validate status: `rejected`.
 
 ## Citation
 Koike Y et al., Pharmacokinetics of verapamil in man, Research communications in… (1979)
 
 ## Model component
-<dbs-pgx drug="verapamil" model-id="Verapamil_Koike1979_reference" status="rejected" stale="true" population="healthy adults" measured-compound="verapamil" parameterization="apparent" topology="1C"></dbs-pgx>
+<dbs-pgx drug="verapamil" model-id="Verapamil_Koike1979_reference" status="rejected" stale="true" population="healthy subjects" measured-compound="verapamil" parameterization="apparent" topology="1C"></dbs-pgx>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 7 extracted.
@@ -45,9 +45,9 @@ Koike Y et al., Pharmacokinetics of verapamil in man, Research communications in
 | The half-lives of distribution (T 1/2 alpha) | `Q59` · t1/2α | 0.23 | hour | 828.0 | [h] | not captured | llm (0.6) | Koike_1979:abstract | — | not captured |
 | elimination (T 1/2 beta) phases | `Q60` · t1/2β | 4.21 | hour | 15156.0 | [h] | not captured | llm_corrected (0.6) | Koike_1979:abstract | — | not captured |
 | The apparent volume of distribution [Vd (area)] | `Q76` · V/F | 2.51 | 1/kg | not captured | [1] / [kg] | not captured | llm_confirmed (0.6) | Koike_1979:abstract | — | not captured |
-| body clearance (C1b) | `Q23` · CLb | 500.64 | ml/min | 8.344e-06 | [ml] / [min] | not captured | llm_corrected (0.6) | Koike_1979:abstract | — | not captured |
-| the time to reach peak blood level (Tmax) | `Q56` · tmax | 1.84 | hour | 6624.0 | [h] | not captured | llm_corrected (0.6) | Koike_1979:abstract | — | not captured |
-| the peak serum concentration | `Q32` · Cmax | 219.09 | ng/ml | not captured | [ng] / [ml] | not captured | llm_confirmed (0.6) | Koike_1979:abstract | — | not captured |
+| body clearance (C1b) | `Q22` · CL | 500.64 | ml/min | 8.344e-06 | [ml] / [min] | not captured | llm_confirmed (0.6) | Koike_1979:abstract | — | not captured |
+| After oral administration, the time to reach peak blood level (Tmax) | `Q56` · tmax | 1.84 | hour | 6624.0 | [h] | not captured | llm_corrected (0.6) | Koike_1979:abstract, Koike_1979:abstract | — | not captured |
+| the peak serum concentration | `Q32` · Cmax | 219.09 | ng/ml | not captured | [ng] / [ml] | not captured | llm_confirmed (0.6) | Koike_1979:abstract, Koike_1979:abstract | — | not captured |
 | The bioavailability | `Q40` · Fab | 22.47 | % | not captured | not captured | not captured | llm_confirmed (0.6) | Koike_1979:abstract | — | not captured |
 
 <details class="legend">
@@ -68,7 +68,7 @@ Koike Y et al., Pharmacokinetics of verapamil in man, Research communications in
 - skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
 
 **Extraction notes:**
-- no GROBID TEI available — transcribed from abstract in Koike_1979_metadata.yaml (7 record(s)); values are summary statistics, not a fitted model
+- no GROBID TEI available — transcribed from abstract in Koike_1979_metadata.yaml (9 record(s)); values are summary statistics, not a fitted model
 
 ## Validation
 
@@ -116,15 +116,15 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 | C0_has_structural_params | pass | not captured | 7 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
-| C5_dimension_Q23 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Koike_1979:abstract'] |
-| C5_dimension_Q32 | pass | [mass] / [length] ** 3 | not captured | not captured | not captured | ['Koike_1979:abstract'] |
-| C5_dimension_Q56 | pass | [time] | not captured | not captured | not captured | ['Koike_1979:abstract'] |
+| C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Koike_1979:abstract'] |
+| C5_dimension_Q32 | pass | [mass] / [length] ** 3 | not captured | not captured | not captured | ['Koike_1979:abstract', 'Koike_1979:abstract'] |
+| C5_dimension_Q56 | pass | [time] | not captured | not captured | not captured | ['Koike_1979:abstract', 'Koike_1979:abstract'] |
 | C5_dimension_Q59 | pass | [time] | not captured | not captured | not captured | ['Koike_1979:abstract'] |
 | C5_dimension_Q60 | pass | [time] | not captured | not captured | not captured | ['Koike_1979:abstract'] |
 | C5_dimension_Q76 | fail | dimensionless | 1/kg | not captured | not captured | ['Koike_1979:abstract'] |
 | C7_apparent_coherence | pass | not captured | not captured | not captured | not captured | not captured |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
-| C9_phys_window_Q23 | pass | clearance within physiological range | 30 L/h | not captured | not captured | ['Koike_1979:abstract'] |
+| C9_phys_window_Q22 | pass | clearance within physiological range | 30 L/h | not captured | not captured | ['Koike_1979:abstract'] |
 
 <details class="legend">
 <summary>Check legend — what each column means</summary>
@@ -149,4 +149,4 @@ _No web simulator for this record: its structure has no shared WebAssembly templ
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 04:23 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 15:22 UTC</sub>

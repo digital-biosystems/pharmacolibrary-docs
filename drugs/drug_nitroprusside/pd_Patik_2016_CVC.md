@@ -1,7 +1,7 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C02D&quot;,&quot;href&quot;:&quot;atc/C02D.md&quot;},{&quot;label&quot;:&quot;nitroprusside&quot;,&quot;href&quot;:&quot;drugs/drug_nitroprusside/&quot;},{&quot;label&quot;:&quot;Patik_2016 \u00b7 PD cutaneous vascular conductance&quot;}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# cutaneous vascular conductance — PD  <span class="pk-badge pk-badge--orange">needs review</span>
+# cutaneous vascular conductance — PD  <span class="pk-badge pk-badge--red">rejected</span>
 
 <details class="pk-legend"><summary>What the PGx badges mean — evidence, and whether a model runs</summary><table><tbody><tr><td><span class="pk-badge pk-badge--green">quantitative</span></td><td>the paper gives the effect of each phenotype (or genotype) on a named model parameter — a θ per category.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">qualitative</span></td><td>the paper links the gene to the drug but states no effect size on a model parameter, so it changes no model.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">guideline estimate</span></td><td>the effect comes from a CPIC / DPWG dosing guideline, not from this paper's numbers.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">safety allele</span></td><td>a risk allele for an adverse reaction (an HLA type, G6PD deficiency …): it changes no PK/PD parameter.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>the extraction is incomplete or inconsistent.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted.</td></tr><tr><td><span class="pk-badge pk-badge--green">▶ simulatable</span></td><td>the paper's popPK model runs per phenotype in the browser (Simulation tab); its PGx Modelica model is under Models.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">model only</span></td><td>a PGx Modelica model exists but has no in-browser simulator.</td></tr></tbody></table></details>
 
@@ -13,13 +13,17 @@
 
 ## What this record describes
 
-**As extracted:** Sodium nitroprusside (the dose) drives cutaneous vascular conductance (in %CVCmax): direct sigmoid Emax (Hill) effect.
+**As extracted:** Sodium nitroprusside drives cutaneous vascular conductance: direct sigmoid Emax (Hill) effect.
 
 **Model:** No model was generated from this record.
 
+> The paper does not provide a full text to describe the mechanism by which sodium nitroprusside affects cutaneous vascular conductance, though the record indicates a sigmoid Emax model with stimulation. The record lists two EC50 values of -2.931 Log[SNP]M and -3.746 Log[SNP]M, but no other potency or rate parameters are stated.
+>
+> <sub>in the paper's terms — summarised by qwen3.8:27b-mtp-q8_0 from the paper's text; not checked by a person</sub>
+
 - **paper:** `Patik_2016`
 - **model family:** `sigmoid_emax`
-- **driver:** `dose_only`
+- **driver:** `not_resolved`
 - **tier:** descriptive
 - **effect:** stimulation/unknown
 
@@ -31,7 +35,6 @@ Patik JC et al., Impaired endothelium independent vasodi…, Microvascular resea
 | role | label (paper) | Q-code · name | value | unit | value_si | link | source |
 |---|---|---|---|---|---|---|---|
 | PD (effect) | EC50 | `Q321` · not captured | -2.931 | Log[SNP]M | not captured | llm (not captured) | Patik_2016:pdv3 |
-| PD (effect) | EC50 | `Q321` · not captured | -3.746 | Log[SNP]M | not captured | llm (not captured) | Patik_2016:pdv3 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -41,19 +44,9 @@ Patik JC et al., Impaired endothelium independent vasodi…, Microvascular resea
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
-## Downloadable models
+## Models
 
-<div class="pk-models-grid"><div class="pk-models-table">
-<table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-</tbody></table>
-<p>No bundles have been generated for this record yet. When the engineer emits them they appear here automatically — this page reports what is on disk and generates nothing itself.</p>
-</div></div>
+<p>No downloads: this record is <b>rejected</b>, so it is not published as a model. Any archives generated for it before the verdict have been removed — a download outlives the page that explains it.</p>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 

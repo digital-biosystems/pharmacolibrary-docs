@@ -1,7 +1,7 @@
-<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;J06B&quot;,&quot;href&quot;:&quot;atc/J06B.md&quot;},{&quot;label&quot;:&quot;Casirivimab&quot;,&quot;href&quot;:&quot;drugs/drug_casirivimab/&quot;},{&quot;label&quot;:&quot;Rao_2021 \u00b7 PD viral load&quot;}]"></div>
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;J06B&quot;,&quot;href&quot;:&quot;atc/J06B.md&quot;},{&quot;label&quot;:&quot;Casirivimab&quot;,&quot;href&quot;:&quot;drugs/drug_casirivimab/&quot;},{&quot;label&quot;:&quot;Rao_2021 \u00b7 PD SARS-CoV-2 viral load (nasopharyngeal swab)&quot;}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# viral load — PD  <span class="pk-badge pk-badge--red">rejected</span>
+# SARS-CoV-2 viral load (nasopharyngeal swab) — PD  <span class="pk-badge pk-badge--red">rejected</span>
 
 <details class="pk-legend"><summary>What the PGx badges mean — evidence, and whether a model runs</summary><table><tbody><tr><td><span class="pk-badge pk-badge--green">quantitative</span></td><td>the paper gives the effect of each phenotype (or genotype) on a named model parameter — a θ per category.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">qualitative</span></td><td>the paper links the gene to the drug but states no effect size on a model parameter, so it changes no model.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">guideline estimate</span></td><td>the effect comes from a CPIC / DPWG dosing guideline, not from this paper's numbers.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">safety allele</span></td><td>a risk allele for an adverse reaction (an HLA type, G6PD deficiency …): it changes no PK/PD parameter.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>the extraction is incomplete or inconsistent.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted.</td></tr><tr><td><span class="pk-badge pk-badge--green">▶ simulatable</span></td><td>the paper's popPK model runs per phenotype in the browser (Simulation tab); its PGx Modelica model is under Models.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">model only</span></td><td>a PGx Modelica model exists but has no in-browser simulator.</td></tr></tbody></table></details>
 
@@ -13,15 +13,19 @@
 
 ## What this record describes
 
-**As extracted:** Casirivimab and imdevimab drive viral load: direct Emax (saturable) effect.
+**As extracted:** Casirivimab (REGEN-COV nAb cocktail) drives SARS-CoV-2 viral load (nasopharyngeal swab) (in viral RNA copies/mL): direct Emax (saturable) effect.
 
 **Model:** No model was generated from this record.
+
+> The provided excerpts do not describe a pharmacodynamic model linking drug concentration to viral load via an Emax or similar mechanism, but rather a qualitative QSP model calibrated to observational data. Therefore, no drug response relationship, mechanism, or potency parameters are defined in the text.
+>
+> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
 
 - **paper:** `Rao_2021`
 - **model family:** `emax`
 - **driver:** `not_resolved`
-- **tier:** descriptive
-- **effect:** inhibition/unknown
+- **tier:** population
+- **effect:** inhibition/proportional
 
 ## Citation
 Rao R et al., A Quantitative Systems Pharmacology Mod… (2021)

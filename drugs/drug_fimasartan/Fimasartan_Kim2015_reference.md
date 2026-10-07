@@ -1,10 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C09C&quot;,&quot;href&quot;:&quot;atc/C09C.md&quot;},{&quot;label&quot;:&quot;fimasartan&quot;,&quot;href&quot;:&quot;drugs/drug_fimasartan/&quot;},{&quot;label&quot;:&quot;Kim_2015 \u00b7 reference&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Fimasartan_Kim2014v2_estimate&quot;,&quot;label&quot;:&quot;Kim_2014_2_estimate&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_fimasartan/Fimasartan_Kim2014v2_estimate.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # fimasartan — `Fimasartan_Kim2015_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.357). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from the LLM relevance screen, p(non-human) 0.30).">human + animal</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.357). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from the LLM relevance screen, p(non-human) 0.00).">human + animal</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -12,121 +13,72 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
-> **Species: human + animal.** The paper reports both human and animal data; check which group this record describes before reading it as human pharmacology (read from the LLM relevance screen, p(non-human) 0.30).
+> **Species: human + animal.** The paper reports both human and animal data; check which group this record describes before reading it as human pharmacology (read from the LLM relevance screen, p(non-human) 0.00).
 
 **Model:** No model was generated from this record.
 
 ### Reviewer guidance
 
+**No volume or clearance — not a compartmental population PK model.**
+
+The paper reports no distribution volume and no clearance or elimination rate; it is an exposure/outcome paper.
+
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has fimasartan, the second reading unknown; it also differs on 8 more fields. That field shapes the model, so the record is marked disputed.
 
-> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+<sub>reviewed by rule template (no LLM)</sub>
+
+> ⚠️ **STALE** — review status `rejected` (reviewed 2026-10-07 09:23:28.464799+00:00) predates the upstream re-run (2026-10-07 15:28:28.628271+00:00). Current validate status: `needs_review`.
 
 ## Citation
 Kim TH et al., Population Pharmacokinetic Modeling of…, The AAPS journal (2015)
   ·  DOI: [10.1208/s12248-015-9764-2](https://doi.org/10.1208/s12248-015-9764-2)
 
 ## Model component
-<dbs-pgx drug="fimasartan" model-id="Fimasartan_Kim2015_reference" status="rejected" stale="false" population="rats, dogs, and healthy volunteers" measured-compound="fimasartan" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<dbs-pgx drug="fimasartan" model-id="Fimasartan_Kim2015_reference" status="needs_review" stale="true" population="rats, dogs, and healthy volunteers" measured-compound="fimasartan" parameterization="mechanistic" topology="2C"></dbs-pgx>
 
-**Model structure:** 1-compartment; no model was built for this record.  
-**Parameters:** 0 extracted, plus 2 covariate effects.
+**Model structure:** 2-compartment; no model was built for this record.  
+**Parameters:** 4 extracted.
 
 **Parameterization:** mechanistic.
 
 ## Parameters
-> ⚠️ This record is not accepted (current status `rejected`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
+> ⚠️ This record is not accepted (current status `needs_review`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
 
-_No resolved parameters._
+| label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
+|---|---|---|---|---|---|---|---|---|---|---|
+| the associated clearance was over | `Q22` · CL | 500 | L/h | 0.0001388888888888889 | L/h | not captured | boundary (0.8) | Kim_2015:other_prose | — | not captured |
+| Volume of distribution of central compartment | `Q63` · V1 | 22.0 | L | 0.022 | L | not captured | boundary_compartment (0.9) | Kim_2015:other_prose | — | not captured |
+| Volume of distribution of shallow peripheral compartment | `Q64` · V2 | 25.2 | L | 0.0252 | L | not captured | boundary_compartment (0.9) | Kim_2015:other_prose | — | not captured |
+| Distribution clearance from central to liver compartment | `Q30` · Q | 60.2 | L/h | 1.6722222222222222e-05 | L/h | not captured | boundary (0.8) | Kim_2015:other_prose | — | not captured |
+
+<details class="legend">
+<summary>Column legend — what each column means</summary>
+<table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>label (paper)</code></td><td>the row or statistic label exactly as printed in the paper (label_verbatim) — never normalised, so it can be found in the PDF.</td></tr><tr><td><code>Q-code · name</code></td><td>the ontology parameter this label was matched to (Q22 = clearance, Q27 = CL/F, Q49 = ka, Q57 = half-life, …) and its canonical name. The Q-code, not the label, is what scoring and cross-paper merging use.</td></tr><tr><td><code>value</code></td><td>the estimate as reported in the paper.</td></tr><tr><td><code>unit</code></td><td>the unit as printed (unit_verbatim).</td></tr><tr><td><code>value_si</code></td><td>the value converted to the canonical unit. Empty when no conversion was possible — usually an unparseable or missing unit.</td></tr><tr><td><code>unit_canonical</code></td><td>the canonical unit for that Q-code, i.e. what value_si is expressed in.</td></tr><tr><td><code>RSE%</code></td><td>relative standard error of the estimate, when the paper reports one.</td></tr><tr><td><code>link</code></td><td>how the label was matched to the Q-code, with confidence. exact / boundary / fuzzy / tv_prefix / caption_compartment / special_case are deterministic string matches; llm, llm_confirmed, llm_corrected involved the model; review and review_gapfill come from the secondary review tier, the latter filling a parameter the primary extraction missed; boundary_relink is a corrected match.</td></tr><tr><td><code>source</code></td><td>where in the paper the number came from: colN = that column of the located table, other_prose = running text, review = the secondary tier, pgx = a pharmacogenomic record.</td></tr><tr><td><code>covariates</code></td><td>covariate effects attached to this parameter (e.g. weight on CL).</td></tr><tr><td><code>IIV</code></td><td>inter-individual variability reported for this parameter.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>the field is absent from the KB artifact — nothing was recorded. This is NOT the same as zero or empty: the value is unknown, not measured to be nothing.</td></tr><tr><td><code>—</code></td><td>deliberately not shown: the column does not apply to this row.</td></tr><tr><td><code>not verified</code></td><td>the record is not in an accepted state (see the badge and the note above the table); the numbers are shown as extracted, not endorsed.</td></tr></tbody></table>
+</details>
 
 ### Unresolved rows _(no Q-code or no value — not parameters)_
 | label (paper) | Q-code | value | link |
 |---|---|---|---|
-| Distribution clearance from central to liver compartment | Q30 | not captured | llm_confirmed |
-| Half-life of elimination from liver | Q57 | not captured | llm |
 | Modeled absolute oral bioavailability | Q40 | not captured | llm_confirmed |
-| theta_t1_2z_category | Q900 | not captured | not captured |
-| theta_q95_category | Q900 | not captured | not captured |
 
 ## Departures & gaps
 
 **Interpretation flags:**
-- table section iiv: 'Bioavailability under fed relative to fasting conditions' routed out of structural estimates ('Humans BSV (SE%)')
-- column 'unit' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
-- column 'symbol' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
-- dropped duplicate Q30 ('Distribution clearance from shallow peripheral compartment', value None) — already have one for this compound
-- dropped duplicate Q30 ('Distribution clearance to deep peripheral compartment', value None) — already have one for this compound
-- dropped unlinked row (NIL): 'Half-life for transfer from stomach to gut' — extend the ontology if this is a real PK parameter (source ['Kim_2015_table_1:row13:col1'])
-- dropped unlinked row (NIL): 'Half-life of transfer from liver to bile' — extend the ontology if this is a real PK parameter (source ['Kim_2015_table_1:row19:col1'])
-- dropped unlinked row (NIL): 'Half-life of transfer from bile to gut at baseline (ie, slowest transfer)' — extend the ontology if this is a real PK parameter (source ['Kim_2015_table_1:row20:col1'])
-- dropped unlinked row (NIL): 'Turnover half-life of bile flow' — extend the ontology if this is a real PK parameter (source ['Kim_2015_table_1:row25:col1'])
-- covariate effect for Q95 has no base parameter row (kept as unattached equation-variable)
+- salvaged Q22 ('the associated clearance was over'=500) from results prose — parameter table was unreadable
+- salvaged Q63 ('Volume of distribution of central compartment'=22.0) from results prose — parameter table was unreadable
+- salvaged Q64 ('Volume of distribution of shallow peripheral compartment'=25.2) from results prose — parameter table was unreadable
+- salvaged Q30 ('Distribution clearance from central to liver compartment'=60.2) from results prose — parameter table was unreadable
+- implicit units: 'the associated clearance was over' → L/h (from the popPK convention: 'The paper does not explicitly state the unit for this specific clearance parameter in the provided text or table footnot')
+- implicit units: 'Volume of distribution of central compartment' → L (from the paper text: "Table 1 header and footnote b state: 'Volumes of distribution ... L for 75 kg' and the row for V1 lists unit 'L for 75 k")
+- implicit units: 'Volume of distribution of shallow peripheral compartment' → L (from the paper text: "Table 1 header and footnote b state: 'Volumes of distribution ... L for 75 kg' and the row for V2 lists unit 'L for 75 k")
+- implicit units: 'Distribution clearance from central to liver compartment' → L/h (from the popPK convention: 'The parameter is an intercompartmental clearance (Q or CLd). The paper does not explicitly print the unit for this speci')
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=fimasartan
-- structure disagreement: deterministic 1C vs LLM 2C — review compartment count
-- review gap-fill skipped: this record carries no value of its own, and a model assembled entirely from other papers is not this paper's model
 
 **Extraction notes:**
 - no TEI final-model table id; trying text-pointer table recovery
-- LLM selected parameter table(s) 1, 2
-- unparsed cell Kim_2015_table_1:row3:col1 = 'CLD1-LIvb'
-- unparsed cell Kim_2015_table_1:row3:col3 = '60.2 (6.6%)'
-- unparsed cell Kim_2015_table_1:row3:col4 = '0.059 (221%)'
-- unparsed cell Kim_2015_table_1:row3:col5 = '141 (2.4%)'
-- unparsed cell Kim_2015_table_1:row3:col6 = '0.031 (167%)'
-- unparsed cell Kim_2015_table_1:row3:col7 = '47.3 (7.3%)'
-- unparsed cell Kim_2015_table_1:row3:col8 = '0.158 (147%)'
-- unparsed cell Kim_2015_table_1:row4:col3 = '25.8 (5.1%)'
-- unparsed cell Kim_2015_table_1:row4:col4 = '0.095 (152%)'
-- unparsed cell Kim_2015_table_1:row4:col5 = '23.8 (5.1%)'
-- unparsed cell Kim_2015_table_1:row4:col6 = '0.095 (152%)'
-- unparsed cell Kim_2015_table_1:row4:col7 = '25.8 (5.1%)'
-- unparsed cell Kim_2015_table_1:row4:col8 = '0.095 (152%)'
-- unparsed cell Kim_2015_table_1:row5:col3 = '13.3 (8.7%)'
-- unparsed cell Kim_2015_table_1:row5:col4 = '0.356 (44%)'
-- unparsed cell Kim_2015_table_1:row5:col5 = '13.3 (8.7%)'
-- unparsed cell Kim_2015_table_1:row5:col6 = '0.356 (44%)'
-- unparsed cell Kim_2015_table_1:row5:col7 = '13.3 (8.7%)'
-- unparsed cell Kim_2015_table_1:row5:col8 = '0.356 (44%)'
-- unparsed cell Kim_2015_table_1:row13:col3 = '9.29 (16.1%)'
-- unparsed cell Kim_2015_table_1:row13:col4 = '0.581 (46%)'
-- unparsed cell Kim_2015_table_1:row13:col5 = '9.29 (16.1%)'
-- unparsed cell Kim_2015_table_1:row13:col6 = '0.581 (46%)'
-- unparsed cell Kim_2015_table_1:row13:col7 = '9.29 (16.1%)'
-- unparsed cell Kim_2015_table_1:row13:col8 = '0.581 (46%)'
-- unparsed cell Kim_2015_table_1:row14:col3 = '1.26 (37.5%)'
-- unparsed cell Kim_2015_table_1:row14:col4 = '0.767 (72%)'
-- unparsed cell Kim_2015_table_1:row14:col5 = '1.16 (37.5%)'
-- unparsed cell Kim_2015_table_1:row14:col6 = '0.767 (72%)'
-- unparsed cell Kim_2015_table_1:row14:col7 = '1.16 (37.5%)'
-- unparsed cell Kim_2015_table_1:row14:col8 = '0.767 (72%)'
-- unparsed cell Kim_2015_table_1:row16:col3 = '0.838 (9.1%)'
-- unparsed cell Kim_2015_table_1:row18:col3 = '0.0836 (10.3%)'
-- unparsed cell Kim_2015_table_1:row18:col4 = '0.152 (121%)'
-- unparsed cell Kim_2015_table_1:row18:col5 = '0.166 (37.1%)'
-- unparsed cell Kim_2015_table_1:row18:col6 = '0.265 (220%)'
-- unparsed cell Kim_2015_table_1:row18:col7 = '0.451 (18.4%)'
-- unparsed cell Kim_2015_table_1:row18:col8 = '0.261 (159%)'
-- unparsed cell Kim_2015_table_1:row19:col3 = '0.0330 (10.6%)'
-- unparsed cell Kim_2015_table_1:row19:col4 = '0.108 (225%)'
-- unparsed cell Kim_2015_table_1:row19:col5 = '0.276 (28.4%)'
-- unparsed cell Kim_2015_table_1:row19:col6 = '0.217 (130%)'
-- unparsed cell Kim_2015_table_1:row19:col7 = '0.0840 (29.2%)'
-- unparsed cell Kim_2015_table_1:row19:col8 = '0.233 (226%)'
-- unparsed cell Kim_2015_table_1:row20:col3 = '1.49 (6.3%)'
-- unparsed cell Kim_2015_table_1:row20:col4 = '0.092 (132%)'
-- unparsed cell Kim_2015_table_1:row20:col5 = '3.77 (13.1%)'
-- unparsed cell Kim_2015_table_1:row20:col6 = '0.296 (63%)'
-- unparsed cell Kim_2015_table_1:row20:col7 = '1.24 (18%)'
-- unparsed cell Kim_2015_table_1:row20:col8 = '0.309 (59%)'
-- unparsed cell Kim_2015_table_1:row25:col3 = '0.465 (7.5%)'
-- unparsed cell Kim_2015_table_1:row25:col4 = '0.608 (106%)'
-- unparsed cell Kim_2015_table_1:row25:col5 = '0.298 (166%)'
-- unparsed cell Kim_2015_table_1:row25:col6 = '1.19 (195%)'
-- unparsed cell Kim_2015_table_1:row25:col7 = '1.75 (33.2%)'
-- unparsed cell Kim_2015_table_1:row25:col8 = '0.555 (208%)'
-- unparsed cell Kim_2015_table_2:row3:col2 = 'Solution, 15.4% (11.0–17.6%)\nTablet, 13.9% (8.56–16.0%)\nCapsule, 7.13% (6.31–8.35%)'
-- unparsed cell Kim_2015_table_2:row3:col3 = 'Solution, 38.7% (20.0–59.8%)'
-- LLM region Kim_2015:other_prose: no JSON records returned
+- LLM selected parameter table(s) 2
+- unparsed cell Kim_2015_table_2:row3:col2 = 'Solution, 15.4% (11.0-17.6%) Tablet, 13.9% (8.56-16.0%) Capsule, 7.13% (6.31-8.35%)'
+- unparsed cell Kim_2015_table_2:row3:col3 = 'Solution, 38.7% (20.0-59.8%)'
 
 ## Validation
 
@@ -163,10 +115,18 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 1 | not captured | not captured | not captured |
-| C0b_disposition_core | fail | not captured | not captured | not captured | not captured | not captured |
-| C2_reference | fail | not captured | not captured | not captured | not captured | not captured |
+| C0_has_structural_params | pass | not captured | 5 | not captured | not captured | not captured |
+| C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
+| C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
+| C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Kim_2015:other_prose'] |
+| C5_dimension_Q30 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Kim_2015:other_prose'] |
+| C5_dimension_Q63 | pass | [length] ** 3 | not captured | not captured | not captured | ['Kim_2015:other_prose'] |
+| C5_dimension_Q64 | pass | [length] ** 3 | not captured | not captured | not captured | ['Kim_2015:other_prose'] |
+| C6_cl_magnitude | fail | &lt;= 90.0 L/h | 500.0 | not captured | not captured | ['Kim_2015:other_prose'] |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
+| C9_phys_window_Q22 | pass | clearance within physiological range | 500 L/h | not captured | not captured | ['Kim_2015:other_prose'] |
+| C9_phys_window_Q63 | pass | volume within physiological range | 22 L | not captured | not captured | ['Kim_2015:other_prose'] |
+| C9_phys_window_Q64 | pass | volume within physiological range | 25.2 L | not captured | not captured | ['Kim_2015:other_prose'] |
 
 <details class="legend">
 <summary>Check legend — what each column means</summary>
@@ -180,9 +140,19 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
-## Models
+## Downloadable models
 
-<p>No downloads: this record is <b>rejected</b>, so it is not published as a model. Any archives generated for it before the verdict have been removed — a download outlives the page that explains it.</p>
+<div class="pk-models-grid"><div class="pk-models-table">
+<table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
+</tbody></table>
+<p>No bundles have been generated for this record yet. When the engineer emits them they appear here automatically — this page reports what is on disk and generates nothing itself.</p>
+</div></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
@@ -191,4 +161,4 @@ _No web simulator for this record: its structure has no shared WebAssembly templ
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 07:36 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 15:28 UTC</sub>

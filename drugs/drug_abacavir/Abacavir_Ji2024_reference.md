@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;J05A&quot;,&quot;href&quot;:&quot;atc/J05A.md&quot;},{&quot;label&quot;:&quot;abacavir&quot;,&quot;href&quot;:&quot;drugs/drug_abacavir/&quot;},{&quot;label&quot;:&quot;Ji_2024 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Abacavir_Chupradit2024_reference&quot;,&quot;label&quot;:&quot;Chupradit_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_abacavir/Abacavir_Chupradit2024_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Abacavir_Fauchet2014_reference&quot;,&quot;label&quot;:&quot;Fauchet_2014_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_abacavir/Abacavir_Fauchet2014_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Abacavir_Ji2024_reference&quot;,&quot;label&quot;:&quot;Ji_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_abacavir/Abacavir_Ji2024_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Abacavir_Zhang2015_reference&quot;,&quot;label&quot;:&quot;Zhang_2015_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_abacavir/Abacavir_Zhang2015_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Abacavir_Chupradit2024_reference&quot;,&quot;label&quot;:&quot;Chupradit_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_abacavir/Abacavir_Chupradit2024_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Abacavir_Fauchet2014_reference&quot;,&quot;label&quot;:&quot;Fauchet_2014_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_abacavir/Abacavir_Fauchet2014_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Abacavir_Zhang2015_reference&quot;,&quot;label&quot;:&quot;Zhang_2015_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_abacavir/Abacavir_Zhang2015_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Abacavir_Ji2024_reference&quot;,&quot;label&quot;:&quot;Ji_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_abacavir/Abacavir_Ji2024_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # abacavir — `Abacavir_Ji2024_reference`
 
-> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.6). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.6). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -17,9 +17,13 @@
 
 ### Reviewer guidance
 
+**The record for abacavir was held back because absorption rate constant ka and lag time Tlag were left at library defaults rather than using estimates from the paper.**
+
+The source text is a review reference that does not report these absorption parameters, so the model builder used standard library placeholders. While the apparent clearance and volume of distribution are explicit, the missing ka means the simulated absorption phase is not supported by the cited source. Second reader disagreements exist on several summary statistics, but the primary rejection cause remains the lack of reported absorption kinetics. Extracted — abacavir: CL/F 70.2 L/h, V/F 3.18e+03 L.
+
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on parameter Q17: this record has 62, the second reading none; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
 
-> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+<sub>reviewed by qwen3.8-27b</sub>
 
 > **Dose compound ≠ measured compound:** dosed `ribociclib`, measured `abacavir`.
 
@@ -28,7 +32,7 @@ Ji Y et al., Use of Pharmacokinetic and Pharmacodyna…, Clinical pharmacokineti
   ·  DOI: [10.1007/s40262-023-01338-z](https://doi.org/10.1007/s40262-023-01338-z)
 
 ## Model component
-<dbs-pgx drug="abacavir" model-id="Abacavir_Ji2024_reference" status="extracted" stale="false" population="patients with advanced breast cancer" measured-compound="abacavir" parameterization="apparent" topology="1C"></dbs-pgx>
+<dbs-pgx drug="abacavir" model-id="Abacavir_Ji2024_reference" status="needs_review" stale="false" population="patients with advanced breast cancer" measured-compound="abacavir" parameterization="apparent" topology="1C"></dbs-pgx>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 2 extracted.
@@ -36,10 +40,12 @@ Ji Y et al., Use of Pharmacokinetic and Pharmacodyna…, Clinical pharmacokineti
 **Parameterization:** CL/F, V/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
 ## Parameters
+> ⚠️ This record is not accepted (current status `needs_review`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
+
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| CL/F | `Q27` · CL/F | 70.2 | L/h | 1.95e-05 | L/h | not captured | review (0.7) | Ji_2024:review | — | not captured |
-| V/F (derived from CL·t½/ln2) | `Q76` · V/F | 3180.1038 | L | 3.180103824730724 | L | not captured | review (0.7) | Ji_2024:review | — | not captured |
+| CL/F (median, single oral 600 mg) | `Q27` · CL/F | 70.2 | L/h | 1.95e-05 | L/h | not captured | review (0.7) | Ji_2024:review | — | not captured |
+| V/F (derived from CL·t½/ln2) | `Q76` · V/F | 3240.8701 | L | 3.2408701398529676 | L | not captured | review (0.7) | Ji_2024:review | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -100,7 +106,19 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 | C7_apparent_coherence | pass | not captured | not captured | not captured | not captured | not captured |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
 | C9_phys_window_Q27 | pass | clearance within physiological range | 70.2 L/h | not captured | not captured | ['Ji_2024:review'] |
-| C9_phys_window_Q76 | pass | volume within physiological range | 3.18e+03 L | not captured | not captured | ['Ji_2024:review'] |
+| C9_phys_window_Q76 | pass | volume within physiological range | 3.24e+03 L | not captured | not captured | ['Ji_2024:review'] |
+
+**Reviewer per-scenario checks:**
+
+| check | scenario | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|---|
+| T0_analyte_identity | not captured | pass | not captured | not captured | not captured | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | not captured | skipped | not captured | not captured | not captured | no covariate effects in record |
+| T3_apparent_invariant | not captured | pass | not captured | F=Fm=1, no molar correction | not captured | apparent params must not be double-corrected |
+| T3_output_variable | not captured | pass | C_central (measured=abacavir) | central.C | not captured | output must be the measured/analyte compartment |
+| T3_param_coverage | not captured | pass | 2 scholar param(s) emitted or defaulted | 2 covered | not captured | all structural parameters accounted for |
+| T3_topology_template | not captured | pass | 1C → PK_1C* | PK_1C_enteral | not captured | engineer template must match the scholar topology |
+| T6_deviations | not captured | fail | not captured | defaulted_parameters: not acceptable; invented_absorption: not acceptable | not captured | LLM adjudication → deterministic rule |
 
 <details class="legend">
 <summary>Check legend — what each column means</summary>
@@ -110,6 +128,9 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 ## Raw artifacts
 
 - scholar stages: `../../../knowledgebase/drugs/drug_abacavir/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Ji_2024` / `Ji_2024::reference`)
+- model: `../../../knowledgebase/drugs/drug_abacavir/models/modelica/Abacavir_Ji2024_reference.mo`
+- deviation: `../../../knowledgebase/drugs/drug_abacavir/models/modelica/Abacavir_Ji2024_reference.deviation.json`
+- sim: `../../../knowledgebase/drugs/drug_abacavir/models/modelica/Abacavir_Ji2024_reference.json`
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>

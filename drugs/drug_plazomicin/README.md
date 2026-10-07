@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;J01G&quot;,&quot;href&quot;:&quot;atc/J01G.md&quot;},{&quot;label&quot;:&quot;plazomicin&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Plazomicin_Kuti2019v2_reference&quot;,&quot;label&quot;:&quot;Kuti_2019_2_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_plazomicin/Plazomicin_Kuti2019v2_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Plazomicin_Trang2019v2_geometric_mean_value_cv_d&quot;,&quot;label&quot;:&quot;Trang_2019_2_geometric_mean_value_cv_d&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_plazomicin/Plazomicin_Trang2019v2_geometric_mean_value_cv_d.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 # plazomicin
 
@@ -14,17 +15,28 @@ Plazomicin is an aminoglycoside antibacterial used to treat serious bacterial in
 
 <small>Summary written by `glm-5.3-flash` from [Wikidata Q15426988](https://www.wikidata.org/wiki/Q15426988) and the WHO ATC classification; not checked by a person.</small>
 
+## Molecules and molar masses
+
+> The molar mass each model uses to convert mass to molar concentration and to form a metabolite molecule for molecule. Looked up, never estimated: DrugBank for the drug, the paper's own value or the PubChem entry matched to the paper's name for a metabolite.
+
+| molecule | role | molar mass (g/mol) | formula | source | PubChem | records |
+|---|---|---|---|---|---|---|
+| plazomicin | parent | 592.691 | C25H48N6O10 | DrugBank | [42613186](https://pubchem.ncbi.nlm.nih.gov/compound/42613186) | Trang_2019_2 |
+
 ## Extraction summary
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 11:38 | 0:14 | 0/1/0 | 0/0/0 | 0/0/0 | 19,670/774 | einfracz / qwen3.8-27b | 11 | 0/1 | 1/0 | 0 |
+| 2026-10-07 15:59 | 2:11 | 2/0/2 | 0/0/0 | 0/0/0 | 147,828/7,523 | einfracz / qwen3.8-27b | 12 | 0/2 | 2/0 | 0 |
 
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Trang_2019_2_reference](drugs/drug_plazomicin/Plazomicin_Trang2019v2_reference.md) | — | 1-compartment (no model) | 0 | Trang M et al., Population Pharmacokinetic Analyses for…, Antimicrobial agents and ch… (2019) | [10.1128/AAC.02329-18](https://doi.org/10.1128/AAC.02329-18) |
+| <span class="pk-badge pk-badge--green">extracted</span> | [Kuti_2019_2_reference](drugs/drug_plazomicin/Plazomicin_Kuti2019v2_reference.md) | ▶ model + simulator | 1-compartment, IV | 2 | Kuti JL et al., Evaluation of Plazomicin, Tigecycline,…, Infectious diseases and the… (2019) | [10.1007/s40121-019-0251-4](https://doi.org/10.1007/s40121-019-0251-4) |
+| <span class="pk-badge pk-badge--green">extracted</span> | [Trang_2019_2_geometric_mean_value_cv_d](drugs/drug_plazomicin/Plazomicin_Trang2019v2_geometric_mean_value_cv_d.md) | ▶ model + simulator | 1-compartment, IV | 9 | Trang M et al., Population Pharmacokinetic Analyses for…, Antimicrobial agents and ch… (2019) | [10.1128/AAC.02329-18](https://doi.org/10.1128/AAC.02329-18) |
+| <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: disposition incomplete — no disposition parameter from this paper; review-gap-f…</sub><br><sub>route_to: `human_review`</sub> | [Trang_2019_2_final_model](drugs/drug_plazomicin/Plazomicin_Trang2019v2_final_model.md) | — | 1-compartment (no model) | 3 (+5 cov.) | Trang M et al., Population Pharmacokinetic Analyses for…, Antimicrobial agents and ch… (2019) | [10.1128/AAC.02329-18](https://doi.org/10.1128/AAC.02329-18) |
+| <span class="pk-badge pk-badge--neutral">None</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>STALE — current validate: not captured</sub> | [Trang_2019_2_reference](drugs/drug_plazomicin/Plazomicin_Trang2019v2_reference.md) | — | — (no model) | 0 | Trang M et al., Population Pharmacokinetic Analyses for…, Antimicrobial agents and ch… (2019) | [10.1128/AAC.02329-18](https://doi.org/10.1128/AAC.02329-18) |
 
 ## ADME sites
 
@@ -48,7 +60,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 - **PubMed hits:** 7 matched, 7 returned
 - **screened:** 1  ·  **relevant:** 1
-- **records:** 1  ·  extracted 0  ·  needs_review 0  ·  rejected 1  ·  stale 0
+- **records:** 4  ·  extracted 2  ·  needs_review 1  ·  rejected 0  ·  stale 1
 - **scholar-agent fallback query used:** not captured
 
 ## Full text wanted
@@ -57,18 +69,18 @@ _1 paper(s) judged relevant from the abstract, with no full text on disk — pay
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Trang_2019_2.pdf` | Trang M et al., Population Pharmacokinetic Analyses for…, Antimicrobial agents and ch… (2019) | popPK | 10 | [10.1128/AAC.02329-18](https://doi.org/10.1128/AAC.02329-18) | [30670433](https://pubmed.ncbi.nlm.nih.gov/30670433) | The abstract provides quantitative PK parameters (total and renal clearance, half-lives) from a population PK model in humans. |
+| `Zhuang_2022.pdf` | Zhuang L et al., Application of Population Pharmacokinet…, Antimicrobial agents and ch… (2022) | popPK | 8 | [10.1128/aac.02074-21](https://doi.org/10.1128/aac.02074-21) | [35258314](https://pubmed.ncbi.nlm.nih.gov/35258314) | The study describes a population PK model and TDM strategy for plazomicin, but no quantitative parameter values (CL, V, etc.) are present in the provided evidence. |
 
-<sub>queue written 2026-10-07T11:38:14.173685+00:00</sub>
+<sub>queue written 2026-10-07T15:57:58.012334+00:00</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Kuti_2019_2 | relevant | 4 | 2 | The study reports population pharmacokinetic parameters (CL, Vc) for tigecycline and meropenem, while plazomicin is only characterized by AUC/MIC ratios and dosing ranges without a dedicated PK model or specific CL/V estimates in the text. |
-| popPK | Luterbach_2022 | irrelevant | 2 | 0 | This is a narrative review/case study discussing PK/PD modeling approaches for plazomicin, but the provided text contains no original quantitative PK parameter values. |
-| popPK | Shin_2024 | irrelevant | 1 | 0 | The paper focuses on general aminoglycoside penetration into lung epithelial lining fluid using data from eight other studies, and does not report specific quantitative PK parameters for plazomicin in the provided evidence. |
-| popPK | Zhuang_2022 | irrelevant | 2 | 0 | The study applies a previously developed population PK model rather than estimating new parameters, and no quantitative PK values (CL, V, etc.) are present in the provided text. |
+| popPK | Kuti_2019_2 | irrelevant | 5 | 3 | The study constructs PK models and reports quantitative parameters (CL, V, k) only for the adjunctive agents tigecycline and meropenem, not for plazomicin, for which only AUC/MIC PD targets are evaluated using pre-existing AUC data. |
+| popPK | Luterbach_2022 | irrelevant | 2 | 0 | This is a review article discussing PK/PD modeling approaches for plazomicin and does not report original quantitative disposition parameters in the provided evidence. |
+| popPK | Shin_2024 | irrelevant | 2 | 0 | This is a population pharmacokinetic study of five aminoglycosides, but the specific drug plazomicin is not identified as the subject, and no quantitative parameter values for it are provided in the evidence. |
+| popPK | Zhuang_2022 | irrelevant | 8 | 0 | The study describes a population PK model and TDM strategy for plazomicin, but no quantitative parameter values (CL, V, etc.) are present in the provided evidence. |
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-10-07 11:38 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-10-07 15:58 UTC</sub>

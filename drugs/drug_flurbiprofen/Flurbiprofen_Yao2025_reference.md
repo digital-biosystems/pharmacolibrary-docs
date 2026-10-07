@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;M01A&quot;,&quot;href&quot;:&quot;atc/M01A.md&quot;},{&quot;label&quot;:&quot;flurbiprofen&quot;,&quot;href&quot;:&quot;drugs/drug_flurbiprofen/&quot;},{&quot;label&quot;:&quot;Yao_2025 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Flurbiprofen_Aarons1991_reference&quot;,&quot;label&quot;:&quot;Aarons_1991_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_flurbiprofen/Flurbiprofen_Aarons1991_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Flurbiprofen_Zhang2018_reference&quot;,&quot;label&quot;:&quot;Zhang_2018_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_flurbiprofen/Flurbiprofen_Zhang2018_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Flurbiprofen_Aarons1991_reference&quot;,&quot;label&quot;:&quot;Aarons_1991_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_flurbiprofen/Flurbiprofen_Aarons1991_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -25,29 +25,31 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which m
 
 <sub>reviewed by rule template (no LLM)</sub>
 
-> ⚠️ **STALE** — review status `model_quarantined` (reviewed 2026-09-28 14:38:06.972428+00:00) predates the upstream re-run (2026-10-07 00:51:08.662295+00:00). Current validate status: `extracted`.
+> ⚠️ **STALE** — review status `model_quarantined` (reviewed 2026-09-28 14:38:06.972428+00:00) predates the upstream re-run (2026-10-07 14:38:12.312471+00:00). Current validate status: `extracted`.
 
-> **Dose compound ≠ measured compound:** dosed `flurbiprofen`, measured `flurbiprofen enantiomers`.
+> **Dose compound ≠ measured compound:** dosed `flurbiprofen`, measured `S(+)-flurbiprofen, R(-)-flurbiprofen`.
 
 ## Citation
 Yao H et al., Exploring the Population Pharmacokineti…, Drug design, development an… (2025)
   ·  DOI: [10.2147/DDDT.S542722](https://doi.org/10.2147/DDDT.S542722)
 
 ## Model component
-<dbs-pgx drug="flurbiprofen" model-id="Flurbiprofen_Yao2025_reference" status="extracted" stale="true" population="selective joint replacement patients with postoperative pain" measured-compound="flurbiprofen enantiomers" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<dbs-pgx drug="flurbiprofen" model-id="Flurbiprofen_Yao2025_reference" status="extracted" stale="true" population="selective joint replacement patients with postoperative pain" measured-compound="S(+)-flurbiprofen, R(-)-flurbiprofen" parameterization="mechanistic" topology="2C"></dbs-pgx>
 
 **Model structure:** 2-compartment, IV mammillary model — template `PK_2C`.  
-**Parameters:** 4 extracted.
+**Parameters:** 6 extracted.
 
 **Parameterization:** mechanistic.
 
 ## Parameters
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| Vc, L | `Q63` · V1 | 17.0 | L | 0.017 | [l] | not captured | exact (1.0) | t0002:row3:col1, t0002:row3:col2, t0002:row3:col3, Yao_2025_table_3:row2:col1, Yao_2025_table_3:row2:col2, Yao_2025_table_3:row2:col3 | — | 0.13 (None% RSE) |
-| CL, L·h−1 | `Q22` · CL | 11.8 | L·h−1 | 3.277777777777778e-06 | [l] / [h] | not captured | exact (1.0) | t0002:row4:col1, t0002:row4:col2, t0002:row4:col3, Yao_2025_table_3:row3:col1, Yao_2025_table_3:row3:col2, Yao_2025_table_3:row3:col3 | — | 0.16 (None% RSE) |
-| Vp, L | `Q64` · V2 | 79.1 | L | 0.07909999999999999 | [l] | not captured | exact (1.0) | t0002:row5:col1, t0002:row5:col2, t0002:row5:col3, Yao_2025_table_3:row4:col1, Yao_2025_table_3:row4:col2, Yao_2025_table_3:row4:col3 | — | 0.25 (None% RSE) |
-| Q, L·h−1 | `Q30` · Q | 0.45 | L·h−1 | 1.2500000000000002e-07 | [l] / [h] | not captured | exact (1.0) | t0002:row6:col1, t0002:row6:col2, t0002:row6:col3, Yao_2025_table_3:row5:col1, Yao_2025_table_3:row5:col2 | — | not captured |
+| Vc, L | `Q63` · V1 | 17.0 | L | 0.017 | [l] | 15.0 | exact (1.0) | t0002:row3:col1, t0002:row3:col2, t0002:row3:col3, Yao_2025_table_3:row2:col1, Yao_2025_table_3:row2:col2, Yao_2025_table_3:row2:col3 | — | 0.13 (None% RSE) |
+| CL, L·h−1 | `Q22` · CL | 11.8 | L·h−1 | 3.277777777777778e-06 | [l] / [h] | 2.92 | exact (1.0) | t0002:row4:col1, t0002:row4:col2, t0002:row4:col3, Yao_2025_table_3:row3:col1, Yao_2025_table_3:row3:col2, Yao_2025_table_3:row3:col3 | — | 0.16 (None% RSE) |
+| Vp, L | `Q64` · V2 | 79.1 | L | 0.07909999999999999 | [l] | 33.5 | exact (1.0) | t0002:row5:col1, t0002:row5:col2, t0002:row5:col3, Yao_2025_table_3:row4:col1, Yao_2025_table_3:row4:col2, Yao_2025_table_3:row4:col3 | — | 0.25 (None% RSE) |
+| Q, L·h−1 | `Q30` · Q | 0.45 | L·h−1 | 1.2500000000000002e-07 | [l] / [h] | 0.32 | exact (1.0) | t0002:row6:col1, t0002:row6:col2, t0002:row6:col3, Yao_2025_table_3:row5:col1, Yao_2025_table_3:row5:col2 | — | not captured |
+| GG | `Q41` · FG | -2.01 | not captured | not captured | not captured | -1.42 | llm (0.6) | t0002:row9:col1, t0002:row9:col2, Yao_2025_table_3:row9:col1, Yao_2025_table_3:row9:col2 | — | not captured |
+| BSA on Vc | `Q319` · allometric_exponent | 1.37 | not captured | not captured | not captured | 0.59 | llm_corrected (0.6) | Yao_2025_table_3:row6:col1, Yao_2025_table_3:row6:col2 | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -64,11 +66,8 @@ Yao H et al., Exploring the Population Pharmacokineti…, Drug design, developme
 - table section residual_error: 'Plasma, additive error, σ' routed out of structural estimates ('Random residual variability')
 - table section residual_error: 'CSF, multiplicative error, σ' routed out of structural estimates ('Random residual variability')
 - dropped unlinked row (NIL): 'GA' — extend the ontology if this is a real PK parameter (source ['t0002:row8:col1', 't0002:row8:col2', 'Yao_2025_table_3:row8:col1', 'Yao_2025_table_3:row8:col2'])
-- dropped unlinked row (NIL): 'GG' — extend the ontology if this is a real PK parameter (source ['t0002:row9:col1', 't0002:row9:col2', 'Yao_2025_table_3:row9:col1', 'Yao_2025_table_3:row9:col2'])
-- dropped unlinked row (NIL): 'BSA on Vc' — extend the ontology if this is a real PK parameter (source ['Yao_2025_table_3:row6:col1', 'Yao_2025_table_3:row6:col2'])
-- apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=flurbiprofen enantiomers
-- molar mass: no plausible PubChem entry for 'flurbiprofen enantiomers' ('flurbiprofen enantiomers') — left in mass units
-- molar mass: none found for 'flurbiprofen enantiomers' — its concentrations stay mass-only
+- apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=S(+)-flurbiprofen, R(-)-flurbiprofen
+- molar mass: none found for 'S(+)-flurbiprofen, R(-)-flurbiprofen' — its concentrations stay mass-only
 
 **Extraction notes:**
 - unparsed cell t0002:row8:col3 = '−3.85 to −0.10'
@@ -112,7 +111,7 @@ first reading `qwen3.6:27b-q8_0` — the numbers on this page are its, whatever 
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 4 | not captured | not captured | not captured |
+| C0_has_structural_params | pass | not captured | 6 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['t0002:row4:col1', 't0002:row4:col2', 't0002:row4:col3', 'Yao_2025_table_3:row3:col1', 'Yao_2025_table_3:row3:col2', 'Yao_2025_table_3:row3:col3'] |
@@ -170,4 +169,4 @@ _No web simulator for this record: its structure has no shared WebAssembly templ
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 00:51 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 14:38 UTC</sub>

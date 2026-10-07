@@ -17,11 +17,15 @@
 
 **Model:** No model was generated from this record.
 
+> The paper does not provide a full text or specific pharmacodynamic model details, so the mechanism by which beclabuvir concentrations drive sustained virologic response at posttreatment week 12 is not described. No potency or rate values are available.
+>
+> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+
 - **paper:** `Ueno_2019`
 - **model family:** `categorical`
 - **driver:** `not_resolved`
 - **tier:** population
-- **effect:** unknown/unknown
+- **effect:** stimulation/unknown
 
 ## Citation
 Ueno T et al., Exposure-Response Analysis for Efficacy…, Clinical pharmacology in dr… (2019)

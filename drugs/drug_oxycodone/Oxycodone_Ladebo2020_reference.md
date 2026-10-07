@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N02A&quot;,&quot;href&quot;:&quot;atc/N02A.md&quot;},{&quot;label&quot;:&quot;oxycodone&quot;,&quot;href&quot;:&quot;drugs/drug_oxycodone/&quot;},{&quot;label&quot;:&quot;Ladebo_2020 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Oxycodone_Morse2021_reference&quot;,&quot;label&quot;:&quot;Morse_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_oxycodone/Oxycodone_Morse2021_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Oxycodone_Shi2026_reference&quot;,&quot;label&quot;:&quot;Shi_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_oxycodone/Oxycodone_Shi2026_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Oxycodone_Morse2021_reference&quot;,&quot;label&quot;:&quot;Morse_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_oxycodone/Oxycodone_Morse2021_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Oxycodone_Shi2026_reference&quot;,&quot;label&quot;:&quot;Shi_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_oxycodone/Oxycodone_Shi2026_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # oxycodone — `Oxycodone_Ladebo2020_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -15,27 +15,36 @@
 
 **Model:** No model was generated from this record.
 
-> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+### Reviewer guidance
+
+**This paper's disposition core is incomplete.**
+
+A volume and a clearance/elimination estimate from this paper are needed to build its model. Review values from other papers (Shi_2026) cannot stand in for this paper's evidence. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — oxycodone: tlag 0.23 hour, kabs 0.19 hour-1, t1/2z 14 minutes, CL 38 L/h, V 251 L.
+
+<sub>reviewed by rule template (no LLM)</sub>
+
+> ⚠️ **STALE** — review status `needs_review` (reviewed 2026-10-07 06:17:50.299516+00:00) predates the upstream re-run (2026-10-07 14:56:45.621530+00:00). Current validate status: `rejected`.
 
 ## Citation
 Ladebo L et al., Population pharmacokinetic-pharmacodyna…, Basic & clinical pharmacolo… (2020)
   ·  DOI: [10.1111/bcpt.13330](https://doi.org/10.1111/bcpt.13330)
 
 ## Model component
-<dbs-pgx drug="oxycodone" model-id="Oxycodone_Ladebo2020_reference" status="needs_review" stale="false" population="healthy volunteers" measured-compound="oxycodone" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<dbs-pgx drug="oxycodone" model-id="Oxycodone_Ladebo2020_reference" status="rejected" stale="true" population="healthy volunteers" measured-compound="oxycodone" parameterization="mechanistic" topology="1C"></dbs-pgx>
 
 **Model structure:** 1-compartment; no model was built for this record.  
-**Parameters:** 5 extracted.
+**Parameters:** 6 extracted.
 
 **Parameterization:** mechanistic.
 
 ## Parameters
-> ⚠️ This record is not accepted (current status `needs_review`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
+> ⚠️ This record is not accepted (current status `rejected`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
 | absorption lag | `Q83` · tlag | 0.23 | hour | 828.0 | [h] | not captured | exact (1.0) | Ladebo_2020:abstract | — | not captured |
 | kaCR | `Q49` · kabs | 0.19 | hour-1 | 5.277777777777778e-05 | [1] / [h] | not captured | llm (0.6) | Ladebo_2020:abstract | — | not captured |
+| kaSOL | `Q95` · t1/2ka | 0.94 | hour-1 | not captured | [1] / [h] | not captured | llm (0.6) | Ladebo_2020:abstract | — | not captured |
 | half-life | `Q57` · t1/2z | 14 | minutes | 840.0 | [min] | not captured | llm (0.6) | Ladebo_2020:abstract | — | not captured |
 | CL | `Q22` · CL | 38.03 | L/h | 1.056388888888889e-05 | L/h | not captured | review_gapfill (0.7) | Shi_2026:review | — | not captured |
 | V d | `Q61` · V | 250.75 | L | 0.25075000000000003 | L | not captured | review_gapfill (0.7) | Shi_2026:review | — | not captured |
@@ -48,8 +57,10 @@ Ladebo L et al., Population pharmacokinetic-pharmacodyna…, Basic & clinical ph
 ## Departures & gaps
 
 **Interpretation flags:**
-- dropped duplicate Q49 ('kaSOL', value 0.94) — already have one for this compound
+- unit_dimension_mismatch: 'kaSOL' → Q95 (unit '1 / [time]' vs ontology '[time]') — route to review
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=oxycodone
+- held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
+- status held at route_to_review — not promoted
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
 - gap-filled Q22 (CL) from Shi_2026's review values (primary lacked it)
 - gap-filled Q61 (V) from Shi_2026's review values (primary lacked it)
@@ -65,13 +76,14 @@ Ladebo L et al., Population pharmacokinetic-pharmacodyna…, Basic & clinical ph
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 3 | not captured | not captured | not captured |
+| C0_has_structural_params | pass | not captured | 4 | not captured | not captured | not captured |
 | C0c_disposition_complete | fail | not captured | not captured | not captured | not captured | not captured |
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Shi_2026:review'] |
 | C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['Ladebo_2020:abstract'] |
 | C5_dimension_Q57 | pass | [time] | not captured | not captured | not captured | ['Ladebo_2020:abstract'] |
 | C5_dimension_Q61 | pass | [length] ** 3 | not captured | not captured | not captured | ['Shi_2026:review'] |
 | C5_dimension_Q83 | pass | [time] | not captured | not captured | not captured | ['Ladebo_2020:abstract'] |
+| C5_dimension_Q95 | fail | 1 / [time] | hour-1 | not captured | not captured | ['Ladebo_2020:abstract'] |
 | C6_cl_magnitude | pass | &lt;= 90.0 L/h | 38.03 | not captured | not captured | ['Shi_2026:review'] |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
 | C9_phys_window_Q22 | pass | clearance within physiological range | 38 L/h | not captured | not captured | ['Shi_2026:review'] |
@@ -89,19 +101,9 @@ Ladebo L et al., Population pharmacokinetic-pharmacodyna…, Basic & clinical ph
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
-## Downloadable models
+## Models
 
-<div class="pk-models-grid"><div class="pk-models-table">
-<table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-</tbody></table>
-<p>No bundles have been generated for this record yet. When the engineer emits them they appear here automatically — this page reports what is on disk and generates nothing itself.</p>
-</div></div>
+<p>No downloads: this record is <b>rejected</b>, so it is not published as a model. Any archives generated for it before the verdict have been removed — a download outlives the page that explains it.</p>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
@@ -110,4 +112,4 @@ _No web simulator for this record: its structure has no shared WebAssembly templ
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 05:38 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 14:56 UTC</sub>

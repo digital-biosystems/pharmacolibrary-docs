@@ -1,10 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;J05A&quot;,&quot;href&quot;:&quot;atc/J05A.md&quot;},{&quot;label&quot;:&quot;dasabuvir&quot;,&quot;href&quot;:&quot;drugs/drug_dasabuvir/&quot;},{&quot;label&quot;:&quot;Mensing_2016 \u00b7 reference&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Dasabuvir_Mensing2016_reference&quot;,&quot;label&quot;:&quot;Mensing_2016_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_dasabuvir/Dasabuvir_Mensing2016_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # dasabuvir — `Dasabuvir_Mensing2016_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span>
+> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -12,32 +13,38 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
-**Model:** No model was generated from this record.
+**Model:** A simulatable model was generated — see the **Models** and **Simulation** tabs.
 
-> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+### Reviewer guidance
+
+**Dasabuvir intercompartmental clearance (-224 L/day) and peripheral volume (-345 L) are physically implausible negative values.**
+
+The record lists the apparent intercompartmental clearance between the central and peripheral compartments as -224 L/day. It also specifies the volume of distribution of the peripheral compartment as -345 L. These negative physiological parameters were deemed impossible, resulting in the model's rejection. Extracted — dasabuvir: kabs 5.97 day -1, CL/F 3.77e+03 L/day, V1/F 638 L, Q/F -224 L/day, V2/F -345 L.
+
+<sub>reviewed by qwen3.8-27b</sub>
+
+> ⚠️ **STALE** — review status `rejected` (reviewed 2026-10-07 14:20:02.070853+00:00) predates the upstream re-run (2026-10-07 15:50:37.697972+00:00). Current validate status: `extracted`.
 
 ## Citation
 Mensing S et al., Population Pharmacokinetics of Paritapr…, The AAPS journal (2016)
   ·  DOI: [10.1208/s12248-015-9846-1](https://doi.org/10.1208/s12248-015-9846-1)
 
 ## Model component
-<dbs-pgx drug="dasabuvir" model-id="Dasabuvir_Mensing2016_reference" status="rejected" stale="false" population="adults with HCV genotype 1 infection" measured-compound="dasabuvir" parameterization="apparent" topology="2C"></dbs-pgx>
+<dbs-pgx drug="dasabuvir" model-id="Dasabuvir_Mensing2016_reference" status="extracted" stale="true" population="adults with chronic HCV genotype 1 infection" measured-compound="dasabuvir" parameterization="apparent" topology="parent_metabolite"></dbs-pgx>
 
-**Model structure:** 2-compartment; no model was built for this record.  
+**Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 5 extracted.
 
 **Parameterization:** CL/F, Q/F, V1/F, V2/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
 ## Parameters
-> ⚠️ This record is not accepted (current status `rejected`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
-
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
 | k a , day -1 | `Q49` · kabs | 5.97 | day -1 | 6.909722222222221e-05 | 1/h | not captured | space_fold (0.95) | Mensing_2016:discussion_prose | — | not captured |
 | CL/F, L/day | `Q27` · CL/F | 3770 | L/day | 4.363425925925926e-05 | L/h | not captured | exact (1.0) | Mensing_2016:discussion_prose | — | not captured |
 | Vc/F, L | `Q290` · V1/F | 638 | L | 0.638 | L | not captured | exact (1.0) | Mensing_2016:discussion_prose | — | not captured |
-| Q/F, L/day | `Q69` · Q/F | -224 | L/day | -2.5925925925925925e-06 | L/h | not captured | exact (1.0) | Mensing_2016:discussion_prose | — | not captured |
-| Vp/F, L | `Q82` · V2/F | -345 | L | -0.34500000000000003 | L | not captured | exact (1.0) | Mensing_2016:discussion_prose | — | not captured |
+| Q/F, L/day | `Q69` · Q/F | 254 | L/day | 2.9398148148148147e-06 | L/h | not captured | exact (1.0) | Mensing_2016:discussion_prose | — | not captured |
+| Vp/F, L | `Q82` · V2/F | 5110 | L | 5.11 | L | not captured | exact (1.0) | Mensing_2016:discussion_prose | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -46,20 +53,28 @@ Mensing S et al., Population Pharmacokinetics of Paritapr…, The AAPS journal (
 
 ## Departures & gaps
 
+**Deviations:**
+- `defaulted_parameters`: ['Tlag']
+- `apparent_assumption`: F=1, Fm=1, no molar correction (parameterization=apparent)
+
 **Interpretation flags:**
 - salvaged Q49 ('k a , day -1'=5.97) from results prose — parameter table was unreadable
 - salvaged Q27 ('CL/F, L/day'=3770) from results prose — parameter table was unreadable
 - salvaged Q290 ('Vc/F, L'=638) from results prose — parameter table was unreadable
-- salvaged Q69 ('Q/F, L/day'=-224) from results prose — parameter table was unreadable
-- salvaged Q82 ('Vp/F, L'=-345) from results prose — parameter table was unreadable
+- salvaged Q69 ('Q/F, L/day'=254) from results prose — parameter table was unreadable
+- salvaged Q82 ('Vp/F, L'=5110) from results prose — parameter table was unreadable
 - apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=dasabuvir
 - held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
+- topology: transfer parameter unlinked (Q100) — add Kfm/formation-rate/rate-constant to the ontology; routing to review
 - status held at route_to_review — not promoted
 - skipped review gap-fill of TLAG: primary's parameterization (rate-constant / ka-only) does not use it
+- engineer: parent → metabolite not buildable on PK_3M_9C (None) — the measured compound's 1-compartment model instead
 
 **Extraction notes:**
-- no TEI final-model table id; trying text-pointer table recovery
-- text-pointer recovery found no readable extracted parameter table
+- unparsed cell Mensing_2016_table_p7_1:row1:col1 = '5.97 [5.47, 6.88]'
+- unparsed cell Mensing_2016_table_p7_1:row1:col2 = '4.97 [4.57, 5.36]'
+- unparsed cell Mensing_2016_table_p7_1:row1:col3 = '14.0 [12.7, 15.1]'
+- unparsed cell Mensing_2016_table_p7_1:row1:col4 = '4.08 [3.93, 4.19]'
 
 ## Validation
 
@@ -70,12 +85,11 @@ Mensing S et al., Population Pharmacokinetics of Paritapr…, The AAPS journal (
 | C0_has_structural_params | pass | not captured | 5 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
-| C2_base_sign_Q69 | fail | not captured | -224.0 | not captured | not captured | not captured |
-| C2_base_sign_Q82 | fail | not captured | -345.0 | not captured | not captured | not captured |
 | C7_apparent_coherence | pass | not captured | not captured | not captured | not captured | not captured |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
 | C9_phys_window_Q27 | pass | clearance within physiological range | 157 L/h | not captured | not captured | ['Mensing_2016:discussion_prose'] |
 | C9_phys_window_Q290 | pass | volume within physiological range | 638 L | not captured | not captured | ['Mensing_2016:discussion_prose'] |
+| C9_phys_window_Q82 | pass | volume within physiological range | 5.11e+03 L | not captured | not captured | ['Mensing_2016:discussion_prose'] |
 
 <details class="legend">
 <summary>Check legend — what each column means</summary>
@@ -89,15 +103,30 @@ Mensing S et al., Population Pharmacokinetics of Paritapr…, The AAPS journal (
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
-## Models
+## Downloadable models
 
-<p>No downloads: this record is <b>rejected</b>, so it is not published as a model. Any archives generated for it before the verdict have been removed — a download outlives the page that explains it.</p>
+<div class="pk-models-grid"><div class="pk-models-table">
+<table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_dasabuvir/Dasabuvir_Mensing2016_reference/Dasabuvir_Mensing2016_reference_modelica.zip" download>Dasabuvir_Mensing2016_reference_modelica.zip</a> <span class="pk-size">(4.6 kB)</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_dasabuvir/Dasabuvir_Mensing2016_reference/Dasabuvir_Mensing2016_reference_fmi.zip" download>Dasabuvir_Mensing2016_reference_fmi.zip</a> <span class="pk-size">(4.3 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_dasabuvir/Dasabuvir_Mensing2016_reference/Dasabuvir_Mensing2016_reference_matlab.zip" download>Dasabuvir_Mensing2016_reference_matlab.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_dasabuvir/Dasabuvir_Mensing2016_reference/Dasabuvir_Mensing2016_reference_matlab_simbio.zip" download>Dasabuvir_Mensing2016_reference_matlab_simbio.zip</a> <span class="pk-size">(2.8 kB)</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_dasabuvir/Dasabuvir_Mensing2016_reference/Dasabuvir_Mensing2016_reference_sbml.zip" download>Dasabuvir_Mensing2016_reference_sbml.zip</a> <span class="pk-size">(2.7 kB)</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_dasabuvir/Dasabuvir_Mensing2016_reference/Dasabuvir_Mensing2016_reference_cellml.zip" download>Dasabuvir_Mensing2016_reference_cellml.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
+</tbody></table>
+<p>Each archive holds the model source, a script that simulates it against the appropriate library, and a README describing both and how to run them.</p>
+<p><b>FMI is two downloads.</b> The archive holds this record's parameters and its driver; the simulator itself is <code>PK_1C_enteral.fmu</code>, one compiled template shared by every model of this structure. Take the FMU once, keep it beside the script (or pass <code>--fmu PATH</code>). Running it reproduces the model-specific FMU exactly.</p>
+</div><figure class="pk-models-diagram"><img src="drugs/drug_dasabuvir/Dasabuvir_Mensing2016_reference/Dasabuvir_Mensing2016_reference.svg" alt="Dasabuvir_Mensing2016_reference diagram"><figcaption>Model diagram (Modelica) using Pharmacolibrary v26.09 components, rendered by OpenModelica 1.26.7.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+**Administration: oral** — 25 mg, single dose, first-order absorption (ka 0.249 /h, F 1). Doses in the paper: 25, 100, 150, 400, 600 mg.
+
+<dbs-fmusim paramsurl="drugs/drug_dasabuvir/Dasabuvir_Mensing2016_reference/Dasabuvir_Mensing2016_reference_params.json" metaurl="assets/fmu/PK_1C_enteral.vr.json" wasmurl="assets/fmu/PK_1C_enteral.js" controlsurl="drugs/drug_dasabuvir/Dasabuvir_Mensing2016_reference/Dasabuvir_Mensing2016_reference_sim_controls.json"></dbs-fmusim>
+
+<sub>Runs this record's model in the browser as WebAssembly. Sliders start at the extracted values; the reference check compares the browser's peak against the FMPy result recorded when the record was built, and is withheld once a value has been edited. Template `PK_1C_enteral` · parameters `Dasabuvir_Mensing2016_reference_params.json` · controls `Dasabuvir_Mensing2016_reference_sim_controls.json`. A slider marked *simulator value* is running on the template's own default because this record does not pin that parameter.</sub>
 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 13:22 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 15:50 UTC</sub>

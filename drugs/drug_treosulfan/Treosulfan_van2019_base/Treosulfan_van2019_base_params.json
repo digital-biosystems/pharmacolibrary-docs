@@ -1,0 +1,32 @@
+{
+ "dose_source": "library default",
+ "model_id": "Treosulfan_van2019_base",
+ "molar_masses": {
+  "central.C": 0.27829000000000004
+ },
+ "note": "Values for the shared PK_2C.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "parameters": {
+  "Cl": 1.6500000000000003e-06,
+  "F": 1.0,
+  "MM": 0.27829000000000004,
+  "VdPerKg": 1.1000000000000001e-05,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 1e-05,
+  "k12": 0.008874458874458873,
+  "k21": 0.0007827415043909889,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 660.0000000662021
+ },
+ "reference_peaks": {
+  "central.C": 1.5843978037937565e-05
+ },
+ "stop_time": 86400.0,
+ "template": "PK_2C",
+ "template_fmu": "PK_2C.fmu"
+}

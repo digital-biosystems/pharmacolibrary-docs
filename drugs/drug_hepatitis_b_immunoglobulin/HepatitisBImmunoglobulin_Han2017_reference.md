@@ -1,10 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;J06B&quot;,&quot;href&quot;:&quot;atc/J06B.md&quot;},{&quot;label&quot;:&quot;hepatitis B immunoglobulin&quot;,&quot;href&quot;:&quot;drugs/drug_hepatitis_b_immunoglobulin/&quot;},{&quot;label&quot;:&quot;Han_2017 \u00b7 reference&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;HepatitisBImmunoglobulin_Han2017_reference&quot;,&quot;label&quot;:&quot;Han_2017_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_hepatitis_b_immunoglobulin/HepatitisBImmunoglobulin_Han2017_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # hepatitis B immunoglobulin — `HepatitisBImmunoglobulin_Han2017_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span>
+> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -12,28 +13,35 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
-**Model:** No model was generated from this record.
+**Model:** A simulatable model was generated — see the **Models** and **Simulation** tabs.
 
-> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+### Reviewer guidance
+
+**The paper reports none of the model's key parameters.**
+
+No clearance, volume or rate constant of the model is reported in it. No parameter values were extracted.
+
+<sub>reviewed by rule template (no LLM)</sub>
+
+> ⚠️ **STALE** — review status `rejected` (reviewed 2026-10-07 14:30:08.332221+00:00) predates the upstream re-run (2026-10-07 16:16:43.865200+00:00). Current validate status: `extracted`.
 
 ## Citation
 Han S et al., A 6-month mixed-effect pharmacokinetic…, Drug design, development an… (2017)
   ·  DOI: [10.2147/DDDT.S134711](https://doi.org/10.2147/DDDT.S134711)
 
 ## Model component
-<dbs-pgx drug="hepatitis B immunoglobulin" model-id="HepatitisBImmunoglobulin_Han2017_reference" status="rejected" stale="false" population="adult liver transplant recipients" measured-compound="hepatitis_b_immunoglobulin" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<dbs-pgx drug="hepatitis B immunoglobulin" model-id="HepatitisBImmunoglobulin_Han2017_reference" status="extracted" stale="true" population="adult liver transplant recipients" measured-compound="hepatitis B immunoglobulin (HBIG)" parameterization="mechanistic" topology="1C"></dbs-pgx>
 
-**Model structure:** 1-compartment; no model was built for this record.  
-**Parameters:** 0 extracted.
+**Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
+**Parameters:** 2 extracted.
 
 **Parameterization:** mechanistic.
 
 ## Parameters
-> ⚠️ This record is not accepted (current status `rejected`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
-
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| θ3 | `Q900` · equation variable | 0.0286 | not captured | not captured | not captured | not captured | llm (0.6) | t2-dddt-11-2099:row6:col3 | — | not captured |
+| final value for CL | `Q22` · CL | 0.0064 | L/h | 1.777777777777778e-09 | L/h | not captured | boundary (0.8) | Han_2017:other_prose | — | not captured |
+| typical value for volume of distribution (Vd) | `Q61` · V | 3.2 | L | 0.0032 | L | not captured | boundary (0.8) | Han_2017:other_prose | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -44,19 +52,25 @@ Han S et al., A 6-month mixed-effect pharmacokinetic…, Drug design, developmen
 
 **Interpretation flags:**
 - dropped unlinked row (NIL): 'θ1' — extend the ontology if this is a real PK parameter (source ['t2-dddt-11-2099:row4:col3'])
-- routed 'θ2' → Q314 (omega_cov) to covariance — variability estimate, not a structural parameter
+- dropped unlinked row (NIL): 'θ2' — extend the ontology if this is a real PK parameter (source ['t2-dddt-11-2099:row5:col3'])
+- dropped unlinked row (NIL): 'θ3' — extend the ontology if this is a real PK parameter (source ['t2-dddt-11-2099:row6:col3'])
 - dropped unlinked row (NIL): 'θ4' — extend the ontology if this is a real PK parameter (source ['t2-dddt-11-2099:row7:col3'])
-- dropped unlinked row (NIL): 'θ5' — extend the ontology if this is a real PK parameter (source ['t2-dddt-11-2099:row8:col3'])
+- routed 'θ5' → Q314 (omega_cov) to covariance — variability estimate, not a structural parameter
 - dropped unlinked row (NIL): 'θ6' — extend the ontology if this is a real PK parameter (source ['t2-dddt-11-2099:row10:col3', 't2-dddt-11-2099:row12:col3'])
 - dropped unlinked row (NIL): 'θ7' — extend the ontology if this is a real PK parameter (source ['t2-dddt-11-2099:row13:col3'])
-- dropped unlinked row (NIL): 'ω12' — extend the ontology if this is a real PK parameter (source ['t2-dddt-11-2099:row15:col3'])
-- dropped unlinked row (NIL): 'ω32' — extend the ontology if this is a real PK parameter (source ['t2-dddt-11-2099:row17:col3'])
-- dropped unlinked row (NIL): 'ω42' — extend the ontology if this is a real PK parameter (source ['t2-dddt-11-2099:row18:col3'])
-- table mostly unlinked (8/10 table-cell rows NIL) — likely the wrong table was located, not 2 genuinely-missing ontology parameter(s); route_to_review instead of building a model from the residual linked cell(s)
-- apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=hepatitis_b_immunoglobulin
+- routed 'ω12' → Q314 (omega_cov) to covariance — variability estimate, not a structural parameter
+- routed 'ω32' → Q314 (omega_cov) to covariance — variability estimate, not a structural parameter
+- routed 'ω42' → Q314 (omega_cov) to covariance — variability estimate, not a structural parameter
+- salvaged Q22 ('final value for CL'=0.0064) from results prose — parameter table was unreadable
+- salvaged Q61 ('typical value for volume of distribution (Vd)'=3.2) from results prose — parameter table was unreadable
+- apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=hepatitis B immunoglobulin (HBIG)
+- held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
 - status held at route_to_review — not promoted
+- molar mass: no plausible PubChem entry for 'hepatitis B immunoglobulin (HBIG)' ('hepatitis B immunoglobulin') — left in mass units
 - molar mass: none found for 'hepatitis_b_immunoglobulin' — its concentrations stay mass-only
-- review gap-fill skipped: this record carries no value of its own, and a model assembled entirely from other papers is not this paper's model
+- molar mass: none found for 'hepatitis B immunoglobulin (HBIG)' — its concentrations stay mass-only
+- skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
+- skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
 
 **Extraction notes:**
 - unparsed cell t2-dddt-11-2099:row4:col4 = '0.450 (0.297–0.680)'
@@ -89,9 +103,14 @@ Han S et al., A 6-month mixed-effect pharmacokinetic…, Drug design, developmen
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | fail | not captured | 0 | not captured | not captured | not captured |
-| C0b_disposition_core | fail | not captured | not captured | not captured | not captured | not captured |
+| C0_has_structural_params | pass | not captured | 2 | not captured | not captured | not captured |
+| C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
+| C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
+| C2_base_Q61 | pass | 3.2 | 3.2 | 1.0 | 0.05 | footnote reference category |
+| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 0.0064 | not captured | not captured | ['Han_2017:other_prose'] |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
+| C9_phys_window_Q22 | pass | clearance within physiological range | 0.0064 L/h | not captured | not captured | ['Han_2017:other_prose'] |
+| C9_phys_window_Q61 | pass | volume within physiological range | 3.2 L | not captured | not captured | ['Han_2017:other_prose'] |
 
 <details class="legend">
 <summary>Check legend — what each column means</summary>
@@ -105,15 +124,30 @@ Han S et al., A 6-month mixed-effect pharmacokinetic…, Drug design, developmen
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
-## Models
+## Downloadable models
 
-<p>No downloads: this record is <b>rejected</b>, so it is not published as a model. Any archives generated for it before the verdict have been removed — a download outlives the page that explains it.</p>
+<div class="pk-models-grid"><div class="pk-models-table">
+<table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_hepatitis_b_immunoglobulin/HepatitisBImmunoglobulin_Han2017_reference/HepatitisBImmunoglobulin_Han2017_reference_modelica.zip" download>HepatitisBImmunoglobulin_Han2017_reference_modelica.zip</a> <span class="pk-size">(4.6 kB)</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_hepatitis_b_immunoglobulin/HepatitisBImmunoglobulin_Han2017_reference/HepatitisBImmunoglobulin_Han2017_reference_fmi.zip" download>HepatitisBImmunoglobulin_Han2017_reference_fmi.zip</a> <span class="pk-size">(4.2 kB)</span><br><a href="models/fmu/PK_1C.fmu" download>PK_1C.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_hepatitis_b_immunoglobulin/HepatitisBImmunoglobulin_Han2017_reference/HepatitisBImmunoglobulin_Han2017_reference_matlab.zip" download>HepatitisBImmunoglobulin_Han2017_reference_matlab.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_hepatitis_b_immunoglobulin/HepatitisBImmunoglobulin_Han2017_reference/HepatitisBImmunoglobulin_Han2017_reference_matlab_simbio.zip" download>HepatitisBImmunoglobulin_Han2017_reference_matlab_simbio.zip</a> <span class="pk-size">(2.8 kB)</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_hepatitis_b_immunoglobulin/HepatitisBImmunoglobulin_Han2017_reference/HepatitisBImmunoglobulin_Han2017_reference_sbml.zip" download>HepatitisBImmunoglobulin_Han2017_reference_sbml.zip</a> <span class="pk-size">(2.5 kB)</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_hepatitis_b_immunoglobulin/HepatitisBImmunoglobulin_Han2017_reference/HepatitisBImmunoglobulin_Han2017_reference_cellml.zip" download>HepatitisBImmunoglobulin_Han2017_reference_cellml.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
+</tbody></table>
+<p>Each archive holds the model source, a script that simulates it against the appropriate library, and a README describing both and how to run them.</p>
+<p><b>FMI is two downloads.</b> The archive holds this record's parameters and its driver; the simulator itself is <code>PK_1C.fmu</code>, one compiled template shared by every model of this structure. Take the FMU once, keep it beside the script (or pass <code>--fmu PATH</code>). Running it reproduces the model-specific FMU exactly.</p>
+</div><figure class="pk-models-diagram"><img src="drugs/drug_hepatitis_b_immunoglobulin/HepatitisBImmunoglobulin_Han2017_reference/HepatitisBImmunoglobulin_Han2017_reference.svg" alt="HepatitisBImmunoglobulin_Han2017_reference diagram"><figcaption>Model diagram (Modelica) using Pharmacolibrary v26.09 components, rendered by OpenModelica 1.26.7.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+**Administration: intravenous** — 10 mg infusion over 10 min, single dose. _The paper's dose was not captured; the simulator's default is used._
+
+<dbs-fmusim paramsurl="drugs/drug_hepatitis_b_immunoglobulin/HepatitisBImmunoglobulin_Han2017_reference/HepatitisBImmunoglobulin_Han2017_reference_params.json" metaurl="assets/fmu/PK_1C.vr.json" wasmurl="assets/fmu/PK_1C.js" controlsurl="drugs/drug_hepatitis_b_immunoglobulin/HepatitisBImmunoglobulin_Han2017_reference/HepatitisBImmunoglobulin_Han2017_reference_sim_controls.json"></dbs-fmusim>
+
+<sub>Runs this record's model in the browser as WebAssembly. Sliders start at the extracted values; the reference check compares the browser's peak against the FMPy result recorded when the record was built, and is withheld once a value has been edited. Template `PK_1C` · parameters `HepatitisBImmunoglobulin_Han2017_reference_params.json` · controls `HepatitisBImmunoglobulin_Han2017_reference_sim_controls.json`. A slider marked *simulator value* is running on the template's own default because this record does not pin that parameter.</sub>
 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 14:29 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 16:16 UTC</sub>

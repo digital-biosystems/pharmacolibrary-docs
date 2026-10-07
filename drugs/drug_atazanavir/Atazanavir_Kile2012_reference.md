@@ -1,10 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;J05A&quot;,&quot;href&quot;:&quot;atc/J05A.md&quot;},{&quot;label&quot;:&quot;atazanavir&quot;,&quot;href&quot;:&quot;drugs/drug_atazanavir/&quot;},{&quot;label&quot;:&quot;Kile_2012 \u00b7 reference&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Atazanavir_Goutelle2013_reference&quot;,&quot;label&quot;:&quot;Goutelle_2013_no_failure&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_atazanavir/Atazanavir_Goutelle2013_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Atazanavir_Goutelle2013_reference&quot;,&quot;label&quot;:&quot;Goutelle_2013_virological_failure&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_atazanavir/Atazanavir_Goutelle2013_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # atazanavir — `Atazanavir_Kile2012_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span>
+> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -12,7 +13,7 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
-**Model:** No model was generated from this record.
+**Model:** A model was built but held back: a core parameter had no value, so it is not published or simulated.
 
 ### Reviewer guidance
 
@@ -24,30 +25,45 @@ Independently confirmed by `gpt-oss:120b`.
 
 <sub>reviewed by glm-5.3-flash</sub>
 
-> ⚠️ **STALE** — review status `model_quarantined` (reviewed 2026-09-28 14:36:10.474486+00:00) predates the upstream re-run (2026-10-07 13:17:34.787402+00:00). Current validate status: `rejected`.
+> ⚠️ **STALE** — review status `model_quarantined` (reviewed 2026-09-28 14:36:10.474486+00:00) predates the upstream re-run (2026-10-07 15:20:06.022376+00:00). Current validate status: `extracted`.
 
 ## Citation
 Kile DA et al., A population pharmacokinetic-pharmacoge…, AIDS research and human ret… (2012)
   ·  DOI: [10.1089/aid.2011.0378](https://doi.org/10.1089/aid.2011.0378)
 
 ## Model component
-<dbs-pgx drug="atazanavir" model-id="Atazanavir_Kile2012_reference" status="rejected" stale="true" population="HIV-negative volunteers" measured-compound="atazanavir" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<dbs-pgx drug="atazanavir" model-id="Atazanavir_Kile2012_reference" status="extracted" stale="true" population="HIV-negative healthy volunteers" measured-compound="atazanavir" parameterization="apparent" topology="1C"></dbs-pgx>
 
-**Model structure:** 1-compartment; no model was built for this record.  
-**Parameters:** 0 extracted.
+**Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
+**Parameters:** 4 extracted.
 
-**Parameterization:** mechanistic.
+**Parameterization:** CL/F, Q/F, V2/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
 ## Parameters
-> ⚠️ This record is not accepted (current status `rejected`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
+| label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
+|---|---|---|---|---|---|---|---|---|---|---|
+| CL/F | `Q27` · CL/F | 16.7 | liters/h | 4.638888888888889e-06 | L/h | not captured | exact (1.0) | Kile_2012:other_prose | — | not captured |
+| V2/F | `Q82` · V2/F | 32.2 | liters | 0.032200000000000006 | L | not captured | exact (1.0) | Kile_2012:other_prose | — | not captured |
+| Q/F | `Q69` · Q/F | 7.29 | liters/h | 2.025e-06 | L/h | not captured | exact (1.0) | Kile_2012:other_prose | — | not captured |
+| K a | `Q49` · kabs | 0.394 | h -1 | 0.00010944444444444445 | 1/h | not captured | space_fold (0.95) | Kile_2012:other_prose | — | not captured |
 
-_No resolved parameters._
+<details class="legend">
+<summary>Column legend — what each column means</summary>
+<table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>label (paper)</code></td><td>the row or statistic label exactly as printed in the paper (label_verbatim) — never normalised, so it can be found in the PDF.</td></tr><tr><td><code>Q-code · name</code></td><td>the ontology parameter this label was matched to (Q22 = clearance, Q27 = CL/F, Q49 = ka, Q57 = half-life, …) and its canonical name. The Q-code, not the label, is what scoring and cross-paper merging use.</td></tr><tr><td><code>value</code></td><td>the estimate as reported in the paper.</td></tr><tr><td><code>unit</code></td><td>the unit as printed (unit_verbatim).</td></tr><tr><td><code>value_si</code></td><td>the value converted to the canonical unit. Empty when no conversion was possible — usually an unparseable or missing unit.</td></tr><tr><td><code>unit_canonical</code></td><td>the canonical unit for that Q-code, i.e. what value_si is expressed in.</td></tr><tr><td><code>RSE%</code></td><td>relative standard error of the estimate, when the paper reports one.</td></tr><tr><td><code>link</code></td><td>how the label was matched to the Q-code, with confidence. exact / boundary / fuzzy / tv_prefix / caption_compartment / special_case are deterministic string matches; llm, llm_confirmed, llm_corrected involved the model; review and review_gapfill come from the secondary review tier, the latter filling a parameter the primary extraction missed; boundary_relink is a corrected match.</td></tr><tr><td><code>source</code></td><td>where in the paper the number came from: colN = that column of the located table, other_prose = running text, review = the secondary tier, pgx = a pharmacogenomic record.</td></tr><tr><td><code>covariates</code></td><td>covariate effects attached to this parameter (e.g. weight on CL).</td></tr><tr><td><code>IIV</code></td><td>inter-individual variability reported for this parameter.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>the field is absent from the KB artifact — nothing was recorded. This is NOT the same as zero or empty: the value is unknown, not measured to be nothing.</td></tr><tr><td><code>—</code></td><td>deliberately not shown: the column does not apply to this row.</td></tr><tr><td><code>not verified</code></td><td>the record is not in an accepted state (see the badge and the note above the table); the numbers are shown as extracted, not endorsed.</td></tr></tbody></table>
+</details>
 
 ## Departures & gaps
 
 **Interpretation flags:**
-- apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=atazanavir
-- review gap-fill skipped: this record carries no value of its own, and a model assembled entirely from other papers is not this paper's model
+- salvaged Q27 ('CL/F'=16.7) from results prose — parameter table was unreadable
+- salvaged Q82 ('V2/F'=32.2) from results prose — parameter table was unreadable
+- salvaged Q69 ('Q/F'=7.29) from results prose — parameter table was unreadable
+- salvaged Q49 ('K a'=0.394) from results prose — parameter table was unreadable
+- apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=atazanavir
+- held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
+- structure disagreement: deterministic 1C vs LLM 2C — review compartment count
+- status held at route_to_review — not promoted
+- skipped review gap-fill of TLAG: primary's parameterization (rate-constant / ka-only) does not use it
 
 ## Validation
 
@@ -70,9 +86,14 @@ _Every reader agrees on every compared field of this record._
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | fail | not captured | 0 | not captured | not captured | not captured |
-| C0b_disposition_core | fail | not captured | not captured | not captured | not captured | not captured |
+| C0_has_structural_params | pass | not captured | 4 | not captured | not captured | not captured |
+| C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
+| C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
+| C2_base_Q27 | fail | 16.7 | 6.56 | 0.3928 | 0.05 | footnote reference category |
+| C7_apparent_coherence | pass | not captured | not captured | not captured | not captured | not captured |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
+| C9_phys_window_Q27 | pass | clearance within physiological range | 16.7 L/h | not captured | not captured | ['Kile_2012:other_prose'] |
+| C9_phys_window_Q82 | pass | volume within physiological range | 32.2 L | not captured | not captured | ['Kile_2012:other_prose'] |
 
 **Reviewer per-scenario checks:**
 
@@ -99,9 +120,19 @@ _Every reader agrees on every compared field of this record._
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
-## Models
+## Downloadable models
 
-<p>No downloads: this record is <b>rejected</b>, so it is not published as a model. Any archives generated for it before the verdict have been removed — a download outlives the page that explains it.</p>
+<div class="pk-models-grid"><div class="pk-models-table">
+<table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
+</tbody></table>
+<p>No bundles have been generated for this record yet. When the engineer emits them they appear here automatically — this page reports what is on disk and generates nothing itself.</p>
+</div></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
@@ -110,4 +141,4 @@ _No web simulator for this record: its structure has no shared WebAssembly templ
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 13:17 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 15:20 UTC</sub>

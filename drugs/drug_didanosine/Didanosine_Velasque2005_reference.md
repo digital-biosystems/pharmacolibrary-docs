@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;J05A&quot;,&quot;href&quot;:&quot;atc/J05A.md&quot;},{&quot;label&quot;:&quot;didanosine&quot;,&quot;href&quot;:&quot;drugs/drug_didanosine/&quot;},{&quot;label&quot;:&quot;Velasque_2005 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Didanosine_Drusano1992_reference&quot;,&quot;label&quot;:&quot;Drusano_1992_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_didanosine/Didanosine_Drusano1992_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Didanosine_Greenberg2022_reference&quot;,&quot;label&quot;:&quot;Greenberg_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_didanosine/Didanosine_Greenberg2022_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Didanosine_Ngara2020_reference&quot;,&quot;label&quot;:&quot;Ngara_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_didanosine/Didanosine_Ngara2020_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Didanosine_Pai1992_reference&quot;,&quot;label&quot;:&quot;Pai_1992_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_didanosine/Didanosine_Pai1992_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Didanosine_Greenberg2022_reference&quot;,&quot;label&quot;:&quot;Greenberg_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_didanosine/Didanosine_Greenberg2022_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Didanosine_Ngara2020_reference&quot;,&quot;label&quot;:&quot;Ngara_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_didanosine/Didanosine_Ngara2020_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Didanosine_Zhou1999_reference&quot;,&quot;label&quot;:&quot;Zhou_1999_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_didanosine/Didanosine_Zhou1999_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # didanosine — `Didanosine_Velasque2005_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -15,51 +15,75 @@
 
 **Model:** No model was generated from this record.
 
-> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+### Reviewer guidance
+
+**This paper's disposition core is incomplete.**
+
+A volume and a clearance/elimination estimate from this paper are needed to build its model. Review values from other papers (Greenberg_2022) cannot stand in for this paper's evidence. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — didanosine: V 9.82 l, Q 40.9 l/h, kabs 1.51 h(-1), CL 18.2 L/h.
+
+<sub>reviewed by rule template (no LLM)</sub>
+
+> ⚠️ **STALE** — review status `needs_review` (reviewed 2026-10-07 14:20:20.587674+00:00) predates the upstream re-run (2026-10-07 16:10:25.442824+00:00). Current validate status: `rejected`.
 
 ## Citation
 Velasque LS et al., Estimating the genetic component (RGC)…, AIDS (London, England) 19 S… (2005)
   ·  DOI: [10.1097/01.aids.0000191495.89606.2e](https://doi.org/10.1097/01.aids.0000191495.89606.2e)
 
 ## Model component
-<dbs-pgx drug="didanosine" model-id="Didanosine_Velasque2005_reference" status="needs_review" stale="false" population="healthy adults" measured-compound="didanosine" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<dbs-pgx drug="didanosine" model-id="Didanosine_Velasque2005_reference" status="rejected" stale="true" population="healthy adults" measured-compound="didanosine" parameterization="mechanistic" topology="1C"></dbs-pgx>
 
 **Model structure:** 1-compartment; no model was built for this record.  
-**Parameters:** 4 extracted.
+**Parameters:** 5 extracted.
 
 **Parameterization:** mechanistic.
 
 ## Parameters
-> ⚠️ This record is not accepted (current status `needs_review`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
+> ⚠️ This record is not accepted (current status `rejected`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| central volume (V2 = 9.82) | `Q61` · V | 9.82 | l | 0.00982 | [l] | not captured | exact (1.0) | Velasque_2005:abstract | — | not captured |
-| inter-compartmental clearance (Q = 40.90/h) | `Q30` · Q | 40.9 | l/h | 1.1361111111111111e-05 | [l] / [h] | not captured | llm_confirmed (0.6) | Velasque_2005:abstract | — | not captured |
-| absorption rate constant (Ka = 1.51 h(-1)) | `Q49` · kabs | 1.51 | h(-1) | 0.00041944444444444445 | [1] / [h] | not captured | llm_confirmed (0.6) | Velasque_2005:abstract | — | not captured |
-| population estimate for CL | `Q22` · CL | 18.2 | L/h | 5.0555555555555555e-06 | L/h | not captured | review_gapfill (0.7) | Greenberg_2022:review | — | not captured |
+| V2 | `Q64` · V2 | 9.82 | L | 0.00982 | L | not captured | exact (1.0) | Velasque_2005:abstract | — | not captured |
+| Q | `Q30` · Q | 40.9 | /h | not captured | [1] / [h] | not captured | exact (1.0) | Velasque_2005:abstract | — | not captured |
+| Ka | `Q49` · kabs | 1.51 | h(-1) | 0.00041944444444444445 | [1] / [h] | not captured | exact (1.0) | Velasque_2005:abstract | — | not captured |
+| D | `Q310` · D1 | 0.44 | h | 1584.0 | [h] | not captured | exact (1.0) | Velasque_2005:abstract | — | not captured |
+| volume of distribution | `Q61` · V | 1.7 | L/kg | 0.119 | L | not captured | review_gapfill (0.7) | Greenberg_2022:review | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
 <table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>label (paper)</code></td><td>the row or statistic label exactly as printed in the paper (label_verbatim) — never normalised, so it can be found in the PDF.</td></tr><tr><td><code>Q-code · name</code></td><td>the ontology parameter this label was matched to (Q22 = clearance, Q27 = CL/F, Q49 = ka, Q57 = half-life, …) and its canonical name. The Q-code, not the label, is what scoring and cross-paper merging use.</td></tr><tr><td><code>value</code></td><td>the estimate as reported in the paper.</td></tr><tr><td><code>unit</code></td><td>the unit as printed (unit_verbatim).</td></tr><tr><td><code>value_si</code></td><td>the value converted to the canonical unit. Empty when no conversion was possible — usually an unparseable or missing unit.</td></tr><tr><td><code>unit_canonical</code></td><td>the canonical unit for that Q-code, i.e. what value_si is expressed in.</td></tr><tr><td><code>RSE%</code></td><td>relative standard error of the estimate, when the paper reports one.</td></tr><tr><td><code>link</code></td><td>how the label was matched to the Q-code, with confidence. exact / boundary / fuzzy / tv_prefix / caption_compartment / special_case are deterministic string matches; llm, llm_confirmed, llm_corrected involved the model; review and review_gapfill come from the secondary review tier, the latter filling a parameter the primary extraction missed; boundary_relink is a corrected match.</td></tr><tr><td><code>source</code></td><td>where in the paper the number came from: colN = that column of the located table, other_prose = running text, review = the secondary tier, pgx = a pharmacogenomic record.</td></tr><tr><td><code>covariates</code></td><td>covariate effects attached to this parameter (e.g. weight on CL).</td></tr><tr><td><code>IIV</code></td><td>inter-individual variability reported for this parameter.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>the field is absent from the KB artifact — nothing was recorded. This is NOT the same as zero or empty: the value is unknown, not measured to be nothing.</td></tr><tr><td><code>—</code></td><td>deliberately not shown: the column does not apply to this row.</td></tr><tr><td><code>not verified</code></td><td>the record is not in an accepted state (see the badge and the note above the table); the numbers are shown as extracted, not endorsed.</td></tr></tbody></table>
 </details>
 
+### Unresolved rows _(no Q-code or no value — not parameters)_
+| label (paper) | Q-code | value | link |
+|---|---|---|---|
+| CL (male) | Q22 | not captured | exact |
+| V3 (male) | Q77 | not captured | exact |
+
 ## Departures & gaps
 
 **Interpretation flags:**
-- covariate category for CL/F from footnote/prose kept as documentation only (['Velasque_2005:abstract'])
-- covariate category for V2 from footnote/prose kept as documentation only (['Velasque_2005:abstract'])
-- dropped unlinked row (NIL): 'duration of the dose administration (D = 0.44 h)' — extend the ontology if this is a real PK parameter (source ['Velasque_2005:abstract'])
-- apparent-by-design (ADVISORY, codes unchanged): extravascular dosing with no identifiable F, so these reported disposition parameters are likely apparent unless the model puts first-pass in its structure — Q63 (central volume (V2 = 9.82)); Q30 (inter-compartmental clearance (Q = 40.90/h))
+- dropped duplicate Q22 ('CL (female)', value None) — already have one for this compound
+- unit_dimension_mismatch: 'Q' → Q30 (unit '1 / [time]' vs ontology '[length] ** 3 / [time]') — route to review
+- unit_dimension_unknown: 'male' (V3)
+- unit_dimension_unknown: 'female' (V3)
+- dropped duplicate Q77 ('V3 (female)', value 62.7) — already have one for this compound
+- dropped duplicate Q22 ('RGC of CL', value 0.58) — already have one for this compound
+- dropped duplicate Q30 ('RGC of Q', value 0.97) — already have one for this compound
+- dropped duplicate Q77 ('RGC of V3', value 0.6) — already have one for this compound
+- dropped duplicate Q49 ('RGC of Ka', value 0.53) — already have one for this compound
+- dropped unlinked row (NIL): 'RGC of D' — extend the ontology if this is a real PK parameter (source ['Velasque_2005:abstract'])
+- implicit units: 'V2' → L (from the popPK convention: 'No unit stated in text or table caption; peripheral compartment volume of distribution conventionally reported in L, and')
+- apparent-by-design (ADVISORY, codes unchanged): extravascular dosing with no identifiable F, so these reported disposition parameters are likely apparent unless the model puts first-pass in its structure — Q22 (CL (male)); Q64 (V2); Q30 (Q)
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=didanosine
-- 1C volume normalization: Q63→Q61 (single-compartment model has no central/peripheral split; 'central volume (V2 = 9.82)' is the general volume)
+- held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
+- structure disagreement: deterministic 1C vs LLM 2C — review compartment count
+- status held at route_to_review — not promoted
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
-- gap-filled Q22 (CL) from Greenberg_2022's review values (primary lacked it)
-- skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
+- gap-filled Q61 (V) from Greenberg_2022's review values (primary lacked it)
 - skipped review gap-fill of TLAG: primary's parameterization (rate-constant / ka-only) does not use it
 
 **Extraction notes:**
-- no GROBID TEI available — transcribed from abstract in Velasque_2005_metadata.yaml (6 record(s)); values are summary statistics, not a fitted model
+- no GROBID TEI available — transcribed from abstract in Velasque_2005_metadata.yaml (13 record(s)); values are summary statistics, not a fitted model
 
 ## Validation
 
@@ -67,17 +91,18 @@ Velasque LS et al., Estimating the genetic component (RGC)…, AIDS (London, Eng
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 3 | not captured | not captured | not captured |
+| C0_has_structural_params | pass | not captured | 4 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | fail | not captured | not captured | not captured | not captured | not captured |
-| C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Greenberg_2022:review'] |
-| C5_dimension_Q30 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Velasque_2005:abstract'] |
+| C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Velasque_2005:abstract'] |
+| C5_dimension_Q30 | fail | 1 / [time] | /h | not captured | not captured | ['Velasque_2005:abstract'] |
+| C5_dimension_Q310 | pass | [time] | not captured | not captured | not captured | ['Velasque_2005:abstract'] |
 | C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['Velasque_2005:abstract'] |
-| C5_dimension_Q61 | pass | [length] ** 3 | not captured | not captured | not captured | ['Velasque_2005:abstract'] |
-| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 18.2 | not captured | not captured | ['Greenberg_2022:review'] |
+| C5_dimension_Q61 | pass | [length] ** 3 | not captured | not captured | not captured | ['Greenberg_2022:review'] |
+| C5_dimension_Q64 | pass | [length] ** 3 | not captured | not captured | not captured | ['Velasque_2005:abstract'] |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
-| C9_phys_window_Q22 | pass | clearance within physiological range | 18.2 L/h | not captured | not captured | ['Greenberg_2022:review'] |
-| C9_phys_window_Q61 | pass | volume within physiological range | 9.82 L | not captured | not captured | ['Velasque_2005:abstract'] |
+| C9_phys_window_Q61 | pass | volume within physiological range | 119 L | not captured | not captured | ['Greenberg_2022:review'] |
+| C9_phys_window_Q64 | pass | volume within physiological range | 9.82 L | not captured | not captured | ['Velasque_2005:abstract'] |
 
 <details class="legend">
 <summary>Check legend — what each column means</summary>
@@ -91,19 +116,9 @@ Velasque LS et al., Estimating the genetic component (RGC)…, AIDS (London, Eng
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
-## Downloadable models
+## Models
 
-<div class="pk-models-grid"><div class="pk-models-table">
-<table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-</tbody></table>
-<p>No bundles have been generated for this record yet. When the engineer emits them they appear here automatically — this page reports what is on disk and generates nothing itself.</p>
-</div></div>
+<p>No downloads: this record is <b>rejected</b>, so it is not published as a model. Any archives generated for it before the verdict have been removed — a download outlives the page that explains it.</p>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
@@ -112,4 +127,4 @@ _No web simulator for this record: its structure has no shared WebAssembly templ
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 13:48 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 16:10 UTC</sub>

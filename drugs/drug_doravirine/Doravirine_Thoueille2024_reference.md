@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;J05A&quot;,&quot;href&quot;:&quot;atc/J05A.md&quot;},{&quot;label&quot;:&quot;doravirine&quot;,&quot;href&quot;:&quot;drugs/drug_doravirine/&quot;},{&quot;label&quot;:&quot;Thoueille_2024 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Doravirine_Thoueille2024_reference&quot;,&quot;label&quot;:&quot;Thoueille_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_doravirine/Doravirine_Thoueille2024_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Doravirine_Thoueille2024_reference&quot;,&quot;label&quot;:&quot;Thoueille_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_doravirine/Doravirine_Thoueille2024_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # doravirine — `Doravirine_Thoueille2024_reference`
 
-> ## <span class="pk-badge pk-badge--green">extracted</span>
+> ## <span class="pk-badge pk-badge--green" title="covariates_not_exercised: the record defines covariate effects (weight on clearance, renal function …) but the engineer simulated only the reference individual, so those scenarios were never run. The base model still reproduces the paper; what is missing is the covariate curves.">extracted</span> <span class="pk-badge pk-badge--stale">stale</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -15,14 +15,24 @@
 
 **Model:** A simulatable model was generated — see the **Models** and **Simulation** tabs.
 
-> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+> **Caveat** (`covariates_not_exercised`): the record defines covariate effects (weight on clearance, renal function …) but the engineer simulated only the reference individual, so those scenarios were never run. The base model still reproduces the paper; what is missing is the covariate curves.
+
+### Reviewer guidance
+
+**Bioavailability and lag time defaulted to library placeholders rather than paper values, invalidating the doravirine model for the reference individual.**
+
+The record lacks explicit estimates for bioavailability and lag time, forcing the use of library defaults that are not supported by the source paper. These missing inputs affect the simulated concentration profile but remain unsupported by the study data. Additionally, the defined covariate effects for age and CYP3A4 were not simulated, leaving the model's response to population variability unverified. Extracted — doravirine: kabs 1.9 h⁻¹, V 82.2 L, CL 3.98 L/h.
+
+<sub>reviewed by qwen3.8-27b</sub>
+
+> ⚠️ **STALE** — review status `needs_review` (reviewed 2026-10-07 14:21:00.002543+00:00) predates the upstream re-run (2026-10-07 16:31:29.612409+00:00). Current validate status: `extracted`.
 
 ## Citation
 Thoueille P et al., Population pharmacokinetic analysis of…, British journal of clinical… (2024)
   ·  DOI: [10.1111/bcp.15975](https://doi.org/10.1111/bcp.15975)
 
 ## Model component
-<dbs-pgx drug="doravirine" model-id="Doravirine_Thoueille2024_reference" status="extracted" stale="false" population="people with HIV (PWH)" measured-compound="doravirine" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<dbs-pgx drug="doravirine" model-id="Doravirine_Thoueille2024_reference" status="extracted" stale="true" population="real-world people with HIV" measured-compound="doravirine" parameterization="mechanistic" topology="1C"></dbs-pgx>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 3 extracted, plus 1 covariate effect.
@@ -35,8 +45,7 @@ Thoueille P et al., Population pharmacokinetic analysis of…, British journal o
 | ka (h⁻¹) | `Q49` · kabs | 1.9 | h⁻¹ | 0.0005277777777777777 | [1] / [h] | not captured | exact (1.0) | Thoueille_2024_table_p4_2:row0:col1, Thoueille_2024_table_p4_2:row0:col2 | — | not captured |
 | V (L) | `Q61` · V | 82.2 | L | 0.08220000000000001 | [l] | 13 | exact (1.0) | Thoueille_2024_table_p4_2:row1:col1 | — | not captured |
 | TVCL (L/h) | `Q22` · CL | 3.98 | L/h | 1.1055555555555557e-06 | [l] / [h] | 4 | tv_prefix (0.95) | Thoueille_2024_table_p4_2:row2:col1 | — | not captured |
-| theta_q900_cyp3a4 | `Q900` · theta_q900_cyp3a4 | -0.502 | not captured | not captured | not captured | 6 | not captured (not captured) | Thoueille_2024_table_p4_2:row4:col1 | — | not captured |
-| theta_Age | `Q900` · theta_Age | -0.67 | not captured | not captured | not captured | not captured | not captured (not captured) | not captured | — | not captured |
+| theta_q31_cyp3a4 | `Q900` · theta_q31_cyp3a4 | -0.502 | not captured | not captured | not captured | 6 | not captured (not captured) | Thoueille_2024_table_p4_2:row4:col1 | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -49,17 +58,16 @@ Thoueille P et al., Population pharmacokinetic analysis of…, British journal o
 - `defaulted_parameters`: ['F', 'Tlag']
 
 **Interpretation flags:**
-- column 'final model estimate (rse, %)' classified 'rse' by the LLM but kept as the estimate: the header names the point value
-- kept covariate coefficient theta_Age=-0.670 (covariate Age) — not an ontology parameter
-- covariate effect for Q900 has no base parameter row (kept as unattached equation-variable)
+- routed 'theta_Age' → Q314 (omega_cov) to covariance — variability estimate, not a structural parameter
+- covariate effect for Q31 has no base parameter row (kept as unattached equation-variable)
 - apparent-by-design (ADVISORY, codes unchanged): extravascular dosing with no identifiable F, so these reported disposition parameters are likely apparent unless the model puts first-pass in its structure — Q61 (V (L)); Q22 (TVCL (L/h))
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=doravirine
+- structure disagreement: deterministic 1C vs LLM 3C — review compartment count
 - skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
 - skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
 - skipped review gap-fill of TLAG: primary's parameterization (rate-constant / ka-only) does not use it
 
 **Extraction notes:**
-- no TEI final-model table id; trying text-pointer table recovery
 - unparsed cell Thoueille_2024_table_p4_2:row1:col2 = '83.7 (66.4-111.6)'
 - unparsed cell Thoueille_2024_table_p4_2:row2:col2 = '3.95 (3.67-4.27)'
 - unparsed cell Thoueille_2024_table_p4_2:row3:col2 = '27 (13-35)'
@@ -84,6 +92,20 @@ Thoueille P et al., Population pharmacokinetic analysis of…, British journal o
 | C9_phys_window_Q22 | pass | clearance within physiological range | 3.98 L/h | not captured | not captured | ['Thoueille_2024_table_p4_2:row2:col1'] |
 | C9_phys_window_Q61 | pass | volume within physiological range | 82.2 L | not captured | not captured | ['Thoueille_2024_table_p4_2:row1:col1'] |
 
+**Reviewer per-scenario checks:**
+
+| check | scenario | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|---|
+| T2_covariates_not_exercised | (all) | fail | not captured | not captured | not captured | record has covariate_effects but the engineer simulated only the reference individual — covariate scenarios were not exercised |
+| T0_analyte_identity | not captured | pass | not captured | not captured | not captured | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T3_output_variable | not captured | pass | C_central (measured=doravirine) | central.C | not captured | output must be the measured/analyte compartment |
+| T3_param_coverage | not captured | pass | 3 scholar param(s) emitted or defaulted | 3 covered | not captured | all structural parameters accounted for |
+| T3_topology_template | not captured | pass | 1C → PK_1C* | PK_1C_enteral | not captured | engineer template must match the scholar topology |
+| T6_deviations | not captured | fail | not captured | defaulted_parameters: not acceptable | not captured | LLM adjudication → deterministic rule |
+| T1_cmax | reference | skipped | not captured | 0.0009946015418508432 | not captured | non-numeric value |
+| T1_cmax | reference | skipped | 1.6 | 0.0009946015418508432 | not captured | unresolved concentration unit (exp '-', sim 'kg/m3') |
+| T1_cmin_ss | reference | skipped | 2.8 | not captured | not captured | no simulated metric for this quantity (single reference sim) |
+
 <details class="legend">
 <summary>Check legend — what each column means</summary>
 <table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>check</code></td><td>the check id. C0_has_structural_params = at least one numeric structural parameter; C0b_disposition_core = a volume OR a clearance/elimination term (neither means an exposure/outcome paper, not popPK — rejected); C0c_disposition_complete = BOTH a volume AND a clearance/elimination term, which is what the engineer needs to build (one without the other routes to review, never to the engineer); C1_half_life(_beta) = reported half-life against V and CL; C2_reference = covariate scenarios are sign-plausible; C3_cl_dose_auc = CL against dose/AUC; C4_auc_closed_form = AUC recomputed in closed form; C5_dimension_&lt;Qcode&gt; = the parameter's units carry the dimension its Q-code requires.</td></tr><tr><td><code>status</code></td><td>pass, fail, or skipped. A skipped check had nothing to compare — the paper did not report the input it needs — and is not evidence against the record. The scholar table lists only pass and fail; the reviewer table also shows skipped, with the reason in note.</td></tr><tr><td><code>expected</code></td><td>the value the check required, from the paper or from the ontology.</td></tr><tr><td><code>obtained</code></td><td>what the record actually yields.</td></tr><tr><td><code>ratio</code></td><td>obtained / expected, where the check is a numeric comparison.</td></tr><tr><td><code>tol</code></td><td>the tolerance the ratio had to fall within to pass.</td></tr><tr><td><code>source</code></td><td>the artifact the expected value was taken from.</td></tr><tr><td><code>scenario</code></td><td>reviewer table only — the covariate scenario the check was run under.</td></tr><tr><td><code>note</code></td><td>why a check was skipped, or how it was judged.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>the field is absent from the KB artifact — nothing was recorded. This is NOT the same as zero or empty: the value is unknown, not measured to be nothing.</td></tr><tr><td><code>—</code></td><td>deliberately not shown: the column does not apply to this row.</td></tr><tr><td><code>not verified</code></td><td>the record is not in an accepted state (see the badge and the note above the table); the numbers are shown as extracted, not endorsed.</td></tr></tbody></table>
@@ -92,6 +114,9 @@ Thoueille P et al., Population pharmacokinetic analysis of…, British journal o
 ## Raw artifacts
 
 - scholar stages: `../../../knowledgebase/drugs/drug_doravirine/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Thoueille_2024` / `Thoueille_2024::reference`)
+- model: `../../../knowledgebase/drugs/drug_doravirine/models/modelica/Doravirine_Thoueille2024_reference.mo`
+- deviation: `../../../knowledgebase/drugs/drug_doravirine/models/modelica/Doravirine_Thoueille2024_reference.deviation.json`
+- sim: `../../../knowledgebase/drugs/drug_doravirine/models/modelica/Doravirine_Thoueille2024_reference.json`
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -100,7 +125,7 @@ Thoueille P et al., Population pharmacokinetic analysis of…, British journal o
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_doravirine/Doravirine_Thoueille2024_reference/Doravirine_Thoueille2024_reference_modelica.zip" download>Doravirine_Thoueille2024_reference_modelica.zip</a> <span class="pk-size">(4.7 kB)</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_doravirine/Doravirine_Thoueille2024_reference/Doravirine_Thoueille2024_reference_modelica.zip" download>Doravirine_Thoueille2024_reference_modelica.zip</a> <span class="pk-size">(4.6 kB)</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_doravirine/Doravirine_Thoueille2024_reference/Doravirine_Thoueille2024_reference_fmi.zip" download>Doravirine_Thoueille2024_reference_fmi.zip</a> <span class="pk-size">(4.2 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_doravirine/Doravirine_Thoueille2024_reference/Doravirine_Thoueille2024_reference_matlab.zip" download>Doravirine_Thoueille2024_reference_matlab.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_doravirine/Doravirine_Thoueille2024_reference/Doravirine_Thoueille2024_reference_matlab_simbio.zip" download>Doravirine_Thoueille2024_reference_matlab_simbio.zip</a> <span class="pk-size">(2.8 kB)</span></td></tr>
@@ -122,4 +147,4 @@ Thoueille P et al., Population pharmacokinetic analysis of…, British journal o
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 14:17 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 16:31 UTC</sub>

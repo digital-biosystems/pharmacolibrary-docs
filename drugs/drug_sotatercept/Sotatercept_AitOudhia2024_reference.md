@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C02K&quot;,&quot;href&quot;:&quot;atc/C02K.md&quot;},{&quot;label&quot;:&quot;sotatercept&quot;,&quot;href&quot;:&quot;drugs/drug_sotatercept/&quot;},{&quot;label&quot;:&quot;Ait-Oudhia_2024 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Sotatercept_AitOudhia2024_reference&quot;,&quot;label&quot;:&quot;Ait-Oudhia_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_sotatercept/Sotatercept_AitOudhia2024_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Sotatercept_AitOudhia2024_reference&quot;,&quot;label&quot;:&quot;Ait-Oudhia_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_sotatercept/Sotatercept_AitOudhia2024_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # sotatercept — `Sotatercept_AitOudhia2024_reference`
 
-> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.667). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--green" title="covariates_not_exercised: the record defines covariate effects (weight on clearance, renal function …) but the engineer simulated only the reference individual, so those scenarios were never run. The base model still reproduces the paper; what is missing is the covariate curves.">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.667). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -15,18 +15,26 @@
 
 **Model:** A simulatable model was generated — see the **Models** and **Simulation** tabs.
 
+> **Caveat** (`covariates_not_exercised`): the record defines covariate effects (weight on clearance, renal function …) but the engineer simulated only the reference individual, so those scenarios were never run. The base model still reproduces the paper; what is missing is the covariate curves.
+
 ### Reviewer guidance
+
+**Sotatercept absolute bioavailability and lag time were left at library defaults, and covariate effects were not simulated.**
+
+The record lists an absolute bioavailability of 6.29, but the review notes that bioavailability and lag time were defaulted rather than extracted from the paper. Additionally, the model defines covariate effects for albumin and body weight, yet only the reference individual was simulated, leaving these effects unverified. Extracted — sotatercept: CL 6.22 L/day, V1 5.5 L, Q 20.5 L/day, V2 15.8 L, kabs 16 1/day, Fab 6.29.
 
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has sotatercept, the second reading unknown; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
 
-> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+<sub>reviewed by qwen3.8:27b-mtp-q8_0</sub>
+
+> ⚠️ **STALE** — review status `needs_review` (reviewed 2026-10-06 16:58:25.215612+00:00) predates the upstream re-run (2026-10-07 15:30:15.587728+00:00). Current validate status: `extracted`.
 
 ## Citation
 Ait-Oudhia S et al., Population pharmacokinetic modeling of…, CPT: pharmacometrics & syst… (2024)
   ·  DOI: [10.1002/psp4.13166](https://doi.org/10.1002/psp4.13166)
 
 ## Model component
-<dbs-pgx drug="sotatercept" model-id="Sotatercept_AitOudhia2024_reference" status="extracted" stale="false" population="healthy participants and patients with pulmonary arterial hypertension" measured-compound="sotatercept" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<dbs-pgx drug="sotatercept" model-id="Sotatercept_AitOudhia2024_reference" status="extracted" stale="true" population="healthy participants and patients with pulmonary arterial hypertension" measured-compound="sotatercept" parameterization="mechanistic" topology="2C"></dbs-pgx>
 
 **Model structure:** 2-compartment, oral mammillary model — template `PK_2C_enteral`.  
 **Parameters:** 6 extracted, plus 3 covariate effects.
@@ -41,7 +49,7 @@ Ait-Oudhia S et al., Population pharmacokinetic modeling of…, CPT: pharmacomet
 | VC | `Q63` · V1 | 5.50 | L | 0.0055 | L | 31.0 | exact (1.0) | psp413166-tbl-0002:row5:col2, psp413166-tbl-0002:row5:col3, psp413166-tbl-0002:row5:col6 | — | not captured |
 | Q | `Q30` · Q | 20.5 | L/day | 2.3726851851851853e-07 | L/h | not captured | exact (1.0) | psp413166-tbl-0002:row7:col2, psp413166-tbl-0002:row7:col3 | — | not captured |
 | VP | `Q64` · V2 | 15.8 | L | 0.0158 | L | 28.2 | exact (1.0) | psp413166-tbl-0002:row8:col2, psp413166-tbl-0002:row8:col3, psp413166-tbl-0002:row8:col6 | — | not captured |
-| KA | `Q49` · kabs | 16.0 | 1/day | 0.00018518518518518518 | 1/h | 24.2 | exact (1.0) | psp413166-tbl-0002:row9:col1, psp413166-tbl-0002:row9:col2, psp413166-tbl-0002:row9:col3, psp413166-tbl-0002:row9:col6 | — | not captured |
+| KA | `Q49` · kabs | 16.0 | 1/h | 0.0044444444444444444 | 1/h | 24.2 | exact (1.0) | psp413166-tbl-0002:row9:col1, psp413166-tbl-0002:row9:col2, psp413166-tbl-0002:row9:col3, psp413166-tbl-0002:row9:col6 | — | not captured |
 | F1 | `Q40` · Fab | 6.29 | not captured | not captured | not captured | 26.3 | exact (1.0) | psp413166-tbl-0002:row10:col2, psp413166-tbl-0002:row10:col3, psp413166-tbl-0002:row10:col6 | — | not captured |
 | theta_q319_body_weight_power | `Q900` · theta_q319_body_weight_power | 11.9 | not captured | not captured | not captured | not captured | not captured (not captured) | psp413166-tbl-0002:row3:col1, psp413166-tbl-0002:row3:col2 | — | not captured |
 | theta_q319_body_weight_power | `Q900` · theta_q319_body_weight_power | 11.8 | not captured | not captured | not captured | not captured | not captured (not captured) | psp413166-tbl-0002:row6:col1, psp413166-tbl-0002:row6:col2 | — | not captured |
@@ -61,11 +69,11 @@ Ait-Oudhia S et al., Population pharmacokinetic modeling of…, CPT: pharmacomet
 - covariate level 'Exponent of baseline albumin effect (−) a' → Q900:exponent_of_baseline_albumin_effect_a = 24.2 (power on Q22)
 - dropped unlinked row (NIL): 'Minimum value of the objective function = −6707.007; Condition number = 124' — extend the ontology if this is a real PK parameter (source ['psp413166-tbl-0002:row13:col1', 'psp413166-tbl-0002:row13:col2', 'psp413166-tbl-0002:row13:col3', 'psp413166-tbl-0002:row13:col4', 'psp413166-tbl-0002:row13:col5', 'psp413166-tbl-0002:row13:col6', 'psp413166-tbl-0002:row13:col7'])
 - covariate effect for Q319 has no base parameter row (kept as unattached equation-variable)
-- implicit units: 'CL' → L/day (from the paper text: "The text states: 'For example, the typical values for CL are 0.135, 0.177, and 0.237 L/day for subjects with BWs of 50, ")
-- implicit units: 'VC' → L (from the paper text: "The text states: 'and the typical values for VC are 2.55, 3.60, and 5.18 L for subjects with BWs of 50, 70, and 100.'")
-- implicit units: 'Q' → L/day (from the popPK convention: 'Q is an intercompartmental clearance. Since the paper explicitly defines CL in L/day (Priority 1 for CL), Q must share t')
-- implicit units: 'VP' → L (from the popPK convention: 'VP is a volume of distribution. The paper explicitly defines VC in L (Priority 1 for VC). Volumes in the same compartmen')
-- implicit units: 'KA' → 1/day (from the popPK convention: 'KA is a first-order rate constant. The paper defines CL in L/day, implying the time unit for rate constants is 1/day. Th')
+- implicit units: 'CL' → L/day (from the paper text: 'The text states: "For example, the typical values for CL are 0.135, 0.177, and 0.237 L/day for subjects with BWs of 50, ')
+- implicit units: 'VC' → L (from the paper text: 'The text states: "...and the typical values for VC are 2.55, 3.60, and 5.18 L for subjects with BWs of 50, 70, and 100."')
+- implicit units: 'Q' → L/day (from the popPK convention: 'The paper does not explicitly state the unit for Q (intercompartmental clearance). However, since CL is reported in L/da')
+- implicit units: 'VP' → L (from the popPK convention: 'The paper does not explicitly state the unit for VP, but VP is a volume of distribution. The text states VC values in L ')
+- implicit units: 'KA' → 1/h (from the popPK convention: 'The paper does not explicitly state the unit for KA. First-order absorption rate constants are conventionally reported i')
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=sotatercept
 - molar mass: none found for 'sotatercept' — its concentrations stay mass-only
 - skipped review gap-fill of TLAG: primary's parameterization (rate-constant / ka-only) does not use it
@@ -146,6 +154,19 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 | C9_phys_window_Q63 | pass | volume within physiological range | 5.5 L | not captured | not captured | ['psp413166-tbl-0002:row5:col2', 'psp413166-tbl-0002:row5:col3', 'psp413166-tbl-0002:row5:col6'] |
 | C9_phys_window_Q64 | pass | volume within physiological range | 15.8 L | not captured | not captured | ['psp413166-tbl-0002:row8:col2', 'psp413166-tbl-0002:row8:col3', 'psp413166-tbl-0002:row8:col6'] |
 
+**Reviewer per-scenario checks:**
+
+| check | scenario | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|---|
+| T2_covariates_not_exercised | (all) | fail | not captured | not captured | not captured | record has covariate_effects but the engineer simulated only the reference individual — covariate scenarios were not exercised |
+| T0_analyte_identity | not captured | pass | not captured | not captured | not captured | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T3_output_variable | not captured | pass | C_central (measured=sotatercept) | central.C | not captured | output must be the measured/analyte compartment |
+| T3_param_coverage | not captured | pass | 5 scholar param(s) emitted or defaulted | 5 covered | not captured | all structural parameters accounted for |
+| T3_topology_template | not captured | pass | 2C → PK_2C* | PK_2C_enteral | not captured | engineer template must match the scholar topology |
+| T6_deviations | not captured | fail | not captured | defaulted_parameters: not acceptable | not captured | LLM adjudication → deterministic rule |
+| T1_t_half_terminal | reference | pass | 528.0 | 499.53140365314204 | 0.9461 | days→SI vs simulated h |
+| T1_t_half_terminal | reference | skipped | not captured | 499.53140365314204 | not captured | non-numeric value |
+
 <details class="legend">
 <summary>Check legend — what each column means</summary>
 <table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>check</code></td><td>the check id. C0_has_structural_params = at least one numeric structural parameter; C0b_disposition_core = a volume OR a clearance/elimination term (neither means an exposure/outcome paper, not popPK — rejected); C0c_disposition_complete = BOTH a volume AND a clearance/elimination term, which is what the engineer needs to build (one without the other routes to review, never to the engineer); C1_half_life(_beta) = reported half-life against V and CL; C2_reference = covariate scenarios are sign-plausible; C3_cl_dose_auc = CL against dose/AUC; C4_auc_closed_form = AUC recomputed in closed form; C5_dimension_&lt;Qcode&gt; = the parameter's units carry the dimension its Q-code requires.</td></tr><tr><td><code>status</code></td><td>pass, fail, or skipped. A skipped check had nothing to compare — the paper did not report the input it needs — and is not evidence against the record. The scholar table lists only pass and fail; the reviewer table also shows skipped, with the reason in note.</td></tr><tr><td><code>expected</code></td><td>the value the check required, from the paper or from the ontology.</td></tr><tr><td><code>obtained</code></td><td>what the record actually yields.</td></tr><tr><td><code>ratio</code></td><td>obtained / expected, where the check is a numeric comparison.</td></tr><tr><td><code>tol</code></td><td>the tolerance the ratio had to fall within to pass.</td></tr><tr><td><code>source</code></td><td>the artifact the expected value was taken from.</td></tr><tr><td><code>scenario</code></td><td>reviewer table only — the covariate scenario the check was run under.</td></tr><tr><td><code>note</code></td><td>why a check was skipped, or how it was judged.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>the field is absent from the KB artifact — nothing was recorded. This is NOT the same as zero or empty: the value is unknown, not measured to be nothing.</td></tr><tr><td><code>—</code></td><td>deliberately not shown: the column does not apply to this row.</td></tr><tr><td><code>not verified</code></td><td>the record is not in an accepted state (see the badge and the note above the table); the numbers are shown as extracted, not endorsed.</td></tr></tbody></table>
@@ -154,6 +175,9 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 ## Raw artifacts
 
 - scholar stages: `../../../knowledgebase/drugs/drug_sotatercept/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Ait-Oudhia_2024` / `Ait-Oudhia_2024::reference`)
+- model: `../../../knowledgebase/drugs/drug_sotatercept/models/modelica/Sotatercept_AitOudhia2024_reference.mo`
+- deviation: `../../../knowledgebase/drugs/drug_sotatercept/models/modelica/Sotatercept_AitOudhia2024_reference.deviation.json`
+- sim: `../../../knowledgebase/drugs/drug_sotatercept/models/modelica/Sotatercept_AitOudhia2024_reference.json`
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -175,7 +199,7 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-**Administration: oral** — 0.7 mg, single dose, first-order absorption (ka 0.667 /h, F 0.9). Doses in the paper: 0.7, 2.1, 70, 210 mg.
+**Administration: oral** — 0.7 mg, single dose, first-order absorption (ka 16 /h, F 0.9). Doses in the paper: 0.7, 2.1, 21, 49, 70, 210 mg.
 
 <dbs-fmusim paramsurl="drugs/drug_sotatercept/Sotatercept_AitOudhia2024_reference/Sotatercept_AitOudhia2024_reference_params.json" metaurl="assets/fmu/PK_2C_enteral.vr.json" wasmurl="assets/fmu/PK_2C_enteral.js" controlsurl="drugs/drug_sotatercept/Sotatercept_AitOudhia2024_reference/Sotatercept_AitOudhia2024_reference_sim_controls.json"></dbs-fmusim>
 
@@ -184,4 +208,4 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-06 16:34 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 15:30 UTC</sub>

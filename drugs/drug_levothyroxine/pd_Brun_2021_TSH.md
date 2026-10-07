@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;H03A&quot;,&quot;href&quot;:&quot;atc/H03A.md&quot;},{&quot;label&quot;:&quot;Levothyroxine&quot;,&quot;href&quot;:&quot;drugs/drug_levothyroxine/&quot;},{&quot;label&quot;:&quot;Brun_2021 \u00b7 PD thyrotropin&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Levothyroxine_Latif2015_reference&quot;,&quot;label&quot;:&quot;Latif_2015_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_levothyroxine/Levothyroxine_Latif2015_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Levothyroxine_Younis2018_reference&quot;,&quot;label&quot;:&quot;Younis_2018_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_levothyroxine/Levothyroxine_Younis2018_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Levothyroxine_Younis2018_reference&quot;,&quot;label&quot;:&quot;Younis_2018_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_levothyroxine/Levothyroxine_Younis2018_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # thyrotropin — PD  <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by openai:gpt-6-luna (not confirmed, agreement 0.75), gpt-oss:120b (not confirmed, agreement 0.103). The first reading is what the record holds.">cross-check: disputed 0/2</span>
@@ -18,14 +18,14 @@
 
 **Model:** No model was generated from this record.
 
-> Levothyroxine replacement raises free thyroxine (fT4), which suppresses TSH (mIU/L) via an assumed log-linear TSH–fT4 relationship; the paper does not state a mechanistic PD model beyond this log-linear link and gives no Imax, IC50, EC50, Emax, kin, kout, ke0, or gamma values.
+> Free thyroxine (fT4) inhibits thyrotropin (TSH) via a log-linear relationship, which was used to derive individual response targets for dosage adjustment. The paper does not specify key potency or rate parameters such as IC50, Imax, or ke0, but notes that LT4 dosages typically ranged between 100 and 150 μg/day.
 >
-> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
 
 - **paper:** `Brun_2021`
 - **model family:** `log_linear`
 - **driver:** `conc_no_pk`
-- **tier:** population
+- **tier:** descriptive
 - **effect:** inhibition/proportional
 
 ## Citation

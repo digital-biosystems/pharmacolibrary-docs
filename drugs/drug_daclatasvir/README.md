@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;J05A&quot;,&quot;href&quot;:&quot;atc/J05A.md&quot;},{&quot;label&quot;:&quot;daclatasvir&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Daclatasvir_AlNahari2020_reference&quot;,&quot;label&quot;:&quot;Al-Nahari_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_daclatasvir/Daclatasvir_AlNahari2020_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Daclatasvir_Osawa2018_reference&quot;,&quot;label&quot;:&quot;Osawa_2018_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_daclatasvir/Daclatasvir_Osawa2018_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Daclatasvir_Wang2018_dcv_estimate_rse&quot;,&quot;label&quot;:&quot;Wang_2018_dcv_estimate_rse&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_daclatasvir/Daclatasvir_Wang2018_dcv_estimate_rse.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 # daclatasvir
 
@@ -21,29 +21,31 @@ Daclatasvir is an antiviral drug used to treat chronic hepatitis C, including in
 
 | molecule | role | molar mass (g/mol) | formula | source | PubChem | records |
 |---|---|---|---|---|---|---|
-| daclatasvir | parent | 738.89 | C40H50N8O6 | DrugBank | [25154714](https://pubchem.ncbi.nlm.nih.gov/compound/25154714) | Al-Nahari_2020, Osawa_2018 |
+| daclatasvir | parent | 738.89 | C40H50N8O6 | DrugBank | [25154714](https://pubchem.ncbi.nlm.nih.gov/compound/25154714) | Al-Nahari_2020, Osawa_2018, Wang_2018 |
 
 ## Extraction summary
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 13:00 | 4:21 | 1/1/1 | 1/0/2 | 0/0/0 | 237,797/14,704 | einfracz / qwen3.8-27b | 10 | 3/7 | 9/1 | 0 |
+| 2026-10-07 15:39 | 6:36 | 2/2/2 | 1/0/1 | 0/0/0 | 299,226/28,787 | ollama / glm-5.3-flash | 10 | 3/7 | 9/1 | 0 |
 
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> | [Al-Nahari_2020_reference](drugs/drug_daclatasvir/Daclatasvir_AlNahari2020_reference.md) | ▶ model + simulator | 1-compartment, oral | 4 | Al-Nahari MM et al., Pharmacokinetics of daclatasvir in Egyp…, Antiviral therapy (2020) | [10.3851/IMP3357](https://doi.org/10.3851/IMP3357) |
-| <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: C5 dimensioned parameter(s) without a unit: Q49 — no SI value to build from</sub><br><sub>route_to: `human_review`</sub> | [Osawa_2018_reference](drugs/drug_daclatasvir/Daclatasvir_Osawa2018_reference.md) | — | 1-compartment (no model) | 3 | Osawa M et al., Population Pharmacokinetic Analysis for…, Journal of clinical pharmac… (2018) | [10.1002/jcph.1274](https://doi.org/10.1002/jcph.1274) |
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Cressey_2021_reference](drugs/drug_daclatasvir/Daclatasvir_Cressey2021_reference.md) | — | 1-compartment (no model) | 0 | Cressey TR et al., Effective and Safe Daclatasvir Drug Exp…, The Pediatric infectious di… (2021) | [10.1097/INF.0000000000003282](https://doi.org/10.1097/INF.0000000000003282) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>STALE — current validate: extracted</sub><br><sub>route_to: `engineer_replication`</sub> | [Osawa_2018_reference](drugs/drug_daclatasvir/Daclatasvir_Osawa2018_reference.md) | ▶ model + simulator | 1-compartment, oral | 3 | Osawa M et al., Population Pharmacokinetic Analysis for…, Journal of clinical pharmac… (2018) | [10.1002/jcph.1274](https://doi.org/10.1002/jcph.1274) |
+| <span class="pk-badge pk-badge--green">extracted</span> | [Wang_2018_dcv_estimate_rse](drugs/drug_daclatasvir/Daclatasvir_Wang2018_dcv_estimate_rse.md) | ▶ model + simulator | 2-compartment, oral | 5 | Wang HC et al., Integrated pharmacokinetic/viral dynami…, Acta pharmacologica Sinica (2018) | [10.1038/aps.2017.84](https://doi.org/10.1038/aps.2017.84) |
+| <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: C6_cl_magnitude failed (ratio None)</sub><br><sub>route_to: `human_review`</sub> | [Wang_2018_asv_estimate_rse](drugs/drug_daclatasvir/Daclatasvir_Wang2018_asv_estimate_rse.md) | — | 2-compartment (no model) | 7 | Wang HC et al., Integrated pharmacokinetic/viral dynami…, Acta pharmacologica Sinica (2018) | [10.1038/aps.2017.84](https://doi.org/10.1038/aps.2017.84) |
+| <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub><br><sub>route_to: `human_review`</sub> | [Wang_2018_estimate_rse](drugs/drug_daclatasvir/Daclatasvir_Wang2018_estimate_rse.md) | — | 1-compartment (no model) | 2 | Wang HC et al., Integrated pharmacokinetic/viral dynami…, Acta pharmacologica Sinica (2018) | [10.1038/aps.2017.84](https://doi.org/10.1038/aps.2017.84) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>STALE — current validate: rejected</sub><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Al-Nahari_2020_reference](drugs/drug_daclatasvir/Daclatasvir_AlNahari2020_reference.md) | — | 1-compartment (no model) | 6 | Al-Nahari MM et al., Pharmacokinetics of daclatasvir in Egyp…, Antiviral therapy (2020) | [10.3851/IMP3357](https://doi.org/10.3851/IMP3357) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>STALE — current validate: rejected</sub><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Cressey_2021_reference](drugs/drug_daclatasvir/Daclatasvir_Cressey2021_reference.md) | — | 1-compartment (no model) | 0 | Cressey TR et al., Effective and Safe Daclatasvir Drug Exp…, The Pediatric infectious di… (2021) | [10.1097/INF.0000000000003282](https://doi.org/10.1097/INF.0000000000003282) |
 
 ## Pharmacodynamics (PD)
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Wang_2015_EC50](drugs/drug_daclatasvir/pd_Wang_2015_EC50.md) | HCV replication / viral RNA ← daclatasvir · direct sigmoid Emax (Hill) effect | — | Wang NY et al., Discovery of imidazo[2,1-b]thiazole HCV…, Journal of medicinal chemis… (2015) | [10.1021/jm501934n](https://doi.org/10.1021/jm501934n) |
-| <span class="pk-badge pk-badge--orange">needs review</span> | [Ueno_2018_SVR12](drugs/drug_daclatasvir/pd_Ueno_2018_SVR12.md) | sustained virologic response at 12 weeks after treatment ← daclatasvir · categorical (graded) response model | — | Ueno T et al., Exposure-Response (Efficacy) Analysis o…, Journal of clinical pharmac… (2018) | [10.1002/jcph.1262](https://doi.org/10.1002/jcph.1262) |
-| <span class="pk-badge pk-badge--orange">needs review</span> | [Ueno_2019_SVR12](drugs/drug_daclatasvir/pd_Ueno_2019_SVR12.md) | sustained virologic response at posttreatment week 12 ← daclatasvir · categorical (graded) response model | — | Ueno T et al., Exposure-Response Analysis for Efficacy…, Clinical pharmacology in dr… (2019) | [10.1002/cpdd.646](https://doi.org/10.1002/cpdd.646) |
+| <span class="pk-badge pk-badge--green">extracted</span> | [Ueno_2019_SVR12](drugs/drug_daclatasvir/pd_Ueno_2019_SVR12.md) | sustained virologic response at posttreatment week 12 ← daclatasvir · direct linear effect | — | Ueno T et al., Exposure-Response Analysis for Efficacy…, Clinical pharmacology in dr… (2019) | [10.1002/cpdd.646](https://doi.org/10.1002/cpdd.646) |
+| <span class="pk-badge pk-badge--orange">needs review</span> | [Ueno_2018_SVR12](drugs/drug_daclatasvir/pd_Ueno_2018_SVR12.md) | sustained virologic response at 12 weeks after treatment (SVR12) ← daclatasvir (with asunaprevir interaction) · direct linear effect | model (no simulator) | Ueno T et al., Exposure-Response (Efficacy) Analysis o…, Journal of clinical pharmac… (2018) | [10.1002/jcph.1262](https://doi.org/10.1002/jcph.1262) |
 
 ## ADME sites
 
@@ -75,8 +77,8 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 ## Coverage
 
 - **PubMed hits:** 38 matched, 19 returned
-- **screened:** 3  ·  **relevant:** 3
-- **records:** 3  ·  extracted 1  ·  needs_review 1  ·  rejected 1  ·  stale 0
+- **screened:** 4  ·  **relevant:** 4
+- **records:** 6  ·  extracted 2  ·  needs_review 2  ·  rejected 2  ·  stale 3
 - **scholar-agent fallback query used:** not captured
 
 ## Full text wanted
@@ -85,27 +87,30 @@ _3 paper(s) judged relevant from the abstract, with no full text on disk — pay
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Al-Nahari_2020.pdf` | Al-Nahari MM et al., Pharmacokinetics of daclatasvir in Egyp…, Antiviral therapy (2020) | popPK | 10 | [10.3851/IMP3357](https://doi.org/10.3851/IMP3357) | [32367815](https://pubmed.ncbi.nlm.nih.gov/32367815) | The paper reports quantitative NCA and PopPK parameters (CL/F, V/F, T1/2, absorption rate) for daclatasvir in adolescents, with specific values listed in the abstract. |
-| `Osawa_2019.pdf` | Osawa M et al., Population Pharmacokinetic Analysis of…, Clinical pharmacology in dr… (2019) | popPK | 10 | [10.1002/cpdd.649](https://doi.org/10.1002/cpdd.649) | [30629858](https://pubmed.ncbi.nlm.nih.gov/30629858) | The paper describes a population PK analysis for daclatasvir in humans, but the specific numeric parameter values (clearance, volume, etc.) are not present in the provided abstract evidence. |
-| `Cressey_2021.pdf` | Cressey TR et al., Effective and Safe Daclatasvir Drug Exp…, The Pediatric infectious di… (2021) | popPK | 8 | [10.1097/INF.0000000000003282](https://doi.org/10.1097/INF.0000000000003282) | [34321444](https://pubmed.ncbi.nlm.nih.gov/34321444) | The paper reports quantitative PK summary statistics (AUC, Cmax, Cmin) and describes a population PK model for daclatasvir in humans, although specific model parameters (CL, V) are not explicitly listed in the provided text. |
+| `Al-Nahari_2020.pdf` | Al-Nahari MM et al., Pharmacokinetics of daclatasvir in Egyp…, Antiviral therapy (2020) | popPK | 10 | [10.3851/IMP3357](https://doi.org/10.3851/IMP3357) | [32367815](https://pubmed.ncbi.nlm.nih.gov/32367815) | Population PK model of daclatasvir with full numeric parameters (K0, V/F, CL/F) reported directly in the abstract. |
+| `Cressey_2021.pdf` | Cressey TR et al., Effective and Safe Daclatasvir Drug Exp…, The Pediatric infectious di… (2021) | popPK | 10 | [10.1097/INF.0000000000003282](https://doi.org/10.1097/INF.0000000000003282) | [34321444](https://pubmed.ncbi.nlm.nih.gov/34321444) | Population PK model of daclatasvir in HCV-infected adolescents with exposure metrics (AUC, Cmax, Cmin) reported, but full CL/V parameter values may be in supplementary material not provided. |
+| `Osawa_2019.pdf` | Osawa M et al., Population Pharmacokinetic Analysis of…, Clinical pharmacology in dr… (2019) | popPK | 10 | [10.1002/cpdd.649](https://doi.org/10.1002/cpdd.649) | [30629858](https://pubmed.ncbi.nlm.nih.gov/30629858) | Population PK model for daclatasvir in HCV patients is described, but no numeric parameter values (CL, V, etc.) appear in the evidence. |
 
-<sub>queue written 2026-10-07T12:57:24.566355+00:00</sub>
+<sub>queue written 2026-10-07T15:33:53.910156+00:00</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Chan_2017 | irrelevant | 0 | 0 | The provided evidence consists entirely of unreadable placeholder characters and contains no text, data, or context regarding daclatasvir pharmacokinetics. |
-| popPK | Gao_2013 | irrelevant | 0 | 0 | The paper focuses on antiviral activity, mechanism of action, and resistance of HCV NS5A inhibitors, with no report of pharmacokinetic disposition parameters for daclatasvir. |
-| popPK | McPhee_2012 | irrelevant | 0 | 0 | The paper focuses on the preclinical profile of asunaprevir, with daclatasvir mentioned only as a co-administered comparator agent, and no PK parameters for daclatasvir are reported. |
-| popPK | Nasr_2022 | irrelevant | 0 | 0 | The paper is an in-vitro medicinal chemistry study focusing on the synthesis of HCV NS5B inhibitors, and daclatasvir is only mentioned as a reference compound, not as the subject of any pharmacokinetic analysis. |
-| popPK | Osawa_2019 | relevant | 10 | 0 | The paper describes a population PK analysis for daclatasvir in humans, but the specific numeric parameter values (clearance, volume, etc.) are not present in the provided abstract evidence. |
-| popPK | Smolders_2017 | irrelevant | 2 | 4 | The study focuses on metformin pharmacokinetics; daclatasvir is a co-administered inhibitor with only sparse non-compartmental parameters (AUC, Cmax) reported, lacking a population model or detailed clearance/volume parameters. |
-| popPK | Ueno_2019 | irrelevant | 1 | 0 | The paper is an exposure-response (efficacy) analysis that models SVR12 rates as a function of exposure, but it does not report quantitative pharmacokinetic parameters (such as clearance, volume, or half-life) for daclatasvir. |
-| popPK | Wang_2015 | irrelevant | 0 | 0 | The paper focuses on the discovery and in-vitro synergy of HCV NS4B inhibitors, with no pharmacokinetic data for daclatasvir. |
-| popPK | Wisløff_2018 | irrelevant | 0 | 0 | The paper is a health economic evaluation and cost-effectiveness analysis that models drug efficacy and costs, but it does not contain any pharmacokinetic data or disposition parameters for daclatasvir. |
-| popPK | Zappulo_2020 | irrelevant | 1 | 0 | This is a narrative review of efficacy and safety with no specific quantitative population PK parameter values (CL, V, etc.) for daclatasvir provided in the evidence. |
-| popPK | Zhu_2018 | irrelevant | 1 | 0 | The study models the pharmacokinetics of asunaprevir, not daclatasvir, which is only mentioned as a co-administered drug in the regimen. |
+| popPK | Chan_2017 | irrelevant | 3 | 0 | The evidence contains only garbled plot symbols with no readable text, tables, or numeric PK parameters for daclatasvir; any values would live in figures/supplements not provided. |
+| popPK | Gao_2013 | irrelevant | 0 | 0 | This is a review of antiviral activity and resistance mechanisms of NS5A inhibitors with no pharmacokinetic parameters for daclatasvir. |
+| popPK | Garimella_2014 | irrelevant | 3 | 2 | Daclatasvir is the perpetrator drug; PK parameters (AUC ratios) are reported for methadone/buprenorphine, not for DCV itself, and no DCV disposition parameters are given. |
+| popPK | McPhee_2012 | irrelevant | 0 | 0 | Paper is about asunaprevir's preclinical PK; daclatasvir is only mentioned as a co-administered comparator with no PK parameters for it. |
+| popPK | Nasr_2022 | irrelevant | 0 | 0 | This is a medicinal chemistry paper on synthesis of NS5B inhibitors; daclatasvir is only mentioned as a keyword, with no PK parameters. |
+| popPK | Osawa_2019 | relevant | 10 | 3 | Population PK model for daclatasvir in HCV patients is described, but no numeric parameter values (CL, V, etc.) appear in the evidence. |
+| popPK | Osawa_2019_2 | irrelevant | 2 | 1 | This is an exposure-response safety analysis where daclatasvir is only a co-administered drug; the PopPK models and numeric parameters are for asunaprevir and beclabuvir, with no daclatasvir disposition parameters reported. |
+| popPK | Smolders_2017 | irrelevant | 3 | 5 | Daclatasvir is the co-administered OCT-inhibitor probe while metformin is the subject drug; only a few NCA daclatasvir values (AUC0-24 18.38, Cmax 1.85, C24 0.30, T1/2 11.23 h) appear, with no compartmental/population-PK model for daclatasvir. |
+| popPK | Ueno_2018 | irrelevant | 5 | 2 | This is an exposure-response (efficacy) analysis; DCV popPK models are only referenced (parameters in supplementary material/manuscript in preparation) and no DCV CL/V or popPK parameter values appear in the evidence. |
+| popPK | Ueno_2019 | irrelevant | 3 | 2 | This is an exposure-response efficacy analysis using logistic regression on exposure metrics; no PK disposition parameters (CL, V, Q, ka) for daclatasvir are reported, and any exposure values are not numerically present. |
+| popPK | Wang_2015 | irrelevant | 0 | 0 | This is an in-vitro antiviral drug discovery/synergy study; daclatasvir is only a co-administered comparator with no PK parameters reported. |
+| popPK | Wisløff_2018 | irrelevant | 0 | 0 | This is a health-economic cost-effectiveness evaluation of hepatitis C treatments; daclatasvir appears only as a comparator with prices/efficacy ratios, no PK parameters. |
+| popPK | Zappulo_2020 | irrelevant | 2 | 0 | A narrative review discussing PK qualitatively with no numeric daclatasvir disposition parameters present in the evidence. |
+| popPK | Zhu_2018 | irrelevant | 1 | 0 | This is a population PK study of asunaprevir; daclatasvir is only a co-administered drug in the DUAL/QUAD regimens, with no DCV PK parameters reported. |
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-10-07 12:57 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-10-07 15:34 UTC</sub>

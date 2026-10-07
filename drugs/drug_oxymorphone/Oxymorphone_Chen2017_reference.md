@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N02A&quot;,&quot;href&quot;:&quot;atc/N02A.md&quot;},{&quot;label&quot;:&quot;oxymorphone&quot;,&quot;href&quot;:&quot;drugs/drug_oxymorphone/&quot;},{&quot;label&quot;:&quot;Chen_2017 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Oxymorphone_Noh2017_reference&quot;,&quot;label&quot;:&quot;Noh_2017_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_oxymorphone/Oxymorphone_Noh2017_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Oxymorphone_Sadiq2013_bootstrap_resampling&quot;,&quot;label&quot;:&quot;Sadiq_2013_bootstrap_resampling&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_oxymorphone/Oxymorphone_Sadiq2013_bootstrap_resampling.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Oxymorphone_Sadiq2013_original_data_set&quot;,&quot;label&quot;:&quot;Sadiq_2013_original_data_set&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_oxymorphone/Oxymorphone_Sadiq2013_original_data_set.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Oxymorphone_Svensson2017_reference&quot;,&quot;label&quot;:&quot;Svensson_2017_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_oxymorphone/Oxymorphone_Svensson2017_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Oxymorphone_Noh2017_reference&quot;,&quot;label&quot;:&quot;Noh_2017_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_oxymorphone/Oxymorphone_Noh2017_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Oxymorphone_Sadiq2013_reference&quot;,&quot;label&quot;:&quot;Sadiq_2013_bootstrap_resampling&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_oxymorphone/Oxymorphone_Sadiq2013_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Oxymorphone_Sadiq2013_reference&quot;,&quot;label&quot;:&quot;Sadiq_2013_original_data_set&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_oxymorphone/Oxymorphone_Sadiq2013_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Oxymorphone_Svensson2017_reference&quot;,&quot;label&quot;:&quot;Svensson_2017_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_oxymorphone/Oxymorphone_Svensson2017_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # oxymorphone — `Oxymorphone_Chen2017_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -17,40 +17,36 @@
 
 **Model:** No model was generated from this record.
 
-> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+### Reviewer guidance
+
+**Oxymorphone pharmacokinetic parameters are implausibly small, indicating a unit extraction error for the two-compartment model.**
+
+The central volume of distribution is listed as 215.0 mL and the peripheral volume as 402.0 mL. The total clearance is 10.2 mL/min and the intercompartmental clearance is 5.56 mL/min. These magnitudes are physiologically unrealistic for a drug like oxymorphone. Extracted — oxymorphone: CL 10.2 mL/min, V1 215 mL, V2 402 mL, Q 5.56 mL/min.
+
+<sub>reviewed by qwen3.8-27b</sub>
+
+> ⚠️ **STALE** — review status `rejected` (reviewed 2026-10-07 06:17:58.897130+00:00) predates the upstream re-run (2026-10-07 14:58:53.128137+00:00). Current validate status: `rejected`.
 
 ## Citation
 Chen X et al., Revisiting atenolol as a low passive pe…, Fluids and barriers of the… (2017)
   ·  DOI: [10.1186/s12987-017-0078-x](https://doi.org/10.1186/s12987-017-0078-x)
 
 ## Model component
-<dbs-pgx drug="oxymorphone" model-id="Oxymorphone_Chen2017_reference" status="rejected" stale="false" population="" measured-compound="oxymorphone" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<dbs-pgx drug="oxymorphone" model-id="Oxymorphone_Chen2017_reference" status="rejected" stale="true" population="" measured-compound="" parameterization="" topology=""></dbs-pgx>
 
-**Model structure:** 2-compartment; no model was built for this record.  
-**Parameters:** 4 extracted.
+**Model structure:** —; no model was built for this record.  
+**Parameters:** 0 extracted.
 
-**Parameterization:** mechanistic.
+**Parameterization:** not captured.
 
 ## Parameters
 > ⚠️ This record is not accepted (current status `rejected`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
 
-| label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
-|---|---|---|---|---|---|---|---|---|---|---|
-| CL | `Q22` · CL | 10.2 | mL/min | 1.7e-07 | L/h | not captured | review (0.7) | Chen_2017:review | — | not captured |
-| V1 | `Q63` · V1 | 215.0 | mL | 0.000215 | L | not captured | review (0.7) | Chen_2017:review | — | not captured |
-| V2 | `Q64` · V2 | 402.0 | mL | 0.00040199999999999996 | L | not captured | review (0.7) | Chen_2017:review | — | not captured |
-| Q | `Q30` · Q | 5.56 | mL/min | 9.266666666666665e-08 | L/h | not captured | review (0.7) | Chen_2017:review | — | not captured |
-
-<details class="legend">
-<summary>Column legend — what each column means</summary>
-<table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>label (paper)</code></td><td>the row or statistic label exactly as printed in the paper (label_verbatim) — never normalised, so it can be found in the PDF.</td></tr><tr><td><code>Q-code · name</code></td><td>the ontology parameter this label was matched to (Q22 = clearance, Q27 = CL/F, Q49 = ka, Q57 = half-life, …) and its canonical name. The Q-code, not the label, is what scoring and cross-paper merging use.</td></tr><tr><td><code>value</code></td><td>the estimate as reported in the paper.</td></tr><tr><td><code>unit</code></td><td>the unit as printed (unit_verbatim).</td></tr><tr><td><code>value_si</code></td><td>the value converted to the canonical unit. Empty when no conversion was possible — usually an unparseable or missing unit.</td></tr><tr><td><code>unit_canonical</code></td><td>the canonical unit for that Q-code, i.e. what value_si is expressed in.</td></tr><tr><td><code>RSE%</code></td><td>relative standard error of the estimate, when the paper reports one.</td></tr><tr><td><code>link</code></td><td>how the label was matched to the Q-code, with confidence. exact / boundary / fuzzy / tv_prefix / caption_compartment / special_case are deterministic string matches; llm, llm_confirmed, llm_corrected involved the model; review and review_gapfill come from the secondary review tier, the latter filling a parameter the primary extraction missed; boundary_relink is a corrected match.</td></tr><tr><td><code>source</code></td><td>where in the paper the number came from: colN = that column of the located table, other_prose = running text, review = the secondary tier, pgx = a pharmacogenomic record.</td></tr><tr><td><code>covariates</code></td><td>covariate effects attached to this parameter (e.g. weight on CL).</td></tr><tr><td><code>IIV</code></td><td>inter-individual variability reported for this parameter.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>the field is absent from the KB artifact — nothing was recorded. This is NOT the same as zero or empty: the value is unknown, not measured to be nothing.</td></tr><tr><td><code>—</code></td><td>deliberately not shown: the column does not apply to this row.</td></tr><tr><td><code>not verified</code></td><td>the record is not in an accepted state (see the badge and the note above the table); the numbers are shown as extracted, not endorsed.</td></tr></tbody></table>
-</details>
+_No resolved parameters._
 
 ## Departures & gaps
 
-**Interpretation flags:**
-- built from REVIEW reference values (Chen_2017) — secondary source
-- volume reported by review
+_None recorded._
 
 ## Validation
 
@@ -94,4 +90,4 @@ _No web simulator for this record: its structure has no shared WebAssembly templ
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 05:52 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 14:58 UTC</sub>

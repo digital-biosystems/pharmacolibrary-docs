@@ -1,8 +1,8 @@
-<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01C&quot;,&quot;href&quot;:&quot;atc/L01C.md&quot;},{&quot;label&quot;:&quot;topotecan&quot;,&quot;href&quot;:&quot;drugs/drug_topotecan/&quot;},{&quot;label&quot;:&quot;V\u00e9lez_2010 \u00b7 PD Immature B-cell levels&quot;}]"></div>
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01C&quot;,&quot;href&quot;:&quot;atc/L01C.md&quot;},{&quot;label&quot;:&quot;topotecan&quot;,&quot;href&quot;:&quot;drugs/drug_topotecan/&quot;},{&quot;label&quot;:&quot;V\u00e9lez_2010 \u00b7 PD immature B-lymphocytes&quot;}]"></div>
 <div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Topotecan_Lger2004_reference&quot;,&quot;label&quot;:&quot;L\u00e9ger_2004_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_topotecan/Topotecan_Lger2004_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# Immature B-cell levels — PD  <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
+# immature B-lymphocytes — PD  <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
 
 <details class="pk-legend"><summary>What the PGx badges mean — evidence, and whether a model runs</summary><table><tbody><tr><td><span class="pk-badge pk-badge--green">quantitative</span></td><td>the paper gives the effect of each phenotype (or genotype) on a named model parameter — a θ per category.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">qualitative</span></td><td>the paper links the gene to the drug but states no effect size on a model parameter, so it changes no model.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">guideline estimate</span></td><td>the effect comes from a CPIC / DPWG dosing guideline, not from this paper's numbers.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">safety allele</span></td><td>a risk allele for an adverse reaction (an HLA type, G6PD deficiency …): it changes no PK/PD parameter.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>the extraction is incomplete or inconsistent.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted.</td></tr><tr><td><span class="pk-badge pk-badge--green">▶ simulatable</span></td><td>the paper's popPK model runs per phenotype in the browser (Simulation tab); its PGx Modelica model is under Models.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">model only</span></td><td>a PGx Modelica model exists but has no in-browser simulator.</td></tr></tbody></table></details>
 
@@ -16,15 +16,19 @@
 
 ## What this record describes
 
-**As extracted:** Topotecan (concentrations from the PK model of Gallo_2000) drives Immature B-cell levels (the model form was not identified).
+**As extracted:** Topotecan (concentrations from the PK model of Gallo_2000) drives immature B-lymphocytes: indirect response — drug inhibits the production of immature B-lymphocytes.
 
 **Model:** No model was generated from this record.
 
+> Topotecan is identified as the PK driver for measured immature B-cell levels, but the available material does not specify the mechanism or any potency or rate values.
+>
+> <sub>in the paper's terms — summarised by gpt-6-luna from the paper's text; not checked by a person</sub>
+
 - **paper:** `Vélez_2010`
-- **model family:** `unknown`
+- **model family:** `indirect_response_i`
 - **driver:** `cited_pk`
 - **tier:** population
-- **effect:** unknown/unknown
+- **effect:** inhibition/unknown
 
 ## Citation
 Vélez de Mendizábal N et al., A semi-physiological-based pharmacokine…, Pharmaceutical research (2010)

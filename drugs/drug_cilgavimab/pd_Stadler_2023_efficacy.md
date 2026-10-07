@@ -1,7 +1,8 @@
-<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;J06B&quot;,&quot;href&quot;:&quot;atc/J06B.md&quot;},{&quot;label&quot;:&quot;Cilgavimab&quot;,&quot;href&quot;:&quot;drugs/drug_cilgavimab/&quot;},{&quot;label&quot;:&quot;Stadler_2023 \u00b7 PD protection from symptomatic SARS-CoV-2 infection&quot;}]"></div>
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;J06B&quot;,&quot;href&quot;:&quot;atc/J06B.md&quot;},{&quot;label&quot;:&quot;Cilgavimab&quot;,&quot;href&quot;:&quot;drugs/drug_cilgavimab/&quot;},{&quot;label&quot;:&quot;Stadler_2023 \u00b7 PD Protection from symptomatic COVID-19 infection&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Cilgavimab_Li2023_reference&quot;,&quot;label&quot;:&quot;Li_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cilgavimab/Cilgavimab_Li2023_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Cilgavimab_Li2025_reference&quot;,&quot;label&quot;:&quot;Li_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cilgavimab/Cilgavimab_Li2025_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# protection from symptomatic SARS-CoV-2 infection — PD  <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from keyword rules on the title and abstract — no LLM answer yet).">in vitro</span>
+# Protection from symptomatic COVID-19 infection — PD  <span class="pk-badge pk-badge--red">rejected</span>
 
 <details class="pk-legend"><summary>What the PGx badges mean — evidence, and whether a model runs</summary><table><tbody><tr><td><span class="pk-badge pk-badge--green">quantitative</span></td><td>the paper gives the effect of each phenotype (or genotype) on a named model parameter — a θ per category.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">qualitative</span></td><td>the paper links the gene to the drug but states no effect size on a model parameter, so it changes no model.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">guideline estimate</span></td><td>the effect comes from a CPIC / DPWG dosing guideline, not from this paper's numbers.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">safety allele</span></td><td>a risk allele for an adverse reaction (an HLA type, G6PD deficiency …): it changes no PK/PD parameter.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>the extraction is incomplete or inconsistent.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted.</td></tr><tr><td><span class="pk-badge pk-badge--green">▶ simulatable</span></td><td>the paper's popPK model runs per phenotype in the browser (Simulation tab); its PGx Modelica model is under Models.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">model only</span></td><td>a PGx Modelica model exists but has no in-browser simulator.</td></tr></tbody></table></details>
 
@@ -11,19 +12,21 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
-> **Species: in vitro.** This record comes from an in-vitro study (cells, tissue or microsomes), not from people. The values, the model and its simulation are shown as the paper reports them — they describe that system, not human pharmacology (read from keyword rules on the title and abstract — no LLM answer yet).
-
 ## What this record describes
 
-**As extracted:** Cilgavimab/tixagevimab drives protection from symptomatic SARS-CoV-2 infection: direct Emax (saturable) effect.
+**As extracted:** Cilgavimab/tixagevimab (total antibody concentration as fold of in vitro IC50) drives Protection from symptomatic COVID-19 infection: direct sigmoid Emax (Hill) effect.
 
 **Model:** No model was generated from this record.
 
+> The paper models the relationship between the concentration of cilgavimab/tixagevimab and protection from symptomatic SARS-CoV-2 infection using a logistic dose-response function where a concentration of 96.2-fold the in vitro IC50 (0.41 mg/L) is associated with 50% efficacy and a slope parameter (k) of 1.3 determines the steepness of the relationship. The mechanism is described as a correlate of protection where neutralizing antibody concentration predicts efficacy, rather than a specific kinetic model for drug action on response production or elimination.
+>
+> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+
 - **paper:** `Stadler_2023`
-- **model family:** `emax`
+- **model family:** `sigmoid_emax`
 - **driver:** `not_resolved`
 - **tier:** descriptive
-- **effect:** inhibition/proportional
+- **effect:** inhibition/unknown
 
 ## Citation
 Stadler E et al., Monoclonal antibody levels and protecti…, Nature communications (2023)
@@ -32,8 +35,8 @@ Stadler E et al., Monoclonal antibody levels and protecti…, Nature communicati
 ## Parameters
 | role | label (paper) | Q-code · name | value | unit | value_si | link | source |
 |---|---|---|---|---|---|---|---|
-| PD (effect) | concentration that gives 50% efficacy | `Q322` · not captured | 96.2 | fold in vitro IC50 | not captured | llm (not captured) | Stadler_2023:pdv3 |
-| PD (effect) | slope parameter determining the steepness of the relationship | `Q335` · not captured | 1.3 | not captured | not captured | llm (not captured) | Stadler_2023:pdv3 |
+| PD (effect) | 50% efficacy concentration (c50) | `Q321` · not captured | 96.2 | fold in vitro IC50 | not captured | llm (not captured) | Stadler_2023:pdv3 |
+| PD (effect) | slope parameter | `Q325` · not captured | 1.3 | not captured | not captured | llm (not captured) | Stadler_2023:pdv3 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

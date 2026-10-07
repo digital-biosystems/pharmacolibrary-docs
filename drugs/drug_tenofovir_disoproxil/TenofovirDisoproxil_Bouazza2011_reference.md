@@ -4,7 +4,7 @@
 
 # tenofovir disoproxil — `TenofovirDisoproxil_Bouazza2011_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span>
+> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -12,9 +12,17 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
-**Model:** No model was generated from this record.
+**Model:** A model was built but held back: a core parameter had no value, so it is not published or simulated.
 
-> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+### Reviewer guidance
+
+**The paper reports none of the model's key parameters.**
+
+No clearance, volume or rate constant of the model is reported in it. Only the abstract was available, so reported summary statistics stand in for a fitted model. No parameter values were extracted.
+
+<sub>reviewed by rule template (no LLM)</sub>
+
+> ⚠️ **STALE** — review status `rejected` (reviewed 2026-10-07 14:42:50.820441+00:00) predates the upstream re-run (2026-10-07 16:32:20.748493+00:00). Current validate status: `extracted`.
 
 > **Dose compound ≠ measured compound:** dosed `tenofovir disoproxil fumarate`, measured `tenofovir`.
 
@@ -23,29 +31,39 @@ Bouazza N et al., Population pharmacokinetics of tenofovi…, Journal of acquire
   ·  DOI: [10.1097/QAI.0b013e3182302ea8](https://doi.org/10.1097/QAI.0b013e3182302ea8)
 
 ## Model component
-<dbs-pgx drug="tenofovir disoproxil" model-id="TenofovirDisoproxil_Bouazza2011_reference" status="rejected" stale="false" population="HIV-1-infected pediatric patients" measured-compound="tenofovir" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<dbs-pgx drug="tenofovir disoproxil" model-id="TenofovirDisoproxil_Bouazza2011_reference" status="extracted" stale="true" population="HIV-1-infected pediatric patients" measured-compound="tenofovir" parameterization="apparent" topology="2C"></dbs-pgx>
 
-**Model structure:** 1-compartment; no model was built for this record.  
-**Parameters:** 0 extracted.
+**Model structure:** 2-compartment, oral mammillary model — template `PK_2C_enteral`.  
+**Parameters:** 5 extracted.
 
-**Parameterization:** mechanistic.
+**Parameterization:** CLm/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
 ## Parameters
-> ⚠️ This record is not accepted (current status `rejected`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
+| label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
+|---|---|---|---|---|---|---|---|---|---|---|
+| apparent clearance | `Q351` · CLm/F | 59.8 | L·h⁻¹ | 1.661111111111111e-05 | [l] / [h] | not captured | exact (1.0) | Bouazza_2011:abstract | — | not captured |
+| central volume of distribution | `Q63` · V1 | 386 | L | 0.386 | [l] | not captured | boundary_compartment (0.9) | Bouazza_2011:abstract | — | not captured |
+| peripheral volume of distribution | `Q64` · V2 | 666 | L | 0.666 | [l] | not captured | boundary_compartment (0.9) | Bouazza_2011:abstract | — | not captured |
+| intercompartmental clearance | `Q30` · Q | 92.8 | L·h⁻¹ | 2.5777777777777775e-05 | [l] / [h] | not captured | exact (1.0) | Bouazza_2011:abstract | — | not captured |
+| absorption rate constant | `Q49` · kabs | 0.43 | h⁻¹ | 0.00011944444444444444 | [1] / [h] | not captured | exact (1.0) | Bouazza_2011:abstract | — | not captured |
 
-_No resolved parameters._
+<details class="legend">
+<summary>Column legend — what each column means</summary>
+<table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>label (paper)</code></td><td>the row or statistic label exactly as printed in the paper (label_verbatim) — never normalised, so it can be found in the PDF.</td></tr><tr><td><code>Q-code · name</code></td><td>the ontology parameter this label was matched to (Q22 = clearance, Q27 = CL/F, Q49 = ka, Q57 = half-life, …) and its canonical name. The Q-code, not the label, is what scoring and cross-paper merging use.</td></tr><tr><td><code>value</code></td><td>the estimate as reported in the paper.</td></tr><tr><td><code>unit</code></td><td>the unit as printed (unit_verbatim).</td></tr><tr><td><code>value_si</code></td><td>the value converted to the canonical unit. Empty when no conversion was possible — usually an unparseable or missing unit.</td></tr><tr><td><code>unit_canonical</code></td><td>the canonical unit for that Q-code, i.e. what value_si is expressed in.</td></tr><tr><td><code>RSE%</code></td><td>relative standard error of the estimate, when the paper reports one.</td></tr><tr><td><code>link</code></td><td>how the label was matched to the Q-code, with confidence. exact / boundary / fuzzy / tv_prefix / caption_compartment / special_case are deterministic string matches; llm, llm_confirmed, llm_corrected involved the model; review and review_gapfill come from the secondary review tier, the latter filling a parameter the primary extraction missed; boundary_relink is a corrected match.</td></tr><tr><td><code>source</code></td><td>where in the paper the number came from: colN = that column of the located table, other_prose = running text, review = the secondary tier, pgx = a pharmacogenomic record.</td></tr><tr><td><code>covariates</code></td><td>covariate effects attached to this parameter (e.g. weight on CL).</td></tr><tr><td><code>IIV</code></td><td>inter-individual variability reported for this parameter.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>the field is absent from the KB artifact — nothing was recorded. This is NOT the same as zero or empty: the value is unknown, not measured to be nothing.</td></tr><tr><td><code>—</code></td><td>deliberately not shown: the column does not apply to this row.</td></tr><tr><td><code>not verified</code></td><td>the record is not in an accepted state (see the badge and the note above the table); the numbers are shown as extracted, not endorsed.</td></tr></tbody></table>
+</details>
 
 ## Departures & gaps
 
 **Interpretation flags:**
-- apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=tenofovir
-- template fit: none — only the metabolite is modelled — no parent compartment
+- metabolite tenofovir: Q27→Q351 — only the metabolite is measured and fm is not identifiable, so its CL/V are apparent (fm-divided)
+- apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=tenofovir
+- template fit: PK_3M_9C — formed from central; parent 2, metabolites [0]
+- row roles (LLM): model_class=compartmental; 5/5 row label(s) assigned, 5 linked by role; re-tagged tenofovir→parent ×5
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
-- review gap-fill skipped: this record carries no value of its own, and a model assembled entirely from other papers is not this paper's model
+- skipped review gap-fill of TLAG: primary's parameterization (rate-constant / ka-only) does not use it
 
 **Extraction notes:**
-- no GROBID TEI available — transcribed from abstract in Bouazza_2011_metadata.yaml (0 record(s)); values are summary statistics, not a fitted model
-- LLM region Bouazza_2011:abstract: Error code: 429 - {'error': {'message': 'Rate limit exceeded for api_key: 8d79104cac3d0b5a8019d9c3dd60ff02e7a84591fb3552ddb3bbcabd52b31d23. Limit type: max_parallel_requests. Current limit: 4, Remaining: 0. Limit resets at: 2026-10-07 14:52:02 UTC', 'type': 'throttling_error', 'param': None, 'code': '429'}}
+- no GROBID TEI available — transcribed from abstract in Bouazza_2011_metadata.yaml (5 record(s)); values are summary statistics, not a fitted model
 
 ## Validation
 
@@ -53,9 +71,18 @@ _No resolved parameters._
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | fail | not captured | 0 | not captured | not captured | not captured |
-| C0b_disposition_core | fail | not captured | not captured | not captured | not captured | not captured |
+| C0_has_structural_params | pass | not captured | 5 | not captured | not captured | not captured |
+| C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
+| C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
+| C5_dimension_Q30 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Bouazza_2011:abstract'] |
+| C5_dimension_Q351 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Bouazza_2011:abstract'] |
+| C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['Bouazza_2011:abstract'] |
+| C5_dimension_Q63 | pass | [length] ** 3 | not captured | not captured | not captured | ['Bouazza_2011:abstract'] |
+| C5_dimension_Q64 | pass | [length] ** 3 | not captured | not captured | not captured | ['Bouazza_2011:abstract'] |
+| C7_apparent_coherence | pass | not captured | not captured | not captured | not captured | not captured |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
+| C9_phys_window_Q63 | pass | volume within physiological range | 386 L | not captured | not captured | ['Bouazza_2011:abstract'] |
+| C9_phys_window_Q64 | pass | volume within physiological range | 666 L | not captured | not captured | ['Bouazza_2011:abstract'] |
 
 <details class="legend">
 <summary>Check legend — what each column means</summary>
@@ -69,9 +96,19 @@ _No resolved parameters._
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
-## Models
+## Downloadable models
 
-<p>No downloads: this record is <b>rejected</b>, so it is not published as a model. Any archives generated for it before the verdict have been removed — a download outlives the page that explains it.</p>
+<div class="pk-models-grid"><div class="pk-models-table">
+<table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
+</tbody></table>
+<p>No bundles have been generated for this record yet. When the engineer emits them they appear here automatically — this page reports what is on disk and generates nothing itself.</p>
+</div></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
@@ -80,4 +117,4 @@ _No web simulator for this record: its structure has no shared WebAssembly templ
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 14:21 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 16:32 UTC</sub>

@@ -4,7 +4,7 @@
 
 # valaciclovir — `Valaciclovir_Zeng2009_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -14,29 +14,36 @@
 
 **Model:** No model was generated from this record.
 
-> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+### Reviewer guidance
 
-> **Dose compound ≠ measured compound:** dosed `mixed acyclovir and valaciclovir`, measured `acyclovir`.
+**No volume or clearance — not a compartmental population PK model.**
+
+The paper reports no distribution volume and no clearance or elimination rate; it is an exposure/outcome paper. None of the extracted parameters is valaciclovir's own; they describe acyclovir.
+
+<sub>reviewed by rule template (no LLM)</sub>
+
+> ⚠️ **STALE** — review status `rejected` (reviewed 2026-10-07 14:43:02.392415+00:00) predates the upstream re-run (2026-10-07 16:38:07.166993+00:00). Current validate status: `needs_review`.
+
+> **Dose compound ≠ measured compound:** dosed `valaciclovir`, measured `acyclovir`.
 
 ## Citation
 Zeng L et al., Population pharmacokinetics of acyclovi…, Antimicrobial agents and ch… (2009)
   ·  DOI: [10.1128/AAC.01138-08](https://doi.org/10.1128/AAC.01138-08)
 
 ## Model component
-<dbs-pgx drug="valaciclovir" model-id="Valaciclovir_Zeng2009_reference" status="rejected" stale="false" population="children and young people with malignancy" measured-compound="acyclovir" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<dbs-pgx drug="valaciclovir" model-id="Valaciclovir_Zeng2009_reference" status="needs_review" stale="true" population="children and young people with malignancy" measured-compound="acyclovir" parameterization="apparent" topology="1C"></dbs-pgx>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 1 extracted.
 
-**Parameterization:** mechanistic.
+**Parameterization:** CLm/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
 ## Parameters
-> ⚠️ This record is not accepted (current status `rejected`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
+> ⚠️ This record is not accepted (current status `needs_review`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2 | `Q99` · Q2 | 1 | not captured | not captured | not captured | not captured | llm (0.6) | tab_0:row2:col3 | — | not captured |
-| 4 | `Q900` · equation variable | 3 | not captured | not captured | not captured | not captured | llm (0.6) | tab_0:row7:col2, tab_0:row7:col3 | — | not captured |
+| 4 | `Q351` · CLm/F | 3 | L/h | 8.333333333333333e-07 | L/h | not captured | llm (0.6) | tab_0:row7:col2, tab_0:row7:col3 | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -49,8 +56,13 @@ Zeng L et al., Population pharmacokinetics of acyclovi…, Antimicrobial agents 
 - column 'comparison model no.' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
 - column 'model' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
 - dropped value-less row: '1'
-- routed '3' → Q315 (sigma) to residual_error — variability estimate, not a structural parameter
-- apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=acyclovir
+- dropped unlinked row (NIL): '2' — extend the ontology if this is a real PK parameter (source ['tab_0:row2:col3'])
+- dropped unlinked row (NIL): '3' — extend the ontology if this is a real PK parameter (source ['tab_0:row4:col2', 'tab_0:row4:col3'])
+- implicit units: '4' → L/h (from the popPK convention: "The paper does not explicitly state a unit for CL itself; it reports CLCR in liter/h (Fig. 2 caption: 'CL versus CL CR (")
+- metabolite acyclovir: Q22→Q351 — only the metabolite is measured and fm is not identifiable, so its CL/V are apparent (fm-divided)
+- apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=acyclovir
+- template fit: none — only the metabolite is modelled — no parent compartment
+- row roles (LLM): model_class=compartmental; 4/4 row label(s) assigned, 0 linked by role
 
 **Extraction notes:**
 - unparsed cell tab_0:row1:col2 = 'C L ϭ 1 ϫ EXP(IIV); V ϭ 2 ϫ EXP(IIV)'
@@ -66,8 +78,10 @@ Zeng L et al., Population pharmacokinetics of acyclovi…, Antimicrobial agents 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
 | C0_has_structural_params | pass | not captured | 1 | not captured | not captured | not captured |
-| C0b_disposition_core | fail | not captured | not captured | not captured | not captured | not captured |
-| C5_unit_missing_Q99 | fail | [length] ** 3 / [time] | not captured | not captured | not captured | ['tab_0:row2:col3'] |
+| C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
+| C0c_disposition_complete | fail | not captured | not captured | not captured | not captured | not captured |
+| C5_dimension_Q351 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['tab_0:row7:col2', 'tab_0:row7:col3'] |
+| C7_apparent_coherence | pass | not captured | not captured | not captured | not captured | not captured |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
 
 <details class="legend">
@@ -82,9 +96,19 @@ Zeng L et al., Population pharmacokinetics of acyclovi…, Antimicrobial agents 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
-## Models
+## Downloadable models
 
-<p>No downloads: this record is <b>rejected</b>, so it is not published as a model. Any archives generated for it before the verdict have been removed — a download outlives the page that explains it.</p>
+<div class="pk-models-grid"><div class="pk-models-table">
+<table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
+</tbody></table>
+<p>No bundles have been generated for this record yet. When the engineer emits them they appear here automatically — this page reports what is on disk and generates nothing itself.</p>
+</div></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
@@ -93,4 +117,4 @@ _No web simulator for this record: its structure has no shared WebAssembly templ
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 14:34 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 16:38 UTC</sub>

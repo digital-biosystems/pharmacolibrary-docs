@@ -19,16 +19,16 @@
   "adminMass": 0.00012,
   "k12": 1.604448363707623e-06,
   "k21": 1.7630275624461673e-06,
-  "ka": 0.0001388888888888889,
+  "ka": 2.9166666666666666e-06,
   "weight": 70.0
  },
  "reference_peak_times": {
-  "central.C": 3131.803112262568
+  "central.C": 1728060.0000000237
  },
  "reference_peaks": {
-  "central.C": 0.006738394337923902
+  "central.C": 0.0017666968742068793
  },
- "stop_time": 6652800.0,
+ "stop_time": 7862400.0,
  "template": "PK_2C_enteral",
  "template_fmu": "PK_2C_enteral.fmu"
 }

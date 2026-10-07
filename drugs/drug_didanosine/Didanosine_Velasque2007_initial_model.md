@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;J05A&quot;,&quot;href&quot;:&quot;atc/J05A.md&quot;},{&quot;label&quot;:&quot;didanosine&quot;,&quot;href&quot;:&quot;drugs/drug_didanosine/&quot;},{&quot;label&quot;:&quot;Velasque_2007 \u00b7 initial_model&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Didanosine_Drusano1992_reference&quot;,&quot;label&quot;:&quot;Drusano_1992_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_didanosine/Didanosine_Drusano1992_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Didanosine_Greenberg2022_reference&quot;,&quot;label&quot;:&quot;Greenberg_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_didanosine/Didanosine_Greenberg2022_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Didanosine_Ngara2020_reference&quot;,&quot;label&quot;:&quot;Ngara_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_didanosine/Didanosine_Ngara2020_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Didanosine_Pai1992_reference&quot;,&quot;label&quot;:&quot;Pai_1992_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_didanosine/Didanosine_Pai1992_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Didanosine_Greenberg2022_reference&quot;,&quot;label&quot;:&quot;Greenberg_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_didanosine/Didanosine_Greenberg2022_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Didanosine_Ngara2020_reference&quot;,&quot;label&quot;:&quot;Ngara_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_didanosine/Didanosine_Ngara2020_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Didanosine_Zhou1999_reference&quot;,&quot;label&quot;:&quot;Zhou_1999_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_didanosine/Didanosine_Zhou1999_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # didanosine — `Didanosine_Velasque2007_initial_model`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -15,17 +15,25 @@
 
 **Model:** No model was generated from this record.
 
-> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+### Reviewer guidance
+
+**V2 is recorded as 11.00 L/h despite meaning peripheral volume, causing dimension mismatch and physiological failure.**
+
+The parameter V2 has a value of 11.00 with unit L/h, yet its meaning is the volume of distribution of the peripheral compartment. This unit could not be converted to SI standard units, so the parameter lacked a valid standard value. Consequently, the clearance-to-volume ratio check failed because the volume value is implausible for didanosine. Extracted — didanosine: CL 97.8 L/h, V2 11 L/h, Q 45.6 L/h, kabs 1.55 L/h, V3 22.9 L, V 2.25 L/kg.
+
+<sub>reviewed by qwen3.8-27b</sub>
+
+> ⚠️ **STALE** — review status `rejected` (reviewed 2026-10-07 14:20:34.914393+00:00) predates the upstream re-run (2026-10-07 16:10:12.454446+00:00). Current validate status: `rejected`.
 
 ## Citation
 Velasque LS et al., A new model for the population pharmaco…, Brazilian journal of medica… (2007)
   ·  DOI: [10.1590/s0100-879x2007000100013](https://doi.org/10.1590/s0100-879x2007000100013)
 
 ## Model component
-<dbs-pgx drug="didanosine" model-id="Didanosine_Velasque2007_initial_model" status="rejected" stale="false" population="healthy adults" measured-compound="didanosine" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<dbs-pgx drug="didanosine" model-id="Didanosine_Velasque2007_initial_model" status="rejected" stale="true" population="healthy adult volunteers" measured-compound="didanosine" parameterization="mechanistic" topology="1C"></dbs-pgx>
 
 **Model structure:** 1-compartment; no model was built for this record.  
-**Parameters:** 6 extracted.
+**Parameters:** 9 extracted.
 
 **Parameterization:** mechanistic.
 
@@ -35,11 +43,14 @@ Velasque LS et al., A new model for the population pharmaco…, Brazilian journa
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
 | θ CL (L/h) | `Q22` · CL | 97.80 | L/h | 2.7166666666666665e-05 | [l] / [h] | not captured | llm_confirmed (0.6) | tab_2:row2:col1, tab_2:row2:col3, tab_2:row2:col4 | — | 0.06 (None% RSE) |
-| θ V 2 (L/h) | `Q64` · V2 | 11.00 | L/h | 3.055555555555555e-06 | [l] / [h] | not captured | llm (0.6) | tab_2:row3:col1, tab_2:row3:col3, tab_2:row3:col4 | — | not captured |
+| θ V 2 (L/h) | `Q99` · Q2 | 11.00 | L/h | 3.055555555555555e-06 | [l] / [h] | not captured | llm (0.6) | tab_2:row3:col1, tab_2:row3:col3, tab_2:row3:col4 | — | not captured |
 | θ Q (L/h) | `Q30` · Q | 45.60 | L/h | 1.2666666666666667e-05 | [l] / [h] | not captured | llm (0.6) | tab_2:row4:col1, tab_2:row4:col3, tab_2:row4:col4 | — | not captured |
+| θ V 3 (L/h) | `Q308` · Q3 | 75.40 | L/h | 2.0944444444444448e-05 | [l] / [h] | not captured | llm (0.6) | tab_2:row5:col1, tab_2:row5:col3, tab_2:row5:col4 | — | not captured |
 | θ K a (L/h) | `Q49` · kabs | 1.55 | L/h | not captured | [l] / [h] | not captured | llm (0.6) | tab_2:row6:col1, tab_2:row6:col3, tab_2:row6:col4 | — | not captured |
+| θ D (h) | `Q59` · t1/2α | 0.43 | h | 1548.0 | [h] | not captured | llm (0.6) | tab_2:row7:col1, tab_2:row7:col3, tab_2:row7:col4 | — | not captured |
 | θ Sex-V 3 (L) | `Q77` · V3 | 22.90 | L | 0.0229 | [l] | not captured | llm (0.6) | tab_2:row9:col3, tab_2:row9:col4 | — | not captured |
-| sum of the population mean volumes of distribution of the central and peripheral compartments | `Q61` · V | 2.25 | L/kg | 0.15750000000000003 | L | not captured | review_gapfill (0.7) | Greenberg_2022:review | — | not captured |
+| AIC | `Q88` · AUC | 5172.32 | not captured | not captured | not captured | not captured | llm (0.6) | tab_2:row16:col1, tab_2:row16:col3 | — | not captured |
+| volume of distribution | `Q61` · V | 1.7 | L/kg | 0.119 | L | not captured | review_gapfill (0.7) | Greenberg_2022:review | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -49,22 +60,27 @@ Velasque LS et al., A new model for the population pharmaco…, Brazilian journa
 ## Departures & gaps
 
 **Interpretation flags:**
-- unit_dimension_mismatch: 'θ V 2 (L/h)' → Q64 (unit '[length] ** 3 / [time]' vs ontology '[length] ** 3') — route to review
-- dropped unlinked row (NIL): 'θ V 3 (L/h)' — extend the ontology if this is a real PK parameter (source ['tab_2:row5:col1', 'tab_2:row5:col3', 'tab_2:row5:col4'])
 - unit_dimension_mismatch: 'θ K a (L/h)' → Q49 (unit '[length] ** 3 / [time]' vs ontology '1 / [time]') — route to review
-- unit_dimension_mismatch: 'θ D (h)' → Q30 (unit '[time]' vs ontology '[length] ** 3 / [time]') — route to review
-- dropped duplicate Q30 ('θ D (h)', value '0.43') — already have one for this compound
 - dropped duplicate Q22 ('θ CL CR -CL (L/h)', value '240.00') — already have one for this compound
 - dropped duplicate Q22 ('θ Sex-CL (L/h)', value '16.6') — already have one for this compound
-- dropped unlinked row (NIL): 'OF' — extend the ontology if this is a real PK parameter (source ['tab_2:row15:col1', 'tab_2:row15:col3'])
-- dropped unlinked row (NIL): 'AIC' — extend the ontology if this is a real PK parameter (source ['tab_2:row16:col1', 'tab_2:row16:col3'])
-- apparent-by-design (ADVISORY, codes unchanged): extravascular dosing with no identifiable F, so these reported disposition parameters are likely apparent unless the model puts first-pass in its structure — Q22 (θ CL (L/h)); Q64 (θ V 2 (L/h)); Q30 (θ Q (L/h))
+- dropped unlinked row (NIL): 'OF' — extend the ontology if this is a real PK parameter (source ['tab_2:row15:col1', 'tab_2:row15:col3', 'tab_2:footnote'])
+- dropped value-less row: '95% CI'
+- dropped value-less row: 'CL'
+- dropped value-less row: 'V 2'
+- dropped value-less row: 'Q'
+- dropped value-less row: 'V 3'
+- dropped value-less row: 'K a'
+- dropped value-less row: 'D'
+- dropped value-less row: 'CL CR'
+- NIL: refused to back-fill base 'NIL' from footnote/prose loose number None (source ['tab_2:footnote']); the table cell was unparseable — needs review
+- apparent-by-design (ADVISORY, codes unchanged): extravascular dosing with no identifiable F, so these reported disposition parameters are likely apparent unless the model puts first-pass in its structure — Q22 (θ CL (L/h)); Q99 (θ V 2 (L/h)); Q30 (θ Q (L/h))
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=didanosine
 - held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
-- structure disagreement: deterministic 1C vs LLM 2C — review compartment count
+- structure disagreement: deterministic 1C vs LLM 3C — review compartment count
 - status held at route_to_review — not promoted
 - population split: 'initial model' subgroup of Velasque_2007 (paper reports 2 populations: final model, initial model)
 - gap-filled Q61 (V) from Greenberg_2022's review values (primary lacked it)
+- skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
 - skipped review gap-fill of TLAG: primary's parameterization (rate-constant / ka-only) does not use it
 
 **Extraction notes:**
@@ -76,20 +92,22 @@ Velasque LS et al., A new model for the population pharmaco…, Brazilian journa
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 5 | not captured | not captured | not captured |
+| C0_has_structural_params | pass | not captured | 8 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['tab_2:row2:col1', 'tab_2:row2:col3', 'tab_2:row2:col4'] |
 | C5_dimension_Q30 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['tab_2:row4:col1', 'tab_2:row4:col3', 'tab_2:row4:col4'] |
+| C5_dimension_Q308 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['tab_2:row5:col1', 'tab_2:row5:col3', 'tab_2:row5:col4'] |
 | C5_dimension_Q49 | fail | [length] ** 3 / [time] | L/h | not captured | not captured | ['tab_2:row6:col1', 'tab_2:row6:col3', 'tab_2:row6:col4'] |
+| C5_dimension_Q59 | pass | [time] | not captured | not captured | not captured | ['tab_2:row7:col1', 'tab_2:row7:col3', 'tab_2:row7:col4'] |
 | C5_dimension_Q61 | pass | [length] ** 3 | not captured | not captured | not captured | ['Greenberg_2022:review'] |
-| C5_dimension_Q64 | fail | [length] ** 3 / [time] | L/h | not captured | not captured | ['tab_2:row3:col1', 'tab_2:row3:col3', 'tab_2:row3:col4'] |
 | C5_dimension_Q77 | pass | [length] ** 3 | not captured | not captured | not captured | ['tab_2:row9:col3', 'tab_2:row9:col4'] |
+| C5_dimension_Q99 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['tab_2:row3:col1', 'tab_2:row3:col3', 'tab_2:row3:col4'] |
+| C5_unit_missing_Q88 | fail | [mass] * [time] / [length] ** 3 | not captured | not captured | not captured | ['tab_2:row16:col1', 'tab_2:row16:col3'] |
 | C6_cl_magnitude | fail | &lt;= 90.0 L/h | 97.8 | not captured | not captured | ['tab_2:row2:col1', 'tab_2:row2:col3', 'tab_2:row2:col4'] |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
 | C9_phys_window_Q22 | pass | clearance within physiological range | 97.8 L/h | not captured | not captured | ['tab_2:row2:col1', 'tab_2:row2:col3', 'tab_2:row2:col4'] |
-| C9_phys_window_Q61 | pass | volume within physiological range | 158 L | not captured | not captured | ['Greenberg_2022:review'] |
-| C9_phys_window_Q64 | fail | volume within physiological range | 0.00306 L | not captured | not captured | ['tab_2:row3:col1', 'tab_2:row3:col3', 'tab_2:row3:col4'] |
+| C9_phys_window_Q61 | pass | volume within physiological range | 119 L | not captured | not captured | ['Greenberg_2022:review'] |
 
 <details class="legend">
 <summary>Check legend — what each column means</summary>
@@ -114,4 +132,4 @@ _No web simulator for this record: its structure has no shared WebAssembly templ
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 13:48 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 16:10 UTC</sub>

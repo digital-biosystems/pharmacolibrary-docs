@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;J05A&quot;,&quot;href&quot;:&quot;atc/J05A.md&quot;},{&quot;label&quot;:&quot;didanosine&quot;,&quot;href&quot;:&quot;drugs/drug_didanosine/&quot;},{&quot;label&quot;:&quot;Ngara_2020 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Didanosine_Drusano1992_reference&quot;,&quot;label&quot;:&quot;Drusano_1992_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_didanosine/Didanosine_Drusano1992_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Didanosine_Greenberg2022_reference&quot;,&quot;label&quot;:&quot;Greenberg_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_didanosine/Didanosine_Greenberg2022_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Didanosine_Ngara2020_reference&quot;,&quot;label&quot;:&quot;Ngara_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_didanosine/Didanosine_Ngara2020_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Didanosine_Pai1992_reference&quot;,&quot;label&quot;:&quot;Pai_1992_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_didanosine/Didanosine_Pai1992_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Didanosine_Greenberg2022_reference&quot;,&quot;label&quot;:&quot;Greenberg_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_didanosine/Didanosine_Greenberg2022_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Didanosine_Ngara2020_reference&quot;,&quot;label&quot;:&quot;Ngara_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_didanosine/Didanosine_Ngara2020_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Didanosine_Zhou1999_reference&quot;,&quot;label&quot;:&quot;Zhou_1999_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_didanosine/Didanosine_Zhou1999_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # didanosine — `Didanosine_Ngara2020_reference`
 
-> ## <span class="pk-badge pk-badge--green">extracted</span>
+> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -15,14 +15,22 @@
 
 **Model:** A simulatable model was generated — see the **Models** and **Simulation** tabs.
 
-> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+### Reviewer guidance
+
+**Didanosine's absorption rate constant was not reported and used library placeholders rather than estimates from the source text.**
+
+The record for this one-compartment model lists the absorption rate constant as an unreported parameter requiring substitution. Consequently, the absorption rate used in the simulation reflects library placeholders rather than values extracted from the source text. While clearance and central volume were defined, the lack of a documented absorption rate invalidates the specific time-concentration profile claimed by the record. Extracted — didanosine: CL/F 10 litres hour−1, V1 63.4 litres.
+
+<sub>reviewed by qwen3.8-27b</sub>
+
+> ⚠️ **STALE** — review status `needs_review` (reviewed 2026-10-07 14:20:20.557409+00:00) predates the upstream re-run (2026-10-07 16:08:59.524896+00:00). Current validate status: `extracted`.
 
 ## Citation
 Ngara B et al., A population pharmacokinetic model is b…, BMC pharmacology & toxicolo… (2020)
   ·  DOI: [10.1186/s40360-020-00437-y](https://doi.org/10.1186/s40360-020-00437-y)
 
 ## Model component
-<dbs-pgx drug="didanosine" model-id="Didanosine_Ngara2020_reference" status="extracted" stale="false" population="" measured-compound="didanosine" parameterization="apparent" topology="1C"></dbs-pgx>
+<dbs-pgx drug="didanosine" model-id="Didanosine_Ngara2020_reference" status="extracted" stale="true" population="" measured-compound="didanosine" parameterization="apparent" topology="1C"></dbs-pgx>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 2 extracted.
@@ -32,8 +40,8 @@ Ngara B et al., A population pharmacokinetic model is b…, BMC pharmacology & t
 ## Parameters
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| CL/F (litres hour−1) | `Q27` · CL/F | 10.0 | litres hour−1 | 2.777777777777778e-06 | L/h | not captured | review (0.7) | Ngara_2020:review | — | not captured |
-| Vc (litres) | `Q63` · V1 | 63.4 | litres | 0.0634 | L | not captured | review (0.7) | Ngara_2020:review | — | not captured |
+| CL/F | `Q27` · CL/F | 10.0 | litres hour−1 | 2.777777777777778e-06 | L/h | not captured | review (0.7) | Ngara_2020:review | — | not captured |
+| Vc | `Q63` · V1 | 63.4 | litres | 0.0634 | L | not captured | review (0.7) | Ngara_2020:review | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -68,6 +76,18 @@ Ngara B et al., A population pharmacokinetic model is b…, BMC pharmacology & t
 | C9_phys_window_Q27 | pass | clearance within physiological range | 10 L/h | not captured | not captured | ['Ngara_2020:review'] |
 | C9_phys_window_Q63 | pass | volume within physiological range | 63.4 L | not captured | not captured | ['Ngara_2020:review'] |
 
+**Reviewer per-scenario checks:**
+
+| check | scenario | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|---|
+| T0_analyte_identity | not captured | pass | not captured | not captured | not captured | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | not captured | skipped | not captured | not captured | not captured | no covariate effects in record |
+| T3_apparent_invariant | not captured | pass | not captured | F=Fm=1, no molar correction | not captured | apparent params must not be double-corrected |
+| T3_output_variable | not captured | pass | C_central (measured=didanosine) | central.C | not captured | output must be the measured/analyte compartment |
+| T3_param_coverage | not captured | pass | 2 scholar param(s) emitted or defaulted | 2 covered | not captured | all structural parameters accounted for |
+| T3_topology_template | not captured | pass | 1C → PK_1C* | PK_1C_enteral | not captured | engineer template must match the scholar topology |
+| T6_deviations | not captured | fail | not captured | defaulted_parameters: not acceptable; invented_absorption: not acceptable | not captured | LLM adjudication → deterministic rule |
+
 <details class="legend">
 <summary>Check legend — what each column means</summary>
 <table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>check</code></td><td>the check id. C0_has_structural_params = at least one numeric structural parameter; C0b_disposition_core = a volume OR a clearance/elimination term (neither means an exposure/outcome paper, not popPK — rejected); C0c_disposition_complete = BOTH a volume AND a clearance/elimination term, which is what the engineer needs to build (one without the other routes to review, never to the engineer); C1_half_life(_beta) = reported half-life against V and CL; C2_reference = covariate scenarios are sign-plausible; C3_cl_dose_auc = CL against dose/AUC; C4_auc_closed_form = AUC recomputed in closed form; C5_dimension_&lt;Qcode&gt; = the parameter's units carry the dimension its Q-code requires.</td></tr><tr><td><code>status</code></td><td>pass, fail, or skipped. A skipped check had nothing to compare — the paper did not report the input it needs — and is not evidence against the record. The scholar table lists only pass and fail; the reviewer table also shows skipped, with the reason in note.</td></tr><tr><td><code>expected</code></td><td>the value the check required, from the paper or from the ontology.</td></tr><tr><td><code>obtained</code></td><td>what the record actually yields.</td></tr><tr><td><code>ratio</code></td><td>obtained / expected, where the check is a numeric comparison.</td></tr><tr><td><code>tol</code></td><td>the tolerance the ratio had to fall within to pass.</td></tr><tr><td><code>source</code></td><td>the artifact the expected value was taken from.</td></tr><tr><td><code>scenario</code></td><td>reviewer table only — the covariate scenario the check was run under.</td></tr><tr><td><code>note</code></td><td>why a check was skipped, or how it was judged.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>the field is absent from the KB artifact — nothing was recorded. This is NOT the same as zero or empty: the value is unknown, not measured to be nothing.</td></tr><tr><td><code>—</code></td><td>deliberately not shown: the column does not apply to this row.</td></tr><tr><td><code>not verified</code></td><td>the record is not in an accepted state (see the badge and the note above the table); the numbers are shown as extracted, not endorsed.</td></tr></tbody></table>
@@ -76,6 +96,9 @@ Ngara B et al., A population pharmacokinetic model is b…, BMC pharmacology & t
 ## Raw artifacts
 
 - scholar stages: `../../../knowledgebase/drugs/drug_didanosine/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Ngara_2020` / `Ngara_2020::reference`)
+- model: `../../../knowledgebase/drugs/drug_didanosine/models/modelica/Didanosine_Ngara2020_reference.mo`
+- deviation: `../../../knowledgebase/drugs/drug_didanosine/models/modelica/Didanosine_Ngara2020_reference.deviation.json`
+- sim: `../../../knowledgebase/drugs/drug_didanosine/models/modelica/Didanosine_Ngara2020_reference.json`
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -106,4 +129,4 @@ Ngara B et al., A population pharmacokinetic model is b…, BMC pharmacology & t
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2)</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 16:08 UTC</sub>

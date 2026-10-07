@@ -1,7 +1,7 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C02B&quot;,&quot;href&quot;:&quot;atc/C02B.md&quot;},{&quot;label&quot;:&quot;mecamylamine&quot;,&quot;href&quot;:&quot;drugs/drug_mecamylamine/&quot;},{&quot;label&quot;:&quot;Alvarez-Jimenez_2017 \u00b7 PD Systolic and diastolic blood pressure&quot;}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# Systolic and diastolic blood pressure — PD  <span class="pk-badge pk-badge--green">reviewed — candidate</span>
+# Systolic and diastolic blood pressure — PD  <span class="pk-badge pk-badge--green">extracted</span>
 
 <details class="pk-legend"><summary>What the PGx badges mean — evidence, and whether a model runs</summary><table><tbody><tr><td><span class="pk-badge pk-badge--green">quantitative</span></td><td>the paper gives the effect of each phenotype (or genotype) on a named model parameter — a θ per category.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">qualitative</span></td><td>the paper links the gene to the drug but states no effect size on a model parameter, so it changes no model.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">guideline estimate</span></td><td>the effect comes from a CPIC / DPWG dosing guideline, not from this paper's numbers.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">safety allele</span></td><td>a risk allele for an adverse reaction (an HLA type, G6PD deficiency …): it changes no PK/PD parameter.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>the extraction is incomplete or inconsistent.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted.</td></tr><tr><td><span class="pk-badge pk-badge--green">▶ simulatable</span></td><td>the paper's popPK model runs per phenotype in the browser (Simulation tab); its PGx Modelica model is under Models.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">model only</span></td><td>a PGx Modelica model exists but has no in-browser simulator.</td></tr></tbody></table></details>
 
@@ -17,11 +17,15 @@
 
 **Model:** No model was generated from this record.
 
+> The paper does not provide the specific mechanism or potency parameters (such as IC50 or Emax) for the blood pressure response, only stating that mecamylamine acts as a nicotinic antagonist without an effect compartment. The record lists baseline systolic (121 mmHg) and diastolic (70.2 mmHg) values and dimensionless base parameters (0.0284 and 0.0227) for a linear proportional inhibition model, but the excerpts do not link these specific values to the blood pressure PD model.
+>
+> <sub>in the paper's terms — summarised by qwen3.8:27b-mtp-q8_0 from the paper's text; not checked by a person</sub>
+
 - **paper:** `Alvarez-Jimenez_2017`
 - **model family:** `linear`
 - **driver:** `pk_record`
 - **tier:** population
-- **effect:** inhibition/proportional
+- **effect:** inhibition/unknown
 
 ## Citation
 Alvarez-Jimenez R et al., Pharmacokinetics and pharmacodynamics o…, Journal of psychopharmacolo… (2017)
@@ -30,10 +34,17 @@ Alvarez-Jimenez R et al., Pharmacokinetics and pharmacodynamics o…, Journal of
 ## Parameters
 | role | label (paper) | Q-code · name | value | unit | value_si | link | source |
 |---|---|---|---|---|---|---|---|
-| PD (effect) | BL D | `Q324` · not captured | 70.2 | mmHg | not captured | llm (not captured) | Alvarez-Jimenez_2017:pdv3 |
 | PD (effect) | BL S | `Q324` · not captured | 121 | mmHg | not captured | llm (not captured) | Alvarez-Jimenez_2017:pdv3 |
-| PD (effect) | BASE D | `Q335` · not captured | 0.0227 | not captured | not captured | llm (not captured) | Alvarez-Jimenez_2017:pdv3 |
-| PD (effect) | BASE S | `Q335` · not captured | 0.0284 | not captured | not captured | llm (not captured) | Alvarez-Jimenez_2017:pdv3 |
+| PD (effect) | BL D | `Q324` · not captured | 70.2 | mmHg | not captured | llm (not captured) | Alvarez-Jimenez_2017:pdv3 |
+| — | AMP S | `Q100` · not captured | 1.12 | mmHg | not captured | nil (not captured) | Alvarez-Jimenez_2017:pdv3 |
+| — | AMP D | `Q100` · not captured | 1.81 | mmHg | not captured | nil (not captured) | Alvarez-Jimenez_2017:pdv3 |
+| — | PHS S | `Q100` · not captured | 802 | min | not captured | nil (not captured) | Alvarez-Jimenez_2017:pdv3 |
+| — | PHS D | `Q100` · not captured | 8e-04 | min | not captured | nil (not captured) | Alvarez-Jimenez_2017:pdv3 |
+| — | FREQ S | `Q100` · not captured | 833 | min -1 | not captured | nil (not captured) | Alvarez-Jimenez_2017:pdv3 |
+| — | FREQ D | `Q100` · not captured | 676 | min -1 | not captured | nil (not captured) | Alvarez-Jimenez_2017:pdv3 |
+| — | BASE S | `Q100` · not captured | 0.0284 | - | not captured | nil (not captured) | Alvarez-Jimenez_2017:pdv3 |
+| — | BASE D | `Q100` · not captured | 0.0227 | - | not captured | nil (not captured) | Alvarez-Jimenez_2017:pdv3 |
+| — | CBMIB | `Q100` · not captured | 0.229 | - | not captured | nil (not captured) | Alvarez-Jimenez_2017:pdv3 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

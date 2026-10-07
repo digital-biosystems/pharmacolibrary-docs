@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;J05A&quot;,&quot;href&quot;:&quot;atc/J05A.md&quot;},{&quot;label&quot;:&quot;stavudine&quot;,&quot;href&quot;:&quot;drugs/drug_stavudine/&quot;},{&quot;label&quot;:&quot;Jullien_2007 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Stavudine_Panhard2007_reference&quot;,&quot;label&quot;:&quot;Panhard_2007_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_stavudine/Stavudine_Panhard2007_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Stavudine_Jullien2007_reference&quot;,&quot;label&quot;:&quot;Jullien_2007_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_stavudine/Stavudine_Jullien2007_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Stavudine_Panhard2007_reference&quot;,&quot;label&quot;:&quot;Panhard_2007_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_stavudine/Stavudine_Panhard2007_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Stavudine_Sinxadi2010_reference&quot;,&quot;label&quot;:&quot;Sinxadi_2010_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_stavudine/Stavudine_Sinxadi2010_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # stavudine — `Stavudine_Jullien2007_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span>
+> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -13,36 +13,61 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
-**Model:** No model was generated from this record.
+**Model:** A simulatable model was generated — see the **Models** and **Simulation** tabs.
 
-> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+### Reviewer guidance
+
+**The paper reports none of the model's key parameters.**
+
+No clearance, volume or rate constant of the model is reported in it. Only the abstract was available, so reported summary statistics stand in for a fitted model. No parameter values were extracted.
+
+<sub>reviewed by rule template (no LLM)</sub>
+
+> ⚠️ **STALE** — review status `rejected` (reviewed 2026-10-07 14:42:50.478019+00:00) predates the upstream re-run (2026-10-07 16:16:57.913991+00:00). Current validate status: `extracted`.
 
 ## Citation
 Jullien V et al., Age-related differences in the pharmaco…, British journal of clinical… (2007)
   ·  DOI: [10.1111/j.1365-2125.2007.02854.x](https://doi.org/10.1111/j.1365-2125.2007.02854.x)
 
 ## Model component
-<dbs-pgx drug="stavudine" model-id="Stavudine_Jullien2007_reference" status="rejected" stale="false" population="children from birth to 16 years" measured-compound="stavudine" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<dbs-pgx drug="stavudine" model-id="Stavudine_Jullien2007_reference" status="extracted" stale="true" population="children from birth to 16 years" measured-compound="stavudine" parameterization="apparent" topology="1C"></dbs-pgx>
 
-**Model structure:** 1-compartment; no model was built for this record.  
-**Parameters:** 0 extracted.
+**Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
+**Parameters:** 4 extracted.
 
-**Parameterization:** mechanistic.
+**Parameterization:** CL/F, V/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
 ## Parameters
-> ⚠️ This record is not accepted (current status `rejected`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
+| label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
+|---|---|---|---|---|---|---|---|---|---|---|
+| V/F | `Q76` · V/F | 40.9 | l | 0.0409 | [l] | not captured | exact (1.0) | Jullien_2007:abstract | — | not captured |
+| CL/F | `Q27` · CL/F | 16.5 | l h(-1) | 4.583333333333333e-06 | [l] / [h] | not captured | exact (1.0) | Jullien_2007:abstract | — | not captured |
+| first-order absorption rate constant | `Q49` · kabs | 11.1 | /h | 0.0030833333333333333 | 1/h | not captured | review_gapfill (0.7) | Sinxadi_2010:review | — | not captured |
+| absorption lag time | `Q83` · tlag | 0.41 | h | 1476.0 | h | not captured | review_gapfill (0.7) | Sinxadi_2010:review | — | not captured |
 
-_No resolved parameters._
+<details class="legend">
+<summary>Column legend — what each column means</summary>
+<table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>label (paper)</code></td><td>the row or statistic label exactly as printed in the paper (label_verbatim) — never normalised, so it can be found in the PDF.</td></tr><tr><td><code>Q-code · name</code></td><td>the ontology parameter this label was matched to (Q22 = clearance, Q27 = CL/F, Q49 = ka, Q57 = half-life, …) and its canonical name. The Q-code, not the label, is what scoring and cross-paper merging use.</td></tr><tr><td><code>value</code></td><td>the estimate as reported in the paper.</td></tr><tr><td><code>unit</code></td><td>the unit as printed (unit_verbatim).</td></tr><tr><td><code>value_si</code></td><td>the value converted to the canonical unit. Empty when no conversion was possible — usually an unparseable or missing unit.</td></tr><tr><td><code>unit_canonical</code></td><td>the canonical unit for that Q-code, i.e. what value_si is expressed in.</td></tr><tr><td><code>RSE%</code></td><td>relative standard error of the estimate, when the paper reports one.</td></tr><tr><td><code>link</code></td><td>how the label was matched to the Q-code, with confidence. exact / boundary / fuzzy / tv_prefix / caption_compartment / special_case are deterministic string matches; llm, llm_confirmed, llm_corrected involved the model; review and review_gapfill come from the secondary review tier, the latter filling a parameter the primary extraction missed; boundary_relink is a corrected match.</td></tr><tr><td><code>source</code></td><td>where in the paper the number came from: colN = that column of the located table, other_prose = running text, review = the secondary tier, pgx = a pharmacogenomic record.</td></tr><tr><td><code>covariates</code></td><td>covariate effects attached to this parameter (e.g. weight on CL).</td></tr><tr><td><code>IIV</code></td><td>inter-individual variability reported for this parameter.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>the field is absent from the KB artifact — nothing was recorded. This is NOT the same as zero or empty: the value is unknown, not measured to be nothing.</td></tr><tr><td><code>—</code></td><td>deliberately not shown: the column does not apply to this row.</td></tr><tr><td><code>not verified</code></td><td>the record is not in an accepted state (see the badge and the note above the table); the numbers are shown as extracted, not endorsed.</td></tr></tbody></table>
+</details>
 
 ## Departures & gaps
 
+**Deviations:**
+- `apparent_assumption`: F=1, Fm=1, no molar correction (parameterization=apparent)
+
 **Interpretation flags:**
-- apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=stavudine
+- dropped unlinked row (NIL): 'Mean calculated dose (children less than 2 weeks)' — extend the ontology if this is a real PK parameter (source ['Jullien_2007:abstract'])
+- dropped unlinked row (NIL): 'Mean calculated dose (children more than 2 weeks with bodyweight less than 30 kg)' — extend the ontology if this is a real PK parameter (source ['Jullien_2007:abstract'])
+- dropped unlinked row (NIL): 'Mean calculated dose (children with a bodyweight between 30 and 60 kg)' — extend the ontology if this is a real PK parameter (source ['Jullien_2007:abstract'])
+- apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=stavudine
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
-- review gap-fill skipped: this record carries no value of its own, and a model assembled entirely from other papers is not this paper's model
+- skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
+- skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
+- gap-filled Q49 (kabs) from Sinxadi_2010's review values (primary lacked it)
+- gap-filled Q83 (tlag) from Sinxadi_2010's review values (primary lacked it)
 
 **Extraction notes:**
-- no GROBID TEI available — transcribed from abstract in Jullien_2007_metadata.yaml (0 record(s)); values are summary statistics, not a fitted model
+- no GROBID TEI available — transcribed from abstract in Jullien_2007_metadata.yaml (5 record(s)); values are summary statistics, not a fitted model
 
 ## Validation
 
@@ -50,9 +75,17 @@ _No resolved parameters._
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | fail | not captured | 0 | not captured | not captured | not captured |
-| C0b_disposition_core | fail | not captured | not captured | not captured | not captured | not captured |
+| C0_has_structural_params | pass | not captured | 2 | not captured | not captured | not captured |
+| C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
+| C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
+| C5_dimension_Q27 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Jullien_2007:abstract'] |
+| C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['Sinxadi_2010:review'] |
+| C5_dimension_Q76 | pass | [length] ** 3 | not captured | not captured | not captured | ['Jullien_2007:abstract'] |
+| C5_dimension_Q83 | pass | [time] | not captured | not captured | not captured | ['Sinxadi_2010:review'] |
+| C7_apparent_coherence | pass | not captured | not captured | not captured | not captured | not captured |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
+| C9_phys_window_Q27 | pass | clearance within physiological range | 16.5 L/h | not captured | not captured | ['Jullien_2007:abstract'] |
+| C9_phys_window_Q76 | pass | volume within physiological range | 40.9 L | not captured | not captured | ['Jullien_2007:abstract'] |
 
 <details class="legend">
 <summary>Check legend — what each column means</summary>
@@ -66,15 +99,30 @@ _No resolved parameters._
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
-## Models
+## Downloadable models
 
-<p>No downloads: this record is <b>rejected</b>, so it is not published as a model. Any archives generated for it before the verdict have been removed — a download outlives the page that explains it.</p>
+<div class="pk-models-grid"><div class="pk-models-table">
+<table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_stavudine/Stavudine_Jullien2007_reference/Stavudine_Jullien2007_reference_modelica.zip" download>Stavudine_Jullien2007_reference_modelica.zip</a> <span class="pk-size">(4.3 kB)</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_stavudine/Stavudine_Jullien2007_reference/Stavudine_Jullien2007_reference_fmi.zip" download>Stavudine_Jullien2007_reference_fmi.zip</a> <span class="pk-size">(4.2 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_stavudine/Stavudine_Jullien2007_reference/Stavudine_Jullien2007_reference_matlab.zip" download>Stavudine_Jullien2007_reference_matlab.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_stavudine/Stavudine_Jullien2007_reference/Stavudine_Jullien2007_reference_matlab_simbio.zip" download>Stavudine_Jullien2007_reference_matlab_simbio.zip</a> <span class="pk-size">(2.8 kB)</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_stavudine/Stavudine_Jullien2007_reference/Stavudine_Jullien2007_reference_sbml.zip" download>Stavudine_Jullien2007_reference_sbml.zip</a> <span class="pk-size">(2.7 kB)</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_stavudine/Stavudine_Jullien2007_reference/Stavudine_Jullien2007_reference_cellml.zip" download>Stavudine_Jullien2007_reference_cellml.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
+</tbody></table>
+<p>Each archive holds the model source, a script that simulates it against the appropriate library, and a README describing both and how to run them.</p>
+<p><b>FMI is two downloads.</b> The archive holds this record's parameters and its driver; the simulator itself is <code>PK_1C_enteral.fmu</code>, one compiled template shared by every model of this structure. Take the FMU once, keep it beside the script (or pass <code>--fmu PATH</code>). Running it reproduces the model-specific FMU exactly.</p>
+</div><figure class="pk-models-diagram"><img src="drugs/drug_stavudine/Stavudine_Jullien2007_reference/Stavudine_Jullien2007_reference.svg" alt="Stavudine_Jullien2007_reference diagram"><figcaption>Model diagram (Modelica) using Pharmacolibrary v26.09 components, rendered by OpenModelica 1.26.7.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+**Administration: oral** — 80 mg, single dose, first-order absorption (ka 11.1 /h, lag 24.6 min, F 1). _The paper's dose was not captured; the default is the WHO ATC DDD 80 mg oral (J05AF04) (defined daily dose)._
+
+<dbs-fmusim paramsurl="drugs/drug_stavudine/Stavudine_Jullien2007_reference/Stavudine_Jullien2007_reference_params.json" metaurl="assets/fmu/PK_1C_enteral.vr.json" wasmurl="assets/fmu/PK_1C_enteral.js" controlsurl="drugs/drug_stavudine/Stavudine_Jullien2007_reference/Stavudine_Jullien2007_reference_sim_controls.json"></dbs-fmusim>
+
+<sub>Runs this record's model in the browser as WebAssembly. Sliders start at the extracted values; the reference check compares the browser's peak against the FMPy result recorded when the record was built, and is withheld once a value has been edited. Template `PK_1C_enteral` · parameters `Stavudine_Jullien2007_reference_params.json` · controls `Stavudine_Jullien2007_reference_sim_controls.json`. A slider marked *simulator value* is running on the template's own default because this record does not pin that parameter.</sub>
 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 13:55 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 16:16 UTC</sub>

@@ -1,6 +1,9 @@
 {
  "dose_source": "WHO ATC DDD 40 mg oral (J05AX25)",
  "model_id": "BaloxavirMarboxil_Retout2026_reference",
+ "molar_masses": {
+  "central.C": 0.483489
+ },
  "note": "Values for the shared PK_1C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
  "observables": [
   "central.C"
@@ -8,6 +11,7 @@
  "parameters": {
   "Cl": 3.0611111111111112e-06,
   "F": 1.0,
+  "MM": 0.483489,
   "Tlag": 802.8000000000001,
   "VdPerKg": 0.0105,
   "adminCount": 1.0,

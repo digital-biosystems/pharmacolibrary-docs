@@ -19,9 +19,9 @@
 
 **Model:** No model was generated from this record.
 
-> Plasma M6495 concentrations inhibit the synthesis of the serum ARGS biomarker (nM) via an indirect response model: kin is the ARGS synthesis rate, kout the ARGS elimination rate constant, Imax the maximal inhibition of ARGS synthesis, and IC50 the M6495 concentration giving 50% of maximal inhibition; the paper does not report the fitted numeric values of these parameters.
+> Plasma concentrations of M6495 inhibit the synthesis (production) of the serum ARGS biomarker via an indirect response model, with a maximal inhibition (Imax) of 0.725 and an IC50 of 1.17 mg/L. The elimination rate constant (kout) for ARGS is 0.0401 /h, and the baseline ARGS concentration is 0.36 nM.
 >
-> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+> <sub>in the paper's terms — summarised by qwen3.8:27b-mtp-q8_0 from the paper's text; not checked by a person</sub>
 
 - **paper:** `Pereira_2024`
 - **model family:** `indirect_response_i`

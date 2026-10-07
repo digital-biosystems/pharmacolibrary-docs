@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;J05A&quot;,&quot;href&quot;:&quot;atc/J05A.md&quot;},{&quot;label&quot;:&quot;didanosine&quot;,&quot;href&quot;:&quot;drugs/drug_didanosine/&quot;},{&quot;label&quot;:&quot;Greenberg_2022 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Didanosine_Drusano1992_reference&quot;,&quot;label&quot;:&quot;Drusano_1992_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_didanosine/Didanosine_Drusano1992_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Didanosine_Greenberg2022_reference&quot;,&quot;label&quot;:&quot;Greenberg_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_didanosine/Didanosine_Greenberg2022_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Didanosine_Ngara2020_reference&quot;,&quot;label&quot;:&quot;Ngara_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_didanosine/Didanosine_Ngara2020_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Didanosine_Pai1992_reference&quot;,&quot;label&quot;:&quot;Pai_1992_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_didanosine/Didanosine_Pai1992_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Didanosine_Greenberg2022_reference&quot;,&quot;label&quot;:&quot;Greenberg_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_didanosine/Didanosine_Greenberg2022_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Didanosine_Ngara2020_reference&quot;,&quot;label&quot;:&quot;Ngara_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_didanosine/Didanosine_Ngara2020_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Didanosine_Zhou1999_reference&quot;,&quot;label&quot;:&quot;Zhou_1999_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_didanosine/Didanosine_Zhou1999_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # didanosine — `Didanosine_Greenberg2022_reference`
 
-> ## <span class="pk-badge pk-badge--green">extracted</span>
+> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -15,25 +15,33 @@
 
 **Model:** A simulatable model was generated — see the **Models** and **Simulation** tabs.
 
-> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+### Reviewer guidance
+
+**Didanosine record was refused because absorption rate constant and lag time were missing from Greenberg_2022, requiring arbitrary placeholder values for the one-compartment model.**
+
+The source review does not report specific estimates for the absorption rate constant or lag time. Consequently, the model relies on generic library values instead of data-derived parameters to describe the absorption phase. These placeholder values lack justification from the study, compromising the validity of the simulated concentration profile. Extracted — didanosine: CL/F 12 L/hr, V 2.25 L/kg.
+
+<sub>reviewed by qwen3.8-27b</sub>
+
+> ⚠️ **STALE** — review status `needs_review` (reviewed 2026-10-07 14:20:12.120928+00:00) predates the upstream re-run (2026-10-07 16:08:28.452741+00:00). Current validate status: `extracted`.
 
 ## Citation
 Greenberg RG et al., Population Pharmacokinetics of Moxiflox…, Paediatric drugs (2022)
   ·  DOI: [10.1007/s40272-022-00493-3](https://doi.org/10.1007/s40272-022-00493-3)
 
 ## Model component
-<dbs-pgx drug="didanosine" model-id="Didanosine_Greenberg2022_reference" status="extracted" stale="false" population="" measured-compound="didanosine" parameterization="apparent" topology="1C"></dbs-pgx>
+<dbs-pgx drug="didanosine" model-id="Didanosine_Greenberg2022_reference" status="extracted" stale="true" population="" measured-compound="didanosine" parameterization="mechanistic" topology="1C"></dbs-pgx>
 
-**Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
+**Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameters:** 2 extracted.
 
-**Parameterization:** CL/F — apparent, F unknown (apparent — bioavailability not identifiable).
+**Parameterization:** mechanistic.
 
 ## Parameters
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| apparent total body clearance | `Q27` · CL/F | 12.0 | L/hr | 3.3333333333333333e-06 | L/h | not captured | review (0.7) | Greenberg_2022:review | — | not captured |
-| sum of the population mean volumes of distribution of the central and peripheral compartments | `Q61` · V | 2.25 | L/kg | 0.15750000000000003 | L | not captured | review (0.7) | Greenberg_2022:review | — | not captured |
+| apparent total body clearance | `Q22` · CL | 12.0 | L/hr | 3.3333333333333333e-06 | L/h | not captured | review (0.7) | Greenberg_2022:review | — | not captured |
+| volume of distribution | `Q61` · V | 1.7 | L/kg | 0.119 | L | not captured | review (0.7) | Greenberg_2022:review | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -41,12 +49,6 @@ Greenberg RG et al., Population Pharmacokinetics of Moxiflox…, Paediatric drug
 </details>
 
 ## Departures & gaps
-
-**Deviations:**
-- `defaulted_parameters`: ['ka', 'Tlag']
-- `apparent_assumption`: F=1, Fm=1, no molar correction (parameterization=apparent)
-- `invented_absorption`: ka defaulted — not reported in source
-- `input_model`: first-order depot input — apparent (/F) parameterization ⇒ extravascular dosing
 
 **Interpretation flags:**
 - built from REVIEW reference values (Greenberg_2022) — secondary source
@@ -61,12 +63,24 @@ Greenberg RG et al., Population Pharmacokinetics of Moxiflox…, Paediatric drug
 | C0_has_structural_params | pass | not captured | 2 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
-| C5_dimension_Q27 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Greenberg_2022:review'] |
+| C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Greenberg_2022:review'] |
 | C5_dimension_Q61 | pass | [length] ** 3 | not captured | not captured | not captured | ['Greenberg_2022:review'] |
-| C7_apparent_coherence | pass | not captured | not captured | not captured | not captured | not captured |
+| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 12.0 | not captured | not captured | ['Greenberg_2022:review'] |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
-| C9_phys_window_Q27 | pass | clearance within physiological range | 12 L/h | not captured | not captured | ['Greenberg_2022:review'] |
-| C9_phys_window_Q61 | pass | volume within physiological range | 158 L | not captured | not captured | ['Greenberg_2022:review'] |
+| C9_phys_window_Q22 | pass | clearance within physiological range | 12 L/h | not captured | not captured | ['Greenberg_2022:review'] |
+| C9_phys_window_Q61 | pass | volume within physiological range | 119 L | not captured | not captured | ['Greenberg_2022:review'] |
+
+**Reviewer per-scenario checks:**
+
+| check | scenario | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|---|
+| T0_analyte_identity | not captured | pass | not captured | not captured | not captured | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | not captured | skipped | not captured | not captured | not captured | no covariate effects in record |
+| T3_apparent_invariant | not captured | pass | not captured | F=Fm=1, no molar correction | not captured | apparent params must not be double-corrected |
+| T3_output_variable | not captured | pass | C_central (measured=didanosine) | central.C | not captured | output must be the measured/analyte compartment |
+| T3_param_coverage | not captured | pass | 2 scholar param(s) emitted or defaulted | 2 covered | not captured | all structural parameters accounted for |
+| T3_topology_template | not captured | pass | 1C → PK_1C* | PK_1C_enteral | not captured | engineer template must match the scholar topology |
+| T6_deviations | not captured | fail | not captured | defaulted_parameters: not acceptable; invented_absorption: not acceptable | not captured | LLM adjudication → deterministic rule |
 
 <details class="legend">
 <summary>Check legend — what each column means</summary>
@@ -76,6 +90,9 @@ Greenberg RG et al., Population Pharmacokinetics of Moxiflox…, Paediatric drug
 ## Raw artifacts
 
 - scholar stages: `../../../knowledgebase/drugs/drug_didanosine/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Greenberg_2022` / `Greenberg_2022::reference`)
+- model: `../../../knowledgebase/drugs/drug_didanosine/models/modelica/Didanosine_Greenberg2022_reference.mo`
+- deviation: `../../../knowledgebase/drugs/drug_didanosine/models/modelica/Didanosine_Greenberg2022_reference.deviation.json`
+- sim: `../../../knowledgebase/drugs/drug_didanosine/models/modelica/Didanosine_Greenberg2022_reference.json`
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -84,26 +101,26 @@ Greenberg RG et al., Population Pharmacokinetics of Moxiflox…, Paediatric drug
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_didanosine/Didanosine_Greenberg2022_reference/Didanosine_Greenberg2022_reference_modelica.zip" download>Didanosine_Greenberg2022_reference_modelica.zip</a> <span class="pk-size">(4.1 kB)</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_didanosine/Didanosine_Greenberg2022_reference/Didanosine_Greenberg2022_reference_fmi.zip" download>Didanosine_Greenberg2022_reference_fmi.zip</a> <span class="pk-size">(4.3 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_didanosine/Didanosine_Greenberg2022_reference/Didanosine_Greenberg2022_reference_matlab.zip" download>Didanosine_Greenberg2022_reference_matlab.zip</a> <span class="pk-size">(3.5 kB)</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_didanosine/Didanosine_Greenberg2022_reference/Didanosine_Greenberg2022_reference_matlab_simbio.zip" download>Didanosine_Greenberg2022_reference_matlab_simbio.zip</a> <span class="pk-size">(2.9 kB)</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_didanosine/Didanosine_Greenberg2022_reference/Didanosine_Greenberg2022_reference_sbml.zip" download>Didanosine_Greenberg2022_reference_sbml.zip</a> <span class="pk-size">(2.7 kB)</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_didanosine/Didanosine_Greenberg2022_reference/Didanosine_Greenberg2022_reference_cellml.zip" download>Didanosine_Greenberg2022_reference_cellml.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_didanosine/Didanosine_Greenberg2022_reference/Didanosine_Greenberg2022_reference_modelica.zip" download>Didanosine_Greenberg2022_reference_modelica.zip</a> <span class="pk-size">(3.5 kB)</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_didanosine/Didanosine_Greenberg2022_reference/Didanosine_Greenberg2022_reference_fmi.zip" download>Didanosine_Greenberg2022_reference_fmi.zip</a> <span class="pk-size">(4.1 kB)</span><br><a href="models/fmu/PK_1C.fmu" download>PK_1C.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_didanosine/Didanosine_Greenberg2022_reference/Didanosine_Greenberg2022_reference_matlab.zip" download>Didanosine_Greenberg2022_reference_matlab.zip</a> <span class="pk-size">(3.3 kB)</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_didanosine/Didanosine_Greenberg2022_reference/Didanosine_Greenberg2022_reference_matlab_simbio.zip" download>Didanosine_Greenberg2022_reference_matlab_simbio.zip</a> <span class="pk-size">(2.7 kB)</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_didanosine/Didanosine_Greenberg2022_reference/Didanosine_Greenberg2022_reference_sbml.zip" download>Didanosine_Greenberg2022_reference_sbml.zip</a> <span class="pk-size">(2.4 kB)</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_didanosine/Didanosine_Greenberg2022_reference/Didanosine_Greenberg2022_reference_cellml.zip" download>Didanosine_Greenberg2022_reference_cellml.zip</a> <span class="pk-size">(2.9 kB)</span></td></tr>
 </tbody></table>
 <p>Each archive holds the model source, a script that simulates it against the appropriate library, and a README describing both and how to run them.</p>
-<p><b>FMI is two downloads.</b> The archive holds this record's parameters and its driver; the simulator itself is <code>PK_1C_enteral.fmu</code>, one compiled template shared by every model of this structure. Take the FMU once, keep it beside the script (or pass <code>--fmu PATH</code>). Running it reproduces the model-specific FMU exactly.</p>
+<p><b>FMI is two downloads.</b> The archive holds this record's parameters and its driver; the simulator itself is <code>PK_1C.fmu</code>, one compiled template shared by every model of this structure. Take the FMU once, keep it beside the script (or pass <code>--fmu PATH</code>). Running it reproduces the model-specific FMU exactly.</p>
 </div><figure class="pk-models-diagram"><img src="drugs/drug_didanosine/Didanosine_Greenberg2022_reference/Didanosine_Greenberg2022_reference.svg" alt="Didanosine_Greenberg2022_reference diagram"><figcaption>Model diagram (Modelica) using Pharmacolibrary v26.09 components, rendered by OpenModelica 1.26.7.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-**Administration: oral** — 400 mg, single dose, first-order absorption (ka 0.5 /h, F 1). _The paper's dose was not captured; the default is the WHO ATC DDD 400 mg oral (J05AF02) (defined daily dose)._
+**Administration: intravenous** — 10 mg infusion over 10 min, single dose. _The paper's dose was not captured; the simulator's default is used._
 
-<dbs-fmusim paramsurl="drugs/drug_didanosine/Didanosine_Greenberg2022_reference/Didanosine_Greenberg2022_reference_params.json" metaurl="assets/fmu/PK_1C_enteral.vr.json" wasmurl="assets/fmu/PK_1C_enteral.js" controlsurl="drugs/drug_didanosine/Didanosine_Greenberg2022_reference/Didanosine_Greenberg2022_reference_sim_controls.json"></dbs-fmusim>
+<dbs-fmusim paramsurl="drugs/drug_didanosine/Didanosine_Greenberg2022_reference/Didanosine_Greenberg2022_reference_params.json" metaurl="assets/fmu/PK_1C.vr.json" wasmurl="assets/fmu/PK_1C.js" controlsurl="drugs/drug_didanosine/Didanosine_Greenberg2022_reference/Didanosine_Greenberg2022_reference_sim_controls.json"></dbs-fmusim>
 
-<sub>Runs this record's model in the browser as WebAssembly. Sliders start at the extracted values; the reference check compares the browser's peak against the FMPy result recorded when the record was built, and is withheld once a value has been edited. Template `PK_1C_enteral` · parameters `Didanosine_Greenberg2022_reference_params.json` · controls `Didanosine_Greenberg2022_reference_sim_controls.json`. A slider marked *simulator value* is running on the template's own default because this record does not pin that parameter.</sub>
+<sub>Runs this record's model in the browser as WebAssembly. Sliders start at the extracted values; the reference check compares the browser's peak against the FMPy result recorded when the record was built, and is withheld once a value has been edited. Template `PK_1C` · parameters `Didanosine_Greenberg2022_reference_params.json` · controls `Didanosine_Greenberg2022_reference_sim_controls.json`. A slider marked *simulator value* is running on the template's own default because this record does not pin that parameter.</sub>
 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2)</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 16:08 UTC</sub>

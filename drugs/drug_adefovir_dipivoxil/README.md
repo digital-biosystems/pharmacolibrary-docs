@@ -21,20 +21,26 @@ Adefovir dipivoxil is an antiviral nucleotide reverse transcriptase inhibitor us
 | molecule | role | molar mass (g/mol) | formula | source | PubChem | records |
 |---|---|---|---|---|---|---|
 | adefovir dipivoxil | parent | 501.471 | C20H32N5O8P | DrugBank | [60871](https://pubchem.ncbi.nlm.nih.gov/compound/60871) | Dong_2024 |
-| adefovir | metabolite | — (mass units only) | — | — | — | — |
+| adefovir | metabolite | 273.189 | C8H12N5O4P | PubChem | [60172](https://pubchem.ncbi.nlm.nih.gov/compound/60172) | Dong_2024 |
 
 ## Extraction summary
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 12:56 | 3:04 | 0/2/0 | 0/0/0 | 0/0/0 | 131,135/9,291 | einfracz / qwen3.8-27b | 4 | 0/4 | 4/0 | 0 |
+| 2026-10-07 15:07 | 3:07 | 0/2/0 | 1/0/0 | 0/0/0 | 170,400/10,767 | ollama / glm-5.3-flash | 4 | 0/4 | 4/0 | 0 |
 
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Dong_2024_reference](drugs/drug_adefovir_dipivoxil/AdefovirDipivoxil_Dong2024_reference.md) | — | 1-compartment (no model) | 7 | Dong Q et al., Understanding adefovir pharmacokinetics…, European journal of clinica… (2024) | [10.1007/s00228-024-03673-x](https://doi.org/10.1007/s00228-024-03673-x) |
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Huang_2014_reference](drugs/drug_adefovir_dipivoxil/AdefovirDipivoxil_Huang2014_reference.md) | — | 1-compartment (no model) | 0 | Huang J et al., Population pharmacokinetics of adefovir…, International journal of cl… (2014) | [10.5414/CP201928](https://doi.org/10.5414/CP201928) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>STALE — current validate: rejected</sub><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Dong_2024_reference](drugs/drug_adefovir_dipivoxil/AdefovirDipivoxil_Dong2024_reference.md) | — | 1-compartment (no model) | 7 | Dong Q et al., Understanding adefovir pharmacokinetics…, European journal of clinica… (2024) | [10.1007/s00228-024-03673-x](https://doi.org/10.1007/s00228-024-03673-x) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>STALE — current validate: rejected</sub><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Huang_2014_reference](drugs/drug_adefovir_dipivoxil/AdefovirDipivoxil_Huang2014_reference.md) | — | 1-compartment (no model) | 0 | Huang J et al., Population pharmacokinetics of adefovir…, International journal of cl… (2014) | [10.5414/CP201928](https://doi.org/10.5414/CP201928) |
+
+## Pharmacodynamics (PD)
+
+| status | detail | about | model | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--green">extracted</span> | [Liu_2014_HBV_DNA](drugs/drug_adefovir_dipivoxil/pd_Liu_2014_HBV_DNA.md) | intracellular HBV replicative intermediates ← adefovir · direct sigmoid Emax (Hill) effect | — | Liu Y et al., rtM204Q may serve as a novel lamivudine…, PloS one (2014) | [10.1371/journal.pone.0089015](https://doi.org/10.1371/journal.pone.0089015) |
 
 ## ADME sites
 
@@ -61,7 +67,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 - **PubMed hits:** 13 matched, 13 returned
 - **screened:** 2  ·  **relevant:** 2
-- **records:** 2  ·  extracted 0  ·  needs_review 0  ·  rejected 2  ·  stale 0
+- **records:** 2  ·  extracted 0  ·  needs_review 0  ·  rejected 2  ·  stale 2
 - **scholar-agent fallback query used:** not captured
 
 ## Full text wanted
@@ -70,23 +76,25 @@ _1 paper(s) judged relevant from the abstract, with no full text on disk — pay
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Huang_2014.pdf` | Huang J et al., Population pharmacokinetics of adefovir…, International journal of cl… (2014) | popPK | 10 | [10.5414/CP201928](https://doi.org/10.5414/CP201928) | [24219967](https://pubmed.ncbi.nlm.nih.gov/24219967) | The paper reports a population PK model with explicit numeric values for CL, V2, Q, V3, and Ka in the abstract. |
+| `Huang_2014.pdf` | Huang J et al., Population pharmacokinetics of adefovir…, International journal of cl… (2014) | popPK | 10 | [10.5414/CP201928](https://doi.org/10.5414/CP201928) | [24219967](https://pubmed.ncbi.nlm.nih.gov/24219967) | Population PK model of adefovir dipivoxil with all numeric parameters (CL, V2, Q, V3, ka, lag time) reported directly in the abstract. |
 
-<sub>queue written 2026-10-07T12:53:54.640041+00:00</sub>
+<sub>queue written 2026-10-07T15:04:52.134120+00:00</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Fu_2007 | irrelevant | 0 | 0 | The study focuses on the in vitro anti-HBV activity and stability of novel prodrugs, using adefovir dipivoxil only as a positive control without reporting its quantitative pharmacokinetic parameters. |
-| popPK | Fu_2008 | irrelevant | 0 | 0 | This is a medicinal chemistry study focused on the design and synthesis of new prodrugs with in vitro antiviral activity, reporting no pharmacokinetic disposition parameters for adefovir dipivoxil. |
-| popPK | Lee_2014 | irrelevant | 0 | 0 | The study evaluates renal function (eGFR) outcomes in a clinical trial comparing antiviral regimens, rather than reporting quantitative pharmacokinetic disposition parameters for adefovir dipivoxil. |
-| popPK | Li_2019 | irrelevant | 1 | 0 | The paper describes in vitro studies on adefovir derivatives (specifically compound 6c) with adefovir dipivoxil serving only as a comparator, and no quantitative PK parameters for adefovir dipivoxil are provided in the text. |
-| popPK | Liu_2015 | irrelevant | 0 | 0 | The study focuses on viral resistance and EC50 values in cell culture, not pharmacokinetic disposition parameters like clearance or volume of distribution. |
-| popPK | Pfister_2002 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of amprenavir; adefovir dipivoxil is mentioned only as a background medication and no PK parameters for it are reported. |
-| popPK | Pfister_2003 | irrelevant | 0 | 0 | The study models the pharmacokinetics of efavirenz, nelfinavir, and indinavir, while adefovir dipivoxil is only mentioned as part of the background regimen. |
-| popPK | Su_2018 | irrelevant | 0 | 0 | The study assesses renal function (eGFR/Cr) safety in chronic hepatitis B patients treated with adefovir, but does not report pharmacokinetic parameters (CL, V, ka, t1/2) for adefovir. |
-| popPK | Svarovskaia_2013 | irrelevant | 0 | 0 | The study evaluates viral load decline kinetics (pharmacodynamics) in patients, not the pharmacokinetic parameters of adefovir dipivoxil. |
+| popPK | Fu_2007 | irrelevant | 0 | 0 | Adefovir dipivoxil is only a comparator in an in-vitro synthesis/antiviral study; no PK disposition parameters for it are reported. |
+| popPK | Fu_2008 | irrelevant | 0 | 0 | This is a medicinal chemistry/antiviral activity study of prodrug design; adefovir dipivoxil is only a lead comparator and no PK parameters are reported. |
+| popPK | Lee_2014 | irrelevant | 0 | 0 | Clinical efficacy study of renal function (eGFR) outcomes; no PK disposition parameters for adefovir are reported. |
+| popPK | Li_2019 | irrelevant | 2 | 1 | Adefovir dipivoxil is only a comparator; PK data concern derivative 6c and no numeric disposition parameters appear in the evidence. |
+| popPK | Liu_2014 | irrelevant | 0 | 0 | This is an HBV drug-resistance study; adefovir dipivoxil is only a rescue therapy/comparator with EC50 susceptibility data, no PK disposition parameters. |
+| popPK | Liu_2015 | irrelevant | 0 | 0 | This is a virology/resistance study reporting EC50 values in cell culture, not pharmacokinetic disposition parameters for adefovir dipivoxil. |
+| popPK | Pfister_2002 | irrelevant | 0 | 0 | Adefovir dipivoxil is only a background co-administered medication; the PK model and parameters concern amprenavir, not adefovir. |
+| popPK | Pfister_2003 | irrelevant | 0 | 0 | Adefovir dipivoxil is only a co-administered drug in the study; all PK parameters reported are for efavirenz, nelfinavir, and indinavir, not adefovir. |
+| popPK | Qi_2012 | irrelevant | 0 | 0 | In vitro antiviral study of a heteropolytungstate; adefovir dipivoxil is only a comparator with EC50/CC50 values, no PK parameters. |
+| popPK | Su_2018 | irrelevant | 0 | 0 | This is a renal-safety (eGFR) trial of adefovir dipivoxil plus PEG-IFN; no PK disposition parameters (CL, V, ka, half-life, or PK model) for adefovir are reported. |
+| popPK | Svarovskaia_2013 | irrelevant | 0 | 0 | This is a viral resistance/response study with no PK disposition parameters for adefovir dipivoxil. |
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-10-07 12:54 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-10-07 15:04 UTC</sub>

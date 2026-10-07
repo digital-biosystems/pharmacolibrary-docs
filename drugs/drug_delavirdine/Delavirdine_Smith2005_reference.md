@@ -4,7 +4,7 @@
 
 # delavirdine — `Delavirdine_Smith2005_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -14,17 +14,25 @@
 
 **Model:** No model was generated from this record.
 
-> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+### Reviewer guidance
+
+**The record was rejected because V(max) is 1376 mg/day, a mass rate incompatible with volume of distribution.**
+
+The V(max) parameter carries a value of 1376 mg/day, but its label and meaning describe it as a volume of distribution. This creates a fundamental dimensional error in the model structure. Additionally, the record relies solely on abstract summary statistics rather than a fitted model. Extracted — delavirdine: Vss 67.6 L, CL/F 19.8 L/h, Km 6.3 micromol/L, CL/F 0.57 L/h, V/F 24.7 L, V 1.38e+03 mg/day.
+
+<sub>reviewed by qwen3.8-27b</sub>
+
+> ⚠️ **STALE** — review status `rejected` (reviewed 2026-10-07 14:20:06.926377+00:00) predates the upstream re-run (2026-10-07 15:56:22.378457+00:00). Current validate status: `rejected`.
 
 ## Citation
 Smith PF et al., Population pharmacokinetics of delavird…, Clinical pharmacokinetics (2005)
   ·  DOI: [10.2165/00003088-200544010-00004](https://doi.org/10.2165/00003088-200544010-00004)
 
 ## Model component
-<dbs-pgx drug="delavirdine" model-id="Delavirdine_Smith2005_reference" status="rejected" stale="false" population="adult HIV-infected individuals" measured-compound="delavirdine" parameterization="apparent" topology="parent_metabolite"></dbs-pgx>
+<dbs-pgx drug="delavirdine" model-id="Delavirdine_Smith2005_reference" status="rejected" stale="true" population="HIV-infected adults (ACTG 260/261)" measured-compound="delavirdine" parameterization="apparent" topology="manual_model_class"></dbs-pgx>
 
-**Model structure:** parent + metabolite; no model was built for this record.  
-**Parameters:** 6 extracted.
+**Model structure:** nonlinear / manual; no model was built for this record.  
+**Parameters:** 5 extracted.
 
 **Parameterization:** CL/F, V/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
@@ -34,9 +42,8 @@ Smith PF et al., Population pharmacokinetics of delavird…, Clinical pharmacoki
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
 | volume of distribution at steady state | `Q65` · Vss | 67.6 | L | 0.0676 | [l] | not captured | llm_corrected (0.6) | Smith_2005:abstract | — | not captured |
-| intrinsic oral clearance | `Q27` · CL/F | 19.8 | L/h | 5.500000000000001e-06 | [l] / [h] | not captured | llm_confirmed (0.6) | Smith_2005:abstract | — | not captured |
+| intrinsic oral clearance | `Q27` · CL/F | 19.8 | L/h | 5.500000000000001e-06 | [l] / [h] | not captured | boundary_llm_dim_refused (0.8) | Smith_2005:abstract | — | not captured |
 | concentration at half the maximum velocity of metabolism (V(max)) | `Q1` · Km | 6.3 | micromol/L | not captured | [µM] / [l] | not captured | llm (0.6) | Smith_2005:abstract | — | not captured |
-| first order oral clearance | `Q27` · CL/F | 0.57 | L/h | 1.5833333333333333e-07 | [l] / [h] | not captured | llm_confirmed (0.6) | Smith_2005:abstract | — | not captured |
 | apparent volume of distribution | `Q76` · V/F | 24.7 | L | 0.0247 | [l] | not captured | exact (1.0) | Smith_2005:abstract | — | not captured |
 | V(max) | `Q61` · V | 1376 | mg/day | not captured | [mg] / [d] | not captured | exact (1.0) | Smith_2005:abstract | — | not captured |
 
@@ -49,19 +56,20 @@ Smith PF et al., Population pharmacokinetics of delavird…, Clinical pharmacoki
 
 **Interpretation flags:**
 - unit_dimension_mismatch: 'concentration at half the maximum velocity of metabolism (V(max))' → Q1 (unit '[substance] / [length] ** 3' vs ontology '[mass] / [length] ** 3') — route to review
+- dropped duplicate Q27 ('first order oral clearance', value 0.57) — already have one for this compound
 - dropped duplicate Q27 ('apparent clearance', value 29.7) — already have one for this compound
 - unit_dimension_mismatch: 'V(max)' → Q61 (unit '[mass] / [time]' vs ontology '[length] ** 3') — route to review
 - apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=delavirdine
 - held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
-- topology: transfer parameter unlinked (Q100) — add Kfm/formation-rate/rate-constant to the ontology; routing to review
-- template fit: none — noncompartmental model — not a compartmental parent–metabolite model
+- topology: prose indicates saturable/MM/TMDD/time-varying kinetics — manual_model_class
+- template fit: none — nonlinear / manual model class
 - status held at route_to_review — not promoted
-- row roles (LLM): model_class=noncompartmental; 7/7 row label(s) assigned, 2 linked by role; re-tagged delavirdine→parent ×6
+- row roles (LLM): model_class=compartmental; 7/7 row label(s) assigned, 5 linked by role; re-tagged delavirdine→parent ×7
 - molar mass: no plausible PubChem entry for 'N-delavirdine' ('N-desalkyl delavirdine') — left in mass units
 - molar mass: none found for 'N-delavirdine' — its concentrations stay mass-only
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
-- skipped review gap-fill of V2: primary is PARENT_METABOLITE (peripheral family needs ≥2C)
-- skipped review gap-fill of Q: primary is PARENT_METABOLITE (peripheral family needs ≥2C)
+- skipped review gap-fill of V2: primary is MANUAL_MODEL_CLASS (peripheral family needs ≥2C)
+- skipped review gap-fill of Q: primary is MANUAL_MODEL_CLASS (peripheral family needs ≥2C)
 
 **Extraction notes:**
 - no GROBID TEI available — transcribed from abstract in Smith_2005_metadata.yaml (7 record(s)); values are summary statistics, not a fitted model
@@ -72,19 +80,17 @@ Smith PF et al., Population pharmacokinetics of delavird…, Clinical pharmacoki
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 6 | not captured | not captured | not captured |
+| C0_has_structural_params | pass | not captured | 5 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
 | C5_dimension_Q1 | fail | [substance] / [length] ** 3 | micromol/L | not captured | not captured | ['Smith_2005:abstract'] |
-| C5_dimension_Q27 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Smith_2005:abstract'] |
 | C5_dimension_Q27 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Smith_2005:abstract'] |
 | C5_dimension_Q61 | fail | [mass] / [time] | mg/day | not captured | not captured | ['Smith_2005:abstract'] |
 | C5_dimension_Q65 | pass | [length] ** 3 | not captured | not captured | not captured | ['Smith_2005:abstract'] |
 | C5_dimension_Q76 | pass | [length] ** 3 | not captured | not captured | not captured | ['Smith_2005:abstract'] |
 | C7_apparent_coherence | pass | not captured | not captured | not captured | not captured | not captured |
-| C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
+| C8_topology | fail | not captured | not captured | not captured | not captured | not captured |
 | C9_phys_window_Q27 | pass | clearance within physiological range | 19.8 L/h | not captured | not captured | ['Smith_2005:abstract'] |
-| C9_phys_window_Q27 | pass | clearance within physiological range | 0.57 L/h | not captured | not captured | ['Smith_2005:abstract'] |
 | C9_phys_window_Q65 | pass | volume within physiological range | 67.6 L | not captured | not captured | ['Smith_2005:abstract'] |
 | C9_phys_window_Q76 | pass | volume within physiological range | 24.7 L | not captured | not captured | ['Smith_2005:abstract'] |
 
@@ -111,4 +117,4 @@ _No web simulator for this record: its structure has no shared WebAssembly templ
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 13:34 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 15:56 UTC</sub>

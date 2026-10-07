@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> The record indicates that verapamil concentrations drive the PR interval via an Emax model with a proportional effect form and stimulation direction, but the paper excerpts are unavailable to confirm the specific mechanism or provide key potency and rate values.
+>
+> <sub>in the paper's terms — summarised by qwen3.8:27b-mtp-q8_0 from the paper's text; not checked by a person</sub>
+
 - **paper:** `Bergenholm_2016`
 - **model family:** `emax`
 - **driver:** `cited_pk`

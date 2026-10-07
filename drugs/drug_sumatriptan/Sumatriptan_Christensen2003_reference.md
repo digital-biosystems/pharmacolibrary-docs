@@ -1,5 +1,4 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N02C&quot;,&quot;href&quot;:&quot;atc/N02C.md&quot;},{&quot;label&quot;:&quot;sumatriptan&quot;,&quot;href&quot;:&quot;drugs/drug_sumatriptan/&quot;},{&quot;label&quot;:&quot;Christensen_2003 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Sumatriptan_Cosson1999_reference&quot;,&quot;label&quot;:&quot;Cosson_1999_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_sumatriptan/Sumatriptan_Cosson1999_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -25,13 +24,13 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on how the
 
 <sub>reviewed by glm-5.3-flash</sub>
 
-> ⚠️ **STALE** — review status `rejected` (reviewed 2026-09-28 14:40:31.813303+00:00) predates the upstream re-run (2026-10-07 06:40:15.648787+00:00). Current validate status: `rejected`.
+> ⚠️ **STALE** — review status `rejected` (reviewed 2026-09-28 14:40:31.813303+00:00) predates the upstream re-run (2026-10-07 15:44:50.570260+00:00). Current validate status: `rejected`.
 
 ## Citation
 Christensen ML et al., Pharmacokinetics of sumatriptan nasal s…, Journal of clinical pharmac… (2003)
 
 ## Model component
-<dbs-pgx drug="sumatriptan" model-id="Sumatriptan_Christensen2003_reference" status="rejected" stale="true" population="adolescent migraineurs" measured-compound="sumatriptan" parameterization="apparent" topology="1C"></dbs-pgx>
+<dbs-pgx drug="sumatriptan" model-id="Sumatriptan_Christensen2003_reference" status="rejected" stale="true" population="adolescents with migraine" measured-compound="sumatriptan" parameterization="apparent" topology="1C"></dbs-pgx>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 5 extracted.
@@ -43,9 +42,9 @@ Christensen ML et al., Pharmacokinetics of sumatriptan nasal s…, Journal of cl
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| Cmax | `Q32` · Cmax | 13.9 | ng/mL | not captured | [ng] / [ml] | not captured | exact (1.0) | Christensen_2003:abstract, Christensen_2003:abstract | — | not captured |
-| AUC infinity | `Q17` · AUC∞ | 57.3 | ng/mL.h | not captured | [ng] / [[h] · [ml]] | not captured | llm_corrected (0.6) | Christensen_2003:abstract, Christensen_2003:abstract | — | not captured |
-| t1/2 | `Q57` · t1/2z | 2.0 | hours | 7200.0 | [h] | not captured | exact (1.0) | Christensen_2003:abstract, Christensen_2003:abstract | — | not captured |
+| Cmax | `Q32` · Cmax | 13.9 | ng/mL | not captured | [ng] / [ml] | not captured | exact (1.0) | Christensen_2003:abstract | — | not captured |
+| AUC infinity | `Q17` · AUC∞ | 57.3 | ng/mL.h | not captured | [ng] / [[h] · [ml]] | not captured | llm_corrected (0.6) | Christensen_2003:abstract | — | not captured |
+| t1/2 | `Q57` · t1/2z | 2.0 | hours | 7200.0 | [h] | not captured | exact (1.0) | Christensen_2003:abstract | — | not captured |
 | CL/F | `Q27` · CL/F | 316 | L | not captured | [l] | not captured | exact (1.0) | Christensen_2003:abstract | — | not captured |
 | Vd/F | `Q76` · V/F | 1070 | L | 1.07 | [l] | not captured | exact (1.0) | Christensen_2003:abstract | — | not captured |
 
@@ -66,7 +65,7 @@ Christensen ML et al., Pharmacokinetics of sumatriptan nasal s…, Journal of cl
 - skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
 
 **Extraction notes:**
-- no GROBID TEI available — transcribed from abstract in Christensen_2003_metadata.yaml (8 record(s)); values are summary statistics, not a fitted model
+- no GROBID TEI available — transcribed from abstract in Christensen_2003_metadata.yaml (5 record(s)); values are summary statistics, not a fitted model
 
 ## Validation
 
@@ -103,10 +102,10 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 | C0_has_structural_params | pass | not captured | 5 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
-| C5_dimension_Q17 | pass | [mass] * [time] / [length] ** 3 | not captured | not captured | not captured | ['Christensen_2003:abstract', 'Christensen_2003:abstract'] |
+| C5_dimension_Q17 | pass | [mass] * [time] / [length] ** 3 | not captured | not captured | not captured | ['Christensen_2003:abstract'] |
 | C5_dimension_Q27 | fail | [length] ** 3 | L | not captured | not captured | ['Christensen_2003:abstract'] |
-| C5_dimension_Q32 | pass | [mass] / [length] ** 3 | not captured | not captured | not captured | ['Christensen_2003:abstract', 'Christensen_2003:abstract'] |
-| C5_dimension_Q57 | pass | [time] | not captured | not captured | not captured | ['Christensen_2003:abstract', 'Christensen_2003:abstract'] |
+| C5_dimension_Q32 | pass | [mass] / [length] ** 3 | not captured | not captured | not captured | ['Christensen_2003:abstract'] |
+| C5_dimension_Q57 | pass | [time] | not captured | not captured | not captured | ['Christensen_2003:abstract'] |
 | C5_dimension_Q76 | pass | [length] ** 3 | not captured | not captured | not captured | ['Christensen_2003:abstract'] |
 | C7_apparent_coherence | pass | not captured | not captured | not captured | not captured | not captured |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
@@ -135,4 +134,4 @@ _No web simulator for this record: its structure has no shared WebAssembly templ
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 06:40 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 15:44 UTC</sub>

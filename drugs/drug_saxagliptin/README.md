@@ -27,19 +27,19 @@ Saxagliptin is a dipeptidyl peptidase-4 inhibitor used to lower blood sugar in a
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-05 03:48 | 9:47 | 0/0/1 | 0/0/1 | 0/0/0 | 205,401/24,909 | ollama / qwen3.8:27b-mtp-q8_0 | 8 | 1/7 | 6/2 | 0 |
+| 2026-10-07 16:15 | 1:19 | 0/0/1 | 0/0/1 | 0/0/0 | 99,521/3,582 | einfracz / qwen3.8-27b | 11 | 1/10 | 9/2 | 0 |
 
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.878). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span><br><sub>blocking: C6_cl_magnitude failed (ratio None)</sub><br><sub>route_to: `human_review`</sub> | [Wang_2024_reference](drugs/drug_saxagliptin/Saxagliptin_Wang2024_reference.md) | — | parent + metabolite (no model) | 16 | Wang T et al., Pharmacokinetic/Pharmacodynamic modelli…, BMC pharmacology & toxicolo… (2024) | [10.1186/s40360-024-00757-3](https://doi.org/10.1186/s40360-024-00757-3) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.878). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span><br><sub>STALE — current validate: needs_review</sub><br><sub>blocking: C6_cl_magnitude failed (ratio None)</sub><br><sub>route_to: `human_review`</sub> | [Wang_2024_reference](drugs/drug_saxagliptin/Saxagliptin_Wang2024_reference.md) | — | parent + metabolite (no model) | 16 | Wang T et al., Pharmacokinetic/Pharmacodynamic modelli…, BMC pharmacology & toxicolo… (2024) | [10.1186/s40360-024-00757-3](https://doi.org/10.1186/s40360-024-00757-3) |
 
 ## Pharmacodynamics (PD)
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span> | [Wang_2024_DPP_4_inhibition_ratio_2](drugs/drug_saxagliptin/pd_Wang_2024_DPP_4_inhibition_ratio_2.md) | DPP-4 inhibition ratio ← SAX · direct sigmoid Emax (Hill) effect | — | Wang T et al., Pharmacokinetic/Pharmacodynamic modelli…, BMC pharmacology & toxicolo… (2024) | [10.1186/s40360-024-00757-3](https://doi.org/10.1186/s40360-024-00757-3) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span> | [Wang_2024_InSAX](drugs/drug_saxagliptin/pd_Wang_2024_InSAX.md) | DPP-4 inhibition ratio ← SAX · direct sigmoid Emax (Hill) effect | — | Wang T et al., Pharmacokinetic/Pharmacodynamic modelli…, BMC pharmacology & toxicolo… (2024) | [10.1186/s40360-024-00757-3](https://doi.org/10.1186/s40360-024-00757-3) |
 
 ## ADME sites
 
@@ -67,13 +67,13 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 ## Coverage
 
 - **PubMed hits:** 42 matched, 42 returned
-- **screened:** 1  ·  **relevant:** 1
-- **records:** 1  ·  extracted 0  ·  needs_review 1  ·  rejected 0  ·  stale 0
+- **screened:** 3  ·  **relevant:** 3
+- **records:** 1  ·  extracted 0  ·  needs_review 1  ·  rejected 0  ·  stale 1
 - **scholar-agent fallback query used:** not captured
 
 ## Full text wanted
 
-_12 paper(s) judged relevant from the abstract, with no full text on disk — paywalled, or the resolver could not reach them. Follow the DOI, then save the PDF into `papers/` as `&lt;save as&gt;.pdf` and re-run the extraction._
+_9 paper(s) judged relevant from the abstract, with no full text on disk — paywalled, or the resolver could not reach them. Follow the DOI, then save the PDF into `papers/` as `&lt;save as&gt;.pdf` and re-run the extraction._
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
@@ -85,39 +85,35 @@ _12 paper(s) judged relevant from the abstract, with no full text on disk — pa
 | `Filippatos_2014.pdf` | Filippatos TD et al., The pharmacokinetic considerations and…, Expert opinion on drug meta… (2014) | pgx | 7 | [10.1517/17425255.2014.907274](https://doi.org/10.1517/17425255.2014.907274) | [24746233](https://www.ncbi.nlm.nih.gov/pubmed/24746233) | metadata signals extractable PGX data (CYP3A4, PK/PD-context) |
 | `Gao_2013.pdf` | Gao J et al., Influences of processed rhubarbs on the…, Journal of ethnopharmacology (2013) | pgx | 7 | [10.1016/j.jep.2012.11.030](https://doi.org/10.1016/j.jep.2012.11.030) | [23207062](https://www.ncbi.nlm.nih.gov/pubmed/23207062) | metadata signals extractable PGX data (CYP1A2, PK/PD-context) |
 | `Golightly_2012.pdf` | Golightly LK et al., Comparative clinical pharmacokinetics o…, Clinical pharmacokinetics (2012) | pgx | 7 | [10.1007/BF03261927](https://doi.org/10.1007/BF03261927) | [22686547](https://www.ncbi.nlm.nih.gov/pubmed/22686547) | metadata signals extractable PGX data (CYP3A4, PK/PD-context) |
-| `Lee_2024.pdf` | Lee JM et al., Physiologically Based Pharmacokinetic (…, Pharmaceutics (2024) | pgx | 7 | [10.3390/pharmaceutics16020280](https://doi.org/10.3390/pharmaceutics16020280) | [38399334](https://www.ncbi.nlm.nih.gov/pubmed/38399334) | metadata signals extractable PGX data (CYP3A, PK/PD-context) |
-| `Patel_2011.pdf` | Patel CG et al., Two-way pharmacokinetic interaction stu…, Clinical pharmacology : adv… (2011) | pgx | 7 | [10.2147/CPAA.S15227](https://doi.org/10.2147/CPAA.S15227) | [22287853](https://www.ncbi.nlm.nih.gov/pubmed/22287853) | metadata signals extractable PGX data (CYP3A4, PK/PD-context) |
-| `Song_2026.pdf` | Song IS et al., Identification of Reactive Metabolites…, Pharmaceutics (2026) | pgx | 7 | [10.3390/pharmaceutics18040483](https://doi.org/10.3390/pharmaceutics18040483) | [42076134](https://www.ncbi.nlm.nih.gov/pubmed/42076134) | metadata signals extractable PGX data (CYP1A2, PK/PD-context) |
 | `Upreti_2011.pdf` | Upreti VV et al., Effect of rifampicin on the pharmacokin…, British journal of clinical… (2011) | pgx | 7 | [10.1111/j.1365-2125.2011.03937.x](https://doi.org/10.1111/j.1365-2125.2011.03937.x) | [21651615](https://www.ncbi.nlm.nih.gov/pubmed/21651615) | metadata signals extractable PGX data (CYP3A4, PK/PD-context) |
 
-<sub>queue written 2026-10-05T03:39:15.840918+00:00</sub>
+<sub>queue written 2026-10-07T16:14:21.879126+00:00</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| PGx | Ali_2013 | not_relevant | 0 | 0 | The paper is a general safety and efficacy review that discusses drug-drug interactions (CYP3A4) and organ impairment, but does not report pharmacogenomic effects of specific gene variants on saxagliptin PK/PD. |
-| popPK | Anderson_2016 | relevant | 4 | 6 | The paper is a review that reports specific quantitative PK parameters (Vd, Cmax, AUC, half-life) for saxagliptin in humans, but lacks a compartmental model or clearance values. |
+| PGx | Ali_2013 | not_relevant | 0 | 0 | The text describes general safety, renal/hepatic dosing adjustments, and drug-drug interactions with CYP3A4, but does not report specific pharmacogenomic effects of gene variants on saxagliptin parameters. |
 | PD | Anderson_2016 | not_relevant | 1 | 0 | The text is a review abstract that qualitatively summarizes clinical efficacy and PK/PD properties without reporting specific numeric PD parameters or exposure-response models. |
-| PGx | Butrovich_2022 | not_relevant | 0 | 0 | The paper investigates the impact of chronic kidney disease (a disease state) on pharmacokinetics, not the effect of a specific gene variant or genotype. |
-| PGx | Dai_2024 | not_relevant | 0 | 0 | The paper investigates drug-drug interactions (sildenafil/macitentan) affecting saxagliptin PK, not pharmacogenomic effects of gene variants. |
-| PGx | Dave_2011 | not_relevant | 0 | 0 | The text is a general review of saxagliptin's mechanism and clinical use, mentioning renal impairment and CYP3A4 inhibitors but containing no information on gene variants or pharmacogenomic effects. |
-| PGx | Filippatos_2014 | not_relevant | 0 | 0 | The paper is a general review of DPP-4 inhibitors' pharmacokinetics and safety, mentioning saxagliptin's CYP3A4 metabolism but not reporting any specific gene variant or genotype effects on PK/PD parameters. |
-| PGx | Gao_2013 | not_relevant | 0 | 0 | The study investigates the effect of herbal extracts (processed rhubarbs) on drug metabolism, not the effect of a genetic variant or genotype. |
-| popPK | Gibbs_2012 | irrelevant | 0 | 0 | The paper is a meta-analysis of efficacy (HbA1c response) and DPP-4 inhibition, not a pharmacokinetic study reporting disposition parameters like clearance or volume for saxagliptin. |
-| PGx | Golightly_2012 | not_relevant | 0 | 0 | The paper is a general review of DPP-4 inhibitor pharmacokinetics and does not report any gene variant or genotype effects on saxagliptin PK/PD parameters. |
-| PGx | Hernández-Lorca_2025 | not_relevant | 2 | 1 | The paper is a narrative review focusing on dietary modulation of CYP3A4 and mentions saxagliptin only as an example of a substrate, without reporting specific pharmacogenomic effect sizes or quantitative PK/PD changes linked to gene variants. |
-| PGx | Kalliokoski_2010 | not_relevant | 0 | 0 | The paper explicitly states that SLCO1B1 polymorphism is unlikely to affect saxagliptin because the liver is not important for its elimination or action. |
-| PGx | Lee_2024 | not_relevant | 0 | 0 | The paper investigates a drug-drug interaction (CYP3A inhibition by nicardipine) using PBPK modeling, not a pharmacogenomic effect (gene variant/genotype) on saxagliptin PK/PD. |
-| PGx | Li_2021 | not_relevant | 0 | 0 | The paper focuses on drug-drug interactions (CYP3A4 inhibitors/inducers) and does not report pharmacogenomic effects of gene variants on saxagliptin PK/PD. |
-| PGx | Mansour_2022 | not_relevant | 0 | 0 | The study investigates a drug-drug interaction (sildenafil) and does not report any pharmacogenomic effects (gene variants) on saxagliptin PK/PD. |
-| PGx | Patel_2011 | not_relevant | 0 | 0 | The paper reports drug-drug interactions with CYP3A4 inhibitors/substrates, not pharmacogenomic effects based on genetic variants. |
-| PGx | Scheen_2010 | not_relevant | 0 | 0 | The paper reviews drug-drug interactions (pharmacokinetic interference by other drugs) rather than pharmacogenomic effects (gene variants) on saxagliptin PK/PD. |
-| PGx | Sivadas_2024 | not_relevant | 2 | 0 | The paper reports population allele frequencies and predicted drug-drug-gene interactions for saxagliptin, but does not report specific pharmacokinetic or pharmacodynamic effect sizes for gene variants. |
-| PGx | Song_2026 | not_relevant | 0 | 0 | The study focuses on identifying reactive metabolites in in vitro models (hepatocytes/organoids) and does not report pharmacogenomic effects on PK or PD parameters in humans. |
-| PGx | Su_2012 | not_relevant | 0 | 0 | The paper discusses the potential impact of CYP3A5 polymorphism but concludes it is unlikely to affect clearance, and does not report a measured pharmacogenomic effect on PK parameters. |
-| popPK | Tatosian_2013 | relevant | 8 | 2 | The study reports non-compartmental PK parameters (AUC, Cmax, t1/2) for saxagliptin in humans, but the specific numeric values are contained in Table 2 which is truncated in the provided evidence. |
-| PGx | Upreti_2011 | not_relevant | 0 | 0 | The study investigates a drug-drug interaction (rifampicin) rather than a pharmacogenomic effect (gene variant/genotype). |
+| PGx | Butrovich_2022 | not_relevant | 0 | 0 | The paper focuses on the impact of chronic kidney disease (CKD) on saxagliptin metabolism using a PBPK model, rather than investigating genetic variants (pharmacogenomics). |
+| PGx | Dai_2024 | not_relevant | 0 | 0 | The study investigates drug-drug interactions (CYP3A4 inhibition by sildenafil/macitentan), not the impact of a specific gene variant/genotype on pharmacokinetics. |
+| PGx | Dave_2011 | not_relevant | 0 | 0 | The text describes general pharmacology, clinical efficacy, and standard dosing adjustments for renal impairment/CYP3A4 inhibitors, but does not report specific gene variants or genotypes affecting saxagliptin PK/PD. |
+| PGx | Filippatos_2014 | not_relevant | 0 | 0 | The text is a review of general pharmacokinetic profiles and adverse effects of DPP-4 inhibitors and mentions saxagliptin's CYP3A4 metabolism, but it does not report specific genetic variants or genotypes affecting PK/PD parameters. |
+| PGx | Gao_2013 | not_relevant | 0 | 0 | The study investigates drug-herb interactions (processed rhubarbs affecting CYP enzymes) rather than pharmacogenomic effects caused by specific gene variants. |
+| popPK | Gibbs_2012 | irrelevant | 0 | 0 | The study is a pharmacodynamic meta-analysis modeling the relationship between DPP-4 inhibition and HbA1c response, not a pharmacokinetic study reporting disposition parameters like CL or V for saxagliptin. |
+| PGx | Golightly_2012 | not_relevant | 0 | 0 | The paper discusses the clinical pharmacokinetics of saxagliptin and its CYP3A4 metabolism but does not report the impact of any specific gene variant, genotype, or phenotype on its PK or PD parameters. |
+| PGx | Hernández-Lorca_2025 | not_relevant | 5 | 4 | The paper is a narrative review focusing on dietary modulation of CYP3A4; it mentions pharmacogenomics only as a factor influencing variability and does not report specific quantitative effects of gene variants on saxagliptin PK/PD. |
+| PGx | Kalliokoski_2010 | not_relevant | 0 | 0 | The paper explicitly states that the liver is not important for the elimination of saxagliptin and concludes that SLCO1B1 polymorphism is unlikely to affect its response, reporting no pharmacogenomic effect on its PK. |
+| PGx | Lee_2024 | not_relevant | 0 | 0 | The paper reports a CYP3A-mediated drug-drug interaction (saxagliptin and nicardipine) and does not involve genetic variants or pharmacogenomics. |
+| PGx | Li_2021 | not_relevant | 2 | 0 | The paper focuses on a physiological-based PK/PD (PBPK-DO) model for drug-drug interactions (DDI) with CYP3A4 modulators; while the supplementary material mentions a simulation for CYP3A4*22, no specific pharmacogenomic effect size or data for a gene variant's impact on saxagliptin's PK/PD is reported in the provided text. |
+| PGx | Mansour_2022 | not_relevant | 0 | 0 | The study investigates a drug-drug interaction (sildenafil) rather than a pharmacogenomic effect. |
+| PGx | Patel_2011 | not_relevant | 0 | 0 | The paper reports drug-drug interactions (CYP3A4 inhibitors), not pharmacogenomic effects (gene variants/genotypes). |
+| PGx | Pilon_2026 | not_relevant | 5 | 4 | The study identifies genetic associations with PD outcomes (HbA1c/hypoglycemia) but lacks specific fitted effect sizes for PK parameters or defined PD drug response mechanisms. |
+| PGx | Scheen_2010 | not_relevant | 0 | 0 | The paper discusses drug-drug interactions mediated by CYP3A4/5 enzymes, not genetic polymorphisms or pharmacogenomic effects. |
+| PGx | Sivadas_2024 | not_relevant | 0 | 0 | The paper reports allele frequencies of PGx variants and predicts drug-drug-gene interaction risks in the Indian population, but it does not report measured PK/PD parameter changes for saxagliptin in response to specific genotypes. |
+| PGx | Song_2026 | not_relevant | 0 | 0 | The study compares reactive metabolite formation of saxagliptin across different in vitro cell models (HLMs, CHHs, HHOs) without investigating gene variants or genotypes. |
+| PGx | Su_2012 | not_relevant | 1 | 0 | The paper reports general PK and metabolism involving CYP3A4/5 and concludes that CYP3A5 genetic polymorphism is unlikely to impact clearance, rather than reporting a specific quantitative pharmacogenomic effect. |
+| PGx | Upreti_2011 | not_relevant | 0 | 0 | The study investigates a drug-drug interaction (rifampicin) and does not involve a gene variant, genotype, or phenotype affecting the PK/PD of saxagliptin. |
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-10-05 03:39 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-10-07 16:14 UTC</sub>

@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;J06B&quot;,&quot;href&quot;:&quot;atc/J06B.md&quot;},{&quot;label&quot;:&quot;hepatitis B immunoglobulin&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;HepatitisBImmunoglobulin_Han2017_reference&quot;,&quot;label&quot;:&quot;Han_2017_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_hepatitis_b_immunoglobulin/HepatitisBImmunoglobulin_Han2017_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 # hepatitis B immunoglobulin
 
@@ -17,14 +18,14 @@ Hepatitis B immune globulin is a specific immunoglobulin (antibody) preparation 
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 14:30 | 0:53 | 0/2/0 | 0/0/0 | 0/0/0 | 32,633/1,059 | einfracz / qwen3.8-27b | 2 | 0/2 | 2/0 | 0 |
+| 2026-10-07 16:17 | 0:57 | 1/1/0 | 0/0/0 | 0/0/0 | 50,441/2,421 | ollama / glm-5.3-flash | 2 | 0/2 | 2/0 | 0 |
 
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Han_2017_reference](drugs/drug_hepatitis_b_immunoglobulin/HepatitisBImmunoglobulin_Han2017_reference.md) | — | 1-compartment (no model) | 0 | Han S et al., A 6-month mixed-effect pharmacokinetic…, Drug design, development an… (2017) | [10.2147/DDDT.S134711](https://doi.org/10.2147/DDDT.S134711) |
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Wahl_1983_reference](drugs/drug_hepatitis_b_immunoglobulin/HepatitisBImmunoglobulin_Wahl1983_reference.md) | — | 1-compartment (no model) | 0 | Wahl M et al., Recovery and turnover rate of hepatitis…, Developments in biological… (1983) | — |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>STALE — current validate: extracted</sub><br><sub>route_to: `engineer_replication`</sub> | [Han_2017_reference](drugs/drug_hepatitis_b_immunoglobulin/HepatitisBImmunoglobulin_Han2017_reference.md) | ▶ model + simulator | 1-compartment, IV | 2 | Han S et al., A 6-month mixed-effect pharmacokinetic…, Drug design, development an… (2017) | [10.2147/DDDT.S134711](https://doi.org/10.2147/DDDT.S134711) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>STALE — current validate: rejected</sub><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Wahl_1983_reference](drugs/drug_hepatitis_b_immunoglobulin/HepatitisBImmunoglobulin_Wahl1983_reference.md) | — | 1-compartment (no model) | 0 | Wahl M et al., Recovery and turnover rate of hepatitis…, Developments in biological… (1983) | — |
 
 <details class="legend">
 <summary>Badge legend — what each badge means</summary>
@@ -36,7 +37,7 @@ Hepatitis B immune globulin is a specific immunoglobulin (antibody) preparation 
 
 - **PubMed hits:** 4 matched, 4 returned
 - **screened:** 2  ·  **relevant:** 2
-- **records:** 2  ·  extracted 0  ·  needs_review 0  ·  rejected 2  ·  stale 0
+- **records:** 2  ·  extracted 1  ·  needs_review 0  ·  rejected 1  ·  stale 2
 - **scholar-agent fallback query used:** not captured
 
 ## Full text wanted
@@ -45,16 +46,16 @@ _1 paper(s) judged relevant from the abstract, with no full text on disk — pay
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Wahl_1983.pdf` | Wahl M et al., Recovery and turnover rate of hepatitis…, Developments in biological… (1983) | popPK | 9 | not captured | [6653889](https://pubmed.ncbi.nlm.nih.gov/6653889) | The study reports quantitative PK parameters (half-life 21.7 days, recovery/bioavailability ~19.2%) for hepatitis B immunoglobulin in human volunteers using a compartmental model. |
+| `Wahl_1983.pdf` | Wahl M et al., Recovery and turnover rate of hepatitis…, Developments in biological… (1983) | popPK | 6 | not captured | [6653889](https://pubmed.ncbi.nlm.nih.gov/6653889) | Reports half-life (21.7 d) and recovery/compartment-model uptake of HBIG in volunteers, but no CL/V values; numbers are in the abstract itself. |
 
-<sub>queue written 2026-10-07T14:29:15.805157+00:00</sub>
+<sub>queue written 2026-10-07T16:16:42.014707+00:00</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Anley_2023 | irrelevant | 0 | 0 | The paper is an epidemiological compartmental model of Hepatitis B virus transmission dynamics, not a pharmacokinetic study of hepatitis_b_immunoglobulin (HBIG). |
-| popPK | Bierhoff_2019 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of tenofovir (TFV) for hepatitis B treatment, not hepatitis_b_immunoglobulin. |
+| popPK | Anley_2023 | irrelevant | 0 | 0 | This is an epidemiological compartmental model of HBV vertical transmission; HBIG is only an intervention with assumed efficacy, no PK parameters (CL, V, half-life) for hepatitis_b_immunoglobulin are reported. |
+| popPK | Bierhoff_2019 | irrelevant | 0 | 0 | This is a systematic review of tenofovir pharmacokinetics; hepatitis B immunoglobulin is only mentioned as a co-intervention, with no HBIG PK parameters reported. |
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-10-07 14:29 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-10-07 16:16 UTC</sub>

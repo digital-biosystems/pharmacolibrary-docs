@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N02A&quot;,&quot;href&quot;:&quot;atc/N02A.md&quot;},{&quot;label&quot;:&quot;tramadol&quot;,&quot;href&quot;:&quot;drugs/drug_tramadol/&quot;},{&quot;label&quot;:&quot;Elghazali_2008 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Tramadol_Dziubina2026_reference&quot;,&quot;label&quot;:&quot;Dziubina_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tramadol/Tramadol_Dziubina2026_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Tramadol_Ekstrand2026_reference&quot;,&quot;label&quot;:&quot;Ekstrand_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tramadol/Tramadol_Ekstrand2026_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Tramadol_Garrido2006_reference&quot;,&quot;label&quot;:&quot;Garrido_2006_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tramadol/Tramadol_Garrido2006_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Tramadol_Pypendop2008_reference&quot;,&quot;label&quot;:&quot;Pypendop_2008_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tramadol/Tramadol_Pypendop2008_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Tramadol_SoriaChacartegui2026_reference&quot;,&quot;label&quot;:&quot;Soria-Chacartegui_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tramadol/Tramadol_SoriaChacartegui2026_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Tramadol_Bao2023_reference&quot;,&quot;label&quot;:&quot;Bao_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tramadol/Tramadol_Bao2023_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Tramadol_Ekstrand2026_reference&quot;,&quot;label&quot;:&quot;Ekstrand_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tramadol/Tramadol_Ekstrand2026_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Tramadol_Garrido2006_reference&quot;,&quot;label&quot;:&quot;Garrido_2006_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tramadol/Tramadol_Garrido2006_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Tramadol_Pypendop2008_reference&quot;,&quot;label&quot;:&quot;Pypendop_2008_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tramadol/Tramadol_Pypendop2008_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Tramadol_Bao2023_reference&quot;,&quot;label&quot;:&quot;Bao_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tramadol/Tramadol_Bao2023_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -27,7 +27,7 @@ Independently confirmed by `gpt-oss:120b`.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
-> ⚠️ **STALE** — review status `curated_candidate` (reviewed 2026-10-05 09:33:11.189075+00:00) predates the upstream re-run (2026-10-07 05:46:51.743656+00:00). Current validate status: `needs_review`.
+> ⚠️ **STALE** — review status `curated_candidate` (reviewed 2026-10-05 09:33:11.189075+00:00) predates the upstream re-run (2026-10-07 15:14:34.490983+00:00). Current validate status: `needs_review`.
 
 ## Citation
 Elghazali M et al., The pharmacokinetics, metabolism and ur…, Veterinary journal (London,… (2008)
@@ -37,7 +37,7 @@ Elghazali M et al., The pharmacokinetics, metabolism and ur…, Veterinary journ
 <dbs-pgx drug="tramadol" model-id="Tramadol_Elghazali2008_reference" status="needs_review" stale="true" population="camels" measured-compound="tramadol" parameterization="mechanistic" topology="1C"></dbs-pgx>
 
 **Model structure:** 1-compartment; no model was built for this record.  
-**Parameters:** 10 extracted.
+**Parameters:** 11 extracted.
 
 **Parameterization:** mechanistic.
 
@@ -55,6 +55,7 @@ Elghazali M et al., The pharmacokinetics, metabolism and ur…, Veterinary journ
 | time (T(max)) | `Q56` · tmax | 0.57 | h | 2052.0 | [h] | not captured | llm (0.6) | Elghazali_2008:abstract | — | not captured |
 | absorption half-life (t(1/2 ka)) | `Q95` · t1/2ka | 0.17 | h | 612.0 | [h] | not captured | llm_corrected (0.6) | Elghazali_2008:abstract | — | not captured |
 | (Vd(area)) | `Q61` · V | 8.94 | L kg(-1) | 0.6258 | [l] / [kg] | not captured | llm_confirmed (0.6) | Elghazali_2008:abstract | — | not captured |
+| mean systemic bioavailability (F) | `Q40` · Fab | 101.62 | % | not captured | not captured | not captured | llm_confirmed (0.6) | Elghazali_2008:abstract | — | not captured |
 | kₐ | `Q49` · kabs | 0.65 | 1/h | 0.00018055555555555557 | 1/h | not captured | review_gapfill (0.7) | Ekstrand_2026:review | — | not captured |
 
 <details class="legend">
@@ -67,10 +68,8 @@ Elghazali M et al., The pharmacokinetics, metabolism and ur…, Veterinary journ
 **Interpretation flags:**
 - unit_dimension_unknown: 'L h kg(-1)' (CL)
 - unit_dimension_unknown: 'mg h L(-1)' (AUC∞)
-- dropped duplicate Q60 ('(t(1/2)(beta))', value '3.24') — already have one for this compound
-- dropped duplicate Q17 ('(AUC(0-infinity))', value '1.27') — already have one for this compound
-- dropped unlinked row (NIL): 'urinary detection times for tramadol' — extend the ontology if this is a real PK parameter (source ['Elghazali_2008:abstract'])
-- dropped unlinked row (NIL): 'urinary detection times for ... O-desmethyltramadol' — extend the ontology if this is a real PK parameter (source ['Elghazali_2008:abstract'])
+- dropped duplicate Q60 ('(t(1/2)(beta))', value 3.24) — already have one for this compound
+- dropped duplicate Q17 ('(AUC(0-infinity))', value 1.27) — already have one for this compound
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=tramadol
 - held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
 - structure disagreement: deterministic 1C vs LLM 2C — review compartment count
@@ -79,10 +78,9 @@ Elghazali M et al., The pharmacokinetics, metabolism and ur…, Veterinary journ
 - skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
 - skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
 - gap-filled Q49 (kabs) from Ekstrand_2026's review values (primary lacked it)
-- skipped review gap-fill of TLAG from Roulet_2021: its label names a different analyte ('actiona') — 'Onset of actiona Tramadol M1'
 
 **Extraction notes:**
-- no GROBID TEI available — transcribed from abstract in Elghazali_2008_metadata.yaml (14 record(s)); values are summary statistics, not a fitted model
+- no GROBID TEI available — transcribed from abstract in Elghazali_2008_metadata.yaml (12 record(s)); values are summary statistics, not a fitted model
 
 ## Validation
 
@@ -105,7 +103,7 @@ _Every reader agrees on every compared field of this record._
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 9 | not captured | not captured | not captured |
+| C0_has_structural_params | pass | not captured | 10 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
 | C5_dimension_Q32 | pass | [mass] / [length] ** 3 | not captured | not captured | not captured | ['Elghazali_2008:abstract'] |
@@ -170,4 +168,4 @@ _No web simulator for this record: its structure has no shared WebAssembly templ
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 05:46 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 15:14 UTC</sub>

@@ -1,7 +1,7 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C01E&quot;,&quot;href&quot;:&quot;atc/C01E.md&quot;},{&quot;label&quot;:&quot;ranolazine&quot;,&quot;href&quot;:&quot;drugs/drug_ranolazine/&quot;},{&quot;label&quot;:&quot;Celli\u00e8re_2025 \u00b7 PD placebo-corrected change from baseline in QTc interval duration&quot;}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# placebo-corrected change from baseline in QTc interval duration — PD  <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.429). The first reading is what the record holds.">cross-check: disputed</span>
+# placebo-corrected change from baseline in QTc interval duration — PD  <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.429). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="pk-legend"><summary>What the PGx badges mean — evidence, and whether a model runs</summary><table><tbody><tr><td><span class="pk-badge pk-badge--green">quantitative</span></td><td>the paper gives the effect of each phenotype (or genotype) on a named model parameter — a θ per category.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">qualitative</span></td><td>the paper links the gene to the drug but states no effect size on a model parameter, so it changes no model.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">guideline estimate</span></td><td>the effect comes from a CPIC / DPWG dosing guideline, not from this paper's numbers.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">safety allele</span></td><td>a risk allele for an adverse reaction (an HLA type, G6PD deficiency …): it changes no PK/PD parameter.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>the extraction is incomplete or inconsistent.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted.</td></tr><tr><td><span class="pk-badge pk-badge--green">▶ simulatable</span></td><td>the paper's popPK model runs per phenotype in the browser (Simulation tab); its PGx Modelica model is under Models.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">model only</span></td><td>a PGx Modelica model exists but has no in-browser simulator.</td></tr></tbody></table></details>
 
@@ -13,13 +13,13 @@
 
 ## What this record describes
 
-**As extracted:** Ranolazine (measured concentrations) drives placebo-corrected change from baseline in QTc interval duration (in ms): direct linear effect.
+**As extracted:** Ranolazine (measured concentrations) drives placebo-corrected change from baseline in QTc interval duration: direct linear effect.
 
 **Model:** No model was generated from this record.
 
-> Quinidine plasma concentration drives a stimulatory effect on placebo-corrected QTc change (ΔΔQTc, ms), best described by an Emax model (better fit than linear, log-linear, and sigmoid Emax by BICc); the paper does not report Emax, IC50/EC50, or gamma values, but the model-predicted effect at the geometric mean Cmax was 80.3 ms with the Emax model (86.6 ms with the linear model), and the concentration at which the upper limit of the 90% CI reaches 10 ms was 152.4 ng/mL (Emax) versus 105.5 ng/mL (linear).
+> Ranolazine plasma concentrations (ng/mL) were linearly related to the placebo-corrected change from baseline in QTc interval duration (ΔΔQTc, ms) via a direct additive effect, with a treatment intercept of 2.441 ms and a concentration slope of 0.004 ms per ng/mL. The paper does not specify a mechanistic basis for this linear relationship, noting only that the linear model was not the best-fitting model in all cases.
 >
-> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+> <sub>in the paper's terms — summarised by qwen3.8:27b-mtp-q8_0 from the paper's text; not checked by a person</sub>
 
 - **paper:** `Cellière_2025`
 - **model family:** `linear`
@@ -34,7 +34,7 @@ Cellière G et al., Beyond the linear model in concentratio…, Journal of pharm
 ## Parameters
 | role | label (paper) | Q-code · name | value | unit | value_si | link | source |
 |---|---|---|---|---|---|---|---|
-| PD (effect) | Treatment/Intercept(ϴ1) | `Q324` · not captured | 2.441 | not captured | not captured | llm (not captured) | Cellière_2025:pdv3 |
+| model term | Treatment/Intercept(ϴ1) | `Q900` · not captured | 2.441 | not captured | not captured | llm (not captured) | Cellière_2025:pdv3 |
 | PD (effect) | Concentration (ϴ2) | `Q335` · not captured | 0.004 | not captured | not captured | llm (not captured) | Cellière_2025:pdv3 |
 
 <details class="legend">

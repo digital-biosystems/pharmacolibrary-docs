@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N02A&quot;,&quot;href&quot;:&quot;atc/N02A.md&quot;},{&quot;label&quot;:&quot;oxymorphone&quot;,&quot;href&quot;:&quot;drugs/drug_oxymorphone/&quot;},{&quot;label&quot;:&quot;Noh_2017 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Oxymorphone_Noh2017_reference&quot;,&quot;label&quot;:&quot;Noh_2017_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_oxymorphone/Oxymorphone_Noh2017_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Oxymorphone_Sadiq2013_bootstrap_resampling&quot;,&quot;label&quot;:&quot;Sadiq_2013_bootstrap_resampling&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_oxymorphone/Oxymorphone_Sadiq2013_bootstrap_resampling.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Oxymorphone_Sadiq2013_original_data_set&quot;,&quot;label&quot;:&quot;Sadiq_2013_original_data_set&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_oxymorphone/Oxymorphone_Sadiq2013_original_data_set.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Oxymorphone_Svensson2017_reference&quot;,&quot;label&quot;:&quot;Svensson_2017_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_oxymorphone/Oxymorphone_Svensson2017_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Oxymorphone_Noh2017_reference&quot;,&quot;label&quot;:&quot;Noh_2017_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_oxymorphone/Oxymorphone_Noh2017_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Oxymorphone_Sadiq2013_reference&quot;,&quot;label&quot;:&quot;Sadiq_2013_bootstrap_resampling&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_oxymorphone/Oxymorphone_Sadiq2013_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Oxymorphone_Sadiq2013_reference&quot;,&quot;label&quot;:&quot;Sadiq_2013_original_data_set&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_oxymorphone/Oxymorphone_Sadiq2013_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Oxymorphone_Svensson2017_reference&quot;,&quot;label&quot;:&quot;Svensson_2017_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_oxymorphone/Oxymorphone_Svensson2017_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # oxymorphone — `Oxymorphone_Noh2017_reference`
 
-> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span>
+> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -13,18 +13,26 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
-> **Species: mouse.** This record comes from an animal study (mouse), not from people. The values, the model and its simulation are shown as the paper reports them — they describe that system, not human pharmacology (read from the LLM relevance screen, p(non-human) 1.00).
+> **Species: rat.** This record comes from an animal study (rat), not from people. The values, the model and its simulation are shown as the paper reports them — they describe that system, not human pharmacology (read from the LLM relevance screen, p(non-human) 1.00).
 
 **Model:** A simulatable model was generated — see the **Models** and **Simulation** tabs.
 
-> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+### Reviewer guidance
+
+**Bioavailability F and back-transfer clearance k21 were left at library defaults, leaving the oxymorphone two-compartment model unsupported by Noh_2017.**
+
+The record contains explicit estimates for total clearance, central volume, intercompartmental clearance, and absorption rate constant. However, bioavailability and the back-transfer clearance rate constant were not extracted from the paper. Consequently, the model relies on generic library placeholders for these specific parameters rather than study-specific evidence. Extracted — oxymorphone: CL 0.2 L/min/kg, V1 19.5 L, Q 1.57 L/h/kg, kabs 15.3 h−1.
+
+<sub>reviewed by qwen3.8-27b</sub>
+
+> ⚠️ **STALE** — review status `needs_review` (reviewed 2026-10-07 06:18:00.491884+00:00) predates the upstream re-run (2026-10-07 14:59:31.897342+00:00). Current validate status: `extracted`.
 
 ## Citation
 Noh K et al., Calculation of a First-In-Man Dose of 7…, Biomolecules & therapeutics (2017)
   ·  DOI: [10.4062/biomolther.2016.192](https://doi.org/10.4062/biomolther.2016.192)
 
 ## Model component
-<dbs-pgx drug="oxymorphone" model-id="Oxymorphone_Noh2017_reference" status="extracted" stale="false" population="" measured-compound="oxymorphone" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<dbs-pgx drug="oxymorphone" model-id="Oxymorphone_Noh2017_reference" status="extracted" stale="true" population="" measured-compound="oxymorphone" parameterization="mechanistic" topology="2C"></dbs-pgx>
 
 **Model structure:** 2-compartment, oral mammillary model — template `PK_2C_enteral`.  
 **Parameters:** 4 extracted.
@@ -35,9 +43,9 @@ Noh K et al., Calculation of a First-In-Man Dose of 7…, Biomolecules & therape
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
 | total CL | `Q22` · CL | 0.2 | L/min/kg | 0.00023333333333333333 | L/h | not captured | review (0.7) | Noh_2017:review | — | not captured |
-| Vc | `Q63` · V1 | 19.5 | L | 0.0195 | L | not captured | review (0.7) | Noh_2017:review | — | not captured |
+| the Vd | `Q61` · V | 5.0 | L/kg | 0.35000000000000003 | L | not captured | review (0.7) | Noh_2017:review | — | not captured |
 | Q | `Q30` · Q | 1.57 | L/h/kg | 3.052777777777778e-05 | L/h | not captured | review (0.7) | Noh_2017:review | — | not captured |
-| ka | `Q49` · kabs | 15.3 | h−1 | 0.00425 | 1/h | not captured | review (0.7) | Noh_2017:review | — | not captured |
+| The estimated ka | `Q49` · kabs | 15.3 | h−1 | 0.00425 | 1/h | not captured | review (0.7) | Noh_2017:review | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -65,11 +73,22 @@ Noh K et al., Calculation of a First-In-Man Dose of 7…, Biomolecules & therape
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Noh_2017:review'] |
 | C5_dimension_Q30 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Noh_2017:review'] |
 | C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['Noh_2017:review'] |
-| C5_dimension_Q63 | pass | [length] ** 3 | not captured | not captured | not captured | ['Noh_2017:review'] |
+| C5_dimension_Q61 | pass | [length] ** 3 | not captured | not captured | not captured | ['Noh_2017:review'] |
 | C6_cl_magnitude | pass | &lt;= 90.0 L/h | 0.2 | not captured | not captured | ['Noh_2017:review'] |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
 | C9_phys_window_Q22 | pass | clearance within physiological range | 840 L/h | not captured | not captured | ['Noh_2017:review'] |
-| C9_phys_window_Q63 | pass | volume within physiological range | 19.5 L | not captured | not captured | ['Noh_2017:review'] |
+| C9_phys_window_Q61 | pass | volume within physiological range | 350 L | not captured | not captured | ['Noh_2017:review'] |
+
+**Reviewer per-scenario checks:**
+
+| check | scenario | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|---|
+| T0_analyte_identity | not captured | pass | not captured | not captured | not captured | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | not captured | skipped | not captured | not captured | not captured | no covariate effects in record |
+| T3_output_variable | not captured | pass | C_central (measured=oxymorphone) | central.C | not captured | output must be the measured/analyte compartment |
+| T3_param_coverage | not captured | pass | 4 scholar param(s) emitted or defaulted | 4 covered | not captured | all structural parameters accounted for |
+| T3_topology_template | not captured | pass | 2C → PK_2C* | PK_2C_enteral | not captured | engineer template must match the scholar topology |
+| T6_deviations | not captured | fail | not captured | defaulted_parameters: not acceptable | not captured | LLM adjudication → deterministic rule |
 
 <details class="legend">
 <summary>Check legend — what each column means</summary>
@@ -79,6 +98,9 @@ Noh K et al., Calculation of a First-In-Man Dose of 7…, Biomolecules & therape
 ## Raw artifacts
 
 - scholar stages: `../../../knowledgebase/drugs/drug_oxymorphone/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Noh_2017` / `Noh_2017::reference`)
+- model: `../../../knowledgebase/drugs/drug_oxymorphone/models/modelica/Oxymorphone_Noh2017_reference.mo`
+- deviation: `../../../knowledgebase/drugs/drug_oxymorphone/models/modelica/Oxymorphone_Noh2017_reference.deviation.json`
+- sim: `../../../knowledgebase/drugs/drug_oxymorphone/models/modelica/Oxymorphone_Noh2017_reference.json`
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -109,4 +131,4 @@ Noh K et al., Calculation of a First-In-Man Dose of 7…, Biomolecules & therape
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 05:53 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 14:59 UTC</sub>

@@ -17,17 +17,11 @@ Anti-D immunoglobulin is a human antibody product used to prevent sensitisation 
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 14:03 | 1:02 | 0/0/0 | 0/1/0 | 0/0/0 | 10,938/1,065 | einfracz / qwen3.8-27b | 0 | 0/0 | 0/0 | 0 |
+| 2026-10-07 15:58 | 0:31 | 0/0/0 | 0/0/0 | 0/0/0 | 10,954/875 | ollama / glm-5.3-flash | 0 | 0/0 | 0/0 | 0 |
 
 ## popPK records
 
 _not available_
-
-## Pharmacodynamics (PD)
-
-| status | detail | about | model | citation | doi |
-|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> | [Chapman_1996_Rh_D_positive_red_cells_in_the_intravascular_space](drugs/drug_anti_d_rh_immunoglobulin/pd_Chapman_1996_Rh_D_positive_red_cells_in_the_intravascular_sp.md) | Rh D-positive red cells in the intravascular space ← anti-D immunoglobulin · target-mediated drug disposition | — | Chapman GE, A pharmacokinetic/pharmacodynamic model…, Transfusion medicine (Oxfor… (1996) | [10.1111/j.1365-3148.1996.tb00073.x](https://doi.org/10.1111/j.1365-3148.1996.tb00073.x) |
 
 ## ADME sites
 
@@ -54,21 +48,31 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 - **records:** 0  ·  extracted 0  ·  needs_review 0  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
+## Full text wanted
+
+_1 paper(s) judged relevant from the abstract, with no full text on disk — paywalled, or the resolver could not reach them. Follow the DOI, then save the PDF into `papers/` as `&lt;save as&gt;.pdf` and re-run the extraction._
+
+| save as | citation | domain | score | DOI | PubMed | why wanted |
+|---|---|---|---|---|---|---|
+| `Chapman_1996.pdf` | Chapman GE, A pharmacokinetic/pharmacodynamic model…, Transfusion medicine (Oxfor… (1996) | popPK | 7 | [10.1111/j.1365-3148.1996.tb00073.x](https://doi.org/10.1111/j.1365-3148.1996.tb00073.x) | [8885152](https://pubmed.ncbi.nlm.nih.gov/8885152) | A PK/PD model of anti-D immunoglobulin disposition (IM/IV redistribution, compartments) is presented, but no numeric parameter values appear in the evidence; constants derive from prior published data. |
+
+<sub>queue written 2026-10-07T15:58:21.631472+00:00</sub>
+
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| PGx | Barrett_1999 | not_relevant | 0 | 0 | The study investigates HLA genotypes and viral clearance outcomes in HCV infection, not the pharmacokinetics or pharmacodynamics of anti-D immunoglobulin itself. |
-| PGx | Barrett_2001 | not_relevant | 0 | 0 | The paper studies HCV infection outcomes and HLA associations, not pharmacogenomic effects on the PK/PD of anti-D immunoglobulin. |
-| popPK | Chapman_1996 | irrelevant | 2 | 0 | The paper presents a theoretical model based on previously published data and does not contain quantitative PK parameter values (CL, V, etc.) in the provided text. |
-| PGx | Fanning_2000 | not_relevant | 0 | 0 | The study investigates HLA associations with Hepatitis C viral clearance, not the pharmacokinetics or pharmacodynamics of anti-D immunoglobulin. |
-| PGx | Fanning_2002 | not_relevant | 0 | 0 | The paper discusses HCV natural progression and HLA associations with viral clearance, not the pharmacokinetics or pharmacodynamics of anti-D immunoglobulin. |
-| PGx | Fu_2024 | not_relevant | 1 | 0 | The paper is a review of the clinical application and genetic characteristics of RhD-negative populations in China, and it does not report any pharmacogenomic studies measuring changes in pharmacokinetic or pharmacodynamic parameters based on specific gene variants. |
-| PGx | Grellier_1997 | not_relevant | 0 | 0 | The paper reports on the clearance of HCV and antibody status in a cohort, not on pharmacogenomic effects on the PK/PD of anti-D immunoglobulin. |
-| PGx | Maas_1983 | not_relevant | 0 | 0 | The paper investigates the mechanism of action of anti-D immunoglobulin (clearance of Rh-positive cells) in general volunteers and does not report pharmacogenomic effects of specific gene variants on PK or PD parameters. |
-| PGx | Nattermann_2011 | not_relevant | 0 | 0 | The paper reports pharmacogenomic effects on Hepatitis C viral clearance, not on a pharmacokinetic or pharmacodynamic parameter of the drug anti-D immunoglobulin. |
-| popPK | Starcević_2011 | irrelevant | 0 | 0 | The paper is a clinical case report focused on the pathophysiology and treatment of hemolytic disease of the fetus and newborn, containing no pharmacokinetic modeling or quantitative disposition parameters for anti-D immunoglobulin. |
-| PGx | Zibert_1997 | not_relevant | 0 | 0 | The paper investigates the natural history of HCV infection and antibody response in patients exposed to contaminated anti-D immunoglobulin, rather than pharmacogenomic effects on the drug's PK or PD. |
+| PGx | Barrett_1999 | not_relevant | 1 | 5 | Anti-D immunoglobulin is only the infection vehicle; HLA-DRB1*01 is associated with viral clearance outcome, not with any PK/PD parameter of the drug. |
+| PGx | Barrett_2001 | not_relevant | 0 | 0 | Anti-D immunoglobulin is only the infection source; no pharmacogenomic effect on its PK/PD is reported. |
+| popPK | Chapman_1996 | relevant | 7 | 2 | A PK/PD model of anti-D immunoglobulin disposition (IM/IV redistribution, compartments) is presented, but no numeric parameter values appear in the evidence; constants derive from prior published data. |
+| PGx | Fanning_2000 | not_relevant | 2 | 3 | HLA alleles associate with viral clearance, not with PK/PD parameters of anti-D immunoglobulin itself. |
+| PGx | Fanning_2002 | not_relevant | 0 | 0 | Paper discusses HCV disease progression and HLA associations, with no pharmacogenomic effect on anti-D immunoglobulin PK/PD parameters. |
+| PGx | Fu_2024 | not_relevant | 3 | 2 | Discusses DEL genotype implications for anti-D-Ig prophylaxis need, but reports no quantitative PK/PD parameter changes by genotype. |
+| PGx | Grellier_1997 | not_relevant | 0 | 0 | Paper studies anti-E2 antibodies as a marker of HCV clearance, not a gene variant effect on PK/PD of anti-D immunoglobulin. |
+| PGx | Maas_1983 | not_relevant | 0 | 0 | No pharmacogenomic variant/genotype effect on anti-D immunoglobulin PK/PD parameters is reported; only route, spleen status, and D-variant sensitization discussed. |
+| PGx | Nattermann_2011 | not_relevant | 1 | 5 | Genetic variants predict spontaneous HCV clearance (host disease outcome), not any PK/PD parameter of anti-D immunoglobulin itself. |
+| popPK | Starcević_2011 | irrelevant | 0 | 0 | A clinical case report on HDFN management with no PK parameters for anti-D immunoglobulin. |
+| PGx | Zibert_1997 | not_relevant | 0 | 0 | Study of anti-HVR1 antibody responses in HCV infection, not a pharmacogenomic effect on PK/PD parameters of anti-D immunoglobulin. |
 
 ---
 <sub>Generated by `docs.py` (scholarv2)</sub>

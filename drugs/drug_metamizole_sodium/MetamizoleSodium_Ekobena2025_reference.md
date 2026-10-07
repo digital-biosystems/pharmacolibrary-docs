@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N02B&quot;,&quot;href&quot;:&quot;atc/N02B.md&quot;},{&quot;label&quot;:&quot;metamizole sodium&quot;,&quot;href&quot;:&quot;drugs/drug_metamizole_sodium/&quot;},{&quot;label&quot;:&quot;Ekobena_2025 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;MetamizoleSodium_Corvino2023_reference&quot;,&quot;label&quot;:&quot;Corvino_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_metamizole_sodium/MetamizoleSodium_Corvino2023_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;MetamizoleSodium_Ekobena2025_reference&quot;,&quot;label&quot;:&quot;Ekobena_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_metamizole_sodium/MetamizoleSodium_Ekobena2025_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;MetamizoleSodium_Stoschus2025_reference&quot;,&quot;label&quot;:&quot;Stoschus_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_metamizole_sodium/MetamizoleSodium_Stoschus2025_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;MetamizoleSodium_Ekobena2025_reference&quot;,&quot;label&quot;:&quot;Ekobena_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_metamizole_sodium/MetamizoleSodium_Ekobena2025_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;MetamizoleSodium_Stoschus2025_reference&quot;,&quot;label&quot;:&quot;Stoschus_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_metamizole_sodium/MetamizoleSodium_Stoschus2025_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -25,7 +25,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the val
 
 <sub>reviewed by glm-5.3-flash</sub>
 
-> ⚠️ **STALE** — review status `needs_review` (reviewed 2026-10-05 09:27:57.304049+00:00) predates the upstream re-run (2026-10-07 06:21:27.051813+00:00). Current validate status: `extracted`.
+> ⚠️ **STALE** — review status `needs_review` (reviewed 2026-10-05 09:27:57.304049+00:00) predates the upstream re-run (2026-10-07 15:25:03.954826+00:00). Current validate status: `extracted`.
 
 ## Citation
 Ekobena P et al., Population pharmacokinetics of bictegra…, The Journal of antimicrobia… (2025)
@@ -37,13 +37,13 @@ Ekobena P et al., Population pharmacokinetics of bictegra…, The Journal of ant
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 4 extracted.
 
-**Parameterization:** CL/F — apparent, F unknown (apparent — bioavailability not identifiable).
+**Parameterization:** CL/F, V/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
 ## Parameters
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
 | apparent clearance | `Q27` · CL/F | 0.504 | L/h | 1.4e-07 | L/h | not captured | review (0.7) | Ekobena_2025:review | — | not captured |
-| apparent distribution volume | `Q61` · V | 11.6 | L | 0.0116 | L | not captured | review (0.7) | Ekobena_2025:review | — | not captured |
+| apparent distribution volume | `Q76` · V/F | 11.6 | L | 0.0116 | L | not captured | review (0.7) | Ekobena_2025:review | — | not captured |
 | absorption rate | `Q49` · kabs | 2.6 | h−1 | 0.0007222222222222223 | 1/h | not captured | review (0.7) | Ekobena_2025:review | — | not captured |
 | lag time | `Q83` · tlag | 0.235 | h | 846.0 | h | not captured | review (0.7) | Ekobena_2025:review | — | not captured |
 
@@ -104,12 +104,12 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 | C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
 | C5_dimension_Q27 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Ekobena_2025:review'] |
 | C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['Ekobena_2025:review'] |
-| C5_dimension_Q61 | pass | [length] ** 3 | not captured | not captured | not captured | ['Ekobena_2025:review'] |
+| C5_dimension_Q76 | pass | [length] ** 3 | not captured | not captured | not captured | ['Ekobena_2025:review'] |
 | C5_dimension_Q83 | pass | [time] | not captured | not captured | not captured | ['Ekobena_2025:review'] |
 | C7_apparent_coherence | pass | not captured | not captured | not captured | not captured | not captured |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
 | C9_phys_window_Q27 | pass | clearance within physiological range | 0.504 L/h | not captured | not captured | ['Ekobena_2025:review'] |
-| C9_phys_window_Q61 | pass | volume within physiological range | 11.6 L | not captured | not captured | ['Ekobena_2025:review'] |
+| C9_phys_window_Q76 | pass | volume within physiological range | 11.6 L | not captured | not captured | ['Ekobena_2025:review'] |
 
 **Reviewer per-scenario checks:**
 
@@ -164,4 +164,4 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 06:21 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 15:25 UTC</sub>

@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A10B&quot;,&quot;href&quot;:&quot;atc/A10B.md&quot;},{&quot;label&quot;:&quot;vildagliptin&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Vildagliptin_Dias2026_reference&quot;,&quot;label&quot;:&quot;Dias_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_vildagliptin/Vildagliptin_Dias2026_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 # vildagliptin
 
@@ -20,20 +21,21 @@ Vildagliptin is a DPP-4 inhibitor used to lower blood glucose in adults with typ
 
 | molecule | role | molar mass (g/mol) | formula | source | PubChem | records |
 |---|---|---|---|---|---|---|
-| vildagliptin | parent | 303.399 | C17H25N3O2 | DrugBank | [6918537](https://pubchem.ncbi.nlm.nih.gov/compound/6918537) | He_2007_2, Landersdorfer_2012 |
+| vildagliptin | parent | 303.399 | C17H25N3O2 | DrugBank | [6918537](https://pubchem.ncbi.nlm.nih.gov/compound/6918537) | Dias_2026, He_2007_2, Landersdorfer_2012 |
 
 ## Extraction summary
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-05 05:19 | 4:55 | 0/1/1 | 0/0/0 | 0/0/1 | 79,582/11,796 | ollama / qwen3.8:27b-mtp-q8_0 | 3 | 0/3 | 2/1 | 0 |
+| 2026-10-07 16:23 | 1:46 | 1/1/1 | 0/0/0 | 0/0/1 | 145,292/8,826 | einfracz / qwen3.8-27b | 4 | 0/4 | 3/1 | 0 |
 
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.231). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub><br><sub>route_to: `human_review`</sub> | [He_2007_2_reference](drugs/drug_vildagliptin/Vildagliptin_He2007v2_reference.md) | — | 1-compartment (no model) | 4 | He YL et al., The absolute oral bioavailability and p…, Clinical pharmacokinetics (2007) | [10.2165/00003088-200746090-00006](https://doi.org/10.2165/00003088-200746090-00006) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.875). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>route_to: `human_review`</sub> | [Landersdorfer_2012_reference](drugs/drug_vildagliptin/Vildagliptin_Landersdorfer2012_reference.md) | — | general linear (no model) | 3 | Landersdorfer CB et al., Mechanism-based population pharmacokine…, British journal of clinical… (2012) | [10.1111/j.1365-2125.2011.04108.x](https://doi.org/10.1111/j.1365-2125.2011.04108.x) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span> | [Dias_2026_reference](drugs/drug_vildagliptin/Vildagliptin_Dias2026_reference.md) | ▶ model + simulator | 2-compartment, oral | 7 | Dias BB et al., Preclinical Modeling and Simulation to…, CPT: pharmacometrics & syst… (2026) | [10.1002/psp4.70165](https://doi.org/10.1002/psp4.70165) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.231). The first reading is what the record holds.">cross-check: disputed</span><br><sub>STALE — current validate: needs_review</sub><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub><br><sub>route_to: `human_review`</sub> | [He_2007_2_reference](drugs/drug_vildagliptin/Vildagliptin_He2007v2_reference.md) | — | 1-compartment (no model) | 4 | He YL et al., The absolute oral bioavailability and p…, Clinical pharmacokinetics (2007) | [10.2165/00003088-200746090-00006](https://doi.org/10.2165/00003088-200746090-00006) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.875). The first reading is what the record holds.">cross-check: disputed</span><br><sub>STALE — current validate: rejected</sub><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>route_to: `human_review`</sub> | [Landersdorfer_2012_reference](drugs/drug_vildagliptin/Vildagliptin_Landersdorfer2012_reference.md) | — | general linear (no model) | 3 | Landersdorfer CB et al., Mechanism-based population pharmacokine…, British journal of clinical… (2012) | [10.1111/j.1365-2125.2011.04108.x](https://doi.org/10.1111/j.1365-2125.2011.04108.x) |
 
 ## Pharmacogenomics (PGx)
 
@@ -75,47 +77,45 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 ## Coverage
 
 - **PubMed hits:** 27 matched, 27 returned
-- **screened:** 2  ·  **relevant:** 2
-- **records:** 2  ·  extracted 0  ·  needs_review 1  ·  rejected 1  ·  stale 0
+- **screened:** 3  ·  **relevant:** 3
+- **records:** 3  ·  extracted 1  ·  needs_review 1  ·  rejected 1  ·  stale 2
 - **scholar-agent fallback query used:** not captured
 
 ## Full text wanted
 
-_5 paper(s) judged relevant from the abstract, with no full text on disk — paywalled, or the resolver could not reach them. Follow the DOI, then save the PDF into `papers/` as `&lt;save as&gt;.pdf` and re-run the extraction._
+_4 paper(s) judged relevant from the abstract, with no full text on disk — paywalled, or the resolver could not reach them. Follow the DOI, then save the PDF into `papers/` as `&lt;save as&gt;.pdf` and re-run the extraction._
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `He_2007_2.pdf` | He YL et al., The absolute oral bioavailability and p…, Clinical pharmacokinetics (2007) | popPK | 10 | [10.2165/00003088-200746090-00006](https://doi.org/10.2165/00003088-200746090-00006) | [17713976](https://pubmed.ncbi.nlm.nih.gov/17713976) | The study reports quantitative population PK parameters for vildagliptin in humans, including specific values for clearance (41 L/h, 44.6 L/h, 36.1 L/h), renal clearance (13 L/h), and absorption lag times, though some specific volume or rate constant values are not explicitly listed in the text. |
-| `Landersdorfer_2012.pdf` | Landersdorfer CB et al., Mechanism-based population pharmacokine…, British journal of clinical… (2012) | popPK | 10 | [10.1111/j.1365-2125.2011.04108.x](https://doi.org/10.1111/j.1365-2125.2011.04108.x) | [22442826](https://pubmed.ncbi.nlm.nih.gov/22442826) | The paper reports a population PK model for vildagliptin in humans with specific numeric parameter estimates (clearance, volume, half-lives) provided in the abstract. |
-| `Dias_2026.pdf` | Dias BB et al., Preclinical Modeling and Simulation to…, CPT: pharmacometrics & syst… (2026) | popPK | 9 | [10.1002/psp4.70165](https://doi.org/10.1002/psp4.70165) | [41577632](https://pubmed.ncbi.nlm.nih.gov/41577632) | The paper describes a population PK model for vildagliptin in animals, but the specific numeric parameter values are not present in the provided evidence text. |
+| `He_2007_2.pdf` | He YL et al., The absolute oral bioavailability and p…, Clinical pharmacokinetics (2007) | popPK | 10 | [10.2165/00003088-200746090-00006](https://doi.org/10.2165/00003088-200746090-00006) | [17713976](https://pubmed.ncbi.nlm.nih.gov/17713976) | The abstract provides explicit quantitative PK parameters including total systemic clearance (41 L/h), renal clearance (13 L/h), absorption rate constants, and bioavailability for vildagliptin in humans. |
+| `Landersdorfer_2012.pdf` | Landersdorfer CB et al., Mechanism-based population pharmacokine…, British journal of clinical… (2012) | popPK | 10 | [10.1111/j.1365-2125.2011.04108.x](https://doi.org/10.1111/j.1365-2125.2011.04108.x) | [22442826](https://pubmed.ncbi.nlm.nih.gov/22442826) | The paper reports quantitative population pharmacokinetic parameters (clearance, volume, half-lives) for vildagliptin in humans with values explicitly provided in the abstract. |
 | `Kalliokoski_2010.pdf` | Kalliokoski A et al., SLCO1B1 polymorphism and oral antidiabe…, Basic & clinical pharmacolo… (2010) | pgx | 8 | [10.1111/j.1742-7843.2010.00581.x](https://doi.org/10.1111/j.1742-7843.2010.00581.x) | [20406215](https://www.ncbi.nlm.nih.gov/pubmed/20406215) | metadata signals extractable PGX data (SLCO1B1, PK/PD-context) |
 | `Golightly_2012.pdf` | Golightly LK et al., Comparative clinical pharmacokinetics o…, Clinical pharmacokinetics (2012) | pgx | 7 | [10.1007/BF03261927](https://doi.org/10.1007/BF03261927) | [22686547](https://www.ncbi.nlm.nih.gov/pubmed/22686547) | metadata signals extractable PGX data (CYP3A4, PK/PD-context) |
 
-<sub>queue written 2026-10-05T05:15:21.953961+00:00</sub>
+<sub>queue written 2026-10-07T16:22:02.825676+00:00</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Chitnis_2016 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of metformin in a fixed-dose combination, not vildagliptin. |
-| popPK | Dias_2026 | relevant | 9 | 0 | The paper describes a population PK model for vildagliptin in animals, but the specific numeric parameter values are not present in the provided evidence text. |
-| popPK | Fang_2020 | irrelevant | 0 | 0 | The paper is a medicinal chemistry study on novel dual GPR119/DPP-4 modulators, using vildagliptin only as a comparator in an in vivo glucose tolerance test, with no PK parameters reported. |
+| popPK | Chitnis_2016 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of metformin as the subject drug for bioequivalence, while vildagliptin is only a component of the formulation and not the subject of PK modeling or reporting. |
+| popPK | Fang_2020 | irrelevant | 0 | 0 | The paper focuses on the design and synthesis of new DPP-4 inhibitors and compares their glucose-lowering efficacy in mice to vildagliptin, but does not report pharmacokinetic parameters for vildagliptin. |
 | PD | Fang_2020 | not_relevant | 1 | 0 | The paper reports in vitro potency (EC50) and a single-point in vivo efficacy comparison (AUC reduction) for a new compound against vildagliptin, but does not provide an exposure-response or dose-response curve or numeric PD parameters for vildagliptin. |
-| popPK | Fang_2020_2 | irrelevant | 0 | 0 | The paper describes the optimization of GPR119 agonists and uses vildagliptin only as a comparator for hypoglycemic efficacy, without reporting any pharmacokinetic parameters for vildagliptin. |
+| popPK | Fang_2020_2 | irrelevant | 0 | 0 | The study focuses on the development of GPR119 agonists and uses vildagliptin only as a reference for hypoglycemic effect, without reporting any pharmacokinetic parameters. |
 | PD | Fang_2020_2 | not_relevant | 2 | 1 | The paper reports in vitro EC50 values for novel GPR119 agonists and a single-point in vivo efficacy comparison against vildagliptin, but does not provide a dose-response curve or numeric PD parameters for vildagliptin itself. |
-| popPK | Gibbs_2012 | irrelevant | 0 | 0 | The paper is a meta-analysis of efficacy (HbA1c response) and DPP-4 inhibition, not a pharmacokinetic study reporting disposition parameters like clearance or volume for vildagliptin. |
-| PGx | Golightly_2012 | not_relevant | 0 | 0 | The paper is a comparative review of the pharmacokinetics of DPP-4 inhibitors and does not report any pharmacogenomic effects (gene variants) on vildagliptin PK or PD parameters. |
-| popPK | Hayakawa_2025 | irrelevant | 0 | 0 | The study is a pharmacodynamic analysis of HbA1c changes using machine learning models and does not report any pharmacokinetic parameters (CL, V, ka, etc.) for vildagliptin. |
-| PGx | He_2012 | not_relevant | 0 | 0 | The paper describes general pharmacokinetics and pharmacodynamics of vildagliptin but does not report any effects of specific gene variants or genotypes on these parameters. |
-| popPK | Horie_2014 | irrelevant | 0 | 0 | The study focuses on pharmacodynamic effects (insulin secretion and sensitivity) rather than reporting quantitative pharmacokinetic disposition parameters (CL, V, ka) for vildagliptin. |
-| PGx | Kalliokoski_2010 | not_relevant | 0 | 0 | The paper explicitly states that SLCO1B1 polymorphism is unlikely to affect vildagliptin because the liver is not important for its elimination or action. |
-| popPK | Landersdorfer_2012_2 | irrelevant | 2 | 0 | The study focuses on a mechanism-based population pharmacodynamic (PD) model for GLP-1, glucose, and insulin, and while vildagliptin concentrations were co-modelled, no quantitative PK parameter values (CL, V, etc.) are provided in the evidence. |
-| popPK | Madny_2022 | irrelevant | 2 | 0 | The paper describes a physiologically based biopharmaceutics modeling (PBBM) study for a modified-release formulation, but the provided evidence contains no quantitative PK parameter values (CL, V, etc.) for vildagliptin. |
-| PGx | Mostafa_2016 | not_relevant | 0 | 0 | The paper investigates the pharmacodynamic interaction between vildagliptin and pravastatin on cholesterol efflux in adipocytes, but does not report any pharmacogenomic effects (gene variants) on PK or PD parameters. |
-| PGx | Scheen_2010 | not_relevant | 0 | 0 | The paper reviews drug-drug interactions for DPP-4 inhibitors and does not report any pharmacogenomic effects (gene variants) on vildagliptin PK or PD. |
-| popPK | Tatosian_2013 | irrelevant | 2 | 0 | The study reports pharmacodynamic (DPP-4 inhibition) data and references a PK table (Table 2) that is cut off, so no quantitative PK parameters (CL, V, t1/2) for vildagliptin are present in the evidence. |
-| popPK | Yang_2025 | irrelevant | 0 | 0 | The study focuses on the design and synthesis of new dual-target compounds and their in vitro/in vivo efficacy, not on the pharmacokinetic parameters of vildagliptin itself. |
+| popPK | Gibbs_2012 | irrelevant | 2 | 0 | The paper is a pharmacodynamic meta-analysis modeling HbA1c response to DPP-4 inhibitors, not a study reporting quantitative pharmacokinetic parameters (CL, V, ka) for vildagliptin. |
+| PGx | Golightly_2012 | not_relevant | 0 | 0 | The paper is a review comparing the general pharmacokinetics of DPP-4 inhibitors and does not report any specific gene variants or genotypes affecting vildagliptin. |
+| popPK | Hayakawa_2025 | irrelevant | 0 | 0 | The study evaluates the dose-response relationship of DPP-4 inhibitors on HbA1c levels using machine learning models and does not report any pharmacokinetic parameters (e.g., CL, V, ka) for vildagliptin. |
+| PGx | He_2012 | not_relevant | 0 | 0 | The paper describes general PK/PD and notes that ethnicity does not influence PK/PD, but it does not report specific pharmacogenomic variants or gene-based effects. |
+| popPK | Horie_2014 | irrelevant | 0 | 0 | The study reports pharmacodynamic parameters (insulin sensitivity, C-peptide secretion) and clinical outcomes, not vildagliptin pharmacokinetic parameters (CL, V, ka). |
+| PGx | Kalliokoski_2010 | not_relevant | 0 | 0 | The paper explicitly states that SLCO1B1 polymorphism is unlikely to affect the response to vildagliptin because the liver is not important for its elimination or action. |
+| popPK | Landersdorfer_2012_2 | irrelevant | 3 | 0 | The study focuses on a mechanism-based population pharmacodynamic (PD) model for GLP-1, glucose, and insulin, and while vildagliptin concentrations were co-modelled, no quantitative PK parameter values (CL, V, etc.) are reported in the provided evidence. |
+| popPK | Madny_2022 | irrelevant | 2 | 0 | The study uses a physiologically based biopharmaceutics model to predict PK parameters for a new formulation, but the specific numeric parameter values for vildagliptin are not present in the provided evidence text. |
+| PGx | Mostafa_2016 | not_relevant | 0 | 0 | The paper investigates the pharmacodynamic interaction between vildagliptin and pravastatin in a cell model, but does not report any genetic variants or genotypes affecting vildagliptin's PK or PD. |
+| PGx | Scheen_2010 | not_relevant | 0 | 0 | The paper reviews drug-drug interactions for DPP-4 inhibitors and does not report pharmacogenomic effects (gene variants) on the PK/PD of vildagliptin. |
+| popPK | Tatosian_2013 | irrelevant | 2 | 0 | The study is primarily a pharmacodynamic comparison of DPP-4 inhibition; while it mentions non-compartmental PK analysis, the table containing the specific vildagliptin PK values (Cmax, AUC, half-life) is truncated in the provided evidence. |
+| popPK | Yang_2025 | irrelevant | 0 | 0 | The paper is a medicinal chemistry study on new dual-target compounds and does not report population-pharmacokinetic parameters for vildagliptin. |
 | PD | Yang_2025 | not_relevant | 2 | 1 | The paper reports in vitro potency (IC50/EC50) for a new dual-target compound, not a pharmacodynamic exposure-response or dose-response relationship for vildagliptin itself. |
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-10-05 05:15 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-10-07 16:22 UTC</sub>

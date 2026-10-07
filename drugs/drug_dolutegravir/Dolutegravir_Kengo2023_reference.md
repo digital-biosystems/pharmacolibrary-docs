@@ -1,10 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;J05A&quot;,&quot;href&quot;:&quot;atc/J05A.md&quot;},{&quot;label&quot;:&quot;dolutegravir&quot;,&quot;href&quot;:&quot;drugs/drug_dolutegravir/&quot;},{&quot;label&quot;:&quot;Kengo_2023 \u00b7 reference&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Dolutegravir_Kengo2023_reference&quot;,&quot;label&quot;:&quot;Kengo_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_dolutegravir/Dolutegravir_Kengo2023_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Dolutegravir_Zhang2015_reference&quot;,&quot;label&quot;:&quot;Zhang_2015_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_dolutegravir/Dolutegravir_Zhang2015_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # dolutegravir — `Dolutegravir_Kengo2023_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span>
+> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -12,36 +13,61 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
-**Model:** No model was generated from this record.
+**Model:** A simulatable model was generated — see the **Models** and **Simulation** tabs.
 
-> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+### Reviewer guidance
+
+**The paper reports none of the model's key parameters.**
+
+No clearance, volume or rate constant of the model is reported in it. Only the abstract was available, so reported summary statistics stand in for a fitted model. No parameter values were extracted.
+
+<sub>reviewed by rule template (no LLM)</sub>
+
+> ⚠️ **STALE** — review status `rejected` (reviewed 2026-10-07 14:20:56.630641+00:00) predates the upstream re-run (2026-10-07 16:25:45.065502+00:00). Current validate status: `extracted`.
 
 ## Citation
 Kengo A et al., Dolutegravir pharmacokinetics in Uganda…, Antimicrobial agents and ch… (2023)
   ·  DOI: [10.1128/aac.00430-23](https://doi.org/10.1128/aac.00430-23)
 
 ## Model component
-<dbs-pgx drug="dolutegravir" model-id="Dolutegravir_Kengo2023_reference" status="rejected" stale="false" population="adults with tuberculosis and HIV" measured-compound="dolutegravir" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<dbs-pgx drug="dolutegravir" model-id="Dolutegravir_Kengo2023_reference" status="extracted" stale="true" population="adults with TB and HIV" measured-compound="dolutegravir" parameterization="mechanistic" topology="1C"></dbs-pgx>
 
-**Model structure:** 1-compartment; no model was built for this record.  
-**Parameters:** 0 extracted.
+**Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
+**Parameters:** 5 extracted.
 
 **Parameterization:** mechanistic.
 
 ## Parameters
-> ⚠️ This record is not accepted (current status `rejected`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
+| label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
+|---|---|---|---|---|---|---|---|---|---|---|
+| median (interquartile range) rifampicin area under the curve (AUC) in the standard-dose arm | `Q88` · AUC | 32.3 | mg·h/L | not captured | [[h] · [mg]] / [l] | not captured | llm_confirmed (0.6) | Kengo_2023:abstract | — | not captured |
+| clearance | `Q22` · CL | 1.87 | L/h | 5.194444444444445e-07 | [l] / [h] | not captured | exact (1.0) | Kengo_2023:abstract | — | not captured |
+| absorption rate constant | `Q49` · kabs | 1.42 | h-1 | 0.00039444444444444444 | [1] / [h] | not captured | exact (1.0) | Kengo_2023:abstract | — | not captured |
+| volume of distribution | `Q61` · V | 12.4 | L | 0.012400000000000001 | [l] | not captured | exact (1.0) | Kengo_2023:abstract | — | not captured |
+| decrease in dolutegravir bioavailability per 10 mg·h/L increase in the AUC of coadministered rifampicin | `Q40` · Fab | 2.3 | % | not captured | not captured | not captured | llm_confirmed (0.6) | Kengo_2023:abstract | — | not captured |
 
-_No resolved parameters._
+<details class="legend">
+<summary>Column legend — what each column means</summary>
+<table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>label (paper)</code></td><td>the row or statistic label exactly as printed in the paper (label_verbatim) — never normalised, so it can be found in the PDF.</td></tr><tr><td><code>Q-code · name</code></td><td>the ontology parameter this label was matched to (Q22 = clearance, Q27 = CL/F, Q49 = ka, Q57 = half-life, …) and its canonical name. The Q-code, not the label, is what scoring and cross-paper merging use.</td></tr><tr><td><code>value</code></td><td>the estimate as reported in the paper.</td></tr><tr><td><code>unit</code></td><td>the unit as printed (unit_verbatim).</td></tr><tr><td><code>value_si</code></td><td>the value converted to the canonical unit. Empty when no conversion was possible — usually an unparseable or missing unit.</td></tr><tr><td><code>unit_canonical</code></td><td>the canonical unit for that Q-code, i.e. what value_si is expressed in.</td></tr><tr><td><code>RSE%</code></td><td>relative standard error of the estimate, when the paper reports one.</td></tr><tr><td><code>link</code></td><td>how the label was matched to the Q-code, with confidence. exact / boundary / fuzzy / tv_prefix / caption_compartment / special_case are deterministic string matches; llm, llm_confirmed, llm_corrected involved the model; review and review_gapfill come from the secondary review tier, the latter filling a parameter the primary extraction missed; boundary_relink is a corrected match.</td></tr><tr><td><code>source</code></td><td>where in the paper the number came from: colN = that column of the located table, other_prose = running text, review = the secondary tier, pgx = a pharmacogenomic record.</td></tr><tr><td><code>covariates</code></td><td>covariate effects attached to this parameter (e.g. weight on CL).</td></tr><tr><td><code>IIV</code></td><td>inter-individual variability reported for this parameter.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>the field is absent from the KB artifact — nothing was recorded. This is NOT the same as zero or empty: the value is unknown, not measured to be nothing.</td></tr><tr><td><code>—</code></td><td>deliberately not shown: the column does not apply to this row.</td></tr><tr><td><code>not verified</code></td><td>the record is not in an accepted state (see the badge and the note above the table); the numbers are shown as extracted, not endorsed.</td></tr></tbody></table>
+</details>
 
 ## Departures & gaps
 
+**Deviations:**
+- `defaulted_parameters`: ['Tlag']
+
 **Interpretation flags:**
+- dropped duplicate Q88 ('median (interquartile range) rifampicin area under the curve (AUC) in the high-dose arm', value 153) — already have one for this compound
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=dolutegravir
+- held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
+- status held at route_to_review — not promoted
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
-- review gap-fill skipped: this record carries no value of its own, and a model assembled entirely from other papers is not this paper's model
+- skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
+- skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
+- skipped review gap-fill of TLAG: primary's parameterization (rate-constant / ka-only) does not use it
 
 **Extraction notes:**
-- no GROBID TEI available — transcribed from abstract in Kengo_2023_metadata.yaml (0 record(s)); values are summary statistics, not a fitted model
+- no GROBID TEI available — transcribed from abstract in Kengo_2023_metadata.yaml (6 record(s)); values are summary statistics, not a fitted model
 
 ## Validation
 
@@ -49,9 +75,17 @@ _No resolved parameters._
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | fail | not captured | 0 | not captured | not captured | not captured |
-| C0b_disposition_core | fail | not captured | not captured | not captured | not captured | not captured |
+| C0_has_structural_params | pass | not captured | 5 | not captured | not captured | not captured |
+| C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
+| C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
+| C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Kengo_2023:abstract'] |
+| C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['Kengo_2023:abstract'] |
+| C5_dimension_Q61 | pass | [length] ** 3 | not captured | not captured | not captured | ['Kengo_2023:abstract'] |
+| C5_dimension_Q88 | pass | [mass] * [time] / [length] ** 3 | not captured | not captured | not captured | ['Kengo_2023:abstract'] |
+| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 1.87 | not captured | not captured | ['Kengo_2023:abstract'] |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
+| C9_phys_window_Q22 | pass | clearance within physiological range | 1.87 L/h | not captured | not captured | ['Kengo_2023:abstract'] |
+| C9_phys_window_Q61 | pass | volume within physiological range | 12.4 L | not captured | not captured | ['Kengo_2023:abstract'] |
 
 <details class="legend">
 <summary>Check legend — what each column means</summary>
@@ -65,15 +99,30 @@ _No resolved parameters._
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
-## Models
+## Downloadable models
 
-<p>No downloads: this record is <b>rejected</b>, so it is not published as a model. Any archives generated for it before the verdict have been removed — a download outlives the page that explains it.</p>
+<div class="pk-models-grid"><div class="pk-models-table">
+<table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_dolutegravir/Dolutegravir_Kengo2023_reference/Dolutegravir_Kengo2023_reference_modelica.zip" download>Dolutegravir_Kengo2023_reference_modelica.zip</a> <span class="pk-size">(4.5 kB)</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_dolutegravir/Dolutegravir_Kengo2023_reference/Dolutegravir_Kengo2023_reference_fmi.zip" download>Dolutegravir_Kengo2023_reference_fmi.zip</a> <span class="pk-size">(4.2 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_dolutegravir/Dolutegravir_Kengo2023_reference/Dolutegravir_Kengo2023_reference_matlab.zip" download>Dolutegravir_Kengo2023_reference_matlab.zip</a> <span class="pk-size">(3.3 kB)</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_dolutegravir/Dolutegravir_Kengo2023_reference/Dolutegravir_Kengo2023_reference_matlab_simbio.zip" download>Dolutegravir_Kengo2023_reference_matlab_simbio.zip</a> <span class="pk-size">(2.8 kB)</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_dolutegravir/Dolutegravir_Kengo2023_reference/Dolutegravir_Kengo2023_reference_sbml.zip" download>Dolutegravir_Kengo2023_reference_sbml.zip</a> <span class="pk-size">(2.6 kB)</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_dolutegravir/Dolutegravir_Kengo2023_reference/Dolutegravir_Kengo2023_reference_cellml.zip" download>Dolutegravir_Kengo2023_reference_cellml.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
+</tbody></table>
+<p>Each archive holds the model source, a script that simulates it against the appropriate library, and a README describing both and how to run them.</p>
+<p><b>FMI is two downloads.</b> The archive holds this record's parameters and its driver; the simulator itself is <code>PK_1C_enteral.fmu</code>, one compiled template shared by every model of this structure. Take the FMU once, keep it beside the script (or pass <code>--fmu PATH</code>). Running it reproduces the model-specific FMU exactly.</p>
+</div><figure class="pk-models-diagram"><img src="drugs/drug_dolutegravir/Dolutegravir_Kengo2023_reference/Dolutegravir_Kengo2023_reference.svg" alt="Dolutegravir_Kengo2023_reference diagram"><figcaption>Model diagram (Modelica) using Pharmacolibrary v26.09 components, rendered by OpenModelica 1.26.7.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+**Administration: oral** — 50 mg, single dose, first-order absorption (ka 1.42 /h, F 2.3). _The paper's dose was not captured; the default is the WHO ATC DDD 50 mg oral (J05AJ03) (defined daily dose)._
+
+<dbs-fmusim paramsurl="drugs/drug_dolutegravir/Dolutegravir_Kengo2023_reference/Dolutegravir_Kengo2023_reference_params.json" metaurl="assets/fmu/PK_1C_enteral.vr.json" wasmurl="assets/fmu/PK_1C_enteral.js" controlsurl="drugs/drug_dolutegravir/Dolutegravir_Kengo2023_reference/Dolutegravir_Kengo2023_reference_sim_controls.json"></dbs-fmusim>
+
+<sub>Runs this record's model in the browser as WebAssembly. Sliders start at the extracted values; the reference check compares the browser's peak against the FMPy result recorded when the record was built, and is withheld once a value has been edited. Template `PK_1C_enteral` · parameters `Dolutegravir_Kengo2023_reference_params.json` · controls `Dolutegravir_Kengo2023_reference_sim_controls.json`. A slider marked *simulator value* is running on the template's own default because this record does not pin that parameter.</sub>
 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 14:07 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 16:25 UTC</sub>

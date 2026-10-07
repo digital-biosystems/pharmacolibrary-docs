@@ -1,11 +1,10 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;J05A&quot;,&quot;href&quot;:&quot;atc/J05A.md&quot;},{&quot;label&quot;:&quot;valganciclovir&quot;,&quot;href&quot;:&quot;drugs/drug_valganciclovir/&quot;},{&quot;label&quot;:&quot;Itohara_2025 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Valganciclovir_Itohara2025_reference&quot;,&quot;label&quot;:&quot;Itohara_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_valganciclovir/Valganciclovir_Itohara2025_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # valganciclovir — `Valganciclovir_Itohara2025_reference`
 
-> ## <span class="pk-badge pk-badge--green">extracted</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -13,29 +12,42 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
-**Model:** A simulatable model was generated — see the **Models** and **Simulation** tabs.
+**Model:** No model was generated from this record.
 
-> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+### Reviewer guidance
+
+**The review refused the model because the reverse intercompartmental clearance (k21) was not reported, requiring the use of a library default.**
+
+The record lists a forward intercompartmental clearance (Q) of 13.9 L/h but omits the reverse intercompartmental clearance (k21). Consequently, the model builder substituted a library default value for this missing parameter. This deviation was flagged as unacceptable because the default is not supported by the paper's data. Extracted — valganciclovir: CL/F 0.96 L/h, V 1.15 (L/kg), Q 13.9 L/h, kabs 0.591 /h.
+
+<sub>reviewed by qwen3.8-27b</sub>
+
+> ⚠️ **STALE** — review status `needs_review` (reviewed 2026-10-07 14:43:04.808858+00:00) predates the upstream re-run (2026-10-07 16:39:35.740471+00:00). Current validate status: `rejected`.
+
+> **Dose compound ≠ measured compound:** dosed `valganciclovir`, measured `ganciclovir`.
 
 ## Citation
 Itohara K et al., Pharmacokinetic and Pharmacodynamic Ass…, Therapeutic drug monitoring (2025)
   ·  DOI: [10.1097/FTD.0000000000001257](https://doi.org/10.1097/FTD.0000000000001257)
 
 ## Model component
-<dbs-pgx drug="valganciclovir" model-id="Valganciclovir_Itohara2025_reference" status="extracted" stale="false" population="" measured-compound="valganciclovir" parameterization="apparent" topology="2C"></dbs-pgx>
+<dbs-pgx drug="valganciclovir" model-id="Valganciclovir_Itohara2025_reference" status="rejected" stale="true" population="Japanese infants with symptomatic congenital cytomegalovirus infection" measured-compound="ganciclovir" parameterization="apparent" topology="1C"></dbs-pgx>
 
-**Model structure:** 2-compartment, oral mammillary model — template `PK_2C_enteral`.  
-**Parameters:** 4 extracted.
+**Model structure:** 1-compartment; no model was built for this record.  
+**Parameters:** 5 extracted.
 
-**Parameterization:** CL/F — apparent, F unknown (apparent — bioavailability not identifiable).
+**Parameterization:** CLm/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
 ## Parameters
+> ⚠️ This record is not accepted (current status `rejected`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
+
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| CL/F | `Q27` · CL/F | 0.96 | L/h | 2.6666666666666667e-07 | L/h | not captured | review (0.7) | Itohara_2025:review | — | not captured |
-| Vd | `Q61` · V | 1.15 | (L/kg) | 0.0805 | L | not captured | review (0.7) | Itohara_2025:review | — | not captured |
-| θ1 (L/h) | `Q30` · Q | 13.9 | L/h | 3.861111111111112e-06 | L/h | not captured | review (0.7) | Itohara_2025:review | — | not captured |
-| Ka (/h) | `Q49` · kabs | 0.591 | /h | 0.00016416666666666665 | 1/h | not captured | review (0.7) | Itohara_2025:review | — | not captured |
+| θ1 (L/h) | `Q351` · CLm/F | 13.9 | L/h | 3.861111111111112e-06 | [l] / [h] | not captured | exact (1.0) | tab_1:row4:col2, tab_1:row4:col4, tab_1:row4:col5, tab_1:row4:col6 | — | 28.1 (None% RSE) |
+| θ2 (weeks) | `Q83` · tlag | 38.7 | weeks | not captured | [weeks] | not captured | llm (0.6) | tab_1:row5:col2, tab_1:row5:col4, tab_1:row5:col5, tab_1:row5:col6 | — | not captured |
+| θ4 (L/kg) | `Q61` · V | 1.15 | L/kg | 0.0805 | [l] / [kg] | not captured | exact (1.0) | tab_1:row8:col2, tab_1:row8:col5 | — | not captured |
+| Ka (/h) | `Q49` · kabs | 0.591 | /h | 0.00016416666666666665 | [1] / [h] | not captured | exact (1.0) | tab_1:row9:col2, tab_1:row9:col5 | — | not captured |
+| F | `Q40` · Fab | 0.536 | not captured | not captured | not captured | not captured | exact (1.0) | tab_1:row10:col2, tab_1:row10:col5 | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -44,13 +56,18 @@ Itohara K et al., Pharmacokinetic and Pharmacodynamic Ass…, Therapeutic drug m
 
 ## Departures & gaps
 
-**Deviations:**
-- `defaulted_parameters`: ['Tlag', 'k21']
-- `apparent_assumption`: F=1, Fm=1, no molar correction (parameterization=apparent)
-
 **Interpretation flags:**
-- built from REVIEW reference values (Itohara_2025) — secondary source
-- volume reported by review
+- table section residual_error: 'Proportional error,' routed out of structural estimates ('Residual variability')
+- routed 'θ3' → Q314 (omega_cov) to covariance — variability estimate, not a structural parameter
+- metabolite ganciclovir: Q22→Q351 — only the metabolite is measured and fm is not identifiable, so its CL/V are apparent (fm-divided)
+- metabolite volume: 'θ4 (L/kg)' Q63→Q61 for ganciclovir — it is 1-compartment, so its central volume is its only volume
+- apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=ganciclovir
+- template fit: none — only the metabolite is modelled — no parent compartment
+- row roles (LLM): model_class=compartmental; 8/8 row label(s) assigned, 8 linked by role
+- review gap-fill skipped: this record measures 'ganciclovir', not valganciclovir — the review values are the parent's
+
+**Extraction notes:**
+- LLM selected parameter table(s) 2
 
 ## Validation
 
@@ -58,17 +75,29 @@ Itohara K et al., Pharmacokinetic and Pharmacodynamic Ass…, Therapeutic drug m
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 4 | not captured | not captured | not captured |
+| C0_has_structural_params | pass | not captured | 5 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
-| C5_dimension_Q27 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Itohara_2025:review'] |
-| C5_dimension_Q30 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Itohara_2025:review'] |
-| C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['Itohara_2025:review'] |
-| C5_dimension_Q61 | pass | [length] ** 3 | not captured | not captured | not captured | ['Itohara_2025:review'] |
-| C7_apparent_coherence | pass | not captured | not captured | not captured | not captured | not captured |
+| C2_base_Q40 | fail | 0.536 | 0.96 | 1.791 | 0.05 | footnote reference category |
+| C5_dimension_Q351 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['tab_1:row4:col2', 'tab_1:row4:col4', 'tab_1:row4:col5', 'tab_1:row4:col6'] |
+| C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['tab_1:row9:col2', 'tab_1:row9:col5'] |
+| C5_dimension_Q61 | pass | [length] ** 3 | not captured | not captured | not captured | ['tab_1:row8:col2', 'tab_1:row8:col5'] |
+| C5_dimension_Q83 | pass | [time] | not captured | not captured | not captured | ['tab_1:row5:col2', 'tab_1:row5:col4', 'tab_1:row5:col5', 'tab_1:row5:col6'] |
+| C7_apparent_coherence | fail | F==1, Fm==1, no molar corr. | absolute F=0.536 with apparent parameterization | not captured | not captured | not captured |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
-| C9_phys_window_Q27 | pass | clearance within physiological range | 0.96 L/h | not captured | not captured | ['Itohara_2025:review'] |
-| C9_phys_window_Q61 | pass | volume within physiological range | 80.5 L | not captured | not captured | ['Itohara_2025:review'] |
+| C9_phys_window_Q61 | pass | volume within physiological range | 80.5 L | not captured | not captured | ['tab_1:row8:col2', 'tab_1:row8:col5'] |
+
+**Reviewer per-scenario checks:**
+
+| check | scenario | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|---|
+| T0_analyte_identity | not captured | pass | not captured | not captured | not captured | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | not captured | skipped | not captured | not captured | not captured | no covariate effects in record |
+| T3_apparent_invariant | not captured | pass | not captured | F=Fm=1, no molar correction | not captured | apparent params must not be double-corrected |
+| T3_output_variable | not captured | pass | C_central (measured=valganciclovir) | central.C | not captured | output must be the measured/analyte compartment |
+| T3_param_coverage | not captured | pass | 4 scholar param(s) emitted or defaulted | 4 covered | not captured | all structural parameters accounted for |
+| T3_topology_template | not captured | pass | 2C → PK_2C* | PK_2C_enteral | not captured | engineer template must match the scholar topology |
+| T6_deviations | not captured | fail | not captured | defaulted_parameters: not acceptable | not captured | LLM adjudication → deterministic rule |
 
 <details class="legend">
 <summary>Check legend — what each column means</summary>
@@ -78,34 +107,22 @@ Itohara K et al., Pharmacokinetic and Pharmacodynamic Ass…, Therapeutic drug m
 ## Raw artifacts
 
 - scholar stages: `../../../knowledgebase/drugs/drug_valganciclovir/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Itohara_2025` / `Itohara_2025::reference`)
+- model: `../../../knowledgebase/drugs/drug_valganciclovir/models/modelica/Valganciclovir_Itohara2025_reference.mo`
+- deviation: `../../../knowledgebase/drugs/drug_valganciclovir/models/modelica/Valganciclovir_Itohara2025_reference.deviation.json`
+- sim: `../../../knowledgebase/drugs/drug_valganciclovir/models/modelica/Valganciclovir_Itohara2025_reference.json`
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
-## Downloadable models
+## Models
 
-<div class="pk-models-grid"><div class="pk-models-table">
-<table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_valganciclovir/Valganciclovir_Itohara2025_reference/Valganciclovir_Itohara2025_reference_modelica.zip" download>Valganciclovir_Itohara2025_reference_modelica.zip</a> <span class="pk-size">(4.0 kB)</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_valganciclovir/Valganciclovir_Itohara2025_reference/Valganciclovir_Itohara2025_reference_fmi.zip" download>Valganciclovir_Itohara2025_reference_fmi.zip</a> <span class="pk-size">(4.3 kB)</span><br><a href="models/fmu/PK_2C_enteral.fmu" download>PK_2C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_valganciclovir/Valganciclovir_Itohara2025_reference/Valganciclovir_Itohara2025_reference_matlab.zip" download>Valganciclovir_Itohara2025_reference_matlab.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_valganciclovir/Valganciclovir_Itohara2025_reference/Valganciclovir_Itohara2025_reference_matlab_simbio.zip" download>Valganciclovir_Itohara2025_reference_matlab_simbio.zip</a> <span class="pk-size">(2.8 kB)</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_valganciclovir/Valganciclovir_Itohara2025_reference/Valganciclovir_Itohara2025_reference_sbml.zip" download>Valganciclovir_Itohara2025_reference_sbml.zip</a> <span class="pk-size">(2.6 kB)</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_valganciclovir/Valganciclovir_Itohara2025_reference/Valganciclovir_Itohara2025_reference_cellml.zip" download>Valganciclovir_Itohara2025_reference_cellml.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
-</tbody></table>
-<p>Each archive holds the model source, a script that simulates it against the appropriate library, and a README describing both and how to run them.</p>
-<p><b>FMI is two downloads.</b> The archive holds this record's parameters and its driver; the simulator itself is <code>PK_2C_enteral.fmu</code>, one compiled template shared by every model of this structure. Take the FMU once, keep it beside the script (or pass <code>--fmu PATH</code>). Running it reproduces the model-specific FMU exactly.</p>
-</div><figure class="pk-models-diagram"><img src="drugs/drug_valganciclovir/Valganciclovir_Itohara2025_reference/Valganciclovir_Itohara2025_reference.svg" alt="Valganciclovir_Itohara2025_reference diagram"><figcaption>Model diagram (Modelica) using Pharmacolibrary v26.09 components, rendered by OpenModelica 1.26.7.</figcaption></figure></div>
+<p>No downloads: this record is <b>rejected</b>, so it is not published as a model. Any archives generated for it before the verdict have been removed — a download outlives the page that explains it.</p>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-**Administration: oral** — 900 mg, single dose, first-order absorption (ka 0.591 /h, F 1). _The paper's dose was not captured; the default is the WHO ATC DDD 900 mg oral (J05AB14) (defined daily dose)._
-
-<dbs-fmusim paramsurl="drugs/drug_valganciclovir/Valganciclovir_Itohara2025_reference/Valganciclovir_Itohara2025_reference_params.json" metaurl="assets/fmu/PK_2C_enteral.vr.json" wasmurl="assets/fmu/PK_2C_enteral.js" controlsurl="drugs/drug_valganciclovir/Valganciclovir_Itohara2025_reference/Valganciclovir_Itohara2025_reference_sim_controls.json"></dbs-fmusim>
-
-<sub>Runs this record's model in the browser as WebAssembly. Sliders start at the extracted values; the reference check compares the browser's peak against the FMPy result recorded when the record was built, and is withheld once a value has been edited. Template `PK_2C_enteral` · parameters `Valganciclovir_Itohara2025_reference_params.json` · controls `Valganciclovir_Itohara2025_reference_sim_controls.json`. A slider marked *simulator value* is running on the template's own default because this record does not pin that parameter.</sub>
+_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2)</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 16:39 UTC</sub>

@@ -19,11 +19,15 @@
 
 **Model:** No model was generated from this record.
 
+> Fasudil inhibits the production of total peripheral resistance (TPR) via an indirect response model, with an Emax of 1 and an IC50 of 321 ng/mL. The paper describes the mechanism as a turnover model where the drug affects the zero-order production rate constant (Kin_TPR) of TPR, but does not provide specific values for the production or elimination rate constants (Kin, kout).
+>
+> <sub>in the paper's terms — summarised by qwen3.8:27b-mtp-q8_0 from the paper's text; not checked by a person</sub>
+
 - **paper:** `Snelder_2013`
 - **model family:** `indirect_response_i`
 - **driver:** `not_resolved`
 - **tier:** population
-- **effect:** inhibition/proportional
+- **effect:** inhibition/additive
 
 ## Citation
 Snelder N et al., PKPD modelling of the interrelationship…, British journal of pharmaco… (2013)

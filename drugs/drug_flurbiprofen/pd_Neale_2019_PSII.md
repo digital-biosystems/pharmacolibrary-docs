@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;M01A&quot;,&quot;href&quot;:&quot;atc/M01A.md&quot;},{&quot;label&quot;:&quot;flurbiprofen&quot;,&quot;href&quot;:&quot;drugs/drug_flurbiprofen/&quot;},{&quot;label&quot;:&quot;Neale_2019 \u00b7 PD Photosystem II (PSII) inhibition&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Flurbiprofen_Aarons1991_reference&quot;,&quot;label&quot;:&quot;Aarons_1991_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_flurbiprofen/Flurbiprofen_Aarons1991_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Flurbiprofen_Zhang2018_reference&quot;,&quot;label&quot;:&quot;Zhang_2018_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_flurbiprofen/Flurbiprofen_Zhang2018_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Flurbiprofen_Aarons1991_reference&quot;,&quot;label&quot;:&quot;Aarons_1991_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_flurbiprofen/Flurbiprofen_Aarons1991_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # Photosystem II (PSII) inhibition — PD  <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span>
@@ -16,9 +16,13 @@
 
 ## What this record describes
 
-**As extracted:** Flurbiprofen (concentrations from the PK model of Aarons_1991) drives Photosystem II (PSII) inhibition (in %): direct linear effect.
+**As extracted:** Flurbiprofen (concentrations from the PK model of Aarons_1991) drives Photosystem II (PSII) inhibition: direct linear effect.
 
 **Model:** No model was generated from this record.
+
+> The paper models the concentration-dependent inhibition of PSII quantum yield by flurbiprofen as a direct effect, noting that the EC10 values decrease from 2 h to 24 h because the compounds are not specific PSII inhibitors and the 24 h reading integrates non-specific effects. The extracted record lists linear model EC10 values of 9.79, 9.07, 6.92, and 5.47 mg/L, but the paper text only reports that EC10 values were much higher than bacterial toxicity EC50s without stating specific EC10 magnitudes for flurbiprofen in the provided excerpts.
+>
+> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
 
 - **paper:** `Neale_2019`
 - **model family:** `linear`
@@ -31,17 +35,7 @@ Neale PA et al., Evaluating the enantiospecific differen…, The Science of the 
   ·  DOI: [10.1016/j.scitotenv.2019.133659](https://doi.org/10.1016/j.scitotenv.2019.133659)
 
 ## Parameters
-| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|---|
-| — | EC10 | `Q100` · not captured | 9.79 | mg/L | not captured | nil (not captured) | Neale_2019:pdv3 |
-| — | EC10 | `Q100` · not captured | 9.07 | mg/L | not captured | nil (not captured) | Neale_2019:pdv3 |
-| — | EC10 | `Q100` · not captured | 6.92 | mg/L | not captured | nil (not captured) | Neale_2019:pdv3 |
-| — | EC10 | `Q100` · not captured | 5.47 | mg/L | not captured | nil (not captured) | Neale_2019:pdv3 |
-
-<details class="legend">
-<summary>Column legend — what each column means</summary>
-<table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>label (paper)</code></td><td>the row or statistic label exactly as printed in the paper (label_verbatim) — never normalised, so it can be found in the PDF.</td></tr><tr><td><code>Q-code · name</code></td><td>the ontology parameter this label was matched to (Q22 = clearance, Q27 = CL/F, Q49 = ka, Q57 = half-life, …) and its canonical name. The Q-code, not the label, is what scoring and cross-paper merging use.</td></tr><tr><td><code>value</code></td><td>the estimate as reported in the paper.</td></tr><tr><td><code>unit</code></td><td>the unit as printed (unit_verbatim).</td></tr><tr><td><code>value_si</code></td><td>the value converted to the canonical unit. Empty when no conversion was possible — usually an unparseable or missing unit.</td></tr><tr><td><code>link</code></td><td>how the label was matched to the Q-code, with confidence. exact / boundary / fuzzy / tv_prefix / caption_compartment / special_case are deterministic string matches; llm, llm_confirmed, llm_corrected involved the model; review and review_gapfill come from the secondary review tier, the latter filling a parameter the primary extraction missed; boundary_relink is a corrected match.</td></tr><tr><td><code>source</code></td><td>where in the paper the number came from: colN = that column of the located table, other_prose = running text, review = the secondary tier, pgx = a pharmacogenomic record.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>the field is absent from the KB artifact — nothing was recorded. This is NOT the same as zero or empty: the value is unknown, not measured to be nothing.</td></tr><tr><td><code>—</code></td><td>deliberately not shown: the column does not apply to this row.</td></tr><tr><td><code>not verified</code></td><td>the record is not in an accepted state (see the badge and the note above the table); the numbers are shown as extracted, not endorsed.</td></tr></tbody></table>
-</details>
+_No resolved parameters._
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>

@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N02A&quot;,&quot;href&quot;:&quot;atc/N02A.md&quot;},{&quot;label&quot;:&quot;oxycodone&quot;,&quot;href&quot;:&quot;drugs/drug_oxycodone/&quot;},{&quot;label&quot;:&quot;Morse_2021 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Oxycodone_Morse2021_reference&quot;,&quot;label&quot;:&quot;Morse_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_oxycodone/Oxycodone_Morse2021_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Oxycodone_Shi2026_reference&quot;,&quot;label&quot;:&quot;Shi_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_oxycodone/Oxycodone_Shi2026_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Oxycodone_Morse2021_reference&quot;,&quot;label&quot;:&quot;Morse_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_oxycodone/Oxycodone_Morse2021_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Oxycodone_Shi2026_reference&quot;,&quot;label&quot;:&quot;Shi_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_oxycodone/Oxycodone_Shi2026_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # oxycodone — `Oxycodone_Morse2021_reference`
 
-> ## <span class="pk-badge pk-badge--green">extracted</span>
+> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -15,30 +15,37 @@
 
 **Model:** A simulatable model was generated — see the **Models** and **Simulation** tabs.
 
-> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+### Reviewer guidance
+
+**Absorption lag time was omitted and a reverse intercompartmental clearance relied on unreported library placeholders, causing this oxycodone record to fail coverage checks.**
+
+The model expected five parameters, but the absorption lag time of 8.7 minutes was excluded, leaving only four covered. Additionally, the reverse intercompartmental clearance lacked an explicit estimate from the abstract, forcing the use of standard library values. These placeholders influence the simulated concentration profile but are not derived from the specific data reported in this abstract-only record. Extracted — oxycodone: CL 48.6 L.h-1 .70 kg-1, Q2 220 L.h-1 .70 kg-1, Q3 1.45 L.h-1 .70 kg-1, V1 98.2 L.70 kg-1, V2 90.1 L., V3 28.9 L.70 kg-1, t1/2ka 1.1 minutes, Frel 0.673 nasogastric, … (+1).
+
+<sub>reviewed by qwen3.8-27b</sub>
+
+> ⚠️ **STALE** — review status `needs_review` (reviewed 2026-10-07 06:17:52.597439+00:00) predates the upstream re-run (2026-10-07 14:56:47.950146+00:00). Current validate status: `extracted`.
 
 ## Citation
 Morse JD et al., Population pharmacokinetics of oxycodon…, Paediatric anaesthesia (2021)
   ·  DOI: [10.1111/pan.14283](https://doi.org/10.1111/pan.14283)
 
 ## Model component
-<dbs-pgx drug="oxycodone" model-id="Oxycodone_Morse2021_reference" status="extracted" stale="false" population="preterm neonates to adults" measured-compound="oxycodone" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<dbs-pgx drug="oxycodone" model-id="Oxycodone_Morse2021_reference" status="extracted" stale="true" population="preterm neonates to adults" measured-compound="oxycodone" parameterization="mechanistic" topology="2C"></dbs-pgx>
 
 **Model structure:** 2-compartment, IV mammillary model — template `PK_2C`.  
-**Parameters:** 9 extracted.
+**Parameters:** 8 extracted.
 
 **Parameterization:** mechanistic.
 
 ## Parameters
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| clearance (CL) | `Q22` · CL | 48.6 | L.h-1 .70 kg-1 | 0.0009450000000000001 | [l] / [[h] · [kg]] | not captured | exact (1.0) | Morse_2021:abstract | — | not captured |
-| intercompartmental clearances (Q2) | `Q99` · Q2 | 220 | L.h-1 .70 kg-1 | 0.004277777777777778 | [l] / [[h] · [kg]] | not captured | llm_corrected (0.6) | Morse_2021:abstract | — | not captured |
+| CL | `Q22` · CL | 48.6 | L.h-1 .70 kg-1 | 0.0009450000000000001 | [l] / [[h] · [kg]] | not captured | exact (1.0) | Morse_2021:abstract | — | not captured |
+| Q2 | `Q30` · Q | 220 | L.h-1 .70 kg-1 | 0.004277777777777778 | [l] / [[h] · [kg]] | not captured | special_case (0.95) | Morse_2021:abstract | — | not captured |
 | Q3 | `Q308` · Q3 | 1.45 | L.h-1 .70 kg-1 | 2.819444444444444e-05 | [l] / [[h] · [kg]] | not captured | exact (1.0) | Morse_2021:abstract | — | not captured |
-| volume of distribution in the central compartment (V1) | `Q63` · V1 | 98.2 | L.70 kg-1 | 6.8740000000000006 | [l] / [kg] | not captured | boundary_compartment (0.9) | Morse_2021:abstract | — | not captured |
-| rapidly equilibrating peripheral compartment (V2) | `Q64` · V2 | 90.1 | L. | not captured | [l] | not captured | llm (0.6) | Morse_2021:abstract | — | not captured |
-| 70 kg-1 (CV 76%); slow equilibrating peripheral compartment (V3) | `Q77` · V3 | 28.9 | L.70 kg-1 | 2.0229999999999997 | [l] / [kg] | not captured | llm (0.6) | Morse_2021:abstract | — | not captured |
-| Absorption halftimes (TABS ) | `Q95` · t1/2ka | 1.1 | minutes | 66.0 | [min] | not captured | llm_corrected (0.6) | Morse_2021:abstract, Morse_2021:abstract, Morse_2021:abstract, Morse_2021:abstract | — | not captured |
+| V1 | `Q63` · V1 | 98.2 | L.70 kg-1 | 6.8740000000000006 | [l] / [kg] | not captured | exact (1.0) | Morse_2021:abstract | — | not captured |
+| V2 | `Q64` · V2 | 90.1 | L.70 kg-1 | 6.307 | [l] / [kg] | not captured | exact (1.0) | Morse_2021:abstract | — | not captured |
+| V3 | `Q77` · V3 | 28.9 | L.70 kg-1 | 2.0229999999999997 | [l] / [kg] | not captured | exact (1.0) | Morse_2021:abstract | — | not captured |
 | relative bioavailability | `Q87` · Frel | 0.673 | nasogastric | not captured | not captured | not captured | exact (1.0) | Morse_2021:abstract | — | not captured |
 | lag time | `Q83` · tlag | 8.7 | minutes | 522.0 | [min] | not captured | exact (1.0) | Morse_2021:abstract | — | not captured |
 
@@ -49,12 +56,8 @@ Morse JD et al., Population pharmacokinetics of oxycodon…, Paediatric anaesthe
 
 ## Departures & gaps
 
-**Deviations:**
-- `defaulted_parameters`: ['k21']
-
 **Interpretation flags:**
-- unit_dimension_mismatch: 'Clearance' → Q22 (unit 'dimensionless' vs ontology '[length] ** 3 / [time]') — route to review
-- dropped duplicate Q22 ('Clearance', value 8) — already have one for this compound
+- dropped unlinked row (NIL): 'TABS' — extend the ontology if this is a real PK parameter (source ['Morse_2021:abstract', 'Morse_2021:abstract', 'Morse_2021:abstract', 'Morse_2021:abstract'])
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=oxycodone
 - held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
 - structure disagreement: deterministic 2C vs LLM 3C — review compartment count
@@ -62,7 +65,7 @@ Morse JD et al., Population pharmacokinetics of oxycodon…, Paediatric anaesthe
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
 
 **Extraction notes:**
-- no GROBID TEI available — transcribed from abstract in Morse_2021_metadata.yaml (15 record(s)); values are summary statistics, not a fitted model
+- no GROBID TEI available — transcribed from abstract in Morse_2021_metadata.yaml (12 record(s)); values are summary statistics, not a fitted model
 
 ## Validation
 
@@ -70,21 +73,32 @@ Morse JD et al., Population pharmacokinetics of oxycodon…, Paediatric anaesthe
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 9 | not captured | not captured | not captured |
+| C0_has_structural_params | pass | not captured | 8 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Morse_2021:abstract'] |
+| C5_dimension_Q30 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Morse_2021:abstract'] |
 | C5_dimension_Q308 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Morse_2021:abstract'] |
 | C5_dimension_Q63 | pass | [length] ** 3 | not captured | not captured | not captured | ['Morse_2021:abstract'] |
 | C5_dimension_Q64 | pass | [length] ** 3 | not captured | not captured | not captured | ['Morse_2021:abstract'] |
 | C5_dimension_Q77 | pass | [length] ** 3 | not captured | not captured | not captured | ['Morse_2021:abstract'] |
 | C5_dimension_Q83 | pass | [time] | not captured | not captured | not captured | ['Morse_2021:abstract'] |
-| C5_dimension_Q95 | pass | [time] | not captured | not captured | not captured | ['Morse_2021:abstract', 'Morse_2021:abstract', 'Morse_2021:abstract', 'Morse_2021:abstract'] |
-| C5_dimension_Q99 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Morse_2021:abstract'] |
 | C6_cl_magnitude | pass | &lt;= 90.0 L/h | 48.6 | not captured | not captured | ['Morse_2021:abstract'] |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
 | C9_phys_window_Q22 | pass | clearance within physiological range | 3.4e+03 L/h | not captured | not captured | ['Morse_2021:abstract'] |
 | C9_phys_window_Q63 | pass | volume within physiological range | 6.87e+03 L | not captured | not captured | ['Morse_2021:abstract'] |
+| C9_phys_window_Q64 | pass | volume within physiological range | 6.31e+03 L | not captured | not captured | ['Morse_2021:abstract'] |
+
+**Reviewer per-scenario checks:**
+
+| check | scenario | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|---|
+| T0_analyte_identity | not captured | pass | not captured | not captured | not captured | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | not captured | skipped | not captured | not captured | not captured | no covariate effects in record |
+| T3_output_variable | not captured | pass | C_central (measured=oxycodone) | central.C | not captured | output must be the measured/analyte compartment |
+| T3_param_coverage | not captured | fail | 5 scholar param(s) emitted or defaulted | 4 covered | not captured | neither emitted nor in defaulted[]: ['tlag'] |
+| T3_topology_template | not captured | pass | 2C → PK_2C* | PK_2C | not captured | engineer template must match the scholar topology |
+| T6_deviations | not captured | fail | not captured | defaulted_parameters: not acceptable | not captured | LLM adjudication → deterministic rule |
 
 <details class="legend">
 <summary>Check legend — what each column means</summary>
@@ -94,6 +108,9 @@ Morse JD et al., Population pharmacokinetics of oxycodon…, Paediatric anaesthe
 ## Raw artifacts
 
 - scholar stages: `../../../knowledgebase/drugs/drug_oxycodone/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Morse_2021` / `Morse_2021::reference`)
+- model: `../../../knowledgebase/drugs/drug_oxycodone/models/modelica/Oxycodone_Morse2021_reference.mo`
+- deviation: `../../../knowledgebase/drugs/drug_oxycodone/models/modelica/Oxycodone_Morse2021_reference.deviation.json`
+- sim: `../../../knowledgebase/drugs/drug_oxycodone/models/modelica/Oxycodone_Morse2021_reference.json`
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -102,8 +119,8 @@ Morse JD et al., Population pharmacokinetics of oxycodon…, Paediatric anaesthe
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_oxycodone/Oxycodone_Morse2021_reference/Oxycodone_Morse2021_reference_modelica.zip" download>Oxycodone_Morse2021_reference_modelica.zip</a> <span class="pk-size">(4.4 kB)</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_oxycodone/Oxycodone_Morse2021_reference/Oxycodone_Morse2021_reference_fmi.zip" download>Oxycodone_Morse2021_reference_fmi.zip</a> <span class="pk-size">(4.2 kB)</span><br><a href="models/fmu/PK_2C.fmu" download>PK_2C.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_oxycodone/Oxycodone_Morse2021_reference/Oxycodone_Morse2021_reference_modelica.zip" download>Oxycodone_Morse2021_reference_modelica.zip</a> <span class="pk-size">(4.1 kB)</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_oxycodone/Oxycodone_Morse2021_reference/Oxycodone_Morse2021_reference_fmi.zip" download>Oxycodone_Morse2021_reference_fmi.zip</a> <span class="pk-size">(4.1 kB)</span><br><a href="models/fmu/PK_2C.fmu" download>PK_2C.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_oxycodone/Oxycodone_Morse2021_reference/Oxycodone_Morse2021_reference_matlab.zip" download>Oxycodone_Morse2021_reference_matlab.zip</a> <span class="pk-size">(3.3 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_oxycodone/Oxycodone_Morse2021_reference/Oxycodone_Morse2021_reference_matlab_simbio.zip" download>Oxycodone_Morse2021_reference_matlab_simbio.zip</a> <span class="pk-size">(2.7 kB)</span></td></tr>
 <tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_oxycodone/Oxycodone_Morse2021_reference/Oxycodone_Morse2021_reference_sbml.zip" download>Oxycodone_Morse2021_reference_sbml.zip</a> <span class="pk-size">(2.5 kB)</span></td></tr>
@@ -124,4 +141,4 @@ Morse JD et al., Population pharmacokinetics of oxycodon…, Paediatric anaesthe
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 05:38 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 14:56 UTC</sub>

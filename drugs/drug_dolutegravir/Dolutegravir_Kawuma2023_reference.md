@@ -1,10 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;J05A&quot;,&quot;href&quot;:&quot;atc/J05A.md&quot;},{&quot;label&quot;:&quot;dolutegravir&quot;,&quot;href&quot;:&quot;drugs/drug_dolutegravir/&quot;},{&quot;label&quot;:&quot;Kawuma_2023 \u00b7 reference&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Dolutegravir_Kengo2023_reference&quot;,&quot;label&quot;:&quot;Kengo_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_dolutegravir/Dolutegravir_Kengo2023_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Dolutegravir_Zhang2015_reference&quot;,&quot;label&quot;:&quot;Zhang_2015_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_dolutegravir/Dolutegravir_Zhang2015_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # dolutegravir — `Dolutegravir_Kawuma2023_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -14,14 +15,22 @@
 
 **Model:** No model was generated from this record.
 
-> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+### Reviewer guidance
+
+**The volume of distribution for dolutegravir is reported as -870.7 BIC, a negative value incompatible with a physical volume.**
+
+The record lists a volume of distribution parameter with a value of -870.7 and a unit of BIC, which is not a valid pharmacokinetic unit. This negative magnitude for a volume term is implausible and likely represents a statistical metric error rather than a physiological quantity. Additionally, the relative bioavailability parameter for dolutegravir was not extracted, so no specific value is recorded for the review. Extracted — dolutegravir: V -871 BIC.
+
+<sub>reviewed by qwen3.8-27b</sub>
+
+> ⚠️ **STALE** — review status `rejected` (reviewed 2026-10-07 14:20:56.627066+00:00) predates the upstream re-run (2026-10-07 16:25:35.320954+00:00). Current validate status: `needs_review`.
 
 ## Citation
 Kawuma AN et al., Drug-drug interaction between rifabutin…, British journal of clinical… (2023)
   ·  DOI: [10.1111/bcp.15604](https://doi.org/10.1111/bcp.15604)
 
 ## Model component
-<dbs-pgx drug="dolutegravir" model-id="Dolutegravir_Kawuma2023_reference" status="rejected" stale="false" population="volunteers" measured-compound="dolutegravir" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<dbs-pgx drug="dolutegravir" model-id="Dolutegravir_Kawuma2023_reference" status="needs_review" stale="true" population="healthy volunteers" measured-compound="dolutegravir" parameterization="mechanistic" topology="1C"></dbs-pgx>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 1 extracted.
@@ -29,11 +38,11 @@ Kawuma AN et al., Drug-drug interaction between rifabutin…, British journal of
 **Parameterization:** mechanistic.
 
 ## Parameters
-> ⚠️ This record is not accepted (current status `rejected`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
+> ⚠️ This record is not accepted (current status `needs_review`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| BIC of the effect on the volume of distribution | `Q61` · V | -870.7 | BIC | not captured | BIC | not captured | boundary (0.8) | Kawuma_2023:results_prose | — | not captured |
+| digoxin volume of distribution | `Q61` · V | 77 | % | not captured | % | not captured | boundary (0.8) | Kawuma_2023:discussion_prose | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -48,16 +57,17 @@ Kawuma AN et al., Drug-drug interaction between rifabutin…, British journal of
 ## Departures & gaps
 
 **Interpretation flags:**
-- salvaged Q61 ('BIC of the effect on the volume of distribution'=-870.7) from results prose — parameter table was unreadable
-- implicit units: LLM call failed (RateLimitError) — units left missing
+- NIL: refused to back-fill base 'NIL' from footnote/prose loose number 70 (source ['T1:footnote']); the table cell was unparseable — needs review
+- salvaged Q61 ('digoxin volume of distribution'=77) from results prose — parameter table was unreadable
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=dolutegravir
 - held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
+- structure disagreement: deterministic 1C vs LLM 2C — review compartment count
 - status held at route_to_review — not promoted
 - skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
 - skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
 
 **Extraction notes:**
-- LLM region T1:footnote: Error code: 429 - {'error': {'message': 'Rate limit exceeded for api_key: 8d79104cac3d0b5a8019d9c3dd60ff02e7a84591fb3552ddb3bbcabd52b31d23. Limit type: max_parallel_requests. Current limit: 4, Remaining: 0. Limit resets at: 2026-10-07 14:37:59 UTC', 'type': 'throttling_error', 'param': None, 'code': '429'}}
+- LLM selected parameter table(s) 1
 
 ## Validation
 
@@ -68,8 +78,7 @@ Kawuma AN et al., Drug-drug interaction between rifabutin…, British journal of
 | C0_has_structural_params | pass | not captured | 1 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | fail | not captured | not captured | not captured | not captured | not captured |
-| C2_base_sign_Q61 | fail | not captured | -870.7 | not captured | not captured | not captured |
-| C5_unit_missing_Q61 | fail | [length] ** 3 | BIC | not captured | not captured | ['Kawuma_2023:results_prose'] |
+| C5_unit_missing_Q61 | fail | [length] ** 3 | % | not captured | not captured | ['Kawuma_2023:discussion_prose'] |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
 
 <details class="legend">
@@ -84,9 +93,19 @@ Kawuma AN et al., Drug-drug interaction between rifabutin…, British journal of
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
-## Models
+## Downloadable models
 
-<p>No downloads: this record is <b>rejected</b>, so it is not published as a model. Any archives generated for it before the verdict have been removed — a download outlives the page that explains it.</p>
+<div class="pk-models-grid"><div class="pk-models-table">
+<table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
+</tbody></table>
+<p>No bundles have been generated for this record yet. When the engineer emits them they appear here automatically — this page reports what is on disk and generates nothing itself.</p>
+</div></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
@@ -95,4 +114,4 @@ _No web simulator for this record: its structure has no shared WebAssembly templ
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 14:07 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 16:25 UTC</sub>

@@ -5,7 +5,7 @@
 
 # topotecan — `Topotecan_Gallo2000_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -15,14 +15,22 @@
 
 **Model:** No model was generated from this record.
 
-> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+### Reviewer guidance
+
+**The paper reports none of the model's key parameters.**
+
+No clearance, volume or rate constant of the model is reported in it. Only the abstract was available, so reported summary statistics stand in for a fitted model. No parameter values were extracted.
+
+<sub>reviewed by rule template (no LLM)</sub>
+
+> ⚠️ **STALE** — review status `rejected` (reviewed 2026-10-06 15:25:36.625761+00:00) predates the upstream re-run (2026-10-07 14:23:07.354694+00:00). Current validate status: `rejected`.
 
 ## Citation
 Gallo JM et al., Population pharmacokinetic model for to…, Journal of clinical oncolog… (2000)
   ·  DOI: [10.1200/JCO.2000.18.12.2459](https://doi.org/10.1200/JCO.2000.18.12.2459)
 
 ## Model component
-<dbs-pgx drug="topotecan" model-id="Topotecan_Gallo2000_reference" status="rejected" stale="false" population="phase I patients" measured-compound="topotecan" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<dbs-pgx drug="topotecan" model-id="Topotecan_Gallo2000_reference" status="rejected" stale="true" population="cancer patients" measured-compound="topotecan" parameterization="mechanistic" topology="1C"></dbs-pgx>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.
@@ -32,7 +40,14 @@ Gallo JM et al., Population pharmacokinetic model for to…, Journal of clinical
 ## Parameters
 > ⚠️ This record is not accepted (current status `rejected`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
 
-_No resolved parameters._
+| label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
+|---|---|---|---|---|---|---|---|---|---|---|
+| n | `Q900` · equation variable | 899 | patients | not captured | [patients] | not captured | llm (0.6) | Gallo_2000:abstract | — | not captured |
+
+<details class="legend">
+<summary>Column legend — what each column means</summary>
+<table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>label (paper)</code></td><td>the row or statistic label exactly as printed in the paper (label_verbatim) — never normalised, so it can be found in the PDF.</td></tr><tr><td><code>Q-code · name</code></td><td>the ontology parameter this label was matched to (Q22 = clearance, Q27 = CL/F, Q49 = ka, Q57 = half-life, …) and its canonical name. The Q-code, not the label, is what scoring and cross-paper merging use.</td></tr><tr><td><code>value</code></td><td>the estimate as reported in the paper.</td></tr><tr><td><code>unit</code></td><td>the unit as printed (unit_verbatim).</td></tr><tr><td><code>value_si</code></td><td>the value converted to the canonical unit. Empty when no conversion was possible — usually an unparseable or missing unit.</td></tr><tr><td><code>unit_canonical</code></td><td>the canonical unit for that Q-code, i.e. what value_si is expressed in.</td></tr><tr><td><code>RSE%</code></td><td>relative standard error of the estimate, when the paper reports one.</td></tr><tr><td><code>link</code></td><td>how the label was matched to the Q-code, with confidence. exact / boundary / fuzzy / tv_prefix / caption_compartment / special_case are deterministic string matches; llm, llm_confirmed, llm_corrected involved the model; review and review_gapfill come from the secondary review tier, the latter filling a parameter the primary extraction missed; boundary_relink is a corrected match.</td></tr><tr><td><code>source</code></td><td>where in the paper the number came from: colN = that column of the located table, other_prose = running text, review = the secondary tier, pgx = a pharmacogenomic record.</td></tr><tr><td><code>covariates</code></td><td>covariate effects attached to this parameter (e.g. weight on CL).</td></tr><tr><td><code>IIV</code></td><td>inter-individual variability reported for this parameter.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>the field is absent from the KB artifact — nothing was recorded. This is NOT the same as zero or empty: the value is unknown, not measured to be nothing.</td></tr><tr><td><code>—</code></td><td>deliberately not shown: the column does not apply to this row.</td></tr><tr><td><code>not verified</code></td><td>the record is not in an accepted state (see the badge and the note above the table); the numbers are shown as extracted, not endorsed.</td></tr></tbody></table>
+</details>
 
 ### Unresolved rows _(no Q-code or no value — not parameters)_
 | label (paper) | Q-code | value | link |
@@ -42,12 +57,17 @@ _No resolved parameters._
 ## Departures & gaps
 
 **Interpretation flags:**
+- unit_dimension_unknown: 'patients' (equation variable)
+- dropped unlinked row (NIL): 'r(2)' — extend the ontology if this is a real PK parameter (source ['Gallo_2000:abstract', 'Gallo_2000:abstract'])
+- dropped unlinked row (NIL): 'outlying patients' — extend the ontology if this is a real PK parameter (source ['Gallo_2000:abstract'])
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=topotecan
+- held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
+- status held at route_to_review — not promoted
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
 - review gap-fill skipped: this record carries no value of its own, and a model assembled entirely from other papers is not this paper's model
 
 **Extraction notes:**
-- no GROBID TEI available — transcribed from abstract in Gallo_2000_metadata.yaml (1 record(s)); values are summary statistics, not a fitted model
+- no GROBID TEI available — transcribed from abstract in Gallo_2000_metadata.yaml (5 record(s)); values are summary statistics, not a fitted model
 
 ## Validation
 
@@ -83,4 +103,4 @@ _No web simulator for this record: its structure has no shared WebAssembly templ
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-06 13:42 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 14:23 UTC</sub>

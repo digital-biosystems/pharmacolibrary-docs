@@ -1,5 +1,4 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N02C&quot;,&quot;href&quot;:&quot;atc/N02C.md&quot;},{&quot;label&quot;:&quot;sumatriptan&quot;,&quot;href&quot;:&quot;drugs/drug_sumatriptan/&quot;},{&quot;label&quot;:&quot;MaassenVanDenBrink_1998 \u00b7 PD coronary artery contraction&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Sumatriptan_Cosson1999_reference&quot;,&quot;label&quot;:&quot;Cosson_1999_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_sumatriptan/Sumatriptan_Cosson1999_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # coronary artery contraction — PD  <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">in vitro</span>
@@ -16,9 +15,13 @@
 
 ## What this record describes
 
-**As extracted:** Sumatriptan (concentrations from the PK model of Christensen_2003) drives coronary artery contraction (in % of response to 100 mmol/L K+): direct Emax (saturable) effect.
+**As extracted:** Sumatriptan (concentrations from the PK model of Christensen_2003) drives coronary artery contraction (in % of contraction elicited by 100 mmol/L K+): direct Emax (saturable) effect.
 
-**Model:** A model was generated (see the **Models** tab); it has no in-browser simulator.
+**Model:** No model was generated from this record.
+
+> Sumatriptan directly stimulates human isolated coronary artery contraction, acting as an agonist with a maximal response (Emax) of 14.0% of the response to 100 mmol/L K+ and an EC50 of 803 nmol/L. The study characterizes this direct pharmacodynamic relationship via concentration-response curves without specifying a distinct effect compartment or kinetic rate parameters.
+>
+> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
 
 - **paper:** `MaassenVanDenBrink_1998`
 - **model family:** `emax`
@@ -33,7 +36,7 @@ MaassenVanDenBrink A et al., Coronary side-effect potential of curre…, Circula
 ## Parameters
 | role | label (paper) | Q-code · name | value | unit | value_si | link | source |
 |---|---|---|---|---|---|---|---|
-| PD (effect) | E max | `Q320` · not captured | 14.0 | % of response to 100 mmol/L K+ | not captured | llm (not captured) | MaassenVanDenBrink_1998:pdv3 |
+| PD (effect) | E max | `Q320` · not captured | 14.0 | %K ϩ | not captured | llm (not captured) | MaassenVanDenBrink_1998:pdv3 |
 | PD (effect) | EC 50 | `Q321` · not captured | 803 | nmol/L | not captured | llm (not captured) | MaassenVanDenBrink_1998:pdv3 |
 
 <details class="legend">
@@ -42,55 +45,20 @@ MaassenVanDenBrink A et al., Coronary side-effect potential of curre…, Circula
 </details>
 
 
-## Exposure-response model
-
-`Sumatriptan_MaassenVanDenBrink1998_PD_coronary_artery_contra` — sigmoid_emax, `response = E0 + Emax*frac`
-
-| parameter | value (paper units) | SI |
-|---|---|---|
-| E0 | 0 | — |
-| Emax | 14 % of response to 100 mmol/L K+ | — |
-| EC50 | 803 nmol/L | 0.000803 mol/m3 |
-| gamma | 1 | — |
-
-Closed-form check points (response, SI): `at_0` = 0, `at_EC50` = 7, `at_inf` = 14
-
-Deviations:
-
-- `defaulted_parameters` — E0, gamma
-
-## Review
-
-Verdict <span class="pk-badge pk-badge--orange">needs review</span> · route to `scholar`
-
-| check | status | note |
-|---|---|---|
-| `T0_driver` | pass | driver is the drug, a synonym or one of its metabolites (or unnamed) |
-| `T1_closed_form` | pass | engineer's check points reproduced from the bound parameters |
-| `T1b_fmu` | skipped | template FMU / fmpy not available — advisory only |
-| `T2_direction` | pass | the response rises, as direct effect predicts |
-| `T3_plausibility` | pass | EC50, gamma, Imax and baseline in range |
-| `T4_defaults` | fail | a core parameter took a library default: E0 |
-
-Advisory:
-
-- defaulted: E0 — a row the paper has and the record lacks
-
-
 <div class="pk-tab-mark" data-tab="Models"></div>
 
 ## Downloadable models
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_sumatriptan/Sumatriptan_MaassenVanDenBrink1998_PD_coronary_artery_contra/Sumatriptan_MaassenVanDenBrink1998_PD_coronary_artery_contra_modelica.zip" download>Sumatriptan_MaassenVanDenBrink1998_PD_coronary_artery_contra_modelica.zip</a> <span class="pk-size">(3.2 kB)</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">not generated yet</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_sumatriptan/Sumatriptan_MaassenVanDenBrink1998_PD_coronary_artery_contra/Sumatriptan_MaassenVanDenBrink1998_PD_coronary_artery_contra_matlab.zip" download>Sumatriptan_MaassenVanDenBrink1998_PD_coronary_artery_contra_matlab.zip</a> <span class="pk-size">(3.3 kB)</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_sumatriptan/Sumatriptan_MaassenVanDenBrink1998_PD_coronary_artery_contra/Sumatriptan_MaassenVanDenBrink1998_PD_coronary_artery_contra_sbml.zip" download>Sumatriptan_MaassenVanDenBrink1998_PD_coronary_artery_contra_sbml.zip</a> <span class="pk-size">(2.7 kB)</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_sumatriptan/Sumatriptan_MaassenVanDenBrink1998_PD_coronary_artery_contra/Sumatriptan_MaassenVanDenBrink1998_PD_coronary_artery_contra_cellml.zip" download>Sumatriptan_MaassenVanDenBrink1998_PD_coronary_artery_contra_cellml.zip</a> <span class="pk-size">(2.6 kB)</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
 </tbody></table>
-<p>Each archive holds the model source, a script that simulates it against the appropriate library, and a README describing both and how to run them.</p>
+<p>No bundles have been generated for this record yet. When the engineer emits them they appear here automatically — this page reports what is on disk and generates nothing itself.</p>
 </div></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>

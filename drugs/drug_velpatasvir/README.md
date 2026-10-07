@@ -18,7 +18,7 @@ Velpatasvir is an antiviral drug used to treat hepatitis C virus infections. It 
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 14:42 | 0:47 | 0/0/0 | 1/0/0 | 0/0/0 | 61,698/927 | einfracz / qwen3.8-27b | 3 | 1/2 | 3/0 | 0 |
+| 2026-10-07 16:44 | 0:18 | 0/0/0 | 1/0/0 | 0/0/0 | 32,454/860 | ollama / glm-5.3-flash | 3 | 1/2 | 3/0 | 0 |
 
 ## popPK records
 
@@ -28,7 +28,7 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Nguyen_2020_RLU](drugs/drug_velpatasvir/pd_Nguyen_2020_RLU.md) | HCV replicon replication ← velpatasvir · direct sigmoid Emax (Hill) effect | — | Nguyen D et al., Efficacy of NS5A inhibitors against unu…, Journal of hepatology (2020) | [10.1016/j.jhep.2020.05.029](https://doi.org/10.1016/j.jhep.2020.05.029) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Nguyen_2020_RLU](drugs/drug_velpatasvir/pd_Nguyen_2020_RLU.md) | HCV replicon replication (luciferase activity) ← velpatasvir · direct sigmoid Emax (Hill) effect | — | Nguyen D et al., Efficacy of NS5A inhibitors against unu…, Journal of hepatology (2020) | [10.1016/j.jhep.2020.05.029](https://doi.org/10.1016/j.jhep.2020.05.029) |
 
 ## ADME sites
 
@@ -63,27 +63,28 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 ## Full text wanted
 
-_2 paper(s) judged relevant from the abstract, with no full text on disk — paywalled, or the resolver could not reach them. Follow the DOI, then save the PDF into `papers/` as `&lt;save as&gt;.pdf` and re-run the extraction._
+_3 paper(s) judged relevant from the abstract, with no full text on disk — paywalled, or the resolver could not reach them. Follow the DOI, then save the PDF into `papers/` as `&lt;save as&gt;.pdf` and re-run the extraction._
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Indolfi_2022.pdf` | Indolfi G et al., Sofosbuvir-velpatasvir-voxilaprevir in…, Hepatology (Baltimore, Md.) (2022) | popPK | 9 | [10.1002/hep.32393](https://doi.org/10.1002/hep.32393) | [35112372](https://pubmed.ncbi.nlm.nih.gov/35112372) | The study reports pharmacokinetics of the drug combination containing velpatasvir, but the specific numeric parameter values are not present in the provided text. |
-| `Jonas_2024.pdf` | Jonas MM et al., Sofosbuvir-velpatasvir in children 3-17…, Journal of pediatric gastro… (2024) | popPK | 8 | [10.1002/jpn3.12045](https://doi.org/10.1002/jpn3.12045) | [38644678](https://pubmed.ncbi.nlm.nih.gov/38644678) | The paper reports on a population pharmacokinetic model for velpatasvir in children to support dose appropriateness, but the specific quantitative parameter values (CL, V, etc.) are not provided in the extracted text, only qualitative comparisons to adults. |
+| `Indolfi_2022.pdf` | Indolfi G et al., Sofosbuvir-velpatasvir-voxilaprevir in…, Hepatology (Baltimore, Md.) (2022) | popPK | 7 | [10.1002/hep.32393](https://doi.org/10.1002/hep.32393) | [35112372](https://pubmed.ncbi.nlm.nih.gov/35112372) | Intensive and population PK sampling in adolescents dosed with velpatasvir, but numeric exposure values are not shown in the evidence (likely in tables/figures not provided). |
+| `Jonas_2024.pdf` | Jonas MM et al., Sofosbuvir-velpatasvir in children 3-17…, Journal of pediatric gastro… (2024) | popPK | 7 | [10.1002/jpn3.12045](https://doi.org/10.1002/jpn3.12045) | [38644678](https://pubmed.ncbi.nlm.nih.gov/38644678) | Population PK of velpatasvir in children was performed and intensive PK collected, but no numeric parameter values appear in the evidence (likely in supplementary material). |
+| `Mogalian_2018.pdf` | Mogalian E et al., Pharmacokinetics and Safety of Velpatas…, Clinical pharmacokinetics (2018) | popPK | 5 | [10.1007/s40262-018-0645-6](https://doi.org/10.1007/s40262-018-0645-6) | [29520729](https://pubmed.ncbi.nlm.nih.gov/29520729) | Human NCA PK of velpatasvir in hepatic impairment, but no numeric parameter values (AUC, CL, etc.) are given in the evidence text. |
 
-<sub>queue written 2026-10-07T14:42:06.087960+00:00</sub>
+<sub>queue written 2026-10-07T16:44:40.324015+00:00</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Camus_2018 | irrelevant | 0 | 0 | The study characterizes antiviral resistance (EC50) in vitro and clinical efficacy, but does not report pharmacokinetic parameters such as clearance, volume, or half-life. |
-| popPK | Dvory-Sobol_2019 | irrelevant | 0 | 0 | The study is an in vitro resistance profile characterization and does not report any pharmacokinetic disposition parameters. |
-| popPK | Indolfi_2022 | relevant | 9 | 0 | The study reports pharmacokinetics of the drug combination containing velpatasvir, but the specific numeric parameter values are not present in the provided text. |
-| popPK | Jonas_2024 | relevant | 8 | 1 | The paper reports on a population pharmacokinetic model for velpatasvir in children to support dose appropriateness, but the specific quantitative parameter values (CL, V, etc.) are not provided in the extracted text, only qualitative comparisons to adults. |
-| popPK | Mogalian_2018 | relevant | 4 | 0 | The paper describes a relevant population PK study using non-compartmental analysis, but the specific quantitative parameter values (CL, V, t1/2) are not present in the provided text. |
-| popPK | Nguyen_2020 | irrelevant | 0 | 0 | The study is an in-vitro pharmacodynamic assessment of HCV NS5A inhibitor efficacy (EC50 values), not a pharmacokinetic study, and reports no PK parameters (CL, V, t1/2) for velpatasvir. |
-| popPK | Ruiz_2021 | irrelevant | 0 | 0 | The paper is a clinical efficacy study focusing on virological response (SVR) and safety, containing no quantitative pharmacokinetic parameters (e.g., clearance, volume, half-life) for velpatasvir. |
-| popPK | Xie_2020 | irrelevant | 0 | 0 | The paper is an in-vitro antiviral screening study where velpatasvir is tested as a drug candidate for SARS-CoV-2 inhibition, not a pharmacokinetic study of velpatasvir. |
+| popPK | Camus_2018 | irrelevant | 0 | 0 | In vitro resistance/virology study with EC50 potency data, no PK disposition parameters for velpatasvir. |
+| popPK | Dvory-Sobol_2019 | irrelevant | 0 | 0 | In vitro virologic resistance study (EC50 susceptibility in replicons), no pharmacokinetic disposition parameters for velpatasvir. |
+| popPK | Indolfi_2022 | relevant | 7 | 3 | Intensive and population PK sampling in adolescents dosed with velpatasvir, but numeric exposure values are not shown in the evidence (likely in tables/figures not provided). |
+| popPK | Jonas_2024 | relevant | 7 | 3 | Population PK of velpatasvir in children was performed and intensive PK collected, but no numeric parameter values appear in the evidence (likely in supplementary material). |
+| popPK | Mogalian_2018 | relevant | 5 | 2 | Human NCA PK of velpatasvir in hepatic impairment, but no numeric parameter values (AUC, CL, etc.) are given in the evidence text. |
+| popPK | Nguyen_2020 | irrelevant | 0 | 0 | In vitro replicon EC50 antiviral susceptibility study, not a pharmacokinetic study with disposition parameters for velpatasvir. |
+| popPK | Ruiz_2021 | irrelevant | 0 | 0 | Clinical efficacy/safety study of DAA regimens; velpatasvir only appears as a treatment drug and in-vitro EC50 resistance data, with no PK disposition parameters. |
+| popPK | Xie_2020 | irrelevant | 0 | 0 | This is an in vitro SARS-CoV-2 antiviral screening study; velpatasvir is only a screened compound reported inactive, with no PK parameters. |
 
 ---
 <sub>Generated by `docs.py` (scholarv2)</sub>

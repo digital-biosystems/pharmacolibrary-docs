@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;J05A&quot;,&quot;href&quot;:&quot;atc/J05A.md&quot;},{&quot;label&quot;:&quot;stavudine&quot;,&quot;href&quot;:&quot;drugs/drug_stavudine/&quot;},{&quot;label&quot;:&quot;Panhard_2007 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Stavudine_Panhard2007_reference&quot;,&quot;label&quot;:&quot;Panhard_2007_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_stavudine/Stavudine_Panhard2007_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Stavudine_Jullien2007_reference&quot;,&quot;label&quot;:&quot;Jullien_2007_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_stavudine/Stavudine_Jullien2007_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Stavudine_Panhard2007_reference&quot;,&quot;label&quot;:&quot;Panhard_2007_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_stavudine/Stavudine_Panhard2007_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Stavudine_Sinxadi2010_reference&quot;,&quot;label&quot;:&quot;Sinxadi_2010_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_stavudine/Stavudine_Sinxadi2010_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # stavudine — `Stavudine_Panhard2007_reference`
 
-> ## <span class="pk-badge pk-badge--green">extracted</span>
+> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -15,14 +15,22 @@
 
 **Model:** A simulatable model was generated — see the **Models** and **Simulation** tabs.
 
-> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+### Reviewer guidance
+
+**Every check that could be run on this record passed.**
+
+Only the abstract was available, so reported summary statistics stand in for a fitted model.
+
+<sub>reviewed by rule template (no LLM)</sub>
+
+> ⚠️ **STALE** — review status `curated_candidate` (reviewed 2026-10-07 14:42:50.516845+00:00) predates the upstream re-run (2026-10-07 16:16:59.876192+00:00). Current validate status: `extracted`.
 
 ## Citation
 Panhard X et al., Population pharmacokinetic analysis of…, European journal of clinica… (2007)
   ·  DOI: [10.1007/s00228-007-0337-x](https://doi.org/10.1007/s00228-007-0337-x)
 
 ## Model component
-<dbs-pgx drug="stavudine" model-id="Stavudine_Panhard2007_reference" status="extracted" stale="false" population="HIV-1 infected patients on HAART" measured-compound="stavudine" parameterization="apparent" topology="1C"></dbs-pgx>
+<dbs-pgx drug="stavudine" model-id="Stavudine_Panhard2007_reference" status="extracted" stale="true" population="HIV-1-infected adults on HAART with sustained virological response" measured-compound="stavudine" parameterization="apparent" topology="1C"></dbs-pgx>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 3 extracted.
@@ -32,9 +40,9 @@ Panhard X et al., Population pharmacokinetic analysis of…, European journal of
 ## Parameters
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| oral volume of distribution (V/F) | `Q76` · V/F | 145 | l | 0.145 | [l] | not captured | llm_corrected (0.6) | Panhard_2007:abstract, Panhard_2007:abstract, Panhard_2007:abstract | — | not captured |
-| oral clearance (Cl/F) | `Q27` · CL/F | 32 | l/h | 8.888888888888888e-06 | [l] / [h] | not captured | exact (1.0) | Panhard_2007:abstract, Panhard_2007:abstract, Panhard_2007:abstract | — | not captured |
-| ka | `Q49` · kabs | 0.46 | h(-1) | 0.0001277777777777778 | [1] / [h] | not captured | exact (1.0) | Panhard_2007:abstract, Panhard_2007:abstract | — | not captured |
+| oral volume of distribution (V/F) LMV | `Q76` · V/F | 145 | l | 0.145 | [l] | not captured | llm_corrected (0.6) | Panhard_2007:abstract | — | not captured |
+| oral clearance (Cl/F) LMV | `Q27` · CL/F | 32 | l/h | 8.888888888888888e-06 | [l] / [h] | not captured | llm_confirmed (0.6) | Panhard_2007:abstract | — | not captured |
+| ka STV | `Q49` · kabs | 0.46 | h(-1) | 0.0001277777777777778 | [1] / [h] | not captured | llm_confirmed (0.6) | Panhard_2007:abstract | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -48,6 +56,11 @@ Panhard X et al., Population pharmacokinetic analysis of…, European journal of
 - `apparent_assumption`: F=1, Fm=1, no molar correction (parameterization=apparent)
 
 **Interpretation flags:**
+- dropped duplicate Q76 ('oral volume of distribution (V/F) STV', value 24) — already have one for this compound
+- dropped duplicate Q76 ('oral volume of distribution (V/F) ZDV', value 248) — already have one for this compound
+- dropped duplicate Q27 ('oral clearance (Cl/F) STV', value 16) — already have one for this compound
+- dropped duplicate Q27 ('oral clearance (Cl/F) ZDV', value 124) — already have one for this compound
+- dropped duplicate Q49 ('ka ZDV', value 2.9) — already have one for this compound
 - apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=stavudine
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
 - skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
@@ -66,13 +79,25 @@ Panhard X et al., Population pharmacokinetic analysis of…, European journal of
 | C0_has_structural_params | pass | not captured | 3 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
-| C5_dimension_Q27 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Panhard_2007:abstract', 'Panhard_2007:abstract', 'Panhard_2007:abstract'] |
-| C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['Panhard_2007:abstract', 'Panhard_2007:abstract'] |
-| C5_dimension_Q76 | pass | [length] ** 3 | not captured | not captured | not captured | ['Panhard_2007:abstract', 'Panhard_2007:abstract', 'Panhard_2007:abstract'] |
+| C5_dimension_Q27 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Panhard_2007:abstract'] |
+| C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['Panhard_2007:abstract'] |
+| C5_dimension_Q76 | pass | [length] ** 3 | not captured | not captured | not captured | ['Panhard_2007:abstract'] |
 | C7_apparent_coherence | pass | not captured | not captured | not captured | not captured | not captured |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
-| C9_phys_window_Q27 | pass | clearance within physiological range | 32 L/h | not captured | not captured | ['Panhard_2007:abstract', 'Panhard_2007:abstract', 'Panhard_2007:abstract'] |
-| C9_phys_window_Q76 | pass | volume within physiological range | 145 L | not captured | not captured | ['Panhard_2007:abstract', 'Panhard_2007:abstract', 'Panhard_2007:abstract'] |
+| C9_phys_window_Q27 | pass | clearance within physiological range | 32 L/h | not captured | not captured | ['Panhard_2007:abstract'] |
+| C9_phys_window_Q76 | pass | volume within physiological range | 145 L | not captured | not captured | ['Panhard_2007:abstract'] |
+
+**Reviewer per-scenario checks:**
+
+| check | scenario | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|---|
+| T0_analyte_identity | not captured | pass | not captured | not captured | not captured | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | not captured | skipped | not captured | not captured | not captured | no covariate effects in record |
+| T3_apparent_invariant | not captured | pass | not captured | F=Fm=1, no molar correction | not captured | apparent params must not be double-corrected |
+| T3_output_variable | not captured | pass | C_central (measured=stavudine) | central.C | not captured | output must be the measured/analyte compartment |
+| T3_param_coverage | not captured | pass | 3 scholar param(s) emitted or defaulted | 3 covered | not captured | all structural parameters accounted for |
+| T3_topology_template | not captured | pass | 1C → PK_1C* | PK_1C_enteral | not captured | engineer template must match the scholar topology |
+| T6_deviations | not captured | pass | not captured | all deviations documented+quantified | not captured | LLM adjudication → deterministic rule |
 
 <details class="legend">
 <summary>Check legend — what each column means</summary>
@@ -82,6 +107,9 @@ Panhard X et al., Population pharmacokinetic analysis of…, European journal of
 ## Raw artifacts
 
 - scholar stages: `../../../knowledgebase/drugs/drug_stavudine/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Panhard_2007` / `Panhard_2007::reference`)
+- model: `../../../knowledgebase/drugs/drug_stavudine/models/modelica/Stavudine_Panhard2007_reference.mo`
+- deviation: `../../../knowledgebase/drugs/drug_stavudine/models/modelica/Stavudine_Panhard2007_reference.deviation.json`
+- sim: `../../../knowledgebase/drugs/drug_stavudine/models/modelica/Stavudine_Panhard2007_reference.json`
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -90,7 +118,7 @@ Panhard X et al., Population pharmacokinetic analysis of…, European journal of
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_stavudine/Stavudine_Panhard2007_reference/Stavudine_Panhard2007_reference_modelica.zip" download>Stavudine_Panhard2007_reference_modelica.zip</a> <span class="pk-size">(4.1 kB)</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_stavudine/Stavudine_Panhard2007_reference/Stavudine_Panhard2007_reference_modelica.zip" download>Stavudine_Panhard2007_reference_modelica.zip</a> <span class="pk-size">(4.3 kB)</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_stavudine/Stavudine_Panhard2007_reference/Stavudine_Panhard2007_reference_fmi.zip" download>Stavudine_Panhard2007_reference_fmi.zip</a> <span class="pk-size">(4.2 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_stavudine/Stavudine_Panhard2007_reference/Stavudine_Panhard2007_reference_matlab.zip" download>Stavudine_Panhard2007_reference_matlab.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_stavudine/Stavudine_Panhard2007_reference/Stavudine_Panhard2007_reference_matlab_simbio.zip" download>Stavudine_Panhard2007_reference_matlab_simbio.zip</a> <span class="pk-size">(2.8 kB)</span></td></tr>
@@ -112,4 +140,4 @@ Panhard X et al., Population pharmacokinetic analysis of…, European journal of
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 13:55 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 16:16 UTC</sub>

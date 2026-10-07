@@ -18,7 +18,7 @@ Telaprevir is an antiviral drug that was used to treat chronic hepatitis C. It i
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 14:07 | 1:40 | 0/0/0 | 2/0/0 | 0/0/0 | 94,050/1,825 | einfracz / qwen3.8-27b | 6 | 1/5 | 6/0 | 0 |
+| 2026-10-07 16:25 | 0:41 | 0/0/0 | 2/0/0 | 0/0/0 | 80,264/2,182 | ollama / glm-5.3-flash | 6 | 1/5 | 6/0 | 0 |
 
 ## popPK records
 
@@ -28,8 +28,8 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Gammeltoft_2021_percent_residual_infectivity](drugs/drug_telaprevir/pd_Gammeltoft_2021_percent_residual_infectivity.md) | percent residual infectivity ← telaprevir · direct sigmoid Emax (Hill) effect | — | Gammeltoft KA et al., Hepatitis C Virus Protease Inhibitors S…, Antimicrobial agents and ch… (2021) | [10.1128/AAC.02680-20](https://doi.org/10.1128/AAC.02680-20) |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Laouénan_2014_VL](drugs/drug_telaprevir/pd_Laou_nan_2014_VL.md) | HCV RNA ← telaprevir · disease-progression model | — | Laouénan C et al., Using pharmacokinetic and viral kinetic…, Antimicrobial agents and ch… (2014) | [10.1128/AAC.02611-14](https://doi.org/10.1128/AAC.02611-14) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Gammeltoft_2021_residual_infectivity](drugs/drug_telaprevir/pd_Gammeltoft_2021_residual_infectivity.md) | SARS-CoV-2 spike protein-positive cells (percent residual infectivity) ← telaprevir · direct sigmoid Emax (Hill) effect | — | Gammeltoft KA et al., Hepatitis C Virus Protease Inhibitors S…, Antimicrobial agents and ch… (2021) | [10.1128/AAC.02680-20](https://doi.org/10.1128/AAC.02680-20) |
+| <span class="pk-badge pk-badge--green">extracted</span> | [Laouénan_2014_VL](drugs/drug_telaprevir/pd_Laou_nan_2014_VL.md) | HCV RNA viral load (viral kinetic response under triple therapy) ← telaprevir · direct Emax (saturable) effect | — | Laouénan C et al., Using pharmacokinetic and viral kinetic…, Antimicrobial agents and ch… (2014) | [10.1128/AAC.02611-14](https://doi.org/10.1128/AAC.02611-14) |
 
 ## ADME sites
 
@@ -69,13 +69,19 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Balaraju_2015 | irrelevant | 0 | 0 | The paper is a medicinal chemistry study on novel pyranone analogs where telaprevir is only mentioned as a comparator drug, and no pharmacokinetic data for telaprevir is reported. |
-| popPK | Dufner-Beattie_2014 | irrelevant | 0 | 0 | The paper describes an in-vitro antiviral screening study for a novel HCV inhibitor and uses telaprevir only as a comparator for potency, without reporting any pharmacokinetic parameters. |
-| popPK | Gammeltoft_2021 | irrelevant | 0 | 0 | The study is an in vitro mechanistic efficacy study evaluating antiviral potency (EC50) of telaprevir against SARS-CoV-2, reporting no pharmacokinetic disposition parameters (CL, V, etc.). |
-| popPK | Laouénan_2014 | irrelevant | 2 | 0 | The study models viral kinetics and drug exposure (steady-state concentrations) rather than estimating telaprevir's specific pharmacokinetic disposition parameters (CL, V, Q, ka) or a compartmental PK model. |
-| popPK | Lee_2011 | irrelevant | 0 | 0 | The study focuses on the anti-HCV activity of a plant extract (ACSB-M4) and does not report pharmacokinetic parameters for telaprevir, which is only mentioned as a comparator drug. |
-| popPK | Pathak_2017 | irrelevant | 0 | 0 | The paper is a structure-based drug discovery and in-vitro antiviral activity study that identifies telaprevir as an inhibitor of Dengue NS3 protease, but it does not report any pharmacokinetic parameters (CL, V, ka, t1/2) or PK models for telaprevir. |
-| popPK | Wu_2015 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of ribavirin (including its intracellular metabolites), not telaprevir, which is only mentioned as a concomitant covariate. |
+| popPK | Balaraju_2015 | irrelevant | 0 | 0 | Medicinal chemistry/SAR study of new α-pyranone carboxamide analogs; telaprevir only mentioned as standard of care, no PK parameters. |
+| popPK | Dufner-Beattie_2014 | irrelevant | 0 | 0 | In-vitro antiviral drug discovery study; telaprevir is only a comparator, with no PK parameters reported. |
+| popPK | Gammeltoft_2021 | irrelevant | 0 | 0 | In-vitro antiviral efficacy study of HCV protease inhibitors against SARS-CoV-2; telaprevir is only one tested compound with EC50/CC50 values, no PK disposition parameters. |
+| popPK | Laouénan_2014 | irrelevant | 3 | 4 | This is a PK-viral kinetic modeling study in cirrhotic patients, but telaprevir PK is modeled only as a constant trough concentration (Css = 3.77 µmol/l reported); no disposition parameters (CL, V, Q, ka, half-life with volume) for telaprevir are estimated. |
+| popPK | Lee_2011 | irrelevant | 0 | 0 | Telaprevir is only used as a co-administered comparator in an in-vitro antiviral synergy assay; no PK parameters are reported. |
+| popPK | Liu_2022 | irrelevant | 1 | 2 | Telaprevir appears only as a positive-control comparator (EC50); the PK data (rat bioavailability, clearance, t1/2) belong to the novel compound 80, not telaprevir. |
+| popPK | Loustaud-Ratti_2015 | irrelevant | 1 | 1 | This is a study of eGFR (creatinine) changes during telaprevir therapy, not a PK study reporting CL/V or a population-PK model of telaprevir itself. |
+| popPK | Ma_2020 | irrelevant | 0 | 0 | Telaprevir is only mentioned as a co-administered comparator antiviral; no PK parameters for telaprevir are reported. |
+| popPK | Pathak_2017 | irrelevant | 0 | 0 | This is an in-vitro pharmacophore/docking drug-repurposing study; telaprevir is only a screened anti-DENV candidate with EC50 values, no PK disposition parameters. |
+| popPK | Peng_2013 | irrelevant | 0 | 0 | Telaprevir is only mentioned as a co-administered comparator in an antiviral drug-discovery study; no PK parameters for telaprevir are reported. |
+| popPK | Silva_2013 | irrelevant | 1 | 0 | Telaprevir appears only as an in-vitro potency comparator (Ki/EC50/IC50), with no PK disposition parameters reported. |
+| popPK | Woot_2021 | irrelevant | 1 | 1 | This is a viral kinetics (HCV) model in telaprevir-treated patients; telaprevir PK was not modeled ("in the absence of PK data"), and no telaprevir disposition parameters (CL, V, ka) are reported. |
+| popPK | Wu_2015 | irrelevant | 0 | 0 | The population PK model is for ribavirin (and its phosphorylated metabolites); telaprevir appears only as a covariate, with no telaprevir disposition parameters reported. |
 
 ---
 <sub>Generated by `docs.py` (scholarv2)</sub>

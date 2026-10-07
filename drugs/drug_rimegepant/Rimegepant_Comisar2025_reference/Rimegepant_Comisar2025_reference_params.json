@@ -10,11 +10,9 @@
  ],
  "paper_doses_kind": "discrete",
  "paper_doses_mg": [
-  10.0,
   25.0,
   50.0,
-  75.0,
-  150.0
+  75.0
  ],
  "parameters": {
   "Cl": 7e-06,
@@ -24,17 +22,17 @@
   "VdPerKg": 0.0016142857142857144,
   "adminCount": 1.0,
   "adminDuration": 600.0,
-  "adminMass": 1e-05,
+  "adminMass": 2.5e-05,
   "k12": 1.0226155358898721e-05,
   "k21": 2.4691358024691357e-05,
   "ka": 0.0008472222222222222,
   "weight": 70.0
  },
  "reference_peak_times": {
-  "central.C": 3285.644577983371
+  "central.C": 3272.210510070837
  },
  "reference_peaks": {
-  "central.C": 6.385810336657237e-05
+  "central.C": 0.00015964588206959955
  },
  "stop_time": 86400.0,
  "template": "PK_2C_enteral",

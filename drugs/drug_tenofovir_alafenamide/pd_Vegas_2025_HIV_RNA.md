@@ -1,7 +1,7 @@
-<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;J05A&quot;,&quot;href&quot;:&quot;atc/J05A.md&quot;},{&quot;label&quot;:&quot;tenofovir alafenamide&quot;,&quot;href&quot;:&quot;drugs/drug_tenofovir_alafenamide/&quot;},{&quot;label&quot;:&quot;Vegas_2025 \u00b7 PD HIV RNA&quot;}]"></div>
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;J05A&quot;,&quot;href&quot;:&quot;atc/J05A.md&quot;},{&quot;label&quot;:&quot;tenofovir alafenamide&quot;,&quot;href&quot;:&quot;drugs/drug_tenofovir_alafenamide/&quot;},{&quot;label&quot;:&quot;Vegas_2025 \u00b7 PD HIV-RNA (viral load)&quot;}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# HIV RNA — PD  <span class="pk-badge pk-badge--green">reviewed — candidate</span>
+# HIV-RNA (viral load) — PD  <span class="pk-badge pk-badge--green">reviewed — candidate</span>
 
 <details class="pk-legend"><summary>What the PGx badges mean — evidence, and whether a model runs</summary><table><tbody><tr><td><span class="pk-badge pk-badge--green">quantitative</span></td><td>the paper gives the effect of each phenotype (or genotype) on a named model parameter — a θ per category.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">qualitative</span></td><td>the paper links the gene to the drug but states no effect size on a model parameter, so it changes no model.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">guideline estimate</span></td><td>the effect comes from a CPIC / DPWG dosing guideline, not from this paper's numbers.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">safety allele</span></td><td>a risk allele for an adverse reaction (an HLA type, G6PD deficiency …): it changes no PK/PD parameter.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>the extraction is incomplete or inconsistent.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted.</td></tr><tr><td><span class="pk-badge pk-badge--green">▶ simulatable</span></td><td>the paper's popPK model runs per phenotype in the browser (Simulation tab); its PGx Modelica model is under Models.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">model only</span></td><td>a PGx Modelica model exists but has no in-browser simulator.</td></tr></tbody></table></details>
 
@@ -13,13 +13,17 @@
 
 ## What this record describes
 
-**As extracted:** Tenofovir alafenamide (concentrations from the PK model of Beliveau_2026::group_1one_taf_implant) drives HIV RNA (in copies/mL): direct sigmoid Emax (Hill) effect.
+**As extracted:** Tenofovir alafenamide/tenofovir (TAF/TFV) (measured concentrations) drives HIV-RNA (viral load) (in copies/mL): direct sigmoid Emax (Hill) effect.
 
 **Model:** No model was generated from this record.
 
+> Tenofovir alafenamide (ng/mL) inhibits HIV RNA (copies/mL) production via a sigmoidal Emax model described in the paper, with parameters Emax = 0.99, EC50 = 8.5 ng/mL, and gamma = 1. The model includes a baseline V0 of 43460.16 copies/mL.
+>
+> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+
 - **paper:** `Vegas_2025`
 - **model family:** `sigmoid_emax`
-- **driver:** `cited_pk`
+- **driver:** `conc_no_pk`
 - **tier:** population
 - **effect:** inhibition/proportional
 
@@ -30,12 +34,11 @@ Vegas Rodriguez A et al., Integrated Population Pharmacokinetic-p…, The AAPS j
 ## Parameters
 | role | label (paper) | Q-code · name | value | unit | value_si | link | source |
 |---|---|---|---|---|---|---|---|
-| PD (effect) | E MAX | `Q323` · not captured | 0.99 | not captured | not captured | llm (not captured) | Vegas_2025:pdv3 |
-| PD (effect) | EC 50 TAF/TFV | `Q322` · not captured | 8.5 | ng/mL | not captured | llm (not captured) | Vegas_2025:pdv3 |
+| PD (effect) | EC50 TAF/TFV | `Q321` · not captured | 8.5 | ng/mL | not captured | llm (not captured) | Vegas_2025:pdv3 |
+| PD (effect) | EMAX | `Q323` · not captured | 0.99 | not captured | not captured | direction (not captured) | Vegas_2025:pdv3 |
 | PD (effect) | gamma | `Q325` · not captured | 1 | not captured | not captured | llm (not captured) | Vegas_2025:pdv3 |
-| PD (effect) | V 0 | `Q324` · not captured | 43460.16 | copies/mL | not captured | llm (not captured) | Vegas_2025:pdv3 |
-| variability | Proportional log(copies/mL) Residual Error HIV-RNA | `Q315` · not captured | 0.413 | not captured | not captured | llm (not captured) | Vegas_2025:pdv3 |
-| variability | Proportional log(copies/mL) Residual Error HIV-RNA | `Q312` · not captured | 141.6% | not captured | not captured | llm (not captured) | Vegas_2025:pdv3 |
+| PD (effect) | V0 | `Q324` · not captured | 43460.16 | copies/mL | not captured | llm (not captured) | Vegas_2025:pdv3 |
+| variability | Proportional Residual Error HIV-RNA | `Q315` · not captured | 0.413 | proportional log(copies/mL) | not captured | llm (not captured) | Vegas_2025:pdv3 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

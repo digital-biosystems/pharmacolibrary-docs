@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;J05A&quot;,&quot;href&quot;:&quot;atc/J05A.md&quot;},{&quot;label&quot;:&quot;baloxavir marboxil&quot;,&quot;href&quot;:&quot;drugs/drug_baloxavir_marboxil/&quot;},{&quot;label&quot;:&quot;Koshimichi_2020 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;BaloxavirMarboxil_Kim2022_reference&quot;,&quot;label&quot;:&quot;Kim_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_baloxavir_marboxil/BaloxavirMarboxil_Kim2022_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;BaloxavirMarboxil_Retout2026_reference&quot;,&quot;label&quot;:&quot;Retout_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_baloxavir_marboxil/BaloxavirMarboxil_Retout2026_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;BaloxavirMarboxil_Kim2022_reference&quot;,&quot;label&quot;:&quot;Kim_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_baloxavir_marboxil/BaloxavirMarboxil_Kim2022_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;BaloxavirMarboxil_Retout2026_reference&quot;,&quot;label&quot;:&quot;Retout_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_baloxavir_marboxil/BaloxavirMarboxil_Retout2026_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # baloxavir marboxil — `BaloxavirMarboxil_Koshimichi2020_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -15,16 +15,24 @@
 
 **Model:** No model was generated from this record.
 
-> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+### Reviewer guidance
 
-> **Dose compound ≠ measured compound:** dosed `baloxavir_marboxil`, measured `baloxavir_acid`.
+**Absorption rate constant for baloxavir acid is reported in liters/h, a dimensionally invalid unit for a first-order rate constant.**
+
+The absorption rate constant is assigned a value of 0.905 with the unit 'liters/h', which is dimensionally incorrect for a first-order process. Since this unit is incompatible with standard pharmacokinetic dimensions, the parameter could not be evaluated for structural consistency. Consequently, the model was rejected due to a dimension mismatch on this structural parameter. Extracted — baloxavir_acid: CLm/F 10.4 liters/h, V1/F 528 liters, Q/F 10.3 liters/h, V2/F 130 liters, Q2/F 1.25 liters/h, V3/F 131 liters, kabs 0.905 liters/h, tlag 0.323 h.
+
+<sub>reviewed by qwen3.8-27b</sub>
+
+> ⚠️ **STALE** — review status `rejected` (reviewed 2026-10-07 14:33:14.318108+00:00) predates the upstream re-run (2026-10-07 15:33:05.877436+00:00). Current validate status: `rejected`.
+
+> **Dose compound ≠ measured compound:** dosed `baloxavir marboxil`, measured `baloxavir acid`.
 
 ## Citation
 Koshimichi H et al., Population Pharmacokinetics and Exposur…, Antimicrobial agents and ch… (2020)
   ·  DOI: [10.1128/AAC.00119-20](https://doi.org/10.1128/AAC.00119-20)
 
 ## Model component
-<dbs-pgx drug="baloxavir marboxil" model-id="BaloxavirMarboxil_Koshimichi2020_reference" status="rejected" stale="false" population="influenza patients at high risk of complications" measured-compound="baloxavir_acid" parameterization="apparent" topology="1C"></dbs-pgx>
+<dbs-pgx drug="baloxavir marboxil" model-id="BaloxavirMarboxil_Koshimichi2020_reference" status="rejected" stale="true" population="influenza patients including those at high risk of complications" measured-compound="baloxavir acid" parameterization="apparent" topology="1C"></dbs-pgx>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 8 extracted, plus 5 covariate effects.
@@ -44,8 +52,8 @@ Koshimichi H et al., Population Pharmacokinetics and Exposur…, Antimicrobial a
 | Vp2/F (liters) | `Q78` · V3/F | 131 | liters | 0.131 | [l] | not captured | exact (1.0) | T2:row8:col1, T2:row8:col2, T2:row8:col3, T2:row8:col4 | — | 26.2 (None% RSE) |
 | Ka (liters/h) | `Q49` · kabs | 0.905 | liters/h | not captured | [l] / [h] | not captured | exact (1.0) | T2:row9:col1, T2:row9:col2, T2:row9:col3, T2:row9:col4 | — | not captured |
 | Lag time (h) | `Q83` · tlag | 0.323 | h | 1162.8 | [h] | not captured | exact (1.0) | T2:row10:col1, T2:row10:col2, T2:row10:col3, T2:row10:col4 | — | not captured |
-| effect_of_body_wt_on_cl_f_q1_f_and_q2_f | `Q900` · effect_of_body_wt_on_cl_f_q1_f_and_q2_f | 0.278 | not captured | not captured | not captured | not captured | not captured (not captured) | T2:row11:col1, T2:row11:col2, T2:row11:col3, T2:row11:col4 | — | not captured |
-| theta_q319_wt | `Q900` · theta_q319_wt | 0.743 | not captured | not captured | not captured | not captured | not captured (not captured) | T2:row12:col1, T2:row12:col2, T2:row12:col3, T2:row12:col4 | — | not captured |
+| theta_cl_f_wt | `Q900` · theta_cl_f_wt | 0.278 | not captured | not captured | not captured | not captured | not captured (not captured) | T2:row11:col1, T2:row11:col2, T2:row11:col3, T2:row11:col4 | — | not captured |
+| theta_v1_f_wt | `Q900` · theta_v1_f_wt | 0.743 | not captured | not captured | not captured | not captured | not captured (not captured) | T2:row12:col1, T2:row12:col2, T2:row12:col3, T2:row12:col4 | — | not captured |
 | theta_cl_f_race | `Q900` · theta_cl_f_race | 0.495 | not captured | not captured | not captured | not captured | not captured (not captured) | T2:row13:col1, T2:row13:col2, T2:row13:col3, T2:row13:col4 | — | not captured |
 | theta_v1_f_race | `Q900` · theta_v1_f_race | 0.523 | not captured | not captured | not captured | not captured | not captured (not captured) | T2:row14:col1, T2:row14:col2, T2:row14:col3, T2:row14:col4 | — | not captured |
 | theta_kabs_gender | `Q900` · theta_kabs_gender | 0.566 | not captured | not captured | not captured | not captured | not captured (not captured) | T2:row15:col1, T2:row15:col2, T2:row15:col3, T2:row15:col4 | — | not captured |
@@ -59,17 +67,20 @@ Koshimichi H et al., Population Pharmacokinetics and Exposur…, Antimicrobial a
 
 **Interpretation flags:**
 - unit_dimension_mismatch: 'Ka (liters/h)' → Q49 (unit '[length] ** 3 / [time]' vs ontology '1 / [time]') — route to review
-- covariate level 'Effect of body wt on CL/F, Q1/F, and Q2/F' → Q900:effect_of_body_wt_on_cl_f_q1_f_and_q2_f = 0.278 (linear_fractional on Q27)
-- covariate effect for Q319 has no base parameter row (kept as unattached equation-variable)
-- metabolite baloxavir_acid: Q27→Q351 — only the metabolite is measured and fm is not identifiable, so its CL/V are apparent (fm-divided)
-- apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=baloxavir_acid
+- NIL: refused to back-fill base 'CL/F' from footnote/prose loose number None (source ['T2:footnote']); the table cell was unparseable — needs review
+- NIL: refused to back-fill base 'Q/F' from footnote/prose loose number None (source ['T2:footnote']); the table cell was unparseable — needs review
+- NIL: refused to back-fill base 'V1/F' from footnote/prose loose number None (source ['T2:footnote']); the table cell was unparseable — needs review
+- NIL: refused to back-fill base 'V3/F' from footnote/prose loose number None (source ['T2:footnote']); the table cell was unparseable — needs review
+- NIL: refused to back-fill base 'kabs' from footnote/prose loose number None (source ['T2:footnote']); the table cell was unparseable — needs review
+- NIL: refused to back-fill base 'NIL' from footnote/prose loose number None (source ['T2:footnote']); the table cell was unparseable — needs review
+- metabolite baloxavir acid: Q27→Q351 — only the metabolite is measured and fm is not identifiable, so its CL/V are apparent (fm-divided)
+- apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=baloxavir acid
 - held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
 - template fit: none — only the metabolite is modelled — no parent compartment
 - structure disagreement: deterministic 1C vs LLM 3C — review compartment count
 - status held at route_to_review — not promoted
-- row roles: 2 per-group rows of baloxavir_acid covariate_effect but 0 reference group(s) — kept as printed
-- row roles (LLM): model_class=compartmental; 20/20 row label(s) assigned, 32 linked by role
-- review gap-fill skipped: this record measures 'baloxavir_acid', not baloxavir_marboxil — the review values are the parent's
+- row roles (LLM): model_class=compartmental; 29/29 row label(s) assigned, 32 linked by role
+- review gap-fill skipped: this record measures 'baloxavir acid', not baloxavir_marboxil — the review values are the parent's
 
 **Extraction notes:**
 - LLM selected parameter table(s) 2
@@ -120,4 +131,4 @@ _No web simulator for this record: its structure has no shared WebAssembly templ
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 13:29 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 15:33 UTC</sub>

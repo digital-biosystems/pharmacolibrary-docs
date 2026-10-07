@@ -1,7 +1,7 @@
-<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;J05A&quot;,&quot;href&quot;:&quot;atc/J05A.md&quot;},{&quot;label&quot;:&quot;telaprevir&quot;,&quot;href&quot;:&quot;drugs/drug_telaprevir/&quot;},{&quot;label&quot;:&quot;Laou\u00e9nan_2014 \u00b7 PD HCV RNA&quot;}]"></div>
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;J05A&quot;,&quot;href&quot;:&quot;atc/J05A.md&quot;},{&quot;label&quot;:&quot;telaprevir&quot;,&quot;href&quot;:&quot;drugs/drug_telaprevir/&quot;},{&quot;label&quot;:&quot;Laou\u00e9nan_2014 \u00b7 PD HCV RNA viral load (viral kinetic response under triple therapy)&quot;}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# HCV RNA — PD  <span class="pk-badge pk-badge--green">extracted</span>
+# HCV RNA viral load (viral kinetic response under triple therapy) — PD  <span class="pk-badge pk-badge--green">extracted</span>
 
 <details class="pk-legend"><summary>What the PGx badges mean — evidence, and whether a model runs</summary><table><tbody><tr><td><span class="pk-badge pk-badge--green">quantitative</span></td><td>the paper gives the effect of each phenotype (or genotype) on a named model parameter — a θ per category.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">qualitative</span></td><td>the paper links the gene to the drug but states no effect size on a model parameter, so it changes no model.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">guideline estimate</span></td><td>the effect comes from a CPIC / DPWG dosing guideline, not from this paper's numbers.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">safety allele</span></td><td>a risk allele for an adverse reaction (an HLA type, G6PD deficiency …): it changes no PK/PD parameter.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>the extraction is incomplete or inconsistent.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted.</td></tr><tr><td><span class="pk-badge pk-badge--green">▶ simulatable</span></td><td>the paper's popPK model runs per phenotype in the browser (Simulation tab); its PGx Modelica model is under Models.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">model only</span></td><td>a PGx Modelica model exists but has no in-browser simulator.</td></tr></tbody></table></details>
 
@@ -13,12 +13,16 @@
 
 ## What this record describes
 
-**As extracted:** Telaprevir (measured concentrations) drives HCV RNA (in log 10 IU/ml): disease-progression model.
+**As extracted:** Telaprevir (measured concentrations) drives HCV RNA viral load (viral kinetic response under triple therapy) (in log10 IU/ml): direct Emax (saturable) effect.
 
 **Model:** No model was generated from this record.
 
+> Telaprevir concentrations directly inhibit HCV RNA production via an Emax mechanism, characterized by an EC50 of 0.009 µmol/l and a predicted antiviral effectiveness of 99.8%. The model further estimates a viral clearance rate (c) of 3.98 day^-1 and a rate parameter δ of 0.18 day^-1.
+>
+> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+
 - **paper:** `Laouénan_2014`
-- **model family:** `disease_progression`
+- **model family:** `emax`
 - **driver:** `conc_no_pk`
 - **tier:** population
 - **effect:** inhibition/proportional
@@ -30,9 +34,10 @@ Laouénan C et al., Using pharmacokinetic and viral kinetic…, Antimicrobial ag
 ## Parameters
 | role | label (paper) | Q-code · name | value | unit | value_si | link | source |
 |---|---|---|---|---|---|---|---|
-| PD (effect) | EC 50 telaprevir | `Q321` · not captured | 0.009 | µmol/l | not captured | llm (not captured) | Laouénan_2014:pdv3 |
-| — | c | `Q100` · not captured | 3.98 | day -1 | not captured | nil (not captured) | Laouénan_2014:pdv3 |
-| — | δ | `Q100` · not captured | 0.18 | day -1 | not captured | nil (not captured) | Laouénan_2014:pdv3 |
+| PD (effect) | EC50 telaprevir | `Q321` · not captured | 0.009 | µmol/l | not captured | llm (not captured) | Laouénan_2014:pdv3 |
+| PD (effect) | baseline viral load (telaprevir group) | `Q324` · not captured | 6.43 | log10 IU/ml | not captured | llm (not captured) | Laouénan_2014:pdv3 |
+| PD (effect) | loss rate of infected cells | `Q328` · not captured | 0.18 | day -1 | not captured | llm (not captured) | Laouénan_2014:pdv3 |
+| variability | IIV on EC50 PI (PK-VK model) | `Q312` · not captured | 0.61 | not captured | not captured | llm (not captured) | Laouénan_2014:pdv3 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

@@ -1,10 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01A&quot;,&quot;href&quot;:&quot;atc/L01A.md&quot;},{&quot;label&quot;:&quot;treosulfan&quot;,&quot;href&quot;:&quot;drugs/drug_treosulfan/&quot;},{&quot;label&quot;:&quot;G\u0142\u00f3wka_2008 \u00b7 1960&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Treosulfan_Chiesa2020_reference&quot;,&quot;label&quot;:&quot;Chiesa_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_treosulfan/Treosulfan_Chiesa2020_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Treosulfan_Danielak2018_reference&quot;,&quot;label&quot;:&quot;Danielak_2018_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_treosulfan/Treosulfan_Danielak2018_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Treosulfan_Rosser2023_reference&quot;,&quot;label&quot;:&quot;Rosser_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_treosulfan/Treosulfan_Rosser2023_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Treosulfan_Ten2014_reference&quot;,&quot;label&quot;:&quot;Ten_2014_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_treosulfan/Treosulfan_Ten2014_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Treosulfan_van2019_base&quot;,&quot;label&quot;:&quot;van_2019_base&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_treosulfan/Treosulfan_van2019_base.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Treosulfan_van2019_final&quot;,&quot;label&quot;:&quot;van_2019_final&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_treosulfan/Treosulfan_van2019_final.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # treosulfan — `Treosulfan_Gwka2008_1960`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.364). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.364). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -24,12 +25,14 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on `parame
 
 <sub>reviewed by rule template (no LLM)</sub>
 
+> ⚠️ **STALE** — review status `rejected` (reviewed 2026-09-28 14:42:01.287355+00:00) predates the upstream re-run (2026-10-07 16:33:40.335621+00:00). Current validate status: `rejected`.
+
 ## Citation
 Główka FK et al., Pharmacokinetics of high-dose i.v. treo…, Bone marrow transplantation… (2008)
   ·  DOI: [10.1038/bmt.2008.287](https://doi.org/10.1038/bmt.2008.287)
 
 ## Model component
-<dbs-pgx drug="treosulfan" model-id="Treosulfan_Gwka2008_1960" status="rejected" stale="false" population="paediatric patients undergoing allogeneic haematopoietic SCT" measured-compound="treosulfan" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<dbs-pgx drug="treosulfan" model-id="Treosulfan_Gwka2008_1960" status="rejected" stale="true" population="paediatric patients undergoing allogeneic haematopoietic SCT" measured-compound="treosulfan" parameterization="mechanistic" topology="1C"></dbs-pgx>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 6 extracted.
@@ -62,6 +65,8 @@ Główka FK et al., Pharmacokinetics of high-dose i.v. treo…, Bone marrow tran
 - held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
 - status held at route_to_review — not promoted
 - population split: '1960' subgroup of Główka_2008 (paper reports 3 populations: 1309 ± 921, 1960, 735)
+- skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
+- skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
 
 **Extraction notes:**
 - LLM selected parameter table(s) 1
@@ -135,4 +140,4 @@ _No web simulator for this record: its structure has no shared WebAssembly templ
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-09-15 04:37 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 16:33 UTC</sub>

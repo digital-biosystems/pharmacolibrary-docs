@@ -5,7 +5,7 @@
 
 # topotecan — `Topotecan_van1995_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -15,17 +15,25 @@
 
 **Model:** No model was generated from this record.
 
-> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+### Reviewer guidance
+
+**Topotecan’s terminal half-life of 8.1 min and hydroxy acid’s 29.0 min do not compensate for the absent volume and clearance, so this was refused as a compartmental population PK model.**
+
+No volume or clearance — not a compartmental population PK model. The paper reports no distribution volume and no clearance or elimination rate; it is an exposure/outcome paper. The record was built from the abstract alone, so reported summary statistics stood in for a fitted model, and the hydroxy acid metabolite has no path from the dose. Extracted — topotecan: t1/2z 8.1 min; topotecan hydroxy acid: t1/2z 29 min.
+
+<sub>reviewed by gpt-6-luna</sub>
+
+> ⚠️ **STALE** — review status `rejected` (reviewed 2026-10-06 15:25:50.971427+00:00) predates the upstream re-run (2026-10-07 14:22:41.638166+00:00). Current validate status: `rejected`.
 
 ## Citation
 van Warmerdam LJ et al., Pharmacokinetics and pharmacodynamics o…, Cancer chemotherapy and pha… (1995)
   ·  DOI: [10.1007/BF00686554](https://doi.org/10.1007/BF00686554)
 
 ## Model component
-<dbs-pgx drug="topotecan" model-id="Topotecan_van1995_reference" status="rejected" stale="false" population="patients with various types of solid tumors" measured-compound="topotecan" parameterization="mechanistic" topology="general_linear"></dbs-pgx>
+<dbs-pgx drug="topotecan" model-id="Topotecan_van1995_reference" status="rejected" stale="true" population="patients with solid tumors" measured-compound="topotecan" parameterization="mechanistic" topology="parent_metabolite"></dbs-pgx>
 
-**Model structure:** general linear; no model was built for this record.  
-**Parameters:** 2 extracted.
+**Model structure:** parent + metabolite; no model was built for this record.  
+**Parameters:** 1 extracted.
 
 **Parameterization:** mechanistic.
 
@@ -35,7 +43,6 @@ van Warmerdam LJ et al., Pharmacokinetics and pharmacodynamics o…, Cancer chem
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
 | t1/2(alpha) | `Q57` · t1/2z | 8.1 | min | 486.0 | [min] | not captured | exact (1.0) | van_1995:abstract | — | not captured |
-| t1/2(formation) | `Q57` · t1/2z | 29.0 | min | 1740.0 | [min] | not captured | exact (1.0) | van_1995:abstract | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -46,17 +53,15 @@ van Warmerdam LJ et al., Pharmacokinetics and pharmacodynamics o…, Cancer chem
 
 **Interpretation flags:**
 - dropped duplicate Q57 ('t1/2(beta)', value 132) — already have one for this compound
-- dropped duplicate Q57 ('t1/2 (elimination', value 123.2) — already have one for this compound
+- dropped duplicate Q57 ('t1/2(formation)', value 29.0) — already have one for this compound
+- dropped duplicate Q57 ('t1/2 (elimination of', value 123.2) — already have one for this compound
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=topotecan
-- topology: transfer parameter unlinked (Q100) — add Kfm/formation-rate/rate-constant to the ontology; routing to review
 - template fit: none — only the metabolite is modelled — no parent compartment
-- status held at route_to_review — not promoted
-- row roles (LLM): model_class=compartmental; 4/4 row label(s) assigned, 0 linked by role; re-tagged topotecan→parent ×2, topotecan→topotecan hydroxy acid ×2
-- molar mass: no plausible PubChem entry for 'topotecan hydroxy acid' ('topotecan hydroxy acid') — left in mass units
-- molar mass: none found for 'topotecan hydroxy acid' — its concentrations stay mass-only
+- row roles: LLM call failed (RateLimitError) — deterministic compound tags kept
+- molar mass: none found for 'topotecan metabolite' — its concentrations stay mass-only
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
-- skipped review gap-fill of V2: primary is GENERAL_LINEAR (peripheral family needs ≥2C)
-- skipped review gap-fill of Q: primary is GENERAL_LINEAR (peripheral family needs ≥2C)
+- skipped review gap-fill of V2: primary is PARENT_METABOLITE (peripheral family needs ≥2C)
+- skipped review gap-fill of Q: primary is PARENT_METABOLITE (peripheral family needs ≥2C)
 
 **Extraction notes:**
 - no GROBID TEI available — transcribed from abstract in van_1995_metadata.yaml (4 record(s)); values are summary statistics, not a fitted model
@@ -67,11 +72,10 @@ van Warmerdam LJ et al., Pharmacokinetics and pharmacodynamics o…, Cancer chem
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 2 | not captured | not captured | not captured |
+| C0_has_structural_params | pass | not captured | 1 | not captured | not captured | not captured |
 | C0b_disposition_core | fail | not captured | not captured | not captured | not captured | not captured |
 | C5_dimension_Q57 | pass | [time] | not captured | not captured | not captured | ['van_1995:abstract'] |
-| C5_dimension_Q57 | pass | [time] | not captured | not captured | not captured | ['van_1995:abstract'] |
-| C8_topology | fail | ontology-linked transfer parameter on every edge | ['none'] | not captured | not captured | not captured |
+| C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
 
 <details class="legend">
 <summary>Check legend — what each column means</summary>
@@ -96,4 +100,4 @@ _No web simulator for this record: its structure has no shared WebAssembly templ
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-06 13:43 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 14:22 UTC</sub>

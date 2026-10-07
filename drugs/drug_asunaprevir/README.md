@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;J05A&quot;,&quot;href&quot;:&quot;atc/J05A.md&quot;},{&quot;label&quot;:&quot;asunaprevir&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Asunaprevir_Osawa2018_reference&quot;,&quot;label&quot;:&quot;Osawa_2018_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_asunaprevir/Asunaprevir_Osawa2018_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Asunaprevir_Osawa2018_reference&quot;,&quot;label&quot;:&quot;Osawa_2018_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_asunaprevir/Asunaprevir_Osawa2018_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Asunaprevir_Zhu2018_reference&quot;,&quot;label&quot;:&quot;Zhu_2018_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_asunaprevir/Asunaprevir_Zhu2018_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 # asunaprevir
 
@@ -27,14 +27,14 @@ Asunaprevir is an antiviral protease inhibitor that was used to treat hepatitis 
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 13:16 | 1:44 | 1/0/1 | 0/0/0 | 0/0/0 | 75,256/11,303 | einfracz / qwen3.8-27b | 6 | 0/3 | 6/0 | 0 |
+| 2026-10-07 15:19 | 2:09 | 2/0/0 | 0/0/0 | 0/0/0 | 80,525/14,030 | ollama / glm-5.3-flash | 6 | 0/3 | 6/0 | 0 |
 
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> | [Osawa_2018_reference](drugs/drug_asunaprevir/Asunaprevir_Osawa2018_reference.md) | ▶ model + simulator | 1-compartment, oral | 3 | Osawa M et al., Population Pharmacokinetic Analysis for…, Journal of clinical pharmac… (2018) | [10.1002/jcph.1274](https://doi.org/10.1002/jcph.1274) |
-| <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: C5 dimensioned parameter(s) without a unit: Q49 — no SI value to build from</sub><br><sub>route_to: `human_review`</sub> | [Zhu_2018_reference](drugs/drug_asunaprevir/Asunaprevir_Zhu2018_reference.md) | — | 2-compartment (no model) | 6 (+2 cov.) | Zhu L et al., Population Pharmacokinetic Analysis of…, Infectious diseases and the… (2018) | [10.1007/s40121-018-0197-y](https://doi.org/10.1007/s40121-018-0197-y) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>STALE — current validate: extracted</sub><br><sub>route_to: `engineer_replication`</sub> | [Osawa_2018_reference](drugs/drug_asunaprevir/Asunaprevir_Osawa2018_reference.md) | ▶ model + simulator | 1-compartment, oral | 3 | Osawa M et al., Population Pharmacokinetic Analysis for…, Journal of clinical pharmac… (2018) | [10.1002/jcph.1274](https://doi.org/10.1002/jcph.1274) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>STALE — current validate: extracted</sub><br><sub>route_to: `engineer_replication`</sub> | [Zhu_2018_reference](drugs/drug_asunaprevir/Asunaprevir_Zhu2018_reference.md) | ▶ model + simulator | 2-compartment, oral | 7 (+2 cov.) | Zhu L et al., Population Pharmacokinetic Analysis of…, Infectious diseases and the… (2018) | [10.1007/s40121-018-0197-y](https://doi.org/10.1007/s40121-018-0197-y) |
 
 ## ADME sites
 
@@ -65,7 +65,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 - **PubMed hits:** 14 matched, 14 returned
 - **screened:** 2  ·  **relevant:** 2
-- **records:** 2  ·  extracted 1  ·  needs_review 1  ·  rejected 0  ·  stale 0
+- **records:** 2  ·  extracted 2  ·  needs_review 0  ·  rejected 0  ·  stale 2
 - **scholar-agent fallback query used:** not captured
 
 ## Full text wanted
@@ -74,16 +74,16 @@ _1 paper(s) judged relevant from the abstract, with no full text on disk — pay
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Osawa_2019.pdf` | Osawa M et al., Population Pharmacokinetic Analysis of…, Clinical pharmacology in dr… (2019) | popPK | 10 | [10.1002/cpdd.649](https://doi.org/10.1002/cpdd.649) | [30629858](https://pubmed.ncbi.nlm.nih.gov/30629858) | The paper describes a population PK model for asunaprevir, but the specific numeric parameter values (CL, V, etc.) are not present in the provided abstract evidence. |
+| `Osawa_2019.pdf` | Osawa M et al., Population Pharmacokinetic Analysis of…, Clinical pharmacology in dr… (2019) | popPK | 9 | [10.1002/cpdd.649](https://doi.org/10.1002/cpdd.649) | [30629858](https://pubmed.ncbi.nlm.nih.gov/30629858) | Population PK model of asunaprevir (2-compartment, covariates on clearance) in HCV-infected subjects, but no numeric parameter values (CL, V, Q) appear in the evidence. |
 
-<sub>queue written 2026-10-07T13:15:25.849695+00:00</sub>
+<sub>queue written 2026-10-07T15:17:37.497083+00:00</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Osawa_2019 | relevant | 10 | 2 | The paper describes a population PK model for asunaprevir, but the specific numeric parameter values (CL, V, etc.) are not present in the provided abstract evidence. |
-| popPK | Ueno_2018 | irrelevant | 2 | 0 | This is an exposure-response analysis using predicted exposure values from a separate popPK model, not a study reporting primary quantitative PK parameters (CL, V, etc.) for asunaprevir. |
+| popPK | Osawa_2019 | relevant | 9 | 2 | Population PK model of asunaprevir (2-compartment, covariates on clearance) in HCV-infected subjects, but no numeric parameter values (CL, V, Q) appear in the evidence. |
+| popPK | Ueno_2018 | irrelevant | 3 | 2 | This is an exposure-response (efficacy) analysis; ASV popPK parameters (CL, V) are only referenced as being from a prior/separate popPK model (Osawa manuscript) and no ASV PK parameter values appear in the evidence. |
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-10-07 13:15 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-10-07 15:17 UTC</sub>

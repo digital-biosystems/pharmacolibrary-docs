@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C07A&quot;,&quot;href&quot;:&quot;atc/C07A.md&quot;},{&quot;label&quot;:&quot;propranolol&quot;,&quot;href&quot;:&quot;drugs/drug_propranolol/&quot;},{&quot;label&quot;:&quot;Snelder_2013 \u00b7 PD cardiac output&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Propranolol_Salehifar2017_mean_of_differences&quot;,&quot;label&quot;:&quot;Salehifar_2017_mean_of_differences&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_propranolol/Propranolol_Salehifar2017_mean_of_differences.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Propranolol_Salehifar2017_other_sources&quot;,&quot;label&quot;:&quot;Salehifar_2017_other_sources&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_propranolol/Propranolol_Salehifar2017_other_sources.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Propranolol_Salehifar2017_this_study&quot;,&quot;label&quot;:&quot;Salehifar_2017_this_study&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_propranolol/Propranolol_Salehifar2017_this_study.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Propranolol_Takechi2018_reference&quot;,&quot;label&quot;:&quot;Takechi_2018_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_propranolol/Propranolol_Takechi2018_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Propranolol_Takechi2018_reference&quot;,&quot;label&quot;:&quot;Takechi_2018_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_propranolol/Propranolol_Takechi2018_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # cardiac output — PD  <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
@@ -16,9 +16,13 @@
 
 ## What this record describes
 
-**As extracted:** Propranolol (concentrations from the PK model of Salehifar_2017::female) drives cardiac output (in mL•min -1): indirect response — drug inhibits the production of cardiac output.
+**As extracted:** Propranolol (concentrations from the PK model of Marques_2026) drives cardiac output (in mL•min -1): indirect response — drug inhibits the production of cardiac output.
 
 **Model:** A model was generated (see the **Models** tab); it has no in-browser simulator.
+
+> Propranolol plasma concentrations (ng/mL) inhibit the production of cardiac output (mL/min) via an indirect response model with proportional effect. The model parameters are Emax = 0.335 and IC50 = 9.82 ng/mL.
+>
+> <sub>in the paper's terms — summarised by qwen3.8:27b-mtp-q8_0 from the paper's text; not checked by a person</sub>
 
 - **paper:** `Snelder_2013`
 - **model family:** `indirect_response_i`

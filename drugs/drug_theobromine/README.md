@@ -18,7 +18,7 @@ Theobromine, a dimethylxanthine related to caffeine, has been used as a diuretic
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-06 17:28 | 3:56 | 0/0/0 | 0/0/0 | 0/0/2 | 124,654/5,665 | ollama / qwen3.8:27b-mtp-q8_0 | 6 | 2/12 | 6/0 | 0 |
+| 2026-10-07 16:03 | 1:52 | 0/0/0 | 0/0/0 | 0/0/2 | 134,498/6,021 | einfracz / qwen3.8-27b | 8 | 2/13 | 8/0 | 0 |
 
 ## popPK records
 
@@ -57,23 +57,22 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 ## Coverage
 
 - **PubMed hits:** 145 matched, 141 returned
-- **screened:** 5  ·  **relevant:** 0
+- **screened:** 6  ·  **relevant:** 1
 - **records:** 0  ·  extracted 0  ·  needs_review 0  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** True
 
 ## Full text wanted
 
-_20 paper(s) judged relevant from the abstract, with no full text on disk — paywalled, or the resolver could not reach them. Follow the DOI, then save the PDF into `papers/` as `&lt;save as&gt;.pdf` and re-run the extraction._
+_19 paper(s) judged relevant from the abstract, with no full text on disk — paywalled, or the resolver could not reach them. Follow the DOI, then save the PDF into `papers/` as `&lt;save as&gt;.pdf` and re-run the extraction._
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Zandvliet_2005.pdf` | Zandvliet AS et al., Population pharmacokinetics of caffeine…, Basic & clinical pharmacolo… (2005) | popPK | 8 | [10.1111/j.1742-7843.2005.pto960111.x](https://doi.org/10.1111/j.1742-7843.2005.pto960111.x) | [15667599](https://pubmed.ncbi.nlm.nih.gov/15667599) | The study reports population PK parameters for theobromine (a metabolite of caffeine) in humans, but the specific numeric values for theobromine are not explicitly listed in the provided abstract text, only general model descriptions and caffeine-specific parameters. |
-| `Noh_2015.pdf` | Noh K et al., Effects of baicalin on oral pharmacokin…, Biomolecules & therapeutics (2015) | pd | 5 | [10.4062/biomolther.2014.134](https://doi.org/10.4062/biomolther.2014.134) | [25767690](https://www.ncbi.nlm.nih.gov/pubmed/25767690) | metadata signals extractable PD data (IC50) |
+| `Machnik_2017.pdf` | Machnik M et al., Control of methylxanthines in the compe…, Drug testing and analysis (2017) | popPK | 9 | [10.1002/dta.2097](https://doi.org/10.1002/dta.2097) | [27662634](https://pubmed.ncbi.nlm.nih.gov/27662634) | The study reports quantitative pharmacokinetic parameters (Effective Plasma Concentration and irrelevant concentrations) for theobromine in horses, derived from PK modeling. |
+| `Zandvliet_2005.pdf` | Zandvliet AS et al., Population pharmacokinetics of caffeine…, Basic & clinical pharmacolo… (2005) | popPK | 6 | [10.1111/j.1742-7843.2005.pto960111.x](https://doi.org/10.1111/j.1742-7843.2005.pto960111.x) | [15667599](https://pubmed.ncbi.nlm.nih.gov/15667599) | The study models theobromine as a metabolite in a population PK model, but the specific numeric parameter values for theobromine (CL, V, etc.) are not explicitly listed in the provided evidence, only general model details and caffeine-specific parameters are given. |
 | `Orón_1993.pdf` | Orón JD et al., Effects of alkylxanthines on contractil…, The Journal of pharmacy and… (1993) | pd | 5 | [10.1111/j.2042-7158.1993.tb07181.x](https://doi.org/10.1111/j.2042-7158.1993.tb07181.x) | [7908975](https://www.ncbi.nlm.nih.gov/pubmed/7908975) | metadata signals extractable PD data (IC50) |
 | `Belló_2021.pdf` | Belló C et al., Aqueous extract of Paullinia cupana att…, Journal of food biochemistry (2021) | pd | 4 | [10.1111/jfbc.13560](https://doi.org/10.1111/jfbc.13560) | [33270240](https://www.ncbi.nlm.nih.gov/pubmed/33270240) | metadata signals extractable PD data (IC50) |
 | `Cadena-Carrera_2023.pdf` | Cadena-Carrera S et al., Green-based methods to obtain bioactive…, Natural product research (2023) | pd | 4 | [10.1080/14786419.2022.2140802](https://doi.org/10.1080/14786419.2022.2140802) | [36370059](https://www.ncbi.nlm.nih.gov/pubmed/36370059) | metadata signals extractable PD data (EC50) |
 | `Daly_1983.pdf` | Daly JW et al., Subclasses of adenosine receptors in th…, Cellular and molecular neur… (1983) | pd | 4 | [10.1007/BF00734999](https://doi.org/10.1007/BF00734999) | [6309393](https://www.ncbi.nlm.nih.gov/pubmed/6309393) | metadata signals extractable PD data (EC50) |
-| `Farias_2021.pdf` | Farias IV et al., In Vitro Free Radical Scavenging Proper…, Mediators of inflammation (2021) | pd | 4 | [10.1155/2021/7688153](https://doi.org/10.1155/2021/7688153) | [34759771](https://www.ncbi.nlm.nih.gov/pubmed/34759771) | metadata signals extractable PD data (EC50) |
 | `Grillo_2019.pdf` | Grillo G et al., Cocoa bean shell waste valorisation; ex…, Food research international… (2019) | pd | 4 | [10.1016/j.foodres.2018.08.057](https://doi.org/10.1016/j.foodres.2018.08.057) | [30599932](https://www.ncbi.nlm.nih.gov/pubmed/30599932) | metadata signals extractable PD data (EC50) |
 | `Müller_1993.pdf` | Müller CE et al., Stimulation of calcium release by caffe…, Biochemical pharmacology (1993) | pd | 4 | [10.1016/0006-2952(93)90589-o](https://doi.org/10.1016/0006-2952(93)90589-o) | [8250969](https://www.ncbi.nlm.nih.gov/pubmed/8250969) | metadata signals extractable PD data (EC50) |
 | `Tassaneeyakul_1992.pdf` | Tassaneeyakul W et al., Caffeine as a probe for human cytochrom…, Pharmacogenetics (1992) | pd | 4 | [10.1097/00008571-199208000-00004](https://doi.org/10.1097/00008571-199208000-00004) | [1306118](https://www.ncbi.nlm.nih.gov/pubmed/1306118) | metadata signals extractable PD data (IC50) |
@@ -88,7 +87,7 @@ _20 paper(s) judged relevant from the abstract, with no full text on disk — pa
 | `Walton_2001.pdf` | Walton K et al., Uncertainty factors for chemical risk a…, Food and chemical toxicolog… (2001) | pgx | 7 | [10.1016/s0278-6915(01)00006-0](https://doi.org/10.1016/s0278-6915(01)00006-0) | [11397514](https://www.ncbi.nlm.nih.gov/pubmed/11397514) | metadata signals extractable PGX data (CYP1A2, PK/PD-context) |
 | `Cornelis_2016.pdf` | Cornelis MC et al., Genome-wide association study of caffei…, Human molecular genetics (2016) | pgx | 5 | [10.1093/hmg/ddw334](https://doi.org/10.1093/hmg/ddw334) | [27702941](https://www.ncbi.nlm.nih.gov/pubmed/27702941) | metadata signals extractable PGX data (CYP1A2) |
 
-<sub>queue written 2026-10-06T17:25:54.035849+00:00</sub>
+<sub>queue written 2026-10-07T16:02:34.132512+00:00</sub>
 
 ## Screened and excluded
 
@@ -96,41 +95,41 @@ _20 paper(s) judged relevant from the abstract, with no full text on disk — pa
 |---|---|---|---|---|---|
 | popPK | Ahmad_2023 | irrelevant | 0 | 0 | The paper is a phytochemical and neuroprotective study where theobromine is only identified as a secondary metabolite in a plant extract, with no pharmacokinetic parameters reported. |
 | PD | Ahmad_2023 | not_relevant | 0 | 0 | The paper investigates a plant extract and mentions theobromine only as one of many identified phytoconstituents; it does not report any pharmacodynamic or exposure-response analysis for theobromine itself. |
-| PGx | Alcorta-García_2020 | not_relevant | 3 | 5 | The paper focuses on caffeine metabolism and the effect of acetaminophen on CYP2E1 activity, not a pharmacogenomic effect on the PK/PD of theobromine itself. |
+| PGx | Alcorta-García_2020 | not_relevant | 2 | 5 | The paper focuses on the modulation of caffeine metabolism (specifically CYP2E1 activity and theobromine/caffeine ratio) by acetaminophen and genetics, not on the pharmacokinetics or pharmacodynamics of theobromine as a primary drug of interest. |
 | popPK | Anyanwu_2019 | irrelevant | 0 | 0 | The study investigates the antidiabetic effects of a plant extract in rats and does not involve theobromine or report any pharmacokinetic parameters. |
 | PD | Anyanwu_2019 | not_relevant | 0 | 0 | The paper studies the antidiabetic effects of a plant extract (Anthocleista vogelii) and does not mention theobromine or report any pharmacodynamic parameters for it. |
 | popPK | Armstrong_2020 | irrelevant | 0 | 0 | The study focuses on the extraction and biological activities of tea compounds, not the pharmacokinetics of theobromine. |
 | PD | Armstrong_2020 | not_relevant | 0 | 0 | The paper reports in vitro enzyme inhibition (IC50) for a complex tea extract, not a pharmacodynamic exposure-response relationship for the specific drug theobromine. |
-| PGx | Arnaud_2011 | not_relevant | 2 | 0 | The paper is a general review of methylxanthine pharmacokinetics and mentions phenotyping for polymorphisms but does not report specific quantitative pharmacogenomic effects of gene variants on theobromine PK/PD parameters. |
-| PGx | Attar_2023 | not_relevant | 0 | 0 | The study investigates the in vitro inhibition of CYP2D6 by tea methylxanthines and does not report any pharmacogenomic effects (gene variants) on the PK or PD of theobromine. |
-| popPK | Auxtero_2021 | irrelevant | 0 | 0 | The paper is a review of herb-drug interactions and does not report quantitative pharmacokinetic parameters for theobromine. |
+| PGx | Arnaud_2011 | not_relevant | 5 | 5 | The paper discusses phenotyping and enzyme polymorphisms generally but does not report specific quantitative changes in theobromine PK parameters linked to specific gene variants. |
+| PGx | Attar_2023 | not_relevant | 0 | 0 | The paper investigates the in vitro inhibition of CYP2D6 by tea fractions (containing theobromine) and does not report how a gene variant affects the pharmacokinetics or pharmacodynamics of theobromine. |
+| popPK | Auxtero_2021 | irrelevant | 0 | 0 | This is a review of herb-drug interactions and does not report quantitative pharmacokinetic parameters for theobromine. |
 | PD | Auxtero_2021 | not_relevant | 0 | 0 | The paper is a literature review of potential herb-drug interactions and does not report any specific pharmacodynamic or exposure-response data for theobromine. |
-| PGx | Baur_2021 | not_relevant | 0 | 0 | The paper investigates the pharmacodynamic effect of caffeine on attention in ADORA2A carriers, but does not report how the genotype changes the PK or PD parameters of theobromine. |
+| PGx | Baur_2021 | not_relevant | 0 | 0 | The paper investigates the effect of caffeine/coffee on attention in ADORA2A carriers and measures theobromine levels as a biomarker of caffeine intake, but does not report a genetic effect on the pharmacokinetics or pharmacodynamics of theobromine itself. |
 | popPK | Belló_2021 | irrelevant | 0 | 0 | The study focuses on the protective effects of a plant extract against ketoprofen toxicity, and theobromine is only identified as a constituent of the extract, with no pharmacokinetic parameters reported. |
 | PD | Belló_2021 | not_relevant | 0 | 0 | The study reports qualitative protective effects of a plant extract against ketoprofen toxicity and mentions theobromine as a constituent, but provides no exposure-response or dose-response data, PK/PD modeling, or numeric PD parameters for theobromine. |
 | popPK | Berends_2015 | irrelevant | 0 | 0 | The paper is a narrative review of cardiometabolic effects and does not report original quantitative pharmacokinetic parameters for theobromine. |
 | PD | Berends_2015 | not_relevant | 1 | 0 | The text is a review summarizing general findings and calling for future dose-response trials, but it does not report specific numeric PD parameters or extractable concentration-effect curves for theobromine. |
 | popPK | Biscussi_2025 | irrelevant | 0 | 0 | The paper is a medicinal chemistry study on theobromine derivatives as acetylcholinesterase inhibitors, reporting in-vitro IC50 values and docking results, but no pharmacokinetic parameters for theobromine itself. |
 | PD | Biscussi_2025 | not_relevant | 0 | 0 | The paper reports in vitro enzyme inhibition (IC50) for novel theobromine derivatives, which is a pharmacological potency assay, not a pharmacodynamic (exposure-response) or dose-response relationship in a biological system with PD parameters. |
-| PGx | Bittencourt_2013 | not_relevant | 0 | 0 | The paper investigates the antioxidant effects of guaraná extract on cell viability and oxidative stress in vitro, with no mention of gene variants, genotypes, or pharmacokinetic/pharmacodynamic parameters of theobromine. |
-| popPK | Brent_2011 | irrelevant | 0 | 0 | The paper is a review of caffeine's reproductive risks and does not report pharmacokinetic parameters for theobromine. |
+| PGx | Bittencourt_2013 | not_relevant | 0 | 0 | The paper investigates the antioxidant and protective effects of guaraná extract in cell cultures exposed to sodium nitroprusside and does not report on pharmacogenomic effects on the PK/PD parameters of theobromine. |
+| popPK | Brent_2011 | irrelevant | 0 | 0 | The paper is a review of reproductive risks associated with caffeine, not a pharmacokinetic study of theobromine. |
 | PD | Brent_2011 | not_relevant | 0 | 0 | The paper is a risk assessment review of caffeine (not theobromine) and does not report any extractable pharmacodynamic model or numeric dose-response parameters. |
-| popPK | Brunmair_2021 | irrelevant | 0 | 0 | The study focuses on caffeine and its metabolites in human sweat, not theobromine. |
+| popPK | Brunmair_2021 | irrelevant | 0 | 0 | The study focuses on caffeine and its metabolites in sweat, with theobromine not identified as the subject drug or a reported quantitative parameter. |
 | PD | Brunmair_2021 | not_relevant | 0 | 0 | The paper reports pharmacokinetic (PK) parameters (metabolic rate constants) for theobromine as a caffeine metabolite, but does not report any pharmacodynamic (PD) or exposure-response relationship for theobromine itself. |
 | popPK | CHABRIER_1951 | irrelevant | 0 | 0 | no_text gate: only 123 chars of text extracted (&lt; 400) |
 | PD | CHABRIER_1951 | not_relevant | 0 | 0 | The provided text is only a title and does not contain the full text, data, or numeric PD parameters required to assess the pharmacodynamic relationship. |
 | popPK | Cadena-Carrera_2023 | irrelevant | 0 | 0 | no_text gate: only 93 chars of text extracted (&lt; 400) |
 | PD | Cadena-Carrera_2023 | not_relevant | 0 | 0 | The provided text is only a title fragment regarding green extraction methods and contains no pharmacodynamic data, exposure-response analysis, or numeric PD parameters for theobromine. |
-| PGx | Cazeneuve_1994 | not_relevant | 0 | 0 | The paper studies the developmental maturation of caffeine metabolism in liver microsomes, not the effect of a specific gene variant or genotype on the pharmacokinetics or pharmacodynamics of theobromine. |
+| PGx | Cazeneuve_1994 | not_relevant | 0 | 0 | The paper studies the ontogeny of caffeine metabolism in liver microsomes and does not report any gene variant or genotype affecting the PK/PD of theobromine. |
 | popPK | Chen_2017 | irrelevant | 1 | 0 | The paper describes an analytical method for measuring caffeine and its metabolites (including theobromine) but does not report pharmacokinetic parameters or numeric values for theobromine. |
 | PD | Chen_2017 | not_relevant | 0 | 0 | The paper describes an analytical method (HPLC-MS/MS) for quantifying caffeine and metabolites but does not report any pharmacodynamic data, exposure-response relationships, or numeric PD parameters. |
-| PGx | Chung_1998 | not_relevant | 0 | 0 | The study investigates the metabolic pathways of caffeine in rat liver microsomes, not the pharmacokinetics or pharmacodynamics of theobromine in humans or the effect of genetic variants on theobromine parameters. |
-| PGx | Chung_2000 | not_relevant | 0 | 0 | The study assesses the effect of age and smoking on caffeine metabolism, not the effect of a gene variant on theobromine pharmacokinetics. |
-| PGx | Cornelis_2016 | not_relevant | 2 | 5 | The paper reports GWAS associations for caffeine metabolites (including theobromine) in a general population, not a pharmacogenomic effect on the PK/PD of theobromine as a drug. |
+| PGx | Chung_1998 | not_relevant | 0 | 0 | The study focuses on rat liver microsomes and caffeine metabolism, not on human pharmacogenomics affecting theobromine pharmacokinetics. |
+| PGx | Chung_2000 | not_relevant | 0 | 0 | The study investigates the effects of age and smoking status on caffeine metabolism, not the effect of specific gene variants or genotypes on theobromine pharmacokinetics. |
+| PGx | Cornelis_2016 | not_relevant | 0 | 0 | The paper analyzes caffeine metabolism and does not report pharmacogenomic effects on the pharmacokinetics or pharmacodynamics of theobromine as a drug. |
 | popPK | Dahab_2024 | irrelevant | 0 | 0 | The study focuses on in silico and in vitro evaluations of anticancer theobromine derivatives, reporting no pharmacokinetic parameters for theobromine. |
 | popPK | Daly_1983 | irrelevant | 0 | 0 | no_text gate: only 118 chars of text extracted (&lt; 400) |
 | PD | Daly_1983 | not_relevant | 1 | 0 | The text is a title of a review or general study on adenosine receptor subclasses and methylxanthines, lacking specific numeric PD parameters or exposure-response data for theobromine. |
-| PGx | Daniel_2001 | not_relevant | 0 | 0 | The study investigates the effect of phenothiazine neuroleptics on caffeine metabolism in rat liver, not the effect of a gene variant on theobromine pharmacokinetics or pharmacodynamics. |
+| PGx | Daniel_2001 | not_relevant | 0 | 0 | The study investigates drug-drug interactions (neuroleptics inhibiting caffeine metabolism in rat liver) and does not report any pharmacogenomic effects of genetic variants on theobromine PK/PD. |
 | popPK | Eissa_2023 | irrelevant | 0 | 0 | The study focuses on the in vitro biological evaluation and molecular docking of theobromine derivatives as VEGFR-2 inhibitors, containing no pharmacokinetic data. |
 | PD | Eissa_2023 | not_relevant | 3 | 3 | The paper reports single-point IC50 values for a theobromine derivative (15a) but does not provide a full concentration-effect curve, dose-response model, or PK/PD analysis required to derive dynamic PD parameters like Emax or slope. |
 | popPK | Eissa_2023_2 | irrelevant | 0 | 0 | The paper is a computational and in-vitro study of a theobromine derivative (T-1-PCPA) as an anticancer agent, reporting no pharmacokinetic parameters for theobromine itself. |
@@ -146,27 +145,26 @@ _20 paper(s) judged relevant from the abstract, with no full text on disk — pa
 | popPK | Elkaeed_2022 | irrelevant | 0 | 0 | The paper focuses on the design and in vitro anticancer activity of a theobromine derivative, not the pharmacokinetics of theobromine itself. |
 | popPK | Elkaeed_2025 | irrelevant | 0 | 0 | The study focuses on the computational design and in vitro anticancer activity of a theobromine derivative, not the pharmacokinetics of theobromine itself. |
 | popPK | Elkaeed_2025_2 | irrelevant | 0 | 0 | The study focuses on the in silico and in vitro anti-cancer properties of a theobromine derivative (T-1-NBAB) and does not report pharmacokinetic parameters for theobromine. |
-| PGx | Eugster_1993 | not_relevant | 0 | 0 | The paper studies caffeine metabolism and CYP1A1/2 interactions in yeast, not the pharmacogenomics of theobromine. |
-| popPK | Farias_2021 | irrelevant | 0 | 0 | no_text gate: only 205 chars of text extracted (&lt; 400) |
+| PGx | Eugster_1993 | not_relevant | 0 | 0 | The paper studies in vitro enzyme kinetics of caffeine metabolism using heterologous expression, not the pharmacogenomic effect of a gene variant on theobromine PK/PD in humans. |
+| popPK | Farias_2021 | irrelevant | 0 | 0 | The paper investigates the in vitro anti-inflammatory and antioxidant properties of theobromine as a chemical marker, containing no pharmacokinetic parameters (CL, V, ka) or disposition data. |
 | PD | Farias_2021 | not_relevant | 0 | 0 | The paper focuses on the in vitro antioxidant and anti-inflammatory properties of Ilex paraguariensis and its markers, with no mention of theobromine or any pharmacokinetic/pharmacodynamic modeling. |
 | popPK | Garrett_1995 | irrelevant | 0 | 0 | The study is a behavioral pharmacology investigation of rotational behavior in rats, and theobromine is used only as a comparator agent to test adenosine receptor involvement, with no pharmacokinetic parameters reported. |
 | PD | Garrett_1995 | not_relevant | 2 | 0 | The paper reports qualitative dose-response findings (theobromine did not induce turning) but provides no numeric PD parameters or extractable concentration-effect curve for theobromine. |
-| PGx | Gates_1999 | not_relevant | 0 | 0 | The paper investigates the enzymatic isoforms responsible for theobromine metabolism in vitro but does not report any pharmacogenomic effects (gene variants) on PK or PD parameters. |
-| PGx | Georgiev_2019 | not_relevant | 0 | 0 | The paper investigates in vitro CYP3A4 inhibition by methylxanthines and in silico drug-drug interactions, but does not report pharmacogenomic effects (gene variants) on the PK/PD of theobromine. |
+| PGx | Gates_1999 | not_relevant | 0 | 0 | The paper investigates the CYP isoform selectivity of theobromine metabolism using microsomal and recombinant enzyme systems to define substrate properties, but it does not report pharmacogenomic effects (gene variants/genotypes) on PK or PD parameters. |
+| PGx | Georgiev_2019 | not_relevant | 0 | 0 | The study investigates in vitro CYP3A4 inhibition and in vivo drug-drug interactions (DDI) using midazolam, not pharmacogenomic effects on theobromine PK/PD. |
 | popPK | Graefe-Mody_2012 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of linagliptin, not theobromine. |
 | PD | Graefe-Mody_2012 | not_relevant | 1 | 0 | The paper focuses on linagliptin PK in hepatic impairment and reports only median DPP-4 inhibition percentages without concentration-response modeling or numeric PD parameters for theobromine. |
 | popPK | Grillo_2019 | irrelevant | 0 | 0 | no_text gate: only 93 chars of text extracted (&lt; 400) |
 | PD | Grillo_2019 | not_relevant | 0 | 0 | The paper focuses on the extraction of theobromine from cocoa bean shells using cavitational reactors and does not report any pharmacodynamic or exposure-response data. |
-| PGx | Grzegorzewski_2021 | not_relevant | 0 | 0 | The paper focuses on caffeine pharmacokinetics and the effects of smoking, oral contraceptives, and disease, not on the pharmacogenomics of theobromine. |
-| PGx | Gu_1992 | not_relevant | 2 | 5 | The paper describes in vitro enzyme kinetics of caffeine metabolism by CYP1A2 and CYP2E1, not the effect of a specific gene variant on the PK/PD of theobromine. |
+| PGx | Grzegorzewski_2021 | not_relevant | 0 | 0 | The paper focuses on caffeine pharmacokinetics and the effects of environmental factors (smoking, OCPs) and disease, rather than genetic variants affecting theobromine. |
+| PGx | Gu_1992 | not_relevant | 5 | 8 | The paper reports metabolic pathways and product ratios for CYP1A2/2E1 but does not link specific gene variants/genotypes to changes in theobromine PK/PD parameters. |
 | popPK | Hashmi_2025 | irrelevant | 0 | 0 | The paper is a review of anticancer purine scaffolds and does not report pharmacokinetic parameters for theobromine. |
 | PD | Hashmi_2025 | not_relevant | 1 | 0 | The paper is a review of synthesis and SAR for purine scaffolds; it mentions theobromine-based anticancer agents but does not report specific exposure-response or dose-response PD parameters for theobromine itself. |
 | popPK | Hayati_2025 | irrelevant | 0 | 0 | The study is a metabolomics and cytotoxicity analysis of plant extracts where theobromine is only identified as a potential compound, with no pharmacokinetic parameters reported. |
 | PD | Hayati_2025 | not_relevant | 0 | 0 | The paper reports IC50 values for plant extracts and identifies theobromine as a potential contributor via metabolomics, but it does not report a specific concentration-effect relationship or numeric PD parameters for theobromine itself. |
-| PGx | Jeppesen_1996 | not_relevant | 0 | 0 | The study investigates a drug-drug interaction (fluvoxamine inhibiting CYP1A2) affecting caffeine metabolism, not a pharmacogenomic effect of a gene variant on theobromine. |
-| PGx | Jiang_2021 | not_relevant | 2 | 0 | The paper focuses on caffeine as a CYP1A2 probe drug; theobromine is only a measured metabolite, and no pharmacogenomic effect on theobromine's PK/PD is reported. |
-| PGx | Jodynis-Liebert_1999 | not_relevant | 0 | 0 | The study investigates the effect of chemical inducers (toluidines/DNTs) on caffeine metabolism in rats, not the effect of a gene variant/genotype on theobromine PK/PD. |
-| PGx | Larsen_2011 | not_relevant | 0 | 0 | The paper uses theobromine as a chemical auxiliary to control CYP3A4 selectivity in synthetic chemistry, not as a drug subject to pharmacogenomic analysis. |
+| PGx | Jeppesen_1996 | not_relevant | 0 | 0 | The study investigates a drug-drug interaction (fluvoxamine-caffeine) and does not report any genetic variants or genotypes affecting the pharmacokinetics or pharmacodynamics of theobromine. |
+| PGx | Jodynis-Liebert_1999 | not_relevant | 1 | 5 | The study examines the effect of environmental chemical inducers/inhibitors (toluidines/DNT) on caffeine metabolism in rats, not the effect of gene variants/genotypes on theobromine PK/PD. |
+| PGx | Larsen_2011 | not_relevant | 0 | 0 | The paper uses theobromine as a chemical auxiliary for synthetic chemistry and does not report pharmacogenomic effects on its pharmacokinetics or pharmacodynamics. |
 | popPK | Lau_1995 | irrelevant | 2 | 0 | The study focuses on caffeine pharmacokinetics, with theobromine mentioned only as a metabolite with a relative elimination rate order but no quantitative PK parameters reported. |
 | PD | Lau_1995 | not_relevant | 0 | 0 | The paper focuses exclusively on caffeine pharmacokinetics (dose proportionality, clearance, volume of distribution) and mentions theobromine only as a metabolite with a specific elimination rate constant order, without reporting any pharmacodynamic or exposure-response data for theobromine. |
 | popPK | Lee_2002 | irrelevant | 0 | 0 | The study reports pharmacokinetic parameters for caffeine, not theobromine. |
@@ -174,88 +172,87 @@ _20 paper(s) judged relevant from the abstract, with no full text on disk — pa
 | popPK | Lippert_2017 | irrelevant | 0 | 0 | The study is an in-vitro dental caries model investigating anti-caries efficacy, not a pharmacokinetic study, and contains no disposition parameters for theobromine. |
 | PD | Lippert_2017 | not_relevant | 0 | 0 | The paper is an in vitro study on enamel rehardening and does not report pharmacokinetic or pharmacodynamic modeling, exposure-response relationships, or numeric PD parameters for theobromine. |
 | popPK | Logan_1986 | irrelevant | 0 | 0 | The study is a behavioral pharmacology analysis of locomotor activity in mice and does not report any pharmacokinetic parameters for theobromine. |
-| popPK | Long_2021 | irrelevant | 0 | 0 | The paper is a review of caffeine pharmacokinetics in preterm infants and does not report quantitative disposition parameters for theobromine. |
+| popPK | Long_2021 | irrelevant | 0 | 0 | The paper is a review focused on the pharmacokinetics of caffeine, not theobromine, and provides no original data for theobromine. |
 | PD | Long_2021 | not_relevant | 1 | 0 | The paper is a review of caffeine (not theobromine) focusing on PK and clinical outcomes, lacking specific numeric PD parameters or concentration-effect curves. |
 | popPK | Luo_2013 | irrelevant | 0 | 0 | The paper is a phytochemical study isolating compounds from tea, and theobromine is merely identified as a constituent without any pharmacokinetic analysis or parameter reporting. |
 | PD | Luo_2013 | not_relevant | 0 | 0 | The paper is a phytochemical study isolating compounds from tea; it mentions theobromine only as an identified constituent and reports an IC50 for a different compound (fuzhuanin B), providing no pharmacodynamic or exposure-response data for theobromine. |
-| popPK | Machnik_2017 | irrelevant | 2 | 0 | The study focuses on establishing irrelevant concentration thresholds (doping limits) using the Toutain model rather than reporting standard quantitative disposition parameters like clearance, volume, or half-life for theobromine. |
-| popPK | Maderazo_1990 | irrelevant | 0 | 0 | The study focuses on pentoxifylline and its analogs in mice, not theobromine. |
-| popPK | Murata_2022 | irrelevant | 0 | 0 | The paper is a review of IVIVE-PBPK modeling strategies for CNS drugs and does not report specific quantitative pharmacokinetic parameters for theobromine. |
+| popPK | Maderazo_1990 | irrelevant | 0 | 0 | The study focuses on pentoxifylline and its analogs, not theobromine. |
+| popPK | Murata_2022 | irrelevant | 0 | 0 | This is a review article focusing on IVIVE-PBPK modeling methodologies for CNS drugs and does not contain any specific pharmacokinetic data for theobromine. |
 | PD | Murata_2022 | not_relevant | 0 | 0 | The paper is a review of PK/PBPK modeling for brain drug disposition and mentions theobromine only as a compound used in a cited PK study, without reporting any pharmacodynamic or exposure-response data. |
 | popPK | Musk_1990 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of cytotoxicity and mitotic block override, not a pharmacokinetic study, and reports no disposition parameters for theobromine. |
 | PD | Musk_1990 | not_relevant | 3 | 2 | The paper describes qualitative dose-response trends and relative potency rankings for theobromine but does not provide specific numeric PD parameters (e.g., EC50, Emax) or a quantitative concentration-effect curve for theobromine. |
 | popPK | Müller_1993 | irrelevant | 0 | 0 | no_text gate: only 76 chars of text extracted (&lt; 400) |
 | PD | Müller_1993 | not_relevant | 0 | 0 | The paper focuses on caffeine analogs in pheochromocytoma cells and does not report pharmacodynamic or exposure-response data for theobromine. |
-| popPK | Ngwalero_2021 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of bedaquiline and its metabolite M2, not theobromine. |
+| popPK | Ngwalero_2021 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of bedaquiline and its metabolite M2 in tuberculosis patients, not theobromine. |
 | PD | Ngwalero_2021 | not_relevant | 0 | 0 | The paper focuses on the pharmacokinetics of bedaquiline and its metabolite M2 (plasma vs. intracellular concentrations) and does not report any pharmacodynamic or exposure-response relationship for theobromine. |
-| PGx | Noh_2011 | not_relevant | 0 | 0 | The study investigates the effect of a drug (rutaecarpine) on caffeine metabolism, not the effect of a gene variant/genotype on theobromine PK/PD. |
+| PGx | Noh_2011 | not_relevant | 0 | 0 | The study investigates the effect of the drug rutaecarpine (drug-drug interaction) on caffeine/theobromine metabolism in rats, not the effect of a gene variant (pharmacogenomics). |
 | popPK | Noh_2015 | irrelevant | 0 | 0 | no_text gate: only 64 chars of text extracted (&lt; 400) |
 | PD | Noh_2015 | not_relevant | 0 | 0 | The paper focuses on the pharmacokinetics of caffeine and the effect of baicalin, with no mention of theobromine or any pharmacodynamic/exposure-response analysis. |
-| PGx | Novitskaia_2013 | not_relevant | 0 | 0 | The paper studies the effect of drug inducers/inhibitors on CYP activity in rats, not the effect of genetic variants on theobromine pharmacokinetics. |
-| PGx | Novitskaia_2013_2 | not_relevant | 0 | 0 | The study investigates a pharmacokinetic drug-drug interaction (aphobazole inducing CYP1A2) in rats, not a pharmacogenomic effect of a gene variant on theobromine. |
+| PGx | Novitskaia_2013 | not_relevant | 0 | 0 | The study is conducted in rats and evaluates enzyme induction/inhibition by exogenous drugs, not the effect of human gene variants on theobromine PK/PD. |
+| PGx | Novitskaia_2013_2 | not_relevant | 0 | 0 | The paper reports a drug-drug interaction (aphobazole inducing CYP1A2), not a pharmacogenomic effect (gene variant/genotype) on theobromine PK. |
 | popPK | Orón_1993 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of muscle contractility and does not report any pharmacokinetic parameters for theobromine. |
-| PGx | Park_1999 | not_relevant | 2 | 5 | The paper reports FMO3 genotype effects on FMO enzyme activity (phenotype) using caffeine/theobromine ratio as a probe, but does not report pharmacokinetic parameters (e.g., AUC, t1/2) of theobromine itself. |
+| PGx | Park_1999 | not_relevant | 2 | 5 | The paper reports a pharmacogenomic effect on FMO activity using caffeine/theobromine metabolism as a *phenotypic marker* for enzyme function, not on the PK/PD parameters of theobromine as a therapeutic drug. |
 | popPK | Pavel_2025 | irrelevant | 0 | 0 | The study is a toxicological investigation of oxidative stress biomarkers in zebrafish and does not report any pharmacokinetic parameters for theobromine. |
 | PD | Pavel_2025 | not_relevant | 2 | 1 | The study reports qualitative comparative effects of a single fixed dose (50 mg/L) on biomarkers but does not provide concentration-response data, PK parameters, or numeric PD model parameters (e.g., Emax, EC50). |
 | popPK | Peikov_1995 | irrelevant | 0 | 0 | The paper focuses on the synthesis and in vitro pharmacological activity of xanthine derivatives, not on the pharmacokinetic disposition parameters of theobromine. |
-| popPK | Pelligand_2020 | irrelevant | 0 | 0 | The study reports pharmacokinetic parameters for torasemide and furosemide in dogs, not theobromine. |
-| popPK | Priyanka_2026 | irrelevant | 0 | 0 | The paper is a review of the plant Azadirachta indica (Neem) and its antimicrobial properties, with no mention of theobromine or pharmacokinetic parameters. |
+| popPK | Pelligand_2020 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of torasemide and furosemide, not theobromine. |
+| popPK | Priyanka_2026 | irrelevant | 0 | 0 | The paper is a review of the plant Neem (Azadirachta indica) and its antimicrobial properties, with no mention of theobromine or pharmacokinetic parameters. |
 | PD | Priyanka_2026 | not_relevant | 0 | 0 | The paper is a review of the plant Azadirachta indica (Neem) and its bioactive compounds; it does not discuss theobromine or report any pharmacodynamic or exposure-response data. |
 | popPK | QUEVAUVILLER_1950 | irrelevant | 0 | 0 | no_text gate: only 67 chars of text extracted (&lt; 400) |
 | PD | QUEVAUVILLER_1950 | not_relevant | 0 | 0 | The provided text is only a title and does not contain the full text, data, or numeric PD parameters required to assess the pharmacodynamic relationship. |
-| popPK | Rasouli_2006 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of VLDL secretion in rat hepatocytes where theobromine is used only as a non-specific control agent, with no pharmacokinetic parameters reported. |
+| popPK | Rasouli_2006 | irrelevant | 0 | 0 | The study focuses on VLDL triacylglycerol secretion in rat hepatocytes, using theobromine only as a non-specific tool to test cAMP pathways, and reports no pharmacokinetic parameters for theobromine. |
 | PD | Rasouli_2006 | not_relevant | 0 | 0 | The paper reports that theobromine did not have any significant effect on triacylglycerol secretion and provides no numeric PD parameters or concentration-effect relationship for it. |
-| PGx | Regal_2005 | not_relevant | 0 | 0 | The paper investigates the kinetic mechanism of caffeine metabolism by CYP1A2 using isotope effects and does not report pharmacogenomic effects on theobromine PK/PD parameters. |
+| PGx | Regal_2005 | not_relevant | 0 | 0 | The paper investigates the enzymatic mechanism of caffeine oxidation using isotope effects, rather than the pharmacogenomic impact of genetic variants on theobromine pharmacokinetics or pharmacodynamics. |
 | popPK | Renner_1982 | irrelevant | 0 | 0 | The paper is a genotoxicity study examining sister-chromatid exchanges and does not report any pharmacokinetic parameters for theobromine. |
 | PD | Renner_1982 | not_relevant | 3 | 2 | The paper reports qualitative dose-dependent genotoxicity (SCEs) for theobromine but provides no numeric concentration-effect parameters, Emax/EC50, or quantitative PD model. |
 | popPK | Reshetnikov_2022 | irrelevant | 0 | 0 | The paper is a medicinal chemistry study on the synthesis and in-vitro acetylcholinesterase inhibition of methylxanthine derivatives, containing no pharmacokinetic data for theobromine. |
 | PD | Reshetnikov_2022 | not_relevant | 0 | 0 | The paper reports in vitro IC50 values for novel methylxanthine derivatives, not pharmacodynamic or exposure-response data for theobromine. |
-| popPK | Rodríguez-Rodríguez_2022 | irrelevant | 0 | 0 | The study investigates the vasoactive and mechanistic properties of cocoa shell extract and its components in rat arteries, not the pharmacokinetic disposition parameters of theobromine. |
-| PGx | Sachse_1999 | not_relevant | 0 | 0 | The study investigates the effect of FMO3 polymorphisms on clozapine and caffeine metabolism, not theobromine. |
-| popPK | Santos_2024 | irrelevant | 0 | 0 | The study is a metabolomics analysis for Parkinson's disease biomarkers and does not report pharmacokinetic parameters for theobromine. |
+| popPK | Rodríguez-Rodríguez_2022 | irrelevant | 0 | 0 | The study investigates the vasoactive and antioxidant effects of cocoa shell extract and its components (including theobromine) on rat arteries, not the pharmacokinetic parameters (CL, V, etc.) of theobromine. |
+| PGx | Sachse_1999 | not_relevant | 0 | 0 | The study focuses on the metabolism of clozapine and caffeine; while theobromine is mentioned as a marker metabolite, the paper does not report genetic effects on theobromine's own pharmacokinetic or pharmacodynamic parameters. |
+| popPK | Santos_2024 | irrelevant | 0 | 0 | The study is a metabolomic biomarker analysis for Parkinson's disease and does not report pharmacokinetic parameters for theobromine. |
 | PD | Santos_2024 | not_relevant | 0 | 0 | The paper focuses on metabolomics biomarkers for Parkinson's disease diagnosis and does not report any pharmacodynamic or exposure-response analysis for theobromine. |
 | popPK | Sarriá_2020 | irrelevant | 2 | 0 | The paper is a review/association study linking cocoa metabolites to health outcomes and does not report quantitative pharmacokinetic parameters (CL, V, ka, etc.) for theobromine. |
 | PD | Sarriá_2020 | not_relevant | 2 | 0 | The paper qualitatively associates metabolites with health effects and mentions a "strong dose-response effect" but does not provide numeric PD parameters, concentration-effect curves, or quantitative exposure-response data for theobromine. |
-| PGx | Saunders_2023 | not_relevant | 0 | 0 | The paper discusses caffeine and its effects on sports performance, not theobromine, and does not report specific pharmacogenomic effects on PK/PD parameters. |
+| PGx | Saunders_2023 | not_relevant | 0 | 0 | The paper discusses caffeine's effects on sports performance and mentions genetic variation in response but does not report pharmacokinetic or pharmacodynamic data for theobromine. |
 | popPK | Scattolin_2018 | irrelevant | 0 | 0 | The paper is a medicinal chemistry study on palladium complexes using theobromine as a ligand precursor, reporting in vitro cytotoxicity rather than pharmacokinetic parameters. |
 | PD | Scattolin_2018 | not_relevant | 3 | 2 | The paper reports IC50 values for palladium complexes containing theobromine-derived ligands, which is a dose-response metric for the metal complex, not a pharmacodynamic exposure-response relationship for theobromine itself. |
-| popPK | Shreevatsa_2021 | irrelevant | 0 | 0 | The paper is a computational study on NQO1 inhibitors and does not report pharmacokinetic parameters for theobromine. |
+| popPK | Shreevatsa_2021 | irrelevant | 0 | 0 | The paper is a computational study on NQO1 inhibitors and contains no pharmacokinetic data or parameters for theobromine. |
 | PD | Shreevatsa_2021 | not_relevant | 0 | 0 | The paper is a computational study on NQO1 inhibitors (specifically Orientin) and does not mention theobromine or report any pharmacodynamic or exposure-response data. |
 | popPK | Singh_2021 | irrelevant | 0 | 0 | The study focuses on the toxicity of 7-methylxanthine, using theobromine only as a comparator agent, and does not report any pharmacokinetic parameters for theobromine. |
 | PD | Singh_2021 | not_relevant | 0 | 0 | The paper focuses on the toxicity of 7-methylxanthine, using theobromine only as a comparator for acute mortality and does not report any exposure-response or dose-response PD parameters for theobromine. |
-| PGx | Spatzenegger_2000 | not_relevant | 0 | 0 | The study investigates caffeine metabolism in rats, not the pharmacokinetics or pharmacodynamics of theobromine itself. |
+| PGx | Spatzenegger_2000 | not_relevant | 0 | 0 | The study investigates caffeine metabolism in rats, not the pharmacokinetics or pharmacodynamics of theobromine, and does not report human pharmacogenomic effects. |
 | popPK | Stark_2006 | irrelevant | 0 | 0 | The paper is a sensory and chemical analysis of taste compounds in cocoa, not a pharmacokinetic study, and contains no PK parameters for theobromine. |
 | popPK | Stavric_1988 | irrelevant | 0 | 0 | The paper is a review focused on theophylline toxicity and does not report quantitative pharmacokinetic parameters for theobromine. |
 | PD | Stavric_1988 | not_relevant | 1 | 0 | The paper is a qualitative review of theophylline toxicity and explicitly notes that dose-response effects are controversial due to analytical issues, without providing specific numeric PD parameters or extractable concentration-effect curves. |
 | popPK | Takeuchi_1981 | irrelevant | 0 | 0 | The study focuses on the pharmacodynamic effects of methylxanthines on urinary prostaglandin excretion in rats and does not report pharmacokinetic parameters for theobromine. |
-| PGx | Tao_2015 | not_relevant | 0 | 0 | The paper is a theoretical computational study of the metabolic mechanism and does not report pharmacogenomic effects on PK/PD parameters. |
+| PGx | Tao_2015 | not_relevant | 0 | 0 | The paper is a theoretical study on the metabolic mechanism and does not report pharmacogenomic effects on PK/PD parameters. |
 | popPK | Tassaneeyakul_1992 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of caffeine metabolism, where theobromine is only a metabolite, and no pharmacokinetic parameters for theobromine are reported. |
 | PD | Tassaneeyakul_1992 | not_relevant | 0 | 0 | The paper reports in vitro enzyme kinetics (Km, IC50, Ki) for caffeine metabolism, not pharmacodynamic exposure-response or dose-response relationships for theobromine. |
-| PGx | Tassaneeyakul_1992 | not_relevant | 0 | 0 | The paper focuses on caffeine as a probe for CYP450 enzymes and does not report pharmacogenomic effects on theobromine PK/PD parameters. |
+| PGx | Tassaneeyakul_1992 | not_relevant | 0 | 0 | The paper focuses on caffeine as a probe for CYP enzymes, not theobromine pharmacogenomics. |
 | popPK | Tripodi_2024 | irrelevant | 0 | 0 | The study is a mechanistic investigation of a cocoa extract's effect on protein aggregation, where theobromine is merely identified as a component, not studied for pharmacokinetics. |
 | PD | Tripodi_2024 | not_relevant | 1 | 0 | The paper identifies theobromine as a component of the extract but does not report specific exposure-response or dose-response data for theobromine alone, nor does it provide numeric PD parameters for it. |
-| popPK | Uney_2011 | irrelevant | 1 | 0 | The study focuses on caffeine pharmacokinetics in goats, with theobromine serving only as a metabolite for metabolic ratio analysis rather than the subject drug. |
-| popPK | Uneyama_1993 | irrelevant | 0 | 0 | The study is an in-vitro electrophysiological investigation of caffeine and xanthine derivatives on neuronal chloride currents, not a pharmacokinetic study of theobromine. |
-| popPK | Valodia_2022 | irrelevant | 0 | 0 | The paper is a review of phenytoin metabolism in the context of smoking and does not report pharmacokinetic parameters for theobromine. |
+| popPK | Uney_2011 | irrelevant | 4 | 3 | Theobromine is a metabolite of the subject drug (caffeine), not the administered drug, so its PK is secondary to caffeine's. |
+| popPK | Uneyama_1993 | irrelevant | 0 | 0 | The study is an in-vitro electrophysiological investigation of xanthine derivatives (including theobromine) on rat hippocampal neurons and does not report pharmacokinetic parameters. |
+| popPK | Valodia_2022 | irrelevant | 0 | 0 | The paper is a review focused on phenytoin metabolism and the effects of nicotine/tobacco products, with no mention of theobromine or its pharmacokinetic parameters. |
 | PD | Valodia_2022 | not_relevant | 0 | 0 | The paper is a literature review regarding phenytoin and nicotine/smoke-free products, containing no data or analysis for theobromine. |
-| PGx | Walton_2001 | not_relevant | 0 | 0 | The paper analyzes interspecies pharmacokinetic differences for risk assessment, not the effect of human gene variants on theobromine PK/PD. |
-| PGx | Yu_2016 | not_relevant | 0 | 0 | The study investigates the effect of pregnancy (physiological state) on caffeine PK, not the effect of a gene variant/genotype on theobromine PK/PD. |
-| PGx | Zamora_2025 | not_relevant | 2 | 5 | The study reports in vitro enzyme activity (theobromine N-3 demethylation) and its correlation with CYP1A2 copy number, but does not report in vivo pharmacokinetic or pharmacodynamic parameters of theobromine. |
-| popPK | Zandvliet_2005 | relevant | 8 | 2 | The study reports population PK parameters for theobromine (a metabolite of caffeine) in humans, but the specific numeric values for theobromine are not explicitly listed in the provided abstract text, only general model descriptions and caffeine-specific parameters. |
+| PGx | Walton_2001 | not_relevant | 0 | 0 | The paper assesses interspecies (animal vs human) pharmacokinetic differences, not interindividual pharmacogenomic effects driven by gene variants. |
+| PGx | Yu_2016 | not_relevant | 0 | 0 | The paper studies the impact of pregnancy on the pharmacokinetics of caffeine and its metabolites, not the effect of a gene variant. |
+| PGx | Zamora_2025 | not_relevant | 2 | 2 | The paper reports in vitro correlations between gene variants and enzymatic activity (Vmax/Km), but does not report changes in pharmacokinetic or pharmacodynamic parameters (e.g., AUC, clearance, plasma concentration) in vivo. |
+| popPK | Zandvliet_2005 | relevant | 6 | 2 | The study models theobromine as a metabolite in a population PK model, but the specific numeric parameter values for theobromine (CL, V, etc.) are not explicitly listed in the provided evidence, only general model details and caffeine-specific parameters are given. |
 | PD | Zandvliet_2005 | not_relevant | 0 | 0 | The paper focuses on the population pharmacokinetics of caffeine and its metabolites, with no mention of pharmacodynamic modeling or exposure-response relationships. |
-| PGx | Zhang_2024 | not_relevant | 2 | 0 | The paper discusses coffee metabolism and mentions genetic polymorphism as a potential factor for individual differences, but it does not report specific pharmacogenomic effects on the PK or PD parameters of theobromine. |
-| popPK | Zhang_2026 | irrelevant | 0 | 0 | The study focuses on purine metabolism and uric acid in AKI/CKD models, not the pharmacokinetics of theobromine. |
+| PGx | Zhang_2024 | not_relevant | 2 | 0 | The text mentions genetic polymorphism as a general factor for variability in coffee metabolism, but it does not report specific gene variants affecting the PK/PD of theobromine. |
+| popPK | Zhang_2026 | irrelevant | 0 | 0 | The study focuses on purine metabolism and uric acid levels in AKI/CKD models, with no report of theobromine pharmacokinetic parameters. |
 | PD | Zhang_2026 | not_relevant | 0 | 0 | The paper focuses on purine metabolism and uric acid in AKI-to-CKD transition and does not report any pharmacodynamic or exposure-response data for theobromine. |
-| popPK | Zhao_2020 | irrelevant | 0 | 0 | The study is a mechanistic/in-vitro investigation of Notum inhibition where theobromine is only a negative control, with no pharmacokinetic parameters reported. |
+| popPK | Zhao_2020 | irrelevant | 0 | 0 | The study is a mechanistic structural biology and enzymology paper regarding Notum inhibition, where theobromine is mentioned only as a metabolite that does not inhibit the enzyme, providing no pharmacokinetic data for theobromine. |
 | PD | Zhao_2020 | not_relevant | 0 | 0 | The paper explicitly states that theobromine does not inhibit Notum activity, and no numeric PD parameters or dose-response curves are reported for it. |
 | popPK | Zhao_2023 | irrelevant | 0 | 0 | The study is a cross-sectional epidemiological analysis of dietary intake and cognitive performance, not a pharmacokinetic study, and contains no PK parameters. |
 | PD | Zhao_2023 | not_relevant | 2 | 1 | The study is a cross-sectional epidemiological analysis of dietary intake and cognitive outcomes, not a pharmacodynamic study measuring drug concentration or dose-response with numeric PD parameters like Emax or EC50. |
 | popPK | Zhou_2025 | irrelevant | 1 | 2 | The study is an epidemiological analysis of dietary intake and periodontitis, not a pharmacokinetic study, and the only PK values mentioned (half-life, clearance) are cited from a reference rather than derived from the study's own data. |
 | PD | Zhou_2025 | not_relevant | 2 | 1 | The study is a cross-sectional epidemiological analysis of dietary intake (dose) and disease prevalence (outcome) using logistic regression, lacking any pharmacokinetic data, concentration-effect modeling, or specific PD parameters like Emax or EC50. |
-| popPK | deVries_2019 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of amantadine, not theobromine. |
+| popPK | deVries_2019 | irrelevant | 0 | 0 | The paper investigates the pharmacokinetics of amantadine, not theobromine. |
 | PD | deVries_2019 | not_relevant | 0 | 0 | The paper focuses on the pharmacokinetics of amantadine in renal impairment and does not report any pharmacodynamic or exposure-response relationship for theobromine. |
 | popPK | de_1988 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of mitochondrial function, not a pharmacokinetic study, and reports no disposition parameters for theobromine. |
-| PGx | Środa-Pomianek_2019 | not_relevant | 0 | 0 | The paper investigates the pharmacodynamic interaction of theobromine with a phenothiazine derivative in cancer cells, but does not report any pharmacogenomic effects (gene variants) on the PK or PD of theobromine. |
+| PGx | Środa-Pomianek_2019 | not_relevant | 0 | 0 | The paper investigates the chemosensitization of cancer cells by theobromine and does not report any pharmacogenomic effects on its pharmacokinetic or pharmacodynamic parameters. |
 
 ---
 <sub>Generated by `docs.py` (scholarv2)</sub>

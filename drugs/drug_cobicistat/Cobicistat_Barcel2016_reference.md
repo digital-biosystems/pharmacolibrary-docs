@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;J05A&quot;,&quot;href&quot;:&quot;atc/J05A.md&quot;},{&quot;label&quot;:&quot;cobicistat&quot;,&quot;href&quot;:&quot;drugs/drug_cobicistat/&quot;},{&quot;label&quot;:&quot;Barcel\u00f3_2016 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Cobicistat_Barcel2016_reference&quot;,&quot;label&quot;:&quot;Barcel\u00f3_2016_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cobicistat/Cobicistat_Barcel2016_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Cobicistat_Barcel2016_reference&quot;,&quot;label&quot;:&quot;Barcel\u00f3_2016_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cobicistat/Cobicistat_Barcel2016_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # cobicistat — `Cobicistat_Barcel2016_reference`
 
-> ## <span class="pk-badge pk-badge--green">extracted</span>
+> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -15,16 +15,22 @@
 
 **Model:** A simulatable model was generated — see the **Models** and **Simulation** tabs.
 
-> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+### Reviewer guidance
 
-> **Dose compound ≠ measured compound:** dosed `elvitegravir/cobicistat`, measured `cobicistat`.
+**Cobicistat clearance 7.6 L/h and volume 61 L are reported, but bioavailability and lag time lack estimates.**
+
+The abstract provides values for clearance and volume of distribution but omits explicit estimates for bioavailability and lag time. Consequently, library placeholders were applied for these missing parameters rather than using paper-derived values. The abstract-only source limited the extraction to summary statistics without a full model fit. Extracted — cobicistat: CL 7.6 L/h, V 61 L, kabs 0.306 h−1.
+
+<sub>reviewed by qwen3.8-27b</sub>
+
+> ⚠️ **STALE** — review status `needs_review` (reviewed 2026-10-07 14:19:57.060058+00:00) predates the upstream re-run (2026-10-07 15:26:21.881148+00:00). Current validate status: `extracted`.
 
 ## Citation
 Barceló C et al., Population pharmacokinetic analysis of…, The Journal of antimicrobia… (2016)
   ·  DOI: [10.1093/jac/dkw050](https://doi.org/10.1093/jac/dkw050)
 
 ## Model component
-<dbs-pgx drug="cobicistat" model-id="Cobicistat_Barcel2016_reference" status="extracted" stale="false" population="HIV-1-infected individuals" measured-compound="cobicistat" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<dbs-pgx drug="cobicistat" model-id="Cobicistat_Barcel2016_reference" status="extracted" stale="true" population="HIV-1-infected adults" measured-compound="cobicistat" parameterization="mechanistic" topology="parent_metabolite"></dbs-pgx>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 3 extracted.
@@ -34,9 +40,9 @@ Barceló C et al., Population pharmacokinetic analysis of…, The Journal of ant
 ## Parameters
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| Clearance with between-subject variability | `Q22` · CL | 7.6 | L/h | 2.111111111111111e-06 | [l] / [h] | not captured | llm_corrected (0.6) | Barceló_2016:abstract, Barceló_2016:abstract | — | not captured |
+| Clearance | `Q22` · CL | 7.6 | L/h | 2.111111111111111e-06 | [l] / [h] | not captured | exact (1.0) | Barceló_2016:abstract, Barceló_2016:abstract | — | not captured |
 | volume of distribution | `Q61` · V | 61 | L | 0.061 | [l] | not captured | exact (1.0) | Barceló_2016:abstract, Barceló_2016:abstract | — | not captured |
-| The absorption rate constant | `Q49` · kabs | 0.306 | h−1 | 8.499999999999999e-05 | 1/h | not captured | review_gapfill (0.7) | Courlet_2021:review | — | not captured |
+| absorption rate constant | `Q49` · kabs | 0.306 | h−1 | 8.499999999999999e-05 | 1/h | not captured | review_gapfill (0.7) | Courlet_2021:review | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -49,14 +55,21 @@ Barceló C et al., Population pharmacokinetic analysis of…, The Journal of ant
 - `defaulted_parameters`: ['F', 'Tlag']
 
 **Interpretation flags:**
+- unit_dimension_mismatch: 'elvitegravir clearance' → Q22 (unit 'dimensionless' vs ontology '[length] ** 3 / [time]') — route to review
+- dropped duplicate Q22 ('elvitegravir clearance', value 35) — already have one for this compound
+- unit_dimension_mismatch: 'cobicistat clearance' → Q22 (unit 'dimensionless' vs ontology '[length] ** 3 / [time]') — route to review
+- dropped duplicate Q22 ('cobicistat clearance', value 47) — already have one for this compound
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=cobicistat
+- topology: transfer parameter unlinked (Q100) — add Kfm/formation-rate/rate-constant to the ontology; routing to review
+- status held at route_to_review — not promoted
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
-- skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
-- skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
+- skipped review gap-fill of V2: primary is PARENT_METABOLITE (peripheral family needs ≥2C)
+- skipped review gap-fill of Q: primary is PARENT_METABOLITE (peripheral family needs ≥2C)
 - gap-filled Q49 (kabs) from Courlet_2021's review values (primary lacked it)
+- engineer: parent → metabolite not buildable on PK_3M_9C (None) — the measured compound's 1-compartment model instead
 
 **Extraction notes:**
-- no GROBID TEI available — transcribed from abstract in Barceló_2016_metadata.yaml (4 record(s)); values are summary statistics, not a fitted model
+- no GROBID TEI available — transcribed from abstract in Barceló_2016_metadata.yaml (7 record(s)); values are summary statistics, not a fitted model
 
 ## Validation
 
@@ -75,6 +88,17 @@ Barceló C et al., Population pharmacokinetic analysis of…, The Journal of ant
 | C9_phys_window_Q22 | pass | clearance within physiological range | 7.6 L/h | not captured | not captured | ['Barceló_2016:abstract', 'Barceló_2016:abstract'] |
 | C9_phys_window_Q61 | pass | volume within physiological range | 61 L | not captured | not captured | ['Barceló_2016:abstract', 'Barceló_2016:abstract'] |
 
+**Reviewer per-scenario checks:**
+
+| check | scenario | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|---|
+| T0_analyte_identity | not captured | pass | not captured | not captured | not captured | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | not captured | skipped | not captured | not captured | not captured | no covariate effects in record |
+| T3_output_variable | not captured | pass | C_central (measured=cobicistat) | central.C | not captured | output must be the measured/analyte compartment |
+| T3_param_coverage | not captured | pass | 3 scholar param(s) emitted or defaulted | 3 covered | not captured | all structural parameters accounted for |
+| T3_topology_template | not captured | pass | 1C → PK_1C* | PK_1C_enteral | not captured | engineer template must match the scholar topology |
+| T6_deviations | not captured | fail | not captured | defaulted_parameters: not acceptable | not captured | LLM adjudication → deterministic rule |
+
 <details class="legend">
 <summary>Check legend — what each column means</summary>
 <table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>check</code></td><td>the check id. C0_has_structural_params = at least one numeric structural parameter; C0b_disposition_core = a volume OR a clearance/elimination term (neither means an exposure/outcome paper, not popPK — rejected); C0c_disposition_complete = BOTH a volume AND a clearance/elimination term, which is what the engineer needs to build (one without the other routes to review, never to the engineer); C1_half_life(_beta) = reported half-life against V and CL; C2_reference = covariate scenarios are sign-plausible; C3_cl_dose_auc = CL against dose/AUC; C4_auc_closed_form = AUC recomputed in closed form; C5_dimension_&lt;Qcode&gt; = the parameter's units carry the dimension its Q-code requires.</td></tr><tr><td><code>status</code></td><td>pass, fail, or skipped. A skipped check had nothing to compare — the paper did not report the input it needs — and is not evidence against the record. The scholar table lists only pass and fail; the reviewer table also shows skipped, with the reason in note.</td></tr><tr><td><code>expected</code></td><td>the value the check required, from the paper or from the ontology.</td></tr><tr><td><code>obtained</code></td><td>what the record actually yields.</td></tr><tr><td><code>ratio</code></td><td>obtained / expected, where the check is a numeric comparison.</td></tr><tr><td><code>tol</code></td><td>the tolerance the ratio had to fall within to pass.</td></tr><tr><td><code>source</code></td><td>the artifact the expected value was taken from.</td></tr><tr><td><code>scenario</code></td><td>reviewer table only — the covariate scenario the check was run under.</td></tr><tr><td><code>note</code></td><td>why a check was skipped, or how it was judged.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>the field is absent from the KB artifact — nothing was recorded. This is NOT the same as zero or empty: the value is unknown, not measured to be nothing.</td></tr><tr><td><code>—</code></td><td>deliberately not shown: the column does not apply to this row.</td></tr><tr><td><code>not verified</code></td><td>the record is not in an accepted state (see the badge and the note above the table); the numbers are shown as extracted, not endorsed.</td></tr></tbody></table>
@@ -83,6 +107,9 @@ Barceló C et al., Population pharmacokinetic analysis of…, The Journal of ant
 ## Raw artifacts
 
 - scholar stages: `../../../knowledgebase/drugs/drug_cobicistat/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Barceló_2016` / `Barceló_2016::reference`)
+- model: `../../../knowledgebase/drugs/drug_cobicistat/models/modelica/Cobicistat_Barcel2016_reference.mo`
+- deviation: `../../../knowledgebase/drugs/drug_cobicistat/models/modelica/Cobicistat_Barcel2016_reference.deviation.json`
+- sim: `../../../knowledgebase/drugs/drug_cobicistat/models/modelica/Cobicistat_Barcel2016_reference.json`
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -91,7 +118,7 @@ Barceló C et al., Population pharmacokinetic analysis of…, The Journal of ant
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_cobicistat/Cobicistat_Barcel2016_reference/Cobicistat_Barcel2016_reference_modelica.zip" download>Cobicistat_Barcel2016_reference_modelica.zip</a> <span class="pk-size">(4.2 kB)</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_cobicistat/Cobicistat_Barcel2016_reference/Cobicistat_Barcel2016_reference_modelica.zip" download>Cobicistat_Barcel2016_reference_modelica.zip</a> <span class="pk-size">(4.5 kB)</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_cobicistat/Cobicistat_Barcel2016_reference/Cobicistat_Barcel2016_reference_fmi.zip" download>Cobicistat_Barcel2016_reference_fmi.zip</a> <span class="pk-size">(4.2 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_cobicistat/Cobicistat_Barcel2016_reference/Cobicistat_Barcel2016_reference_matlab.zip" download>Cobicistat_Barcel2016_reference_matlab.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_cobicistat/Cobicistat_Barcel2016_reference/Cobicistat_Barcel2016_reference_matlab_simbio.zip" download>Cobicistat_Barcel2016_reference_matlab_simbio.zip</a> <span class="pk-size">(2.8 kB)</span></td></tr>
@@ -113,4 +140,4 @@ Barceló C et al., Population pharmacokinetic analysis of…, The Journal of ant
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 12:49 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 15:26 UTC</sub>

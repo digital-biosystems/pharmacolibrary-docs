@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;M01A&quot;,&quot;href&quot;:&quot;atc/M01A.md&quot;},{&quot;label&quot;:&quot;meloxicam&quot;,&quot;href&quot;:&quot;drugs/drug_meloxicam/&quot;},{&quot;label&quot;:&quot;Meineke_2003 \u00b7 population_estimate&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Meloxicam_Lehr2010_reference&quot;,&quot;label&quot;:&quot;Lehr_2010_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_meloxicam/Meloxicam_Lehr2010_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Meloxicam_Aoyama2017_reference&quot;,&quot;label&quot;:&quot;Aoyama_2017_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_meloxicam/Meloxicam_Aoyama2017_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Meloxicam_Lehr2010_reference&quot;,&quot;label&quot;:&quot;Lehr_2010_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_meloxicam/Meloxicam_Lehr2010_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # meloxicam — `Meloxicam_Meineke2003_population_estimate`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -17,29 +17,34 @@
 
 ### Reviewer guidance
 
+**This paper's disposition core is incomplete; q has no unit.**
+
+A volume and a clearance/elimination estimate from this paper are needed to build its model. Review values from other papers (Cagnardi_2017, Uslu_2025) cannot stand in for this paper's evidence. Without a unit the value cannot be converted, so the model cannot use it. A reported unit could not be converted (Q), so that value has no SI equivalent. Extracted — meloxicam: Q 0.919 F1 bioav., CL 0.17 L/h/kg, V 146 mL/kg.
+
 Independently confirmed by `gpt-oss:120b`.
 
-> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+<sub>reviewed by rule template (no LLM)</sub>
+
+> ⚠️ **STALE** — review status `needs_review` (reviewed 2026-10-07 02:22:02.979220+00:00) predates the upstream re-run (2026-10-07 14:49:51.152914+00:00). Current validate status: `rejected`.
 
 ## Citation
 Meineke I et al., Population pharmacokinetic analysis of…, British journal of clinical… (2003)
   ·  DOI: [10.1046/j.1365-2125.2003.01753.x](https://doi.org/10.1046/j.1365-2125.2003.01753.x)
 
 ## Model component
-<dbs-pgx drug="meloxicam" model-id="Meloxicam_Meineke2003_population_estimate" status="needs_review" stale="false" population="rheumatoid arthritis patients" measured-compound="meloxicam" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<dbs-pgx drug="meloxicam" model-id="Meloxicam_Meineke2003_population_estimate" status="rejected" stale="true" population="rheumatoid arthritis patients" measured-compound="meloxicam" parameterization="mechanistic" topology="1C"></dbs-pgx>
 
 **Model structure:** 1-compartment; no model was built for this record.  
-**Parameters:** 3 extracted.
+**Parameters:** 2 extracted.
 
 **Parameterization:** mechanistic.
 
 ## Parameters
-> ⚠️ This record is not accepted (current status `needs_review`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
+> ⚠️ This record is not accepted (current status `rejected`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| Q 5 (F1 bioav.) | `Q30` · Q | 0.9194 | F1 bioav. | not captured | [bioav] · [f1] | not captured | llm (0.6) | Meineke_2003_table_3:row4:col1 | — | not captured |
-| Cl T (L/h/kg) | `Q22` · CL | 0.17 | L/h/kg | 3.3055555555555558e-06 | L/h | not captured | review_gapfill (0.7) | Uslu_2025:review | — | not captured |
+| Q 6 (CL, age) | `Q22` · CL | -0.5169 | CL, age | not captured | [cl] | not captured | llm (0.6) | Meineke_2003_table_3:row5:col1 | — | not captured |
 | V z | `Q61` · V | 146.16 | mL/kg | 0.0102312 | L | not captured | review_gapfill (0.7) | Cagnardi_2017:review | — | not captured |
 
 <details class="legend">
@@ -50,19 +55,19 @@ Meineke I et al., Population pharmacokinetic analysis of…, British journal of 
 ## Departures & gaps
 
 **Interpretation flags:**
-- unit_dimension_unknown: 'F1 bioav.' (Q)
-- routed 'Q 6 (CL, age)' → Q314 (omega_cov) to covariance — variability estimate, not a structural parameter
+- dropped unlinked row (NIL): 'Q 5 (F1 bioav.)' — extend the ontology if this is a real PK parameter (source ['Meineke_2003_table_3:row4:col1'])
+- unit_dimension_unknown: 'CL, age' (CL)
 - dropped unlinked row (NIL): 'Sulphasalazine' — extend the ontology if this is a real PK parameter (source ['Meineke_2003_table_3:row7:col1'])
 - dropped unlinked row (NIL): 'Gold' — extend the ontology if this is a real PK parameter (source ['Meineke_2003_table_3:row8:col1'])
 - dropped unlinked row (NIL): 'Corticosteroids' — extend the ontology if this is a real PK parameter (source ['Meineke_2003_table_3:row9:col1'])
+- table mostly unlinked (4/5 table-cell rows NIL) — likely the wrong table was located, not 1 genuinely-missing ontology parameter(s); route_to_review instead of building a model from the residual linked cell(s)
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=meloxicam
 - held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
-- structure disagreement: deterministic 1C vs LLM 2C — review compartment count
 - status held at route_to_review — not promoted
 - population split: 'population estimate' subgroup of Meineke_2003 (paper reports 3 populations: nonmem estimate, population estimate, winbugs estimate)
-- gap-filled Q22 (CL) from Uslu_2025's review values (primary lacked it)
 - gap-filled Q61 (V) from Cagnardi_2017's review values (primary lacked it)
 - skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
+- skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
 
 **Extraction notes:**
 - transposed table tab_1: parameters were across the columns, populations/subgroups down the first column — transposed for parsing
@@ -101,13 +106,13 @@ _Every reader agrees on every compared field of this record._
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
 | C0_has_structural_params | pass | not captured | 1 | not captured | not captured | not captured |
+| C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | fail | not captured | not captured | not captured | not captured | not captured |
-| C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Uslu_2025:review'] |
+| C2_base_sign_Q22 | fail | not captured | -0.5169 | not captured | not captured | not captured |
 | C5_dimension_Q61 | pass | [length] ** 3 | not captured | not captured | not captured | ['Cagnardi_2017:review'] |
-| C5_unit_missing_Q30 | fail | [length] ** 3 / [time] | F1 bioav. | not captured | not captured | ['Meineke_2003_table_3:row4:col1'] |
-| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 0.17 | not captured | not captured | ['Uslu_2025:review'] |
+| C5_unit_missing_Q22 | fail | [length] ** 3 / [time] | CL, age | not captured | not captured | ['Meineke_2003_table_3:row5:col1'] |
+| C6_cl_magnitude | pass | &lt;= 90.0 L/h | -0.5169 | not captured | not captured | ['Meineke_2003_table_3:row5:col1'] |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
-| C9_phys_window_Q22 | pass | clearance within physiological range | 11.9 L/h | not captured | not captured | ['Uslu_2025:review'] |
 | C9_phys_window_Q61 | pass | volume within physiological range | 10.2 L | not captured | not captured | ['Cagnardi_2017:review'] |
 
 <details class="legend">
@@ -122,19 +127,9 @@ _Every reader agrees on every compared field of this record._
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
-## Downloadable models
+## Models
 
-<div class="pk-models-grid"><div class="pk-models-table">
-<table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-</tbody></table>
-<p>No bundles have been generated for this record yet. When the engineer emits them they appear here automatically — this page reports what is on disk and generates nothing itself.</p>
-</div></div>
+<p>No downloads: this record is <b>rejected</b>, so it is not published as a model. Any archives generated for it before the verdict have been removed — a download outlives the page that explains it.</p>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
@@ -143,4 +138,4 @@ _No web simulator for this record: its structure has no shared WebAssembly templ
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 02:13 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 14:49 UTC</sub>

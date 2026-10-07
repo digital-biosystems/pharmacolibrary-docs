@@ -1,0 +1,32 @@
+{
+ "dose_source": "library default",
+ "model_id": "Potassium_Jiang2024_reference",
+ "molar_masses": {
+  "central.C": 0.0390983
+ },
+ "note": "Values for the shared PK_2C.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "parameters": {
+  "Cl": 1.4944444444444444e-05,
+  "F": 1.0,
+  "MM": 0.0390983,
+  "VdPerKg": 0.00011814285714285713,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 1e-05,
+  "k12": 0.0016189708450893461,
+  "k21": 0.00029361598440545814,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 660.0000000662121
+ },
+ "reference_peaks": {
+  "central.C": 3.702620862137812e-05
+ },
+ "stop_time": 86400.0,
+ "template": "PK_2C",
+ "template_fmu": "PK_2C.fmu"
+}

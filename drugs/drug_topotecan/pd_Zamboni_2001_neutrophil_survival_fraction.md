@@ -16,15 +16,19 @@
 
 ## What this record describes
 
-**As extracted:** Topotecan lactone drives neutrophil survival fraction (the model form was not identified).
+**As extracted:** Topotecan lactone drives neutrophil survival fraction (inhibition; the model form was not identified).
 
 **Model:** No model was generated from this record.
+
+> The record identifies topotecan lactone as the driver and neutrophil survival fraction as the response, but the paper excerpts do not specify whether concentration or dose drives the response or describe a mechanism. No potency or rate values are provided.
+>
+> <sub>in the paper's terms — summarised by gpt-6-luna from the paper's text; not checked by a person</sub>
 
 - **paper:** `Zamboni_2001`
 - **model family:** `unknown`
 - **driver:** `not_resolved`
-- **tier:** descriptive
-- **effect:** unknown/unknown
+- **tier:** population
+- **effect:** inhibition/unknown
 
 ## Citation
 Zamboni WC et al., Pharmacodynamic model of topotecan-indu…, Clinical cancer research :… (2001)

@@ -18,7 +18,7 @@ Brincidofovir is an antiviral drug used to treat smallpox. It is an approved med
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 14:19 | 1:07 | 0/0/0 | 2/1/0 | 0/0/0 | 67,357/2,604 | einfracz / qwen3.8-27b | 4 | 0/4 | 4/0 | 0 |
+| 2026-10-07 15:55 | 0:31 | 0/0/0 | 1/0/0 | 0/0/0 | 49,655/1,158 | ollama / glm-5.3-flash | 4 | 0/4 | 4/0 | 0 |
 
 ## popPK records
 
@@ -28,14 +28,7 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Bua_2019_B19V_replication](drugs/drug_brincidofovir/pd_Bua_2019_B19V_replication.md) | B19V replication ← Brincidofovir · direct Emax (saturable) effect | — | Bua G et al., Antiviral activity of brincidofovir on…, Antiviral research (2019) | [10.1016/j.antiviral.2018.12.003](https://doi.org/10.1016/j.antiviral.2018.12.003) |
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Bua_2019_Cell_viability](drugs/drug_brincidofovir/pd_Bua_2019_Cell_viability.md) | Cell viability ← Brincidofovir · direct Emax (saturable) effect | — | Bua G et al., Antiviral activity of brincidofovir on…, Antiviral research (2019) | [10.1016/j.antiviral.2018.12.003](https://doi.org/10.1016/j.antiviral.2018.12.003) |
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Olson_2014_virus_replication](drugs/drug_brincidofovir/pd_Olson_2014_virus_replication.md) | virus replication ← brincidofovir · direct Emax (saturable) effect | — | Olson VA et al., In vitro efficacy of brincidofovir agai…, Antimicrobial agents and ch… (2014) | [10.1128/AAC.02814-14](https://doi.org/10.1128/AAC.02814-14) |
-| <span class="pk-badge pk-badge--red">rejected</span> | [Zhang_2025_EC50](drugs/drug_brincidofovir/pd_Zhang_2025_EC50.md) | Anti-human adenovirus activity (hAdV C2) ← brincidofovir · direct Emax (saturable) effect | — | Zhang Y et al., Novel derivatives of brincidofovir and…, Signal transduction and tar… (2025) | [10.1038/s41392-025-02207-w](https://doi.org/10.1038/s41392-025-02207-w) |
-| <span class="pk-badge pk-badge--red">rejected</span> | [Zhang_2025_EC50_2](drugs/drug_brincidofovir/pd_Zhang_2025_EC50_2.md) | Anti-human adenovirus activity (hAdV B21) ← brincidofovir · direct Emax (saturable) effect | — | Zhang Y et al., Novel derivatives of brincidofovir and…, Signal transduction and tar… (2025) | [10.1038/s41392-025-02207-w](https://doi.org/10.1038/s41392-025-02207-w) |
-| <span class="pk-badge pk-badge--red">rejected</span> | [Zhang_2025_EC50_EC90](drugs/drug_brincidofovir/pd_Zhang_2025_EC50_EC90.md) | Anti-orthopoxvirus activity (Vaccinia Tiantan strain) ← brincidofovir · direct Emax (saturable) effect | — | Zhang Y et al., Novel derivatives of brincidofovir and…, Signal transduction and tar… (2025) | [10.1038/s41392-025-02207-w](https://doi.org/10.1038/s41392-025-02207-w) |
-| <span class="pk-badge pk-badge--red">rejected</span> | [Zhang_2025_EC50_EC90_2](drugs/drug_brincidofovir/pd_Zhang_2025_EC50_EC90_2.md) | Anti-MPXV activity ← brincidofovir · direct Emax (saturable) effect | — | Zhang Y et al., Novel derivatives of brincidofovir and…, Signal transduction and tar… (2025) | [10.1038/s41392-025-02207-w](https://doi.org/10.1038/s41392-025-02207-w) |
-| <span class="pk-badge pk-badge--red">rejected</span> | [Zhang_2025_EC50_EC90_3](drugs/drug_brincidofovir/pd_Zhang_2025_EC50_EC90_3.md) | Anti-HSV-1 activity ← brincidofovir · direct Emax (saturable) effect | — | Zhang Y et al., Novel derivatives of brincidofovir and…, Signal transduction and tar… (2025) | [10.1038/s41392-025-02207-w](https://doi.org/10.1038/s41392-025-02207-w) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Bua_2019_inhibition_of_B19V_replication](drugs/drug_brincidofovir/pd_Bua_2019_inhibition_of_B19V_replication.md) | inhibition of B19V replication ← brincidofovir · direct Emax (saturable) effect | — | Bua G et al., Antiviral activity of brincidofovir on…, Antiviral research (2019) | [10.1016/j.antiviral.2018.12.003](https://doi.org/10.1016/j.antiviral.2018.12.003) |
 
 ## ADME sites
 
@@ -75,17 +68,18 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Bravo_2011 | irrelevant | 0 | 0 | The study focuses on the antiviral efficacy of HDP-cidofovir in guinea pigs and does not report quantitative pharmacokinetic parameters for brincidofovir. |
-| popPK | Bua_2019 | irrelevant | 0 | 0 | This is an in-vitro antiviral activity study reporting EC50/CC50 values, not a pharmacokinetic study with disposition parameters for brincidofovir. |
-| popPK | Chamberlain_2019 | irrelevant | 0 | 0 | The paper is a mechanistic study of antiviral activity and resistance in adenovirus, containing no pharmacokinetic parameters or data for the human or animal subject. |
-| popPK | Chemaly_2019 | irrelevant | 0 | 0 | The paper is an in-vitro systematic review reporting antiviral efficacy (EC50) rather than pharmacokinetic disposition parameters. |
-| popPK | Chen_2026 | irrelevant | 0 | 0 | The paper is a review of monkeypox virus (MPXV) and mentions brincidofovir only as a potential therapeutic agent with scanty evidence, without providing any pharmacokinetic parameters or data for it. |
-| popPK | Gosert_2011 | irrelevant | 0 | 0 | The paper reports in-vitro antiviral efficacy (EC50/CC50) of brincidofovir (CMX001) against polyomavirus JC, not pharmacokinetic disposition parameters (CL, V, t1/2). |
-| popPK | Higashi-Kuwata_2025 | irrelevant | 0 | 0 | The paper is an in-vitro antiviral efficacy study focusing on EC50 values and cytotoxicity, not a pharmacokinetic study reporting disposition parameters like clearance or volume. |
-| popPK | Olson_2014 | irrelevant | 0 | 0 | The study reports in vitro efficacy (EC50) data, not quantitative pharmacokinetic disposition parameters. |
-| popPK | Sudarmaji_2022 | irrelevant | 1 | 0 | This is a systematic review of preclinical monkeypox studies; while it briefly mentions brincidofovir plasma concentrations falling below limits of quantification, it does not report quantitative population PK parameters like clearance or volume for brincidofovir. |
-| popPK | Tylden_2015 | irrelevant | 0 | 0 | The paper is an in-vitro mechanistic study investigating antiviral efficacy and cytotoxicity, containing no pharmacokinetic parameters (CL, V, Ka, T1/2). |
-| popPK | Valiaeva_2006 | irrelevant | 0 | 0 | The paper discusses in-vitro synthesis and antiviral evaluation of cidofovir analogs and other nucleoside phosphonates, not the pharmacokinetics of brincidofovir. |
+| popPK | Bravo_2011 | irrelevant | 1 | 0 | Efficacy study of HDP-cidofovir (brincidofovir) in guinea pigs with no PK disposition parameters reported; only EC50 and dosing regimens appear. |
+| popPK | Bua_2019 | irrelevant | 0 | 0 | In-vitro antiviral efficacy study (EC50/CC50) with no pharmacokinetic disposition parameters for brincidofovir. |
+| popPK | Chamberlain_2019 | irrelevant | 0 | 0 | This is an in-vitro mechanistic/virology study of cidofovir diphosphate inhibition of adenovirus DNA polymerase, with no pharmacokinetic disposition parameters for brincidofovir. |
+| popPK | Chemaly_2019 | irrelevant | 0 | 0 | This is an in vitro antiviral activity review reporting EC50 values, not pharmacokinetic disposition parameters for brincidofovir. |
+| popPK | Chen_2026 | irrelevant | 0 | 0 | This is a narrative review of monkeypox virus immunity, vaccines, and diagnostics; brincidofovir is only mentioned as a potential antiviral with no PK parameters reported. |
+| popPK | Gosert_2011 | irrelevant | 0 | 0 | In-vitro antiviral efficacy study (EC50/CC50) with no pharmacokinetic disposition parameters for brincidofovir. |
+| popPK | Higashi-Kuwata_2025 | irrelevant | 0 | 0 | In-vitro antiviral/cytotoxicity study (EC50, CC50) with brincidofovir as a test compound; no PK disposition parameters reported. |
+| popPK | Olson_2014 | irrelevant | 0 | 0 | In vitro efficacy study reporting EC50 only, no PK disposition parameters for brincidofovir. |
+| popPK | Sudarmaji_2022 | irrelevant | 1 | 1 | Systematic review of monkeypox preclinical efficacy studies; brincidofovir PK data (Cmax, Tmax) are only described narratively from a cited study, with no CL/V/model parameters and no numeric PK table present. |
+| popPK | Tylden_2015 | irrelevant | 0 | 0 | In vitro antiviral potency study (EC50/EC90) with no PK disposition parameters for brincidofovir. |
+| popPK | Valiaeva_2006 | irrelevant | 0 | 0 | In-vitro antiviral synthesis/efficacy study with no PK parameters for brincidofovir. |
+| popPK | Zhang_2025 | irrelevant | 2 | 1 | This is an antiviral efficacy/drug-discovery study; PK data (concentration-time profiles) are only shown in figures/supplementary material not provided, with no quantitative CL, V, or model parameters for brincidofovir. |
 
 ---
 <sub>Generated by `docs.py` (scholarv2)</sub>

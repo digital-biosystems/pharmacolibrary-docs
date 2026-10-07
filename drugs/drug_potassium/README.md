@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C03A&quot;,&quot;href&quot;:&quot;atc/C03A.md&quot;},{&quot;label&quot;:&quot;Potassium&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Potassium_Comisar2025_reference&quot;,&quot;label&quot;:&quot;Comisar_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_potassium/Potassium_Comisar2025_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Potassium_Ji2025_reference&quot;,&quot;label&quot;:&quot;Ji_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_potassium/Potassium_Ji2025_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Potassium_Jiang2024_reference&quot;,&quot;label&quot;:&quot;Jiang_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_potassium/Potassium_Jiang2024_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Potassium_Li2022v2_reference&quot;,&quot;label&quot;:&quot;Li_2022_2_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_potassium/Potassium_Li2022v2_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Potassium_Sabo2026_reference&quot;,&quot;label&quot;:&quot;Sabo_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_potassium/Potassium_Sabo2026_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Potassium_Serkland2026_reference&quot;,&quot;label&quot;:&quot;Serkland_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_potassium/Potassium_Serkland2026_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Potassium_Siebinga2024_reference&quot;,&quot;label&quot;:&quot;Siebinga_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_potassium/Potassium_Siebinga2024_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Potassium_Wang2023v2_reference&quot;,&quot;label&quot;:&quot;Wang_2023_2_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_potassium/Potassium_Wang2023v2_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Potassium_Zhu2026_reference&quot;,&quot;label&quot;:&quot;Zhu_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_potassium/Potassium_Zhu2026_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Potassium_van2023_reference&quot;,&quot;label&quot;:&quot;van_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_potassium/Potassium_van2023_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 # Potassium
 
@@ -14,15 +15,37 @@ Potassium is used to treat or prevent low potassium levels in the blood, often i
 
 <small>Summary written by `glm-5.3-flash` from [Wikidata Q703](https://www.wikidata.org/wiki/Q703) and the WHO ATC classification; not checked by a person.</small>
 
+## Molecules and molar masses
+
+> The molar mass each model uses to convert mass to molar concentration and to form a metabolite molecule for molecule. Looked up, never estimated: DrugBank for the drug, the paper's own value or the PubChem entry matched to the paper's name for a metabolite.
+
+| molecule | role | molar mass (g/mol) | formula | source | PubChem | records |
+|---|---|---|---|---|---|---|
+| potassium | parent | 39.0983 | K | DrugBank | — | Youn_2024 |
+
 ## Extraction summary
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-06 17:32 | 30:09 | 0/0/0 | 0/0/0 | 0/0/6 | 994,566/35,110 | ollama / qwen3.8:27b-mtp-q8_0 | 94 | 27/80 | 86/8 | 0 |
+| 2026-10-07 16:01 | 27:48 | 10/3/0 | 0/0/0 | 0/0/9 | 1,821,829/120,967 | einfracz / qwen3.8-27b | 103 | 27/89 | 95/8 | 0 |
 
 ## popPK records
 
-_not available_
+| status | detail | model | model structure | params | citation | doi |
+|---|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--green">extracted</span> | [Comisar_2025_reference](drugs/drug_potassium/Potassium_Comisar2025_reference.md) | ▶ model + simulator | 2-compartment, oral | 5 | Comisar CM et al., Population Pharmacokinetic Modeling of…, CPT: pharmacometrics & syst… (2025) | [10.1002/psp4.70051](https://doi.org/10.1002/psp4.70051) |
+| <span class="pk-badge pk-badge--green">extracted</span> | [Ji_2025_reference](drugs/drug_potassium/Potassium_Ji2025_reference.md) | ▶ model + simulator | 2-compartment, IV | 4 | Ji X-w et al., Population pharmacokinetics and pulmona…, Antimicrobial agents and ch… (2025) | [10.1128/aac.01065-24](https://doi.org/10.1128/aac.01065-24) |
+| <span class="pk-badge pk-badge--green">extracted</span> | [Jiang_2024_reference](drugs/drug_potassium/Potassium_Jiang2024_reference.md) | ▶ model + simulator | 2-compartment, IV | 4 | Jiang J et al., Population pharmacokinetic/pharmacodyna…, Journal of pharmacokinetics… (2024) | [10.1007/s10928-023-09882-8](https://doi.org/10.1007/s10928-023-09882-8) |
+| <span class="pk-badge pk-badge--green">extracted</span> | [Li_2022_2_reference](drugs/drug_potassium/Potassium_Li2022v2_reference.md) | ▶ model + simulator | 1-compartment, oral | 3 | Li Q et al., Population pharmacokinetic/pharmacodyna…, Frontiers in pharmacology (2022) | [10.3389/fphar.2022.966176](https://doi.org/10.3389/fphar.2022.966176) |
+| <span class="pk-badge pk-badge--green">extracted</span> | [Sabo_2026_reference](drugs/drug_potassium/Potassium_Sabo2026_reference.md) | ▶ model + simulator | 1-compartment, oral | 2 | Sabo AN et al., The Hydroxyurea Absorption Phenotype: A…, Pharmaceutics (2026) | [10.3390/pharmaceutics18060654](https://doi.org/10.3390/pharmaceutics18060654) |
+| <span class="pk-badge pk-badge--green">extracted</span> | [Serkland_2026_reference](drugs/drug_potassium/Potassium_Serkland2026_reference.md) | ▶ model + simulator | 2-compartment, IV | 4 | Serkland TT et al., Pharmacokinetic-Pharmacodynamic Modelli…, Clinical pharmacokinetics (2026) | [10.1007/s40262-026-01692-8](https://doi.org/10.1007/s40262-026-01692-8) |
+| <span class="pk-badge pk-badge--green">extracted</span> | [Siebinga_2024_reference](drugs/drug_potassium/Potassium_Siebinga2024_reference.md) | ▶ model + simulator | 1-compartment, IV | 2 | Siebinga H et al., Quantification of biochemical PSA dynam…, EJNMMI physics (2024) | [10.1186/s40658-024-00642-2](https://doi.org/10.1186/s40658-024-00642-2) |
+| <span class="pk-badge pk-badge--green">extracted</span> | [Wang_2023_2_reference](drugs/drug_potassium/Potassium_Wang2023v2_reference.md) | ▶ model + simulator | 2-compartment, oral | 5 | Wang K et al., Population Pharmacokinetic Analysis of…, Clinical pharmacokinetics (2023) | [10.1007/s40262-023-01286-8](https://doi.org/10.1007/s40262-023-01286-8) |
+| <span class="pk-badge pk-badge--green">extracted</span> | [Zhu_2026_reference](drugs/drug_potassium/Potassium_Zhu2026_reference.md) | ▶ model + simulator | 2-compartment, IV | 4 | Zhu J et al., From pharmacokinetics to precision dosi…, Frontiers in pharmacology (2026) | [10.3389/fphar.2026.1764590](https://doi.org/10.3389/fphar.2026.1764590) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from keyword rules on the title and abstract — no LLM answer yet).">mouse</span> | [van_2023_reference](drugs/drug_potassium/Potassium_van2023_reference.md) | ▶ model + simulator | 1-compartment, oral | 3 | van der Meijden A et al., Pharmacokinetic and pharmacodynamic pro…, The Journal of antimicrobia… (2023) | [10.1093/jac/dkad022](https://doi.org/10.1093/jac/dkad022) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span><br><sub>blocking: C9 clearance/volume outside physiological window (implausible magnitude — unit/…</sub><br><sub>route_to: `human_review`</sub> | [Fukamatsu_2026_reference](drugs/drug_potassium/Potassium_Fukamatsu2026_reference.md) | — | 1-compartment (no model) | 3 | Fukamatsu M et al., An ordinary differential equation-based…, The Journal of veterinary m… (2026) | [10.1292/jvms.26-0177](https://doi.org/10.1292/jvms.26-0177) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span><br><sub>blocking: C9 clearance/volume outside physiological window (implausible magnitude — unit/…</sub><br><sub>route_to: `human_review`</sub> | [Youn_2024_control](drugs/drug_potassium/Potassium_Youn2024_control.md) | — | 1-compartment (no model) | 7 | Youn JH et al., Kinetic Modeling of In Vivo K+ Distribu…, International journal of mo… (2024) | [10.3390/ijms25179664](https://doi.org/10.3390/ijms25179664) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span><br><sub>blocking: C9 clearance/volume outside physiological window (implausible magnitude — unit/…</sub><br><sub>route_to: `human_review`</sub> | [Youn_2024_k_deficient_diet](drugs/drug_potassium/Potassium_Youn2024_k_deficient_diet.md) | — | 1-compartment (no model) | 6 | Youn JH et al., Kinetic Modeling of In Vivo K+ Distribu…, International journal of mo… (2024) | [10.3390/ijms25179664](https://doi.org/10.3390/ijms25179664) |
 
 ## Pharmacogenomics (PGx)
 
@@ -30,10 +53,13 @@ _not available_
 |---|---|---|---|---|---|---|
 | <span class="pk-badge pk-badge--neutral" title="the paper links the gene to the drug but states no effect size on a model parameter, so it changes no model.">qualitative</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span> | **CYP3A5** | `Q27` · CL/F | metabolism | [Cai_2022](drugs/drug_potassium/pgx_Cai_2022_CYP3A5_Q27.md) | Cai XJ et al., Prospective population pharmacokinetic…, Frontiers in pharmacology (2022) | [10.3389/fphar.2022.1031969](https://doi.org/10.3389/fphar.2022.1031969) |
 | <span class="pk-badge pk-badge--neutral" title="the paper links the gene to the drug but states no effect size on a model parameter, so it changes no model.">qualitative</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span> | **ABCB1** | `Q34` · Css | transport | [Omran_2020](drugs/drug_potassium/pgx_Omran_2020_ABCB1_Q34.md) | Omran MM et al., Association of the Trough, Peak/Trough…, Frontiers in oncology (2020) | [10.3389/fonc.2020.01348](https://doi.org/10.3389/fonc.2020.01348) |
-| <span class="pk-badge pk-badge--neutral" title="the paper links the gene to the drug but states no effect size on a model parameter, so it changes no model.">qualitative</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.25). The first reading is what the record holds.">cross-check: partial</span> | **ABCG2** | `Q100` — no parameter target — an association/risk finding, not a parameter shift | transport | [Omran_2020](drugs/drug_potassium/pgx_Omran_2020_ABCG2_Q100.md) | Omran MM et al., Association of the Trough, Peak/Trough…, Frontiers in oncology (2020) | [10.3389/fonc.2020.01348](https://doi.org/10.3389/fonc.2020.01348) |
+| <span class="pk-badge pk-badge--neutral" title="the paper links the gene to the drug but states no effect size on a model parameter, so it changes no model.">qualitative</span> | **ABCG2** | `Q22` · CL | transport | [Omran_2020](drugs/drug_potassium/pgx_Omran_2020_ABCG2_Q22.md) | Omran MM et al., Association of the Trough, Peak/Trough…, Frontiers in oncology (2020) | [10.3389/fonc.2020.01348](https://doi.org/10.3389/fonc.2020.01348) |
 | <span class="pk-badge pk-badge--neutral" title="the paper links the gene to the drug but states no effect size on a model parameter, so it changes no model.">qualitative</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span> | **SLCO1B3** | `Q100` — no parameter target — an association/risk finding, not a parameter shift | transport | [Omran_2020](drugs/drug_potassium/pgx_Omran_2020_SLCO1B3_Q100.md) | Omran MM et al., Association of the Trough, Peak/Trough…, Frontiers in oncology (2020) | [10.3389/fonc.2020.01348](https://doi.org/10.3389/fonc.2020.01348) |
 | <span class="pk-badge pk-badge--neutral" title="the paper links the gene to the drug but states no effect size on a model parameter, so it changes no model.">qualitative</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.25). The first reading is what the record holds.">cross-check: partial</span> | **CYP2D6** | `Q100` — no parameter target — an association/risk finding, not a parameter shift | metabolism | [Pei_2016](drugs/drug_potassium/pgx_Pei_2016_CYP2D6_Q100.md) | Pei Q et al., Influences of CYP2D6*10 polymorphisms o…, Acta pharmacologica Sinica (2016) | [10.1038/aps.2016.96](https://doi.org/10.1038/aps.2016.96) |
-| <span class="pk-badge pk-badge--neutral" title="the paper links the gene to the drug but states no effect size on a model parameter, so it changes no model.">qualitative</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.25). The first reading is what the record holds.">cross-check: partial</span> | **CYP2C19** | `Q100` — no parameter target — an association/risk finding, not a parameter shift | formation | [Xu_2020](drugs/drug_potassium/pgx_Xu_2020_CYP2C19_Q100.md) | Xu RJ et al., Physiologically-Based Pharmacokinetic-P…, Frontiers in pharmacology (2020) | [10.3389/fphar.2020.593982](https://doi.org/10.3389/fphar.2020.593982) |
+| <span class="pk-badge pk-badge--neutral" title="the paper links the gene to the drug but states no effect size on a model parameter, so it changes no model.">qualitative</span> | **CYP2C19** | `Q27` · CL/F | metabolism | [Shin_2013](drugs/drug_potassium/pgx_Shin_2013_CYP2C19_Q27.md) | Shin JM et al., Pharmacokinetics and pharmacodynamics o…, Journal of neurogastroenter… (2013) | [10.5056/jnm.2013.19.1.25](https://doi.org/10.5056/jnm.2013.19.1.25) |
+| <span class="pk-badge pk-badge--neutral" title="the paper links the gene to the drug but states no effect size on a model parameter, so it changes no model.">qualitative</span> | **CYP3A4** | `Q27` · CL/F | metabolism | [Shin_2013](drugs/drug_potassium/pgx_Shin_2013_CYP3A4_Q27.md) | Shin JM et al., Pharmacokinetics and pharmacodynamics o…, Journal of neurogastroenter… (2013) | [10.5056/jnm.2013.19.1.25](https://doi.org/10.5056/jnm.2013.19.1.25) |
+| <span class="pk-badge pk-badge--neutral" title="the paper links the gene to the drug but states no effect size on a model parameter, so it changes no model.">qualitative</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from keyword rules on the title and abstract — no LLM answer yet).">in vitro</span> | **SLCO1B1** | `Q22` · CL | transport | [Xiang_2020](drugs/drug_potassium/pgx_Xiang_2020_SLCO1B1_Q22.md) | Xiang Q et al., The influence of genetic polymorphisms…, Asian journal of pharmaceut… (2020) | [10.1016/j.ajps.2019.06.002](https://doi.org/10.1016/j.ajps.2019.06.002) |
+| <span class="pk-badge pk-badge--neutral" title="the paper links the gene to the drug but states no effect size on a model parameter, so it changes no model.">qualitative</span> | **CYP2C19** | `Q66` · Vmax | formation | [Xu_2020](drugs/drug_potassium/pgx_Xu_2020_CYP2C19_Q66.md) | Xu RJ et al., Physiologically-Based Pharmacokinetic-P…, Frontiers in pharmacology (2020) | [10.3389/fphar.2020.593982](https://doi.org/10.3389/fphar.2020.593982) |
 
 <details class="pk-legend"><summary>What the PGx badges mean — evidence, and whether a model runs</summary><table><tbody><tr><td><span class="pk-badge pk-badge--green">quantitative</span></td><td>the paper gives the effect of each phenotype (or genotype) on a named model parameter — a θ per category.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">qualitative</span></td><td>the paper links the gene to the drug but states no effect size on a model parameter, so it changes no model.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">guideline estimate</span></td><td>the effect comes from a CPIC / DPWG dosing guideline, not from this paper's numbers.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">safety allele</span></td><td>a risk allele for an adverse reaction (an HLA type, G6PD deficiency …): it changes no PK/PD parameter.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>the extraction is incomplete or inconsistent.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted.</td></tr><tr><td><span class="pk-badge pk-badge--green">▶ simulatable</span></td><td>the paper's popPK model runs per phenotype in the browser (Simulation tab); its PGx Modelica model is under Models.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">model only</span></td><td>a PGx Modelica model exists but has no in-browser simulator.</td></tr></tbody></table></details>
 
@@ -57,8 +83,8 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 | absorption | testis | `ABCB1` transport, `ABCG2` transport | paper PGx gene |
 | metabolism | brain | `CYP2D6` metabolism | paper PGx gene |
 | metabolism | kidney | `CYP3A5` metabolism | paper PGx gene |
-| metabolism | liver | `CYP2C19` formation, `CYP2D6` metabolism, `CYP3A5` metabolism, `SLCO1B3` transport | paper PGx gene |
-| metabolism | small intestine | `CYP3A5` metabolism | paper PGx gene |
+| metabolism | liver | `CYP2C19` metabolism, `CYP2D6` metabolism, `CYP3A4` metabolism, `CYP3A5` metabolism, `SLCO1B1` transport, `SLCO1B3` transport | paper PGx gene |
+| metabolism | small intestine | `CYP3A4` metabolism, `CYP3A5` metabolism | paper PGx gene |
 | excretion | kidney | <sub>named in DrugBank's ADME text</sub> | prose |
 | excretion | skin | <sub>named in DrugBank's ADME text</sub> | prose |
 | excretion | small intestine | <sub>named in DrugBank's ADME text</sub> | prose |
@@ -75,43 +101,35 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 - **PubMed hits:** 44002 matched, 460 returned
 - **screened:** 37  ·  **relevant:** 2
-- **records:** 0  ·  extracted 0  ·  needs_review 0  ·  rejected 0  ·  stale 0
+- **records:** 13  ·  extracted 10  ·  needs_review 0  ·  rejected 3  ·  stale 0
 - **scholar-agent fallback query used:** True
 
 ## Full text wanted
 
-_92 paper(s) judged relevant from the abstract, with no full text on disk — paywalled, or the resolver could not reach them. Follow the DOI, then save the PDF into `papers/` as `&lt;save as&gt;.pdf` and re-run the extraction._
+_83 paper(s) judged relevant from the abstract, with no full text on disk — paywalled, or the resolver could not reach them. Follow the DOI, then save the PDF into `papers/` as `&lt;save as&gt;.pdf` and re-run the extraction._
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Agar_2015.pdf` | Agar BU et al., Potassium kinetics during hemodialysis, Hemodialysis international.… (2015) | popPK | 9 | [10.1111/hdi.12195](https://doi.org/10.1111/hdi.12195) | [25091596](https://pubmed.ncbi.nlm.nih.gov/25091596) | The paper reports quantitative kinetic parameters (mobilization clearance and distribution volume) for potassium in a human population using a compartmental model. |
-| `Chen_2024.pdf` | Chen HY et al., An auxiliary strategy of partial least…, Journal of food and drug an… (2024) | pd | 5 | [10.38212/2224-6614.3492](https://doi.org/10.38212/2224-6614.3492) | [38526587](https://www.ncbi.nlm.nih.gov/pubmed/38526587) | metadata signals extractable PD data (PK/PD) |
+| `Agar_2015.pdf` | Agar BU et al., Potassium kinetics during hemodialysis, Hemodialysis international.… (2015) | popPK | 10 | [10.1111/hdi.12195](https://doi.org/10.1111/hdi.12195) | [25091596](https://pubmed.ncbi.nlm.nih.gov/25091596) | The study reports quantitative kinetic parameters (mobilization clearance and distribution volume) for potassium in a large human cohort using a one-compartment model. |
 | `Eissing_2024.pdf` | Eissing T et al., Pharmacokinetics and pharmacodynamics o…, Diabetes, obesity & metabol… (2024) | pd | 5 | [10.1111/dom.15387](https://doi.org/10.1111/dom.15387) | [38037539](https://www.ncbi.nlm.nih.gov/pubmed/38037539) | metadata signals extractable PD data (exposure-response) |
 | `Eleveld_2018.pdf` | Eleveld DJ et al., Pharmacokinetic-pharmacodynamic model f…, British journal of anaesthe… (2018) | pd | 5 | [10.1016/j.bja.2018.01.018](https://doi.org/10.1016/j.bja.2018.01.018) | [29661412](https://www.ncbi.nlm.nih.gov/pubmed/29661412) | metadata signals extractable PD data (pharmacodynamicmodel) |
 | `Farooq_2025.pdf` | Farooq A et al., Pharmacokinetic/pharmacodynamic analysi…, The Journal of antimicrobia… (2025) | pd | 5 | [10.1093/jac/dkae459](https://doi.org/10.1093/jac/dkae459) | [39723630](https://www.ncbi.nlm.nih.gov/pubmed/39723630) | metadata signals extractable PD data (PK/PD) |
 | `Gosselin_2023.pdf` | Gosselin NH et al., Translational Population-Pharmacodynami…, Clinical pharmacology and t… (2023) | pd | 5 | [10.1002/cpt.2774](https://doi.org/10.1002/cpt.2774) | [36281788](https://www.ncbi.nlm.nih.gov/pubmed/36281788) | metadata signals extractable PD data (PharmacodynamicModel) |
 | `Igarashi_2023.pdf` | Igarashi Y et al., In vivo Pharmacokinetic/Pharmacodynamic…, Pharmaceutical research (2023) | pd | 5 | [10.1007/s11095-023-03608-8](https://doi.org/10.1007/s11095-023-03608-8) | [37783926](https://www.ncbi.nlm.nih.gov/pubmed/37783926) | metadata signals extractable PD data (PK/PD) |
-| `Ji_2025.pdf` | Ji X-w et al., Population pharmacokinetics and pulmona…, Antimicrobial agents and ch… (2025) | pd | 5 | [10.1128/aac.01065-24](https://doi.org/10.1128/aac.01065-24) | [39878492](https://www.ncbi.nlm.nih.gov/pubmed/39878492) | metadata signals extractable PD data (PK/PD) |
-| `Jitaree_2019.pdf` | Jitaree K et al., Pharmacokinetic/Pharmacodynamic (PK/PD)…, Antibiotics (Basel, Switzer… (2019) | pd | 5 | [10.3390/antibiotics8030125](https://doi.org/10.3390/antibiotics8030125) | [31443514](https://www.ncbi.nlm.nih.gov/pubmed/31443514) | metadata signals extractable PD data (PK/PD) |
 | `Ladebo_2020.pdf` | Ladebo L et al., Population pharmacokinetic-pharmacodyna…, Basic & clinical pharmacolo… (2020) | pd | 5 | [10.1111/bcpt.13330](https://doi.org/10.1111/bcpt.13330) | [31597014](https://www.ncbi.nlm.nih.gov/pubmed/31597014) | metadata signals extractable PD data (pharmacodynamicmodel) |
 | `Li_2022.pdf` | Li Q et al., Population pharmacokinetic/pharmacodyna…, Frontiers in pharmacology (2022) | pd | 5 | [10.3389/fphar.2022.966176](https://doi.org/10.3389/fphar.2022.966176) | [36052126](https://www.ncbi.nlm.nih.gov/pubmed/36052126) | metadata signals extractable PD data (PK/PD) |
 | `Lock_2025.pdf` | Lock GA et al., Can distinct Gram-negative biofilm-form…, Microbial pathogenesis (2025) | pd | 5 | [10.1016/j.micpath.2024.107092](https://doi.org/10.1016/j.micpath.2024.107092) | [39515546](https://www.ncbi.nlm.nih.gov/pubmed/39515546) | metadata signals extractable PD data (PK/PD) |
 | `Lötsch_2005.pdf` | Lötsch J, Pharmacokinetic-pharmacodynamic modelin…, Journal of pain and symptom… (2005) | pd | 5 | [10.1016/j.jpainsymman.2005.01.012](https://doi.org/10.1016/j.jpainsymman.2005.01.012) | [15907650](https://www.ncbi.nlm.nih.gov/pubmed/15907650) | metadata signals extractable PD data (pharmacodynamicmodel) |
 | `Muller_2023.pdf` | Muller AE et al., Pharmacodynamics of Temocillin in Neutr…, Antimicrobial agents and ch… (2023) | pd | 5 | [10.1128/aac.01433-22](https://doi.org/10.1128/aac.01433-22) | [36692307](https://www.ncbi.nlm.nih.gov/pubmed/36692307) | metadata signals extractable PD data (exposure-response) |
-| `Muthukrishnan_2025.pdf` | Muthukrishnan VY et al., Population Pharmacokinetic and Pharmaco…, Clinical and translational… (2025) | pd | 5 | [10.1111/cts.70381](https://doi.org/10.1111/cts.70381) | [41178801](https://www.ncbi.nlm.nih.gov/pubmed/41178801) | metadata signals extractable PD data (PK-PD) |
-| `Oggianu_2023.pdf` | Oggianu L et al., PK/PD analysis of trazodone and gabapen…, Clinical and translational… (2023) | pd | 5 | [10.1111/cts.13472](https://doi.org/10.1111/cts.13472) | [36785922](https://www.ncbi.nlm.nih.gov/pubmed/36785922) | metadata signals extractable PD data (PK/PD) |
 | `Phillips_2001.pdf` | Phillips L et al., A population pharmacokinetic-pharmacody…, Clinical pharmacology and t… (2001) | pd | 5 | not captured | [11673753](https://www.ncbi.nlm.nih.gov/pubmed/11673753) | metadata signals extractable PD data (PK/PD) |
 | `Pétermann_2026.pdf` | Pétermann YJ et al., Population pharmacokinetics of encorafe…, Cancer chemotherapy and pha… (2026) | pd | 5 | [10.1007/s00280-026-04876-y](https://doi.org/10.1007/s00280-026-04876-y) | [41843134](https://www.ncbi.nlm.nih.gov/pubmed/41843134) | metadata signals extractable PD data (IC50) |
-| `Sabo_2026.pdf` | Sabo AN et al., The Hydroxyurea Absorption Phenotype: A…, Pharmaceutics (2026) | pd | 5 | [10.3390/pharmaceutics18060654](https://doi.org/10.3390/pharmaceutics18060654) | [42357270](https://www.ncbi.nlm.nih.gov/pubmed/42357270) | metadata signals extractable PD data (PK/PD) |
 | `Serkland_2025.pdf` | Serkland TT et al., Pharmacokinetic-pharmacodynamic modelli…, British journal of clinical… (2025) | pd | 5 | [10.1002/bcp.70136](https://doi.org/10.1002/bcp.70136) | [40515509](https://www.ncbi.nlm.nih.gov/pubmed/40515509) | metadata signals extractable PD data (pharmacodynamicmodel) |
 | `Shao_2026.pdf` | Shao Q et al., Prediction of pharmacokinetics and cent…, Drug metabolism and disposi… (2026) | pd | 5 | [10.1016/j.dmd.2026.100319](https://doi.org/10.1016/j.dmd.2026.100319) | [42424960](https://www.ncbi.nlm.nih.gov/pubmed/42424960) | metadata signals extractable PD data (pharmacodynamicmodel) |
-| `Shen_2026.pdf` | Shen Y et al., Pharmacokinetic-pharmacodynamic integra…, Poultry science (2026) | pd | 5 | [10.1016/j.psj.2026.106959](https://doi.org/10.1016/j.psj.2026.106959) | [42056829](https://www.ncbi.nlm.nih.gov/pubmed/42056829) | metadata signals extractable PD data (PK-PD) |
 | `Takeda_2024.pdf` | Takeda K et al., Sensitivity assessment of diphacinone b…, Pesticide biochemistry and… (2024) | pd | 5 | [10.1016/j.pestbp.2023.105767](https://doi.org/10.1016/j.pestbp.2023.105767) | [38458676](https://www.ncbi.nlm.nih.gov/pubmed/38458676) | metadata signals extractable PD data (PK/PD) |
 | `Thomas_2026.pdf` | Thomas CM et al., Pharmacokinetic-pharmacodynamic modelli…, British journal of clinical… (2026) | pd | 5 | [10.1002/bcp.70477](https://doi.org/10.1002/bcp.70477) | [41692695](https://www.ncbi.nlm.nih.gov/pubmed/41692695) | metadata signals extractable PD data (pharmacodynamicmodel) |
 | `Wang_2020.pdf` | Wang C et al., Pharmacokinetic/Pharmacodynamic Modelin…, Microbial drug resistance (… (2020) | pd | 5 | [10.1089/mdr.2019.0152](https://doi.org/10.1089/mdr.2019.0152) | [31794682](https://www.ncbi.nlm.nih.gov/pubmed/31794682) | metadata signals extractable PD data (PharmacodynamicModel) |
 | `Wang_2022.pdf` | Wang Z et al., Impact of target-mediated drug disposit…, British journal of clinical… (2022) | pd | 5 | [10.1111/bcp.15130](https://doi.org/10.1111/bcp.15130) | [34705278](https://www.ncbi.nlm.nih.gov/pubmed/34705278) | metadata signals extractable PD data (PK/PD) |
 | `Wang_2024.pdf` | Wang AF et al., Pharmacodynamic Models of Indirect Effe…, Journal of pharmaceutical s… (2024) | pd | 5 | [10.1016/j.xphs.2023.10.027](https://doi.org/10.1016/j.xphs.2023.10.027) | [37884193](https://www.ncbi.nlm.nih.gov/pubmed/37884193) | metadata signals extractable PD data (PharmacodynamicModel) |
-| `Wei_2024.pdf` | Wei Y et al., Pharmacokinetic/pharmacodynamic relatio…, Poultry science (2024) | pd | 5 | [10.1016/j.psj.2024.103868](https://doi.org/10.1016/j.psj.2024.103868) | [38833743](https://www.ncbi.nlm.nih.gov/pubmed/38833743) | metadata signals extractable PD data (PK/PD) |
 | `Yoshihara_2024.pdf` | Yoshihara K et al., Exposure-response analysis of the effic…, Drug metabolism and pharmac… (2024) | pd | 5 | [10.1016/j.dmpk.2023.100535](https://doi.org/10.1016/j.dmpk.2023.100535) | [38245949](https://www.ncbi.nlm.nih.gov/pubmed/38245949) | metadata signals extractable PD data (Exposure-response) |
 | `Zou_2025.pdf` | Zou L et al., Considerations in Kp,uu,brain-based Str…, The AAPS journal (2025) | pd | 5 | [10.1208/s12248-025-01035-8](https://doi.org/10.1208/s12248-025-01035-8) | [40021548](https://www.ncbi.nlm.nih.gov/pubmed/40021548) | metadata signals extractable PD data (IC50) |
 | `Andrejauskas_1986.pdf` | Andrejauskas E et al., 3,4,5-Triiodobenzoic acid affects [3H]v…, Biochemical and biophysical… (1986) | pd | 4 | [10.1016/s0006-291x(86)80420-x](https://doi.org/10.1016/s0006-291x(86)80420-x) | [3753496](https://www.ncbi.nlm.nih.gov/pubmed/3753496) | metadata signals extractable PD data (EC50) |
@@ -154,7 +172,6 @@ _92 paper(s) judged relevant from the abstract, with no full text on disk — pa
 | `Zhang_2020.pdf` | Zhang HJ et al., Effects of genetic polymorphisms on the…, Pharmacological research (2020) | pgx | 8 | [10.1016/j.phrs.2019.104606](https://doi.org/10.1016/j.phrs.2019.104606) | [31846760](https://www.ncbi.nlm.nih.gov/pubmed/31846760) | metadata signals extractable PGX data (CYP2C19, PK/PD-context) |
 | `Bouillon-Pichault_2011.pdf` | Bouillon-Pichault M et al., Pharmacokinetic design optimization in…, Journal of pharmacokinetics… (2011) | pgx | 7 | [10.1007/s10928-010-9173-1](https://doi.org/10.1007/s10928-010-9173-1) | [21046208](https://www.ncbi.nlm.nih.gov/pubmed/21046208) | metadata signals extractable PGX data (CYP3A4, PK/PD-context) |
 | `Chai_2022.pdf` | Chai YY et al., Influence of Zhuanggu Guanjie Pill on S…, Current drug metabolism (2022) | pgx | 7 | [10.2174/1389200224666221209154002](https://doi.org/10.2174/1389200224666221209154002) | [36503399](https://www.ncbi.nlm.nih.gov/pubmed/36503399) | metadata signals extractable PGX data (CYP1A2, PK/PD-context) |
-| `Comisar_2025.pdf` | Comisar CM et al., Population Pharmacokinetic Modeling of…, CPT: pharmacometrics & syst… (2025) | pgx | 7 | [10.1002/psp4.70051](https://doi.org/10.1002/psp4.70051) | [40614133](https://www.ncbi.nlm.nih.gov/pubmed/40614133) | metadata signals extractable PGX data (CYP3A4, PK/PD-context) |
 | `Habenschus_2021.pdf` | Habenschus MD et al., In vitro enantioselective inhibition of…, Toxicology letters (2021) | pgx | 7 | [10.1016/j.toxlet.2021.08.006](https://doi.org/10.1016/j.toxlet.2021.08.006) | [34407455](https://www.ncbi.nlm.nih.gov/pubmed/34407455) | metadata signals extractable PGX data (CYP450, PK/PD-context) |
 | `Hernández-Lozano_2021.pdf` | Hernández-Lozano I et al., Influence of ABC transporters on the ex…, European journal of pharmac… (2021) | pgx | 7 | [10.1016/j.ejps.2021.105854](https://doi.org/10.1016/j.ejps.2021.105854) | [33865975](https://www.ncbi.nlm.nih.gov/pubmed/33865975) | metadata signals extractable PGX data (Abcc4, PK/PD-context) |
 | `Hirt_2006.pdf` | Hirt D et al., Pregnancy-related effects on nelfinavir…, Antimicrobial agents and ch… (2006) | pgx | 7 | [10.1128/AAC.01596-05](https://doi.org/10.1128/AAC.01596-05) | [16723569](https://www.ncbi.nlm.nih.gov/pubmed/16723569) | metadata signals extractable PGX data (CYP3A4, PK/PD-context) |
@@ -177,467 +194,463 @@ _92 paper(s) judged relevant from the abstract, with no full text on disk — pa
 | `Saito_2014.pdf` | Saito R et al., Nutri-pharmacogenomics of warfarin anti…, Journal of thrombosis and t… (2014) | pgx | 5 | [10.1007/s11239-013-0978-9](https://doi.org/10.1007/s11239-013-0978-9) | [23928870](https://www.ncbi.nlm.nih.gov/pubmed/23928870) | metadata signals extractable PGX data (VKORC1) |
 | `Shiozawa_2021.pdf` | Shiozawa A et al., Effects of acid and lactone forms of st…, Drug metabolism and pharmac… (2021) | pgx | 5 | [10.1016/j.dmpk.2020.10.003](https://doi.org/10.1016/j.dmpk.2020.10.003) | [33341662](https://www.ncbi.nlm.nih.gov/pubmed/33341662) | metadata signals extractable PGX data (CYP2C9) |
 
-<sub>queue written 2026-10-06T17:11:26.094268+00:00</sub>
+<sub>queue written 2026-10-07T15:40:51.509333+00:00</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| PGx | Abdrakhmanov_2024 | not_relevant | 0 | 0 | The paper discusses pharmacogenomics of direct oral anticoagulants (DOACs), not potassium. |
-| PGx | Abduljalil_2013 | not_relevant | 0 | 0 | The paper reports pharmacogenomic effects on phenprocoumon, not potassium. |
-| popPK | Abidullah_2021 | irrelevant | 0 | 0 | The study is an in-vitro pharmacological assay investigating the mechanism of action of fluoroquinolones on potassium channels, not a pharmacokinetic study of potassium disposition. |
-| PGx | Acikgöz_2009 | not_relevant | 0 | 0 | The paper studies diazepam metabolism in hepatocytes and does not involve potassium or pharmacogenomic variants. |
-| PGx | Agrawal_2020 | not_relevant | 0 | 0 | The paper investigates warfarin pharmacogenomics (CYP2C9/VKORC1) and its interaction with other drugs, not the pharmacokinetics or pharmacodynamics of potassium. |
-| PGx | Akarid_1995 | not_relevant | 0 | 0 | The paper investigates the antiviral effects of nitric oxide on a murine retrovirus and does not report any pharmacogenomic effects on the pharmacokinetics or pharmacodynamics of potassium. |
-| PGx | Al-Majdoub_2026 | not_relevant | 0 | 0 | The paper investigates enzyme kinetics (kcat) and abundance for drug-metabolizing enzymes (CYPs/UGTs) in liver and intestine, not the pharmacokinetics or pharmacodynamics of potassium. |
-| PGx | Al-Nahari_2020 | not_relevant | 0 | 0 | The paper reports the pharmacokinetics of daclatasvir, not potassium, and does not investigate pharmacogenomic effects. |
+| PGx | Abdrakhmanov_2024 | not_relevant | 0 | 0 | The paper reviews pharmacogenetics of direct oral anticoagulants (DOACs) and does not report on potassium pharmacokinetics or pharmacodynamics. |
+| PGx | Abduljalil_2013 | not_relevant | 0 | 0 | The paper investigates the pharmacogenomics of the anticoagulant phenprocoumon, not potassium. |
+| popPK | Abidullah_2021 | irrelevant | 0 | 0 | This is an in-vitro mechanistic study of antibiotic effects on potassium channels, not a pharmacokinetic study of potassium disposition. |
+| PGx | Acikgöz_2009 | not_relevant | 0 | 0 | The paper studies the in vitro biotransformation of diazepam in human hepatocytes, does not involve potassium, and does not report any pharmacogenomic effects. |
+| PGx | Agrawal_2020 | not_relevant | 0 | 0 | The paper reports pharmacogenomic effects on the pharmacodynamics of warfarin (INR), not on the pharmacokinetic or pharmacodynamic parameters of potassium. |
+| PGx | Akarid_1995 | not_relevant | 0 | 0 | The paper studies the antiviral effect of nitric oxide, not pharmacogenomics of a drug's PK/PD. |
+| PGx | Al-Majdoub_2026 | not_relevant | 0 | 0 | The paper investigates inter-tissue and inter-donor variability in enzyme kinetics (kcat) for CYPs and UGTs but does not link these variations to specific gene variants or genotypes (pharmacogenomics). |
+| PGx | Al-Nahari_2020 | not_relevant | 0 | 0 | The paper reports pharmacokinetics of daclatasvir in HCV patients, not the pharmacogenomics of potassium, and does not involve a potassium drug. |
 | popPK | Alfosea-Cuadrado_2024 | irrelevant | 0 | 0 | The study reports pharmacokinetic parameters for reserpine, not potassium. |
 | popPK | Anderson_2005 | irrelevant | 0 | 0 | The study reports pharmacokinetic parameters for paracetamol/propacetamol, not potassium. |
 | popPK | Andrejauskas_1986 | irrelevant | 0 | 0 | no_text gate: only 124 chars of text extracted (&lt; 400) |
 | PD | Andrejauskas_1986 | not_relevant | 0 | 0 | The paper studies the effect of 3,4,5-Triiodobenzoic acid on verapamil binding and muscle contraction, not the pharmacodynamics of Potassium. |
-| popPK | Assimakopoulos_1995 | irrelevant | 0 | 0 | The study investigates radiocesium transport in ruminants, not the pharmacokinetics of potassium. |
-| popPK | Atsumi_2026 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of ephedrine and pseudoephedrine, not potassium. |
-| popPK | Attard_1995 | irrelevant | 0 | 0 | The paper discusses pharmacokinetic modeling of antibodies for radioimmunotherapy, not potassium. |
-| popPK | Aubry_2023 | irrelevant | 0 | 0 | The study focuses on the pharmacodynamic interaction between ceftazidime/avibactam and colistin in vitro, and does not report pharmacokinetic parameters for potassium. |
-| PGx | Auvity_2018 | not_relevant | 0 | 0 | The paper studies the effect of P-glycoprotein on the PK of metoclopramide, not potassium. |
-| PGx | Aziz_2018 | not_relevant | 0 | 0 | The text is an interview title regarding pharmacomicrobiomics and does not report pharmacogenomic effects on potassium PK/PD parameters. |
-| PGx | Barbetta_2025 | not_relevant | 0 | 0 | The paper investigates the in vitro inhibitory effects of a fungicide on CYP450 enzymes and does not report any pharmacogenomic effects on the PK or PD of potassium. |
-| popPK | Barzel_2026 | irrelevant | 0 | 0 | The paper is a review of population pharmacokinetic models for therapeutic enzymes (e.g., imiglucerase, alglucosidase) in lysosomal storage diseases, not a study of potassium pharmacokinetics. |
-| PGx | Belley-Côté_2015 | not_relevant | 0 | 0 | The paper discusses pharmacogenetics for vitamin K antagonists, not potassium. |
-| popPK | Bernander_1994 | irrelevant | 0 | 0 | The paper is a computational neuroscience study on neuronal conductances, not a pharmacokinetic study of the drug potassium. |
-| popPK | Bernotas_2010 | irrelevant | 0 | 0 | The paper describes the synthesis and pharmacological activity of 5-HT(6) receptor modulators, not the pharmacokinetics of potassium. |
-| PGx | Bloch_1989 | not_relevant | 0 | 0 | The paper describes a bacterial gene deletion (sodA) and its effect on virulence in a rat model, not a human pharmacogenomic effect on the PK/PD of potassium. |
-| popPK | Boldyrev_1982 | irrelevant | 0 | 0 | The paper describes the enzymatic kinetics of (Na+, K+)-ATPase in duck salt glands, not the pharmacokinetic disposition of potassium as a drug. |
+| popPK | Assimakopoulos_1995 | irrelevant | 0 | 0 | The study focuses on radiocesium transport in ruminants, not the pharmacokinetics of potassium. |
+| popPK | Atsumi_2026 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of ephedrine and pseudoephedrine in the presence of Maoto extract, not potassium. |
+| popPK | Attard_1995 | irrelevant | 0 | 0 | The paper discusses the pharmacokinetics of radiolabeled antibodies for cancer radioimmunotherapy, not the drug potassium. |
+| popPK | Aubry_2023 | irrelevant | 0 | 0 | The paper is an in vitro PKPD study of antibiotics (ceftazidime/avibactam and colistin), not a pharmacokinetic study of potassium. |
+| PGx | Auvity_2018 | not_relevant | 0 | 0 | The paper investigates P-glycoprotein transport of metoclopramide in nonhuman primates and does not involve potassium or human pharmacogenomics. |
+| PGx | Aziz_2018 | not_relevant | 0 | 0 | The text is a title for an interview about the dawn of pharmacomicrobiomics and does not contain data or findings regarding gene variants affecting potassium pharmacokinetics or pharmacodynamics. |
+| PGx | Barbetta_2025 | not_relevant | 0 | 0 | The paper investigates in vitro CYP450 inhibition by a fungicide and does not report pharmacogenomic effects on PK/PD parameters of potassium. |
+| popPK | Barzel_2026 | irrelevant | 0 | 0 | The paper is a review of pharmacokinetic models for therapeutic enzymes (e.g., imiglucerase, alglucosidase) in lysosomal storage diseases, not a study of potassium. |
+| PGx | Belley-Côté_2015 | not_relevant | 0 | 0 | The paper discusses pharmacogenetics for vitamin K antagonists (bleeding outcomes), not potassium PK/PD parameters. |
+| popPK | Bernander_1994 | irrelevant | 0 | 0 | The paper is a computational neuroscience study on synaptic signal amplification in neurons, not a pharmacokinetic study of the drug potassium. |
+| popPK | Bernotas_2010 | irrelevant | 0 | 0 | The paper describes the synthesis and pharmacological activity of 5-HT(6) receptor modulators and does not mention potassium or its pharmacokinetics. |
+| PGx | Bloch_1989 | not_relevant | 0 | 0 | The paper describes bacterial genetics and pathogenesis in rats, containing no data on pharmacogenomics or drug PK/PD. |
+| popPK | Boldyrev_1982 | irrelevant | 0 | 0 | The paper describes the enzymatic kinetics of Na+/K+-ATPase in duck salt glands and does not report pharmacokinetic parameters (CL, V, half-life, etc.) for potassium as a drug. |
 | PD | Boldyrev_1982 | not_relevant | 0 | 0 | The paper describes the enzymatic kinetics of (Na+, K+)-ATPase regarding substrate hydrolysis (ATP, CTP, etc.), not the pharmacodynamic response of the drug Potassium in a biological system. |
-| PGx | Bouillon-Pichault_2011 | not_relevant | 0 | 0 | The paper focuses on pharmacokinetic study design optimization for CYP3A4 maturation in children and does not report pharmacogenomic effects on potassium. |
-| PGx | Breuil_2023 | not_relevant | 0 | 0 | The paper investigates pharmacological inhibition of P-glycoprotein using PET imaging, not the effect of genetic variants on pharmacokinetic or pharmacodynamic parameters. |
-| popPK | Briki_2026 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of 5-fluorouracil, not potassium. |
+| PGx | Bouillon-Pichault_2011 | not_relevant | 0 | 0 | The paper discusses pediatric PK design for a CYP3A4 substrate and does not report pharmacogenomic effects on the PK/PD parameters of potassium. |
+| PGx | Breuil_2023 | not_relevant | 0 | 0 | The paper investigates the pharmacokinetics of a PET tracer (metoclopramide) and P-gp transporter function, but does not report pharmacogenomic effects on potassium PK or PD. |
+| popPK | Briki_2026 | irrelevant | 0 | 0 | The paper focuses on the pharmacokinetics of 5-fluorouracil, not potassium. |
 | popPK | Britto_2013 | irrelevant | 0 | 0 | no_text gate: only 375 chars of text extracted (&lt; 400) |
-| PGx | Brown_2022 | not_relevant | 0 | 0 | The paper is a review of polymorphisms in antihypertensive targets and does not report specific pharmacogenomic effects on PK or PD parameters for potassium. |
-| popPK | Bräm_2026 | irrelevant | 0 | 0 | The paper describes a methodological approach for automated pharmacometric modeling using neural ODEs and LASSO, demonstrating it on warfarin and generic data, but does not report pharmacokinetic parameters for potassium. |
+| PGx | Brown_2022 | not_relevant | 0 | 0 | The text is a review/survey of polymorphisms in antihypertensive targets and discusses the potential for pharmacogenomics in general, but it does not report specific data on how a variant changes a PK or PD parameter for potassium. |
+| popPK | Bräm_2026 | irrelevant | 0 | 0 | The paper describes a method for automated pharmacometric model development using neural ODEs and LASSO, applying it to neonatal weight, generic bi-exponential PK, and warfarin, with no data or parameters for potassium. |
 | PD | Bräm_2026 | not_relevant | 0 | 0 | The paper describes a methodological framework for automated pharmacometric modeling using Neural ODEs and LASSO, applying it to warfarin PK/PD as a demonstration, but does not report specific numeric PD parameters or exposure-response relationships for Potassium. |
-| PGx | Buchmann_1990 | not_relevant | 0 | 0 | The paper describes a genetic defect in bile acid synthesis (3β-hydroxysteroid dehydrogenase/isomerase deficiency) and does not report pharmacogenomic effects on the pharmacokinetics or pharmacodynamics of potassium. |
-| popPK | Buchwald_2022 | irrelevant | 0 | 0 | The paper describes methods for quantifying receptor binding and efficacy (Kd, Emax) for muscarinic agonists, not the pharmacokinetic disposition parameters (CL, V, etc.) of potassium. |
+| PGx | Buchmann_1990 | not_relevant | 0 | 0 | The paper reports a pharmacogenomic effect on bile acid synthesis (enzyme activity), not on the PK/PD of potassium. |
+| popPK | Buchwald_2022 | irrelevant | 0 | 0 | The paper describes methods for quantifying receptor binding and pharmacodynamics (Kd, efficacy) for muscarinic agonists, not the pharmacokinetics of potassium. |
 | PD | Buchwald_2022 | not_relevant | 0 | 0 | The paper describes methods for fitting receptor binding and concentration-response data (SABRE, sigmoid) but does not report specific pharmacodynamic parameters for Potassium. |
-| popPK | Bui_2024 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of finerenone, with potassium serving only as a pharmacodynamic biomarker for hyperkalemia, not as the subject drug. |
-| PGx | Bui_2024 | not_relevant | 0 | 0 | The study investigates drug-drug interactions (CYP3A4 inhibition) in rats, not pharmacogenomic effects of gene variants on PK/PD parameters. |
-| popPK | Carceles_1995 | irrelevant | 0 | 0 | The study reports pharmacokinetic parameters for amoxicillin and clavulanic acid, not potassium (which is only present as the salt form of clavulanic acid). |
-| popPK | Cha_2024 | irrelevant | 0 | 0 | The study reports pharmacokinetic parameters for zolpidem, not potassium. |
-| PGx | Chai_2022 | not_relevant | 0 | 0 | The paper investigates the effect of a herbal medicine on CYP enzymes in rats, not the effect of a gene variant on the PK/PD of potassium. |
-| PGx | Chaloupka_1995 | not_relevant | 0 | 0 | The paper investigates the induction of Cyp1a-1 and Cyp1a-2 gene expression by PAHs in mice, which is a toxicology/pharmacology study, not a pharmacogenomic study of a potassium drug's PK/PD parameters. |
-| popPK | Chang_2023 | irrelevant | 0 | 0 | The study analyzes DCE-MRI perfusion parameters (Ktrans, Kep) for breast cancer diagnosis and does not report pharmacokinetic parameters for the drug potassium. |
+| popPK | Bui_2024 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of finerenone, not potassium; potassium is only mentioned as a pharmacodynamic marker for hyperkalemia. |
+| PGx | Bui_2024 | not_relevant | 0 | 0 | The paper investigates drug-drug interactions (finerenone with CYP3A4 inhibitors) and reports PK/PD changes in potassium, but it does not involve any genetic variants, genotypes, or pharmacogenomic factors. |
+| PGx | Cai_2022 | not_relevant | 0 | 0 | The paper reports pharmacokinetics of tacrolimus, not potassium. |
+| popPK | Carceles_1995 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of amoxicillin and clavulanic acid in goats, not potassium. |
+| popPK | Cha_2024 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of zolpidem, not potassium. |
+| PGx | Chai_2022 | not_relevant | 0 | 0 | The paper investigates the effect of a herbal medicine on CYP enzymes in rats, not a genetic variant's effect on potassium pharmacology. |
+| PGx | Chaloupka_1995 | not_relevant | 0 | 0 | The paper investigates CYP1A1/2 induction by PAHs in mice and does not involve potassium pharmacokinetics or pharmacodynamics. |
+| popPK | Chang_2023 | irrelevant | 0 | 0 | The paper reports pharmacokinetic parameters (Ktrans, Kep, Ve, Vp) for a contrast agent in breast DCE-MRI studies, not for the drug potassium. |
 | PD | Chang_2023 | not_relevant | 0 | 0 | The paper analyzes DCE-MRI perfusion parameters (Ktrans, Kep, etc.) for breast tumor diagnosis and does not report any pharmacodynamic or exposure-response relationship for the drug Potassium. |
-| PGx | Chanteux_2024 | not_relevant | 0 | 0 | The paper investigates the pharmacokinetics of padsevonil, not potassium, and does not report pharmacogenomic effects on potassium parameters. |
+| PGx | Chanteux_2024 | not_relevant | 0 | 0 | The text describes the pharmacokinetics of padsevonil and its DDI profile, with no mention of the drug potassium. |
 | popPK | Chen_1991 | irrelevant | 0 | 0 | no_text gate: only 62 chars of text extracted (&lt; 400) |
 | PD | Chen_1991 | not_relevant | 0 | 0 | The paper investigates the neurotoxic effects of sodium nitroprusside on rat striatal neurons, not the pharmacodynamics of Potassium. |
-| PGx | Chen_2011 | not_relevant | 0 | 0 | The paper reports pharmacogenomic effects on cyclosporine pharmacokinetics, not potassium. |
-| PGx | Chen_2017 | not_relevant | 0 | 0 | The paper reports pharmacogenomic effects on the pharmacokinetics of tacrolimus, not potassium. |
-| PGx | Chen_2022 | not_relevant | 0 | 0 | The paper reports pharmacogenomic effects on the PK of isoniazid, not potassium. |
-| popPK | Chen_2022_2 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of hydroxysafflor yellow A and calycosin, not potassium. |
-| popPK | Chen_2023 | irrelevant | 0 | 0 | The study reports population pharmacokinetic parameters for the antibiotic nemonoxacin, not for potassium. |
-| popPK | Chen_2024 | irrelevant | 0 | 0 | no_text gate: only 183 chars of text extracted (&lt; 400) |
+| PGx | Chen_2011 | not_relevant | 0 | 0 | The paper studies the pharmacokinetics of cyclosporine, not potassium, and does not report pharmacogenomic effects on potassium parameters. |
+| PGx | Chen_2022 | not_relevant | 0 | 0 | The paper reports pharmacogenomics for isoniazid, not potassium. |
+| popPK | Chen_2022_2 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of hydroxysafflor yellow A and calycosin in rats, not potassium. |
+| popPK | Chen_2023 | irrelevant | 0 | 0 | The paper describes the population pharmacokinetics of nemonoxacin, not potassium. |
+| popPK | Chen_2024 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of Guhong Injection (a herbal preparation containing NAG, CGA, HSYA, etc.) in rats, not the drug potassium. |
 | PD | Chen_2024 | not_relevant | 0 | 0 | The paper focuses on the application of Partial Least Squares (PLS) regression for PK/PD modeling of Guhong Injection, not Potassium, and does not report specific numeric PD parameters for Potassium. |
 | popPK | Chen_2026 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of rivaroxaban, not potassium. |
 | PD | Chen_2026 | not_relevant | 0 | 0 | The paper focuses exclusively on the external validation of population pharmacokinetic (PK) models for rivaroxaban and does not report any pharmacodynamic (PD) or exposure-response relationships. |
-| PGx | Ching_1995 | not_relevant | 0 | 0 | The paper investigates CYP2D6 inhibition by quinidine and its metabolites, not the pharmacokinetics or pharmacodynamics of potassium. |
-| PGx | Choudhary_2019 | not_relevant | 0 | 0 | The paper reports pharmacogenomic effects on warfarin/acenocoumarol dosing, not on the pharmacokinetics or pharmacodynamics of potassium. |
+| PGx | Ching_1995 | not_relevant | 0 | 0 | The paper reports in vitro inhibition of CYP2D6 by quinidine and dihydroquinidine but does not describe a pharmacogenomic effect (gene variant impact) on the pharmacokinetics or pharmacodynamics of potassium. |
+| PGx | Choudhary_2019 | not_relevant | 0 | 0 | The paper examines pharmacogenomics for Vitamin K antagonists (warfarin/acenocoumarol), not potassium. |
 | PD | Christiansen_1970 | not_relevant | 0 | 0 | The paper studies the dose-response of gastric electrolyte secretion to pentagastrin, not the pharmacodynamics of potassium as a drug. |
-| popPK | Chung_2022 | irrelevant | 0 | 0 | The study models the pharmacokinetics of YH4808 (a potassium-competitive acid blocker), not the drug potassium itself. |
-| PGx | Ciarleglio_2017 | not_relevant | 0 | 0 | The text is a general overview of precision medicine and pharmacogenomics barriers, containing no specific data on gene variants affecting potassium PK/PD. |
+| popPK | Chung_2022 | irrelevant | 0 | 0 | The study models the pharmacokinetics of YH4808, a potassium-competitive acid blocker, not the pharmacokinetics of the element potassium itself. |
+| PGx | Ciarleglio_2017 | not_relevant | 0 | 0 | The text is a general overview of precision medicine and pharmacogenomics implementation barriers, containing no specific data on potassium or any drug's PK/PD parameters. |
 | popPK | Cirincione_2017 | irrelevant | 0 | 0 | The study reports population pharmacokinetic parameters for exenatide, not potassium. |
-| PGx | Coleman_1996 | not_relevant | 0 | 0 | The paper studies the toxicity of dapsone analogues in vitro and does not report pharmacogenomic effects on the PK or PD of potassium. |
-| PGx | Collins_2025 | not_relevant | 0 | 0 | The paper reports pharmacogenomic effects on midazolam pharmacokinetics, not potassium. |
-| popPK | Comisar_2025 | irrelevant | 0 | 0 | no_text gate: only 120 chars of text extracted (&lt; 400) |
-| PGx | Comisar_2025 | not_relevant | 0 | 0 | The paper focuses on the pharmacokinetics of rimegepant, not potassium, and does not report pharmacogenomic effects. |
-| PGx | Dai_2021 | not_relevant | 0 | 0 | The paper reports pharmacogenomic effects on the PK of mizoribine, not potassium. |
-| popPK | Dai_2025 | irrelevant | 0 | 0 | The paper is a systematic review of the pharmacokinetics of tigecycline, not potassium. |
+| PGx | Coleman_1996 | not_relevant | 0 | 0 | The paper studies the in-vitro metabolism and toxicity of dapsone analogues, not pharmacogenomic effects on potassium PK/PD. |
+| PGx | Collins_2025 | not_relevant | 0 | 1 | The paper analyzes the pharmacokinetics of midazolam (a CYP3A probe), not potassium. |
+| popPK | Comisar_2025 | irrelevant | 0 | 0 | The paper reports population pharmacokinetic parameters for rimegepant, not for potassium. |
+| PGx | Comisar_2025 | not_relevant | 0 | 0 | The paper reports the pharmacokinetics of rimegepant and analyzes covariates such as ethnicity and hepatic function, but it does not report pharmacokinetic or pharmacodynamic parameters of potassium. |
+| PGx | Dai_2021 | not_relevant | 0 | 0 | The study investigates the pharmacokinetics of mizoribine, not potassium. |
+| popPK | Dai_2025 | irrelevant | 0 | 0 | The paper reports pharmacokinetic parameters for tigecycline, not potassium. |
 | PD | Dai_2025 | not_relevant | 0 | 0 | The paper is a systematic review of population pharmacokinetics (PK) for tigecycline and does not report any pharmacodynamic (PD) or exposure-response relationships. |
-| PGx | Daly_2008 | not_relevant | 0 | 0 | The text is an interview introduction and contains no pharmacogenomic or pharmacokinetic data. |
-| PGx | Danek_2020 | not_relevant | 0 | 0 | The paper reports in vitro CYP enzyme inhibition by neuroleptics, not a pharmacogenomic effect on potassium PK/PD. |
-| PGx | Danesi_2007 | not_relevant | 0 | 0 | The paper is a general review of pharmacogenetics in NSCLC and does not report specific pharmacokinetic or pharmacodynamic effects of gene variants on potassium. |
+| PGx | Daly_2008 | not_relevant | 0 | 0 | The text is the title and description of an interview and contains no information about pharmacogenomics, pharmacokinetics, or pharmacodynamics of potassium or any other drug. |
+| PGx | Danek_2020 | not_relevant | 0 | 0 | The paper studies drug-drug interaction (CYP inhibition) and is unrelated to potassium pharmacology or pharmacogenomics. |
+| PGx | Danesi_2007 | not_relevant | 0 | 0 | The paper discusses pharmacogenetics in NSCLC chemotherapy but does not mention potassium or any pharmacokinetic/pharmacodynamic parameters related to it. |
 | popPK | Darwish_2026 | irrelevant | 0 | 0 | The study reports pharmacokinetic parameters for remlifanserin, not potassium. |
-| PGx | Doohan_2021 | not_relevant | 0 | 0 | The paper investigates CYP enzyme inhibition by cannabinoids, not the pharmacogenomics of potassium. |
-| PGx | Duangchaemkarn_2013 | not_relevant | 0 | 0 | The paper describes a compartmental pharmacokinetic model for lopinavir but does not report any pharmacogenomic effects or gene variants. |
+| PGx | Doohan_2021 | not_relevant | 0 | 0 | The paper reports CYP-mediated inhibition of drug metabolism by cannabinoids, with no mention of potassium pharmacokinetics or pharmacodynamics. |
+| PGx | Duangchaemkarn_2013 | not_relevant | 0 | 0 | The paper models the pharmacokinetics of lopinavir, not potassium, and does not report any pharmacogenomic effects. |
 | PD | Ducharme_2010 | not_relevant | 0 | 0 | The text describes the discovery of a 5-lipoxygenase inhibitor and mentions reducing affinity for a potassium channel, but it does not report a pharmacodynamic or exposure-response relationship for Potassium itself. |
-| PGx | Echizen_2016 | not_relevant | 2 | 5 | The paper mentions CYP2C19 polymorphism affects exposure by 15-29%, but explicitly states this is clinically insignificant and does not provide fitted pharmacogenomic effect sizes. |
+| PGx | Echizen_2016 | not_relevant | 2 | 5 | Reports a minor, clinically insignificant pharmacogenomic effect on exposure (AUC) via CYP2C19 polymorphism, but lacks a specific fitted effect size and focuses primarily on general PK/PD characteristics. |
 | popPK | Eissing_2024 | irrelevant | 0 | 0 | no_text gate: only 157 chars of text extracted (&lt; 400) |
 | PD | Eissing_2024 | not_relevant | 0 | 0 | The paper analyzes the pharmacokinetics and pharmacodynamics of finerenone, not potassium. |
-| PGx | Ekhart_2008 | not_relevant | 0 | 0 | The paper investigates the pharmacokinetics of cyclophosphamide, not potassium. |
-| popPK | El_2026 | irrelevant | 0 | 0 | The study reports pharmacokinetic parameters for ciprofloxacin, not potassium. |
+| PGx | Ekhart_2008 | not_relevant | 0 | 0 | The paper focuses on the pharmacokinetics of cyclophosphamide, not potassium. |
+| popPK | El_2026 | irrelevant | 0 | 0 | The paper reports pharmacokinetic parameters for ciprofloxacin, not potassium. |
 | PD | El_2026 | not_relevant | 0 | 0 | The paper reports a population pharmacokinetic (popPK) model and probability of target attainment (PTA) for a static PK/PD index (AUC/MIC), but it does not report a pharmacodynamic (PD) model, concentration-effect curve, or numeric PD parameters (e.g., Emax, EC50) for the drug. |
-| popPK | Elalem_2026 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of DPP-4 inhibitors, not potassium. |
+| popPK | Elalem_2026 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of dipeptidyl peptidase-IV (DPP4) inhibitors, not potassium. |
 | popPK | Eleveld_2018 | irrelevant | 0 | 0 | no_text gate: only 100 chars of text extracted (&lt; 400) |
 | PD | Eleveld_2018 | not_relevant | 0 | 0 | The paper describes a PK/PD model for propofol, not potassium. |
-| popPK | Eleveld_2026 | irrelevant | 0 | 0 | The paper is a methodological comparison of software tools (OpenPMX vs NONMEM) and does not report pharmacokinetic parameters for potassium. |
+| popPK | Eleveld_2026 | irrelevant | 0 | 0 | The paper describes software validation for population PK modeling but does not report PK parameters for potassium. |
 | PD | Eleveld_2026 | not_relevant | 0 | 0 | The paper is a methodological comparison of software tools (OpenPMX vs NONMEM) and does not report any pharmacodynamic or exposure-response data for Potassium. |
-| PGx | Engh_1989 | not_relevant | 0 | 0 | The paper describes the structural biology of the alpha-1-antitrypsin S variant and does not report pharmacokinetic or pharmacodynamic parameters for potassium. |
-| PGx | Eriksson_1986 | not_relevant | 0 | 0 | The paper studies ethanol-induced motor impairment and neuronal enzyme activities in rat lines, not the pharmacokinetics or pharmacodynamics of potassium. |
-| PGx | Escande_2000 | not_relevant | 0 | 0 | The text is a qualitative review of the hypothesis that genetic variants in cardiac ion channels affect drug-induced QT prolongation, but it does not report specific pharmacogenomic data, fitted effect sizes, or quantitative PK/PD parameters for potassium. |
+| PGx | Engh_1989 | not_relevant | 0 | 0 | The paper describes the structural properties of a human protein variant (alpha-1-antitrypsin), not a pharmacogenomic effect on the PK/PD of a potassium drug. |
+| PGx | Eriksson_1986 | not_relevant | 0 | 0 | The study investigates the effect of ethanol on neuronal enzymes in rat lines selected for behavioral response, not the effect of a genetic variant on the pharmacokinetics or pharmacodynamics of a specific drug. |
+| PGx | Escande_2000 | not_relevant | 2 | 1 | The text is a general introduction discussing the potential role of cardiac ion channel gene mutations (like Long QT syndrome genes) in drug-induced QT prolongation, but it does not report a specific pharmacogenomic effect size on a potassium PK/PD parameter. |
 | popPK | Farooq_2025 | irrelevant | 0 | 0 | no_text gate: only 215 chars of text extracted (&lt; 400) |
 | PD | Farooq_2025 | not_relevant | 0 | 0 | The paper analyzes the pharmacokinetics and pharmacodynamics of meropenem and fosfomycin, not potassium. |
-| popPK | Farooq_2026 | irrelevant | 0 | 0 | The study focuses on the pharmacodynamics of meropenem and fosfomycin, not the pharmacokinetics of potassium. |
+| popPK | Farooq_2026 | irrelevant | 0 | 0 | The study investigates meropenem and fosfomycin, not potassium. |
 | PD | Farooq_2026_2 | not_relevant | 0 | 0 | The paper is a response regarding antibiotic susceptibility (Meropenem/Fosfomycin) and contains no pharmacodynamic or exposure-response analysis for Potassium. |
-| PGx | Fay_1990 | not_relevant | 2 | 8 | The paper reports a pharmacodynamic effect of halothane/succinylcholine on potassium levels in MHS vs normal pigs, but it does not report a pharmacokinetic parameter of potassium itself, nor is potassium the primary drug of interest in a pharmacogenomic PK/PD study context (it is a biomarker of the MH reaction). |
+| PGx | Fay_1990 | not_relevant | 0 | 10 | The paper discusses halothane-induced malignant hyperthermia and plasma potassium changes in pigs, not the pharmacokinetics or pharmacodynamics of potassium as a therapeutic drug. |
 | popPK | Fonteriz_1987 | irrelevant | 0 | 0 | no_text gate: only 64 chars of text extracted (&lt; 400) |
 | PD | Fonteriz_1987 | not_relevant | 0 | 0 | The paper focuses on the stereochemistry of dihydropyridines and their interaction with calcium channels, not on the pharmacodynamics of Potassium. |
 | popPK | Fouad_2024 | irrelevant | 0 | 0 | The study reports pharmacokinetic parameters for cefazolin, not potassium. |
-| PGx | Franchini_2015 | not_relevant | 0 | 0 | The paper concerns pharmacogenetics of vitamin K antagonists and bleeding complications, not potassium PK/PD. |
-| popPK | Frankhuyzen_1980 | irrelevant | 0 | 0 | The study is an in-vitro neuropharmacology experiment using potassium chloride to induce depolarization, not a pharmacokinetic study of potassium as a drug. |
+| PGx | Franchini_2015 | not_relevant | 0 | 0 | The paper discusses pharmacogenetic testing for vitamin K antagonists, not potassium. |
+| popPK | Frankhuyzen_1980 | irrelevant | 0 | 0 | The study investigates the effect of noradrenaline on serotonin release in rat hippocampus slices, using potassium only as a depolarizing agent, not as the subject drug for PK analysis. |
 | popPK | Fukamatsu_2026 | irrelevant | 0 | 0 | The study models the pharmacokinetics of anticoagulant rodenticides (warfarin and diphacinone), not potassium. |
-| PGx | Funato_2010 | not_relevant | 0 | 0 | The paper reviews genetic biomarkers for cancer therapy (EGFR/K-ras) and does not discuss potassium pharmacokinetics or pharmacodynamics. |
-| PGx | Furuta_2009 | not_relevant | 0 | 0 | The paper discusses pharmacogenomics for chemotherapy agents (e.g., 5-FU, gemcitabine) in GI cancer, not potassium. |
+| PGx | Funato_2010 | not_relevant | 0 | 0 | The paper reviews biomarkers for cancer therapy efficacy and contains no data on pharmacokinetic or pharmacodynamic parameters for potassium. |
+| PGx | Furuta_2009 | not_relevant | 0 | 0 | The paper discusses pharmacogenomics in GI cancer chemotherapy (5-FU, gemcitabine, etc.) and makes no mention of the drug potassium or its pharmacokinetics/pharmacodynamics. |
 | PGx | Gage_2008 | not_relevant | 0 | 0 | The paper discusses pharmacogenetics of warfarin, not potassium. |
-| PGx | Gao_2022 | not_relevant | 0 | 0 | The paper investigates the pharmacogenomics of tacrolimus, not potassium. |
-| PGx | Garcia_2009 | not_relevant | 0 | 0 | The paper focuses on vitamin K antagonists and bleeding complications, not potassium pharmacokinetics or pharmacodynamics. |
-| PGx | Gaw_1994 | not_relevant | 0 | 0 | The paper investigates the relationship between Apo(a) gene variants and Lipoprotein(a) levels, not the pharmacokinetics or pharmacodynamics of potassium. |
-| PGx | Gehrig_1995 | not_relevant | 0 | 0 | The paper describes plant biology (PEPC isogenes in Kalanchoe blossfeldiana) and is unrelated to human pharmacogenomics or potassium pharmacokinetics. |
+| PGx | Garcia_2009 | not_relevant | 0 | 0 | The paper addresses bleeding complications in patients using vitamin K antagonists, not the pharmacokinetics/pharmacodynamics of potassium. |
+| PGx | Gaw_1994 | not_relevant | 0 | 0 | The paper studies the genetics of lipoprotein(a) concentrations, not a drug PK/PD parameter. |
+| PGx | Gehrig_1995 | not_relevant | 0 | 0 | The paper discusses phosphoenolpyruvate carboxylase isogenes in a plant, not human pharmacogenomics or potassium pharmacokinetics/dynamics. |
 | popPK | Geng_2024 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of S-warfarin, not potassium. |
-| PGx | Geng_2024 | not_relevant | 0 | 0 | The paper focuses on warfarin pharmacogenomics, not potassium. |
-| PGx | Giovannetti_2006 | not_relevant | 0 | 0 | The paper discusses pharmacogenetics of anticancer drugs in pancreatic cancer and does not mention potassium or its PK/PD parameters. |
-| PGx | Glatard_2019 | not_relevant | 0 | 0 | The paper reports pharmacogenomic effects on varenicline pharmacokinetics, not potassium. |
-| popPK | Goeyvaerts_2026 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of the antiviral drug mosnodenvir, not potassium. |
-| popPK | Golabchifar_2016 | irrelevant | 0 | 0 | The study reports pharmacokinetic parameters for imatinib, not potassium. |
-| PGx | González-Iglesias_2025 | not_relevant | 0 | 0 | The paper reports pharmacogenomic effects on apixaban, not potassium. |
+| PGx | Geng_2024 | not_relevant | 0 | 0 | The paper focuses on the pharmacogenomics of warfarin (CYP2C9/VKORC1), not potassium. |
+| PGx | Giovannetti_2006 | not_relevant | 0 | 0 | The text describes pharmacogenetics of anticancer drug sensitivity in pancreatic cancer (FUDR, gemcitabine) and does not discuss potassium pharmacokinetics or pharmacodynamics. |
+| PGx | Glatard_2019 | not_relevant | 0 | 0 | The study investigates the pharmacokinetics of varenicline, not potassium. |
+| popPK | Goeyvaerts_2026 | irrelevant | 0 | 0 | The study reports population pharmacokinetic parameters for the antiviral drug mosnodenvir, not for potassium. |
+| popPK | Golabchifar_2016 | irrelevant | 0 | 0 | The paper reports pharmacokinetic parameters for imatinib, not potassium. |
+| PGx | González-Iglesias_2025 | not_relevant | 0 | 0 | The paper studies apixaban pharmacogenomics, not potassium. |
 | popPK | Gosselin_2023 | irrelevant | 0 | 0 | no_text gate: only 141 chars of text extracted (&lt; 400) |
 | PD | Gosselin_2023 | not_relevant | 0 | 0 | The paper focuses on Inclisiran (an siRNA), not Potassium, and does not report PD parameters for Potassium. |
-| popPK | Goulooze_2022 | irrelevant | 0 | 0 | The study models the pharmacodynamic effect of finerenone on serum potassium levels, not the pharmacokinetic disposition parameters (CL, V, etc.) of potassium itself. |
-| PGx | Green_2017 | not_relevant | 0 | 0 | The paper reports pharmacogenomic effects on the pharmacokinetics of etravirine, not potassium. |
-| PGx | Guan_2018 | not_relevant | 0 | 0 | The paper reports a population pharmacokinetic model for diltiazem, not potassium, and does not report a pharmacogenomic effect on a PK/PD parameter of potassium. |
-| PGx | Gueorguieva_2010 | not_relevant | 0 | 0 | The paper focuses on the pharmacokinetics of desipramine and CYP2D6 genotypes, not potassium. |
+| popPK | Goulooze_2022 | irrelevant | 1 | 0 | The study focuses on the pharmacokinetics and pharmacodynamics of the drug finerenone, with potassium serving as the pharmacodynamic endpoint (serum concentration) rather than the subject drug being dosed. |
+| PGx | Green_2017 | not_relevant | 0 | 0 | The paper reports pharmacogenomic effects on etravirine, not potassium. |
+| PGx | Guan_2018 | not_relevant | 1 | 5 | The paper studies the pharmacokinetics of diltiazem (a calcium channel blocker), not potassium, although it was conducted in renal transplant patients. |
+| PGx | Gueorguieva_2010 | not_relevant | 0 | 0 | The paper discusses the pharmacokinetics of desipramine and CYP2D6 metabolizer phenotypes, not potassium. |
 | popPK | Györgyi_1972 | irrelevant | 0 | 0 | no_text gate: only 111 chars of text extracted (&lt; 400) |
-| PGx | Habenschus_2021 | not_relevant | 0 | 0 | The paper investigates the in vitro inhibitory potential of a pesticide on CYP450 enzymes and does not report any pharmacogenomic effects on the PK or PD of potassium. |
+| PGx | Habenschus_2021 | not_relevant | 0 | 0 | The study investigates CYP450 enzyme inhibition by a pesticide using human liver microsomes and does not report pharmacogenomic variations or effects on PK/PD parameters for potassium. |
 | PGx | Habtewold_2017 | not_relevant | 0 | 0 | The paper reports pharmacogenomic effects on the PK of efavirenz, not potassium. |
-| PGx | Hamberg_2010 | not_relevant | 0 | 0 | The paper focuses on warfarin pharmacogenomics (CYP2C9/VKORC1) and INR response, not potassium. |
-| PGx | Han_2013 | not_relevant | 0 | 0 | The paper reports pharmacogenomic effects on tacrolimus pharmacokinetics, not potassium. |
-| PGx | Han_2025 | not_relevant | 0 | 0 | The paper focuses on age-dependent pharmacokinetics of CYP3A4 substrates (midazolam, fentanyl, etc.) and does not report pharmacogenomic effects on potassium PK/PD parameters. |
+| PGx | Han_2013 | not_relevant | 0 | 0 | The paper investigates the pharmacokinetics of tacrolimus, not potassium. |
+| PGx | Han_2025 | not_relevant | 0 | 0 | The paper focuses on age-dependent PBPK modeling for CYP3A4 substrates (midazolam, etc.), not pharmacogenomics or potassium. |
 | PD | Harada_2025 | not_relevant | 0 | 0 | The paper analyzes the pharmacokinetics and pharmacodynamics of Piperacillin-Tazobactam, not Potassium. |
-| popPK | Hardiansyah_2025 | irrelevant | 0 | 0 | The paper is a review of population pharmacokinetic modeling in radiopharmaceutical therapy and does not report quantitative disposition parameters for potassium. |
+| popPK | Hardiansyah_2025 | irrelevant | 0 | 0 | The paper is a review of population pharmacokinetics in radiopharmaceutical therapy and does not focus on the drug potassium nor report any quantitative PK parameters for it. |
 | PD | Hardiansyah_2025 | not_relevant | 2 | 0 | The paper is a review of population PK modeling in radiopharmaceutical therapy; while it mentions PD analysis in the context of other studies, it does not report specific numeric PD parameters or exposure-response curves for Potassium. |
-| PGx | Hashimoto_1993 | not_relevant | 0 | 0 | The paper describes the gene structure and transcriptional control of CYP3A4, not the pharmacokinetics or pharmacodynamics of potassium. |
-| PGx | He_2023 | not_relevant | 0 | 0 | The paper analyzes the pharmacokinetics of imatinib, not potassium, and reports that genetic polymorphisms did not significantly affect imatinib clearance. |
-| popPK | He_2025 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of YPEG-rhGH (a growth hormone analog), not potassium. |
+| PGx | Hashimoto_1993 | not_relevant | 0 | 0 | The paper discusses the gene structure and transcriptional control of CYP3A4 (a liver enzyme) and does not mention potassium or its PK/PD parameters. |
+| PGx | He_2023 | not_relevant | 0 | 0 | The study explicitly states that genetic polymorphisms did not have a significant effect on imatinib clearance, reporting a lack of pharmacogenomic effect. |
+| popPK | He_2025 | irrelevant | 0 | 0 | The study reports the pharmacokinetics of YPEG-rhGH (a growth hormone analog), not potassium. |
 | popPK | Heida_2026 | irrelevant | 0 | 0 | The study reports pharmacokinetic parameters for mycophenolic acid (MPA), not potassium. |
-| popPK | Heitmann_1994 | irrelevant | 0 | 0 | The study uses total body potassium as a diagnostic method for body composition, not as a subject drug for pharmacokinetic analysis. |
+| popPK | Heitmann_1994 | irrelevant | 0 | 0 | The paper uses total body potassium as a diagnostic marker for body composition, not as the subject drug for pharmacokinetic analysis. |
 | popPK | Henry_1995 | irrelevant | 0 | 0 | no_text gate: only 127 chars of text extracted (&lt; 400) |
 | PD | Henry_1995 | not_relevant | 0 | 0 | The paper describes electrophysiological characterization of ion channel function (GIRK1) in Xenopus oocytes, not a pharmacodynamic exposure-response or dose-response relationship for the drug Potassium. |
-| PGx | Hernández-Lozano_2021 | not_relevant | 0 | 0 | The paper investigates the pharmacokinetics of ciprofloxacin, not potassium. |
+| PGx | Hernández-Lozano_2021 | not_relevant | 0 | 0 | The study investigates the pharmacokinetics of ciprofloxacin, not potassium, and focuses on mouse transporters rather than human pharmacogenomics. |
 | PD | Hescheler_1987 | not_relevant | 0 | 0 | The text is a title regarding ATP-dependent potassium channels and does not contain data, analysis, or numeric parameters for a pharmacodynamic exposure-response relationship. |
-| popPK | Heysell_2023 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of anti-tuberculosis drugs (e.g., moxifloxacin, levofloxacin) and does not report quantitative disposition parameters for potassium. |
+| popPK | Heysell_2023 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of tuberculosis drugs (e.g., moxifloxacin, levofloxacin) and does not report any parameters for potassium. |
 | PD | Heysell_2023 | not_relevant | 0 | 0 | The paper analyzes exposure-response relationships for anti-tuberculosis drugs (moxifloxacin, levofloxacin, etc.), not Potassium. |
-| PGx | Hicks_2025 | not_relevant | 0 | 0 | The paper is an interview about implementing pharmacogenomics in cancer treatment and does not report specific pharmacokinetic or pharmacodynamic effects of gene variants on potassium. |
-| PGx | Hirt_2006 | not_relevant | 0 | 0 | The study investigates the impact of pregnancy (physiological state) on nelfinavir pharmacokinetics, not the effect of a specific gene variant or genotype. |
-| popPK | Hoeben_2026 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of calaspargase pegol (an enzyme), not potassium. |
-| PGx | Hoffmann_1991 | not_relevant | 0 | 0 | The paper studies energy metabolism in broilers and contains no information on pharmacogenomics, potassium, or drug PK/PD parameters. |
-| PGx | Hou_2024 | not_relevant | 0 | 0 | The paper characterizes the metabolism of ciprofol and predicts drug-drug interactions, but does not report pharmacogenomic effects on potassium PK/PD parameters. |
-| PGx | Houlston_1990 | not_relevant | 0 | 0 | The paper investigates the genetic epidemiology of LDL cholesterol metabolism, not the pharmacokinetics or pharmacodynamics of potassium. |
-| popPK | Huang_1986 | irrelevant | 0 | 0 | The paper is an in-vitro mechanistic study of (Na++K+)-ATPase enzyme kinetics, not a pharmacokinetic study of potassium disposition. |
-| PGx | Huang_2020 | not_relevant | 0 | 0 | The paper reports pharmacogenomic effects on the pharmacokinetics of tacrolimus, not potassium. |
-| PGx | Huang_2024 | not_relevant | 0 | 0 | The paper focuses on warfarin pharmacogenomics and does not report any pharmacokinetic or pharmacodynamic parameters for potassium. |
-| PGx | Hussain_1991 | not_relevant | 0 | 0 | The paper discusses alpha-1-antitrypsin deficiency and liver disease, not the pharmacokinetics or pharmacodynamics of potassium. |
-| PGx | Hwang_2023 | not_relevant | 0 | 0 | The study explicitly states that pharmacogenomic analysis found no genetic variants associated with the pharmacokinetics or pharmacodynamics of the drug. |
-| PGx | Ichimura_2012 | not_relevant | 0 | 0 | The paper investigates warfarin pharmacodynamics (INR/NPT) and does not report any pharmacokinetic or pharmacodynamic parameters for potassium. |
-| popPK | Igarashi_2023 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of cefepime and nacubactam in mice, not potassium. |
+| PGx | Hicks_2025 | not_relevant | 0 | 0 | The paper is an interview discussing the implementation of pharmacogenomics in cancer treatment and does not report specific PK/PD parameter changes for potassium or any other drug linked to genetic variants. |
+| PGx | Hirt_2006 | not_relevant | 0 | 0 | The paper investigates the effects of pregnancy (physiological state) on nelfinavir pharmacokinetics, not the effects of gene variants/genotypes (pharmacogenomics). |
+| popPK | Hoeben_2026 | irrelevant | 0 | 0 | The study reports pharmacokinetic parameters for Calaspargase pegol (CalPEG) in mice and humans, not for potassium. |
+| PGx | Hoffmann_1991 | not_relevant | 0 | 0 | The paper studies energy metabolism in broilers and does not mention potassium, pharmacogenomics, or PK/PD parameters. |
+| PGx | Hou_2024 | not_relevant | 0 | 0 | The paper investigates UGT isoform identification and potential drug-drug interactions for the anesthetic ciprofol, not pharmacogenomic effects on potassium pharmacokinetics or pharmacodynamics. |
+| PGx | Houlston_1990 | not_relevant | 0 | 0 | The paper investigates the genetics of LDL cholesterol metabolism, not the pharmacokinetics or pharmacodynamics of a potassium drug. |
+| popPK | Huang_1986 | irrelevant | 0 | 0 | The study is an in-vitro biochemical analysis of (Na++K+)-ATPase enzyme kinetics, not a pharmacokinetic study of potassium disposition. |
+| PGx | Huang_2020 | not_relevant | 0 | 0 | The paper reports the pharmacokinetics of tacrolimus, not potassium. |
+| PGx | Huang_2024 | not_relevant | 0 | 0 | The paper investigates pharmacogenomics for warfarin, not potassium. |
+| PGx | Hussain_1991 | not_relevant | 0 | 0 | The paper discusses the clinical presentation and treatment of alpha 1-antitrypsin deficiency, containing no information about the pharmacokinetics or pharmacodynamics of potassium. |
+| PGx | Hwang_2023 | not_relevant | 2 | 0 | The study explicitly reports that pharmacogenomic analysis found no genetic variants associated with the pharmacokinetics or pharmacodynamics of the drug. |
+| PGx | Ichimura_2012 | not_relevant | 0 | 0 | The paper investigates warfarin pharmacogenomics (CYP2C9/VKORC1) and coagulation parameters, which are unrelated to potassium. |
+| popPK | Igarashi_2023 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of the antibiotics cefepime and nacubactam, not potassium. |
 | PD | Igarashi_2023 | not_relevant | 0 | 0 | The paper analyzes the pharmacokinetics and pharmacodynamics of the antibiotic combination Cefepime/Nacubactam, not Potassium. |
-| PGx | Imamura_1980 | not_relevant | 0 | 0 | The paper discusses immunology and tumor antigen expression in mice, not pharmacogenomics or potassium pharmacokinetics. |
-| popPK | Ing_2012 | irrelevant | 0 | 0 | The paper is a review of opioid pharmacokinetics and does not study potassium. |
+| PGx | Imamura_1980 | not_relevant | 0 | 0 | The paper discusses the expression and immunogenicity of H-2K-coded alloantigens on murine tumors, which is unrelated to pharmacogenomics of potassium. |
+| popPK | Ing_2012 | irrelevant | 0 | 0 | The paper is a mini-review on the pharmacokinetics and pharmacodynamics of opioids and does not contain any data for potassium. |
 | PD | Ing_2012 | not_relevant | 1 | 0 | The paper is a minireview of opioids and does not contain any data, analysis, or numeric parameters for Potassium. |
-| PGx | Inuzuka_1976 | not_relevant | 0 | 0 | The paper studies the mechanism of action of a chemical mutagen (4NPO) on E. coli proline metabolism, not the pharmacogenomics of potassium. |
-| PGx | Isbister_2016 | not_relevant | 0 | 0 | The paper discusses metoprolol pharmacokinetics and CYP2D6 status, not potassium. |
-| PGx | Izumi_1993 | not_relevant | 0 | 0 | The paper investigates the neurotoxic mechanism of sodium nitroprusside in rat hippocampal slices and does not report any pharmacogenomic effects on PK or PD parameters. |
-| popPK | Jain_2026 | irrelevant | 0 | 0 | The study reports pharmacokinetic parameters for amiloride, not potassium. |
+| PGx | Inuzuka_1976 | not_relevant | 0 | 0 | The paper studies the mechanism of action of a mutagen in bacteria, not the pharmacogenomic effect of potassium. |
+| PGx | Isbister_2016 | not_relevant | 0 | 0 | The paper discusses metoprolol pharmacokinetics and mentions CYP2D6 status but does not report any data regarding potassium levels or pharmacogenomic effects on potassium parameters. |
+| PGx | Izumi_1993 | not_relevant | 0 | 0 | The study investigates neurotoxicity in rat hippocampal slices and does not report on gene variants, genotypes, or pharmacogenomic effects on the PK or PD parameters of potassium. |
+| popPK | Jain_2026 | irrelevant | 0 | 0 | The study investigates the population pharmacokinetics of amiloride, not potassium. |
 | PD | Jain_2026 | not_relevant | 0 | 0 | The paper reports a population pharmacokinetic (PopPK) model for intranasal amiloride but does not include any pharmacodynamic (PD) data, exposure-response analysis, or numeric PD parameters. |
-| popPK | Jang_2008 | irrelevant | 0 | 0 | The study focuses on thyroid dose estimation and iodine metabolism modeling, not the pharmacokinetic parameters of potassium itself. |
-| PGx | Jawaid_2010 | not_relevant | 0 | 0 | The paper discusses HMGCR and statin sensitivity, not potassium pharmacokinetics or pharmacodynamics. |
-| popPK | Jensen_1995 | irrelevant | 0 | 0 | The study investigates the pharmacodynamics of isoflurane in rabbit vessels, using potassium only as a constricting agent, not as the subject drug for PK analysis. |
-| popPK | Jeong_2025 | irrelevant | 0 | 0 | The study reports population pharmacokinetic parameters for telmisartan, not potassium. |
-| PGx | Jhun_2015 | not_relevant | 0 | 0 | The study investigates the effect of VDR polymorphisms on the association between lead exposure and pulse pressure, not the pharmacokinetics or pharmacodynamics of potassium. |
+| popPK | Jang_2008 | irrelevant | 0 | 0 | The study focuses on thyroid dose estimation and iodine metabolism kinetics in a nuclear emergency context, not the population pharmacokinetic parameters (CL, V, etc.) of potassium itself. |
+| PGx | Jawaid_2010 | not_relevant | 0 | 0 | The paper studies HMGCR and statins, not potassium. |
+| popPK | Jensen_1995 | irrelevant | 0 | 0 | The study investigates the pharmacodynamics of isoflurane in rabbit vessels using potassium as a constricting agent, not the pharmacokinetics of potassium. |
+| popPK | Jeong_2025 | irrelevant | 0 | 0 | The paper reports pharmacokinetic parameters for telmisartan, not potassium. |
+| PGx | Jhun_2015 | not_relevant | 0 | 0 | The paper investigates the interaction between lead exposure and VDR genotypes on pulse pressure; it does not report a pharmacogenomic effect on the PK or PD of potassium. |
 | popPK | Ji_2022 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of cefoperazone and sulbactam, not potassium. |
 | PD | Ji_2022 | not_relevant | 0 | 0 | The paper focuses on the pharmacokinetics of cefoperazone and sulbactam and their antibacterial efficacy, not on the pharmacodynamics of potassium. |
-| popPK | Ji_2025 | irrelevant | 0 | 0 | no_text gate: only 138 chars of text extracted (&lt; 400) |
+| popPK | Ji_2025 | irrelevant | 0 | 0 | The paper reports pharmacokinetic parameters for the antibiotic eravacycline, not potassium. |
 | PD | Ji_2025 | not_relevant | 0 | 0 | The paper focuses on eravacycline, not Potassium, and does not report any pharmacodynamic or exposure-response relationship for Potassium. |
-| popPK | Jia_2026 | irrelevant | 0 | 0 | The study reports population pharmacokinetic parameters for rivaroxaban, not potassium. |
+| popPK | Jia_2026 | irrelevant | 0 | 0 | The study reports population pharmacokinetics for rivaroxaban, not potassium. |
 | PD | Jia_2026 | not_relevant | 0 | 0 | The paper reports a population pharmacokinetic (PopPK) model for rivaroxaban but does not include a pharmacodynamic (PD) model or exposure-response analysis with numeric PD parameters (e.g., Emax, EC50); it only uses external exposure thresholds for bleeding risk. |
-| popPK | Jiang_2024 | irrelevant | 0 | 0 | The study reports pharmacokinetic parameters for the drug nifekalant, not for potassium (which is only mentioned as a co-administered supplement or physiological context). |
-| popPK | Jitaree_2019 | irrelevant | 0 | 0 | no_text gate: only 179 chars of text extracted (&lt; 400) |
+| popPK | Jiang_2024 | irrelevant | 0 | 0 | The study reports pharmacokinetic parameters for nifekalant (a potassium channel blocker), not for potassium itself. |
+| popPK | Jitaree_2019 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of colistin (CMS), not potassium. |
 | PD | Jitaree_2019 | not_relevant | 0 | 0 | The paper focuses on Colistin, not Potassium, and does not report any pharmacodynamic relationship for Potassium. |
-| popPK | Jovanović_2026 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of adalimumab, not potassium. |
+| popPK | Jovanović_2026 | irrelevant | 0 | 0 | The paper reports pharmacokinetic parameters for Adalimumab, not potassium. |
 | PD | Jovanović_2026 | not_relevant | 0 | 0 | The paper focuses exclusively on the population pharmacokinetic (PK) modeling of Adalimumab and does not report any pharmacodynamic (PD) or exposure-response relationships. |
-| popPK | Jung_2026 | irrelevant | 0 | 0 | The study models potassium-competitive acid blockers (PCABs) like vonoprazan, not the drug potassium itself. |
-| popPK | Kelly_1995 | irrelevant | 0 | 0 | The study is a pharmacological investigation of potassium channel blockers on muscle contraction, not a pharmacokinetic study of potassium disposition. |
-| popPK | Khoei_2026 | irrelevant | 0 | 0 | The study reports population pharmacokinetic parameters for dolutegravir, not potassium. |
+| popPK | Jung_2026 | irrelevant | 0 | 0 | The study models pharmacokinetic parameters for potassium-competitive acid blockers (drugs like vonoprazan), not for the drug potassium itself. |
+| popPK | Kelly_1995 | irrelevant | 0 | 0 | The study investigates the pharmacological effects of potassium channel blockers on muscle contractions, not the pharmacokinetic disposition of potassium. |
+| popPK | Khoei_2026 | irrelevant | 0 | 0 | The study reports population pharmacokinetics for dolutegravir, not potassium. |
 | PD | Khoei_2026 | not_relevant | 0 | 0 | The paper reports population pharmacokinetics (PK) of Dolutegravir, not pharmacodynamics (PD) or exposure-response relationships for Potassium. |
-| popPK | Ki_2020 | irrelevant | 0 | 0 | The paper discusses general pharmacokinetic-pharmacodynamic modeling concepts and mentions inhalational anesthetics, but does not report any quantitative pharmacokinetic parameters for potassium. |
+| popPK | Ki_2020 | irrelevant | 0 | 0 | The paper discusses general pharmacokinetic-pharmacodynamic modeling concepts for inhalational anesthetics and contains no specific data or parameters for potassium. |
 | PD | Ki_2020 | not_relevant | 2 | 0 | The paper is a methodological review describing semi-compartmental PK/PD modeling approaches and provides a generic NONMEM code template, but it does not report specific numeric PD parameters (Emax, EC50, ke0) for Potassium or any specific drug. |
-| PGx | Kiander_2022 | not_relevant | 0 | 0 | The paper focuses on the pharmacogenomics of rosuvastatin and OATP1B1, not potassium. |
-| PGx | Kim_2019 | not_relevant | 0 | 0 | The paper is a review of melanoma therapies (BRAF/MEK inhibitors, immunotherapy) and does not discuss potassium pharmacokinetics or pharmacogenomics. |
-| popPK | Kim_2026 | irrelevant | 0 | 0 | The study reports pharmacokinetic parameters for bevacizumab (CT-P16), not potassium. |
+| PGx | Kiander_2022 | not_relevant | 3 | 2 | The study reports a pharmacogenomic effect (SLCO1B1 variants) on the PK of rosuvastatin, not on a PK/PD parameter of potassium. |
+| PGx | Kim_2019 | not_relevant | 0 | 0 | The paper is a review of melanoma therapies (BRAF/MEK inhibitors, immunotherapy) and does not discuss potassium or pharmacogenomic effects on its PK/PD. |
+| popPK | Kim_2026 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of bevacizumab (a monoclonal antibody biosimilar), not potassium. |
 | PD | Kim_2026 | not_relevant | 0 | 0 | The paper reports a population pharmacokinetic (PK) model for bevacizumab (CT-P16) and compares PK parameters, but it does not model or report a pharmacodynamic (PD) or exposure-response relationship with numeric PD parameters (e.g., Emax, EC50). |
-| PGx | Knowles_2004 | not_relevant | 0 | 0 | The text is a biographical profile of a pharmaceutical executive and contains no pharmacogenomic data or drug effects. |
-| popPK | Kong_2025 | irrelevant | 0 | 0 | The paper describes a software framework (PKPy) and uses theophylline as a demonstration dataset, not potassium. |
+| PGx | Knowles_2004 | not_relevant | 0 | 0 | The text is a biographical profile of an executive at Roche and contains no pharmacogenomic data or clinical trial results. |
+| popPK | Kong_2025 | irrelevant | 0 | 0 | The paper describes a software framework and uses theophylline as a test drug; it does not study potassium pharmacokinetics. |
 | PD | Kong_2025 | not_relevant | 0 | 0 | The paper describes a pharmacokinetic (PK) analysis framework and does not report any pharmacodynamic (PD) or exposure-response relationships for Potassium or any other drug. |
-| PGx | Kumondai_2021 | not_relevant | 0 | 0 | The paper investigates CYP2C9 variants and their effect on warfarin and tolbutamide metabolism, not potassium. |
+| PGx | Kumondai_2021 | not_relevant | 0 | 10 | The paper studies CYP2C9 variants and their effect on warfarin and tolbutamide kinetics, which is unrelated to the pharmacokinetics or pharmacodynamics of potassium. |
 | popPK | Ladebo_2020 | irrelevant | 0 | 0 | no_text gate: only 133 chars of text extracted (&lt; 400) |
 | PD | Ladebo_2020 | not_relevant | 0 | 0 | The paper focuses on oxycodone, not Potassium. |
-| popPK | Lafontant_2026 | irrelevant | 0 | 0 | The paper is a body composition study in humans and does not report pharmacokinetic parameters for potassium. |
-| popPK | Lallemand_2023 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of benzylpenicillin (penicillin) in horses, where potassium is merely the salt form of the drug, not the subject drug. |
+| popPK | Lafontant_2026 | irrelevant | 0 | 0 | The paper concerns body composition modeling (fat mass, total body water) in adults and does not contain pharmacokinetic parameters for the drug potassium. |
+| popPK | Lallemand_2023 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of benzylpenicillin in horses, with potassium being only the salt formulation (potassium BP) and not the subject drug. |
 | PD | Lallemand_2023 | not_relevant | 0 | 0 | The paper focuses on population pharmacokinetics (PK) of benzylpenicillin to establish clinical breakpoints using PK/PD indices (fAUC/MIC, fT&gt;MIC), but it does not report a pharmacodynamic (PD) model or numeric PD parameters (e.g., Emax, EC50) for the drug itself. |
-| PGx | Landrigan_1991 | not_relevant | 0 | 0 | The paper discusses lead exposure and bone lead measurement, not the pharmacokinetics or pharmacodynamics of potassium. |
-| popPK | Lass_2024 | irrelevant | 0 | 0 | The study reports pharmacokinetic parameters for spironolactone and its metabolites, not for potassium itself. |
+| PGx | Landrigan_1991 | not_relevant | 2 | 0 | The paper discusses XRF technology for measuring lead and mentions genetic polymorphism only as a future direction for assessing lead pharmacokinetics, rather than reporting an actual study on potassium pharmacogenomics. |
+| popPK | Lass_2024 | irrelevant | 0 | 0 | The study reports pharmacokinetic parameters for spironolactone and its metabolites, not for potassium, which is merely described as a "potassium sparing diuretic". |
 | popPK | Le_1995 | irrelevant | 0 | 0 | no_text gate: only 80 chars of text extracted (&lt; 400) |
-| PGx | Lee_2021 | not_relevant | 0 | 0 | The paper investigates a pharmacokinetic drug-drug interaction between tofacitinib and voriconazole in rats, not a pharmacogenomic effect on potassium. |
-| PGx | Lee_2022 | not_relevant | 0 | 0 | The paper focuses on the pharmacokinetics of metoprolol, not potassium. |
-| popPK | Lee_2023 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of tripegfilgrastim, not potassium. |
-| popPK | Lee_2024 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics and pharmacodynamics of AST-001 (L-serine), not potassium. |
-| PGx | Lee_2026 | not_relevant | 0 | 0 | The paper characterizes the metabolism and drug-drug interaction potential of eutylone, not the pharmacokinetics or pharmacodynamics of potassium. |
+| PGx | Lee_2021 | not_relevant | 0 | 0 | The paper investigates a drug-drug interaction (DDI) between tofacitinib and voriconazole in rats, not a pharmacogenomic effect, and does not involve the drug potassium. |
+| PGx | Lee_2022 | not_relevant | 3 | 2 | The paper focuses on the pharmacokinetics of metoprolol and CYP2D6, with no mention of potassium or its pharmacokinetic parameters. |
+| popPK | Lee_2023 | irrelevant | 0 | 0 | The paper focuses on the pharmacokinetics of tripegfilgrastim, not potassium. |
+| popPK | Lee_2024 | irrelevant | 0 | 0 | The study reports PK/PD parameters for AST-001 (L-serine) in autism patients, not potassium. |
+| PGx | Lee_2026 | not_relevant | 0 | 0 | The paper reports drug-drug interactions (CYP inhibition) for eutylone, not pharmacogenomic variants affecting a PK/PD parameter. |
 | popPK | Levy_1994 | irrelevant | 0 | 0 | no_text gate: only 87 chars of text extracted (&lt; 400) |
 | PD | Levy_1994 | not_relevant | 1 | 0 | The paper is a historical review of E.K. Marshall's contributions to PK/PD concepts and does not report specific numeric PD parameters or exposure-response data for Potassium. |
-| PGx | Li_2004 | not_relevant | 0 | 0 | The paper investigates in vitro CYP450 inhibition by proton pump inhibitors and does not report pharmacogenomic effects on the PK or PD of potassium. |
-| popPK | Li_2008 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of 5,6-dimethylxanthenone-4-acetic acid (DMXAA), not potassium. |
-| PGx | Li_2021 | not_relevant | 0 | 0 | The paper reports pharmacogenomic effects on tacrolimus pharmacokinetics, not potassium. |
-| popPK | Li_2022 | irrelevant | 0 | 0 | The study reports population pharmacokinetic parameters for asciminib, not potassium. |
-| popPK | Li_2022_2 | irrelevant | 0 | 0 | The study reports pharmacokinetic parameters for the monoclonal antibody AK111, not for potassium. |
+| PGx | Li_2004 | not_relevant | 0 | 0 | The paper focuses on in vitro inhibition of CYP450 enzymes by proton pump inhibitors and does not report pharmacogenomic effects on potassium parameters. |
+| popPK | Li_2008 | irrelevant | 0 | 0 | The study analyzes the pharmacokinetics of the drug DMXAA (5,6-dimethylxanthenone-4-acetic acid), not potassium. |
+| PGx | Li_2021 | not_relevant | 0 | 0 | The study analyzes the pharmacogenomics (CYP3A5) and pharmacokinetics of tacrolimus, not potassium. |
+| popPK | Li_2022 | irrelevant | 0 | 0 | The study focuses on the population pharmacokinetics of asciminib, not potassium, and reports no pharmacokinetic parameters for potassium. |
+| popPK | Li_2022_2 | irrelevant | 0 | 0 | The study reports pharmacokinetic parameters for the monoclonal antibody AK111, not for the drug potassium. |
 | popPK | Li_2023 | irrelevant | 0 | 0 | no_text gate: only 199 chars of text extracted (&lt; 400) |
-| PGx | Li_2023 | not_relevant | 0 | 0 | The paper focuses on omeprazole and CYP2C19, not potassium. |
-| popPK | Li_2023_2 | irrelevant | 0 | 0 | The study is an in-vitro electrophysiology investigation of encainide's effect on potassium channels, not a pharmacokinetic study of potassium as a drug. |
+| PGx | Li_2023 | not_relevant | 0 | 0 | The paper focuses on omeprazole pharmacokinetics and CYP2C19 polymorphisms, not potassium. |
+| popPK | Li_2023_2 | irrelevant | 0 | 0 | This is an electrophysiology study investigating the effect of encainide on potassium channels in rabbit coronary artery smooth muscle cells; it does not report pharmacokinetic parameters (CL, V, etc.) for potassium as a drug. |
 | PD | Li_2023_3 | not_relevant | 1 | 0 | The paper describes pharmacological activity and mentions favorable PK/PD profiles but does not provide numeric PD parameters or exposure-response data for Potassium. |
-| PGx | Li_2024 | not_relevant | 0 | 0 | The study explicitly states that none of the genetic covariates had a significant impact on the pharmacokinetics of vamorolone. |
-| popPK | Li_2026 | irrelevant | 0 | 0 | The study reports pharmacokinetic parameters for the monoclonal antibody gotistobart, not for potassium. |
+| PGx | Li_2024 | not_relevant | 5 | 5 | The study explicitly states that none of the assessed genetic covariates had any significant impact on the pharmacokinetics of vamorolone. |
+| popPK | Li_2026 | irrelevant | 0 | 0 | The study reports pharmacokinetic parameters for the monoclonal antibody gotistobart, not for the drug potassium. |
 | PD | Li_2026 | not_relevant | 0 | 0 | The paper reports a population pharmacokinetic (PK) model for gotistobart, not a pharmacodynamic (PD) or exposure-response model, and contains no numeric PD parameters. |
-| PGx | Liao_2020 | not_relevant | 0 | 0 | The paper describes in vitro ADME and DDI properties of rucaparib, not the pharmacokinetics or pharmacodynamics of potassium, and does not report pharmacogenomic effects. |
-| PGx | Liao_2022 | not_relevant | 0 | 0 | The paper reviews the pharmacokinetics of rucaparib and explicitly states that population PK analysis revealed no effect of race or other intrinsic factors, and it does not report any pharmacogenomic effects on potassium parameters. |
-| PGx | Lim_2021 | not_relevant | 0 | 0 | The paper investigates the in vitro inhibitory effects of khat extract on CYP enzymes, not the effect of a gene variant on the pharmacokinetics or pharmacodynamics of potassium. |
-| PGx | Lim_2022 | not_relevant | 0 | 0 | The paper investigates the in vitro inhibitory effects of cathine on CYP enzymes, not the pharmacogenomic effects of gene variants on potassium PK/PD parameters. |
-| PGx | Lin_2015 | not_relevant | 0 | 0 | The paper reports pharmacogenomic effects on warfarin, not potassium. |
-| popPK | Lioger_2017 | irrelevant | 0 | 0 | The study reports pharmacokinetic parameters for rituximab, not potassium. |
+| PGx | Liao_2020 | not_relevant | 0 | 0 | The paper characterizes the in vitro ADME properties and DDI potential of rucaparib, not the pharmacokinetics or pharmacodynamics of potassium, and contains no pharmacogenomic analysis. |
+| PGx | Liao_2022 | not_relevant | 0 | 0 | The paper reviews the PK/PD of Rucaparib and mentions a deleterious BRCA1/2 mutation as an indication for the drug, but it does not report how gene variants alter the pharmacokinetic or pharmacodynamic parameters of the drug (Rucaparib) or potassium. |
+| PGx | Lim_2021 | not_relevant | 0 | 0 | The paper studies in vitro CYP inhibition by khat extract and does not report pharmacogenomic effects on potassium pharmacokinetics or pharmacodynamics. |
+| PGx | Lim_2022 | not_relevant | 0 | 0 | The paper studies CYP450 inhibition by cathine, which does not involve potassium or potassium-specific pharmacokinetics/pharmacodynamics. |
+| PGx | Lin_2015 | not_relevant | 0 | 0 | The paper focuses on warfarin pharmacokinetics, not potassium. |
+| popPK | Lioger_2017 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of rituximab, not potassium. |
 | popPK | Liu_2006 | irrelevant | 0 | 0 | no_text gate: only 49 chars of text extracted (&lt; 400) |
-| PGx | Liu_2016 | not_relevant | 0 | 0 | The paper reports pharmacogenomic effects on esomeprazole, not potassium. |
-| PGx | Liu_2022 | not_relevant | 0 | 0 | The paper investigates drug-drug interactions of vicagrel via CYP/UGT inhibition and does not report pharmacogenomic effects on potassium PK/PD parameters. |
+| PGx | Liu_2016 | not_relevant | 0 | 0 | The paper reports a pharmacogenomic effect on esomeprazole, not potassium. |
+| PGx | Liu_2022 | not_relevant | 0 | 0 | The paper investigates enzyme inhibition by vicagrel and predicts drug-drug interactions; it does not report pharmacogenomic effects on potassium PK or PD parameters. |
 | PD | Liu_2022_2 | not_relevant | 0 | 0 | The paper is a study protocol describing the design and methods for a future PK/PD study; it does not report any results, data, or numeric PD parameters. |
-| popPK | Liu_2023 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of telmisartan, candesartan, and tenofovir, not potassium. |
-| popPK | Lock_2025 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of ciprofloxacin, not potassium. |
+| popPK | Liu_2023 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of telmisartan, candesartan, and tenofovir to develop a method for estimating absorption rate constants, and does not report PK parameters for potassium. |
+| popPK | Lock_2025 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of ciprofloxacin in rats, not potassium. |
 | PD | Lock_2025 | not_relevant | 0 | 0 | The paper investigates the pharmacokinetics (PK) of ciprofloxacin in infected rats and compares lung exposure, but it does not report a pharmacodynamic (PD) model or exposure-response relationship for Potassium. |
-| PGx | Lootens_2022 | not_relevant | 0 | 0 | The paper reports in vitro pharmacokinetic parameters for aflatoxin B1 and CYP probes, but does not investigate gene variants or pharmacogenomic effects on potassium. |
-| popPK | Lou_2025 | irrelevant | 0 | 0 | The study reports pharmacokinetic parameters for efsubaglutide alfa, not potassium. |
-| PGx | Lu_2013 | not_relevant | 0 | 0 | The paper reports pharmacogenomic effects on warfarin PK/PD, not potassium. |
-| popPK | Lu_2026 | irrelevant | 0 | 0 | The paper is a systematic review of stroboscopic visual training in sports and contains no pharmacokinetic data for potassium. |
+| PGx | Lootens_2022 | not_relevant | 0 | 0 | The paper reports in vitro pharmacokinetic parameters for aflatoxin B1 metabolism but does not involve potassium or any genetic variants. |
+| popPK | Lou_2025 | irrelevant | 0 | 0 | The study reports pharmacokinetic parameters for efsubaglutide alfa (a GLP-1 agonist), not potassium. |
+| PGx | Lu_2013 | not_relevant | 0 | 0 | The paper concerns pharmacogenomics of warfarin, not potassium. |
+| popPK | Lu_2026 | irrelevant | 0 | 0 | The paper is a systematic review on stroboscopic visual training in sports and contains no pharmacokinetic data or mention of potassium. |
 | PD | Lu_2026 | not_relevant | 0 | 0 | The paper is a meta-analysis of stroboscopic visual training (a non-pharmacological intervention) and does not report any pharmacodynamic or exposure-response relationship for the drug Potassium. |
-| PGx | Lunghi_2022 | not_relevant | 0 | 0 | The paper reports pharmacogenomic effects on Factor VIII pharmacokinetics, not potassium. |
-| popPK | Luo_2026 | irrelevant | 0 | 0 | The paper is a mathematical modeling study on non-invasive prenatal testing (NIPT) timing and does not involve the pharmacokinetics of potassium. |
+| PGx | Lunghi_2022 | not_relevant | 0 | 0 | The paper discusses Factor VIII pharmacokinetics, not the pharmacokinetic or pharmacodynamic parameters of potassium. |
+| popPK | Luo_2026 | irrelevant | 0 | 0 | The study focuses on non-invasive prenatal testing (NIPT) and fetal DNA concentration, and does not contain any pharmacokinetic parameters or data for the drug potassium. |
 | popPK | Lötsch_2005 | irrelevant | 0 | 0 | no_text gate: only 51 chars of text extracted (&lt; 400) |
 | PD | Lötsch_2005 | not_relevant | 0 | 0 | The paper focuses on opioids, not Potassium, and does not report PD parameters for Potassium. |
-| popPK | Maboodi_2026 | irrelevant | 0 | 0 | The paper is a computational modeling study of ion dynamics in neurons and astrocytes, not a pharmacokinetic study of potassium as a drug. |
-| popPK | Malhotra_1995 | irrelevant | 0 | 0 | The study investigates potassium fluxes in the alga Chlamydomonas reinhardtii, not the pharmacokinetics of potassium as a drug in humans or standard animal models. |
-| PGx | Mandla_1990 | not_relevant | 0 | 0 | The paper investigates the regulation of vitamin D metabolism by protein kinase C in mice and does not involve potassium pharmacokinetics or pharmacodynamics. |
-| PGx | Marinova_2013 | not_relevant | 0 | 0 | The paper reports pharmacogenomic effects on the pharmacokinetics of vitamin K1, not potassium. |
-| PGx | Martyn_1995 | not_relevant | 0 | 0 | The paper is a review of acetylcholine receptor pharmacology and explicitly states that pharmacogenetic factors are not discussed. |
-| PGx | Martínez-Jiménez_2026 | not_relevant | 0 | 0 | The paper focuses on warfarin pharmacogenomics and does not report any pharmacokinetic or pharmacodynamic effects of gene variants on potassium. |
+| popPK | Maboodi_2026 | irrelevant | 0 | 0 | The paper presents a computational model of neuronal and astrocytic ion dynamics for epilepsy, not a pharmacokinetic study of potassium as a drug, and does not report PK parameters like clearance or volume of distribution. |
+| popPK | Malhotra_1995 | irrelevant | 0 | 0 | The study analyzes potassium fluxes in Chlamydomonas reinhardtii (algae), which is not a pharmacokinetic study for the drug potassium in a mammalian or human context. |
+| PGx | Mandla_1990 | not_relevant | 0 | 0 | The paper investigates the regulation of vitamin D metabolism by protein kinase C in mice, which is unrelated to the pharmacogenomics of potassium pharmacokinetics or pharmacodynamics. |
+| PGx | Marinova_2013 | not_relevant | 0 | 0 | The paper reports pharmacogenomic effects for Vitamin K1, not potassium. |
+| PGx | Martyn_1995 | not_relevant | 2 | 2 | The paper is a review of AChR physiology and states that pharmacokinetic and pharmacogenetic factors are NOT discussed. |
+| PGx | Martínez-Jiménez_2026 | not_relevant | 0 | 0 | The study focuses on the pharmacogenomics of warfarin (dosing requirements), not the pharmacokinetics or pharmacodynamics of potassium. |
 | popPK | Masui_2022 | irrelevant | 0 | 0 | no_text gate: only 230 chars of text extracted (&lt; 400) |
-| PGx | McDonald_2020 | not_relevant | 0 | 0 | The paper investigates CYP450 inhibition by goldenseal alkaloids and does not report pharmacogenomic effects on potassium PK/PD parameters. |
-| PGx | Medford_1993 | not_relevant | 2 | 0 | The text is a review discussing the potential role of genetic polymorphisms in Na+,K+-ATPase isoforms on digitalis response, but it does not report specific pharmacogenomic data or quantitative effects on PK/PD parameters. |
-| popPK | Meini_1995 | irrelevant | 0 | 0 | The study investigates electrophysiology and mechanical activity in guinea-pig ureter, not the pharmacokinetics of potassium. |
-| popPK | Meltzer_1991 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of rubidium chloride, not potassium, and potassium is only mentioned as a comparator for toxicity mechanisms. |
+| PGx | McDonald_2020 | not_relevant | 0 | 0 | The paper studies CYP450 inhibition by goldenseal alkaloids and does not involve potassium pharmacokinetics or pharmacodynamics, nor does it report pharmacogenomic effects. |
+| PGx | Medford_1993 | not_relevant | 2 | 0 | The paper is a review of the molecular biology of Na,K-ATPase and potential genetic mechanisms, but it does not report a specific study linking a gene variant to a quantitative PK or PD parameter of potassium or digitalis. |
+| popPK | Meini_1995 | irrelevant | 0 | 0 | This study investigates the physiological propagation of muscle contractions in the guinea-pig ureter, where potassium (KCl) is used merely as a depolarizing agent to test site-specific responses, not as a subject drug for pharmacokinetic analysis. |
+| popPK | Meltzer_1991 | irrelevant | 1 | 0 | The paper reports pharmacokinetic parameters for rubidium, with potassium only mentioned as a comparator for toxicity thresholds; no quantitative PK values for potassium are provided. |
 | popPK | Mestareehi_2026 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of cefquinome in piglets, not potassium. |
-| popPK | Meuwis_1995 | irrelevant | 0 | 0 | The study investigates the photophysics and binding kinetics of a fluorescent indicator (PBFI) for potassium in vitro, not the pharmacokinetic disposition parameters (CL, V, etc.) of potassium as a drug. |
-| PGx | Miller_1985 | not_relevant | 0 | 0 | The paper investigates the pharmacogenetics of theophylline metabolism, not potassium. |
-| PGx | Moes_2012 | not_relevant | 0 | 0 | The study investigates the pharmacogenetics of everolimus, not potassium, and found no significant genetic influence on everolimus PK. |
-| PGx | Mohamed_2020 | not_relevant | 0 | 0 | The study investigates the effect of upadacitinib on CYP probe substrates, not the pharmacokinetics or pharmacodynamics of potassium. |
-| popPK | Mohammed_2025 | irrelevant | 0 | 0 | The study investigates the role of potassium channels in vascular physiology (vasorelaxation) and does not report pharmacokinetic parameters (CL, V, etc.) for potassium as a drug. |
-| PGx | Mondon_1988 | not_relevant | 0 | 0 | The paper studies the effect of a growth hormone peptide on glucose metabolism in rats, not a pharmacogenomic effect on potassium PK/PD. |
-| PGx | Morcos_2013 | not_relevant | 0 | 0 | The study investigates drug-drug interactions (CYP inhibition/induction) and does not report pharmacogenomic effects of gene variants on potassium PK/PD parameters. |
-| PGx | Morris_1995 | not_relevant | 0 | 0 | The paper describes lipoic acid metabolism in Escherichia coli and is unrelated to human pharmacogenomics or potassium pharmacokinetics/pharmacodynamics. |
+| popPK | Meuwis_1995 | irrelevant | 0 | 0 | The study investigates the photophysics and binding kinetics of a fluorescent potassium indicator (PBFI) in vitro, not the pharmacokinetic disposition (CL, V, t1/2) of potassium in a biological subject. |
+| PGx | Miller_1985 | not_relevant | 0 | 0 | The paper studies theophylline metabolism, not potassium. |
+| PGx | Moes_2012 | not_relevant | 0 | 0 | The paper studies everolimus, not potassium, and explicitly states that selected genetic polymorphisms had no significant influence on the drug's pharmacokinetics. |
+| PGx | Mohamed_2020 | not_relevant | 0 | 0 | The study examines pharmacokinetic interactions of CYP probe substrates with upadacitinib, not the pharmacokinetics or pharmacodynamics of potassium. |
+| popPK | Mohammed_2025 | irrelevant | 0 | 0 | This is an in vitro pharmacology study investigating the mechanism of potassium channel blockers in vasorelaxation, not the pharmacokinetics of the drug potassium. |
+| PGx | Mondon_1988 | not_relevant | 0 | 0 | The study investigates the effect of a growth hormone peptide on glucose metabolism in rats, not the effect of a genetic variant on the pharmacokinetics or pharmacodynamics of potassium. |
+| PGx | Morcos_2013 | not_relevant | 0 | 0 | The study investigates drug-drug interactions involving CYP enzymes in patients, not the effect of gene variants on the pharmacokinetics or pharmacodynamics of potassium. |
+| PGx | Morris_1995 | not_relevant | 0 | 0 | The paper describes lipoic acid metabolism in E. coli, which is unrelated to the pharmacokinetics or pharmacodynamics of potassium in humans. |
 | PD | Mukherjee_2004 | not_relevant | 0 | 0 | The text describes a method for obtaining starting values for indirect response model parameters (kin/kout) but does not report a specific pharmacodynamic relationship or numeric PD parameters for Potassium. |
-| popPK | Mulford_2026 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of vonoprazan, not potassium. |
+| popPK | Mulford_2026 | irrelevant | 0 | 0 | The study reports population pharmacokinetic parameters for vonoprazan, not potassium. |
 | PD | Mulford_2026 | not_relevant | 0 | 0 | The paper describes a population pharmacokinetic (PK) model for vonoprazan, not a pharmacodynamic (PD) or exposure-response model, and does not report numeric PD parameters. |
-| popPK | Muthukrishnan_2025 | irrelevant | 0 | 0 | no_text gate: only 150 chars of text extracted (&lt; 400) |
+| popPK | Muthukrishnan_2025 | irrelevant | 0 | 0 | The study reports population pharmacokinetic parameters for the monoclonal antibody clazakizumab, not potassium. |
 | PD | Muthukrishnan_2025 | not_relevant | 0 | 0 | The paper analyzes Clazakizumab, not Potassium. |
-| PGx | Münger_1987 | not_relevant | 0 | 0 | The paper studies the regulation of a fungal metallothionein gene by copper, not the pharmacogenomics of potassium. |
-| PGx | Na_2021 | not_relevant | 0 | 0 | The paper reports pharmacogenomic effects on omeprazole pharmacokinetics, not potassium. |
-| PGx | Nasrin_2021 | not_relevant | 0 | 0 | The paper investigates the inhibition of CYP450 enzymes by cannabinoids and their metabolites, not the effect of gene variants on the pharmacokinetics or pharmacodynamics of potassium. |
-| popPK | Nguyen_2026 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of amikacin, not potassium. |
-| popPK | Nichols_2022 | irrelevant | 0 | 0 | The paper is a review of ceftazidime/avibactam pharmacokinetics and does not report any data for potassium. |
+| PGx | Münger_1987 | not_relevant | 0 | 0 | The paper focuses on fungal metallothionein gene expression and copper homeostasis, and does not involve potassium pharmacokinetics or pharmacodynamics. |
+| PGx | Na_2021 | not_relevant | 0 | 10 | The paper reports pharmacogenomic effects on Omeprazole PK, not Potassium PK/PD. |
+| PGx | Nasrin_2021 | not_relevant | 0 | 0 | The paper studies CYP450 inhibition by cannabinoids, not pharmacogenomic effects on potassium PK/PD. |
+| popPK | Nguyen_2026 | irrelevant | 0 | 0 | The study reports population pharmacokinetic parameters for the drug amikacin, not for potassium. |
+| popPK | Nichols_2022 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics and pharmacodynamics of ceftazidime and avibactam, not potassium. |
 | PD | Nichols_2022 | not_relevant | 3 | 2 | The text is a review describing PK/PD targets and Monte Carlo simulation results for ceftazidime/avibactam, but it does not report a specific exposure-response or dose-response curve with numeric PD parameters (e.g., Emax, EC50) for Potassium. |
-| PGx | Nielsen_2017 | not_relevant | 0 | 0 | The paper investigates the pharmacogenomics of morphine, not potassium. |
-| popPK | Oggianu_2023 | irrelevant | 0 | 0 | no_text gate: only 147 chars of text extracted (&lt; 400) |
+| PGx | Nielsen_2017 | not_relevant | 1 | 0 | The paper reports a negative association between genetic variants and morphine PK/PD; it does not report an effect for potassium. |
+| popPK | Oggianu_2023 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of trazodone and gabapentin, not potassium. |
 | PD | Oggianu_2023 | not_relevant | 0 | 0 | The paper analyzes trazodone and gabapentin, not potassium. |
 | PD | Oh_2023 | not_relevant | 1 | 0 | The paper reports a drug-drug interaction study for fexuprazan and aspirin, mentioning a "previously reported exposure-response relationship" for fexuprazan but providing no numeric PD parameters or curves in this text. |
-| popPK | Olsson-Gisleskog_2007 | irrelevant | 0 | 0 | The study reports pharmacokinetic parameters for recombinant human erythropoietin (rHuEPO), not potassium. |
-| popPK | Ooi_2026 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of elafibranor and its metabolite GFT1007, not potassium. |
-| PGx | Ording_1989 | not_relevant | 0 | 0 | The paper describes the pathophysiology of malignant hyperthermia and mentions potassium loss as a consequence of membrane permeability changes, but it does not report a pharmacogenomic effect on the PK or PD of a specific drug. |
-| PGx | Orosco_2025 | not_relevant | 0 | 0 | The paper analyzes the evolution of Porcine Circovirus 2 genotypes in response to vaccination, not the pharmacokinetics or pharmacodynamics of potassium. |
-| popPK | Pajari_1983 | irrelevant | 0 | 0 | The study investigates the incorporation of branched-chain amino acids into protein in rat brain homogenates and does not involve potassium pharmacokinetics. |
+| popPK | Olsson-Gisleskog_2007 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of recombinant human erythropoietin (rHuEPO), not potassium. |
+| popPK | Ooi_2026 | irrelevant | 0 | 0 | The study analyzes the pharmacokinetics of elafibranor and its metabolite GFT1007, not potassium. |
+| PGx | Ording_1989 | not_relevant | 0 | 0 | The text describes the general pathophysiology of malignant hyperthermia and calcium handling but does not report any specific pharmacogenomic study linking a gene variant to a PK or PD parameter for potassium. |
+| PGx | Orosco_2025 | not_relevant | 0 | 0 | The paper studies the evolution of Porcine circovirus 2 vaccine efficacy and genotype shifts, and contains no information about potassium pharmacokinetics or pharmacodynamics. |
+| popPK | Pajari_1983 | irrelevant | 0 | 0 | The study focuses on the metabolism of branched-chain amino acids in rat brains and does not involve potassium pharmacokinetics. |
 | PD | Pajari_1983 | not_relevant | 0 | 0 | The paper studies the kinetics of branched-chain amino acid incorporation in brain homogenates, not the pharmacodynamics of Potassium. |
-| popPK | Pajari_1984 | irrelevant | 0 | 0 | The paper describes a method for isolating ribosomes from rat brain and analyzing amino acid incorporation, containing no pharmacokinetic data for potassium. |
+| popPK | Pajari_1984 | irrelevant | 0 | 0 | The paper describes a method for isolating ribosomes from rat brain and analyzing amino acid incorporation, unrelated to potassium pharmacokinetics. |
 | PD | Pajari_1984 | not_relevant | 0 | 0 | The paper describes a method for isolating ribosomes and analyzes amino acid incorporation kinetics using the Hill equation, which is unrelated to the pharmacodynamics of Potassium. |
-| popPK | Palareti_1996 | irrelevant | 0 | 0 | The paper discusses the pharmacokinetics of warfarin, not potassium. |
+| popPK | Palareti_1996 | irrelevant | 0 | 0 | The paper is a review of warfarin pharmacokinetics and the rebound phenomenon after withdrawal, with no data or focus on potassium as the subject drug. |
 | PD | Palareti_1996 | not_relevant | 1 | 0 | The text is a qualitative review of warfarin pharmacokinetics and the clinical phenomenon of rebound hypercoagulability upon withdrawal, lacking any numeric concentration-effect data, dose-response curves, or PD parameter estimates. |
-| popPK | Palmer_1995 | irrelevant | 0 | 0 | The study investigates the bactericidal activity of cephalosporin antibiotics (cefepime, ceftazidime, etc.) in an in vitro model and does not involve potassium as the subject drug. |
-| PGx | Palmirotta_2014 | not_relevant | 0 | 0 | The paper describes diagnostic procedures for cancer gene mutations (K-ras, BRAF, etc.) and does not report pharmacogenomic effects on the pharmacokinetics or pharmacodynamics of potassium. |
+| popPK | Palmer_1995 | irrelevant | 0 | 0 | The study is an in vitro pharmacodynamic investigation of cephalosporin antibiotics (cefepime, ceftazidime, etc.) and does not involve potassium as a subject drug or report any potassium PK parameters. |
+| PGx | Palmirotta_2014 | not_relevant | 0 | 0 | The paper discusses diagnostic methods for cancer gene mutations (KRAS, BRAF, etc.) and does not address pharmacogenomics of potassium or its PK/PD parameters. |
 | PD | Pandurangan_2026 | not_relevant | 4 | 2 | The abstract mentions in vivo PK/PD studies and dose-dependent degradation, but the provided text is only the abstract and does not contain the specific numeric PD parameters (e.g., EC50, Emax) or data points required to derive an exposure-response relationship. |
-| PGx | Pang_2024 | not_relevant | 0 | 0 | The paper investigates the inhibitory effects of Apatinib metabolites on CYP450 enzymes in vitro and does not report any pharmacogenomic effects on potassium PK/PD parameters. |
-| popPK | Park_2022 | irrelevant | 0 | 0 | The study investigates the electrophysiological effects of the drug fesoterodine on potassium channels in rabbit coronary artery cells, rather than the pharmacokinetics of potassium itself. |
-| PGx | Pei_2016 | not_relevant | 0 | 0 | The paper reports pharmacogenomic effects on the pharmacokinetics of iloperidone, not potassium. |
-| popPK | Pelin_2020 | irrelevant | 0 | 0 | The study investigates the toxicology of palytoxin and Na+/K+-ATPase gene expression, not the pharmacokinetics of potassium. |
-| popPK | Penland_2024 | irrelevant | 2 | 1 | The study models the pharmacodynamic response of serum potassium to a potassium binder (SZC), not the pharmacokinetic disposition parameters (CL, V, etc.) of potassium itself. |
-| popPK | Petitclerc_2026 | irrelevant | 0 | 0 | The study measures water transport across the blood-brain barrier using MRI and does not involve the drug potassium or its pharmacokinetics. |
+| PGx | Pang_2024 | not_relevant | 0 | 0 | The paper studies in vitro CYP450 inhibition by Apatinib metabolites and does not report pharmacogenomic effects on potassium PK/PD parameters. |
+| popPK | Park_2022 | irrelevant | 0 | 0 | The paper studies potassium ion channel pharmacology (fesoterodine on Kv channels) in rabbit cells, not the pharmacokinetic disposition of potassium as a drug. |
+| PGx | Pei_2016 | not_relevant | 1 | 9 | The paper reports pharmacogenomic effects on the PK of iloperidone, not potassium. |
+| popPK | Pelin_2020 | irrelevant | 0 | 0 | The paper studies in vitro toxicity of palytoxin and Na+/K+-ATPase gene expression, not the pharmacokinetics of potassium. |
+| popPK | Penland_2024 | irrelevant | 0 | 0 | The study analyzes the pharmacodynamics of sodium zirconium cyclosilicate on serum potassium concentrations, not the pharmacokinetics of potassium itself. |
+| popPK | Petitclerc_2026 | irrelevant | 0 | 0 | The study investigates water transport across the blood-brain barrier using arterial spin labeling MRI and does not involve potassium pharmacokinetics. |
 | popPK | Pettit_1974 | irrelevant | 0 | 0 | no_text gate: only 95 chars of text extracted (&lt; 400) |
 | popPK | Phillips_2001 | irrelevant | 0 | 0 | no_text gate: only 87 chars of text extracted (&lt; 400) |
 | PD | Phillips_2001 | not_relevant | 0 | 0 | The paper analyzes the pharmacokinetics and pharmacodynamics of azimilide, not potassium. |
-| PGx | Podoll_2023 | not_relevant | 0 | 0 | The paper characterizes the metabolite of acalabrutinib and its PK properties but does not report any pharmacogenomic effects (gene variants) on PK/PD parameters. |
-| PGx | Ponraj_2024 | not_relevant | 0 | 0 | The paper studies the effect of alcohol consumption on the metabolism of ketamine and amitriptyline, not the effect of a gene variant on the PK/PD of potassium. |
-| popPK | Powers_1995 | irrelevant | 0 | 0 | The study measures total body potassium content and serum levels in patients with eating disorders, which is a clinical assessment of body composition rather than a pharmacokinetic study of potassium disposition parameters (CL, V, ka). |
-| popPK | Prakash_1993 | irrelevant | 0 | 0 | The study focuses on the removal of urea and ammonia by genetically engineered bacteria, not the pharmacokinetics of potassium. |
-| PGx | Prendecki_2020 | not_relevant | 0 | 0 | The paper discusses pharmacogenetics of antidementia drugs (e.g., donepezil, memantine) and does not mention potassium or its PK/PD parameters. |
-| popPK | Puil_1994 | irrelevant | 0 | 0 | The study investigates the electrophysiological effects of isoflurane on calcium currents in neurons, not the pharmacokinetics of potassium. |
-| popPK | Purohit_2023 | irrelevant | 0 | 0 | The paper is a theoretical study on visual-spatial perception under the influence of psilocybin and chlorpromazine, and does not report pharmacokinetic parameters for potassium. |
-| popPK | Putriana_2025 | irrelevant | 0 | 0 | The study focuses on warfarin dosing and pharmacodynamics, not the pharmacokinetics of potassium. |
+| PGx | Podoll_2023 | not_relevant | 0 | 0 | The paper characterizes a metabolite of acalabrutinib and its PK properties but does not report any pharmacogenomic effects or variants affecting potassium parameters. |
+| PGx | Ponraj_2024 | not_relevant | 0 | 0 | The paper studies the metabolism of ketamine and amitriptyline, not potassium. |
+| popPK | Powers_1995 | irrelevant | 0 | 0 | The study measures total body potassium content as a body composition metric in patients with eating disorders, not pharmacokinetic disposition parameters (clearance, volume of distribution, etc.) of potassium as a drug. |
+| popPK | Prakash_1993 | irrelevant | 0 | 0 | The paper focuses on the removal of urea and ammonia by genetically engineered bacteria, not the pharmacokinetics of potassium. |
+| PGx | Prendecki_2020 | not_relevant | 0 | 0 | The paper focuses on neurocognitive disorders and antidementia drugs, not potassium pharmacology. |
+| popPK | Puil_1994 | irrelevant | 0 | 0 | The study investigates the electrophysiological effects of isoflurane on calcium and potassium currents in neurons, not the pharmacokinetics of the drug potassium. |
+| popPK | Purohit_2023 | irrelevant | 0 | 0 | The paper is a theoretical and empirical study on visual-spatial perception and the pharmacology of psilocybin and chlorpromazine, with no focus on potassium pharmacokinetics. |
+| popPK | Putriana_2025 | irrelevant | 0 | 0 | The study focuses on warfarin dosing algorithms and pharmacodynamics, not potassium pharmacokinetics. |
 | PD | Putriana_2025 | not_relevant | 0 | 0 | The paper analyzes warfarin dose prediction based on clinical and genetic factors, not a pharmacodynamic exposure-response relationship for Potassium. |
 | popPK | Pétermann_2026 | irrelevant | 0 | 0 | no_text gate: only 125 chars of text extracted (&lt; 400) |
 | PD | Pétermann_2026 | not_relevant | 0 | 0 | The paper focuses on the population pharmacokinetics of encorafenib and binimetinib and does not report any pharmacodynamic or exposure-response relationships for potassium. |
-| PGx | Qin_2021 | not_relevant | 0 | 0 | The paper investigates the metabolism and inhibitory effects of isobavachalcone, not the pharmacokinetics or pharmacodynamics of potassium. |
+| PGx | Qin_2021 | not_relevant | 0 | 0 | The paper discusses the metabolism and inhibition of the compound isobavachalcone, not potassium pharmacokinetics or pharmacodynamics. |
 | PD | Qin_2024 | not_relevant | 0 | 0 | The paper is a review of biomarkers and computational models for immunotherapy and does not report any pharmacodynamic or exposure-response data for Potassium. |
-| PGx | Rasmussen_1995 | not_relevant | 0 | 0 | The paper investigates drug-drug interactions (SSRIs inhibiting theophylline metabolism) and does not report pharmacogenomic effects on potassium PK/PD parameters. |
-| PGx | Raymond_2021 | not_relevant | 0 | 0 | The paper discusses pharmacogenetics of direct oral anticoagulants (DOACs), not potassium. |
+| PGx | Rasmussen_1995 | not_relevant | 0 | 0 | The paper studies drug-drug interactions (inhibition of CYPs) in liver microsomes, not pharmacogenomic effects of gene variants on pharmacokinetics. |
+| PGx | Raymond_2021 | not_relevant | 0 | 0 | The paper focuses on direct oral anticoagulants (DOACs) and does not report pharmacogenomic effects on the pharmacokinetics or pharmacodynamics of potassium. |
 | PD | Reed_2025 | not_relevant | 0 | 0 | The paper focuses on the population pharmacokinetics of meropenem-vaborbactam and does not report any pharmacodynamic or exposure-response relationships for Potassium. |
-| PGx | Reyes-González_2020 | not_relevant | 0 | 0 | The paper reports pharmacogenomic effects on warfarin, not potassium. |
+| PGx | Reyes-González_2020 | not_relevant | 0 | 0 | The paper reports pharmacogenomic effects on warfarin pharmacokinetics, not on the drug potassium. |
 | PD | Rodriguez-Fernandez_2024 | not_relevant | 0 | 0 | The paper focuses on Secukinumab PK/PD modeling for psoriasis, not Potassium. |
-| popPK | Rodríguez-Ochoa_2025 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of temocillin, not potassium. |
+| popPK | Rodríguez-Ochoa_2025 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of the antibiotic temocillin in a hollow-fiber infection model, not on the disposition of potassium. |
 | PD | Rodríguez-Ochoa_2025 | not_relevant | 0 | 0 | The paper studies temocillin, not potassium, and does not report any pharmacodynamic parameters for potassium. |
-| popPK | Rong_2026 | irrelevant | 0 | 0 | The study reports pharmacokinetic parameters for mycophenolic acid (MPA), not potassium. |
-| PGx | Rosell_1995 | not_relevant | 0 | 0 | The paper investigates the association between p53/K-ras mutations and clinical response (efficacy) to paclitaxel, not the pharmacokinetics or pharmacodynamics of potassium. |
+| popPK | Rong_2026 | irrelevant | 0 | 0 | The study concerns the pharmacokinetics of mycophenolic acid (MPA), not potassium. |
+| PGx | Rosell_1995 | not_relevant | 0 | 0 | The paper examines the relationship between p53/K-ras mutations and clinical response (chemosensitivity) to paclitaxel, not a pharmacogenomic effect on potassium parameters. |
 | popPK | Rump_1994 | irrelevant | 0 | 0 | no_text gate: only 152 chars of text extracted (&lt; 400) |
 | PD | Rump_1994 | not_relevant | 0 | 0 | The paper investigates the effects of calcium channel agonists on platelet aggregation and does not report any pharmacodynamic or exposure-response relationship for Potassium. |
-| PGx | Ruzickova_2019 | not_relevant | 0 | 0 | The paper studies warfarin pharmacogenetics, not potassium. |
-| PGx | Ryu_2024 | not_relevant | 0 | 0 | The paper investigates the effect of perillyl alcohol on CYP enzyme activity (drug-drug interaction) and does not report any pharmacogenomic effects (gene variants) on the PK/PD of potassium. |
+| PGx | Ruzickova_2019 | not_relevant | 0 | 0 | The paper studies warfarin and does not involve potassium. |
+| PGx | Ryu_2024 | not_relevant | 0 | 0 | The paper investigates the effect of a chemical compound (perillyl alcohol) on CYP enzyme activity, not a genetic variant/genotype, and does not specifically focus on a PK/PD parameter of potassium. |
 | PD | Ryu_2024_2 | not_relevant | 0 | 0 | The paper focuses on botulinum neurotoxin type A, not Potassium, and does not report any exposure-response or dose-response relationship for Potassium. |
-| popPK | Sabo_2026 | irrelevant | 0 | 0 | no_text gate: only 94 chars of text extracted (&lt; 400) |
+| popPK | Sabo_2026 | irrelevant | 0 | 0 | The study reports pharmacokinetic parameters for hydroxyurea, not potassium. |
 | PD | Sabo_2026 | not_relevant | 0 | 0 | The paper focuses on the pharmacokinetics of Hydroxyurea and its absorption phenotype, not on the pharmacodynamics of Potassium. |
-| PGx | Said_1992 | not_relevant | 0 | 0 | The paper describes the synthesis and inhibition of UGT enzymes by triphenylalcohols, not the effect of a gene variant on the PK/PD of potassium. |
-| PGx | Saito_2014 | not_relevant | 0 | 0 | The paper reports pharmacogenomic effects on warfarin dosing, not on the pharmacokinetic or pharmacodynamic parameters of potassium. |
-| PGx | Sasabe_2021 | not_relevant | 0 | 0 | The paper reports in vitro drug-drug interaction potential of brexpiprazole, not a pharmacogenomic effect on potassium PK/PD. |
+| PGx | Said_1992 | not_relevant | 0 | 0 | The paper focuses on the inhibition of UDP-glucuronosyltransferase (UGT) by synthetic compounds, not the effect of gene variants on the pharmacokinetics or pharmacodynamics of potassium. |
+| PGx | Saito_2014 | not_relevant | 0 | 0 | The study focuses on warfarin dosing and VKORC1/CYP2C9 genotypes, not potassium. |
+| PGx | Sasabe_2021 | not_relevant | 0 | 0 | The paper assesses in vitro drug-drug interaction potential for brexpiprazole, focusing on CYPs and transporters; it does not investigate pharmacogenomic effects on a potassium parameter. |
 | popPK | Serkland_2025 | irrelevant | 0 | 0 | no_text gate: only 140 chars of text extracted (&lt; 400) |
 | PD | Serkland_2025 | not_relevant | 0 | 0 | The paper focuses on rituximab in multiple sclerosis and does not report any pharmacodynamic or exposure-response relationship for Potassium. |
-| popPK | Serkland_2026 | irrelevant | 0 | 0 | The study reports pharmacokinetic parameters for ocrelizumab, not potassium. |
-| PGx | Shah_2004 | not_relevant | 0 | 0 | The paper is a review discussing the general concept of pharmacogenetics in drug-induced torsade de pointes and does not report specific quantitative effects of gene variants on PK or PD parameters. |
-| PGx | Shamohammadi_2026 | not_relevant | 0 | 0 | The paper reviews AI/ML for warfarin dosing and does not report pharmacogenomic effects on potassium PK/PD parameters. |
-| PGx | Shao_2020 | not_relevant | 0 | 0 | The paper reports pharmacogenomic effects on Tacrolimus pharmacokinetics, not potassium. |
+| popPK | Serkland_2026 | irrelevant | 0 | 0 | The study analyzes the pharmacokinetics of ocrelizumab (an anti-CD20 monoclonal antibody), not potassium. |
+| PGx | Shah_2004 | not_relevant | 5 | 2 | This is a general review of drug-induced TdP and discusses pharmacogenomic influences on metabolism and repolarization, but it does not report a specific pharmacokinetic or pharmacodynamic parameter for potassium. |
+| PGx | Shamohammadi_2026 | not_relevant | 0 | 0 | The paper reviews warfarin dosing algorithms and does not report pharmacogenomic effects on potassium. |
+| PGx | Shao_2020 | not_relevant | 0 | 0 | The paper studies the effect of CYP3A5 genotype on Tacrolimus pharmacokinetics, not on potassium. |
 | popPK | Shao_2026 | irrelevant | 0 | 0 | no_text gate: only 256 chars of text extracted (&lt; 400) |
 | PD | Shao_2026 | not_relevant | 0 | 0 | The paper focuses on fentanyl and alfentanil, not Potassium. |
-| PGx | Shen_2008 | not_relevant | 0 | 0 | The paper discusses warfarin pharmacogenomics and race/ethnicity, but does not report any pharmacokinetic or pharmacodynamic parameters for potassium. |
-| popPK | Shen_2026 | irrelevant | 0 | 0 | The paper is about tree height prediction using neural networks and mixed-effects models, not pharmacokinetics of potassium. |
+| PGx | Shen_2008 | not_relevant | 1 | 0 | The paper discusses warfarin pharmacogenomics and race/ethnicity but does not investigate potassium or any PK/PD parameter related to potassium. |
+| popPK | Shen_2026 | irrelevant | 0 | 0 | The paper is about tree height prediction using neural networks and mixed-effects models in forestry, containing no pharmacokinetic data for potassium. |
 | popPK | Shen_2026_2 | irrelevant | 0 | 0 | no_text gate: only 110 chars of text extracted (&lt; 400) |
 | PD | Shen_2026_2 | not_relevant | 0 | 0 | The paper focuses on shikimic acid, not Potassium. |
-| PGx | Shi_2022 | not_relevant | 0 | 0 | The study investigates a herb-drug interaction (Astragaloside IV inhibiting CYP2D6) affecting metoprolol pharmacokinetics, not a pharmacogenomic effect of a gene variant on potassium. |
-| PGx | Shin_2013 | not_relevant | 0 | 0 | The paper discusses the pharmacokinetics and pharmacodynamics of proton pump inhibitors (PPIs), not potassium, and does not report pharmacogenomic effects on potassium parameters. |
-| PGx | Shiozawa_2021 | not_relevant | 0 | 0 | The paper investigates the metabolism of warfarin by CYP2C9 variants, not the pharmacokinetics or pharmacodynamics of potassium. |
-| popPK | Siebinga_2024 | irrelevant | 0 | 0 | The study reports pharmacokinetic parameters for the radiopharmaceutical [177Lu]Lu-PSMA-I&T, not for the drug potassium. |
-| popPK | Siemen_1999 | irrelevant | 0 | 0 | The study is an in-vitro electrophysiology investigation of a potassium channel in a cell line, not a pharmacokinetic study of potassium disposition. |
-| popPK | Smith_1995 | irrelevant | 0 | 0 | The paper is a computational simulation of retinal cell electrophysiology and does not report pharmacokinetic parameters for potassium as a drug. |
-| popPK | Soeorg_2026 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of meropenem and colistin/polymyxin B, not potassium. |
-| popPK | Soufi_2025 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of vancomycin, not potassium. |
+| PGx | Shi_2022 | not_relevant | 0 | 0 | The study investigates a herb-drug interaction (pharmacokinetic change) but does not report any effects of a gene variant or genotype. |
+| PGx | Shiozawa_2021 | not_relevant | 0 | 0 | The paper investigates warfarin metabolism and statin inhibition, not potassium pharmacokinetics or pharmacodynamics. |
+| popPK | Siebinga_2024 | irrelevant | 0 | 0 | The study reports pharmacokinetic parameters for the radioligand [177Lu]Lu-PSMA-I&T, not for the drug potassium. |
+| popPK | Siemen_1999 | irrelevant | 0 | 0 | The study is an in-vitro electrophysiology investigation of potassium channel conductance in glioma cell mitoplasts, not a pharmacokinetic study of potassium as a drug. |
+| popPK | Smith_1995 | irrelevant | 0 | 0 | The paper is a computational simulation of retinal neuron biophysics and does not report pharmacokinetic parameters for potassium as a drug. |
+| popPK | Soeorg_2026 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics and pharmacodynamics of the antibiotics meropenem and colistin/polymyxin B, not the potassium ion. |
+| popPK | Soufi_2025 | irrelevant | 0 | 0 | The study evaluates the pharmacokinetics of vancomycin, not potassium. |
 | PD | Soufi_2025 | not_relevant | 0 | 0 | The paper focuses on Vancomycin PK/PD and clinical outcomes, not Potassium. |
-| PGx | Spielmann_1980 | not_relevant | 0 | 0 | The paper discusses blood group genetics and paternity testing, containing no information on pharmacokinetics or pharmacodynamics of potassium. |
-| popPK | Stefanucci_2019 | irrelevant | 0 | 0 | The paper describes the synthesis and pharmacological activity of enkephalin analogues, not the pharmacokinetics of potassium. |
+| PGx | Spielmann_1980 | not_relevant | 0 | 0 | The paper discusses blood group genetics for paternity testing and is unrelated to pharmacokinetics or pharmacodynamics of potassium. |
+| popPK | Stefanucci_2019 | irrelevant | 0 | 0 | The paper describes the synthesis and pharmacology of opioid peptide analogues, not the pharmacokinetics of potassium. |
 | PD | Stefanucci_2019 | not_relevant | 0 | 0 | The paper reports pharmacological data for novel enkephalin analogues (NOVA1/NOVA2), not for Potassium. |
-| PGx | Steinmann_1991 | not_relevant | 0 | 0 | The paper studies the effect of Cyclosporin A on collagen folding and does not involve potassium or pharmacogenomics. |
-| PGx | Subrahmanyam_2002 | not_relevant | 0 | 0 | The paper studies the metabolism of a phosphodiesterase-IV inhibitor (V11294) by CYP enzymes, not the pharmacokinetics or pharmacodynamics of potassium. |
-| PGx | Sun_2025 | not_relevant | 0 | 0 | The paper investigates the in vitro mechanism of CYP3A4 inhibition by tucatinib and does not report any pharmacogenomic effects (gene variants) on the PK or PD of potassium. |
+| PGx | Steinmann_1991 | not_relevant | 0 | 0 | The paper investigates the effect of cyclosporin A on collagen folding and does not discuss potassium pharmacokinetics or pharmacodynamics. |
+| PGx | Subrahmanyam_2002 | not_relevant | 0 | 0 | The paper studies the in vitro metabolism of a PDE-IV inhibitor (V11294), not the pharmacokinetics/pharmacodynamics of potassium or the effect of potassium gene variants. |
+| PGx | Sun_2025 | not_relevant | 0 | 0 | The paper investigates in vitro inhibition of CYP3A4 by tucatinib and does not report any pharmacogenomic effects on potassium PK or PD parameters. |
 | PD | Sun_2026 | not_relevant | 0 | 0 | The paper focuses on a PBPK model for intracellular pharmacokinetics of acyclovir and ganciclovir, not on Potassium, and does not report any pharmacodynamic or exposure-response parameters. |
 | popPK | Suthahar_2026 | irrelevant | 0 | 0 | The paper is a systematic review of population pharmacokinetic models for 5-fluorouracil, not potassium. |
 | PD | Suthahar_2026 | not_relevant | 0 | 0 | The paper is a systematic review of population pharmacokinetic (PK) models for 5-fluorouracil and does not report any pharmacodynamic (PD) or exposure-response relationships. |
-| PGx | Suthers_2019 | not_relevant | 0 | 0 | The paper is a letter regarding a meta-analysis of antidepressant pharmacogenetics and does not report PK/PD parameters for potassium. |
-| PGx | Szkutnik-Fiedler_2024 | not_relevant | 0 | 0 | The paper reports a drug-drug interaction between olaparib and regorafenib in rats, not a pharmacogenomic effect on potassium. |
-| popPK | Sürmelioğlu_2026 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of vancomycin, not potassium. |
+| PGx | Suthers_2019 | not_relevant | 0 | 0 | The paper is a letter regarding pharmacogenetic tests for depression, not potassium. |
+| PGx | Szkutnik-Fiedler_2024 | not_relevant | 0 | 0 | The study reports drug-drug interactions involving CYP3A4 and transporters but does not investigate gene variants or genotypes (pharmacogenomics) nor is potassium the subject of interest. |
+| popPK | Sürmelioğlu_2026 | irrelevant | 0 | 0 | The study evaluates vancomycin pharmacokinetics, not potassium. |
 | PD | Sürmelioğlu_2026 | not_relevant | 0 | 0 | The paper is a systematic review of population pharmacokinetic (PopPK) studies for vancomycin and does not report any pharmacodynamic (PD) or exposure-response models or parameters. |
-| PGx | Taguchi_2011 | not_relevant | 0 | 0 | The paper studies the pharmacokinetics of bosentan, not potassium, and reports no pharmacogenomic effects on the drug's disposition. |
+| PGx | Taguchi_2011 | not_relevant | 0 | 0 | The paper investigates the PK of bosentan, not potassium, and explicitly reports no significant pharmacogenomic effects on bosentan disposition. |
 | PD | Takeda_2024 | not_relevant | 0 | 0 | The paper focuses on the pharmacokinetics of diphacinone in rats and does not report any pharmacodynamic or exposure-response relationship for Potassium. |
 | popPK | Tan_2026 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of busulfan, not potassium. |
 | PD | Tan_2026 | not_relevant | 0 | 0 | The paper focuses on pharmacokinetic (PK) modeling and limited sampling strategies for busulfan, with no pharmacodynamic (PD) or exposure-response analysis reported. |
-| PGx | Tang_2017 | not_relevant | 0 | 0 | The paper investigates CYP inhibition by shikonin in vitro and does not report any pharmacogenomic effects on potassium PK/PD parameters. |
-| popPK | Tarrant_2026 | irrelevant | 0 | 0 | The paper is a theoretical mathematical modeling study of ion transport and cell volume in epithelial vesicles, not a pharmacokinetic study of potassium as a drug. |
-| PGx | Tavares_2018 | not_relevant | 0 | 0 | The paper discusses warfarin pharmacogenomics, not potassium. |
-| popPK | Terada_2026 | irrelevant | 0 | 0 | The study investigates the effect of a Kampo formula on neurite outgrowth in PC12 cells and does not report pharmacokinetic parameters for potassium. |
+| PGx | Tang_2017 | not_relevant | 0 | 0 | The paper investigates CYP inhibition by shikonin in vitro and does not report pharmacogenomic effects on potassium PK/PD parameters. |
+| popPK | Tarrant_2026 | irrelevant | 0 | 0 | The paper presents a mechanistic mathematical model of ion transport and volume homeostasis in epithelial vesicles, not a pharmacokinetic study of potassium as a drug with quantitative disposition parameters (CL, V, etc.). |
+| PGx | Tavares_2018 | not_relevant | 0 | 0 | The paper reviews warfarin pharmacogenomics, not the pharmacokinetics or pharmacodynamics of potassium. |
+| popPK | Terada_2026 | irrelevant | 0 | 0 | The study investigates the effect of a Kampo formula on neurite outgrowth in PC12 cells and does not report any pharmacokinetic parameters for potassium. |
 | PD | Terada_2026 | not_relevant | 4 | 2 | The paper describes a concentration-dependent effect and qualitatively reports changes in Emax and EC50 for a Kampo formula, but it does not provide the specific numeric values for these parameters or the full dose-response curve data required for extraction. |
-| PGx | Terasaka_2021 | not_relevant | 0 | 0 | The paper reports standard pharmacokinetics and drug-drug interaction potential for a histamine H3 antagonist, with no mention of potassium or pharmacogenomic effects. |
-| PGx | Terziivanov_2003 | not_relevant | 0 | 0 | The paper analyzes caffeine pharmacokinetics as a biomarker for CYP1A2 activity but does not report pharmacokinetic or pharmacodynamic parameters for potassium. |
+| PGx | Terasaka_2021 | not_relevant | 0 | 0 | The paper reports general pharmacokinetics and drug-drug interaction potential of enerisant but does not investigate the impact of specific gene variants or genotypes on PK/PD parameters. |
+| PGx | Terziivanov_2003 | not_relevant | 0 | 0 | The paper analyzes the pharmacokinetics of caffeine as a biomarker for CYP1A2 activity, not the pharmacogenomic effect of a gene variant on the PK/PD of potassium. |
 | popPK | Thomas_2026 | irrelevant | 0 | 0 | no_text gate: only 104 chars of text extracted (&lt; 400) |
 | PD | Thomas_2026 | not_relevant | 0 | 0 | The paper focuses on risankizumab, not Potassium, and does not report any pharmacodynamic or exposure-response relationship for Potassium. |
-| PGx | Thomasson_1995 | not_relevant | 0 | 0 | The paper reports pharmacogenomic effects on ethanol pharmacokinetics, not potassium. |
-| PGx | Tran_2016 | not_relevant | 0 | 0 | The paper assesses drug-drug interactions (daclizumab effect on CYP substrates) and does not report pharmacogenomic effects on potassium PK/PD parameters. |
-| PGx | Trout_2004 | not_relevant | 0 | 0 | The paper investigates the effect of clinical conditions (diarrhea/wasting) on saquinavir pharmacokinetics, not the effect of a gene variant or genotype. |
+| PGx | Thomasson_1995 | not_relevant | 0 | 0 | The paper investigates the pharmacogenomics of ethanol metabolism, whereas the query specifically asks about potassium. |
+| PGx | Tran_2016 | not_relevant | 0 | 0 | The study assesses drug-drug interactions of daclizumab on CYP probe substrates, not pharmacogenomic effects on potassium. |
+| PGx | Trout_2004 | not_relevant | 0 | 0 | The paper investigates the effect of disease state (diarrhea/wasting) on saquinavir pharmacokinetics, not the effect of a gene variant/genotype. |
 | popPK | Tsuchiwata_2026 | irrelevant | 0 | 0 | The study reports pharmacokinetic parameters for tofacitinib, not potassium. |
 | popPK | Török_1989 | irrelevant | 0 | 0 | no_text gate: only 113 chars of text extracted (&lt; 400) |
 | PD | Török_1989 | not_relevant | 0 | 0 | The paper investigates the mechanism of A-23187 and sodium-pump reactivation on transmitter release, not the pharmacodynamics of Potassium itself. |
 | PD | Ufer_2010 | not_relevant | 1 | 0 | The text is an abstract of a review article that discusses PK/PD profiles qualitatively but does not report specific numeric PD parameters or extractable exposure-response relationships for Potassium. |
-| popPK | Urvay_2026 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of PSA (a biomarker) in prostate cancer patients, not the disposition of the drug potassium. |
-| PGx | Vandenbroeck_2008 | not_relevant | 0 | 0 | The paper discusses pharmacogenomics of interferon-beta in multiple sclerosis, not potassium. |
-| PGx | Verstuyft_2012 | not_relevant | 0 | 0 | The paper reports pharmacogenomic effects on the PK/PD of fluindione and acenocoumarol, not potassium. |
-| PGx | Villapalos-García_2023 | not_relevant | 0 | 0 | The paper reports pharmacogenomic effects on rivaroxaban, not potassium. |
-| popPK | Voigt_1979 | irrelevant | 0 | 0 | The study investigates oxytetracycline binding to albumin and PVP, not the pharmacokinetics of potassium. |
-| PGx | Wang_2019 | not_relevant | 0 | 0 | The study focuses on imatinib, not potassium, and concludes that pharmacogenetics have no significant effects on its pharmacokinetics. |
-| popPK | Wang_2020 | irrelevant | 0 | 0 | The study reports pharmacokinetic parameters for vancomycin, not potassium. |
+| popPK | Urvay_2026 | irrelevant | 0 | 0 | The study focuses on PSA elimination kinetics in prostate cancer patients, not the pharmacokinetics of potassium. |
+| PGx | Vandenbroeck_2008 | not_relevant | 0 | 0 | The paper discusses pharmacogenomics of IFN-beta response in multiple sclerosis and does not report PK or PD parameters for potassium. |
+| PGx | Verstuyft_2012 | not_relevant | 0 | 0 | The paper investigates pharmacogenomic effects on anticoagulants (fluindione and acenocoumarol), not potassium. |
+| PGx | Villapalos-García_2023 | not_relevant | 0 | 0 | The paper studies the pharmacogenomic effect of NAT2 on the pharmacokinetics of rivaroxaban, not potassium. |
+| popPK | Voigt_1979 | irrelevant | 0 | 0 | The study investigates the binding interactions of oxytetracycline, a tetracycline antibiotic, with human serum albumin and polyvinylpyrrolidone; potassium is neither the subject drug nor reported as a pharmacokinetic parameter. |
+| PGx | Wang_2019 | not_relevant | 0 | 0 | The study is on imatinib, not potassium, and explicitly states pharmacogenetics had no significant effect on PK. |
+| popPK | Wang_2020 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of vancomycin, not potassium. |
 | popPK | Wang_2020_2 | irrelevant | 0 | 0 | no_text gate: only 155 chars of text extracted (&lt; 400) |
 | PD | Wang_2020_2 | not_relevant | 0 | 0 | The paper focuses on antimicrobial PK/PD modeling, not Potassium. |
 | popPK | Wang_2022 | irrelevant | 0 | 0 | no_text gate: only 185 chars of text extracted (&lt; 400) |
 | PD | Wang_2022 | not_relevant | 0 | 0 | The paper focuses on the drug hetrombopag, not Potassium. |
-| PGx | Wang_2023 | not_relevant | 0 | 0 | The paper reports pharmacokinetics and drug-drug interactions of ocedurenone, not the pharmacogenomics of potassium. |
-| popPK | Wang_2023_2 | irrelevant | 0 | 0 | The study reports population pharmacokinetic parameters for the drug dorzagliatin, not potassium. |
+| PGx | Wang_2023 | not_relevant | 0 | 0 | The paper investigates the pharmacokinetics and drug-drug interactions of ocedurenone but does not report pharmacogenomic effects (gene variants) on the drug's PK/PD. |
+| popPK | Wang_2023_2 | irrelevant | 0 | 0 | The study reports population pharmacokinetic parameters for dorzagliatin, not potassium. |
 | PD | Wang_2024 | not_relevant | 0 | 0 | The paper discusses pharmacodynamic models for gene silencing and protein degradation (PROTACs/siRNA) and does not report any data or parameters for Potassium. |
-| popPK | Wangchinda_2024 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of fosfomycin, not potassium. |
+| popPK | Wangchinda_2024 | irrelevant | 0 | 0 | The study evaluates the pharmacokinetics of fosfomycin, not potassium, which is the required subject drug. |
 | PD | Wangchinda_2024 | not_relevant | 0 | 0 | The paper analyzes the pharmacokinetics of fosfomycin and its target attainment against bacteria, not the pharmacodynamics of Potassium. |
-| popPK | Wanika_2026 | irrelevant | 0 | 0 | The paper is a methodological study using simulated data to evaluate uncertainty quantification metrics, not a pharmacokinetic study of potassium. |
+| popPK | Wanika_2026 | irrelevant | 0 | 0 | The paper is a methodological study using simulated data and does not report actual pharmacokinetic parameters for the drug potassium. |
 | PD | Wanika_2026 | not_relevant | 0 | 0 | The paper focuses on uncertainty quantification methods for PK models using simulated data and does not report any pharmacodynamic or exposure-response relationships for Potassium. |
-| popPK | Wei_2023 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics and pharmacodynamics of the antibiotics enrofloxacin and cefquinome, not the drug potassium. |
-| popPK | Wei_2024 | irrelevant | 0 | 0 | no_text gate: only 137 chars of text extracted (&lt; 400) |
+| popPK | Wei_2023 | irrelevant | 0 | 0 | The study is an in vitro PK/PD model of antibiotics (enrofloxacin and cefquinome) against bacteria, not a pharmacokinetic study of potassium. |
+| popPK | Wei_2024 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics and pharmacodynamics of enrofloxacin in chicks, not potassium. |
 | PD | Wei_2024 | not_relevant | 0 | 0 | The paper investigates the pharmacokinetics and pharmacodynamics of enrofloxacin, not potassium. |
-| popPK | Wei_2026 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of antibiotics (enrofloxacin and cefquinome) in chicks, not potassium. |
-| PGx | Westphal_1994 | not_relevant | 0 | 0 | The paper discusses hepatic side effects of antibiotics and general pharmacogenetics, but does not report any specific gene variant affecting the PK or PD of potassium. |
-| PGx | Whang_2022 | not_relevant | 0 | 0 | The paper reports pharmacogenomic effects on the pharmacokinetics of flurbiprofen, not potassium. |
-| PGx | Wrishko_2026 | not_relevant | 0 | 0 | The paper investigates the effect of body weight on posaconazole pharmacokinetics and drug-drug interactions, not the effect of gene variants or genotypes. |
-| popPK | Wu_2023 | irrelevant | 0 | 0 | The study reports pharmacokinetic parameters for the drug SPI-62, not potassium. |
-| popPK | Wu_2023_2 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of JNJ-64794964, not potassium. |
-| popPK | Wu_2026 | irrelevant | 0 | 0 | The study reports population pharmacokinetic parameters for bosutinib, not potassium. |
+| popPK | Wei_2026 | irrelevant | 0 | 0 | The study reports pharmacokinetic parameters for the antibiotics enrofloxacin and cefquinome, not for the drug potassium. |
+| PGx | Westphal_1994 | not_relevant | 0 | 0 | The paper discusses the liver side effects of various antibiotics and mentions pharmacogenetics for risk identification, but does not report a specific gene variant affecting the PK or PD of potassium or any specific drug. |
+| PGx | Whang_2022 | not_relevant | 0 | 0 | The paper discusses pharmacogenomics of flurbiprofen, not potassium. |
+| PGx | Wrishko_2026 | not_relevant | 0 | 0 | The paper analyzes the pharmacokinetics of posaconazole based on body weight, not gene variants, and posaconazole is not potassium. |
+| popPK | Wu_2023 | irrelevant | 0 | 0 | The paper reports population PK parameters for the drug SPI-62 (an HSD-1 inhibitor), not for potassium. |
+| popPK | Wu_2023_2 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of JNJ-64794964, a TLR7 agonist, not potassium. |
+| popPK | Wu_2026 | irrelevant | 0 | 0 | The paper describes the population pharmacokinetics of bosutinib, not potassium. |
 | PD | Wu_2026 | not_relevant | 0 | 0 | The paper reports a population pharmacokinetic (PK) model for bosutinib and exposure simulations, but it does not contain any pharmacodynamic (PD) or exposure-response analysis, nor does it report numeric PD parameters (e.g., Emax, EC50). |
-| popPK | Wüstenberg_1988 | irrelevant | 2 | 0 | The paper is a theoretical review discussing the methodology of mathematical modeling in nephrology, including potassium balance, but does not report original quantitative PK parameter values for potassium. |
-| PGx | Xia_2025 | not_relevant | 0 | 0 | The study investigates the effect of gut microbiota dysbiosis on losartan pharmacokinetics, not the effect of a gene variant/genotype. |
-| PGx | Xiang_2020 | not_relevant | 0 | 0 | The paper investigates the pharmacogenomics of fluvastatin, not potassium. |
-| PGx | Xie_2014 | not_relevant | 0 | 0 | The paper reports pharmacogenomics for clopidogrel, not potassium. |
-| popPK | Xie_2026 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of daptomycin, not potassium. |
+| popPK | Wüstenberg_1988 | irrelevant | 2 | 0 | The paper is a methodological overview/review of modeling in nephrology that mentions dynamic compartment modeling of potassium balance but does not provide original quantitative PK parameter values (CL, V, etc.). |
+| PGx | Xia_2025 | not_relevant | 0 | 0 | The study investigates the impact of gut microbiota dysbiosis on PK, not human gene variants (polymorphisms). |
+| PGx | Xie_2014 | not_relevant | 0 | 0 | The study focuses on clopidogrel, not potassium, and reports no pharmacogenomic effects on potassium PK/PD. |
+| popPK | Xie_2026 | irrelevant | 0 | 0 | The paper focuses on daptomycin pharmacokinetics, not potassium. |
 | PD | Xie_2026 | not_relevant | 0 | 0 | The paper focuses on population pharmacokinetic (PopPK) modeling and simulation of daptomycin exposure (AUC, Cmin) and probability of target/toxicity attainment, but does not report a pharmacodynamic (PD) model or exposure-response relationship with numeric PD parameters (e.g., Emax, EC50). |
-| popPK | Xu_2025 | irrelevant | 0 | 0 | The paper describes the construction of synthetic artificial ion channels for potassium transport, which is a mechanistic/chemical study, not a pharmacokinetic study of potassium as a drug. |
+| popPK | Xu_2025 | irrelevant | 0 | 0 | The paper describes the construction of synthetic artificial ion channels for potassium transport, not the pharmacokinetics of potassium as a drug in a biological system. |
 | PD | Xu_2025 | not_relevant | 0 | 0 | The paper describes the biophysical characterization of synthetic artificial ion channels (supramolecular chemistry), not the pharmacodynamics of a drug in a biological system. |
-| PGx | Yalçin_2022 | not_relevant | 0 | 0 | The paper is a systematic review of pharmacogenetics in neonates and does not report specific pharmacokinetic or pharmacodynamic effects of gene variants on potassium. |
-| popPK | Yan_2024 | irrelevant | 0 | 0 | The study focuses on copper chloride in an in vitro HepG2 cell model, not potassium. |
+| PGx | Yalçin_2022 | not_relevant | 0 | 0 | The paper is a systematic review of pharmacogenetics in neonates but does not report any specific pharmacogenomic effect on PK or PD parameters for potassium. |
+| popPK | Yan_2024 | irrelevant | 0 | 0 | The study models the toxicokinetics of copper chloride in HepG2 cells, not the pharmacokinetics of potassium. |
 | PGx | Yang_2009 | not_relevant | 0 | 0 | The paper reports pharmacogenomic effects on rabeprazole, not potassium. |
-| popPK | Yang_2018 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics and pharmacodynamics of 1α,25-dihydroxyvitamin D3, not potassium. |
-| PGx | Yang_2022 | not_relevant | 0 | 0 | The paper reports pharmacogenomic effects on the pharmacokinetics of brivaracetam, not potassium. |
-| PGx | Yang_2024 | not_relevant | 0 | 0 | The paper reports pharmacogenomic effects on the PK of codeine and morphine, not potassium. |
-| popPK | Yang_2024_2 | irrelevant | 0 | 0 | The study reports pharmacokinetic parameters for the drug zastaprazan (a potassium-competitive acid blocker), not for the element potassium itself. |
-| PGx | Yang_2024_2 | not_relevant | 0 | 0 | The paper explicitly states that CYP2C19 phenotypes had no significant effect on the pharmacokinetics of zastaprazan. |
-| popPK | Yang_2025 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of iruplinalkib, not potassium. |
+| popPK | Yang_2018 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of 1α,25-dihydroxyvitamin D3 and its pharmacodynamic effects, not the pharmacokinetics of potassium. |
+| PGx | Yang_2022 | not_relevant | 0 | 0 | The paper investigates the pharmacokinetics of brivaracetam, not potassium. |
+| PGx | Yang_2024 | not_relevant | 0 | 0 | The paper reports pharmacokinetic modeling of codeine and morphine, not potassium. |
+| popPK | Yang_2024_2 | irrelevant | 0 | 0 | The study reports population pharmacokinetic parameters for the drug zastaprazan (a potassium-competitive acid blocker), not for the element/potassium ion itself. |
+| PGx | Yang_2024_2 | not_relevant | 1 | 0 | The study explicitly states that CYP2C19 phenotypes had no significant effect on zastaprazan PK, so no pharmacogenomic effect is reported. |
+| popPK | Yang_2025 | irrelevant | 0 | 0 | The paper reports pharmacokinetics for iruplinalkib, not potassium. |
 | popPK | Yang_2026 | irrelevant | 0 | 0 | The study reports pharmacokinetic parameters for encorafenib, not potassium. |
 | PD | Yang_2026 | not_relevant | 0 | 0 | The paper reports a population pharmacokinetic (popPK) model for encorafenib, not a pharmacodynamic (PD) or exposure-response model for Potassium. |
-| PGx | Yano_2019 | not_relevant | 0 | 0 | The paper discusses pharmacogenomics for levetiracetam, clobazam, warfarin, and tacrolimus, but does not mention potassium or its PK/PD parameters. |
-| popPK | Yashiro_2025 | irrelevant | 0 | 0 | The paper describes a pharmacological tool compound (ONO-2920632) that activates potassium channels, not the pharmacokinetics of the element potassium itself. |
-| PGx | Yin_2008 | not_relevant | 0 | 0 | The paper investigates warfarin dose variability, not the pharmacokinetics or pharmacodynamics of potassium. |
-| PGx | Yong_2022 | not_relevant | 0 | 0 | The paper investigates herb-drug interactions involving CYP enzymes and does not report pharmacogenomic effects on potassium PK/PD parameters. |
-| PGx | Yoo_2012 | not_relevant | 0 | 0 | The paper reports pharmacogenomic effects on the pharmacokinetics of risperidone, not potassium. |
-| PGx | Yoon_2013 | not_relevant | 0 | 0 | The paper reports pharmacogenomic effects on metformin pharmacokinetics, not potassium. |
+| PGx | Yano_2019 | not_relevant | 0 | 0 | The paper discusses pharmacogenomics for levetiracetam, clobazam, warfarin, and tacrolimus, but does not report on potassium. |
+| popPK | Yashiro_2025 | irrelevant | 0 | 0 | The study focuses on the pharmacological development of a potassium channel activator (ONO-2920632), not the pharmacokinetics of the potassium ion itself. |
+| PGx | Yin_2008 | not_relevant | 0 | 0 | The paper concerns warfarin and VKORC1L1, not potassium. |
+| PGx | Yong_2022 | not_relevant | 0 | 0 | The paper reports in vitro CYP inhibition by a plant extract, which is a herb-drug interaction study and does not involve genetic variants (pharmacogenomics) or potassium pharmacokinetics/dynamics. |
+| PGx | Yoo_2012 | not_relevant | 0 | 0 | The study focuses on the pharmacokinetics of risperidone, not potassium. |
+| PGx | Yoon_2013 | not_relevant | 0 | 0 | The paper studies pharmacogenomics of metformin, not potassium. |
 | popPK | Yoshihara_2024 | irrelevant | 0 | 0 | no_text gate: only 191 chars of text extracted (&lt; 400) |
-| popPK | Yu_2026 | irrelevant | 0 | 0 | The study reports pharmacokinetic parameters for dexamethasone in horses, not for potassium. |
-| popPK | Yuan_2026 | irrelevant | 0 | 0 | The study focuses on the biophysical mechanisms of neural excitability and potassium dynamics in neurons, not on the pharmacokinetic disposition of potassium as a drug. |
-| popPK | Zaidi_2026 | irrelevant | 0 | 0 | The paper is a systematic review of opioid pharmacokinetics in pregnancy and does not report quantitative disposition parameters for potassium. |
+| popPK | Yu_2026 | irrelevant | 0 | 0 | The study models the pharmacokinetics of dexamethasone (DEX) in horses, not potassium. |
+| popPK | Yuan_2026 | irrelevant | 0 | 0 | The paper investigates the electrophysiological effects of potassium dynamics on neural firing during stimulation, not the population pharmacokinetics of potassium as a drug. |
+| popPK | Zaidi_2026 | irrelevant | 0 | 0 | The paper is a systematic review of opioid pharmacokinetics and does not contain data or models for potassium. |
 | PD | Zaidi_2026 | not_relevant | 0 | 0 | The paper is a systematic review of opioid pharmacokinetics in pregnancy and does not report any pharmacodynamic or exposure-response data for Potassium. |
 | PGx | Zandvliet_2007 | not_relevant | 0 | 0 | The paper reports pharmacogenomic effects on the PK of indisulam, not potassium. |
-| PGx | Zhan_2023 | not_relevant | 0 | 0 | The paper investigates the inhibitory mechanism of vortioxetine on CYP450 enzymes in vitro and does not report any pharmacogenomic effects on the PK or PD of potassium. |
-| PGx | Zhang_2020 | not_relevant | 0 | 0 | The paper discusses pharmacogenomics of proton pump inhibitors, not potassium. |
-| popPK | Zhang_2023 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of aztreonam and amoxicillin/clavulanate, not potassium. |
+| PGx | Zhan_2023 | not_relevant | 0 | 0 | The paper studies vortioxetine's CYP450 inhibition mechanism, not the PK/PD of potassium or any pharmacogenomic effects. |
+| PGx | Zhang_2020 | not_relevant | 0 | 0 | The paper discusses pharmacogenomics for proton pump inhibitors, not potassium. |
+| popPK | Zhang_2023 | irrelevant | 0 | 0 | The paper concerns the pharmacokinetics of aztreonam and amoxicillin/clavulanate, not potassium. |
 | PD | Zhang_2023 | not_relevant | 0 | 0 | The paper focuses on the pharmacokinetics and antimicrobial efficacy (MIC/MPC) of an antibiotic combination (Aztreonam/Amoxicillin/Clavulanate), not on the pharmacodynamics of Potassium. |
-| popPK | Zhang_2023_2 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of Chuanxiong (ligustrazine/ligustrolide A) in rabbits, not potassium. |
-| PGx | Zhao_2021 | not_relevant | 0 | 0 | The paper investigates in vitro CYP enzyme inhibition by a compound, not the effect of a gene variant on the PK/PD of potassium. |
+| popPK | Zhang_2023_2 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of Chuanxiong (a herbal medicine) in rabbits, not potassium. |
+| PGx | Zhao_2021 | not_relevant | 0 | 0 | The paper describes in vitro enzyme inhibition by a compound and contains no information about gene variants or potassium pharmacokinetics. |
 | PD | Zheng_2026 | not_relevant | 1 | 0 | The text is a review article discussing mechanistic pathways and general concepts of metabolite-driven QT prolongation without providing specific numeric PD parameters or extractable concentration-effect curves for Potassium. |
-| popPK | Zhu_2026 | irrelevant | 0 | 0 | The study reports pharmacokinetic parameters for the anesthetic drug ciprofol, not potassium. |
+| popPK | Zhu_2026 | irrelevant | 0 | 0 | The study reports population pharmacokinetic parameters for ciprofol, not potassium. |
 | PD | Zou_2025 | not_relevant | 3 | 2 | The paper discusses the correlation between target coverage (Cu/IC50) and PD effect for CNS drugs, but it is a review/analysis of existing data rather than a primary study reporting a specific extractable PD model or numeric PD parameters for Potassium. |
-| PGx | Šadibolová_2022 | not_relevant | 0 | 0 | The paper investigates the in vitro metabolism of helenalin and its inhibition of CYP enzymes, but does not report any pharmacogenomic effects on the pharmacokinetics or pharmacodynamics of potassium. |
+| PGx | Šadibolová_2022 | not_relevant | 0 | 0 | The paper discusses in vitro metabolism of helenalin and CYP inhibition, not a pharmacogenomic effect on potassium PK/PD. |
 
 ---
-<sub>Generated by `docs.py` (scholarv2)</sub>
+<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-10-07 15:40 UTC</sub>

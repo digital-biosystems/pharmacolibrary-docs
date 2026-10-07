@@ -1,10 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;J05A&quot;,&quot;href&quot;:&quot;atc/J05A.md&quot;},{&quot;label&quot;:&quot;Bictegravir&quot;,&quot;href&quot;:&quot;drugs/drug_bictegravir/&quot;},{&quot;label&quot;:&quot;Ekobena_2025 \u00b7 reference&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Bictegravir_Ekobena2025_reference&quot;,&quot;label&quot;:&quot;Ekobena_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_bictegravir/Bictegravir_Ekobena2025_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Bictegravir_Khoei2026_reference&quot;,&quot;label&quot;:&quot;Khoei_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_bictegravir/Bictegravir_Khoei2026_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # Bictegravir — `Bictegravir_Ekobena2025_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span>
+> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -12,31 +13,36 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
-**Model:** No model was generated from this record.
+**Model:** A simulatable model was generated — see the **Models** and **Simulation** tabs.
 
-> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+### Reviewer guidance
+
+**Vnorm has no unit.**
+
+Without a unit the value cannot be converted, so the model cannot use it. Extracted — bictegravir: kabs 0.64 h−1, V 10.9 L, CL 0.46 L/h, Vnorm 0.35.
+
+<sub>reviewed by rule template (no LLM)</sub>
+
+> ⚠️ **STALE** — review status `needs_review` (reviewed 2026-10-07 14:33:32.613805+00:00) predates the upstream re-run (2026-10-07 15:44:38.189411+00:00). Current validate status: `extracted`.
 
 ## Citation
 Ekobena P et al., Population pharmacokinetics of bictegra…, The Journal of antimicrobia… (2025)
   ·  DOI: [10.1093/jac/dkaf297](https://doi.org/10.1093/jac/dkaf297)
 
 ## Model component
-<dbs-pgx drug="Bictegravir" model-id="Bictegravir_Ekobena2025_reference" status="needs_review" stale="false" population="people with HIV" measured-compound="bictegravir" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<dbs-pgx drug="Bictegravir" model-id="Bictegravir_Ekobena2025_reference" status="extracted" stale="true" population="people with HIV" measured-compound="bictegravir" parameterization="mechanistic" topology="1C"></dbs-pgx>
 
-**Model structure:** 1-compartment; no model was built for this record.  
-**Parameters:** 4 extracted.
+**Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
+**Parameters:** 3 extracted.
 
 **Parameterization:** mechanistic.
 
 ## Parameters
-> ⚠️ This record is not accepted (current status `needs_review`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
-
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
 | ka (h−1) | `Q49` · kabs | 0.64 | h−1 | 0.00017777777777777779 | [1] / [h] | not captured | exact (1.0) | dkaf297-T2:row2:col1, dkaf297-T2:row2:col2 | — | not captured |
 | V (L) | `Q61` · V | 10.9 | L | 0.0109 | [l] | not captured | exact (1.0) | dkaf297-T2:row3:col1 | — | not captured |
 | CL (L/h) | `Q22` · CL | 0.46 | L/h | 1.277777777777778e-07 | [l] / [h] | not captured | exact (1.0) | dkaf297-T2:row4:col1 | — | not captured |
-| βBodyweight | `Q352` · Vnorm | 0.35 | not captured | not captured | not captured | not captured | llm (0.6) | dkaf297-T2:row6:col1 | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -45,12 +51,16 @@ Ekobena P et al., Population pharmacokinetics of bictegra…, The Journal of ant
 
 ## Departures & gaps
 
+**Deviations:**
+- `defaulted_parameters`: ['F', 'Tlag']
+
 **Interpretation flags:**
-- dropped unlinked row (NIL): 'Parameters' — extend the ontology if this is a real PK parameter (source ['dkaf297-T2:row0:col2'])
-- dropped unlinked row (NIL): 'βAge' — extend the ontology if this is a real PK parameter (source ['dkaf297-T2:row7:col1'])
+- dropped value-less row: 'Parameters'
+- dropped unlinked row (NIL): 'βBodyweight' — extend the ontology if this is a real PK parameter (source ['dkaf297-T2:row6:col1', 'dkaf297-T2:footnote'])
+- routed 'βAge' → Q314 (omega_cov) to covariance — variability estimate, not a structural parameter
+- NIL: refused to back-fill base 'kabs' from footnote/prose loose number None (source ['dkaf297-T2:footnote']); the table cell was unparseable — needs review
 - apparent-by-design (ADVISORY, codes unchanged): extravascular dosing with no identifiable F, so these reported disposition parameters are likely apparent unless the model puts first-pass in its structure — Q61 (V (L)); Q22 (CL (L/h))
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=bictegravir
-- structure disagreement: deterministic 1C vs LLM 2C — review compartment count
 - skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
 - skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
 - skipped review gap-fill of TLAG: primary's parameterization (rate-constant / ka-only) does not use it
@@ -70,13 +80,14 @@ Ekobena P et al., Population pharmacokinetics of bictegra…, The Journal of ant
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 4 | not captured | not captured | not captured |
+| C0_has_structural_params | pass | not captured | 3 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
+| C1_half_life_beta | pass | 17.3 | 16.425 | 0.9494 | 0.25 | reported t½β |
+| C2_base_Q61 | fail | 10.9 | 17.3 | 1.5872 | 0.05 | footnote reference category |
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['dkaf297-T2:row4:col1'] |
 | C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['dkaf297-T2:row2:col1', 'dkaf297-T2:row2:col2'] |
 | C5_dimension_Q61 | pass | [length] ** 3 | not captured | not captured | not captured | ['dkaf297-T2:row3:col1'] |
-| C5_unit_missing_Q352 | fail | [length] ** 3 | not captured | not captured | not captured | ['dkaf297-T2:row6:col1'] |
 | C6_cl_magnitude | pass | &lt;= 90.0 L/h | 0.46 | not captured | not captured | ['dkaf297-T2:row4:col1'] |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
 | C9_phys_window_Q22 | pass | clearance within physiological range | 0.46 L/h | not captured | not captured | ['dkaf297-T2:row4:col1'] |
@@ -98,21 +109,26 @@ Ekobena P et al., Population pharmacokinetics of bictegra…, The Journal of ant
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_bictegravir/Bictegravir_Ekobena2025_reference/Bictegravir_Ekobena2025_reference_modelica.zip" download>Bictegravir_Ekobena2025_reference_modelica.zip</a> <span class="pk-size">(4.7 kB)</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_bictegravir/Bictegravir_Ekobena2025_reference/Bictegravir_Ekobena2025_reference_fmi.zip" download>Bictegravir_Ekobena2025_reference_fmi.zip</a> <span class="pk-size">(4.2 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_bictegravir/Bictegravir_Ekobena2025_reference/Bictegravir_Ekobena2025_reference_matlab.zip" download>Bictegravir_Ekobena2025_reference_matlab.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_bictegravir/Bictegravir_Ekobena2025_reference/Bictegravir_Ekobena2025_reference_matlab_simbio.zip" download>Bictegravir_Ekobena2025_reference_matlab_simbio.zip</a> <span class="pk-size">(2.8 kB)</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_bictegravir/Bictegravir_Ekobena2025_reference/Bictegravir_Ekobena2025_reference_sbml.zip" download>Bictegravir_Ekobena2025_reference_sbml.zip</a> <span class="pk-size">(2.6 kB)</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_bictegravir/Bictegravir_Ekobena2025_reference/Bictegravir_Ekobena2025_reference_cellml.zip" download>Bictegravir_Ekobena2025_reference_cellml.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
 </tbody></table>
-<p>No bundles have been generated for this record yet. When the engineer emits them they appear here automatically — this page reports what is on disk and generates nothing itself.</p>
-</div></div>
+<p>Each archive holds the model source, a script that simulates it against the appropriate library, and a README describing both and how to run them.</p>
+<p><b>FMI is two downloads.</b> The archive holds this record's parameters and its driver; the simulator itself is <code>PK_1C_enteral.fmu</code>, one compiled template shared by every model of this structure. Take the FMU once, keep it beside the script (or pass <code>--fmu PATH</code>). Running it reproduces the model-specific FMU exactly.</p>
+</div><figure class="pk-models-diagram"><img src="drugs/drug_bictegravir/Bictegravir_Ekobena2025_reference/Bictegravir_Ekobena2025_reference.svg" alt="Bictegravir_Ekobena2025_reference diagram"><figcaption>Model diagram (Modelica) using Pharmacolibrary v26.09 components, rendered by OpenModelica 1.26.7.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+**Administration: oral** — 50 mg, single dose, first-order absorption (ka 0.64 /h, F 0.9). Dose in the paper: 50 mg.
+
+<dbs-fmusim paramsurl="drugs/drug_bictegravir/Bictegravir_Ekobena2025_reference/Bictegravir_Ekobena2025_reference_params.json" metaurl="assets/fmu/PK_1C_enteral.vr.json" wasmurl="assets/fmu/PK_1C_enteral.js" controlsurl="drugs/drug_bictegravir/Bictegravir_Ekobena2025_reference/Bictegravir_Ekobena2025_reference_sim_controls.json"></dbs-fmusim>
+
+<sub>Runs this record's model in the browser as WebAssembly. Sliders start at the extracted values; the reference check compares the browser's peak against the FMPy result recorded when the record was built, and is withheld once a value has been edited. Template `PK_1C_enteral` · parameters `Bictegravir_Ekobena2025_reference_params.json` · controls `Bictegravir_Ekobena2025_reference_sim_controls.json`. A slider marked *simulator value* is running on the template's own default because this record does not pin that parameter.</sub>
 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 13:53 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 15:44 UTC</sub>

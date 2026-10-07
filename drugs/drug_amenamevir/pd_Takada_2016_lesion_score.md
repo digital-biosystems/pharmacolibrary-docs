@@ -1,7 +1,7 @@
-<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;J05A&quot;,&quot;href&quot;:&quot;atc/J05A.md&quot;},{&quot;label&quot;:&quot;amenamevir&quot;,&quot;href&quot;:&quot;drugs/drug_amenamevir/&quot;},{&quot;label&quot;:&quot;Takada_2016 \u00b7 PD lesion score&quot;}]"></div>
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;J05A&quot;,&quot;href&quot;:&quot;atc/J05A.md&quot;},{&quot;label&quot;:&quot;amenamevir&quot;,&quot;href&quot;:&quot;drugs/drug_amenamevir/&quot;},{&quot;label&quot;:&quot;Takada_2016 \u00b7 PD lesion score (ordered-categorical)&quot;}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# lesion score — PD  <span class="pk-badge pk-badge--orange">needs review</span>
+# lesion score (ordered-categorical) — PD  <span class="pk-badge pk-badge--orange">needs review</span>
 
 <details class="pk-legend"><summary>What the PGx badges mean — evidence, and whether a model runs</summary><table><tbody><tr><td><span class="pk-badge pk-badge--green">quantitative</span></td><td>the paper gives the effect of each phenotype (or genotype) on a named model parameter — a θ per category.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">qualitative</span></td><td>the paper links the gene to the drug but states no effect size on a model parameter, so it changes no model.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">guideline estimate</span></td><td>the effect comes from a CPIC / DPWG dosing guideline, not from this paper's numbers.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">safety allele</span></td><td>a risk allele for an adverse reaction (an HLA type, G6PD deficiency …): it changes no PK/PD parameter.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>the extraction is incomplete or inconsistent.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted.</td></tr><tr><td><span class="pk-badge pk-badge--green">▶ simulatable</span></td><td>the paper's popPK model runs per phenotype in the browser (Simulation tab); its PGx Modelica model is under Models.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">model only</span></td><td>a PGx Modelica model exists but has no in-browser simulator.</td></tr></tbody></table></details>
 
@@ -13,9 +13,13 @@
 
 ## What this record describes
 
-**As extracted:** Amenamevir drives lesion score: categorical (graded) response model.
+**As extracted:** Amenamevir (via virtual number of virus plaques) drives lesion score (ordered-categorical): categorical (graded) response model.
 
 **Model:** No model was generated from this record.
+
+> The paper excerpt is not available, so the specific mechanism linking amenamevir concentrations to the inhibition of the lesion score and the associated potency or rate values are not described.
+>
+> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
 
 - **paper:** `Takada_2016`
 - **model family:** `categorical`

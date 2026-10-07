@@ -18,7 +18,7 @@ Amenamevir is an antiviral drug developed for the treatment of shingles (herpes 
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 12:57 | 0:35 | 0/0/0 | 0/1/0 | 0/0/0 | 41,827/996 | einfracz / qwen3.8-27b | 1 | 0/1 | 1/0 | 0 |
+| 2026-10-07 15:07 | 0:16 | 0/0/0 | 0/0/1 | 0/0/0 | 16,036/796 | ollama / glm-5.3-flash | 1 | 0/1 | 1/0 | 0 |
 
 ## popPK records
 
@@ -28,8 +28,7 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">needs review</span> | [Takada_2016_lesion_score](drugs/drug_amenamevir/pd_Takada_2016_lesion_score.md) | lesion score ← amenamevir · categorical (graded) response model | — | Takada A et al., Integrative pharmacokinetic-pharmacodyn…, Drug metabolism and pharmac… (2016) | [10.1016/j.dmpk.2016.05.005](https://doi.org/10.1016/j.dmpk.2016.05.005) |
-| <span class="pk-badge pk-badge--red">rejected</span> | [Takada_2016_virus_plaques](drugs/drug_amenamevir/pd_Takada_2016_virus_plaques.md) | virus plaques ← amenamevir · indirect response — drug inhibits the production of virus plaques | — | Takada A et al., Integrative pharmacokinetic-pharmacodyn…, Drug metabolism and pharmac… (2016) | [10.1016/j.dmpk.2016.05.005](https://doi.org/10.1016/j.dmpk.2016.05.005) |
+| <span class="pk-badge pk-badge--orange">needs review</span> | [Takada_2016_lesion_score](drugs/drug_amenamevir/pd_Takada_2016_lesion_score.md) | lesion score (ordered-categorical) ← amenamevir (via virtual number of virus plaques) · categorical (graded) response model | — | Takada A et al., Integrative pharmacokinetic-pharmacodyn…, Drug metabolism and pharmac… (2016) | [10.1016/j.dmpk.2016.05.005](https://doi.org/10.1016/j.dmpk.2016.05.005) |
 
 <details class="legend">
 <summary>Badge legend — what each badge means</summary>
@@ -44,17 +43,29 @@ _not available_
 - **records:** 0  ·  extracted 0  ·  needs_review 0  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
+## Full text wanted
+
+_2 paper(s) judged relevant from the abstract, with no full text on disk — paywalled, or the resolver could not reach them. Follow the DOI, then save the PDF into `papers/` as `&lt;save as&gt;.pdf` and re-run the extraction._
+
+| save as | citation | domain | score | DOI | PubMed | why wanted |
+|---|---|---|---|---|---|---|
+| `Takada_2014.pdf` | Takada A et al., Statistical analysis of Amenamevir (ASP…, Clinical pharmacology in dr… (2014) | popPK | 9 | [10.1002/cpdd.108](https://doi.org/10.1002/cpdd.108) | [27129009](https://pubmed.ncbi.nlm.nih.gov/27129009) | A population PK model of amenamevir in genital herpes patients is described, but no numeric parameter values (CL, V, ka) appear in the evidence — they presumably live in tables/figures not provided. |
+| `Takada_2016.pdf` | Takada A et al., Integrative pharmacokinetic-pharmacodyn…, Drug metabolism and pharmac… (2016) | popPK | 7 | [10.1016/j.dmpk.2016.05.005](https://doi.org/10.1016/j.dmpk.2016.05.005) | [27461507](https://pubmed.ncbi.nlm.nih.gov/27461507) | PK/PD modeling of amenamevir in humans is described, but no numeric PK parameter values appear in the evidence; they likely reside in supplementary material or figures not provided. |
+
+<sub>queue written 2026-10-07T15:07:51.847341+00:00</sub>
+
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Andreu_2025 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of a new HSV-1 inhibitor (LN-7), and amenamevir is only mentioned as a background comparator for resistance. |
-| popPK | Chono_2010 | irrelevant | 0 | 0 | The study focuses on antiviral mechanisms, in vitro potency (EC50), and efficacy in a mouse infection model, without reporting any pharmacokinetic parameters (CL, V, ka, t1/2) for amenamevir. |
-| popPK | Effendi_2024 | irrelevant | 0 | 0 | This is a mechanistic virology study on viral resistance to amenamevir, not a pharmacokinetic study. |
-| popPK | Katsumata_2013 | irrelevant | 1 | 1 | The study is a preclinical pharmacodynamics/pharmacokinetics analysis in a murine model that focuses on viral load reduction and correlates it with exposure metrics (AUC, Cmax, T&gt;100) rather than reporting quantitative compartmental disposition parameters (CL, V, ka) or a population-PK model for amenamevir. |
-| popPK | Shiraki_2020 | irrelevant | 0 | 0 | The study investigates the mechanism of antiviral activity (EC50 and viral replication kinetics) in vitro, not the pharmacokinetic disposition parameters (CL, V, etc.) of amenamevir. |
-| popPK | Takada_2016 | irrelevant | 3 | 0 | The abstract describes a PK/PD modeling study for amenamevir, indicating relevance, but no quantitative PK parameter values (CL, V, etc.) are present in the provided text. |
-| popPK | Yajima_2017 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic assessment of antiviral efficacy and does not report quantitative pharmacokinetic parameters (e.g., clearance, volume) for amenamevir. |
+| popPK | Andreu_2025 | irrelevant | 0 | 0 | This is a drug-discovery paper for a new HSV-1 endonuclease inhibitor (LN-7); amenamevir is only mentioned as an approved comparator drug, and the PK parameters reported (CL, AUC, F) belong to LN-7 in rats, not to amenamevir. |
+| popPK | Chono_2010 | irrelevant | 0 | 0 | This is an in vitro/in vivo antiviral efficacy study with no pharmacokinetic parameters for amenamevir reported. |
+| popPK | Effendi_2024 | irrelevant | 0 | 0 | Virology resistance study with EC50 values only; no pharmacokinetic parameters for amenamevir. |
+| popPK | Katsumata_2013 | relevant | 4 | 3 | Murine PK/PD study of amenamevir reporting Cmax, AUC, and T&gt;100 but no compartmental disposition parameters (CL, V, half-life), and numeric PK values appear only partially in the abstract. |
+| popPK | Shiraki_2020 | irrelevant | 0 | 0 | In-vitro antiviral mechanism study (EC50s) with no pharmacokinetic disposition parameters for amenamevir. |
+| popPK | Takada_2014 | relevant | 9 | 2 | A population PK model of amenamevir in genital herpes patients is described, but no numeric parameter values (CL, V, ka) appear in the evidence — they presumably live in tables/figures not provided. |
+| popPK | Takada_2016 | relevant | 7 | 2 | PK/PD modeling of amenamevir in humans is described, but no numeric PK parameter values appear in the evidence; they likely reside in supplementary material or figures not provided. |
+| popPK | Yajima_2017 | irrelevant | 0 | 0 | In-vitro antiviral mechanism study with no PK disposition parameters for amenamevir; only a qualitative mention of "better pharmacokinetic profile." |
 
 ---
 <sub>Generated by `docs.py` (scholarv2)</sub>

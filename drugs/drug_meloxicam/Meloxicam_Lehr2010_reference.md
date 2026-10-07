@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;M01A&quot;,&quot;href&quot;:&quot;atc/M01A.md&quot;},{&quot;label&quot;:&quot;meloxicam&quot;,&quot;href&quot;:&quot;drugs/drug_meloxicam/&quot;},{&quot;label&quot;:&quot;Lehr_2010 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Meloxicam_Lehr2010_reference&quot;,&quot;label&quot;:&quot;Lehr_2010_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_meloxicam/Meloxicam_Lehr2010_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Meloxicam_Aoyama2017_reference&quot;,&quot;label&quot;:&quot;Aoyama_2017_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_meloxicam/Meloxicam_Aoyama2017_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Meloxicam_Lehr2010_reference&quot;,&quot;label&quot;:&quot;Lehr_2010_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_meloxicam/Meloxicam_Lehr2010_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # meloxicam — `Meloxicam_Lehr2010_reference`
 
-> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="Animal study (cat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">cat</span>
+> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="Animal study (cat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">cat</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -17,14 +17,22 @@
 
 **Model:** A simulatable model was generated — see the **Models** and **Simulation** tabs.
 
-> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+### Reviewer guidance
+
+**Every check that could be run on this record passed.**
+
+Only the abstract was available, so reported summary statistics stand in for a fitted model.
+
+<sub>reviewed by rule template (no LLM)</sub>
+
+> ⚠️ **STALE** — review status `curated_candidate` (reviewed 2026-10-07 02:22:02.960265+00:00) predates the upstream re-run (2026-10-07 14:49:56.974582+00:00). Current validate status: `extracted`.
 
 ## Citation
 Lehr T et al., Population pharmacokinetic modelling an…, Journal of veterinary pharm… (2010)
   ·  DOI: [10.1111/j.1365-2885.2009.01134.x](https://doi.org/10.1111/j.1365-2885.2009.01134.x)
 
 ## Model component
-<dbs-pgx drug="meloxicam" model-id="Meloxicam_Lehr2010_reference" status="extracted" stale="false" population="healthy cats" measured-compound="meloxicam" parameterization="apparent" topology="1C"></dbs-pgx>
+<dbs-pgx drug="meloxicam" model-id="Meloxicam_Lehr2010_reference" status="extracted" stale="true" population="healthy cats" measured-compound="meloxicam" parameterization="apparent" topology="1C"></dbs-pgx>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 4 extracted.
@@ -34,10 +42,10 @@ Lehr T et al., Population pharmacokinetic modelling an…, Journal of veterinary
 ## Parameters
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| total apparent body clearance (CL/F) | `Q27` · CL/F | 0.00656 | L/h/kg | 1.2755555555555555e-07 | [l] / [[h] · [kg]] | not captured | llm_corrected (0.6) | Lehr_2010:abstract | — | not captured |
-| apparent volume of distribution (V/F) | `Q76` · V/F | 0.245 | L/kg | 0.01715 | [l] / [kg] | not captured | exact (1.0) | Lehr_2010:abstract | — | not captured |
-| absorption constant (K(A)) | `Q49` · kabs | 1.26 | 1/h | 0.00035 | [1] / [h] | not captured | llm_confirmed (0.6) | Lehr_2010:abstract | — | not captured |
-| mean plasma terminal half-life | `Q57` · t1/2z | 25.7 | h | 92520.0 | [h] | not captured | llm (0.6) | Lehr_2010:abstract | — | not captured |
+| the total apparent body clearance (CL/F) | `Q27` · CL/F | 0.00656 | L/h/kg | 1.2755555555555555e-07 | [l] / [[h] · [kg]] | not captured | llm_corrected (0.6) | Lehr_2010:abstract | — | not captured |
+| the apparent volume of distribution (V/F) | `Q76` · V/F | 0.245 | L/kg | 0.01715 | [l] / [kg] | not captured | llm_confirmed (0.6) | Lehr_2010:abstract | — | not captured |
+| the absorption constant (K(A)) | `Q49` · kabs | 1.26 | 1/h | 0.00035 | [1] / [h] | not captured | boundary_llm_dim_refused (0.8) | Lehr_2010:abstract | — | not captured |
+| the mean plasma terminal half-life | `Q57` · t1/2z | 25.7 | h | 92520.0 | [h] | not captured | llm (0.6) | Lehr_2010:abstract | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -78,6 +86,18 @@ Lehr T et al., Population pharmacokinetic modelling an…, Journal of veterinary
 | C9_phys_window_Q27 | pass | clearance within physiological range | 0.459 L/h | not captured | not captured | ['Lehr_2010:abstract'] |
 | C9_phys_window_Q76 | pass | volume within physiological range | 17.1 L | not captured | not captured | ['Lehr_2010:abstract'] |
 
+**Reviewer per-scenario checks:**
+
+| check | scenario | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|---|
+| T0_analyte_identity | not captured | pass | not captured | not captured | not captured | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | not captured | skipped | not captured | not captured | not captured | no covariate effects in record |
+| T3_apparent_invariant | not captured | pass | not captured | F=Fm=1, no molar correction | not captured | apparent params must not be double-corrected |
+| T3_output_variable | not captured | pass | C_central (measured=meloxicam) | central.C | not captured | output must be the measured/analyte compartment |
+| T3_param_coverage | not captured | pass | 3 scholar param(s) emitted or defaulted | 3 covered | not captured | all structural parameters accounted for |
+| T3_topology_template | not captured | pass | 1C → PK_1C* | PK_1C_enteral | not captured | engineer template must match the scholar topology |
+| T6_deviations | not captured | pass | not captured | all deviations documented+quantified | not captured | LLM adjudication → deterministic rule |
+
 <details class="legend">
 <summary>Check legend — what each column means</summary>
 <table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>check</code></td><td>the check id. C0_has_structural_params = at least one numeric structural parameter; C0b_disposition_core = a volume OR a clearance/elimination term (neither means an exposure/outcome paper, not popPK — rejected); C0c_disposition_complete = BOTH a volume AND a clearance/elimination term, which is what the engineer needs to build (one without the other routes to review, never to the engineer); C1_half_life(_beta) = reported half-life against V and CL; C2_reference = covariate scenarios are sign-plausible; C3_cl_dose_auc = CL against dose/AUC; C4_auc_closed_form = AUC recomputed in closed form; C5_dimension_&lt;Qcode&gt; = the parameter's units carry the dimension its Q-code requires.</td></tr><tr><td><code>status</code></td><td>pass, fail, or skipped. A skipped check had nothing to compare — the paper did not report the input it needs — and is not evidence against the record. The scholar table lists only pass and fail; the reviewer table also shows skipped, with the reason in note.</td></tr><tr><td><code>expected</code></td><td>the value the check required, from the paper or from the ontology.</td></tr><tr><td><code>obtained</code></td><td>what the record actually yields.</td></tr><tr><td><code>ratio</code></td><td>obtained / expected, where the check is a numeric comparison.</td></tr><tr><td><code>tol</code></td><td>the tolerance the ratio had to fall within to pass.</td></tr><tr><td><code>source</code></td><td>the artifact the expected value was taken from.</td></tr><tr><td><code>scenario</code></td><td>reviewer table only — the covariate scenario the check was run under.</td></tr><tr><td><code>note</code></td><td>why a check was skipped, or how it was judged.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>the field is absent from the KB artifact — nothing was recorded. This is NOT the same as zero or empty: the value is unknown, not measured to be nothing.</td></tr><tr><td><code>—</code></td><td>deliberately not shown: the column does not apply to this row.</td></tr><tr><td><code>not verified</code></td><td>the record is not in an accepted state (see the badge and the note above the table); the numbers are shown as extracted, not endorsed.</td></tr></tbody></table>
@@ -86,6 +106,9 @@ Lehr T et al., Population pharmacokinetic modelling an…, Journal of veterinary
 ## Raw artifacts
 
 - scholar stages: `../../../knowledgebase/drugs/drug_meloxicam/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Lehr_2010` / `Lehr_2010::reference`)
+- model: `../../../knowledgebase/drugs/drug_meloxicam/models/modelica/Meloxicam_Lehr2010_reference.mo`
+- deviation: `../../../knowledgebase/drugs/drug_meloxicam/models/modelica/Meloxicam_Lehr2010_reference.deviation.json`
+- sim: `../../../knowledgebase/drugs/drug_meloxicam/models/modelica/Meloxicam_Lehr2010_reference.json`
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -116,4 +139,4 @@ Lehr T et al., Population pharmacokinetic modelling an…, Journal of veterinary
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 02:13 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 14:49 UTC</sub>

@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N02A&quot;,&quot;href&quot;:&quot;atc/N02A.md&quot;},{&quot;label&quot;:&quot;oxycodone&quot;,&quot;href&quot;:&quot;drugs/drug_oxycodone/&quot;},{&quot;label&quot;:&quot;Saari_2012 \u00b7 covariate_model&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Oxycodone_Morse2021_reference&quot;,&quot;label&quot;:&quot;Morse_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_oxycodone/Oxycodone_Morse2021_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Oxycodone_Shi2026_reference&quot;,&quot;label&quot;:&quot;Shi_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_oxycodone/Oxycodone_Shi2026_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Oxycodone_Morse2021_reference&quot;,&quot;label&quot;:&quot;Morse_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_oxycodone/Oxycodone_Morse2021_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Oxycodone_Shi2026_reference&quot;,&quot;label&quot;:&quot;Shi_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_oxycodone/Oxycodone_Shi2026_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # oxycodone — `Oxycodone_Saari2012_covariate_model`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.474). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.474). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -17,19 +17,25 @@
 
 ### Reviewer guidance
 
+**Oxycodone's initial distribution half-life of 2.5 minutes was rejected because the unit could not be converted to seconds.**
+
+The record lists the initial distribution half-life for oxycodone as 2.5 minutes, but the system could not convert this time unit to the required SI standard. This omission meant the corresponding structural parameter lacked a usable value, triggering a dimension mismatch error. The model builder also disagreed with the second reader on several extracted parameter values, including the first-order absorption rate constant and the initial distribution half-life. Extracted — oxycodone: Q2 153 litre, V 1.15e+03 L, V2 20.2 L, t1/2α 2.5 min, t1/2β 4.2 h, Vss 286 litre, CL 37.7 L/h, V1 173 litre.
+
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of s 1: this record has none, the second reading 0.110; it also differs on 9 more fields. That field shapes the model, so the record is marked disputed.
 
-> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+<sub>reviewed by qwen3.8-27b</sub>
+
+> ⚠️ **STALE** — review status `rejected` (reviewed 2026-10-07 06:17:55.201382+00:00) predates the upstream re-run (2026-10-07 14:56:39.658903+00:00). Current validate status: `rejected`.
 
 ## Citation
 Saari TI et al., Oxycodone clearance is markedly reduced…, British journal of anaesthe… (2012)
   ·  DOI: [10.1093/bja/aer395](https://doi.org/10.1093/bja/aer395)
 
 ## Model component
-<dbs-pgx drug="oxycodone" model-id="Oxycodone_Saari2012_covariate_model" status="rejected" stale="false" population="healthy adults and elderly" measured-compound="oxycodone" parameterization="mechanistic" topology="3C"></dbs-pgx>
+<dbs-pgx drug="oxycodone" model-id="Oxycodone_Saari2012_covariate_model" status="rejected" stale="true" population="individuals aged 19-89 years" measured-compound="oxycodone" parameterization="mechanistic" topology="1C"></dbs-pgx>
 
-**Model structure:** 3-compartment; no model was built for this record.  
-**Parameters:** 8 extracted.
+**Model structure:** 1-compartment; no model was built for this record.  
+**Parameters:** 7 extracted.
 
 **Parameterization:** mechanistic.
 
@@ -38,15 +44,14 @@ Saari TI et al., Oxycodone clearance is markedly reduced…, British journal of 
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| u 1 (litre h 21 ) | `Q900` · equation variable | 48.1 | litre h 21 | not captured | [l] · [h21] | not captured | llm (0.6) | tab_1:row2:col1, tab_1:row2:col4 | — | not captured |
 | u 2 (litre) | `Q99` · Q2 | 153 | litre | not captured | [l] | not captured | llm (0.6) | tab_1:row3:col1, tab_1:row3:col4 | — | not captured |
-| u 3 (litre h 21 ) | `Q61` · V | 1153 | L | 1.153 | L | not captured | llm (0.6) | tab_1:row4:col4 | — | not captured |
-| u 6 | `Q64` · V2 | 20.174 | L | 0.020174 | L | not captured | llm (0.6) | tab_1:row7:col4 | — | not captured |
-| t1 2 a (min) | `Q59` · t1/2α | 2.5 | min | 150.0 | [min] | not captured | llm (0.6) | tab_1:row9:col4, Saari_2012_table_3:row4:col2, Saari_2012_table_3:row4:col3 | — | not captured |
-| t1 2 b (h) | `Q60` · t1/2β | 4.2 | h | 15120.0 | [h] | not captured | llm (0.6) | tab_1:row10:col4, Saari_2012_table_3:row5:col2, Saari_2012_table_3:row5:col3 | — | not captured |
-| V ss (litre) | `Q65` · Vss | 286 | litre | 0.28600000000000003 | [l] | not captured | space_fold (0.95) | tab_1:row11:col4, Saari_2012_table_3:row3:col2, Saari_2012_table_3:row3:col3 | — | not captured |
-| CL 1 (litre h 21 ) 51.8 | `Q22` · CL | 37.7 | L/h | 1.0472222222222224e-05 | L/h | not captured | llm_confirmed (0.6) | Saari_2012_table_3:row1:col2 | — | not captured |
-| V 1 (litre) | `Q63` · V1 | 173 | litre | 0.17300000000000001 | [l] | not captured | space_fold (0.95) | Saari_2012_table_3:row2:col2, Saari_2012_table_3:row2:col3 | — | not captured |
+| u 3 (litre h 21 ) | `Q77` · V3 | 1153 | L | 1.153 | L | not captured | llm (0.6) | tab_1:row4:col4 | — | not captured |
+| u 4 (litre) | `Q61` · V | 133 | litre | 0.133 | [l] | not captured | llm (0.6) | tab_1:row5:col4 | — | not captured |
+| u 5 * | `Q900` · equation variable | 0.549 | not captured | not captured | not captured | not captured | llm (0.6) | tab_1:row6:col4 | — | not captured |
+| t1 2 a (min) | `Q59` · t1/2α | 2.5 | min | 150.0 | [min] | not captured | llm (0.6) | tab_1:row9:col4 | — | not captured |
+| t1 2 b (h) | `Q60` · t1/2β | 4.2 | h | 15120.0 | [h] | not captured | llm (0.6) | tab_1:row10:col4 | — | not captured |
+| V ss (litre) | `Q65` · Vss | 286 | litre | 0.28600000000000003 | [l] | not captured | space_fold (0.95) | tab_1:row11:col4 | — | not captured |
+| CL | `Q22` · CL | 38.03 | L/h | 1.056388888888889e-05 | L/h | not captured | review_gapfill (0.7) | Shi_2026:review | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -62,22 +67,22 @@ Saari TI et al., Oxycodone clearance is markedly reduced…, British journal of 
 - table section iiv: 'v 2 4' routed out of structural estimates ('Interindividual variability')
 - table section residual_error: 's 1' routed out of structural estimates ('Residual variability')
 - table section residual_error: 's 2 (ng ml 21 )' routed out of structural estimates ('Residual variability')
-- unit_dimension_unknown: 'litre h 21' (equation variable)
+- dropped unlinked row (NIL): 'u 1 (litre h 21 )' — extend the ontology if this is a real PK parameter (source ['tab_1:row2:col1', 'tab_1:row2:col4'])
 - unit_dimension_mismatch: 'u 2 (litre)' → Q99 (unit '[length] ** 3' vs ontology '[length] ** 3 / [time]') — route to review
-- unit_dimension_unknown: 'litre h 21' (V)
-- dropped duplicate Q61 ('u 4 (litre)', value '133') — already have one for this compound
-- dropped duplicate Q900 ('u 5 *', value '0.549') — already have one for this compound
+- unit_dimension_unknown: 'litre h 21' (V3)
+- dropped duplicate Q900 ('u 6', value '20.174') — already have one for this compound
 - dropped unlinked row (NIL): 'u 7' — extend the ontology if this is a real PK parameter (source ['tab_1:row8:col4'])
 - dropped unlinked row (NIL): 'DV vs PRED (%)' — extend the ontology if this is a real PK parameter (source ['tab_1:row21:col1', 'tab_1:row24:col1'])
-- dropped duplicate Q64 ('DV vs IPRED (%)', value '0.9') — already have one for this compound
-- implicit units: 'u 3 (litre h 21 )' → L (from the popPK convention: 'The parameter is V1 (Volume of distribution of the central compartment). In population PK studies, distribution volumes ')
-- implicit units: 'u 6' → L (from the popPK convention: 'The parameter is V2 (Volume of distribution of the peripheral compartment). In population PK studies, distribution volum')
-- implicit units: 'CL 1 (litre h 21 ) 51.8' → L/h (from the popPK convention: 'The parameter is CL (Total clearance). In population PK studies, clearance is conventionally expressed in Liters per hou')
+- dropped duplicate Q900 ('DV vs IPRED (%)', value '0.9') — already have one for this compound
+- implicit units: 'u 3 (litre h 21 )' → L (from the paper text: "Table 3 caption explicitly states 'litre h 21'")
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=oxycodone
 - held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
-- structure disagreement: deterministic 3C vs LLM 2C — review compartment count
+- structure disagreement: deterministic 1C vs LLM 3C — review compartment count
 - status held at route_to_review — not promoted
 - population split: 'covariate model' subgroup of Saari_2012 (paper reports 2 populations: covariate model, population estimates)
+- gap-filled Q22 (CL) from Shi_2026's review values (primary lacked it)
+- skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
+- skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
 
 **Extraction notes:**
 - unparsed cell tab_1:row2:col5 = '45.6, 50.8'
@@ -98,8 +103,7 @@ Saari TI et al., Oxycodone clearance is markedly reduced…, British journal of 
 - unparsed cell tab_1:row16:col5 = '0.023, 0.28'
 - unparsed cell tab_1:row18:col5 = '0.096, 0.126'
 - unparsed cell tab_1:row19:col5 = '0.077, 0.165'
-- companion parameter table 3 transcribed (14 record(s))
-- LLM selected parameter table(s) 3
+- LLM selected parameter table(s) 2
 
 ## Validation
 
@@ -137,24 +141,21 @@ first reading `qwen3.6:27b-q8_0` — the numbers on this page are its, whatever 
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 8 | not captured | not captured | not captured |
+| C0_has_structural_params | pass | not captured | 6 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
-| C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
-| C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Saari_2012_table_3:row1:col2'] |
-| C5_dimension_Q59 | pass | [time] | not captured | not captured | not captured | ['tab_1:row9:col4', 'Saari_2012_table_3:row4:col2', 'Saari_2012_table_3:row4:col3'] |
-| C5_dimension_Q60 | pass | [time] | not captured | not captured | not captured | ['tab_1:row10:col4', 'Saari_2012_table_3:row5:col2', 'Saari_2012_table_3:row5:col3'] |
-| C5_dimension_Q61 | pass | [length] ** 3 | not captured | not captured | not captured | ['tab_1:row4:col4'] |
-| C5_dimension_Q63 | pass | [length] ** 3 | not captured | not captured | not captured | ['Saari_2012_table_3:row2:col2', 'Saari_2012_table_3:row2:col3'] |
-| C5_dimension_Q64 | pass | [length] ** 3 | not captured | not captured | not captured | ['tab_1:row7:col4'] |
-| C5_dimension_Q65 | pass | [length] ** 3 | not captured | not captured | not captured | ['tab_1:row11:col4', 'Saari_2012_table_3:row3:col2', 'Saari_2012_table_3:row3:col3'] |
+| C0c_disposition_complete | fail | not captured | not captured | not captured | not captured | not captured |
+| C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Shi_2026:review'] |
+| C5_dimension_Q59 | pass | [time] | not captured | not captured | not captured | ['tab_1:row9:col4'] |
+| C5_dimension_Q60 | pass | [time] | not captured | not captured | not captured | ['tab_1:row10:col4'] |
+| C5_dimension_Q61 | pass | [length] ** 3 | not captured | not captured | not captured | ['tab_1:row5:col4'] |
+| C5_dimension_Q65 | pass | [length] ** 3 | not captured | not captured | not captured | ['tab_1:row11:col4'] |
+| C5_dimension_Q77 | pass | [length] ** 3 | not captured | not captured | not captured | ['tab_1:row4:col4'] |
 | C5_dimension_Q99 | fail | [length] ** 3 | litre | not captured | not captured | ['tab_1:row3:col1', 'tab_1:row3:col4'] |
-| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 37.7 | not captured | not captured | ['Saari_2012_table_3:row1:col2'] |
+| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 38.03 | not captured | not captured | ['Shi_2026:review'] |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
-| C9_phys_window_Q22 | pass | clearance within physiological range | 37.7 L/h | not captured | not captured | ['Saari_2012_table_3:row1:col2'] |
-| C9_phys_window_Q61 | pass | volume within physiological range | 1.15e+03 L | not captured | not captured | ['tab_1:row4:col4'] |
-| C9_phys_window_Q63 | pass | volume within physiological range | 173 L | not captured | not captured | ['Saari_2012_table_3:row2:col2', 'Saari_2012_table_3:row2:col3'] |
-| C9_phys_window_Q64 | pass | volume within physiological range | 20.2 L | not captured | not captured | ['tab_1:row7:col4'] |
-| C9_phys_window_Q65 | pass | volume within physiological range | 286 L | not captured | not captured | ['tab_1:row11:col4', 'Saari_2012_table_3:row3:col2', 'Saari_2012_table_3:row3:col3'] |
+| C9_phys_window_Q22 | pass | clearance within physiological range | 38 L/h | not captured | not captured | ['Shi_2026:review'] |
+| C9_phys_window_Q61 | pass | volume within physiological range | 133 L | not captured | not captured | ['tab_1:row5:col4'] |
+| C9_phys_window_Q65 | pass | volume within physiological range | 286 L | not captured | not captured | ['tab_1:row11:col4'] |
 
 <details class="legend">
 <summary>Check legend — what each column means</summary>
@@ -179,4 +180,4 @@ _No web simulator for this record: its structure has no shared WebAssembly templ
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 05:38 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 14:56 UTC</sub>

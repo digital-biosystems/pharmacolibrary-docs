@@ -1,10 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A10B&quot;,&quot;href&quot;:&quot;atc/A10B.md&quot;},{&quot;label&quot;:&quot;vildagliptin&quot;,&quot;href&quot;:&quot;drugs/drug_vildagliptin/&quot;},{&quot;label&quot;:&quot;Landersdorfer_2012 \u00b7 reference&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Vildagliptin_Dias2026_reference&quot;,&quot;label&quot;:&quot;Dias_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_vildagliptin/Vildagliptin_Dias2026_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # vildagliptin — `Vildagliptin_Landersdorfer2012_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.875). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.875). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -24,12 +25,14 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on `parame
 
 <sub>reviewed by qwen3.8:27b-mtp-q8_0</sub>
 
+> ⚠️ **STALE** — review status `rejected` (reviewed 2026-10-05 05:23:26.588505+00:00) predates the upstream re-run (2026-10-07 16:22:12.628838+00:00). Current validate status: `rejected`.
+
 ## Citation
 Landersdorfer CB et al., Mechanism-based population pharmacokine…, British journal of clinical… (2012)
   ·  DOI: [10.1111/j.1365-2125.2011.04108.x](https://doi.org/10.1111/j.1365-2125.2011.04108.x)
 
 ## Model component
-<dbs-pgx drug="vildagliptin" model-id="Vildagliptin_Landersdorfer2012_reference" status="rejected" stale="false" population="type 2 diabetic patients" measured-compound="vildagliptin" parameterization="mechanistic" topology="general_linear"></dbs-pgx>
+<dbs-pgx drug="vildagliptin" model-id="Vildagliptin_Landersdorfer2012_reference" status="rejected" stale="true" population="type 2 diabetic patients" measured-compound="vildagliptin" parameterization="mechanistic" topology="general_linear"></dbs-pgx>
 
 **Model structure:** general linear; no model was built for this record.  
 **Parameters:** 3 extracted.
@@ -43,7 +46,7 @@ Landersdorfer CB et al., Mechanism-based population pharmacokine…, British jou
 |---|---|---|---|---|---|---|---|---|---|---|
 | non-saturable clearance | `Q22` · CL | 36 | l h−1 | 1e-05 | [l] / [h] | not captured | llm_confirmed (0.6) | Landersdorfer_2012:abstract | — | not captured |
 | central volume of distribution | `Q63` · V1 | 22 | l | 0.022 | [l] | not captured | boundary_compartment (0.9) | Landersdorfer_2012:abstract | — | not captured |
-| half-life of dissociation from DPP-4 | `Q330` · koff | 1.1 | h | not captured | [h] | not captured | llm (0.6) | Landersdorfer_2012:abstract | — | not captured |
+| half-life of hydrolysis | `Q57` · t1/2z | 6.3 | h | 22680.0 | [h] | not captured | llm (0.6) | Landersdorfer_2012:abstract | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -53,10 +56,8 @@ Landersdorfer CB et al., Mechanism-based population pharmacokine…, British jou
 ## Departures & gaps
 
 **Interpretation flags:**
-- unit_dimension_mismatch: 'half-life of dissociation from DPP-4' → Q330 (unit '[time]' vs ontology '1 / [time]') — route to review
-- dropped unlinked row (NIL): 'half-life of hydrolysis' — extend the ontology if this is a real PK parameter (source ['Landersdorfer_2012:abstract'])
+- dropped unlinked row (NIL): 'half-life of dissociation from DPP-4' — extend the ontology if this is a real PK parameter (source ['Landersdorfer_2012:abstract'])
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=vildagliptin
-- held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
 - topology: transfer parameter unlinked (Q100) — add Kfm/formation-rate/rate-constant to the ontology; routing to review
 - status held at route_to_review — not promoted
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
@@ -97,7 +98,7 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Landersdorfer_2012:abstract'] |
-| C5_dimension_Q330 | fail | [time] | h | not captured | not captured | ['Landersdorfer_2012:abstract'] |
+| C5_dimension_Q57 | pass | [time] | not captured | not captured | not captured | ['Landersdorfer_2012:abstract'] |
 | C5_dimension_Q63 | pass | [length] ** 3 | not captured | not captured | not captured | ['Landersdorfer_2012:abstract'] |
 | C6_cl_magnitude | pass | &lt;= 90.0 L/h | 36.0 | not captured | not captured | ['Landersdorfer_2012:abstract'] |
 | C8_topology | fail | ontology-linked transfer parameter on every edge | ['none'] | not captured | not captured | not captured |
@@ -127,4 +128,4 @@ _No web simulator for this record: its structure has no shared WebAssembly templ
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-05 05:15 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 16:22 UTC</sub>

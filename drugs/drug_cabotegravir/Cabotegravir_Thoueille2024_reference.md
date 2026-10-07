@@ -1,10 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;J05A&quot;,&quot;href&quot;:&quot;atc/J05A.md&quot;},{&quot;label&quot;:&quot;cabotegravir&quot;,&quot;href&quot;:&quot;drugs/drug_cabotegravir/&quot;},{&quot;label&quot;:&quot;Thoueille_2024 \u00b7 reference&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Cabotegravir_Renou2026_han_et_al&quot;,&quot;label&quot;:&quot;Renou_2026_han_et_al&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cabotegravir/Cabotegravir_Renou2026_han_et_al.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Cabotegravir_Renou2026_thoueille_et_al&quot;,&quot;label&quot;:&quot;Renou_2026_thoueille_et_al&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cabotegravir/Cabotegravir_Renou2026_thoueille_et_al.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # cabotegravir — `Cabotegravir_Thoueille2024_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -14,17 +15,25 @@
 
 **Model:** No model was generated from this record.
 
-> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+### Reviewer guidance
+
+**The model does not reproduce the paper's terminal half-life (model/paper ratio 0.626).**
+
+Simulated as the paper dosed it, the model's terminal half-life differs from the value the paper reports by more than the tolerance. Extracted — cabotegravir: V 7.44 L, CL 0.201 L/h.
+
+<sub>reviewed by rule template (no LLM)</sub>
+
+> ⚠️ **STALE** — review status `needs_review` (reviewed 2026-10-07 14:33:32.654329+00:00) predates the upstream re-run (2026-10-07 15:57:06.886554+00:00). Current validate status: `needs_review`.
 
 ## Citation
 Thoueille P et al., Population Pharmacokinetics of Cabotegr…, Clinical pharmacology and t… (2024)
   ·  DOI: [10.1002/cpt.3240](https://doi.org/10.1002/cpt.3240)
 
 ## Model component
-<dbs-pgx drug="cabotegravir" model-id="Cabotegravir_Thoueille2024_reference" status="needs_review" stale="false" population="people with HIV" measured-compound="cabotegravir" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<dbs-pgx drug="cabotegravir" model-id="Cabotegravir_Thoueille2024_reference" status="needs_review" stale="true" population="people with HIV on long-acting cabotegravir/rilpivirine" measured-compound="cabotegravir" parameterization="mechanistic" topology="1C"></dbs-pgx>
 
 **Model structure:** 1-compartment; no model was built for this record.  
-**Parameters:** 2 extracted.
+**Parameters:** 3 extracted.
 
 **Parameterization:** mechanistic.
 
@@ -33,7 +42,7 @@ Thoueille P et al., Population Pharmacokinetics of Cabotegr…, Clinical pharmac
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| θ Female | `Q900` · equation variable | -0.405 | not captured | not captured | not captured | not captured | llm (0.6) | tab_1:row6:col1 | — | not captured |
+| k a-oral (h -1 ) | `Q49` · kabs | 1.12 | h -1 | 0.0003111111111111111 | [1] / [h] | not captured | llm (0.6) | tab_1:row3:col1, tab_1:row3:col2 | — | 37.7 (None% RSE) |
 | V (L) | `Q61` · V | 7.44 | L | 0.00744 | [l] | not captured | exact (1.0) | tab_1:row8:col1 | — | not captured |
 | CL (L/h) | `Q22` · CL | 0.201 | L/h | 5.583333333333334e-08 | [l] / [h] | not captured | exact (1.0) | tab_1:row10:col1 | — | 25.6 (None% RSE) |
 | θ BMI | `Q900` · θ BMI | -0.999 | not captured | not captured | not captured | not captured | not captured (not captured) | not captured | — | not captured |
@@ -47,13 +56,15 @@ Thoueille P et al., Population Pharmacokinetics of Cabotegr…, Clinical pharmac
 ## Departures & gaps
 
 **Interpretation flags:**
-- dropped unlinked row (NIL): 'k a-oral (h -1 )' — extend the ontology if this is a real PK parameter (source ['tab_1:row3:col1', 'tab_1:row3:col2'])
-- dropped unlinked row (NIL): 'k a-LA (h -1 )' — extend the ontology if this is a real PK parameter (source ['tab_1:row4:col1'])
+- dropped duplicate Q49 ('k a-LA (h -1 )', value '0.00102') — already have one for this compound
+- routed 'θ Female' → Q314 (omega_cov) to covariance — variability estimate, not a structural parameter
 - kept covariate coefficient θ BMI=-0.999 (covariate BMI) — not an ontology parameter
 - kept covariate coefficient θ Bodyweight=0.460 (covariate Bodyweight) — not an ontology parameter
+- apparent-by-design (ADVISORY, codes unchanged): extravascular dosing with no identifiable F, so these reported disposition parameters are likely apparent unless the model puts first-pass in its structure — Q61 (V (L)); Q22 (CL (L/h))
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=cabotegravir
 - skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
 - skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
+- skipped review gap-fill of TLAG: primary's parameterization (rate-constant / ka-only) does not use it
 
 **Extraction notes:**
 - unparsed cell tab_1:row4:col2 = '0.00102 [0.000939-0.00111]'
@@ -77,11 +88,12 @@ Thoueille P et al., Population Pharmacokinetics of Cabotegr…, Clinical pharmac
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 2 | not captured | not captured | not captured |
+| C0_has_structural_params | pass | not captured | 3 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
 | C1_half_life_beta | fail | 41.0 | 25.657 | 0.6258 | 0.25 | reported t½β |
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['tab_1:row10:col1'] |
+| C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['tab_1:row3:col1', 'tab_1:row3:col2'] |
 | C5_dimension_Q61 | pass | [length] ** 3 | not captured | not captured | not captured | ['tab_1:row8:col1'] |
 | C6_cl_magnitude | pass | &lt;= 90.0 L/h | 0.201 | not captured | not captured | ['tab_1:row10:col1'] |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
@@ -121,4 +133,4 @@ _No web simulator for this record: its structure has no shared WebAssembly templ
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 14:23 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 15:57 UTC</sub>

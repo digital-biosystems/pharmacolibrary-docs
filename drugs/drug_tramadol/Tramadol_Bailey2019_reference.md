@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N02A&quot;,&quot;href&quot;:&quot;atc/N02A.md&quot;},{&quot;label&quot;:&quot;tramadol&quot;,&quot;href&quot;:&quot;drugs/drug_tramadol/&quot;},{&quot;label&quot;:&quot;Bailey_2019 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Tramadol_Dziubina2026_reference&quot;,&quot;label&quot;:&quot;Dziubina_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tramadol/Tramadol_Dziubina2026_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Tramadol_Ekstrand2026_reference&quot;,&quot;label&quot;:&quot;Ekstrand_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tramadol/Tramadol_Ekstrand2026_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Tramadol_Garrido2006_reference&quot;,&quot;label&quot;:&quot;Garrido_2006_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tramadol/Tramadol_Garrido2006_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Tramadol_Pypendop2008_reference&quot;,&quot;label&quot;:&quot;Pypendop_2008_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tramadol/Tramadol_Pypendop2008_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Tramadol_SoriaChacartegui2026_reference&quot;,&quot;label&quot;:&quot;Soria-Chacartegui_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tramadol/Tramadol_SoriaChacartegui2026_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Tramadol_Bao2023_reference&quot;,&quot;label&quot;:&quot;Bao_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tramadol/Tramadol_Bao2023_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Tramadol_Ekstrand2026_reference&quot;,&quot;label&quot;:&quot;Ekstrand_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tramadol/Tramadol_Ekstrand2026_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Tramadol_Garrido2006_reference&quot;,&quot;label&quot;:&quot;Garrido_2006_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tramadol/Tramadol_Garrido2006_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Tramadol_Pypendop2008_reference&quot;,&quot;label&quot;:&quot;Pypendop_2008_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tramadol/Tramadol_Pypendop2008_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Tramadol_Bao2023_reference&quot;,&quot;label&quot;:&quot;Bao_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tramadol/Tramadol_Bao2023_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -27,7 +27,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the val
 
 <sub>reviewed by rule template (no LLM)</sub>
 
-> ⚠️ **STALE** — review status `needs_review` (reviewed 2026-10-05 09:32:56.228967+00:00) predates the upstream re-run (2026-10-07 05:46:06.155495+00:00). Current validate status: `needs_review`.
+> ⚠️ **STALE** — review status `needs_review` (reviewed 2026-10-05 09:32:56.228967+00:00) predates the upstream re-run (2026-10-07 15:09:36.082406+00:00). Current validate status: `needs_review`.
 
 ## Citation
 Bailey RS et al., Pharmacokinetics of orally administered…, Journal of veterinary pharm… (2019)
@@ -47,8 +47,8 @@ Bailey RS et al., Pharmacokinetics of orally administered…, Journal of veterin
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
 | Elimination half-life | `Q57` · t1/2z | 3.95 | hr | 14220.0 | [h] | not captured | llm (0.6) | Bailey_2019:abstract | — | not captured |
-| The compound DSZ-19 also has higher clearance | `Q22` · CL | 83.39 | L/h/kg | 0.0016214722222222225 | L/h | not captured | review_gapfill (0.7) | Dziubina_2026:review | — | not captured |
-| a larger volume of distribution | `Q61` · V | 271.04 | L/kg | 18.9728 | L | not captured | review_gapfill (0.7) | Dziubina_2026:review | — | not captured |
+| Systemic clearance | `Q22` · CL | 0.05 | L/h/kg | 9.722222222222224e-07 | L/h | not captured | review_gapfill (0.7) | Ekstrand_2026:review | — | not captured |
+| V | `Q61` · V | 2.62 | L/kg | 0.18340000000000004 | L | not captured | review_gapfill (0.7) | Ekstrand_2026:review | — | not captured |
 | kₐ | `Q49` · kabs | 0.65 | 1/h | 0.00018055555555555557 | 1/h | not captured | review_gapfill (0.7) | Ekstrand_2026:review | — | not captured |
 
 <details class="legend">
@@ -61,12 +61,11 @@ Bailey RS et al., Pharmacokinetics of orally administered…, Journal of veterin
 **Interpretation flags:**
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=tramadol
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
-- gap-filled Q22 (CL) from Dziubina_2026's review values (primary lacked it)
-- gap-filled Q61 (V) from Dziubina_2026's review values (primary lacked it)
+- gap-filled Q22 (CL) from Ekstrand_2026's review values (primary lacked it)
+- gap-filled Q61 (V) from Ekstrand_2026's review values (primary lacked it)
 - skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
 - skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
 - gap-filled Q49 (kabs) from Ekstrand_2026's review values (primary lacked it)
-- skipped review gap-fill of TLAG from Roulet_2021: its label names a different analyte ('actiona') — 'Onset of actiona Tramadol M1'
 
 **Extraction notes:**
 - no GROBID TEI available — transcribed from abstract in Bailey_2019_metadata.yaml (1 record(s)); values are summary statistics, not a fitted model
@@ -103,14 +102,14 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 |---|---|---|---|---|---|---|
 | C0_has_structural_params | pass | not captured | 1 | not captured | not captured | not captured |
 | C0c_disposition_complete | fail | not captured | not captured | not captured | not captured | not captured |
-| C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Dziubina_2026:review'] |
+| C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Ekstrand_2026:review'] |
 | C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['Ekstrand_2026:review'] |
 | C5_dimension_Q57 | pass | [time] | not captured | not captured | not captured | ['Bailey_2019:abstract'] |
-| C5_dimension_Q61 | pass | [length] ** 3 | not captured | not captured | not captured | ['Dziubina_2026:review'] |
-| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 83.39 | not captured | not captured | ['Dziubina_2026:review'] |
+| C5_dimension_Q61 | pass | [length] ** 3 | not captured | not captured | not captured | ['Ekstrand_2026:review'] |
+| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 0.05 | not captured | not captured | ['Ekstrand_2026:review'] |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
-| C9_phys_window_Q22 | pass | clearance within physiological range | 5.84e+03 L/h | not captured | not captured | ['Dziubina_2026:review'] |
-| C9_phys_window_Q61 | pass | volume within physiological range | 1.9e+04 L | not captured | not captured | ['Dziubina_2026:review'] |
+| C9_phys_window_Q22 | pass | clearance within physiological range | 3.5 L/h | not captured | not captured | ['Ekstrand_2026:review'] |
+| C9_phys_window_Q61 | pass | volume within physiological range | 183 L | not captured | not captured | ['Ekstrand_2026:review'] |
 
 <details class="legend">
 <summary>Check legend — what each column means</summary>
@@ -145,4 +144,4 @@ _No web simulator for this record: its structure has no shared WebAssembly templ
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 05:46 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 15:09 UTC</sub>

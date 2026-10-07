@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;M01A&quot;,&quot;href&quot;:&quot;atc/M01A.md&quot;},{&quot;label&quot;:&quot;flurbiprofen&quot;,&quot;href&quot;:&quot;drugs/drug_flurbiprofen/&quot;},{&quot;label&quot;:&quot;Aarons_1991 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Flurbiprofen_Aarons1991_reference&quot;,&quot;label&quot;:&quot;Aarons_1991_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_flurbiprofen/Flurbiprofen_Aarons1991_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Flurbiprofen_Zhang2018_reference&quot;,&quot;label&quot;:&quot;Zhang_2018_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_flurbiprofen/Flurbiprofen_Zhang2018_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Flurbiprofen_Aarons1991_reference&quot;,&quot;label&quot;:&quot;Aarons_1991_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_flurbiprofen/Flurbiprofen_Aarons1991_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # flurbiprofen — `Flurbiprofen_Aarons1991_reference`
 
-> ## <span class="pk-badge pk-badge--green">extracted</span>
+> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -15,14 +15,22 @@
 
 **Model:** A simulatable model was generated — see the **Models** and **Simulation** tabs.
 
-> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+### Reviewer guidance
+
+**Every check that could be run on this record passed.**
+
+Only the abstract was available, so reported summary statistics stand in for a fitted model.
+
+<sub>reviewed by rule template (no LLM)</sub>
+
+> ⚠️ **STALE** — review status `curated_candidate` (reviewed 2026-10-07 01:00:43.578509+00:00) predates the upstream re-run (2026-10-07 14:38:16.263840+00:00). Current validate status: `extracted`.
 
 ## Citation
 Aarons L, The kinetics of flurbiprofen in synovia…, Journal of pharmacokinetics… (1991)
   ·  DOI: [10.1007/BF03036250](https://doi.org/10.1007/BF03036250)
 
 ## Model component
-<dbs-pgx drug="flurbiprofen" model-id="Flurbiprofen_Aarons1991_reference" status="extracted" stale="false" population="rheumatoid arthritis patients" measured-compound="flurbiprofen" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<dbs-pgx drug="flurbiprofen" model-id="Flurbiprofen_Aarons1991_reference" status="extracted" stale="true" population="rheumatoid arthritis patients" measured-compound="flurbiprofen" parameterization="mechanistic" topology="1C"></dbs-pgx>
 
 **Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameters:** 3 extracted.
@@ -32,9 +40,9 @@ Aarons L, The kinetics of flurbiprofen in synovia…, Journal of pharmacokinetic
 ## Parameters
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| clearance | `Q22` · CL | 1.75 | L hr-1 | 4.861111111111111e-07 | [l] / [h] | not captured | exact (1.0) | Aarons_1991:abstract | — | not captured |
-| volume of distribution | `Q61` · V | 11.9 | L | 0.0119 | [l] | not captured | exact (1.0) | Aarons_1991:abstract | — | not captured |
-| elimination half-life | `Q57` · t1/2z | 4.8 | hr | 17280.0 | [h] | not captured | llm (0.6) | Aarons_1991:abstract | — | not captured |
+| plasma parameters, clearance | `Q22` · CL | 1.75 | L hr-1 | 4.861111111111111e-07 | [l] / [h] | not captured | llm_confirmed (0.6) | Aarons_1991:abstract | — | not captured |
+| plasma parameters, volume of distribution | `Q61` · V | 11.9 | L | 0.0119 | [l] | not captured | llm_confirmed (0.6) | Aarons_1991:abstract | — | not captured |
+| plasma parameters, elimination half-life | `Q57` · t1/2z | 4.8 | hr | 17280.0 | [h] | not captured | llm (0.6) | Aarons_1991:abstract | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -70,6 +78,17 @@ Aarons L, The kinetics of flurbiprofen in synovia…, Journal of pharmacokinetic
 | C9_phys_window_Q22 | pass | clearance within physiological range | 1.75 L/h | not captured | not captured | ['Aarons_1991:abstract'] |
 | C9_phys_window_Q61 | pass | volume within physiological range | 11.9 L | not captured | not captured | ['Aarons_1991:abstract'] |
 
+**Reviewer per-scenario checks:**
+
+| check | scenario | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|---|
+| T0_analyte_identity | not captured | pass | not captured | not captured | not captured | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | not captured | skipped | not captured | not captured | not captured | no covariate effects in record |
+| T3_output_variable | not captured | pass | C_central (measured=flurbiprofen) | central.C | not captured | output must be the measured/analyte compartment |
+| T3_param_coverage | not captured | pass | 2 scholar param(s) emitted or defaulted | 2 covered | not captured | all structural parameters accounted for |
+| T3_topology_template | not captured | pass | 1C → PK_1C* | PK_1C | not captured | engineer template must match the scholar topology |
+| T6_deviations | not captured | pass | not captured | not captured | not captured | no engineer deviations to adjudicate |
+
 <details class="legend">
 <summary>Check legend — what each column means</summary>
 <table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>check</code></td><td>the check id. C0_has_structural_params = at least one numeric structural parameter; C0b_disposition_core = a volume OR a clearance/elimination term (neither means an exposure/outcome paper, not popPK — rejected); C0c_disposition_complete = BOTH a volume AND a clearance/elimination term, which is what the engineer needs to build (one without the other routes to review, never to the engineer); C1_half_life(_beta) = reported half-life against V and CL; C2_reference = covariate scenarios are sign-plausible; C3_cl_dose_auc = CL against dose/AUC; C4_auc_closed_form = AUC recomputed in closed form; C5_dimension_&lt;Qcode&gt; = the parameter's units carry the dimension its Q-code requires.</td></tr><tr><td><code>status</code></td><td>pass, fail, or skipped. A skipped check had nothing to compare — the paper did not report the input it needs — and is not evidence against the record. The scholar table lists only pass and fail; the reviewer table also shows skipped, with the reason in note.</td></tr><tr><td><code>expected</code></td><td>the value the check required, from the paper or from the ontology.</td></tr><tr><td><code>obtained</code></td><td>what the record actually yields.</td></tr><tr><td><code>ratio</code></td><td>obtained / expected, where the check is a numeric comparison.</td></tr><tr><td><code>tol</code></td><td>the tolerance the ratio had to fall within to pass.</td></tr><tr><td><code>source</code></td><td>the artifact the expected value was taken from.</td></tr><tr><td><code>scenario</code></td><td>reviewer table only — the covariate scenario the check was run under.</td></tr><tr><td><code>note</code></td><td>why a check was skipped, or how it was judged.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>the field is absent from the KB artifact — nothing was recorded. This is NOT the same as zero or empty: the value is unknown, not measured to be nothing.</td></tr><tr><td><code>—</code></td><td>deliberately not shown: the column does not apply to this row.</td></tr><tr><td><code>not verified</code></td><td>the record is not in an accepted state (see the badge and the note above the table); the numbers are shown as extracted, not endorsed.</td></tr></tbody></table>
@@ -78,6 +97,9 @@ Aarons L, The kinetics of flurbiprofen in synovia…, Journal of pharmacokinetic
 ## Raw artifacts
 
 - scholar stages: `../../../knowledgebase/drugs/drug_flurbiprofen/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Aarons_1991` / `Aarons_1991::reference`)
+- model: `../../../knowledgebase/drugs/drug_flurbiprofen/models/modelica/Flurbiprofen_Aarons1991_reference.mo`
+- deviation: `../../../knowledgebase/drugs/drug_flurbiprofen/models/modelica/Flurbiprofen_Aarons1991_reference.deviation.json`
+- sim: `../../../knowledgebase/drugs/drug_flurbiprofen/models/modelica/Flurbiprofen_Aarons1991_reference.json`
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -108,4 +130,4 @@ Aarons L, The kinetics of flurbiprofen in synovia…, Journal of pharmacokinetic
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 00:51 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 14:38 UTC</sub>

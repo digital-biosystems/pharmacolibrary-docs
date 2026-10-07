@@ -1,7 +1,7 @@
-<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;J05A&quot;,&quot;href&quot;:&quot;atc/J05A.md&quot;},{&quot;label&quot;:&quot;boceprevir&quot;,&quot;href&quot;:&quot;drugs/drug_boceprevir/&quot;},{&quot;label&quot;:&quot;Ma_2020 \u00b7 PD SARS-CoV-2 viral replication (cytopathic effect)&quot;}]"></div>
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;J05A&quot;,&quot;href&quot;:&quot;atc/J05A.md&quot;},{&quot;label&quot;:&quot;boceprevir&quot;,&quot;href&quot;:&quot;drugs/drug_boceprevir/&quot;},{&quot;label&quot;:&quot;Ma_2020 \u00b7 PD SARS-CoV-2 viral cytopathic effect (CPE)&quot;}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# SARS-CoV-2 viral replication (cytopathic effect) — PD  <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span>
+# SARS-CoV-2 viral cytopathic effect (CPE) — PD  <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span>
 
 <details class="pk-legend"><summary>What the PGx badges mean — evidence, and whether a model runs</summary><table><tbody><tr><td><span class="pk-badge pk-badge--green">quantitative</span></td><td>the paper gives the effect of each phenotype (or genotype) on a named model parameter — a θ per category.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">qualitative</span></td><td>the paper links the gene to the drug but states no effect size on a model parameter, so it changes no model.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">guideline estimate</span></td><td>the effect comes from a CPIC / DPWG dosing guideline, not from this paper's numbers.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">safety allele</span></td><td>a risk allele for an adverse reaction (an HLA type, G6PD deficiency …): it changes no PK/PD parameter.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>the extraction is incomplete or inconsistent.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted.</td></tr><tr><td><span class="pk-badge pk-badge--green">▶ simulatable</span></td><td>the paper's popPK model runs per phenotype in the browser (Simulation tab); its PGx Modelica model is under Models.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">model only</span></td><td>a PGx Modelica model exists but has no in-browser simulator.</td></tr></tbody></table></details>
 
@@ -15,15 +15,19 @@
 
 ## What this record describes
 
-**As extracted:** Boceprevir (measured concentrations) drives SARS-CoV-2 viral replication (cytopathic effect) (in % CPE): direct sigmoid Emax (Hill) effect.
+**As extracted:** Boceprevir (measured concentrations) drives SARS-CoV-2 viral cytopathic effect (CPE) (in % CPE): direct sigmoid Emax (Hill) effect.
 
 **Model:** No model was generated from this record.
+
+> Boceprevir concentrations in μM are modeled with a sigmoidal Emax inhibition equation against the continuous response of SARS-CoV-2 viral replication measured as percent cytopathic effect (% CPE). The paper does not describe the specific pharmacodynamic mechanism (e.g., whether it inhibits production or elimination), stating only that the compound showed potent antiviral activity in the CPE assay.
+>
+> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
 
 - **paper:** `Ma_2020`
 - **model family:** `sigmoid_emax`
 - **driver:** `conc_no_pk`
 - **tier:** descriptive
-- **effect:** inhibition/proportional
+- **effect:** inhibition/unknown
 
 ## Citation
 Ma C et al., Boceprevir, GC-376, and calpain inhibit…, bioRxiv : the preprint serv… (2020)
@@ -32,9 +36,7 @@ Ma C et al., Boceprevir, GC-376, and calpain inhibit…, bioRxiv : the preprint 
 ## Parameters
 | role | label (paper) | Q-code · name | value | unit | value_si | link | source |
 |---|---|---|---|---|---|---|---|
-| PD (effect) | EC50 | `Q321` · not captured | 1.31 ± 0.58 | μM | not captured | llm (not captured) | Ma_2020:pdv3 |
-| — | SI50 | `Q100` · not captured | &gt; 76.3 | not captured | not captured | nil (not captured) | Ma_2020:pdv3 |
-| — | CC50 | `Q100` · not captured | &gt; 100 | μM | not captured | nil (not captured) | Ma_2020:pdv3 |
+| PD (effect) | EC50 | `Q321` · not captured | 1.31 ± 0.58 | µM | not captured | llm (not captured) | Ma_2020:pdv3 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

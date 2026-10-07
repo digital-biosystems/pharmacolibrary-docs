@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;J05A&quot;,&quot;href&quot;:&quot;atc/J05A.md&quot;},{&quot;label&quot;:&quot;atazanavir&quot;,&quot;href&quot;:&quot;drugs/drug_atazanavir/&quot;},{&quot;label&quot;:&quot;Punyawudho_2017 \u00b7 reference&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Atazanavir_Goutelle2013_reference&quot;,&quot;label&quot;:&quot;Goutelle_2013_no_failure&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_atazanavir/Atazanavir_Goutelle2013_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Atazanavir_Goutelle2013_reference&quot;,&quot;label&quot;:&quot;Goutelle_2013_virological_failure&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_atazanavir/Atazanavir_Goutelle2013_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -32,7 +33,7 @@ BaraleePunyawudho baralee.p@cmu.ac.th Department of Pharmaceutical Care Faculty 
 <dbs-pgx drug="atazanavir" model-id="Atazanavir_Punyawudho2017_reference" status="model_quarantined" stale="false" population="Thai HIV-infected patients" measured-compound="atazanavir" parameterization="apparent" topology="1C"></dbs-pgx>
 
 **Model structure:** 1-compartment; no model was built for this record.  
-**Parameters:** 1 extracted.
+**Parameters:** 2 extracted.
 
 **Parameterization:** CL/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
@@ -42,6 +43,7 @@ BaraleePunyawudho baralee.p@cmu.ac.th Department of Pharmaceutical Care Faculty 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
 | CL/F | `Q27` · CL/F | 28.7 | % | not captured | % | not captured | exact (1.0) | Punyawudho_2017:results_prose | — | not captured |
+| mean absorption rate constant (k a ) | `Q49` · kabs | 0.41 | h Ϫ1 | 0.00011388888888888888 | 1/h | not captured | review_gapfill (0.7) | Goutelle_2013:review | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -57,6 +59,7 @@ BaraleePunyawudho baralee.p@cmu.ac.th Department of Pharmaceutical Care Faculty 
 - status held at route_to_review — not promoted
 - skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
 - skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
+- gap-filled Q49 (kabs) from Goutelle_2013's review values (primary lacked it)
 
 **Extraction notes:**
 - unparsed cell tab_1:row2:col1 = '4.93 (4.42-5.44)'
@@ -100,6 +103,7 @@ _Every reader agrees on every compared field of this record._
 | C0_has_structural_params | pass | not captured | 1 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | fail | not captured | not captured | not captured | not captured | not captured |
+| C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['Goutelle_2013:review'] |
 | C5_unit_missing_Q27 | fail | [length] ** 3 / [time] | % | not captured | not captured | ['Punyawudho_2017:results_prose'] |
 | C7_apparent_coherence | pass | not captured | not captured | not captured | not captured | not captured |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |

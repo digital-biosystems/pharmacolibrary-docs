@@ -4,7 +4,7 @@
 
 # tenofovir disoproxil — `TenofovirDisoproxil_Burns2015_final`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -14,18 +14,26 @@
 
 **Model:** No model was generated from this record.
 
-> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+### Reviewer guidance
 
-> **Dose compound ≠ measured compound:** dosed `tenofovir_disoproxil`, measured `tenofovir`.
+**Tenofovir intercompartmental clearance has mismatched units, and its diphosphate metabolite lacks an elimination pathway from the central compartment.**
+
+The model defines tenofovir diphosphate as forming from the parent drug but assigns it zero compartments and no elimination rate constant, making it an orphan entity. Additionally, the apparent intercompartmental clearance parameter carries time units instead of volume units, creating a structural dimension mismatch. This unit inconsistency prevents standard conversion, leaving the parameter with an unconverted value. Extracted — tenofovir disoproxil: kabs 9.79 h−1, V1/F 386 L, Q 0.631 h−1, kel 0.13 h−1, tlag 0.5 h; tenofovir_diphosphate: kfm 0.017 h−1, kel 0.013 h−1.
+
+<sub>reviewed by qwen3.8-27b</sub>
+
+> ⚠️ **STALE** — review status `rejected` (reviewed 2026-10-07 14:42:58.309219+00:00) predates the upstream re-run (2026-10-07 16:32:05.847711+00:00). Current validate status: `rejected`.
+
+> **Dose compound ≠ measured compound:** dosed `tenofovir disoproxil fumarate`, measured `tenofovir`.
 
 ## Citation
 Burns RN et al., Population pharmacokinetics of tenofovi…, Journal of clinical pharmac… (2015)
   ·  DOI: [10.1002/jcph.461](https://doi.org/10.1002/jcph.461)
 
 ## Model component
-<dbs-pgx drug="tenofovir disoproxil" model-id="TenofovirDisoproxil_Burns2015_final" status="rejected" stale="false" population="healthy women" measured-compound="tenofovir" parameterization="apparent" topology="general_linear"></dbs-pgx>
+<dbs-pgx drug="tenofovir disoproxil" model-id="TenofovirDisoproxil_Burns2015_final" status="rejected" stale="true" population="healthy women" measured-compound="tenofovir" parameterization="apparent" topology="parent_metabolite"></dbs-pgx>
 
-**Model structure:** general linear; no model was built for this record.  
+**Model structure:** parent + metabolite; no model was built for this record.  
 **Parameters:** 7 extracted, plus 1 covariate effect.
 
 **Parameterization:** V1/F — apparent, F unknown (apparent — bioavailability not identifiable).
@@ -35,7 +43,6 @@ Burns RN et al., Population pharmacokinetics of tenofovi…, Journal of clinical
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| Condition # | `Q900` · equation variable | 179 | not captured | not captured | not captured | not captured | llm (0.6) | jcph461-tbl-0001:row3:col3 | — | not captured |
 | KA (h−1) | `Q49` · kabs | 9.79 | h−1 | 0.002719444444444444 | [1] / [h] | not captured | exact (1.0) | jcph461-tbl-0001:row5:col3 | — | not captured |
 | Vc/F (L) | `Q290` · V1/F | 385.71 | L | 0.38571 | [l] | not captured | exact (1.0) | jcph461-tbl-0001:row6:col3 | — | not captured |
 | K23 (h−1) | `Q30` · Q | 0.631 | h−1 | not captured | [1] / [h] | not captured | exact (1.0) | jcph461-tbl-0001:row8:col3 | — | not captured |
@@ -50,11 +57,16 @@ Burns RN et al., Population pharmacokinetics of tenofovi…, Journal of clinical
 <table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>label (paper)</code></td><td>the row or statistic label exactly as printed in the paper (label_verbatim) — never normalised, so it can be found in the PDF.</td></tr><tr><td><code>Q-code · name</code></td><td>the ontology parameter this label was matched to (Q22 = clearance, Q27 = CL/F, Q49 = ka, Q57 = half-life, …) and its canonical name. The Q-code, not the label, is what scoring and cross-paper merging use.</td></tr><tr><td><code>value</code></td><td>the estimate as reported in the paper.</td></tr><tr><td><code>unit</code></td><td>the unit as printed (unit_verbatim).</td></tr><tr><td><code>value_si</code></td><td>the value converted to the canonical unit. Empty when no conversion was possible — usually an unparseable or missing unit.</td></tr><tr><td><code>unit_canonical</code></td><td>the canonical unit for that Q-code, i.e. what value_si is expressed in.</td></tr><tr><td><code>RSE%</code></td><td>relative standard error of the estimate, when the paper reports one.</td></tr><tr><td><code>link</code></td><td>how the label was matched to the Q-code, with confidence. exact / boundary / fuzzy / tv_prefix / caption_compartment / special_case are deterministic string matches; llm, llm_confirmed, llm_corrected involved the model; review and review_gapfill come from the secondary review tier, the latter filling a parameter the primary extraction missed; boundary_relink is a corrected match.</td></tr><tr><td><code>source</code></td><td>where in the paper the number came from: colN = that column of the located table, other_prose = running text, review = the secondary tier, pgx = a pharmacogenomic record.</td></tr><tr><td><code>covariates</code></td><td>covariate effects attached to this parameter (e.g. weight on CL).</td></tr><tr><td><code>IIV</code></td><td>inter-individual variability reported for this parameter.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>the field is absent from the KB artifact — nothing was recorded. This is NOT the same as zero or empty: the value is unknown, not measured to be nothing.</td></tr><tr><td><code>—</code></td><td>deliberately not shown: the column does not apply to this row.</td></tr><tr><td><code>not verified</code></td><td>the record is not in an accepted state (see the badge and the note above the table); the numbers are shown as extracted, not endorsed.</td></tr></tbody></table>
 </details>
 
+### Unresolved rows _(no Q-code or no value — not parameters)_
+| label (paper) | Q-code | value | link |
+|---|---|---|---|
+| Parameter | Q900 | not captured | llm |
+
 ## Departures & gaps
 
 **Interpretation flags:**
-- dropped unlinked row (NIL): 'Parameter' — extend the ontology if this is a real PK parameter (source ['jcph461-tbl-0001:row1:col4'])
-- dropped unlinked row (NIL): 'Obj Func' — extend the ontology if this is a real PK parameter (source ['jcph461-tbl-0001:row2:col3'])
+- dropped duplicate Q900 ('Obj Func', value '2575') — already have one for this compound
+- dropped unlinked row (NIL): 'Condition #' — extend the ontology if this is a real PK parameter (source ['jcph461-tbl-0001:row3:col3'])
 - unit_dimension_mismatch: 'K23 (h−1)' → Q30 (unit '1 / [time]' vs ontology '[length] ** 3 / [time]') — route to review
 - unit_dimension_mismatch: 'K32 (h−1)' → Q30 (unit '1 / [time]' vs ontology '[length] ** 3 / [time]') — route to review
 - dropped duplicate Q30 ('K32 (h−1)', value '0.396') — already have one for this compound
@@ -63,13 +75,12 @@ Burns RN et al., Population pharmacokinetics of tenofovi…, Journal of clinical
 - covariate effect for Q63 has no base parameter row (kept as unattached equation-variable)
 - apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=tenofovir
 - held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
-- topology: transfer parameter unlinked (Q100) — add Kfm/formation-rate/rate-constant to the ontology; routing to review
 - template fit: none — only the metabolite is modelled — no parent compartment
 - status held at route_to_review — not promoted
 - model-stage split: 'final model' is the final model of Burns_2015 (paper reports 2 stages: base model, final model); same population, different model-building step
-- row roles (LLM): model_class=compartmental; 18/18 row label(s) assigned, 16 linked by role; re-tagged parent→tenofovir ×23, parent→tenofovir_diphosphate ×6
+- row roles (LLM): model_class=compartmental; 18/18 row label(s) assigned, 16 linked by role; re-tagged parent→tenofovir ×21, parent→tenofovir-diphosphate ×8
 - skipped review gap-fill of CL: primary's parameterization (rate-constant / ka-only) does not use it
-- skipped review gap-fill of V2: primary is GENERAL_LINEAR (peripheral family needs ≥2C)
+- skipped review gap-fill of V2: primary is PARENT_METABOLITE (peripheral family needs ≥2C)
 
 **Extraction notes:**
 - unparsed cell jcph461-tbl-0001:row5:col2 = '10.15 (1.08–45.4)'
@@ -101,7 +112,7 @@ Burns RN et al., Population pharmacokinetics of tenofovi…, Journal of clinical
 - unparsed cell jcph461-tbl-0001:row18:col4 = '27.36 (22.95–31.71)'
 - unparsed cell jcph461-tbl-0001:row19:col2 = '30.71 (27.12–35.16)'
 - unparsed cell jcph461-tbl-0001:row19:col4 = '30.89 (27.08–35.11)'
-- LLM region Burns_2015:results_prose: Error code: 429 - {'error': {'message': 'Rate limit exceeded for api_key: 8d79104cac3d0b5a8019d9c3dd60ff02e7a84591fb3552ddb3bbcabd52b31d23. Limit type: max_parallel_requests. Current limit: 4, Remaining: 0. Limit resets at: 2026-10-07 14:52:25 UTC', 'type': 'throttling_error', 'param': None, 'code': '429'}}
+- LLM selected parameter table(s) 1
 
 ## Validation
 
@@ -120,7 +131,7 @@ Burns RN et al., Population pharmacokinetics of tenofovi…, Journal of clinical
 | C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['jcph461-tbl-0001:row5:col3'] |
 | C5_dimension_Q83 | pass | [time] | not captured | not captured | not captured | ['jcph461-tbl-0001:row13:col3'] |
 | C7_apparent_coherence | pass | not captured | not captured | not captured | not captured | not captured |
-| C8_topology | fail | ontology-linked transfer parameter on every edge | ['none'] | not captured | not captured | not captured |
+| C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
 | C9_phys_window_Q290 | pass | volume within physiological range | 386 L | not captured | not captured | ['jcph461-tbl-0001:row6:col3'] |
 
 <details class="legend">
@@ -146,4 +157,4 @@ _No web simulator for this record: its structure has no shared WebAssembly templ
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 14:21 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 16:32 UTC</sub>

@@ -5,7 +5,7 @@
 
 # topotecan — `Topotecan_Grochow1992_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from the LLM relevance screen, p(non-human) 0.50).">human + animal</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from the LLM relevance screen, p(non-human) 0.50).">human + animal</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -17,54 +17,44 @@
 
 **Model:** No model was generated from this record.
 
-> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+### Reviewer guidance
 
-> **Dose compound ≠ measured compound:** dosed `topotecan lactone`, measured `topotecan lactone and topotecan hydroxy acid`.
+**Topotecan CLR is reported as 30%, but no distribution volume or clearance/elimination is reported, so this is not a compartmental population PK model.**
+
+No volume or clearance — not a compartmental population PK model. The paper reports no distribution volume and no clearance or elimination rate; it is an exposure/outcome paper. The reported 30% renal portion of total clearance also failed a dimensional match for a structural parameter, and topotecan hydroxy acid has no linked formation parameter. Only the abstract was read, so summary statistics stood in for a fitted model. Extracted — topotecan lactone and topotecan hydroxy acid: CLR 30 %.
+
+<sub>reviewed by gpt-6-luna</sub>
+
+> ⚠️ **STALE** — review status `rejected` (reviewed 2026-10-06 15:25:44.972752+00:00) predates the upstream re-run (2026-10-07 14:23:09.714388+00:00). Current validate status: `rejected`.
 
 ## Citation
 Grochow LB et al., Pharmacokinetics and pharmacodynamics o…, Drug metabolism and disposi… (1992)
 
 ## Model component
-<dbs-pgx drug="topotecan" model-id="Topotecan_Grochow1992_reference" status="rejected" stale="false" population="patients with advanced cancer" measured-compound="topotecan lactone and topotecan hydroxy acid" parameterization="mechanistic" topology="general_linear"></dbs-pgx>
+<dbs-pgx drug="topotecan" model-id="Topotecan_Grochow1992_reference" status="rejected" stale="true" population="patients with advanced cancer" measured-compound="topotecan" parameterization="mechanistic" topology="general_linear"></dbs-pgx>
 
 **Model structure:** general linear; no model was built for this record.  
-**Parameters:** 1 extracted.
+**Parameters:** 0 extracted.
 
 **Parameterization:** mechanistic.
 
 ## Parameters
 > ⚠️ This record is not accepted (current status `rejected`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
 
-| label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
-|---|---|---|---|---|---|---|---|---|---|---|
-| Renal clearance | `Q26` · CLR | 30 | % | not captured | [%] | not captured | exact (1.0) | Grochow_1992:abstract, Grochow_1992:abstract | — | not captured |
-
-<details class="legend">
-<summary>Column legend — what each column means</summary>
-<table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>label (paper)</code></td><td>the row or statistic label exactly as printed in the paper (label_verbatim) — never normalised, so it can be found in the PDF.</td></tr><tr><td><code>Q-code · name</code></td><td>the ontology parameter this label was matched to (Q22 = clearance, Q27 = CL/F, Q49 = ka, Q57 = half-life, …) and its canonical name. The Q-code, not the label, is what scoring and cross-paper merging use.</td></tr><tr><td><code>value</code></td><td>the estimate as reported in the paper.</td></tr><tr><td><code>unit</code></td><td>the unit as printed (unit_verbatim).</td></tr><tr><td><code>value_si</code></td><td>the value converted to the canonical unit. Empty when no conversion was possible — usually an unparseable or missing unit.</td></tr><tr><td><code>unit_canonical</code></td><td>the canonical unit for that Q-code, i.e. what value_si is expressed in.</td></tr><tr><td><code>RSE%</code></td><td>relative standard error of the estimate, when the paper reports one.</td></tr><tr><td><code>link</code></td><td>how the label was matched to the Q-code, with confidence. exact / boundary / fuzzy / tv_prefix / caption_compartment / special_case are deterministic string matches; llm, llm_confirmed, llm_corrected involved the model; review and review_gapfill come from the secondary review tier, the latter filling a parameter the primary extraction missed; boundary_relink is a corrected match.</td></tr><tr><td><code>source</code></td><td>where in the paper the number came from: colN = that column of the located table, other_prose = running text, review = the secondary tier, pgx = a pharmacogenomic record.</td></tr><tr><td><code>covariates</code></td><td>covariate effects attached to this parameter (e.g. weight on CL).</td></tr><tr><td><code>IIV</code></td><td>inter-individual variability reported for this parameter.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>the field is absent from the KB artifact — nothing was recorded. This is NOT the same as zero or empty: the value is unknown, not measured to be nothing.</td></tr><tr><td><code>—</code></td><td>deliberately not shown: the column does not apply to this row.</td></tr><tr><td><code>not verified</code></td><td>the record is not in an accepted state (see the badge and the note above the table); the numbers are shown as extracted, not endorsed.</td></tr></tbody></table>
-</details>
+_No resolved parameters._
 
 ## Departures & gaps
 
 **Interpretation flags:**
-- covariate category for CL from footnote/prose kept as documentation only (['Grochow_1992:abstract'])
-- unit_dimension_mismatch: 'Renal clearance' → Q26 (unit 'dimensionless' vs ontology '[length] ** 3 / [time]') — route to review
-- apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=topotecan lactone and topotecan hydroxy acid
-- held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
+- apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=topotecan
 - topology: transfer parameter unlinked (Q100) — add Kfm/formation-rate/rate-constant to the ontology; routing to review
-- template fit: none — other model — not a compartmental parent–metabolite model
+- template fit: none — only the metabolite is modelled — no parent compartment
 - status held at route_to_review — not promoted
-- row roles (LLM): model_class=other; 4/4 row label(s) assigned, 3 linked by role; re-tagged topotecan lactone and topotecan hydroxy acid→parent ×1
-- molar mass: no plausible PubChem entry for 'topotecan hydroxy acid' ('topotecan hydroxy acid') — left in mass units
-- molar mass: no plausible PubChem entry for 'topotecan lactone and topotecan hydroxy acid' ('topotecan lactone and topotecan hydroxy acid') — left in mass units
-- molar mass: none found for 'topotecan hydroxy acid' — its concentrations stay mass-only
-- molar mass: none found for 'topotecan lactone and topotecan hydroxy acid' — its concentrations stay mass-only
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
-- skipped review gap-fill of V2: primary is GENERAL_LINEAR (peripheral family needs ≥2C)
-- skipped review gap-fill of Q: primary is GENERAL_LINEAR (peripheral family needs ≥2C)
+- review gap-fill skipped: this record carries no value of its own, and a model assembled entirely from other papers is not this paper's model
 
 **Extraction notes:**
-- no GROBID TEI available — transcribed from abstract in Grochow_1992_metadata.yaml (5 record(s)); values are summary statistics, not a fitted model
+- no GROBID TEI available — transcribed from abstract in Grochow_1992_metadata.yaml (0 record(s)); values are summary statistics, not a fitted model
 
 ## Validation
 
@@ -72,9 +62,8 @@ Grochow LB et al., Pharmacokinetics and pharmacodynamics o…, Drug metabolism a
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 1 | not captured | not captured | not captured |
+| C0_has_structural_params | fail | not captured | 0 | not captured | not captured | not captured |
 | C0b_disposition_core | fail | not captured | not captured | not captured | not captured | not captured |
-| C5_dimension_Q26 | fail | dimensionless | % | not captured | not captured | ['Grochow_1992:abstract', 'Grochow_1992:abstract'] |
 | C8_topology | fail | ontology-linked transfer parameter on every edge | ['none'] | not captured | not captured | not captured |
 
 <details class="legend">
@@ -100,4 +89,4 @@ _No web simulator for this record: its structure has no shared WebAssembly templ
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-06 13:42 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 14:23 UTC</sub>

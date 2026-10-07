@@ -26,13 +26,19 @@ Telbivudine is a nucleoside analogue antiviral that was used to treat chronic he
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 14:11 | 4:00 | 0/1/0 | 0/0/0 | 0/0/0 | 81,562/7,728 | einfracz / qwen3.8-27b | 3 | 2/1 | 3/0 | 0 |
+| 2026-10-07 16:26 | 1:53 | 0/0/1 | 1/0/0 | 0/0/0 | 92,758/7,144 | ollama / glm-5.3-flash | 3 | 2/1 | 3/0 | 0 |
 
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>route_to: `human_review`</sub> | [Zhou_2006_reference](drugs/drug_telbivudine/Telbivudine_Zhou2006_reference.md) | — | 1-compartment (no model) | 3 | Zhou XJ et al., Pharmacokinetics of telbivudine followi…, Antimicrobial agents and ch… (2006) | [10.1128/AAC.50.3.874-879.2006](https://doi.org/10.1128/AAC.50.3.874-879.2006) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>STALE — current validate: needs_review</sub><br><sub>blocking: disposition incomplete — no disposition parameter from this paper; review-gap-f…</sub><br><sub>route_to: `human_review`</sub> | [Zhou_2006_reference](drugs/drug_telbivudine/Telbivudine_Zhou2006_reference.md) | — | 1-compartment (no model) | 3 | Zhou XJ et al., Pharmacokinetics of telbivudine followi…, Antimicrobial agents and ch… (2006) | [10.1128/AAC.50.3.874-879.2006](https://doi.org/10.1128/AAC.50.3.874-879.2006) |
+
+## Pharmacodynamics (PD)
+
+| status | detail | about | model | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span> | [Soto_2018_BATA](drugs/drug_telbivudine/pd_Soto_2018_BATA.md) | taste aversiveness (licking suppression, brief-access taste aversion) ← telbivudine · direct Emax (saturable) effect | — | Soto J et al., Rats can predict aversiveness of Active…, European journal of pharmac… (2018) | [10.1016/j.ejpb.2018.09.027](https://doi.org/10.1016/j.ejpb.2018.09.027) |
 
 ## ADME sites
 
@@ -55,7 +61,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 - **PubMed hits:** 7 matched, 7 returned
 - **screened:** 2  ·  **relevant:** 2
-- **records:** 1  ·  extracted 0  ·  needs_review 0  ·  rejected 1  ·  stale 0
+- **records:** 1  ·  extracted 0  ·  needs_review 1  ·  rejected 0  ·  stale 1
 - **scholar-agent fallback query used:** not captured
 
 ## Full text wanted
@@ -64,17 +70,19 @@ _1 paper(s) judged relevant from the abstract, with no full text on disk — pay
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Zhou_2009.pdf` | Zhou XJ et al., Population pharmacokinetics of telbivud…, Journal of clinical pharmac… (2009) | popPK | 10 | [10.1177/0091270009333555](https://doi.org/10.1177/0091270009333555) | [19395586](https://pubmed.ncbi.nlm.nih.gov/19395586) | The paper describes a population pharmacokinetic study for telbivudine, but no specific numeric parameter values are provided in the abstract or evidence snippet. |
+| `Zhou_2009.pdf` | Zhou XJ et al., Population pharmacokinetics of telbivud…, Journal of clinical pharmac… (2009) | popPK | 10 | [10.1177/0091270009333555](https://doi.org/10.1177/0091270009333555) | [19395586](https://pubmed.ncbi.nlm.nih.gov/19395586) | Population PK model of telbivudine in humans, but no numeric parameter values (CL, V, etc.) are present in the evidence text. |
 
-<sub>queue written 2026-10-07T14:08:19.239582+00:00</sub>
+<sub>queue written 2026-10-07T16:25:17.024376+00:00</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Ren_2017 | irrelevant | 0 | 0 | The study focuses on the development of a new drug candidate (GLS4) for hepatitis B, with telbivudine mentioned only as a comparator for antiviral potency, not for pharmacokinetic analysis. |
-| popPK | Soto_2018 | irrelevant | 0 | 0 | The study focuses on taste aversion and sensory perception in rats and humans, not pharmacokinetic disposition parameters. |
-| popPK | Zhou_2009 | relevant | 10 | 0 | The paper describes a population pharmacokinetic study for telbivudine, but no specific numeric parameter values are provided in the abstract or evidence snippet. |
+| popPK | Jiang_2016 | irrelevant | 0 | 0 | This is a renal-function (eGFR) outcome study in CHB patients, not a PK study; no CL, V, ka, half-life, or population-PK parameters for telbivudine are reported. |
+| popPK | Lee_2014 | irrelevant | 0 | 0 | This is an efficacy/renal-function (eGFR) outcome study with no PK parameters (CL, V, ka, half-life, or PK model) for telbivudine. |
+| popPK | Ren_2017 | irrelevant | 0 | 0 | Telbivudine is only mentioned as a comparator; the PK data concern GLS4, and no numeric PK parameters appear. |
+| popPK | Soto_2018 | irrelevant | 0 | 0 | This is a taste-aversion study; telbivudine is only one of nine tested compounds and no PK parameters are reported. |
+| popPK | Zhou_2009 | relevant | 10 | 3 | Population PK model of telbivudine in humans, but no numeric parameter values (CL, V, etc.) are present in the evidence text. |
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-10-07 14:08 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-10-07 16:25 UTC</sub>

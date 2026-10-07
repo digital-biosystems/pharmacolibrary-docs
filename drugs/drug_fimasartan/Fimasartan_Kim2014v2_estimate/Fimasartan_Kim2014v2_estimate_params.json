@@ -1,0 +1,38 @@
+{
+ "dose_source": "paper",
+ "model_id": "Fimasartan_Kim2014v2_estimate",
+ "molar_masses": {
+  "central.C": 0.5016499999999999
+ },
+ "note": "Values for the shared PK_2C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "paper_doses_kind": "discrete",
+ "paper_doses_mg": [
+  120.0
+ ],
+ "parameters": {
+  "Cl": 2.138888888888889e-05,
+  "F": 0.9,
+  "MM": 0.5016499999999999,
+  "Tlag": 0.0,
+  "VdPerKg": 0.004085714285714286,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 0.00012,
+  "k12": 1.884226884226884e-05,
+  "k21": 2.6546250684181715e-05,
+  "ka": 0.0010555555555555555,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 2825.308150206774
+ },
+ "reference_peaks": {
+  "central.C": 0.00028550262106665224
+ },
+ "stop_time": 86400.0,
+ "template": "PK_2C_enteral",
+ "template_fmu": "PK_2C_enteral.fmu"
+}

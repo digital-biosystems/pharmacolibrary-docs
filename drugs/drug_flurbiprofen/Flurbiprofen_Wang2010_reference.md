@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;M01A&quot;,&quot;href&quot;:&quot;atc/M01A.md&quot;},{&quot;label&quot;:&quot;flurbiprofen&quot;,&quot;href&quot;:&quot;drugs/drug_flurbiprofen/&quot;},{&quot;label&quot;:&quot;Wang_2010 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Flurbiprofen_Aarons1991_reference&quot;,&quot;label&quot;:&quot;Aarons_1991_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_flurbiprofen/Flurbiprofen_Aarons1991_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Flurbiprofen_Zhang2018_reference&quot;,&quot;label&quot;:&quot;Zhang_2018_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_flurbiprofen/Flurbiprofen_Zhang2018_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Flurbiprofen_Aarons1991_reference&quot;,&quot;label&quot;:&quot;Aarons_1991_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_flurbiprofen/Flurbiprofen_Aarons1991_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # flurbiprofen — `Flurbiprofen_Wang2010_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -15,7 +15,15 @@
 
 **Model:** No model was generated from this record.
 
-> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+### Reviewer guidance
+
+**The paper reports none of the model's key parameters.**
+
+No clearance, volume or rate constant of the model is reported in it. Only the abstract was available, so reported summary statistics stand in for a fitted model. No parameter values were extracted.
+
+<sub>reviewed by rule template (no LLM)</sub>
+
+> ⚠️ **STALE** — review status `rejected` (reviewed 2026-10-07 01:00:43.593488+00:00) predates the upstream re-run (2026-10-07 14:38:21.801407+00:00). Current validate status: `rejected`.
 
 > **Dose compound ≠ measured compound:** dosed `flurbiprofen axetil`, measured `flurbiprofen`.
 
@@ -23,25 +31,31 @@
 Wang CL et al., [Population pharmacokinetic modeling of…, Yao xue xue bao = Acta phar… (2010)
 
 ## Model component
-<dbs-pgx drug="flurbiprofen" model-id="Flurbiprofen_Wang2010_reference" status="rejected" stale="false" population="general anaesthesia patients" measured-compound="flurbiprofen" parameterization="apparent" topology="1C"></dbs-pgx>
+<dbs-pgx drug="flurbiprofen" model-id="Flurbiprofen_Wang2010_reference" status="rejected" stale="true" population="general anaesthesia patients undergoing surgery" measured-compound="flurbiprofen" parameterization="apparent" topology="2C"></dbs-pgx>
 
-**Model structure:** 1-compartment; no model was built for this record.  
-**Parameters:** 0 extracted.
+**Model structure:** 2-compartment; no model was built for this record.  
+**Parameters:** 8 extracted.
 
 **Parameterization:** CLm/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
 ## Parameters
 > ⚠️ This record is not accepted (current status `rejected`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
 
-_No resolved parameters._
+| label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
+|---|---|---|---|---|---|---|---|---|---|---|
+| CL (L x h(-1)) | `Q351` · CLm/F | 1.28 | L x h(-1) | not captured | [l] / [h] | not captured | exact (1.0) | Wang_2010:abstract, Wang_2010:abstract, Wang_2010:abstract | — | not captured |
+| V1 (L) | `Q63` · V1 | 5.03 | L | 0.005030000000000001 | [l] | not captured | exact (1.0) | Wang_2010:abstract, Wang_2010:abstract, Wang_2010:abstract | — | not captured |
+| Q (L x h(-1)) | `Q30` · Q | 8.5 | L x h(-1) | not captured | [l] / [h] | not captured | exact (1.0) | Wang_2010:abstract, Wang_2010:abstract, Wang_2010:abstract | — | not captured |
+| V2 (L) | `Q64` · V2 | 4.39 | L | 0.00439 | [l] | not captured | exact (1.0) | Wang_2010:abstract, Wang_2010:abstract, Wang_2010:abstract | — | not captured |
+| CL | `Q351` · CLm/F | 1.32 | L x h(-1) | not captured | [l] / [h] | not captured | exact (1.0) | Wang_2010:abstract | — | not captured |
+| V1 | `Q63` · V1 | 5.23 | L | 0.00523 | [l] | not captured | exact (1.0) | Wang_2010:abstract | — | not captured |
+| Q | `Q30` · Q | 8.45 | L x h(-1) | not captured | [l] / [h] | not captured | exact (1.0) | Wang_2010:abstract | — | not captured |
+| V2 | `Q64` · V2 | 4.37 | L | 0.004370000000000001 | [l] | not captured | exact (1.0) | Wang_2010:abstract | — | not captured |
 
-### Unresolved rows _(no Q-code or no value — not parameters)_
-| label (paper) | Q-code | value | link |
-|---|---|---|---|
-| CL (L x h(-1)) | Q351 | not captured | exact |
-| V1 (L) | Q63 | not captured | exact |
-| Q (L x h(-1)) | Q30 | not captured | exact |
-| V2 (L) | Q64 | not captured | exact |
+<details class="legend">
+<summary>Column legend — what each column means</summary>
+<table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>label (paper)</code></td><td>the row or statistic label exactly as printed in the paper (label_verbatim) — never normalised, so it can be found in the PDF.</td></tr><tr><td><code>Q-code · name</code></td><td>the ontology parameter this label was matched to (Q22 = clearance, Q27 = CL/F, Q49 = ka, Q57 = half-life, …) and its canonical name. The Q-code, not the label, is what scoring and cross-paper merging use.</td></tr><tr><td><code>value</code></td><td>the estimate as reported in the paper.</td></tr><tr><td><code>unit</code></td><td>the unit as printed (unit_verbatim).</td></tr><tr><td><code>value_si</code></td><td>the value converted to the canonical unit. Empty when no conversion was possible — usually an unparseable or missing unit.</td></tr><tr><td><code>unit_canonical</code></td><td>the canonical unit for that Q-code, i.e. what value_si is expressed in.</td></tr><tr><td><code>RSE%</code></td><td>relative standard error of the estimate, when the paper reports one.</td></tr><tr><td><code>link</code></td><td>how the label was matched to the Q-code, with confidence. exact / boundary / fuzzy / tv_prefix / caption_compartment / special_case are deterministic string matches; llm, llm_confirmed, llm_corrected involved the model; review and review_gapfill come from the secondary review tier, the latter filling a parameter the primary extraction missed; boundary_relink is a corrected match.</td></tr><tr><td><code>source</code></td><td>where in the paper the number came from: colN = that column of the located table, other_prose = running text, review = the secondary tier, pgx = a pharmacogenomic record.</td></tr><tr><td><code>covariates</code></td><td>covariate effects attached to this parameter (e.g. weight on CL).</td></tr><tr><td><code>IIV</code></td><td>inter-individual variability reported for this parameter.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>the field is absent from the KB artifact — nothing was recorded. This is NOT the same as zero or empty: the value is unknown, not measured to be nothing.</td></tr><tr><td><code>—</code></td><td>deliberately not shown: the column does not apply to this row.</td></tr><tr><td><code>not verified</code></td><td>the record is not in an accepted state (see the badge and the note above the table); the numbers are shown as extracted, not endorsed.</td></tr></tbody></table>
+</details>
 
 ## Departures & gaps
 
@@ -49,23 +63,17 @@ _No resolved parameters._
 - unit_dimension_mismatch: 'CL (L x h(-1))' → Q22 (unit '[luminosity] / [length] ** 2 / [time]' vs ontology '[length] ** 3 / [time]') — route to review
 - unit_dimension_mismatch: 'Q (L x h(-1))' → Q30 (unit '[luminosity] / [length] ** 2 / [time]' vs ontology '[length] ** 3 / [time]') — route to review
 - unit_dimension_mismatch: 'CL' → Q22 (unit '[luminosity] / [length] ** 2 / [time]' vs ontology '[length] ** 3 / [time]') — route to review
-- dropped duplicate Q22 ('CL', value 1.32) — already have one for this compound
-- dropped duplicate Q63 ('V1', value 5.23) — already have one for this compound
 - unit_dimension_mismatch: 'Q' → Q30 (unit '[luminosity] / [length] ** 2 / [time]' vs ontology '[length] ** 3 / [time]') — route to review
-- dropped duplicate Q30 ('Q', value 8.45) — already have one for this compound
-- dropped duplicate Q64 ('V2', value 4.37) — already have one for this compound
 - metabolite flurbiprofen: Q22→Q351 — only the metabolite is measured and fm is not identifiable, so its CL/V are apparent (fm-divided)
 - apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=flurbiprofen
 - held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
-- template fit: none — only the metabolite is modelled — no parent compartment
-- structure disagreement: deterministic 1C vs LLM 2C — review compartment count
+- template fit: PK_3M_9C — formed from central; parent 2, metabolites [2]
 - status held at route_to_review — not promoted
-- row roles (LLM): model_class=compartmental; 8/8 row label(s) assigned, 12 linked by role
+- row roles (LLM): model_class=compartmental; 8/8 row label(s) assigned, 16 linked by role; re-tagged flurbiprofen→parent ×12
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
-- review gap-fill skipped: this record carries no value of its own, and a model assembled entirely from other papers is not this paper's model
 
 **Extraction notes:**
-- no GROBID TEI available — transcribed from abstract in Wang_2010_metadata.yaml (12 record(s)); values are summary statistics, not a fitted model
+- no GROBID TEI available — transcribed from abstract in Wang_2010_metadata.yaml (16 record(s)); values are summary statistics, not a fitted model
 
 ## Validation
 
@@ -73,14 +81,23 @@ _No resolved parameters._
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | fail | not captured | 0 | not captured | not captured | not captured |
-| C0b_disposition_core | fail | not captured | not captured | not captured | not captured | not captured |
-| C5_dimension_Q30 | fail | [luminosity] / [length] ** 2 / [time] | L x h(-1) | not captured | not captured | ['Wang_2010:abstract', 'Wang_2010:abstract'] |
-| C5_dimension_Q351 | fail | [luminosity] / [length] ** 2 / [time] | L x h(-1) | not captured | not captured | ['Wang_2010:abstract', 'Wang_2010:abstract'] |
-| C5_dimension_Q63 | pass | [length] ** 3 | not captured | not captured | not captured | ['Wang_2010:abstract', 'Wang_2010:abstract'] |
-| C5_dimension_Q64 | pass | [length] ** 3 | not captured | not captured | not captured | ['Wang_2010:abstract', 'Wang_2010:abstract'] |
+| C0_has_structural_params | pass | not captured | 8 | not captured | not captured | not captured |
+| C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
+| C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
+| C5_dimension_Q30 | fail | [luminosity] / [length] ** 2 / [time] | L x h(-1) | not captured | not captured | ['Wang_2010:abstract', 'Wang_2010:abstract', 'Wang_2010:abstract'] |
+| C5_dimension_Q30 | fail | [luminosity] / [length] ** 2 / [time] | L x h(-1) | not captured | not captured | ['Wang_2010:abstract'] |
+| C5_dimension_Q351 | fail | [luminosity] / [length] ** 2 / [time] | L x h(-1) | not captured | not captured | ['Wang_2010:abstract', 'Wang_2010:abstract', 'Wang_2010:abstract'] |
+| C5_dimension_Q351 | fail | [luminosity] / [length] ** 2 / [time] | L x h(-1) | not captured | not captured | ['Wang_2010:abstract'] |
+| C5_dimension_Q63 | pass | [length] ** 3 | not captured | not captured | not captured | ['Wang_2010:abstract', 'Wang_2010:abstract', 'Wang_2010:abstract'] |
+| C5_dimension_Q63 | pass | [length] ** 3 | not captured | not captured | not captured | ['Wang_2010:abstract'] |
+| C5_dimension_Q64 | pass | [length] ** 3 | not captured | not captured | not captured | ['Wang_2010:abstract', 'Wang_2010:abstract', 'Wang_2010:abstract'] |
+| C5_dimension_Q64 | pass | [length] ** 3 | not captured | not captured | not captured | ['Wang_2010:abstract'] |
 | C7_apparent_coherence | pass | not captured | not captured | not captured | not captured | not captured |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
+| C9_phys_window_Q63 | pass | volume within physiological range | 5.03 L | not captured | not captured | ['Wang_2010:abstract', 'Wang_2010:abstract', 'Wang_2010:abstract'] |
+| C9_phys_window_Q63 | pass | volume within physiological range | 5.23 L | not captured | not captured | ['Wang_2010:abstract'] |
+| C9_phys_window_Q64 | pass | volume within physiological range | 4.39 L | not captured | not captured | ['Wang_2010:abstract', 'Wang_2010:abstract', 'Wang_2010:abstract'] |
+| C9_phys_window_Q64 | pass | volume within physiological range | 4.37 L | not captured | not captured | ['Wang_2010:abstract'] |
 
 <details class="legend">
 <summary>Check legend — what each column means</summary>
@@ -105,4 +122,4 @@ _No web simulator for this record: its structure has no shared WebAssembly templ
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 00:51 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 14:38 UTC</sub>

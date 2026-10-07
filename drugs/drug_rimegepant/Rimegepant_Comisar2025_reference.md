@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N02C&quot;,&quot;href&quot;:&quot;atc/N02C.md&quot;},{&quot;label&quot;:&quot;rimegepant&quot;,&quot;href&quot;:&quot;drugs/drug_rimegepant/&quot;},{&quot;label&quot;:&quot;Comisar_2025 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Rimegepant_Comisar2025_reference&quot;,&quot;label&quot;:&quot;Comisar_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_rimegepant/Rimegepant_Comisar2025_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Rimegepant_Comisar2025v2_reference&quot;,&quot;label&quot;:&quot;Comisar_2025_2_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_rimegepant/Rimegepant_Comisar2025v2_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Rimegepant_Comisar2025_reference&quot;,&quot;label&quot;:&quot;Comisar_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_rimegepant/Rimegepant_Comisar2025_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -27,14 +27,14 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the val
 
 <sub>reviewed by rule template (no LLM)</sub>
 
-> ⚠️ **STALE** — review status `accepted_with_caveats` (reviewed 2026-09-28 14:39:32.265655+00:00) predates the upstream re-run (2026-10-07 06:36:00.769024+00:00). Current validate status: `extracted`.
+> ⚠️ **STALE** — review status `accepted_with_caveats` (reviewed 2026-09-28 14:39:32.265655+00:00) predates the upstream re-run (2026-10-07 15:39:16.744162+00:00). Current validate status: `extracted`.
 
 ## Citation
 Comisar CM et al., Exposure Matching Using Population Phar…, Clinical and translational… (2025)
   ·  DOI: [10.1111/cts.70360](https://doi.org/10.1111/cts.70360)
 
 ## Model component
-<dbs-pgx drug="rimegepant" model-id="Rimegepant_Comisar2025_reference" status="extracted" stale="true" population="pediatric and adult patients with migraine" measured-compound="rimegepant" parameterization="apparent" topology="2C"></dbs-pgx>
+<dbs-pgx drug="rimegepant" model-id="Rimegepant_Comisar2025_reference" status="extracted" stale="true" population="pediatric and adult" measured-compound="rimegepant" parameterization="apparent" topology="2C"></dbs-pgx>
 
 **Model structure:** 2-compartment, oral mammillary model — template `PK_2C_enteral`.  
 **Parameters:** 7 extracted, plus 7 covariate effects.
@@ -50,14 +50,14 @@ Comisar CM et al., Exposure Matching Using Population Phar…, Clinical and tran
 | Q/F, L/h | `Q69` · Q/F | 4.16 | L/h | 1.1555555555555556e-06 | [l] / [h] | 5.7 | exact (1.0) | cts70360-tbl-0002:row4:col1 | — | not captured |
 | k tr, 1/h | `Q306` · ktr | 8.42 | 1/h | 0.002338888888888889 | [1] / [h] | 5.1 | space_fold (0.95) | cts70360-tbl-0002:row5:col1 | — | 54.8 (5.6% RSE) |
 | k a, 1/h | `Q49` · kabs | 3.05 | 1/h | 0.0008472222222222222 | [1] / [h] | 15.5 | space_fold (0.95) | cts70360-tbl-0002:row6:col1 | — | not captured |
-| severe_hepatic_impairment_on_cl_f | `Q900` · severe_hepatic_impairment_on_cl_f | -0.410 | not captured | not captured | not captured | 25.9 | not captured (not captured) | cts70360-tbl-0002:row8:col1 | — | not captured |
-| capsule_formulation_on_k_tr | `Q900` · capsule_formulation_on_k_tr | 2.19 | not captured | not captured | not captured | 22.6 | not captured (not captured) | cts70360-tbl-0002:row13:col1 | — | not captured |
-| moderate_hepatic_impairment_on_cl_f | `Q900` · moderate_hepatic_impairment_on_cl_f | -0.203 | not captured | not captured | not captured | 27.6 | not captured (not captured) | cts70360-tbl-0002:row15:col1 | — | not captured |
+| fed_on_f1 | `Q900` · fed_on_f1 | -0.331 | not captured | not captured | not captured | 6.9 | not captured (not captured) | cts70360-tbl-0002:row10:col1 | — | not captured |
 | Dose effect on F1 | `Q40` · Fab | 0.192 | not captured | not captured | not captured | 12.4 | llm_confirmed (0.6) | cts70360-tbl-0002:row16:col1 | — | not captured |
 | body_weight_effect_on_cl_f_and_q_f | `Q900` · body_weight_effect_on_cl_f_and_q_f | 0.575 | not captured | not captured | not captured | 14.4 | not captured (not captured) | cts70360-tbl-0002:row18:col1 | — | not captured |
-| body_weight_effect_on_v1_f_and_v2_f | `Q900` · body_weight_effect_on_v1_f_and_v2_f | 1.18 | not captured | not captured | not captured | 8.3 | not captured (not captured) | cts70360-tbl-0002:row19:col1 | — | not captured |
-| theta_fab_fed | `Q900` · theta_fab_fed | -0.331 | not captured | not captured | not captured | 6.9 | not captured (not captured) | cts70360-tbl-0002:row10:col1 | — | not captured |
-| theta_ktr_fed | `Q900` · theta_ktr_fed | -0.698 | not captured | not captured | not captured | 3.9 | not captured (not captured) | cts70360-tbl-0002:row11:col1 | — | not captured |
+| theta_cl_f_hepatic | `Q900` · theta_cl_f_hepatic | -0.410 | not captured | not captured | not captured | 25.9 | not captured (not captured) | cts70360-tbl-0002:row8:col1 | — | not captured |
+| theta_q338_fed | `Q900` · theta_q338_fed | -0.698 | not captured | not captured | not captured | 3.9 | not captured (not captured) | cts70360-tbl-0002:row11:col1 | — | not captured |
+| theta_ktr_formulation | `Q900` · theta_ktr_formulation | 2.19 | not captured | not captured | not captured | 22.6 | not captured (not captured) | cts70360-tbl-0002:row13:col1 | — | not captured |
+| theta_cl_f_hepatic | `Q900` · theta_cl_f_hepatic | -0.203 | not captured | not captured | not captured | 27.6 | not captured (not captured) | cts70360-tbl-0002:row15:col1 | — | not captured |
+| theta_v1_f_body_weight | `Q900` · theta_v1_f_body_weight | 1.18 | not captured | not captured | not captured | 8.3 | not captured (not captured) | cts70360-tbl-0002:row19:col1 | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -78,20 +78,17 @@ Comisar CM et al., Exposure Matching Using Population Phar…, Clinical and tran
 - table section iiv: 'ω1,2: CL/F:V1/F' routed out of structural estimates ('IIV% (%RSE)')
 - table section iiv: 'ω1,3: CL/F:V2/F' routed out of structural estimates ('IIV% (%RSE)')
 - table section iiv: 'ω2,3: V1/F:V2/F' routed out of structural estimates ('IIV% (%RSE)')
-- column 'estimate (%rse)' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
 - dropped duplicate Q27 ('Fluconazole use on CL/F', value '-0.429') — already have one for this compound
-- covariate level 'Severe hepatic impairment on CL/F' → Q900:severe_hepatic_impairment_on_cl_f = -0.410 (linear_fractional on Q27)
 - dropped duplicate Q27 ('Itraconazole use on CL/F', value '-0.744') — already have one for this compound
+- covariate level 'Fed on F1' → Q900:fed_on_f1 = -0.331 (linear_fractional on Q27)
 - relinked 'ODT on k tr' Q338 → Q306 — same-named PK parameter preferred over the PD code in a popPK record
 - dropped duplicate Q306 ('ODT on k tr', value '0.470') — already have one for this compound
-- covariate level 'Capsule formulation on k tr' → Q900:capsule_formulation_on_k_tr = 2.19 (linear_fractional on Q27)
 - relinked 'Itraconazole use on k tr' Q338 → Q306 — same-named PK parameter preferred over the PD code in a popPK record
 - dropped duplicate Q306 ('Itraconazole use on k tr', value '-0.361') — already have one for this compound
-- covariate level 'Moderate hepatic impairment on CL/F' → Q900:moderate_hepatic_impairment_on_cl_f = -0.203 (linear_fractional on Q27)
 - relinked '10/25 mg dose effect on k tr a' Q338 → Q306 — same-named PK parameter preferred over the PD code in a popPK record
 - dropped duplicate Q306 ('10/25 mg dose effect on k tr a', value '0.596') — already have one for this compound
 - covariate level 'Body weight effect on CL/F and Q/F' → Q900:body_weight_effect_on_cl_f_and_q_f = 0.575 (linear_fractional on Q27)
-- covariate level 'Body weight effect on V1/F and V2/F' → Q900:body_weight_effect_on_v1_f_and_v2_f = 1.18 (linear_fractional on Q27)
+- covariate effect for Q338 has no base parameter row (kept as unattached equation-variable)
 - apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=rimegepant
 - skipped review gap-fill of TLAG: primary's parameterization (rate-constant / ka-only) does not use it
 
@@ -183,7 +180,7 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_rimegepant/Rimegepant_Comisar2025_reference/Rimegepant_Comisar2025_reference_modelica.zip" download>Rimegepant_Comisar2025_reference_modelica.zip</a> <span class="pk-size">(4.9 kB)</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_rimegepant/Rimegepant_Comisar2025_reference/Rimegepant_Comisar2025_reference_modelica.zip" download>Rimegepant_Comisar2025_reference_modelica.zip</a> <span class="pk-size">(4.8 kB)</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_rimegepant/Rimegepant_Comisar2025_reference/Rimegepant_Comisar2025_reference_fmi.zip" download>Rimegepant_Comisar2025_reference_fmi.zip</a> <span class="pk-size">(4.3 kB)</span><br><a href="models/fmu/PK_2C_enteral.fmu" download>PK_2C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_rimegepant/Rimegepant_Comisar2025_reference/Rimegepant_Comisar2025_reference_matlab.zip" download>Rimegepant_Comisar2025_reference_matlab.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_rimegepant/Rimegepant_Comisar2025_reference/Rimegepant_Comisar2025_reference_matlab_simbio.zip" download>Rimegepant_Comisar2025_reference_matlab_simbio.zip</a> <span class="pk-size">(2.8 kB)</span></td></tr>
@@ -196,7 +193,7 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-**Administration: oral** — 10 mg, single dose, first-order absorption (ka 3.05 /h, F 1). Doses in the paper: 10, 25, 50, 75, 150 mg.
+**Administration: oral** — 25 mg, single dose, first-order absorption (ka 3.05 /h, F 1). Doses in the paper: 25, 50, 75 mg.
 
 <dbs-fmusim paramsurl="drugs/drug_rimegepant/Rimegepant_Comisar2025_reference/Rimegepant_Comisar2025_reference_params.json" metaurl="assets/fmu/PK_2C_enteral.vr.json" wasmurl="assets/fmu/PK_2C_enteral.js" controlsurl="drugs/drug_rimegepant/Rimegepant_Comisar2025_reference/Rimegepant_Comisar2025_reference_sim_controls.json"></dbs-fmusim>
 
@@ -205,4 +202,4 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 06:36 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 15:39 UTC</sub>

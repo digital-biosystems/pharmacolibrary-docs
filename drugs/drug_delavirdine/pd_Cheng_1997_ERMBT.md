@@ -1,7 +1,7 @@
-<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;J05A&quot;,&quot;href&quot;:&quot;atc/J05A.md&quot;},{&quot;label&quot;:&quot;delavirdine&quot;,&quot;href&quot;:&quot;drugs/drug_delavirdine/&quot;},{&quot;label&quot;:&quot;Cheng_1997 \u00b7 PD erythromycin breath test&quot;}]"></div>
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;J05A&quot;,&quot;href&quot;:&quot;atc/J05A.md&quot;},{&quot;label&quot;:&quot;delavirdine&quot;,&quot;href&quot;:&quot;drugs/drug_delavirdine/&quot;},{&quot;label&quot;:&quot;Cheng_1997 \u00b7 PD Erythromycin breath test (hepatic CYP3A activity)&quot;}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# erythromycin breath test — PD  <span class="pk-badge pk-badge--green">extracted</span>
+# Erythromycin breath test (hepatic CYP3A activity) — PD  <span class="pk-badge pk-badge--green">extracted</span>
 
 <details class="pk-legend"><summary>What the PGx badges mean — evidence, and whether a model runs</summary><table><tbody><tr><td><span class="pk-badge pk-badge--green">quantitative</span></td><td>the paper gives the effect of each phenotype (or genotype) on a named model parameter — a θ per category.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">qualitative</span></td><td>the paper links the gene to the drug but states no effect size on a model parameter, so it changes no model.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">guideline estimate</span></td><td>the effect comes from a CPIC / DPWG dosing guideline, not from this paper's numbers.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">safety allele</span></td><td>a risk allele for an adverse reaction (an HLA type, G6PD deficiency …): it changes no PK/PD parameter.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>the extraction is incomplete or inconsistent.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted.</td></tr><tr><td><span class="pk-badge pk-badge--green">▶ simulatable</span></td><td>the paper's popPK model runs per phenotype in the browser (Simulation tab); its PGx Modelica model is under Models.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">model only</span></td><td>a PGx Modelica model exists but has no in-browser simulator.</td></tr></tbody></table></details>
 
@@ -13,9 +13,13 @@
 
 ## What this record describes
 
-**As extracted:** Delavirdine (concentrations from the PK model of Smith_2005) drives erythromycin breath test: direct Emax (saturable) effect.
+**As extracted:** Delavirdine (concentrations from the PK model of Smith_2005) drives Erythromycin breath test (hepatic CYP3A activity): direct Emax (saturable) effect.
 
 **Model:** No model was generated from this record.
+
+> The paper describes a direct Emax inhibition model where delavirdine concentration drives the response of the erythromycin breath test, with an IC50 of 0.9 µmol/L and a maximum inhibition of 70% to 75%.
+>
+> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
 
 - **paper:** `Cheng_1997`
 - **model family:** `emax`
@@ -31,7 +35,6 @@ Cheng CL et al., Steady-state pharmacokinetics of delavi…, Clinical pharmacolo
 | role | label (paper) | Q-code · name | value | unit | value_si | link | source |
 |---|---|---|---|---|---|---|---|
 | PD (effect) | IC50 | `Q322` · not captured | 0.9 | mumol/L | not captured | llm (not captured) | Cheng_1997:pdv3 |
-| PD (effect) | maximum inhibition | `Q323` · not captured | 70% to 75% | not captured | not captured | llm (not captured) | Cheng_1997:pdv3 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

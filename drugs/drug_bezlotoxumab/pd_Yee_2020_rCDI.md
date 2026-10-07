@@ -1,8 +1,8 @@
-<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;J06B&quot;,&quot;href&quot;:&quot;atc/J06B.md&quot;},{&quot;label&quot;:&quot;bezlotoxumab&quot;,&quot;href&quot;:&quot;drugs/drug_bezlotoxumab/&quot;},{&quot;label&quot;:&quot;Yee_2020 \u00b7 PD recurrent Clostridium difficile infection (rCDI)&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Bezlotoxumab_Yee2020_reference&quot;,&quot;label&quot;:&quot;Yee_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_bezlotoxumab/Bezlotoxumab_Yee2020_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;J06B&quot;,&quot;href&quot;:&quot;atc/J06B.md&quot;},{&quot;label&quot;:&quot;bezlotoxumab&quot;,&quot;href&quot;:&quot;drugs/drug_bezlotoxumab/&quot;},{&quot;label&quot;:&quot;Yee_2020 \u00b7 PD recurrence of Clostridium difficile infection (time to event)&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Bezlotoxumab_Yee2020_reference&quot;,&quot;label&quot;:&quot;Yee_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_bezlotoxumab/Bezlotoxumab_Yee2020_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# recurrent Clostridium difficile infection (rCDI) — PD  <span class="pk-badge pk-badge--orange">needs review</span>
+# recurrence of Clostridium difficile infection (time to event) — PD  <span class="pk-badge pk-badge--orange">needs review</span>
 
 <details class="pk-legend"><summary>What the PGx badges mean — evidence, and whether a model runs</summary><table><tbody><tr><td><span class="pk-badge pk-badge--green">quantitative</span></td><td>the paper gives the effect of each phenotype (or genotype) on a named model parameter — a θ per category.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">qualitative</span></td><td>the paper links the gene to the drug but states no effect size on a model parameter, so it changes no model.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">guideline estimate</span></td><td>the effect comes from a CPIC / DPWG dosing guideline, not from this paper's numbers.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">safety allele</span></td><td>a risk allele for an adverse reaction (an HLA type, G6PD deficiency …): it changes no PK/PD parameter.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>the extraction is incomplete or inconsistent.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted.</td></tr><tr><td><span class="pk-badge pk-badge--green">▶ simulatable</span></td><td>the paper's popPK model runs per phenotype in the browser (Simulation tab); its PGx Modelica model is under Models.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">model only</span></td><td>a PGx Modelica model exists but has no in-browser simulator.</td></tr></tbody></table></details>
 
@@ -14,13 +14,17 @@
 
 ## What this record describes
 
-**As extracted:** Bezlotoxumab (the dose) drives recurrent Clostridium difficile infection (rCDI): time-to-event model.
+**As extracted:** Bezlotoxumab (concentrations from this paper's PK model) drives recurrence of Clostridium difficile infection (time to event): time-to-event model.
 
 **Model:** No model was generated from this record.
 
+> The time-to-event model for recurrent *Clostridium difficile* infection (rCDI) describes bezlotoxumab exposure (AUC 0-inf) inhibiting the hazard rate via an Emax model, where the EAUC50 was fixed at 100 lg.h/mL because exposures at the 10 mg/kg dose were on the maximal response plateau. The maximum effect (Emax) of -0.300 indicates a proportional reduction in the hazard, with the low-titer endogenous IgG-B covariate valued at 1.18 affecting the baseline hazard parameters.
+>
+> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+
 - **paper:** `Yee_2020`
 - **model family:** `tte`
-- **driver:** `dose_only`
+- **driver:** `pk_record`
 - **tier:** population
 - **effect:** inhibition/proportional
 
@@ -31,9 +35,18 @@ Yee KL et al., A time-to-event analysis of the exposur…, Journal of pharmacoki
 ## Parameters
 | role | label (paper) | Q-code · name | value | unit | value_si | link | source |
 |---|---|---|---|---|---|---|---|
-| PD (effect) | E max | `Q323` · not captured | -0.300 | not captured | not captured | llm (not captured) | Yee_2020:pdv3 |
-| PD (effect) | EAUC 50 | `Q321` · not captured | 100 | lg.h/mL | not captured | llm (not captured) | Yee_2020:pdv3 |
-| model term | Endogenous IgG-B-low titer | `Q900` · not captured | 1.18 | not captured | not captured | llm (not captured) | Yee_2020:pdv3 |
+| PD (effect) | k | `Q342` · not captured | 0.0175 | not captured | not captured | llm (not captured) | Yee_2020:pdv3 |
+| model term | Age-continuous | `Q900` · not captured | 0.0084 | not captured | not captured | llm (not captured) | Yee_2020:pdv3 |
+| model term | Endogenous IgG-B-low titer | `Q900` · not captured | 0.414 | not captured | not captured | llm (not captured) | Yee_2020:pdv3 |
+| model term | History of CDI in past 6 months-yes | `Q900` · not captured | 0.907 | not captured | not captured | llm (not captured) | Yee_2020:pdv3 |
+| model term | Hospitalization-outpatients | `Q900` · not captured | 0.374 | not captured | not captured | llm (not captured) | Yee_2020:pdv3 |
+| model term | Sex-male | `Q900` · not captured | -0.156 | not captured | not captured | llm (not captured) | Yee_2020:pdv3 |
+| model term | Charlson Comorbidity Index-score ≥3 | `Q900` · not captured | -0.209 | not captured | not captured | llm (not captured) | Yee_2020:pdv3 |
+| PD (effect) | Emax | `Q323` · not captured | -0.300 | not captured | not captured | direction (not captured) | Yee_2020:pdv3 |
+| model term | Endogenous IgG-B-low titer (on Emax) | `Q900` · not captured | 1.18 | not captured | not captured | llm (not captured) | Yee_2020:pdv3 |
+| PD (effect) | EAUC50 | `Q321` · not captured | 100 | µg.h/mL | not captured | llm (not captured) | Yee_2020:pdv3 |
+| PD (effect) | a | `Q343` · not captured | -0.0567 | not captured | not captured | llm (not captured) | Yee_2020:pdv3 |
+| model term | Concomitant use of systemic antibiotics-yes | `Q900` · not captured | -0.220 | not captured | not captured | llm (not captured) | Yee_2020:pdv3 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

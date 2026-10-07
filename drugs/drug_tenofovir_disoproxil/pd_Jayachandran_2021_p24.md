@@ -1,7 +1,7 @@
-<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;J05A&quot;,&quot;href&quot;:&quot;atc/J05A.md&quot;},{&quot;label&quot;:&quot;tenofovir disoproxil&quot;,&quot;href&quot;:&quot;drugs/drug_tenofovir_disoproxil/&quot;},{&quot;label&quot;:&quot;Jayachandran_2021 \u00b7 PD cumulative p24 antigen expression&quot;}]"></div>
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;J05A&quot;,&quot;href&quot;:&quot;atc/J05A.md&quot;},{&quot;label&quot;:&quot;tenofovir disoproxil&quot;,&quot;href&quot;:&quot;drugs/drug_tenofovir_disoproxil/&quot;},{&quot;label&quot;:&quot;Jayachandran_2021 \u00b7 PD cumulative p24 antigen expression (ex vivo HIV-1 infection of rectal explants)&quot;}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# cumulative p24 antigen expression — PD  <span class="pk-badge pk-badge--orange">needs review</span>
+# cumulative p24 antigen expression (ex vivo HIV-1 infection of rectal explants) — PD  <span class="pk-badge pk-badge--orange">needs review</span>
 
 <details class="pk-legend"><summary>What the PGx badges mean — evidence, and whether a model runs</summary><table><tbody><tr><td><span class="pk-badge pk-badge--green">quantitative</span></td><td>the paper gives the effect of each phenotype (or genotype) on a named model parameter — a θ per category.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">qualitative</span></td><td>the paper links the gene to the drug but states no effect size on a model parameter, so it changes no model.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">guideline estimate</span></td><td>the effect comes from a CPIC / DPWG dosing guideline, not from this paper's numbers.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">safety allele</span></td><td>a risk allele for an adverse reaction (an HLA type, G6PD deficiency …): it changes no PK/PD parameter.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>the extraction is incomplete or inconsistent.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted.</td></tr><tr><td><span class="pk-badge pk-badge--green">▶ simulatable</span></td><td>the paper's popPK model runs per phenotype in the browser (Simulation tab); its PGx Modelica model is under Models.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">model only</span></td><td>a PGx Modelica model exists but has no in-browser simulator.</td></tr></tbody></table></details>
 
@@ -13,15 +13,19 @@
 
 ## What this record describes
 
-**As extracted:** Tenofovir-diphosphate drives cumulative p24 antigen expression (in pg/mL): direct linear effect.
+**As extracted:** Tenofovir-diphosphate (TFVdp) in rectal mononuclear cells (MMCs) drives cumulative p24 antigen expression (ex vivo HIV-1 infection of rectal explants) (in pg/mL): direct linear effect.
 
-**Model:** No model was generated from this record.
+**Model:** A model was generated (see the **Models** tab); it has no in-browser simulator.
+
+> Intracellular tenofovir-diphosphate (TFVdp) concentrations act on cumulative p24 antigen expression (pg/mL) by inhibiting HIV-1 viral growth, which subsequently reduces p24 production via a delayed effect compartment model with a fixed viral growth rate ($k_g$) of 0.045/hour and p24 expression rate ($k_p$) of 0.0059/hour. The relationship is characterized by linear slopes of 0.00011, 0.00042, and 0.00008 (pg/mL)/(fmol/million cells), while the paper does not provide specific $IC_{50}$, $EC_{50}$, or $I_{max}$ values.
+>
+> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
 
 - **paper:** `Jayachandran_2021`
 - **model family:** `linear`
 - **driver:** `not_resolved`
 - **tier:** population
-- **effect:** inhibition/unknown
+- **effect:** inhibition/proportional
 
 ## Citation
 Jayachandran P et al., A Mechanistic In Vivo/Ex Vivo Pharmacok…, CPT: pharmacometrics & syst… (2021)
@@ -31,8 +35,9 @@ Jayachandran P et al., A Mechanistic In Vivo/Ex Vivo Pharmacok…, CPT: pharmaco
 | role | label (paper) | Q-code · name | value | unit | value_si | link | source |
 |---|---|---|---|---|---|---|---|
 | PD (effect) | Slope | `Q335` · not captured | 0.00011 | (pg/mL)/(fmol/million cells) | not captured | llm (not captured) | Jayachandran_2021:pdv3 |
-| PD (effect) | Slope | `Q335` · not captured | 0.00042 | (pg/mL)/(fmol/million cells) | not captured | llm (not captured) | Jayachandran_2021:pdv3 |
-| PD (effect) | Slope | `Q335` · not captured | 0.00008 | (pg/mL)/(fmol/million cells) | not captured | llm (not captured) | Jayachandran_2021:pdv3 |
+| PD (effect) | kdeath | `Q331` · not captured | 0.0193 | /hour | not captured | exact (not captured) | Jayachandran_2021:pdv3 |
+| — | Ratio | `Q100` · not captured | 0.0404 | pg/virions | not captured | nil (not captured) | Jayachandran_2021:pdv3 |
+| variability | IIV on Slope | `Q312` · not captured | 171.2 | %CV | not captured | llm (not captured) | Jayachandran_2021:pdv3 |
 | variability | IIV on kp24 | `Q312` · not captured | 72.5 | %CV | not captured | llm (not captured) | Jayachandran_2021:pdv3 |
 
 <details class="legend">
@@ -41,20 +46,53 @@ Jayachandran P et al., A Mechanistic In Vivo/Ex Vivo Pharmacok…, CPT: pharmaco
 </details>
 
 
+## Exposure-response model
+
+`TenofovirDisoproxil_Jayachandran2021_PD_p24` — linear, `response = E0 + slope*exposure`
+
+| parameter | value (paper units) | SI |
+|---|---|---|
+| E0 | 0 | — |
+| slope | 0.00011 (pg/mL)/(fmol/million cells) | — |
+
+Closed-form check points (response, SI): `at_0` = 0, `per_exposure_unit` = 0.00011
+
+Deviations:
+
+- `defaulted_parameters` — E0
+
+## Review
+
+Verdict <span class="pk-badge pk-badge--orange">needs review</span> · route to `scholar`
+
+| check | status | note |
+|---|---|---|
+| `T0_driver` | pass | driver is the drug, a synonym or one of its metabolites (or unnamed) |
+| `T1_closed_form` | pass | engineer's check points reproduced from the bound parameters |
+| `T1b_fmu` | skipped | template FMU / fmpy not available — advisory only |
+| `T2_direction` | skipped | a line has no plateau to compare |
+| `T3_plausibility` | pass | EC50, gamma, Imax and baseline in range |
+| `T4_defaults` | fail | a core parameter took a library default: E0 |
+
+Advisory:
+
+- defaulted: E0 — a row the paper has and the record lacks
+
+
 <div class="pk-tab-mark" data-tab="Models"></div>
 
 ## Downloadable models
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_tenofovir_disoproxil/TenofovirDisoproxil_Jayachandran2021_PD_p24/TenofovirDisoproxil_Jayachandran2021_PD_p24_modelica.zip" download>TenofovirDisoproxil_Jayachandran2021_PD_p24_modelica.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_tenofovir_disoproxil/TenofovirDisoproxil_Jayachandran2021_PD_p24/TenofovirDisoproxil_Jayachandran2021_PD_p24_matlab.zip" download>TenofovirDisoproxil_Jayachandran2021_PD_p24_matlab.zip</a> <span class="pk-size">(3.2 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_tenofovir_disoproxil/TenofovirDisoproxil_Jayachandran2021_PD_p24/TenofovirDisoproxil_Jayachandran2021_PD_p24_sbml.zip" download>TenofovirDisoproxil_Jayachandran2021_PD_p24_sbml.zip</a> <span class="pk-size">(2.7 kB)</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_tenofovir_disoproxil/TenofovirDisoproxil_Jayachandran2021_PD_p24/TenofovirDisoproxil_Jayachandran2021_PD_p24_cellml.zip" download>TenofovirDisoproxil_Jayachandran2021_PD_p24_cellml.zip</a> <span class="pk-size">(2.6 kB)</span></td></tr>
 </tbody></table>
-<p>No bundles have been generated for this record yet. When the engineer emits them they appear here automatically — this page reports what is on disk and generates nothing itself.</p>
+<p>Each archive holds the model source, a script that simulates it against the appropriate library, and a README describing both and how to run them.</p>
 </div></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>

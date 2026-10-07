@@ -17,11 +17,15 @@
 
 **Model:** No model was generated from this record.
 
+> Plasma mecamylamine concentrations directly inhibit the percentage of correct answers in the 0-back task via a direct Emax model, as the paper notes the drug exerts its central effect without delay or an effect compartment. The model parameters are an EC50 of 8.74 μg•L⁻¹, an Emax of 0.377 %, and a baseline (BL) of 3.66 % correct answers.
+>
+> <sub>in the paper's terms — summarised by qwen3.8:27b-mtp-q8_0 from the paper's text; not checked by a person</sub>
+
 - **paper:** `Alvarez-Jimenez_2017`
 - **model family:** `emax`
 - **driver:** `pk_record`
 - **tier:** population
-- **effect:** inhibition/additive
+- **effect:** inhibition/proportional
 
 ## Citation
 Alvarez-Jimenez R et al., Pharmacokinetics and pharmacodynamics o…, Journal of psychopharmacolo… (2017)
@@ -31,7 +35,7 @@ Alvarez-Jimenez R et al., Pharmacokinetics and pharmacodynamics o…, Journal of
 | role | label (paper) | Q-code · name | value | unit | value_si | link | source |
 |---|---|---|---|---|---|---|---|
 | PD (effect) | EC 50 | `Q321` · not captured | 8.74 | μg•L -1 | not captured | llm (not captured) | Alvarez-Jimenez_2017:pdv3 |
-| PD (effect) | E max | `Q323` · not captured | 0.377 | % | not captured | llm (not captured) | Alvarez-Jimenez_2017:pdv3 |
+| PD (effect) | E max | `Q323` · not captured | 0.377 | % | not captured | direction (not captured) | Alvarez-Jimenez_2017:pdv3 |
 | PD (effect) | BL | `Q324` · not captured | 3.66 | % correct answers | not captured | llm (not captured) | Alvarez-Jimenez_2017:pdv3 |
 
 <details class="legend">

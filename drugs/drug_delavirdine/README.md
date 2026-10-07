@@ -27,20 +27,20 @@ It is no longer available, as it has been withdrawn from the market.
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 13:38 | 11:09 | 0/1/0 | 2/0/0 | 0/0/0 | 462,852/16,828 | einfracz / qwen3.8-27b | 12 | 3/6 | 11/1 | 0 |
+| 2026-10-07 16:08 | 12:45 | 0/1/0 | 2/0/0 | 0/0/0 | 539,937/40,933 | ollama / glm-5.3-flash | 12 | 3/6 | 11/1 | 0 |
 
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Smith_2005_reference](drugs/drug_delavirdine/Delavirdine_Smith2005_reference.md) | — | parent + metabolite (no model) | 6 | Smith PF et al., Population pharmacokinetics of delavird…, Clinical pharmacokinetics (2005) | [10.2165/00003088-200544010-00004](https://doi.org/10.2165/00003088-200544010-00004) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>STALE — current validate: rejected</sub><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Smith_2005_reference](drugs/drug_delavirdine/Delavirdine_Smith2005_reference.md) | — | nonlinear / manual (no model) | 5 | Smith PF et al., Population pharmacokinetics of delavird…, Clinical pharmacokinetics (2005) | [10.2165/00003088-200544010-00004](https://doi.org/10.2165/00003088-200544010-00004) |
 
 ## Pharmacodynamics (PD)
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> | [Cheng_1997_ERMBT](drugs/drug_delavirdine/pd_Cheng_1997_ERMBT.md) | erythromycin breath test ← delavirdine · direct Emax (saturable) effect | — | Cheng CL et al., Steady-state pharmacokinetics of delavi…, Clinical pharmacology and t… (1997) | [10.1016/S0009-9236(97)90133-8](https://doi.org/10.1016/S0009-9236(97)90133-8) |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Weiss_2007_pheophorbide_A_accumulation](drugs/drug_delavirdine/pd_Weiss_2007_pheophorbide_A_accumulation.md) | pheophorbide A accumulation ← delavirdine · direct sigmoid Emax (Hill) effect | — | Weiss J et al., Modulation of human BCRP (ABCG2) activi…, The Journal of antimicrobia… (2007) | [10.1093/jac/dkl474](https://doi.org/10.1093/jac/dkl474) |
+| <span class="pk-badge pk-badge--green">extracted</span> | [Cheng_1997_ERMBT](drugs/drug_delavirdine/pd_Cheng_1997_ERMBT.md) | Erythromycin breath test (hepatic CYP3A activity) ← delavirdine · direct Emax (saturable) effect | — | Cheng CL et al., Steady-state pharmacokinetics of delavi…, Clinical pharmacology and t… (1997) | [10.1016/S0009-9236(97)90133-8](https://doi.org/10.1016/S0009-9236(97)90133-8) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by qwen3.8-27b, p(non-human) 1.00).">in vitro</span> | [Weiss_2007_BCRP_inhibition](drugs/drug_delavirdine/pd_Weiss_2007_BCRP_inhibition.md) | BCRP inhibition (pheophorbide A accumulation in MDCKII-BCRP cells) ← delavirdine · direct Emax (saturable) effect | — | Weiss J et al., Modulation of human BCRP (ABCG2) activi…, The Journal of antimicrobia… (2007) | [10.1093/jac/dkl474](https://doi.org/10.1093/jac/dkl474) |
 
 ## ADME sites
 
@@ -66,7 +66,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 - **PubMed hits:** 127 matched, 103 returned
 - **screened:** 1  ·  **relevant:** 1
-- **records:** 1  ·  extracted 0  ·  needs_review 0  ·  rejected 1  ·  stale 0
+- **records:** 1  ·  extracted 0  ·  needs_review 0  ·  rejected 1  ·  stale 1
 - **scholar-agent fallback query used:** not captured
 
 ## Full text wanted
@@ -75,67 +75,69 @@ _1 paper(s) judged relevant from the abstract, with no full text on disk — pay
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Smith_2005.pdf` | Smith PF et al., Population pharmacokinetics of delavird…, Clinical pharmacokinetics (2005) | popPK | 10 | [10.2165/00003088-200544010-00004](https://doi.org/10.2165/00003088-200544010-00004) | [15634033](https://pubmed.ncbi.nlm.nih.gov/15634033) | The abstract provides explicit quantitative population pharmacokinetic parameters for delavirdine (Vss, CL, Vmax, Km) in humans. |
+| `Smith_2005.pdf` | Smith PF et al., Population pharmacokinetics of delavird…, Clinical pharmacokinetics (2005) | popPK | 10 | [10.2165/00003088-200544010-00004](https://doi.org/10.2165/00003088-200544010-00004) | [15634033](https://pubmed.ncbi.nlm.nih.gov/15634033) | Population PK model of delavirdine (and its metabolite N-delavirdine) in HIV patients with full numeric parameter estimates (Vss 67.6 L, intrinsic CL 19.8 L/h, etc.) present in the abstract. |
 
-<sub>queue written 2026-10-07T13:33:57.551056+00:00</sub>
+<sub>queue written 2026-10-07T15:56:20.184435+00:00</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| PGx | Baker_2006 | not_relevant | 0 | 0 | The study examines the pharmacodynamic effect of delavirdine on QT interval in combination with buprenorphine, but it does not report any pharmacogenomic effects (gene variants) on PK/PD parameters. |
-| popPK | Chen_2012 | irrelevant | 0 | 0 | The paper is a medicinal chemistry study evaluating new compounds as NNRTIs, using delavirdine only as a standard comparator for potency (EC50/IC50) rather than as the subject of pharmacokinetic analysis. |
-| popPK | Chen_2013 | irrelevant | 0 | 0 | The study focuses on the discovery and antiviral activity (EC50/CC50) of new HIV inhibitors, using delavirdine only as a reference comparator, and does not report pharmacokinetic parameters. |
-| PGx | Davey_1996 | not_relevant | 0 | 0 | The paper reports general pharmacokinetics and clinical outcomes for delavirdine but does not investigate the effect of host gene variants or genotypes on these parameters. |
-| PGx | Fichtenbaum_2002 | not_relevant | 0 | 0 | The paper discusses drug-drug interactions involving delavirdine but does not report any pharmacogenomic effects based on gene variants or genotypes. |
-| PGx | Genin_1996 | not_relevant | 0 | 0 | The paper focuses on the structural modification of BHAP analogs to improve metabolic stability and does not report pharmacogenomic effects on delavirdine. |
-| PGx | Gill_2001 | not_relevant | 0 | 0 | The paper discusses saquinavir pharmacokinetics and drug interactions, not the pharmacogenomics of delavirdine. |
-| popPK | Hecht_2015 | irrelevant | 0 | 0 | The paper reports in-vitro cytotoxicity EC50 values for delavirdine against cancer cells, not pharmacokinetic disposition parameters (CL, V, ka, etc.). |
-| PGx | Hesse_2001 | not_relevant | 0 | 0 | The paper reports drug-drug inhibition of CYP2B6 by antiretrovirals, not the effect of a genetic variant on delavirdine PK/PD. |
-| popPK | Huang_2009 | irrelevant | 0 | 0 | The paper investigates the pharmacokinetics of BILR 355, not delavirdine. |
-| popPK | Huang_2015 | irrelevant | 0 | 0 | The study focuses on the design and synthesis of new NNRTIs where delavirdine serves only as a comparative reference for antiviral potency (EC50), containing no pharmacokinetic or disposition data. |
-| PGx | Joly_2000 | not_relevant | 0 | 0 | The text describes general pharmacology, metabolism, and resistance mechanisms for NNRTIs, but does not report any specific pharmacogenomic variant effects on PK or PD parameters for delavirdine. |
-| PGx | Justesen_2003 | not_relevant | 0 | 0 | The paper reports a pharmacokinetic drug-drug interaction between amprenavir and delavirdine, not a pharmacogenomic effect of a gene variant. |
-| PGx | Justesen_2004 | not_relevant | 0 | 0 | The study investigates dose-dependent pharmacokinetics and drug-drug interactions in healthy volunteers but does not assess genetic variants or genotypes. |
-| PGx | Levin_2010 | not_relevant | 0 | 0 | The paper discusses a drug-drug interaction between diltiazem and fentanyl, mentioning delavirdine only as a list item of other CYP3A4 inhibitors, with no pharmacogenomic analysis or data regarding delavirdine. |
-| popPK | Li_2013 | irrelevant | 0 | 0 | The paper is a structure-activity relationship study of novel NNRTIs, and delavirdine is only used as a comparative reference for antiviral efficacy, not for PK analysis. |
-| popPK | Li_2016 | irrelevant | 0 | 0 | This is a medicinal chemistry study on novel NNRTIs where delavirdine is used only as an in-vitro comparator, containing no pharmacokinetic data. |
-| PGx | Li_2021 | not_relevant | 0 | 0 | The study models drug-drug interactions between saxagliptin and delavirdine (CYP3A4 inhibitors/inducers), not pharmacogenomic effects (gene variants). |
-| PGx | Liedtke_2009 | not_relevant | 0 | 0 | The paper reviews warfarin-antiretroviral interactions and mentions delavirdine only as a drug with anticipated but unreported interactions; it does not report pharmacogenomic effects on delavirdine's PK or PD. |
-| popPK | Liu_2014 | irrelevant | 0 | 0 | The study is an in-vitro medicinal chemistry/antiviral efficacy evaluation where delavirdine serves only as a comparator drug, with no pharmacokinetic parameters reported. |
-| popPK | Liu_2023 | irrelevant | 0 | 0 | The study focuses on the mechanism of action (cGAS-STING activation) of 5-azacytidine and cisplatin in lymphoma, where delavirdine is used only as a mechanistic inhibitor of reverse transcriptase, not as the subject of pharmacokinetic analysis. |
-| PGx | Ma_2005 | not_relevant | 0 | 0 | The paper is a review of pharmacokinetic drug interactions, not pharmacogenomic effects of genetic variants. |
-| PGx | Mannu_2011 | not_relevant | 0 | 0 | The paper is a computational docking study on drug-drug interactions (CYP3A4 binding) and does not report pharmacogenomic effects of gene variants on delavirdine PK/PD parameters. |
-| PGx | Michalets_2000 | not_relevant | 0 | 0 | The paper discusses a drug-drug interaction (CYP3A4 inhibition) and makes no mention of genetic variants or pharmacogenomics. |
-| popPK | Ming_2023 | irrelevant | 0 | 0 | The paper describes the design, synthesis, and in-vitro biological activity (EC50/IC50) of novel drug hybrids, containing no pharmacokinetic data for delavirdine. |
-| popPK | Pinna_2001 | irrelevant | 0 | 0 | This is a medicinal chemistry study reporting the synthesis and in-vitro anti-HIV activity of delavirdine analogues, containing no pharmacokinetic data for delavirdine. |
-| PGx | Poppe_1997 | not_relevant | 0 | 0 | The paper describes the antiviral activity and PK of PNU-140690, mentioning delavirdine only as a comparator for resistance, and does not report any pharmacogenomic effects. |
-| popPK | Ribone_2012 | irrelevant | 0 | 0 | The paper is a mechanistic and in-vitro synthesis study where delavirdine serves only as a reference compound for activity comparison, containing no pharmacokinetic data. |
-| PGx | Romero_1996 | not_relevant | 0 | 0 | The paper describes the development of novel NNRTI compounds (AAP-BHAPs) and their activity against HIV-1, not the pharmacokinetics or pharmacodynamics of delavirdine itself, nor any genetic impact on delavirdine. |
-| popPK | Schmith_2019 | irrelevant | 0 | 0 | The study evaluates the QT interval effects of buprenorphine, mentioning delavirdine only in the introduction as part of a reference to a past study. |
-| popPK | Schotland_2018 | irrelevant | 0 | 0 | The paper is a pharmacovigilance study predicting adverse events and does not contain pharmacokinetic data for delavirdine. |
-| PGx | Sharma_2013 | not_relevant | 0 | 0 | The study reports drug-induced PXR activation and CYP3A4 induction, not a pharmacogenomic effect of a host gene variant on the PK or PD of delavirdine. |
-| PGx | Sharma_2015 | not_relevant | 0 | 0 | The paper investigates CAR receptor activation by NNRTIs in vitro but does not report a pharmacogenomic effect of a gene variant on the PK or PD parameters of delavirdine. |
-| popPK | Taylor_2001 | irrelevant | 0 | 0 | The paper is a review of antiretroviral drug concentrations in semen and does not report original quantitative population pharmacokinetic parameters (CL, V, etc.) for delavirdine. |
-| popPK | Tian_2014 | irrelevant | 0 | 0 | The paper is a medicinal chemistry study on novel NNRTIs where delavirdine is used only as a reference comparator for anti-HIV potency (EC50/SI), and no pharmacokinetic parameters for delavirdine are reported. |
-| PGx | Tran_2001 | not_relevant | 0 | 0 | The paper discusses general pharmacokinetics and drug-drug interactions of delavirdine but does not report any pharmacogenomic effects (gene variant impact) on its PK or PD parameters. |
-| popPK | Vanangamudi_2023 | irrelevant | 1 | 0 | The paper is a review of NNRTI design strategies, and delavirdine is mentioned only as a comparator/standard, with no original PK parameter values for it provided. |
-| PGx | Voorman_1998 | not_relevant | 0 | 0 | The paper describes in vitro mechanism-based inactivation of CYP3A by delavirdine in animal and human liver microsomes but does not report any pharmacogenomic study linking gene variants or genotypes to changes in delavirdine's PK or PD parameters in humans. |
-| PGx | Voorman_1998_2 | not_relevant | 2 | 2 | The study characterizes delavirdine metabolism using pooled human liver microsomes and individual samples correlated with CYP3A/2D6 activity, but it does not report a pharmacogenomic effect linked to specific patient genotypes on a clinical PK or PD parameter. |
-| PGx | Voorman_2001 | not_relevant | 0 | 0 | The paper investigates the interaction of delavirdine with CYP enzymes in vitro but does not report on genetic variants or pharmacogenomic effects on pharmacokinetic or pharmacodynamic parameters. |
-| popPK | Wan_2015 | irrelevant | 0 | 0 | The paper is a medicinal chemistry study reporting in vitro antiviral activity (EC50/IC50) and molecular docking for new HIV inhibitors, containing no pharmacokinetic parameters (CL, V, ka, etc.) for delavirdine. |
-| popPK | Wang_2014 | irrelevant | 0 | 0 | The paper is a medicinal chemistry study reporting in vitro antiviral potency (EC50/IC50) of novel compounds, with delavirdine used only as a comparator, and contains no pharmacokinetic parameters. |
-| PGx | Weiss_2007 | not_relevant | 1 | 5 | The paper studies the effect of delavirdine on BCRP transporters (drug-drug interaction potential), not how a gene variant affects delavirdine's PK/PD parameters. |
-| popPK | Witvrouw_2004 | irrelevant | 0 | 0 | The study is an in-vitro virological assessment of drug susceptibility (EC50) and does not report any pharmacokinetic disposition parameters for delavirdine. |
-| popPK | Yang_2013 | irrelevant | 0 | 0 | The paper is a medicinal chemistry study on the synthesis and in vitro antiviral activity of NNRTIs, where delavirdine serves only as a comparator for potency (EC50), with no pharmacokinetic parameters reported. |
-| popPK | Yang_2016 | irrelevant | 0 | 0 | This is a medicinal chemistry study reporting in vitro antiviral activity (EC50) of novel compounds, not a pharmacokinetic study of delavirdine. |
-| popPK | Zhan_2009 | irrelevant | 0 | 0 | The paper is a medicinal chemistry study reporting in vitro biological evaluation (IC50/EC50) of new compounds, with delavirdine used only as a reference inhibitor, and contains no pharmacokinetic data. |
-| popPK | Zhang_2011 | irrelevant | 0 | 0 | The paper is a medicinal chemistry study on HIV-1 RT inhibitors where delavirdine is used only as a reference compound for potency comparison, with no pharmacokinetic data reported. |
-| PGx | Zhou_2004 | not_relevant | 0 | 0 | The paper discusses delavirdine as a CYP3A4 inhibitor but does not report pharmacogenomic effects on its own PK/PD parameters. |
-| PGx | Zhou_2005 | not_relevant | 0 | 0 | The paper is a review on CYP3A4 inhibition mechanisms and drug-drug interactions, not pharmacogenomics (gene variants). |
-| PGx | Zhou_2007 | not_relevant | 0 | 0 | The paper discusses delavirdine as a mechanism-based inhibitor of CYP3A4 but does not report any pharmacogenomic effects (gene variants) on the PK or PD parameters of delavirdine. |
-| PGx | Zhou_2008 | not_relevant | 0 | 0 | The paper is a general review of CYP3A4 drug interactions and lists delavirdine as an inhibitor, but it does not report a pharmacogenomic effect (gene variant impact) on delavirdine's PK or PD parameters. |
-| PGx | von_2001 | not_relevant | 0 | 0 | The paper reports in vitro inhibition of CYP450 enzymes by delavirdine, which is a mechanism of drug-drug interaction, not a pharmacogenomic effect where a specific gene variant changes the PK/PD of the drug. |
+| PGx | Baker_2006 | not_relevant | 0 | 0 | No gene variant/genotype/phenotype is examined; QT effects relate to drug combinations and CYP3A4 inhibition, not pharmacogenomics. |
+| popPK | Chen_2012 | irrelevant | 0 | 0 | Medicinal chemistry/SAR study; delavirdine only appears as a comparator with no PK parameters. |
+| popPK | Chen_2013 | irrelevant | 0 | 0 | Medicinal chemistry paper on new NNRTI analogues; delavirdine is only a reference drug in antiviral assays, with no PK parameters. |
+| popPK | Chen_2016 | irrelevant | 0 | 0 | Medicinal chemistry SAR study; delavirdine is only an activity comparator, no PK parameters reported. |
+| PGx | Davey_1996 | not_relevant | 3 | 2 | Viral genotype/phenotype correlates with antiviral response, not a pharmacokinetic or pharmacodynamic parameter of delavirdine itself. |
+| PGx | Fichtenbaum_2002 | not_relevant | 0 | 0 | Paper discusses drug-drug interactions (CYP inhibition/induction) with delavirdine, not gene variant effects on its PK/PD. |
+| PGx | Genin_1996 | not_relevant | 0 | 0 | Medicinal chemistry SAR study of metabolic stability of analogs; no gene variant/genotype effect on delavirdine PK/PD reported. |
+| PGx | Gill_2001 | not_relevant | 0 | 0 | Paper concerns saquinavir safety; delavirdine mentioned only as a CYP3A4 inhibitor affecting saquinavir levels, with no pharmacogenomic effect on delavirdine PK/PD. |
+| popPK | Grasela_2005 | irrelevant | 0 | 0 | A commentary on model-based drug development with no delavirdine PK data or parameters. |
+| popPK | Hecht_2015 | irrelevant | 0 | 0 | In-vitro cytotoxicity study of NNRTIs; delavirdine only has an EC50 (171 μmol/l), no PK disposition parameters. |
+| PGx | Hesse_2001 | not_relevant | 0 | 0 | Delavirdine is only mentioned as a weak inhibitor of CYP2B6; no gene variant/genotype effect on its PK/PD is reported. |
+| popPK | Huang_2009 | irrelevant | 0 | 0 | The study reports PK of BILR 355, a different drug; delavirdine is not the subject. |
+| popPK | Huang_2015 | irrelevant | 0 | 0 | Delavirdine appears only as an EC50 comparator in an antiviral assay; no PK parameters reported. |
+| PGx | Joly_2000 | not_relevant | 0 | 0 | Review text discusses NNRTI metabolism and resistance mutations but reports no gene variant effect on delavirdine PK/PD parameters. |
+| PGx | Justesen_2003 | not_relevant | 0 | 0 | Reports a drug-drug interaction (amprenavir) on delavirdine PK, with no gene variant/genotype/phenotype effects. |
+| PGx | Justesen_2004 | not_relevant | 0 | 0 | Dose-dependent PK of delavirdine with amprenavir; no gene variant/genotype/phenotype effects reported. |
+| PGx | Levin_2010 | not_relevant | 0 | 0 | Delavirdine only mentioned as a CYP3A4 inhibitor; no gene variant effect on its PK/PD reported. |
+| popPK | Li_2013 | irrelevant | 0 | 0 | Medicinal chemistry/SAR paper; delavirdine is only an activity comparator, no PK parameters reported. |
+| popPK | Li_2016 | irrelevant | 0 | 0 | Medicinal chemistry paper on novel NNRTI synthesis; delavirdine appears only as an EC50 comparator, no PK parameters. |
+| PGx | Li_2021 | not_relevant | 0 | 0 | Delavirdine is a CYP3A4 inhibitor in a DDI study, not a gene variant/genotype/phenotype effect. |
+| PGx | Liedtke_2009 | not_relevant | 0 | 0 | Delavirdine-warfarin interaction is only anticipated; no pharmacogenomic effect on PK/PD parameters reported. |
+| popPK | Liu_2014 | irrelevant | 0 | 0 | Medicinal chemistry/antiviral potency study; delavirdine only an EC50 comparator, no PK parameters. |
+| popPK | Liu_2023 | irrelevant | 0 | 0 | Delavirdine is only used as a reverse transcriptase inhibitor in a mechanistic experiment; no PK parameters for it are reported. |
+| PGx | Ma_2005 | not_relevant | 2 | 0 | Abstract of a review on drug-drug interactions with NNRTIs; no gene variant/genotype effects on delavirdine PK/PD reported. |
+| PGx | Mannu_2011 | not_relevant | 2 | 3 | Computational docking of CYP3A4 binding; no gene variant/genotype effect on delavirdine PK/PD parameters reported. |
+| PGx | Michalets_2000 | not_relevant | 0 | 0 | Delavirdine is mentioned only as a CYP3A4 inhibitor drug interaction with cisapride; no gene variant/genotype effect on delavirdine PK/PD is reported. |
+| popPK | Ming_2023 | irrelevant | 0 | 0 | This is a medicinal chemistry design/synthesis and antiviral activity study with no pharmacokinetic parameters for delavirdine. |
+| popPK | Pinna_2001 | irrelevant | 0 | 0 | This is a medicinal chemistry paper synthesizing delavirdine analogues with anti-HIV cell assays; no PK parameters for delavirdine are reported (only a cited t1/2 of 5.8 h from literature). |
+| PGx | Poppe_1997 | not_relevant | 0 | 0 | Paper concerns PNU-140690 antiviral activity; delavirdine only mentioned as combination partner, no pharmacogenomic PK/PD effects. |
+| popPK | Ribone_2012 | irrelevant | 0 | 0 | This is a medicinal chemistry/SAR study; delavirdine appears only as an activity comparator (EC50), with no PK parameters. |
+| PGx | Romero_1996 | not_relevant | 0 | 0 | Paper describes medicinal chemistry of BHAP analogs against resistant HIV-1 RT; no gene variant effects on delavirdine PK/PD parameters reported. |
+| popPK | Schmith_2019 | irrelevant | 0 | 0 | This is a buprenorphine concentration-QT study; delavirdine is only mentioned as a co-administered CYP inhibitor, with no PK parameters for delavirdine. |
+| popPK | Schotland_2018 | irrelevant | 0 | 0 | This is a pharmacovigilance/adverse-event prediction study with no delavirdine PK parameters; delavirdine is not even mentioned. |
+| PGx | Sharma_2013 | not_relevant | 0 | 0 | In vitro PXR activation study with no gene variant/genotype effects on delavirdine PK/PD parameters. |
+| PGx | Sharma_2015 | not_relevant | 1 | 1 | In vitro CAR receptor activation study; no gene variant effect on delavirdine PK/PD parameters reported. |
+| popPK | Taylor_2001 | irrelevant | 1 | 0 | A review of antiretroviral distribution into semen with no numeric PK parameters for delavirdine. |
+| popPK | Tian_2014 | irrelevant | 0 | 0 | This is a medicinal chemistry/antiviral potency study; delavirdine is only a reference comparator and no PK parameters are reported. |
+| PGx | Tran_2001 | not_relevant | 0 | 0 | Review of delavirdine PK and drug interactions; no gene variant/genotype/phenotype effects on PK/PD reported. |
+| popPK | Vanangamudi_2023 | irrelevant | 2 | 2 | This is a review of NNRTI design; delavirdine is only mentioned as an approved drug with a half-life (1.17 h) cited from literature, not a PK study of delavirdine itself. |
+| PGx | Voorman_1998 | not_relevant | 2 | 3 | In vitro enzyme kinetics of delavirdine metabolism and CYP3A inactivation; no gene variant/genotype effect on PK/PD parameters reported. |
+| PGx | Voorman_1998_2 | not_relevant | 3 | 5 | In vitro enzyme characterization (CYP3A/2D6 correlation and kinetics in microsomes), not a gene variant/genotype effect on in vivo PK/PD parameters. |
+| PGx | Voorman_2001 | not_relevant | 2 | 5 | In vitro enzyme inhibition Ki values for delavirdine on CYPs, not a gene variant/genotype effect on delavirdine PK/PD. |
+| popPK | Wan_2015 | irrelevant | 0 | 0 | Medicinal chemistry paper on novel NNRTI hybrids; delavirdine appears only as an in-vitro potency comparator (EC50), with no PK/disposition parameters. |
+| popPK | Wang_2014 | irrelevant | 0 | 0 | Delavirdine appears only as an EC50 comparator in an anti-HIV potency study; no PK parameters are reported. |
+| PGx | Weiss_2007 | not_relevant | 0 | 0 | In vitro BCRP inhibition by delavirdine; no gene variant/genotype effect on PK/PD parameters reported. |
+| popPK | Witvrouw_2004 | irrelevant | 0 | 0 | In-vitro antiviral susceptibility study (EC50 fold changes), no pharmacokinetic parameters for delavirdine. |
+| popPK | Yang_2013 | irrelevant | 0 | 0 | Medicinal chemistry paper on DAPY derivatives; delavirdine is only a potency comparator, no PK parameters reported. |
+| popPK | Yang_2016 | irrelevant | 0 | 0 | Medicinal chemistry/antiviral potency study; delavirdine is only a reference comparator, no PK parameters reported. |
+| popPK | Zhan_2009 | irrelevant | 0 | 0 | Medicinal chemistry/SAR study with only EC50 potency data; delavirdine is just a reference comparator, no PK parameters. |
+| popPK | Zhang_2011 | irrelevant | 0 | 0 | Delavirdine appears only as a potency comparator (EC50) in an in-vitro drug-discovery study; no PK parameters are reported. |
+| PGx | Zhou_2004 | not_relevant | 2 | 1 | Delavirdine is only mentioned as a CYP3A4 mechanism-based inhibitor; no gene variant effect on its PK/PD parameters is reported. |
+| PGx | Zhou_2005 | not_relevant | 0 | 0 | Delavirdine only mentioned as a CYP3A4 mechanism-based inhibitor; no gene variant/genotype effect on PK/PD parameters reported. |
+| PGx | Zhou_2007 | not_relevant | 0 | 0 | Review of CYP3A4 mechanism-based inhibition; no gene variant/genotype effect on delavirdine PK/PD parameters reported. |
+| PGx | Zhou_2008 | not_relevant | 0 | 0 | Delavirdine is only mentioned as a CYP3A4 inhibitor; no gene variant/genotype effect on its PK/PD parameters is reported. |
+| PGx | von_2001 | not_relevant | 0 | 0 | In vitro CYP inhibition by delavirdine; no gene variant/genotype effect on PK/PD parameters. |
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-10-07 13:34 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-10-07 15:56 UTC</sub>

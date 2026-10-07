@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;J05A&quot;,&quot;href&quot;:&quot;atc/J05A.md&quot;},{&quot;label&quot;:&quot;doravirine&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Doravirine_Thoueille2024_reference&quot;,&quot;label&quot;:&quot;Thoueille_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_doravirine/Doravirine_Thoueille2024_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Doravirine_Thoueille2024_reference&quot;,&quot;label&quot;:&quot;Thoueille_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_doravirine/Doravirine_Thoueille2024_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 # doravirine
 
@@ -27,13 +27,13 @@ Doravirine is an antiviral medicine used to treat HIV infections, acting as a no
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 14:19 | 1:51 | 1/0/0 | 0/0/0 | 0/0/0 | 96,238/6,946 | einfracz / qwen3.8-27b | 3 | 2/1 | 3/0 | 0 |
+| 2026-10-07 16:32 | 1:24 | 1/0/0 | 0/0/0 | 0/0/0 | 96,244/5,268 | ollama / glm-5.3-flash | 3 | 2/1 | 3/0 | 0 |
 
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> | [Thoueille_2024_reference](drugs/drug_doravirine/Doravirine_Thoueille2024_reference.md) | ▶ model + simulator | 1-compartment, oral | 3 (+1 cov.) | Thoueille P et al., Population pharmacokinetic analysis of…, British journal of clinical… (2024) | [10.1111/bcp.15975](https://doi.org/10.1111/bcp.15975) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>caveat: the record defines covariate effects (weight on clearance, renal function …) but the engineer simulated only…</sub><br><sub>STALE — current validate: extracted</sub><br><sub>route_to: `engineer_replication`</sub> | [Thoueille_2024_reference](drugs/drug_doravirine/Doravirine_Thoueille2024_reference.md) | ▶ model + simulator | 1-compartment, oral | 3 (+1 cov.) | Thoueille P et al., Population pharmacokinetic analysis of…, British journal of clinical… (2024) | [10.1111/bcp.15975](https://doi.org/10.1111/bcp.15975) |
 
 ## ADME sites
 
@@ -59,7 +59,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 - **PubMed hits:** 11 matched, 11 returned
 - **screened:** 1  ·  **relevant:** 1
-- **records:** 1  ·  extracted 1  ·  needs_review 0  ·  rejected 0  ·  stale 0
+- **records:** 1  ·  extracted 1  ·  needs_review 0  ·  rejected 0  ·  stale 1
 - **scholar-agent fallback query used:** not captured
 
 ## Full text wanted
@@ -68,23 +68,24 @@ _2 paper(s) judged relevant from the abstract, with no full text on disk — pay
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Yee_2019.pdf` | Yee KL et al., Population Pharmacokinetics of Doraviri…, Antimicrobial agents and ch… (2019) | popPK | 10 | [10.1128/AAC.02502-18](https://doi.org/10.1128/AAC.02502-18) | [30745394](https://pubmed.ncbi.nlm.nih.gov/30745394) | The paper is a definitive population PK study for doravirine, but the abstract provided does not contain specific numeric parameter estimates (CL, V, Q), only model structure and covariate findings. |
-| `Moltó_2022.pdf` | Moltó J et al., Removal of doravirine by haemodialysis…, The Journal of antimicrobia… (2022) | popPK | 6 | [10.1093/jac/dkac126](https://doi.org/10.1093/jac/dkac126) | [35425985](https://pubmed.ncbi.nlm.nih.gov/35425985) | The study measures doravirine plasma concentrations and dialysis extraction in humans but does not report compartmental population-pharmacokinetic parameters (CL, V, etc.). |
+| `Yee_2019.pdf` | Yee KL et al., Population Pharmacokinetics of Doraviri…, Antimicrobial agents and ch… (2019) | popPK | 10 | [10.1128/AAC.02502-18](https://doi.org/10.1128/AAC.02502-18) | [30745394](https://pubmed.ncbi.nlm.nih.gov/30745394) | Population PK model of doravirine in humans, but no numeric parameter values (CL, V, etc.) appear in the evidence provided. |
+| `Fromage_2024.pdf` | Fromage Y et al., In Silico Pharmacokinetics Evaluation o…, Therapeutic drug monitoring (2024) | popPK | 6 | [10.1097/FTD.0000000000001169](https://doi.org/10.1097/FTD.0000000000001169) | [38158596](https://pubmed.ncbi.nlm.nih.gov/38158596) | Simulation study using population PK models for doravirine, but only simulated concentrations are reported; the actual PK parameter values (CL, V, etc.) live in the underlying published models, not in this evidence. |
 
-<sub>queue written 2026-10-07T14:17:37.815232+00:00</sub>
+<sub>queue written 2026-10-07T16:31:27.418290+00:00</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Fromage_2024 | irrelevant | 2 | 1 | The study is an in silico simulation evaluating drug exposure after missed doses, reporting only simulated concentration metrics (C24h, proportion above IC50) rather than population pharmacokinetic parameter estimates (CL, V, Q, ka). |
-| popPK | Li_2022 | irrelevant | 1 | 1 | The paper is a review of HIV reverse transcriptase inhibitors that does not report quantitative pharmacokinetic parameters (CL, V, etc.) for doravirine, only general mentions in the context of drug discovery and clinical trials. |
-| popPK | Moltó_2022 | relevant | 6 | 2 | The study measures doravirine plasma concentrations and dialysis extraction in humans but does not report compartmental population-pharmacokinetic parameters (CL, V, etc.). |
-| popPK | Sun_2024 | irrelevant | 2 | 2 | Doravirine is used solely as a comparator drug, and the provided PK values (half-life, bioavailability) are insufficient for population-pharmacokinetic modeling parameters like clearance or volume. |
-| popPK | Vaddady_2020 | relevant | 7 | 3 | The study describes a population PK model for doravirine, but the specific compartmental parameter values (CL, V, etc.) are in supplemental Table S1 which is not provided; only steady-state exposure metrics (AUC, Cmax, C24) are present in the main text. |
-| popPK | Wang_2019 | irrelevant | 0 | 0 | The study reports in-vitro antiviral potency (EC50) and solubility, not pharmacokinetic parameters for doravirine. |
-| popPK | Wang_2024 | irrelevant | 0 | 0 | The study reports in-vitro metabolic stability and clearance for a novel compound (11h), with doravirine serving only as a reference standard for antiviral potency, providing no population PK parameters for doravirine. |
-| popPK | Yee_2019 | relevant | 10 | 2 | The paper is a definitive population PK study for doravirine, but the abstract provided does not contain specific numeric parameter estimates (CL, V, Q), only model structure and covariate findings. |
+| popPK | Fromage_2024 | relevant | 6 | 3 | Simulation study using population PK models for doravirine, but only simulated concentrations are reported; the actual PK parameter values (CL, V, etc.) live in the underlying published models, not in this evidence. |
+| popPK | Li_2022 | irrelevant | 2 | 1 | This is a review of HIV RT inhibitors; doravirine is discussed qualitatively with no quantitative PK parameters (CL, V, ka, or population-PK model) for doravirine present in the evidence. |
+| popPK | Moltó_2022 | irrelevant | 3 | 4 | This is a dialysis removal study reporting extraction ratio and concentrations, not disposition PK parameters (CL, V, half-life, or a PK model) for doravirine. |
+| popPK | Sun_2024 | irrelevant | 2 | 3 | Doravirine is only a comparator; only T1/2 and F are given (no CL/V/compartmental model), and the PK data appear to be from animal testing of the novel compound. |
+| popPK | Vaddady_2020 | relevant | 8 | 4 | Population PK model for doravirine in humans, but final model parameter values (CL/F, V/F) are in Table S1 of supplemental material not provided; only AUC/C24/Cmax summary values appear. |
+| popPK | Wang_2019 | irrelevant | 0 | 0 | Medicinal chemistry study of doravirine analogs/prodrugs with only potency and solubility data; no PK parameters. |
+| popPK | Wang_2024 | irrelevant | 0 | 0 | Doravirine is only a potency comparator; the paper studies a different drug (compound 11h) with in vitro data, no PK disposition parameters for doravirine. |
+| popPK | Yee_2019 | relevant | 10 | 3 | Population PK model of doravirine in humans, but no numeric parameter values (CL, V, etc.) appear in the evidence provided. |
+| popPK | Zhao_2022 | irrelevant | 3 | 4 | Doravirine is only the comparator/lead scaffold; only F and T1/2 (no CL/V or PK model) are reported for it, with the new analog ZLM-66 as the subject. |
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-10-07 14:17 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-10-07 16:31 UTC</sub>

@@ -1,11 +1,10 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;J05A&quot;,&quot;href&quot;:&quot;atc/J05A.md&quot;},{&quot;label&quot;:&quot;valganciclovir&quot;,&quot;href&quot;:&quot;drugs/drug_valganciclovir/&quot;},{&quot;label&quot;:&quot;Czock_2002 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Valganciclovir_Itohara2025_reference&quot;,&quot;label&quot;:&quot;Itohara_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_valganciclovir/Valganciclovir_Itohara2025_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # valganciclovir — `Valganciclovir_Czock2002_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -15,7 +14,15 @@
 
 **Model:** No model was generated from this record.
 
-> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+### Reviewer guidance
+
+**The paper reports none of the model's key parameters.**
+
+No clearance, volume or rate constant of the model is reported in it. Only the abstract was available, so reported summary statistics stand in for a fitted model. No parameter values were extracted.
+
+<sub>reviewed by rule template (no LLM)</sub>
+
+> ⚠️ **STALE** — review status `rejected` (reviewed 2026-10-07 14:43:02.423759+00:00) predates the upstream re-run (2026-10-07 16:39:42.239422+00:00). Current validate status: `rejected`.
 
 > **Dose compound ≠ measured compound:** dosed `valganciclovir`, measured `ganciclovir`.
 
@@ -24,27 +31,42 @@ Czock D et al., Pharmacokinetics of valganciclovir and…, Clinical pharmacology
   ·  DOI: [10.1067/mcp.2002.126306](https://doi.org/10.1067/mcp.2002.126306)
 
 ## Model component
-<dbs-pgx drug="valganciclovir" model-id="Valganciclovir_Czock2002_reference" status="rejected" stale="false" population="patients with renal impairment, hemodialysis, HIV/CMV-positive, and healthy controls" measured-compound="ganciclovir" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<dbs-pgx drug="valganciclovir" model-id="Valganciclovir_Czock2002_reference" status="rejected" stale="true" population="adults with renal impairment, HIV/CMV-positive patients and healthy subjects" measured-compound="ganciclovir" parameterization="mechanistic" topology="1C"></dbs-pgx>
 
 **Model structure:** 1-compartment; no model was built for this record.  
-**Parameters:** 0 extracted.
+**Parameters:** 4 extracted.
 
 **Parameterization:** mechanistic.
 
 ## Parameters
 > ⚠️ This record is not accepted (current status `rejected`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
 
-_No resolved parameters._
+| label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
+|---|---|---|---|---|---|---|---|---|---|---|
+| bioavailability | `Q40` · Fab | 60 | % | not captured | not captured | not captured | exact (1.0) | Czock_2002:abstract | — | not captured |
+| C(max) | `Q32` · Cmax | 8.5 | microg/mL | not captured | [µg] / [ml] | not captured | llm (0.6) | Czock_2002:abstract, Czock_2002:abstract | — | not captured |
+| T(max) | `Q56` · tmax | 4.3 | hours | 15480.0 | [h] | not captured | llm (0.6) | Czock_2002:abstract, Czock_2002:abstract | — | not captured |
+| t(1/2) | `Q57` · t1/2z | 68.1 | hours | 245159.99999999997 | [h] | not captured | llm (0.6) | Czock_2002:abstract, Czock_2002:abstract | — | not captured |
+
+<details class="legend">
+<summary>Column legend — what each column means</summary>
+<table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>label (paper)</code></td><td>the row or statistic label exactly as printed in the paper (label_verbatim) — never normalised, so it can be found in the PDF.</td></tr><tr><td><code>Q-code · name</code></td><td>the ontology parameter this label was matched to (Q22 = clearance, Q27 = CL/F, Q49 = ka, Q57 = half-life, …) and its canonical name. The Q-code, not the label, is what scoring and cross-paper merging use.</td></tr><tr><td><code>value</code></td><td>the estimate as reported in the paper.</td></tr><tr><td><code>unit</code></td><td>the unit as printed (unit_verbatim).</td></tr><tr><td><code>value_si</code></td><td>the value converted to the canonical unit. Empty when no conversion was possible — usually an unparseable or missing unit.</td></tr><tr><td><code>unit_canonical</code></td><td>the canonical unit for that Q-code, i.e. what value_si is expressed in.</td></tr><tr><td><code>RSE%</code></td><td>relative standard error of the estimate, when the paper reports one.</td></tr><tr><td><code>link</code></td><td>how the label was matched to the Q-code, with confidence. exact / boundary / fuzzy / tv_prefix / caption_compartment / special_case are deterministic string matches; llm, llm_confirmed, llm_corrected involved the model; review and review_gapfill come from the secondary review tier, the latter filling a parameter the primary extraction missed; boundary_relink is a corrected match.</td></tr><tr><td><code>source</code></td><td>where in the paper the number came from: colN = that column of the located table, other_prose = running text, review = the secondary tier, pgx = a pharmacogenomic record.</td></tr><tr><td><code>covariates</code></td><td>covariate effects attached to this parameter (e.g. weight on CL).</td></tr><tr><td><code>IIV</code></td><td>inter-individual variability reported for this parameter.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>the field is absent from the KB artifact — nothing was recorded. This is NOT the same as zero or empty: the value is unknown, not measured to be nothing.</td></tr><tr><td><code>—</code></td><td>deliberately not shown: the column does not apply to this row.</td></tr><tr><td><code>not verified</code></td><td>the record is not in an accepted state (see the badge and the note above the table); the numbers are shown as extracted, not endorsed.</td></tr></tbody></table>
+</details>
 
 ## Departures & gaps
 
 **Interpretation flags:**
+- dropped unlinked row (NIL): 'r' — extend the ontology if this is a real PK parameter (source ['Czock_2002:abstract'])
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=ganciclovir
+- held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
+- template fit: none — noncompartmental model — not a compartmental parent–metabolite model
+- status held at route_to_review — not promoted
+- row roles (LLM): model_class=noncompartmental; 5/5 row label(s) assigned, 0 linked by role; re-tagged ganciclovir→parent ×1
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
 - review gap-fill skipped: this record measures 'ganciclovir', not valganciclovir — the review values are the parent's
 
 **Extraction notes:**
-- no GROBID TEI available — transcribed from abstract in Czock_2002_metadata.yaml (0 record(s)); values are summary statistics, not a fitted model
+- no GROBID TEI available — transcribed from abstract in Czock_2002_metadata.yaml (8 record(s)); values are summary statistics, not a fitted model
 
 ## Validation
 
@@ -52,8 +74,11 @@ _No resolved parameters._
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | fail | not captured | 0 | not captured | not captured | not captured |
+| C0_has_structural_params | pass | not captured | 4 | not captured | not captured | not captured |
 | C0b_disposition_core | fail | not captured | not captured | not captured | not captured | not captured |
+| C5_dimension_Q32 | pass | [mass] / [length] ** 3 | not captured | not captured | not captured | ['Czock_2002:abstract', 'Czock_2002:abstract'] |
+| C5_dimension_Q56 | pass | [time] | not captured | not captured | not captured | ['Czock_2002:abstract', 'Czock_2002:abstract'] |
+| C5_dimension_Q57 | pass | [time] | not captured | not captured | not captured | ['Czock_2002:abstract', 'Czock_2002:abstract'] |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
 
 <details class="legend">
@@ -79,4 +104,4 @@ _No web simulator for this record: its structure has no shared WebAssembly templ
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 14:38 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 16:39 UTC</sub>

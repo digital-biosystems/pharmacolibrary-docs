@@ -17,11 +17,15 @@
 
 **Model:** No model was generated from this record.
 
+> The record describes an Emax model where isradipine dose (mg) inhibits diastolic blood pressure, but the paper excerpts are unavailable to confirm the mechanism or provide specific potency and rate values.
+>
+> <sub>in the paper's terms — summarised by qwen3.8:27b-mtp-q8_0 from the paper's text; not checked by a person</sub>
+
 - **paper:** `Simonsen_1989`
 - **model family:** `emax`
 - **driver:** `dose_only`
-- **tier:** descriptive
-- **effect:** inhibition/proportional
+- **tier:** population
+- **effect:** inhibition/unknown
 
 ## Citation
 Simonsen K et al., Dose-response relationship and incidenc…, The American journal of med… (1989)

@@ -18,7 +18,7 @@ Tilorone is an experimental compound studied as an antiviral and interferon-indu
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 14:32 | 0:49 | 0/0/0 | 0/2/0 | 0/0/0 | 33,425/1,157 | einfracz / qwen3.8-27b | 3 | 1/2 | 3/0 | 0 |
+| 2026-10-07 16:36 | 0:17 | 0/0/0 | 0/1/0 | 0/0/0 | 22,938/910 | ollama / glm-5.3-flash | 3 | 1/2 | 3/0 | 0 |
 
 ## popPK records
 
@@ -28,9 +28,8 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Handrock_1992_sGAG](drugs/drug_tilorone/pd_Handrock_1992_sGAG.md) | lysosomal storage of sulfated glycosaminoglycans ← tilorone · direct sigmoid Emax (Hill) effect | — | Handrock K et al., Lysosomal storage of sulfated glycosami…, Toxicology and applied phar… (1992) | [10.1016/0041-008x(92)90070-9](https://doi.org/10.1016/0041-008x(92)90070-9) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Lüllmann-Rauch_1995_GAG_storage](drugs/drug_tilorone/pd_L_llmann_Rauch_1995_GAG_storage.md) | 35S-GAG storage ← tilorone · stimulation effect | — | Lüllmann-Rauch R et al., Tilorone-induced lysosomal storage of s…, Biochemical pharmacology (1995) | [10.1016/0006-2952(95)00042-x](https://doi.org/10.1016/0006-2952(95)00042-x) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Lüllmann-Rauch_1995_enzyme_release](drugs/drug_tilorone/pd_L_llmann_Rauch_1995_enzyme_release.md) | beta-hexosaminidase release ← tilorone · stimulation effect | — | Lüllmann-Rauch R et al., Tilorone-induced lysosomal storage of s…, Biochemical pharmacology (1995) | [10.1016/0006-2952(95)00042-x](https://doi.org/10.1016/0006-2952(95)00042-x) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Lüllmann-Rauch_1995_35S_GAG_storage](drugs/drug_tilorone/pd_L_llmann_Rauch_1995_35S_GAG_storage.md) | intracellular accumulation of 35S-GAGs ← tilorone · stimulation effect | — | Lüllmann-Rauch R et al., Tilorone-induced lysosomal storage of s…, Biochemical pharmacology (1995) | [10.1016/0006-2952(95)00042-x](https://doi.org/10.1016/0006-2952(95)00042-x) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Lüllmann-Rauch_1995_beta_hexosaminidase_release](drugs/drug_tilorone/pd_L_llmann_Rauch_1995_beta_hexosaminidase_release.md) | release of beta-hexosaminidase (enhanced secretion) ← tilorone · stimulation effect | — | Lüllmann-Rauch R et al., Tilorone-induced lysosomal storage of s…, Biochemical pharmacology (1995) | [10.1016/0006-2952(95)00042-x](https://doi.org/10.1016/0006-2952(95)00042-x) |
 
 <details class="legend">
 <summary>Badge legend — what each badge means</summary>
@@ -49,10 +48,12 @@ _not available_
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Anantpadma_2019 | irrelevant | 0 | 0 | The paper is an in vitro antiviral screening study identifying new Ebola inhibitors; tilorone is used only as a comparator/probe for model validation and no pharmacokinetic parameters are reported. |
-| popPK | Briggs_2008 | irrelevant | 0 | 0 | The paper reports in-vitro pharmacodynamic and receptor binding data for tilorone, not pharmacokinetic disposition parameters. |
-| popPK | Handrock_1992 | irrelevant | 0 | 0 | The study is a cytological and radiochemical investigation of lysosomal storage in vitro, reporting potency (EC50) and threshold concentrations, but it contains no pharmacokinetic disposition parameters (clearance, volume, half-life) for tilorone. |
-| popPK | Lüllmann-Rauch_1995 | irrelevant | 0 | 0 | This is an in-vitro mechanistic study on lysosomal storage side effects in cultured cells, reporting no pharmacokinetic disposition parameters. |
+| popPK | Anantpadma_2019 | irrelevant | 0 | 0 | This is an in vitro antiviral drug-screening/machine-learning study; tilorone is only a test compound with EC50 values, no PK disposition parameters. |
+| popPK | Briggs_2008 | irrelevant | 0 | 0 | In vitro pharmacology study of receptor binding/activation; no PK disposition parameters for tilorone. |
+| popPK | Hamburg_1978 | irrelevant | 0 | 0 | This is a macrophage phagocytosis/interferon-induction study in mice; tilorone is only a co-administered inducer with no PK disposition parameters reported. |
+| popPK | Handrock_1992 | irrelevant | 0 | 0 | In-vitro cell culture study of lysosomal storage with tilorone only as a reference compound; no PK parameters reported. |
+| popPK | Lüllmann-Rauch_1995 | irrelevant | 0 | 0 | In-vitro cell-culture mechanistic study of lysosomal storage with no PK disposition parameters for tilorone. |
+| popPK | Yang_2020 | irrelevant | 0 | 0 | This is an in-vitro antiviral drug screening study; tilorone is only one of 252 screened compounds with EC50 values, and no pharmacokinetic parameters (CL, V, ka, half-life, PK model) are reported. |
 
 ---
 <sub>Generated by `docs.py` (scholarv2)</sub>

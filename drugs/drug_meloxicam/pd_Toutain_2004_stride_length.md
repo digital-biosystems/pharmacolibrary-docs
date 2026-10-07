@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;M01A&quot;,&quot;href&quot;:&quot;atc/M01A.md&quot;},{&quot;label&quot;:&quot;meloxicam&quot;,&quot;href&quot;:&quot;drugs/drug_meloxicam/&quot;},{&quot;label&quot;:&quot;Toutain_2004 \u00b7 PD stride length&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Meloxicam_Lehr2010_reference&quot;,&quot;label&quot;:&quot;Lehr_2010_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_meloxicam/Meloxicam_Lehr2010_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Meloxicam_Aoyama2017_reference&quot;,&quot;label&quot;:&quot;Aoyama_2017_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_meloxicam/Meloxicam_Aoyama2017_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Meloxicam_Lehr2010_reference&quot;,&quot;label&quot;:&quot;Lehr_2010_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_meloxicam/Meloxicam_Lehr2010_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # stride length — PD  <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">horse</span>
@@ -16,15 +16,19 @@
 
 ## What this record describes
 
-**As extracted:** Meloxicam (the dose) drives stride length (in %): direct sigmoid Emax (Hill) effect.
+**As extracted:** Meloxicam (concentrations from the PK model of Aoyama_2017) drives stride length (in %): direct sigmoid Emax (Hill) effect.
 
 **Model:** A model was generated (see the **Models** tab); it has no in-browser simulator.
 
+> Meloxicam administered as a dose (mg/kg) was modeled using a sigmoid Emax function to stimulate stride length (%). The model estimated an Emax of 11.15% and an ED50 of 0.120 mg/kg, with no mechanism or rate constants described in the available excerpts.
+>
+> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+
 - **paper:** `Toutain_2004`
 - **model family:** `sigmoid_emax`
-- **driver:** `dose_only`
+- **driver:** `cited_pk`
 - **tier:** descriptive
-- **effect:** stimulation/unknown
+- **effect:** stimulation/additive
 
 ## Citation
 Toutain PL et al., Pharmacokinetic-pharmacodynamic relatio…, American journal of veterin… (2004)
@@ -33,8 +37,10 @@ Toutain PL et al., Pharmacokinetic-pharmacodynamic relatio…, American journal 
 ## Parameters
 | role | label (paper) | Q-code · name | value | unit | value_si | link | source |
 |---|---|---|---|---|---|---|---|
-| PD (effect) | ED50 | `Q321` · not captured | 0.120 | mg/kg | not captured | llm (not captured) | Toutain_2004:pdv3 |
+| — | median effective dose | `Q100` · not captured | 0.120 | mg/kg | not captured | nil (not captured) | Toutain_2004:pdv3 |
 | PD (effect) | Emax | `Q320` · not captured | 11.15 | % | not captured | llm (not captured) | Toutain_2004:pdv3 |
+| PD (effect) | median effective concentration | `Q321` · not captured | 130 | ng/mL | not captured | llm (not captured) | Toutain_2004:pdv3 |
+| PD (effect) | Hill coefficient | `Q325` · not captured | extremely high | not captured | not captured | exact (not captured) | Toutain_2004:pdv3 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -50,7 +56,7 @@ Toutain PL et al., Pharmacokinetic-pharmacodynamic relatio…, American journal 
 |---|---|---|
 | E0 | 0 | — |
 | Emax | 11.15 % | 0.1115 1 |
-| EC50 | 0.12 mg/kg | 1.2e-07 1 |
+| EC50 | 130 ng/mL | 0.00013 kg/m3 |
 | gamma | 1 | — |
 
 Closed-form check points (response, SI): `at_0` = 0, `at_EC50` = 0.05575, `at_inf` = 0.1115

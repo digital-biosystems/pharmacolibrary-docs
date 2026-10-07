@@ -18,11 +18,17 @@ Tecovirimat is an antiviral medicine used to treat poxvirus infections, includin
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 14:06 | 1:18 | 0/0/0 | 0/0/0 | 0/0/0 | 83,271/838 | einfracz / qwen3.8-27b | 7 | 0/7 | 7/0 | 0 |
+| 2026-10-07 16:24 | 0:39 | 0/0/0 | 1/0/0 | 0/0/0 | 102,495/1,274 | ollama / glm-5.3-flash | 7 | 0/7 | 7/0 | 0 |
 
 ## popPK records
 
 _not available_
+
+## Pharmacodynamics (PD)
+
+| status | detail | about | model | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Luan_2025_EEV_inhibition](drugs/drug_tecovirimat/pd_Luan_2025_EEV_inhibition.md) | Inhibition of EEV production (VACV WR) ← tecovirimat (ST-246) · direct sigmoid Emax (Hill) effect | — | Luan J et al., AI-assisted identification of a novel, Biosafety and health (2025) | [10.1016/j.bsheal.2024.12.002](https://doi.org/10.1016/j.bsheal.2024.12.002) |
 
 ## ADME sites
 
@@ -57,13 +63,17 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Buchholz_2026 | irrelevant | 1 | 0 | The paper is a regulatory review discussing approval strategies and mentions tecovirimat as a case study but contains no quantitative PK parameters or model values. |
-| popPK | Grosenbach_2019 | irrelevant | 0 | 0 | The paper describes in vitro antiviral screening methods and does not report pharmacokinetic parameters for tecovirimat. |
-| popPK | Higashi-Kuwata_2025 | irrelevant | 0 | 0 | The paper reports in-vitro antiviral efficacy (EC50 values) and cytotoxicity, but does not contain any pharmacokinetic data (clearance, volume, half-life) for tecovirimat. |
-| popPK | Luan_2025 | irrelevant | 0 | 0 | The paper is an in-vitro study identifying a new antiviral compound (JCS-2022) and contains no pharmacokinetic data for tecovirimat. |
-| popPK | Sudarmaji_2022 | irrelevant | 0 | 0 | The paper is a systematic review of preclinical efficacy studies (survival, viral load) for monkeypox treatments and vaccines, and does not report quantitative population-pharmacokinetic parameters (CL, V, ka, etc.) for tecovirimat. |
-| popPK | Zhang_2025 | irrelevant | 0 | 0 | The study focuses on the antiviral efficacy and pharmacokinetics of brincidofovir derivatives, with tecovirimat mentioned only as a clinical background/comparator agent. |
-| popPK | Zhang_2026 | irrelevant | 0 | 0 | The paper focuses on the antiviral activity of salinomycin, and tecovirimat is used only as a comparator in combination studies with no PK parameters reported. |
+| popPK | Buchholz_2026 | irrelevant | 3 | 1 | This is a regulatory review discussing tecovirimat as an example; no original quantitative PK parameter values are present in the evidence. |
+| popPK | Chen_2026 | irrelevant | 0 | 0 | This is a medicinal chemistry/SAR study of tecovirimat derivatives (C12), not a PK study of tecovirimat itself; no disposition parameters for tecovirimat are reported. |
+| popPK | Chen_2026_2 | irrelevant | 0 | 0 | This is a narrative review of mpox virology/immunology/vaccines with no PK parameters for tecovirimat. |
+| popPK | Grosenbach_2019 | irrelevant | 0 | 0 | This is an in vitro antiviral screening methods paper with no PK parameters for tecovirimat. |
+| popPK | Higashi-Kuwata_2025 | irrelevant | 0 | 0 | In-vitro antiviral/cytotoxicity study of tecovirimat against MPXV in cell lines; no PK disposition parameters (CL, V, ka, half-life, PK model) reported. |
+| popPK | Luan_2025 | irrelevant | 0 | 0 | In-vitro antiviral drug discovery study of JCS-2022; tecovirimat is only a comparator, with no PK parameters reported. |
+| popPK | Russo_2020 | irrelevant | 0 | 0 | This is an immunogenicity/efficacy study of ACAM2000 vaccine with tecovirimat co-administration in NHPs; no PK parameters (CL, V, ka, half-life, or PK model) for tecovirimat are reported. |
+| popPK | Sudarmaji_2022 | irrelevant | 1 | 1 | Systematic review of monkeypox preclinical efficacy/vaccine studies; no PK disposition parameters (CL, V, ka, half-life) for tecovirimat, only sparse concentration/Tmax mentions without a PK model. |
+| popPK | Xu_2026 | irrelevant | 0 | 0 | This is an antiviral efficacy study of diphyllin with tecovirimat only as a co-administered comparator; no PK parameters (CL, V, ka, half-life, or PK model) for tecovirimat are reported. |
+| popPK | Zhang_2025 | irrelevant | 0 | 0 | This is a drug-discovery study of brincidofovir/HPMPA prodrugs; tecovirimat is only mentioned as a comparator and no PK parameters for it are reported. |
+| popPK | Zhang_2026 | irrelevant | 0 | 0 | Tecovirimat is only a co-administered comparator in an antiviral efficacy/synergy study; no PK parameters for tecovirimat are reported. |
 
 ---
 <sub>Generated by `docs.py` (scholarv2)</sub>

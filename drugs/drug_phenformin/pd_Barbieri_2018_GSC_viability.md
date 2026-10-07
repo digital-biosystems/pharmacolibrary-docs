@@ -15,7 +15,7 @@
 
 ## What this record describes
 
-**As extracted:** Phenformin (measured concentrations) drives GSC viability (in %): direct sigmoid Emax (Hill) effect.
+**As extracted:** Phenformin (measured concentrations) drives GSC viability: direct sigmoid Emax (Hill) effect.
 
 **Model:** No model was generated from this record.
 

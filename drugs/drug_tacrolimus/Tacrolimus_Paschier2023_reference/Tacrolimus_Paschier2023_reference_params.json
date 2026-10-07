@@ -1,0 +1,36 @@
+{
+ "dose_source": "paper",
+ "model_id": "Tacrolimus_Paschier2023_reference",
+ "molar_masses": {
+  "central.C": 0.8040182
+ },
+ "note": "Values for the shared PK_2C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "paper_doses_kind": "discrete",
+ "paper_doses_mg": [
+  5.25
+ ],
+ "parameters": {
+  "Cl": 7.194444444444445e-06,
+  "F": 1.0,
+  "MM": 0.8040182,
+  "Tlag": 0.0,
+  "VdPerKg": 0.0036599999999999996,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 5.25e-06,
+  "ka": 0.0010833333333333333,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 4155.511022044088
+ },
+ "reference_peaks": {
+  "central.C": 1.5140722746030363e-05
+ },
+ "stop_time": 129600.0,
+ "template": "PK_2C_enteral",
+ "template_fmu": "PK_2C_enteral.fmu"
+}

@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;J05A&quot;,&quot;href&quot;:&quot;atc/J05A.md&quot;},{&quot;label&quot;:&quot;didanosine&quot;,&quot;href&quot;:&quot;drugs/drug_didanosine/&quot;},{&quot;label&quot;:&quot;Singhal_1996 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Didanosine_Drusano1992_reference&quot;,&quot;label&quot;:&quot;Drusano_1992_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_didanosine/Didanosine_Drusano1992_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Didanosine_Greenberg2022_reference&quot;,&quot;label&quot;:&quot;Greenberg_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_didanosine/Didanosine_Greenberg2022_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Didanosine_Ngara2020_reference&quot;,&quot;label&quot;:&quot;Ngara_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_didanosine/Didanosine_Ngara2020_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Didanosine_Pai1992_reference&quot;,&quot;label&quot;:&quot;Pai_1992_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_didanosine/Didanosine_Pai1992_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Didanosine_Greenberg2022_reference&quot;,&quot;label&quot;:&quot;Greenberg_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_didanosine/Didanosine_Greenberg2022_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Didanosine_Ngara2020_reference&quot;,&quot;label&quot;:&quot;Ngara_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_didanosine/Didanosine_Ngara2020_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Didanosine_Zhou1999_reference&quot;,&quot;label&quot;:&quot;Zhou_1999_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_didanosine/Didanosine_Zhou1999_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # didanosine — `Didanosine_Singhal1996_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -17,18 +17,26 @@
 
 **Model:** No model was generated from this record.
 
-> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+### Reviewer guidance
 
-> **Dose compound ≠ measured compound:** dosed `2'-beta-fluoro-2',3'-dideoxyinosine and 2'-beta-fluoro-2',3'-dideoxyadenosine`, measured `2'-beta-fluoro-2',3'-dideoxyadenosine`.
+**Only clearance was extracted — no volume; css has no unit.**
+
+A model needs both clearance and volume; without the volume it could only be built on a library default, so it was not. Without a unit the value cannot be converted, so the model cannot use it. Only the abstract was available, so reported summary statistics stand in for a fitted model. None of the extracted parameters is didanosine's own; they describe 2'-beta-fluoro-2',3'-dideoxyadenosine. Extracted — 2'-beta-fluoro-2',3'-dideoxyadenosine: CL 27.3 ml/min/kg, t1/2z 9.8 min, Css 2.9 fold.
+
+<sub>reviewed by rule template (no LLM)</sub>
+
+> ⚠️ **STALE** — review status `needs_review` (reviewed 2026-10-07 14:20:20.578515+00:00) predates the upstream re-run (2026-10-07 16:10:23.673289+00:00). Current validate status: `needs_review`.
+
+> **Dose compound ≠ measured compound:** dosed `F-ddA / F-ddI / ddI`, measured `F-ddI`.
 
 ## Citation
 Singhal D et al., Role of altered metabolism in dideoxynu…, Drug metabolism and disposi… (1996)
 
 ## Model component
-<dbs-pgx drug="didanosine" model-id="Didanosine_Singhal1996_reference" status="needs_review" stale="false" population="rats" measured-compound="2&#39;-beta-fluoro-2&#39;,3&#39;-dideoxyadenosine" parameterization="mechanistic" topology="parent_metabolite"></dbs-pgx>
+<dbs-pgx drug="didanosine" model-id="Didanosine_Singhal1996_reference" status="needs_review" stale="true" population="chronically catheterized rats" measured-compound="F-ddI" parameterization="mechanistic" topology="parent_metabolite"></dbs-pgx>
 
 **Model structure:** parent + metabolite; no model was built for this record.  
-**Parameters:** 3 extracted.
+**Parameters:** 4 extracted.
 
 **Parameterization:** mechanistic.
 
@@ -38,8 +46,9 @@ Singhal D et al., Role of altered metabolism in dideoxynu…, Drug metabolism an
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
 | clearance of F-ddI | `Q22` · CL | 27.3 | ml/min/kg | 3.185e-05 | [ml] / [[min] · [kg]] | not captured | llm_confirmed (0.6) | Singhal_1996:abstract | — | not captured |
+| Metabolic clearance of F-ddA to F-ddI | `Q45` · fm | 58 | % | not captured | [%] | not captured | llm_corrected (0.6) | Singhal_1996:abstract | — | not captured |
 | bioconversion t1/2 | `Q57` · t1/2z | 9.8 | min | 588.0 | [min] | not captured | llm_confirmed (0.6) | Singhal_1996:abstract | — | not captured |
-| higher steady-state plasma concentrations of F-ddA | `Q34` · Css | 2.9 | fold | not captured | [fold] | not captured | llm (0.6) | Singhal_1996:abstract | — | not captured |
+| steady-state plasma concentrations of F-ddA | `Q34` · Css | 2.9 | mg/L | not captured | mg/L | not captured | llm (0.6) | Singhal_1996:abstract | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -50,17 +59,16 @@ Singhal D et al., Role of altered metabolism in dideoxynu…, Drug metabolism an
 
 **Interpretation flags:**
 - dropped duplicate Q22 ('clearance of ddI', value 90.9) — already have one for this compound
-- dropped duplicate Q22 ('total clearance', value 68.5) — already have one for this compound
-- dropped unlinked row (NIL): 'Metabolic clearance of F-ddA to F-ddI' — extend the ontology if this is a real PK parameter (source ['Singhal_1996:abstract'])
+- dropped duplicate Q22 ('total clearance of F-ddA', value 68.5) — already have one for this compound
 - dropped duplicate Q22 ('clearance of F-ddA', value 23.8) — already have one for this compound
-- unit_dimension_unknown: 'fold' (Css)
-- dropped unlinked row (NIL): 'enhancement predicted by a compartmental model' — extend the ontology if this is a real PK parameter (source ['Singhal_1996:abstract'])
-- apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=2'-beta-fluoro-2',3'-dideoxyadenosine
-- held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
-- status held at route_to_review — not promoted
-- molar mass: none found for "2'-beta-fluoro-2',3'-dideoxyadenosine" — its concentrations stay mass-only
+- unit_dimension_unknown: '-fold' (Css)
+- dropped PD-category row 'enhancement predicted by a compartmental model' → Q320 (Emax, category G11) — pharmacodynamic parameters belong to scholarpd, not the PK model (source ['Singhal_1996:abstract'])
+- implicit units: 'steady-state plasma concentrations of F-ddA' → mg/L (from the popPK convention: 'No unit stated in text or captions. Steady-state plasma concentration during IV infusion is conventionally reported in m')
+- apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=F-ddI
+- molar mass: none of 1 PubChem candidate(s) is 'F-ddI' (LLM) — left in mass units
+- molar mass: none found for 'F-ddI' — its concentrations stay mass-only
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
-- review gap-fill skipped: this record measures "2'-beta-fluoro-2',3'-dideoxyadenosine", not didanosine — the review values are the parent's
+- review gap-fill skipped: this record measures 'F-ddI', not didanosine — the review values are the parent's
 
 **Extraction notes:**
 - no GROBID TEI available — transcribed from abstract in Singhal_1996_metadata.yaml (8 record(s)); values are summary statistics, not a fitted model
@@ -71,12 +79,12 @@ Singhal D et al., Role of altered metabolism in dideoxynu…, Drug metabolism an
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 3 | not captured | not captured | not captured |
+| C0_has_structural_params | pass | not captured | 4 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | fail | not captured | not captured | not captured | not captured | not captured |
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Singhal_1996:abstract'] |
+| C5_dimension_Q34 | pass | [mass] / [length] ** 3 | not captured | not captured | not captured | ['Singhal_1996:abstract'] |
 | C5_dimension_Q57 | pass | [time] | not captured | not captured | not captured | ['Singhal_1996:abstract'] |
-| C5_unit_missing_Q34 | fail | [mass] / [length] ** 3 | fold | not captured | not captured | ['Singhal_1996:abstract'] |
 | C6_cl_magnitude | pass | &lt;= 90.0 L/h | 27.3 | not captured | not captured | ['Singhal_1996:abstract'] |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
 | C9_phys_window_Q22 | pass | clearance within physiological range | 115 L/h | not captured | not captured | ['Singhal_1996:abstract'] |
@@ -114,4 +122,4 @@ _No web simulator for this record: its structure has no shared WebAssembly templ
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 13:48 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 16:10 UTC</sub>
