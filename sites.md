@@ -42,6 +42,7 @@ DrugBank's curated actors + a tissue table), downloaded once; nothing is sent an
       <button type="button" role="tab" data-pkstab="body" aria-selected="false">Anatomogram</button>
       <button type="button" role="tab" data-pkstab="shared" aria-selected="false">Shared actors</button>
       <button type="button" role="tab" data-pkstab="table" aria-selected="false">Table view</button>
+      <button type="button" role="tab" data-pkstab="help" aria-selected="false">Help</button>
     </div>
     <div class="pk-tabpanel" role="tabpanel" data-pkspanel="heatmap">
     <div class="pks-heatmap"></div>
@@ -71,25 +72,20 @@ DrugBank's curated actors + a tissue table), downloaded once; nothing is sent an
     <p class="pkq-meta">Every site row of the set: drug, process, tissue, actor, its role and the evidence behind it.</p>
     <div class="pks-scroll pks-table"></div>
     </div>
+    <div class="pk-tabpanel pks-help" role="tabpanel" data-pkspanel="help" hidden>
+    <h3>What is in it</h3>
+    <table>
+      <tr><th>table</th><th>what it holds</th></tr>
+      <tr><td><code>adme_drug</code></td><td>every KB drug with a curated actor, an ADME paragraph or an extracted record (~11k)</td></tr>
+      <tr><td><code>adme_actor</code></td><td>DrugBank enzymes / transporters / carriers / targets with the drug's <b>role</b> (substrate, inhibitor, inducer …); the genes named by the KB's own PGx records, each with the paper it came from (its page here and its DOI)</td></tr>
+      <tr><td><code>adme_site</code></td><td>the actor → process / tissue (UBERON) / cell hand table (~75 ADME genes)</td></tr>
+      <tr><td><code>adme_text</code></td><td>the sites DrugBank's absorption / metabolism / elimination prose states — read by an LLM that tells a site ("3.2 % was exhaled" → lung) from a mere mention ("hepatic impairment does not affect clearance") — the site only, not DrugBank's wording; organ keywords where the paragraph has not been read (<code>pk_knowledge_scripts.adme_text_llm</code>)</td></tr>
+    </table>
+    <h3>Evidence tiers</h3>
+    <p>Strongest first: a curated DrugBank actor mapped through the tissue table (3); a gene a paper's pharmacogenomic record ties to this drug (2); a site the prose states (1). Curated ≠ clinically relevant: DrugBank roles carry no potency and no fraction metabolised, and the tissue of an actor is a property of the protein, not of the paper. An actor the hand table does not know appears in the tables with no tissue and is absent from the maps.</p>
+    <h3>Sharing a comparison</h3>
+    <p>A comparison is a URL: <code>#/sites?drugs=tolvaptan,telmisartan,hydrochlorothiazide</code> opens this page with those drugs selected. The per-drug logic is <code>pk_knowledge_scripts.adme_sites</code>; the database is <code>pk_knowledge_scripts.export.adme_sqlite</code>.</p>
+    </div>
     </div>
   </div>
 </div>
-
-## What is in it
-
-| table | what it holds |
-|---|---|
-| `adme_drug` | every KB drug with a curated actor, an ADME paragraph or an extracted record (~11k) |
-| `adme_actor` | DrugBank enzymes / transporters / carriers / targets with the drug's **role** (substrate, inhibitor, inducer …); the genes named by the KB's own PGx records, each with the paper it came from (its page here and its DOI) |
-| `adme_site` | the actor → process / tissue (UBERON) / cell hand table (~75 ADME genes) |
-| `adme_text` | the sites DrugBank's absorption / metabolism / elimination prose states — read by an LLM that tells a site ("3.2 % was exhaled" → lung) from a mere mention ("hepatic impairment does not affect clearance") — the site only, not DrugBank's wording; organ keywords where the paragraph has not been read (`pk_knowledge_scripts.adme_text_llm`) |
-
-Evidence tiers, strongest first: a curated DrugBank actor mapped through the tissue table (3);
-a gene a paper's pharmacogenomic record ties to this drug (2); a site the prose states (1).
-Curated ≠ clinically relevant: DrugBank roles carry no potency and no fraction metabolised,
-and the tissue of an actor is a property of the protein, not of the paper. An actor the hand
-table does not know appears in the tables with no tissue and is absent from the maps.
-
-A comparison is a URL: `#/sites?drugs=tolvaptan,telmisartan,hydrochlorothiazide` opens this
-page with those drugs selected. The per-drug logic is `pk_knowledge_scripts.adme_sites`; the
-database is `pk_knowledge_scripts.export.adme_sqlite`.

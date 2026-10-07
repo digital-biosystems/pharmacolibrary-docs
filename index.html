@@ -367,6 +367,23 @@
       border-bottom-color: var(--theme-color, #0074d9);
     }
     .markdown-section .pk-tabpanel[hidden] { display: none; }
+    /* Sites page: paper tabs. Unselected tabs are light-grey cards with a rounded top; the
+       selected one is white like the page and merges with its panel (no line between them —
+       its bottom border is the page colour, over the bar's rule). Pure CSS on aria-selected. */
+    .markdown-section .pks-tabs .pk-tabbar {
+      gap: 3px; margin: 14px 0 0; padding: 0 6px; border-bottom: 1px solid #cbd5e1; flex-wrap: wrap; }
+    .markdown-section .pks-tabs .pk-tabbar button {
+      background: #eef0f3; color: #475569; font-size: 14px; padding: 7px 16px;
+      border: 1px solid #cbd5e1; border-bottom: 1px solid #cbd5e1; border-radius: 8px 8px 0 0;
+      margin-bottom: -1px; transition: background .12s, color .12s; }
+    .markdown-section .pks-tabs .pk-tabbar button:hover { background: #e2e6ea; color: #1e293b; }
+    .markdown-section .pks-tabs .pk-tabbar button[aria-selected="true"] {
+      background: var(--pks-page, #fff); color: #1e293b; font-weight: 600;
+      border-bottom-color: var(--pks-page, #fff); }
+    .markdown-section .pks-tabs .pk-tabpanel {
+      border: 1px solid #cbd5e1; border-top: 0; border-radius: 0 0 8px 8px; padding: 14px 16px; }
+    .markdown-section .pks-help table { font-size: 13px; }
+    .markdown-section .pks-help h3 { margin-top: 18px; }
     /* first heading in a panel: the tab bar already provides the separation. The record
        title lives inside the Information panel (the tab bar is the first thing on the page),
        so the h1 loses its top margin too. */
