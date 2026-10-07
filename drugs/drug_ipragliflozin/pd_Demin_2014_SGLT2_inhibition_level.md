@@ -13,7 +13,7 @@
 
 ## What this record describes
 
-**As extracted:** Ipragliflozin (concentrations from the PK model of Saito_2019) drives Inhibition of glucose reabsorption mediated by SGLT2 (in %): direct Emax (saturable) effect.
+**As extracted:** Ipragliflozin (concentrations from the PK model of Saito_2019) drives Inhibition of glucose reabsorption mediated by SGLT2 (in %): direct sigmoid Emax (Hill) effect.
 
 **Model:** No model was generated from this record.
 
@@ -22,7 +22,7 @@
 > <sub>in the paper's terms — summarised by qwen3.8:27b-mtp-q8_0 from the paper's text; not checked by a person</sub>
 
 - **paper:** `Demin_2014`
-- **model family:** `emax`
+- **model family:** `sigmoid_emax`
 - **driver:** `cited_pk`
 - **tier:** descriptive
 - **effect:** inhibition/proportional
@@ -34,7 +34,7 @@ Demin O et al., Analysis of the efficacy of SGLT2 inhib…, Frontiers in pharmac
 ## Parameters
 | role | label (paper) | Q-code · name | value | unit | value_si | link | source |
 |---|---|---|---|---|---|---|---|
-| PD (effect) | Imax | `Q323` · not captured | 1 | not captured | not captured | llm (not captured) | Demin_2014:pdv3 |
+| PD (effect) | Imax | `Q323` · not captured | 1 | 100% | not captured | llm (not captured) | Demin_2014:pdv3 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

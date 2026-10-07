@@ -458,7 +458,7 @@
         - [escherichia coli <sub>(10/0/0)</sub>](drugs/drug_escherichia_coli/)
         - [lactic acid producing organisms <sub>(0/0/0)</sub>](drugs/drug_lactic_acid_producing_organisms/)
         - lactic acid producing organisms combinations <sub>(0/0/0)</sub>
-        - [saccharomyces boulardii <sub>(0/1/0)</sub>](drugs/drug_saccharomyces_boulardii/)
+        - [saccharomyces boulardii <sub>(0/0/0)</sub>](drugs/drug_saccharomyces_boulardii/)
       - [A07X Other Antidiarrheals](atc/A07X.md)
         - [albumin tannate <sub>(0/0/0)</sub>](drugs/drug_albumin_tannate/)
         - albumin tannate combinations <sub>(0/0/0)</sub>
@@ -516,7 +516,7 @@
         - [insulin (human) <sub>(0/3/0)</sub>](drugs/drug_insulin_human/)
         - [insulin icodec <sub>(0/0/0)</sub>](drugs/drug_insulin_icodec/)
         - insulin icodec and semaglutide <sub>(0/0/0)</sub>
-        - [insulin lispro <sub>(0/0/0)</sub>](drugs/drug_insulin_lispro/)
+        - [insulin lispro <sub>(1/0/0)</sub>](drugs/drug_insulin_lispro/)
         - [insulin (pork) <sub>(0/0/0)</sub>](drugs/drug_insulin_pork/)
         - insulins and analogues for injection fast acting a10ab30 <sub>(0/0/0)</sub>
         - insulins and analogues for injection intermediate acting a10ac30 <sub>(0/0/0)</sub>
@@ -550,7 +550,7 @@
         - gemigliptin and rosuvastatin <sub>(0/0/0)</sub>
         - [glibenclamide <sub>(0/1/0)</sub>](drugs/drug_glibenclamide/)
         - [glibornuride <sub>(0/0/0)</sub>](drugs/drug_glibornuride/)
-        - [gliclazide <sub>(1/0/0)</sub>](drugs/drug_gliclazide/)
+        - [gliclazide <sub>(2/0/0)</sub>](drugs/drug_gliclazide/)
         - [glimepiride <sub>(1/2/4)</sub>](drugs/drug_glimepiride/)
         - glimepiride and dapagliflozin <sub>(0/0/0)</sub>
         - glimepiride and pioglitazone <sub>(0/0/0)</sub>
@@ -560,8 +560,8 @@
         - [glisoxepide <sub>(0/0/0)</sub>](drugs/drug_glisoxepide/)
         - [glymidine <sub>(0/0/0)</sub>](drugs/drug_glymidine/)
         - [guar gum <sub>(0/0/0)</sub>](drugs/drug_guar_gum/)
-        - [imeglimin <sub>(0/0/0)</sub>](drugs/drug_imeglimin/)
-        - [ipragliflozin <sub>(0/2/0)</sub>](drugs/drug_ipragliflozin/)
+        - [imeglimin <sub>(1/0/0)</sub>](drugs/drug_imeglimin/)
+        - [ipragliflozin <sub>(0/1/0)</sub>](drugs/drug_ipragliflozin/)
         - [linagliptin <sub>(0/2/0)</sub>](drugs/drug_linagliptin/)
         - linagliptin and empagliflozin <sub>(0/0/0)</sub>
         - [liraglutide <sub>(2/4/0)</sub>](drugs/drug_liraglutide/)
@@ -5616,22 +5616,22 @@
         - chlorcyclizine <sub>(0/0/0)</sub>
         - [chloropyramine <sub>(0/0/0)</sub>](drugs/drug_chloropyramine/)
         - chloropyramine combinations <sub>(0/0/0)</sub>
-        - chlorphenamine <sub>(0/0/0)</sub>
+        - [chlorphenamine <sub>(0/0/0)</sub>](drugs/drug_chlorphenamine/)
         - chlorphenamine combinations <sub>(0/0/0)</sub>
         - [chlorphenoxamine <sub>(0/0/0)</sub>](drugs/drug_chlorphenoxamine/)
         - chlorphenoxamine combinations <sub>(0/0/0)</sub>
         - [clemastine <sub>(0/3/0)</sub>](drugs/drug_clemastine/)
         - clemastine combinations <sub>(0/0/0)</sub>
-        - cyclizine <sub>(0/0/0)</sub>
+        - [cyclizine <sub>(0/0/0)</sub>](drugs/drug_cyclizine/)
         - cyclizine combinations <sub>(0/0/0)</sub>
-        - cyproheptadine <sub>(0/0/0)</sub>
-        - deptropine <sub>(0/0/0)</sub>
-        - desloratadine <sub>(0/0/0)</sub>
-        - dexbrompheniramine <sub>(0/0/0)</sub>
+        - [cyproheptadine <sub>(0/0/0)</sub>](drugs/drug_cyproheptadine/)
+        - [deptropine <sub>(0/0/0)</sub>](drugs/drug_deptropine/)
+        - [desloratadine <sub>(1/1/0)</sub>](drugs/drug_desloratadine/)
+        - [dexbrompheniramine <sub>(0/0/0)</sub>](drugs/drug_dexbrompheniramine/)
         - dexbrompheniramine combinations <sub>(0/0/0)</sub>
-        - dexchlorpheniramine <sub>(0/0/0)</sub>
+        - [dexchlorpheniramine <sub>(0/0/0)</sub>](drugs/drug_dexchlorpheniramine/)
         - dexchlorpheniramine combinations <sub>(0/0/0)</sub>
-        - dimenhydrinate <sub>(0/0/0)</sub>
+        - [dimenhydrinate <sub>(0/2/0)</sub>](drugs/drug_dimenhydrinate/)
         - dimenhydrinate combinations <sub>(0/0/0)</sub>
         - [dimetindene <sub>(0/0/0)</sub>](drugs/drug_dimetindene/)
         - [diphenhydramine <sub>(1/13/0)</sub>](drugs/drug_diphenhydramine/)
@@ -5649,21 +5649,21 @@
         - hydroxyethylpromethazine combinations <sub>(0/0/0)</sub>
         - [isothipendyl <sub>(0/0/0)</sub>](drugs/drug_isothipendyl/)
         - ketotifen <sub>(0/0/0)</sub>
-        - levocetirizine <sub>(0/0/0)</sub>
-        - loratadine <sub>(0/0/0)</sub>
-        - mebhydrolin <sub>(0/0/0)</sub>
-        - meclozine <sub>(0/0/0)</sub>
+        - [levocetirizine <sub>(0/1/0)</sub>](drugs/drug_levocetirizine/)
+        - [loratadine <sub>(0/0/0)</sub>](drugs/drug_loratadine/)
+        - [mebhydrolin <sub>(0/0/0)</sub>](drugs/drug_mebhydrolin/)
+        - [meclozine <sub>(0/0/0)</sub>](drugs/drug_meclozine/)
         - meclozine combinations <sub>(0/0/0)</sub>
         - [mepyramine <sub>(0/4/0)</sub>](drugs/drug_mepyramine/)
-        - mequitazine <sub>(0/0/0)</sub>
-        - methapyrilene <sub>(0/0/0)</sub>
-        - methdilazine <sub>(0/0/0)</sub>
-        - mizolastine <sub>(0/0/0)</sub>
-        - oxatomide <sub>(0/0/0)</sub>
-        - oxomemazine <sub>(0/0/0)</sub>
-        - phenindamine <sub>(0/0/0)</sub>
+        - [mequitazine <sub>(0/1/0)</sub>](drugs/drug_mequitazine/)
+        - [methapyrilene <sub>(0/0/0)</sub>](drugs/drug_methapyrilene/)
+        - [methdilazine <sub>(0/0/0)</sub>](drugs/drug_methdilazine/)
+        - [mizolastine <sub>(1/1/0)</sub>](drugs/drug_mizolastine/)
+        - [oxatomide <sub>(0/0/0)</sub>](drugs/drug_oxatomide/)
+        - [oxomemazine <sub>(0/0/0)</sub>](drugs/drug_oxomemazine/)
+        - [phenindamine <sub>(0/0/0)</sub>](drugs/drug_phenindamine/)
         - [pheniramine <sub>(0/0/0)</sub>](drugs/drug_pheniramine/)
-        - pimethixene <sub>(0/0/0)</sub>
+        - [pimethixene <sub>(0/0/0)</sub>](drugs/drug_pimethixene/)
         - [promethazine <sub>(0/4/0)</sub>](drugs/drug_promethazine/)
         - promethazine combinations <sub>(0/0/0)</sub>
         - pyrrobutamine <sub>(0/0/0)</sub>
@@ -5926,14 +5926,27 @@
         - local anesthetics s01ha30 <sub>(0/0/0)</sub>
         - [oxybuprocaine <sub>(0/0/0)</sub>](drugs/drug_oxybuprocaine/)
         - [procaine <sub>(1/3/0)</sub>](drugs/drug_procaine/)
-        - proxymetacaine <sub>(0/0/0)</sub>
+        - [proxymetacaine <sub>(0/0/0)</sub>](drugs/drug_proxymetacaine/)
         - [tetracaine <sub>(2/4/0)</sub>](drugs/drug_tetracaine/)
+      - [S01J Diagnostic Agents](atc/S01J.md)
+        - [fluorescein <sub>(1/0/0)</sub>](drugs/drug_fluorescein/)
+        - fluorescein combinations <sub>(0/0/0)</sub>
+        - [Rose bengal <sub>(0/0/0)</sub>](drugs/drug_rose_bengal/)
+        - [rose bengal sodium <sub>(0/0/0)</sub>](drugs/drug_rose_bengal_sodium/)
       - [S01K Surgical Aids](atc/S01K.md)
         - [chymotrypsin <sub>(0/0/0)</sub>](drugs/drug_chymotrypsin/)
         - [hyaluronic acid <sub>(1/0/0)</sub>](drugs/drug_hyaluronic_acid/)
         - hyaluronic acid combinations <sub>(0/0/0)</sub>
-        - hypromellose <sub>(0/0/0)</sub>
-        - trypan blue <sub>(0/0/0)</sub>
+        - [hypromellose <sub>(0/0/0)</sub>](drugs/drug_hypromellose/)
+        - [trypan blue <sub>(0/0/0)</sub>](drugs/drug_trypan_blue/)
+      - [S01L Ocular Vascular Disorder Agents](atc/S01L.md)
+        - [abicipar pegol <sub>(0/0/0)</sub>](drugs/drug_abicipar_pegol/)
+        - [anecortave <sub>(0/0/0)</sub>](drugs/drug_anecortave/)
+        - [brolucizumab <sub>(0/0/0)</sub>](drugs/drug_brolucizumab/)
+        - [faricimab <sub>(0/0/0)</sub>](drugs/drug_faricimab/)
+        - [pegaptanib <sub>(0/0/0)</sub>](drugs/drug_pegaptanib/)
+        - [ranibizumab <sub>(3/1/0)</sub>](drugs/drug_ranibizumab/)
+        - [verteporfin <sub>(0/2/0)</sub>](drugs/drug_verteporfin/)
       - [S01X Other Ophthalmologicals](atc/S01X.md)
         - [alteplase <sub>(0/1/0)</sub>](drugs/drug_alteplase/)
         - [alum <sub>(0/0/0)</sub>](drugs/drug_alum/)

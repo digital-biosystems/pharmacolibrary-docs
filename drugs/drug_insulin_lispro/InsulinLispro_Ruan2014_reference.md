@@ -1,10 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A10A&quot;,&quot;href&quot;:&quot;atc/A10A.md&quot;},{&quot;label&quot;:&quot;insulin lispro&quot;,&quot;href&quot;:&quot;drugs/drug_insulin_lispro/&quot;},{&quot;label&quot;:&quot;Ruan_2014 \u00b7 reference&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;InsulinLispro_Tham2017_reference&quot;,&quot;label&quot;:&quot;Tham_2017_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_insulin_lispro/InsulinLispro_Tham2017_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # insulin lispro — `InsulinLispro_Ruan2014_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.25). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.25). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -24,12 +25,14 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 
 <sub>reviewed by rule template (no LLM)</sub>
 
+> ⚠️ **STALE** — review status `needs_review` (reviewed 2026-10-04 23:42:07.684404+00:00) predates the upstream re-run (2026-10-07 21:13:31.698491+00:00). Current validate status: `rejected`.
+
 ## Citation
 Ruan Y et al., Pharmacokinetics of insulin lispro in t…, Computer methods and progra… (2014)
   ·  DOI: [10.1016/j.cmpb.2014.07.004](https://doi.org/10.1016/j.cmpb.2014.07.004)
 
 ## Model component
-<dbs-pgx drug="insulin lispro" model-id="InsulinLispro_Ruan2014_reference" status="needs_review" stale="false" population="adults with type 2 diabetes" measured-compound="insulin_lispro" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<dbs-pgx drug="insulin lispro" model-id="InsulinLispro_Ruan2014_reference" status="rejected" stale="true" population="type 2 diabetes" measured-compound="insulin_lispro" parameterization="mechanistic" topology="1C"></dbs-pgx>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 2 extracted.
@@ -37,12 +40,12 @@ Ruan Y et al., Pharmacokinetics of insulin lispro in t…, Computer methods and 
 **Parameterization:** mechanistic.
 
 ## Parameters
-> ⚠️ This record is not accepted (current status `needs_review`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
+> ⚠️ This record is not accepted (current status `rejected`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| The time-to-peak of lispro absorption (t(max)) | `Q56` · tmax | 109.6 | min | 6576.0 | [min] | not captured | llm_corrected (0.6) | Ruan_2014:abstract | — | not captured |
-| the metabolic clearance rate (MCR(I)) | `Q22` · CL | 1.26 | L/h | 3.5000000000000004e-07 | L/h | not captured | llm_confirmed (0.6) | Ruan_2014:abstract | — | not captured |
+| time-to-peak of lispro absorption (t(max)) | `Q56` · tmax | 109.6 | min | 6576.0 | [min] | not captured | llm_corrected (0.6) | Ruan_2014:abstract | — | not captured |
+| metabolic clearance rate (MCR(I)) | `Q370` · CLfm | 1.26 | L/h | 3.5000000000000004e-07 | L/h | not captured | llm_corrected (0.6) | Ruan_2014:abstract | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -52,8 +55,8 @@ Ruan Y et al., Pharmacokinetics of insulin lispro in t…, Computer methods and 
 ## Departures & gaps
 
 **Interpretation flags:**
-- unit_dimension_unknown: '×10(-2) l/kg/min' (CL)
-- implicit units: 'the metabolic clearance rate (MCR(I))' → L/h (from the popPK convention: 'The parameter is identified as a clearance (Total clearance). In population pharmacokinetics, clearance is conventionall')
+- unit_dimension_unknown: '×10(-2) l/kg/min' (CLfm)
+- implicit units: 'metabolic clearance rate (MCR(I))' → L/h (from the popPK convention: 'Clearance parameters (including formation clearance) are standardly expressed in L/h in population PK studies, and the m')
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=insulin_lispro
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
 - skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
@@ -95,13 +98,10 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
 | C0_has_structural_params | pass | not captured | 2 | not captured | not captured | not captured |
-| C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
-| C0c_disposition_complete | fail | not captured | not captured | not captured | not captured | not captured |
-| C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Ruan_2014:abstract'] |
+| C0b_disposition_core | fail | not captured | not captured | not captured | not captured | not captured |
+| C5_dimension_Q370 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Ruan_2014:abstract'] |
 | C5_dimension_Q56 | pass | [time] | not captured | not captured | not captured | ['Ruan_2014:abstract'] |
-| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 1.26 | not captured | not captured | ['Ruan_2014:abstract'] |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
-| C9_phys_window_Q22 | pass | clearance within physiological range | 1.26 L/h | not captured | not captured | ['Ruan_2014:abstract'] |
 
 <details class="legend">
 <summary>Check legend — what each column means</summary>
@@ -115,19 +115,9 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
-## Downloadable models
+## Models
 
-<div class="pk-models-grid"><div class="pk-models-table">
-<table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-</tbody></table>
-<p>No bundles have been generated for this record yet. When the engineer emits them they appear here automatically — this page reports what is on disk and generates nothing itself.</p>
-</div></div>
+<p>No downloads: this record is <b>rejected</b>, so it is not published as a model. Any archives generated for it before the verdict have been removed — a download outlives the page that explains it.</p>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
@@ -136,4 +126,4 @@ _No web simulator for this record: its structure has no shared WebAssembly templ
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-04 22:31 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 21:13 UTC</sub>

@@ -1,0 +1,33 @@
+{
+ "dose_source": "paper",
+ "model_id": "Ranibizumab_Fidler2020_estimated_value_rse_interval",
+ "note": "Values for the shared PK_1C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "paper_doses_kind": "discrete",
+ "paper_doses_mg": [
+  0.1,
+  0.2
+ ],
+ "parameters": {
+  "Cl": 3.2962962962962966e-07,
+  "F": 1.0,
+  "Tlag": 0.0,
+  "VdPerKg": 0.000394,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 1.0000000000000001e-07,
+  "ka": 1.3888888888888887e-06,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 202259.9999797783
+ },
+ "reference_peaks": {
+  "central.C": 3.1754753818345675e-07
+ },
+ "stop_time": 3024000.0,
+ "template": "PK_1C_enteral",
+ "template_fmu": "PK_1C_enteral.fmu"
+}

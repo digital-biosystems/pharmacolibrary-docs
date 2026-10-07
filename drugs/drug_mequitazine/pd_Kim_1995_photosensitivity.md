@@ -1,7 +1,7 @@
-<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A07F&quot;,&quot;href&quot;:&quot;atc/A07F.md&quot;},{&quot;label&quot;:&quot;saccharomyces boulardii&quot;,&quot;href&quot;:&quot;drugs/drug_saccharomyces_boulardii/&quot;},{&quot;label&quot;:&quot;Pakbin_2023 \u00b7 PD Cell viability&quot;}]"></div>
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;R06A&quot;,&quot;href&quot;:&quot;atc/R06A.md&quot;},{&quot;label&quot;:&quot;mequitazine&quot;,&quot;href&quot;:&quot;drugs/drug_mequitazine/&quot;},{&quot;label&quot;:&quot;Kim_1995 \u00b7 PD photosensitivity&quot;}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# Cell viability — PD  <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">in vitro</span>
+# photosensitivity — PD  <span class="pk-badge pk-badge--green">extracted</span>
 
 <details class="pk-legend"><summary>What the PGx badges mean — evidence, and whether a model runs</summary><table><tbody><tr><td><span class="pk-badge pk-badge--green">quantitative</span></td><td>the paper gives the effect of each phenotype (or genotype) on a named model parameter — a θ per category.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">qualitative</span></td><td>the paper links the gene to the drug but states no effect size on a model parameter, so it changes no model.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">guideline estimate</span></td><td>the effect comes from a CPIC / DPWG dosing guideline, not from this paper's numbers.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">safety allele</span></td><td>a risk allele for an adverse reaction (an HLA type, G6PD deficiency …): it changes no PK/PD parameter.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>the extraction is incomplete or inconsistent.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted.</td></tr><tr><td><span class="pk-badge pk-badge--green">▶ simulatable</span></td><td>the paper's popPK model runs per phenotype in the browser (Simulation tab); its PGx Modelica model is under Models.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">model only</span></td><td>a PGx Modelica model exists but has no in-browser simulator.</td></tr></tbody></table></details>
 
@@ -11,38 +11,24 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
-> **Species: in vitro.** This record comes from an in-vitro study (cells, tissue or microsomes), not from people. The values, the model and its simulation are shown as the paper reports them — they describe that system, not human pharmacology (read from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).
-
 ## What this record describes
 
-**As extracted:** Saccharomyces boulardii supernatant (measured concentrations) drives Cell viability (in %): direct Emax (saturable) effect.
+**As extracted:** Mequitazine (the dose) drives photosensitivity (stimulation; the model form was not identified).
 
 **Model:** No model was generated from this record.
 
-> Saccharomyces boulardii supernatant concentrations inhibit the viability of AGS cells in a dose-dependent manner, with IC50 values of 2266 µg/mL at 24 h and 1956 µg/mL at 48 h. The paper does not specify the underlying pharmacodynamic mechanism (e.g., Emax parameters or effect compartment) beyond describing the dose-dependent reduction in viability.
->
-> <sub>in the paper's terms — summarised by qwen3.8:27b-mtp-q8_0 from the paper's text; not checked by a person</sub>
-
-- **paper:** `Pakbin_2023`
-- **model family:** `emax`
-- **driver:** `conc_no_pk`
+- **paper:** `Kim_1995`
+- **model family:** `unknown`
+- **driver:** `dose_only`
 - **tier:** descriptive
-- **effect:** inhibition/unknown
+- **effect:** stimulation/unknown
 
 ## Citation
-Pakbin B et al., Effects of Probiotic Saccharomyces boul…, International journal of mo… (2023)
-  ·  DOI: [10.3390/ijms24097945](https://doi.org/10.3390/ijms24097945)
+Kim TH et al., Two cases of mequitazine-induced photos…, Photodermatology, photoimmu… (1995)
+  ·  DOI: [10.1111/j.1600-0781.1995.tb00161.x](https://doi.org/10.1111/j.1600-0781.1995.tb00161.x)
 
 ## Parameters
-| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|---|
-| PD (effect) | IC50 (24 h) | `Q322` · not captured | 2266 | µg/mL | not captured | llm (not captured) | Pakbin_2023:pdv3 |
-| PD (effect) | IC50 (48 h) | `Q322` · not captured | 1956 | µg/mL | not captured | llm (not captured) | Pakbin_2023:pdv3 |
-
-<details class="legend">
-<summary>Column legend — what each column means</summary>
-<table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>label (paper)</code></td><td>the row or statistic label exactly as printed in the paper (label_verbatim) — never normalised, so it can be found in the PDF.</td></tr><tr><td><code>Q-code · name</code></td><td>the ontology parameter this label was matched to (Q22 = clearance, Q27 = CL/F, Q49 = ka, Q57 = half-life, …) and its canonical name. The Q-code, not the label, is what scoring and cross-paper merging use.</td></tr><tr><td><code>value</code></td><td>the estimate as reported in the paper.</td></tr><tr><td><code>unit</code></td><td>the unit as printed (unit_verbatim).</td></tr><tr><td><code>value_si</code></td><td>the value converted to the canonical unit. Empty when no conversion was possible — usually an unparseable or missing unit.</td></tr><tr><td><code>link</code></td><td>how the label was matched to the Q-code, with confidence. exact / boundary / fuzzy / tv_prefix / caption_compartment / special_case are deterministic string matches; llm, llm_confirmed, llm_corrected involved the model; review and review_gapfill come from the secondary review tier, the latter filling a parameter the primary extraction missed; boundary_relink is a corrected match.</td></tr><tr><td><code>source</code></td><td>where in the paper the number came from: colN = that column of the located table, other_prose = running text, review = the secondary tier, pgx = a pharmacogenomic record.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>the field is absent from the KB artifact — nothing was recorded. This is NOT the same as zero or empty: the value is unknown, not measured to be nothing.</td></tr><tr><td><code>—</code></td><td>deliberately not shown: the column does not apply to this row.</td></tr><tr><td><code>not verified</code></td><td>the record is not in an accepted state (see the badge and the note above the table); the numbers are shown as extracted, not endorsed.</td></tr></tbody></table>
-</details>
+_No resolved parameters._
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
@@ -68,4 +54,4 @@ _No web simulator for this record: its structure has no shared WebAssembly templ
 <div class="pk-tab-end"></div>
 
 ---
-<sub>← back to [saccharomyces boulardii](drugs/drug_saccharomyces_boulardii/)</sub>
+<sub>← back to [mequitazine](drugs/drug_mequitazine/)</sub>

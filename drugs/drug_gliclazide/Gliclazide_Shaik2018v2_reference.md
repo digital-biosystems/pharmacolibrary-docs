@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A10B&quot;,&quot;href&quot;:&quot;atc/A10B.md&quot;},{&quot;label&quot;:&quot;gliclazide&quot;,&quot;href&quot;:&quot;drugs/drug_gliclazide/&quot;},{&quot;label&quot;:&quot;Shaik_2018_2 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Gliclazide_Mim2023_reference&quot;,&quot;label&quot;:&quot;Mim_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_gliclazide/Gliclazide_Mim2023_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Gliclazide_Mim2023_reference&quot;,&quot;label&quot;:&quot;Mim_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_gliclazide/Gliclazide_Mim2023_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Gliclazide_Rojanasthien2012_reference&quot;,&quot;label&quot;:&quot;Rojanasthien_2012_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_gliclazide/Gliclazide_Rojanasthien2012_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # gliclazide — `Gliclazide_Shaik2018v2_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span> <span class="pk-badge pk-badge--species" title="Animal study (rabbit), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rabbit</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span> <span class="pk-badge pk-badge--species" title="Animal study (rabbit), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rabbit</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -27,12 +27,14 @@ Independently confirmed by `gpt-oss:120b`.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
+> ⚠️ **STALE** — review status `rejected` (reviewed 2026-10-05 01:40:50.776892+00:00) predates the upstream re-run (2026-10-07 21:15:41.777785+00:00). Current validate status: `rejected`.
+
 ## Citation
 Shaik M et al., Population pharmacokinetics of gliclazi…, Biopharmaceutics & drug dis… (2018)
   ·  DOI: [10.1002/bdd.2132](https://doi.org/10.1002/bdd.2132)
 
 ## Model component
-<dbs-pgx drug="gliclazide" model-id="Gliclazide_Shaik2018v2_reference" status="rejected" stale="false" population="normal and diabetic rabbits" measured-compound="gliclazide" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<dbs-pgx drug="gliclazide" model-id="Gliclazide_Shaik2018v2_reference" status="rejected" stale="true" population="normal and diabetic rabbits" measured-compound="gliclazide" parameterization="mechanistic" topology="1C"></dbs-pgx>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.
@@ -50,15 +52,12 @@ _No resolved parameters._
 - table section iiv: 'clearance (CL)' routed out of structural estimates ('The inter-individual variability in gliclazide CL, V and ka was 16.3%, 14.9% and 26.5%, respectively.')
 - table section iiv: 'volume of distribution (V)' routed out of structural estimates ('The inter-individual variability in gliclazide CL, V and ka was 16.3%, 14.9% and 26.5%, respectively.')
 - table section iiv: 'absorption rate constant (ka)' routed out of structural estimates ('The inter-individual variability in gliclazide CL, V and ka was 16.3%, 14.9% and 26.5%, respectively.')
-- table section iiv: 'inter-individual variability in gliclazide CL' routed out of structural estimates ('The inter-individual variability in gliclazide CL, V and ka was 16.3%, 14.9% and 26.5%, respectively.')
-- table section iiv: 'inter-individual variability in gliclazide V' routed out of structural estimates ('The inter-individual variability in gliclazide CL, V and ka was 16.3%, 14.9% and 26.5%, respectively.')
-- table section iiv: 'inter-individual variability in gliclazide ka' routed out of structural estimates ('The inter-individual variability in gliclazide CL, V and ka was 16.3%, 14.9% and 26.5%, respectively.')
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=gliclazide
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
 - review gap-fill skipped: this record carries no value of its own, and a model assembled entirely from other papers is not this paper's model
 
 **Extraction notes:**
-- no GROBID TEI available — transcribed from abstract in Shaik_2018_2_metadata.yaml (6 record(s)); values are summary statistics, not a fitted model
+- no GROBID TEI available — transcribed from abstract in Shaik_2018_2_metadata.yaml (3 record(s)); values are summary statistics, not a fitted model
 
 ## Validation
 
@@ -108,4 +107,4 @@ _No web simulator for this record: its structure has no shared WebAssembly templ
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-05 01:12 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 21:15 UTC</sub>
