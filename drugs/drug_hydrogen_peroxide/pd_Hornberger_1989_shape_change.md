@@ -13,7 +13,7 @@
 
 ## What this record describes
 
-**As extracted:** Hydrogen_peroxide (measured concentrations) drives shape change (in %): direct sigmoid Emax (Hill) effect.
+**As extracted:** Hydrogen Peroxide (measured concentrations) drives shape change (in %): direct sigmoid Emax (Hill) effect.
 
 **Model:** No model was generated from this record.
 
@@ -25,7 +25,7 @@
 - **model family:** `sigmoid_emax`
 - **driver:** `conc_no_pk`
 - **tier:** descriptive
-- **effect:** stimulation/unknown
+- **effect:** stimulation/additive
 
 ## Citation
 Hornberger W et al., Hydrogen peroxide and methyl mercury ar…, Journal of clinical chemist… (1989)

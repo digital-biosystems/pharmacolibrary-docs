@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A02B&quot;,&quot;href&quot;:&quot;atc/A02B.md&quot;},{&quot;label&quot;:&quot;fexuprazan&quot;,&quot;href&quot;:&quot;drugs/drug_fexuprazan/&quot;},{&quot;label&quot;:&quot;Jung_2026 \u00b7 PD intragastric pH&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Fexuprazan_Kim2022_reference&quot;,&quot;label&quot;:&quot;Kim_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_fexuprazan/Fexuprazan_Kim2022_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Kim_2022_pH_4&quot;,&quot;label&quot;:&quot;Kim_2022 \u00b7 pH&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_fexuprazan/pd_Kim_2022_pH_4.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Fexuprazan_Kim2022_reference&quot;,&quot;label&quot;:&quot;Kim_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_fexuprazan/Fexuprazan_Kim2022_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Kim_2022_pH_4&quot;,&quot;label&quot;:&quot;Kim_2022 \u00b7 pH&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_fexuprazan/pd_Kim_2022_pH_4.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # intragastric pH — PD  <span class="pk-badge pk-badge--green">extracted</span>
@@ -14,7 +14,7 @@
 
 ## What this record describes
 
-**As extracted:** Fexuprazan (the dose) drives intragastric pH: indirect response — drug stimulates the production of intragastric pH.
+**As extracted:** Fexuprazan (concentrations from this paper's PK model) drives intragastric pH: indirect response — drug stimulates the production of intragastric pH.
 
 **Model:** No model was generated from this record.
 
@@ -24,9 +24,9 @@
 
 - **paper:** `Jung_2026`
 - **model family:** `indirect_response_iii`
-- **driver:** `dose_only`
+- **driver:** `pk_record`
 - **tier:** population
-- **effect:** stimulation/proportional
+- **effect:** stimulation/additive
 
 ## Citation
 Jung W et al., A Mechanism-Based Multi-Level Populatio…, CPT: pharmacometrics & syst… (2026)
@@ -37,10 +37,10 @@ Jung W et al., A Mechanism-Based Multi-Level Populatio…, CPT: pharmacometrics 
 |---|---|---|---|---|---|---|---|
 | PD (effect) | Kin | `Q327` · not captured | 0.435 | 1/h | not captured | llm (not captured) | Jung_2026:pdv3 |
 | PD (effect) | Base | `Q324` · not captured | 1.090 | not captured | not captured | llm (not captured) | Jung_2026:pdv3 |
-| PD (effect) | pHMax | `Q320` · not captured | 5.570 | not captured | not captured | llm (not captured) | Jung_2026:pdv3 |
+| — | pHMax | `Q100` · not captured | 5.570 | not captured | not captured | nil (not captured) | Jung_2026:pdv3 |
 | — | AMP | `Q100` · not captured | 0.704 | not captured | not captured | nil (not captured) | Jung_2026:pdv3 |
-| — | S d | `Q100` · not captured | 0.693 | 1/mg | not captured | nil (not captured) | Jung_2026:pdv3 |
-| PD (effect) | Slope d | `Q335` · not captured | 0.572 | not captured | not captured | boundary (not captured) | Jung_2026:pdv3 |
+| PD (effect) | S d | `Q335` · not captured | 0.693 | 1/mg | not captured | llm (not captured) | Jung_2026:pdv3 |
+| PD (effect) | Sloped | `Q335` · not captured | 0.572 | not captured | not captured | fuzzy (not captured) | Jung_2026:pdv3 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

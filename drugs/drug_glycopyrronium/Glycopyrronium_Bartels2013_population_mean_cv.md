@@ -25,7 +25,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the val
 
 <sub>reviewed by glm-5.3-flash</sub>
 
-> ⚠️ **STALE** — review status `model_quarantined` (reviewed 2026-09-28 14:38:08.637517+00:00) predates the upstream re-run (2026-10-04 12:28:26.085892+00:00). Current validate status: `extracted`.
+> ⚠️ **STALE** — review status `model_quarantined` (reviewed 2026-09-28 14:38:08.637517+00:00) predates the upstream re-run (2026-10-07 19:32:01.517625+00:00). Current validate status: `extracted`.
 
 ## Citation
 Bartels C et al., Determination of the pharmacokinetics o…, British journal of clinical… (2013)
@@ -60,7 +60,7 @@ Bartels C et al., Determination of the pharmacokinetics o…, British journal of
 | label (paper) | Q-code | value | link |
 |---|---|---|---|
 | Fast lung absorption half-life | Q59 | not captured | llm_corrected |
-| GI tract absorption half-life | Q95 | not captured | llm_corrected |
+| Slow lung absorption half-life | Q95 | not captured | llm_corrected |
 
 ## Departures & gaps
 
@@ -69,18 +69,18 @@ Bartels C et al., Determination of the pharmacokinetics o…, British journal of
 
 **Interpretation flags:**
 - dropped unlinked row (NIL): 'Parameter related to fraction of dose with slow absorption' — extend the ontology if this is a real PK parameter (source ['Bartels_2013_table_p6_1:row7:col3', 'Bartels_2013_table_p6_1:row7:col4'])
-- dropped unlinked row (NIL): 'Parameter related to fraction of dose with intermediate absorption' — extend the ontology if this is a real PK parameter (source ['Bartels_2013_table_p6_1:row8:col3', 'Bartels_2013_table_p6_1:row8:col4'])
+- dropped duplicate Q40 ('Parameter related to fraction of dose with intermediate absorption', value '0.734') — already have one for this compound
 - dropped duplicate Q49 ('Intermediate lung absorption rate', value '1.54') — already have one for this compound
 - dropped duplicate Q49 ('GI tract absorption rate', value '0.34') — already have one for this compound
-- dropped duplicate Q57 ('Slow lung absorption half-life', value None) — already have one for this compound
+- dropped duplicate Q57 ('GI tract absorption half-life', value None) — already have one for this compound
 - dropped unlinked row (NIL): '0' — extend the ontology if this is a real PK parameter (source ['Bartels_2013_table_2:row21:col1'])
-- implicit units: 'Systemic clearance' → L/h (from the popPK convention: 'Systemic clearance (CL) is conventionally expressed in L/h in population PK studies. The value 44.9 is consistent with t')
-- implicit units: 'Volume of central plasma compartment' → L (from the popPK convention: 'Volume of distribution (V1) is conventionally expressed in L. The value 11.3 is consistent with a central plasma volume.')
-- implicit units: 'Intercompartmental clearance' → L/h (from the popPK convention: 'Intercompartmental clearance (Q) is conventionally expressed in L/h. The value 8.23 is consistent with this unit.')
-- implicit units: 'Volume of peripheral PK compartment' → L (from the popPK convention: 'Volume of distribution (V2) is conventionally expressed in L. The value 71.5 is consistent with a peripheral volume.')
-- implicit units: 'Slow lung absorption rate' → 1/h (from the popPK convention: 'Absorption rate constant (kabs) is a first-order rate constant, conventionally expressed in 1/h. The value 0.009 is cons')
-- implicit units: 'Volume of distribution at steady state ‡' → L (from the popPK convention: 'Volume of distribution at steady state (Vss) is conventionally expressed in L. The value 102 is consistent with this uni')
-- implicit units: 'Intermediate lung absorption half-life' → h (from the popPK convention: 'Half-life (t1/2) is conventionally expressed in hours (h). The value 0.45 is consistent with a short half-life for an in')
+- implicit units: 'Systemic clearance' → L/h (from the popPK convention: 'Standard unit for systemic clearance in population PK studies; magnitude 44.9 is consistent with L/h.')
+- implicit units: 'Volume of central plasma compartment' → L (from the popPK convention: 'Standard unit for volume of distribution in population PK studies; magnitude 11.3 is consistent with L.')
+- implicit units: 'Intercompartmental clearance' → L/h (from the popPK convention: 'Standard unit for intercompartmental clearance in population PK studies; magnitude 8.23 is consistent with L/h.')
+- implicit units: 'Volume of peripheral PK compartment' → L (from the popPK convention: 'Standard unit for volume of distribution in population PK studies; magnitude 71.5 is consistent with L.')
+- implicit units: 'Slow lung absorption rate' → 1/h (from the popPK convention: 'Standard unit for first-order rate constants in population PK studies; magnitude 0.009 is consistent with 1/h (half-life')
+- implicit units: 'Volume of distribution at steady state ‡' → L (from the popPK convention: 'Standard unit for volume of distribution at steady state in population PK studies; magnitude 102 is consistent with L.')
+- implicit units: 'Intermediate lung absorption half-life' → h (from the popPK convention: 'Standard unit for half-lives in population PK studies; magnitude 0.45 is consistent with hours.')
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=glycopyrronium
 - population split: 'population mean (%cv)' subgroup of Bartels_2013 (paper reports 3 populations: model-based, noncompartmental, population mean (%cv))
 - skipped review gap-fill of TLAG: primary's parameterization (rate-constant / ka-only) does not use it
@@ -171,8 +171,8 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_glycopyrronium/Glycopyrronium_Bartels2013_population_mean_cv/Glycopyrronium_Bartels2013_population_mean_cv_modelica.zip" download>Glycopyrronium_Bartels2013_population_mean_cv_modelica.zip</a> <span class="pk-size">(5.0 kB)</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_glycopyrronium/Glycopyrronium_Bartels2013_population_mean_cv/Glycopyrronium_Bartels2013_population_mean_cv_modelica.zip" download>Glycopyrronium_Bartels2013_population_mean_cv_modelica.zip</a> <span class="pk-size">(5.3 kB)</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_glycopyrronium/Glycopyrronium_Bartels2013_population_mean_cv/Glycopyrronium_Bartels2013_population_mean_cv_fmi.zip" download>Glycopyrronium_Bartels2013_population_mean_cv_fmi.zip</a> <span class="pk-size">(4.4 kB)</span><br><a href="models/fmu/PK_2C_enteral.fmu" download>PK_2C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_glycopyrronium/Glycopyrronium_Bartels2013_population_mean_cv/Glycopyrronium_Bartels2013_population_mean_cv_matlab.zip" download>Glycopyrronium_Bartels2013_population_mean_cv_matlab.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_glycopyrronium/Glycopyrronium_Bartels2013_population_mean_cv/Glycopyrronium_Bartels2013_population_mean_cv_matlab_simbio.zip" download>Glycopyrronium_Bartels2013_population_mean_cv_matlab_simbio.zip</a> <span class="pk-size">(2.8 kB)</span></td></tr>
 <tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_glycopyrronium/Glycopyrronium_Bartels2013_population_mean_cv/Glycopyrronium_Bartels2013_population_mean_cv_sbml.zip" download>Glycopyrronium_Bartels2013_population_mean_cv_sbml.zip</a> <span class="pk-size">(2.7 kB)</span></td></tr>
@@ -193,4 +193,4 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-04 12:28 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 19:32 UTC</sub>

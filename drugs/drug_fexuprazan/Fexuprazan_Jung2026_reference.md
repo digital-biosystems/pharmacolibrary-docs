@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A02B&quot;,&quot;href&quot;:&quot;atc/A02B.md&quot;},{&quot;label&quot;:&quot;fexuprazan&quot;,&quot;href&quot;:&quot;drugs/drug_fexuprazan/&quot;},{&quot;label&quot;:&quot;Jung_2026 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Fexuprazan_Kim2022_reference&quot;,&quot;label&quot;:&quot;Kim_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_fexuprazan/Fexuprazan_Kim2022_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Kim_2022_pH_4&quot;,&quot;label&quot;:&quot;Kim_2022 \u00b7 pH&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_fexuprazan/pd_Kim_2022_pH_4.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Fexuprazan_Kim2022_reference&quot;,&quot;label&quot;:&quot;Kim_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_fexuprazan/Fexuprazan_Kim2022_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Kim_2022_pH_4&quot;,&quot;label&quot;:&quot;Kim_2022 \u00b7 pH&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_fexuprazan/pd_Kim_2022_pH_4.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -23,16 +23,16 @@ Nothing in the extracted data describes the drug's disposition, so there is no m
 
 <sub>reviewed by rule template (no LLM)</sub>
 
-> ⚠️ **STALE** — review status `rejected` (reviewed 2026-09-28 14:38:00.392570+00:00) predates the upstream re-run (2026-10-04 09:15:50.200616+00:00). Current validate status: `rejected`.
+> ⚠️ **STALE** — review status `rejected` (reviewed 2026-09-28 14:38:00.392570+00:00) predates the upstream re-run (2026-10-07 19:28:09.422664+00:00). Current validate status: `rejected`.
 
 ## Citation
 Jung W et al., A Mechanism-Based Multi-Level Populatio…, CPT: pharmacometrics & syst… (2026)
   ·  DOI: [10.1002/psp4.70181](https://doi.org/10.1002/psp4.70181)
 
 ## Model component
-<dbs-pgx drug="fexuprazan" model-id="Fexuprazan_Jung2026_reference" status="rejected" stale="true" population="healthy adults" measured-compound="fexuprazan" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<dbs-pgx drug="fexuprazan" model-id="Fexuprazan_Jung2026_reference" status="rejected" stale="true" population="healthy adults" measured-compound="fexuprazan" parameterization="mechanistic" topology="general_linear"></dbs-pgx>
 
-**Model structure:** 1-compartment; no model was built for this record.  
+**Model structure:** general linear; no model was built for this record.  
 **Parameters:** 0 extracted.
 
 **Parameterization:** mechanistic.
@@ -40,31 +40,37 @@ Jung W et al., A Mechanism-Based Multi-Level Populatio…, CPT: pharmacometrics 
 ## Parameters
 > ⚠️ This record is not accepted (current status `rejected`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
 
-_No resolved parameters._
+| label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
+|---|---|---|---|---|---|---|---|---|---|---|
+| 4 | `Q900` · equation variable | 1.090 | unit | not captured | [unit] | not captured | llm (0.6) | psp470181-tbl-0002:row4:col2 | — | not captured |
+
+<details class="legend">
+<summary>Column legend — what each column means</summary>
+<table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>label (paper)</code></td><td>the row or statistic label exactly as printed in the paper (label_verbatim) — never normalised, so it can be found in the PDF.</td></tr><tr><td><code>Q-code · name</code></td><td>the ontology parameter this label was matched to (Q22 = clearance, Q27 = CL/F, Q49 = ka, Q57 = half-life, …) and its canonical name. The Q-code, not the label, is what scoring and cross-paper merging use.</td></tr><tr><td><code>value</code></td><td>the estimate as reported in the paper.</td></tr><tr><td><code>unit</code></td><td>the unit as printed (unit_verbatim).</td></tr><tr><td><code>value_si</code></td><td>the value converted to the canonical unit. Empty when no conversion was possible — usually an unparseable or missing unit.</td></tr><tr><td><code>unit_canonical</code></td><td>the canonical unit for that Q-code, i.e. what value_si is expressed in.</td></tr><tr><td><code>RSE%</code></td><td>relative standard error of the estimate, when the paper reports one.</td></tr><tr><td><code>link</code></td><td>how the label was matched to the Q-code, with confidence. exact / boundary / fuzzy / tv_prefix / caption_compartment / special_case are deterministic string matches; llm, llm_confirmed, llm_corrected involved the model; review and review_gapfill come from the secondary review tier, the latter filling a parameter the primary extraction missed; boundary_relink is a corrected match.</td></tr><tr><td><code>source</code></td><td>where in the paper the number came from: colN = that column of the located table, other_prose = running text, review = the secondary tier, pgx = a pharmacogenomic record.</td></tr><tr><td><code>covariates</code></td><td>covariate effects attached to this parameter (e.g. weight on CL).</td></tr><tr><td><code>IIV</code></td><td>inter-individual variability reported for this parameter.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>the field is absent from the KB artifact — nothing was recorded. This is NOT the same as zero or empty: the value is unknown, not measured to be nothing.</td></tr><tr><td><code>—</code></td><td>deliberately not shown: the column does not apply to this row.</td></tr><tr><td><code>not verified</code></td><td>the record is not in an accepted state (see the badge and the note above the table); the numbers are shown as extracted, not endorsed.</td></tr></tbody></table>
+</details>
 
 ## Departures & gaps
 
 **Interpretation flags:**
 - column 'no.' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
 - column 'parameter (unit)' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
-- routed 'Error' → Q317 (add_error) to residual_error — variability estimate, not a structural parameter
+- dropped unlinked row (NIL): 'Error' — extend the ontology if this is a real PK parameter (source ['psp470181-tbl-0002:row1:col1', 'psp470181-tbl-0002:row1:col3'])
 - dropped unlinked row (NIL): '2' — extend the ontology if this is a real PK parameter (source ['psp470181-tbl-0002:row2:col2'])
 - dropped unlinked row (NIL): 'Physio' — extend the ontology if this is a real PK parameter (source ['psp470181-tbl-0002:row3:col1', 'psp470181-tbl-0002:row3:col2', 'psp470181-tbl-0002:row3:col3'])
-- dropped unlinked row (NIL): '4' — extend the ontology if this is a real PK parameter (source ['psp470181-tbl-0002:row4:col2'])
 - dropped unlinked row (NIL): '5' — extend the ontology if this is a real PK parameter (source ['psp470181-tbl-0002:row5:col2'])
 - dropped unlinked row (NIL): '6' — extend the ontology if this is a real PK parameter (source ['psp470181-tbl-0002:row6:col1', 'psp470181-tbl-0002:row6:col2'])
-- dropped unlinked row (NIL): '7' — extend the ontology if this is a real PK parameter (source ['psp470181-tbl-0002:row7:col2'])
-- dropped unlinked row (NIL): 'Feed' — extend the ontology if this is a real PK parameter (source ['psp470181-tbl-0002:row8:col1', 'psp470181-tbl-0002:row8:col3'])
-- dropped unlinked row (NIL): '9' — extend the ontology if this is a real PK parameter (source ['psp470181-tbl-0002:row9:col2'])
+- dropped duplicate Q900 ('7', value '0.704') — already have one for this compound
+- dropped duplicate Q900 ('Feed', value '4.080') — already have one for this compound
+- dropped duplicate Q900 ('9', value '2.660') — already have one for this compound
 - dropped unlinked row (NIL): 'Drug' — extend the ontology if this is a real PK parameter (source ['psp470181-tbl-0002:row10:col1', 'psp470181-tbl-0002:row10:col2', 'psp470181-tbl-0002:row10:col3'])
-- dropped unlinked row (NIL): '11' — extend the ontology if this is a real PK parameter (source ['psp470181-tbl-0002:row11:col1', 'psp470181-tbl-0002:row11:col2'])
+- dropped duplicate Q900 ('11', value '98.700') — already have one for this compound
 - dropped unlinked row (NIL): '12' — extend the ontology if this is a real PK parameter (source ['psp470181-tbl-0002:row12:col2'])
 - dropped unlinked row (NIL): 'Effect' — extend the ontology if this is a real PK parameter (source ['psp470181-tbl-0002:row13:col1', 'psp470181-tbl-0002:row13:col3'])
-- dropped unlinked row (NIL): '14' — extend the ontology if this is a real PK parameter (source ['psp470181-tbl-0002:row14:col2'])
+- dropped duplicate Q900 ('14', value '1') — already have one for this compound
 - dropped unlinked row (NIL): '15' — extend the ontology if this is a real PK parameter (source ['psp470181-tbl-0002:row15:col1', 'psp470181-tbl-0002:row15:col2'])
 - dropped unlinked row (NIL): '16' — extend the ontology if this is a real PK parameter (source ['psp470181-tbl-0002:row16:col2'])
-- table mostly unlinked (15/16 table-cell rows NIL) — likely the wrong table was located, not 1 genuinely-missing ontology parameter(s); route_to_review instead of building a model from the residual linked cell(s)
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=fexuprazan
+- topology: transfer parameter unlinked (Q100) — add Kfm/formation-rate/rate-constant to the ontology; routing to review
 - status held at route_to_review — not promoted
 - review gap-fill skipped: this record carries no value of its own, and a model assembled entirely from other papers is not this paper's model
 
@@ -92,7 +98,7 @@ _No resolved parameters._
 |---|---|---|---|---|---|---|
 | C0_has_structural_params | fail | not captured | 0 | not captured | not captured | not captured |
 | C0b_disposition_core | fail | not captured | not captured | not captured | not captured | not captured |
-| C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
+| C8_topology | fail | ontology-linked transfer parameter on every edge | ['Sdrug'] | not captured | not captured | not captured |
 
 <details class="legend">
 <summary>Check legend — what each column means</summary>
@@ -117,4 +123,4 @@ _No web simulator for this record: its structure has no shared WebAssembly templ
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-04 09:15 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 19:28 UTC</sub>

@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A06A&quot;,&quot;href&quot;:&quot;atc/A06A.md&quot;},{&quot;label&quot;:&quot;magnesium sulfate&quot;,&quot;href&quot;:&quot;drugs/drug_magnesium_sulfate/&quot;},{&quot;label&quot;:&quot;Brookfield_2021 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;MagnesiumSulfate_Deng2024_reference&quot;,&quot;label&quot;:&quot;Deng_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_magnesium_sulfate/MagnesiumSulfate_Deng2024_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;MagnesiumSulfate_da2020_reference&quot;,&quot;label&quot;:&quot;da_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_magnesium_sulfate/MagnesiumSulfate_da2020_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Lu_2002_DBP&quot;,&quot;label&quot;:&quot;Lu_2002 \u00b7 DBP&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_magnesium_sulfate/pd_Lu_2002_DBP.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Lu_2002_SBP&quot;,&quot;label&quot;:&quot;Lu_2002 \u00b7 SBP&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_magnesium_sulfate/pd_Lu_2002_SBP.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;MagnesiumSulfate_Chuan2001_reference&quot;,&quot;label&quot;:&quot;Chuan_2001_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_magnesium_sulfate/MagnesiumSulfate_Chuan2001_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # magnesium sulfate — `MagnesiumSulfate_Brookfield2021_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.444). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.444). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -13,7 +13,7 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
-**Model:** No model was generated from this record.
+**Model:** A model was built but held back: a core parameter had no value, so it is not published or simulated.
 
 ### Reviewer guidance
 
@@ -25,6 +25,8 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which m
 
 <sub>reviewed by rule template (no LLM)</sub>
 
+> ⚠️ **STALE** — review status `rejected` (reviewed 2026-10-04 17:46:26.901869+00:00) predates the upstream re-run (2026-10-07 19:45:51.304343+00:00). Current validate status: `extracted`.
+
 > **Dose compound ≠ measured compound:** dosed `magnesium sulfate`, measured `magnesium`.
 
 ## Citation
@@ -32,20 +34,25 @@ Brookfield K et al., Magnesium sulfate pharmacokinetics afte…, AJOG global rep
   ·  DOI: [10.1016/j.xagr.2021.100018](https://doi.org/10.1016/j.xagr.2021.100018)
 
 ## Model component
-<dbs-pgx drug="magnesium sulfate" model-id="MagnesiumSulfate_Brookfield2021_reference" status="rejected" stale="false" population="women with severe preeclampsia" measured-compound="magnesium" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<dbs-pgx drug="magnesium sulfate" model-id="MagnesiumSulfate_Brookfield2021_reference" status="extracted" stale="true" population="women with severe preeclampsia" measured-compound="magnesium" parameterization="mechanistic" topology="2C"></dbs-pgx>
 
-**Model structure:** 1-compartment; no model was built for this record.  
-**Parameters:** 2 extracted.
+**Model structure:** 2-compartment, oral mammillary model — template `PK_2C_enteral`.  
+**Parameters:** 6 extracted, plus 3 covariate effects.
 
 **Parameterization:** mechanistic.
 
 ## Parameters
-> ⚠️ This record is not accepted (current status `rejected`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
-
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| absorption rate constant | `Q49` · kabs | 0.32 | 1/h | 8.888888888888889e-05 | 1/h | not captured | exact (1.0) | Brookfield_2021:abstract, Brookfield_2021:abstract | — | not captured |
-| absolute bioavailability | `Q40` · Fab | 0.86 | not captured | not captured | not captured | not captured | exact (1.0) | Brookfield_2021:abstract, Brookfield_2021:abstract | — | not captured |
+| CL (L/h) | `Q22` · CL | 3.52 | L/h | 9.777777777777778e-07 | [l] / [h] | 2.9 | exact (1.0) | tbl0002:row1:col1, tbl0002:row1:col2 | — | not captured |
+| Vc (L) | `Q63` · V1 | 16.9 | L | 0.0169 | [l] | 2.8 | exact (1.0) | tbl0002:row2:col1, tbl0002:row2:col2 | — | not captured |
+| Q (L/h) | `Q30` · Q | 3.62 | L/h | 1.0055555555555558e-06 | [l] / [h] | 18.9 | exact (1.0) | tbl0002:row3:col1, tbl0002:row3:col2 | — | not captured |
+| Vp (L) | `Q64` · V2 | 14.3 | L | 0.0143 | [l] | 4.6 | exact (1.0) | tbl0002:row4:col1, tbl0002:row4:col2 | — | not captured |
+| Ka (hr−1) | `Q49` · kabs | 0.451 | hr−1 | 0.00012527777777777778 | [1] / [h] | 21.1 | exact (1.0) | tbl0002:row5:col1, tbl0002:row5:col2 | — | not captured |
+| F | `Q40` · Fab | 0.91 | not captured | not captured | not captured | not captured | exact (1.0) | tbl0002:row6:col1 | — | not captured |
+| theta_q319_wt_power | `Q900` · theta_q319_wt_power | 0.75 | not captured | not captured | not captured | not captured | not captured (not captured) | tbl0002:row7:col1 | — | not captured |
+| theta_q319_wt_power | `Q900` · theta_q319_wt_power | 1 | not captured | not captured | not captured | not captured | not captured (not captured) | tbl0002:row8:col1 | — | not captured |
+| theta_q1_creatinine_power | `Q900` · theta_q1_creatinine_power | -0.73 | not captured | not captured | not captured | 15.5 | not captured (not captured) | tbl0002:row9:col1, tbl0002:row9:col2 | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -55,12 +62,15 @@ Brookfield K et al., Magnesium sulfate pharmacokinetics afte…, AJOG global rep
 ## Departures & gaps
 
 **Interpretation flags:**
-- implicit units: 'absorption rate constant' → 1/h (from the popPK convention: 'Absorption rate constants (ka) are first-order rate constants, which are conventionally expressed in reciprocal time uni')
+- table section residual_error: 'Proportional (CV%)' routed out of structural estimates ('Residual error')
+- table section residual_error: 'Additive (mg/L)' routed out of structural estimates ('Residual error')
+- covariate effect for Q319 has no base parameter row (kept as unattached equation-variable)
+- covariate effect for Q1 has no base parameter row (kept as unattached equation-variable)
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=magnesium
-- abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
+- review gap-fill skipped: this record measures 'magnesium', not magnesium_sulfate — the review values are the parent's
 
 **Extraction notes:**
-- no GROBID TEI available — transcribed from abstract in Brookfield_2021_metadata.yaml (4 record(s)); values are summary statistics, not a fitted model
+- LLM selected parameter table(s) 2
 
 ## Validation
 
@@ -93,10 +103,19 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 2 | not captured | not captured | not captured |
-| C0b_disposition_core | fail | not captured | not captured | not captured | not captured | not captured |
-| C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['Brookfield_2021:abstract', 'Brookfield_2021:abstract'] |
+| C0_has_structural_params | pass | not captured | 6 | not captured | not captured | not captured |
+| C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
+| C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
+| C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['tbl0002:row1:col1', 'tbl0002:row1:col2'] |
+| C5_dimension_Q30 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['tbl0002:row3:col1', 'tbl0002:row3:col2'] |
+| C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['tbl0002:row5:col1', 'tbl0002:row5:col2'] |
+| C5_dimension_Q63 | pass | [length] ** 3 | not captured | not captured | not captured | ['tbl0002:row2:col1', 'tbl0002:row2:col2'] |
+| C5_dimension_Q64 | pass | [length] ** 3 | not captured | not captured | not captured | ['tbl0002:row4:col1', 'tbl0002:row4:col2'] |
+| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 3.52 | not captured | not captured | ['tbl0002:row1:col1', 'tbl0002:row1:col2'] |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
+| C9_phys_window_Q22 | pass | clearance within physiological range | 3.52 L/h | not captured | not captured | ['tbl0002:row1:col1', 'tbl0002:row1:col2'] |
+| C9_phys_window_Q63 | pass | volume within physiological range | 16.9 L | not captured | not captured | ['tbl0002:row2:col1', 'tbl0002:row2:col2'] |
+| C9_phys_window_Q64 | pass | volume within physiological range | 14.3 L | not captured | not captured | ['tbl0002:row4:col1', 'tbl0002:row4:col2'] |
 
 <details class="legend">
 <summary>Check legend — what each column means</summary>
@@ -110,9 +129,19 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
-## Models
+## Downloadable models
 
-<p>No downloads: this record is <b>rejected</b>, so it is not published as a model. Any archives generated for it before the verdict have been removed — a download outlives the page that explains it.</p>
+<div class="pk-models-grid"><div class="pk-models-table">
+<table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_magnesium_sulfate/MagnesiumSulfate_Brookfield2021_reference/MagnesiumSulfate_Brookfield2021_reference_matlab.zip" download>MagnesiumSulfate_Brookfield2021_reference_matlab.zip</a> <span class="pk-size">(3.3 kB)</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_magnesium_sulfate/MagnesiumSulfate_Brookfield2021_reference/MagnesiumSulfate_Brookfield2021_reference_matlab_simbio.zip" download>MagnesiumSulfate_Brookfield2021_reference_matlab_simbio.zip</a> <span class="pk-size">(2.7 kB)</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_magnesium_sulfate/MagnesiumSulfate_Brookfield2021_reference/MagnesiumSulfate_Brookfield2021_reference_sbml.zip" download>MagnesiumSulfate_Brookfield2021_reference_sbml.zip</a> <span class="pk-size">(2.6 kB)</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_magnesium_sulfate/MagnesiumSulfate_Brookfield2021_reference/MagnesiumSulfate_Brookfield2021_reference_cellml.zip" download>MagnesiumSulfate_Brookfield2021_reference_cellml.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
+</tbody></table>
+<p>Each archive holds the model source, a script that simulates it against the appropriate library, and a README describing both and how to run them.</p>
+</div></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
@@ -121,4 +150,4 @@ _No web simulator for this record: its structure has no shared WebAssembly templ
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-04 16:11 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 19:45 UTC</sub>

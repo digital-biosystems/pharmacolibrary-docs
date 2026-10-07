@@ -1,0 +1,33 @@
+{
+ "dose_source": "paper",
+ "model_id": "Ramucirumab_OBrien2017_reference",
+ "note": "Values for the shared PK_2C.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "paper_doses_kind": "discrete",
+ "paper_doses_mg": [
+  560.0,
+  700.0
+ ],
+ "parameters": {
+  "Cl": 4.111111111111111e-09,
+  "F": 1.0,
+  "VdPerKg": 4.657142857142857e-05,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 0.00056,
+  "k12": 8.691206543967281e-07,
+  "k21": 1.388888888888889e-06,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 660.0000000662083
+ },
+ "reference_peaks": {
+  "central.C": 0.1587416716062698
+ },
+ "stop_time": 3024000.0,
+ "template": "PK_2C",
+ "template_fmu": "PK_2C.fmu"
+}
