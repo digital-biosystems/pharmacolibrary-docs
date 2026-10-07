@@ -318,18 +318,19 @@
   // substrate of (perpetrators), ⇢ the drugs this one affects (victims). Each code wears the
   // drug's own colour — the same swatch that names it in the row header, the chips and the
   // organ slots — so the reader never has to hover to learn which drug the ring points at.
-  // Inside an affected cell: one dot per perpetrator at THIS site, in the perpetrator's
-  // colour — filled when it inhibits the actor, hollow when it induces it — so the ring says
-  // "affected" and the dots say by whom, at the tissue where it happens (tolvaptan's
-  // intestinal cell shows Te + Ci, allopurinol's only Te).
+  // Inside an affected cell: one dot per perpetrator at THIS site, filled in the
+  // perpetrator's colour, carrying the action — ⊣ inhibits the actor, ↑ induces it — so the
+  // ring says "affected" and the dots say by whom and how, at the tissue where it happens
+  // (tolvaptan's intestinal cell shows Te + Ci, allopurinol's only Te).
   function perpDots(M, aff) {
     if (!aff.length) return '';
     var slugs = M.drugs.map(function (z) { return z.slug; }), seen = {}, dots = [];
     aff.forEach(function (a) {
-      var k = a.perpetrator + (a.effect.indexOf('inducer') >= 0 ? '|ind' : '|inh');
+      var ind = a.effect.indexOf('inducer') >= 0;
+      var k = a.perpetrator + (ind ? '|ind' : '|inh');
       if (seen[k]) return; seen[k] = 1;
       var col = COLORS[slugs.indexOf(a.perpetrator)];
-      dots.push('<i class="' + (a.effect.indexOf('inducer') >= 0 ? 'ind' : 'inh') + '" style="' + (a.effect.indexOf('inducer') >= 0 ? 'border-color:' : 'background:') + col + '" title="' + esc(nameOf(M, a.perpetrator) + ' ' + a.effect + ' ' + a.actor) + '"></i>');
+      dots.push('<i class="' + (ind ? 'ind' : 'inh') + '" style="background:' + col + '" title="' + esc(nameOf(M, a.perpetrator) + ' ' + a.effect + ' ' + a.actor) + '">' + (ind ? '↑' : '⊣') + '</i>');
     });
     return '<span class="pks-dots">' + dots.join('') + '</span>';
   }
