@@ -1,10 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C07A&quot;,&quot;href&quot;:&quot;atc/C07A.md&quot;},{&quot;label&quot;:&quot;carvedilol&quot;,&quot;href&quot;:&quot;drugs/drug_carvedilol/&quot;},{&quot;label&quot;:&quot;Albers_2008 \u00b7 reference&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Carvedilol_McTavish1993_reference&quot;,&quot;label&quot;:&quot;McTavish_1993_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_carvedilol/Carvedilol_McTavish1993_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Carvedilol_Nikolic2013_reference&quot;,&quot;label&quot;:&quot;Nikolic_2013_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_carvedilol/Carvedilol_Nikolic2013_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Carvedilol_Yamamoto2024_final&quot;,&quot;label&quot;:&quot;Yamamoto_2024_final&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_carvedilol/Carvedilol_Yamamoto2024_final.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Carvedilol_Yamamoto2024_final_s_carvedilol_final_model_estim&quot;,&quot;label&quot;:&quot;Yamamoto_2024_final_s_carvedilol_final_model_estimate_rse&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_carvedilol/Carvedilol_Yamamoto2024_final_s_carvedilol_final_model_estim.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # carvedilol — `Carvedilol_Albers2008_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.909). The first reading is what the record holds.">cross-check: partial</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -20,16 +21,18 @@
 
 In the Albers_2008 paediatric congestive heart failure model, kabs is listed with unit 'l h -1', which does not match a rate constant's dimension of inverse time; the reported unit could not be converted to SI, so the parameter reached the record without an SI value. A second reader gave 2.67 for this parameter instead of the recorded 0.62, disagreeing with the extracted value. The other parameters (CL/F 37.6 l h-1, V2/F 21.8 l, V3/F 103.7 l, Q/F 13.6 l h-1, tlag 0.15 h) show no stated problems. Extracted — carvedilol: CL/F 37.6 l h -1, V2/F 21.8 l, V3/F 104 l, Q/F 13.6 l h -1, kabs 0.62 l h -1, tlag 0.15 h.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of q7: this record has none, the second reading 2.67. That field does not shape the model.
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has carvedilol, the second reading unknown; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by glm-5.3-flash</sub>
+
+> ⚠️ **STALE** — review status `rejected` (reviewed 2026-10-05 09:24:48.287533+00:00) predates the upstream re-run (2026-10-07 00:32:44.202288+00:00). Current validate status: `rejected`.
 
 ## Citation
 Albers S et al., Population pharmacokinetics and dose si…, British journal of clinical… (2008)
   ·  DOI: [10.1111/j.1365-2125.2007.03046.x](https://doi.org/10.1111/j.1365-2125.2007.03046.x)
 
 ## Model component
-<dbs-pgx drug="carvedilol" model-id="Carvedilol_Albers2008_reference" status="rejected" stale="false" population="paediatric patients with congestive heart failure" measured-compound="carvedilol" parameterization="apparent" topology="1C"></dbs-pgx>
+<dbs-pgx drug="carvedilol" model-id="Carvedilol_Albers2008_reference" status="rejected" stale="true" population="paediatric patients with congestive heart failure" measured-compound="carvedilol" parameterization="apparent" topology="1C"></dbs-pgx>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 6 extracted.
@@ -57,16 +60,11 @@ Albers S et al., Population pharmacokinetics and dose si…, British journal of 
 
 **Interpretation flags:**
 - unit_dimension_mismatch: 'KA (l h -1 )' → Q49 (unit '[length] ** 3 / [time]' vs ontology '1 / [time]') — route to review
-- dropped value-less row: 'q7'
-- dropped value-less row: 'q8'
-- dropped value-less row: 'CL'
-- dropped value-less row: 'KA'
-- dropped value-less row: 'Q'
-- dropped value-less row: 'TLAG'
-- dropped value-less row: 'V2'
-- dropped value-less row: 'V3'
+- dropped unlinked row (NIL): 'q7' — extend the ontology if this is a real PK parameter (source ['tab_2:row14:col1', 'tab_2:row14:col2'])
+- dropped unlinked row (NIL): 'q8' — extend the ontology if this is a real PK parameter (source ['tab_2:row16:col1', 'tab_2:row16:col2'])
 - apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=carvedilol
 - held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
+- structure disagreement: deterministic 1C vs LLM 3C — review compartment count
 - status held at route_to_review — not promoted
 
 **Extraction notes:**
@@ -78,22 +76,28 @@ Albers S et al., Population pharmacokinetics and dose si…, British journal of 
 - unparsed cell tab_2:row12:col3 = '0.11, 0.19'
 - unparsed cell tab_2:row14:col3 = '2.44, 2.82'
 - unparsed cell tab_2:row16:col3 = '-0.17, -0.04'
+- LLM selected parameter table(s) 2
 - LLM region Albers_2008:discussion_prose: no JSON records returned
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | partly confirmed | 0.909 (10/11 fields) | 1 |
+| `gpt-oss:120b` | not confirmed | 0.5 (6/12 fields) | 6 |
 
-<details><summary>1 field(s) a reader read differently</summary>
+<details><summary>6 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `parameters[q7]` | not captured | 2.67 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[cl/f].value` | 37.6 | 38.1 | mismatch |
+| `gpt-oss:120b` | `parameters[f]` | not captured | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[q7]` | not captured | 2.70 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[v3/f].value` | 103.7 | 96.5 | mismatch |
+| `gpt-oss:120b` | `screen.dose_compound` | carvedilol | unknown | mismatch |
+| `gpt-oss:120b` | `screen.primary_analyte` | carvedilol | unknown | mismatch |
 
 </details>
 
@@ -144,4 +148,4 @@ _No web simulator for this record: its structure has no shared WebAssembly templ
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-07-15 10:53 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 00:32 UTC</sub>

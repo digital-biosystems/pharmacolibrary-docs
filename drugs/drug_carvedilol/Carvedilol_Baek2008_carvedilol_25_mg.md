@@ -1,10 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C07A&quot;,&quot;href&quot;:&quot;atc/C07A.md&quot;},{&quot;label&quot;:&quot;carvedilol&quot;,&quot;href&quot;:&quot;drugs/drug_carvedilol/&quot;},{&quot;label&quot;:&quot;Baek_2008 \u00b7 carvedilol_25_mg&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Carvedilol_McTavish1993_reference&quot;,&quot;label&quot;:&quot;McTavish_1993_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_carvedilol/Carvedilol_McTavish1993_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Carvedilol_Nikolic2013_reference&quot;,&quot;label&quot;:&quot;Nikolic_2013_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_carvedilol/Carvedilol_Nikolic2013_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Carvedilol_Yamamoto2024_final&quot;,&quot;label&quot;:&quot;Yamamoto_2024_final&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_carvedilol/Carvedilol_Yamamoto2024_final.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Carvedilol_Yamamoto2024_final_s_carvedilol_final_model_estim&quot;,&quot;label&quot;:&quot;Yamamoto_2024_final_s_carvedilol_final_model_estimate_rse&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_carvedilol/Carvedilol_Yamamoto2024_final_s_carvedilol_final_model_estim.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # carvedilol — `Carvedilol_Baek2008_carvedilol_25_mg`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.25). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.875). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -20,19 +21,21 @@
 
 Without a unit the value cannot be converted, so the model cannot use it. A reported unit could not be converted (AUCt, Cmax and t1/2ka ), so that value has no SI equivalent. Extracted — carvedilol: AUCt 283 ng*h/mL, Cmax 62.7 ng/mL, tmax 1.26 h, V/F 1.56e+03 L, CL 94.6 L/h, kel 4.45 1/h, t1/2ka 0.6 h$^{-1}$, t1/2z 0.68 h.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on how the model is parameterised: this record has apparent, the second reading mechanistic; it also differs on 8 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on `parameters[k$_{a}$].parameter_id`: this record has Q95, the second reading Q49; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
+
+> ⚠️ **STALE** — review status `needs_review` (reviewed 2026-10-05 09:24:48.316721+00:00) predates the upstream re-run (2026-10-07 00:32:51.546029+00:00). Current validate status: `needs_review`.
 
 ## Citation
 Baek IH et al., Pharmacokinetic/pharmacodynamic modelin…, Archives of pharmacal resea… (2008)
   ·  DOI: [10.1007/s12272-001-1231-4](https://doi.org/10.1007/s12272-001-1231-4)
 
 ## Model component
-<dbs-pgx drug="carvedilol" model-id="Carvedilol_Baek2008_carvedilol_25_mg" status="needs_review" stale="false" population="healthy adults" measured-compound="carvedilol" parameterization="apparent" topology="1C"></dbs-pgx>
+<dbs-pgx drug="carvedilol" model-id="Carvedilol_Baek2008_carvedilol_25_mg" status="needs_review" stale="true" population="healthy adults" measured-compound="carvedilol" parameterization="apparent" topology="1C"></dbs-pgx>
 
 **Model structure:** 1-compartment; no model was built for this record.  
-**Parameters:** 8 extracted.
+**Parameters:** 10 extracted.
 
 **Parameterization:** V/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
@@ -48,7 +51,9 @@ Baek IH et al., Pharmacokinetic/pharmacodynamic modelin…, Archives of pharmaca
 | Clearance (L/h) | `Q22` · CL | 94.64 | L/h | 2.628888888888889e-05 | [l] / [h] | not captured | exact (1.0) | Baek_2008_table_2:row5:col2 | — | not captured |
 | K$_{el}$ (h$^{-1}$) | `Q47` · kel | 4.45 | 1/h | 0.0012361111111111112 | 1/h | not captured | llm (0.6) | Baek_2008_table_3:row0:col2 | — | not captured |
 | K$_{a}$ (h$^{-1}$) | `Q95` · t1/2ka | 0.60 | h$^{-1}$ | not captured | [$] · [h$] | not captured | llm (0.6) | Baek_2008_table_3:row1:col2 | — | not captured |
-| T$_{1/2}$ (h) | `Q57` · t1/2z | 0.68 | h | 2448.0 | [h] | not captured | llm (0.6) | Baek_2008_table_3:row4:col2 | — | not captured |
+| K$_{cp}$ (h$^{-1}$) | `Q410` · Kp | 4.52 | h$^{-1}$ | not captured | [$] · [h$] | not captured | llm (0.6) | Baek_2008_table_3:row2:col2 | — | not captured |
+| T$_{1/α}$ (h) | `Q59` · t1/2α | 0.68 | h | 2448.0 | [h] | not captured | llm (0.6) | Baek_2008_table_3:row4:col2 | — | not captured |
+| T$_{1/β}$ (h) | `Q60` · t1/2β | 15.84 | h | 57024.0 | [h] | not captured | llm (0.6) | Baek_2008_table_3:row5:col2 | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -61,14 +66,14 @@ Baek IH et al., Pharmacokinetic/pharmacodynamic modelin…, Archives of pharmaca
 - unit_dimension_unknown: 'ng h/mL' (AUCt)
 - unit_dimension_unknown: 'h$^{-1}$' (kel)
 - unit_dimension_unknown: 'h$^{-1}$' (t1/2ka )
-- dropped unlinked row (NIL): 'K$_{sp}$ (h$^{-1}$)' — extend the ontology if this is a real PK parameter (source ['Baek_2008_table_3:row2:col2'])
+- unit_dimension_unknown: 'h$^{-1}$' (Kp)
 - dropped unlinked row (NIL): 'K$_{pc}$ (h$^{-1}$)' — extend the ontology if this is a real PK parameter (source ['Baek_2008_table_3:row3:col2'])
-- dropped duplicate Q57 ('T$_{1/2e}$ (h)', value '15.84') — already have one for this compound
-- implicit units: 'AUC$_{0-30hr}$ (ng h/mL)' → ng*h/mL (from the paper text: "Table II caption and content list 'AUC 0-30hr (ng•h/mL)' for Carvedilol. The value 282.55 corresponds to the Carvedilol ")
+- implicit units: 'AUC$_{0-30hr}$ (ng h/mL)' → ng*h/mL (from the paper text: "Table II caption and content list 'AUC 0-30hr (ng•h/mL)' for Carvedilol. The parameter in question is AUC$_{0-30hr}$, an")
 - implicit units: 'K$_{el}$ (h$^{-1}$)' → 1/h (from the paper text: "The text states: 'The terminal elimination rate constant (K el ) was calculated by least square regression... and the T ")
 - implicit units: 'K$_{a}$ (h$^{-1}$)' — the LLM proposed '1/h', whose dimension does not fit Q95; left unset
 - apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=carvedilol
 - held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
+- structure disagreement: deterministic 1C vs LLM 2C — review compartment count
 - status held at route_to_review — not promoted
 - population split: 'carvedilol (25 mg)' subgroup of Baek_2008 (paper reports 2 populations: atenolol (50 mg), carvedilol (25 mg))
 - skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
@@ -85,21 +90,14 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.25 (3/12 fields) | 9 |
+| `gpt-oss:120b` | not confirmed | 0.875 (14/16 fields) | 2 |
 
-<details><summary>9 field(s) a reader read differently</summary>
+<details><summary>2 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `model.parameterization` | apparent | mechanistic | mismatch |
-| `gpt-oss:120b` | `parameters[auc$_{0-30hr}$]` | 282.55 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[c$_{max}$]` | 62.74 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[clearance].value` | 94.64 | 218.15 | mismatch |
-| `gpt-oss:120b` | `parameters[k$_{a}$]` | 0.60 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[k$_{el}$]` | 4.45 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[t$_{1/2}$]` | 0.68 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[t$_{max}$]` | 1.26 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[volume/f]` | 1561.78 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[k$_{a}$].parameter_id` | Q95 | Q49 | mismatch |
+| `gpt-oss:120b` | `parameters[k$_{cp}$].parameter_id` | Q410 | Q301 | mismatch |
 
 </details>
 
@@ -113,7 +111,7 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 8 | not captured | not captured | not captured |
+| C0_has_structural_params | pass | not captured | 10 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
 | C5_dimension_Q19 | pass | [mass] * [time] / [length] ** 3 | not captured | not captured | not captured | ['Baek_2008_table_2:row1:col2'] |
@@ -121,7 +119,8 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 | C5_dimension_Q32 | pass | [mass] / [length] ** 3 | not captured | not captured | not captured | ['Baek_2008_table_2:row2:col2'] |
 | C5_dimension_Q47 | pass | 1 / [time] | not captured | not captured | not captured | ['Baek_2008_table_3:row0:col2'] |
 | C5_dimension_Q56 | pass | [time] | not captured | not captured | not captured | ['Baek_2008_table_2:row3:col2'] |
-| C5_dimension_Q57 | pass | [time] | not captured | not captured | not captured | ['Baek_2008_table_3:row4:col2'] |
+| C5_dimension_Q59 | pass | [time] | not captured | not captured | not captured | ['Baek_2008_table_3:row4:col2'] |
+| C5_dimension_Q60 | pass | [time] | not captured | not captured | not captured | ['Baek_2008_table_3:row5:col2'] |
 | C5_dimension_Q76 | pass | [length] ** 3 | not captured | not captured | not captured | ['Baek_2008_table_2:row4:col2'] |
 | C5_unit_missing_Q95 | fail | [time] | h$^{-1}$ | not captured | not captured | ['Baek_2008_table_3:row1:col2'] |
 | C7_apparent_coherence | pass | not captured | not captured | not captured | not captured | not captured |
@@ -162,4 +161,4 @@ _No web simulator for this record: its structure has no shared WebAssembly templ
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-09-29 01:38 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 00:32 UTC</sub>

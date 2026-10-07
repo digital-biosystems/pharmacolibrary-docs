@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C07A&quot;,&quot;href&quot;:&quot;atc/C07A.md&quot;},{&quot;label&quot;:&quot;s-atenolol&quot;,&quot;href&quot;:&quot;drugs/drug_s_atenolol/&quot;},{&quot;label&quot;:&quot;Mason_1979 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;SAtenolol_Buck1989_reference&quot;,&quot;label&quot;:&quot;Buck_1989_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_s_atenolol/SAtenolol_Buck1989_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;SAtenolol_Buck1989_reference&quot;,&quot;label&quot;:&quot;Buck_1989_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_s_atenolol/SAtenolol_Buck1989_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # s-atenolol — `SAtenolol_Mason1979_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.8). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.421). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -21,16 +21,18 @@
 
 Without a unit the value cannot be converted, so the model cannot use it. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — s atenolol: t1/2z 6.06 hr, V 0.173 L/kg, fe 94.1 %, CL 10.7 L/hr, CLR 10.4 L/hr, Fab 0.52 mg, tmax 3 hr, MAT 2 hr.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of absolute bioavailability: this record has none, the second reading 0.52; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of absolute bioavailability for the 25-... oral doses: this record has 0.52, the second reading none; it also differs on 10 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
+
+> ⚠️ **STALE** — review status `needs_review` (reviewed 2026-09-29 08:52:10.670040+00:00) predates the upstream re-run (2026-10-07 01:01:56.088117+00:00). Current validate status: `needs_review`.
 
 ## Citation
 Mason WD et al., Kinetics and absolute bioavailability o…, Clinical pharmacology and t… (1979)
   ·  DOI: [10.1002/cpt1979254408](https://doi.org/10.1002/cpt1979254408)
 
 ## Model component
-<dbs-pgx drug="s-atenolol" model-id="SAtenolol_Mason1979_reference" status="needs_review" stale="false" population="healthy volunteers" measured-compound="atenolol" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<dbs-pgx drug="s-atenolol" model-id="SAtenolol_Mason1979_reference" status="needs_review" stale="true" population="healthy volunteers" measured-compound="atenolol" parameterization="mechanistic" topology="1C"></dbs-pgx>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 8 extracted.
@@ -49,7 +51,7 @@ Mason WD et al., Kinetics and absolute bioavailability o…, Clinical pharmacolo
 | renal plasma clearance | `Q26` · CLR | 10.4 | L/hr | 2.8888888888888894e-06 | [l] / [h] | not captured | llm_corrected (0.6) | Mason_1979:abstract | — | not captured |
 | absolute bioavailability for the 25-... oral doses | `Q40` · Fab | 0.52 | mg | not captured | not captured | not captured | llm_confirmed (0.6) | Mason_1979:abstract, Mason_1979:abstract, Mason_1979:abstract | — | not captured |
 | Time to mean maximum plasma concentration | `Q56` · tmax | 3.0 | hr | 10800.0 | [h] | not captured | llm (0.6) | Mason_1979:abstract | — | not captured |
-| time for half of the bioavailable dose to be absorbed | `Q73` · MAT | 2.0 | hr | 7200.0 | h | not captured | llm (0.6) | Mason_1979:abstract | — | not captured |
+| time for half of the bioavailable dose to be absorbed | `Q73` · MAT | 2.0 | hr | not captured | not captured | not captured | llm (0.6) | Mason_1979:abstract | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -66,7 +68,6 @@ Mason WD et al., Kinetics and absolute bioavailability o…, Clinical pharmacolo
 - status held at route_to_review — not promoted
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
 - review gap-fill skipped: this record measures 'atenolol', not s_atenolol — the review values are the parent's
-- unit re-normalised: MAT 'hr' now converts (value unchanged)
 
 **Extraction notes:**
 - no GROBID TEI available — transcribed from abstract in Mason_1979_metadata.yaml (11 record(s)); values are summary statistics, not a fitted model
@@ -78,15 +79,23 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.8 (12/15 fields) | 3 |
+| `gpt-oss:120b` | not confirmed | 0.421 (8/19 fields) | 11 |
 
-<details><summary>3 field(s) a reader read differently</summary>
+<details><summary>11 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
 | `gpt-oss:120b` | `parameters[absolute bioavailability for the 25-... oral doses]` | 0.52 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[absolute bioavailability]` | not captured | 0.52 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[excreted in the urine]` | 94.1 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[intravenous dose is excreted in the urine]` | not captured | 94.1 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[mean (+/- sd) terminal elimination half-life]` | not captured | 6.06 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[mean absolute bioavailability for the 25-mg oral dose]` | not captured | 0.52 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[mean value of the plasma clearance]` | not captured | 10.7 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[mean volume of the central compartment]` | not captured | 0.173 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[plasma clearance]` | 10.7 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[terminal elimination half-life]` | 6.06 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[time for half of the bioavailable dose to be absorbed].parameter_id` | Q73 | Q95 | mismatch |
+| `gpt-oss:120b` | `parameters[volume of the central compartment]` | 0.173 | not captured | only_one_extracted |
 
 </details>
 
@@ -109,6 +118,7 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 | C5_dimension_Q56 | pass | [time] | not captured | not captured | not captured | ['Mason_1979:abstract'] |
 | C5_dimension_Q57 | pass | [time] | not captured | not captured | not captured | ['Mason_1979:abstract'] |
 | C5_dimension_Q61 | pass | [length] ** 3 | not captured | not captured | not captured | ['Mason_1979:abstract'] |
+| C5_unit_missing_Q73 | fail | [time] | hr | not captured | not captured | ['Mason_1979:abstract'] |
 | C6_cl_magnitude | pass | &lt;= 90.0 L/h | 10.7 | not captured | not captured | ['Mason_1979:abstract'] |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
 | C9_phys_window_Q22 | pass | clearance within physiological range | 10.7 L/h | not captured | not captured | ['Mason_1979:abstract'] |
@@ -147,4 +157,4 @@ _No web simulator for this record: its structure has no shared WebAssembly templ
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-09-29 07:08 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 01:01 UTC</sub>

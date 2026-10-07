@@ -4,7 +4,7 @@
 
 # timolol — `Timolol_Ji1993_reference`
 
-> ## <span class="pk-badge pk-badge--orange">built, not shipped</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.143). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -20,15 +20,17 @@
 
 The model was built, but timolol's clearance had no value, so a library placeholder stood in and the model was held back rather than published with an invented number. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — timolol: tmax 18.8 h, Cmax 11.2 ng/ml, AUC 266 ng/ml.h, Vss 120 L, kel 0.084 h-1.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has timolol, the second reading unknown; it also differs on 11 more fields. That field shapes the model, so the record is marked disputed.
+Independently confirmed by `gpt-oss:120b`.
 
 <sub>reviewed by rule template (no LLM)</sub>
+
+> ⚠️ **STALE** — review status `model_quarantined` (reviewed 2026-09-29 08:52:10.857347+00:00) predates the upstream re-run (2026-10-07 01:29:39.320392+00:00). Current validate status: `extracted`.
 
 ## Citation
 Ji XF et al., [The bioavailability of transdermal the…, Yao xue xue bao = Acta phar… (1993)
 
 ## Model component
-<dbs-pgx drug="timolol" model-id="Timolol_Ji1993_reference" status="model_quarantined" stale="false" population="healthy volunteers" measured-compound="timolol" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<dbs-pgx drug="timolol" model-id="Timolol_Ji1993_reference" status="extracted" stale="true" population="healthy volunteers" measured-compound="timolol" parameterization="mechanistic" topology="1C"></dbs-pgx>
 
 **Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameters:** 5 extracted.
@@ -36,8 +38,6 @@ Ji XF et al., [The bioavailability of transdermal the…, Yao xue xue bao = Acta
 **Parameterization:** mechanistic.
 
 ## Parameters
-> ⚠️ This record is not accepted (current status `model_quarantined`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
-
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
 | Tmax | `Q56` · tmax | 18.8 | h | 67680.0 | [h] | not captured | exact (1.0) | Ji_1993:abstract | — | not captured |
@@ -65,31 +65,14 @@ Ji XF et al., [The bioavailability of transdermal the…, Yao xue xue bao = Acta
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--green">cross-checked ✓</span>  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.143 (2/14 fields) | 12 |
+| `gpt-oss:120b` | confirmed | 1.0 (9/9 fields) | none |
 
-<details><summary>12 field(s) a reader read differently</summary>
-
-| second reader | field | first reading | second reading | agreement |
-|---|---|---|---|---|
-| `gpt-oss:120b` | `parameters[auc]` | 265.7 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[auc]` | not captured | 265.7 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[cmax]` | 11.2 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[cmax]` | not captured | 11.2 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[k]` | 0.084 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[k]` | not captured | 0.084 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[tmax]` | 18.8 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[tmax]` | not captured | 18.8 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[vss]` | 120.0 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[vss]` | not captured | 120.0 | only_one_extracted |
-| `gpt-oss:120b` | `screen.dose_compound` | timolol | unknown | mismatch |
-| `gpt-oss:120b` | `screen.primary_analyte` | timolol | unknown | mismatch |
-
-</details>
+_Every reader agrees on every compared field of this record._
 
 <details class="legend">
 <summary>Cross-check legend</summary>
@@ -157,4 +140,4 @@ _No web simulator for this record: its structure has no shared WebAssembly templ
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-09-29 08:39 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 01:29 UTC</sub>

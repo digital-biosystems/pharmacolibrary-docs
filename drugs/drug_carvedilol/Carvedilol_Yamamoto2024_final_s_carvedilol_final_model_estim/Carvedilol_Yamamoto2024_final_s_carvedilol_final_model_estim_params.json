@@ -1,0 +1,35 @@
+{
+ "dose_source": "paper",
+ "model_id": "Carvedilol_Yamamoto2024_final_s_carvedilol_final_model_estim",
+ "note": "Values for the shared PK_2C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "paper_doses_kind": "discrete",
+ "paper_doses_mg": [
+  25.0,
+  50.0
+ ],
+ "parameters": {
+  "Cl": 4.802777777777778e-06,
+  "F": 0.15,
+  "Tlag": 0.0,
+  "VdPerKg": 7.085714285714285e-05,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 2.5e-05,
+  "k12": 0.0007022849462365591,
+  "k21": 2.4765967531698068e-05,
+  "ka": 4.1666666666666665e-05,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 68219.63927855711
+ },
+ "reference_peaks": {
+  "central.C": 1.723881460716852e-06
+ },
+ "stop_time": 86400.0,
+ "template": "PK_2C_enteral",
+ "template_fmu": "PK_2C_enteral.fmu"
+}

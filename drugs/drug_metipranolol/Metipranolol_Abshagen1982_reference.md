@@ -4,7 +4,7 @@
 
 # metipranolol — `Metipranolol_Abshagen1982_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.167). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.474). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -12,7 +12,7 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
-**Model:** No model was generated from this record.
+**Model:** A model was built but held back: a core parameter had no value, so it is not published or simulated.
 
 ### Reviewer guidance
 
@@ -20,9 +20,11 @@
 
 A model needs both clearance and volume; without the volume it could only be built on a library default, so it was not. The check had no reference to compare the clearance against, so the value is unverified rather than shown to be wrong. Extracted — metipranolol: tlag 7.3 min, tmax 50 min, t1/2z 6.3 min, fe 4 % of the dose, CL 1.24e+03 ml/min, CLR 149 ml/min, CLNR 1.07e+03 ml/min, fu 70 %, … (+1).
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has metipranolol, the second reading metipranolol (oral) and deacetyl metipranolol (IV); it also differs on 19 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has metipranolol, the second reading unknown; it also differs on 9 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
+
+> ⚠️ **STALE** — review status `needs_review` (reviewed 2026-10-05 09:27:49.617835+00:00) predates the upstream re-run (2026-10-07 01:42:21.721631+00:00). Current validate status: `extracted`.
 
 > **Dose compound ≠ measured compound:** dosed `metipranolol`, measured `deacetyl metipranolol`.
 
@@ -31,25 +33,24 @@ Abshagen U et al., Pharmacokinetics of metipranolol in nor…, European journal 
   ·  DOI: [10.1007/BF00637616](https://doi.org/10.1007/BF00637616)
 
 ## Model component
-<dbs-pgx drug="metipranolol" model-id="Metipranolol_Abshagen1982_reference" status="needs_review" stale="false" population="normal volunteers" measured-compound="deacetyl metipranolol" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<dbs-pgx drug="metipranolol" model-id="Metipranolol_Abshagen1982_reference" status="extracted" stale="true" population="normal volunteers" measured-compound="deacetyl metipranolol" parameterization="apparent" topology="1C"></dbs-pgx>
 
-**Model structure:** 1-compartment; no model was built for this record.  
-**Parameters:** 9 extracted.
+**Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
+**Parameters:** 10 extracted.
 
-**Parameterization:** mechanistic.
+**Parameterization:** CLm/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
 ## Parameters
-> ⚠️ This record is not accepted (current status `needs_review`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
-
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
 | lag-time | `Q83` · tlag | 7.3 | min | 438.0 | [min] | not captured | llm (0.6) | Abshagen_1982:abstract | — | not captured |
 | tmax | `Q56` · tmax | 50 | min | 3000.0 | [min] | not captured | exact (1.0) | Abshagen_1982:abstract | — | not captured |
 | invasion half-life | `Q57` · t1/2z | 6.3 | min | 378.0 | [min] | not captured | llm (0.6) | Abshagen_1982:abstract | — | not captured |
 | urinary excretion of unchanged drug | `Q44` · fe | 4 | % of the dose | not captured | [%] · [ofthedose] | not captured | llm_confirmed (0.6) | Abshagen_1982:abstract | — | not captured |
-| total ... clearances | `Q22` · CL | 1237 | ml/min | 2.061666666666667e-05 | [ml] / [min] | not captured | llm (0.6) | Abshagen_1982:abstract | — | not captured |
+| total ... clearances | `Q351` · CLm/F | 1237 | ml/min | 2.061666666666667e-05 | [ml] / [min] | not captured | llm (0.6) | Abshagen_1982:abstract | — | not captured |
 | renal ... clearances | `Q26` · CLR | 149 | ml/min | 2.483333333333333e-06 | [ml] / [min] | not captured | llm (0.6) | Abshagen_1982:abstract | — | not captured |
 | extra-renal ... clearances | `Q79` · CLNR | 1068 | ml/min | 1.78e-05 | [ml] / [min] | not captured | llm (0.6) | Abshagen_1982:abstract | — | not captured |
+| distribution coefficient | `Q61` · V | 3.5 | l/kg | 0.245 | [l] / [kg] | not captured | exact (1.0) | Abshagen_1982:abstract | — | not captured |
 | protein binding | `Q46` · fu | 70 | % | not captured | [%] | not captured | exact (1.0) | Abshagen_1982:abstract | — | not captured |
 | Absolute bioavailability | `Q40` · Fab | 50 | % | not captured | not captured | not captured | exact (1.0) | Abshagen_1982:abstract | — | not captured |
 
@@ -63,12 +64,14 @@ Abshagen U et al., Pharmacokinetics of metipranolol in nor…, European journal 
 **Interpretation flags:**
 - dropped duplicate Q57 ('elimination half-life', value 3) — already have one for this compound
 - unit_dimension_unknown: '% of the dose' (fe)
-- dropped unlinked row (NIL): 'distribution coefficient' — extend the ontology if this is a real PK parameter (source ['Abshagen_1982:abstract'])
-- apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=deacetyl metipranolol
+- linked 'distribution coefficient' as 'Vc' → Q63 (V1) for  — compound marker removed
+- metabolite deacetyl metipranolol: Q22→Q351 — only the metabolite is measured and fm is not identifiable, so its CL/V are apparent (fm-divided)
+- apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=deacetyl metipranolol
 - held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
 - template fit: none — noncompartmental model — not a compartmental parent–metabolite model
+- 1C volume normalization: Q63→Q61 (single-compartment model has no central/peripheral split; 'distribution coefficient' is the general volume)
 - status held at route_to_review — not promoted
-- row roles (LLM): model_class=noncompartmental; 11/11 row label(s) assigned, 5 linked by role; re-tagged deacetyl metipranolol→parent ×11
+- row roles (LLM): model_class=noncompartmental; 11/11 row label(s) assigned, 6 linked by role; re-tagged deacetyl metipranolol→parent ×11
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
 
 **Extraction notes:**
@@ -81,32 +84,22 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.167 (4/24 fields) | 20 |
+| `gpt-oss:120b` | not confirmed | 0.474 (9/19 fields) | 10 |
 
-<details><summary>20 field(s) a reader read differently</summary>
+<details><summary>10 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `parameters[absolute bioavailability]` | 50 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[absolute bioavailability]` | not captured | 50 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[distribution coefficient]` | not captured | 3.5 | only_one_extracted |
+| `gpt-oss:120b` | `model.parameterization` | apparent | mechanistic | mismatch |
+| `gpt-oss:120b` | `parameters[distribution coefficient].parameter_id` | Q61 | Q410 | mismatch |
 | `gpt-oss:120b` | `parameters[extra-renal ... clearances]` | 1068 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[extra-renal clearance]` | not captured | 1068 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[invasion half-life]` | 6.3 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[invasion half-life]` | not captured | 6.3 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[lag-time]` | 7.3 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[lag-time]` | not captured | 7.3 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[protein binding]` | 70 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[protein binding]` | not captured | 70 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[renal ... clearances]` | 149 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[renal clearance]` | not captured | 149 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[tmax]` | 50 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[tmax]` | not captured | 50 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[total ... clearances]` | 1237 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[total clearance]` | not captured | 1237 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[urinary excretion of unchanged drug]` | 4 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[urinary excretion of unchanged drug]` | not captured | 4 | only_one_extracted |
-| `gpt-oss:120b` | `screen.dose_compound` | metipranolol | metipranolol (oral) and deacetyl metipranolol (IV) | mismatch |
+| `gpt-oss:120b` | `screen.dose_compound` | metipranolol | unknown | mismatch |
+| `gpt-oss:120b` | `screen.primary_analyte` | deacetyl metipranolol | unknown | mismatch |
 
 </details>
 
@@ -120,18 +113,19 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 9 | not captured | not captured | not captured |
+| C0_has_structural_params | pass | not captured | 10 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
-| C0c_disposition_complete | fail | not captured | not captured | not captured | not captured | not captured |
-| C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Abshagen_1982:abstract'] |
+| C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
 | C5_dimension_Q26 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Abshagen_1982:abstract'] |
+| C5_dimension_Q351 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Abshagen_1982:abstract'] |
 | C5_dimension_Q56 | pass | [time] | not captured | not captured | not captured | ['Abshagen_1982:abstract'] |
 | C5_dimension_Q57 | pass | [time] | not captured | not captured | not captured | ['Abshagen_1982:abstract'] |
+| C5_dimension_Q61 | pass | [length] ** 3 | not captured | not captured | not captured | ['Abshagen_1982:abstract'] |
 | C5_dimension_Q79 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Abshagen_1982:abstract'] |
 | C5_dimension_Q83 | pass | [time] | not captured | not captured | not captured | ['Abshagen_1982:abstract'] |
-| C6_cl_magnitude | fail | &lt;= 90.0 L/h | 1237.0 | not captured | not captured | ['Abshagen_1982:abstract'] |
+| C7_apparent_coherence | pass | not captured | not captured | not captured | not captured | not captured |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
-| C9_phys_window_Q22 | pass | clearance within physiological range | 74.2 L/h | not captured | not captured | ['Abshagen_1982:abstract'] |
+| C9_phys_window_Q61 | pass | volume within physiological range | 245 L | not captured | not captured | ['Abshagen_1982:abstract'] |
 
 <details class="legend">
 <summary>Check legend — what each column means</summary>
@@ -166,4 +160,4 @@ _No web simulator for this record: its structure has no shared WebAssembly templ
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-09-29 04:22 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 01:42 UTC</sub>

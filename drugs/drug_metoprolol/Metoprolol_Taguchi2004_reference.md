@@ -4,7 +4,7 @@
 
 # metoprolol — `Metoprolol_Taguchi2004_reference`
 
-> ## <span class="pk-badge pk-badge--orange">built, not shipped</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.364). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.875). The first reading is what the record holds.">cross-check: partial</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -12,7 +12,7 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
-**Model:** A model was built but held back: a core parameter had no value, so it is not published or simulated.
+**Model:** No model was generated from this record.
 
 ### Reviewer guidance
 
@@ -20,31 +20,33 @@
 
 The record for metoprolol in middle-aged and elderly Japanese patients lists only Q (3.86), CL/F (29.7), V/F (17.1) and a slope (1.79); the absorption rate constant was not reported in the source and was defaulted, which the adjudication judged an invented absorption input. The parameterization is apparent (F=1, Fm=1, no molar correction) with first-order depot input. A second reader also disagreed on the intercompartmental clearance labels, reading q 1 as 0.835 where this record has null and q 2 as null where this record has 3.86. Extracted — metoprolol: Q 3.86, CL/F 29.7, V/F 17.1, slope 1.79.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has metoprolol, the second reading unknown; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of q 5: this record has 0.328, the second reading none. That field does not shape the model.
 
 <sub>reviewed by glm-5.3-flash</sub>
+
+> ⚠️ **STALE** — review status `model_quarantined` (reviewed 2026-09-28 14:39:00.188184+00:00) predates the upstream re-run (2026-10-07 00:08:03.915423+00:00). Current validate status: `needs_review`.
 
 ## Citation
 Taguchi M et al., Nonlinear mixed effects model analysis…, Biological & pharmaceutical… (2004)
   ·  DOI: [10.1248/bpb.27.1642](https://doi.org/10.1248/bpb.27.1642)
 
 ## Model component
-<dbs-pgx drug="metoprolol" model-id="Metoprolol_Taguchi2004_reference" status="model_quarantined" stale="false" population="middle-aged and elderly Japanese patients routinely treated with metoprolol" measured-compound="metoprolol" parameterization="apparent" topology="1C"></dbs-pgx>
+<dbs-pgx drug="metoprolol" model-id="Metoprolol_Taguchi2004_reference" status="needs_review" stale="true" population="routinely treated Japanese patients" measured-compound="metoprolol" parameterization="apparent" topology="1C"></dbs-pgx>
 
-**Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
-**Parameters:** 4 extracted.
+**Model structure:** 1-compartment; no model was built for this record.  
+**Parameters:** 3 extracted.
 
 **Parameterization:** CL/F, V/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
 ## Parameters
-> ⚠️ This record is not accepted (current status `model_quarantined`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
+> ⚠️ This record is not accepted (current status `needs_review`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| q 2 | `Q30` · Q | 3.86 | not captured | not captured | not captured | 4.52 | special_case (0.95) | tab_1:row2:col2, tab_1:row2:col3 | — | not captured |
-| w CL/F (%) | `Q27` · CL/F | 29.7 | not captured | not captured | not captured | 21.7 | boundary (0.8) | tab_1:row6:col1, tab_1:row6:col2 | — | not captured |
-| w V/F (%) | `Q76` · V/F | 17.1 | not captured | not captured | not captured | 0.00 | boundary (0.8) | tab_1:row7:col1, tab_1:row7:col2 | — | not captured |
-| s | `Q335` · slope | 1.79 | not captured | not captured | not captured | 4.54 | exact (1.0) | tab_1:row8:col2, tab_1:row8:col3 | — | not captured |
+| q 1 | `Q30` · Q | 0.835 | L/h/kg | 1.623611111111111e-05 | L/h | not captured | space_fold (0.95) | tab_1:row1:col2, tab_1:row1:col3 | — | not captured |
+| q 5 | `Q900` · equation variable | 0.328 | not captured | not captured | not captured | not captured | llm (0.6) | tab_1:row3:col2, tab_1:row3:col3 | — | not captured |
+| w CL/F (%) | `Q27` · CL/F | 29.7 | not captured | not captured | not captured | not captured | llm_confirmed (0.6) | tab_1:row6:col1, tab_1:row6:col2 | — | not captured |
+| w V/F (%) | `Q76` · V/F | 17.1 | not captured | not captured | not captured | not captured | llm_confirmed (0.6) | tab_1:row7:col1, tab_1:row7:col2 | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -54,36 +56,34 @@ Taguchi M et al., Nonlinear mixed effects model analysis…, Biological & pharma
 ## Departures & gaps
 
 **Interpretation flags:**
-- dropped unlinked row (NIL): 'q 1' — extend the ontology if this is a real PK parameter (source ['tab_1:row1:col2', 'tab_1:row1:col3'])
-- dropped unlinked row (NIL): 'q 5' — extend the ontology if this is a real PK parameter (source ['tab_1:row3:col2', 'tab_1:row3:col3'])
-- dropped unlinked row (NIL): 'q 7' — extend the ontology if this is a real PK parameter (source ['tab_1:row4:col2', 'tab_1:row4:col3'])
-- dropped unlinked row (NIL): 'q 10' — extend the ontology if this is a real PK parameter (source ['tab_1:row5:col2', 'tab_1:row5:col3'])
+- dropped duplicate Q30 ('q 2', value '3.86') — already have one for this compound
+- dropped duplicate Q900 ('q 7', value '0.153') — already have one for this compound
+- dropped duplicate Q900 ('q 10', value '0.600') — already have one for this compound
+- dropped PD-category row 's' → Q335 (slope, category G13) — pharmacodynamic parameters belong to scholarpd, not the PK model (source ['tab_1:row8:col2', 'tab_1:row8:col3'])
+- implicit units: 'q 1' → L/h/kg (from the popPK convention: 'The parameter q1 is the population mean of oral clearance (CL/F) normalized by body weight (WT), as shown in the model e')
+- implicit units: 'w CL/F (%)' — the LLM proposed '%', whose dimension does not fit Q27; left unset
+- implicit units: 'w V/F (%)' — the LLM proposed '%', whose dimension does not fit Q76; left unset
 - apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=metoprolol
+- structure disagreement: deterministic 1C vs LLM 2C — review compartment count
 - skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
 
 **Extraction notes:**
-- unparsed cell tab_1:row0:col2 = '95% CI'
+- LLM selected parameter table(s) 2
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.364 (4/11 fields) | 7 |
+| `gpt-oss:120b` | partly confirmed | 0.875 (7/8 fields) | 1 |
 
-<details><summary>7 field(s) a reader read differently</summary>
+<details><summary>1 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `parameters[q 1]` | not captured | 0.835 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[q 2]` | 3.86 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[s]` | 1.79 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[w cl/f].rse_percent` | 21.7 | not captured | mismatch |
-| `gpt-oss:120b` | `parameters[w v/f].rse_percent` | 0.00 | not captured | mismatch |
-| `gpt-oss:120b` | `screen.dose_compound` | metoprolol | unknown | mismatch |
-| `gpt-oss:120b` | `screen.primary_analyte` | metoprolol | unknown | mismatch |
+| `gpt-oss:120b` | `parameters[q 5]` | 0.328 | not captured | only_one_extracted |
 
 </details>
 
@@ -97,12 +97,11 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 4 | not captured | not captured | not captured |
+| C0_has_structural_params | pass | not captured | 3 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
-| C2_base_Q335 | fail | 1.79 | 1.29 | 0.7207 | 0.05 | footnote reference category |
+| C5_dimension_Q30 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['tab_1:row1:col2', 'tab_1:row1:col3'] |
 | C5_unit_missing_Q27 | fail | [length] ** 3 / [time] | not captured | not captured | not captured | ['tab_1:row6:col1', 'tab_1:row6:col2'] |
-| C5_unit_missing_Q30 | fail | [length] ** 3 / [time] | not captured | not captured | not captured | ['tab_1:row2:col2', 'tab_1:row2:col3'] |
 | C5_unit_missing_Q76 | fail | [length] ** 3 | not captured | not captured | not captured | ['tab_1:row7:col1', 'tab_1:row7:col2'] |
 | C7_apparent_coherence | pass | not captured | not captured | not captured | not captured | not captured |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
@@ -153,4 +152,4 @@ _No web simulator for this record: its structure has no shared WebAssembly templ
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-07-15 13:27 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 00:08 UTC</sub>

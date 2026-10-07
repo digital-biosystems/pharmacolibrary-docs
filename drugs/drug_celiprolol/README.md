@@ -18,17 +18,11 @@ Celiprolol is a selective beta blocker used to treat high blood pressure and hea
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-01 16:13 | 2:32 | 0/0/0 | 0/1/0 | 0/0/3 | 42,565/2,132 | ollama / glm-5.3-flash | 2 | 1/1 | 2/0 | 0 |
+| 2026-10-07 01:53 | 1:41 | 0/0/0 | 0/0/0 | 0/0/2 | 34,427/2,328 | ollama / qwen3.8:27b-mtp-q8_0 | 2 | 1/1 | 2/0 | 0 |
 
 ## popPK records
 
 _not available_
-
-## Pharmacodynamics (PD)
-
-| status | detail | about | model | citation | doi |
-|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by glm-5.3-flash, p(non-human) 1.00).">rat</span> | [Sauvaget_2010_E_max](drugs/drug_celiprolol/pd_Sauvaget_2010_E_max.md) | celiprolol-induced vasodilatation (aortic relaxation) ← celiprolol · direct Emax (saturable) effect | — | Sauvaget F et al., Positive influence of AT(1) receptor an…, European journal of pharmac… (2010) | [10.1016/j.ejphar.2010.07.003](https://doi.org/10.1016/j.ejphar.2010.07.003) |
 
 ## Pharmacogenomics (PGx)
 
@@ -36,7 +30,6 @@ _not available_
 |---|---|---|---|---|---|---|
 | <span class="pk-badge pk-badge--neutral" title="the paper links the gene to the drug but states no effect size on a model parameter, so it changes no model.">qualitative</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span> | **ABCB1** | `Q17` · AUC∞ | transport | [Hirvensalo_2022](drugs/drug_celiprolol/pgx_Hirvensalo_2022_ABCB1_Q17.md) | Hirvensalo P et al., Pharmacogenomics of celiprolol - eviden…, Clinical and translational… (2022) | [10.1111/cts.13159](https://doi.org/10.1111/cts.13159) |
 | <span class="pk-badge pk-badge--neutral" title="the paper links the gene to the drug but states no effect size on a model parameter, so it changes no model.">qualitative</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span> | **SLCO1A2** | `Q17` · AUC∞ | transport | [Hirvensalo_2022](drugs/drug_celiprolol/pgx_Hirvensalo_2022_SLCO1A2_Q17.md) | Hirvensalo P et al., Pharmacogenomics of celiprolol - eviden…, Clinical and translational… (2022) | [10.1111/cts.13159](https://doi.org/10.1111/cts.13159) |
-| <span class="pk-badge pk-badge--neutral" title="the paper links the gene to the drug but states no effect size on a model parameter, so it changes no model.">qualitative</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.25). The first reading is what the record holds.">cross-check: partial</span> | **SLCO2B1** | `Q100` — no parameter target — an association/risk finding, not a parameter shift | transport | [Hirvensalo_2022](drugs/drug_celiprolol/pgx_Hirvensalo_2022_SLCO2B1_Q100.md) | Hirvensalo P et al., Pharmacogenomics of celiprolol - eviden…, Clinical and translational… (2022) | [10.1111/cts.13159](https://doi.org/10.1111/cts.13159) |
 
 <details class="pk-legend"><summary>What the PGx badges mean — evidence, and whether a model runs</summary><table><tbody><tr><td><span class="pk-badge pk-badge--green">quantitative</span></td><td>the paper gives the effect of each phenotype (or genotype) on a named model parameter — a θ per category.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">qualitative</span></td><td>the paper links the gene to the drug but states no effect size on a model parameter, so it changes no model.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">guideline estimate</span></td><td>the effect comes from a CPIC / DPWG dosing guideline, not from this paper's numbers.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">safety allele</span></td><td>a risk allele for an adverse reaction (an HLA type, G6PD deficiency …): it changes no PK/PD parameter.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>the extraction is incomplete or inconsistent.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted.</td></tr><tr><td><span class="pk-badge pk-badge--green">▶ simulatable</span></td><td>the paper's popPK model runs per phenotype in the browser (Simulation tab); its PGx Modelica model is under Models.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">model only</span></td><td>a PGx Modelica model exists but has no in-browser simulator.</td></tr></tbody></table></details>
 
@@ -53,9 +46,9 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 |---|---|---|---|
 | absorption | blood-brain barrier | `ABCB1` transport, `SLCO1A2` transport | paper PGx gene |
 | absorption | kidney | `ABCB1` transport | paper PGx gene |
-| absorption | liver | `ABCB1` transport, `SLCO2B1` transport | paper PGx gene |
+| absorption | liver | `ABCB1` transport | paper PGx gene |
 | absorption | placenta | `ABCB1` transport | paper PGx gene |
-| absorption | small intestine | `ABCB1` transport, `SLCO1A2` transport, `SLCO2B1` transport | paper PGx gene |
+| absorption | small intestine | `ABCB1` transport, `SLCO1A2` transport | paper PGx gene |
 | absorption | testis | `ABCB1` transport | paper PGx gene |
 | metabolism | brain | `CYP2D6` substrate | DrugBank actor |
 | metabolism | liver | `CYP2D6` substrate | DrugBank actor |
@@ -81,8 +74,8 @@ _12 paper(s) judged relevant from the abstract, with no full text on disk — pa
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Ieiri_2012.pdf` | Ieiri I et al., Microdosing clinical study: pharmacokin…, Journal of clinical pharmac… (2012) | popPK | 9 | [10.1177/0091270011408612](https://doi.org/10.1177/0091270011408612) | [21593283](https://pubmed.ncbi.nlm.nih.gov/21593283) | The study is a population PK analysis of celiprolol, but the evidence only provides AUC values and lacks specific numeric values for clearance, volume, or rate constants. |
-| `Lipka_1995.pdf` | Lipka E et al., Celiprolol double-peak occurrence and g…, Journal of pharmacokinetics… (1995) | popPK | 9 | [10.1007/BF02354285](https://doi.org/10.1007/BF02354285) | [8834196](https://pubmed.ncbi.nlm.nih.gov/8834196) | The paper describes a population pharmacokinetic study of celiprolol in dogs with a two-compartment model, but the specific numeric parameter values are not present in the provided abstract text. |
+| `Ieiri_2012.pdf` | Ieiri I et al., Microdosing clinical study: pharmacokin…, Journal of clinical pharmac… (2012) | popPK | 9 | [10.1177/0091270011408612](https://doi.org/10.1177/0091270011408612) | [21593283](https://pubmed.ncbi.nlm.nih.gov/21593283) | The study is a population PK analysis of celiprolol in humans, but the evidence only provides AUC values, not the specific clearance, volume, or rate constants required for extraction. |
+| `Lipka_1995.pdf` | Lipka E et al., Celiprolol double-peak occurrence and g…, Journal of pharmacokinetics… (1995) | popPK | 9 | [10.1007/BF02354285](https://doi.org/10.1007/BF02354285) | [8834196](https://pubmed.ncbi.nlm.nih.gov/8834196) | The study reports a population pharmacokinetic model for celiprolol in dogs, but the specific numeric parameter values are not present in the provided evidence. |
 | `Hauck_1994.pdf` | Hauck RW et al., Pharmacological actions of the selectiv…, British journal of pharmaco… (1994) | pd | 5 | [10.1111/j.1476-5381.1994.tb17098.x](https://doi.org/10.1111/j.1476-5381.1994.tb17098.x) | [7858847](https://www.ncbi.nlm.nih.gov/pubmed/7858847) | metadata signals extractable PD data (IC50) |
 | `West_2025.pdf` | West MA et al., Significance of gut breast cancer resis…, Drug metabolism and disposi… (2025) | pd | 5 | [10.1016/j.dmd.2025.100056](https://doi.org/10.1016/j.dmd.2025.100056) | [40220705](https://www.ncbi.nlm.nih.gov/pubmed/40220705) | metadata signals extractable PD data (IC50) |
 | `Jasper_1988.pdf` | Jasper JR et al., Molecular mechanism of beta-adrenergic…, FASEB journal : official pu… (1988) | pd | 4 | [10.1096/fasebj.2.13.2901994](https://doi.org/10.1096/fasebj.2.13.2901994) | [2901994](https://www.ncbi.nlm.nih.gov/pubmed/2901994) | metadata signals extractable PD data (EC50) |
@@ -94,7 +87,7 @@ _12 paper(s) judged relevant from the abstract, with no full text on disk — pa
 | `Huang_2008.pdf` | Huang J et al., Effect of pluronic F68 block copolymer…, International journal of ph… (2008) | pgx | 7 | [10.1016/j.ijpharm.2007.12.028](https://doi.org/10.1016/j.ijpharm.2007.12.028) | [18242899](https://www.ncbi.nlm.nih.gov/pubmed/18242899) | metadata signals extractable PGX data (CYP3A4, PK/PD-context) |
 | `de_2024.pdf` | de Vries M et al., Evaluation of the Clinical Drug-Drug In…, Clinical pharmacology in dr… (2024) | pgx | 7 | [10.1002/cpdd.1408](https://doi.org/10.1002/cpdd.1408) | [38752475](https://www.ncbi.nlm.nih.gov/pubmed/38752475) | metadata signals extractable PGX data (CYP450, PK/PD-context) |
 
-<sub>queue written 2026-10-01T16:13:41.971731+00:00</sub>
+<sub>queue written 2026-10-07T01:51:56.895008+00:00</sub>
 
 ## Screened and excluded
 
@@ -114,9 +107,9 @@ _12 paper(s) judged relevant from the abstract, with no full text on disk — pa
 | popPK | Hauck_1994 | irrelevant | 0 | 0 | no_text gate: only 144 chars of text extracted (&lt; 400) |
 | popPK | Huang_2008 | irrelevant | 1 | 0 | The study is an in-vitro mechanistic investigation of transport and metabolism, not a pharmacokinetic study reporting quantitative disposition parameters for celiprolol. |
 | PD | Huang_2008 | not_relevant | 0 | 0 | The paper investigates the effect of an excipient (Pluronic F68) on in vitro transport and metabolism, not the pharmacodynamic exposure-response relationship of the drug celiprolol itself. |
-| PGx | Huang_2008 | not_relevant | 0 | 0 | The paper investigates the effect of a pharmaceutical excipient (Pluronic F68) on drug transport and metabolism, not the effect of a gene variant or genotype. |
-| popPK | Ieiri_2012 | relevant | 9 | 2 | The study is a population PK analysis of celiprolol, but the evidence only provides AUC values and lacks specific numeric values for clearance, volume, or rate constants. |
-| popPK | Jankovic_2014 | irrelevant | 2 | 0 | The paper is a review article that discusses celiprolol as under-investigated but does not provide original quantitative pharmacokinetic parameter values in the provided evidence. |
+| PGx | Huang_2008 | not_relevant | 0 | 0 | The paper focuses on the effect of Pluronic F68 on P-gp and CYP3A4, not on the pharmacogenomics of celiprolol. |
+| popPK | Ieiri_2012 | relevant | 9 | 2 | The study is a population PK analysis of celiprolol in humans, but the evidence only provides AUC values, not the specific clearance, volume, or rate constants required for extraction. |
+| popPK | Jankovic_2014 | irrelevant | 2 | 0 | This is a review article that discusses celiprolol as under-investigated but does not provide original quantitative pharmacokinetic parameter values. |
 | PGx | Jankovic_2014 | not_relevant | 2 | 0 | The paper is a review that explicitly states celiprolol was under-investigated and does not report specific pharmacogenomic effect sizes for it. |
 | popPK | Jasper_1988 | irrelevant | 0 | 0 | no_text gate: only 96 chars of text extracted (&lt; 400) |
 | PD | Jasper_1988 | not_relevant | 0 | 0 | The paper discusses the molecular mechanism of beta-blockers with ISA but does not report specific pharmacokinetic or pharmacodynamic data, exposure-response relationships, or numeric PD parameters for celiprolol. |
@@ -126,7 +119,7 @@ _12 paper(s) judged relevant from the abstract, with no full text on disk — pa
 | PGx | Lilja_2004 | not_relevant | 0 | 0 | The study explicitly states that no association was found between MDR1 polymorphisms and the degree of interaction, meaning no pharmacogenomic effect was reported. |
 | popPK | Lima_1996 | irrelevant | 0 | 0 | no_text gate: only 145 chars of text extracted (&lt; 400) |
 | PD | Lima_1996 | not_relevant | 0 | 0 | The provided text is only a title and does not contain the full text, data, or numeric parameters required to assess PD relationships for celiprolol. |
-| popPK | Lipka_1995 | relevant | 9 | 0 | The paper describes a population pharmacokinetic study of celiprolol in dogs with a two-compartment model, but the specific numeric parameter values are not present in the provided abstract text. |
+| popPK | Lipka_1995 | relevant | 9 | 0 | The study reports a population pharmacokinetic model for celiprolol in dogs, but the specific numeric parameter values are not present in the provided evidence. |
 | popPK | Marchetti_2016 | irrelevant | 0 | 0 | The paper studies a novel hybrid anticancer drug, and celiprolol is only mentioned as a comparator for efflux transporter permeability, not as the subject of a PK study. |
 | PD | Marchetti_2016 | not_relevant | 0 | 0 | The paper focuses on a novel hybrid anti-tubulin drug; celiprolol is mentioned only as a reference compound for efflux transporter permeability studies, with no PD or exposure-response analysis performed for it. |
 | PGx | Marchetti_2016 | not_relevant | 0 | 0 | The paper focuses on a novel hybrid anti-tubulin drug and only mentions celiprolol as a reference compound for efflux transporter permeability ratios, without reporting any pharmacogenomic effects on its PK or PD parameters. |
@@ -142,7 +135,7 @@ _12 paper(s) judged relevant from the abstract, with no full text on disk — pa
 | PD | Ohlstein_1998 | not_relevant | 0 | 0 | The paper investigates carvedilol, not celiprolol, and focuses on endothelin-1 biosynthesis in cell culture rather than a pharmacodynamic exposure-response relationship for the target drug. |
 | popPK | Riddell_1987 | irrelevant | 1 | 0 | The paper is a review article that summarizes pharmacodynamic and pharmacokinetic properties qualitatively but does not provide specific quantitative PK parameter values (e.g., CL, V, t1/2) in the provided evidence. |
 | PD | Riddell_1987 | not_relevant | 2 | 1 | The text is a qualitative review summarizing general pharmacodynamic properties and therapeutic efficacy comparisons without providing specific numeric PD parameters (e.g., EC50, Emax) or concentration-effect data. |
-| popPK | Sauvaget_2010 | irrelevant | 0 | 0 | The study is an in-vitro pharmacological investigation of vasodilation mechanisms and does not report any pharmacokinetic parameters for celiprolol. |
+| popPK | Sauvaget_2010 | irrelevant | 0 | 0 | The study is an in-vitro pharmacological investigation of vasodilation in rat aorta, not a pharmacokinetic study reporting disposition parameters. |
 | popPK | Schliep_1984 | irrelevant | 0 | 0 | The study focuses on the beta-adrenoceptor selectivity of bisoprolol, with celiprolol serving only as a comparator agent, and no pharmacokinetic parameters are reported. |
 | PD | Schliep_1984 | not_relevant | 1 | 1 | The paper focuses on bisoprolol and only provides a single selectivity ratio for celiprolol without detailed dose-response curves or numeric PD parameters for celiprolol. |
 | popPK | Silke_1986 | irrelevant | 0 | 0 | The study reports hemodynamic and cardiac function parameters, not pharmacokinetic disposition parameters (CL, V, ka, etc.) for celiprolol. |
@@ -152,7 +145,7 @@ _12 paper(s) judged relevant from the abstract, with no full text on disk — pa
 | popPK | Silke_1997 | irrelevant | 0 | 0 | The study focuses on heart-rate variability and pharmacodynamic effects of celiprolol, not pharmacokinetic parameters. |
 | popPK | Sung_1993 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of carvedilol's antiproliferative effects, with celiprolol serving only as a comparator agent and no pharmacokinetic parameters reported. |
 | PD | Sung_1993 | not_relevant | 0 | 0 | The paper reports that celiprolol stimulated DNA synthesis at a single concentration (10 µM) but does not provide a concentration-response curve or numeric PD parameters (e.g., EC50, Emax) for celiprolol. |
-| PGx | Tanaka_2013 | not_relevant | 0 | 0 | The study investigates a food-drug interaction (grapefruit juice) affecting OATP transporters, not a pharmacogenomic effect based on gene variants or genotypes. |
+| PGx | Tanaka_2013 | not_relevant | 0 | 0 | The study investigates the effect of grapefruit juice (a food-drug interaction) on celiprolol pharmacokinetics, not the effect of a gene variant or genotype. |
 | popPK | Taylor_1986 | irrelevant | 0 | 0 | The text is a pharmacodynamic review discussing hemodynamic effects and lacks any quantitative pharmacokinetic parameters for celiprolol. |
 | PD | Taylor_1986 | not_relevant | 1 | 0 | The text is a qualitative review of the pharmacological mechanisms of beta-blockers and celiprolol, containing no numeric PD parameters, concentration-effect data, or dose-response curves. |
 | popPK | Taylor_1988 | irrelevant | 0 | 0 | The text is a qualitative review of pharmacological properties and does not report any quantitative pharmacokinetic parameters for celiprolol. |

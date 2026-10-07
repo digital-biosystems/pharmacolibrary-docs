@@ -27,13 +27,13 @@ Bopindolol is a non-selective beta blocker that was used for cardiovascular cond
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-01 15:53 | 0:25 | 0/1/0 | 0/0/0 | 0/0/0 | 2,226/411 | ollama / glm-5.3-flash | 0 | 0/0 | 0/0 | 0 |
+| 2026-10-07 00:24 | 0:42 | 0/1/0 | 0/0/0 | 0/0/0 | 2,501/273 | ollama / qwen3.8:27b-mtp-q8_0 | 0 | 0/0 | 0/0 | 0 |
 
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.429). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>route_to: `human_review`</sub> | [Aellig_1986_reference](drugs/drug_bopindolol/Bopindolol_Aellig1986_reference.md) | — | 1-compartment (no model) | 2 | Aellig WH et al., Relationship between plasma concentrati…, British journal of clinical… (1986) | [10.1111/j.1365-2125.1986.tb02821.x](https://doi.org/10.1111/j.1365-2125.1986.tb02821.x) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.429). The first reading is what the record holds.">cross-check: disputed</span><br><sub>STALE — current validate: rejected</sub><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>route_to: `human_review`</sub> | [Aellig_1986_reference](drugs/drug_bopindolol/Bopindolol_Aellig1986_reference.md) | — | 1-compartment (no model) | 2 | Aellig WH et al., Relationship between plasma concentrati…, British journal of clinical… (1986) | [10.1111/j.1365-2125.1986.tb02821.x](https://doi.org/10.1111/j.1365-2125.1986.tb02821.x) |
 
 ## ADME sites
 
@@ -55,29 +55,29 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 ## Coverage
 
 - **PubMed hits:** 8 matched, 8 returned
-- **screened:** 1  ·  **relevant:** 1
-- **records:** 1  ·  extracted 0  ·  needs_review 0  ·  rejected 1  ·  stale 0
+- **screened:** 1  ·  **relevant:** 0
+- **records:** 1  ·  extracted 0  ·  needs_review 0  ·  rejected 1  ·  stale 1
 - **scholar-agent fallback query used:** not captured
 
 ## Full text wanted
 
-_3 paper(s) judged relevant from the abstract, with no full text on disk — paywalled, or the resolver could not reach them. Follow the DOI, then save the PDF into `papers/` as `&lt;save as&gt;.pdf` and re-run the extraction._
+_2 paper(s) judged relevant from the abstract, with no full text on disk — paywalled, or the resolver could not reach them. Follow the DOI, then save the PDF into `papers/` as `&lt;save as&gt;.pdf` and re-run the extraction._
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Aellig_1986.pdf` | Aellig WH et al., Relationship between plasma concentrati…, British journal of clinical… (1986) | popPK | 8 | [10.1111/j.1365-2125.1986.tb02821.x](https://doi.org/10.1111/j.1365-2125.1986.tb02821.x) | [2868747](https://pubmed.ncbi.nlm.nih.gov/2868747) | The abstract reports quantitative PK parameters (half-lives of 0.3 h, 4 h, 8 h; bioavailability 70%) for bopindolol, though specific clearance or volume values are not explicitly listed. |
-| `Platzer_1984.pdf` | Platzer R et al., Simultaneous modeling of bopindolol kin…, Clinical pharmacology and t… (1984) | popPK | 8 | [10.1038/clpt.1984.130](https://doi.org/10.1038/clpt.1984.130) | [6329585](https://pubmed.ncbi.nlm.nih.gov/6329585) | The paper reports a PK/PD study for bopindolol with a half-life of 4-5 hours, but specific quantitative parameters like clearance (CL) and volume (V) are not explicitly listed in the provided text. |
+| `Platzer_1984.pdf` | Platzer R et al., Simultaneous modeling of bopindolol kin…, Clinical pharmacology and t… (1984) | popPK | 9 | [10.1038/clpt.1984.130](https://doi.org/10.1038/clpt.1984.130) | [6329585](https://pubmed.ncbi.nlm.nih.gov/6329585) | The study reports a compartmental PK model and half-life for bopindolol, but specific numeric values for clearance or volume are not explicitly listed in the provided text. |
 | `Grevel_1986.pdf` | Grevel J, Pharmacodynamic models of various beta…, Journal of cardiovascular p… (1986) | pd | 5 | not captured | [2439812](https://www.ncbi.nlm.nih.gov/pubmed/2439812) | metadata signals extractable PD data (Pharmacodynamicmodel) |
 
-<sub>queue written 2026-10-01T15:53:09.505737+00:00</sub>
+<sub>queue written 2026-10-07T00:24:38.996842+00:00</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
+| popPK | Aellig_1986 | irrelevant | 0 | 0 | no_text gate: only 127 chars of text extracted (&lt; 400) |
 | PGx | Dayer_1985 | not_relevant | 5 | 2 | The paper reports that the genetic polymorphism was only significant for metoprolol and implies no significant effect for bopindolol, failing to report a specific pharmacogenomic effect for the target drug. |
 | popPK | Grevel_1986 | irrelevant | 0 | 0 | no_text gate: only 109 chars of text extracted (&lt; 400) |
-| popPK | Platzer_1984 | relevant | 8 | 2 | The paper reports a PK/PD study for bopindolol with a half-life of 4-5 hours, but specific quantitative parameters like clearance (CL) and volume (V) are not explicitly listed in the provided text. |
+| popPK | Platzer_1984 | relevant | 9 | 2 | The study reports a compartmental PK model and half-life for bopindolol, but specific numeric values for clearance or volume are not explicitly listed in the provided text. |
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-09-29 01:04 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-10-07 00:24 UTC</sub>

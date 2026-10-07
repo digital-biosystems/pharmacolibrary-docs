@@ -12,8 +12,8 @@
 - **what it is:** qualitative — the paper links the gene to the drug but states no effect size on a model parameter, so it changes no model.
 - **source:** this paper, `Shahin_2018` — [doi](https://doi.org/10.1161/JAHA.117.006463)
 - **gene:** SNX9
-- **mechanism:** not stated in the paper
-- **applies to:** not stated in the paper
+- **mechanism:** target — the gene's product is what the drug acts on
+- **applies to:** pharmacodynamics (response)
 - **parameter it changes:** NIL (`Q100`)
 - **effect:** not quantified
 - **phenotype groups:** the paper's genotype groups were not mapped to standard phenotypes
@@ -41,8 +41,8 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `applies_to` | unknown | not captured | mismatch |
-| `gpt-oss:120b` | `mechanism` | unknown | not captured | mismatch |
+| `gpt-oss:120b` | `applies_to` | pd | not captured | mismatch |
+| `gpt-oss:120b` | `mechanism` | target | not captured | mismatch |
 | `gpt-oss:120b` | `target_parameter_id` | Q100 | not captured | mismatch |
 
 </details>

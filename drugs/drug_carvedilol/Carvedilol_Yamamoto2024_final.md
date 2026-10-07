@@ -1,10 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C07A&quot;,&quot;href&quot;:&quot;atc/C07A.md&quot;},{&quot;label&quot;:&quot;carvedilol&quot;,&quot;href&quot;:&quot;drugs/drug_carvedilol/&quot;},{&quot;label&quot;:&quot;Yamamoto_2024 \u00b7 final&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Carvedilol_McTavish1993_reference&quot;,&quot;label&quot;:&quot;McTavish_1993_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_carvedilol/Carvedilol_McTavish1993_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Carvedilol_Nikolic2013_reference&quot;,&quot;label&quot;:&quot;Nikolic_2013_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_carvedilol/Carvedilol_Nikolic2013_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Carvedilol_Yamamoto2024_final&quot;,&quot;label&quot;:&quot;Yamamoto_2024_final&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_carvedilol/Carvedilol_Yamamoto2024_final.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Carvedilol_Yamamoto2024_final_s_carvedilol_final_model_estim&quot;,&quot;label&quot;:&quot;Yamamoto_2024_final_s_carvedilol_final_model_estimate_rse&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_carvedilol/Carvedilol_Yamamoto2024_final_s_carvedilol_final_model_estim.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # carvedilol — `Carvedilol_Yamamoto2024_final`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.188). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.8). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -12,7 +13,7 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
-**Model:** No model was generated from this record.
+**Model:** A simulatable model was generated — see the **Models** and **Simulation** tabs.
 
 ### Reviewer guidance
 
@@ -20,9 +21,11 @@
 
 The model links carvedilol to (R)- and (S)-carvedilol by interconversion, but the check for unreachable or orphan compartments or unlinked metabolites failed, meaning some species has no path from the administered dose. A reported unit could not be expressed in SI units, so one parameter was left without a usable numeric value. A second reader also disagreed on several extracted values, e.g. assigning the 0.3 bioavailability to (R)-carvedilol rather than (S)-carvedilol and reading the links as metabolism from racemic carvedilol rather than interconversion. Extracted — carvedilol: kabs 0.095 1/h, CL 18.2 L/h, V1 5.81 L, Q 1.54 L/h, V2 23.2 L, Fab 0.3 fixed, Frel 0.17, t1/2ka 0.49 h; (S)-carvedilol: Fab 0.3 fixed.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has rac-carvedilol, the second reading carvedilol (racemic); it also differs on 12 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which molecule was measured: this record has (S)-carvedilol, the second reading S-carvedilol; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by glm-5.3-flash</sub>
+
+> ⚠️ **STALE** — review status `rejected` (reviewed 2026-10-05 09:25:16.575815+00:00) predates the upstream re-run (2026-10-07 00:34:00.812822+00:00). Current validate status: `extracted`.
 
 > **Dose compound ≠ measured compound:** dosed `rac-carvedilol`, measured `(S)-carvedilol`.
 
@@ -31,28 +34,23 @@ Yamamoto PA et al., Rerouting cardiovascular management fol…, British journal 
   ·  DOI: [10.1111/bcp.16129](https://doi.org/10.1111/bcp.16129)
 
 ## Model component
-<dbs-pgx drug="carvedilol" model-id="Carvedilol_Yamamoto2024_final" status="rejected" stale="false" population="nonobese, obese, and post-gastric bypass subjects" measured-compound="(S)-carvedilol" parameterization="mechanistic" topology="general_linear"></dbs-pgx>
+<dbs-pgx drug="carvedilol" model-id="Carvedilol_Yamamoto2024_final" status="extracted" stale="true" population="nonobese, obese, and post-RYGB patients" measured-compound="(S)-carvedilol" parameterization="mechanistic" topology="2C"></dbs-pgx>
 
-**Model structure:** general linear; no model was built for this record.  
-**Parameters:** 9 extracted.
+**Model structure:** 2-compartment, oral mammillary model — template `PK_2C_enteral`.  
+**Parameters:** 7 extracted.
 
 **Parameterization:** mechanistic.
 
 ## Parameters
-> ⚠️ This record is not accepted (current status `rejected`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
-
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| ka_1_pop | `Q49` · kabs | 0.095 | 1/h | 2.638888888888889e-05 | 1/h | 8.89 | llm (0.6) | Yamamoto_2024_table_1:row0:col1 | — | not captured |
-| Cl_pop | `Q22` · CL | 18.21 | L/h | 5.058333333333334e-06 | L/h | 8.44 | llm (0.6) | Yamamoto_2024_table_1:row6:col1 | — | not captured |
-| V1_pop | `Q63` · V1 | 5.81 | L | 0.00581 | L | 21.6 | llm (0.6) | Yamamoto_2024_table_1:row8:col1 | — | not captured |
-| Q_pop | `Q30` · Q | 1.54 | L/h | 4.277777777777778e-07 | L/h | 0.09 | llm (0.6) | Yamamoto_2024_table_1:row9:col1 | — | not captured |
-| V2_pop | `Q64` · V2 | 23.21 | L | 0.02321 | L | 66.4 | llm (0.6) | Yamamoto_2024_table_1:row10:col1 | — | not captured |
-| F | `Q40` · Fab | 0.30 | fixed | not captured | [fixed] | not captured | exact (1.0) | Yamamoto_2024_table_1:row11:col1 | — | not captured |
+| ka1pop | `Q49` · kabs | 0.095 | 1/h | 2.638888888888889e-05 | 1/h | 8.89 | llm (0.6) | Yamamoto_2024_table_1:row0:col1 | — | not captured |
+| F1pop | `Q40` · Fab | 0.28 | not captured | not captured | not captured | 0.31 | llm (0.6) | Yamamoto_2024_table_1:row2:col1 | — | 0.77 (14.5% RSE) |
+| Clpop | `Q22` · CL | 18.21 | L/h | 5.058333333333334e-06 | L/h | 8.44 | llm (0.6) | Yamamoto_2024_table_1:row6:col1 | — | 0.58 (10.0% RSE) |
+| V1pop | `Q63` · V1 | 5.81 | L | 0.00581 | L | 21.6 | llm (0.6) | Yamamoto_2024_table_1:row8:col1 | — | 0.96 (15.8% RSE) |
+| Qpop | `Q30` · Q | 1.54 | L/h | 4.277777777777778e-07 | L/h | 0.09 | llm (0.6) | Yamamoto_2024_table_1:row9:col1 | — | not captured |
+| V2pop | `Q64` · V2 | 23.21 | L | 0.02321 | L | 66.4 | llm (0.6) | Yamamoto_2024_table_1:row10:col1 | — | 0.71 (66.1% RSE) |
 | BIO1 | `Q87` · Frel | 0.17 | not captured | not captured | not captured | 0.36 | llm (0.6) | Yamamoto_2024_table_1:row12:col1 | — | not captured |
-| θka1 | `Q95` · t1/2ka | 0.49 | h | 1764.0 | h | 15.0 | llm (0.6) | Yamamoto_2024_table_1:row15:col1 | — | not captured |
-| bioavailability (F) of (R)-carvedilol | `Q40` · Fab | 0.3 | fixed | not captured | not captured | not captured | llm_confirmed (0.6) | fig_5:caption | — | not captured |
-| θTIag2 | `Q900` · θTIag2 | 0.8 | not captured | not captured | not captured | not captured | not captured (not captured) | not captured | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -61,42 +59,69 @@ Yamamoto PA et al., Rerouting cardiovascular management fol…, British journal 
 
 ## Departures & gaps
 
+**Deviations:**
+- `defaulted_parameters`: ['Tlag']
+
 **Interpretation flags:**
-- dropped duplicate Q49 ('ka_2_pop', value '0.43') — already have one for this compound
-- dropped unlinked row (NIL): 'F1_pop' — extend the ontology if this is a real PK parameter (source ['Yamamoto_2024_table_1:row2:col1'])
-- dropped unlinked row (NIL): 'RYGB on F1' — extend the ontology if this is a real PK parameter (source ['Yamamoto_2024_table_1:row3:col1'])
-- dropped unlinked row (NIL): 'TIag2_pop' — extend the ontology if this is a real PK parameter (source ['Yamamoto_2024_table_1:row4:col1'])
-- dropped duplicate Q22 ('log(MR Met/OH-time) on Cl', value '-0.21') — already have one for this compound
+- dropped duplicate Q49 ('ka2pop', value '0.43') — already have one for this compound
+- dropped unlinked row (NIL): 'RVGB on F1' — extend the ontology if this is a real PK parameter (source ['Yamamoto_2024_table_1:row3:col1'])
+- dropped unlinked row (NIL): 'TIag2pop' — extend the ontology if this is a real PK parameter (source ['Yamamoto_2024_table_1:row4:col1'])
+- dropped unlinked row (NIL): 'log(MRmet/MTmet) on Cl' — extend the ontology if this is a real PK parameter (source ['Yamamoto_2024_table_1:row7:col1'])
 - dropped duplicate Q87 ('BIO2', value '0.33') — already have one for this compound
-- dropped duplicate Q95 ('θka2', value '0.22') — already have one for this compound
-- dropped duplicate Q40 ('θF1', value '0.77') — already have one for this compound
-- kept covariate coefficient θTIag2=0.8 (covariate TIag2) — not an ontology parameter
-- dropped duplicate Q22 ('θCL', value '0.58') — already have one for this compound
-- dropped duplicate Q63 ('θV1', value '0.96') — already have one for this compound
-- dropped duplicate Q64 ('θV2', value '0.71') — already have one for this compound
-- dropped unlinked row (NIL): 'Proportional (b)' — extend the ontology if this is a real PK parameter (source ['Yamamoto_2024_table_1:row24:col1'])
-- dropped PD-category row 'baseline effect (E 0 )' → Q324 (E0, category G11) — pharmacodynamic parameters belong to scholarpd, not the PK model (source ['fig_5:caption'])
-- dropped PD-category row 'E max' → Q320 (Emax, category G11) — pharmacodynamic parameters belong to scholarpd, not the PK model (source ['fig_5:caption'])
-- dropped PD-category row 'concentration at 50% of the E max (EC 50 )' → Q321 (EC50, category G11) — pharmacodynamic parameters belong to scholarpd, not the PK model (source ['fig_5:caption'])
-- unit inherited for Fab (Q40): 'fixed' from a same-Q-code sibling (this row's label had no unit)
-- implicit units: 'ka_1_pop' → 1/h (from the popPK convention: 'Absorption rate constants (ka) are first-order rate constants, conventionally expressed in 1/h. The value 0.095 is consi')
-- implicit units: 'Cl_pop' → L/h (from the popPK convention: 'Clearance (Cl) is conventionally expressed in L/h for population PK models. The value 18.21 is consistent with this unit')
-- implicit units: 'V1_pop' → L (from the popPK convention: 'Volume of distribution (V1) is conventionally expressed in L. The value 5.81 is consistent with this unit.')
-- implicit units: 'Q_pop' → L/h (from the popPK convention: 'Intercompartmental clearance (Q) is conventionally expressed in L/h. The value 1.54 is consistent with this unit.')
-- implicit units: 'V2_pop' → L (from the popPK convention: 'Volume of distribution (V2) is conventionally expressed in L. The value 23.21 is consistent with this unit.')
-- implicit units: 'θka1' → h (from the popPK convention: 'Half-life (t1/2) is a time parameter, conventionally expressed in hours (h). The value 0.49 is consistent with this unit')
+- implicit units: 'ka1pop' → 1/h (from the popPK convention: 'ka is an absorption rate constant; the standard unit in population PK is 1/h, consistent with the value 0.095.')
+- implicit units: 'Clpop' → L/h (from the popPK convention: 'Cl is total clearance; the standard unit in population PK is L/h, consistent with the value 18.21.')
+- implicit units: 'V1pop' → L (from the popPK convention: 'V1 is the volume of distribution of the central compartment; the standard unit in population PK is L, consistent with th')
+- implicit units: 'Qpop' → L/h (from the popPK convention: 'Q is intercompartmental clearance; the standard unit in population PK is L/h, consistent with the value 1.54.')
+- implicit units: 'V2pop' → L (from the popPK convention: 'V2 is the volume of distribution of the peripheral compartment; the standard unit in population PK is L, consistent with')
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=(S)-carvedilol
-- held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
-- topology: transfer parameter unlinked (Q100) — add Kfm/formation-rate/rate-constant to the ontology; routing to review
-- status held at route_to_review — not promoted
-- model-stage split: '(r)-carvedilol final model estimate (rse %)' is the final model of Yamamoto_2024 (paper reports 2 stages: (r)-carvedilol final model estimate (rse %), (s)-carvedilol final model estimate (rse %)); same population, different model-building step
+- model-stage split: '(r)-carvedilol: final model estimate (rse %)' is the final model of Yamamoto_2024 (paper reports 2 stages: (r)-carvedilol: final model estimate (rse %), (s)-carvedilol: final model estimate (rse %)); same population, different model-building step
 - molar mass: none of 1 PubChem candidate(s) is '(S)-carvedilol' (LLM) — left in mass units
 - molar mass: none found for '(S)-carvedilol' — its concentrations stay mass-only
 - skipped review gap-fill of TLAG: primary's parameterization (rate-constant / ka-only) does not use it
 
 **Extraction notes:**
 - no TEI final-model table id; trying text-pointer table recovery
-- text-pointer recovery: parsed 0 structural record(s) from the flattened table 1 sentence
+- LLM selected parameter table(s) 1
+- unparsed cell Yamamoto_2024_table_1:row0:col3 = '0.10 (0.08; 0.12)'
+- unparsed cell Yamamoto_2024_table_1:row0:col6 = '0.15 (0.09; 0.23)'
+- unparsed cell Yamamoto_2024_table_1:row1:col3 = '0.42 (0.39; 0.48)'
+- unparsed cell Yamamoto_2024_table_1:row1:col6 = '0.55 (0.47; 0.68)'
+- unparsed cell Yamamoto_2024_table_1:row2:col3 = '0.25 (0.20; 0.41)'
+- unparsed cell Yamamoto_2024_table_1:row2:col6 = '0.36 (0.18; 0.51)'
+- unparsed cell Yamamoto_2024_table_1:row3:col3 = '1.96 (1.47; 2.47)'
+- unparsed cell Yamamoto_2024_table_1:row3:col6 = '1.57 (0.87; 2.42)'
+- unparsed cell Yamamoto_2024_table_1:row4:col3 = '0.14 (0.09; 0.25)'
+- unparsed cell Yamamoto_2024_table_1:row4:col6 = '0.09 (0.05; 0.17)'
+- unparsed cell Yamamoto_2024_table_1:row6:col3 = '17.17 (14.19; 20.19)'
+- unparsed cell Yamamoto_2024_table_1:row6:col6 = '17.37 (12.85; 21.39)'
+- unparsed cell Yamamoto_2024_table_1:row7:col3 = '−0.21 (−0.32; −0.12)'
+- unparsed cell Yamamoto_2024_table_1:row8:col3 = '5.61 (3.91; 8.08)'
+- unparsed cell Yamamoto_2024_table_1:row8:col6 = '4.90 (2.62; 8.45)'
+- unparsed cell Yamamoto_2024_table_1:row9:col3 = '2.43 (1.51; 4.17)'
+- unparsed cell Yamamoto_2024_table_1:row9:col6 = '10.63 (4.21; 18.76)'
+- unparsed cell Yamamoto_2024_table_1:row10:col3 = '37.81 (10.98; 260.72)'
+- unparsed cell Yamamoto_2024_table_1:row10:col6 = '131.58 (27.28; 580.51)'
+- unparsed cell Yamamoto_2024_table_1:row12:col3 = '0.18 (0.15; 0.23)'
+- unparsed cell Yamamoto_2024_table_1:row12:col6 = '0.07 (0.06; 0.09)'
+- unparsed cell Yamamoto_2024_table_1:row13:col3 = '0.28 (0.22; 0.35)'
+- unparsed cell Yamamoto_2024_table_1:row13:col6 = '0.13 (0.10; 0.16)'
+- unparsed cell Yamamoto_2024_table_1:row14:col3 = '0.51 (0.40; 0.65)'
+- unparsed cell Yamamoto_2024_table_1:row14:col6 = '0.30 (0.12; 0.46)'
+- unparsed cell Yamamoto_2024_table_1:row15:col3 = '0.20 (0.11; 0.28)'
+- unparsed cell Yamamoto_2024_table_1:row15:col6 = '0.19 (0.09; 0.29)'
+- unparsed cell Yamamoto_2024_table_1:row16:col3 = '0.66 (0.48; 0.83)'
+- unparsed cell Yamamoto_2024_table_1:row16:col6 = '0.61 (0.32; 0.91)'
+- unparsed cell Yamamoto_2024_table_1:row17:col3 = '0.78 (0.59; 0.94)'
+- unparsed cell Yamamoto_2024_table_1:row17:col6 = '0.94 (0.63; 1.28)'
+- unparsed cell Yamamoto_2024_table_1:row18:col3 = '0.59 (0.48; 0.70)'
+- unparsed cell Yamamoto_2024_table_1:row18:col6 = '0.57 (0.45; 0.70)'
+- unparsed cell Yamamoto_2024_table_1:row19:col3 = '1.07 (0.81; 1.40)'
+- unparsed cell Yamamoto_2024_table_1:row19:col6 = '1.07 (0.55; 1.63)'
+- unparsed cell Yamamoto_2024_table_1:row20:col6 = '0.70 (0.41; 1.13)'
+- unparsed cell Yamamoto_2024_table_1:row21:col3 = '1.20 (0.51; 2.85)'
+- unparsed cell Yamamoto_2024_table_1:row21:col6 = '1.31 (0.68; 3.72)'
+- unparsed cell Yamamoto_2024_table_1:row22:col3 = '0.24 (0.22; 0.26)'
+- unparsed cell Yamamoto_2024_table_1:row22:col6 = '0.26 (0.24; 0.29)'
 - LLM region Yamamoto_2024:results_prose: no JSON records returned
 
 ## Validation
@@ -106,25 +131,16 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.188 (3/16 fields) | 13 |
+| `gpt-oss:120b` | not confirmed | 0.8 (16/20 fields) | 4 |
 
-<details><summary>13 field(s) a reader read differently</summary>
+<details><summary>4 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `model.links` | [['carvedilol', '(r)-carvedilol', 'interconversion'], ['carvedilol', '(s)-carvedilol', 'interconversion']] | [['carvedilol (racemic)', '(s)-carvedilol', 'metabolism'], ['carvedilol (racemic)', '(r)-carvedilol', 'metabolism']] | mismatch |
 | `gpt-oss:120b` | `parameters[bio1]` | 0.17 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[bioavailability (f) of (r)-carvedilol]` | 0.3 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[cl_pop]` | 18.21 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[f (r)-carvedilol]` | not captured | 0.3 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[f]` | 0.30 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[ka_1_pop]` | 0.095 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[q_pop]` | 1.54 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[v1_pop]` | 5.81 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[v2_pop]` | 23.21 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[θka1]` | 0.49 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[θtiag2]` | 0.8 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `screen.dose_compound` | rac-carvedilol | carvedilol (racemic) | mismatch |
+| `gpt-oss:120b` | `parameters[bioavailability (f) of (r)-carvedilol]` | not captured | 0.30 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[rvgb on f1]` | not captured | 1.93 | only_one_extracted |
+| `gpt-oss:120b` | `screen.primary_analyte` | (S)-carvedilol | S-carvedilol | mismatch |
 
 </details>
 
@@ -138,7 +154,7 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 9 | not captured | not captured | not captured |
+| C0_has_structural_params | pass | not captured | 7 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Yamamoto_2024_table_1:row6:col1'] |
@@ -146,9 +162,8 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 | C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['Yamamoto_2024_table_1:row0:col1'] |
 | C5_dimension_Q63 | pass | [length] ** 3 | not captured | not captured | not captured | ['Yamamoto_2024_table_1:row8:col1'] |
 | C5_dimension_Q64 | pass | [length] ** 3 | not captured | not captured | not captured | ['Yamamoto_2024_table_1:row10:col1'] |
-| C5_dimension_Q95 | pass | [time] | not captured | not captured | not captured | ['Yamamoto_2024_table_1:row15:col1'] |
 | C6_cl_magnitude | pass | &lt;= 90.0 L/h | 18.21 | not captured | not captured | ['Yamamoto_2024_table_1:row6:col1'] |
-| C8_topology | fail | ontology-linked transfer parameter on every edge | ['none', 'none'] | not captured | not captured | not captured |
+| C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
 | C9_phys_window_Q22 | pass | clearance within physiological range | 18.2 L/h | not captured | not captured | ['Yamamoto_2024_table_1:row6:col1'] |
 | C9_phys_window_Q63 | pass | volume within physiological range | 5.81 L | not captured | not captured | ['Yamamoto_2024_table_1:row8:col1'] |
 | C9_phys_window_Q64 | pass | volume within physiological range | 23.2 L | not captured | not captured | ['Yamamoto_2024_table_1:row10:col1'] |
@@ -165,15 +180,30 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
-## Models
+## Downloadable models
 
-<p>No downloads: this record is <b>rejected</b>, so it is not published as a model. Any archives generated for it before the verdict have been removed — a download outlives the page that explains it.</p>
+<div class="pk-models-grid"><div class="pk-models-table">
+<table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_carvedilol/Carvedilol_Yamamoto2024_final/Carvedilol_Yamamoto2024_final_modelica.zip" download>Carvedilol_Yamamoto2024_final_modelica.zip</a> <span class="pk-size">(5.0 kB)</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_carvedilol/Carvedilol_Yamamoto2024_final/Carvedilol_Yamamoto2024_final_fmi.zip" download>Carvedilol_Yamamoto2024_final_fmi.zip</a> <span class="pk-size">(4.2 kB)</span><br><a href="models/fmu/PK_2C_enteral.fmu" download>PK_2C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_carvedilol/Carvedilol_Yamamoto2024_final/Carvedilol_Yamamoto2024_final_matlab.zip" download>Carvedilol_Yamamoto2024_final_matlab.zip</a> <span class="pk-size">(3.3 kB)</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_carvedilol/Carvedilol_Yamamoto2024_final/Carvedilol_Yamamoto2024_final_matlab_simbio.zip" download>Carvedilol_Yamamoto2024_final_matlab_simbio.zip</a> <span class="pk-size">(2.7 kB)</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_carvedilol/Carvedilol_Yamamoto2024_final/Carvedilol_Yamamoto2024_final_sbml.zip" download>Carvedilol_Yamamoto2024_final_sbml.zip</a> <span class="pk-size">(2.6 kB)</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_carvedilol/Carvedilol_Yamamoto2024_final/Carvedilol_Yamamoto2024_final_cellml.zip" download>Carvedilol_Yamamoto2024_final_cellml.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
+</tbody></table>
+<p>Each archive holds the model source, a script that simulates it against the appropriate library, and a README describing both and how to run them.</p>
+<p><b>FMI is two downloads.</b> The archive holds this record's parameters and its driver; the simulator itself is <code>PK_2C_enteral.fmu</code>, one compiled template shared by every model of this structure. Take the FMU once, keep it beside the script (or pass <code>--fmu PATH</code>). Running it reproduces the model-specific FMU exactly.</p>
+</div><figure class="pk-models-diagram"><img src="drugs/drug_carvedilol/Carvedilol_Yamamoto2024_final/Carvedilol_Yamamoto2024_final.svg" alt="Carvedilol_Yamamoto2024_final diagram"><figcaption>Model diagram (Modelica) using Pharmacolibrary v26.09 components, rendered by OpenModelica 1.26.7.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+**Administration: oral** — 25 mg, single dose, first-order absorption (ka 0.095 /h, F 0.3). Doses in the paper: 25, 50 mg.
+
+<dbs-fmusim paramsurl="drugs/drug_carvedilol/Carvedilol_Yamamoto2024_final/Carvedilol_Yamamoto2024_final_params.json" metaurl="assets/fmu/PK_2C_enteral.vr.json" wasmurl="assets/fmu/PK_2C_enteral.js" controlsurl="drugs/drug_carvedilol/Carvedilol_Yamamoto2024_final/Carvedilol_Yamamoto2024_final_sim_controls.json"></dbs-fmusim>
+
+<sub>Runs this record's model in the browser as WebAssembly. Sliders start at the extracted values; the reference check compares the browser's peak against the FMPy result recorded when the record was built, and is withheld once a value has been edited. Template `PK_2C_enteral` · parameters `Carvedilol_Yamamoto2024_final_params.json` · controls `Carvedilol_Yamamoto2024_final_sim_controls.json`. A slider marked *simulator value* is running on the template's own default because this record does not pin that parameter.</sub>
 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-07-15 10:53 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 00:34 UTC</sub>

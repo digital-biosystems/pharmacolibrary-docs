@@ -36,9 +36,7 @@ Liu XQ et al., Plasma bevantolol concentration and hea…, Zhongguo yao li xue b
 | role | label (paper) | Q-code · name | value | unit | value_si | link | source |
 |---|---|---|---|---|---|---|---|
 | PD (effect) | K(eo) | `Q326` · not captured | 0.03 +/- 0.02 | min-1 | not captured | llm (not captured) | Liu_1993:pdv3 |
-| PD (effect) | K(eo) | `Q326` · not captured | 0.029 +/- 0.009 | min-1 | not captured | llm (not captured) | Liu_1993:pdv3 |
 | PD (effect) | EC50 | `Q321` · not captured | 0.2 +/- 0.1 | microgram.ml-1 | not captured | llm (not captured) | Liu_1993:pdv3 |
-| PD (effect) | EC50 | `Q321` · not captured | 0.27 +/- 0.14 | microgram.ml-1 | not captured | llm (not captured) | Liu_1993:pdv3 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

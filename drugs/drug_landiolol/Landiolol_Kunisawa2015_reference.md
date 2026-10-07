@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C07A&quot;,&quot;href&quot;:&quot;atc/C07A.md&quot;},{&quot;label&quot;:&quot;landiolol&quot;,&quot;href&quot;:&quot;drugs/drug_landiolol/&quot;},{&quot;label&quot;:&quot;Kunisawa_2015 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Landiolol_Honda2008_reference&quot;,&quot;label&quot;:&quot;Honda_2008_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_landiolol/Landiolol_Honda2008_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Landiolol_Kunisawa2015_reference&quot;,&quot;label&quot;:&quot;Kunisawa_2015_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_landiolol/Landiolol_Kunisawa2015_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Landiolol_Kunisawa2015v2_reference&quot;,&quot;label&quot;:&quot;Kunisawa_2015_2_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_landiolol/Landiolol_Kunisawa2015v2_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Landiolol_Kunisawa2015_reference&quot;,&quot;label&quot;:&quot;Kunisawa_2015_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_landiolol/Landiolol_Kunisawa2015_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Landiolol_Kunisawa2015v2_reference&quot;,&quot;label&quot;:&quot;Kunisawa_2015_2_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_landiolol/Landiolol_Kunisawa2015v2_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # landiolol — `Landiolol_Kunisawa2015_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span>
+> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.143). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -21,9 +21,11 @@
 
 The record lists five parameters for landiolol, including a lag time of 0.634 min, but the review found only four parameters covered. The absorption lag time was neither emitted nor included in the defaulted list, causing a parameter coverage failure. Because the record was built from the abstract alone, these summary statistics stand in for a fitted model. Extracted — landiolol: CL 34 mL/min/kg, V1 74.9 mL/kg, Q 70.9 mL/min/kg, V2 38.9 mL/kg, tlag 0.634 min.
 
-Independently confirmed by `gpt-oss:120b`.
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has landiolol hydrochloride, the second reading unknown; it also differs on 11 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by qwen3.8:27b-mtp-q8_0</sub>
+
+> ⚠️ **STALE** — review status `needs_review` (reviewed 2026-09-29 08:52:02.773497+00:00) predates the upstream re-run (2026-10-06 23:55:10.850575+00:00). Current validate status: `extracted`.
 
 > **Dose compound ≠ measured compound:** dosed `landiolol hydrochloride`, measured `landiolol`.
 
@@ -32,7 +34,7 @@ Kunisawa T et al., Target-controlled infusion and populati…, Journal of anesth
   ·  DOI: [10.1007/s00540-014-1908-5](https://doi.org/10.1007/s00540-014-1908-5)
 
 ## Model component
-<dbs-pgx drug="landiolol" model-id="Landiolol_Kunisawa2015_reference" status="needs_review" stale="false" population="gynecologic patients" measured-compound="landiolol" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<dbs-pgx drug="landiolol" model-id="Landiolol_Kunisawa2015_reference" status="extracted" stale="true" population="gynecologic patients" measured-compound="landiolol" parameterization="mechanistic" topology="2C"></dbs-pgx>
 
 **Model structure:** 2-compartment, IV mammillary model — template `PK_2C`.  
 **Parameters:** 5 extracted.
@@ -40,8 +42,6 @@ Kunisawa T et al., Target-controlled infusion and populati…, Journal of anesth
 **Parameterization:** mechanistic.
 
 ## Parameters
-> ⚠️ This record is not accepted (current status `needs_review`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
-
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
 | total body clearance (CL) | `Q22` · CL | 34.0 | mL/min/kg | 3.966666666666667e-05 | [ml] / [[min] · [kg]] | not captured | llm_confirmed (0.6) | Kunisawa_2015:abstract | — | not captured |
@@ -67,14 +67,31 @@ Kunisawa T et al., Target-controlled infusion and populati…, Journal of anesth
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--green">cross-checked ✓</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | confirmed | 1.0 (9/9 fields) | none |
+| `gpt-oss:120b` | not confirmed | 0.143 (2/14 fields) | 12 |
 
-_Every reader agrees on every compared field of this record._
+<details><summary>12 field(s) a reader read differently</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss:120b` | `parameters[distribution volume of the central compartment]` | 74.9 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[distribution volume of the central compartment]` | not captured | 74.9 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[distribution volume of the peripheral compartment]` | 38.9 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[distribution volume of the peripheral compartment]` | not captured | 38.9 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[inter-compartmental clearance]` | 70.9 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[inter-compartmental clearance]` | not captured | 70.9 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[lag time]` | 0.634 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[lag time]` | not captured | 0.634 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[total body clearance]` | 34.0 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[total body clearance]` | not captured | 34.0 | only_one_extracted |
+| `gpt-oss:120b` | `screen.dose_compound` | landiolol hydrochloride | unknown | mismatch |
+| `gpt-oss:120b` | `screen.primary_analyte` | landiolol | unknown | mismatch |
+
+</details>
 
 <details class="legend">
 <summary>Cross-check legend</summary>
@@ -130,8 +147,8 @@ _Every reader agrees on every compared field of this record._
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_landiolol/Landiolol_Kunisawa2015_reference/Landiolol_Kunisawa2015_reference_modelica.zip" download>Landiolol_Kunisawa2015_reference_modelica.zip</a> <span class="pk-size">(3.8 kB)</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_landiolol/Landiolol_Kunisawa2015_reference/Landiolol_Kunisawa2015_reference_modelica.zip" download>Landiolol_Kunisawa2015_reference_modelica.zip</a> <span class="pk-size">(4.1 kB)</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_landiolol/Landiolol_Kunisawa2015_reference/Landiolol_Kunisawa2015_reference_fmi.zip" download>Landiolol_Kunisawa2015_reference_fmi.zip</a> <span class="pk-size">(4.1 kB)</span><br><a href="models/fmu/PK_2C.fmu" download>PK_2C.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_landiolol/Landiolol_Kunisawa2015_reference/Landiolol_Kunisawa2015_reference_matlab.zip" download>Landiolol_Kunisawa2015_reference_matlab.zip</a> <span class="pk-size">(3.3 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_landiolol/Landiolol_Kunisawa2015_reference/Landiolol_Kunisawa2015_reference_matlab_simbio.zip" download>Landiolol_Kunisawa2015_reference_matlab_simbio.zip</a> <span class="pk-size">(2.7 kB)</span></td></tr>
 <tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_landiolol/Landiolol_Kunisawa2015_reference/Landiolol_Kunisawa2015_reference_sbml.zip" download>Landiolol_Kunisawa2015_reference_sbml.zip</a> <span class="pk-size">(2.5 kB)</span></td></tr>
@@ -152,4 +169,4 @@ _Every reader agrees on every compared field of this record._
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-09-29 04:04 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-06 23:55 UTC</sub>

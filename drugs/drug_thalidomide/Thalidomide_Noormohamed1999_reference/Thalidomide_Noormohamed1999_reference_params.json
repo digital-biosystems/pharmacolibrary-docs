@@ -1,0 +1,32 @@
+{
+ "dose_source": "WHO ATC DDD 100 mg oral (L04AX02)",
+ "model_id": "Thalidomide_Noormohamed1999_reference",
+ "molar_masses": {
+  "central.C": 0.2582295
+ },
+ "note": "Values for the shared PK_1C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "parameters": {
+  "Cl": 2.8888888888888894e-06,
+  "F": 1.0,
+  "MM": 0.2582295,
+  "Tlag": 2628.0,
+  "VdPerKg": 0.0009985714285714285,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 0.0001,
+  "ka": 0.00011111111111111112,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 17189.90562135704
+ },
+ "reference_peaks": {
+  "central.C": 0.0007963726853708439
+ },
+ "stop_time": 111600.0,
+ "template": "PK_1C_enteral",
+ "template_fmu": "PK_1C_enteral.fmu"
+}

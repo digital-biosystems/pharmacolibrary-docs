@@ -8,11 +8,17 @@
 - **molar mass:** 292.2 g/mol (C13H19Cl2NO2) — DrugBank
 - **groups:** experimental
 
+## About
+
+Cloranolol is a non-selective beta blocker that has been used as an antihypertensive drug. It is considered experimental and does not appear to be an approved medicine today.
+
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q4859862](https://www.wikidata.org/wiki/Q4859862) and the WHO ATC classification; not checked by a person.</small>
+
 ## Extraction summary
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-01 16:14 | 0:45 | 0/0/0 | 0/0/0 | 0/0/0 | 3,458/216 | ollama / glm-5.3-flash | 0 | 0/0 | 0/0 | 0 |
+| 2026-10-07 01:53 | 0:22 | 0/0/0 | 0/0/0 | 0/0/0 | 2,786/98 | ollama / qwen3.8:27b-mtp-q8_0 | 0 | 0/0 | 0/0 | 0 |
 
 ## popPK records
 
@@ -44,7 +50,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Grosu_1991 | irrelevant | 0 | 0 | The study evaluates the pharmacodynamics of tobanum (not cloranolol) and does not report quantitative pharmacokinetic parameters. |
+| popPK | Grosu_1991 | irrelevant | 0 | 0 | The study evaluates the pharmacodynamics of tobanum (not cloranolol) and does not report quantitative pharmacokinetic parameters for cloranolol. |
 | PD | Grosu_1991 | not_relevant | 0 | 0 | The paper studies tobanum, not cloranolol, and reports only qualitative clinical efficacy and timing without numeric PD parameters. |
 
 ---

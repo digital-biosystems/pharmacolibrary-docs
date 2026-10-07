@@ -5,7 +5,7 @@
 
 # propranolol — `Propranolol_Takechi2018_reference`
 
-> ## <span class="pk-badge pk-badge--green" title="covariates_not_exercised: the record defines covariate effects (weight on clearance, renal function …) but the engineer simulated only the reference individual, so those scenarios were never run. The base model still reproduces the paper; what is missing is the covariate curves.">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.909). The first reading is what the record holds.">cross-check: partial</span>
+> ## <span class="pk-badge pk-badge--green" title="covariates_not_exercised: the record defines covariate effects (weight on clearance, renal function …) but the engineer simulated only the reference individual, so those scenarios were never run. The base model still reproduces the paper; what is missing is the covariate curves.">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.8). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -23,11 +23,11 @@
 
 The base model was simulated, not the covariate effects the record defines.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of 12: this record has none, the second reading 324. That field does not shape the model.
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has propranolol, the second reading unknown; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
-> ⚠️ **STALE** — review status `accepted_with_caveats` (reviewed 2026-09-29 08:52:10.583980+00:00) predates the upstream re-run (2026-10-04 00:35:38.929852+00:00). Current validate status: `extracted`.
+> ⚠️ **STALE** — review status `accepted_with_caveats` (reviewed 2026-09-29 08:52:10.583980+00:00) predates the upstream re-run (2026-10-07 00:44:36.562895+00:00). Current validate status: `extracted`.
 
 ## Citation
 Takechi T et al., Population Pharmacokinetics and Pharmac…, Journal of clinical pharmac… (2018)
@@ -78,18 +78,19 @@ Takechi T et al., Population Pharmacokinetics and Pharmac…, Journal of clinica
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | partly confirmed | 0.909 (10/11 fields) | 1 |
+| `gpt-oss:120b` | not confirmed | 0.8 (8/10 fields) | 2 |
 
-<details><summary>1 field(s) a reader read differently</summary>
+<details><summary>2 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `parameters[12]` | not captured | 324 | only_one_extracted |
+| `gpt-oss:120b` | `screen.dose_compound` | propranolol | unknown | mismatch |
+| `gpt-oss:120b` | `screen.primary_analyte` | propranolol | unknown | mismatch |
 
 </details>
 
@@ -146,8 +147,8 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_propranolol/Propranolol_Takechi2018_reference/Propranolol_Takechi2018_reference_modelica.zip" download>Propranolol_Takechi2018_reference_modelica.zip</a> <span class="pk-size">(4.3 kB)</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_propranolol/Propranolol_Takechi2018_reference/Propranolol_Takechi2018_reference_modelica.zip" download>Propranolol_Takechi2018_reference_modelica.zip</a> <span class="pk-size">(4.7 kB)</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_propranolol/Propranolol_Takechi2018_reference/Propranolol_Takechi2018_reference_fmi.zip" download>Propranolol_Takechi2018_reference_fmi.zip</a> <span class="pk-size">(4.3 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_propranolol/Propranolol_Takechi2018_reference/Propranolol_Takechi2018_reference_matlab.zip" download>Propranolol_Takechi2018_reference_matlab.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_propranolol/Propranolol_Takechi2018_reference/Propranolol_Takechi2018_reference_matlab_simbio.zip" download>Propranolol_Takechi2018_reference_matlab_simbio.zip</a> <span class="pk-size">(2.8 kB)</span></td></tr>
 <tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_propranolol/Propranolol_Takechi2018_reference/Propranolol_Takechi2018_reference_sbml.zip" download>Propranolol_Takechi2018_reference_sbml.zip</a> <span class="pk-size">(2.6 kB)</span></td></tr>
@@ -168,4 +169,4 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-04 00:35 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 00:44 UTC</sub>

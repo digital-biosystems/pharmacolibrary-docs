@@ -27,13 +27,20 @@ Metipranolol is a non-selective beta blocker that was used to treat open-angle g
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-29 04:25 | 7:32 | 0/0/1 | 0/0/0 | 0/0/0 | 36,813/8,823 | ollama / qwen3.8:27b-mtp-q8_0 | 0 | 0/0 | 0/0 | 0 |
+| 2026-10-07 01:45 | 3:53 | 1/0/0 | 0/1/1 | 0/0/0 | 42,044/11,100 | ollama / qwen3.8:27b-mtp-q8_0 | 0 | 0/0 | 0/0 | 0 |
 
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.167). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub><br><sub>blocking: C6_cl_magnitude failed (ratio None)</sub><br><sub>route_to: `human_review`</sub> | [Abshagen_1982_reference](drugs/drug_metipranolol/Metipranolol_Abshagen1982_reference.md) | — | 1-compartment (no model) | 9 | Abshagen U et al., Pharmacokinetics of metipranolol in nor…, European journal of clinica… (1982) | [10.1007/BF00637616](https://doi.org/10.1007/BF00637616) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.474). The first reading is what the record holds.">cross-check: disputed</span><br><sub>STALE — current validate: extracted</sub><br><sub>route_to: `engineer_replication`</sub> | [Abshagen_1982_reference](drugs/drug_metipranolol/Metipranolol_Abshagen1982_reference.md) | held back | 1-compartment, oral | 10 | Abshagen U et al., Pharmacokinetics of metipranolol in nor…, European journal of clinica… (1982) | [10.1007/BF00637616](https://doi.org/10.1007/BF00637616) |
+
+## Pharmacodynamics (PD)
+
+| status | detail | about | model | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--orange">needs review</span> | [Lapka_1990_inhibition_of_exercise_induced_tachycardia](drugs/drug_metipranolol/pd_Lapka_1990_inhibition_of_exercise_induced_tachycardia.md) | inhibition of exercise-induced tachycardia ← deacetylmetipranolol · direct Emax (saturable) effect | model (no simulator) | Lapka R et al., Pharmacokinetics and pharmacodynamics o…, European journal of clinica… (1990) | [10.1007/BF00315024](https://doi.org/10.1007/BF00315024) |
+| <span class="pk-badge pk-badge--red">rejected</span> | [Janků_1992_HR](drugs/drug_metipranolol/pd_Jank_1992_HR.md) | heart rate ← deacetylmetipranolol · direct Emax (saturable) effect | — | Janků I et al., Disposition kinetics and concentration-…, European journal of clinica… (1992) | [10.1007/BF00266359](https://doi.org/10.1007/BF00266359) |
 
 ## ADME sites
 
@@ -56,7 +63,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 - **PubMed hits:** 21 matched, 21 returned
 - **screened:** 1  ·  **relevant:** 1
-- **records:** 1  ·  extracted 0  ·  needs_review 1  ·  rejected 0  ·  stale 0
+- **records:** 1  ·  extracted 1  ·  needs_review 0  ·  rejected 0  ·  stale 1
 - **scholar-agent fallback query used:** True
 
 ## Full text wanted
@@ -65,32 +72,32 @@ _6 paper(s) judged relevant from the abstract, with no full text on disk — pay
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Abshagen_1982.pdf` | Abshagen U et al., Pharmacokinetics of metipranolol in nor…, European journal of clinica… (1982) | popPK | 10 | [10.1007/BF00637616](https://doi.org/10.1007/BF00637616) | [6120080](https://pubmed.ncbi.nlm.nih.gov/6120080) | The paper reports quantitative pharmacokinetic parameters (clearance, volume, half-life) for metipranolol (as deacetyl metipranolol) with specific numeric values present in the text. |
-| `Janků_1992.pdf` | Janků I et al., Disposition kinetics and concentration-…, European journal of clinica… (1992) | popPK | 9 | [10.1007/BF00266359](https://doi.org/10.1007/BF00266359) | [1349528](https://pubmed.ncbi.nlm.nih.gov/1349528) | The study reports quantitative PK parameters (clearance, volume, half-life) for metipranolol, but the specific numeric values are not present in the provided abstract text. |
-| `Lapka_1990.pdf` | Lapka R et al., Pharmacokinetics and pharmacodynamics o…, European journal of clinica… (1990) | popPK | 8 | [10.1007/BF00315024](https://doi.org/10.1007/BF00315024) | [1971217](https://pubmed.ncbi.nlm.nih.gov/1971217) | The study reports PK parameters for metipranolol, but only Mean Residence Time (MRT) and concentration metrics are explicitly provided in the text, lacking standard clearance (CL) or volume (V) values. |
-| `Motán_1991.pdf` | Motán J et al., [Kinetics of metipranolol in patients w…, Vnitrni lekarstvi (1991) | popPK | 8 | not captured | [1674391](https://pubmed.ncbi.nlm.nih.gov/1674391) | The study reports pharmacokinetic parameters for metipranolol, but the specific numeric values are not present in the provided evidence text. |
-| `Seyfried_1982.pdf` | Seyfried C et al., [Pharmacokinetics of the beta-receptor…, Deutsche medizinische Woche… (1982) | popPK | 8 | [10.1055/s-2008-1069864](https://doi.org/10.1055/s-2008-1069864) | [6120063](https://pubmed.ncbi.nlm.nih.gov/6120063) | The study investigates the pharmacokinetics of metipranolol in humans and reports specific kinetic parameters like Tmax (0.37-0.76 hours) and qualitative clearance findings, but lacks explicit numeric values for CL, V, or half-life in the provided text. |
+| `Abshagen_1982.pdf` | Abshagen U et al., Pharmacokinetics of metipranolol in nor…, European journal of clinica… (1982) | popPK | 10 | [10.1007/BF00637616](https://doi.org/10.1007/BF00637616) | [6120080](https://pubmed.ncbi.nlm.nih.gov/6120080) | The study reports quantitative pharmacokinetic parameters (clearance, volume, half-life) for deacetyl metipranolol, the active metabolite of metipranolol, in humans. |
+| `Janků_1992.pdf` | Janků I et al., Disposition kinetics and concentration-…, European journal of clinica… (1992) | popPK | 9 | [10.1007/BF00266359](https://doi.org/10.1007/BF00266359) | [1349528](https://pubmed.ncbi.nlm.nih.gov/1349528) | The study reports quantitative PK parameters (clearance, volume, half-life) for the active metabolite deacetylmetipranolol, but specific numeric values are not present in the provided abstract text. |
+| `Lapka_1990.pdf` | Lapka R et al., Pharmacokinetics and pharmacodynamics o…, European journal of clinica… (1990) | popPK | 9 | [10.1007/BF00315024](https://doi.org/10.1007/BF00315024) | [1971217](https://pubmed.ncbi.nlm.nih.gov/1971217) | The study reports PK parameters (MRT, Cmax, Tmax) for metipranolol in humans, but specific values for clearance (CL) and volume (V) are not explicitly listed in the provided text. |
+| `Motán_1991.pdf` | Motán J et al., [Kinetics of metipranolol in patients w…, Vnitrni lekarstvi (1991) | popPK | 9 | not captured | [1674391](https://pubmed.ncbi.nlm.nih.gov/1674391) | The study reports pharmacokinetic parameters (clearance, half-life) for metipranolol in humans, but the specific numeric values are not present in the provided evidence text. |
+| `Seyfried_1982.pdf` | Seyfried C et al., [Pharmacokinetics of the beta-receptor…, Deutsche medizinische Woche… (1982) | popPK | 8 | [10.1055/s-2008-1069864](https://doi.org/10.1055/s-2008-1069864) | [6120063](https://pubmed.ncbi.nlm.nih.gov/6120063) | The study reports pharmacokinetic parameters for metipranolol in humans, but the evidence only provides qualitative descriptions and specific Tmax values, lacking the core quantitative disposition parameters (CL, V, t1/2) required for extraction. |
 | `Wiederholt_1995.pdf` | Wiederholt M et al., Regulation of outflow rate and resistan…, Experimental eye research (1995) | pd | 4 | [10.1016/s0014-4835(05)80042-9](https://doi.org/10.1016/s0014-4835(05)80042-9) | [7556486](https://www.ncbi.nlm.nih.gov/pubmed/7556486) | metadata signals extractable PD data (EC50) |
 
-<sub>queue written 2026-09-29T04:22:09.810721+00:00</sub>
+<sub>queue written 2026-10-07T01:42:14.625562+00:00</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
 | PD | Battershill_1988 | not_relevant | 2 | 1 | The text is a qualitative review summarizing clinical efficacy (percent IOP reduction) without providing specific concentration-effect data, dose-response curves, or numeric PD parameters like Emax or EC50. |
-| popPK | Bauer_1991 | irrelevant | 0 | 0 | The study evaluates systemic pharmacodynamic effects (beta-blockade) rather than pharmacokinetic parameters, and no PK values are reported. |
+| popPK | Bauer_1991 | irrelevant | 0 | 0 | The study evaluates systemic physiological effects (beta-blockade) rather than pharmacokinetic parameters like clearance or volume. |
 | PD | Bauer_1991 | not_relevant | 2 | 1 | The paper reports qualitative comparisons of systemic beta-blockade potency (betaxolol &lt; metipranolol &lt; timolol) based on shifts in isoproterenol dose-response curves, but does not provide numeric PD parameters (e.g., EC50, Emax) or concentration-effect data for metipranolol. |
-| popPK | Janků_1992 | relevant | 9 | 2 | The study reports quantitative PK parameters (clearance, volume, half-life) for metipranolol, but the specific numeric values are not present in the provided abstract text. |
-| popPK | Lapka_1990 | relevant | 8 | 4 | The study reports PK parameters for metipranolol, but only Mean Residence Time (MRT) and concentration metrics are explicitly provided in the text, lacking standard clearance (CL) or volume (V) values. |
+| popPK | Janků_1992 | relevant | 9 | 2 | The study reports quantitative PK parameters (clearance, volume, half-life) for the active metabolite deacetylmetipranolol, but specific numeric values are not present in the provided abstract text. |
+| popPK | Lapka_1990 | relevant | 9 | 4 | The study reports PK parameters (MRT, Cmax, Tmax) for metipranolol in humans, but specific values for clearance (CL) and volume (V) are not explicitly listed in the provided text. |
 | popPK | Mikulecký_1986 | irrelevant | 0 | 0 | no_text gate: only 66 chars of text extracted (&lt; 400) |
-| popPK | Motán_1991 | relevant | 8 | 0 | The study reports pharmacokinetic parameters for metipranolol, but the specific numeric values are not present in the provided evidence text. |
+| popPK | Motán_1991 | relevant | 9 | 0 | The study reports pharmacokinetic parameters (clearance, half-life) for metipranolol in humans, but the specific numeric values are not present in the provided evidence text. |
 | PD | Noack_1986 | not_relevant | 2 | 1 | The text is a qualitative review discussing lipophilicity and general efficacy, mentioning "supramaximal concentrations" without providing any numeric PD parameters, dose-response curves, or quantitative exposure-response data. |
-| popPK | Ochs_1986 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of isosorbide mononitrate and dinitrate, with metipranolol serving only as a co-administered beta-blocker comparator. |
-| popPK | Seyfried_1982 | relevant | 8 | 2 | The study investigates the pharmacokinetics of metipranolol in humans and reports specific kinetic parameters like Tmax (0.37-0.76 hours) and qualitative clearance findings, but lacks explicit numeric values for CL, V, or half-life in the provided text. |
-| popPK | Wiederholt_1995 | irrelevant | 0 | 0 | The study is a physiological investigation of aqueous humor outflow in bovine eyes where metipranolol is used only as a pharmacological blocker, with no pharmacokinetic parameters reported. |
+| popPK | Ochs_1986 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of isosorbide mononitrate and dinitrate, with metipranolol serving only as a co-administered beta-blocker. |
+| popPK | Seyfried_1982 | relevant | 8 | 2 | The study reports pharmacokinetic parameters for metipranolol in humans, but the evidence only provides qualitative descriptions and specific Tmax values, lacking the core quantitative disposition parameters (CL, V, t1/2) required for extraction. |
+| popPK | Wiederholt_1995 | irrelevant | 0 | 0 | no_text gate: only 92 chars of text extracted (&lt; 400) |
 | PD | Wiederholt_1995 | not_relevant | 1 | 0 | The paper reports PD parameters (EC50, max effect) for carbachol, pilocarpine, and endothelin, but metipranolol is only mentioned qualitatively as a blocker of epinephrine's effect without any numeric dose-response or concentration-effect data. |
-| popPK | de_1989 | irrelevant | 0 | 0 | The study assesses pharmacodynamic effects (beta-blockade) rather than pharmacokinetic parameters, and no quantitative PK values are reported. |
+| popPK | de_1989 | irrelevant | 0 | 0 | The study assesses pharmacodynamic effects (beta-blockade via isoproterenol dose-response) rather than quantitative pharmacokinetic parameters like clearance or volume. |
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-09-29 04:22 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-10-07 01:42 UTC</sub>

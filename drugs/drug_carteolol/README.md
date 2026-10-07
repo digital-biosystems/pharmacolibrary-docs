@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C07A&quot;,&quot;href&quot;:&quot;atc/C07A.md&quot;},{&quot;label&quot;:&quot;carteolol&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Carteolol_Ishizaki1983_reference&quot;,&quot;label&quot;:&quot;Ishizaki_1983_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_carteolol/Carteolol_Ishizaki1983_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Carteolol_Ishizaki1983_reference&quot;,&quot;label&quot;:&quot;Ishizaki_1983_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_carteolol/Carteolol_Ishizaki1983_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 # carteolol
 
@@ -27,21 +27,21 @@ Carteolol is a non-selective beta blocker used to treat arterial hypertension an
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-29 01:37 | 5:42 | 1/0/0 | 1/0/0 | 0/0/0 | 33,728/5,505 | ollama / qwen3.8:27b-mtp-q8_0 | 1 | 1/0 | 1/0 | 0 |
+| 2026-10-07 00:30 | 3:10 | 1/0/0 | 1/0/0 | 0/0/0 | 46,351/7,256 | ollama / qwen3.8:27b-mtp-q8_0 | 1 | 1/0 | 1/0 | 0 |
 
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.786). The first reading is what the record holds.">cross-check: partial</span> | [Ishizaki_1983_reference](drugs/drug_carteolol/Carteolol_Ishizaki1983_reference.md) | ▶ model + simulator | 2-compartment, IV | 7 | Ishizaki T et al., Pharmacokinetics and absolute bioavaila…, European journal of clinica… (1983) | [10.1007/BF00544023](https://doi.org/10.1007/BF00544023) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.15). The first reading is what the record holds.">cross-check: disputed</span><br><sub>STALE — current validate: extracted</sub><br><sub>route_to: `engineer_replication`</sub> | [Ishizaki_1983_reference](drugs/drug_carteolol/Carteolol_Ishizaki1983_reference.md) | ▶ model + simulator | 2-compartment, IV | 7 | Ishizaki T et al., Pharmacokinetics and absolute bioavaila…, European journal of clinica… (1983) | [10.1007/BF00544023](https://doi.org/10.1007/BF00544023) |
 
 ## Pharmacodynamics (PD)
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by glm-5.3-flash, p(non-human) 1.00).">rat</span> | [Floreani_2004_HR](drugs/drug_carteolol/pd_Floreani_2004_HR.md) | heart rate ← carteolol · direct Emax (saturable) effect | — | Floreani M et al., Characterization of intrinsic sympathom…, Journal of pharmacological… (2004) | [10.1254/jphs.95.115](https://doi.org/10.1254/jphs.95.115) |
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by glm-5.3-flash, p(non-human) 1.00).">rat</span> | [Floreani_2004_force_of_contraction](drugs/drug_carteolol/pd_Floreani_2004_force_of_contraction.md) | force of contraction ← carteolol · direct Emax (saturable) effect | — | Floreani M et al., Characterization of intrinsic sympathom…, Journal of pharmacological… (2004) | [10.1254/jphs.95.115](https://doi.org/10.1254/jphs.95.115) |
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by glm-5.3-flash, p(non-human) 1.00).">rat</span> | [Floreani_2004_vascular_relaxation_of_pre_contracted_arteries](drugs/drug_carteolol/pd_Floreani_2004_vascular_relaxation_of_pre_contracted_arteries.md) | vascular relaxation of pre-contracted arteries ← carteolol · direct Emax (saturable) effect | — | Floreani M et al., Characterization of intrinsic sympathom…, Journal of pharmacological… (2004) | [10.1254/jphs.95.115](https://doi.org/10.1254/jphs.95.115) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by glm-5.3-flash, p(non-human) 1.00).">rat</span> | [Floreani_2004_adenylate_cyclase_activity](drugs/drug_carteolol/pd_Floreani_2004_adenylate_cyclase_activity.md) | cAMP production ← carteolol · direct sigmoid Emax (Hill) effect | — | Floreani M et al., Characterization of intrinsic sympathom…, Journal of pharmacological… (2004) | [10.1254/jphs.95.115](https://doi.org/10.1254/jphs.95.115) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by glm-5.3-flash, p(non-human) 1.00).">rat</span> | [Floreani_2004_chronotropic_effect](drugs/drug_carteolol/pd_Floreani_2004_chronotropic_effect.md) | heart rate ← carteolol · stimulation effect | — | Floreani M et al., Characterization of intrinsic sympathom…, Journal of pharmacological… (2004) | [10.1254/jphs.95.115](https://doi.org/10.1254/jphs.95.115) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by glm-5.3-flash, p(non-human) 1.00).">rat</span> | [Floreani_2004_inotropic_effect](drugs/drug_carteolol/pd_Floreani_2004_inotropic_effect.md) | force of contraction ← carteolol · direct sigmoid Emax (Hill) effect | model (no simulator) | Floreani M et al., Characterization of intrinsic sympathom…, Journal of pharmacological… (2004) | [10.1254/jphs.95.115](https://doi.org/10.1254/jphs.95.115) |
 
 ## ADME sites
 
@@ -64,7 +64,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 - **PubMed hits:** 14 matched, 14 returned
 - **screened:** 1  ·  **relevant:** 1
-- **records:** 1  ·  extracted 1  ·  needs_review 0  ·  rejected 0  ·  stale 0
+- **records:** 1  ·  extracted 1  ·  needs_review 0  ·  rejected 0  ·  stale 1
 - **scholar-agent fallback query used:** not captured
 
 ## Full text wanted
@@ -73,19 +73,19 @@ _4 paper(s) judged relevant from the abstract, with no full text on disk — pay
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Ishizaki_1983.pdf` | Ishizaki T et al., Pharmacokinetics and absolute bioavaila…, European journal of clinica… (1983) | popPK | 10 | [10.1007/BF00544023](https://doi.org/10.1007/BF00544023) | [6137389](https://pubmed.ncbi.nlm.nih.gov/6137389) | The paper reports quantitative pharmacokinetic parameters (CL, V, t1/2) for carteolol in humans with all numeric values explicitly present in the text. |
+| `Ishizaki_1983.pdf` | Ishizaki T et al., Pharmacokinetics and absolute bioavaila…, European journal of clinica… (1983) | popPK | 10 | [10.1007/BF00544023](https://doi.org/10.1007/BF00544023) | [6137389](https://pubmed.ncbi.nlm.nih.gov/6137389) | The paper reports quantitative pharmacokinetic parameters (CL, V, t1/2) for carteolol in humans with all numeric values explicitly present in the abstract. |
 | `Zhao_1998.pdf` | Zhao J et al., Carteolol is a weak partial agonist on…, Canadian journal of physiol… (1998) | pd | 4 | [10.1139/cjpp-76-4-428](https://doi.org/10.1139/cjpp-76-4-428) | [9795752](https://www.ncbi.nlm.nih.gov/pubmed/9795752) | metadata signals extractable PD data (EC50) |
 | `Ishii_2002.pdf` | Ishii Y et al., Pharmacokinetic and pharmacodynamic dif…, Journal of clinical pharmac… (2002) | pgx | 8 | not captured | [12211218](https://www.ncbi.nlm.nih.gov/pubmed/12211218) | metadata signals extractable PGX data (CYP2D6, PK/PD-context) |
 | `Kudo_1999.pdf` | Kudo S et al., Pharmacokinetics of haloperidol: an upd…, Clinical pharmacokinetics (1999) | pgx | 8 | [10.2165/00003088-199937060-00001](https://doi.org/10.2165/00003088-199937060-00001) | [10628896](https://www.ncbi.nlm.nih.gov/pubmed/10628896) | metadata signals extractable PGX data (CYP3A4, PK/PD-context) |
 
-<sub>queue written 2026-09-29T01:34:14.012383+00:00</sub>
+<sub>queue written 2026-10-07T00:27:13.172402+00:00</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Floreani_2004 | irrelevant | 0 | 0 | The study is an in-vitro pharmacological investigation of intrinsic sympathomimetic activity and receptor binding, reporting no pharmacokinetic parameters such as clearance, volume, or half-life. |
-| popPK | Hester_1994 | irrelevant | 0 | 0 | The study is an in-vitro pharmacological investigation of vascular relaxing properties and does not report any pharmacokinetic parameters for carteolol. |
+| popPK | Floreani_2004 | irrelevant | 0 | 0 | The study is an in vitro pharmacological investigation of carteolol's intrinsic sympathomimetic activity in isolated rat tissues, reporting no pharmacokinetic parameters such as clearance, volume, or half-life. |
+| popPK | Hester_1994 | irrelevant | 0 | 0 | The study is an in-vitro pharmacological investigation of vascular relaxing properties and does not report pharmacokinetic parameters. |
 | PGx | Ishii_2002 | not_relevant | 2 | 10 | The study compares pharmacokinetic and pharmacodynamic parameters between two administration routes (ocular vs. nasal) in a single genotype group (extensive metabolizers), rather than comparing different genotypes to establish a pharmacogenomic effect. |
 | PGx | Kudo_1997 | not_relevant | 0 | 0 | The paper identifies CYP2D6 as the enzyme metabolizing carteolol using cDNA-expressed systems but does not report pharmacogenomic effects of specific gene variants on PK/PD parameters. |
 | PGx | Kudo_1998 | not_relevant | 0 | 0 | The paper investigates the metabolism of haloperidol and its interaction with CYP2D6 using carteolol as a probe substrate, but it does not report pharmacogenomic effects on the PK or PD parameters of carteolol itself. |
@@ -96,4 +96,4 @@ _4 paper(s) judged relevant from the abstract, with no full text on disk — pay
 | PD | Zhao_1998 | not_relevant | 0 | 0 | The paper describes the pharmacological mechanism (partial agonism) but does not report a quantitative exposure-response or dose-response analysis with numeric PD parameters. |
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-09-29 01:34 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-10-07 00:27 UTC</sub>

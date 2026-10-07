@@ -16,7 +16,7 @@
 
 **As extracted:** Propranolol (concentrations from the PK model of Salehifar_2017::female) drives percentage reduction in exercise heart rate (in %): direct Emax (saturable) effect.
 
-**Model:** No model was generated from this record.
+**Model:** A model was generated (see the **Models** tab); it has no in-browser simulator.
 
 - **paper:** `Lalonde_1987`
 - **model family:** `emax`
@@ -40,20 +40,56 @@ Lalonde RL et al., Propranolol pharmacodynamic modeling us…, Journal of pharma
 </details>
 
 
+## Exposure-response model
+
+`Propranolol_Lalonde1987_PD_percentage_reduction_in_exercise` — sigmoid_emax, `response = E0 + Emax*frac`
+
+| parameter | value (paper units) | SI |
+|---|---|---|
+| E0 | 0 | — |
+| Emax | -33.6 % | -0.336 1 |
+| EC50 | 18.2 ng/ml | 1.82e-05 kg/m3 |
+| gamma | 1 | — |
+
+Closed-form check points (response, SI): `at_0` = 0, `at_EC50` = -0.168, `at_inf` = -0.336
+
+Deviations:
+
+- `defaulted_parameters` — E0, gamma
+- `pd_binding_imax_as_negative_emax` — Imax (Q323) enters SigmoidEmaxSweep as −Emax
+
+## Review
+
+Verdict <span class="pk-badge pk-badge--orange">needs review</span> · route to `scholar`
+
+| check | status | note |
+|---|---|---|
+| `T0_driver` | pass | driver is the drug, a synonym or one of its metabolites (or unnamed) |
+| `T1_closed_form` | pass | engineer's check points reproduced from the bound parameters |
+| `T1b_fmu` | skipped | template FMU / fmpy not available — advisory only |
+| `T2_direction` | pass | the response falls, as direct effect predicts |
+| `T3_plausibility` | pass | EC50, gamma, Imax and baseline in range |
+| `T4_defaults` | fail | a core parameter took a library default: E0 |
+
+Advisory:
+
+- defaulted: E0 — a row the paper has and the record lacks
+
+
 <div class="pk-tab-mark" data-tab="Models"></div>
 
 ## Downloadable models
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_propranolol/Propranolol_Lalonde1987_PD_percentage_reduction_in_exercise/Propranolol_Lalonde1987_PD_percentage_reduction_in_exercise_modelica.zip" download>Propranolol_Lalonde1987_PD_percentage_reduction_in_exercise_modelica.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_propranolol/Propranolol_Lalonde1987_PD_percentage_reduction_in_exercise/Propranolol_Lalonde1987_PD_percentage_reduction_in_exercise_matlab.zip" download>Propranolol_Lalonde1987_PD_percentage_reduction_in_exercise_matlab.zip</a> <span class="pk-size">(3.3 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_propranolol/Propranolol_Lalonde1987_PD_percentage_reduction_in_exercise/Propranolol_Lalonde1987_PD_percentage_reduction_in_exercise_sbml.zip" download>Propranolol_Lalonde1987_PD_percentage_reduction_in_exercise_sbml.zip</a> <span class="pk-size">(2.8 kB)</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_propranolol/Propranolol_Lalonde1987_PD_percentage_reduction_in_exercise/Propranolol_Lalonde1987_PD_percentage_reduction_in_exercise_cellml.zip" download>Propranolol_Lalonde1987_PD_percentage_reduction_in_exercise_cellml.zip</a> <span class="pk-size">(2.7 kB)</span></td></tr>
 </tbody></table>
-<p>No bundles have been generated for this record yet. When the engineer emits them they appear here automatically — this page reports what is on disk and generates nothing itself.</p>
+<p>Each archive holds the model source, a script that simulates it against the appropriate library, and a README describing both and how to run them.</p>
 </div></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>

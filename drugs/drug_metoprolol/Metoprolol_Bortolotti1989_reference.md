@@ -4,7 +4,7 @@
 
 # metoprolol — `Metoprolol_Bortolotti1989_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.111). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rabbit), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rabbit</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.105). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rabbit), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rabbit</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -22,16 +22,18 @@
 
 The parameter labeled 'Plasma protein binding' with a value of 32% is defined as the unbound fraction (fu), creating a dimension mismatch. The record was built from the abstract alone, so these summary statistics stand in for a fitted model. A second reader could not verify the extracted values for clearance, AUC, or the elimination rate constant. Extracted — metoprolol: fu 32 %, CL 3.7 1/h/kg, MRT 0.77 h, AUC 0.9 mg h/l, kel 3.17 h-1, Ae 1.5 % of the administered dose.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has metoprolol, the second reading unknown; it also differs on 15 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has metoprolol, the second reading unknown; it also differs on 16 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by qwen3.8:27b-mtp-q8_0</sub>
+
+> ⚠️ **STALE** — review status `rejected` (reviewed 2026-09-29 08:52:10.271149+00:00) predates the upstream re-run (2026-10-07 00:08:09.410974+00:00). Current validate status: `rejected`.
 
 ## Citation
 Bortolotti A et al., Pharmacokinetic and pharmacodynamic mod…, European journal of drug me… (1989)
   ·  DOI: [10.1007/BF03190855](https://doi.org/10.1007/BF03190855)
 
 ## Model component
-<dbs-pgx drug="metoprolol" model-id="Metoprolol_Bortolotti1989_reference" status="rejected" stale="false" population="rabbits with liver failure" measured-compound="metoprolol" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<dbs-pgx drug="metoprolol" model-id="Metoprolol_Bortolotti1989_reference" status="rejected" stale="true" population="rabbits with liver failure" measured-compound="metoprolol" parameterization="mechanistic" topology="1C"></dbs-pgx>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 6 extracted.
@@ -83,9 +85,9 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.111 (2/18 fields) | 16 |
+| `gpt-oss:120b` | not confirmed | 0.105 (2/19 fields) | 17 |
 
-<details><summary>16 field(s) a reader read differently</summary>
+<details><summary>17 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
@@ -93,12 +95,13 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 | `gpt-oss:120b` | `parameters[amount excreted]` | not captured | 1.5 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[auc]` | 0.9 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[auc]` | not captured | 0.9 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[dose]` | not captured | 3.2 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[k10]` | 3.17 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[k10]` | not captured | 3.17 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[mrt]` | 0.77 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[mrt]` | not captured | 0.77 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[plasma protein binding, concentration-independent, normal]` | not captured | 32 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[plasma protein binding]` | 32 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[plasma protein binding]` | not captured | 32 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[terminal elimination half-life]` | not captured | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[terminal elimination half-life]` | not captured | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[total plasma drug clearance]` | 3.7 | not captured | only_one_extracted |
@@ -153,4 +156,4 @@ _No web simulator for this record: its structure has no shared WebAssembly templ
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-09-29 04:20 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 00:08 UTC</sub>

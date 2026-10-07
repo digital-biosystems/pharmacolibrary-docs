@@ -1,7 +1,7 @@
-<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C07A&quot;,&quot;href&quot;:&quot;atc/C07A.md&quot;},{&quot;label&quot;:&quot;acebutolol&quot;,&quot;href&quot;:&quot;drugs/drug_acebutolol/&quot;},{&quot;label&quot;:&quot;Oualha_2024 \u00b7 PD Intracellular amastigote viability (L. infantum LV50, Drep-14; L. major Empa-12)&quot;}]"></div>
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C07A&quot;,&quot;href&quot;:&quot;atc/C07A.md&quot;},{&quot;label&quot;:&quot;acebutolol&quot;,&quot;href&quot;:&quot;drugs/drug_acebutolol/&quot;},{&quot;label&quot;:&quot;Oualha_2024 \u00b7 PD amastigote viability&quot;}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# Intracellular amastigote viability (L. infantum LV50, Drep-14; L. major Empa-12) — PD  <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="Data from bacteria, fungi or plants, not measured in people (from an LLM reading of the title and abstract by glm-5.3-flash, p(non-human) 1.00).">other organism</span>
+# amastigote viability — PD  <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="Data from bacteria, fungi or plants, not measured in people (from an LLM reading of the title and abstract by glm-5.3-flash, p(non-human) 1.00).">other organism</span>
 
 <details class="pk-legend"><summary>What the PGx badges mean — evidence, and whether a model runs</summary><table><tbody><tr><td><span class="pk-badge pk-badge--green">quantitative</span></td><td>the paper gives the effect of each phenotype (or genotype) on a named model parameter — a θ per category.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">qualitative</span></td><td>the paper links the gene to the drug but states no effect size on a model parameter, so it changes no model.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">guideline estimate</span></td><td>the effect comes from a CPIC / DPWG dosing guideline, not from this paper's numbers.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">safety allele</span></td><td>a risk allele for an adverse reaction (an HLA type, G6PD deficiency …): it changes no PK/PD parameter.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>the extraction is incomplete or inconsistent.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted.</td></tr><tr><td><span class="pk-badge pk-badge--green">▶ simulatable</span></td><td>the paper's popPK model runs per phenotype in the browser (Simulation tab); its PGx Modelica model is under Models.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">model only</span></td><td>a PGx Modelica model exists but has no in-browser simulator.</td></tr></tbody></table></details>
 
@@ -15,7 +15,7 @@
 
 ## What this record describes
 
-**As extracted:** Acebutolol (measured concentrations) drives Intracellular amastigote viability (L. infantum LV50, Drep-14; L. major Empa-12) (in %): direct sigmoid Emax (Hill) effect.
+**As extracted:** Acebutolol (measured concentrations) drives amastigote viability (in %): direct sigmoid Emax (Hill) effect.
 
 **Model:** No model was generated from this record.
 
@@ -27,7 +27,7 @@
 - **model family:** `sigmoid_emax`
 - **driver:** `conc_no_pk`
 - **tier:** descriptive
-- **effect:** inhibition/unknown
+- **effect:** inhibition/proportional
 
 ## Citation
 Oualha R et al., Approved drugs successfully repurposed…, Frontiers in cellular and i… (2024)
@@ -36,9 +36,9 @@ Oualha R et al., Approved drugs successfully repurposed…, Frontiers in cellula
 ## Parameters
 | role | label (paper) | Q-code · name | value | unit | value_si | link | source |
 |---|---|---|---|---|---|---|---|
-| PD (effect) | IC50 (LV50) | `Q322` · not captured | 15.70 ± 2.75 | µg/mL | not captured | llm (not captured) | Oualha_2024:pdv3 |
-| PD (effect) | IC50 (Drep-14) | `Q322` · not captured | 13.84 ± 1.41 | µg/mL | not captured | llm (not captured) | Oualha_2024:pdv3 |
-| PD (effect) | IC50 (Empa-12) | `Q322` · not captured | 22.27 ± 1.59 | µg/mL | not captured | llm (not captured) | Oualha_2024:pdv3 |
+| PD (effect) | IC50 | `Q322` · not captured | 15.70 | µg/mL | not captured | llm (not captured) | Oualha_2024:pdv3 |
+| PD (effect) | IC50 | `Q322` · not captured | 13.84 | µg/mL | not captured | llm (not captured) | Oualha_2024:pdv3 |
+| PD (effect) | IC50 | `Q322` · not captured | 22.27 | µg/mL | not captured | llm (not captured) | Oualha_2024:pdv3 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

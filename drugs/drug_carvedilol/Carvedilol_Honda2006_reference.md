@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C07A&quot;,&quot;href&quot;:&quot;atc/C07A.md&quot;},{&quot;label&quot;:&quot;carvedilol&quot;,&quot;href&quot;:&quot;drugs/drug_carvedilol/&quot;},{&quot;label&quot;:&quot;Honda_2006 \u00b7 reference&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Carvedilol_McTavish1993_reference&quot;,&quot;label&quot;:&quot;McTavish_1993_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_carvedilol/Carvedilol_McTavish1993_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Carvedilol_Nikolic2013_reference&quot;,&quot;label&quot;:&quot;Nikolic_2013_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_carvedilol/Carvedilol_Nikolic2013_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Carvedilol_Yamamoto2024_final&quot;,&quot;label&quot;:&quot;Yamamoto_2024_final&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_carvedilol/Carvedilol_Yamamoto2024_final.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Carvedilol_Yamamoto2024_final_s_carvedilol_final_model_estim&quot;,&quot;label&quot;:&quot;Yamamoto_2024_final_s_carvedilol_final_model_estimate_rse&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_carvedilol/Carvedilol_Yamamoto2024_final_s_carvedilol_final_model_estim.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -34,7 +35,7 @@ Honda M et al., Multiple regression analysis of pharmac…, Biological & pharmac
 <dbs-pgx drug="carvedilol" model-id="Carvedilol_Honda2006_reference" status="rejected" stale="false" population="healthy Japanese volunteers" measured-compound="R- and S-carvedilol" parameterization="mechanistic" topology="1C"></dbs-pgx>
 
 **Model structure:** 1-compartment; no model was built for this record.  
-**Parameters:** 2 extracted.
+**Parameters:** 3 extracted.
 
 **Parameterization:** mechanistic.
 
@@ -45,6 +46,7 @@ Honda M et al., Multiple regression analysis of pharmac…, Biological & pharmac
 |---|---|---|---|---|---|---|---|---|---|---|
 | q 1 (l/h/kg) | `Q30` · Q | 1.88 | l/h/kg | 3.655555555555556e-05 | [l] / [[h] · [kg]] | not captured | space_fold (0.95) | tab_0:row2:col1, tab_0:row2:col2 | — | not captured |
 | q 3 | `Q308` · Q3 | 2.47 | L/h | 6.861111111111112e-07 | L/h | not captured | space_fold (0.95) | tab_0:row4:col1, tab_0:row4:col2 | — | not captured |
+| plasma clearance | `Q22` · CL | 36.5 | L/h | 1.0138888888888888e-05 | L/h | not captured | review_gapfill (0.7) | McTavish_1993:review | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -62,6 +64,7 @@ Honda M et al., Multiple regression analysis of pharmac…, Biological & pharmac
 - structure disagreement: deterministic 1C vs LLM 3C — review compartment count
 - molar mass: none of 7 PubChem candidate(s) is 'R- and S-carvedilol' (LLM) — left in mass units
 - molar mass: none found for 'R- and S-carvedilol' — its concentrations stay mass-only
+- gap-filled Q22 (CL) from McTavish_1993's review values (primary lacked it)
 - skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
 
 ## Validation
@@ -92,10 +95,13 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
 | C0_has_structural_params | pass | not captured | 2 | not captured | not captured | not captured |
-| C0b_disposition_core | fail | not captured | not captured | not captured | not captured | not captured |
+| C0c_disposition_complete | fail | not captured | not captured | not captured | not captured | not captured |
+| C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['McTavish_1993:review'] |
 | C5_dimension_Q30 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['tab_0:row2:col1', 'tab_0:row2:col2'] |
 | C5_dimension_Q308 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['tab_0:row4:col1', 'tab_0:row4:col2'] |
+| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 36.5 | not captured | not captured | ['McTavish_1993:review'] |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
+| C9_phys_window_Q22 | pass | clearance within physiological range | 36.5 L/h | not captured | not captured | ['McTavish_1993:review'] |
 
 <details class="legend">
 <summary>Check legend — what each column means</summary>

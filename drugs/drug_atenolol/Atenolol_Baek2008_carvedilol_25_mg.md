@@ -4,7 +4,7 @@
 
 # atenolol — `Atenolol_Baek2008_carvedilol_25_mg`
 
-> ## <span class="pk-badge pk-badge--orange">built, not shipped</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.043). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.19). The first reading is what the record holds.">cross-check: partial</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -12,7 +12,7 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
-**Model:** A model was built but held back: a core parameter had no value, so it is not published or simulated.
+**Model:** No model was generated from this record.
 
 ### Reviewer guidance
 
@@ -20,37 +20,38 @@
 
 The record lists AUC, Cmax, and clearance values for carvedilol, yet the drug is identified as atenolol. Consequently, atenolol's clearance, volume of distribution, and absorption lag time had no source values. A second reader also disagreed on the primary analyte and reported different parameter values. Extracted — carvedilol: AUCt 283 ng*h/mL, Cmax 62.7 ng/mL, tmax 1.26 h, V/F 1.56e+03 L, CL 94.6 L/h, kel 4.45 h⁻¹, kabs 4.52 h⁻¹, k21 0.19 h⁻¹, … (+2).
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has atenolol, the second reading unknown; it also differs on 21 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of auc&lt;0-24hr&gt;: this record has none, the second reading 3.05; it also differs on 16 more fields. That field does not shape the model.
 
 <sub>reviewed by qwen3.8:27b-mtp-q8_0</sub>
+
+> ⚠️ **STALE** — review status `model_quarantined` (reviewed 2026-09-29 04:00:14.385788+00:00) predates the upstream re-run (2026-10-06 23:08:26.720089+00:00). Current validate status: `needs_review`.
 
 ## Citation
 Baek IH et al., Pharmacokinetic/pharmacodynamic modelin…, Archives of pharmacal resea… (2008)
   ·  DOI: [10.1007/s12272-001-1231-4](https://doi.org/10.1007/s12272-001-1231-4)
 
 ## Model component
-<dbs-pgx drug="atenolol" model-id="Atenolol_Baek2008_carvedilol_25_mg" status="model_quarantined" stale="false" population="healthy adults" measured-compound="atenolol" parameterization="apparent" topology="1C"></dbs-pgx>
+<dbs-pgx drug="atenolol" model-id="Atenolol_Baek2008_carvedilol_25_mg" status="needs_review" stale="true" population="healthy adults" measured-compound="atenolol" parameterization="apparent" topology="1C"></dbs-pgx>
 
-**Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
-**Parameters:** 10 extracted.
+**Model structure:** 1-compartment; no model was built for this record.  
+**Parameters:** 9 extracted.
 
 **Parameterization:** V/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
 ## Parameters
-> ⚠️ This record is not accepted (current status `model_quarantined`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
+> ⚠️ This record is not accepted (current status `needs_review`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| AUC0-30hr (ng h/mL) | `Q19` · AUCt | 282.55 | ng*h/mL | not captured | ng*h/mL | not captured | llm (0.6) | Baek_2008_table_2:row1:col2 | — | not captured |
-| Cmax (ng/mL) | `Q32` · Cmax | 62.74 | ng/mL | not captured | [ng] / [ml] | not captured | exact (1.0) | Baek_2008_table_2:row2:col2 | — | not captured |
-| Tmax (h) | `Q56` · tmax | 1.26 | h | 4536.0 | [h] | not captured | exact (1.0) | Baek_2008_table_2:row3:col2 | — | not captured |
+| AUC&lt;0-30hr&gt; (ng h/mL) | `Q19` · AUCt | 282.55 | ng h/mL | not captured | [[h] · [ng]] / [ml] | not captured | llm_corrected (0.6) | Baek_2008_table_2:row1:col2 | — | not captured |
+| C&lt;max&gt; (ng/mL) | `Q32` · Cmax | 62.74 | ng/mL | not captured | [ng] / [ml] | not captured | llm (0.6) | Baek_2008_table_2:row2:col2 | — | not captured |
+| T&lt;max&gt; (h) | `Q56` · tmax | 1.26 | h | 4536.0 | [h] | not captured | llm (0.6) | Baek_2008_table_2:row3:col2 | — | not captured |
 | Volume/F (L) | `Q76` · V/F | 1561.78 | L | 1.56178 | [l] | not captured | llm (0.6) | Baek_2008_table_2:row4:col2 | — | not captured |
 | Clearance (L/h) | `Q22` · CL | 94.64 | L/h | 2.628888888888889e-05 | [l] / [h] | not captured | exact (1.0) | Baek_2008_table_2:row5:col2 | — | not captured |
-| Kel (h⁻¹) | `Q47` · kel | 4.45 | h⁻¹ | 0.0012361111111111112 | [1] / [h] | not captured | exact (1.0) | Baek_2008_table_3:row0:col2 | — | not captured |
-| Ksp (h⁻¹) | `Q49` · kabs | 4.52 | h⁻¹ | 0.0012555555555555553 | [1] / [h] | not captured | llm (0.6) | Baek_2008_table_3:row2:col2 | — | not captured |
-| Kpc (h⁻¹) | `Q302` · k21 | 0.19 | h⁻¹ | 5.277777777777778e-05 | [1] / [h] | not captured | exact (1.0) | Baek_2008_table_3:row3:col2 | — | not captured |
-| T1/α (h) | `Q59` · t1/2α | 0.68 | h | 2448.0 | [h] | not captured | llm (0.6) | Baek_2008_table_3:row4:col2 | — | not captured |
-| T1/β (h) | `Q60` · t1/2β | 15.84 | h | 57024.0 | [h] | not captured | llm (0.6) | Baek_2008_table_3:row5:col2 | — | not captured |
+| K&lt;el&gt; (h⁻¹) | `Q47` · kel | 4.45 | h⁻¹ | 0.0012361111111111112 | [1] / [h] | not captured | llm (0.6) | Baek_2008_table_3:row0:col2 | — | not captured |
+| K&lt;pc&gt; (h⁻¹) | `Q49` · kabs | 0.19 | h⁻¹ | 5.277777777777778e-05 | [1] / [h] | not captured | llm (0.6) | Baek_2008_table_3:row3:col2 | — | not captured |
+| T&lt;1/α&gt; (h) | `Q59` · t1/2α | 0.68 | h | 2448.0 | [h] | not captured | llm (0.6) | Baek_2008_table_3:row4:col2 | — | not captured |
+| T&lt;1/β&gt; (h) | `Q60` · t1/2β | 15.84 | h | 57024.0 | [h] | not captured | llm (0.6) | Baek_2008_table_3:row5:col2 | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -61,10 +62,13 @@ Baek IH et al., Pharmacokinetic/pharmacodynamic modelin…, Archives of pharmaca
 
 **Interpretation flags:**
 - unit_dimension_unknown: 'ng h/mL' (AUCt)
-- dropped duplicate Q47 ('Kb (h⁻¹)', value '0.60') — already have one for this compound
-- implicit units: 'AUC0-30hr (ng h/mL)' → ng*h/mL (from the paper text: "Table II caption and content list the parameter as '-AUC 0-30hr (ng•h/mL)'.")
+- dropped duplicate Q47 ('K&lt;e&gt; (h⁻¹)', value '0.60') — already have one for this compound
+- dropped duplicate Q47 ('K&lt;sp&gt; (h⁻¹)', value '4.52') — already have one for this compound
+- implicit units: 'AUC&lt;0-30hr&gt; (ng h/mL)' — the LLM proposed 'ng h/mL', whose dimension does not fit Q19; left unset
 - apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=atenolol
+- held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
 - structure disagreement: deterministic 1C vs LLM 2C — review compartment count
+- status held at route_to_review — not promoted
 - population split: 'carvedilol (25 mg)' subgroup of Baek_2008 (paper reports 2 populations: atenolol (50 mg), carvedilol (25 mg))
 - skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
 - skipped review gap-fill of Q: primary's parameterization (rate-constant / ka-only) does not use it
@@ -76,39 +80,34 @@ Baek IH et al., Pharmacokinetic/pharmacodynamic modelin…, Archives of pharmaca
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.043 (1/23 fields) | 22 |
+| `gpt-oss:120b` | partly confirmed | 0.19 (4/21 fields) | 17 |
 
-<details><summary>22 field(s) a reader read differently</summary>
+<details><summary>17 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `model.links` | [] | [['none', '', '']] | mismatch |
-| `gpt-oss:120b` | `parameters[auc0-24hr]` | not captured | 3.05 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[auc0-30hr]` | 282.55 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[auc&lt;0-24hr&gt;]` | not captured | 3.05 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[auc&lt;0-30hr&gt;]` | 282.55 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[c&lt;max&gt;]` | not captured | 396.14 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[c&lt;max&gt;]` | 62.74 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[clearance]` | not captured | 18.15 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[clearance]` | 94.64 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[cmax]` | not captured | 396.14 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[cmax]` | 62.74 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[kel]` | not captured | 0.58 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[kel]` | 4.45 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[kpc]` | not captured | 0.91 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[kpc]` | 0.19 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[ksp]` | 4.52 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[t1/α]` | not captured | 0.88 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[t1/α]` | 0.68 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[t1/β]` | not captured | 4.83 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[t1/β]` | 15.84 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[tmax]` | not captured | 2.87 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[tmax]` | 1.26 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[k&lt;el&gt;]` | not captured | 0.58 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[k&lt;el&gt;]` | 4.45 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[k&lt;pc&gt;]` | not captured | 0.91 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[k&lt;pc&gt;]` | 0.19 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[t&lt;1/α&gt;]` | 0.68 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[t&lt;1/β&gt;]` | not captured | 4.83 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[t&lt;1/β&gt;]` | 15.84 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[t&lt;max&gt;]` | not captured | 2.87 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[t&lt;max&gt;]` | 1.26 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[volume/f]` | not captured | 157.71 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[volume/f]` | 1561.78 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `screen.dose_compound` | atenolol | unknown | mismatch |
-| `gpt-oss:120b` | `screen.primary_analyte` | atenolol | unknown | mismatch |
 
 </details>
 
@@ -122,19 +121,18 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 10 | not captured | not captured | not captured |
+| C0_has_structural_params | pass | not captured | 9 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
-| C5_dimension_Q19 | pass | [mass] * [time] / [length] ** 3 | not captured | not captured | not captured | ['Baek_2008_table_2:row1:col2'] |
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Baek_2008_table_2:row5:col2'] |
-| C5_dimension_Q302 | pass | 1 / [time] | not captured | not captured | not captured | ['Baek_2008_table_3:row3:col2'] |
 | C5_dimension_Q32 | pass | [mass] / [length] ** 3 | not captured | not captured | not captured | ['Baek_2008_table_2:row2:col2'] |
 | C5_dimension_Q47 | pass | 1 / [time] | not captured | not captured | not captured | ['Baek_2008_table_3:row0:col2'] |
-| C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['Baek_2008_table_3:row2:col2'] |
+| C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['Baek_2008_table_3:row3:col2'] |
 | C5_dimension_Q56 | pass | [time] | not captured | not captured | not captured | ['Baek_2008_table_2:row3:col2'] |
 | C5_dimension_Q59 | pass | [time] | not captured | not captured | not captured | ['Baek_2008_table_3:row4:col2'] |
 | C5_dimension_Q60 | pass | [time] | not captured | not captured | not captured | ['Baek_2008_table_3:row5:col2'] |
 | C5_dimension_Q76 | pass | [length] ** 3 | not captured | not captured | not captured | ['Baek_2008_table_2:row4:col2'] |
+| C5_unit_missing_Q19 | fail | [mass] * [time] / [length] ** 3 | ng h/mL | not captured | not captured | ['Baek_2008_table_2:row1:col2'] |
 | C7_apparent_coherence | pass | not captured | not captured | not captured | not captured | not captured |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
 | C9_phys_window_Q22 | pass | clearance within physiological range | 94.6 L/h | not captured | not captured | ['Baek_2008_table_2:row5:col2'] |
@@ -177,12 +175,12 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
 <tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">not generated yet</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_atenolol/Atenolol_Baek2008_carvedilol_25_mg/Atenolol_Baek2008_carvedilol_25_mg_matlab.zip" download>Atenolol_Baek2008_carvedilol_25_mg_matlab.zip</a> <span class="pk-size">(3.3 kB)</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_atenolol/Atenolol_Baek2008_carvedilol_25_mg/Atenolol_Baek2008_carvedilol_25_mg_matlab_simbio.zip" download>Atenolol_Baek2008_carvedilol_25_mg_matlab_simbio.zip</a> <span class="pk-size">(2.7 kB)</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_atenolol/Atenolol_Baek2008_carvedilol_25_mg/Atenolol_Baek2008_carvedilol_25_mg_sbml.zip" download>Atenolol_Baek2008_carvedilol_25_mg_sbml.zip</a> <span class="pk-size">(2.5 kB)</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_atenolol/Atenolol_Baek2008_carvedilol_25_mg/Atenolol_Baek2008_carvedilol_25_mg_cellml.zip" download>Atenolol_Baek2008_carvedilol_25_mg_cellml.zip</a> <span class="pk-size">(2.9 kB)</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
 </tbody></table>
-<p>Each archive holds the model source, a script that simulates it against the appropriate library, and a README describing both and how to run them.</p>
+<p>No bundles have been generated for this record yet. When the engineer emits them they appear here automatically — this page reports what is on disk and generates nothing itself.</p>
 </div></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
@@ -192,4 +190,4 @@ _No web simulator for this record: its structure has no shared WebAssembly templ
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-09-28 23:53 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-06 23:08 UTC</sub>

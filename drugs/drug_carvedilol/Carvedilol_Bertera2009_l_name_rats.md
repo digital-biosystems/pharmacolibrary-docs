@@ -1,10 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C07A&quot;,&quot;href&quot;:&quot;atc/C07A.md&quot;},{&quot;label&quot;:&quot;carvedilol&quot;,&quot;href&quot;:&quot;drugs/drug_carvedilol/&quot;},{&quot;label&quot;:&quot;Bertera_2009 \u00b7 l_name_rats&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Carvedilol_McTavish1993_reference&quot;,&quot;label&quot;:&quot;McTavish_1993_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_carvedilol/Carvedilol_McTavish1993_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Carvedilol_Nikolic2013_reference&quot;,&quot;label&quot;:&quot;Nikolic_2013_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_carvedilol/Carvedilol_Nikolic2013_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Carvedilol_Yamamoto2024_final&quot;,&quot;label&quot;:&quot;Yamamoto_2024_final&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_carvedilol/Carvedilol_Yamamoto2024_final.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Carvedilol_Yamamoto2024_final_s_carvedilol_final_model_estim&quot;,&quot;label&quot;:&quot;Yamamoto_2024_final_s_carvedilol_final_model_estimate_rse&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_carvedilol/Carvedilol_Yamamoto2024_final_s_carvedilol_final_model_estim.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # carvedilol — `Carvedilol_Bertera2009_l_name_rats`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.727). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.6). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -22,19 +23,21 @@
 
 The paper gives no distribution volume and no clearance or elimination rate for carvedilol in male Wistar rats, so it is an exposure/outcome paper rather than a compartmental population PK model. A dimension mismatch was flagged on a structural parameter, and one reported unit could not be converted to SI, so that parameter was left without an SI value. A second reader also disagreed on which parameter the AUC0-180 value of 548 ng ml-1 h-1 corresponds to, and read a γ of 2.8 where this record had none; these disagreements are noted but the rejection rests on the missing volume and clearance and the failed structural-parameter check. Extracted — carvedilol: t1/2z 2.1 min, C0 1.32e+03 µg ml -1, AUCt 548 ng ml -1 h -1, AUC%ext 12.5.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on `parameters[auc 0-180].parameter_id`: this record has Q19, the second reading Q88; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has carvedilol, the second reading unknown; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by glm-5.3-flash</sub>
+
+> ⚠️ **STALE** — review status `rejected` (reviewed 2026-10-05 09:24:55.191400+00:00) predates the upstream re-run (2026-10-07 00:33:00.136001+00:00). Current validate status: `rejected`.
 
 ## Citation
 Bertera FM et al., Is urethane-chloralose anaesthesia appr…, Journal of pharmacological… (2009)
   ·  DOI: [10.1016/j.vascn.2008.10.001](https://doi.org/10.1016/j.vascn.2008.10.001)
 
 ## Model component
-<dbs-pgx drug="carvedilol" model-id="Carvedilol_Bertera2009_l_name_rats" status="rejected" stale="false" population="male Wistar rats (control and L-NAME hypertensive)" measured-compound="carvedilol" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<dbs-pgx drug="carvedilol" model-id="Carvedilol_Bertera2009_l_name_rats" status="rejected" stale="true" population="control and L-NAME hypertensive rats" measured-compound="carvedilol" parameterization="mechanistic" topology="1C"></dbs-pgx>
 
 **Model structure:** 1-compartment; no model was built for this record.  
-**Parameters:** 4 extracted.
+**Parameters:** 5 extracted.
 
 **Parameterization:** mechanistic.
 
@@ -47,6 +50,7 @@ Bertera FM et al., Is urethane-chloralose anaesthesia appr…, Journal of pharma
 | C 0 (µg ml -1 ) | `Q86` · C0 | 1325 | µg ml -1 | not captured | [µg] / [ml] | not captured | space_fold (0.95) | Bertera_2009_table_2:row2:col3, Bertera_2009_table_2:row2:col4 | — | not captured |
 | AUC 0-180 (ng ml -1 h -1 ) | `Q19` · AUCt | 548 | ng ml -1 h -1 | not captured | [ng] / [[h] · [ml]] | not captured | llm_corrected (0.6) | Bertera_2009_table_2:row4:col3, Bertera_2009_table_2:row4:col4 | — | not captured |
 | Extrapolated area (%) | `Q84` · AUC%ext | 12.5 | not captured | not captured | not captured | not captured | llm (0.6) | Bertera_2009_table_2:row5:col3, Bertera_2009_table_2:row5:col4 | — | not captured |
+| plasma clearance | `Q22` · CL | 36.5 | L/h | 1.0138888888888888e-05 | L/h | not captured | review_gapfill (0.7) | McTavish_1993:review | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -69,6 +73,7 @@ Bertera FM et al., Is urethane-chloralose anaesthesia appr…, Journal of pharma
 - structure disagreement: deterministic 1C vs LLM 2C — review compartment count
 - status held at route_to_review — not promoted
 - population split: 'l-name rats (n = 12)' subgroup of Bertera_2009 (paper reports 3 populations: control rats (n = 12), l-name rats (n = 12), l-name rats (n =12))
+- gap-filled Q22 (CL) from McTavish_1993's review values (primary lacked it)
 - skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
 - skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
 
@@ -85,15 +90,16 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.727 (8/11 fields) | 3 |
+| `gpt-oss:120b` | not confirmed | 0.6 (6/10 fields) | 4 |
 
-<details><summary>3 field(s) a reader read differently</summary>
+<details><summary>4 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `parameters[auc 0-180].parameter_id` | Q19 | Q88 | mismatch |
-| `gpt-oss:120b` | `parameters[pharmacokinetic-]` | not captured | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[γ]` | not captured | 2.8 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[clearance rates]` | not captured | 83.8 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[t 1/2 eq].parameter_id` | Q57 | Q60 | mismatch |
+| `gpt-oss:120b` | `screen.dose_compound` | carvedilol | unknown | mismatch |
+| `gpt-oss:120b` | `screen.primary_analyte` | carvedilol | unknown | mismatch |
 
 </details>
 
@@ -108,11 +114,14 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
 | C0_has_structural_params | pass | not captured | 4 | not captured | not captured | not captured |
-| C0b_disposition_core | fail | not captured | not captured | not captured | not captured | not captured |
+| C0c_disposition_complete | fail | not captured | not captured | not captured | not captured | not captured |
 | C5_dimension_Q19 | fail | [mass] / [length] ** 3 / [time] | ng ml -1 h -1 | not captured | not captured | ['Bertera_2009_table_2:row4:col3', 'Bertera_2009_table_2:row4:col4'] |
+| C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['McTavish_1993:review'] |
 | C5_dimension_Q57 | pass | [time] | not captured | not captured | not captured | ['tab_4:row6:col2', 'tab_4:row6:col3', 'tab_4:row6:col4'] |
 | C5_dimension_Q86 | fail | [mass] / [length] ** 3 | µg ml -1 | not captured | not captured | ['Bertera_2009_table_2:row2:col3', 'Bertera_2009_table_2:row2:col4'] |
+| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 36.5 | not captured | not captured | ['McTavish_1993:review'] |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
+| C9_phys_window_Q22 | pass | clearance within physiological range | 36.5 L/h | not captured | not captured | ['McTavish_1993:review'] |
 
 <details class="legend">
 <summary>Check legend — what each column means</summary>
@@ -137,4 +146,4 @@ _No web simulator for this record: its structure has no shared WebAssembly templ
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-09-29 01:38 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 00:33 UTC</sub>

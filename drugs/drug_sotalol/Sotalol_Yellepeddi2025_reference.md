@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C07A&quot;,&quot;href&quot;:&quot;atc/C07A.md&quot;},{&quot;label&quot;:&quot;sotalol&quot;,&quot;href&quot;:&quot;drugs/drug_sotalol/&quot;},{&quot;label&quot;:&quot;Yellepeddi_2025 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Sotalol_Yellepeddi2025_reference&quot;,&quot;label&quot;:&quot;Yellepeddi_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_sotalol/Sotalol_Yellepeddi2025_reference.md&quot;,&quot;status&quot;:&quot;accepted (caveats)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Sotalol_Yellepeddi2025_reference&quot;,&quot;label&quot;:&quot;Yellepeddi_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_sotalol/Sotalol_Yellepeddi2025_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # sotalol — `Sotalol_Yellepeddi2025_reference`
 
-> ## <span class="pk-badge pk-badge--green" title="covariates_not_exercised: the record defines covariate effects (weight on clearance, renal function …) but the engineer simulated only the reference individual, so those scenarios were never run. The base model still reproduces the paper; what is missing is the covariate curves.">accepted (caveats)</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.857). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--green" title="covariates_not_exercised: the record defines covariate effects (weight on clearance, renal function …) but the engineer simulated only the reference individual, so those scenarios were never run. The base model still reproduces the paper; what is missing is the covariate curves.">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.952). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -23,16 +23,18 @@
 
 The base model was simulated, not the covariate effects the record defines. A reported unit could not be converted (Frel), so that value has no SI equivalent.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has sotalol, the second reading unknown; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on `parameters[oral bioavailability relative to iv].parameter_id`: this record has Q87, the second reading Q40. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
+
+> ⚠️ **STALE** — review status `accepted_with_caveats` (reviewed 2026-09-29 08:52:10.782466+00:00) predates the upstream re-run (2026-10-07 01:15:27.452261+00:00). Current validate status: `extracted`.
 
 ## Citation
 Yellepeddi VK et al., Population Pharmacokinetics and Pharmac…, CPT: pharmacometrics & syst… (2025)
   ·  DOI: [10.1002/psp4.13302](https://doi.org/10.1002/psp4.13302)
 
 ## Model component
-<dbs-pgx drug="sotalol" model-id="Sotalol_Yellepeddi2025_reference" status="accepted_with_caveats" stale="false" population="adults with atrial arrhythmias" measured-compound="sotalol" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<dbs-pgx drug="sotalol" model-id="Sotalol_Yellepeddi2025_reference" status="extracted" stale="true" population="adults with atrial arrhythmias" measured-compound="sotalol" parameterization="mechanistic" topology="2C"></dbs-pgx>
 
 **Model structure:** 2-compartment, oral mammillary model — template `PK_2C_enteral`.  
 **Parameters:** 6 extracted, plus 1 covariate effect.
@@ -42,11 +44,11 @@ Yellepeddi VK et al., Population Pharmacokinetics and Pharmac…, CPT: pharmacom
 ## Parameters
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| Clearance (CL), L/h | `Q22` · CL | 9.5 | L/h | 2.638888888888889e-06 | [l] / [h] | 33.1 | space_fold (0.95) | psp413302-tbl-0002:row2:col1, psp413302-tbl-0002:row2:col2 | — | 26.6 (74.3% RSE) |
+| Clearance (CL), L/h | `Q22` · CL | 9.5 | L/h | 2.638888888888889e-06 | [l] / [h] | 33.1 | space_fold (0.95) | psp413302-tbl-0002:row2:col1, psp413302-tbl-0002:row2:col2 | — | not captured |
 | Intercompartmental clearance (Q), L/h | `Q30` · Q | 71.3 | L/h | 1.9805555555555557e-05 | [l] / [h] | 20.3 | llm_confirmed (0.6) | psp413302-tbl-0002:row3:col1, psp413302-tbl-0002:row3:col2 | — | not captured |
-| Central Volume of distribution (Vc), L | `Q63` · V1 | 38.2 | L | 0.038200000000000005 | [l] | 31.2 | boundary_compartment (0.9) | psp413302-tbl-0002:row4:col1, psp413302-tbl-0002:row4:col2 | — | 48.1 (90.9% RSE) |
+| Central Volume of distribution (Vc), L | `Q63` · V1 | 38.2 | L | 0.038200000000000005 | [l] | 31.2 | boundary_compartment (0.9) | psp413302-tbl-0002:row4:col1, psp413302-tbl-0002:row4:col2 | — | not captured |
 | Peripheral volume of distribution (Vp), L | `Q64` · V2 | 89.1 | L | 0.0891 | [l] | 25.4 | boundary_compartment (0.9) | psp413302-tbl-0002:row5:col1, psp413302-tbl-0002:row5:col2 | — | not captured |
-| Absorption rate constant (Ka), h−1 | `Q49` · kabs | 0.2 | h−1 | 5.555555555555556e-05 | [1] / [h] | 34.2 | llm_confirmed (0.6) | psp413302-tbl-0002:row6:col1, psp413302-tbl-0002:row6:col2 | — | 50.5 (64.6% RSE) |
+| Absorption rate constant (Ka), h−1 | `Q49` · kabs | 0.2 | h−1 | 5.555555555555556e-05 | [1] / [h] | 34.2 | llm_confirmed (0.6) | psp413302-tbl-0002:row6:col1, psp413302-tbl-0002:row6:col2 | — | not captured |
 | Oral bioavailability relative to IV (Foral) | `Q87` · Frel | 1.6 | Foral | not captured | not captured | 28.4 | llm_corrected (0.6) | psp413302-tbl-0002:row7:col1, psp413302-tbl-0002:row7:col2 | — | not captured |
 | theta_cl_crcl | `Q900` · theta_cl_crcl | 0.7 | not captured | not captured | not captured | 31.8 | not captured (not captured) | psp413302-tbl-0002:row8:col1, psp413302-tbl-0002:row8:col2 | — | not captured |
 
@@ -61,6 +63,9 @@ Yellepeddi VK et al., Population Pharmacokinetics and Pharmac…, CPT: pharmacom
 - `defaulted_parameters`: ['Tlag']
 
 **Interpretation flags:**
+- table section iiv: 'IIV – CL(%)' routed out of structural estimates ('Interindividual variability (IIV)')
+- table section iiv: 'IIV – Vc (%)' routed out of structural estimates ('Interindividual variability (IIV)')
+- table section iiv: 'IIV – Ka (%)' routed out of structural estimates ('Interindividual variability (IIV)')
 - unit_dimension_unknown: 'Vc*[WTKG/104]θ' (V1)
 - dropped duplicate Q63 ('θWT on Vc (Vc*[WTKG/104]θ)', value '1.1') — already have one for this compound
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=sotalol
@@ -78,15 +83,13 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.857 (18/21 fields) | 3 |
+| `gpt-oss:120b` | not confirmed | 0.952 (20/21 fields) | 1 |
 
-<details><summary>3 field(s) a reader read differently</summary>
+<details><summary>1 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
 | `gpt-oss:120b` | `parameters[oral bioavailability relative to iv].parameter_id` | Q87 | Q40 | mismatch |
-| `gpt-oss:120b` | `screen.dose_compound` | sotalol | unknown | mismatch |
-| `gpt-oss:120b` | `screen.primary_analyte` | sotalol | unknown | mismatch |
 
 </details>
 
@@ -145,8 +148,8 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_sotalol/Sotalol_Yellepeddi2025_reference/Sotalol_Yellepeddi2025_reference_modelica.zip" download>Sotalol_Yellepeddi2025_reference_modelica.zip</a> <span class="pk-size">(4.0 kB)</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_sotalol/Sotalol_Yellepeddi2025_reference/Sotalol_Yellepeddi2025_reference_modelica.zip" download>Sotalol_Yellepeddi2025_reference_modelica.zip</a> <span class="pk-size">(4.4 kB)</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_sotalol/Sotalol_Yellepeddi2025_reference/Sotalol_Yellepeddi2025_reference_fmi.zip" download>Sotalol_Yellepeddi2025_reference_fmi.zip</a> <span class="pk-size">(4.2 kB)</span><br><a href="models/fmu/PK_2C_enteral.fmu" download>PK_2C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_sotalol/Sotalol_Yellepeddi2025_reference/Sotalol_Yellepeddi2025_reference_matlab.zip" download>Sotalol_Yellepeddi2025_reference_matlab.zip</a> <span class="pk-size">(3.3 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_sotalol/Sotalol_Yellepeddi2025_reference/Sotalol_Yellepeddi2025_reference_matlab_simbio.zip" download>Sotalol_Yellepeddi2025_reference_matlab_simbio.zip</a> <span class="pk-size">(2.8 kB)</span></td></tr>
 <tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_sotalol/Sotalol_Yellepeddi2025_reference/Sotalol_Yellepeddi2025_reference_sbml.zip" download>Sotalol_Yellepeddi2025_reference_sbml.zip</a> <span class="pk-size">(2.6 kB)</span></td></tr>
@@ -167,4 +170,4 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-09-29 07:31 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 01:15 UTC</sub>

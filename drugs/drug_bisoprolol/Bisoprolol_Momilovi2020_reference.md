@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C07A&quot;,&quot;href&quot;:&quot;atc/C07A.md&quot;},{&quot;label&quot;:&quot;bisoprolol&quot;,&quot;href&quot;:&quot;drugs/drug_bisoprolol/&quot;},{&quot;label&quot;:&quot;Mom\u010dilovi\u0107_2020 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Bisoprolol_Cvan2016_reference&quot;,&quot;label&quot;:&quot;Cvan_2016_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_bisoprolol/Bisoprolol_Cvan2016_reference.md&quot;,&quot;status&quot;:&quot;accepted (caveats)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Bisoprolol_Nikolic2018_reference&quot;,&quot;label&quot;:&quot;Nikolic_2018_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_bisoprolol/Bisoprolol_Nikolic2018_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Bisoprolol_Cvan2016_reference&quot;,&quot;label&quot;:&quot;Cvan_2016_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_bisoprolol/Bisoprolol_Cvan2016_reference.md&quot;,&quot;status&quot;:&quot;accepted (caveats)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Bisoprolol_Momilovi2019_reference&quot;,&quot;label&quot;:&quot;Mom\u010dilovi\u0107_2019_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_bisoprolol/Bisoprolol_Momilovi2019_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Bisoprolol_Nikolic2016_reference&quot;,&quot;label&quot;:&quot;Nikolic_2016_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_bisoprolol/Bisoprolol_Nikolic2016_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Bisoprolol_Nikolic2018_reference&quot;,&quot;label&quot;:&quot;Nikolic_2018_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_bisoprolol/Bisoprolol_Nikolic2018_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # bisoprolol — `Bisoprolol_Momilovi2020_reference`
 
-> ## <span class="pk-badge pk-badge--orange">built, not shipped</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.714). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.25). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -21,16 +21,18 @@
 
 The record carries only bisoprolol's apparent clearance (CL/F, 6.45 L/h) and clearance (2.48), while the volume of distribution, absorption rate constant and absorption lag time had no extracted value and were left at library placeholder defaults; the absorption rate constant was invented by defaulting rather than taken from the source. The model also assumed F=1 and Fm=1 with no molar correction, giving an apparent (/F) parameterization with first-order depot input for extravascular dosing. A second reader disagreed on which of the two clearance entries corresponds to the apparent clearance, reading 6.45 as the apparent clearance where this record left that field null. Extracted — bisoprolol: CL/F 6.45 L/h, CL 2.48.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of apparent clearance: this record has none, the second reading 6.45; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has bisoprolol, the second reading unknown; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by glm-5.3-flash</sub>
+
+> ⚠️ **STALE** — review status `model_quarantined` (reviewed 2026-09-28 14:36:18.994699+00:00) predates the upstream re-run (2026-10-06 23:58:11.191349+00:00). Current validate status: `needs_review`.
 
 ## Citation
 Momčilović S et al., Population pharmacokinetic analysis of…, European journal of clinica… (2020)
   ·  DOI: [10.1007/s00228-020-02937-6](https://doi.org/10.1007/s00228-020-02937-6)
 
 ## Model component
-<dbs-pgx drug="bisoprolol" model-id="Bisoprolol_Momilovi2020_reference" status="model_quarantined" stale="false" population="adults with type 2 diabetes mellitus and hypertension" measured-compound="bisoprolol" parameterization="apparent" topology="1C"></dbs-pgx>
+<dbs-pgx drug="bisoprolol" model-id="Bisoprolol_Momilovi2020_reference" status="needs_review" stale="true" population="adults with hypertension and type 2 diabetes mellitus" measured-compound="bisoprolol" parameterization="apparent" topology="1C"></dbs-pgx>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 2 extracted.
@@ -38,12 +40,12 @@ Momčilović S et al., Population pharmacokinetic analysis of…, European journ
 **Parameterization:** CL/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
 ## Parameters
-> ⚠️ This record is not accepted (current status `model_quarantined`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
+> ⚠️ This record is not accepted (current status `needs_review`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
 | typical, population value of the apparent clearance of bisoprolol | `Q27` · CL/F | 6.45 | L/h | 1.7916666666666667e-06 | L/h | not captured | boundary (0.8) | Momčilović_2020:results_prose | — | not captured |
-| estimated, population value of the clearance of bisoprolol | `Q22` · CL | 2.48 | not captured | not captured | L/h | not captured | boundary (0.8) | Momčilović_2020:results_prose | — | not captured |
+| estimated, population value of the clearance of bisoprolol | `Q22` · CL | 2.48 | L/h | 6.888888888888889e-07 | L/h | not captured | boundary (0.8) | Momčilović_2020:results_prose | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -53,41 +55,43 @@ Momčilović S et al., Population pharmacokinetic analysis of…, European journ
 ## Departures & gaps
 
 **Interpretation flags:**
+- dropped unlinked row (NIL): '0' — extend the ontology if this is a real PK parameter (source ['tab_2:row1:col2', 'tab_2:row1:col3'])
+- dropped unlinked row (NIL): '1' — extend the ontology if this is a real PK parameter (source ['tab_2:row2:col2', 'tab_2:row2:col3', 'tab_2:row2:col4'])
+- dropped unlinked row (NIL): '2' — extend the ontology if this is a real PK parameter (source ['tab_2:row3:col2', 'tab_2:row3:col3', 'tab_2:row3:col4'])
+- dropped unlinked row (NIL): '3' — extend the ontology if this is a real PK parameter (source ['tab_2:row4:col2', 'tab_2:row4:col3', 'tab_2:row4:col4'])
+- table mostly unlinked (4/4 table-cell rows NIL) — likely the wrong table was located, not 0 genuinely-missing ontology parameter(s); route_to_review instead of building a model from the residual linked cell(s)
 - salvaged Q27 ('typical, population value of the apparent clearance of bisoprolol'=6.45) from results prose — parameter table was unreadable
 - salvaged Q22 ('estimated, population value of the clearance of bisoprolol'=2.48) from results prose — parameter table was unreadable
 - apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=bisoprolol
 - held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
 - status held at route_to_review — not promoted
+- skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
+- skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
 
 **Extraction notes:**
-- unparsed cell tab_1:row1:col1 = '30/40 (42.86/57.14)'
-- unparsed cell tab_1:row2:col1 = '31/39 (44.29/55.71)'
-- unparsed cell tab_1:row3:col1 = '50/20 (71.43/28.57)'
-- unparsed cell tab_1:row4:col1 = '22/48 (31.43/68.57)'
-- unparsed cell tab_1:row6:col1 = '41/29 (58.57/41.43)'
-- unparsed cell tab_1:row7:col1 = '57/13 (81.43/18.57)'
-- unparsed cell tab_1:row8:col1 = '21/49 (30/70)'
-- unparsed cell tab_1:row9:col1 = '45/25 (64.29/35.71)'
-- unparsed cell tab_1:row10:col1 = '34/36 (48.57/51.43)'
-- unparsed cell tab_1:row11:col1 = '25/45 (35.71/64.29)'
-- unparsed cell tab_1:row12:col1 = '19/51 (27.14/72.86)'
-- unparsed cell tab_1:row13:col1 = '8/62 (11.43/88.57)'
+- unparsed cell tab_2:row2:col5 = '&lt; 0.01'
+- unparsed cell tab_2:row3:col5 = '&lt; 0.01'
+- LLM selected parameter table(s) 3
 
 ## Validation
 
 **Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-first reading `qwen3.6:27b-q8_0` — the numbers on this page are its, whatever the readers say
+first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.714 (5/7 fields) | 2 |
+| `gpt-oss:120b` | not confirmed | 0.25 (2/8 fields) | 6 |
 
-<details><summary>2 field(s) a reader read differently</summary>
+<details><summary>6 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `parameters[apparent clearance]` | not captured | 6.45 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[apparent clearance of bisoprolol]` | not captured | 6.45 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[estimated, population value of the clearance of bisoprolol]` | 2.48 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[estimated, population value of the clearance of bisoprolol]` | not captured | 2.48 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[typical, population value of the apparent clearance of bisoprolol]` | 6.45 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `screen.dose_compound` | bisoprolol | unknown | mismatch |
+| `gpt-oss:120b` | `screen.primary_analyte` | bisoprolol | unknown | mismatch |
 
 </details>
 
@@ -105,9 +109,9 @@ first reading `qwen3.6:27b-q8_0` — the numbers on this page are its, whatever 
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | fail | not captured | not captured | not captured | not captured | not captured |
 | C2_base_Q27 | pass | 6.45 | 6.45 | 1.0 | 0.05 | footnote reference category |
-| C5_unit_missing_Q22 | fail | [length] ** 3 / [time] | not captured | not captured | not captured | ['Momčilović_2020:results_prose'] |
 | C7_apparent_coherence | pass | not captured | not captured | not captured | not captured | not captured |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
+| C9_phys_window_Q22 | pass | clearance within physiological range | 2.48 L/h | not captured | not captured | ['Momčilović_2020:results_prose'] |
 | C9_phys_window_Q27 | pass | clearance within physiological range | 6.45 L/h | not captured | not captured | ['Momčilović_2020:results_prose'] |
 
 **Reviewer per-scenario checks:**
@@ -159,4 +163,4 @@ _No web simulator for this record: its structure has no shared WebAssembly templ
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-07-22 16:04 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-06 23:58 UTC</sub>

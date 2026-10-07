@@ -1,0 +1,39 @@
+{
+ "dose_source": "paper",
+ "model_id": "Everolimus_de2016_base",
+ "molar_masses": {
+  "central.C": 0.95824
+ },
+ "note": "Values for the shared PK_2C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "paper_doses_kind": "discrete",
+ "paper_doses_mg": [
+  5.0,
+  10.0
+ ],
+ "parameters": {
+  "Cl": 5.63888888888889e-06,
+  "F": 1.0,
+  "MM": 0.95824,
+  "Tlag": 0.0,
+  "VdPerKg": 0.00041571428571428575,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 5e-06,
+  "k12": 0.000572737686139748,
+  "k21": 3.508771929824561e-05,
+  "ka": 0.0001786111111111111,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 18526.653306613225
+ },
+ "reference_peaks": {
+  "central.C": 4.2162124790099065e-06
+ },
+ "stop_time": 86400.0,
+ "template": "PK_2C_enteral",
+ "template_fmu": "PK_2C_enteral.fmu"
+}

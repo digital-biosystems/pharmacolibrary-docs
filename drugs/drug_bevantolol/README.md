@@ -18,7 +18,7 @@ Bevantolol is a selective beta-blocker developed for cardiovascular conditions s
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-01 15:52 | 1:02 | 0/0/0 | 0/1/1 | 0/0/0 | 25,963/1,048 | ollama / glm-5.3-flash | 1 | 1/0 | 1/0 | 0 |
+| 2026-10-06 23:56 | 1:20 | 0/0/0 | 0/1/0 | 0/0/0 | 41,388/1,447 | ollama / qwen3.8:27b-mtp-q8_0 | 1 | 1/0 | 1/0 | 0 |
 
 ## popPK records
 
@@ -28,7 +28,6 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">needs review</span> | [McNeil_1986_percentage_of_reduction_in_postexercise_heart_rate](drugs/drug_bevantolol/pd_McNeil_1986_percentage_of_reduction_in_postexercise_heart_ra.md) | percentage of reduction in postexercise heart rate ← bevantolol · direct log-linear effect | — | McNeil JJ et al., Pharmacokinetics and concentration--eff…, Journal of cardiovascular p… (1986) | [10.1097/00005344-198611000-00016](https://doi.org/10.1097/00005344-198611000-00016) |
 | <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rabbit), not measured in people (from an LLM reading of the title and abstract by glm-5.3-flash, p(non-human) 1.00).">rabbit</span> | [Liu_1993_HR](drugs/drug_bevantolol/pd_Liu_1993_HR.md) | heart rate ← bevantolol · delayed effect through an effect compartment | — | Liu XQ et al., Plasma bevantolol concentration and hea…, Zhongguo yao li xue bao = A… (1993) | — |
 
 ## ADME sites
@@ -61,35 +60,35 @@ _6 paper(s) judged relevant from the abstract, with no full text on disk — pay
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `McNeil_1986.pdf` | McNeil JJ et al., Pharmacokinetics and concentration--eff…, Journal of cardiovascular p… (1986) | popPK | 10 | [10.1097/00005344-198611000-00016](https://doi.org/10.1097/00005344-198611000-00016) | [2434747](https://pubmed.ncbi.nlm.nih.gov/2434747) | The study reports quantitative PK parameters for bevantolol including half-life (1.9 h), volume of distribution (62 L), and bioavailability (57%) directly in the text. |
-| `Latts_1986.pdf` | Latts JR, Clinical pharmacokinetics and metabolis…, Angiology (1986) | popPK | 8 | [10.1177/000331978603700313](https://doi.org/10.1177/000331978603700313) | [2871781](https://pubmed.ncbi.nlm.nih.gov/2871781) | The paper reports key pharmacokinetic parameters for bevantolol, including bioavailability, half-life, and absorption characteristics, but lacks specific numeric values for clearance (CL) or volume of distribution (V). |
-| `Selen_1986.pdf` | Selen A et al., Comparative single dose and steady-stat…, European journal of clinica… (1986) | popPK | 8 | [10.1007/BF00608218](https://doi.org/10.1007/BF00608218) | [2876899](https://pubmed.ncbi.nlm.nih.gov/2876899) | The paper reports quantitative PK parameters (Cmax, tmax, half-life) for bevantolol, but lacks explicit clearance (CL) or volume (V) values. |
-| `Solimon_1986.pdf` | Solimon M et al., Renal hemodynamics and pharmacokinetics…, The American journal of car… (1986) | popPK | 8 | [10.1016/0002-9149(86)90593-x](https://doi.org/10.1016/0002-9149(86)90593-x) | [2878596](https://pubmed.ncbi.nlm.nih.gov/2878596) | The study reports pharmacokinetic parameters (half-life, clearance) for bevantolol, but the specific numeric values are not present in the provided text, only qualitative comparisons to healthy subjects. |
-| `Vermeij_1986.pdf` | Vermeij P et al., Pharmacokinetic parameters of bevantolo…, European journal of clinica… (1986) | popPK | 8 | [10.1007/BF00541549](https://doi.org/10.1007/BF00541549) | [2874033](https://pubmed.ncbi.nlm.nih.gov/2874033) | The study reports PK parameters for bevantolol, but only the half-life is explicitly provided in the text, while other quantitative disposition parameters (CL, V) are not present in the evidence. |
+| `McNeil_1986.pdf` | McNeil JJ et al., Pharmacokinetics and concentration--eff…, Journal of cardiovascular p… (1986) | popPK | 10 | [10.1097/00005344-198611000-00016](https://doi.org/10.1097/00005344-198611000-00016) | [2434747](https://pubmed.ncbi.nlm.nih.gov/2434747) | The abstract reports quantitative PK parameters including half-life (1.9 h), volume of distribution (62 L), and bioavailability (57%) for bevantolol in humans. |
+| `Selen_1986.pdf` | Selen A et al., Comparative single dose and steady-stat…, European journal of clinica… (1986) | popPK | 9 | [10.1007/BF00608218](https://doi.org/10.1007/BF00608218) | [2876899](https://pubmed.ncbi.nlm.nih.gov/2876899) | The study reports quantitative PK parameters (Cmax, Tmax, half-life) for bevantolol in humans, though specific clearance and volume values are not explicitly listed in the text. |
+| `Vermeij_1986.pdf` | Vermeij P et al., Pharmacokinetic parameters of bevantolo…, European journal of clinica… (1986) | popPK | 9 | [10.1007/BF00541549](https://doi.org/10.1007/BF00541549) | [2874033](https://pubmed.ncbi.nlm.nih.gov/2874033) | The study reports pharmacokinetics of bevantolol in humans, but the evidence only provides a half-life value without the required volume of distribution or clearance parameters to define a compartmental model. |
+| `Latts_1986.pdf` | Latts JR, Clinical pharmacokinetics and metabolis…, Angiology (1986) | popPK | 8 | [10.1177/000331978603700313](https://doi.org/10.1177/000331978603700313) | [2871781](https://pubmed.ncbi.nlm.nih.gov/2871781) | The paper reports key pharmacokinetic parameters for bevantolol (bioavailability, half-life, absorption) in humans, but lacks specific clearance (CL) or volume (V) values. |
+| `Solimon_1986.pdf` | Solimon M et al., Renal hemodynamics and pharmacokinetics…, The American journal of car… (1986) | popPK | 8 | [10.1016/0002-9149(86)90593-x](https://doi.org/10.1016/0002-9149(86)90593-x) | [2878596](https://pubmed.ncbi.nlm.nih.gov/2878596) | The study reports pharmacokinetic parameters (half-life, clearance) for bevantolol in humans, but the specific numeric values are not provided in the text, only qualitative comparisons to healthy subjects. |
 | `Omura_1996.pdf` | Omura T et al., Ca(2+)-antagonistic action of bevantolo…, Brain research (1996) | pd | 4 | [10.1016/0006-8993(95)01052-1](https://doi.org/10.1016/0006-8993(95)01052-1) | [8822369](https://www.ncbi.nlm.nih.gov/pubmed/8822369) | metadata signals extractable PD data (IC50) |
 
-<sub>queue written 2026-10-01T15:52:35.669237+00:00</sub>
+<sub>queue written 2026-10-06T23:55:56.684594+00:00</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Dukes_1985 | irrelevant | 1 | 0 | The paper is a pharmacological and electrophysiological study in animals and isolated tissues, not a pharmacokinetic study, and the only PK-related value (half-life) is a cited reference to unpublished human data rather than original quantitative disposition parameters. |
+| popPK | Dukes_1985 | irrelevant | 1 | 0 | The paper is a pharmacological and electrophysiological study in rats and rabbits, not a pharmacokinetic study, and the single mention of a human half-life is a citation of unpublished data without providing the underlying PK parameters or model. |
 | popPK | Frishman_1988 | irrelevant | 1 | 0 | The paper is a review article summarizing pharmacodynamic and pharmacokinetic properties without providing original quantitative disposition parameter values. |
 | PD | Frishman_1988 | not_relevant | 2 | 0 | The text is a qualitative review summary that mentions pharmacodynamic properties but does not provide specific numeric PD parameters, concentration-effect curves, or detailed PK/PD modeling results. |
-| popPK | Lammers_1985 | irrelevant | 0 | 0 | The study investigates ventilatory effects and cardioequipotency, not pharmacokinetic disposition parameters. |
+| popPK | Lammers_1985 | irrelevant | 0 | 0 | The study investigates the ventilatory and cardioequipotent effects of bevantolol in asthma patients, not its pharmacokinetic disposition parameters. |
 | PD | Lammers_1985 | not_relevant | 3 | 2 | The study reports qualitative dose-response effects of fixed doses on ventilatory parameters but does not provide numeric PD parameters (e.g., EC50, Emax) or a quantitative concentration-effect model. |
-| popPK | Liu_1993 | irrelevant | 2 | 0 | The study reports pharmacodynamic parameters (Keo, EC50) and qualitative PK observations, but does not provide quantitative disposition parameters (CL, V, t1/2) for bevantolol. |
-| popPK | Löfdahl_1984 | irrelevant | 0 | 0 | The study is a pharmacodynamic assessment of beta-adrenoceptor selectivity in asthmatics and does not report any quantitative pharmacokinetic parameters for bevantolol. |
-| popPK | Mackay_1981 | irrelevant | 0 | 0 | The study is a pharmacodynamic assessment of bronchial beta blockade and does not report any pharmacokinetic parameters (e.g., clearance, volume, half-life) for bevantolol. |
-| popPK | Malinowska_2003 | irrelevant | 0 | 0 | The study is a pharmacodynamic investigation of receptor antagonism in rats and does not report any pharmacokinetic parameters for bevantolol. |
+| popPK | Liu_1993 | irrelevant | 2 | 0 | The study reports pharmacodynamic parameters (K(eo), EC50) and qualitative PK observations, but does not provide quantitative disposition parameters (CL, V, t1/2) for bevantolol. |
+| popPK | Löfdahl_1984 | irrelevant | 0 | 0 | The study is a pharmacodynamic assessment of beta-adrenoceptor selectivity in asthmatics and does not report pharmacokinetic parameters such as clearance or volume of distribution. |
+| popPK | Mackay_1981 | irrelevant | 0 | 0 | The study assesses bronchial beta blockade (pharmacodynamics) and does not report pharmacokinetic parameters such as clearance, volume, or half-life. |
+| popPK | Malinowska_2003 | irrelevant | 0 | 0 | The study is a pharmacodynamic investigation of beta-adrenoceptor antagonism in rat hearts, not a pharmacokinetic study, and reports no disposition parameters for bevantolol. |
 | PD | Malinowska_2003 | not_relevant | 3 | 2 | The paper reports qualitative pharmacological effects and a single dose-shift factor for bupranolol, but provides no numeric PD parameters (Emax, EC50, etc.) or extractable concentration-effect curves for bevantolol. |
 | popPK | Okawa_1986 | irrelevant | 0 | 0 | The paper is a clinical efficacy study reporting blood pressure outcomes, not a pharmacokinetic study with quantitative disposition parameters. |
 | PD | Okawa_1986 | not_relevant | 3 | 2 | The text describes a dose-response study but only provides qualitative conclusions (effective at 200-400 mg/day) without reporting specific numeric PD parameters (e.g., Emax, EC50) or detailed effect-vs-dose data points in the provided excerpt. |
 | popPK | Omura_1996 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of calcium channel antagonism, not a pharmacokinetic study reporting disposition parameters. |
-| popPK | Solimon_1986 | relevant | 8 | 2 | The study reports pharmacokinetic parameters (half-life, clearance) for bevantolol, but the specific numeric values are not present in the provided text, only qualitative comparisons to healthy subjects. |
-| popPK | Vermeij_1986 | relevant | 8 | 2 | The study reports PK parameters for bevantolol, but only the half-life is explicitly provided in the text, while other quantitative disposition parameters (CL, V) are not present in the evidence. |
-| popPK | Wong_2016 | irrelevant | 0 | 0 | This is a systematic review of blood pressure efficacy, not a pharmacokinetic study, and it does not report any PK parameters for bevantolol. |
+| popPK | Solimon_1986 | relevant | 8 | 2 | The study reports pharmacokinetic parameters (half-life, clearance) for bevantolol in humans, but the specific numeric values are not provided in the text, only qualitative comparisons to healthy subjects. |
+| popPK | Vermeij_1986 | relevant | 9 | 2 | The study reports pharmacokinetics of bevantolol in humans, but the evidence only provides a half-life value without the required volume of distribution or clearance parameters to define a compartmental model. |
+| popPK | Wong_2016 | irrelevant | 0 | 0 | This is a systematic review of blood pressure efficacy, not a pharmacokinetic study, and contains no PK parameters for bevantolol. |
 | PD | Wong_2016 | not_relevant | 2 | 1 | The paper is a systematic review and meta-analysis that reports average treatment effects (mean differences) rather than a pharmacodynamic model or specific concentration/dose-response parameters (like Emax or EC50) for bevantolol. |
 
 ---

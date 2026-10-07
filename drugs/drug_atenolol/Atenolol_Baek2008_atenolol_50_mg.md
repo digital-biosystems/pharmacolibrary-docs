@@ -4,7 +4,7 @@
 
 # atenolol — `Atenolol_Baek2008_atenolol_50_mg`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.714). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.857). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -20,19 +20,21 @@
 
 Without a unit the value cannot be converted, so the model cannot use it. A reported unit could not be converted (AUCt and Cmax), so that value has no SI equivalent. Extracted — atenolol: AUCt 3.05 μg h/mL, Cmax 396 ng/mL, tmax 2.87 h, V/F 158 L, CL 18.1 L/h, kel 0.58 h⁻¹, kabs 1.84 h⁻¹, k21 0.91 h⁻¹, … (+2).
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has atenolol, the second reading unknown; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on `parameters[k&lt;pc&gt;].parameter_id`: this record has Q49, the second reading Q48; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
+
+> ⚠️ **STALE** — review status `needs_review` (reviewed 2026-09-29 03:59:58.361749+00:00) predates the upstream re-run (2026-10-06 23:08:26.720089+00:00). Current validate status: `needs_review`.
 
 ## Citation
 Baek IH et al., Pharmacokinetic/pharmacodynamic modelin…, Archives of pharmacal resea… (2008)
   ·  DOI: [10.1007/s12272-001-1231-4](https://doi.org/10.1007/s12272-001-1231-4)
 
 ## Model component
-<dbs-pgx drug="atenolol" model-id="Atenolol_Baek2008_atenolol_50_mg" status="needs_review" stale="false" population="healthy adults" measured-compound="atenolol" parameterization="apparent" topology="1C"></dbs-pgx>
+<dbs-pgx drug="atenolol" model-id="Atenolol_Baek2008_atenolol_50_mg" status="needs_review" stale="true" population="healthy adults" measured-compound="atenolol" parameterization="apparent" topology="1C"></dbs-pgx>
 
 **Model structure:** 1-compartment; no model was built for this record.  
-**Parameters:** 10 extracted.
+**Parameters:** 9 extracted.
 
 **Parameterization:** V/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
@@ -41,16 +43,15 @@ Baek IH et al., Pharmacokinetic/pharmacodynamic modelin…, Archives of pharmaca
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| AUC0-24hr (μg h/mL) | `Q19` · AUCt | 3.05 | μg h/mL | not captured | [[h] · [µg]] / [ml] | not captured | llm (0.6) | Baek_2008_table_2:row0:col1 | — | not captured |
-| Cmax (ng/mL) | `Q32` · Cmax | 396.14 | ng/mL | not captured | [ng] / [ml] | not captured | exact (1.0) | Baek_2008_table_2:row2:col1 | — | not captured |
-| Tmax (h) | `Q56` · tmax | 2.87 | h | 10332.0 | [h] | not captured | exact (1.0) | Baek_2008_table_2:row3:col1 | — | not captured |
+| AUC&lt;0-24hr&gt; (μg h/mL) | `Q19` · AUCt | 3.05 | μg h/mL | not captured | [[h] · [µg]] / [ml] | not captured | llm_corrected (0.6) | Baek_2008_table_2:row0:col1 | — | not captured |
+| C&lt;max&gt; (ng/mL) | `Q32` · Cmax | 396.14 | ng/mL | not captured | [ng] / [ml] | not captured | llm (0.6) | Baek_2008_table_2:row2:col1 | — | not captured |
+| T&lt;max&gt; (h) | `Q56` · tmax | 2.87 | h | 10332.0 | [h] | not captured | llm (0.6) | Baek_2008_table_2:row3:col1 | — | not captured |
 | Volume/F (L) | `Q76` · V/F | 157.71 | L | 0.15771000000000002 | [l] | not captured | llm (0.6) | Baek_2008_table_2:row4:col1 | — | not captured |
 | Clearance (L/h) | `Q22` · CL | 18.15 | L/h | 5.041666666666666e-06 | [l] / [h] | not captured | exact (1.0) | Baek_2008_table_2:row5:col1 | — | not captured |
-| Kel (h⁻¹) | `Q47` · kel | 0.58 | h⁻¹ | 0.0001611111111111111 | [1] / [h] | not captured | exact (1.0) | Baek_2008_table_3:row0:col1 | — | not captured |
-| Ksp (h⁻¹) | `Q49` · kabs | 1.84 | h⁻¹ | 0.0005111111111111112 | [1] / [h] | not captured | llm (0.6) | Baek_2008_table_3:row2:col1 | — | not captured |
-| Kpc (h⁻¹) | `Q302` · k21 | 0.91 | h⁻¹ | 0.00025277777777777777 | [1] / [h] | not captured | exact (1.0) | Baek_2008_table_3:row3:col1 | — | not captured |
-| T1/α (h) | `Q59` · t1/2α | 0.88 | h | 3168.0 | [h] | not captured | llm (0.6) | Baek_2008_table_3:row4:col1 | — | not captured |
-| T1/β (h) | `Q60` · t1/2β | 4.83 | h | 17388.0 | [h] | not captured | llm (0.6) | Baek_2008_table_3:row5:col1 | — | not captured |
+| K&lt;el&gt; (h⁻¹) | `Q47` · kel | 0.58 | h⁻¹ | 0.0001611111111111111 | [1] / [h] | not captured | llm (0.6) | Baek_2008_table_3:row0:col1 | — | not captured |
+| K&lt;pc&gt; (h⁻¹) | `Q49` · kabs | 0.91 | h⁻¹ | 0.00025277777777777777 | [1] / [h] | not captured | llm (0.6) | Baek_2008_table_3:row3:col1 | — | not captured |
+| T&lt;1/α&gt; (h) | `Q59` · t1/2α | 0.88 | h | 3168.0 | [h] | not captured | llm (0.6) | Baek_2008_table_3:row4:col1 | — | not captured |
+| T&lt;1/β&gt; (h) | `Q60` · t1/2β | 4.83 | h | 17388.0 | [h] | not captured | llm (0.6) | Baek_2008_table_3:row5:col1 | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -61,8 +62,9 @@ Baek IH et al., Pharmacokinetic/pharmacodynamic modelin…, Archives of pharmaca
 
 **Interpretation flags:**
 - unit_dimension_unknown: 'μg h/mL' (AUCt)
-- dropped duplicate Q47 ('Kb (h⁻¹)', value '0.53') — already have one for this compound
-- implicit units: 'AUC0-24hr (μg h/mL)' — the LLM proposed 'μg h/mL', whose dimension does not fit Q19; left unset
+- dropped duplicate Q47 ('K&lt;e&gt; (h⁻¹)', value '0.53') — already have one for this compound
+- dropped duplicate Q47 ('K&lt;sp&gt; (h⁻¹)', value '1.84') — already have one for this compound
+- implicit units: 'AUC&lt;0-24hr&gt; (μg h/mL)' — the LLM proposed 'μg h/mL', whose dimension does not fit Q19; left unset
 - apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=atenolol
 - held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
 - structure disagreement: deterministic 1C vs LLM 2C — review compartment count
@@ -83,16 +85,14 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.714 (10/14 fields) | 4 |
+| `gpt-oss:120b` | not confirmed | 0.857 (12/14 fields) | 2 |
 
-<details><summary>4 field(s) a reader read differently</summary>
+<details><summary>2 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `model.links` | [] | [['none', '', '']] | mismatch |
-| `gpt-oss:120b` | `parameters[ksp]` | 1.84 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `screen.dose_compound` | atenolol | unknown | mismatch |
-| `gpt-oss:120b` | `screen.primary_analyte` | atenolol | unknown | mismatch |
+| `gpt-oss:120b` | `parameters[k&lt;pc&gt;].parameter_id` | Q49 | Q48 | mismatch |
+| `gpt-oss:120b` | `parameters[t&lt;1/α&gt;]` | 0.88 | not captured | only_one_extracted |
 
 </details>
 
@@ -106,14 +106,13 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 10 | not captured | not captured | not captured |
+| C0_has_structural_params | pass | not captured | 9 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Baek_2008_table_2:row5:col1'] |
-| C5_dimension_Q302 | pass | 1 / [time] | not captured | not captured | not captured | ['Baek_2008_table_3:row3:col1'] |
 | C5_dimension_Q32 | pass | [mass] / [length] ** 3 | not captured | not captured | not captured | ['Baek_2008_table_2:row2:col1'] |
 | C5_dimension_Q47 | pass | 1 / [time] | not captured | not captured | not captured | ['Baek_2008_table_3:row0:col1'] |
-| C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['Baek_2008_table_3:row2:col1'] |
+| C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['Baek_2008_table_3:row3:col1'] |
 | C5_dimension_Q56 | pass | [time] | not captured | not captured | not captured | ['Baek_2008_table_2:row3:col1'] |
 | C5_dimension_Q59 | pass | [time] | not captured | not captured | not captured | ['Baek_2008_table_3:row4:col1'] |
 | C5_dimension_Q60 | pass | [time] | not captured | not captured | not captured | ['Baek_2008_table_3:row5:col1'] |
@@ -157,4 +156,4 @@ _No web simulator for this record: its structure has no shared WebAssembly templ
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-09-28 23:53 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-06 23:08 UTC</sub>

@@ -1,0 +1,32 @@
+{
+ "dose_source": "WHO ATC DDD 600 mg oral (M01AE11)",
+ "model_id": "TiaprofenicAcid_Nilsen1985v2_reference",
+ "molar_masses": {
+  "central.C": 0.260308
+ },
+ "note": "Values for the shared PK_1C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "parameters": {
+  "Cl": 5e-07,
+  "F": 1.0,
+  "MM": 0.260308,
+  "Tlag": 828.0,
+  "VdPerKg": 0.0001685714285714286,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 0.0006,
+  "ka": 0.0012000000000000001,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 4094.919275109045
+ },
+ "reference_peaks": {
+  "central.C": 0.04495600555267111
+ },
+ "stop_time": 86400.0,
+ "template": "PK_1C_enteral",
+ "template_fmu": "PK_1C_enteral.fmu"
+}

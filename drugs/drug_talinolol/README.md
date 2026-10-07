@@ -18,7 +18,7 @@ Talinolol is a selective beta blocker that has been used as an antihypertensive 
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-29 08:14 | 32:49 | 0/0/0 | 0/0/0 | 0/0/1 | 95,602/6,346 | ollama / qwen3.8:27b-mtp-q8_0 | 3 | 3/4 | 1/2 | 0 |
+| 2026-10-07 01:26 | 3:26 | 0/0/0 | 0/0/0 | 0/0/1 | 41,624/3,782 | ollama / qwen3.8:27b-mtp-q8_0 | 3 | 3/4 | 1/2 | 0 |
 
 ## popPK records
 
@@ -68,7 +68,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 - **PubMed hits:** 80 matched, 76 returned
 - **screened:** 2  ·  **relevant:** 2
 - **records:** 0  ·  extracted 0  ·  needs_review 0  ·  rejected 0  ·  stale 0
-- **scholar-agent fallback query used:** True
+- **scholar-agent fallback query used:** not captured
 
 ## Full text wanted
 
@@ -76,8 +76,8 @@ _22 paper(s) judged relevant from the abstract, with no full text on disk — pa
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Juan_2007.pdf` | Juan H et al., Unexpected effect of concomitantly admi…, European journal of clinica… (2007) | popPK | 9 | [10.1007/s00228-007-0298-0](https://doi.org/10.1007/s00228-007-0298-0) | [17468862](https://pubmed.ncbi.nlm.nih.gov/17468862) | The study reports quantitative non-compartmental pharmacokinetic parameters (AUC, Cmax, CL/F) for talinolol in humans, with specific numeric values provided in the text. |
-| `Yan_2013.pdf` | Yan M et al., Lack of effect of continuous glycyrrhiz…, European journal of clinica… (2013) | popPK | 8 | [10.1007/s00228-012-1391-6](https://doi.org/10.1007/s00228-012-1391-6) | [22983284](https://pubmed.ncbi.nlm.nih.gov/22983284) | The study reports non-compartmental PK parameters (AUC, Cmax, t1/2) for talinolol, but specific numeric values for clearance, volume, or half-life are not explicitly listed in the provided text, only AUC and Cmax means. |
+| `Juan_2007.pdf` | Juan H et al., Unexpected effect of concomitantly admi…, European journal of clinica… (2007) | popPK | 9 | [10.1007/s00228-007-0298-0](https://doi.org/10.1007/s00228-007-0298-0) | [17468862](https://pubmed.ncbi.nlm.nih.gov/17468862) | The study reports quantitative non-compartmental pharmacokinetic parameters (AUC, Cmax, CL/F) for talinolol in humans. |
+| `Yan_2013.pdf` | Yan M et al., Lack of effect of continuous glycyrrhiz…, European journal of clinica… (2013) | popPK | 8 | [10.1007/s00228-012-1391-6](https://doi.org/10.1007/s00228-012-1391-6) | [22983284](https://pubmed.ncbi.nlm.nih.gov/22983284) | The study reports non-compartmental PK parameters (AUC, Cmax, t1/2) for talinolol in humans, but specific numeric values for clearance (CL) and volume (V) are not explicitly listed in the provided text, only AUC and Cmax means. |
 | `Bakshi_2025.pdf` | Bakshi A et al., Probing the selectivity of urea, amide,…, Computers in biology and me… (2025) | pd | 5 | [10.1016/j.compbiomed.2025.111279](https://doi.org/10.1016/j.compbiomed.2025.111279) | [41223648](https://www.ncbi.nlm.nih.gov/pubmed/41223648) | metadata signals extractable PD data (IC50) |
 | `Catalán-Latorre_2011.pdf` | Catalán-Latorre A et al., In situ study of the effect of naringin…, Basic & clinical pharmacolo… (2011) | pd | 5 | [10.1111/j.1742-7843.2011.00714.x](https://doi.org/10.1111/j.1742-7843.2011.00714.x) | [21535410](https://www.ncbi.nlm.nih.gov/pubmed/21535410) | metadata signals extractable PD data (IC50) |
 | `El_2004.pdf` | El Ela AA et al., Identification of P-glycoprotein substr…, The Journal of pharmacy and… (2004) | pd | 5 | [10.1211/0022357043969](https://doi.org/10.1211/0022357043969) | [15285840](https://www.ncbi.nlm.nih.gov/pubmed/15285840) | metadata signals extractable PD data (IC50) |
@@ -99,7 +99,7 @@ _22 paper(s) judged relevant from the abstract, with no full text on disk — pa
 | `Zschiesche_2002.pdf` | Zschiesche M et al., Stereoselective disposition of talinolo…, Journal of pharmaceutical s… (2002) | pgx | 7 | [10.1002/jps.10054](https://doi.org/10.1002/jps.10054) | [11835190](https://www.ncbi.nlm.nih.gov/pubmed/11835190) | metadata signals extractable PGX data (CYP3A4, PK/PD-context) |
 | `May_2008.pdf` | May K et al., Role of the multidrug transporter prote…, Drug metabolism and disposi… (2008) | pgx | 5 | [10.1124/dmd.107.019448](https://doi.org/10.1124/dmd.107.019448) | [18195111](https://www.ncbi.nlm.nih.gov/pubmed/18195111) | metadata signals extractable PGX data (ABCB1) |
 
-<sub>queue written 2026-09-29T08:08:57.725427+00:00</sub>
+<sub>queue written 2026-10-07T01:24:36.288653+00:00</sub>
 
 ## Screened and excluded
 
@@ -113,9 +113,9 @@ _22 paper(s) judged relevant from the abstract, with no full text on disk — pa
 | PGx | Brück_2017 | not_relevant | 0 | 0 | The paper investigates transporter induction in Caco-2 cells using talinolol as a substrate, but does not report any pharmacogenomic effects (gene variants) on PK/PD parameters. |
 | popPK | Catalán-Latorre_2011 | irrelevant | 0 | 0 | no_text gate: only 131 chars of text extracted (&lt; 400) |
 | PD | Catalán-Latorre_2011 | not_relevant | 0 | 0 | The study focuses on the effect of naringin, talinolol, and undernutrition on the intestinal absorption (PK) of saquinavir, not on the pharmacodynamic or exposure-response relationship of talinolol itself. |
-| popPK | Chen_2024 | irrelevant | 0 | 0 | The paper reports population pharmacokinetic parameters for febuxostat, not talinolol. |
+| popPK | Chen_2024 | irrelevant | 0 | 0 | The study analyzes the pharmacokinetics of febuxostat, not talinolol. |
 | PD | Chen_2024 | not_relevant | 0 | 0 | The paper focuses exclusively on the population pharmacokinetics (PK) of febuxostat, including absorption and food effects, and does not report any pharmacodynamic (PD) or exposure-response data for talinolol or any other drug. |
-| popPK | Cheung_2018 | irrelevant | 0 | 0 | The study focuses on PBPK modeling of other beta-blockers (e.g., metoprolol, propranolol) in rats and does not include talinolol as a subject drug. |
+| popPK | Cheung_2018 | irrelevant | 0 | 0 | The study models other beta-blockers (e.g., metoprolol, propranolol) in rats and does not include talinolol. |
 | PD | Cheung_2018 | not_relevant | 0 | 0 | The paper focuses on physiologically based pharmacokinetic (PBPK) modeling of tissue distribution for beta-blockers and does not report any pharmacodynamic (PD) or exposure-response relationships for talinolol. |
 | popPK | Chu_2023 | irrelevant | 0 | 0 | The paper describes in-vitro transporter studies (MDCK cells) for digoxin and cladribine, not a pharmacokinetic study of talinolol. |
 | PD | Chu_2023 | not_relevant | 0 | 0 | The paper focuses on in vitro transporter inhibition (P-gp/BCRP) using cell models and does not report any pharmacodynamic or exposure-response data for talinolol. |
@@ -125,16 +125,16 @@ _22 paper(s) judged relevant from the abstract, with no full text on disk — pa
 | popPK | El_2004 | irrelevant | 0 | 0 | Talinolol is used only as a radioligand/probe for P-glycoprotein assays, not as the subject drug for PK parameter estimation. |
 | PD | El_2004 | not_relevant | 0 | 0 | The paper uses talinolol only as a radioligand for P-glycoprotein binding/transport assays and does not report any pharmacodynamic (exposure-response or dose-response) relationship for talinolol itself. |
 | PGx | Elgart_2013 | not_relevant | 0 | 0 | The paper investigates the effect of a drug delivery system (SNEDDS) on pharmacokinetics, not the effect of a gene variant or genotype. |
-| popPK | Fendt_2023 | irrelevant | 2 | 0 | Talinolol is used only as a probe drug for MDR1 transporter activity in a mouse cirrhosis study, and specific quantitative PK parameters (CL, V, etc.) are not reported in the provided text, with model details relegated to supplementary tables. |
+| popPK | Fendt_2023 | irrelevant | 0 | 0 | The study focuses on a cocktail of six drugs in mice to investigate liver cirrhosis mechanisms, and talinolol is not mentioned or identified as one of the subject drugs. |
 | PD | Fendt_2023 | not_relevant | 0 | 0 | The paper focuses on pharmacokinetics (PBPK modeling) and drug metabolism in liver cirrhosis, reporting no pharmacodynamic or exposure-response relationships for talinolol. |
 | PGx | Giessmann_2004 | not_relevant | 0 | 0 | The study investigates drug-drug interactions (carbamazepine inducing transporters) rather than the effect of a specific gene variant or genotype on talinolol pharmacokinetics. |
-| popPK | Hadigol_2026 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of talazoparib and enzalutamide, not talinolol. |
+| popPK | Hadigol_2026 | irrelevant | 0 | 0 | The study analyzes the pharmacokinetics of talazoparib and enzalutamide, not talinolol. |
 | PD | Hadigol_2026 | not_relevant | 0 | 0 | The paper reports a population pharmacokinetic (PK) analysis for talazoparib and enzalutamide, but does not contain any pharmacodynamic (PD) or exposure-response modeling or numeric PD parameters. |
 | PGx | Han_2009 | not_relevant | 2 | 5 | The study investigates a drug-drug interaction (silymarin) and mentions MDR1 genotypes, but does not report a pharmacogenomic effect (genotype-driven change in PK) for talinolol. |
 | popPK | Heinroth_1983 | irrelevant | 0 | 0 | The study investigates the pharmacodynamic effects of talinolol on platelet aggregation and thromboxane formation, not its pharmacokinetic disposition parameters. |
 | popPK | Ieiri_2004 | irrelevant | 0 | 0 | The paper is a review of MDR1 gene polymorphisms and does not report original quantitative pharmacokinetic parameters for talinolol. |
 | PD | Ieiri_2004 | not_relevant | 1 | 0 | The text is a review discussing the role of MDR1 polymorphisms in drug disposition and mentions talinolol only as an example of a drug affected by these polymorphisms, without providing any specific pharmacodynamic data, exposure-response curves, or numeric PD parameters. |
-| PGx | Ieiri_2004 | not_relevant | 2 | 0 | The text is a general review of MDR1 polymorphisms that mentions talinolol only as an example of a drug with reported associations, without providing specific data, effect sizes, or detailed PK/PD parameters for talinolol. |
+| PGx | Ieiri_2004 | not_relevant | 5 | 0 | The text mentions talinolol as a drug affected by MDR1 polymorphisms but does not report specific PK/PD parameter changes or effect sizes for it. |
 | popPK | Igarashi_2021 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic analysis of permeability in a microfluidic device, not a pharmacokinetic study reporting disposition parameters (CL, V, etc.) for talinolol. |
 | PGx | Iwanaga_2012 | not_relevant | 0 | 0 | The study investigates drug-drug interactions with Kampo medicines in rats, not pharmacogenomic effects of gene variants on talinolol PK/PD. |
 | PGx | Izzo_2009 | not_relevant | 0 | 0 | The paper discusses herbal drug interactions and does not mention talinolol or pharmacogenomic effects. |
@@ -146,32 +146,32 @@ _22 paper(s) judged relevant from the abstract, with no full text on disk — pa
 | PD | Li_2009 | not_relevant | 0 | 0 | The paper investigates the pharmacokinetics of beta-lactam antibiotics (amoxicillin and cefaclor) in the presence of cranberry juice and does not mention talinolol or report any pharmacodynamic or exposure-response relationships. |
 | PGx | Long_2016 | not_relevant | 0 | 0 | The study investigates sex differences in talinolol pharmacokinetics and explicitly excludes the influence of P-gp genetic polymorphisms, so it does not report a pharmacogenomic effect. |
 | PGx | Ma_2010 | not_relevant | 0 | 0 | The paper is a review discussing the suitability of talinolol as a P-gp phenotyping probe and does not report specific pharmacogenomic effects on its PK/PD parameters. |
-| PGx | Matthaei_2016 | not_relevant | 2 | 0 | The study concludes that environmental factors, not genetic variants, primarily determine talinolol pharmacokinetics, and no significant pharmacogenomic effects were reported. |
-| PGx | May_2008 | not_relevant | 0 | 0 | The study explicitly states that genetic polymorphisms of ABCB1 and ABCC2 lacked significant influence on talinolol permeability. |
+| PGx | Matthaei_2016 | not_relevant | 2 | 5 | The study concludes that environmental factors, not genetic polymorphisms, primarily determine talinolol pharmacokinetics, and no significant pharmacogenomic effect was reported. |
+| PGx | May_2008 | not_relevant | 0 | 0 | The study explicitly states that genetic polymorphisms of ABCB1 and ABCC2 lacked significant influence on the permeability of talinolol. |
 | popPK | Mertens-Talcott_2007 | irrelevant | 0 | 0 | no_text gate: only 160 chars of text extracted (&lt; 400) |
-| popPK | Mirfazaelian_2006 | irrelevant | 2 | 0 | The paper is a methodological study on software for double-peak modeling that uses talinolol data only for verification, and no specific numeric PK parameter values for talinolol are provided in the evidence. |
+| popPK | Mirfazaelian_2006 | irrelevant | 2 | 0 | The paper is a methodological study on software for double-peak modeling that uses talinolol data from the literature for verification, but no specific quantitative PK parameter values for talinolol are provided in the evidence. |
 | PGx | Neuhoff_2003 | not_relevant | 0 | 0 | The study investigates pH-dependent transport mechanisms in Caco-2 cells and does not report any pharmacogenomic effects (gene variants) on PK/PD parameters. |
 | popPK | Nikolenko_1981 | irrelevant | 0 | 0 | The study is a comparative pharmacodynamic assessment of beta-blockers in angina patients and does not report any pharmacokinetic parameters for talinolol. |
 | PD | Nikolenko_1981 | not_relevant | 3 | 2 | The study compares two drugs qualitatively and reports relative effect differences (1.7, 2.6) without providing numeric concentration-effect curves, Emax, EC50, or individual dose-response data for talinolol. |
 | popPK | Ofer_2005 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of flavonoid interactions with transporters using talinolol as a probe substrate, not a pharmacokinetic study reporting disposition parameters. |
 | PD | Ofer_2005 | not_relevant | 0 | 0 | The paper reports in vitro transport inhibition (IC50) of talinolol by flavonoids, which is a drug-drug interaction/transport study, not a pharmacodynamic exposure-response or dose-response relationship for the drug's therapeutic effect. |
-| PGx | Oswald_2011 | not_relevant | 2 | 0 | The paper is a review discussing talinolol as a probe drug for P-gp function but does not report specific pharmacogenomic effect sizes or data on how gene variants alter talinolol PK/PD parameters. |
+| PGx | Oswald_2011 | not_relevant | 0 | 0 | The paper is a review discussing talinolol as a probe drug for P-gp function but does not report specific pharmacogenomic effects of gene variants on its PK/PD parameters. |
 | PGx | Qian_2019 | not_relevant | 0 | 0 | The paper focuses on drug-drug interactions (rifampicin induction) and does not report pharmacogenomic effects (gene variants) on talinolol pharmacokinetics. |
 | popPK | Richter_2004 | irrelevant | 0 | 0 | no_text gate: only 104 chars of text extracted (&lt; 400) |
 | PD | Richter_2004 | not_relevant | 0 | 0 | The paper focuses on the effects of HIV protease inhibitors on intestinal absorption and does not report pharmacodynamic or exposure-response data for talinolol. |
-| PGx | Saljé_2012 | not_relevant | 0 | 0 | The study investigates the effect of drug-induced gene expression (transcriptional regulation) on PK, not the effect of a genetic variant or genotype (pharmacogenomics). |
+| PGx | Saljé_2012 | not_relevant | 0 | 0 | The study investigates the effect of drug-induced gene expression (transcriptional regulation) on PK, not the effect of a genetic variant (pharmacogenomics) on PK. |
 | PGx | Schwarz_2005 | not_relevant | 0 | 0 | The study explicitly states that MDR1 genotypes were not associated with altered talinolol pharmacokinetics, reporting a null result for the pharmacogenomic effect. |
 | popPK | Shirasaka_2010 | irrelevant | 2 | 0 | The study focuses on mechanistic transporter interactions (IC50 values) and qualitative absorption changes rather than reporting quantitative population pharmacokinetic parameters like clearance or volume of distribution. |
 | PD | Shirasaka_2010 | not_relevant | 0 | 0 | The paper reports IC50 values for naringin inhibiting transporters (OATP/Mdr1), which are pharmacological parameters for the inhibitor, not pharmacodynamic parameters (e.g., Emax, EC50) for the drug talinolol itself. |
-| popPK | Taskar_2020 | irrelevant | 0 | 0 | The paper is a review of PBPK modeling for transporter-mediated drug-drug interactions and does not report original quantitative pharmacokinetic parameters for talinolol. |
+| popPK | Taskar_2020 | irrelevant | 0 | 0 | The paper is a review of PBPK modeling for transporter-mediated drug-drug interactions and does not report specific quantitative pharmacokinetic parameters for talinolol. |
 | PD | Taskar_2020 | not_relevant | 0 | 0 | The paper is a review of PBPK modeling for transporter-mediated drug-drug interactions and does not report any pharmacodynamic or exposure-response data for talinolol. |
 | popPK | Tubic_2006 | irrelevant | 0 | 0 | no_text gate: only 142 chars of text extracted (&lt; 400) |
 | PGx | Unger_2013 | not_relevant | 0 | 0 | The paper discusses herb-drug interactions involving Ginkgo biloba and talinolol, but does not report any pharmacogenomic effects (gene variants) on PK/PD parameters. |
-| popPK | Venkatasubramanian_2014 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of morphine, not talinolol. |
+| popPK | Venkatasubramanian_2014 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of morphine, not talinolol. |
 | PD | Venkatasubramanian_2014 | not_relevant | 0 | 0 | The paper focuses on the pharmacokinetics of morphine in children and the influence of genotypes, containing no data or analysis regarding talinolol or any pharmacodynamic/exposure-response relationships. |
-| popPK | Weiss_2023 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of ketamine, and talinolol is only mentioned as a comparator for absorption patterns without any reported PK parameters. |
+| popPK | Weiss_2023 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of ketamine, not talinolol. |
 | PD | Weiss_2023 | not_relevant | 0 | 0 | The paper focuses on the PK absorption and dissolution of ketamine, not the pharmacodynamics or exposure-response of talinolol. |
-| popPK | Zimmerman_2004 | irrelevant | 0 | 0 | The paper focuses on sirolimus pharmacokinetics and drug interactions, with no mention of talinolol. |
+| popPK | Zimmerman_2004 | irrelevant | 0 | 0 | The paper focuses on the pharmacokinetics and drug interactions of sirolimus, not talinolol. |
 | PD | Zimmerman_2004 | not_relevant | 0 | 0 | The paper discusses sirolimus, not talinolol, and does not report any PD parameters for the target drug. |
 | PGx | Zschiesche_2002 | not_relevant | 0 | 0 | The study investigates stereoselective disposition and drug-drug interactions (rifampicin) in healthy volunteers but does not report any pharmacogenomic effects (gene variants) on PK or PD parameters. |
 | popPK | de_2007 | irrelevant | 1 | 0 | The study is an in-vitro mechanistic investigation of P-gp inhibition in Caco-2 cells and does not report quantitative pharmacokinetic disposition parameters (CL, V, etc.) for talinolol. |

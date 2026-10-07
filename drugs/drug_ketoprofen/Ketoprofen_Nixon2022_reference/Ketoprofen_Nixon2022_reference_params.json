@@ -1,0 +1,32 @@
+{
+ "dose_source": "WHO ATC DDD 150 mg oral (M01AE03)",
+ "model_id": "Ketoprofen_Nixon2022_reference",
+ "molar_masses": {
+  "central.C": 0.25428059999999997
+ },
+ "note": "Values for the shared PK_1C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "parameters": {
+  "Cl": 1.1794999999999999e-06,
+  "F": 1.0,
+  "MM": 0.25428059999999997,
+  "Tlag": 0.0,
+  "VdPerKg": 0.00030211,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 0.00015,
+  "ka": 0.0015638888888888888,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 2594.6956019935806
+ },
+ "reference_peaks": {
+  "central.C": 0.006262141576936526
+ },
+ "stop_time": 86400.0,
+ "template": "PK_1C_enteral",
+ "template_fmu": "PK_1C_enteral.fmu"
+}

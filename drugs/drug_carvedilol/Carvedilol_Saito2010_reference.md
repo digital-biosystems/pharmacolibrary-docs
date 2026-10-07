@@ -1,10 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C07A&quot;,&quot;href&quot;:&quot;atc/C07A.md&quot;},{&quot;label&quot;:&quot;carvedilol&quot;,&quot;href&quot;:&quot;drugs/drug_carvedilol/&quot;},{&quot;label&quot;:&quot;Saito_2010 \u00b7 reference&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Carvedilol_McTavish1993_reference&quot;,&quot;label&quot;:&quot;McTavish_1993_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_carvedilol/Carvedilol_McTavish1993_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Carvedilol_Nikolic2013_reference&quot;,&quot;label&quot;:&quot;Nikolic_2013_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_carvedilol/Carvedilol_Nikolic2013_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Carvedilol_Yamamoto2024_final&quot;,&quot;label&quot;:&quot;Yamamoto_2024_final&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_carvedilol/Carvedilol_Yamamoto2024_final.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Carvedilol_Yamamoto2024_final_s_carvedilol_final_model_estim&quot;,&quot;label&quot;:&quot;Yamamoto_2024_final_s_carvedilol_final_model_estimate_rse&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_carvedilol/Carvedilol_Yamamoto2024_final_s_carvedilol_final_model_estim.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # carvedilol — `Carvedilol_Saito2010_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.333). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.375). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -20,18 +21,20 @@
 
 A model needs both clearance and volume; without the volume it could only be built on a library default, so it was not. Without a unit the value cannot be converted, so the model cannot use it. Extracted — carvedilol: CL/F 1.89 l/h/kg, Ae 0.116.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which molecule was measured: this record has R-carvedilol and S-carvedilol, the second reading carvedilol; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which molecule was measured: this record has R-carvedilol, S-carvedilol, the second reading carvedilol; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
-> **Dose compound ≠ measured compound:** dosed `carvedilol`, measured `R-carvedilol and S-carvedilol`.
+> ⚠️ **STALE** — review status `needs_review` (reviewed 2026-10-05 09:25:09.187883+00:00) predates the upstream re-run (2026-10-07 00:33:37.786658+00:00). Current validate status: `needs_review`.
+
+> **Dose compound ≠ measured compound:** dosed `carvedilol`, measured `R-carvedilol, S-carvedilol`.
 
 ## Citation
 Saito M et al., Population pharmacokinetics of R- and S…, Biological & pharmaceutical… (2010)
   ·  DOI: [10.1248/bpb.33.1378](https://doi.org/10.1248/bpb.33.1378)
 
 ## Model component
-<dbs-pgx drug="carvedilol" model-id="Carvedilol_Saito2010_reference" status="needs_review" stale="false" population="Japanese patients with chronic heart failure" measured-compound="R-carvedilol and S-carvedilol" parameterization="apparent" topology="1C"></dbs-pgx>
+<dbs-pgx drug="carvedilol" model-id="Carvedilol_Saito2010_reference" status="needs_review" stale="true" population="Japanese patients with chronic heart failure" measured-compound="R-carvedilol, S-carvedilol" parameterization="apparent" topology="1C"></dbs-pgx>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 2 extracted.
@@ -43,8 +46,8 @@ Saito M et al., Population pharmacokinetics of R- and S…, Biological & pharmac
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| CL/F (l/h/kg) | `Q27` · CL/F | 1.89 | l/h/kg | 3.675e-05 | [l] / [[h] · [kg]] | not captured | exact (1.0) | tab_2:row3:col1, tab_2:row3:col3, tab_2:row3:col4, tab_2:row3:col6 | — | not captured |
-| e abs | `Q91` · Ae | 0.116 | not captured | not captured | not captured | not captured | llm (0.5) | tab_2:row12:col1, tab_2:row12:col4 | — | not captured |
+| CL/F (l/h/kg) | `Q27` · CL/F | 1.29 | l/h/kg | 2.5083333333333338e-05 | [l] / [[h] · [kg]] | not captured | exact (1.0) | tab_2:row3:col1, tab_2:row3:col3, tab_2:row3:col4, tab_2:row3:col6, Saito_2010_table_3:row2:col1, Saito_2010_table_3:row2:col3, Saito_2010_table_3:row2:col4, Saito_2010_table_3:row2:col6 | — | not captured |
+| CL/F (l/h/kg) | `Q27` · CL/F | 1.40 | l/h/kg | 2.7222222222222223e-05 | [l] / [[h] · [kg]] | not captured | exact (1.0) | Saito_2010_table_3:row2:col2, Saito_2010_table_3:row2:col5 | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -54,43 +57,28 @@ Saito M et al., Population pharmacokinetics of R- and S…, Biological & pharmac
 ## Departures & gaps
 
 **Interpretation flags:**
-- apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=R-carvedilol and S-carvedilol
+- dropped unlinked row (NIL): 'Impact of AGP' — extend the ontology if this is a real PK parameter (source ['tab_2:row5:col1', 'tab_2:row5:col4', 'Saito_2010_table_3:row4:col1', 'Saito_2010_table_3:row4:col4'])
+- routed 'e abs' → Q317 (add_error) to residual_error — variability estimate, not a structural parameter
+- dropped unlinked row (NIL): 'Impact of AGP' — extend the ontology if this is a real PK parameter (source ['Saito_2010_table_3:row4:col2'])
+- apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=R-carvedilol, S-carvedilol
+- molar mass: no plausible PubChem entry for 'R-carvedilol, S-carvedilol' ('R-carvedilol, S-carvedilol') — left in mass units
+- molar mass: none found for 'R-carvedilol, S-carvedilol' — its concentrations stay mass-only
 - skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
 - skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
 
 **Extraction notes:**
 - unparsed cell tab_2:row3:col2 = '20.9%'
 - unparsed cell tab_2:row3:col5 = '9.0%'
-- unparsed cell tab_2:row4:col1 = '259 0.594'
-- unparsed cell tab_2:row4:col2 = '35.4% 50.0%'
-- unparsed cell tab_2:row4:col3 = '(79.5-439) (0.0119-1.18)'
-- unparsed cell tab_2:row4:col4 = '1050 1.08'
-- unparsed cell tab_2:row4:col5 = '14.2% 38.6%'
-- unparsed cell tab_2:row4:col6 = '(758-1340) (0.263-1.90)'
-- unparsed cell tab_2:row5:col1 = 'Ϫ0.00685'
 - unparsed cell tab_2:row5:col2 = '11.1%'
 - unparsed cell tab_2:row5:col3 = '(Ϫ0.00833-Ϫ0.00537)'
-- unparsed cell tab_2:row5:col4 = 'Ϫ0.00680'
 - unparsed cell tab_2:row5:col5 = '5.5%'
 - unparsed cell tab_2:row5:col6 = '(Ϫ0.00753-Ϫ0.00607)'
-- unparsed cell tab_2:row7:col1 = '51.1%'
-- unparsed cell tab_2:row7:col2 = '34.0%'
-- unparsed cell tab_2:row7:col4 = '38.6%'
-- unparsed cell tab_2:row7:col5 = '32.2%'
-- unparsed cell tab_2:row8:col1 = '49.4%'
-- unparsed cell tab_2:row8:col2 = '58.6%'
-- unparsed cell tab_2:row8:col4 = '44.4%'
-- unparsed cell tab_2:row8:col5 = '44.0%'
-- unparsed cell tab_2:row9:col1 = '179%'
-- unparsed cell tab_2:row9:col2 = '70.1%'
-- unparsed cell tab_2:row9:col4 = '149%'
-- unparsed cell tab_2:row9:col5 = '40.4%'
-- unparsed cell tab_2:row11:col1 = '33.3%'
-- unparsed cell tab_2:row11:col2 = '35.5%'
-- unparsed cell tab_2:row11:col4 = '29.4%'
-- unparsed cell tab_2:row11:col5 = '20.8%'
 - unparsed cell tab_2:row12:col2 = '44.6%'
 - unparsed cell tab_2:row12:col5 = '187%'
+- unparsed cell Saito_2010_table_3:row4:col3 = '(Ϫ0.00794-Ϫ0.00175)'
+- unparsed cell Saito_2010_table_3:row4:col5 = 'Ϫ0.00692 (Ϫ0.00761-Ϫ0.00480)'
+- companion parameter table 3 transcribed (9 record(s))
+- LLM selected parameter table(s) 2, 3
 
 ## Validation
 
@@ -99,18 +87,17 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.333 (3/9 fields) | 6 |
+| `gpt-oss:120b` | not confirmed | 0.375 (3/8 fields) | 5 |
 
-<details><summary>6 field(s) a reader read differently</summary>
+<details><summary>5 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `parameters[cl/f]` | not captured | 2.44 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[cl/f].value` | 1.89 | 1.29 | mismatch |
-| `gpt-oss:120b` | `parameters[e abs]` | 0.116 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `model.links` | [] | [['none', '', '']] | mismatch |
+| `gpt-oss:120b` | `parameters[cl/f].value` | 1.40 | 2.44 | mismatch |
 | `gpt-oss:120b` | `parameters[impact of agp]` | not captured | -0.00685 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[impact of agp]` | not captured | -0.00716 | only_one_extracted |
-| `gpt-oss:120b` | `screen.primary_analyte` | R-carvedilol and S-carvedilol | carvedilol | mismatch |
+| `gpt-oss:120b` | `screen.primary_analyte` | R-carvedilol, S-carvedilol | carvedilol | mismatch |
 
 </details>
 
@@ -127,11 +114,12 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 | C0_has_structural_params | pass | not captured | 2 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | fail | not captured | not captured | not captured | not captured | not captured |
-| C5_dimension_Q27 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['tab_2:row3:col1', 'tab_2:row3:col3', 'tab_2:row3:col4', 'tab_2:row3:col6'] |
-| C5_unit_missing_Q91 | fail | [mass] | not captured | not captured | not captured | ['tab_2:row12:col1', 'tab_2:row12:col4'] |
+| C5_dimension_Q27 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['tab_2:row3:col1', 'tab_2:row3:col3', 'tab_2:row3:col4', 'tab_2:row3:col6', 'Saito_2010_table_3:row2:col1', 'Saito_2010_table_3:row2:col3', 'Saito_2010_table_3:row2:col4', 'Saito_2010_table_3:row2:col6'] |
+| C5_dimension_Q27 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Saito_2010_table_3:row2:col2', 'Saito_2010_table_3:row2:col5'] |
 | C7_apparent_coherence | pass | not captured | not captured | not captured | not captured | not captured |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
-| C9_phys_window_Q27 | pass | clearance within physiological range | 132 L/h | not captured | not captured | ['tab_2:row3:col1', 'tab_2:row3:col3', 'tab_2:row3:col4', 'tab_2:row3:col6'] |
+| C9_phys_window_Q27 | pass | clearance within physiological range | 90.3 L/h | not captured | not captured | ['tab_2:row3:col1', 'tab_2:row3:col3', 'tab_2:row3:col4', 'tab_2:row3:col6', 'Saito_2010_table_3:row2:col1', 'Saito_2010_table_3:row2:col3', 'Saito_2010_table_3:row2:col4', 'Saito_2010_table_3:row2:col6'] |
+| C9_phys_window_Q27 | pass | clearance within physiological range | 98 L/h | not captured | not captured | ['Saito_2010_table_3:row2:col2', 'Saito_2010_table_3:row2:col5'] |
 
 <details class="legend">
 <summary>Check legend — what each column means</summary>
@@ -166,4 +154,4 @@ _No web simulator for this record: its structure has no shared WebAssembly templ
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-07-15 10:53 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 00:33 UTC</sub>

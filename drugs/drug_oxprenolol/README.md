@@ -18,11 +18,17 @@ Oxprenolol is a non-selective beta blocker that was used to treat high blood pre
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-29 05:11 | 27:21 | 0/0/0 | 0/0/0 | 0/0/0 | 44,977/4,010 | ollama / qwen3.8:27b-mtp-q8_0 | 1 | 1/0 | 1/0 | 0 |
+| 2026-10-07 00:32 | 0:45 | 0/0/0 | 1/0/0 | 0/0/0 | 28,205/1,022 | ollama / qwen3.8:27b-mtp-q8_0 | 1 | 1/0 | 1/0 | 0 |
 
 ## popPK records
 
 _not available_
+
+## Pharmacodynamics (PD)
+
+| status | detail | about | model | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--green">extracted</span> | [Jonkers_1989_plasma_potassium_concentrations](drugs/drug_oxprenolol/pd_Jonkers_1989_plasma_potassium_concentrations.md) | plasma potassium concentrations ← oxprenolol · inhibition effect | — | Jonkers R et al., A nonsteady-state agonist antagonist in…, The Journal of pharmacology… (1989) | — |
 
 ## ADME sites
 
@@ -51,11 +57,10 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 ## Full text wanted
 
-_8 paper(s) judged relevant from the abstract, with no full text on disk — paywalled, or the resolver could not reach them. Follow the DOI, then save the PDF into `papers/` as `&lt;save as&gt;.pdf` and re-run the extraction._
+_7 paper(s) judged relevant from the abstract, with no full text on disk — paywalled, or the resolver could not reach them. Follow the DOI, then save the PDF into `papers/` as `&lt;save as&gt;.pdf` and re-run the extraction._
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Brunner_1975.pdf` | Brunner L et al., Relation between plasma concentrations…, European journal of clinica… (1975) | popPK | 8 | [10.1007/BF00616408](https://doi.org/10.1007/BF00616408) | [786674](https://pubmed.ncbi.nlm.nih.gov/786674) | The study reports a half-life of 80 minutes for oxprenolol, but lacks other quantitative disposition parameters like clearance or volume of distribution. |
 | `Jennings_1981.pdf` | Jennings G et al., Influence of intrinsic sympathomimetic…, British journal of clinical… (1981) | pd | 5 | [10.1111/j.1365-2125.1981.tb01226.x](https://doi.org/10.1111/j.1365-2125.1981.tb01226.x) | [6117303](https://www.ncbi.nlm.nih.gov/pubmed/6117303) | metadata signals extractable PD data (sigmoid) |
 | `Koopmans_1988.pdf` | Koopmans R et al., Pharmacokinetic-pharmacodynamic modelli…, European journal of clinica… (1988) | pd | 5 | [10.1007/BF00542442](https://doi.org/10.1007/BF00542442) | [3402525](https://www.ncbi.nlm.nih.gov/pubmed/3402525) | metadata signals extractable PD data (pharmacodynamicmodel) |
 | `Koopmans_1993.pdf` | Koopmans R et al., The effect of oxprenolol dosage time on…, European journal of clinica… (1993) | pd | 5 | [10.1007/BF00315476](https://doi.org/10.1007/BF00315476) | [8453962](https://www.ncbi.nlm.nih.gov/pubmed/8453962) | metadata signals extractable PD data (EC50) |
@@ -64,7 +69,7 @@ _8 paper(s) judged relevant from the abstract, with no full text on disk — pay
 | `McInnes_1988.pdf` | McInnes GT et al., Concentration-effect relationships for…, British journal of clinical… (1988) | pd | 4 | [10.1111/j.1365-2125.1988.tb03343.x](https://doi.org/10.1111/j.1365-2125.1988.tb03343.x) | [3408634](https://www.ncbi.nlm.nih.gov/pubmed/3408634) | metadata signals extractable PD data (Concentration-effect) |
 | `Maideen_2021.pdf` | Maideen NMP et al., A Review on Pharmacokinetic and Pharmac…, Current drug metabolism (2021) | pgx | 7 | [10.2174/1389200222666210614112529](https://doi.org/10.2174/1389200222666210614112529) | [34182907](https://www.ncbi.nlm.nih.gov/pubmed/34182907) | metadata signals extractable PGX data (CYP2D6, PK/PD-context) |
 
-<sub>queue written 2026-09-29T05:10:16.423209+00:00</sub>
+<sub>queue written 2026-10-07T00:31:45.884869+00:00</sub>
 
 ## Screened and excluded
 
@@ -93,9 +98,9 @@ _8 paper(s) judged relevant from the abstract, with no full text on disk — pay
 | PD | Jennings_1981 | not_relevant | 0 | 0 | The provided text is only a title and does not contain the full text, data, or numeric PD parameters required to assess the exposure-response relationship. |
 | popPK | Jeong_2012 | irrelevant | 0 | 0 | The study is an in-vitro electrophysiology investigation of carvedilol on Kv1.5 channels, and oxprenolol is only mentioned as a comparator with no pharmacokinetic parameters reported. |
 | PD | Jeong_2012 | not_relevant | 0 | 0 | The paper reports that oxprenolol had little or no effect on Kv1.5 currents and does not provide numeric PD parameters for oxprenolol. |
-| popPK | Jonkers_1987 | irrelevant | 2 | 0 | The study focuses on terbutaline pharmacokinetics and oxprenolol's effect on it, rather than reporting quantitative disposition parameters for oxprenolol itself. |
+| popPK | Jonkers_1987 | irrelevant | 1 | 0 | The study focuses on the pharmacokinetics of terbutaline (the subject drug) and its interaction with oxprenolol, which is used as a co-administered antagonist rather than the primary subject of PK parameter estimation. |
 | popPK | Jonkers_1989 | irrelevant | 2 | 0 | The study focuses on beta-2 selectivity (IC50) and the effect of oxprenolol on terbutaline's pharmacokinetics, rather than reporting quantitative disposition parameters (CL, V, t1/2) for oxprenolol itself. |
-| popPK | Kawashima_1981 | irrelevant | 0 | 0 | The provided evidence contains only metadata and software version information, with no pharmacokinetic data or text regarding oxprenolol. |
+| popPK | Kawashima_1981 | irrelevant | 0 | 0 | The provided evidence contains only software metadata and no scientific content regarding oxprenolol pharmacokinetics. |
 | popPK | Kendall_1983 | irrelevant | 2 | 0 | The text is a qualitative review describing general pharmacokinetic properties (e.g., lipophilicity, protein binding) without reporting specific quantitative disposition parameters (CL, V, t1/2) for oxprenolol. |
 | PD | Kendall_1983 | not_relevant | 2 | 0 | The text is a qualitative review stating that beta-blocking effects correlate with plasma concentrations but explicitly notes that direct correlation with therapeutic actions is not possible, providing no numeric PD parameters or curves. |
 | popPK | Kendall_1984 | irrelevant | 2 | 0 | The study reports qualitative changes in AUC and Cmax for oxprenolol due to drug interaction but does not provide specific quantitative PK parameter values (CL, V, ka, etc.) in the evidence. |
@@ -123,7 +128,7 @@ _8 paper(s) judged relevant from the abstract, with no full text on disk — pay
 | popPK | Sakuta_1992 | irrelevant | 0 | 0 | The study is an in-vitro electrophysiology investigation of ion channel blockade in Xenopus oocytes and does not report pharmacokinetic parameters for oxprenolol. |
 | popPK | Saunders_1985 | irrelevant | 0 | 0 | no_text gate: only 85 chars of text extracted (&lt; 400) |
 | popPK | Silke_1981 | irrelevant | 0 | 0 | The study reports haemodynamic dose-response effects (blood pressure, heart rate) rather than pharmacokinetic disposition parameters (CL, V, t1/2). |
-| popPK | Sári_1998 | irrelevant | 0 | 0 | The study is an in-vitro pharmacological investigation of the rabbit sphincter of Oddi where oxprenolol is used only as a non-selective beta-blocker in a NANC cocktail, not as the subject of a pharmacokinetic analysis. |
+| popPK | Sári_1998 | irrelevant | 0 | 0 | The study is an in-vitro pharmacological investigation of nitroglycerin tolerance in rabbit sphincter of Oddi, where oxprenolol is used only as a non-selective beta-blocker in a NANC cocktail, not as the subject of PK analysis. |
 | PD | Sári_1998 | not_relevant | 0 | 0 | The paper studies nitroglycerin tolerance in rabbit sphincter of Oddi; oxprenolol is used only as a fixed-concentration blocker in a pharmacological cocktail, with no dose-response or exposure-response analysis for oxprenolol. |
 
 ---

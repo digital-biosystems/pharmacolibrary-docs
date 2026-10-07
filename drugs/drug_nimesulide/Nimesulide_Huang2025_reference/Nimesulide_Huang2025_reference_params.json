@@ -1,0 +1,32 @@
+{
+ "dose_source": "WHO ATC DDD 200 mg oral (M01AX17)",
+ "model_id": "Nimesulide_Huang2025_reference",
+ "molar_masses": {
+  "central.C": 0.30831000000000003
+ },
+ "note": "Values for the shared PK_1C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "parameters": {
+  "Cl": 4.611111111111111e-07,
+  "F": 1.0,
+  "MM": 0.30831000000000003,
+  "Tlag": 0.0,
+  "VdPerKg": 4.8e-05,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 0.0002,
+  "ka": 0.0001388888888888889,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 7607.5812317972195
+ },
+ "reference_peaks": {
+  "central.C": 0.022022540819388033
+ },
+ "stop_time": 86400.0,
+ "template": "PK_1C_enteral",
+ "template_fmu": "PK_1C_enteral.fmu"
+}

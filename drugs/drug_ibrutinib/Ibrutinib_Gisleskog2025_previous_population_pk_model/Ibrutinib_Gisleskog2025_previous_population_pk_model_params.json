@@ -1,0 +1,36 @@
+{
+ "dose_source": "paper",
+ "model_id": "Ibrutinib_Gisleskog2025_previous_population_pk_model",
+ "molar_masses": {
+  "central.C": 0.440507
+ },
+ "note": "Values for the shared PK_1C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "paper_doses_kind": "discrete",
+ "paper_doses_mg": [
+  560.0
+ ],
+ "parameters": {
+  "Cl": 0.0003055555555555556,
+  "F": 1.0,
+  "MM": 0.440507,
+  "Tlag": 813.6,
+  "VdPerKg": 0.1040857142857143,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 0.00056,
+  "ka": 0.00012527777777777778,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 14284.569138276553
+ },
+ "reference_peaks": {
+  "central.C": 4.43102036678192e-05
+ },
+ "stop_time": 108000.0,
+ "template": "PK_1C_enteral",
+ "template_fmu": "PK_1C_enteral.fmu"
+}

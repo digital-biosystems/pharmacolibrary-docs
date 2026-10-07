@@ -4,7 +4,7 @@
 
 # atenolol — `Atenolol_Sowinski1995_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.818). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -20,16 +20,18 @@
 
 Without a unit the value cannot be converted, so the model cannot use it. A reported unit could not be converted (CL/F, Q, CLR and Cmax), so that value has no SI equivalent. Extracted — atenolol: CL/F 11.2 L/hr/1.73 m2, Q 8.58 L/hr/1.73 m2, CLR 7.67 L/hr/1.73 m2, Vss 1.43 L/kg, V/F 1.17 L/kg, kabs 1.32 hr-1, Cmax 780 ng/mL.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has atenolol, the second reading unknown; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
+Independently confirmed by `gpt-oss:120b`.
 
 <sub>reviewed by rule template (no LLM)</sub>
+
+> ⚠️ **STALE** — review status `needs_review` (reviewed 2026-09-29 04:00:29.435082+00:00) predates the upstream re-run (2026-10-06 23:09:02.404941+00:00). Current validate status: `needs_review`.
 
 ## Citation
 Sowinski KM et al., Effect of aging on atenolol pharmacokin…, Journal of clinical pharmac… (1995)
   ·  DOI: [10.1002/j.1552-4604.1995.tb04124.x](https://doi.org/10.1002/j.1552-4604.1995.tb04124.x)
 
 ## Model component
-<dbs-pgx drug="atenolol" model-id="Atenolol_Sowinski1995_reference" status="needs_review" stale="false" population="young and elderly healthy men" measured-compound="atenolol" parameterization="apparent" topology="1C"></dbs-pgx>
+<dbs-pgx drug="atenolol" model-id="Atenolol_Sowinski1995_reference" status="needs_review" stale="true" population="young and elderly healthy men" measured-compound="atenolol" parameterization="apparent" topology="1C"></dbs-pgx>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 7 extracted.
@@ -41,12 +43,12 @@ Sowinski KM et al., Effect of aging on atenolol pharmacokin…, Journal of clini
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| CL/F (L/hr/1.73 m2) | `Q27` · CL/F | 11.15 | L/hr/1.73 m2 | not captured | [l] / [[h] · [1.73m2]] | not captured | exact (1.0) | Sowinski_1995_table_1:row0:col2, Sowinski_1995_table_1:row0:col3, Sowinski_1995_table_1:row0:col4, Sowinski_1995_table_1:row0:col5, Sowinski_1995_table_1:row0:col6, Sowinski_1995_table_1:row0:col7, Sowinski_1995_table_1:row0:col9, Sowinski_1995_table_1:row0:col11, Sowinski_1995_table_1:row0:col12, Sowinski_1995_table_1:row0:col13, Sowinski_1995_table_1:row0:col14, Sowinski_1995_table_1:row0:col15, Sowinski_1995_table_1:row0:col16, Sowinski_1995_table_1:row0:col17, Sowinski_1995_table_1:row0:col18 | — | not captured |
-| CLd (L/hr/1.73 m2) | `Q30` · Q | 8.58 | L/hr/1.73 m2 | not captured | [l] / [[h] · [1.73m2]] | not captured | exact (1.0) | Sowinski_1995_table_1:row1:col2, Sowinski_1995_table_1:row1:col3, Sowinski_1995_table_1:row1:col4, Sowinski_1995_table_1:row1:col5, Sowinski_1995_table_1:row1:col6, Sowinski_1995_table_1:row1:col7, Sowinski_1995_table_1:row1:col8, Sowinski_1995_table_1:row1:col9, Sowinski_1995_table_1:row1:col11, Sowinski_1995_table_1:row1:col13, Sowinski_1995_table_1:row1:col15, Sowinski_1995_table_1:row1:col16, Sowinski_1995_table_1:row1:col17, Sowinski_1995_table_1:row1:col18 | — | not captured |
-| CLr (L/hr/1.73 m2) | `Q26` · CLR | 7.67 | L/hr/1.73 m2 | not captured | [l] / [[h] · [1.73m2]] | not captured | exact (1.0) | Sowinski_1995_table_1:row2:col2, Sowinski_1995_table_1:row2:col3, Sowinski_1995_table_1:row2:col4, Sowinski_1995_table_1:row2:col5, Sowinski_1995_table_1:row2:col6, Sowinski_1995_table_1:row2:col7, Sowinski_1995_table_1:row2:col9, Sowinski_1995_table_1:row2:col11, Sowinski_1995_table_1:row2:col12, Sowinski_1995_table_1:row2:col13, Sowinski_1995_table_1:row2:col14, Sowinski_1995_table_1:row2:col15, Sowinski_1995_table_1:row2:col16, Sowinski_1995_table_1:row2:col17, Sowinski_1995_table_1:row2:col18 | — | not captured |
+| CL/F (L/hr/1.73 m²) | `Q27` · CL/F | 11.15 | L/hr/1.73 m² | not captured | [l] / [[h] · [1.73m2]] | not captured | exact (1.0) | Sowinski_1995_table_1:row0:col2, Sowinski_1995_table_1:row0:col3, Sowinski_1995_table_1:row0:col4, Sowinski_1995_table_1:row0:col5, Sowinski_1995_table_1:row0:col6, Sowinski_1995_table_1:row0:col7, Sowinski_1995_table_1:row0:col9, Sowinski_1995_table_1:row0:col11, Sowinski_1995_table_1:row0:col12, Sowinski_1995_table_1:row0:col13, Sowinski_1995_table_1:row0:col14, Sowinski_1995_table_1:row0:col15, Sowinski_1995_table_1:row0:col16, Sowinski_1995_table_1:row0:col17, Sowinski_1995_table_1:row0:col18 | — | not captured |
+| CLd (L/hr/1.73 m²) | `Q30` · Q | 8.58 | L/hr/1.73 m² | not captured | [l] / [[h] · [1.73m2]] | not captured | exact (1.0) | Sowinski_1995_table_1:row1:col2, Sowinski_1995_table_1:row1:col3, Sowinski_1995_table_1:row1:col4, Sowinski_1995_table_1:row1:col5, Sowinski_1995_table_1:row1:col6, Sowinski_1995_table_1:row1:col7, Sowinski_1995_table_1:row1:col8, Sowinski_1995_table_1:row1:col9, Sowinski_1995_table_1:row1:col11, Sowinski_1995_table_1:row1:col13, Sowinski_1995_table_1:row1:col15, Sowinski_1995_table_1:row1:col16, Sowinski_1995_table_1:row1:col17, Sowinski_1995_table_1:row1:col18 | — | not captured |
+| CLr (L/hr/1.73 m²) | `Q26` · CLR | 7.67 | L/hr/1.73 m² | not captured | [l] / [[h] · [1.73m2]] | not captured | exact (1.0) | Sowinski_1995_table_1:row2:col2, Sowinski_1995_table_1:row2:col3, Sowinski_1995_table_1:row2:col4, Sowinski_1995_table_1:row2:col5, Sowinski_1995_table_1:row2:col6, Sowinski_1995_table_1:row2:col7, Sowinski_1995_table_1:row2:col9, Sowinski_1995_table_1:row2:col11, Sowinski_1995_table_1:row2:col12, Sowinski_1995_table_1:row2:col13, Sowinski_1995_table_1:row2:col14, Sowinski_1995_table_1:row2:col15, Sowinski_1995_table_1:row2:col16, Sowinski_1995_table_1:row2:col17, Sowinski_1995_table_1:row2:col18 | — | not captured |
 | Vss/F (L/kg) | `Q65` · Vss | 1.43 | L/kg | 0.10010000000000001 | [l] / [kg] | not captured | llm (0.6) | Sowinski_1995_table_1:row3:col2, Sowinski_1995_table_1:row3:col3, Sowinski_1995_table_1:row3:col4, Sowinski_1995_table_1:row3:col5, Sowinski_1995_table_1:row3:col6, Sowinski_1995_table_1:row3:col7, Sowinski_1995_table_1:row3:col8, Sowinski_1995_table_1:row3:col9, Sowinski_1995_table_1:row3:col11, Sowinski_1995_table_1:row3:col12, Sowinski_1995_table_1:row3:col13, Sowinski_1995_table_1:row3:col14, Sowinski_1995_table_1:row3:col15, Sowinski_1995_table_1:row3:col16, Sowinski_1995_table_1:row3:col17, Sowinski_1995_table_1:row3:col18 | — | not captured |
 | Vc/F (L/kg) | `Q76` · V/F | 1.17 | L/kg | 0.0819 | [l] / [kg] | not captured | exact (1.0) | Sowinski_1995_table_1:row4:col2, Sowinski_1995_table_1:row4:col3, Sowinski_1995_table_1:row4:col4, Sowinski_1995_table_1:row4:col5, Sowinski_1995_table_1:row4:col6, Sowinski_1995_table_1:row4:col7, Sowinski_1995_table_1:row4:col8, Sowinski_1995_table_1:row4:col9, Sowinski_1995_table_1:row4:col11, Sowinski_1995_table_1:row4:col12, Sowinski_1995_table_1:row4:col13, Sowinski_1995_table_1:row4:col14, Sowinski_1995_table_1:row4:col15, Sowinski_1995_table_1:row4:col16, Sowinski_1995_table_1:row4:col17, Sowinski_1995_table_1:row4:col18 | — | not captured |
-| ka (hr-1) | `Q49` · kabs | 1.32 | hr-1 | 0.00036666666666666667 | [1] / [h] | not captured | exact (1.0) | Sowinski_1995_table_1:row5:col2, Sowinski_1995_table_1:row5:col3, Sowinski_1995_table_1:row5:col4, Sowinski_1995_table_1:row5:col5, Sowinski_1995_table_1:row5:col6, Sowinski_1995_table_1:row5:col7, Sowinski_1995_table_1:row5:col9, Sowinski_1995_table_1:row5:col11, Sowinski_1995_table_1:row5:col12, Sowinski_1995_table_1:row5:col13, Sowinski_1995_table_1:row5:col14, Sowinski_1995_table_1:row5:col15, Sowinski_1995_table_1:row5:col16, Sowinski_1995_table_1:row5:col17, Sowinski_1995_table_1:row5:col18 | — | not captured |
+| ka (hr⁻¹) | `Q49` · kabs | 1.32 | hr⁻¹ | 0.00036666666666666667 | [1] / [h] | not captured | exact (1.0) | Sowinski_1995_table_1:row5:col2, Sowinski_1995_table_1:row5:col3, Sowinski_1995_table_1:row5:col4, Sowinski_1995_table_1:row5:col5, Sowinski_1995_table_1:row5:col6, Sowinski_1995_table_1:row5:col7, Sowinski_1995_table_1:row5:col9, Sowinski_1995_table_1:row5:col11, Sowinski_1995_table_1:row5:col12, Sowinski_1995_table_1:row5:col13, Sowinski_1995_table_1:row5:col14, Sowinski_1995_table_1:row5:col15, Sowinski_1995_table_1:row5:col16, Sowinski_1995_table_1:row5:col17, Sowinski_1995_table_1:row5:col18 | — | not captured |
 | Cmax (ng/mL) | `Q32` · Cmax | 780 | ng/mL | not captured | [ng] / [ml] | not captured | exact (1.0) | Sowinski_1995_table_1:row6:col2, Sowinski_1995_table_1:row6:col3, Sowinski_1995_table_1:row6:col4, Sowinski_1995_table_1:row6:col5, Sowinski_1995_table_1:row6:col6, Sowinski_1995_table_1:row6:col7, Sowinski_1995_table_1:row6:col9, Sowinski_1995_table_1:row6:col11, Sowinski_1995_table_1:row6:col12, Sowinski_1995_table_1:row6:col13, Sowinski_1995_table_1:row6:col14, Sowinski_1995_table_1:row6:col15, Sowinski_1995_table_1:row6:col16, Sowinski_1995_table_1:row6:col17, Sowinski_1995_table_1:row6:col18 | — | not captured |
 
 <details class="legend">
@@ -69,12 +71,12 @@ Sowinski KM et al., Effect of aging on atenolol pharmacokin…, Journal of clini
 - column '10' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
 - column '11' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
 - column '12' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
-- unit_dimension_unknown: 'L/hr/1.73 m2' (CL/F)
-- unit_dimension_unknown: 'L/hr/1.73 m2' (Q)
-- unit_dimension_unknown: 'L/hr/1.73 m2' (CLR)
-- implicit units: 'CL/F (L/hr/1.73 m2)' — the LLM proposed 'L/h/1.73 m2', whose dimension does not fit Q27; left unset
-- implicit units: 'CLd (L/hr/1.73 m2)' — the LLM proposed 'L/h/1.73 m2', whose dimension does not fit Q30; left unset
-- implicit units: 'CLr (L/hr/1.73 m2)' — the LLM proposed 'L/h/1.73 m2', whose dimension does not fit Q26; left unset
+- unit_dimension_unknown: 'L/hr/1.73 m²' (CL/F)
+- unit_dimension_unknown: 'L/hr/1.73 m²' (Q)
+- unit_dimension_unknown: 'L/hr/1.73 m²' (CLR)
+- implicit units: 'CL/F (L/hr/1.73 m²)' — the LLM proposed 'L/hr/1.73 m²', whose dimension does not fit Q27; left unset
+- implicit units: 'CLd (L/hr/1.73 m²)' — the LLM proposed 'L/hr/1.73 m²', whose dimension does not fit Q30; left unset
+- implicit units: 'CLr (L/hr/1.73 m²)' — the LLM proposed 'L/hr/1.73 m²', whose dimension does not fit Q26; left unset
 - apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=atenolol
 - held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
 - structure disagreement: deterministic 1C vs LLM 2C — review compartment count
@@ -95,21 +97,14 @@ Sowinski KM et al., Effect of aging on atenolol pharmacokin…, Journal of clini
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--green">cross-checked ✓</span>  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.818 (9/11 fields) | 2 |
+| `gpt-oss:120b` | confirmed | 1.0 (11/11 fields) | none |
 
-<details><summary>2 field(s) a reader read differently</summary>
-
-| second reader | field | first reading | second reading | agreement |
-|---|---|---|---|---|
-| `gpt-oss:120b` | `screen.dose_compound` | atenolol | unknown | mismatch |
-| `gpt-oss:120b` | `screen.primary_analyte` | atenolol | unknown | mismatch |
-
-</details>
+_Every reader agrees on every compared field of this record._
 
 <details class="legend">
 <summary>Cross-check legend</summary>
@@ -128,9 +123,9 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 | C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['Sowinski_1995_table_1:row5:col2', 'Sowinski_1995_table_1:row5:col3', 'Sowinski_1995_table_1:row5:col4', 'Sowinski_1995_table_1:row5:col5', 'Sowinski_1995_table_1:row5:col6', 'Sowinski_1995_table_1:row5:col7', 'Sowinski_1995_table_1:row5:col9', 'Sowinski_1995_table_1:row5:col11', 'Sowinski_1995_table_1:row5:col12', 'Sowinski_1995_table_1:row5:col13', 'Sowinski_1995_table_1:row5:col14', 'Sowinski_1995_table_1:row5:col15', 'Sowinski_1995_table_1:row5:col16', 'Sowinski_1995_table_1:row5:col17', 'Sowinski_1995_table_1:row5:col18'] |
 | C5_dimension_Q65 | pass | [length] ** 3 | not captured | not captured | not captured | ['Sowinski_1995_table_1:row3:col2', 'Sowinski_1995_table_1:row3:col3', 'Sowinski_1995_table_1:row3:col4', 'Sowinski_1995_table_1:row3:col5', 'Sowinski_1995_table_1:row3:col6', 'Sowinski_1995_table_1:row3:col7', 'Sowinski_1995_table_1:row3:col8', 'Sowinski_1995_table_1:row3:col9', 'Sowinski_1995_table_1:row3:col11', 'Sowinski_1995_table_1:row3:col12', 'Sowinski_1995_table_1:row3:col13', 'Sowinski_1995_table_1:row3:col14', 'Sowinski_1995_table_1:row3:col15', 'Sowinski_1995_table_1:row3:col16', 'Sowinski_1995_table_1:row3:col17', 'Sowinski_1995_table_1:row3:col18'] |
 | C5_dimension_Q76 | pass | [length] ** 3 | not captured | not captured | not captured | ['Sowinski_1995_table_1:row4:col2', 'Sowinski_1995_table_1:row4:col3', 'Sowinski_1995_table_1:row4:col4', 'Sowinski_1995_table_1:row4:col5', 'Sowinski_1995_table_1:row4:col6', 'Sowinski_1995_table_1:row4:col7', 'Sowinski_1995_table_1:row4:col8', 'Sowinski_1995_table_1:row4:col9', 'Sowinski_1995_table_1:row4:col11', 'Sowinski_1995_table_1:row4:col12', 'Sowinski_1995_table_1:row4:col13', 'Sowinski_1995_table_1:row4:col14', 'Sowinski_1995_table_1:row4:col15', 'Sowinski_1995_table_1:row4:col16', 'Sowinski_1995_table_1:row4:col17', 'Sowinski_1995_table_1:row4:col18'] |
-| C5_unit_missing_Q26 | fail | [length] ** 3 / [time] | L/hr/1.73 m2 | not captured | not captured | ['Sowinski_1995_table_1:row2:col2', 'Sowinski_1995_table_1:row2:col3', 'Sowinski_1995_table_1:row2:col4', 'Sowinski_1995_table_1:row2:col5', 'Sowinski_1995_table_1:row2:col6', 'Sowinski_1995_table_1:row2:col7', 'Sowinski_1995_table_1:row2:col9', 'Sowinski_1995_table_1:row2:col11', 'Sowinski_1995_table_1:row2:col12', 'Sowinski_1995_table_1:row2:col13', 'Sowinski_1995_table_1:row2:col14', 'Sowinski_1995_table_1:row2:col15', 'Sowinski_1995_table_1:row2:col16', 'Sowinski_1995_table_1:row2:col17', 'Sowinski_1995_table_1:row2:col18'] |
-| C5_unit_missing_Q27 | fail | [length] ** 3 / [time] | L/hr/1.73 m2 | not captured | not captured | ['Sowinski_1995_table_1:row0:col2', 'Sowinski_1995_table_1:row0:col3', 'Sowinski_1995_table_1:row0:col4', 'Sowinski_1995_table_1:row0:col5', 'Sowinski_1995_table_1:row0:col6', 'Sowinski_1995_table_1:row0:col7', 'Sowinski_1995_table_1:row0:col9', 'Sowinski_1995_table_1:row0:col11', 'Sowinski_1995_table_1:row0:col12', 'Sowinski_1995_table_1:row0:col13', 'Sowinski_1995_table_1:row0:col14', 'Sowinski_1995_table_1:row0:col15', 'Sowinski_1995_table_1:row0:col16', 'Sowinski_1995_table_1:row0:col17', 'Sowinski_1995_table_1:row0:col18'] |
-| C5_unit_missing_Q30 | fail | [length] ** 3 / [time] | L/hr/1.73 m2 | not captured | not captured | ['Sowinski_1995_table_1:row1:col2', 'Sowinski_1995_table_1:row1:col3', 'Sowinski_1995_table_1:row1:col4', 'Sowinski_1995_table_1:row1:col5', 'Sowinski_1995_table_1:row1:col6', 'Sowinski_1995_table_1:row1:col7', 'Sowinski_1995_table_1:row1:col8', 'Sowinski_1995_table_1:row1:col9', 'Sowinski_1995_table_1:row1:col11', 'Sowinski_1995_table_1:row1:col13', 'Sowinski_1995_table_1:row1:col15', 'Sowinski_1995_table_1:row1:col16', 'Sowinski_1995_table_1:row1:col17', 'Sowinski_1995_table_1:row1:col18'] |
+| C5_unit_missing_Q26 | fail | [length] ** 3 / [time] | L/hr/1.73 m² | not captured | not captured | ['Sowinski_1995_table_1:row2:col2', 'Sowinski_1995_table_1:row2:col3', 'Sowinski_1995_table_1:row2:col4', 'Sowinski_1995_table_1:row2:col5', 'Sowinski_1995_table_1:row2:col6', 'Sowinski_1995_table_1:row2:col7', 'Sowinski_1995_table_1:row2:col9', 'Sowinski_1995_table_1:row2:col11', 'Sowinski_1995_table_1:row2:col12', 'Sowinski_1995_table_1:row2:col13', 'Sowinski_1995_table_1:row2:col14', 'Sowinski_1995_table_1:row2:col15', 'Sowinski_1995_table_1:row2:col16', 'Sowinski_1995_table_1:row2:col17', 'Sowinski_1995_table_1:row2:col18'] |
+| C5_unit_missing_Q27 | fail | [length] ** 3 / [time] | L/hr/1.73 m² | not captured | not captured | ['Sowinski_1995_table_1:row0:col2', 'Sowinski_1995_table_1:row0:col3', 'Sowinski_1995_table_1:row0:col4', 'Sowinski_1995_table_1:row0:col5', 'Sowinski_1995_table_1:row0:col6', 'Sowinski_1995_table_1:row0:col7', 'Sowinski_1995_table_1:row0:col9', 'Sowinski_1995_table_1:row0:col11', 'Sowinski_1995_table_1:row0:col12', 'Sowinski_1995_table_1:row0:col13', 'Sowinski_1995_table_1:row0:col14', 'Sowinski_1995_table_1:row0:col15', 'Sowinski_1995_table_1:row0:col16', 'Sowinski_1995_table_1:row0:col17', 'Sowinski_1995_table_1:row0:col18'] |
+| C5_unit_missing_Q30 | fail | [length] ** 3 / [time] | L/hr/1.73 m² | not captured | not captured | ['Sowinski_1995_table_1:row1:col2', 'Sowinski_1995_table_1:row1:col3', 'Sowinski_1995_table_1:row1:col4', 'Sowinski_1995_table_1:row1:col5', 'Sowinski_1995_table_1:row1:col6', 'Sowinski_1995_table_1:row1:col7', 'Sowinski_1995_table_1:row1:col8', 'Sowinski_1995_table_1:row1:col9', 'Sowinski_1995_table_1:row1:col11', 'Sowinski_1995_table_1:row1:col13', 'Sowinski_1995_table_1:row1:col15', 'Sowinski_1995_table_1:row1:col16', 'Sowinski_1995_table_1:row1:col17', 'Sowinski_1995_table_1:row1:col18'] |
 | C7_apparent_coherence | pass | not captured | not captured | not captured | not captured | not captured |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
 | C9_phys_window_Q65 | pass | volume within physiological range | 100 L | not captured | not captured | ['Sowinski_1995_table_1:row3:col2', 'Sowinski_1995_table_1:row3:col3', 'Sowinski_1995_table_1:row3:col4', 'Sowinski_1995_table_1:row3:col5', 'Sowinski_1995_table_1:row3:col6', 'Sowinski_1995_table_1:row3:col7', 'Sowinski_1995_table_1:row3:col8', 'Sowinski_1995_table_1:row3:col9', 'Sowinski_1995_table_1:row3:col11', 'Sowinski_1995_table_1:row3:col12', 'Sowinski_1995_table_1:row3:col13', 'Sowinski_1995_table_1:row3:col14', 'Sowinski_1995_table_1:row3:col15', 'Sowinski_1995_table_1:row3:col16', 'Sowinski_1995_table_1:row3:col17', 'Sowinski_1995_table_1:row3:col18'] |
@@ -169,4 +164,4 @@ _No web simulator for this record: its structure has no shared WebAssembly templ
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-09-28 23:53 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-06 23:09 UTC</sub>

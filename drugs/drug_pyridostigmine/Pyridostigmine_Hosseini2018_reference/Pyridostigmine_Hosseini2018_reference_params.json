@@ -1,0 +1,30 @@
+{
+ "dose_source": "WHO ATC DDD 10 mg parenteral (N07AA02)",
+ "model_id": "Pyridostigmine_Hosseini2018_reference",
+ "molar_masses": {
+  "central.C": 0.1812117
+ },
+ "note": "Values for the shared PK_1C.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "parameters": {
+  "Cl": 5.590277777777778e-09,
+  "F": 1.0,
+  "MM": 0.1812117,
+  "VdPerKg": 8.049999999999999e-05,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 1e-05,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 660.0000000662079
+ },
+ "reference_peaks": {
+  "central.C": 0.0017740948374253469
+ },
+ "stop_time": 3628800.0,
+ "template": "PK_1C",
+ "template_fmu": "PK_1C.fmu"
+}

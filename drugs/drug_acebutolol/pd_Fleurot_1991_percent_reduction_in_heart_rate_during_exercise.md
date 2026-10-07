@@ -13,7 +13,7 @@
 
 ## What this record describes
 
-**As extracted:** Acebutolol drives percent reduction in heart rate during exercise (in %): direct log-linear effect.
+**As extracted:** Acebutolol drives percent reduction in heart rate during exercise: direct log-linear effect.
 
 **Model:** No model was generated from this record.
 

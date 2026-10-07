@@ -1,10 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C07A&quot;,&quot;href&quot;:&quot;atc/C07A.md&quot;},{&quot;label&quot;:&quot;carvedilol&quot;,&quot;href&quot;:&quot;drugs/drug_carvedilol/&quot;},{&quot;label&quot;:&quot;Nikolic_2013 \u00b7 reference&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Carvedilol_McTavish1993_reference&quot;,&quot;label&quot;:&quot;McTavish_1993_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_carvedilol/Carvedilol_McTavish1993_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Carvedilol_Nikolic2013_reference&quot;,&quot;label&quot;:&quot;Nikolic_2013_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_carvedilol/Carvedilol_Nikolic2013_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Carvedilol_Yamamoto2024_final&quot;,&quot;label&quot;:&quot;Yamamoto_2024_final&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_carvedilol/Carvedilol_Yamamoto2024_final.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Carvedilol_Yamamoto2024_final_s_carvedilol_final_model_estim&quot;,&quot;label&quot;:&quot;Yamamoto_2024_final_s_carvedilol_final_model_estimate_rse&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_carvedilol/Carvedilol_Yamamoto2024_final_s_carvedilol_final_model_estim.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # carvedilol — `Carvedilol_Nikolic2013_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.444). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.75). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -12,7 +13,7 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
-**Model:** No model was generated from this record.
+**Model:** A simulatable model was generated — see the **Models** and **Simulation** tabs.
 
 ### Reviewer guidance
 
@@ -20,30 +21,29 @@
 
 Without a unit the value cannot be converted, so the model cannot use it. Extracted — carvedilol: CL 3.71, V 132, IIV 0.013.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on `parameters[clearance (l/h)-θ 1].value`: this record has 3.71, the second reading 10; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has carvedilol, the second reading unknown; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
+
+> ⚠️ **STALE** — review status `needs_review` (reviewed 2026-10-05 09:25:09.174804+00:00) predates the upstream re-run (2026-10-07 00:33:29.361598+00:00). Current validate status: `extracted`.
 
 ## Citation
 Nikolic VN et al., Population pharmacokinetics of carvedil…, Journal of pharmaceutical s… (2013)
   ·  DOI: [10.1002/jps.23626](https://doi.org/10.1002/jps.23626)
 
 ## Model component
-<dbs-pgx drug="carvedilol" model-id="Carvedilol_Nikolic2013_reference" status="needs_review" stale="false" population="adult patients with chronic heart failure" measured-compound="carvedilol" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<dbs-pgx drug="carvedilol" model-id="Carvedilol_Nikolic2013_reference" status="extracted" stale="true" population="adult patients with chronic heart failure" measured-compound="carvedilol" parameterization="mechanistic" topology="1C"></dbs-pgx>
 
-**Model structure:** 1-compartment; no model was built for this record.  
-**Parameters:** 3 extracted.
+**Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
+**Parameters:** 2 extracted.
 
 **Parameterization:** mechanistic.
 
 ## Parameters
-> ⚠️ This record is not accepted (current status `needs_review`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
-
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| Clearance (L/h)-θ 1 | `Q22` · CL | 3.71 | not captured | not captured | not captured | not captured | boundary (0.8) | tab_2:row2:col1, tab_2:row2:col2 | — | not captured |
-| Volume of distribution | `Q61` · V | 132.06 | not captured | not captured | not captured | not captured | exact (1.0) | tab_2:row4:col1, tab_2:row4:col2 | — | not captured |
-| Interindividual variance | `Q312` · IIV | 0.013 | not captured | not captured | not captured | not captured | llm (0.5) | tab_2:row13:col1, tab_2:row13:col2 | — | not captured |
+| Clearance (L/h)-θ 1 | `Q22` · CL | 10 | L/h | 2.777777777777778e-06 | L/h | 3.71 | llm_confirmed (0.6) | tab_2:row2:col1, tab_2:row2:col2 | — | not captured |
+| Volume of distribution | `Q61` · V | 832 | L | 0.8320000000000001 | L | 132.06 | exact (1.0) | tab_2:row4:col1, tab_2:row4:col2 | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -56,12 +56,15 @@ Nikolic VN et al., Population pharmacokinetics of carvedil…, Journal of pharma
 - dropped unlinked row (NIL): 'Effect of TBW-θ 3' — extend the ontology if this is a real PK parameter (source ['tab_2:row7:col1', 'tab_2:row7:col2'])
 - dropped unlinked row (NIL): 'Effect of TOB-θ 4' — extend the ontology if this is a real PK parameter (source ['tab_2:row9:col1', 'tab_2:row9:col2'])
 - dropped unlinked row (NIL): 'Effect of DIG-θ 5' — extend the ontology if this is a real PK parameter (source ['tab_2:row11:col1', 'tab_2:row11:col2'])
+- routed 'Interindividual variance' → Q312 (IIV) to iiv — variability estimate, not a structural parameter
+- implicit units: 'Clearance (L/h)-θ 1' → L/h (from the paper text: "The text explicitly states the unit for clearance in the abstract: 'The typical mean value for carvedilol CL... was 43.8")
+- implicit units: 'Volume of distribution' → L (from the popPK convention: 'The paper does not explicitly state the unit for the volume of distribution in the provided excerpts. However, in popula')
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=carvedilol
 - skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
 - skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
 
 **Extraction notes:**
-- unparsed cell tab_2:row1:col2 = '(95% Confidence Interval)'
+- LLM selected parameter table(s) 2
 
 ## Validation
 
@@ -70,17 +73,14 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.444 (4/9 fields) | 5 |
+| `gpt-oss:120b` | not confirmed | 0.75 (6/8 fields) | 2 |
 
-<details><summary>5 field(s) a reader read differently</summary>
+<details><summary>2 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `parameters[clearance (l/h)-θ 1].rse_percent` | not captured | 3.71 | mismatch |
-| `gpt-oss:120b` | `parameters[clearance (l/h)-θ 1].value` | 3.71 | 10 | mismatch |
-| `gpt-oss:120b` | `parameters[interindividual variance]` | 0.013 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[volume of distribution].rse_percent` | not captured | 132.06 | mismatch |
-| `gpt-oss:120b` | `parameters[volume of distribution].value` | 132.06 | 832 | mismatch |
+| `gpt-oss:120b` | `screen.dose_compound` | carvedilol | unknown | mismatch |
+| `gpt-oss:120b` | `screen.primary_analyte` | carvedilol | unknown | mismatch |
 
 </details>
 
@@ -94,13 +94,15 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 3 | not captured | not captured | not captured |
+| C0_has_structural_params | pass | not captured | 2 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
-| C5_unit_missing_Q22 | fail | [length] ** 3 / [time] | not captured | not captured | not captured | ['tab_2:row2:col1', 'tab_2:row2:col2'] |
-| C5_unit_missing_Q61 | fail | [length] ** 3 | not captured | not captured | not captured | ['tab_2:row4:col1', 'tab_2:row4:col2'] |
-| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 3.71 | not captured | not captured | ['tab_2:row2:col1', 'tab_2:row2:col2'] |
+| C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['tab_2:row2:col1', 'tab_2:row2:col2'] |
+| C5_dimension_Q61 | pass | [length] ** 3 | not captured | not captured | not captured | ['tab_2:row4:col1', 'tab_2:row4:col2'] |
+| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 10.0 | not captured | not captured | ['tab_2:row2:col1', 'tab_2:row2:col2'] |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
+| C9_phys_window_Q22 | pass | clearance within physiological range | 10 L/h | not captured | not captured | ['tab_2:row2:col1', 'tab_2:row2:col2'] |
+| C9_phys_window_Q61 | pass | volume within physiological range | 832 L | not captured | not captured | ['tab_2:row4:col1', 'tab_2:row4:col2'] |
 
 <details class="legend">
 <summary>Check legend — what each column means</summary>
@@ -118,21 +120,26 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_carvedilol/Carvedilol_Nikolic2013_reference/Carvedilol_Nikolic2013_reference_modelica.zip" download>Carvedilol_Nikolic2013_reference_modelica.zip</a> <span class="pk-size">(4.4 kB)</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_carvedilol/Carvedilol_Nikolic2013_reference/Carvedilol_Nikolic2013_reference_fmi.zip" download>Carvedilol_Nikolic2013_reference_fmi.zip</a> <span class="pk-size">(4.1 kB)</span><br><a href="models/fmu/PK_1C.fmu" download>PK_1C.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_carvedilol/Carvedilol_Nikolic2013_reference/Carvedilol_Nikolic2013_reference_matlab.zip" download>Carvedilol_Nikolic2013_reference_matlab.zip</a> <span class="pk-size">(3.3 kB)</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_carvedilol/Carvedilol_Nikolic2013_reference/Carvedilol_Nikolic2013_reference_matlab_simbio.zip" download>Carvedilol_Nikolic2013_reference_matlab_simbio.zip</a> <span class="pk-size">(2.7 kB)</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_carvedilol/Carvedilol_Nikolic2013_reference/Carvedilol_Nikolic2013_reference_sbml.zip" download>Carvedilol_Nikolic2013_reference_sbml.zip</a> <span class="pk-size">(2.4 kB)</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_carvedilol/Carvedilol_Nikolic2013_reference/Carvedilol_Nikolic2013_reference_cellml.zip" download>Carvedilol_Nikolic2013_reference_cellml.zip</a> <span class="pk-size">(2.9 kB)</span></td></tr>
 </tbody></table>
-<p>No bundles have been generated for this record yet. When the engineer emits them they appear here automatically — this page reports what is on disk and generates nothing itself.</p>
-</div></div>
+<p>Each archive holds the model source, a script that simulates it against the appropriate library, and a README describing both and how to run them.</p>
+<p><b>FMI is two downloads.</b> The archive holds this record's parameters and its driver; the simulator itself is <code>PK_1C.fmu</code>, one compiled template shared by every model of this structure. Take the FMU once, keep it beside the script (or pass <code>--fmu PATH</code>). Running it reproduces the model-specific FMU exactly.</p>
+</div><figure class="pk-models-diagram"><img src="drugs/drug_carvedilol/Carvedilol_Nikolic2013_reference/Carvedilol_Nikolic2013_reference.svg" alt="Carvedilol_Nikolic2013_reference diagram"><figcaption>Model diagram (Modelica) using Pharmacolibrary v26.09 components, rendered by OpenModelica 1.26.7.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+**Administration: intravenous** — 6.25 mg infusion over 10 min, single dose. Doses in the paper: 6.25–50 mg.
+
+<dbs-fmusim paramsurl="drugs/drug_carvedilol/Carvedilol_Nikolic2013_reference/Carvedilol_Nikolic2013_reference_params.json" metaurl="assets/fmu/PK_1C.vr.json" wasmurl="assets/fmu/PK_1C.js" controlsurl="drugs/drug_carvedilol/Carvedilol_Nikolic2013_reference/Carvedilol_Nikolic2013_reference_sim_controls.json"></dbs-fmusim>
+
+<sub>Runs this record's model in the browser as WebAssembly. Sliders start at the extracted values; the reference check compares the browser's peak against the FMPy result recorded when the record was built, and is withheld once a value has been edited. Template `PK_1C` · parameters `Carvedilol_Nikolic2013_reference_params.json` · controls `Carvedilol_Nikolic2013_reference_sim_controls.json`. A slider marked *simulator value* is running on the template's own default because this record does not pin that parameter.</sub>
 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-07-22 19:32 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 00:33 UTC</sub>

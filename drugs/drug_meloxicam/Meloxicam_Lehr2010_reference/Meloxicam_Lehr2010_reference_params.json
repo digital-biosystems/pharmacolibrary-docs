@@ -1,0 +1,32 @@
+{
+ "dose_source": "WHO ATC DDD 15 mg oral (M01AC06)",
+ "model_id": "Meloxicam_Lehr2010_reference",
+ "molar_masses": {
+  "central.C": 0.351401
+ },
+ "note": "Values for the shared PK_1C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "parameters": {
+  "Cl": 1.2755555555555555e-07,
+  "F": 1.0,
+  "MM": 0.351401,
+  "Tlag": 0.0,
+  "VdPerKg": 0.000245,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 1.5e-05,
+  "ka": 0.00035,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 11656.513806507499
+ },
+ "reference_peaks": {
+  "central.C": 0.000804438003205606
+ },
+ "stop_time": 518400.0,
+ "template": "PK_1C_enteral",
+ "template_fmu": "PK_1C_enteral.fmu"
+}

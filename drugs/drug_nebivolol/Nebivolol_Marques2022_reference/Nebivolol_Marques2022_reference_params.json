@@ -1,0 +1,42 @@
+{
+ "dose_source": "paper",
+ "model_id": "Nebivolol_Marques2022_reference",
+ "molar_masses": {
+  "central.C": 0.405435
+ },
+ "note": "Values for the shared PK_2C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "paper_doses_kind": "discrete",
+ "paper_doses_mg": [
+  2.5,
+  5.0,
+  6.0,
+  10.0,
+  20.0
+ ],
+ "parameters": {
+  "Cl": 6.111111111111111e-08,
+  "F": 0.9,
+  "MM": 0.405435,
+  "Tlag": 1080.0,
+  "VdPerKg": 6.014285714285715e-05,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 2.5e-06,
+  "k12": 3.892847717075746e-05,
+  "k21": 2.3018102372034958e-05,
+  "ka": 0.0005722222222222222,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 1987.6170115092532
+ },
+ "reference_peaks": {
+  "central.C": 2.8723294370305315e-05
+ },
+ "stop_time": 259200.0,
+ "template": "PK_2C_enteral",
+ "template_fmu": "PK_2C_enteral.fmu"
+}

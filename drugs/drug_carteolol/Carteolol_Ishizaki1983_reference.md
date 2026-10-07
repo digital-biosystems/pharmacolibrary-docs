@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C07A&quot;,&quot;href&quot;:&quot;atc/C07A.md&quot;},{&quot;label&quot;:&quot;carteolol&quot;,&quot;href&quot;:&quot;drugs/drug_carteolol/&quot;},{&quot;label&quot;:&quot;Ishizaki_1983 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Carteolol_Ishizaki1983_reference&quot;,&quot;label&quot;:&quot;Ishizaki_1983_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_carteolol/Carteolol_Ishizaki1983_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Carteolol_Ishizaki1983_reference&quot;,&quot;label&quot;:&quot;Ishizaki_1983_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_carteolol/Carteolol_Ishizaki1983_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # carteolol — `Carteolol_Ishizaki1983_reference`
 
-> ## <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.786). The first reading is what the record holds.">cross-check: partial</span>
+> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.15). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -21,16 +21,18 @@
 
 Only the abstract was available, so reported summary statistics stand in for a fitted model.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of absolute bioavailability: this record has none, the second reading 83.7; it also differs on 2 more fields. That field does not shape the model.
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has carteolol, the second reading unknown; it also differs on 16 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
+
+> ⚠️ **STALE** — review status `curated_candidate` (reviewed 2026-09-29 04:00:29.765862+00:00) predates the upstream re-run (2026-10-07 00:27:18.975363+00:00). Current validate status: `extracted`.
 
 ## Citation
 Ishizaki T et al., Pharmacokinetics and absolute bioavaila…, European journal of clinica… (1983)
   ·  DOI: [10.1007/BF00544023](https://doi.org/10.1007/BF00544023)
 
 ## Model component
-<dbs-pgx drug="carteolol" model-id="Carteolol_Ishizaki1983_reference" status="curated_candidate" stale="false" population="normal volunteers" measured-compound="carteolol" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<dbs-pgx drug="carteolol" model-id="Carteolol_Ishizaki1983_reference" status="extracted" stale="true" population="normal volunteers" measured-compound="carteolol" parameterization="mechanistic" topology="2C"></dbs-pgx>
 
 **Model structure:** 2-compartment, IV mammillary model — template `PK_2C`.  
 **Parameters:** 7 extracted.
@@ -69,20 +71,34 @@ Ishizaki T et al., Pharmacokinetics and absolute bioavaila…, European journal 
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | partly confirmed | 0.786 (11/14 fields) | 3 |
+| `gpt-oss:120b` | not confirmed | 0.15 (3/20 fields) | 17 |
 
-<details><summary>3 field(s) a reader read differently</summary>
+<details><summary>17 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
 | `gpt-oss:120b` | `parameters[absolute bioavailability obtained from plasma data]` | 83.7 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[absolute bioavailability]` | not captured | 83.7 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[derived from analysis of urine]` | not captured | 82.7 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[cl]` | 10.13 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[cl]` | not captured | 10.13 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[clnr]` | 3.57 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[clnr]` | not captured | 3.57 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[clr]` | 6.56 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[clr]` | not captured | 6.56 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[elimination or beta-phase t1/2]` | 4.7 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[elimination or beta-phase t1/2]` | not captured | 4.7 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[that derived from analysis of urine]` | not captured | 82.7 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[vc]` | 0.74 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[vc]` | not captured | 0.74 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[vd]` | 4.05 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[vd]` | not captured | 4.05 | only_one_extracted |
+| `gpt-oss:120b` | `screen.dose_compound` | carteolol | unknown | mismatch |
+| `gpt-oss:120b` | `screen.primary_analyte` | carteolol | unknown | mismatch |
 
 </details>
 
@@ -141,7 +157,7 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_carteolol/Carteolol_Ishizaki1983_reference/Carteolol_Ishizaki1983_reference_modelica.zip" download>Carteolol_Ishizaki1983_reference_modelica.zip</a> <span class="pk-size">(3.8 kB)</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_carteolol/Carteolol_Ishizaki1983_reference/Carteolol_Ishizaki1983_reference_modelica.zip" download>Carteolol_Ishizaki1983_reference_modelica.zip</a> <span class="pk-size">(4.1 kB)</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_carteolol/Carteolol_Ishizaki1983_reference/Carteolol_Ishizaki1983_reference_fmi.zip" download>Carteolol_Ishizaki1983_reference_fmi.zip</a> <span class="pk-size">(4.2 kB)</span><br><a href="models/fmu/PK_2C.fmu" download>PK_2C.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_carteolol/Carteolol_Ishizaki1983_reference/Carteolol_Ishizaki1983_reference_matlab.zip" download>Carteolol_Ishizaki1983_reference_matlab.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_carteolol/Carteolol_Ishizaki1983_reference/Carteolol_Ishizaki1983_reference_matlab_simbio.zip" download>Carteolol_Ishizaki1983_reference_matlab_simbio.zip</a> <span class="pk-size">(2.8 kB)</span></td></tr>
@@ -163,4 +179,4 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-09-29 01:34 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 00:27 UTC</sub>

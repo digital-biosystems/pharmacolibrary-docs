@@ -34,10 +34,9 @@ Sambol NC et al., Population dose versus response of beta…, Clinical pharmacol
 ## Parameters
 | role | label (paper) | Q-code · name | value | unit | value_si | link | source |
 |---|---|---|---|---|---|---|---|
-| PD (effect) | baseline supine diastolic blood pressure | `Q324` · not captured | 100 | mm Hg | not captured | boundary (not captured) | Sambol_1991:pdv3 |
-| PD (effect) | maximum effect (Emax) | `Q320` · not captured | 13.1 | mm Hg | not captured | llm (not captured) | Sambol_1991:pdv3 |
-| variability | interindividual variability in response | `Q312` · not captured | 19.3% | coefficient of variation | not captured | llm (not captured) | Sambol_1991:pdv3 |
-| variability | intraindividual variability in supine diastolic blood pressure | `Q315` · not captured | 6.34 | mm Hg | not captured | llm (not captured) | Sambol_1991:pdv3 |
+| PD (effect) | baseline supine diastolic blood pressure | `Q324` · not captured | 100 | mm Hg | not captured | llm (not captured) | Sambol_1991:pdv3 |
+| PD (effect) | maximum effect | `Q323` · not captured | 13.1 | mm Hg | not captured | direction (not captured) | Sambol_1991:pdv3 |
+| variability | interindividual variability in response | `Q312` · not captured | 19.3 | % | not captured | llm (not captured) | Sambol_1991:pdv3 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
