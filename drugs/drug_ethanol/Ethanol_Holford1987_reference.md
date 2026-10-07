@@ -4,7 +4,7 @@
 
 # ethanol — `Ethanol_Holford1987_reference`
 
-> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.125). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.125). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -25,7 +25,7 @@ Holford NH, Clinical pharmacokinetics of ethanol, Clinical pharmacokinetics (198
   ·  DOI: [10.2165/00003088-198713050-00001](https://doi.org/10.2165/00003088-198713050-00001)
 
 ## Model component
-<dbs-pgx drug="ethanol" model-id="Ethanol_Holford1987_reference" status="extracted" stale="false" population="adults" measured-compound="ethanol" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<dbs-pgx drug="ethanol" model-id="Ethanol_Holford1987_reference" status="rejected" stale="false" population="adults" measured-compound="ethanol" parameterization="mechanistic" topology="1C"></dbs-pgx>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 6 extracted.
@@ -33,12 +33,14 @@ Holford NH, Clinical pharmacokinetics of ethanol, Clinical pharmacokinetics (198
 **Parameterization:** mechanistic.
 
 ## Parameters
+> ⚠️ This record is not accepted (current status `rejected`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
+
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
 | volume of distribution estimated from blood concentrations | `Q61` · V | 37 | L/70 kg | 0.037 | [l] / [70kg] | not captured | llm_confirmed (0.6) | Holford_1987:abstract | — | not captured |
-| excreted in ... urine | `Q44` · fe | 0.3 | % | not captured | [%] | not captured | llm (0.6) | Holford_1987:abstract | — | not captured |
+| amounts excreted in urine | `Q91` · Ae | 0.3 | % | not captured | [%] | not captured | llm (0.6) | Holford_1987:abstract | — | not captured |
+| amounts excreted in sweat | `Q44` · fe | 0.1 | % | not captured | [%] | not captured | llm (0.6) | Holford_1987:abstract | — | not captured |
 | typical extraction ratio | `Q38` · E | 0.2 | not captured | not captured | not captured | not captured | llm_confirmed (0.6) | Holford_1987:abstract | — | not captured |
-| usual blood:expired air ratio | `Q411` · blood_air_partition | 2300 | 1 | not captured | [1] | not captured | llm (0.6) | Holford_1987:abstract | — | not captured |
 | breath clearance at rest | `Q22` · CL | 0.16 | L/h | 4.444444444444445e-08 | [l] / [h] | not captured | llm_confirmed (0.6) | Holford_1987:abstract | — | not captured |
 | renal clearance of ethanol | `Q26` · CLR | 0.06 | L/h | 1.6666666666666667e-08 | [l] / [h] | not captured | llm_confirmed (0.6) | Holford_1987:abstract | — | not captured |
 
@@ -50,11 +52,16 @@ Holford NH, Clinical pharmacokinetics of ethanol, Clinical pharmacokinetics (198
 ## Departures & gaps
 
 **Interpretation flags:**
-- dropped unlinked row (NIL): 'excreted in the breath' — extend the ontology if this is a real PK parameter (source ['Holford_1987:abstract'])
-- dropped duplicate Q44 ('excreted in ... sweat', value 0.1) — already have one for this compound
-- dropped duplicate Q22 ('sweat clearance', value 0.02) — already have one for this compound
+- dropped unlinked row (NIL): 'amounts excreted in the breath' — extend the ontology if this is a real PK parameter (source ['Holford_1987:abstract'])
+- unit_dimension_mismatch: 'amounts excreted in urine' → Q91 (unit 'dimensionless' vs ontology '[mass]') — route to review
+- dropped value-less row: 'blood:expired air ratio'
+- dropped unlinked row (NIL): 'sweat clearance' — extend the ontology if this is a real PK parameter (source ['Holford_1987:abstract'])
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=ethanol
+- held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
+- status held at route_to_review — not promoted
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
+- skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
+- skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
 
 **Extraction notes:**
 - no GROBID TEI available — transcribed from abstract in Holford_1987_metadata.yaml (9 record(s)); values are summary statistics, not a fitted model
@@ -104,9 +111,9 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 | C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Holford_1987:abstract'] |
 | C5_dimension_Q26 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Holford_1987:abstract'] |
-| C5_dimension_Q411 | pass | dimensionless | not captured | not captured | not captured | ['Holford_1987:abstract'] |
 | C5_dimension_Q44 | pass | dimensionless | not captured | not captured | not captured | ['Holford_1987:abstract'] |
 | C5_dimension_Q61 | pass | [length] ** 3 | not captured | not captured | not captured | ['Holford_1987:abstract'] |
+| C5_dimension_Q91 | fail | dimensionless | % | not captured | not captured | ['Holford_1987:abstract'] |
 | C6_cl_magnitude | pass | &lt;= 90.0 L/h | 0.16 | not captured | not captured | ['Holford_1987:abstract'] |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
 | C9_phys_window_Q22 | pass | clearance within physiological range | 0.16 L/h | not captured | not captured | ['Holford_1987:abstract'] |
@@ -124,19 +131,9 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
-## Downloadable models
+## Models
 
-<div class="pk-models-grid"><div class="pk-models-table">
-<table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-</tbody></table>
-<p>No bundles have been generated for this record yet. When the engineer emits them they appear here automatically — this page reports what is on disk and generates nothing itself.</p>
-</div></div>
+<p>No downloads: this record is <b>rejected</b>, so it is not published as a model. Any archives generated for it before the verdict have been removed — a download outlives the page that explains it.</p>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
@@ -145,4 +142,4 @@ _No web simulator for this record: its structure has no shared WebAssembly templ
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-09-29 20:27 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 21:45 UTC</sub>

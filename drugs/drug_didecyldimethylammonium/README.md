@@ -17,7 +17,7 @@ Didecyldimethylammonium is a quaternary ammonium compound used as an antiseptic 
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-29 17:42 | 6:11 | 0/0/0 | 0/0/0 | 0/0/0 | 19,802/1,414 | ollama / qwen3.8:27b-mtp-q8_0 | 0 | 1/0 | 0/0 | 0 |
+| 2026-10-07 21:39 | 1:19 | 0/0/0 | 0/0/0 | 0/0/0 | 18,606/538 | einfracz / qwen3.8-27b | 1 | 1/1 | 1/0 | 0 |
 
 ## popPK records
 
@@ -34,37 +34,36 @@ _not available_
 - **PubMed hits:** 17 matched, 16 returned
 - **screened:** 0  ·  **relevant:** 0
 - **records:** 0  ·  extracted 0  ·  needs_review 0  ·  rejected 0  ·  stale 0
-- **scholar-agent fallback query used:** True
+- **scholar-agent fallback query used:** not captured
 
 ## Full text wanted
 
-_3 paper(s) judged relevant from the abstract, with no full text on disk — paywalled, or the resolver could not reach them. Follow the DOI, then save the PDF into `papers/` as `&lt;save as&gt;.pdf` and re-run the extraction._
+_2 paper(s) judged relevant from the abstract, with no full text on disk — paywalled, or the resolver could not reach them. Follow the DOI, then save the PDF into `papers/` as `&lt;save as&gt;.pdf` and re-run the extraction._
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
 | `LeBouf_2017.pdf` | LeBouf RF et al., Air and Surface Sampling Method for Ass…, Annals of work exposures an… (2017) | pd | 5 | [10.1093/annweh/wxx037](https://doi.org/10.1093/annweh/wxx037) | [28927165](https://www.ncbi.nlm.nih.gov/pubmed/28927165) | metadata signals extractable PD data (exposure-response) |
-| `Czarny_2019.pdf` | Czarny J et al., The Toxic Effect of Herbicidal Ionic Li…, International journal of en… (2019) | pd | 4 | [10.3390/ijerph16060916](https://doi.org/10.3390/ijerph16060916) | [30875750](https://www.ncbi.nlm.nih.gov/pubmed/30875750) | metadata signals extractable PD data (EC50) |
 | `Flanjak_2024.pdf` | Flanjak L et al., Ecotoxicity and rapid degradation of qu…, Chemosphere (2024) | pd | 4 | [10.1016/j.chemosphere.2023.140584](https://doi.org/10.1016/j.chemosphere.2023.140584) | [37925031](https://www.ncbi.nlm.nih.gov/pubmed/37925031) | metadata signals extractable PD data (EC50) |
 
-<sub>queue written 2026-09-29T17:42:07.263835+00:00</sub>
+<sub>queue written 2026-10-07T21:39:23.189769+00:00</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Auerbach_2016 | irrelevant | 0 | 0 | The paper is a review of high-throughput screening data for environmental chemicals related to obesity and diabetes, containing no pharmacokinetic parameters for didecyldimethylammonium. |
+| popPK | Auerbach_2016 | irrelevant | 0 | 0 | The paper is a review of high-throughput screening data for environmental chemicals related to obesity and diabetes and does not contain pharmacokinetic studies for didecyldimethylammonium. |
 | PD | Auerbach_2016 | not_relevant | 0 | 0 | The paper is a review of high-throughput screening data for prioritizing environmental chemicals and does not report specific pharmacodynamic or exposure-response parameters for Didecyldimethylammonium. |
-| PGx | Cheropkina_2023 | not_relevant | 0 | 0 | The paper uses didecyldimethylammonium bromide (DDAB) as a surfactant for electrode modification, not as a drug, and does not report pharmacogenomic effects on its PK/PD. |
-| popPK | Czarny_2019 | irrelevant | 0 | 0 | no_text gate: only 84 chars of text extracted (&lt; 400) |
+| PGx | Cheropkina_2023 | not_relevant | 0 | 0 | The paper describes using didecyldimethylammonium bromide (DDAB) as a coating agent for electrodes and does not report pharmacogenomic effects on the PK/PD of DDAB or any drug. |
+| popPK | Czarny_2019 | irrelevant | 0 | 0 | This is a toxicology/microbiology study evaluating the effect of herbicidal ionic liquids on anaerobic biogas production, not a pharmacokinetic study. |
 | PD | Czarny_2019 | not_relevant | 0 | 0 | The paper focuses on the toxic effects of herbicidal ionic liquids on microbial communities and does not report pharmacodynamic or exposure-response relationships for Didecyldimethylammonium. |
 | popPK | Flanjak_2024 | irrelevant | 0 | 0 | no_text gate: only 124 chars of text extracted (&lt; 400) |
 | PD | Flanjak_2024 | not_relevant | 0 | 0 | The paper focuses on the degradation kinetics of quaternary ammonium compounds under UV treatment, not on pharmacodynamic or exposure-response relationships in biological systems. |
-| popPK | Jeong_2025 | irrelevant | 0 | 0 | The study is an in-vitro toxicology assessment of mixture toxicity and does not report any pharmacokinetic parameters for didecyldimethylammonium. |
+| popPK | Jeong_2025 | irrelevant | 0 | 0 | The study is an in vitro toxicology/mode-of-action assessment of mixture toxicity, not a pharmacokinetic study reporting quantitative disposition parameters. |
 | popPK | Jodynis-Liebert_2010 | irrelevant | 0 | 0 | The study is a toxicity assessment (cytotoxicity, acute/subchronic toxicity) and does not report pharmacokinetic parameters such as clearance, volume, or half-life. |
-| popPK | Kohler_2013 | irrelevant | 0 | 0 | The paper is a clinical study on MRSA decolonization success rates and does not report any pharmacokinetic parameters for didecyldimethylammonium. |
+| popPK | Kohler_2013 | irrelevant | 0 | 0 | The study concerns MRSA decolonization success rates and uses didecyldimonium chloride (a different quaternary ammonium compound) as a topical antimicrobial, rather than reporting pharmacokinetic parameters for didecyldimethylammonium. |
 | popPK | LeBouf_2017 | irrelevant | 0 | 0 | no_text gate: only 141 chars of text extracted (&lt; 400) |
 | PD | LeBouf_2017 | not_relevant | 0 | 0 | The paper describes an analytical method (LC-MS/MS) for sampling quaternary ammonium compounds and does not report any pharmacodynamic or exposure-response data. |
-| popPK | Shirai_2000 | irrelevant | 0 | 0 | The paper is a virology study on the virucidal activity of disinfectants, not a pharmacokinetic study, and contains no PK parameters for didecyldimethylammonium. |
+| popPK | Shirai_2000 | irrelevant | 0 | 0 | The study is an in-vitro virology investigation examining the disinfectant efficacy of didecyldimethylammonium chloride on viruses, not a pharmacokinetic study of the compound's disposition. |
 | PD | Shirai_2000 | not_relevant | 3 | 2 | The paper reports qualitative effectiveness and effective concentration ranges for disinfectants on viruses, but does not provide a quantitative pharmacodynamic model or extractable numeric PD parameters (e.g., EC50, Emax) for the drug. |
 | popPK | Soleymani_2021 | irrelevant | 0 | 0 | The study focuses on the formulation and in vitro cytotoxicity of nanomicelles where didecyldimethylammonium bromide is a structural component, not a subject drug for pharmacokinetic analysis. |
 | PD | Soleymani_2021 | not_relevant | 0 | 0 | The paper reports IC50 values for curcumin delivery systems, not for Didecyldimethylammonium, and does not provide a concentration-effect relationship or PD parameters for the surfactant itself. |

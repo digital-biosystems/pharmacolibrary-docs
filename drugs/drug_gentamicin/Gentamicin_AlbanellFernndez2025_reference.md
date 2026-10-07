@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;D06A&quot;,&quot;href&quot;:&quot;atc/D06A.md&quot;},{&quot;label&quot;:&quot;gentamicin&quot;,&quot;href&quot;:&quot;drugs/drug_gentamicin/&quot;},{&quot;label&quot;:&quot;Albanell-Fern\u00e1ndez_2025 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Gentamicin_Crcek2019_reference&quot;,&quot;label&quot;:&quot;Crcek_2019_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_gentamicin/Gentamicin_Crcek2019_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Gentamicin_Abbasi2023_reference&quot;,&quot;label&quot;:&quot;Abbasi_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_gentamicin/Gentamicin_Abbasi2023_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Gentamicin_Crcek2019_reference&quot;,&quot;label&quot;:&quot;Crcek_2019_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_gentamicin/Gentamicin_Crcek2019_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # gentamicin — `Gentamicin_AlbanellFernndez2025_reference`
 
-> ## <span class="pk-badge pk-badge--orange">built, not shipped</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.667). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--neutral">None</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.667). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -13,7 +13,7 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
-**Model:** A model was built but held back: a core parameter had no value, so it is not published or simulated.
+**Model:** No model was generated from this record.
 
 ### Reviewer guidance
 
@@ -25,78 +25,72 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 
 <sub>reviewed by rule template (no LLM)</sub>
 
+> ⚠️ **STALE** — review status `model_quarantined` (reviewed 2026-09-28 14:38:08.005632+00:00) predates the upstream re-run (2026-10-07 22:09:46.825072+00:00). Current validate status: `not captured`.
+
 ## Citation
 Albanell-Fernández M et al., A Review of Vancomycin, Gentamicin, and…, Clinical pharmacokinetics (2025)
   ·  DOI: [10.1007/s40262-024-01459-z](https://doi.org/10.1007/s40262-024-01459-z)
 
 ## Model component
-<dbs-pgx drug="gentamicin" model-id="Gentamicin_AlbanellFernndez2025_reference" status="model_quarantined" stale="false" population="neonates and infants" measured-compound="vancomycin" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<dbs-pgx drug="gentamicin" model-id="Gentamicin_AlbanellFernndez2025_reference" status="" stale="true" population="neonates and infants with no previous pathologies" measured-compound="" parameterization="" topology=""></dbs-pgx>
 
-**Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
-**Parameters:** 1 extracted.
+**Model structure:** —; no model was built for this record.  
+**Parameters:** 0 extracted.
 
-**Parameterization:** mechanistic.
+**Parameterization:** not captured.
 
 ## Parameters
-> ⚠️ This record is not accepted (current status `model_quarantined`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
+> ⚠️ This record is not accepted (current status `not captured`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
 
-| label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
-|---|---|---|---|---|---|---|---|---|---|---|
-| Mean V d in L/kg | `Q61` · V | 0.66 | not captured | not captured | not captured | not captured | llm (0.5) | tab_4:row0:col7, tab_4:row0:col10, tab_4:row0:col12, tab_4:row0:col17, tab_4:row0:col19, tab_4:row0:col24, tab_4:row0:col26, tab_4:row0:col27, tab_4:row0:col29 | — | not captured |
-
-<details class="legend">
-<summary>Column legend — what each column means</summary>
-<table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>label (paper)</code></td><td>the row or statistic label exactly as printed in the paper (label_verbatim) — never normalised, so it can be found in the PDF.</td></tr><tr><td><code>Q-code · name</code></td><td>the ontology parameter this label was matched to (Q22 = clearance, Q27 = CL/F, Q49 = ka, Q57 = half-life, …) and its canonical name. The Q-code, not the label, is what scoring and cross-paper merging use.</td></tr><tr><td><code>value</code></td><td>the estimate as reported in the paper.</td></tr><tr><td><code>unit</code></td><td>the unit as printed (unit_verbatim).</td></tr><tr><td><code>value_si</code></td><td>the value converted to the canonical unit. Empty when no conversion was possible — usually an unparseable or missing unit.</td></tr><tr><td><code>unit_canonical</code></td><td>the canonical unit for that Q-code, i.e. what value_si is expressed in.</td></tr><tr><td><code>RSE%</code></td><td>relative standard error of the estimate, when the paper reports one.</td></tr><tr><td><code>link</code></td><td>how the label was matched to the Q-code, with confidence. exact / boundary / fuzzy / tv_prefix / caption_compartment / special_case are deterministic string matches; llm, llm_confirmed, llm_corrected involved the model; review and review_gapfill come from the secondary review tier, the latter filling a parameter the primary extraction missed; boundary_relink is a corrected match.</td></tr><tr><td><code>source</code></td><td>where in the paper the number came from: colN = that column of the located table, other_prose = running text, review = the secondary tier, pgx = a pharmacogenomic record.</td></tr><tr><td><code>covariates</code></td><td>covariate effects attached to this parameter (e.g. weight on CL).</td></tr><tr><td><code>IIV</code></td><td>inter-individual variability reported for this parameter.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>the field is absent from the KB artifact — nothing was recorded. This is NOT the same as zero or empty: the value is unknown, not measured to be nothing.</td></tr><tr><td><code>—</code></td><td>deliberately not shown: the column does not apply to this row.</td></tr><tr><td><code>not verified</code></td><td>the record is not in an accepted state (see the badge and the note above the table); the numbers are shown as extracted, not endorsed.</td></tr></tbody></table>
-</details>
-
-### Unresolved rows _(no Q-code or no value — not parameters)_
-| label (paper) | Q-code | value | link |
-|---|---|---|---|
-| Mean CL in L/h/kg | Q22 | not captured | boundary |
+_No resolved parameters._
 
 ## Departures & gaps
 
-**Interpretation flags:**
-- dropped duplicate Q61 ('V d equation', value None) — already have one for this compound
-- dropped duplicate Q22 ('CL equation', value None) — already have one for this compound
-- apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=vancomycin
-
 **Extraction notes:**
-- unparsed cell tab_4:row0:col3 = '1.18 (for mean weight 2 kg, PCA'
-- unparsed cell tab_4:row0:col4 = '40 wks, Cr)'
-- unparsed cell tab_4:row0:col9 = 'M1:'
-- unparsed cell tab_4:row0:col11 = 'M2:'
-- unparsed cell tab_4:row0:col20 = '0.562 (PMA ≤32 wks)'
-- unparsed cell tab_4:row0:col21 = '0.498 (PMA &gt;32 wks)'
-- unparsed cell tab_4:row1:col9 = 'M1:'
-- unparsed cell tab_4:row1:col11 = 'M2:'
-- unparsed cell tab_4:row4:col3 = 'M1 and 2: WT'
-- unparsed cell tab_4:row4:col9 = 'M1 and 2: WT'
-- unparsed cell tab_4:row5:col3 = 'M1: 0.129'
-- unparsed cell tab_4:row5:col4 = 'M2: 0.069 (for mean weight'
-- unparsed cell tab_4:row5:col5 = '2 kg, PCA 40 wks, Cr 0.62'
-- unparsed cell tab_4:row5:col9 = 'M1: 1-CMT: 0.063'
-- unparsed cell tab_4:row5:col10 = 'M2: 2-CMT: 0.059 (if no DA'
-- unparsed cell tab_4:row5:col21 = '0.07 presence or 0.086 absence'
-- unparsed cell tab_4:row5:col26 = 'and weight 1.52 kg)'
-- unparsed cell tab_4:row5:col33 = '0.075 (for median weight 1.38'
-- unparsed cell tab_4:row5:col35 = '37 wks)'
-- unparsed cell tab_4:row6:col27 = '0.000127 × PNA + 0.0123 ×'
-- unparsed cell tab_4:row6:col28 = 'GA28) + 0.006'
-- unparsed cell tab_4:row6:col30 = 'GA &lt;28 wks'
-- unparsed cell tab_4:row6:col33 = 'PCA &lt;34 wks'
-- unparsed cell tab_4:row6:col35 = 'for PCA ≥34 wks'
-- unparsed cell tab_4:row7:col3 = 'Schaible et al., 1986 [33] M1: PCA'
-- unparsed cell tab_4:row7:col4 = 'M2: WT, Cr'
-- unparsed cell tab_4:row7:col7 = 'Asbury et al., 1993 [34] PCA'
-- unparsed cell tab_4:row7:col9 = 'Seay et al., 1994 [21] M1 and 2: WT, DA, GA'
-- unparsed cell tab_4:row7:col17 = 'Rodvold et al., 1995 [35] CLCr'
-- unparsed cell tab_4:row7:col19 = 'Burstein et al., 1997 [22] WT'
-- unparsed cell tab_4:row7:col21 = 'Silva et al., 1998 [36] IND, VENT'
-- unparsed cell tab_4:row7:col25 = 'Grimsley et al., 1999 [37] WT, Cr'
-- unparsed cell tab_4:row7:col27 = 'De Hoog et al., 2000 [38] WT'
-- unparsed cell tab_4:row7:col28 = 'Capparelli et al., 2001 [23] WT, Cr, PNA, GA'
-- unparsed cell tab_4:row7:col33 = 'Kimura et al., 2004 [39] WT, Cr'
+- transposed table Tab5: parameters were across the columns, populations/subgroups down the first column — transposed for parsing
+- unparsed cell Tab5:row2:col4 = '0.072a'
+- unparsed cell Tab5:row2:col8 = '0.07 presence or 0.086 absence of concomitant treatment with IND or VENT'
+- unparsed cell Tab5:row2:col13 = '0.079 (for mean weight 1.3 kg, 30 wks PMA and appropriate for GA)'
+- unparsed cell Tab5:row2:col14 = '0.049 (for mean weight 1.3 kg, 34 wks PMA and no VENT)'
+- unparsed cell Tab5:row2:col29 = '1.46 (for mean weight 3.2 kg and PMA 41 weeks)'
+- unparsed cell Tab5:row2:col31 = '0.102 (for mean weight 1.48 kg)'
+- unparsed cell Tab5:row2:col38 = 'M1: 0.057M2: 0.063'
+- unparsed cell Tab5:row2:col39 = '0.053 if PCA &gt;34 wks and AP ≥7; 0.044 if PCA ≤34 wks and AP &lt;7; 0.036 if PCA ≤34 wks and AP &lt;7'
+- unparsed cell Tab5:row2:col40 = '0.046 if GA ≤31 wks, 0.094 if GA 31–34 wks'
+- unparsed cell Tab5:row2:col41 = '0.069c'
+- unparsed cell Tab5:row2:col46 = '0.046 (for mean weight 2.4 kg)'
+- unparsed cell Tab5:row2:col47 = '0.0387 (It2B modeling) − 0.0404 (STS modeling)'
+- unparsed cell Tab5:row2:col50 = '0.076 (for median BW 1.92 kg and GA 32 wks)'
+- unparsed cell Tab5:row2:col55 = '0.037 (for mean weight 2.3 kg, PNA 3 days)'
+- unparsed cell Tab5:row2:col63 = '0.028 (for mean weight 1 kg, PCA 27 wks, and no NSAID)'
+- unparsed cell Tab5:row2:col64 = '0.040 (for mean weight 1 kg, 28 wks PMA and appropriate forGA)'
+- unparsed cell Tab5:row2:col65 = '0.0497 (for mean weight 1 kg, PMA 34 wks, PNA 1 day, no INO, no VENT)'
+- unparsed cell Tab5:row2:col66 = '0.091 (for mean weight 2 kg, PMA 30 wks)'
+- unparsed cell Tab5:row5:col3 = '1.18 (for mean weight 2 kg, PCA 40 wks, Cr)'
+- unparsed cell Tab5:row5:col4 = '0.52a'
+- unparsed cell Tab5:row5:col8 = '0.562 (PMA ≤32 wks)0.498 (PMA &gt;32 wks)'
+- unparsed cell Tab5:row5:col13 = '0.730 (for mean weight 1.3 kg, 30 wks PMA and appropriate for GA)'
+- unparsed cell Tab5:row5:col14 = '0.724 (for mean weight 1.3 kg, 34 wks PMA and no artificial ventilation)'
+- unparsed cell Tab5:row5:col29 = '0.148 (for mean weight 3.2 kg)'
+- unparsed cell Tab5:row5:col31 = '0.884 (for mean weight 1.48 kg)'
+- unparsed cell Tab5:row5:col40 = '0.703 – 0.767 if GA ≤31 wks0.643–0.653 if GA 31−34 wks'
+- unparsed cell Tab5:row5:col41 = '0.547c'
+- unparsed cell Tab5:row5:col46 = '0.46 (for mean weight 2.4 kg)'
+- unparsed cell Tab5:row5:col47 = '0.586 (It2B modeling) − 0.623 (STS modeling)'
+- unparsed cell Tab5:row5:col48 = '0.631c'
+- unparsed cell Tab5:row5:col50 = '0.136 (for median BW 1.92 kg)'
+- unparsed cell Tab5:row5:col55 = '0.687 (for mean weight 2.3kg and no sepsis)'
+- unparsed cell Tab5:row5:col64 = '0.561 (for mean weight 1 kg, 28 wks PMA and appropriate for GA)'
+- unparsed cell Tab5:row5:col65 = '0.455 (for mean weight 1 kg, PMA 34 wks, PNA 1 day, no INO, no VENT)'
+- unparsed cell Tab5:row5:col66 = '0.957 (for mean weight 2 kg PMA 30 wks)'
+- companion parameter table 2 transcribed (5 record(s))
+- companion parameter table 3 transcribed (11 record(s))
+- companion parameter table 4 transcribed (5 record(s))
+- LLM selected parameter table(s) 2, 3, 4, 5
+- LLM region Albanell-Fernández_2025:other_prose: no JSON records returned
+- captured model equation CL = 1.0 * (WT/70)^0.75 * (PMA/30)^3.16 * [0.83 * GA + 1.03 * (1 - GA)]GA = 1 for SGA infants and 0 for appropriate-for-GA infants
+- captured model equation V = 0.791 * (WT/1.416)^0.898
+- captured model equation Vc = 0.913 * (WT/1.75)^0.919Vc = Vp
 
 ## Validation
 
@@ -121,16 +115,6 @@ first reading `qwen3.6:27b-q8_0` — the numbers on this page are its, whatever 
 <table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>second reader</code></td><td>a model that re-read the paper independently, always from a different family than the first reading (scholarv2.secondary_for): a qwen primary is checked by gpt-oss:120b, a gpt-oss primary by qwen3.8:27b-mtp-q8_0 — two checkpoints of one family share their misreads, so agreement between them would mean little. A record can have several readers.</td></tr><tr><td><code>agreement</code></td><td>share of the compared fields that reader agreed on.</td></tr><tr><td><code>verdict</code></td><td>per reader: `confirmed` it agrees throughout · `partly confirmed` a non-structural field differs · `not confirmed` a structural one differs (clearance, a volume, ka, a lag) · `primary re-run` the first reading extracted nothing and was given one hinted retry.</td></tr><tr><td><code>combined</code></td><td>the record's verdict over ALL its readers: confirmed only when every reader that answered agrees, disputed as soon as one disagrees on a structural parameter. The most favourable reading is never taken — an extra reader must not be a way to find one that agrees.</td></tr><tr><td><code>kept</code></td><td>which reading the record holds. ALWAYS the first — a disagreement is a signal for a reviewer, never an automatic correction, so the numbers on this page are the first model's either way.</td></tr></tbody></table>
 </details>
 
-
-**Scholar closed-form checks:**
-
-| check | status | expected | obtained | ratio | tol | source |
-|---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 1 | not captured | not captured | not captured |
-| C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
-| C0c_disposition_complete | fail | not captured | not captured | not captured | not captured | not captured |
-| C5_unit_missing_Q61 | fail | [length] ** 3 | not captured | not captured | not captured | ['tab_4:row0:col7', 'tab_4:row0:col10', 'tab_4:row0:col12', 'tab_4:row0:col17', 'tab_4:row0:col19', 'tab_4:row0:col24', 'tab_4:row0:col26', 'tab_4:row0:col27', 'tab_4:row0:col29'] |
-| C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
 
 **Reviewer per-scenario checks:**
 
@@ -177,4 +161,4 @@ _No web simulator for this record: its structure has no shared WebAssembly templ
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-07-15 12:09 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 22:09 UTC</sub>

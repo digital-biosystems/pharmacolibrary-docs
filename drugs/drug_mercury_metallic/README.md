@@ -17,13 +17,13 @@ Metallic mercury was historically used in dermatological preparations as an anti
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-29 20:43 | 3:20 | 0/1/0 | 0/0/0 | 0/0/0 | 13,896/2,950 | ollama / qwen3.8:27b-mtp-q8_0 | 1 | 1/0 | 0/1 | 0 |
+| 2026-10-07 22:38 | 0:26 | 0/1/0 | 0/0/0 | 0/0/0 | 13,038/1,009 | einfracz / qwen3.8-27b | 1 | 1/0 | 0/1 | 0 |
 
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Sällsten_1994_reference](drugs/drug_mercury_metallic/MercuryMetallic_Sllsten1994_reference.md) | — | 1-compartment (no model) | 0 | Sällsten G et al., Clearance half life of mercury in urine…, Occupational and environmen… (1994) | [10.1136/oem.51.5.337](https://doi.org/10.1136/oem.51.5.337) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: disputed</span><br><sub>STALE — current validate: rejected</sub><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Sällsten_1994_reference](drugs/drug_mercury_metallic/MercuryMetallic_Sllsten1994_reference.md) | — | 1-compartment (no model) | 0 | Sällsten G et al., Clearance half life of mercury in urine…, Occupational and environmen… (1994) | [10.1136/oem.51.5.337](https://doi.org/10.1136/oem.51.5.337) |
 
 <details class="legend">
 <summary>Badge legend — what each badge means</summary>
@@ -35,8 +35,8 @@ Metallic mercury was historically used in dermatological preparations as an anti
 
 - **PubMed hits:** 205 matched, 14 returned
 - **screened:** 1  ·  **relevant:** 1
-- **records:** 1  ·  extracted 0  ·  needs_review 0  ·  rejected 1  ·  stale 0
-- **scholar-agent fallback query used:** True
+- **records:** 1  ·  extracted 0  ·  needs_review 0  ·  rejected 1  ·  stale 1
+- **scholar-agent fallback query used:** not captured
 
 ## Full text wanted
 
@@ -44,27 +44,27 @@ _1 paper(s) judged relevant from the abstract, with no full text on disk — pay
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Sällsten_1994.pdf` | Sällsten G et al., Clearance half life of mercury in urine…, Occupational and environmen… (1994) | popPK | 9 | [10.1136/oem.51.5.337](https://doi.org/10.1136/oem.51.5.337) | [8199685](https://pubmed.ncbi.nlm.nih.gov/8199685) | The study reports a quantitative one-compartment model for mercury elimination with a specific median half-life of 55 days derived from occupational exposure data. |
+| `Sällsten_1994.pdf` | Sällsten G et al., Clearance half life of mercury in urine…, Occupational and environmen… (1994) | popPK | 8 | [10.1136/oem.51.5.337](https://doi.org/10.1136/oem.51.5.337) | [8199685](https://pubmed.ncbi.nlm.nih.gov/8199685) | The study reports a specific median half-life (55 days) for mercury elimination in urine following occupational exposure to metallic mercury vapors. |
 
-<sub>queue written 2026-09-29T20:42:47.743550+00:00</sub>
+<sub>queue written 2026-10-07T22:37:57.098912+00:00</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Aghila_2026 | irrelevant | 0 | 0 | The paper is a biomaterials study on exosome carriers and does not report pharmacokinetic parameters for mercury_metallic. |
+| popPK | Aghila_2026 | irrelevant | 0 | 0 | The study focuses on osteogenic efficacy of dental pulp stem cell-derived exosomes and uses mercury only in the context of 'mercury intrusion porosimetry,' not as the subject drug for PK analysis. |
 | popPK | Boddington_1979 | irrelevant | 0 | 0 | no_text gate: only 78 chars of text extracted (&lt; 400) |
-| popPK | Castillo-Aleman_2025 | irrelevant | 2 | 0 | The study reports a redistribution ratio for mercury as a toxin removed by plasmapheresis, but does not provide standard population pharmacokinetic parameters (CL, V, ka) for mercury_metallic. |
-| popPK | Charleston_1995 | irrelevant | 0 | 0 | The study is a histological analysis of mercury distribution in monkey brain tissue using autometallography and does not report quantitative pharmacokinetic parameters such as clearance, volume, or half-life. |
+| popPK | Castillo-Aleman_2025 | irrelevant | 0 | 0 | The study investigates the removal of environmental toxins via a medical procedure (plasmapheresis) and does not report population pharmacokinetic parameters (CL, V, ka, etc.) for mercury as a subject drug. |
+| popPK | Charleston_1995 | irrelevant | 1 | 0 | The paper reports histological distribution of mercury in monkey brain tissue but contains no quantitative pharmacokinetic parameters (clearance, volume, half-life) for metallic mercury. |
 | popPK | Deckart_1975 | irrelevant | 0 | 0 | no_text gate: only 67 chars of text extracted (&lt; 400) |
 | popPK | FARNSWORTH_1946 | irrelevant | 0 | 0 | no_text gate: only 134 chars of text extracted (&lt; 400) |
 | popPK | Friedmann_1973 | irrelevant | 0 | 0 | no_text gate: only 119 chars of text extracted (&lt; 400) |
-| popPK | Hendriks_1995 | irrelevant | 2 | 0 | The paper is a theoretical modeling study on microcontaminants that mentions mercury only in the context of general outflow rate correlations, without reporting specific quantitative PK parameters (CL, V, etc.) for mercury_metallic. |
-| popPK | McCabe_2025 | irrelevant | 0 | 0 | The paper is about CT imaging simulation and validation, not pharmacokinetics, and "Mercury" refers to a physical phantom, not the drug mercury_metallic. |
+| popPK | Hendriks_1995 | irrelevant | 1 | 1 | The paper presents theoretical scaling models for outflow rates based on Kow and species size, mentioning mercury only in a general context without providing specific quantitative PK parameters for mercury_metallic. |
+| popPK | McCabe_2025 | irrelevant | 0 | 0 | The paper concerns CT imaging simulation and uses a "Mercury phantom" as a calibration object, not the drug mercury_metallic pharmacokinetics. |
 | popPK | STREHLER_1957 | irrelevant | 0 | 0 | no_text gate: only 185 chars of text extracted (&lt; 400) |
-| popPK | Sonji_2026 | irrelevant | 0 | 0 | The paper is a conceptual review proposing a "Mercury Debt" framework and discussing mechanistic pathways and future modeling roadmaps, without reporting any original quantitative pharmacokinetic parameter values for mercury. |
-| popPK | Togna_1984 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of mercury's effect on ADP degradation by vascular tissue, not a pharmacokinetic study reporting disposition parameters for mercury. |
-| popPK | Vahter_1995 | irrelevant | 2 | 1 | The study focuses on tissue distribution and demethylation of methyl mercury (MeHg) rather than systemic population pharmacokinetics of metallic mercury, and only reports tissue half-lives without compartmental model parameters. |
+| popPK | Sonji_2026 | irrelevant | 0 | 0 | The paper is a conceptual review proposing a framework for "Mercury Debt" and does not report original quantitative pharmacokinetic parameters or specific numeric values for mercury. |
+| popPK | Togna_1984 | irrelevant | 0 | 0 | The paper investigates the in vitro inhibition of ADP degradation by aortic tissue by mercury, which is a mechanistic study and does not report pharmacokinetic parameters for mercury itself. |
+| popPK | Vahter_1995 | irrelevant | 2 | 2 | The study focuses on toxicological accumulation and local demethylation kinetics (half-lives in specific tissues) of methyl mercury in monkeys, rather than reporting population pharmacokinetic parameters (CL, V, Q) for the subject drug mercury_metallic (inorganic mercury) as a primary dosed compound. |
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-09-29 20:42 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-10-07 22:37 UTC</sub>

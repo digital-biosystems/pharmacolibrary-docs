@@ -1,0 +1,31 @@
+{
+ "dose_source": "paper",
+ "model_id": "TrastuzumabDeruxtecan_Yin2021_final",
+ "note": "Values for the shared PK_1C.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "paper_doses_kind": "range",
+ "paper_doses_mg": [
+  56.0,
+  560.0
+ ],
+ "parameters": {
+  "Cl": 4.872685185185185e-09,
+  "F": 1.0,
+  "VdPerKg": 3.957142857142857e-05,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 5.6e-05,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 660.000000066204
+ },
+ "reference_peaks": {
+  "central.C": 0.0202059413925069
+ },
+ "stop_time": 2419200.0,
+ "template": "PK_1C",
+ "template_fmu": "PK_1C.fmu"
+}

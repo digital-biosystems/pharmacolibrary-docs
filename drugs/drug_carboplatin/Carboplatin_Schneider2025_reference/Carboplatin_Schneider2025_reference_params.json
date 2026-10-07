@@ -1,0 +1,32 @@
+{
+ "dose_source": "library default",
+ "model_id": "Carboplatin_Schneider2025_reference",
+ "molar_masses": {
+  "central.C": 0.37125400000000003
+ },
+ "note": "Values for the shared PK_2C.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "parameters": {
+  "Cl": 2.5e-09,
+  "F": 1.0,
+  "MM": 0.37125400000000003,
+  "VdPerKg": 3.9999999999999996e-05,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 1e-05,
+  "k12": 0.001884920634920635,
+  "k21": 6.854256854256854e-05,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 660.0000000662213
+ },
+ "reference_peaks": {
+  "central.C": 1.4576256507960511e-05
+ },
+ "stop_time": 4233600.0,
+ "template": "PK_2C",
+ "template_fmu": "PK_2C.fmu"
+}

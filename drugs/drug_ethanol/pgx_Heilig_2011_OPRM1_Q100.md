@@ -16,12 +16,12 @@
 - **applies to:** pharmacodynamics (response)
 - **parameter it changes:** NIL (`Q100`)
 - **effect:** not quantified
-- **phenotype groups:** the paper's genotype groups were not mapped to standard phenotypes
+- **phenotype groups:** groups defined by genotype (e.g. *1/*1, *1/*3), as the paper reports them
 
 ### Notes from the extraction
 
 - association-only evidence (no extracted θ) — not a covariate
-- genotype→phenotype map unresolved (no paper/CPIC/genotype mapping)
+- relevance flagged quantitative but no per-genotype θ table reached
 - reference category (θ=0) not captured — must not be inferred
 
 ## Citation

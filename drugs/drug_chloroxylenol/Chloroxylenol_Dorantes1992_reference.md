@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;D08A&quot;,&quot;href&quot;:&quot;atc/D08A.md&quot;},{&quot;label&quot;:&quot;chloroxylenol&quot;,&quot;href&quot;:&quot;drugs/drug_chloroxylenol/&quot;},{&quot;label&quot;:&quot;Dorantes_1992 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Chloroxylenol_Dorantes1992_reference&quot;,&quot;label&quot;:&quot;Dorantes_1992_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_chloroxylenol/Chloroxylenol_Dorantes1992_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Chloroxylenol_Dorantes1992_reference&quot;,&quot;label&quot;:&quot;Dorantes_1992_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_chloroxylenol/Chloroxylenol_Dorantes1992_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # chloroxylenol — `Chloroxylenol_Dorantes1992_reference`
 
-> ## <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.133). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">dog</span>
+> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.133). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">dog</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -27,12 +27,16 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 
 <sub>reviewed by rule template (no LLM)</sub>
 
+> ⚠️ **STALE** — review status `curated_candidate` (reviewed 2026-09-29 16:51:32.186186+00:00) predates the upstream re-run (2026-10-07 23:11:27.885403+00:00). Current validate status: `extracted`.
+
+> **Dose compound ≠ measured compound:** dosed `chloroxylenol (PCMX)`, measured `chloroxylenol`.
+
 ## Citation
 Dorantes A et al., Pharmacokinetic and metabolic dispositi…, Pharmaceutical research (1992)
   ·  DOI: [10.1023/a:1015814513373](https://doi.org/10.1023/a:1015814513373)
 
 ## Model component
-<dbs-pgx drug="chloroxylenol" model-id="Chloroxylenol_Dorantes1992_reference" status="curated_candidate" stale="false" population="healthy mongrel dogs" measured-compound="chloroxylenol" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<dbs-pgx drug="chloroxylenol" model-id="Chloroxylenol_Dorantes1992_reference" status="extracted" stale="true" population="healthy mongrel dogs" measured-compound="chloroxylenol" parameterization="mechanistic" topology="1C"></dbs-pgx>
 
 **Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameters:** 5 extracted.
@@ -150,8 +154,8 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_chloroxylenol/Chloroxylenol_Dorantes1992_reference/Chloroxylenol_Dorantes1992_reference_modelica.zip" download>Chloroxylenol_Dorantes1992_reference_modelica.zip</a> <span class="pk-size">(3.9 kB)</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_chloroxylenol/Chloroxylenol_Dorantes1992_reference/Chloroxylenol_Dorantes1992_reference_modelica.zip" download>Chloroxylenol_Dorantes1992_reference_modelica.zip</a> <span class="pk-size">(4.1 kB)</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_chloroxylenol/Chloroxylenol_Dorantes1992_reference/Chloroxylenol_Dorantes1992_reference_fmi.zip" download>Chloroxylenol_Dorantes1992_reference_fmi.zip</a> <span class="pk-size">(4.2 kB)</span><br><a href="models/fmu/PK_1C.fmu" download>PK_1C.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_chloroxylenol/Chloroxylenol_Dorantes1992_reference/Chloroxylenol_Dorantes1992_reference_matlab.zip" download>Chloroxylenol_Dorantes1992_reference_matlab.zip</a> <span class="pk-size">(3.5 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_chloroxylenol/Chloroxylenol_Dorantes1992_reference/Chloroxylenol_Dorantes1992_reference_matlab_simbio.zip" download>Chloroxylenol_Dorantes1992_reference_matlab_simbio.zip</a> <span class="pk-size">(2.9 kB)</span></td></tr>
 <tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_chloroxylenol/Chloroxylenol_Dorantes1992_reference/Chloroxylenol_Dorantes1992_reference_sbml.zip" download>Chloroxylenol_Dorantes1992_reference_sbml.zip</a> <span class="pk-size">(2.5 kB)</span></td></tr>
@@ -172,4 +176,4 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-09-29 16:20 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 23:11 UTC</sub>

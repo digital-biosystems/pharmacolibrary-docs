@@ -1,10 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01X&quot;,&quot;href&quot;:&quot;atc/L01X.md&quot;},{&quot;label&quot;:&quot;cisplatin&quot;,&quot;href&quot;:&quot;drugs/drug_cisplatin/&quot;},{&quot;label&quot;:&quot;Urien_2004 \u00b7 reference&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Cisplatin_Imbs2016_reference&quot;,&quot;label&quot;:&quot;Imbs_2016_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cisplatin/Cisplatin_Imbs2016_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Cisplatin_MoritaOgawa2020_reference&quot;,&quot;label&quot;:&quot;Morita-Ogawa_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cisplatin/Cisplatin_MoritaOgawa2020_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Cisplatin_Terranova2021_reference&quot;,&quot;label&quot;:&quot;Terranova_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cisplatin/Cisplatin_Terranova2021_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # cisplatin — `Cisplatin_Urien2004_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.75). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.75). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -24,29 +25,38 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on how the
 
 <sub>reviewed by glm-5.3-flash</sub>
 
-> **Dose compound ≠ measured compound:** dosed `cisplatin`, measured `unbound platinum`.
+> ⚠️ **STALE** — review status `rejected` (reviewed 2026-10-05 09:25:20.760566+00:00) predates the upstream re-run (2026-10-07 22:32:19.268023+00:00). Current validate status: `rejected`.
+
+> **Dose compound ≠ measured compound:** dosed `cisplatin`, measured `unbound platinum (cisplatin)`.
 
 ## Citation
 Urien S et al., Population pharmacokinetics of total an…, British journal of clinical… (2004)
   ·  DOI: [10.1111/j.1365-2125.2004.02082.x](https://doi.org/10.1111/j.1365-2125.2004.02082.x)
 
 ## Model component
-<dbs-pgx drug="cisplatin" model-id="Cisplatin_Urien2004_reference" status="rejected" stale="false" population="adult patients with various malignancies" measured-compound="unbound platinum" parameterization="apparent" topology="parent_metabolite"></dbs-pgx>
+<dbs-pgx drug="cisplatin" model-id="Cisplatin_Urien2004_reference" status="rejected" stale="true" population="adult patients treated with cisplatin for various malignancies" measured-compound="unbound platinum (cisplatin)" parameterization="mechanistic" topology="parent_metabolite"></dbs-pgx>
 
 **Model structure:** parent + metabolite; no model was built for this record.  
-**Parameters:** 4 extracted.
+**Parameters:** 11 extracted.
 
-**Parameterization:** V/F — apparent, F unknown (apparent — bioavailability not identifiable).
+**Parameterization:** mechanistic.
 
 ## Parameters
 > ⚠️ This record is not accepted (current status `rejected`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| f m /V m (l -1 ) | `Q45` · fm | 0.001 | l -1 | not captured | [1] / [l] | not captured | llm (0.5) | tab_4:row4:col2, tab_4:row4:col3, tab_4:row4:col4 | — | not captured |
-| f m /V m , q DOSEm | `Q76` · V/F | 0.16 | not captured | not captured | not captured | not captured | llm (0.5) | tab_4:row5:col1, tab_4:row5:col2, tab_4:row5:col3, tab_4:row5:col4 | — | not captured |
-| CL m0 /V m (h -1 ) | `Q22` · CL | 0.002 | h -1 | not captured | [1] / [h] | not captured | boundary (0.8) | tab_4:row9:col1, tab_4:row9:col2, tab_4:row9:col3 | — | 10.6 (None% RSE) |
-| T 1/2 , elimination (h) | `Q57` · t1/2z | 50 | h | 180000.0 | [h] | not captured | fuzzy (0.91) | tab_4:row15:col1 | — | not captured |
+| f m /V m (l -1 ) | `Q305` · kfm | 0.017 | l -1 | not captured | [1] / [l] | not captured | exact (1.0) | tab_4:row4:col2, tab_4:row4:col3, tab_4:row4:col4 | — | not captured |
+| f m /V m , q DOSEm | `Q45` · fm | -2 | not captured | not captured | not captured | not captured | llm (0.6) | tab_4:row5:col1, tab_4:row5:col2, tab_4:row5:col3, tab_4:row5:col4 | — | not captured |
+| f m /V m , q CLCr | `Q26` · CLR | -0.36 | not captured | not captured | not captured | not captured | llm (0.6) | tab_4:row8:col2 | — | not captured |
+| CL m0 /V m (h -1 ) | `Q47` · kel | 0.014 | h -1 | 3.888888888888889e-06 | [1] / [h] | not captured | exact (1.0) | tab_4:row9:col1, tab_4:row9:col2, tab_4:row9:col3 | — | not captured |
+| T 1/2 , elimination (h) | `Q57` · t1/2z | 50 | h | 180000.0 | [h] | not captured | llm_confirmed (0.6) | tab_4:row15:col1, Urien_2004_table_3:row16:col1 | — | not captured |
+| V 1 (l) | `Q63` · V1 | 23.4 | l | 0.0234 | [l] | not captured | exact (1.0) | Urien_2004_table_3:row3:col1, Urien_2004_table_3:row3:col2, Urien_2004_table_3:row3:col3 | — | not captured |
+| CL (l h -1 ) | `Q22` · CL | 35.6 | l h -1 | 9.888888888888889e-06 | [l] / [h] | not captured | exact (1.0) | Urien_2004_table_3:row5:col2, Urien_2004_table_3:row5:col3 | — | not captured |
+| CL, q BSA | `Q319` · allometric_exponent | +0.83 | not captured | not captured | not captured | not captured | llm_corrected (0.6) | Urien_2004_table_3:row6:col1, Urien_2004_table_3:row6:col2, Urien_2004_table_3:row6:col3 | — | not captured |
+| Q (l h -1 ) | `Q30` · Q | 8.64 | l h -1 | 2.4e-06 | [l] / [h] | not captured | exact (1.0) | Urien_2004_table_3:row8:col1, Urien_2004_table_3:row8:col2, Urien_2004_table_3:row8:col3 | — | not captured |
+| V 2 (l) | `Q64` · V2 | 12.0 | l | 0.012 | [l] | not captured | exact (1.0) | Urien_2004_table_3:row9:col1, Urien_2004_table_3:row9:col2, Urien_2004_table_3:row9:col3 | — | not captured |
+| T 1/2 , distribution (h) | `Q59` · t1/2α | 0.34 | h | 1224.0 | [h] | not captured | llm (0.6) | Urien_2004_table_3:row15:col1 | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -56,18 +66,30 @@ Urien S et al., Population pharmacokinetics of total an…, British journal of c
 ## Departures & gaps
 
 **Interpretation flags:**
-- dropped unlinked row (NIL): 'f m /V m , q PROT' — extend the ontology if this is a real PK parameter (source ['tab_4:row6:col2', 'tab_4:row6:col3', 'tab_4:row6:col4'])
-- unit_dimension_mismatch: 'CL m0 /V m (h -1 )' → Q22 (unit '1 / [time]' vs ontology '[length] ** 3 / [time]') — route to review
-- apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=unbound platinum
+- unit_dimension_mismatch: 'f m /V m (l -1 )' → Q305 (unit '1 / [length] ** 3' vs ontology '1 / [time]') — route to review
+- dropped duplicate Q45 ('f m /V m , q PROT', value '+1.33') — already have one for this compound
+- dropped duplicate Q45 ('f m /V m , q BSA', value '-0.83') — already have one for this compound
+- dropped unlinked row (NIL): 'ISV(f m /V m ) (% CV)' — extend the ontology if this is a real PK parameter (source ['tab_4:row12:col1', 'tab_4:row12:col2', 'tab_4:row12:col3'])
+- dropped unlinked row (NIL): 'ISV(CL m /V m ) (% CV)' — extend the ontology if this is a real PK parameter (source ['tab_4:row13:col1', 'tab_4:row13:col2', 'tab_4:row13:col3'])
+- dropped duplicate Q63 ('V 1 , q BSA', value '+1.60') — already have one for this compound
+- dropped duplicate Q22 ('CL, q CLCr', value '+0.36') — already have one for this compound
+- routed 'Res. Error (mg l -1 )' → Q317 (add_error) to residual_error — variability estimate, not a structural parameter
+- dropped unlinked row (NIL): 'ISV(V 1 ) (% CV)' — extend the ontology if this is a real PK parameter (source ['Urien_2004_table_3:row12:col1', 'Urien_2004_table_3:row12:col2', 'Urien_2004_table_3:row12:col3'])
+- dropped unlinked row (NIL): 'ISV(CL) (% CV)' — extend the ontology if this is a real PK parameter (source ['Urien_2004_table_3:row13:col1', 'Urien_2004_table_3:row13:col2', 'Urien_2004_table_3:row13:col3'])
+- implicit units: 'f m /V m , q CLCr' — the LLM proposed 'dimensionless', whose dimension does not fit Q26; left unset
+- apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=unbound platinum (cisplatin)
 - held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
+- template fit: PK_3M_9C — formed from central; parent 2, metabolites [0]
 - status held at route_to_review — not promoted
+- row roles (LLM): model_class=compartmental; 20/20 row label(s) assigned, 17 linked by role; re-tagged parent→irreversibly protein-bound platinum ×26, parent→unbound platinum (cisplatin) ×27
+- molar mass: no plausible PubChem entry for 'irreversibly protein-bound platinum' ('irreversibly protein-bound platinum') — left in mass units
+- molar mass: none found for 'irreversibly protein-bound platinum' — its concentrations stay mass-only
+- skipped review gap-fill of TLAG: primary's parameterization (rate-constant / ka-only) does not use it
 
 **Extraction notes:**
-- unparsed cell tab_4:row7:col2 = '-0.83 (fixed)'
-- unparsed cell tab_4:row8:col2 = '-0.36 (fixed)'
-- unparsed cell tab_4:row11:col1 = '1 0 3'
-- unparsed cell tab_4:row11:col2 = '1 0 4'
-- unparsed cell tab_4:row11:col3 = '3 5'
+- unparsed cell Urien_2004_table_3:row5:col1 = '3 5.5'
+- companion parameter table 3 transcribed (31 record(s))
+- LLM selected parameter table(s) 3
 
 ## Validation
 
@@ -97,15 +119,24 @@ first reading `qwen3.6:27b-q8_0` — the numbers on this page are its, whatever 
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 4 | not captured | not captured | not captured |
+| C0_has_structural_params | pass | not captured | 11 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
-| C1_half_life_beta | pass | 50.0 | 55.452 | 1.109 | 0.25 | reported t½β |
-| C5_dimension_Q22 | fail | 1 / [time] | h -1 | not captured | not captured | ['tab_4:row9:col1', 'tab_4:row9:col2', 'tab_4:row9:col3'] |
-| C5_dimension_Q57 | pass | [time] | not captured | not captured | not captured | ['tab_4:row15:col1'] |
-| C5_unit_missing_Q76 | fail | [length] ** 3 | not captured | not captured | not captured | ['tab_4:row5:col1', 'tab_4:row5:col2', 'tab_4:row5:col3', 'tab_4:row5:col4'] |
-| C7_apparent_coherence | pass | not captured | not captured | not captured | not captured | not captured |
+| C2_base_sign_Q26 | fail | not captured | -0.36 | not captured | not captured | not captured |
+| C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Urien_2004_table_3:row5:col2', 'Urien_2004_table_3:row5:col3'] |
+| C5_dimension_Q30 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Urien_2004_table_3:row8:col1', 'Urien_2004_table_3:row8:col2', 'Urien_2004_table_3:row8:col3'] |
+| C5_dimension_Q305 | fail | 1 / [length] ** 3 | l -1 | not captured | not captured | ['tab_4:row4:col2', 'tab_4:row4:col3', 'tab_4:row4:col4'] |
+| C5_dimension_Q47 | pass | 1 / [time] | not captured | not captured | not captured | ['tab_4:row9:col1', 'tab_4:row9:col2', 'tab_4:row9:col3'] |
+| C5_dimension_Q57 | pass | [time] | not captured | not captured | not captured | ['tab_4:row15:col1', 'Urien_2004_table_3:row16:col1'] |
+| C5_dimension_Q59 | pass | [time] | not captured | not captured | not captured | ['Urien_2004_table_3:row15:col1'] |
+| C5_dimension_Q63 | pass | [length] ** 3 | not captured | not captured | not captured | ['Urien_2004_table_3:row3:col1', 'Urien_2004_table_3:row3:col2', 'Urien_2004_table_3:row3:col3'] |
+| C5_dimension_Q64 | pass | [length] ** 3 | not captured | not captured | not captured | ['Urien_2004_table_3:row9:col1', 'Urien_2004_table_3:row9:col2', 'Urien_2004_table_3:row9:col3'] |
+| C5_unit_missing_Q26 | fail | [length] ** 3 / [time] | not captured | not captured | not captured | ['tab_4:row8:col2'] |
+| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 35.6 | not captured | not captured | ['Urien_2004_table_3:row5:col2', 'Urien_2004_table_3:row5:col3'] |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
+| C9_phys_window_Q22 | pass | clearance within physiological range | 35.6 L/h | not captured | not captured | ['Urien_2004_table_3:row5:col2', 'Urien_2004_table_3:row5:col3'] |
+| C9_phys_window_Q63 | pass | volume within physiological range | 23.4 L | not captured | not captured | ['Urien_2004_table_3:row3:col1', 'Urien_2004_table_3:row3:col2', 'Urien_2004_table_3:row3:col3'] |
+| C9_phys_window_Q64 | pass | volume within physiological range | 12 L | not captured | not captured | ['Urien_2004_table_3:row9:col1', 'Urien_2004_table_3:row9:col2', 'Urien_2004_table_3:row9:col3'] |
 
 <details class="legend">
 <summary>Check legend — what each column means</summary>
@@ -130,4 +161,4 @@ _No web simulator for this record: its structure has no shared WebAssembly templ
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-07-15 11:10 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 22:32 UTC</sub>

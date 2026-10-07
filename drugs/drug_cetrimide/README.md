@@ -17,20 +17,11 @@ Cetrimide is an antiseptic and disinfectant used on the skin, for example in wou
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-29 18:03 | 0:42 | 0/0/0 | 1/0/0 | 0/0/0 | 1,738/112 | ollama / qwen3.8:27b-mtp-q8_0 | 1 | 0/4 | 1/0 | 0 |
+| 2026-10-07 23:09 | 0:21 | 0/0/0 | 0/0/0 | 0/0/0 | 25,372/527 | ollama / glm-5.3-flash | 1 | 0/4 | 1/0 | 0 |
 
 ## popPK records
 
 _not available_
-
-## Pharmacodynamics (PD)
-
-| status | detail | about | model | citation | doi |
-|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> | [Abdelaziz_2022_MCF_7_cell_viability_MTT](drugs/drug_cetrimide/pd_Abdelaziz_2022_MCF_7_cell_viability_MTT.md) | MCF-7 cell viability (MTT) ← pyocyanin · direct Emax (saturable) effect | — | Abdelaziz AA et al., A purified and lyophilized Pseudomonas…, Microbial cell factories (2022) | [10.1186/s12934-022-01988-x](https://doi.org/10.1186/s12934-022-01988-x) |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Abdelaziz_2022_apoptotic_necrotic_cell_fraction_flow_cytometry](drugs/drug_cetrimide/pd_Abdelaziz_2022_apoptotic_necrotic_cell_fraction_flow_cytomet.md) | apoptotic/necrotic cell fraction (flow cytometry) ← pyocyanin · direct Emax (saturable) effect | — | Abdelaziz AA et al., A purified and lyophilized Pseudomonas…, Microbial cell factories (2022) | [10.1186/s12934-022-01988-x](https://doi.org/10.1186/s12934-022-01988-x) |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Abdelaziz_2022_caspase_3_protein_level](drugs/drug_cetrimide/pd_Abdelaziz_2022_caspase_3_protein_level.md) | caspase-3 protein level ← pyocyanin · direct Emax (saturable) effect | — | Abdelaziz AA et al., A purified and lyophilized Pseudomonas…, Microbial cell factories (2022) | [10.1186/s12934-022-01988-x](https://doi.org/10.1186/s12934-022-01988-x) |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Abdelaziz_2022_fold_change](drugs/drug_cetrimide/pd_Abdelaziz_2022_fold_change.md) | fold change ← pyocyanin · direct Emax (saturable) effect | — | Abdelaziz AA et al., A purified and lyophilized Pseudomonas…, Microbial cell factories (2022) | [10.1186/s12934-022-01988-x](https://doi.org/10.1186/s12934-022-01988-x) |
 
 <details class="legend">
 <summary>Badge legend — what each badge means</summary>
@@ -43,27 +34,27 @@ _not available_
 - **PubMed hits:** 14 matched, 11 returned
 - **screened:** 0  ·  **relevant:** 0
 - **records:** 0  ·  extracted 0  ·  needs_review 0  ·  rejected 0  ·  stale 0
-- **scholar-agent fallback query used:** True
+- **scholar-agent fallback query used:** not captured
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Abd-AlGhafar_2026 | irrelevant | 0 | 0 | The paper is an analytical chemistry study on caffeic acid and curcumin, where cetrimide is only mentioned as a surfactant excipient, and no pharmacokinetic parameters for cetrimide are reported. |
+| popPK | Abd-AlGhafar_2026 | irrelevant | 0 | 0 | This is a spectrofluorimetric analytical method for caffeic acid/curcumin, not a PK study of cetrimide; no disposition parameters present. |
 | PD | Abd-AlGhafar_2026 | not_relevant | 0 | 0 | The paper describes a spectrofluorimetric analytical method for caffeic acid and curcumin; cetrimide is only listed as a reagent/surfactant, and no pharmacodynamic or exposure-response data are reported. |
 | popPK | Abdelaziz_2022 | irrelevant | 0 | 0 | The paper studies the anticancer activity of pyocyanin, using cetrimide only as a component of the growth medium for P. aeruginosa, and contains no pharmacokinetic data for cetrimide. |
 | popPK | Aguirre_2009 | irrelevant | 0 | 0 | The paper uses cetrimide as a reagent for polysaccharide extraction and does not report any pharmacokinetic parameters for cetrimide. |
 | PD | Aguirre_2009 | not_relevant | 0 | 0 | The paper uses cetrimide as a chemical reagent for polysaccharide extraction, not as a drug, and reports no pharmacodynamic or exposure-response relationship for cetrimide. |
-| popPK | El-Zahed_2026 | irrelevant | 0 | 0 | The paper is a materials science study on zinc oxide nanocomposites against P. aeruginosa, where cetrimide is only mentioned as a component of an agar plate for bacterial isolation, not as a subject drug for pharmacokinetic analysis. |
+| popPK | El-Zahed_2026 | irrelevant | 0 | 0 | This is an in-vitro nanocomposite antimicrobial study with no pharmacokinetic parameters for cetrimide; cetrimide is not even mentioned. |
 | PD | El-Zahed_2026 | not_relevant | 0 | 0 | The paper studies a zinc oxide/chitosan/amoxicillin nanocomposite, not the drug cetrimide, and reports no cetrimide pharmacodynamic data. |
-| popPK | Leung_1975 | irrelevant | 0 | 0 | The paper is an in-vitro cytotoxicity study where cetrimide is used only as a reagent in a cell counting method, not as the subject drug for pharmacokinetic analysis. |
+| popPK | Leung_1975 | irrelevant | 0 | 0 | Cetrimide is only mentioned as a reagent in a cell-counting method; no PK parameters for cetrimide are reported. |
 | popPK | Majtán_1999 | irrelevant | 0 | 0 | The paper is an in-vitro antimicrobial efficacy study on bacteria, not a pharmacokinetic study, and reports no disposition parameters for cetrimide. |
 | popPK | Majtán_2003 | irrelevant | 0 | 0 | The paper is an in-vitro antimicrobial study of disinfectants on bacteria, not a pharmacokinetic study of cetrimide in humans or animals. |
 | popPK | Maris_1991 | irrelevant | 0 | 0 | The paper is a microbiological study on bacterial resistance to cetrimide, not a pharmacokinetic study. |
 | PD | Maris_1991 | not_relevant | 1 | 0 | The paper reports MIC distributions and resistance correlations for bacterial strains, which is antimicrobial susceptibility testing, not a pharmacodynamic exposure-response or dose-response analysis of drug effect in a biological system with derivable PD parameters. |
 | popPK | Ravinanthanan_2018 | irrelevant | 0 | 0 | The study is an in-vitro cytotoxicity evaluation of dental irrigants and does not report any pharmacokinetic parameters for cetrimide. |
 | PD | Ravinanthanan_2018 | not_relevant | 0 | 0 | The study reports qualitative cytotoxicity comparisons of fixed combination regimens, not a concentration- or dose-response relationship for cetrimide with numeric PD parameters. |
-| popPK | Zborowsky_2025 | irrelevant | 0 | 0 | The paper studies bacteriophage therapy for P. aeruginosa pneumonia and does not involve the drug cetrimide. |
+| popPK | Zborowsky_2025 | irrelevant | 0 | 0 | This is a phage therapy study in mice with a bacteria-immune dynamics model; cetrimide is not mentioned and no PK parameters for it appear. |
 | PD | Zborowsky_2025 | not_relevant | 0 | 0 | The paper focuses on bacteriophage therapy and immune dynamics; cetrimide is mentioned only as a component of the agar used for plating bacteria, with no pharmacodynamic or exposure-response analysis performed for it. |
 
 ---

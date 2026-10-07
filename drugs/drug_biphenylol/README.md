@@ -17,11 +17,17 @@ Biphenylol (2-phenylphenol) is a phenol derivative used as an antiseptic and dis
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-29 18:02 | 1:02 | 0/0/0 | 0/0/0 | 0/0/0 | 1,308/146 | ollama / qwen3.8:27b-mtp-q8_0 | 0 | 0/0 | 0/0 | 0 |
+| 2026-10-07 23:08 | 0:10 | 0/0/0 | 0/1/0 | 0/0/0 | 7,986/580 | ollama / glm-5.3-flash | 0 | 0/0 | 0/0 | 0 |
 
 ## popPK records
 
 _not available_
+
+## Pharmacodynamics (PD)
+
+| status | detail | about | model | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from keyword rules on the title and abstract — no LLM answer yet).">human + animal</span> | [Ramamoorthy_1997_ER_binding](drugs/drug_biphenylol/pd_Ramamoorthy_1997_ER_binding.md) | [3H]E2 displacement from mouse uterine estrogen receptor (competitive binding) ← biphenylol (HO-PCB3/HO-PCB4 equimolar mixture) · inhibition effect | — | Ramamoorthy K et al., Additive estrogenic activities of a bin…, Toxicology and applied phar… (1997) | [10.1006/taap.1997.8281](https://doi.org/10.1006/taap.1997.8281) |
 
 <details class="legend">
 <summary>Badge legend — what each badge means</summary>
@@ -42,10 +48,10 @@ _2 paper(s) judged relevant from the abstract, with no full text on disk — pay
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Malmberg_2004.pdf` | Malmberg T et al., Pharmacokinetics of two major hydroxyla…, Xenobiotica; the fate of fo… (2004) | popPK | 10 | [10.1080/00498250410001713078](https://doi.org/10.1080/00498250410001713078) | [15277017](https://pubmed.ncbi.nlm.nih.gov/15277017) | The paper reports quantitative pharmacokinetic parameters (half-life, volume of distribution, clearance) for biphenylol metabolites (4-OH-CB 107 and 4-OH-CB 187) in rats, with all numeric values explicitly present in the text. |
+| `Malmberg_2004.pdf` | Malmberg T et al., Pharmacokinetics of two major hydroxyla…, Xenobiotica; the fate of fo… (2004) | popPK | 10 | [10.1080/00498250410001713078](https://doi.org/10.1080/00498250410001713078) | [15277017](https://pubmed.ncbi.nlm.nih.gov/15277017) | PK parameters (half-life, V, CL, AUC) for two biphenylol PCB metabolites are reported directly in the abstract after IV dosing in rats. |
 | `Matthews_2000.pdf` | Matthews J et al., Differential binding affinities of PCBs…, Toxicological sciences : an… (2000) | pd | 4 | [10.1093/toxsci/53.2.326](https://doi.org/10.1093/toxsci/53.2.326) | [10696781](https://www.ncbi.nlm.nih.gov/pubmed/10696781) | metadata signals extractable PD data (IC50) |
 
-<sub>queue written 2026-09-29T18:02:24.889795+00:00</sub>
+<sub>queue written 2026-10-07T23:08:42.155607+00:00</sub>
 
 ## Screened and excluded
 
@@ -53,7 +59,7 @@ _2 paper(s) judged relevant from the abstract, with no full text on disk — pay
 |---|---|---|---|---|---|
 | popPK | Matthews_2000 | irrelevant | 0 | 0 | no_text gate: only 237 chars of text extracted (&lt; 400) |
 | PD | Matthews_2000 | not_relevant | 0 | 0 | The paper focuses on the binding affinities of PCBs and HO-PCBs to estrogen receptors, not on the pharmacodynamics of biphenylol. |
-| popPK | Nair-Menon_1999 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of membrane integrity in murine splenocytes and does not report any pharmacokinetic parameters for biphenylol. |
+| popPK | Nair-Menon_1999 | irrelevant | 0 | 0 | In vitro cytotoxicity study of a biphenylol-related PCB metabolite in murine splenocytes; no pharmacokinetic parameters for biphenylol. |
 | popPK | Ramamoorthy_1997 | irrelevant | 0 | 0 | The paper investigates the estrogenic activity and receptor binding of biphenylol derivatives, not their pharmacokinetic disposition parameters. |
 
 ---

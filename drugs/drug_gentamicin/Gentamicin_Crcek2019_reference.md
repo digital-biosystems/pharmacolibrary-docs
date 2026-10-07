@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;D06A&quot;,&quot;href&quot;:&quot;atc/D06A.md&quot;},{&quot;label&quot;:&quot;gentamicin&quot;,&quot;href&quot;:&quot;drugs/drug_gentamicin/&quot;},{&quot;label&quot;:&quot;Crcek_2019 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Gentamicin_Crcek2019_reference&quot;,&quot;label&quot;:&quot;Crcek_2019_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_gentamicin/Gentamicin_Crcek2019_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Gentamicin_Abbasi2023_reference&quot;,&quot;label&quot;:&quot;Abbasi_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_gentamicin/Gentamicin_Abbasi2023_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Gentamicin_Crcek2019_reference&quot;,&quot;label&quot;:&quot;Crcek_2019_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_gentamicin/Gentamicin_Crcek2019_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # gentamicin — `Gentamicin_Crcek2019_reference`
 
-> ## <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span>
+> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -23,12 +23,14 @@ Independently confirmed by `gpt-oss:120b`.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
+> ⚠️ **STALE** — review status `curated_candidate` (reviewed 2026-09-28 14:38:08.009449+00:00) predates the upstream re-run (2026-10-07 22:10:01.643529+00:00). Current validate status: `extracted`.
+
 ## Citation
 Crcek M et al., A review of population pharmacokinetic…, Journal of clinical pharmac… (2019)
   ·  DOI: [10.1111/jcpt.12850](https://doi.org/10.1111/jcpt.12850)
 
 ## Model component
-<dbs-pgx drug="gentamicin" model-id="Gentamicin_Crcek2019_reference" status="curated_candidate" stale="false" population="paediatric patients" measured-compound="gentamicin" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<dbs-pgx drug="gentamicin" model-id="Gentamicin_Crcek2019_reference" status="extracted" stale="true" population="paediatric patients" measured-compound="gentamicin" parameterization="mechanistic" topology="1C"></dbs-pgx>
 
 **Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameters:** 2 extracted.
@@ -38,8 +40,8 @@ Crcek M et al., A review of population pharmacokinetic…, Journal of clinical p
 ## Parameters
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| Cl (L/h/kg) | `Q22` · CL | 0.035 | L/h/kg | 6.805555555555556e-07 | L/h | not captured | exact (1.0) | Crcek_2019:other_prose | — | not captured |
-| Vd (L/kg) | `Q61` · V | 0.534 | L/kg | 0.037380000000000004 | L | not captured | exact (1.0) | Crcek_2019:other_prose | — | not captured |
+| Bijleveld 18 Cl | `Q22` · CL | 0.035 | L/h/kg | 6.805555555555556e-07 | L/h | not captured | boundary (0.8) | Crcek_2019:other_prose | — | not captured |
+| Bijleveld 18 Vd | `Q61` · V | 0.534 | L/kg | 0.037380000000000004 | L | not captured | boundary (0.8) | Crcek_2019:other_prose | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -49,15 +51,13 @@ Crcek M et al., A review of population pharmacokinetic…, Journal of clinical p
 ## Departures & gaps
 
 **Interpretation flags:**
-- salvaged Q22 ('Cl (L/h/kg)'=0.035) from results prose — parameter table was unreadable
-- salvaged Q61 ('Vd (L/kg)'=0.534) from results prose — parameter table was unreadable
+- salvaged Q22 ('Bijleveld 18 Cl'=0.035) from results prose — parameter table was unreadable
+- salvaged Q61 ('Bijleveld 18 Vd'=0.534) from results prose — parameter table was unreadable
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=gentamicin
 - held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
 - status held at route_to_review — not promoted
-
-**Extraction notes:**
-- no TEI final-model table id; trying text-pointer table recovery
-- text-pointer recovery: parsed 0 structural record(s) from the flattened table 1 sentence
+- skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
+- skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
 
 ## Validation
 
@@ -119,8 +119,8 @@ _Every reader agrees on every compared field of this record._
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_gentamicin/Gentamicin_Crcek2019_reference/Gentamicin_Crcek2019_reference_modelica.zip" download>Gentamicin_Crcek2019_reference_modelica.zip</a> <span class="pk-size">(3.5 kB)</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_gentamicin/Gentamicin_Crcek2019_reference/Gentamicin_Crcek2019_reference_fmi.zip" download>Gentamicin_Crcek2019_reference_fmi.zip</a> <span class="pk-size">(4.0 kB)</span><br><a href="models/fmu/PK_1C.fmu" download>PK_1C.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_gentamicin/Gentamicin_Crcek2019_reference/Gentamicin_Crcek2019_reference_modelica.zip" download>Gentamicin_Crcek2019_reference_modelica.zip</a> <span class="pk-size">(3.9 kB)</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_gentamicin/Gentamicin_Crcek2019_reference/Gentamicin_Crcek2019_reference_fmi.zip" download>Gentamicin_Crcek2019_reference_fmi.zip</a> <span class="pk-size">(4.1 kB)</span><br><a href="models/fmu/PK_1C.fmu" download>PK_1C.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_gentamicin/Gentamicin_Crcek2019_reference/Gentamicin_Crcek2019_reference_matlab.zip" download>Gentamicin_Crcek2019_reference_matlab.zip</a> <span class="pk-size">(3.3 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_gentamicin/Gentamicin_Crcek2019_reference/Gentamicin_Crcek2019_reference_matlab_simbio.zip" download>Gentamicin_Crcek2019_reference_matlab_simbio.zip</a> <span class="pk-size">(2.7 kB)</span></td></tr>
 <tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_gentamicin/Gentamicin_Crcek2019_reference/Gentamicin_Crcek2019_reference_sbml.zip" download>Gentamicin_Crcek2019_reference_sbml.zip</a> <span class="pk-size">(2.4 kB)</span></td></tr>
@@ -141,4 +141,4 @@ _Every reader agrees on every compared field of this record._
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-07-15 12:09 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 22:10 UTC</sub>

@@ -1,0 +1,34 @@
+{
+ "dose_source": "paper",
+ "model_id": "Trastuzumab_Verma2025_rat",
+ "note": "Values for the shared PK_2C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "paper_doses_kind": "discrete",
+ "paper_doses_mg": [
+  7000.0
+ ],
+ "parameters": {
+  "Cl": 9.166666666666667e-08,
+  "F": 0.025,
+  "Tlag": 0.0,
+  "VdPerKg": 0.00041228571428571426,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 0.007,
+  "k12": 0.00013532763532763534,
+  "k21": 8.004827947439139e-05,
+  "ka": 0.00021666666666666668,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 26952.069329008016
+ },
+ "reference_peaks": {
+  "central.C": 0.0012691244053167554
+ },
+ "stop_time": 1123200.0,
+ "template": "PK_2C_enteral",
+ "template_fmu": "PK_2C_enteral.fmu"
+}

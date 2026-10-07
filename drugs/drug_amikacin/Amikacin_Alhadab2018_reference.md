@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;D06A&quot;,&quot;href&quot;:&quot;atc/D06A.md&quot;},{&quot;label&quot;:&quot;amikacin&quot;,&quot;href&quot;:&quot;drugs/drug_amikacin/&quot;},{&quot;label&quot;:&quot;Alhadab_2018 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Amikacin_AlbanellFernndez2025_reference&quot;,&quot;label&quot;:&quot;Albanell-Fern\u00e1ndez_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_amikacin/Amikacin_AlbanellFernndez2025_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amikacin_Marsot2017_reference&quot;,&quot;label&quot;:&quot;Marsot_2017_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_amikacin/Amikacin_Marsot2017_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Amikacin_Alhadab2018_reference&quot;,&quot;label&quot;:&quot;Alhadab_2018_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_amikacin/Amikacin_Alhadab2018_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Amikacin_Alqahtani2018_base&quot;,&quot;label&quot;:&quot;Alqahtani_2018_base&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_amikacin/Amikacin_Alqahtani2018_base.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amikacin_Alqahtani2018_final&quot;,&quot;label&quot;:&quot;Alqahtani_2018_final&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_amikacin/Amikacin_Alqahtani2018_final.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amikacin_Illamola2018_reference&quot;,&quot;label&quot;:&quot;Illamola_2018_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_amikacin/Amikacin_Illamola2018_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amikacin_MedellnGaribay2022_reference&quot;,&quot;label&quot;:&quot;Medell\u00edn-Garibay_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_amikacin/Amikacin_MedellnGaribay2022_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # amikacin — `Amikacin_Alhadab2018_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.625). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.625). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -13,7 +13,7 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
-**Model:** No model was generated from this record.
+**Model:** A simulatable model was generated — see the **Models** and **Simulation** tabs.
 
 ### Reviewer guidance
 
@@ -25,27 +25,27 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the val
 
 <sub>reviewed by rule template (no LLM)</sub>
 
+> ⚠️ **STALE** — review status `needs_review` (reviewed 2026-09-28 14:35:59.370876+00:00) predates the upstream re-run (2026-10-07 21:09:03.764089+00:00). Current validate status: `extracted`.
+
 ## Citation
 Alhadab AA et al., Amikacin Pharmacokinetic-Pharmacodynami…, Antimicrobial agents and ch… (2018)
   ·  DOI: [10.1128/AAC.01781-17](https://doi.org/10.1128/AAC.01781-17)
 
 ## Model component
-<dbs-pgx drug="amikacin" model-id="Amikacin_Alhadab2018_reference" status="needs_review" stale="false" population="pediatric cancer patients" measured-compound="amikacin" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<dbs-pgx drug="amikacin" model-id="Amikacin_Alhadab2018_reference" status="extracted" stale="true" population="pediatric cancer patients" measured-compound="amikacin" parameterization="mechanistic" topology="2C"></dbs-pgx>
 
-**Model structure:** 1-compartment; no model was built for this record.  
+**Model structure:** 2-compartment, IV mammillary model — template `PK_2C`.  
 **Parameters:** 4 extracted.
 
 **Parameterization:** mechanistic.
 
 ## Parameters
-> ⚠️ This record is not accepted (current status `needs_review`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
-
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| creatinine clearance (CrCL) | `Q22` · CL | 120 | ml/min per 1.73 m 2 of body surface area | not captured | ml/min per 1.73 m 2 of body surface area | not captured | boundary (0.8) | Alhadab_2018:discussion_prose | — | not captured |
-| Q (intercompartmental clearance) | `Q30` · Q | 1.66 | liters/h | 4.611111111111111e-07 | L/h | not captured | exact (1.0) | Alhadab_2018:discussion_prose | — | not captured |
-| V d | `Q61` · V | 1.19 | L | 0.0011899999999999999 | L | not captured | review_gapfill (0.7) | amikacin:review | — | not captured |
-| V 2 | `Q64` · V2 | 4.26 | liters | 0.00426 | L | not captured | review_gapfill (0.7) | amikacin:review | — | not captured |
+| CL a (liter/h/70 kg) | `Q22` · CL | 11.1 | liter/h/70 kg | 3.0833333333333336e-06 | [l] / [[h] · [70kg]] | 10 | llm_confirmed (0.6) | tab_1:row1:col2 | — | not captured |
+| V 1 a (liter/70 kg) | `Q63` · V1 | 30.2 | liter/70 kg | 0.0302 | [l] / [70kg] | 21 | llm (0.6) | tab_1:row2:col2 | — | not captured |
+| Q a (liter/h/70 kg) | `Q30` · Q | 4.26 | liter/h/70 kg | 1.1833333333333334e-06 | [l] / [[h] · [70kg]] | 42 | llm (0.6) | tab_1:row3:col2 | — | not captured |
+| V 2 a (liter/70 kg) | `Q64` · V2 | 14.9 | liter/70 kg | 0.0149 | [l] / [70kg] | 13 | llm (0.6) | tab_1:row4:col2 | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -55,22 +55,10 @@ Alhadab AA et al., Amikacin Pharmacokinetic-Pharmacodynami…, Antimicrobial age
 ## Departures & gaps
 
 **Interpretation flags:**
-- dropped value-less row: 'CL a (liter/h/70 kg)'
-- dropped value-less row: 'V 1 a (liter/70 kg)'
-- dropped value-less row: 'Q a (liter/h/70 kg)'
-- dropped value-less row: 'V 2 a (liter/70 kg)'
-- dropped value-less row: 'RE (% CV)'
-- salvaged Q22 ('creatinine clearance (CrCL)'=120) from results prose — parameter table was unreadable
-- salvaged Q30 ('Q (intercompartmental clearance)'=1.66) from results prose — parameter table was unreadable
+- dropped unlinked row (NIL): 'RE (% CV)' — extend the ontology if this is a real PK parameter (source ['tab_1:row7:col2'])
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=amikacin
-- held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
-- status held at route_to_review — not promoted
-- gap-filled Q61 (V) from review (primary lacked it)
-- gap-filled Q64 (V2) from review (primary lacked it)
-- unit re-normalised: Q 'liters/h' now converts (value unchanged)
 
 **Extraction notes:**
-- unparsed cell tab_1:row0:col3 = 'SIR median (95% CI)'
 - unparsed cell tab_1:row1:col3 = '11.1 (9.28-13.2)'
 - unparsed cell tab_1:row2:col3 = '30.70 (16.3-43.0)'
 - unparsed cell tab_1:row3:col3 = '4.48 (2.52-8.81)'
@@ -79,6 +67,7 @@ Alhadab AA et al., Amikacin Pharmacokinetic-Pharmacodynami…, Antimicrobial age
 - unparsed cell tab_1:row6:col1 = 'Between subject variability in V 1'
 - unparsed cell tab_1:row6:col3 = '67.7 (35.6-106)'
 - unparsed cell tab_1:row7:col3 = '2.39 (1.37-4.83)'
+- LLM selected parameter table(s) 2
 
 ## Validation
 
@@ -109,16 +98,18 @@ first reading `qwen3.6:27b-q8_0` — the numbers on this page are its, whatever 
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 2 | not captured | not captured | not captured |
+| C0_has_structural_params | pass | not captured | 4 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
-| C0c_disposition_complete | fail | not captured | not captured | not captured | not captured | not captured |
-| C5_dimension_Q61 | pass | [length] ** 3 | not captured | not captured | not captured | ['amikacin:review'] |
-| C5_dimension_Q64 | pass | [length] ** 3 | not captured | not captured | not captured | ['amikacin:review'] |
-| C5_unit_missing_Q22 | fail | [length] ** 3 / [time] | ml/min per 1.73 m 2 of body surface area | not captured | not captured | ['Alhadab_2018:discussion_prose'] |
-| C6_cl_magnitude | fail | &lt;= 90.0 L/h | 120.0 | not captured | not captured | ['Alhadab_2018:discussion_prose'] |
+| C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
+| C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['tab_1:row1:col2'] |
+| C5_dimension_Q30 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['tab_1:row3:col2'] |
+| C5_dimension_Q63 | pass | [length] ** 3 | not captured | not captured | not captured | ['tab_1:row2:col2'] |
+| C5_dimension_Q64 | pass | [length] ** 3 | not captured | not captured | not captured | ['tab_1:row4:col2'] |
+| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 11.1 | not captured | not captured | ['tab_1:row1:col2'] |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
-| C9_phys_window_Q61 | pass | volume within physiological range | 1.19 L | not captured | not captured | ['amikacin:review'] |
-| C9_phys_window_Q64 | pass | volume within physiological range | 4.26 L | not captured | not captured | ['amikacin:review'] |
+| C9_phys_window_Q22 | pass | clearance within physiological range | 11.1 L/h | not captured | not captured | ['tab_1:row1:col2'] |
+| C9_phys_window_Q63 | pass | volume within physiological range | 30.2 L | not captured | not captured | ['tab_1:row2:col2'] |
+| C9_phys_window_Q64 | pass | volume within physiological range | 14.9 L | not captured | not captured | ['tab_1:row4:col2'] |
 
 <details class="legend">
 <summary>Check legend — what each column means</summary>
@@ -136,21 +127,26 @@ first reading `qwen3.6:27b-q8_0` — the numbers on this page are its, whatever 
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_amikacin/Amikacin_Alhadab2018_reference/Amikacin_Alhadab2018_reference_modelica.zip" download>Amikacin_Alhadab2018_reference_modelica.zip</a> <span class="pk-size">(3.7 kB)</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_amikacin/Amikacin_Alhadab2018_reference/Amikacin_Alhadab2018_reference_fmi.zip" download>Amikacin_Alhadab2018_reference_fmi.zip</a> <span class="pk-size">(4.2 kB)</span><br><a href="models/fmu/PK_2C.fmu" download>PK_2C.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_amikacin/Amikacin_Alhadab2018_reference/Amikacin_Alhadab2018_reference_matlab.zip" download>Amikacin_Alhadab2018_reference_matlab.zip</a> <span class="pk-size">(3.3 kB)</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_amikacin/Amikacin_Alhadab2018_reference/Amikacin_Alhadab2018_reference_matlab_simbio.zip" download>Amikacin_Alhadab2018_reference_matlab_simbio.zip</a> <span class="pk-size">(2.7 kB)</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_amikacin/Amikacin_Alhadab2018_reference/Amikacin_Alhadab2018_reference_sbml.zip" download>Amikacin_Alhadab2018_reference_sbml.zip</a> <span class="pk-size">(2.5 kB)</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_amikacin/Amikacin_Alhadab2018_reference/Amikacin_Alhadab2018_reference_cellml.zip" download>Amikacin_Alhadab2018_reference_cellml.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
 </tbody></table>
-<p>No bundles have been generated for this record yet. When the engineer emits them they appear here automatically — this page reports what is on disk and generates nothing itself.</p>
-</div></div>
+<p>Each archive holds the model source, a script that simulates it against the appropriate library, and a README describing both and how to run them.</p>
+<p><b>FMI is two downloads.</b> The archive holds this record's parameters and its driver; the simulator itself is <code>PK_2C.fmu</code>, one compiled template shared by every model of this structure. Take the FMU once, keep it beside the script (or pass <code>--fmu PATH</code>). Running it reproduces the model-specific FMU exactly.</p>
+</div><figure class="pk-models-diagram"><img src="drugs/drug_amikacin/Amikacin_Alhadab2018_reference/Amikacin_Alhadab2018_reference.svg" alt="Amikacin_Alhadab2018_reference diagram"><figcaption>Model diagram (Modelica) using Pharmacolibrary v26.09 components, rendered by OpenModelica 1.26.7.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+**Administration: intravenous** — 1050 mg infusion over 10 min, single dose. Dose in the paper: 1050 mg.
+
+<dbs-fmusim paramsurl="drugs/drug_amikacin/Amikacin_Alhadab2018_reference/Amikacin_Alhadab2018_reference_params.json" metaurl="assets/fmu/PK_2C.vr.json" wasmurl="assets/fmu/PK_2C.js" controlsurl="drugs/drug_amikacin/Amikacin_Alhadab2018_reference/Amikacin_Alhadab2018_reference_sim_controls.json"></dbs-fmusim>
+
+<sub>Runs this record's model in the browser as WebAssembly. Sliders start at the extracted values; the reference check compares the browser's peak against the FMPy result recorded when the record was built, and is withheld once a value has been edited. Template `PK_2C` · parameters `Amikacin_Alhadab2018_reference_params.json` · controls `Amikacin_Alhadab2018_reference_sim_controls.json`. A slider marked *simulator value* is running on the template's own default because this record does not pin that parameter.</sub>
 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-07-15 09:52 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 21:09 UTC</sub>

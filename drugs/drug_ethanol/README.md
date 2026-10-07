@@ -26,13 +26,19 @@ Ethanol is used as an antiseptic and disinfectant for the skin, and as an antido
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-29 20:36 | 27:01 | 1/0/0 | 0/0/0 | 0/0/2 | 112,056/12,306 | ollama / qwen3.8:27b-mtp-q8_0 | 8 | 2/6 | 5/3 | 0 |
+| 2026-10-07 21:47 | 2:12 | 0/1/0 | 1/0/0 | 0/0/4 | 142,181/7,521 | einfracz / qwen3.8-27b | 18 | 2/16 | 15/3 | 0 |
 
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.125). The first reading is what the record holds.">cross-check: disputed</span> | [Holford_1987_reference](drugs/drug_ethanol/Ethanol_Holford1987_reference.md) | — | 1-compartment (no model) | 6 | Holford NH, Clinical pharmacokinetics of ethanol, Clinical pharmacokinetics (1987) | [10.2165/00003088-198713050-00001](https://doi.org/10.2165/00003088-198713050-00001) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.125). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Holford_1987_reference](drugs/drug_ethanol/Ethanol_Holford1987_reference.md) | — | 1-compartment (no model) | 6 | Holford NH, Clinical pharmacokinetics of ethanol, Clinical pharmacokinetics (1987) | [10.2165/00003088-198713050-00001](https://doi.org/10.2165/00003088-198713050-00001) |
+
+## Pharmacodynamics (PD)
+
+| status | detail | about | model | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span> | [North_2020_middle_cerebral_arteries_constriction](drugs/drug_ethanol/pd_North_2020_middle_cerebral_arteries_constriction.md) | middle cerebral arteries constriction ← ethanol · inhibition effect | — | North K et al., Celastrol Dilates and Counteracts Ethan…, The Journal of pharmacology… (2020) | [10.1124/jpet.120.000152](https://doi.org/10.1124/jpet.120.000152) |
 
 ## Pharmacogenomics (PGx)
 
@@ -40,6 +46,8 @@ Ethanol is used as an antiseptic and disinfectant for the skin, and as an antido
 |---|---|---|---|---|---|---|
 | <span class="pk-badge pk-badge--neutral" title="the paper links the gene to the drug but states no effect size on a model parameter, so it changes no model.">qualitative</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.25). The first reading is what the record holds.">cross-check: partial</span> | **ADH3** | `Q26` · CLR | metabolism | [Couzigou_1991](drugs/drug_ethanol/pgx_Couzigou_1991_ADH3_Q26.md) | Couzigou P et al., Role of alcohol dehydrogenase polymorph…, Advances in experimental me… (1991) | [10.1007/978-1-4684-5901-2_28](https://doi.org/10.1007/978-1-4684-5901-2_28) |
 | <span class="pk-badge pk-badge--neutral" title="the paper links the gene to the drug but states no effect size on a model parameter, so it changes no model.">qualitative</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span> | **OPRM1** | `Q100` — no parameter target — an association/risk finding, not a parameter shift | target | [Heilig_2011](drugs/drug_ethanol/pgx_Heilig_2011_OPRM1_Q100.md) | Heilig M et al., Pharmacogenetic approaches to the treat…, Nature reviews. Neuroscience (2011) | [10.1038/nrn3110](https://doi.org/10.1038/nrn3110) |
+| <span class="pk-badge pk-badge--neutral" title="the paper links the gene to the drug but states no effect size on a model parameter, so it changes no model.">qualitative</span> | **ALDH2** | `Q61` · V | metabolism | [Nemoto_2017](drugs/drug_ethanol/pgx_Nemoto_2017_ALDH2_Q61.md) | Nemoto A et al., A Bayesian Approach for Population Phar…, Current therapeutic researc… (2017) | [10.1016/j.curtheres.2017.04.001](https://doi.org/10.1016/j.curtheres.2017.04.001) |
+| <span class="pk-badge pk-badge--neutral" title="the paper links the gene to the drug but states no effect size on a model parameter, so it changes no model.">qualitative</span> | **ABCB1** | `Q100` — no parameter target — an association/risk finding, not a parameter shift | transport | [Sennesael_2018](drugs/drug_ethanol/pgx_Sennesael_2018_ABCB1_Q100.md) | Sennesael AL et al., Rivaroxaban plasma levels in patients a…, Thrombosis journal (2018) | [10.1186/s12959-018-0183-3](https://doi.org/10.1186/s12959-018-0183-3) |
 
 <details class="pk-legend"><summary>What the PGx badges mean — evidence, and whether a model runs</summary><table><tbody><tr><td><span class="pk-badge pk-badge--green">quantitative</span></td><td>the paper gives the effect of each phenotype (or genotype) on a named model parameter — a θ per category.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">qualitative</span></td><td>the paper links the gene to the drug but states no effect size on a model parameter, so it changes no model.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">guideline estimate</span></td><td>the effect comes from a CPIC / DPWG dosing guideline, not from this paper's numbers.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">safety allele</span></td><td>a risk allele for an adverse reaction (an HLA type, G6PD deficiency …): it changes no PK/PD parameter.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>the extraction is incomplete or inconsistent.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted.</td></tr><tr><td><span class="pk-badge pk-badge--green">▶ simulatable</span></td><td>the paper's popPK model runs per phenotype in the browser (Simulation tab); its PGx Modelica model is under Models.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">model only</span></td><td>a PGx Modelica model exists but has no in-browser simulator.</td></tr></tbody></table></details>
 
@@ -54,9 +62,15 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 | process | tissue | actors (role) | evidence |
 |---|---|---|---|
+| absorption | blood-brain barrier | `ABCB1` transport | paper PGx gene |
+| absorption | kidney | `ABCB1` transport | paper PGx gene |
+| absorption | liver | `ABCB1` transport | paper PGx gene |
+| absorption | placenta | `ABCB1` transport | paper PGx gene |
+| absorption | small intestine | `ABCB1` transport | paper PGx gene |
+| absorption | testis | `ABCB1` transport | paper PGx gene |
 | distribution | blood | `SLC29A1` unknown | DrugBank actor |
 | distribution | liver | `SLC29A1` unknown | DrugBank actor |
-| metabolism | liver | `ADH1B` substrate, `CYP1A2` substrate, `CYP2B6` inhibitor, `CYP2C19` inhibitor, `CYP2C9` inhibitor, `CYP2E1` inducer/substrate, `CYP3A4` inducer/inhibitor/substrate | DrugBank actor |
+| metabolism | liver | `ADH1B` substrate, `ALDH2` metabolism, `CYP1A2` substrate, `CYP2B6` inhibitor, `CYP2C19` inhibitor, `CYP2C9` inhibitor, `CYP2E1` inducer/substrate, `CYP3A4` inducer/inhibitor/substrate | DrugBank actor |
 | metabolism | lung | `CYP1A1` inhibitor | DrugBank actor |
 | metabolism | small intestine | `CYP1A1` inhibitor, `CYP3A4` inducer/inhibitor/substrate | DrugBank actor |
 | — | blood | `ACHE` activator | DrugBank actor |
@@ -74,21 +88,18 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 - **PubMed hits:** 5300 matched, 87 returned
 - **screened:** 1  ·  **relevant:** 1
-- **records:** 1  ·  extracted 1  ·  needs_review 0  ·  rejected 0  ·  stale 0
+- **records:** 1  ·  extracted 0  ·  needs_review 0  ·  rejected 1  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full text wanted
 
-_19 paper(s) judged relevant from the abstract, with no full text on disk — paywalled, or the resolver could not reach them. Follow the DOI, then save the PDF into `papers/` as `&lt;save as&gt;.pdf` and re-run the extraction._
+_15 paper(s) judged relevant from the abstract, with no full text on disk — paywalled, or the resolver could not reach them. Follow the DOI, then save the PDF into `papers/` as `&lt;save as&gt;.pdf` and re-run the extraction._
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Holford_1987.pdf` | Holford NH, Clinical pharmacokinetics of ethanol, Clinical pharmacokinetics (1987) | popPK | 10 | [10.2165/00003088-198713050-00001](https://doi.org/10.2165/00003088-198713050-00001) | [3319346](https://pubmed.ncbi.nlm.nih.gov/3319346) | The text explicitly provides quantitative pharmacokinetic parameters for ethanol, including volume of distribution (37 L/70 kg), Vmax (8.5 g/h/70 kg), Km (80 mg/L), and specific clearance values. |
+| `Holford_1987.pdf` | Holford NH, Clinical pharmacokinetics of ethanol, Clinical pharmacokinetics (1987) | popPK | 9 | [10.2165/00003088-198713050-00001](https://doi.org/10.2165/00003088-198713050-00001) | [3319346](https://pubmed.ncbi.nlm.nih.gov/3319346) | The text provides specific quantitative parameters including volume of distribution (37 L/70 kg), Vmax (8.5 g/h/70 kg), and Km (80 mg/L) for ethanol. |
 | `Holford_1997.pdf` | Holford NH, Complex PK/PD models--an alcoholic expe…, International journal of cl… (1997) | pd | 5 | not captured | [9352397](https://www.ncbi.nlm.nih.gov/pubmed/9352397) | metadata signals extractable PD data (PK/PD) |
 | `Honoré_2014.pdf` | Honoré PM et al., What do we know about steroids metaboli…, Blood purification (2014) | pd | 5 | [10.1159/000368390](https://doi.org/10.1159/000368390) | [25471548](https://www.ncbi.nlm.nih.gov/pubmed/25471548) | metadata signals extractable PD data (PK/PD) |
-| `Furie_2021.pdf` | Furie RA et al., Phase 2, randomized, placebo-controlled…, Rheumatology (Oxford, Engla… (2021) | pd | 4 | [10.1093/rheumatology/keab381](https://doi.org/10.1093/rheumatology/keab381) | [33956056](https://www.ncbi.nlm.nih.gov/pubmed/33956056) | metadata signals extractable PD data (Emax) |
-| `Miranda_2026.pdf` | Miranda ÉM et al., Ecotoxicological Assessment and Biodegr…, International journal of en… (2026) | pd | 4 | [10.3390/ijerph23040530](https://doi.org/10.3390/ijerph23040530) | [42074468](https://www.ncbi.nlm.nih.gov/pubmed/42074468) | metadata signals extractable PD data (EC50) |
-| `Wang_2023.pdf` | Wang Z et al., Extraction optimization, structure feat…, PloS one (2023) | pd | 4 | [10.1371/journal.pone.0284413](https://doi.org/10.1371/journal.pone.0284413) | [37053219](https://www.ncbi.nlm.nih.gov/pubmed/37053219) | metadata signals extractable PD data (EC50) |
 | `Grasmäder_2004.pdf` | Grasmäder K et al., Population pharmacokinetic analysis of…, European journal of clinica… (2004) | pgx | 8 | [10.1007/s00228-004-0737-0](https://doi.org/10.1007/s00228-004-0737-0) | [15289959](https://www.ncbi.nlm.nih.gov/pubmed/15289959) | metadata signals extractable PGX data (CYP2D6, PK/PD-context) |
 | `Mansour_2024.pdf` | Mansour K et al., Exploring clozapine pharmacokinetics in…, Basic & clinical pharmacolo… (2024) | pgx | 8 | [10.1111/bcpt.14009](https://doi.org/10.1111/bcpt.14009) | [38599832](https://www.ncbi.nlm.nih.gov/pubmed/38599832) | metadata signals extractable PGX data (CYP1A2*1C, PK/PD-context) |
 | `Santoro_2011.pdf` | Santoro A et al., Pharmacogenetics of calcineurin inhibit…, Pharmacogenomics (2011) | pgx | 8 | [10.2217/pgs.11.70](https://doi.org/10.2217/pgs.11.70) | [21806386](https://www.ncbi.nlm.nih.gov/pubmed/21806386) | metadata signals extractable PGX data (CYP3A5, PK/PD-context) |
@@ -99,93 +110,90 @@ _19 paper(s) judged relevant from the abstract, with no full text on disk — pa
 | `Bansal_2023.pdf` | Bansal S et al., Evaluation of Cytochrome P450-Mediated…, Clinical pharmacology and t… (2023) | pgx | 7 | [10.1002/cpt.2973](https://doi.org/10.1002/cpt.2973) | [37313955](https://www.ncbi.nlm.nih.gov/pubmed/37313955) | metadata signals extractable PGX data (CYP1A2, PK/PD-context) |
 | `Florek_2015.pdf` | Florek E et al., Influence of tobacco smoke exposure on…, Pharmacological reports : PR (2015) | pgx | 7 | [10.1016/j.pharep.2015.02.007](https://doi.org/10.1016/j.pharep.2015.02.007) | [26398386](https://www.ncbi.nlm.nih.gov/pubmed/26398386) | metadata signals extractable PGX data (CYP1A1, PK/PD-context) |
 | `Wilde_2007.pdf` | Wilde S et al., Population pharmacokinetics of the BEAC…, Clinical pharmacokinetics (2007) | pgx | 7 | [10.2165/00003088-200746040-00005](https://doi.org/10.2165/00003088-200746040-00005) | [17375983](https://www.ncbi.nlm.nih.gov/pubmed/17375983) | metadata signals extractable PGX data (CYP3A4, PK/PD-context) |
-| `Fekete_2022.pdf` | Fekete F et al., CYP1A2 mRNA Expression Rather than Gene…, Pharmaceutics (2022) | pgx | 5 | [10.3390/pharmaceutics14030532](https://doi.org/10.3390/pharmaceutics14030532) | [35335907](https://www.ncbi.nlm.nih.gov/pubmed/35335907) | metadata signals extractable PGX data (CYP1A2) |
 | `Nakamura_2011.pdf` | Nakamura S et al., Ipso substitution of bisphenol A cataly…, Toxicology letters (2011) | pgx | 5 | [10.1016/j.toxlet.2011.03.010](https://doi.org/10.1016/j.toxlet.2011.03.010) | [21402134](https://www.ncbi.nlm.nih.gov/pubmed/21402134) | metadata signals extractable PGX data (CYP3A4) |
 | `Sam_2011.pdf` | Sam WJ et al., Associations of ABCB1 3435C&gt;T and IL-10…, Transplantation (2011) | pgx | 5 | [10.1097/TP.0b013e3182384ae2](https://doi.org/10.1097/TP.0b013e3182384ae2) | [22094953](https://www.ncbi.nlm.nih.gov/pubmed/22094953) | metadata signals extractable PGX data (ABCB1) |
 
-<sub>queue written 2026-09-29T20:27:17.578667+00:00</sub>
+<sub>queue written 2026-10-07T21:45:26.929650+00:00</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| PGx | Bansal_2023 | not_relevant | 0 | 0 | The paper investigates cannabinoid-drug interactions (pharmacokinetic inhibition of CYP enzymes) and does not report any pharmacogenomic effects (gene variants) on ethanol PK/PD. |
-| PGx | Barletta_2025 | not_relevant | 0 | 0 | The paper focuses on fentanyl pharmacogenetics and does not report pharmacogenomic effects on ethanol PK/PD parameters. |
-| PGx | Bean_2000 | not_relevant | 0 | 0 | The paper discusses the interaction between alcohol use and HIV pharmacotherapy, not the pharmacogenomics of ethanol itself. |
+| PGx | Bansal_2023 | not_relevant | 0 | 0 | The study evaluates cannabinoid-drug interactions on CYP enzymes and does not investigate the pharmacokinetics or pharmacodynamics of ethanol or its metabolic pathways. |
+| PGx | Barletta_2025 | not_relevant | 0 | 0 | The paper discusses pharmacogenomics of fentanyl, not ethanol. |
+| PGx | Bean_2000 | not_relevant | 0 | 0 | The paper focuses on the association between alcohol use and HIV therapy outcomes, not on how genetic variants affect the PK or PD of ethanol. |
 | popPK | Bergmann_2012 | irrelevant | 0 | 0 | The paper focuses on the pharmacokinetics of prednisolone and prednisone, not ethanol. |
-| PGx | Boniforti_1979 | not_relevant | 0 | 0 | The paper describes a method for identifying anaerobic bacteria using gas chromatography and does not discuss pharmacogenomics or ethanol pharmacokinetics. |
-| popPK | Brosnan_2024 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of L-carvone, not ethanol, which is only used as a solvent in the formulation. |
-| PGx | Busto_2000 | not_relevant | 0 | 0 | The provided text is only a title and does not contain the body of the paper, so no specific pharmacogenomic effects on ethanol PK/PD parameters can be extracted or verified. |
-| PGx | Całka_2022 | not_relevant | 0 | 0 | The study analyzes the association between ADH7 genotypes and the risk of alcohol abuse/dependence (a disease outcome), but does not report changes in pharmacokinetic or pharmacodynamic parameters of ethanol. |
-| PGx | Couzigou_1991 | not_relevant | 8 | 0 | The text describes the study design and genotyping methods for ADH polymorphisms in ethanol metabolism but does not contain the results or data showing the effect on PK parameters. |
-| PGx | Crabbe_1986 | not_relevant | 2 | 5 | The paper reports genetic differences in behavioral response (locomotor activity) to ethanol, which is a pharmacodynamic effect, but it does not report specific PK parameters or quantitative pharmacogenomic effect sizes (theta) for a specific gene variant. |
-| PGx | Crabbe_2004 | not_relevant | 0 | 0 | The paper title indicates a review of alcohol self-administration and withdrawal, which are behavioral outcomes, not pharmacokinetic or pharmacodynamic parameters of ethanol. |
-| popPK | Deng_2024 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of polatuzumab vedotin, not ethanol. |
+| PGx | Boniforti_1979 | not_relevant | 0 | 0 | The paper focuses on using gas-liquid chromatography to identify anaerobic bacteria, not on the pharmacokinetics or pharmacogenomics of ethanol. |
+| popPK | Brosnan_2024 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of L-carvone, and ethanol is only mentioned as a solvent in the formulation, not as the subject drug. |
+| PGx | Busto_2000 | not_relevant | 5 | 2 | The text is a title without body content, so specific PK/PD parameters or quantitative effect sizes for ethanol cannot be assessed. |
+| PGx | Całka_2022 | not_relevant | 0 | 0 | The study investigates the association between ADH7 SNPs and the risk of alcohol abuse (a behavioral outcome), not the effect of these variants on ethanol pharmacokinetic or pharmacodynamic parameters. |
+| PGx | Couzigou_1991 | not_relevant | 7 | 4 | This is a methods/introduction draft section describing the study design and genotyping strategies for ADH polymorphism on ethanol metabolism and liver disease, but it lacks a results section with quantitative data comparing PK/PD parameters between genotypes. |
+| PGx | Crabbe_1986 | not_relevant | 2 | 1 | The paper reports a genetic influence on behavioral response (locomotor activity) to ethanol, but it does not define or quantify a specific pharmacokinetic (PK) or pharmacodynamic (PD) parameter (e.g., AUC, Cmax, EC50, Kd) as required. |
+| PGx | Crabbe_2004 | not_relevant | 5 | 2 | The provided text is a title only and does not contain the results, tables, or quantitative data required to extract specific pharmacokinetic or pharmacodynamic parameter changes for ethanol. |
+| popPK | Deng_2024 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of polatuzumab vedotin (an antibody-drug conjugate) and its payload MMAE, not ethanol. |
 | PD | Deng_2024 | not_relevant | 3 | 1 | The paper reports a qualitative exposure-response association (AUC vs. survival) with p-values but does not provide numeric PD parameters (e.g., Emax, EC50) or a quantitative dose-response curve. |
-| popPK | Doggrell_2001 | irrelevant | 0 | 0 | The paper is a review of moxonidine, and ethanol is only mentioned as a condition (withdrawal) for which animal studies suggest moxonidine may be effective, with no PK parameters for ethanol reported. |
-| PGx | Eriksson_1968 | not_relevant | 0 | 0 | The paper focuses on measurement validity in albino rats and does not report pharmacogenomic effects of gene variants on ethanol PK/PD parameters. |
-| PGx | Fekete_2022 | not_relevant | 0 | 0 | The paper investigates CYP1A2 activity using phenacetin as a probe substrate, not ethanol, and focuses on drug metabolism rather than ethanol pharmacokinetics. |
-| PGx | Florek_2015 | not_relevant | 0 | 0 | The study investigates the effect of tobacco smoke exposure and behavioral phenotype (alcohol preference) on ethanol pharmacokinetics, not the effect of a specific gene variant or genotype. |
-| popPK | Furie_2021 | irrelevant | 0 | 0 | no_text gate: only 140 chars of text extracted (&lt; 400) |
+| popPK | Doggrell_2001 | irrelevant | 0 | 0 | The paper reviews moxonidine, and ethanol is only mentioned as a context for withdrawal studies, with no PK parameters reported. |
+| PGx | Eriksson_1968 | not_relevant | 0 | 0 | The paper focuses on the methodology of measuring ethyl alcohol consumption in albino rats and does not investigate any genetic variants or pharmacogenomic effects on PK/PD parameters. |
+| PGx | Fekete_2022 | not_relevant | 0 | 0 | The paper investigates CYP1A2 pharmacogenomics, which is unrelated to the pharmacokinetics of ethanol. |
+| PGx | Florek_2015 | not_relevant | 0 | 0 | The study investigates the effect of tobacco smoke exposure and behavioral alcohol preference on ethanol pharmacokinetics, but it does not report any pharmacogenomic effects driven by specific gene variants, genotypes, or genetic phenotypes. |
+| popPK | Furie_2021 | irrelevant | 0 | 0 | The paper is a clinical trial for dapirolizumab pegol in SLE and does not study ethanol pharmacokinetics. |
 | PD | Furie_2021 | not_relevant | 0 | 0 | The paper reports clinical efficacy and safety of dapirolizumab pegol in SLE, not a pharmacodynamic or exposure-response analysis for ethanol. |
-| PGx | Gaither_2025 | not_relevant | 0 | 0 | The study investigates the effect of chronic alcohol consumption on liver enzyme expression, not the effect of a gene variant on ethanol pharmacokinetics or pharmacodynamics. |
-| PGx | Gogolewska_2023 | not_relevant | 0 | 0 | The paper investigates the association between gene polymorphisms and the risk of head and neck cancer, not the pharmacokinetic or pharmacodynamic parameters of ethanol. |
-| PGx | Goodman_1992 | not_relevant | 2 | 0 | The text is an abstract or summary discussing the biological mechanism (toxicity vs behavior) of a gene association, but it does not report specific pharmacokinetic or pharmacodynamic parameter changes (e.g., clearance, Cmax, ED50) for ethanol. |
+| PGx | Gaither_2025 | not_relevant | 0 | 0 | The study investigates the effect of chronic alcohol exposure on drug-metabolizing enzyme protein levels, not the effect of a gene variant on the pharmacokinetics or pharmacodynamics of ethanol. |
+| PGx | Gogolewska_2023 | not_relevant | 0 | 0 | The study examines the association between gene polymorphisms and head and neck cancer incidence, not the pharmacokinetic or pharmacodynamic parameters of ethanol. |
+| PGx | Goodman_1992 | not_relevant | 4 | 4 | The abstract suggests a gene is associated with ethanol toxicity (a toxic effect) rather than a specific pharmacokinetic or pharmacodynamic parameter of ethanol metabolism/absorption. |
 | popPK | Grasmäder_2004 | irrelevant | 0 | 0 | no_text gate: only 50 chars of text extracted (&lt; 400) |
-| PGx | Grasmäder_2004 | not_relevant | 0 | 0 | The paper analyzes the pharmacokinetics of mirtazapine, not ethanol. |
-| popPK | Harmon_2020 | irrelevant | 0 | 0 | The paper describes the synthesis and potency of phosphoantigen prodrugs for T-cell stimulation and does not involve ethanol pharmacokinetics. |
-| PGx | Hashimoto_2025 | not_relevant | 0 | 0 | The paper reports a pharmacogenomic effect on the clinical efficacy (drinking behavior) of nalmefene, not on the pharmacokinetic or pharmacodynamic parameters of ethanol itself. |
+| PGx | Grasmäder_2004 | not_relevant | 0 | 0 | The paper focuses on the population pharmacokinetics of mirtazapine, not ethanol. |
+| popPK | Harmon_2020 | irrelevant | 0 | 0 | The paper describes the synthesis and immunological potency of phosphoantigen prodrugs and does not involve ethanol pharmacokinetics. |
 | popPK | Holford_1997 | irrelevant | 0 | 0 | no_text gate: only 45 chars of text extracted (&lt; 400) |
 | PD | Holford_1997 | not_relevant | 1 | 0 | The text is only a title suggesting a review or conceptual discussion of PK/PD models for alcohol, with no data, numeric parameters, or derivable concentration-effect relationships provided. |
 | popPK | Honoré_2014 | irrelevant | 0 | 0 | no_text gate: only 125 chars of text extracted (&lt; 400) |
 | PD | Honoré_2014 | not_relevant | 0 | 0 | The paper is a review of steroid metabolism and PK/PD approaches in renal failure, not a study reporting specific PD parameters for ethanol. |
-| popPK | Hu_2017 | irrelevant | 0 | 0 | The paper is a review of Patchouli Alcohol, not ethanol, and does not report pharmacokinetic parameters for ethanol. |
-| popPK | Jogiraju_2025 | irrelevant | 0 | 0 | The study evaluates the pharmacokinetics of lenacapavir, where ethanol is only a formulation excipient, not the subject drug. |
-| PGx | Jörnvall_2000 | not_relevant | 2 | 0 | The text is a general overview/abstract of the ADH system and does not report specific quantitative pharmacogenomic effects on ethanol PK/PD parameters. |
-| PGx | Kuehn_2009 | not_relevant | 0 | 0 | The text is a title/summary regarding alcohol dependence therapies and does not report specific pharmacogenomic effects on ethanol PK/PD parameters. |
-| PGx | Kukowka_2023 | not_relevant | 0 | 0 | The study reports no statistically significant differences in genotypes and does not provide quantitative pharmacokinetic or pharmacodynamic data for ethanol. |
-| popPK | Liang_2023 | irrelevant | 0 | 0 | The paper studies triterpenoids isolated from an ethanol extract of a plant, not the pharmacokinetics of ethanol itself. |
-| PGx | Lingford-Hughes_2017 | not_relevant | 0 | 0 | The paper is a commentary on the status of addiction research and does not report specific pharmacogenomic effects on ethanol PK/PD parameters. |
-| PGx | Lucotte_1975 | not_relevant | 0 | 0 | The paper discusses biochemical polymorphisms in Japanese quail, not human pharmacogenomics or ethanol PK/PD parameters. |
-| PGx | Mansour_2024 | not_relevant | 0 | 0 | The paper investigates the pharmacokinetics of clozapine, not ethanol. |
-| PGx | Markel_1999 | not_relevant | 2 | 0 | The paper describes a statistical method for QTL mapping in mice and discusses ethanol sensitivity as a complex trait, but it does not report specific pharmacogenomic effects of gene variants on ethanol PK/PD parameters. |
-| PGx | McClearn_1993 | not_relevant | 2 | 0 | The text is a conceptual introduction to applying complex systems theory to alcohol pharmacogenetics and does not report specific gene variants or quantitative PK/PD parameter changes. |
-| PGx | McDonald_2025 | not_relevant | 0 | 0 | The study investigates the effect of ashwagandha extracts on CYP enzymes and cytotoxicity, not the effect of a gene variant on ethanol pharmacokinetics or pharmacodynamics. |
-| popPK | Miranda_2026 | irrelevant | 0 | 0 | no_text gate: only 86 chars of text extracted (&lt; 400) |
+| popPK | Hu_2017 | irrelevant | 0 | 0 | The paper is a review of Patchouli Alcohol (PA), not ethanol, and contains no pharmacokinetic parameters for ethanol. |
+| popPK | Jogiraju_2025 | irrelevant | 0 | 0 | The study evaluates the pharmacokinetics of lenacapavir, an antiretroviral drug, where ethanol is merely an excipient in the formulation. |
+| PGx | Jörnvall_2000 | not_relevant | 2 | 1 | The text is a high-level abstract describing the complexity of the ADH enzyme system and suggesting future research directions, without reporting specific quantitative pharmacogenomic effects on PK/PD parameters for ethanol. |
+| PGx | Kuehn_2009 | not_relevant | 0 | 0 | The paper discusses alcohol dependence and targeted therapies but does not report pharmacogenomic effects on the PK or PD parameters of ethanol itself. |
+| PGx | Kukowka_2023 | not_relevant | 0 | 0 | The study investigates the association between genotypes and the risk of FASD, not pharmacokinetic or pharmacodynamic parameters of ethanol. |
+| popPK | Liang_2023 | irrelevant | 0 | 0 | The study is about triterpenoid compounds isolated from an ethanol plant extract acting on PC12 cells (in vitro), not the pharmacokinetics of the drug ethanol. |
+| PGx | Lingford-Hughes_2017 | not_relevant | 0 | 0 | The text is a title of a review or perspective on addiction medicine and does not report specific pharmacogenomic data or PK/PD parameters for ethanol. |
+| PGx | Lucotte_1975 | not_relevant | 0 | 0 | The paper describes general biochemical polymorphisms in quails, including alcohol dehydrogenase, but does not report a specific pharmacogenomic effect on ethanol pharmacokinetics or pharmacodynamics. |
+| PGx | Mansour_2024 | not_relevant | 0 | 0 | The study investigates the pharmacokinetics of clozapine, not ethanol. |
+| PGx | Markel_1999 | not_relevant | 2 | 2 | The paper describes a method for allele dose analysis and QTL mapping strategies for ethanol sensitivity and neurotensin levels, but does not report specific pharmacokinetic parameters or fitted pharmacogenomic effect sizes. |
+| PGx | McClearn_1993 | not_relevant | 2 | 0 | The text is a conceptual review regarding systems biology and alcohol pharmacogenetics, lacking specific data on gene variants or PK/PD parameters. |
+| PGx | McDonald_2025 | not_relevant | 0 | 0 | The study investigates the effect of ashwagandha extracts on CYP450 enzymes in hepatocytes, not the effect of a human gene variant on the pharmacokinetics or pharmacodynamics of ethanol. |
+| popPK | Miranda_2026 | irrelevant | 0 | 0 | The study focuses on the ecotoxicity and biodegradation of prednisone in aquatic organisms, not the pharmacokinetics of ethanol. |
 | PD | Miranda_2026 | not_relevant | 0 | 0 | The paper focuses on the ecotoxicology and biodegradation of prednisone, not ethanol, and does not report any pharmacodynamic or exposure-response relationships for ethanol. |
-| popPK | Miskovic-Stankovic_2023 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of gentamicin in a hydrogel, not ethanol. |
-| PGx | Myers_1968 | not_relevant | 0 | 0 | The paper focuses on measurement validity in albino rats and does not report pharmacogenomic effects of gene variants on ethanol PK/PD parameters. |
-| PGx | Nakamura_2011 | not_relevant | 0 | 0 | The paper investigates the metabolism of bisphenol A, not ethanol, and does not report pharmacogenomic effects on ethanol PK/PD. |
-| PGx | Nobili_2014 | not_relevant | 0 | 0 | The paper studies pharmacogenomic markers for chemotherapy efficacy in lymphoma, not ethanol PK/PD. |
-| PGx | Norberg_2003 | not_relevant | 3 | 0 | The paper is a general review of ethanol pharmacokinetic variability and mentions ADH polymorphism qualitatively, but it does not report specific quantitative pharmacogenomic effect sizes or fitted parameters for a specific genotype. |
-| popPK | North_2020 | irrelevant | 0 | 0 | The study investigates the pharmacodynamic effects of celastrol on cerebral arteries and ethanol-induced constriction, not the pharmacokinetic disposition parameters of ethanol. |
-| PGx | Park_2017 | not_relevant | 0 | 0 | The paper investigates the pharmacogenomics of glucocorticoids (prednisone) affecting bone mineral density, not ethanol. |
-| PGx | Parkhomenko_2022 | not_relevant | 0 | 0 | The paper reports a pharmacogenomic effect on the PK of haloperidol, not ethanol. |
-| PGx | Pilla_2021 | not_relevant | 0 | 0 | The paper focuses on drug-drug interactions (DDI) involving vincristine and kinase inhibitors, not ethanol pharmacokinetics or pharmacodynamics. |
-| PGx | Propping_1983 | not_relevant | 6 | 2 | The paper discusses genetic influence on the pharmacodynamic response (EEG) to ethanol but does not report specific quantitative effect sizes or fitted parameters for a defined genotype. |
-| PGx | Propping_1983_2 | not_relevant | 2 | 0 | The text is a title indicating a review/digest of pharmacogenetics, but it does not report specific fitted effect sizes or quantitative PK/PD parameters for ethanol in the provided snippet. |
-| PGx | Reséndiz-Galván_2020 | not_relevant | 0 | 0 | The paper reports pharmacogenomics for mycophenolic acid, not ethanol. |
-| PGx | Riglet_2020 | not_relevant | 0 | 0 | The paper reports pharmacogenomic effects on mycophenolic acid, not ethanol. |
-| popPK | Sacre_2017 | irrelevant | 0 | 0 | The study focuses on the toxicodynetics of benzodiazepine overdoses (oxazepam and nordiazepam) and explicitly excludes concomitant alcohol ingestion, so it does not report pharmacokinetic parameters for ethanol. |
+| popPK | Miskovic-Stankovic_2023 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of the antibiotic gentamicin, not ethanol. |
+| PGx | Myers_1968 | not_relevant | 0 | 0 | The paper focuses on the methodology of measuring ethyl alcohol consumption in albino rats and does not investigate any genetic variants or pharmacogenomic effects on PK/PD parameters. |
+| PGx | Nakamura_2011 | not_relevant | 0 | 0 | The paper investigates the metabolism of bisphenol A (BPA) and its metabolites' estrogenic activity, and does not report on ethanol pharmacokinetics or pharmacodynamics. |
+| PGx | Nobili_2014 | not_relevant | 0 | 0 | The study investigates pharmacogenomic markers of clinical efficacy in diffuse large B-cell lymphoma (DLBCL), not the pharmacokinetic or pharmacodynamic effects of ethanol. |
+| PGx | Norberg_2003 | not_relevant | 7 | 0 | The text discusses ADH polymorphism and ethnic variations but does not report specific fitted pharmacogenomic effect sizes. |
+| popPK | North_2020 | irrelevant | 0 | 0 | The study is a mechanistic investigation of vasodilation where ethanol is used as a constricting agent, not as a subject drug for pharmacokinetic analysis. |
+| PGx | Park_2017 | not_relevant | 0 | 0 | The paper reports the association between a genetic variant and bone mineral density in response to glucocorticoid treatment, which is not a pharmacokinetic or pharmacodynamic parameter of ethanol. |
+| PGx | Parkhomenko_2022 | not_relevant | 0 | 0 | The study reports pharmacogenomic effects on Haloperidol, not on ethanol. |
+| PGx | Pilla_2021 | not_relevant | 0 | 0 | The paper focuses on vincristine pharmacokinetics and interactions with kinase inhibitors, not ethanol. |
+| PGx | Propping_1983 | not_relevant | 5 | 2 | The paper discusses a pharmacogenomic effect (genetic control of EEG response to ethanol) on a pharmacodynamic parameter, but it is a qualitative study without fitted effect sizes or specific genotype-parameter correlations. |
+| PGx | Propping_1983_2 | not_relevant | 7 | 5 | It is a general review/digest of the field and does not report a specific fitted pharmacogenomic effect size on ethanol PK/PD parameters. |
+| PGx | Reséndiz-Galván_2020 | not_relevant | 0 | 0 | The study investigates the pharmacokinetics of mycophenolic acid, not ethanol. |
+| PGx | Riglet_2020 | not_relevant | 0 | 0 | The paper focuses on the pharmacokinetics of mycophenolic acid, not ethanol. |
+| popPK | Sacre_2017 | irrelevant | 0 | 0 | The study focuses on the toxicodynetics of oxazepam and nordiazepam overdoses, not the pharmacokinetics of ethanol. |
 | PD | Sacre_2017 | not_relevant | 2 | 1 | The paper reports toxicodynetics (time to effect and qualitative severity) for benzodiazepines, not ethanol, and lacks numeric exposure-response parameters. |
 | PGx | Sam_2011 | not_relevant | 0 | 0 | The paper investigates pharmacogenomics of sirolimus, not ethanol. |
-| PGx | Santoro_2011 | not_relevant | 0 | 0 | The paper investigates pharmacogenomics of calcineurin inhibitors (cyclosporine/tacrolimus), not ethanol. |
-| PGx | Sennesael_2018 | not_relevant | 0 | 0 | The paper investigates rivaroxaban pharmacokinetics and ABCB1 genotypes, not ethanol. |
-| PGx | Shirasu_2024 | not_relevant | 0 | 0 | The paper describes a laboratory exercise protocol for genotyping and a qualitative ethanol patch test, but does not report quantitative pharmacokinetic or pharmacodynamic data linking specific genotypes to ethanol metabolism parameters. |
-| PGx | Skryabin_2022 | not_relevant | 0 | 0 | The paper reports pharmacogenomic effects on diazepam, not ethanol. |
-| popPK | Spinola_2022 | irrelevant | 0 | 0 | The paper is a systematic review and meta-analysis of cognitive effects (working memory) of alcohol, not a pharmacokinetic study reporting disposition parameters. |
-| PGx | Sung_2026 | not_relevant | 0 | 0 | The study reports a clinical outcome (age at stroke onset) rather than a pharmacokinetic or pharmacodynamic parameter of ethanol. |
-| PGx | Taylor_2003 | not_relevant | 2 | 1 | The paper discusses methodological and cultural issues in clinical trials regarding race and ethnicity, rather than reporting specific pharmacogenomic effects on ethanol PK/PD parameters. |
-| PGx | Testoni_2015 | not_relevant | 0 | 0 | The paper reviews genetic lesions in diffuse large B-cell lymphoma and does not discuss ethanol pharmacokinetics or pharmacodynamics. |
-| PGx | Varajti_2026 | not_relevant | 0 | 0 | The study investigates the association between VEGF polymorphisms and colorectal cancer risk, not the effect of genetic variants on the pharmacokinetics or pharmacodynamics of ethanol. |
-| popPK | Wang_2023 | irrelevant | 0 | 0 | no_text gate: only 110 chars of text extracted (&lt; 400) |
+| PGx | Santoro_2011 | not_relevant | 0 | 0 | The paper investigates the pharmacogenetics of calcineurin inhibitors (Cyclosporine and Tacrolimus), not ethanol. |
+| PGx | Sennesael_2018 | not_relevant | 5 | 4 | The study investigates the pharmacokinetics of rivaroxaban (not ethanol) and reports only a small-case observational association between ABCB1 genotypes and higher-than-expected plasma levels, without fitted quantitative effect sizes. |
+| PGx | Shirasu_2024 | not_relevant | 0 | 0 | The paper describes a teaching laboratory protocol for genotyping ethanol metabolism genes and performing an ethanol patch test for student comparison, but it does not report any data or fitted effect sizes quantifying how genotypes change pharmacokinetic or pharmacodynamic parameters. |
+| PGx | Skryabin_2022 | not_relevant | 0 | 0 | The paper studies diazepam pharmacokinetics, not ethanol. |
+| popPK | Spinola_2022 | irrelevant | 0 | 0 | The paper is a meta-analysis of working memory outcomes (cognitive effects) following alcohol administration and does not report pharmacokinetic parameters such as clearance, volume, or half-life. |
+| PGx | Sung_2026 | not_relevant | 0 | 0 | The paper reports a clinical association between genotype and stroke onset age, not a pharmacokinetic or pharmacodynamic parameter of ethanol. |
+| PGx | Taylor_2003 | not_relevant | 5 | 5 | This is a review discussing cultural and pharmacological considerations in alcohol trials, not reporting specific quantitative pharmacogenomic effect sizes. |
+| PGx | Testoni_2015 | not_relevant | 0 | 0 | The paper reviews genetic lesions in diffuse large B-cell lymphoma and the efficacy of R-CHOP therapy, containing no information regarding ethanol pharmacokinetics or pharmacodynamics. |
+| PGx | Varajti_2026 | not_relevant | 0 | 0 | The study analyzes the association of SNPs with colorectal cancer risk, not the effect of genetic variants on ethanol pharmacokinetics or pharmacodynamics. |
+| popPK | Wang_2023 | irrelevant | 0 | 0 | The paper focuses on the extraction and bioactivity of polysaccharides from Corydalis decumbens and contains no pharmacokinetic data or parameters for ethanol. |
 | PD | Wang_2023 | not_relevant | 0 | 0 | The paper focuses on the extraction, structure, and bioactivities of polysaccharides from Corydalis decumbens, not on the pharmacodynamics of ethanol. |
-| PGx | Wang_2023_2 | not_relevant | 0 | 0 | The paper reports pharmacogenomic effects on tacrolimus pharmacokinetics, not ethanol. |
-| PGx | Wei_2020 | not_relevant | 0 | 0 | The paper describes a statistical method for subgroup identification and mentions an application to an alcohol trial, but it does not report specific pharmacogenomic effects on ethanol PK/PD parameters. |
-| PGx | Weiner_1994 | not_relevant | 2 | 0 | The text describes the mechanism of aldehyde dehydrogenase variants and mutagenesis experiments but does not report quantitative pharmacokinetic or pharmacodynamic parameter changes in human subjects. |
-| PGx | Wilde_2007 | not_relevant | 0 | 0 | The paper focuses on the pharmacokinetics of the BEACOPP chemotherapy regimen (bleomycin, etoposide, etc.) in Hodgkin's lymphoma, not ethanol. |
-| PGx | Zastrozhin_2021 | not_relevant | 0 | 0 | The paper investigates the pharmacogenomics of fluvoxamine, not ethanol. |
-| PGx | Zastrozhin_2022 | not_relevant | 0 | 0 | The paper investigates the pharmacogenomics of escitalopram, not ethanol. |
+| PGx | Wang_2023_2 | not_relevant | 0 | 0 | The study investigates the pharmacogenetics of tacrolimus, not ethanol. |
+| PGx | Weiner_1994 | not_relevant | 4 | 0 | The text discusses the mechanism and potential variants of aldehyde dehydrogenase affecting acetaldehyde metabolism, but it is a qualitative description of enzyme biochemistry and does not report quantitative pharmacokinetic or pharmacodynamic data for ethanol in a human population. |
+| PGx | Wilde_2007 | not_relevant | 0 | 0 | The paper studies the BEACOPP chemotherapy regimen in Hodgkin's lymphoma, not ethanol, and does not report pharmacogenomic effects on ethanol PK/PD. |
+| PGx | Zastrozhin_2021 | not_relevant | 0 | 0 | The study reports on the pharmacogenomics of fluvoxamine in patients with alcohol use disorder, not on the pharmacokinetics or pharmacodynamics of ethanol itself. |
+| PGx | Zastrozhin_2022 | not_relevant | 0 | 10 | The paper investigates the drug escitalopram, not ethanol. |
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-09-29 20:27 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-10-07 21:45 UTC</sub>

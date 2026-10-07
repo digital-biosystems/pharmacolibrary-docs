@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;D06A&quot;,&quot;href&quot;:&quot;atc/D06A.md&quot;},{&quot;label&quot;:&quot;amikacin&quot;,&quot;href&quot;:&quot;drugs/drug_amikacin/&quot;},{&quot;label&quot;:&quot;Severino_2023 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Amikacin_AlbanellFernndez2025_reference&quot;,&quot;label&quot;:&quot;Albanell-Fern\u00e1ndez_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_amikacin/Amikacin_AlbanellFernndez2025_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amikacin_Marsot2017_reference&quot;,&quot;label&quot;:&quot;Marsot_2017_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_amikacin/Amikacin_Marsot2017_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Amikacin_Alhadab2018_reference&quot;,&quot;label&quot;:&quot;Alhadab_2018_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_amikacin/Amikacin_Alhadab2018_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amikacin_Alqahtani2018_base&quot;,&quot;label&quot;:&quot;Alqahtani_2018_base&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_amikacin/Amikacin_Alqahtani2018_base.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amikacin_Alqahtani2018_final&quot;,&quot;label&quot;:&quot;Alqahtani_2018_final&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_amikacin/Amikacin_Alqahtani2018_final.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amikacin_Illamola2018_reference&quot;,&quot;label&quot;:&quot;Illamola_2018_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_amikacin/Amikacin_Illamola2018_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amikacin_MedellnGaribay2022_reference&quot;,&quot;label&quot;:&quot;Medell\u00edn-Garibay_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_amikacin/Amikacin_MedellnGaribay2022_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # amikacin — `Amikacin_Severino2023_reference`
 
-> ## <span class="pk-badge pk-badge--orange">built, not shipped</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -13,7 +13,7 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
-**Model:** A model was built but held back: a core parameter had no value, so it is not published or simulated.
+**Model:** No model was generated from this record.
 
 ### Reviewer guidance
 
@@ -25,27 +25,28 @@ Independently confirmed by `gpt-oss:120b`.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
+> ⚠️ **STALE** — review status `model_quarantined` (reviewed 2026-09-28 14:35:59.384221+00:00) predates the upstream re-run (2026-10-07 21:09:45.380498+00:00). Current validate status: `needs_review`.
+
 ## Citation
 Severino N et al., Population pharmacokinetics of amikacin…, British journal of clinical… (2023)
   ·  DOI: [10.1111/bcp.15697](https://doi.org/10.1111/bcp.15697)
 
 ## Model component
-<dbs-pgx drug="amikacin" model-id="Amikacin_Severino2023_reference" status="model_quarantined" stale="false" population="newborns with suspected neonatal sepsis" measured-compound="amikacin" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<dbs-pgx drug="amikacin" model-id="Amikacin_Severino2023_reference" status="needs_review" stale="true" population="newborns with suspected neonatal sepsis" measured-compound="amikacin" parameterization="mechanistic" topology="1C"></dbs-pgx>
 
-**Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
-**Parameters:** 4 extracted.
+**Model structure:** 1-compartment; no model was built for this record.  
+**Parameters:** 2 extracted, plus 1 covariate effect.
 
 **Parameterization:** mechanistic.
 
 ## Parameters
-> ⚠️ This record is not accepted (current status `model_quarantined`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
+> ⚠️ This record is not accepted (current status `needs_review`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| central volume of distribution | `Q61` · V | 71 | % | not captured | % | not captured | boundary (0.8) | Severino_2023:other_prose | — | not captured |
-| clearance | `Q22` · CL | 63 | % | not captured | % | not captured | exact (1.0) | Severino_2023:other_prose | — | not captured |
-| intercompartmental clearance | `Q30` · Q | 0.15 | L/h | 4.166666666666666e-08 | L/h | not captured | exact (1.0) | Severino_2023:discussion_prose | — | not captured |
-| V 2 | `Q64` · V2 | 4.26 | liters | 0.00426 | L | not captured | review_gapfill (0.7) | amikacin:review | — | not captured |
+| PMA CL | `Q22` · CL | 2.61 | L/h | 7.249999999999999e-07 | L/h | not captured | llm_confirmed (0.6) | Severino_2023_table_2:row4:col1, Severino_2023_table_2:row4:col2 | — | not captured |
+| theta_cl_creatinine_power | `Q900` · theta_cl_creatinine_power | 0.21 | not captured | not captured | not captured | not captured | not captured (not captured) | Severino_2023_table_2:row5:col1, Severino_2023_table_2:row5:col2 | — | not captured |
+| V d | `Q61` · V | 1.19 | L | 0.0011899999999999999 | L | not captured | review_gapfill (0.7) | Albanell-Fernández_2025:review | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -55,17 +56,28 @@ Severino N et al., Population pharmacokinetics of amikacin…, British journal o
 ## Departures & gaps
 
 **Interpretation flags:**
-- salvaged Q61 ('central volume of distribution'=71) from results prose — parameter table was unreadable
-- salvaged Q22 ('clearance'=63) from results prose — parameter table was unreadable
-- salvaged Q30 ('intercompartmental clearance'=0.15) from results prose — parameter table was unreadable
+- column 'typical value of the population (coefficient of variation, %)' classified 'rse' by the LLM but kept as the estimate: the header names the point value
+- dropped value-less row: 'Central volume of distribution, (L per 70 kg)' (captured trailing unit 'L per 70 kg' for child rows)
+- dropped value-less row: 'Elimination clearance, (L/h per 70 kg) at 38 weeks PMA'
+- dropped value-less row: 'Peripheral volume of distribution, (L per 70 kg)' (captured trailing unit 'L per 70 kg' for child rows)
+- dropped value-less row: 'Inter-compartmental clearance, (L/h per 70 kg)' (captured trailing unit 'L/h per 70 kg' for child rows)
+- unit_dimension_unknown: 'coefficient of variation, %' (CL)
+- dropped duplicate Q22 ('Shock CL', value '0.76') — already have one for this compound
+- routed 'Sepsis CL' → Q312 (IIV) to iiv — variability estimate, not a structural parameter
+- implicit units: 'PMA CL' → L/h (from the paper text: 'The paper reports “clearance (Cl = 0.16 L/h)” and gives the final model as “CL = 1.79 × …”; the caption identifies CL as')
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=amikacin
-- held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
-- status held at route_to_review — not promoted
-- gap-filled Q64 (V2) from review (primary lacked it)
+- structure disagreement: deterministic 1C vs LLM 2C — review compartment count
+- gap-filled Q61 (V) from Albanell-Fernández_2025's review values (primary lacked it)
+- skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
+- skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
 
 **Extraction notes:**
 - no TEI final-model table id; trying text-pointer table recovery
-- text-pointer recovery found no readable extracted parameter table
+- LLM selected parameter table(s) 2
+- unparsed cell Severino_2023_table_2:row0:col1 = '25.1 (24%)'
+- unparsed cell Severino_2023_table_2:row1:col1 = '1.79 (30%)'
+- unparsed cell Severino_2023_table_2:row2:col1 = '33.5 (80%)'
+- unparsed cell Severino_2023_table_2:row3:col1 = '1.83 (72%)'
 
 ## Validation
 
@@ -88,15 +100,16 @@ _Every reader agrees on every compared field of this record._
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 3 | not captured | not captured | not captured |
+| C0_has_structural_params | pass | not captured | 1 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
-| C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
-| C5_dimension_Q64 | pass | [length] ** 3 | not captured | not captured | not captured | ['amikacin:review'] |
-| C5_unit_missing_Q22 | fail | [length] ** 3 / [time] | % | not captured | not captured | ['Severino_2023:other_prose'] |
-| C5_unit_missing_Q61 | fail | [length] ** 3 | % | not captured | not captured | ['Severino_2023:other_prose'] |
-| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 63.0 | not captured | not captured | ['Severino_2023:other_prose'] |
+| C0c_disposition_complete | fail | not captured | not captured | not captured | not captured | not captured |
+| C2_reference | pass | not captured | not captured | not captured | not captured | not captured |
+| C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Severino_2023_table_2:row4:col1', 'Severino_2023_table_2:row4:col2'] |
+| C5_dimension_Q61 | pass | [length] ** 3 | not captured | not captured | not captured | ['Albanell-Fernández_2025:review'] |
+| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 2.61 | not captured | not captured | ['Severino_2023_table_2:row4:col1', 'Severino_2023_table_2:row4:col2'] |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
-| C9_phys_window_Q64 | pass | volume within physiological range | 4.26 L | not captured | not captured | ['amikacin:review'] |
+| C9_phys_window_Q22 | pass | clearance within physiological range | 2.61 L/h | not captured | not captured | ['Severino_2023_table_2:row4:col1', 'Severino_2023_table_2:row4:col2'] |
+| C9_phys_window_Q61 | pass | volume within physiological range | 1.19 L | not captured | not captured | ['Albanell-Fernández_2025:review'] |
 
 **Reviewer per-scenario checks:**
 
@@ -143,4 +156,4 @@ _No web simulator for this record: its structure has no shared WebAssembly templ
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-07-15 09:52 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 21:09 UTC</sub>

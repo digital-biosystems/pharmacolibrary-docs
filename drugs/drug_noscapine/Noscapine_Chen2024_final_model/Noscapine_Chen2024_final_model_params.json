@@ -1,0 +1,36 @@
+{
+ "dose_source": "paper",
+ "model_id": "Noscapine_Chen2024_final_model",
+ "molar_masses": {
+  "central.C": 0.4134205
+ },
+ "note": "Values for the shared PK_1C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "paper_doses_kind": "discrete",
+ "paper_doses_mg": [
+  50.0
+ ],
+ "parameters": {
+  "Cl": 0.0002661111111111111,
+  "F": 1.0,
+  "MM": 0.4134205,
+  "Tlag": 0.0,
+  "VdPerKg": 0.00071,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 5e-05,
+  "ka": 0.003611111111111111,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 706.2288656164174
+ },
+ "reference_peaks": {
+  "central.C": 0.00023466367638429097
+ },
+ "stop_time": 86400.0,
+ "template": "PK_1C_enteral",
+ "template_fmu": "PK_1C_enteral.fmu"
+}

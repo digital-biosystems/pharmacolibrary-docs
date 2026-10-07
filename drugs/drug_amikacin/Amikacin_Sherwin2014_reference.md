@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;D06A&quot;,&quot;href&quot;:&quot;atc/D06A.md&quot;},{&quot;label&quot;:&quot;amikacin&quot;,&quot;href&quot;:&quot;drugs/drug_amikacin/&quot;},{&quot;label&quot;:&quot;Sherwin_2014 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Amikacin_AlbanellFernndez2025_reference&quot;,&quot;label&quot;:&quot;Albanell-Fern\u00e1ndez_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_amikacin/Amikacin_AlbanellFernndez2025_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amikacin_Marsot2017_reference&quot;,&quot;label&quot;:&quot;Marsot_2017_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_amikacin/Amikacin_Marsot2017_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Amikacin_Alhadab2018_reference&quot;,&quot;label&quot;:&quot;Alhadab_2018_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_amikacin/Amikacin_Alhadab2018_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amikacin_Alqahtani2018_base&quot;,&quot;label&quot;:&quot;Alqahtani_2018_base&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_amikacin/Amikacin_Alqahtani2018_base.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amikacin_Alqahtani2018_final&quot;,&quot;label&quot;:&quot;Alqahtani_2018_final&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_amikacin/Amikacin_Alqahtani2018_final.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amikacin_Illamola2018_reference&quot;,&quot;label&quot;:&quot;Illamola_2018_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_amikacin/Amikacin_Illamola2018_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amikacin_MedellnGaribay2022_reference&quot;,&quot;label&quot;:&quot;Medell\u00edn-Garibay_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_amikacin/Amikacin_MedellnGaribay2022_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # amikacin — `Amikacin_Sherwin2014_reference`
 
-> ## <span class="pk-badge pk-badge--orange">built, not shipped</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -13,7 +13,7 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
-**Model:** A model was built but held back: a core parameter had no value, so it is not published or simulated.
+**Model:** No model was generated from this record.
 
 ### Reviewer guidance
 
@@ -25,28 +25,30 @@ Independently confirmed by `gpt-oss:120b`.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
+> ⚠️ **STALE** — review status `model_quarantined` (reviewed 2026-09-28 14:35:59.390423+00:00) predates the upstream re-run (2026-10-07 21:09:51.324887+00:00). Current validate status: `needs_review`.
+
 ## Citation
 Sherwin CM et al., Amikacin population pharmacokinetics am…, Burns : journal of the Inte… (2014)
   ·  DOI: [10.1016/j.burns.2013.06.015](https://doi.org/10.1016/j.burns.2013.06.015)
 
 ## Model component
-<dbs-pgx drug="amikacin" model-id="Amikacin_Sherwin2014_reference" status="model_quarantined" stale="false" population="paediatric burn patients" measured-compound="amikacin" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<dbs-pgx drug="amikacin" model-id="Amikacin_Sherwin2014_reference" status="needs_review" stale="true" population="hospitalized children with severe burns" measured-compound="amikacin" parameterization="mechanistic" topology="2C"></dbs-pgx>
 
-**Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
+**Model structure:** 2-compartment; no model was built for this record.  
 **Parameters:** 5 extracted.
 
 **Parameterization:** mechanistic.
 
 ## Parameters
-> ⚠️ This record is not accepted (current status `model_quarantined`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
+> ⚠️ This record is not accepted (current status `needs_review`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| Clearance (CL), L/h/70 kg | `Q22` · CL | 5.57 | not captured | not captured | not captured | 4.0 | boundary (0.8) | tab_1:row3:col1, tab_1:row3:col2, tab_1:row3:col4, tab_1:row3:col5, tab_1:row3:col6 | — | 0.087 (0.003% RSE) |
-| Volume of distribution in the | `Q61` · V | 15.8 | not captured | not captured | not captured | 2.58 | boundary (0.8) | tab_1:row4:col1, tab_1:row4:col2, tab_1:row4:col4, tab_1:row4:col5, tab_1:row4:col6 | — | 0.26 (0.00002% RSE) |
-| Intercompartmental clearance (Q), L/h/70 kg | `Q30` · Q | 3.96 | not captured | not captured | not captured | 2.95 | boundary (0.8) | tab_1:row6:col1, tab_1:row6:col2, tab_1:row6:col4, tab_1:row6:col5, tab_1:row6:col6 | — | 0.003 (None% RSE) |
-| RUV (s)-Standard deviation (mg/mL) | `Q315` · sigma | 1.183 | mg/mL | not captured | [mg] / [ml] | 0.29 | boundary (0.8) | tab_1:row16:col1, tab_1:row16:col2, tab_1:row16:col3, tab_1:row16:col4, tab_1:row16:col5, tab_1:row16:col6 | — | not captured |
-| V 2 | `Q64` · V2 | 4.26 | liters | 0.00426 | L | not captured | review_gapfill (0.7) | amikacin:review | — | not captured |
+| Clearance (CL), L/h/70 kg | `Q354` · CLnorm | 5.57 | L/h/70 kg | 1.5472222222222224e-06 | L/h | 8.6 | llm_corrected (0.6) | tab_1:row3:col1, tab_1:row3:col2, tab_1:row3:col4, tab_1:row3:col5, tab_1:row3:col6 | — | not captured |
+| Volume of distribution in the | `Q61` · V | 15.8 | L/70 kg | 0.0158 | L | 8.14 | llm_confirmed (0.6) | tab_1:row4:col1, tab_1:row4:col2, tab_1:row4:col4, tab_1:row4:col5, tab_1:row4:col6 | — | 0.06 (None% RSE) |
+| Intercompartmental clearance (Q), L/h/70 kg | `Q30` · Q | 3.96 | L/h/70 kg | 1.1e-06 | L/h | 14.2 | llm_confirmed (0.6) | tab_1:row6:col1, tab_1:row6:col2, tab_1:row6:col4, tab_1:row6:col5, tab_1:row6:col6 | — | 0.003 (None% RSE) |
+| Volume of distribution in the peripheral | `Q64` · V2 | 57.1 | L/70 kg | 0.057100000000000005 | L | 34.3 | boundary_compartment (0.9) | tab_1:row7:col1, tab_1:row7:col2, tab_1:row7:col4, tab_1:row7:col5, tab_1:row7:col6 | — | not captured |
+| CL | `Q22` · CL | 4.33 | liters/h | 1.202777777777778e-06 | L/h | not captured | review_gapfill (0.7) | Alhadab_2018:review | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -56,16 +58,21 @@ Sherwin CM et al., Amikacin population pharmacokinetics am…, Burns : journal o
 ## Departures & gaps
 
 **Interpretation flags:**
-- dropped duplicate Q61 ('Volume of distribution in the peripheral', value '57.1') — already have one for this compound
-- dropped duplicate Q315 ('RUV (s)-Coefficient of variation (%)', value '0.049') — already have one for this compound
+- table section iiv: 'BSV (v)-Clearance (CL)' routed out of structural estimates ('Between subject variability (BSV)')
+- table section iiv: 'BSV (v)-Volume of distribution in the' routed out of structural estimates ('Between subject variability (BSV)')
+- table section residual_error: 'RUV (s)-Standard deviation (mg/mL)' routed out of structural estimates ('Residual unexplained variability (RUV)')
+- table section residual_error: 'RUV (s)-Coefficient of variation (%)' routed out of structural estimates ('Residual unexplained variability (RUV)')
+- column 'parameter' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
+- implicit units: 'Clearance (CL), L/h/70 kg' → L/h/70 kg (from the paper text: 'The abstract reports clearance as “5.98 L/h/70 kg”; the covariate-analysis text says parameter estimates were standardiz')
+- implicit units: 'Volume of distribution in the' → L/70 kg (from the paper text: 'The abstract reports the central-compartment volume of distribution as “16.7 L/70 kg”; the covariate-analysis text says ')
+- implicit units: 'Intercompartmental clearance (Q), L/h/70 kg' → L/h/70 kg (from the paper text: 'The abstract reports inter-compartmental clearance as “3.38 L/h/70 kg”; the covariate-analysis text says parameter estim')
+- implicit units: 'Volume of distribution in the peripheral' → L/70 kg (from the paper text: 'The abstract reports the peripheral-compartment volume of distribution as “40.1 L/70 kg”; the covariate-analysis text sa')
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=amikacin
-- gap-filled Q64 (V2) from review (primary lacked it)
+- gap-filled Q22 (CL) from Alhadab_2018's review values (primary lacked it)
 
 **Extraction notes:**
-- unparsed cell tab_1:row0:col4 = '95% CI c'
-- unparsed cell tab_1:row0:col6 = '95% CI c'
 - unparsed cell tab_1:row11:col4 = 'À0.00442 to 0.121 d'
-- LLM region Sherwin_2014:discussion_prose: no JSON records returned
+- LLM selected parameter table(s) 2
 
 ## Validation
 
@@ -90,14 +97,17 @@ _Every reader agrees on every compared field of this record._
 |---|---|---|---|---|---|---|
 | C0_has_structural_params | pass | not captured | 4 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
-| C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
-| C5_dimension_Q64 | pass | [length] ** 3 | not captured | not captured | not captured | ['amikacin:review'] |
-| C5_unit_missing_Q22 | fail | [length] ** 3 / [time] | not captured | not captured | not captured | ['tab_1:row3:col1', 'tab_1:row3:col2', 'tab_1:row3:col4', 'tab_1:row3:col5', 'tab_1:row3:col6'] |
-| C5_unit_missing_Q30 | fail | [length] ** 3 / [time] | not captured | not captured | not captured | ['tab_1:row6:col1', 'tab_1:row6:col2', 'tab_1:row6:col4', 'tab_1:row6:col5', 'tab_1:row6:col6'] |
-| C5_unit_missing_Q61 | fail | [length] ** 3 | not captured | not captured | not captured | ['tab_1:row4:col1', 'tab_1:row4:col2', 'tab_1:row4:col4', 'tab_1:row4:col5', 'tab_1:row4:col6'] |
-| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 5.57 | not captured | not captured | ['tab_1:row3:col1', 'tab_1:row3:col2', 'tab_1:row3:col4', 'tab_1:row3:col5', 'tab_1:row3:col6'] |
+| C0c_disposition_complete | fail | not captured | not captured | not captured | not captured | not captured |
+| C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Alhadab_2018:review'] |
+| C5_dimension_Q30 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['tab_1:row6:col1', 'tab_1:row6:col2', 'tab_1:row6:col4', 'tab_1:row6:col5', 'tab_1:row6:col6'] |
+| C5_dimension_Q354 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['tab_1:row3:col1', 'tab_1:row3:col2', 'tab_1:row3:col4', 'tab_1:row3:col5', 'tab_1:row3:col6'] |
+| C5_dimension_Q61 | pass | [length] ** 3 | not captured | not captured | not captured | ['tab_1:row4:col1', 'tab_1:row4:col2', 'tab_1:row4:col4', 'tab_1:row4:col5', 'tab_1:row4:col6'] |
+| C5_dimension_Q64 | pass | [length] ** 3 | not captured | not captured | not captured | ['tab_1:row7:col1', 'tab_1:row7:col2', 'tab_1:row7:col4', 'tab_1:row7:col5', 'tab_1:row7:col6'] |
+| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 4.33 | not captured | not captured | ['Alhadab_2018:review'] |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
-| C9_phys_window_Q64 | pass | volume within physiological range | 4.26 L | not captured | not captured | ['amikacin:review'] |
+| C9_phys_window_Q22 | pass | clearance within physiological range | 4.33 L/h | not captured | not captured | ['Alhadab_2018:review'] |
+| C9_phys_window_Q61 | pass | volume within physiological range | 15.8 L | not captured | not captured | ['tab_1:row4:col1', 'tab_1:row4:col2', 'tab_1:row4:col4', 'tab_1:row4:col5', 'tab_1:row4:col6'] |
+| C9_phys_window_Q64 | pass | volume within physiological range | 57.1 L | not captured | not captured | ['tab_1:row7:col1', 'tab_1:row7:col2', 'tab_1:row7:col4', 'tab_1:row7:col5', 'tab_1:row7:col6'] |
 
 **Reviewer per-scenario checks:**
 
@@ -145,4 +155,4 @@ _No web simulator for this record: its structure has no shared WebAssembly templ
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-07-22 08:05 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 21:09 UTC</sub>

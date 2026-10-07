@@ -18,7 +18,7 @@ Benzethonium is a quaternary ammonium antiseptic used as a local anti-infective 
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-29 17:59 | 1:44 | 0/0/0 | 2/0/0 | 0/0/0 | 2,306/134 | ollama / qwen3.8:27b-mtp-q8_0 | 3 | 4/2 | 3/0 | 0 |
+| 2026-10-07 23:05 | 5:00 | 0/0/0 | 5/0/0 | 0/0/0 | 56,960/2,670 | ollama / glm-5.3-flash | 3 | 4/2 | 3/0 | 0 |
 
 ## popPK records
 
@@ -28,11 +28,13 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from keyword rules on the title and abstract — no LLM answer yet).">in vitro</span> | [Gough_2017_crop_contraction_amplitude](drugs/drug_benzethonium/pd_Gough_2017_crop_contraction_amplitude.md) | crop contraction amplitude ← myosuppressin (TDVDHVFLRFamide) · direct Emax (saturable) effect | — | Gough CS et al., Peptidergic control in a fruit crop pes…, PloS one (2017) | [10.1371/journal.pone.0188021](https://doi.org/10.1371/journal.pone.0188021) |
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from keyword rules on the title and abstract — no LLM answer yet).">in vitro</span> | [Gough_2017_midgut_peristaltic_contraction](drugs/drug_benzethonium/pd_Gough_2017_midgut_peristaltic_contraction.md) | midgut peristaltic contraction ← myosuppressin (TDVDHVFLRFamide) · direct Emax (saturable) effect | — | Gough CS et al., Peptidergic control in a fruit crop pes…, PloS one (2017) | [10.1371/journal.pone.0188021](https://doi.org/10.1371/journal.pone.0188021) |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Nomura_2010_apoptosis](drugs/drug_benzethonium/pd_Nomura_2010_apoptosis.md) | apoptosis ← benzethonium chloride / benzalkonium chloride / povidone iodine · direct sigmoid Emax (Hill) effect | — | Nomura Y et al., Effects of high-dose major components i…, Dental materials journal (2010) | [10.4012/dmj.2009-031](https://doi.org/10.4012/dmj.2009-031) |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Nomura_2010_cell_cycle_G0_G1_fraction](drugs/drug_benzethonium/pd_Nomura_2010_cell_cycle_G0_G1_fraction.md) | cell cycle G0/G1 fraction ← benzethonium chloride / benzalkonium chloride / povidone iodine · direct sigmoid Emax (Hill) effect | — | Nomura Y et al., Effects of high-dose major components i…, Dental materials journal (2010) | [10.4012/dmj.2009-031](https://doi.org/10.4012/dmj.2009-031) |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Nomura_2010_cell_viability](drugs/drug_benzethonium/pd_Nomura_2010_cell_viability.md) | cell viability ← benzethonium chloride / benzalkonium chloride / povidone iodine · direct sigmoid Emax (Hill) effect | — | Nomura Y et al., Effects of high-dose major components i…, Dental materials journal (2010) | [10.4012/dmj.2009-031](https://doi.org/10.4012/dmj.2009-031) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Coates_2001_alpha4beta2_nAChR](drugs/drug_benzethonium/pd_Coates_2001_alpha4beta2_nAChR.md) | ACh-evoked response inhibition of human alpha4beta2 nAChR ← benzethonium chloride · direct sigmoid Emax (Hill) effect | — | Coates KM et al., Ketamine and its preservative, benzetho…, British journal of pharmaco… (2001) | [10.1038/sj.bjp.0704315](https://doi.org/10.1038/sj.bjp.0704315) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Coates_2001_alpha7_nAChR](drugs/drug_benzethonium/pd_Coates_2001_alpha7_nAChR.md) | ACh-evoked response inhibition of human alpha7 nAChR ← benzethonium chloride · direct sigmoid Emax (Hill) effect | — | Coates KM et al., Ketamine and its preservative, benzetho…, British journal of pharmaco… (2001) | [10.1038/sj.bjp.0704315](https://doi.org/10.1038/sj.bjp.0704315) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="Animal study (other animal), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">other animal</span> | [Gough_2017_crop_contractions](drugs/drug_benzethonium/pd_Gough_2017_crop_contractions.md) | Spontaneous crop contractions (% change in activity) ← benzethonium chloride (Bztc) · direct sigmoid Emax (Hill) effect | — | Gough CS et al., Peptidergic control in a fruit crop pes…, PloS one (2017) | [10.1371/journal.pone.0188021](https://doi.org/10.1371/journal.pone.0188021) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="Animal study (other animal), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">other animal</span> | [Gough_2017_midgut_peristalsis](drugs/drug_benzethonium/pd_Gough_2017_midgut_peristalsis.md) | Midgut peristaltic contractions (% change in activity) ← benzethonium chloride (Bztc) · direct sigmoid Emax (Hill) effect | — | Gough CS et al., Peptidergic control in a fruit crop pes…, PloS one (2017) | [10.1371/journal.pone.0188021](https://doi.org/10.1371/journal.pone.0188021) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from keyword rules on the title and abstract — no LLM answer yet).">human + animal</span> | [Huang_2026_5_R1_inhibition](drugs/drug_benzethonium/pd_Huang_2026_5_R1_inhibition.md) | 5α-reductase type 1 inhibition (human) ← benzethonium · inhibition effect | — | Huang Y et al., Structural determinants of oxygenated b…, Ecotoxicology and environme… (2026) | [10.1016/j.ecoenv.2026.119751](https://doi.org/10.1016/j.ecoenv.2026.119751) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from keyword rules on the title and abstract — no LLM answer yet).">in vitro</span> | [Long_2013_HERG](drugs/drug_benzethonium/pd_Long_2013_HERG.md) | HERG channel current inhibition ← benzethonium chloride · inhibition effect | — | Long Y et al., Mechanism of HERG potassium channel inh…, Toxicology and applied phar… (2013) | [10.1016/j.taap.2012.12.021](https://doi.org/10.1016/j.taap.2012.12.021) |
+| <span class="pk-badge pk-badge--green">extracted</span> | [Mihara_2005_OUR](drugs/drug_benzethonium/pd_Mihara_2005_OUR.md) | oxygen uptake rate inhibition (OUR) ← benzethonium chloride (BZeC) · inhibition effect | — | Mihara Y et al., [Relation between oxygen uptake rate an…, Yakugaku zasshi : Journal o… (2005) | [10.1248/yakushi.125.225](https://doi.org/10.1248/yakushi.125.225) |
 
 <details class="legend">
 <summary>Badge legend — what each badge means</summary>
@@ -45,7 +47,7 @@ _not available_
 - **PubMed hits:** 35 matched, 33 returned
 - **screened:** 0  ·  **relevant:** 0
 - **records:** 0  ·  extracted 0  ·  needs_review 0  ·  rejected 0  ·  stale 0
-- **scholar-agent fallback query used:** True
+- **scholar-agent fallback query used:** not captured
 
 ## Full text wanted
 
@@ -62,7 +64,7 @@ _8 paper(s) judged relevant from the abstract, with no full text on disk — pay
 | `Long_2021.pdf` | Long Y et al., Proarrhythmic effects induced by benzet…, Toxicology and applied phar… (2021) | pd | 4 | [10.1016/j.taap.2021.115731](https://doi.org/10.1016/j.taap.2021.115731) | [34592322](https://www.ncbi.nlm.nih.gov/pubmed/34592322) | metadata signals extractable PD data (IC50) |
 | `Mota_2021.pdf` | Mota FAR et al., Evaluation of Ionic Liquids and Ionic L…, Molecules (Basel, Switzerla… (2021) | pd | 4 | [10.3390/molecules26010200](https://doi.org/10.3390/molecules26010200) | [33401768](https://www.ncbi.nlm.nih.gov/pubmed/33401768) | metadata signals extractable PD data (EC50) |
 
-<sub>queue written 2026-09-29T17:59:52.172336+00:00</sub>
+<sub>queue written 2026-10-07T23:02:53.703632+00:00</sub>
 
 ## Screened and excluded
 
@@ -70,38 +72,38 @@ _8 paper(s) judged relevant from the abstract, with no full text on disk — pay
 |---|---|---|---|---|---|
 | popPK | Bell_2019 | irrelevant | 0 | 0 | The paper is a mechanistic study on insect crop physiology where benzethonium is used as a pharmacological agonist, not a pharmacokinetic study reporting disposition parameters for benzethonium. |
 | PD | Bell_2019 | not_relevant | 0 | 0 | The paper reports an IC50 for myosuppressin, not benzethonium, and only provides qualitative descriptions of benzethonium's effects (reduced feeding, increased mortality) without numeric dose-response parameters. |
-| PGx | Brandin_2007 | not_relevant | 0 | 0 | The paper reports a drug-drug interaction (benzethonium inhibiting CYP enzymes affecting warfarin), not a pharmacogenomic effect of a gene variant on benzethonium's PK/PD. |
+| PGx | Brandin_2007 | not_relevant | 2 | 3 | Reports benzethonium chloride inhibition of CYP enzymes and an INR interaction, but no gene variant/genotype effect on a PK/PD parameter. |
 | popPK | Brown_2023 | irrelevant | 0 | 0 | no_text gate: only 143 chars of text extracted (&lt; 400) |
 | popPK | Bundale_2018 | irrelevant | 0 | 0 | no_text gate: only 118 chars of text extracted (&lt; 400) |
 | PD | Bundale_2018 | not_relevant | 0 | 0 | The paper focuses on the molecular and physicochemical screening of rare actinomycetes for biosynthetic genes and does not contain any pharmacodynamic or exposure-response data for benzethonium. |
-| popPK | Camargo_2025 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of linalool, not benzethonium. |
+| popPK | Camargo_2025 | irrelevant | 0 | 0 | The paper concerns linalool pharmacokinetics in rats, not benzethonium; no benzethonium parameters are present. |
 | PD | Camargo_2025 | not_relevant | 0 | 0 | The paper studies linalool, not benzethonium, and does not report specific numeric PD parameters (e.g., Emax, EC50) for the target drug. |
-| popPK | Coates_2001 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of receptor inhibition in Xenopus oocytes and does not report pharmacokinetic parameters for benzethonium. |
+| popPK | Coates_2001 | irrelevant | 0 | 0 | In-vitro receptor pharmacology study; benzethonium is a preservative with IC50 values, no PK disposition parameters. |
 | popPK | Costa_2014 | irrelevant | 0 | 0 | no_text gate: only 145 chars of text extracted (&lt; 400) |
 | popPK | Durieux_1997 | irrelevant | 0 | 0 | no_text gate: only 115 chars of text extracted (&lt; 400) |
 | popPK | Flanjak_2024 | irrelevant | 0 | 0 | no_text gate: only 124 chars of text extracted (&lt; 400) |
 | PD | Flanjak_2024 | not_relevant | 0 | 0 | The paper focuses on the environmental degradation and ecotoxicity of quaternary ammonium compounds, not on pharmacodynamic or exposure-response relationships in a biological system. |
-| popPK | Gapińska_2025 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of SSR504734, not benzethonium. |
+| popPK | Gapińska_2025 | irrelevant | 0 | 0 | The paper concerns SSR504734 in mice, not benzethonium, and no numeric PK parameters appear in the evidence. |
 | PD | Gapińska_2025 | not_relevant | 0 | 0 | The paper investigates SSR504734, not benzethonium, and does not report specific numeric PD parameters for the queried drug. |
-| popPK | Gough_2017 | irrelevant | 0 | 0 | The paper is a pharmacological study on insect neuropeptides and uses benzethonium chloride as a non-peptide agonist/mimetic, not as a subject drug for pharmacokinetic analysis. |
+| popPK | Gough_2017 | irrelevant | 0 | 0 | This is an insect pharmacology/toxicity study of benzethonium chloride as a myosuppressin agonist in Drosophila; no PK disposition parameters (CL, V, ka, half-life, population-PK model) are reported, only EC50 and feeding/mortality effects. |
 | popPK | Huang_2026 | irrelevant | 0 | 0 | The paper is a mechanistic study on enzyme inhibition (5α-reductase) and does not report pharmacokinetic parameters for benzethonium. |
-| popPK | Ianevski_2026 | irrelevant | 0 | 0 | The paper is a multiomics study on T-cell leukemia cell lines and does not involve benzethonium or pharmacokinetic parameter estimation. |
+| popPK | Ianevski_2026 | irrelevant | 0 | 0 | In-vitro drug screening/multiomics study of T-cell leukemia cell lines with no pharmacokinetic parameters for benzethonium. |
 | PD | Ianevski_2026 | not_relevant | 0 | 0 | The paper describes a multiomics profiling resource for T-cell leukemia and lymphoma cell lines and does not report any pharmacodynamic or exposure-response analysis for benzethonium. |
 | popPK | LeBouf_2017 | irrelevant | 0 | 0 | no_text gate: only 141 chars of text extracted (&lt; 400) |
 | PD | LeBouf_2017 | not_relevant | 0 | 0 | The paper describes an analytical method (LC-MS/MS) for sampling quaternary ammonium compounds and does not report any pharmacodynamic or exposure-response data. |
 | popPK | Long_2013 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of HERG channel inhibition and does not report pharmacokinetic parameters for benzethonium. |
 | popPK | Long_2021 | irrelevant | 0 | 0 | The study focuses on proarrhythmic cardiotoxicity and reports IC50 values and ECG changes, but contains no pharmacokinetic disposition parameters (CL, V, t1/2) for benzethonium. |
 | popPK | Mihara_2005 | irrelevant | 0 | 0 | The paper is an environmental toxicology study on activated sludge biosorption and toxicity (IC50), not a pharmacokinetic study, and reports no PK parameters for benzethonium. |
-| popPK | Mingqi_2026 | irrelevant | 0 | 0 | The paper studies calcium dobesilate interference in a diagnostic assay where benzethonium chloride is used as a reagent, not as a subject drug for pharmacokinetic analysis. |
+| popPK | Mingqi_2026 | irrelevant | 0 | 0 | Benzethonium is only an analytical reagent in a urine protein assay interference study, with no PK parameters for benzethonium. |
 | popPK | Mota_2021 | irrelevant | 0 | 0 | no_text gate: only 118 chars of text extracted (&lt; 400) |
 | PD | Mota_2021 | not_relevant | 0 | 0 | The paper evaluates ionic liquids and their inhibition of elastase enzyme activity, with no mention of benzethonium or any pharmacodynamic/exposure-response analysis for the specified drug. |
 | popPK | Nomura_2010 | irrelevant | 0 | 0 | The paper is an in-vitro cytotoxicity and cell cycle study of benzethonium chloride, not a pharmacokinetic study, and reports no disposition parameters. |
 | popPK | Rafsanjany_2015 | irrelevant | 0 | 0 | The paper is an in-vitro study on herbal contaminants and does not report any pharmacokinetic parameters for benzethonium. |
-| PGx | Spalding_1999 | not_relevant | 0 | 0 | The paper evaluates the carcinogenic potential of benzethonium chloride in a transgenic mouse model, not the effect of a gene variant on its pharmacokinetics or pharmacodynamics. |
-| popPK | Tsutsui_1994 | irrelevant | 0 | 0 | The study is an in-vitro cytotoxicity assay, not a pharmacokinetic study, and reports no disposition parameters for benzethonium. |
-| popPK | Wang_2023 | irrelevant | 0 | 0 | The paper studies the pharmacokinetics and pharmacodynamics of GDF15, not benzethonium. |
+| PGx | Spalding_1999 | not_relevant | 2 | 3 | Benzethonium chloride is a test chemical in a carcinogenicity assay; no gene variant effect on its PK/PD parameters is reported. |
+| popPK | Tsutsui_1994 | irrelevant | 0 | 0 | In vitro cytotoxicity study of antiseptics including benzethonium chloride; no pharmacokinetic disposition parameters reported. |
+| popPK | Wang_2023 | irrelevant | 0 | 0 | This is a metabolic/energy-expenditure study of GDF15 in mice with no benzethonium pharmacokinetic parameters reported. |
 | PD | Wang_2023 | not_relevant | 0 | 0 | The paper investigates GDF15, not benzethonium, and does not report any pharmacodynamic parameters for benzethonium. |
-| popPK | de_2020 | irrelevant | 0 | 0 | The paper is a developmental study on preterm rabbits where benzethonium is only mentioned as a reagent for the urinary protein assay, not as a subject drug for pharmacokinetic analysis. |
+| popPK | de_2020 | irrelevant | 0 | 0 | This is a renal development study in rabbits with no benzethonium PK parameters reported. |
 | PD | de_2020 | not_relevant | 0 | 0 | The paper investigates renal development in preterm rabbits and does not involve the drug benzethonium or any pharmacodynamic modeling. |
 
 ---

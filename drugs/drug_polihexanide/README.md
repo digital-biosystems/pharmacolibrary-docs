@@ -17,7 +17,7 @@ Polihexanide is an antiseptic and disinfectant used to treat skin conditions and
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-29 21:04 | 13:19 | 0/0/0 | 1/0/0 | 0/0/0 | 86,798/3,609 | ollama / qwen3.8:27b-mtp-q8_0 | 5 | 1/6 | 5/0 | 0 |
+| 2026-10-07 22:39 | 0:56 | 0/0/0 | 0/1/0 | 0/0/0 | 85,316/2,850 | einfracz / qwen3.8-27b | 6 | 1/7 | 6/0 | 0 |
 
 ## popPK records
 
@@ -27,8 +27,7 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="Animal study (cattle), not measured in people (from keyword rules on the title and abstract — no LLM answer yet).">cattle</span> | [Kamaruzzaman_2017_OD550](drugs/drug_polihexanide/pd_Kamaruzzaman_2017_OD550.md) | biofilm mass ← polyhexamethylene biguanide (PHMB) and enrofloxacin · direct sigmoid Emax (Hill) effect | — | Kamaruzzaman NF et al., Bactericidal and Anti-biofilm Effects o…, Frontiers in microbiology (2017) | [10.3389/fmicb.2017.01518](https://doi.org/10.3389/fmicb.2017.01518) |
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="Animal study (cattle), not measured in people (from keyword rules on the title and abstract — no LLM answer yet).">cattle</span> | [Kamaruzzaman_2017_cfu_survival](drugs/drug_polihexanide/pd_Kamaruzzaman_2017_cfu_survival.md) | intracellular S. aureus survival ← polyhexamethylene biguanide (PHMB) and enrofloxacin · direct sigmoid Emax (Hill) effect | — | Kamaruzzaman NF et al., Bactericidal and Anti-biofilm Effects o…, Frontiers in microbiology (2017) | [10.3389/fmicb.2017.01518](https://doi.org/10.3389/fmicb.2017.01518) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span> | [Frieling_2006_vascular_basic_tension_relaxation_in_aortal_rings_pre_contracted_with_phenylephrine](drugs/drug_polihexanide/pd_Frieling_2006_vascular_basic_tension_relaxation_in_aortal_ri.md) | vascular basic tension / relaxation in aortal rings pre-contracted with phenylephrine ← polihexanide · direct Emax (saturable) effect | — | Frieling H et al., Intraperitoneal instillation of polihex…, International journal of co… (2006) | [10.1007/s00384-005-0012-6](https://doi.org/10.1007/s00384-005-0012-6) |
 
 ## ADME sites
 
@@ -54,67 +53,66 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 ## Full text wanted
 
-_3 paper(s) judged relevant from the abstract, with no full text on disk — paywalled, or the resolver could not reach them. Follow the DOI, then save the PDF into `papers/` as `&lt;save as&gt;.pdf` and re-run the extraction._
+_2 paper(s) judged relevant from the abstract, with no full text on disk — paywalled, or the resolver could not reach them. Follow the DOI, then save the PDF into `papers/` as `&lt;save as&gt;.pdf` and re-run the extraction._
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
 | `Wekerle_2020.pdf` | Wekerle M et al., Anti-Acanthamoeba disinfection: hands,…, International journal of an… (2020) | pd | 5 | [10.1016/j.ijantimicag.2020.106122](https://doi.org/10.1016/j.ijantimicag.2020.106122) | [32739477](https://www.ncbi.nlm.nih.gov/pubmed/32739477) | metadata signals extractable PD data (EC50) |
 | `Finger_2013.pdf` | Finger S et al., Antibacterial properties of cyclodextri…, International journal of ph… (2013) | pd | 4 | [10.1016/j.ijpharm.2013.04.080](https://doi.org/10.1016/j.ijpharm.2013.04.080) | [23665083](https://www.ncbi.nlm.nih.gov/pubmed/23665083) | metadata signals extractable PD data (IC50) |
-| `Hahn_2020.pdf` | Hahn HJ et al., In Vitro Effect of Pitavastatin and Its…, Pathogens (Basel, Switzerla… (2020) | pd | 4 | [10.3390/pathogens9090681](https://doi.org/10.3390/pathogens9090681) | [32825652](https://www.ncbi.nlm.nih.gov/pubmed/32825652) | metadata signals extractable PD data (EC50) |
 
-<sub>queue written 2026-09-29T21:03:16.964676+00:00</sub>
+<sub>queue written 2026-10-07T22:38:59.196665+00:00</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Ansorg_2002 | irrelevant | 0 | 0 | The study is an in-vitro antimicrobial activity test examining the effect of mucin on polihexanide, not a pharmacokinetic study. |
-| popPK | Ansorg_2003 | irrelevant | 0 | 0 | The study is an in-vitro microbiological investigation of antiseptic activity and mucin inhibition, not a pharmacokinetic study reporting disposition parameters. |
+| popPK | Ansorg_2002 | irrelevant | 0 | 0 | The study evaluates the in-vitro antimicrobial activity of polihexanide (in Lavasept) against Staphylococcus aureus in the presence of mucin, reporting no pharmacokinetic parameters. |
+| popPK | Ansorg_2003 | irrelevant | 0 | 0 | The study investigates the in-vitro inhibition of anti-staphylococcal activity by mucin and reports no pharmacokinetic parameters. |
 | popPK | Capper-Parkin_2023 | irrelevant | 0 | 0 | The paper is an in-vitro antimicrobial and cytotoxicity study of biocides (including PHMB) and does not report any pharmacokinetic parameters for polihexanide. |
 | popPK | Chaúque_2026 | irrelevant | 0 | 0 | The paper is a systematic review of anti-amoebic drug repurposing and does not report pharmacokinetic parameters for polihexanide. |
 | PD | Chaúque_2026 | not_relevant | 1 | 0 | The paper is a systematic review of drug repurposing candidates and does not report specific numeric PD parameters (e.g., Emax, EC50) or exposure-response curves for polihexanide. |
-| popPK | Choy_2012 | irrelevant | 0 | 0 | The study is an in-vitro cytotoxicity assay on corneal cells and does not report any pharmacokinetic parameters for polihexanide. |
-| popPK | Christen_2017 | irrelevant | 0 | 0 | The study focuses on cytotoxicity and molecular effects of disinfectants (including PHMB, not polihexanide) in vitro and in zebrafish, with no pharmacokinetic parameters reported. |
-| popPK | Coleman_2023 | irrelevant | 0 | 0 | The paper is a microbiological study on antibacterial and antibiofilm activity, not a pharmacokinetic study, and does not report any PK parameters for polihexanide. |
+| popPK | Choy_2012 | irrelevant | 0 | 0 | The study is an in-vitro cytotoxicity assay of contact lens solutions containing polihexanide (polyhexanide), not a pharmacokinetic study reporting disposition parameters like clearance or volume. |
+| popPK | Christen_2017 | irrelevant | 0 | 0 | The paper studies the toxicity and gene expression effects of disinfectants (including PHMB, not polihexanide) in zebrafish and cells, not the pharmacokinetics of polihexanide. |
+| popPK | Coleman_2023 | irrelevant | 0 | 0 | The study investigates the antimicrobial and antibiofilm activity of non-antibiotic compounds (including PHMB, not polihexanide) in vitro, and does not report any pharmacokinetic parameters. |
 | popPK | Creppy_2014 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of epigenetic properties and cytotoxicity, containing no pharmacokinetic parameters. |
 | popPK | Finger_2012 | irrelevant | 0 | 0 | The study is an in-vitro antimicrobial efficacy assessment (IC50) and does not report pharmacokinetic parameters for polihexanide. |
 | popPK | Finger_2013 | irrelevant | 0 | 0 | The study is an in-vitro antibacterial efficacy assessment (IC50) and does not report pharmacokinetic parameters for polihexanide. |
-| popPK | Frieling_2006 | irrelevant | 0 | 0 | The study investigates the hemodynamic and vascular effects (hypotension, vasodilation) of polihexanide, not its pharmacokinetic disposition parameters. |
-| popPK | Fuhr_2022 | irrelevant | 0 | 0 | The study focuses on terbinafine (the subject drug) and uses polyhexamethylene biguanide (PHMB) only as an excipient, not as the subject drug for PK parameter extraction. |
-| popPK | Gentile_2012 | irrelevant | 0 | 0 | The paper is a clinical trial evaluating the efficacy of PHMB for HPV regression and contains no pharmacokinetic data or disposition parameters. |
-| popPK | Hahn_2020 | irrelevant | 0 | 0 | no_text gate: only 87 chars of text extracted (&lt; 400) |
+| popPK | Frieling_2006 | irrelevant | 0 | 0 | The study investigates the hemodynamic and vascular effects of polihexanide (hypotension, vasodilation, EC50) but does not report pharmacokinetic disposition parameters such as clearance, volume, or half-life. |
+| popPK | Fuhr_2022 | irrelevant | 0 | 0 | The study investigates terbinafine, not polihexanide (polyhexamethylene biguanide), and reports no systemic exposure. |
+| popPK | Gentile_2012 | irrelevant | 0 | 0 | This paper is a clinical trial evaluating the efficacy of a polyhexamethylene biguanide (PHMB) solution for HPV infection regression, not a pharmacokinetic study of polihexanide, and reports no PK parameters. |
+| popPK | Hahn_2020 | irrelevant | 0 | 0 | The study is an in vitro investigation of the antimicrobial efficacy of pitavastatin and isavuconazole against Acanthamoeba, and does not report pharmacokinetic parameters for polihexanide. |
 | PD | Hahn_2020 | not_relevant | 0 | 0 | The paper studies Pitavastatin and Isavuconazole, not polihexanide. |
-| popPK | Jung_2020 | irrelevant | 0 | 0 | The paper is a systematic review and network meta-analysis of efficacy and safety for genital warts, containing no pharmacokinetic parameters for polihexanide. |
+| popPK | Jung_2020 | irrelevant | 0 | 0 | The paper is a systematic review and network meta-analysis of the efficacy and safety of topical treatments for genital warts, containing no pharmacokinetic data or disposition parameters for polihexanide. |
 | popPK | Kamaruzzaman_2017 | irrelevant | 0 | 0 | The paper is an in-vitro antimicrobial study focusing on MICs and bactericidal activity, not a pharmacokinetic study reporting disposition parameters for polihexanide. |
-| popPK | Kamaruzzaman_2017_2 | irrelevant | 0 | 0 | The paper is a review discussing intracellular bacterial infections and mentions polyhexamethylene biguanide (a different drug) as an example, but contains no pharmacokinetic data for polihexanide. |
-| popPK | Knafl_2017 | irrelevant | 0 | 0 | The study is an in-vitro release kinetics experiment measuring inhibition zones, not a pharmacokinetic study reporting quantitative disposition parameters (CL, V, etc.) for polihexanide. |
-| popPK | Koban_2012 | irrelevant | 0 | 0 | The paper is a clinical review of efficacy for genital infections and contains no pharmacokinetic data or disposition parameters for polihexanide. |
-| PGx | Landelle_2016 | not_relevant | 0 | 0 | The paper reports a clinical trial on the efficacy of polyhexanide for MRSA decolonization and does not investigate any pharmacogenomic effects on PK or PD parameters. |
-| PGx | Latifi_2023 | not_relevant | 0 | 0 | The paper reports in vitro antimicrobial efficacy and cytotoxicity of PHMB, not pharmacogenomic effects on PK or PD parameters. |
-| popPK | Li_2026 | irrelevant | 0 | 0 | The paper focuses on the formulation and antifungal efficacy of a nanofungicide containing PHMB, not on the pharmacokinetic disposition parameters of polihexanide. |
-| popPK | López-Rojas_2017 | irrelevant | 0 | 0 | The study is an in-vitro microbiological assessment of antimicrobial activity (MIC/MBC) and does not report any pharmacokinetic parameters for polihexanide. |
+| popPK | Kamaruzzaman_2017_2 | irrelevant | 0 | 0 | The paper is a review discussing challenges in treating intracellular infections and mentions PHMB as a cationic polymer with antibacterial activity, but it does not report pharmacokinetic parameters for polihexanide. |
+| popPK | Knafl_2017 | irrelevant | 0 | 0 | The study is an in-vitro release kinetics evaluation of polyhexanide from a platelet-rich fibrin matrix, not a pharmacokinetic study measuring disposition parameters (CL, V, half-life) in a biological system. |
+| popPK | Koban_2012 | irrelevant | 0 | 0 | The paper is a systematic review of clinical trials evaluating the therapeutic efficacy of polihexanide for genital infections, not a pharmacokinetic study reporting disposition parameters. |
+| PGx | Landelle_2016 | not_relevant | 0 | 0 | The paper is a clinical trial evaluating the efficacy of polyhexanide for MRSA decolonization and does not investigate pharmacogenomic effects or genotype-based variations in PK/PD parameters. |
+| PGx | Latifi_2023 | not_relevant | 0 | 0 | The study investigates in vitro antimicrobial efficacy and cytotoxicity against Acanthamoeba, containing no information on pharmacogenomic variants or pharmacokinetic/pharmacodynamic parameters for polihexanide (PHMB). |
+| popPK | Li_2026 | irrelevant | 0 | 0 | The study is a nanotechnology and agricultural pest control paper investigating fungicidal efficacy and safety, not a pharmacokinetic study of polihexanide (identified here as polyhexamethylene biguanide). |
+| popPK | López-Rojas_2017 | irrelevant | 0 | 0 | The study assesses in vitro antimicrobial activity (MIC/MBC) of polyhexanide, which is a biocidal agent, not a pharmacokinetic study of a drug. |
 | popPK | Martínez-Orellana_2020 | irrelevant | 0 | 0 | The study evaluates the antiparasitic efficacy and immunomodulatory effects of PHMB (a different drug) against Leishmania, not the pharmacokinetics of polihexanide. |
 | popPK | Müller_2006 | irrelevant | 0 | 0 | The study is an in-vitro cytotoxicity comparison of antiseptics (including PHMB) and does not report any pharmacokinetic parameters for polihexanide. |
 | PD | Müller_2006 | not_relevant | 0 | 0 | The paper investigates povidone-iodine and other antiseptics, but does not report any pharmacodynamic or exposure-response data for polihexanide. |
-| popPK | Nolff_2015 | irrelevant | 0 | 0 | The paper is a clinical case report on wound therapy where polihexanide is used as a topical antiseptic, and it contains no pharmacokinetic data or disposition parameters. |
+| popPK | Nolff_2015 | irrelevant | 0 | 0 | This is a veterinary case report on wound therapy where polihexanide is used as a topical antiseptic, containing no pharmacokinetic data or disposition parameters. |
 | popPK | Passic_2010 | irrelevant | 0 | 0 | The paper focuses on structure-activity relationships and antiviral activity of polybiguanides, not the pharmacokinetics of polihexanide. |
 | PD | Passic_2010 | not_relevant | 3 | 2 | The paper reports structure-activity relationships and single-point IC50/CC50 values for various biguanide analogs, but does not provide a concentration-effect curve, dose-response model, or numeric PD parameters (like Emax or slope) for polihexanide (PHMB) specifically. |
 | popPK | Radu_2016 | irrelevant | 0 | 0 | The paper is a review on cyclodextrins in medical textiles and does not report pharmacokinetic parameters for polihexanide. |
 | PD | Radu_2016 | not_relevant | 0 | 0 | The paper is a review on cyclodextrins in medical textiles and does not report any pharmacodynamic or exposure-response data for polihexanide. |
-| popPK | Riordan_2009 | irrelevant | 0 | 0 | The paper discusses polyhexamethylene biguanide (PHMB) as a ligand for impurity clearance in bioprocessing, not polihexanide pharmacokinetics. |
-| popPK | Riordan_2009_2 | irrelevant | 0 | 0 | The paper discusses membrane adsorbers for viral clearance in bioprocessing and does not involve polihexanide pharmacokinetics. |
-| popPK | Wahyuningsih_2026 | irrelevant | 0 | 0 | The paper is a review on nanocarrier delivery of phytochemicals for diabetic wound healing and does not mention polihexanide or report any pharmacokinetic parameters for it. |
+| popPK | Riordan_2009 | irrelevant | 0 | 0 | The study examines polihexanide (PHMB) as a ligand for membrane adsorbers in industrial protein purification, not as a drug for pharmacokinetic evaluation in biological systems. |
+| popPK | Riordan_2009_2 | irrelevant | 0 | 0 | The paper focuses on viral clearance membrane adsorbers and does not contain pharmacokinetic data for polihexanide (or polyhexamethylene biguanide, a distinct compound). |
+| popPK | Wahyuningsih_2026 | irrelevant | 0 | 0 | The paper is a review of nanocarriers for phytochemicals in diabetic wound healing and does not mention polihexanide or report its pharmacokinetic parameters. |
 | PD | Wahyuningsih_2026 | not_relevant | 0 | 0 | The paper is a review on nanocarrier delivery of phytochemicals for diabetic wound healing and does not mention polihexanide or report any pharmacodynamic or exposure-response data. |
 | popPK | Wekerle_2020 | irrelevant | 0 | 0 | no_text gate: only 58 chars of text extracted (&lt; 400) |
 | PD | Wekerle_2020 | not_relevant | 0 | 0 | The provided text is only a title and does not contain any data, analysis, or numeric parameters regarding the pharmacodynamics or exposure-response of polihexanide. |
-| popPK | Wesołowski_2026 | irrelevant | 0 | 0 | The paper is a review on oxidative stress in Acanthamoeba keratitis and does not contain pharmacokinetic data for polihexanide. |
+| popPK | Wesołowski_2026 | irrelevant | 0 | 0 | The paper is a review of oxidative stress mechanisms in Acanthamoeba keratitis and does not contain any pharmacokinetic data for polihexanide. |
 | PD | Wesołowski_2026 | not_relevant | 0 | 0 | The paper is a review on oxidative stress in Acanthamoeba keratitis and does not report any pharmacodynamic or exposure-response data for polihexanide. |
-| popPK | Wiegand_2012 | irrelevant | 0 | 0 | The study is an in-vitro microbiological analysis of bacterial adaptation to antiseptics and does not report any pharmacokinetic parameters for polihexanide. |
+| popPK | Wiegand_2012 | irrelevant | 0 | 0 | The study is an in-vitro microbiology analysis of bacterial adaptation to antiseptics and reports IC50 values, not pharmacokinetic parameters for polihexanide. |
 | PD | Wiegand_2012 | not_relevant | 3 | 2 | The paper reports IC50 values for polihexanide to assess bacterial adaptation over time, but it does not provide a full dose-response curve, Emax, or other comprehensive PD parameters required for a pharmacodynamic model. |
 | popPK | Yamamoto_2019 | irrelevant | 0 | 0 | The study is an in-vitro cytotoxicity and skin irritation assessment, not a pharmacokinetic study, and polihexanide (PHMB) is only a comparator agent. |
-| popPK | Young_2009 | irrelevant | 0 | 0 | The paper is a clinical evaluation of contact lens preservatives (PHMB) and does not report any pharmacokinetic parameters for polihexanide. |
-| popPK | Zheng_2021 | irrelevant | 0 | 0 | The study investigates the antimicrobial and anti-biofilm efficacy of PHMB in vitro, not its pharmacokinetic disposition parameters. |
-| popPK | Zhou_2024 | irrelevant | 0 | 0 | The paper is a clinical efficacy study on wound healing and bacterial clearance, reporting no pharmacokinetic parameters (CL, V, ka, etc.) for polihexanide. |
+| popPK | Young_2009 | irrelevant | 0 | 0 | The paper is a clinical evaluation of ocular comfort and safety in contact lens users and contains no pharmacokinetic data for polihexanide. |
+| popPK | Zheng_2021 | irrelevant | 0 | 0 | The study investigates the antimicrobial and anti-biofilm efficacy of polihexanide (PHMB) in vitro, reporting no pharmacokinetic or pharmacodynamic parameters. |
+| popPK | Zhou_2024 | irrelevant | 0 | 0 | The paper is a clinical efficacy study of polyhexanide for wound infections and does not report any pharmacokinetic parameters such as clearance, volume, or half-life. |
 
 ---
 <sub>Generated by `docs.py` (scholarv2)</sub>

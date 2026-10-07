@@ -4,7 +4,7 @@
 
 # povidone-iodine — `PovidoneIodine_Eloot2010_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.25). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.25). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -24,28 +24,27 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 
 <sub>reviewed by rule template (no LLM)</sub>
 
-> **Dose compound ≠ measured compound:** dosed `povidone_iodine`, measured `iodine`.
+> ⚠️ **STALE** — review status `needs_review` (reviewed 2026-10-05 09:30:41.601326+00:00) predates the upstream re-run (2026-10-07 22:40:32.445356+00:00). Current validate status: `rejected`.
 
 ## Citation
 Eloot S et al., How to remove accumulated iodine in bur…, Nephrology, dialysis, trans… (2010)
   ·  DOI: [10.1093/ndt/gfp647](https://doi.org/10.1093/ndt/gfp647)
 
 ## Model component
-<dbs-pgx drug="povidone-iodine" model-id="PovidoneIodine_Eloot2010_reference" status="needs_review" stale="false" population="burn-injured patients" measured-compound="iodine" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<dbs-pgx drug="povidone-iodine" model-id="PovidoneIodine_Eloot2010_reference" status="rejected" stale="true" population="burn-injured patients with elevated iodine levels" measured-compound="iodine" parameterization="mechanistic" topology="1C"></dbs-pgx>
 
-**Model structure:** 2-compartment; no model was built for this record.  
-**Parameters:** 3 extracted.
+**Model structure:** 1-compartment; no model was built for this record.  
+**Parameters:** 2 extracted.
 
 **Parameterization:** mechanistic.
 
 ## Parameters
-> ⚠️ This record is not accepted (current status `needs_review`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
+> ⚠️ This record is not accepted (current status `rejected`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| V(1) | `Q63` · V1 | 19.4 | L | 0.0194 | [l] | not captured | exact (1.0) | Eloot_2010:abstract | — | not captured |
-| V(2) | `Q64` · V2 | 38.0 | L | 0.038 | [l] | not captured | exact (1.0) | Eloot_2010:abstract | — | not captured |
-| K(12) | `Q30` · Q | 55 | mL/min | 9.166666666666665e-07 | [ml] / [min] | not captured | exact (1.0) | Eloot_2010:abstract | — | not captured |
+| V(1) | `Q61` · V | 19.4 | L | 0.0194 | [l] | not captured | exact (1.0) | Eloot_2010:abstract | — | not captured |
+| K(12) | `Q47` · kel | 55 | mL/min | not captured | [ml] / [min] | not captured | exact (1.0) | Eloot_2010:abstract | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -55,9 +54,11 @@ Eloot S et al., How to remove accumulated iodine in bur…, Nephrology, dialysis
 ## Departures & gaps
 
 **Interpretation flags:**
+- dropped duplicate Q61 ('V(2)', value 38.0) — already have one for this compound
+- unit_dimension_mismatch: 'K(12)' → Q47 (unit '[length] ** 3 / [time]' vs ontology '1 / [time]') — route to review
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=iodine
-- template fit: PK_3M_9C — formed from central; parent 2, metabolites [0]
-- row roles (LLM): model_class=compartmental; 3/3 row label(s) assigned, 3 linked by role; re-tagged iodine→parent ×3
+- held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
+- status held at route_to_review — not promoted
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
 
 **Extraction notes:**
@@ -95,15 +96,13 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 3 | not captured | not captured | not captured |
+| C0_has_structural_params | pass | not captured | 2 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
-| C0c_disposition_complete | fail | not captured | not captured | not captured | not captured | not captured |
-| C5_dimension_Q30 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Eloot_2010:abstract'] |
-| C5_dimension_Q63 | pass | [length] ** 3 | not captured | not captured | not captured | ['Eloot_2010:abstract'] |
-| C5_dimension_Q64 | pass | [length] ** 3 | not captured | not captured | not captured | ['Eloot_2010:abstract'] |
+| C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
+| C5_dimension_Q47 | fail | [length] ** 3 / [time] | mL/min | not captured | not captured | ['Eloot_2010:abstract'] |
+| C5_dimension_Q61 | pass | [length] ** 3 | not captured | not captured | not captured | ['Eloot_2010:abstract'] |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
-| C9_phys_window_Q63 | pass | volume within physiological range | 19.4 L | not captured | not captured | ['Eloot_2010:abstract'] |
-| C9_phys_window_Q64 | pass | volume within physiological range | 38 L | not captured | not captured | ['Eloot_2010:abstract'] |
+| C9_phys_window_Q61 | pass | volume within physiological range | 19.4 L | not captured | not captured | ['Eloot_2010:abstract'] |
 
 <details class="legend">
 <summary>Check legend — what each column means</summary>
@@ -117,19 +116,9 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
-## Downloadable models
+## Models
 
-<div class="pk-models-grid"><div class="pk-models-table">
-<table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-</tbody></table>
-<p>No bundles have been generated for this record yet. When the engineer emits them they appear here automatically — this page reports what is on disk and generates nothing itself.</p>
-</div></div>
+<p>No downloads: this record is <b>rejected</b>, so it is not published as a model. Any archives generated for it before the verdict have been removed — a download outlives the page that explains it.</p>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
@@ -138,4 +127,4 @@ _No web simulator for this record: its structure has no shared WebAssembly templ
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-09-29 21:21 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 22:40 UTC</sub>
