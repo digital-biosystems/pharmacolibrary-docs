@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;B01A&quot;,&quot;href&quot;:&quot;atc/B01A.md&quot;},{&quot;label&quot;:&quot;rivaroxaban&quot;,&quot;href&quot;:&quot;drugs/drug_rivaroxaban/&quot;},{&quot;label&quot;:&quot;Alqahtani_2023 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Rivaroxaban_Jia2026_reference&quot;,&quot;label&quot;:&quot;Jia_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_rivaroxaban/Rivaroxaban_Jia2026_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Rivaroxaban_Liu2022_sequential_modeling&quot;,&quot;label&quot;:&quot;Liu_2022_sequential_modeling&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_rivaroxaban/Rivaroxaban_Liu2022_sequential_modeling.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Rivaroxaban_Liu2022_simultaneous_modeling&quot;,&quot;label&quot;:&quot;Liu_2022_simultaneous_modeling&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_rivaroxaban/Rivaroxaban_Liu2022_simultaneous_modeling.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Rivaroxaban_Ren2026_reference&quot;,&quot;label&quot;:&quot;Ren_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_rivaroxaban/Rivaroxaban_Ren2026_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Rivaroxaban_Esmaeili2022_reference&quot;,&quot;label&quot;:&quot;Esmaeili_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_rivaroxaban/Rivaroxaban_Esmaeili2022_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Rivaroxaban_Esmaeili2022_reference&quot;,&quot;label&quot;:&quot;Esmaeili_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_rivaroxaban/Rivaroxaban_Esmaeili2022_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Rivaroxaban_Jia2026_reference&quot;,&quot;label&quot;:&quot;Jia_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_rivaroxaban/Rivaroxaban_Jia2026_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Rivaroxaban_Liu2022_sequential_modeling&quot;,&quot;label&quot;:&quot;Liu_2022_sequential_modeling&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_rivaroxaban/Rivaroxaban_Liu2022_sequential_modeling.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Rivaroxaban_Liu2022_simultaneous_modeling&quot;,&quot;label&quot;:&quot;Liu_2022_simultaneous_modeling&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_rivaroxaban/Rivaroxaban_Liu2022_simultaneous_modeling.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Rivaroxaban_Ren2026_caucasian_dvt&quot;,&quot;label&quot;:&quot;Ren_2026_caucasian_dvt&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_rivaroxaban/Rivaroxaban_Ren2026_caucasian_dvt.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Rivaroxaban_Ren2026_caucasian_nvaf&quot;,&quot;label&quot;:&quot;Ren_2026_caucasian_nvaf&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_rivaroxaban/Rivaroxaban_Ren2026_caucasian_nvaf.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Rivaroxaban_Ren2026_caucasian_vte&quot;,&quot;label&quot;:&quot;Ren_2026_caucasian_vte&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_rivaroxaban/Rivaroxaban_Ren2026_caucasian_vte.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Rivaroxaban_Ren2026_chinese_dvt&quot;,&quot;label&quot;:&quot;Ren_2026_chinese_dvt&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_rivaroxaban/Rivaroxaban_Ren2026_chinese_dvt.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Rivaroxaban_Ren2026_chinese_nvaf&quot;,&quot;label&quot;:&quot;Ren_2026_chinese_nvaf&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_rivaroxaban/Rivaroxaban_Ren2026_chinese_nvaf.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Rivaroxaban_Ren2026_chinese_pe&quot;,&quot;label&quot;:&quot;Ren_2026_chinese_pe&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_rivaroxaban/Rivaroxaban_Ren2026_chinese_pe.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Rivaroxaban_Ren2026_japanese_nvaf&quot;,&quot;label&quot;:&quot;Ren_2026_japanese_nvaf&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_rivaroxaban/Rivaroxaban_Ren2026_japanese_nvaf.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # rivaroxaban — `Rivaroxaban_Alqahtani2023_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -25,12 +25,14 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 
 <sub>reviewed by rule template (no LLM)</sub>
 
+> ⚠️ **STALE** — review status `rejected` (reviewed 2026-10-05 16:15:03.017302+00:00) predates the upstream re-run (2026-10-07 18:15:30.972372+00:00). Current validate status: `rejected`.
+
 ## Citation
 Alqahtani S et al., Population Pharmacokinetics of Rivaroxa…, Journal of clinical pharmac… (2023)
   ·  DOI: [10.1002/jcph.2255](https://doi.org/10.1002/jcph.2255)
 
 ## Model component
-<dbs-pgx drug="rivaroxaban" model-id="Rivaroxaban_Alqahtani2023_reference" status="rejected" stale="false" population="real-world patients" measured-compound="rivaroxaban" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<dbs-pgx drug="rivaroxaban" model-id="Rivaroxaban_Alqahtani2023_reference" status="rejected" stale="true" population="real-world patients" measured-compound="rivaroxaban" parameterization="mechanistic" topology="1C"></dbs-pgx>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.
@@ -48,15 +50,12 @@ _No resolved parameters._
 - table section iiv: 'absorption rate constant' routed out of structural estimates ('The interindividual variability for absorption rate constant, CL/F, and volume of distribution was 14%, 24%, and 29.3%, respectively.')
 - table section iiv: 'apparent clearance (CL/F)' routed out of structural estimates ('The interindividual variability for absorption rate constant, CL/F, and volume of distribution was 14%, 24%, and 29.3%, respectively.')
 - table section iiv: 'apparent volume of distribution' routed out of structural estimates ('The interindividual variability for absorption rate constant, CL/F, and volume of distribution was 14%, 24%, and 29.3%, respectively.')
-- table section iiv: 'interindividual variability for absorption rate constant' routed out of structural estimates ('The interindividual variability for absorption rate constant, CL/F, and volume of distribution was 14%, 24%, and 29.3%, respectively.')
-- table section iiv: 'interindividual variability for CL/F' routed out of structural estimates ('The interindividual variability for absorption rate constant, CL/F, and volume of distribution was 14%, 24%, and 29.3%, respectively.')
-- table section iiv: 'interindividual variability for volume of distribution' routed out of structural estimates ('The interindividual variability for absorption rate constant, CL/F, and volume of distribution was 14%, 24%, and 29.3%, respectively.')
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=rivaroxaban
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
 - review gap-fill skipped: this record carries no value of its own, and a model assembled entirely from other papers is not this paper's model
 
 **Extraction notes:**
-- no GROBID TEI available — transcribed from abstract in Alqahtani_2023_metadata.yaml (6 record(s)); values are summary statistics, not a fitted model
+- no GROBID TEI available — transcribed from abstract in Alqahtani_2023_metadata.yaml (3 record(s)); values are summary statistics, not a fitted model
 
 ## Validation
 
@@ -113,4 +112,4 @@ _No web simulator for this record: its structure has no shared WebAssembly templ
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-05 15:44 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 18:15 UTC</sub>

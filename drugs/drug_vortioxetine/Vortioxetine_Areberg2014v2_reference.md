@@ -1,11 +1,10 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N06A&quot;,&quot;href&quot;:&quot;atc/N06A.md&quot;},{&quot;label&quot;:&quot;vortioxetine&quot;,&quot;href&quot;:&quot;drugs/drug_vortioxetine/&quot;},{&quot;label&quot;:&quot;Areberg_2014_2 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Vortioxetine_Areberg2014v2_reference&quot;,&quot;label&quot;:&quot;Areberg_2014_2_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_vortioxetine/Vortioxetine_Areberg2014v2_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # vortioxetine — `Vortioxetine_Areberg2014v2_reference`
 
-> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.429). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.429). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -13,7 +12,7 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
-**Model:** A simulatable model was generated — see the **Models** and **Simulation** tabs.
+**Model:** No model was generated from this record.
 
 ### Reviewer guidance
 
@@ -25,26 +24,29 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on how the
 
 <sub>reviewed by glm-5.3-flash</sub>
 
-> ⚠️ **STALE** — review status `needs_review` (reviewed 2026-10-05 09:32:47.835286+00:00) predates the upstream re-run (2026-10-07 00:19:39.042801+00:00). Current validate status: `extracted`.
+> ⚠️ **STALE** — review status `needs_review` (reviewed 2026-10-05 09:32:47.835286+00:00) predates the upstream re-run (2026-10-07 19:05:06.820378+00:00). Current validate status: `rejected`.
 
 ## Citation
 Areberg J et al., Population pharmacokinetic meta-analysi…, Basic & clinical pharmacolo… (2014)
   ·  DOI: [10.1111/bcpt.12256](https://doi.org/10.1111/bcpt.12256)
 
 ## Model component
-<dbs-pgx drug="vortioxetine" model-id="Vortioxetine_Areberg2014v2_reference" status="extracted" stale="true" population="healthy adults" measured-compound="vortioxetine" parameterization="apparent" topology="1C"></dbs-pgx>
+<dbs-pgx drug="vortioxetine" model-id="Vortioxetine_Areberg2014v2_reference" status="rejected" stale="true" population="healthy individuals" measured-compound="vortioxetine" parameterization="mechanistic" topology="1C"></dbs-pgx>
 
-**Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
-**Parameters:** 3 extracted.
+**Model structure:** 1-compartment; no model was built for this record.  
+**Parameters:** 2 extracted, plus 2 covariate effects.
 
-**Parameterization:** CL/F — apparent, F unknown (apparent — bioavailability not identifiable).
+**Parameterization:** mechanistic.
 
 ## Parameters
+> ⚠️ This record is not accepted (current status `rejected`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
+
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| oral clearance | `Q27` · CL/F | 32.7 | L/hr | 9.083333333333335e-06 | [l] / [h] | not captured | exact (1.0) | Areberg_2014_2:abstract | — | not captured |
-| central volume of distribution | `Q61` · V | 1970 | L | 1.97 | [l] | not captured | boundary_compartment (0.9) | Areberg_2014_2:abstract | — | not captured |
-| elimination half-life | `Q57` · t1/2z | 65.8 | hr | 236880.0 | [h] | not captured | llm (0.6) | Areberg_2014_2:abstract | — | not captured |
+| Estimate (1/hr) | `Q49` · kabs | 0.142 | ka | not captured | [ka] | not captured | llm (0.6) | tbl4:row2:col1 | — | not captured |
+| Estimate (L/hr) | `Q30` · Q | 22.5 | L/hr | 6.2499999999999995e-06 | [l] / [h] | not captured | llm (0.6) | tbl4:row26:col1 | — | not captured |
+| theta_q82_height | `Q900` · theta_q82_height | 17.4 | not captured | not captured | not captured | not captured | not captured (not captured) | tbl4:row11:col1 | — | not captured |
+| theta_q27_age | `Q900` · theta_q27_age | 0.277 | not captured | not captured | not captured | not captured | not captured (not captured) | tbl4:row19:col1 | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -53,22 +55,25 @@ Areberg J et al., Population pharmacokinetic meta-analysi…, Basic & clinical p
 
 ## Departures & gaps
 
-**Deviations:**
-- `defaulted_parameters`: ['ka', 'Tlag']
-- `apparent_assumption`: F=1, Fm=1, no molar correction (parameterization=apparent)
-- `invented_absorption`: ka defaulted — not reported in source
-- `input_model`: first-order depot input — apparent (/F) parameterization ⇒ extravascular dosing
-
 **Interpretation flags:**
-- covariate cyp2d6 for CL/F from footnote/prose kept as documentation only (['Areberg_2014_2:abstract'])
-- apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=vortioxetine
-- 1C volume normalization: Q63→Q61 (single-compartment model has no central/peripheral split; 'central volume of distribution' is the general volume)
-- abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
+- table section residual_error: 'Estimate' routed out of structural estimates ('Residual error')
+- table section residual_error: 'Estimate3 (%)' routed out of structural estimates ('Residual error')
+- table section residual_error: 'RSE1 (%)' routed out of structural estimates ('Residual error')
+- unit_dimension_mismatch: 'Estimate (1/hr)' → Q49 (unit '[time]' vs ontology '1 / [time]') — route to review
+- dropped unlinked row (NIL): 'RSE1 (%)' — extend the ontology if this is a real PK parameter (source ['tbl4:row3:col1', 'tbl4:row5:col1', 'tbl4:row8:col1', 'tbl4:row10:col1', 'tbl4:row12:col1', 'tbl4:row17:col1', 'tbl4:row20:col1', 'tbl4:row23:col1', 'tbl4:row27:col1', 'tbl4:row31:col1'])
+- dropped unlinked row (NIL): 'Estimate (hr)' — extend the ontology if this is a real PK parameter (source ['tbl4:row30:col1'])
+- covariate effect for Q82 has no base parameter row (kept as unattached equation-variable)
+- covariate effect for Q27 has no base parameter row (kept as unattached equation-variable)
+- apparent-by-design (ADVISORY, codes unchanged): extravascular dosing with no identifiable F, so these reported disposition parameters are likely apparent unless the model puts first-pass in its structure — Q30 (Estimate (L/hr))
+- apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=vortioxetine
+- held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
+- structure disagreement: deterministic 1C vs LLM 2C — review compartment count
+- status held at route_to_review — not promoted
 - skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
-- skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
+- skipped review gap-fill of TLAG: primary's parameterization (rate-constant / ka-only) does not use it
 
 **Extraction notes:**
-- no GROBID TEI available — transcribed from abstract in Areberg_2014_2_metadata.yaml (4 record(s)); values are summary statistics, not a fitted model
+- LLM selected parameter table(s) 4
 
 ## Validation
 
@@ -100,16 +105,11 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 3 | not captured | not captured | not captured |
-| C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
-| C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
-| C5_dimension_Q27 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Areberg_2014_2:abstract'] |
-| C5_dimension_Q57 | pass | [time] | not captured | not captured | not captured | ['Areberg_2014_2:abstract'] |
-| C5_dimension_Q61 | pass | [length] ** 3 | not captured | not captured | not captured | ['Areberg_2014_2:abstract'] |
-| C7_apparent_coherence | pass | not captured | not captured | not captured | not captured | not captured |
+| C0_has_structural_params | pass | not captured | 2 | not captured | not captured | not captured |
+| C0b_disposition_core | fail | not captured | not captured | not captured | not captured | not captured |
+| C5_dimension_Q30 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['tbl4:row26:col1'] |
+| C5_dimension_Q49 | fail | [time] | ka | not captured | not captured | ['tbl4:row2:col1'] |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
-| C9_phys_window_Q27 | pass | clearance within physiological range | 32.7 L/h | not captured | not captured | ['Areberg_2014_2:abstract'] |
-| C9_phys_window_Q61 | pass | volume within physiological range | 1.97e+03 L | not captured | not captured | ['Areberg_2014_2:abstract'] |
 
 **Reviewer per-scenario checks:**
 
@@ -138,30 +138,15 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
-## Downloadable models
+## Models
 
-<div class="pk-models-grid"><div class="pk-models-table">
-<table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_vortioxetine/Vortioxetine_Areberg2014v2_reference/Vortioxetine_Areberg2014v2_reference_modelica.zip" download>Vortioxetine_Areberg2014v2_reference_modelica.zip</a> <span class="pk-size">(4.7 kB)</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_vortioxetine/Vortioxetine_Areberg2014v2_reference/Vortioxetine_Areberg2014v2_reference_fmi.zip" download>Vortioxetine_Areberg2014v2_reference_fmi.zip</a> <span class="pk-size">(4.4 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_vortioxetine/Vortioxetine_Areberg2014v2_reference/Vortioxetine_Areberg2014v2_reference_matlab.zip" download>Vortioxetine_Areberg2014v2_reference_matlab.zip</a> <span class="pk-size">(3.5 kB)</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_vortioxetine/Vortioxetine_Areberg2014v2_reference/Vortioxetine_Areberg2014v2_reference_matlab_simbio.zip" download>Vortioxetine_Areberg2014v2_reference_matlab_simbio.zip</a> <span class="pk-size">(2.9 kB)</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_vortioxetine/Vortioxetine_Areberg2014v2_reference/Vortioxetine_Areberg2014v2_reference_sbml.zip" download>Vortioxetine_Areberg2014v2_reference_sbml.zip</a> <span class="pk-size">(2.7 kB)</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_vortioxetine/Vortioxetine_Areberg2014v2_reference/Vortioxetine_Areberg2014v2_reference_cellml.zip" download>Vortioxetine_Areberg2014v2_reference_cellml.zip</a> <span class="pk-size">(3.2 kB)</span></td></tr>
-</tbody></table>
-<p>Each archive holds the model source, a script that simulates it against the appropriate library, and a README describing both and how to run them.</p>
-<p><b>FMI is two downloads.</b> The archive holds this record's parameters and its driver; the simulator itself is <code>PK_1C_enteral.fmu</code>, one compiled template shared by every model of this structure. Take the FMU once, keep it beside the script (or pass <code>--fmu PATH</code>). Running it reproduces the model-specific FMU exactly.</p>
-</div><figure class="pk-models-diagram"><img src="drugs/drug_vortioxetine/Vortioxetine_Areberg2014v2_reference/Vortioxetine_Areberg2014v2_reference.svg" alt="Vortioxetine_Areberg2014v2_reference diagram"><figcaption>Model diagram (Modelica) using Pharmacolibrary v26.09 components, rendered by OpenModelica 1.26.7.</figcaption></figure></div>
+<p>No downloads: this record is <b>rejected</b>, so it is not published as a model. Any archives generated for it before the verdict have been removed — a download outlives the page that explains it.</p>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-**Administration: oral** — 10 mg, single dose, first-order absorption (ka 0.5 /h, F 1). _The paper's dose was not captured; the default is the WHO ATC DDD 10 mg oral (N06AX26) (defined daily dose)._
-
-<dbs-fmusim paramsurl="drugs/drug_vortioxetine/Vortioxetine_Areberg2014v2_reference/Vortioxetine_Areberg2014v2_reference_params.json" metaurl="assets/fmu/PK_1C_enteral.vr.json" wasmurl="assets/fmu/PK_1C_enteral.js" controlsurl="drugs/drug_vortioxetine/Vortioxetine_Areberg2014v2_reference/Vortioxetine_Areberg2014v2_reference_sim_controls.json"></dbs-fmusim>
-
-<sub>Runs this record's model in the browser as WebAssembly. Sliders start at the extracted values; the reference check compares the browser's peak against the FMPy result recorded when the record was built, and is withheld once a value has been edited. Template `PK_1C_enteral` · parameters `Vortioxetine_Areberg2014v2_reference_params.json` · controls `Vortioxetine_Areberg2014v2_reference_sim_controls.json`. A slider marked *simulator value* is running on the template's own default because this record does not pin that parameter.</sub>
+_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 00:19 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 19:05 UTC</sub>

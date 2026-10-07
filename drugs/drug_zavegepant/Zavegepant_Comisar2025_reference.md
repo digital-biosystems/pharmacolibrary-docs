@@ -25,34 +25,62 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 
 <sub>reviewed by rule template (no LLM)</sub>
 
-> ⚠️ **STALE** — review status `rejected` (reviewed 2026-09-28 14:42:09.593348+00:00) predates the upstream re-run (2026-10-07 06:44:38.342597+00:00). Current validate status: `rejected`.
+> ⚠️ **STALE** — review status `rejected` (reviewed 2026-09-28 14:42:09.593348+00:00) predates the upstream re-run (2026-10-07 18:46:41.192625+00:00). Current validate status: `rejected`.
 
 ## Citation
 Comisar CM et al., Population pharmacokinetic modeling of…, CPT: pharmacometrics & syst… (2025)
   ·  DOI: [10.1002/psp4.13257](https://doi.org/10.1002/psp4.13257)
 
 ## Model component
-<dbs-pgx drug="zavegepant" model-id="Zavegepant_Comisar2025_reference" status="rejected" stale="true" population="healthy adults and patients with migraine" measured-compound="zavegepant" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<dbs-pgx drug="zavegepant" model-id="Zavegepant_Comisar2025_reference" status="rejected" stale="true" population="healthy adults and patients with migraine" measured-compound="zavegepant" parameterization="apparent" topology="3C"></dbs-pgx>
 
-**Model structure:** 1-compartment; no model was built for this record.  
+**Model structure:** 3-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.
 
-**Parameterization:** mechanistic.
+**Parameterization:** apparent.
 
 ## Parameters
 > ⚠️ This record is not accepted (current status `rejected`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
 
 _No resolved parameters._
 
+### Unresolved rows _(no Q-code or no value — not parameters)_
+| label (paper) | Q-code | value | link |
+|---|---|---|---|
+| not captured | not captured | not captured | not captured |
+| not captured | not captured | not captured | not captured |
+| not captured | not captured | not captured | not captured |
+| not captured | not captured | not captured | not captured |
+| not captured | not captured | not captured | not captured |
+| not captured | not captured | not captured | not captured |
+| not captured | not captured | not captured | not captured |
+| not captured | not captured | not captured | not captured |
+| not captured | not captured | not captured | not captured |
+| not captured | not captured | not captured | not captured |
+| not captured | not captured | not captured | not captured |
+| not captured | not captured | not captured | not captured |
+| not captured | not captured | not captured | not captured |
+| not captured | not captured | not captured | not captured |
+| not captured | not captured | not captured | not captured |
+| not captured | not captured | not captured | not captured |
+| not captured | not captured | not captured | not captured |
+| not captured | not captured | not captured | not captured |
+| not captured | not captured | not captured | not captured |
+| not captured | not captured | not captured | not captured |
+| not captured | not captured | not captured | not captured |
+| not captured | not captured | not captured | not captured |
+| not captured | not captured | not captured | not captured |
+| not captured | not captured | not captured | not captured |
+
 ## Departures & gaps
 
 **Interpretation flags:**
-- apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=zavegepant
-- abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
+- $THETA(7) has no $PK binding — index may be misassigned
+- $THETA(8) has no $PK binding — index may be misassigned
+- control_stream ADVAN12 TRANS4: topology=3C, parameterization=apparent (clearance)
+- theta_crosscheck: table present but its labels did not align to bound THETAs (skipped)
+- structure disagreement: deterministic 3C vs LLM 1C — review compartment count
 - review gap-fill skipped: this record carries no value of its own, and a model assembled entirely from other papers is not this paper's model
-
-**Extraction notes:**
-- no GROBID TEI available — transcribed from abstract in Comisar_2025_metadata.yaml (0 record(s)); values are summary statistics, not a fitted model
 
 ## Validation
 
@@ -87,7 +115,8 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 |---|---|---|---|---|---|---|
 | C0_has_structural_params | fail | not captured | 0 | not captured | not captured | not captured |
 | C0b_disposition_core | fail | not captured | not captured | not captured | not captured | not captured |
-| C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
+| C7_apparent_coherence | pass | not captured | not captured | not captured | not captured | not captured |
+| C8_topology | fail | not captured | not captured | not captured | not captured | not captured |
 
 <details class="legend">
 <summary>Check legend — what each column means</summary>
@@ -112,4 +141,4 @@ _No web simulator for this record: its structure has no shared WebAssembly templ
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 06:44 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 18:46 UTC</sub>

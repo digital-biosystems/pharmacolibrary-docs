@@ -1,0 +1,37 @@
+{
+ "dose_source": "paper",
+ "model_id": "Favipiravir_Prasanchaimontri2024_geometric_mean",
+ "molar_masses": {
+  "central.C": 0.15710400000000002
+ },
+ "note": "Values for the shared PK_1C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "paper_doses_kind": "discrete",
+ "paper_doses_mg": [
+  800.0,
+  1800.0
+ ],
+ "parameters": {
+  "Cl": 2.7777777777777776e-07,
+  "F": 1.0,
+  "MM": 0.15710400000000002,
+  "Tlag": 0.0,
+  "VdPerKg": 0.0002785714285714286,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 0.0008,
+  "ka": 0.0009444444444444444,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 4883.55563736773
+ },
+ "reference_peaks": {
+  "central.C": 0.038465622915641935
+ },
+ "stop_time": 259200.0,
+ "template": "PK_1C_enteral",
+ "template_fmu": "PK_1C_enteral.fmu"
+}

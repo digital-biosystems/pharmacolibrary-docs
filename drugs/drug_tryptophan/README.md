@@ -18,11 +18,17 @@ Tryptophan, an essential amino acid, has been used as an antidepressant. It was 
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 00:09 | 5:29 | 0/0/0 | 0/0/0 | 0/0/1 | 500,661/13,394 | ollama / glm-5.3-flash | 63 | 16/52 | 58/5 | 0 |
+| 2026-10-07 19:02 | 3:56 | 0/0/0 | 1/0/0 | 0/0/1 | 486,377/14,806 | einfracz / qwen3.8-27b | 65 | 16/54 | 60/5 | 0 |
 
 ## popPK records
 
 _not available_
+
+## Pharmacodynamics (PD)
+
+| status | detail | about | model | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Adeyemi_2023_T_gondii_growth](drugs/drug_tryptophan/pd_Adeyemi_2023_T_gondii_growth.md) | T. gondii growth ← tryptophan-TiO2 · direct Emax (saturable) effect | — | Adeyemi OS et al., L-tryptophan-titanium oxide nanoparticl…, Biomedicine & pharmacothera… (2023) | [10.1016/j.biopha.2023.114597](https://doi.org/10.1016/j.biopha.2023.114597) |
 
 ## Pharmacogenomics (PGx)
 
@@ -64,13 +70,12 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 ## Full text wanted
 
-_20 paper(s) judged relevant from the abstract, with no full text on disk — paywalled, or the resolver could not reach them. Follow the DOI, then save the PDF into `papers/` as `&lt;save as&gt;.pdf` and re-run the extraction._
+_18 paper(s) judged relevant from the abstract, with no full text on disk — paywalled, or the resolver could not reach them. Follow the DOI, then save the PDF into `papers/` as `&lt;save as&gt;.pdf` and re-run the extraction._
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Shaw_1975.pdf` | Shaw DM et al., Multicompartmental analysis of amino ac…, Psychological medicine (1975) | popPK | 7 | [10.1017/s0033291700056476](https://doi.org/10.1017/s0033291700056476) | [1161958](https://pubmed.ncbi.nlm.nih.gov/1161958) | Compartmental PK/flux analysis of tryptophan itself in humans, but no numeric parameter values are present in the evidence. |
+| `Shaw_1975.pdf` | Shaw DM et al., Multicompartmental analysis of amino ac…, Psychological medicine (1975) | popPK | 9 | [10.1017/s0033291700056476](https://doi.org/10.1017/s0033291700056476) | [1161958](https://pubmed.ncbi.nlm.nih.gov/1161958) | The study reports quantitative disposition parameters for tryptophan using compartmental analysis, but the specific numeric values are not present in the provided abstract/evidence. |
 | `Majewski_2018.pdf` | Majewski M et al., Toxicity and cardiac effects of acute e…, Toxicology and applied phar… (2018) | pd | 5 | [10.1016/j.taap.2018.01.004](https://doi.org/10.1016/j.taap.2018.01.004) | [29317240](https://www.ncbi.nlm.nih.gov/pubmed/29317240) | metadata signals extractable PD data (EC50) |
-| `Mamede_2025.pdf` | Mamede L et al., Metabolomics study of 3-O-p-(Z/E)-couma…, International journal for p… (2025) | pd | 5 | [10.1016/j.ijpddr.2025.100595](https://doi.org/10.1016/j.ijpddr.2025.100595) | [40383077](https://www.ncbi.nlm.nih.gov/pubmed/40383077) | metadata signals extractable PD data (EC50) |
 | `Shi_2017.pdf` | Shi JG et al., Population Pharmacokinetic and Pharmaco…, Journal of clinical pharmac… (2017) | pd | 5 | [10.1002/jcph.855](https://doi.org/10.1002/jcph.855) | [27990653](https://www.ncbi.nlm.nih.gov/pubmed/27990653) | metadata signals extractable PD data (PharmacodynamicModel) |
 | `Chilkoti_1995.pdf` | Chilkoti A et al., Site-directed mutagenesis studies of th…, Proceedings of the National… (1995) | pd | 4 | [10.1073/pnas.92.5.1754](https://doi.org/10.1073/pnas.92.5.1754) | [7878054](https://www.ncbi.nlm.nih.gov/pubmed/7878054) | metadata signals extractable PD data (EC50) |
 | `Hertenstein_2011.pdf` | Hertenstein A et al., Suppression of human CD4+ T cell activa…, Biochemical pharmacology (2011) | pd | 4 | [10.1016/j.bcp.2011.06.013](https://doi.org/10.1016/j.bcp.2011.06.013) | [21703247](https://www.ncbi.nlm.nih.gov/pubmed/21703247) | metadata signals extractable PD data (EC50) |
@@ -79,7 +84,6 @@ _20 paper(s) judged relevant from the abstract, with no full text on disk — pa
 | `Knubel_2017.pdf` | Knubel CP et al., 3-Hydroxykynurenine, a Tryptophan Metab…, ACS medicinal chemistry let… (2017) | pd | 4 | [10.1021/acsmedchemlett.7b00169](https://doi.org/10.1021/acsmedchemlett.7b00169) | [28740612](https://www.ncbi.nlm.nih.gov/pubmed/28740612) | metadata signals extractable PD data (IC50) |
 | `Kuroki_1988.pdf` | Kuroki GW et al., Purification and characterization of an…, Archives of biochemistry an… (1988) | pd | 4 | [10.1016/0003-9861(88)90489-4](https://doi.org/10.1016/0003-9861(88)90489-4) | [3341760](https://www.ncbi.nlm.nih.gov/pubmed/3341760) | metadata signals extractable PD data (sigmoid) |
 | `Liu_2015.pdf` | Liu C et al., GPR139, an Orphan Receptor Highly Enric…, Molecular pharmacology (2015) | pd | 4 | [10.1124/mol.115.100412](https://doi.org/10.1124/mol.115.100412) | [26349500](https://www.ncbi.nlm.nih.gov/pubmed/26349500) | metadata signals extractable PD data (EC50) |
-| `Sonklin_2021.pdf` | Sonklin C et al., Functional Characterization of Mung Bea…, Molecules (Basel, Switzerla… (2021) | pd | 4 | [10.3390/molecules26061515](https://doi.org/10.3390/molecules26061515) | [33802127](https://www.ncbi.nlm.nih.gov/pubmed/33802127) | metadata signals extractable PD data (EC50) |
 | `Taleb_2017.pdf` | Taleb N et al., Stability of Commercially Available Glu…, Diabetes technology & thera… (2017) | pd | 4 | [10.1089/dia.2017.0204](https://doi.org/10.1089/dia.2017.0204) | [28846447](https://www.ncbi.nlm.nih.gov/pubmed/28846447) | metadata signals extractable PD data (EC50) |
 | `Xu_2020.pdf` | Xu C et al., New insights into the harmful algae inh…, The Science of the total en… (2020) | pd | 4 | [10.1016/j.scitotenv.2020.136737](https://doi.org/10.1016/j.scitotenv.2020.136737) | [31982752](https://www.ncbi.nlm.nih.gov/pubmed/31982752) | metadata signals extractable PD data (EC50) |
 | `Yousof_2024.pdf` | Yousof NSAM et al., Molecular networking-based mass spectra…, Fitoterapia (2024) | pd | 4 | [10.1016/j.fitote.2024.105955](https://doi.org/10.1016/j.fitote.2024.105955) | [38604259](https://www.ncbi.nlm.nih.gov/pubmed/38604259) | metadata signals extractable PD data (EC50) |
@@ -89,257 +93,259 @@ _20 paper(s) judged relevant from the abstract, with no full text on disk — pa
 | `Ugartemendia_2021.pdf` | Ugartemendia L et al., SLC6A4 polymorphisms modulate the effic…, Clinical nutrition (Edinbur… (2021) | pgx | 5 | [10.1016/j.clnu.2021.02.023](https://doi.org/10.1016/j.clnu.2021.02.023) | [33743283](https://www.ncbi.nlm.nih.gov/pubmed/33743283) | metadata signals extractable PGX data (SLC6A4) |
 | `Yin_2016.pdf` | Yin L et al., Catecholamine pathway polymorphisms and…, Asia-Pacific psychiatry : o… (2016) | pgx | 5 | [10.1111/appy.12180](https://doi.org/10.1111/appy.12180) | [25854875](https://www.ncbi.nlm.nih.gov/pubmed/25854875) | metadata signals extractable PGX data (SLC6A2) |
 
-<sub>queue written 2026-10-07T00:06:50.461733+00:00</sub>
+<sub>queue written 2026-10-07T19:01:22.871893+00:00</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Adeyemi_2023 | irrelevant | 0 | 0 | In-vitro anti-parasitic nanoparticle efficacy study with EC50 values, no pharmacokinetic disposition parameters for tryptophan. |
-| PGx | Ahrens_2024 | not_relevant | 0 | 0 | No drug or pharmacogenomic PK/PD effect reported; study concerns metabolomics/genotype associations with neurodevelopment. |
+| popPK | Adeyemi_2023 | irrelevant | 0 | 0 | The study focuses on the anti-parasitic activity of tryptophan-modified nanoparticles in vitro, not on the pharmacokinetic parameters of tryptophan itself. |
+| PGx | Ahrens_2024 | not_relevant | 0 | 0 | The paper focuses on early-life risk factors for neurodevelopmental disorders and does not report any pharmacokinetic or pharmacodynamic parameters for tryptophan. |
 | PD | Alfredsson_1989 | not_relevant | 0 | 0 | The study explicitly states there was no dose-response effect of sulpiride on tryptophan levels and reports no numeric PD parameters or concentration-effect curves. |
 | PD | Altamura_1994 | not_relevant | 1 | 0 | The text is a review of fluoxetine PK and only qualitatively mentions a potential interaction with tryptophan (serotonergic syndrome) without providing any numeric PD parameters or exposure-response data for tryptophan. |
-| popPK | Amblard_1993 | irrelevant | 0 | 0 | Tryptophan is only a residue within synthesized CCK analogs; no PK parameters for tryptophan are reported. |
-| PGx | An_2023 | not_relevant | 0 | 0 | No gene variant/genotype effect on tryptophan PK/PD; only drug-induced metabolite and gene expression changes in rats. |
-| popPK | Arnold_2024 | irrelevant | 0 | 0 | This is a clinical trial of placebo response in depression; tryptophan appears only via genetic polymorphisms (TPH1), with no pharmacokinetic parameters. |
-| popPK | Ashok_2015 | irrelevant | 0 | 0 | This is a medicinal chemistry/anti-HIV synthesis paper using tryptophan only as a starting material, with no pharmacokinetic parameters for tryptophan. |
-| popPK | Auerbach_1985 | irrelevant | 0 | 0 | In vitro rat hippocampus study of serotonin release kinetics; tryptophan is only a bath additive, not a PK disposition study. |
-| PGx | BRODY_1964 | not_relevant | 0 | 0 | Microbial genetics of suppressor mutations in tryptophan biosynthesis, not a pharmacogenomic PK/PD effect. |
-| PGx | Barrie_2018 | not_relevant | 3 | 3 | Reports genotype associations with behavioral/clinical scores, not PK/PD parameters of atomoxetine; CYP2D6 response association was null. |
-| popPK | Bartholmes_1976 | irrelevant | 0 | 0 | This is an in vitro biochemical study of pyridoxal phosphate binding to tryptophan synthase from E. coli, with no pharmacokinetic parameters for tryptophan. |
+| popPK | Amblard_1993 | irrelevant | 0 | 0 | The paper focuses on the synthesis and biological evaluation of cholecystokinin analogs, with no pharmacokinetic data reported for tryptophan. |
+| PGx | An_2023 | not_relevant | 0 | 0 | The study investigates the hepatotoxic effects of Tripterygium glycosides in rats, not the pharmacokinetics or pharmacodynamics of tryptophan, nor does it report a pharmacogenomic effect on tryptophan parameters. |
+| popPK | Arnold_2024 | irrelevant | 0 | 0 | The study investigates predictors of placebo response in depression and mentions tryptophan hydroxylase gene polymorphisms, but reports no pharmacokinetic parameters for tryptophan. |
+| popPK | Ashok_2015 | irrelevant | 0 | 0 | The paper is a medicinal chemistry study focusing on the synthesis and anti-HIV activity of derivatives made from tryptophan, containing no pharmacokinetic data for tryptophan itself. |
+| popPK | Auerbach_1985 | irrelevant | 0 | 0 | This is an in vitro mechanistic study on serotonin release regulation where tryptophan is used as a precursor, not a pharmacokinetic study of tryptophan disposition. |
+| PGx | BRODY_1964 | not_relevant | 0 | 0 | The paper describes microbial genetics and enzyme restoration, not human pharmacogenomics or PK/PD of a drug. |
+| PGx | Barrie_2018 | not_relevant | 0 | 0 | The paper reports associations between gene variants and behavioral/clinical scores in ASD, but does not report any pharmacokinetic or pharmacodynamic parameters for tryptophan or atomoxetine. |
+| popPK | Bartholmes_1976 | irrelevant | 0 | 0 | The study focuses on the binding kinetics of a cofactor to an enzyme in Escherichia coli, not the pharmacokinetics of tryptophan. |
 | PD | Bartholmes_1976 | not_relevant | 0 | 0 | The paper describes the binding of a cofactor (pyridoxal 5'-phosphate) to an enzyme (tryptophan synthase), not the pharmacodynamic response of a drug (tryptophan) in a biological system. |
-| popPK | Barzel_2026 | irrelevant | 0 | 0 | This is a review of popPK models for therapeutic enzymes in lysosomal storage diseases, not tryptophan, and no numeric PK values are present. |
+| popPK | Barzel_2026 | irrelevant | 0 | 0 | The study is a review of pharmacokinetic models for therapeutic enzymes in lysosomal storage diseases and does not involve the drug tryptophan. |
 | PD | Barzel_2026 | not_relevant | 3 | 0 | The paper is a review of therapeutic enzymes in lysosomal storage diseases and does not contain any data, analysis, or parameters related to tryptophan. |
-| PGx | Basler_1992 | not_relevant | 0 | 0 | Reports STS gene point mutations causing enzyme deficiency; no drug PK/PD parameter or pharmacogenomic effect is described. |
-| popPK | Blanco_2026 | irrelevant | 0 | 0 | This is a biomarker study of tryptophan catabolism metabolites in HIV patients on ART, not a pharmacokinetic study of tryptophan; no CL/V/ka or PK model values are reported. |
+| PGx | Basler_1992 | not_relevant | 0 | 0 | The paper describes point mutations in the steroid sulfatase gene causing X-linked ichthyosis, where "tryptophan" refers to an amino acid substitution in the protein, not a pharmacokinetic or pharmacodynamic effect of a drug named tryptophan. |
+| popPK | Blanco_2026 | irrelevant | 0 | 0 | The paper measures tryptophan as a biomarker of catabolism/inflammation in HIV patients, not as a pharmacokinetic subject, and does not report any PK parameters (CL, V, ka, etc.). |
 | PD | Borrego-Muñoz_2022 | not_relevant | 3 | 2 | The paper reports IC50 values for antifungal activity, which is a dose-response metric, but it is a standard pharmacological assay for a specific pathogen, not a pharmacodynamic (PD) model of drug exposure-response in a biological system (e.g., PK/PD fit, Emax model, or concentration-effect curve in a host/organism context). |
-| PGx | Bosma_1993 | not_relevant | 0 | 0 | Tryptophan is an amino acid substitution in UGT1A1, not a drug; no PK/PD pharmacogenomic effect reported. |
-| popPK | Bourdon_2018 | irrelevant | 0 | 0 | Metabolomics study of endogenous brain tryptophan levels during sleep/wake in mice; no PK dosing or disposition parameters (CL, V, ka, half-life) reported. |
-| popPK | Bräm_2026 | irrelevant | 0 | 0 | Methodology paper about NODE-LASSO automated modeling; tryptophan is not the subject drug (examples are warfarin and simulated bi-exponential data), and no tryptophan PK parameters appear. |
+| PGx | Bosma_1993 | not_relevant | 0 | 0 | The paper describes a genetic mutation in a bilirubin metabolism enzyme causing a disease (Crigler-Najjar syndrome), not a pharmacogenomic effect of a drug on tryptophan pharmacokinetics or pharmacodynamics. |
+| popPK | Bourdon_2018 | irrelevant | 0 | 0 | The study is a metabolomic analysis of sleep/wake states in mice where tryptophan is a measured endogenous analyte, not a drug administered for pharmacokinetic modeling. |
+| popPK | Bräm_2026 | irrelevant | 0 | 0 | The paper describes a methodological approach for automated model development using warfarin, neonatal weight, and generic bi-exponential data, with no mention or data for tryptophan. |
 | PD | Bräm_2026 | not_relevant | 0 | 0 | The paper focuses on a methodological approach for automated pharmacometric model development using Neural ODEs and LASSO, and does not report any specific pharmacodynamic or exposure-response data for tryptophan. |
-| PGx | Bunaciu_2013 | not_relevant | 0 | 0 | No gene variant/genotype/phenotype effect on PK/PD parameters of tryptophan is reported; the study examines FICZ (a tryptophan photoproduct) effects on cell differentiation signaling in vitro. |
+| PGx | Bunaciu_2013 | not_relevant | 0 | 0 | The paper investigates the pharmacodynamic interaction between FICZ and retinoic acid in leukemia cells but does not report any pharmacogenomic effects on tryptophan PK/PD parameters. |
 | PD | Burdick_2004 | not_relevant | 3 | 2 | The paper reports a single IC50 value for a specific compound (o-Bromobenzoyl l-tryptophan) in a structure-activity relationship study, but does not provide a full concentration-effect curve, multiple data points, or a fitted PD model (Emax, slope, etc.) for tryptophan itself. |
-| PGx | Chen_2024 | not_relevant | 0 | 0 | Tryptophan is a biomarker associated with biological aging, not a drug; no pharmacogenomic effect on PK/PD parameters is reported. |
-| PGx | Chen_2024_2 | not_relevant | 0 | 0 | Study examines tryptophan metabolism gene expression in HCC prognosis, not gene variant effects on PK/PD parameters of a drug. |
+| PGx | Chen_2024 | not_relevant | 1 | 1 | The paper investigates factors associated with biological aging (PhenoAge) and reports an inverse association of tryptophan levels with aging, but does not report a pharmacogenomic effect on the pharmacokinetics or pharmacodynamics of tryptophan. |
+| PGx | Chen_2024_2 | not_relevant | 0 | 0 | The paper investigates the prognostic role of the ALDH2 gene in hepatocellular carcinoma in the context of tryptophan metabolism, rather than reporting a pharmacogenomic effect on a pharmacokinetic or pharmacodynamic parameter of a tryptophan drug. |
 | PD | Chen_2025 | not_relevant | 3 | 2 | The paper reports in vitro IC50 values for enzyme inhibition and qualitative in vivo behavioral improvements, but lacks a formal pharmacodynamic model or exposure-response analysis linking drug concentration to effect. |
-| popPK | Chen_2026 | irrelevant | 0 | 0 | This is a rivaroxaban population PK study; tryptophan is not involved at all. |
+| popPK | Chen_2026 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of rivaroxaban, not tryptophan. |
 | PD | Chen_2026 | not_relevant | 0 | 0 | The paper focuses exclusively on the external validation of population pharmacokinetic (PK) models for rivaroxaban and does not report any pharmacodynamic (PD) or exposure-response relationships. |
-| PGx | Cheng_2026 | not_relevant | 0 | 0 | Study examines FTH1 effects on tryptophan metabolism in HCC, not a gene variant effect on PK/PD parameters of a drug. |
+| PGx | Cheng_2026 | not_relevant | 0 | 0 | The paper investigates the tumor biology of FTH1 and its impact on tryptophan metabolism and ferroptosis in HCC, not pharmacogenomic effects on tryptophan PK/PD. |
 | popPK | Chilkoti_1995 | irrelevant | 0 | 0 | no_text gate: only 137 chars of text extracted (&lt; 400) |
 | PD | Chilkoti_1995 | not_relevant | 0 | 0 | The paper investigates the structural role of tryptophan residues in the streptavidin-biotin complex via mutagenesis, not the pharmacodynamics of tryptophan as a drug. |
-| PGx | Christ_2017 | not_relevant | 2 | 3 | Plant enzyme BAR off-target N-acetylation of tryptophan; no gene variant effect on a PK/PD parameter of a drug. |
-| popPK | Colle_2025 | irrelevant | 0 | 0 | This is a biomarker concentration study of tryptophan/kynurenine metabolites in depression, with no pharmacokinetic disposition parameters (CL, V, half-life, or PK model) reported. |
-| PGx | Cong_2022 | not_relevant | 2 | 5 | The pharmacogenomic effect (GABA-T rs1641031) is on olanzapine PK (Cmax, CL/F), not on a PK/PD parameter of tryptophan, which is only a measured metabolite. |
-| PGx | Crisafulli_2011 | not_relevant | 3 | 2 | Review of antidepressant pharmacogenetics; tryptophan is not a drug here and no PK/PD effect sizes are reported. |
+| PGx | Christ_2017 | not_relevant | 0 | 0 | The paper investigates the off-target metabolic activity of the BAR transgene in plants on endogenous amino acids (including tryptophan), not a pharmacogenomic effect on a human PK/PD parameter for a drug. |
+| popPK | Colle_2025 | irrelevant | 0 | 0 | The study measures plasma metabolite levels (kynurenine pathway) and their ratios to tryptophan as biomarkers of antidepressant response, not pharmacokinetic disposition parameters (CL, V, ka) for tryptophan itself. |
+| PGx | Cong_2022 | not_relevant | 0 | 0 | The study reports pharmacogenomic effects on olanzapine PK and tryptophan metabolism as a biomarker, not on the PK or PD parameters of the drug tryptophan. |
+| PGx | Crisafulli_2011 | not_relevant | 1 | 0 | The paper reviews pharmacogenetics for antidepressants and mentions the tryptophan hydroxylase gene, but does not report a pharmacogenomic effect on the PK/PD parameters of tryptophan itself. |
 | PD | Cui_2020 | not_relevant | 3 | 5 | The paper reports in vitro IC50 values for enzyme inhibition, which are pharmacodynamic parameters, but it does not report an exposure-response or dose-response relationship in a biological system (PK/PD) or a formal PD model. |
-| popPK | Das_2025 | irrelevant | 0 | 0 | This is an antifungal mechanism study of quinine against Rhizoctonia solani; tryptophan is only a metabolite/target, with no PK disposition parameters for tryptophan. |
-| popPK | De_2018 | irrelevant | 0 | 0 | This is a physicochemical stability study of parenteral nutrition admixtures; tryptophan is only a measured amino acid component, with no pharmacokinetic parameters. |
-| popPK | Deutz_2025 | relevant | 4 | 3 | Compartmental/isotope-tracer kinetic analysis of amino acid metabolism including tryptophan in pigs, but only a -22% intracellular production change for tryptophan is given; full kinetic parameter values likely in tables/supplements not provided. |
-| popPK | Diksic_1990 | irrelevant | 3 | 2 | This is an autoradiographic tracer-kinetic method for serotonin synthesis in rat brain using the analogue alpha-methyl-tryptophan, not a PK study of tryptophan disposition; only a precursor-pool half-life (~20 min) is given, with no CL/V/compartmental parameter values. |
-| popPK | Diksic_2001 | irrelevant | 2 | 1 | This is a review of the alpha-methyl-tryptophan tracer method for brain serotonin synthesis; no numeric PK disposition parameters (CL, V, half-life) for tryptophan are reported. |
-| PGx | Drozdov-Tikhomirov_1977 | not_relevant | 1 | 2 | Bacterial trp-operon modeling in E. coli, not a pharmacogenomic effect on PK/PD of a drug. |
-| popPK | Dulal_2018 | irrelevant | 0 | 0 | Structural biology study of Dectin-1; tryptophan appears only as intrinsic fluorescence, no PK parameters. |
+| popPK | Das_2025 | irrelevant | 0 | 0 | This study investigates the antifungal mechanism of quinine against Rhizoctonia solani, focusing on tryptophan as a metabolic substrate/inhibitor rather than measuring its pharmacokinetic parameters. |
+| popPK | De_2018 | irrelevant | 0 | 0 | The study assesses the physicochemical stability of parenteral nutrition admixtures containing tryptophan, not its pharmacokinetic parameters. |
+| popPK | Deutz_2025 | irrelevant | 4 | 0 | While the study uses compartmental analysis to derive kinetic parameters (like clearance) for tryptophan in a pig model, it reports only relative percentage changes during sepsis rather than absolute quantitative disposition parameters (e.g., CL in mL/min/kg, V in L/kg). |
+| popPK | Diksic_1990 | irrelevant | 1 | 0 | The study measures brain serotonin synthesis rates using an L-tryptophan analogue (alpha-MTrp) and does not report quantitative pharmacokinetic parameters (CL, V, etc.) for tryptophan itself. |
+| popPK | Diksic_2001 | irrelevant | 1 | 0 | The paper studies alpha-methyl-L-tryptophan (a metabolite/analog) as a tracer for serotonin synthesis using a 3-compartment model, not the PK of tryptophan itself, and no numeric tryptophan PK parameters are provided. |
+| PGx | Drozdov-Tikhomirov_1977 | not_relevant | 0 | 0 | The paper describes tryptophan synthesis in E. coli bacteria, not the pharmacokinetics or pharmacodynamics of tryptophan in humans. |
+| popPK | Dulal_2018 | irrelevant | 0 | 0 | The paper describes the structural biology of Dectin-1 and uses tryptophan fluorescence as a spectroscopic tool to monitor protein conformation, not as a pharmacokinetic subject. |
 | PD | Dulal_2018 | not_relevant | 0 | 0 | The paper describes protein-ligand binding and oligomerization of Dectin-1, not a pharmacodynamic exposure-response relationship for the drug tryptophan. |
 | PD | Ebadi_1982 | not_relevant | 0 | 0 | The text is a review of drug-vitamin B6 interactions and mentions tryptophan only in the context of picolinic acid metabolism, without reporting any quantitative pharmacodynamic or exposure-response data. |
-| popPK | Eleveld_2026 | irrelevant | 0 | 0 | Software validation paper comparing OpenPMX to NONMEM; no tryptophan PK parameters reported. |
+| popPK | Eleveld_2026 | irrelevant | 0 | 0 | The paper is a methodological comparison of software tools (OpenPMX vs NONMEM) and does not report specific pharmacokinetic parameters for the drug tryptophan. |
 | PD | Eleveld_2026 | not_relevant | 0 | 0 | The paper is a software validation study comparing estimation precision of OpenPMX vs NONMEM using generic PK models, with no specific drug (tryptophan) or pharmacodynamic data reported. |
-| PGx | Fifita_2021 | not_relevant | 0 | 0 | Genetic variants in tryptophan metabolism genes are studied as ALS risk factors, not as modifiers of PK/PD parameters of a drug. |
-| PGx | Francikowski_2019 | not_relevant | 0 | 0 | Tryptophan is an endogenous metabolite in insect eye pigments, not a drug; no PK/PD parameters or pharmacogenomic effects are reported. |
-| popPK | Frankevich_2026 | irrelevant | 0 | 0 | This is a metabolomic biomarker study measuring amino acid concentrations, not a pharmacokinetic study with disposition parameters for tryptophan. |
-| popPK | Friedrich_1976 | irrelevant | 0 | 0 | This is an in vitro bacterial enzyme kinetics study where tryptophan is merely an inhibitor; no pharmacokinetic parameters for tryptophan are reported. |
+| PGx | Fifita_2021 | not_relevant | 1 | 1 | The study analyzes genetic variants associated with disease susceptibility (ALS) and metabolic burden, but does not report pharmacogenomic effects on the pharmacokinetic or pharmacodynamic parameters of tryptophan as a drug. |
+| PGx | Francikowski_2019 | not_relevant | 0 | 0 | The paper investigates eye color mutations and pigment composition in crickets (insect physiology) and does not involve the pharmacokinetics or pharmacodynamics of the drug tryptophan. |
+| popPK | Frankevich_2026 | irrelevant | 0 | 0 | The paper describes a cross-sectional metabolomic study identifying tryptophan as a biomarker for gestational diabetes, but it does not report any quantitative pharmacokinetic parameters (such as clearance or volume) for tryptophan. |
+| popPK | Friedrich_1976 | irrelevant | 0 | 0 | This is an in-vitro enzyme kinetic study of *Alcaligenes eutrophus* where tryptophan is used solely as a competitive inhibitor, not as a subject drug for pharmacokinetic analysis. |
 | PD | Friedrich_1976 | not_relevant | 0 | 0 | The paper reports in vitro enzyme kinetics (Km, Ki) for bacterial enzymes, not pharmacodynamic exposure-response relationships for a drug in a biological system. |
-| PGx | Friedrich_2021 | not_relevant | 3 | 2 | Tryptophan metabolism in IDH-mutant glioma microenvironment; no gene variant effect on PK/PD parameters of a drug. |
-| popPK | Genet_1994 | irrelevant | 0 | 0 | In-vitro enzyme characterization study; no pharmacokinetic disposition parameters for tryptophan in any organism. |
+| PGx | Friedrich_2021 | not_relevant | 0 | 0 | The paper discusses the metabolic role of tryptophan in glioma immunology and IDH mutations, but does not report pharmacokinetic or pharmacodynamic parameters of tryptophan as a drug, nor does it link specific pharmacogenomic variants to drug clearance or response metrics. |
+| popPK | Genet_1994 | irrelevant | 0 | 0 | This is a study on enzyme purification and kinetics (Km, kcat) of L-tryptophan oxidase in bacteria, not a pharmacokinetic study of tryptophan disposition. |
 | PD | Genet_1994 | not_relevant | 0 | 0 | The paper reports enzyme kinetics (Km, kcat) for a specific enzyme acting on a substrate, which is biochemical characterization, not pharmacodynamic exposure-response or dose-response modeling for a drug. |
-| popPK | Glass_2023 | irrelevant | 0 | 0 | Metabolomics study of exercise response; tryptophan is only a measured metabolite, no PK parameters reported. |
-| popPK | González-Carrera_2026 | irrelevant | 0 | 0 | Tryptophan is only mentioned as a residue in a peptide; no PK parameters for tryptophan are reported. |
-| PGx | Gooding_1987 | not_relevant | 0 | 0 | Insect genetics affecting tryptophan metabolism, not a pharmacogenomic effect on a drug PK/PD parameter. |
-| PGx | Gordon_1991 | not_relevant | 0 | 0 | No gene variant/genotype or pharmacogenomic effect on tryptophan PK/PD parameters is reported; only clinical case descriptions of tryptophan-associated syndrome. |
-| PGx | Granados_2024 | not_relevant | 1 | 1 | Review of OAT transporters mentions polymorphisms only in passing; no gene variant effect on tryptophan PK/PD parameters reported. |
-| PGx | Gray_2026 | not_relevant | 0 | 0 | Computational modeling of hole transfer to tryptophan residues in P450 enzymes; no gene variant/genotype effect on a PK/PD parameter of a drug. |
+| popPK | Glass_2023 | irrelevant | 0 | 0 | The study is a metabolomics analysis of urine samples in ME/CFS patients and controls, not a pharmacokinetic study reporting quantitative disposition parameters for tryptophan. |
+| PGx | Gonzalez_2021 | not_relevant | 3 | 1 | The paper reports a pharmacodynamic effect on mood (clinical outcome) rather than a direct PK or PD parameter (e.g., serotonin levels, tryptophan plasma concentration) for the substrate tryptophan. |
+| popPK | González-Carrera_2026 | irrelevant | 0 | 0 | The paper studies the antimicrobial mechanism of a peptide (VC15), not the pharmacokinetics of the amino acid tryptophan. |
+| PGx | Gooding_1987 | not_relevant | 0 | 0 | The paper describes tsetse fly genetics and metabolism, not human pharmacogenomics of tryptophan or drug PK/PD. |
+| PGx | Gordon_1991 | not_relevant | 0 | 0 | The paper describes clinical associations with tryptophan ingestion but does not report any pharmacogenomic effects on PK/PD parameters. |
+| PGx | Granados_2024 | not_relevant | 0 | 0 | The paper is a theoretical review of organic anion transporters and organ crosstalk, containing no specific data on tryptophan or gene variant effects. |
+| PGx | Gray_2026 | not_relevant | 0 | 0 | The paper models electron transfer kinetics within P450 enzymes to study hole migration to amino acid residues, not the effect of human genotypes on the pharmacokinetics or pharmacodynamics of tryptophan as a drug. |
 | PD | Grison_2022 | not_relevant | 1 | 0 | The paper reports metabolomic changes (including tryptophan) as biomarkers of uranium exposure but does not provide a pharmacodynamic model or numeric dose-response parameters for tryptophan itself. |
-| popPK | Gunn_2015 | irrelevant | 0 | 0 | This is a review of PET brain imaging; tryptophan appears only as a protein class name, with no PK parameters for tryptophan. |
-| popPK | Hajishafiee_2021 | irrelevant | 1 | 1 | Appetite/energy-intake study with plasma Trp concentrations only; no PK disposition parameters (CL, V, half-life, model) reported. |
-| popPK | Hampe_1981 | irrelevant | 0 | 0 | In-vitro spectroscopic study of urea binding to lysozyme; tryptophan is only a protein residue, with no PK parameters. |
+| popPK | Gunn_2015 | irrelevant | 0 | 0 | This is a review of PET imaging methods for brain proteins (including tryptophan-rich sensory proteins) and does not report quantitative pharmacokinetic parameters (CL, V, etc.) for the drug L-tryptophan. |
+| popPK | Hajishafiee_2021 | irrelevant | 2 | 1 | The study measures plasma concentration levels and ratios of tryptophan as a nutrient/signaling molecule to assess energy intake, but does not report pharmacokinetic disposition parameters (CL, V, ka) or a PK model. |
+| popPK | Hampe_1981 | irrelevant | 0 | 0 | The paper studies the interaction of urea with lysozyme using spectrophotometry and is not a pharmacokinetic study of tryptophan. |
 | PD | Hampe_1981 | not_relevant | 0 | 0 | The paper studies the biophysical interaction of urea with lysozyme using UV spectroscopy, not the pharmacodynamics of tryptophan as a drug. |
-| popPK | Hanke_2026 | irrelevant | 0 | 0 | This is a popPK/PD study of iclepertin (a GlyT1 inhibitor), not of tryptophan; tryptophan is not the subject drug and no tryptophan parameters appear. |
-| PGx | Hardebeck_2023 | not_relevant | 0 | 0 | Tryptophan is only a fluorescent probe in protein stability assays; no gene variant affects PK/PD parameters of tryptophan as a drug. |
-| popPK | Hartvig_1995 | irrelevant | 1 | 2 | This is a PET study of serotonin synthesis rate from 5-HTP in monkey brain, not a PK study of tryptophan disposition; the rate constant is a metabolic/synthesis parameter, not CL/V/ka. |
-| popPK | He_2023 | irrelevant | 0 | 0 | This is a chemical synthesis and antioxidant activity study of γ-glutamyl-tryptophan peptides, with no pharmacokinetic parameters for tryptophan. |
+| popPK | Hanke_2026 | irrelevant | 0 | 0 | The study reports population pharmacokinetic parameters for iclepertin, a GlyT1 inhibitor, and does not investigate the disposition of tryptophan. |
+| PGx | Hardebeck_2023 | not_relevant | 0 | 0 | The paper investigates protein stability and interaction affinity of PCNA, not the pharmacokinetics or pharmacodynamics of tryptophan as a drug. |
+| popPK | Hartvig_1995 | irrelevant | 0 | 0 | The study investigates the synthesis of serotonin using 5-HTP as a PET tracer in monkeys, not the pharmacokinetic disposition (CL, V, half-life) of tryptophan. |
+| popPK | He_2023 | irrelevant | 0 | 0 | The study focuses on the in-vitro synthesis and antioxidant activity of tryptophan-containing peptides, not on the pharmacokinetics of tryptophan. |
 | PD | He_2023 | not_relevant | 0 | 0 | The paper reports in vitro antioxidant activity (EC50) of synthesized peptides, which is a biochemical assay, not a pharmacodynamic (exposure-response) relationship for the drug tryptophan in a biological system. |
-| PGx | Helfrich_2021 | not_relevant | 0 | 0 | Tryptophan is an active-site residue of homospermidine synthase, not a drug; no pharmacogenomic effect on PK/PD parameters is reported. |
-| popPK | Hertenstein_2011 | irrelevant | 0 | 0 | This is an in-vitro immunology study of tranilast, a different drug; tryptophan is only mentioned as a structural homology, with no PK parameters for tryptophan. |
-| popPK | Hodgson_2017 | irrelevant | 0 | 0 | This is a metabolomics biomarker study of HIV-COPD; tryptophan is only a measured endogenous metabolite, with no dosing and no PK parameters reported. |
-| popPK | Hoeben_2026 | irrelevant | 0 | 0 | The drug is calaspargase pegol (asparaginase), not tryptophan; no tryptophan PK parameters are reported. |
-| popPK | Hsu_2026 | irrelevant | 0 | 0 | A simulation methodology study for PopPK covariate identification with a hypothetical drug; no tryptophan data or parameters. |
+| PGx | Helfrich_2021 | not_relevant | 0 | 0 | The paper focuses on the structural biology of bacterial enzymes and does not report human pharmacogenomics or PK/PD parameters for tryptophan. |
+| popPK | Hertenstein_2011 | irrelevant | 0 | 0 | The study investigates the immunological mechanism of tranilast (an analog of tryptophan metabolites) on T cells and does not report pharmacokinetic parameters for tryptophan. |
+| popPK | Hodgson_2017 | irrelevant | 0 | 0 | The study is a metabolomic biomarker analysis of HIV-COPD that measures tryptophan concentrations as a biomarker, not a pharmacokinetic study characterizing the disposition (clearance, volume, etc.) of tryptophan as a drug. |
+| popPK | Hoeben_2026 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics and pharmacodynamics of calaspargase pegol (an enzyme drug), not the amino acid tryptophan. |
+| popPK | Hsu_2026 | irrelevant | 0 | 0 | The paper is a methodological simulation study regarding covariate identification in PopPK models and does not report quantitative disposition parameters for tryptophan. |
 | PD | Hsu_2026 | not_relevant | 0 | 0 | The paper focuses on population pharmacokinetic (PopPK) covariate identification methods and simulation power, with no mention of tryptophan or any pharmacodynamic (PD) or exposure-response analysis. |
-| popPK | Huang_2026 | irrelevant | 0 | 0 | The paper is about automated PopPK modeling software evaluated on 22 clinical datasets, with no mention of tryptophan or any of its parameters. |
+| popPK | Huang_2026 | irrelevant | 0 | 0 | The paper is a methodological study on automated PK modeling software and does not report specific pharmacokinetic parameters for the drug tryptophan. |
 | PD | Huang_2026 | not_relevant | 0 | 0 | The paper focuses exclusively on automated population pharmacokinetic (PopPK) modeling methods and does not report any pharmacodynamic (PD) or exposure-response relationships for tryptophan or any other drug. |
 | PD | Huo_2022 | not_relevant | 3 | 2 | The paper reports IC50 values for enzyme inhibition (TDO/IDO1) and qualitative in vivo antitumor effects, but does not provide a pharmacodynamic model (e.g., Emax, EC50) or exposure-response analysis for the drug's effect on the biological system (tumor growth or immune markers). |
 | PD | Immanuel_2018 | not_relevant | 0 | 0 | The paper discusses tryptophan as a growth-limiting substrate in metabolic profiling but does not report any exposure-response or dose-response relationship with numeric PD parameters. |
-| PGx | Inoue_2022 | not_relevant | 0 | 0 | Study uses tryptophan fluorescence to measure substrate binding to a transporter; no gene variant/genotype effect on tryptophan PK/PD is reported. |
-| popPK | Itoh_1989 | irrelevant | 1 | 2 | Tryptophan appears only as a radiolabeled diagnostic tracer (Tc-99m N-pyridoxyl-5-methyl-tryptophan) for liver scintigraphy, not as a subject drug with PK disposition parameters; some rate constants are mentioned but no numeric values are given. |
-| popPK | Ivanov_2023 | irrelevant | 0 | 0 | Tryptophan derivatives are studied as α7 nAChR agonists; no PK disposition parameters for tryptophan are reported. |
-| PGx | Izzo_2009 | not_relevant | 0 | 0 | Tryptophan appears only in a case report of serotonin syndrome with St John's wort; no gene variant/genotype effect on any PK/PD parameter is reported. |
-| PGx | Jang_2015 | not_relevant | 0 | 0 | Tryptophan is an engineered amino-acid substitution in CYP2B enzymes, not a drug with a pharmacogenomic PK/PD effect. |
-| popPK | Ji_2021 | irrelevant | 0 | 0 | This is a luminescence/chemistry paper about a terbium-binding peptide; tryptophan is only a residue in the ligand, with no PK parameters. |
+| PGx | Inoue_2022 | not_relevant | 0 | 0 | The paper describes a biophysical method for measuring substrate binding to a transporter using tryptophan fluorescence quenching, not a pharmacogenomic study of drug PK/PD parameters. |
+| popPK | Itoh_1989 | irrelevant | 0 | 0 | The paper studies the pharmacokinetics of the radiotracer Tc-99m N-pyridoxyl-5-methyl-tryptophan for liver function assessment, not the drug tryptophan itself. |
+| popPK | Ivanov_2023 | irrelevant | 0 | 0 | The study focuses on the pharmacodynamic and anti-inflammatory properties of hypaphorine (a tryptophan derivative) analogs, not the pharmacokinetic disposition parameters of L-tryptophan itself. |
+| PGx | Izzo_2009 | not_relevant | 0 | 0 | The paper is a review of herbal drug interactions and contains a single case report where tryptophan is involved in a pharmacodynamic interaction (serotonin syndrome), but it does not report a pharmacogenomic effect on the PK/PD of tryptophan. |
+| PGx | Jang_2015 | not_relevant | 0 | 0 | The paper investigates enzyme engineering and substrate turnover (O-dealkylation), not a pharmacokinetic or pharmacodynamic effect of a drug (tryptophan is a residue in the protein, not the subject of PK/PD analysis). |
+| popPK | Ji_2021 | irrelevant | 0 | 0 | The study is a materials science/chemistry paper regarding a peptide ligand for terbium luminescence, not a pharmacokinetic study of the amino acid tryptophan. |
 | PD | Ji_2021 | not_relevant | 0 | 0 | The paper describes a chemical ligand for enhancing luminescence in a non-biological system (Tb3+ ion), not a pharmacodynamic drug response in a biological subject. |
-| popPK | Jia_2026 | irrelevant | 0 | 0 | This is a population PK study of rivaroxaban, not tryptophan; no tryptophan parameters appear. |
+| popPK | Jia_2026 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of rivaroxaban, not tryptophan. |
 | PD | Jia_2026 | not_relevant | 0 | 0 | The paper reports a population pharmacokinetic (PopPK) model for rivaroxaban, not tryptophan, and does not provide a pharmacodynamic (PD) model or numeric PD parameters (e.g., Emax, EC50) for the drug. |
-| popPK | Kang_2026 | irrelevant | 0 | 0 | This is a simulation study of multiple myeloma drugs (carfilzomib, lenalidomide, etc.), not tryptophan; no tryptophan PK parameters appear. |
+| popPK | Kang_2026 | irrelevant | 0 | 0 | The study concerns pharmacokinetic simulations for multiple myeloma drugs (carfilzomib, lenalidomide, etc.) and does not mention tryptophan or report any parameters for it. |
 | PD | Kang_2026 | not_relevant | 0 | 0 | The paper focuses on multiple myeloma drugs (carfilzomib, lenalidomide, etc.) and does not contain any data, analysis, or mention of tryptophan. |
-| popPK | Karlsen_2026 | irrelevant | 0 | 0 | A simulated-data framework for covariate model building benchmarking; tryptophan is not the subject drug and no tryptophan PK parameters are reported. |
+| popPK | Karlsen_2026 | irrelevant | 0 | 0 | The paper describes a simulation framework for benchmarking covariate model building methods and does not contain specific pharmacokinetic data or parameters for tryptophan. |
 | PD | Karlsen_2026 | not_relevant | 0 | 0 | The paper describes a framework for benchmarking covariate model building in population pharmacokinetics (PK) and does not report any pharmacodynamic (PD) or exposure-response relationships for tryptophan or any other drug. |
 | popPK | Kim_2016 | irrelevant | 0 | 0 | no_text gate: only 162 chars of text extracted (&lt; 400) |
-| PGx | Kliman_2018 | not_relevant | 0 | 0 | No gene variant/genotype effects on PK/PD parameters of tryptophan are reported; the study examines placental serotonin transport via inhibitors, not pharmacogenomics. |
-| PGx | Koh_2024 | not_relevant | 2 | 3 | Paper studies tryptophan-derived compounds as ABCB1 inhibitors; no gene variant/genotype effect on tryptophan PK/PD parameters is reported. |
-| PGx | Kou_2022 | not_relevant | 0 | 0 | No gene variant/genotype effect on PK/PD parameters of tryptophan; paper describes ROS/AhR signaling and tryptophan catabolism only. |
-| popPK | Kuroki_1988 | irrelevant | 0 | 0 | In-vitro plant enzyme kinetics study; tryptophan is only an enzyme activator/ligand, no PK parameters. |
+| PGx | Kliman_2018 | not_relevant | 0 | 0 | The paper describes the physiological transport pathways of serotonin (a neurohormone/endogenous metabolite) across the placenta and does not report pharmacokinetic or pharmacodynamic effects of a specific drug candidate based on gene variants. |
+| PGx | Koh_2024 | not_relevant | 0 | 0 | The paper investigates the development of tryptophan-derived compounds as ABCB1 inhibitors for cancer therapy, but does not report pharmacogenomic effects of gene variants on the PK or PD parameters of the drug tryptophan itself. |
+| PGx | Kou_2022 | not_relevant | 0 | 0 | The paper discusses oxidative stress and AhR signaling mechanisms, not a specific gene variant affecting the pharmacokinetics or pharmacodynamics of tryptophan as a drug. |
+| popPK | Kuroki_1988 | irrelevant | 0 | 0 | The study is an in-vitro enzymatic characterization of chorismate mutase in potato tubers, not a pharmacokinetic study of tryptophan. |
 | PD | Kuroki_1988 | not_relevant | 0 | 0 | The paper describes in vitro enzyme kinetics and purification of chorismate mutase, not a pharmacodynamic or exposure-response relationship for tryptophan in a biological system. |
-| popPK | Kwack_2026 | irrelevant | 0 | 0 | The paper is about an LLM tool for PopPK modeling using warfarin, theophylline, and tobramycin datasets; tryptophan is not studied at all. |
+| popPK | Kwack_2026 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of warfarin, theophylline, and tobramycin to benchmark an LLM agent, with no data for tryptophan. |
 | PD | Kwack_2026 | not_relevant | 0 | 0 | The paper focuses on automated population pharmacokinetic (PopPK) modeling for warfarin, theophylline, and tobramycin, and does not report any pharmacodynamic (PD) or exposure-response relationships. |
-| popPK | Ladva_2018 | irrelevant | 0 | 0 | Metabolomics study of air pollution exposure; tryptophan is only a pathway/metabolite mention, no PK parameters for tryptophan. |
-| PGx | Lamas_2016 | not_relevant | 2 | 4 | CARD9 genotype alters microbial tryptophan metabolite production (endogenous metabolism/inflammation), not a pharmacokinetic or pharmacodynamic parameter of a drug. |
-| popPK | Lang_2025 | irrelevant | 0 | 0 | Tryptophan is only used in a fluorescence quenching assay; the PK parameters reported are for dengue protease inhibitors, not tryptophan. |
+| popPK | Ladva_2018 | irrelevant | 0 | 0 | This is an environmental metabolomics study analyzing changes in tryptophan metabolism pathways due to air pollution, not a pharmacokinetic study of the drug tryptophan. |
+| PGx | Lamas_2016 | not_relevant | 0 | 0 | Tryptophan is an endogenous amino acid and precursor, not a drug, so its metabolism does not constitute a pharmacokinetic/pharmacodynamic parameter in the context of pharmacogenomics. |
+| popPK | Lang_2025 | irrelevant | 0 | 0 | The paper reports the discovery of dengue virus protease inhibitors, using tryptophan only as a tool in a fluorescence quenching assay, not as the subject of pharmacokinetic analysis. |
 | PD | Lawrie_1987 | not_relevant | 2 | 1 | The paper describes a qualitative dose-response relationship for saccharin's effect on metabolites (including indican from tryptophan) but does not provide numeric PD parameters (e.g., EC50, Emax) or a quantitative concentration-effect curve for tryptophan itself. |
 | PD | Li_1995 | not_relevant | 4 | 2 | The paper describes dose-response relationships for TCDD effects on tryptophan levels but does not provide numeric PD parameters (e.g., EC50, Emax) or a concentration-effect curve for tryptophan itself in the provided text. |
-| popPK | Li_2022 | irrelevant | 0 | 0 | This is an environmental epidemiology study of PM2.5 and gut-brain axis biomarkers; tryptophan appears only as metabolites, with no PK parameters. |
-| PGx | Li_2024 | not_relevant | 0 | 0 | This is a prognostic gene signature study in ccRCC; no gene variant effect on PK/PD parameters of tryptophan is reported. |
-| popPK | Li_2025 | irrelevant | 0 | 0 | This is a chemistry/antifungal activity study using d-tryptophan only as a synthetic starting material; no PK parameters for tryptophan are reported. |
+| popPK | Li_2022 | irrelevant | 0 | 0 | The paper is an observational epidemiological study linking PM2.5 to gut metabolites and does not report pharmacokinetic parameters (CL, V, ka, etc.) for tryptophan. |
+| PGx | Li_2024 | not_relevant | 0 | 0 | The paper studies the prognostic significance of a tryptophan metabolism-related gene signature in clear cell renal cell carcinoma, not the pharmacokinetics or pharmacodynamics of the amino acid tryptophan. |
+| popPK | Li_2025 | irrelevant | 0 | 0 | The paper is a medicinal chemistry study on synthesizing β-carboline derivatives using L-tryptophan as a starting material to test antifungal activity; it contains no pharmacokinetic data for tryptophan. |
 | PD | Li_2025 | not_relevant | 0 | 0 | The paper reports in vitro antifungal activity (EC50) of synthesized beta-carboline derivatives, not a pharmacodynamic or exposure-response relationship for the drug tryptophan itself. |
-| PGx | Li_2025_2 | not_relevant | 2 | 2 | Tryptophan metabolism changes are from Scg2 gene overexpression (gene therapy), not a gene variant/genotype altering a PK/PD parameter of a drug. |
-| popPK | Li_2026 | irrelevant | 0 | 0 | This is a PKPD modeling study of the antibody-drug conjugate PF-06804103, not of tryptophan; no tryptophan parameters appear. |
+| PGx | Li_2025_2 | not_relevant | 0 | 0 | The paper investigates gene therapy (Scg2 overexpression) for obesity and mentions activation of tryptophan metabolic pathways, but does not report a pharmacogenomic effect of a genetic variant on the pharmacokinetics or pharmacodynamics of the drug tryptophan. |
+| popPK | Li_2026 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of PF-06804103 (an antibody-drug conjugate), not tryptophan. |
 | PD | Li_2026 | not_relevant | 0 | 0 | The paper discusses a PK/PD modeling framework for PF-06804103 (an antibody-drug conjugate), not tryptophan. |
-| popPK | Li_2026_2 | irrelevant | 0 | 0 | This is a population PK study of gotistobart, a different drug; tryptophan is not the subject. |
+| popPK | Li_2026_2 | irrelevant | 0 | 0 | The paper reports pharmacokinetic parameters for the monoclonal antibody gotistobart, not for the drug tryptophan. |
 | PD | Li_2026_2 | not_relevant | 0 | 0 | The paper reports a population pharmacokinetic (PK) model for gotistobart, not tryptophan, and contains no pharmacodynamic (PD) or exposure-response analysis. |
-| popPK | Lin_1970 | irrelevant | 4 | 6 | In-vitro study of amino acid transport into dog bone marrow cells; tryptophan is one of several amino acids with compartmental turnover parameters (half-time 6.5 min, fractional rates in Table I), but this is cellular transport kinetics, not in-vivo pharmacokinetic disposition of tryptophan as a subject drug. |
-| popPK | Lin_2015 | irrelevant | 0 | 0 | In-vitro NMR study of fluorinated tryptophan-albumin binding/exchange, not a pharmacokinetic study with disposition parameters. |
-| popPK | Listro_2023 | irrelevant | 0 | 0 | Tryptophan is only used as a fluorescence probe in a biochemical/binding study; no PK parameters for tryptophan are reported. |
+| popPK | Lin_1970 | irrelevant | 2 | 6 | The study reports amino acid turnover kinetics (pool size, fractional rates) for dog bone marrow cells in vitro, which are cell transport parameters rather than systemic pharmacokinetic parameters (CL, Vd) for tryptophan as a drug. |
+| popPK | Lin_2015 | irrelevant | 1 | 1 | The study is an in-vitro NMR methodological validation measuring relaxation times and binding kinetics of a fluorinated analog, not in-vivo pharmacokinetic parameters. |
+| popPK | Listro_2023 | irrelevant | 0 | 0 | The study uses tryptophan fluorescence spectroscopy as a technique to study bacterial kinase binding and does not investigate the pharmacokinetics of the drug tryptophan. |
 | popPK | Liu_2015 | irrelevant | 0 | 0 | no_text gate: only 145 chars of text extracted (&lt; 400) |
-| PGx | Liu_2024 | not_relevant | 0 | 0 | Plant study of tryptophan as a metabolite/regulator in sorghum, not a drug with PK/PD parameters affected by genotype. |
-| popPK | Lo_2021 | irrelevant | 0 | 0 | This is an in-vitro electrophysiology study of kynurenic acid (a tryptophan metabolite) on K+ currents in cell lines, with no PK disposition parameters for tryptophan. |
-| PGx | Lu_2024 | not_relevant | 0 | 0 | Tryptophan is only listed as a constituent of the herbal formula; no gene variant effects on its PK/PD are reported. |
-| popPK | Lubberink_2020 | irrelevant | 3 | 2 | PET tracer kinetic modeling of [11C]5-HTP in monkey pancreas reports rate constants (k2, k3, kloss) but not disposition PK parameters (CL, V, half-life) for tryptophan itself, and numeric values are not given in the evidence. |
-| PGx | Ma_2023 | not_relevant | 0 | 0 | No gene variant/genotype effect on tryptophan PK/PD parameters; only microbiota-driven metabolite changes. |
-| PGx | Maes_2020 | not_relevant | 2 | 3 | PON1 genotype is associated with oxidative/immune biomarkers and symptom variance, not with any PK/PD parameter of a drug (tryptophan not dosed as drug). |
+| PGx | Liu_2024 | not_relevant | 0 | 0 | The paper investigates plant physiology (sorghum root growth) and does not report human pharmacokinetics or pharmacodynamics. |
+| popPK | Lo_2021 | irrelevant | 0 | 0 | The study investigates the pharmacodynamics of kynurenic acid (a tryptophan metabolite) on ion channels in cell lines, not the pharmacokinetics of tryptophan itself. |
+| PGx | Lu_2024 | not_relevant | 0 | 0 | The paper studies the pharmacological effects of a Chinese herbal formula on hyperuricemia nephropathy in mice and does not investigate the influence of gene variants on the PK/PD of tryptophan. |
+| popPK | Lubberink_2020 | irrelevant | 0 | 0 | The study investigates the kinetics of 5-Hydroxy-tryptophan (5-HTP), a metabolite, not the parent drug tryptophan itself. |
+| PGx | Ma_2023 | not_relevant | 0 | 0 | The paper discusses the physiological role of tryptophan metabolites in immune regulation, but does not report a pharmacokinetic or pharmacodynamic effect of tryptophan driven by a specific gene variant. |
+| PGx | Maes_2020 | not_relevant | 0 | 0 | The paper discusses tryptophan catabolites in the context of schizophrenia and immune responses, but does not report on the pharmacokinetics or pharmacodynamics of a drug or the tryptophan itself, nor does it assess a pharmacogenomic effect on a PK/PD parameter. |
 | popPK | Majewski_2018 | irrelevant | 0 | 0 | no_text gate: only 150 chars of text extracted (&lt; 400) |
-| popPK | Mamede_2025 | irrelevant | 0 | 0 | no_text gate: only 91 chars of text extracted (&lt; 400) |
+| popPK | Mamede_2025 | irrelevant | 0 | 0 | The study is a metabolomics investigation of tryptophan metabolism in Trypanosoma brucei, not a pharmacokinetic study of the drug tryptophan, and reports no disposition parameters. |
 | PD | Mamede_2025 | not_relevant | 0 | 0 | The paper studies a coumaroyltormentic acid derivative in Trypanosoma brucei, not the drug tryptophan, and does not report PD parameters for tryptophan. |
-| PGx | Mansouri_2022 | not_relevant | 0 | 0 | Tryptophan is only used in fluorescence assays of MPYS protein; no drug PK/PD parameter or pharmacogenomic effect is reported. |
-| popPK | Mantulin_1986 | irrelevant | 0 | 0 | This is an in-vitro fluorescence quenching study of apolipoprotein A-I; tryptophan is only a fluorescent residue, not a dosed drug with PK parameters. |
-| PGx | Matheus_2020 | not_relevant | 2 | 3 | No gene variant/genotype effect on tryptophan PK/PD parameters; only expression associations and in vitro drug effects reported. |
-| PGx | Maushagen_2025 | not_relevant | 0 | 0 | Tryptophan is an endogenous metabolite, not a drug; no pharmacogenomic effect on PK/PD parameters is reported. |
-| popPK | Meewan_2019 | irrelevant | 0 | 0 | This is a drug-discovery/virology paper about HCV protease inhibitors with a tryptophan-derived scaffold; no PK parameters for tryptophan are reported. |
-| PGx | Mellor_2022 | not_relevant | 0 | 0 | This is a metabolic engineering study of indican biosynthesis in tobacco chloroplasts; no gene variant/genotype effect on PK/PD parameters of tryptophan as a drug is reported. |
-| PGx | Milosavljevic_2025 | not_relevant | 3 | 4 | Reports Kmo genotype effects on endogenous tryptophan/kynurenine metabolites and behavior, not on a pharmacokinetic or pharmacodynamic parameter of an administered drug. |
-| popPK | Mitsumoto_2026 | irrelevant | 0 | 0 | Metabolomics study of ALS/TJ-68; tryptophan is only a measured metabolite, no PK disposition parameters reported. |
-| PGx | Morgan_2018 | not_relevant | 1 | 1 | Symposium summary mentions microbiota regulation via tryptophan metabolites, not a gene variant effect on tryptophan PK/PD. |
-| popPK | Morrison_2025 | irrelevant | 0 | 0 | Tryptophan is only a co-administered ingredient in a sleep/performance intervention study; no PK parameters are reported. |
-| popPK | Murase_1991 | irrelevant | 0 | 0 | This is an in-vitro enzyme mutagenesis study; tryptophan is an amino acid substitution, not a dosed drug, and no PK parameters appear. |
+| PGx | Mansouri_2022 | not_relevant | 0 | 0 | The paper discusses the evolution and fatty acid metabolism effects of the MPYS gene, and while it mentions "intrinsic tryptophan fluorescence" as a technique, it does not report pharmacogenomic effects on the PK or PD of the drug tryptophan. |
+| popPK | Mantulin_1986 | irrelevant | 0 | 0 | The paper is a biophysical study of apolipoprotein A-I fluorescence and protein dynamics, not a pharmacokinetic study of the drug tryptophan. |
+| PGx | Matheus_2020 | not_relevant | 0 | 0 | The paper reports that 1-methyl-D-tryptophan acts as an AHR agonist in bladder cancer cells, but it does not investigate how genetic variants affect its pharmacokinetics or pharmacodynamics. |
+| PGx | Maushagen_2025 | not_relevant | 0 | 0 | The paper examines the association of serum metabolite levels (including tryptophan) with hepatic phenotypes and genetics (mediation), but it does not report pharmacokinetic or pharmacodynamic parameters of tryptophan administration. |
+| popPK | Meewan_2019 | irrelevant | 0 | 0 | The study focuses on the antiviral activity of tryptophan derivatives as HCV inhibitors, not the pharmacokinetics of tryptophan itself. |
+| PGx | Mellor_2022 | not_relevant | 0 | 0 | The paper concerns metabolic engineering in tobacco plants to produce indican and does not study human pharmacogenomics or tryptophan pharmacokinetics in patients. |
+| PGx | Milosavljevic_2025 | not_relevant | 0 | 0 | The study focuses on the kynurenine pathway of tryptophan metabolism in mice, not on the pharmacokinetics or pharmacodynamics of a specific drug compound. |
+| popPK | Mitsumoto_2026 | irrelevant | 0 | 0 | This is a metabolomic study of ALS patients measuring endogenous metabolite levels (including tryptophan) rather than a pharmacokinetic study of tryptophan administration, so no disposition parameters are reported. |
+| PGx | Morgan_2018 | not_relevant | 0 | 0 | The paper discusses physiological regulation of drug metabolism (e.g., microbiome, pregnancy) and mentions tryptophan in the context of microbial regulation, but does not report a pharmacogenomic effect (gene variant) on tryptophan PK/PD. |
+| popPK | Morrison_2025 | irrelevant | 0 | 0 | The study examines the effects of a nutritional supplement containing tryptophan on sleep and performance, not the pharmacokinetics of tryptophan itself. |
+| popPK | Murase_1991 | irrelevant | 0 | 0 | The paper describes an enzymatic mutation where a cysteine residue was replaced by tryptophan in aspartase, not the pharmacokinetics of tryptophan as a drug. |
 | PD | Murase_1991 | not_relevant | 0 | 0 | The paper describes a site-directed mutagenesis study of an enzyme (aspartase) where tryptophan is an amino acid substitution, not a drug; it reports kinetic parameters (kcat, Hill coefficient) for the mutant enzyme, not a pharmacodynamic exposure-response relationship for tryptophan as a therapeutic agent. |
-| popPK | Murata_2025 | irrelevant | 0 | 0 | Tryptophan is only a biomarker ratio component in a ketamine response study; no PK parameters for tryptophan are reported. |
-| popPK | Muzik_1997 | irrelevant | 4 | 3 | PET tracer kinetic modeling of [C-11]AMT (a tryptophan analogue) in brain for serotonin synthesis; not disposition PK of tryptophan itself, and no numeric parameter values are given in the evidence. |
-| popPK | Möckel_1994 | irrelevant | 0 | 0 | This is a bacterial enzyme biochemistry study with no pharmacokinetic parameters for tryptophan; tryptophan synthase is only mentioned as a structural comparison. |
+| popPK | Murata_2025 | irrelevant | 0 | 0 | The study measures tryptophan as a biomarker for ketamine response prediction, not as a subject drug for pharmacokinetic parameter estimation. |
+| popPK | Muzik_1997 | irrelevant | 0 | 0 | The study focuses on the PET tracer [C-11]alpha-methyl-tryptophan (AMT) as a proxy for serotonin synthesis, not the pharmacokinetics of L-tryptophan itself. |
+| popPK | Möckel_1994 | irrelevant | 0 | 0 | The paper is a biochemical/structural study of threonine dehydratase enzymes in bacteria, not a pharmacokinetic study of the drug tryptophan. |
 | PD | Möckel_1994 | not_relevant | 0 | 0 | The paper describes biochemical characterization of threonine dehydratase mutants and their structural similarity to tryptophan synthase, but does not report any pharmacodynamic or exposure-response relationship for the drug tryptophan. |
-| popPK | Müller_2023 | irrelevant | 0 | 0 | This is a microbial bioproduction study of engineered E. coli, not a pharmacokinetic study of tryptophan disposition; no PK parameters are reported. |
-| popPK | Müller_2024 | irrelevant | 0 | 0 | This is a bioprocess/metabolic engineering study of violacein production in E. coli co-cultures; tryptophan is only an auxotrophy metabolite, with no pharmacokinetic disposition parameters. |
-| PGx | Naito_2026 | not_relevant | 1 | 5 | No gene variant/genotype/phenotype is studied; effects of tryptophan metabolites on MDR1 protein expression are metabolite- and diet-driven, not pharmacogenomic. |
-| PGx | Nessler_2020 | not_relevant | 0 | 0 | Tryptophan is a dietary component in a diet-based treatment, not a drug with PK/PD parameters; no gene variant effect on tryptophan pharmacokinetics or pharmacodynamics is reported. |
-| popPK | Nøhr_2015 | irrelevant | 0 | 0 | Tryptophan is only a co-administered PAT1-ligand probe; the PK model and parameters concern vigabatrin, not tryptophan. |
-| popPK | Ooi_2026 | irrelevant | 0 | 0 | This is a population PK study of elafibranor and its metabolite GFT1007, not tryptophan; no tryptophan parameters are reported. |
+| popPK | Müller_2023 | irrelevant | 0 | 0 | The study is a bioprocess/microbial engineering paper on *E. coli* co-cultures and does not report pharmacokinetic parameters for tryptophan in an animal or human host. |
+| popPK | Müller_2024 | irrelevant | 0 | 0 | This is a synthetic biology/bioprocess engineering study on violacein production in E. coli, not a pharmacokinetic study of tryptophan. |
+| PGx | Naito_2026 | not_relevant | 0 | 0 | The paper investigates the regulation of MDR1 expression by tryptophan metabolites (IAA and skatole) in cell culture, but does not report pharmacogenomic effects of gene variants on the PK or PD of tryptophan. |
+| PGx | Nessler_2020 | not_relevant | 0 | 0 | The paper reports a genetic variant (PCK2) associated with a clinical phenotype (PED), but it does not report how this genotype affects the pharmacokinetics or pharmacodynamics of a specific drug, nor does it report PK/PD parameters for tryptophan. |
+| popPK | Nøhr_2015 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of vigabatrin, with tryptophan used only as a co-administered ligand to probe transport mechanisms. |
+| popPK | Ooi_2026 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of elafibranor, a completely different drug, and does not mention or provide data for tryptophan. |
 | PD | Ooi_2026 | not_relevant | 0 | 0 | The paper describes pharmacokinetic-pharmacodynamic analyses for elafibranor, not tryptophan. |
-| PGx | Orabona_2018 | not_relevant | 3 | 2 | Paper studies IDO1 SNPs in T1D incidence, not effects of variants on PK/PD parameters of tryptophan. |
-| PGx | Orhan_2025 | not_relevant | 2 | 3 | No gene variant effect on PK/PD parameters of tryptophan is reported; KYNA metabolism and schizophrenia risk genetics only, no pharmacogenomic effect sizes. |
+| PGx | Orabona_2018 | not_relevant | 0 | 0 | The paper focuses on IDO1 deficiency and juvenile diabetes, not the pharmacokinetics or pharmacodynamics of the drug tryptophan. |
+| PGx | Orhan_2025 | not_relevant | 0 | 0 | The paper studies the role of a metabolite (kynurenic acid) and genetic risk variants in schizophrenia pathophysiology, not the pharmacokinetics or pharmacodynamics of tryptophan as a drug. |
 | PD | Pagire_2022 | not_relevant | 3 | 2 | The paper reports an in vitro IC50 for a TPH1 inhibitor and qualitative in vivo efficacy (weight/fat reduction) but does not provide a concentration-effect or dose-response curve, nor does it report numeric PD parameters (Emax, EC50, slope) for the drug's effect in the biological system. |
-| popPK | Panda_2016 | irrelevant | 0 | 0 | This is a medicinal chemistry paper on IDO1 inhibitors; tryptophan is only a substrate of the target enzyme, with no PK parameters reported. |
+| popPK | Panda_2016 | irrelevant | 0 | 0 | The paper is a medicinal chemistry study on IDO1 inhibitors and does not report pharmacokinetic parameters (CL, V, ka, etc.) for tryptophan itself. |
 | PD | Panda_2016 | not_relevant | 0 | 0 | The paper reports in vitro enzyme inhibition (IC50) of IDO1 by synthesized compounds, not a pharmacodynamic exposure-response or dose-response relationship for tryptophan itself. |
-| PGx | Park_2020 | not_relevant | 0 | 0 | No gene variant/genotype/phenotype effect on PK/PD parameters of tryptophan is reported; the study examines AhR activation by metabolites/drugs. |
-| PGx | Patel_2014 | not_relevant | 0 | 0 | Tryptophan is a prodrug promoiety conjugated to lopinavir; no gene variant/genotype/phenotype effect on PK or PD parameters is reported. |
-| PGx | Pho_2022 | not_relevant | 1 | 5 | Tryptophan is an endogenous amino acid, not a drug; Tph2 knockout alters serotonin synthesis and physiology, not a PK/PD parameter of tryptophan. |
-| popPK | Poulsen_1993 | irrelevant | 0 | 0 | In-vitro enzyme kinetics study of anthranilate synthase; tryptophan is only an inhibitor, no PK disposition parameters. |
+| PGx | Park_2020 | not_relevant | 0 | 0 | The paper discusses AhR agonist activity of dopamine and tryptophan metabolites but does not report a pharmacogenomic effect (gene variant/genotype) on the PK or PD of tryptophan. |
+| PGx | Patel_2014 | not_relevant | 0 | 0 | The paper studies amino acid prodrugs of lopinavir (including tryptophan conjugates) but does not report any pharmacogenomic effects or genetic variants influencing PK/PD parameters. |
+| PGx | Pho_2022 | not_relevant | 0 | 0 | The paper studies the physiological effects of a gene knockout (Tph2) on serotonin deficiency and breathing, but does not report the pharmacokinetics or pharmacodynamics of tryptophan as a drug. |
+| popPK | Poulsen_1993 | irrelevant | 0 | 0 | The paper is an in-vitro enzymology study on anthranilate synthase characterization, where tryptophan serves only as an inhibitor, and no pharmacokinetic parameters (CL, V, etc.) are reported. |
 | PD | Poulsen_1993 | not_relevant | 3 | 2 | The paper reports in vitro enzyme kinetics (Km, Hill coefficient) for anthranilate synthase inhibition by tryptophan, which is a biochemical mechanism study, not a pharmacodynamic (exposure-response) analysis of drug effect in a biological system or patient. |
-| PGx | Qi_2022 | not_relevant | 1 | 3 | Tryptophan is an endogenous metabolite, not a drug; genetic associations with metabolite levels are not pharmacogenomic PK/PD effects. |
+| PGx | Qi_2022 | not_relevant | 0 | 0 | The paper investigates the impact of a host gene variant on endogenous metabolic levels (indolepropionate) and T2D risk, not a PK or PD parameter of an exogenous pharmaceutical drug. |
 | PD | Qu_2021 | not_relevant | 0 | 0 | The paper is a network pharmacology and metabolomics study that identifies tryptophan metabolism as a pathway but does not report any quantitative exposure-response or dose-response data, concentration-effect curves, or numeric PD parameters for tryptophan. |
-| PGx | RIZKI_1963 | not_relevant | 1 | 3 | Tryptophan is a dietary precursor, not a drug; gene variants alter kynurenine metabolite distribution/synthesis, not a PK or PD parameter of tryptophan. |
-| PGx | Reichardt_1991 | not_relevant | 0 | 0 | Tryptophan appears only as a substituted amino acid in GALT mutations; no drug PK/PD pharmacogenomic effect is reported. |
-| popPK | Ren_2025 | irrelevant | 0 | 0 | This is a pesticide chemistry paper; tryptophan appears only as a metabolic pathway in rice, with no PK parameters for tryptophan. |
-| PGx | Rizuan_2024 | not_relevant | 0 | 0 | Structural biology of TDP-43 protein oligomerization; no drug, PK/PD parameters, or pharmacogenomic effects. |
-| PGx | Rolfes_2021 | not_relevant | 2 | 5 | No gene variant/genotype/phenotype is linked to a PK/PD parameter; effects are drug/enzyme inhibition and AHR knockdown, not pharmacogenomic variation. |
+| PGx | RIZKI_1963 | not_relevant | 0 | 0 | The paper studies the genetic regulation of kynurenine synthesis and distribution in Drosophila fatbody cells, not the pharmacokinetics or pharmacodynamics of tryptophan as a drug. |
+| PGx | Reichardt_1991 | not_relevant | 0 | 0 | The paper describes galactosemia mutations affecting the enzyme GALT, not pharmacokinetic or pharmacodynamic effects of a drug on tryptophan. |
+| popPK | Ren_2025 | irrelevant | 0 | 0 | The paper studies synthetic sulfonamide pesticides and mentions tryptophan only as a metabolic pathway regulated by the compound, not as the subject of a pharmacokinetic study. |
+| PGx | Rizuan_2024 | not_relevant | 0 | 0 | The paper investigates the structural biology of TDP-43 protein multimerization and its relation to neurodegenerative diseases, not the pharmacogenomics of tryptophan as a drug or metabolite. |
+| PGx | Rolfes_2021 | not_relevant | 0 | 0 | The study investigates the mechanism of vemurafenib-induced phototoxicity via the AHR/CYP1A1 axis and FICZ metabolism, but does not report a pharmacogenomic effect (gene variant) on the PK or PD of tryptophan. |
 | PD | Röhrig_2022 | not_relevant | 0 | 0 | The paper reports in vitro enzymatic and cellular IC50 values for IDO1 inhibitors, which are pharmacodynamic potency metrics, but it does not report an exposure-response or dose-response relationship for tryptophan itself, nor does it provide PK/PD modeling parameters (e.g., Emax, EC50 for tryptophan concentration) for the drug. |
-| popPK | Scrutton_1992 | irrelevant | 0 | 0 | This is an enzyme mutation study; tryptophan is an amino acid residue substitution, not a dosed drug, and no PK parameters appear. |
+| popPK | Scrutton_1992 | irrelevant | 0 | 0 | The study investigates the structural and kinetic effects of introducing a tryptophan residue into a bacterial enzyme (glutathione reductase), rather than the pharmacokinetics of the drug tryptophan. |
 | PD | Scrutton_1992 | not_relevant | 0 | 0 | The paper describes a structural biology and enzymology study of a mutated enzyme (glutathione reductase) and does not report pharmacodynamic or exposure-response relationships for the drug tryptophan. |
-| popPK | Serkland_2026 | irrelevant | 0 | 0 | This is a population PKPD study of ocrelizumab, not tryptophan; no tryptophan parameters appear. |
-| popPK | Serrano-Villar_2026 | irrelevant | 0 | 0 | Tryptophan is only used as a biomarker ratio (kynurenine/tryptophan) in an HIV ART trial; no PK parameters for tryptophan are reported. |
-| popPK | Sha_2022 | irrelevant | 0 | 0 | This is a biomarker study of endogenous tryptophan/kynurenine metabolites predicting depression; no dosing, no PK disposition parameters (CL, V, ka, half-life) for tryptophan are reported, and metabolite levels are in supplementary tables not provided. |
-| popPK | Shaw_1975 | relevant | 7 | 2 | Compartmental PK/flux analysis of tryptophan itself in humans, but no numeric parameter values are present in the evidence. |
-| popPK | Sheng_2021 | irrelevant | 0 | 0 | Tryptophan is only a synthetic precursor for β-carboline antifungal compounds; no PK parameters for tryptophan are reported. |
+| popPK | Serkland_2026 | irrelevant | 0 | 0 | The study reports pharmacokinetic parameters for the drug ocrelizumab (OCR), not for tryptophan. |
+| popPK | Serrano-Villar_2026 | irrelevant | 0 | 0 | The study measures the kynurenine/tryptophan ratio as a biomarker of inflammation in HIV patients on antiretroviral therapy, rather than performing a pharmacokinetic study on tryptophan as the subject drug. |
+| popPK | Sha_2022 | irrelevant | 0 | 0 | This is a biomarker study for depression in pregnancy measuring cytokines and tryptophan metabolites, not a pharmacokinetic study reporting disposition parameters (CL, V, etc.) for tryptophan. |
+| popPK | Shaw_1975 | relevant | 9 | 1 | The study reports quantitative disposition parameters for tryptophan using compartmental analysis, but the specific numeric values are not present in the provided abstract/evidence. |
+| popPK | Sheng_2021 | irrelevant | 0 | 0 | The study reports in vitro antifungal activity of synthesized compounds derived from tryptophan, not the pharmacokinetics of tryptophan itself. |
 | PD | Sheng_2021 | not_relevant | 3 | 2 | The paper reports single-point EC50 values for antifungal activity but does not provide a full dose-response curve, PK/PD model, or dynamic exposure-response relationship for tryptophan. |
 | popPK | Shi_2017 | irrelevant | 0 | 0 | no_text gate: only 115 chars of text extracted (&lt; 400) |
 | PD | Shi_2017 | not_relevant | 0 | 0 | The paper focuses on the pharmacokinetics and pharmacodynamics of epacadostat, not tryptophan. |
-| PGx | Shi_2020 | not_relevant | 0 | 0 | Study of diet effects on tryptophan metabolism in rats; no gene variant/genotype affecting PK/PD parameters reported. |
-| popPK | Shuke_1992 | irrelevant | 0 | 0 | Tryptophan appears only as a component of the radiolabeled imaging agent 99mTc-PMT; the PK parameters are for the tracer agents, not for tryptophan itself. |
-| popPK | Soeorg_2026 | irrelevant | 0 | 0 | This is a PK/PD model of meropenem and colistin/polymyxin B against A. baumannii; tryptophan is not involved at all. |
-| popPK | Solvang_2019 | irrelevant | 0 | 0 | Biomarker association study of tryptophan metabolites in dementia; no PK parameters or disposition values reported. |
-| popPK | Sonklin_2021 | irrelevant | 0 | 0 | no_text gate: only 82 chars of text extracted (&lt; 400) |
+| PGx | Shi_2020 | not_relevant | 1 | 2 | The paper investigates the effects of diet on gut microbiota and tryptophan metabolism in rats, not the effect of a gene variant on the PK/PD of tryptophan. |
+| popPK | Shuke_1992 | irrelevant | 0 | 0 | The paper investigates the pharmacokinetics of radiopharmaceutical agents (99mTc-GSA, 99mTc-PMT, 99mTc-Sn colloid) for liver imaging, not the disposition of the drug tryptophan itself. |
+| popPK | Soeorg_2026 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics and pharmacodynamics of meropenem and colistin/polymyxin B in Acinetobacter baumannii, not tryptophan. |
+| popPK | Solvang_2019 | irrelevant | 0 | 0 | This is a biomarker study assessing associations between metabolite levels and dementia symptoms, not a pharmacokinetic study reporting disposition parameters like clearance or volume. |
+| popPK | Sonklin_2021 | irrelevant | 0 | 0 | The paper characterizes antioxidant properties of mung bean peptides and mentions tryptophan only as an amino acid residue influencing peptide activity, not as a drug subject to pharmacokinetic analysis. |
 | PD | Sonklin_2021 | not_relevant | 0 | 0 | The paper focuses on the functional characterization of antioxidant peptides from mung bean meal, not on the pharmacodynamics or exposure-response relationship of tryptophan. |
-| popPK | Spier_2000 | irrelevant | 0 | 0 | This is a molecular biology study of tryptophan residues in receptor binding domains, not a pharmacokinetic study of tryptophan as a drug. |
+| popPK | Spier_2000 | irrelevant | 0 | 0 | This is a mechanistic in-vitro study on the structure of the 5-HT3 receptor, not a pharmacokinetic study of tryptophan as a drug. |
 | PD | Spier_2000 | not_relevant | 0 | 0 | The paper investigates the structural role of tryptophan residues in the 5-HT3 receptor via mutagenesis, not the pharmacodynamics of tryptophan as a drug or exposure-response relationship. |
-| popPK | Suthahar_2026 | irrelevant | 0 | 0 | This is a systematic review of population PK models for 5-fluorouracil, not tryptophan; no tryptophan parameters are reported. |
+| popPK | Suthahar_2026 | irrelevant | 0 | 0 | The paper is a systematic review regarding the pharmacokinetics of 5-fluorouracil, not tryptophan. |
 | PD | Suthahar_2026 | not_relevant | 0 | 0 | The paper is a systematic review of population pharmacokinetic (PK) models for 5-fluorouracil and does not report any pharmacodynamic (PD) or exposure-response relationships for tryptophan or any other drug. |
-| popPK | Szűcs_2020 | irrelevant | 1 | 2 | This is a peptide synthesis/pharmacology study of opioid peptides containing kynurenine residues; tryptophan is not the subject drug and no PK disposition parameters (CL, V, ka, compartmental model) are reported — only a plasma stability t1/2 = 47 min for a synthetic peptide in vitro. |
-| popPK | Sürmelioğlu_2026 | irrelevant | 0 | 0 | This is a systematic review of vancomycin PopPK studies; tryptophan is not the subject drug and no tryptophan parameters appear. |
+| popPK | Szűcs_2020 | irrelevant | 0 | 0 | The study focuses on the pharmacology of synthesized kynurenine-containing opioid peptides, not the population pharmacokinetics of tryptophan itself. |
+| popPK | Sürmelioğlu_2026 | irrelevant | 0 | 0 | The paper is a systematic review of population pharmacokinetic studies for vancomycin, not tryptophan. |
 | PD | Sürmelioğlu_2026 | not_relevant | 0 | 0 | The paper is a systematic review of population pharmacokinetic (PopPK) studies for vancomycin, focusing on PK parameters and dosing optimization, with no report of pharmacodynamic (PD) or exposure-response models/parameters. |
 | popPK | Taleb_2017 | irrelevant | 0 | 0 | no_text gate: only 106 chars of text extracted (&lt; 400) |
 | PD | Taleb_2017 | not_relevant | 0 | 0 | The paper focuses on the chemical stability of a glucagon formulation and does not contain any pharmacodynamic or exposure-response analysis for tryptophan. |
-| popPK | Tan_2026 | irrelevant | 0 | 0 | This is a busulfan population PK study; tryptophan is not mentioned at all. |
+| popPK | Tan_2026 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of busulfan, not tryptophan. |
 | PD | Tan_2026 | not_relevant | 0 | 0 | The paper focuses on pharmacokinetic (PK) modeling and limited sampling strategies for busulfan, with no pharmacodynamic (PD) or exposure-response analysis for tryptophan or any other drug. |
-| PGx | Tanaka_2021 | not_relevant | 0 | 0 | Beetle behavioral genomics study of tryptophan metabolism pathway variants; no drug PK/PD parameters. |
-| PGx | Thome_2024 | not_relevant | 2 | 3 | Tryptophan is an endogenous metabolite, not a drug; AHR allele affinity differences affect metabolite signaling/mitochondrial function, not PK/PD parameters of a pharmacologic agent. |
+| PGx | Tanaka_2021 | not_relevant | 0 | 0 | The paper characterizes genomic differences between beetle strains regarding behavioral traits and mentions tryptophan metabolism as a pathway, but does not report any pharmacokinetic or pharmacodynamic parameters of tryptophan as a drug. |
+| PGx | Thome_2024 | not_relevant | 0 | 0 | The study investigates the pathological role of tryptophan-derived metabolites and AHR signaling in chronic kidney disease, not pharmacogenomic effects on drug PK/PD. |
 | PD | Tijono_2022 | not_relevant | 3 | 2 | The paper reports IC50 values for enzyme inhibition and qualitative in vivo effects (K:T ratio reduction, tumor growth delay) but does not provide a pharmacodynamic model, dose-response curve, or numeric PD parameters (like Emax or EC50) for the drug's effect in the context of PK/PD analysis. |
-| popPK | Tosca_2025 | irrelevant | 0 | 0 | A review/perspective on LLMs in pharmacometrics with no tryptophan PK data or parameters. |
+| popPK | Tosca_2025 | irrelevant | 0 | 0 | The paper is a review on the application of Large Language Models in pharmacometrics and contains no data, models, or parameters for tryptophan. |
 | PD | Tosca_2025 | not_relevant | 0 | 0 | The paper is a conceptual review on the application of Large Language Models in pharmacometrics and does not report any specific pharmacodynamic data or parameters for tryptophan. |
-| popPK | Visser_2014 | irrelevant | 3 | 2 | PET tracer kinetic modeling of [(11)C]5-HTP in rat brain for serotonin synthesis, not disposition PK of tryptophan itself; no numeric CL/V/ka values present in the evidence. |
-| PGx | WEED_1963 | not_relevant | 0 | 0 | Bacterial copper-induced variants affecting tryptophan auxotrophy; no gene variant effect on PK/PD parameters of a drug. |
-| PGx | Walston_1995 | not_relevant | 0 | 0 | Tryptophan is an amino acid in the receptor sequence, not a drug; no PK/PD pharmacogenomic effect reported. |
-| popPK | Wang_2015 | irrelevant | 0 | 0 | Tryptophan is only a metabolomics endpoint after dosing a different drug (myclobutanil) in vitro; no tryptophan PK parameters. |
-| PGx | Wang_2024 | not_relevant | 0 | 0 | No drug or pharmacogenomic effect on PK/PD parameters; tryptophan is studied as a disease-related metabolite, not a drug. |
+| PGx | Ugartemendia_2021 | not_relevant | 3 | 5 | The paper investigates a nutritional intervention (diet) rather than the pharmacokinetics/pharmacodynamics of a pharmaceutical drug, and the reported effects are on clinical endpoints (depression, cognition) and metabolic markers (5-HIAA) without fitted pharmacokinetic parameters. |
+| popPK | Visser_2014 | irrelevant | 0 | 0 | The study investigates the kinetics of a PET tracer ([(11)C]5-HTP) in rat brain, not the systemic or population pharmacokinetics of the drug tryptophan itself. |
+| PGx | WEED_1963 | not_relevant | 0 | 0 | The paper studies the effects of copper on Bacillus subtilis and mentions tryptophan auxotrophy, but it does not report pharmacogenomic effects on the pharmacokinetics or pharmacodynamics of the drug tryptophan. |
+| PGx | Walston_1995 | not_relevant | 0 | 0 | The paper reports a missense mutation in the beta 3-adrenergic receptor gene resulting in an amino acid change from Tryptophan to Arginine (Trp64Arg); it does not study Tryptophan as a drug/compound or report pharmacogenomic effects on its PK/PD. |
+| popPK | Wang_2015 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics and metabolism of the fungicide myclobutanil in rat hepatocytes, using tryptophan only as a metabolic pathway probe/subject of disturbance rather than the subject drug for PK parameter determination. |
+| PGx | Wang_2024 | not_relevant | 0 | 0 | The study analyzes disease pathogenesis and metabolite levels in schizophrenia, not the pharmacokinetics or pharmacodynamics of tryptophan as a therapeutic agent in response to genetic variants. |
 | PD | Wang_2024_2 | not_relevant | 2 | 1 | The paper reports epidemiological associations and mediation analysis between arsenic exposure, tryptophan levels, and cognitive scores, but does not provide a pharmacodynamic model or numeric PD parameters (e.g., Emax, EC50) for tryptophan itself. |
 | PD | Wang_2024_3 | not_relevant | 3 | 2 | The paper reports in vitro IC50 values for IDO1 inhibition and qualitative in vivo anti-inflammatory effects, but does not provide a pharmacokinetic/pharmacodynamic (PK/PD) model, exposure-response analysis, or dose-response curve with numeric PD parameters (e.g., Emax, EC50) for the drug in a biological system. |
-| PGx | Wang_2025 | not_relevant | 0 | 0 | No gene variant/genotype/phenotype effect on tryptophan PK/PD parameters; study concerns probiotic metabolism of tryptophan via ILA/AHR in mice. |
-| popPK | Wang_2026 | irrelevant | 0 | 0 | This is a population PK model library for polymyxin B, not tryptophan; no tryptophan parameters appear. |
+| PGx | Wang_2025 | not_relevant | 0 | 0 | The paper studies a probiotic strain's metabolic effect on a depression model and does not report a pharmacogenomic effect on tryptophan's PK/PD parameters. |
+| popPK | Wang_2026 | irrelevant | 0 | 0 | The paper concerns the pharmacokinetics of polymyxin B, not tryptophan. |
 | PD | Wang_2026 | not_relevant | 0 | 0 | The paper focuses exclusively on population pharmacokinetic (PK) modeling of polymyxin B and does not report any pharmacodynamic (PD) or exposure-response relationships for tryptophan. |
-| popPK | Wanika_2026 | irrelevant | 3 | 0 | A methods paper on uncertainty quantification using simulated data; no tryptophan PK parameters reported. |
+| popPK | Wanika_2026 | irrelevant | 0 | 0 | The paper is a methodological case study using simulated data for a generic drug and does not report pharmacokinetic parameters for tryptophan. |
 | PD | Wanika_2026 | not_relevant | 0 | 0 | The paper is a methodological case study on uncertainty quantification for PK models using simulated data and does not report any pharmacodynamic or exposure-response relationships for tryptophan. |
-| popPK | Wess_1993 | irrelevant | 0 | 0 | Tryptophan here is an amino acid residue in receptor mutagenesis, not the drug tryptophan; no PK parameters. |
+| popPK | Wess_1993 | irrelevant | 0 | 0 | This is a structural biology/mutational analysis study of G-protein coupled receptors, not a pharmacokinetic study of the drug tryptophan. |
 | PD | Wess_1993 | not_relevant | 0 | 0 | The paper studies the functional role of conserved amino acid residues (proline and tryptophan) in a GPCR via mutagenesis, not the pharmacodynamics of tryptophan as a drug or ligand. |
-| popPK | Wu_2026 | irrelevant | 0 | 0 | This is a population PK study of bosutinib, not tryptophan; tryptophan is not the subject drug. |
+| popPK | Wu_2026 | irrelevant | 0 | 0 | The study reports population pharmacokinetic parameters for bosutinib, not tryptophan. |
 | PD | Wu_2026 | not_relevant | 0 | 0 | The paper reports a population pharmacokinetic (PK) model for bosutinib, not tryptophan, and contains no pharmacodynamic (PD) or exposure-response analysis. |
-| popPK | Xajil-Ramos_2026 | irrelevant | 0 | 0 | This is a population PK study of tacrolimus, not tryptophan; no tryptophan parameters are reported. |
+| popPK | Xajil-Ramos_2026 | irrelevant | 0 | 0 | The study reports pharmacokinetic parameters for tacrolimus, not tryptophan. |
 | PD | Xajil-Ramos_2026 | not_relevant | 0 | 0 | The paper reports a population pharmacokinetic (PopPK) model for tacrolimus, not tryptophan, and contains no pharmacodynamic or exposure-response analysis. |
-| popPK | Xie_2026 | irrelevant | 0 | 0 | This is a population PK study of daptomycin, not tryptophan; no tryptophan parameters are reported. |
+| popPK | Xie_2026 | irrelevant | 0 | 0 | The paper focuses on daptomycin, not tryptophan. |
 | PD | Xie_2026 | not_relevant | 0 | 0 | The paper focuses on daptomycin population pharmacokinetics (PopPK) and precision dosing, not tryptophan, and does not report any pharmacodynamic (PD) or exposure-response parameters. |
 | popPK | Xu_2020 | irrelevant | 0 | 0 | no_text gate: only 134 chars of text extracted (&lt; 400) |
 | PD | Xu_2020 | not_relevant | 0 | 0 | The paper focuses on the mechanism of algae inhibition by Spartina alterniflora and does not report any pharmacodynamic or exposure-response data for tryptophan. |
-| popPK | Yang_2022 | irrelevant | 0 | 0 | Tryptophan appears only as a fluorescence marker in EPS of activated sludge; no PK parameters for tryptophan are reported. |
+| popPK | Yang_2022 | irrelevant | 0 | 0 | The study investigates the inhibition of nitrification by 3,5-dichlorophenol and mentions tryptophan only as a fluorescent component in extracellular polymeric substances, not as a drug subject to pharmacokinetic analysis. |
 | PD | Yang_2022 | not_relevant | 0 | 0 | The paper investigates the inhibition of nitrification by 3,5-dichlorophenol, not the pharmacodynamics of tryptophan; tryptophan is only mentioned as a fluorescent component in EPS. |
-| PGx | Yang_2024 | not_relevant | 0 | 0 | Enzyme mutagenesis/structural study of ACMSD catalysis; no gene variant effect on in vivo PK/PD parameters of tryptophan. |
-| PGx | Yin_2016 | not_relevant | 3 | 5 | Reports genotype association with antidepressant treatment response (clinical outcome), not a PK/PD parameter of tryptophan. |
+| PGx | Yang_2024 | not_relevant | 0 | 0 | The paper describes the crystal structure and enzymatic activity (tautomerization) of the enzyme ACMSD, but does not report any pharmacogenomic effects of genetic variants on pharmacokinetic or pharmacodynamic parameters of tryptophan or any drug. |
+| PGx | Yin_2016 | not_relevant | 0 | 0 | The study assesses clinical antidepressant response to SSRIs (clinical outcome), not pharmacokinetic (PK) or pharmacodynamic (PD) parameters of the specific compound tryptophan. |
 | popPK | Yousof_2024 | irrelevant | 0 | 0 | no_text gate: only 161 chars of text extracted (&lt; 400) |
 | PD | Yousof_2024 | not_relevant | 0 | 0 | The paper focuses on the identification of metabolites from Brucea javanica and their binding affinities for dengue virus enzymes, with no mention of tryptophan or any pharmacodynamic/exposure-response analysis. |
 | PD | Yu_2017 | not_relevant | 0 | 0 | The paper reports a herbicide dose-response relationship for cyhalofop-butyl in weeds, not a pharmacodynamic relationship for the drug tryptophan. |
-| popPK | Zahed_2021 | irrelevant | 0 | 0 | Epidemiological biomarker study of blood concentrations, not a PK study; no tryptophan dosing or disposition parameters (CL, V, half-life) reported. |
-| popPK | Zaidi_2026 | irrelevant | 0 | 0 | Systematic review of opioid PopPK/PBPK models in pregnancy; tryptophan is not the subject drug and no numeric parameters are present. |
+| popPK | Zahed_2021 | irrelevant | 0 | 0 | The study is an epidemiological analysis of blood biomarker concentrations (levels) in healthy adults, not a pharmacokinetic study measuring clearance, volume, or elimination parameters for tryptophan as a drug. |
+| popPK | Zaidi_2026 | irrelevant | 0 | 0 | The paper is a systematic review of opioid pharmacokinetics in pregnancy and does not involve tryptophan. |
 | PD | Zaidi_2026 | not_relevant | 0 | 0 | The paper is a systematic review of opioid pharmacokinetics in pregnancy and does not contain any data, analysis, or parameters related to tryptophan. |
-| PGx | Zeng_2018 | not_relevant | 0 | 0 | GWAS of longevity; no drug, no PK/PD parameters, and tryptophan not studied. |
-| popPK | Zhang_2024 | irrelevant | 0 | 0 | This is a fungicide discovery study; tryptophan is only a metabolic pathway mentioned in transcriptomics, with no PK parameters for tryptophan. |
+| PGx | Zeng_2018 | not_relevant | 0 | 0 | The study focuses on genetic associations with longevity in humans and does not involve the drug tryptophan or its pharmacokinetic/pharmacodynamic parameters. |
+| popPK | Zhang_2024 | irrelevant | 0 | 0 | The study focuses on the fungicidal activity and mechanistic mode of action of pyrrolo[2,3-d]thiazoles, not the pharmacokinetics of tryptophan. |
 | PD | Zhang_2024 | not_relevant | 0 | 0 | The paper reports fungicidal activity (EC50) of synthetic pyrrolo[2,3-d]thiazole compounds, not a pharmacodynamic or exposure-response relationship for the drug tryptophan itself. |
-| popPK | Zhang_2025 | irrelevant | 0 | 0 | The paper is a systematic review of population PK for imipenem, a different drug; tryptophan is not mentioned. |
+| popPK | Zhang_2025 | irrelevant | 0 | 0 | The study is a systematic review of population pharmacokinetics for imipenem, not tryptophan. |
 | PD | Zhang_2025 | not_relevant | 0 | 0 | The paper is a systematic review of population pharmacokinetic (PK) models for imipenem and does not report any pharmacodynamic (PD) or exposure-response relationships. |
-| popPK | Zheng_2017 | irrelevant | 0 | 0 | This is a chemistry/fungicidal-activity study of tryptophan derivatives with no pharmacokinetic parameters. |
-| popPK | Zheng_2025 | irrelevant | 0 | 0 | Tryptophan is only a measured metabolomics biomarker, not the subject drug; the PK model is for vigabatrin. |
-| popPK | van_1987 | irrelevant | 0 | 0 | Tryptophan appears only as a fluorescence probe of albumin; the PK parameters concern dibromosulfophthalein, not tryptophan. |
-| PGx | van_2018 | not_relevant | 3 | 4 | Genetic loci predict CSF tryptophan concentrations (endogenous metabolite QTLs), not a pharmacokinetic or pharmacodynamic parameter of a drug. |
-| popPK | van_2026 | irrelevant | 0 | 0 | This is a systematic review of population PK models for immunoglobulin G, not tryptophan, and no tryptophan parameters appear. |
+| popPK | Zheng_2017 | irrelevant | 0 | 0 | The paper focuses on the synthesis and fungicidal activity of tryptophan analogues, containing no pharmacokinetic data. |
+| popPK | Zheng_2025 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of vigabatrin, while tryptophan is only mentioned as a metabolomic biomarker whose levels changed, not as the subject drug for PK parameter estimation. |
+| popPK | van_1987 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of dibromosulfophthalein, using tryptophan only as a reference for fluorescence spectroscopy of albumin, not as the subject drug. |
+| PGx | van_2018 | not_relevant | 0 | 0 | The study investigates the genetic influence on CSF tryptophan concentrations in a disease context (TB meningitis), not a pharmacogenomic effect of a drug on a PK/PD parameter. |
+| popPK | van_2026 | irrelevant | 0 | 0 | The paper is a systematic review regarding the pharmacokinetics of immunoglobulins (IVIg/SCIg) and does not contain any data or models for the drug tryptophan. |
 | PD | van_2026 | not_relevant | 0 | 0 | The paper is a systematic review of pharmacokinetic models for immunoglobulins (IVIg/SCIg) and does not report any pharmacodynamic or exposure-response data for tryptophan. |
 
 ---

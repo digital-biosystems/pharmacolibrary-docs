@@ -26,13 +26,20 @@ Viloxazine is a norepinephrine reuptake inhibitor that was originally used as an
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 00:19 | 0:53 | 0/1/0 | 0/0/0 | 0/0/1 | 62,898/3,810 | ollama / glm-5.3-flash | 6 | 0/6 | 6/0 | 0 |
+| 2026-10-07 19:04 | 0:56 | 0/1/0 | 1/0/0 | 0/0/1 | 98,516/4,776 | einfracz / qwen3.8-27b | 7 | 0/7 | 7/0 | 0 |
 
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
 | <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.667). The first reading is what the record holds.">cross-check: partial</span><br><sub>STALE — current validate: rejected</sub><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Nasser_2021_reference](drugs/drug_viloxazine/Viloxazine_Nasser2021_reference.md) | — | parent + metabolite (no model) | 0 | Nasser A et al., Population Pharmacokinetics of Viloxazi…, Journal of clinical pharmac… (2021) | [10.1002/jcph.1940](https://doi.org/10.1002/jcph.1940) |
+
+## Pharmacodynamics (PD)
+
+| status | detail | about | model | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="Animal study (monkey), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">monkey</span> | [Garcia-Olivares_2026_BPND_CP](drugs/drug_viloxazine/pd_Garcia_Olivares_2026_BPND_CP.md) | Choroid plexus [11C]CIMBI-36 BPND occupancy (5-HT2C) ← viloxazine · direct Emax (saturable) effect | — | Garcia-Olivares J et al., Viloxazine occupies the 5-HT2C receptor…, The international journal o… (2026) | [10.1093/ijnp/pyag034](https://doi.org/10.1093/ijnp/pyag034) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="Animal study (monkey), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">monkey</span> | [Garcia-Olivares_2026_BPND_FC](drugs/drug_viloxazine/pd_Garcia_Olivares_2026_BPND_FC.md) | Frontal cortex [11C]CIMBI-36 BPND occupancy (5-HT2A) ← viloxazine · direct Emax (saturable) effect | — | Garcia-Olivares J et al., Viloxazine occupies the 5-HT2C receptor…, The international journal o… (2026) | [10.1093/ijnp/pyag034](https://doi.org/10.1093/ijnp/pyag034) |
 
 ## Pharmacogenomics (PGx)
 
@@ -80,27 +87,27 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 ## Full text wanted
 
-_2 paper(s) judged relevant from the abstract, with no full text on disk — paywalled, or the resolver could not reach them. Follow the DOI, then save the PDF into `papers/` as `&lt;save as&gt;.pdf` and re-run the extraction._
+_1 paper(s) judged relevant from the abstract, with no full text on disk — paywalled, or the resolver could not reach them. Follow the DOI, then save the PDF into `papers/` as `&lt;save as&gt;.pdf` and re-run the extraction._
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Garcia-Olivares_2026.pdf` | Garcia-Olivares J et al., Viloxazine occupies the 5-HT2C receptor…, The international journal o… (2026) | pd | 5 | [10.1093/ijnp/pyag034](https://doi.org/10.1093/ijnp/pyag034) | [42335010](https://www.ncbi.nlm.nih.gov/pubmed/42335010) | metadata signals extractable PD data (EC50) |
 | `Schoretsanitis_2019.pdf` | Schoretsanitis G et al., Clinically Significant Drug-Drug Intera…, CNS drugs (2019) | pgx | 8 | [10.1007/s40263-019-00683-7](https://doi.org/10.1007/s40263-019-00683-7) | [31776871](https://www.ncbi.nlm.nih.gov/pubmed/31776871) | metadata signals extractable PGX data (CYP2D6, PK/PD-context) |
 
-<sub>queue written 2026-10-07T00:18:24.387173+00:00</sub>
+<sub>queue written 2026-10-07T19:03:33.776722+00:00</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Garcia-Olivares_2024 | irrelevant | 2 | 2 | A rat microdialysis PK/PD study with only sparse concentration data (ISF levels, Tmax) and no CL/V/ka or population-PK parameters for viloxazine; the population PK values are referenced from Supernus data on file, not reported here. |
-| popPK | Garcia-Olivares_2026 | irrelevant | 0 | 0 | no_text gate: only 132 chars of text extracted (&lt; 400) |
-| PGx | Mansour_2026 | not_relevant | 0 | 0 | No gene variant/genotype/phenotype effects on viloxazine PK or PD are reported; only CYP-mediated drug interactions and age/organ-function effects. |
-| PGx | Schoretsanitis_2019 | not_relevant | 2 | 3 | Viloxazine is only mentioned as a pipeline agent with no pharmacogenomic PK/PD data reported; PGx content concerns atomoxetine, not viloxazine. |
-| PGx | Upton_1991 | not_relevant | 2 | 3 | Viloxazine is listed only as a drug altering theophylline clearance; no gene variant/genotype effect on viloxazine PK/PD is reported. |
-| PGx | Wang_2021 | not_relevant | 3 | 5 | CYP2D6 genotype/phenotype was used only as an enrollment criterion (all extensive metabolizers); the reported PK changes are due to paroxetine DDI, not a gene variant effect on viloxazine PK. |
-| PGx | Williams_2023 | not_relevant | 2 | 3 | Mentions viloxazine CYP metabolism and CYP1A2 inhibition by antiepileptics, but no gene variant/genotype effect on a PK/PD parameter is reported. |
-| PGx | Yu_2022 | not_relevant | 0 | 0 | Paper reports viloxazine as a CYP1A2 inhibitor DDI perpetrator, not a pharmacogenomic effect on its PK/PD parameters. |
+| popPK | Garcia-Olivares_2024 | irrelevant | 1 | 0 | This is a preclinical microdialysis study focusing on pharmacodynamic effects (neurotransmitter levels) in rats, not a pharmacokinetic study reporting quantitative disposition parameters (CL, V, t1/2) for viloxazine. |
+| popPK | Garcia-Olivares_2026 | irrelevant | 0 | 0 | The study is a PET imaging investigation of receptor occupancy (pharmacodynamics), not a pharmacokinetic study reporting disposition parameters like clearance or volume of distribution. |
+| PGx | Mansour_2026 | not_relevant | 0 | 0 | The paper is a narrative review discussing general pharmacology, PK, and efficacy, and does not report any gene variants or pharmacogenomic effects on viloxazine. |
+| PGx | Schoretsanitis_2019 | not_relevant | 0 | 0 | The paper discusses drug-drug interactions for ADHD agents and mentions viloxazine only as a subject of limited data regarding PK DDIs, with no information on pharmacogenomic effects. |
+| PGx | Upton_1991 | not_relevant | 0 | 0 | The paper describes drug-drug pharmacokinetic interactions affecting theophylline, and viloxazine is mentioned only as a drug that decreases theophylline clearance, not as the primary subject of a pharmacogenomic study. |
+| PGx | Wang_2021 | not_relevant | 0 | 1 | The study investigates drug-drug interactions between paroxetine and viloxazine, not pharmacogenomic (genetic) effects. |
+| PGx | Williams_2023 | not_relevant | 2 | 0 | This is a general review article that mentions CYP metabolism qualitatively but does not report specific pharmacogenomic variants or quantitative genotype-phenotype associations for viloxazine. |
+| PGx | Yu_2020 | not_relevant | 0 | 0 | The paper explicitly states that the CYP2D6 genotype difference (PM vs EM) results in a &lt;2-fold difference in metabolism, concluding it is not of clinical significance, and does not report a significant pharmacogenomic effect on PK parameters. |
+| PGx | Yu_2022 | not_relevant | 0 | 0 | The paper reports a pharmacokinetic drug-drug interaction (CYP1A2 inhibition) involving viloxazine, not a pharmacogenomic effect. |
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-10-07 00:18 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-10-07 19:03 UTC</sub>

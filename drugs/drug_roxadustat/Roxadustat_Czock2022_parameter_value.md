@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;B03X&quot;,&quot;href&quot;:&quot;atc/B03X.md&quot;},{&quot;label&quot;:&quot;roxadustat&quot;,&quot;href&quot;:&quot;drugs/drug_roxadustat/&quot;},{&quot;label&quot;:&quot;Czock_2022 \u00b7 parameter_value&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Roxadustat_Reki2021_reference&quot;,&quot;label&quot;:&quot;Reki\u0107_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_roxadustat/Roxadustat_Reki2021_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Roxadustat_Takada2022v2_reference&quot;,&quot;label&quot;:&quot;Takada_2022_2_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_roxadustat/Roxadustat_Takada2022v2_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -25,14 +25,14 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the val
 
 <sub>reviewed by glm-5.3-flash</sub>
 
-> ⚠️ **STALE** — review status `needs_review` (reviewed 2026-09-28 14:40:21.355179+00:00) predates the upstream re-run (2026-10-05 21:36:56.470081+00:00). Current validate status: `needs_review`.
+> ⚠️ **STALE** — review status `needs_review` (reviewed 2026-09-28 14:40:21.355179+00:00) predates the upstream re-run (2026-10-07 18:36:31.244126+00:00). Current validate status: `needs_review`.
 
 ## Citation
 Czock D et al., Clinical Pharmacokinetics and Pharmacod…, Clinical pharmacokinetics (2022)
   ·  DOI: [10.1007/s40262-021-01095-x](https://doi.org/10.1007/s40262-021-01095-x)
 
 ## Model component
-<dbs-pgx drug="roxadustat" model-id="Roxadustat_Czock2022_parameter_value" status="needs_review" stale="true" population="healthy volunteers and chronic kidney disease patients" measured-compound="roxadustat" parameterization="apparent" topology="1C"></dbs-pgx>
+<dbs-pgx drug="roxadustat" model-id="Roxadustat_Czock2022_parameter_value" status="needs_review" stale="true" population="healthy volunteers, adults with chronic kidney disease" measured-compound="roxadustat" parameterization="apparent" topology="1C"></dbs-pgx>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 6 extracted.
@@ -45,9 +45,9 @@ Czock D et al., Clinical Pharmacokinetics and Pharmacod…, Clinical pharmacokin
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
 | tpeak E1 = tpeak EPO | `Q56` · tmax | 9 | h | 32400.0 | h | not captured | llm_confirmed (0.6) | Tab2:row19:col3 | — | not captured |
-| TED50 = t½ EPO | `Q57` · t1/2z | 10 | h | 36000.0 | h | not captured | llm (0.6) | Tab2:row26:col3, Tab2:row26:col4 | — | not captured |
 | AUC (h·ng/mL per mg) | `Q88` · AUC | 480 | h·ng/mL per mg | not captured | [[h] · [ng]] / [[ml] · [permg]] | not captured | exact (1.0) | Czock_2022_table_1:row2:col15, Czock_2022_table_1:row2:col16 | — | not captured |
 | CL/F (L/h) | `Q27` · CL/F | 2.29 | L/h | 6.361111111111111e-07 | [l] / [h] | not captured | exact (1.0) | Czock_2022_table_1:row6:col15, Czock_2022_table_1:row6:col16 | — | not captured |
+| t½ or t½α and t½ß (h) | `Q57` · t1/2z | 15.7 | h | 56520.0 | [h] | not captured | llm (0.6) | Czock_2022_table_1:row8:col7, Czock_2022_table_1:row8:col15, Czock_2022_table_1:row8:col16 | — | not captured |
 | fu (%) | `Q46` · fu | 0.94 | h | not captured | [h] | not captured | exact (1.0) | Czock_2022_table_1:row10:col7 | — | not captured |
 | Vd/F | `Q76` · V/F | 39.0 | L | 0.039 | L | not captured | review_gapfill (0.7) | Czock_2022:review | — | not captured |
 
@@ -60,27 +60,26 @@ Czock D et al., Clinical Pharmacokinetics and Pharmacod…, Clinical pharmacokin
 | label (paper) | Q-code | value | link |
 |---|---|---|---|
 | Kinetics Cmax ROXA | Q32 | not captured | llm_confirmed |
-| CE05 EPO = Cthreshold ROXA | Q900 | not captured | llm |
+| AUEC1 EPO | Q17 | not captured | llm |
 
 ## Departures & gaps
 
 **Interpretation flags:**
 - dropped duplicate Q32 ('Dynamics E1 peak = Cpeak EPO', value None) — already have one for this compound
 - dropped PD-category row 'CE50 = roxadustat concentration producing half-maximum E1 EPO = 150 IU/L' → Q321 (EC50, category G11) — pharmacodynamic parameters belong to scholarpd, not the PK model (source ['Tab2:row24:col3'])
+- dropped PD-category row 'TED50 = t½ EPO' → Q321 (EC50, category G11) — pharmacodynamic parameters belong to scholarpd, not the PK model (source ['Tab2:row26:col3', 'Tab2:row26:col4'])
 - dropped PD-category row 'Hill coefficient' → Q325 (Hill, category G11) — pharmacodynamic parameters belong to scholarpd, not the PK model (source ['Tab2:row29:col3'])
-- dropped unlinked row (NIL): 'AUEC1 EPO' — extend the ontology if this is a real PK parameter (source ['Tab2:row31:col4', 'Tab2:row38:col3', 'Tab2:row38:col4'])
+- dropped unlinked row (NIL): 'CE05 EPO = Cthreshold ROXA' — extend the ontology if this is a real PK parameter (source ['Tab2:row30:col3'])
 - dropped unlinked row (NIL): 'Dose' — extend the ontology if this is a real PK parameter (source ['Czock_2022_table_1:row1:col7'])
 - unit_dimension_unknown: 'h·ng/mL per mg' (AUC)
 - unit_dimension_unknown: 'ng/mL per mg' (Cmax)
 - dropped duplicate Q32 ('Cmax (ng/mL per mg)', value '65') — already have one for this compound
-- dropped duplicate Q57 ('t½ or t½α and t½ß (h)', value '15.7') — already have one for this compound
-- implicit units: 'tpeak E1 = tpeak EPO' → h (from the paper text: "The text states: 'This peak occurs 8–10 h (time to peak concentration (tpeak)) after roxadustat administration (Table 2)")
-- implicit units: 'TED50 = t½ EPO' → h (from the paper text: "The text states: 'Subsequently, the EPO concentrations decrease again, with a t½ of 13 h (Table 2).' The parameter TED50")
-- implicit units: 'AUC (h·ng/mL per mg)' — the LLM proposed 'h·ng/mL/mg', whose dimension does not fit Q88; left unset
+- implicit units: 'tpeak E1 = tpeak EPO' → h (from the popPK convention: "The parameter is time to peak concentration (tpeak). While the table footer defines it as 'time', standard convention fo")
+- implicit units: 'AUC (h·ng/mL per mg)' — the LLM proposed 'h·ng/mL per mg', whose dimension does not fit Q88; left unset
 - apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=roxadustat
 - held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
 - status held at route_to_review — not promoted
-- population split: 'parameter value' subgroup of Czock_2022 (paper reports 8 populations: eskd, healthy, healthy, fasting, healthy, fed, healthy, sca, liver cirrhosis cp b, parameter value, severe renal impairment)
+- population split: 'parameter value' subgroup of Czock_2022 (paper reports 5 populations: eskd, healthy, liver cirrhosis cp b, parameter value, severe renal impairment)
 - gap-filled Q76 (V/F) from Czock_2022's review values (primary lacked it)
 - skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
 - skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
@@ -198,7 +197,7 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 | C1_half_life_beta | pass | 11.8 | 11.805 | 1.0004 | 0.25 | reported t½β |
 | C5_dimension_Q27 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Czock_2022_table_1:row6:col15', 'Czock_2022_table_1:row6:col16'] |
 | C5_dimension_Q56 | pass | [time] | not captured | not captured | not captured | ['Tab2:row19:col3'] |
-| C5_dimension_Q57 | pass | [time] | not captured | not captured | not captured | ['Tab2:row26:col3', 'Tab2:row26:col4'] |
+| C5_dimension_Q57 | pass | [time] | not captured | not captured | not captured | ['Czock_2022_table_1:row8:col7', 'Czock_2022_table_1:row8:col15', 'Czock_2022_table_1:row8:col16'] |
 | C5_dimension_Q76 | pass | [length] ** 3 | not captured | not captured | not captured | ['Czock_2022:review'] |
 | C5_unit_missing_Q88 | fail | [mass] * [time] / [length] ** 3 | h·ng/mL per mg | not captured | not captured | ['Czock_2022_table_1:row2:col15', 'Czock_2022_table_1:row2:col16'] |
 | C7_apparent_coherence | pass | not captured | not captured | not captured | not captured | not captured |
@@ -271,4 +270,4 @@ _No web simulator for this record: its structure has no shared WebAssembly templ
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-05 21:36 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 18:36 UTC</sub>

@@ -1,0 +1,41 @@
+{
+ "dose_source": "paper",
+ "model_id": "Paritaprevir_Mensing2016_reference",
+ "molar_masses": {
+  "central.C": 0.76589
+ },
+ "note": "Values for the shared PK_2C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "paper_doses_kind": "discrete",
+ "paper_doses_mg": [
+  25.0,
+  100.0,
+  150.0,
+  400.0
+ ],
+ "parameters": {
+  "Cl": 4.363425925925926e-05,
+  "F": 1.0,
+  "MM": 0.76589,
+  "Tlag": 0.0,
+  "VdPerKg": 0.009114285714285714,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 2.5e-05,
+  "k12": 4.063624753279926e-06,
+  "k21": 7.514761137949543e-06,
+  "ka": 6.909722222222221e-05,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 14804.008016032065
+ },
+ "reference_peaks": {
+  "central.C": 1.4150038039723286e-05
+ },
+ "stop_time": 97200.0,
+ "template": "PK_2C_enteral",
+ "template_fmu": "PK_2C_enteral.fmu"
+}

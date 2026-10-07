@@ -25,17 +25,17 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 
 <sub>reviewed by glm-5.3-flash</sub>
 
-> ⚠️ **STALE** — review status `rejected` (reviewed 2026-09-28 14:39:24.125837+00:00) predates the upstream re-run (2026-10-06 23:38:44.330176+00:00). Current validate status: `rejected`.
+> ⚠️ **STALE** — review status `rejected` (reviewed 2026-09-28 14:39:24.125837+00:00) predates the upstream re-run (2026-10-07 18:54:40.075584+00:00). Current validate status: `rejected`.
 
 ## Citation
 Feng Y et al., Paroxetine: population pharmacokinetic…, British journal of clinical… (2006)
   ·  DOI: [10.1111/j.1365-2125.2006.02629.x](https://doi.org/10.1111/j.1365-2125.2006.02629.x)
 
 ## Model component
-<dbs-pgx drug="paroxetine" model-id="Paroxetine_Feng2006_final" status="rejected" stale="true" population="elderly depressed subjects (late-life major depressive disorder)" measured-compound="paroxetine" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<dbs-pgx drug="paroxetine" model-id="Paroxetine_Feng2006_final" status="rejected" stale="true" population="elderly depressed subjects" measured-compound="paroxetine" parameterization="mechanistic" topology="1C"></dbs-pgx>
 
 **Model structure:** 1-compartment; no model was built for this record.  
-**Parameters:** 6 extracted, plus 5 covariate effects.
+**Parameters:** 6 extracted, plus 4 covariate effects.
 
 **Parameterization:** mechanistic.
 
@@ -50,11 +50,10 @@ Feng Y et al., Paroxetine: population pharmacokinetic…, British journal of cli
 | V 3 (l) | `Q77` · V3 | 102.1 | l | 0.1021 | [l] | not captured | space_fold (0.95) | tab_4:row5:col2, tab_4:row5:col4, tab_4:row5:col5 | — | not captured |
 | Q (l h -1 ) | `Q30` · Q | 12.3 | l h -1 | 3.416666666666667e-06 | [l] / [h] | not captured | exact (1.0) | tab_4:row6:col2, tab_4:row6:col4, tab_4:row6:col5 | — | not captured |
 | K a (h -1 ) | `Q49` · kabs | 8.8 | h -1 | 0.002444444444444445 | [1] / [h] | not captured | space_fold (0.95) | tab_4:row7:col2, tab_4:row7:col4, tab_4:row7:col5 | — | not captured |
-| theta_vmax_pm | `Q900` · theta_vmax_pm | 125 | not captured | not captured | not captured | not captured | not captured (not captured) | tab_4:row8:col4, tab_4:row8:col5 | — | not captured |
-| theta_vmax_im | `Q900` · theta_vmax_im | 182 | not captured | not captured | not captured | not captured | not captured (not captured) | tab_4:row9:col4, tab_4:row9:col5 | — | not captured |
-| theta_vmax_em | `Q900` · theta_vmax_em | 454 | not captured | not captured | not captured | not captured | not captured (not captured) | tab_4:row10:col4, tab_4:row10:col5 | — | not captured |
-| theta_vmax_um | `Q900` · theta_vmax_um | 3670 | not captured | not captured | not captured | not captured | not captured (not captured) | tab_4:row11:col4, tab_4:row11:col5 | — | not captured |
-| theta_v2_sex_v2 | `Q900` · theta_v2_sex_v2 | 99.3 | not captured | not captured | not captured | not captured | not captured (not captured) | tab_4:row13:col4, tab_4:row13:col5 | — | not captured |
+| theta_q352_pm | `Q900` · theta_q352_pm | 125 | not captured | not captured | not captured | not captured | not captured (not captured) | tab_4:row8:col4, tab_4:row8:col5 | — | not captured |
+| theta_q367_im | `Q900` · theta_q367_im | 182 | not captured | not captured | not captured | not captured | not captured (not captured) | tab_4:row9:col4, tab_4:row9:col5 | — | not captured |
+| theta_q367_um | `Q900` · theta_q367_um | 3670 | not captured | not captured | not captured | not captured | not captured (not captured) | tab_4:row11:col4, tab_4:row11:col5 | — | not captured |
+| theta_q900_wt_v2 | `Q900` · theta_q900_wt_v2 | 1.83 | not captured | not captured | not captured | not captured | not captured (not captured) | tab_4:row12:col4, tab_4:row12:col5 | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -65,8 +64,11 @@ Feng Y et al., Paroxetine: population pharmacokinetic…, British journal of cli
 
 **Interpretation flags:**
 - unit_dimension_mismatch: 'V m (µg h -1 )' → Q66 (unit '[mass] / [time]' vs ontology '[length] ** 3') — route to review
-- dropped unlinked row (NIL): 'Wt (θ V2 )' — extend the ontology if this is a real PK parameter (source ['tab_4:row12:col4', 'tab_4:row12:col5'])
-- dropped value-less row: 'Wt, total body weight'
+- dropped unlinked row (NIL): 'EM (θ Vm )' — extend the ontology if this is a real PK parameter (source ['tab_4:row10:col4', 'tab_4:row10:col5'])
+- dropped unlinked row (NIL): 'Sex (θ V2 )' — extend the ontology if this is a real PK parameter (source ['tab_4:row13:col4', 'tab_4:row13:col5'])
+- covariate effect for Q352 has no base parameter row (kept as unattached equation-variable)
+- covariate effect for Q367 has no base parameter row (kept as unattached equation-variable)
+- covariate effect for Q900 has no base parameter row (kept as unattached equation-variable)
 - apparent-by-design (ADVISORY, codes unchanged): extravascular dosing with no identifiable F, so these reported disposition parameters are likely apparent unless the model puts first-pass in its structure — Q64 (V 2 (l)); Q30 (Q (l h -1 ))
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=paroxetine
 - held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
@@ -130,7 +132,6 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 | C0_has_structural_params | pass | not captured | 6 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | fail | not captured | not captured | not captured | not captured | not captured |
-| C2_reference | pass | not captured | not captured | not captured | not captured | not captured |
 | C5_dimension_Q1 | pass | [mass] / [length] ** 3 | not captured | not captured | not captured | ['tab_4:row3:col2', 'tab_4:row3:col4', 'tab_4:row3:col5'] |
 | C5_dimension_Q30 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['tab_4:row6:col2', 'tab_4:row6:col4', 'tab_4:row6:col5'] |
 | C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['tab_4:row7:col2', 'tab_4:row7:col4', 'tab_4:row7:col5'] |
@@ -163,4 +164,4 @@ _No web simulator for this record: its structure has no shared WebAssembly templ
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-06 23:38 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 18:54 UTC</sub>

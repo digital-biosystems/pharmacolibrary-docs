@@ -1,10 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01C&quot;,&quot;href&quot;:&quot;atc/L01C.md&quot;},{&quot;label&quot;:&quot;docetaxel&quot;,&quot;href&quot;:&quot;drugs/drug_docetaxel/&quot;},{&quot;label&quot;:&quot;Wang_2024 \u00b7 reference&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Docetaxel_Clarke1999_reference&quot;,&quot;label&quot;:&quot;Clarke_1999_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_docetaxel/Docetaxel_Clarke1999_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Docetaxel_LaunayIliadis1995_reference&quot;,&quot;label&quot;:&quot;Launay-Iliadis_1995_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_docetaxel/Docetaxel_LaunayIliadis1995_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # docetaxel — `Docetaxel_Wang2024_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -22,12 +23,14 @@ The check had no reference to compare the clearance against, so the value is unv
 
 <sub>reviewed by rule template (no LLM)</sub>
 
+> ⚠️ **STALE** — review status `needs_review` (reviewed 2026-09-28 14:37:47.740212+00:00) predates the upstream re-run (2026-10-07 17:51:23.631572+00:00). Current validate status: `rejected`.
+
 ## Citation
 Wang D et al., Oral docetaxel plus encequidar - A phar…, Journal of pharmacokinetics… (2024)
   ·  DOI: [10.1007/s10928-024-09913-y](https://doi.org/10.1007/s10928-024-09913-y)
 
 ## Model component
-<dbs-pgx drug="docetaxel" model-id="Docetaxel_Wang2024_reference" status="needs_review" stale="false" population="oncology patients" measured-compound="docetaxel" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<dbs-pgx drug="docetaxel" model-id="Docetaxel_Wang2024_reference" status="rejected" stale="true" population="patients" measured-compound="docetaxel" parameterization="mechanistic" topology="1C"></dbs-pgx>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 2 extracted.
@@ -35,12 +38,12 @@ Wang D et al., Oral docetaxel plus encequidar - A phar…, Journal of pharmacoki
 **Parameterization:** mechanistic.
 
 ## Parameters
-> ⚠️ This record is not accepted (current status `needs_review`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
+> ⚠️ This record is not accepted (current status `rejected`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
 | bioavailability | `Q40` · Fab | 8 | % | not captured | not captured | not captured | exact (1.0) | Fig5:caption | — | not captured |
-| clearance of unbound docetaxel in the final model | `Q22` · CL | 8570 | L h−1 | 0.0023805555555555555 | L/h | not captured | boundary (0.8) | Wang_2024:results_prose | — | not captured |
+| PTA | `Q88` · AUC | 80 | % | not captured | [%] | not captured | llm (0.6) | Fig5:caption, Fig5:caption | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -50,10 +53,12 @@ Wang D et al., Oral docetaxel plus encequidar - A phar…, Journal of pharmacoki
 ## Departures & gaps
 
 **Interpretation flags:**
-- salvaged Q22 ('clearance of unbound docetaxel in the final model'=8570) from results prose — parameter table was unreadable
+- unit_dimension_mismatch: 'PTA' → Q88 (unit 'dimensionless' vs ontology '[mass] * [time] / [length] ** 3') — route to review
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=docetaxel
 - held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
 - status held at route_to_review — not promoted
+- skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
+- skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
 
 **Extraction notes:**
 - text-pointer recovery found no readable extracted parameter table
@@ -65,11 +70,9 @@ Wang D et al., Oral docetaxel plus encequidar - A phar…, Journal of pharmacoki
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
 | C0_has_structural_params | pass | not captured | 2 | not captured | not captured | not captured |
-| C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
-| C0c_disposition_complete | fail | not captured | not captured | not captured | not captured | not captured |
-| C6_cl_magnitude | fail | &lt;= 90.0 L/h | 8570.0 | not captured | not captured | ['Wang_2024:results_prose'] |
+| C0b_disposition_core | fail | not captured | not captured | not captured | not captured | not captured |
+| C5_dimension_Q88 | fail | dimensionless | % | not captured | not captured | ['Fig5:caption', 'Fig5:caption'] |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
-| C9_phys_window_Q22 | pass | clearance within physiological range | 8.57e+03 L/h | not captured | not captured | ['Wang_2024:results_prose'] |
 
 <details class="legend">
 <summary>Check legend — what each column means</summary>
@@ -83,19 +86,9 @@ Wang D et al., Oral docetaxel plus encequidar - A phar…, Journal of pharmacoki
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
-## Downloadable models
+## Models
 
-<div class="pk-models-grid"><div class="pk-models-table">
-<table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-</tbody></table>
-<p>No bundles have been generated for this record yet. When the engineer emits them they appear here automatically — this page reports what is on disk and generates nothing itself.</p>
-</div></div>
+<p>No downloads: this record is <b>rejected</b>, so it is not published as a model. Any archives generated for it before the verdict have been removed — a download outlives the page that explains it.</p>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
@@ -104,4 +97,4 @@ _No web simulator for this record: its structure has no shared WebAssembly templ
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-09-15 09:16 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 17:51 UTC</sub>

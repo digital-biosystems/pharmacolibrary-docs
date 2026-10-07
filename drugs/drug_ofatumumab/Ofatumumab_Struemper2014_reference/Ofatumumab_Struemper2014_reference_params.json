@@ -1,0 +1,26 @@
+{
+ "dose_source": "WHO ATC DDD 0.67 mg parenteral (L04AG12)",
+ "model_id": "Ofatumumab_Struemper2014_reference",
+ "note": "Values for the shared PK_1C.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "parameters": {
+  "Cl": 2.083333333333333e-09,
+  "F": 1.0,
+  "VdPerKg": 7.571428571428571e-05,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 6.7e-07,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 660.000000066206
+ },
+ "reference_peaks": {
+  "central.C": 0.00012640018711524366
+ },
+ "stop_time": 9072000.0,
+ "template": "PK_1C",
+ "template_fmu": "PK_1C.fmu"
+}

@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;B01A&quot;,&quot;href&quot;:&quot;atc/B01A.md&quot;},{&quot;label&quot;:&quot;nadroparin&quot;,&quot;href&quot;:&quot;drugs/drug_nadroparin/&quot;},{&quot;label&quot;:&quot;Piwowarczyk_2023 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Nadroparin_Piwowarczyk2023_reference&quot;,&quot;label&quot;:&quot;Piwowarczyk_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_nadroparin/Nadroparin_Piwowarczyk2023_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Nadroparin_Piwowarczyk2023_reference&quot;,&quot;label&quot;:&quot;Piwowarczyk_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_nadroparin/Nadroparin_Piwowarczyk2023_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # nadroparin — `Nadroparin_Piwowarczyk2023_reference`
 
-> ## <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.8). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.8). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -23,12 +23,14 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 
 <sub>reviewed by rule template (no LLM)</sub>
 
+> ⚠️ **STALE** — review status `curated_candidate` (reviewed 2026-10-05 16:14:39.847607+00:00) predates the upstream re-run (2026-10-07 18:12:37.552504+00:00). Current validate status: `extracted`.
+
 ## Citation
 Piwowarczyk P et al., Population Pharmacokinetics and Probabi…, Clinical pharmacokinetics (2023)
   ·  DOI: [10.1007/s40262-023-01244-4](https://doi.org/10.1007/s40262-023-01244-4)
 
 ## Model component
-<dbs-pgx drug="nadroparin" model-id="Nadroparin_Piwowarczyk2023_reference" status="curated_candidate" stale="false" population="patients with COVID-19" measured-compound="nadroparin" parameterization="apparent" topology="1C"></dbs-pgx>
+<dbs-pgx drug="nadroparin" model-id="Nadroparin_Piwowarczyk2023_reference" status="extracted" stale="true" population="patients with COVID-19" measured-compound="nadroparin" parameterization="apparent" topology="1C"></dbs-pgx>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 3 extracted.
@@ -41,6 +43,7 @@ Piwowarczyk P et al., Population Pharmacokinetics and Probabi…, Clinical pharm
 | Apparent volume of distribution in group 1, L | `Q76` · V/F | 6.62 | L | 0.00662 | [l] | 9.6 | llm_confirmed (0.6) | Tab2:row2:col1, Tab2:row2:col2, Tab2:row2:col4, Tab2:row2:col5 | — | not captured |
 | Apparent clearance in group 1, L/h | `Q27` · CL/F | 1.14 | L/h | 3.1666666666666667e-07 | [l] / [h] | 4.2 | llm_confirmed (0.6) | Tab2:row5:col1, Tab2:row5:col2, Tab2:row5:col4, Tab2:row5:col5 | — | not captured |
 | Absorption rate constant in group 1, 1/h | `Q49` · kabs | 0.325 | 1/h | 9.027777777777779e-05 | [1] / [h] | 10.5 | llm_confirmed (0.6) | Tab2:row8:col1, Tab2:row8:col2, Tab2:row8:col4, Tab2:row8:col5 | — | not captured |
+| Proportionality constant in group 1, I.U./µg | `Q900` · equation variable | 0.0835 | not captured | not captured | not captured | 16.8 | llm (0.6) | Tab2:row11:col1, Tab2:row11:col2, Tab2:row11:col4, Tab2:row11:col5 | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -66,10 +69,9 @@ Piwowarczyk P et al., Population Pharmacokinetics and Probabi…, Clinical pharm
 - dropped duplicate Q27 ('Apparent clearance in group 3, L/h', value '3.38') — already have one for this compound
 - dropped duplicate Q49 ('Absorption rate constant in group 2, 1/h', value '0.0831') — already have one for this compound
 - dropped duplicate Q49 ('Absorption rate constant in group 3, 1/h', value '0.100') — already have one for this compound
-- dropped unlinked row (NIL): 'Proportionality constant in group 1, I.U./µg' — extend the ontology if this is a real PK parameter (source ['Tab2:row11:col1', 'Tab2:row11:col2', 'Tab2:row11:col4', 'Tab2:row11:col5'])
-- dropped unlinked row (NIL): 'Proportionality constant in group 2, I.U./µg' — extend the ontology if this is a real PK parameter (source ['Tab2:row12:col1', 'Tab2:row12:col2', 'Tab2:row12:col4', 'Tab2:row12:col5'])
+- dropped duplicate Q900 ('Proportionality constant in group 2, I.U./µg', value '0.224') — already have one for this compound
 - dropped unlinked row (NIL): 'Proportionality constant in group 3, I.U./µg' — extend the ontology if this is a real PK parameter (source ['Tab2:row13:col1', 'Tab2:row13:col2', 'Tab2:row13:col4', 'Tab2:row13:col5'])
-- routed 'Ratio of standard deviations (θγ), none' → Q312 (IIV) to iiv — variability estimate, not a structural parameter
+- routed 'Ratio of standard deviations (θγ), none' → Q315 (sigma) to residual_error — variability estimate, not a structural parameter
 - apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=nadroparin
 - molar mass: none found for 'nadroparin' — its concentrations stay mass-only
 - skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
@@ -171,4 +173,4 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-05 15:01 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 18:12 UTC</sub>

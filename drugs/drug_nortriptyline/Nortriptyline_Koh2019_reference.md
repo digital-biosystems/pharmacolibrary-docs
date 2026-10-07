@@ -4,7 +4,7 @@
 
 # nortriptyline — `Nortriptyline_Koh2019_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -14,52 +14,44 @@
 
 **Model:** No model was generated from this record.
 
-> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+### Reviewer guidance
 
-> **Dose compound ≠ measured compound:** dosed `amitriptyline`, measured `nortriptyline`.
+**No volume or clearance — not a compartmental population PK model.**
+
+The paper reports no distribution volume and no clearance or elimination rate; it is an exposure/outcome paper. Only the abstract was available, so reported summary statistics stand in for a fitted model.
+
+<sub>reviewed by rule template (no LLM)</sub>
+
+> ⚠️ **STALE** — review status `rejected` (reviewed 2026-10-06 23:52:24.184062+00:00) predates the upstream re-run (2026-10-07 18:49:09.325375+00:00). Current validate status: `rejected`.
 
 ## Citation
 Koh A et al., Quantitative Modeling Analysis Demonstr…, Journal of clinical pharmac… (2019)
   ·  DOI: [10.1002/jcph.1344](https://doi.org/10.1002/jcph.1344)
 
 ## Model component
-<dbs-pgx drug="nortriptyline" model-id="Nortriptyline_Koh2019_reference" status="rejected" stale="false" population="healthy Korean adult male volunteers" measured-compound="nortriptyline" parameterization="mechanistic" topology="parent_metabolite"></dbs-pgx>
+<dbs-pgx drug="nortriptyline" model-id="Nortriptyline_Koh2019_reference" status="rejected" stale="true" population="healthy adult male volunteers" measured-compound="amitriptyline" parameterization="mechanistic" topology="parent_metabolite"></dbs-pgx>
 
 **Model structure:** parent + metabolite; no model was built for this record.  
-**Parameters:** 4 extracted.
+**Parameters:** 0 extracted.
 
 **Parameterization:** mechanistic.
 
 ## Parameters
 > ⚠️ This record is not accepted (current status `rejected`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
 
-| label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
-|---|---|---|---|---|---|---|---|---|---|---|
-| estimated metabolic clearance (other genotypes) | `Q370` · CLfm | 61.5 | L/h | 1.7083333333333333e-05 | [l] / [h] | not captured | exact (1.0) | Koh_2019:abstract | — | not captured |
-| clearance of amitriptyline through pathways other than biotransformation into nortriptyline (other genotypes) | `Q79` · CLNR | 30.6 | L/h | 8.5e-06 | [l] / [h] | not captured | llm_corrected (0.6) | Koh_2019:abstract | — | not captured |
-| ka | `Q49` · kabs | 0.24 | h−1 | 6.666666666666667e-05 | 1/h | not captured | review_gapfill (0.7) | Tylutki_2018:review | — | not captured |
-| tlag | `Q83` · tlag | 1.33 | h | 4788.0 | h | not captured | review_gapfill (0.7) | Tylutki_2018:review | — | not captured |
-
-<details class="legend">
-<summary>Column legend — what each column means</summary>
-<table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>label (paper)</code></td><td>the row or statistic label exactly as printed in the paper (label_verbatim) — never normalised, so it can be found in the PDF.</td></tr><tr><td><code>Q-code · name</code></td><td>the ontology parameter this label was matched to (Q22 = clearance, Q27 = CL/F, Q49 = ka, Q57 = half-life, …) and its canonical name. The Q-code, not the label, is what scoring and cross-paper merging use.</td></tr><tr><td><code>value</code></td><td>the estimate as reported in the paper.</td></tr><tr><td><code>unit</code></td><td>the unit as printed (unit_verbatim).</td></tr><tr><td><code>value_si</code></td><td>the value converted to the canonical unit. Empty when no conversion was possible — usually an unparseable or missing unit.</td></tr><tr><td><code>unit_canonical</code></td><td>the canonical unit for that Q-code, i.e. what value_si is expressed in.</td></tr><tr><td><code>RSE%</code></td><td>relative standard error of the estimate, when the paper reports one.</td></tr><tr><td><code>link</code></td><td>how the label was matched to the Q-code, with confidence. exact / boundary / fuzzy / tv_prefix / caption_compartment / special_case are deterministic string matches; llm, llm_confirmed, llm_corrected involved the model; review and review_gapfill come from the secondary review tier, the latter filling a parameter the primary extraction missed; boundary_relink is a corrected match.</td></tr><tr><td><code>source</code></td><td>where in the paper the number came from: colN = that column of the located table, other_prose = running text, review = the secondary tier, pgx = a pharmacogenomic record.</td></tr><tr><td><code>covariates</code></td><td>covariate effects attached to this parameter (e.g. weight on CL).</td></tr><tr><td><code>IIV</code></td><td>inter-individual variability reported for this parameter.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>the field is absent from the KB artifact — nothing was recorded. This is NOT the same as zero or empty: the value is unknown, not measured to be nothing.</td></tr><tr><td><code>—</code></td><td>deliberately not shown: the column does not apply to this row.</td></tr><tr><td><code>not verified</code></td><td>the record is not in an accepted state (see the badge and the note above the table); the numbers are shown as extracted, not endorsed.</td></tr></tbody></table>
-</details>
+_No resolved parameters._
 
 ## Departures & gaps
 
 **Interpretation flags:**
-- apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=nortriptyline
+- apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=amitriptyline
 - template fit: none — only the metabolite is modelled — no parent compartment
-- row roles: per-genotype parameters — typical value from the reference group: estimated metabolic clearance (other genotypes), clearance of amitriptyline through pathways other than biotransformation into nortriptyline (other genotypes)
-- row roles (LLM): model_class=compartmental; 4/4 row label(s) assigned, 2 linked by role; re-tagged nortriptyline→parent ×1
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
-- skipped review gap-fill of V2: primary is PARENT_METABOLITE (peripheral family needs ≥2C)
-- skipped review gap-fill of Q: primary is PARENT_METABOLITE (peripheral family needs ≥2C)
-- gap-filled Q49 (kabs) from Tylutki_2018's review values (primary lacked it)
-- gap-filled Q83 (tlag) from Tylutki_2018's review values (primary lacked it)
+- review gap-fill skipped: this record measures 'amitriptyline', not nortriptyline — the review values are the parent's
 
 **Extraction notes:**
-- no GROBID TEI available — transcribed from abstract in Koh_2019_metadata.yaml (4 record(s)); values are summary statistics, not a fitted model
+- no GROBID TEI available — transcribed from abstract in Koh_2019_metadata.yaml (0 record(s)); values are summary statistics, not a fitted model
+- LLM region Koh_2019:abstract: Error code: 429 - {'error': {'message': 'Rate limit exceeded for api_key: 8d79104cac3d0b5a8019d9c3dd60ff02e7a84591fb3552ddb3bbcabd52b31d23. Limit type: max_parallel_requests. Current limit: 4, Remaining: 0. Limit resets at: 2026-10-07 14:41:21 UTC', 'type': 'throttling_error', 'param': None, 'code': '429'}}
 
 ## Validation
 
@@ -67,12 +59,8 @@ Koh A et al., Quantitative Modeling Analysis Demonstr…, Journal of clinical ph
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 2 | not captured | not captured | not captured |
+| C0_has_structural_params | fail | not captured | 0 | not captured | not captured | not captured |
 | C0b_disposition_core | fail | not captured | not captured | not captured | not captured | not captured |
-| C5_dimension_Q370 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Koh_2019:abstract'] |
-| C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['Tylutki_2018:review'] |
-| C5_dimension_Q79 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Koh_2019:abstract'] |
-| C5_dimension_Q83 | pass | [time] | not captured | not captured | not captured | ['Tylutki_2018:review'] |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
 
 <details class="legend">
@@ -98,4 +86,4 @@ _No web simulator for this record: its structure has no shared WebAssembly templ
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-06 23:28 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 18:49 UTC</sub>

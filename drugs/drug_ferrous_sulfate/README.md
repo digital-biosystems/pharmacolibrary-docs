@@ -17,11 +17,19 @@ Ferrous sulfate is an oral iron medicine used to treat iron deficiency and relat
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-05 20:13 | 1:41 | 0/0/0 | 0/0/0 | 0/0/0 | 56,579/1,810 | ollama / qwen3.8:27b-mtp-q8_0 | 2 | 4/13 | 2/0 | 0 |
+| 2026-10-07 18:28 | 0:47 | 0/0/0 | 0/1/0 | 0/0/0 | 56,579/2,810 | einfracz / qwen3.8-27b | 3 | 4/13 | 3/0 | 0 |
 
 ## popPK records
 
 _not available_
+
+## Pharmacodynamics (PD)
+
+| status | detail | about | model | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Kim_1995_CICR](drugs/drug_ferrous_sulfate/pd_Kim_1995_CICR.md) | Ca(2+)-induced Ca2+ release ← ferrous sulfate · direct Emax (saturable) effect | — | Kim E et al., Iron(II) is a modulator of ryanodine-se…, Toxicology and applied phar… (1995) | [10.1006/taap.1995.1008](https://doi.org/10.1006/taap.1995.1008) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Kim_1995_DXR_induced_Ca2_release](drugs/drug_ferrous_sulfate/pd_Kim_1995_DXR_induced_Ca2_release.md) | DXR-induced Ca2+ release ← ferrous sulfate · direct Emax (saturable) effect | — | Kim E et al., Iron(II) is a modulator of ryanodine-se…, Toxicology and applied phar… (1995) | [10.1006/taap.1995.1008](https://doi.org/10.1006/taap.1995.1008) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Kim_1995_binding_of_3H_ryanodine](drugs/drug_ferrous_sulfate/pd_Kim_1995_binding_of_3H_ryanodine.md) | binding of [3H]ryanodine ← ferrous sulfate · direct sigmoid Emax (Hill) effect | — | Kim E et al., Iron(II) is a modulator of ryanodine-se…, Toxicology and applied phar… (1995) | [10.1006/taap.1995.1008](https://doi.org/10.1006/taap.1995.1008) |
 
 <details class="legend">
 <summary>Badge legend — what each badge means</summary>
@@ -34,7 +42,7 @@ _not available_
 - **PubMed hits:** 70 matched, 62 returned
 - **screened:** 1  ·  **relevant:** 0
 - **records:** 0  ·  extracted 0  ·  needs_review 0  ·  rejected 0  ·  stale 0
-- **scholar-agent fallback query used:** True
+- **scholar-agent fallback query used:** not captured
 
 ## Full text wanted
 
@@ -42,13 +50,13 @@ _5 paper(s) judged relevant from the abstract, with no full text on disk — pay
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
+| `Zhuo_2014.pdf` | Zhuo Z et al., Kinetics absorption characteristics of…, Biological trace element re… (2014) | popPK | 9 | [10.1007/s12011-014-9906-x](https://doi.org/10.1007/s12011-014-9906-x) | [24615551](https://pubmed.ncbi.nlm.nih.gov/24615551) | The study describes a pharmacokinetic analysis of iron using a one-compartmental model in rats, comparing ferrous sulfate to ferrous glycinate, but the specific quantitative parameter values (Cmax, CL, V, etc.) are not provided in the text evidence. |
 | `Aston_2010.pdf` | Aston JE et al., Effects of ferrous sulfate, inoculum hi…, Environmental toxicology an… (2010) | pd | 4 | [10.1002/etc.338](https://doi.org/10.1002/etc.338) | [20931606](https://www.ncbi.nlm.nih.gov/pubmed/20931606) | metadata signals extractable PD data (IC50) |
 | `Fernandez_2017.pdf` | Fernandez ACAM et al., Antimicrobial and Antioxidant Activitie…, Current microbiology (2017) | pd | 4 | [10.1007/s00284-017-1340-9](https://doi.org/10.1007/s00284-017-1340-9) | [28840299](https://www.ncbi.nlm.nih.gov/pubmed/28840299) | metadata signals extractable PD data (IC50) |
 | `Lo_1994.pdf` | Lo YC et al., Magnolol and honokiol isolated from Mag…, Biochemical pharmacology (1994) | pd | 4 | [10.1016/0006-2952(94)90187-2](https://doi.org/10.1016/0006-2952(94)90187-2) | [8117323](https://www.ncbi.nlm.nih.gov/pubmed/8117323) | metadata signals extractable PD data (IC50) |
 | `Racay_1995.pdf` | Racay P et al., Rabbit brain endoplasmic reticulum memb…, Biochemistry and molecular… (1995) | pd | 4 | not captured | [7549956](https://www.ncbi.nlm.nih.gov/pubmed/7549956) | metadata signals extractable PD data (EC50) |
-| `Silva_2022.pdf` | Silva AM et al., Valorization of Kiwiberry Leaves Recove…, Antioxidants (Basel, Switze… (2022) | pd | 4 | [10.3390/antiox11040763](https://doi.org/10.3390/antiox11040763) | [35453448](https://www.ncbi.nlm.nih.gov/pubmed/35453448) | metadata signals extractable PD data (IC50) |
 
-<sub>queue written 2026-10-05T20:13:09.056604+00:00</sub>
+<sub>queue written 2026-10-07T18:27:54.652150+00:00</sub>
 
 ## Screened and excluded
 
@@ -56,7 +64,7 @@ _5 paper(s) judged relevant from the abstract, with no full text on disk — pay
 |---|---|---|---|---|---|
 | popPK | Agnieszka_2022 | irrelevant | 0 | 0 | The paper is a systematic review of drug-food interactions in Parkinson's disease where ferrous sulfate is mentioned only as a dietary supplement that negatively affects levodopa, not as the subject drug for PK parameter extraction. |
 | PD | Agnieszka_2022 | not_relevant | 1 | 0 | The paper is a systematic review that qualitatively mentions ferrous sulfate negatively affects levodopa pharmacokinetics, but it does not report any numeric PD parameters or concentration-effect curves for ferrous sulfate. |
-| popPK | Ahn_2018 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of carbamazepine, with iron (ferrous sulfate) acting only as a co-administered agent affecting carbamazepine absorption. |
+| popPK | Ahn_2018 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of carbamazepine, where iron supplements are investigated only as a covariate affecting carbamazepine bioavailability, not as the subject drug. |
 | PD | Ahn_2018 | not_relevant | 0 | 0 | The study reports a pharmacokinetic interaction (reduced bioavailability of carbamazepine) but does not report a pharmacodynamic or exposure-response relationship for ferrous sulfate itself. |
 | popPK | Allen_2021 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of ferric maltol, not ferrous sulfate, which is only mentioned as a comparator. |
 | PD | Allen_2021 | not_relevant | 4 | 3 | The study reports dose-response trends for serum iron and TSAT (Figure 2) and performs population PK modeling, but it does not fit a formal PK/PD model or report numeric PD parameters (e.g., Emax, EC50) for ferrous sulfate or ferric maltol. |
@@ -67,47 +75,47 @@ _5 paper(s) judged relevant from the abstract, with no full text on disk — pay
 | popPK | Bellido_1991 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of lipid peroxidation where ferrous sulfate is used as a reagent to induce oxidative stress, not as a subject drug for pharmacokinetic analysis. |
 | popPK | Benedetto_1985 | irrelevant | 0 | 0 | The paper describes the use of ferrous sulfate as a chemical dosimeter for radiation measurement, not as a drug for pharmacokinetic analysis. |
 | PD | Benedetto_1985 | not_relevant | 0 | 0 | The paper describes a chemical dosimeter for radiation measurement, not a pharmacodynamic or exposure-response relationship for the drug ferrous sulfate. |
-| popPK | Dainty_2003 | relevant | 8 | 4 | The study applies a single-compartment pharmacokinetic model to ferrous sulfate in humans and reports qualitative parameters (absorption fraction, volume, rate constant) and simulation inputs, but specific individual numeric PK values (CL, V, k) are not explicitly listed in the text. |
+| popPK | Dainty_2003 | irrelevant | 6 | 3 | The paper reports iron absorption efficiency and model parameters (V, k, T) for a single-compartment model in a nutritional context, but does not report standard PK parameters (CL, Vd, ka) for ferrous sulfate as a drug; numeric values for the model parameters are described in text/simulation rather than a dedicated results table of estimated PK values per subject. |
 | popPK | Davidsson_2003 | irrelevant | 0 | 0 | The study measures iron absorption via erythrocyte incorporation of stable isotopes and does not report pharmacokinetic parameters (CL, V, ka, etc.) for ferrous sulfate. |
 | PD | Davidsson_2003 | not_relevant | 2 | 1 | The study reports a qualitative effect of a co-administered substance (retinyl palmitate) on iron absorption (erythrocyte incorporation) but does not provide a concentration-response or dose-response curve for ferrous sulfate itself, nor does it derive standard PD parameters (Emax, EC50) for the drug. |
-| PGx | Davis_2024 | not_relevant | 0 | 0 | The paper reports a clinical case of ADHR where iron supplementation improved biochemical markers, but it does not report a pharmacogenomic effect on the PK or PD of ferrous sulfate itself. |
+| PGx | Davis_2024 | not_relevant | 0 | 0 | The paper describes a clinical response to ferrous sulfate treatment for iron deficiency in a patient with an FGF23 mutation, but does not report pharmacogenomic effects on the PK or PD of ferrous sulfate itself. |
 | popPK | Droy-Lefaix_1995 | irrelevant | 0 | 0 | The study investigates the antioxidant effects of Ginkgo biloba extract on the retina, using ferrous sulfate only as a reagent to induce oxidative stress, not as a subject drug for pharmacokinetic analysis. |
 | PD | Droy-Lefaix_1995 | not_relevant | 1 | 0 | The paper mentions a qualitative dose-response effect of Ginkgo biloba extract but provides no numeric PD parameters, concentration-effect curves, or quantitative data for ferrous sulfate. |
 | popPK | Fernandez_2017 | irrelevant | 0 | 0 | no_text gate: only 137 chars of text extracted (&lt; 400) |
 | PD | Fernandez_2017 | not_relevant | 0 | 0 | The paper investigates the antimicrobial and antioxidant activities of plant extracts, not the pharmacodynamics of ferrous sulfate. |
-| popPK | Fischer_2014 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of labetalol, not ferrous sulfate. |
+| popPK | Fischer_2014 | irrelevant | 0 | 0 | The paper investigates the pharmacokinetics of labetalol, not ferrous_sulfate. |
 | PD | Fischer_2014 | not_relevant | 0 | 0 | The paper focuses exclusively on the population pharmacokinetics of labetalol and does not report any pharmacodynamic or exposure-response data for ferrous sulfate. |
-| popPK | Fischer_2023 | irrelevant | 0 | 0 | The study is a clinical trial measuring ferritin concentrations and gut health outcomes, not a pharmacokinetic study reporting disposition parameters like clearance or volume. |
+| popPK | Fischer_2023 | irrelevant | 0 | 0 | The study reports ferritin concentrations and gut inflammation markers as clinical efficacy outcomes, not pharmacokinetic parameters (CL, V, ka, etc.) for ferrous sulfate. |
 | popPK | Gaitán_2011 | irrelevant | 2 | 0 | The study measures fractional iron absorption using radioactive tracers rather than reporting pharmacokinetic disposition parameters (CL, V, ka) for ferrous sulfate. |
 | popPK | Gaitán_2012 | irrelevant | 2 | 0 | The study investigates the interaction between heme and non-heme iron absorption using radioactive tracers, but does not report quantitative pharmacokinetic parameters (CL, V, ka) for ferrous sulfate. |
 | popPK | Gómez_2026 | irrelevant | 0 | 0 | The paper is a systematic review on dentin erosion and MMP inhibition, not a pharmacokinetic study, and ferrous sulfate is used as a topical inhibitor rather than a subject drug for PK analysis. |
 | PD | Gómez_2026 | not_relevant | 1 | 0 | The paper is a systematic review of proteolytic enzymes in dentin erosion and does not report any specific pharmacokinetic or pharmacodynamic modeling, concentration-effect curves, or numeric PD parameters for ferrous sulfate. |
-| popPK | Haynes_2026 | irrelevant | 0 | 0 | The study is a clinical trial analyzing iron biomarkers (ferritin, hepcidin, etc.) in response to dosing regimens, not a pharmacokinetic study reporting quantitative disposition parameters (CL, V, ka) for ferrous sulfate. |
+| popPK | Haynes_2026 | irrelevant | 0 | 0 | The study analyzes changes in iron biomarkers (ferritin, hepcidin, sTfR, etc.) in response to oral iron dosing regimens and does not report any quantitative pharmacokinetic parameters (e.g., clearance, volume, half-life) for ferrous sulfate. |
 | popPK | Hussein_2026 | irrelevant | 0 | 0 | The study focuses on iron oxide nanoparticles with ferrous sulfate used only as a comparator, and no pharmacokinetic parameters are reported. |
 | popPK | Hwang_2015 | irrelevant | 0 | 0 | The paper is an in-vitro antioxidant study of Aloe vera where ferrous sulfate is used only as a reagent/standard in the FRAP assay, not as a subject drug for pharmacokinetic analysis. |
 | PD | Hwang_2015 | not_relevant | 0 | 0 | The paper studies Aloe vera extracts, not ferrous sulfate; ferrous sulfate is only mentioned as a unit of measurement for antioxidant power. |
 | popPK | Jin_2016 | irrelevant | 0 | 0 | The study focuses on the antioxidant properties of polydatin, using ferrous sulfate only as a reagent in the FRAP assay, and contains no pharmacokinetic data. |
 | PD | Jin_2016 | not_relevant | 0 | 0 | The paper reports antioxidant activity (IC50) of polydatin, not a pharmacodynamic or exposure-response relationship for ferrous sulfate. |
-| popPK | Kim_1995 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of iron's effect on calcium channels, not a pharmacokinetic study of ferrous sulfate. |
+| popPK | Kim_1995 | irrelevant | 0 | 0 | The study investigates the mechanistic action of ferrous iron on ryanodine receptors in rat cardiac sarcoplasmic reticulum in vitro, containing no pharmacokinetic parameters. |
 | popPK | Lo_1994 | irrelevant | 0 | 0 | no_text gate: only 114 chars of text extracted (&lt; 400) |
 | PD | Lo_1994 | not_relevant | 0 | 0 | The paper investigates the cardioprotective effects of magnolol and honokiol, not ferrous sulfate. |
 | popPK | Maeyama_2017 | irrelevant | 0 | 0 | The paper is a review of Fricke gel dosimeters where ferrous sulfate is used as a chemical dosimeter for radiation measurement, not as a subject drug for pharmacokinetic analysis. |
 | PD | Maeyama_2017 | not_relevant | 0 | 0 | The paper is a review of Fricke gel dosimeters for radiation therapy verification, focusing on chemical dosimetry and imaging, not pharmacodynamic modeling of ferrous sulfate as a drug. |
-| popPK | Mesgarpour_2017 | irrelevant | 0 | 0 | The paper is a systematic review of erythropoiesis-stimulating agents (ESAs) in critically ill patients and does not contain pharmacokinetic data for ferrous sulfate. |
+| popPK | Mesgarpour_2017 | irrelevant | 0 | 0 | The paper is a systematic review of erythropoiesis-stimulating agents (ESAs) in critically ill patients and does not mention ferrous sulfate or report any pharmacokinetic parameters for it. |
 | PD | Mesgarpour_2017 | not_relevant | 0 | 0 | The paper is a systematic review of clinical trials regarding the harms of erythropoiesis-stimulating agents (ESAs) and does not contain any pharmacodynamic modeling, exposure-response analysis, or numeric PD parameters for ferrous sulfate. |
 | popPK | Mohamed_2022 | irrelevant | 0 | 0 | The study is an in-vitro/ex-vivo mechanistic investigation of Hibiscus sabdariffa's antioxidant effects, using ferrous sulfate only as an oxidative stress inducer rather than as the subject drug for pharmacokinetic analysis. |
 | PD | Mohamed_2022 | not_relevant | 0 | 0 | The paper studies the antioxidant and antidiabetic effects of Hibiscus sabdariffa extracts, using ferrous sulfate only as an agent to induce oxidative injury, and does not report any pharmacodynamic or exposure-response relationship for ferrous sulfate itself. |
-| popPK | Mzembe_2025 | irrelevant | 0 | 0 | The study is a clinical trial assessing child growth outcomes, not a pharmacokinetic study, and reports no disposition parameters for ferrous sulfate. |
+| popPK | Mzembe_2025 | irrelevant | 0 | 0 | The study is a clinical trial analyzing child growth outcomes after prenatal iron treatment and does not report any pharmacokinetic parameters. |
 | popPK | Nooreen_2017 | irrelevant | 0 | 0 | The paper is a phytochemical and biological activity study of Zanthoxylum armatum, where ferrous sulfate is only used as a standard for antioxidant assays (FRAP), not as a subject drug for pharmacokinetic analysis. |
 | PD | Nooreen_2017 | not_relevant | 0 | 0 | The paper reports pharmacological assays (IC50, MIC) for plant compounds, not a pharmacodynamic or exposure-response relationship for the drug ferrous sulfate. |
-| popPK | Oehlsen_2022 | irrelevant | 0 | 0 | The paper is a review on ferrofluid synthesis and applications, not a pharmacokinetic study of ferrous sulfate. |
+| popPK | Oehlsen_2022 | irrelevant | 0 | 0 | The paper is a review of ferrofluid synthesis (iron oxide nanoparticles) and does not contain pharmacokinetic data for the drug ferrous sulfate. |
 | PD | Oehlsen_2022 | not_relevant | 0 | 0 | The paper is a review on the synthesis and physical applications of ferrofluids (colloidal iron oxide nanoparticles) and does not report any pharmacodynamic or exposure-response data for ferrous sulfate as a drug. |
-| popPK | Paganini_2017 | irrelevant | 0 | 0 | The study measures fractional iron absorption (bioavailability) using stable isotopes, not pharmacokinetic disposition parameters (CL, V, ka, t1/2) for ferrous sulfate. |
+| popPK | Paganini_2017 | irrelevant | 2 | 0 | The study measures fractional iron absorption (bioavailability) using stable isotopes rather than pharmacokinetic parameters (CL, V, ka) for ferrous sulfate. |
 | popPK | Pandey_2025 | irrelevant | 0 | 0 | The study is a mechanistic neuroprotection investigation where ferrous sulfate is used as an inducer of oxidative stress, not as the subject drug for pharmacokinetic analysis. |
 | PD | Pandey_2025 | not_relevant | 0 | 0 | The paper investigates the neuroprotective effects of Betulinic acid in a disease model, not the pharmacodynamics of ferrous sulfate, and does not report any exposure-response or dose-response parameters for ferrous sulfate. |
 | popPK | Pizarro_2002 | irrelevant | 1 | 0 | The study focuses on the absorption pathway of iron bis-glycine chelate, using ferrous sulfate only as a comparator/reference agent, and does not report quantitative pharmacokinetic parameters (CL, V, ka) for ferrous sulfate. |
 | popPK | Pizarro_2003 | irrelevant | 2 | 0 | The study reports iron absorption amounts (mg absorbed) rather than pharmacokinetic disposition parameters (CL, V, ka, t1/2) for ferrous sulfate. |
-| popPK | Qasem_2022 | irrelevant | 0 | 0 | The paper investigates the biological properties of Matricaria chamomilla essential oils and honey, not the pharmacokinetics of ferrous sulfate. |
+| popPK | Qasem_2022 | irrelevant | 0 | 0 | The study investigates the biological properties of Matricaria chamomilla essential oils and honey, not the pharmacokinetics of ferrous sulfate. |
 | PD | Qasem_2022 | not_relevant | 0 | 0 | The paper investigates the biological properties of Matricaria chamomilla essential oils and honey, not ferrous sulfate, and does not report any pharmacodynamic or exposure-response relationship for the target drug. |
 | popPK | Racay_1995 | irrelevant | 0 | 0 | no_text gate: only 129 chars of text extracted (&lt; 400) |
 | PD | Racay_1995 | not_relevant | 0 | 0 | The paper investigates the mechanism of action of stobadine on rabbit brain membranes and does not mention ferrous sulfate or report any pharmacodynamic or exposure-response data for it. |
@@ -116,20 +124,20 @@ _5 paper(s) judged relevant from the abstract, with no full text on disk — pay
 | popPK | Rohn_1993 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of free radical damage to ATPases, not a pharmacokinetic study, and reports no disposition parameters for ferrous sulfate. |
 | popPK | Rosen_2019 | irrelevant | 0 | 0 | The study is a clinical trial evaluating the efficacy of ferrous sulfate for iron deficiency, reporting only serum ferritin levels and not any pharmacokinetic parameters. |
 | PD | Rosen_2019 | not_relevant | 1 | 0 | The paper reports clinical efficacy (ferritin increase) but does not provide a concentration-effect or dose-response analysis with numeric PD parameters (e.g., Emax, EC50) for ferrous sulfate. |
-| popPK | Sena_2024 | irrelevant | 0 | 0 | The paper studies the chemical composition and biological activities of plant extracts, and ferrous sulfate is only mentioned as a unit of measurement for antioxidant capacity, not as a subject drug for pharmacokinetic analysis. |
+| popPK | Sena_2024 | irrelevant | 0 | 0 | The study analyzes essential oils of Tetradenia riparia and mentions ferrous sulfate only as a unit of measurement for antioxidant capacity (FRAP), not as a drug for PK evaluation. |
 | PD | Sena_2024 | not_relevant | 0 | 0 | The paper studies plant extracts and essential oils, not the drug ferrous sulfate (which is only mentioned as a unit in an antioxidant assay). |
 | popPK | Silva_2022 | irrelevant | 0 | 0 | no_text gate: only 138 chars of text extracted (&lt; 400) |
 | PD | Silva_2022 | not_relevant | 0 | 0 | The paper focuses on the extraction of kiwiberry leaves for skin application and does not involve ferrous sulfate or any pharmacodynamic modeling. |
-| popPK | Silva_2025 | irrelevant | 0 | 0 | The paper is a phytochemical and antioxidant study of Humulus lupulus, where ferrous sulfate is only used as a standard in the FRAP assay, not as a subject drug for pharmacokinetic analysis. |
+| popPK | Silva_2025 | irrelevant | 0 | 0 | The study analyzes phytochemicals of *Humulus lupulus* and uses ferrous sulfate only as a standard for FRAP assays, not as a drug subject for PK analysis. |
 | PD | Silva_2025 | not_relevant | 0 | 0 | The paper analyzes the phytochemical profile and antioxidant activity of Humulus lupulus extracts, not the pharmacodynamics of ferrous sulfate. |
-| popPK | Silva_2026 | irrelevant | 0 | 0 | The study investigates N-acetylcysteine in preeclampsia and does not involve ferrous sulfate or pharmacokinetic modeling. |
+| popPK | Silva_2026 | irrelevant | 0 | 0 | The study focuses on the effects of N-acetylcysteine (NAC) in preeclampsia and contains no data on ferrous sulfate pharmacokinetics. |
 | PD | Silva_2026 | not_relevant | 0 | 0 | The paper studies N-acetylcysteine, not ferrous sulfate, and reports clinical trial outcomes without any pharmacodynamic modeling or exposure-response analysis. |
-| popPK | Stanoiu_2025 | irrelevant | 0 | 0 | The paper focuses on the characterization of Inonotus obliquus delivery systems and has no relation to ferrous sulfate pharmacokinetics. |
+| popPK | Stanoiu_2025 | irrelevant | 0 | 0 | The paper studies a medicinal mushroom delivery system and contains no pharmacokinetic data for ferrous sulfate. |
 | PD | Stanoiu_2025 | not_relevant | 0 | 0 | The paper studies Inonotus obliquus and silver nanoparticles, not ferrous sulfate, and reports no pharmacodynamic or exposure-response data for the target drug. |
-| popPK | Steele_2021 | irrelevant | 0 | 0 | The study evaluates the effect of iron supplementation on telomere length and mitochondrial DNA content, not pharmacokinetic parameters. |
+| popPK | Steele_2021 | irrelevant | 0 | 0 | The study evaluates the biological effects of iron supplementation on telomere length and mitochondrial DNA content, not pharmacokinetic parameters such as clearance or volume. |
 | popPK | Steinke_1978 | irrelevant | 0 | 0 | The study assesses iron bioavailability via hemoglobin repletion in rats, not pharmacokinetic disposition parameters (CL, V, ka) for ferrous sulfate. |
 | PD | Steinke_1978 | not_relevant | 3 | 2 | The paper reports relative bioavailability percentages using a slope ratio assay for iron sources, which is a pharmacokinetic/bioavailability metric, not a pharmacodynamic exposure-response or dose-response relationship with numeric PD parameters like Emax or EC50. |
-| popPK | Taha_2022 | irrelevant | 0 | 0 | The study is a toxicology/pharmacodynamics investigation of heavy metals on detrusor muscle contractility, not a pharmacokinetic study of ferrous sulfate. |
+| popPK | Taha_2022 | irrelevant | 0 | 0 | The study focuses on the toxicological effects of heavy metals on detrusor muscle contractility (in vivo/in vitro physiology), not the pharmacokinetic disposition parameters of ferrous sulfate. |
 | PD | Taha_2022 | not_relevant | 3 | 2 | The paper reports qualitative changes in Emax and dose-response curves for ferrous sulfate but does not provide numeric PD parameters (e.g., specific Emax values, EC50, or curve data) for extraction. |
 | popPK | Valente_2016 | irrelevant | 0 | 0 | The paper describes the use of ferrous sulfate as a chemical component in a Fricke gel dosimeter for radiation measurement, not as a drug subject to pharmacokinetic analysis. |
 | PD | Valente_2016 | not_relevant | 0 | 0 | The paper describes a radiation dosimeter (Fricke gel) and its physical dose-response to X-rays, not a pharmacodynamic drug response. |
@@ -140,11 +148,11 @@ _5 paper(s) judged relevant from the abstract, with no full text on disk — pay
 | PD | Wong_2000 | not_relevant | 3 | 1 | The study reports PK changes and qualitative changes in antimicrobial activity (assay dependency) but does not provide numeric PD parameters (e.g., MIC, Emax, EC50) or a quantitative concentration-effect curve for ferrous sulfate. |
 | popPK | Yaeger_2021 | irrelevant | 0 | 0 | The study evaluates the pharmacokinetics of tulathromycin in ewes, not ferrous sulfate. |
 | PD | Yaeger_2021 | not_relevant | 0 | 0 | The paper reports pharmacokinetics of tulathromycin, not ferrous sulfate, and contains no pharmacodynamic or exposure-response analysis. |
-| popPK | Zarif_2025 | irrelevant | 0 | 0 | The study focuses on atorvastatin delivery for glioblastoma and does not investigate the pharmacokinetics of ferrous sulfate. |
+| popPK | Zarif_2025 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics and delivery of atorvastatin, not ferrous sulfate. |
 | PD | Zarif_2025 | not_relevant | 0 | 0 | The paper focuses on atorvastatin delivery and does not report any pharmacodynamic or exposure-response analysis for ferrous sulfate. |
 | popPK | Zhao_2015 | irrelevant | 0 | 0 | The paper is a clinical trial assessing the efficacy of iron supplementation on anemia and iron status, not a pharmacokinetic study reporting disposition parameters like clearance or volume. |
-| popPK | Zhuo_2014 | irrelevant | 2 | 0 | The study focuses on ferrous glycinate as the subject drug with ferrous sulfate as a comparator, and no specific numeric PK parameter values are provided in the text. |
-| popPK | de_2025 | irrelevant | 0 | 0 | The study focuses on the formulation and in vitro characterization of a nanoemulsion for trans-dehydrocrotonin, not the pharmacokinetics of ferrous sulfate. |
+| popPK | Zhuo_2014 | relevant | 9 | 0 | The study describes a pharmacokinetic analysis of iron using a one-compartmental model in rats, comparing ferrous sulfate to ferrous glycinate, but the specific quantitative parameter values (Cmax, CL, V, etc.) are not provided in the text evidence. |
+| popPK | de_2025 | irrelevant | 0 | 0 | The study focuses on the formulation of trans-dehydrocrotonin in a nanoemulsion and performs in vitro release/antioxidant assays, unrelated to ferrous_sulfate pharmacokinetics. |
 | PD | de_2025 | not_relevant | 0 | 0 | The paper focuses on the formulation and in vitro antioxidant activity of a trans-dehydrocrotonin nanoemulsion, with no pharmacodynamic or exposure-response analysis for ferrous sulfate. |
 | popPK | unknown_2016 | irrelevant | 0 | 0 | no_text gate: only 115 chars of text extracted (&lt; 400) |
 | PD | unknown_2016 | not_relevant | 0 | 0 | The provided text contains abstracts and methods for studies on G-CSF, CSF3R splicing, hemophilia, DDAVP, cancer disparities, and dexrazoxane, but does not contain any data, analysis, or mention of ferrous sulfate or its pharmacodynamic parameters. |

@@ -18,7 +18,7 @@ Ferrous fumarate is an oral iron preparation used to treat iron deficiency anemi
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-05 20:08 | 3:06 | 0/0/0 | 0/0/0 | 0/0/0 | 125,201/3,016 | ollama / qwen3.8:27b-mtp-q8_0 | 7 | 2/8 | 6/1 | 0 |
+| 2026-10-07 18:27 | 1:08 | 0/0/0 | 0/0/0 | 0/0/0 | 130,764/3,049 | einfracz / qwen3.8-27b | 8 | 2/9 | 7/1 | 0 |
 
 ## popPK records
 
@@ -47,76 +47,66 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 - **records:** 0  ·  extracted 0  ·  needs_review 0  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** True
 
-## Full text wanted
-
-_1 paper(s) judged relevant from the abstract, with no full text on disk — paywalled, or the resolver could not reach them. Follow the DOI, then save the PDF into `papers/` as `&lt;save as&gt;.pdf` and re-run the extraction._
-
-| save as | citation | domain | score | DOI | PubMed | why wanted |
-|---|---|---|---|---|---|---|
-| `Husmann_2022.pdf` | Husmann FMD et al., Kinetics of iron absorption from ferrou…, The American journal of cli… (2022) | popPK | 8 | [10.1093/ajcn/nqab361](https://doi.org/10.1093/ajcn/nqab361) | [34726703](https://pubmed.ncbi.nlm.nih.gov/34726703) | The study reports a 1-compartment PK model for ferrous fumarate in humans, but the evidence only provides AUC and tmax, lacking explicit numeric values for clearance, volume, or absorption rate constants. |
-
-<sub>queue written 2026-10-05T20:07:32.079902+00:00</sub>
-
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Arora_2026 | irrelevant | 0 | 0 | The study evaluates the pharmacokinetics of bictegravir (BIC) when co-administered with ferrous fumarate, making ferrous fumarate a co-administered agent rather than the subject drug. |
-| popPK | Balevic_2019 | irrelevant | 0 | 0 | The study reports pharmacokinetic parameters for hydroxychloroquine, not ferrous fumarate. |
-| popPK | Brown_2017 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of psilocybin and psilocin, not ferrous fumarate. |
-| popPK | Chadwick_1995 | irrelevant | 0 | 0 | The study evaluates the pharmacokinetics of zalcitabine (ddC), not ferrous fumarate. |
+| popPK | Arora_2026 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of bictegravir, with ferrous fumarate serving only as a co-administered agent in a drug-drug interaction study. |
+| popPK | Balevic_2019 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of hydroxychloroquine, not ferrous fumarate. |
+| popPK | Brown_2017 | irrelevant | 0 | 0 | The study is about the pharmacokinetics of psilocybin, not ferrous fumarate. |
+| popPK | Chadwick_1995 | irrelevant | 0 | 0 | The paper studies the pharmacokinetics of zalcitabine (ddC), not ferrous fumarate. |
 | popPK | Chen_2018 | irrelevant | 1 | 0 | The paper is a review of fruit juice-drug interactions that mentions ferrous fumarate only as a beneficiary of orange juice co-administration without reporting any quantitative pharmacokinetic parameters (CL, V, ka, etc.) for the drug itself. |
 | PD | Chen_2018 | not_relevant | 1 | 0 | The paper is a review of food-drug interactions and mentions ferrous fumarate only as a beneficial combination with orange juice, without providing any numeric PD parameters or exposure-response analysis. |
-| PGx | Chen_2018 | not_relevant | 0 | 0 | The paper is a review of food-drug interactions and does not report pharmacogenomic effects on the PK/PD of ferrous fumarate. |
-| popPK | Chen_2021 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of metformin, not ferrous fumarate. |
-| popPK | Chevillard_2018 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of baclofen, not ferrous fumarate. |
-| popPK | Dix_1994 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of tris(2-chloroethyl) phosphate (TRCP) in rats, not ferrous fumarate. |
-| popPK | Ekobena_2025 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of bictegravir, not ferrous fumarate. |
+| PGx | Chen_2018 | not_relevant | 0 | 0 | The paper discusses food-drug interactions (juices) and mentions genetic polymorphisms only as a general factor, but does not report any specific pharmacogenomic effect on ferrous fumarate PK or PD parameters. |
+| popPK | Chen_2021 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of metformin in rats, not ferrous_fumarate. |
+| popPK | Chevillard_2018 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of baclofen, not ferrous_fumarate. |
+| popPK | Dix_1994 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of tris(2-chloroethyl) phosphate in rats, not ferrous fumarate. |
+| popPK | Ekobena_2025 | irrelevant | 0 | 0 | The study reports population pharmacokinetic parameters for bictegravir, not ferrous fumarate. |
 | PD | Ekobena_2025 | not_relevant | 0 | 0 | The paper reports a population pharmacokinetic (PK) model for bictegravir, not ferrous fumarate, and contains no pharmacodynamic (PD) or exposure-response analysis. |
-| popPK | Gong_1988 | irrelevant | 0 | 0 | The study investigates iron kinetics (Fe-59) in irradiated rats, not the pharmacokinetics of the drug ferrous fumarate. |
-| popPK | Hampton_2021 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of gabapentin in pigs, not ferrous fumarate. |
-| popPK | Husmann_2022 | relevant | 8 | 4 | The study reports a 1-compartment PK model for ferrous fumarate in humans, but the evidence only provides AUC and tmax, lacking explicit numeric values for clearance, volume, or absorption rate constants. |
+| popPK | Gong_1988 | irrelevant | 0 | 0 | The study investigates the effects of X-irradiation on iron kinetics in rats using Fe-59, but does not report pharmacokinetic parameters for the drug ferrous fumarate. |
+| popPK | Hampton_2021 | irrelevant | 0 | 0 | The study reports pharmacokinetic parameters for gabapentin in pigs, not ferrous fumarate. |
+| popPK | Husmann_2022 | relevant | 8 | 2 | The study reports a 1-compartment pharmacokinetic model for ferrous fumarate with parameters like tmax and AUC, but specific rate constants (ka, CL, V) are not explicitly listed in the provided text. |
 | popPK | Imaizumi_2017 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of acetaminophen, not ferrous fumarate. |
 | popPK | Johnston_2017 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of metformin hydrochloride in dogs, not ferrous fumarate. |
-| popPK | Kang_2026 | irrelevant | 0 | 0 | The paper describes a computational model for predicting drug-food interactions and does not report pharmacokinetic parameters for ferrous fumarate. |
+| popPK | Kang_2026 | irrelevant | 0 | 0 | The paper is a computational study on drug-food interaction prediction using knowledge graphs and does not report pharmacokinetic parameters for ferrous fumarate. |
 | PD | Kang_2026 | not_relevant | 0 | 0 | The paper describes a machine learning model for predicting drug-food interactions and does not report any pharmacodynamic or exposure-response data for ferrous fumarate. |
-| popPK | Kim_2018 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of acetyl tributyl citrate (ATBC), not ferrous fumarate. |
+| popPK | Kim_2018 | irrelevant | 0 | 0 | The paper reports pharmacokinetic parameters for acetyl tributyl citrate (ATBC), a pharmaceutical excipient, not for ferrous fumarate. |
 | popPK | Knych_2018 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of furosemide in horses, not ferrous fumarate. |
-| popPK | Knych_2024 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of butorphanol in horses, not ferrous fumarate. |
-| popPK | Kong_2022 | irrelevant | 0 | 0 | The study reports pharmacokinetic parameters for buserelin, not ferrous fumarate. |
-| popPK | Langert_1991 | irrelevant | 0 | 0 | The paper is an in-vitro molecular biology study on E. coli promoters and has no relation to ferrous fumarate pharmacokinetics. |
-| popPK | Lee_2016 | irrelevant | 0 | 0 | The study reports population pharmacokinetic parameters for ramosetron, not ferrous fumarate. |
-| popPK | Liu_2021 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of neomycin sulfate in swine, not ferrous fumarate. |
-| popPK | Lotze_1986 | irrelevant | 0 | 0 | The paper describes radioimmunodetection of melanoma using monoclonal antibodies and does not involve ferrous fumarate or its pharmacokinetics. |
-| popPK | Manchandani_2018 | irrelevant | 0 | 0 | The study reports pharmacokinetic parameters for polymyxin B, not ferrous fumarate. |
-| popPK | Moon_2008 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of quercetin, not ferrous fumarate. |
-| popPK | Moore_1991 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of atropine and diazepam in sheep, not ferrous fumarate. |
+| popPK | Knych_2024 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of butorphanol in horses, not ferrous_fumarate. |
+| popPK | Kong_2022 | irrelevant | 0 | 0 | The paper describes the pharmacokinetics of buserelin (a GnRH agonist), not ferrous fumarate. |
+| popPK | Langert_1991 | irrelevant | 0 | 0 | The paper describes in vitro molecular biology mechanisms of E. coli promoters and does not involve ferrous fumarate or pharmacokinetics. |
+| popPK | Lee_2016 | irrelevant | 0 | 0 | The study analyzes the pharmacokinetics of ramosetron, not ferrous fumarate. |
+| popPK | Liu_2021 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of neomycin sulfate, not ferrous fumarate. |
+| popPK | Lotze_1986 | irrelevant | 0 | 0 | The paper is about radiolabeled monoclonal antibodies for melanoma imaging and does not involve ferrous fumarate. |
+| popPK | Manchandani_2018 | irrelevant | 0 | 0 | The study reports pharmacokinetic parameters for Polymyxin B, not ferrous fumarate. |
+| popPK | Moon_2008 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of quercetin, not ferrous fumarate. |
+| popPK | Moore_1991 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of atropine and diazepam in sheep and does not involve ferrous fumarate. |
 | popPK | Nie_2021 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of ticagrelor, not ferrous fumarate. |
-| popPK | Paganini_2017 | irrelevant | 0 | 0 | The study measures fractional iron absorption (bioavailability) using stable isotopes, not pharmacokinetic disposition parameters (CL, V, ka, t1/2) for ferrous fumarate. |
+| popPK | Paganini_2017 | irrelevant | 1 | 0 | The study measures fractional iron absorption using stable isotopes in infants rather than quantifying pharmacokinetic disposition parameters (such as clearance, volume, or half-life) for ferrous fumarate. |
 | popPK | Pei_2019 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of imrecoxib, not ferrous fumarate. |
 | popPK | Pesko_2022 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of paracetamol in horses, not ferrous fumarate. |
-| popPK | Pypendop_2020 | irrelevant | 0 | 0 | The study reports pharmacokinetic parameters for vatinoxan in cats, not ferrous fumarate. |
-| popPK | Rendle_2015 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of pergolide in horses, not ferrous fumarate. |
+| popPK | Pypendop_2020 | irrelevant | 0 | 0 | The study characterizes the pharmacokinetics of vatinoxan in cats, not ferrous_fumarate. |
+| popPK | Rendle_2015 | irrelevant | 0 | 0 | The study reports pharmacokinetic parameters for pergolide in horses, not ferrous fumarate. |
 | popPK | Ryszka_1998 | irrelevant | 0 | 0 | no_text gate: only 282 chars of text extracted (&lt; 400) |
-| popPK | Sabouraud_1994 | irrelevant | 0 | 0 | The study focuses on colchicine pharmacokinetics and radioimmunoassay development, not ferrous fumarate. |
-| popPK | Sandouk_1995 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of thiocolchicoside, not ferrous fumarate. |
-| popPK | Secrest_2025 | irrelevant | 2 | 4 | The study reports absorption metrics (iAUC, Cmax, Tmax) for ferrous fumarate as a comparator/reference, but lacks compartmental PK parameters (CL, V, ka) required for population PK modeling. |
-| popPK | Shin_2024 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of methadone in ferrets, not ferrous fumarate. |
-| popPK | Soares_2021 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of amoxicillin, not ferrous fumarate. |
-| popPK | Song_2015 | irrelevant | 0 | 0 | The study evaluates the pharmacokinetics of dolutegravir, with ferrous fumarate acting only as a co-administered mineral supplement (comparator/interactor), not the subject drug. |
-| popPK | Tonn_1995 | irrelevant | 0 | 0 | The paper is a review of drug kinetics in pregnant sheep and does not report any pharmacokinetic parameters for ferrous fumarate. |
-| popPK | Vake_2024 | irrelevant | 0 | 0 | The study reports pharmacokinetic parameters for levobupivacaine in pigs, not ferrous fumarate. |
-| popPK | Valade_2014 | irrelevant | 0 | 0 | The study reports pharmacokinetic parameters for emtricitabine, not ferrous fumarate. |
-| popPK | Wang_2022 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of polymyxin B, not ferrous fumarate. |
-| popPK | Woo_2008 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of a peptidic erythropoiesis receptor agonist, not ferrous fumarate. |
+| popPK | Sabouraud_1994 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of colchicine, not ferrous_fumarate. |
+| popPK | Sandouk_1995 | irrelevant | 0 | 0 | The paper studies the pharmacokinetics of thiocolchicoside, not ferrous fumarate. |
+| popPK | Secrest_2025 | irrelevant | 2 | 2 | The study reports absorption metrics (iAUC, Cmax, Tmax) for ferrous fumarate as a comparator/reference, but lacks formal disposition parameters (CL, Vd, ka, compartmental model) required for relevance. |
+| popPK | Shin_2024 | irrelevant | 0 | 0 | The study evaluates the pharmacokinetics of methadone in ferrets, not ferrous fumarate. |
+| popPK | Soares_2021 | irrelevant | 0 | 0 | The study reports pharmacokinetics for amoxicillin, not ferrous_fumarate. |
+| popPK | Song_2015 | irrelevant | 0 | 0 | The study reports pharmacokinetic parameters for dolutegravir, while ferrous fumarate is used only as a co-administered mineral supplement to evaluate drug-drug interactions. |
+| popPK | Tonn_1995 | irrelevant | 0 | 0 | The paper is a review of drug disposition studies in pregnant sheep and does not mention ferrous_fumarate or provide specific PK parameters for it. |
+| popPK | Vake_2024 | irrelevant | 0 | 0 | The study reports pharmacokinetic parameters for levobupivacaine, not ferrous fumarate. |
+| popPK | Valade_2014 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of emtricitabine, not ferrous fumarate. |
+| popPK | Wang_2022 | irrelevant | 0 | 0 | The paper investigates the population pharmacokinetics of polymyxin B, not ferrous fumarate. |
+| popPK | Woo_2008 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of a peptidic erythropoiesis receptor agonist, not ferrous_fumarate. |
 | PD | Woo_2008 | not_relevant | 0 | 0 | The paper describes a PD model for a peptidic erythropoiesis receptor agonist, not ferrous fumarate. |
-| popPK | Yang_2023 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of oxcarbazepine (and its metabolite MHD), not ferrous fumarate. |
-| popPK | You_2022 | irrelevant | 0 | 0 | The paper investigates bevacizumab efficacy in ovarian cancer using CA-125 kinetics and does not involve ferrous fumarate pharmacokinetics. |
+| popPK | Yang_2023 | irrelevant | 0 | 0 | The study focuses on the population pharmacokinetics of oxcarbazepine (and its metabolite MHD), not ferrous fumarate. |
+| popPK | You_2022 | irrelevant | 0 | 0 | The paper is an oncology study analyzing bevacizumab efficacy in ovarian cancer using CA-125 kinetics as a biomarker, with no relation to ferrous fumarate pharmacokinetics. |
 | PD | You_2022 | not_relevant | 0 | 0 | The paper analyzes the predictive value of a biomarker (KELIM) for bevacizumab efficacy in ovarian cancer and does not report any pharmacodynamic or exposure-response relationship for ferrous fumarate. |
 | popPK | Zahr_2021 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of ciprofloxacin, not ferrous fumarate. |
-| popPK | Zhao_2014 | irrelevant | 0 | 0 | The study reports pharmacokinetic parameters for valnemulin in swine, not ferrous fumarate. |
-| popPK | Zhou_2014 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of ertapenem, not ferrous fumarate. |
-| popPK | Zuur_2018 | irrelevant | 0 | 0 | The study reports pharmacokinetic parameters for ertapenem, not ferrous fumarate. |
+| popPK | Zhao_2014 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of valnemulin in swine, not ferrous fumarate. |
+| popPK | Zhou_2014 | irrelevant | 0 | 0 | The study reports pharmacokinetic parameters for ertapenem, not ferrous fumarate. |
+| popPK | Zuur_2018 | irrelevant | 0 | 0 | The study reports pharmacokinetic parameters for ertapenem, not ferrous_fumarate. |
 | popPK | unknown_2018 | irrelevant | 0 | 0 | no_text gate: only 49 chars of text extracted (&lt; 400) |
 | PD | unknown_2018 | not_relevant | 0 | 0 | The provided text is only a conference header and contains no data, analysis, or mention of ferrous fumarate pharmacodynamics. |
 | popPK | van_1994 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of vinleucinol in mice, not ferrous fumarate. |

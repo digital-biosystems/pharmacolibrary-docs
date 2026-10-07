@@ -1,5 +1,4 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N06A&quot;,&quot;href&quot;:&quot;atc/N06A.md&quot;},{&quot;label&quot;:&quot;vortioxetine&quot;,&quot;href&quot;:&quot;drugs/drug_vortioxetine/&quot;},{&quot;label&quot;:&quot;Naik_2016_2 \u00b7 PD change in MADRS score from baseline&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Vortioxetine_Areberg2014v2_reference&quot;,&quot;label&quot;:&quot;Areberg_2014_2_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_vortioxetine/Vortioxetine_Areberg2014v2_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # change in MADRS score from baseline — PD  <span class="pk-badge pk-badge--orange">needs review</span>
@@ -18,11 +17,15 @@
 
 **Model:** A model was generated (see the **Models** tab); it has no in-browser simulator.
 
+> Vortioxetine plasma concentrations (ng/mL) act on change in MADRS score from baseline via an Emax (inhibitory) model; the paper excerpts do not state the mechanism beyond this. Reported values: EC50 24.9 ng/mL and Emax 7.0 (units not stated).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Naik_2016_2`
 - **model family:** `emax`
 - **driver:** `pk_record`
 - **tier:** population
-- **effect:** inhibition/unknown
+- **effect:** inhibition/proportional
 
 ## Citation
 Naik H et al., A Population Pharmacokinetic-Pharmacody…, Basic & clinical pharmacolo… (2016)
@@ -31,7 +34,7 @@ Naik H et al., A Population Pharmacokinetic-Pharmacody…, Basic & clinical phar
 ## Parameters
 | role | label (paper) | Q-code · name | value | unit | value_si | link | source |
 |---|---|---|---|---|---|---|---|
-| PD (effect) | Half-maximal effective concentration | `Q321` · not captured | 24.9 | ng/mL | not captured | llm (not captured) | Naik_2016_2:pdv3 |
+| PD (effect) | EC50 | `Q321` · not captured | 24.9 | ng/mL | not captured | llm (not captured) | Naik_2016_2:pdv3 |
 | PD (effect) | Emax | `Q323` · not captured | 7.0 | not captured | not captured | direction (not captured) | Naik_2016_2:pdv3 |
 
 <details class="legend">

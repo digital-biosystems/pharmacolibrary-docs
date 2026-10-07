@@ -1,0 +1,42 @@
+{
+ "dose_source": "paper",
+ "model_id": "Maribavir_Song2024_reference",
+ "molar_masses": {
+  "central.C": 0.37623
+ },
+ "note": "Values for the shared PK_2C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "paper_doses_kind": "discrete",
+ "paper_doses_mg": [
+  100.0,
+  200.0,
+  400.0,
+  800.0,
+  1200.0
+ ],
+ "parameters": {
+  "Cl": 1.4583333333333333e-05,
+  "F": 1.0,
+  "MM": 0.37623,
+  "Tlag": 158760.0,
+  "VdPerKg": 0.00048571428571428577,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 0.0001,
+  "k12": 0.0007410130718954248,
+  "k21": 0.0002446062567421791,
+  "ka": 0.042222222222222223,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 0.0
+ },
+ "reference_peaks": {
+  "central.C": 0.0
+ },
+ "stop_time": 86400.0,
+ "template": "PK_2C_enteral",
+ "template_fmu": "PK_2C_enteral.fmu"
+}

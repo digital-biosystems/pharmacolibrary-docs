@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A16A&quot;,&quot;href&quot;:&quot;atc/A16A.md&quot;},{&quot;label&quot;:&quot;lumasiran&quot;,&quot;href&quot;:&quot;drugs/drug_lumasiran/&quot;},{&quot;label&quot;:&quot;Sten_2023 \u00b7 model_simultaneously_fitted_to_all_data_estimate_se&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Lumasiran_Sten2023_model_simultaneously_fitted_to_all_data_e&quot;,&quot;label&quot;:&quot;Sten_2023_model_simultaneously_fitted_to_all_data_estimate_se&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_lumasiran/Lumasiran_Sten2023_model_simultaneously_fitted_to_all_data_e.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Lumasiran_Sten2023_model_simultaneously_fitted_to_all_data_e&quot;,&quot;label&quot;:&quot;Sten_2023_model_simultaneously_fitted_to_all_data_estimate_se&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_lumasiran/Lumasiran_Sten2023_model_simultaneously_fitted_to_all_data_e.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # lumasiran — `Lumasiran_Sten2023_model_simultaneously_fitted_to_all_data_e`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from the LLM relevance screen, p(non-human) 0.50).">human + animal</span>
+> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from the LLM relevance screen, p(non-human) 0.20).">human + animal</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -13,7 +13,7 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
-> **Species: human + animal.** The paper reports both human and animal data; check which group this record describes before reading it as human pharmacology (read from the LLM relevance screen, p(non-human) 0.50).
+> **Species: human + animal.** The paper reports both human and animal data; check which group this record describes before reading it as human pharmacology (read from the LLM relevance screen, p(non-human) 0.20).
 
 **Model:** A simulatable model was generated — see the **Models** and **Simulation** tabs.
 
@@ -27,12 +27,14 @@ Independently confirmed by `gpt-oss:120b`.
 
 <sub>reviewed by qwen3.8:27b-mtp-q8_0</sub>
 
+> ⚠️ **STALE** — review status `needs_review` (reviewed 2026-10-05 12:03:13.934714+00:00) predates the upstream re-run (2026-10-07 17:50:23.832512+00:00). Current validate status: `extracted`.
+
 ## Citation
 Sten S et al., Plasma Pharmacokinetics of N-Acetylgala…, Clinical pharmacokinetics (2023)
   ·  DOI: [10.1007/s40262-023-01314-7](https://doi.org/10.1007/s40262-023-01314-7)
 
 ## Model component
-<dbs-pgx drug="lumasiran" model-id="Lumasiran_Sten2023_model_simultaneously_fitted_to_all_data_e" status="needs_review" stale="false" population="healthy adults and patients with primary hyperoxaluria type 1" measured-compound="lumasiran" parameterization="apparent" topology="2C"></dbs-pgx>
+<dbs-pgx drug="lumasiran" model-id="Lumasiran_Sten2023_model_simultaneously_fitted_to_all_data_e" status="extracted" stale="true" population="healthy adults and patients with specific conditions" measured-compound="GalNAc-siRNAs" parameterization="apparent" topology="2C"></dbs-pgx>
 
 **Model structure:** 2-compartment, oral mammillary model — template `PK_2C_enteral`.  
 **Parameters:** 6 extracted.
@@ -40,8 +42,6 @@ Sten S et al., Plasma Pharmacokinetics of N-Acetylgala…, Clinical pharmacokine
 **Parameterization:** CL/F, Q/F, V1/F, V2/F, V3/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
 ## Parameters
-> ⚠️ This record is not accepted (current status `needs_review`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
-
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
 | Ka (1/h) | `Q49` · kabs | 0.157 | 1/h | 4.361111111111111e-05 | 1/h | 0.031 | exact (1.0) | Tab3:row1:col2 | — | not captured |
@@ -58,18 +58,16 @@ Sten S et al., Plasma Pharmacokinetics of N-Acetylgala…, Clinical pharmacokine
 
 ## Departures & gaps
 
-**Deviations:**
-- `defaulted_parameters`: ['Tlag', 'k12']
-- `apparent_assumption`: F=1, Fm=1, no molar correction (parameterization=apparent)
-
 **Interpretation flags:**
 - dropped duplicate Q27 ('CL3/F (L/h)', value '45.4') — already have one for this compound
-- implicit units: 'Ka (1/h)' → 1/h (from the popPK convention: "The paper text describes the parameter as 'absorption rate (Ka)' and 'first-order absorption'. In population pharmacokin")
-- apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=lumasiran
+- implicit units: 'Ka (1/h)' → 1/h (from the popPK convention: 'Ka is an absorption rate constant, a first-order rate parameter. In population pharmacokinetics, first-order rate consta')
+- apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=GalNAc-siRNAs
 - structure disagreement: deterministic 2C vs LLM 3C — review compartment count
 - population split: 'model simultaneously fitted to all data [estimate (se)]' subgroup of Sten_2023 (paper reports 2 populations: model fitted to olpasiran data only [estimate (se)], model simultaneously fitted to all data [estimate (se)])
+- molar mass: no plausible PubChem entry for 'GalNAc-siRNAs' ('no full name in the paper') — left in mass units
 - molar mass: none found for 'lumasiran' — its concentrations stay mass-only
-- skipped review gap-fill of TLAG: primary's parameterization (rate-constant / ka-only) does not use it
+- molar mass: none found for 'GalNAc-siRNAs' — its concentrations stay mass-only
+- review gap-fill skipped: this record measures 'GalNAc-siRNAs', not lumasiran — the review values are the parent's
 
 **Extraction notes:**
 - LLM selected parameter table(s) 3
@@ -142,12 +140,12 @@ _Every reader agrees on every compared field of this record._
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_lumasiran/Lumasiran_Sten2023_model_simultaneously_fitted_to_all_data_e/Lumasiran_Sten2023_model_simultaneously_fitted_to_all_data_e_modelica.zip" download>Lumasiran_Sten2023_model_simultaneously_fitted_to_all_data_e_modelica.zip</a> <span class="pk-size">(4.9 kB)</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_lumasiran/Lumasiran_Sten2023_model_simultaneously_fitted_to_all_data_e/Lumasiran_Sten2023_model_simultaneously_fitted_to_all_data_e_fmi.zip" download>Lumasiran_Sten2023_model_simultaneously_fitted_to_all_data_e_fmi.zip</a> <span class="pk-size">(4.4 kB)</span><br><a href="models/fmu/PK_2C_enteral.fmu" download>PK_2C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_lumasiran/Lumasiran_Sten2023_model_simultaneously_fitted_to_all_data_e/Lumasiran_Sten2023_model_simultaneously_fitted_to_all_data_e_matlab.zip" download>Lumasiran_Sten2023_model_simultaneously_fitted_to_all_data_e_matlab.zip</a> <span class="pk-size">(3.6 kB)</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_lumasiran/Lumasiran_Sten2023_model_simultaneously_fitted_to_all_data_e/Lumasiran_Sten2023_model_simultaneously_fitted_to_all_data_e_matlab_simbio.zip" download>Lumasiran_Sten2023_model_simultaneously_fitted_to_all_data_e_matlab_simbio.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_lumasiran/Lumasiran_Sten2023_model_simultaneously_fitted_to_all_data_e/Lumasiran_Sten2023_model_simultaneously_fitted_to_all_data_e_sbml.zip" download>Lumasiran_Sten2023_model_simultaneously_fitted_to_all_data_e_sbml.zip</a> <span class="pk-size">(2.9 kB)</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_lumasiran/Lumasiran_Sten2023_model_simultaneously_fitted_to_all_data_e/Lumasiran_Sten2023_model_simultaneously_fitted_to_all_data_e_cellml.zip" download>Lumasiran_Sten2023_model_simultaneously_fitted_to_all_data_e_cellml.zip</a> <span class="pk-size">(3.3 kB)</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_lumasiran/Lumasiran_Sten2023_model_simultaneously_fitted_to_all_data_e/Lumasiran_Sten2023_model_simultaneously_fitted_to_all_data_e_fmi.zip" download>Lumasiran_Sten2023_model_simultaneously_fitted_to_all_data_e_fmi.zip</a> <span class="pk-size">(4.3 kB)</span><br><a href="models/fmu/PK_2C_enteral.fmu" download>PK_2C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_lumasiran/Lumasiran_Sten2023_model_simultaneously_fitted_to_all_data_e/Lumasiran_Sten2023_model_simultaneously_fitted_to_all_data_e_matlab.zip" download>Lumasiran_Sten2023_model_simultaneously_fitted_to_all_data_e_matlab.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_lumasiran/Lumasiran_Sten2023_model_simultaneously_fitted_to_all_data_e/Lumasiran_Sten2023_model_simultaneously_fitted_to_all_data_e_matlab_simbio.zip" download>Lumasiran_Sten2023_model_simultaneously_fitted_to_all_data_e_matlab_simbio.zip</a> <span class="pk-size">(2.8 kB)</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_lumasiran/Lumasiran_Sten2023_model_simultaneously_fitted_to_all_data_e/Lumasiran_Sten2023_model_simultaneously_fitted_to_all_data_e_sbml.zip" download>Lumasiran_Sten2023_model_simultaneously_fitted_to_all_data_e_sbml.zip</a> <span class="pk-size">(2.7 kB)</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_lumasiran/Lumasiran_Sten2023_model_simultaneously_fitted_to_all_data_e/Lumasiran_Sten2023_model_simultaneously_fitted_to_all_data_e_cellml.zip" download>Lumasiran_Sten2023_model_simultaneously_fitted_to_all_data_e_cellml.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
 </tbody></table>
 <p>Each archive holds the model source, a script that simulates it against the appropriate library, and a README describing both and how to run them.</p>
 <p><b>FMI is two downloads.</b> The archive holds this record's parameters and its driver; the simulator itself is <code>PK_2C_enteral.fmu</code>, one compiled template shared by every model of this structure. Take the FMU once, keep it beside the script (or pass <code>--fmu PATH</code>). Running it reproduces the model-specific FMU exactly.</p>
@@ -164,4 +162,4 @@ _Every reader agrees on every compared field of this record._
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-05 11:38 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 17:50 UTC</sub>

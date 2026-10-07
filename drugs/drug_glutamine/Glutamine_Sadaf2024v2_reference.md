@@ -24,17 +24,17 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 
 <sub>reviewed by rule template (no LLM)</sub>
 
-> ⚠️ **STALE** — review status `needs_review` (reviewed 2026-09-28 14:38:08.371901+00:00) predates the upstream re-run (2026-10-05 10:48:43.431462+00:00). Current validate status: `needs_review`.
+> ⚠️ **STALE** — review status `needs_review` (reviewed 2026-09-28 14:38:08.371901+00:00) predates the upstream re-run (2026-10-07 17:39:36.503380+00:00). Current validate status: `needs_review`.
 
 ## Citation
 Sadaf A et al., A Population Pharmacokinetic Analysis o…, Clinical pharmacokinetics (2024)
   ·  DOI: [10.1007/s40262-024-01349-4](https://doi.org/10.1007/s40262-024-01349-4)
 
 ## Model component
-<dbs-pgx drug="glutamine" model-id="Glutamine_Sadaf2024v2_reference" status="needs_review" stale="true" population="patients with sickle cell disease and healthy volunteers" measured-compound="l-glutamine" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<dbs-pgx drug="glutamine" model-id="Glutamine_Sadaf2024v2_reference" status="needs_review" stale="true" population="patients with sickle cell disease and healthy volunteers" measured-compound="glutamine" parameterization="mechanistic" topology="1C"></dbs-pgx>
 
 **Model structure:** 1-compartment; no model was built for this record.  
-**Parameters:** 4 extracted.
+**Parameters:** 3 extracted.
 
 **Parameterization:** mechanistic.
 
@@ -44,8 +44,8 @@ Sadaf A et al., A Population Pharmacokinetic Analysis o…, Clinical pharmacokin
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
 | Ɵ2 | `Q99` · Q2 | -0.96 | L/h | -2.6666666666666667e-07 | L/h | 19.8 | llm (0.6) | Tab2:row5:col2, Tab2:row5:col3 | — | not captured |
+| ϴ3 | `Q900` · equation variable | 52.3 | not captured | not captured | not captured | 19.5 | llm (0.6) | Tab2:row7:col1, Tab2:row7:col2, Tab2:row7:col3, Tab2:row7:col4, Tab2:row7:col5 | — | not captured |
 | KA | `Q49` · kabs | 0.91 | 1/h | 0.00025277777777777777 | 1/h | 6.4 | exact (1.0) | Tab2:row9:col1, Tab2:row9:col2, Tab2:row9:col3, Tab2:row9:col4, Tab2:row9:col5 | — | not captured |
-| population clearance estimate | `Q22` · CL | 78.5 | L/h/70 kg | 2.1805555555555554e-05 | L/h | not captured | review_gapfill (0.7) | Sadaf_2024_2:review | — | not captured |
 | V | `Q61` · V | 0.0636 | L/kg | 0.004452 | L | not captured | review_gapfill (0.7) | Hoeben_2026:review | — | not captured |
 
 <details class="legend">
@@ -61,15 +61,13 @@ Sadaf A et al., A Population Pharmacokinetic Analysis o…, Clinical pharmacokin
 - column 'units' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
 - column 'bootstrap' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
 - dropped unlinked row (NIL): 'Ɵ1' — extend the ontology if this is a real PK parameter (source ['Tab2:row4:col1', 'Tab2:row4:col2', 'Tab2:row4:col3', 'Tab2:row4:col4', 'Tab2:row4:col5'])
-- dropped unlinked row (NIL): 'ϴ3' — extend the ontology if this is a real PK parameter (source ['Tab2:row7:col1', 'Tab2:row7:col2', 'Tab2:row7:col3', 'Tab2:row7:col4', 'Tab2:row7:col5'])
-- dropped unlinked row (NIL): 'ϴ4' — extend the ontology if this is a real PK parameter (source ['Tab2:row8:col2', 'Tab2:row8:col3', 'Tab2:row8:col4', 'Tab2:row8:col5'])
-- implicit units: 'Ɵ2' → L/h (from the popPK convention: 'The parameter is an intercompartmental clearance (Q2). In population PK, clearances are conventionally expressed in L/h.')
-- implicit units: 'KA' → 1/h (from the popPK convention: 'The parameter is the absorption rate constant (KA). First-order rate constants are conventionally expressed in 1/h. The ')
+- dropped duplicate Q900 ('ϴ4', value '0.27') — already have one for this compound
+- implicit units: 'Ɵ2' → L/h (from the popPK convention: "The text describes the model as 'a one-compartment model with first-order input and disposition'. In a standard one-comp")
+- implicit units: 'KA' → 1/h (from the popPK convention: 'KA is defined as the absorption rate constant. First-order rate constants, including absorption rate constants (kabs), a')
 - apparent-by-design (ADVISORY, codes unchanged): extravascular dosing with no identifiable F, so these reported disposition parameters are likely apparent unless the model puts first-pass in its structure — Q99 (Ɵ2)
-- apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=l-glutamine
+- apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=glutamine
 - structure disagreement: deterministic 1C vs LLM 2C — review compartment count
 - model equation 'CLi = Ɵ1 * (WT/70)^0.75 *(Glu_BSL/Glu_BSLstardard)ϴ2' not bound — neither LHS nor base term 'WT' linked to an ontology parameter
-- gap-filled Q22 (CL) from Sadaf_2024_2's review values (primary lacked it)
 - gap-filled Q61 (V) from Hoeben_2026's review values (primary lacked it)
 - skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
 - skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
@@ -113,16 +111,12 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 3 | not captured | not captured | not captured |
-| C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
+| C0_has_structural_params | pass | not captured | 2 | not captured | not captured | not captured |
 | C0c_disposition_complete | fail | not captured | not captured | not captured | not captured | not captured |
-| C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Sadaf_2024_2:review'] |
 | C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['Tab2:row9:col1', 'Tab2:row9:col2', 'Tab2:row9:col3', 'Tab2:row9:col4', 'Tab2:row9:col5'] |
 | C5_dimension_Q61 | pass | [length] ** 3 | not captured | not captured | not captured | ['Hoeben_2026:review'] |
 | C5_dimension_Q99 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Tab2:row5:col2', 'Tab2:row5:col3'] |
-| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 78.5 | not captured | not captured | ['Sadaf_2024_2:review'] |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
-| C9_phys_window_Q22 | pass | clearance within physiological range | 78.5 L/h | not captured | not captured | ['Sadaf_2024_2:review'] |
 | C9_phys_window_Q61 | pass | volume within physiological range | 4.45 L | not captured | not captured | ['Hoeben_2026:review'] |
 
 **Reviewer per-scenario checks:**
@@ -177,4 +171,4 @@ _No web simulator for this record: its structure has no shared WebAssembly templ
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-05 10:48 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 17:39 UTC</sub>

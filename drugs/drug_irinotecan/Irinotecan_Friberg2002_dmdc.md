@@ -58,6 +58,7 @@ Friberg LE; Henningsson A; Maas H; Nguyen L; Karlsson MO et al. (2002). Journal 
 - routed 'Prop (%)' → Q316 (prop_error) to residual_error — variability estimate, not a structural parameter
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=leukocytes, neutrophils
 - population split: 'dmdc' subgroup of Friberg_2002 (paper reports 2 populations: cpt-11, dmdc)
+- review gap-fill skipped: this record measures 'leukocytes, neutrophils', not irinotecan — the review values are the parent's
 
 **Extraction notes:**
 - no TEI final-model table id; trying text-pointer table recovery

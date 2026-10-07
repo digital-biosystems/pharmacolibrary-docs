@@ -17,7 +17,7 @@ Velaglucerase alfa is an enzyme replacement medicine used to treat Gaucher's dis
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-05 12:10 | 0:56 | 0/0/0 | 0/0/0 | 0/0/0 | 37,421/812 | ollama / qwen3.8:27b-mtp-q8_0 | 2 | 0/2 | 2/0 | 0 |
+| 2026-10-07 17:59 | 0:35 | 0/0/0 | 0/0/0 | 0/0/0 | 40,354/831 | einfracz / qwen3.8-27b | 3 | 0/3 | 3/0 | 0 |
 
 ## popPK records
 
@@ -41,19 +41,9 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 ## Coverage
 
 - **PubMed hits:** 31 matched, 24 returned
-- **screened:** 3  ·  **relevant:** 1
+- **screened:** 3  ·  **relevant:** 0
 - **records:** 0  ·  extracted 0  ·  needs_review 0  ·  rejected 0  ·  stale 0
-- **scholar-agent fallback query used:** True
-
-## Full text wanted
-
-_1 paper(s) judged relevant from the abstract, with no full text on disk — paywalled, or the resolver could not reach them. Follow the DOI, then save the PDF into `papers/` as `&lt;save as&gt;.pdf` and re-run the extraction._
-
-| save as | citation | domain | score | DOI | PubMed | why wanted |
-|---|---|---|---|---|---|---|
-| `Pleat_2016.pdf` | Pleat R et al., Stability is maintained in adults with…, Molecular genetics and meta… (2016) | pgx | 5 | [10.1016/j.ymgmr.2016.08.009](https://doi.org/10.1016/j.ymgmr.2016.08.009) | [27722092](https://www.ncbi.nlm.nih.gov/pubmed/27722092) | metadata signals extractable PGX data (CYP2D6) |
-
-<sub>queue written 2026-10-05T12:10:29.631592+00:00</sub>
+- **scholar-agent fallback query used:** not captured
 
 ## Screened and excluded
 
@@ -61,31 +51,32 @@ _1 paper(s) judged relevant from the abstract, with no full text on disk — pay
 |---|---|---|---|---|---|
 | popPK | Abian_2011 | irrelevant | 0 | 0 | This is an in-vitro stability and binding study with no pharmacokinetic disposition parameters or numeric PK values for velaglucerase alfa. |
 | PD | Abian_2011 | not_relevant | 1 | 0 | The paper reports qualitative in vitro activity, stability, and NB-DNJ binding effects for velaglucerase alfa, but no numeric exposure- or dose-response relationship or derivable PD parameters. |
-| PGx | Abian_2011 | not_relevant | 0 | 0 | The paper investigates the biophysical stability and interaction of velaglucerase alfa with miglustat in vitro, but does not report pharmacogenomic effects on PK or PD parameters in patients. |
-| popPK | Ben_2013 | irrelevant | 0 | 0 | The paper is a clinical efficacy and safety study comparing hemoglobin levels and adverse events, reporting no pharmacokinetic parameters such as clearance, volume, or half-life. |
+| PGx | Abian_2011 | not_relevant | 0 | 0 | The paper investigates the in vitro stability of enzymes and the effect of a substrate-reducing agent (miglustat), but it does not report pharmacogenomic effects on the PK or PD parameters of velaglucerase alfa. |
+| popPK | Ben_2013 | irrelevant | 0 | 0 | The paper reports clinical efficacy and safety outcomes (hemoglobin changes) rather than pharmacokinetic disposition parameters. |
 | popPK | Crivaro_2025 | irrelevant | 0 | 0 | This is an in-vitro nanoparticle encapsulation and cellular study with no pharmacokinetic disposition parameters or numeric PK values. |
 | PD | Crivaro_2025 | not_relevant | 1 | 0 | The paper reports qualitative cellular activity, internalization, and viability findings for velaglucerase-loaded nanoparticles but provides no dose/concentration-response analysis or numeric PD parameters. |
-| PGx | Dasgupta_2013 | not_relevant | 0 | 0 | The paper reports transcriptomic changes in a mouse model treated with the drug, not the effect of a gene variant on the drug's pharmacokinetic or pharmacodynamic parameters. |
-| popPK | Elstein_2015 | irrelevant | 0 | 0 | The paper reports safety and efficacy outcomes (clinical parameters, biomarkers) of a switch study, not pharmacokinetic disposition parameters (CL, V, t1/2) for velaglucerase alfa. |
-| popPK | Morris_2012 | irrelevant | 2 | 1 | The paper is a clinical review that reports only a mean residence time (14 minutes) without providing quantitative compartmental PK parameters like clearance, volume of distribution, or half-life derived from a PK model. |
-| popPK | Najarian_2017 | irrelevant | 0 | 0 | The study focuses on immunogenicity (antibody detection) and bioanalytical method validation, not pharmacokinetic disposition parameters. |
+| PGx | Dasgupta_2013 | not_relevant | 0 | 0 | The study investigates differential gene expression (transcriptomics) in a mouse model treated with the drug, rather than how host gene variants affect the drug's pharmacokinetics or pharmacodynamics. |
+| popPK | Elstein_2015 | irrelevant | 0 | 0 | The study reports clinical safety and efficacy (biomarkers, organ volume) but contains no pharmacokinetic parameter values. |
+| popPK | Morris_2012 | irrelevant | 2 | 1 | The paper is a clinical review focusing on efficacy and safety, mentioning only a single non-compartmental PK parameter (residence time) without reporting standard quantitative disposition parameters (CL, V, Q) or a population PK model. |
+| popPK | Najarian_2017 | irrelevant | 0 | 0 | The paper describes immunogenicity testing methods (antibody detection) and does not report pharmacokinetic disposition parameters such as clearance, volume, or half-life. |
 | popPK | Pastores_2010 | irrelevant | 0 | 0 | This is a clinical overview with no quantitative pharmacokinetic parameters or numeric values for velaglucerase alfa. |
 | PD | Pastores_2010 | not_relevant | 2 | 0 | This review only qualitatively mentions in vitro uptake and clinical efficacy, with no numeric dose/exposure-response analysis or derivable PD parameters. |
 | popPK | Pastores_2016 | irrelevant | 0 | 0 | This is an anti-drug antibody safety analysis and reports no quantitative pharmacokinetic parameters for velaglucerase alfa. |
 | PD | Pastores_2016 | not_relevant | 2 | 0 | The paper only qualitatively states that anti-velaglucerase alfa antibodies showed no apparent correlation with pharmacodynamic or clinical responses and reports no numeric exposure-/dose-response parameters or curves. |
-| popPK | Pereira_2021 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of metformin hydrochloride in rats, not velaglucerase alfa. |
+| popPK | Pereira_2021 | irrelevant | 0 | 0 | The paper studies the pharmacokinetics of metformin in rats, not velaglucerase_alfa. |
 | PD | Pereira_2021 | not_relevant | 0 | 0 | The paper concerns metformin nanoparticles, not velaglucerase alfa, and reports only pharmacokinetic parameters without any numeric pharmacodynamic or exposure-response relationship. |
-| PGx | Pleat_2016 | not_relevant | 0 | 0 | The paper reports clinical stability upon switching therapies but does not analyze pharmacogenomic effects on PK/PD parameters. |
+| PGx | Pleat_2016 | not_relevant | 0 | 0 | The paper analyzes clinical stability after switching therapies and mentions CYP2D6 as a prescribing criterion for eliglustat, but it does not report any pharmacokinetic or pharmacodynamic parameter changes for velaglucerase alfa resulting from a gene variant or genotype. |
 | popPK | Séllos-Moura_2011 | irrelevant | 0 | 0 | This study reports anti-drug antibody assay cut points, not quantitative pharmacokinetic disposition parameters for velaglucerase alfa. |
 | PD | Séllos-Moura_2011 | not_relevant | 0 | 0 | The paper only develops anti-drug and neutralizing-antibody assays; it reports assay cut points, not a velaglucerase alfa dose/exposure-response relationship or numeric PD parameters. |
 | popPK | Thekkedath_2013 | irrelevant | 0 | 0 | This is an in-vitro lysosomal delivery study with no pharmacokinetic disposition parameters or numeric PK values. |
 | PD | Thekkedath_2013 | not_relevant | 1 | 0 | Reports a single comparative lysosomal-accumulation effect (up to 68%) for formulations, but no velaglucerase exposure- or dose-response relationship or derivable PD parameters. |
-| popPK | Van_2016 | irrelevant | 0 | 0 | The paper is a narrative review of Gaucher disease treatments and does not report original quantitative pharmacokinetic parameters for velaglucerase alfa. |
-| PGx | Van_2016 | not_relevant | 0 | 0 | The paper is a general review of Gaucher disease treatments and does not report specific pharmacogenomic effects on the PK or PD of velaglucerase alfa. |
+| popPK | Van_2016 | irrelevant | 0 | 0 | This is a review article that does not report quantitative pharmacokinetic parameters for velaglucerase_alfa. |
+| PGx | Van_2016 | not_relevant | 0 | 0 | The paper is a general review of Gaucher disease treatments and does not report pharmacogenomic effects on the PK or PD of velaglucerase alfa. |
 | popPK | Wang_2026 | irrelevant | 0 | 0 | This is an in-vitro cellular uptake bioassay with no quantitative pharmacokinetic disposition parameters for velaglucerase alfa. |
 | PD | Wang_2026 | not_relevant | 4 | 1 | The paper describes a sigmoidal in vitro dose-response bioassay for velaglucerase alfa uptake, but the provided text reports no numeric PD parameters or extractable curve data. |
+| popPK | Xu_2010 | relevant | 6 | 4 | The study reports in vivo pharmacokinetic parameters (serum and tissue half-lives, distribution) for velaglucerase alfa in mice, but lacks formal population PK modeling or compartmental clearance/volume values. |
 | popPK | Zhang_2026 | irrelevant | 0 | 0 | no_text gate: only 148 chars of text extracted (&lt; 400) |
-| popPK | Zimran_2007 | irrelevant | 0 | 0 | The study evaluates GA-GCB (Gene-Activated human glucocerebrosidase), which is a different drug from velaglucerase alfa. |
+| popPK | Zimran_2007 | irrelevant | 0 | 0 | The study reports pharmacokinetic parameters for Gene-Activated human glucocerebrosidase (GA-GCB), a different drug entity, rather than velaglucerase_alfa. |
 | popPK | Zimran_2011 | irrelevant | 0 | 0 | This is a clinical review with no quantitative pharmacokinetic disposition parameters or numeric values for velaglucerase alfa. |
 | PD | Zimran_2011 | not_relevant | 2 | 0 | This review qualitatively describes clinical improvements with velaglucerase alfa but reports no numeric dose- or exposure-response relationship or derivable PD parameters. |
 

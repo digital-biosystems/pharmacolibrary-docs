@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;B01A&quot;,&quot;href&quot;:&quot;atc/B01A.md&quot;},{&quot;label&quot;:&quot;rivaroxaban&quot;,&quot;href&quot;:&quot;drugs/drug_rivaroxaban/&quot;},{&quot;label&quot;:&quot;Jia_2026 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Rivaroxaban_Jia2026_reference&quot;,&quot;label&quot;:&quot;Jia_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_rivaroxaban/Rivaroxaban_Jia2026_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Rivaroxaban_Liu2022_sequential_modeling&quot;,&quot;label&quot;:&quot;Liu_2022_sequential_modeling&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_rivaroxaban/Rivaroxaban_Liu2022_sequential_modeling.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Rivaroxaban_Liu2022_simultaneous_modeling&quot;,&quot;label&quot;:&quot;Liu_2022_simultaneous_modeling&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_rivaroxaban/Rivaroxaban_Liu2022_simultaneous_modeling.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Rivaroxaban_Ren2026_reference&quot;,&quot;label&quot;:&quot;Ren_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_rivaroxaban/Rivaroxaban_Ren2026_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Rivaroxaban_Esmaeili2022_reference&quot;,&quot;label&quot;:&quot;Esmaeili_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_rivaroxaban/Rivaroxaban_Esmaeili2022_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Rivaroxaban_Esmaeili2022_reference&quot;,&quot;label&quot;:&quot;Esmaeili_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_rivaroxaban/Rivaroxaban_Esmaeili2022_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Rivaroxaban_Jia2026_reference&quot;,&quot;label&quot;:&quot;Jia_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_rivaroxaban/Rivaroxaban_Jia2026_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Rivaroxaban_Liu2022_sequential_modeling&quot;,&quot;label&quot;:&quot;Liu_2022_sequential_modeling&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_rivaroxaban/Rivaroxaban_Liu2022_sequential_modeling.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Rivaroxaban_Liu2022_simultaneous_modeling&quot;,&quot;label&quot;:&quot;Liu_2022_simultaneous_modeling&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_rivaroxaban/Rivaroxaban_Liu2022_simultaneous_modeling.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Rivaroxaban_Ren2026_caucasian_dvt&quot;,&quot;label&quot;:&quot;Ren_2026_caucasian_dvt&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_rivaroxaban/Rivaroxaban_Ren2026_caucasian_dvt.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Rivaroxaban_Ren2026_caucasian_nvaf&quot;,&quot;label&quot;:&quot;Ren_2026_caucasian_nvaf&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_rivaroxaban/Rivaroxaban_Ren2026_caucasian_nvaf.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Rivaroxaban_Ren2026_caucasian_vte&quot;,&quot;label&quot;:&quot;Ren_2026_caucasian_vte&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_rivaroxaban/Rivaroxaban_Ren2026_caucasian_vte.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Rivaroxaban_Ren2026_chinese_dvt&quot;,&quot;label&quot;:&quot;Ren_2026_chinese_dvt&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_rivaroxaban/Rivaroxaban_Ren2026_chinese_dvt.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Rivaroxaban_Ren2026_chinese_nvaf&quot;,&quot;label&quot;:&quot;Ren_2026_chinese_nvaf&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_rivaroxaban/Rivaroxaban_Ren2026_chinese_nvaf.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Rivaroxaban_Ren2026_chinese_pe&quot;,&quot;label&quot;:&quot;Ren_2026_chinese_pe&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_rivaroxaban/Rivaroxaban_Ren2026_chinese_pe.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Rivaroxaban_Ren2026_japanese_nvaf&quot;,&quot;label&quot;:&quot;Ren_2026_japanese_nvaf&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_rivaroxaban/Rivaroxaban_Ren2026_japanese_nvaf.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -25,14 +25,14 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 
 <sub>reviewed by glm-5.3-flash</sub>
 
-> ⚠️ **STALE** — review status `needs_review` (reviewed 2026-09-28 14:39:39.364049+00:00) predates the upstream re-run (2026-10-05 15:44:22.414237+00:00). Current validate status: `extracted`.
+> ⚠️ **STALE** — review status `needs_review` (reviewed 2026-09-28 14:39:39.364049+00:00) predates the upstream re-run (2026-10-07 18:15:23.730763+00:00). Current validate status: `extracted`.
 
 ## Citation
 Jia M et al., Population pharmacokinetics of rivaroxa…, European journal of clinica… (2026)
   ·  DOI: [10.1007/s00228-026-04034-6](https://doi.org/10.1007/s00228-026-04034-6)
 
 ## Model component
-<dbs-pgx drug="rivaroxaban" model-id="Rivaroxaban_Jia2026_reference" status="extracted" stale="true" population="adults with TIPS" measured-compound="rivaroxaban" parameterization="apparent" topology="1C"></dbs-pgx>
+<dbs-pgx drug="rivaroxaban" model-id="Rivaroxaban_Jia2026_reference" status="extracted" stale="true" population="adults with transjugular intrahepatic portosystemic shunt (TIPS)" measured-compound="rivaroxaban" parameterization="apparent" topology="1C"></dbs-pgx>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 4 extracted.
@@ -42,10 +42,10 @@ Jia M et al., Population pharmacokinetics of rivaroxa…, European journal of cl
 ## Parameters
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| Ka (1/h) | `Q49` · kabs | 0.143 | 1/h | 3.972222222222222e-05 | 1/h | 5.97 | exact (1.0) | tab_0:row2:col1, tab_0:row2:col2, tab_0:row2:col3, tab_0:row2:col4, tab_0:row2:col5 | — | not captured |
-| CL/F (L/h) | `Q27` · CL/F | 7.22 | L/h | 2.0055555555555555e-06 | [l] / [h] | 9.52 | exact (1.0) | tab_0:row3:col1, tab_0:row3:col2, tab_0:row3:col3, tab_0:row3:col4, tab_0:row3:col5 | — | 39.0 (24.6% RSE) |
-| V d /F (L) | `Q76` · V/F | 4.93 | L | 0.0049299999999999995 | [l] | 37.4 | space_fold (0.95) | tab_0:row4:col1, tab_0:row4:col2, tab_0:row4:col3, tab_0:row4:col4, tab_0:row4:col5 | — | 61.5 (51.4% RSE) |
-| D1 (h) | `Q310` · D1 | 0.820 | h | 2952.0 | [h] | 29.3 | exact (1.0) | tab_0:row5:col1, tab_0:row5:col2, tab_0:row5:col3, tab_0:row5:col4, tab_0:row5:col5 | — | 47.6 (69.4% RSE) |
+| Ka (1/h) | `Q49` · kabs | 0.140 | 1/h | 3.888888888888889e-05 | 1/h | 5.97 | exact (1.0) | tab_0:row2:col1, tab_0:row2:col2, tab_0:row2:col3, tab_0:row2:col4, tab_0:row2:col5 | — | not captured |
+| CL/F (L/h) | `Q27` · CL/F | 7.48 | L/h | 2.077777777777778e-06 | [l] / [h] | 9.52 | exact (1.0) | tab_0:row3:col1, tab_0:row3:col2, tab_0:row3:col3, tab_0:row3:col4, tab_0:row3:col5 | — | 61.5 (24.6% RSE) |
+| V d /F (L) | `Q76` · V/F | 4.75 | L | 0.00475 | [l] | 37.4 | space_fold (0.95) | tab_0:row4:col1, tab_0:row4:col2, tab_0:row4:col3, tab_0:row4:col4, tab_0:row4:col5 | — | 83.4 (51.4% RSE) |
+| D1 (h) | `Q310` · D1 | 0.831 | h | 2991.6 | [h] | 29.3 | exact (1.0) | tab_0:row5:col1, tab_0:row5:col2, tab_0:row5:col3, tab_0:row5:col4, tab_0:row5:col5 | — | 65.8 (69.4% RSE) |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -60,7 +60,7 @@ Jia M et al., Population pharmacokinetics of rivaroxa…, European journal of cl
 
 **Interpretation flags:**
 - dropped unlinked row (NIL): 'ALAG1 (h)' — extend the ontology if this is a real PK parameter (source ['tab_0:row6:col1', 'tab_0:row6:col2', 'tab_0:row6:col3', 'tab_0:row6:col4', 'tab_0:row6:col5'])
-- implicit units: 'Ka (1/h)' → 1/h (from the paper text: 'The paper text explicitly states: "absorption rate constant (Ka) = 0.140 /h (RSE 5.97%)".')
+- implicit units: 'Ka (1/h)' → 1/h (from the paper text: 'The paper text explicitly states: "absorption rate constant (Ka) = 0.140 /h"')
 - apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=rivaroxaban
 - skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
 - skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
@@ -108,8 +108,8 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 | C5_dimension_Q76 | pass | [length] ** 3 | not captured | not captured | not captured | ['tab_0:row4:col1', 'tab_0:row4:col2', 'tab_0:row4:col3', 'tab_0:row4:col4', 'tab_0:row4:col5'] |
 | C7_apparent_coherence | pass | not captured | not captured | not captured | not captured | not captured |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
-| C9_phys_window_Q27 | pass | clearance within physiological range | 7.22 L/h | not captured | not captured | ['tab_0:row3:col1', 'tab_0:row3:col2', 'tab_0:row3:col3', 'tab_0:row3:col4', 'tab_0:row3:col5'] |
-| C9_phys_window_Q76 | pass | volume within physiological range | 4.93 L | not captured | not captured | ['tab_0:row4:col1', 'tab_0:row4:col2', 'tab_0:row4:col3', 'tab_0:row4:col4', 'tab_0:row4:col5'] |
+| C9_phys_window_Q27 | pass | clearance within physiological range | 7.48 L/h | not captured | not captured | ['tab_0:row3:col1', 'tab_0:row3:col2', 'tab_0:row3:col3', 'tab_0:row3:col4', 'tab_0:row3:col5'] |
+| C9_phys_window_Q76 | pass | volume within physiological range | 4.75 L | not captured | not captured | ['tab_0:row4:col1', 'tab_0:row4:col2', 'tab_0:row4:col3', 'tab_0:row4:col4', 'tab_0:row4:col5'] |
 
 **Reviewer per-scenario checks:**
 
@@ -156,7 +156,7 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-**Administration: oral** — 5 mg, single dose, first-order absorption (ka 0.143 /h, F 1). Doses in the paper: 5, 7.5, 10, 15 mg.
+**Administration: oral** — 5 mg, single dose, first-order absorption (ka 0.14 /h, F 1). Doses in the paper: 5, 7.5, 10, 15 mg.
 
 <dbs-fmusim paramsurl="drugs/drug_rivaroxaban/Rivaroxaban_Jia2026_reference/Rivaroxaban_Jia2026_reference_params.json" metaurl="assets/fmu/PK_1C_enteral.vr.json" wasmurl="assets/fmu/PK_1C_enteral.js" controlsurl="drugs/drug_rivaroxaban/Rivaroxaban_Jia2026_reference/Rivaroxaban_Jia2026_reference_sim_controls.json"></dbs-fmusim>
 
@@ -165,4 +165,4 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-05 15:44 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 18:15 UTC</sub>

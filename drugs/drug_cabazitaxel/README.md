@@ -14,23 +14,38 @@ Cabazitaxel is a taxane anticancer drug used to treat prostate cancer, including
 
 <small>Summary written by `glm-5.3-flash` from [Wikidata Q412963](https://www.wikidata.org/wiki/Q412963) and the WHO ATC classification and the EMA medicines list; not checked by a person.</small>
 
+## Molecules and molar masses
+
+> The molar mass each model uses to convert mass to molar concentration and to form a metabolite molecule for molecule. Looked up, never estimated: DrugBank for the drug, the paper's own value or the PubChem entry matched to the paper's name for a metabolite.
+
+| molecule | role | molar mass (g/mol) | formula | source | PubChem | records |
+|---|---|---|---|---|---|---|
+| cabazitaxel | parent | 835.932 | C45H57NO14 | DrugBank | [9854073](https://pubchem.ncbi.nlm.nih.gov/compound/9854073) | Ferron_2013, Janssen_2017 |
+
 ## Extraction summary
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-15 09:08 | 6:26 | 0/1/6 | 0/0/0 | 0/0/0 | 90,169/13,946 | ollama / qwen3.8:27b-mtp-q8_0 | 1 | 0/1 | 1/0 | 0 |
+| 2026-10-07 17:34 | 1:17 | 0/0/14 | 0/0/0 | 0/0/0 | 93,816/8,546 | einfracz / qwen3.8-27b | 2 | 0/2 | 2/0 | 0 |
 
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: C1_half_life_beta failed (ratio 0.3506)</sub><br><sub>route_to: `human_review`</sub> | [Ferron_2013_all_n_170](drugs/drug_cabazitaxel/Cabazitaxel_Ferron2013_all_n_170.md) | — | 1-compartment (no model) | 6 | Ferron GM et al., Population pharmacokinetics of cabazita…, Cancer chemotherapy and pha… (2013) | [10.1007/s00280-012-2058-9](https://doi.org/10.1007/s00280-012-2058-9) |
-| <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: C1_half_life_beta failed (ratio 0.7337)</sub><br><sub>route_to: `human_review`</sub> | [Ferron_2013_ard6191_n_34](drugs/drug_cabazitaxel/Cabazitaxel_Ferron2013_ard6191_n_34.md) | — | 1-compartment (no model) | 6 | Ferron GM et al., Population pharmacokinetics of cabazita…, Cancer chemotherapy and pha… (2013) | [10.1007/s00280-012-2058-9](https://doi.org/10.1007/s00280-012-2058-9) |
-| <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: C1_half_life_beta failed (ratio 0.4044)</sub><br><sub>route_to: `human_review`</sub> | [Ferron_2013_efc6193_n_67](drugs/drug_cabazitaxel/Cabazitaxel_Ferron2013_efc6193_n_67.md) | — | 1-compartment (no model) | 6 | Ferron GM et al., Population pharmacokinetics of cabazita…, Cancer chemotherapy and pha… (2013) | [10.1007/s00280-012-2058-9](https://doi.org/10.1007/s00280-012-2058-9) |
-| <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: C1_half_life_beta failed (ratio 0.215)</sub><br><sub>route_to: `human_review`</sub> | [Ferron_2013_ted6188_n_21](drugs/drug_cabazitaxel/Cabazitaxel_Ferron2013_ted6188_n_21.md) | — | 1-compartment (no model) | 6 | Ferron GM et al., Population pharmacokinetics of cabazita…, Cancer chemotherapy and pha… (2013) | [10.1007/s00280-012-2058-9](https://doi.org/10.1007/s00280-012-2058-9) |
-| <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: C1_half_life_beta failed (ratio 0.2719)</sub><br><sub>route_to: `human_review`</sub> | [Ferron_2013_ted6189_n_13](drugs/drug_cabazitaxel/Cabazitaxel_Ferron2013_ted6189_n_13.md) | — | 1-compartment (no model) | 6 | Ferron GM et al., Population pharmacokinetics of cabazita…, Cancer chemotherapy and pha… (2013) | [10.1007/s00280-012-2058-9](https://doi.org/10.1007/s00280-012-2058-9) |
-| <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: C1_half_life_beta failed (ratio 0.1931)</sub><br><sub>route_to: `human_review`</sub> | [Ferron_2013_ted6190_n_35](drugs/drug_cabazitaxel/Cabazitaxel_Ferron2013_ted6190_n_35.md) | — | 1-compartment (no model) | 6 | Ferron GM et al., Population pharmacokinetics of cabazita…, Cancer chemotherapy and pha… (2013) | [10.1007/s00280-012-2058-9](https://doi.org/10.1007/s00280-012-2058-9) |
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: split column 'nonmem' is a table statistic/structure column, not a study popula…</sub><br><sub>route_to: `human_review`</sub> | [Ferron_2013_nonmem](drugs/drug_cabazitaxel/Cabazitaxel_Ferron2013_nonmem.md) | — | 1-compartment (no model) | 10 | Ferron GM et al., Population pharmacokinetics of cabazita…, Cancer chemotherapy and pha… (2013) | [10.1007/s00280-012-2058-9](https://doi.org/10.1007/s00280-012-2058-9) |
+| <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: C5 dimensioned parameter(s) without a unit: Q22, Q61, Q65 — no SI value to buil…</sub><br><sub>blocking: C1_half_life_beta failed (ratio 0.3596)</sub><br><sub>route_to: `human_review`</sub> | [Ferron_2013_all](drugs/drug_cabazitaxel/Cabazitaxel_Ferron2013_all.md) | — | 1-compartment (no model) | 6 | Ferron GM et al., Population pharmacokinetics of cabazita…, Cancer chemotherapy and pha… (2013) | [10.1007/s00280-012-2058-9](https://doi.org/10.1007/s00280-012-2058-9) |
+| <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: C5 dimensioned parameter(s) without a unit: Q22, Q61, Q65 — no SI value to buil…</sub><br><sub>route_to: `human_review`</sub> | [Ferron_2013_ard6191](drugs/drug_cabazitaxel/Cabazitaxel_Ferron2013_ard6191.md) | — | 1-compartment (no model) | 6 | Ferron GM et al., Population pharmacokinetics of cabazita…, Cancer chemotherapy and pha… (2013) | [10.1007/s00280-012-2058-9](https://doi.org/10.1007/s00280-012-2058-9) |
+| <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: disposition incomplete — only volume extracted — the engineer needs clearance/e…</sub><br><sub>blocking: C5 dimensioned parameter(s) without a unit: Q354, Q61, Q65 — no SI value to bui…</sub><br><sub>route_to: `human_review`</sub> | [Ferron_2013_efc6193](drugs/drug_cabazitaxel/Cabazitaxel_Ferron2013_efc6193.md) | — | 1-compartment (no model) | 6 | Ferron GM et al., Population pharmacokinetics of cabazita…, Cancer chemotherapy and pha… (2013) | [10.1007/s00280-012-2058-9](https://doi.org/10.1007/s00280-012-2058-9) |
+| <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: C5 dimensioned parameter(s) without a unit: Q22, Q61, Q65 — no SI value to buil…</sub><br><sub>blocking: C1_half_life_beta failed (ratio 0.2205)</sub><br><sub>route_to: `human_review`</sub> | [Ferron_2013_ted6188](drugs/drug_cabazitaxel/Cabazitaxel_Ferron2013_ted6188.md) | — | 1-compartment (no model) | 6 | Ferron GM et al., Population pharmacokinetics of cabazita…, Cancer chemotherapy and pha… (2013) | [10.1007/s00280-012-2058-9](https://doi.org/10.1007/s00280-012-2058-9) |
+| <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: C5 dimensioned parameter(s) without a unit: Q22, Q61, Q65 — no SI value to buil…</sub><br><sub>blocking: C1_half_life_beta failed (ratio 0.2788)</sub><br><sub>route_to: `human_review`</sub> | [Ferron_2013_ted6189](drugs/drug_cabazitaxel/Cabazitaxel_Ferron2013_ted6189.md) | — | 1-compartment (no model) | 6 | Ferron GM et al., Population pharmacokinetics of cabazita…, Cancer chemotherapy and pha… (2013) | [10.1007/s00280-012-2058-9](https://doi.org/10.1007/s00280-012-2058-9) |
+| <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: C5 dimensioned parameter(s) without a unit: Q22, Q61, Q65 — no SI value to buil…</sub><br><sub>blocking: C1_half_life_beta failed (ratio 0.1981)</sub><br><sub>route_to: `human_review`</sub> | [Ferron_2013_ted6190](drugs/drug_cabazitaxel/Cabazitaxel_Ferron2013_ted6190.md) | — | 1-compartment (no model) | 6 | Ferron GM et al., Population pharmacokinetics of cabazita…, Cancer chemotherapy and pha… (2013) | [10.1007/s00280-012-2058-9](https://doi.org/10.1007/s00280-012-2058-9) |
+| <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub><br><sub>blocking: C6_cl_magnitude failed (ratio None)</sub><br><sub>route_to: `human_review`</sub> | [Janssen_2017_reference](drugs/drug_cabazitaxel/Cabazitaxel_Janssen2017_reference.md) | — | 1-compartment (no model) | 1 | Janssen A et al., Towards better dose individualisation:…, British journal of cancer (2017) | [10.1038/bjc.2017.91](https://doi.org/10.1038/bjc.2017.91) |
+| <span class="pk-badge pk-badge--neutral">None</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>STALE — current validate: not captured</sub> | [Ferron_2013_all_n_170](drugs/drug_cabazitaxel/Cabazitaxel_Ferron2013_all_n_170.md) | — | — (no model) | 0 | Ferron GM et al., Population pharmacokinetics of cabazita…, Cancer chemotherapy and pha… (2013) | [10.1007/s00280-012-2058-9](https://doi.org/10.1007/s00280-012-2058-9) |
+| <span class="pk-badge pk-badge--neutral">None</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>STALE — current validate: not captured</sub> | [Ferron_2013_ard6191_n_34](drugs/drug_cabazitaxel/Cabazitaxel_Ferron2013_ard6191_n_34.md) | — | — (no model) | 0 | Ferron GM et al., Population pharmacokinetics of cabazita…, Cancer chemotherapy and pha… (2013) | [10.1007/s00280-012-2058-9](https://doi.org/10.1007/s00280-012-2058-9) |
+| <span class="pk-badge pk-badge--neutral">None</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>STALE — current validate: not captured</sub> | [Ferron_2013_efc6193_n_67](drugs/drug_cabazitaxel/Cabazitaxel_Ferron2013_efc6193_n_67.md) | — | — (no model) | 0 | Ferron GM et al., Population pharmacokinetics of cabazita…, Cancer chemotherapy and pha… (2013) | [10.1007/s00280-012-2058-9](https://doi.org/10.1007/s00280-012-2058-9) |
+| <span class="pk-badge pk-badge--neutral">None</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>STALE — current validate: not captured</sub> | [Ferron_2013_nonmem](drugs/drug_cabazitaxel/Cabazitaxel_Ferron2013_nonmem.md) | — | — (no model) | 0 | Ferron GM et al., Population pharmacokinetics of cabazita…, Cancer chemotherapy and pha… (2013) | [10.1007/s00280-012-2058-9](https://doi.org/10.1007/s00280-012-2058-9) |
+| <span class="pk-badge pk-badge--neutral">None</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>STALE — current validate: not captured</sub> | [Ferron_2013_ted6188_n_21](drugs/drug_cabazitaxel/Cabazitaxel_Ferron2013_ted6188_n_21.md) | — | — (no model) | 0 | Ferron GM et al., Population pharmacokinetics of cabazita…, Cancer chemotherapy and pha… (2013) | [10.1007/s00280-012-2058-9](https://doi.org/10.1007/s00280-012-2058-9) |
+| <span class="pk-badge pk-badge--neutral">None</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>STALE — current validate: not captured</sub> | [Ferron_2013_ted6189_n_13](drugs/drug_cabazitaxel/Cabazitaxel_Ferron2013_ted6189_n_13.md) | — | — (no model) | 0 | Ferron GM et al., Population pharmacokinetics of cabazita…, Cancer chemotherapy and pha… (2013) | [10.1007/s00280-012-2058-9](https://doi.org/10.1007/s00280-012-2058-9) |
+| <span class="pk-badge pk-badge--neutral">None</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>STALE — current validate: not captured</sub> | [Ferron_2013_ted6190_n_35](drugs/drug_cabazitaxel/Cabazitaxel_Ferron2013_ted6190_n_35.md) | — | — (no model) | 0 | Ferron GM et al., Population pharmacokinetics of cabazita…, Cancer chemotherapy and pha… (2013) | [10.1007/s00280-012-2058-9](https://doi.org/10.1007/s00280-012-2058-9) |
 
 ## ADME sites
 
@@ -63,27 +78,26 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 ## Coverage
 
 - **PubMed hits:** 4 matched, 4 returned
-- **screened:** 1  ·  **relevant:** 1
-- **records:** 7  ·  extracted 0  ·  needs_review 6  ·  rejected 1  ·  stale 0
+- **screened:** 2  ·  **relevant:** 2
+- **records:** 14  ·  extracted 0  ·  needs_review 7  ·  rejected 0  ·  stale 7
 - **scholar-agent fallback query used:** not captured
 
 ## Full text wanted
 
-_2 paper(s) judged relevant from the abstract, with no full text on disk — paywalled, or the resolver could not reach them. Follow the DOI, then save the PDF into `papers/` as `&lt;save as&gt;.pdf` and re-run the extraction._
+_1 paper(s) judged relevant from the abstract, with no full text on disk — paywalled, or the resolver could not reach them. Follow the DOI, then save the PDF into `papers/` as `&lt;save as&gt;.pdf` and re-run the extraction._
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Agema_2024.pdf` | Agema BC et al., Early Identification of Patients at Ris…, European urology oncology (2024) | popPK | 9 | [10.1016/j.euo.2023.10.015](https://doi.org/10.1016/j.euo.2023.10.015) | [37925350](https://pubmed.ncbi.nlm.nih.gov/37925350) | The paper describes a population PK/PD model for cabazitaxel, but the specific quantitative disposition parameters (CL, V, Q) are not present in the provided text, only a PK threshold concentration. |
-| `Janssen_2017.pdf` | Janssen A et al., Towards better dose individualisation:…, British journal of cancer (2017) | popPK | 8 | [10.1038/bjc.2017.91](https://doi.org/10.1038/bjc.2017.91) | [28399110](https://pubmed.ncbi.nlm.nih.gov/28399110) | The study reports a population PK model for cabazitaxel, but specific numeric parameter values (e.g., mean CL, V) are not present in the provided text, only correlation statistics. |
+| `Agema_2024.pdf` | Agema BC et al., Early Identification of Patients at Ris…, European urology oncology (2024) | popPK | 5 | [10.1016/j.euo.2023.10.015](https://doi.org/10.1016/j.euo.2023.10.015) | [37925350](https://pubmed.ncbi.nlm.nih.gov/37925350) | The study describes a population PK/PD model but does not report specific quantitative disposition parameters (CL, V, etc.) in the evidence, only a predictive plasma concentration threshold. |
 
-<sub>queue written 2026-09-15T20:00:48.716536+00:00</sub>
+<sub>queue written 2026-10-07T17:33:59.588397+00:00</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Agema_2024 | relevant | 9 | 2 | The paper describes a population PK/PD model for cabazitaxel, but the specific quantitative disposition parameters (CL, V, Q) are not present in the provided text, only a PK threshold concentration. |
-| popPK | Janssen_2017 | relevant | 8 | 2 | The study reports a population PK model for cabazitaxel, but specific numeric parameter values (e.g., mean CL, V) are not present in the provided text, only correlation statistics. |
+| popPK | Agema_2024 | irrelevant | 5 | 0 | The study describes a population PK/PD model but does not report specific quantitative disposition parameters (CL, V, etc.) in the evidence, only a predictive plasma concentration threshold. |
+| popPK | Lange_2017 | irrelevant | 0 | 0 | The paper is an in-vitro cytotoxicity study investigating radiosensitization effects, not a pharmacokinetic study, and contains no disposition parameters. |
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-09-15 09:03 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-10-07 17:34 UTC</sub>

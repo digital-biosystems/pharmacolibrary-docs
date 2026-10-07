@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01C&quot;,&quot;href&quot;:&quot;atc/L01C.md&quot;},{&quot;label&quot;:&quot;etoposide&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Etoposide_Toffoli2001_mean&quot;,&quot;label&quot;:&quot;Toffoli_2001_mean&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_etoposide/Etoposide_Toffoli2001_mean.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Etoposide_Toffoli2001_mean_with_covariables&quot;,&quot;label&quot;:&quot;Toffoli_2001_mean_with_covariables&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_etoposide/Etoposide_Toffoli2001_mean_with_covariables.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 # etoposide
 
@@ -14,18 +15,54 @@ Etoposide is a chemotherapy drug used to treat many cancers, including testicula
 
 <small>Summary written by `glm-5.3-flash` from [Wikidata Q418817](https://www.wikidata.org/wiki/Q418817) and the WHO ATC classification; not checked by a person.</small>
 
+## Molecules and molar masses
+
+> The molar mass each model uses to convert mass to molar concentration and to form a metabolite molecule for molecule. Looked up, never estimated: DrugBank for the drug, the paper's own value or the PubChem entry matched to the paper's name for a metabolite.
+
+| molecule | role | molar mass (g/mol) | formula | source | PubChem | records |
+|---|---|---|---|---|---|---|
+| etoposide | parent | 588.557 | C29H32O13 | DrugBank | [36462](https://pubchem.ncbi.nlm.nih.gov/compound/36462) | Evans_1982, Nguyen_1998, Toffoli_2001, Urien_2011 |
+
 ## Extraction summary
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-15 09:26 | 4:50 | 0/0/2 | 0/0/0 | 0/0/0 | 30,173/12,759 | ollama / qwen3.8:27b-mtp-q8_0 | 1 | 1/0 | 1/0 | 0 |
+| 2026-10-07 18:15 | 17:58 | 2/5/0 | 1/0/0 | 1/0/3 | 304,547/20,573 | einfracz / qwen3.8-27b | 29 | 6/17 | 27/2 | 0 |
 
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">built, not shipped</span><br><sub>blocking: model_quarantined: Cl left at base-class defaults</sub><br><sub>route_to: `scholar`</sub> | [Toffoli_2001_mean](drugs/drug_etoposide/Etoposide_Toffoli2001_mean.md) | held back | 1-compartment, IV | 5 | Toffoli G et al., Population pharmacokinetics and pharmac…, British journal of clinical… (2001) | [10.1046/j.0306-5251.2001.01468.x](https://doi.org/10.1046/j.0306-5251.2001.01468.x) |
-| <span class="pk-badge pk-badge--orange">built, not shipped</span><br><sub>blocking: model_quarantined: Cl left at base-class defaults</sub><br><sub>route_to: `scholar`</sub> | [Toffoli_2001_mean_with_covariables](drugs/drug_etoposide/Etoposide_Toffoli2001_mean_with_covariables.md) | held back | 1-compartment, IV | 5 | Toffoli G et al., Population pharmacokinetics and pharmac…, British journal of clinical… (2001) | [10.1046/j.0306-5251.2001.01468.x](https://doi.org/10.1046/j.0306-5251.2001.01468.x) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>STALE — current validate: extracted</sub><br><sub>route_to: `engineer_replication`</sub> | [Toffoli_2001_mean](drugs/drug_etoposide/Etoposide_Toffoli2001_mean.md) | ▶ model + simulator | 1-compartment, IV | 5 | Toffoli G et al., Population pharmacokinetics and pharmac…, British journal of clinical… (2001) | [10.1046/j.0306-5251.2001.01468.x](https://doi.org/10.1046/j.0306-5251.2001.01468.x) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>STALE — current validate: extracted</sub><br><sub>route_to: `engineer_replication`</sub> | [Toffoli_2001_mean_with_covariables](drugs/drug_etoposide/Etoposide_Toffoli2001_mean_with_covariables.md) | ▶ model + simulator | 1-compartment, IV | 5 | Toffoli G et al., Population pharmacokinetics and pharmac…, British journal of clinical… (2001) | [10.1046/j.0306-5251.2001.01468.x](https://doi.org/10.1046/j.0306-5251.2001.01468.x) |
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Ciccolini_2002_reference](drugs/drug_etoposide/Etoposide_Ciccolini2002_reference.md) | — | 1-compartment (no model) | 0 | Ciccolini J et al., Population pharmacokinetics of etoposid…, Therapeutic drug monitoring (2002) | [10.1097/00007691-200212000-00005](https://doi.org/10.1097/00007691-200212000-00005) |
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>route_to: `human_review`</sub> | [Evans_1982_reference](drugs/drug_etoposide/Etoposide_Evans1982_reference.md) | — | general linear (no model) | 1 | Evans WE et al., Pharmacokinetics of Teniposide (VM26) a…, Cancer chemotherapy and pha… (1982) | [10.1007/BF00254537](https://doi.org/10.1007/BF00254537) |
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Freyer_2000_reference](drugs/drug_etoposide/Etoposide_Freyer2000_reference.md) | — | 1-compartment (no model) | 0 | Freyer G et al., Population pharmacokinetics of doxorubi…, British journal of clinical… (2000) | [10.1046/j.1365-2125.2000.00269.x](https://doi.org/10.1046/j.1365-2125.2000.00269.x) |
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>route_to: `human_review`</sub> | [Nguyen_1998_reference](drugs/drug_etoposide/Etoposide_Nguyen1998_reference.md) | — | 2-compartment (no model) | 3 | Nguyen L et al., Population pharmacokinetics of total an…, Cancer chemotherapy and pha… (1998) | [10.1007/s002800050718](https://doi.org/10.1007/s002800050718) |
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>route_to: `human_review`</sub> | [Urien_2011_reference](drugs/drug_etoposide/Etoposide_Urien2011_reference.md) | — | 2-compartment (no model) | 1 | Urien S et al., Developmental pharmacokinetics of etopo…, Cancer chemotherapy and pha… (2011) | [10.1007/s00280-010-1357-2](https://doi.org/10.1007/s00280-010-1357-2) |
+
+## Pharmacodynamics (PD)
+
+| status | detail | about | model | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--green">extracted</span> | [Friberg_2002_ANC](drugs/drug_etoposide/pd_Friberg_2002_ANC.md) | neutrophil ← etoposide · indirect response — drug inhibits the production of neutrophil | — | Friberg LE et al., Model of chemotherapy-induced myelosupp…, Journal of clinical oncolog… (2002) | [10.1200/JCO.2002.02.140](https://doi.org/10.1200/JCO.2002.02.140) |
+| <span class="pk-badge pk-badge--green">extracted</span> | [Friberg_2002_WBC](drugs/drug_etoposide/pd_Friberg_2002_WBC.md) | leukocyte ← etoposide · indirect response — drug inhibits the production of leukocyte | — | Friberg LE et al., Model of chemotherapy-induced myelosupp…, Journal of clinical oncolog… (2002) | [10.1200/JCO.2002.02.140](https://doi.org/10.1200/JCO.2002.02.140) |
+
+## Pharmacogenomics (PGx)
+
+| status | gene | affects | mechanism | detail | citation | doi |
+|---|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--neutral" title="a risk allele for an adverse reaction (an HLA type, G6PD deficiency …): it changes no PK/PD parameter.">safety allele</span> | **UGT1A1** | `safety` — adverse-reaction risk (HLA / safety allele) — no parameter shift | safety_allele | [Del_2017](drugs/drug_etoposide/pgx_Del_2017_UGT1A1_safety.md) | Del Re M et al., Unusual gastrointestinal and cutaneous…, The EPMA journal (2017) | [10.1007/s13167-017-0080-z](https://doi.org/10.1007/s13167-017-0080-z) |
+| <span class="pk-badge pk-badge--neutral" title="the paper links the gene to the drug but states no effect size on a model parameter, so it changes no model.">qualitative</span> | **ABCB1** | `Q22` · CL | transport | [Del_2017](drugs/drug_etoposide/pgx_Del_2017_ABCB1_Q22.md) | Del Re M et al., Unusual gastrointestinal and cutaneous…, The EPMA journal (2017) | [10.1007/s13167-017-0080-z](https://doi.org/10.1007/s13167-017-0080-z) |
+| <span class="pk-badge pk-badge--neutral" title="the paper links the gene to the drug but states no effect size on a model parameter, so it changes no model.">qualitative</span> | **GSTP1** | `Q22` · CL | metabolism | [Del_2017](drugs/drug_etoposide/pgx_Del_2017_GSTP1_Q22.md) | Del Re M et al., Unusual gastrointestinal and cutaneous…, The EPMA journal (2017) | [10.1007/s13167-017-0080-z](https://doi.org/10.1007/s13167-017-0080-z) |
+| <span class="pk-badge pk-badge--neutral" title="the paper links the gene to the drug but states no effect size on a model parameter, so it changes no model.">qualitative</span> | **UGT1A7** | `Q22` · CL | metabolism | [Del_2017](drugs/drug_etoposide/pgx_Del_2017_UGT1A7_Q22.md) | Del Re M et al., Unusual gastrointestinal and cutaneous…, The EPMA journal (2017) | [10.1007/s13167-017-0080-z](https://doi.org/10.1007/s13167-017-0080-z) |
+
+<details class="pk-legend"><summary>What the PGx badges mean — evidence, and whether a model runs</summary><table><tbody><tr><td><span class="pk-badge pk-badge--green">quantitative</span></td><td>the paper gives the effect of each phenotype (or genotype) on a named model parameter — a θ per category.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">qualitative</span></td><td>the paper links the gene to the drug but states no effect size on a model parameter, so it changes no model.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">guideline estimate</span></td><td>the effect comes from a CPIC / DPWG dosing guideline, not from this paper's numbers.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">safety allele</span></td><td>a risk allele for an adverse reaction (an HLA type, G6PD deficiency …): it changes no PK/PD parameter.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>the extraction is incomplete or inconsistent.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted.</td></tr><tr><td><span class="pk-badge pk-badge--green">▶ simulatable</span></td><td>the paper's popPK model runs per phenotype in the browser (Simulation tab); its PGx Modelica model is under Models.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">model only</span></td><td>a PGx Modelica model exists but has no in-browser simulator.</td></tr></tbody></table></details>
+
+<details class="legend">
+<summary>What the PGx columns mean</summary>
+<table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>gene</code></td><td>the gene whose variants the record is about. One record per gene, so a paper reporting several genes appears on several rows.</td></tr><tr><td><code>affects</code></td><td>the PK or PD parameter the genotype SHIFTS, as an ontology Q-code plus its name — Q22 = clearance, Q27 = CL/F (apparent clearance), Q32 = Cmax, Q88 = AUC, Q40 = Fab, Q321 = EC50, Q322 = IC50, Q305 = kfm. The record's per-phenotype theta is a multiplier ON that parameter: a poor-metaboliser theta shifts this value, it does not supply one. Two values are NOT parameters — Q100 (NIL) is an association or risk finding with no parameter target, and `safety` is an adverse-reaction risk such as an HLA allele. A PA… id instead of a Q-code marks a record derived from a ClinPGx/PharmGKB guideline lookup rather than read out of the paper.</td></tr><tr><td><code>mechanism</code></td><td>how the gene acts: metabolism, transport, target, formation, safety_allele, or unknown.</td></tr><tr><td><code>detail</code></td><td>the paper stem, linking to the full record page.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>the field is absent from the KB artifact — nothing was recorded. This is NOT the same as zero or empty: the value is unknown, not measured to be nothing.</td></tr><tr><td><code>—</code></td><td>deliberately not shown: the column does not apply to this row.</td></tr><tr><td><code>not verified</code></td><td>the record is not in an accepted state (see the badge and the note above the table); the numbers are shown as extracted, not endorsed.</td></tr></tbody></table>
+</details>
 
 ## ADME sites
 
@@ -33,26 +70,26 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 | process | tissue | actors (role) | evidence |
 |---|---|---|---|
-| absorption | blood-brain barrier | `ABCB1` inhibitor/substrate, `ABCG2` substrate | DrugBank actor |
-| absorption | kidney | `ABCB1` inhibitor/substrate | DrugBank actor |
-| absorption | liver | `ABCB1` inhibitor/substrate, `ABCG2` substrate | DrugBank actor |
+| absorption | blood-brain barrier | `ABCB1` inhibitor/substrate/transport, `ABCG2` substrate | DrugBank actor |
+| absorption | kidney | `ABCB1` inhibitor/substrate/transport | DrugBank actor |
+| absorption | liver | `ABCB1` inhibitor/substrate/transport, `ABCG2` substrate | DrugBank actor |
 | absorption | mammary gland | `ABCG2` substrate | DrugBank actor |
-| absorption | placenta | `ABCB1` inhibitor/substrate | DrugBank actor |
-| absorption | small intestine | `ABCB1` inhibitor/substrate, `ABCG2` substrate | DrugBank actor |
-| absorption | testis | `ABCB1` inhibitor/substrate, `ABCG2` substrate | DrugBank actor |
+| absorption | placenta | `ABCB1` inhibitor/substrate/transport | DrugBank actor |
+| absorption | small intestine | `ABCB1` inhibitor/substrate/transport, `ABCG2` substrate | DrugBank actor |
+| absorption | testis | `ABCB1` inhibitor/substrate/transport, `ABCG2` substrate | DrugBank actor |
 | distribution | blood-brain barrier | `ABCC1` inhibitor/substrate | DrugBank actor |
 | distribution | lung | `ABCC1` inhibitor/substrate | DrugBank actor |
 | metabolism | blood | `GSTT1` substrate | DrugBank actor |
 | metabolism | kidney | `CYP3A5` substrate | DrugBank actor |
-| metabolism | liver | `CYP1A2` substrate, `CYP2E1` substrate, `CYP3A4` inducer/inhibitor/substrate, `CYP3A5` substrate, `GSTP1` substrate, `GSTT1` substrate, `UGT1A1` substrate | DrugBank actor |
-| metabolism | lung | `GSTP1` substrate | DrugBank actor |
-| metabolism | small intestine | `CYP3A4` inducer/inhibitor/substrate, `CYP3A5` substrate, `UGT1A1` substrate | DrugBank actor |
+| metabolism | liver | `CYP1A2` substrate, `CYP2E1` substrate, `CYP3A4` inducer/inhibitor/substrate, `CYP3A5` substrate, `GSTP1` metabolism/substrate, `GSTT1` substrate, `UGT1A1` safety_allele/substrate | DrugBank actor |
+| metabolism | lung | `GSTP1` metabolism/substrate | DrugBank actor |
+| metabolism | small intestine | `CYP3A4` inducer/inhibitor/substrate, `CYP3A5` substrate, `UGT1A1` safety_allele/substrate | DrugBank actor |
 | excretion | bile duct | <sub>named in DrugBank's ADME text</sub> | prose |
 | excretion | kidney | `ABCC2` inhibitor/substrate | DrugBank actor |
 | excretion | liver | `ABCC2` inhibitor/substrate, `ABCC3` inhibitor/substrate | DrugBank actor |
 | excretion | small intestine | `ABCC2` inhibitor/substrate, `ABCC3` inhibitor/substrate | DrugBank actor |
 
-<sub>Actors without a tissue in the table: ABCC10 (inhibitor), ABCC10 (substrate), ABCC6 (inhibitor), ABCC6 (substrate), PTGS1 (substrate), PTGS2 (substrate), TOP2A (inhibitor), TOP2B (inhibitor).</sub>
+<sub>Actors without a tissue in the table: ABCC10 (inhibitor), ABCC10 (substrate), ABCC6 (inhibitor), ABCC6 (substrate), PTGS1 (substrate), PTGS2 (substrate), TOP2A (inhibitor), TOP2B (inhibitor), UGT1A7 (metabolism).</sub>
 
 <details class="legend">
 <summary>Badge legend — what each badge means</summary>
@@ -62,37 +99,147 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 ## Coverage
 
-- **PubMed hits:** 130 matched, 20 returned
-- **screened:** 2  ·  **relevant:** 2
-- **records:** 2  ·  extracted 0  ·  needs_review 2  ·  rejected 0  ·  stale 0
+- **PubMed hits:** 1398 matched, 175 returned
+- **screened:** 12  ·  **relevant:** 12
+- **records:** 7  ·  extracted 2  ·  needs_review 0  ·  rejected 5  ·  stale 2
 - **scholar-agent fallback query used:** not captured
 
 ## Full text wanted
 
-_3 paper(s) judged relevant from the abstract, with no full text on disk — paywalled, or the resolver could not reach them. Follow the DOI, then save the PDF into `papers/` as `&lt;save as&gt;.pdf` and re-run the extraction._
+_14 paper(s) judged relevant from the abstract, with no full text on disk — paywalled, or the resolver could not reach them. Follow the DOI, then save the PDF into `papers/` as `&lt;save as&gt;.pdf` and re-run the extraction._
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Nguyen_1998.pdf` | Nguyen L et al., Population pharmacokinetics of total an…, Cancer chemotherapy and pha… (1998) | popPK | 10 | [10.1007/s002800050718](https://doi.org/10.1007/s002800050718) | [9443625](https://pubmed.ncbi.nlm.nih.gov/9443625) | The text explicitly reports quantitative population PK parameters for etoposide, including clearance equations, volume of distribution correlations, and bioavailability. |
-| `Reif_2002.pdf` | Reif S et al., Population pharmacokinetics of etoposide, International journal of cl… (2002) | popPK | 10 | [10.5414/cpp40578](https://doi.org/10.5414/cpp40578) | [12503821](https://pubmed.ncbi.nlm.nih.gov/12503821) | The title indicates a population pharmacokinetic study of etoposide, but no numeric parameter values are present in the provided evidence. |
-| `Pigatto_2016.pdf` | Pigatto MC et al., Population Pharmacokinetic Modeling of…, Pharmaceutical research (2016) | popPK | 9 | [10.1007/s11095-016-1906-4](https://doi.org/10.1007/s11095-016-1906-4) | [27068281](https://pubmed.ncbi.nlm.nih.gov/27068281) | The paper describes a population pharmacokinetic study of etoposide in rats, but the specific numeric parameter values (CL, V, Q) are not present in the provided evidence, only qualitative model descriptions and penetration percentages. |
+| `Chabot_1996.pdf` | Chabot GG et al., Etoposide bioavailability after oral ad…, Journal of clinical oncolog… (1996) | popPK | 10 | [10.1200/JCO.1996.14.7.2020](https://doi.org/10.1200/JCO.1996.14.7.2020) | [8683232](https://pubmed.ncbi.nlm.nih.gov/8683232) | The paper provides detailed quantitative pharmacokinetic parameters for etoposide in humans, including absorption rate constant, half-life, area under the curve, and total-body clearance. |
+| `Freyer_2000.pdf` | Freyer G et al., Population pharmacokinetics of doxorubi…, British journal of clinical… (2000) | popPK | 10 | [10.1046/j.1365-2125.2000.00269.x](https://doi.org/10.1046/j.1365-2125.2000.00269.x) | [11012554](https://pubmed.ncbi.nlm.nih.gov/11012554) | The study reports quantitative population PK parameters for etoposide, specifically clearance (3.34 - 0.0083*creatinine l/h) and volume of distribution (6.38 l), directly in the text. |
+| `Millward_1995.pdf` | Millward MJ et al., Pharmacokinetics and pharmacodynamics o…, Cancer chemotherapy and pha… (1995) | popPK | 10 | [10.1007/BF00685644](https://doi.org/10.1007/BF00685644) | [7497587](https://pubmed.ncbi.nlm.nih.gov/7497587) | The paper reports quantitative pharmacokinetic parameters for etoposide, including AUC, apparent oral clearance, peak plasma concentration, and half-life, directly in the abstract text. |
+| `Nguyen_1998.pdf` | Nguyen L et al., Population pharmacokinetics of total an…, Cancer chemotherapy and pha… (1998) | popPK | 10 | [10.1007/s002800050718](https://doi.org/10.1007/s002800050718) | [9443625](https://pubmed.ncbi.nlm.nih.gov/9443625) | The paper reports a population PK study of etoposide with quantitative values for clearance, volumes, bioavailability, and regression models directly in the text. |
+| `Pigatto_2017.pdf` | Pigatto MC et al., Pharmacokinetic/pharmacodynamic modelin…, European journal of pharmac… (2017) | popPK | 10 | [10.1016/j.ejps.2016.10.038](https://doi.org/10.1016/j.ejps.2016.10.038) | [27816627](https://pubmed.ncbi.nlm.nih.gov/27816627) | The study reports a four-compartment population pharmacokinetic model for etoposide in rats, but the specific numeric PK parameter values (CL, V, Q) are not explicitly listed in the provided evidence, only PD parameters. |
+| `Schwinghammer_1993.pdf` | Schwinghammer TL et al., Disposition of total and unbound etopos…, Cancer chemotherapy and pha… (1993) | popPK | 10 | [10.1007/BF00686172](https://doi.org/10.1007/BF00686172) | [8324869](https://pubmed.ncbi.nlm.nih.gov/8324869) | The paper reports quantitative pharmacokinetic parameters (CL, Vss, t1/2 beta) for etoposide in human patients. |
+| `Ciccolini_2002.pdf` | Ciccolini J et al., Population pharmacokinetics of etoposid…, Therapeutic drug monitoring (2002) | popPK | 9 | [10.1097/00007691-200212000-00005](https://doi.org/10.1097/00007691-200212000-00005) | [12451286](https://pubmed.ncbi.nlm.nih.gov/12451286) | The abstract explicitly reports quantitative population PK parameters (CL and t1/2) for etoposide in human patients. |
+| `Evans_1982.pdf` | Evans WE et al., Pharmacokinetics of Teniposide (VM26) a…, Cancer chemotherapy and pha… (1982) | popPK | 9 | [10.1007/BF00254537](https://doi.org/10.1007/BF00254537) | [7083455](https://pubmed.ncbi.nlm.nih.gov/7083455) | The paper reports a pharmacokinetic study for etoposide in children with quantitative clearance values (17.8 +/- 11.2 ml/min/m2) present in the abstract, but detailed volume of distribution parameters are not explicitly quantified in the provided text snippet. |
+| `Pigatto_2016.pdf` | Pigatto MC et al., Population Pharmacokinetic Modeling of…, Pharmaceutical research (2016) | popPK | 9 | [10.1007/s11095-016-1906-4](https://doi.org/10.1007/s11095-016-1906-4) | [27068281](https://pubmed.ncbi.nlm.nih.gov/27068281) | The study reports a population PK model for etoposide in rats, but the specific numeric parameter values (CL, V, Q) are not included in the provided text. |
+| `Tian_2007.pdf` | Tian LL et al., [Preparation and in vitro and in vivo e…, Yao xue xue bao = Acta phar… (2007) | popPK | 9 | not captured | [17944242](https://pubmed.ncbi.nlm.nih.gov/17944242) | The study reports in vivo PK in rats with a two-compartment model, but specific parameters like CL and V are not explicitly listed in the evidence, only AUC and MRT. |
+| `Al-Ali_2020.pdf` | Al-Ali AAA et al., High-dose etoposide formulations do not…, International journal of ph… (2020) | popPK | 8 | [10.1016/j.ijpharm.2020.119399](https://doi.org/10.1016/j.ijpharm.2020.119399) | [32376439](https://pubmed.ncbi.nlm.nih.gov/32376439) | The study is a pharmacokinetic study in rats reporting quantitative parameters like AUC and Cmax, but specific disposition parameters like CL, V, or ka are not explicitly listed in the provided text. |
+| `Ando_1999.pdf` | Ando M et al., Pharmacological analysis of etoposide i…, Clinical cancer research :… (1999) | popPK | 8 | not captured | [10430070](https://pubmed.ncbi.nlm.nih.gov/10430070) | The abstract explicitly reports quantitative pharmacokinetic parameters (apparent oral clearance and AUC) for etoposide in elderly patients compared to younger controls. |
+| `Lum_2000.pdf` | Lum BL et al., Effect of high-dose cyclosporine on eto…, Cancer chemotherapy and pha… (2000) | popPK | 8 | [10.1007/s002800050045](https://doi.org/10.1007/s002800050045) | [10755319](https://pubmed.ncbi.nlm.nih.gov/10755319) | The paper studies etoposide pharmacokinetics in humans and reports qualitative PK changes (AUC increase), but specific numeric disposition parameters (CL, V, etc.) are not explicitly listed in the provided text. |
+| `Reif_2002_2.pdf` | Reif S et al., Effect of grapefruit juice intake on et…, European journal of clinica… (2002) | popPK | 8 | [10.1007/s00228-002-0495-9](https://doi.org/10.1007/s00228-002-0495-9) | [12389073](https://pubmed.ncbi.nlm.nih.gov/12389073) | The study reports etoposide PK parameters (bioavailability, variability) in a human study using a two-compartment model, but specific numeric values for clearance, volume, or rate constants are not listed in the provided text. |
 
-<sub>queue written 2026-09-15T20:01:52.662835+00:00</sub>
+<sub>queue written 2026-10-07T18:12:02.082556+00:00</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Canal_1998 | irrelevant | 1 | 0 | The paper is a review discussing general dose individualization strategies and mentions etoposide only in the context of dosage reduction for organ dysfunction, without reporting any quantitative pharmacokinetic parameter values. |
-| popPK | Cheng_2024 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of trilaciclib, with etoposide serving only as a co-administered chemotherapy agent without reported PK parameters. |
-| popPK | Friberg_2002 | irrelevant | 2 | 0 | The paper focuses on a pharmacodynamic model of myelosuppression rather than reporting quantitative pharmacokinetic disposition parameters (CL, V, etc.) for etoposide. |
-| popPK | Kobayashi_1993 | irrelevant | 1 | 0 | The paper is a review discussing pharmacodynamic models and therapeutic drug monitoring strategies, and it does not report original quantitative pharmacokinetic parameter values for etoposide. |
-| popPK | Kobayashi_1994 | irrelevant | 0 | 0 | The paper focuses on pharmacodynamics and toxicity (myelosuppression, leukemia risk) rather than pharmacokinetic disposition parameters. |
+| popPK | Aguiar_2022 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of cisplatin, with etoposide mentioned only as part of the combination chemotherapy regimen (comparator/co-administered), and no PK parameters for etoposide are reported. |
+| popPK | Al-Ali_2020 | relevant | 8 | 3 | The study is a pharmacokinetic study in rats reporting quantitative parameters like AUC and Cmax, but specific disposition parameters like CL, V, or ka are not explicitly listed in the provided text. |
+| PGx | Al-Ghafari_2016 | not_relevant | 0 | 0 | The paper investigates the effect of long-term drug exposure on cell migration and resistance in a specific cell line, not the effect of a genetic variant on etoposide pharmacokinetics or pharmacodynamics. |
+| PGx | Alonso_2015 | not_relevant | 0 | 0 | The paper investigates microenvironment-mediated drug resistance via stromal CYP3A4 expression, not pharmacogenomic effects based on patient gene variants/genotypes. |
+| popPK | Auger-Quittet_2014 | irrelevant | 0 | 0 | The paper is a clinical meta-analysis of lymphoma outcomes using a chemotherapy regimen (BEAM) and does not report any pharmacokinetic parameters for etoposide. |
+| popPK | Bai_2012 | irrelevant | 0 | 0 | The study reports in vitro cytotoxicity (EC50) values for novel podophyllotoxin derivatives, using etoposide only as a comparator, and contains no pharmacokinetic parameters (CL, V, t1/2) for etoposide. |
+| PGx | Bartsch_2007 | not_relevant | 2 | 2 | Mentions etoposide response only in the context of general clinical outcome (benefit) without specifying or quantifying changes in pharmacokinetic or pharmacodynamic parameters. |
+| PGx | Bleibel_2009 | not_relevant | 8 | 2 | Reports an association with a cytotoxic phenotype (PD) in cell lines but lacks a fitted quantitative pharmacogenomic effect size (theta). |
+| popPK | Brezovšek_2014 | irrelevant | 0 | 0 | The study reports ecotoxicological parameters (EC50) for algal growth inhibition, not pharmacokinetic parameters such as clearance or volume of distribution. |
+| popPK | Bruncko_2007 | irrelevant | 0 | 0 | The paper describes the discovery of Bcl-2/Bcl-xL inhibitors and their efficacy with etoposide as a chemotherapy agent, but contains no pharmacokinetic data for etoposide. |
+| PGx | Buzun_2022 | not_relevant | 0 | 0 | The paper describes the synthesis and in vitro pharmacology of a novel compound (Les-3331), using etoposide as a control, but does not report any pharmacogenomic analysis involving gene variants. |
+| PGx | Błauż_2017 | not_relevant | 0 | 0 | The paper describes the development of cell line models for MDR and does not report pharmacogenomic effects on PK/PD parameters. |
+| PGx | Cai_2016 | not_relevant | 0 | 0 | The paper reports drug resistance in cancer stem-like cells but does not report pharmacogenomic effects on PK/PD parameters. |
+| popPK | Canal_1998 | irrelevant | 2 | 0 | The paper is a general review discussing dose individualization strategies for various anticancer drugs, including etoposide, but does not provide specific numeric pharmacokinetic parameters (CL, V, etc.) for etoposide. |
+| PGx | Canal_1998 | not_relevant | 1 | 0 | The paper discusses dose individualization strategies based on organ function and BSA, and briefly mentions pharmacogenetics for other drugs, but does not report a pharmacogenomic effect on the PK or PD of etoposide. |
+| popPK | Chan_2002 | irrelevant | 0 | 0 | The study evaluates the pharmacokinetics of the bradykinin antagonist CU201, with etoposide mentioned only as a co-administered drug in efficacy combinations. |
+| popPK | Cheng_2024 | irrelevant | 1 | 0 | The study focuses on the pharmacokinetics of trilaciclib, and while etoposide is co-administered, no quantitative disposition parameters for etoposide are reported in the evidence. |
+| PGx | Cheng_2025 | not_relevant | 0 | 0 | The paper reports clinical efficacy (PFS/OS) and identifies correlative genomic biomarkers for response, but does not report pharmacogenomic effects on etoposide PK parameters or specific PD biomarkers like CYP3A4 activity or transporter expression. |
+| popPK | Creemers_2019 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of MDR1 inhibition on drug sensitivity (EC50/colony formation) in cell lines, not a pharmacokinetic study reporting disposition parameters (CL, V, etc.) for etoposide. |
+| popPK | Dahi_2022 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of melphalan, with etoposide serving only as a co-administered component of the BEAM regimen. |
+| PGx | Davis_2015 | not_relevant | 1 | 5 | The paper investigates the mechanism of a pharmacological compound (nanotetrac) affecting P-gp and etoposide retention, rather than a gene variant or genotype. |
+| popPK | Dimitrakopoulou-Strauss_2010 | irrelevant | 0 | 0 | The study reports pharmacokinetic parameters for the radiotracer 18F-FDG (K1, k2, etc.), not for the drug etoposide. |
+| popPK | Ferguson_2015 | irrelevant | 0 | 0 | The study focuses on the in-vitro antiproliferative activity of acridine-based catalytic topoisomerase II inhibitors, with no pharmacokinetic parameters reported for etoposide. |
+| popPK | Friberg_2002 | irrelevant | 3 | 0 | The study focuses on a pharmacodynamic model of myelosuppression rather than the pharmacokinetic disposition parameters (CL, V, Q) of etoposide, and no numeric PK values are provided in the evidence. |
+| popPK | Friberg_2010 | irrelevant | 1 | 0 | The study focuses on pharmacodynamics (myelosuppression modeling) and does not report original quantitative pharmacokinetic parameters for etoposide. |
+| popPK | Germann_1997 | irrelevant | 0 | 0 | The paper is an in-vitro mechanistic study on P-glycoprotein inhibition by VX-710, with etoposide used only as a cytotoxic probe and no PK parameters reported. |
+| PGx | Goldstein_2013 | not_relevant | 2 | 1 | The paper describes the general mechanism by which chemotherapy (including etoposide) induces CYP3A4 expression via p53, but does not report a pharmacogenomic effect (specifically how a gene variant changes a PK/PD parameter). |
+| PGx | Gradinaru_2015 | not_relevant | 0 | 0 | The paper describes an in vitro method for UGT screening using etoposide as a substrate but does not report any pharmacogenomic effects or genetic variants influencing its PK/PD parameters. |
+| PGx | Harker_1985 | not_relevant | 1 | 5 | The paper studies multidrug resistance in a sarcoma cell line selected for doxorubicin; it reports cross-resistance to etoposide in an in vitro cellular model (efflux-mediated), not a human pharmacogenomic effect on the PK or PD parameters of etoposide. |
+| PGx | He_2011 | not_relevant | 1 | 0 | The paper is a review of MRP1 structure and function and mentions etoposide only as a drug category affected by MRP1 overexpression in resistance, without reporting specific pharmacogenomic genotype-PK/PD data for etoposide. |
+| popPK | Hill_2014 | irrelevant | 0 | 0 | The study is an in vitro cytotoxicity and cell cycle analysis, not a pharmacokinetic study, and reports no disposition parameters. |
+| PGx | Huisman_2005 | not_relevant | 2 | 5 | The paper focuses on the transport of taxanes (paclitaxel/docetaxel) and probenecid's effect on MRP2; etoposide is only mentioned as a secondary substrate, and no pharmacogenomic effect on its PK/PD is reported. |
+| PGx | Jacob_2011 | not_relevant | 2 | 10 | The paper describes the in vitro activity of an etoposide metabolite (etoposide quinone) and mentions an association between a CYP3A4 variant and leukemia risk, but it does not report the change in any PK/PD parameter (e.g., AUC, clearance, toxicity levels) of etoposide due to the variant. |
+| PGx | Kellie_1988 | not_relevant | 0 | 0 | The paper discusses ifosfamide treatment in neuroblastoma and does not report any pharmacogenomic effects on the pharmacokinetics or pharmacodynamics of etoposide. |
+| PGx | Kivistö_1995 | not_relevant | 0 | 0 | The paper discusses drug-drug interactions involving CYP3A and P-glycoprotein inhibitors, but does not report on genetic variants or pharmacogenomic effects. |
+| PGx | Kleffel_2016 | not_relevant | 0 | 0 | The paper investigates the mechanism of chemoresistance via ABCB5 expression, not the influence of a specific gene variant or genotype on the pharmacokinetics or pharmacodynamics of etoposide. |
+| popPK | Kloft_2006 | irrelevant | 2 | 0 | The study focuses on a pharmacodynamic model for neutropenia, and while etoposide is included as one of several drugs, no specific quantitative pharmacokinetic parameter values (CL, V, Q, etc.) for etoposide are provided in the evidence. |
+| popPK | Kobayashi_1992 | irrelevant | 1 | 0 | The text is a review of toxicity and pharmacodynamics (specifically myelosuppression) without reporting quantitative pharmacokinetic parameters like clearance or volume for etoposide. |
+| popPK | Kobayashi_1993 | irrelevant | 1 | 0 | The paper is a review article discussing pharmacodynamic models and therapeutic drug monitoring concepts; it does not report original quantitative pharmacokinetic parameter values (CL, V, etc.) for etoposide. |
+| popPK | Kobayashi_1994 | irrelevant | 0 | 0 | The paper focuses on pharmacodynamics (toxicity modeling) and long-term clinical outcomes, not pharmacokinetic parameters. |
 | PD | Kobayashi_1994 | not_relevant | 1 | 0 | The text is a qualitative review/abstract that mentions a modified Hill equation model for myelosuppression but does not provide any numeric PD parameters, dose-response curves, or specific exposure-response data. |
-| popPK | Li_2024 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of trilaciclib, with etoposide mentioned only as part of the chemotherapy regimen context. |
-| popPK | Pigatto_2016 | relevant | 9 | 2 | The paper describes a population pharmacokinetic study of etoposide in rats, but the specific numeric parameter values (CL, V, Q) are not present in the provided evidence, only qualitative model descriptions and penetration percentages. |
-| popPK | Reif_2002 | relevant | 10 | 0 | The title indicates a population pharmacokinetic study of etoposide, but no numeric parameter values are present in the provided evidence. |
-| popPK | Toffoli_2004 | irrelevant | 2 | 0 | The text is a review discussing pharmacokinetic concepts and therapeutic thresholds (e.g., Cmax 3-5 mg/L) but does not report original quantitative disposition parameters (CL, V, Q, ka) or population PK model estimates for etoposide. |
+| PGx | Kühl_1992 | not_relevant | 0 | 0 | The study investigates the drug-drug interaction between etoposide and cyclosporin to reverse multidrug resistance, not the effect of a specific gene variant or genotype on etoposide pharmacokinetics or pharmacodynamics. |
+| PGx | Lara_2009 | not_relevant | 2 | 10 | The pharmacogenomic analyses (ABCB1, UGT1A1) are reported specifically for the irinotecan regimen, with no data provided for the effect of gene variants on etoposide PK/PD parameters. |
+| PGx | Lavanderos_2019 | not_relevant | 3 | 2 | The study reports associations between gene variants and clinical toxicity outcomes (e.g., neutropenia, alopecia), not quantitative changes in specific pharmacokinetic or pharmacodynamic parameters of etoposide. |
+| PGx | Lee_1989 | not_relevant | 0 | 0 | The study focuses on Adriamycin resistance mechanisms (GSH metabolism, P-gp) in murine models and explicitly states no cross-resistance to etoposide, with no pharmacogenomic analysis of etoposide PK/PD. |
+| popPK | Lee_2026 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of drug synergy and cell signaling, reporting no pharmacokinetic parameters (CL, V, t1/2, etc.) for etoposide. |
+| PGx | Levêque_2009 | not_relevant | 0 | 0 | The case report describes a drug-drug interaction affecting vincristine, not a pharmacogenomic effect on etoposide. |
+| popPK | Li_2006 | irrelevant | 0 | 0 | The study is an in-vitro cell-based assay measuring cytotoxicity and anti-proliferation activity (EC50 values) rather than pharmacokinetic disposition parameters (CL, V, etc.) for etoposide. |
+| popPK | Li_2024 | irrelevant | 0 | 0 | The study reports pharmacokinetic parameters for trilaciclib, not etoposide (etoposide is only mentioned as a co-administered chemotherapy agent). |
+| popPK | Lin_2023 | irrelevant | 0 | 0 | The study reports pharmacokinetic parameters for carfilzomib, not etoposide, which is only a co-administered drug in the R-ICE regimen. |
+| PGx | Low_2013 | not_relevant | 0 | 0 | The study investigates severe neutropenia as a toxicity endpoint and fails to reach genome-wide significance, providing no specific pharmacokinetic or pharmacodynamic effect sizes for etoposide. |
+| popPK | Lum_2000 | relevant | 8 | 1 | The paper studies etoposide pharmacokinetics in humans and reports qualitative PK changes (AUC increase), but specific numeric disposition parameters (CL, V, etc.) are not explicitly listed in the provided text. |
+| PGx | Ma_2002 | not_relevant | 5 | 2 | The study reports functional differences in drug resistance (PD) between canine and human MRP1 alleles, but it is a comparative pharmacology/mechanism study in cell lines, not a clinical pharmacogenomic analysis of how human genotypes affect clinical PK/PD parameters. |
+| popPK | Majeed_2022 | irrelevant | 0 | 0 | The study focuses on the efficacy of TAK-243 in SCLC, using etoposide only as a standard-of-care comparator in combination therapy, with no pharmacokinetic data for etoposide reported. |
+| PGx | Matsumoto_1997 | not_relevant | 1 | 5 | The paper describes experimental cellular adaptation to drug pressure (acquired resistance mechanisms like MRP overexpression and TOP2A modification) rather than the effect of a germline genetic variant on drug PK/PD. |
+| popPK | Meco_2014 | irrelevant | 0 | 0 | This is an in vitro and xenograft efficacy study of temozolomide and etoposide on ependymoma stem cells, not a pharmacokinetic study reporting disposition parameters for etoposide. |
+| popPK | Minami_1996 | irrelevant | 2 | 0 | The study focuses on a pharmacodynamic model for leukopenia (toxicity) and does not report quantitative population pharmacokinetic parameters (CL, V, etc.) for etoposide in the provided text. |
+| popPK | Minami_1998 | irrelevant | 1 | 0 | The study focuses on a pharmacodynamic model for leukopenia, and etoposide is used only as a validation drug rather than as the subject of pharmacokinetic parameter estimation. |
+| PGx | Moeung_2020 | not_relevant | 3 | 10 | The paper reports an association between UGT1A1*28 and late neutropenia (a toxicity/PD endpoint), but does not report how a genotype changes a pharmacokinetic parameter (e.g., clearance, AUC) or a direct pharmacodynamic response parameter linked to the gene. |
+| PGx | Montaudon_1997 | not_relevant | 2 | 5 | The study investigates the effects of a drug-resistant phenotype (doxorubicin resistance) on drug target (topoII) interactions, not the effect of a specific human gene variant on a PK or PD parameter of etoposide. |
+| PGx | Nademanee_1995 | not_relevant | 0 | 0 | The paper reports clinical outcomes of bone marrow transplantation and the use of etoposide in a preparative regimen, but it does not investigate the impact of genetic variants on etoposide pharmacokinetics or pharmacodynamics. |
+| popPK | Nayvelt_2010 | irrelevant | 0 | 0 | The study focuses on the mechanism of DNA condensation and protection by polyamines in vitro, using etoposide only as an agent to induce stress in cell lines, with no pharmacokinetic data reported. |
+| popPK | Parrella_2014 | irrelevant | 0 | 0 | The study investigates in vitro estrogenic and cytotoxic activity of etoposide in cell assays, not pharmacokinetic disposition parameters. |
+| PGx | Peer_2018 | not_relevant | 1 | 1 | The paper models the pharmacogenomics of belinostat (UGT1A1 genotype), not etoposide. |
+| PGx | Perry_1993 | not_relevant | 0 | 0 | The paper describes a mitomycin C-resistant cell line and notes a lack of cross-resistance to etoposide, but it does not report any pharmacogenomic effect of gene variants on etoposide PK or PD parameters. |
+| popPK | Pietrancosta_2005 | irrelevant | 0 | 0 | The paper is a medicinal chemistry study focusing on the synthesis and p53-inactivating potency of Pifithrin-alpha analogues, where etoposide is used only as a DNA-damaging agent to induce cell death, not as the subject of pharmacokinetic analysis. |
+| popPK | Pigatto_2016 | relevant | 9 | 0 | The study reports a population PK model for etoposide in rats, but the specific numeric parameter values (CL, V, Q) are not included in the provided text. |
+| popPK | Plotkin_2006 | irrelevant | 0 | 0 | Etoposide is used only as an apoptosis-inducing agent in an in-vitro cell biology study, with no pharmacokinetic parameters reported. |
+| PGx | Plowman_1994 | not_relevant | 1 | 2 | The study investigates the effect of a physiological state (jaundice) rather than a genetic variant or genotype on etoposide pharmacokinetics. |
+| popPK | Poradowski_2022 | irrelevant | 0 | 0 | The study is an in-vitro cytotoxicity assay (EC50/viability) of etoposide on cell lines, not a pharmacokinetic study, and contains no PK parameters (CL, V, ka, etc.). |
+| PGx | Rabier_1991 | not_relevant | 0 | 0 | The paper investigates drug resistance mechanisms in cell lines using doxorubicin as the selecting agent; while etoposide cross-resistance is noted, there is no analysis of a specific gene variant/genotype and its effect on etoposide PK/PD parameters. |
+| PGx | Rapoport_2002 | not_relevant | 0 | 0 | The paper reports clinical outcomes of a chemotherapy protocol including etoposide but contains no pharmacogenomic data or PK/PD parameter analysis. |
+| PGx | Ratajewski_2015 | not_relevant | 0 | 0 | The paper reports PXR activation by various compounds but does not study etoposide or the effect of gene variants on its pharmacokinetics/pharmacodynamics. |
+| popPK | Reif_2002 | irrelevant | 0 | 0 | no_text gate: only 40 chars of text extracted (&lt; 400) |
+| popPK | Reif_2002_2 | relevant | 8 | 2 | The study reports etoposide PK parameters (bioavailability, variability) in a human study using a two-compartment model, but specific numeric values for clearance, volume, or rate constants are not listed in the provided text. |
+| PGx | Relling_1994 | not_relevant | 5 | 2 | The paper identifies CYP3A4 as the enzyme responsible for etoposide O-demethylation but does not report genotype-specific differences in PK/PD parameters (e.g., no comparison of variants like CYP3A5*1 vs *3). |
+| PGx | Relling_1998 | not_relevant | 1 | 0 | The study compares etoposide pharmacokinetics between patients based on secondary AML outcomes but does not report a pharmacogenomic effect (gene variant altering PK/PD) for etoposide. |
+| PGx | Rogoll_2025 | not_relevant | 0 | 0 | The paper reports elevated ABCG2 expression causing etoposide resistance in a cell line, which is a cellular pharmacodynamic effect of a transporter phenotype rather than a human pharmacogenomic variant effect on PK or PD. |
+| popPK | Roundhill_2019 | irrelevant | 0 | 0 | The paper is a mechanistic cell biology study focused on drug resistance mechanisms in osteosarcoma cells, not a pharmacokinetic study reporting quantitative disposition parameters for etoposide. |
+| popPK | Rousseau_2002 | irrelevant | 2 | 0 | The paper is a review of therapeutic drug monitoring methods that mentions etoposide only as an example of a drug for which multilinear regression models have been developed, without providing any original quantitative pharmacokinetic parameter values. |
+| PGx | Saulnier_2015 | not_relevant | 0 | 0 | The paper reports pharmacogenomic effects of the ODC rs2302616 variant on the efficacy (PFS) and biomarkers of DFMO, not on the pharmacokinetics or pharmacodynamics of etoposide. |
+| popPK | Secreto_2017 | irrelevant | 0 | 0 | This is an in vitro study using etoposide as a cytotoxic agent to assess stem cell quality, not a pharmacokinetic study reporting disposition parameters. |
+| PGx | Shalinsky_1990 | not_relevant | 0 | 0 | The study investigates the effect of a chemical modulator (dipyridamole) on drug sensitivity in cell lines, not a genetic variant or polymorphism in humans. |
+| popPK | Shamash_2017 | irrelevant | 0 | 0 | The study focuses on bleomycin lung toxicity in a combination regimen where etoposide is a co-administered agent, and no pharmacokinetic parameters for etoposide are reported. |
+| popPK | Shoemaker_2006 | irrelevant | 0 | 0 | The study investigates the mechanism of action of a Bcl-XL inhibitor and its synergy with etoposide in vitro and in vivo, but does not report pharmacokinetic parameters for etoposide. |
+| PGx | Socinski_2009 | not_relevant | 0 | 0 | The paper is a clinical efficacy trial comparing two chemotherapy regimens and does not report any pharmacogenomic analysis or gene-variant dependent changes in PK/PD parameters. |
+| PGx | Song_2011 | not_relevant | 0 | 0 | The study investigates drug-drug interactions (CYP inhibition by podophyllotoxin) but does not report any pharmacogenomic effects based on gene variants or genotypes. |
+| PGx | Talwelkar_2021 | not_relevant | 0 | 0 | The paper describes a method for functional drug-response screening using fresh tumor cells, not a study reporting how specific gene variants or genotypes alter the pharmacokinetic or pharmacodynamic parameters of etoposide. |
+| popPK | Tian_2007 | relevant | 9 | 4 | The study reports in vivo PK in rats with a two-compartment model, but specific parameters like CL and V are not explicitly listed in the evidence, only AUC and MRT. |
+| popPK | Toffoli_2004 | irrelevant | 1 | 0 | The text is a qualitative review of etoposide pharmacokinetics that discusses parameter concepts and variability but does not report specific quantitative values (CL, V, etc.) for the subject drug. |
+| popPK | Ueda_2020 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of decitabine in cell lines, using etoposide only as an inhibitor/comparator to measure ENT1 transport effects. |
+| PGx | Urien_2011 | not_relevant | 0 | 0 | The paper investigates whether CYP3A/MDR1 SNPs affect etoposide PK but explicitly concludes that these genetic variants had no significant effect. |
+| PGx | Viale_2013 | not_relevant | 0 | 0 | The paper evaluates novel pyrazole compounds and does not report pharmacogenomic effects on the PK or PD parameters of etoposide. |
+| PGx | Voulgaridou_2016 | not_relevant | 2 | 5 | The paper describes ALDH3A1 overexpression in MCF-7 cells affecting resistance to etoposide, which is a cell-line biology study rather than a clinical pharmacogenomic study of a gene variant affecting a PK or PD parameter in humans. |
+| popPK | Wasser_2004 | irrelevant | 0 | 0 | The study focuses on dynamic MRI parameters for monitoring multiple myeloma, with etoposide listed only as part of a combination chemotherapy regimen and no PK parameters reported. |
+| PGx | Wilde_2007 | not_relevant | 1 | 0 | The study focuses on demographic covariates (e.g., BSA) rather than genetic variants, and the mention of CYP3A4 is merely a suggestion for future clinical studies. |
+| PGx | Wright_2015 | not_relevant | 0 | 0 | The paper is a review discussing the general state of pharmacogenomics in stem cell transplantation; it does not report any specific study findings, data, or quantitative pharmacogenomic effects on etoposide pharmacokinetics or pharmacodynamics. |
+| PGx | Xu_2019 | not_relevant | 0 | 0 | The study focuses on resistance mechanisms to pemetrexed in NSCLC cells and mentions cross-resistance to etoposide only in the context of ABCB1 upregulation, without reporting specific pharmacogenomic effects on etoposide PK/PD parameters. |
+| PGx | Yang_2025 | not_relevant | 0 | 0 | The paper focuses on the molecular mechanisms of DNA damage and autophagy (DRAM1, N-AcHA) in aging models, using etoposide merely as a tool to induce DNA damage, not studying pharmacogenomics of its PK/PD parameters. |
+| popPK | You_2010 | irrelevant | 0 | 0 | The study models the decline of tumor markers (AFP and hCG), not the pharmacokinetics of the drug etoposide. |
+| PGx | Zee_2012 | not_relevant | 0 | 0 | The paper discusses pharmacologic modulation using drug interactions (e.g., ketoconazole inhibition), not pharmacogenomic effects of gene variants on etoposide PK/PD. |
+| popPK | Zehnpfennig_2009 | irrelevant | 0 | 0 | The paper is an in-vitro transport study of ABCC3 proteoliposomes using etoposide only as an inhibitor, providing no disposition or PK parameters for etoposide. |
+| popPK | Zhang_2021 | irrelevant | 0 | 0 | The study focuses on the mechanism of action and anticancer synergy of robustadials with etoposide in cell lines, reporting no pharmacokinetic parameters for etoposide. |
+| PGx | Zhang_2021_2 | not_relevant | 0 | 0 | The paper is a mechanistic review of etoposide-induced secondary leukemia focusing on topoisomerase and oxidative metabolites; it mentions CYP3A4/5 metabolism but does not report how specific gene variants or genotypes change a PK or PD parameter. |
+| PGx | Zhou-Pan_1993 | not_relevant | 0 | 0 | The paper investigates vinblastine metabolism and drug interactions, not etoposide pharmacogenomics. |
+| popPK | Zhu_2015 | irrelevant | 4 | 0 | The paper is a mathematical modeling study focused on optimal control of chemotherapy regimens and myelosuppression; while it mentions a PK model for etoposide, no specific quantitative parameter values (CL, V, etc.) are present in the evidence. |
+| PGx | Zhuo_2004 | not_relevant | 0 | 0 | The paper describes the metabolic kinetics of CYP3A4 and CYP3A5 on etoposide in vitro but does not report any association between specific genetic variants/genotypes and pharmacokinetic or pharmacodynamic parameters in humans. |
+| PGx | van_2001 | not_relevant | 0 | 0 | The study investigates drug-drug interaction (atovaquone effect) rather than a pharmacogenomic (gene variant) effect. |
+| PGx | van_2008 | not_relevant | 4 | 2 | The paper is a broad review discussing CYP450 pharmacogenetics for various drugs including etoposide, but the provided abstract does not report specific quantitative pharmacokinetic or pharmacodynamic effect sizes or fitted parameters for etoposide. |
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-09-15 09:25 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-10-07 18:12 UTC</sub>

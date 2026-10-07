@@ -17,17 +17,11 @@ Protein hydrolysates, products of protein breakdown, are used as a source of ami
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-05 23:22 | 6:53 | 0/0/0 | 1/0/0 | 0/0/0 | 314,934/2,732 | ollama / qwen3.8:27b-mtp-q8_0 | 21 | 3/28 | 21/0 | 0 |
+| 2026-10-07 18:39 | 1:42 | 0/0/0 | 0/0/0 | 0/0/0 | 314,934/3,233 | einfracz / qwen3.8-27b | 22 | 3/28 | 22/0 | 0 |
 
 ## popPK records
 
 _not available_
-
-## Pharmacodynamics (PD)
-
-| status | detail | about | model | citation | doi |
-|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">in vitro</span> | [Shi_2019_lipid_accumulation](drugs/drug_protein_hydrolysates/pd_Shi_2019_lipid_accumulation.md) | lipid accumulation ← protein hydrolysates from quinoa · direct Emax (saturable) effect | — | Shi Z et al., Functional properties and adipogenesis…, Food science & nutrition (2019) | [10.1002/fsn3.1052](https://doi.org/10.1002/fsn3.1052) |
 
 <details class="legend">
 <summary>Badge legend — what each badge means</summary>
@@ -44,7 +38,7 @@ _not available_
 
 ## Full text wanted
 
-_13 paper(s) judged relevant from the abstract, with no full text on disk — paywalled, or the resolver could not reach them. Follow the DOI, then save the PDF into `papers/` as `&lt;save as&gt;.pdf` and re-run the extraction._
+_12 paper(s) judged relevant from the abstract, with no full text on disk — paywalled, or the resolver could not reach them. Follow the DOI, then save the PDF into `papers/` as `&lt;save as&gt;.pdf` and re-run the extraction._
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
@@ -54,7 +48,6 @@ _13 paper(s) judged relevant from the abstract, with no full text on disk — pa
 | `Dong_2024.pdf` | Dong SY et al., Structure, physicochemical properties,…, Journal of the science of f… (2024) | pd | 4 | [10.1002/jsfa.13218](https://doi.org/10.1002/jsfa.13218) | [38082555](https://www.ncbi.nlm.nih.gov/pubmed/38082555) | metadata signals extractable PD data (IC50) |
 | `Gonzalez-de_2024.pdf` | Gonzalez-de la Rosa T et al., Production, characterisation, and biolo…, Food chemistry (2024) | pd | 4 | [10.1016/j.foodchem.2024.139400](https://doi.org/10.1016/j.foodchem.2024.139400) | [38640536](https://www.ncbi.nlm.nih.gov/pubmed/38640536) | metadata signals extractable PD data (EC50) |
 | `Gui_2022.pdf` | Gui M et al., Bioactive peptides identified from enzy…, Journal of the science of f… (2022) | pd | 4 | [10.1002/jsfa.11532](https://doi.org/10.1002/jsfa.11532) | [34523722](https://www.ncbi.nlm.nih.gov/pubmed/34523722) | metadata signals extractable PD data (IC50) |
-| `Jin_2024.pdf` | Jin H et al., Isolation of Bacillus altitudinis 5-DSW…, Microorganisms (2024) | pd | 4 | [10.3390/microorganisms12102048](https://doi.org/10.3390/microorganisms12102048) | [39458357](https://www.ncbi.nlm.nih.gov/pubmed/39458357) | metadata signals extractable PD data (IC50) |
 | `Kimatu_2017.pdf` | Kimatu BM et al., Antioxidant potential of edible mushroo…, Food chemistry (2017) | pd | 4 | [10.1016/j.foodchem.2017.03.030](https://doi.org/10.1016/j.foodchem.2017.03.030) | [28407953](https://www.ncbi.nlm.nih.gov/pubmed/28407953) | metadata signals extractable PD data (EC50) |
 | `Knuf_2025.pdf` | Knuf F et al., Peptidomics profiling and biological ac…, Food chemistry (2025) | pd | 4 | [10.1016/j.foodchem.2024.141032](https://doi.org/10.1016/j.foodchem.2024.141032) | [39236395](https://www.ncbi.nlm.nih.gov/pubmed/39236395) | metadata signals extractable PD data (IC50) |
 | `Liu_2022.pdf` | Liu FF et al., Physicochemical, functional and antioxi…, Food chemistry (2022) | pd | 4 | [10.1016/j.foodchem.2022.133397](https://doi.org/10.1016/j.foodchem.2022.133397) | [35679704](https://www.ncbi.nlm.nih.gov/pubmed/35679704) | metadata signals extractable PD data (IC50) |
@@ -62,7 +55,7 @@ _13 paper(s) judged relevant from the abstract, with no full text on disk — pa
 | `Rudolph_2017.pdf` | Rudolph S et al., Identification and quantification of AC…, Food chemistry (2017) | pd | 4 | [10.1016/j.foodchem.2016.12.039](https://doi.org/10.1016/j.foodchem.2016.12.039) | [28159254](https://www.ncbi.nlm.nih.gov/pubmed/28159254) | metadata signals extractable PD data (IC50) |
 | `Wang_2021.pdf` | Wang L et al., Preparation and identification of antio…, Food chemistry (2021) | pd | 4 | [10.1016/j.foodchem.2021.129399](https://doi.org/10.1016/j.foodchem.2021.129399) | [33662918](https://www.ncbi.nlm.nih.gov/pubmed/33662918) | metadata signals extractable PD data (EC50) |
 
-<sub>queue written 2026-10-05T23:17:43.016841+00:00</sub>
+<sub>queue written 2026-10-07T18:38:15.507050+00:00</sub>
 
 ## Screened and excluded
 
@@ -72,7 +65,7 @@ _13 paper(s) judged relevant from the abstract, with no full text on disk — pa
 | PD | Alashi_2014 | not_relevant | 0 | 0 | The paper focuses on the antioxidant properties of protein hydrolysates, which is a physicochemical or in vitro biochemical assay, not a pharmacodynamic (exposure-response) relationship in a biological system with numeric PD parameters like Emax or EC50. |
 | popPK | Ashfaq_2026 | irrelevant | 0 | 0 | The study focuses on in-vitro enzymatic inhibition (IC50) and molecular docking of protein hydrolysates, reporting no pharmacokinetic parameters such as clearance, volume, or half-life. |
 | popPK | Bakwo_2024 | irrelevant | 0 | 0 | The study investigates in-vitro antioxidant and glucose uptake properties of protein hydrolysates, not pharmacokinetic disposition parameters. |
-| popPK | Cabuhat_2026 | irrelevant | 0 | 0 | The paper is a scientometric review of Pleurotus bioactivity research and does not report any pharmacokinetic parameters for protein hydrolysates. |
+| popPK | Cabuhat_2026 | irrelevant | 0 | 0 | The paper is a scientometric review of mushroom bioactivity and does not report pharmacokinetic parameters for protein_hydrolysates. |
 | PD | Cabuhat_2026 | not_relevant | 0 | 0 | The paper is a scientometric analysis of publication trends and does not report any pharmacodynamic or exposure-response data. |
 | popPK | Chandrasekaran_2022 | irrelevant | 0 | 0 | no_text gate: only 204 chars of text extracted (&lt; 400) |
 | PD | Chandrasekaran_2022 | not_relevant | 0 | 0 | The paper focuses on peptide identification and correlation with diabetes markers, not on pharmacokinetic/pharmacodynamic modeling or dose-response relationships. |
@@ -81,23 +74,23 @@ _13 paper(s) judged relevant from the abstract, with no full text on disk — pa
 | PD | Chen_2022 | not_relevant | 3 | 2 | The paper reports in vitro antioxidant activity (IC50) and uses response surface methodology to optimize hydrolysis conditions, but it does not report a pharmacokinetic/pharmacodynamic (PK/PD) model or an exposure-response relationship for a drug in a biological system. |
 | popPK | Chen_2024 | irrelevant | 0 | 0 | no_text gate: only 112 chars of text extracted (&lt; 400) |
 | PD | Chen_2024 | not_relevant | 0 | 0 | The paper focuses on the identification of antioxidant peptides and their in vitro protective activity against alcoholic injury, not on pharmacokinetic or pharmacodynamic modeling of a drug in vivo. |
-| popPK | Chen_2025 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of antiglycation activity and does not report any pharmacokinetic parameters (CL, V, ka, etc.) for the peptides. |
-| popPK | Chi_2015 | irrelevant | 0 | 0 | The study investigates the in-vitro antioxidant properties and peptide composition of protein hydrolysates, not their pharmacokinetic disposition parameters. |
+| popPK | Chen_2025 | irrelevant | 0 | 0 | The study is an in-vitro investigation of the antiglycation and antioxidant mechanisms of peptides, reporting no pharmacokinetic parameters such as clearance, volume, or half-life. |
+| popPK | Chi_2015 | irrelevant | 0 | 0 | The study reports in vitro antioxidant properties (radical scavenging, EC50) of protein hydrolysates, not pharmacokinetic parameters such as clearance or volume. |
 | popPK | Cho_2014 | irrelevant | 0 | 0 | The study investigates the antioxidant and functional properties of egg-white protein hydrolysates in vitro, not pharmacokinetic parameters. |
-| popPK | Davran_2026 | irrelevant | 0 | 0 | The paper is a review of marine bioactive compounds and does not report quantitative pharmacokinetic parameters for protein hydrolysates. |
+| popPK | Davran_2026 | irrelevant | 0 | 0 | The paper is a review of pharmacological mechanisms of functional seafoods and does not report any quantitative pharmacokinetic parameters for protein hydrolysates. |
 | PD | Davran_2026 | not_relevant | 1 | 0 | The paper is a general review of pharmacological mechanisms and health applications of marine bioactive compounds, lacking specific PK/PD modeling or numeric exposure-response parameters for protein hydrolysates. |
-| popPK | Deglaire_2009 | irrelevant | 2 | 0 | The study focuses on nitrogen metabolism and amino acid utilization rather than standard pharmacokinetic parameters (CL, V, ka) for the drug, and no numeric PK values are provided in the evidence. |
+| popPK | Deglaire_2009 | irrelevant | 1 | 0 | The study reports compartmental modeling parameters for 15N-labeled casein nitrogen rather than standard PK parameters (CL, V, ka) for the protein hydrolysate itself. |
 | popPK | Dong_2024 | irrelevant | 0 | 0 | no_text gate: only 110 chars of text extracted (&lt; 400) |
 | PD | Dong_2024 | not_relevant | 0 | 0 | The paper focuses on the structural and physicochemical characterization of protein hydrolysates and their biological activities (e.g., antioxidant, ACE-inhibitory) without reporting any pharmacokinetic data, exposure-response relationships, or numeric PD parameters (such as EC50 or Emax) derived from a PK/PD model. |
-| popPK | EFSA_2023 | irrelevant | 0 | 0 | The paper is a toxicological assessment of copper, not a pharmacokinetic study of protein_hydrolysates. |
+| popPK | EFSA_2023 | irrelevant | 0 | 0 | The paper concerns toxicological health-based guidance values for copper, not the pharmacokinetics of protein_hydrolysates. |
 | PD | EFSA_2023 | not_relevant | 1 | 0 | The paper is a toxicological risk assessment establishing an Acceptable Daily Intake (ADI) based on chronic exposure and retention data, not a pharmacodynamic study reporting numeric concentration-effect parameters (e.g., Emax, EC50) for a drug. |
 | popPK | Farrell_1993 | irrelevant | 0 | 0 | The paper studies the toxicity of mercury(II) in growth media containing protein hydrolysates, not the pharmacokinetics of protein hydrolysates as a drug. |
-| popPK | Farup_2016 | irrelevant | 2 | 3 | The study measures the plasma appearance kinetics of amino acid metabolites (TAA, EAA, Leucine) rather than the pharmacokinetic parameters (CL, V, ka) of the protein hydrolysate itself. |
+| popPK | Farup_2016 | relevant | 4 | 7 | The study reports absorption kinetics (plasma appearance rate constants and AUC) for protein hydrolysates in humans, but these are surrogate markers for amino acid absorption rather than standard PK parameters (CL, Vd) for the protein molecule itself. |
 | popPK | Fisayo_2021 | irrelevant | 0 | 0 | The paper investigates the in-vitro enzyme inhibitory activity and peptide identification of amaranth protein hydrolysates, not their pharmacokinetic disposition parameters. |
-| PGx | Gaudel_2013 | not_relevant | 0 | 0 | The study investigates the pharmacodynamic effects of a protein hydrolysate in different mouse genotypes (ob/ob vs wild-type), which is a pharmacogenetic or disease-model study, not a pharmacogenomic study of human genetic variants affecting drug PK/PD. |
+| PGx | Gaudel_2013 | not_relevant | 0 | 0 | The study investigates the physiological effects of a dietary supplement (whey protein hydrolysate) in animal models with a specific disease genotype (ob/ob), not a pharmacogenomic effect on the PK/PD of the supplement itself caused by a human gene variant. |
 | popPK | Gonzalez-de_2024 | irrelevant | 0 | 0 | no_text gate: only 97 chars of text extracted (&lt; 400) |
 | PD | Gonzalez-de_2024 | not_relevant | 0 | 0 | The paper focuses on the production and characterization of oligopeptides, not on pharmacokinetic or pharmacodynamic modeling of a drug. |
-| popPK | Gonzalez-de_2026 | irrelevant | 0 | 0 | The study focuses on in vitro antioxidant/anti-inflammatory properties and peptidomics of olive leaf protein hydrolysates, with no pharmacokinetic parameters reported. |
+| popPK | Gonzalez-de_2026 | irrelevant | 0 | 0 | The study focuses on the production, peptidomics, and in vitro biological activity (antioxidant/anti-inflammatory) of olive leaf protein hydrolysates, containing no pharmacokinetic data (CL, V, etc.). |
 | PD | Gonzalez-de_2026 | not_relevant | 3 | 2 | The paper reports a single EC50 value for antioxidant activity of the whole hydrolysate matrix, which is a standard bioassay potency metric rather than a pharmacokinetic/pharmacodynamic (PK/PD) exposure-response relationship or dose-effect curve for a drug in a biological system. |
 | popPK | Gui_2022 | irrelevant | 0 | 0 | no_text gate: only 74 chars of text extracted (&lt; 400) |
 | PD | Gui_2022 | not_relevant | 0 | 0 | The paper focuses on the identification and characterization of bioactive peptides from sturgeon skin hydrolysates, not on pharmacokinetic or pharmacodynamic modeling of a specific drug or compound. |
@@ -105,7 +98,7 @@ _13 paper(s) judged relevant from the abstract, with no full text on disk — pa
 | popPK | Hu_2022 | irrelevant | 0 | 0 | The paper is a food science study on the preparation and antioxidant activity of peptides, containing no pharmacokinetic parameters or disposition data. |
 | popPK | Jin_2024 | irrelevant | 0 | 0 | no_text gate: only 161 chars of text extracted (&lt; 400) |
 | PD | Jin_2024 | not_relevant | 0 | 0 | The paper focuses on the isolation of a bacterium and the preparation of peptide fractions from chia seeds, with no pharmacokinetic or pharmacodynamic modeling or exposure-response analysis. |
-| popPK | Johny_2022 | irrelevant | 0 | 0 | The study focuses on the production and antioxidant activity of egg white hydrolysates, not on pharmacokinetic parameters. |
+| popPK | Johny_2022 | irrelevant | 0 | 0 | The study focuses on the production and in vitro antioxidant activity of egg white protein hydrolysates, not on pharmacokinetic parameters such as clearance or volume of distribution. |
 | PD | Johny_2022 | not_relevant | 3 | 4 | The paper reports EC50 values for antioxidant assays (DPPH, ABTS, etc.) which are dose-response parameters for the hydrolysate as a compound, but it lacks a pharmacokinetic (PK) component or in vivo exposure data, making it a simple in vitro bioassay rather than a pharmacodynamic (PD) or exposure-response study in the context of drug metabolism. |
 | popPK | Kang_2020 | irrelevant | 0 | 0 | The study investigates the in-vitro enzymatic and cellular bioactivity (anti-hyperglycemic effects) of green crab hydrolysates, not their pharmacokinetic disposition parameters. |
 | popPK | Karaś_2014 | irrelevant | 0 | 0 | The paper reports in-vitro antioxidant activity (DPPH, ABTS, Fe2+ chelation) of protein hydrolysates, not pharmacokinetic parameters. |
@@ -118,42 +111,42 @@ _13 paper(s) judged relevant from the abstract, with no full text on disk — pa
 | popPK | Lin_2017 | irrelevant | 0 | 0 | The study focuses on the antihypertensive efficacy and in vitro ACE/renin inhibition of protein hydrolysates, reporting blood pressure changes and IC50 values, but does not report pharmacokinetic parameters (CL, V, ka, t1/2) or a PK model. |
 | popPK | Liu_2022 | irrelevant | 0 | 0 | no_text gate: only 98 chars of text extracted (&lt; 400) |
 | PD | Liu_2022 | not_relevant | 0 | 0 | The paper focuses on the physicochemical, functional, and antioxidant properties of mung bean protein hydrolysates, not on pharmacodynamic or exposure-response relationships in a biological system. |
-| PGx | Mira_2000 | not_relevant | 0 | 0 | The paper is a review on the diagnosis and treatment of phenylketonuria (PKU) and does not report pharmacogenomic effects on the PK/PD of protein hydrolysates. |
+| PGx | Mira_2000 | not_relevant | 0 | 0 | The paper reviews the diagnosis and dietary management of phenylketonuria (an enzyme deficiency disorder) and does not report pharmacogenomic effects on the PK/PD of protein hydrolysates. |
 | popPK | Mäkinen_2022 | irrelevant | 0 | 0 | The study focuses on the production and in-vitro bioactivity (antioxidant, DPP4 inhibition, cytotoxicity) of protein hydrolysates, not on pharmacokinetic disposition parameters. |
-| popPK | Nongonierma_2013 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic evaluation of DPP-IV inhibition and antioxidant properties, not a pharmacokinetic study reporting disposition parameters. |
-| popPK | Noptana_2026 | irrelevant | 0 | 0 | The study focuses on the physicochemical properties and antioxidant activity of rice bran protein hydrolysates in vitro, not on pharmacokinetic parameters. |
+| popPK | Nongonierma_2013 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic evaluation of antioxidant and DPP-IV inhibitory properties, reporting no pharmacokinetic parameters (CL, V, ka, etc.) for protein hydrolysates. |
+| popPK | Noptana_2026 | irrelevant | 0 | 0 | The study investigates the chemical properties and antioxidant activity of rice bran protein hydrolysates in vitro, with no pharmacokinetic data (e.g., clearance, volume, half-life). |
 | PD | Noptana_2026 | not_relevant | 3 | 2 | The paper reports in vitro antioxidant activity (EC50 values) for food-derived peptides, which is a physicochemical property assay rather than a pharmacodynamic exposure-response relationship in a biological system. |
-| popPK | Nureye_2025 | irrelevant | 0 | 0 | The paper is a review of medicinal plants for hypertension and does not study protein hydrolysates or report any pharmacokinetic parameters. |
+| popPK | Nureye_2025 | irrelevant | 0 | 0 | The paper is a review of medicinal plants for hypertension and does not study protein_hydrolysates or report PK parameters. |
 | PD | Nureye_2025 | not_relevant | 1 | 0 | The paper is a review of medicinal plants for hypertension and does not report any specific pharmacodynamic or exposure-response analysis for protein hydrolysates. |
-| popPK | Omidian_2023 | irrelevant | 0 | 0 | The paper is a review of curcumin delivery systems and does not report pharmacokinetic parameters for protein_hydrolysates. |
+| popPK | Omidian_2023 | irrelevant | 0 | 0 | The paper discusses curcumin delivery systems, not protein_hydrolysates. |
 | PD | Omidian_2023 | not_relevant | 0 | 0 | The text is a review of curcumin delivery systems and does not report any pharmacodynamic or exposure-response data for protein hydrolysates. |
 | popPK | Ospina-Quiroga_2022 | irrelevant | 0 | 0 | The paper is a food science study evaluating the antioxidant properties and emulsion stability of protein hydrolysates, not a pharmacokinetic study, and contains no PK parameters. |
 | PD | Ospina-Quiroga_2022 | not_relevant | 3 | 2 | The paper reports IC50 values for in vitro antioxidant assays (DPPH/chelation) but does not provide a dose-response curve, Emax, or a PK/PD model for the hydrolysates in the emulsion system. |
 | popPK | Ozturk-Kerimoglu_2023 | irrelevant | 0 | 0 | The paper is an in-vitro study on the antioxidant activity of peptides from chicken feet hydrolysates and does not report any pharmacokinetic parameters. |
-| popPK | Papadopoulou_2025 | irrelevant | 0 | 0 | The paper is a review on cosmetic applications of marine by-products and does not report pharmacokinetic parameters for protein hydrolysates. |
+| popPK | Papadopoulou_2025 | irrelevant | 0 | 0 | The paper is a review on cosmetic applications of marine bioactives and does not report any pharmacokinetic parameters for protein hydrolysates. |
 | PD | Papadopoulou_2025 | not_relevant | 1 | 0 | The paper is a comprehensive review of marine bioactives for cosmetics and does not report any specific pharmacodynamic modeling, exposure-response analysis, or numeric PD parameters for protein hydrolysates. |
 | popPK | Peng_2024 | irrelevant | 0 | 0 | The paper is a food science study on the structural and functional properties of protein hydrolysates, not a pharmacokinetic study, and contains no PK parameters. |
 | PD | Peng_2024 | not_relevant | 0 | 0 | The paper characterizes the physicochemical properties and antioxidant activity (IC50) of protein hydrolysates treated with ultrasound, but does not report a pharmacodynamic exposure-response or dose-response relationship for a drug in a biological system. |
-| popPK | Poulin_2006 | irrelevant | 0 | 0 | The paper describes a separation technique for protein hydrolysates in vitro and does not report any pharmacokinetic parameters. |
+| popPK | Poulin_2006 | irrelevant | 0 | 0 | The paper describes a separation technique for bioactive peptides from protein hydrolysates and reports separation recovery percentages, not pharmacokinetic parameters like clearance or volume of distribution. |
 | popPK | Rios-Herrera_2021 | irrelevant | 0 | 0 | no_text gate: only 198 chars of text extracted (&lt; 400) |
 | PD | Rios-Herrera_2021 | not_relevant | 0 | 0 | The paper focuses on the biochemical and antioxidant properties of protein hydrolysates based on enzymatic source and degree of hydrolysis, not on pharmacokinetic or pharmacodynamic exposure-response relationships in a biological system. |
 | popPK | Rudolph_2017 | irrelevant | 0 | 0 | no_text gate: only 104 chars of text extracted (&lt; 400) |
 | PD | Rudolph_2017 | not_relevant | 0 | 0 | The paper focuses on the identification and quantification of ACE-inhibiting peptides in plant protein hydrolysates, not on pharmacodynamic modeling or exposure-response relationships in a biological system. |
-| popPK | Sapatinha_2024 | irrelevant | 0 | 0 | The paper describes the production and in-vitro biological activities (antioxidant, ACE inhibition) of fish protein hydrolysates, but contains no pharmacokinetic data (CL, V, ka, etc.). |
+| popPK | Sapatinha_2024 | irrelevant | 0 | 0 | The study investigates the production and biological activity (antioxidant, ACE inhibition) of fish protein hydrolysates in vitro, but does not report any pharmacokinetic parameters (CL, V, ka, t1/2). |
 | popPK | Shi_2019 | irrelevant | 0 | 0 | The study is an in-vitro investigation of functional properties and adipogenesis inhibitory activity, not a pharmacokinetic study, and reports no disposition parameters. |
 | popPK | Wang_2019 | irrelevant | 0 | 0 | The study focuses on the preparation, purification, and in-vitro antioxidant activity of protein hydrolysates, reporting no pharmacokinetic parameters such as clearance, volume, or half-life. |
 | popPK | Wang_2021 | irrelevant | 0 | 0 | no_text gate: only 79 chars of text extracted (&lt; 400) |
 | PD | Wang_2021 | not_relevant | 0 | 0 | The paper focuses on the preparation and identification of antioxidant peptides, not on pharmacokinetic or pharmacodynamic modeling of drug exposure or dose-response relationships. |
-| popPK | Wang_2021_2 | irrelevant | 0 | 0 | The study focuses on the identification and stability of bioactive peptides from protein hydrolysates, not on the pharmacokinetic disposition parameters of the hydrolysates themselves. |
+| popPK | Wang_2021_2 | irrelevant | 0 | 0 | The study is an in vitro investigation of peptide bioactivities (antioxidant and ACE inhibitory) and stability, containing no pharmacokinetic or disposition parameters. |
 | popPK | Wen_2020 | irrelevant | 0 | 0 | The study focuses on the purification and in-vitro antioxidant/cytoprotective effects of peptides, not on pharmacokinetic disposition parameters. |
-| popPK | Xu_2025 | irrelevant | 0 | 0 | The study is an in silico and in vitro mechanistic investigation of peptide activity on uric acid metabolism, reporting no pharmacokinetic parameters (CL, V, ka, etc.) for protein hydrolysates. |
+| popPK | Xu_2025 | irrelevant | 0 | 0 | The study is in vitro/in silico mechanistic (molecular docking and cellular assays) and does not report quantitative population pharmacokinetic parameters (CL, V, etc.). |
 | PD | Xu_2025 | not_relevant | 2 | 1 | The paper reports qualitative in vitro inhibitory activities and molecular docking results for peptides but does not provide numeric concentration-effect curves, IC50 values, or formal PD model parameters. |
-| popPK | Yang_2015 | irrelevant | 0 | 0 | The study focuses on the optimization of Maillard reaction conditions to enhance anti-allergy effects of fish protein hydrolysates, not on pharmacokinetic parameters. |
+| popPK | Yang_2015 | irrelevant | 0 | 0 | The paper studies the chemical optimization and in vitro biological activity of fish protein hydrolysates, not pharmacokinetic parameters. |
 | PD | Yang_2015 | not_relevant | 3 | 2 | The paper reports optimization of Maillard reaction conditions and qualitative/semi-quantitative anti-allergy effects (e.g., % release, EC50 for DPPH) but does not provide a pharmacodynamic exposure-response or dose-response model with numeric PD parameters (Emax, EC50 for the biological effect, slope) for the hydrolysate itself. |
-| popPK | Zan_2023 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of the bioactivity (ADH activation) of chickpea protein hydrolysates and does not report any pharmacokinetic parameters (CL, V, ka, etc.). |
+| popPK | Zan_2023 | irrelevant | 0 | 0 | The paper is an in vitro biochemical and molecular docking study of protein hydrolysates' bioactivity (ADH activation) and contains no pharmacokinetic parameters (CL, V, t1/2) for the hydrolysates or their metabolites. |
 | popPK | Zhang_2018 | irrelevant | 0 | 0 | The paper focuses on the separation, characterization, and in-vitro bioactivity (ACE inhibition/antioxidant) of peptides from jellyfish hydrolysates, reporting no pharmacokinetic parameters. |
-| popPK | Zhang_2019 | irrelevant | 0 | 0 | The paper reports in vitro antioxidant activity (EC50 values) of peptides, not pharmacokinetic parameters (CL, V, ka, etc.) for protein hydrolysates. |
-| popPK | Zhao_2019 | irrelevant | 0 | 0 | The paper is an in-vitro study on the antioxidant activity of peptides from Spanish mackerel protein hydrolysates and does not report any pharmacokinetic parameters (CL, V, ka, etc.). |
+| popPK | Zhang_2019 | irrelevant | 0 | 0 | The paper reports in-vitro antioxidant activity (EC50 values) of peptides, not pharmacokinetic parameters (CL, V, ka) for the drug protein_hydrolysates. |
+| popPK | Zhao_2019 | irrelevant | 0 | 0 | The paper is an in-vitro study on the antioxidant activity of peptides, reporting EC50 values for radical scavenging rather than pharmacokinetic parameters (CL, V, etc.) for a drug. |
 | popPK | Zhao_2023 | irrelevant | 0 | 0 | The paper is an in-vitro study on the purification and antioxidant activity of peptides, containing no pharmacokinetic parameters. |
 
 ---

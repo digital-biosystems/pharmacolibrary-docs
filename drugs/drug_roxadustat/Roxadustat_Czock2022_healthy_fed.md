@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;B03X&quot;,&quot;href&quot;:&quot;atc/B03X.md&quot;},{&quot;label&quot;:&quot;roxadustat&quot;,&quot;href&quot;:&quot;drugs/drug_roxadustat/&quot;},{&quot;label&quot;:&quot;Czock_2022 \u00b7 healthy_fed&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Roxadustat_Reki2021_reference&quot;,&quot;label&quot;:&quot;Reki\u0107_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_roxadustat/Roxadustat_Reki2021_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Roxadustat_Takada2022v2_reference&quot;,&quot;label&quot;:&quot;Takada_2022_2_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_roxadustat/Roxadustat_Takada2022v2_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -25,17 +25,17 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the val
 
 <sub>reviewed by glm-5.3-flash</sub>
 
-> ⚠️ **STALE** — review status `needs_review` (reviewed 2026-09-28 14:40:06.847532+00:00) predates the upstream re-run (2026-10-05 21:36:56.470081+00:00). Current validate status: `needs_review`.
+> ⚠️ **STALE** — review status `needs_review` (reviewed 2026-09-28 14:40:06.847532+00:00) predates the upstream re-run (2026-10-07 18:36:31.244126+00:00). Current validate status: `needs_review`.
 
 ## Citation
 Czock D et al., Clinical Pharmacokinetics and Pharmacod…, Clinical pharmacokinetics (2022)
   ·  DOI: [10.1007/s40262-021-01095-x](https://doi.org/10.1007/s40262-021-01095-x)
 
 ## Model component
-<dbs-pgx drug="roxadustat" model-id="Roxadustat_Czock2022_healthy_fed" status="needs_review" stale="true" population="healthy volunteers and chronic kidney disease patients" measured-compound="roxadustat" parameterization="apparent" topology="1C"></dbs-pgx>
+<dbs-pgx drug="roxadustat" model-id="Roxadustat_Czock2022_healthy_fed" status="needs_review" stale="true" population="healthy volunteers, adults with chronic kidney disease" measured-compound="roxadustat" parameterization="apparent" topology="1C"></dbs-pgx>
 
 **Model structure:** 1-compartment; no model was built for this record.  
-**Parameters:** 6 extracted.
+**Parameters:** 7 extracted.
 
 **Parameterization:** CL/F, V/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
@@ -44,12 +44,13 @@ Czock D et al., Clinical Pharmacokinetics and Pharmacod…, Clinical pharmacokin
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| AUC (h·ng/mL per mg) | `Q88` · AUC | 570 | h·ng/mL per mg | not captured | [[h] · [ng]] / [[ml] · [permg]] | not captured | exact (1.0) | Czock_2022_table_1:row2:col14, Czock_2022_table_1:row2:col15, Czock_2022_table_1:row2:col16, Czock_2022_table_1:row2:col20 | — | not captured |
-| Cmax (ng/mL per mg) | `Q32` · Cmax | 79 | ng/mL per mg | not captured | [ng] / [[ml] · [permg]] | not captured | exact (1.0) | Czock_2022_table_1:row3:col14, Czock_2022_table_1:row3:col15, Czock_2022_table_1:row3:col16, Czock_2022_table_1:row3:col20 | — | not captured |
-| CL/F (L/h) | `Q27` · CL/F | 1.96 | L/h | 5.444444444444444e-07 | [l] / [h] | not captured | exact (1.0) | Czock_2022_table_1:row6:col14, Czock_2022_table_1:row6:col15, Czock_2022_table_1:row6:col16, Czock_2022_table_1:row6:col20 | — | not captured |
-| t½ or t½α and t½ß (h) | `Q57` · t1/2z | 15.7 | h | 56520.0 | [h] | not captured | llm (0.6) | Czock_2022_table_1:row8:col7, Czock_2022_table_1:row8:col14, Czock_2022_table_1:row8:col15, Czock_2022_table_1:row8:col16, Czock_2022_table_1:row8:col20 | — | not captured |
-| fu (%) | `Q46` · fu | 0.94 | h | not captured | [h] | not captured | exact (1.0) | Czock_2022_table_1:row10:col7 | — | not captured |
-| Vd/F | `Q76` · V/F | 39.0 | L | 0.039 | L | not captured | review_gapfill (0.7) | Czock_2022:review | — | not captured |
+| AUC (h·ng/mL per mg) | `Q88` · AUC | 498 | h·ng/mL per mg | not captured | [[h] · [ng]] / [[ml] · [permg]] | not captured | exact (1.0) | Czock_2022_table_1:row2:col1, Czock_2022_table_1:row2:col3, Czock_2022_table_1:row2:col11, Czock_2022_table_1:row2:col12, Czock_2022_table_1:row2:col15, Czock_2022_table_1:row2:col16, Czock_2022_table_1:row2:col21, Czock_2022_table_1:row2:col23 | — | not captured |
+| Cmax (ng/mL per mg) | `Q32` · Cmax | 85 | ng/mL per mg | not captured | [ng] / [[ml] · [permg]] | not captured | exact (1.0) | Czock_2022_table_1:row3:col1, Czock_2022_table_1:row3:col3, Czock_2022_table_1:row3:col11, Czock_2022_table_1:row3:col12, Czock_2022_table_1:row3:col15, Czock_2022_table_1:row3:col16, Czock_2022_table_1:row3:col21, Czock_2022_table_1:row3:col23 | — | not captured |
+| Ctrough (ng/mL per mg) | `Q37` · Ctrough | 0.47 | ng/mL per mg | not captured | [ng] / [[ml] · [permg]] | not captured | exact (1.0) | Czock_2022_table_1:row4:col11 | — | not captured |
+| CL/F (L/h) | `Q27` · CL/F | 2.62 | L/h | 7.277777777777778e-07 | [l] / [h] | not captured | exact (1.0) | Czock_2022_table_1:row6:col3, Czock_2022_table_1:row6:col15, Czock_2022_table_1:row6:col16, Czock_2022_table_1:row6:col21, Czock_2022_table_1:row6:col23 | — | not captured |
+| Vz/F (L) | `Q76` · V/F | 57 | L | 0.057 | [l] | not captured | exact (1.0) | Czock_2022_table_1:row7:col3, Czock_2022_table_1:row7:col23 | — | not captured |
+| t½ or t½α and t½ß (h) | `Q57` · t1/2z | 16.0 | h | 57600.0 | [h] | not captured | llm (0.6) | Czock_2022_table_1:row8:col3, Czock_2022_table_1:row8:col7, Czock_2022_table_1:row8:col11, Czock_2022_table_1:row8:col12, Czock_2022_table_1:row8:col15, Czock_2022_table_1:row8:col16, Czock_2022_table_1:row8:col21, Czock_2022_table_1:row8:col23 | — | not captured |
+| fu (%) | `Q46` · fu | 0.81 | h | not captured | [h] | not captured | exact (1.0) | Czock_2022_table_1:row10:col1, Czock_2022_table_1:row10:col3, Czock_2022_table_1:row10:col7 | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -62,14 +63,12 @@ Czock D et al., Clinical Pharmacokinetics and Pharmacod…, Clinical pharmacokin
 - dropped unlinked row (NIL): 'Dose' — extend the ontology if this is a real PK parameter (source ['Czock_2022_table_1:row1:col7'])
 - unit_dimension_unknown: 'h·ng/mL per mg' (AUC)
 - unit_dimension_unknown: 'ng/mL per mg' (Cmax)
-- dropped unlinked row (NIL): 'UR (%)' — extend the ontology if this is a real PK parameter (source ['Czock_2022_table_1:row9:col20'])
-- implicit units: 'AUC (h·ng/mL per mg)' — the LLM proposed 'h·ng/mL/mg', whose dimension does not fit Q88; left unset
-- implicit units: 'Cmax (ng/mL per mg)' — the LLM proposed 'ng/mL/mg', whose dimension does not fit Q32; left unset
+- unit_dimension_unknown: 'ng/mL per mg' (Ctrough)
+- dropped unlinked row (NIL): 'UR (%)' — extend the ontology if this is a real PK parameter (source ['Czock_2022_table_1:row9:col1', 'Czock_2022_table_1:row9:col3'])
 - apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=roxadustat
 - held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
 - status held at route_to_review — not promoted
-- population split: 'healthy, fed' subgroup of Czock_2022 (paper reports 8 populations: eskd, healthy, healthy, fasting, healthy, fed, healthy, sca, liver cirrhosis cp b, parameter value, severe renal impairment)
-- gap-filled Q76 (V/F) from Czock_2022's review values (primary lacked it)
+- population split: 'healthy' subgroup of Czock_2022 (paper reports 5 populations: eskd, healthy, liver cirrhosis cp b, parameter value, severe renal impairment)
 - skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
 - skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
 
@@ -178,19 +177,19 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 6 | not captured | not captured | not captured |
+| C0_has_structural_params | pass | not captured | 7 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
-| C1_half_life_beta | pass | 11.8 | 13.792 | 1.1688 | 0.25 | reported t½β |
-| C5_dimension_Q27 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Czock_2022_table_1:row6:col14', 'Czock_2022_table_1:row6:col15', 'Czock_2022_table_1:row6:col16', 'Czock_2022_table_1:row6:col20'] |
-| C5_dimension_Q57 | pass | [time] | not captured | not captured | not captured | ['Czock_2022_table_1:row8:col7', 'Czock_2022_table_1:row8:col14', 'Czock_2022_table_1:row8:col15', 'Czock_2022_table_1:row8:col16', 'Czock_2022_table_1:row8:col20'] |
-| C5_dimension_Q76 | pass | [length] ** 3 | not captured | not captured | not captured | ['Czock_2022:review'] |
-| C5_unit_missing_Q32 | fail | [mass] / [length] ** 3 | ng/mL per mg | not captured | not captured | ['Czock_2022_table_1:row3:col14', 'Czock_2022_table_1:row3:col15', 'Czock_2022_table_1:row3:col16', 'Czock_2022_table_1:row3:col20'] |
-| C5_unit_missing_Q88 | fail | [mass] * [time] / [length] ** 3 | h·ng/mL per mg | not captured | not captured | ['Czock_2022_table_1:row2:col14', 'Czock_2022_table_1:row2:col15', 'Czock_2022_table_1:row2:col16', 'Czock_2022_table_1:row2:col20'] |
+| C5_dimension_Q27 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Czock_2022_table_1:row6:col3', 'Czock_2022_table_1:row6:col15', 'Czock_2022_table_1:row6:col16', 'Czock_2022_table_1:row6:col21', 'Czock_2022_table_1:row6:col23'] |
+| C5_dimension_Q57 | pass | [time] | not captured | not captured | not captured | ['Czock_2022_table_1:row8:col3', 'Czock_2022_table_1:row8:col7', 'Czock_2022_table_1:row8:col11', 'Czock_2022_table_1:row8:col12', 'Czock_2022_table_1:row8:col15', 'Czock_2022_table_1:row8:col16', 'Czock_2022_table_1:row8:col21', 'Czock_2022_table_1:row8:col23'] |
+| C5_dimension_Q76 | pass | [length] ** 3 | not captured | not captured | not captured | ['Czock_2022_table_1:row7:col3', 'Czock_2022_table_1:row7:col23'] |
+| C5_unit_missing_Q32 | fail | [mass] / [length] ** 3 | ng/mL per mg | not captured | not captured | ['Czock_2022_table_1:row3:col1', 'Czock_2022_table_1:row3:col3', 'Czock_2022_table_1:row3:col11', 'Czock_2022_table_1:row3:col12', 'Czock_2022_table_1:row3:col15', 'Czock_2022_table_1:row3:col16', 'Czock_2022_table_1:row3:col21', 'Czock_2022_table_1:row3:col23'] |
+| C5_unit_missing_Q37 | fail | [mass] / [length] ** 3 | ng/mL per mg | not captured | not captured | ['Czock_2022_table_1:row4:col11'] |
+| C5_unit_missing_Q88 | fail | [mass] * [time] / [length] ** 3 | h·ng/mL per mg | not captured | not captured | ['Czock_2022_table_1:row2:col1', 'Czock_2022_table_1:row2:col3', 'Czock_2022_table_1:row2:col11', 'Czock_2022_table_1:row2:col12', 'Czock_2022_table_1:row2:col15', 'Czock_2022_table_1:row2:col16', 'Czock_2022_table_1:row2:col21', 'Czock_2022_table_1:row2:col23'] |
 | C7_apparent_coherence | pass | not captured | not captured | not captured | not captured | not captured |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
-| C9_phys_window_Q27 | pass | clearance within physiological range | 1.96 L/h | not captured | not captured | ['Czock_2022_table_1:row6:col14', 'Czock_2022_table_1:row6:col15', 'Czock_2022_table_1:row6:col16', 'Czock_2022_table_1:row6:col20'] |
-| C9_phys_window_Q76 | pass | volume within physiological range | 39 L | not captured | not captured | ['Czock_2022:review'] |
+| C9_phys_window_Q27 | pass | clearance within physiological range | 2.62 L/h | not captured | not captured | ['Czock_2022_table_1:row6:col3', 'Czock_2022_table_1:row6:col15', 'Czock_2022_table_1:row6:col16', 'Czock_2022_table_1:row6:col21', 'Czock_2022_table_1:row6:col23'] |
+| C9_phys_window_Q76 | pass | volume within physiological range | 57 L | not captured | not captured | ['Czock_2022_table_1:row7:col3', 'Czock_2022_table_1:row7:col23'] |
 
 **Reviewer per-scenario checks:**
 
@@ -257,4 +256,4 @@ _No web simulator for this record: its structure has no shared WebAssembly templ
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-05 21:36 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 18:36 UTC</sub>

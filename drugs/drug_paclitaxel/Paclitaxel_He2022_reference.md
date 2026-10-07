@@ -1,10 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01C&quot;,&quot;href&quot;:&quot;atc/L01C.md&quot;},{&quot;label&quot;:&quot;paclitaxel&quot;,&quot;href&quot;:&quot;drugs/drug_paclitaxel/&quot;},{&quot;label&quot;:&quot;He_2022 \u00b7 reference&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Paclitaxel_De2026_reference&quot;,&quot;label&quot;:&quot;De_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_paclitaxel/Paclitaxel_De2026_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # paclitaxel — `Paclitaxel_He2022_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.944). The first reading is what the record holds.">cross-check: partial</span>
+> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.944). The first reading is what the record holds.">cross-check: partial</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -12,7 +13,7 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
-**Model:** No model was generated from this record.
+**Model:** A model was built but held back: a core parameter had no value, so it is not published or simulated.
 
 ### Reviewer guidance
 
@@ -24,29 +25,30 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the val
 
 <sub>reviewed by rule template (no LLM)</sub>
 
+> ⚠️ **STALE** — review status `needs_review` (reviewed 2026-10-05 09:29:09.590230+00:00) predates the upstream re-run (2026-10-07 18:21:39.478830+00:00). Current validate status: `extracted`.
+
 ## Citation
 He J et al., Population pharmacokinetics for oral pa…, CPT: pharmacometrics & syst… (2022)
   ·  DOI: [10.1002/psp4.12799](https://doi.org/10.1002/psp4.12799)
 
 ## Model component
-<dbs-pgx drug="paclitaxel" model-id="Paclitaxel_He2022_reference" status="needs_review" stale="false" population="patients with advanced/metastatic solid tumors" measured-compound="paclitaxel" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<dbs-pgx drug="paclitaxel" model-id="Paclitaxel_He2022_reference" status="extracted" stale="true" population="adults with advanced/metastatic solid tumors" measured-compound="paclitaxel" parameterization="mechanistic" topology="1C"></dbs-pgx>
 
-**Model structure:** 1-compartment; no model was built for this record.  
-**Parameters:** 6 extracted.
+**Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
+**Parameters:** 6 extracted, plus 1 covariate effect.
 
 **Parameterization:** mechanistic.
 
 ## Parameters
-> ⚠️ This record is not accepted (current status `needs_review`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
-
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| CL (L/h)a | `Q22` · CL | 34.4 | not captured | not captured | not captured | 4.2 | boundary (0.8) | He_2022_table_p7_1:row1:col1, He_2022_table_p7_1:row1:col2, He_2022_table_p7_1:row1:col3 | — | 29.8 (25.8% RSE) |
-| V2 (L) | `Q64` · V2 | 176 | L | 0.176 | [l] | 15.9 | exact (1.0) | He_2022_table_p7_1:row2:col1, He_2022_table_p7_1:row2:col2, He_2022_table_p7_1:row2:col3 | linear_fractional on race=0.696 | 13.0 (27.0% RSE) |
-| Q (L/h) | `Q30` · Q | 48.0 | L/h | 1.3333333333333333e-05 | [l] / [h] | 5.1 | exact (1.0) | He_2022_table_p7_1:row3:col1, He_2022_table_p7_1:row3:col2, He_2022_table_p7_1:row3:col3 | — | not captured |
-| V3 (L) | `Q77` · V3 | 855 | L | 0.855 | [l] | 4.9 | exact (1.0) | He_2022_table_p7_1:row4:col1, He_2022_table_p7_1:row4:col2 | — | not captured |
-| KA (1/h) | `Q49` · kabs | 0.724 | not captured | not captured | not captured | 5.2 | exact (1.0) | He_2022_table_p7_1:row5:col1, He_2022_table_p7_1:row5:col2 | — | not captured |
-| Formulation on F1 (proportional) | `Q87` · Frel | 0.895 | proportional | not captured | [proportional] | 28.5 | llm (0.5) | He_2022_table_p7_1:row10:col1, He_2022_table_p7_1:row10:col2 | — | not captured |
+| CL (L/h) a | `Q22` · CL | 33.7 | L/h | 9.361111111111111e-06 | L/h | 4.2 | llm_confirmed (0.6) | psp412799-tbl-0002:row2:col1, psp412799-tbl-0002:row2:col2 | — | not captured |
+| V2 (L) | `Q64` · V2 | 50.7 | L | 0.0507 | [l] | 15.9 | exact (1.0) | psp412799-tbl-0002:row3:col1, psp412799-tbl-0002:row3:col2 | — | not captured |
+| Q (L/h) | `Q30` · Q | 40.6 | L/h | 1.127777777777778e-05 | [l] / [h] | 5.1 | exact (1.0) | psp412799-tbl-0002:row4:col1, psp412799-tbl-0002:row4:col2 | — | not captured |
+| V3 (L) | `Q77` · V3 | 855 | L | 0.855 | [l] | 4.9 | exact (1.0) | psp412799-tbl-0002:row5:col1, psp412799-tbl-0002:row5:col2 | — | not captured |
+| KA (1/h) | `Q49` · kabs | 0.724 | 1/h | 0.0002011111111111111 | 1/h | 5.2 | exact (1.0) | psp412799-tbl-0002:row6:col1, psp412799-tbl-0002:row6:col2 | — | not captured |
+| F1 | `Q40` · Fab | 0.119 | not captured | not captured | not captured | not captured | exact (1.0) | psp412799-tbl-0002:row8:col1 | — | not captured |
+| theta_q900_formulation | `Q900` · theta_q900_formulation | 0.895 | not captured | not captured | not captured | 28.5 | not captured (not captured) | psp412799-tbl-0002:row11:col1, psp412799-tbl-0002:row11:col2 | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -56,26 +58,23 @@ He J et al., Population pharmacokinetics for oral pa…, CPT: pharmacometrics & 
 ## Departures & gaps
 
 **Interpretation flags:**
-- unit_dimension_unknown: 'proportional' (Frel)
-- dropped unlinked row (NIL): 'Log additive' — extend the ontology if this is a real PK parameter (source ['He_2022_table_p7_1:row16:col1', 'He_2022_table_p7_1:row16:col2'])
-- dropped value-less row: 'OFV'
-- dropped unlinked row (NIL): 'Condition number' — extend the ontology if this is a real PK parameter (source ['He_2022_table_p7_1:row18:col3'])
-- dropped value-less row: 'CL'
-- dropped value-less row: 'F1'
-- dropped value-less row: 'GI'
-- dropped value-less row: 'KA'
-- dropped value-less row: 'popPK'
-- dropped value-less row: 'Q'
-- dropped value-less row: 'V2'
-- dropped value-less row: 'V3'
+- table section iiv: 'ETA CL (CV%)' routed out of structural estimates ('Interindividual variability')
+- table section iiv: 'ETA V2 (CV%)' routed out of structural estimates ('Interindividual variability')
+- table section iiv: 'ETA Q (CV%)' routed out of structural estimates ('Interindividual variability')
+- table section residual_error: 'Log additive' routed out of structural estimates ('Residual variability')
+- table section residual_error: 'OFV' routed out of structural estimates ('Residual variability')
+- table section residual_error: 'Condition number' routed out of structural estimates ('Residual variability')
+- dropped unlinked row (NIL): 'ALAG1 (h)' — extend the ontology if this is a real PK parameter (source ['psp412799-tbl-0002:row7:col1'])
+- dropped unlinked row (NIL): 'Race on V2 (proportional)' — extend the ontology if this is a real PK parameter (source ['psp412799-tbl-0002:row10:col1', 'psp412799-tbl-0002:row10:col2'])
+- covariate effect for Q900 has no base parameter row (kept as unattached equation-variable)
+- implicit units: 'CL (L/h) a' → L/h (from the paper text: "TABLE 2 caption states 'CL, central clearance' (implied context of clearance), and the text describes the parameter as '")
+- implicit units: 'KA (1/h)' → 1/h (from the popPK convention: 'Absorption rate constants (KA) are first-order rate constants. The standard unit in population PK is 1/h (or h^-1). A va')
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=paclitaxel
-- held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
-- status held at route_to_review — not promoted
+- structure disagreement: deterministic 1C vs LLM 2C — review compartment count
+- skipped review gap-fill of TLAG: primary's parameterization (rate-constant / ka-only) does not use it
 
 **Extraction notes:**
-- no TEI final-model table id; trying text-pointer table recovery
-- unparsed cell He_2022_table_p7_1:row6:col1 = '0.215 (fixed)'
-- unparsed cell He_2022_table_p7_1:row7:col1 = '0.119 (fixed)'
+- LLM selected parameter table(s) 2
 
 ## Validation
 
@@ -107,14 +106,15 @@ first reading `qwen3.6:27b-q8_0` — the numbers on this page are its, whatever 
 | C0_has_structural_params | pass | not captured | 6 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
-| C5_dimension_Q30 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['He_2022_table_p7_1:row3:col1', 'He_2022_table_p7_1:row3:col2', 'He_2022_table_p7_1:row3:col3'] |
-| C5_dimension_Q64 | pass | [length] ** 3 | not captured | not captured | not captured | ['He_2022_table_p7_1:row2:col1', 'He_2022_table_p7_1:row2:col2', 'He_2022_table_p7_1:row2:col3'] |
-| C5_dimension_Q77 | pass | [length] ** 3 | not captured | not captured | not captured | ['He_2022_table_p7_1:row4:col1', 'He_2022_table_p7_1:row4:col2'] |
-| C5_unit_missing_Q22 | fail | [length] ** 3 / [time] | not captured | not captured | not captured | ['He_2022_table_p7_1:row1:col1', 'He_2022_table_p7_1:row1:col2', 'He_2022_table_p7_1:row1:col3'] |
-| C5_unit_missing_Q49 | fail | 1 / [time] | not captured | not captured | not captured | ['He_2022_table_p7_1:row5:col1', 'He_2022_table_p7_1:row5:col2'] |
-| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 34.4 | not captured | not captured | ['He_2022_table_p7_1:row1:col1', 'He_2022_table_p7_1:row1:col2', 'He_2022_table_p7_1:row1:col3'] |
+| C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['psp412799-tbl-0002:row2:col1', 'psp412799-tbl-0002:row2:col2'] |
+| C5_dimension_Q30 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['psp412799-tbl-0002:row4:col1', 'psp412799-tbl-0002:row4:col2'] |
+| C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['psp412799-tbl-0002:row6:col1', 'psp412799-tbl-0002:row6:col2'] |
+| C5_dimension_Q64 | pass | [length] ** 3 | not captured | not captured | not captured | ['psp412799-tbl-0002:row3:col1', 'psp412799-tbl-0002:row3:col2'] |
+| C5_dimension_Q77 | pass | [length] ** 3 | not captured | not captured | not captured | ['psp412799-tbl-0002:row5:col1', 'psp412799-tbl-0002:row5:col2'] |
+| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 33.7 | not captured | not captured | ['psp412799-tbl-0002:row2:col1', 'psp412799-tbl-0002:row2:col2'] |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
-| C9_phys_window_Q64 | pass | volume within physiological range | 176 L | not captured | not captured | ['He_2022_table_p7_1:row2:col1', 'He_2022_table_p7_1:row2:col2', 'He_2022_table_p7_1:row2:col3'] |
+| C9_phys_window_Q22 | pass | clearance within physiological range | 33.7 L/h | not captured | not captured | ['psp412799-tbl-0002:row2:col1', 'psp412799-tbl-0002:row2:col2'] |
+| C9_phys_window_Q64 | pass | volume within physiological range | 50.7 L | not captured | not captured | ['psp412799-tbl-0002:row3:col1', 'psp412799-tbl-0002:row3:col2'] |
 
 <details class="legend">
 <summary>Check legend — what each column means</summary>
@@ -149,4 +149,4 @@ _No web simulator for this record: its structure has no shared WebAssembly templ
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-07-19 02:07 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 18:21 UTC</sub>

@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;J05A&quot;,&quot;href&quot;:&quot;atc/J05A.md&quot;},{&quot;label&quot;:&quot;remdesivir&quot;,&quot;href&quot;:&quot;drugs/drug_remdesivir/&quot;},{&quot;label&quot;:&quot;Leegwater_2022 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Remdesivir_Morrisette2020_reference&quot;,&quot;label&quot;:&quot;Morrisette_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_remdesivir/Remdesivir_Morrisette2020_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Remdesivir_Humeniuk2021_reference&quot;,&quot;label&quot;:&quot;Humeniuk_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_remdesivir/Remdesivir_Humeniuk2021_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Remdesivir_Morrisette2020_reference&quot;,&quot;label&quot;:&quot;Morrisette_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_remdesivir/Remdesivir_Morrisette2020_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # remdesivir — `Remdesivir_Leegwater2022_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.143). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.143). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -13,7 +13,7 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
-**Model:** No model was generated from this record.
+**Model:** A model was built but held back: a core parameter had no value, so it is not published or simulated.
 
 ### Reviewer guidance
 
@@ -25,28 +25,28 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 
 <sub>reviewed by rule template (no LLM)</sub>
 
+> ⚠️ **STALE** — review status `needs_review` (reviewed 2026-10-05 09:31:27.554897+00:00) predates the upstream re-run (2026-10-07 16:33:23.023101+00:00). Current validate status: `extracted`.
+
 ## Citation
 Leegwater E et al., Population Pharmacokinetics of Remdesiv…, Antimicrobial agents and ch… (2022)
   ·  DOI: [10.1128/aac.00254-22](https://doi.org/10.1128/aac.00254-22)
 
 ## Model component
-<dbs-pgx drug="remdesivir" model-id="Remdesivir_Leegwater2022_reference" status="needs_review" stale="false" population="hospitalized COVID-19 patients" measured-compound="remdesivir" parameterization="mechanistic" topology="parent_metabolite"></dbs-pgx>
+<dbs-pgx drug="remdesivir" model-id="Remdesivir_Leegwater2022_reference" status="extracted" stale="true" population="hospitalized COVID-19 patients with hypoxemia" measured-compound="remdesivir" parameterization="mechanistic" topology="parent_metabolite"></dbs-pgx>
 
-**Model structure:** parent + metabolite; no model was built for this record.  
+**Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameters:** 4 extracted, plus 1 covariate effect.
 
 **Parameterization:** mechanistic.
 
 ## Parameters
-> ⚠️ This record is not accepted (current status `needs_review`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
-
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| Metabolic CL (L/h) | `Q22` · CL | 152 | L/h | 4.222222222222222e-05 | [l] / [h] | not captured | llm_confirmed (0.6) | T2:row4:col1, T2:row4:col2, T2:row4:col4, T2:row4:col5 | — | 38.9 (None% RSE) |
+| Metabolic CL (L/h) | `Q370` · CLfm | 152 | L/h | 4.222222222222222e-05 | [l] / [h] | not captured | exact (1.0) | T2:row4:col1, T2:row4:col2, T2:row4:col4, T2:row4:col5 | — | not captured |
 | Renal CL (L/h) | `Q26` · CLR | 20.7 | L/h | 5.75e-06 | [l] / [h] | not captured | llm_corrected (0.6) | T2:row5:col1 | — | not captured |
 | V (L) | `Q61` · V | 834 | L | 0.834 | [l] | not captured | exact (1.0) | T2:row6:col1, T2:row6:col2, T2:row6:col4, T2:row6:col5, T2:row11:col1, T2:row11:col2, T2:row11:col4, T2:row11:col5 | — | not captured |
-| CL (L/h) | `Q22` · CL | 20.7 | L/h | 5.75e-06 | [l] / [h] | not captured | exact (1.0) | T2:row9:col1, T2:row9:col2, T2:row9:col4, T2:row9:col5 | — | not captured |
-| theta_cl_egfr | `Q900` · theta_cl_egfr | 0.31 | not captured | not captured | not captured | not captured | not captured (not captured) | T2:row10:col1, T2:row10:col2, T2:row10:col4, T2:row10:col5 | — | not captured |
+| CL (L/h) | `Q22` · CL | 20.7 | L/h | 5.75e-06 | [l] / [h] | not captured | exact (1.0) | T2:row9:col1, T2:row9:col2, T2:row9:col4, T2:row9:col5 | — | 38.9 (None% RSE) |
+| egfr_on_cl | `Q900` · egfr_on_cl | 0.31 | not captured | not captured | not captured | not captured | not captured (not captured) | T2:row10:col1, T2:row10:col2, T2:row10:col4, T2:row10:col5 | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -62,9 +62,10 @@ Leegwater E et al., Population Pharmacokinetics of Remdesiv…, Antimicrobial ag
 - table section iiv: 'GS-441524 V' routed out of structural estimates ('Interindividual variability (%)')
 - table section residual_error: 'Remdesivir' routed out of structural estimates ('Residual variability')
 - table section residual_error: 'GS-441524' routed out of structural estimates ('Residual variability')
+- covariate level 'eGFR on CL' → Q900:egfr_on_cl = 0.31 (linear_fractional on Q370)
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=remdesivir
 - template fit: PK_3M_9C — formed from central; parent 1, metabolites [0]
-- row roles (LLM): model_class=compartmental; 11/11 row label(s) assigned, 17 linked by role; re-tagged parent→GS-441524 ×22
+- row roles (LLM): model_class=compartmental; 11/11 row label(s) assigned, 17 linked by role; re-tagged parent→GS-441524 ×26
 - skipped review gap-fill of V2: primary is PARENT_METABOLITE (peripheral family needs ≥2C)
 - skipped review gap-fill of Q: primary is PARENT_METABOLITE (peripheral family needs ≥2C)
 
@@ -113,13 +114,12 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
 | C2_reference | pass | not captured | not captured | not captured | not captured | not captured |
-| C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['T2:row4:col1', 'T2:row4:col2', 'T2:row4:col4', 'T2:row4:col5'] |
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['T2:row9:col1', 'T2:row9:col2', 'T2:row9:col4', 'T2:row9:col5'] |
 | C5_dimension_Q26 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['T2:row5:col1'] |
+| C5_dimension_Q370 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['T2:row4:col1', 'T2:row4:col2', 'T2:row4:col4', 'T2:row4:col5'] |
 | C5_dimension_Q61 | pass | [length] ** 3 | not captured | not captured | not captured | ['T2:row6:col1', 'T2:row6:col2', 'T2:row6:col4', 'T2:row6:col5', 'T2:row11:col1', 'T2:row11:col2', 'T2:row11:col4', 'T2:row11:col5'] |
-| C6_cl_magnitude | fail | &lt;= 90.0 L/h | 152.0 | not captured | not captured | ['T2:row4:col1', 'T2:row4:col2', 'T2:row4:col4', 'T2:row4:col5'] |
+| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 20.7 | not captured | not captured | ['T2:row9:col1', 'T2:row9:col2', 'T2:row9:col4', 'T2:row9:col5'] |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
-| C9_phys_window_Q22 | pass | clearance within physiological range | 152 L/h | not captured | not captured | ['T2:row4:col1', 'T2:row4:col2', 'T2:row4:col4', 'T2:row4:col5'] |
 | C9_phys_window_Q22 | pass | clearance within physiological range | 20.7 L/h | not captured | not captured | ['T2:row9:col1', 'T2:row9:col2', 'T2:row9:col4', 'T2:row9:col5'] |
 | C9_phys_window_Q61 | pass | volume within physiological range | 834 L | not captured | not captured | ['T2:row6:col1', 'T2:row6:col2', 'T2:row6:col4', 'T2:row6:col5', 'T2:row11:col1', 'T2:row11:col2', 'T2:row11:col4', 'T2:row11:col5'] |
 
@@ -141,12 +141,12 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
 <tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">not generated yet</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_remdesivir/Remdesivir_Leegwater2022_reference/Remdesivir_Leegwater2022_reference_matlab.zip" download>Remdesivir_Leegwater2022_reference_matlab.zip</a> <span class="pk-size">(3.3 kB)</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_remdesivir/Remdesivir_Leegwater2022_reference/Remdesivir_Leegwater2022_reference_matlab_simbio.zip" download>Remdesivir_Leegwater2022_reference_matlab_simbio.zip</a> <span class="pk-size">(2.7 kB)</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_remdesivir/Remdesivir_Leegwater2022_reference/Remdesivir_Leegwater2022_reference_sbml.zip" download>Remdesivir_Leegwater2022_reference_sbml.zip</a> <span class="pk-size">(2.4 kB)</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_remdesivir/Remdesivir_Leegwater2022_reference/Remdesivir_Leegwater2022_reference_cellml.zip" download>Remdesivir_Leegwater2022_reference_cellml.zip</a> <span class="pk-size">(2.9 kB)</span></td></tr>
 </tbody></table>
-<p>No bundles have been generated for this record yet. When the engineer emits them they appear here automatically — this page reports what is on disk and generates nothing itself.</p>
+<p>Each archive holds the model source, a script that simulates it against the appropriate library, and a README describing both and how to run them.</p>
 </div></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
@@ -156,4 +156,4 @@ _No web simulator for this record: its structure has no shared WebAssembly templ
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-03 10:48 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 16:33 UTC</sub>

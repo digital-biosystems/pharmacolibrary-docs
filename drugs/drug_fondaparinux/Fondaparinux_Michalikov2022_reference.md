@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;B01A&quot;,&quot;href&quot;:&quot;atc/B01A.md&quot;},{&quot;label&quot;:&quot;fondaparinux&quot;,&quot;href&quot;:&quot;drugs/drug_fondaparinux/&quot;},{&quot;label&quot;:&quot;Michali\u010dkov\u00e1_2022 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Fondaparinux_Michalikov2022_reference&quot;,&quot;label&quot;:&quot;Michali\u010dkov\u00e1_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_fondaparinux/Fondaparinux_Michalikov2022_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Fondaparinux_Michalikov2022_reference&quot;,&quot;label&quot;:&quot;Michali\u010dkov\u00e1_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_fondaparinux/Fondaparinux_Michalikov2022_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # fondaparinux — `Fondaparinux_Michalikov2022_reference`
 
-> ## <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.444). The first reading is what the record holds.">cross-check: partial</span>
+> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.444). The first reading is what the record holds.">cross-check: partial</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -25,12 +25,14 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the val
 
 <sub>reviewed by rule template (no LLM)</sub>
 
+> ⚠️ **STALE** — review status `curated_candidate` (reviewed 2026-10-05 16:25:12.195608+00:00) predates the upstream re-run (2026-10-07 18:09:03.894053+00:00). Current validate status: `extracted`.
+
 ## Citation
 Michaličková D et al., Population pharmacokinetics-pharmacodyn…, European journal of clinica… (2022)
   ·  DOI: [10.1007/s00228-021-03201-1](https://doi.org/10.1007/s00228-021-03201-1)
 
 ## Model component
-<dbs-pgx drug="fondaparinux" model-id="Fondaparinux_Michalikov2022_reference" status="curated_candidate" stale="false" population="dialysis-dependent chronic kidney disease patients" measured-compound="fondaparinux" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<dbs-pgx drug="fondaparinux" model-id="Fondaparinux_Michalikov2022_reference" status="extracted" stale="true" population="dialysis-dependent chronic kidney disease patients" measured-compound="fondaparinux" parameterization="mechanistic" topology="1C"></dbs-pgx>
 
 **Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameters:** 2 extracted.
@@ -40,7 +42,7 @@ Michaličková D et al., Population pharmacokinetics-pharmacodyn…, European jo
 ## Parameters
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| clearance (CL) | `Q22` · CL | 0.05289 | L/h | 1.4691666666666668e-08 | [l] / [h] | not captured | exact (1.0) | Michaličková_2022:abstract | — | not captured |
+| clearance (CL) | `Q22` · CL | 0.05289 | L/h | 1.4691666666666668e-08 | [l] / [h] | not captured | exact (1.0) | Michaličková_2022:abstract, Michaličková_2022:abstract | — | not captured |
 | volume of distribution (Vd) | `Q61` · V | 5.55 | L | 0.00555 | [l] | not captured | exact (1.0) | Michaličková_2022:abstract | — | not captured |
 
 <details class="legend">
@@ -51,8 +53,6 @@ Michaličková D et al., Population pharmacokinetics-pharmacodyn…, European jo
 ## Departures & gaps
 
 **Interpretation flags:**
-- unit_dimension_unknown: 'times' (CL)
-- dropped duplicate Q22 ('CL of fondaparinux', value 2.26) — already have one for this compound
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=fondaparinux
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
 - skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
@@ -95,11 +95,11 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 | C0_has_structural_params | pass | not captured | 2 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
-| C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Michaličková_2022:abstract'] |
+| C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Michaličková_2022:abstract', 'Michaličková_2022:abstract'] |
 | C5_dimension_Q61 | pass | [length] ** 3 | not captured | not captured | not captured | ['Michaličková_2022:abstract'] |
-| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 0.05289 | not captured | not captured | ['Michaličková_2022:abstract'] |
+| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 0.05289 | not captured | not captured | ['Michaličková_2022:abstract', 'Michaličková_2022:abstract'] |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
-| C9_phys_window_Q22 | pass | clearance within physiological range | 0.0529 L/h | not captured | not captured | ['Michaličková_2022:abstract'] |
+| C9_phys_window_Q22 | pass | clearance within physiological range | 0.0529 L/h | not captured | not captured | ['Michaličková_2022:abstract', 'Michaličková_2022:abstract'] |
 | C9_phys_window_Q61 | pass | volume within physiological range | 5.55 L | not captured | not captured | ['Michaličková_2022:abstract'] |
 
 **Reviewer per-scenario checks:**
@@ -132,7 +132,7 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_fondaparinux/Fondaparinux_Michalikov2022_reference/Fondaparinux_Michalikov2022_reference_modelica.zip" download>Fondaparinux_Michalikov2022_reference_modelica.zip</a> <span class="pk-size">(4.0 kB)</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_fondaparinux/Fondaparinux_Michalikov2022_reference/Fondaparinux_Michalikov2022_reference_modelica.zip" download>Fondaparinux_Michalikov2022_reference_modelica.zip</a> <span class="pk-size">(3.9 kB)</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_fondaparinux/Fondaparinux_Michalikov2022_reference/Fondaparinux_Michalikov2022_reference_fmi.zip" download>Fondaparinux_Michalikov2022_reference_fmi.zip</a> <span class="pk-size">(4.2 kB)</span><br><a href="models/fmu/PK_1C.fmu" download>PK_1C.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_fondaparinux/Fondaparinux_Michalikov2022_reference/Fondaparinux_Michalikov2022_reference_matlab.zip" download>Fondaparinux_Michalikov2022_reference_matlab.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_fondaparinux/Fondaparinux_Michalikov2022_reference/Fondaparinux_Michalikov2022_reference_matlab_simbio.zip" download>Fondaparinux_Michalikov2022_reference_matlab_simbio.zip</a> <span class="pk-size">(2.7 kB)</span></td></tr>
@@ -154,4 +154,4 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-05 15:55 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 18:09 UTC</sub>

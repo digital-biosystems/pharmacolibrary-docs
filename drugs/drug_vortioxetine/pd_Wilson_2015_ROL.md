@@ -1,8 +1,7 @@
-<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N06A&quot;,&quot;href&quot;:&quot;atc/N06A.md&quot;},{&quot;label&quot;:&quot;vortioxetine&quot;,&quot;href&quot;:&quot;drugs/drug_vortioxetine/&quot;},{&quot;label&quot;:&quot;Wilson_2015 \u00b7 PD REM onset latency (change from baseline)&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Vortioxetine_Areberg2014v2_reference&quot;,&quot;label&quot;:&quot;Areberg_2014_2_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_vortioxetine/Vortioxetine_Areberg2014v2_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N06A&quot;,&quot;href&quot;:&quot;atc/N06A.md&quot;},{&quot;label&quot;:&quot;vortioxetine&quot;,&quot;href&quot;:&quot;drugs/drug_vortioxetine/&quot;},{&quot;label&quot;:&quot;Wilson_2015 \u00b7 PD REM onset latency&quot;}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# REM onset latency (change from baseline) — PD  <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.667). The first reading is what the record holds.">cross-check: disputed</span>
+# REM onset latency — PD  <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.667). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="pk-legend"><summary>What the PGx badges mean — evidence, and whether a model runs</summary><table><tbody><tr><td><span class="pk-badge pk-badge--green">quantitative</span></td><td>the paper gives the effect of each phenotype (or genotype) on a named model parameter — a θ per category.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">qualitative</span></td><td>the paper links the gene to the drug but states no effect size on a model parameter, so it changes no model.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">guideline estimate</span></td><td>the effect comes from a CPIC / DPWG dosing guideline, not from this paper's numbers.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">safety allele</span></td><td>a risk allele for an adverse reaction (an HLA type, G6PD deficiency …): it changes no PK/PD parameter.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>the extraction is incomplete or inconsistent.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted.</td></tr><tr><td><span class="pk-badge pk-badge--green">▶ simulatable</span></td><td>the paper's popPK model runs per phenotype in the browser (Simulation tab); its PGx Modelica model is under Models.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">model only</span></td><td>a PGx Modelica model exists but has no in-browser simulator.</td></tr></tbody></table></details>
 
@@ -14,11 +13,11 @@
 
 ## What this record describes
 
-**As extracted:** Vortioxetine (concentrations from the PK model of Areberg_2014_2) drives REM onset latency (change from baseline) (in min): direct sigmoid Emax (Hill) effect.
+**As extracted:** Vortioxetine (concentrations from the PK model of Areberg_2014_2) drives REM onset latency (in min): direct sigmoid Emax (Hill) effect.
 
 **Model:** A model was generated (see the **Models** tab); it has no in-browser simulator.
 
-> Vortioxetine plasma exposure during sleep (Cav,sleep, from the cited population PK model) was related to REM onset latency (ROL) in an Emax-type inhibitory exposure–response model with an additive effect form; the paper does not state a mechanistic link beyond increased synaptic 5-HT/SERT occupancy. The record lists k values of 0.48 and 27 min/ng/mL and baseline E0 values of 1.6 and 215 min, but no IC50, EC50, Emax, kin, kout or ke0 is given.
+> Vortioxetine plasma concentration (Cav,sleep, ng/mL, from a prior population PK model) drives the change from baseline in REM onset latency (ΔROL, min) via a direct sigmoid Emax model: E0 = 2.4 min, Emax = 250 min, EC50 = 21 ng/mL, γ = 2.5; the paper does not state an indirect production/elimination mechanism or an effect compartment.
 >
 > <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
 
@@ -26,7 +25,7 @@
 - **model family:** `sigmoid_emax`
 - **driver:** `cited_pk`
 - **tier:** population
-- **effect:** stimulation/proportional
+- **effect:** stimulation/additive
 
 ## Citation
 Wilson S et al., Differentiated effects of the multimoda…, Journal of psychopharmacolo… (2015)

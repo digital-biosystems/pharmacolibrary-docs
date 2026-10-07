@@ -1,0 +1,37 @@
+{
+ "dose_source": "paper",
+ "model_id": "Rivaroxaban_Ren2026_chinese_pe",
+ "molar_masses": {
+  "central.C": 0.43588099999999996
+ },
+ "note": "Values for the shared PK_1C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "paper_doses_kind": "range",
+ "paper_doses_mg": [
+  5.0,
+  20.0
+ ],
+ "parameters": {
+  "Cl": 1.7027777777777778e-06,
+  "F": 1.0,
+  "MM": 0.43588099999999996,
+  "Tlag": 0.0,
+  "VdPerKg": 0.0007571428571428572,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 5e-06,
+  "ka": 0.00034722222222222224,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 7856.513026052105
+ },
+ "reference_peaks": {
+  "central.C": 7.399670984505792e-05
+ },
+ "stop_time": 118800.0,
+ "template": "PK_1C_enteral",
+ "template_fmu": "PK_1C_enteral.fmu"
+}

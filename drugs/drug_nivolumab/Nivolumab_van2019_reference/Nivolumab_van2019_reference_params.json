@@ -1,0 +1,26 @@
+{
+ "dose_source": "WHO ATC DDD 17.1 mg parenteral (L01FF01)",
+ "model_id": "Nivolumab_van2019_reference",
+ "note": "Values for the shared PK_1C.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "parameters": {
+  "Cl": 2.194444444444445e-09,
+  "F": 1.0,
+  "VdPerKg": 0.00010671428571428572,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 1.7100000000000002e-05,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 660.0000000662042
+ },
+ "reference_peaks": {
+  "central.C": 0.0022889548950757533
+ },
+ "stop_time": 12096000.0,
+ "template": "PK_1C",
+ "template_fmu": "PK_1C.fmu"
+}

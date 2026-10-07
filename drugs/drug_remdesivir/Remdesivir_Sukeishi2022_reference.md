@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;J05A&quot;,&quot;href&quot;:&quot;atc/J05A.md&quot;},{&quot;label&quot;:&quot;remdesivir&quot;,&quot;href&quot;:&quot;drugs/drug_remdesivir/&quot;},{&quot;label&quot;:&quot;Sukeishi_2022 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Remdesivir_Morrisette2020_reference&quot;,&quot;label&quot;:&quot;Morrisette_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_remdesivir/Remdesivir_Morrisette2020_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Remdesivir_Humeniuk2021_reference&quot;,&quot;label&quot;:&quot;Humeniuk_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_remdesivir/Remdesivir_Humeniuk2021_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Remdesivir_Morrisette2020_reference&quot;,&quot;label&quot;:&quot;Morrisette_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_remdesivir/Remdesivir_Morrisette2020_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # remdesivir — `Remdesivir_Sukeishi2022_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.3). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.3). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -25,6 +25,8 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 
 <sub>reviewed by rule template (no LLM)</sub>
 
+> ⚠️ **STALE** — review status `rejected` (reviewed 2026-10-05 09:31:36.023948+00:00) predates the upstream re-run (2026-10-07 16:33:27.619682+00:00). Current validate status: `rejected`.
+
 > **Dose compound ≠ measured compound:** dosed `remdesivir`, measured `GS-441524`.
 
 ## Citation
@@ -32,7 +34,7 @@ Sukeishi A et al., Population pharmacokinetic modeling of…, CPT: pharmacometri
   ·  DOI: [10.1002/psp4.12736](https://doi.org/10.1002/psp4.12736)
 
 ## Model component
-<dbs-pgx drug="remdesivir" model-id="Remdesivir_Sukeishi2022_reference" status="rejected" stale="false" population="Japanese adults with COVID-19 and renal dysfunction" measured-compound="GS-441524" parameterization="apparent" topology="1C"></dbs-pgx>
+<dbs-pgx drug="remdesivir" model-id="Remdesivir_Sukeishi2022_reference" status="rejected" stale="true" population="Japanese COVID-19 patients with renal dysfunction" measured-compound="GS-441524" parameterization="apparent" topology="1C"></dbs-pgx>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.
@@ -42,7 +44,14 @@ Sukeishi A et al., Population pharmacokinetic modeling of…, CPT: pharmacometri
 ## Parameters
 > ⚠️ This record is not accepted (current status `rejected`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
 
-_No resolved parameters._
+| label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
+|---|---|---|---|---|---|---|---|---|---|---|
+| 1485 | `Q900` · equation variable | 1485 | not captured | not captured | not captured | not captured | llm (0.6) | psp412736-tbl-0002:row1:col1, psp412736-tbl-0002:row1:col2 | — | not captured |
+
+<details class="legend">
+<summary>Column legend — what each column means</summary>
+<table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>label (paper)</code></td><td>the row or statistic label exactly as printed in the paper (label_verbatim) — never normalised, so it can be found in the PDF.</td></tr><tr><td><code>Q-code · name</code></td><td>the ontology parameter this label was matched to (Q22 = clearance, Q27 = CL/F, Q49 = ka, Q57 = half-life, …) and its canonical name. The Q-code, not the label, is what scoring and cross-paper merging use.</td></tr><tr><td><code>value</code></td><td>the estimate as reported in the paper.</td></tr><tr><td><code>unit</code></td><td>the unit as printed (unit_verbatim).</td></tr><tr><td><code>value_si</code></td><td>the value converted to the canonical unit. Empty when no conversion was possible — usually an unparseable or missing unit.</td></tr><tr><td><code>unit_canonical</code></td><td>the canonical unit for that Q-code, i.e. what value_si is expressed in.</td></tr><tr><td><code>RSE%</code></td><td>relative standard error of the estimate, when the paper reports one.</td></tr><tr><td><code>link</code></td><td>how the label was matched to the Q-code, with confidence. exact / boundary / fuzzy / tv_prefix / caption_compartment / special_case are deterministic string matches; llm, llm_confirmed, llm_corrected involved the model; review and review_gapfill come from the secondary review tier, the latter filling a parameter the primary extraction missed; boundary_relink is a corrected match.</td></tr><tr><td><code>source</code></td><td>where in the paper the number came from: colN = that column of the located table, other_prose = running text, review = the secondary tier, pgx = a pharmacogenomic record.</td></tr><tr><td><code>covariates</code></td><td>covariate effects attached to this parameter (e.g. weight on CL).</td></tr><tr><td><code>IIV</code></td><td>inter-individual variability reported for this parameter.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>the field is absent from the KB artifact — nothing was recorded. This is NOT the same as zero or empty: the value is unknown, not measured to be nothing.</td></tr><tr><td><code>—</code></td><td>deliberately not shown: the column does not apply to this row.</td></tr><tr><td><code>not verified</code></td><td>the record is not in an accepted state (see the badge and the note above the table); the numbers are shown as extracted, not endorsed.</td></tr></tbody></table>
+</details>
 
 ### Unresolved rows _(no Q-code or no value — not parameters)_
 | label (paper) | Q-code | value | link |
@@ -56,14 +65,12 @@ _No resolved parameters._
 - table section iiv: 'IIV for CL' routed out of structural estimates ('Interindividual variability, CV%')
 - table section iiv: 'IIV for V d' routed out of structural estimates ('Interindividual variability, CV%')
 - table section residual_error: 'Proportional error' routed out of structural estimates ('Residual variability, CV%')
-- dropped unlinked row (NIL): 'OBJ' — extend the ontology if this is a real PK parameter (source ['psp412736-tbl-0002:row0:col4', 'psp412736-tbl-0002:row0:col5'])
-- dropped unlinked row (NIL): '1485' — extend the ontology if this is a real PK parameter (source ['psp412736-tbl-0002:row1:col1', 'psp412736-tbl-0002:row1:col2'])
+- dropped value-less row: 'OBJ'
 - unit_dimension_mismatch: 'CL (L/h) = θ CL × (eGFRnon‐indexed/74.7) θ eGFRnon−idexed,CL' → Q22 (unit '[length] ** 3' vs ontology '[length] ** 3 / [time]') — route to review
 - dropped duplicate Q22 ('θ CL (L/h)', value '11.8') — already have one for this compound
-- dropped unlinked row (NIL): 'θ eGFRnon‐indexed,CL' — extend the ontology if this is a real PK parameter (source ['psp412736-tbl-0002:row5:col1', 'psp412736-tbl-0002:row5:col2', 'psp412736-tbl-0002:row5:col4', 'psp412736-tbl-0002:row5:col5'])
-- unit_dimension_unknown: 'N = 500' (V1)
+- routed 'θ eGFRnon‐indexed,CL' → Q314 (omega_cov) to covariance — variability estimate, not a structural parameter
 - dropped duplicate Q63 ('θV (L)', value '382') — already have one for this compound
-- dropped unlinked row (NIL): 'θ Age ≥ 75,V' — extend the ontology if this is a real PK parameter (source ['psp412736-tbl-0002:row8:col1', 'psp412736-tbl-0002:row8:col2', 'psp412736-tbl-0002:row8:col4'])
+- routed 'θ Age ≥ 75,V' → Q314 (omega_cov) to covariance — variability estimate, not a structural parameter
 - metabolite gs-441524: Q22→Q351 — only the metabolite is measured and fm is not identifiable, so its CL/V are apparent (fm-divided)
 - metabolite volume: 'V d (L) = θV × (1 + θAge ≥ 75,V × AGE)' Q63→Q61 for GS-441524 — it is 1-compartment, so its central volume is its only volume
 - apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=GS-441524
@@ -139,4 +146,4 @@ _No web simulator for this record: its structure has no shared WebAssembly templ
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-03 10:48 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 16:33 UTC</sub>

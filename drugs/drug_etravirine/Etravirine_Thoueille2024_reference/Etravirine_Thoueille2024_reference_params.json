@@ -1,0 +1,32 @@
+{
+ "dose_source": "WHO ATC DDD 400 mg oral (J05AG04)",
+ "model_id": "Etravirine_Thoueille2024_reference",
+ "molar_masses": {
+  "central.C": 0.43527699999999997
+ },
+ "note": "Values for the shared PK_1C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "parameters": {
+  "Cl": 9.666666666666666e-07,
+  "F": 0.9,
+  "MM": 0.43527699999999997,
+  "Tlag": 0.0,
+  "VdPerKg": 0.0010742857142857143,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 0.0004,
+  "ka": 0.0005277777777777777,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 7586.261791926196
+ },
+ "reference_peaks": {
+  "central.C": 0.004362773178651077
+ },
+ "stop_time": 345600.0,
+ "template": "PK_1C_enteral",
+ "template_fmu": "PK_1C_enteral.fmu"
+}

@@ -19,19 +19,28 @@ Teduglutide is a glucagon-like peptide-2 analogue used to treat short bowel synd
 
 | molecule | role | molar mass (g/mol) | formula | source | PubChem | records |
 |---|---|---|---|---|---|---|
-| teduglutide | parent | 3752.13 | C164H252N44O55S | PubChem | [16139605](https://pubchem.ncbi.nlm.nih.gov/compound/16139605) | Marier_2010 |
+| teduglutide | parent | 3752.13 | C164H252N44O55S | PubChem | [16139605](https://pubchem.ncbi.nlm.nih.gov/compound/16139605) | Marier_2010, Marier_2021 |
 
 ## Extraction summary
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-05 11:59 | 1:36 | 0/0/1 | 0/0/0 | 0/0/0 | 15,942/3,502 | ollama / qwen3.8:27b-mtp-q8_0 | 2 | 1/1 | 2/0 | 0 |
+| 2026-10-07 17:56 | 0:51 | 0/3/1 | 1/0/0 | 0/0/0 | 79,509/3,756 | einfracz / qwen3.8-27b | 3 | 1/2 | 3/0 | 0 |
 
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
 | <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.333). The first reading is what the record holds.">cross-check: disputed</span><br><sub>STALE — current validate: needs_review</sub><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub><br><sub>route_to: `human_review`</sub> | [Marier_2010_reference](drugs/drug_teduglutide/Teduglutide_Marier2010_reference.md) | — | 1-compartment (no model) | 1 | Marier JF et al., Population pharmacokinetics of teduglut…, Journal of clinical pharmac… (2010) | [10.1177/0091270009342252](https://doi.org/10.1177/0091270009342252) |
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Marier_2021_adults_0_05_mg_kg](drugs/drug_teduglutide/Teduglutide_Marier2021_adults_0_05_mg_kg.md) | — | 1-compartment (no model) | 0 | Marier JF et al., Population pharmacokinetics and exposur…, Clinical and translational… (2021) | [10.1111/cts.13117](https://doi.org/10.1111/cts.13117) |
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Marier_2021_pediatrics_0_05_mg_kg](drugs/drug_teduglutide/Teduglutide_Marier2021_pediatrics_0_05_mg_kg.md) | — | 1-compartment (no model) | 0 | Marier JF et al., Population pharmacokinetics and exposur…, Clinical and translational… (2021) | [10.1111/cts.13117](https://doi.org/10.1111/cts.13117) |
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>route_to: `human_review`</sub> | [Marier_2021_typical_values_rse](drugs/drug_teduglutide/Teduglutide_Marier2021_typical_values_rse.md) | — | 1-compartment (no model) | 1 | Marier JF et al., Population pharmacokinetics and exposur…, Clinical and translational… (2021) | [10.1111/cts.13117](https://doi.org/10.1111/cts.13117) |
+
+## Pharmacodynamics (PD)
+
+| status | detail | about | model | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--green">extracted</span> | [Marier_2021_PPSV](drugs/drug_teduglutide/pd_Marier_2021_PPSV.md) | prescribed PS volume (i.e., PN/IV volume) ← teduglutide · direct Emax (saturable) effect | — | Marier JF et al., Population pharmacokinetics and exposur…, Clinical and translational… (2021) | [10.1111/cts.13117](https://doi.org/10.1111/cts.13117) |
 
 ## ADME sites
 
@@ -52,32 +61,30 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 ## Coverage
 
 - **PubMed hits:** 8 matched, 8 returned
-- **screened:** 3  ·  **relevant:** 1
-- **records:** 1  ·  extracted 0  ·  needs_review 1  ·  rejected 0  ·  stale 1
+- **screened:** 4  ·  **relevant:** 2
+- **records:** 4  ·  extracted 0  ·  needs_review 1  ·  rejected 3  ·  stale 1
 - **scholar-agent fallback query used:** not captured
 
 ## Full text wanted
 
-_3 paper(s) judged relevant from the abstract, with no full text on disk — paywalled, or the resolver could not reach them. Follow the DOI, then save the PDF into `papers/` as `&lt;save as&gt;.pdf` and re-run the extraction._
+_2 paper(s) judged relevant from the abstract, with no full text on disk — paywalled, or the resolver could not reach them. Follow the DOI, then save the PDF into `papers/` as `&lt;save as&gt;.pdf` and re-run the extraction._
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Marier_2010.pdf` | Marier JF et al., Population pharmacokinetics of teduglut…, Journal of clinical pharmac… (2010) | popPK | 10 | [10.1177/0091270009342252](https://doi.org/10.1177/0091270009342252) | [19773525](https://pubmed.ncbi.nlm.nih.gov/19773525) | The abstract provides specific quantitative values for apparent clearance (CL/F) and elimination half-life (t1/2) for teduglutide in a population PK study. |
-| `Roepcke_2014.pdf` | Roepcke S et al., Utility of a population pharmacokinetic…, International journal of cl… (2014) | popPK | 10 | [10.5414/CP201942](https://doi.org/10.5414/CP201942) | [25066226](https://pubmed.ncbi.nlm.nih.gov/25066226) | The paper describes a population PK model for teduglutide, but the specific numeric parameter values (CL, V, etc.) are not present in the provided abstract text. |
-| `Marier_2021.pdf` | Marier JF et al., Population pharmacokinetics and exposur…, Clinical and translational… (2021) | pd | 5 | [10.1111/cts.13117](https://doi.org/10.1111/cts.13117) | [34402197](https://www.ncbi.nlm.nih.gov/pubmed/34402197) | metadata signals extractable PD data (exposure-response) |
+| `Marier_2010.pdf` | Marier JF et al., Population pharmacokinetics of teduglut…, Journal of clinical pharmac… (2010) | popPK | 10 | [10.1177/0091270009342252](https://doi.org/10.1177/0091270009342252) | [19773525](https://pubmed.ncbi.nlm.nih.gov/19773525) | The evidence contains a population PK model description and explicit numeric values for apparent clearance (12.4 and 10.5 L/h) and half-life (0.897 and 2.99 hours). |
+| `Roepcke_2014.pdf` | Roepcke S et al., Utility of a population pharmacokinetic…, International journal of cl… (2014) | popPK | 9 | [10.5414/CP201942](https://doi.org/10.5414/CP201942) | [25066226](https://pubmed.ncbi.nlm.nih.gov/25066226) | The paper describes a population PK model for teduglutide but the specific numeric parameter values (CL, V, etc.) are not present in the provided evidence, which only contains qualitative descriptions and covariate effects. |
 
-<sub>queue written 2026-10-05T11:57:44.306270+00:00</sub>
+<sub>queue written 2026-10-07T17:55:35.189751+00:00</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| PGx | Alters_2012 | not_relevant | 0 | 0 | The paper reports preclinical pharmacokinetics and efficacy of a novel GLP-2 analog (GLP2-2G-XTEN) in animal models, but does not investigate the impact of human gene variants or genotypes on the pharmacokinetics or pharmacodynamics of teduglutide. |
-| PGx | Gadgaard_2023 | not_relevant | 0 | 0 | The paper describes the development of novel GLP-2 analogs and their pharmacological properties, but does not investigate the impact of human genetic variants on the pharmacokinetics or pharmacodynamics of teduglutide. |
-| PGx | Gu_2017 | not_relevant | 0 | 0 | The paper describes a new peptide analogue (GLP-2 dimer) and its efficacy compared to teduglutide, but does not report any pharmacogenomic effects (gene variants) on teduglutide's PK or PD parameters. |
-| popPK | Marier_2021 | irrelevant | 0 | 0 | no_text gate: only 131 chars of text extracted (&lt; 400) |
-| popPK | Micic_2024 | irrelevant | 0 | 0 | The study reports clinical efficacy outcomes (liver chemistries) rather than pharmacokinetic parameters. |
-| popPK | Roepcke_2014 | relevant | 10 | 2 | The paper describes a population PK model for teduglutide, but the specific numeric parameter values (CL, V, etc.) are not present in the provided abstract text. |
+| PGx | Alters_2012 | not_relevant | 0 | 0 | The paper describes the PK/PD of a novel drug formulation (GLP2-2G-XTEN) compared to teduglutide but does not report any genetic or pharmacogenomic variations affecting these parameters. |
+| PGx | Gadgaard_2023 | not_relevant | 0 | 0 | The paper focuses on the structure-activity relationship of novel GLP-2 analogs, not the impact of human genetic variants on the pharmacokinetics or pharmacodynamics of teduglutide. |
+| PGx | Gu_2017 | not_relevant | 0 | 0 | The paper describes the development of a new GLP-2 analogue (GLP-2②) and its superior pharmacokinetics compared to teduglutide, but it does not investigate the effect of human gene variants on teduglutide's PK or PD parameters. |
+| popPK | Micic_2024 | irrelevant | 0 | 0 | The study is a post-hoc analysis of liver chemistries (safety/efficacy) and does not report any pharmacokinetic parameters for teduglutide. |
+| popPK | Roepcke_2014 | relevant | 9 | 2 | The paper describes a population PK model for teduglutide but the specific numeric parameter values (CL, V, etc.) are not present in the provided evidence, which only contains qualitative descriptions and covariate effects. |
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-10-05 11:57 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-10-07 17:55 UTC</sub>

@@ -1,5 +1,4 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N06A&quot;,&quot;href&quot;:&quot;atc/N06A.md&quot;},{&quot;label&quot;:&quot;vortioxetine&quot;,&quot;href&quot;:&quot;drugs/drug_vortioxetine/&quot;},{&quot;label&quot;:&quot;Frederiksen_2021_2 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Vortioxetine_Areberg2014v2_reference&quot;,&quot;label&quot;:&quot;Areberg_2014_2_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_vortioxetine/Vortioxetine_Areberg2014v2_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -27,14 +26,14 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on `parame
 
 <sub>reviewed by glm-5.3-flash</sub>
 
-> ⚠️ **STALE** — review status `model_quarantined` (reviewed 2026-10-05 09:32:54.604512+00:00) predates the upstream re-run (2026-10-07 00:19:33.006600+00:00). Current validate status: `extracted`.
+> ⚠️ **STALE** — review status `model_quarantined` (reviewed 2026-10-05 09:32:54.604512+00:00) predates the upstream re-run (2026-10-07 19:05:08.036904+00:00). Current validate status: `extracted`.
 
 ## Citation
 Frederiksen T et al., Quantification of In Vivo Metabolic Act…, Clinical pharmacology and t… (2021)
   ·  DOI: [10.1002/cpt.1972](https://doi.org/10.1002/cpt.1972)
 
 ## Model component
-<dbs-pgx drug="vortioxetine" model-id="Vortioxetine_Frederiksen2021v2_reference" status="extracted" stale="true" population="subjects from 29 clinical pharmacology studies of vortioxetine" measured-compound="vortioxetine" parameterization="mechanistic" topology="parent_metabolite"></dbs-pgx>
+<dbs-pgx drug="vortioxetine" model-id="Vortioxetine_Frederiksen2021v2_reference" status="extracted" stale="true" population="adults" measured-compound="vortioxetine" parameterization="mechanistic" topology="parent_metabolite"></dbs-pgx>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 11 extracted, plus 4 covariate effects.
@@ -56,9 +55,9 @@ Frederiksen T et al., Quantification of In Vivo Metabolic Act…, Clinical pharm
 | Volume of distribution, Lu AA34443 peripheral compartment, V6 | `Q64` · V2 | 211 | L | 0.211 | L | 0.8 | exact (1.0) | cpt1972-tbl-0002:row12:col1, cpt1972-tbl-0002:row12:col3 | — | not captured |
 | Lag‐time (ALAG) | `Q83` · tlag | 0.966 | h | 3477.6 | h | 66.8 | llm (0.6) | cpt1972-tbl-0002:row13:col1, cpt1972-tbl-0002:row13:col3 | — | not captured |
 | theta_q370_cyp2d6 | `Q900` · theta_q370_cyp2d6 | 13.1 | not captured | not captured | not captured | 0.8 | not captured (not captured) | cpt1972-tbl-0002:row6:col1, cpt1972-tbl-0002:row6:col3 | — | not captured |
-| theta_q26_creatinine | `Q900` · theta_q26_creatinine | 0.0668 | not captured | not captured | not captured | 6.5 | not captured (not captured) | cpt1972-tbl-0002:row19:col1, cpt1972-tbl-0002:row19:col3 | — | not captured |
+| theta_q22_cyp2c19 | `Q900` · theta_q22_cyp2c19 | 12.5 | not captured | not captured | not captured | not captured | not captured (not captured) | cpt1972-tbl-0002:row17:col1, cpt1972-tbl-0002:row17:col3 | — | not captured |
 | theta_q77_height | `Q900` · theta_q77_height | 1.48 | not captured | not captured | not captured | 11.1 | not captured (not captured) | cpt1972-tbl-0002:row21:col1, cpt1972-tbl-0002:row21:col3 | — | not captured |
-| theta_q314_weight | `Q900` · theta_q314_weight | 0.918 | not captured | not captured | not captured | 21.0 | not captured (not captured) | cpt1972-tbl-0002:row22:col1, cpt1972-tbl-0002:row22:col3 | — | not captured |
+| theta_q900_weight | `Q900` · theta_q900_weight | 0.918 | not captured | not captured | not captured | 21.0 | not captured (not captured) | cpt1972-tbl-0002:row22:col1, cpt1972-tbl-0002:row22:col3 | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -89,30 +88,32 @@ Frederiksen T et al., Quantification of In Vivo Metabolic Act…, Clinical pharm
 - table section covariance: 'ρ (CLmet,V5)' routed out of structural estimates ('Correlation coefficients (ρ) a')
 - table section covariance: 'Residual error (proportional) b' routed out of structural estimates ('Correlation coefficients (ρ) a')
 - unit_dimension_unknown: 'ALAG' (tlag)
-- dropped unlinked row (NIL): 'CYP2C19 normal metabolizers' — extend the ontology if this is a real PK parameter (source ['cpt1972-tbl-0002:row17:col1', 'cpt1972-tbl-0002:row17:col3'])
 - dropped unlinked row (NIL): 'Age on CLother' — extend the ontology if this is a real PK parameter (source ['cpt1972-tbl-0002:row18:col1', 'cpt1972-tbl-0002:row18:col3'])
+- dropped unlinked row (NIL): 'Creatinine clearance on CLother' — extend the ontology if this is a real PK parameter (source ['cpt1972-tbl-0002:row19:col1', 'cpt1972-tbl-0002:row19:col3'])
 - dropped unlinked row (NIL): 'LBM on CLother' — extend the ontology if this is a real PK parameter (source ['cpt1972-tbl-0002:row20:col1', 'cpt1972-tbl-0002:row20:col3'])
 - dropped unlinked row (NIL): 'Weight on V5' — extend the ontology if this is a real PK parameter (source ['cpt1972-tbl-0002:row23:col1', 'cpt1972-tbl-0002:row23:col3'])
-- NIL: refused to back-fill base 'sigma' from footnote/prose loose number None (source ['cpt1972-tbl-0002:footnote']); the table cell was unparseable — needs review
+- dropped value-less row: '95% CI'
+- NIL: refused to back-fill base 'NIL' from footnote/prose loose number None (source ['cpt1972-tbl-0002:footnote']); the table cell was unparseable — needs review
+- NIL: refused to back-fill base 'equation variable' from footnote/prose loose number None (source ['cpt1972-tbl-0002:footnote']); the table cell was unparseable — needs review
 - covariate effect for Q370 has no base parameter row (kept as unattached equation-variable)
-- covariate effect for Q26 has no base parameter row (kept as unattached equation-variable)
+- covariate effect for Q22 has no base parameter row (kept as unattached equation-variable)
 - covariate effect for Q77 has no base parameter row (kept as unattached equation-variable)
-- covariate effect for Q314 has no base parameter row (kept as unattached equation-variable)
-- implicit units: 'Absorption rate constant, ka' → 1/h (from the popPK convention: 'No unit stated for ka; first-order absorption rate constants are conventionally in 1/h, and 0.160 1/h is consistent with')
-- implicit units: 'Absorption rate constant, metabolite, ka,met' → 1/h (from the popPK convention: 'No unit stated; first-order absorption rate constant for the metabolite, conventionally 1/h.')
-- implicit units: 'Volume of distribution, vortioxetine central compartment, V3' → L (from the popPK convention: 'No unit stated; volumes of distribution in L, consistent with reported steady-state volume ~2,600 L for vortioxetine.')
-- implicit units: 'Inter‐compartmental clearance, vortioxetine, Q' → L/h (from the popPK convention: 'No unit stated; intercompartmental clearances conventionally in L/h, consistent with CLother fixed to 12.5 L/h in the te')
-- implicit units: 'Volume of distribution, vortioxetine peripheral compartment, V4' → L (from the popPK convention: 'No unit stated; peripheral volume of distribution in L.')
-- implicit units: 'Intercompartmental clearance, vortioxetine, Qmet' → L/h (from the popPK convention: 'No unit stated; intercompartmental clearance conventionally in L/h.')
-- implicit units: 'Volume of distribution, Lu AA34443 central compartment, V5' → L (from the popPK convention: 'No unit stated; volume of distribution in L.')
-- implicit units: 'Lu AA34443 clearance, CLmet' → L/h (from the popPK convention: 'No unit stated; CLmet is a clearance, conventionally L/h, consistent with CLother fixed to 12.5 L/h.')
-- implicit units: 'Volume of distribution, Lu AA34443 peripheral compartment, V6' → L (from the popPK convention: 'No unit stated; peripheral volume of distribution in L.')
-- implicit units: 'Lag‐time (ALAG)' → h (from the popPK convention: 'No unit stated; absorption lag time conventionally in h, and 0.966 h is a plausible magnitude.')
+- covariate effect for Q900 has no base parameter row (kept as unattached equation-variable)
+- implicit units: 'Absorption rate constant, ka' → 1/h (from the popPK convention: 'The parameter is an absorption rate constant (first-order rate constant), which is conventionally expressed in 1/h in po')
+- implicit units: 'Absorption rate constant, metabolite, ka,met' → 1/h (from the popPK convention: 'The parameter is an absorption rate constant for the metabolite (first-order rate constant), which is conventionally exp')
+- implicit units: 'Volume of distribution, vortioxetine central compartment, V3' → L (from the paper text: "The text states that vortioxetine has a 'steady‐state volume of distribution of ~ 2,600 L', establishing the unit for vo")
+- implicit units: 'Inter‐compartmental clearance, vortioxetine, Q' → L/h (from the popPK convention: 'The parameter is an intercompartmental clearance. In population PK, clearances are conventionally expressed in L/h, and ')
+- implicit units: 'Volume of distribution, vortioxetine peripheral compartment, V4' → L (from the paper text: "The text states that vortioxetine has a 'steady‐state volume of distribution of ~ 2,600 L', establishing the unit for vo")
+- implicit units: 'Intercompartmental clearance, vortioxetine, Qmet' → L/h (from the popPK convention: 'The parameter is an intercompartmental clearance. In population PK, clearances are conventionally expressed in L/h, and ')
+- implicit units: 'Volume of distribution, Lu AA34443 central compartment, V5' → L (from the popPK convention: 'The parameter is a volume of distribution. In population PK, volumes are conventionally expressed in Liters (L), and the')
+- implicit units: 'Lu AA34443 clearance, CLmet' → L/h (from the popPK convention: 'The parameter is a clearance. In population PK, clearances are conventionally expressed in L/h, and the magnitude (22.5)')
+- implicit units: 'Volume of distribution, Lu AA34443 peripheral compartment, V6' → L (from the popPK convention: 'The parameter is a volume of distribution. In population PK, volumes are conventionally expressed in Liters (L), and the')
+- implicit units: 'Lag‐time (ALAG)' → h (from the popPK convention: 'The parameter is an absorption lag time. In population PK, time parameters are conventionally expressed in hours (h), an')
 - apparent-by-design (ADVISORY, codes unchanged): extravascular dosing with no identifiable F, so these reported disposition parameters are likely apparent unless the model puts first-pass in its structure — Q63 (Volume of distribution, vortioxetine central compartment, V3); Q30 (Inter‐compartmental clearance, vortioxetine, Q); Q64 (Volume of distribution, vortioxetine peripheral compartment, V4); Q30 (Intercompartmental clearance, vortioxetine, Qmet); Q63 (Volume of distribution, Lu AA34443 central compartment, V5); Q22 (Lu AA34443 clearance, CLmet); Q64 (Volume of distribution, Lu AA34443 peripheral compartment, V6)
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=vortioxetine
 - template fit: PK_3M_3C — first-pass formation; parent 2 + hepatic, metabolites [2] (site presystemic: 'An early appearance of Lu AA34443 in plasma indicated presence of presystemic formation of the metabolite, which was ass')
 - row roles: per-genotype parameters — typical value from the reference group: CYP2C19 normal metabolizers
-- row roles (LLM): model_class=compartmental; 29/29 row label(s) assigned, 36 linked by role; re-tagged parent→Lu AA34443 ×21
+- row roles (LLM): model_class=compartmental; 30/30 row label(s) assigned, 39 linked by role; re-tagged parent→Lu AA34443 ×25
 
 **Extraction notes:**
 - LLM selected parameter table(s) 2
@@ -215,4 +216,4 @@ _No web simulator for this record: its structure has no shared WebAssembly templ
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 00:19 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 19:05 UTC</sub>

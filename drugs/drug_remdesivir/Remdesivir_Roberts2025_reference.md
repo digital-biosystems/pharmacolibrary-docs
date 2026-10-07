@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;J05A&quot;,&quot;href&quot;:&quot;atc/J05A.md&quot;},{&quot;label&quot;:&quot;remdesivir&quot;,&quot;href&quot;:&quot;drugs/drug_remdesivir/&quot;},{&quot;label&quot;:&quot;Roberts_2025 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Remdesivir_Morrisette2020_reference&quot;,&quot;label&quot;:&quot;Morrisette_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_remdesivir/Remdesivir_Morrisette2020_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Remdesivir_Humeniuk2021_reference&quot;,&quot;label&quot;:&quot;Humeniuk_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_remdesivir/Remdesivir_Humeniuk2021_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Remdesivir_Morrisette2020_reference&quot;,&quot;label&quot;:&quot;Morrisette_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_remdesivir/Remdesivir_Morrisette2020_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # remdesivir — `Remdesivir_Roberts2025_reference`
 
-> ## <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: the record defines covariate effects (weight on clearance, renal function …) but the engineer simulated only the reference individual, so those scenarios were never run. The base model still reproduces the paper; what is missing is the covariate curves.">built, not shipped</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.286). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--green" title="covariates_not_exercised: the record defines covariate effects (weight on clearance, renal function …) but the engineer simulated only the reference individual, so those scenarios were never run. The base model still reproduces the paper; what is missing is the covariate curves.">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.286). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -13,7 +13,7 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
-**Model:** A model was built but held back: a core parameter had no value, so it is not published or simulated.
+**Model:** A model was generated (see the **Models** tab); it has no in-browser simulator.
 
 > **Caveat** (`covariates_not_exercised`): the record defines covariate effects (weight on clearance, renal function …) but the engineer simulated only the reference individual, so those scenarios were never run. The base model still reproduces the paper; what is missing is the covariate curves.
 
@@ -27,29 +27,31 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 
 <sub>reviewed by glm-5.3-flash</sub>
 
+> ⚠️ **STALE** — review status `model_quarantined` (reviewed 2026-10-05 09:31:36.009574+00:00) predates the upstream re-run (2026-10-07 16:33:25.511885+00:00). Current validate status: `extracted`.
+
+> **Dose compound ≠ measured compound:** dosed `remdesivir`, measured `GS-441524`.
+
 ## Citation
 Roberts DM et al., Population Pharmacokinetic Modelling of…, Clinical pharmacokinetics (2025)
   ·  DOI: [10.1007/s40262-025-01496-2](https://doi.org/10.1007/s40262-025-01496-2)
 
 ## Model component
-<dbs-pgx drug="remdesivir" model-id="Remdesivir_Roberts2025_reference" status="model_quarantined" stale="false" population="hospitalised adults with confirmed SARS-CoV-2 infection" measured-compound="remdesivir" parameterization="apparent" topology="parent_metabolite"></dbs-pgx>
+<dbs-pgx drug="remdesivir" model-id="Remdesivir_Roberts2025_reference" status="extracted" stale="true" population="hospitalised adults with COVID-19" measured-compound="GS-441524" parameterization="apparent" topology="parent_metabolite"></dbs-pgx>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 4 extracted, plus 2 covariate effects.
 
-**Parameterization:** V1/F — apparent, F unknown (apparent — bioavailability not identifiable).
+**Parameterization:** CLm/F, V1/F, Vm/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
 ## Parameters
-> ⚠️ This record is not accepted (current status `model_quarantined`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
-
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| CL (L/h) | `Q22` · CL | 105 | L/h | 2.9166666666666666e-05 | [l] / [h] | not captured | exact (1.0) | Tab2:row3:col1, Tab2:row3:col2, Tab2:row3:col4, Tab2:row3:col5 | — | 53.1 (None% RSE) |
-| V (L) | `Q61` · V | 121 | L | 0.121 | [l] | not captured | exact (1.0) | Tab2:row4:col1, Tab2:row4:col2, Tab2:row4:col4, Tab2:row4:col5 | — | not captured |
-| CL/fm (L/h) | `Q370` · CLfm | 15.9 | L/h | 4.416666666666667e-06 | [l] / [h] | not captured | llm_confirmed (0.6) | Tab2:row6:col1, Tab2:row6:col2, Tab2:row6:col4, Tab2:row6:col5 | — | not captured |
+| CL (L/h) | `Q351` · CLm/F | 105 | L/h | 2.9166666666666666e-05 | [l] / [h] | not captured | exact (1.0) | Tab2:row3:col1, Tab2:row3:col2, Tab2:row3:col4, Tab2:row3:col5 | — | 53.1 (None% RSE) |
+| V (L) | `Q367` · Vm/F | 121 | L | 0.121 | [l] | not captured | exact (1.0) | Tab2:row4:col1, Tab2:row4:col2, Tab2:row4:col4, Tab2:row4:col5 | — | not captured |
+| CL/fm (L/h) | `Q351` · CLm/F | 15.9 | L/h | 4.416666666666667e-06 | [l] / [h] | not captured | exact (1.0) | Tab2:row6:col1, Tab2:row6:col2, Tab2:row6:col4, Tab2:row6:col5 | — | not captured |
 | V/fm (L) | `Q290` · V1/F | 429 | L | 0.429 | [l] | not captured | exact (1.0) | Tab2:row7:col1, Tab2:row7:col2, Tab2:row7:col4, Tab2:row7:col5 | — | not captured |
+| egfr_effect_on_cl | `Q900` · egfr_effect_on_cl | 1.12 | not captured | not captured | not captured | not captured | not captured (not captured) | Tab2:row9:col1, Tab2:row9:col2, Tab2:row9:col4, Tab2:row9:col5 | — | not captured |
 | theta_q61_age | `Q900` · theta_q61_age | -1.15 | not captured | not captured | not captured | not captured | not captured (not captured) | Tab2:row8:col1, Tab2:row8:col2, Tab2:row8:col4 | — | not captured |
-| theta_cl_egfr | `Q900` · theta_cl_egfr | 1.12 | not captured | not captured | not captured | not captured | not captured (not captured) | Tab2:row9:col1, Tab2:row9:col2, Tab2:row9:col4, Tab2:row9:col5 | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -58,20 +60,28 @@ Roberts DM et al., Population Pharmacokinetic Modelling of…, Clinical pharmaco
 
 ## Departures & gaps
 
+**Deviations:**
+- `defaulted_parameters`: ['ka', 'Tlag']
+- `apparent_assumption`: F=1, Fm=1, no molar correction (parameterization=apparent)
+- `invented_absorption`: ka defaulted — not reported in source
+- `input_model`: first-order depot input — apparent (/F) parameterization ⇒ extravascular dosing
+
 **Interpretation flags:**
 - table section iiv: 'Remdesivir CL' routed out of structural estimates ('Between subject variability (%)')
 - table section iiv: 'Remdesivir V' routed out of structural estimates ('Between subject variability (%)')
 - table section iiv: 'GS-441524 CL/fm' routed out of structural estimates ('Between subject variability (%)')
 - table section iiv: 'GS-441524 V/fm' routed out of structural estimates ('Between subject variability (%)')
+- covariate level 'eGFR effect on CL' → Q900:egfr_effect_on_cl = 1.12 (linear_fractional on Q22)
 - routed 'Remdesivir proportional error' → Q316 (prop_error) to residual_error — variability estimate, not a structural parameter
 - routed 'GS-441524 proportional error' → Q316 (prop_error) to residual_error — variability estimate, not a structural parameter
 - covariate effect for Q61 has no base parameter row (kept as unattached equation-variable)
-- metabolite volume: 'V (L)' Q63→Q61 for GS-441524 — it is 1-compartment, so its central volume is its only volume
-- apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=remdesivir
-- template fit: none — only the metabolite is modelled — no parent compartment
-- row roles (LLM): model_class=compartmental; 13/13 row label(s) assigned, 36 linked by role; re-tagged parent→GS-441524 ×37
-- skipped review gap-fill of V2: primary is PARENT_METABOLITE (peripheral family needs ≥2C)
-- skipped review gap-fill of Q: primary is PARENT_METABOLITE (peripheral family needs ≥2C)
+- metabolite gs-441524: Q22→Q351 — only the metabolite is measured and fm is not identifiable, so its CL/V are apparent (fm-divided)
+- metabolite gs-441524: Q61→Q367 — only the metabolite is measured and fm is not identifiable, so its CL/V are apparent (fm-divided)
+- metabolite gs-441524: Q27→Q351 — only the metabolite is measured and fm is not identifiable, so its CL/V are apparent (fm-divided)
+- apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=GS-441524
+- template fit: PK_3M_9C — formed from central; parent 1, metabolites [1]
+- row roles (LLM): model_class=compartmental; 13/13 row label(s) assigned, 36 linked by role; re-tagged parent→GS-441524 ×29
+- review gap-fill skipped: this record measures 'GS-441524', not remdesivir — the review values are the parent's
 
 **Extraction notes:**
 - unparsed cell Tab2:row8:col5 = '– 2.82 to – 0.51'
@@ -116,16 +126,13 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 | C0_has_structural_params | pass | not captured | 4 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
-| C2_reference | pass | not captured | not captured | not captured | not captured | not captured |
-| C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Tab2:row3:col1', 'Tab2:row3:col2', 'Tab2:row3:col4', 'Tab2:row3:col5'] |
 | C5_dimension_Q290 | pass | [length] ** 3 | not captured | not captured | not captured | ['Tab2:row7:col1', 'Tab2:row7:col2', 'Tab2:row7:col4', 'Tab2:row7:col5'] |
-| C5_dimension_Q370 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Tab2:row6:col1', 'Tab2:row6:col2', 'Tab2:row6:col4', 'Tab2:row6:col5'] |
-| C5_dimension_Q61 | pass | [length] ** 3 | not captured | not captured | not captured | ['Tab2:row4:col1', 'Tab2:row4:col2', 'Tab2:row4:col4', 'Tab2:row4:col5'] |
+| C5_dimension_Q351 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Tab2:row3:col1', 'Tab2:row3:col2', 'Tab2:row3:col4', 'Tab2:row3:col5'] |
+| C5_dimension_Q351 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Tab2:row6:col1', 'Tab2:row6:col2', 'Tab2:row6:col4', 'Tab2:row6:col5'] |
+| C5_dimension_Q367 | pass | [length] ** 3 | not captured | not captured | not captured | ['Tab2:row4:col1', 'Tab2:row4:col2', 'Tab2:row4:col4', 'Tab2:row4:col5'] |
 | C7_apparent_coherence | pass | not captured | not captured | not captured | not captured | not captured |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
-| C9_phys_window_Q22 | pass | clearance within physiological range | 105 L/h | not captured | not captured | ['Tab2:row3:col1', 'Tab2:row3:col2', 'Tab2:row3:col4', 'Tab2:row3:col5'] |
 | C9_phys_window_Q290 | pass | volume within physiological range | 429 L | not captured | not captured | ['Tab2:row7:col1', 'Tab2:row7:col2', 'Tab2:row7:col4', 'Tab2:row7:col5'] |
-| C9_phys_window_Q61 | pass | volume within physiological range | 121 L | not captured | not captured | ['Tab2:row4:col1', 'Tab2:row4:col2', 'Tab2:row4:col4', 'Tab2:row4:col5'] |
 
 **Reviewer per-scenario checks:**
 
@@ -157,12 +164,12 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_remdesivir/Remdesivir_Roberts2025_reference/Remdesivir_Roberts2025_reference_modelica.zip" download>Remdesivir_Roberts2025_reference_modelica.zip</a> <span class="pk-size">(5.0 kB)</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_remdesivir/Remdesivir_Roberts2025_reference/Remdesivir_Roberts2025_reference_matlab.zip" download>Remdesivir_Roberts2025_reference_matlab.zip</a> <span class="pk-size">(3.3 kB)</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_remdesivir/Remdesivir_Roberts2025_reference/Remdesivir_Roberts2025_reference_matlab_simbio.zip" download>Remdesivir_Roberts2025_reference_matlab_simbio.zip</a> <span class="pk-size">(2.7 kB)</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_remdesivir/Remdesivir_Roberts2025_reference/Remdesivir_Roberts2025_reference_sbml.zip" download>Remdesivir_Roberts2025_reference_sbml.zip</a> <span class="pk-size">(2.4 kB)</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_remdesivir/Remdesivir_Roberts2025_reference/Remdesivir_Roberts2025_reference_cellml.zip" download>Remdesivir_Roberts2025_reference_cellml.zip</a> <span class="pk-size">(2.9 kB)</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_remdesivir/Remdesivir_Roberts2025_reference/Remdesivir_Roberts2025_reference_matlab.zip" download>Remdesivir_Roberts2025_reference_matlab.zip</a> <span class="pk-size">(3.5 kB)</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_remdesivir/Remdesivir_Roberts2025_reference/Remdesivir_Roberts2025_reference_matlab_simbio.zip" download>Remdesivir_Roberts2025_reference_matlab_simbio.zip</a> <span class="pk-size">(2.9 kB)</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_remdesivir/Remdesivir_Roberts2025_reference/Remdesivir_Roberts2025_reference_sbml.zip" download>Remdesivir_Roberts2025_reference_sbml.zip</a> <span class="pk-size">(2.7 kB)</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_remdesivir/Remdesivir_Roberts2025_reference/Remdesivir_Roberts2025_reference_cellml.zip" download>Remdesivir_Roberts2025_reference_cellml.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
 </tbody></table>
 <p>Each archive holds the model source, a script that simulates it against the appropriate library, and a README describing both and how to run them.</p>
 </div></div>
@@ -174,4 +181,4 @@ _No web simulator for this record: its structure has no shared WebAssembly templ
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-03 10:48 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 16:33 UTC</sub>

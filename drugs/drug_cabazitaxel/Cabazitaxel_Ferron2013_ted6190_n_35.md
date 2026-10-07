@@ -4,7 +4,7 @@
 
 # cabazitaxel — `Cabazitaxel_Ferron2013_ted6190_n_35`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span>
+> ## <span class="pk-badge pk-badge--neutral">None</span> <span class="pk-badge pk-badge--stale">stale</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -22,50 +22,26 @@ Simulated as the paper dosed it, the model's terminal half-life differs from the
 
 <sub>reviewed by rule template (no LLM)</sub>
 
+> ⚠️ **STALE** — review status `needs_review` (reviewed 2026-09-28 14:36:23.120542+00:00) predates the upstream re-run (2026-10-07 17:34:01.352366+00:00). Current validate status: `not captured`.
+
 ## Citation
 Ferron GM et al., Population pharmacokinetics of cabazita…, Cancer chemotherapy and pha… (2013)
   ·  DOI: [10.1007/s00280-012-2058-9](https://doi.org/10.1007/s00280-012-2058-9)
 
 ## Model component
-<dbs-pgx drug="cabazitaxel" model-id="Cabazitaxel_Ferron2013_ted6190_n_35" status="needs_review" stale="false" population="patients with advanced solid tumors" measured-compound="cabazitaxel" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<dbs-pgx drug="cabazitaxel" model-id="Cabazitaxel_Ferron2013_ted6190_n_35" status="" stale="true" population="patients with advanced solid tumors" measured-compound="" parameterization="" topology=""></dbs-pgx>
 
-**Model structure:** 1-compartment; no model was built for this record.  
-**Parameters:** 6 extracted.
+**Model structure:** —; no model was built for this record.  
+**Parameters:** 0 extracted.
 
-**Parameterization:** mechanistic.
+**Parameterization:** not captured.
 
 ## Parameters
-> ⚠️ This record is not accepted (current status `needs_review`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
+> ⚠️ This record is not accepted (current status `not captured`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
 
-| label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
-|---|---|---|---|---|---|---|---|---|---|---|
-| CL, L/h/m2 | `Q22` · CL | 24.2 | n = 35 | not captured | [n=35] | not captured | llm_confirmed (0.6) | Ferron_2013_table_5:row0:col4 | — | not captured |
-| V1, L/m2 | `Q61` · V | 10.8 | n = 35 | not captured | [n=35] | not captured | llm_confirmed (0.6) | Ferron_2013_table_5:row1:col4 | — | not captured |
-| V ss, L/m² | `Q65` · Vss | 2710 | n = 35 | not captured | [n=35] | not captured | llm (0.6) | Ferron_2013_table_5:row2:col4 | — | not captured |
-| t 1/2α, min | `Q59` · t1/2α | 2.85 | n = 35 | not captured | [n=35] | not captured | llm (0.6) | Ferron_2013_table_5:row3:col4 | — | not captured |
-| t 1/2β, h | `Q60` · t1/2β | 1.57 | n = 35 | not captured | [n=35] | not captured | llm (0.6) | Ferron_2013_table_5:row4:col4 | — | not captured |
-| t 1/2γ, h | `Q89` · t1/2γ | 103 | n = 35 | not captured | [n=35] | not captured | llm (0.6) | Ferron_2013_table_5:row5:col4 | — | not captured |
-
-<details class="legend">
-<summary>Column legend — what each column means</summary>
-<table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>label (paper)</code></td><td>the row or statistic label exactly as printed in the paper (label_verbatim) — never normalised, so it can be found in the PDF.</td></tr><tr><td><code>Q-code · name</code></td><td>the ontology parameter this label was matched to (Q22 = clearance, Q27 = CL/F, Q49 = ka, Q57 = half-life, …) and its canonical name. The Q-code, not the label, is what scoring and cross-paper merging use.</td></tr><tr><td><code>value</code></td><td>the estimate as reported in the paper.</td></tr><tr><td><code>unit</code></td><td>the unit as printed (unit_verbatim).</td></tr><tr><td><code>value_si</code></td><td>the value converted to the canonical unit. Empty when no conversion was possible — usually an unparseable or missing unit.</td></tr><tr><td><code>unit_canonical</code></td><td>the canonical unit for that Q-code, i.e. what value_si is expressed in.</td></tr><tr><td><code>RSE%</code></td><td>relative standard error of the estimate, when the paper reports one.</td></tr><tr><td><code>link</code></td><td>how the label was matched to the Q-code, with confidence. exact / boundary / fuzzy / tv_prefix / caption_compartment / special_case are deterministic string matches; llm, llm_confirmed, llm_corrected involved the model; review and review_gapfill come from the secondary review tier, the latter filling a parameter the primary extraction missed; boundary_relink is a corrected match.</td></tr><tr><td><code>source</code></td><td>where in the paper the number came from: colN = that column of the located table, other_prose = running text, review = the secondary tier, pgx = a pharmacogenomic record.</td></tr><tr><td><code>covariates</code></td><td>covariate effects attached to this parameter (e.g. weight on CL).</td></tr><tr><td><code>IIV</code></td><td>inter-individual variability reported for this parameter.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>the field is absent from the KB artifact — nothing was recorded. This is NOT the same as zero or empty: the value is unknown, not measured to be nothing.</td></tr><tr><td><code>—</code></td><td>deliberately not shown: the column does not apply to this row.</td></tr><tr><td><code>not verified</code></td><td>the record is not in an accepted state (see the badge and the note above the table); the numbers are shown as extracted, not endorsed.</td></tr></tbody></table>
-</details>
+_No resolved parameters._
 
 ## Departures & gaps
-
-**Interpretation flags:**
-- unit_dimension_unknown: 'n = 35' (CL)
-- unit_dimension_unknown: 'n = 35' (V1)
-- unit_dimension_unknown: 'n = 35' (Vss)
-- unit_dimension_unknown: 'n = 35' (t1/2α)
-- unit_dimension_unknown: 'n = 35' (t1/2β)
-- unit_dimension_unknown: 'n = 35' (t1/2γ)
-- apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=cabazitaxel
-- held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
-- structure disagreement: deterministic 1C vs LLM 3C — review compartment count
-- 1C volume normalization: Q63→Q61 (single-compartment model has no central/peripheral split; 'V1, L/m2' is the general volume)
-- status held at route_to_review — not promoted
-- population split: 'ted6190(n = 35)' subgroup of Ferron_2013 (paper reports 7 populations: all(n = 170), ard6191(n = 34), efc6193(n = 67), nonmem, ted6188(n = 21), ted6189(n = 13), ted6190(n = 35))
 
 **Extraction notes:**
 - unparsed cell Tab4:row1:col3 = '95 % CI (lower)'
@@ -76,27 +52,7 @@ Ferron GM et al., Population pharmacokinetics of cabazita…, Cancer chemotherap
 
 ## Validation
 
-**Scholar closed-form checks:**
-
-| check | status | expected | obtained | ratio | tol | source |
-|---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 6 | not captured | not captured | not captured |
-| C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
-| C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
-| C1_half_life_beta | fail | 1.6 | 0.309 | 0.1931 | 0.25 | reported t½β |
-| C5_unit_missing_Q22 | fail | [length] ** 3 / [time] | n = 35 | not captured | not captured | ['Ferron_2013_table_5:row0:col4'] |
-| C5_unit_missing_Q59 | fail | [time] | n = 35 | not captured | not captured | ['Ferron_2013_table_5:row3:col4'] |
-| C5_unit_missing_Q60 | fail | [time] | n = 35 | not captured | not captured | ['Ferron_2013_table_5:row4:col4'] |
-| C5_unit_missing_Q61 | fail | [length] ** 3 | n = 35 | not captured | not captured | ['Ferron_2013_table_5:row1:col4'] |
-| C5_unit_missing_Q65 | fail | [length] ** 3 | n = 35 | not captured | not captured | ['Ferron_2013_table_5:row2:col4'] |
-| C5_unit_missing_Q89 | fail | [time] | n = 35 | not captured | not captured | ['Ferron_2013_table_5:row5:col4'] |
-| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 24.2 | not captured | not captured | ['Ferron_2013_table_5:row0:col4'] |
-| C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
-
-<details class="legend">
-<summary>Check legend — what each column means</summary>
-<table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>check</code></td><td>the check id. C0_has_structural_params = at least one numeric structural parameter; C0b_disposition_core = a volume OR a clearance/elimination term (neither means an exposure/outcome paper, not popPK — rejected); C0c_disposition_complete = BOTH a volume AND a clearance/elimination term, which is what the engineer needs to build (one without the other routes to review, never to the engineer); C1_half_life(_beta) = reported half-life against V and CL; C2_reference = covariate scenarios are sign-plausible; C3_cl_dose_auc = CL against dose/AUC; C4_auc_closed_form = AUC recomputed in closed form; C5_dimension_&lt;Qcode&gt; = the parameter's units carry the dimension its Q-code requires.</td></tr><tr><td><code>status</code></td><td>pass, fail, or skipped. A skipped check had nothing to compare — the paper did not report the input it needs — and is not evidence against the record. The scholar table lists only pass and fail; the reviewer table also shows skipped, with the reason in note.</td></tr><tr><td><code>expected</code></td><td>the value the check required, from the paper or from the ontology.</td></tr><tr><td><code>obtained</code></td><td>what the record actually yields.</td></tr><tr><td><code>ratio</code></td><td>obtained / expected, where the check is a numeric comparison.</td></tr><tr><td><code>tol</code></td><td>the tolerance the ratio had to fall within to pass.</td></tr><tr><td><code>source</code></td><td>the artifact the expected value was taken from.</td></tr><tr><td><code>scenario</code></td><td>reviewer table only — the covariate scenario the check was run under.</td></tr><tr><td><code>note</code></td><td>why a check was skipped, or how it was judged.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>the field is absent from the KB artifact — nothing was recorded. This is NOT the same as zero or empty: the value is unknown, not measured to be nothing.</td></tr><tr><td><code>—</code></td><td>deliberately not shown: the column does not apply to this row.</td></tr><tr><td><code>not verified</code></td><td>the record is not in an accepted state (see the badge and the note above the table); the numbers are shown as extracted, not endorsed.</td></tr></tbody></table>
-</details>
+_No comparable checks._
 
 ## Raw artifacts
 
@@ -126,4 +82,4 @@ _No web simulator for this record: its structure has no shared WebAssembly templ
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-09-15 09:03 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 17:34 UTC</sub>

@@ -4,7 +4,7 @@
 
 # nortriptyline — `Nortriptyline_Usach2022_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -16,17 +16,25 @@
 
 **Model:** No model was generated from this record.
 
-> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+### Reviewer guidance
+
+**The nortriptyline rat percutaneous-gel model was rejected because its clearance and volume parameters fall outside physiological plausibility, suggesting a unit or scale extraction error (CL 1580 mL/h, V1 488 mL, VT 1568 mL).**
+
+The record reports total clearance of 1580 mL/h, a central volume of 488 mL and a steady-state volume of 1568 mL for nortriptyline in rats, magnitudes flagged as physiologically implausible and consistent with a unit or scale extraction error. The structure is a one-compartment model (1C), yet two-compartment parameters are also present: intercompartmental clearance Q of 3340 mL/h and peripheral volume VT of 1568 mL, which exceeds the central volume. Absorption parameters (ka 0.24 h−1, tlag 1.33 h) were extracted without issue. Extracted — nortriptyline: CL 1.58e+03 mL/h, V 488 mL, Vss 1.57e+03 mL, Q 3.34e+03 mL/h, kabs 0.24 h−1, tlag 1.33 h.
+
+<sub>reviewed by glm-5.3-flash</sub>
+
+> ⚠️ **STALE** — review status `rejected` (reviewed 2026-10-06 23:52:26.289797+00:00) predates the upstream re-run (2026-10-07 18:49:17.699006+00:00). Current validate status: `rejected`.
 
 ## Citation
 Usach I et al., The Usefulness of In Vitro Percutaneous…, Pharmaceutics (2022)
   ·  DOI: [10.3390/pharmaceutics14071457](https://doi.org/10.3390/pharmaceutics14071457)
 
 ## Model component
-<dbs-pgx drug="nortriptyline" model-id="Nortriptyline_Usach2022_reference" status="rejected" stale="false" population="rats dosed percutaneously with NT gel" measured-compound="nortriptyline" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<dbs-pgx drug="nortriptyline" model-id="Nortriptyline_Usach2022_reference" status="rejected" stale="true" population="rats" measured-compound="nortriptyline" parameterization="mechanistic" topology="2C"></dbs-pgx>
 
-**Model structure:** 1-compartment; no model was built for this record.  
-**Parameters:** 6 extracted.
+**Model structure:** 2-compartment; no model was built for this record.  
+**Parameters:** 5 extracted.
 
 **Parameterization:** mechanistic.
 
@@ -36,9 +44,8 @@ Usach I et al., The Usefulness of In Vitro Percutaneous…, Pharmaceutics (2022)
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
 | CL (mL/h) | `Q22` · CL | 1580 | mL/h | 4.388888888888889e-07 | [ml] / [h] | not captured | exact (1.0) | pharmaceutics-14-01457-t001:row1:col1 | — | not captured |
-| V1 (mL) | `Q61` · V | 488 | mL | 0.000488 | [ml] | not captured | exact (1.0) | pharmaceutics-14-01457-t001:row2:col1 | — | not captured |
-| VT (mL) | `Q65` · Vss | 1568 | mL | 0.001568 | [ml] | not captured | llm (0.6) | pharmaceutics-14-01457-t001:row3:col1 | — | not captured |
-| CLic (mL/h) | `Q30` · Q | 3340 | mL/h | 9.277777777777777e-07 | [ml] / [h] | not captured | llm (0.6) | pharmaceutics-14-01457-t001:row4:col1 | — | not captured |
+| V1 (mL) | `Q63` · V1 | 488 | mL | 0.000488 | [ml] | not captured | exact (1.0) | pharmaceutics-14-01457-t001:row2:col1 | — | not captured |
+| VT (mL) | `Q61` · V | 1568 | mL | 0.001568 | [ml] | not captured | llm (0.6) | pharmaceutics-14-01457-t001:row3:col1 | — | not captured |
 | ka | `Q49` · kabs | 0.24 | h−1 | 6.666666666666667e-05 | 1/h | not captured | review_gapfill (0.7) | Tylutki_2018:review | — | not captured |
 | tlag | `Q83` · tlag | 1.33 | h | 4788.0 | h | not captured | review_gapfill (0.7) | Tylutki_2018:review | — | not captured |
 
@@ -50,11 +57,8 @@ Usach I et al., The Usefulness of In Vitro Percutaneous…, Pharmaceutics (2022)
 ## Departures & gaps
 
 **Interpretation flags:**
-- column 'value ± se' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
+- dropped unlinked row (NIL): 'CLic (mL/h)' — extend the ontology if this is a real PK parameter (source ['pharmaceutics-14-01457-t001:row4:col1'])
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=nortriptyline
-- structure disagreement: deterministic 1C vs LLM 2C — review compartment count
-- 1C volume normalization: Q63→Q61 (single-compartment model has no central/peripheral split; 'V1 (mL)' is the general volume)
-- skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
 - gap-filled Q49 (kabs) from Tylutki_2018's review values (primary lacked it)
 - gap-filled Q83 (tlag) from Tylutki_2018's review values (primary lacked it)
 
@@ -67,20 +71,19 @@ Usach I et al., The Usefulness of In Vitro Percutaneous…, Pharmaceutics (2022)
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 4 | not captured | not captured | not captured |
+| C0_has_structural_params | pass | not captured | 3 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['pharmaceutics-14-01457-t001:row1:col1'] |
-| C5_dimension_Q30 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['pharmaceutics-14-01457-t001:row4:col1'] |
 | C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['Tylutki_2018:review'] |
-| C5_dimension_Q61 | pass | [length] ** 3 | not captured | not captured | not captured | ['pharmaceutics-14-01457-t001:row2:col1'] |
-| C5_dimension_Q65 | pass | [length] ** 3 | not captured | not captured | not captured | ['pharmaceutics-14-01457-t001:row3:col1'] |
+| C5_dimension_Q61 | pass | [length] ** 3 | not captured | not captured | not captured | ['pharmaceutics-14-01457-t001:row3:col1'] |
+| C5_dimension_Q63 | pass | [length] ** 3 | not captured | not captured | not captured | ['pharmaceutics-14-01457-t001:row2:col1'] |
 | C5_dimension_Q83 | pass | [time] | not captured | not captured | not captured | ['Tylutki_2018:review'] |
 | C6_cl_magnitude | fail | &lt;= 90.0 L/h | 1580.0 | not captured | not captured | ['pharmaceutics-14-01457-t001:row1:col1'] |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
 | C9_phys_window_Q22 | pass | clearance within physiological range | 1.58 L/h | not captured | not captured | ['pharmaceutics-14-01457-t001:row1:col1'] |
-| C9_phys_window_Q61 | fail | volume within physiological range | 0.488 L | not captured | not captured | ['pharmaceutics-14-01457-t001:row2:col1'] |
-| C9_phys_window_Q65 | pass | volume within physiological range | 1.57 L | not captured | not captured | ['pharmaceutics-14-01457-t001:row3:col1'] |
+| C9_phys_window_Q61 | pass | volume within physiological range | 1.57 L | not captured | not captured | ['pharmaceutics-14-01457-t001:row3:col1'] |
+| C9_phys_window_Q63 | fail | volume within physiological range | 0.488 L | not captured | not captured | ['pharmaceutics-14-01457-t001:row2:col1'] |
 
 <details class="legend">
 <summary>Check legend — what each column means</summary>
@@ -105,4 +108,4 @@ _No web simulator for this record: its structure has no shared WebAssembly templ
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-06 23:28 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 18:49 UTC</sub>

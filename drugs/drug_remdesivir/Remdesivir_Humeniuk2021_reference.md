@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;J05A&quot;,&quot;href&quot;:&quot;atc/J05A.md&quot;},{&quot;label&quot;:&quot;remdesivir&quot;,&quot;href&quot;:&quot;drugs/drug_remdesivir/&quot;},{&quot;label&quot;:&quot;Humeniuk_2021 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Remdesivir_Morrisette2020_reference&quot;,&quot;label&quot;:&quot;Morrisette_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_remdesivir/Remdesivir_Morrisette2020_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Remdesivir_Humeniuk2021_reference&quot;,&quot;label&quot;:&quot;Humeniuk_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_remdesivir/Remdesivir_Humeniuk2021_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Remdesivir_Morrisette2020_reference&quot;,&quot;label&quot;:&quot;Morrisette_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_remdesivir/Remdesivir_Morrisette2020_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # remdesivir — `Remdesivir_Humeniuk2021_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.688). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">human + animal</span>
+> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.688). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">human + animal</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -15,7 +15,7 @@
 
 > **Species: human + animal.** The paper reports both human and animal data; check which group this record describes before reading it as human pharmacology (read from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).
 
-**Model:** No model was generated from this record.
+**Model:** A simulatable model was generated — see the **Models** and **Simulation** tabs.
 
 ### Reviewer guidance
 
@@ -27,25 +27,25 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on paramet
 
 <sub>reviewed by rule template (no LLM)</sub>
 
+> ⚠️ **STALE** — review status `needs_review` (reviewed 2026-10-05 09:31:27.542413+00:00) predates the upstream re-run (2026-10-07 16:31:57.336704+00:00). Current validate status: `extracted`.
+
 ## Citation
 Humeniuk R et al., Pharmacokinetic, Pharmacodynamic, and D…, Clinical pharmacokinetics (2021)
   ·  DOI: [10.1007/s40262-021-00984-5](https://doi.org/10.1007/s40262-021-00984-5)
 
 ## Model component
-<dbs-pgx drug="remdesivir" model-id="Remdesivir_Humeniuk2021_reference" status="needs_review" stale="false" population="healthy adults" measured-compound="remdesivir" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<dbs-pgx drug="remdesivir" model-id="Remdesivir_Humeniuk2021_reference" status="extracted" stale="true" population="healthy adults" measured-compound="remdesivir" parameterization="mechanistic" topology="1C"></dbs-pgx>
 
-**Model structure:** 1-compartment; no model was built for this record.  
+**Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameters:** 2 extracted.
 
 **Parameterization:** mechanistic.
 
 ## Parameters
-> ⚠️ This record is not accepted (current status `needs_review`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
-
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| Mean total clearance | `Q22` · CL | 1171.0 | mL/min | 1.9516666666666666e-05 | L/h | not captured | review (0.7) | Humeniuk_2021:review | — | not captured |
-| mean volume of distribution | `Q61` · V | 93.0 | L | 0.093 | L | not captured | review (0.7) | Humeniuk_2021:review | — | not captured |
+| RDV CLss | `Q22` · CL | 65.1 | L/h | 1.808333333333333e-05 | L/h | not captured | review (0.7) | Humeniuk_2021:review | — | not captured |
+| RDV Vz | `Q61` · V | 92.6 | L | 0.0926 | L | not captured | review (0.7) | Humeniuk_2021:review | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -98,10 +98,10 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 | C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Humeniuk_2021:review'] |
 | C5_dimension_Q61 | pass | [length] ** 3 | not captured | not captured | not captured | ['Humeniuk_2021:review'] |
-| C6_cl_magnitude | fail | &lt;= 90.0 L/h | 1171.0 | not captured | not captured | ['Humeniuk_2021:review'] |
+| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 65.1 | not captured | not captured | ['Humeniuk_2021:review'] |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
-| C9_phys_window_Q22 | pass | clearance within physiological range | 70.3 L/h | not captured | not captured | ['Humeniuk_2021:review'] |
-| C9_phys_window_Q61 | pass | volume within physiological range | 93 L | not captured | not captured | ['Humeniuk_2021:review'] |
+| C9_phys_window_Q22 | pass | clearance within physiological range | 65.1 L/h | not captured | not captured | ['Humeniuk_2021:review'] |
+| C9_phys_window_Q61 | pass | volume within physiological range | 92.6 L | not captured | not captured | ['Humeniuk_2021:review'] |
 
 <details class="legend">
 <summary>Check legend — what each column means</summary>
@@ -119,21 +119,26 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_remdesivir/Remdesivir_Humeniuk2021_reference/Remdesivir_Humeniuk2021_reference_modelica.zip" download>Remdesivir_Humeniuk2021_reference_modelica.zip</a> <span class="pk-size">(3.5 kB)</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_remdesivir/Remdesivir_Humeniuk2021_reference/Remdesivir_Humeniuk2021_reference_fmi.zip" download>Remdesivir_Humeniuk2021_reference_fmi.zip</a> <span class="pk-size">(4.1 kB)</span><br><a href="models/fmu/PK_1C.fmu" download>PK_1C.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_remdesivir/Remdesivir_Humeniuk2021_reference/Remdesivir_Humeniuk2021_reference_matlab.zip" download>Remdesivir_Humeniuk2021_reference_matlab.zip</a> <span class="pk-size">(3.3 kB)</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_remdesivir/Remdesivir_Humeniuk2021_reference/Remdesivir_Humeniuk2021_reference_matlab_simbio.zip" download>Remdesivir_Humeniuk2021_reference_matlab_simbio.zip</a> <span class="pk-size">(2.7 kB)</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_remdesivir/Remdesivir_Humeniuk2021_reference/Remdesivir_Humeniuk2021_reference_sbml.zip" download>Remdesivir_Humeniuk2021_reference_sbml.zip</a> <span class="pk-size">(2.4 kB)</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_remdesivir/Remdesivir_Humeniuk2021_reference/Remdesivir_Humeniuk2021_reference_cellml.zip" download>Remdesivir_Humeniuk2021_reference_cellml.zip</a> <span class="pk-size">(2.9 kB)</span></td></tr>
 </tbody></table>
-<p>No bundles have been generated for this record yet. When the engineer emits them they appear here automatically — this page reports what is on disk and generates nothing itself.</p>
-</div></div>
+<p>Each archive holds the model source, a script that simulates it against the appropriate library, and a README describing both and how to run them.</p>
+<p><b>FMI is two downloads.</b> The archive holds this record's parameters and its driver; the simulator itself is <code>PK_1C.fmu</code>, one compiled template shared by every model of this structure. Take the FMU once, keep it beside the script (or pass <code>--fmu PATH</code>). Running it reproduces the model-specific FMU exactly.</p>
+</div><figure class="pk-models-diagram"><img src="drugs/drug_remdesivir/Remdesivir_Humeniuk2021_reference/Remdesivir_Humeniuk2021_reference.svg" alt="Remdesivir_Humeniuk2021_reference diagram"><figcaption>Model diagram (Modelica) using Pharmacolibrary v26.09 components, rendered by OpenModelica 1.26.7.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+**Administration: intravenous** — 120 mg infusion over 10 min, single dose. _The paper's dose was not captured; the default is the WHO ATC DDD 120 mg parenteral (J05AB16) (defined daily dose)._
+
+<dbs-fmusim paramsurl="drugs/drug_remdesivir/Remdesivir_Humeniuk2021_reference/Remdesivir_Humeniuk2021_reference_params.json" metaurl="assets/fmu/PK_1C.vr.json" wasmurl="assets/fmu/PK_1C.js" controlsurl="drugs/drug_remdesivir/Remdesivir_Humeniuk2021_reference/Remdesivir_Humeniuk2021_reference_sim_controls.json"></dbs-fmusim>
+
+<sub>Runs this record's model in the browser as WebAssembly. Sliders start at the extracted values; the reference check compares the browser's peak against the FMPy result recorded when the record was built, and is withheld once a value has been edited. Template `PK_1C` · parameters `Remdesivir_Humeniuk2021_reference_params.json` · controls `Remdesivir_Humeniuk2021_reference_sim_controls.json`. A slider marked *simulator value* is running on the template's own default because this record does not pin that parameter.</sub>
 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-03 10:45 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 16:31 UTC</sub>
