@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;J01M&quot;,&quot;href&quot;:&quot;atc/J01M.md&quot;},{&quot;label&quot;:&quot;ciprofloxacin&quot;,&quot;href&quot;:&quot;drugs/drug_ciprofloxacin/&quot;},{&quot;label&quot;:&quot;Ambros_2025 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Ciprofloxacin_Haefliger2025_reference&quot;,&quot;label&quot;:&quot;Haefliger_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ciprofloxacin/Ciprofloxacin_Haefliger2025_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ciprofloxacin_Zhu2026_reference&quot;,&quot;label&quot;:&quot;Zhu_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ciprofloxacin/Ciprofloxacin_Zhu2026_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ciprofloxacin_Alihodzic2022_reference&quot;,&quot;label&quot;:&quot;Alihodzic_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ciprofloxacin/Ciprofloxacin_Alihodzic2022_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ciprofloxacin_Alonso2021_reference&quot;,&quot;label&quot;:&quot;Alonso_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ciprofloxacin/Ciprofloxacin_Alonso2021_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ciprofloxacin_Dowling1995_reference&quot;,&quot;label&quot;:&quot;Dowling_1995_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ciprofloxacin/Ciprofloxacin_Dowling1995_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ciprofloxacin_Guo2022_reference&quot;,&quot;label&quot;:&quot;Guo_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ciprofloxacin/Ciprofloxacin_Guo2022_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ciprofloxacin_Papich2017_reference&quot;,&quot;label&quot;:&quot;Papich_2017_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ciprofloxacin/Ciprofloxacin_Papich2017_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ciprofloxacin_Sang2015_reference&quot;,&quot;label&quot;:&quot;Sang_2015_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ciprofloxacin/Ciprofloxacin_Sang2015_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ciprofloxacin_Santavy2023_reference&quot;,&quot;label&quot;:&quot;Santavy_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ciprofloxacin/Ciprofloxacin_Santavy2023_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Zhu_2026_BIS&quot;,&quot;label&quot;:&quot;Zhu_2026 \u00b7 BIS&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_ciprofloxacin/pd_Zhu_2026_BIS.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Sadouki_2025_CFU_mL&quot;,&quot;label&quot;:&quot;Sadouki_2025 \u00b7 CFU/mL&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_ciprofloxacin/pd_Sadouki_2025_CFU_mL.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Ciprofloxacin_Dowling1995_reference&quot;,&quot;label&quot;:&quot;Dowling_1995_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ciprofloxacin/Ciprofloxacin_Dowling1995_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ciprofloxacin_Garg2024_reference&quot;,&quot;label&quot;:&quot;Garg_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ciprofloxacin/Ciprofloxacin_Garg2024_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ciprofloxacin_Guo2022_reference&quot;,&quot;label&quot;:&quot;Guo_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ciprofloxacin/Ciprofloxacin_Guo2022_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ciprofloxacin_Haefliger2025_reference&quot;,&quot;label&quot;:&quot;Haefliger_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ciprofloxacin/Ciprofloxacin_Haefliger2025_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ciprofloxacin_Papich2017_reference&quot;,&quot;label&quot;:&quot;Papich_2017_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ciprofloxacin/Ciprofloxacin_Papich2017_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ciprofloxacin_Sang2015_reference&quot;,&quot;label&quot;:&quot;Sang_2015_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ciprofloxacin/Ciprofloxacin_Sang2015_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ciprofloxacin_Santavy2023_reference&quot;,&quot;label&quot;:&quot;Santavy_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ciprofloxacin/Ciprofloxacin_Santavy2023_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ciprofloxacin_Zhu2026_reference&quot;,&quot;label&quot;:&quot;Zhu_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ciprofloxacin/Ciprofloxacin_Zhu2026_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ciprofloxacin_Alihodzic2022_reference&quot;,&quot;label&quot;:&quot;Alihodzic_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ciprofloxacin/Ciprofloxacin_Alihodzic2022_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Zhu_2026_BIS&quot;,&quot;label&quot;:&quot;Zhu_2026 \u00b7 BIS&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_ciprofloxacin/pd_Zhu_2026_BIS.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # ciprofloxacin — `Ciprofloxacin_Ambros2025_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. The first reading is what the record holds.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (goat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">goat</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. The first reading is what the record holds.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (goat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">goat</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -25,6 +25,8 @@ The metabolite ciprofloxacin, formed from enrofloxacin in the central compartmen
 
 <sub>reviewed by glm-5.3-flash</sub>
 
+> ⚠️ **STALE** — review status `rejected` (reviewed 2026-10-05 09:25:19.282981+00:00) predates the upstream re-run (2026-10-07 11:35:03.846626+00:00). Current validate status: `rejected`.
+
 > **Dose compound ≠ measured compound:** dosed `enrofloxacin`, measured `ciprofloxacin`.
 
 ## Citation
@@ -32,7 +34,7 @@ Ambros LA et al., Pharmacokinetic and Pharmacodynamic Mod…, Veterinary science
   ·  DOI: [10.3390/vetsci12060588](https://doi.org/10.3390/vetsci12060588)
 
 ## Model component
-<dbs-pgx drug="ciprofloxacin" model-id="Ciprofloxacin_Ambros2025_reference" status="rejected" stale="false" population="pregnant goats" measured-compound="ciprofloxacin" parameterization="apparent" topology="manual_model_class"></dbs-pgx>
+<dbs-pgx drug="ciprofloxacin" model-id="Ciprofloxacin_Ambros2025_reference" status="rejected" stale="true" population="pregnant goats" measured-compound="ciprofloxacin" parameterization="apparent" topology="manual_model_class"></dbs-pgx>
 
 **Model structure:** nonlinear / manual; no model was built for this record.  
 **Parameters:** 14 extracted.
@@ -57,7 +59,7 @@ Ambros LA et al., Pharmacokinetic and Pharmacodynamic Mod…, Veterinary science
 | AUC (mg/L/h) | `Q88` · AUC | 3.95 | mg/L/h | not captured | [mg] / [[h] · [l]] | not captured | exact (1.0) | vetsci-12-00588-t001:row20:col1, vetsci-12-00588-t001:row20:col3, vetsci-12-00588-t001:row20:col4, vetsci-12-00588-t001:row26:col1, vetsci-12-00588-t001:row26:col3, vetsci-12-00588-t001:row26:col4 | — | 37.12 (None% RSE) |
 | Vss (L/kg) | `Q65` · Vss | 3.65 | L/kg | 0.2555 | [l] / [kg] | not captured | exact (1.0) | vetsci-12-00588-t001:row21:col1, vetsci-12-00588-t001:row21:col3, vetsci-12-00588-t001:row21:col4 | — | 21.90 (None% RSE) |
 | t1/2e (h) | `Q57` · t1/2z | 3.15 | h | 11340.0 | [h] | not captured | llm_confirmed (0.6) | vetsci-12-00588-t001:row22:col1, vetsci-12-00588-t001:row22:col3, vetsci-12-00588-t001:row22:col4 | — | 26.89 (None% RSE) |
-| CL/F (L/h) | `Q27` · CL/F | 144.0 | L/h | 4e-05 | L/h | not captured | review_gapfill (0.7) | Alonso_2021:review | — | not captured |
+| Cl/F | `Q27` · CL/F | 48.47 | mL/h/kg | 9.424722222222222e-07 | L/h | not captured | review_gapfill (0.7) | Sang_2015:review | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -86,7 +88,7 @@ Ambros LA et al., Pharmacokinetic and Pharmacodynamic Mod…, Veterinary science
 - unit_dimension_mismatch: 'Vmax (mg/L/h)' → Q66 (unit '[mass] / [length] ** 3 / [time]' vs ontology '[length] ** 3') — route to review
 - unit_dimension_mismatch: 'AUC (mg/L/h)' → Q88 (unit '[mass] / [length] ** 3 / [time]' vs ontology '[mass] * [time] / [length] ** 3') — route to review
 - dropped unlinked row (NIL): 'MR' — extend the ontology if this is a real PK parameter (source ['vetsci-12-00588-t001:row27:col1', 'vetsci-12-00588-t001:row27:col3', 'vetsci-12-00588-t001:row27:col4'])
-- implicit units: 'Ka (1/h)' → 1/h (from the popPK convention: 'Ka is an absorption rate constant (first-order), and the standard unit for first-order rate constants in population PK i')
+- implicit units: 'Ka (1/h)' → 1/h (from the paper text: "Table caption defines 'Ka: absorption constant'. The paper text lists 'Ka (absorption constant)' as a PK parameter. Whil")
 - metabolite ciprofloxacin: Q22→Q375 — only the metabolite is measured and fm is not identifiable, so its CL/V are apparent (fm-divided), normalised to a standard size
 - apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=ciprofloxacin
 - held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
@@ -94,11 +96,12 @@ Ambros LA et al., Pharmacokinetic and Pharmacodynamic Mod…, Veterinary science
 - template fit: none — nonlinear / manual model class
 - status held at route_to_review — not promoted
 - row roles (LLM): model_class=compartmental; 16/16 row label(s) assigned, 20 linked by role; re-tagged parent→ciprofloxacin ×14
-- gap-filled Q27 (CL/F) from Alonso_2021's review values (primary lacked it)
+- gap-filled Q27 (CL/F) from Sang_2015's review values (primary lacked it)
 - skipped review gap-fill of TLAG: primary's parameterization (rate-constant / ka-only) does not use it
 
 **Extraction notes:**
 - LLM selected parameter table(s) 1
+- LLM region Ambros_2025:other_prose: Error code: 429 - {'error': {'message': 'Rate limit exceeded for api_key: 8d79104cac3d0b5a8019d9c3dd60ff02e7a84591fb3552ddb3bbcabd52b31d23. Limit type: max_parallel_requests. Current limit: 4, Remaining: 0. Limit resets at: 2026-10-07 12:06:44 UTC', 'type': 'throttling_error', 'param': None, 'code': '429'}}
 
 ## Validation
 
@@ -110,7 +113,7 @@ Ambros LA et al., Pharmacokinetic and Pharmacodynamic Mod…, Veterinary science
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
 | C5_dimension_Q1 | pass | [mass] / [length] ** 3 | not captured | not captured | not captured | ['vetsci-12-00588-t001:row12:col1', 'vetsci-12-00588-t001:row12:col3', 'vetsci-12-00588-t001:row12:col4'] |
-| C5_dimension_Q27 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Alonso_2021:review'] |
+| C5_dimension_Q27 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Sang_2015:review'] |
 | C5_dimension_Q30 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['vetsci-12-00588-t001:row7:col1', 'vetsci-12-00588-t001:row7:col3'] |
 | C5_dimension_Q375 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['vetsci-12-00588-t001:row5:col1', 'vetsci-12-00588-t001:row5:col3', 'vetsci-12-00588-t001:row5:col4'] |
 | C5_dimension_Q375 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['vetsci-12-00588-t001:row10:col1', 'vetsci-12-00588-t001:row10:col3', 'vetsci-12-00588-t001:row10:col4'] |
@@ -123,7 +126,7 @@ Ambros LA et al., Pharmacokinetic and Pharmacodynamic Mod…, Veterinary science
 | C5_dimension_Q88 | fail | [mass] / [length] ** 3 / [time] | mg/L/h | not captured | not captured | ['vetsci-12-00588-t001:row20:col1', 'vetsci-12-00588-t001:row20:col3', 'vetsci-12-00588-t001:row20:col4', 'vetsci-12-00588-t001:row26:col1', 'vetsci-12-00588-t001:row26:col3', 'vetsci-12-00588-t001:row26:col4'] |
 | C7_apparent_coherence | fail | F==1, Fm==1, no molar corr. | absolute F=0.8 with apparent parameterization | not captured | not captured | not captured |
 | C8_topology | fail | not captured | not captured | not captured | not captured | not captured |
-| C9_phys_window_Q27 | pass | clearance within physiological range | 144 L/h | not captured | not captured | ['Alonso_2021:review'] |
+| C9_phys_window_Q27 | pass | clearance within physiological range | 3.39 L/h | not captured | not captured | ['Sang_2015:review'] |
 | C9_phys_window_Q63 | pass | volume within physiological range | 45.5 L | not captured | not captured | ['vetsci-12-00588-t001:row6:col1', 'vetsci-12-00588-t001:row6:col3'] |
 | C9_phys_window_Q64 | pass | volume within physiological range | 198 L | not captured | not captured | ['vetsci-12-00588-t001:row8:col1', 'vetsci-12-00588-t001:row8:col3', 'vetsci-12-00588-t001:row8:col4'] |
 | C9_phys_window_Q65 | pass | volume within physiological range | 256 L | not captured | not captured | ['vetsci-12-00588-t001:row21:col1', 'vetsci-12-00588-t001:row21:col3', 'vetsci-12-00588-t001:row21:col4'] |
@@ -151,4 +154,4 @@ _No web simulator for this record: its structure has no shared WebAssembly templ
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-03 18:50 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 11:35 UTC</sub>

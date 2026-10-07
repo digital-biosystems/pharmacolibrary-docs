@@ -1,0 +1,34 @@
+{
+ "dose_source": "WHO ATC DDD 2000 mg oral (J01CA01)",
+ "model_id": "Ampicillin_Judy2024_reference",
+ "molar_masses": {
+  "central.C": 0.34940499999999997
+ },
+ "note": "Values for the shared PK_2C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "parameters": {
+  "Cl": 2.2888888888888888e-05,
+  "F": 0.9,
+  "MM": 0.34940499999999997,
+  "Tlag": 0.0,
+  "VdPerKg": 0.0010742857142857143,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 0.002,
+  "k12": 7.720153664302599e-05,
+  "k21": 9.501727586833969e-05,
+  "ka": 0.0017916666666666667,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 1351.669542754366
+ },
+ "reference_peaks": {
+  "central.C": 0.011688229086207312
+ },
+ "stop_time": 86400.0,
+ "template": "PK_2C_enteral",
+ "template_fmu": "PK_2C_enteral.fmu"
+}

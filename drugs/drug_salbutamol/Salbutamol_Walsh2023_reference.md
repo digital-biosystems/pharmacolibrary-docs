@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;R03A&quot;,&quot;href&quot;:&quot;atc/R03A.md&quot;},{&quot;label&quot;:&quot;salbutamol&quot;,&quot;href&quot;:&quot;drugs/drug_salbutamol/&quot;},{&quot;label&quot;:&quot;Walsh_2023 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Salbutamol_Marques2024v2_reference&quot;,&quot;label&quot;:&quot;Marques_2024_2_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_salbutamol/Salbutamol_Marques2024v2_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Salbutamol_Walsh2023_reference&quot;,&quot;label&quot;:&quot;Walsh_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_salbutamol/Salbutamol_Walsh2023_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;pd_Walsh_2023_Glucose&quot;,&quot;label&quot;:&quot;Walsh_2023 \u00b7 Glucose&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_salbutamol/pd_Walsh_2023_Glucose.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Salbutamol_Marques2024v2_reference&quot;,&quot;label&quot;:&quot;Marques_2024_2_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_salbutamol/Salbutamol_Marques2024v2_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Walsh_2023_Glucose&quot;,&quot;label&quot;:&quot;Walsh_2023 \u00b7 Glucose&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_salbutamol/pd_Walsh_2023_Glucose.md&quot;,&quot;status&quot;:&quot;accepted (caveats)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # salbutamol — `Salbutamol_Walsh2023_reference`
 
-> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.75). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.75). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -13,7 +13,7 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
-**Model:** A simulatable model was generated — see the **Models** and **Simulation** tabs.
+**Model:** No model was generated from this record.
 
 ### Reviewer guidance
 
@@ -23,21 +23,23 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 
 <sub>reviewed by rule template (no LLM)</sub>
 
-> ⚠️ **STALE** — review status `curated_candidate` (reviewed 2026-09-28 14:40:28.915529+00:00) predates the upstream re-run (2026-10-03 21:42:56.645920+00:00). Current validate status: `extracted`.
+> ⚠️ **STALE** — review status `curated_candidate` (reviewed 2026-09-28 14:40:28.915529+00:00) predates the upstream re-run (2026-10-07 14:20:11.600387+00:00). Current validate status: `rejected`.
 
 ## Citation
 Walsh S et al., Optimising intravenous salbutamol in ch…, Archives of disease in chil… (2023)
   ·  DOI: [10.1136/archdischild-2022-324008](https://doi.org/10.1136/archdischild-2022-324008)
 
 ## Model component
-<dbs-pgx drug="salbutamol" model-id="Salbutamol_Walsh2023_reference" status="extracted" stale="true" population="children with acute asthma" measured-compound="salbutamol" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<dbs-pgx drug="salbutamol" model-id="Salbutamol_Walsh2023_reference" status="rejected" stale="true" population="children with acute asthma" measured-compound="salbutamol" parameterization="mechanistic" topology="2C"></dbs-pgx>
 
-**Model structure:** 2-compartment, oral mammillary model — template `PK_2C_enteral`.  
-**Parameters:** 6 extracted.
+**Model structure:** 2-compartment; no model was built for this record.  
+**Parameters:** 7 extracted.
 
 **Parameterization:** mechanistic.
 
 ## Parameters
+> ⚠️ This record is not accepted (current status `rejected`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
+
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
 | Bioavailability [0-1] | `Q40` · Fab | 0.0925 | not captured | not captured | not captured | not captured | llm_confirmed (0.6) | Walsh_2023_table_p23_1:row1:col1 | — | not captured |
@@ -46,6 +48,7 @@ Walsh S et al., Optimising intravenous salbutamol in ch…, Archives of disease 
 | Vc (l) | `Q63` · V1 | 1.79 | l | 0.0017900000000000001 | [l] | not captured | exact (1.0) | Walsh_2023_table_p23_1:row4:col1, Walsh_2023_table_p23_1:row4:col2 | — | not captured |
 | Q (l/h) | `Q30` · Q | 8.58 | l/h | 2.3833333333333335e-06 | [l] / [h] | not captured | exact (1.0) | Walsh_2023_table_p23_1:row5:col1 | — | not captured |
 | Vp (l) | `Q64` · V2 | 6.45 | l | 0.00645 | [l] | not captured | exact (1.0) | Walsh_2023_table_p23_1:row6:col1, Walsh_2023_table_p23_1:row6:col2 | — | not captured |
+| BASE (ng/ml) | `Q86` · C0 | 1.04 | ng/ml | not captured | [ng] / [ml] | not captured | llm (0.6) | Walsh_2023_table_p23_1:row7:col1 | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -54,15 +57,12 @@ Walsh S et al., Optimising intravenous salbutamol in ch…, Archives of disease 
 
 ## Departures & gaps
 
-**Deviations:**
-- `defaulted_parameters`: ['Tlag']
-
 **Interpretation flags:**
 - table section residual_error: 'Proportional Error' routed out of structural estimates ('Residual variability')
 - table section residual_error: 'Additive Error (ng/ml)' routed out of structural estimates ('Residual variability')
 - table section residual_error: 'Additive on logit-scale' routed out of structural estimates ('Residual variability')
 - table section residual_error: 'Additive Error (bpm)' routed out of structural estimates ('Residual variability')
-- dropped unlinked row (NIL): 'BASE (ng/ml)' — extend the ontology if this is a real PK parameter (source ['Walsh_2023_table_p23_1:row7:col1'])
+- unit_dimension_mismatch: 'BASE (ng/ml)' → Q86 (unit '[mass] / [length] ** 3' vs ontology '[mass] * [time] / [length] ** 3') — route to review
 - dropped PD-category row 'E0 (fraction of PASS-score [0-9])' → Q324 (E0, category G11) — pharmacodynamic parameters belong to scholarpd, not the PK model (source ['Walsh_2023_table_p23_1:row11:col1', 'Walsh_2023_table_p23_1:row11:col2'])
 - dropped PD-category row 'EMAX (fraction of PASS-score [0-9])' → Q320 (Emax, category G11) — pharmacodynamic parameters belong to scholarpd, not the PK model (source ['Walsh_2023_table_p23_1:row12:col1'])
 - dropped PD-category row 'EC50 (ng/ml)' → Q321 (EC50, category G11) — pharmacodynamic parameters belong to scholarpd, not the PK model (source ['Walsh_2023_table_p23_1:row13:col1', 'Walsh_2023_table_p23_1:row19:col1', 'Walsh_2023_table_p23_1:row19:col2', 'Walsh_2023_table_p23_1:row24:col1', 'Walsh_2023_table_p23_1:row24:col2'])
@@ -71,8 +71,9 @@ Walsh S et al., Optimising intravenous salbutamol in ch…, Archives of disease 
 - dropped PD-category row 'EMAX' → Q320 (Emax, category G11) — pharmacodynamic parameters belong to scholarpd, not the PK model (source ['Walsh_2023_table_p23_1:row18:col1', 'Walsh_2023_table_p23_1:row18:col2', 'Walsh_2023_table_p23_1:row23:col1'])
 - dropped PD-category row 'E0 (z-score)' → Q324 (E0, category G11) — pharmacodynamic parameters belong to scholarpd, not the PK model (source ['Walsh_2023_table_p23_1:row22:col1', 'Walsh_2023_table_p23_1:row22:col2'])
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=salbutamol
+- held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
+- status held at route_to_review — not promoted
 - skipped review gap-fill of TLAG: primary's parameterization (rate-constant / ka-only) does not use it
-- dropped unlinked row (NIL): 'Additive on logit-scale' — extend the ontology if this is a real PK parameter (source ['Walsh_2023_table_p23_1:row15:col3'])
 
 ## Validation
 
@@ -103,7 +104,7 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 6 | not captured | not captured | not captured |
+| C0_has_structural_params | pass | not captured | 7 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Walsh_2023_table_p23_1:row3:col1', 'Walsh_2023_table_p23_1:row3:col2'] |
@@ -111,6 +112,7 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 | C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['Walsh_2023_table_p23_1:row2:col1'] |
 | C5_dimension_Q63 | pass | [length] ** 3 | not captured | not captured | not captured | ['Walsh_2023_table_p23_1:row4:col1', 'Walsh_2023_table_p23_1:row4:col2'] |
 | C5_dimension_Q64 | pass | [length] ** 3 | not captured | not captured | not captured | ['Walsh_2023_table_p23_1:row6:col1', 'Walsh_2023_table_p23_1:row6:col2'] |
+| C5_dimension_Q86 | fail | [mass] / [length] ** 3 | ng/ml | not captured | not captured | ['Walsh_2023_table_p23_1:row7:col1'] |
 | C6_cl_magnitude | pass | &lt;= 90.0 L/h | 0.522 | not captured | not captured | ['Walsh_2023_table_p23_1:row3:col1', 'Walsh_2023_table_p23_1:row3:col2'] |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
 | C9_phys_window_Q22 | pass | clearance within physiological range | 0.522 L/h | not captured | not captured | ['Walsh_2023_table_p23_1:row3:col1', 'Walsh_2023_table_p23_1:row3:col2'] |
@@ -143,30 +145,15 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
-## Downloadable models
+## Models
 
-<div class="pk-models-grid"><div class="pk-models-table">
-<table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_salbutamol/Salbutamol_Walsh2023_reference/Salbutamol_Walsh2023_reference_modelica.zip" download>Salbutamol_Walsh2023_reference_modelica.zip</a> <span class="pk-size">(4.2 kB)</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_salbutamol/Salbutamol_Walsh2023_reference/Salbutamol_Walsh2023_reference_fmi.zip" download>Salbutamol_Walsh2023_reference_fmi.zip</a> <span class="pk-size">(4.3 kB)</span><br><a href="models/fmu/PK_2C_enteral.fmu" download>PK_2C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_salbutamol/Salbutamol_Walsh2023_reference/Salbutamol_Walsh2023_reference_matlab.zip" download>Salbutamol_Walsh2023_reference_matlab.zip</a> <span class="pk-size">(3.3 kB)</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_salbutamol/Salbutamol_Walsh2023_reference/Salbutamol_Walsh2023_reference_matlab_simbio.zip" download>Salbutamol_Walsh2023_reference_matlab_simbio.zip</a> <span class="pk-size">(2.8 kB)</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_salbutamol/Salbutamol_Walsh2023_reference/Salbutamol_Walsh2023_reference_sbml.zip" download>Salbutamol_Walsh2023_reference_sbml.zip</a> <span class="pk-size">(2.6 kB)</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_salbutamol/Salbutamol_Walsh2023_reference/Salbutamol_Walsh2023_reference_cellml.zip" download>Salbutamol_Walsh2023_reference_cellml.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
-</tbody></table>
-<p>Each archive holds the model source, a script that simulates it against the appropriate library, and a README describing both and how to run them.</p>
-<p><b>FMI is two downloads.</b> The archive holds this record's parameters and its driver; the simulator itself is <code>PK_2C_enteral.fmu</code>, one compiled template shared by every model of this structure. Take the FMU once, keep it beside the script (or pass <code>--fmu PATH</code>). Running it reproduces the model-specific FMU exactly.</p>
-</div><figure class="pk-models-diagram"><img src="drugs/drug_salbutamol/Salbutamol_Walsh2023_reference/Salbutamol_Walsh2023_reference.svg" alt="Salbutamol_Walsh2023_reference diagram"><figcaption>Model diagram (Modelica) using Pharmacolibrary v26.09 components, rendered by OpenModelica 1.26.7.</figcaption></figure></div>
+<p>No downloads: this record is <b>rejected</b>, so it is not published as a model. Any archives generated for it before the verdict have been removed — a download outlives the page that explains it.</p>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-**Administration: oral** — 0.07 mg, single dose, first-order absorption (ka 16.7 /h, F 0.0925). Doses in the paper: 0.07, 1.05 mg.
-
-<dbs-fmusim paramsurl="drugs/drug_salbutamol/Salbutamol_Walsh2023_reference/Salbutamol_Walsh2023_reference_params.json" metaurl="assets/fmu/PK_2C_enteral.vr.json" wasmurl="assets/fmu/PK_2C_enteral.js" controlsurl="drugs/drug_salbutamol/Salbutamol_Walsh2023_reference/Salbutamol_Walsh2023_reference_sim_controls.json"></dbs-fmusim>
-
-<sub>Runs this record's model in the browser as WebAssembly. Sliders start at the extracted values; the reference check compares the browser's peak against the FMPy result recorded when the record was built, and is withheld once a value has been edited. Template `PK_2C_enteral` · parameters `Salbutamol_Walsh2023_reference_params.json` · controls `Salbutamol_Walsh2023_reference_sim_controls.json`. A slider marked *simulator value* is running on the template's own default because this record does not pin that parameter.</sub>
+_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-03 21:42 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 14:20 UTC</sub>

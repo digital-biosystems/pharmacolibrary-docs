@@ -1,10 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;J01M&quot;,&quot;href&quot;:&quot;atc/J01M.md&quot;},{&quot;label&quot;:&quot;moxifloxacin&quot;,&quot;href&quot;:&quot;drugs/drug_moxifloxacin/&quot;},{&quot;label&quot;:&quot;Greenberg_2022 \u00b7 reference&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Moxifloxacin_Greenberg2022_reference&quot;,&quot;label&quot;:&quot;Greenberg_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_moxifloxacin/Moxifloxacin_Greenberg2022_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Moxifloxacin_Nyangwa2026_reference&quot;,&quot;label&quot;:&quot;Nyangwa_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_moxifloxacin/Moxifloxacin_Nyangwa2026_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Moxifloxacin_Xu2024_reference&quot;,&quot;label&quot;:&quot;Xu_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_moxifloxacin/Moxifloxacin_Xu2024_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Moxifloxacin_Yun2022_reference&quot;,&quot;label&quot;:&quot;Yun_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_moxifloxacin/Moxifloxacin_Yun2022_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # moxifloxacin — `Moxifloxacin_Greenberg2022_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span>
+> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -12,7 +13,7 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
-**Model:** No model was generated from this record.
+**Model:** A simulatable model was generated — see the **Models** and **Simulation** tabs.
 
 ### Reviewer guidance
 
@@ -24,30 +25,66 @@ Independently confirmed by `gpt-oss:120b`.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
+> ⚠️ **STALE** — review status `rejected` (reviewed 2026-09-28 14:39:06.015438+00:00) predates the upstream re-run (2026-10-07 12:29:34.488588+00:00). Current validate status: `extracted`.
+
 ## Citation
 Greenberg RG et al., Population Pharmacokinetics of Moxiflox…, Paediatric drugs (2022)
   ·  DOI: [10.1007/s40272-022-00493-3](https://doi.org/10.1007/s40272-022-00493-3)
 
 ## Model component
-<dbs-pgx drug="moxifloxacin" model-id="Moxifloxacin_Greenberg2022_reference" status="rejected" stale="false" population="children" measured-compound="moxifloxacin" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<dbs-pgx drug="moxifloxacin" model-id="Moxifloxacin_Greenberg2022_reference" status="extracted" stale="true" population="children" measured-compound="moxifloxacin" parameterization="mechanistic" topology="1C"></dbs-pgx>
 
-**Model structure:** 1-compartment; no model was built for this record.  
-**Parameters:** 0 extracted.
+**Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
+**Parameters:** 5 extracted.
 
 **Parameterization:** mechanistic.
 
 ## Parameters
-> ⚠️ This record is not accepted (current status `rejected`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
+| label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
+|---|---|---|---|---|---|---|---|---|---|---|
+| CL | `Q22` · CL | 18.2 | L/h | 5.0555555555555555e-06 | L/h | not captured | exact (1.0) | T3:row1:col2 | — | not captured |
+| V | `Q61` · V | 167 | L | 0.167 | L | not captured | exact (1.0) | T3:row2:col2 | — | not captured |
+| F | `Q40` · Fab | 0.76 | not captured | not captured | not captured | not captured | exact (1.0) | T3:row3:col2 | — | 0.20 (0.91% RSE) |
+| ka | `Q49` · kabs | 2.21 | 1/h | 0.0006138888888888889 | 1/h | not captured | exact (1.0) | T3:row4:col2 | — | not captured |
+| t1/2 | `Q57` · t1/2z | 6.36 | h | 22896.0 | h | not captured | exact (1.0) | T3:row5:col2 | — | not captured |
 
-_No resolved parameters._
+<details class="legend">
+<summary>Column legend — what each column means</summary>
+<table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>label (paper)</code></td><td>the row or statistic label exactly as printed in the paper (label_verbatim) — never normalised, so it can be found in the PDF.</td></tr><tr><td><code>Q-code · name</code></td><td>the ontology parameter this label was matched to (Q22 = clearance, Q27 = CL/F, Q49 = ka, Q57 = half-life, …) and its canonical name. The Q-code, not the label, is what scoring and cross-paper merging use.</td></tr><tr><td><code>value</code></td><td>the estimate as reported in the paper.</td></tr><tr><td><code>unit</code></td><td>the unit as printed (unit_verbatim).</td></tr><tr><td><code>value_si</code></td><td>the value converted to the canonical unit. Empty when no conversion was possible — usually an unparseable or missing unit.</td></tr><tr><td><code>unit_canonical</code></td><td>the canonical unit for that Q-code, i.e. what value_si is expressed in.</td></tr><tr><td><code>RSE%</code></td><td>relative standard error of the estimate, when the paper reports one.</td></tr><tr><td><code>link</code></td><td>how the label was matched to the Q-code, with confidence. exact / boundary / fuzzy / tv_prefix / caption_compartment / special_case are deterministic string matches; llm, llm_confirmed, llm_corrected involved the model; review and review_gapfill come from the secondary review tier, the latter filling a parameter the primary extraction missed; boundary_relink is a corrected match.</td></tr><tr><td><code>source</code></td><td>where in the paper the number came from: colN = that column of the located table, other_prose = running text, review = the secondary tier, pgx = a pharmacogenomic record.</td></tr><tr><td><code>covariates</code></td><td>covariate effects attached to this parameter (e.g. weight on CL).</td></tr><tr><td><code>IIV</code></td><td>inter-individual variability reported for this parameter.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>the field is absent from the KB artifact — nothing was recorded. This is NOT the same as zero or empty: the value is unknown, not measured to be nothing.</td></tr><tr><td><code>—</code></td><td>deliberately not shown: the column does not apply to this row.</td></tr><tr><td><code>not verified</code></td><td>the record is not in an accepted state (see the badge and the note above the table); the numbers are shown as extracted, not endorsed.</td></tr></tbody></table>
+</details>
 
 ## Departures & gaps
 
+**Deviations:**
+- `defaulted_parameters`: ['Tlag']
+
 **Interpretation flags:**
+- table section iiv: 'F' routed out of structural estimates ('IIV or Range')
+- dropped unlinked row (NIL): 'CVCP' — extend the ontology if this is a real PK parameter (source ['T3:row6:col2'])
+- dropped unlinked row (NIL): 'SDCP' — extend the ontology if this is a real PK parameter (source ['T3:row7:col2'])
+- implicit units: 'CL' → L/h (from the paper text: "The text states: 'the population estimate for CL was 18.2 L/h'")
+- implicit units: 'V' → L (from the paper text: "The text states: 'and the population estimate for V was 167 L'")
+- implicit units: 'ka' → 1/h (from the popPK convention: 'First-order absorption rate constants (ka) are conventionally expressed in inverse time (1/h). The value 2.21 is consist')
+- implicit units: 't1/2' → h (from the popPK convention: 'Half-life (t1/2) is a time parameter, conventionally expressed in hours (h). The value 6.36 is consistent with a half-li')
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=moxifloxacin
+- model equation 'LBW = [1.11+((1−1.11)[1+(Age/7)^0.75' not bound — neither LHS nor base term 'Age' linked to an ontology parameter
+- skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
+- skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
+- skipped review gap-fill of TLAG: primary's parameterization (rate-constant / ka-only) does not use it
 
 **Extraction notes:**
-- no GROBID TEI available
+- unparsed cell T3:row1:col3 = '35%'
+- unparsed cell T3:row1:col4 = '18%'
+- unparsed cell T3:row1:col5 = '49%'
+- unparsed cell T3:row2:col3 = '38%'
+- unparsed cell T3:row2:col4 = '33%'
+- unparsed cell T3:row2:col5 = '37%'
+- unparsed cell T3:row3:col5 = '54%'
+- unparsed cell T3:row4:col1 = 'h−1'
+- unparsed cell T3:row4:col3 = '272%'
+- unparsed cell T3:row6:col3 = '81%'
+- LLM selected parameter table(s) 3
+- captured model equation LBW = [1.11+((1−1.11)[1+(Age/7)^0.75
 
 ## Validation
 
@@ -70,9 +107,17 @@ _Every reader agrees on every compared field of this record._
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | fail | not captured | 0 | not captured | not captured | not captured |
-| C0b_disposition_core | fail | not captured | not captured | not captured | not captured | not captured |
+| C0_has_structural_params | pass | not captured | 5 | not captured | not captured | not captured |
+| C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
+| C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
+| C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['T3:row1:col2'] |
+| C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['T3:row4:col2'] |
+| C5_dimension_Q57 | pass | [time] | not captured | not captured | not captured | ['T3:row5:col2'] |
+| C5_dimension_Q61 | pass | [length] ** 3 | not captured | not captured | not captured | ['T3:row2:col2'] |
+| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 18.2 | not captured | not captured | ['T3:row1:col2'] |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
+| C9_phys_window_Q22 | pass | clearance within physiological range | 18.2 L/h | not captured | not captured | ['T3:row1:col2'] |
+| C9_phys_window_Q61 | pass | volume within physiological range | 167 L | not captured | not captured | ['T3:row2:col2'] |
 
 <details class="legend">
 <summary>Check legend — what each column means</summary>
@@ -86,15 +131,30 @@ _Every reader agrees on every compared field of this record._
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
-## Models
+## Downloadable models
 
-<p>No downloads: this record is <b>rejected</b>, so it is not published as a model. Any archives generated for it before the verdict have been removed — a download outlives the page that explains it.</p>
+<div class="pk-models-grid"><div class="pk-models-table">
+<table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_moxifloxacin/Moxifloxacin_Greenberg2022_reference/Moxifloxacin_Greenberg2022_reference_modelica.zip" download>Moxifloxacin_Greenberg2022_reference_modelica.zip</a> <span class="pk-size">(4.9 kB)</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_moxifloxacin/Moxifloxacin_Greenberg2022_reference/Moxifloxacin_Greenberg2022_reference_fmi.zip" download>Moxifloxacin_Greenberg2022_reference_fmi.zip</a> <span class="pk-size">(4.3 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_moxifloxacin/Moxifloxacin_Greenberg2022_reference/Moxifloxacin_Greenberg2022_reference_matlab.zip" download>Moxifloxacin_Greenberg2022_reference_matlab.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_moxifloxacin/Moxifloxacin_Greenberg2022_reference/Moxifloxacin_Greenberg2022_reference_matlab_simbio.zip" download>Moxifloxacin_Greenberg2022_reference_matlab_simbio.zip</a> <span class="pk-size">(2.8 kB)</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_moxifloxacin/Moxifloxacin_Greenberg2022_reference/Moxifloxacin_Greenberg2022_reference_sbml.zip" download>Moxifloxacin_Greenberg2022_reference_sbml.zip</a> <span class="pk-size">(2.6 kB)</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_moxifloxacin/Moxifloxacin_Greenberg2022_reference/Moxifloxacin_Greenberg2022_reference_cellml.zip" download>Moxifloxacin_Greenberg2022_reference_cellml.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
+</tbody></table>
+<p>Each archive holds the model source, a script that simulates it against the appropriate library, and a README describing both and how to run them.</p>
+<p><b>FMI is two downloads.</b> The archive holds this record's parameters and its driver; the simulator itself is <code>PK_1C_enteral.fmu</code>, one compiled template shared by every model of this structure. Take the FMU once, keep it beside the script (or pass <code>--fmu PATH</code>). Running it reproduces the model-specific FMU exactly.</p>
+</div><figure class="pk-models-diagram"><img src="drugs/drug_moxifloxacin/Moxifloxacin_Greenberg2022_reference/Moxifloxacin_Greenberg2022_reference.svg" alt="Moxifloxacin_Greenberg2022_reference diagram"><figcaption>Model diagram (Modelica) using Pharmacolibrary v26.09 components, rendered by OpenModelica 1.26.7.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+**Administration: oral** — 10 mg, single dose, first-order absorption (ka 2.21 /h, F 0.76). Doses in the paper: 10, 400 mg.
+
+<dbs-fmusim paramsurl="drugs/drug_moxifloxacin/Moxifloxacin_Greenberg2022_reference/Moxifloxacin_Greenberg2022_reference_params.json" metaurl="assets/fmu/PK_1C_enteral.vr.json" wasmurl="assets/fmu/PK_1C_enteral.js" controlsurl="drugs/drug_moxifloxacin/Moxifloxacin_Greenberg2022_reference/Moxifloxacin_Greenberg2022_reference_sim_controls.json"></dbs-fmusim>
+
+<sub>Runs this record's model in the browser as WebAssembly. Sliders start at the extracted values; the reference check compares the browser's peak against the FMPy result recorded when the record was built, and is withheld once a value has been edited. Template `PK_1C_enteral` · parameters `Moxifloxacin_Greenberg2022_reference_params.json` · controls `Moxifloxacin_Greenberg2022_reference_sim_controls.json`. A slider marked *simulator value* is running on the template's own default because this record does not pin that parameter.</sub>
 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-07-15 13:44 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 12:29 UTC</sub>

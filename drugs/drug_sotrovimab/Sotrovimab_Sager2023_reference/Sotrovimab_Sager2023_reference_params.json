@@ -1,0 +1,33 @@
+{
+ "dose_source": "paper",
+ "model_id": "Sotrovimab_Sager2023_reference",
+ "note": "Values for the shared PK_2C.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "paper_doses_kind": "discrete",
+ "paper_doses_mg": [
+  250.0,
+  500.0
+ ],
+ "parameters": {
+  "Cl": 1.5393518518518518e-08,
+  "F": 1.0,
+  "VdPerKg": 3.142857142857143e-05,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 0.00025,
+  "k12": 7.838804713804713e-06,
+  "k21": 1.3064674523007855e-05,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 660.0000000662014
+ },
+ "reference_peaks": {
+  "central.C": 0.048707228324313095
+ },
+ "stop_time": 518400.0,
+ "template": "PK_2C",
+ "template_fmu": "PK_2C.fmu"
+}

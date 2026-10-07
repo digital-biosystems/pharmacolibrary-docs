@@ -1,0 +1,30 @@
+{
+ "dose_source": "WHO ATC DDD 50 mg parenteral (J02AX04)",
+ "model_id": "Caspofungin_AbdulAziz2025_reference",
+ "molar_masses": {
+  "central.C": 1.0933309999999998
+ },
+ "note": "Values for the shared PK_1C.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "parameters": {
+  "Cl": 1.527777777777778e-07,
+  "F": 1.0,
+  "MM": 1.0933309999999998,
+  "VdPerKg": 0.00011614285714285717,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 5e-05,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 660.000000066203
+ },
+ "reference_peaks": {
+  "central.C": 0.006115520180297745
+ },
+ "stop_time": 259200.0,
+ "template": "PK_1C",
+ "template_fmu": "PK_1C.fmu"
+}

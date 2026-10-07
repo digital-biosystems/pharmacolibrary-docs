@@ -18,7 +18,7 @@
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| not captured | not captured | 1/0/1 | 0/0/0 | 0/0/0 | not captured | not captured | 4 | 22/1 | 1/2 | 0 |
+| 2026-10-07 11:59 | 0:22 | 1/0/1 | 0/0/0 | 0/0/0 | 88,782/242 | einfracz / qwen3.8-27b | 4 | 22/1 | 1/2 | 0 |
 
 ## popPK records
 
@@ -39,16 +39,6 @@
 - **screened:** 3  ·  **relevant:** 3
 - **records:** 2  ·  extracted 1  ·  needs_review 1  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** not captured
-
-## Full text wanted
-
-_1 paper(s) judged relevant from the abstract, with no full text on disk — paywalled, or the resolver could not reach them. Follow the DOI, then save the PDF into `papers/` as `&lt;save as&gt;.pdf` and re-run the extraction._
-
-| save as | citation | domain | score | DOI | PubMed | why wanted |
-|---|---|---|---|---|---|---|
-| `Peloquin_2001.pdf` | Peloquin CA et al., Pharmacokinetics of para-aminosalicylic…, The Annals of pharmacothera… (2001) | popPK | 10 | [10.1345/aph.1A088](https://doi.org/10.1345/aph.1A088) | [11724078](https://pubmed.ncbi.nlm.nih.gov/11724078) | The paper reports quantitative compartmental PK parameters (CL/F, V/F, ka) for PAS in the text and numeric lines, though some detailed tables are referenced but not fully reproduced. |
-
-<sub>queue written 2026-08-03T07:44:46.019859+00:00</sub>
 
 ## Screened and excluded
 
@@ -99,6 +89,7 @@ _1 paper(s) judged relevant from the abstract, with no full text on disk — pay
 | popPK | Yang_2025 | irrelevant | 0 | 0 | The study investigates Atractylodes lancea in a metabolic syndrome model and does not involve 4-aminosalicylic acid. |
 | popPK | Zhang_2025 | irrelevant | 0 | 0 | The paper investigates mitophagy mechanisms in diabetic cardiomyopathy and does not study the pharmacokinetics of 4-aminosalicylic acid. |
 | popPK | Zilly_1977 | irrelevant | 0 | 0 | The paper focuses on rifampicin pharmacokinetics and drug interactions; 4-aminosalicylic acid is only mentioned as a co-administered agent affecting rifampicin absorption, with no PK parameters reported for it. |
+| popPK | unknown_2022 | irrelevant | 0 | 0 | no_text gate: only 37 chars of text extracted (&lt; 400) |
 | popPK | Çelikmen_2016 | irrelevant | 0 | 0 | The study investigates acetaminophen and mannitol in rats, not 4-aminosalicylic acid. |
 
 ---

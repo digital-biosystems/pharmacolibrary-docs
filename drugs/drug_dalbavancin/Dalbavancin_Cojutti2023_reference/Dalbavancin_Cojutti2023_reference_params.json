@@ -1,0 +1,30 @@
+{
+ "dose_source": "WHO ATC DDD 1500 mg parenteral (J01XA04)",
+ "model_id": "Dalbavancin_Cojutti2023_reference",
+ "molar_masses": {
+  "central.C": 1.81671
+ },
+ "note": "Values for the shared PK_1C.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "parameters": {
+  "Cl": 2.9444444444444446e-08,
+  "F": 1.0,
+  "MM": 1.81671,
+  "VdPerKg": 0.0005200000000000001,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 0.0015,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 660.0000000662192
+ },
+ "reference_peaks": {
+  "central.C": 0.041198792528741035
+ },
+ "stop_time": 4838400.0,
+ "template": "PK_1C",
+ "template_fmu": "PK_1C.fmu"
+}

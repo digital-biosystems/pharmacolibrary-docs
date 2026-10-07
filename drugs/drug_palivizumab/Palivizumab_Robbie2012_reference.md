@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;J06B&quot;,&quot;href&quot;:&quot;atc/J06B.md&quot;},{&quot;label&quot;:&quot;palivizumab&quot;,&quot;href&quot;:&quot;drugs/drug_palivizumab/&quot;},{&quot;label&quot;:&quot;Robbie_2012 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Palivizumab_Li2021_reference&quot;,&quot;label&quot;:&quot;Li_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_palivizumab/Palivizumab_Li2021_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Palivizumab_Huang2017_reference&quot;,&quot;label&quot;:&quot;Huang_2017_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_palivizumab/Palivizumab_Huang2017_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Palivizumab_Li2021_reference&quot;,&quot;label&quot;:&quot;Li_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_palivizumab/Palivizumab_Li2021_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # palivizumab — `Palivizumab_Robbie2012_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.154). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.154). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -25,14 +25,14 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 
 <sub>reviewed by rule template (no LLM)</sub>
 
-> ⚠️ **STALE** — review status `needs_review` (reviewed 2026-09-28 14:39:17.237393+00:00) predates the upstream re-run (2026-10-03 11:38:59.561112+00:00). Current validate status: `rejected`.
+> ⚠️ **STALE** — review status `needs_review` (reviewed 2026-09-28 14:39:17.237393+00:00) predates the upstream re-run (2026-10-07 14:44:34.877238+00:00). Current validate status: `needs_review`.
 
 ## Citation
 Robbie GJ et al., Population pharmacokinetics of palivizu…, Antimicrobial agents and ch… (2012)
   ·  DOI: [10.1128/AAC.06446-11](https://doi.org/10.1128/AAC.06446-11)
 
 ## Model component
-<dbs-pgx drug="palivizumab" model-id="Palivizumab_Robbie2012_reference" status="rejected" stale="true" population="adults and children" measured-compound="palivizumab" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<dbs-pgx drug="palivizumab" model-id="Palivizumab_Robbie2012_reference" status="needs_review" stale="true" population="adults and children" measured-compound="palivizumab" parameterization="mechanistic" topology="2C"></dbs-pgx>
 
 **Model structure:** 2-compartment; no model was built for this record.  
 **Parameters:** 5 extracted.
@@ -40,15 +40,15 @@ Robbie GJ et al., Population pharmacokinetics of palivizu…, Antimicrobial agen
 **Parameterization:** mechanistic.
 
 ## Parameters
-> ⚠️ This record is not accepted (current status `rejected`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
+> ⚠️ This record is not accepted (current status `needs_review`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
 | CL | `Q22` · CL | 197 | ml/day | 2.2800925925925924e-09 | L/h | not captured | exact (1.0) | Robbie_2012:results_prose | — | not captured |
-| V c | `Q63` · V1 | 4 | ml | 4e-06 | L | not captured | space_fold (0.95) | Robbie_2012:results_prose | — | not captured |
-| V p | `Q64` · V2 | 2 | ml | 2e-06 | L | not captured | space_fold (0.95) | Robbie_2012:results_prose | — | not captured |
+| V c | `Q63` · V1 | 4150 | ml | 0.00415 | L | not captured | space_fold (0.95) | Robbie_2012:results_prose | — | not captured |
+| V p | `Q64` · V2 | 2230 | ml | 0.0022299999999999998 | L | not captured | space_fold (0.95) | Robbie_2012:results_prose | — | not captured |
 | Q | `Q30` · Q | 874 | ml/day | 1.011574074074074e-08 | L/h | not captured | exact (1.0) | Robbie_2012:results_prose | — | not captured |
-| k a | `Q49` · kabs | 1.03 | day Ϫ1 | 1.1921296296296295e-05 | 1/h | not captured | space_fold (0.95) | Robbie_2012:results_prose | — | not captured |
+| k a | `Q49` · kabs | 1.03 | day -1 | 1.1921296296296295e-05 | 1/h | not captured | space_fold (0.95) | Robbie_2012:results_prose | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -90,8 +90,8 @@ Robbie GJ et al., Population pharmacokinetics of palivizu…, Antimicrobial agen
 - dropped value-less row: 'T CL , mo'
 - dropped value-less row: '2 prop'
 - salvaged Q22 ('CL'=197) from results prose — parameter table was unreadable
-- salvaged Q63 ('V c'=4) from results prose — parameter table was unreadable
-- salvaged Q64 ('V p'=2) from results prose — parameter table was unreadable
+- salvaged Q63 ('V c'=4150) from results prose — parameter table was unreadable
+- salvaged Q64 ('V p'=2230) from results prose — parameter table was unreadable
 - salvaged Q30 ('Q'=874) from results prose — parameter table was unreadable
 - salvaged Q49 ('k a'=1.03) from results prose — parameter table was unreadable
 - apparent-by-design (ADVISORY, codes unchanged): extravascular dosing with no identifiable F, so these reported disposition parameters are likely apparent unless the model puts first-pass in its structure — Q22 (CL); Q63 (V c); Q64 (V p); Q30 (Q)
@@ -166,12 +166,11 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 | C0_has_structural_params | pass | not captured | 5 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
-| C2_base_Q22 | fail | 197.0 | 0.438 | 0.0022 | 0.05 | footnote reference category |
 | C6_cl_magnitude | fail | &lt;= 90.0 L/h | 197.0 | not captured | not captured | ['Robbie_2012:results_prose'] |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
 | C9_phys_window_Q22 | pass | clearance within physiological range | 0.00821 L/h | not captured | not captured | ['Robbie_2012:results_prose'] |
-| C9_phys_window_Q63 | fail | volume within physiological range | 0.004 L | not captured | not captured | ['Robbie_2012:results_prose'] |
-| C9_phys_window_Q64 | fail | volume within physiological range | 0.002 L | not captured | not captured | ['Robbie_2012:results_prose'] |
+| C9_phys_window_Q63 | pass | volume within physiological range | 4.15 L | not captured | not captured | ['Robbie_2012:results_prose'] |
+| C9_phys_window_Q64 | pass | volume within physiological range | 2.23 L | not captured | not captured | ['Robbie_2012:results_prose'] |
 
 <details class="legend">
 <summary>Check legend — what each column means</summary>
@@ -185,9 +184,19 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
-## Models
+## Downloadable models
 
-<p>No downloads: this record is <b>rejected</b>, so it is not published as a model. Any archives generated for it before the verdict have been removed — a download outlives the page that explains it.</p>
+<div class="pk-models-grid"><div class="pk-models-table">
+<table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
+</tbody></table>
+<p>No bundles have been generated for this record yet. When the engineer emits them they appear here automatically — this page reports what is on disk and generates nothing itself.</p>
+</div></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
@@ -196,4 +205,4 @@ _No web simulator for this record: its structure has no shared WebAssembly templ
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-03 11:38 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 14:44 UTC</sub>

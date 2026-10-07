@@ -14,15 +14,34 @@ Doxepin is a tricyclic antidepressant used to treat depression, and as a topical
 
 <small>Summary written by `glm-5.3-flash` from [Wikidata Q71704041](https://www.wikidata.org/wiki/Q71704041) and the WHO ATC classification; not checked by a person.</small>
 
+## Molecules and molar masses
+
+> The molar mass each model uses to convert mass to molar concentration and to form a metabolite molecule for molecule. Looked up, never estimated: DrugBank for the drug, the paper's own value or the PubChem entry matched to the paper's name for a metabolite.
+
+| molecule | role | molar mass (g/mol) | formula | source | PubChem | records |
+|---|---|---|---|---|---|---|
+| doxepin | parent | 279.376 | C19H21NO | DrugBank | [667468](https://pubchem.ncbi.nlm.nih.gov/compound/667468) | Kirchheiner_2002 |
+
 ## Extraction summary
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| not captured | not captured | 0/0/0 | 0/0/0 | 0/0/0 | not captured | not captured | 15 | 0/0 | 1/0 | 0 |
+| 2026-10-07 14:42 | 3:41 | 0/1/0 | 2/1/0 | 0/0/0 | 74,805/17,275 | openai / gpt-6-luna | 15 | 0/1 | 1/0 | 0 |
 
 ## popPK records
 
-_not available_
+| status | detail | model | model structure | params | citation | doi |
+|---|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>route_to: `human_review`</sub> | [Kirchheiner_2002_reference](drugs/drug_doxepin/Doxepin_Kirchheiner2002_reference.md) | — | general linear (no model) | 2 | Kirchheiner J et al., Contributions of CYP2D6, CYP2C9 and CYP…, Pharmacogenetics (2002) | [10.1097/00008571-200210000-00010](https://doi.org/10.1097/00008571-200210000-00010) |
+
+## Pharmacodynamics (PD)
+
+| status | detail | about | model | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="Animal study (rabbit), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rabbit</span> | [Li_2019_Kv_currents](drugs/drug_doxepin/pd_Li_2019_Kv_currents.md) | Vascular Kv currents ← doxepin · direct sigmoid Emax (Hill) effect | — | Li H et al., Inhibitory Effect of Tricyclic Antidepr…, Cardiovascular toxicology (2019) | [10.1007/s12012-019-09519-8](https://doi.org/10.1007/s12012-019-09519-8) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="Animal study (other animal), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">other animal</span> | [Meyer_2012_cAMP](drugs/drug_doxepin/pd_Meyer_2012_cAMP.md) | cAMP accumulation ← doxepin · inhibition effect | — | Meyer JM et al., A "genome-to-lead" approach for insecti…, PLoS neglected tropical dis… (2012) | [10.1371/journal.pntd.0001478](https://doi.org/10.1371/journal.pntd.0001478) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="Animal study (other animal), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">other animal</span> | [Meyer_2012_cAMP_2](drugs/drug_doxepin/pd_Meyer_2012_cAMP_2.md) | cAMP accumulation ← doxepin · inhibition effect | — | Meyer JM et al., A "genome-to-lead" approach for insecti…, PLoS neglected tropical dis… (2012) | [10.1371/journal.pntd.0001478](https://doi.org/10.1371/journal.pntd.0001478) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span> | [Claro_1986_3H_inositol_1_phosphate_accumulation](drugs/drug_doxepin/pd_Claro_1986_3H_inositol_1_phosphate_accumulation.md) | [3H]inositol 1-phosphate accumulation ← doxepin · inhibition effect | — | Claro E et al., Phosphoinositide hydrolysis mediated by…, European journal of pharmac… (1986) | [10.1016/0014-2999(86)90659-x](https://doi.org/10.1016/0014-2999(86)90659-x) |
 
 ## ADME sites
 
@@ -55,27 +74,35 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 ## Coverage
 
 - **PubMed hits:** 10 matched, 10 returned
-- **screened:** 0  ·  **relevant:** 2
-- **records:** 0  ·  extracted 0  ·  needs_review 0  ·  rejected 0  ·  stale 0
+- **screened:** 1  ·  **relevant:** 1
+- **records:** 1  ·  extracted 0  ·  needs_review 0  ·  rejected 1  ·  stale 0
 - **scholar-agent fallback query used:** True
 
 ## Full text wanted
 
-_2 paper(s) judged relevant from the abstract, with no full text on disk — paywalled, or the resolver could not reach them. Follow the DOI, then save the PDF into `papers/` as `&lt;save as&gt;.pdf` and re-run the extraction._
+_3 paper(s) judged relevant from the abstract, with no full text on disk — paywalled, or the resolver could not reach them. Follow the DOI, then save the PDF into `papers/` as `&lt;save as&gt;.pdf` and re-run the extraction._
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Kirchheiner_2002.pdf` | Kirchheiner J et al., Contributions of CYP2D6, CYP2C9 and CYP…, Pharmacogenetics (2002) | popPK | 10 | [10.1097/00008571-200210000-00010](https://doi.org/10.1097/00008571-200210000-00010) | [12360109](https://pubmed.ncbi.nlm.nih.gov/12360109) | The paper explicitly reports quantitative population pharmacokinetic parameters (CL, Vc, ka) for doxepin using a two-compartment NONMEM model in humans. |
-| `Meyer-Barner_2002.pdf` | Meyer-Barner M et al., Pharmacokinetics of doxepin and desmeth…, European journal of clinica… (2002) | popPK | 10 | [10.1007/s00228-002-0448-3](https://doi.org/10.1007/s00228-002-0448-3) | [12136371](https://pubmed.ncbi.nlm.nih.gov/12136371) | The paper explicitly presents a NONMEM-based population pharmacokinetic analysis of doxepin in humans, reporting quantitative estimates for clearance, volume of distribution, and absorption rate. |
+| `Kirchheiner_2002.pdf` | Kirchheiner J et al., Contributions of CYP2D6, CYP2C9 and CYP…, Pharmacogenetics (2002) | popPK | 10 | [10.1097/00008571-200210000-00010](https://doi.org/10.1097/00008571-200210000-00010) | [12360109](https://pubmed.ncbi.nlm.nih.gov/12360109) | Reports quantitative doxepin clearances and population-PK analysis in healthy volunteers. |
+| `Meyer-Barner_2002.pdf` | Meyer-Barner M et al., Pharmacokinetics of doxepin and desmeth…, European journal of clinica… (2002) | popPK | 10 | [10.1007/s00228-002-0448-3](https://doi.org/10.1007/s00228-002-0448-3) | [12136371](https://pubmed.ncbi.nlm.nih.gov/12136371) | Human population-PK model, but numeric CL/F and V/F estimates are absent; only a 15% CL reduction is reported. |
+| `Yan_2002_2.pdf` | Yan JH et al., Absolute bioavailability and stereosele…, Xenobiotica; the fate of fo… (2002) | popPK | 10 | [10.1080/00498250210131879](https://doi.org/10.1080/00498250210131879) | [12162857](https://pubmed.ncbi.nlm.nih.gov/12162857) | The human study models doxepin disposition, but the evidence gives no numeric model parameters beyond the absorbed fraction. |
 
-<sub>queue written 2026-07-18T03:37:12.999198+00:00 · relevance threshold 5</sub>
+<sub>queue written 2026-10-07T14:39:47.451880+00:00</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Mochizuki_2004 | irrelevant | not captured | not captured | The study uses radiolabeled doxepin solely as a PET probe to quantify brain histamine H1 receptors, focusing on tissue binding kinetics rather than systemic pharmacokinetic or population-PK parameters. |
-| popPK | Mochizuki_2004_2 | irrelevant | not captured | not captured | Doxepin is used exclusively as a radiolabeled PET tracer for brain receptor imaging, and the study reports tissue kinetic modeling parameters rather than systemic pharmacokinetic disposition values. |
+| popPK | Claro_1986 | irrelevant | 0 | 0 | Doxepin is only an H1-receptor antagonist here; no pharmacokinetic parameters are reported. |
+| popPK | Li_2019 | irrelevant | 0 | 0 | This is an in-vitro ion-channel study and reports no doxepin pharmacokinetic parameters. |
+| popPK | Meyer-Barner_2002 | relevant | 10 | 2 | Human population-PK model, but numeric CL/F and V/F estimates are absent; only a 15% CL reduction is reported. |
+| popPK | Meyer_2012 | irrelevant | 0 | 0 | The paper reports doxepin receptor activity and mosquito toxicity, but no pharmacokinetic disposition parameters. |
+| popPK | Mochizuki_2004 | irrelevant | 1 | 0 | Doxepin is a PET tracer for receptor measurement, and no numeric doxepin disposition parameters are provided. |
+| popPK | Mochizuki_2004_2 | irrelevant | 2 | 0 | Doxepin is used as a PET receptor-imaging tracer, and no numeric disposition parameter values are provided. |
+| popPK | Pancrazio_1998 | irrelevant | 0 | 0 | This in-vitro ion-channel study reports no quantitative doxepin disposition parameters. |
+| popPK | Yan_2002_2 | relevant | 10 | 4 | The human study models doxepin disposition, but the evidence gives no numeric model parameters beyond the absorbed fraction. |
+| popPK | Yanai_1991 | irrelevant | 0 | 0 | Doxepin is only a PET tracer, and no quantitative doxepin disposition parameters are reported. |
 
 ---
-<sub>Generated by `docs.py` (scholarv2)</sub>
+<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-10-07 14:39 UTC</sub>

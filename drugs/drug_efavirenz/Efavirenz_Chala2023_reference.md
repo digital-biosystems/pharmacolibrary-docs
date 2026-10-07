@@ -1,11 +1,10 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;J05A&quot;,&quot;href&quot;:&quot;atc/J05A.md&quot;},{&quot;label&quot;:&quot;efavirenz&quot;,&quot;href&quot;:&quot;drugs/drug_efavirenz/&quot;},{&quot;label&quot;:&quot;Chala_2023 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Efavirenz_Chala2023_reference&quot;,&quot;label&quot;:&quot;Chala_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_efavirenz/Efavirenz_Chala2023_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # efavirenz — `Efavirenz_Chala2023_reference`
 
-> ## <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.714). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.714). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -13,7 +12,7 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
-**Model:** A simulatable model was generated — see the **Models** and **Simulation** tabs.
+**Model:** No model was generated from this record.
 
 ### Reviewer guidance
 
@@ -23,23 +22,26 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on how the
 
 <sub>reviewed by rule template (no LLM)</sub>
 
+> ⚠️ **STALE** — review status `curated_candidate` (reviewed 2026-09-28 14:37:52.327968+00:00) predates the upstream re-run (2026-10-07 12:36:10.865184+00:00). Current validate status: `rejected`.
+
 ## Citation
 Chala A et al., Genetic and non-genetic factors influen…, CPT: pharmacometrics & syst… (2023)
   ·  DOI: [10.1002/psp4.12951](https://doi.org/10.1002/psp4.12951)
 
 ## Model component
-<dbs-pgx drug="efavirenz" model-id="Efavirenz_Chala2023_reference" status="curated_candidate" stale="false" population="HIV-1-infected children in Ethiopia" measured-compound="efavirenz" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<dbs-pgx drug="efavirenz" model-id="Efavirenz_Chala2023_reference" status="rejected" stale="true" population="HIV-1-infected children in Ethiopia" measured-compound="efavirenz" parameterization="mechanistic" topology="1C"></dbs-pgx>
 
-**Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
-**Parameters:** 2 extracted.
+**Model structure:** 1-compartment; no model was built for this record.  
+**Parameters:** 1 extracted.
 
 **Parameterization:** mechanistic.
 
 ## Parameters
+> ⚠️ This record is not accepted (current status `rejected`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
+
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| CL (L/h) | `Q22` · CL | 4.3 | L/h | 1.1944444444444443e-06 | L/h | not captured | exact (1.0) | Chala_2023:other_prose | — | not captured |
-| Vc (L) | `Q63` · V1 | 123.8 | L | 0.1238 | L | not captured | exact (1.0) | Chala_2023:other_prose | — | not captured |
+| K a (/h) | `Q49` · kabs | 0.78 | /h | 0.00021666666666666668 | [1] / [h] | not captured | space_fold (0.95) | psp412951-tbl-0002:row4:col1 | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -49,39 +51,17 @@ Chala A et al., Genetic and non-genetic factors influen…, CPT: pharmacometrics
 ## Departures & gaps
 
 **Interpretation flags:**
-- dropped value-less row: 'Model conditional number'
-- dropped value-less row: 'ETA shrinkage for CL (%)'
-- salvaged Q22 ('CL (L/h)'=4.3) from results prose — parameter table was unreadable
-- salvaged Q63 ('Vc (L)'=123.8) from results prose — parameter table was unreadable
+- table section iiv: 'ETA shrinkage for CL (%)' routed out of structural estimates ('Interindividual variability for CL (%CV)')
+- dropped unlinked row (NIL): 'Model conditional number' — extend the ontology if this is a real PK parameter (source ['psp412951-tbl-0002:row1:col1'])
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=efavirenz
-- held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
-- status held at route_to_review — not promoted
+- model equation 'P = TVP×COV/COVmedianβ, and P=TVP×βCOV' not bound — neither LHS nor base term 'TVP' linked to an ontology parameter
+- skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
+- skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
+- skipped review gap-fill of TLAG: primary's parameterization (rate-constant / ka-only) does not use it
 
 **Extraction notes:**
-- no TEI final-model table id; trying text-pointer table recovery
-- unparsed cell Chala_2023_table_p7_1:row1:col1 = '4.30 (13%)'
-- unparsed cell Chala_2023_table_p7_1:row1:col2 = '4.30 (3.20–5.30)'
-- unparsed cell Chala_2023_table_p7_1:row2:col1 = '123.80 (10%)'
-- unparsed cell Chala_2023_table_p7_1:row2:col2 = '125.24 (103.30–163.80)'
-- unparsed cell Chala_2023_table_p7_1:row3:col1 = '0.78ᵃ'
-- unparsed cell Chala_2023_table_p7_1:row4:col1 = '50% (4%)'
-- unparsed cell Chala_2023_table_p7_1:row4:col2 = '0.49 (0.45–0.54)'
-- unparsed cell Chala_2023_table_p7_1:row5:col1 = '0.72 (11%)'
-- unparsed cell Chala_2023_table_p7_1:row5:col2 = '0.73 (0.59–0.89)'
-- unparsed cell Chala_2023_table_p7_1:row6:col1 = '0.28 (17%)'
-- unparsed cell Chala_2023_table_p7_1:row6:col2 = '0.28 (0.20–0.46)'
-- unparsed cell Chala_2023_table_p7_1:row7:col1 = '1.45 (12%)'
-- unparsed cell Chala_2023_table_p7_1:row7:col2 = '1.47 (1.15–1.87)'
-- unparsed cell Chala_2023_table_p7_1:row8:col1 = '0.12 (71%)'
-- unparsed cell Chala_2023_table_p7_1:row8:col2 = '0.12 (0.001–0.27)'
-- unparsed cell Chala_2023_table_p7_1:row9:col1 = '0.23 (39%)'
-- unparsed cell Chala_2023_table_p7_1:row9:col2 = '0.23 (0.07–0.40)'
-- unparsed cell Chala_2023_table_p7_1:row10:col1 = '0.075 (71%)'
-- unparsed cell Chala_2023_table_p7_1:row10:col2 = '0.09 (0.014–0.272)'
-- unparsed cell Chala_2023_table_p7_1:row11:col1 = '0.28 (36%)'
-- unparsed cell Chala_2023_table_p7_1:row11:col2 = '0.29 (0.13–0.535)'
-- unparsed cell Chala_2023_table_p7_1:row12:col1 = '35.4 (13%)'
-- unparsed cell Chala_2023_table_p7_1:row12:col2 = '0.105 (0.05–0.169)'
+- LLM selected parameter table(s) 2
+- captured model equation P = TVP×COV/COVmedianβ, and P=TVP×βCOV
 
 ## Validation
 
@@ -111,14 +91,10 @@ first reading `qwen3.6:27b-q8_0` — the numbers on this page are its, whatever 
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 2 | not captured | not captured | not captured |
-| C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
-| C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
-| C2_base_Q22 | fail | 4.3 | 0.72 | 0.1674 | 0.05 | footnote reference category |
-| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 4.3 | not captured | not captured | ['Chala_2023:other_prose'] |
+| C0_has_structural_params | pass | not captured | 1 | not captured | not captured | not captured |
+| C0b_disposition_core | fail | not captured | not captured | not captured | not captured | not captured |
+| C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['psp412951-tbl-0002:row4:col1'] |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
-| C9_phys_window_Q22 | pass | clearance within physiological range | 4.3 L/h | not captured | not captured | ['Chala_2023:other_prose'] |
-| C9_phys_window_Q63 | pass | volume within physiological range | 124 L | not captured | not captured | ['Chala_2023:other_prose'] |
 
 **Reviewer per-scenario checks:**
 
@@ -146,30 +122,15 @@ first reading `qwen3.6:27b-q8_0` — the numbers on this page are its, whatever 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
-## Downloadable models
+## Models
 
-<div class="pk-models-grid"><div class="pk-models-table">
-<table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_efavirenz/Efavirenz_Chala2023_reference/Efavirenz_Chala2023_reference_modelica.zip" download>Efavirenz_Chala2023_reference_modelica.zip</a> <span class="pk-size">(3.6 kB)</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_efavirenz/Efavirenz_Chala2023_reference/Efavirenz_Chala2023_reference_fmi.zip" download>Efavirenz_Chala2023_reference_fmi.zip</a> <span class="pk-size">(4.0 kB)</span><br><a href="models/fmu/PK_1C.fmu" download>PK_1C.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_efavirenz/Efavirenz_Chala2023_reference/Efavirenz_Chala2023_reference_matlab.zip" download>Efavirenz_Chala2023_reference_matlab.zip</a> <span class="pk-size">(3.3 kB)</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_efavirenz/Efavirenz_Chala2023_reference/Efavirenz_Chala2023_reference_matlab_simbio.zip" download>Efavirenz_Chala2023_reference_matlab_simbio.zip</a> <span class="pk-size">(2.7 kB)</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_efavirenz/Efavirenz_Chala2023_reference/Efavirenz_Chala2023_reference_sbml.zip" download>Efavirenz_Chala2023_reference_sbml.zip</a> <span class="pk-size">(2.4 kB)</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_efavirenz/Efavirenz_Chala2023_reference/Efavirenz_Chala2023_reference_cellml.zip" download>Efavirenz_Chala2023_reference_cellml.zip</a> <span class="pk-size">(2.9 kB)</span></td></tr>
-</tbody></table>
-<p>Each archive holds the model source, a script that simulates it against the appropriate library, and a README describing both and how to run them.</p>
-<p><b>FMI is two downloads.</b> The archive holds this record's parameters and its driver; the simulator itself is <code>PK_1C.fmu</code>, one compiled template shared by every model of this structure. Take the FMU once, keep it beside the script (or pass <code>--fmu PATH</code>). Running it reproduces the model-specific FMU exactly.</p>
-</div><figure class="pk-models-diagram"><img src="drugs/drug_efavirenz/Efavirenz_Chala2023_reference/Efavirenz_Chala2023_reference.svg" alt="Efavirenz_Chala2023_reference diagram"><figcaption>Model diagram (Modelica) using Pharmacolibrary v26.09 components, rendered by OpenModelica 1.26.7.</figcaption></figure></div>
+<p>No downloads: this record is <b>rejected</b>, so it is not published as a model. Any archives generated for it before the verdict have been removed — a download outlives the page that explains it.</p>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-**Administration: intravenous** — 10 mg infusion over 10 min, single dose. _The paper's dose was not captured; the simulator's default is used._
-
-<dbs-fmusim paramsurl="drugs/drug_efavirenz/Efavirenz_Chala2023_reference/Efavirenz_Chala2023_reference_params.json" metaurl="assets/fmu/PK_1C.vr.json" wasmurl="assets/fmu/PK_1C.js" controlsurl="drugs/drug_efavirenz/Efavirenz_Chala2023_reference/Efavirenz_Chala2023_reference_sim_controls.json"></dbs-fmusim>
-
-<sub>Runs this record's model in the browser as WebAssembly. Sliders start at the extracted values; the reference check compares the browser's peak against the FMPy result recorded when the record was built, and is withheld once a value has been edited. Template `PK_1C` · parameters `Efavirenz_Chala2023_reference_params.json` · controls `Efavirenz_Chala2023_reference_sim_controls.json`. A slider marked *simulator value* is running on the template's own default because this record does not pin that parameter.</sub>
+_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-07-15 11:51 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 12:36 UTC</sub>

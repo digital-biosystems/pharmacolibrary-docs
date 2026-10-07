@@ -1,0 +1,33 @@
+{
+ "dose_source": "paper",
+ "model_id": "Dostarlimab_Kuchimanchi2025_reference",
+ "note": "Values for the shared PK_2C.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "paper_doses_kind": "discrete",
+ "paper_doses_mg": [
+  500.0,
+  1000.0
+ ],
+ "parameters": {
+  "Cl": 2.0333333333333333e-09,
+  "F": 1.0,
+  "VdPerKg": 4.4142857142857144e-05,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 0.0005,
+  "k12": 1.7170082704063287e-06,
+  "k21": 2.1393369175627238e-06,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 660.0000000662103
+ },
+ "reference_peaks": {
+  "central.C": 0.13773091363802034
+ },
+ "stop_time": 15552000.0,
+ "template": "PK_2C",
+ "template_fmu": "PK_2C.fmu"
+}

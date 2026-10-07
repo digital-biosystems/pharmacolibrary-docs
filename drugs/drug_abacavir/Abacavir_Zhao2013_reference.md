@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;J05A&quot;,&quot;href&quot;:&quot;atc/J05A.md&quot;},{&quot;label&quot;:&quot;abacavir&quot;,&quot;href&quot;:&quot;drugs/drug_abacavir/&quot;},{&quot;label&quot;:&quot;Zhao_2013 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Abacavir_Chupradit2024_reference&quot;,&quot;label&quot;:&quot;Chupradit_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_abacavir/Abacavir_Chupradit2024_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Abacavir_Zhang2015_reference&quot;,&quot;label&quot;:&quot;Zhang_2015_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_abacavir/Abacavir_Zhang2015_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Abacavir_Chupradit2024_reference&quot;,&quot;label&quot;:&quot;Chupradit_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_abacavir/Abacavir_Chupradit2024_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Abacavir_Fauchet2014_reference&quot;,&quot;label&quot;:&quot;Fauchet_2014_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_abacavir/Abacavir_Fauchet2014_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Abacavir_Ji2024_reference&quot;,&quot;label&quot;:&quot;Ji_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_abacavir/Abacavir_Ji2024_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Abacavir_Zhang2015_reference&quot;,&quot;label&quot;:&quot;Zhang_2015_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_abacavir/Abacavir_Zhang2015_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -25,14 +25,14 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 
 <sub>reviewed by glm-5.3-flash</sub>
 
-> ⚠️ **STALE** — review status `rejected` (reviewed 2026-09-28 14:35:50.842429+00:00) predates the upstream re-run (2026-10-03 11:12:09.079977+00:00). Current validate status: `rejected`.
+> ⚠️ **STALE** — review status `rejected` (reviewed 2026-09-28 14:35:50.842429+00:00) predates the upstream re-run (2026-10-07 12:39:23.666647+00:00). Current validate status: `rejected`.
 
 ## Citation
 Zhao W et al., Population pharmacokinetics of abacavir…, British journal of clinical… (2013)
   ·  DOI: [10.1111/bcp.12024](https://doi.org/10.1111/bcp.12024)
 
 ## Model component
-<dbs-pgx drug="abacavir" model-id="Abacavir_Zhao2013_reference" status="rejected" stale="true" population="HIV-infected infants, toddlers and children" measured-compound="abacavir" parameterization="apparent" topology="2C"></dbs-pgx>
+<dbs-pgx drug="abacavir" model-id="Abacavir_Zhao2013_reference" status="rejected" stale="true" population="HIV-infected children" measured-compound="abacavir" parameterization="apparent" topology="2C"></dbs-pgx>
 
 **Model structure:** 2-compartment; no model was built for this record.  
 **Parameters:** 5 extracted.
@@ -45,11 +45,11 @@ Zhao W et al., Population pharmacokinetics of abacavir…, British journal of cl
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
 | Absorption rate constant, Ka (h -1 ) | `Q49` · kabs | 0.913 | h -1 | 0.00025361111111111114 | [1] / [h] | not captured | llm_confirmed (0.6) | tab_1:row3:col1, tab_1:row3:col2, tab_1:row3:col3, tab_1:row3:col4 | — | not captured |
-| CL/Fref | `Q27` · CL/F | 20.1 | L/h | 5.583333333333335e-06 | L/h | not captured | llm (0.6) | tab_1:row6:col1, tab_1:row6:col2, tab_1:row6:col3, tab_1:row6:col4 | — | 21.9 (None% RSE) |
 | q1 | `Q30` · Q | 0.802 | L/h | 2.227777777777778e-07 | L/h | not captured | exact (1.0) | tab_1:row7:col1, tab_1:row7:col2, tab_1:row7:col3, tab_1:row7:col4 | — | not captured |
 | Apparent peripheral volume of distribution, V2/F (l) | `Q82` · V2/F | 13.5 | l | 0.0135 | [l] | not captured | llm_confirmed (0.6) | tab_1:row12:col1, tab_1:row12:col2, tab_1:row12:col3, tab_1:row12:col4 | — | 57.5 (None% RSE) |
 | Intercompartment clearance, Q/F (l h -1 ) | `Q69` · Q/F | 2.0 | l h -1 | 5.555555555555555e-07 | [l] / [h] | not captured | llm_corrected (0.6) | tab_1:row13:col1, tab_1:row13:col2, tab_1:row13:col3, tab_1:row13:col4 | — | 42.5 (None% RSE) |
 | V1/Fref | `Q900` · V1/Fref | 13.0 | L | 0.013000000000000001 | not captured | not captured | not captured (not captured) | tab_1:row10:col1, tab_1:row10:col2, tab_1:row10:col3, tab_1:row10:col4 | — | not captured |
+| CL/F (L/h/13.6 kg) | `Q27` · CL/F | 1.56 | L/h/13.6 kg | 2.2303921568627456e-06 | L/h | not captured | review_gapfill (0.7) | Chupradit_2024:review | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -70,13 +70,14 @@ Zhao W et al., Population pharmacokinetics of abacavir…, British journal of cl
 - table section iiv: 'CL/F' routed out of structural estimates ('Interindividual variability (%)')
 - table section iov: 'CL/F' routed out of structural estimates ('Interoccasion variability (%)')
 - table section iov: 'Residual proportional (%)' routed out of structural estimates ('Interoccasion variability (%)')
+- dropped unlinked row (NIL): 'CL/Fref' — extend the ontology if this is a real PK parameter (source ['tab_1:row6:col1', 'tab_1:row6:col2', 'tab_1:row6:col3', 'tab_1:row6:col4'])
 - dropped duplicate Q30 ('q2', value '0.810') — already have one for this compound
-- implicit units: 'CL/Fref' → L/h (from the paper text: "Table 3 caption/footnotes and text list 'CL/F (l h -1)' for similar parameters in previous analyses, and the table capti")
-- implicit units: 'q1' → L/h (from the popPK convention: 'The paper does not explicitly state the unit for Q/F in Table 2, but intercompartmental clearance is conventionally expr')
-- implicit units: 'V1/Fref' → L (from the paper text: "Table 3 caption/footnotes and text list 'V/F (l)' for similar parameters in previous analyses, and the table caption def")
+- implicit units: 'q1' → L/h (from the popPK convention: "The parameter is Q/F, defined in the Table 2 footnote as 'intercompartment clearance'. While Table 3 lists units for sim")
+- implicit units: 'V1/Fref' → L (from the popPK convention: "The parameter is V1/F, defined in the Table 2 footnote as 'apparent central volume of distribution'. While Table 3 lists")
 - apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=abacavir
 - bound model equation to Q290 (V1/F): V1/F = 13.0 ¥ (BW/17.6)^0.810
 - Q290 (V1/F) is equation-defined: value moved to equation-variable 'V1/Fref'; equation kept verbatim
+- gap-filled Q27 (CL/F) from Chupradit_2024's review values (primary lacked it)
 - skipped review gap-fill of TLAG: primary's parameterization (rate-constant / ka-only) does not use it
 
 **Extraction notes:**
@@ -111,10 +112,10 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 6 | not captured | not captured | not captured |
+| C0_has_structural_params | pass | not captured | 5 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
-| C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
-| C5_dimension_Q27 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['tab_1:row6:col1', 'tab_1:row6:col2', 'tab_1:row6:col3', 'tab_1:row6:col4'] |
+| C0c_disposition_complete | fail | not captured | not captured | not captured | not captured | not captured |
+| C5_dimension_Q27 | pass | not captured | not captured | not captured | not captured | ['Chupradit_2024:review'] |
 | C5_dimension_Q290 | pass | [length] ** 3 | not captured | not captured | not captured | ['tab_1:row10:col1', 'tab_1:row10:col2', 'tab_1:row10:col3', 'tab_1:row10:col4'] |
 | C5_dimension_Q30 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['tab_1:row7:col1', 'tab_1:row7:col2', 'tab_1:row7:col3', 'tab_1:row7:col4'] |
 | C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['tab_1:row3:col1', 'tab_1:row3:col2', 'tab_1:row3:col3', 'tab_1:row3:col4'] |
@@ -122,7 +123,7 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 | C5_dimension_Q82 | pass | [length] ** 3 | not captured | not captured | not captured | ['tab_1:row12:col1', 'tab_1:row12:col2', 'tab_1:row12:col3', 'tab_1:row12:col4'] |
 | C7_apparent_coherence | pass | not captured | not captured | not captured | not captured | not captured |
 | C8_topology | fail | not captured | not captured | not captured | not captured | not captured |
-| C9_phys_window_Q27 | pass | clearance within physiological range | 20.1 L/h | not captured | not captured | ['tab_1:row6:col1', 'tab_1:row6:col2', 'tab_1:row6:col3', 'tab_1:row6:col4'] |
+| C9_phys_window_Q27 | pass | clearance within physiological range | 8.03 L/h | not captured | not captured | ['Chupradit_2024:review'] |
 | C9_phys_window_Q82 | pass | volume within physiological range | 13.5 L | not captured | not captured | ['tab_1:row12:col1', 'tab_1:row12:col2', 'tab_1:row12:col3', 'tab_1:row12:col4'] |
 
 <details class="legend">
@@ -148,4 +149,4 @@ _No web simulator for this record: its structure has no shared WebAssembly templ
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-03 11:12 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 12:39 UTC</sub>

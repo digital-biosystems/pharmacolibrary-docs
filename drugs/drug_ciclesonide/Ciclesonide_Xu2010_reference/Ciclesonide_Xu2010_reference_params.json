@@ -1,0 +1,32 @@
+{
+ "dose_source": "library default",
+ "model_id": "Ciclesonide_Xu2010_reference",
+ "molar_masses": {
+  "central.C": 0.47060599999999997
+ },
+ "note": "Values for the shared PK_1C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "parameters": {
+  "Cl": 0.00024722222222222224,
+  "F": 1.0,
+  "MM": 0.47060599999999997,
+  "Tlag": 0.0,
+  "VdPerKg": 0.14,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 0.0001,
+  "ka": 0.0007305555555555555,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 5064.529058116233
+ },
+ "reference_peaks": {
+  "central.C": 9.043551517088132e-06
+ },
+ "stop_time": 140400.0,
+ "template": "PK_1C_enteral",
+ "template_fmu": "PK_1C_enteral.fmu"
+}

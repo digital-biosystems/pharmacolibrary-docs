@@ -1,0 +1,30 @@
+{
+ "dose_source": "WHO ATC DDD 1200 mg parenteral (J01DI02)",
+ "model_id": "CeftarolineFosamil_Principe2022_reference",
+ "molar_masses": {
+  "central.C": 0.68467
+ },
+ "note": "Values for the shared PK_1C.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "parameters": {
+  "Cl": 1.777777777777778e-06,
+  "F": 1.0,
+  "MM": 0.68467,
+  "VdPerKg": 0.00028571428571428574,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 0.0012,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 660.0000000662111
+ },
+ "reference_peaks": {
+  "central.C": 0.058428069123578806
+ },
+ "stop_time": 86400.0,
+ "template": "PK_1C",
+ "template_fmu": "PK_1C.fmu"
+}

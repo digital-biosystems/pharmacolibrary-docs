@@ -1,0 +1,36 @@
+{
+ "dose_source": "paper",
+ "model_id": "Ethionamide_AlShaer2020_reference",
+ "molar_masses": {
+  "central.C": 0.166243
+ },
+ "note": "Values for the shared PK_1C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "paper_doses_kind": "discrete",
+ "paper_doses_mg": [
+  500.0
+ ],
+ "parameters": {
+  "Cl": 1.2206444444444445e-05,
+  "F": 1.0,
+  "MM": 0.166243,
+  "Tlag": 1512.0,
+  "VdPerKg": 0.0012811428571428572,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 0.0005,
+  "ka": 0.00011388888888888888,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 9900.348352080018
+ },
+ "reference_peaks": {
+  "central.C": 0.001870787515691472
+ },
+ "stop_time": 86400.0,
+ "template": "PK_1C_enteral",
+ "template_fmu": "PK_1C_enteral.fmu"
+}

@@ -1,0 +1,33 @@
+{
+ "dose_source": "WHO ATC DDD 900 mg oral (J05AB14)",
+ "model_id": "Valganciclovir_Itohara2025_reference",
+ "molar_masses": {
+  "central.C": 0.3543617
+ },
+ "note": "Values for the shared PK_2C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "parameters": {
+  "Cl": 2.6666666666666667e-07,
+  "F": 1.0,
+  "MM": 0.3543617,
+  "Tlag": 0.0,
+  "VdPerKg": 0.00115,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 0.0009,
+  "k12": 4.796411318150449e-05,
+  "ka": 0.00016416666666666665,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 24645.850805676782
+ },
+ "reference_peaks": {
+  "central.C": 0.010316166700990802
+ },
+ "stop_time": 1123200.0,
+ "template": "PK_2C_enteral",
+ "template_fmu": "PK_2C_enteral.fmu"
+}

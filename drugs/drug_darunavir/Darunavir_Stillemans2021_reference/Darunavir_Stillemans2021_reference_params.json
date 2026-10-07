@@ -1,0 +1,38 @@
+{
+ "dose_source": "paper",
+ "model_id": "Darunavir_Stillemans2021_reference",
+ "molar_masses": {
+  "central.C": 0.547664
+ },
+ "note": "Values for the shared PK_1C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "paper_doses_kind": "discrete",
+ "paper_doses_mg": [
+  600.0,
+  800.0,
+  1200.0
+ ],
+ "parameters": {
+  "Cl": 3.5833333333333335e-06,
+  "F": 1.0,
+  "MM": 0.547664,
+  "Tlag": 0.0,
+  "VdPerKg": 0.0021714285714285715,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 0.0006,
+  "ka": 0.0001888888888888889,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 12958.996193448467
+ },
+ "reference_peaks": {
+  "central.C": 0.0029335759276020766
+ },
+ "stop_time": 165600.0,
+ "template": "PK_1C_enteral",
+ "template_fmu": "PK_1C_enteral.fmu"
+}

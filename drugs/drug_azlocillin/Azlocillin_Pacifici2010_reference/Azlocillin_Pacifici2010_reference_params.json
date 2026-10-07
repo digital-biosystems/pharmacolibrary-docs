@@ -1,0 +1,30 @@
+{
+ "dose_source": "WHO ATC DDD 12000 mg parenteral (J01CA09)",
+ "model_id": "Azlocillin_Pacifici2010_reference",
+ "molar_masses": {
+  "central.C": 0.461492
+ },
+ "note": "Values for the shared PK_1C.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "parameters": {
+  "Cl": 1.5166666666666668e-06,
+  "F": 1.0,
+  "MM": 0.461492,
+  "VdPerKg": 0.00036009668220588533,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 0.012,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 660.0000000662037
+ },
+ "reference_peaks": {
+  "central.C": 0.46757183924276624
+ },
+ "stop_time": 86400.0,
+ "template": "PK_1C",
+ "template_fmu": "PK_1C.fmu"
+}

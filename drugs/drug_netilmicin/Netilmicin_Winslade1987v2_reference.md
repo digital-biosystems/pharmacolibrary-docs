@@ -1,10 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;J01G&quot;,&quot;href&quot;:&quot;atc/J01G.md&quot;},{&quot;label&quot;:&quot;netilmicin&quot;,&quot;href&quot;:&quot;drugs/drug_netilmicin/&quot;},{&quot;label&quot;:&quot;Winslade_1987_2 \u00b7 reference&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Netilmicin_Sherwin2008_reference&quot;,&quot;label&quot;:&quot;Sherwin_2008_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_netilmicin/Netilmicin_Sherwin2008_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # netilmicin — `Netilmicin_Winslade1987v2_reference`
 
-> ## <span class="pk-badge pk-badge--orange">built, not shipped</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.286). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.286). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -12,7 +13,7 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
-**Model:** A model was built but held back: a core parameter had no value, so it is not published or simulated.
+**Model:** No model was generated from this record.
 
 ### Reviewer guidance
 
@@ -24,24 +25,29 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 
 <sub>reviewed by rule template (no LLM)</sub>
 
+> ⚠️ **STALE** — review status `model_quarantined` (reviewed 2026-09-28 14:39:11.573574+00:00) predates the upstream re-run (2026-10-07 11:36:49.125737+00:00). Current validate status: `needs_review`.
+
+> **Dose compound ≠ measured compound:** dosed `netilmicin`, measured `tobramycin and netilmicin`.
+
 ## Citation
 Winslade NE et al., Single-dose accumulation pharmacokineti…, Antimicrobial agents and ch… (1987)
   ·  DOI: [10.1128/AAC.31.4.605](https://doi.org/10.1128/AAC.31.4.605)
 
 ## Model component
-<dbs-pgx drug="netilmicin" model-id="Netilmicin_Winslade1987v2_reference" status="model_quarantined" stale="false" population="normal volunteers" measured-compound="tobramycin and netilmicin" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<dbs-pgx drug="netilmicin" model-id="Netilmicin_Winslade1987v2_reference" status="needs_review" stale="true" population="normal volunteers" measured-compound="tobramycin and netilmicin" parameterization="mechanistic" topology="1C"></dbs-pgx>
 
-**Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
-**Parameters:** 1 extracted.
+**Model structure:** 1-compartment; no model was built for this record.  
+**Parameters:** 2 extracted.
 
 **Parameterization:** mechanistic.
 
 ## Parameters
-> ⚠️ This record is not accepted (current status `model_quarantined`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
+> ⚠️ This record is not accepted (current status `needs_review`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
 | total body clearance for netilmicin | `Q22` · CL | 48 | ml/min | 8.000000000000001e-07 | L/h | not captured | boundary (0.8) | Winslade_1987_2:discussion_prose | — | not captured |
+| Vd | `Q61` · V | 28.0 | liters | 0.028 | L | not captured | review_gapfill (0.7) | Meyers_1977:review | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -68,6 +74,9 @@ Winslade NE et al., Single-dose accumulation pharmacokineti…, Antimicrobial ag
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=tobramycin and netilmicin
 - held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
 - status held at route_to_review — not promoted
+- gap-filled Q61 (V) from Meyers_1977's review values (primary lacked it)
+- skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
+- skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
 
 **Extraction notes:**
 - unparsed cell tab_2:row0:col3 = "k12 (h-')"
@@ -120,9 +129,11 @@ first reading `qwen3.6:27b-q8_0` — the numbers on this page are its, whatever 
 | C0_has_structural_params | pass | not captured | 1 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | fail | not captured | not captured | not captured | not captured | not captured |
+| C5_dimension_Q61 | pass | [length] ** 3 | not captured | not captured | not captured | ['Meyers_1977:review'] |
 | C6_cl_magnitude | pass | &lt;= 90.0 L/h | 48.0 | not captured | not captured | ['Winslade_1987_2:discussion_prose'] |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
 | C9_phys_window_Q22 | pass | clearance within physiological range | 2.88 L/h | not captured | not captured | ['Winslade_1987_2:discussion_prose'] |
+| C9_phys_window_Q61 | pass | volume within physiological range | 28 L | not captured | not captured | ['Meyers_1977:review'] |
 
 **Reviewer per-scenario checks:**
 
@@ -170,4 +181,4 @@ _No web simulator for this record: its structure has no shared WebAssembly templ
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-07-15 14:02 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 11:36 UTC</sub>

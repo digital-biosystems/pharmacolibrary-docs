@@ -1,0 +1,32 @@
+{
+ "dose_source": "WHO ATC DDD 280 mg parenteral (J01XX09)",
+ "model_id": "Daptomycin_Lou2021_reference",
+ "molar_masses": {
+  "central.C": 1.620693
+ },
+ "note": "Values for the shared PK_2C.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "parameters": {
+  "Cl": 8.777777777777778e-08,
+  "F": 1.0,
+  "MM": 1.620693,
+  "VdPerKg": 8.62857142857143e-05,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 0.00028,
+  "k12": 0.00010623620309050771,
+  "k21": 0.000260840108401084,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 660.0000000662053
+ },
+ "reference_peaks": {
+  "central.C": 0.01169361394483448
+ },
+ "stop_time": 259200.0,
+ "template": "PK_2C",
+ "template_fmu": "PK_2C.fmu"
+}

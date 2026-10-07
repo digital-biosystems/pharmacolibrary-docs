@@ -1,0 +1,30 @@
+{
+ "dose_source": "WHO ATC DDD 200 mg parenteral (J02AC01)",
+ "model_id": "Fluconazole_Matsuno2024_reference",
+ "molar_masses": {
+  "central.C": 0.3062708
+ },
+ "note": "Values for the shared PK_1C.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "parameters": {
+  "Cl": 3.277777777777778e-07,
+  "F": 1.0,
+  "MM": 0.3062708,
+  "VdPerKg": 0.0006957142857142858,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 0.0002,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 660.0000000662063
+ },
+ "reference_peaks": {
+  "central.C": 0.004098495085242114
+ },
+ "stop_time": 518400.0,
+ "template": "PK_1C",
+ "template_fmu": "PK_1C.fmu"
+}

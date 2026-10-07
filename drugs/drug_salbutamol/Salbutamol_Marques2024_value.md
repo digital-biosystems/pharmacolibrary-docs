@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;R03A&quot;,&quot;href&quot;:&quot;atc/R03A.md&quot;},{&quot;label&quot;:&quot;salbutamol&quot;,&quot;href&quot;:&quot;drugs/drug_salbutamol/&quot;},{&quot;label&quot;:&quot;Marques_2024 \u00b7 value&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Salbutamol_Marques2024v2_reference&quot;,&quot;label&quot;:&quot;Marques_2024_2_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_salbutamol/Salbutamol_Marques2024v2_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Salbutamol_Walsh2023_reference&quot;,&quot;label&quot;:&quot;Walsh_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_salbutamol/Salbutamol_Walsh2023_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Walsh_2023_Glucose&quot;,&quot;label&quot;:&quot;Walsh_2023 \u00b7 Glucose&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_salbutamol/pd_Walsh_2023_Glucose.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Salbutamol_Marques2024v2_reference&quot;,&quot;label&quot;:&quot;Marques_2024_2_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_salbutamol/Salbutamol_Marques2024v2_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Walsh_2023_Glucose&quot;,&quot;label&quot;:&quot;Walsh_2023 \u00b7 Glucose&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_salbutamol/pd_Walsh_2023_Glucose.md&quot;,&quot;status&quot;:&quot;accepted (caveats)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -13,7 +13,7 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
-**Model:** A model was built but held back: a core parameter had no value, so it is not published or simulated.
+**Model:** No model was generated from this record.
 
 ### Reviewer guidance
 
@@ -23,17 +23,17 @@ A model needs both clearance and volume; without the clearance it could only be 
 
 <sub>reviewed by rule template (no LLM)</sub>
 
-> ⚠️ **STALE** — review status `needs_review` (reviewed 2026-09-28 14:40:28.888488+00:00) predates the upstream re-run (2026-10-03 21:42:30.231386+00:00). Current validate status: `needs_review`.
+> ⚠️ **STALE** — review status `needs_review` (reviewed 2026-09-28 14:40:28.888488+00:00) predates the upstream re-run (2026-10-07 14:20:06.269645+00:00). Current validate status: `needs_review`.
 
 ## Citation
 Marques L et al., Improving Individualized Salbutamol Tre…, Pharmaceutics (2024)
   ·  DOI: [10.3390/pharmaceutics17010039](https://doi.org/10.3390/pharmaceutics17010039)
 
 ## Model component
-<dbs-pgx drug="salbutamol" model-id="Salbutamol_Marques2024_value" status="needs_review" stale="true" population="virtual patients" measured-compound="salbutamol" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<dbs-pgx drug="salbutamol" model-id="Salbutamol_Marques2024_value" status="needs_review" stale="true" population="virtual patients aged 5-65 years (PBPK-derived), healthy and cirrhosis A" measured-compound="salbutamol" parameterization="mechanistic" topology="1C"></dbs-pgx>
 
-**Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
-**Parameters:** 7 extracted.
+**Model structure:** 1-compartment; no model was built for this record.  
+**Parameters:** 6 extracted.
 
 **Parameterization:** mechanistic.
 
@@ -42,44 +42,37 @@ Marques L et al., Improving Individualized Salbutamol Tre…, Pharmaceutics (202
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| F (%) | `Q40` · Fab | 52.41 | not captured | not captured | not captured | not captured | exact (1.0) | Marques_2024_table_3:row1:col1 | — | not captured |
-| Vd (L) | `Q61` · V | 167.02 | L | 0.16702 | [l] | not captured | exact (1.0) | Marques_2024_table_3:row2:col1 | — | not captured |
-| Cmax (ng/mL) | `Q32` · Cmax | 7.250 | ng/mL | not captured | [ng] / [ml] | not captured | exact (1.0) | Marques_2024_table_3:row3:col1 | — | not captured |
-| Tmax (h) | `Q56` · tmax | 2.35 | h | 8460.0 | [h] | not captured | exact (1.0) | Marques_2024_table_3:row4:col1 | — | not captured |
-| AUC (ng·h/mL) | `Q88` · AUC | 31.75 | ng·h/mL | not captured | [[h] · [ng]] / [ml] | not captured | exact (1.0) | Marques_2024_table_3:row5:col1 | — | not captured |
-| t1/2 (h) | `Q57` · t1/2z | 2.78 | h | 10008.0 | [h] | not captured | exact (1.0) | Marques_2024_table_3:row7:col1 | — | not captured |
-| ka (h−1) | `Q49` · kabs | 3.71 | h−1 | 0.0010305555555555556 | 1/h | not captured | review_gapfill (0.7) | Marques_2024_2:review | — | not captured |
+| Mtt | `Q81` · MTT | 0.21 | not captured | not captured | not captured | not captured | exact (1.0) | Marques_2024_table_7:row0:col3 | — | not captured |
+| V1 | `Q61` · V | 226 | L | 0.226 | L | not captured | exact (1.0) | Marques_2024_table_7:row3:col3 | — | not captured |
+| 0.94–1.60 | `Q410` · Kp | 2.28 | not captured | not captured | not captured | not captured | llm (0.6) | Marques_2024_table_7:row4:col3, Marques_2024_table_7:row7:col3 | — | not captured |
+| 1.60–2.37 | `Q900` · equation variable | 1.45 | not captured | not captured | not captured | not captured | llm (0.6) | Marques_2024_table_7:row5:col3, Marques_2024_table_7:row8:col3 | — | not captured |
+| Cl | `Q22` · CL | 77.9 | L/h | 2.163888888888889e-05 | L/h | not captured | exact (1.0) | Marques_2024_table_7:row6:col3 | — | not captured |
+| k a1 | `Q49` · kabs | 31.6 | h−1 | 0.008777777777777778 | 1/h | not captured | review_gapfill (0.7) | Courlet_2022:review | — | not captured |
+| Time before dose-response | `Q83` · tlag | 15.0 | min | 900.0 | h | not captured | review_gapfill (0.7) | Iredale_1991:review | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
 <table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>label (paper)</code></td><td>the row or statistic label exactly as printed in the paper (label_verbatim) — never normalised, so it can be found in the PDF.</td></tr><tr><td><code>Q-code · name</code></td><td>the ontology parameter this label was matched to (Q22 = clearance, Q27 = CL/F, Q49 = ka, Q57 = half-life, …) and its canonical name. The Q-code, not the label, is what scoring and cross-paper merging use.</td></tr><tr><td><code>value</code></td><td>the estimate as reported in the paper.</td></tr><tr><td><code>unit</code></td><td>the unit as printed (unit_verbatim).</td></tr><tr><td><code>value_si</code></td><td>the value converted to the canonical unit. Empty when no conversion was possible — usually an unparseable or missing unit.</td></tr><tr><td><code>unit_canonical</code></td><td>the canonical unit for that Q-code, i.e. what value_si is expressed in.</td></tr><tr><td><code>RSE%</code></td><td>relative standard error of the estimate, when the paper reports one.</td></tr><tr><td><code>link</code></td><td>how the label was matched to the Q-code, with confidence. exact / boundary / fuzzy / tv_prefix / caption_compartment / special_case are deterministic string matches; llm, llm_confirmed, llm_corrected involved the model; review and review_gapfill come from the secondary review tier, the latter filling a parameter the primary extraction missed; boundary_relink is a corrected match.</td></tr><tr><td><code>source</code></td><td>where in the paper the number came from: colN = that column of the located table, other_prose = running text, review = the secondary tier, pgx = a pharmacogenomic record.</td></tr><tr><td><code>covariates</code></td><td>covariate effects attached to this parameter (e.g. weight on CL).</td></tr><tr><td><code>IIV</code></td><td>inter-individual variability reported for this parameter.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>the field is absent from the KB artifact — nothing was recorded. This is NOT the same as zero or empty: the value is unknown, not measured to be nothing.</td></tr><tr><td><code>—</code></td><td>deliberately not shown: the column does not apply to this row.</td></tr><tr><td><code>not verified</code></td><td>the record is not in an accepted state (see the badge and the note above the table); the numbers are shown as extracted, not endorsed.</td></tr></tbody></table>
 </details>
 
-### Unresolved rows _(no Q-code or no value — not parameters)_
-| label (paper) | Q-code | value | link |
-|---|---|---|---|
-| Cl (L/h) | Q22 | not captured | exact |
-
 ## Departures & gaps
 
 **Interpretation flags:**
-- dropped unlinked row (NIL): 'Fa (%)' — extend the ontology if this is a real PK parameter (source ['Marques_2024_table_3:row0:col1'])
+- implicit units: 'V1' → L (from the paper text: "Text states 'V1 was 226 L' for the 26–75 kg, BSA &lt; 1.6 m2 group.")
+- implicit units: 'Cl' → L/h (from the paper text: "Text states 'Cl was observed to be 78 L/h' for the same subgroup.")
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=salbutamol
-- population split: 'value' subgroup of Marques_2024 (paper reports 3 populations: estimate, geometric mean, value)
+- 1C volume normalization: Q63→Q61 (single-compartment model has no central/peripheral split; 'V1' is the general volume)
+- population split: 'geometric mean' subgroup of Marques_2024 (paper reports 2 populations: estimate, geometric mean)
 - skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
 - skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
-- gap-filled Q49 (kabs) from Marques_2024_2's review values (primary lacked it)
+- gap-filled Q49 (kabs) from Courlet_2022's review values (primary lacked it)
+- gap-filled Q83 (tlag) from Iredale_1991's review values (primary lacked it)
 
 **Extraction notes:**
 - unparsed cell pharmaceutics-17-00039-t006:row18:col1 = '0.19×10−4'
 - unparsed cell pharmaceutics-17-00039-t006:row19:col1 = '0.15×10−2'
-- unparsed cell Marques_2024_table_3:row6:col2 = 'Optimized value. Reference value for Cl: 46.38'
-- unparsed cell Marques_2024_table_3:row7:col2 = 'Optimized value. Reference value: 3.36'
-- companion parameter table 3 transcribed (9 record(s))
-- transposed table Marques_2024_table_4: parameters were across the columns, populations/subgroups down the first column — transposed for parsing
-- companion parameter table 4 transcribed (15 record(s))
 - companion parameter table 7 transcribed (24 record(s))
-- LLM selected parameter table(s) 3, 4, 6, 7
+- LLM selected parameter table(s) 6, 7
 
 ## Validation
 
@@ -87,18 +80,18 @@ Marques L et al., Improving Individualized Salbutamol Tre…, Pharmaceutics (202
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 6 | not captured | not captured | not captured |
+| C0_has_structural_params | pass | not captured | 4 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
-| C0c_disposition_complete | fail | not captured | not captured | not captured | not captured | not captured |
-| C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Marques_2024_table_3:row6:col1'] |
-| C5_dimension_Q32 | pass | [mass] / [length] ** 3 | not captured | not captured | not captured | ['Marques_2024_table_3:row3:col1'] |
-| C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['Marques_2024_2:review'] |
-| C5_dimension_Q56 | pass | [time] | not captured | not captured | not captured | ['Marques_2024_table_3:row4:col1'] |
-| C5_dimension_Q57 | pass | [time] | not captured | not captured | not captured | ['Marques_2024_table_3:row7:col1'] |
-| C5_dimension_Q61 | pass | [length] ** 3 | not captured | not captured | not captured | ['Marques_2024_table_3:row2:col1'] |
-| C5_dimension_Q88 | pass | [mass] * [time] / [length] ** 3 | not captured | not captured | not captured | ['Marques_2024_table_3:row5:col1'] |
+| C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
+| C1_half_life_beta | fail | 2.78 | 2.011 | 0.7234 | 0.25 | reported t½β |
+| C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Marques_2024_table_7:row6:col3'] |
+| C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['Courlet_2022:review'] |
+| C5_dimension_Q61 | pass | [length] ** 3 | not captured | not captured | not captured | ['Marques_2024_table_7:row3:col3'] |
+| C5_dimension_Q83 | pass | [time] | not captured | not captured | not captured | ['Iredale_1991:review'] |
+| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 77.9 | not captured | not captured | ['Marques_2024_table_7:row6:col3'] |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
-| C9_phys_window_Q61 | pass | volume within physiological range | 167 L | not captured | not captured | ['Marques_2024_table_3:row2:col1'] |
+| C9_phys_window_Q22 | pass | clearance within physiological range | 77.9 L/h | not captured | not captured | ['Marques_2024_table_7:row6:col3'] |
+| C9_phys_window_Q61 | pass | volume within physiological range | 226 L | not captured | not captured | ['Marques_2024_table_7:row3:col3'] |
 
 <details class="legend">
 <summary>Check legend — what each column means</summary>
@@ -133,4 +126,4 @@ _No web simulator for this record: its structure has no shared WebAssembly templ
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-03 21:42 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 14:20 UTC</sub>

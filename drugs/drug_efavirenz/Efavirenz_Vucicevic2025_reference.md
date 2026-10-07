@@ -1,11 +1,10 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;J05A&quot;,&quot;href&quot;:&quot;atc/J05A.md&quot;},{&quot;label&quot;:&quot;efavirenz&quot;,&quot;href&quot;:&quot;drugs/drug_efavirenz/&quot;},{&quot;label&quot;:&quot;Vucicevic_2025 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Efavirenz_Chala2023_reference&quot;,&quot;label&quot;:&quot;Chala_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_efavirenz/Efavirenz_Chala2023_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # efavirenz — `Efavirenz_Vucicevic2025_reference`
 
-> ## <span class="pk-badge pk-badge--orange">built, not shipped</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -13,7 +12,7 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
-**Model:** A model was built but held back: a core parameter had no value, so it is not published or simulated.
+**Model:** No model was generated from this record.
 
 ### Reviewer guidance
 
@@ -25,48 +24,60 @@ Independently confirmed by `gpt-oss:120b`.
 
 <sub>reviewed by glm-5.3-flash</sub>
 
+> ⚠️ **STALE** — review status `model_quarantined` (reviewed 2026-09-28 14:37:52.332161+00:00) predates the upstream re-run (2026-10-07 12:37:30.044307+00:00). Current validate status: `needs_review`.
+
 ## Citation
 Vucicevic K et al., Population Pharmacokinetic-Pharmacogene…, Cureus (2025)
   ·  DOI: [10.7759/cureus.88533](https://doi.org/10.7759/cureus.88533)
 
 ## Model component
-<dbs-pgx drug="efavirenz" model-id="Efavirenz_Vucicevic2025_reference" status="model_quarantined" stale="false" population="HIV-1-infected adult patients" measured-compound="efavirenz" parameterization="apparent" topology="1C"></dbs-pgx>
+<dbs-pgx drug="efavirenz" model-id="Efavirenz_Vucicevic2025_reference" status="needs_review" stale="true" population="HIV-1-infected adults" measured-compound="efavirenz" parameterization="apparent" topology="1C"></dbs-pgx>
 
-**Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
-**Parameters:** 1 extracted.
+**Model structure:** 1-compartment; no model was built for this record.  
+**Parameters:** 3 extracted.
 
 **Parameterization:** CL/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
 ## Parameters
-> ⚠️ This record is not accepted (current status `model_quarantined`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
+> ⚠️ This record is not accepted (current status `needs_review`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| Typical oral clearance (CL/F) | `Q27` · CL/F | 13.9 | L/h | 3.861111111111112e-06 | L/h | not captured | boundary (0.8) | Vucicevic_2025:results_prose | — | not captured |
+| CLp (L/h) | `Q22` · CL | 13.9 | L/h | 3.861111111111112e-06 | [l] / [h] | 4 | exact (1.0) | TAB2:row3:col1 | — | not captured |
+| θRSA | `Q900` · θRSA | -0.364 | not captured | not captured | not captured | not captured | not captured (not captured) | not captured | — | not captured |
+| θRSB | `Q900` · θRSB | -0.268 | not captured | not captured | not captured | not captured | not captured (not captured) | not captured | — | not captured |
+| absorption rate constant | `Q49` · kabs | 0.397 | h−1 | 0.00011027777777777779 | 1/h | not captured | review_gapfill (0.7) | Wang_2020:review | — | not captured |
+| absorption lag time | `Q83` · tlag | 0.825 | h | 2970.0 | h | not captured | review_gapfill (0.7) | Wang_2020:review | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
 <table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>label (paper)</code></td><td>the row or statistic label exactly as printed in the paper (label_verbatim) — never normalised, so it can be found in the PDF.</td></tr><tr><td><code>Q-code · name</code></td><td>the ontology parameter this label was matched to (Q22 = clearance, Q27 = CL/F, Q49 = ka, Q57 = half-life, …) and its canonical name. The Q-code, not the label, is what scoring and cross-paper merging use.</td></tr><tr><td><code>value</code></td><td>the estimate as reported in the paper.</td></tr><tr><td><code>unit</code></td><td>the unit as printed (unit_verbatim).</td></tr><tr><td><code>value_si</code></td><td>the value converted to the canonical unit. Empty when no conversion was possible — usually an unparseable or missing unit.</td></tr><tr><td><code>unit_canonical</code></td><td>the canonical unit for that Q-code, i.e. what value_si is expressed in.</td></tr><tr><td><code>RSE%</code></td><td>relative standard error of the estimate, when the paper reports one.</td></tr><tr><td><code>link</code></td><td>how the label was matched to the Q-code, with confidence. exact / boundary / fuzzy / tv_prefix / caption_compartment / special_case are deterministic string matches; llm, llm_confirmed, llm_corrected involved the model; review and review_gapfill come from the secondary review tier, the latter filling a parameter the primary extraction missed; boundary_relink is a corrected match.</td></tr><tr><td><code>source</code></td><td>where in the paper the number came from: colN = that column of the located table, other_prose = running text, review = the secondary tier, pgx = a pharmacogenomic record.</td></tr><tr><td><code>covariates</code></td><td>covariate effects attached to this parameter (e.g. weight on CL).</td></tr><tr><td><code>IIV</code></td><td>inter-individual variability reported for this parameter.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>the field is absent from the KB artifact — nothing was recorded. This is NOT the same as zero or empty: the value is unknown, not measured to be nothing.</td></tr><tr><td><code>—</code></td><td>deliberately not shown: the column does not apply to this row.</td></tr><tr><td><code>not verified</code></td><td>the record is not in an accepted state (see the badge and the note above the table); the numbers are shown as extracted, not endorsed.</td></tr></tbody></table>
 </details>
 
+### Unresolved rows _(no Q-code or no value — not parameters)_
+| label (paper) | Q-code | value | link |
+|---|---|---|---|
+| CL/F (L/h) = CLp * (1 +θRSA)RSA × (1 +θRSB)RSB | Q27 | not captured | boundary |
+
 ## Departures & gaps
 
 **Interpretation flags:**
-- dropped value-less row: 'CLp (L/h)'
-- dropped value-less row: 'θ RSA'
-- dropped value-less row: 'θ RSB'
-- dropped value-less row: 'CV CL (%)'
-- salvaged Q27 ('Typical oral clearance (CL/F)'=13.9) from results prose — parameter table was unreadable
+- table section iiv: 'CVCL (%)' routed out of structural estimates ('Inter-individual variability')
+- kept covariate coefficient θRSA=-0.364 (covariate RSA) — not an ontology parameter
+- kept covariate coefficient θRSB=-0.268 (covariate RSB) — not an ontology parameter
 - apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=efavirenz
-- held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
-- status held at route_to_review — not promoted
+- skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
+- skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
+- gap-filled Q49 (kabs) from Wang_2020's review values (primary lacked it)
+- gap-filled Q83 (tlag) from Wang_2020's review values (primary lacked it)
 
 **Extraction notes:**
-- unparsed cell tab_0:row0:col2 = 'Bootstrap (2.5-97.5 percentiles)'
-- unparsed cell tab_0:row3:col2 = '13.9 (12.73 to 15.21)'
-- unparsed cell tab_0:row4:col2 = '-0.368 (-0.457 to -0.255)'
-- unparsed cell tab_0:row7:col2 = '13.4 (3.24 to 20.9)'
-- unparsed cell tab_0:row9:col2 = '0.244 (0.182 to 0.299)'
+- unparsed cell TAB2:row3:col2 = '13.9 (12.73 to 15.21)'
+- unparsed cell TAB2:row4:col2 = '-0.368 (-0.457 to -0.255)'
+- unparsed cell TAB2:row7:col2 = '13.4 (3.24 to 20.9)'
+- unparsed cell TAB2:row9:col2 = '0.244 (0.182 to 0.299)'
+- LLM selected parameter table(s) 2
+- LLM region Vucicevic_2025:discussion_prose: Error code: 429 - {'error': {'message': 'Rate limit exceeded for api_key: 8d79104cac3d0b5a8019d9c3dd60ff02e7a84591fb3552ddb3bbcabd52b31d23. Limit type: max_parallel_requests. Current limit: 4, Remaining: 0. Limit resets at: 2026-10-07 13:07:54 UTC', 'type': 'throttling_error', 'param': None, 'code': '429'}}
 
 ## Validation
 
@@ -92,10 +103,12 @@ _Every reader agrees on every compared field of this record._
 | C0_has_structural_params | pass | not captured | 1 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | fail | not captured | not captured | not captured | not captured | not captured |
-| C2_base_Q27 | pass | 13.9 | 13.9 | 1.0 | 0.05 | footnote reference category |
+| C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['TAB2:row3:col1'] |
+| C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['Wang_2020:review'] |
+| C5_dimension_Q83 | pass | [time] | not captured | not captured | not captured | ['Wang_2020:review'] |
 | C7_apparent_coherence | pass | not captured | not captured | not captured | not captured | not captured |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
-| C9_phys_window_Q27 | pass | clearance within physiological range | 13.9 L/h | not captured | not captured | ['Vucicevic_2025:results_prose'] |
+| C9_phys_window_Q22 | pass | clearance within physiological range | 13.9 L/h | not captured | not captured | ['TAB2:row3:col1'] |
 
 **Reviewer per-scenario checks:**
 
@@ -143,4 +156,4 @@ _No web simulator for this record: its structure has no shared WebAssembly templ
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-07-15 11:51 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 12:37 UTC</sub>

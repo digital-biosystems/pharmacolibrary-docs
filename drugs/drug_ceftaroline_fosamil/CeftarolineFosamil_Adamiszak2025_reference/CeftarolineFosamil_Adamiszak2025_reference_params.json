@@ -1,0 +1,37 @@
+{
+ "dose_source": "paper",
+ "model_id": "CeftarolineFosamil_Adamiszak2025_reference",
+ "molar_masses": {
+  "central.C": 0.68467
+ },
+ "note": "Values for the shared PK_2C.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "paper_doses_kind": "range",
+ "paper_doses_mg": [
+  400.0,
+  600.0
+ ],
+ "parameters": {
+  "Cl": 2.8527777777777776e-06,
+  "F": 1.0,
+  "MM": 0.68467,
+  "VdPerKg": 0.00030371428571428574,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 0.0004,
+  "k12": 0.00011118950559213964,
+  "k21": 0.0003022875816993464,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 660.0000000662034
+ },
+ "reference_peaks": {
+  "central.C": 0.010345427666748938
+ },
+ "stop_time": 86400.0,
+ "template": "PK_2C",
+ "template_fmu": "PK_2C.fmu"
+}

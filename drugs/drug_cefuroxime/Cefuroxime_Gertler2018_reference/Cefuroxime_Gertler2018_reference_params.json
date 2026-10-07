@@ -1,0 +1,34 @@
+{
+ "dose_source": "WHO ATC DDD 500 mg oral (J01DC02)",
+ "model_id": "Cefuroxime_Gertler2018_reference",
+ "molar_masses": {
+  "central.C": 0.424385
+ },
+ "note": "Values for the shared PK_2C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "parameters": {
+  "Cl": 1.4305555555555555e-06,
+  "F": 0.9,
+  "MM": 0.424385,
+  "Tlag": 0.0,
+  "VdPerKg": 0.0001607142857142857,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 0.0005,
+  "k12": 0.0004491358024691359,
+  "k21": 0.0002960033847555816,
+  "ka": 0.0027166666666666663,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 2072.2030086107984
+ },
+ "reference_peaks": {
+  "central.C": 0.004095753074391143
+ },
+ "stop_time": 86400.0,
+ "template": "PK_2C_enteral",
+ "template_fmu": "PK_2C_enteral.fmu"
+}

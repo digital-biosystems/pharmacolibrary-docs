@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;D01A&quot;,&quot;href&quot;:&quot;atc/D01A.md&quot;},{&quot;label&quot;:&quot;flucytosine&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Flucytosine_Hope2006_reference&quot;,&quot;label&quot;:&quot;Hope_2006_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_flucytosine/Flucytosine_Hope2006_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Flucytosine_Stott2023_reference&quot;,&quot;label&quot;:&quot;Stott_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_flucytosine/Flucytosine_Stott2023_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Flucytosine_Kim2020_reference&quot;,&quot;label&quot;:&quot;Kim_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_flucytosine/Flucytosine_Kim2020_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Flucytosine_Stott2023_mean&quot;,&quot;label&quot;:&quot;Stott_2023_mean&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_flucytosine/Flucytosine_Stott2023_mean.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Flucytosine_Stott2023_median&quot;,&quot;label&quot;:&quot;Stott_2023_median&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_flucytosine/Flucytosine_Stott2023_median.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 # flucytosine
 
@@ -15,19 +15,31 @@ Flucytosine is an antifungal used to treat serious fungal infections such as can
 
 <small>Summary written by `glm-5.3-flash` from [Wikidata Q238490](https://www.wikidata.org/wiki/Q238490) and the WHO ATC classification; not checked by a person.</small>
 
+## Molecules and molar masses
+
+> The molar mass each model uses to convert mass to molar concentration and to form a metabolite molecule for molecule. Looked up, never estimated: DrugBank for the drug, the paper's own value or the PubChem entry matched to the paper's name for a metabolite.
+
+| molecule | role | molar mass (g/mol) | formula | source | PubChem | records |
+|---|---|---|---|---|---|---|
+| flucytosine | parent | 129.093 | C4H4FN3O | DrugBank | [3366](https://pubchem.ncbi.nlm.nih.gov/compound/3366) | Stott_2023, Vermes_2000 |
+
 ## Extraction summary
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| not captured | not captured | 0/1/2 | 0/0/0 | 0/0/0 | not captured | not captured | 15 | 3/0 | 5/0 | 0 |
+| 2026-10-07 13:19 | 10:27 | 4/2/1 | 0/0/0 | 0/0/0 | 159,592/28,626 | ollama / qwen3.8:27b-mtp-q8_0 | 15 | 2/3 | 5/0 | 0 |
 
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span><br><sub>blocking: T6_deviations</sub><br><sub>route_to: `engineer`</sub> | [Hope_2006_reference](drugs/drug_flucytosine/Flucytosine_Hope2006_reference.md) | ▶ model + simulator | 1-compartment, oral | 3 | Hope WW et al., Derivation of an in vivo drug exposure…, Antimicrobial agents and ch… (2006) | [10.1128/AAC.00369-06](https://doi.org/10.1128/AAC.00369-06) |
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span><br><sub>blocking: T1_t_half_beta</sub><br><sub>blocking: T3_param_coverage</sub><br><sub>route_to: `engineer`</sub> | [Stott_2023_reference](drugs/drug_flucytosine/Flucytosine_Stott2023_reference.md) | ▶ model + simulator | 1-compartment, oral | 4 | Stott KE et al., Population pharmacokinetics and CSF pen…, The Journal of antimicrobia… (2023) | [10.1093/jac/dkad038](https://doi.org/10.1093/jac/dkad038) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.2). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">mouse</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Stegman_1999_reference](drugs/drug_flucytosine/Flucytosine_Stegman1999_reference.md) | — | general linear (no model) | 0 | Stegman LD et al., Noninvasive quantitation of cytosine de…, Proceedings of the National… (1999) | [10.1073/pnas.96.17.9821](https://doi.org/10.1073/pnas.96.17.9821) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.429). The first reading is what the record holds.">cross-check: disputed</span> | [Kim_2020_reference](drugs/drug_flucytosine/Flucytosine_Kim2020_reference.md) | ▶ model + simulator | 1-compartment, IV | 2 | Kim HY et al., Saliva for Precision Dosing of Antifung…, Frontiers in pharmacology (2020) | [10.3389/fphar.2020.00894](https://doi.org/10.3389/fphar.2020.00894) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.667). The first reading is what the record holds.">cross-check: disputed</span> | [Stott_2023_mean](drugs/drug_flucytosine/Flucytosine_Stott2023_mean.md) | ▶ model + simulator | 1-compartment, oral | 4 | Stott KE et al., Population pharmacokinetics and CSF pen…, The Journal of antimicrobia… (2023) | [10.1093/jac/dkad038](https://doi.org/10.1093/jac/dkad038) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.667). The first reading is what the record holds.">cross-check: disputed</span> | [Stott_2023_median](drugs/drug_flucytosine/Flucytosine_Stott2023_median.md) | ▶ model + simulator | 1-compartment, oral | 4 | Stott KE et al., Population pharmacokinetics and CSF pen…, The Journal of antimicrobia… (2023) | [10.1093/jac/dkad038](https://doi.org/10.1093/jac/dkad038) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.143). The first reading is what the record holds.">cross-check: disputed</span> | [Vermes_2000_reference](drugs/drug_flucytosine/Flucytosine_Vermes2000_reference.md) | held back | 1-compartment, IV | 4 | Vermes A et al., Population pharmacokinetics of flucytos…, Therapeutic drug monitoring (2000) | [10.1097/00007691-200012000-00006](https://doi.org/10.1097/00007691-200012000-00006) |
+| <span class="pk-badge pk-badge--neutral">None</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span><br><sub>STALE — current validate: not captured</sub> | [Stott_2023_reference](drugs/drug_flucytosine/Flucytosine_Stott2023_reference.md) | — | — (no model) | 0 | Stott KE et al., Population pharmacokinetics and CSF pen…, The Journal of antimicrobia… (2023) | [10.1093/jac/dkad038](https://doi.org/10.1093/jac/dkad038) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span><br><sub>STALE — current validate: rejected</sub><br><sub>blocking: C9 clearance/volume outside physiological window (implausible magnitude — unit/…</sub><br><sub>route_to: `human_review`</sub> | [Hope_2006_reference](drugs/drug_flucytosine/Flucytosine_Hope2006_reference.md) | — | 1-compartment (no model) | 3 | Hope WW et al., Derivation of an in vivo drug exposure…, Antimicrobial agents and ch… (2006) | [10.1128/AAC.00369-06](https://doi.org/10.1128/AAC.00369-06) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.2). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">mouse</span><br><sub>STALE — current validate: rejected</sub><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Stegman_1999_reference](drugs/drug_flucytosine/Flucytosine_Stegman1999_reference.md) | — | general linear (no model) | 0 | Stegman LD et al., Noninvasive quantitation of cytosine de…, Proceedings of the National… (1999) | [10.1073/pnas.96.17.9821](https://doi.org/10.1073/pnas.96.17.9821) |
 
 ## ADME sites
 
@@ -51,8 +63,8 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 ## Coverage
 
 - **PubMed hits:** 9 matched, 9 returned
-- **screened:** 3  ·  **relevant:** 4
-- **records:** 3  ·  extracted 0  ·  needs_review 2  ·  rejected 1  ·  stale 0
+- **screened:** 4  ·  **relevant:** 3
+- **records:** 7  ·  extracted 4  ·  needs_review 0  ·  rejected 2  ·  stale 3
 - **scholar-agent fallback query used:** not captured
 
 ## Full text wanted
@@ -61,17 +73,20 @@ _1 paper(s) judged relevant from the abstract, with no full text on disk — pay
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Vermes_2000.pdf` | Vermes A et al., Population pharmacokinetics of flucytos…, Therapeutic drug monitoring (2000) | popPK | 10 | [10.1097/00007691-200012000-00006](https://doi.org/10.1097/00007691-200012000-00006) | [11128235](https://pubmed.ncbi.nlm.nih.gov/11128235) | The study explicitly develops and validates population pharmacokinetic models for flucytosine in humans, providing quantitative clearance, volume of distribution, and intercompartmental rate constants with covariate equations. |
+| `Vermes_2000.pdf` | Vermes A et al., Population pharmacokinetics of flucytos…, Therapeutic drug monitoring (2000) | popPK | 10 | [10.1097/00007691-200012000-00006](https://doi.org/10.1097/00007691-200012000-00006) | [11128235](https://pubmed.ncbi.nlm.nih.gov/11128235) | The study reports quantitative population pharmacokinetic parameters (Vd, Cl, k12, k21) for flucytosine in humans with values explicitly listed in the abstract. |
 
-<sub>queue written 2026-07-18T04:17:00.739203+00:00 · relevance threshold 5</sub>
+<sub>queue written 2026-10-07T13:09:50.841719+00:00</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Kim_2020 | irrelevant | not captured | not captured | The paper explicitly states that no studies on flucytosine were identified and only develops a population PK model for voriconazole. |
-| popPK | Li_2007 | irrelevant | not captured | not captured | The paper exclusively reports population pharmacokinetic parameters for meropenem and contains no data or mention of flucytosine. |
-| popPK | Scott_2020 | irrelevant | not captured | not captured | This narrative review summarizes published flucytosine pharmacokinetic data from other studies rather than presenting original quantitative parameters or population models. |
+| popPK | Kim_2020 | irrelevant | 0 | 0 | The paper focuses on voriconazole and fluconazole, and explicitly states that no studies were identified for flucytosine. |
+| popPK | Li_2007 | irrelevant | 0 | 0 | The study focuses on the pharmacodynamics of meropenem, not flucytosine. |
+| popPK | Liu_2025 | irrelevant | 0 | 0 | The paper is a review of MIC distributions and PK/PD indices for antifungals (primarily azoles) in Cryptococcus infections; it does not report original quantitative pharmacokinetic parameters (CL, V, etc.) for flucytosine. |
+| popPK | Pongratz_2011 | irrelevant | 0 | 0 | The study assesses in vitro antimalarial activity (EC50) of flucytosine against Plasmodium falciparum, not its pharmacokinetic disposition parameters. |
+| popPK | Scott_2020 | irrelevant | 2 | 0 | This is a review article summarizing neonatal antifungal pharmacokinetics, and the provided evidence contains no original quantitative disposition parameters for flucytosine. |
+| popPK | Stegman_1999 | irrelevant | 2 | 5 | The study focuses on the pharmacokinetics of 5-fluorouracil (5-FU) and the conversion of 5-fluorocytosine (5-FC) in a gene therapy context, not the disposition of flucytosine (5-FC) itself. |
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-07-15 12:02 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-10-07 13:10 UTC</sub>

@@ -1,0 +1,32 @@
+{
+ "dose_source": "WHO ATC DDD 750 mg oral (J04AD03)",
+ "model_id": "Ethionamide_Asiimwe2026_reference",
+ "molar_masses": {
+  "central.C": 0.166243
+ },
+ "note": "Values for the shared PK_1C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "parameters": {
+  "Cl": 9.777777777777778e-07,
+  "F": 1.0,
+  "MM": 0.166243,
+  "Tlag": 0.0,
+  "VdPerKg": 0.0004081428571428572,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 0.00075,
+  "ka": 0.0001388888888888889,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 13747.0666670452
+ },
+ "reference_peaks": {
+  "central.C": 0.01660358839438921
+ },
+ "stop_time": 104400.0,
+ "template": "PK_1C_enteral",
+ "template_fmu": "PK_1C_enteral.fmu"
+}

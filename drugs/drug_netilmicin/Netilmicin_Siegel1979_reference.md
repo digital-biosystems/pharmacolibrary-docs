@@ -1,10 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;J01G&quot;,&quot;href&quot;:&quot;atc/J01G.md&quot;},{&quot;label&quot;:&quot;netilmicin&quot;,&quot;href&quot;:&quot;drugs/drug_netilmicin/&quot;},{&quot;label&quot;:&quot;Siegel_1979 \u00b7 reference&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Netilmicin_Sherwin2008_reference&quot;,&quot;label&quot;:&quot;Sherwin_2008_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_netilmicin/Netilmicin_Sherwin2008_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # netilmicin — `Netilmicin_Siegel1979_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -24,39 +25,46 @@ Independently confirmed by `gpt-oss:120b`.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
+> ⚠️ **STALE** — review status `rejected` (reviewed 2026-09-28 14:39:11.571210+00:00) predates the upstream re-run (2026-10-07 11:36:46.277200+00:00). Current validate status: `needs_review`.
+
 ## Citation
 Siegel JD et al., Pharmacokinetic properties of netilmici…, Antimicrobial agents and ch… (1979)
   ·  DOI: [10.1128/AAC.15.2.246](https://doi.org/10.1128/AAC.15.2.246)
 
 ## Model component
-<dbs-pgx drug="netilmicin" model-id="Netilmicin_Siegel1979_reference" status="rejected" stale="false" population="newborn infants" measured-compound="netilmicin" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<dbs-pgx drug="netilmicin" model-id="Netilmicin_Siegel1979_reference" status="needs_review" stale="true" population="newborn infants" measured-compound="netilmicin" parameterization="mechanistic" topology="1C"></dbs-pgx>
 
 **Model structure:** 1-compartment; no model was built for this record.  
-**Parameters:** 0 extracted.
+**Parameters:** 3 extracted.
 
 **Parameterization:** mechanistic.
 
 ## Parameters
-> ⚠️ This record is not accepted (current status `rejected`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
+> ⚠️ This record is not accepted (current status `needs_review`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
 
-_No resolved parameters._
+| label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
+|---|---|---|---|---|---|---|---|---|---|---|
+| t1/2 (h) | `Q57` · t1/2z | 4.7 | h | 16920.0 | [h] | not captured | exact (1.0) | Siegel_1979_table_2:row9:col1, Siegel_1979_table_2:row9:col2, Siegel_1979_table_2:row9:col3, Siegel_1979_table_2:row9:col4, Siegel_1979_table_2:row9:col5 | — | not captured |
+| AUC (µg/ml·h) | `Q88` · AUC | 33.4 | µg/ml·h | not captured | [µg] / [[h] · [ml]] | not captured | exact (1.0) | Siegel_1979_table_2:row10:col1, Siegel_1979_table_2:row10:col2, Siegel_1979_table_2:row10:col3, Siegel_1979_table_2:row10:col4, Siegel_1979_table_2:row10:col5 | — | not captured |
+| Vd (ml/kg) | `Q61` · V | 609 | ml/kg | 0.042629999999999994 | [ml] / [kg] | not captured | exact (1.0) | Siegel_1979_table_2:row11:col1, Siegel_1979_table_2:row11:col2, Siegel_1979_table_2:row11:col3, Siegel_1979_table_2:row11:col4, Siegel_1979_table_2:row11:col5 | — | not captured |
+
+<details class="legend">
+<summary>Column legend — what each column means</summary>
+<table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>label (paper)</code></td><td>the row or statistic label exactly as printed in the paper (label_verbatim) — never normalised, so it can be found in the PDF.</td></tr><tr><td><code>Q-code · name</code></td><td>the ontology parameter this label was matched to (Q22 = clearance, Q27 = CL/F, Q49 = ka, Q57 = half-life, …) and its canonical name. The Q-code, not the label, is what scoring and cross-paper merging use.</td></tr><tr><td><code>value</code></td><td>the estimate as reported in the paper.</td></tr><tr><td><code>unit</code></td><td>the unit as printed (unit_verbatim).</td></tr><tr><td><code>value_si</code></td><td>the value converted to the canonical unit. Empty when no conversion was possible — usually an unparseable or missing unit.</td></tr><tr><td><code>unit_canonical</code></td><td>the canonical unit for that Q-code, i.e. what value_si is expressed in.</td></tr><tr><td><code>RSE%</code></td><td>relative standard error of the estimate, when the paper reports one.</td></tr><tr><td><code>link</code></td><td>how the label was matched to the Q-code, with confidence. exact / boundary / fuzzy / tv_prefix / caption_compartment / special_case are deterministic string matches; llm, llm_confirmed, llm_corrected involved the model; review and review_gapfill come from the secondary review tier, the latter filling a parameter the primary extraction missed; boundary_relink is a corrected match.</td></tr><tr><td><code>source</code></td><td>where in the paper the number came from: colN = that column of the located table, other_prose = running text, review = the secondary tier, pgx = a pharmacogenomic record.</td></tr><tr><td><code>covariates</code></td><td>covariate effects attached to this parameter (e.g. weight on CL).</td></tr><tr><td><code>IIV</code></td><td>inter-individual variability reported for this parameter.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>the field is absent from the KB artifact — nothing was recorded. This is NOT the same as zero or empty: the value is unknown, not measured to be nothing.</td></tr><tr><td><code>—</code></td><td>deliberately not shown: the column does not apply to this row.</td></tr><tr><td><code>not verified</code></td><td>the record is not in an accepted state (see the badge and the note above the table); the numbers are shown as extracted, not endorsed.</td></tr></tbody></table>
+</details>
 
 ## Departures & gaps
 
 **Interpretation flags:**
-- dropped unlinked row (NIL): 'E. coli (50)' — extend the ontology if this is a real PK parameter (source ['Siegel_1979_table_1:row0:col2', 'Siegel_1979_table_1:row0:col4', 'Siegel_1979_table_1:row0:col5'])
-- dropped unlinked row (NIL): 'K. pneumoniae (50)' — extend the ontology if this is a real PK parameter (source ['Siegel_1979_table_1:row2:col2', 'Siegel_1979_table_1:row2:col3', 'Siegel_1979_table_1:row2:col4', 'Siegel_1979_table_1:row2:col5'])
-- dropped unlinked row (NIL): 'Citrobacter species (45)' — extend the ontology if this is a real PK parameter (source ['Siegel_1979_table_1:row4:col2', 'Siegel_1979_table_1:row4:col3', 'Siegel_1979_table_1:row4:col4', 'Siegel_1979_table_1:row4:col5'])
-- dropped unlinked row (NIL): 'Enterobacter species (75)' — extend the ontology if this is a real PK parameter (source ['Siegel_1979_table_1:row6:col2', 'Siegel_1979_table_1:row6:col3', 'Siegel_1979_table_1:row6:col4', 'Siegel_1979_table_1:row6:col5'])
-- dropped unlinked row (NIL): 'Proteus, indole negative (13)' — extend the ontology if this is a real PK parameter (source ['Siegel_1979_table_1:row8:col2', 'Siegel_1979_table_1:row8:col3', 'Siegel_1979_table_1:row8:col4', 'Siegel_1979_table_1:row8:col5'])
-- dropped unlinked row (NIL): 'Proteus, indole positive (5)' — extend the ontology if this is a real PK parameter (source ['Siegel_1979_table_1:row10:col2', 'Siegel_1979_table_1:row10:col3', 'Siegel_1979_table_1:row10:col4', 'Siegel_1979_table_1:row10:col5'])
-- dropped unlinked row (NIL): 'Salmonella (20)' — extend the ontology if this is a real PK parameter (source ['Siegel_1979_table_1:row12:col2', 'Siegel_1979_table_1:row12:col3', 'Siegel_1979_table_1:row12:col4', 'Siegel_1979_table_1:row12:col5'])
-- dropped unlinked row (NIL): 'S. aureus (25)' — extend the ontology if this is a real PK parameter (source ['Siegel_1979_table_1:row14:col2', 'Siegel_1979_table_1:row14:col3', 'Siegel_1979_table_1:row14:col4', 'Siegel_1979_table_1:row14:col5'])
+- dropped unlinked row (NIL): 'No. of infants' — extend the ontology if this is a real PK parameter (source ['Siegel_1979_table_2:row2:col1', 'Siegel_1979_table_2:row2:col2', 'Siegel_1979_table_2:row2:col3', 'Siegel_1979_table_2:row2:col4', 'Siegel_1979_table_2:row2:col5'])
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=netilmicin
+- skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
+- skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
 
 **Extraction notes:**
 - no TEI final-model table id; trying text-pointer table recovery
-- unparsed cell Siegel_1979_table_1:row0:col3 = '&lt;=0.3'
+- LLM selected parameter table(s) 2
+- transposed table Siegel_1979_table_2: parameters were across the columns, populations/subgroups down the first column — transposed for parsing
 
 ## Validation
 
@@ -79,9 +87,14 @@ _Every reader agrees on every compared field of this record._
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | fail | not captured | 0 | not captured | not captured | not captured |
-| C0b_disposition_core | fail | not captured | not captured | not captured | not captured | not captured |
+| C0_has_structural_params | pass | not captured | 3 | not captured | not captured | not captured |
+| C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
+| C0c_disposition_complete | fail | not captured | not captured | not captured | not captured | not captured |
+| C5_dimension_Q57 | pass | [time] | not captured | not captured | not captured | ['Siegel_1979_table_2:row9:col1', 'Siegel_1979_table_2:row9:col2', 'Siegel_1979_table_2:row9:col3', 'Siegel_1979_table_2:row9:col4', 'Siegel_1979_table_2:row9:col5'] |
+| C5_dimension_Q61 | pass | [length] ** 3 | not captured | not captured | not captured | ['Siegel_1979_table_2:row11:col1', 'Siegel_1979_table_2:row11:col2', 'Siegel_1979_table_2:row11:col3', 'Siegel_1979_table_2:row11:col4', 'Siegel_1979_table_2:row11:col5'] |
+| C5_dimension_Q88 | pass | [mass] * [time] / [length] ** 3 | not captured | not captured | not captured | ['Siegel_1979_table_2:row10:col1', 'Siegel_1979_table_2:row10:col2', 'Siegel_1979_table_2:row10:col3', 'Siegel_1979_table_2:row10:col4', 'Siegel_1979_table_2:row10:col5'] |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
+| C9_phys_window_Q61 | pass | volume within physiological range | 42.6 L | not captured | not captured | ['Siegel_1979_table_2:row11:col1', 'Siegel_1979_table_2:row11:col2', 'Siegel_1979_table_2:row11:col3', 'Siegel_1979_table_2:row11:col4', 'Siegel_1979_table_2:row11:col5'] |
 
 <details class="legend">
 <summary>Check legend — what each column means</summary>
@@ -95,9 +108,19 @@ _Every reader agrees on every compared field of this record._
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
-## Models
+## Downloadable models
 
-<p>No downloads: this record is <b>rejected</b>, so it is not published as a model. Any archives generated for it before the verdict have been removed — a download outlives the page that explains it.</p>
+<div class="pk-models-grid"><div class="pk-models-table">
+<table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
+</tbody></table>
+<p>No bundles have been generated for this record yet. When the engineer emits them they appear here automatically — this page reports what is on disk and generates nothing itself.</p>
+</div></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
@@ -106,4 +129,4 @@ _No web simulator for this record: its structure has no shared WebAssembly templ
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-07-15 14:02 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 11:36 UTC</sub>

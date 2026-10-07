@@ -1,0 +1,30 @@
+{
+ "dose_source": "WHO ATC DDD 200 mg parenteral (J01GB12)",
+ "model_id": "Arbekacin_Suzuki2003_reference",
+ "molar_masses": {
+  "central.C": 0.5526190000000001
+ },
+ "note": "Values for the shared PK_1C.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "parameters": {
+  "Cl": 1.638888888888889e-07,
+  "F": 1.0,
+  "MM": 0.5526190000000001,
+  "VdPerKg": 0.0005,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 0.0002,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 660.0000000662061
+ },
+ "reference_peaks": {
+  "central.C": 0.005706266015979053
+ },
+ "stop_time": 777600.0,
+ "template": "PK_1C",
+ "template_fmu": "PK_1C.fmu"
+}

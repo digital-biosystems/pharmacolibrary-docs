@@ -1,0 +1,32 @@
+{
+ "dose_source": "library default",
+ "model_id": "Cefixime_Edwina2023_reference",
+ "molar_masses": {
+  "central.C": 0.45344999999999996
+ },
+ "note": "Values for the shared PK_2C.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "parameters": {
+  "Cl": 1.7611111111111112e-06,
+  "F": 1.0,
+  "MM": 0.45344999999999996,
+  "VdPerKg": 0.0001457142857142857,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 1e-05,
+  "k12": 0.0003213507625272332,
+  "k21": 0.0003365274925849875,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 660.0000000662005
+ },
+ "reference_peaks": {
+  "central.C": 0.00017776247889018346
+ },
+ "stop_time": 86400.0,
+ "template": "PK_2C",
+ "template_fmu": "PK_2C.fmu"
+}

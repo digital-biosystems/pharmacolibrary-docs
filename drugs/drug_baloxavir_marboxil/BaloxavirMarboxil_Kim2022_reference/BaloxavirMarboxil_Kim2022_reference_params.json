@@ -1,0 +1,38 @@
+{
+ "dose_source": "paper",
+ "model_id": "BaloxavirMarboxil_Kim2022_reference",
+ "molar_masses": {
+  "central.C": 0.483489
+ },
+ "note": "Values for the shared PK_1C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "paper_doses_kind": "discrete",
+ "paper_doses_mg": [
+  20.0,
+  40.0,
+  80.0
+ ],
+ "parameters": {
+  "Cl": 2.063888888888889e-06,
+  "F": 1.0,
+  "MM": 0.483489,
+  "Tlag": 838.8000000000001,
+  "VdPerKg": 0.003585714285714286,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 2e-05,
+  "ka": 0.0002547222222222222,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 15583.16633266533
+ },
+ "reference_peaks": {
+  "central.C": 7.10419045677101e-05
+ },
+ "stop_time": 518400.0,
+ "template": "PK_1C_enteral",
+ "template_fmu": "PK_1C_enteral.fmu"
+}

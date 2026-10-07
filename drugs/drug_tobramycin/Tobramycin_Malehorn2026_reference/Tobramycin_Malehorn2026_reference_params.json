@@ -1,0 +1,30 @@
+{
+ "dose_source": "WHO ATC DDD 240 mg parenteral (J01GB01)",
+ "model_id": "Tobramycin_Malehorn2026_reference",
+ "molar_masses": {
+  "central.C": 0.4675145
+ },
+ "note": "Values for the shared PK_1C.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "parameters": {
+  "Cl": 1.944444444444445e-06,
+  "F": 1.0,
+  "MM": 0.4675145,
+  "VdPerKg": 0.00027,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 0.00024,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 660.0000000662017
+ },
+ "reference_peaks": {
+  "central.C": 0.01231442761909261
+ },
+ "stop_time": 86400.0,
+ "template": "PK_1C",
+ "template_fmu": "PK_1C.fmu"
+}

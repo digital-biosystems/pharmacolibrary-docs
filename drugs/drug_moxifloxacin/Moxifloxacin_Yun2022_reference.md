@@ -1,10 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;J01M&quot;,&quot;href&quot;:&quot;atc/J01M.md&quot;},{&quot;label&quot;:&quot;moxifloxacin&quot;,&quot;href&quot;:&quot;drugs/drug_moxifloxacin/&quot;},{&quot;label&quot;:&quot;Yun_2022 \u00b7 reference&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Moxifloxacin_Greenberg2022_reference&quot;,&quot;label&quot;:&quot;Greenberg_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_moxifloxacin/Moxifloxacin_Greenberg2022_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Moxifloxacin_Nyangwa2026_reference&quot;,&quot;label&quot;:&quot;Nyangwa_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_moxifloxacin/Moxifloxacin_Nyangwa2026_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Moxifloxacin_Xu2024_reference&quot;,&quot;label&quot;:&quot;Xu_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_moxifloxacin/Moxifloxacin_Xu2024_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Moxifloxacin_Yun2022_reference&quot;,&quot;label&quot;:&quot;Yun_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_moxifloxacin/Moxifloxacin_Yun2022_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # moxifloxacin — `Moxifloxacin_Yun2022_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.917). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.917). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -12,7 +13,7 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
-**Model:** No model was generated from this record.
+**Model:** A simulatable model was generated — see the **Models** and **Simulation** tabs.
 
 ### Reviewer guidance
 
@@ -24,29 +25,30 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on `parame
 
 <sub>reviewed by glm-5.3-flash</sub>
 
+> ⚠️ **STALE** — review status `rejected` (reviewed 2026-09-28 14:39:06.029235+00:00) predates the upstream re-run (2026-10-07 12:29:37.043104+00:00). Current validate status: `extracted`.
+
 ## Citation
 Yun HY et al., Model-Based Efficacy and Toxicity Compa…, Open forum infectious disea… (2022)
   ·  DOI: [10.1093/ofid/ofab660](https://doi.org/10.1093/ofid/ofab660)
 
 ## Model component
-<dbs-pgx drug="moxifloxacin" model-id="Moxifloxacin_Yun2022_reference" status="rejected" stale="false" population="adult MDR-TB patients" measured-compound="moxifloxacin" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<dbs-pgx drug="moxifloxacin" model-id="Moxifloxacin_Yun2022_reference" status="extracted" stale="true" population="adults with multidrug-resistant tuberculosis" measured-compound="moxifloxacin" parameterization="mechanistic" topology="2C"></dbs-pgx>
 
-**Model structure:** 2-compartment; no model was built for this record.  
-**Parameters:** 6 extracted.
+**Model structure:** 2-compartment, oral mammillary model — template `PK_2C_enteral`.  
+**Parameters:** 6 extracted, plus 1 covariate effect.
 
 **Parameterization:** mechanistic.
 
 ## Parameters
-> ⚠️ This record is not accepted (current status `rejected`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
-
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| K a (hr−1) | `Q95` · t1/2ka | 0.775 | hr−1 | not captured | [1] / [h] | not captured | llm (0.5) | Yun_2022_table_p5_1:row1:col1, Yun_2022_table_p5_1:row1:col2, Yun_2022_table_p5_1:row1:col5, Yun_2022_table_p5_1:row1:col6 | — | not captured |
-| V 1 (L) | `Q63` · V1 | 116 | L | 0.116 | [l] | not captured | llm (0.5) | Yun_2022_table_p5_1:row2:col1, Yun_2022_table_p5_1:row2:col2, Yun_2022_table_p5_1:row2:col5, Yun_2022_table_p5_1:row2:col6 | — | not captured |
-| CL (L/hr) | `Q22` · CL | 8.52 | L/hr | 2.3666666666666667e-06 | [l] / [h] | not captured | exact (1.0) | Yun_2022_table_p5_1:row3:col1, Yun_2022_table_p5_1:row3:col2, Yun_2022_table_p5_1:row3:col5, Yun_2022_table_p5_1:row3:col6 | additive_shift on category=0.131 | 79.1 (None% RSE) |
-| Q (L/hr) | `Q30` · Q | 0.927 | L/hr | 2.575e-07 | [l] / [h] | not captured | exact (1.0) | Yun_2022_table_p5_1:row4:col1, Yun_2022_table_p5_1:row4:col2, Yun_2022_table_p5_1:row4:col5, Yun_2022_table_p5_1:row4:col6 | — | not captured |
-| V 2 (L) | `Q64` · V2 | 523 | L | 0.523 | [l] | not captured | llm (0.5) | Yun_2022_table_p5_1:row5:col1, Yun_2022_table_p5_1:row5:col2, Yun_2022_table_p5_1:row5:col5, Yun_2022_table_p5_1:row5:col6 | — | not captured |
-| F (%)a | `Q87` · Frel | 100 | not captured | not captured | not captured | not captured | llm (0.5) | Yun_2022_table_p5_1:row6:col1 | — | not captured |
+| K a (hr–1) | `Q49` · kabs | 20.2 | hr–1 | 0.005611111111111111 | [1] / [h] | not captured | space_fold (0.95) | T2:row2:col1, T2:row2:col2, T2:row2:col4, T2:row2:col5 | — | not captured |
+| V d (L) | `Q61` · V | 10.1 | L | 0.0101 | [l] | not captured | space_fold (0.95) | T2:row3:col1, T2:row3:col2, T2:row3:col4, T2:row3:col5 | — | not captured |
+| CL (L/h) | `Q22` · CL | 7.3 | L/h | 2.027777777777778e-06 | [l] / [h] | not captured | exact (1.0) | T2:row4:col1, T2:row4:col2, T2:row4:col4, T2:row4:col5 | — | not captured |
+| Q (L/h) | `Q30` · Q | 20.9 | L/h | 5.805555555555555e-06 | [l] / [h] | not captured | exact (1.0) | T2:row5:col1, T2:row5:col2, T2:row5:col4, T2:row5:col5 | — | not captured |
+| V p (L) | `Q64` · V2 | 24.4 | L | 0.024399999999999998 | [l] | not captured | space_fold (0.95) | T2:row6:col1, T2:row6:col2, T2:row6:col4, T2:row6:col5 | — | not captured |
+| F (%)a | `Q40` · Fab | 100 | not captured | not captured | not captured | not captured | llm (0.6) | T2:row7:col1 | — | not captured |
+| theta_cl_category | `Q900` · theta_cl_category | 33.3 | not captured | not captured | not captured | not captured | not captured (not captured) | T2:row8:col1, T2:row8:col2, T2:row8:col4, T2:row8:col5 | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -55,27 +57,33 @@ Yun HY et al., Model-Based Efficacy and Toxicity Compa…, Open forum infectious
 
 ## Departures & gaps
 
+**Deviations:**
+- `defaulted_parameters`: ['Tlag']
+
 **Interpretation flags:**
-- unit_dimension_mismatch: 'K a (hr−1)' → Q95 (unit '1 / [time]' vs ontology '[time]') — route to review
+- table section iiv: 'IIV for Vd' routed out of structural estimates ('Interindividual variability CV (%)')
+- table section iiv: 'IIV for CL' routed out of structural estimates ('Interindividual variability CV (%)')
+- table section iiv: 'IIV for Q & Vp' routed out of structural estimates ('Interindividual variability CV (%)')
+- table section residual_error: 'Proportional error' routed out of structural estimates ('Residual variability (RV)')
+- column 'bootstrap' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
+- covariate level 'Coefficient of CL for HIV-positive b' → Q900:theta_cl_category = 33.3 (additive_shift on Q22)
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=moxifloxacin
-- held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
-- status held at route_to_review — not promoted
+- skipped review gap-fill of TLAG: primary's parameterization (rate-constant / ka-only) does not use it
 
 **Extraction notes:**
-- no TEI final-model table id; trying text-pointer table recovery
-- unparsed cell Yun_2022_table_p5_1:row9:col1 = '55.2%'
-- unparsed cell Yun_2022_table_p5_1:row9:col5 = '53.2%'
-- unparsed cell Yun_2022_table_p5_1:row9:col6 = '29.2–85.7%'
-- unparsed cell Yun_2022_table_p5_1:row10:col1 = '67.9%'
-- unparsed cell Yun_2022_table_p5_1:row10:col5 = '65.5%'
-- unparsed cell Yun_2022_table_p5_1:row10:col6 = '49.5–85.1%'
-- unparsed cell Yun_2022_table_p5_1:row11:col1 = '37.3%'
-- unparsed cell Yun_2022_table_p5_1:row11:col5 = '36.5%'
-- unparsed cell Yun_2022_table_p5_1:row11:col6 = '24.3–51.8%'
-- unparsed cell Yun_2022_table_p5_1:row13:col1 = '24.3%'
-- unparsed cell Yun_2022_table_p5_1:row13:col5 = '24.2%'
-- unparsed cell Yun_2022_table_p5_1:row13:col6 = '20.4–28.9%'
-- LLM region Yun_2022:other_prose: no JSON records returned
+- unparsed cell T2:row10:col1 = '55.2%'
+- unparsed cell T2:row10:col4 = '53.2%'
+- unparsed cell T2:row10:col5 = '29.9–82.5%'
+- unparsed cell T2:row11:col1 = '67.9%'
+- unparsed cell T2:row11:col4 = '65.5%'
+- unparsed cell T2:row11:col5 = '49.5–85.1%'
+- unparsed cell T2:row12:col1 = '373%'
+- unparsed cell T2:row12:col4 = '365%'
+- unparsed cell T2:row12:col5 = '243–518%'
+- unparsed cell T2:row14:col1 = '24.3%'
+- unparsed cell T2:row14:col4 = '24.2%'
+- unparsed cell T2:row14:col5 = '20.4–28.9%'
+- LLM selected parameter table(s) 2
 
 ## Validation
 
@@ -107,16 +115,17 @@ first reading `qwen3.6:27b-q8_0` — the numbers on this page are its, whatever 
 | C0_has_structural_params | pass | not captured | 6 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
-| C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Yun_2022_table_p5_1:row3:col1', 'Yun_2022_table_p5_1:row3:col2', 'Yun_2022_table_p5_1:row3:col5', 'Yun_2022_table_p5_1:row3:col6'] |
-| C5_dimension_Q30 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Yun_2022_table_p5_1:row4:col1', 'Yun_2022_table_p5_1:row4:col2', 'Yun_2022_table_p5_1:row4:col5', 'Yun_2022_table_p5_1:row4:col6'] |
-| C5_dimension_Q63 | pass | [length] ** 3 | not captured | not captured | not captured | ['Yun_2022_table_p5_1:row2:col1', 'Yun_2022_table_p5_1:row2:col2', 'Yun_2022_table_p5_1:row2:col5', 'Yun_2022_table_p5_1:row2:col6'] |
-| C5_dimension_Q64 | pass | [length] ** 3 | not captured | not captured | not captured | ['Yun_2022_table_p5_1:row5:col1', 'Yun_2022_table_p5_1:row5:col2', 'Yun_2022_table_p5_1:row5:col5', 'Yun_2022_table_p5_1:row5:col6'] |
-| C5_dimension_Q95 | fail | 1 / [time] | hr−1 | not captured | not captured | ['Yun_2022_table_p5_1:row1:col1', 'Yun_2022_table_p5_1:row1:col2', 'Yun_2022_table_p5_1:row1:col5', 'Yun_2022_table_p5_1:row1:col6'] |
-| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 8.52 | not captured | not captured | ['Yun_2022_table_p5_1:row3:col1', 'Yun_2022_table_p5_1:row3:col2', 'Yun_2022_table_p5_1:row3:col5', 'Yun_2022_table_p5_1:row3:col6'] |
+| C2_reference | pass | not captured | not captured | not captured | not captured | not captured |
+| C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['T2:row4:col1', 'T2:row4:col2', 'T2:row4:col4', 'T2:row4:col5'] |
+| C5_dimension_Q30 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['T2:row5:col1', 'T2:row5:col2', 'T2:row5:col4', 'T2:row5:col5'] |
+| C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['T2:row2:col1', 'T2:row2:col2', 'T2:row2:col4', 'T2:row2:col5'] |
+| C5_dimension_Q61 | pass | [length] ** 3 | not captured | not captured | not captured | ['T2:row3:col1', 'T2:row3:col2', 'T2:row3:col4', 'T2:row3:col5'] |
+| C5_dimension_Q64 | pass | [length] ** 3 | not captured | not captured | not captured | ['T2:row6:col1', 'T2:row6:col2', 'T2:row6:col4', 'T2:row6:col5'] |
+| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 7.3 | not captured | not captured | ['T2:row4:col1', 'T2:row4:col2', 'T2:row4:col4', 'T2:row4:col5'] |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
-| C9_phys_window_Q22 | pass | clearance within physiological range | 8.52 L/h | not captured | not captured | ['Yun_2022_table_p5_1:row3:col1', 'Yun_2022_table_p5_1:row3:col2', 'Yun_2022_table_p5_1:row3:col5', 'Yun_2022_table_p5_1:row3:col6'] |
-| C9_phys_window_Q63 | pass | volume within physiological range | 116 L | not captured | not captured | ['Yun_2022_table_p5_1:row2:col1', 'Yun_2022_table_p5_1:row2:col2', 'Yun_2022_table_p5_1:row2:col5', 'Yun_2022_table_p5_1:row2:col6'] |
-| C9_phys_window_Q64 | pass | volume within physiological range | 523 L | not captured | not captured | ['Yun_2022_table_p5_1:row5:col1', 'Yun_2022_table_p5_1:row5:col2', 'Yun_2022_table_p5_1:row5:col5', 'Yun_2022_table_p5_1:row5:col6'] |
+| C9_phys_window_Q22 | pass | clearance within physiological range | 7.3 L/h | not captured | not captured | ['T2:row4:col1', 'T2:row4:col2', 'T2:row4:col4', 'T2:row4:col5'] |
+| C9_phys_window_Q61 | pass | volume within physiological range | 10.1 L | not captured | not captured | ['T2:row3:col1', 'T2:row3:col2', 'T2:row3:col4', 'T2:row3:col5'] |
+| C9_phys_window_Q64 | pass | volume within physiological range | 24.4 L | not captured | not captured | ['T2:row6:col1', 'T2:row6:col2', 'T2:row6:col4', 'T2:row6:col5'] |
 
 <details class="legend">
 <summary>Check legend — what each column means</summary>
@@ -130,15 +139,30 @@ first reading `qwen3.6:27b-q8_0` — the numbers on this page are its, whatever 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
-## Models
+## Downloadable models
 
-<p>No downloads: this record is <b>rejected</b>, so it is not published as a model. Any archives generated for it before the verdict have been removed — a download outlives the page that explains it.</p>
+<div class="pk-models-grid"><div class="pk-models-table">
+<table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_moxifloxacin/Moxifloxacin_Yun2022_reference/Moxifloxacin_Yun2022_reference_modelica.zip" download>Moxifloxacin_Yun2022_reference_modelica.zip</a> <span class="pk-size">(4.4 kB)</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_moxifloxacin/Moxifloxacin_Yun2022_reference/Moxifloxacin_Yun2022_reference_fmi.zip" download>Moxifloxacin_Yun2022_reference_fmi.zip</a> <span class="pk-size">(4.2 kB)</span><br><a href="models/fmu/PK_2C_enteral.fmu" download>PK_2C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_moxifloxacin/Moxifloxacin_Yun2022_reference/Moxifloxacin_Yun2022_reference_matlab.zip" download>Moxifloxacin_Yun2022_reference_matlab.zip</a> <span class="pk-size">(3.3 kB)</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_moxifloxacin/Moxifloxacin_Yun2022_reference/Moxifloxacin_Yun2022_reference_matlab_simbio.zip" download>Moxifloxacin_Yun2022_reference_matlab_simbio.zip</a> <span class="pk-size">(2.8 kB)</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_moxifloxacin/Moxifloxacin_Yun2022_reference/Moxifloxacin_Yun2022_reference_sbml.zip" download>Moxifloxacin_Yun2022_reference_sbml.zip</a> <span class="pk-size">(2.6 kB)</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_moxifloxacin/Moxifloxacin_Yun2022_reference/Moxifloxacin_Yun2022_reference_cellml.zip" download>Moxifloxacin_Yun2022_reference_cellml.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
+</tbody></table>
+<p>Each archive holds the model source, a script that simulates it against the appropriate library, and a README describing both and how to run them.</p>
+<p><b>FMI is two downloads.</b> The archive holds this record's parameters and its driver; the simulator itself is <code>PK_2C_enteral.fmu</code>, one compiled template shared by every model of this structure. Take the FMU once, keep it beside the script (or pass <code>--fmu PATH</code>). Running it reproduces the model-specific FMU exactly.</p>
+</div><figure class="pk-models-diagram"><img src="drugs/drug_moxifloxacin/Moxifloxacin_Yun2022_reference/Moxifloxacin_Yun2022_reference.svg" alt="Moxifloxacin_Yun2022_reference diagram"><figcaption>Model diagram (Modelica) using Pharmacolibrary v26.09 components, rendered by OpenModelica 1.26.7.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+**Administration: oral** — 400 mg, single dose, first-order absorption (ka 20.2 /h, F 100). Doses in the paper: 400, 800 mg.
+
+<dbs-fmusim paramsurl="drugs/drug_moxifloxacin/Moxifloxacin_Yun2022_reference/Moxifloxacin_Yun2022_reference_params.json" metaurl="assets/fmu/PK_2C_enteral.vr.json" wasmurl="assets/fmu/PK_2C_enteral.js" controlsurl="drugs/drug_moxifloxacin/Moxifloxacin_Yun2022_reference/Moxifloxacin_Yun2022_reference_sim_controls.json"></dbs-fmusim>
+
+<sub>Runs this record's model in the browser as WebAssembly. Sliders start at the extracted values; the reference check compares the browser's peak against the FMPy result recorded when the record was built, and is withheld once a value has been edited. Template `PK_2C_enteral` · parameters `Moxifloxacin_Yun2022_reference_params.json` · controls `Moxifloxacin_Yun2022_reference_sim_controls.json`. A slider marked *simulator value* is running on the template's own default because this record does not pin that parameter.</sub>
 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-07-15 13:44 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 12:29 UTC</sub>

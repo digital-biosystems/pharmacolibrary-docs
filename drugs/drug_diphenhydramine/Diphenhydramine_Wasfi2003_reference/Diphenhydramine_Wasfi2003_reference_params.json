@@ -1,0 +1,30 @@
+{
+ "dose_source": "WHO ATC DDD 200 mg parenteral (R06AA02)",
+ "model_id": "Diphenhydramine_Wasfi2003_reference",
+ "molar_masses": {
+  "central.C": 0.2553547
+ },
+ "note": "Values for the shared PK_1C.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "parameters": {
+  "Cl": 3.9444444444444444e-07,
+  "F": 1.0,
+  "MM": 0.2553547,
+  "VdPerKg": 2.257142857142857e-05,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 0.0002,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 660.0000000662071
+ },
+ "reference_peaks": {
+  "central.C": 0.11755810334439035
+ },
+ "stop_time": 86400.0,
+ "template": "PK_1C",
+ "template_fmu": "PK_1C.fmu"
+}

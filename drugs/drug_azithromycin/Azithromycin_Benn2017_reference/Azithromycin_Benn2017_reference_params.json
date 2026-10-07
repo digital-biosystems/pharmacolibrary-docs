@@ -1,0 +1,39 @@
+{
+ "dose_source": "paper",
+ "model_id": "Azithromycin_Benn2017_reference",
+ "molar_masses": {
+  "central.C": 0.7489845
+ },
+ "note": "Values for the shared PK_2C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "paper_doses_kind": "discrete",
+ "paper_doses_mg": [
+  85.0,
+  170.0
+ ],
+ "parameters": {
+  "Cl": 5.027777777777778e-06,
+  "F": 0.9,
+  "MM": 0.7489845,
+  "Tlag": 2700.0,
+  "VdPerKg": 0.004357142857142857,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 8.5e-05,
+  "k12": 4.207650273224044e-05,
+  "k21": 2.845528455284553e-05,
+  "ka": 0.00019722222222222222,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 17369.553877667746
+ },
+ "reference_peaks": {
+  "central.C": 0.00015893811105449344
+ },
+ "stop_time": 691200.0,
+ "template": "PK_2C_enteral",
+ "template_fmu": "PK_2C_enteral.fmu"
+}
