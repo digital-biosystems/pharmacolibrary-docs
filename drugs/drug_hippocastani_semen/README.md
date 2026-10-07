@@ -1,5 +1,4 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C05C&quot;,&quot;href&quot;:&quot;atc/C05C.md&quot;},{&quot;label&quot;:&quot;Hippocastani semen&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;pd_Wang_2024_I&quot;,&quot;label&quot;:&quot;Wang_2024 \u00b7 I&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_hippocastani_semen/pd_Wang_2024_I.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 # Hippocastani semen
 
@@ -18,18 +17,11 @@ Horse chestnut seed (Hippocastani semen) is a herbal crude drug classified as a 
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-01 16:58 | 1:09:16 | 0/0/0 | 0/2/0 | 4/7/28 | 1,451,878/64,954 | ollama / glm-5.3-flash | 171 | 18/145 | 159/12 | 0 |
+| 2026-10-06 22:19 | 28:05 | 0/0/0 | 0/0/0 | 4/7/28 | 937,204/32,599 | ollama / qwen3.8:27b-mtp-q8_0 | 171 | 18/145 | 159/12 | 0 |
 
 ## popPK records
 
 _not available_
-
-## Pharmacodynamics (PD)
-
-| status | detail | about | model | citation | doi |
-|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (pig), not measured in people (from the LLM popPK screen).">pig</span> | [Huang_2022_E](drugs/drug_hippocastani_semen/pd_Huang_2022_E.md) | bacterial count decrease in PELF (log CFU/mL) of S. suis HB1607 ← acetylkitasamycin (AUC24h/MIC in PELF) · direct sigmoid Emax (Hill) effect | — | Huang A et al., PK-PD Modeling and Optimal Dosing Regim…, Antibiotics (Basel, Switzer… (2022) | [10.3390/antibiotics11020283](https://doi.org/10.3390/antibiotics11020283) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--species" title="Data from bacteria, fungi or plants, not measured in people (from an LLM reading of the title and abstract by glm-5.3-flash, p(non-human) 1.00).">other organism</span> | [Wang_2024_I](drugs/drug_hippocastani_semen/pd_Wang_2024_I.md) | antibacterial effect (change in bacterial count over 168 h) ← tulathromycin · direct sigmoid Emax (Hill) effect | ▶ model + simulator | Wang H et al., Susceptibility evaluation and PK/PD int…, Frontiers in veterinary sci… (2024) | [10.3389/fvets.2024.1407907](https://doi.org/10.3389/fvets.2024.1407907) |
 
 ## Pharmacogenomics (PGx)
 
@@ -274,7 +266,7 @@ _148 paper(s) judged relevant from the abstract, with no full text on disk — p
 | `Xie_1995.pdf` | Xie HG et al., High-performance liquid chromatographic…, Journal of chromatography.… (1995) | pgx | 5 | [10.1016/0378-4347(95)00065-q](https://doi.org/10.1016/0378-4347(95)00065-q) | [7550968](https://www.ncbi.nlm.nih.gov/pubmed/7550968) | metadata signals extractable PGX data (CYP2C19) |
 | `Ye_2024.pdf` | Ye Z et al., CYP3A4 and CYP2C19 genetic polymorphism…, Biomedicine & pharmacothera… (2024) | pgx | 5 | [10.1016/j.biopha.2024.116421](https://doi.org/10.1016/j.biopha.2024.116421) | [38719708](https://www.ncbi.nlm.nih.gov/pubmed/38719708) | metadata signals extractable PGX data (CYP3A4) |
 
-<sub>queue written 2026-10-01T16:54:35.121325+00:00</sub>
+<sub>queue written 2026-10-06T22:02:39.449656+00:00</sub>
 
 ## Screened and excluded
 
@@ -282,53 +274,56 @@ _148 paper(s) judged relevant from the abstract, with no full text on disk — p
 |---|---|---|---|---|---|
 | PD | AICHINGER_1964 | not_relevant | 0 | 0 | The provided text is only a title and does not contain the full text, data, or numeric PD parameters required to assess the pharmacodynamic relationship. |
 | PD | Abdoun_1995 | not_relevant | 0 | 0 | The paper studies insect neuropeptides and does not mention Hippocastani semen or report any pharmacodynamic parameters for it. |
-| PGx | Abolfathi_1993 | not_relevant | 0 | 0 | The paper studies the pharmacogenomics of mexiletine, not hippocastani_semen. |
-| PGx | Achour_2022 | not_relevant | 3 | 4 | Study relates CYP genotype/phenotype to liquid biopsy expression and cocktail probe metabolic ratios, not to PK/PD parameters of hippocastani semen, which is not studied. |
-| popPK | Agergaard_2025 | irrelevant | 0 | 0 | The study reports population pharmacokinetic parameters for tacrolimus, not hippocastani_semen. |
+| PGx | Abduljalil_2013 | not_relevant | 0 | 0 | The paper studies phenprocoumon, not hippocastani_semen. |
+| PGx | Abolfathi_1993 | not_relevant | 0 | 0 | The paper studies mexiletine, not hippocastani_semen. |
+| PGx | Achour_2022 | not_relevant | 0 | 0 | The paper studies CYP/P-gp activity in cardiovascular patients using the Geneva cocktail and does not mention or analyze the drug hippocastani_semen. |
+| popPK | Agergaard_2025 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of tacrolimus, not hippocastani_semen. |
+| PGx | Agergaard_2025 | not_relevant | 0 | 0 | The paper reports pharmacogenomic effects on tacrolimus, not hippocastani_semen. |
 | PGx | Akowuah_2025 | not_relevant | 0 | 0 | The paper studies the effect of a plant extract on metformin pharmacokinetics, not a pharmacogenomic effect on hippocastani_semen. |
 | PD | Akula_2026 | not_relevant | 0 | 0 | The paper focuses on the development and validation of a bioanalytical method and reports only pharmacokinetic (PK) parameters (Cmax, AUC, half-life) for Branebrutinib and Metformin, with no pharmacodynamic (PD) or exposure-response data. |
-| popPK | Al-Dajani_2026 | irrelevant | 0 | 0 | The paper reports popPK parameters for mycophenolic acid, not for hippocastani_semen, which is not mentioned at all. |
+| popPK | Al-Dajani_2026 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of mycophenolic acid (MPA), not hippocastani_semen. |
 | PGx | Al-Qurain_2021 | not_relevant | 0 | 0 | The paper reports a population pharmacokinetic model for fentanyl, not hippocastani_semen, and does not report pharmacogenomic effects. |
 | PD | Al_2025 | not_relevant | 1 | 0 | The drug studied is intranasal naloxone, not Hippocastani semen, and the exposure-response analyses found no significant correlations with no numeric PD parameters (Emax/EC50/slope) reported. |
 | popPK | Albitar_2024 | irrelevant | 0 | 0 | The study reports pharmacokinetic parameters for clozapine and norclozapine, not hippocastani_semen. |
 | PGx | Albitar_2024 | not_relevant | 0 | 0 | The paper reports pharmacogenomic effects for Clozapine, not hippocastani_semen. |
-| PGx | Alshabi_2023 | not_relevant | 0 | 0 | Study examines pregnancy hormones' effects on CYP enzymes in hepatocytes; no gene variant/genotype effect on hippocastani_semen PK/PD is reported. |
-| popPK | Aly_2009 | irrelevant | 0 | 0 | The paper describes the isolation and cytotoxicity of natural products from a fungus, with no pharmacokinetic data for hippocastani_semen. |
-| popPK | Anderson_1992 | irrelevant | 0 | 0 | The paper describes a method for measuring platelet serotonin release and does not involve the drug hippocastani_semen or report any pharmacokinetic parameters. |
+| PGx | Alshabi_2023 | not_relevant | 0 | 0 | The paper investigates the effect of pregnancy hormones on CYP enzymes, not the effect of a gene variant on the PK/PD of hippocastani_semen. |
+| popPK | Aly_2009 | irrelevant | 0 | 0 | The paper describes the isolation and cytotoxicity of fungal metabolites, not the pharmacokinetics of hippocastani_semen. |
+| popPK | Anderson_1992 | irrelevant | 0 | 0 | no_text gate: only 142 chars of text extracted (&lt; 400) |
 | popPK | Antognini_1995 | irrelevant | 0 | 0 | no_text gate: only 57 chars of text extracted (&lt; 400) |
-| PGx | Aruldhas_2021 | not_relevant | 0 | 0 | The paper reports pharmacogenomic effects on methadone, not hippocastani_semen. |
-| popPK | Assmus_2026 | irrelevant | 0 | 0 | The paper reports population pharmacokinetic parameters for DNDI-6148, not hippocastani_semen. |
+| PGx | Aruldhas_2021 | not_relevant | 0 | 0 | The paper studies the pharmacogenomics of methadone, not hippocastani_semen. |
+| popPK | Assmus_2026 | irrelevant | 0 | 0 | The study reports pharmacokinetic parameters for DNDI-6148, not hippocastani_semen. |
 | PD | Bae_2025 | not_relevant | 0 | 0 | The paper reports the pharmacokinetics of Oxolinic Acid in fish, not the pharmacodynamics of Hippocastani semen. |
 | PGx | Bagli_1995 | not_relevant | 0 | 0 | The paper studies levomepromazine, not hippocastani_semen. |
-| PGx | Ball_1992 | not_relevant | 3 | 5 | Reports CYP3A4-mediated metabolism variability of CQA 206-291, but no gene variant/genotype effect on a PK/PD parameter is described. |
+| PGx | Ball_1992 | not_relevant | 0 | 0 | The paper studies the metabolism of the ergot alkaloid CQA 206-291, not hippocastani_semen. |
 | PD | Bardhi_2025 | not_relevant | 1 | 0 | Paper describes an LC-MS/MS TDM analytical protocol for ampicillin/sulbactam; only PK concentration ranges are reported, with no effect-vs-concentration data or numeric PD parameters (MIC mentioned only as future potential). |
-| popPK | Baroudi_2026 | irrelevant | 0 | 0 | This is a tacrolimus popPK model-evaluation study; hippocastani_semen is not the subject drug and no PK parameters for it appear. |
-| popPK | Bell_2026 | irrelevant | 0 | 0 | The paper reports a population-PK model for pirtobrutinib, not for hippocastani_semen, so no parameters for the subject drug are present. |
+| popPK | Baroudi_2026 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of tacrolimus, not hippocastani_semen. |
+| popPK | Bell_2026 | irrelevant | 0 | 0 | The paper reports population pharmacokinetic parameters for pirtobrutinib, not hippocastani_semen. |
 | popPK | Bellapart_2026 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of nimodipine, not hippocastani_semen. |
+| PGx | Bennett_2026 | not_relevant | 0 | 0 | The paper reports pharmacogenomic effects for risperidone, not hippocastani_semen. |
 | PD | Bernstein_2008 | not_relevant | 0 | 0 | The paper discusses insulin delivery and does not mention Hippocastani semen or provide any PD parameters. |
 | popPK | Bertin_2026 | irrelevant | 0 | 0 | The study reports pharmacokinetic parameters for levosimendan and its metabolites, not for hippocastani_semen. |
 | popPK | Bhavaraju_1993 | irrelevant | 0 | 0 | The paper describes microbial growth and sulfur oxidation kinetics, not the pharmacokinetics of hippocastani_semen. |
 | PGx | Bi_2025 | not_relevant | 0 | 0 | The paper describes a method for measuring CYP450 activity in liver organoids and does not involve the drug hippocastani_semen or specific pharmacogenomic effects on its PK/PD parameters. |
 | popPK | Bignamini_1979 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of protacine, not hippocastani_semen. |
-| popPK | Boglione-Kerrien_2026 | irrelevant | 0 | 0 | The study focuses on voriconazole pharmacokinetics and pharmacodynamics, not hippocastani_semen. |
+| popPK | Boglione-Kerrien_2026 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of voriconazole, not hippocastani_semen. |
 | PGx | Bohanec_2009 | not_relevant | 0 | 0 | The paper investigates the pharmacogenomics of leflunomide, not hippocastani_semen. |
-| PGx | Bojić_2019 | not_relevant | 0 | 0 | In vitro CYP inhibition by flavonoids; no gene variant/genotype effect on hippocastani_semen PK/PD. |
+| PGx | Bojić_2019 | not_relevant | 0 | 0 | The paper investigates the effect of flavonoids on CYP enzyme activity in vitro and does not report pharmacogenomic effects on the PK/PD of hippocastani_semen. |
 | PGx | Bond_1990 | not_relevant | 0 | 0 | The paper studies the effect of ethanol on gene expression in mice and does not involve the drug hippocastani_semen. |
 | PGx | Boniforti_1979 | not_relevant | 0 | 0 | The paper describes a method for identifying anaerobic bacteria using gas-liquid chromatography and contains no information regarding pharmacogenomics or the drug hippocastani_semen. |
-| popPK | Boonyasiri_2025 | irrelevant | 0 | 0 | This is a population-PK study of colistin, not hippocastani_semen; no horse chestnut data present. |
-| popPK | Budda_2026 | irrelevant | 0 | 0 | This is a CNS PBPK/PET receptor occupancy modeling study of D2 ligands (antipsychotics); hippocastani_semen is not the subject drug, and PK parameters are in supplementary material not provided. |
-| PGx | Burke_1994 | not_relevant | 0 | 0 | The paper studies alkoxyresorufin O-dealkylation as a probe for CYP450 isozymes in liver microsomes and does not involve the drug hippocastani_semen. |
-| PGx | Byeon_2023 | not_relevant | 0 | 5 | The paper reports CYP2D6/CYP2C19 effects on tolperisone PK, but the target drug is hippocastani_semen, not tolperisone. |
+| popPK | Boonyasiri_2025 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of colistin, not hippocastani_semen. |
+| popPK | Budda_2026 | irrelevant | 0 | 0 | The paper focuses on dopamine D2 receptor ligands (e.g., haloperidol, aripiprazole) and does not mention or study hippocastani_semen. |
+| PGx | Burke_1994 | not_relevant | 0 | 0 | The paper investigates the substrate specificity of alkoxyresorufins for CYP450 enzymes in liver microsomes and does not mention hippocastani_semen or any pharmacogenomic effects on its PK/PD parameters. |
+| PGx | Byeon_2023 | not_relevant | 0 | 0 | The paper reports pharmacogenomic effects for tolperisone, not hippocastani_semen. |
 | PGx | Cabrera_2009 | not_relevant | 0 | 0 | The paper reports pharmacogenomic effects for efavirenz, not hippocastani_semen. |
 | PD | Cafaro_2024 | not_relevant | 1 | 0 | Review of LC-MS/MS TDM methods for glycopeptides; no PD/exposure-response data or numeric PD parameters for any drug, and no Hippocastani semen content. |
 | PGx | Cai_2021 | not_relevant | 0 | 0 | The paper studies oxycodone metabolism, not hippocastani_semen. |
-| popPK | Calderin_2025 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of pyrazinamide and isoniazid, not hippocastani_semen. |
-| PGx | Carrasco-Portugal_2026 | not_relevant | 2 | 0 | No gene variant/genotype measured; only population (Mexican vs Korean) PK comparison of tegoprazan, not a pharmacogenomic effect, and not for hippocastani_semen. |
-| PGx | Carroll_1986 | not_relevant | 0 | 0 | Strain differences in etonitazene intake/reinforcement in rats; no gene variant effect on a PK/PD parameter of hippocastani_semen. |
+| popPK | Calderin_2025 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of pyrazinamide and isoniazid, not hippocastani_semen. |
+| PGx | Carrasco-Portugal_2026 | not_relevant | 0 | 0 | The paper studies the pharmacokinetics of tegoprazan, not hippocastani_semen. |
+| PGx | Carroll_1986 | not_relevant | 0 | 0 | The paper studies etonitazene in rats, not hippocastani_semen. |
 | popPK | Castel-Branco_2005 | irrelevant | 0 | 0 | no_text gate: only 61 chars of text extracted (&lt; 400) |
 | PD | Castel-Branco_2005 | not_relevant | 0 | 0 | The paper focuses on Lamotrigine, not Hippocastani semen. |
-| PGx | Cerón_2025 | not_relevant | 0 | 0 | The paper studies pharmacogenomics of R-CHOP chemotherapy in DLBCL, not the drug hippocastani_semen. |
-| PGx | Chadli_2025 | not_relevant | 3 | 2 | Study reports 6-TGN metabolite correlations with hematological parameters but no gene variant/genotype effect on PK/PD; genotyping only mentioned as future work. |
+| PGx | Cerón_2025 | not_relevant | 0 | 0 | The paper reports a clinical outcome (disease-free survival) associated with a gene variant, not a pharmacokinetic or pharmacodynamic parameter of the drug. |
+| PGx | Chadli_2025 | not_relevant | 0 | 0 | The paper discusses thiopurines (azathioprine) and mentions genotyping (TPMT/NUDT15) only as a future recommendation, without reporting any pharmacogenomic data or effects on PK/PD parameters. |
 | PGx | Chan_2021 | not_relevant | 0 | 0 | The paper studies bisoprolol, not hippocastani_semen. |
 | PGx | Chaphekar_2026 | not_relevant | 0 | 0 | The paper studies the effect of phytocannabinoids on CYP enzymes, not the effect of a gene variant on the PK/PD of hippocastani_semen. |
 | PGx | Chen_1991 | not_relevant | 0 | 0 | The paper studies codeine, not hippocastani_semen. |
@@ -336,418 +331,439 @@ _148 paper(s) judged relevant from the abstract, with no full text on disk — p
 | PGx | Chen_2021 | not_relevant | 0 | 0 | The paper studies eltrombopag, not hippocastani_semen. |
 | PGx | Chen_2024 | not_relevant | 0 | 0 | The paper reports pharmacogenomic effects for noscapine, not hippocastani_semen. |
 | popPK | Chen_2025 | irrelevant | 0 | 0 | The study reports pharmacokinetic parameters for remimazolam, not hippocastani_semen. |
-| popPK | Chen_2026_2 | irrelevant | 0 | 0 | The paper is a population-PK external validation of rivaroxaban, not hippocastani_semen; no parameters for the subject drug appear. |
-| PGx | Cheng_2024 | not_relevant | 0 | 0 | The paper studies imatinib, not hippocastani_semen. |
-| PGx | Cherstniakova_2001 | not_relevant | 0 | 0 | Paper concerns vanoxerine (GBR12909) metabolism by CYP enzymes, not hippocastani_semen, and no gene variant/genotype effects on PK/PD are reported. |
+| popPK | Chen_2026_2 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of rivaroxaban, not hippocastani_semen. |
+| PGx | Cheng_2024 | not_relevant | 0 | 0 | The paper reports pharmacogenomic effects for imatinib, not hippocastani_semen. |
+| PGx | Cherstniakova_2001 | not_relevant | 0 | 0 | The paper studies the metabolism of vanoxerine, not hippocastani_semen. |
 | popPK | Chhatwal_1992 | irrelevant | 0 | 0 | no_text gate: only 102 chars of text extracted (&lt; 400) |
 | PD | Chhatwal_1992 | not_relevant | 0 | 0 | The paper focuses on the isolation and characterization of dracotoxin from fish venom and does not contain any pharmacodynamic or exposure-response data for Hippocastani semen. |
 | PD | Chi_2025 | not_relevant | 0 | 0 | The paper describes a UHPLC-MS/MS method for quantifying crizotinib, alectinib, and lorlatinib in plasma and does not contain any pharmacodynamic or exposure-response data for Hippocastani semen. |
-| PGx | Cho_2023 | not_relevant | 0 | 8 | The paper reports CYP2D6*10 effects on tolperisone PK (AUC, Cmax, CL/F), but the drug is tolperisone, not hippocastani_semen. |
+| PGx | Chiwambutsa_2023 | not_relevant | 0 | 0 | The paper studies the pharmacogenomics of tamoxifen, not hippocastani_semen. |
+| PGx | Cho_2023 | not_relevant | 0 | 0 | The paper reports pharmacogenomic effects for tolperisone, not hippocastani_semen. |
 | PGx | Chokephaibulkit_2011 | not_relevant | 0 | 0 | The paper reports pharmacogenomic effects for zidovudine, lamivudine, and nevirapine, not for hippocastani_semen. |
 | popPK | Chotsiri_2024 | irrelevant | 0 | 0 | The study reports pharmacokinetic parameters for primaquine and its metabolites, not for hippocastani_semen. |
-| popPK | Chupradit_2024 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of lopinavir/ritonavir, not hippocastani_semen. |
-| PGx | Chávez-Castillo_2020 | not_relevant | 0 | 0 | The paper concerns lamotrigine PK (with UGT2B7 genotyping), not hippocastani_semen, so no pharmacogenomic effect on that drug's PK/PD parameters is reported. |
-| PGx | Dahl_1994 | not_relevant | 0 | 0 | The paper studies the pharmacogenomics of mianserin, not hippocastani_semen. |
-| PGx | Dai_2021 | not_relevant | 0 | 0 | Paper concerns mizoribine, not hippocastani_semen; no pharmacogenomic effect on the target drug's PK/PD is reported. |
-| popPK | Dai_2025 | irrelevant | 0 | 0 | This is a systematic review of tigecycline population PK; hippocastani_semen is not the subject drug and no parameters for it appear. |
-| PGx | Dalle_2023 | not_relevant | 0 | 0 | Paper concerns imatinib PK in GIST patients, not hippocastani_semen. |
-| PGx | Datta-Mannan_2026 | not_relevant | 0 | 0 | Paper reports drug–drug interactions (CYP inhibitors/inducers, transporters) affecting imlunestrant PK, not gene variant/genotype/phenotype pharmacogenomic effects. |
+| popPK | Chupradit_2024 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of lopinavir/ritonavir, not hippocastani_semen. |
+| PGx | Chávez-Castillo_2020 | not_relevant | 0 | 0 | The paper studies the pharmacokinetics of lamotrigine, not hippocastani_semen. |
+| PGx | Cong_2022 | not_relevant | 0 | 0 | The paper studies olanzapine, not hippocastani_semen. |
+| PGx | Dahl_1994 | not_relevant | 0 | 0 | The paper studies mianserin, not hippocastani_semen. |
+| PGx | Dai_2021 | not_relevant | 0 | 0 | The paper reports pharmacogenomic effects for mizoribine, not hippocastani_semen. |
+| popPK | Dai_2025 | irrelevant | 0 | 0 | The paper is a systematic review of the population pharmacokinetics of tigecycline, not hippocastani_semen. |
+| PGx | Dalle_2023 | not_relevant | 0 | 0 | The paper investigates the pharmacogenetics of imatinib, not hippocastani_semen. |
+| PGx | Datta-Mannan_2026 | not_relevant | 0 | 0 | The paper reports pharmacokinetic drug-drug interactions of imlunestrant, not pharmacogenomic effects on hippocastani_semen. |
 | PD | De_2023 | not_relevant | 0 | 0 | The paper focuses on PK target attainment (concentration vs. breakpoint) for antibiotics and does not report any pharmacodynamic (concentration-effect) relationship or numeric PD parameters for Hippocastani semen. |
-| popPK | Del_2017 | irrelevant | 0 | 0 | This is a meropenem PK/PD study; hippocastani_semen is not the subject drug and no disposition parameters for it appear. |
-| PGx | Dhuya_2020 | not_relevant | 0 | 0 | Study concerns CYP2D6 phenotyping with dextromethorphan as probe drug; no relation to hippocastani_semen or its PK/PD parameters. |
-| PGx | Djordjevic_2016 | not_relevant | 0 | 5 | The paper concerns carbamazepine, not hippocastani_semen, so no pharmacogenomic effect on that drug's PK/PD is reported. |
-| popPK | Djordjevic_2025 | irrelevant | 0 | 0 | no_text gate: only 80 chars of text extracted (&lt; 400) |
-| popPK | Dova_2007 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of marbofloxacin, not hippocastani_semen. |
+| popPK | Del_2017 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of meropenem, not hippocastani_semen. |
+| PGx | Dhuya_2020 | not_relevant | 0 | 0 | The paper studies CYP2D6 polymorphism using dextromethorphan as a probe drug, not hippocastani_semen. |
+| PGx | Djordjevic_2016 | not_relevant | 0 | 0 | The paper reports pharmacogenomic effects for carbamazepine, not hippocastani_semen. |
+| popPK | Djordjevic_2025 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of carbamazepine, not hippocastani_semen. |
+| PGx | Djordjevic_2025 | not_relevant | 0 | 0 | The paper reports pharmacogenomic effects on carbamazepine, not hippocastani_semen. |
+| popPK | Dova_2007 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of marbofloxacin in goats, not hippocastani_semen. |
 | PD | Dova_2007 | not_relevant | 0 | 0 | The paper studies marbofloxacin, not Hippocastani semen, and reports only PK parameters without a quantitative PD model. |
 | PGx | Dragović_1994 | not_relevant | 0 | 0 | The paper investigates the expression of neprilysin in hepatocellular carcinomas and does not involve the drug hippocastani_semen or any pharmacogenomic effects on its PK/PD parameters. |
-| PGx | Drevin_2021 | not_relevant | 0 | 0 | Paper concerns venlafaxine/forensic toxicology phenoconversion, not hippocastani_semen pharmacogenomics. |
+| PGx | Drevin_2021 | not_relevant | 0 | 0 | The paper discusses venlafaxine and CYP2C19/2D6, not hippocastani_semen. |
 | PGx | Drevin_2025 | not_relevant | 0 | 0 | The paper discusses pharmacogenetics of MDMA, not hippocastani_semen. |
 | PD | Du_2026 | not_relevant | 2 | 0 | The paper focuses on PK modeling (PBPK) and protein binding factors for ertapenem, not Hippocastani semen, and does not report specific numeric PD parameters (Emax, EC50) or a concentration-effect curve, only using %fT&gt;MIC as a target metric. |
-| popPK | Duan_2024 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of linezolid, not hippocastani_semen. |
-| popPK | Díaz-Peña_2023 | irrelevant | 0 | 0 | The paper studies tarantula venom peptides and their mechanism of action on calcium channels, not the pharmacokinetics of hippocastani_semen. |
+| popPK | Duan_2024 | irrelevant | 0 | 0 | The study reports pharmacokinetic parameters for linezolid, not hippocastani_semen. |
+| popPK | Díaz-Peña_2023 | irrelevant | 0 | 0 | The paper studies tarantula venom peptides and their effect on rat aorta, not the pharmacokinetics of hippocastani_semen. |
 | PD | Díaz-Peña_2023 | not_relevant | 0 | 0 | The paper studies tarantula venom peptides, not Hippocastani semen, and does not report numeric PD parameters for the target drug. |
 | PGx | Edeki_1995 | not_relevant | 0 | 0 | The paper reports pharmacogenomic effects for timolol, not hippocastani_semen. |
-| PGx | Ekhart_2008 | not_relevant | 0 | 0 | Paper concerns cyclophosphamide pharmacokinetics, not hippocastani_semen; no gene effect on its PK/PD reported. |
-| popPK | Ekobena_2025 | irrelevant | 0 | 0 | The paper is a population-PK study of bictegravir, a different drug; hippocastani_semen is not the subject drug. |
-| popPK | Ekstrand_2026 | irrelevant | 0 | 0 | This is a population PK study of trimethoprim, sulfadiazine and sulfamethoxazole in dogs — no hippocastani_semen (horse chestnut) data are present. |
-| PGx | Elbarbry_2026 | not_relevant | 0 | 0 | Study reports drug inhibition of CYP enzymes (drug-drug interaction), not a gene variant/genotype effect on hippocastani_semen PK/PD. |
-| PGx | Endo_2007 | not_relevant | 3 | 5 | Identifies CYP2A6 as responsible for pilocarpine 3-hydroxylation via in vitro correlation, but no gene variant/genotype effect on a PK/PD parameter is reported. |
-| popPK | Enger_1984 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of the anticancer drug SOAz, not hippocastani_semen. |
+| PGx | Ekhart_2008 | not_relevant | 0 | 0 | The paper investigates the pharmacogenomics of cyclophosphamide, not hippocastani_semen. |
+| popPK | Ekobena_2025 | irrelevant | 0 | 0 | The study reports population pharmacokinetic parameters for bictegravir, not hippocastani_semen. |
+| popPK | Ekstrand_2026 | irrelevant | 0 | 0 | The study reports pharmacokinetic parameters for trimethoprim, sulfadiazine, and sulfamethoxazole in dogs, not for hippocastani_semen. |
+| PGx | Elbarbry_2026 | not_relevant | 0 | 0 | The paper studies CYP inhibition by arylquinoline derivatives, not the pharmacogenomics of hippocastani_semen. |
+| PGx | Endo_2007 | not_relevant | 0 | 0 | The paper studies the metabolism of pilocarpine, not hippocastani_semen. |
+| popPK | Enger_1984 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of the anticancer drug SOAz (thiatriazadiphosphorine-1-oxide), not hippocastani_semen. |
 | PD | Eryavuz_2026 | not_relevant | 0 | 0 | The paper focuses on Pregabalin and Gabapentin, not Hippocastani semen. |
 | popPK | Esmaeili_2022 | irrelevant | 0 | 0 | no_text gate: only 87 chars of text extracted (&lt; 400) |
 | PD | Esmaeili_2022 | not_relevant | 0 | 0 | The paper focuses on Rivaroxaban, not Hippocastani semen. |
-| PGx | Evgenev_1996 | not_relevant | 0 | 0 | The paper discusses acetylation phenotype determination using isoniazid, not hippocastani_semen. |
+| PGx | Evgenev_1996 | not_relevant | 0 | 0 | The paper discusses isoniazid acetylation phenotyping and does not mention hippocastani_semen. |
 | PGx | Eysselein_1990 | not_relevant | 0 | 0 | The paper studies endogenous cholecystokinin release and does not involve the drug hippocastani_semen or any pharmacogenomic analysis. |
 | popPK | Fagoo_1985 | irrelevant | 0 | 0 | no_text gate: only 112 chars of text extracted (&lt; 400) |
 | PD | Fagoo_1985 | not_relevant | 0 | 0 | The paper discusses the interaction of cardiodigin with antibodies and does not report any pharmacodynamic or exposure-response relationship for Hippocastani semen. |
 | PGx | Fang_2024 | not_relevant | 0 | 0 | The paper studies esomeprazole, not hippocastani_semen. |
+| PGx | Fanta_2010 | not_relevant | 0 | 0 | The paper reports pharmacogenomic effects for cyclosporine, not hippocastani_semen. |
 | popPK | Farias_2009 | irrelevant | 0 | 0 | no_text gate: only 101 chars of text extracted (&lt; 400) |
 | PD | Farias_2009 | not_relevant | 0 | 0 | The paper studies sodium anacardate from cashew nut shell liquid, not Hippocastani semen, and does not report PD parameters for the target drug. |
 | PD | Feng_2025 | not_relevant | 0 | 0 | The paper focuses on meropenem, not Hippocastani semen. |
+| PGx | Fernández-Santander_2013 | not_relevant | 0 | 0 | The paper reports pharmacogenomic effects on the metabolism of tamoxifen, not hippocastani_semen. |
 | PGx | Fisher_1988 | not_relevant | 0 | 0 | The paper discusses the chromosomal location of the SP-C gene and an RFLP, but does not report any pharmacogenomic effects on PK/PD parameters for hippocastani_semen. |
-| popPK | Fiuza_2026 | irrelevant | 0 | 0 | The paper is an in-vitro study on antiparasitic activity of plant extracts and does not involve hippocastani_semen or pharmacokinetic parameters. |
+| popPK | Fiuza_2026 | irrelevant | 0 | 0 | The study evaluates the in vitro antiparasitic activity of plant extracts and does not involve the drug hippocastani_semen or any pharmacokinetic parameters. |
 | PD | Fiuza_2026 | not_relevant | 0 | 0 | The paper studies Chromolaena hookeriana and Campuloclinium macrocephalum, not Hippocastani semen, and reports in vitro EC50 values for antiparasitic activity rather than a pharmacodynamic model for the specified drug. |
-| popPK | Fonseca_2022 | irrelevant | 0 | 0 | The paper describes the production of Copper-61 radiopharmaceuticals and does not involve the drug hippocastani_semen or report any pharmacokinetic parameters. |
+| popPK | Fonseca_2022 | irrelevant | 0 | 0 | The paper describes the production of Copper-61 radiopharmaceuticals and does not involve the drug hippocastani_semen or any pharmacokinetic parameters. |
 | PD | Fonseca_2022 | not_relevant | 0 | 0 | The paper describes the production of Copper-61 radiopharmaceuticals and does not contain any pharmacodynamic or exposure-response data for Hippocastani semen. |
-| PGx | Frederiksen_2021 | not_relevant | 0 | 0 | The paper concerns vortioxetine, not hippocastani_semen; no pharmacogenomic effect on hippocastani_semen PK/PD is reported. |
+| PGx | Frederiksen_2021 | not_relevant | 0 | 0 | The paper studies the pharmacogenomics of vortioxetine, not hippocastani_semen. |
 | popPK | Frenkel_1995 | irrelevant | 0 | 0 | The study reports pharmacokinetic parameters for propofol and alfentanil, not for hippocastani_semen. |
 | PGx | Frischer_1987 | not_relevant | 0 | 0 | The paper studies primaquine metabolism, not hippocastani_semen. |
-| popPK | Gandara_2026 | irrelevant | 0 | 0 | The study reports population pharmacokinetic parameters for sertraline, not hippocastani_semen. |
-| popPK | Gao_2025 | irrelevant | 0 | 0 | The paper is about mycophenolate sodium (MPS/MPA) popPK models, not hippocastani_semen; the drug of interest does not appear as a subject. |
+| PGx | Fukudo_2013 | not_relevant | 0 | 0 | The paper reports pharmacogenomic effects for erlotinib, not hippocastani_semen. |
+| popPK | Gandara_2026 | irrelevant | 0 | 0 | The study reports pharmacokinetic parameters for sertraline, not hippocastani_semen. |
+| popPK | Gao_2025 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of mycophenolate sodium (MPS) and mycophenolic acid (MPA), not hippocastani_semen. |
 | PGx | Ge_2024 | not_relevant | 0 | 0 | The paper investigates drug-drug interactions between Aconitum carmichaelii and Pinellia ternata, not pharmacogenomic effects on hippocastani_semen. |
-| PGx | Gentile_1998 | not_relevant | 0 | 0 | Paper concerns desogestrel metabolism by CYP2C9/2C19, not hippocastani_semen, and reports no genotype/phenotype effect on PK/PD parameters. |
+| PGx | Gentile_1998 | not_relevant | 0 | 0 | The paper studies the metabolism of desogestrel, not hippocastani_semen. |
 | PD | Ghade_2024 | not_relevant | 0 | 0 | The paper discusses the biosimilarity of insulin aspart (BGL-ASP) and mentions PK/PD parameters in the context of clinical trial design, but it does not report any specific numeric PD parameters, exposure-response relationships, or dose-effect curves for Hippocastani semen or any other drug. |
-| PGx | Giri_2022 | not_relevant | 0 | 0 | No gene variant/genotype/phenotype effect on PK/PD of hippocastani_semen; paper concerns CYP inhibition by ZY12201. |
-| popPK | Goeyvaerts_2026 | irrelevant | 0 | 0 | The paper is a population PK/PD study of canagliflozin in paediatric T2DM patients, not of hippocastani_semen; no parameters for the subject drug appear. |
-| popPK | Goeyvaerts_2026_2 | irrelevant | 0 | 0 | This is a PopPK/viral dynamics study of mosnodenvir (dengue antiviral), not of hippocastani_semen; no parameters for the subject drug appear. |
-| popPK | Goggs_2025 | irrelevant | 0 | 0 | The study reports PK for ampicillin/sulbactam in dogs; hippocastani_semen is not mentioned at all. |
+| PGx | Giri_2022 | not_relevant | 0 | 0 | The paper evaluates the CYP inhibition potential of ZY12201 and does not involve hippocastani_semen or report pharmacogenomic effects on PK/PD parameters. |
+| popPK | Goeyvaerts_2026 | irrelevant | 0 | 0 | The paper reports pharmacokinetic parameters for canagliflozin, not hippocastani_semen. |
+| popPK | Goeyvaerts_2026_2 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of mosnodenvir (an antiviral for dengue), not hippocastani_semen. |
+| popPK | Goggs_2025 | irrelevant | 0 | 0 | The study evaluates the pharmacokinetics of ampicillin/sulbactam in dogs, not hippocastani_semen. |
 | PD | González-Garza_1989 | not_relevant | 0 | 0 | The paper reports IC50 values for emetine, metronidazole, and diiodohydroxyquinoline, but does not contain any data or analysis for Hippocastani semen. |
 | popPK | Gorelik_2020 | irrelevant | 0 | 0 | no_text gate: only 100 chars of text extracted (&lt; 400) |
 | PD | Gorelik_2020 | not_relevant | 0 | 0 | The paper discusses stimulated Raman scattering in diamond microparticle suspensions and contains no pharmacological, PK, or PD data for Hippocastani semen. |
-| PGx | Gota_2016 | not_relevant | 8 | 8 | Genotypes (CYP2C8, CYP3A5, CYP3A7, UGT2B7) were tested against 13-cisRA PK but no significant pharmacogenomic effect was found; only null associations reported. |
-| PGx | Gram_1993 | not_relevant | 0 | 0 | No pharmacogenomic effect on hippocastani_semen PK/PD; paper concerns citalopram drug-drug interactions in EM phenotyped volunteers. |
-| PGx | Grangeon_2021 | not_relevant | 0 | 0 | Study quantifies intestinal CYP450 protein expression in donors; no gene variant/genotype effect on PK/PD of any drug, and hippocastani semen is not studied. |
-| popPK | Grippa_2000 | irrelevant | 0 | 0 | The paper describes in vitro antioxidant assays for ascorbic acid, glutathione, and melatonin, and does not involve hippocastani_semen or pharmacokinetic parameters. |
+| PGx | Gota_2016 | not_relevant | 0 | 0 | The paper studies 13-cis retinoic acid, not hippocastani_semen. |
+| PGx | Gram_1993 | not_relevant | 0 | 0 | The paper studies drug-drug interactions involving citalopram, not the drug hippocastani_semen, and does not report pharmacogenomic effects. |
+| PGx | Grangeon_2021 | not_relevant | 0 | 0 | The paper reports CYP450 protein expression levels in the human small intestine but does not report pharmacokinetic or pharmacodynamic parameters for the specific drug 'hippocastani_semen'. |
+| popPK | Grippa_2000 | irrelevant | 0 | 0 | The paper describes in vitro antioxidant assays for ascorbic acid, glutathione, and melatonin, with no mention of hippocastani_semen or pharmacokinetic parameters. |
 | PD | Grippa_2000 | not_relevant | 0 | 0 | The paper describes in vitro antioxidant assays for reference compounds (ascorbic acid, glutathione, melatonin) and does not mention Hippocastani semen or report any pharmacodynamic parameters for it. |
-| popPK | Gu_1992 | irrelevant | 0 | 0 | The paper studies the pharmacological effects of somatostatins on gastric smooth muscle cells and does not involve the drug hippocastani_semen or any pharmacokinetic parameters. |
+| popPK | Gu_1992 | irrelevant | 0 | 0 | The study investigates the pharmacological effects of somatostatins on guinea pig gastric smooth muscle cells and does not involve the drug hippocastani_semen. |
 | popPK | Gu_2024 | irrelevant | 0 | 0 | no_text gate: only 99 chars of text extracted (&lt; 400) |
 | PD | Gu_2024 | not_relevant | 0 | 0 | The paper focuses on fermentation optimization for Coprinus comatus and does not involve Hippocastani semen or any pharmacodynamic modeling. |
 | PGx | Guan_2018 | not_relevant | 0 | 0 | The paper studies the pharmacokinetics of diltiazem, not hippocastani_semen. |
 | PGx | Guo_2020 | not_relevant | 0 | 0 | The paper reports pharmacogenomic effects for nebivolol, not hippocastani_semen. |
-| PGx | Guo_2026 | not_relevant | 0 | 0 | Paper concerns pentoxifylline, not hippocastani_semen. |
-| popPK | Hallock_2026 | irrelevant | 0 | 0 | This is a population PK study of caffeine in neonates, not hippocastani_semen; no parameters for the subject drug appear. |
-| popPK | Hanafin_2023 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of polymyxin B, not hippocastani_semen. |
+| PGx | Guo_2026 | not_relevant | 0 | 0 | The paper reports pharmacogenomic effects for pentoxifylline, not hippocastani_semen. |
+| popPK | Hallock_2026 | irrelevant | 0 | 0 | The study evaluates the pharmacokinetics of caffeine, not hippocastani_semen. |
+| popPK | Hanafin_2023 | irrelevant | 0 | 0 | The study reports pharmacokinetic parameters for polymyxin B, not hippocastani_semen. |
 | PGx | Hand_1992 | not_relevant | 0 | 0 | The paper studies the pharmacokinetics of a monoclonal antibody (B72.3), not the drug hippocastani_semen. |
 | popPK | Hardee_1985 | irrelevant | 0 | 0 | The study reports pharmacokinetic parameters for flunixin meglumine, not hippocastani_semen. |
-| popPK | Hardie_1985 | irrelevant | 0 | 0 | The study reports PK parameters for flunixin meglumine in dogs, not for hippocastani_semen. |
-| PGx | Harland_1995 | not_relevant | 3 | 4 | Paper examines metabolic phenotypes (debrisoquine, acetylator status) as risk factors for thalidomide neuropathy, not effects on thalidomide PK/PD parameters, and reports no fitted effect sizes. |
-| popPK | Harriss_1995 | irrelevant | 0 | 0 | In-vitro receptor pharmacology study of muscarinic agonists/antagonists in cultured human detrusor cells; no PK parameters and no hippocastani_semen. |
+| popPK | Hardie_1985 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of flunixin meglumine, not hippocastani_semen. |
+| PGx | Harland_1995 | not_relevant | 0 | 0 | The paper investigates thalidomide, not hippocastani_semen. |
+| popPK | Harriss_1995 | irrelevant | 0 | 0 | The paper is an in-vitro pharmacological study on muscarinic receptors in human detrusor cells and does not involve hippocastani_semen or pharmacokinetic parameters. |
 | PD | He_2024 | not_relevant | 0 | 0 | The paper describes a UPLC-MS/MS method for quantifying vancomycin and meropenem, not a pharmacodynamic or exposure-response analysis for Hippocastani semen. |
-| popPK | Hermann_1988 | irrelevant | 0 | 0 | The study focuses on ciclosporin, not hippocastani_semen, and involves in-vitro skin penetration rather than population pharmacokinetics. |
+| popPK | Hermann_1988 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of ciclosporin, not hippocastani_semen. |
 | popPK | Hodge_2026 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of sugammadex and rocuronium, not hippocastani_semen. |
 | popPK | Hongler_2026 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of amikacin, not hippocastani_semen. |
 | PD | Hostetler_1986 | not_relevant | 0 | 0 | The paper focuses on the purification of an enzyme and identification of inhibitors in a lysosomal fraction, containing no pharmacokinetic or pharmacodynamic modeling of Hippocastani semen. |
 | popPK | Howe_1992 | irrelevant | 0 | 0 | The paper describes the construction of a phosphate-doped gel phantom for NMR spectroscopy and does not involve the drug hippocastani_semen or any pharmacokinetic parameters. |
+| PGx | Hu_2024 | not_relevant | 0 | 0 | The paper studies the metabolism of the pesticide clothianidin, not the drug hippocastani_semen. |
+| PGx | Hu_2024_2 | not_relevant | 0 | 0 | The paper studies abiraterone, not hippocastani_semen. |
 | PGx | Hu_2026 | not_relevant | 0 | 0 | The paper investigates fexinidazole, not hippocastani_semen. |
-| PGx | Hua_2025 | not_relevant | 0 | 0 | The paper investigates herb-drug interactions (acacetin affecting diazepam PK) and does not report any pharmacogenomic effects (gene variants) on PK/PD parameters. |
+| PGx | Hua_2025 | not_relevant | 0 | 0 | The paper investigates herb-drug interactions (acacetin affecting diazepam PK) and does not report any pharmacogenomic effects (gene variants/genotypes) on PK/PD parameters. |
 | PGx | Huang_2019 | not_relevant | 0 | 0 | The paper studies the pharmacogenomics of Telmisartan, not hippocastani_semen. |
-| popPK | Huang_2022 | irrelevant | 0 | 0 | no_text gate: only 70 chars of text extracted (&lt; 400) |
-| popPK | Husheng_2026 | irrelevant | 0 | 0 | This is a review of population PK of vancomycin in critically ill adults; hippocastani_semen is not the subject drug and no parameters for it appear. |
-| PGx | Ibrahim_2024 | not_relevant | 0 | 0 | The paper investigates pharmacogenomics for metformin and glimepiride, not hippocastani_semen. |
+| popPK | Huang_2022 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of acetylkitasamycin in piglets, not hippocastani_semen. |
+| PGx | Huerta-García_2020 | not_relevant | 0 | 0 | The paper reports pharmacogenomics for isoniazid, not hippocastani_semen. |
+| popPK | Husheng_2026 | irrelevant | 0 | 0 | The paper is a review of population pharmacokinetics for vancomycin, not hippocastani_semen. |
+| PGx | Ibrahim_2024 | not_relevant | 0 | 0 | The paper studies metformin and glimepiride, not hippocastani_semen. |
 | PD | Inamdar_2026 | not_relevant | 1 | 0 | Review of TDM bioanalytical platforms; discusses PK/PD modeling concepts (EC50, mechanism-based models) only qualitatively with no drug-specific numeric PD parameters or effect-concentration data. |
-| PGx | Isbister_2016 | not_relevant | 8 | 2 | CYP2D6 poor metaboliser status is only speculated in the conclusion; no genotype/phenotype was measured and no PGx-linked PK parameter estimate is reported. |
-| PGx | Isse_2025 | not_relevant | 0 | 0 | Paper studies recombinant CYP enzyme metabolism of arachidonic acid, not hippocastani semen; no gene variant/genotype effect on PK/PD parameters of the drug is reported. |
-| PGx | Jaisupa_2026 | not_relevant | 0 | 0 | The paper investigates pharmacokinetic drug-drug interactions of cannabidiol (CBD) with antiseizure medications, not the pharmacogenomics of hippocastani_semen. |
-| popPK | Janssen_2015 | irrelevant | 0 | 0 | The paper investigates ivermectin resistance in C. elegans and does not involve the drug hippocastani_semen or report any pharmacokinetic parameters. |
-| popPK | Jensen_2023 | irrelevant | 0 | 0 | The paper focuses on a mass spectrometry method for progestins and does not involve hippocastani_semen. |
+| PGx | Isbister_2016 | not_relevant | 0 | 0 | The paper discusses metoprolol pharmacokinetics and CYP2D6 status, but does not involve the drug hippocastani_semen. |
+| PGx | Isse_2025 | not_relevant | 0 | 0 | The paper studies the enantioselective metabolism of arachidonic acid by CYP enzymes, not the pharmacokinetics or pharmacodynamics of the drug hippocastani_semen. |
+| PGx | Jaisupa_2026 | not_relevant | 0 | 0 | The paper investigates the pharmacokinetics of cannabidiol (CBD), not hippocastani_semen. |
+| popPK | Janssen_2015 | irrelevant | 0 | 0 | The study investigates ivermectin resistance in C. elegans and does not involve hippocastani_semen. |
+| popPK | Jensen_2023 | irrelevant | 0 | 0 | The paper describes a method for analyzing progestins and ethinylestradiol for contraceptive compliance and does not involve hippocastani_semen. |
 | PD | Jensen_2023 | not_relevant | 0 | 0 | The paper describes a bioanalytical method for monitoring progestin compliance and does not report any pharmacodynamic or exposure-response data for Hippocastani semen. |
-| PGx | Jia_2021 | not_relevant | 0 | 0 | The paper studies voriconazole, not hippocastani_semen. |
+| PGx | Jia_2021 | not_relevant | 0 | 0 | The paper investigates the pharmacogenomics of Voriconazole, not hippocastani_semen. |
 | PGx | Jiao_1990 | not_relevant | 0 | 0 | The paper studies genetic control of lipoprotein sizes in mice and does not involve the drug hippocastani_semen. |
 | PGx | Jin_2012 | not_relevant | 0 | 0 | The paper studies letrozole, not hippocastani_semen. |
 | popPK | Jin_2025 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of dorzagliatin and PI3K inhibitors, not hippocastani_semen. |
 | PD | Jin_2025 | not_relevant | 0 | 0 | The paper studies Dorzagliatin and PI3K inhibitors, not Hippocastani semen. |
-| popPK | Jin_2026 | irrelevant | 0 | 0 | The paper reports population PK of colistin sulfate, not hippocastani_semen (horse chestnut); the subject drug is entirely different. |
-| PGx | Joisten_2026 | not_relevant | 0 | 0 | Paper reports DDI (posaconazole) effects on midostaurin PK, not any pharmacogenomic variant/genotype effect. |
-| popPK | Jonker_2008 | irrelevant | 0 | 0 | The paper describes a protein-ligand screening methodology using norethindrone and other ligands, and does not involve hippocastani_semen or pharmacokinetic parameters. |
+| popPK | Jin_2026 | irrelevant | 0 | 0 | The study reports pharmacokinetic parameters for colistin sulfate, not hippocastani_semen. |
+| PGx | Joisten_2026 | not_relevant | 0 | 0 | The paper investigates drug-drug interactions between midostaurin and posaconazole, not pharmacogenomic effects on hippocastani_semen. |
+| popPK | Jonker_2008 | irrelevant | 0 | 0 | no_text gate: only 149 chars of text extracted (&lt; 400) |
 | PD | Jonker_2008 | not_relevant | 0 | 0 | The paper describes a method for screening protein-ligand interactions and mentions the capability to measure EC50 curves, but it does not report any specific PD or exposure-response data for Hippocastani semen. |
-| popPK | Kagan_2023 | irrelevant | 0 | 0 | The paper is a review of DNA methyltransferase inhibitors (azacitidine/decitabine) and does not mention hippocastani_semen or provide any pharmacokinetic parameters for it. |
+| popPK | Kagan_2023 | irrelevant | 0 | 0 | The paper is a review of DNA methyltransferase inhibitors (azacitidine, decitabine) and does not mention hippocastani_semen or provide any pharmacokinetic parameters for it. |
 | PD | Kagan_2023 | not_relevant | 1 | 0 | The paper is a review discussing DNMT inhibitors (azacitidine/decitabine) and does not contain data or numeric PD parameters for Hippocastani semen. |
-| PGx | Kagawa_2021 | not_relevant | 0 | 0 | The paper investigates the pharmacogenomics of donepezil, not hippocastani_semen. |
-| PGx | Kahma_2021 | not_relevant | 0 | 0 | In vitro CYP inhibition assay methodology; no gene variant/genotype effect on hippocastani_semen PK/PD reported. |
-| PGx | Kedderis_1991 | not_relevant | 0 | 0 | No gene variant/genotype/phenotype effects on PK/PD of hippocastani_semen; paper concerns dioxin disposition in rats. |
-| PGx | Kehinde_2025 | not_relevant | 0 | 5 | The paper concerns risperidone, not hippocastani_semen, so no pharmacogenomic effect on that drug's PK/PD parameters is reported. |
-| popPK | Keipert_1988 | irrelevant | 0 | 0 | The paper describes the physicochemical properties of a hemoglobin solution and does not involve the drug hippocastani_semen. |
+| PGx | Kagawa_2021 | not_relevant | 0 | 0 | The paper investigates donepezil, not hippocastani_semen. |
+| PGx | Kahma_2021 | not_relevant | 0 | 0 | The paper describes an in vitro CYP inhibition assay method and does not involve the drug hippocastani_semen or any pharmacogenomic analysis. |
+| PGx | Kedderis_1991 | not_relevant | 0 | 0 | The paper studies dioxins in rats, not hippocastani_semen, and does not report pharmacogenomic effects. |
+| PGx | Kehinde_2025 | not_relevant | 0 | 0 | The paper investigates the pharmacogenomics of risperidone, not hippocastani_semen. |
+| popPK | Keipert_1988 | irrelevant | 0 | 0 | The paper describes the physicochemical properties of a hemoglobin-based oxygen carrier and does not involve the drug hippocastani_semen. |
 | PD | Keipert_1988 | not_relevant | 0 | 0 | The paper describes the physicochemical properties and storage stability of a hemoglobin solution, not a pharmacodynamic or exposure-response relationship for Hippocastani semen. |
 | popPK | Kengo_2024 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of tuberculosis drugs (clofazimine, isoniazid, etc.) and does not involve hippocastani_semen. |
-| PGx | Kerremans_1985 | not_relevant | 2 | 5 | Paper concerns cephalosporin metabolites (MTT/MTD) and TPMT methylation kinetics, not hippocastani_semen, and no genotype-variant effect on PK/PD is reported. |
-| popPK | Kharouba_2025 | irrelevant | 0 | 0 | This is a population-PK study of levetiracetam, not hippocastani_semen; no parameters for the subject drug are present. |
-| popPK | Khoei_2026 | irrelevant | 0 | 0 | This is a population-PK study of dolutegravir (DTG), not hippocastani_semen; no parameters for the subject drug are present. |
+| PGx | Kerremans_1985 | not_relevant | 0 | 0 | The paper studies cephalosporin metabolites and does not mention hippocastani_semen. |
+| popPK | Kharouba_2025 | irrelevant | 0 | 0 | The study reports pharmacokinetic parameters for levetiracetam, not hippocastani_semen. |
+| popPK | Khoei_2026 | irrelevant | 0 | 0 | The study reports pharmacokinetic parameters for dolutegravir (DTG), not hippocastani_semen. |
 | PGx | Kim_2022 | not_relevant | 0 | 0 | The paper reports pharmacogenomic effects for atorvastatin, not hippocastani_semen. |
+| PGx | Kinoshita_2025 | not_relevant | 0 | 0 | The paper investigates clozapine, not hippocastani_semen. |
 | PGx | Kirbs_2019 | not_relevant | 0 | 0 | The paper investigates voriconazole, not hippocastani_semen. |
-| PGx | Kivrane_2024 | not_relevant | 0 | 0 | The paper concerns rifampicin PK pharmacogenetics, not hippocastani_semen. |
+| PGx | Kirchheiner_2003 | not_relevant | 0 | 0 | The paper studies bupropion, not hippocastani_semen. |
+| PGx | Kivrane_2024 | not_relevant | 0 | 0 | The paper reports pharmacogenomic effects on Rifampicin, not hippocastani_semen. |
 | PGx | Kodali_1990 | not_relevant | 0 | 0 | The paper describes the physical properties and polymorphism of synthetic diacylglycerols and does not involve pharmacogenomics or the drug hippocastani_semen. |
-| popPK | Koele_2025 | irrelevant | 0 | 0 | The paper reports pharmacokinetic parameters for the drug BTZ-043, not hippocastani_semen. |
+| popPK | Koele_2025 | irrelevant | 0 | 0 | The study reports pharmacokinetic parameters for the drug BTZ-043, not hippocastani_semen. |
 | PGx | Koh_2019 | not_relevant | 0 | 0 | The paper reports pharmacogenomic effects for amitriptyline, not hippocastani_semen. |
-| PGx | Kolesar_2022 | not_relevant | 0 | 0 | The paper discusses pharmacogenomics in the context of EGFR TKIs for lung cancer and does not mention the drug 'hippocastani_semen'. |
+| PGx | Kolesar_2022 | not_relevant | 0 | 0 | The paper discusses pharmacogenomics for EGFR TKIs in lung cancer, not hippocastani_semen. |
 | PGx | Koller_2020 | not_relevant | 0 | 0 | The paper studies aripiprazole and olanzapine, not hippocastani_semen. |
-| PGx | Kondrakhin_2025 | not_relevant | 0 | 0 | The paper concerns apixaban, not hippocastani_semen, so no pharmacogenomic effect on this drug's PK/PD parameters is reported. |
+| PGx | Kondrakhin_2025 | not_relevant | 0 | 0 | The paper studies apixaban, not hippocastani_semen. |
 | PGx | Kong_2024 | not_relevant | 0 | 0 | The paper reports pharmacogenomic effects for mercaptopurine, not hippocastani_semen. |
 | PGx | Koyama_1993 | not_relevant | 0 | 0 | The paper concerns the pharmacokinetics of imipramine, not hippocastani_semen. |
 | PGx | Kronbach_1987 | not_relevant | 0 | 0 | The paper describes HPLC assays for the metabolism of bufuralol, debrisoquine, and dextromethorphan, and does not mention hippocastani_semen. |
 | PGx | Lang_1994 | not_relevant | 0 | 0 | The paper studies the pharmacogenomics of caffeine metabolism (CYP1A2/NAT2) in relation to colorectal cancer risk, not the pharmacokinetics or pharmacodynamics of hippocastani_semen. |
 | popPK | Le_2001 | irrelevant | 0 | 0 | no_text gate: only 92 chars of text extracted (&lt; 400) |
 | PD | Le_2001 | not_relevant | 0 | 0 | The paper describes a beta-galactosidase assay for yeast response to estrogens and does not mention Hippocastani semen or report any pharmacodynamic parameters for it. |
-| PGx | Lechner_1995 | not_relevant | 0 | 0 | Paper concerns hCG epitope mapping for immunoassays, not pharmacogenomic effects on PK/PD of hippocastani_semen. |
+| PGx | Lechner_1995 | not_relevant | 0 | 0 | The paper discusses hCG immunoassay epitopes and protease digestion, not pharmacogenomics or PK/PD of hippocastani_semen. |
 | popPK | Lee_2016 | irrelevant | 0 | 0 | The study reports pharmacokinetic parameters for ramosetron, not hippocastani_semen. |
-| PGx | Lee_2024 | not_relevant | 0 | 0 | Study identifies enzymes metabolizing fargesin (from Flos Magnoliae, not hippocastani_semen) but reports no gene variant/genotype effect on any PK/PD parameter. |
-| popPK | Lee_2025 | irrelevant | 0 | 0 | This is a population PK study of levofloxacin, not hippocastani_semen; no parameters for the subject drug appear. |
+| PGx | Lee_2024 | not_relevant | 0 | 0 | The paper studies the metabolism of fargesin, not hippocastani_semen, and does not report pharmacogenomic effects. |
+| popPK | Lee_2025 | irrelevant | 0 | 0 | The study reports pharmacokinetic parameters for levofloxacin, not hippocastani_semen. |
 | popPK | Lehnert_2022 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of amiodarone, not hippocastani_semen. |
 | PD | Lei_2010 | not_relevant | 0 | 0 | The paper discusses physical chemistry (adsorption at liquid/solid interfaces) and does not involve the drug Hippocastani semen or pharmacodynamics. |
-| popPK | Lei_2026 | irrelevant | 0 | 0 | This is a population-PK study of meropenem in septic patients; hippocastani_semen is not the subject drug and no parameters for it appear. |
+| popPK | Lei_2026 | irrelevant | 0 | 0 | The study reports population pharmacokinetic parameters for meropenem, not hippocastani_semen. |
 | PD | Lejbman_2025 | not_relevant | 0 | 0 | The paper studies beta-lactam antibiotics (cefotaxime, piperacillin/tazobactam, meropenem) and does not mention Hippocastani semen or report any pharmacodynamic parameters for it. |
-| PGx | Lennard_1994 | not_relevant | 0 | 0 | Paper describes an HPLC assay for TPMT activity; no pharmacogenomic effect on PK/PD parameters of any drug is reported. |
+| PGx | Lennard_1994 | not_relevant | 0 | 0 | The paper describes an assay for thiopurine methyltransferase activity and does not involve the drug hippocastani_semen. |
 | popPK | Levêque_1993 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of vinorelbine, not hippocastani_semen. |
 | PGx | Lewis_2007 | not_relevant | 0 | 0 | The paper studies docetaxel, not hippocastani_semen. |
+| PGx | Li_2019 | not_relevant | 0 | 0 | The paper studies the pharmacogenetics of montelukast, not hippocastani_semen. |
 | PGx | Li_2020 | not_relevant | 0 | 0 | The paper studies the metabolism of orbitazine, not hippocastani_semen, and does not report pharmacogenomic effects. |
-| popPK | Li_2021 | irrelevant | 0 | 0 | The paper studies the antiviral mechanism of ethacridine against SARS-CoV-2 and does not involve the drug hippocastani_semen or any pharmacokinetic parameters. |
+| popPK | Li_2021 | irrelevant | 0 | 0 | The paper studies the antiviral activity of ethacridine against SARS-CoV-2 and does not involve hippocastani_semen or any pharmacokinetic parameters. |
 | PD | Li_2021 | not_relevant | 0 | 0 | The paper reports pharmacological data for ethacridine, not Hippocastani semen. |
-| popPK | Li_2022 | irrelevant | 0 | 0 | The paper describes the isolation and biological activity of polyketides from a fungus, not the pharmacokinetics of hippocastani_semen. |
-| PGx | Li_2023 | not_relevant | 0 | 0 | Paper concerns CYP3A4/5 effects on melphalan PK in myeloma, not hippocastani_semen. |
+| popPK | Li_2022 | irrelevant | 0 | 0 | no_text gate: only 99 chars of text extracted (&lt; 400) |
+| PGx | Li_2023 | not_relevant | 0 | 0 | The paper studies melphalan, not hippocastani_semen. |
 | PGx | Li_2024 | not_relevant | 0 | 0 | The study investigates the pharmacokinetics of ginkgo flavone aglycone, not hippocastani_semen. |
 | PD | Li_2025_2 | not_relevant | 0 | 0 | Paper is an in vitro LC-MS serum stability assay for antibodies; no pharmacodynamic or exposure-response relationship for any drug is modeled or quantified. |
-| PGx | Li_2026_2 | not_relevant | 0 | 0 | The paper concerns tacrolimus, not hippocastani_semen, so no pharmacogenomic effect on that drug's PK/PD is reported. |
-| popPK | Li_2026_3 | irrelevant | 0 | 0 | The paper is a population-PK study of topical timolol maleate gel, not hippocastani_semen; the subject drug is different, so no parameters for the target drug exist. |
-| popPK | Liang_2026 | irrelevant | 0 | 0 | This is a PopPK/PBPK study of remimazolam, not hippocastani_semen; no parameters for the subject drug appear. |
-| popPK | Liard_1995 | irrelevant | 0 | 0 | The paper studies the HIV protease inhibitor BILA 2185 BS, not hippocastani_semen. |
+| PGx | Li_2026_2 | not_relevant | 0 | 0 | The paper reports pharmacogenomic effects for tacrolimus, not hippocastani_semen. |
+| popPK | Li_2026_3 | irrelevant | 0 | 0 | The study reports pharmacokinetic parameters for timolol maleate, not hippocastani_semen. |
+| popPK | Liang_2026 | irrelevant | 0 | 0 | The paper reports pharmacokinetic parameters for remimazolam tosilate, not hippocastani_semen. |
+| popPK | Liard_1995 | irrelevant | 0 | 0 | no_text gate: only 167 chars of text extracted (&lt; 400) |
 | PD | Liard_1995 | not_relevant | 1 | 1 | The paper is an analytical method validation for BILA 2185 BS and only mentions in vitro IC50/EC50 values without providing an exposure-response or dose-response analysis for Hippocastani semen. |
-| popPK | Lim_2024 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of 7,8-dihydroxyflavone (7,8-DHF), not hippocastani_semen. |
-| PGx | Lin_2007 | not_relevant | 0 | 0 | Paper describes an in vitro CYP inhibition assay methodology; no gene variant effect on PK/PD of hippocastani_semen is reported. |
+| popPK | Lim_2024 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of 7,8-dihydroxyflavone (7,8-DHF) in mice, not hippocastani_semen. |
+| PGx | Lin_2007 | not_relevant | 0 | 0 | The paper describes an in vitro CYP inhibition assay methodology and does not involve the drug hippocastani_semen or any pharmacogenomic analysis. |
 | PGx | Lin_2021 | not_relevant | 0 | 0 | The paper reports pharmacogenomics for azathioprine, not hippocastani_semen. |
-| popPK | Lin_2023 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of carfilzomib, not hippocastani_semen. |
+| popPK | Lin_2023 | irrelevant | 0 | 0 | The study reports pharmacokinetic parameters for carfilzomib, not hippocastani_semen. |
 | popPK | Ling_2024 | irrelevant | 0 | 0 | The study reports pharmacokinetic parameters for voriconazole, not hippocastani_semen. |
 | PGx | Ling_2024 | not_relevant | 0 | 0 | The paper studies voriconazole, not hippocastani_semen. |
 | popPK | Ling_2025 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of ropivacaine, not hippocastani_semen. |
-| popPK | Linnehan_2024 | irrelevant | 0 | 0 | The study reports pharmacokinetic parameters for cefpodoxime, not hippocastani_semen. |
+| popPK | Linnehan_2024 | irrelevant | 0 | 0 | The study reports pharmacokinetic parameters for cefpodoxime in bottlenose dolphins, not for hippocastani_semen. |
 | PGx | Litalien_2005 | not_relevant | 0 | 0 | The paper discusses proton pump inhibitors, not hippocastani_semen. |
 | PGx | Liu_1989 | not_relevant | 0 | 0 | The paper describes an analytical method for glucuronide conjugates and mentions validation for pharmacogenetics, but it does not report specific pharmacogenomic effects on PK/PD parameters for hippocastani_semen. |
 | popPK | Liu_2023 | irrelevant | 0 | 0 | no_text gate: only 107 chars of text extracted (&lt; 400) |
 | PD | Liu_2023 | not_relevant | 0 | 0 | The paper studies sesquiterpenes from Eupatorium adenophorum, not Hippocastani semen, and reports antifungal activity without the specific drug or PD parameters requested. |
-| popPK | Liu_2025 | irrelevant | 0 | 0 | The study reports population PK parameters for sarafloxacin in carp, not for hippocastani_semen. |
+| popPK | Liu_2025 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of sarafloxacin in fish, not hippocastani_semen. |
 | popPK | Lou_2026 | irrelevant | 0 | 0 | The study reports pharmacokinetic parameters for eravacycline, not hippocastani_semen. |
 | popPK | Love_2015 | irrelevant | 0 | 0 | no_text gate: only 90 chars of text extracted (&lt; 400) |
 | PD | Love_2015 | not_relevant | 0 | 0 | The paper focuses on buprenorphine in horses, not Hippocastani semen. |
 | PGx | Luo_2025 | not_relevant | 0 | 0 | The paper reports pharmacogenomic effects for exemestane, not hippocastani_semen. |
 | PGx | Luu_1995 | not_relevant | 0 | 0 | The paper studies ethanol metabolism, not the pharmacokinetics or pharmacodynamics of hippocastani_semen. |
 | PGx | Ma_2018 | not_relevant | 0 | 0 | The paper reports pharmacogenomics for theophylline, not hippocastani_semen. |
-| popPK | Machnik_2017 | irrelevant | 0 | 0 | The study reports PK/PD thresholds for caffeine, theobromine and theophylline in horses; hippocastani_semen is not the subject drug and no disposition parameters for it appear. |
+| popPK | Machnik_2017 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of methylxanthines (caffeine, theobromine, theophylline) in horses, not hippocastani_semen. |
 | PGx | Maeda_2023 | not_relevant | 0 | 0 | The paper investigates the pharmacogenomics of abemaciclib, not hippocastani_semen. |
 | popPK | Manchandani_2018 | irrelevant | 0 | 0 | The study reports pharmacokinetic parameters for Polymyxin B, not hippocastani_semen. |
-| popPK | Maranchick_2026 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of pyrazinamide and ethambutol, not hippocastani_semen. |
+| popPK | Maranchick_2026 | irrelevant | 0 | 0 | The study reports pharmacokinetic parameters for pyrazinamide and ethambutol, not hippocastani_semen. |
 | PGx | Marinac_1995 | not_relevant | 0 | 0 | The study investigates dextromethorphan, not hippocastani_semen. |
 | PGx | Marquet_2021 | not_relevant | 0 | 0 | The paper studies tacrolimus, not hippocastani_semen. |
-| popPK | Martín-Cerezuela_2024 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of isavuconazole, not hippocastani_semen. |
+| popPK | Martín-Cerezuela_2024 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of isavuconazole, not hippocastani_semen. |
 | PD | Martínez_2025 | not_relevant | 3 | 3 | PK-only NCA study; only surrogate PK/PD indices (T&gt;MIC vs fixed MICs) are derivable, with no measured effect or concentration-effect relationship (no Emax/EC50/slope). |
-| PGx | Mazzarino_2021 | not_relevant | 0 | 0 | Paper is about metabolic profiling of N-ethyl heptedrone, not hippocastani semen or pharmacogenomic effects. |
-| popPK | McManamey_2023 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of pimobendan, not hippocastani_semen. |
-| PGx | Meakin_2023 | not_relevant | 0 | 0 | The paper characterizes CYP enzyme activity in sheep pregnancy models and does not involve the drug hippocastani_semen or any pharmacogenomic analysis. |
-| PGx | Meng_2024 | not_relevant | 0 | 0 | Study examines CYP-mediated metabolism of paclitaxel in rats, not hippocastani_semen, and no gene variant/genotype effects on PK/PD parameters are reported. |
+| PGx | Mazzarino_2021 | not_relevant | 0 | 0 | The paper studies the metabolism of N-ethyl heptedrone, not hippocastani_semen. |
+| popPK | McManamey_2023 | irrelevant | 0 | 0 | The study reports pharmacokinetic parameters for pimobendan, not hippocastani_semen. |
+| PGx | Meakin_2023 | not_relevant | 0 | 0 | The paper characterizes CYP activity in sheep pregnancy models and does not involve the drug hippocastani_semen or any pharmacogenomic analysis. |
+| PGx | Meng_2024 | not_relevant | 0 | 0 | The paper studies the metabolism of paclitaxel in rats, not the pharmacogenomics of hippocastani_semen. |
 | popPK | Meyer_1983 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of ethaverine, not hippocastani_semen. |
-| popPK | Mikhailova_2026 | irrelevant | 0 | 0 | The paper is a Bayesian mPBPK modeling study of dapagliflozin, not hippocastani_semen; no numeric PK parameters for hippocastani_semen appear. |
-| PGx | Miljković_2022 | not_relevant | 3 | 5 | Genotypes (CYP3A4/5, CYP2C9/19, CYP1A1) were analyzed but "could not be related" to itraconazole PK; no pharmacogenomic effect on PK parameters reported. |
-| PGx | Milovanovic_2016 | not_relevant | 0 | 0 | Paper concerns carbamazepine, not hippocastani_semen; no pharmacogenomic effect on hippocastani_semen PK/PD is reported. |
+| popPK | Mikhailova_2026 | irrelevant | 0 | 0 | The paper is a pharmacokinetic study of dapagliflozin, not hippocastani_semen. |
+| PGx | Miljković_2022 | not_relevant | 0 | 0 | The paper studies itraconazole, not hippocastani_semen. |
+| PGx | Milovanovic_2016 | not_relevant | 0 | 0 | The paper investigates the pharmacogenomics of carbamazepine, not hippocastani_semen. |
 | PD | Minamijima_2024 | not_relevant | 0 | 0 | The paper focuses on the pharmacokinetics of tranexamic acid in horses and does not report any pharmacodynamic or exposure-response relationship for Hippocastani semen. |
-| PGx | Moes_2012 | not_relevant | 8 | 7 | Study tested ABCB1/CYP3A5/CYP2C8/PXR polymorphisms on everolimus PK but found no significant pharmacogenomic effect; only ideal body weight affected V1/F. |
+| PGx | Moes_2012 | not_relevant | 0 | 0 | The paper studies everolimus, not hippocastani_semen. |
 | PGx | Moltó_2013 | not_relevant | 0 | 0 | The paper reports pharmacogenomic effects on the pharmacokinetics of darunavir and ritonavir, not hippocastani_semen. |
-| PGx | Monfort_1993 | not_relevant | 0 | 0 | Study of assisted reproduction in Eld's deer; no pharmacogenomic effects on PK/PD parameters of any drug. |
-| popPK | Moon_2008 | irrelevant | 0 | 0 | The paper reports PK parameters for quercetin, not hippocastani semen, which does not appear as the subject drug. |
+| PGx | Monfort_1993 | not_relevant | 0 | 0 | The paper reports on assisted reproduction in Eld's deer and does not involve the drug hippocastani_semen or any pharmacogenomic analysis. |
+| popPK | Moon_2008 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of quercetin, not hippocastani_semen. |
 | popPK | Morales_2025 | irrelevant | 0 | 0 | no_text gate: only 98 chars of text extracted (&lt; 400) |
 | PD | Morales_2025 | not_relevant | 0 | 0 | The paper focuses on Propofol and Fentanyl, not Hippocastani semen. |
 | popPK | Morath_2025 | irrelevant | 0 | 0 | The study reports pharmacokinetic parameters for apixaban, not hippocastani_semen. |
-| PGx | Mori_1995 | not_relevant | 0 | 0 | Paper concerns cigarette smoke effects on metabolic activation of carcinogens in hamster, not pharmacogenomic effects on PK/PD of hippocastani_semen. |
+| PGx | Mori_1995 | not_relevant | 0 | 0 | The paper studies the effect of cigarette smoke on the metabolic activation of carcinogens in hamsters, not the pharmacogenomics of hippocastani_semen. |
 | popPK | Morse_2025 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of lysergic acid diethylamide (LSD), not hippocastani_semen. |
 | PGx | Morse_2025 | not_relevant | 0 | 0 | The paper studies LSD, not hippocastani_semen. |
 | PGx | Mouly_2005 | not_relevant | 0 | 0 | The paper investigates the pharmacogenomics of saquinavir, not hippocastani_semen. |
-| popPK | Moustaghfir_2026 | irrelevant | 0 | 0 | The study reports PK parameters for amoxicillin in calves, not for hippocastani_semen, so no parameters for the subject drug are present. |
+| popPK | Moustaghfir_2026 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of amoxicillin in calves, not hippocastani_semen. |
 | PGx | Mugusi_2024 | not_relevant | 0 | 0 | The paper reports pharmacogenomic effects for methadone, not hippocastani_semen. |
 | PGx | Mukonzo_2009 | not_relevant | 0 | 0 | The paper reports pharmacogenomic effects on efavirenz, not hippocastani_semen. |
-| PGx | Musuamba_2009 | not_relevant | 0 | 0 | The study investigates the pharmacokinetics of tacrolimus, not hippocastani_semen. |
-| PGx | Nafchi_2025 | not_relevant | 0 | 0 | The paper is a general review of cancer pharmacogenetics and does not mention the drug 'hippocastani_semen' or specific pharmacokinetic/pharmacodynamic parameters for it. |
-| popPK | Nakai_2025 | irrelevant | 0 | 0 | The paper reports population pharmacokinetic parameters for tranexamic acid, not hippocastani_semen. |
+| PGx | Musuamba_2009 | not_relevant | 0 | 0 | The paper studies tacrolimus, not hippocastani_semen. |
+| PGx | Nafchi_2025 | not_relevant | 0 | 0 | The paper is a general review of cancer pharmacogenetics and does not mention hippocastani_semen or specific PK/PD effects for this substance. |
+| popPK | Nakai_2025 | irrelevant | 0 | 0 | The study reports population pharmacokinetic parameters for tranexamic acid, not hippocastani_semen. |
 | popPK | Nel_2026 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of ceftriaxone, not hippocastani_semen. |
-| PGx | Nikanjam_2012 | not_relevant | 0 | 0 | Paper concerns nevirapine PK in pediatric dosing, not hippocastani_semen or any pharmacogenomic effect on it. |
+| PGx | Nikanjam_2012 | not_relevant | 0 | 0 | The paper studies Nevirapine, not hippocastani_semen. |
 | PGx | Nikanjam_2022 | not_relevant | 0 | 0 | The paper reports pharmacogenomic effects for efavirenz, not hippocastani_semen. |
-| popPK | Nikolaidis_2026 | irrelevant | 0 | 0 | The study reports population-PK parameters for metformin, not hippocastani_semen, so the subject drug is different. |
+| popPK | Nikolaidis_2026 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of metformin, not hippocastani_semen. |
 | popPK | Nikolic_2024 | irrelevant | 0 | 0 | The study reports pharmacokinetic parameters for tamsulosin, not hippocastani_semen. |
-| PGx | Nilles_2024 | not_relevant | 0 | 0 | In vitro drug-drug interaction study of rifamycins on CYP3A4 induction; no gene variant/genotype effect on hippocastani_semen PK/PD reported. |
-| PGx | Nio_2022 | not_relevant | 0 | 0 | The paper reports pharmacogenomic effects for gefitinib, not hippocastani_semen. |
-| PGx | Niu_2022 | not_relevant | 0 | 0 | Herb-drug interaction study of Shengmai injection on losartan PK/PD; no gene variant/genotype/phenotype effects reported. |
-| popPK | Nyangwa_2026 | irrelevant | 0 | 0 | The paper reports pharmacokinetic parameters for pretomanid, not hippocastani_semen. |
+| PGx | Nilles_2024 | not_relevant | 0 | 0 | The paper studies rifabutin and rifampicin, not hippocastani_semen. |
+| PGx | Nio_2022 | not_relevant | 0 | 0 | The paper studies the pharmacokinetics of gefitinib, not hippocastani_semen. |
+| PGx | Niu_2022 | not_relevant | 0 | 0 | The paper investigates herb-drug interactions (Shengmai Injection and Losartan) and does not report pharmacogenomic effects on Hippocastani semen. |
+| popPK | Nyangwa_2026 | irrelevant | 0 | 0 | The study reports pharmacokinetic parameters for pretomanid, not hippocastani_semen. |
 | PD | Nyangwa_2026 | not_relevant | 0 | 0 | The paper focuses on the pharmacokinetics of pretomanid, not Hippocastani semen, and does not report a PD model or numeric PD parameters for the queried substance. |
 | PGx | Okda_2024 | not_relevant | 0 | 0 | The paper studies the pharmacogenomics of Bisoprolol, not hippocastani_semen. |
 | popPK | Olesen_2012 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of pregabalin, not hippocastani_semen. |
 | PGx | Ortega-Vázquez_2021 | not_relevant | 0 | 0 | The paper studies clozapine, not hippocastani_semen. |
-| popPK | Pai_2026 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of dalbavancin, not hippocastani_semen. |
+| popPK | Pai_2026 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of dalbavancin, not hippocastani_semen. |
 | PD | Panigati_1992 | not_relevant | 0 | 0 | The provided text contains only the title of the paper and lacks the full text, abstract, or data required to determine if numeric PD parameters are reported. |
 | popPK | Park_2026 | irrelevant | 0 | 0 | no_text gate: only 175 chars of text extracted (&lt; 400) |
+| PGx | Parkhomenko_2023 | not_relevant | 0 | 0 | The paper reports pharmacogenomic effects for haloperidol, not hippocastani_semen. |
 | popPK | Parvin_2025 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of ropivacaine, not hippocastani_semen. |
-| PGx | Patel_2019 | not_relevant | 0 | 0 | The paper studies a drug-herb interaction (rooibos extract) in rats, not a pharmacogenomic effect of a gene variant on a PK/PD parameter. |
-| PGx | Pawar_2026 | not_relevant | 0 | 0 | The paper studies drug-herb interactions (CYP2D6 inhibition by bergamottin/diosmetin) affecting amoxapine, not the pharmacogenomics of hippocastani_semen. |
-| popPK | Peña-Lorenzo_2025 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of isavuconazole, not hippocastani_semen. |
+| PGx | Patel_2019 | not_relevant | 0 | 0 | The paper studies a drug-herb interaction (Green Rooibos Extract with Atorvastatin/Metformin) in rats, not a pharmacogenomic effect on Hippocastani semen. |
+| PGx | Pawar_2026 | not_relevant | 0 | 0 | The paper investigates drug-herb interactions (CYP2D6 inhibition by bergamottin/diosmetin) affecting amoxapine, not the pharmacogenomics of hippocastani_semen. |
+| popPK | Peña-Lorenzo_2025 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of isavuconazole, not hippocastani_semen. |
 | PD | Phelouzat_1993 | not_relevant | 0 | 0 | The paper characterizes sinefungin-resistant Leishmania donovani and does not involve the drug Hippocastani semen or report any pharmacodynamic parameters. |
-| PGx | Pilkington_1992 | not_relevant | 0 | 0 | The paper reviews the pharmacology of acitretin and does not mention hippocastani_semen or any pharmacogenomic effects. |
-| PGx | Pottier_2016 | not_relevant | 0 | 0 | Paper concerns metoclopramide and P-gp inhibition in rats, not hippocastani_semen or gene variants. |
-| PGx | Pérez-Gómez_2025 | not_relevant | 0 | 0 | The paper concerns ibrutinib, not hippocastani_semen; no pharmacogenomic effect on a PK/PD parameter of hippocastani_semen is reported. |
-| PGx | Qian_2024 | not_relevant | 0 | 0 | The study investigates metoprolol, not hippocastani_semen. |
-| popPK | Qin_2025 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of linezolid, not hippocastani_semen. |
-| popPK | Racké_1990 | irrelevant | 0 | 0 | The paper is an in-vitro mechanistic study on opioid receptors and dopamine release in rat pituitary glands, unrelated to the pharmacokinetics of hippocastani_semen. |
+| PGx | Pilkington_1992 | not_relevant | 0 | 0 | The paper reviews the pharmacology of acitretin, not hippocastani_semen, and does not report pharmacogenomic effects. |
+| PGx | Pottier_2016 | not_relevant | 0 | 0 | The paper studies metoclopramide, not hippocastani_semen. |
+| PGx | Pérez-Gómez_2025 | not_relevant | 0 | 0 | The paper studies ibrutinib, not hippocastani_semen. |
+| PGx | Qian_2024 | not_relevant | 0 | 0 | The study investigates the pharmacogenomics of metoprolol, not hippocastani_semen. |
+| popPK | Qin_2025 | irrelevant | 0 | 0 | The study reports pharmacokinetic parameters for linezolid, not hippocastani_semen. |
+| popPK | Racké_1990 | irrelevant | 0 | 0 | The study investigates opioid receptor antagonists and dopamine release in rat pituitary glands in vitro, with no mention of hippocastani_semen or its pharmacokinetics. |
 | PD | Racké_1990 | not_relevant | 0 | 0 | The paper studies opioid receptor antagonists on dopamine release in rat pituitary glands and does not mention Hippocastani semen. |
 | PGx | Radeva-Llieva_2022 | not_relevant | 0 | 0 | The paper studies drug-herb interactions involving sildenafil, not the pharmacogenomics of hippocastani_semen. |
 | PGx | Raichura_2025 | not_relevant | 0 | 0 | The paper evaluates P450 inhibition by Withania somnifera (ashwagandha), not hippocastani_semen, and does not report pharmacogenomic effects. |
-| popPK | Rao_2024 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of vancomycin, not hippocastani_semen. |
+| popPK | Rao_2024 | irrelevant | 0 | 0 | The study reports pharmacokinetic parameters for vancomycin, not hippocastani_semen. |
 | PD | Rao_2025 | not_relevant | 0 | 0 | The paper focuses on the pharmacokinetics of imipenem and its exposure-response relationship (PK/PD indices like fAUC/MIC) for bacterial clearance, not on the drug 'Hippocastani semen'. |
 | PGx | Rasmussen_1994 | not_relevant | 0 | 0 | The paper describes an analytical method for theophylline metabolites and does not involve hippocastani_semen or report pharmacogenomic effects. |
-| PGx | Rasmussen_2000 | not_relevant | 3 | 2 | Mentions CYP2D6/CYP2C19 polymorphism affecting SSRI metabolism generally, but no quantitative PK/PD effect for any specific drug, and hippocastani_semen is not addressed. |
-| PGx | Rasmussen_2026 | not_relevant | 0 | 0 | The paper concerns imatinib pharmacokinetics, not hippocastani_semen, so no pharmacogenomic effect on the queried drug's PK/PD parameters is reported. |
-| PGx | Raynaud_1993 | not_relevant | 0 | 0 | Paper describes an HPLC assay and mouse PK of 1069C85 with no genetic variant/genotype effects on PK or PD. |
+| PGx | Rasmussen_2000 | not_relevant | 0 | 0 | The paper discusses SSRIs and does not mention hippocastani_semen. |
+| PGx | Rasmussen_2026 | not_relevant | 0 | 0 | The paper studies imatinib, not hippocastani_semen. |
+| PGx | Raynaud_1993 | not_relevant | 0 | 0 | The paper describes an HPLC assay for a novel microtubule inhibitor (1069C85) and its PK in mice, but does not involve the drug hippocastani_semen or any pharmacogenomic analysis. |
 | PGx | Razaq_2026 | not_relevant | 0 | 0 | The paper investigates clopidogrel, not hippocastani_semen. |
-| popPK | Rehani_1979 | irrelevant | 0 | 0 | The paper describes a radiometric measurement device and does not contain any pharmacokinetic data for hippocastani_semen. |
-| PGx | Ridtitid_2007 | not_relevant | 0 | 0 | Reports a drug-drug interaction (ketoconazole–praziquantel), not a pharmacogenomic effect of a gene variant on PK/PD. |
+| popPK | Rehani_1979 | irrelevant | 0 | 0 | The paper describes a new container geometry for radiometric measurements and does not report any pharmacokinetic parameters for hippocastani_semen. |
+| PGx | Ridtitid_2007 | not_relevant | 0 | 0 | The paper studies a drug-drug interaction (ketoconazole and praziquantel), not a pharmacogenomic effect, and does not involve hippocastani_semen. |
 | PGx | Robbins_1995 | not_relevant | 0 | 0 | The paper studies the antiviral drug PMEA, not hippocastani_semen. |
 | PGx | Roberts_1995 | not_relevant | 0 | 0 | The study investigates the effects of ethanol withdrawal on CYP450 enzymes in rats and does not involve the drug hippocastani_semen or any pharmacogenomic analysis of its PK/PD parameters. |
-| popPK | Rodrigues_2024 | irrelevant | 0 | 0 | The paper studies the antiviral and antifungal activity of a plant extract (Byrsonima coccolobifolia) and does not involve the drug hippocastani_semen or any pharmacokinetic parameters. |
+| popPK | Rodrigues_2024 | irrelevant | 0 | 0 | The study investigates the antiviral and antifungal activity of a plant extract (Byrsonima coccolobifolia) and does not involve the drug hippocastani_semen or any pharmacokinetic parameters. |
 | popPK | Rohatagi_1995 | irrelevant | 0 | 0 | no_text gate: only 125 chars of text extracted (&lt; 400) |
-| PGx | Rohr_2024 | not_relevant | 0 | 0 | The paper investigates drug-drug interactions (ritonavir with FXa inhibitors) and CYP enzyme activity, but does not report pharmacogenomic effects (gene variants) on the PK/PD of hippocastani_semen. |
-| popPK | Rolsma_2026 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of cefepime, not hippocastani_semen. |
-| popPK | Rosseel_1984 | irrelevant | 0 | 0 | The study reports pharmacokinetic parameters for ciramadol, not hippocastani_semen. |
-| PGx | Rusakov_1991 | not_relevant | 0 | 0 | Paper concerns an insulin-like substance from a mollusk, not pharmacogenomics of hippocastani semen. |
-| PGx | Ryu_2024 | not_relevant | 0 | 0 | Paper studies perillyl alcohol effects on CYP enzymes, not hippocastani semen, and involves no gene variant/genotype/phenotype pharmacogenomic effect. |
+| PGx | Rohr_2024 | not_relevant | 0 | 0 | The paper investigates drug-drug interactions (ritonavir with FXa inhibitors) and does not report pharmacogenomic effects on the PK/PD of hippocastani_semen. |
+| popPK | Rolsma_2026 | irrelevant | 0 | 0 | The study reports population pharmacokinetic parameters for cefepime, not hippocastani_semen. |
+| popPK | Rosseel_1984 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of ciramadol, not hippocastani_semen. |
+| PGx | Rusakov_1991 | not_relevant | 0 | 0 | The paper describes the biochemical properties of an insulin-like substance from a mollusk and is unrelated to the pharmacogenomics of hippocastani_semen. |
+| PGx | Ryu_2024 | not_relevant | 0 | 0 | The paper investigates the effect of perillyl alcohol on CYP enzymes, not the pharmacokinetics or pharmacodynamics of hippocastani_semen. |
 | PD | Sadaka_2025 | not_relevant | 2 | 1 | The paper reports PK data (concentrations vs. renal function) and clinical outcomes, but does not model or report a quantitative exposure-response or dose-response relationship (e.g., Emax, EC50, or effect vs. concentration curve) for the drug. |
 | popPK | Sadan_2024 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of nicardipine, not hippocastani_semen. |
 | PGx | Saleh_2024 | not_relevant | 0 | 0 | The paper studies valproic acid and carbamazepine, not hippocastani_semen. |
-| PGx | Salem_2014 | not_relevant | 0 | 0 | The paper concerns efavirenz, not hippocastani_semen, so no pharmacogenomic effect on that drug's PK/PD parameters is reported. |
-| popPK | Sam_2010 | irrelevant | 0 | 0 | The study reports pharmacokinetic parameters for mycophenolic acid (MPA), not hippocastani_semen. |
-| PGx | Sangüesa_2022 | not_relevant | 0 | 0 | Paper concerns clozapine/valproic acid PK and UGT2B10 genotype, not hippocastani_semen. |
-| PGx | Sauer_2009 | not_relevant | 0 | 0 | Paper identifies CYP enzymes metabolizing designer drugs PCEEA/PCMEA, not hippocastani_semen, and reports no gene variant/genotype effects on PK/PD parameters. |
-| popPK | Schepp_1994 | irrelevant | 0 | 0 | The paper studies exendin-4 and GLP-1 receptor pharmacology in rat parietal cells and does not involve hippocastani_semen or pharmacokinetic parameters. |
+| PGx | Salem_2014 | not_relevant | 0 | 0 | The paper reports pharmacogenomic effects for efavirenz, not hippocastani_semen. |
+| popPK | Sam_2010 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of mycophenolic acid (MPA), not hippocastani_semen. |
+| PGx | Sangüesa_2022 | not_relevant | 0 | 0 | The paper studies clozapine and valproic acid, not hippocastani_semen. |
+| PGx | Santos_2024 | not_relevant | 0 | 0 | The paper reports pharmacogenomic effects for rivaroxaban, not hippocastani_semen. |
+| PGx | Sauer_2009 | not_relevant | 0 | 0 | The paper investigates the metabolism of designer drugs (PCEEA and PCMEA), not hippocastani_semen. |
+| popPK | Schepp_1994 | irrelevant | 0 | 0 | no_text gate: only 142 chars of text extracted (&lt; 400) |
 | PD | Scott_2022 | not_relevant | 0 | 0 | The paper describes the validation of an LC-MS/MS method for vistusertib and does not contain any pharmacodynamic or exposure-response data. |
-| PGx | Seng_2014 | not_relevant | 0 | 0 | The paper concerns midazolam PK, not hippocastani_semen, so no pharmacogenomic effect on the target drug's PK/PD parameters is reported. |
-| popPK | Shah_2025 | irrelevant | 0 | 0 | This is a population-PK study of clarithromycin, not hippocastani_semen; no parameters for the subject drug appear. |
-| PGx | Shang_2018 | not_relevant | 0 | 0 | The paper investigates food and grapefruit juice interactions with blonanserin, not the pharmacogenomics of hippocastani_semen. |
+| PGx | Seng_2014 | not_relevant | 0 | 0 | The paper reports pharmacogenomic effects for midazolam, not hippocastani_semen. |
+| popPK | Shah_2025 | irrelevant | 0 | 0 | The study reports pharmacokinetic parameters for clarithromycin, not hippocastani_semen. |
+| PGx | Shang_2018 | not_relevant | 0 | 0 | The paper investigates food and grapefruit juice interactions, not pharmacogenomic effects, and the drug is blonanserin, not hippocastani_semen. |
 | popPK | Shi_1995 | irrelevant | 0 | 0 | no_text gate: only 35 chars of text extracted (&lt; 400) |
 | PD | Shi_1995 | not_relevant | 0 | 0 | The provided text is only a title and does not contain the full text or any numeric PD parameters, curves, or analysis results. |
-| PGx | Shi_2021 | not_relevant | 0 | 0 | Study examines drug-drug (avitinib-CYP450) interactions, not gene variant/genotype effects on hippocastani_semen PK/PD. |
-| PGx | Shibata_2023 | not_relevant | 0 | 0 | The paper studies capecitabine, not hippocastani_semen. |
+| PGx | Shi_2021 | not_relevant | 0 | 0 | The paper studies the effect of the drug avitinib on CYP450 enzymes, not the effect of a gene variant on the pharmacokinetics of hippocastani_semen. |
+| PGx | Shibata_2023 | not_relevant | 0 | 0 | The paper reports pharmacogenomic effects for capecitabine, not hippocastani_semen. |
 | PGx | Shilbayeh_2024 | not_relevant | 0 | 0 | The paper reports pharmacogenomic effects on risperidone, not hippocastani_semen. |
 | popPK | Sierosławska_2010 | irrelevant | 0 | 0 | no_text gate: only 82 chars of text extracted (&lt; 400) |
 | PD | Sierosławska_2010 | not_relevant | 0 | 0 | The paper discusses cyanobacterial toxicity in a reservoir and does not mention Hippocastani semen or report any pharmacodynamic or exposure-response data. |
 | PGx | Sindrup_1993 | not_relevant | 0 | 0 | The paper studies citalopram, not hippocastani_semen. |
 | PD | Sitthiangkool_2026 | not_relevant | 0 | 0 | PK-only non-compartmental study of florfenicol in crocodiles; no effect/concentration-response data or PD parameters reported. |
-| PGx | Smeets_2022 | not_relevant | 0 | 0 | Effect is inflammation (IL-6) on midazolam PK, not a gene variant/genotype/phenotype, and drug is not hippocastani_semen. |
-| PGx | Smith_2024 | not_relevant | 0 | 5 | The paper concerns solanidine (a potato-derived CYP2D6 biomarker), not hippocastani_semen (horse chestnut), so no PGx effect on that drug's PK/PD is reported. |
+| PGx | Smeets_2022 | not_relevant | 0 | 0 | The paper investigates the effect of inflammation (IL-6) on midazolam pharmacokinetics, not a pharmacogenomic effect, and does not involve the drug hippocastani_semen. |
+| PGx | Smith_2024 | not_relevant | 0 | 0 | The paper investigates the pharmacogenomics of solanidine, not hippocastani_semen. |
 | popPK | Solana-Altabella_2025 | irrelevant | 0 | 0 | The study reports pharmacokinetic parameters for quizartinib, not hippocastani_semen. |
 | PGx | Someya_1990 | not_relevant | 0 | 0 | The paper studies haloperidol, not hippocastani_semen. |
 | PGx | Song_2022 | not_relevant | 0 | 0 | The paper investigates the pharmacogenomics of sorafenib, not hippocastani_semen. |
 | PGx | Spigset_1995 | not_relevant | 0 | 0 | The paper studies fluvoxamine, not hippocastani_semen. |
 | PGx | Stocco_2015 | not_relevant | 0 | 0 | The paper investigates thiopurines and aminosalicylates, not hippocastani_semen. |
-| PGx | Sugiarto_2022 | not_relevant | 0 | 0 | The paper concerns artemether-lumefantrine, not hippocastani_semen, so no pharmacogenomic effect on that drug's PK/PD parameters is reported. |
-| PGx | Sugimura_1991 | not_relevant | 0 | 0 | Paper discusses cancer molecular epidemiology biomarkers; no pharmacogenomic effects on PK/PD parameters of hippocastani_semen. |
+| PGx | Sugiarto_2022 | not_relevant | 0 | 0 | The paper studies the pharmacokinetics of artemether-lumefantrine, not hippocastani_semen. |
+| PGx | Sugimura_1991 | not_relevant | 0 | 0 | The paper discusses molecular epidemiology of cancer and general genetic markers for xenobiotic metabolism, but does not report pharmacogenomic effects on PK/PD parameters for hippocastani_semen. |
 | PGx | Sugiyama_2010 | not_relevant | 0 | 0 | The paper reports pharmacogenomic effects on gemcitabine, not hippocastani_semen. |
-| PGx | Sun_2023 | not_relevant | 0 | 0 | In vitro CYP450 inhibition study of lekethromycin in dog liver microsomes; no gene variant/genotype/phenotype effect on PK/PD parameters. |
-| PGx | Sun_2025 | not_relevant | 0 | 0 | The paper reports pharmacogenomic effects for imatinib, not hippocastani_semen. |
-| popPK | Sun_2025_2 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of piperacillin, not hippocastani_semen. |
+| PGx | Sun_2023 | not_relevant | 0 | 0 | The paper studies the inhibitory effects of Lekethromycin on CYP450 enzymes in dogs and does not involve the drug 'hippocastani_semen' or any pharmacogenomic analysis. |
+| PGx | Sun_2025 | not_relevant | 0 | 0 | The paper investigates pharmacogenomics for imatinib, not hippocastani_semen. |
+| popPK | Sun_2025_2 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of piperacillin, not hippocastani_semen. |
 | PGx | Sundell_2020 | not_relevant | 0 | 0 | The paper reports pharmacogenomics for ethambutol, not hippocastani_semen. |
 | PGx | Sundell_2022 | not_relevant | 0 | 0 | The paper studies the pharmacogenetics of Isoniazid and Rifampin, not hippocastani_semen. |
-| popPK | Sunnåker_2026 | irrelevant | 0 | 0 | This is a population-PK study of mitiperstat, not hippocastani_semen; no parameters for the subject drug are present. |
-| popPK | Suthahar_2026 | irrelevant | 0 | 0 | This is a systematic review of population-PK models for 5-fluorouracil, not for hippocastani_semen (horse chestnut), which is not mentioned at all. |
-| PGx | Sychev_2026 | not_relevant | 0 | 5 | The paper concerns rivaroxaban, not hippocastani semen, so no pharmacogenomic effect on a PK/PD parameter of the specified drug is reported. |
+| popPK | Sunnåker_2026 | irrelevant | 0 | 0 | The paper reports population pharmacokinetic parameters for mitiperstat, not hippocastani_semen. |
+| popPK | Suthahar_2026 | irrelevant | 0 | 0 | The paper is a systematic review of population pharmacokinetic models for 5-fluorouracil (5-FU), not hippocastani_semen. |
+| PGx | Sychev_2026 | not_relevant | 0 | 0 | The paper studies Rivaroxaban, not hippocastani_semen. |
 | PGx | Szabó_2024 | not_relevant | 0 | 0 | The paper studies cariprazine, not hippocastani_semen. |
-| PGx | Szkutnik-Fiedler_2024 | not_relevant | 0 | 0 | This is a drug–drug interaction study (OLA/REG) in rats with no gene variant, genotype, or pharmacogenomic effect on hippocastani_semen PK/PD. |
-| PGx | Sánchez-Bayona_2025 | not_relevant | 0 | 0 | Review covers pharmacogenomics of cancer drugs (tamoxifen, fluoropyrimidines, irinotecan), not hippocastani_semen. |
+| PGx | Szkutnik-Fiedler_2024 | not_relevant | 0 | 0 | The paper reports a drug-drug interaction between olaparib and regorafenib, not a pharmacogenomic effect on hippocastani_semen. |
+| PGx | Sánchez-Bayona_2025 | not_relevant | 0 | 0 | The paper reviews pharmacogenomics for cancer drugs (tamoxifen, fluoropyrimidines, etc.) and does not mention hippocastani_semen. |
 | PGx | Sánchez_2011 | not_relevant | 0 | 0 | The paper reports pharmacogenomic effects for efavirenz, not hippocastani_semen. |
-| PGx | Takahashi_2026 | not_relevant | 0 | 0 | Paper concerns asciminib in CML patients, not hippocastani semen; no pharmacogenomic PK/PD data for the queried substance. |
-| popPK | Tamura_2023 | irrelevant | 0 | 0 | The paper reports PopPK parameters for remdesivir/GS-441524, not for hippocastani_semen; no horse chestnut (Aesculus hippocastanum) data appear. |
-| popPK | Tan_2026 | irrelevant | 0 | 0 | This is a population-PK study of 5-fluorouracil in humans; hippocastani_semen is not mentioned at all. |
+| PGx | Takahashi_2026 | not_relevant | 0 | 0 | The paper reports pharmacogenomic effects for asciminib, not hippocastani_semen. |
+| popPK | Tamura_2023 | irrelevant | 0 | 0 | The study reports pharmacokinetic parameters for remdesivir and its metabolite GS-441524, not for hippocastani_semen. |
+| popPK | Tan_2026 | irrelevant | 0 | 0 | The paper reports population pharmacokinetic parameters for 5-fluorouracil, not hippocastani_semen. |
 | popPK | Tang_2024 | irrelevant | 0 | 0 | no_text gate: only 142 chars of text extracted (&lt; 400) |
 | PD | Tang_2024 | not_relevant | 0 | 0 | The paper focuses on the immobilization of Coprinus comatus and antioxidant activity, containing no pharmacodynamic or exposure-response data for Hippocastani semen. |
-| popPK | Tang_2026 | irrelevant | 0 | 0 | The study reports population-PK parameters for remimazolam, not hippocastani_semen; no hippocastani_semen data appear. |
-| popPK | Teixeira_2026 | irrelevant | 0 | 0 | The study reports PopPK parameters for meloxicam in dogs, not for hippocastani_semen (horse chestnut), which is not the subject drug. |
-| PGx | Tham_2007 | not_relevant | 0 | 0 | Paper concerns docetaxel PK, not hippocastani semen; no pharmacogenomic effect on its PK/PD parameters. |
-| popPK | Tharasse-Bloch_1989 | irrelevant | 0 | 0 | The paper reports PK of ambenonium chloride in dogs, not hippocastani_semen, and no numeric parameters are present. |
-| popPK | Thomas_2026 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of isoniazid, not hippocastani_semen. |
+| popPK | Tang_2026 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of remimazolam, not hippocastani_semen. |
+| popPK | Teixeira_2026 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of meloxicam in dogs, not hippocastani_semen. |
+| PGx | Tham_2007 | not_relevant | 0 | 0 | The paper studies docetaxel, not hippocastani_semen. |
+| popPK | Tharasse-Bloch_1989 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of ambenonium chloride, not hippocastani_semen. |
+| popPK | Thomas_2026 | irrelevant | 0 | 0 | The study reports pharmacokinetic parameters for isoniazid, not hippocastani_semen. |
 | PGx | Thomas_2026 | not_relevant | 0 | 0 | The paper reports pharmacogenomic effects for isoniazid, not hippocastani_semen. |
+| PGx | Thomas_2026_2 | not_relevant | 0 | 0 | The paper studies the pharmacogenetics of venlafaxine, not hippocastani_semen. |
 | PGx | Thomford_2025 | not_relevant | 0 | 0 | The paper investigates pharmacogenomic effects on dolutegravir and artemether-lumefantrine, not hippocastani_semen. |
-| PGx | Thompson_2014 | not_relevant | 0 | 0 | The paper concerns daunorubicin pharmacogenomics, not hippocastani_semen, so no PGx effect on that drug's PK/PD is reported. |
-| PGx | Tlaye_2025 | not_relevant | 3 | 3 | Paper concerns aspirin, not hippocastani_semen, and reports no fitted pharmacogenomic effect on PK/PD parameters. |
+| PGx | Thompson_2014 | not_relevant | 0 | 0 | The paper reports pharmacogenomics for daunorubicin, not hippocastani_semen. |
+| PGx | Tlaye_2025 | not_relevant | 0 | 0 | The paper studies aspirin, not hippocastani_semen. |
 | popPK | Tognolini_2025 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of lidocaine, not hippocastani_semen. |
-| popPK | Trikha_1994 | irrelevant | 0 | 0 | The paper describes the purification and characterization of snake venom enzymes (fibrolase) and contains no pharmacokinetic data for hippocastani_semen. |
+| popPK | Trikha_1994 | irrelevant | 0 | 0 | no_text gate: only 143 chars of text extracted (&lt; 400) |
 | PD | Trikha_1994 | not_relevant | 0 | 0 | The paper reports enzymatic activity (EC50) for snake venom fibrolase isoforms, not a pharmacodynamic or exposure-response relationship for Hippocastani semen. |
 | PD | Trozzi_2026 | not_relevant | 0 | 0 | This is a bioanalytical assay validation/TDM quantification paper; no concentration-effect or dose-response relationship or PD parameters are reported. |
 | PGx | Tsuchiya_2025 | not_relevant | 0 | 0 | The paper reports pharmacogenomic effects for tenofovir alafenamide, not hippocastani_semen. |
-| PGx | Tybring_2001 | not_relevant | 0 | 5 | The paper concerns losartan, not hippocastani_semen, so no pharmacogenomic effect on that drug's PK/PD parameters is reported. |
+| PGx | Tybring_2001 | not_relevant | 0 | 0 | The paper studies losartan, not hippocastani_semen. |
 | PD | Töugu_1995 | not_relevant | 0 | 0 | The paper studies the kinetics of peptide synthesis by chymotrypsin in frozen solutions, not the pharmacodynamics of Hippocastani semen. |
 | PGx | Udomsawaengsup_2025 | not_relevant | 0 | 0 | The paper studies the pharmacokinetics of lansoprazole, not hippocastani_semen. |
 | popPK | Upton_2025 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of cycloserine (terizidone) and clofazimine, not hippocastani_semen. |
 | popPK | Vandecasteele-Thienpont_1980 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of bromhexine, not hippocastani_semen. |
-| popPK | Varela-González-Aller_2025 | irrelevant | 0 | 0 | This is a population PK study of fludarabine, not hippocastani_semen; no parameters for the subject drug appear. |
+| popPK | Varela-González-Aller_2025 | irrelevant | 0 | 0 | The study reports pharmacokinetic parameters for fludarabine, not hippocastani_semen. |
 | PD | Vignal_2025 | not_relevant | 0 | 0 | The paper describes a bioanalytical method for drug quantification and does not report any pharmacodynamic or exposure-response data for Hippocastani semen or any other drug. |
-| PGx | Wada_2023 | not_relevant | 2 | 0 | The population PK analysis of sparsentan tests covariates like sex, race, CrCL, ALKP, and CYP3A4 inhibitor co-medication, but no gene variant/genotype/phenotype effects on PK parameters are reported. |
+| PGx | Wada_2023 | not_relevant | 0 | 0 | The paper analyzes the pharmacokinetics of sparsentan, not hippocastani_semen. |
 | PGx | Wang_2014 | not_relevant | 0 | 0 | The paper studies sirolimus, not hippocastani_semen. |
-| popPK | Wang_2019 | irrelevant | 0 | 0 | This is a population PK study of clofarabine, not hippocastani_semen; no parameters for the subject drug are present. |
+| popPK | Wang_2019 | irrelevant | 0 | 0 | The study reports pharmacokinetic parameters for clofarabine, not hippocastani_semen. |
 | PGx | Wang_2021 | not_relevant | 0 | 0 | The paper investigates the pharmacokinetics of pralsetinib, not hippocastani_semen. |
 | popPK | Wang_2024 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics and pharmacodynamics of tulathromycin, not hippocastani_semen. |
-| PGx | Wang_2025 | not_relevant | 0 | 0 | The paper concerns citalopram, not hippocastani_semen, so no pharmacogenomic effect on that drug's PK/PD parameters is reported. |
+| PGx | Wang_2025 | not_relevant | 0 | 0 | The paper studies the pharmacogenomics of citalopram, not hippocastani_semen. |
 | PGx | Wang_2025_2 | not_relevant | 0 | 0 | The paper studies dabrafenib, not hippocastani_semen. |
 | PD | Wang_2025_3 | not_relevant | 0 | 0 | The paper describes the development and validation of an LC-MS/MS method for quantifying omadacycline in plasma and does not report any pharmacodynamic (PD) or exposure-response analysis, nor does it provide numeric PD parameters. |
-| popPK | Wang_2026_2 | irrelevant | 0 | 0 | The paper is a population-PK model library for polymyxin B, a different drug; no hippocastani_semen parameters are reported. |
+| popPK | Wang_2026_2 | irrelevant | 0 | 0 | The paper is a population pharmacokinetic model library for polymyxin B, not hippocastani_semen. |
+| PGx | Watanabe_2023 | not_relevant | 0 | 0 | The paper investigates the pharmacogenomics of asparaginase, not hippocastani_semen. |
 | PGx | Waterborg_1993 | not_relevant | 0 | 0 | The paper studies histone synthesis in alfalfa and does not involve pharmacogenomics or the drug hippocastani_semen. |
 | PGx | Wei_2022 | not_relevant | 0 | 0 | The paper studies the pharmacokinetics of mycophenolate mofetil, not hippocastani_semen. |
-| PGx | Wei_2024 | not_relevant | 0 | 0 | Paper concerns topiramate, not hippocastani_semen, so no pharmacogenomic effect on this drug's PK/PD parameters is reported. |
+| PGx | Wei_2024 | not_relevant | 0 | 0 | The paper reports pharmacogenomics for topiramate, not hippocastani_semen. |
 | PGx | Wolf_1993 | not_relevant | 0 | 0 | The paper investigates the mechanism of tamoxifen resistance in breast cancer and does not involve the drug hippocastani_semen or any pharmacogenomic analysis. |
-| PGx | Wong_2006 | not_relevant | 0 | 0 | Paper concerns vinorelbine PK/PD, not hippocastani_semen; no pharmacogenomic effect for the queried drug. |
+| PGx | Wong_2006 | not_relevant | 0 | 0 | The paper studies vinorelbine, not hippocastani_semen. |
 | popPK | Wu_2024 | irrelevant | 0 | 0 | The study reports population pharmacokinetic parameters for daptomycin, not hippocastani_semen. |
 | PGx | Wu_2025 | not_relevant | 0 | 0 | The paper reports pharmacogenomic effects for voriconazole, not hippocastani_semen. |
 | PGx | Wurtz_1985 | not_relevant | 0 | 0 | The paper studies glucocorticoid action on chromatin and MMTV RNA in mouse cells, not the pharmacokinetics or pharmacodynamics of hippocastani_semen. |
 | PGx | Xia_2026 | not_relevant | 0 | 0 | The paper investigates trimethoprim, not hippocastani_semen. |
 | PGx | Xie_1995 | not_relevant | 0 | 0 | The paper describes an analytical method for mephenytoin metabolism and does not involve the drug hippocastani_semen. |
-| popPK | Xie_2026 | irrelevant | 0 | 0 | This is a population-PK review/model evaluation of daptomycin, not hippocastani_semen; no horse chestnut parameters are reported. |
+| popPK | Xie_2026 | irrelevant | 0 | 0 | The paper is a review of population pharmacokinetic models for daptomycin, not hippocastani_semen. |
 | popPK | Xu_2018 | irrelevant | 0 | 0 | no_text gate: only 65 chars of text extracted (&lt; 400) |
 | PD | Xu_2018 | not_relevant | 0 | 0 | The paper focuses on the isolation and antioxidant activity of triterpenoids from Myricaria squamosa, not on the pharmacodynamics or exposure-response of Hippocastani semen. |
 | PGx | Xu_2023 | not_relevant | 0 | 0 | The study investigates the pharmacogenomics of aripiprazole, not hippocastani_semen. |
-| popPK | Xu_2023_2 | irrelevant | 0 | 0 | The study is a population-PK analysis of doxorubicin/PLD, not hippocastani_semen; no parameters for the subject drug are present. |
+| popPK | Xu_2023_2 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of doxorubicin, not hippocastani_semen. |
 | PGx | Xu_2024 | not_relevant | 0 | 0 | The paper studies nirmatrelvir/ritonavir, not hippocastani_semen. |
-| popPK | Xu_2025 | irrelevant | 0 | 0 | The paper reports population PK parameters for enrofloxacin in largemouth bass, not for hippocastani_semen (horse chestnut), which is not mentioned at all. |
-| popPK | Xu_2026 | irrelevant | 0 | 0 | The paper reports population-PK parameters for polymyxin B, not hippocastani_semen; no hippocastani_semen data appear anywhere in the evidence. |
-| PGx | Xue_2017 | not_relevant | 0 | 0 | The paper studies warfarin, not hippocastani_semen. |
-| PGx | Xue_2025 | not_relevant | 0 | 0 | The paper reports pharmacogenomic effects for tamoxifen, not hippocastani_semen. |
+| popPK | Xu_2025 | irrelevant | 0 | 0 | The study reports population pharmacokinetic parameters for enrofloxacin in largemouth bass, not for hippocastani_semen. |
+| popPK | Xu_2026 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of polymyxin B, not hippocastani_semen. |
+| PGx | Xue_2017 | not_relevant | 0 | 0 | The paper reports pharmacogenomic effects for warfarin, not hippocastani_semen. |
+| PGx | Xue_2025 | not_relevant | 0 | 0 | The paper studies the pharmacogenomics of tamoxifen/endoxifen, not hippocastani_semen. |
 | PGx | Yang_2023 | not_relevant | 0 | 0 | The paper reports pharmacogenomics for apatinib, not hippocastani_semen. |
 | PGx | Yang_2023_2 | not_relevant | 0 | 0 | The paper studies oxcarbazepine, not hippocastani_semen. |
-| PGx | Yang_2024 | not_relevant | 0 | 5 | The paper concerns lamotrigine, not hippocastani_semen, so no pharmacogenomic effect on that drug's PK/PD parameters is reported. |
-| popPK | Yang_2025 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of polymyxin B, not hippocastani_semen. |
-| PGx | Yang_2025_2 | not_relevant | 0 | 0 | This is a drug–drug interaction study (ritonavir–tofacitinib) in rats; no gene variant/genotype/phenotype effect on PK/PD is reported. |
-| PGx | Yaowaluk_2022 | not_relevant | 3 | 5 | The paper reports pharmacogenomic effects on galantamine PK/PD, but galantamine is not a drug of Hippocastani semen (horse chestnut), so the drug-source mismatch makes it not relevant. |
-| popPK | Yata_2026 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of sildenafil, not hippocastani_semen. |
+| PGx | Yang_2024 | not_relevant | 0 | 0 | The paper reports pharmacogenomic data for lamotrigine, not hippocastani_semen. |
+| popPK | Yang_2025 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of polymyxin B, not hippocastani_semen. |
+| PGx | Yang_2025_2 | not_relevant | 0 | 0 | The paper studies a drug-drug interaction (Ritonavir and Tofacitinib) in rats, not a pharmacogenomic effect on hippocastani_semen. |
+| PGx | Yaowaluk_2022 | not_relevant | 0 | 0 | The paper studies galantamine, not hippocastani_semen. |
+| popPK | Yata_2026 | irrelevant | 0 | 0 | The study reports pharmacokinetic parameters for sildenafil in dogs, not for hippocastani_semen. |
 | PGx | Ye_2022 | not_relevant | 0 | 0 | The paper investigates the pharmacogenomics of fluvoxamine, not hippocastani_semen. |
 | PGx | Ye_2024 | not_relevant | 0 | 0 | The paper studies tofacitinib, not hippocastani_semen. |
-| popPK | Yin_2026 | irrelevant | 0 | 0 | The paper is a population-PK study of ceftazidime in neonates, not of hippocastani_semen; no parameters for the subject drug appear. |
+| PGx | Yin_2006 | not_relevant | 0 | 0 | The paper studies citalopram, not hippocastani_semen. |
+| popPK | Yin_2026 | irrelevant | 0 | 0 | The study reports pharmacokinetic parameters for ceftazidime, not hippocastani_semen. |
 | PGx | Yong_2022 | not_relevant | 0 | 0 | The paper studies Strobilanthes crispus, not hippocastani_semen, and reports in vitro CYP inhibition without any pharmacogenomic analysis. |
-| popPK | Yoo_2016 | irrelevant | 0 | 0 | The paper investigates the cytotoxicity of ionic liquids and does not involve the drug hippocastani_semen or any pharmacokinetic parameters. |
+| popPK | Yoo_2016 | irrelevant | 0 | 0 | The paper investigates the molecular mechanisms of ionic liquid cytotoxicity in unicellular organisms and does not involve the drug hippocastani_semen or any pharmacokinetic parameters. |
 | PD | Yoo_2016 | not_relevant | 0 | 0 | The paper studies ionic liquids, not Hippocastani semen, and focuses on molecular mechanisms of membrane disruption rather than pharmacodynamic modeling of the specified drug. |
-| popPK | Yu_2026 | irrelevant | 0 | 0 | The paper reports population PK parameters for dexamethasone in horses, not for hippocastani_semen, which is not the subject drug. |
-| PGx | Yuan_2023 | not_relevant | 0 | 0 | Paper concerns ibuprofen metabolism, not hippocastani_semen; no pharmacogenomic effect on the queried drug. |
+| popPK | Yu_2026 | irrelevant | 0 | 0 | The study reports pharmacokinetic parameters for dexamethasone in horses, not for hippocastani_semen. |
+| PGx | Yuan_2023 | not_relevant | 0 | 0 | The paper studies ibuprofen, not hippocastani_semen. |
 | popPK | Zamri_2026 | irrelevant | 0 | 0 | The study reports population pharmacokinetic parameters for polymyxin B, not hippocastani_semen. |
-| PGx | Zhan_2023 | not_relevant | 0 | 0 | The paper investigates the inhibitory mechanism of vortioxetine on CYP450 enzymes in vitro and does not report any pharmacogenomic effects (gene variants) on PK/PD parameters for hippocastani_semen. |
-| popPK | Zhang_2011 | irrelevant | 0 | 0 | The paper studies flavonoids from Lupinus texensis for antioxidant activity and does not involve hippocastani_semen or pharmacokinetic parameters. |
-| PGx | Zhang_2018 | not_relevant | 0 | 0 | Paper concerns sunitinib, not hippocastani_semen; no pharmacogenomic effect on this drug's PK/PD parameters. |
+| PGx | Zhan_2023 | not_relevant | 0 | 0 | The paper investigates the inhibitory mechanism of vortioxetine on CYP450 enzymes in vitro and does not report any pharmacogenomic effects on the PK/PD of hippocastani_semen. |
+| popPK | Zhang_2011 | irrelevant | 0 | 0 | The paper describes the isolation and antioxidant activity of flavonoids from Lupinus texensis, not the pharmacokinetics of hippocastani_semen. |
+| PGx | Zhang_2014 | not_relevant | 0 | 0 | The paper reports pharmacogenomic effects for methotrexate, not hippocastani_semen. |
+| PGx | Zhang_2018 | not_relevant | 0 | 0 | The paper studies sunitinib, not hippocastani_semen. |
 | PGx | Zhang_2021 | not_relevant | 0 | 0 | The paper studies aripiprazole, not hippocastani_semen. |
-| PGx | Zhang_2022_2 | not_relevant | 0 | 5 | The paper concerns rivaroxaban, not hippocastani_semen, so no pharmacogenomic effect on that drug's PK/PD parameters is reported. |
-| PGx | Zhang_2024 | not_relevant | 0 | 0 | The paper investigates the pharmacogenomics of fluoxetine (CYP2D6 variants), not hippocastani_semen. |
-| PGx | Zhang_2024_2 | not_relevant | 0 | 0 | The paper studies the effect of high altitude environment on warfarin PK/PD, not a pharmacogenomic effect on hippocastani_semen. |
+| PGx | Zhang_2022 | not_relevant | 0 | 0 | The text describes a pharmacokinetic model for an unspecified drug (likely warfarin given the SNPs) but does not mention or report any data for hippocastani_semen. |
+| PGx | Zhang_2022_2 | not_relevant | 0 | 0 | The paper reports pharmacogenomic effects for rivaroxaban, not hippocastani_semen. |
+| PGx | Zhang_2024 | not_relevant | 0 | 0 | The paper studies the pharmacogenomics of fluoxetine, not hippocastani_semen. |
+| PGx | Zhang_2024_2 | not_relevant | 0 | 0 | The paper studies the effect of high altitude environment on warfarin, not a gene variant, and the drug is not hippocastani_semen. |
 | popPK | Zhang_2024_3 | irrelevant | 0 | 0 | The study reports population pharmacokinetic parameters for nirmatrelvir, not hippocastani_semen. |
-| popPK | Zhang_2025 | irrelevant | 0 | 0 | This is a systematic review of imipenem population PK; hippocastani_semen is not the subject drug and no parameters for it appear. |
+| popPK | Zhang_2025 | irrelevant | 0 | 0 | The paper is a systematic review of population pharmacokinetics for imipenem, not hippocastani_semen. |
 | PD | Zhang_2026 | not_relevant | 2 | 0 | The paper reports qualitative changes in seizure scores and PK parameters under high altitude but does not provide numeric PD parameters (e.g., Emax, EC50) or a quantitative concentration-effect relationship. |
 | PD | Zhang_2026_2 | not_relevant | 0 | 0 | The paper describes the development and validation of a bioanalytical method for quantifying MMAE and mentions its application to PK studies, but it does not report any pharmacodynamic data, exposure-response relationships, or numeric PD parameters. |
 | PGx | Zhang_2026_3 | not_relevant | 0 | 0 | The paper studies neratinib, not hippocastani_semen. |
-| popPK | Zhang_2026_4 | irrelevant | 0 | 0 | The paper is a population-PK study of linezolid in children, not of hippocastani_semen; no parameters for the subject drug appear. |
-| popPK | Zhang_2026_5 | irrelevant | 0 | 0 | The paper is about imipenem popPK model validation, not hippocastani_semen; no parameters for the subject drug appear. |
+| popPK | Zhang_2026_4 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of linezolid, not hippocastani_semen. |
+| popPK | Zhang_2026_5 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of imipenem, not hippocastani_semen. |
 | PGx | Zhao_2023 | not_relevant | 0 | 0 | The paper studies voriconazole, not hippocastani_semen. |
 | PGx | Zhao_2024 | not_relevant | 0 | 0 | The paper studies lacosamide, not hippocastani_semen. |
 | PGx | Zhao_2024_2 | not_relevant | 0 | 0 | The paper reports pharmacogenomic effects for lamotrigine, not hippocastani_semen. |
-| PGx | Zhao_2024_3 | not_relevant | 0 | 0 | The paper investigates a drug-drug interaction (metoprolol and Ginkgo) and does not report any pharmacogenomic effects (gene variants/genotypes) on PK or PD parameters. |
-| popPK | Zhao_2026 | irrelevant | 0 | 0 | The paper is a plant virology study on Cucumber Mosaic Virus and does not involve the drug hippocastani_semen or any pharmacokinetic parameters. |
+| PGx | Zhao_2024_3 | not_relevant | 0 | 0 | The paper studies the effect of Ginkgo tablets on metoprolol pharmacokinetics, not a pharmacogenomic effect on hippocastani_semen. |
+| popPK | Zhao_2026 | irrelevant | 0 | 0 | The paper studies plant virology and viral protein interactions, not the pharmacokinetics of hippocastani_semen. |
 | PD | Zhao_2026 | not_relevant | 0 | 0 | The paper studies plant virology and a small-molecule LLPS modulator (D3) against Cucumber Mosaic Virus, not the pharmacodynamics of Hippocastani semen. |
 | popPK | Zhao_2026_2 | irrelevant | 0 | 0 | no_text gate: only 135 chars of text extracted (&lt; 400) |
-| PGx | Zhou_2000 | not_relevant | 0 | 5 | The paper concerns DMXAA metabolism by CYP1A2, not hippocastani_semen, and no gene variant/genotype effect on PK/PD is reported. |
+| PGx | Zhou_2000 | not_relevant | 0 | 0 | The paper studies the metabolism of DMXAA, not hippocastani_semen. |
 | PD | Zhu_2023 | not_relevant | 0 | 0 | The paper studies Perilla Folium, not Hippocastani semen. |
-| PGx | Zientek_2008 | not_relevant | 0 | 0 | Paper describes a CYP DDI assay; no pharmacogenomic effect on hippocastani_semen PK/PD reported. |
-| popPK | Zou_2026 | irrelevant | 0 | 0 | This is a population-PK study of meropenem, not hippocastani_semen; no parameters for the subject drug are present. |
-| PGx | Zuo_2022 | not_relevant | 0 | 0 | The paper concerns eltrombopag, not hippocastani_semen, so no pharmacogenomic effect on PK/PD parameters of the specified substance is reported. |
+| PGx | Zientek_2008 | not_relevant | 0 | 0 | The paper describes a general in vitro CYP inhibition assay for drug-drug interactions and does not involve the drug hippocastani_semen or any pharmacogenomic analysis. |
+| popPK | Zou_2026 | irrelevant | 0 | 0 | The study reports pharmacokinetic parameters for meropenem, not hippocastani_semen. |
+| PGx | Zuo_2022 | not_relevant | 0 | 0 | The paper studies eltrombopag, not hippocastani_semen. |
+| PGx | Zyryanov_2022 | not_relevant | 0 | 0 | The paper studies the pharmacogenomics of ciprofloxacin, not hippocastani_semen. |
 | popPK | Zyryanov_2023 | irrelevant | 0 | 0 | The study reports pharmacokinetic parameters for meropenem, not hippocastani_semen. |
 | popPK | de_2013 | irrelevant | 0 | 0 | The paper studies mycotoxins and their cytotoxic effects on soybean cells, not the pharmacokinetics of hippocastani_semen. |
-| PGx | de_2026 | not_relevant | 0 | 0 | Paper concerns metoprolol, not hippocastani_semen; no PGx effect on PK/PD of the queried drug. |
-| PGx | ter_2008 | not_relevant | 0 | 0 | Paper concerns efavirenz pharmacogenetics, not hippocastani_semen. |
-| PGx | van_1999 | not_relevant | 0 | 0 | The paper studies the effect of grapefruit juice on artemether, not a gene variant on hippocastani_semen. |
+| PGx | de_2025 | not_relevant | 0 | 0 | The paper reports pharmacogenomic effects on fluoxetine, not hippocastani_semen. |
+| PGx | de_2026 | not_relevant | 0 | 0 | The paper studies metoprolol, not hippocastani_semen. |
+| PGx | ter_2008 | not_relevant | 0 | 0 | The paper studies efavirenz, not hippocastani_semen. |
+| PGx | van_1999 | not_relevant | 0 | 0 | The paper studies the effect of grapefruit juice on artemether, not a pharmacogenomic effect on hippocastani_semen. |
 | PGx | van_2024 | not_relevant | 0 | 0 | The paper studies the pharmacokinetics of docetaxel and midazolam, not hippocastani_semen. |
-| popPK | van_2026 | irrelevant | 0 | 0 | The paper concerns hydromethylthionine, not hippocastani_semen, and no numeric PK parameter values appear in the evidence. |
+| popPK | van_2026 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of hydromethylthionine (HMT), not hippocastani_semen. |
 
 ---
 <sub>Generated by `docs.py` (scholarv2)</sub>

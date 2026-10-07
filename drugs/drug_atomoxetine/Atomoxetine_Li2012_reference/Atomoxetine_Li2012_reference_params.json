@@ -1,0 +1,34 @@
+{
+ "dose_source": "WHO ATC DDD 80 mg oral (N06BA09)",
+ "model_id": "Atomoxetine_Li2012_reference",
+ "molar_masses": {
+  "central.C": 0.2553547
+ },
+ "note": "Values for the shared PK_2C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "parameters": {
+  "Cl": 0.00012619444444444443,
+  "F": 1.0,
+  "MM": 0.2553547,
+  "Tlag": 0.0,
+  "VdPerKg": 0.0129,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 8e-05,
+  "k12": 0.00017140396210163654,
+  "k21": 0.00038521099496709253,
+  "ka": 0.006722222222222222,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 1032.0253829510661
+ },
+ "reference_peaks": {
+  "central.C": 7.844697259556654e-05
+ },
+ "stop_time": 86400.0,
+ "template": "PK_2C_enteral",
+ "template_fmu": "PK_2C_enteral.fmu"
+}

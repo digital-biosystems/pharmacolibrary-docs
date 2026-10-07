@@ -1,0 +1,30 @@
+{
+ "dose_source": "library default",
+ "model_id": "Anakinra_Ngo2020_reference",
+ "note": "Values for the shared PK_2C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "parameters": {
+  "Cl": 5.7777777777777775e-08,
+  "F": 1.0,
+  "Tlag": 1123.2,
+  "VdPerKg": 0.00016142857142857145,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 0.0001,
+  "k12": 7.079646017699113e-07,
+  "k21": 1.5810276679841897e-06,
+  "ka": 0.0003361111111111111,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 7729.7241872083305
+ },
+ "reference_peaks": {
+  "central.C": 0.00599190137579044
+ },
+ "stop_time": 691200.0,
+ "template": "PK_2C_enteral",
+ "template_fmu": "PK_2C_enteral.fmu"
+}

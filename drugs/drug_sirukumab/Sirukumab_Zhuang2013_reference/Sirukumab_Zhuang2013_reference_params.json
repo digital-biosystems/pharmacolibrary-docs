@@ -1,0 +1,28 @@
+{
+ "dose_source": "library default",
+ "model_id": "Sirukumab_Zhuang2013_reference",
+ "note": "Values for the shared PK_1C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "parameters": {
+  "Cl": 6.25e-09,
+  "F": 1.0,
+  "Tlag": 0.0,
+  "VdPerKg": 0.00017428571428571428,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 0.0001,
+  "ka": 8.912037037037037e-06,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 343617.8192539235
+ },
+ "reference_peaks": {
+  "central.C": 0.006886174412112854
+ },
+ "stop_time": 7257600.0,
+ "template": "PK_1C_enteral",
+ "template_fmu": "PK_1C_enteral.fmu"
+}

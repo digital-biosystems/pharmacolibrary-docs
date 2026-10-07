@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N06A&quot;,&quot;href&quot;:&quot;atc/N06A.md&quot;},{&quot;label&quot;:&quot;fluvoxamine&quot;,&quot;href&quot;:&quot;drugs/drug_fluvoxamine/&quot;},{&quot;label&quot;:&quot;Strauss_1999 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Fluvoxamine_Strauss1999_reference&quot;,&quot;label&quot;:&quot;Strauss_1999_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_fluvoxamine/Fluvoxamine_Strauss1999_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Fluvoxamine_Chen2024_reference&quot;,&quot;label&quot;:&quot;Chen_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_fluvoxamine/Fluvoxamine_Chen2024_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Fluvoxamine_Chen2025_reference&quot;,&quot;label&quot;:&quot;Chen_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_fluvoxamine/Fluvoxamine_Chen2025_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Fluvoxamine_Eugene2021_reference&quot;,&quot;label&quot;:&quot;Eugene_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_fluvoxamine/Fluvoxamine_Eugene2021_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Fluvoxamine_Jiang2025_reference&quot;,&quot;label&quot;:&quot;Jiang_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_fluvoxamine/Fluvoxamine_Jiang2025_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Fluvoxamine_Strauss1999_reference&quot;,&quot;label&quot;:&quot;Strauss_1999_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_fluvoxamine/Fluvoxamine_Strauss1999_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Fluvoxamine_Yan2026_reference&quot;,&quot;label&quot;:&quot;Yan_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_fluvoxamine/Fluvoxamine_Yan2026_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # fluvoxamine — `Fluvoxamine_Strauss1999_reference`
 
-> ## <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: partial</span>
+> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: partial</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -25,15 +25,17 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on bioavai
 
 <sub>reviewed by rule template (no LLM)</sub>
 
+> ⚠️ **STALE** — review status `curated_candidate` (reviewed 2026-09-28 14:38:07.027878+00:00) predates the upstream re-run (2026-10-06 23:05:38.271525+00:00). Current validate status: `extracted`.
+
 ## Citation
 Strauss WL et al., Characterization of human brain pharmac…, Biological psychiatry (1999)
   ·  DOI: [10.1016/s0006-3223(98)00324-2](https://doi.org/10.1016/s0006-3223(98)00324-2)
 
 ## Model component
-<dbs-pgx drug="fluvoxamine" model-id="Fluvoxamine_Strauss1999_reference" status="curated_candidate" stale="false" population="adults" measured-compound="fluvoxamine" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<dbs-pgx drug="fluvoxamine" model-id="Fluvoxamine_Strauss1999_reference" status="extracted" stale="true" population="adults (human brain 19F MRS data)" measured-compound="fluvoxamine" parameterization="mechanistic" topology="1C"></dbs-pgx>
 
-**Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
-**Parameters:** 3 extracted.
+**Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
+**Parameters:** 4 extracted.
 
 **Parameterization:** mechanistic.
 
@@ -43,6 +45,7 @@ Strauss WL et al., Characterization of human brain pharmac…, Biological psychi
 | brain volume of distribution | `Q61` · V | 1.12 | L/kg | 0.07840000000000001 | [l] / [kg] | not captured | llm_confirmed (0.6) | Strauss_1999:abstract | — | not captured |
 | clearance | `Q22` · CL | 1.01 | L/hour | 2.8055555555555556e-07 | [l] / [h] | not captured | exact (1.0) | Strauss_1999:abstract | — | not captured |
 | bioavailability of fluvoxamine to the brain from plasma | `Q40` · Fab | 1.85 | not captured | not captured | not captured | not captured | llm_confirmed (0.6) | Strauss_1999:abstract | — | not captured |
+| Ka (h-1) | `Q49` · kabs | 1.46 | h-1 | 0.00040555555555555554 | 1/h | not captured | review_gapfill (0.7) | Chen_2024:review | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -51,11 +54,15 @@ Strauss WL et al., Characterization of human brain pharmac…, Biological psychi
 
 ## Departures & gaps
 
+**Deviations:**
+- `defaulted_parameters`: ['Tlag']
+
 **Interpretation flags:**
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=fluvoxamine
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
 - skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
 - skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
+- gap-filled Q49 (kabs) from Chen_2024's review values (primary lacked it)
 
 **Extraction notes:**
 - no GROBID TEI available — transcribed from abstract in Strauss_1999_metadata.yaml (3 record(s)); values are summary statistics, not a fitted model
@@ -94,6 +101,7 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Strauss_1999:abstract'] |
+| C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['Chen_2024:review'] |
 | C5_dimension_Q61 | pass | [length] ** 3 | not captured | not captured | not captured | ['Strauss_1999:abstract'] |
 | C6_cl_magnitude | pass | &lt;= 90.0 L/h | 1.01 | not captured | not captured | ['Strauss_1999:abstract'] |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
@@ -130,26 +138,26 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_fluvoxamine/Fluvoxamine_Strauss1999_reference/Fluvoxamine_Strauss1999_reference_modelica.zip" download>Fluvoxamine_Strauss1999_reference_modelica.zip</a> <span class="pk-size">(3.5 kB)</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_fluvoxamine/Fluvoxamine_Strauss1999_reference/Fluvoxamine_Strauss1999_reference_fmi.zip" download>Fluvoxamine_Strauss1999_reference_fmi.zip</a> <span class="pk-size">(4.1 kB)</span><br><a href="models/fmu/PK_1C.fmu" download>PK_1C.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_fluvoxamine/Fluvoxamine_Strauss1999_reference/Fluvoxamine_Strauss1999_reference_modelica.zip" download>Fluvoxamine_Strauss1999_reference_modelica.zip</a> <span class="pk-size">(4.1 kB)</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_fluvoxamine/Fluvoxamine_Strauss1999_reference/Fluvoxamine_Strauss1999_reference_fmi.zip" download>Fluvoxamine_Strauss1999_reference_fmi.zip</a> <span class="pk-size">(4.2 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_fluvoxamine/Fluvoxamine_Strauss1999_reference/Fluvoxamine_Strauss1999_reference_matlab.zip" download>Fluvoxamine_Strauss1999_reference_matlab.zip</a> <span class="pk-size">(3.3 kB)</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_fluvoxamine/Fluvoxamine_Strauss1999_reference/Fluvoxamine_Strauss1999_reference_matlab_simbio.zip" download>Fluvoxamine_Strauss1999_reference_matlab_simbio.zip</a> <span class="pk-size">(2.7 kB)</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_fluvoxamine/Fluvoxamine_Strauss1999_reference/Fluvoxamine_Strauss1999_reference_sbml.zip" download>Fluvoxamine_Strauss1999_reference_sbml.zip</a> <span class="pk-size">(2.4 kB)</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_fluvoxamine/Fluvoxamine_Strauss1999_reference/Fluvoxamine_Strauss1999_reference_cellml.zip" download>Fluvoxamine_Strauss1999_reference_cellml.zip</a> <span class="pk-size">(2.9 kB)</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_fluvoxamine/Fluvoxamine_Strauss1999_reference/Fluvoxamine_Strauss1999_reference_matlab_simbio.zip" download>Fluvoxamine_Strauss1999_reference_matlab_simbio.zip</a> <span class="pk-size">(2.8 kB)</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_fluvoxamine/Fluvoxamine_Strauss1999_reference/Fluvoxamine_Strauss1999_reference_sbml.zip" download>Fluvoxamine_Strauss1999_reference_sbml.zip</a> <span class="pk-size">(2.6 kB)</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_fluvoxamine/Fluvoxamine_Strauss1999_reference/Fluvoxamine_Strauss1999_reference_cellml.zip" download>Fluvoxamine_Strauss1999_reference_cellml.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
 </tbody></table>
 <p>Each archive holds the model source, a script that simulates it against the appropriate library, and a README describing both and how to run them.</p>
-<p><b>FMI is two downloads.</b> The archive holds this record's parameters and its driver; the simulator itself is <code>PK_1C.fmu</code>, one compiled template shared by every model of this structure. Take the FMU once, keep it beside the script (or pass <code>--fmu PATH</code>). Running it reproduces the model-specific FMU exactly.</p>
+<p><b>FMI is two downloads.</b> The archive holds this record's parameters and its driver; the simulator itself is <code>PK_1C_enteral.fmu</code>, one compiled template shared by every model of this structure. Take the FMU once, keep it beside the script (or pass <code>--fmu PATH</code>). Running it reproduces the model-specific FMU exactly.</p>
 </div><figure class="pk-models-diagram"><img src="drugs/drug_fluvoxamine/Fluvoxamine_Strauss1999_reference/Fluvoxamine_Strauss1999_reference.svg" alt="Fluvoxamine_Strauss1999_reference diagram"><figcaption>Model diagram (Modelica) using Pharmacolibrary v26.09 components, rendered by OpenModelica 1.26.7.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-**Administration: intravenous** — 10 mg infusion over 10 min, single dose. _The paper's dose was not captured; the simulator's default is used._
+**Administration: oral** — 100 mg, single dose, first-order absorption (ka 1.46 /h, F 1.85). _The paper's dose was not captured; the default is the WHO ATC DDD 100 mg oral (N06AB08) (defined daily dose)._
 
-<dbs-fmusim paramsurl="drugs/drug_fluvoxamine/Fluvoxamine_Strauss1999_reference/Fluvoxamine_Strauss1999_reference_params.json" metaurl="assets/fmu/PK_1C.vr.json" wasmurl="assets/fmu/PK_1C.js" controlsurl="drugs/drug_fluvoxamine/Fluvoxamine_Strauss1999_reference/Fluvoxamine_Strauss1999_reference_sim_controls.json"></dbs-fmusim>
+<dbs-fmusim paramsurl="drugs/drug_fluvoxamine/Fluvoxamine_Strauss1999_reference/Fluvoxamine_Strauss1999_reference_params.json" metaurl="assets/fmu/PK_1C_enteral.vr.json" wasmurl="assets/fmu/PK_1C_enteral.js" controlsurl="drugs/drug_fluvoxamine/Fluvoxamine_Strauss1999_reference/Fluvoxamine_Strauss1999_reference_sim_controls.json"></dbs-fmusim>
 
-<sub>Runs this record's model in the browser as WebAssembly. Sliders start at the extracted values; the reference check compares the browser's peak against the FMPy result recorded when the record was built, and is withheld once a value has been edited. Template `PK_1C` · parameters `Fluvoxamine_Strauss1999_reference_params.json` · controls `Fluvoxamine_Strauss1999_reference_sim_controls.json`. A slider marked *simulator value* is running on the template's own default because this record does not pin that parameter.</sub>
+<sub>Runs this record's model in the browser as WebAssembly. Sliders start at the extracted values; the reference check compares the browser's peak against the FMPy result recorded when the record was built, and is withheld once a value has been edited. Template `PK_1C_enteral` · parameters `Fluvoxamine_Strauss1999_reference_params.json` · controls `Fluvoxamine_Strauss1999_reference_sim_controls.json`. A slider marked *simulator value* is running on the template's own default because this record does not pin that parameter.</sub>
 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-09-23 22:08 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-06 23:05 UTC</sub>

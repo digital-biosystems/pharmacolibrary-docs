@@ -1,0 +1,32 @@
+{
+ "dose_source": "WHO ATC DDD 60 mg oral (L01EX07)",
+ "model_id": "Cabozantinib_Ly2023_ase",
+ "molar_masses": {
+  "central.C": 0.501514
+ },
+ "note": "Values for the shared PK_1C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "parameters": {
+  "Cl": 8.972222222222224e-09,
+  "F": 1.0,
+  "MM": 0.501514,
+  "Tlag": 145.44,
+  "VdPerKg": 0.00010985714285714287,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 6e-05,
+  "ka": 4.861111111111111e-05,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 79361.04101390584
+ },
+ "reference_peaks": {
+  "central.C": 0.0071185839819652074
+ },
+ "stop_time": 3628800.0,
+ "template": "PK_1C_enteral",
+ "template_fmu": "PK_1C_enteral.fmu"
+}

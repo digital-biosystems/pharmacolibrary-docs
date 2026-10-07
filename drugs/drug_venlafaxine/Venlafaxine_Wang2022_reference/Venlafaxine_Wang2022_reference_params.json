@@ -2,35 +2,49 @@
  "dose_source": "paper",
  "model_id": "Venlafaxine_Wang2022_reference",
  "molar_masses": {
+  "C_M1": 0.263381,
   "central.C": 0.2774018
  },
- "note": "Values for the shared PK_1C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "note": "Values for the shared PK_3M_3C.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observable_labels": {
+  "C_M1": "O-desmethyl venlafaxine",
+  "C_central": "venlafaxine"
+ },
  "observables": [
-  "central.C"
+  "central.C",
+  "C_M1"
  ],
  "paper_doses_kind": "discrete",
  "paper_doses_mg": [
   50.0
  ],
  "parameters": {
-  "Cl": 6.138888888888889e-06,
+  "CL1": 2.139355555555556e-05,
+  "CLm1": 6.138888888888889e-06,
   "F": 1.0,
-  "MM": 0.2774018,
+  "MW": 0.2774018,
+  "MW_m1": 0.263381,
   "Tlag": 0.0,
-  "VdPerKg": 0.0034000000000000002,
+  "Vd1": 0.628,
+  "Vd1m1": 0.23800000000000002,
+  "Vd2": 0.628,
   "adminCount": 1.0,
   "adminDuration": 600.0,
   "adminMass": 5e-05,
   "ka": 0.000175,
-  "weight": 70.0
+  "q12": 2.4999999999999998e-05,
+  "q1_m11": 1.078666666666667e-06,
+  "q21": 2.4999999999999998e-05
  },
  "reference_peak_times": {
-  "central.C": 13339.478957915831
+  "C_M1": 38178.75751503006,
+  "central.C": 30776.75350701403
  },
  "reference_peaks": {
-  "central.C": 0.00015086856996569036
+  "C_M1": 2.950160624357141e-06,
+  "central.C": 2.2019701343920816e-05
  },
- "stop_time": 154800.0,
- "template": "PK_1C_enteral",
- "template_fmu": "PK_1C_enteral.fmu"
+ "stop_time": 97200.0,
+ "template": "PK_3M_3C",
+ "template_fmu": "PK_3M_3C.fmu"
 }

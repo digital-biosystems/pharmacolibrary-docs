@@ -4,7 +4,7 @@
 
 # clomipramine — `Clomipramine_NielsenKudsk1980_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.8). The first reading is what the record holds.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (rabbit), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rabbit</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.8). The first reading is what the record holds.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (rabbit), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rabbit</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -26,15 +26,17 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the val
 
 <sub>reviewed by rule template (no LLM)</sub>
 
+> ⚠️ **STALE** — review status `rejected` (reviewed 2026-09-28 14:37:00.790914+00:00) predates the upstream re-run (2026-10-06 22:16:38.413294+00:00). Current validate status: `rejected`.
+
 ## Citation
 Nielsen-Kudsk F et al., Myocardial pharmacokinetics of amitript…, Acta pharmacologica et toxi… (1980)
   ·  DOI: [10.1111/j.1600-0773.1980.tb02445.x](https://doi.org/10.1111/j.1600-0773.1980.tb02445.x)
 
 ## Model component
-<dbs-pgx drug="clomipramine" model-id="Clomipramine_NielsenKudsk1980_reference" status="rejected" stale="false" population="isolated rabbit hearts" measured-compound="clomipramine" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<dbs-pgx drug="clomipramine" model-id="Clomipramine_NielsenKudsk1980_reference" status="rejected" stale="true" population="isolated perfused rabbit hearts" measured-compound="clomipramine" parameterization="mechanistic" topology="1C"></dbs-pgx>
 
 **Model structure:** 1-compartment; no model was built for this record.  
-**Parameters:** 1 extracted.
+**Parameters:** 3 extracted.
 
 **Parameterization:** mechanistic.
 
@@ -44,6 +46,8 @@ Nielsen-Kudsk F et al., Myocardial pharmacokinetics of amitript…, Acta pharmac
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
 | biological half-life of amitriptyline in the myocardium | `Q57` · t1/2z | 37.7 | min | 2262.0 | [min] | not captured | llm (0.6) | Nielsen-Kudsk_1980:abstract | — | not captured |
+| cardiac accumulation of the compound at steady state | `Q34` · Css | 340 | micrograms | not captured | [µg] | not captured | llm (0.6) | Nielsen-Kudsk_1980:abstract | — | not captured |
+| accumulated amount at steady state | `Q18` · AUCSS | 1055 | micrograms | not captured | [µg] | not captured | llm (0.6) | Nielsen-Kudsk_1980:abstract | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -53,14 +57,19 @@ Nielsen-Kudsk F et al., Myocardial pharmacokinetics of amitript…, Acta pharmac
 ## Departures & gaps
 
 **Interpretation flags:**
-- dropped unlinked row (NIL): 'cardiac accumulation of amitriptyline at steady state' — extend the ontology if this is a real PK parameter (source ['Nielsen-Kudsk_1980:abstract'])
+- unit_dimension_mismatch: 'cardiac accumulation of the compound at steady state' → Q34 (unit '[mass]' vs ontology '[mass] / [length] ** 3') — route to review
 - dropped duplicate Q57 ('myocardial half-life of clomipramine', value 106) — already have one for this compound
-- dropped unlinked row (NIL): 'accumulated amount of clomipramine at steady state' — extend the ontology if this is a real PK parameter (source ['Nielsen-Kudsk_1980:abstract'])
+- unit_dimension_mismatch: 'accumulated amount at steady state' → Q18 (unit '[mass]' vs ontology '[mass] * [time] / [length] ** 3') — route to review
+- dropped value-less row: 'k10'
+- dropped value-less row: 'k12'
+- dropped value-less row: 'apparent central volume of distribution'
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=clomipramine
+- held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
+- status held at route_to_review — not promoted
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
 
 **Extraction notes:**
-- no GROBID TEI available — transcribed from abstract in Nielsen-Kudsk_1980_metadata.yaml (4 record(s)); values are summary statistics, not a fitted model
+- no GROBID TEI available — transcribed from abstract in Nielsen-Kudsk_1980_metadata.yaml (7 record(s)); values are summary statistics, not a fitted model
 
 ## Validation
 
@@ -89,8 +98,10 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 1 | not captured | not captured | not captured |
+| C0_has_structural_params | pass | not captured | 3 | not captured | not captured | not captured |
 | C0b_disposition_core | fail | not captured | not captured | not captured | not captured | not captured |
+| C5_dimension_Q18 | fail | [mass] | micrograms | not captured | not captured | ['Nielsen-Kudsk_1980:abstract'] |
+| C5_dimension_Q34 | fail | [mass] | micrograms | not captured | not captured | ['Nielsen-Kudsk_1980:abstract'] |
 | C5_dimension_Q57 | pass | [time] | not captured | not captured | not captured | ['Nielsen-Kudsk_1980:abstract'] |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
 
@@ -117,4 +128,4 @@ _No web simulator for this record: its structure has no shared WebAssembly templ
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-09-23 20:01 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-06 22:16 UTC</sub>

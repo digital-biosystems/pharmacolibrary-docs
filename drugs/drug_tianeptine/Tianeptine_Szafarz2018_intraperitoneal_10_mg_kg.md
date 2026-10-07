@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N06A&quot;,&quot;href&quot;:&quot;atc/N06A.md&quot;},{&quot;label&quot;:&quot;tianeptine&quot;,&quot;href&quot;:&quot;drugs/drug_tianeptine/&quot;},{&quot;label&quot;:&quot;Szafarz_2018 \u00b7 intraperitoneal_10_mg_kg&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Tianeptine_Szafarz2018_estimate&quot;,&quot;label&quot;:&quot;Szafarz_2018_estimate&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tianeptine/Tianeptine_Szafarz2018_estimate.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Tianeptine_Szafarz2018_intraperitoneal_10_mg_kg&quot;,&quot;label&quot;:&quot;Szafarz_2018_intraperitoneal_10_mg_kg&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tianeptine/Tianeptine_Szafarz2018_intraperitoneal_10_mg_kg.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Tianeptine_Szafarz2018_intravenous_1_mg_kg&quot;,&quot;label&quot;:&quot;Szafarz_2018_intravenous_1_mg_kg&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tianeptine/Tianeptine_Szafarz2018_intravenous_1_mg_kg.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Tianeptine_Szafarz2018_intraperitoneal_10_mg_kg&quot;,&quot;label&quot;:&quot;Szafarz_2018_intraperitoneal_10_mg_kg&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tianeptine/Tianeptine_Szafarz2018_intraperitoneal_10_mg_kg.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Tianeptine_Szafarz2018_intravenous_1_mg_kg&quot;,&quot;label&quot;:&quot;Szafarz_2018_intravenous_1_mg_kg&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tianeptine/Tianeptine_Szafarz2018_intravenous_1_mg_kg.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # tianeptine — `Tianeptine_Szafarz2018_intraperitoneal_10_mg_kg`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.769). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span>
+> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.769). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -27,21 +27,21 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on how the
 
 <sub>reviewed by glm-5.3-flash</sub>
 
+> ⚠️ **STALE** — review status `rejected` (reviewed 2026-10-05 09:32:30.485445+00:00) predates the upstream re-run (2026-10-06 23:48:00.841088+00:00). Current validate status: `extracted`.
+
 ## Citation
 Szafarz M et al., Pharmacokinetic study of tianeptine and…, Naunyn-Schmiedeberg's archi… (2018)
   ·  DOI: [10.1007/s00210-017-1448-2](https://doi.org/10.1007/s00210-017-1448-2)
 
 ## Model component
-<dbs-pgx drug="tianeptine" model-id="Tianeptine_Szafarz2018_intraperitoneal_10_mg_kg" status="rejected" stale="false" population="rats" measured-compound="tianeptine" parameterization="apparent" topology="parent_metabolite"></dbs-pgx>
+<dbs-pgx drug="tianeptine" model-id="Tianeptine_Szafarz2018_intraperitoneal_10_mg_kg" status="extracted" stale="true" population="rats" measured-compound="tianeptine" parameterization="apparent" topology="parent_metabolite"></dbs-pgx>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 7 extracted.
 
-**Parameterization:** CL/F — apparent, F unknown (apparent — bioavailability not identifiable).
+**Parameterization:** CLnorm/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
 ## Parameters
-> ⚠️ This record is not accepted (current status `rejected`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
-
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
 | t max (h) | `Q56` · tmax | 0.083 | h | 298.8 | [h] | not captured | space_fold (0.95) | Tab3:row4:col5, Tab3:row4:col6, Tab3:row4:col7, Tab3:row4:col8 | — | not captured |
@@ -49,7 +49,7 @@ Szafarz M et al., Pharmacokinetic study of tianeptine and…, Naunyn-Schmiedeber
 | t 0.5λz (h) | `Q57` · t1/2z | 14.03 | h | 50508.0 | [h] | not captured | llm (0.6) | Tab3:row6:col6, Tab3:row6:col8 | — | not captured |
 | V z(V z/F) (L/kg) | `Q61` · V | 18.15 | L/kg | 1.2705 | [l] / [kg] | not captured | space_fold (0.95) | Tab3:row7:col6, Tab3:row7:col8 | — | not captured |
 | AUC0-inf (mg∙h/L) | `Q17` · AUC∞ | 7.05 | mg∙h/L | not captured | [[h] · [mg]] / [l] | not captured | exact (1.0) | Tab3:row8:col6, Tab3:row8:col8 | — | not captured |
-| CL/(CL/F) (L/h/kg) | `Q27` · CL/F | 7.17 | L/h/kg | 0.00013941666666666665 | [l] / [[h] · [kg]] | not captured | llm_confirmed (0.6) | Tab3:row9:col6, Tab3:row9:col8 | — | not captured |
+| CL/(CL/F) (L/h/kg) | `Q355` · CLnorm/F | 7.17 | L/h/kg | 0.00013941666666666665 | [l] / [[h] · [kg]] | not captured | llm_corrected (0.6) | Tab3:row9:col6, Tab3:row9:col8 | — | not captured |
 | MRT (h) | `Q53` · MRT | 10.36 | h | 37296.0 | [h] | not captured | exact (1.0) | Tab3:row11:col6, Tab3:row11:col8 | — | not captured |
 
 <details class="legend">
@@ -59,18 +59,18 @@ Szafarz M et al., Pharmacokinetic study of tianeptine and…, Naunyn-Schmiedeber
 
 ## Departures & gaps
 
-**Deviations:**
-- `defaulted_parameters`: ['ka', 'Tlag']
-- `apparent_assumption`: F=1, Fm=1, no molar correction (parameterization=apparent)
-- `invented_absorption`: ka defaulted — not reported in source
-- `input_model`: first-order depot input — apparent (/F) parameterization ⇒ extravascular dosing
-
 **Interpretation flags:**
 - dropped unlinked row (NIL): 'Parameter' — extend the ontology if this is a real PK parameter (source ['Tab3:row0:col5', 'Tab3:row0:col6', 'Tab3:row0:col7', 'Tab3:row0:col8'])
 - dropped unlinked row (NIL): 'C o/C max (mg/L)' — extend the ontology if this is a real PK parameter (source ['Tab3:row3:col6', 'Tab3:row3:col8'])
+- dropped value-less row: 'Table 3. Serum pharmacokinetic parameters calculated from concentration vs. time data (n = 3) of tianeptine and MC5 metabolite determined by non-compartmental analysis after a single intravenous or intraperitoneal administration of tianeptine to rats at a dose of 1 or 10 mg/kg, respectively. Data are presented as geometric mean (GM), 90% confidence interval (CI), and coefficient of variation (CV)' (captured trailing unit 'CV' for child rows)
 - apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=tianeptine
+- template fit: PK_3M_9C — formed from central; parent 1, metabolites [0]
 - population split: 'intraperitoneal 10 mg/kg' subgroup of Szafarz_2018 (paper reports 3 populations: estimate, intraperitoneal 10 mg/kg, intravenous 1 mg/kg)
-- engineer: parent → metabolite not buildable on PK_3M_9C (None) — the measured compound's 1-compartment model instead
+- row roles (LLM): model_class=compartmental; 18/18 row label(s) assigned, 12 linked by role; re-tagged parent→MC5 ×4
+- molar mass: none of 1 PubChem candidate(s) is 'MC5' (LLM) — left in mass units
+- molar mass: none found for 'MC5' — its concentrations stay mass-only
+- skipped review gap-fill of V2: primary is PARENT_METABOLITE (peripheral family needs ≥2C)
+- skipped review gap-fill of Q: primary's parameterization (rate-constant / ka-only) does not use it
 
 **Extraction notes:**
 - unparsed cell Tab3:row3:col1 = '1.27(0.86–1.9)'
@@ -135,7 +135,7 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
 | C5_dimension_Q17 | pass | [mass] * [time] / [length] ** 3 | not captured | not captured | not captured | ['Tab3:row8:col6', 'Tab3:row8:col8'] |
-| C5_dimension_Q27 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Tab3:row9:col6', 'Tab3:row9:col8'] |
+| C5_dimension_Q355 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Tab3:row9:col6', 'Tab3:row9:col8'] |
 | C5_dimension_Q47 | pass | 1 / [time] | not captured | not captured | not captured | ['Tab3:row5:col6', 'Tab3:row5:col8'] |
 | C5_dimension_Q53 | pass | [time] | not captured | not captured | not captured | ['Tab3:row11:col6', 'Tab3:row11:col8'] |
 | C5_dimension_Q56 | pass | [time] | not captured | not captured | not captured | ['Tab3:row4:col5', 'Tab3:row4:col6', 'Tab3:row4:col7', 'Tab3:row4:col8'] |
@@ -143,7 +143,6 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 | C5_dimension_Q61 | pass | [length] ** 3 | not captured | not captured | not captured | ['Tab3:row7:col6', 'Tab3:row7:col8'] |
 | C7_apparent_coherence | pass | not captured | not captured | not captured | not captured | not captured |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
-| C9_phys_window_Q27 | pass | clearance within physiological range | 502 L/h | not captured | not captured | ['Tab3:row9:col6', 'Tab3:row9:col8'] |
 | C9_phys_window_Q61 | pass | volume within physiological range | 1.27e+03 L | not captured | not captured | ['Tab3:row7:col6', 'Tab3:row7:col8'] |
 
 **Reviewer per-scenario checks:**
@@ -175,9 +174,20 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
-## Models
+## Downloadable models
 
-<p>No downloads: this record is <b>rejected</b>, so it is not published as a model. Any archives generated for it before the verdict have been removed — a download outlives the page that explains it.</p>
+<div class="pk-models-grid"><div class="pk-models-table">
+<table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_tianeptine/Tianeptine_Szafarz2018_intraperitoneal_10_mg_kg/Tianeptine_Szafarz2018_intraperitoneal_10_mg_kg_fmi.zip" download>Tianeptine_Szafarz2018_intraperitoneal_10_mg_kg_fmi.zip</a> <span class="pk-size">(4.2 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_tianeptine/Tianeptine_Szafarz2018_intraperitoneal_10_mg_kg/Tianeptine_Szafarz2018_intraperitoneal_10_mg_kg_matlab.zip" download>Tianeptine_Szafarz2018_intraperitoneal_10_mg_kg_matlab.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_tianeptine/Tianeptine_Szafarz2018_intraperitoneal_10_mg_kg/Tianeptine_Szafarz2018_intraperitoneal_10_mg_kg_matlab_simbio.zip" download>Tianeptine_Szafarz2018_intraperitoneal_10_mg_kg_matlab_simbio.zip</a> <span class="pk-size">(2.8 kB)</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_tianeptine/Tianeptine_Szafarz2018_intraperitoneal_10_mg_kg/Tianeptine_Szafarz2018_intraperitoneal_10_mg_kg_sbml.zip" download>Tianeptine_Szafarz2018_intraperitoneal_10_mg_kg_sbml.zip</a> <span class="pk-size">(2.5 kB)</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_tianeptine/Tianeptine_Szafarz2018_intraperitoneal_10_mg_kg/Tianeptine_Szafarz2018_intraperitoneal_10_mg_kg_cellml.zip" download>Tianeptine_Szafarz2018_intraperitoneal_10_mg_kg_cellml.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
+</tbody></table>
+<p>Each archive holds the model source, a script that simulates it against the appropriate library, and a README describing both and how to run them.</p>
+<p><b>FMI is two downloads.</b> The archive holds this record's parameters and its driver; the simulator itself is <code>PK_1C_enteral.fmu</code>, one compiled template shared by every model of this structure. Take the FMU once, keep it beside the script (or pass <code>--fmu PATH</code>). Running it reproduces the model-specific FMU exactly.</p>
+</div><figure class="pk-models-diagram"><img src="drugs/drug_tianeptine/Tianeptine_Szafarz2018_intraperitoneal_10_mg_kg/Tianeptine_Szafarz2018_intraperitoneal_10_mg_kg.svg" alt="Tianeptine_Szafarz2018_intraperitoneal_10_mg_kg diagram"><figcaption>Model diagram (Modelica) using Pharmacolibrary v26.09 components, rendered by OpenModelica 1.26.7.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
@@ -190,4 +200,4 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-09-24 04:53 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-06 23:48 UTC</sub>

@@ -23,7 +23,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on paramet
 
 <sub>reviewed by rule template (no LLM)</sub>
 
-> ⚠️ **STALE** — review status `curated_candidate` (reviewed 2026-09-28 14:42:06.450434+00:00) predates the upstream re-run (2026-10-04 00:16:13.555690+00:00). Current validate status: `extracted`.
+> ⚠️ **STALE** — review status `curated_candidate` (reviewed 2026-09-28 14:42:06.450434+00:00) predates the upstream re-run (2026-10-07 00:10:03.680779+00:00). Current validate status: `extracted`.
 
 ## Citation
 Liu S et al., Population pharmacokinetics model for e…, Frontiers in pharmacology (2022)
@@ -51,8 +51,10 @@ Liu S et al., Population pharmacokinetics model for e…, Frontiers in pharmacol
 ## Departures & gaps
 
 **Deviations:**
-- `defaulted_parameters`: ['Tlag']
+- `defaulted_parameters`: ['ka', 'Tlag']
 - `apparent_assumption`: F=1, Fm=1, no molar correction (parameterization=apparent)
+- `invented_absorption`: ka defaulted — not reported in source
+- `input_model`: first-order depot input — apparent (/F) parameterization ⇒ extravascular dosing
 
 **Interpretation flags:**
 - built from REVIEW reference values (Liu_2022) — secondary source
@@ -129,12 +131,12 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_venlafaxine/Venlafaxine_Liu2022_reference/Venlafaxine_Liu2022_reference_modelica.zip" download>Venlafaxine_Liu2022_reference_modelica.zip</a> <span class="pk-size">(3.5 kB)</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_venlafaxine/Venlafaxine_Liu2022_reference/Venlafaxine_Liu2022_reference_fmi.zip" download>Venlafaxine_Liu2022_reference_fmi.zip</a> <span class="pk-size">(4.2 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_venlafaxine/Venlafaxine_Liu2022_reference/Venlafaxine_Liu2022_reference_matlab.zip" download>Venlafaxine_Liu2022_reference_matlab.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_venlafaxine/Venlafaxine_Liu2022_reference/Venlafaxine_Liu2022_reference_matlab_simbio.zip" download>Venlafaxine_Liu2022_reference_matlab_simbio.zip</a> <span class="pk-size">(2.8 kB)</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_venlafaxine/Venlafaxine_Liu2022_reference/Venlafaxine_Liu2022_reference_sbml.zip" download>Venlafaxine_Liu2022_reference_sbml.zip</a> <span class="pk-size">(2.6 kB)</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_venlafaxine/Venlafaxine_Liu2022_reference/Venlafaxine_Liu2022_reference_cellml.zip" download>Venlafaxine_Liu2022_reference_cellml.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_venlafaxine/Venlafaxine_Liu2022_reference/Venlafaxine_Liu2022_reference_modelica.zip" download>Venlafaxine_Liu2022_reference_modelica.zip</a> <span class="pk-size">(4.1 kB)</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_venlafaxine/Venlafaxine_Liu2022_reference/Venlafaxine_Liu2022_reference_fmi.zip" download>Venlafaxine_Liu2022_reference_fmi.zip</a> <span class="pk-size">(4.3 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_venlafaxine/Venlafaxine_Liu2022_reference/Venlafaxine_Liu2022_reference_matlab.zip" download>Venlafaxine_Liu2022_reference_matlab.zip</a> <span class="pk-size">(3.5 kB)</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_venlafaxine/Venlafaxine_Liu2022_reference/Venlafaxine_Liu2022_reference_matlab_simbio.zip" download>Venlafaxine_Liu2022_reference_matlab_simbio.zip</a> <span class="pk-size">(2.9 kB)</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_venlafaxine/Venlafaxine_Liu2022_reference/Venlafaxine_Liu2022_reference_sbml.zip" download>Venlafaxine_Liu2022_reference_sbml.zip</a> <span class="pk-size">(2.7 kB)</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_venlafaxine/Venlafaxine_Liu2022_reference/Venlafaxine_Liu2022_reference_cellml.zip" download>Venlafaxine_Liu2022_reference_cellml.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
 </tbody></table>
 <p>Each archive holds the model source, a script that simulates it against the appropriate library, and a README describing both and how to run them.</p>
 <p><b>FMI is two downloads.</b> The archive holds this record's parameters and its driver; the simulator itself is <code>PK_1C_enteral.fmu</code>, one compiled template shared by every model of this structure. Take the FMU once, keep it beside the script (or pass <code>--fmu PATH</code>). Running it reproduces the model-specific FMU exactly.</p>
@@ -142,7 +144,7 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-**Administration: oral** — 5 mg, single dose, first-order absorption (ka 0.6 /h, F 1). Doses in the paper: 5, 10, 15, 20 mg.
+**Administration: oral** — 100 mg, single dose, first-order absorption (ka 0.5 /h, F 1). _The paper's dose was not captured; the default is the WHO ATC DDD 100 mg oral (N06AX16) (defined daily dose)._
 
 <dbs-fmusim paramsurl="drugs/drug_venlafaxine/Venlafaxine_Liu2022_reference/Venlafaxine_Liu2022_reference_params.json" metaurl="assets/fmu/PK_1C_enteral.vr.json" wasmurl="assets/fmu/PK_1C_enteral.js" controlsurl="drugs/drug_venlafaxine/Venlafaxine_Liu2022_reference/Venlafaxine_Liu2022_reference_sim_controls.json"></dbs-fmusim>
 
@@ -151,4 +153,4 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-04 00:16 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 00:10 UTC</sub>

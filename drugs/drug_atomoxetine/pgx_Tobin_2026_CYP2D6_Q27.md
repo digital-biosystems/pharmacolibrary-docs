@@ -1,7 +1,8 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N06B&quot;,&quot;href&quot;:&quot;atc/N06B.md&quot;},{&quot;label&quot;:&quot;atomoxetine&quot;,&quot;href&quot;:&quot;drugs/drug_atomoxetine/&quot;},{&quot;label&quot;:&quot;Tobin_2026 \u00b7 PGx CYP2D6&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Atomoxetine_Li2012_reference&quot;,&quot;label&quot;:&quot;Li_2012_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_atomoxetine/Atomoxetine_Li2012_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Atomoxetine_Tobin2026_reference&quot;,&quot;label&quot;:&quot;Tobin_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_atomoxetine/Atomoxetine_Tobin2026_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pgx_Tobin_2026_CYP2D6_Q27&quot;,&quot;label&quot;:&quot;Tobin_2026 \u00b7 CYP2D6&quot;,&quot;group&quot;:&quot;PGx&quot;,&quot;href&quot;:&quot;drugs/drug_atomoxetine/pgx_Tobin_2026_CYP2D6_Q27.md&quot;,&quot;status&quot;:&quot;quantitative&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# CYP2D6 — PGx  <span class="pk-badge pk-badge--neutral" title="the paper links the gene to the drug but states no effect size on a model parameter, so it changes no model.">qualitative</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span>
+# CYP2D6 — PGx  <span class="pk-badge pk-badge--green" title="the paper gives the effect of each phenotype (or genotype) on a named model parameter — a θ per category.">quantitative</span> <span class="pk-badge pk-badge--green" title="the paper's model runs per phenotype in the Simulation tab">▶ simulatable</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -9,21 +10,21 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
-- **what it is:** qualitative — the paper links the gene to the drug but states no effect size on a model parameter, so it changes no model.
+- **what it is:** quantitative — the paper gives the effect of each phenotype (or genotype) on a named model parameter — a θ per category. (θ from Tobin_2026 popPK covariate rows (ecyp2d6_pm))
 - **source:** this paper, `Tobin_2026` — [doi](https://doi.org/10.1002/jcph.70168)
 - **gene:** CYP2D6
 - **mechanism:** metabolism — the gene's enzyme clears the drug
 - **applies to:** pharmacokinetics (exposure)
 - **parameter it changes:** CL/F (`Q27`)
-- **effect:** not quantified
-- **phenotype groups:** the paper's genotype groups were not mapped to standard phenotypes
+- **effect (θ per phenotype, linear_fractional):** NM=0.0, PM=-0.81
+- **phenotype groups:** phenotype
+- **study type:** covariate_effect
 
 ### Notes from the extraction
 
 - association-only evidence (no extracted θ) — not a covariate
 - relevance flagged quantitative but no per-genotype θ table reached
-- genotype→phenotype map unresolved (no paper/CPIC/genotype mapping)
-- reference category (θ=0) not captured — must not be inferred
+- θ per phenotype taken from the paper's popPK model (Tobin_2026): NM +0, PM -0.81 on CL/F
 
 ## Citation
 Tobin KV et al., Understanding Atomoxetine Exposure Vari…, Journal of clinical pharmac… (2026)
@@ -51,19 +52,25 @@ _Every reader agrees on every compared field of this PGx record._
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_atomoxetine/Atomoxetine_Tobin2026_reference_PGx_CYP2D6/Atomoxetine_Tobin2026_reference_PGx_CYP2D6_modelica.zip" download>Atomoxetine_Tobin2026_reference_PGx_CYP2D6_modelica.zip</a> <span class="pk-size">(2.8 kB)</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><a href="drugs/drug_atomoxetine/Atomoxetine_Tobin2026_reference_PGx_CYP2D6/Atomoxetine_Tobin2026_reference_PGx_CYP2D6_fmi.zip" download>Atomoxetine_Tobin2026_reference_PGx_CYP2D6_fmi.zip</a> <span class="pk-size">(4.5 kB)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
 <tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
 <tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
 </tbody></table>
-<p>No bundles have been generated for this record yet. When the engineer emits them they appear here automatically — this page reports what is on disk and generates nothing itself.</p>
+<p>Each archive holds the model source, a script that simulates it against the appropriate library, and a README describing both and how to run them.</p>
 </div></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+_The CYP2D6 phenotype acts on the paper's popPK model ([Atomoxetine_Tobin2026_reference](Atomoxetine_Tobin2026_reference.md)): pick a phenotype to run that model with the parameters the paper states for it; the reference phenotype's curve is drawn beside it._
+
+**Administration: oral** — 35 mg, single dose, first-order absorption (ka 27.4 /h, F 1). Dose in the paper: 35 mg.
+
+<dbs-fmusim paramsurl="drugs/drug_atomoxetine/Atomoxetine_Tobin2026_reference/Atomoxetine_Tobin2026_reference_params.json" metaurl="assets/fmu/PK_1C_enteral.vr.json" wasmurl="assets/fmu/PK_1C_enteral.js" controlsurl="drugs/drug_atomoxetine/Atomoxetine_Tobin2026_reference/Atomoxetine_Tobin2026_reference_sim_controls.json"></dbs-fmusim>
+
+<sub>Runs this record's model in the browser as WebAssembly. Sliders start at the extracted values; the reference check compares the browser's peak against the FMPy result recorded when the record was built, and is withheld once a value has been edited. Template `PK_1C_enteral` · parameters `Atomoxetine_Tobin2026_reference_params.json` · controls `Atomoxetine_Tobin2026_reference_sim_controls.json`. A slider marked *simulator value* is running on the template's own default because this record does not pin that parameter.</sub>
 
 <div class="pk-tab-end"></div>
 

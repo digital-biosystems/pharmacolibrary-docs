@@ -1,8 +1,8 @@
-<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N06A&quot;,&quot;href&quot;:&quot;atc/N06A.md&quot;},{&quot;label&quot;:&quot;paroxetine&quot;,&quot;href&quot;:&quot;drugs/drug_paroxetine/&quot;},{&quot;label&quot;:&quot;Shigetome_2025 \u00b7 PD enhancement rate in depression severity&quot;}]"></div>
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N06A&quot;,&quot;href&quot;:&quot;atc/N06A.md&quot;},{&quot;label&quot;:&quot;paroxetine&quot;,&quot;href&quot;:&quot;drugs/drug_paroxetine/&quot;},{&quot;label&quot;:&quot;Shigetome_2025 \u00b7 PD enhancement rate in depression severity (percentage reduction in MADRS score from baseline)&quot;}]"></div>
 <div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Paroxetine_Chen2025_reference&quot;,&quot;label&quot;:&quot;Chen_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_paroxetine/Paroxetine_Chen2025_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Paroxetine_Yan2026_reference&quot;,&quot;label&quot;:&quot;Yan_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_paroxetine/Paroxetine_Yan2026_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Paroxetine_Zhang2025_reference&quot;,&quot;label&quot;:&quot;Zhang_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_paroxetine/Paroxetine_Zhang2025_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# enhancement rate in depression severity — PD  <span class="pk-badge pk-badge--green">extracted</span>
+# enhancement rate in depression severity (percentage reduction in MADRS score from baseline) — PD  <span class="pk-badge pk-badge--green">extracted</span>
 
 <details class="pk-legend"><summary>What the PGx badges mean — evidence, and whether a model runs</summary><table><tbody><tr><td><span class="pk-badge pk-badge--green">quantitative</span></td><td>the paper gives the effect of each phenotype (or genotype) on a named model parameter — a θ per category.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">qualitative</span></td><td>the paper links the gene to the drug but states no effect size on a model parameter, so it changes no model.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">guideline estimate</span></td><td>the effect comes from a CPIC / DPWG dosing guideline, not from this paper's numbers.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">safety allele</span></td><td>a risk allele for an adverse reaction (an HLA type, G6PD deficiency …): it changes no PK/PD parameter.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>the extraction is incomplete or inconsistent.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted.</td></tr><tr><td><span class="pk-badge pk-badge--green">▶ simulatable</span></td><td>the paper's popPK model runs per phenotype in the browser (Simulation tab); its PGx Modelica model is under Models.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">model only</span></td><td>a PGx Modelica model exists but has no in-browser simulator.</td></tr></tbody></table></details>
 
@@ -14,7 +14,7 @@
 
 ## What this record describes
 
-**As extracted:** Paroxetine (the dose) drives enhancement rate in depression severity (in %): direct Emax (saturable) effect.
+**As extracted:** Paroxetine (the dose) drives enhancement rate in depression severity (percentage reduction in MADRS score from baseline) (in %): direct Emax (saturable) effect.
 
 **Model:** No model was generated from this record.
 
@@ -22,7 +22,7 @@
 - **model family:** `emax`
 - **driver:** `dose_only`
 - **tier:** population
-- **effect:** stimulation/unknown
+- **effect:** stimulation/proportional
 
 ## Citation
 Shigetome K et al., Effect of Cumulative Exposure on the Ef…, CPT: pharmacometrics & syst… (2025)

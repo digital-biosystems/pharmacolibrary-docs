@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N06A&quot;,&quot;href&quot;:&quot;atc/N06A.md&quot;},{&quot;label&quot;:&quot;toloxatone&quot;,&quot;href&quot;:&quot;drugs/drug_toloxatone/&quot;},{&quot;label&quot;:&quot;Benedetti_1982 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Toloxatone_Vistelle1992_reference&quot;,&quot;label&quot;:&quot;Vistelle_1992_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_toloxatone/Toloxatone_Vistelle1992_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Toloxatone_Vistelle1992_reference&quot;,&quot;label&quot;:&quot;Vistelle_1992_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_toloxatone/Toloxatone_Vistelle1992_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # toloxatone — `Toloxatone_Benedetti1982_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.333). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.333). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -25,43 +25,54 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on how the
 
 <sub>reviewed by rule template (no LLM)</sub>
 
+> ⚠️ **STALE** — review status `rejected` (reviewed 2026-09-28 14:41:49.969037+00:00) predates the upstream re-run (2026-10-06 23:51:35.215545+00:00). Current validate status: `rejected`.
+
 ## Citation
 Benedetti MS et al., Pharmacokinetics of toloxatone in man f…, Arzneimittel-Forschung (1982)
 
 ## Model component
-<dbs-pgx drug="toloxatone" model-id="Toloxatone_Benedetti1982_reference" status="rejected" stale="false" population="healthy adults" measured-compound="toloxatone" parameterization="apparent" topology="1C"></dbs-pgx>
+<dbs-pgx drug="toloxatone" model-id="Toloxatone_Benedetti1982_reference" status="rejected" stale="true" population="healthy adult volunteers" measured-compound="toloxatone" parameterization="apparent" topology="1C"></dbs-pgx>
 
 **Model structure:** 1-compartment; no model was built for this record.  
-**Parameters:** 0 extracted.
+**Parameters:** 1 extracted.
 
 **Parameterization:** V/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
 ## Parameters
 > ⚠️ This record is not accepted (current status `rejected`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
 
-_No resolved parameters._
+| label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
+|---|---|---|---|---|---|---|---|---|---|---|
+| Protein binding | `Q46` · fu | 50 | % | not captured | [%] | not captured | exact (1.0) | Benedetti_1982:abstract | — | not captured |
+
+<details class="legend">
+<summary>Column legend — what each column means</summary>
+<table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>label (paper)</code></td><td>the row or statistic label exactly as printed in the paper (label_verbatim) — never normalised, so it can be found in the PDF.</td></tr><tr><td><code>Q-code · name</code></td><td>the ontology parameter this label was matched to (Q22 = clearance, Q27 = CL/F, Q49 = ka, Q57 = half-life, …) and its canonical name. The Q-code, not the label, is what scoring and cross-paper merging use.</td></tr><tr><td><code>value</code></td><td>the estimate as reported in the paper.</td></tr><tr><td><code>unit</code></td><td>the unit as printed (unit_verbatim).</td></tr><tr><td><code>value_si</code></td><td>the value converted to the canonical unit. Empty when no conversion was possible — usually an unparseable or missing unit.</td></tr><tr><td><code>unit_canonical</code></td><td>the canonical unit for that Q-code, i.e. what value_si is expressed in.</td></tr><tr><td><code>RSE%</code></td><td>relative standard error of the estimate, when the paper reports one.</td></tr><tr><td><code>link</code></td><td>how the label was matched to the Q-code, with confidence. exact / boundary / fuzzy / tv_prefix / caption_compartment / special_case are deterministic string matches; llm, llm_confirmed, llm_corrected involved the model; review and review_gapfill come from the secondary review tier, the latter filling a parameter the primary extraction missed; boundary_relink is a corrected match.</td></tr><tr><td><code>source</code></td><td>where in the paper the number came from: colN = that column of the located table, other_prose = running text, review = the secondary tier, pgx = a pharmacogenomic record.</td></tr><tr><td><code>covariates</code></td><td>covariate effects attached to this parameter (e.g. weight on CL).</td></tr><tr><td><code>IIV</code></td><td>inter-individual variability reported for this parameter.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>the field is absent from the KB artifact — nothing was recorded. This is NOT the same as zero or empty: the value is unknown, not measured to be nothing.</td></tr><tr><td><code>—</code></td><td>deliberately not shown: the column does not apply to this row.</td></tr><tr><td><code>not verified</code></td><td>the record is not in an accepted state (see the badge and the note above the table); the numbers are shown as extracted, not endorsed.</td></tr></tbody></table>
+</details>
 
 ### Unresolved rows _(no Q-code or no value — not parameters)_
 | label (paper) | Q-code | value | link |
 |---|---|---|---|
-| Cmax | Q32 | not captured | exact |
-| t 1/2 beta | Q60 | not captured | llm_corrected |
-| Plasma clearance | Q22 | not captured | llm_confirmed |
+| Cmax (p.o.) | Q32 | not captured | exact |
+| tmax (p.o.) | Q56 | not captured | exact |
+| t 1/2 beta (p.o.) | Q60 | not captured | llm_corrected |
+| Plasma clearance | Q354 | not captured | llm_corrected |
 | apparent volume of distribution | Q76 | not captured | exact |
-| Protein binding | Q46 | not captured | exact |
+| availability of the gelatin capsule | Q41 | not captured | llm |
 
 ## Departures & gaps
 
 **Interpretation flags:**
-- unit_dimension_mismatch: 'Plasma clearance' → Q22 (unit '[length] ** 3 * [mass] / [time]' vs ontology '[length] ** 3 / [time]') — route to review
-- dropped unlinked row (NIL): 'availability' — extend the ontology if this is a real PK parameter (source ['Benedetti_1982:abstract'])
+- dropped duplicate Q32 ('Cmax (i.v.)', value None) — already have one for this compound
+- dropped duplicate Q60 ('t 1/2 beta (i.v.)', value None) — already have one for this compound
+- unit_dimension_mismatch: 'Plasma clearance' → Q354 (unit '[length] ** 3 * [mass] / [time]' vs ontology '[length] ** 3 / [time]') — route to review
 - apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=toloxatone
 - held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
 - status held at route_to_review — not promoted
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
 
 **Extraction notes:**
-- no GROBID TEI available — transcribed from abstract in Benedetti_1982_metadata.yaml (8 record(s)); values are summary statistics, not a fitted model
+- no GROBID TEI available — transcribed from abstract in Benedetti_1982_metadata.yaml (9 record(s)); values are summary statistics, not a fitted model
 
 ## Validation
 
@@ -95,11 +106,12 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | fail | not captured | 0 | not captured | not captured | not captured |
+| C0_has_structural_params | pass | not captured | 1 | not captured | not captured | not captured |
 | C0b_disposition_core | fail | not captured | not captured | not captured | not captured | not captured |
-| C5_dimension_Q22 | fail | [length] ** 3 * [mass] / [time] | l/h . kg | not captured | not captured | ['Benedetti_1982:abstract'] |
-| C5_dimension_Q32 | pass | [mass] / [length] ** 3 | not captured | not captured | not captured | ['Benedetti_1982:abstract', 'Benedetti_1982:abstract'] |
-| C5_dimension_Q60 | pass | [time] | not captured | not captured | not captured | ['Benedetti_1982:abstract', 'Benedetti_1982:abstract'] |
+| C5_dimension_Q32 | pass | [mass] / [length] ** 3 | not captured | not captured | not captured | ['Benedetti_1982:abstract'] |
+| C5_dimension_Q354 | fail | [length] ** 3 * [mass] / [time] | l/h . kg | not captured | not captured | ['Benedetti_1982:abstract'] |
+| C5_dimension_Q56 | pass | [time] | not captured | not captured | not captured | ['Benedetti_1982:abstract'] |
+| C5_dimension_Q60 | pass | [time] | not captured | not captured | not captured | ['Benedetti_1982:abstract'] |
 | C5_dimension_Q76 | pass | [length] ** 3 | not captured | not captured | not captured | ['Benedetti_1982:abstract'] |
 | C7_apparent_coherence | pass | not captured | not captured | not captured | not captured | not captured |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
@@ -127,4 +139,4 @@ _No web simulator for this record: its structure has no shared WebAssembly templ
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-09-24 05:01 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-06 23:51 UTC</sub>

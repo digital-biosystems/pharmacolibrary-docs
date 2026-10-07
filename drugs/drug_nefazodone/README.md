@@ -18,11 +18,22 @@ Nefazodone is an antidepressant that was used to treat depression and has also b
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-24 01:26 | 29:51 | 0/0/0 | 0/0/0 | 0/0/0 | 96,854/6,248 | ollama / qwen3.8:27b-mtp-q8_0 | 5 | 5/1 | 2/3 | 0 |
+| 2026-10-06 23:44 | 1:01 | 0/0/0 | 1/2/0 | 0/0/0 | 57,392/4,153 | ollama / glm-5.3-flash | 5 | 5/1 | 2/3 | 0 |
 
 ## popPK records
 
 _not available_
+
+## Pharmacodynamics (PD)
+
+| status | detail | about | model | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--green">extracted</span> | [Shin_2014_hERG_inhibition](drugs/drug_nefazodone/pd_Shin_2014_hERG_inhibition.md) | hERG channel activity inhibition ← nefazodone · inhibition effect | — | Shin DS et al., A novel assessment of nefazodone-induce…, Toxicology and applied phar… (2014) | [10.1016/j.taap.2013.12.012](https://doi.org/10.1016/j.taap.2013.12.012) |
+| <span class="pk-badge pk-badge--red">rejected</span> | [Kostrubsky_2006_BSEP](drugs/drug_nefazodone/pd_Kostrubsky_2006_BSEP.md) | Bile salt export pump (BSEP) transport inhibition ← nefazodone · direct Emax (saturable) effect | — | Kostrubsky SE et al., Inhibition of hepatobiliary transport a…, Toxicological sciences : an… (2006) | [10.1093/toxsci/kfj095](https://doi.org/10.1093/toxsci/kfj095) |
+| <span class="pk-badge pk-badge--red">rejected</span> | [Kostrubsky_2006_protein_synthesis_24_h](drugs/drug_nefazodone/pd_Kostrubsky_2006_protein_synthesis_24_h.md) | Protein synthesis inhibition in human hepatocytes (24 h incubation) ← nefazodone · direct Emax (saturable) effect | — | Kostrubsky SE et al., Inhibition of hepatobiliary transport a…, Toxicological sciences : an… (2006) | [10.1093/toxsci/kfj095](https://doi.org/10.1093/toxsci/kfj095) |
+| <span class="pk-badge pk-badge--red">rejected</span> | [Kostrubsky_2006_protein_synthesis_6_h](drugs/drug_nefazodone/pd_Kostrubsky_2006_protein_synthesis_6_h.md) | Protein synthesis inhibition in human hepatocytes (6 h incubation) ← nefazodone · direct Emax (saturable) effect | — | Kostrubsky SE et al., Inhibition of hepatobiliary transport a…, Toxicological sciences : an… (2006) | [10.1093/toxsci/kfj095](https://doi.org/10.1093/toxsci/kfj095) |
+| <span class="pk-badge pk-badge--red">rejected</span> | [Kostrubsky_2006_taurocholate_efflux](drugs/drug_nefazodone/pd_Kostrubsky_2006_taurocholate_efflux.md) | Taurocholate efflux in human sandwich hepatocytes ← nefazodone · direct Emax (saturable) effect | — | Kostrubsky SE et al., Inhibition of hepatobiliary transport a…, Toxicological sciences : an… (2006) | [10.1093/toxsci/kfj095](https://doi.org/10.1093/toxsci/kfj095) |
+| <span class="pk-badge pk-badge--red">rejected</span> | [Störmer_2001_Rh123_B_to_A_transport](drugs/drug_nefazodone/pd_St_rmer_2001_Rh123_B_to_A_transport.md) | Rhodamine123 basolateral to apical transport across Caco-2 cell monolayers (inhibition by nefazodone) ← nefazodone · inhibition effect | — | Störmer E et al., P-glycoprotein interactions of nefazodo…, Journal of clinical pharmac… (2001) | [10.1177/00912700122010609](https://doi.org/10.1177/00912700122010609) |
 
 ## ADME sites
 
@@ -91,100 +102,100 @@ _24 paper(s) judged relevant from the abstract, with no full text on disk — pa
 | `Mazzarino_2018.pdf` | Mazzarino M et al., A further insight into the metabolic pr…, Drug testing and analysis (2018) | pgx | 5 | [10.1002/dta.2538](https://doi.org/10.1002/dta.2538) | [30395700](https://www.ncbi.nlm.nih.gov/pubmed/30395700) | metadata signals extractable PGX data (CYP3A4) |
 | `Pollock_1996.pdf` | Pollock BG et al., Bupropion plasma levels and CYP2D6 phen…, Therapeutic drug monitoring (1996) | pgx | 5 | [10.1097/00007691-199610000-00010](https://doi.org/10.1097/00007691-199610000-00010) | [8885123](https://www.ncbi.nlm.nih.gov/pubmed/8885123) | metadata signals extractable PGX data (CYP2D6) |
 
-<sub>queue written 2026-09-24T01:20:20.146720+00:00</sub>
+<sub>queue written 2026-10-06T23:43:04.282272+00:00</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
 | popPK | Abernethy_2001 | irrelevant | 2 | 0 | Nefazodone is a co-administered inhibitor used to study the PK/PD of terfenadine and loratadine, not the subject drug for PK parameter extraction. |
-| PGx | Alderman_2001 | not_relevant | 0 | 0 | The paper reports a drug-drug interaction (nefazodone inhibiting zopiclone metabolism) rather than a pharmacogenomic effect (gene variant) on nefazodone's PK/PD. |
+| PGx | Alderman_2001 | not_relevant | 0 | 0 | Reports a drug-drug interaction (nefazodone–zopiclone) via CYP3A4 inhibition, not a pharmacogenomic variant effect on nefazodone PK/PD. |
 | popPK | Barbhaiya_1996 | irrelevant | 2 | 0 | The study focuses on the interaction with haloperidol and reports that nefazodone's pharmacokinetics were unaffected, but it does not provide specific quantitative disposition parameters (CL, V, ka) for nefazodone. |
 | PD | Barbhaiya_1996 | not_relevant | 2 | 1 | The study reports qualitative changes in psychomotor performance and PK parameters (AUC, Cmax) but does not provide numeric PD parameters (e.g., Emax, EC50) or a quantitative concentration-effect model for nefazodone. |
-| PGx | Caccia_1998 | not_relevant | 0 | 0 | The paper is a general review of antidepressant metabolism that mentions nefazodone's saturable metabolism but does not report specific pharmacogenomic effects (gene variant impact) on its PK or PD parameters. |
-| PGx | Choi_2015 | not_relevant | 0 | 0 | The paper describes an in vitro model for drug-induced liver injury and does not report any pharmacogenomic effects (gene variants) on the PK or PD of nefazodone. |
+| PGx | Caccia_1998 | not_relevant | 2 | 2 | Review mentions CYP2D6/2C19 polymorphism generally but reports no specific gene-variant effect on nefazodone PK/PD parameters. |
+| PGx | Choi_2015 | not_relevant | 0 | 0 | In vitro cytotoxicity study with no gene variant/genotype/phenotype effects on nefazodone PK/PD parameters. |
 | popPK | Conca_1999 | irrelevant | 0 | 0 | The paper is a case report focusing on pharmacodynamic interactions (EEG/seizure duration) during ECT and does not report any quantitative pharmacokinetic parameters for nefazodone. |
 | PD | Conca_1999 | not_relevant | 1 | 0 | The paper is a single case report describing a qualitative pharmacodynamic interaction (change in anesthetic dosage) without providing any numeric concentration-effect data, dose-response curves, or PD parameters for nefazodone. |
 | popPK | Corsini_1999 | irrelevant | 0 | 0 | The paper is a review of statins where nefazodone is mentioned only as a drug interaction agent, with no PK parameters reported for nefazodone. |
 | PD | Corsini_1999 | not_relevant | 0 | 0 | The text is a review of statins that mentions nefazodone only in the context of a drug-drug interaction (CYP3A4 inhibition) causing increased statin bioavailability, without reporting any pharmacodynamic or exposure-response data for nefazodone itself. |
 | popPK | Costa_2025 | irrelevant | 0 | 0 | no_text gate: only 90 chars of text extracted (&lt; 400) |
 | PD | Costa_2025 | not_relevant | 0 | 0 | The paper focuses on the metabolism and forensic aspects of nefazodone and related compounds, with no pharmacodynamic or exposure-response analysis. |
-| PGx | Costa_2025 | not_relevant | 0 | 0 | The paper discusses the general metabolism and forensic aspects of nefazodone and related compounds but does not report specific pharmacogenomic effects of gene variants on PK/PD parameters. |
-| PGx | Daniel_2003 | not_relevant | 0 | 0 | The study investigates in vitro drug-drug interactions (inhibition of caffeine metabolism by nefazodone) and does not report any pharmacogenomic effects (gene variants) on nefazodone's PK or PD. |
-| PGx | Daniel_2006 | not_relevant | 0 | 0 | The study investigates drug-drug interactions (inhibition/induction of CYP2C6) in rats, not the effect of a genetic variant on the pharmacokinetics or pharmacodynamics of nefazodone. |
-| PGx | Daval_2020 | not_relevant | 0 | 0 | The paper is a clinical trial protocol for budesonide in COVID-19 hyposmia and does not report pharmacogenomic effects on nefazodone PK/PD. |
+| PGx | Costa_2025 | not_relevant | 3 | 3 | Review of metabolism/clinical-forensic aspects of nefazodone and related drugs; no specific gene variant effect on a PK/PD parameter reported. |
+| PGx | Daniel_2003 | not_relevant | 0 | 5 | In vitro rat microsomal drug-drug inhibition study; no gene variant/genotype/phenotype effect on nefazodone PK/PD reported. |
+| PGx | Daniel_2006 | not_relevant | 2 | 5 | Study examines drug-drug/enzyme interactions of nefazodone on rat CYP2C6 activity, not a gene variant/genotype effect on nefazodone PK/PD. |
+| PGx | Daval_2020 | not_relevant | 0 | 0 | Paper is a budesonide trial protocol for COVID-19 hyposmia; no pharmacogenomic data on nefazodone PK/PD. |
 | popPK | DeVane_1998 | irrelevant | 1 | 0 | The paper is a review summarizing pharmacology without providing original quantitative PK parameter values for nefazodone. |
 | PD | DeVane_1998 | not_relevant | 1 | 0 | The text is a qualitative review summarizing pharmacological characteristics and does not provide specific numeric PD parameters or exposure-response data for nefazodone. |
 | popPK | DeVane_2002 | irrelevant | 1 | 0 | The paper is a review of the pharmacology and pharmacodynamics of nefazodone and does not report original quantitative pharmacokinetic parameters. |
 | PD | DeVane_2002 | not_relevant | 2 | 0 | The text is a review article summarizing the pharmacology and mechanism of action of nefazodone without presenting specific numeric PD parameters, concentration-effect curves, or PK/PD modeling results. |
-| PGx | DeVane_2004 | not_relevant | 0 | 0 | The study investigates drug-drug interactions (CYP3A4 inhibition) in a general population, not the effect of a specific gene variant or genotype on pharmacokinetics. |
-| PGx | Desmarais_2010 | not_relevant | 0 | 0 | The paper is a review of drug-drug interactions involving tamoxifen and does not report pharmacogenomic effects on nefazodone's PK or PD parameters. |
+| PGx | DeVane_2004 | not_relevant | 0 | 0 | Nefazodone's effect on CYP3A4/alprazolam PK is a drug-drug interaction, not a gene variant/genotype/phenotype effect. |
+| PGx | Desmarais_2010 | not_relevant | 1 | 1 | Nefazodone is only mentioned as a CYP3A inhibitor affecting tamoxifen metabolism; no gene variant effect on nefazodone PK/PD is reported. |
 | popPK | Dockens_1995 | irrelevant | 2 | 0 | The study focuses on the pharmacokinetics of theophylline, and while nefazodone is co-administered, no quantitative PK parameters (CL, V, etc.) for nefazodone are reported in the evidence. |
 | PD | Dockens_1995 | not_relevant | 0 | 0 | The study reports a lack of interaction and provides only mean PK parameters and qualitative PD comparisons (FEV1) without any concentration-effect modeling or numeric PD parameters for nefazodone. |
 | popPK | Dockens_1996 | irrelevant | 2 | 0 | The study focuses on the pharmacokinetics of digoxin as the subject drug, and while it states that nefazodone's PK was unaffected, it does not report any quantitative disposition parameters (CL, V, etc.) for nefazodone. |
 | PD | Dockens_1996 | not_relevant | 1 | 0 | The study reports PK changes in digoxin and qualitative lack of ECG changes, but provides no numeric PD parameters or concentration-effect relationship for nefazodone. |
 | popPK | Dresser_2000 | irrelevant | 0 | 0 | no_text gate: only 101 chars of text extracted (&lt; 400) |
 | PD | Dresser_2000 | not_relevant | 0 | 0 | The provided text is only the title of a review article and does not contain the full text, data, or numeric PD parameters required to assess the relationship. |
-| PGx | Dresser_2000 | not_relevant | 0 | 0 | The paper discusses CYP3A4 inhibition generally and does not report pharmacogenomic effects on nefazodone PK/PD parameters. |
-| PGx | Ellingrod_1995 | not_relevant | 0 | 0 | The paper is a general review of nefazodone's pharmacology and clinical efficacy, containing no data on gene variants or pharmacogenomic effects on PK/PD parameters. |
+| PGx | Dresser_2000 | not_relevant | 3 | 2 | Paper concerns CYP3A4 inhibition of nefazodone, not a gene variant/genotype effect on PK/PD parameters. |
+| PGx | Ellingrod_1995 | not_relevant | 0 | 0 | Review describes nefazodone's PK/PD and CYP3A4 inhibition but no gene variant/genotype effect on its PK or PD parameters. |
 | popPK | Gallelli_2017 | irrelevant | 0 | 0 | no_text gate: only 71 chars of text extracted (&lt; 400) |
 | PD | Gallelli_2017 | not_relevant | 0 | 0 | The paper focuses on drug-drug interactions in cocaine users and does not report any pharmacodynamic or exposure-response analysis for nefazodone. |
-| PGx | Gallelli_2017 | not_relevant | 0 | 0 | The paper focuses on drug-drug interactions in cocaine users and does not report pharmacogenomic effects on nefazodone PK/PD parameters. |
+| PGx | Gallelli_2017 | not_relevant | 0 | 0 | Paper concerns drug-drug interactions in cocaine users, not pharmacogenomic effects on nefazodone PK/PD parameters. |
 | popPK | Goldberg_1997 | irrelevant | 1 | 0 | The paper is a review discussing efficacy and general pharmacokinetic trends (e.g., reduced clearance in hepatic impairment) without reporting specific quantitative PK parameter values for nefazodone. |
 | PD | Goldberg_1997 | not_relevant | 1 | 0 | The text is a qualitative review of antidepressants in the elderly and mentions PK changes (clearance, plasma concentrations) but provides no numeric PD parameters, dose-response curves, or exposure-response analysis for nefazodone. |
-| PGx | Greene_1997 | not_relevant | 0 | 0 | The paper describes general clinical pharmacokinetics and drug-drug interactions but does not report any pharmacogenomic effects (gene variants) on nefazodone PK/PD. |
-| PGx | Hasselstrøm_2006 | not_relevant | 0 | 0 | The paper investigates the metabolism of quetiapine and mentions nefazodone only as a CYP3A4 inhibitor in a drug-drug interaction context, not as the subject of a pharmacogenomic study. |
+| PGx | Greene_1997 | not_relevant | 2 | 5 | Discusses CYP-mediated metabolism and interactions but no gene variant/genotype effect on nefazodone PK/PD parameters. |
+| PGx | Hasselstrøm_2006 | not_relevant | 0 | 0 | Nefazodone is studied as a CYP3A4 inhibitor (DDI), not a gene variant effect on its own PK/PD. |
 | popPK | Hayasaka_2015 | irrelevant | 0 | 0 | The paper is a meta-analysis of dose equivalence in clinical trials and does not report any pharmacokinetic parameters (CL, V, ka, etc.) for nefazodone. |
 | PD | Hayasaka_2015 | not_relevant | 1 | 0 | The paper reports dose equivalence ratios derived from clinical trial data but does not provide a pharmacodynamic model, concentration-effect curve, or numeric PD parameters (e.g., Emax, EC50) for nefazodone. |
 | popPK | Hesse_2000 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of CYP2B6-mediated bupropion hydroxylation, and nefazodone is only mentioned as an inhibitor with an IC50 value, not as the subject of a pharmacokinetic study. |
 | PD | Hesse_2000 | not_relevant | 1 | 2 | The paper reports an in vitro IC50 for nefazodone inhibiting bupropion metabolism, which is a pharmacokinetic interaction parameter, not a pharmacodynamic exposure-response relationship for nefazodone's therapeutic effect. |
-| PGx | Hesse_2000 | not_relevant | 0 | 0 | The paper studies bupropion metabolism and drug interactions, not the pharmacogenomics of nefazodone. |
-| popPK | Hong_2021 | irrelevant | 0 | 0 | The study is an in-vitro hepatotoxicity assay using 3D cell printing and does not report pharmacokinetic parameters for nefazodone. |
-| PGx | Izzo_2009 | not_relevant | 0 | 0 | The paper reports a drug-herb interaction (St John's wort and nefazodone) causing clinical symptoms, not a pharmacogenomic effect based on a gene variant. |
+| PGx | Hesse_2000 | not_relevant | 2 | 5 | Nefazodone appears only as an in vitro inhibitor (IC50) of bupropion hydroxylation; no gene variant/genotype effect on nefazodone PK/PD is reported. |
+| popPK | Hong_2021 | irrelevant | 1 | 1 | In-vitro hepatotoxicity assay using nefazodone only as a toxicant; no PK disposition parameters reported. |
+| PGx | Izzo_2009 | not_relevant | 0 | 0 | Nefazodone appears only in an herbal interaction case report (St John's wort); no gene variant/genotype effect on PK/PD parameters is reported. |
 | popPK | Kalgutkar_2003 | irrelevant | 0 | 0 | The study focuses on the in-vitro metabolism of haloperidol, with nefazodone serving only as a CYP3A inhibitor/comparator rather than the subject drug for PK parameter estimation. |
 | PD | Kalgutkar_2003 | not_relevant | 0 | 0 | The paper focuses on in vitro CYP3A4/5 metabolism of haloperidol and reports IC50 values for enzyme inhibition by nefazodone, which is a pharmacokinetic/drug-interaction parameter, not a pharmacodynamic exposure-response relationship for nefazodone itself. |
-| PGx | Kalgutkar_2003 | not_relevant | 0 | 0 | The paper focuses on the metabolism of haloperidol and the inhibitory effects of nefazodone on that pathway, rather than reporting a pharmacogenomic effect on nefazodone's own PK or PD parameters. |
+| PGx | Kalgutkar_2003 | not_relevant | 2 | 3 | Nefazodone appears only as a CYP3A inhibitor in haloperidol metabolism; no gene variant effect on nefazodone PK/PD is reported. |
 | popPK | Khouzam_2000 | irrelevant | 2 | 0 | The paper is a review article summarizing pharmacology and clinical efficacy, and the provided evidence contains no original quantitative pharmacokinetic parameter values for nefazodone. |
 | PD | Khouzam_2000 | not_relevant | 1 | 0 | The text is a general review summary that mentions pharmacodynamics but does not provide specific numeric PD parameters or exposure-response data. |
-| popPK | Kilts_2006 | irrelevant | 0 | 0 | The paper is a neuroimaging (PET) study of social anxiety disorder and does not report any pharmacokinetic parameters for nefazodone. |
+| popPK | Kilts_2006 | irrelevant | 0 | 0 | PET neuroimaging study of nefazodone treatment response in social anxiety disorder; no PK parameters (CL, V, ka, half-life) reported anywhere. |
 | popPK | Kostrubsky_2006 | irrelevant | 0 | 0 | The study focuses on in-vitro and in-vivo hepatotoxicity mechanisms (BSEP inhibition, cell toxicity) rather than quantitative pharmacokinetic disposition parameters like clearance or volume of distribution. |
-| PGx | Kot_2007 | not_relevant | 0 | 0 | The study investigates the effect of nefazodone on caffeine metabolism in rats, not the effect of a gene variant on nefazodone's PK/PD. |
-| PGx | Kotlyar_2003 | not_relevant | 0 | 0 | The study reports a drug-drug interaction (nefazodone inhibiting methylprednisolone metabolism) in healthy volunteers, not a pharmacogenomic effect based on gene variants or genotypes. |
+| PGx | Kot_2007 | not_relevant | 0 | 0 | Study examines drug effects on caffeine metabolism in rats, not gene variants affecting nefazodone PK/PD. |
+| PGx | Kotlyar_2003 | not_relevant | 0 | 0 | Drug-drug interaction (nefazodone inhibiting CYP3A4), not a gene variant/genotype/phenotype effect. |
 | popPK | Kroboth_1995 | irrelevant | 2 | 0 | The study is a pharmacodynamic assessment of coadministration, and while it mentions that full pharmacokinetic analyses were done for separate studies, no quantitative PK parameters for nefazodone are reported in the provided evidence. |
-| PGx | Kudo_1999 | not_relevant | 0 | 0 | The paper discusses the pharmacokinetics of haloperidol, not nefazodone. |
-| PGx | Laizure_2000 | not_relevant | 0 | 0 | The text is a general clinical update on nefazodone's mechanism, side effects, and drug interactions, with no mention of genetic variants or pharmacogenomic effects on PK/PD parameters. |
+| PGx | Kudo_1999 | not_relevant | 0 | 0 | The paper concerns haloperidol pharmacokinetics; nefazodone appears only as a CYP3A4-mediated drug interaction, with no pharmacogenomic effect on nefazodone PK/PD parameters reported. |
+| PGx | Laizure_2000 | not_relevant | 0 | 0 | Review discusses nefazodone's CYP3A4 inhibition and interactions but no gene variant effect on PK/PD parameters. |
 | popPK | Lam_2003 | irrelevant | 0 | 0 | no_text gate: only 125 chars of text extracted (&lt; 400) |
-| PGx | Lam_2003 | not_relevant | 0 | 0 | The paper investigates drug-drug interactions (DDIs) with nefazodone, not pharmacogenomic effects (gene variants) on nefazodone's PK/PD. |
-| PGx | Levin_2010 | not_relevant | 0 | 0 | The paper reports a drug-drug interaction (diltiazem-fentanyl) and mentions nefazodone only as a list of other CYP3A4 inhibitors, without reporting any pharmacogenomic effect on nefazodone's PK/PD. |
-| PGx | Mazzarino_2018 | not_relevant | 0 | 0 | The paper investigates the metabolism of SR9009, not nefazodone; nefazodone is only mentioned as a drug-drug interaction inhibitor. |
-| PGx | Michalets_2000 | not_relevant | 0 | 0 | The paper discusses drug-drug interactions (CYP3A4 inhibition) involving nefazodone and cisapride, but does not report any pharmacogenomic effects (gene variants) on PK or PD parameters. |
-| PGx | Ohno_2007 | not_relevant | 0 | 0 | The paper describes a general framework for predicting CYP3A4 drug-drug interactions and does not report any pharmacogenomic effects (gene variants) on the PK or PD of nefazodone. |
-| PGx | Olyaei_1998 | not_relevant | 0 | 0 | The paper reports a drug-drug interaction (nefazodone inhibiting tacrolimus metabolism) in a single patient, not a pharmacogenomic effect of a gene variant on nefazodone's PK/PD. |
+| PGx | Lam_2003 | not_relevant | 0 | 0 | Drug-drug interaction study (CYP inhibitors), no gene variant/genotype/phenotype effects on nefazodone PK/PD. |
+| PGx | Levin_2010 | not_relevant | 0 | 0 | Nefazodone only mentioned as a CYP3A4 inhibitor; no gene variant effect on its PK/PD reported. |
+| PGx | Mazzarino_2018 | not_relevant | 0 | 0 | Nefazodone appears only as a CYP inhibitor in a DDI study of SR9009 metabolism; no gene variant effect on nefazodone PK/PD is reported. |
+| PGx | Michalets_2000 | not_relevant | 0 | 0 | Paper discusses drug–drug interactions with cisapride, not pharmacogenomic effects on nefazodone PK/PD. |
+| PGx | Ohno_2007 | not_relevant | 0 | 0 | Paper models CYP3A4 drug-drug interactions; nefazodone appears only as an inhibitor, with no gene variant/genotype effect on PK/PD. |
+| PGx | Olyaei_1998 | not_relevant | 0 | 0 | Reports a drug-drug interaction (nefazodone inhibiting tacrolimus metabolism), not a pharmacogenomic variant effect on nefazodone PK/PD. |
 | popPK | Owens_1997 | irrelevant | 0 | 0 | The paper reports in-vitro receptor binding affinities (Ki) rather than pharmacokinetic disposition parameters. |
 | PD | Owens_1997 | not_relevant | 0 | 0 | The paper reports in vitro radioligand binding affinities (Ki) for receptors and transporters, which is a pharmacological characterization, but it does not report an in vivo or ex vivo exposure-response or dose-response relationship with numeric PD parameters (e.g., Emax, EC50) for the drug's effect. |
 | popPK | Palleria_2020 | irrelevant | 0 | 0 | The paper is a review of drug-drug interactions between statins and antidepressants and does not report original quantitative pharmacokinetic parameters for nefazodone. |
 | PD | Palleria_2020 | not_relevant | 1 | 0 | The paper is a narrative review discussing potential pharmacokinetic interactions and qualitative pharmacodynamic profiles, but it does not report any specific numeric PD parameters or exposure-response data for nefazodone. |
-| PGx | Pollock_1996 | not_relevant | 0 | 0 | The paper investigates the pharmacogenomics of bupropion, not nefazodone. |
-| PGx | Pozo_2026 | not_relevant | 0 | 0 | The paper evaluates the metabolic capacity of 3D iPSC-derived hepatocytes using nefazodone as a DILI probe, but does not report pharmacogenomic effects (gene variants) on PK/PD parameters. |
-| popPK | Pullar_2000 | irrelevant | 0 | 0 | The paper is a pharmacological study comparing receptor binding and uptake inhibition of LY367265 and nefazodone, containing no pharmacokinetic disposition parameters. |
+| PGx | Pollock_1996 | not_relevant | 0 | 0 | The paper concerns bupropion, not nefazodone; nefazodone is only mentioned as not being metabolized by CYP2D6, with no pharmacogenomic PK/PD data for nefazodone. |
+| PGx | Pozo_2026 | not_relevant | 0 | 0 | Paper evaluates nefazodone cytotoxicity in 3D vs 2D hepatocyte cultures; no gene variant/genotype effect on nefazodone PK/PD parameters is reported. |
+| popPK | Pullar_2000 | irrelevant | 0 | 0 | Nefazodone is only a comparator in an in-vitro receptor/uptake study; no PK parameters for nefazodone are reported. |
 | PD | Pullar_2000 | not_relevant | 0 | 0 | The paper reports in vitro pharmacological binding and functional assay parameters (Ki, IC50, EC50) for a new compound (LY367265) compared to nefazodone, but does not report an in vivo pharmacodynamic or exposure-response relationship for nefazodone. |
-| PGx | Richelson_1997 | not_relevant | 0 | 0 | The paper reviews drug-drug interactions (CYP inhibition) of antidepressants, not pharmacogenomic effects of gene variants on nefazodone PK/PD. |
-| PGx | Richelson_1998 | not_relevant | 0 | 0 | The text discusses drug-drug interactions via CYP enzymes but does not report pharmacogenomic effects (gene variants) on nefazodone PK/PD. |
-| PGx | Rotzinger_2002 | not_relevant | 0 | 0 | The study investigates the role of CYP3A4 in nefazodone metabolism using heterologous enzymes and pooled liver microsomes, but does not report pharmacogenomic effects of specific gene variants or genotypes on PK/PD parameters. |
+| PGx | Richelson_1997 | not_relevant | 2 | 2 | Review of CYP-mediated drug-drug interactions with antidepressants; no gene variant effect on nefazodone PK/PD parameters reported. |
+| PGx | Richelson_1998 | not_relevant | 0 | 0 | Review text only mentions CYP enzyme involvement with antidepressants generally; no gene variant effect on nefazodone PK/PD parameters reported. |
+| PGx | Rotzinger_2002 | not_relevant | 3 | 3 | In vitro enzyme identification of CYP3A4 metabolism; no gene variant/genotype effect on PK/PD parameters reported. |
 | popPK | Salazar_1995 | irrelevant | 2 | 0 | The study focuses on warfarin pharmacokinetics with nefazodone as a co-administered agent, and no quantitative PK parameters (CL, V, etc.) for nefazodone are provided in the evidence. |
 | PD | Salazar_1995 | not_relevant | 0 | 0 | The study reports PK parameters and qualitative safety outcomes (prothrombin ratio) but does not provide numeric PD parameters or an exposure-response relationship for nefazodone. |
 | popPK | Salazar_1995_2 | irrelevant | 2 | 0 | The study focuses on the interaction with propranolol and reports only relative changes in propranolol's PK, stating nefazodone's PK was "largely unaffected" without providing specific quantitative disposition parameters (CL, V, etc.) for nefazodone. |
 | PD | Salazar_1995_2 | not_relevant | 2 | 1 | The paper reports qualitative changes in pharmacodynamic endpoints (tachycardia, double product) and PK parameters, but does not provide numeric PD parameters (e.g., Emax, EC50) or a concentration-effect curve for nefazodone. |
-| PGx | Schmider_1996 | not_relevant | 0 | 0 | The paper investigates in vitro CYP450 inhibition by nefazodone and its metabolites, but does not report any pharmacogenomic effects (gene variants) on PK or PD parameters. |
+| PGx | Schmider_1996 | not_relevant | 0 | 0 | Paper studies nefazodone's inhibition of CYP enzymes in vitro, not a gene variant effect on nefazodone PK/PD. |
 | popPK | Shin_2014 | irrelevant | 0 | 0 | The study is an in-vitro electrophysiological investigation of hERG channel inhibition and does not report any pharmacokinetic parameters for nefazodone. |
-| PGx | Shubbar_2020 | not_relevant | 0 | 0 | The paper investigates the effect of nefazodone on ABC transporter-mediated amyloid-beta transport in vitro, not the effect of a gene variant on nefazodone's PK or PD parameters. |
+| PGx | Shubbar_2020 | not_relevant | 0 | 0 | In vitro drug effects on transporter activity; no gene variant/genotype or PK/PD parameter of nefazodone reported. |
 | popPK | Silva_2016 | irrelevant | 0 | 0 | The paper is an in-vitro mechanistic study on mitochondrial toxicity in HepG2 cells and does not report pharmacokinetic parameters for nefazodone. |
 | PD | Silva_2016 | not_relevant | 3 | 2 | The paper describes in vitro cellular toxicity mechanisms and mentions dose-response curves for viability to select concentrations, but it does not report a pharmacodynamic model or numeric PD parameters (e.g., EC50, Emax) for the drug's therapeutic or toxic effect in a PK/PD context. |
 | popPK | Störmer_2001 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of P-glycoprotein interactions in cell culture and does not report quantitative pharmacokinetic disposition parameters (CL, V, ka, etc.) for nefazodone. |
-| PGx | Taylor_1999 | not_relevant | 0 | 0 | The paper reports a drug-drug interaction (nefazodone inhibiting clozapine metabolism) but does not report a pharmacogenomic effect (gene variant/genotype) on a PK/PD parameter. |
-| PGx | Ucar_2000 | not_relevant | 0 | 0 | The paper discusses nefazodone only as a drug-drug interaction inhibitor of statins, not as the primary drug of interest for pharmacogenomic analysis. |
-| PGx | Wen_2008 | not_relevant | 0 | 0 | The paper investigates the metabolic bioactivation of trazodone and its metabolite m-CPP, mentioning nefazodone only as a context for m-CPP, but does not report pharmacogenomic effects on nefazodone PK/PD parameters. |
-| PGx | Wójcikowski_2013 | not_relevant | 0 | 0 | The study investigates the effect of nefazodone on CYP2C11 activity in rats, not the effect of a gene variant on nefazodone's PK/PD. |
+| PGx | Taylor_1999 | not_relevant | 0 | 0 | Drug-drug interaction (nefazodone inhibiting CYP3A4), not a gene variant/genotype effect on clozapine PK. |
+| PGx | Ucar_2000 | not_relevant | 0 | 0 | Nefazodone is only mentioned as a CYP3A4 inhibitor raising statin myotoxicity risk; no gene variant effect on nefazodone PK/PD is reported. |
+| PGx | Wen_2008 | not_relevant | 2 | 3 | In vitro CYP2D6-mediated bioactivation of m-CPP (a nefazodone metabolite) is described, but no genotype/phenotype effect on a PK/PD parameter of nefazodone is reported. |
+| PGx | Wójcikowski_2013 | not_relevant | 0 | 0 | Study examines drug effects on rat CYP2C11 enzyme activity, not a gene variant/genotype effect on nefazodone PK/PD parameters. |
 | popPK | Zhou_2025 | irrelevant | 0 | 0 | The paper is a systematic review and network meta-analysis of antidepressant efficacy and dose-response relationships, not a pharmacokinetic study, and it reports no quantitative PK parameters for nefazodone. |
 | PD | Zhou_2025 | not_relevant | 2 | 1 | The paper is a network meta-analysis that qualitatively describes nefazodone's dose-response curve as "fairly flat" but does not provide specific numeric PD parameters (e.g., Emax, EC50) or a quantitative concentration-effect model for nefazodone. |
 | popPK | von_1996 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of triazolam, with nefazodone serving only as an in-vitro inhibitor probe rather than the subject drug for PK parameter estimation. |

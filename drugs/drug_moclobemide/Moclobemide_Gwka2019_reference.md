@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N06A&quot;,&quot;href&quot;:&quot;atc/N06A.md&quot;},{&quot;label&quot;:&quot;moclobemide&quot;,&quot;href&quot;:&quot;drugs/drug_moclobemide/&quot;},{&quot;label&quot;:&quot;G\u0142\u00f3wka_2019 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Moclobemide_Gwka2019_reference&quot;,&quot;label&quot;:&quot;G\u0142\u00f3wka_2019_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_moclobemide/Moclobemide_Gwka2019_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Moclobemide_Gwka2019_reference&quot;,&quot;label&quot;:&quot;G\u0142\u00f3wka_2019_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_moclobemide/Moclobemide_Gwka2019_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # moclobemide — `Moclobemide_Gwka2019_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.643). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.643). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -25,12 +25,14 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on paramet
 
 <sub>reviewed by glm-5.3-flash</sub>
 
+> ⚠️ **STALE** — review status `needs_review` (reviewed 2026-09-28 14:39:05.680961+00:00) predates the upstream re-run (2026-10-06 23:42:19.318648+00:00). Current validate status: `extracted`.
+
 ## Citation
 Główka FK et al., Bioavailability of moclobemide from two…, Die Pharmazie (2019)
   ·  DOI: [10.1691/ph.2019.8819](https://doi.org/10.1691/ph.2019.8819)
 
 ## Model component
-<dbs-pgx drug="moclobemide" model-id="Moclobemide_Gwka2019_reference" status="needs_review" stale="false" population="healthy humans" measured-compound="moclobemide" parameterization="apparent" topology="1C"></dbs-pgx>
+<dbs-pgx drug="moclobemide" model-id="Moclobemide_Gwka2019_reference" status="extracted" stale="true" population="healthy humans" measured-compound="moclobemide" parameterization="apparent" topology="1C"></dbs-pgx>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 3 extracted.
@@ -38,8 +40,6 @@ Główka FK et al., Bioavailability of moclobemide from two…, Die Pharmazie (2
 **Parameterization:** CL/F, V/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
 ## Parameters
-> ⚠️ This record is not accepted (current status `needs_review`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
-
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
 | CL/f [l/h] | `Q27` · CL/F | 67.8 | l/h | 1.883333333333333e-05 | L/h | not captured | review (0.7) | Główka_2019:review | — | not captured |
@@ -136,7 +136,7 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_moclobemide/Moclobemide_Gwka2019_reference/Moclobemide_Gwka2019_reference_modelica.zip" download>Moclobemide_Gwka2019_reference_modelica.zip</a> <span class="pk-size">(3.7 kB)</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_moclobemide/Moclobemide_Gwka2019_reference/Moclobemide_Gwka2019_reference_modelica.zip" download>Moclobemide_Gwka2019_reference_modelica.zip</a> <span class="pk-size">(4.1 kB)</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_moclobemide/Moclobemide_Gwka2019_reference/Moclobemide_Gwka2019_reference_fmi.zip" download>Moclobemide_Gwka2019_reference_fmi.zip</a> <span class="pk-size">(4.3 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_moclobemide/Moclobemide_Gwka2019_reference/Moclobemide_Gwka2019_reference_matlab.zip" download>Moclobemide_Gwka2019_reference_matlab.zip</a> <span class="pk-size">(3.5 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_moclobemide/Moclobemide_Gwka2019_reference/Moclobemide_Gwka2019_reference_matlab_simbio.zip" download>Moclobemide_Gwka2019_reference_matlab_simbio.zip</a> <span class="pk-size">(2.9 kB)</span></td></tr>
@@ -149,7 +149,7 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-**Administration: oral** — 150 mg, single dose, first-order absorption (ka 0.5 /h, lag 12.1 min, F 1). Dose in the paper: 150 mg.
+**Administration: oral** — 300 mg, single dose, first-order absorption (ka 0.5 /h, lag 12.1 min, F 1). _The paper's dose was not captured; the default is the WHO ATC DDD 300 mg oral (N06AG02) (defined daily dose)._
 
 <dbs-fmusim paramsurl="drugs/drug_moclobemide/Moclobemide_Gwka2019_reference/Moclobemide_Gwka2019_reference_params.json" metaurl="assets/fmu/PK_1C_enteral.vr.json" wasmurl="assets/fmu/PK_1C_enteral.js" controlsurl="drugs/drug_moclobemide/Moclobemide_Gwka2019_reference/Moclobemide_Gwka2019_reference_sim_controls.json"></dbs-fmusim>
 
@@ -158,4 +158,4 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-07-15 13:37 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-06 23:42 UTC</sub>

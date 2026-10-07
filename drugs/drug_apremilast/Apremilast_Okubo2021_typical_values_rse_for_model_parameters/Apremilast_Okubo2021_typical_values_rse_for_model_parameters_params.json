@@ -1,0 +1,38 @@
+{
+ "dose_source": "paper",
+ "model_id": "Apremilast_Okubo2021_typical_values_rse_for_model_parameters",
+ "molar_masses": {
+  "central.C": 0.4605
+ },
+ "note": "Values for the shared PK_1C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "paper_doses_kind": "discrete",
+ "paper_doses_mg": [
+  10.0,
+  20.0,
+  30.0
+ ],
+ "parameters": {
+  "Cl": 2.5694444444444443e-06,
+  "F": 1.0,
+  "MM": 0.4605,
+  "Tlag": 1044.0,
+  "VdPerKg": 0.001642857142857143,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 1e-05,
+  "ka": 0.0005083333333333334,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 7791.583166332665
+ },
+ "reference_peaks": {
+  "central.C": 7.530587373529452e-05
+ },
+ "stop_time": 162000.0,
+ "template": "PK_1C_enteral",
+ "template_fmu": "PK_1C_enteral.fmu"
+}

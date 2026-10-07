@@ -1,5 +1,4 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N06A&quot;,&quot;href&quot;:&quot;atc/N06A.md&quot;},{&quot;label&quot;:&quot;desipramine&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Desipramine_Gueorguieva2010_reference&quot;,&quot;label&quot;:&quot;Gueorguieva_2010_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_desipramine/Desipramine_Gueorguieva2010_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 # desipramine
 
@@ -15,19 +14,38 @@ Desipramine is a tricyclic antidepressant used for depression and has also been 
 
 <small>Summary written by `glm-5.3-flash` from [Wikidata Q423288](https://www.wikidata.org/wiki/Q423288) and the WHO ATC classification; not checked by a person.</small>
 
+## Molecules and molar masses
+
+> The molar mass each model uses to convert mass to molar concentration and to form a metabolite molecule for molecule. Looked up, never estimated: DrugBank for the drug, the paper's own value or the PubChem entry matched to the paper's name for a metabolite.
+
+| molecule | role | molar mass (g/mol) | formula | source | PubChem | records |
+|---|---|---|---|---|---|---|
+| desipramine | parent | 266.381 | C18H22N2 | DrugBank | [2995](https://pubchem.ncbi.nlm.nih.gov/compound/2995) | Asiimwe_2024, Gueorguieva_2010 |
+
 ## Extraction summary
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-23 20:10 | 4:58 | 0/1/2 | 0/0/0 | 0/0/0 | 81,632/8,690 | ollama / qwen3.8:27b-mtp-q8_0 | 16 | 14/0 | 5/0 | 0 |
+| 2026-10-06 22:20 | 3:21 | 0/3/1 | 3/0/1 | 0/0/0 | 167,767/15,239 | ollama / glm-5.3-flash | 16 | 14/2 | 5/0 | 0 |
 
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.571). The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: disposition incomplete — only volume extracted — the engineer needs both; the m…</sub><br><sub>route_to: `human_review`</sub> | [Asiimwe_2024_reference](drugs/drug_desipramine/Desipramine_Asiimwe2024_reference.md) | held back | 2-compartment, IV | 3 | Asiimwe IG et al., Machine-Learning Assisted Screening of…, The AAPS journal (2024) | [10.1208/s12248-024-00934-6](https://doi.org/10.1208/s12248-024-00934-6) |
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.444). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: T1_t_half_terminal</sub><br><sub>blocking: T1_t_half_beta</sub><br><sub>route_to: `scholar`</sub> | [Gueorguieva_2010_reference](drugs/drug_desipramine/Desipramine_Gueorguieva2010_reference.md) | ▶ model + simulator | 2-compartment, IV | 5 | Gueorguieva I et al., Desipramine, substrate for CYP2D6 activ…, British journal of clinical… (2010) | [10.1111/j.1365-2125.2010.03731.x](https://doi.org/10.1111/j.1365-2125.2010.03731.x) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.444). The first reading is what the record holds.">cross-check: disputed</span><br><sub>STALE — current validate: needs_review</sub><br><sub>blocking: C6_cl_magnitude failed (ratio None)</sub><br><sub>route_to: `human_review`</sub> | [Gueorguieva_2010_reference](drugs/drug_desipramine/Desipramine_Gueorguieva2010_reference.md) | — | 2-compartment (no model) | 4 | Gueorguieva I et al., Desipramine, substrate for CYP2D6 activ…, British journal of clinical… (2010) | [10.1111/j.1365-2125.2010.03731.x](https://doi.org/10.1111/j.1365-2125.2010.03731.x) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.571). The first reading is what the record holds.">cross-check: partial</span><br><sub>STALE — current validate: rejected</sub><br><sub>blocking: C9 clearance/volume outside physiological window (implausible magnitude — unit/…</sub><br><sub>route_to: `human_review`</sub> | [Asiimwe_2024_reference](drugs/drug_desipramine/Desipramine_Asiimwe2024_reference.md) | — | 2-compartment (no model) | 4 | Asiimwe IG et al., Machine-Learning Assisted Screening of…, The AAPS journal (2024) | [10.1208/s12248-024-00934-6](https://doi.org/10.1208/s12248-024-00934-6) |
 | <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.688). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [DeVane_1981_reference](drugs/drug_desipramine/Desipramine_DeVane1981_reference.md) | — | 1-compartment (no model) | 8 | DeVane CL et al., Desipramine and 2-hydroxy-desipramine p…, European journal of clinica… (1981) | [10.1007/BF00558386](https://doi.org/10.1007/BF00558386) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (monkey), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">monkey</span><br><sub>blocking: C9 clearance/volume outside physiological window (implausible magnitude — unit/…</sub><br><sub>route_to: `human_review`</sub> | [Raffel_2013_reference](drugs/drug_desipramine/Desipramine_Raffel2013_reference.md) | — | 1-compartment (no model) | 2 | Raffel DM et al., Quantification of cardiac sympathetic n…, Journal of nuclear medicine… (2013) | [10.2967/jnumed.113.120659](https://doi.org/10.2967/jnumed.113.120659) |
+
+## Pharmacodynamics (PD)
+
+| status | detail | about | model | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Ho_2005_Ca2_i](drugs/drug_desipramine/pd_Ho_2005_Ca2_i.md) | intracellular Ca2+ concentration ([Ca2+]i) rise in MDCK renal tubular cells ← desipramine · direct Emax (saturable) effect | — | Ho CM et al., Effect of desipramine on Ca2+ levels an…, Cellular signalling (2005) | [10.1016/j.cellsig.2004.11.005](https://doi.org/10.1016/j.cellsig.2004.11.005) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Jan_2003_Ca_2_i](drugs/drug_desipramine/pd_Jan_2003_Ca_2_i.md) | intracellular Ca(2+) concentration ([Ca(2+)]i) rise ← desipramine · direct Emax (saturable) effect | — | Jan CR et al., Effect of the antidepressant desipramin…, Pharmacology (2003) | [10.1159/000073663](https://doi.org/10.1159/000073663) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="Animal study (rabbit), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rabbit</span> | [Shin_2018_Kv_current](drugs/drug_desipramine/pd_Shin_2018_Kv_current.md) | voltage-dependent K+ (Kv) current amplitude ← desipramine · direct sigmoid Emax (Hill) effect | — | Shin SE et al., Inhibition of the Voltage-Dependent K, Cardiovascular toxicology (2018) | [10.1007/s12012-017-9435-x](https://doi.org/10.1007/s12012-017-9435-x) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span> | [Argenti_1994_beta_receptor_density](drugs/drug_desipramine/pd_Argenti_1994_beta_receptor_density.md) | cortical beta adrenergic receptor density downregulation ← desipramine · direct Emax (saturable) effect | — | Argenti D et al., The pharmacodynamics of desipramine and…, The Journal of pharmacology… (1994) | — |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span> | [Argenti_1994_beta_receptor_density_2](drugs/drug_desipramine/pd_Argenti_1994_beta_receptor_density_2.md) | cortical beta adrenergic receptor density downregulation ← desmethyldesipramine · direct Emax (saturable) effect | — | Argenti D et al., The pharmacodynamics of desipramine and…, The Journal of pharmacology… (1994) | — |
 
 ## ADME sites
 
@@ -65,8 +83,8 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 ## Coverage
 
 - **PubMed hits:** 76 matched, 20 returned
-- **screened:** 14  ·  **relevant:** 6
-- **records:** 3  ·  extracted 0  ·  needs_review 2  ·  rejected 1  ·  stale 0
+- **screened:** 14  ·  **relevant:** 2
+- **records:** 4  ·  extracted 0  ·  needs_review 1  ·  rejected 3  ·  stale 2
 - **scholar-agent fallback query used:** not captured
 
 ## Full text wanted
@@ -75,20 +93,35 @@ _4 paper(s) judged relevant from the abstract, with no full text on disk — pay
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Tamayo_1992.pdf` | Tamayo M et al., Population pharmacokinetics of imiprami…, European journal of clinica… (1992) | popPK | 9 | [10.1007/BF02280761](https://doi.org/10.1007/BF02280761) | [1505617](https://pubmed.ncbi.nlm.nih.gov/1505617) | The paper explicitly reports quantitative population pharmacokinetic parameters, including elimination constants and half-lives, for desipramine modeled as an active metabolite in children. |
-| `Weiner_1981.pdf` | Weiner D et al., Pharmacokinetic linearity of desipramin…, Journal of pharmaceutical s… (1981) | popPK | 9 | [10.1002/jps.2600700929](https://doi.org/10.1002/jps.2600700929) | [6101159](https://pubmed.ncbi.nlm.nih.gov/6101159) | The paper reports quantitative compartmental pharmacokinetic parameters (Ka, Ke, t1/2, F/V) for desipramine in humans following single oral doses. |
-| `Sistovaris_1983.pdf` | Sistovaris N et al., Thin-layer chromatographic determinatio…, Journal of chromatography (1983) | popPK | 8 | [10.1016/s0378-4347(00)84844-6](https://doi.org/10.1016/s0378-4347(00)84844-6) | [6643612](https://pubmed.ncbi.nlm.nih.gov/6643612) | The paper reports quantitative compartmental pharmacokinetic parameters (half-lives, AUC, Cmax, and renal clearance) for desipramine in humans. |
-| `Yuen_2017.pdf` | Yuen E et al., Prediction of human efficacious antidep…, Pharmacology, biochemistry,… (2017) | popPK | 8 | [10.1016/j.pbb.2017.09.002](https://doi.org/10.1016/j.pbb.2017.09.002) | [28888484](https://pubmed.ncbi.nlm.nih.gov/28888484) | The study develops population PK/PD models for desipramine in mice to quantitatively translate behavioral efficacy data to human doses. |
+| `DeVane_1981_2.pdf` | DeVane CL et al., Desipramine and 2-hydroxy-desipramine p…, European journal of clinica… (1981) | popPK | 8 | [10.1007/BF00558386](https://doi.org/10.1007/BF00558386) | [7461025](https://pubmed.ncbi.nlm.nih.gov/7461025) | Human PK study of desipramine and its metabolite with compartmental modeling, but numeric parameter values (CL, V, t½) are not present in the abstract evidence provided. |
+| `Tamayo_1992.pdf` | Tamayo M et al., Population pharmacokinetics of imiprami…, European journal of clinica… (1992) | popPK | 8 | [10.1007/BF02280761](https://doi.org/10.1007/BF02280761) | [1505617](https://pubmed.ncbi.nlm.nih.gov/1505617) | Population PK of imipramine with desipramine as active metabolite after parent dosing; only elimination constants (0.0425, 0.0359 h⁻¹) are given, other parameters not shown in evidence. |
+| `Weiner_1981.pdf` | Weiner D et al., Pharmacokinetic linearity of desipramin…, Journal of pharmaceutical s… (1981) | popPK | 7 | [10.1002/jps.2600700929](https://doi.org/10.1002/jps.2600700929) | [6101159](https://pubmed.ncbi.nlm.nih.gov/6101159) | Human PK study of desipramine with a one-compartment model, but no numeric parameter values appear in the evidence provided. |
+| `Yuen_2017.pdf` | Yuen E et al., Prediction of human efficacious antidep…, Pharmacology, biochemistry,… (2017) | popPK | 7 | [10.1016/j.pbb.2017.09.002](https://doi.org/10.1016/j.pbb.2017.09.002) | [28888484](https://pubmed.ncbi.nlm.nih.gov/28888484) | Population PK/PD modeling of desipramine in mice is described, but numeric PK parameter values (CL, V, etc.) are not shown in the abstract and likely reside in tables/supplementary material not provided. |
 
-<sub>queue written 2026-07-18T03:05:52.185918+00:00 · relevance threshold 5</sub>
+<sub>queue written 2026-10-06T22:17:53.097475+00:00</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Broch_1987 | irrelevant | not captured | not captured | Desipramine is used only as a comparator in a rat brain neurotransmitter metabolism study, with no pharmacokinetic parameters reported. |
-| popPK | Mu_2020 | irrelevant | not captured | not captured | Desipramine is used solely as a NET-blocking agent and no pharmacokinetic parameters are reported for it. |
-| popPK | Raffel_2013 | irrelevant | not captured | not captured | Desipramine is used solely as a pharmacological NET inhibitor to validate the radiotracer 11C-GMO, with no pharmacokinetic parameters reported for desipramine itself. |
+| popPK | Argenti_1994 | irrelevant | 3 | 2 | This is a pharmacodynamic (receptor downregulation) study in rats; only tissue:blood ratios and ED50/EC50/Emax are given, no PK disposition parameters (CL, V, t½) for desipramine. |
+| popPK | Baumann_1996_2 | irrelevant | 2 | 1 | Review on SSRI pharmacokinetics where desipramine is only mentioned as a CYP2D6 probe/comparator, with no quantitative disposition parameters for desipramine. |
+| popPK | Broch_1987 | irrelevant | 0 | 0 | Neurochemical turnover study in rat brain; desipramine is only a comparator drug with no PK parameters reported. |
+| popPK | DeVane_1981_2 | relevant | 8 | 3 | Human PK study of desipramine and its metabolite with compartmental modeling, but numeric parameter values (CL, V, t½) are not present in the abstract evidence provided. |
+| popPK | Ho_2005 | irrelevant | 0 | 0 | In vitro cellular Ca2+ study with no pharmacokinetic disposition parameters for desipramine. |
+| popPK | Jan_2003 | irrelevant | 0 | 0 | In-vitro cellular Ca(2+) study with no pharmacokinetic disposition parameters for desipramine. |
+| popPK | Mosaddeghi_1989 | irrelevant | 0 | 0 | In-vitro rat cortical slice pharmacology study; desipramine is a co-administered uptake inhibitor, no PK parameters reported. |
+| popPK | Mu_2020 | irrelevant | 0 | 0 | Desipramine is only used as a NET-blocking probe in a PET tracer ([11C]mHED) kinetic study in mice; no PK parameters of desipramine itself are reported. |
+| popPK | Pancrazio_1998 | irrelevant | 0 | 0 | In-vitro electrophysiology study of Na+ channel blockade with no pharmacokinetic disposition parameters for desipramine. |
+| popPK | Raffel_2013 | irrelevant | 1 | 1 | Desipramine is only a NET-blocking probe; the PK/kinetic parameters are for the radiotracer 11C-GMO, not for desipramine itself. |
+| popPK | Shin_2018 | irrelevant | 0 | 0 | In-vitro electrophysiology study of desipramine's effect on Kv channels; no pharmacokinetic disposition parameters reported. |
+| popPK | Sistovaris_1983 | irrelevant | 3 | 2 | Desipramine appears only as the desmethyl metabolite of dosed imipramine (analytical method paper); no numeric PK parameter values for desipramine are given, only assay detection limits. |
+| popPK | Sudhir_1990 | irrelevant | 0 | 0 | Desipramine is only used as a neuronal uptake tool in an in vitro vascular reactivity study; no PK parameters reported. |
+| popPK | Tamayo_1992 | relevant | 8 | 4 | Population PK of imipramine with desipramine as active metabolite after parent dosing; only elimination constants (0.0425, 0.0359 h⁻¹) are given, other parameters not shown in evidence. |
+| popPK | Tyagi_2010 | irrelevant | 0 | 0 | Desipramine is only a CYP2D6 probe drug in a mirabegron drug-profile review; no PK parameter values are reported. |
+| popPK | Weiner_1981 | relevant | 7 | 2 | Human PK study of desipramine with a one-compartment model, but no numeric parameter values appear in the evidence provided. |
+| popPK | Yuen_2017 | relevant | 7 | 3 | Population PK/PD modeling of desipramine in mice is described, but numeric PK parameter values (CL, V, etc.) are not shown in the abstract and likely reside in tables/supplementary material not provided. |
+| popPK | von_1995 | irrelevant | 0 | 0 | Desipramine is only used as a neuronal uptake blocker in a rat atrial neurotransmitter release study; no PK parameters for desipramine are reported. |
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-09-23 20:06 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-10-06 22:18 UTC</sub>

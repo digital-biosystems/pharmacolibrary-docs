@@ -1,21 +1,37 @@
-<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;para_toluenesulfonamide&quot;}]"></div>
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01X&quot;,&quot;href&quot;:&quot;atc/L01X.md&quot;},{&quot;label&quot;:&quot;para-toluenesulfonamide&quot;}]"></div>
 
-# para_toluenesulfonamide
+# para-toluenesulfonamide
 
-- **generic name:** not captured
-- **ATC codes:** not captured
-- **DrugBank:** not captured · **PubChem:** not captured
-- **groups:** not captured
+- **generic name:** para-toluenesulfonamide
+- **ATC codes:** `L01XX83`
+- **DrugBank:** [DB17299](https://go.drugbank.com/drugs/DB17299) · **PubChem:** not captured
+- **molar mass:** 171.21 g/mol (C7H9NO2S) — DrugBank
+- **groups:** investigational
+
+## About
+
+p-Toluenesulfonamide is a benzenesulfonamide compound classified as an investigational antineoplastic agent. It is not an approved medicine; it remains under investigation as a cancer treatment and is not widely used in routine care.
+
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q23013959](https://www.wikidata.org/wiki/Q23013959) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| not captured | not captured | 0/0/0 | 0/0/0 | 0/0/0 | not captured | not captured | 0 | 0/0 | 0/0 | 0 |
+| not captured | not captured | 0/0/0 | 0/0/0 | 0/0/0 | not captured | not captured | 1 | 0/0 | 1/0 | 0 |
 
 ## popPK records
 
 _not available_
+
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=para_toluenesulfonamide) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+
+<sub>Actors without a tissue in the table: CA12 (inhibitor), CA2 (inhibitor), CA6 (inhibitor), CA9 (inhibitor).</sub>
 
 <details class="legend">
 <summary>Badge legend — what each badge means</summary>
@@ -25,7 +41,7 @@ _not available_
 
 ## Coverage
 
-- **PubMed hits:** 0 matched, 0 returned
+- **PubMed hits:** 9 matched, 9 returned
 - **screened:** 0  ·  **relevant:** 0
 - **records:** 0  ·  extracted 0  ·  needs_review 0  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** not captured

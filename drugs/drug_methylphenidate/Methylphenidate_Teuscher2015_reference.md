@@ -4,7 +4,7 @@
 
 # methylphenidate — `Methylphenidate_Teuscher2015_reference`
 
-> ## <span class="pk-badge pk-badge--orange">built, not shipped</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.667). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.667). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -12,7 +12,7 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
-**Model:** A model was built but held back: a core parameter had no value, so it is not published or simulated.
+**Model:** No model was generated from this record.
 
 ### Reviewer guidance
 
@@ -24,61 +24,48 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 
 <sub>reviewed by rule template (no LLM)</sub>
 
-> **Dose compound ≠ measured compound:** dosed `methylphenidate hydrochloride extended-release multiple-layer beads`, measured `methylphenidate`.
+> ⚠️ **STALE** — review status `model_quarantined` (reviewed 2026-09-28 14:38:56.003890+00:00) predates the upstream re-run (2026-10-07 00:53:26.066291+00:00). Current validate status: `rejected`.
+
+> **Dose compound ≠ measured compound:** dosed `methylphenidate hydrochloride (MPH-MLR)`, measured `methylphenidate`.
 
 ## Citation
 Teuscher NS et al., Population pharmacokinetics of methylph…, Drug design, development an… (2015)
   ·  DOI: [10.2147/DDDT.S83234](https://doi.org/10.2147/DDDT.S83234)
 
 ## Model component
-<dbs-pgx drug="methylphenidate" model-id="Methylphenidate_Teuscher2015_reference" status="model_quarantined" stale="false" population="pediatric subjects with attention deficit hyperactivity disorder" measured-compound="methylphenidate" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<dbs-pgx drug="methylphenidate" model-id="Methylphenidate_Teuscher2015_reference" status="rejected" stale="true" population="pediatric subjects with ADHD" measured-compound="methylphenidate" parameterization="mechanistic" topology="1C"></dbs-pgx>
 
-**Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
-**Parameters:** 5 extracted.
+**Model structure:** 1-compartment; no model was built for this record.  
+**Parameters:** 0 extracted.
 
 **Parameterization:** mechanistic.
 
 ## Parameters
-> ⚠️ This record is not accepted (current status `model_quarantined`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
+> ⚠️ This record is not accepted (current status `rejected`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
 
-| label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
-|---|---|---|---|---|---|---|---|---|---|---|
-| E max | `Q320` · Emax | -34.96 | not captured | not captured | not captured | not captured | llm (0.5) | tab_0:row4:col1 | — | not captured |
-| EC 50 (ng/mL) | `Q321` · EC50 | 5.77 | ng/mL | not captured | [ng] / [ml] | not captured | llm (0.5) | tab_0:row5:col1 | — | not captured |
-| CL (L/h) | `Q22` · CL | 1.3 | not captured | not captured | L/h | not captured | exact (1.0) | Teuscher_2015:other_prose | — | not captured |
-| V (L) | `Q61` · V | 64.7 | not captured | not captured | L | not captured | exact (1.0) | Teuscher_2015:other_prose | — | not captured |
-| tlag (h) | `Q83` · tlag | 5.75 | not captured | not captured | h | not captured | exact (1.0) | Teuscher_2015:other_prose | — | not captured |
-
-<details class="legend">
-<summary>Column legend — what each column means</summary>
-<table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>label (paper)</code></td><td>the row or statistic label exactly as printed in the paper (label_verbatim) — never normalised, so it can be found in the PDF.</td></tr><tr><td><code>Q-code · name</code></td><td>the ontology parameter this label was matched to (Q22 = clearance, Q27 = CL/F, Q49 = ka, Q57 = half-life, …) and its canonical name. The Q-code, not the label, is what scoring and cross-paper merging use.</td></tr><tr><td><code>value</code></td><td>the estimate as reported in the paper.</td></tr><tr><td><code>unit</code></td><td>the unit as printed (unit_verbatim).</td></tr><tr><td><code>value_si</code></td><td>the value converted to the canonical unit. Empty when no conversion was possible — usually an unparseable or missing unit.</td></tr><tr><td><code>unit_canonical</code></td><td>the canonical unit for that Q-code, i.e. what value_si is expressed in.</td></tr><tr><td><code>RSE%</code></td><td>relative standard error of the estimate, when the paper reports one.</td></tr><tr><td><code>link</code></td><td>how the label was matched to the Q-code, with confidence. exact / boundary / fuzzy / tv_prefix / caption_compartment / special_case are deterministic string matches; llm, llm_confirmed, llm_corrected involved the model; review and review_gapfill come from the secondary review tier, the latter filling a parameter the primary extraction missed; boundary_relink is a corrected match.</td></tr><tr><td><code>source</code></td><td>where in the paper the number came from: colN = that column of the located table, other_prose = running text, review = the secondary tier, pgx = a pharmacogenomic record.</td></tr><tr><td><code>covariates</code></td><td>covariate effects attached to this parameter (e.g. weight on CL).</td></tr><tr><td><code>IIV</code></td><td>inter-individual variability reported for this parameter.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>the field is absent from the KB artifact — nothing was recorded. This is NOT the same as zero or empty: the value is unknown, not measured to be nothing.</td></tr><tr><td><code>—</code></td><td>deliberately not shown: the column does not apply to this row.</td></tr><tr><td><code>not verified</code></td><td>the record is not in an accepted state (see the badge and the note above the table); the numbers are shown as extracted, not endorsed.</td></tr></tbody></table>
-</details>
-
-### Unresolved rows _(no Q-code or no value — not parameters)_
-| label (paper) | Q-code | value | link |
-|---|---|---|---|
-| 1-F1 | Q87 | not captured | llm |
+_No resolved parameters._
 
 ## Departures & gaps
 
 **Interpretation flags:**
-- dropped unlinked row (NIL): 'log likelihood' — extend the ontology if this is a real PK parameter (source ['tab_0:row2:col1'])
-- dropped duplicate Q320 ('ωE max', value '0.028') — already have one for this compound
-- dropped duplicate Q321 ('ωEC 50', value '1.01') — already have one for this compound
-- dropped unlinked row (NIL): 'ε' — extend the ontology if this is a real PK parameter (source ['tab_0:row11:col1'])
-- dropped value-less row: 'Ka1'
+- table section residual_error: 'Log likelihood' routed out of structural estimates ('Proportional residual error')
+- table section residual_error: 'CL (L/h)' routed out of structural estimates ('Proportional residual error')
+- table section residual_error: 'V (L)' routed out of structural estimates ('Proportional residual error')
+- table section residual_error: 'F1' routed out of structural estimates ('Proportional residual error')
+- table section residual_error: 'Ka1 (1/h)' routed out of structural estimates ('Proportional residual error')
+- table section residual_error: 'Ka2 (1/h)' routed out of structural estimates ('Proportional residual error')
+- table section residual_error: 'tlag (h)' routed out of structural estimates ('Proportional residual error')
+- table section residual_error: 'θ (effect of body weight on CL)' routed out of structural estimates ('Proportional residual error')
+- table section residual_error: 'ωCL' routed out of structural estimates ('Proportional residual error')
+- table section residual_error: 'ωV' routed out of structural estimates ('Proportional residual error')
+- table section residual_error: 'ε' routed out of structural estimates ('Residual variability parameter')
 - dropped value-less row: 'F1'
-- dropped value-less row: 'Ka2'
-- dropped value-less row: 'tlag'
-- dropped value-less row: 'V'
-- dropped value-less row: 'CL'
-- salvaged Q22 ('CL (L/h)'=1.3) from results prose — parameter table was unreadable
-- salvaged Q61 ('V (L)'=64.7) from results prose — parameter table was unreadable
-- salvaged Q83 ('tlag (h)'=5.75) from results prose — parameter table was unreadable
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=methylphenidate
+- structure disagreement: deterministic 1C vs LLM 2C — review compartment count
+- review gap-fill skipped: this record carries no value of its own, and a model assembled entirely from other papers is not this paper's model
 
 **Extraction notes:**
-- LLM region Teuscher_2015:discussion_prose: no JSON records returned
+- LLM selected parameter table(s) 1
 
 ## Validation
 
@@ -110,14 +97,8 @@ first reading `qwen3.6:27b-q8_0` — the numbers on this page are its, whatever 
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 5 | not captured | not captured | not captured |
-| C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
-| C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
-| C5_dimension_Q321 | pass | [mass] / [length] ** 3 | not captured | not captured | not captured | ['tab_0:row5:col1'] |
-| C5_unit_missing_Q22 | fail | [length] ** 3 / [time] | not captured | not captured | not captured | ['Teuscher_2015:other_prose'] |
-| C5_unit_missing_Q61 | fail | [length] ** 3 | not captured | not captured | not captured | ['Teuscher_2015:other_prose'] |
-| C5_unit_missing_Q83 | fail | [time] | not captured | not captured | not captured | ['Teuscher_2015:other_prose'] |
-| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 1.3 | not captured | not captured | ['Teuscher_2015:other_prose'] |
+| C0_has_structural_params | fail | not captured | 0 | not captured | not captured | not captured |
+| C0b_disposition_core | fail | not captured | not captured | not captured | not captured | not captured |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
 
 **Reviewer per-scenario checks:**
@@ -145,19 +126,9 @@ first reading `qwen3.6:27b-q8_0` — the numbers on this page are its, whatever 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
-## Downloadable models
+## Models
 
-<div class="pk-models-grid"><div class="pk-models-table">
-<table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-</tbody></table>
-<p>No bundles have been generated for this record yet. When the engineer emits them they appear here automatically — this page reports what is on disk and generates nothing itself.</p>
-</div></div>
+<p>No downloads: this record is <b>rejected</b>, so it is not published as a model. Any archives generated for it before the verdict have been removed — a download outlives the page that explains it.</p>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
@@ -166,4 +137,4 @@ _No web simulator for this record: its structure has no shared WebAssembly templ
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-07-15 13:26 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 00:53 UTC</sub>

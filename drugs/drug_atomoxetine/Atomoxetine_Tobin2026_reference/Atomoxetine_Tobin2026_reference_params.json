@@ -1,0 +1,71 @@
+{
+ "dose_source": "paper",
+ "model_id": "Atomoxetine_Tobin2026_reference",
+ "molar_masses": {
+  "central.C": 0.2553547
+ },
+ "note": "Values for the shared PK_1C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "paper_doses_kind": "discrete",
+ "paper_doses_mg": [
+  35.0
+ ],
+ "parameters": {
+  "Cl": 1.0841666666666666e-05,
+  "F": 1.0,
+  "MM": 0.2553547,
+  "Tlag": 0.0,
+  "VdPerKg": 0.0025134285714285714,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 3.5e-05,
+  "ka": 0.007597222222222222,
+  "weight": 70.0
+ },
+ "pgx": {
+  "effects": {
+   "Poor": [
+    {
+     "compound": "atomoxetine",
+     "parameter": "CL/F",
+     "reference": 39.03,
+     "scale": "linear_fractional",
+     "theta": -0.81,
+     "value": 17.36281032468139
+    }
+   ]
+  },
+  "gene": "CYP2D6",
+  "labels": {
+   "Normal": "Normal metabolizer (reference)",
+   "Poor": "Poor metabolizer"
+  },
+  "note": "Each phenotype runs the same template with the parameters the gene acts on changed as the paper states (a fraction on the logit scale), and every parameter the template derives from them recomputed; the reference phenotype is the record's own model.",
+  "order": [
+   "Poor",
+   "Normal"
+  ],
+  "phenotypes": {
+   "Normal": {},
+   "Poor": {
+    "Cl": 4.823002867967052e-06
+   }
+  },
+  "record": "Tobin_2026",
+  "reference": "Normal",
+  "sources": [
+   "Tobin_2026 covariate ecyp2d6_pm"
+  ]
+ },
+ "reference_peak_times": {
+  "central.C": 1099.177433457118
+ },
+ "reference_peaks": {
+  "central.C": 0.00019009755194756455
+ },
+ "stop_time": 86400.0,
+ "template": "PK_1C_enteral",
+ "template_fmu": "PK_1C_enteral.fmu"
+}

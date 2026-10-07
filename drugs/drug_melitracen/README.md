@@ -18,7 +18,7 @@ Melitracen is a tricyclic antidepressant used for depression and anxiety disorde
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-24 00:06 | 2:58 | 0/0/0 | 0/0/0 | 0/0/0 | 9,772/560 | ollama / qwen3.8:27b-mtp-q8_0 | 0 | 0/1 | 0/0 | 0 |
+| 2026-10-06 23:28 | 0:14 | 0/0/0 | 0/0/0 | 0/0/0 | 21,605/270 | ollama / glm-5.3-flash | 1 | 0/2 | 1/0 | 0 |
 
 ## popPK records
 
@@ -33,19 +33,9 @@ _not available_
 ## Coverage
 
 - **PubMed hits:** 4 matched, 4 returned
-- **screened:** 0  ·  **relevant:** 0
+- **screened:** 1  ·  **relevant:** 1
 - **records:** 0  ·  extracted 0  ·  needs_review 0  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** True
-
-## Full text wanted
-
-_1 paper(s) judged relevant from the abstract, with no full text on disk — paywalled, or the resolver could not reach them. Follow the DOI, then save the PDF into `papers/` as `&lt;save as&gt;.pdf` and re-run the extraction._
-
-| save as | citation | domain | score | DOI | PubMed | why wanted |
-|---|---|---|---|---|---|---|
-| `Wu_2019.pdf` | Wu L et al., Bioequivalence Study Of A Fixed-Dose Co…, Drug design, development an… (2019) | popPK | 8 | [10.2147/DDDT.S207561](https://doi.org/10.2147/DDDT.S207561) | [31571834](https://pubmed.ncbi.nlm.nih.gov/31571834) | The study reports pharmacokinetic parameters (CL/F, Vd/F, t1/2) for melitracen, but the specific numeric values are not present in the provided evidence text. |
-
-<sub>queue written 2026-09-24T00:06:26.774526+00:00</sub>
 
 ## Screened and excluded
 
@@ -53,7 +43,6 @@ _1 paper(s) judged relevant from the abstract, with no full text on disk — pay
 |---|---|---|---|---|---|
 | popPK | Warnecke_2015 | irrelevant | 0 | 0 | The paper is a process analytical technology study on fluorescence spectroscopy for quantifying drug content in tablets, not a pharmacokinetic study. |
 | PD | Warnecke_2015 | not_relevant | 0 | 0 | The paper focuses on analytical chemistry (fluorescence spectroscopy) for quantifying drug content in tablets, not pharmacodynamics or exposure-response relationships. |
-| popPK | Wu_2019 | relevant | 8 | 0 | The study reports pharmacokinetic parameters (CL/F, Vd/F, t1/2) for melitracen, but the specific numeric values are not present in the provided evidence text. |
 | popPK | Zhang_2023 | irrelevant | 0 | 0 | The study is a clinical efficacy trial for refractory chronic cough where melitracen (as part of Deanxit) is a treatment agent, and no pharmacokinetic parameters are reported. |
 | PD | Zhang_2023 | not_relevant | 0 | 0 | The paper is a retrospective clinical cohort study reporting clinical response rates (efficacy percentages) for various treatments, including melitracen (as part of Deanxit), but it does not contain any pharmacokinetic data, concentration-effect analysis, or numeric PD parameters (e.g., Emax, EC50). |
 | popPK | Zhao_2023 | irrelevant | 0 | 0 | The paper is a clinical case report regarding adverse effects (dysphagia and extrapontine myelinolysis) and contains no pharmacokinetic data or disposition parameters for melitracen. |

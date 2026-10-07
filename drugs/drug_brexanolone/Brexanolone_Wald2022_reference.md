@@ -1,11 +1,10 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N06A&quot;,&quot;href&quot;:&quot;atc/N06A.md&quot;},{&quot;label&quot;:&quot;brexanolone&quot;,&quot;href&quot;:&quot;drugs/drug_brexanolone/&quot;},{&quot;label&quot;:&quot;Wald_2022 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Brexanolone_Wald2022_reference&quot;,&quot;label&quot;:&quot;Wald_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_brexanolone/Brexanolone_Wald2022_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # brexanolone — `Brexanolone_Wald2022_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -13,7 +12,7 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
-**Model:** A simulatable model was generated — see the **Models** and **Simulation** tabs.
+**Model:** No model was generated from this record.
 
 ### Reviewer guidance
 
@@ -25,6 +24,8 @@ Independently confirmed by `gpt-oss:120b`.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
+> ⚠️ **STALE** — review status `needs_review` (reviewed 2026-09-28 14:36:20.539530+00:00) predates the upstream re-run (2026-10-06 22:02:09.270344+00:00). Current validate status: `rejected`.
+
 > **Dose compound ≠ measured compound:** dosed `brexanolone`, measured `allopregnanolone`.
 
 ## Citation
@@ -32,15 +33,15 @@ Wald J et al., Allopregnanolone Concentrations in Brea…, Clinical pharmacokine
   ·  DOI: [10.1007/s40262-022-01155-w](https://doi.org/10.1007/s40262-022-01155-w)
 
 ## Model component
-<dbs-pgx drug="brexanolone" model-id="Brexanolone_Wald2022_reference" status="needs_review" stale="false" population="patients with postpartum depression and healthy lactating women" measured-compound="allopregnanolone" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<dbs-pgx drug="brexanolone" model-id="Brexanolone_Wald2022_reference" status="rejected" stale="true" population="healthy lactating women and patients with postpartum depression" measured-compound="allopregnanolone" parameterization="mechanistic" topology="general_linear"></dbs-pgx>
 
-**Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
+**Model structure:** general linear; no model was built for this record.  
 **Parameters:** 10 extracted.
 
 **Parameterization:** mechanistic.
 
 ## Parameters
-> ⚠️ This record is not accepted (current status `needs_review`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
+> ⚠️ This record is not accepted (current status `rejected`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -67,7 +68,26 @@ Wald J et al., Allopregnanolone Concentrations in Brea…, Clinical pharmacokine
 - dropped duplicate Q19 ('AUC0–t, ng·h/mL', value '3557.8') — already have one for this compound
 - dropped unlinked row (NIL): 'tlast, h' — extend the ontology if this is a real PK parameter (source ['Tab3:row9:col1', 'Tab3:row9:col2'])
 - dropped unlinked row (NIL): 'R2 adjusted' — extend the ontology if this is a real PK parameter (source ['Tab3:row10:col1', 'Tab3:row10:col2'])
+- dropped value-less row: 'AUC0–60'
+- dropped value-less row: 'AUC24–56'
+- dropped value-less row: 'AUC0–t'
+- dropped value-less row: 'AUCo–∞'
+- dropped value-less row: 'Cavg'
+- dropped value-less row: 'Cmax'
+- dropped value-less row: 'Css'
+- dropped value-less row: 'CL'
+- dropped value-less row: 'λz'
+- dropped value-less row: 'PK'
+- dropped value-less row: 'R2'
+- dropped value-less row: 't½'
+- dropped value-less row: 'tlast'
+- dropped value-less row: 'tmax'
+- dropped value-less row: 'Vz'
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=allopregnanolone
+- topology: transfer parameter unlinked (Q100) — add Kfm/formation-rate/rate-constant to the ontology; routing to review
+- status held at route_to_review — not promoted
+- skipped review gap-fill of V2: primary is GENERAL_LINEAR (peripheral family needs ≥2C)
+- skipped review gap-fill of Q: primary's parameterization (rate-constant / ka-only) does not use it
 
 **Extraction notes:**
 - LLM selected parameter table(s) 3
@@ -108,7 +128,7 @@ _Every reader agrees on every compared field of this record._
 | C5_dimension_Q61 | pass | [length] ** 3 | not captured | not captured | not captured | ['Tab3:row14:col1', 'Tab3:row14:col2'] |
 | C5_dimension_Q71 | pass | [mass] / [length] ** 3 | not captured | not captured | not captured | ['Tab3:row3:col1', 'Tab3:row3:col2'] |
 | C6_cl_magnitude | pass | &lt;= 90.0 L/h | 87.5 | not captured | not captured | ['Tab3:row13:col1', 'Tab3:row13:col2'] |
-| C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
+| C8_topology | fail | ontology-linked transfer parameter on every edge | ['none'] | not captured | not captured | not captured |
 | C9_phys_window_Q22 | pass | clearance within physiological range | 87.5 L/h | not captured | not captured | ['Tab3:row13:col1', 'Tab3:row13:col2'] |
 | C9_phys_window_Q61 | pass | volume within physiological range | 1.43e+03 L | not captured | not captured | ['Tab3:row14:col1', 'Tab3:row14:col2'] |
 
@@ -141,30 +161,15 @@ _Every reader agrees on every compared field of this record._
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
-## Downloadable models
+## Models
 
-<div class="pk-models-grid"><div class="pk-models-table">
-<table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_brexanolone/Brexanolone_Wald2022_reference/Brexanolone_Wald2022_reference_modelica.zip" download>Brexanolone_Wald2022_reference_modelica.zip</a> <span class="pk-size">(3.6 kB)</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_brexanolone/Brexanolone_Wald2022_reference/Brexanolone_Wald2022_reference_fmi.zip" download>Brexanolone_Wald2022_reference_fmi.zip</a> <span class="pk-size">(4.1 kB)</span><br><a href="models/fmu/PK_1C.fmu" download>PK_1C.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_brexanolone/Brexanolone_Wald2022_reference/Brexanolone_Wald2022_reference_matlab.zip" download>Brexanolone_Wald2022_reference_matlab.zip</a> <span class="pk-size">(3.3 kB)</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_brexanolone/Brexanolone_Wald2022_reference/Brexanolone_Wald2022_reference_matlab_simbio.zip" download>Brexanolone_Wald2022_reference_matlab_simbio.zip</a> <span class="pk-size">(2.7 kB)</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_brexanolone/Brexanolone_Wald2022_reference/Brexanolone_Wald2022_reference_sbml.zip" download>Brexanolone_Wald2022_reference_sbml.zip</a> <span class="pk-size">(2.4 kB)</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_brexanolone/Brexanolone_Wald2022_reference/Brexanolone_Wald2022_reference_cellml.zip" download>Brexanolone_Wald2022_reference_cellml.zip</a> <span class="pk-size">(2.9 kB)</span></td></tr>
-</tbody></table>
-<p>Each archive holds the model source, a script that simulates it against the appropriate library, and a README describing both and how to run them.</p>
-<p><b>FMI is two downloads.</b> The archive holds this record's parameters and its driver; the simulator itself is <code>PK_1C.fmu</code>, one compiled template shared by every model of this structure. Take the FMU once, keep it beside the script (or pass <code>--fmu PATH</code>). Running it reproduces the model-specific FMU exactly.</p>
-</div><figure class="pk-models-diagram"><img src="drugs/drug_brexanolone/Brexanolone_Wald2022_reference/Brexanolone_Wald2022_reference.svg" alt="Brexanolone_Wald2022_reference diagram"><figcaption>Model diagram (Modelica) using Pharmacolibrary v26.09 components, rendered by OpenModelica 1.26.7.</figcaption></figure></div>
+<p>No downloads: this record is <b>rejected</b>, so it is not published as a model. Any archives generated for it before the verdict have been removed — a download outlives the page that explains it.</p>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-**Administration: intravenous** — 10 mg infusion over 10 min, single dose. _The paper's dose was not captured; the simulator's default is used._
-
-<dbs-fmusim paramsurl="drugs/drug_brexanolone/Brexanolone_Wald2022_reference/Brexanolone_Wald2022_reference_params.json" metaurl="assets/fmu/PK_1C.vr.json" wasmurl="assets/fmu/PK_1C.js" controlsurl="drugs/drug_brexanolone/Brexanolone_Wald2022_reference/Brexanolone_Wald2022_reference_sim_controls.json"></dbs-fmusim>
-
-<sub>Runs this record's model in the browser as WebAssembly. Sliders start at the extracted values; the reference check compares the browser's peak against the FMPy result recorded when the record was built, and is withheld once a value has been edited. Template `PK_1C` · parameters `Brexanolone_Wald2022_reference_params.json` · controls `Brexanolone_Wald2022_reference_sim_controls.json`. A slider marked *simulator value* is running on the template's own default because this record does not pin that parameter.</sub>
+_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-09-23 19:46 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-06 22:02 UTC</sub>

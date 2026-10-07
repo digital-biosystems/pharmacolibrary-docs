@@ -16,7 +16,7 @@
 
 ## What this record describes
 
-**As extracted:** Paroxetine (concentrations from the PK model of Chen_2025) drives cortical SERT occupancy: delayed effect through an effect compartment.
+**As extracted:** Paroxetine (concentrations from the PK model of Chen_2025) drives cortical SERT occupancy (in %): delayed effect through an effect compartment.
 
 **Model:** No model was generated from this record.
 

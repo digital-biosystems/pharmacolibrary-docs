@@ -1,0 +1,36 @@
+{
+ "dose_source": "paper",
+ "model_id": "Dacomitinib_RuizGarcia2020_estimate_rse",
+ "molar_masses": {
+  "central.C": 0.469939
+ },
+ "note": "Values for the shared PK_1C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "paper_doses_kind": "discrete",
+ "paper_doses_mg": [
+  45.0
+ ],
+ "parameters": {
+  "Cl": 8.111111111111112e-06,
+  "F": 1.0,
+  "MM": 0.469939,
+  "Tlag": 2696.4,
+  "VdPerKg": 0.0018714285714285714,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 4.5e-05,
+  "ka": 6.833333333333334e-06,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 42593.9879759519
+ },
+ "reference_peaks": {
+  "central.C": 2.8840019665410625e-05
+ },
+ "stop_time": 518400.0,
+ "template": "PK_1C_enteral",
+ "template_fmu": "PK_1C_enteral.fmu"
+}

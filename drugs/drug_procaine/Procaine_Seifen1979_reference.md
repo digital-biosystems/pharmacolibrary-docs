@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C05A&quot;,&quot;href&quot;:&quot;atc/C05A.md&quot;},{&quot;label&quot;:&quot;procaine&quot;,&quot;href&quot;:&quot;drugs/drug_procaine/&quot;},{&quot;label&quot;:&quot;Seifen_1979 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Procaine_Seifen1979_reference&quot;,&quot;label&quot;:&quot;Seifen_1979_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_procaine/Procaine_Seifen1979_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Procaine_Seifen1979_reference&quot;,&quot;label&quot;:&quot;Seifen_1979_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_procaine/Procaine_Seifen1979_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # procaine — `Procaine_Seifen1979_reference`
 
-> ## <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.167). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -21,29 +21,32 @@
 
 Only the abstract was available, so reported summary statistics stand in for a fitted model.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has procaine, the second reading unknown; it also differs on 9 more fields. That field shapes the model, so the record is marked disputed.
+Independently confirmed by `gpt-oss:120b`.
 
 <sub>reviewed by rule template (no LLM)</sub>
+
+> ⚠️ **STALE** — review status `curated_candidate` (reviewed 2026-09-28 22:56:11.764172+00:00) predates the upstream re-run (2026-10-06 22:54:34.792357+00:00). Current validate status: `extracted`.
 
 ## Citation
 Seifen AB et al., Pharmacokinetics of intravenous procain…, Anesthesia and analgesia (1979)
   ·  DOI: [10.1213/00000539-197909000-00007](https://doi.org/10.1213/00000539-197909000-00007)
 
 ## Model component
-<dbs-pgx drug="procaine" model-id="Procaine_Seifen1979_reference" status="curated_candidate" stale="false" population="women undergoing hysterectomy" measured-compound="procaine" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<dbs-pgx drug="procaine" model-id="Procaine_Seifen1979_reference" status="extracted" stale="true" population="women undergoing hysterectomy" measured-compound="procaine" parameterization="mechanistic" topology="1C"></dbs-pgx>
 
 **Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
-**Parameters:** 4 extracted.
+**Parameters:** 5 extracted.
 
 **Parameterization:** mechanistic.
 
 ## Parameters
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| distribution half-life (t1/2 alpha) | `Q59` · t1/2α | 2.49 | minutes | 149.4 | h | not captured | llm (0.6) | Seifen_1979:abstract | — | not captured |
-| elimination half-life (t1/2 beta) | `Q60` · t1/2β | 7.69 | minutes | 461.40000000000003 | h | not captured | llm (0.6) | Seifen_1979:abstract | — | not captured |
+| distribution half-life (t1/2 alpha) | `Q59` · t1/2α | 2.49 | minutes | 149.4 | [min] | not captured | llm (0.6) | Seifen_1979:abstract | — | not captured |
+| elimination half-life (t1/2 beta) | `Q60` · t1/2β | 7.69 | minutes | 461.40000000000003 | [min] | not captured | llm (0.6) | Seifen_1979:abstract | — | not captured |
 | volume of distribution at steady-state | `Q65` · Vss | 0.79 | L/kg | 0.0553 | [l] / [kg] | not captured | llm_corrected (0.6) | Seifen_1979:abstract, Seifen_1979:abstract | — | not captured |
 | total body clearance | `Q22` · CL | 0.08 | L/kg/min | 9.333333333333334e-05 | [l] / [[min] · [kg]] | not captured | llm_confirmed (0.6) | Seifen_1979:abstract, Seifen_1979:abstract | — | not captured |
+| Vz | `Q61` · V | 0.51 | L/kg | 0.0357 | L | not captured | review_gapfill (0.7) | Olivarez_2022:review | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -52,47 +55,28 @@ Seifen AB et al., Pharmacokinetics of intravenous procain…, Anesthesia and ana
 
 ## Departures & gaps
 
-**Deviations:**
-- `vss_as_v`: Vss (Q65) used as the distribution volume — no Vc/V reported
-
 **Interpretation flags:**
 - dropped unlinked row (NIL): 'fraction of drug in the central compartment' — extend the ontology if this is a real PK parameter (source ['Seifen_1979:abstract', 'Seifen_1979:abstract'])
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=procaine
 - structure disagreement: deterministic 1C vs LLM 2C — review compartment count
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
+- gap-filled Q61 (V) from Olivarez_2022's review values (primary lacked it)
 - skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
 - skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
-- unit re-normalised: t1/2α 'minutes' now converts (value unchanged)
-- unit re-normalised: t1/2β 'minutes' now converts (value unchanged)
 
 **Extraction notes:**
 - no GROBID TEI available — transcribed from abstract in Seifen_1979_metadata.yaml (8 record(s)); values are summary statistics, not a fitted model
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--green">cross-checked ✓</span>  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.167 (2/12 fields) | 10 |
+| `gpt-oss:120b` | confirmed | 1.0 (8/8 fields) | none |
 
-<details><summary>10 field(s) a reader read differently</summary>
-
-| second reader | field | first reading | second reading | agreement |
-|---|---|---|---|---|
-| `gpt-oss:120b` | `parameters[distribution half-life]` | 2.49 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[distribution half-life]` | not captured | 2.49 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[elimination half-life]` | 7.69 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[elimination half-life]` | not captured | 7.69 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[total body clearance]` | 0.08 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[total body clearance]` | not captured | 0.08 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[volume of distribution at steady-state]` | 0.79 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[volume of distribution at steady-state]` | not captured | 0.79 | only_one_extracted |
-| `gpt-oss:120b` | `screen.dose_compound` | procaine | unknown | mismatch |
-| `gpt-oss:120b` | `screen.primary_analyte` | procaine | unknown | mismatch |
-
-</details>
+_Every reader agrees on every compared field of this record._
 
 <details class="legend">
 <summary>Cross-check legend</summary>
@@ -110,10 +94,12 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Seifen_1979:abstract', 'Seifen_1979:abstract'] |
 | C5_dimension_Q59 | pass | [time] | not captured | not captured | not captured | ['Seifen_1979:abstract'] |
 | C5_dimension_Q60 | pass | [time] | not captured | not captured | not captured | ['Seifen_1979:abstract'] |
+| C5_dimension_Q61 | pass | [length] ** 3 | not captured | not captured | not captured | ['Olivarez_2022:review'] |
 | C5_dimension_Q65 | pass | [length] ** 3 | not captured | not captured | not captured | ['Seifen_1979:abstract', 'Seifen_1979:abstract'] |
 | C6_cl_magnitude | pass | &lt;= 90.0 L/h | 0.08 | not captured | not captured | ['Seifen_1979:abstract', 'Seifen_1979:abstract'] |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
 | C9_phys_window_Q22 | pass | clearance within physiological range | 336 L/h | not captured | not captured | ['Seifen_1979:abstract', 'Seifen_1979:abstract'] |
+| C9_phys_window_Q61 | pass | volume within physiological range | 35.7 L | not captured | not captured | ['Olivarez_2022:review'] |
 | C9_phys_window_Q65 | pass | volume within physiological range | 55.3 L | not captured | not captured | ['Seifen_1979:abstract', 'Seifen_1979:abstract'] |
 
 **Reviewer per-scenario checks:**
@@ -147,11 +133,11 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
 <tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_procaine/Procaine_Seifen1979_reference/Procaine_Seifen1979_reference_modelica.zip" download>Procaine_Seifen1979_reference_modelica.zip</a> <span class="pk-size">(4.0 kB)</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_procaine/Procaine_Seifen1979_reference/Procaine_Seifen1979_reference_matlab.zip" download>Procaine_Seifen1979_reference_matlab.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_procaine/Procaine_Seifen1979_reference/Procaine_Seifen1979_reference_matlab_simbio.zip" download>Procaine_Seifen1979_reference_matlab_simbio.zip</a> <span class="pk-size">(2.8 kB)</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_procaine/Procaine_Seifen1979_reference/Procaine_Seifen1979_reference_sbml.zip" download>Procaine_Seifen1979_reference_sbml.zip</a> <span class="pk-size">(2.5 kB)</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_procaine/Procaine_Seifen1979_reference/Procaine_Seifen1979_reference_cellml.zip" download>Procaine_Seifen1979_reference_cellml.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_procaine/Procaine_Seifen1979_reference/Procaine_Seifen1979_reference_fmi.zip" download>Procaine_Seifen1979_reference_fmi.zip</a> <span class="pk-size">(4.1 kB)</span><br><a href="models/fmu/PK_1C.fmu" download>PK_1C.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_procaine/Procaine_Seifen1979_reference/Procaine_Seifen1979_reference_matlab.zip" download>Procaine_Seifen1979_reference_matlab.zip</a> <span class="pk-size">(3.3 kB)</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_procaine/Procaine_Seifen1979_reference/Procaine_Seifen1979_reference_matlab_simbio.zip" download>Procaine_Seifen1979_reference_matlab_simbio.zip</a> <span class="pk-size">(2.7 kB)</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_procaine/Procaine_Seifen1979_reference/Procaine_Seifen1979_reference_sbml.zip" download>Procaine_Seifen1979_reference_sbml.zip</a> <span class="pk-size">(2.4 kB)</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_procaine/Procaine_Seifen1979_reference/Procaine_Seifen1979_reference_cellml.zip" download>Procaine_Seifen1979_reference_cellml.zip</a> <span class="pk-size">(2.9 kB)</span></td></tr>
 </tbody></table>
 <p>Each archive holds the model source, a script that simulates it against the appropriate library, and a README describing both and how to run them.</p>
 <p><b>FMI is two downloads.</b> The archive holds this record's parameters and its driver; the simulator itself is <code>PK_1C.fmu</code>, one compiled template shared by every model of this structure. Take the FMU once, keep it beside the script (or pass <code>--fmu PATH</code>). Running it reproduces the model-specific FMU exactly.</p>
@@ -168,4 +154,4 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-09-28 19:45 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-06 22:54 UTC</sub>

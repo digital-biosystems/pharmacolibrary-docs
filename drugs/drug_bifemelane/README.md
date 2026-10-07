@@ -18,7 +18,7 @@ Bifemelane is an antidepressant that has also been described as a nootropic. It 
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-23 19:45 | 2:34 | 0/0/0 | 0/0/0 | 0/0/0 | 18,246/552 | ollama / qwen3.8:27b-mtp-q8_0 | 0 | 1/0 | 0/0 | 0 |
+| 2026-10-06 21:46 | 0:32 | 0/0/0 | 0/0/0 | 0/0/0 | 12,745/157 | ollama / glm-5.3-flash | 1 | 1/0 | 1/0 | 0 |
 
 ## popPK records
 
@@ -45,7 +45,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 - **PubMed hits:** 6 matched, 5 returned
 - **screened:** 0  ·  **relevant:** 0
 - **records:** 0  ·  extracted 0  ·  needs_review 0  ·  rejected 0  ·  stale 0
-- **scholar-agent fallback query used:** True
+- **scholar-agent fallback query used:** not captured
 
 ## Full text wanted
 
@@ -55,13 +55,13 @@ _1 paper(s) judged relevant from the abstract, with no full text on disk — pay
 |---|---|---|---|---|---|---|
 | `Kaneko_1991.pdf` | Kaneko S et al., Effects of several cerebroprotective dr…, European journal of pharmac… (1991) | pd | 4 | [10.1016/0922-4106(91)90086-w](https://doi.org/10.1016/0922-4106(91)90086-w) | [1652446](https://www.ncbi.nlm.nih.gov/pubmed/1652446) | metadata signals extractable PD data (EC50) |
 
-<sub>queue written 2026-09-23T19:45:32.154227+00:00</sub>
+<sub>queue written 2026-10-06T21:46:20.282461+00:00</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Bao_1986 | irrelevant | 0 | 0 | The study is a pharmacodynamic assessment of cerebral edema and blood flow, not a pharmacokinetic study, and reports no disposition parameters. |
+| popPK | Bao_1986 | irrelevant | 1 | 0 | This is a pharmacodynamic efficacy study of bifemelane in gerbils with no PK disposition parameters (CL, V, t½, or PK model) reported. |
 | popPK | Gillis_1994 | irrelevant | 0 | 0 | The paper is a review of idebenone, and bifemelane is only mentioned as a comparator drug without any pharmacokinetic data. |
 | PD | Gillis_1994 | not_relevant | 0 | 0 | The text is a review of idebenone and only mentions bifemelane as a comparator in clinical trials without providing any pharmacodynamic or exposure-response data for bifemelane. |
 | popPK | Kaneko_1991 | irrelevant | 0 | 0 | no_text gate: only 124 chars of text extracted (&lt; 400) |

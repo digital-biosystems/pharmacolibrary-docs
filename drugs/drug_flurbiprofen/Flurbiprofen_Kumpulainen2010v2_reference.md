@@ -1,10 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;M01A&quot;,&quot;href&quot;:&quot;atc/M01A.md&quot;},{&quot;label&quot;:&quot;flurbiprofen&quot;,&quot;href&quot;:&quot;drugs/drug_flurbiprofen/&quot;},{&quot;label&quot;:&quot;Kumpulainen_2010_2 \u00b7 reference&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Flurbiprofen_Aarons1991_reference&quot;,&quot;label&quot;:&quot;Aarons_1991_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_flurbiprofen/Flurbiprofen_Aarons1991_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Flurbiprofen_Zhang2018_reference&quot;,&quot;label&quot;:&quot;Zhang_2018_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_flurbiprofen/Flurbiprofen_Zhang2018_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # flurbiprofen — `Flurbiprofen_Kumpulainen2010v2_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.824). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.824). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -24,17 +25,19 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 
 <sub>reviewed by glm-5.3-flash</sub>
 
-> **Dose compound ≠ measured compound:** dosed `flurbiprofen axetil`, measured `flurbiprofen`.
+> ⚠️ **STALE** — review status `rejected` (reviewed 2026-09-28 14:38:06.966146+00:00) predates the upstream re-run (2026-10-07 00:51:07.348804+00:00). Current validate status: `rejected`.
+
+> **Dose compound ≠ measured compound:** dosed `flurbiprofen, flurbiprofen axetil`, measured `flurbiprofen`.
 
 ## Citation
 Kumpulainen E et al., Plasma and cerebrospinal fluid pharmaco…, British journal of clinical… (2010)
   ·  DOI: [10.1111/j.1365-2125.2010.03720.x](https://doi.org/10.1111/j.1365-2125.2010.03720.x)
 
 ## Model component
-<dbs-pgx drug="flurbiprofen" model-id="Flurbiprofen_Kumpulainen2010v2_reference" status="rejected" stale="false" population="healthy children undergoing surgery with spinal anaesthesia" measured-compound="flurbiprofen" parameterization="mechanistic" topology="general_linear"></dbs-pgx>
+<dbs-pgx drug="flurbiprofen" model-id="Flurbiprofen_Kumpulainen2010v2_reference" status="rejected" stale="true" population="healthy children" measured-compound="flurbiprofen" parameterization="mechanistic" topology="1C"></dbs-pgx>
 
-**Model structure:** general linear; no model was built for this record.  
-**Parameters:** 10 extracted.
+**Model structure:** 1-compartment; no model was built for this record.  
+**Parameters:** 8 extracted, plus 5 covariate effects.
 
 **Parameterization:** mechanistic.
 
@@ -43,16 +46,19 @@ Kumpulainen E et al., Plasma and cerebrospinal fluid pharmaco…, British journa
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| Oral absorption rate constant (K12) (l h⁻¹) | `Q49` · kabs | 2.5 | l h⁻¹ | not captured | [l] / [h] | not captured | boundary (0.8) | Kumpulainen_2010_2_table_p6_1:row1:col1, Kumpulainen_2010_2_table_p6_1:row1:col2, Kumpulainen_2010_2_table_p6_1:row1:col3 | — | not captured |
-| Lag time, oral absorption (h) | `Q40` · Fab | 0.045 | h | not captured | [h] | not captured | boundary (0.8) | Kumpulainen_2010_2_table_p6_1:row2:col1, Kumpulainen_2010_2_table_p6_1:row2:col2, Kumpulainen_2010_2_table_p6_1:row2:col3 | — | not captured |
-| CL (l h⁻¹) × (WT/70)^0.75 | `Q22` · CL | 0.83 | Bootstrap | not captured | [bootstrap] | not captured | boundary (0.8) | Kumpulainen_2010_2_table_p6_1:row4:col1, Kumpulainen_2010_2_table_p6_1:row4:col2, Kumpulainen_2010_2_table_p6_1:row4:col3 | — | not captured |
-| V (central) () × (WT/70) | `Q63` · V1 | 2.6 | WT/70 | not captured | [wt] / [70] | not captured | llm (0.5) | Kumpulainen_2010_2_table_p6_1:row5:col1, Kumpulainen_2010_2_table_p6_1:row5:col2, Kumpulainen_2010_2_table_p6_1:row5:col3 | — | not captured |
-| V (shallow peripheral) (Q2) (l h⁻¹) × (WT/70) | `Q99` · Q2 | 0.58 | WT/70 | not captured | [wt] / [70] | not captured | boundary (0.8) | Kumpulainen_2010_2_table_p6_1:row6:col1, Kumpulainen_2010_2_table_p6_1:row6:col2, Kumpulainen_2010_2_table_p6_1:row6:col3 | — | not captured |
-| Q (shallow peripheral) () × (WT/70) | `Q30` · Q | 1.0 | WT/70 | not captured | [wt] / [70] | not captured | llm (0.5) | Kumpulainen_2010_2_table_p6_1:row7:col1, Kumpulainen_2010_2_table_p6_1:row7:col2, Kumpulainen_2010_2_table_p6_1:row7:col3 | — | not captured |
-| V (deep peripheral) () × (WT/70) | `Q65` · Vss | 0.097 | WT/70 | not captured | [wt] / [70] | not captured | llm (0.5) | Kumpulainen_2010_2_table_p6_1:row8:col1, Kumpulainen_2010_2_table_p6_1:row8:col2, Kumpulainen_2010_2_table_p6_1:row8:col3 | — | not captured |
-| Protein-free fraction | `Q46` · fu | 0.00023 | Bootstrap | not captured | [bootstrap] | not captured | boundary (0.8) | Kumpulainen_2010_2_table_p6_1:row10:col1, Kumpulainen_2010_2_table_p6_1:row10:col2, Kumpulainen_2010_2_table_p6_1:row10:col3 | — | not captured |
-| ωV₂ | `Q64` · V2 | 0.19 | Bootstrap | not captured | [bootstrap] | not captured | boundary (0.8) | Kumpulainen_2010_2_table_p6_1:row15:col1, Kumpulainen_2010_2_table_p6_1:row15:col2, Kumpulainen_2010_2_table_p6_1:row15:col3 | — | not captured |
-| σblood plasma | `Q315` · sigma | 0.11 | Bootstrap | not captured | [bootstrap] | not captured | llm (0.5) | Kumpulainen_2010_2_table_p6_1:row17:col1, Kumpulainen_2010_2_table_p6_1:row17:col2, Kumpulainen_2010_2_table_p6_1:row17:col3 | — | not captured |
+| Bioavailability | `Q40` · Fab | 0.81 | not captured | not captured | not captured | 0.055 | exact (1.0) | Kumpulainen_2010_2_table_p6_1:row0:col1, Kumpulainen_2010_2_table_p6_1:row0:col2, Kumpulainen_2010_2_table_p6_1:row0:col3 | — | not captured |
+| Oral absorption rate constant (K12) (l h⁻¹) | `Q301` · k12 | 5.5 | l h⁻¹ | not captured | [l] / [h] | 0.24 | llm_corrected (0.6) | Kumpulainen_2010_2_table_p6_1:row1:col1, Kumpulainen_2010_2_table_p6_1:row1:col2, Kumpulainen_2010_2_table_p6_1:row1:col3 | — | not captured |
+| Lag time, oral absorption (h) | `Q83` · tlag | 0.11 | h | 396.0 | [h] | 0.16 | llm_corrected (0.6) | Kumpulainen_2010_2_table_p6_1:row2:col1, Kumpulainen_2010_2_table_p6_1:row2:col2, Kumpulainen_2010_2_table_p6_1:row2:col3 | — | not captured |
+| i.v. absorption rate constant (K42) (l h⁻¹) | `Q49` · kabs | 29 | l h⁻¹ | not captured | [l] / [h] | 0.32 | llm_confirmed (0.6) | Kumpulainen_2010_2_table_p6_1:row3:col1, Kumpulainen_2010_2_table_p6_1:row3:col2, Kumpulainen_2010_2_table_p6_1:row3:col3 | — | not captured |
+| Protein-free fraction | `Q46` · fu | 0.00031 | not captured | not captured | not captured | 0.043 | llm_confirmed (0.6) | Kumpulainen_2010_2_table_p6_1:row10:col1, Kumpulainen_2010_2_table_p6_1:row10:col2, Kumpulainen_2010_2_table_p6_1:row10:col3 | — | not captured |
+| QCSF (l h⁻¹) | `Q30` · Q | 0.12 | l h⁻¹ | 3.3333333333333334e-08 | [l] / [h] | 0.27 | llm (0.6) | Kumpulainen_2010_2_table_p6_1:row11:col1, Kumpulainen_2010_2_table_p6_1:row11:col2, Kumpulainen_2010_2_table_p6_1:row11:col3 | — | 0.81 (0.40% RSE) |
+| Uptake to CSF (UPTK) | `Q349` · kuptake | 6.8 | 1/h | 0.0018888888888888887 | 1/h | 0.070 | exact (1.0) | Kumpulainen_2010_2_table_p6_1:row12:col1, Kumpulainen_2010_2_table_p6_1:row12:col2, Kumpulainen_2010_2_table_p6_1:row12:col3 | — | not captured |
+| theta_q354_wt_power | `Q900` · theta_q354_wt_power | 0.96 | not captured | not captured | not captured | 0.057 | not captured (not captured) | Kumpulainen_2010_2_table_p6_1:row4:col1, Kumpulainen_2010_2_table_p6_1:row4:col2, Kumpulainen_2010_2_table_p6_1:row4:col3 | — | not captured |
+| theta_q61_wt_power | `Q900` · theta_q61_wt_power | 3.6 | not captured | not captured | not captured | 0.11 | not captured (not captured) | Kumpulainen_2010_2_table_p6_1:row5:col1, Kumpulainen_2010_2_table_p6_1:row5:col2, Kumpulainen_2010_2_table_p6_1:row5:col3 | — | not captured |
+| theta_q99_wt_power | `Q900` · theta_q99_wt_power | 1.5 | not captured | not captured | not captured | 0.39 | not captured (not captured) | Kumpulainen_2010_2_table_p6_1:row6:col1, Kumpulainen_2010_2_table_p6_1:row6:col2, Kumpulainen_2010_2_table_p6_1:row6:col3 | — | not captured |
+| theta_q314_wt_power | `Q900` · theta_q314_wt_power | 0.18 | not captured | not captured | not captured | 0.30 | not captured (not captured) | Kumpulainen_2010_2_table_p6_1:row8:col1, Kumpulainen_2010_2_table_p6_1:row8:col2, Kumpulainen_2010_2_table_p6_1:row8:col3 | — | not captured |
+| theta_q900_wt_power | `Q900` · theta_q900_wt_power | 2.7 | not captured | not captured | not captured | 0.18 | not captured (not captured) | Kumpulainen_2010_2_table_p6_1:row9:col1, Kumpulainen_2010_2_table_p6_1:row9:col2, Kumpulainen_2010_2_table_p6_1:row9:col3 | — | not captured |
+| Vd | `Q61` · V | 6.0 | L | 0.006 | L | not captured | review_gapfill (0.7) | Zhang_2018:review | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -62,33 +68,23 @@ Kumpulainen E et al., Plasma and cerebrospinal fluid pharmaco…, British journa
 ## Departures & gaps
 
 **Interpretation flags:**
-- unit_dimension_mismatch: 'Oral absorption rate constant (K12) (l h⁻¹)' → Q49 (unit '[length] ** 3 / [time]' vs ontology '1 / [time]') — route to review
+- unit_dimension_mismatch: 'Oral absorption rate constant (K12) (l h⁻¹)' → Q301 (unit '[length] ** 3 / [time]' vs ontology '1 / [time]') — route to review
 - unit_dimension_mismatch: 'i.v. absorption rate constant (K42) (l h⁻¹)' → Q49 (unit '[length] ** 3 / [time]' vs ontology '1 / [time]') — route to review
-- dropped duplicate Q49 ('i.v. absorption rate constant (K42) (l h⁻¹)', value '16') — already have one for this compound
-- unit_dimension_unknown: 'Bootstrap' (CL)
-- unit_dimension_unknown: 'WT/70' (V1)
-- unit_dimension_unknown: 'WT/70' (Q2)
-- unit_dimension_unknown: 'WT/70' (Q)
-- unit_dimension_unknown: 'WT/70' (Vss)
-- dropped duplicate Q30 ('Q (deep peripheral) () × (WT/70)', value '2.4') — already have one for this compound
-- unit_dimension_unknown: 'Bootstrap' (fu)
-- dropped duplicate Q30 ('QCSF (l h⁻¹)', value '0.073') — already have one for this compound
-- dropped unlinked row (NIL): 'Uptake to CSF (UPTK)' — extend the ontology if this is a real PK parameter (source ['Kumpulainen_2010_2_table_p6_1:row12:col1', 'Kumpulainen_2010_2_table_p6_1:row12:col2', 'Kumpulainen_2010_2_table_p6_1:row12:col3'])
-- dropped duplicate Q22 ('ωCL', value '0.20') — already have one for this compound
-- unit_dimension_unknown: 'Bootstrap' (V1)
-- dropped duplicate Q63 ('ωV₁', value '0.19') — already have one for this compound
-- unit_dimension_unknown: 'Bootstrap' (V2)
-- unit_dimension_unknown: 'Bootstrap' (Q2)
-- dropped duplicate Q99 ('ωQ₂', value '0.42') — already have one for this compound
-- unit_dimension_unknown: 'Bootstrap' (sigma)
-- dropped duplicate Q315 ('σCSF', value '0.43') — already have one for this compound
+- dropped unlinked row (NIL): 'Q (shallow peripheral) () × (WT/70)' — extend the ontology if this is a real PK parameter (source ['Kumpulainen_2010_2_table_p6_1:row7:col1', 'Kumpulainen_2010_2_table_p6_1:row7:col2', 'Kumpulainen_2010_2_table_p6_1:row7:col3'])
+- unit_dimension_unknown: 'UPTK' (kuptake)
+- covariate effect for Q354 has no base parameter row (kept as unattached equation-variable)
+- covariate effect for Q61 has no base parameter row (kept as unattached equation-variable)
+- covariate effect for Q99 has no base parameter row (kept as unattached equation-variable)
+- covariate effect for Q314 has no base parameter row (kept as unattached equation-variable)
+- covariate effect for Q900 has no base parameter row (kept as unattached equation-variable)
+- implicit units: 'Uptake to CSF (UPTK)' → 1/h (from the popPK convention: "The paper defines UPTK as an 'uptake multiplier' for the transfer of unbound flurbiprofen from the central to the CSF co")
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=flurbiprofen
 - held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
-- topology: 1 first-order transfer(s) across 2 compounds → general_linear
+- structure disagreement: deterministic 1C vs LLM 2C — review compartment count
 - status held at route_to_review — not promoted
-
-**Extraction notes:**
-- no TEI final-model table id; trying text-pointer table recovery
+- skipped review gap-fill of CL: primary's parameterization (rate-constant / ka-only) does not use it
+- gap-filled Q61 (V) from Zhang_2018's review values (primary lacked it)
+- skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
 
 ## Validation
 
@@ -119,18 +115,16 @@ first reading `qwen3.6:27b-q8_0` — the numbers on this page are its, whatever 
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 10 | not captured | not captured | not captured |
-| C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
-| C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
-| C5_dimension_Q49 | fail | [length] ** 3 / [time] | l h⁻¹ | not captured | not captured | ['Kumpulainen_2010_2_table_p6_1:row1:col1', 'Kumpulainen_2010_2_table_p6_1:row1:col2', 'Kumpulainen_2010_2_table_p6_1:row1:col3'] |
-| C5_unit_missing_Q22 | fail | [length] ** 3 / [time] | Bootstrap | not captured | not captured | ['Kumpulainen_2010_2_table_p6_1:row4:col1', 'Kumpulainen_2010_2_table_p6_1:row4:col2', 'Kumpulainen_2010_2_table_p6_1:row4:col3'] |
-| C5_unit_missing_Q30 | fail | [length] ** 3 / [time] | WT/70 | not captured | not captured | ['Kumpulainen_2010_2_table_p6_1:row7:col1', 'Kumpulainen_2010_2_table_p6_1:row7:col2', 'Kumpulainen_2010_2_table_p6_1:row7:col3'] |
-| C5_unit_missing_Q63 | fail | [length] ** 3 | WT/70 | not captured | not captured | ['Kumpulainen_2010_2_table_p6_1:row5:col1', 'Kumpulainen_2010_2_table_p6_1:row5:col2', 'Kumpulainen_2010_2_table_p6_1:row5:col3'] |
-| C5_unit_missing_Q64 | fail | [length] ** 3 | Bootstrap | not captured | not captured | ['Kumpulainen_2010_2_table_p6_1:row15:col1', 'Kumpulainen_2010_2_table_p6_1:row15:col2', 'Kumpulainen_2010_2_table_p6_1:row15:col3'] |
-| C5_unit_missing_Q65 | fail | [length] ** 3 | WT/70 | not captured | not captured | ['Kumpulainen_2010_2_table_p6_1:row8:col1', 'Kumpulainen_2010_2_table_p6_1:row8:col2', 'Kumpulainen_2010_2_table_p6_1:row8:col3'] |
-| C5_unit_missing_Q99 | fail | [length] ** 3 / [time] | WT/70 | not captured | not captured | ['Kumpulainen_2010_2_table_p6_1:row6:col1', 'Kumpulainen_2010_2_table_p6_1:row6:col2', 'Kumpulainen_2010_2_table_p6_1:row6:col3'] |
-| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 0.83 | not captured | not captured | ['Kumpulainen_2010_2_table_p6_1:row4:col1', 'Kumpulainen_2010_2_table_p6_1:row4:col2', 'Kumpulainen_2010_2_table_p6_1:row4:col3'] |
+| C0_has_structural_params | pass | not captured | 7 | not captured | not captured | not captured |
+| C0c_disposition_complete | fail | not captured | not captured | not captured | not captured | not captured |
+| C5_dimension_Q30 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Kumpulainen_2010_2_table_p6_1:row11:col1', 'Kumpulainen_2010_2_table_p6_1:row11:col2', 'Kumpulainen_2010_2_table_p6_1:row11:col3'] |
+| C5_dimension_Q301 | fail | [length] ** 3 / [time] | l h⁻¹ | not captured | not captured | ['Kumpulainen_2010_2_table_p6_1:row1:col1', 'Kumpulainen_2010_2_table_p6_1:row1:col2', 'Kumpulainen_2010_2_table_p6_1:row1:col3'] |
+| C5_dimension_Q349 | pass | 1 / [time] | not captured | not captured | not captured | ['Kumpulainen_2010_2_table_p6_1:row12:col1', 'Kumpulainen_2010_2_table_p6_1:row12:col2', 'Kumpulainen_2010_2_table_p6_1:row12:col3'] |
+| C5_dimension_Q49 | fail | [length] ** 3 / [time] | l h⁻¹ | not captured | not captured | ['Kumpulainen_2010_2_table_p6_1:row3:col1', 'Kumpulainen_2010_2_table_p6_1:row3:col2', 'Kumpulainen_2010_2_table_p6_1:row3:col3'] |
+| C5_dimension_Q61 | pass | [length] ** 3 | not captured | not captured | not captured | ['Zhang_2018:review'] |
+| C5_dimension_Q83 | pass | [time] | not captured | not captured | not captured | ['Kumpulainen_2010_2_table_p6_1:row2:col1', 'Kumpulainen_2010_2_table_p6_1:row2:col2', 'Kumpulainen_2010_2_table_p6_1:row2:col3'] |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
+| C9_phys_window_Q61 | pass | volume within physiological range | 6 L | not captured | not captured | ['Zhang_2018:review'] |
 
 <details class="legend">
 <summary>Check legend — what each column means</summary>
@@ -155,4 +149,4 @@ _No web simulator for this record: its structure has no shared WebAssembly templ
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-07-15 12:06 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 00:51 UTC</sub>

@@ -1,0 +1,39 @@
+{
+ "dose_source": "paper",
+ "model_id": "Capivasertib_Fernandez2025_reference",
+ "molar_masses": {
+  "central.C": 0.42891500000000005
+ },
+ "note": "Values for the shared PK_2C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "paper_doses_kind": "range",
+ "paper_doses_mg": [
+  80.0,
+  800.0
+ ],
+ "parameters": {
+  "Cl": 1.6555555555555556e-05,
+  "F": 1.0,
+  "MM": 0.42891500000000005,
+  "Tlag": 0.0,
+  "VdPerKg": 0.0007,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 8e-05,
+  "k12": 0.0001326530612244898,
+  "k21": 5.752212389380531e-05,
+  "ka": 0.0001225,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 9508.084583866375
+ },
+ "reference_peaks": {
+  "central.C": 0.00017386949491700817
+ },
+ "stop_time": 86400.0,
+ "template": "PK_2C_enteral",
+ "template_fmu": "PK_2C_enteral.fmu"
+}

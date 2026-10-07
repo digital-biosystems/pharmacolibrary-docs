@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N06A&quot;,&quot;href&quot;:&quot;atc/N06A.md&quot;},{&quot;label&quot;:&quot;sertraline&quot;,&quot;href&quot;:&quot;drugs/drug_sertraline/&quot;},{&quot;label&quot;:&quot;Monfort_2024 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Sertraline_Castillo2024_reference&quot;,&quot;label&quot;:&quot;Castillo_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_sertraline/Sertraline_Castillo2024_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Sertraline_Xia2025_reference&quot;,&quot;label&quot;:&quot;Xia_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_sertraline/Sertraline_Xia2025_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Sertraline_Poweleit2023_reference&quot;,&quot;label&quot;:&quot;Poweleit_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_sertraline/Sertraline_Poweleit2023_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Sertraline_Xia2025_reference&quot;,&quot;label&quot;:&quot;Xia_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_sertraline/Sertraline_Xia2025_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # sertraline — `Sertraline_Monfort2024_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.8). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.8). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -25,12 +25,14 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the val
 
 <sub>reviewed by rule template (no LLM)</sub>
 
+> ⚠️ **STALE** — review status `needs_review` (reviewed 2026-09-28 14:40:30.065414+00:00) predates the upstream re-run (2026-10-06 23:44:29.131052+00:00). Current validate status: `needs_review`.
+
 ## Citation
 Monfort A et al., A population pharmacokinetic model for…, British journal of clinical… (2024)
   ·  DOI: [10.1111/bcp.16177](https://doi.org/10.1111/bcp.16177)
 
 ## Model component
-<dbs-pgx drug="sertraline" model-id="Sertraline_Monfort2024_reference" status="needs_review" stale="false" population="women during the perinatal period" measured-compound="sertraline" parameterization="apparent" topology="1C"></dbs-pgx>
+<dbs-pgx drug="sertraline" model-id="Sertraline_Monfort2024_reference" status="needs_review" stale="true" population="pregnant and postpartum women (perinatal period)" measured-compound="sertraline" parameterization="apparent" topology="1C"></dbs-pgx>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 4 extracted, plus 1 covariate effect.
@@ -44,7 +46,7 @@ Monfort A et al., A population pharmacokinetic model for…, British journal of 
 |---|---|---|---|---|---|---|---|---|---|---|
 | VSERT/F (L) | `Q76` · V/F | 2251.5 | L | 2.2515 | [l] | 18.4 | llm (0.6) | Monfort_2024_table_p8_1:row2:col1, Monfort_2024_table_p8_1:row2:col2, Monfort_2024_table_p8_1:row2:col3 | — | not captured |
 | kaSERT (h–1) | `Q49` · kabs | 0.314 | h–1 | 8.722222222222222e-05 | [1] / [h] | 26.5 | llm (0.6) | Monfort_2024_table_p8_1:row3:col1, Monfort_2024_table_p8_1:row3:col2, Monfort_2024_table_p8_1:row3:col3 | — | not captured |
-| kMC (h–1) | `Q302` · k21 | 0.135 | h–1 | 3.7500000000000003e-05 | [1] / [h] | 47.5 | llm (0.6) | Monfort_2024_table_p8_1:row6:col1, Monfort_2024_table_p8_1:row6:col2, Monfort_2024_table_p8_1:row6:col3 | — | not captured |
+| kMC (h–1) | `Q372` · kmp | 0.135 | h–1 | 3.7500000000000003e-05 | [1] / [h] | 47.5 | llm (0.6) | Monfort_2024_table_p8_1:row6:col1, Monfort_2024_table_p8_1:row6:col2, Monfort_2024_table_p8_1:row6:col3 | — | not captured |
 | kCM (h–1) | `Q301` · k12 | 0.367 | h–1 | 0.00010194444444444445 | [1] / [h] | 46.2 | llm (0.6) | Monfort_2024_table_p8_1:row7:col1, Monfort_2024_table_p8_1:row7:col2, Monfort_2024_table_p8_1:row7:col3 | — | not captured |
 | theta_q27_cyp2c19 | `Q900` · theta_q27_cyp2c19 | 69.6 | not captured | not captured | not captured | 19.3 | not captured (not captured) | Monfort_2024_table_p8_1:row0:col1, Monfort_2024_table_p8_1:row0:col2, Monfort_2024_table_p8_1:row0:col3 | — | not captured |
 
@@ -67,9 +69,6 @@ Monfort A et al., A population pharmacokinetic model for…, British journal of 
 - skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
 - skipped review gap-fill of Q: primary's parameterization (rate-constant / ka-only) does not use it
 - skipped review gap-fill of TLAG: primary's parameterization (rate-constant / ka-only) does not use it
-
-**Extraction notes:**
-- no TEI final-model table id; trying text-pointer table recovery
 
 ## Validation
 
@@ -104,7 +103,7 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | fail | not captured | not captured | not captured | not captured | not captured |
 | C5_dimension_Q301 | pass | 1 / [time] | not captured | not captured | not captured | ['Monfort_2024_table_p8_1:row7:col1', 'Monfort_2024_table_p8_1:row7:col2', 'Monfort_2024_table_p8_1:row7:col3'] |
-| C5_dimension_Q302 | pass | 1 / [time] | not captured | not captured | not captured | ['Monfort_2024_table_p8_1:row6:col1', 'Monfort_2024_table_p8_1:row6:col2', 'Monfort_2024_table_p8_1:row6:col3'] |
+| C5_dimension_Q372 | pass | 1 / [time] | not captured | not captured | not captured | ['Monfort_2024_table_p8_1:row6:col1', 'Monfort_2024_table_p8_1:row6:col2', 'Monfort_2024_table_p8_1:row6:col3'] |
 | C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['Monfort_2024_table_p8_1:row3:col1', 'Monfort_2024_table_p8_1:row3:col2', 'Monfort_2024_table_p8_1:row3:col3'] |
 | C5_dimension_Q76 | pass | [length] ** 3 | not captured | not captured | not captured | ['Monfort_2024_table_p8_1:row2:col1', 'Monfort_2024_table_p8_1:row2:col2', 'Monfort_2024_table_p8_1:row2:col3'] |
 | C7_apparent_coherence | pass | not captured | not captured | not captured | not captured | not captured |
@@ -144,4 +143,4 @@ _No web simulator for this record: its structure has no shared WebAssembly templ
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-09-24 04:38 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-06 23:44 UTC</sub>

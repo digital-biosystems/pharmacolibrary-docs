@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C05A&quot;,&quot;href&quot;:&quot;atc/C05A.md&quot;},{&quot;label&quot;:&quot;tetracaine&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Tetracaine_Cacek2017_reference&quot;,&quot;label&quot;:&quot;Cacek_2017_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tetracaine/Tetracaine_Cacek2017_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Tetracaine_Gapiska2025_reference&quot;,&quot;label&quot;:&quot;Gapi\u0144ska_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tetracaine/Tetracaine_Gapiska2025_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Tetracaine_Sam2009_reference&quot;,&quot;label&quot;:&quot;Sam_2009_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tetracaine/Tetracaine_Sam2009_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 # tetracaine
 
@@ -21,26 +21,33 @@ Tetracaine is a local anesthetic used to prevent or relieve pain, including topi
 
 | molecule | role | molar mass (g/mol) | formula | source | PubChem | records |
 |---|---|---|---|---|---|---|
-| tetracaine | parent | 264.369 | C15H24N2O2 | DrugBank | [5411](https://pubchem.ncbi.nlm.nih.gov/compound/5411) | Cacek_2017 |
-| para-butylaminobenzoic acid | metabolite | 193.246 | C11H15NO2 | PubChem | [95946](https://pubchem.ncbi.nlm.nih.gov/compound/95946) | Cacek_2017 |
+| para-butylaminobenzoic acid | metabolite | — (mass units only) | — | — | — | — |
 
 ## Extraction summary
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-28 19:55 | 8:07 | 0/1/0 | 0/0/1 | 0/0/0 | 74,717/11,918 | ollama / qwen3.8:27b-mtp-q8_0 | 1 | 1/1 | 1/0 | 0 |
+| 2026-10-06 23:29 | 20:49 | 2/1/0 | 4/0/0 | 0/0/0 | 274,059/35,459 | ollama / qwen3.8:27b-mtp-q8_0 | 14 | 3/6 | 13/1 | 0 |
 
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.667). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: T3_output_variable</sub><br><sub>blocking: T3_param_coverage</sub><br><sub>route_to: `engineer`</sub> | [Cacek_2017_reference](drugs/drug_tetracaine/Tetracaine_Cacek2017_reference.md) | ▶ model + simulator | 1-compartment, oral | 5 | Cacek AT et al., Population Pharmacokinetics of an Intra…, Journal of clinical pharmac… (2017) | [10.1002/jcph.799](https://doi.org/10.1002/jcph.799) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.625). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span> | [Gapińska_2025_reference](drugs/drug_tetracaine/Tetracaine_Gapiska2025_reference.md) | ▶ model + simulator | 2-compartment, oral | 3 | Gapińska N et al., Effect of SSR504734, a Selective Glycin…, ACS chemical neuroscience (2025) | [10.1021/acschemneuro.5c00039](https://doi.org/10.1021/acschemneuro.5c00039) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span> | [Sam_2009_reference](drugs/drug_tetracaine/Tetracaine_Sam2009_reference.md) | ▶ model + simulator | 1-compartment, IV | 2 | Sam WJ et al., Population pharmacokinetics of remifent…, BMC anesthesiology (2009) | [10.1186/1471-2253-9-5](https://doi.org/10.1186/1471-2253-9-5) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: disputed</span><br><sub>STALE — current validate: rejected</sub><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Cacek_2017_reference](drugs/drug_tetracaine/Tetracaine_Cacek2017_reference.md) | — | parent + metabolite (no model) | 0 | Cacek AT et al., Population Pharmacokinetics of an Intra…, Journal of clinical pharmac… (2017) | [10.1002/jcph.799](https://doi.org/10.1002/jcph.799) |
 
 ## Pharmacodynamics (PD)
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">needs review</span> | [Tay_2019_relative_light_units](drugs/drug_tetracaine/pd_Tay_2019_relative_light_units.md) | sodium influx fluorescence (NaV1.1) ← veratridine · direct sigmoid Emax (Hill) effect | — | Tay B et al., Development of a high-throughput fluore…, PloS one (2019) | [10.1371/journal.pone.0213751](https://doi.org/10.1371/journal.pone.0213751) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span> | [Csernoch_1999_Rrel_peak](drugs/drug_tetracaine/pd_Csernoch_1999_Rrel_peak.md) | rate of calcium release (Rrel) from the sarcoplasmic reticulum (SR) - early peak ← tetracaine · direct sigmoid Emax (Hill) effect | — | Csernoch L et al., Effects of tetracaine on sarcoplasmic c…, The Journal of physiology 5… (1999) | [10.1111/j.1469-7793.1999.843ab.x](https://doi.org/10.1111/j.1469-7793.1999.843ab.x) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span> | [Csernoch_1999_Rrel_steady](drugs/drug_tetracaine/pd_Csernoch_1999_Rrel_steady.md) | rate of calcium release (Rrel) from the sarcoplasmic reticulum (SR) - steady level ← tetracaine · direct sigmoid Emax (Hill) effect | — | Csernoch L et al., Effects of tetracaine on sarcoplasmic c…, The Journal of physiology 5… (1999) | [10.1111/j.1469-7793.1999.843ab.x](https://doi.org/10.1111/j.1469-7793.1999.843ab.x) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span> | [Csernoch_1999_open_probability](drugs/drug_tetracaine/pd_Csernoch_1999_open_probability.md) | open probability of the ryanodine receptor (RyR) calcium release channel ← tetracaine · direct sigmoid Emax (Hill) effect | — | Csernoch L et al., Effects of tetracaine on sarcoplasmic c…, The Journal of physiology 5… (1999) | [10.1111/j.1469-7793.1999.843ab.x](https://doi.org/10.1111/j.1469-7793.1999.843ab.x) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span> | [Langerman_1994_TF](drugs/drug_tetracaine/pd_Langerman_1994_TF.md) | analgetic effect ← tetracaine · direct sigmoid Emax (Hill) effect | — | Langerman L et al., The partition coefficient as a predicto…, Anesthesia and analgesia (1994) | [10.1213/00000539-199409000-00015](https://doi.org/10.1213/00000539-199409000-00015) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by qwen3.8:27b-mtp-q8_0, p(non-human) 1.00).">in vitro</span> | [Tay_2019_fluorescence_response](drugs/drug_tetracaine/pd_Tay_2019_fluorescence_response.md) | fluorescence response ← tetracaine · direct sigmoid Emax (Hill) effect | — | Tay B et al., Development of a high-throughput fluore…, PloS one (2019) | [10.1371/journal.pone.0213751](https://doi.org/10.1371/journal.pone.0213751) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Wang_1994_Na_channel_block](drugs/drug_tetracaine/pd_Wang_1994_Na_channel_block.md) | Na+ channel block ← tetracaine · direct sigmoid Emax (Hill) effect | — | Wang GK et al., Charged tetracaine as an inactivation e…, Biophysical journal (1994) | [10.1016/S0006-3495(94)80666-6](https://doi.org/10.1016/S0006-3495(94)80666-6) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Wang_1994_steady_state_inactivation](drugs/drug_tetracaine/pd_Wang_1994_steady_state_inactivation.md) | steady-state inactivation ← tetracaine · direct sigmoid Emax (Hill) effect | — | Wang GK et al., Charged tetracaine as an inactivation e…, Biophysical journal (1994) | [10.1016/S0006-3495(94)80666-6](https://doi.org/10.1016/S0006-3495(94)80666-6) |
 
 ## ADME sites
 
@@ -61,9 +68,9 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 ## Coverage
 
-- **PubMed hits:** 23 matched, 12 returned
+- **PubMed hits:** 148 matched, 65 returned
 - **screened:** 1  ·  **relevant:** 1
-- **records:** 1  ·  extracted 0  ·  needs_review 0  ·  rejected 1  ·  stale 0
+- **records:** 3  ·  extracted 2  ·  needs_review 0  ·  rejected 1  ·  stale 1
 - **scholar-agent fallback query used:** not captured
 
 ## Full text wanted
@@ -72,29 +79,49 @@ _1 paper(s) judged relevant from the abstract, with no full text on disk — pay
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Cacek_2017.pdf` | Cacek AT et al., Population Pharmacokinetics of an Intra…, Journal of clinical pharmac… (2017) | popPK | 9 | [10.1002/jcph.799](https://doi.org/10.1002/jcph.799) | [27436060](https://pubmed.ncbi.nlm.nih.gov/27436060) | The paper reports quantitative population PK parameters (ka, CL, V, Q) for tetracaine's primary metabolite PBBA, which serves as the measurable surrogate for tetracaine disposition in this study. |
+| `Cacek_2017.pdf` | Cacek AT et al., Population Pharmacokinetics of an Intra…, Journal of clinical pharmac… (2017) | popPK | 10 | [10.1002/jcph.799](https://doi.org/10.1002/jcph.799) | [27436060](https://pubmed.ncbi.nlm.nih.gov/27436060) | The study reports quantitative population PK parameters (ka, CL, V, Q) for tetracaine's primary metabolite PBBA, which is explicitly defined as relevant to tetracaine's pharmacokinetics in the instructions. |
 
-<sub>queue written 2026-09-28T19:50:53.952240+00:00</sub>
+<sub>queue written 2026-10-06T23:18:31.507796+00:00</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Csernoch_1999 | irrelevant | 0 | 0 | The study is a mechanistic investigation of tetracaine's effect on calcium release in muscle fibers, not a pharmacokinetic study, and reports no disposition parameters. |
-| popPK | Grant_1994 | irrelevant | 0 | 0 | The study is an in-vitro cytotoxicity assessment of tetracaine and does not report any pharmacokinetic parameters. |
+| popPK | Bolger_1987 | irrelevant | 0 | 0 | The study is an in-vitro binding assay using tetracaine as a probe to characterize calcium antagonist sites, not a pharmacokinetic study. |
+| popPK | Campbell_2007 | irrelevant | 0 | 0 | The study is a mechanistic pharmacology investigation in opossum esophagus where tetracaine is used as a ryanodine receptor antagonist, not as the subject drug for pharmacokinetic analysis. |
+| popPK | Cartabuke_2019 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of oxymetazoline, not tetracaine. |
+| popPK | Csernoch_1999 | irrelevant | 0 | 0 | The study investigates the mechanistic effects of tetracaine on calcium release in muscle fibers (in vitro/physiological), not its pharmacokinetic disposition parameters. |
+| popPK | Del_2020 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of opticin in rabbits, and tetracaine is only mentioned as a topical anesthetic used for procedural anesthesia, not as the subject drug. |
+| popPK | Drexler_2025 | irrelevant | 0 | 0 | The paper investigates the role of serotonergic neurons in glioma growth and does not mention tetracaine or report any pharmacokinetic parameters for it. |
+| popPK | Fernandes_2004 | irrelevant | 0 | 0 | Tetracaine is used only as a pharmacological tool to inhibit dopamine release in an in-vitro study, with no pharmacokinetic parameters reported. |
+| popPK | Gapińska_2025 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of SSR504734 in mice, and tetracaine is only mentioned as an ocular anesthetic used for procedural purposes, not as the subject drug. |
+| popPK | Grant_1994 | irrelevant | 0 | 0 | The study is an in-vitro cytotoxicity assessment using rabbit corneal cells and reports no pharmacokinetic parameters. |
 | popPK | Katsuki_2004 | irrelevant | 0 | 0 | The study is an in-vitro hemolysis assay measuring EC50 values, not a pharmacokinetic study reporting disposition parameters like clearance or volume. |
-| popPK | Langerman_1994 | irrelevant | 0 | 0 | The study reports pharmacodynamic potency (EC50/ED50) and partition coefficients, not pharmacokinetic disposition parameters (CL, V, ka, etc.) for tetracaine. |
-| PGx | Moore_2025 | not_relevant | 0 | 0 | The paper investigates the structure-activity relationship of tetracaine derivatives for treating CPVT and does not report pharmacogenomic effects on PK or PD parameters. |
-| popPK | Mourot_2006 | irrelevant | 0 | 0 | The paper is a mechanistic study on nicotinic acetylcholine receptors where tetracaine is used only as a noncompetitive blocker, with no pharmacokinetic parameters reported. |
+| popPK | Kilgore_2024 | irrelevant | 0 | 0 | The paper investigates the partitioning of small molecules in biomolecular condensates and does not mention tetracaine or report any pharmacokinetic parameters for it. |
+| popPK | Langerman_1994 | irrelevant | 0 | 0 | The study reports pharmacodynamic potency (EC50/ED50) and partition coefficients, not pharmacokinetic disposition parameters (CL, V, t1/2). |
+| PGx | Moore_2025 | not_relevant | 0 | 0 | The paper investigates the structure-activity relationship of tetracaine derivatives for treating CPVT, not the effect of a specific gene variant on the PK/PD of tetracaine itself. |
+| popPK | Mourot_2006 | irrelevant | 0 | 0 | The paper is a mechanistic electrophysiology study on nicotinic acetylcholine receptors where tetracaine is used only as a noncompetitive blocker, not as the subject of pharmacokinetic analysis. |
 | PD | Mourot_2006 | not_relevant | 0 | 0 | The paper focuses on the photochemical tethering of an agonist (AC5) to nAChRs; tetracaine is only mentioned as a noncompetitive blocker used to confirm the mechanism of action, with no exposure-response or dose-response analysis or numeric PD parameters reported for it. |
-| popPK | Scheib_2006 | irrelevant | 0 | 0 | no_text gate: only 80 chars of text extracted (&lt; 400) |
+| popPK | Negishi_1982 | irrelevant | 0 | 0 | The study investigates calcium uptake kinetics in mastocytoma cells and uses tetracaine only as a negative control inhibitor, not as the subject of pharmacokinetic analysis. |
+| popPK | Nieoczym_2026 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of 6-gingerol in mice, and tetracaine is only mentioned as a topical anesthetic used for corneal anesthesia during electroshock tests. |
+| popPK | Ohnishi_1987 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of calcium permeability in sarcoplasmic reticulum, not a pharmacokinetic study reporting disposition parameters for tetracaine. |
+| popPK | Reiser_1983 | irrelevant | 0 | 0 | The study investigates ion channel pharmacology in rat brain cells using tetracaine as a blocking agent, not its pharmacokinetics. |
+| popPK | Sam_2009 | irrelevant | 0 | 0 | The study reports pharmacokinetic parameters for remifentanil, while tetracaine is only mentioned as a co-administered spinal anesthetic agent. |
+| popPK | Scheib_2006 | irrelevant | 0 | 0 | The study is a molecular modeling and docking analysis of tetracaine binding to sodium channels, not a pharmacokinetic study reporting disposition parameters. |
 | PD | Scheib_2006 | not_relevant | 0 | 0 | The provided text only contains the chemical structure and molecular weight of Tetrodotoxin, with no mention of tetracaine or any pharmacodynamic data. |
-| popPK | Schnetkamp_1990 | irrelevant | 0 | 0 | The paper is a mechanistic study on ion channel cation selectivity where tetracaine is used only as a pharmacological blocker, not as a subject drug for PK analysis. |
+| popPK | Schlieper_1984 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of local anesthetic effects on membranes and cardiac tissues, not a pharmacokinetic study reporting disposition parameters. |
+| popPK | Schnetkamp_1989 | irrelevant | 0 | 0 | The study is a mechanistic investigation of ion flux in bovine retinal cells where tetracaine is used only as a pharmacological blocker, not as the subject of pharmacokinetic analysis. |
+| popPK | Schnetkamp_1990 | irrelevant | 0 | 0 | The study investigates cation selectivity of a channel in bovine rod membranes using tetracaine as a pharmacological blocker, not as a subject drug for pharmacokinetic analysis. |
 | PD | Schnetkamp_1990 | not_relevant | 1 | 0 | The paper mentions tetracaine only as a qualitative blocker of a channel component without providing any numeric concentration-effect data, IC50, or dose-response parameters. |
-| popPK | Tay_2019 | irrelevant | 0 | 0 | The paper is an in-vitro electrophysiology/fluorescence assay development study where tetracaine is used only as a positive control inhibitor, not as a subject for pharmacokinetic analysis. |
-| popPK | Wang_1994 | irrelevant | 0 | 0 | The paper is an in-vitro mechanistic study of tetracaine's interaction with sodium channels, reporting IC50 values rather than pharmacokinetic disposition parameters. |
-| popPK | Wissing_2002 | irrelevant | 0 | 0 | The paper is a mechanistic study on calcium signaling where tetracaine is used only as a pharmacological antagonist/comparator, not as the subject of a pharmacokinetic analysis. |
+| popPK | Sárközi_1996 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of tetracaine's effects on excitation-contraction coupling in frog muscle, not a pharmacokinetic study. |
+| popPK | Tay_2019 | irrelevant | 0 | 0 | The paper is an in-vitro electrophysiology/fluorescence assay development study where tetracaine is used only as a reference inhibitor to validate the assay, not as a subject for pharmacokinetic analysis. |
+| popPK | Tiger_1995 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic assay measuring local anesthetic potency (IC50) on sodium channels, not a pharmacokinetic study reporting disposition parameters like clearance or volume. |
+| popPK | Tovey_1998 | irrelevant | 0 | 0 | The study is a mechanistic in-vitro investigation of calcium release where tetracaine is used only as a blocking agent, not as the subject of pharmacokinetic analysis. |
+| popPK | Wang_1994 | irrelevant | 0 | 0 | The study is an in-vitro electrophysiological investigation of tetracaine's mechanism of action on sodium channels, reporting IC50 values rather than pharmacokinetic disposition parameters. |
+| popPK | Wang_2000 | irrelevant | 0 | 0 | The study investigates the vasoactive effects of nicotine in rat tail arteries, using tetracaine only as a non-specific blocker of the rebound contraction, with no pharmacokinetic parameters reported for tetracaine. |
+| popPK | Wissing_2002 | irrelevant | 0 | 0 | The study is a mechanistic investigation of calcium signaling in hepatocytes where tetracaine is used only as a pharmacological antagonist, not as the subject of pharmacokinetic analysis. |
 | PD | Wissing_2002 | not_relevant | 0 | 0 | The paper reports that tetracaine did not affect the Ca2+ release response, providing no numeric PD parameters or exposure-response relationship for tetracaine. |
+| popPK | de_2020 | irrelevant | 0 | 0 | The study investigates renal development in preterm rabbits and mentions tetracaine only as a component of the euthanasia solution, not as a subject of pharmacokinetic analysis. |
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-09-28 19:51 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-10-06 23:18 UTC</sub>

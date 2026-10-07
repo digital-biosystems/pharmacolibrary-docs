@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C05C&quot;,&quot;href&quot;:&quot;atc/C05C.md&quot;},{&quot;label&quot;:&quot;rutoside&quot;,&quot;href&quot;:&quot;drugs/drug_rutoside/&quot;},{&quot;label&quot;:&quot;Dom\u00ednguez_2021 \u00b7 stochastic_approximation&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Rutoside_Domnguez2024_extract_equivalent_to_7_4_mg_kg_of_rut&quot;,&quot;label&quot;:&quot;Dom\u00ednguez_2024_extract_equivalent_to_7_4_mg_kg_of_rutin&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_rutoside/Rutoside_Domnguez2024_extract_equivalent_to_7_4_mg_kg_of_rut.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Rutoside_Domnguez2024_extract_equivalent_to_7_4_mg_kg_of_rut&quot;,&quot;label&quot;:&quot;Dom\u00ednguez_2024_extract_equivalent_to_7_4_mg_kg_of_rutin&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_rutoside/Rutoside_Domnguez2024_extract_equivalent_to_7_4_mg_kg_of_rut.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # rutoside — `Rutoside_Domnguez2021_stochastic_approximation`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.444). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.158). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -23,21 +23,21 @@
 
 Without a unit the value cannot be converted, so the model cannot use it. None of the extracted parameters is rutoside's own; they describe quercetin. Extracted — quercetin: kabs 0.0129 h−1, t1/2ka 0.167, Fab 0.0275, tlag 0.021 h, V1 1.14 L/kg, V 0.0951, kel 0.119 h−1, KD 0.231, … (+2).
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has rutin (pure or as Physalis peruviana extract), the second reading rutin; it also differs on 9 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has rutin, the second reading unknown; it also differs on 15 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
-> **Dose compound ≠ measured compound:** dosed `rutin (pure or as Physalis peruviana extract)`, measured `rutin (i.v. model); quercetin representing Q3OG/Q3OS (oral model)`.
+> ⚠️ **STALE** — review status `needs_review` (reviewed 2026-10-05 09:31:38.483033+00:00) predates the upstream re-run (2026-10-06 22:23:31.578034+00:00). Current validate status: `needs_review`.
 
 ## Citation
 Domínguez Moré GP et al., Matrix Effects of the Hydroethanolic Ex…, Pharmaceutics (2021)
   ·  DOI: [10.3390/pharmaceutics13040535](https://doi.org/10.3390/pharmaceutics13040535)
 
 ## Model component
-<dbs-pgx drug="rutoside" model-id="Rutoside_Domnguez2021_stochastic_approximation" status="needs_review" stale="false" population="Wistar rats" measured-compound="rutin (i.v. model); quercetin representing Q3OG/Q3OS (oral model)" parameterization="mechanistic" topology="parent_metabolite"></dbs-pgx>
+<dbs-pgx drug="rutoside" model-id="Rutoside_Domnguez2021_stochastic_approximation" status="needs_review" stale="true" population="Wistar rats" measured-compound="rutin" parameterization="mechanistic" topology="parent_metabolite"></dbs-pgx>
 
 **Model structure:** parent + metabolite; no model was built for this record.  
-**Parameters:** 10 extracted.
+**Parameters:** 7 extracted.
 
 **Parameterization:** mechanistic.
 
@@ -47,16 +47,13 @@ Domínguez Moré GP et al., Matrix Effects of the Hydroethanolic Ex…, Pharmace
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
 | ka1_pop (h−1) | `Q49` · kabs | 0.0129 | h−1 | 3.5833333333333335e-06 | [1] / [h] | not captured | exact (1.0) | pharmaceutics-13-00535-t005:row3:col2, pharmaceutics-13-00535-t005:row3:col3 | — | not captured |
-| βka1D75 | `Q95` · t1/2ka | 0.167 | not captured | not captured | not captured | not captured | llm (0.6) | pharmaceutics-13-00535-t005:row4:col2, pharmaceutics-13-00535-t005:row4:col3 | — | not captured |
-| F1_pop | `Q40` · Fab | 0.0275 | not captured | not captured | not captured | not captured | llm (0.6) | pharmaceutics-13-00535-t005:row9:col2, pharmaceutics-13-00535-t005:row9:col3 | — | 0.0769 (None% RSE) |
 | Tlag2_pop (h) | `Q83` · tlag | 0.021 | h | 75.60000000000001 | [h] | not captured | exact (1.0) | pharmaceutics-13-00535-t005:row10:col2, pharmaceutics-13-00535-t005:row10:col3 | — | not captured |
-| Vpop (L/kg) | `Q63` · V1 | 1.14 | L/kg | 0.0798 | [l] / [kg] | not captured | exact (1.0) | pharmaceutics-13-00535-t005:row15:col2, pharmaceutics-13-00535-t005:row15:col3, Domínguez_2021_table_4:row2:col2, Domínguez_2021_table_4:row2:col3 | — | not captured |
-| βVD75 | `Q61` · V | 0.0951 | not captured | not captured | not captured | not captured | llm (0.6) | pharmaceutics-13-00535-t005:row16:col2, pharmaceutics-13-00535-t005:row16:col3 | — | 0.0148 (None% RSE) |
+| Vpop (L/kg) | `Q352` · Vnorm | 1.14 | L/kg | 0.0798 | [l] / [kg] | not captured | llm (0.6) | pharmaceutics-13-00535-t005:row15:col2, pharmaceutics-13-00535-t005:row15:col3, Domínguez_2021_table_4:row2:col2, Domínguez_2021_table_4:row2:col3 | — | not captured |
 | kpop (h−1) | `Q47` · kel | 0.119 | h−1 | 3.3055555555555553e-05 | [1] / [h] | not captured | exact (1.0) | pharmaceutics-13-00535-t005:row20:col2, pharmaceutics-13-00535-t005:row20:col3, Domínguez_2021_table_4:row4:col2, Domínguez_2021_table_4:row4:col3 | — | 0.0231 (None% RSE) |
-| βkD1000 | `Q331` · KD | 0.231 | not captured | not captured | not captured | not captured | llm (0.6) | pharmaceutics-13-00535-t005:row24:col2, pharmaceutics-13-00535-t005:row24:col3 | — | not captured |
 | k12_pop (h−1) | `Q301` · k12 | 0.0802 | h−1 | 2.2277777777777778e-05 | [1] / [h] | not captured | llm (0.6) | pharmaceutics-13-00535-t005:row25:col2, pharmaceutics-13-00535-t005:row25:col3, Domínguez_2021_table_4:row6:col2, Domínguez_2021_table_4:row6:col3 | — | not captured |
 | k21_pop (h−1) | `Q302` · k21 | 0.107 | h−1 | 2.9722222222222223e-05 | [1] / [h] | not captured | llm (0.6) | pharmaceutics-13-00535-t005:row26:col2, pharmaceutics-13-00535-t005:row26:col3, Domínguez_2021_table_4:row7:col2, Domínguez_2021_table_4:row7:col3 | — | not captured |
-| b | `Q900` · equation variable | 0.0143 | not captured | not captured | not captured | not captured | llm (0.6) | pharmaceutics-13-00535-t005:row34:col2, pharmaceutics-13-00535-t005:row34:col3, Domínguez_2021_table_4:row15:col2, Domínguez_2021_table_4:row15:col3 | — | not captured |
+| a | `Q900` · equation variable | 2.49 | not captured | not captured | not captured | not captured | llm (0.6) | pharmaceutics-13-00535-t005:row33:col2, pharmaceutics-13-00535-t005:row33:col3, Domínguez_2021_table_4:row14:col2, Domínguez_2021_table_4:row14:col3 | — | not captured |
+| k V | `Q61` · V | 0.111 | not captured | not captured | not captured | not captured | llm (0.6) | Domínguez_2021_table_4:row12:col2, Domínguez_2021_table_4:row12:col3 | — | 0.0148 (None% RSE) |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -66,38 +63,38 @@ Domínguez Moré GP et al., Matrix Effects of the Hydroethanolic Ex…, Pharmace
 ## Departures & gaps
 
 **Interpretation flags:**
-- dropped duplicate Q49 ('βka1D500', value '0.166') — already have one for this compound
-- dropped duplicate Q49 ('βka1D750', value '0.176') — already have one for this compound
-- routed 'βka1D1000' → Q314 (omega_cov) to covariance — variability estimate, not a structural parameter
+- column 'stochastic approximation' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
+- dropped unlinked row (NIL): 'βka1D75' — extend the ontology if this is a real PK parameter (source ['pharmaceutics-13-00535-t005:row4:col2', 'pharmaceutics-13-00535-t005:row4:col3'])
+- dropped unlinked row (NIL): 'βka1D500' — extend the ontology if this is a real PK parameter (source ['pharmaceutics-13-00535-t005:row5:col2', 'pharmaceutics-13-00535-t005:row5:col3'])
+- dropped unlinked row (NIL): 'βka1D750' — extend the ontology if this is a real PK parameter (source ['pharmaceutics-13-00535-t005:row6:col2', 'pharmaceutics-13-00535-t005:row6:col3'])
+- dropped unlinked row (NIL): 'βka1D1000' — extend the ontology if this is a real PK parameter (source ['pharmaceutics-13-00535-t005:row7:col2', 'pharmaceutics-13-00535-t005:row7:col3'])
 - dropped duplicate Q49 ('ka2_pop (h−1)', value '0.0686') — already have one for this compound
+- dropped unlinked row (NIL): 'F1_pop' — extend the ontology if this is a real PK parameter (source ['pharmaceutics-13-00535-t005:row9:col2', 'pharmaceutics-13-00535-t005:row9:col3'])
 - dropped duplicate Q83 ('βTlag2D75', value '0.00556') — already have one for this compound
-- dropped duplicate Q83 ('βTlag2D500', value '0.0936') — already have one for this compound
+- dropped unlinked row (NIL): 'βTlag2D500' — extend the ontology if this is a real PK parameter (source ['pharmaceutics-13-00535-t005:row12:col2', 'pharmaceutics-13-00535-t005:row12:col3'])
 - dropped duplicate Q83 ('βTlag2D750', value '0.0595') — already have one for this compound
-- dropped duplicate Q83 ('βTlag2D1000', value '0.254') — already have one for this compound
-- dropped duplicate Q61 ('βVD500', value '0.105') — already have one for this compound
-- dropped duplicate Q61 ('βVD750', value '0.118') — already have one for this compound
-- dropped duplicate Q61 ('βVD1000', value '0.101') — already have one for this compound
-- dropped duplicate Q47 ('βkD75', value '0.0824') — already have one for this compound
+- dropped unlinked row (NIL): 'βTlag2D1000' — extend the ontology if this is a real PK parameter (source ['pharmaceutics-13-00535-t005:row14:col2', 'pharmaceutics-13-00535-t005:row14:col3'])
+- dropped unlinked row (NIL): 'βVD75' — extend the ontology if this is a real PK parameter (source ['pharmaceutics-13-00535-t005:row16:col2', 'pharmaceutics-13-00535-t005:row16:col3'])
+- dropped unlinked row (NIL): 'βVD500' — extend the ontology if this is a real PK parameter (source ['pharmaceutics-13-00535-t005:row17:col2', 'pharmaceutics-13-00535-t005:row17:col3'])
+- dropped unlinked row (NIL): 'βVD750' — extend the ontology if this is a real PK parameter (source ['pharmaceutics-13-00535-t005:row18:col2', 'pharmaceutics-13-00535-t005:row18:col3'])
+- dropped unlinked row (NIL): 'βVD1000' — extend the ontology if this is a real PK parameter (source ['pharmaceutics-13-00535-t005:row19:col2', 'pharmaceutics-13-00535-t005:row19:col3'])
+- dropped unlinked row (NIL): 'βkD75' — extend the ontology if this is a real PK parameter (source ['pharmaceutics-13-00535-t005:row21:col2', 'pharmaceutics-13-00535-t005:row21:col3'])
 - dropped unlinked row (NIL): 'βkD500' — extend the ontology if this is a real PK parameter (source ['pharmaceutics-13-00535-t005:row22:col2', 'pharmaceutics-13-00535-t005:row22:col3'])
 - dropped unlinked row (NIL): 'βkD750' — extend the ontology if this is a real PK parameter (source ['pharmaceutics-13-00535-t005:row23:col2', 'pharmaceutics-13-00535-t005:row23:col3'])
-- dropped unlinked row (NIL): 'a' — extend the ontology if this is a real PK parameter (source ['pharmaceutics-13-00535-t005:row33:col2', 'pharmaceutics-13-00535-t005:row33:col3', 'Domínguez_2021_table_4:row14:col2', 'Domínguez_2021_table_4:row14:col3'])
-- dropped duplicate Q61 ('βVGEXT', value '0.128') — already have one for this compound
-- dropped duplicate Q47 ('βkGEXT', value '0.0622') — already have one for this compound
-- dropped duplicate Q47 ('k V', value '0.111') — already have one for this compound
-- dropped value-less row: 'β: variability due to significant covariate'
-- NIL: refused to back-fill base 'NIL' from footnote/prose loose number 75 (source ['pharmaceutics-13-00535-t005:footnote']); the table cell was unparseable — needs review
-- dropped value-less row: 'D500, D750, D1000: covariate extract doses 500, 750, and 1000 mg/kg, respectively'
-- implicit units: 'βka1D75' — the LLM proposed 'dimensionless', whose dimension does not fit Q95; left unset
-- implicit units: 'βVD75' — the LLM proposed 'dimensionless', whose dimension does not fit Q61; left unset
-- implicit units: 'βkD1000' — the LLM proposed 'dimensionless', whose dimension does not fit Q331; left unset
-- apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=rutin (i.v. model); quercetin representing Q3OG/Q3OS (oral model)
+- dropped unlinked row (NIL): 'βkD1000' — extend the ontology if this is a real PK parameter (source ['pharmaceutics-13-00535-t005:row24:col2', 'pharmaceutics-13-00535-t005:row24:col3'])
+- dropped unlinked row (NIL): 'b' — extend the ontology if this is a real PK parameter (source ['pharmaceutics-13-00535-t005:row34:col2', 'pharmaceutics-13-00535-t005:row34:col3', 'Domínguez_2021_table_4:row15:col2', 'Domínguez_2021_table_4:row15:col3'])
+- dropped unlinked row (NIL): 'βVGEXT' — extend the ontology if this is a real PK parameter (source ['Domínguez_2021_table_4:row3:col2', 'Domínguez_2021_table_4:row3:col3'])
+- dropped unlinked row (NIL): 'βkGEXT' — extend the ontology if this is a real PK parameter (source ['Domínguez_2021_table_4:row5:col2', 'Domínguez_2021_table_4:row5:col3'])
+- implicit units: 'k V' — the LLM proposed '1/h', whose dimension does not fit Q61; left unset
+- apparent-by-design (ADVISORY, codes unchanged): extravascular dosing with no identifiable F, so these reported disposition parameters are likely apparent unless the model puts first-pass in its structure — Q61 (k V)
+- apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=rutin
 - topology: transfer parameter unlinked (Q100) — add Kfm/formation-rate/rate-constant to the ontology; routing to review
-- template fit: none — 3 metabolites — the templates hold two
+- template fit: PK_3M_9C — formed from central; parent 1, metabolites [0]
 - status held at route_to_review — not promoted
 - population split: 'stochastic approximation' subgroup of Domínguez_2021 (paper reports 3 populations: rutin, stochastic approximation, value)
-- row roles (LLM): model_class=compartmental; 53/53 row label(s) assigned, 21 linked by role; re-tagged parent→quercetin ×111, rutin→rutin (i.v. model); quercetin representing Q3OG/Q3OS (oral model) ×39, parent→rutin (i.v. model); quercetin representing Q3OG/Q3OS (oral model) ×20
-- molar mass: none of 1 PubChem candidate(s) is 'quercetin-3-O-sulfate (Q3OS)' (LLM) — left in mass units
-- molar mass: none found for 'quercetin-3-O-sulfate (Q3OS)' — its concentrations stay mass-only
+- row roles: 8 per-group rows of quercetin covariate_effect but 0 reference group(s) — kept as printed
+- row roles: 10 per-group rows of rutin covariate_effect but 0 reference group(s) — kept as printed
+- row roles (LLM): model_class=compartmental; 50/50 row label(s) assigned, 21 linked by role; re-tagged parent→quercetin ×45, rutin→parent ×33
 - skipped review gap-fill of CL: primary's parameterization (rate-constant / ka-only) does not use it
 - skipped review gap-fill of V2: primary is PARENT_METABOLITE (peripheral family needs ≥2C)
 - skipped review gap-fill of Q: primary's parameterization (rate-constant / ka-only) does not use it
@@ -154,22 +151,28 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.444 (8/18 fields) | 10 |
+| `gpt-oss:120b` | not confirmed | 0.158 (3/19 fields) | 16 |
 
-<details><summary>10 field(s) a reader read differently</summary>
+<details><summary>16 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `model.links` | [['rutin', 'quercetin (as q3og/q3os)', 'metabolism']] | [['rutin', 'quercetin', 'metabolism']] | mismatch |
-| `gpt-oss:120b` | `parameters[b]` | 0.0143 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[f1_pop].parameter_id` | Q40 | Q45 | mismatch |
-| `gpt-oss:120b` | `parameters[k v]` | not captured | 0.111 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[k12_pop].parameter_id` | Q301 | Q30 | mismatch |
+| `gpt-oss:120b` | `parameters[a]` | 2.49 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[f1_pop]` | not captured | 0.0275 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[k12_pop]` | 0.0802 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[k12_pop]` | not captured | 0.0802 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[k21_pop]` | 0.107 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[βka1d75]` | 0.167 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[βkd1000]` | 0.231 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `screen.dose_compound` | rutin (pure or as Physalis peruviana extract) | rutin | mismatch |
-| `gpt-oss:120b` | `screen.primary_analyte` | rutin (i.v. model); quercetin representing Q3OG/Q3OS (oral model) | rutin | mismatch |
+| `gpt-oss:120b` | `parameters[k21_pop]` | not captured | 0.107 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[ka1_pop]` | 0.0129 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[ka1_pop]` | not captured | 0.0129 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[kpop]` | 0.119 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[kpop]` | not captured | 0.119 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[tlag2_pop]` | 0.021 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[tlag2_pop]` | not captured | 0.021 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[vpop]` | 1.14 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[vpop]` | not captured | 1.14 | only_one_extracted |
+| `gpt-oss:120b` | `screen.dose_compound` | rutin | unknown | mismatch |
+| `gpt-oss:120b` | `screen.primary_analyte` | rutin | unknown | mismatch |
 
 </details>
 
@@ -183,20 +186,17 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 10 | not captured | not captured | not captured |
+| C0_has_structural_params | pass | not captured | 7 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
 | C5_dimension_Q301 | pass | 1 / [time] | not captured | not captured | not captured | ['pharmaceutics-13-00535-t005:row25:col2', 'pharmaceutics-13-00535-t005:row25:col3', 'Domínguez_2021_table_4:row6:col2', 'Domínguez_2021_table_4:row6:col3'] |
 | C5_dimension_Q302 | pass | 1 / [time] | not captured | not captured | not captured | ['pharmaceutics-13-00535-t005:row26:col2', 'pharmaceutics-13-00535-t005:row26:col3', 'Domínguez_2021_table_4:row7:col2', 'Domínguez_2021_table_4:row7:col3'] |
+| C5_dimension_Q352 | pass | [length] ** 3 | not captured | not captured | not captured | ['pharmaceutics-13-00535-t005:row15:col2', 'pharmaceutics-13-00535-t005:row15:col3', 'Domínguez_2021_table_4:row2:col2', 'Domínguez_2021_table_4:row2:col3'] |
 | C5_dimension_Q47 | pass | 1 / [time] | not captured | not captured | not captured | ['pharmaceutics-13-00535-t005:row20:col2', 'pharmaceutics-13-00535-t005:row20:col3', 'Domínguez_2021_table_4:row4:col2', 'Domínguez_2021_table_4:row4:col3'] |
 | C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['pharmaceutics-13-00535-t005:row3:col2', 'pharmaceutics-13-00535-t005:row3:col3'] |
-| C5_dimension_Q63 | pass | [length] ** 3 | not captured | not captured | not captured | ['pharmaceutics-13-00535-t005:row15:col2', 'pharmaceutics-13-00535-t005:row15:col3', 'Domínguez_2021_table_4:row2:col2', 'Domínguez_2021_table_4:row2:col3'] |
 | C5_dimension_Q83 | pass | [time] | not captured | not captured | not captured | ['pharmaceutics-13-00535-t005:row10:col2', 'pharmaceutics-13-00535-t005:row10:col3'] |
-| C5_unit_missing_Q331 | fail | [mass] / [length] ** 3 | not captured | not captured | not captured | ['pharmaceutics-13-00535-t005:row24:col2', 'pharmaceutics-13-00535-t005:row24:col3'] |
-| C5_unit_missing_Q61 | fail | [length] ** 3 | not captured | not captured | not captured | ['pharmaceutics-13-00535-t005:row16:col2', 'pharmaceutics-13-00535-t005:row16:col3'] |
-| C5_unit_missing_Q95 | fail | [time] | not captured | not captured | not captured | ['pharmaceutics-13-00535-t005:row4:col2', 'pharmaceutics-13-00535-t005:row4:col3'] |
+| C5_unit_missing_Q61 | fail | [length] ** 3 | not captured | not captured | not captured | ['Domínguez_2021_table_4:row12:col2', 'Domínguez_2021_table_4:row12:col3'] |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
-| C9_phys_window_Q63 | pass | volume within physiological range | 79.8 L | not captured | not captured | ['pharmaceutics-13-00535-t005:row15:col2', 'pharmaceutics-13-00535-t005:row15:col3', 'Domínguez_2021_table_4:row2:col2', 'Domínguez_2021_table_4:row2:col3'] |
 
 <details class="legend">
 <summary>Check legend — what each column means</summary>
@@ -231,4 +231,4 @@ _No web simulator for this record: its structure has no shared WebAssembly templ
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-01 17:05 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-06 22:23 UTC</sub>

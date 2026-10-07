@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N06A&quot;,&quot;href&quot;:&quot;atc/N06A.md&quot;},{&quot;label&quot;:&quot;duloxetine&quot;,&quot;href&quot;:&quot;drugs/drug_duloxetine/&quot;},{&quot;label&quot;:&quot;Skinner_2004 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Duloxetine_Skinner2004_reference&quot;,&quot;label&quot;:&quot;Skinner_2004_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_duloxetine/Duloxetine_Skinner2004_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Duloxetine_Chen2024_reference&quot;,&quot;label&quot;:&quot;Chen_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_duloxetine/Duloxetine_Chen2024_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Duloxetine_Sharma2000_reference&quot;,&quot;label&quot;:&quot;Sharma_2000_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_duloxetine/Duloxetine_Sharma2000_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Duloxetine_Shibata2023_reference&quot;,&quot;label&quot;:&quot;Shibata_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_duloxetine/Duloxetine_Shibata2023_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Duloxetine_Tianmei2007_reference&quot;,&quot;label&quot;:&quot;Tianmei_2007_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_duloxetine/Duloxetine_Tianmei2007_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # duloxetine — `Duloxetine_Skinner2004_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: partial</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: partial</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -13,7 +13,7 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
-**Model:** A simulatable model was generated — see the **Models** and **Simulation** tabs.
+**Model:** No model was generated from this record.
 
 ### Reviewer guidance
 
@@ -25,26 +25,33 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the val
 
 <sub>reviewed by glm-5.3-flash</sub>
 
+> ⚠️ **STALE** — review status `needs_review` (reviewed 2026-10-05 09:26:40.057242+00:00) predates the upstream re-run (2026-10-06 22:53:33.822270+00:00). Current validate status: `rejected`.
+
 ## Citation
 Skinner MH et al., Effect of age on the pharmacokinetics o…, British journal of clinical… (2004)
   ·  DOI: [10.1046/j.1365-2125.2003.01963.x](https://doi.org/10.1046/j.1365-2125.2003.01963.x)
 
 ## Model component
-<dbs-pgx drug="duloxetine" model-id="Duloxetine_Skinner2004_reference" status="needs_review" stale="false" population="women with urinary incontinence and healthy women" measured-compound="duloxetine" parameterization="apparent" topology="1C"></dbs-pgx>
+<dbs-pgx drug="duloxetine" model-id="Duloxetine_Skinner2004_reference" status="rejected" stale="true" population="healthy volunteers and women with urinary incontinence" measured-compound="duloxetine" parameterization="apparent" topology="1C"></dbs-pgx>
 
-**Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
-**Parameters:** 3 extracted.
+**Model structure:** 1-compartment; no model was built for this record.  
+**Parameters:** 8 extracted.
 
 **Parameterization:** CL/F, V/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
 ## Parameters
-> ⚠️ This record is not accepted (current status `needs_review`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
+> ⚠️ This record is not accepted (current status `rejected`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| CL/F (l h -1 ) | `Q27` · CL/F | 52.6 | l h -1 | 1.4611111111111112e-05 | L/h | not captured | exact (1.0) | Skinner_2004:other_prose | — | not captured |
-| V/F (l) | `Q76` · V/F | 954 | l | 0.9540000000000001 | L | not captured | exact (1.0) | Skinner_2004:other_prose | — | not captured |
-| Ka (h -1 ) | `Q49` · kabs | 0.257 | h -1 | 7.138888888888889e-05 | 1/h | not captured | exact (1.0) | Skinner_2004:other_prose | — | not captured |
+| AUC 0-t (ng h -1 ml -1 ) | `Q19` · AUCt | 824.5 | ng h -1 ml -1 | not captured | [ng] / [[h] · [ml]] | not captured | space_fold (0.95) | Skinner_2004_table_2:row3:col2, Skinner_2004_table_2:row3:col4 | — | not captured |
+| AUC 0-• (ng h -1 ml -1 ) | `Q17` · AUC∞ | 699.3 | ng h -1 ml -1 | not captured | [ng] / [[h] · [ml]] | not captured | llm_corrected (0.6) | Skinner_2004_table_2:row4:col1, Skinner_2004_table_2:row4:col2, Skinner_2004_table_2:row4:col4 | — | not captured |
+| C max (ng ml -1 ) | `Q32` · Cmax | 49.8 | ng ml -1 | not captured | [ng] / [ml] | not captured | space_fold (0.95) | Skinner_2004_table_2:row5:col1, Skinner_2004_table_2:row5:col2, Skinner_2004_table_2:row5:col4 | — | not captured |
+| T max | `Q56` · tmax | 0.139 | years | not captured | [years] | not captured | space_fold (0.95) | Skinner_2004_table_2:row6:col5 | — | not captured |
+| CL/F (l h -1 ) | `Q27` · CL/F | 52.9 | l h -1 | 1.4694444444444445e-05 | [l] / [h] | not captured | exact (1.0) | Skinner_2004_table_2:row7:col2, Skinner_2004_table_2:row7:col4 | — | not captured |
+| V/F (l) | `Q76` · V/F | 962.0 | l | 0.962 | [l] | not captured | exact (1.0) | Skinner_2004_table_2:row8:col1, Skinner_2004_table_2:row8:col2, Skinner_2004_table_2:row8:col4 | — | not captured |
+| l z (h -1 ) | `Q47` · kel | 0.072 | h -1 | 1.9999999999999998e-05 | [1] / [h] | not captured | llm (0.6) | Skinner_2004_table_2:row9:col1, Skinner_2004_table_2:row9:col2, Skinner_2004_table_2:row9:col4 | — | not captured |
+| Ka (h-1) | `Q49` · kabs | 1.46 | h-1 | 0.00040555555555555554 | 1/h | not captured | review_gapfill (0.7) | Chen_2024:review | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -53,18 +60,32 @@ Skinner MH et al., Effect of age on the pharmacokinetics o…, British journal o
 
 ## Departures & gaps
 
-**Deviations:**
-- `defaulted_parameters`: ['Tlag']
-- `apparent_assumption`: F=1, Fm=1, no molar correction (parameterization=apparent)
-
 **Interpretation flags:**
-- NIL: refused to back-fill base 'CL' from footnote/prose loose number None (source ['tab_0:footnote']); the table cell was unparseable — needs review
-- salvaged Q27 ('CL/F (l h -1 )'=52.6) from results prose — parameter table was unreadable
-- salvaged Q76 ('V/F (l)'=954) from results prose — parameter table was unreadable
-- salvaged Q49 ('Ka (h -1 )'=0.257) from results prose — parameter table was unreadable
+- dropped unlinked row (NIL): 'Parameter' — extend the ontology if this is a real PK parameter (source ['Skinner_2004_table_2:row1:col1', 'Skinner_2004_table_2:row1:col2'])
+- unit_dimension_mismatch: 'AUC 0-t (ng h -1 ml -1 )' → Q19 (unit '[mass] / [time] / [length] ** 3' vs ontology '[mass] * [time] / [length] ** 3') — route to review
+- unit_dimension_mismatch: 'AUC 0-• (ng h -1 ml -1 )' → Q17 (unit '[mass] / [time] / [length] ** 3' vs ontology '[mass] * [time] / [length] ** 3') — route to review
+- covariate creatinine for CLR from footnote/prose kept as documentation only (['tab_0:footnote'])
 - apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=duloxetine
 - held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
 - status held at route_to_review — not promoted
+- skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
+- skipped review gap-fill of Q: primary's parameterization (rate-constant / ka-only) does not use it
+- gap-filled Q49 (kabs) from Chen_2024's review values (primary lacked it)
+
+**Extraction notes:**
+- unparsed cell Skinner_2004_table_2:row3:col1 = '6 77.7 (49)'
+- unparsed cell Skinner_2004_table_2:row3:col3 = '146.8 (-123.6, 417.3)'
+- unparsed cell Skinner_2004_table_2:row4:col3 = '167.6 (-119.1, 454.2)'
+- unparsed cell Skinner_2004_table_2:row5:col3 = '-0.4 (-15.1, 14.4)'
+- unparsed cell Skinner_2004_table_2:row6:col2 = '4.0 (2.0-4.0)'
+- unparsed cell Skinner_2004_table_2:row6:col3 = '5.0 (1.0-6.0)'
+- unparsed cell Skinner_2004_table_2:row6:col4 = '1 (-1, 2) b'
+- unparsed cell Skinner_2004_table_2:row7:col1 = '7 0.3 (48)'
+- unparsed cell Skinner_2004_table_2:row7:col3 = '-17.4 (-41.1, 6.23)'
+- unparsed cell Skinner_2004_table_2:row8:col3 = '115.9 (-168.6, 400.4)'
+- unparsed cell Skinner_2004_table_2:row9:col3 = '-0.022 (-0.036, -0.008)'
+- companion parameter table 2 transcribed (19 record(s))
+- LLM selected parameter table(s) 2
 
 ## Validation
 
@@ -98,13 +119,21 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 3 | not captured | not captured | not captured |
+| C0_has_structural_params | pass | not captured | 7 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
+| C5_dimension_Q17 | fail | [mass] / [time] / [length] ** 3 | ng h -1 ml -1 | not captured | not captured | ['Skinner_2004_table_2:row4:col1', 'Skinner_2004_table_2:row4:col2', 'Skinner_2004_table_2:row4:col4'] |
+| C5_dimension_Q19 | fail | [mass] / [time] / [length] ** 3 | ng h -1 ml -1 | not captured | not captured | ['Skinner_2004_table_2:row3:col2', 'Skinner_2004_table_2:row3:col4'] |
+| C5_dimension_Q27 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Skinner_2004_table_2:row7:col2', 'Skinner_2004_table_2:row7:col4'] |
+| C5_dimension_Q32 | pass | [mass] / [length] ** 3 | not captured | not captured | not captured | ['Skinner_2004_table_2:row5:col1', 'Skinner_2004_table_2:row5:col2', 'Skinner_2004_table_2:row5:col4'] |
+| C5_dimension_Q47 | pass | 1 / [time] | not captured | not captured | not captured | ['Skinner_2004_table_2:row9:col1', 'Skinner_2004_table_2:row9:col2', 'Skinner_2004_table_2:row9:col4'] |
+| C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['Chen_2024:review'] |
+| C5_dimension_Q56 | pass | [time] | not captured | not captured | not captured | ['Skinner_2004_table_2:row6:col5'] |
+| C5_dimension_Q76 | pass | [length] ** 3 | not captured | not captured | not captured | ['Skinner_2004_table_2:row8:col1', 'Skinner_2004_table_2:row8:col2', 'Skinner_2004_table_2:row8:col4'] |
 | C7_apparent_coherence | pass | not captured | not captured | not captured | not captured | not captured |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
-| C9_phys_window_Q27 | pass | clearance within physiological range | 52.6 L/h | not captured | not captured | ['Skinner_2004:other_prose'] |
-| C9_phys_window_Q76 | pass | volume within physiological range | 954 L | not captured | not captured | ['Skinner_2004:other_prose'] |
+| C9_phys_window_Q27 | pass | clearance within physiological range | 52.9 L/h | not captured | not captured | ['Skinner_2004_table_2:row7:col2', 'Skinner_2004_table_2:row7:col4'] |
+| C9_phys_window_Q76 | pass | volume within physiological range | 962 L | not captured | not captured | ['Skinner_2004_table_2:row8:col1', 'Skinner_2004_table_2:row8:col2', 'Skinner_2004_table_2:row8:col4'] |
 
 **Reviewer per-scenario checks:**
 
@@ -137,30 +166,15 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
-## Downloadable models
+## Models
 
-<div class="pk-models-grid"><div class="pk-models-table">
-<table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_duloxetine/Duloxetine_Skinner2004_reference/Duloxetine_Skinner2004_reference_modelica.zip" download>Duloxetine_Skinner2004_reference_modelica.zip</a> <span class="pk-size">(4.4 kB)</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_duloxetine/Duloxetine_Skinner2004_reference/Duloxetine_Skinner2004_reference_fmi.zip" download>Duloxetine_Skinner2004_reference_fmi.zip</a> <span class="pk-size">(4.3 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_duloxetine/Duloxetine_Skinner2004_reference/Duloxetine_Skinner2004_reference_matlab.zip" download>Duloxetine_Skinner2004_reference_matlab.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_duloxetine/Duloxetine_Skinner2004_reference/Duloxetine_Skinner2004_reference_matlab_simbio.zip" download>Duloxetine_Skinner2004_reference_matlab_simbio.zip</a> <span class="pk-size">(2.8 kB)</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_duloxetine/Duloxetine_Skinner2004_reference/Duloxetine_Skinner2004_reference_sbml.zip" download>Duloxetine_Skinner2004_reference_sbml.zip</a> <span class="pk-size">(2.6 kB)</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_duloxetine/Duloxetine_Skinner2004_reference/Duloxetine_Skinner2004_reference_cellml.zip" download>Duloxetine_Skinner2004_reference_cellml.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
-</tbody></table>
-<p>Each archive holds the model source, a script that simulates it against the appropriate library, and a README describing both and how to run them.</p>
-<p><b>FMI is two downloads.</b> The archive holds this record's parameters and its driver; the simulator itself is <code>PK_1C_enteral.fmu</code>, one compiled template shared by every model of this structure. Take the FMU once, keep it beside the script (or pass <code>--fmu PATH</code>). Running it reproduces the model-specific FMU exactly.</p>
-</div><figure class="pk-models-diagram"><img src="drugs/drug_duloxetine/Duloxetine_Skinner2004_reference/Duloxetine_Skinner2004_reference.svg" alt="Duloxetine_Skinner2004_reference diagram"><figcaption>Model diagram (Modelica) using Pharmacolibrary v26.09 components, rendered by OpenModelica 1.26.7.</figcaption></figure></div>
+<p>No downloads: this record is <b>rejected</b>, so it is not published as a model. Any archives generated for it before the verdict have been removed — a download outlives the page that explains it.</p>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-**Administration: oral** — 20 mg, single dose, first-order absorption (ka 0.257 /h, F 1). Doses in the paper: 20, 30, 40, 80 mg.
-
-<dbs-fmusim paramsurl="drugs/drug_duloxetine/Duloxetine_Skinner2004_reference/Duloxetine_Skinner2004_reference_params.json" metaurl="assets/fmu/PK_1C_enteral.vr.json" wasmurl="assets/fmu/PK_1C_enteral.js" controlsurl="drugs/drug_duloxetine/Duloxetine_Skinner2004_reference/Duloxetine_Skinner2004_reference_sim_controls.json"></dbs-fmusim>
-
-<sub>Runs this record's model in the browser as WebAssembly. Sliders start at the extracted values; the reference check compares the browser's peak against the FMPy result recorded when the record was built, and is withheld once a value has been edited. Template `PK_1C_enteral` · parameters `Duloxetine_Skinner2004_reference_params.json` · controls `Duloxetine_Skinner2004_reference_sim_controls.json`. A slider marked *simulator value* is running on the template's own default because this record does not pin that parameter.</sub>
+_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-07-15 11:50 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-06 22:53 UTC</sub>

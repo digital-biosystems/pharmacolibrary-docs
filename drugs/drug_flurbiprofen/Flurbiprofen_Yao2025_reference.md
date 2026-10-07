@@ -1,10 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;M01A&quot;,&quot;href&quot;:&quot;atc/M01A.md&quot;},{&quot;label&quot;:&quot;flurbiprofen&quot;,&quot;href&quot;:&quot;drugs/drug_flurbiprofen/&quot;},{&quot;label&quot;:&quot;Yao_2025 \u00b7 reference&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Flurbiprofen_Aarons1991_reference&quot;,&quot;label&quot;:&quot;Aarons_1991_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_flurbiprofen/Flurbiprofen_Aarons1991_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Flurbiprofen_Zhang2018_reference&quot;,&quot;label&quot;:&quot;Zhang_2018_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_flurbiprofen/Flurbiprofen_Zhang2018_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # flurbiprofen — `Flurbiprofen_Yao2025_reference`
 
-> ## <span class="pk-badge pk-badge--orange">built, not shipped</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.6). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.6). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -24,33 +25,29 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which m
 
 <sub>reviewed by rule template (no LLM)</sub>
 
-> **Dose compound ≠ measured compound:** dosed `flurbiprofen`, measured `R(-)-flurbiprofen and S(+)-flurbiprofen`.
+> ⚠️ **STALE** — review status `model_quarantined` (reviewed 2026-09-28 14:38:06.972428+00:00) predates the upstream re-run (2026-10-07 00:51:08.662295+00:00). Current validate status: `extracted`.
+
+> **Dose compound ≠ measured compound:** dosed `flurbiprofen`, measured `flurbiprofen enantiomers`.
 
 ## Citation
 Yao H et al., Exploring the Population Pharmacokineti…, Drug design, development an… (2025)
   ·  DOI: [10.2147/DDDT.S542722](https://doi.org/10.2147/DDDT.S542722)
 
 ## Model component
-<dbs-pgx drug="flurbiprofen" model-id="Flurbiprofen_Yao2025_reference" status="model_quarantined" stale="false" population="selective joint replacement patients with postoperative pain" measured-compound="R(-)-flurbiprofen and S(+)-flurbiprofen" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<dbs-pgx drug="flurbiprofen" model-id="Flurbiprofen_Yao2025_reference" status="extracted" stale="true" population="selective joint replacement patients with postoperative pain" measured-compound="flurbiprofen enantiomers" parameterization="mechanistic" topology="2C"></dbs-pgx>
 
-**Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
-**Parameters:** 8 extracted.
+**Model structure:** 2-compartment, IV mammillary model — template `PK_2C`.  
+**Parameters:** 4 extracted.
 
 **Parameterization:** mechanistic.
 
 ## Parameters
-> ⚠️ This record is not accepted (current status `model_quarantined`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
-
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| V c , L | `Q61` · V | 15.0 | not captured | not captured | not captured | not captured | llm (0.5) | tab_4:row3:col1, tab_4:row3:col2, tab_4:row3:col3 | — | not captured |
-| CL, L•h -1 | `Q22` · CL | 2.92 | not captured | not captured | not captured | not captured | boundary (0.8) | tab_4:row4:col1, tab_4:row4:col2, tab_4:row4:col3 | — | not captured |
-| Q, L•h -1 | `Q30` · Q | 0.32 | not captured | not captured | not captured | not captured | llm (0.5) | tab_4:row6:col1, tab_4:row6:col2 | — | not captured |
-| GA | `Q41` · FG | -0.15 | not captured | not captured | not captured | not captured | llm (0.5) | tab_4:row9:col1, tab_4:row9:col2 | — | not captured |
-| ωV c | `Q65` · Vss | 0.03 | not captured | not captured | not captured | not captured | llm (0.5) | tab_4:row12:col1 | — | not captured |
-| ωQ | `Q314` · omega_cov | 0.14 | not captured | not captured | not captured | not captured | llm (0.5) | tab_4:row15:col1 | — | not captured |
-| Plasma, additive error, σ | `Q317` · add_error | 0.003 | not captured | not captured | not captured | not captured | boundary (0.8) | tab_4:row17:col1 | — | not captured |
-| CSF, multiplicative error, σ | `Q315` · sigma | 0.001 | not captured | not captured | not captured | not captured | llm (0.5) | tab_4:row18:col1 | — | not captured |
+| Vc, L | `Q63` · V1 | 17.0 | L | 0.017 | [l] | not captured | exact (1.0) | t0002:row3:col1, t0002:row3:col2, t0002:row3:col3, Yao_2025_table_3:row2:col1, Yao_2025_table_3:row2:col2, Yao_2025_table_3:row2:col3 | — | 0.13 (None% RSE) |
+| CL, L·h−1 | `Q22` · CL | 11.8 | L·h−1 | 3.277777777777778e-06 | [l] / [h] | not captured | exact (1.0) | t0002:row4:col1, t0002:row4:col2, t0002:row4:col3, Yao_2025_table_3:row3:col1, Yao_2025_table_3:row3:col2, Yao_2025_table_3:row3:col3 | — | 0.16 (None% RSE) |
+| Vp, L | `Q64` · V2 | 79.1 | L | 0.07909999999999999 | [l] | not captured | exact (1.0) | t0002:row5:col1, t0002:row5:col2, t0002:row5:col3, Yao_2025_table_3:row4:col1, Yao_2025_table_3:row4:col2, Yao_2025_table_3:row4:col3 | — | 0.25 (None% RSE) |
+| Q, L·h−1 | `Q30` · Q | 0.45 | L·h−1 | 1.2500000000000002e-07 | [l] / [h] | not captured | exact (1.0) | t0002:row6:col1, t0002:row6:col2, t0002:row6:col3, Yao_2025_table_3:row5:col1, Yao_2025_table_3:row5:col2 | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -60,21 +57,28 @@ Yao H et al., Exploring the Population Pharmacokineti…, Drug design, developme
 ## Departures & gaps
 
 **Interpretation flags:**
-- dropped duplicate Q61 ('V p , L', value '33.5') — already have one for this compound
-- dropped duplicate Q61 ('BSA on V c', value '0.59') — already have one for this compound
-- dropped unlinked row (NIL): 'GG' — extend the ontology if this is a real PK parameter (source ['tab_4:row10:col1', 'tab_4:row10:col2'])
-- dropped duplicate Q22 ('ωCL', value '0.12') — already have one for this compound
-- dropped duplicate Q65 ('ωV p', value '0.22') — already have one for this compound
-- apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=R(-)-flurbiprofen and S(+)-flurbiprofen
+- table section iiv: 'ωVc' routed out of structural estimates ('Interindividual variability (%)')
+- table section iiv: 'ωCL' routed out of structural estimates ('Interindividual variability (%)')
+- table section iiv: 'ωVp' routed out of structural estimates ('Interindividual variability (%)')
+- table section iiv: 'ωQ' routed out of structural estimates ('Interindividual variability (%)')
+- table section residual_error: 'Plasma, additive error, σ' routed out of structural estimates ('Random residual variability')
+- table section residual_error: 'CSF, multiplicative error, σ' routed out of structural estimates ('Random residual variability')
+- dropped unlinked row (NIL): 'GA' — extend the ontology if this is a real PK parameter (source ['t0002:row8:col1', 't0002:row8:col2', 'Yao_2025_table_3:row8:col1', 'Yao_2025_table_3:row8:col2'])
+- dropped unlinked row (NIL): 'GG' — extend the ontology if this is a real PK parameter (source ['t0002:row9:col1', 't0002:row9:col2', 'Yao_2025_table_3:row9:col1', 'Yao_2025_table_3:row9:col2'])
+- dropped unlinked row (NIL): 'BSA on Vc' — extend the ontology if this is a real PK parameter (source ['Yao_2025_table_3:row6:col1', 'Yao_2025_table_3:row6:col2'])
+- apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=flurbiprofen enantiomers
+- molar mass: no plausible PubChem entry for 'flurbiprofen enantiomers' ('flurbiprofen enantiomers') — left in mass units
+- molar mass: none found for 'flurbiprofen enantiomers' — its concentrations stay mass-only
 
 **Extraction notes:**
-- unparsed cell tab_4:row1:col3 = '95% CI'
-- unparsed cell tab_4:row6:col3 = '0.19 to 0.92'
-- unparsed cell tab_4:row7:col3 = '-0.07 to1.96'
-- unparsed cell tab_4:row9:col3 = '-0.42 to -0.05'
-- unparsed cell tab_4:row10:col3 = '-5.2 to -1.2'
-- LLM region Yao_2025:other_prose: no JSON records returned
-- LLM region Yao_2025:discussion_prose: no JSON records returned
+- unparsed cell t0002:row8:col3 = '−3.85 to −0.10'
+- unparsed cell t0002:row9:col3 = '−0.16 to 0.93'
+- unparsed cell Yao_2025_table_3:row5:col3 = '0.19 to 0.92'
+- unparsed cell Yao_2025_table_3:row6:col3 = '−0.07 to1.96'
+- unparsed cell Yao_2025_table_3:row8:col3 = '−0.42 to −0.05'
+- unparsed cell Yao_2025_table_3:row9:col3 = '−5.2 to −1.2'
+- companion parameter table 3 transcribed (23 record(s))
+- LLM selected parameter table(s) 2, 3
 
 ## Validation
 
@@ -108,16 +112,18 @@ first reading `qwen3.6:27b-q8_0` — the numbers on this page are its, whatever 
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 8 | not captured | not captured | not captured |
+| C0_has_structural_params | pass | not captured | 4 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
-| C5_unit_missing_Q22 | fail | [length] ** 3 / [time] | not captured | not captured | not captured | ['tab_4:row4:col1', 'tab_4:row4:col2', 'tab_4:row4:col3'] |
-| C5_unit_missing_Q30 | fail | [length] ** 3 / [time] | not captured | not captured | not captured | ['tab_4:row6:col1', 'tab_4:row6:col2'] |
-| C5_unit_missing_Q317 | fail | [mass] / [length] ** 3 | not captured | not captured | not captured | ['tab_4:row17:col1'] |
-| C5_unit_missing_Q61 | fail | [length] ** 3 | not captured | not captured | not captured | ['tab_4:row3:col1', 'tab_4:row3:col2', 'tab_4:row3:col3'] |
-| C5_unit_missing_Q65 | fail | [length] ** 3 | not captured | not captured | not captured | ['tab_4:row12:col1'] |
-| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 2.92 | not captured | not captured | ['tab_4:row4:col1', 'tab_4:row4:col2', 'tab_4:row4:col3'] |
+| C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['t0002:row4:col1', 't0002:row4:col2', 't0002:row4:col3', 'Yao_2025_table_3:row3:col1', 'Yao_2025_table_3:row3:col2', 'Yao_2025_table_3:row3:col3'] |
+| C5_dimension_Q30 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['t0002:row6:col1', 't0002:row6:col2', 't0002:row6:col3', 'Yao_2025_table_3:row5:col1', 'Yao_2025_table_3:row5:col2'] |
+| C5_dimension_Q63 | pass | [length] ** 3 | not captured | not captured | not captured | ['t0002:row3:col1', 't0002:row3:col2', 't0002:row3:col3', 'Yao_2025_table_3:row2:col1', 'Yao_2025_table_3:row2:col2', 'Yao_2025_table_3:row2:col3'] |
+| C5_dimension_Q64 | pass | [length] ** 3 | not captured | not captured | not captured | ['t0002:row5:col1', 't0002:row5:col2', 't0002:row5:col3', 'Yao_2025_table_3:row4:col1', 'Yao_2025_table_3:row4:col2', 'Yao_2025_table_3:row4:col3'] |
+| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 11.8 | not captured | not captured | ['t0002:row4:col1', 't0002:row4:col2', 't0002:row4:col3', 'Yao_2025_table_3:row3:col1', 'Yao_2025_table_3:row3:col2', 'Yao_2025_table_3:row3:col3'] |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
+| C9_phys_window_Q22 | pass | clearance within physiological range | 11.8 L/h | not captured | not captured | ['t0002:row4:col1', 't0002:row4:col2', 't0002:row4:col3', 'Yao_2025_table_3:row3:col1', 'Yao_2025_table_3:row3:col2', 'Yao_2025_table_3:row3:col3'] |
+| C9_phys_window_Q63 | pass | volume within physiological range | 17 L | not captured | not captured | ['t0002:row3:col1', 't0002:row3:col2', 't0002:row3:col3', 'Yao_2025_table_3:row2:col1', 'Yao_2025_table_3:row2:col2', 'Yao_2025_table_3:row2:col3'] |
+| C9_phys_window_Q64 | pass | volume within physiological range | 79.1 L | not captured | not captured | ['t0002:row5:col1', 't0002:row5:col2', 't0002:row5:col3', 'Yao_2025_table_3:row4:col1', 'Yao_2025_table_3:row4:col2', 'Yao_2025_table_3:row4:col3'] |
 
 **Reviewer per-scenario checks:**
 
@@ -149,12 +155,12 @@ first reading `qwen3.6:27b-q8_0` — the numbers on this page are its, whatever 
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
 <tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">not generated yet</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_flurbiprofen/Flurbiprofen_Yao2025_reference/Flurbiprofen_Yao2025_reference_matlab.zip" download>Flurbiprofen_Yao2025_reference_matlab.zip</a> <span class="pk-size">(3.3 kB)</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_flurbiprofen/Flurbiprofen_Yao2025_reference/Flurbiprofen_Yao2025_reference_matlab_simbio.zip" download>Flurbiprofen_Yao2025_reference_matlab_simbio.zip</a> <span class="pk-size">(2.7 kB)</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_flurbiprofen/Flurbiprofen_Yao2025_reference/Flurbiprofen_Yao2025_reference_sbml.zip" download>Flurbiprofen_Yao2025_reference_sbml.zip</a> <span class="pk-size">(2.5 kB)</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_flurbiprofen/Flurbiprofen_Yao2025_reference/Flurbiprofen_Yao2025_reference_cellml.zip" download>Flurbiprofen_Yao2025_reference_cellml.zip</a> <span class="pk-size">(2.9 kB)</span></td></tr>
 </tbody></table>
-<p>No bundles have been generated for this record yet. When the engineer emits them they appear here automatically — this page reports what is on disk and generates nothing itself.</p>
+<p>Each archive holds the model source, a script that simulates it against the appropriate library, and a README describing both and how to run them.</p>
 </div></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
@@ -164,4 +170,4 @@ _No web simulator for this record: its structure has no shared WebAssembly templ
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-07-15 12:06 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 00:51 UTC</sub>

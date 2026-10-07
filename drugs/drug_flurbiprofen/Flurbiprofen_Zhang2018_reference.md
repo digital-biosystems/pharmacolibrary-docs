@@ -1,10 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;M01A&quot;,&quot;href&quot;:&quot;atc/M01A.md&quot;},{&quot;label&quot;:&quot;flurbiprofen&quot;,&quot;href&quot;:&quot;drugs/drug_flurbiprofen/&quot;},{&quot;label&quot;:&quot;Zhang_2018 \u00b7 reference&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Flurbiprofen_Aarons1991_reference&quot;,&quot;label&quot;:&quot;Aarons_1991_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_flurbiprofen/Flurbiprofen_Aarons1991_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Flurbiprofen_Zhang2018_reference&quot;,&quot;label&quot;:&quot;Zhang_2018_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_flurbiprofen/Flurbiprofen_Zhang2018_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # flurbiprofen — `Flurbiprofen_Zhang2018_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.909). The first reading is what the record holds.">cross-check: partial</span>
+> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.909). The first reading is what the record holds.">cross-check: partial</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -12,7 +13,7 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
-**Model:** No model was generated from this record.
+**Model:** A simulatable model was generated — see the **Models** and **Simulation** tabs.
 
 ### Reviewer guidance
 
@@ -24,6 +25,8 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the val
 
 <sub>reviewed by glm-5.3-flash</sub>
 
+> ⚠️ **STALE** — review status `rejected` (reviewed 2026-09-28 14:38:06.976039+00:00) predates the upstream re-run (2026-10-07 00:51:12.541163+00:00). Current validate status: `extracted`.
+
 > **Dose compound ≠ measured compound:** dosed `flurbiprofen axetil`, measured `flurbiprofen`.
 
 ## Citation
@@ -31,21 +34,22 @@ Zhang J et al., Population pharmacokinetic modeling of…, Journal of pain resea
   ·  DOI: [10.2147/JPR.S176475](https://doi.org/10.2147/JPR.S176475)
 
 ## Model component
-<dbs-pgx drug="flurbiprofen" model-id="Flurbiprofen_Zhang2018_reference" status="rejected" stale="false" population="Chinese patients with postoperative pain" measured-compound="flurbiprofen" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<dbs-pgx drug="flurbiprofen" model-id="Flurbiprofen_Zhang2018_reference" status="extracted" stale="true" population="Chinese patients with postoperative pain" measured-compound="flurbiprofen" parameterization="apparent" topology="1C"></dbs-pgx>
 
-**Model structure:** 1-compartment; no model was built for this record.  
-**Parameters:** 3 extracted.
+**Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
+**Parameters:** 4 extracted.
 
-**Parameterization:** mechanistic.
+**Parameterization:** CLm/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
 ## Parameters
-> ⚠️ This record is not accepted (current status `rejected`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
-
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| q Ke (L/h) | `Q47` · kel | 0.0001 | L/h | not captured | [l] / [h] | 0.0015 | boundary (0.8) | tab_1:row2:col1, tab_1:row2:col2, tab_1:row2:col3, tab_1:row2:col4 | — | not captured |
-| q Vd (L) | `Q61` · V | 0.5159 | L | 0.0005159 | [l] | 7.83 | boundary (0.8) | tab_1:row3:col1, tab_1:row3:col2, tab_1:row3:col3, tab_1:row3:col4, tab_1:row11:col1, tab_1:row11:col2, tab_1:row11:col3, tab_1:row11:col4 | — | not captured |
-| q CL (L/h) | `Q22` · CL | 0.1068 | L/h | 2.9666666666666668e-08 | [l] / [h] | 1.543 | boundary (0.8) | tab_1:row4:col1, tab_1:row4:col2, tab_1:row4:col3, tab_1:row4:col4, tab_1:row12:col1, tab_1:row12:col2, tab_1:row12:col3, tab_1:row12:col4 | — | not captured |
+| θKe (L/h) | `Q364` · Qd | 0.0015 | L/h | 4.166666666666667e-10 | [l] / [h] | 0.0001 | llm_corrected (0.6) | t2-jpr-11-3061:row4:col1, t2-jpr-11-3061:row4:col3, t2-jpr-11-3061:row4:col4 | — | not captured |
+| θVd (L) | `Q61` · V | 7.91 | L | 0.00791 | [l] | 0.5159 | exact (1.0) | t2-jpr-11-3061:row5:col1, t2-jpr-11-3061:row5:col2, t2-jpr-11-3061:row5:col3, t2-jpr-11-3061:row5:col4, t2-jpr-11-3061:row15:col1, t2-jpr-11-3061:row15:col2, t2-jpr-11-3061:row15:col3, t2-jpr-11-3061:row15:col4 | — | not captured |
+| θCL (L/h) | `Q351` · CLm/F | 1.55 | L/h | 4.305555555555556e-07 | [l] / [h] | 0.1068 | exact (1.0) | t2-jpr-11-3061:row6:col1, t2-jpr-11-3061:row6:col2, t2-jpr-11-3061:row6:col3, t2-jpr-11-3061:row6:col4, t2-jpr-11-3061:row16:col1, t2-jpr-11-3061:row16:col2, t2-jpr-11-3061:row16:col3, t2-jpr-11-3061:row16:col4 | — | 0.8275 (None% RSE) |
+| θKe (/h) | `Q47` · kel | 0.0015 | /h | 4.1666666666666667e-07 | [1] / [h] | not captured | exact (1.0) | t2-jpr-11-3061:row14:col1, t2-jpr-11-3061:row14:col4 | — | 0.0220 (None% RSE) |
+| θweight | `Q900` · equation variable | -0.0080 | not captured | not captured | not captured | -0.2621 | llm (0.6) | t2-jpr-11-3061:row17:col1, t2-jpr-11-3061:row17:col3 | — | not captured |
+| θheight | `Q900` · θheight | -0.0162 | not captured | not captured | not captured | not captured | not captured (not captured) | not captured | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -54,23 +58,37 @@ Zhang J et al., Population pharmacokinetic modeling of…, Journal of pain resea
 
 ## Departures & gaps
 
+**Deviations:**
+- `defaulted_parameters`: ['ka', 'Tlag']
+- `apparent_assumption`: F=1, Fm=1, no molar correction (parameterization=apparent)
+- `invented_absorption`: ka defaulted — not reported in source
+- `input_model`: first-order depot input — apparent (/F) parameterization ⇒ extravascular dosing
+
 **Interpretation flags:**
-- unit_dimension_mismatch: 'q Ke (L/h)' → Q47 (unit '[length] ** 3 / [time]' vs ontology '1 / [time]') — route to review
-- dropped duplicate Q47 ('w Ke (%)', value '0.0220') — already have one for this compound
-- dropped duplicate Q61 ('w Vd (%)', value '0.0890') — already have one for this compound
-- dropped duplicate Q22 ('w CL (%)', value '0.8275') — already have one for this compound
-- dropped unlinked row (NIL): 's' — extend the ontology if this is a real PK parameter (source ['tab_1:row8:col1', 'tab_1:row8:col2', 'tab_1:row8:col3', 'tab_1:row8:col4', 'tab_1:row18:col1', 'tab_1:row18:col2', 'tab_1:row18:col3', 'tab_1:row18:col4'])
-- unit_dimension_unknown: '/h' (kel)
-- dropped duplicate Q47 ('q Ke (/h)', value '8.75') — already have one for this compound
-- dropped unlinked row (NIL): 'q weight' — extend the ontology if this is a real PK parameter (source ['tab_1:row13:col1', 'tab_1:row13:col2', 'tab_1:row13:col3'])
-- dropped unlinked row (NIL): 'q height' — extend the ontology if this is a real PK parameter (source ['tab_1:row14:col1', 'tab_1:row14:col2', 'tab_1:row14:col3'])
-- apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=flurbiprofen
-- held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
-- status held at route_to_review — not promoted
+- kept covariate coefficient θheight=-0.0162 (covariate height) — not an ontology parameter
+- metabolite flurbiprofen: Q22→Q351 — only the metabolite is measured and fm is not identifiable, so its CL/V are apparent (fm-divided)
+- metabolite volume: 'θVd (L)' Q63→Q61 for flurbiprofen — it is 1-compartment, so its central volume is its only volume
+- apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=flurbiprofen
+- template fit: none — only the metabolite is modelled — no parent compartment
+- structure disagreement: deterministic 1C vs LLM 2C — review compartment count
+- row roles (LLM): model_class=compartmental; 10/10 row label(s) assigned, 18 linked by role
+- skipped review gap-fill of CL: primary's parameterization (rate-constant / ka-only) does not use it
+- skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
+- skipped review gap-fill of Q: primary's parameterization (rate-constant / ka-only) does not use it
 
 **Extraction notes:**
-- unparsed cell tab_1:row13:col4 = '-0.0081 to -0.0080'
-- unparsed cell tab_1:row14:col4 = '-0.0162 to -0.0162'
+- unparsed cell t2-jpr-11-3061:row4:col2 = '1.92−9'
+- unparsed cell t2-jpr-11-3061:row10:col2 = '1.01−5'
+- unparsed cell t2-jpr-11-3061:row14:col2 = '1.32−9'
+- unparsed cell t2-jpr-11-3061:row14:col3 = '8.75−5'
+- unparsed cell t2-jpr-11-3061:row17:col2 = '2.11−5'
+- unparsed cell t2-jpr-11-3061:row17:col4 = '−0.0081 to −0.0080'
+- unparsed cell t2-jpr-11-3061:row18:col2 = '8.12−9'
+- unparsed cell t2-jpr-11-3061:row18:col3 = '−5.00−5'
+- unparsed cell t2-jpr-11-3061:row18:col4 = '−0.0162 to −0.0162'
+- unparsed cell t2-jpr-11-3061:row22:col2 = '6.66−6'
+- LLM selected parameter table(s) 2
+- dropped sensitivity-analysis table(s) 3 from the LLM selection — perturbations of a model, not a model
 
 ## Validation
 
@@ -99,16 +117,16 @@ first reading `qwen3.6:27b-q8_0` — the numbers on this page are its, whatever 
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 3 | not captured | not captured | not captured |
+| C0_has_structural_params | pass | not captured | 4 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
-| C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['tab_1:row4:col1', 'tab_1:row4:col2', 'tab_1:row4:col3', 'tab_1:row4:col4', 'tab_1:row12:col1', 'tab_1:row12:col2', 'tab_1:row12:col3', 'tab_1:row12:col4'] |
-| C5_dimension_Q47 | fail | [length] ** 3 / [time] | L/h | not captured | not captured | ['tab_1:row2:col1', 'tab_1:row2:col2', 'tab_1:row2:col3', 'tab_1:row2:col4'] |
-| C5_dimension_Q61 | pass | [length] ** 3 | not captured | not captured | not captured | ['tab_1:row3:col1', 'tab_1:row3:col2', 'tab_1:row3:col3', 'tab_1:row3:col4', 'tab_1:row11:col1', 'tab_1:row11:col2', 'tab_1:row11:col3', 'tab_1:row11:col4'] |
-| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 0.1068 | not captured | not captured | ['tab_1:row4:col1', 'tab_1:row4:col2', 'tab_1:row4:col3', 'tab_1:row4:col4', 'tab_1:row12:col1', 'tab_1:row12:col2', 'tab_1:row12:col3', 'tab_1:row12:col4'] |
+| C5_dimension_Q351 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['t2-jpr-11-3061:row6:col1', 't2-jpr-11-3061:row6:col2', 't2-jpr-11-3061:row6:col3', 't2-jpr-11-3061:row6:col4', 't2-jpr-11-3061:row16:col1', 't2-jpr-11-3061:row16:col2', 't2-jpr-11-3061:row16:col3', 't2-jpr-11-3061:row16:col4'] |
+| C5_dimension_Q364 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['t2-jpr-11-3061:row4:col1', 't2-jpr-11-3061:row4:col3', 't2-jpr-11-3061:row4:col4'] |
+| C5_dimension_Q47 | pass | 1 / [time] | not captured | not captured | not captured | ['t2-jpr-11-3061:row14:col1', 't2-jpr-11-3061:row14:col4'] |
+| C5_dimension_Q61 | pass | [length] ** 3 | not captured | not captured | not captured | ['t2-jpr-11-3061:row5:col1', 't2-jpr-11-3061:row5:col2', 't2-jpr-11-3061:row5:col3', 't2-jpr-11-3061:row5:col4', 't2-jpr-11-3061:row15:col1', 't2-jpr-11-3061:row15:col2', 't2-jpr-11-3061:row15:col3', 't2-jpr-11-3061:row15:col4'] |
+| C7_apparent_coherence | pass | not captured | not captured | not captured | not captured | not captured |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
-| C9_phys_window_Q22 | pass | clearance within physiological range | 0.107 L/h | not captured | not captured | ['tab_1:row4:col1', 'tab_1:row4:col2', 'tab_1:row4:col3', 'tab_1:row4:col4', 'tab_1:row12:col1', 'tab_1:row12:col2', 'tab_1:row12:col3', 'tab_1:row12:col4'] |
-| C9_phys_window_Q61 | pass | volume within physiological range | 0.516 L | not captured | not captured | ['tab_1:row3:col1', 'tab_1:row3:col2', 'tab_1:row3:col3', 'tab_1:row3:col4', 'tab_1:row11:col1', 'tab_1:row11:col2', 'tab_1:row11:col3', 'tab_1:row11:col4'] |
+| C9_phys_window_Q61 | pass | volume within physiological range | 7.91 L | not captured | not captured | ['t2-jpr-11-3061:row5:col1', 't2-jpr-11-3061:row5:col2', 't2-jpr-11-3061:row5:col3', 't2-jpr-11-3061:row5:col4', 't2-jpr-11-3061:row15:col1', 't2-jpr-11-3061:row15:col2', 't2-jpr-11-3061:row15:col3', 't2-jpr-11-3061:row15:col4'] |
 
 <details class="legend">
 <summary>Check legend — what each column means</summary>
@@ -122,15 +140,30 @@ first reading `qwen3.6:27b-q8_0` — the numbers on this page are its, whatever 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
-## Models
+## Downloadable models
 
-<p>No downloads: this record is <b>rejected</b>, so it is not published as a model. Any archives generated for it before the verdict have been removed — a download outlives the page that explains it.</p>
+<div class="pk-models-grid"><div class="pk-models-table">
+<table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_flurbiprofen/Flurbiprofen_Zhang2018_reference/Flurbiprofen_Zhang2018_reference_modelica.zip" download>Flurbiprofen_Zhang2018_reference_modelica.zip</a> <span class="pk-size">(5.2 kB)</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_flurbiprofen/Flurbiprofen_Zhang2018_reference/Flurbiprofen_Zhang2018_reference_fmi.zip" download>Flurbiprofen_Zhang2018_reference_fmi.zip</a> <span class="pk-size">(4.3 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
+</tbody></table>
+<p>Each archive holds the model source, a script that simulates it against the appropriate library, and a README describing both and how to run them.</p>
+<p><b>FMI is two downloads.</b> The archive holds this record's parameters and its driver; the simulator itself is <code>PK_1C_enteral.fmu</code>, one compiled template shared by every model of this structure. Take the FMU once, keep it beside the script (or pass <code>--fmu PATH</code>). Running it reproduces the model-specific FMU exactly.</p>
+</div><figure class="pk-models-diagram"><img src="drugs/drug_flurbiprofen/Flurbiprofen_Zhang2018_reference/Flurbiprofen_Zhang2018_reference.svg" alt="Flurbiprofen_Zhang2018_reference diagram"><figcaption>Model diagram (Modelica) using Pharmacolibrary v26.09 components, rendered by OpenModelica 1.26.7.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+**Administration: oral** — 70 mg, single dose, first-order absorption (ka 0.5 /h, F 1). Dose in the paper: 70 mg.
+
+<dbs-fmusim paramsurl="drugs/drug_flurbiprofen/Flurbiprofen_Zhang2018_reference/Flurbiprofen_Zhang2018_reference_params.json" metaurl="assets/fmu/PK_1C_enteral.vr.json" wasmurl="assets/fmu/PK_1C_enteral.js" controlsurl="drugs/drug_flurbiprofen/Flurbiprofen_Zhang2018_reference/Flurbiprofen_Zhang2018_reference_sim_controls.json"></dbs-fmusim>
+
+<sub>Runs this record's model in the browser as WebAssembly. Sliders start at the extracted values; the reference check compares the browser's peak against the FMPy result recorded when the record was built, and is withheld once a value has been edited. Template `PK_1C_enteral` · parameters `Flurbiprofen_Zhang2018_reference_params.json` · controls `Flurbiprofen_Zhang2018_reference_sim_controls.json`. A slider marked *simulator value* is running on the template's own default because this record does not pin that parameter.</sub>
 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-07-15 12:06 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 00:51 UTC</sub>

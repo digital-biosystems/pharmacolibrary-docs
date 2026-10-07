@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N06A&quot;,&quot;href&quot;:&quot;atc/N06A.md&quot;},{&quot;label&quot;:&quot;amitriptyline&quot;,&quot;href&quot;:&quot;drugs/drug_amitriptyline/&quot;},{&quot;label&quot;:&quot;Koh_2019 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Amitriptyline_Yukawa2002_reference&quot;,&quot;label&quot;:&quot;Yukawa_2002_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_amitriptyline/Amitriptyline_Yukawa2002_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Amitriptyline_Brsen2001_reference&quot;,&quot;label&quot;:&quot;Br\u00f8sen_2001_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_amitriptyline/Amitriptyline_Brsen2001_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amitriptyline_Yukawa2002_reference&quot;,&quot;label&quot;:&quot;Yukawa_2002_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_amitriptyline/Amitriptyline_Yukawa2002_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # amitriptyline — `Amitriptyline_Koh2019_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.222). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.222). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -25,33 +25,37 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on `parame
 
 <sub>reviewed by rule template (no LLM)</sub>
 
+> ⚠️ **STALE** — review status `needs_review` (reviewed 2026-10-05 09:23:19.756441+00:00) predates the upstream re-run (2026-10-06 21:39:01.482617+00:00). Current validate status: `rejected`.
+
 ## Citation
 Koh A et al., Quantitative Modeling Analysis Demonstr…, Journal of clinical pharmac… (2019)
   ·  DOI: [10.1002/jcph.1344](https://doi.org/10.1002/jcph.1344)
 
 ## Model component
-<dbs-pgx drug="amitriptyline" model-id="Amitriptyline_Koh2019_reference" status="needs_review" stale="false" population="healthy adults" measured-compound="amitriptyline" parameterization="mechanistic" topology="parent_metabolite"></dbs-pgx>
+<dbs-pgx drug="amitriptyline" model-id="Amitriptyline_Koh2019_reference" status="rejected" stale="true" population="healthy Korean adult male volunteers" measured-compound="amitriptyline" parameterization="mechanistic" topology="parent_metabolite"></dbs-pgx>
 
 **Model structure:** parent + metabolite; no model was built for this record.  
-**Parameters:** 10 extracted.
+**Parameters:** 12 extracted.
 
 **Parameterization:** mechanistic.
 
 ## Parameters
-> ⚠️ This record is not accepted (current status `needs_review`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
+> ⚠️ This record is not accepted (current status `rejected`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
 | TVCL TRM, AMIT , L/h | `Q22` · CL | 92.1 | L/h | 2.5583333333333333e-05 | [l] / [h] | not captured | llm (0.6) | tab_1:row3:col1, tab_1:row3:col2, tab_1:row3:col3 | — | 0.203 (None% RSE) |
-| TVV c, AMIT , L | `Q61` · V | 155 | L | 0.155 | [l] | not captured | llm (0.6) | tab_1:row11:col1, tab_1:row11:col2, tab_1:row11:col3 | — | not captured |
+| TVV c, AMIT , L | `Q63` · V1 | 155 | L | 0.155 | [l] | not captured | llm (0.6) | tab_1:row11:col1, tab_1:row11:col2, tab_1:row11:col3 | — | not captured |
 | TVQ, L/h | `Q30` · Q | 109 | L/h | 3.027777777777778e-05 | [l] / [h] | not captured | tv_prefix (0.95) | tab_1:row13:col1, tab_1:row13:col2, tab_1:row13:col3 | — | not captured |
-| TVKa, 1/h | `Q49` · kabs | 0.125 | 1/h | 3.472222222222222e-05 | [1] / [h] | not captured | tv_prefix (0.95) | tab_1:row16:col1, tab_1:row16:col2, tab_1:row16:col3 | — | 0.137 (None% RSE) |
+| TVV p, AMIT , L | `Q61` · V | 1670 | L | 1.67 | [l] | not captured | llm (0.6) | tab_1:row14:col1, tab_1:row14:col2, tab_1:row14:col3 | — | not captured |
+| TVKa, 1/h | `Q49` · kabs | 0.125 | 1/h | 3.472222222222222e-05 | [1] / [h] | not captured | exact (1.0) | tab_1:row16:col1, tab_1:row16:col2, tab_1:row16:col3 | — | 0.137 (None% RSE) |
 | TVALAG, h | `Q83` · tlag | 0.414 | h | 1490.3999999999999 | [h] | not captured | tv_prefix (0.95) | tab_1:row18:col1, tab_1:row18:col2, tab_1:row18:col3 | — | 0.339 (None% RSE) |
 | D1, h | `Q310` · D1 | 1.13 | h | 4067.9999999999995 | [h] | not captured | exact (1.0) | tab_1:row20:col1, tab_1:row20:col2, tab_1:row20:col3 | — | not captured |
 | K24, 1/h | `Q48` · kcomp | 0.00581 | 1/h | 1.613888888888889e-06 | [1] / [h] | not captured | exact (1.0) | tab_1:row21:col1, tab_1:row21:col2, tab_1:row21:col3 | — | 0.123 (None% RSE) |
 | K41, 1/h | `Q348` · k41 | 80.4 | 1/h | 0.022333333333333334 | [1] / [h] | not captured | exact (1.0) | tab_1:row22:col1, tab_1:row22:col2, tab_1:row22:col3 | — | 0.174 (None% RSE) |
 | MTIME1 a , h | `Q81` · MTT | 4 | h | not captured | [h] | not captured | llm (0.6) | tab_1:row24:col1, tab_1:row24:col2, tab_1:row24:col3 | — | not captured |
-| CL T, NOR , L/h | `Q22` · CL | 58.2 | L/h | 1.6166666666666665e-05 | [l] / [h] | not captured | llm_confirmed (0.6) | tab_1:row27:col1, tab_1:row27:col2, tab_1:row27:col3 | — | not captured |
+| CL T, NOR , L/h | `Q22` · CL | 58.2 | L/h | 1.6166666666666665e-05 | [l] / [h] | not captured | exact (1.0) | tab_1:row27:col1, tab_1:row27:col2, tab_1:row27:col3 | — | not captured |
+| K56, 1/h | `Q30` · Q | 1.09 | 1/h | not captured | [1] / [h] | not captured | exact (1.0) | tab_1:row29:col1, tab_1:row29:col2, tab_1:row29:col3 | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -61,19 +65,23 @@ Koh A et al., Quantitative Modeling Analysis Demonstr…, Journal of clinical ph
 ## Departures & gaps
 
 **Interpretation flags:**
-- compound tags: 6 row(s) → nortriptyline (abbreviation 6)
 - dropped duplicate Q22 ('TVCL TPM, AMIT , L/h', value '35.8') — already have one for this compound
 - dropped duplicate Q22 ('TVCL MRM, AMIT , L/h', value '61.5') — already have one for this compound
 - dropped duplicate Q22 ('TVCL MPM, AMIT , L/h', value '17') — already have one for this compound
 - dropped duplicate Q22 ('TVCL ORM, AMIT , L/h', value '30.6') — already have one for this compound
 - dropped duplicate Q22 ('TVCL OPM, AMIT , L/h', value '18.8') — already have one for this compound
-- dropped duplicate Q61 ('TVV p, AMIT , L', value '1670') — already have one for this compound
 - dropped duplicate Q81 ('MTIME2, h', value '2.65') — already have one for this compound
-- dropped duplicate Q48 ('K56, 1/h', value '1.09') — already have one for this compound
-- dropped duplicate Q48 ('K65, 1/h', value '0.168') — already have one for this compound
-- apparent-by-design (ADVISORY, codes unchanged): extravascular dosing with no identifiable F, so these reported disposition parameters are likely apparent unless the model puts first-pass in its structure — Q22 (TVCL TRM, AMIT , L/h); Q61 (TVV c, AMIT , L); Q30 (TVQ, L/h); Q22 (CL T, NOR , L/h)
+- unit_dimension_mismatch: 'K56, 1/h' → Q30 (unit '1 / [time]' vs ontology '[length] ** 3 / [time]') — route to review
+- unit_dimension_mismatch: 'K65, 1/h' → Q30 (unit '1 / [time]' vs ontology '[length] ** 3 / [time]') — route to review
+- dropped duplicate Q30 ('K65, 1/h', value '0.168') — already have one for this compound
+- apparent-by-design (ADVISORY, codes unchanged): extravascular dosing with no identifiable F, so these reported disposition parameters are likely apparent unless the model puts first-pass in its structure — Q22 (TVCL TRM, AMIT , L/h); Q63 (TVV c, AMIT , L); Q30 (TVQ, L/h); Q61 (TVV p, AMIT , L); Q22 (CL T, NOR , L/h); Q30 (K56, 1/h)
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=amitriptyline
-- template fit: PK_Parent_Metabolite — one metabolite formed from central, both 1-compartment
+- held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
+- template fit: PK_3M_9C — formed from central; parent 1, metabolites [0]
+- status held at route_to_review — not promoted
+- row roles: 6 per-group rows of amitriptyline clearance but 2 reference group(s) — kept as printed
+- row roles (LLM): model_class=compartmental; 29/29 row label(s) assigned, 42 linked by role; re-tagged parent→nortriptyline ×15
+- skipped review gap-fill of V2: primary is PARENT_METABOLITE (peripheral family needs ≥2C)
 
 ## Validation
 
@@ -115,23 +123,26 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 10 | not captured | not captured | not captured |
+| C0_has_structural_params | pass | not captured | 12 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['tab_1:row3:col1', 'tab_1:row3:col2', 'tab_1:row3:col3'] |
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['tab_1:row27:col1', 'tab_1:row27:col2', 'tab_1:row27:col3'] |
 | C5_dimension_Q30 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['tab_1:row13:col1', 'tab_1:row13:col2', 'tab_1:row13:col3'] |
+| C5_dimension_Q30 | fail | 1 / [time] | 1/h | not captured | not captured | ['tab_1:row29:col1', 'tab_1:row29:col2', 'tab_1:row29:col3'] |
 | C5_dimension_Q310 | pass | [time] | not captured | not captured | not captured | ['tab_1:row20:col1', 'tab_1:row20:col2', 'tab_1:row20:col3'] |
 | C5_dimension_Q348 | pass | 1 / [time] | not captured | not captured | not captured | ['tab_1:row22:col1', 'tab_1:row22:col2', 'tab_1:row22:col3'] |
 | C5_dimension_Q48 | pass | 1 / [time] | not captured | not captured | not captured | ['tab_1:row21:col1', 'tab_1:row21:col2', 'tab_1:row21:col3'] |
 | C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['tab_1:row16:col1', 'tab_1:row16:col2', 'tab_1:row16:col3'] |
-| C5_dimension_Q61 | pass | [length] ** 3 | not captured | not captured | not captured | ['tab_1:row11:col1', 'tab_1:row11:col2', 'tab_1:row11:col3'] |
+| C5_dimension_Q61 | pass | [length] ** 3 | not captured | not captured | not captured | ['tab_1:row14:col1', 'tab_1:row14:col2', 'tab_1:row14:col3'] |
+| C5_dimension_Q63 | pass | [length] ** 3 | not captured | not captured | not captured | ['tab_1:row11:col1', 'tab_1:row11:col2', 'tab_1:row11:col3'] |
 | C5_dimension_Q83 | pass | [time] | not captured | not captured | not captured | ['tab_1:row18:col1', 'tab_1:row18:col2', 'tab_1:row18:col3'] |
 | C6_cl_magnitude | fail | &lt;= 90.0 L/h | 92.1 | not captured | not captured | ['tab_1:row3:col1', 'tab_1:row3:col2', 'tab_1:row3:col3'] |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
 | C9_phys_window_Q22 | pass | clearance within physiological range | 92.1 L/h | not captured | not captured | ['tab_1:row3:col1', 'tab_1:row3:col2', 'tab_1:row3:col3'] |
 | C9_phys_window_Q22 | pass | clearance within physiological range | 58.2 L/h | not captured | not captured | ['tab_1:row27:col1', 'tab_1:row27:col2', 'tab_1:row27:col3'] |
-| C9_phys_window_Q61 | pass | volume within physiological range | 155 L | not captured | not captured | ['tab_1:row11:col1', 'tab_1:row11:col2', 'tab_1:row11:col3'] |
+| C9_phys_window_Q61 | pass | volume within physiological range | 1.67e+03 L | not captured | not captured | ['tab_1:row14:col1', 'tab_1:row14:col2', 'tab_1:row14:col3'] |
+| C9_phys_window_Q63 | pass | volume within physiological range | 155 L | not captured | not captured | ['tab_1:row11:col1', 'tab_1:row11:col2', 'tab_1:row11:col3'] |
 
 <details class="legend">
 <summary>Check legend — what each column means</summary>
@@ -145,19 +156,9 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
-## Downloadable models
+## Models
 
-<div class="pk-models-grid"><div class="pk-models-table">
-<table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-</tbody></table>
-<p>No bundles have been generated for this record yet. When the engineer emits them they appear here automatically — this page reports what is on disk and generates nothing itself.</p>
-</div></div>
+<p>No downloads: this record is <b>rejected</b>, so it is not published as a model. Any archives generated for it before the verdict have been removed — a download outlives the page that explains it.</p>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
@@ -166,4 +167,4 @@ _No web simulator for this record: its structure has no shared WebAssembly templ
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-09-26 20:39 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-06 21:39 UTC</sub>

@@ -1,0 +1,32 @@
+{
+ "dose_source": "paper",
+ "model_id": "Oprelvekin_Kheifetz2014_1_comp_pe_model",
+ "note": "Values for the shared PK_1C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "paper_doses_kind": "discrete",
+ "paper_doses_mg": [
+  3.5
+ ],
+ "parameters": {
+  "Cl": 3.6944444444444446e-06,
+  "F": 0.9,
+  "Tlag": 0.0,
+  "VdPerKg": 0.0024714285714285715,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 3.5e-06,
+  "ka": 4.222222222222222e-05,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 33244.08817635271
+ },
+ "reference_peaks": {
+  "central.C": 9.063494029202151e-06
+ },
+ "stop_time": 259200.0,
+ "template": "PK_1C_enteral",
+ "template_fmu": "PK_1C_enteral.fmu"
+}

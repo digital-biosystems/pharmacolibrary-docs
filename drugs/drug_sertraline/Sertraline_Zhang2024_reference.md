@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N06A&quot;,&quot;href&quot;:&quot;atc/N06A.md&quot;},{&quot;label&quot;:&quot;sertraline&quot;,&quot;href&quot;:&quot;drugs/drug_sertraline/&quot;},{&quot;label&quot;:&quot;Zhang_2024 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Sertraline_Castillo2024_reference&quot;,&quot;label&quot;:&quot;Castillo_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_sertraline/Sertraline_Castillo2024_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Sertraline_Xia2025_reference&quot;,&quot;label&quot;:&quot;Xia_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_sertraline/Sertraline_Xia2025_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Sertraline_Poweleit2023_reference&quot;,&quot;label&quot;:&quot;Poweleit_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_sertraline/Sertraline_Poweleit2023_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Sertraline_Xia2025_reference&quot;,&quot;label&quot;:&quot;Xia_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_sertraline/Sertraline_Xia2025_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # sertraline — `Sertraline_Zhang2024_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.625). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.625). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -25,12 +25,14 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on `parame
 
 <sub>reviewed by rule template (no LLM)</sub>
 
+> ⚠️ **STALE** — review status `needs_review` (reviewed 2026-09-28 14:40:30.079705+00:00) predates the upstream re-run (2026-10-06 23:44:32.781339+00:00). Current validate status: `needs_review`.
+
 ## Citation
 Zhang Z et al., Population pharmacokinetic approach to…, Heliyon (2024)
   ·  DOI: [10.1016/j.heliyon.2024.e25231](https://doi.org/10.1016/j.heliyon.2024.e25231)
 
 ## Model component
-<dbs-pgx drug="sertraline" model-id="Sertraline_Zhang2024_reference" status="needs_review" stale="false" population="Chinese patients with psychiatric disorders" measured-compound="sertraline" parameterization="apparent" topology="1C"></dbs-pgx>
+<dbs-pgx drug="sertraline" model-id="Sertraline_Zhang2024_reference" status="needs_review" stale="true" population="Chinese patients with psychiatric disorders" measured-compound="sertraline" parameterization="apparent" topology="1C"></dbs-pgx>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 4 extracted.
@@ -42,9 +44,9 @@ Zhang Z et al., Population pharmacokinetic approach to…, Heliyon (2024)
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| CL/F | `Q27` · CL/F | 76.1 | not captured | not captured | not captured | not captured | exact (1.0) | tbl2:row2:col1, tbl2:row2:col2, tbl2:row2:col3, tbl2:row2:col4, tbl2:row2:col5 | — | not captured |
-| V/F | `Q76` · V/F | 803 | not captured | not captured | not captured | not captured | exact (1.0) | tbl2:row3:col1, tbl2:row3:col2, tbl2:row3:col3, tbl2:row3:col4, tbl2:row3:col5 | — | not captured |
-| K | `Q47` · kel | 0.098 | not captured | not captured | not captured | not captured | exact (1.0) | tbl2:row4:col1, tbl2:row4:col4 | — | not captured |
+| CL/F | `Q27` · CL/F | 76.1 | L/h | 2.113888888888889e-05 | L/h | not captured | exact (1.0) | tbl2:row2:col1, tbl2:row2:col2, tbl2:row2:col3, tbl2:row2:col4, tbl2:row2:col5 | — | not captured |
+| V/F | `Q76` · V/F | 803 | L | 0.803 | L | not captured | exact (1.0) | tbl2:row3:col1, tbl2:row3:col2, tbl2:row3:col3, tbl2:row3:col4, tbl2:row3:col5 | — | not captured |
+| K | `Q47` · kel | 0.098 | 1/h | 2.7222222222222223e-05 | 1/h | not captured | exact (1.0) | tbl2:row4:col1, tbl2:row4:col4 | — | not captured |
 | θCL−AGE | `Q22` · CL | 0.0068 | not captured | not captured | not captured | not captured | llm_confirmed (0.6) | tbl2:row5:col1, tbl2:row5:col2, tbl2:row5:col4, tbl2:row5:col5 | — | not captured |
 
 <details class="legend">
@@ -56,8 +58,10 @@ Zhang Z et al., Population pharmacokinetic approach to…, Heliyon (2024)
 
 **Interpretation flags:**
 - dropped unlinked row (NIL): 'PRO (CV%)' — extend the ontology if this is a real PK parameter (source ['tbl2:row6:col1', 'tbl2:row6:col2', 'tbl2:row6:col4', 'tbl2:row6:col5'])
+- implicit units: 'CL/F' → L/h (from the popPK convention: 'No unit stated in text or table footnotes; CL/F for oral population PK conventionally in L/h, consistent with value 76.1')
+- implicit units: 'V/F' → L (from the popPK convention: 'No unit stated; V/F conventionally in L, consistent with value 803 (sertraline V/F ~800-1000 L).')
+- implicit units: 'K' → 1/h (from the popPK convention: 'No unit stated; first-order elimination rate constant conventionally in 1/h, consistent with 0.098 (half-life ~7 h, sert')
 - apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=sertraline
-- structure disagreement: deterministic 1C vs LLM 2C — review compartment count
 - skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
 - skipped review gap-fill of Q: primary's parameterization (rate-constant / ka-only) does not use it
 
@@ -96,12 +100,14 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 | C0_has_structural_params | pass | not captured | 4 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
+| C5_dimension_Q27 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['tbl2:row2:col1', 'tbl2:row2:col2', 'tbl2:row2:col3', 'tbl2:row2:col4', 'tbl2:row2:col5'] |
+| C5_dimension_Q47 | pass | 1 / [time] | not captured | not captured | not captured | ['tbl2:row4:col1', 'tbl2:row4:col4'] |
+| C5_dimension_Q76 | pass | [length] ** 3 | not captured | not captured | not captured | ['tbl2:row3:col1', 'tbl2:row3:col2', 'tbl2:row3:col3', 'tbl2:row3:col4', 'tbl2:row3:col5'] |
 | C5_unit_missing_Q22 | fail | [length] ** 3 / [time] | not captured | not captured | not captured | ['tbl2:row5:col1', 'tbl2:row5:col2', 'tbl2:row5:col4', 'tbl2:row5:col5'] |
-| C5_unit_missing_Q27 | fail | [length] ** 3 / [time] | not captured | not captured | not captured | ['tbl2:row2:col1', 'tbl2:row2:col2', 'tbl2:row2:col3', 'tbl2:row2:col4', 'tbl2:row2:col5'] |
-| C5_unit_missing_Q47 | fail | 1 / [time] | not captured | not captured | not captured | ['tbl2:row4:col1', 'tbl2:row4:col4'] |
-| C5_unit_missing_Q76 | fail | [length] ** 3 | not captured | not captured | not captured | ['tbl2:row3:col1', 'tbl2:row3:col2', 'tbl2:row3:col3', 'tbl2:row3:col4', 'tbl2:row3:col5'] |
 | C7_apparent_coherence | pass | not captured | not captured | not captured | not captured | not captured |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
+| C9_phys_window_Q27 | pass | clearance within physiological range | 76.1 L/h | not captured | not captured | ['tbl2:row2:col1', 'tbl2:row2:col2', 'tbl2:row2:col3', 'tbl2:row2:col4', 'tbl2:row2:col5'] |
+| C9_phys_window_Q76 | pass | volume within physiological range | 803 L | not captured | not captured | ['tbl2:row3:col1', 'tbl2:row3:col2', 'tbl2:row3:col3', 'tbl2:row3:col4', 'tbl2:row3:col5'] |
 
 <details class="legend">
 <summary>Check legend — what each column means</summary>
@@ -136,4 +142,4 @@ _No web simulator for this record: its structure has no shared WebAssembly templ
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-09-24 04:39 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-06 23:44 UTC</sub>

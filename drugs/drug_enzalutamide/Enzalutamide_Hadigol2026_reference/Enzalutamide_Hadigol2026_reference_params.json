@@ -1,0 +1,54 @@
+{
+ "dose_source": "paper",
+ "model_id": "Enzalutamide_Hadigol2026_reference",
+ "molar_masses": {
+  "C_M1": 0.45041000000000003,
+  "central.C": 0.46443599999999996
+ },
+ "note": "Values for the shared PK_3M_9C.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observable_labels": {
+  "C_M1": "N-desmethyl enzalutamide",
+  "C_central": "enzalutamide"
+ },
+ "observables": [
+  "central.C",
+  "C_M1"
+ ],
+ "paper_doses_kind": "discrete",
+ "paper_doses_mg": [
+  0.5
+ ],
+ "parameters": {
+  "CL1": 4.320833333333333e-08,
+  "CLm1": 7.944444444444444e-08,
+  "F": 1.0,
+  "MW": 0.46443599999999996,
+  "MW_m1": 0.45041000000000003,
+  "Tlag": 0.0,
+  "Vd1": 0.025293,
+  "Vd1m1": 0.044944000000000005,
+  "Vd2m1": 0.052372999999999996,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 5e-07,
+  "ka": 0.0009530555555555556,
+  "q12": 5.7344444444444445e-06,
+  "q13": 4.3244444444444445e-06,
+  "q1_m11": 7.484722222222222e-08,
+  "q21": 5.7344444444444445e-06,
+  "q31": 4.3244444444444445e-06,
+  "qm11_m12": 2.6230555555555555e-06,
+  "qm12_m11": 2.6230555555555555e-06
+ },
+ "reference_peak_times": {
+  "C_M1": 444120.2404809619,
+  "central.C": 6233.266533066132
+ },
+ "reference_peaks": {
+  "C_M1": 2.169716064519126e-06,
+  "central.C": 1.9252089497911474e-05
+ },
+ "stop_time": 777600.0,
+ "template": "PK_3M_9C",
+ "template_fmu": "PK_3M_9C.fmu"
+}

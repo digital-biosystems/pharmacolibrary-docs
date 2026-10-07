@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C05A&quot;,&quot;href&quot;:&quot;atc/C05A.md&quot;},{&quot;label&quot;:&quot;diltiazem&quot;,&quot;href&quot;:&quot;drugs/drug_diltiazem/&quot;},{&quot;label&quot;:&quot;Murata_1989 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Diltiazem_Klle1983_reference&quot;,&quot;label&quot;:&quot;K\u00f6lle_1983_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_diltiazem/Diltiazem_Klle1983_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Diltiazem_Guan2018_reference&quot;,&quot;label&quot;:&quot;Guan_2018_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_diltiazem/Diltiazem_Guan2018_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Diltiazem_Guan2018_reference&quot;,&quot;label&quot;:&quot;Guan_2018_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_diltiazem/Diltiazem_Guan2018_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Diltiazem_Klle1983_reference&quot;,&quot;label&quot;:&quot;K\u00f6lle_1983_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_diltiazem/Diltiazem_Klle1983_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # diltiazem — `Diltiazem_Murata1989_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.375). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">human + animal</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.75). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">human + animal</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -23,16 +23,18 @@
 
 The paper reports no distribution volume and no clearance or elimination rate; it is an exposure/outcome paper. Only the abstract was available, so reported summary statistics stand in for a fitted model.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has diltiazem, the second reading unknown; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of absorption rate constant: this record has none, the second reading 0.73; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
+
+> ⚠️ **STALE** — review status `rejected` (reviewed 2026-10-05 09:26:34.582384+00:00) predates the upstream re-run (2026-10-06 22:35:06.313799+00:00). Current validate status: `rejected`.
 
 ## Citation
 Murata K et al., Pharmacokinetics of an oral sustained-r…, Journal of pharmaceutical s… (1989)
   ·  DOI: [10.1002/jps.2600781116](https://doi.org/10.1002/jps.2600781116)
 
 ## Model component
-<dbs-pgx drug="diltiazem" model-id="Diltiazem_Murata1989_reference" status="rejected" stale="false" population="adults" measured-compound="diltiazem" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<dbs-pgx drug="diltiazem" model-id="Diltiazem_Murata1989_reference" status="rejected" stale="true" population="adults" measured-compound="diltiazem" parameterization="mechanistic" topology="1C"></dbs-pgx>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 1 extracted.
@@ -72,17 +74,14 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.375 (3/8 fields) | 5 |
+| `gpt-oss:120b` | not confirmed | 0.75 (6/8 fields) | 2 |
 
-<details><summary>5 field(s) a reader read differently</summary>
+<details><summary>2 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
 | `gpt-oss:120b` | `parameters[absorption rate constant]` | not captured | 0.73 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[bioavailability of her-sr compared with that of a conventional diltiazem preparation (her) in dogs]` | 80 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[bioavailability]` | not captured | 80 | only_one_extracted |
-| `gpt-oss:120b` | `screen.dose_compound` | diltiazem | unknown | mismatch |
-| `gpt-oss:120b` | `screen.primary_analyte` | diltiazem | unknown | mismatch |
+| `gpt-oss:120b` | `parameters[bioavailability of her-sr compared with that of a conventional diltiazem preparation (her) in dogs].parameter_id` | Q40 | Q87 | mismatch |
 
 </details>
 
@@ -123,4 +122,4 @@ _No web simulator for this record: its structure has no shared WebAssembly templ
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-09-28 18:51 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-06 22:35 UTC</sub>

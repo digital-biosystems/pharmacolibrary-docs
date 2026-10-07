@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N06A&quot;,&quot;href&quot;:&quot;atc/N06A.md&quot;},{&quot;label&quot;:&quot;escitalopram&quot;,&quot;href&quot;:&quot;drugs/drug_escitalopram/&quot;},{&quot;label&quot;:&quot;Liu_2022 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Escitalopram_Friberg2006_reference&quot;,&quot;label&quot;:&quot;Friberg_2006_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_escitalopram/Escitalopram_Friberg2006_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Escitalopram_Liu2022_reference&quot;,&quot;label&quot;:&quot;Liu_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_escitalopram/Escitalopram_Liu2022_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Escitalopram_Friberg2006_reference&quot;,&quot;label&quot;:&quot;Friberg_2006_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_escitalopram/Escitalopram_Friberg2006_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Escitalopram_Poweleit2023_reference&quot;,&quot;label&quot;:&quot;Poweleit_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_escitalopram/Escitalopram_Poweleit2023_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # escitalopram — `Escitalopram_Liu2022_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.444). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.444). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -13,7 +13,7 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
-**Model:** A simulatable model was generated — see the **Models** and **Simulation** tabs.
+**Model:** No model was generated from this record.
 
 ### Reviewer guidance
 
@@ -25,15 +25,17 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on `parame
 
 <sub>reviewed by glm-5.3-flash</sub>
 
+> ⚠️ **STALE** — review status `needs_review` (reviewed 2026-09-28 14:37:58.455673+00:00) predates the upstream re-run (2026-10-06 22:57:51.472222+00:00). Current validate status: `needs_review`.
+
 ## Citation
 Liu S et al., Population pharmacokinetics model for e…, Frontiers in pharmacology (2022)
   ·  DOI: [10.3389/fphar.2022.964758](https://doi.org/10.3389/fphar.2022.964758)
 
 ## Model component
-<dbs-pgx drug="escitalopram" model-id="Escitalopram_Liu2022_reference" status="needs_review" stale="false" population="Chinese psychiatric patients" measured-compound="escitalopram" parameterization="apparent" topology="1C"></dbs-pgx>
+<dbs-pgx drug="escitalopram" model-id="Escitalopram_Liu2022_reference" status="needs_review" stale="true" population="Chinese psychiatric patients" measured-compound="escitalopram" parameterization="apparent" topology="1C"></dbs-pgx>
 
-**Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
-**Parameters:** 2 extracted.
+**Model structure:** 1-compartment; no model was built for this record.  
+**Parameters:** 3 extracted, plus 2 covariate effects.
 
 **Parameterization:** CL/F, V/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
@@ -42,8 +44,12 @@ Liu S et al., Population pharmacokinetics model for e…, Frontiers in pharmacol
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| CL/F (L/h) | `Q27` · CL/F | 14.7 | L/h | 4.083333333333333e-06 | [l] / [h] | not captured | exact (1.0) | tab_2:row3:col1, tab_2:row3:col3, tab_2:row3:col4 | — | not captured |
-| V/F (L) | `Q76` · V/F | 581.9 | L | 0.5819 | [l] | not captured | exact (1.0) | tab_2:row4:col1, tab_2:row4:col3, tab_2:row4:col4 | — | not captured |
+| CL/F (L/h) | `Q27` · CL/F | 16.3 | L/h | 4.527777777777778e-06 | [l] / [h] | not captured | exact (1.0) | T4:row3:col1, T4:row3:col3, T4:row3:col4 | — | not captured |
+| V/F (L) | `Q76` · V/F | 815 | L | 0.8150000000000001 | [l] | not captured | exact (1.0) | T4:row4:col1, T4:row4:col3, T4:row4:col4 | — | not captured |
+| theta_q49_im | `Q900` · theta_q49_im | 0.847 | not captured | not captured | not captured | not captured | not captured (not captured) | T4:row7:col1, T4:row7:col3, T4:row7:col4 | — | not captured |
+| theta_q47_pm | `Q900` · theta_q47_pm | 0.479 | not captured | not captured | not captured | not captured | not captured (not captured) | T4:row8:col1, T4:row8:col3, T4:row8:col4 | — | not captured |
+| θ Age | `Q900` · θ Age | 0.0077 | not captured | not captured | not captured | not captured | not captured (not captured) | not captured | — | not captured |
+| absorption rate constant | `Q49` · kabs | 1.48 | h -1 | 0.0004111111111111111 | 1/h | not captured | review_gapfill (0.7) | Friberg_2006:review | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -52,33 +58,27 @@ Liu S et al., Population pharmacokinetics model for e…, Frontiers in pharmacol
 
 ## Departures & gaps
 
-**Deviations:**
-- `defaulted_parameters`: ['ka', 'Tlag']
-- `apparent_assumption`: F=1, Fm=1, no molar correction (parameterization=apparent)
-- `invented_absorption`: ka defaulted — not reported in source
-- `input_model`: first-order depot input — apparent (/F) parameterization ⇒ extravascular dosing
-
 **Interpretation flags:**
-- dropped unlinked row (NIL): 'θ Age' — extend the ontology if this is a real PK parameter (source ['tab_2:row6:col1', 'tab_2:row6:col3', 'tab_2:row6:col4'])
-- dropped unlinked row (NIL): 'θ IM' — extend the ontology if this is a real PK parameter (source ['tab_2:row7:col1', 'tab_2:row7:col3', 'tab_2:row7:col4'])
-- dropped unlinked row (NIL): 'θ PM' — extend the ontology if this is a real PK parameter (source ['tab_2:row8:col1', 'tab_2:row8:col3', 'tab_2:row8:col4'])
-- dropped duplicate Q27 ('CL/F', value '0.0520') — already have one for this compound
-- dropped duplicate Q76 ('V/F', value '0.090') — already have one for this compound
+- kept covariate coefficient θ Age=0.0077 (covariate Age) — not an ontology parameter
+- dropped duplicate Q27 ('CL/F', value '0.0877') — already have one for this compound
+- dropped duplicate Q76 ('V/F', value '0.235') — already have one for this compound
+- covariate effect for Q49 has no base parameter row (kept as unattached equation-variable)
+- covariate effect for Q47 has no base parameter row (kept as unattached equation-variable)
 - apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=escitalopram
+- skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
+- skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
+- gap-filled Q49 (kabs) from Friberg_2006's review values (primary lacked it)
 
 **Extraction notes:**
-- unparsed cell tab_2:row3:col2 = '6%'
-- unparsed cell tab_2:row4:col2 = '14%'
-- unparsed cell tab_2:row5:col1 = '0.6, FIX'
-- unparsed cell tab_2:row5:col3 = '0.6, FIX'
-- unparsed cell tab_2:row6:col2 = '20%'
-- unparsed cell tab_2:row7:col2 = '7%'
-- unparsed cell tab_2:row8:col2 = '11%'
-- unparsed cell tab_2:row10:col2 = '21%'
-- unparsed cell tab_2:row11:col2 = '29%'
-- unparsed cell tab_2:row13:col1 = '0, FIX'
-- unparsed cell tab_2:row13:col3 = '0, FIX'
-- unparsed cell tab_2:row14:col2 = '12%'
+- unparsed cell T4:row3:col2 = '6%'
+- unparsed cell T4:row4:col2 = '14%'
+- unparsed cell T4:row6:col2 = '20%'
+- unparsed cell T4:row7:col2 = '7%'
+- unparsed cell T4:row8:col2 = '11%'
+- unparsed cell T4:row10:col2 = '21%'
+- unparsed cell T4:row11:col2 = '29%'
+- unparsed cell T4:row14:col2 = '12%'
+- LLM selected parameter table(s) 4
 
 ## Validation
 
@@ -114,12 +114,14 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 | C0_has_structural_params | pass | not captured | 2 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
-| C5_dimension_Q27 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['tab_2:row3:col1', 'tab_2:row3:col3', 'tab_2:row3:col4'] |
-| C5_dimension_Q76 | pass | [length] ** 3 | not captured | not captured | not captured | ['tab_2:row4:col1', 'tab_2:row4:col3', 'tab_2:row4:col4'] |
+| C1_half_life_beta | fail | 50.0 | 34.657 | 0.6931 | 0.25 | reported t½β |
+| C5_dimension_Q27 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['T4:row3:col1', 'T4:row3:col3', 'T4:row3:col4'] |
+| C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['Friberg_2006:review'] |
+| C5_dimension_Q76 | pass | [length] ** 3 | not captured | not captured | not captured | ['T4:row4:col1', 'T4:row4:col3', 'T4:row4:col4'] |
 | C7_apparent_coherence | pass | not captured | not captured | not captured | not captured | not captured |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
-| C9_phys_window_Q27 | pass | clearance within physiological range | 14.7 L/h | not captured | not captured | ['tab_2:row3:col1', 'tab_2:row3:col3', 'tab_2:row3:col4'] |
-| C9_phys_window_Q76 | pass | volume within physiological range | 582 L | not captured | not captured | ['tab_2:row4:col1', 'tab_2:row4:col3', 'tab_2:row4:col4'] |
+| C9_phys_window_Q27 | pass | clearance within physiological range | 16.3 L/h | not captured | not captured | ['T4:row3:col1', 'T4:row3:col3', 'T4:row3:col4'] |
+| C9_phys_window_Q76 | pass | volume within physiological range | 815 L | not captured | not captured | ['T4:row4:col1', 'T4:row4:col3', 'T4:row4:col4'] |
 
 **Reviewer per-scenario checks:**
 
@@ -155,25 +157,20 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
 <tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_escitalopram/Escitalopram_Liu2022_reference/Escitalopram_Liu2022_reference_modelica.zip" download>Escitalopram_Liu2022_reference_modelica.zip</a> <span class="pk-size">(4.0 kB)</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_escitalopram/Escitalopram_Liu2022_reference/Escitalopram_Liu2022_reference_fmi.zip" download>Escitalopram_Liu2022_reference_fmi.zip</a> <span class="pk-size">(4.3 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><a href="drugs/drug_escitalopram/Escitalopram_Liu2022_reference/Escitalopram_Liu2022_reference_fmi.zip" download>Escitalopram_Liu2022_reference_fmi.zip</a> <span class="pk-size">(4.3 kB)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_escitalopram/Escitalopram_Liu2022_reference/Escitalopram_Liu2022_reference_matlab.zip" download>Escitalopram_Liu2022_reference_matlab.zip</a> <span class="pk-size">(3.5 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_escitalopram/Escitalopram_Liu2022_reference/Escitalopram_Liu2022_reference_matlab_simbio.zip" download>Escitalopram_Liu2022_reference_matlab_simbio.zip</a> <span class="pk-size">(2.9 kB)</span></td></tr>
 <tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_escitalopram/Escitalopram_Liu2022_reference/Escitalopram_Liu2022_reference_sbml.zip" download>Escitalopram_Liu2022_reference_sbml.zip</a> <span class="pk-size">(2.7 kB)</span></td></tr>
 <tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_escitalopram/Escitalopram_Liu2022_reference/Escitalopram_Liu2022_reference_cellml.zip" download>Escitalopram_Liu2022_reference_cellml.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
 </tbody></table>
 <p>Each archive holds the model source, a script that simulates it against the appropriate library, and a README describing both and how to run them.</p>
-<p><b>FMI is two downloads.</b> The archive holds this record's parameters and its driver; the simulator itself is <code>PK_1C_enteral.fmu</code>, one compiled template shared by every model of this structure. Take the FMU once, keep it beside the script (or pass <code>--fmu PATH</code>). Running it reproduces the model-specific FMU exactly.</p>
-</div><figure class="pk-models-diagram"><img src="drugs/drug_escitalopram/Escitalopram_Liu2022_reference/Escitalopram_Liu2022_reference.svg" alt="Escitalopram_Liu2022_reference diagram"><figcaption>Model diagram (Modelica) using Pharmacolibrary v26.09 components, rendered by OpenModelica 1.26.7.</figcaption></figure></div>
+</div></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-**Administration: oral** — 5 mg, single dose, first-order absorption (ka 0.5 /h, F 1). Doses in the paper: 5, 10, 15, 20 mg.
-
-<dbs-fmusim paramsurl="drugs/drug_escitalopram/Escitalopram_Liu2022_reference/Escitalopram_Liu2022_reference_params.json" metaurl="assets/fmu/PK_1C_enteral.vr.json" wasmurl="assets/fmu/PK_1C_enteral.js" controlsurl="drugs/drug_escitalopram/Escitalopram_Liu2022_reference/Escitalopram_Liu2022_reference_sim_controls.json"></dbs-fmusim>
-
-<sub>Runs this record's model in the browser as WebAssembly. Sliders start at the extracted values; the reference check compares the browser's peak against the FMPy result recorded when the record was built, and is withheld once a value has been edited. Template `PK_1C_enteral` · parameters `Escitalopram_Liu2022_reference_params.json` · controls `Escitalopram_Liu2022_reference_sim_controls.json`. A slider marked *simulator value* is running on the template's own default because this record does not pin that parameter.</sub>
+_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-07-15 11:54 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-06 22:57 UTC</sub>

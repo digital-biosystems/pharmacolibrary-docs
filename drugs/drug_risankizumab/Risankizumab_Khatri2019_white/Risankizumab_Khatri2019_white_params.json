@@ -1,0 +1,39 @@
+{
+ "dose_source": "paper",
+ "model_id": "Risankizumab_Khatri2019_white",
+ "note": "Values for the shared PK_1C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "paper_doses_kind": "discrete",
+ "paper_doses_mg": [
+  18.0,
+  75.0,
+  90.0,
+  150.0,
+  200.0,
+  300.0,
+  600.0,
+  1200.0
+ ],
+ "parameters": {
+  "Cl": 2.777777777777778e-09,
+  "F": 0.9,
+  "Tlag": 0.0,
+  "VdPerKg": 0.0001302857142857143,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 1.8e-05,
+  "ka": 1.0509259259259259e-05,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 346259.9999653796
+ },
+ "reference_peaks": {
+  "central.C": 0.0015981844742155072
+ },
+ "stop_time": 12096000.0,
+ "template": "PK_1C_enteral",
+ "template_fmu": "PK_1C_enteral.fmu"
+}

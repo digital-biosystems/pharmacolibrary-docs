@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N06A&quot;,&quot;href&quot;:&quot;atc/N06A.md&quot;},{&quot;label&quot;:&quot;citalopram&quot;,&quot;href&quot;:&quot;drugs/drug_citalopram/&quot;},{&quot;label&quot;:&quot;Akil_2016 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Citalopram_Friberg2006_reference&quot;,&quot;label&quot;:&quot;Friberg_2006_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_citalopram/Citalopram_Friberg2006_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Citalopram_Weisskopf2020_reference&quot;,&quot;label&quot;:&quot;Weisskopf_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_citalopram/Citalopram_Weisskopf2020_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Citalopram_Friberg2006_reference&quot;,&quot;label&quot;:&quot;Friberg_2006_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_citalopram/Citalopram_Friberg2006_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # citalopram — `Citalopram_Akil2016_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.25). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.25). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -25,29 +25,33 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which m
 
 <sub>reviewed by rule template (no LLM)</sub>
 
-> **Dose compound ≠ measured compound:** dosed `citalopram`, measured `R- and S-citalopram and desmethylcitalopram`.
+> ⚠️ **STALE** — review status `needs_review` (reviewed 2026-10-05 09:25:22.205824+00:00) predates the upstream re-run (2026-10-06 22:12:18.134487+00:00). Current validate status: `rejected`.
+
+> **Dose compound ≠ measured compound:** dosed `citalopram (racemic)`, measured `R,S-citalopram and R,S-desmethylcitalopram`.
 
 ## Citation
 Akil A et al., A population pharmacokinetic model for…, Journal of pharmacokinetics… (2016)
   ·  DOI: [10.1007/s10928-015-9457-6](https://doi.org/10.1007/s10928-015-9457-6)
 
 ## Model component
-<dbs-pgx drug="citalopram" model-id="Citalopram_Akil2016_reference" status="needs_review" stale="false" population="Alzheimer&#39;s disease patients with agitation" measured-compound="R- and S-citalopram and desmethylcitalopram" parameterization="apparent" topology="general_linear"></dbs-pgx>
+<dbs-pgx drug="citalopram" model-id="Citalopram_Akil2016_reference" status="rejected" stale="true" population="Alzheimer&#39;s disease patients with agitation" measured-compound="R,S-citalopram and R,S-desmethylcitalopram" parameterization="apparent" topology="general_linear"></dbs-pgx>
 
 **Model structure:** general linear; no model was built for this record.  
-**Parameters:** 4 extracted.
+**Parameters:** 4 extracted, plus 2 covariate effects.
 
-**Parameterization:** V/F — apparent, F unknown (apparent — bioavailability not identifiable).
+**Parameterization:** CL/F, V/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
 ## Parameters
-> ⚠️ This record is not accepted (current status `needs_review`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
+> ⚠️ This record is not accepted (current status `rejected`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| V/F, L | `Q76` · V/F | 1390 | not captured | not captured | not captured | not captured | boundary (0.8) | tab_1:row5:col1, tab_1:row17:col1 | — | not captured |
-| CL Rm /F, L/h | `Q22` · CL | 24.4 | not captured | not captured | not captured | not captured | boundary (0.8) | tab_1:row7:col1 | additive_shift on category=13 | not captured |
-| x V , % | `Q65` · Vss | 166.73 | not captured | not captured | not captured | not captured | llm (0.5) | tab_1:row9:col1 | — | not captured |
-| r, ng/ml (additive) | `Q317` · add_error | 13.42 | additive | not captured | [additive] | not captured | llm (0.5) | tab_1:row11:col1 | — | not captured |
+| V/F, L | `Q76` · V/F | 1390 | L | 1.3900000000000001 | [l] | not captured | exact (1.0) | Tab3:row4:col1, Tab3:row16:col1 | — | not captured |
+| Ka, h−1 | `Q49` · kabs | 1 | h−1 | 0.0002777777777777778 | [1] / [h] | not captured | exact (1.0) | Tab3:row5:col1, Tab3:row17:col1 | — | not captured |
+| CLRm/F, L/h | `Q27` · CL/F | 24.4 | L/h | 6.777777777777777e-06 | [l] / [h] | not captured | exact (1.0) | Tab3:row6:col1 | — | not captured |
+| CLSm/F, L/h | `Q27` · CL/F | 38.8 | L/h | 1.0777777777777778e-05 | [l] / [h] | not captured | exact (1.0) | Tab3:row18:col1 | — | not captured |
+| theta_q26_category | `Q900` · theta_q26_category | 13 | not captured | not captured | not captured | not captured | not captured (not captured) | Tab3:row2:col1 | — | not captured |
+| theta_q27_em | `Q900` · theta_q27_em | 22.1 | not captured | not captured | not captured | not captured | not captured (not captured) | Tab3:row13:col1 | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -57,32 +61,43 @@ Akil A et al., A population pharmacokinetic model for…, Journal of pharmacokin
 ## Departures & gaps
 
 **Interpretation flags:**
-- dropped duplicate Q22 ('x CLp , %', value '26.38') — already have one for this compound
-- dropped unlinked row (NIL): 'x CLm , %' — extend the ontology if this is a real PK parameter (source ['tab_1:row10:col1'])
-- unit_dimension_unknown: 'additive' (add_error)
-- dropped unlinked row (NIL): 'r, % (proportional)' — extend the ontology if this is a real PK parameter (source ['tab_1:row12:col1'])
-- dropped duplicate covariate effect 'category'/'' on Q22 — ambiguous identity (two shifts cannot share one category)
-- apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=R- and S-citalopram and desmethylcitalopram
-- held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
-- topology: 2 first-order transfer(s) across 4 compounds → general_linear
+- covariate effect for Q26 has no base parameter row (kept as unattached equation-variable)
+- covariate effect for Q27 has no base parameter row (kept as unattached equation-variable)
+- apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=R,S-citalopram and R,S-desmethylcitalopram
+- topology: transfer parameter unlinked (Q100) — add Kfm/formation-rate/rate-constant to the ontology; routing to review
+- template fit: PK_3M_9C — formed from central; parent 1, metabolites [0, 0]
 - status held at route_to_review — not promoted
+- row roles: per-genotype parameters — typical value from the reference group: CLRp/F for male, L/h, CLSp/F for EM/RM, L/h
+- row roles (LLM): model_class=compartmental; 15/15 row label(s) assigned, 8 linked by role; re-tagged parent→R-citalopram ×1, parent→R,S-citalopram and R,S-desmethylcitalopram ×10, parent→R-desmethylcitalopram ×1, parent→S-citalopram ×1, parent→S-desmethylcitalopram ×1
+- molar mass: no plausible PubChem entry for 'R-citalopram' ('R-citalopram') — left in mass units
+- molar mass: none of 3 PubChem candidate(s) is 'S-desmethylcitalopram' (LLM) — left in mass units
+- molar mass: none found for 'R-citalopram' — its concentrations stay mass-only
+- molar mass: none found for 'S-desmethylcitalopram' — its concentrations stay mass-only
+- skipped review gap-fill of V2: primary is GENERAL_LINEAR (peripheral family needs ≥2C)
+- skipped review gap-fill of Q: primary is GENERAL_LINEAR (peripheral family needs ≥2C)
+- skipped review gap-fill of TLAG: primary's parameterization (rate-constant / ka-only) does not use it
 
 **Extraction notes:**
-- unparsed cell tab_1:row3:col2 = '13.8 (13.5-14.1)'
-- unparsed cell tab_1:row4:col2 = '10.3 (10.1-10.5)'
-- unparsed cell tab_1:row5:col2 = '1605 (1440-2090)'
-- unparsed cell tab_1:row6:col1 = '1 (Fixed)'
-- unparsed cell tab_1:row7:col2 = '23.5 (23.1-23.7)'
-- unparsed cell tab_1:row8:col2 = '28.7 (27.8-30)'
-- unparsed cell tab_1:row9:col2 = '107.2 (92.6-121.2)'
-- unparsed cell tab_1:row10:col2 = '34.9 (34.5-35.9)'
-- unparsed cell tab_1:row11:col2 = '13.6 (13.3-13.9)'
-- unparsed cell tab_1:row12:col2 = '20.7 (20.4-21.3)'
-- unparsed cell tab_1:row14:col2 = '21.9 (21.2-22.8)'
-- unparsed cell tab_1:row15:col2 = '16.7 (15.9-17.2)'
-- unparsed cell tab_1:row16:col2 = '17 (16.1-17.6)'
-- unparsed cell tab_1:row17:col2 = '1310 (1130-1420)'
-- unparsed cell tab_1:row18:col1 = '1 (Fixed)'
+- unparsed cell Tab3:row2:col2 = '13.8 (13.5–14.1)'
+- unparsed cell Tab3:row3:col2 = '10.3 (10.1–10.5)'
+- unparsed cell Tab3:row4:col2 = '1605 (1440–2090)'
+- unparsed cell Tab3:row6:col2 = '23.5 (23.1–23.7)'
+- unparsed cell Tab3:row7:col2 = '28.7 (27.8–30)'
+- unparsed cell Tab3:row8:col2 = '107.2 (92.6–121.2)'
+- unparsed cell Tab3:row9:col2 = '34.9 (34.5–35.9)'
+- unparsed cell Tab3:row10:col2 = '13.6 (13.3–13.9)'
+- unparsed cell Tab3:row11:col2 = '20.7 (20.4–21.3)'
+- unparsed cell Tab3:row13:col2 = '21.9 (21.2–22.8)'
+- unparsed cell Tab3:row14:col2 = '16.7 (15.9–17.2)'
+- unparsed cell Tab3:row15:col2 = '17 (16.1–17.6)'
+- unparsed cell Tab3:row16:col2 = '1310 (1130–1420)'
+- unparsed cell Tab3:row18:col2 = '38.9 (38.4–39.2)'
+- unparsed cell Tab3:row19:col2 = '36.7 (35.8–38.5)'
+- unparsed cell Tab3:row20:col2 = '62.3 (59.5–68.9)'
+- unparsed cell Tab3:row21:col2 = '67 (54–82.7)'
+- unparsed cell Tab3:row22:col2 = '20.1 (19.4–20.6)'
+- unparsed cell Tab3:row23:col2 = '21.6 (21–22.1)'
+- LLM selected parameter table(s) 3
 
 ## Validation
 
@@ -125,12 +140,15 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 | C0_has_structural_params | pass | not captured | 4 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
-| C5_unit_missing_Q22 | fail | [length] ** 3 / [time] | not captured | not captured | not captured | ['tab_1:row7:col1'] |
-| C5_unit_missing_Q317 | fail | [mass] / [length] ** 3 | additive | not captured | not captured | ['tab_1:row11:col1'] |
-| C5_unit_missing_Q65 | fail | [length] ** 3 | not captured | not captured | not captured | ['tab_1:row9:col1'] |
-| C5_unit_missing_Q76 | fail | [length] ** 3 | not captured | not captured | not captured | ['tab_1:row5:col1', 'tab_1:row17:col1'] |
+| C5_dimension_Q27 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Tab3:row6:col1'] |
+| C5_dimension_Q27 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Tab3:row18:col1'] |
+| C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['Tab3:row5:col1', 'Tab3:row17:col1'] |
+| C5_dimension_Q76 | pass | [length] ** 3 | not captured | not captured | not captured | ['Tab3:row4:col1', 'Tab3:row16:col1'] |
 | C7_apparent_coherence | pass | not captured | not captured | not captured | not captured | not captured |
-| C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
+| C8_topology | fail | ontology-linked transfer parameter on every edge | ['CLRm (formation clearance)', 'CLSm (formation clearance)'] | not captured | not captured | not captured |
+| C9_phys_window_Q27 | pass | clearance within physiological range | 24.4 L/h | not captured | not captured | ['Tab3:row6:col1'] |
+| C9_phys_window_Q27 | pass | clearance within physiological range | 38.8 L/h | not captured | not captured | ['Tab3:row18:col1'] |
+| C9_phys_window_Q76 | pass | volume within physiological range | 1.39e+03 L | not captured | not captured | ['Tab3:row4:col1', 'Tab3:row16:col1'] |
 
 <details class="legend">
 <summary>Check legend — what each column means</summary>
@@ -144,19 +162,9 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
-## Downloadable models
+## Models
 
-<div class="pk-models-grid"><div class="pk-models-table">
-<table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-</tbody></table>
-<p>No bundles have been generated for this record yet. When the engineer emits them they appear here automatically — this page reports what is on disk and generates nothing itself.</p>
-</div></div>
+<p>No downloads: this record is <b>rejected</b>, so it is not published as a model. Any archives generated for it before the verdict have been removed — a download outlives the page that explains it.</p>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
@@ -165,4 +173,4 @@ _No web simulator for this record: its structure has no shared WebAssembly templ
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-07-15 11:11 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-06 22:12 UTC</sub>

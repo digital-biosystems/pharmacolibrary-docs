@@ -18,7 +18,7 @@ Amineptine is a tricyclic antidepressant that was used to treat depression. It w
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-23 19:17 | 10:45 | 0/0/0 | 0/0/0 | 0/0/0 | 26,342/2,204 | ollama / qwen3.8:27b-mtp-q8_0 | 0 | 0/0 | 0/0 | 0 |
+| 2026-10-06 21:38 | 1:00 | 0/0/0 | 0/0/0 | 0/0/0 | 38,647/836 | ollama / glm-5.3-flash | 0 | 0/0 | 0/0 | 0 |
 
 ## popPK records
 
@@ -47,7 +47,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 - **PubMed hits:** 22 matched, 21 returned
 - **screened:** 2  ·  **relevant:** 2
 - **records:** 0  ·  extracted 0  ·  needs_review 0  ·  rejected 0  ·  stale 0
-- **scholar-agent fallback query used:** True
+- **scholar-agent fallback query used:** not captured
 
 ## Full text wanted
 
@@ -55,14 +55,14 @@ _6 paper(s) judged relevant from the abstract, with no full text on disk — pay
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Lachatre_1989.pdf` | Lachatre G et al., Single-dose pharmacokinetics of aminept…, Fundamental & clinical phar… (1989) | popPK | 10 | [10.1111/j.1472-8206.1989.tb00026.x](https://doi.org/10.1111/j.1472-8206.1989.tb00026.x) | [2714729](https://pubmed.ncbi.nlm.nih.gov/2714729) | The abstract explicitly reports quantitative pharmacokinetic parameters for amineptine, including volume of distribution (2.4 l.kg-1), half-life (0.8 h), and clearance (124.8 l.h-1). |
-| `Riché_1989.pdf` | Riché C et al., Pharmacokinetics of amineptine after si…, Clinical neuropharmacology… (1989) | popPK | 10 | [10.1097/00002826-198912002-00005](https://doi.org/10.1097/00002826-198912002-00005) | [2698269](https://pubmed.ncbi.nlm.nih.gov/2698269) | The text explicitly reports quantitative pharmacokinetic parameters for amineptine, including volume of distribution (2.4 L/kg), half-life (0.8 h), and clearance (124.8 L/h). |
-| `Tsaconas_1989.pdf` | Tsaconas C et al., Gas chromatographic-mass spectrometric…, Journal of chromatography (1989) | popPK | 9 | [10.1016/s0378-4347(00)83040-6](https://doi.org/10.1016/s0378-4347(00)83040-6) | [2722999](https://pubmed.ncbi.nlm.nih.gov/2722999) | The paper is a relevant pharmacokinetic study of amineptine in humans, but the provided evidence contains only qualitative descriptions of precision and accuracy without any specific numeric parameter values. |
+| `Lachatre_1989.pdf` | Lachatre G et al., Single-dose pharmacokinetics of aminept…, Fundamental & clinical phar… (1989) | popPK | 9 | [10.1111/j.1472-8206.1989.tb00026.x](https://doi.org/10.1111/j.1472-8206.1989.tb00026.x) | [2714729](https://pubmed.ncbi.nlm.nih.gov/2714729) | Human single-dose PK study of amineptine with numeric Vd, clearance, and half-life values reported directly in the abstract. |
+| `Riché_1989.pdf` | Riché C et al., Pharmacokinetics of amineptine after si…, Clinical neuropharmacology… (1989) | popPK | 9 | [10.1097/00002826-198912002-00005](https://doi.org/10.1097/00002826-198912002-00005) | [2698269](https://pubmed.ncbi.nlm.nih.gov/2698269) | Abstract reports numeric PK parameters for amineptine (Vd 2.4 L/kg, CL 124.8 L/h, t½ 0.8 h) directly in the evidence. |
+| `Tsaconas_1989.pdf` | Tsaconas C et al., Gas chromatographic-mass spectrometric…, Journal of chromatography (1989) | popPK | 8 | [10.1016/s0378-4347(00)83040-6](https://doi.org/10.1016/s0378-4347(00)83040-6) | [2722999](https://pubmed.ncbi.nlm.nih.gov/2722999) | Human PK study of amineptine and its C5 metabolite with clearance, half-life, and MRT reported, but no numeric parameter values appear in the evidence text. |
 | `Bonnet_1986.pdf` | Bonnet JJ et al., High-affinity [3H]GBR 12783 binding to…, European journal of pharmac… (1986) | pd | 4 | [10.1016/0014-2999(86)90050-6](https://doi.org/10.1016/0014-2999(86)90050-6) | [3489625](https://www.ncbi.nlm.nih.gov/pubmed/3489625) | metadata signals extractable PD data (IC50) |
 | `Ceci_1986.pdf` | Ceci A et al., Effect of long term amineptine treatmen…, British journal of pharmaco… (1986) | pd | 4 | [10.1111/j.1476-5381.1986.tb09495.x](https://doi.org/10.1111/j.1476-5381.1986.tb09495.x) | [3708219](https://www.ncbi.nlm.nih.gov/pubmed/3708219) | metadata signals extractable PD data (IC50) |
 | `Fromenty_1993.pdf` | Fromenty B et al., Evaluation of human blood lymphocytes a…, Biochemical pharmacology (1993) | pd | 4 | [10.1016/0006-2952(93)90518-2](https://doi.org/10.1016/0006-2952(93)90518-2) | [8347165](https://www.ncbi.nlm.nih.gov/pubmed/8347165) | metadata signals extractable PD data (IC50) |
 
-<sub>queue written 2026-09-23T19:16:43.119126+00:00</sub>
+<sub>queue written 2026-10-06T21:38:30.926955+00:00</sub>
 
 ## Screened and excluded
 
@@ -78,9 +78,9 @@ _6 paper(s) judged relevant from the abstract, with no full text on disk — pay
 | PD | Fromenty_1993 | not_relevant | 0 | 0 | The paper studies amiodarone, not amineptine, and focuses on mitochondrial effects in lymphocytes rather than a pharmacodynamic exposure-response relationship for the target drug. |
 | popPK | Haddad_1999 | irrelevant | 0 | 0 | The paper is a review on the addiction potential of antidepressants and does not report any pharmacokinetic parameters for amineptine. |
 | PD | Haddad_1999 | not_relevant | 1 | 0 | The paper is a qualitative review of addiction case reports and general pharmacodynamic profiles, providing no numeric concentration-effect or dose-response parameters for amineptine. |
-| popPK | Hascoët_1998 | irrelevant | 0 | 0 | The study is a behavioral pharmacology experiment in mice assessing anxiety and locomotor activity, not a pharmacokinetic study, and reports no disposition parameters for amineptine. |
+| popPK | Hascoët_1998 | irrelevant | 0 | 0 | Behavioral pharmacology study in mice with no PK parameters for amineptine. |
 | PD | Lachatre_1989 | not_relevant | 0 | 0 | The paper focuses exclusively on the pharmacokinetics of amineptine and its metabolite, with no pharmacodynamic or exposure-response analysis reported. |
-| PGx | Larrey_1989 | not_relevant | 0 | 0 | The paper studies dextromethorphan metabolism in patients with drug-induced hepatitis and concludes that amineptine hepatotoxicity is not related to dextromethorphan oxidation capacity, without reporting specific PK/PD changes for amineptine itself. |
+| PGx | Larrey_1989 | not_relevant | 3 | 2 | Amineptine hepatotoxicity is only mentioned as included among drugs; no PK/PD parameter of amineptine is linked to genotype/phenotype. |
 | popPK | Mohamed_2006 | irrelevant | 0 | 0 | The paper describes a spectrophotometric analytical method for drug quantification and contains no pharmacokinetic parameters. |
 | PD | Mohamed_2006 | not_relevant | 0 | 0 | The paper describes a spectrophotometric analytical method for drug quantification, not a pharmacodynamic or exposure-response study. |
 | popPK | Mohamed_2007 | irrelevant | 0 | 0 | The paper describes a spectrophotometric analytical method for drug quantification and contains no pharmacokinetic data or disposition parameters for amineptine. |
@@ -97,8 +97,8 @@ _6 paper(s) judged relevant from the abstract, with no full text on disk — pay
 | PD | Shoptaw_2009 | not_relevant | 1 | 0 | The text is a systematic review summarizing clinical trial outcomes (discontinuation rates, symptoms) without reporting any pharmacokinetic data, concentration-effect curves, or numeric pharmacodynamic parameters (e.g., Emax, EC50) for amineptine. |
 | popPK | Srisurapanont_2001 | irrelevant | 0 | 0 | The paper is a systematic review of clinical trials for amphetamine withdrawal where amineptine is a treatment agent, and it contains no pharmacokinetic parameters or quantitative disposition data. |
 | PD | Srisurapanont_2001 | not_relevant | 1 | 0 | The paper is a systematic review of clinical trials that reports qualitative clinical outcomes (discontinuation rate, CGI scores) but does not provide any pharmacokinetic data, concentration-effect curves, or numeric PD parameters (e.g., Emax, EC50) for amineptine. |
-| popPK | Tsaconas_1989 | relevant | 9 | 0 | The paper is a relevant pharmacokinetic study of amineptine in humans, but the provided evidence contains only qualitative descriptions of precision and accuracy without any specific numeric parameter values. |
-| popPK | Zangani_2021 | irrelevant | 0 | 0 | The paper is a systematic review of amisulpride efficacy, and amineptine is only mentioned as a comparator drug without any pharmacokinetic data. |
+| popPK | Tsaconas_1989 | relevant | 8 | 2 | Human PK study of amineptine and its C5 metabolite with clearance, half-life, and MRT reported, but no numeric parameter values appear in the evidence text. |
+| popPK | Zangani_2021 | irrelevant | 0 | 0 | This is a meta-analysis of amisulpride efficacy where amineptine is only a comparator; no PK parameters are reported. |
 | PD | Zangani_2021 | not_relevant | 0 | 0 | The paper is a meta-analysis of amisulpride efficacy and only mentions amineptine as a comparator in a qualitative comparison without providing any PK/PD data or numeric parameters for amineptine. |
 
 ---

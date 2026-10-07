@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L04A&quot;,&quot;href&quot;:&quot;atc/L04A.md&quot;},{&quot;label&quot;:&quot;azathioprine&quot;,&quot;href&quot;:&quot;drugs/drug_azathioprine/&quot;},{&quot;label&quot;:&quot;Simon_1997 \u00b7 PD respiratory control ratio (RCR)&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Azathioprine_Lin2021_reference&quot;,&quot;label&quot;:&quot;Lin_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_azathioprine/Azathioprine_Lin2021_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Azathioprine_Lin2021_reference&quot;,&quot;label&quot;:&quot;Lin_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_azathioprine/Azathioprine_Lin2021_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # respiratory control ratio (RCR) — PD  <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by openai:gpt-6-luna (not confirmed, agreement 0.429), gpt-oss:120b (not confirmed, agreement 0.75). The first reading is what the record holds.">cross-check: disputed 0/2</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span>
@@ -16,7 +16,7 @@
 
 ## What this record describes
 
-**As extracted:** Azathioprine (concentrations from the PK model of Rosario_2017) drives respiratory control ratio (RCR): direct Emax (saturable) effect.
+**As extracted:** Azathioprine (concentrations from the PK model of el-Yazigi_1993) drives respiratory control ratio (RCR): direct sigmoid Emax (Hill) effect.
 
 **Model:** No model was generated from this record.
 
@@ -25,10 +25,10 @@
 > <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
 
 - **paper:** `Simon_1997`
-- **model family:** `emax`
+- **model family:** `sigmoid_emax`
 - **driver:** `cited_pk`
 - **tier:** descriptive
-- **effect:** inhibition/unknown
+- **effect:** inhibition/proportional
 
 ## Citation
 Simon N et al., Prednisolone and azathioprine worsen th…, Life sciences (1997)
@@ -37,8 +37,8 @@ Simon N et al., Prednisolone and azathioprine worsen th…, Life sciences (1997)
 ## Parameters
 | role | label (paper) | Q-code · name | value | unit | value_si | link | source |
 |---|---|---|---|---|---|---|---|
-| PD (effect) | Imax | `Q323` · not captured | 10.3 | % | not captured | llm (not captured) | Simon_1997:pdv3 |
-| PD (effect) | IC50 | `Q322` · not captured | 5.8 f 2.5 x 10e9 | M | not captured | llm (not captured) | Simon_1997:pdv3 |
+| PD (effect) | IC50 | `Q322` · not captured | 5.8 x 10e9 | M | not captured | llm (not captured) | Simon_1997:pdv3 |
+| PD (effect) | maximal inhibition | `Q323` · not captured | 10.3 | not captured | not captured | llm (not captured) | Simon_1997:pdv3 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

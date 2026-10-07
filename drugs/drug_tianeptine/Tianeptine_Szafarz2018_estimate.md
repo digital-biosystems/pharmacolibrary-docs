@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N06A&quot;,&quot;href&quot;:&quot;atc/N06A.md&quot;},{&quot;label&quot;:&quot;tianeptine&quot;,&quot;href&quot;:&quot;drugs/drug_tianeptine/&quot;},{&quot;label&quot;:&quot;Szafarz_2018 \u00b7 estimate&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Tianeptine_Szafarz2018_estimate&quot;,&quot;label&quot;:&quot;Szafarz_2018_estimate&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tianeptine/Tianeptine_Szafarz2018_estimate.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Tianeptine_Szafarz2018_intraperitoneal_10_mg_kg&quot;,&quot;label&quot;:&quot;Szafarz_2018_intraperitoneal_10_mg_kg&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tianeptine/Tianeptine_Szafarz2018_intraperitoneal_10_mg_kg.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Tianeptine_Szafarz2018_intravenous_1_mg_kg&quot;,&quot;label&quot;:&quot;Szafarz_2018_intravenous_1_mg_kg&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tianeptine/Tianeptine_Szafarz2018_intravenous_1_mg_kg.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Tianeptine_Szafarz2018_intraperitoneal_10_mg_kg&quot;,&quot;label&quot;:&quot;Szafarz_2018_intraperitoneal_10_mg_kg&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tianeptine/Tianeptine_Szafarz2018_intraperitoneal_10_mg_kg.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Tianeptine_Szafarz2018_intravenous_1_mg_kg&quot;,&quot;label&quot;:&quot;Szafarz_2018_intravenous_1_mg_kg&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tianeptine/Tianeptine_Szafarz2018_intravenous_1_mg_kg.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # tianeptine — `Tianeptine_Szafarz2018_estimate`
 
-> ## <span class="pk-badge pk-badge--red" title="covariates_not_exercised: the record defines covariate effects (weight on clearance, renal function …) but the engineer simulated only the reference individual, so those scenarios were never run. The base model still reproduces the paper; what is missing is the covariate curves.">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.929). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span>
+> ## <span class="pk-badge pk-badge--red" title="covariates_not_exercised: the record defines covariate effects (weight on clearance, renal function …) but the engineer simulated only the reference individual, so those scenarios were never run. The base model still reproduces the paper; what is missing is the covariate curves.">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.929). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -15,7 +15,7 @@
 
 > **Species: rat.** This record comes from an animal study (rat), not from people. The values, the model and its simulation are shown as the paper reports them — they describe that system, not human pharmacology (read from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).
 
-**Model:** A simulatable model was generated — see the **Models** and **Simulation** tabs.
+**Model:** No model was generated from this record.
 
 > **Caveat** (`covariates_not_exercised`): the record defines covariate effects (weight on clearance, renal function …) but the engineer simulated only the reference individual, so those scenarios were never run. The base model still reproduces the paper; what is missing is the covariate curves.
 
@@ -29,17 +29,19 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on `parame
 
 <sub>reviewed by glm-5.3-flash</sub>
 
+> ⚠️ **STALE** — review status `rejected` (reviewed 2026-10-05 09:32:24.779318+00:00) predates the upstream re-run (2026-10-06 23:48:00.841088+00:00). Current validate status: `rejected`.
+
 ## Citation
 Szafarz M et al., Pharmacokinetic study of tianeptine and…, Naunyn-Schmiedeberg's archi… (2018)
   ·  DOI: [10.1007/s00210-017-1448-2](https://doi.org/10.1007/s00210-017-1448-2)
 
 ## Model component
-<dbs-pgx drug="tianeptine" model-id="Tianeptine_Szafarz2018_estimate" status="rejected" stale="false" population="rats" measured-compound="tianeptine" parameterization="mechanistic" topology="parent_metabolite"></dbs-pgx>
+<dbs-pgx drug="tianeptine" model-id="Tianeptine_Szafarz2018_estimate" status="rejected" stale="true" population="rats" measured-compound="tianeptine" parameterization="apparent" topology="parent_metabolite"></dbs-pgx>
 
-**Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
-**Parameters:** 6 extracted, plus 1 covariate effect.
+**Model structure:** parent + metabolite; no model was built for this record.  
+**Parameters:** 5 extracted, plus 1 covariate effect.
 
-**Parameterization:** mechanistic.
+**Parameterization:** V1/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
 ## Parameters
 > ⚠️ This record is not accepted (current status `rejected`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
@@ -47,12 +49,11 @@ Szafarz M et al., Pharmacokinetic study of tianeptine and…, Naunyn-Schmiedeber
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
 | V C (L/kg) | `Q63` · V1 | 0.761 | L/kg | 0.053270000000000005 | [l] / [kg] | not captured | space_fold (0.95) | Szafarz_2018_table_4:row0:col1 | — | not captured |
-| V m/f m (L/kg) | `Q352` · Vnorm | 2.971 | L/kg | 0.20797000000000002 | [l] / [kg] | not captured | llm (0.6) | Szafarz_2018_table_4:row1:col1 | — | not captured |
-| k e (h−1) | `Q47` · kel | 2.792 | h−1 | 0.0007755555555555555 | [1] / [h] | not captured | space_fold (0.95) | Szafarz_2018_table_4:row2:col1 | — | not captured |
-| k 12 (h−1) | `Q301` · k12 | 0.504 | h−1 | 0.00014 | [1] / [h] | not captured | space_fold (0.95) | Szafarz_2018_table_4:row4:col1 | — | not captured |
-| k 21 (h−1) | `Q302` · k21 | 0.628 | h−1 | 0.00017444444444444444 | [1] / [h] | not captured | space_fold (0.95) | Szafarz_2018_table_4:row5:col1 | — | not captured |
+| V m/f m (L/kg) | `Q290` · V1/F | 2.971 | L/kg | 0.20797000000000002 | [l] / [kg] | not captured | exact (1.0) | Szafarz_2018_table_4:row1:col1 | — | not captured |
+| k e (h−1) | `Q47` · kel | 2.792 | h−1 | 0.0007755555555555555 | [1] / [h] | not captured | exact (1.0) | Szafarz_2018_table_4:row2:col1 | — | not captured |
+| k 12 (h−1) | `Q30` · Q | 0.504 | h−1 | not captured | [1] / [h] | not captured | exact (1.0) | Szafarz_2018_table_4:row4:col1 | — | not captured |
 | F | `Q40` · Fab | 0.694 | not captured | not captured | not captured | not captured | exact (1.0) | Szafarz_2018_table_4:row6:col1 | — | not captured |
-| theta_kel_em | `Q900` · theta_kel_em | 0.416 | not captured | not captured | not captured | not captured | not captured (not captured) | Szafarz_2018_table_4:row3:col1 | — | not captured |
+| theta_q47_em | `Q900` · theta_q47_em | 0.416 | not captured | not captured | not captured | not captured | not captured (not captured) | Szafarz_2018_table_4:row3:col1 | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -62,10 +63,21 @@ Szafarz M et al., Pharmacokinetic study of tianeptine and…, Naunyn-Schmiedeber
 ## Departures & gaps
 
 **Interpretation flags:**
-- apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=tianeptine
+- unit_dimension_mismatch: 'k 12 (h−1)' → Q30 (unit '1 / [time]' vs ontology '[length] ** 3 / [time]') — route to review
+- unit_dimension_mismatch: 'k 21 (h−1)' → Q30 (unit '1 / [time]' vs ontology '[length] ** 3 / [time]') — route to review
+- dropped duplicate Q30 ('k 21 (h−1)', value '0.628') — already have one for this compound
+- dropped value-less row: 'Table 3. Serum pharmacokinetic parameters calculated from concentration vs. time data (n = 3) of tianeptine and MC5 metabolite determined by non-compartmental analysis after a single intravenous or intraperitoneal administration of tianeptine to rats at a dose of 1 or 10 mg/kg, respectively. Data are presented as geometric mean (GM), 90% confidence interval (CI), and coefficient of variation (CV)' (captured trailing unit 'CV' for child rows)
+- covariate effect for Q47 has no base parameter row (kept as unattached equation-variable)
+- apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=tianeptine
+- held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
+- template fit: PK_3M_9C — formed from central; parent 1, metabolites [1]
+- status held at route_to_review — not promoted
 - population split: 'estimate' subgroup of Szafarz_2018 (paper reports 3 populations: estimate, intraperitoneal 10 mg/kg, intravenous 1 mg/kg)
-- engineer: parent_metabolite composite downgraded to a 1C model of the measured compound — the paper reports the metabolite's own CL and V but neither the parent's disposition nor a formation rate, so the parent sub-component could not be populated; the parent's concentration-time course is NOT produced by this model
-- derived CL=148.73 L/h from Ke × V = CL (Q47 × Q63); not separately reported
+- row roles (LLM): model_class=compartmental; 18/18 row label(s) assigned, 12 linked by role; re-tagged parent→MC5 ×4
+- molar mass: none of 1 PubChem candidate(s) is 'MC5' (LLM) — left in mass units
+- molar mass: none found for 'MC5' — its concentrations stay mass-only
+- skipped review gap-fill of CL: primary's parameterization (rate-constant / ka-only) does not use it
+- skipped review gap-fill of V2: primary is PARENT_METABOLITE (peripheral family needs ≥2C)
 
 **Extraction notes:**
 - unparsed cell Tab3:row3:col1 = '1.27(0.86–1.9)'
@@ -124,16 +136,16 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 6 | not captured | not captured | not captured |
+| C0_has_structural_params | pass | not captured | 5 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
-| C2_reference | pass | not captured | not captured | not captured | not captured | not captured |
-| C5_dimension_Q301 | pass | 1 / [time] | not captured | not captured | not captured | ['Szafarz_2018_table_4:row4:col1'] |
-| C5_dimension_Q302 | pass | 1 / [time] | not captured | not captured | not captured | ['Szafarz_2018_table_4:row5:col1'] |
-| C5_dimension_Q352 | pass | [length] ** 3 | not captured | not captured | not captured | ['Szafarz_2018_table_4:row1:col1'] |
+| C5_dimension_Q290 | pass | [length] ** 3 | not captured | not captured | not captured | ['Szafarz_2018_table_4:row1:col1'] |
+| C5_dimension_Q30 | fail | 1 / [time] | h−1 | not captured | not captured | ['Szafarz_2018_table_4:row4:col1'] |
 | C5_dimension_Q47 | pass | 1 / [time] | not captured | not captured | not captured | ['Szafarz_2018_table_4:row2:col1'] |
 | C5_dimension_Q63 | pass | [length] ** 3 | not captured | not captured | not captured | ['Szafarz_2018_table_4:row0:col1'] |
+| C7_apparent_coherence | fail | F==1, Fm==1, no molar corr. | absolute F=0.694 with apparent parameterization | not captured | not captured | not captured |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
+| C9_phys_window_Q290 | pass | volume within physiological range | 208 L | not captured | not captured | ['Szafarz_2018_table_4:row1:col1'] |
 | C9_phys_window_Q63 | pass | volume within physiological range | 53.3 L | not captured | not captured | ['Szafarz_2018_table_4:row0:col1'] |
 
 **Reviewer per-scenario checks:**
@@ -171,13 +183,9 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-**Administration: intravenous** — 70 mg infusion over 10 min, single dose. Doses in the paper: 70, 700 mg.
-
-<dbs-fmusim paramsurl="drugs/drug_tianeptine/Tianeptine_Szafarz2018_estimate/Tianeptine_Szafarz2018_estimate_params.json" metaurl="assets/fmu/PK_1C.vr.json" wasmurl="assets/fmu/PK_1C.js" controlsurl="drugs/drug_tianeptine/Tianeptine_Szafarz2018_estimate/Tianeptine_Szafarz2018_estimate_sim_controls.json"></dbs-fmusim>
-
-<sub>Runs this record's model in the browser as WebAssembly. Sliders start at the extracted values; the reference check compares the browser's peak against the FMPy result recorded when the record was built, and is withheld once a value has been edited. Template `PK_1C` · parameters `Tianeptine_Szafarz2018_estimate_params.json` · controls `Tianeptine_Szafarz2018_estimate_sim_controls.json`. A slider marked *simulator value* is running on the template's own default because this record does not pin that parameter.</sub>
+_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-09-24 04:53 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-06 23:48 UTC</sub>

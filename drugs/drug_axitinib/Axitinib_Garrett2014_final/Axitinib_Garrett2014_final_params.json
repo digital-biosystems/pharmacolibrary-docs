@@ -1,0 +1,39 @@
+{
+ "dose_source": "paper",
+ "model_id": "Axitinib_Garrett2014_final",
+ "molar_masses": {
+  "central.C": 0.38647000000000004
+ },
+ "note": "Values for the shared PK_2C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "paper_doses_kind": "discrete",
+ "paper_doses_mg": [
+  1.0,
+  5.0
+ ],
+ "parameters": {
+  "Cl": 2.2777777777777776e-06,
+  "F": 7.8,
+  "MM": 0.38647000000000004,
+  "Tlag": 1152.0,
+  "VdPerKg": 0.00010857142857142858,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 1e-06,
+  "k12": 0.00029970760233918127,
+  "k21": 0.00011388888888888888,
+  "ka": 0.0009108796296296296,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 5540.6813627254505
+ },
+ "reference_peaks": {
+  "central.C": 4.2113198891981655e-05
+ },
+ "stop_time": 86400.0,
+ "template": "PK_2C_enteral",
+ "template_fmu": "PK_2C_enteral.fmu"
+}

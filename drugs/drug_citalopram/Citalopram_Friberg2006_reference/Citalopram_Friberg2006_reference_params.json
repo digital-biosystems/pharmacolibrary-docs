@@ -10,7 +10,7 @@
  ],
  "paper_doses_kind": "range",
  "paper_doses_mg": [
-  80.0,
+  20.0,
   1700.0
  ],
  "parameters": {
@@ -21,7 +21,7 @@
   "VdPerKg": 0.018285714285714287,
   "adminCount": 1.0,
   "adminDuration": 600.0,
-  "adminMass": 8e-05,
+  "adminMass": 2e-05,
   "ka": 0.0004111111111111111,
   "weight": 70.0
  },
@@ -29,7 +29,7 @@
   "central.C": 10908.21643286573
  },
  "reference_peaks": {
-  "central.C": 5.928907688422724e-05
+  "central.C": 1.4821844234016018e-05
  },
  "stop_time": 777600.0,
  "template": "PK_1C_enteral",

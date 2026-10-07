@@ -14,17 +14,32 @@ Mirtazapine is an antidepressant used for depression, and has also been used for
 
 <small>Summary written by `glm-5.3-flash` from [Wikidata Q421930](https://www.wikidata.org/wiki/Q421930) and the WHO ATC classification; not checked by a person.</small>
 
+## Molecules and molar masses
+
+> The molar mass each model uses to convert mass to molar concentration and to form a metabolite molecule for molecule. Looked up, never estimated: DrugBank for the drug, the paper's own value or the PubChem entry matched to the paper's name for a metabolite.
+
+| molecule | role | molar mass (g/mol) | formula | source | PubChem | records |
+|---|---|---|---|---|---|---|
+| mirtazapine | parent | 265.353 | C17H19N3 | DrugBank | [4205](https://pubchem.ncbi.nlm.nih.gov/compound/4205) | Yan_2026 |
+
 ## Extraction summary
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-24 00:52 | 2:55 | 0/1/0 | 0/0/0 | 0/0/0 | 38,960/6,548 | ollama / qwen3.8:27b-mtp-q8_0 | 11 | 2/1 | 3/0 | 0 |
+| 2026-10-06 23:42 | 1:32 | 0/1/0 | 2/0/0 | 0/0/0 | 86,320/5,966 | ollama / glm-5.3-flash | 11 | 2/1 | 3/0 | 0 |
 
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.556). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: C2 negative clearance/volume in a covariate scenario or base (implausible — bas…</sub><br><sub>blocking: C9 clearance/volume outside physiological window (implausible magnitude — unit/…</sub><br><sub>route_to: `human_review`</sub> | [Yan_2026_reference](drugs/drug_mirtazapine/Mirtazapine_Yan2026_reference.md) | — | 1-compartment (no model) | 3 | Yan H et al., Optimizing Mirtazapine Initial Dosing:…, Drug design, development an… (2026) | [10.2147/DDDT.S601238](https://doi.org/10.2147/DDDT.S601238) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.556). The first reading is what the record holds.">cross-check: disputed</span><br><sub>STALE — current validate: rejected</sub><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>blocking: C2 negative clearance/volume in a covariate scenario or base (implausible — bas…</sub><br><sub>route_to: `human_review`</sub> | [Yan_2026_reference](drugs/drug_mirtazapine/Mirtazapine_Yan2026_reference.md) | — | 1-compartment (no model) | 4 | Yan H et al., Optimizing Mirtazapine Initial Dosing:…, Drug design, development an… (2026) | [10.2147/DDDT.S601238](https://doi.org/10.2147/DDDT.S601238) |
+
+## Pharmacodynamics (PD)
+
+| status | detail | about | model | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Park_2023_5_HT3_current](drugs/drug_mirtazapine/pd_Park_2023_5_HT3_current.md) | 5-HT3 receptor current inhibition ← mirtazapine · direct sigmoid Emax (Hill) effect | — | Park YS et al., Atypical antidepressant mirtazapine inh…, Journal of pharmacological… (2023) | [10.1016/j.jphs.2022.12.002](https://doi.org/10.1016/j.jphs.2022.12.002) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span> | [Pawlyk_2006_5_HT2A](drugs/drug_mirtazapine/pd_Pawlyk_2006_5_HT2A.md) | functional antagonism at cloned human 5-HT2A receptor ← mirtazapine · direct Emax (saturable) effect | — | Pawlyk AC et al., Effects of the 5-HT2A antagonist mirtaz…, Brain research (2006) | [10.1016/j.brainres.2006.09.050](https://doi.org/10.1016/j.brainres.2006.09.050) |
 
 ## ADME sites
 
@@ -54,7 +69,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 - **PubMed hits:** 18 matched, 12 returned
 - **screened:** 1  ·  **relevant:** 1
-- **records:** 1  ·  extracted 0  ·  needs_review 0  ·  rejected 1  ·  stale 0
+- **records:** 1  ·  extracted 0  ·  needs_review 0  ·  rejected 1  ·  stale 1
 - **scholar-agent fallback query used:** not captured
 
 ## Full text wanted
@@ -63,25 +78,25 @@ _1 paper(s) judged relevant from the abstract, with no full text on disk — pay
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Grasmäder_2004.pdf` | Grasmäder K et al., Population pharmacokinetic analysis of…, European journal of clinica… (2004) | popPK | 10 | [10.1007/s00228-004-0737-0](https://doi.org/10.1007/s00228-004-0737-0) | [15289959](https://pubmed.ncbi.nlm.nih.gov/15289959) | The paper is a population PK study of mirtazapine, but the specific numeric parameter values (clearance, volume, etc.) are not present in the provided evidence, only a relative change in clearance is mentioned. |
+| `Grasmäder_2004.pdf` | Grasmäder K et al., Population pharmacokinetic analysis of…, European journal of clinica… (2004) | popPK | 10 | [10.1007/s00228-004-0737-0](https://doi.org/10.1007/s00228-004-0737-0) | [15289959](https://pubmed.ncbi.nlm.nih.gov/15289959) | Population PK (nonmem) of mirtazapine in 65 patients, but only a relative 26% clearance effect is given; full parameter values not in evidence. |
 
-<sub>queue written 2026-09-24T00:49:37.099137+00:00</sub>
+<sub>queue written 2026-10-06T23:41:00.524190+00:00</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Blumenthal_2014 | irrelevant | 0 | 0 | The study is an electronic health records analysis of weight gain associated with antidepressants and does not report any pharmacokinetic parameters for mirtazapine. |
-| popPK | Cardon-Dunbar_2017 | irrelevant | 0 | 0 | The study focuses on pramipexole pharmacokinetics in an overdose case, with mirtazapine only mentioned as a co-ingested substance without any PK parameters reported for it. |
-| popPK | Furukawa_2018 | irrelevant | 0 | 0 | This is an efficacy meta-analysis and not a pharmacokinetic study; no mirtazapine PK parameters are reported. |
-| popPK | Grasmäder_2004 | relevant | 10 | 0 | The paper is a population PK study of mirtazapine, but the specific numeric parameter values (clearance, volume, etc.) are not present in the provided evidence, only a relative change in clearance is mentioned. |
-| popPK | Munk_2011 | irrelevant | 4 | 2 | This is a PET brain imaging study of radiolabeled mirtazapine binding, not a disposition/PK parameter paper, and the actual numeric values are not shown in the included evidence (likely in tables/supplement). |
-| popPK | Nowakowska_1999 | irrelevant | 0 | 0 | The paper is a behavioral pharmacology study in rats and does not report any pharmacokinetic parameters for mirtazapine. |
-| popPK | Park_2023 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of receptor interaction, not a pharmacokinetic study, and contains no disposition parameters. |
-| popPK | Pawlyk_2006 | irrelevant | 0 | 0 | The study focuses on the pharmacodynamic effects of mirtazapine on thermoregulation in rats and does not report any pharmacokinetic parameters. |
-| popPK | Puzhko_2021 | irrelevant | 0 | 0 | The paper is a prescribing pattern study and does not report any pharmacokinetic parameters for mirtazapine. |
-| popPK | Schneier_2015 | irrelevant | 0 | 0 | The paper is a clinical efficacy trial for PTSD treatment and does not report any pharmacokinetic parameters for mirtazapine. |
-| popPK | Ueno_2015 | irrelevant | 0 | 0 | The paper is a clinical efficacy study comparing dosing strategies for depression and does not report any pharmacokinetic parameters for mirtazapine. |
+| popPK | Blumenthal_2014 | irrelevant | 0 | 0 | This is an EHR weight-gain outcomes study with no pharmacokinetic parameters for mirtazapine. |
+| popPK | Cardon-Dunbar_2017 | irrelevant | 0 | 0 | PK parameters are for pramipexole; mirtazapine is only a co-ingestant with no quantitative PK data. |
+| popPK | Furukawa_2018 | irrelevant | 0 | 0 | This is an efficacy meta-analysis of antidepressant trials; no pharmacokinetic parameters for mirtazapine are reported. |
+| popPK | Grasmäder_2004 | relevant | 10 | 3 | Population PK (nonmem) of mirtazapine in 65 patients, but only a relative 26% clearance effect is given; full parameter values not in evidence. |
+| popPK | Munk_2011 | irrelevant | 3 | 2 | PET receptor-binding study of radiolabeled mirtazapine reporting distribution volumes/binding potentials in tables, not systemic disposition PK parameters (CL, V, ka); numeric values referenced in tables not fully present in evidence. |
+| popPK | Nowakowska_1999 | irrelevant | 0 | 0 | Behavioral/pharmacodynamic study in rats with no PK parameters reported. |
+| popPK | Park_2023 | irrelevant | 0 | 0 | In-vitro electrophysiology study of receptor currents, no pharmacokinetic parameters for mirtazapine. |
+| popPK | Pawlyk_2006 | irrelevant | 0 | 0 | Pharmacodynamic study of mirtazapine's thermoregulatory effects in rats; no PK disposition parameters reported. |
+| popPK | Puzhko_2021 | irrelevant | 0 | 0 | This is a prescribing-pattern study with no pharmacokinetic parameters for mirtazapine; only prescribing odds ratios appear. |
+| popPK | Schneier_2015 | irrelevant | 0 | 0 | Clinical efficacy trial of mirtazapine in PTSD with no pharmacokinetic parameters reported. |
+| popPK | Ueno_2015 | irrelevant | 0 | 0 | Clinical dose-response trial with no pharmacokinetic parameters reported. |
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-07-15 13:36 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-10-06 23:41 UTC</sub>

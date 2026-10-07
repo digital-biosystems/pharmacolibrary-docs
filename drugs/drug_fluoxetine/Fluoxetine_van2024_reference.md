@@ -1,10 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N06A&quot;,&quot;href&quot;:&quot;atc/N06A.md&quot;},{&quot;label&quot;:&quot;fluoxetine&quot;,&quot;href&quot;:&quot;drugs/drug_fluoxetine/&quot;},{&quot;label&quot;:&quot;van_2024 \u00b7 reference&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Fluoxetine_Burlot2026_reference&quot;,&quot;label&quot;:&quot;Burlot_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_fluoxetine/Fluoxetine_Burlot2026_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # fluoxetine — `Fluoxetine_van2024_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span> <span class="pk-badge pk-badge--species" title="Data from bacteria, fungi or plants, not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">other organism</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span> <span class="pk-badge pk-badge--species" title="Data from bacteria, fungi or plants, not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">other organism</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -26,12 +27,14 @@ Independently confirmed by `gpt-oss:120b`.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
+> ⚠️ **STALE** — review status `rejected` (reviewed 2026-10-05 09:26:53.223792+00:00) predates the upstream re-run (2026-10-06 23:01:32.676458+00:00). Current validate status: `rejected`.
+
 ## Citation
 van der Most MA et al., Toxicokinetics of the Antidepressant Fl…, Environmental science & tec… (2024)
   ·  DOI: [10.1021/acs.est.3c07744](https://doi.org/10.1021/acs.est.3c07744)
 
 ## Model component
-<dbs-pgx drug="fluoxetine" model-id="Fluoxetine_van2024_reference" status="rejected" stale="false" population="Caenorhabditis elegans" measured-compound="fluoxetine" parameterization="mechanistic" topology="parent_metabolite"></dbs-pgx>
+<dbs-pgx drug="fluoxetine" model-id="Fluoxetine_van2024_reference" status="rejected" stale="true" population="Caenorhabditis elegans nematodes" measured-compound="fluoxetine" parameterization="mechanistic" topology="parent_metabolite"></dbs-pgx>
 
 **Model structure:** parent + metabolite; no model was built for this record.  
 **Parameters:** 0 extracted.
@@ -46,16 +49,29 @@ _No resolved parameters._
 ## Departures & gaps
 
 **Interpretation flags:**
-- dropped value-less row: 'k 2d fast (1/h)'
+- column 'others' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
+- dropped unlinked row (NIL): 'II' — extend the ontology if this is a real PK parameter (source ['tbl3:row1:col2', 'tbl3:row1:col3', 'tbl3:row1:col5', 'tbl3:row1:col6', 'tbl3:row1:col7', 'tbl3:row1:col8', 'tbl3:row1:col9', 'tbl3:row1:col15', 'tbl3:row1:col16', 'tbl3:row2:col2', 'tbl3:row2:col3', 'tbl3:row2:col5', 'tbl3:row2:col6', 'tbl3:row2:col7', 'tbl3:row2:col8', 'tbl3:row2:col9', 'tbl3:row2:col15', 'tbl3:row2:col16', 'tbl3:row3:col2', 'tbl3:row3:col3', 'tbl3:row3:col5', 'tbl3:row3:col6', 'tbl3:row3:col7', 'tbl3:row3:col8', 'tbl3:row3:col9', 'tbl3:row3:col15', 'tbl3:row3:col16', 'tbl3:row4:col2', 'tbl3:row4:col3', 'tbl3:row4:col5', 'tbl3:row4:col6', 'tbl3:row4:col7', 'tbl3:row4:col8', 'tbl3:row4:col9', 'tbl3:row4:col15', 'tbl3:row4:col16', 'tbl3:row5:col2', 'tbl3:row5:col3', 'tbl3:row5:col5', 'tbl3:row5:col6', 'tbl3:row5:col7', 'tbl3:row5:col8', 'tbl3:row5:col9', 'tbl3:row5:col15', 'tbl3:row5:col16', 'tbl3:row6:col2', 'tbl3:row6:col3', 'tbl3:row6:col5', 'tbl3:row6:col6', 'tbl3:row6:col7', 'tbl3:row6:col8', 'tbl3:row6:col9', 'tbl3:row6:col15', 'tbl3:row6:col16'])
+- dropped unlinked row (NIL): 'III' — extend the ontology if this is a real PK parameter (source ['tbl3:row7:col2', 'tbl3:row7:col3', 'tbl3:row7:col5', 'tbl3:row7:col6', 'tbl3:row7:col7', 'tbl3:row7:col8', 'tbl3:row7:col9', 'tbl3:row7:col10', 'tbl3:row7:col11', 'tbl3:row7:col15', 'tbl3:row7:col16', 'tbl3:row7:col17', 'tbl3:row8:col2', 'tbl3:row8:col3', 'tbl3:row8:col5', 'tbl3:row8:col6', 'tbl3:row8:col7', 'tbl3:row8:col8', 'tbl3:row8:col9', 'tbl3:row8:col10', 'tbl3:row8:col11', 'tbl3:row8:col12', 'tbl3:row8:col15', 'tbl3:row8:col16', 'tbl3:row8:col17', 'tbl3:row9:col2', 'tbl3:row9:col3', 'tbl3:row9:col5', 'tbl3:row9:col7', 'tbl3:row9:col8', 'tbl3:row9:col9', 'tbl3:row9:col10', 'tbl3:row9:col11', 'tbl3:row9:col13', 'tbl3:row9:col14', 'tbl3:row9:col15', 'tbl3:row9:col16', 'tbl3:row9:col17'])
+- dropped unlinked row (NIL): 'IV' — extend the ontology if this is a real PK parameter (source ['tbl3:row10:col2', 'tbl3:row10:col3', 'tbl3:row10:col5', 'tbl3:row10:col6', 'tbl3:row10:col7', 'tbl3:row10:col8', 'tbl3:row10:col9', 'tbl3:row10:col13', 'tbl3:row10:col15', 'tbl3:row10:col16', 'tbl3:row11:col2', 'tbl3:row11:col3', 'tbl3:row11:col5', 'tbl3:row11:col6', 'tbl3:row11:col7', 'tbl3:row11:col8', 'tbl3:row11:col9', 'tbl3:row11:col10', 'tbl3:row11:col11', 'tbl3:row11:col12', 'tbl3:row11:col13', 'tbl3:row11:col14', 'tbl3:row11:col15', 'tbl3:row11:col16', 'tbl3:row11:col17'])
+- dropped value-less row: 'k2fast (1/h)' (captured trailing unit '1/h' for child rows)
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=fluoxetine
-- skipped review gap-fill of V2: primary is PARENT_METABOLITE (peripheral family needs ≥2C)
-- skipped review gap-fill of Q: primary is PARENT_METABOLITE (peripheral family needs ≥2C)
+- topology: transfer parameter unlinked (Q100) — add Kfm/formation-rate/rate-constant to the ontology; routing to review
+- template fit: none — only the metabolite is modelled — no parent compartment
+- status held at route_to_review — not promoted
+- row roles (LLM): model_class=compartmental; 4/4 row label(s) assigned, 2 linked by role; re-tagged fluoxetine→parent ×2
+- review gap-fill skipped: this record carries no value of its own, and a model assembled entirely from other papers is not this paper's model
 
 **Extraction notes:**
-- unparsed cell tab_1:row1:col1 = '1.42 (1.11-1.89)'
-- unparsed cell tab_1:row1:col2 = '1.35 (1.18-1.53)'
-- unparsed cell tab_1:row2:col1 = '0.47 (0.156-2.16)'
-- unparsed cell tab_1:row2:col2 = '0.085 (0.046-0.152)'
+- unparsed cell tbl3:row2:col4 = 'k2FLX'
+- unparsed cell tbl3:row4:col4 = 'k2FLX'
+- unparsed cell tbl3:row6:col4 = 'k2FLX'
+- unparsed cell tbl3:row7:col12 = '&lt;0.001–0.038'
+- unparsed cell tbl3:row9:col4 = 'k1, k2FLX, k2NF, kt'
+- unparsed cell tbl3:row9:col6 = '&lt;0.001–24.2'
+- unparsed cell tbl3:row9:col12 = '&lt;0.03–0.081'
+- unparsed cell tbl3:row10:col14 = '&lt;0.001–0.60'
+- companion parameter table 3 transcribed (2 record(s))
+- LLM selected parameter table(s) 2, 3
 
 ## Validation
 
@@ -105,4 +121,4 @@ _No web simulator for this record: its structure has no shared WebAssembly templ
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-07-15 12:05 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-06 23:01 UTC</sub>

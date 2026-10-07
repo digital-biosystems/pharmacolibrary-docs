@@ -1,0 +1,53 @@
+{
+ "dose_source": "paper",
+ "model_id": "Acalabrutinib_Edlund2022_reference",
+ "molar_masses": {
+  "C_M1": 0.481516,
+  "central.C": 0.465517
+ },
+ "note": "Values for the shared PK_3M_9C.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observable_labels": {
+  "C_M1": "ACP-5862",
+  "C_central": "acalabrutinib"
+ },
+ "observables": [
+  "central.C",
+  "C_M1"
+ ],
+ "paper_doses_kind": "discrete",
+ "paper_doses_mg": [
+  100.0
+ ],
+ "parameters": {
+  "CL1": 0.0,
+  "CLm1": 6.055555555555555e-06,
+  "F": 1.0,
+  "MW": 0.465517,
+  "MW_m1": 0.481516,
+  "Tlag": 0.0,
+  "Vd1": 0.031,
+  "Vd1m1": 0.0227,
+  "Vd2": 0.11,
+  "Vd2m1": 0.0892,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 0.0001,
+  "ka": 0.0004111111111111111,
+  "q12": 5.805555555555555e-06,
+  "q1_m11": 3.722222222222222e-05,
+  "q21": 5.805555555555555e-06,
+  "qm11_m12": 7.416666666666667e-06,
+  "qm12_m11": 7.416666666666667e-06
+ },
+ "reference_peak_times": {
+  "C_M1": 3450.4075709294443,
+  "central.C": 1641.291911787011
+ },
+ "reference_peaks": {
+  "C_M1": 0.00115103511737596,
+  "central.C": 0.0005694587851472592
+ },
+ "stop_time": 86400.0,
+ "template": "PK_3M_9C",
+ "template_fmu": "PK_3M_9C.fmu"
+}

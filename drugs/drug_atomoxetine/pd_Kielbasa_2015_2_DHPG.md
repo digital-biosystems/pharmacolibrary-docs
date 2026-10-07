@@ -1,7 +1,8 @@
-<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N06B&quot;,&quot;href&quot;:&quot;atc/N06B.md&quot;},{&quot;label&quot;:&quot;atomoxetine&quot;,&quot;href&quot;:&quot;drugs/drug_atomoxetine/&quot;},{&quot;label&quot;:&quot;Kielbasa_2015_2 \u00b7 PD 3,4-Dihydroxyphenylglycol&quot;}]"></div>
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N06B&quot;,&quot;href&quot;:&quot;atc/N06B.md&quot;},{&quot;label&quot;:&quot;atomoxetine&quot;,&quot;href&quot;:&quot;drugs/drug_atomoxetine/&quot;},{&quot;label&quot;:&quot;Kielbasa_2015_2 \u00b7 PD Plasma DHPG&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Atomoxetine_Li2012_reference&quot;,&quot;label&quot;:&quot;Li_2012_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_atomoxetine/Atomoxetine_Li2012_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Atomoxetine_Tobin2026_reference&quot;,&quot;label&quot;:&quot;Tobin_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_atomoxetine/Atomoxetine_Tobin2026_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pgx_Tobin_2026_CYP2D6_Q27&quot;,&quot;label&quot;:&quot;Tobin_2026 \u00b7 CYP2D6&quot;,&quot;group&quot;:&quot;PGx&quot;,&quot;href&quot;:&quot;drugs/drug_atomoxetine/pgx_Tobin_2026_CYP2D6_Q27.md&quot;,&quot;status&quot;:&quot;quantitative&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# 3,4-Dihydroxyphenylglycol — PD  <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.0). The first reading is what the record holds.">cross-check: disputed</span>
+# Plasma DHPG — PD  <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.0). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="pk-legend"><summary>What the PGx badges mean — evidence, and whether a model runs</summary><table><tbody><tr><td><span class="pk-badge pk-badge--green">quantitative</span></td><td>the paper gives the effect of each phenotype (or genotype) on a named model parameter — a θ per category.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">qualitative</span></td><td>the paper links the gene to the drug but states no effect size on a model parameter, so it changes no model.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">guideline estimate</span></td><td>the effect comes from a CPIC / DPWG dosing guideline, not from this paper's numbers.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">safety allele</span></td><td>a risk allele for an adverse reaction (an HLA type, G6PD deficiency …): it changes no PK/PD parameter.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>the extraction is incomplete or inconsistent.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted.</td></tr><tr><td><span class="pk-badge pk-badge--green">▶ simulatable</span></td><td>the paper's popPK model runs per phenotype in the browser (Simulation tab); its PGx Modelica model is under Models.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">model only</span></td><td>a PGx Modelica model exists but has no in-browser simulator.</td></tr></tbody></table></details>
 
@@ -13,7 +14,7 @@
 
 ## What this record describes
 
-**As extracted:** Atomoxetine, duloxetine, edivoxetine drive 3,4-Dihydroxyphenylglycol (in ng/mL): indirect response — drug inhibits the production of 3,4-Dihydroxyphenylglycol.
+**As extracted:** Atomoxetine (concentrations from the PK model of Cheng_2024) drives Plasma DHPG (in pg/mL): indirect response — drug inhibits the production of Plasma DHPG.
 
 **Model:** No model was generated from this record.
 
@@ -23,8 +24,9 @@
 
 - **paper:** `Kielbasa_2015_2`
 - **model family:** `indirect_response_i`
-- **driver:** `not_resolved`
-- **effect:** inhibition/unknown
+- **driver:** `cited_pk`
+- **tier:** population
+- **effect:** inhibition/proportional
 
 ## Citation
 Kielbasa W et al., Pharmacodynamics of norepinephrine reup…, Journal of clinical pharmac… (2015)
@@ -33,81 +35,13 @@ Kielbasa W et al., Pharmacodynamics of norepinephrine reup…, Journal of clinic
 ## Parameters
 | role | label (paper) | Q-code · name | value | unit | value_si | link | source |
 |---|---|---|---|---|---|---|---|
-| PK (driver) | k a (h À1 ) — DLX Estimate (%SEE) DLX 95%CI EDX Estimate (%SEE) | `Q95` · not captured | 1.55 | h À1 | not captured | llm (not captured) | tab_1:row5:col3 |
-| PK (driver) | k a (h À1 ) | `Q95` · not captured | 1.30 | h À1 | not captured | llm (not captured) | tab_1:row5:col5 |
-| PK (driver) | k a (h À1 ) | `Q95` · not captured | 1.13 | h À1 | not captured | llm (not captured) | tab_1:row5:col6 |
-| PK (driver) | CL/F (L/h) — ATX Estimate (%SEE) | `Q27` · not captured | 17.7 | L/h | not captured | exact (not captured) | tab_1:row6:col1 |
-| PK (driver) | CL/F (L/h) — ATX 95%CI | `Q27` · not captured | 12.8 | L/h | not captured | exact (not captured) | tab_1:row6:col2 |
-| PK (driver) | CL/F (L/h) — DLX Estimate (%SEE) DLX 95%CI EDX Estimate (%SEE) | `Q27` · not captured | 53.4 | L/h | not captured | exact (not captured) | tab_1:row6:col3 |
-| PK (driver) | CL/F (L/h) | `Q27` · not captured | 44.6 | L/h | not captured | exact (not captured) | tab_1:row6:col5 |
-| PK (driver) | CL/F (L/h) | `Q27` · not captured | 40.9 | L/h | not captured | exact (not captured) | tab_1:row6:col6 |
-| PK (driver) | V/F (L) — ATX Estimate (%SEE) | `Q76` · not captured | 95.5 | L | not captured | exact (not captured) | tab_1:row7:col1 |
-| PK (driver) | V/F (L) — ATX 95%CI | `Q76` · not captured | 76.5 | L | not captured | exact (not captured) | tab_1:row7:col2 |
-| PK (driver) | V/F (L) — DLX Estimate (%SEE) DLX 95%CI EDX Estimate (%SEE) | `Q76` · not captured | 954 | L | not captured | exact (not captured) | tab_1:row7:col3 |
-| PK (driver) | V/F (L) | `Q76` · not captured | 542 | L | not captured | exact (not captured) | tab_1:row7:col5 |
-| PK (driver) | V/F (L) | `Q76` · not captured | 504 | L | not captured | exact (not captured) | tab_1:row7:col6 |
-| PK (driver) | ka IPV (%) — DLX Estimate (%SEE) DLX 95%CI EDX Estimate (%SEE) | `Q49` · not captured | 47 | %SEE | not captured | boundary (not captured) | tab_1:row8:col3 |
-| PK (driver) | ka IPV (%) | `Q49` · not captured | 74 | not captured | not captured | boundary (not captured) | tab_1:row8:col5 |
-| PK (driver) | CL IPV (%) — ATX Estimate (%SEE) | `Q22` · not captured | 75 | %SEE | not captured | boundary (not captured) | tab_1:row9:col1 |
-| PK (driver) | CL IPV (%) — DLX Estimate (%SEE) DLX 95%CI EDX Estimate (%SEE) | `Q22` · not captured | 67 | %SEE | not captured | boundary (not captured) | tab_1:row9:col3 |
-| PK (driver) | CL IPV (%) | `Q22` · not captured | 37 | not captured | not captured | boundary (not captured) | tab_1:row9:col5 |
-| variability | Residual error, additive (ng/mL) — ATX Estimate (%SEE) | `Q317` · not captured | 1.23 | ng/mL | not captured | llm (not captured) | tab_1:row12:col1 |
-| variability | Residual error, additive (ng/mL) — DLX Estimate (%SEE) DLX 95%CI EDX Estimate (%SEE) | `Q317` · not captured | 3.18 | ng/mL | not captured | llm (not captured) | tab_1:row12:col3 |
-| variability | Residual error, additive (ng/mL) | `Q317` · not captured | 0.0874 | ng/mL | not captured | llm (not captured) | tab_1:row12:col5 |
-| variability | Residual error, proportional (%) — ATX Estimate (%SEE) | `Q316` · not captured | 36 | %SEE | not captured | llm (not captured) | tab_1:row13:col1 |
-| variability | Residual error, proportional (%) — DLX Estimate (%SEE) DLX 95%CI EDX Estimate (%SEE) | `Q316` · not captured | 68 | %SEE | not captured | llm (not captured) | tab_1:row13:col3 |
-| variability | Residual error, proportional (%) | `Q316` · not captured | 18 | not captured | not captured | llm (not captured) | tab_1:row13:col5 |
-| PD (effect) | Baseline (pg/mL) — ATX Estimate (%SEE) | `Q324` · not captured | 1240 | pg/mL | not captured | exact (not captured) | tab_1:row16:col1 |
-| PD (effect) | Baseline (pg/mL) — ATX 95%CI | `Q324` · not captured | 1080 | pg/mL | not captured | exact (not captured) | tab_1:row16:col2 |
-| PD (effect) | Baseline (pg/mL) — DLX Estimate (%SEE) DLX 95%CI EDX Estimate (%SEE) | `Q324` · not captured | 1160 | pg/mL | not captured | exact (not captured) | tab_1:row16:col3 |
-| PD (effect) | Baseline (pg/mL) | `Q324` · not captured | 1130 | pg/mL | not captured | exact (not captured) | tab_1:row16:col5 |
-| PD (effect) | Baseline (pg/mL) | `Q324` · not captured | 1080 | pg/mL | not captured | exact (not captured) | tab_1:row16:col6 |
-| PD (effect) | K out (h À1 ) — ATX Estimate (%SEE) | `Q328` · not captured | 0.777 | h À1 | not captured | llm (not captured) | tab_1:row17:col1 |
-| PD (effect) | K out (h À1 ) — ATX 95%CI | `Q328` · not captured | 0.525 | h À1 | not captured | llm (not captured) | tab_1:row17:col2 |
-| PD (effect) | K out (h À1 ) — DLX Estimate (%SEE) DLX 95%CI EDX Estimate (%SEE) | `Q328` · not captured | 1.37 | h À1 | not captured | llm (not captured) | tab_1:row17:col3 |
-| PD (effect) | K out (h À1 ) | `Q328` · not captured | 0.507 | h À1 | not captured | llm (not captured) | tab_1:row17:col5 |
-| PD (effect) | K out (h À1 ) | `Q328` · not captured | 0.411 | h À1 | not captured | llm (not captured) | tab_1:row17:col6 |
-| PD (effect) | I max — ATX Estimate (%SEE) | `Q323` · not captured | 0.367 | %SEE | not captured | llm (not captured) | tab_1:row18:col1 |
-| PD (effect) | I max — ATX 95%CI | `Q323` · not captured | 0.313 | not captured | not captured | llm (not captured) | tab_1:row18:col2 |
-| PD (effect) | I max — DLX Estimate (%SEE) DLX 95%CI EDX Estimate (%SEE) | `Q323` · not captured | 0.329 | %SEE | not captured | llm (not captured) | tab_1:row18:col3 |
-| PD (effect) | I max | `Q323` · not captured | 0.334 | not captured | not captured | llm (not captured) | tab_1:row18:col5 |
-| PD (effect) | I max | `Q323` · not captured | 0.309 | not captured | not captured | llm (not captured) | tab_1:row18:col6 |
-| PD (effect) | Plasma IC50 (ng/mL, nM) — ATX 95%CI | `Q322` · not captured | 0.895 | ng/mL, nM | not captured | boundary (not captured) | tab_1:row19:col2 |
-| PD (effect) | Plasma IC50 (ng/mL, nM) | `Q322` · not captured | 0.235 | ng/mL, nM | not captured | boundary (not captured) | tab_1:row19:col6 |
-| PD (effect) | Baseline IPV (%) — ATX Estimate (%SEE) | `Q324` · not captured | 29 | %SEE | not captured | boundary (not captured) | tab_1:row21:col1 |
-| PD (effect) | Baseline IPV (%) — DLX Estimate (%SEE) DLX 95%CI EDX Estimate (%SEE) | `Q324` · not captured | 15 | %SEE | not captured | boundary (not captured) | tab_1:row21:col3 |
-| PD (effect) | Baseline IPV (%) | `Q324` · not captured | 23 | not captured | not captured | boundary (not captured) | tab_1:row21:col5 |
-| PD (effect) | I max IPV (%) — ATX Estimate (%SEE) | `Q323` · not captured | 24 | %SEE | not captured | llm (not captured) | tab_1:row22:col1 |
-| PD (effect) | I max IPV (%) — DLX Estimate (%SEE) DLX 95%CI EDX Estimate (%SEE) | `Q323` · not captured | 25 | %SEE | not captured | llm (not captured) | tab_1:row22:col3 |
-| PD (effect) | I max IPV (%) | `Q323` · not captured | 25 | not captured | not captured | llm (not captured) | tab_1:row22:col5 |
-| PD (effect) | IC50 IPV (%) — ATX Estimate (%SEE) | `Q322` · not captured | 177 | %SEE | not captured | boundary (not captured) | tab_1:row23:col1 |
-| PD (effect) | IC50 IPV (%) | `Q322` · not captured | 241 | nM | not captured | boundary (not captured) | tab_1:row23:col5 |
-| variability | Residual error, additive (pg/mL) — DLX Estimate (%SEE) DLX 95%CI EDX Estimate (%SEE) | `Q317` · not captured | 0.0839 | pg/mL | not captured | llm (not captured) | tab_1:row24:col3 |
-| variability | Residual error, proportional (%) — ATX Estimate (%SEE) | `Q316` · not captured | 13 | %SEE | not captured | llm (not captured) | tab_1:row25:col1 |
-| variability | Residual error, proportional (%) — DLX Estimate (%SEE) DLX 95%CI EDX Estimate (%SEE) | `Q316` · not captured | 8 | %SEE | not captured | llm (not captured) | tab_1:row25:col3 |
-| variability | Residual error, proportional (%) | `Q316` · not captured | 11 | not captured | not captured | llm (not captured) | tab_1:row25:col5 |
-| PD (effect) | Baseline (pg/mL) — ATX Estimate (%SEE) | `Q324` · not captured | 2180 | pg/mL | not captured | exact (not captured) | tab_1:row27:col1 |
-| PD (effect) | Baseline (pg/mL) — ATX 95%CI | `Q324` · not captured | 1880 | pg/mL | not captured | exact (not captured) | tab_1:row27:col2 |
-| PD (effect) | Baseline (pg/mL) — DLX Estimate (%SEE) DLX 95%CI EDX Estimate (%SEE) | `Q324` · not captured | 2260 | pg/mL | not captured | exact (not captured) | tab_1:row27:col3 |
-| PD (effect) | Baseline (pg/mL) | `Q324` · not captured | 1850 | pg/mL | not captured | exact (not captured) | tab_1:row27:col5 |
-| PD (effect) | Baseline (pg/mL) | `Q324` · not captured | 1678 | pg/mL | not captured | exact (not captured) | tab_1:row27:col6 |
-| PD (effect) | K out (h À1 ) — ATX Estimate (%SEE) | `Q328` · not captured | 0.166 | h À1 | not captured | llm (not captured) | tab_1:row28:col1 |
-| PD (effect) | K out (h À1 ) — ATX 95%CI | `Q328` · not captured | 0.0979 | h À1 | not captured | llm (not captured) | tab_1:row28:col2 |
-| PD (effect) | K out (h À1 ) — DLX Estimate (%SEE) DLX 95%CI EDX Estimate (%SEE) | `Q328` · not captured | 0.0850 | h À1 | not captured | llm (not captured) | tab_1:row28:col3 |
-| PD (effect) | K out (h À1 ) | `Q328` · not captured | 0.166 | h À1 | not captured | llm (not captured) | tab_1:row28:col5 |
-| PD (effect) | K out (h À1 ) | `Q328` · not captured | 0.0413 | h À1 | not captured | llm (not captured) | tab_1:row28:col6 |
-| PD (effect) | I max — ATX Estimate (%SEE) | `Q323` · not captured | 0.529 | %SEE | not captured | llm (not captured) | tab_1:row29:col1 |
-| PD (effect) | I max — ATX 95%CI | `Q323` · not captured | 0.415 | not captured | not captured | llm (not captured) | tab_1:row29:col2 |
-| PD (effect) | I max — DLX Estimate (%SEE) DLX 95%CI EDX Estimate (%SEE) | `Q323` · not captured | 0.378 | %SEE | not captured | llm (not captured) | tab_1:row29:col3 |
-| PD (effect) | I max | `Q323` · not captured | 0.747 | not captured | not captured | llm (not captured) | tab_1:row29:col5 |
-| PD (effect) | I max | `Q323` · not captured | 0.514 | not captured | not captured | llm (not captured) | tab_1:row29:col6 |
-| PD (effect) | Plasma IC50 (ng/mL, nM) — ATX Estimate (%SEE) | `Q322` · not captured | 53.3209 | ng/mL, nM | not captured | boundary (not captured) | tab_1:row30:col1 |
-| PD (effect) | Plasma IC50 (ng/mL, nM) — ATX 95%CI | `Q322` · not captured | 18.3 | ng/mL, nM | not captured | boundary (not captured) | tab_1:row30:col2 |
-| PD (effect) | Plasma IC50 (ng/mL, nM) | `Q322` · not captured | 2.37 | ng/mL, nM | not captured | boundary (not captured) | tab_1:row30:col6 |
-| variability | Residual error, additive (pg/mL) — DLX Estimate (%SEE) DLX 95%CI EDX Estimate (%SEE) | `Q317` · not captured | 0.481 | pg/mL | not captured | llm (not captured) | tab_1:row33:col3 |
-| variability | Residual error, proportional (%) — ATX Estimate (%SEE) | `Q316` · not captured | 9 | %SEE | not captured | llm (not captured) | tab_1:row34:col1 |
-| variability | Residual error, proportional (%) — DLX Estimate (%SEE) DLX 95%CI EDX Estimate (%SEE) | `Q316` · not captured | 9 | %SEE | not captured | llm (not captured) | tab_1:row34:col3 |
-| variability | Residual error, proportional (%) | `Q316` · not captured | 12 | not captured | not captured | llm (not captured) | tab_1:row34:col5 |
+| PD (effect) | Baseline | `Q324` · not captured | 1240 | pg/mL | not captured | llm (not captured) | Kielbasa_2015_2:pdv3 |
+| PD (effect) | K out | `Q328` · not captured | 0.777 | h À1 | not captured | llm (not captured) | Kielbasa_2015_2:pdv3 |
+| PD (effect) | I max | `Q323` · not captured | 0.367 | not captured | not captured | llm (not captured) | Kielbasa_2015_2:pdv3 |
+| PD (effect) | Plasma IC50 | `Q322` · not captured | 2.67,10.5 | ng/mL, nM | not captured | llm (not captured) | Kielbasa_2015_2:pdv3 |
+| variability | Baseline IPV | `Q312` · not captured | 29 | % | not captured | llm (not captured) | Kielbasa_2015_2:pdv3 |
+| variability | I max IPV | `Q312` · not captured | 24 | % | not captured | llm (not captured) | Kielbasa_2015_2:pdv3 |
+| variability | IC50 IPV | `Q312` · not captured | 177 | % | not captured | llm (not captured) | Kielbasa_2015_2:pdv3 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -216,9 +150,19 @@ first reading `qwen3.6:27b-q8_0` — the numbers on this page are its, whatever 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
-## Models
+## Downloadable models
 
-<p>No downloads: this record is <b>rejected</b>, so it is not published as a model. Any archives generated for it before the verdict have been removed — a download outlives the page that explains it.</p>
+<div class="pk-models-grid"><div class="pk-models-table">
+<table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
+</tbody></table>
+<p>No bundles have been generated for this record yet. When the engineer emits them they appear here automatically — this page reports what is on disk and generates nothing itself.</p>
+</div></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 

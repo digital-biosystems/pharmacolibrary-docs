@@ -18,17 +18,11 @@ Troxerutin is a bioflavonoid capillary-stabilizing (vasoprotective) agent that h
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-01 17:18 | 2:50 | 0/0/0 | 1/0/0 | 0/0/0 | 32,248/1,496 | ollama / glm-5.3-flash | 2 | 0/2 | 2/0 | 0 |
+| 2026-10-06 22:53 | 0:24 | 0/0/0 | 0/0/0 | 0/0/0 | 14,873/576 | ollama / qwen3.8:27b-mtp-q8_0 | 2 | 0/2 | 2/0 | 0 |
 
 ## popPK records
 
 _not available_
-
-## Pharmacodynamics (PD)
-
-| status | detail | about | model | citation | doi |
-|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by glm-5.3-flash, p(non-human) 1.00).">in vitro</span> | [Vidhya_2020_elastase_activity_inhibition_cell_free_system](drugs/drug_troxerutin/pd_Vidhya_2020_elastase_activity_inhibition_cell_free_system.md) | elastase activity inhibition (cell free system) ← troxerutin · inhibition effect | — | Vidhya R et al., Anti-inflammatory effects of troxerutin…, Immunopharmacology and immu… (2020) | [10.1080/08923973.2020.1806870](https://doi.org/10.1080/08923973.2020.1806870) |
 
 <details class="legend">
 <summary>Badge legend — what each badge means</summary>
@@ -52,7 +46,7 @@ _2 paper(s) judged relevant from the abstract, with no full text on disk — pay
 | `Pincemail_1988.pdf` | Pincemail J et al., Human myeloperoxidase activity is inhib…, Experientia (1988) | pd | 5 | [10.1007/BF01940544](https://doi.org/10.1007/BF01940544) | [2836234](https://www.ncbi.nlm.nih.gov/pubmed/2836234) | metadata signals extractable PD data (IC50) |
 | `Vidhya_2020.pdf` | Vidhya R et al., Anti-inflammatory effects of troxerutin…, Immunopharmacology and immu… (2020) | pd | 5 | [10.1080/08923973.2020.1806870](https://doi.org/10.1080/08923973.2020.1806870) | [32762381](https://www.ncbi.nlm.nih.gov/pubmed/32762381) | metadata signals extractable PD data (IC50) |
 
-<sub>queue written 2026-10-01T17:17:59.742331+00:00</sub>
+<sub>queue written 2026-10-06T22:53:18.292878+00:00</sub>
 
 ## Screened and excluded
 
@@ -60,17 +54,17 @@ _2 paper(s) judged relevant from the abstract, with no full text on disk — pay
 |---|---|---|---|---|---|
 | PD | Adam_2005 | not_relevant | 2 | 1 | The paper describes qualitative hepatoprotective effects and metabolic changes but does not provide numeric concentration-effect curves, Emax/EC50 parameters, or a formal PK/PD model for troxerutin. |
 | PD | Bruppacher_1998 | not_relevant | 0 | 0 | The paper is a safety re-evaluation focusing on liver toxicity incidence and spontaneous reports, containing no pharmacokinetic or pharmacodynamic modeling or numeric exposure-response parameters. |
-| PGx | Burian_2003 | not_relevant | 0 | 0 | The paper investigates the pharmacogenomics of coumarin (CYP2A6 polymorphism and liver dysfunction), not troxerutin, and does not report PK/PD parameters for troxerutin. |
+| PGx | Burian_2003 | not_relevant | 0 | 0 | The study investigates the pharmacogenomics of coumarin (CYP2A6 polymorphism and liver dysfunction), not troxerutin, and does not report PK/PD parameters for troxerutin. |
 | PD | Carlsson_1996 | not_relevant | 2 | 1 | The study reports qualitative fluorescence intensity differences between dose groups and controls but provides no numeric concentration-effect data, dose-response curve, or PD parameters (Emax, EC50, etc.). |
 | PD | Casili_2021 | not_relevant | 1 | 0 | The text is an abstract describing a study on the therapeutic potential of flavonoids in CVI using in vitro, ex vivo, and in vivo models, but it does not report any specific numeric pharmacodynamic parameters (e.g., EC50, Emax) or exposure-response relationships for troxerutin. |
-| popPK | Dittrich_1985 | irrelevant | 2 | 0 | The paper describes an analytical method and reports bioavailability, but does not provide quantitative disposition parameters like clearance, volume, or half-life. |
+| popPK | Dittrich_1985 | irrelevant | 2 | 0 | The paper describes an HPLC method and reports relative bioavailability, but does not provide quantitative disposition parameters like clearance, volume, or half-life. |
 | PD | Ibrahim_2020 | not_relevant | 1 | 0 | The study is a mechanistic investigation using a single fixed dose (150 mg/kg) and reports qualitative changes in biomarkers without providing concentration-effect data, dose-response curves, or numeric PD parameters. |
-| popPK | Jelnes_1986 | irrelevant | 0 | 0 | Clinical efficacy study of hydroxyethylrutosides with no PK disposition parameters reported. |
+| popPK | Jelnes_1986 | irrelevant | 0 | 0 | The study investigates hydroxyethylrutosides (a different drug) and reports hemodynamic effects (blood flow) rather than pharmacokinetic parameters for troxerutin. |
 | PD | Khattab_2015 | not_relevant | 0 | 0 | The paper describes analytical methods for drug quantification and contains no pharmacodynamic or exposure-response data. |
-| popPK | Kienzler_2002 | irrelevant | 4 | 1 | This is a human PK study of mono-3'- and mono-4'-hydroxyethyl rutoside markers of Venoruton, not troxerutin itself, and no numeric parameter values (only Cmax/AUC/half-life descriptions) appear in the evidence. |
+| popPK | Kienzler_2002 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of Venoruton (O-(beta-hydroxyethyl) rutosides), not troxerutin. |
 | popPK | Manna_2026 | irrelevant | 0 | 0 | The paper is a review of anticancer mechanisms and does not report quantitative pharmacokinetic parameters for troxerutin. |
 | PD | Sahu_2022 | not_relevant | 3 | 2 | Only qualitative dose-dependent reduction of arthritis scores with TXR doses (50/100/200 mg/kg) in rats; no concentration-effect data, no PD parameters (Emax/EC50/slope) reported or derivable. |
-| popPK | Sunil_2019 | irrelevant | 0 | 0 | A review of taxifolin (a different flavonoid) with no troxerutin PK parameters reported. |
+| popPK | Sunil_2019 | irrelevant | 0 | 0 | The paper is a review of taxifolin (dihydroquercetin), not troxerutin, and contains no quantitative pharmacokinetic parameters for troxerutin. |
 | PD | Tolba_2021 | not_relevant | 0 | 0 | This is an analytical chemistry paper (spectrofluorimetric quantification of troxerutin/DOB in formulations and spiked plasma); no pharmacodynamic or exposure-response relationship is reported. |
 | popPK | Xu_2024 | irrelevant | 0 | 0 | The paper is a critical review of flavonoid drugs and does not report original quantitative pharmacokinetic parameters for troxerutin. |
 | PD | Xu_2024 | not_relevant | 0 | 0 | The paper is a critical review of flavonoid drug development and informatics analysis, containing no specific pharmacodynamic modeling, exposure-response data, or numeric PD parameters for troxerutin. |

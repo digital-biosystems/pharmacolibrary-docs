@@ -18,7 +18,7 @@ Etoperidone is an antidepressant of the selective serotonin reuptake inhibitor t
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-23 21:56 | 6:45 | 0/0/0 | 0/1/0 | 0/0/0 | 29,339/2,419 | ollama / qwen3.8:27b-mtp-q8_0 | 1 | 0/1 | 1/0 | 0 |
+| 2026-10-06 23:00 | 0:08 | 0/0/0 | 1/0/0 | 0/0/0 | 16,982/559 | ollama / glm-5.3-flash | 1 | 0/1 | 1/0 | 0 |
 
 ## popPK records
 
@@ -28,8 +28,7 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">in vitro</span> | [Girgin_2023_cell_index](drugs/drug_etoperidone/pd_Girgin_2023_cell_index.md) | name ← unknown · inhibition effect | — | Girgin M et al., Proposing novel natural compounds again…, PloS one (2023) | [10.1371/journal.pone.0284994](https://doi.org/10.1371/journal.pone.0284994) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">in vitro</span> | [Girgin_2023_cell_viability](drugs/drug_etoperidone/pd_Girgin_2023_cell_viability.md) | name ← unknown · inhibition effect | — | Girgin M et al., Proposing novel natural compounds again…, PloS one (2023) | [10.1371/journal.pone.0284994](https://doi.org/10.1371/journal.pone.0284994) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">in vitro</span> | [Girgin_2023_IC50](drugs/drug_etoperidone/pd_Girgin_2023_IC50.md) | cell viability (SH-SY5Y, MTT/RTCA) ← etoperidone · inhibition effect | — | Girgin M et al., Proposing novel natural compounds again…, PloS one (2023) | [10.1371/journal.pone.0284994](https://doi.org/10.1371/journal.pone.0284994) |
 
 ## ADME sites
 
@@ -65,11 +64,11 @@ _3 paper(s) judged relevant from the abstract, with no full text on disk — pay
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Caldwell_2001.pdf` | Caldwell GW et al., Evaluation of the absorption, excretion…, Xenobiotica; the fate of fo… (2001) | popPK | 9 | [10.1080/00498250110091758](https://doi.org/10.1080/00498250110091758) | [11765144](https://pubmed.ncbi.nlm.nih.gov/11765144) | The study reports quantitative PK parameters (half-life and clearance) for etoperidone in humans, with values explicitly present in the text. |
+| `Caldwell_2001.pdf` | Caldwell GW et al., Evaluation of the absorption, excretion…, Xenobiotica; the fate of fo… (2001) | popPK | 8 | [10.1080/00498250110091758](https://doi.org/10.1080/00498250110091758) | [11765144](https://pubmed.ncbi.nlm.nih.gov/11765144) | Human mass-balance study of [14C]etoperidone reporting terminal half-life (21.7 h) and apparent clearance (1.01 ml/min) directly in the abstract. |
 | `Malomvölgyi_1991.pdf` | Malomvölgyi B et al., Comparison of serotonin agonistic and a…, Acta physiologica Hungarica (1991) | pd | 4 | not captured | [1814162](https://www.ncbi.nlm.nih.gov/pubmed/1814162) | metadata signals extractable PD data (EC50) |
 | `Costa_2025.pdf` | Costa Alegre MD et al., Metabolism of m-CPP, trazodone, nefazod…, Drug metabolism reviews (2025) | pgx | 7 | [10.1080/03602532.2025.2465482](https://doi.org/10.1080/03602532.2025.2465482) | [39945551](https://www.ncbi.nlm.nih.gov/pubmed/39945551) | metadata signals extractable PGX data (CYP3A4, PK/PD-context) |
 
-<sub>queue written 2026-09-23T21:54:30.251077+00:00</sub>
+<sub>queue written 2026-10-06T23:00:46.450883+00:00</sub>
 
 ## Screened and excluded
 
@@ -77,12 +76,12 @@ _3 paper(s) judged relevant from the abstract, with no full text on disk — pay
 |---|---|---|---|---|---|
 | popPK | Costa_2025 | irrelevant | 0 | 0 | no_text gate: only 90 chars of text extracted (&lt; 400) |
 | PD | Costa_2025 | not_relevant | 0 | 0 | The paper focuses on the metabolism and forensic aspects of etoperidone, not on pharmacodynamic or exposure-response relationships. |
-| PGx | Costa_2025 | not_relevant | 0 | 0 | The paper discusses the metabolism of etoperidone in a general clinical/forensic context without reporting specific pharmacogenomic effects of gene variants on PK/PD parameters. |
+| PGx | Costa_2025 | not_relevant | 3 | 3 | Review of metabolism of m-CPP, trazodone, nefazodone, and etoperidone; no pharmacogenomic effect on PK/PD parameters reported. |
 | popPK | Girgin_2023 | irrelevant | 0 | 0 | The paper is an in silico and in vitro study on acetylcholinesterase inhibition and does not report any pharmacokinetic parameters for etoperidone. |
 | popPK | Malomvölgyi_1991 | irrelevant | 0 | 0 | no_text gate: only 163 chars of text extracted (&lt; 400) |
 | PD | Malomvölgyi_1991 | not_relevant | 0 | 0 | The paper studies Trelibet (EGYT-475) and its metabolite, not etoperidone. |
-| PGx | Wen_2008 | not_relevant | 0 | 0 | The paper focuses on the bioactivation of trazodone and its metabolite m-CPP, mentioning etoperidone only as a context for m-CPP's activity, without reporting any pharmacogenomic effects on etoperidone's PK or PD parameters. |
-| PGx | Yan_2002 | not_relevant | 0 | 0 | The paper identifies CYP3A4 as the metabolic enzyme for etoperidone but does not report any pharmacogenomic effects of specific gene variants or genotypes on PK/PD parameters. |
+| PGx | Wen_2008 | not_relevant | 2 | 3 | In vitro CYP2D6-mediated bioactivation of m-CPP metabolites; no genotype/phenotype effect on PK/PD parameters of etoperidone reported. |
+| PGx | Yan_2002 | not_relevant | 3 | 5 | In vitro CYP phenotyping identifies CYP3A4 as main etoperidone metabolizing enzyme; no gene variant/genotype effect on in vivo PK/PD parameters is reported. |
 
 ---
 <sub>Generated by `docs.py` (scholarv2)</sub>

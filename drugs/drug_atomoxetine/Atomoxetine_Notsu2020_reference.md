@@ -1,10 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N06B&quot;,&quot;href&quot;:&quot;atc/N06B.md&quot;},{&quot;label&quot;:&quot;atomoxetine&quot;,&quot;href&quot;:&quot;drugs/drug_atomoxetine/&quot;},{&quot;label&quot;:&quot;Notsu_2020 \u00b7 reference&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Atomoxetine_Li2012_reference&quot;,&quot;label&quot;:&quot;Li_2012_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_atomoxetine/Atomoxetine_Li2012_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Atomoxetine_Tobin2026_reference&quot;,&quot;label&quot;:&quot;Tobin_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_atomoxetine/Atomoxetine_Tobin2026_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pgx_Tobin_2026_CYP2D6_Q27&quot;,&quot;label&quot;:&quot;Tobin_2026 \u00b7 CYP2D6&quot;,&quot;group&quot;:&quot;PGx&quot;,&quot;href&quot;:&quot;drugs/drug_atomoxetine/pgx_Tobin_2026_CYP2D6_Q27.md&quot;,&quot;status&quot;:&quot;quantitative&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # atomoxetine — `Atomoxetine_Notsu2020_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.391). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.391). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -24,24 +25,30 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on how the
 
 <sub>reviewed by rule template (no LLM)</sub>
 
+> ⚠️ **STALE** — review status `rejected` (reviewed 2026-10-05 09:23:27.123481+00:00) predates the upstream re-run (2026-10-07 00:13:16.820892+00:00). Current validate status: `needs_review`.
+
 ## Citation
 Notsu Y et al., Simple pharmacokinetic models accountin…, Drug metabolism and pharmac… (2020)
   ·  DOI: [10.1016/j.dmpk.2019.08.005](https://doi.org/10.1016/j.dmpk.2019.08.005)
 
 ## Model component
-<dbs-pgx drug="atomoxetine" model-id="Atomoxetine_Notsu2020_reference" status="rejected" stale="false" population="Japanese pediatric patients with ADHD" measured-compound="atomoxetine" parameterization="mechanistic" topology="parent_metabolite"></dbs-pgx>
+<dbs-pgx drug="atomoxetine" model-id="Atomoxetine_Notsu2020_reference" status="needs_review" stale="true" population="Japanese pediatric ADHD patients genotyped for CYP2D6" measured-compound="atomoxetine" parameterization="mechanistic" topology="parent_metabolite"></dbs-pgx>
 
 **Model structure:** parent + metabolite; no model was built for this record.  
-**Parameters:** 1 extracted.
+**Parameters:** 4 extracted.
 
 **Parameterization:** mechanistic.
 
 ## Parameters
-> ⚠️ This record is not accepted (current status `rejected`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
+> ⚠️ This record is not accepted (current status `needs_review`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 49 | `Q49` · kabs | 57.4 | not captured | not captured | not captured | not captured | llm (0.6) | tab_2:row34:col1, tab_2:row34:col3, tab_2:row34:col4, tab_2:row34:col5, tab_2:row34:col6, tab_2:row34:col9, tab_2:row34:col10, tab_2:row34:col11 | — | not captured |
+| 1 | `Q900` · equation variable | 66 | not captured | not captured | not captured | not captured | llm (0.6) | tab_2:row1:col12 | — | not captured |
+| 3 | `Q308` · Q3 | 68 | not captured | not captured | not captured | not captured | llm (0.6) | tab_2:row3:col9 | — | not captured |
+| 7 | `Q49` · kabs | 1 | not captured | not captured | not captured | not captured | exact (1.0) | tab_2:row6:col1, tab_2:row6:col2, tab_2:row6:col3, tab_2:row6:col4, tab_2:row6:col5, tab_2:row6:col6, tab_2:row6:col7, tab_2:row6:col10, tab_2:row6:col11, tab_2:row6:col12 | — | not captured |
+| 8 | `Q63` · V1 | 57.4 | not captured | not captured | not captured | not captured | exact (1.0) | tab_2:row7:col2, tab_2:row7:col4, tab_2:row7:col5, tab_2:row7:col6, tab_2:row7:col7, tab_2:row7:col10, tab_2:row7:col11, tab_2:row7:col12 | — | not captured |
+| 13 | `Q47` · kel | 0.157 | not captured | not captured | not captured | not captured | exact (1.0) | tab_2:row10:col2, tab_2:row10:col3, tab_2:row10:col6, tab_2:row10:col9, tab_2:row10:col10, tab_2:row10:col11 | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -52,42 +59,43 @@ Notsu Y et al., Simple pharmacokinetic models accountin…, Drug metabolism and 
 
 **Interpretation flags:**
 - column 'dmpk281_proof ■ 29 august 2019 ■ 8/10' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
-- dropped unlinked row (NIL): '1' — extend the ontology if this is a real PK parameter (source ['tab_2:row1:col12'])
 - dropped unlinked row (NIL): '2' — extend the ontology if this is a real PK parameter (source ['tab_2:row2:col12'])
-- dropped unlinked row (NIL): '3' — extend the ontology if this is a real PK parameter (source ['tab_2:row3:col9'])
 - dropped unlinked row (NIL): '4 5' — extend the ontology if this is a real PK parameter (source ['tab_2:row4:col5', 'tab_2:row4:col7', 'tab_2:row4:col8', 'tab_2:row4:col9'])
-- dropped unlinked row (NIL): '6' — extend the ontology if this is a real PK parameter (source ['tab_2:row5:col12'])
-- dropped unlinked row (NIL): '7' — extend the ontology if this is a real PK parameter (source ['tab_2:row6:col1', 'tab_2:row6:col2', 'tab_2:row6:col3', 'tab_2:row6:col4', 'tab_2:row6:col5', 'tab_2:row6:col6', 'tab_2:row6:col7', 'tab_2:row6:col10', 'tab_2:row6:col11', 'tab_2:row6:col12'])
-- dropped unlinked row (NIL): '8' — extend the ontology if this is a real PK parameter (source ['tab_2:row7:col2', 'tab_2:row7:col4', 'tab_2:row7:col5', 'tab_2:row7:col6', 'tab_2:row7:col7', 'tab_2:row7:col10', 'tab_2:row7:col11', 'tab_2:row7:col12'])
+- dropped duplicate Q900 ('6', value '71') — already have one for this compound
 - dropped unlinked row (NIL): '9' — extend the ontology if this is a real PK parameter (source ['tab_2:row8:col1', 'tab_2:row8:col2', 'tab_2:row8:col3', 'tab_2:row8:col4', 'tab_2:row8:col5', 'tab_2:row8:col6', 'tab_2:row8:col7', 'tab_2:row8:col10', 'tab_2:row8:col11', 'tab_2:row8:col12'])
-- dropped unlinked row (NIL): '13' — extend the ontology if this is a real PK parameter (source ['tab_2:row10:col2', 'tab_2:row10:col3', 'tab_2:row10:col6', 'tab_2:row10:col9', 'tab_2:row10:col10', 'tab_2:row10:col11'])
-- dropped unlinked row (NIL): '14' — extend the ontology if this is a real PK parameter (source ['tab_2:row11:col1', 'tab_2:row11:col2', 'tab_2:row11:col3', 'tab_2:row11:col4', 'tab_2:row11:col5', 'tab_2:row11:col6', 'tab_2:row11:col9', 'tab_2:row11:col10', 'tab_2:row11:col11'])
-- dropped unlinked row (NIL): '6 17' — extend the ontology if this is a real PK parameter (source ['tab_2:row13:col1', 'tab_2:row13:col2', 'tab_2:row13:col3', 'tab_2:row13:col4', 'tab_2:row13:col5', 'tab_2:row13:col6', 'tab_2:row13:col9', 'tab_2:row13:col10', 'tab_2:row13:col11'])
-- dropped unlinked row (NIL): '18' — extend the ontology if this is a real PK parameter (source ['tab_2:row14:col1', 'tab_2:row14:col3', 'tab_2:row14:col4', 'tab_2:row14:col5', 'tab_2:row14:col6', 'tab_2:row14:col9', 'tab_2:row14:col10', 'tab_2:row14:col11'])
-- dropped unlinked row (NIL): '8 22' — extend the ontology if this is a real PK parameter (source ['tab_2:row16:col1', 'tab_2:row16:col2', 'tab_2:row16:col3', 'tab_2:row16:col4', 'tab_2:row16:col5', 'tab_2:row16:col6', 'tab_2:row16:col9', 'tab_2:row16:col10', 'tab_2:row16:col11'])
-- dropped unlinked row (NIL): '23' — extend the ontology if this is a real PK parameter (source ['tab_2:row17:col1', 'tab_2:row17:col3', 'tab_2:row17:col4', 'tab_2:row17:col5', 'tab_2:row17:col6', 'tab_2:row17:col9', 'tab_2:row17:col10', 'tab_2:row17:col11'])
-- dropped unlinked row (NIL): '26' — extend the ontology if this is a real PK parameter (source ['tab_2:row19:col1', 'tab_2:row19:col3', 'tab_2:row19:col4', 'tab_2:row19:col5', 'tab_2:row19:col6', 'tab_2:row19:col9', 'tab_2:row19:col10', 'tab_2:row19:col11'])
-- dropped unlinked row (NIL): '11 27' — extend the ontology if this is a real PK parameter (source ['tab_2:row20:col1', 'tab_2:row20:col2', 'tab_2:row20:col3', 'tab_2:row20:col4', 'tab_2:row20:col5', 'tab_2:row20:col6', 'tab_2:row20:col9', 'tab_2:row20:col10', 'tab_2:row20:col11'])
-- dropped unlinked row (NIL): '31' — extend the ontology if this is a real PK parameter (source ['tab_2:row22:col2', 'tab_2:row22:col3', 'tab_2:row22:col6', 'tab_2:row22:col9', 'tab_2:row22:col10', 'tab_2:row22:col11'])
-- dropped unlinked row (NIL): '32' — extend the ontology if this is a real PK parameter (source ['tab_2:row23:col1', 'tab_2:row23:col2', 'tab_2:row23:col3', 'tab_2:row23:col4', 'tab_2:row23:col5', 'tab_2:row23:col6', 'tab_2:row23:col9', 'tab_2:row23:col10', 'tab_2:row23:col11'])
-- dropped unlinked row (NIL): '15 35' — extend the ontology if this is a real PK parameter (source ['tab_2:row25:col1', 'tab_2:row25:col2', 'tab_2:row25:col3', 'tab_2:row25:col4', 'tab_2:row25:col5', 'tab_2:row25:col6', 'tab_2:row25:col9', 'tab_2:row25:col10', 'tab_2:row25:col11'])
-- dropped unlinked row (NIL): '36' — extend the ontology if this is a real PK parameter (source ['tab_2:row26:col1', 'tab_2:row26:col3', 'tab_2:row26:col4', 'tab_2:row26:col5', 'tab_2:row26:col6', 'tab_2:row26:col9', 'tab_2:row26:col10', 'tab_2:row26:col11'])
-- dropped unlinked row (NIL): '18 40' — extend the ontology if this is a real PK parameter (source ['tab_2:row28:col1', 'tab_2:row28:col2', 'tab_2:row28:col3', 'tab_2:row28:col4', 'tab_2:row28:col5', 'tab_2:row28:col6', 'tab_2:row28:col9', 'tab_2:row28:col10', 'tab_2:row28:col11'])
-- dropped unlinked row (NIL): '41' — extend the ontology if this is a real PK parameter (source ['tab_2:row29:col1', 'tab_2:row29:col3', 'tab_2:row29:col4', 'tab_2:row29:col5', 'tab_2:row29:col6', 'tab_2:row29:col9', 'tab_2:row29:col10', 'tab_2:row29:col11'])
-- dropped unlinked row (NIL): '44' — extend the ontology if this is a real PK parameter (source ['tab_2:row31:col1', 'tab_2:row31:col3', 'tab_2:row31:col4', 'tab_2:row31:col5', 'tab_2:row31:col6', 'tab_2:row31:col9', 'tab_2:row31:col10', 'tab_2:row31:col11'])
-- dropped unlinked row (NIL): '21 45' — extend the ontology if this is a real PK parameter (source ['tab_2:row32:col1', 'tab_2:row32:col2', 'tab_2:row32:col3', 'tab_2:row32:col4', 'tab_2:row32:col5', 'tab_2:row32:col6', 'tab_2:row32:col9', 'tab_2:row32:col10', 'tab_2:row32:col11'])
-- dropped unlinked row (NIL): '24 50' — extend the ontology if this is a real PK parameter (source ['tab_2:row35:col1', 'tab_2:row35:col2', 'tab_2:row35:col3', 'tab_2:row35:col4', 'tab_2:row35:col5', 'tab_2:row35:col6', 'tab_2:row35:col9', 'tab_2:row35:col10', 'tab_2:row35:col11'])
-- dropped unlinked row (NIL): '53' — extend the ontology if this is a real PK parameter (source ['tab_2:row37:col1', 'tab_2:row37:col2', 'tab_2:row37:col3', 'tab_2:row37:col4', 'tab_2:row37:col5', 'tab_2:row37:col6', 'tab_2:row37:col9', 'tab_2:row37:col10', 'tab_2:row37:col11'])
-- dropped unlinked row (NIL): '54' — extend the ontology if this is a real PK parameter (source ['tab_2:row38:col2', 'tab_2:row38:col3', 'tab_2:row38:col6', 'tab_2:row38:col9', 'tab_2:row38:col10', 'tab_2:row38:col11'])
-- dropped unlinked row (NIL): '28 58' — extend the ontology if this is a real PK parameter (source ['tab_2:row40:col1', 'tab_2:row40:col2', 'tab_2:row40:col3', 'tab_2:row40:col4', 'tab_2:row40:col5', 'tab_2:row40:col6', 'tab_2:row40:col9', 'tab_2:row40:col10', 'tab_2:row40:col11'])
-- dropped unlinked row (NIL): '59' — extend the ontology if this is a real PK parameter (source ['tab_2:row41:col1', 'tab_2:row41:col3', 'tab_2:row41:col4', 'tab_2:row41:col5', 'tab_2:row41:col6', 'tab_2:row41:col9', 'tab_2:row41:col10', 'tab_2:row41:col11'])
-- dropped unlinked row (NIL): '62' — extend the ontology if this is a real PK parameter (source ['tab_2:row43:col2', 'tab_2:row43:col3', 'tab_2:row43:col6', 'tab_2:row43:col9', 'tab_2:row43:col10', 'tab_2:row43:col11'])
-- dropped unlinked row (NIL): '30 63' — extend the ontology if this is a real PK parameter (source ['tab_2:row44:col1', 'tab_2:row44:col2', 'tab_2:row44:col3', 'tab_2:row44:col4', 'tab_2:row44:col5', 'tab_2:row44:col6', 'tab_2:row44:col9', 'tab_2:row44:col10', 'tab_2:row44:col11'])
-- dropped unlinked row (NIL): '31 64 65' — extend the ontology if this is a real PK parameter (source ['tab_2:row45:col2'])
-- table mostly unlinked (32/33 table-cell rows NIL) — likely the wrong table was located, not 1 genuinely-missing ontology parameter(s); route_to_review instead of building a model from the residual linked cell(s)
+- dropped duplicate Q63 ('14', value '57.4') — already have one for this compound
+- dropped duplicate Q63 ('6 17', value '99.7') — already have one for this compound
+- dropped duplicate Q63 ('18', value '57.4') — already have one for this compound
+- dropped duplicate Q63 ('8 22', value '99.7') — already have one for this compound
+- dropped duplicate Q63 ('23', value '57.4') — already have one for this compound
+- dropped duplicate Q63 ('26', value '57.4') — already have one for this compound
+- dropped duplicate Q63 ('11 27', value '99.7') — already have one for this compound
+- dropped duplicate Q47 ('31', value '0.157') — already have one for this compound
+- dropped duplicate Q63 ('32', value '57.4') — already have one for this compound
+- dropped duplicate Q63 ('15 35', value '99.7') — already have one for this compound
+- dropped duplicate Q63 ('36', value '57.4') — already have one for this compound
+- dropped duplicate Q63 ('18 40', value '99.7') — already have one for this compound
+- dropped duplicate Q63 ('41', value '57.4') — already have one for this compound
+- dropped duplicate Q63 ('44', value '57.4') — already have one for this compound
+- dropped duplicate Q63 ('21 45', value '99.7') — already have one for this compound
+- dropped duplicate Q63 ('49', value '57.4') — already have one for this compound
+- dropped duplicate Q63 ('24 50', value '99.7') — already have one for this compound
+- dropped duplicate Q63 ('53', value '57.4') — already have one for this compound
+- dropped duplicate Q47 ('54', value '0.157') — already have one for this compound
+- dropped duplicate Q63 ('28 58', value '99.7') — already have one for this compound
+- dropped duplicate Q63 ('59', value '57.4') — already have one for this compound
+- dropped duplicate Q47 ('62', value '0.157') — already have one for this compound
+- dropped duplicate Q63 ('30 63', value '99.7') — already have one for this compound
+- dropped duplicate Q47 ('31 64 65', value '0.223') — already have one for this compound
+- implicit units: '8' — the LLM proposed 'L/h', whose dimension does not fit Q63; left unset
+- apparent-by-design (ADVISORY, codes unchanged): extravascular dosing with no identifiable F, so these reported disposition parameters are likely apparent unless the model puts first-pass in its structure — Q63 (8)
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=atomoxetine
-- template fit: PK_3M_3C — hepatic compartment; parent 0 + hepatic, metabolites [0] (site hepatic: 'F a F g k a Dose (p.o. administration) Central compartment V 1 primary metabolite , C b Q h Central compartment V 1_subs')
-- status held at route_to_review — not promoted
+- template fit: PK_3M_3C — hepatic compartment; parent 1 + hepatic, metabolites [0] (site hepatic: 'F a F g k a Dose (p.o. administration) Central compartment V 1 primary metabolite , C b Q h Central compartment V 1_subs')
+- row roles (LLM): model_class=compartmental; 33/33 row label(s) assigned, 215 linked by role
+- skipped review gap-fill of CL: primary's parameterization (rate-constant / ka-only) does not use it
+- skipped review gap-fill of V2: primary is PARENT_METABOLITE (peripheral family needs ≥2C)
+- skipped review gap-fill of Q: primary's parameterization (rate-constant / ka-only) does not use it
+- skipped review gap-fill of TLAG: primary's parameterization (rate-constant / ka-only) does not use it
 
 **Extraction notes:**
 - unparsed cell tab_2:row4:col3 = 'k el , h À1'
@@ -199,9 +207,13 @@ first reading `qwen3.6:27b-q8_0` — the numbers on this page are its, whatever 
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 1 | not captured | not captured | not captured |
-| C0b_disposition_core | fail | not captured | not captured | not captured | not captured | not captured |
-| C5_unit_missing_Q49 | fail | 1 / [time] | not captured | not captured | not captured | ['tab_2:row34:col1', 'tab_2:row34:col3', 'tab_2:row34:col4', 'tab_2:row34:col5', 'tab_2:row34:col6', 'tab_2:row34:col9', 'tab_2:row34:col10', 'tab_2:row34:col11'] |
+| C0_has_structural_params | pass | not captured | 4 | not captured | not captured | not captured |
+| C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
+| C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
+| C5_unit_missing_Q308 | fail | [length] ** 3 / [time] | not captured | not captured | not captured | ['tab_2:row3:col9'] |
+| C5_unit_missing_Q47 | fail | 1 / [time] | not captured | not captured | not captured | ['tab_2:row10:col2', 'tab_2:row10:col3', 'tab_2:row10:col6', 'tab_2:row10:col9', 'tab_2:row10:col10', 'tab_2:row10:col11'] |
+| C5_unit_missing_Q49 | fail | 1 / [time] | not captured | not captured | not captured | ['tab_2:row6:col1', 'tab_2:row6:col2', 'tab_2:row6:col3', 'tab_2:row6:col4', 'tab_2:row6:col5', 'tab_2:row6:col6', 'tab_2:row6:col7', 'tab_2:row6:col10', 'tab_2:row6:col11', 'tab_2:row6:col12'] |
+| C5_unit_missing_Q63 | fail | [length] ** 3 | not captured | not captured | not captured | ['tab_2:row7:col2', 'tab_2:row7:col4', 'tab_2:row7:col5', 'tab_2:row7:col6', 'tab_2:row7:col7', 'tab_2:row7:col10', 'tab_2:row7:col11', 'tab_2:row7:col12'] |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
 
 <details class="legend">
@@ -216,9 +228,19 @@ first reading `qwen3.6:27b-q8_0` — the numbers on this page are its, whatever 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
-## Models
+## Downloadable models
 
-<p>No downloads: this record is <b>rejected</b>, so it is not published as a model. Any archives generated for it before the verdict have been removed — a download outlives the page that explains it.</p>
+<div class="pk-models-grid"><div class="pk-models-table">
+<table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
+</tbody></table>
+<p>No bundles have been generated for this record yet. When the engineer emits them they appear here automatically — this page reports what is on disk and generates nothing itself.</p>
+</div></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
@@ -227,4 +249,4 @@ _No web simulator for this record: its structure has no shared WebAssembly templ
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-09-26 20:29 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 00:13 UTC</sub>

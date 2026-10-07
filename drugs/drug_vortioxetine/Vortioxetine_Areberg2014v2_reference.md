@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N06A&quot;,&quot;href&quot;:&quot;atc/N06A.md&quot;},{&quot;label&quot;:&quot;vortioxetine&quot;,&quot;href&quot;:&quot;drugs/drug_vortioxetine/&quot;},{&quot;label&quot;:&quot;Areberg_2014_2 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Vortioxetine_Areberg2014v2_reference&quot;,&quot;label&quot;:&quot;Areberg_2014_2_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_vortioxetine/Vortioxetine_Areberg2014v2_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Vortioxetine_Areberg2014v2_reference&quot;,&quot;label&quot;:&quot;Areberg_2014_2_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_vortioxetine/Vortioxetine_Areberg2014v2_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # vortioxetine — `Vortioxetine_Areberg2014v2_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.429). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.429). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -25,12 +25,14 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on how the
 
 <sub>reviewed by glm-5.3-flash</sub>
 
+> ⚠️ **STALE** — review status `needs_review` (reviewed 2026-10-05 09:32:47.835286+00:00) predates the upstream re-run (2026-10-07 00:19:39.042801+00:00). Current validate status: `extracted`.
+
 ## Citation
 Areberg J et al., Population pharmacokinetic meta-analysi…, Basic & clinical pharmacolo… (2014)
   ·  DOI: [10.1111/bcpt.12256](https://doi.org/10.1111/bcpt.12256)
 
 ## Model component
-<dbs-pgx drug="vortioxetine" model-id="Vortioxetine_Areberg2014v2_reference" status="needs_review" stale="false" population="healthy individuals" measured-compound="vortioxetine" parameterization="apparent" topology="1C"></dbs-pgx>
+<dbs-pgx drug="vortioxetine" model-id="Vortioxetine_Areberg2014v2_reference" status="extracted" stale="true" population="healthy adults" measured-compound="vortioxetine" parameterization="apparent" topology="1C"></dbs-pgx>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 3 extracted.
@@ -38,12 +40,10 @@ Areberg J et al., Population pharmacokinetic meta-analysi…, Basic & clinical p
 **Parameterization:** CL/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
 ## Parameters
-> ⚠️ This record is not accepted (current status `needs_review`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
-
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
 | oral clearance | `Q27` · CL/F | 32.7 | L/hr | 9.083333333333335e-06 | [l] / [h] | not captured | exact (1.0) | Areberg_2014_2:abstract | — | not captured |
-| central volume of distribution | `Q61` · V | 1.97 | L | 0.00197 | [l] | not captured | llm_corrected (0.6) | Areberg_2014_2:abstract | — | not captured |
+| central volume of distribution | `Q61` · V | 1970 | L | 1.97 | [l] | not captured | boundary_compartment (0.9) | Areberg_2014_2:abstract | — | not captured |
 | elimination half-life | `Q57` · t1/2z | 65.8 | hr | 236880.0 | [h] | not captured | llm (0.6) | Areberg_2014_2:abstract | — | not captured |
 
 <details class="legend">
@@ -60,6 +60,7 @@ Areberg J et al., Population pharmacokinetic meta-analysi…, Basic & clinical p
 - `input_model`: first-order depot input — apparent (/F) parameterization ⇒ extravascular dosing
 
 **Interpretation flags:**
+- covariate cyp2d6 for CL/F from footnote/prose kept as documentation only (['Areberg_2014_2:abstract'])
 - apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=vortioxetine
 - 1C volume normalization: Q63→Q61 (single-compartment model has no central/peripheral split; 'central volume of distribution' is the general volume)
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
@@ -67,7 +68,7 @@ Areberg J et al., Population pharmacokinetic meta-analysi…, Basic & clinical p
 - skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
 
 **Extraction notes:**
-- no GROBID TEI available — transcribed from abstract in Areberg_2014_2_metadata.yaml (3 record(s)); values are summary statistics, not a fitted model
+- no GROBID TEI available — transcribed from abstract in Areberg_2014_2_metadata.yaml (4 record(s)); values are summary statistics, not a fitted model
 
 ## Validation
 
@@ -108,7 +109,7 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 | C7_apparent_coherence | pass | not captured | not captured | not captured | not captured | not captured |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
 | C9_phys_window_Q27 | pass | clearance within physiological range | 32.7 L/h | not captured | not captured | ['Areberg_2014_2:abstract'] |
-| C9_phys_window_Q61 | pass | volume within physiological range | 1.97 L | not captured | not captured | ['Areberg_2014_2:abstract'] |
+| C9_phys_window_Q61 | pass | volume within physiological range | 1.97e+03 L | not captured | not captured | ['Areberg_2014_2:abstract'] |
 
 **Reviewer per-scenario checks:**
 
@@ -141,7 +142,7 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_vortioxetine/Vortioxetine_Areberg2014v2_reference/Vortioxetine_Areberg2014v2_reference_modelica.zip" download>Vortioxetine_Areberg2014v2_reference_modelica.zip</a> <span class="pk-size">(4.6 kB)</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_vortioxetine/Vortioxetine_Areberg2014v2_reference/Vortioxetine_Areberg2014v2_reference_modelica.zip" download>Vortioxetine_Areberg2014v2_reference_modelica.zip</a> <span class="pk-size">(4.7 kB)</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_vortioxetine/Vortioxetine_Areberg2014v2_reference/Vortioxetine_Areberg2014v2_reference_fmi.zip" download>Vortioxetine_Areberg2014v2_reference_fmi.zip</a> <span class="pk-size">(4.4 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_vortioxetine/Vortioxetine_Areberg2014v2_reference/Vortioxetine_Areberg2014v2_reference_matlab.zip" download>Vortioxetine_Areberg2014v2_reference_matlab.zip</a> <span class="pk-size">(3.5 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_vortioxetine/Vortioxetine_Areberg2014v2_reference/Vortioxetine_Areberg2014v2_reference_matlab_simbio.zip" download>Vortioxetine_Areberg2014v2_reference_matlab_simbio.zip</a> <span class="pk-size">(2.9 kB)</span></td></tr>
@@ -163,4 +164,4 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-09-24 21:32 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 00:19 UTC</sub>

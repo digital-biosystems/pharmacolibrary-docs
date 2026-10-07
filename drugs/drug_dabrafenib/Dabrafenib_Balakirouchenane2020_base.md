@@ -1,11 +1,10 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01E&quot;,&quot;href&quot;:&quot;atc/L01E.md&quot;},{&quot;label&quot;:&quot;dabrafenib&quot;,&quot;href&quot;:&quot;drugs/drug_dabrafenib/&quot;},{&quot;label&quot;:&quot;Balakirouchenane_2020 \u00b7 base&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Dabrafenib_Balakirouchenane2020_base&quot;,&quot;label&quot;:&quot;Balakirouchenane_2020_base&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_dabrafenib/Dabrafenib_Balakirouchenane2020_base.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Dabrafenib_Balakirouchenane2020_final_final_tra_model&quot;,&quot;label&quot;:&quot;Balakirouchenane_2020_final_final_tra_model&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_dabrafenib/Dabrafenib_Balakirouchenane2020_final_final_tra_model.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # dabrafenib — `Dabrafenib_Balakirouchenane2020_base`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.895). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--neutral">None</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.895). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -13,7 +12,7 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
-**Model:** A simulatable model was generated — see the **Models** and **Simulation** tabs.
+**Model:** No model was generated from this record.
 
 ### Reviewer guidance
 
@@ -25,56 +24,47 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 
 <sub>reviewed by glm-5.3-flash</sub>
 
+> ⚠️ **STALE** — review status `needs_review` (reviewed 2026-10-05 09:26:09.273201+00:00) predates the upstream re-run (2026-10-06 23:13:59.014883+00:00). Current validate status: `not captured`.
+
 ## Citation
 Balakirouchenane D et al., Population Pharmacokinetics/Pharmacodyn…, Cancers (2020)
   ·  DOI: [10.3390/cancers12040931](https://doi.org/10.3390/cancers12040931)
 
 ## Model component
-<dbs-pgx drug="dabrafenib" model-id="Dabrafenib_Balakirouchenane2020_base" status="needs_review" stale="false" population="adults with BRAF-mutated metastatic melanoma" measured-compound="dabrafenib" parameterization="apparent" topology="parent_metabolite"></dbs-pgx>
+<dbs-pgx drug="dabrafenib" model-id="Dabrafenib_Balakirouchenane2020_base" status="" stale="true" population="adults with metastatic BRAF-mutated solid tumors" measured-compound="" parameterization="" topology=""></dbs-pgx>
 
-**Model structure:** parent–metabolite model: parent with 2 compartment(s); metabolite hydroxy-dabrafenib: 2 compartment(s); formed from the central compartment; oral dose — template `PK_3M_9C`.  
-**Parameters:** 10 extracted.
+**Model structure:** —; no model was built for this record.  
+**Parameters:** 0 extracted.
 
-**Parameterization:** CL/F, Q/F, V1/F, V2/F — apparent, F unknown (apparent — bioavailability not identifiable).
+**Parameterization:** not captured.
 
 ## Parameters
-> ⚠️ This record is not accepted (current status `needs_review`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
+> ⚠️ This record is not accepted (current status `not captured`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
 
-| label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
-|---|---|---|---|---|---|---|---|---|---|---|
-| CL/F (L/h) | `Q27` · CL/F | 17.7 | L/h | 4.9166666666666665e-06 | [l] / [h] | not captured | exact (1.0) | Balakirouchenane_2020_table_2:row1:col1, Balakirouchenane_2020_table_2:row1:col2 | — | 21.9 (None% RSE) |
-| V2/F (L) | `Q290` · V1/F | 39.5 | L | 0.0395 | [l] | not captured | exact (1.0) | Balakirouchenane_2020_table_2:row2:col1, Balakirouchenane_2020_table_2:row2:col2 | — | not captured |
-| ka (1/h) | `Q49` · kabs | 1.8 | 1/h | 0.0005 | 1/h | not captured | exact (1.0) | Balakirouchenane_2020_table_2:row3:col1, Balakirouchenane_2020_table_2:row3:col2 | — | not captured |
-| Q/F (L/h) | `Q69` · Q/F | 3.85 | L/h | 1.0694444444444445e-06 | [l] / [h] | not captured | exact (1.0) | Balakirouchenane_2020_table_2:row4:col1, Balakirouchenane_2020_table_2:row4:col2 | — | not captured |
-| V4/F (L) | `Q290` · V1/F | 19.6 | L | 0.019600000000000003 | [l] | not captured | exact (1.0) | Balakirouchenane_2020_table_2:row5:col1, Balakirouchenane_2020_table_2:row5:col2 | — | not captured |
-| CLm/F (L/h) | `Q27` · CL/F | 22.8 | L/h | 6.333333333333333e-06 | [l] / [h] | not captured | exact (1.0) | Balakirouchenane_2020_table_2:row6:col1, Balakirouchenane_2020_table_2:row6:col2 | — | not captured |
-| V3/F (L) | `Q82` · V2/F | 5.23 | L | 0.00523 | [l] | not captured | exact (1.0) | Balakirouchenane_2020_table_2:row7:col1, Balakirouchenane_2020_table_2:row7:col2 | — | 43.0 (None% RSE) |
-| Qm/F (L/h) | `Q69` · Q/F | 7.39 | L/h | 2.0527777777777777e-06 | [l] / [h] | not captured | exact (1.0) | Balakirouchenane_2020_table_2:row8:col1, Balakirouchenane_2020_table_2:row8:col2 | — | not captured |
-| V5/F (L) | `Q82` · V2/F | 25.7 | L | 0.0257 | [l] | not captured | exact (1.0) | Balakirouchenane_2020_table_2:row9:col1, Balakirouchenane_2020_table_2:row9:col2 | — | not captured |
-| Tlag (h) | `Q83` · tlag | 0.50 | h | 1800.0 | [h] | not captured | exact (1.0) | Balakirouchenane_2020_table_2:row10:col1, Balakirouchenane_2020_table_2:row10:col2 | — | not captured |
-
-<details class="legend">
-<summary>Column legend — what each column means</summary>
-<table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>label (paper)</code></td><td>the row or statistic label exactly as printed in the paper (label_verbatim) — never normalised, so it can be found in the PDF.</td></tr><tr><td><code>Q-code · name</code></td><td>the ontology parameter this label was matched to (Q22 = clearance, Q27 = CL/F, Q49 = ka, Q57 = half-life, …) and its canonical name. The Q-code, not the label, is what scoring and cross-paper merging use.</td></tr><tr><td><code>value</code></td><td>the estimate as reported in the paper.</td></tr><tr><td><code>unit</code></td><td>the unit as printed (unit_verbatim).</td></tr><tr><td><code>value_si</code></td><td>the value converted to the canonical unit. Empty when no conversion was possible — usually an unparseable or missing unit.</td></tr><tr><td><code>unit_canonical</code></td><td>the canonical unit for that Q-code, i.e. what value_si is expressed in.</td></tr><tr><td><code>RSE%</code></td><td>relative standard error of the estimate, when the paper reports one.</td></tr><tr><td><code>link</code></td><td>how the label was matched to the Q-code, with confidence. exact / boundary / fuzzy / tv_prefix / caption_compartment / special_case are deterministic string matches; llm, llm_confirmed, llm_corrected involved the model; review and review_gapfill come from the secondary review tier, the latter filling a parameter the primary extraction missed; boundary_relink is a corrected match.</td></tr><tr><td><code>source</code></td><td>where in the paper the number came from: colN = that column of the located table, other_prose = running text, review = the secondary tier, pgx = a pharmacogenomic record.</td></tr><tr><td><code>covariates</code></td><td>covariate effects attached to this parameter (e.g. weight on CL).</td></tr><tr><td><code>IIV</code></td><td>inter-individual variability reported for this parameter.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>the field is absent from the KB artifact — nothing was recorded. This is NOT the same as zero or empty: the value is unknown, not measured to be nothing.</td></tr><tr><td><code>—</code></td><td>deliberately not shown: the column does not apply to this row.</td></tr><tr><td><code>not verified</code></td><td>the record is not in an accepted state (see the badge and the note above the table); the numbers are shown as extracted, not endorsed.</td></tr></tbody></table>
-</details>
+_No resolved parameters._
 
 ## Departures & gaps
 
-**Deviations:**
-- `apparent_assumption`: F=1, Fm=1, no molar correction (parameterization=apparent)
-
-**Interpretation flags:**
-- implicit units: 'ka (1/h)' → 1/h (from the paper text: "The parameter list provided in the prompt explicitly includes the unit in parentheses: 'ka (1/h) = 1.8'. Additionally, t")
-- apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=dabrafenib
-- template fit: PK_3M_9C — formed from central; parent 2, metabolites [2]
-- model-stage split: 'base dab/ohd model' is the base model of Balakirouchenane_2020 (paper reports 3 stages: base dab/ohd model, final dab/ohd model, final tra model); same population, different model-building step
-- row roles (LLM): model_class=compartmental; 24/24 row label(s) assigned, 84 linked by role; re-tagged trametinib→parent ×105, trametinib→hydroxy-dabrafenib ×39
-
 **Extraction notes:**
-- unparsed cell Balakirouchenane_2020_table_2:row11:col6 = '−0.827−0.215'
-- unparsed cell Balakirouchenane_2020_table_2:row12:col6 = '−0.879−0.168'
-- companion parameter table 2 transcribed (118 record(s))
-- LLM selected parameter table(s) 2, 3
+- unparsed cell Balakirouchenane_2020_table_4:row1:col1 = '9624 (8121–11676)'
+- unparsed cell Balakirouchenane_2020_table_4:row1:col2 = '7485 (3399–17712)'
+- unparsed cell Balakirouchenane_2020_table_4:row2:col1 = '7509.5 (4918–10300)'
+- unparsed cell Balakirouchenane_2020_table_4:row2:col2 = '5812 (2459–10300)'
+- unparsed cell Balakirouchenane_2020_table_4:row3:col1 = '16855 (13491–21976)'
+- unparsed cell Balakirouchenane_2020_table_4:row3:col2 = '13605 (5877–28012)'
+- unparsed cell Balakirouchenane_2020_table_4:row4:col1 = '54.5 (37–81)'
+- unparsed cell Balakirouchenane_2020_table_4:row4:col2 = '59 (20–90)'
+- unparsed cell Balakirouchenane_2020_table_4:row5:col1 = '25.9 (20.4–33.4)'
+- unparsed cell Balakirouchenane_2020_table_4:row5:col2 = '25.1 (19.6–40.9)'
+- unparsed cell Balakirouchenane_2020_table_4:row16:col1 = '268 (144–448)'
+- unparsed cell Balakirouchenane_2020_table_4:row16:col2 = '268 (111–750)'
+- unparsed cell Balakirouchenane_2020_table_4:row17:col1 = '55 (37–90)'
+- unparsed cell Balakirouchenane_2020_table_4:row17:col2 = '61 (20–89)'
+- unparsed cell Balakirouchenane_2020_table_4:row18:col1 = '25.9 (20.4–35.5)'
+- unparsed cell Balakirouchenane_2020_table_4:row18:col2 = '25.2 (19.6–40.9)'
+- companion parameter table 4 transcribed (26 record(s))
+- LLM selected parameter table(s) 4
+- dropped sensitivity-analysis table(s) 2, 3 from the LLM selection — perturbations of a model, not a model
 
 ## Validation
 
@@ -99,32 +89,6 @@ first reading `qwen3.6:27b-q8_0` — the numbers on this page are its, whatever 
 <table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>second reader</code></td><td>a model that re-read the paper independently, always from a different family than the first reading (scholarv2.secondary_for): a qwen primary is checked by gpt-oss:120b, a gpt-oss primary by qwen3.8:27b-mtp-q8_0 — two checkpoints of one family share their misreads, so agreement between them would mean little. A record can have several readers.</td></tr><tr><td><code>agreement</code></td><td>share of the compared fields that reader agreed on.</td></tr><tr><td><code>verdict</code></td><td>per reader: `confirmed` it agrees throughout · `partly confirmed` a non-structural field differs · `not confirmed` a structural one differs (clearance, a volume, ka, a lag) · `primary re-run` the first reading extracted nothing and was given one hinted retry.</td></tr><tr><td><code>combined</code></td><td>the record's verdict over ALL its readers: confirmed only when every reader that answered agrees, disputed as soon as one disagrees on a structural parameter. The most favourable reading is never taken — an extra reader must not be a way to find one that agrees.</td></tr><tr><td><code>kept</code></td><td>which reading the record holds. ALWAYS the first — a disagreement is a signal for a reviewer, never an automatic correction, so the numbers on this page are the first model's either way.</td></tr></tbody></table>
 </details>
 
-
-**Scholar closed-form checks:**
-
-| check | status | expected | obtained | ratio | tol | source |
-|---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 10 | not captured | not captured | not captured |
-| C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
-| C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
-| C5_dimension_Q27 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Balakirouchenane_2020_table_2:row1:col1', 'Balakirouchenane_2020_table_2:row1:col2'] |
-| C5_dimension_Q27 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Balakirouchenane_2020_table_2:row6:col1', 'Balakirouchenane_2020_table_2:row6:col2'] |
-| C5_dimension_Q290 | pass | [length] ** 3 | not captured | not captured | not captured | ['Balakirouchenane_2020_table_2:row2:col1', 'Balakirouchenane_2020_table_2:row2:col2'] |
-| C5_dimension_Q290 | pass | [length] ** 3 | not captured | not captured | not captured | ['Balakirouchenane_2020_table_2:row5:col1', 'Balakirouchenane_2020_table_2:row5:col2'] |
-| C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['Balakirouchenane_2020_table_2:row3:col1', 'Balakirouchenane_2020_table_2:row3:col2'] |
-| C5_dimension_Q69 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Balakirouchenane_2020_table_2:row4:col1', 'Balakirouchenane_2020_table_2:row4:col2'] |
-| C5_dimension_Q69 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Balakirouchenane_2020_table_2:row8:col1', 'Balakirouchenane_2020_table_2:row8:col2'] |
-| C5_dimension_Q82 | pass | [length] ** 3 | not captured | not captured | not captured | ['Balakirouchenane_2020_table_2:row7:col1', 'Balakirouchenane_2020_table_2:row7:col2'] |
-| C5_dimension_Q82 | pass | [length] ** 3 | not captured | not captured | not captured | ['Balakirouchenane_2020_table_2:row9:col1', 'Balakirouchenane_2020_table_2:row9:col2'] |
-| C5_dimension_Q83 | pass | [time] | not captured | not captured | not captured | ['Balakirouchenane_2020_table_2:row10:col1', 'Balakirouchenane_2020_table_2:row10:col2'] |
-| C7_apparent_coherence | pass | not captured | not captured | not captured | not captured | not captured |
-| C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
-| C9_phys_window_Q27 | pass | clearance within physiological range | 17.7 L/h | not captured | not captured | ['Balakirouchenane_2020_table_2:row1:col1', 'Balakirouchenane_2020_table_2:row1:col2'] |
-| C9_phys_window_Q27 | pass | clearance within physiological range | 22.8 L/h | not captured | not captured | ['Balakirouchenane_2020_table_2:row6:col1', 'Balakirouchenane_2020_table_2:row6:col2'] |
-| C9_phys_window_Q290 | pass | volume within physiological range | 39.5 L | not captured | not captured | ['Balakirouchenane_2020_table_2:row2:col1', 'Balakirouchenane_2020_table_2:row2:col2'] |
-| C9_phys_window_Q290 | pass | volume within physiological range | 19.6 L | not captured | not captured | ['Balakirouchenane_2020_table_2:row5:col1', 'Balakirouchenane_2020_table_2:row5:col2'] |
-| C9_phys_window_Q82 | pass | volume within physiological range | 5.23 L | not captured | not captured | ['Balakirouchenane_2020_table_2:row7:col1', 'Balakirouchenane_2020_table_2:row7:col2'] |
-| C9_phys_window_Q82 | pass | volume within physiological range | 25.7 L | not captured | not captured | ['Balakirouchenane_2020_table_2:row9:col1', 'Balakirouchenane_2020_table_2:row9:col2'] |
 
 **Reviewer per-scenario checks:**
 
@@ -163,25 +127,20 @@ first reading `qwen3.6:27b-q8_0` — the numbers on this page are its, whatever 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
 <tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_dabrafenib/Dabrafenib_Balakirouchenane2020_base/Dabrafenib_Balakirouchenane2020_base_modelica.zip" download>Dabrafenib_Balakirouchenane2020_base_modelica.zip</a> <span class="pk-size">(4.6 kB)</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_dabrafenib/Dabrafenib_Balakirouchenane2020_base/Dabrafenib_Balakirouchenane2020_base_fmi.zip" download>Dabrafenib_Balakirouchenane2020_base_fmi.zip</a> <span class="pk-size">(4.4 kB)</span><br><a href="models/fmu/PK_3M_9C.fmu" download>PK_3M_9C.fmu</a> <span class="pk-size">(1.4 MB, shared)</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><a href="drugs/drug_dabrafenib/Dabrafenib_Balakirouchenane2020_base/Dabrafenib_Balakirouchenane2020_base_fmi.zip" download>Dabrafenib_Balakirouchenane2020_base_fmi.zip</a> <span class="pk-size">(4.4 kB)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_dabrafenib/Dabrafenib_Balakirouchenane2020_base/Dabrafenib_Balakirouchenane2020_base_matlab.zip" download>Dabrafenib_Balakirouchenane2020_base_matlab.zip</a> <span class="pk-size">(3.8 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
 <tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_dabrafenib/Dabrafenib_Balakirouchenane2020_base/Dabrafenib_Balakirouchenane2020_base_sbml.zip" download>Dabrafenib_Balakirouchenane2020_base_sbml.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
 <tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_dabrafenib/Dabrafenib_Balakirouchenane2020_base/Dabrafenib_Balakirouchenane2020_base_cellml.zip" download>Dabrafenib_Balakirouchenane2020_base_cellml.zip</a> <span class="pk-size">(3.5 kB)</span></td></tr>
 </tbody></table>
 <p>Each archive holds the model source, a script that simulates it against the appropriate library, and a README describing both and how to run them.</p>
-<p><b>FMI is two downloads.</b> The archive holds this record's parameters and its driver; the simulator itself is <code>PK_3M_9C.fmu</code>, one compiled template shared by every model of this structure. Take the FMU once, keep it beside the script (or pass <code>--fmu PATH</code>). Running it reproduces the model-specific FMU exactly.</p>
-</div><figure class="pk-models-diagram"><img src="drugs/drug_dabrafenib/Dabrafenib_Balakirouchenane2020_base/Dabrafenib_Balakirouchenane2020_base.svg" alt="Dabrafenib_Balakirouchenane2020_base diagram"><figcaption>Model diagram (Modelica) using Pharmacolibrary v26.09 components, rendered by OpenModelica 1.26.7.</figcaption></figure></div>
+</div></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-**Administration: oral** — 75 mg, single dose, first-order absorption (ka 1.8 /h, lag 30 min, F 1). Doses in the paper: 75, 150 mg.
-
-<dbs-fmusim paramsurl="drugs/drug_dabrafenib/Dabrafenib_Balakirouchenane2020_base/Dabrafenib_Balakirouchenane2020_base_params.json" metaurl="assets/fmu/PK_3M_9C.vr.json" wasmurl="assets/fmu/PK_3M_9C.js" controlsurl="drugs/drug_dabrafenib/Dabrafenib_Balakirouchenane2020_base/Dabrafenib_Balakirouchenane2020_base_sim_controls.json"></dbs-fmusim>
-
-<sub>Runs this record's model in the browser as WebAssembly. Sliders start at the extracted values; the reference check compares the browser's peak against the FMPy result recorded when the record was built, and is withheld once a value has been edited. Template `PK_3M_9C` · parameters `Dabrafenib_Balakirouchenane2020_base_params.json` · controls `Dabrafenib_Balakirouchenane2020_base_sim_controls.json`. A slider marked *simulator value* is running on the template's own default because this record does not pin that parameter.</sub>
+_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-09-26 20:40 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-06 23:13 UTC</sub>

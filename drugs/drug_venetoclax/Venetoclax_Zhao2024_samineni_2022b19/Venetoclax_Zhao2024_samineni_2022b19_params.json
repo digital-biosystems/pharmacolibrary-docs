@@ -1,0 +1,37 @@
+{
+ "dose_source": "paper",
+ "model_id": "Venetoclax_Zhao2024_samineni_2022b19",
+ "molar_masses": {
+  "central.C": 0.86845
+ },
+ "note": "Values for the shared PK_1C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "paper_doses_kind": "range",
+ "paper_doses_mg": [
+  10.0,
+  1200.0
+ ],
+ "parameters": {
+  "Cl": 5.173611111111111e-06,
+  "F": 1.0,
+  "MM": 0.86845,
+  "Tlag": 0.0,
+  "VdPerKg": 0.002585714285714286,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 1e-05,
+  "ka": 4.4444444444444447e-05,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 28049.699398797595
+ },
+ "reference_peaks": {
+  "central.C": 2.493685042872814e-05
+ },
+ "stop_time": 259200.0,
+ "template": "PK_1C_enteral",
+ "template_fmu": "PK_1C_enteral.fmu"
+}

@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N06A&quot;,&quot;href&quot;:&quot;atc/N06A.md&quot;},{&quot;label&quot;:&quot;moclobemide&quot;,&quot;href&quot;:&quot;drugs/drug_moclobemide/&quot;},{&quot;label&quot;:&quot;Raaflaub_1984 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Moclobemide_Gwka2019_reference&quot;,&quot;label&quot;:&quot;G\u0142\u00f3wka_2019_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_moclobemide/Moclobemide_Gwka2019_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Moclobemide_Gwka2019_reference&quot;,&quot;label&quot;:&quot;G\u0142\u00f3wka_2019_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_moclobemide/Moclobemide_Gwka2019_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # moclobemide — `Moclobemide_Raaflaub1984_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.4). The first reading is what the record holds.">cross-check: partial</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.4). The first reading is what the record holds.">cross-check: partial</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -25,25 +25,28 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on bioavai
 
 <sub>reviewed by rule template (no LLM)</sub>
 
+> ⚠️ **STALE** — review status `needs_review` (reviewed 2026-09-28 14:39:05.683249+00:00) predates the upstream re-run (2026-10-06 23:42:32.147018+00:00). Current validate status: `rejected`.
+
 ## Citation
 Raaflaub J et al., Single-dose pharmacokinetics of the MAO…, Arzneimittel-Forschung (1984)
 
 ## Model component
-<dbs-pgx drug="moclobemide" model-id="Moclobemide_Raaflaub1984_reference" status="needs_review" stale="false" population="healthy adults" measured-compound="moclobemide" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<dbs-pgx drug="moclobemide" model-id="Moclobemide_Raaflaub1984_reference" status="rejected" stale="true" population="healthy adults" measured-compound="moclobemide" parameterization="mechanistic" topology="1C"></dbs-pgx>
 
 **Model structure:** 1-compartment; no model was built for this record.  
-**Parameters:** 5 extracted.
+**Parameters:** 6 extracted.
 
 **Parameterization:** mechanistic.
 
 ## Parameters
-> ⚠️ This record is not accepted (current status `needs_review`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
+> ⚠️ This record is not accepted (current status `rejected`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| t 1/2 beta | `Q60` · t1/2β | 1 | h | 3600.0 | [h] | not captured | llm_corrected (0.6) | Raaflaub_1984:abstract | — | not captured |
+| dosage | `Q310` · D1 | 50 | mg | not captured | [mg] | not captured | llm (0.6) | Raaflaub_1984:abstract | — | not captured |
+| t 1/2 beta (range lower) | `Q60` · t1/2β | 0.79 | h | 2844.0 | [h] | not captured | llm_corrected (0.6) | Raaflaub_1984:abstract | — | not captured |
+| Vss (range lower) | `Q65` · Vss | 0.81 | l/kg | 0.05670000000000001 | [l] / [kg] | not captured | exact (1.0) | Raaflaub_1984:abstract | — | not captured |
 | oral bioavailability | `Q40` · Fab | 44 | % | not captured | not captured | not captured | exact (1.0) | Raaflaub_1984:abstract | — | not captured |
-| tmax-values | `Q56` · tmax | 1 | h | 3600.0 | [h] | not captured | llm_confirmed (0.6) | Raaflaub_1984:abstract | — | not captured |
 | relatively high systemic clearance | `Q22` · CL | 63.5 | l/h | 1.763888888888889e-05 | L/h | not captured | review_gapfill (0.7) | Główka_2019:review | — | not captured |
 | t lag [h] | `Q83` · tlag | 0.202 | h | 727.2 | h | not captured | review_gapfill (0.7) | Główka_2019:review | — | not captured |
 
@@ -55,9 +58,13 @@ Raaflaub J et al., Single-dose pharmacokinetics of the MAO…, Arzneimittel-Fors
 ## Departures & gaps
 
 **Interpretation flags:**
-- dropped unlinked row (NIL): 'dosage' — extend the ontology if this is a real PK parameter (source ['Raaflaub_1984:abstract'])
-- dropped value-less row: 'Vss'
-- dropped unlinked row (NIL): 'absorbed' — extend the ontology if this is a real PK parameter (source ['Raaflaub_1984:abstract'])
+- unit_dimension_mismatch: 'dosage' → Q310 (unit '[mass]' vs ontology '[time]') — route to review
+- dropped unlinked row (NIL): 'ampoule volume' — extend the ontology if this is a real PK parameter (source ['Raaflaub_1984:abstract'])
+- dropped value-less row: 't 1/2 beta'
+- dropped duplicate Q60 ('t 1/2 beta (range upper)', value 1.34) — already have one for this compound
+- dropped duplicate Q65 ('Vss (range upper)', value 1.25) — already have one for this compound
+- dropped duplicate Q40 ('absorbed on average', value 95) — already have one for this compound
+- dropped value-less row: 'tmax-values'
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=moclobemide
 - held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
 - structure disagreement: deterministic 1C vs LLM 2C — review compartment count
@@ -69,7 +76,7 @@ Raaflaub J et al., Single-dose pharmacokinetics of the MAO…, Arzneimittel-Fors
 - gap-filled Q83 (tlag) from Główka_2019's review values (primary lacked it)
 
 **Extraction notes:**
-- no GROBID TEI available — transcribed from abstract in Raaflaub_1984_metadata.yaml (6 record(s)); values are summary statistics, not a fitted model
+- no GROBID TEI available — transcribed from abstract in Raaflaub_1984_metadata.yaml (12 record(s)); values are summary statistics, not a fitted model
 
 ## Validation
 
@@ -103,15 +110,18 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 3 | not captured | not captured | not captured |
+| C0_has_structural_params | pass | not captured | 4 | not captured | not captured | not captured |
+| C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | fail | not captured | not captured | not captured | not captured | not captured |
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Główka_2019:review'] |
-| C5_dimension_Q56 | pass | [time] | not captured | not captured | not captured | ['Raaflaub_1984:abstract'] |
+| C5_dimension_Q310 | fail | [mass] | mg | not captured | not captured | ['Raaflaub_1984:abstract'] |
 | C5_dimension_Q60 | pass | [time] | not captured | not captured | not captured | ['Raaflaub_1984:abstract'] |
+| C5_dimension_Q65 | pass | [length] ** 3 | not captured | not captured | not captured | ['Raaflaub_1984:abstract'] |
 | C5_dimension_Q83 | pass | [time] | not captured | not captured | not captured | ['Główka_2019:review'] |
 | C6_cl_magnitude | pass | &lt;= 90.0 L/h | 63.5 | not captured | not captured | ['Główka_2019:review'] |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
 | C9_phys_window_Q22 | pass | clearance within physiological range | 63.5 L/h | not captured | not captured | ['Główka_2019:review'] |
+| C9_phys_window_Q65 | pass | volume within physiological range | 56.7 L | not captured | not captured | ['Raaflaub_1984:abstract'] |
 
 <details class="legend">
 <summary>Check legend — what each column means</summary>
@@ -125,19 +135,9 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
-## Downloadable models
+## Models
 
-<div class="pk-models-grid"><div class="pk-models-table">
-<table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-</tbody></table>
-<p>No bundles have been generated for this record yet. When the engineer emits them they appear here automatically — this page reports what is on disk and generates nothing itself.</p>
-</div></div>
+<p>No downloads: this record is <b>rejected</b>, so it is not published as a model. Any archives generated for it before the verdict have been removed — a download outlives the page that explains it.</p>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
@@ -146,4 +146,4 @@ _No web simulator for this record: its structure has no shared WebAssembly templ
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-09-24 00:52 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-06 23:42 UTC</sub>

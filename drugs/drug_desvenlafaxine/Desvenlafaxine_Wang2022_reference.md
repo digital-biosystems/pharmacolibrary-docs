@@ -1,10 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N06A&quot;,&quot;href&quot;:&quot;atc/N06A.md&quot;},{&quot;label&quot;:&quot;desvenlafaxine&quot;,&quot;href&quot;:&quot;drugs/drug_desvenlafaxine/&quot;},{&quot;label&quot;:&quot;Wang_2022 \u00b7 reference&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Desvenlafaxine_MangasSanjun2023_reference&quot;,&quot;label&quot;:&quot;Mangas-Sanju\u00e1n_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_desvenlafaxine/Desvenlafaxine_MangasSanjun2023_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # desvenlafaxine — `Desvenlafaxine_Wang2022_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.636). The first reading is what the record holds.">cross-check: partial</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.636). The first reading is what the record holds.">cross-check: partial</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -24,30 +25,34 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on bioavai
 
 <sub>reviewed by glm-5.3-flash</sub>
 
+> ⚠️ **STALE** — review status `rejected` (reviewed 2026-10-05 09:26:08.003993+00:00) predates the upstream re-run (2026-10-06 22:21:41.553550+00:00). Current validate status: `needs_review`.
+
+> **Dose compound ≠ measured compound:** dosed `venlafaxine`, measured `O-desmethyl venlafaxine`.
+
 ## Citation
 Wang Z et al., Joint population pharmacokinetic modeli…, Frontiers in pharmacology (2022)
   ·  DOI: [10.3389/fphar.2022.978202](https://doi.org/10.3389/fphar.2022.978202)
 
 ## Model component
-<dbs-pgx drug="desvenlafaxine" model-id="Desvenlafaxine_Wang2022_reference" status="rejected" stale="false" population="healthy volunteers and psychiatric patients" measured-compound="venlafaxine" parameterization="apparent" topology="parent_metabolite"></dbs-pgx>
+<dbs-pgx drug="desvenlafaxine" model-id="Desvenlafaxine_Wang2022_reference" status="needs_review" stale="true" population="healthy volunteers and psychiatric patients" measured-compound="O-desmethyl venlafaxine" parameterization="apparent" topology="parent_metabolite"></dbs-pgx>
 
 **Model structure:** parent + metabolite; no model was built for this record.  
 **Parameters:** 7 extracted.
 
-**Parameterization:** CL/F, CLm/F, V/F, Vm/F — apparent, F unknown (apparent — bioavailability not identifiable).
+**Parameterization:** CL/F, V/F, V1/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
 ## Parameters
-> ⚠️ This record is not accepted (current status `rejected`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
+> ⚠️ This record is not accepted (current status `needs_review`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| CL/F, L/h | `Q27` · CL/F | 80.9 | L/h | 2.2472222222222226e-05 | [l] / [h] | not captured | exact (1.0) | Wang_2022_table_p5_1:row0:col1 | — | not captured |
-| V/F, L | `Q76` · V/F | 628 | L | 0.628 | [l] | not captured | exact (1.0) | Wang_2022_table_p5_1:row1:col1 | — | not captured |
-| CLm/F, L/h | `Q351` · CLm/F | 22.1 | L/h | 6.138888888888889e-06 | [l] / [h] | not captured | exact (1.0) | Wang_2022_table_p5_1:row2:col1 | — | not captured |
-| Vm/F, L | `Q367` · Vm/F | 238 | L | 0.23800000000000002 | [l] | not captured | exact (1.0) | Wang_2022_table_p5_1:row3:col1 | — | not captured |
-| Ka, 1/h | `Q49` · kabs | 0.63 | 1/h | 0.000175 | [1] / [h] | not captured | exact (1.0) | Wang_2022_table_p5_1:row4:col1 | — | not captured |
-| F | `Q40` · Fab | 0.048 | not captured | not captured | not captured | not captured | exact (1.0) | Wang_2022_table_p5_1:row5:col1 | — | not captured |
-| θamisulpride on CLm/F | `Q351` · CLm/F | 0.593 | L/h | 1.647222222222222e-07 | [l] / [h] | not captured | llm_confirmed (0.6) | Wang_2022_table_p5_1:row8:col1 | — | not captured |
+| CL/F, L/h | `Q27` · CL/F | 80.9 | L/h | 2.2472222222222226e-05 | [l] / [h] | not captured | exact (1.0) | T2:row1:col1 | — | 0.219 (None% RSE) |
+| V/F, L | `Q76` · V/F | 628 | L | 0.628 | [l] | not captured | exact (1.0) | T2:row2:col1 | — | 0.106 (None% RSE) |
+| CLM/F, L/h | `Q27` · CL/F | 22.1 | L/h | 6.138888888888889e-06 | [l] / [h] | not captured | exact (1.0) | T2:row3:col1 | — | not captured |
+| V M/F, L | `Q290` · V1/F | 238 | L | 0.23800000000000002 | [l] | not captured | exact (1.0) | T2:row4:col1 | — | not captured |
+| Ka, 1/h | `Q49` · kabs | 0.63 | 1/h | 0.000175 | [1] / [h] | not captured | exact (1.0) | T2:row5:col1 | — | not captured |
+| FP | `Q45` · fm | 0.048 | not captured | not captured | not captured | not captured | exact (1.0) | T2:row6:col1 | — | not captured |
+| θamisulpride on CLM/F | `Q22` · CL | 0.593 | not captured | not captured | not captured | not captured | llm_confirmed (0.6) | T2:row9:col1 | — | 0.156 (None% RSE) |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -57,33 +62,36 @@ Wang Z et al., Joint population pharmacokinetic modeli…, Frontiers in pharmaco
 ## Departures & gaps
 
 **Interpretation flags:**
-- compound tags: 4 row(s) → O-desmethyl venlafaxine (m_suffix 4)
-- dropped duplicate Q27 ('θhealthy state on CL/F', value '0.617') — already have one for this compound
-- dropped unlinked row (NIL): 'θamisulpride on CL/F' — extend the ontology if this is a real PK parameter (source ['Wang_2022_table_p5_1:row7:col1'])
-- dropped duplicate Q27 ('CL/F', value '0.219') — already have one for this compound
-- dropped duplicate Q76 ('V/F', value '0.106') — already have one for this compound
-- dropped duplicate Q351 ('CLm/F', value '0.156') — already have one for this compound
-- dropped duplicate Q367 ('Vm/F', value '1.38') — already have one for this compound
-- unit inherited for CLm/F (Q351): 'L/h' from a same-Q-code sibling (this row's label had no unit)
-- apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=venlafaxine
+- table section iiv: 'CL/F' routed out of structural estimates ('Interindividual variability, %CV')
+- table section iiv: 'V/F' routed out of structural estimates ('Interindividual variability, %CV')
+- table section iiv: 'CLM/F' routed out of structural estimates ('Interindividual variability, %CV')
+- table section iiv: 'V M/F' routed out of structural estimates ('Interindividual variability, %CV')
+- table section residual_error: 'Proportional error on VEN' routed out of structural estimates ('Residual variability, % CV')
+- table section residual_error: 'Proportional error on ODV' routed out of structural estimates ('Residual variability, % CV')
+- dropped duplicate Q27 ('θmorbid state on CL/F', value '0.617') — already have one for this compound
+- dropped duplicate Q27 ('θamisulpride on CL/F', value '0.392') — already have one for this compound
+- metabolite o-desmethyl venlafaxine (desvenlafaxine): Q351→Q22 — the model states fm, so its CL/V are not fm-divided
+- apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=O-desmethyl venlafaxine
 - template fit: PK_3M_3C — first-pass formation; parent 1 + hepatic, metabolites [1] (site presystemic: 'Results and conclusion: Concentrations of VEN and ODV were well described with a one-compartment model incorporating fir')
+- row roles (LLM): model_class=compartmental; 15/15 row label(s) assigned, 6 linked by role; re-tagged parent→O-desmethyl venlafaxine (desvenlafaxine) ×7
+- review gap-fill skipped: this record measures 'O-desmethyl venlafaxine', not desvenlafaxine — the review values are the parent's
 
 **Extraction notes:**
-- no TEI final-model table id; trying text-pointer table recovery
-- unparsed cell Wang_2022_table_p5_1:row0:col2 = '9.7%'
-- unparsed cell Wang_2022_table_p5_1:row1:col2 = '5.8%'
-- unparsed cell Wang_2022_table_p5_1:row2:col2 = '6.6%'
-- unparsed cell Wang_2022_table_p5_1:row3:col2 = '33.1%'
-- unparsed cell Wang_2022_table_p5_1:row5:col2 = '18.3%'
-- unparsed cell Wang_2022_table_p5_1:row6:col2 = '5.9%'
-- unparsed cell Wang_2022_table_p5_1:row7:col2 = '17.8%'
-- unparsed cell Wang_2022_table_p5_1:row8:col2 = '28.7%'
-- unparsed cell Wang_2022_table_p5_1:row10:col2 = '13.4%'
-- unparsed cell Wang_2022_table_p5_1:row11:col2 = '35.2%'
-- unparsed cell Wang_2022_table_p5_1:row12:col2 = '19.4%'
-- unparsed cell Wang_2022_table_p5_1:row13:col2 = '39.3%'
-- unparsed cell Wang_2022_table_p5_1:row15:col2 = '8.5%'
-- unparsed cell Wang_2022_table_p5_1:row16:col2 = '13.6%'
+- unparsed cell T2:row1:col2 = '9.7%'
+- unparsed cell T2:row2:col2 = '5.8%'
+- unparsed cell T2:row3:col2 = '6.6%'
+- unparsed cell T2:row4:col2 = '33.1%'
+- unparsed cell T2:row6:col2 = '18.3%'
+- unparsed cell T2:row7:col2 = '5.9%'
+- unparsed cell T2:row8:col2 = '17.8%'
+- unparsed cell T2:row9:col2 = '28.7%'
+- unparsed cell T2:row11:col2 = '13.4%'
+- unparsed cell T2:row12:col2 = '35.2%'
+- unparsed cell T2:row13:col2 = '19.4%'
+- unparsed cell T2:row14:col2 = '39.3%'
+- unparsed cell T2:row16:col2 = '8.5%'
+- unparsed cell T2:row17:col2 = '13.6%'
+- LLM selected parameter table(s) 2
 
 ## Validation
 
@@ -118,16 +126,18 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 | C0_has_structural_params | pass | not captured | 7 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
-| C2_base_Q40 | fail | 0.048 | 81.0 | 1687.5 | 0.05 | footnote reference category |
-| C5_dimension_Q27 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Wang_2022_table_p5_1:row0:col1'] |
-| C5_dimension_Q351 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Wang_2022_table_p5_1:row2:col1'] |
-| C5_dimension_Q367 | pass | [length] ** 3 | not captured | not captured | not captured | ['Wang_2022_table_p5_1:row3:col1'] |
-| C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['Wang_2022_table_p5_1:row4:col1'] |
-| C5_dimension_Q76 | pass | [length] ** 3 | not captured | not captured | not captured | ['Wang_2022_table_p5_1:row1:col1'] |
-| C7_apparent_coherence | fail | F==1, Fm==1, no molar corr. | absolute F=0.048 with apparent parameterization | not captured | not captured | not captured |
+| C5_dimension_Q27 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['T2:row1:col1'] |
+| C5_dimension_Q27 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['T2:row3:col1'] |
+| C5_dimension_Q290 | pass | [length] ** 3 | not captured | not captured | not captured | ['T2:row4:col1'] |
+| C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['T2:row5:col1'] |
+| C5_dimension_Q76 | pass | [length] ** 3 | not captured | not captured | not captured | ['T2:row2:col1'] |
+| C5_unit_missing_Q22 | fail | [length] ** 3 / [time] | not captured | not captured | not captured | ['T2:row9:col1'] |
+| C7_apparent_coherence | pass | not captured | not captured | not captured | not captured | not captured |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
-| C9_phys_window_Q27 | pass | clearance within physiological range | 80.9 L/h | not captured | not captured | ['Wang_2022_table_p5_1:row0:col1'] |
-| C9_phys_window_Q76 | pass | volume within physiological range | 628 L | not captured | not captured | ['Wang_2022_table_p5_1:row1:col1'] |
+| C9_phys_window_Q27 | pass | clearance within physiological range | 80.9 L/h | not captured | not captured | ['T2:row1:col1'] |
+| C9_phys_window_Q27 | pass | clearance within physiological range | 22.1 L/h | not captured | not captured | ['T2:row3:col1'] |
+| C9_phys_window_Q290 | pass | volume within physiological range | 238 L | not captured | not captured | ['T2:row4:col1'] |
+| C9_phys_window_Q76 | pass | volume within physiological range | 628 L | not captured | not captured | ['T2:row2:col1'] |
 
 <details class="legend">
 <summary>Check legend — what each column means</summary>
@@ -141,9 +151,19 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
-## Models
+## Downloadable models
 
-<p>No downloads: this record is <b>rejected</b>, so it is not published as a model. Any archives generated for it before the verdict have been removed — a download outlives the page that explains it.</p>
+<div class="pk-models-grid"><div class="pk-models-table">
+<table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
+</tbody></table>
+<p>No bundles have been generated for this record yet. When the engineer emits them they appear here automatically — this page reports what is on disk and generates nothing itself.</p>
+</div></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
@@ -152,4 +172,4 @@ _No web simulator for this record: its structure has no shared WebAssembly templ
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-07-15 11:28 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-06 22:21 UTC</sub>

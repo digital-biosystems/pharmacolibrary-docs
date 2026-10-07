@@ -1,0 +1,32 @@
+{
+ "dose_source": "WHO ATC DDD 0.25 mg oral (N05CD05)",
+ "model_id": "Triazolam_van2011_reference",
+ "molar_masses": {
+  "central.C": 0.34320999999999996
+ },
+ "note": "Values for the shared PK_1C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "parameters": {
+  "Cl": 1.4027777777777779e-05,
+  "F": 1.0,
+  "MM": 0.34320999999999996,
+  "Tlag": 1753.2,
+  "VdPerKg": 0.04585714285714285,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 2.5e-07,
+  "ka": 0.00013000000000000002,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 29434.86973947896
+ },
+ "reference_peaks": {
+  "central.C": 6.923361086567212e-08
+ },
+ "stop_time": 864000.0,
+ "template": "PK_1C_enteral",
+ "template_fmu": "PK_1C_enteral.fmu"
+}

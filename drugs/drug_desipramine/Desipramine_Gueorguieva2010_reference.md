@@ -1,11 +1,10 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N06A&quot;,&quot;href&quot;:&quot;atc/N06A.md&quot;},{&quot;label&quot;:&quot;desipramine&quot;,&quot;href&quot;:&quot;drugs/drug_desipramine/&quot;},{&quot;label&quot;:&quot;Gueorguieva_2010 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Desipramine_Gueorguieva2010_reference&quot;,&quot;label&quot;:&quot;Gueorguieva_2010_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_desipramine/Desipramine_Gueorguieva2010_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # desipramine — `Desipramine_Gueorguieva2010_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.444). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.444). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -13,7 +12,7 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
-**Model:** A simulatable model was generated — see the **Models** and **Simulation** tabs.
+**Model:** No model was generated from this record.
 
 ### Reviewer guidance
 
@@ -25,15 +24,17 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on `parame
 
 <sub>reviewed by rule template (no LLM)</sub>
 
+> ⚠️ **STALE** — review status `needs_review` (reviewed 2026-09-28 14:37:31.700225+00:00) predates the upstream re-run (2026-10-06 22:18:01.323926+00:00). Current validate status: `needs_review`.
+
 ## Citation
 Gueorguieva I et al., Desipramine, substrate for CYP2D6 activ…, British journal of clinical… (2010)
   ·  DOI: [10.1111/j.1365-2125.2010.03731.x](https://doi.org/10.1111/j.1365-2125.2010.03731.x)
 
 ## Model component
-<dbs-pgx drug="desipramine" model-id="Desipramine_Gueorguieva2010_reference" status="needs_review" stale="false" population="healthy subjects" measured-compound="desipramine" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<dbs-pgx drug="desipramine" model-id="Desipramine_Gueorguieva2010_reference" status="needs_review" stale="true" population="healthy adults" measured-compound="desipramine" parameterization="mechanistic" topology="2C"></dbs-pgx>
 
-**Model structure:** 2-compartment, IV mammillary model — template `PK_2C`.  
-**Parameters:** 5 extracted.
+**Model structure:** 2-compartment; no model was built for this record.  
+**Parameters:** 4 extracted.
 
 **Parameterization:** mechanistic.
 
@@ -42,11 +43,10 @@ Gueorguieva I et al., Desipramine, substrate for CYP2D6 activ…, British journa
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| CL (l h -1 ) | `Q22` · CL | 16 | l h -1 | 4.444444444444444e-06 | [l] / [h] | not captured | exact (1.0) | tab_0:row4:col1, tab_0:row4:col2, tab_0:row4:col3, tab_0:row4:col4 | — | not captured |
-| V1 (l) | `Q63` · V1 | 22 | l | 0.022 | [l] | not captured | exact (1.0) | tab_0:row5:col1, tab_0:row5:col2, tab_0:row5:col3, tab_0:row5:col4 | — | not captured |
-| Q (l h -1 ) | `Q30` · Q | 13 | l h -1 | 3.6111111111111115e-06 | [l] / [h] | not captured | exact (1.0) | tab_0:row6:col1, tab_0:row6:col2 | — | not captured |
-| V2 (l) | `Q64` · V2 | 13 | l | 0.013000000000000001 | [l] | not captured | exact (1.0) | tab_0:row7:col1, tab_0:row7:col2 | — | not captured |
-| Plasma within-subject variability | `Q313` · IOV | 7 | not captured | not captured | not captured | not captured | boundary (0.8) | tab_0:row10:col1, tab_0:row10:col2 | — | not captured |
+| CL (l h -1 ) | `Q22` · CL | 111 | l h -1 | 3.0833333333333335e-05 | [l] / [h] | not captured | exact (1.0) | tab_0:row4:col1, tab_0:row4:col2, tab_0:row4:col4 | — | 73 (None% RSE) |
+| V1 (l) | `Q63` · V1 | 1900 | l | 1.9000000000000001 | [l] | not captured | exact (1.0) | tab_0:row5:col1, tab_0:row5:col2, tab_0:row5:col4 | — | 58 (None% RSE) |
+| Q (l h -1 ) | `Q30` · Q | 58 | l h -1 | 1.611111111111111e-05 | [l] / [h] | not captured | exact (1.0) | tab_0:row6:col1, tab_0:row6:col2 | — | not captured |
+| V2 (l) | `Q64` · V2 | 1050 | l | 1.05 | [l] | not captured | exact (1.0) | tab_0:row7:col1, tab_0:row7:col2 | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -56,11 +56,19 @@ Gueorguieva I et al., Desipramine, substrate for CYP2D6 activ…, British journa
 ## Departures & gaps
 
 **Interpretation flags:**
+- table section iiv: 'CL (l h -1 )' routed out of structural estimates ('Between-subject')
+- table section iiv: 'V1 (l)' routed out of structural estimates ('Between-subject')
+- column 'optimal sampling times (h)' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
+- routed 'Plasma within-subject variability' → Q317 (add_error) to residual_error — variability estimate, not a structural parameter
+- dropped unlinked row (NIL): 'Intermediate metabolizers' — extend the ontology if this is a real PK parameter (source ['Gueorguieva_2010_table_2:row0:col1', 'Gueorguieva_2010_table_2:row0:col2', 'Gueorguieva_2010_table_2:row0:col3', 'Gueorguieva_2010_table_2:row0:col4', 'Gueorguieva_2010_table_2:row0:col5', 'Gueorguieva_2010_table_2:row0:col6', 'Gueorguieva_2010_table_2:row0:col7', 'Gueorguieva_2010_table_2:row0:col8', 'Gueorguieva_2010_table_2:row5:col1', 'Gueorguieva_2010_table_2:row5:col2', 'Gueorguieva_2010_table_2:row5:col3', 'Gueorguieva_2010_table_2:row5:col4', 'Gueorguieva_2010_table_2:row5:col5', 'Gueorguieva_2010_table_2:row5:col6', 'Gueorguieva_2010_table_2:row5:col7', 'Gueorguieva_2010_table_2:row5:col8'])
+- dropped unlinked row (NIL): 'Extensive metabolizers' — extend the ontology if this is a real PK parameter (source ['Gueorguieva_2010_table_2:row1:col1', 'Gueorguieva_2010_table_2:row1:col2', 'Gueorguieva_2010_table_2:row1:col3', 'Gueorguieva_2010_table_2:row1:col4', 'Gueorguieva_2010_table_2:row1:col5', 'Gueorguieva_2010_table_2:row1:col6', 'Gueorguieva_2010_table_2:row1:col7', 'Gueorguieva_2010_table_2:row1:col8', 'Gueorguieva_2010_table_2:row6:col1', 'Gueorguieva_2010_table_2:row6:col2', 'Gueorguieva_2010_table_2:row6:col3', 'Gueorguieva_2010_table_2:row6:col4', 'Gueorguieva_2010_table_2:row6:col5', 'Gueorguieva_2010_table_2:row6:col6', 'Gueorguieva_2010_table_2:row6:col7', 'Gueorguieva_2010_table_2:row6:col8'])
+- dropped unlinked row (NIL): 'Ultrarapid metabolizers' — extend the ontology if this is a real PK parameter (source ['Gueorguieva_2010_table_2:row2:col1', 'Gueorguieva_2010_table_2:row2:col2', 'Gueorguieva_2010_table_2:row2:col3', 'Gueorguieva_2010_table_2:row2:col4', 'Gueorguieva_2010_table_2:row2:col5', 'Gueorguieva_2010_table_2:row2:col6', 'Gueorguieva_2010_table_2:row2:col7', 'Gueorguieva_2010_table_2:row2:col8', 'Gueorguieva_2010_table_2:row7:col1', 'Gueorguieva_2010_table_2:row7:col2', 'Gueorguieva_2010_table_2:row7:col3', 'Gueorguieva_2010_table_2:row7:col4', 'Gueorguieva_2010_table_2:row7:col5', 'Gueorguieva_2010_table_2:row7:col6', 'Gueorguieva_2010_table_2:row7:col7', 'Gueorguieva_2010_table_2:row7:col8'])
+- dropped value-less row: 'Standard error expressed as percent coefficient of variation.'
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=desipramine
 
 **Extraction notes:**
-- unparsed cell tab_0:row3:col1 = '0.15 17'
-- unparsed cell tab_0:row8:col1 = '0.13 43'
+- companion parameter table 2 transcribed (48 record(s))
+- LLM selected parameter table(s) 2
 
 ## Validation
 
@@ -93,18 +101,18 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 5 | not captured | not captured | not captured |
+| C0_has_structural_params | pass | not captured | 4 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
-| C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['tab_0:row4:col1', 'tab_0:row4:col2', 'tab_0:row4:col3', 'tab_0:row4:col4'] |
+| C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['tab_0:row4:col1', 'tab_0:row4:col2', 'tab_0:row4:col4'] |
 | C5_dimension_Q30 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['tab_0:row6:col1', 'tab_0:row6:col2'] |
-| C5_dimension_Q63 | pass | [length] ** 3 | not captured | not captured | not captured | ['tab_0:row5:col1', 'tab_0:row5:col2', 'tab_0:row5:col3', 'tab_0:row5:col4'] |
+| C5_dimension_Q63 | pass | [length] ** 3 | not captured | not captured | not captured | ['tab_0:row5:col1', 'tab_0:row5:col2', 'tab_0:row5:col4'] |
 | C5_dimension_Q64 | pass | [length] ** 3 | not captured | not captured | not captured | ['tab_0:row7:col1', 'tab_0:row7:col2'] |
-| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 16.0 | not captured | not captured | ['tab_0:row4:col1', 'tab_0:row4:col2', 'tab_0:row4:col3', 'tab_0:row4:col4'] |
+| C6_cl_magnitude | fail | &lt;= 90.0 L/h | 111.0 | not captured | not captured | ['tab_0:row4:col1', 'tab_0:row4:col2', 'tab_0:row4:col4'] |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
-| C9_phys_window_Q22 | pass | clearance within physiological range | 16 L/h | not captured | not captured | ['tab_0:row4:col1', 'tab_0:row4:col2', 'tab_0:row4:col3', 'tab_0:row4:col4'] |
-| C9_phys_window_Q63 | pass | volume within physiological range | 22 L | not captured | not captured | ['tab_0:row5:col1', 'tab_0:row5:col2', 'tab_0:row5:col3', 'tab_0:row5:col4'] |
-| C9_phys_window_Q64 | pass | volume within physiological range | 13 L | not captured | not captured | ['tab_0:row7:col1', 'tab_0:row7:col2'] |
+| C9_phys_window_Q22 | pass | clearance within physiological range | 111 L/h | not captured | not captured | ['tab_0:row4:col1', 'tab_0:row4:col2', 'tab_0:row4:col4'] |
+| C9_phys_window_Q63 | pass | volume within physiological range | 1.9e+03 L | not captured | not captured | ['tab_0:row5:col1', 'tab_0:row5:col2', 'tab_0:row5:col4'] |
+| C9_phys_window_Q64 | pass | volume within physiological range | 1.05e+03 L | not captured | not captured | ['tab_0:row7:col1', 'tab_0:row7:col2'] |
 
 **Reviewer per-scenario checks:**
 
@@ -152,25 +160,20 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
 <tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_desipramine/Desipramine_Gueorguieva2010_reference/Desipramine_Gueorguieva2010_reference_modelica.zip" download>Desipramine_Gueorguieva2010_reference_modelica.zip</a> <span class="pk-size">(3.2 kB)</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_desipramine/Desipramine_Gueorguieva2010_reference/Desipramine_Gueorguieva2010_reference_fmi.zip" download>Desipramine_Gueorguieva2010_reference_fmi.zip</a> <span class="pk-size">(4.1 kB)</span><br><a href="models/fmu/PK_2C.fmu" download>PK_2C.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><a href="drugs/drug_desipramine/Desipramine_Gueorguieva2010_reference/Desipramine_Gueorguieva2010_reference_fmi.zip" download>Desipramine_Gueorguieva2010_reference_fmi.zip</a> <span class="pk-size">(4.1 kB)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_desipramine/Desipramine_Gueorguieva2010_reference/Desipramine_Gueorguieva2010_reference_matlab.zip" download>Desipramine_Gueorguieva2010_reference_matlab.zip</a> <span class="pk-size">(3.3 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_desipramine/Desipramine_Gueorguieva2010_reference/Desipramine_Gueorguieva2010_reference_matlab_simbio.zip" download>Desipramine_Gueorguieva2010_reference_matlab_simbio.zip</a> <span class="pk-size">(2.7 kB)</span></td></tr>
 <tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_desipramine/Desipramine_Gueorguieva2010_reference/Desipramine_Gueorguieva2010_reference_sbml.zip" download>Desipramine_Gueorguieva2010_reference_sbml.zip</a> <span class="pk-size">(2.5 kB)</span></td></tr>
 <tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_desipramine/Desipramine_Gueorguieva2010_reference/Desipramine_Gueorguieva2010_reference_cellml.zip" download>Desipramine_Gueorguieva2010_reference_cellml.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
 </tbody></table>
 <p>Each archive holds the model source, a script that simulates it against the appropriate library, and a README describing both and how to run them.</p>
-<p><b>FMI is two downloads.</b> The archive holds this record's parameters and its driver; the simulator itself is <code>PK_2C.fmu</code>, one compiled template shared by every model of this structure. Take the FMU once, keep it beside the script (or pass <code>--fmu PATH</code>). Running it reproduces the model-specific FMU exactly.</p>
-</div><figure class="pk-models-diagram"><img src="drugs/drug_desipramine/Desipramine_Gueorguieva2010_reference/Desipramine_Gueorguieva2010_reference.svg" alt="Desipramine_Gueorguieva2010_reference diagram"><figcaption>Model diagram (Modelica) using Pharmacolibrary v26.09 components, rendered by OpenModelica 1.26.7.</figcaption></figure></div>
+</div></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-**Administration: intravenous** — 50 mg infusion over 10 min, single dose. Dose in the paper: 50 mg.
-
-<dbs-fmusim paramsurl="drugs/drug_desipramine/Desipramine_Gueorguieva2010_reference/Desipramine_Gueorguieva2010_reference_params.json" metaurl="assets/fmu/PK_2C.vr.json" wasmurl="assets/fmu/PK_2C.js" controlsurl="drugs/drug_desipramine/Desipramine_Gueorguieva2010_reference/Desipramine_Gueorguieva2010_reference_sim_controls.json"></dbs-fmusim>
-
-<sub>Runs this record's model in the browser as WebAssembly. Sliders start at the extracted values; the reference check compares the browser's peak against the FMPy result recorded when the record was built, and is withheld once a value has been edited. Template `PK_2C` · parameters `Desipramine_Gueorguieva2010_reference_params.json` · controls `Desipramine_Gueorguieva2010_reference_sim_controls.json`. A slider marked *simulator value* is running on the template's own default because this record does not pin that parameter.</sub>
+_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-07-15 11:25 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-06 22:18 UTC</sub>

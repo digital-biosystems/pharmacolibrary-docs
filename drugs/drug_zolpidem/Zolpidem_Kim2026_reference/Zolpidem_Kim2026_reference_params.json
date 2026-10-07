@@ -1,0 +1,36 @@
+{
+ "dose_source": "paper",
+ "model_id": "Zolpidem_Kim2026_reference",
+ "molar_masses": {
+  "central.C": 0.3073895
+ },
+ "note": "Values for the shared PK_1C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "paper_doses_kind": "discrete",
+ "paper_doses_mg": [
+  10.0
+ ],
+ "parameters": {
+  "Cl": 5e-06,
+  "F": 1.0,
+  "MM": 0.3073895,
+  "Tlag": 0.0,
+  "VdPerKg": 0.0009142857142857143,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 1e-05,
+  "ka": 0.00325,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 1586.607183121902
+ },
+ "reference_peaks": {
+  "central.C": 0.00014201559384218886
+ },
+ "stop_time": 86400.0,
+ "template": "PK_1C_enteral",
+ "template_fmu": "PK_1C_enteral.fmu"
+}

@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N06A&quot;,&quot;href&quot;:&quot;atc/N06A.md&quot;},{&quot;label&quot;:&quot;vortioxetine&quot;,&quot;href&quot;:&quot;drugs/drug_vortioxetine/&quot;},{&quot;label&quot;:&quot;Frederiksen_2021_2 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Vortioxetine_Areberg2014v2_reference&quot;,&quot;label&quot;:&quot;Areberg_2014_2_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_vortioxetine/Vortioxetine_Areberg2014v2_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Vortioxetine_Areberg2014v2_reference&quot;,&quot;label&quot;:&quot;Areberg_2014_2_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_vortioxetine/Vortioxetine_Areberg2014v2_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # vortioxetine — `Vortioxetine_Frederiksen2021v2_reference`
 
-> ## <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: the record defines covariate effects (weight on clearance, renal function …) but the engineer simulated only the reference individual, so those scenarios were never run. The base model still reproduces the paper; what is missing is the covariate curves.">built, not shipped</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.769). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--green" title="covariates_not_exercised: the record defines covariate effects (weight on clearance, renal function …) but the engineer simulated only the reference individual, so those scenarios were never run. The base model still reproduces the paper; what is missing is the covariate curves.">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.769). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -27,36 +27,38 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on `parame
 
 <sub>reviewed by glm-5.3-flash</sub>
 
+> ⚠️ **STALE** — review status `model_quarantined` (reviewed 2026-10-05 09:32:54.604512+00:00) predates the upstream re-run (2026-10-07 00:19:33.006600+00:00). Current validate status: `extracted`.
+
 ## Citation
 Frederiksen T et al., Quantification of In Vivo Metabolic Act…, Clinical pharmacology and t… (2021)
   ·  DOI: [10.1002/cpt.1972](https://doi.org/10.1002/cpt.1972)
 
 ## Model component
-<dbs-pgx drug="vortioxetine" model-id="Vortioxetine_Frederiksen2021v2_reference" status="model_quarantined" stale="false" population="subjects from 29 clinical pharmacology studies" measured-compound="vortioxetine" parameterization="mechanistic" topology="parent_metabolite"></dbs-pgx>
+<dbs-pgx drug="vortioxetine" model-id="Vortioxetine_Frederiksen2021v2_reference" status="extracted" stale="true" population="subjects from 29 clinical pharmacology studies of vortioxetine" measured-compound="vortioxetine" parameterization="mechanistic" topology="parent_metabolite"></dbs-pgx>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
-**Parameters:** 11 extracted, plus 2 covariate effects.
+**Parameters:** 11 extracted, plus 4 covariate effects.
 
 **Parameterization:** mechanistic.
 
 ## Parameters
-> ⚠️ This record is not accepted (current status `model_quarantined`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
-
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| Absorption rate constant, ka | `Q49` · kabs | 0.160 | 1/h | 4.4444444444444447e-05 | 1/h | 50.8 | llm_confirmed (0.6) | cpt1972-tbl-0002:row2:col1, cpt1972-tbl-0002:row2:col2, cpt1972-tbl-0002:row2:col3 | — | not captured |
-| Absorption rate constant, metabolite, ka,met | `Q49` · kabs | 0.281 | 1/h | 7.805555555555556e-05 | 1/h | 40.4 | exact (1.0) | cpt1972-tbl-0002:row3:col1, cpt1972-tbl-0002:row3:col2, cpt1972-tbl-0002:row3:col3 | — | not captured |
-| Presystemic metabolite formation, Fmet | `Q45` · fm | 0.190 | not captured | not captured | not captured | 55.9 | exact (1.0) | cpt1972-tbl-0002:row4:col1, cpt1972-tbl-0002:row4:col2, cpt1972-tbl-0002:row4:col3 | — | not captured |
-| Volume of distribution, vortioxetine central compartment, V3 | `Q63` · V1 | 1510 | L | 1.51 | L | 30.1 | exact (1.0) | cpt1972-tbl-0002:row5:col1, cpt1972-tbl-0002:row5:col2, cpt1972-tbl-0002:row5:col3 | — | not captured |
-| Inter‐compartmental clearance, vortioxetine, Q | `Q30` · Q | 21.1 | L/h | 5.861111111111111e-06 | L/h | 75.5 | llm_corrected (0.6) | cpt1972-tbl-0002:row7:col1, cpt1972-tbl-0002:row7:col2, cpt1972-tbl-0002:row7:col3 | — | not captured |
-| Volume of distribution, vortioxetine peripheral compartment, V4 | `Q64` · V2 | 571 | L | 0.5710000000000001 | L | 60.7 | exact (1.0) | cpt1972-tbl-0002:row8:col1, cpt1972-tbl-0002:row8:col2, cpt1972-tbl-0002:row8:col3 | — | not captured |
-| Intercompartmental clearance, vortioxetine, Qmet | `Q30` · Q | 7.69 | L/h | 2.136111111111111e-06 | L/h | 14.3 | exact (1.0) | cpt1972-tbl-0002:row9:col1, cpt1972-tbl-0002:row9:col2, cpt1972-tbl-0002:row9:col3 | — | not captured |
-| Volume of distribution, Lu AA34443 central compartment, V5 | `Q63` · V1 | 155 | L | 0.155 | L | 26.1 | exact (1.0) | cpt1972-tbl-0002:row10:col1, cpt1972-tbl-0002:row10:col2, cpt1972-tbl-0002:row10:col3 | — | not captured |
-| Lu AA34443 clearance, CLmet | `Q22` · CL | 22.5 | L/h | 6.2499999999999995e-06 | L/h | 27.4 | exact (1.0) | cpt1972-tbl-0002:row11:col1, cpt1972-tbl-0002:row11:col2, cpt1972-tbl-0002:row11:col3 | — | not captured |
-| Volume of distribution, Lu AA34443 peripheral compartment, V6 | `Q64` · V2 | 211 | L | 0.211 | L | 19.1 | exact (1.0) | cpt1972-tbl-0002:row12:col1, cpt1972-tbl-0002:row12:col2, cpt1972-tbl-0002:row12:col3 | — | not captured |
-| Lag‐time (ALAG) | `Q83` · tlag | 0.966 | h | 3477.6 | h | 50.5 | llm (0.6) | cpt1972-tbl-0002:row13:col1, cpt1972-tbl-0002:row13:col2, cpt1972-tbl-0002:row13:col3 | — | not captured |
-| theta_q370_cyp2d6 | `Q900` · theta_q370_cyp2d6 | 13.1 | not captured | not captured | not captured | 43.2 | not captured (not captured) | cpt1972-tbl-0002:row6:col1, cpt1972-tbl-0002:row6:col2, cpt1972-tbl-0002:row6:col3 | — | not captured |
-| theta_q22_cyp2c19 | `Q900` · theta_q22_cyp2c19 | 12.5 | not captured | not captured | not captured | 58.6 | not captured (not captured) | cpt1972-tbl-0002:row17:col1, cpt1972-tbl-0002:row17:col2, cpt1972-tbl-0002:row17:col3 | — | not captured |
+| Absorption rate constant, ka | `Q49` · kabs | 0.160 | 1/h | 4.4444444444444447e-05 | 1/h | 1.6 | llm_confirmed (0.6) | cpt1972-tbl-0002:row2:col1, cpt1972-tbl-0002:row2:col3 | — | 50.8 (6.1% RSE) |
+| Absorption rate constant, metabolite, ka,met | `Q49` · kabs | 0.281 | 1/h | 7.805555555555556e-05 | 1/h | 2.8 | exact (1.0) | cpt1972-tbl-0002:row3:col1, cpt1972-tbl-0002:row3:col3 | — | not captured |
+| Presystemic metabolite formation, Fmet | `Q45` · fm | 0.190 | not captured | not captured | not captured | 1.9 | exact (1.0) | cpt1972-tbl-0002:row4:col1, cpt1972-tbl-0002:row4:col3 | — | not captured |
+| Volume of distribution, vortioxetine central compartment, V3 | `Q63` · V1 | 1510 | L | 1.51 | L | 2.4 | exact (1.0) | cpt1972-tbl-0002:row5:col1, cpt1972-tbl-0002:row5:col3 | — | 30.1 (6.9% RSE) |
+| Inter‐compartmental clearance, vortioxetine, Q | `Q30` · Q | 21.1 | L/h | 5.861111111111111e-06 | L/h | 2.9 | llm_corrected (0.6) | cpt1972-tbl-0002:row7:col1, cpt1972-tbl-0002:row7:col3 | — | 14.3 (85% RSE) |
+| Volume of distribution, vortioxetine peripheral compartment, V4 | `Q64` · V2 | 571 | L | 0.5710000000000001 | L | 5.8 | exact (1.0) | cpt1972-tbl-0002:row8:col1, cpt1972-tbl-0002:row8:col3 | — | 60.7 (8.7% RSE) |
+| Intercompartmental clearance, vortioxetine, Qmet | `Q30` · Q | 7.69 | L/h | 2.136111111111111e-06 | L/h | 2.8 | exact (1.0) | cpt1972-tbl-0002:row9:col1, cpt1972-tbl-0002:row9:col3 | — | not captured |
+| Volume of distribution, Lu AA34443 central compartment, V5 | `Q63` · V1 | 155 | L | 0.155 | L | 3.4 | exact (1.0) | cpt1972-tbl-0002:row10:col1, cpt1972-tbl-0002:row10:col3 | — | not captured |
+| Lu AA34443 clearance, CLmet | `Q22` · CL | 22.5 | L/h | 6.2499999999999995e-06 | L/h | 1.8 | exact (1.0) | cpt1972-tbl-0002:row11:col1, cpt1972-tbl-0002:row11:col3 | — | 43.2 (6.0% RSE) |
+| Volume of distribution, Lu AA34443 peripheral compartment, V6 | `Q64` · V2 | 211 | L | 0.211 | L | 0.8 | exact (1.0) | cpt1972-tbl-0002:row12:col1, cpt1972-tbl-0002:row12:col3 | — | not captured |
+| Lag‐time (ALAG) | `Q83` · tlag | 0.966 | h | 3477.6 | h | 66.8 | llm (0.6) | cpt1972-tbl-0002:row13:col1, cpt1972-tbl-0002:row13:col3 | — | not captured |
+| theta_q370_cyp2d6 | `Q900` · theta_q370_cyp2d6 | 13.1 | not captured | not captured | not captured | 0.8 | not captured (not captured) | cpt1972-tbl-0002:row6:col1, cpt1972-tbl-0002:row6:col3 | — | not captured |
+| theta_q26_creatinine | `Q900` · theta_q26_creatinine | 0.0668 | not captured | not captured | not captured | 6.5 | not captured (not captured) | cpt1972-tbl-0002:row19:col1, cpt1972-tbl-0002:row19:col3 | — | not captured |
+| theta_q77_height | `Q900` · theta_q77_height | 1.48 | not captured | not captured | not captured | 11.1 | not captured (not captured) | cpt1972-tbl-0002:row21:col1, cpt1972-tbl-0002:row21:col3 | — | not captured |
+| theta_q314_weight | `Q900` · theta_q314_weight | 0.918 | not captured | not captured | not captured | 21.0 | not captured (not captured) | cpt1972-tbl-0002:row22:col1, cpt1972-tbl-0002:row22:col3 | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -66,30 +68,51 @@ Frederiksen T et al., Quantification of In Vivo Metabolic Act…, Clinical pharm
 ## Departures & gaps
 
 **Interpretation flags:**
+- table section iiv: 'Absorption rate constant, ka' routed out of structural estimates ('IIV (%RSE)')
+- table section iiv: 'Absorption rate constant, metabolite, ka,met' routed out of structural estimates ('IIV (%RSE)')
+- table section iiv: 'Presystemic metabolite formation, Fmet' routed out of structural estimates ('IIV (%RSE)')
+- table section iiv: 'Volume of distribution, vortioxetine central compartment, V3' routed out of structural estimates ('IIV (%RSE)')
+- table section iiv: 'CYP2D6 mediated clearance (CLCYP2D6)' routed out of structural estimates ('IIV (%RSE)')
+- table section iiv: 'Inter‐compartmental clearance, vortioxetine, Q' routed out of structural estimates ('IIV (%RSE)')
+- table section iiv: 'Volume of distribution, vortioxetine peripheral compartment, V4' routed out of structural estimates ('IIV (%RSE)')
+- table section iiv: 'Intercompartmental clearance, vortioxetine, Qmet' routed out of structural estimates ('IIV (%RSE)')
+- table section iiv: 'Volume of distribution, Lu AA34443 central compartment, V5' routed out of structural estimates ('IIV (%RSE)')
+- table section iiv: 'Lu AA34443 clearance, CLmet' routed out of structural estimates ('IIV (%RSE)')
+- table section iiv: 'Volume of distribution, Lu AA34443 peripheral compartment, V6' routed out of structural estimates ('IIV (%RSE)')
+- table section iiv: 'Lag‐time (ALAG)' routed out of structural estimates ('IIV (%RSE)')
+- table section iiv: 'CYP2C19 poor metabolizers' routed out of structural estimates ('IIV (%RSE)')
+- table section iiv: 'CYP2C19 intermediate metabolizers' routed out of structural estimates ('IIV (%RSE)')
+- table section iiv: 'CYP2C19 normal metabolizers' routed out of structural estimates ('IIV (%RSE)')
+- table section covariance: 'ρ (Fmet,V3)' routed out of structural estimates ('Correlation coefficients (ρ) a')
+- table section covariance: 'ρ (Fmet,CLCYP2D6)' routed out of structural estimates ('Correlation coefficients (ρ) a')
+- table section covariance: 'ρ (CLCYP2D6,V3)' routed out of structural estimates ('Correlation coefficients (ρ) a')
+- table section covariance: 'ρ (CLmet,V5)' routed out of structural estimates ('Correlation coefficients (ρ) a')
+- table section covariance: 'Residual error (proportional) b' routed out of structural estimates ('Correlation coefficients (ρ) a')
 - unit_dimension_unknown: 'ALAG' (tlag)
+- dropped unlinked row (NIL): 'CYP2C19 normal metabolizers' — extend the ontology if this is a real PK parameter (source ['cpt1972-tbl-0002:row17:col1', 'cpt1972-tbl-0002:row17:col3'])
 - dropped unlinked row (NIL): 'Age on CLother' — extend the ontology if this is a real PK parameter (source ['cpt1972-tbl-0002:row18:col1', 'cpt1972-tbl-0002:row18:col3'])
-- dropped unlinked row (NIL): 'Creatinine clearance on CLother' — extend the ontology if this is a real PK parameter (source ['cpt1972-tbl-0002:row19:col1', 'cpt1972-tbl-0002:row19:col3'])
 - dropped unlinked row (NIL): 'LBM on CLother' — extend the ontology if this is a real PK parameter (source ['cpt1972-tbl-0002:row20:col1', 'cpt1972-tbl-0002:row20:col3'])
-- dropped unlinked row (NIL): 'Height on V3' — extend the ontology if this is a real PK parameter (source ['cpt1972-tbl-0002:row21:col1', 'cpt1972-tbl-0002:row21:col3'])
-- dropped unlinked row (NIL): 'Weight on V4' — extend the ontology if this is a real PK parameter (source ['cpt1972-tbl-0002:row22:col1', 'cpt1972-tbl-0002:row22:col3'])
 - dropped unlinked row (NIL): 'Weight on V5' — extend the ontology if this is a real PK parameter (source ['cpt1972-tbl-0002:row23:col1', 'cpt1972-tbl-0002:row23:col3'])
+- NIL: refused to back-fill base 'sigma' from footnote/prose loose number None (source ['cpt1972-tbl-0002:footnote']); the table cell was unparseable — needs review
 - covariate effect for Q370 has no base parameter row (kept as unattached equation-variable)
-- covariate effect for Q22 has no base parameter row (kept as unattached equation-variable)
-- implicit units: 'Absorption rate constant, ka' → 1/h (from the popPK convention: 'Absorption rate constants (ka) are first-order rate constants, conventionally expressed in 1/h. The value 0.160 is consi')
-- implicit units: 'Absorption rate constant, metabolite, ka,met' → 1/h (from the popPK convention: 'Absorption rate constants (ka) are first-order rate constants, conventionally expressed in 1/h. The value 0.281 is consi')
-- implicit units: 'Volume of distribution, vortioxetine central compartment, V3' → L (from the popPK convention: 'Volumes of distribution are conventionally expressed in L. The value 1510 is consistent with the text stating a steady-s')
-- implicit units: 'Inter‐compartmental clearance, vortioxetine, Q' → L/h (from the popPK convention: 'Intercompartmental clearances are conventionally expressed in L/h. The value 21.1 is consistent with this unit.')
-- implicit units: 'Volume of distribution, vortioxetine peripheral compartment, V4' → L (from the popPK convention: 'Volumes of distribution are conventionally expressed in L. The value 571 is consistent with this unit.')
-- implicit units: 'Intercompartmental clearance, vortioxetine, Qmet' → L/h (from the popPK convention: 'Intercompartmental clearances are conventionally expressed in L/h. The value 7.69 is consistent with this unit.')
-- implicit units: 'Volume of distribution, Lu AA34443 central compartment, V5' → L (from the popPK convention: 'Volumes of distribution are conventionally expressed in L. The value 155 is consistent with this unit.')
-- implicit units: 'Lu AA34443 clearance, CLmet' → L/h (from the popPK convention: "Clearances are conventionally expressed in L/h. The text explicitly states 'CLother was fixed to 12.5 L/h', establishing")
-- implicit units: 'Volume of distribution, Lu AA34443 peripheral compartment, V6' → L (from the popPK convention: 'Volumes of distribution are conventionally expressed in L. The value 211 is consistent with this unit.')
-- implicit units: 'Lag‐time (ALAG)' → h (from the popPK convention: 'Lag times are time parameters, conventionally expressed in h. The value 0.966 is consistent with this unit.')
+- covariate effect for Q26 has no base parameter row (kept as unattached equation-variable)
+- covariate effect for Q77 has no base parameter row (kept as unattached equation-variable)
+- covariate effect for Q314 has no base parameter row (kept as unattached equation-variable)
+- implicit units: 'Absorption rate constant, ka' → 1/h (from the popPK convention: 'No unit stated for ka; first-order absorption rate constants are conventionally in 1/h, and 0.160 1/h is consistent with')
+- implicit units: 'Absorption rate constant, metabolite, ka,met' → 1/h (from the popPK convention: 'No unit stated; first-order absorption rate constant for the metabolite, conventionally 1/h.')
+- implicit units: 'Volume of distribution, vortioxetine central compartment, V3' → L (from the popPK convention: 'No unit stated; volumes of distribution in L, consistent with reported steady-state volume ~2,600 L for vortioxetine.')
+- implicit units: 'Inter‐compartmental clearance, vortioxetine, Q' → L/h (from the popPK convention: 'No unit stated; intercompartmental clearances conventionally in L/h, consistent with CLother fixed to 12.5 L/h in the te')
+- implicit units: 'Volume of distribution, vortioxetine peripheral compartment, V4' → L (from the popPK convention: 'No unit stated; peripheral volume of distribution in L.')
+- implicit units: 'Intercompartmental clearance, vortioxetine, Qmet' → L/h (from the popPK convention: 'No unit stated; intercompartmental clearance conventionally in L/h.')
+- implicit units: 'Volume of distribution, Lu AA34443 central compartment, V5' → L (from the popPK convention: 'No unit stated; volume of distribution in L.')
+- implicit units: 'Lu AA34443 clearance, CLmet' → L/h (from the popPK convention: 'No unit stated; CLmet is a clearance, conventionally L/h, consistent with CLother fixed to 12.5 L/h.')
+- implicit units: 'Volume of distribution, Lu AA34443 peripheral compartment, V6' → L (from the popPK convention: 'No unit stated; peripheral volume of distribution in L.')
+- implicit units: 'Lag‐time (ALAG)' → h (from the popPK convention: 'No unit stated; absorption lag time conventionally in h, and 0.966 h is a plausible magnitude.')
 - apparent-by-design (ADVISORY, codes unchanged): extravascular dosing with no identifiable F, so these reported disposition parameters are likely apparent unless the model puts first-pass in its structure — Q63 (Volume of distribution, vortioxetine central compartment, V3); Q30 (Inter‐compartmental clearance, vortioxetine, Q); Q64 (Volume of distribution, vortioxetine peripheral compartment, V4); Q30 (Intercompartmental clearance, vortioxetine, Qmet); Q63 (Volume of distribution, Lu AA34443 central compartment, V5); Q22 (Lu AA34443 clearance, CLmet); Q64 (Volume of distribution, Lu AA34443 peripheral compartment, V6)
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=vortioxetine
 - template fit: PK_3M_3C — first-pass formation; parent 2 + hepatic, metabolites [2] (site presystemic: 'An early appearance of Lu AA34443 in plasma indicated presence of presystemic formation of the metabolite, which was ass')
 - row roles: per-genotype parameters — typical value from the reference group: CYP2C19 normal metabolizers
-- row roles (LLM): model_class=compartmental; 26/26 row label(s) assigned, 39 linked by role; re-tagged parent→Lu AA34443 ×23
+- row roles (LLM): model_class=compartmental; 29/29 row label(s) assigned, 36 linked by role; re-tagged parent→Lu AA34443 ×21
 
 **Extraction notes:**
 - LLM selected parameter table(s) 2
@@ -129,22 +152,22 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 | C0_has_structural_params | pass | not captured | 11 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
-| C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['cpt1972-tbl-0002:row11:col1', 'cpt1972-tbl-0002:row11:col2', 'cpt1972-tbl-0002:row11:col3'] |
-| C5_dimension_Q30 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['cpt1972-tbl-0002:row7:col1', 'cpt1972-tbl-0002:row7:col2', 'cpt1972-tbl-0002:row7:col3'] |
-| C5_dimension_Q30 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['cpt1972-tbl-0002:row9:col1', 'cpt1972-tbl-0002:row9:col2', 'cpt1972-tbl-0002:row9:col3'] |
-| C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['cpt1972-tbl-0002:row2:col1', 'cpt1972-tbl-0002:row2:col2', 'cpt1972-tbl-0002:row2:col3'] |
-| C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['cpt1972-tbl-0002:row3:col1', 'cpt1972-tbl-0002:row3:col2', 'cpt1972-tbl-0002:row3:col3'] |
-| C5_dimension_Q63 | pass | [length] ** 3 | not captured | not captured | not captured | ['cpt1972-tbl-0002:row5:col1', 'cpt1972-tbl-0002:row5:col2', 'cpt1972-tbl-0002:row5:col3'] |
-| C5_dimension_Q63 | pass | [length] ** 3 | not captured | not captured | not captured | ['cpt1972-tbl-0002:row10:col1', 'cpt1972-tbl-0002:row10:col2', 'cpt1972-tbl-0002:row10:col3'] |
-| C5_dimension_Q64 | pass | [length] ** 3 | not captured | not captured | not captured | ['cpt1972-tbl-0002:row8:col1', 'cpt1972-tbl-0002:row8:col2', 'cpt1972-tbl-0002:row8:col3'] |
-| C5_dimension_Q64 | pass | [length] ** 3 | not captured | not captured | not captured | ['cpt1972-tbl-0002:row12:col1', 'cpt1972-tbl-0002:row12:col2', 'cpt1972-tbl-0002:row12:col3'] |
-| C5_dimension_Q83 | pass | [time] | not captured | not captured | not captured | ['cpt1972-tbl-0002:row13:col1', 'cpt1972-tbl-0002:row13:col2', 'cpt1972-tbl-0002:row13:col3'] |
+| C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['cpt1972-tbl-0002:row11:col1', 'cpt1972-tbl-0002:row11:col3'] |
+| C5_dimension_Q30 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['cpt1972-tbl-0002:row7:col1', 'cpt1972-tbl-0002:row7:col3'] |
+| C5_dimension_Q30 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['cpt1972-tbl-0002:row9:col1', 'cpt1972-tbl-0002:row9:col3'] |
+| C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['cpt1972-tbl-0002:row2:col1', 'cpt1972-tbl-0002:row2:col3'] |
+| C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['cpt1972-tbl-0002:row3:col1', 'cpt1972-tbl-0002:row3:col3'] |
+| C5_dimension_Q63 | pass | [length] ** 3 | not captured | not captured | not captured | ['cpt1972-tbl-0002:row5:col1', 'cpt1972-tbl-0002:row5:col3'] |
+| C5_dimension_Q63 | pass | [length] ** 3 | not captured | not captured | not captured | ['cpt1972-tbl-0002:row10:col1', 'cpt1972-tbl-0002:row10:col3'] |
+| C5_dimension_Q64 | pass | [length] ** 3 | not captured | not captured | not captured | ['cpt1972-tbl-0002:row8:col1', 'cpt1972-tbl-0002:row8:col3'] |
+| C5_dimension_Q64 | pass | [length] ** 3 | not captured | not captured | not captured | ['cpt1972-tbl-0002:row12:col1', 'cpt1972-tbl-0002:row12:col3'] |
+| C5_dimension_Q83 | pass | [time] | not captured | not captured | not captured | ['cpt1972-tbl-0002:row13:col1', 'cpt1972-tbl-0002:row13:col3'] |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
-| C9_phys_window_Q22 | pass | clearance within physiological range | 22.5 L/h | not captured | not captured | ['cpt1972-tbl-0002:row11:col1', 'cpt1972-tbl-0002:row11:col2', 'cpt1972-tbl-0002:row11:col3'] |
-| C9_phys_window_Q63 | pass | volume within physiological range | 1.51e+03 L | not captured | not captured | ['cpt1972-tbl-0002:row5:col1', 'cpt1972-tbl-0002:row5:col2', 'cpt1972-tbl-0002:row5:col3'] |
-| C9_phys_window_Q63 | pass | volume within physiological range | 155 L | not captured | not captured | ['cpt1972-tbl-0002:row10:col1', 'cpt1972-tbl-0002:row10:col2', 'cpt1972-tbl-0002:row10:col3'] |
-| C9_phys_window_Q64 | pass | volume within physiological range | 571 L | not captured | not captured | ['cpt1972-tbl-0002:row8:col1', 'cpt1972-tbl-0002:row8:col2', 'cpt1972-tbl-0002:row8:col3'] |
-| C9_phys_window_Q64 | pass | volume within physiological range | 211 L | not captured | not captured | ['cpt1972-tbl-0002:row12:col1', 'cpt1972-tbl-0002:row12:col2', 'cpt1972-tbl-0002:row12:col3'] |
+| C9_phys_window_Q22 | pass | clearance within physiological range | 22.5 L/h | not captured | not captured | ['cpt1972-tbl-0002:row11:col1', 'cpt1972-tbl-0002:row11:col3'] |
+| C9_phys_window_Q63 | pass | volume within physiological range | 1.51e+03 L | not captured | not captured | ['cpt1972-tbl-0002:row5:col1', 'cpt1972-tbl-0002:row5:col3'] |
+| C9_phys_window_Q63 | pass | volume within physiological range | 155 L | not captured | not captured | ['cpt1972-tbl-0002:row10:col1', 'cpt1972-tbl-0002:row10:col3'] |
+| C9_phys_window_Q64 | pass | volume within physiological range | 571 L | not captured | not captured | ['cpt1972-tbl-0002:row8:col1', 'cpt1972-tbl-0002:row8:col3'] |
+| C9_phys_window_Q64 | pass | volume within physiological range | 211 L | not captured | not captured | ['cpt1972-tbl-0002:row12:col1', 'cpt1972-tbl-0002:row12:col3'] |
 
 **Reviewer per-scenario checks:**
 
@@ -192,4 +215,4 @@ _No web simulator for this record: its structure has no shared WebAssembly templ
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-09-26 20:57 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 00:19 UTC</sub>

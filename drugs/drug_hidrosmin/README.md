@@ -8,11 +8,17 @@
 - **molar mass:** 652.602 g/mol (C30H36O16) — DrugBank
 - **groups:** investigational
 
+## About
+
+Hidrosmin is a bioflavonoid classified as a vasoprotective and capillary-stabilizing agent, a class of drugs used to treat conditions affecting the veins and small blood vessels. It is considered investigational and is not an approved medicine in the European Union.
+
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q5752914](https://www.wikidata.org/wiki/Q5752914) and the WHO ATC classification; not checked by a person.</small>
+
 ## Extraction summary
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-01 15:49 | 0:32 | 0/0/0 | 0/0/0 | 0/0/0 | 1,380/565 | ollama / glm-5.3-flash | 0 | 0/0 | 0/0 | 0 |
+| 2026-10-06 21:51 | 0:10 | 0/0/0 | 0/0/0 | 0/0/0 | 432/64 | ollama / qwen3.8:27b-mtp-q8_0 | 0 | 0/0 | 0/0 | 0 |
 
 ## popPK records
 

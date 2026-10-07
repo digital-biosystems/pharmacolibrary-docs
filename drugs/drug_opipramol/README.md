@@ -18,11 +18,19 @@ Opipramol is a tricyclic antidepressant, a non-selective monoamine reuptake inhi
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-24 02:55 | 13:14 | 0/0/0 | 0/0/0 | 0/0/0 | 20,870/1,641 | ollama / qwen3.8:27b-mtp-q8_0 | 0 | 0/0 | 0/0 | 0 |
+| 2026-10-06 23:32 | 1:00 | 0/0/0 | 0/3/0 | 0/0/0 | 23,828/2,175 | ollama / glm-5.3-flash | 0 | 0/0 | 0/0 | 0 |
 
 ## popPK records
 
 _not available_
+
+## Pharmacodynamics (PD)
+
+| status | detail | about | model | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from keyword rules on the title and abstract — no LLM answer yet).">rat</span> | [Church_1995_IBa](drugs/drug_opipramol/pd_Church_1995_IBa.md) | voltage-activated Ca2+ channel current carried by barium ions (IBa) blockade in mouse hippocampal pyramidal neurones ← opipramol · inhibition effect | — | Church J et al., Blockade by sigma site ligands of high…, British journal of pharmaco… (1995) | [10.1111/j.1476-5381.1995.tb15929.x](https://doi.org/10.1111/j.1476-5381.1995.tb15929.x) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from keyword rules on the title and abstract — no LLM answer yet).">rat</span> | [Fletcher_1995_NMDA_evoked_current](drugs/drug_opipramol/pd_Fletcher_1995_NMDA_evoked_current.md) | NMDA-evoked current (attenuation by opipramol) ← opipramol · inhibition effect | — | Fletcher EJ et al., Blockade by sigma site ligands of N-met…, British journal of pharmaco… (1995) | [10.1111/j.1476-5381.1995.tb15928.x](https://doi.org/10.1111/j.1476-5381.1995.tb15928.x) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from keyword rules on the title and abstract — no LLM answer yet).">rat</span> | [Thurgur_1998_orthodromically_evoked_epileptiform_field_potentials](drugs/drug_opipramol/pd_Thurgur_1998_orthodromically_evoked_epileptiform_field_poten.md) | orthodromically-evoked epileptiform field potentials ← opipramol · inhibition effect | — | Thurgur C et al., The anticonvulsant actions of sigma rec…, British journal of pharmaco… (1998) | [10.1038/sj.bjp.0701902](https://doi.org/10.1038/sj.bjp.0701902) |
 
 <details class="legend">
 <summary>Badge legend — what each badge means</summary>
@@ -45,39 +53,39 @@ _1 paper(s) judged relevant from the abstract, with no full text on disk — pay
 |---|---|---|---|---|---|---|
 | `Moebius_1998.pdf` | Moebius FF et al., Pharmacological analysis of sterol delt…, Molecular pharmacology (1998) | pd | 4 | [10.1124/mol.54.3.591](https://doi.org/10.1124/mol.54.3.591) | [9730919](https://www.ncbi.nlm.nih.gov/pubmed/9730919) | metadata signals extractable PD data (IC50) |
 
-<sub>queue written 2026-09-24T02:53:37.354855+00:00</sub>
+<sub>queue written 2026-10-06T23:32:42.838401+00:00</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Calvo_2022 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of carisoprodol and meprobamate, not opipramol. |
-| popPK | Calvo_2022_2 | irrelevant | 0 | 0 | The study focuses on carisoprodol, not opipramol, and does not report PK parameters for the target drug. |
-| popPK | Carbonaro_2020 | irrelevant | 0 | 0 | The study focuses on carisoprodol and meprobamate, not opipramol. |
-| popPK | Ceschi_2013 | irrelevant | 0 | 0 | The study focuses on meprobamate, not opipramol. |
-| popPK | Dalén_1996 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of carisoprodol and meprobamate, not opipramol. |
-| popPK | De_1981 | irrelevant | 0 | 0 | The study focuses on hemoperfusion clearance for barbiturates and other sedatives, with no mention of opipramol. |
-| popPK | Ferri_2025 | irrelevant | 0 | 0 | The study focuses on the in-vitro metabolism of carisoprodol, not the pharmacokinetics of opipramol. |
-| popPK | Ferri_2026 | irrelevant | 0 | 0 | The study focuses on the metabolism of carisoprodol, not opipramol. |
+| popPK | Calvo_2022 | irrelevant | 0 | 0 | This study characterizes carisoprodol and meprobamate, not opipramol; no opipramol data appear. |
+| popPK | Calvo_2022_2 | irrelevant | 0 | 0 | This is a PK-PD study of carisoprodol, not opipramol; no opipramol disposition parameters are reported. |
+| popPK | Carbonaro_2020 | irrelevant | 0 | 0 | This is a PK study of carisoprodol/meprobamate in rats, not opipramol; no opipramol parameters appear. |
+| popPK | Ceschi_2013 | irrelevant | 0 | 0 | This is a meprobamate overdose case report; opipramol is not the subject drug and no opipramol parameters appear. |
+| popPK | Dalén_1996 | irrelevant | 0 | 0 | The paper concerns carisoprodol/meprobamate pharmacokinetics, not opipramol; no opipramol parameters appear. |
+| popPK | De_1981 | irrelevant | 0 | 0 | The paper reports hemoperfusion-hemodialysis clearances for barbiturates and other sedatives in poisoning cases; opipramol is not mentioned at all. |
+| popPK | Ferri_2025 | irrelevant | 0 | 0 | This is an in vitro rat microsome metabolism study of carisoprodol, not opipramol; no opipramol PK parameters are reported. |
+| popPK | Ferri_2026 | irrelevant | 0 | 0 | The paper concerns carisoprodol enantioseparation and metabolism in rat liver microsomes, not opipramol, and reports no opipramol PK parameters. |
 | PD | Gahr_2017 | not_relevant | 1 | 0 | The text is a qualitative review of opipramol's mechanism and clinical use, containing no numeric PD parameters, concentration-effect data, or dose-response curves. |
-| PGx | Gahr_2017 | not_relevant | 2 | 0 | The text mentions CYP2D6 metabolism but does not report specific pharmacogenomic effects (genotype-phenotype associations) on PK or PD parameters. |
+| PGx | Gahr_2017 | not_relevant | 2 | 1 | Mentions CYP2D6 metabolism of opipramol but no genotype-specific effect on any PK/PD parameter is reported. |
 | PD | Gerlach_2002 | not_relevant | 2 | 0 | The paper reports qualitative dose-response observations (100 mg vs 50 mg) but provides no numeric PD parameters, concentration-effect curves, or quantitative effect magnitudes. |
-| popPK | Gilbert_1982 | irrelevant | 0 | 0 | The study focuses on pentaerythritol tetranitrate, meprobamate, and diphenhydramine, with no mention of opipramol. |
-| popPK | Gilbert_1984 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of meprobamate and other drugs, not opipramol. |
-| popPK | Hassan_1986 | irrelevant | 0 | 0 | The study focuses on meprobamate overdose and does not report pharmacokinetic parameters for opipramol. |
+| popPK | Gilbert_1982 | irrelevant | 0 | 0 | The paper concerns pentaerythritol tetranitrate/metabolite, meprobamate and diphenhydramine; opipramol is not mentioned and no PK parameters for it appear. |
+| popPK | Gilbert_1984 | irrelevant | 0 | 0 | The study concerns meprobamate and diphenhydramine, not opipramol; no opipramol parameters appear. |
+| popPK | Hassan_1986 | irrelevant | 0 | 0 | This is a meprobamate overdose case report; opipramol is not studied and no opipramol PK parameters appear. |
 | PD | Howell_2009 | not_relevant | 0 | 0 | The paper describes in vitro binding of opipramol to liposomes for overdose treatment, not a pharmacodynamic exposure-response or dose-response relationship in a biological system. |
-| popPK | Hoy_1978 | irrelevant | 0 | 0 | The study focuses on meprobamate, not opipramol, and does not report pharmacokinetic parameters for the target drug. |
+| popPK | Hoy_1978 | irrelevant | 0 | 0 | The paper concerns hemoperfusion clearance of meprobamate, a different drug; no opipramol PK parameters are reported. |
 | PD | Hueppe_2011 | not_relevant | 2 | 1 | The study reports a qualitative dose-response (100mg vs 150mg) but provides no concentration data, PK parameters, or numeric PD parameters (e.g., Emax, EC50) to derive a quantitative exposure-response relationship. |
 | PD | Kanarkowski_1979 | not_relevant | 0 | 0 | The provided text is only a title and does not contain the full text or any numeric data, curves, or parameters to derive a pharmacodynamic relationship. |
-| popPK | Koffler_1978 | irrelevant | 0 | 0 | The study focuses on hemoperfusion for drug overdose and does not involve opipramol or report its pharmacokinetic parameters. |
-| popPK | Lewandowski_2017 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of carisoprodol and meprobamate, not opipramol. |
-| popPK | Miller_1989 | irrelevant | 0 | 0 | The paper is a review on the effects of cigarette smoking on various drugs and does not mention opipramol or provide any pharmacokinetic parameters for it. |
+| popPK | Koffler_1978 | irrelevant | 0 | 0 | Study of charcoal hemoperfusion in overdose of other drugs; opipramol not mentioned and no PK parameters for it. |
+| popPK | Lewandowski_2017 | irrelevant | 0 | 0 | The paper models carisoprodol/meprobamate, not opipramol; no opipramol parameters appear. |
+| popPK | Miller_1989 | irrelevant | 0 | 0 | Review of smoking effects on various drugs; opipramol not mentioned and no PK parameters reported. |
 | PD | Moebius_1994 | not_relevant | 1 | 2 | The paper reports an IC50 for opipramol binding to a purified protein, which is a pharmacological binding affinity parameter, not a pharmacodynamic exposure-response or dose-response relationship for a drug effect in a biological system. |
 | PD | Moebius_1998 | not_relevant | 3 | 2 | The paper reports an in vitro IC50 for opipramol against a specific enzyme (EBP), which is a pharmacological potency parameter, but it does not report a pharmacodynamic exposure-response or dose-response relationship for the drug's clinical effect in a biological system. |
 | popPK | Nilsson_1998 | irrelevant | 0 | 0 | no_text gate: only 110 chars of text extracted (&lt; 400) |
-| popPK | Simon_2010 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of carisoprodol and meprobamate, not opipramol. |
-| popPK | Tribut_2010 | irrelevant | 0 | 0 | The paper discusses the pharmacokinetics of felbamate, not opipramol. |
-| popPK | Verpooten_1982 | irrelevant | 0 | 0 | The study focuses on phenobarbital, methylphenobarbital, amobarbital, meprobamate, thallium, secobarbital, and methaqualone, and does not mention opipramol. |
+| popPK | Simon_2010 | irrelevant | 0 | 0 | This is a PK study of carisoprodol/meprobamate, not opipramol; no opipramol parameters appear. |
+| popPK | Tribut_2010 | irrelevant | 0 | 0 | This is a review of felbamate TDM, a different drug; no opipramol parameters are reported. |
+| popPK | Verpooten_1982 | irrelevant | 0 | 0 | Opipramol is not mentioned at all; the study covers other drugs in poisoned patients. |
 
 ---
 <sub>Generated by `docs.py` (scholarv2)</sub>

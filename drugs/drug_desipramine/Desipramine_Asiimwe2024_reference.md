@@ -1,11 +1,10 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N06A&quot;,&quot;href&quot;:&quot;atc/N06A.md&quot;},{&quot;label&quot;:&quot;desipramine&quot;,&quot;href&quot;:&quot;drugs/drug_desipramine/&quot;},{&quot;label&quot;:&quot;Asiimwe_2024 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Desipramine_Gueorguieva2010_reference&quot;,&quot;label&quot;:&quot;Gueorguieva_2010_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_desipramine/Desipramine_Gueorguieva2010_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # desipramine — `Desipramine_Asiimwe2024_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.571). The first reading is what the record holds.">cross-check: partial</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.571). The first reading is what the record holds.">cross-check: partial</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -13,7 +12,7 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
-**Model:** A model was built but held back: a core parameter had no value, so it is not published or simulated.
+**Model:** No model was generated from this record.
 
 ### Reviewer guidance
 
@@ -25,26 +24,29 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the val
 
 <sub>reviewed by rule template (no LLM)</sub>
 
+> ⚠️ **STALE** — review status `needs_review` (reviewed 2026-09-28 14:37:31.686147+00:00) predates the upstream re-run (2026-10-06 22:17:58.330548+00:00). Current validate status: `rejected`.
+
 ## Citation
 Asiimwe IG et al., Machine-Learning Assisted Screening of…, The AAPS journal (2024)
   ·  DOI: [10.1208/s12248-024-00934-6](https://doi.org/10.1208/s12248-024-00934-6)
 
 ## Model component
-<dbs-pgx drug="desipramine" model-id="Desipramine_Asiimwe2024_reference" status="needs_review" stale="false" population="clinical trial subjects" measured-compound="desipramine" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<dbs-pgx drug="desipramine" model-id="Desipramine_Asiimwe2024_reference" status="rejected" stale="true" population="healthy adults (desipramine clinical trial dataset)" measured-compound="desipramine" parameterization="mechanistic" topology="2C"></dbs-pgx>
 
-**Model structure:** 2-compartment, IV mammillary model — template `PK_2C`.  
-**Parameters:** 3 extracted.
+**Model structure:** 2-compartment; no model was built for this record.  
+**Parameters:** 4 extracted.
 
 **Parameterization:** mechanistic.
 
 ## Parameters
-> ⚠️ This record is not accepted (current status `needs_review`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
+> ⚠️ This record is not accepted (current status `rejected`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| Vc | `Q63` · V1 | 891.995 | L | 0.891995 | L | not captured | exact (1.0) | Asiimwe_2024:other_prose | — | not captured |
-| Vp | `Q64` · V2 | 368.922 | L | 0.368922 | L | not captured | exact (1.0) | Asiimwe_2024:other_prose | — | not captured |
-| Q | `Q30` · Q | 79.034 | L/h | 2.195388888888889e-05 | L/h | not captured | exact (1.0) | Asiimwe_2024:other_prose | — | not captured |
+| Vc (L) | `Q63` · V1 | 891.995 | L | 0.891995 | L | not captured | exact (1.0) | Asiimwe_2024:other_prose | — | not captured |
+| Vp (L) | `Q64` · V2 | 368.922 | L | 0.368922 | L | not captured | exact (1.0) | Asiimwe_2024:other_prose | — | not captured |
+| Q (L/h) | `Q30` · Q | 79.034 | L/h | 2.195388888888889e-05 | L/h | not captured | exact (1.0) | Asiimwe_2024:other_prose | — | not captured |
+| 11C-MIBG | `Q22` · CL | 3.65 | mL/min/g | 0.004258333333333333 | L/h | not captured | review_gapfill (0.7) | Raffel_2013:review | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -54,33 +56,16 @@ Asiimwe IG et al., Machine-Learning Assisted Screening of…, The AAPS journal (
 ## Departures & gaps
 
 **Interpretation flags:**
-- salvaged Q63 ('Vc'=891.995) from results prose — parameter table was unreadable
-- salvaged Q64 ('Vp'=368.922) from results prose — parameter table was unreadable
-- salvaged Q30 ('Q'=79.034) from results prose — parameter table was unreadable
+- salvaged Q63 ('Vc (L)'=891.995) from results prose — parameter table was unreadable
+- salvaged Q64 ('Vp (L)'=368.922) from results prose — parameter table was unreadable
+- salvaged Q30 ('Q (L/h)'=79.034) from results prose — parameter table was unreadable
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=desipramine
 - held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
 - status held at route_to_review — not promoted
+- gap-filled Q22 (CL) from Raffel_2013's review values (primary lacked it)
 
 **Extraction notes:**
-- no TEI final-model table id; trying text-pointer table recovery
-- unparsed cell Asiimwe_2024_table_p3_1:row0:col1 = '482.217 (6.7%)'
-- unparsed cell Asiimwe_2024_table_p3_1:row1:col1 = '1.265 (3.7%)'
-- unparsed cell Asiimwe_2024_table_p3_1:row2:col1 = '891.995 (5.2%)'
-- unparsed cell Asiimwe_2024_table_p3_1:row3:col1 = '368.922 (10.9%)'
-- unparsed cell Asiimwe_2024_table_p3_1:row4:col1 = '79.034 (18.6%)'
-- unparsed cell Asiimwe_2024_table_p3_1:row5:col1 = '0.626 (13.4%)'
-- unparsed cell Asiimwe_2024_table_p3_1:row5:col2 = '0.9%'
-- unparsed cell Asiimwe_2024_table_p3_1:row6:col1 = '0.046 (30.6%)'
-- unparsed cell Asiimwe_2024_table_p3_1:row7:col1 = '0.104 (15.0%)'
-- unparsed cell Asiimwe_2024_table_p3_1:row7:col2 = '3.7%'
-- unparsed cell Asiimwe_2024_table_p3_1:row8:col1 = '0.037 (34.5%)'
-- unparsed cell Asiimwe_2024_table_p3_1:row9:col1 = '0.109 (18.2%)'
-- unparsed cell Asiimwe_2024_table_p3_1:row9:col2 = '9.9%'
-- unparsed cell Asiimwe_2024_table_p3_1:row10:col1 = '0.024 (16.1%)'
-- unparsed cell Asiimwe_2024_table_p3_1:row10:col2 = '14.6%'
-- unparsed cell Asiimwe_2024_table_p3_1:row11:col1 = '0.139 (28.6%)'
-- unparsed cell Asiimwe_2024_table_p3_1:row11:col2 = '14.6%'
-- text-pointer recovery: parsed 0 structural record(s) from the flattened table i sentence
+- text-pointer recovery found no readable extracted parameter table
 
 ## Validation
 
@@ -114,7 +99,10 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 | C0_has_structural_params | pass | not captured | 3 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | fail | not captured | not captured | not captured | not captured | not captured |
+| C5_dimension_Q22 | pass | [length] ** 3 / [time] / [mass] | not captured | not captured | not captured | ['Raffel_2013:review'] |
+| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 3.65 | not captured | not captured | ['Raffel_2013:review'] |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
+| C9_phys_window_Q22 | fail | clearance within physiological range | 1.53e+04 L/h | not captured | not captured | ['Raffel_2013:review'] |
 | C9_phys_window_Q63 | pass | volume within physiological range | 892 L | not captured | not captured | ['Asiimwe_2024:other_prose'] |
 | C9_phys_window_Q64 | pass | volume within physiological range | 369 L | not captured | not captured | ['Asiimwe_2024:other_prose'] |
 
@@ -130,19 +118,9 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
-## Downloadable models
+## Models
 
-<div class="pk-models-grid"><div class="pk-models-table">
-<table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-</tbody></table>
-<p>No bundles have been generated for this record yet. When the engineer emits them they appear here automatically — this page reports what is on disk and generates nothing itself.</p>
-</div></div>
+<p>No downloads: this record is <b>rejected</b>, so it is not published as a model. Any archives generated for it before the verdict have been removed — a download outlives the page that explains it.</p>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
@@ -151,4 +129,4 @@ _No web simulator for this record: its structure has no shared WebAssembly templ
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-07-15 11:25 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-06 22:17 UTC</sub>

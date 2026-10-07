@@ -8,11 +8,17 @@
 - **molar mass:** 215.212 g/mol (C11H9N3O2) — DrugBank
 - **groups:** approved
 
+## About
+
+Naftazone is a capillary-stabilizing vasoprotective drug used as an antihemorrhagic agent to reduce bleeding from fragile capillaries. It is an approved medicine, but it is not widely used and does not appear to be authorised in the European Union.
+
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q10335363](https://www.wikidata.org/wiki/Q10335363) and the WHO ATC classification; not checked by a person.</small>
+
 ## Extraction summary
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-01 16:59 | 0:28 | 0/0/0 | 0/0/0 | 0/0/0 | 3,883/274 | ollama / glm-5.3-flash | 0 | 0/0 | 0/0 | 0 |
+| 2026-10-06 22:19 | 0:04 | 0/0/0 | 0/0/0 | 0/0/0 | 2,392/29 | ollama / qwen3.8:27b-mtp-q8_0 | 0 | 0/0 | 0/0 | 0 |
 
 ## popPK records
 

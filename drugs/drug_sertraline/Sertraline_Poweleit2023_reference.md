@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N06A&quot;,&quot;href&quot;:&quot;atc/N06A.md&quot;},{&quot;label&quot;:&quot;sertraline&quot;,&quot;href&quot;:&quot;drugs/drug_sertraline/&quot;},{&quot;label&quot;:&quot;Poweleit_2023 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Sertraline_Castillo2024_reference&quot;,&quot;label&quot;:&quot;Castillo_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_sertraline/Sertraline_Castillo2024_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Sertraline_Xia2025_reference&quot;,&quot;label&quot;:&quot;Xia_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_sertraline/Sertraline_Xia2025_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Sertraline_Poweleit2023_reference&quot;,&quot;label&quot;:&quot;Poweleit_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_sertraline/Sertraline_Poweleit2023_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Sertraline_Xia2025_reference&quot;,&quot;label&quot;:&quot;Xia_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_sertraline/Sertraline_Xia2025_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # sertraline — `Sertraline_Poweleit2023_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.429). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.429). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -13,7 +13,7 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
-**Model:** No model was generated from this record.
+**Model:** A simulatable model was generated — see the **Models** and **Simulation** tabs.
 
 ### Reviewer guidance
 
@@ -25,26 +25,25 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on how the
 
 <sub>reviewed by rule template (no LLM)</sub>
 
+> ⚠️ **STALE** — review status `needs_review` (reviewed 2026-09-28 14:40:30.069864+00:00) predates the upstream re-run (2026-10-06 23:44:36.289414+00:00). Current validate status: `extracted`.
+
 ## Citation
 Poweleit EA et al., Escitalopram and Sertraline Population…, Clinical pharmacokinetics (2023)
   ·  DOI: [10.1007/s40262-023-01294-8](https://doi.org/10.1007/s40262-023-01294-8)
 
 ## Model component
-<dbs-pgx drug="sertraline" model-id="Sertraline_Poweleit2023_reference" status="needs_review" stale="false" population="pediatric psychiatric inpatients" measured-compound="sertraline" parameterization="apparent" topology="1C"></dbs-pgx>
+<dbs-pgx drug="sertraline" model-id="Sertraline_Poweleit2023_reference" status="extracted" stale="true" population="psychiatrically hospitalized pediatric patients aged 5-18 years" measured-compound="sertraline" parameterization="apparent" topology="1C"></dbs-pgx>
 
-**Model structure:** 1-compartment; no model was built for this record.  
-**Parameters:** 3 extracted.
+**Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
+**Parameters:** 2 extracted.
 
 **Parameterization:** CL/F, V/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
 ## Parameters
-> ⚠️ This record is not accepted (current status `needs_review`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
-
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| CL/F | `Q27` · CL/F | 14.2 | L/h/1.73 m2 | not captured | [l] / [[h] · [1.73m2]] | not captured | exact (1.0) | Poweleit_2023:abstract, Poweleit_2023:abstract | — | not captured |
-| V/F | `Q76` · V/F | 428 | L/1.73 m2 | not captured | [l] / [1.73m2] | not captured | exact (1.0) | Poweleit_2023:abstract, Poweleit_2023:abstract | — | not captured |
-| Ctrough | `Q37` · Ctrough | 151.1 | ng/mL | not captured | [ng] / [ml] | not captured | exact (1.0) | Poweleit_2023:abstract, Poweleit_2023:abstract, Poweleit_2023:abstract, Poweleit_2023:abstract | — | not captured |
+| CL/F (escitalopram) | `Q27` · CL/F | 14.2 | L/h | 3.944444444444444e-06 | L/h | not captured | exact (1.0) | Poweleit_2023:abstract | — | not captured |
+| V/F (escitalopram) | `Q76` · V/F | 428 | L | 0.428 | L | not captured | exact (1.0) | Poweleit_2023:abstract | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -53,18 +52,40 @@ Poweleit EA et al., Escitalopram and Sertraline Population…, Clinical pharmaco
 
 ## Departures & gaps
 
+**Deviations:**
+- `defaulted_parameters`: ['ka', 'Tlag']
+- `apparent_assumption`: F=1, Fm=1, no molar correction (parameterization=apparent)
+- `invented_absorption`: ka defaulted — not reported in source
+- `input_model`: first-order depot input — apparent (/F) parameterization ⇒ extravascular dosing
+
 **Interpretation flags:**
 - unit_dimension_unknown: 'L/h/1.73 m2' (CL/F)
 - unit_dimension_unknown: 'L/1.73 m2' (V/F)
+- dropped duplicate Q27 ('CL/F (sertraline)', value 124) — already have one for this compound
+- dropped duplicate Q76 ('V/F (sertraline)', value 4320) — already have one for this compound
+- covariate cyp2c19 for Ctrough from footnote/prose kept as documentation only (['Poweleit_2023:abstract'])
+- covariate normal metabolizer for Ctrough from footnote/prose kept as documentation only (['Poweleit_2023:abstract'])
+- covariate normal metabolizer for AUC ratio from footnote/prose kept as documentation only (['Poweleit_2023:abstract'])
+- dropped value-less row: 'p (escitalopram)' (captured trailing unit 'escitalopram' for child rows)
+- covariate ultrarapid metabolizer for Ctrough from footnote/prose kept as documentation only (['Poweleit_2023:abstract'])
+- covariate ultrarapid metabolizer for AUC ratio from footnote/prose kept as documentation only (['Poweleit_2023:abstract'])
+- dropped value-less row: 'p (sertraline)' (captured trailing unit 'sertraline' for child rows)
+- dropped value-less row: 'dose reduction (escitalopram, poor metabolizers)'
+- dropped value-less row: 'dose reduction (sertraline, poor metabolizers)'
+- dropped unlinked row (NIL): 'escitalopram cohort samples' — extend the ontology if this is a real PK parameter (source ['Poweleit_2023:abstract'])
+- dropped unlinked row (NIL): 'escitalopram cohort patients' — extend the ontology if this is a real PK parameter (source ['Poweleit_2023:abstract'])
+- dropped unlinked row (NIL): 'sertraline cohort samples' — extend the ontology if this is a real PK parameter (source ['Poweleit_2023:abstract'])
+- dropped unlinked row (NIL): 'sertraline cohort patients' — extend the ontology if this is a real PK parameter (source ['Poweleit_2023:abstract'])
+- dropped value-less row: 'age'
+- implicit units: 'CL/F (escitalopram)' → L/h (from the popPK convention: 'No unit stated in text or footnotes; CL/F for oral population PK conventionally in L/h, consistent with 14.2.')
+- implicit units: 'V/F (escitalopram)' → L (from the popPK convention: 'No unit stated; V/F conventionally in L, consistent with 428.')
 - apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=sertraline
-- held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
-- status held at route_to_review — not promoted
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
 - skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
 - skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
 
 **Extraction notes:**
-- no GROBID TEI available — transcribed from abstract in Poweleit_2023_metadata.yaml (8 record(s)); values are summary statistics, not a fitted model
+- no GROBID TEI available — transcribed from abstract in Poweleit_2023_metadata.yaml (19 record(s)); values are summary statistics, not a fitted model
 
 ## Validation
 
@@ -96,14 +117,15 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 3 | not captured | not captured | not captured |
+| C0_has_structural_params | pass | not captured | 2 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
-| C5_dimension_Q37 | pass | [mass] / [length] ** 3 | not captured | not captured | not captured | ['Poweleit_2023:abstract', 'Poweleit_2023:abstract', 'Poweleit_2023:abstract', 'Poweleit_2023:abstract'] |
-| C5_unit_missing_Q27 | fail | [length] ** 3 / [time] | L/h/1.73 m2 | not captured | not captured | ['Poweleit_2023:abstract', 'Poweleit_2023:abstract'] |
-| C5_unit_missing_Q76 | fail | [length] ** 3 | L/1.73 m2 | not captured | not captured | ['Poweleit_2023:abstract', 'Poweleit_2023:abstract'] |
+| C5_dimension_Q27 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Poweleit_2023:abstract'] |
+| C5_dimension_Q76 | pass | [length] ** 3 | not captured | not captured | not captured | ['Poweleit_2023:abstract'] |
 | C7_apparent_coherence | pass | not captured | not captured | not captured | not captured | not captured |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
+| C9_phys_window_Q27 | pass | clearance within physiological range | 14.2 L/h | not captured | not captured | ['Poweleit_2023:abstract'] |
+| C9_phys_window_Q76 | pass | volume within physiological range | 428 L | not captured | not captured | ['Poweleit_2023:abstract'] |
 
 <details class="legend">
 <summary>Check legend — what each column means</summary>
@@ -121,21 +143,26 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_sertraline/Sertraline_Poweleit2023_reference/Sertraline_Poweleit2023_reference_modelica.zip" download>Sertraline_Poweleit2023_reference_modelica.zip</a> <span class="pk-size">(5.1 kB)</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_sertraline/Sertraline_Poweleit2023_reference/Sertraline_Poweleit2023_reference_fmi.zip" download>Sertraline_Poweleit2023_reference_fmi.zip</a> <span class="pk-size">(4.3 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_sertraline/Sertraline_Poweleit2023_reference/Sertraline_Poweleit2023_reference_matlab.zip" download>Sertraline_Poweleit2023_reference_matlab.zip</a> <span class="pk-size">(3.5 kB)</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_sertraline/Sertraline_Poweleit2023_reference/Sertraline_Poweleit2023_reference_matlab_simbio.zip" download>Sertraline_Poweleit2023_reference_matlab_simbio.zip</a> <span class="pk-size">(2.9 kB)</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_sertraline/Sertraline_Poweleit2023_reference/Sertraline_Poweleit2023_reference_sbml.zip" download>Sertraline_Poweleit2023_reference_sbml.zip</a> <span class="pk-size">(2.7 kB)</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_sertraline/Sertraline_Poweleit2023_reference/Sertraline_Poweleit2023_reference_cellml.zip" download>Sertraline_Poweleit2023_reference_cellml.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
 </tbody></table>
-<p>No bundles have been generated for this record yet. When the engineer emits them they appear here automatically — this page reports what is on disk and generates nothing itself.</p>
-</div></div>
+<p>Each archive holds the model source, a script that simulates it against the appropriate library, and a README describing both and how to run them.</p>
+<p><b>FMI is two downloads.</b> The archive holds this record's parameters and its driver; the simulator itself is <code>PK_1C_enteral.fmu</code>, one compiled template shared by every model of this structure. Take the FMU once, keep it beside the script (or pass <code>--fmu PATH</code>). Running it reproduces the model-specific FMU exactly.</p>
+</div><figure class="pk-models-diagram"><img src="drugs/drug_sertraline/Sertraline_Poweleit2023_reference/Sertraline_Poweleit2023_reference.svg" alt="Sertraline_Poweleit2023_reference diagram"><figcaption>Model diagram (Modelica) using Pharmacolibrary v26.09 components, rendered by OpenModelica 1.26.7.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+**Administration: oral** — 50 mg, single dose, first-order absorption (ka 0.5 /h, F 1). _The paper's dose was not captured; the default is the WHO ATC DDD 50 mg oral (N06AB06) (defined daily dose)._
+
+<dbs-fmusim paramsurl="drugs/drug_sertraline/Sertraline_Poweleit2023_reference/Sertraline_Poweleit2023_reference_params.json" metaurl="assets/fmu/PK_1C_enteral.vr.json" wasmurl="assets/fmu/PK_1C_enteral.js" controlsurl="drugs/drug_sertraline/Sertraline_Poweleit2023_reference/Sertraline_Poweleit2023_reference_sim_controls.json"></dbs-fmusim>
+
+<sub>Runs this record's model in the browser as WebAssembly. Sliders start at the extracted values; the reference check compares the browser's peak against the FMPy result recorded when the record was built, and is withheld once a value has been edited. Template `PK_1C_enteral` · parameters `Sertraline_Poweleit2023_reference_params.json` · controls `Sertraline_Poweleit2023_reference_sim_controls.json`. A slider marked *simulator value* is running on the template's own default because this record does not pin that parameter.</sub>
 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-09-24 04:39 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-06 23:44 UTC</sub>

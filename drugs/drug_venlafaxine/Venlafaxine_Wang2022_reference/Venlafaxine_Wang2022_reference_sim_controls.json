@@ -10,26 +10,6 @@
   "mult": true
  },
  {
-  "key": "Cl",
-  "label": "Clearance",
-  "unit": "L/h",
-  "scale": 3600000.0,
-  "min": 0.2,
-  "max": 3,
-  "step": 0.05,
-  "mult": true
- },
- {
-  "key": "VdPerKg",
-  "label": "Vd per kg",
-  "unit": "L/kg",
-  "scale": 1000.0,
-  "min": 0.2,
-  "max": 3,
-  "step": 0.05,
-  "mult": true
- },
- {
   "key": "ka",
   "label": "Absorption rate ka",
   "unit": "1/h",
@@ -49,13 +29,44 @@
   "step": 1
  },
  {
-  "key": "weight",
-  "label": "Body weight",
-  "unit": "kg",
-  "scale": 1,
-  "min": 40,
-  "max": 120,
-  "step": 1
+  "key": "CL1",
+  "label": "Parent clearance, other routes",
+  "unit": "L/h",
+  "scale": 3600000.0,
+  "min": 0.2,
+  "max": 3,
+  "step": 0.05,
+  "mult": true
+ },
+ {
+  "key": "q1_m11",
+  "label": "Formation of metabolite 1",
+  "unit": "L/h",
+  "scale": 3600000.0,
+  "min": 0.2,
+  "max": 3,
+  "step": 0.05,
+  "mult": true
+ },
+ {
+  "key": "CLm1",
+  "label": "Metabolite 1 clearance",
+  "unit": "L/h",
+  "scale": 3600000.0,
+  "min": 0.2,
+  "max": 3,
+  "step": 0.05,
+  "mult": true
+ },
+ {
+  "key": "Vd1m1",
+  "label": "Metabolite 1 volume",
+  "unit": "L",
+  "scale": 1000.0,
+  "min": 0.2,
+  "max": 3,
+  "step": 0.05,
+  "mult": true
  },
  {
   "key": "F",
@@ -90,8 +101,8 @@
   "label": "Simulated time",
   "unit": "h",
   "scale": 0.0002777777777777778,
-  "min": 5.0,
-  "max": 86.0,
+  "min": 3.0,
+  "max": 54.0,
   "step": 1.0,
   "sim": true
  }

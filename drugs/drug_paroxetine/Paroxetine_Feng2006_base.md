@@ -25,14 +25,14 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 
 <sub>reviewed by glm-5.3-flash</sub>
 
-> ⚠️ **STALE** — review status `rejected` (reviewed 2026-09-28 14:39:24.117070+00:00) predates the upstream re-run (2026-10-04 00:51:55.331120+00:00). Current validate status: `rejected`.
+> ⚠️ **STALE** — review status `rejected` (reviewed 2026-09-28 14:39:24.117070+00:00) predates the upstream re-run (2026-10-06 23:38:44.330176+00:00). Current validate status: `rejected`.
 
 ## Citation
 Feng Y et al., Paroxetine: population pharmacokinetic…, British journal of clinical… (2006)
   ·  DOI: [10.1111/j.1365-2125.2006.02629.x](https://doi.org/10.1111/j.1365-2125.2006.02629.x)
 
 ## Model component
-<dbs-pgx drug="paroxetine" model-id="Paroxetine_Feng2006_base" status="rejected" stale="true" population="elderly subjects with major depressive disorder" measured-compound="paroxetine" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<dbs-pgx drug="paroxetine" model-id="Paroxetine_Feng2006_base" status="rejected" stale="true" population="elderly depressed subjects (late-life major depressive disorder)" measured-compound="paroxetine" parameterization="mechanistic" topology="1C"></dbs-pgx>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 6 extracted, plus 6 covariate effects.
@@ -50,10 +50,10 @@ Feng Y et al., Paroxetine: population pharmacokinetic…, British journal of cli
 | V 3 (l) | `Q77` · V3 | 2350 | l | 2.35 | [l] | not captured | space_fold (0.95) | tab_4:row5:col1, tab_4:row5:col2, tab_4:row5:col5 | — | not captured |
 | Q (l h -1 ) | `Q30` · Q | 1.33 | l h -1 | 3.6944444444444447e-07 | [l] / [h] | not captured | exact (1.0) | tab_4:row6:col1, tab_4:row6:col2, tab_4:row6:col5 | — | not captured |
 | K a (h -1 ) | `Q49` · kabs | 9.24 | h -1 | 0.0025666666666666667 | [1] / [h] | not captured | space_fold (0.95) | tab_4:row7:col1, tab_4:row7:col2, tab_4:row7:col5 | — | not captured |
-| theta_q367_pm | `Q900` · theta_q367_pm | 48.8 | not captured | not captured | not captured | not captured | not captured (not captured) | tab_4:row8:col5 | — | not captured |
-| theta_q367_im | `Q900` · theta_q367_im | 19.4 | not captured | not captured | not captured | not captured | not captured (not captured) | tab_4:row9:col5 | — | not captured |
-| theta_q367_em | `Q900` · theta_q367_em | 49.5 | not captured | not captured | not captured | not captured | not captured (not captured) | tab_4:row10:col5 | — | not captured |
-| theta_q367_um | `Q900` · theta_q367_um | 34.6 | not captured | not captured | not captured | not captured | not captured (not captured) | tab_4:row11:col5 | — | not captured |
+| theta_vmax_pm | `Q900` · theta_vmax_pm | 48.8 | not captured | not captured | not captured | not captured | not captured (not captured) | tab_4:row8:col5 | — | not captured |
+| theta_vmax_im | `Q900` · theta_vmax_im | 19.4 | not captured | not captured | not captured | not captured | not captured (not captured) | tab_4:row9:col5 | — | not captured |
+| theta_vmax_em | `Q900` · theta_vmax_em | 49.5 | not captured | not captured | not captured | not captured | not captured (not captured) | tab_4:row10:col5 | — | not captured |
+| theta_vmax_um | `Q900` · theta_vmax_um | 34.6 | not captured | not captured | not captured | not captured | not captured (not captured) | tab_4:row11:col5 | — | not captured |
 | theta_v2_wt_v2 | `Q900` · theta_v2_wt_v2 | 50.1 | not captured | not captured | not captured | not captured | not captured (not captured) | tab_4:row12:col5 | — | not captured |
 | theta_v2_sex_v2 | `Q900` · theta_v2_sex_v2 | 42.9 | not captured | not captured | not captured | not captured | not captured (not captured) | tab_4:row13:col5 | — | not captured |
 
@@ -66,11 +66,11 @@ Feng Y et al., Paroxetine: population pharmacokinetic…, British journal of cli
 
 **Interpretation flags:**
 - unit_dimension_mismatch: 'V m (µg h -1 )' → Q66 (unit '[mass] / [time]' vs ontology '[length] ** 3') — route to review
-- covariate effect for Q367 has no base parameter row (kept as unattached equation-variable)
+- dropped value-less row: 'Wt, total body weight'
 - apparent-by-design (ADVISORY, codes unchanged): extravascular dosing with no identifiable F, so these reported disposition parameters are likely apparent unless the model puts first-pass in its structure — Q64 (V 2 (l)); Q30 (Q (l h -1 ))
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=paroxetine
 - held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
-- structure disagreement: deterministic 1C vs LLM 3C — review compartment count
+- structure disagreement: deterministic 1C vs LLM 2C — review compartment count
 - status held at route_to_review — not promoted
 - model-stage split: 'base model' is the base model of Feng_2006 (paper reports 2 stages: base model, final model); same population, different model-building step
 - skipped review gap-fill of TLAG: primary's parameterization (rate-constant / ka-only) does not use it
@@ -161,4 +161,4 @@ _No web simulator for this record: its structure has no shared WebAssembly templ
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-04 00:51 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-06 23:38 UTC</sub>

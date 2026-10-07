@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C05C&quot;,&quot;href&quot;:&quot;atc/C05C.md&quot;},{&quot;label&quot;:&quot;rutoside&quot;,&quot;href&quot;:&quot;drugs/drug_rutoside/&quot;},{&quot;label&quot;:&quot;Dom\u00ednguez_2021 \u00b7 rutin&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Rutoside_Domnguez2024_extract_equivalent_to_7_4_mg_kg_of_rut&quot;,&quot;label&quot;:&quot;Dom\u00ednguez_2024_extract_equivalent_to_7_4_mg_kg_of_rutin&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_rutoside/Rutoside_Domnguez2024_extract_equivalent_to_7_4_mg_kg_of_rut.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Rutoside_Domnguez2024_extract_equivalent_to_7_4_mg_kg_of_rut&quot;,&quot;label&quot;:&quot;Dom\u00ednguez_2024_extract_equivalent_to_7_4_mg_kg_of_rutin&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_rutoside/Rutoside_Domnguez2024_extract_equivalent_to_7_4_mg_kg_of_rut.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # rutoside — `Rutoside_Domnguez2021_rutin`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. The first reading is what the record holds.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.129). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -23,21 +23,23 @@
 
 In the Domínguez_2021 rat model, Frel is defined as relative bioavailability — a fraction reaching systemic circulation — but is recorded with the verbatim unit mg/kg, so the dimension check on this structural parameter failed and no SI value could be produced. The remaining reported parameters (AUC∞ 14853.11 ng*h/mL, Vss 0.11 L/kg, CL 0.10 L/h/kg, kel 1.08 h−1, t1/2z 0.66 h, MRT 1.08 h, V 0.096 L/kg, Cmax 462.78 ng/mL, tmax 6 h, V/F 86.08 L/kg, CL/F 18.36 L/h/kg) carry consistent units, but the record could not be published while Frel's unit remained unconvertible. Extracted — rutin (i.v. model); quercetin representing Q3OG/Q3OS (oral model): AUC∞ 1.49e+04 ng*h/mL, Vss 0.11 L/kg, CL 0.1 L/h/kg, kel 1.08 h−1, t1/2z 0.66 h, MRT 1.08 h, V 0.096 L/kg, AUC/dose 1.02e+04 h/L, … (+5).
 
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has rutin, the second reading unknown; it also differs on 26 more fields. That field shapes the model, so the record is marked disputed.
+
 <sub>reviewed by glm-5.3-flash</sub>
 
-> **Dose compound ≠ measured compound:** dosed `rutin (pure or as Physalis peruviana extract)`, measured `rutin (i.v. model); quercetin representing Q3OG/Q3OS (oral model)`.
+> ⚠️ **STALE** — review status `rejected` (reviewed 2026-10-05 09:31:38.475430+00:00) predates the upstream re-run (2026-10-06 22:23:31.578034+00:00). Current validate status: `rejected`.
 
 ## Citation
 Domínguez Moré GP et al., Matrix Effects of the Hydroethanolic Ex…, Pharmaceutics (2021)
   ·  DOI: [10.3390/pharmaceutics13040535](https://doi.org/10.3390/pharmaceutics13040535)
 
 ## Model component
-<dbs-pgx drug="rutoside" model-id="Rutoside_Domnguez2021_rutin" status="rejected" stale="false" population="Wistar rats" measured-compound="rutin (i.v. model); quercetin representing Q3OG/Q3OS (oral model)" parameterization="apparent" topology="parent_metabolite"></dbs-pgx>
+<dbs-pgx drug="rutoside" model-id="Rutoside_Domnguez2021_rutin" status="rejected" stale="true" population="Wistar rats" measured-compound="rutin" parameterization="apparent" topology="parent_metabolite"></dbs-pgx>
 
 **Model structure:** parent + metabolite; no model was built for this record.  
 **Parameters:** 13 extracted.
 
-**Parameterization:** CL/F, V/F — apparent, F unknown (apparent — bioavailability not identifiable).
+**Parameterization:** CL/F, Vnorm/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
 ## Parameters
 > ⚠️ This record is not accepted (current status `rejected`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
@@ -50,11 +52,11 @@ Domínguez Moré GP et al., Matrix Effects of the Hydroethanolic Ex…, Pharmace
 | k (h−1) | `Q47` · kel | 1.08 | h−1 | 0.00030000000000000003 | [1] / [h] | not captured | exact (1.0) | Domínguez_2021_table_2:row5:col1, Domínguez_2021_table_2:row5:col2, Domínguez_2021_table_3:row7:col1, Domínguez_2021_table_3:row7:col2 | — | not captured |
 | t1/2 (h) | `Q57` · t1/2z | 0.66 | h | 2376.0 | [h] | not captured | exact (1.0) | Domínguez_2021_table_2:row6:col1, Domínguez_2021_table_2:row6:col2, Domínguez_2021_table_3:row8:col1, Domínguez_2021_table_3:row8:col2 | — | not captured |
 | MRT (h) | `Q53` · MRT | 1.08 | h | 3888.0000000000005 | [h] | not captured | exact (1.0) | Domínguez_2021_table_2:row7:col1, Domínguez_2021_table_3:row9:col1, Domínguez_2021_table_3:row9:col2 | — | not captured |
-| Vdz (L/kg) | `Q61` · V | 0.096 | L/kg | 0.00672 | [l] / [kg] | not captured | llm (0.6) | Domínguez_2021_table_2:row8:col1, Domínguez_2021_table_2:row8:col2 | — | not captured |
+| Vdz (L/kg) | `Q352` · Vnorm | 0.096 | L/kg | 0.00672 | [l] / [kg] | not captured | llm (0.6) | Domínguez_2021_table_2:row8:col1, Domínguez_2021_table_2:row8:col2 | — | not captured |
 | AUC/dose× 10−3 (h/L) | `Q189` · AUC/dose | 10243.52 | h/L | not captured | [h] / [l] | not captured | llm_confirmed (0.6) | Domínguez_2021_table_2:row9:col1, Domínguez_2021_table_2:row9:col2 | — | not captured |
 | Cmax (ng/mL) | `Q32` · Cmax | 462.78 | ng/mL | not captured | [ng] / [ml] | not captured | exact (1.0) | Domínguez_2021_table_3:row3:col1, Domínguez_2021_table_3:row3:col2 | — | not captured |
 | Tmax (h) | `Q56` · tmax | 6 | h | 21600.0 | [h] | not captured | exact (1.0) | Domínguez_2021_table_3:row4:col1, Domínguez_2021_table_3:row4:col2 | — | not captured |
-| Vdz/F (L/kg) | `Q76` · V/F | 86.08 | L/kg | 6.0256 | [l] / [kg] | not captured | llm (0.6) | Domínguez_2021_table_3:row5:col1, Domínguez_2021_table_3:row5:col2 | — | not captured |
+| Vdz/F (L/kg) | `Q353` · Vnorm/F | 86.08 | L/kg | 6.0256 | [l] / [kg] | not captured | llm (0.6) | Domínguez_2021_table_3:row5:col1, Domínguez_2021_table_3:row5:col2 | — | not captured |
 | Cl/F (L/h/kg) | `Q27` · CL/F | 18.36 | L/h/kg | 0.000357 | [l] / [[h] · [kg]] | not captured | exact (1.0) | Domínguez_2021_table_3:row6:col1, Domínguez_2021_table_3:row6:col2 | — | not captured |
 | Frel | `Q87` · Frel | 1.0 | mg/kg | not captured | not captured | not captured | exact (1.0) | Domínguez_2021_table_3:row11:col1, Domínguez_2021_table_3:row11:col2 | — | not captured |
 
@@ -71,18 +73,15 @@ Domínguez Moré GP et al., Matrix Effects of the Hydroethanolic Ex…, Pharmace
 - dropped unlinked row (NIL): '75' — extend the ontology if this is a real PK parameter (source ['Domínguez_2021_table_3:row1:col1', 'Domínguez_2021_table_3:row1:col2'])
 - unit_dimension_mismatch: 'AUC/dose × 10−3 (h/L)' → Q189 (unit '[time] / [length] ** 3' vs ontology '[mass] * [time] / [length] ** 3') — route to review
 - dropped duplicate Q189 ('AUC/dose × 10−3 (h/L)', value '54.61') — already have one for this compound
-- dropped value-less row: 'β: variability due to significant covariate'
-- NIL: refused to back-fill base 'NIL' from footnote/prose loose number 75 (source ['pharmaceutics-13-00535-t005:footnote']); the table cell was unparseable — needs review
-- dropped value-less row: 'D500, D750, D1000: covariate extract doses 500, 750, and 1000 mg/kg, respectively'
-- apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=rutin (i.v. model); quercetin representing Q3OG/Q3OS (oral model)
+- apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=rutin
 - held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
 - topology: transfer parameter unlinked (Q100) — add Kfm/formation-rate/rate-constant to the ontology; routing to review
-- template fit: none — 3 metabolites — the templates hold two
+- template fit: none — only the metabolite is modelled — no parent compartment
 - status held at route_to_review — not promoted
 - population split: 'rutin' subgroup of Domínguez_2021 (paper reports 3 populations: rutin, stochastic approximation, value)
-- row roles (LLM): model_class=compartmental; 53/53 row label(s) assigned, 21 linked by role; re-tagged parent→quercetin ×111, rutin→rutin (i.v. model); quercetin representing Q3OG/Q3OS (oral model) ×39, parent→rutin (i.v. model); quercetin representing Q3OG/Q3OS (oral model) ×20
-- molar mass: none of 1 PubChem candidate(s) is 'quercetin-3-O-sulfate (Q3OS)' (LLM) — left in mass units
-- molar mass: none found for 'quercetin-3-O-sulfate (Q3OS)' — its concentrations stay mass-only
+- row roles: 8 per-group rows of quercetin covariate_effect but 0 reference group(s) — kept as printed
+- row roles: 10 per-group rows of rutin covariate_effect but 0 reference group(s) — kept as printed
+- row roles (LLM): model_class=compartmental; 50/50 row label(s) assigned, 21 linked by role; re-tagged parent→quercetin ×45, rutin→parent ×33
 - skipped review gap-fill of V2: primary is PARENT_METABOLITE (peripheral family needs ≥2C)
 - skipped review gap-fill of Q: primary's parameterization (rate-constant / ka-only) does not use it
 
@@ -133,6 +132,53 @@ Domínguez Moré GP et al., Matrix Effects of the Hydroethanolic Ex…, Pharmace
 
 ## Validation
 
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
+
+| second reader | verdict | agreement | disagreements |
+|---|---|---|---|
+| `gpt-oss:120b` | not confirmed | 0.129 (4/31 fields) | 27 |
+
+<details><summary>27 field(s) a reader read differently</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss:120b` | `parameters[1.45]` | not captured | 2.9 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[auc/dose× 10-3]` | 10243.52 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[auc/dose× 10-3]` | not captured | 10243.52 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[auc0-inf]` | 14853.11 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[auc0-inf]` | not captured | 14853.11 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[cl/f]` | 18.36 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[cl/f]` | not captured | 18.36 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[cl]` | 0.10 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[cl]` | not captured | 0.10 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[cmax]` | 462.78 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[cmax]` | not captured | 462.78 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[k]` | 1.08 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[k]` | not captured | 1.08 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[mrt]` | 1.08 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[mrt]` | not captured | 1.08 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[t1/2]` | 0.66 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[t1/2]` | not captured | 0.66 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[tmax]` | 6 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[tmax]` | not captured | 6 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[vdss]` | 0.11 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[vdss]` | not captured | 0.11 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[vdz/f]` | 86.08 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[vdz/f]` | not captured | 86.08 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[vdz]` | 0.096 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[vdz]` | not captured | 0.096 | only_one_extracted |
+| `gpt-oss:120b` | `screen.dose_compound` | rutin | unknown | mismatch |
+| `gpt-oss:120b` | `screen.primary_analyte` | rutin | unknown | mismatch |
+
+</details>
+
+<details class="legend">
+<summary>Cross-check legend</summary>
+<table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>second reader</code></td><td>a model that re-read the paper independently, always from a different family than the first reading (scholarv2.secondary_for): a qwen primary is checked by gpt-oss:120b, a gpt-oss primary by qwen3.8:27b-mtp-q8_0 — two checkpoints of one family share their misreads, so agreement between them would mean little. A record can have several readers.</td></tr><tr><td><code>agreement</code></td><td>share of the compared fields that reader agreed on.</td></tr><tr><td><code>verdict</code></td><td>per reader: `confirmed` it agrees throughout · `partly confirmed` a non-structural field differs · `not confirmed` a structural one differs (clearance, a volume, ka, a lag) · `primary re-run` the first reading extracted nothing and was given one hinted retry.</td></tr><tr><td><code>combined</code></td><td>the record's verdict over ALL its readers: confirmed only when every reader that answered agrees, disputed as soon as one disagrees on a structural parameter. The most favourable reading is never taken — an extra reader must not be a way to find one that agrees.</td></tr><tr><td><code>kept</code></td><td>which reading the record holds. ALWAYS the first — a disagreement is a signal for a reviewer, never an automatic correction, so the numbers on this page are the first model's either way.</td></tr></tbody></table>
+</details>
+
+
 **Scholar closed-form checks:**
 
 | check | status | expected | obtained | ratio | tol | source |
@@ -145,20 +191,18 @@ Domínguez Moré GP et al., Matrix Effects of the Hydroethanolic Ex…, Pharmace
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Domínguez_2021_table_2:row4:col1', 'Domínguez_2021_table_2:row4:col2'] |
 | C5_dimension_Q27 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Domínguez_2021_table_3:row6:col1', 'Domínguez_2021_table_3:row6:col2'] |
 | C5_dimension_Q32 | pass | [mass] / [length] ** 3 | not captured | not captured | not captured | ['Domínguez_2021_table_3:row3:col1', 'Domínguez_2021_table_3:row3:col2'] |
+| C5_dimension_Q352 | pass | [length] ** 3 | not captured | not captured | not captured | ['Domínguez_2021_table_2:row8:col1', 'Domínguez_2021_table_2:row8:col2'] |
+| C5_dimension_Q353 | pass | [length] ** 3 | not captured | not captured | not captured | ['Domínguez_2021_table_3:row5:col1', 'Domínguez_2021_table_3:row5:col2'] |
 | C5_dimension_Q47 | pass | 1 / [time] | not captured | not captured | not captured | ['Domínguez_2021_table_2:row5:col1', 'Domínguez_2021_table_2:row5:col2', 'Domínguez_2021_table_3:row7:col1', 'Domínguez_2021_table_3:row7:col2'] |
 | C5_dimension_Q53 | pass | [time] | not captured | not captured | not captured | ['Domínguez_2021_table_2:row7:col1', 'Domínguez_2021_table_3:row9:col1', 'Domínguez_2021_table_3:row9:col2'] |
 | C5_dimension_Q56 | pass | [time] | not captured | not captured | not captured | ['Domínguez_2021_table_3:row4:col1', 'Domínguez_2021_table_3:row4:col2'] |
 | C5_dimension_Q57 | pass | [time] | not captured | not captured | not captured | ['Domínguez_2021_table_2:row6:col1', 'Domínguez_2021_table_2:row6:col2', 'Domínguez_2021_table_3:row8:col1', 'Domínguez_2021_table_3:row8:col2'] |
-| C5_dimension_Q61 | pass | [length] ** 3 | not captured | not captured | not captured | ['Domínguez_2021_table_2:row8:col1', 'Domínguez_2021_table_2:row8:col2'] |
 | C5_dimension_Q65 | pass | [length] ** 3 | not captured | not captured | not captured | ['Domínguez_2021_table_2:row3:col1', 'Domínguez_2021_table_2:row3:col2'] |
-| C5_dimension_Q76 | pass | [length] ** 3 | not captured | not captured | not captured | ['Domínguez_2021_table_3:row5:col1', 'Domínguez_2021_table_3:row5:col2'] |
 | C7_apparent_coherence | pass | not captured | not captured | not captured | not captured | not captured |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
 | C9_phys_window_Q22 | pass | clearance within physiological range | 7 L/h | not captured | not captured | ['Domínguez_2021_table_2:row4:col1', 'Domínguez_2021_table_2:row4:col2'] |
 | C9_phys_window_Q27 | pass | clearance within physiological range | 1.29e+03 L/h | not captured | not captured | ['Domínguez_2021_table_3:row6:col1', 'Domínguez_2021_table_3:row6:col2'] |
-| C9_phys_window_Q61 | pass | volume within physiological range | 6.72 L | not captured | not captured | ['Domínguez_2021_table_2:row8:col1', 'Domínguez_2021_table_2:row8:col2'] |
 | C9_phys_window_Q65 | pass | volume within physiological range | 7.7 L | not captured | not captured | ['Domínguez_2021_table_2:row3:col1', 'Domínguez_2021_table_2:row3:col2'] |
-| C9_phys_window_Q76 | pass | volume within physiological range | 6.03e+03 L | not captured | not captured | ['Domínguez_2021_table_3:row5:col1', 'Domínguez_2021_table_3:row5:col2'] |
 
 <details class="legend">
 <summary>Check legend — what each column means</summary>
@@ -183,4 +227,4 @@ _No web simulator for this record: its structure has no shared WebAssembly templ
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-01 17:05 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-06 22:23 UTC</sub>

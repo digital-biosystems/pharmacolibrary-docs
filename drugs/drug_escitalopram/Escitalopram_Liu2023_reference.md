@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N06A&quot;,&quot;href&quot;:&quot;atc/N06A.md&quot;},{&quot;label&quot;:&quot;escitalopram&quot;,&quot;href&quot;:&quot;drugs/drug_escitalopram/&quot;},{&quot;label&quot;:&quot;Liu_2023 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Escitalopram_Friberg2006_reference&quot;,&quot;label&quot;:&quot;Friberg_2006_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_escitalopram/Escitalopram_Friberg2006_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Escitalopram_Liu2022_reference&quot;,&quot;label&quot;:&quot;Liu_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_escitalopram/Escitalopram_Liu2022_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Escitalopram_Friberg2006_reference&quot;,&quot;label&quot;:&quot;Friberg_2006_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_escitalopram/Escitalopram_Friberg2006_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Escitalopram_Poweleit2023_reference&quot;,&quot;label&quot;:&quot;Poweleit_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_escitalopram/Escitalopram_Poweleit2023_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # escitalopram — `Escitalopram_Liu2023_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -25,30 +25,98 @@ Independently confirmed by `gpt-oss:120b`.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
+> ⚠️ **STALE** — review status `rejected` (reviewed 2026-09-28 14:37:58.459978+00:00) predates the upstream re-run (2026-10-06 22:57:52.994866+00:00). Current validate status: `needs_review`.
+
 ## Citation
 Liu X et al., Escitalopram Personalized Dosing: A Pop…, Drug design, development an… (2023)
   ·  DOI: [10.2147/DDDT.S425654](https://doi.org/10.2147/DDDT.S425654)
 
 ## Model component
-<dbs-pgx drug="escitalopram" model-id="Escitalopram_Liu2023_reference" status="rejected" stale="false" population="psychiatric patients" measured-compound="escitalopram" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<dbs-pgx drug="escitalopram" model-id="Escitalopram_Liu2023_reference" status="needs_review" stale="true" population="virtual adults (repository of published escitalopram PPK models)" measured-compound="escitalopram" parameterization="apparent" topology="2C"></dbs-pgx>
 
-**Model structure:** 1-compartment; no model was built for this record.  
-**Parameters:** 0 extracted.
+**Model structure:** 2-compartment; no model was built for this record.  
+**Parameters:** 4 extracted, plus 5 covariate effects.
 
-**Parameterization:** mechanistic.
+**Parameterization:** CL/F, V/F, V1/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
 ## Parameters
-> ⚠️ This record is not accepted (current status `rejected`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
+> ⚠️ This record is not accepted (current status `needs_review`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
 
-_No resolved parameters._
+| label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
+|---|---|---|---|---|---|---|---|---|---|---|
+| V/F=815 | `Q76` · V/F | 48.32 | L | 0.04832 | L | not captured | llm_confirmed (0.6) | Liu_2023_table_2:row2:col1 | — | not captured |
+| CL/F=22.8 | `Q27` · CL/F | 43.9 | L/h | 1.2194444444444445e-05 | L/h | not captured | llm_confirmed (0.6) | Liu_2023_table_2:row4:col1 | — | not captured |
+| Vc/F=867*(BW/70)°.741 | `Q290` · V1/F | 19.9 | L | 0.019899999999999998 | L | not captured | llm_confirmed (0.6) | Liu_2023_table_2:row5:col1 | — | not captured |
+| CLp,V | `Q22` · CL | 68.63 | L/h | 1.9063888888888887e-05 | L/h | not captured | llm_confirmed (0.6) | Liu_2023_table_2:row18:col1 | — | not captured |
+| theta_cl_f_im | `Q900` · theta_cl_f_im | 29.61 | not captured | not captured | not captured | not captured | not captured (not captured) | Liu_2023_table_2:row1:col1 | — | not captured |
+| theta_cl_f_pm | `Q900` · theta_cl_f_pm | 31.2 | not captured | not captured | not captured | not captured | not captured (not captured) | Liu_2023_table_2:row10:col1 | — | not captured |
+| theta_cl_f_age_power | `Q900` · theta_cl_f_age_power | 62.29 | not captured | not captured | not captured | not captured | not captured (not captured) | Liu_2023_table_2:row16:col1 | — | not captured |
+| theta_cl_f_age_power | `Q900` · theta_cl_f_age_power | 48.5 | not captured | not captured | not captured | not captured | not captured (not captured) | Liu_2023_table_2:row23:col1 | — | not captured |
+| theta_q352_bmi_power | `Q900` · theta_q352_bmi_power | 62 | not captured | not captured | not captured | not captured | not captured (not captured) | Liu_2023_table_2:row24:col1 | — | not captured |
+| V,Ka | `Q900` · V,Ka | 81.3 | 1/h | 0.022583333333333334 | not captured | not captured | not captured (not captured) | Liu_2023_table_2:row27:col1 | — | not captured |
+
+<details class="legend">
+<summary>Column legend — what each column means</summary>
+<table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>label (paper)</code></td><td>the row or statistic label exactly as printed in the paper (label_verbatim) — never normalised, so it can be found in the PDF.</td></tr><tr><td><code>Q-code · name</code></td><td>the ontology parameter this label was matched to (Q22 = clearance, Q27 = CL/F, Q49 = ka, Q57 = half-life, …) and its canonical name. The Q-code, not the label, is what scoring and cross-paper merging use.</td></tr><tr><td><code>value</code></td><td>the estimate as reported in the paper.</td></tr><tr><td><code>unit</code></td><td>the unit as printed (unit_verbatim).</td></tr><tr><td><code>value_si</code></td><td>the value converted to the canonical unit. Empty when no conversion was possible — usually an unparseable or missing unit.</td></tr><tr><td><code>unit_canonical</code></td><td>the canonical unit for that Q-code, i.e. what value_si is expressed in.</td></tr><tr><td><code>RSE%</code></td><td>relative standard error of the estimate, when the paper reports one.</td></tr><tr><td><code>link</code></td><td>how the label was matched to the Q-code, with confidence. exact / boundary / fuzzy / tv_prefix / caption_compartment / special_case are deterministic string matches; llm, llm_confirmed, llm_corrected involved the model; review and review_gapfill come from the secondary review tier, the latter filling a parameter the primary extraction missed; boundary_relink is a corrected match.</td></tr><tr><td><code>source</code></td><td>where in the paper the number came from: colN = that column of the located table, other_prose = running text, review = the secondary tier, pgx = a pharmacogenomic record.</td></tr><tr><td><code>covariates</code></td><td>covariate effects attached to this parameter (e.g. weight on CL).</td></tr><tr><td><code>IIV</code></td><td>inter-individual variability reported for this parameter.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>the field is absent from the KB artifact — nothing was recorded. This is NOT the same as zero or empty: the value is unknown, not measured to be nothing.</td></tr><tr><td><code>—</code></td><td>deliberately not shown: the column does not apply to this row.</td></tr><tr><td><code>not verified</code></td><td>the record is not in an accepted state (see the badge and the note above the table); the numbers are shown as extracted, not endorsed.</td></tr></tbody></table>
+</details>
+
+### Unresolved rows _(no Q-code or no value — not parameters)_
+| label (paper) | Q-code | value | link |
+|---|---|---|---|
+| Van (2012)22 | Q61 | not captured | llm |
+| V,Ka | Q49 | not captured | llm_confirmed |
 
 ## Departures & gaps
 
 **Interpretation flags:**
-- apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=escitalopram
+- table section iiv: 'Kim (2021)20' routed out of structural estimates ('Between-Subject Variability (%)')
+- table section iiv: 'Van (2012)22' routed out of structural estimates ('Between-Subject Variability (%)')
+- table section iiv: 'Jin (2010)19' routed out of structural estimates ('Between-Subject Variability (%)')
+- table section iiv: 'Jin (2009)18' routed out of structural estimates ('Between-Subject Variability (%)')
+- column 'fixed effect parameters' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
+- column 'software/algorithm' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
+- column 'residual unexplained variability' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
+- column 'external validation (n)' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
+- dropped unlinked row (NIL): 'Liu (2022)21' — extend the ontology if this is a real PK parameter (source ['Liu_2023_table_2:row0:col2'])
+- dropped unlinked row (NIL): 'Kim (2021)20' — extend the ontology if this is a real PK parameter (source ['Liu_2023_table_2:row3:col2'])
+- dropped unlinked row (NIL): 'Weisskopf (2020)23' — extend the ontology if this is a real PK parameter (source ['Liu_2023_table_2:row9:col2'])
+- dropped unlinked row (NIL): 'Courlet (2019)17' — extend the ontology if this is a real PK parameter (source ['Liu_2023_table_2:row12:col2', 'Liu_2023_table_2:row12:col4', 'Liu_2023_table_2:row12:col6'])
+- unit_dimension_unknown: 'IF inhibitor' (CL/F)
+- dropped duplicate Q27 ('CL/F=23.1*e−0.19(IF inhibitor)', value '71.41') — already have one for this compound
+- dropped unlinked row (NIL): 'Akil (2016)16' — extend the ontology if this is a real PK parameter (source ['Liu_2023_table_2:row15:col2'])
+- dropped duplicate Q76 ('V/F=1390', value '86.81') — already have one for this compound
+- dropped duplicate Q27 ('CL/F=33.5', value '74.4') — already have one for this compound
+- dropped duplicate Q76 ('Vd/F=1285', value '63.2') — already have one for this compound
+- dropped unlinked row (NIL): 'Jin (2010)19' — extend the ontology if this is a real PK parameter (source ['Liu_2023_table_2:row22:col2'])
+- dropped duplicate Q22 ('CL,V', value '9.4') — already have one for this compound
+- dropped duplicate Q22 ('CL,Ka', value '47.8') — already have one for this compound
+- dropped unlinked row (NIL): 'Jin (2009)18' — extend the ontology if this is a real PK parameter (source ['Liu_2023_table_2:row28:col2'])
+- dropped duplicate Q27 ('CL/F=25.5', value '53.5') — already have one for this compound
+- dropped duplicate Q76 ('V/F=1000', value '64.3') — already have one for this compound
+- covariate effect for Q352 has no base parameter row (kept as unattached equation-variable)
+- implicit units: 'V/F=815' → L (from the popPK convention: 'No unit stated for V/F in text or footnotes; apparent volumes of distribution in population PK are conventionally in L, ')
+- implicit units: 'CL/F=22.8' → L/h (from the popPK convention: 'No unit stated for CL/F; apparent oral clearance is conventionally in L/h, consistent with value 22.8 L/h for SCIT.')
+- implicit units: 'Vc/F=867*(BW/70)°.741' → L (from the popPK convention: 'No unit stated for Vc/F; central volume of distribution is conventionally in L, consistent with value 867 L (allometric ')
+- implicit units: 'CLp,V' → L/h (from the popPK convention: 'No unit stated for CLp (intercompartmental/central clearance of two-compartment model); clearances are conventionally in')
+- implicit units: 'V,Ka' → 1/h (from the popPK convention: 'No unit stated for Ka; first-order absorption rate constants are conventionally in 1/h, consistent with value 81.3 (per ')
+- apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=escitalopram
+- bound model equation to Q61 (V): V = 947*(BMI/27)^1.11
+- bound model equation to Q49 (kabs): Ka = 5.46 CL/F=22.8 Vc/F=867*(BW/70)^0.741 Q/F=34.4 Vp/F=234 ALAG=0.98
+- Q61 (V) is equation-defined: value moved to equation-variable 'Van (2012)22'; equation kept verbatim
+- Q49 (kabs) is equation-defined: value moved to equation-variable 'V,Ka'; equation kept verbatim
+- skipped review gap-fill of TLAG: primary's parameterization (rate-constant / ka-only) does not use it
 
 **Extraction notes:**
-- LLM region Liu_2023:other_prose: no JSON records returned
+- LLM selected parameter table(s) 2
+- unparsed cell Liu_2023_table_2:row0:col4 = '16.94%'
+- unparsed cell Liu_2023_table_2:row3:col4 = '6.40%'
+- unparsed cell Liu_2023_table_2:row3:col7 = 'Simulation the escitalopram (20mg) to predict the QTc prolongation'
+- unparsed cell Liu_2023_table_2:row9:col4 = '33.50%'
+- unparsed cell Liu_2023_table_2:row15:col4 = '46.49%'
+- unparsed cell Liu_2023_table_2:row22:col4 = '28.90%'
+- unparsed cell Liu_2023_table_2:row28:col4 = '15.2%3.61%'
+- captured model equation V = 947*(BMI/27)^1.11
+- captured model equation Ka = 5.46 CL/F=22.8 Vc/F=867*(BW/70)^0.741 Q/F=34.4 Vp/F=234 ALAG=0.98
 
 ## Validation
 
@@ -71,9 +139,21 @@ _Every reader agrees on every compared field of this record._
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | fail | not captured | 0 | not captured | not captured | not captured |
-| C0b_disposition_core | fail | not captured | not captured | not captured | not captured | not captured |
+| C0_has_structural_params | pass | not captured | 6 | not captured | not captured | not captured |
+| C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
+| C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
+| C2_center_consistency_age | fail | not captured | [40.0, 60.0] | not captured | not captured | not captured |
+| C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Liu_2023_table_2:row18:col1'] |
+| C5_dimension_Q27 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Liu_2023_table_2:row4:col1'] |
+| C5_dimension_Q290 | pass | [length] ** 3 | not captured | not captured | not captured | ['Liu_2023_table_2:row5:col1'] |
+| C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['Liu_2023_table_2:row27:col1'] |
+| C5_dimension_Q76 | pass | [length] ** 3 | not captured | not captured | not captured | ['Liu_2023_table_2:row2:col1'] |
+| C7_apparent_coherence | pass | not captured | not captured | not captured | not captured | not captured |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
+| C9_phys_window_Q22 | pass | clearance within physiological range | 68.6 L/h | not captured | not captured | ['Liu_2023_table_2:row18:col1'] |
+| C9_phys_window_Q27 | pass | clearance within physiological range | 43.9 L/h | not captured | not captured | ['Liu_2023_table_2:row4:col1'] |
+| C9_phys_window_Q290 | pass | volume within physiological range | 19.9 L | not captured | not captured | ['Liu_2023_table_2:row5:col1'] |
+| C9_phys_window_Q76 | pass | volume within physiological range | 48.3 L | not captured | not captured | ['Liu_2023_table_2:row2:col1'] |
 
 <details class="legend">
 <summary>Check legend — what each column means</summary>
@@ -87,9 +167,19 @@ _Every reader agrees on every compared field of this record._
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
-## Models
+## Downloadable models
 
-<p>No downloads: this record is <b>rejected</b>, so it is not published as a model. Any archives generated for it before the verdict have been removed — a download outlives the page that explains it.</p>
+<div class="pk-models-grid"><div class="pk-models-table">
+<table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
+</tbody></table>
+<p>No bundles have been generated for this record yet. When the engineer emits them they appear here automatically — this page reports what is on disk and generates nothing itself.</p>
+</div></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
@@ -98,4 +188,4 @@ _No web simulator for this record: its structure has no shared WebAssembly templ
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-07-15 11:54 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-06 22:57 UTC</sub>

@@ -1,0 +1,42 @@
+{
+ "dose_source": "paper",
+ "model_id": "Risankizumab_Suleiman2019_reference",
+ "note": "Values for the shared PK_2C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "paper_doses_kind": "discrete",
+ "paper_doses_mg": [
+  0.01,
+  0.25,
+  1.0,
+  5.0,
+  18.0,
+  150.0,
+  200.0,
+  300.0,
+  1200.0
+ ],
+ "parameters": {
+  "Cl": 2.8125e-09,
+  "F": 0.71,
+  "Tlag": 0.0,
+  "VdPerKg": 6.942857142857144e-05,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 1e-08,
+  "k12": 1.5622618503276937e-06,
+  "k21": 1.7864923747276687e-06,
+  "ka": 2.650462962962963e-06,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 1512606.012024048
+ },
+ "reference_peaks": {
+  "central.C": 1.0997668336012431e-07
+ },
+ "stop_time": 7257600.0,
+ "template": "PK_2C_enteral",
+ "template_fmu": "PK_2C_enteral.fmu"
+}

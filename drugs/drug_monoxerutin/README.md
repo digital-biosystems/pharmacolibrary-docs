@@ -10,13 +10,15 @@
 
 ## About
 
-**Description.** Monoxerutin is a flavonol, a type of flavonoid.
+Monoxerutin is a bioflavonoid classified as a capillary-stabilizing vasoprotective agent, intended for conditions involving fragile capillaries and veins. It appears to be experimental rather than an established marketed medicine, with no European Union authorisation recorded.
+
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q6902068](https://www.wikidata.org/wiki/Q6902068) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-01 16:58 | 0:30 | 0/0/0 | 0/0/0 | 0/0/0 | 1,521/378 | ollama / glm-5.3-flash | 0 | 0/0 | 0/0 | 0 |
+| 2026-10-06 22:19 | 0:12 | 0/0/0 | 0/0/0 | 0/0/0 | 478/131 | ollama / qwen3.8:27b-mtp-q8_0 | 0 | 0/0 | 0/0 | 0 |
 
 ## popPK records
 

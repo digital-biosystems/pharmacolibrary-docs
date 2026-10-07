@@ -1,0 +1,33 @@
+{
+ "dose_source": "paper",
+ "model_id": "CertolizumabPegol_Menshykau2024_reference",
+ "note": "Values for the shared PK_1C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "paper_doses_kind": "discrete",
+ "paper_doses_mg": [
+  200.0,
+  400.0
+ ],
+ "parameters": {
+  "Cl": 4.814814814814815e-09,
+  "F": 1.0,
+  "Tlag": 0.0,
+  "VdPerKg": 0.00011228571428571429,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 0.0002,
+  "ka": 2.731481481481481e-06,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 709491.5460626413
+ },
+ "reference_peaks": {
+  "central.C": 0.016516420683346654
+ },
+ "stop_time": 7257600.0,
+ "template": "PK_1C_enteral",
+ "template_fmu": "PK_1C_enteral.fmu"
+}

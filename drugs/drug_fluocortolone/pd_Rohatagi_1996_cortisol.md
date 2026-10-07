@@ -1,4 +1,4 @@
-<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;fluocortolone&quot;,&quot;href&quot;:&quot;drugs/drug_fluocortolone/&quot;},{&quot;label&quot;:&quot;Rohatagi_1996 \u00b7 PD cortisol&quot;}]"></div>
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C05A&quot;,&quot;href&quot;:&quot;atc/C05A.md&quot;},{&quot;label&quot;:&quot;fluocortolone&quot;,&quot;href&quot;:&quot;drugs/drug_fluocortolone/&quot;},{&quot;label&quot;:&quot;Rohatagi_1996 \u00b7 PD cortisol&quot;}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # cortisol — PD  <span class="pk-badge pk-badge--green">extracted</span>
@@ -17,6 +17,10 @@
 
 **Model:** No model was generated from this record.
 
+> The record describes a linear inhibitory model where fluocortolone concentrations (ng/mL) suppress cortisol, with an E50 of 0.95 ng/mL. The paper does not provide full text to specify the underlying mechanism (e.g., production vs. elimination inhibition) or other rate parameters.
+>
+> <sub>in the paper's terms — summarised by qwen3.8:27b-mtp-q8_0 from the paper's text; not checked by a person</sub>
+
 - **paper:** `Rohatagi_1996`
 - **model family:** `linear`
 - **driver:** `conc_no_pk`
@@ -24,7 +28,8 @@
 - **effect:** inhibition/unknown
 
 ## Citation
-not matched (stem Rohatagi_1996)
+Rohatagi S et al., Pharmacokinetic/pharmacodynamic modelin…, Journal of clinical pharmac… (1996)
+  ·  DOI: [10.1002/j.1552-4604.1996.tb04206.x](https://doi.org/10.1002/j.1552-4604.1996.tb04206.x)
 
 ## Parameters
 | role | label (paper) | Q-code · name | value | unit | value_si | link | source |

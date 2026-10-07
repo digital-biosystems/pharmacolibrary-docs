@@ -1,0 +1,39 @@
+{
+ "dose_source": "paper",
+ "model_id": "Siponimod_Chaoyang2022v2_weighted_geometric_mean_weighted_ge",
+ "molar_masses": {
+  "central.C": 0.516605
+ },
+ "note": "Values for the shared PK_1C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "paper_doses_kind": "discrete",
+ "paper_doses_mg": [
+  0.25,
+  0.5,
+  10.0,
+  20.0
+ ],
+ "parameters": {
+  "Cl": 8.805555555555556e-07,
+  "F": 1.0,
+  "MM": 0.516605,
+  "Tlag": 0.0,
+  "VdPerKg": 0.00161,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 2.5e-07,
+  "ka": 0.00010555555555555555,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 27010.821643286574
+ },
+ "reference_peaks": {
+  "central.C": 1.8018709216465262e-06
+ },
+ "stop_time": 518400.0,
+ "template": "PK_1C_enteral",
+ "template_fmu": "PK_1C_enteral.fmu"
+}

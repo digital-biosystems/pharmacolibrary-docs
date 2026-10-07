@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C05A&quot;,&quot;href&quot;:&quot;atc/C05A.md&quot;},{&quot;label&quot;:&quot;tetracaine&quot;,&quot;href&quot;:&quot;drugs/drug_tetracaine/&quot;},{&quot;label&quot;:&quot;Cacek_2017 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Tetracaine_Cacek2017_reference&quot;,&quot;label&quot;:&quot;Cacek_2017_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tetracaine/Tetracaine_Cacek2017_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Tetracaine_Gapiska2025_reference&quot;,&quot;label&quot;:&quot;Gapi\u0144ska_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tetracaine/Tetracaine_Gapiska2025_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Tetracaine_Sam2009_reference&quot;,&quot;label&quot;:&quot;Sam_2009_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tetracaine/Tetracaine_Sam2009_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # tetracaine — `Tetracaine_Cacek2017_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.667). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -13,7 +13,7 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
-**Model:** A simulatable model was generated — see the **Models** and **Simulation** tabs.
+**Model:** No model was generated from this record.
 
 ### Reviewer guidance
 
@@ -21,9 +21,11 @@
 
 The record describes tetracaine with its metabolite para-butylaminobenzoic acid, but the model structure was a one-compartment enteral model instead of the required parent–metabolite three-compartment structure, and the simulated output was the parent's central compartment rather than the measured analyte. Of the five expected parameters, only four were covered: V2 (418 L) was neither emitted nor defaulted. Bioavailability F and lag time Tlag were filled with library defaults instead of estimates from the paper, which is not acceptable. The record was built from the abstract alone, so summary statistics stood in for a fitted model, and a second reader disagreed on the dose compound and analyte naming. Extracted — tetracaine: kabs 4.41 h-1, V2 418 L, CL 66.4 L/h, V1 6.97 L, Q 419 L/h.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has tetracaine, the second reading oxymetazoline/tetracaine; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which molecule was measured: this record has para-butylaminobenzoic acid, the second reading oxymetazoline; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by glm-5.3-flash</sub>
+
+> ⚠️ **STALE** — review status `rejected` (reviewed 2026-10-05 09:32:14.700753+00:00) predates the upstream re-run (2026-10-06 23:18:39.013524+00:00). Current validate status: `rejected`.
 
 > **Dose compound ≠ measured compound:** dosed `tetracaine`, measured `para-butylaminobenzoic acid`.
 
@@ -32,44 +34,33 @@ Cacek AT et al., Population Pharmacokinetics of an Intra…, Journal of clinical
   ·  DOI: [10.1002/jcph.799](https://doi.org/10.1002/jcph.799)
 
 ## Model component
-<dbs-pgx drug="tetracaine" model-id="Tetracaine_Cacek2017_reference" status="rejected" stale="false" population="healthy volunteers" measured-compound="para-butylaminobenzoic acid" parameterization="mechanistic" topology="parent_metabolite"></dbs-pgx>
+<dbs-pgx drug="tetracaine" model-id="Tetracaine_Cacek2017_reference" status="rejected" stale="true" population="healthy volunteers" measured-compound="para-butylaminobenzoic acid" parameterization="mechanistic" topology="parent_metabolite"></dbs-pgx>
 
-**Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
-**Parameters:** 5 extracted.
+**Model structure:** parent + metabolite; no model was built for this record.  
+**Parameters:** 0 extracted.
 
 **Parameterization:** mechanistic.
 
 ## Parameters
 > ⚠️ This record is not accepted (current status `rejected`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
 
-| label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
-|---|---|---|---|---|---|---|---|---|---|---|
-| ka | `Q49` · kabs | 4.41 | h-1 | 0.001225 | [1] / [h] | not captured | exact (1.0) | Cacek_2017:abstract, Cacek_2017:abstract | — | not captured |
-| peripheral volume | `Q64` · V2 | 418 | L | 0.418 | [l] | not captured | exact (1.0) | Cacek_2017:abstract, Cacek_2017:abstract | — | not captured |
-| clearance | `Q22` · CL | 66.4 | L/h | 1.8444444444444445e-05 | [l] / [h] | not captured | exact (1.0) | Cacek_2017:abstract, Cacek_2017:abstract | — | not captured |
-| central volume | `Q63` · V1 | 6.97 | L | 0.00697 | [l] | not captured | exact (1.0) | Cacek_2017:abstract, Cacek_2017:abstract | — | not captured |
-| intercompartmental clearance | `Q30` · Q | 419 | L/h | 0.00011638888888888888 | [l] / [h] | not captured | exact (1.0) | Cacek_2017:abstract, Cacek_2017:abstract | — | not captured |
-
-<details class="legend">
-<summary>Column legend — what each column means</summary>
-<table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>label (paper)</code></td><td>the row or statistic label exactly as printed in the paper (label_verbatim) — never normalised, so it can be found in the PDF.</td></tr><tr><td><code>Q-code · name</code></td><td>the ontology parameter this label was matched to (Q22 = clearance, Q27 = CL/F, Q49 = ka, Q57 = half-life, …) and its canonical name. The Q-code, not the label, is what scoring and cross-paper merging use.</td></tr><tr><td><code>value</code></td><td>the estimate as reported in the paper.</td></tr><tr><td><code>unit</code></td><td>the unit as printed (unit_verbatim).</td></tr><tr><td><code>value_si</code></td><td>the value converted to the canonical unit. Empty when no conversion was possible — usually an unparseable or missing unit.</td></tr><tr><td><code>unit_canonical</code></td><td>the canonical unit for that Q-code, i.e. what value_si is expressed in.</td></tr><tr><td><code>RSE%</code></td><td>relative standard error of the estimate, when the paper reports one.</td></tr><tr><td><code>link</code></td><td>how the label was matched to the Q-code, with confidence. exact / boundary / fuzzy / tv_prefix / caption_compartment / special_case are deterministic string matches; llm, llm_confirmed, llm_corrected involved the model; review and review_gapfill come from the secondary review tier, the latter filling a parameter the primary extraction missed; boundary_relink is a corrected match.</td></tr><tr><td><code>source</code></td><td>where in the paper the number came from: colN = that column of the located table, other_prose = running text, review = the secondary tier, pgx = a pharmacogenomic record.</td></tr><tr><td><code>covariates</code></td><td>covariate effects attached to this parameter (e.g. weight on CL).</td></tr><tr><td><code>IIV</code></td><td>inter-individual variability reported for this parameter.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>the field is absent from the KB artifact — nothing was recorded. This is NOT the same as zero or empty: the value is unknown, not measured to be nothing.</td></tr><tr><td><code>—</code></td><td>deliberately not shown: the column does not apply to this row.</td></tr><tr><td><code>not verified</code></td><td>the record is not in an accepted state (see the badge and the note above the table); the numbers are shown as extracted, not endorsed.</td></tr></tbody></table>
-</details>
+_No resolved parameters._
 
 ## Departures & gaps
 
-**Deviations:**
-- `defaulted_parameters`: ['F', 'Tlag']
-
 **Interpretation flags:**
-- apparent-by-design (ADVISORY, codes unchanged): extravascular dosing with no identifiable F, so these reported disposition parameters are likely apparent unless the model puts first-pass in its structure — Q64 (peripheral volume); Q22 (clearance); Q63 (central volume); Q30 (intercompartmental clearance)
+- table section iiv: 'ka' routed out of structural estimates ('An allometric model for body weight was included on volumes and clearances to describe unexplained between-subject variability.')
+- table section iiv: 'peripheral volume' routed out of structural estimates ('An allometric model for body weight was included on volumes and clearances to describe unexplained between-subject variability.')
+- table section iiv: 'clearance' routed out of structural estimates ('An allometric model for body weight was included on volumes and clearances to describe unexplained between-subject variability.')
+- table section iiv: 'central volume' routed out of structural estimates ('An allometric model for body weight was included on volumes and clearances to describe unexplained between-subject variability.')
+- table section iiv: 'intercompartmental clearance' routed out of structural estimates ('An allometric model for body weight was included on volumes and clearances to describe unexplained between-subject variability.')
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=para-butylaminobenzoic acid
 - topology: transfer parameter unlinked (Q100) — add Kfm/formation-rate/rate-constant to the ontology; routing to review
-- template fit: PK_3M_9C — formed from central; parent 2, metabolites [0]
+- template fit: none — only the metabolite is modelled — no parent compartment
 - status held at route_to_review — not promoted
 - row roles (LLM): model_class=compartmental; 5/5 row label(s) assigned, 10 linked by role; re-tagged para-butylaminobenzoic acid→parent ×10
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
 - review gap-fill skipped: this record measures 'para-butylaminobenzoic acid', not tetracaine — the review values are the parent's
-- engineer: parent_metabolite composite downgraded to a 1C model of the measured compound — the paper reports the metabolite's own CL and V but neither the parent's disposition nor a formation rate, so the parent sub-component could not be populated; the parent's concentration-time course is NOT produced by this model
 
 **Extraction notes:**
 - no GROBID TEI available — transcribed from abstract in Cacek_2017_metadata.yaml (10 record(s)); values are summary statistics, not a fitted model
@@ -81,15 +72,14 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.667 (6/9 fields) | 3 |
+| `gpt-oss:120b` | not confirmed | 0.5 (2/4 fields) | 2 |
 
-<details><summary>3 field(s) a reader read differently</summary>
+<details><summary>2 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `model.links` | [['tetracaine', 'para-butylaminobenzoic acid', 'metabolism']] | [['tetracaine', 'pbba', 'metabolism']] | mismatch |
-| `gpt-oss:120b` | `screen.dose_compound` | tetracaine | oxymetazoline/tetracaine | mismatch |
-| `gpt-oss:120b` | `screen.primary_analyte` | para-butylaminobenzoic acid | PBBA | mismatch |
+| `gpt-oss:120b` | `model.links` | [['tetracaine', 'para-butylaminobenzoic acid', 'metabolism']] | [['tetracaine', 'para-butylaminobenzoic acid (pbba)', 'metabolism']] | mismatch |
+| `gpt-oss:120b` | `screen.primary_analyte` | para-butylaminobenzoic acid | oxymetazoline | mismatch |
 
 </details>
 
@@ -103,19 +93,9 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 5 | not captured | not captured | not captured |
-| C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
-| C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
-| C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Cacek_2017:abstract', 'Cacek_2017:abstract'] |
-| C5_dimension_Q30 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Cacek_2017:abstract', 'Cacek_2017:abstract'] |
-| C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['Cacek_2017:abstract', 'Cacek_2017:abstract'] |
-| C5_dimension_Q63 | pass | [length] ** 3 | not captured | not captured | not captured | ['Cacek_2017:abstract', 'Cacek_2017:abstract'] |
-| C5_dimension_Q64 | pass | [length] ** 3 | not captured | not captured | not captured | ['Cacek_2017:abstract', 'Cacek_2017:abstract'] |
-| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 66.4 | not captured | not captured | ['Cacek_2017:abstract', 'Cacek_2017:abstract'] |
+| C0_has_structural_params | fail | not captured | 0 | not captured | not captured | not captured |
+| C0b_disposition_core | fail | not captured | not captured | not captured | not captured | not captured |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
-| C9_phys_window_Q22 | pass | clearance within physiological range | 66.4 L/h | not captured | not captured | ['Cacek_2017:abstract', 'Cacek_2017:abstract'] |
-| C9_phys_window_Q63 | pass | volume within physiological range | 6.97 L | not captured | not captured | ['Cacek_2017:abstract', 'Cacek_2017:abstract'] |
-| C9_phys_window_Q64 | pass | volume within physiological range | 418 L | not captured | not captured | ['Cacek_2017:abstract', 'Cacek_2017:abstract'] |
 
 **Reviewer per-scenario checks:**
 
@@ -149,13 +129,9 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-**Administration: oral** — 100 mg, single dose, first-order absorption (ka 4.41 /h, F 0.9). _The paper's dose was not captured; the simulator's default is used._
-
-<dbs-fmusim paramsurl="drugs/drug_tetracaine/Tetracaine_Cacek2017_reference/Tetracaine_Cacek2017_reference_params.json" metaurl="assets/fmu/PK_1C_enteral.vr.json" wasmurl="assets/fmu/PK_1C_enteral.js" controlsurl="drugs/drug_tetracaine/Tetracaine_Cacek2017_reference/Tetracaine_Cacek2017_reference_sim_controls.json"></dbs-fmusim>
-
-<sub>Runs this record's model in the browser as WebAssembly. Sliders start at the extracted values; the reference check compares the browser's peak against the FMPy result recorded when the record was built, and is withheld once a value has been edited. Template `PK_1C_enteral` · parameters `Tetracaine_Cacek2017_reference_params.json` · controls `Tetracaine_Cacek2017_reference_sim_controls.json`. A slider marked *simulator value* is running on the template's own default because this record does not pin that parameter.</sub>
+_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-09-28 19:51 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-06 23:18 UTC</sub>

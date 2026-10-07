@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C05A&quot;,&quot;href&quot;:&quot;atc/C05A.md&quot;},{&quot;label&quot;:&quot;diltiazem&quot;,&quot;href&quot;:&quot;drugs/drug_diltiazem/&quot;},{&quot;label&quot;:&quot;H\u00f6glund_1989 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Diltiazem_Klle1983_reference&quot;,&quot;label&quot;:&quot;K\u00f6lle_1983_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_diltiazem/Diltiazem_Klle1983_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Diltiazem_Guan2018_reference&quot;,&quot;label&quot;:&quot;Guan_2018_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_diltiazem/Diltiazem_Guan2018_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Diltiazem_Guan2018_reference&quot;,&quot;label&quot;:&quot;Guan_2018_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_diltiazem/Diltiazem_Guan2018_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Diltiazem_Klle1983_reference&quot;,&quot;label&quot;:&quot;K\u00f6lle_1983_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_diltiazem/Diltiazem_Klle1983_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # diltiazem — `Diltiazem_Hglund1989_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.111). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.1). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -21,15 +21,17 @@
 
 The record, built from the abstract alone, contains only a terminal half-life of 6.27 h and a 72% cumulative urinary excretion of radioactivity within 120 h for diltiazem — no volume or clearance. The three metabolites (N-demethyldiltiazem, deacetyldiltiazem, N-demethyldeacetyl­diltiazem) have no formation parameters, leaving them as unlinked metabolites with no path from the dose. A second reader also disputed the metabolism links and read the 72% and 6.27 h values as applying to a single 60 mg dose, while the record left those dose-specific fields empty. Extracted — diltiazem: t1/2z 6.27 h, fe 72 %.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has diltiazem, the second reading unknown; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has diltiazem, the second reading unknown; it also differs on 8 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by glm-5.3-flash</sub>
+
+> ⚠️ **STALE** — review status `rejected` (reviewed 2026-10-05 09:26:33.435847+00:00) predates the upstream re-run (2026-10-06 22:34:56.239676+00:00). Current validate status: `rejected`.
 
 ## Citation
 Höglund P et al., Pharmacokinetics of diltiazem and its m…, Therapeutic drug monitoring (1989)
 
 ## Model component
-<dbs-pgx drug="diltiazem" model-id="Diltiazem_Hglund1989_reference" status="rejected" stale="false" population="healthy middle-aged volunteers" measured-compound="diltiazem" parameterization="mechanistic" topology="general_linear"></dbs-pgx>
+<dbs-pgx drug="diltiazem" model-id="Diltiazem_Hglund1989_reference" status="rejected" stale="true" population="healthy middle-aged volunteers" measured-compound="diltiazem" parameterization="mechanistic" topology="general_linear"></dbs-pgx>
 
 **Model structure:** general linear; no model was built for this record.  
 **Parameters:** 2 extracted.
@@ -73,16 +75,17 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.111 (1/9 fields) | 8 |
+| `gpt-oss:120b` | not confirmed | 0.1 (1/10 fields) | 9 |
 
-<details><summary>8 field(s) a reader read differently</summary>
+<details><summary>9 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `model.links` | [['diltiazem', 'n-demethyldiltiazem', 'metabolism'], ['diltiazem', 'deacetyldiltiazem', 'metabolism'], ['diltiazem', 'n-demethyldeacetyldiltiazem', 'metabolism']] | [] | mismatch |
-| `gpt-oss:120b` | `parameters[cumulative excretion of radioactivity in urine within 120 h after a single dose of 60 mg diltiazem]` | not captured | 72 | only_one_extracted |
+| `gpt-oss:120b` | `model.links` | [['diltiazem', 'n-demethyldiltiazem', 'metabolism'], ['diltiazem', 'deacetyldiltiazem', 'metabolism'], ['n-demethyldiltiazem', 'n-demethyldeacetyldiltiazem', 'metabolism'], ['deacetyldiltiazem', 'n-demethyldeacetyldiltiazem', 'metabolism']] | [['diltiazem', 'n-demethyldiltiazem', 'metabolism'], ['diltiazem', 'deacetyldiltiazem', 'metabolism'], ['diltiazem', 'n-demethyldeacetyldiltiazem', 'metabolism']] | mismatch |
 | `gpt-oss:120b` | `parameters[cumulative excretions of radioactivity in urine within 120 h]` | 72 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[single dose and the last dose in steady state were pulsed with]` | not captured | 1.85 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[cumulative excretions of radioactivity in urine within 120 h]` | not captured | 72 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[pulsed with]` | not captured | 1.85 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[terminal half-life after 120-mg diltiazem t.i.d.]` | not captured | 5.90 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[terminal half-life after a single dose of 60 mg diltiazem]` | not captured | 6.27 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[terminal half-lives]` | 6.27 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `screen.dose_compound` | diltiazem | unknown | mismatch |
@@ -104,7 +107,7 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 | C0b_disposition_core | fail | not captured | not captured | not captured | not captured | not captured |
 | C5_dimension_Q44 | pass | dimensionless | not captured | not captured | not captured | ['Höglund_1989:abstract', 'Höglund_1989:abstract', 'Höglund_1989:abstract', 'Höglund_1989:abstract'] |
 | C5_dimension_Q57 | pass | [time] | not captured | not captured | not captured | ['Höglund_1989:abstract', 'Höglund_1989:abstract', 'Höglund_1989:abstract', 'Höglund_1989:abstract'] |
-| C8_topology | fail | ontology-linked transfer parameter on every edge | ['none', 'none', 'none'] | not captured | not captured | not captured |
+| C8_topology | fail | ontology-linked transfer parameter on every edge | ['none', 'none', 'none', 'none'] | not captured | not captured | not captured |
 
 <details class="legend">
 <summary>Check legend — what each column means</summary>
@@ -129,4 +132,4 @@ _No web simulator for this record: its structure has no shared WebAssembly templ
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-09-28 18:51 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-06 22:34 UTC</sub>

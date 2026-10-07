@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N06A&quot;,&quot;href&quot;:&quot;atc/N06A.md&quot;},{&quot;label&quot;:&quot;amitriptyline&quot;,&quot;href&quot;:&quot;drugs/drug_amitriptyline/&quot;},{&quot;label&quot;:&quot;Ratajczak-Enselme_2015 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Amitriptyline_Yukawa2002_reference&quot;,&quot;label&quot;:&quot;Yukawa_2002_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_amitriptyline/Amitriptyline_Yukawa2002_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Amitriptyline_Brsen2001_reference&quot;,&quot;label&quot;:&quot;Br\u00f8sen_2001_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_amitriptyline/Amitriptyline_Brsen2001_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amitriptyline_Yukawa2002_reference&quot;,&quot;label&quot;:&quot;Yukawa_2002_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_amitriptyline/Amitriptyline_Yukawa2002_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # amitriptyline — `Amitriptyline_RatajczakEnselme2015_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (sheep), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">sheep</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (sheep), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">sheep</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -27,15 +27,17 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the val
 
 <sub>reviewed by rule template (no LLM)</sub>
 
+> ⚠️ **STALE** — review status `needs_review` (reviewed 2026-10-05 09:23:19.759568+00:00) predates the upstream re-run (2026-10-06 21:39:03.864030+00:00). Current validate status: `needs_review`.
+
 ## Citation
 Ratajczak-Enselme M et al., Population Pharmacokinetics of Amitript…, Regional anesthesia and pai… (2015)
   ·  DOI: [10.1097/AAP.0000000000000322](https://doi.org/10.1097/AAP.0000000000000322)
 
 ## Model component
-<dbs-pgx drug="amitriptyline" model-id="Amitriptyline_RatajczakEnselme2015_reference" status="needs_review" stale="false" population="Lacaune ewes" measured-compound="amitriptyline" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<dbs-pgx drug="amitriptyline" model-id="Amitriptyline_RatajczakEnselme2015_reference" status="needs_review" stale="true" population="Lacaune ewes" measured-compound="amitriptyline" parameterization="mechanistic" topology="1C"></dbs-pgx>
 
 **Model structure:** 1-compartment; no model was built for this record.  
-**Parameters:** 3 extracted.
+**Parameters:** 4 extracted.
 
 **Parameterization:** mechanistic.
 
@@ -44,9 +46,10 @@ Ratajczak-Enselme M et al., Population Pharmacokinetics of Amitript…, Regional
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| Intercompartmental clearance CL | `Q30` · Q | 72 | not captured | not captured | L/h | not captured | boundary (0.8) | Ratajczak-Enselme_2015:other_prose | — | not captured |
+| T max , min | `Q56` · tmax | 0 | min | 0.0 | [min] | not captured | space_fold (0.95) | tab_0:row3:col1, tab_0:row3:col3, tab_0:row3:col5 | — | not captured |
+| Intercompartmental clearance CL 72 | `Q30` · Q | 3.17 | mL/min | 5.283333333333333e-08 | L/h | not captured | boundary (0.8) | Ratajczak-Enselme_2015:other_prose | — | not captured |
 | plasma or serum clearance | `Q22` · CL | 0.39 | L/h/kg | 7.583333333333334e-06 | L/h | not captured | review_gapfill (0.7) | Yukawa_2002:review | — | not captured |
-| Vd | `Q61` · V | 9.5 | L/kg | 0.665 | L | not captured | review_gapfill (0.7) | Yukawa_2002:review | — | not captured |
+| V, | `Q61` · V | 1003.75 | ml | 0.0010037499999999999 | L | not captured | review_gapfill (0.7) | Nielsen-Kudsk_1980:review | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -56,35 +59,20 @@ Ratajczak-Enselme M et al., Population Pharmacokinetics of Amitript…, Regional
 ## Departures & gaps
 
 **Interpretation flags:**
-- dropped unlinked row (NIL): 'T max , min' — extend the ontology if this is a real PK parameter (source ['tab_0:row3:col1', 'tab_0:row3:col3', 'tab_0:row3:col5'])
-- dropped value-less row: 'C max'
-- dropped value-less row: 'T max'
-- dropped value-less row: 'AUCt'
-- salvaged Q30 ('Intercompartmental clearance CL'=72) from results prose — parameter table was unreadable
+- salvaged Q30 ('Intercompartmental clearance CL 72'=3.17) from results prose — parameter table was unreadable
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=amitriptyline
+- held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
+- structure disagreement: deterministic 1C vs LLM 2C — review compartment count
+- status held at route_to_review — not promoted
 - gap-filled Q22 (CL) from Yukawa_2002's review values (primary lacked it)
-- gap-filled Q61 (V) from Yukawa_2002's review values (primary lacked it)
+- gap-filled Q61 (V) from Nielsen-Kudsk_1980's review values (primary lacked it)
 - skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
 
 **Extraction notes:**
-- unparsed cell tab_0:row0:col1 = 'Intravenous 10 mg'
-- unparsed cell tab_0:row0:col3 = 'Intrathecal 5 mg'
-- unparsed cell tab_0:row0:col6 = 'Epidural 50 mg'
-- unparsed cell tab_0:row2:col1 = '0.084 (71%)'
-- unparsed cell tab_0:row2:col2 = '0.014 (61%) 11.8 (97%)'
-- unparsed cell tab_0:row2:col3 = '2280 (44%) 0.076 (91%)'
-- unparsed cell tab_0:row2:col4 = '1120 (42%)'
-- unparsed cell tab_0:row2:col5 = '62.4 (166%)'
 - unparsed cell tab_0:row3:col2 = '13.3 (53%) 61.4 (80%)'
 - unparsed cell tab_0:row3:col4 = '19.3 (72%)'
 - unparsed cell tab_0:row3:col6 = '29.0 (62%)'
-- unparsed cell tab_0:row4:col1 = '2.04 (62%)'
-- unparsed cell tab_0:row4:col2 = '0.839 (55%) 1700 (164%) 25,100 (75%)'
-- unparsed cell tab_0:row4:col3 = '5.84 (101%) 19400 (108%) 3290 (70%)'
-- unparsed cell tab_0:row5:col2 = '82% (9%)'
-- unparsed cell tab_0:row5:col3 = '55% (78%)'
-- unparsed cell tab_0:row5:col5 = '49% (28%)'
-- unparsed cell tab_0:row5:col7 = '1.3% (6%)'
+- LLM selected parameter table(s) 1
 
 ## Validation
 
@@ -116,15 +104,15 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 1 | not captured | not captured | not captured |
+| C0_has_structural_params | pass | not captured | 2 | not captured | not captured | not captured |
 | C0c_disposition_complete | fail | not captured | not captured | not captured | not captured | not captured |
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Yukawa_2002:review'] |
-| C5_dimension_Q61 | pass | [length] ** 3 | not captured | not captured | not captured | ['Yukawa_2002:review'] |
-| C5_unit_missing_Q30 | fail | [length] ** 3 / [time] | not captured | not captured | not captured | ['Ratajczak-Enselme_2015:other_prose'] |
+| C5_dimension_Q56 | pass | [time] | not captured | not captured | not captured | ['tab_0:row3:col1', 'tab_0:row3:col3', 'tab_0:row3:col5'] |
+| C5_dimension_Q61 | pass | [length] ** 3 | not captured | not captured | not captured | ['Nielsen-Kudsk_1980:review'] |
 | C6_cl_magnitude | pass | &lt;= 90.0 L/h | 0.39 | not captured | not captured | ['Yukawa_2002:review'] |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
 | C9_phys_window_Q22 | pass | clearance within physiological range | 27.3 L/h | not captured | not captured | ['Yukawa_2002:review'] |
-| C9_phys_window_Q61 | pass | volume within physiological range | 665 L | not captured | not captured | ['Yukawa_2002:review'] |
+| C9_phys_window_Q61 | pass | volume within physiological range | 1 L | not captured | not captured | ['Nielsen-Kudsk_1980:review'] |
 
 <details class="legend">
 <summary>Check legend — what each column means</summary>
@@ -159,4 +147,4 @@ _No web simulator for this record: its structure has no shared WebAssembly templ
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-07-22 09:29 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-06 21:39 UTC</sub>

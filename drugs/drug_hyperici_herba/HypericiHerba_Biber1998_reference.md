@@ -4,7 +4,7 @@
 
 # Hyperici herba — `HypericiHerba_Biber1998_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">human + animal</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">human + animal</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -26,17 +26,19 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the val
 
 <sub>reviewed by rule template (no LLM)</sub>
 
-> **Dose compound ≠ measured compound:** dosed `hypericum extract`, measured `hyperforin`.
+> ⚠️ **STALE** — review status `needs_review` (reviewed 2026-09-28 14:38:13.755422+00:00) predates the upstream re-run (2026-10-06 23:11:59.829422+00:00). Current validate status: `needs_review`.
+
+> **Dose compound ≠ measured compound:** dosed `Hypericum perforatum extract (WS 5572)`, measured `hyperforin`.
 
 ## Citation
 Biber A et al., Oral bioavailability of hyperforin from…, Pharmacopsychiatry 31 Suppl (1998)
   ·  DOI: [10.1055/s-2007-979344](https://doi.org/10.1055/s-2007-979344)
 
 ## Model component
-<dbs-pgx drug="Hyperici herba" model-id="HypericiHerba_Biber1998_reference" status="needs_review" stale="false" population="healthy volunteers" measured-compound="hyperforin" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<dbs-pgx drug="Hyperici herba" model-id="HypericiHerba_Biber1998_reference" status="needs_review" stale="true" population="healthy volunteers (and rats)" measured-compound="hyperforin" parameterization="mechanistic" topology="1C"></dbs-pgx>
 
 **Model structure:** 1-compartment; no model was built for this record.  
-**Parameters:** 4 extracted.
+**Parameters:** 5 extracted.
 
 **Parameterization:** mechanistic.
 
@@ -45,10 +47,11 @@ Biber A et al., Oral bioavailability of hyperforin from…, Pharmacopsychiatry 3
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
+| maximum plasma levels | `Q32` · Cmax | 370 | ng/ml | not captured | [ng] / [ml] | not captured | llm (0.6) | Biber_1998:abstract | — | not captured |
 | Estimated half-life | `Q57` · t1/2z | 6 | h | 21600.0 | [h] | not captured | llm (0.6) | Biber_1998:abstract | — | not captured |
 | clearance | `Q22` · CL | 70 | ml/min/kg | 8.166666666666665e-05 | [ml] / [[min] · [kg]] | not captured | exact (1.0) | Biber_1998:abstract | — | not captured |
 | mean residence time | `Q53` · MRT | 12 | h | 43200.0 | [h] | not captured | exact (1.0) | Biber_1998:abstract | — | not captured |
-| steady state plasma concentrations of hyperforin | `Q34` · Css | 100 | ng/ml | not captured | [ng] / [ml] | not captured | llm (0.6) | Biber_1998:abstract | — | not captured |
+| estimated steady state plasma concentrations | `Q34` · Css | 100 | ng/ml | not captured | [ng] / [ml] | not captured | llm (0.6) | Biber_1998:abstract | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -60,11 +63,12 @@ Biber A et al., Oral bioavailability of hyperforin from…, Pharmacopsychiatry 3
 **Interpretation flags:**
 - dropped duplicate Q57 ('Half-life', value 9) — already have one for this compound
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=hyperforin
+- molar mass: none found for 'hyperici_herba' — its concentrations stay mass-only
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
 - review gap-fill skipped: this record measures 'hyperforin', not hyperici_herba — the review values are the parent's
 
 **Extraction notes:**
-- no GROBID TEI available — transcribed from abstract in Biber_1998_metadata.yaml (5 record(s)); values are summary statistics, not a fitted model
+- no GROBID TEI available — transcribed from abstract in Biber_1998_metadata.yaml (6 record(s)); values are summary statistics, not a fitted model
 
 ## Validation
 
@@ -96,10 +100,11 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 4 | not captured | not captured | not captured |
+| C0_has_structural_params | pass | not captured | 5 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | fail | not captured | not captured | not captured | not captured | not captured |
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Biber_1998:abstract'] |
+| C5_dimension_Q32 | pass | [mass] / [length] ** 3 | not captured | not captured | not captured | ['Biber_1998:abstract'] |
 | C5_dimension_Q34 | pass | [mass] / [length] ** 3 | not captured | not captured | not captured | ['Biber_1998:abstract'] |
 | C5_dimension_Q53 | pass | [time] | not captured | not captured | not captured | ['Biber_1998:abstract'] |
 | C5_dimension_Q57 | pass | [time] | not captured | not captured | not captured | ['Biber_1998:abstract'] |
@@ -140,4 +145,4 @@ _No web simulator for this record: its structure has no shared WebAssembly templ
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-09-23 22:31 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-06 23:11 UTC</sub>

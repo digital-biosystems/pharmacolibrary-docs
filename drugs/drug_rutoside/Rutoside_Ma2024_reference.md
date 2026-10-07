@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C05C&quot;,&quot;href&quot;:&quot;atc/C05C.md&quot;},{&quot;label&quot;:&quot;rutoside&quot;,&quot;href&quot;:&quot;drugs/drug_rutoside/&quot;},{&quot;label&quot;:&quot;Ma_2024 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Rutoside_Domnguez2024_extract_equivalent_to_7_4_mg_kg_of_rut&quot;,&quot;label&quot;:&quot;Dom\u00ednguez_2024_extract_equivalent_to_7_4_mg_kg_of_rutin&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_rutoside/Rutoside_Domnguez2024_extract_equivalent_to_7_4_mg_kg_of_rut.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Rutoside_Domnguez2024_extract_equivalent_to_7_4_mg_kg_of_rut&quot;,&quot;label&quot;:&quot;Dom\u00ednguez_2024_extract_equivalent_to_7_4_mg_kg_of_rutin&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_rutoside/Rutoside_Domnguez2024_extract_equivalent_to_7_4_mg_kg_of_rut.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # rutoside — `Rutoside_Ma2024_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.818). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Data from bacteria, fungi or plants, not measured in people (from an LLM reading of the title and abstract by glm-5.3-flash, p(non-human) 0.90).">other organism</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.818). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Data from bacteria, fungi or plants, not measured in people (from an LLM reading of the title and abstract by glm-5.3-flash, p(non-human) 0.90).">other organism</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -23,16 +23,18 @@
 
 The check had no reference to compare the clearance against, so the value is unverified rather than shown to be wrong. Extracted — rutoside: CL 425 mL/ min/kg, V 2.06e+03 L.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on parameter Q56: this record has none, the second reading 1; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on parameter Q40: this record has 30, the second reading 37.39; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
+
+> ⚠️ **STALE** — review status `needs_review` (reviewed 2026-10-05 09:31:40.288939+00:00) predates the upstream re-run (2026-10-06 22:20:41.270102+00:00). Current validate status: `needs_review`.
 
 ## Citation
 Ma P et al., Lonicerae Japonicae Flos with the homol…, Frontiers in oncology (2024)
   ·  DOI: [10.3389/fonc.2024.1446328](https://doi.org/10.3389/fonc.2024.1446328)
 
 ## Model component
-<dbs-pgx drug="rutoside" model-id="Rutoside_Ma2024_reference" status="needs_review" stale="false" population="" measured-compound="rutoside" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<dbs-pgx drug="rutoside" model-id="Rutoside_Ma2024_reference" status="needs_review" stale="true" population="" measured-compound="rutoside" parameterization="mechanistic" topology="1C"></dbs-pgx>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 2 extracted.
@@ -61,7 +63,7 @@ Ma P et al., Lonicerae Japonicae Flos with the homol…, Frontiers in oncology (
 ## Validation
 
 **Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-first reading `glm-5.3-flash` — the numbers on this page are its, whatever the readers say
+first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
@@ -71,8 +73,8 @@ first reading `glm-5.3-flash` — the numbers on this page are its, whatever the
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `values[Q56]` | not captured | 1 | only_one_extracted |
-| `gpt-oss:120b` | `values[Q87]` | 2.79 | 249.4 | mismatch |
+| `gpt-oss:120b` | `values[Q40]` | 30 | 37.39 | mismatch |
+| `gpt-oss:120b` | `values[Q87]` | not captured | 2.79 | only_one_extracted |
 
 </details>
 
@@ -129,4 +131,4 @@ _No web simulator for this record: its structure has no shared WebAssembly templ
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-09-29 03:18 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-06 22:20 UTC</sub>

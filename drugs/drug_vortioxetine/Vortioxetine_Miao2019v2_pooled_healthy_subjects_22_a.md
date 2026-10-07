@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N06A&quot;,&quot;href&quot;:&quot;atc/N06A.md&quot;},{&quot;label&quot;:&quot;vortioxetine&quot;,&quot;href&quot;:&quot;drugs/drug_vortioxetine/&quot;},{&quot;label&quot;:&quot;Miao_2019_2 \u00b7 pooled_healthy_subjects_22_a&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Vortioxetine_Areberg2014v2_reference&quot;,&quot;label&quot;:&quot;Areberg_2014_2_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_vortioxetine/Vortioxetine_Areberg2014v2_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Vortioxetine_Areberg2014v2_reference&quot;,&quot;label&quot;:&quot;Areberg_2014_2_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_vortioxetine/Vortioxetine_Areberg2014v2_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # vortioxetine — `Vortioxetine_Miao2019v2_pooled_healthy_subjects_22_a`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -25,15 +25,17 @@ Independently confirmed by `gpt-oss:120b`.
 
 <sub>reviewed by glm-5.3-flash</sub>
 
+> ⚠️ **STALE** — review status `rejected` (reviewed 2026-10-05 09:32:54.615715+00:00) predates the upstream re-run (2026-10-07 00:19:36.275438+00:00). Current validate status: `rejected`.
+
 ## Citation
 Miao J et al., Pharmacokinetics and Safety of Vortioxe…, Advances in therapy (2019)
   ·  DOI: [10.1007/s12325-019-01092-4](https://doi.org/10.1007/s12325-019-01092-4)
 
 ## Model component
-<dbs-pgx drug="vortioxetine" model-id="Vortioxetine_Miao2019v2_pooled_healthy_subjects_22_a" status="rejected" stale="false" population="Chinese healthy subjects and patients with MDD" measured-compound="vortioxetine" parameterization="apparent" topology="1C"></dbs-pgx>
+<dbs-pgx drug="vortioxetine" model-id="Vortioxetine_Miao2019v2_pooled_healthy_subjects_22_a" status="rejected" stale="true" population="healthy Chinese subjects and Chinese patients with MDD" measured-compound="vortioxetine" parameterization="apparent" topology="1C"></dbs-pgx>
 
 **Model structure:** 1-compartment; no model was built for this record.  
-**Parameters:** 4 extracted.
+**Parameters:** 3 extracted.
 
 **Parameterization:** CL/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
@@ -44,31 +46,50 @@ Miao J et al., Pharmacokinetics and Safety of Vortioxe…, Advances in therapy (
 |---|---|---|---|---|---|---|---|---|---|---|
 | Absorption rate constant (ka), L/h | `Q49` · kabs | 0.14 | L/h | not captured | [l] / [h] | not captured | llm_confirmed (0.6) | Tab3:row1:col1 | — | not captured |
 | Oral clearance (CL/F), L/h | `Q27` · CL/F | 33 | L/h | 9.166666666666666e-06 | [l] / [h] | not captured | llm_confirmed (0.6) | Tab3:row3:col1 | — | not captured |
-| \documentclass[12pt]{minimal} \usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{upgreek} \setlength{\oddsidemargin}{-69pt} \begin{document}$$\varpi^2_{\text{V2}}$$\end{document}ϖV22 d | `Q64` · V2 | 0.094 | N = 887a | not captured | [a] · [n=887] | not captured | llm_confirmed (0.6) | Tab3:row5:col1 | — | not captured |
-| Mean elimination half-life, t1/2L/h | `Q57` · t1/2z | 65.8 | N = 887a | not captured | [a] · [n=887] | not captured | llm (0.6) | Tab3:row10:col1 | — | not captured |
+| Mean elimination half-life, t1/2L/h | `Q57` · t1/2z | 65.8 | h | 236880.0 | h | not captured | llm (0.6) | Tab3:row10:col1 | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
 <table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>label (paper)</code></td><td>the row or statistic label exactly as printed in the paper (label_verbatim) — never normalised, so it can be found in the PDF.</td></tr><tr><td><code>Q-code · name</code></td><td>the ontology parameter this label was matched to (Q22 = clearance, Q27 = CL/F, Q49 = ka, Q57 = half-life, …) and its canonical name. The Q-code, not the label, is what scoring and cross-paper merging use.</td></tr><tr><td><code>value</code></td><td>the estimate as reported in the paper.</td></tr><tr><td><code>unit</code></td><td>the unit as printed (unit_verbatim).</td></tr><tr><td><code>value_si</code></td><td>the value converted to the canonical unit. Empty when no conversion was possible — usually an unparseable or missing unit.</td></tr><tr><td><code>unit_canonical</code></td><td>the canonical unit for that Q-code, i.e. what value_si is expressed in.</td></tr><tr><td><code>RSE%</code></td><td>relative standard error of the estimate, when the paper reports one.</td></tr><tr><td><code>link</code></td><td>how the label was matched to the Q-code, with confidence. exact / boundary / fuzzy / tv_prefix / caption_compartment / special_case are deterministic string matches; llm, llm_confirmed, llm_corrected involved the model; review and review_gapfill come from the secondary review tier, the latter filling a parameter the primary extraction missed; boundary_relink is a corrected match.</td></tr><tr><td><code>source</code></td><td>where in the paper the number came from: colN = that column of the located table, other_prose = running text, review = the secondary tier, pgx = a pharmacogenomic record.</td></tr><tr><td><code>covariates</code></td><td>covariate effects attached to this parameter (e.g. weight on CL).</td></tr><tr><td><code>IIV</code></td><td>inter-individual variability reported for this parameter.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>the field is absent from the KB artifact — nothing was recorded. This is NOT the same as zero or empty: the value is unknown, not measured to be nothing.</td></tr><tr><td><code>—</code></td><td>deliberately not shown: the column does not apply to this row.</td></tr><tr><td><code>not verified</code></td><td>the record is not in an accepted state (see the badge and the note above the table); the numbers are shown as extracted, not endorsed.</td></tr></tbody></table>
 </details>
 
+### Unresolved rows _(no Q-code or no value — not parameters)_
+| label (paper) | Q-code | value | link |
+|---|---|---|---|
+| f | Q40 | not captured | exact |
+
 ## Departures & gaps
 
 **Interpretation flags:**
 - dropped unlinked row (NIL): 'Parameter' — extend the ontology if this is a real PK parameter (source ['Tab3:row0:col1'])
 - unit_dimension_mismatch: 'Absorption rate constant (ka), L/h' → Q49 (unit '[length] ** 3 / [time]' vs ontology '1 / [time]') — route to review
-- unit_dimension_unknown: 'N = 887a' (kabs)
-- dropped duplicate Q49 ('\\documentclass[12pt]{minimal} \\usepackage{amsmath} \\usepackage{wasysym} \\usepackage{amsfonts} \\usepackage{amssymb} \\usepackage{amsbsy} \\usepackage{mathrsfs} \\usepackage{upgreek} \\setlength{\\oddsidemargin}{-69pt} \\begin{document}$$\\varpi^2_{{\\text{ka}}}$$\\end{document}ϖka2 c', value '0.26') — already have one for this compound
-- unit_dimension_unknown: 'N = 887a' (V2)
+- routed '\\documentclass[12pt]{minimal} \\usepackage{amsmath} \\usepackage{wasysym} \\usepackage{amsfonts} \\usepackage{amssymb} \\usepackage{amsbsy} \\usepackage{mathrsfs} \\usepackage{upgreek} \\setlength{\\oddsidemargin}{-69pt} \\begin{document}$$\\varpi^2_{{\\text{ka}}}$$\\end{document}ϖka2 c' → Q314 (omega_cov) to covariance — variability estimate, not a structural parameter
+- routed '\\documentclass[12pt]{minimal} \\usepackage{amsmath} \\usepackage{wasysym} \\usepackage{amsfonts} \\usepackage{amssymb} \\usepackage{amsbsy} \\usepackage{mathrsfs} \\usepackage{upgreek} \\setlength{\\oddsidemargin}{-69pt} \\begin{document}$$\\varpi^2_{\\text{V2}}$$\\end{document}ϖV22 d' → Q314 (omega_cov) to covariance — variability estimate, not a structural parameter
 - routed '\\documentclass[12pt]{minimal} \\usepackage{amsmath} \\usepackage{wasysym} \\usepackage{amsfonts} \\usepackage{amssymb} \\usepackage{amsbsy} \\usepackage{mathrsfs} \\usepackage{upgreek} \\setlength{\\oddsidemargin}{-69pt} \\begin{document}$$\\varpi^2_{\\text{CL}}$$\\end{document}ϖCL2 e' → Q312 (IIV) to iiv — variability estimate, not a structural parameter
 - dropped unlinked row (NIL): 'AUC24g, ng × h/mL (± SD)' — extend the ontology if this is a real PK parameter (source ['Tab3:row8:col1'])
 - dropped unlinked row (NIL): 'Cmaxg, ng/mL (± SD)' — extend the ontology if this is a real PK parameter (source ['Tab3:row9:col1'])
 - unit_dimension_unknown: 'N = 887a' (t1/2z)
+- dropped value-less row: 'ϖ'
+- dropped value-less row: 'AUC24'
+- dropped value-less row: 'CL/F'
+- dropped value-less row: 'Cmax'
+- dropped value-less row: 'GAD'
+- dropped value-less row: 'ka'
+- dropped value-less row: 'RSE'
+- dropped value-less row: 'SD'
+- dropped value-less row: 'V2/F'
+- dropped value-less row: 'a'
+- dropped value-less row: 'b'
+- dropped value-less row: 'c'
+- dropped value-less row: 'd'
+- dropped value-less row: 'e'
+- dropped value-less row: 'g'
+- implicit units: 'Mean elimination half-life, t1/2L/h' → h (from the popPK convention: 'The paper does not state a unit for t1/2; half-lives are conventionally reported in hours, consistent with a terminal el')
 - apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=vortioxetine
 - held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
-- structure disagreement: deterministic 1C vs LLM 2C — review compartment count
 - status held at route_to_review — not promoted
 - population split: 'pooled healthy subjects [22](n = 887a)' subgroup of Miao_2019_2 (paper reports 2 populations: pooled healthy subjects [22](n = 887a), pooled mdd/gad patients [23](n = 3183b))
+- skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
 - skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
 - skipped review gap-fill of TLAG: primary's parameterization (rate-constant / ka-only) does not use it
 
@@ -102,15 +123,14 @@ _Every reader agrees on every compared field of this record._
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 4 | not captured | not captured | not captured |
+| C0_has_structural_params | pass | not captured | 3 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
-| C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
+| C0c_disposition_complete | fail | not captured | not captured | not captured | not captured | not captured |
 | C5_dimension_Q27 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Tab3:row3:col1'] |
 | C5_dimension_Q49 | fail | [length] ** 3 / [time] | L/h | not captured | not captured | ['Tab3:row1:col1'] |
-| C5_unit_missing_Q57 | fail | [time] | N = 887a | not captured | not captured | ['Tab3:row10:col1'] |
-| C5_unit_missing_Q64 | fail | [length] ** 3 | N = 887a | not captured | not captured | ['Tab3:row5:col1'] |
+| C5_dimension_Q57 | pass | [time] | not captured | not captured | not captured | ['Tab3:row10:col1'] |
 | C7_apparent_coherence | pass | not captured | not captured | not captured | not captured | not captured |
-| C8_topology | fail | not captured | not captured | not captured | not captured | not captured |
+| C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
 | C9_phys_window_Q27 | pass | clearance within physiological range | 33 L/h | not captured | not captured | ['Tab3:row3:col1'] |
 
 <details class="legend">
@@ -136,4 +156,4 @@ _No web simulator for this record: its structure has no shared WebAssembly templ
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-09-24 21:32 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 00:19 UTC</sub>

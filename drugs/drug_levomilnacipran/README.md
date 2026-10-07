@@ -18,11 +18,18 @@ Levomilnacipran is an antidepressant used to treat major depressive disorder. It
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-23 23:29 | 19:14 | 0/0/0 | 0/0/0 | 0/0/5 | 81,604/4,477 | ollama / qwen3.8:27b-mtp-q8_0 | 12 | 3/6 | 4/0 | 0 |
+| 2026-10-06 23:24 | 0:52 | 0/0/0 | 1/0/0 | 0/0/5 | 65,351/2,320 | ollama / glm-5.3-flash | 13 | 3/7 | 5/0 | 0 |
 
 ## popPK records
 
 _not available_
+
+## Pharmacodynamics (PD)
+
+| status | detail | about | model | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--green">extracted</span> | [Wen_2025_constipation](drugs/drug_levomilnacipran/pd_Wen_2025_constipation.md) | constipation ← levomilnacipran · model not identified | — | Wen S et al., Comparative gastrointestinal effects of…, Translational psychiatry (2025) | [10.1038/s41398-025-03751-3](https://doi.org/10.1038/s41398-025-03751-3) |
+| <span class="pk-badge pk-badge--green">extracted</span> | [Wen_2025_nausea_and_vomiting](drugs/drug_levomilnacipran/pd_Wen_2025_nausea_and_vomiting.md) | nausea and vomiting ← levomilnacipran · stimulation effect | — | Wen S et al., Comparative gastrointestinal effects of…, Translational psychiatry (2025) | [10.1038/s41398-025-03751-3](https://doi.org/10.1038/s41398-025-03751-3) |
 
 ## Pharmacogenomics (PGx)
 
@@ -31,8 +38,8 @@ _not available_
 | <span class="pk-badge pk-badge--neutral" title="the paper links the gene to the drug but states no effect size on a model parameter, so it changes no model.">qualitative</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.25). The first reading is what the record holds.">cross-check: partial</span> | **CYP2B6** | `Q27` · CL/F | metabolism | [Bousman_2023](drugs/drug_levomilnacipran/pgx_Bousman_2023_CYP2B6_Q27.md) | Bousman CA et al., Clinical Pharmacogenetics Implementatio…, Clinical pharmacology and t… (2023) | [10.1002/cpt.2903](https://doi.org/10.1002/cpt.2903) |
 | <span class="pk-badge pk-badge--neutral" title="the paper links the gene to the drug but states no effect size on a model parameter, so it changes no model.">qualitative</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.25). The first reading is what the record holds.">cross-check: partial</span> | **CYP2C19** | `Q27` · CL/F | metabolism | [Bousman_2023](drugs/drug_levomilnacipran/pgx_Bousman_2023_CYP2C19_Q27.md) | Bousman CA et al., Clinical Pharmacogenetics Implementatio…, Clinical pharmacology and t… (2023) | [10.1002/cpt.2903](https://doi.org/10.1002/cpt.2903) |
 | <span class="pk-badge pk-badge--neutral" title="the paper links the gene to the drug but states no effect size on a model parameter, so it changes no model.">qualitative</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.25). The first reading is what the record holds.">cross-check: partial</span> | **CYP2D6** | `Q27` · CL/F | metabolism | [Bousman_2023](drugs/drug_levomilnacipran/pgx_Bousman_2023_CYP2D6_Q27.md) | Bousman CA et al., Clinical Pharmacogenetics Implementatio…, Clinical pharmacology and t… (2023) | [10.1002/cpt.2903](https://doi.org/10.1002/cpt.2903) |
-| <span class="pk-badge pk-badge--neutral" title="the paper links the gene to the drug but states no effect size on a model parameter, so it changes no model.">qualitative</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.25). The first reading is what the record holds.">cross-check: partial</span> | **HTR2A** | `Q100` — no parameter target — an association/risk finding, not a parameter shift | target | [Bousman_2023](drugs/drug_levomilnacipran/pgx_Bousman_2023_HTR2A_Q100.md) | Bousman CA et al., Clinical Pharmacogenetics Implementatio…, Clinical pharmacology and t… (2023) | [10.1002/cpt.2903](https://doi.org/10.1002/cpt.2903) |
-| <span class="pk-badge pk-badge--neutral" title="the paper links the gene to the drug but states no effect size on a model parameter, so it changes no model.">qualitative</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.25). The first reading is what the record holds.">cross-check: partial</span> | **SLC6A4** | `Q100` — no parameter target — an association/risk finding, not a parameter shift | target | [Bousman_2023](drugs/drug_levomilnacipran/pgx_Bousman_2023_SLC6A4_Q100.md) | Bousman CA et al., Clinical Pharmacogenetics Implementatio…, Clinical pharmacology and t… (2023) | [10.1002/cpt.2903](https://doi.org/10.1002/cpt.2903) |
+| <span class="pk-badge pk-badge--neutral" title="the paper links the gene to the drug but states no effect size on a model parameter, so it changes no model.">qualitative</span> | **HTR2A** | `Q320` · Emax | target | [Bousman_2023](drugs/drug_levomilnacipran/pgx_Bousman_2023_HTR2A_Q320.md) | Bousman CA et al., Clinical Pharmacogenetics Implementatio…, Clinical pharmacology and t… (2023) | [10.1002/cpt.2903](https://doi.org/10.1002/cpt.2903) |
+| <span class="pk-badge pk-badge--neutral" title="the paper links the gene to the drug but states no effect size on a model parameter, so it changes no model.">qualitative</span> | **SLC6A4** | `Q320` · Emax | target | [Bousman_2023](drugs/drug_levomilnacipran/pgx_Bousman_2023_SLC6A4_Q320.md) | Bousman CA et al., Clinical Pharmacogenetics Implementatio…, Clinical pharmacology and t… (2023) | [10.1002/cpt.2903](https://doi.org/10.1002/cpt.2903) |
 
 <details class="pk-legend"><summary>What the PGx badges mean — evidence, and whether a model runs</summary><table><tbody><tr><td><span class="pk-badge pk-badge--green">quantitative</span></td><td>the paper gives the effect of each phenotype (or genotype) on a named model parameter — a θ per category.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">qualitative</span></td><td>the paper links the gene to the drug but states no effect size on a model parameter, so it changes no model.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">guideline estimate</span></td><td>the effect comes from a CPIC / DPWG dosing guideline, not from this paper's numbers.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">safety allele</span></td><td>a risk allele for an adverse reaction (an HLA type, G6PD deficiency …): it changes no PK/PD parameter.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>the extraction is incomplete or inconsistent.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted.</td></tr><tr><td><span class="pk-badge pk-badge--green">▶ simulatable</span></td><td>the paper's popPK model runs per phenotype in the browser (Simulation tab); its PGx Modelica model is under Models.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">model only</span></td><td>a PGx Modelica model exists but has no in-browser simulator.</td></tr></tbody></table></details>
 
@@ -84,71 +91,71 @@ _1 paper(s) judged relevant from the abstract, with no full text on disk — pay
 |---|---|---|---|---|---|---|
 | `Bundgaard_2016.pdf` | Bundgaard C et al., P-glycoprotein differentially affects e…, Neuropharmacology (2016) | pd | 5 | [10.1016/j.neuropharm.2015.12.009](https://doi.org/10.1016/j.neuropharm.2015.12.009) | [26700248](https://www.ncbi.nlm.nih.gov/pubmed/26700248) | metadata signals extractable PD data (EC50) |
 
-<sub>queue written 2026-09-23T23:25:58.371782+00:00</sub>
+<sub>queue written 2026-10-06T23:24:32.037185+00:00</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Acosta_2025 | irrelevant | 0 | 0 | The paper focuses on computational drug design algorithms and does not contain any pharmacokinetic data for levomilnacipran. |
+| popPK | Acosta_2025 | irrelevant | 0 | 0 | Computational drug-design study with no levomilnacipran PK parameters. |
 | PD | Acosta_2025 | not_relevant | 0 | 0 | The paper focuses on computational molecular mutation operators for drug design and does not report any pharmacodynamic or exposure-response data for levomilnacipran. |
-| popPK | Ahmadi_2025 | irrelevant | 0 | 0 | The paper is a computational study on dengue virus inhibitors and does not involve levomilnacipran or report any pharmacokinetic parameters for it. |
+| popPK | Ahmadi_2025 | irrelevant | 0 | 0 | In silico docking/pharmacokinetic-prediction study for dengue RdRp inhibitors; no levomilnacipran PK parameters reported. |
 | PD | Ahmadi_2025 | not_relevant | 0 | 0 | The paper is a computational study on dengue virus inhibitors and does not mention levomilnacipran or report any pharmacodynamic data. |
-| popPK | Bakish_2014 | irrelevant | 0 | 0 | The paper is a clinical efficacy study for major depressive disorder and does not report any pharmacokinetic parameters for levomilnacipran. |
+| popPK | Bakish_2014 | irrelevant | 0 | 0 | This is an efficacy/safety trial with no PK parameters reported. |
 | PD | Bousman_2023 | not_relevant | 1 | 0 | The paper is a clinical pharmacogenetics guideline focusing on genotype-based dosing recommendations and does not report primary pharmacodynamic modeling or numeric exposure-response parameters for levomilnacipran. |
-| popPK | Bundgaard_2016 | irrelevant | 2 | 0 | The study is an in-vivo mechanistic investigation of P-gp transport in mice reporting distribution ratios (Kp,uu) rather than standard quantitative disposition parameters (CL, V, ka) for a population PK model. |
+| popPK | Bundgaard_2016 | irrelevant | 0 | 0 | no_text gate: only 147 chars of text extracted (&lt; 400) |
 | PD | Bundgaard_2016 | not_relevant | 0 | 0 | The paper focuses on P-glycoprotein-mediated transport kinetics at the blood-brain barrier (PK/transport), not on pharmacodynamic exposure-response or dose-response relationships. |
-| popPK | Chen_2021 | irrelevant | 0 | 0 | The study reports population pharmacokinetic parameters for sirolimus, not levomilnacipran. |
+| popPK | Chen_2021 | irrelevant | 0 | 0 | This is a population PK study of sirolimus, not levomilnacipran; no levomilnacipran parameters appear. |
 | PD | Chen_2021 | not_relevant | 0 | 0 | The paper focuses on the population pharmacokinetics (PK) of sirolimus, not levomilnacipran, and does not report any pharmacodynamic (PD) or exposure-response relationship. |
-| popPK | Chun_2025 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of tramadol and its metabolites, not levomilnacipran. |
+| popPK | Chun_2025 | irrelevant | 0 | 0 | This is a population PK/PD study of tramadol and its metabolite M1, not levomilnacipran; no levomilnacipran parameters appear. |
 | PD | Chun_2025 | not_relevant | 0 | 0 | The paper reports a PK/PD model for tramadol, not levomilnacipran. |
-| popPK | Ciscato_2025 | irrelevant | 0 | 0 | The paper describes a chemogenetic protocol for neuropharmacology in mice and does not involve levomilnacipran or report any pharmacokinetic parameters. |
+| popPK | Ciscato_2025 | irrelevant | 0 | 0 | Chemogenetic protocol paper in mice with no levomilnacipran PK parameters reported. |
 | PD | Ciscato_2025 | not_relevant | 0 | 0 | The paper describes a chemogenetic protocol (CATCH) for receptor antagonism in mice and does not report any pharmacokinetic or pharmacodynamic data, exposure-response relationships, or numeric PD parameters for levomilnacipran. |
 | PD | Citrome_2016_2 | not_relevant | 0 | 0 | The paper is an indirect clinical comparison using NNT/NNH metrics and does not report any pharmacokinetic or pharmacodynamic modeling, exposure-response relationships, or numeric PD parameters for levomilnacipran. |
-| popPK | Darko_2021 | irrelevant | 0 | 0 | The paper is a computational study on anti-Ebola virus compounds and does not involve levomilnacipran or report any pharmacokinetic parameters. |
+| popPK | Darko_2021 | irrelevant | 0 | 0 | Computational docking study on anti-Ebola compounds with no levomilnacipran PK data. |
 | PD | Darko_2021 | not_relevant | 0 | 0 | The paper is a computational study on anti-Ebola compounds and does not mention levomilnacipran or report any pharmacodynamic or exposure-response data. |
 | PD | Dyck_2008 | not_relevant | 3 | 2 | The paper reports in vitro IC50 values and qualitative efficacy in a pain model, but does not provide an exposure-response or dose-response curve with numeric PD parameters (e.g., Emax, EC50) for levomilnacipran. |
-| popPK | Dziubina_2026 | irrelevant | 0 | 0 | The study investigates novel pyrrolopyridine derivatives (DSZ-13 and DSZ-19) and does not involve levomilnacipran. |
+| popPK | Dziubina_2026 | irrelevant | 0 | 0 | This is a PK study of novel DSZ compounds, not levomilnacipran; no levomilnacipran parameters appear. |
 | PD | Dziubina_2026 | not_relevant | 0 | 0 | The paper studies novel compounds (DSZ-13 and DSZ-19), not levomilnacipran, and does not report specific numeric PD parameters for the target drug. |
-| popPK | EFSA_2023 | irrelevant | 0 | 0 | The paper is a toxicological risk assessment of grayanotoxins in honey and does not involve the drug levomilnacipran or its pharmacokinetics. |
+| popPK | EFSA_2023 | irrelevant | 0 | 0 | EFSA risk assessment of grayanotoxins in honey; no levomilnacipran PK parameters reported. |
 | PD | EFSA_2023 | not_relevant | 0 | 0 | The paper discusses grayanotoxins in honey and is unrelated to levomilnacipran pharmacodynamics. |
-| PGx | Eugene_2020 | not_relevant | 0 | 0 | The study analyzes adverse drug reaction reporting odds for somnolence and does not investigate pharmacogenomic effects on PK or PD parameters. |
-| popPK | European_2018 | irrelevant | 0 | 0 | The paper is a report on antimicrobial resistance in bacteria and does not contain any pharmacokinetic data for levomilnacipran. |
+| PGx | Eugene_2020 | not_relevant | 0 | 0 | FAERS disproportionality analysis of somnolence by drug; no gene variant/genotype/phenotype effects on levomilnacipran PK or PD parameters reported. |
+| popPK | European_2018 | irrelevant | 0 | 0 | This is an antimicrobial resistance surveillance report with no levomilnacipran PK data or parameters. |
 | PD | European_2018 | not_relevant | 0 | 0 | The paper is a report on antimicrobial resistance in bacteria and does not contain any pharmacodynamic or exposure-response data for levomilnacipran. |
-| popPK | European_2021 | irrelevant | 0 | 0 | The paper is a report on antimicrobial resistance in bacteria and contains no pharmacokinetic data for levomilnacipran. |
+| popPK | European_2021 | irrelevant | 0 | 0 | This is an antimicrobial resistance surveillance report with no levomilnacipran PK data or parameters. |
 | PD | European_2021 | not_relevant | 0 | 0 | The paper is a report on antimicrobial resistance in bacteria and contains no pharmacodynamic or exposure-response data for levomilnacipran. |
 | popPK | Gangneux_2019 | irrelevant | 0 | 0 | no_text gate: only 297 chars of text extracted (&lt; 400) |
 | PD | Gangneux_2019 | not_relevant | 0 | 0 | The text is an invitation to a medical mycology conference and contains no information regarding levomilnacipran or pharmacodynamics. |
-| popPK | Gommoll_2014 | irrelevant | 1 | 0 | This is a clinical efficacy/safety trial for levomilnacipran ER, not a PK study, and no quantitative disposition parameters are reported here. |
-| popPK | Griffiths_2019 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of the antibody conjugate AD-114, not levomilnacipran. |
+| popPK | Gommoll_2014 | irrelevant | 0 | 0 | This is a Phase III efficacy/safety trial of levomilnacipran ER in MDD with no PK parameters reported. |
+| popPK | Griffiths_2019 | irrelevant | 0 | 0 | The paper reports PK of AD-114 (a CXCR4-targeting single domain antibody), not levomilnacipran; no levomilnacipran parameters appear. |
 | PD | Griffiths_2019 | not_relevant | 0 | 0 | The paper focuses on the pharmacokinetics and safety of a CXCR4-targeting antibody (AD-114) and does not mention levomilnacipran or report any pharmacodynamic parameters. |
 | popPK | Gómez-Perales_2021 | irrelevant | 0 | 0 | no_text gate: only 59 chars of text extracted (&lt; 400) |
 | PD | Gómez-Perales_2021 | not_relevant | 0 | 0 | The paper discusses the myth of iodine allergy in nuclear medicine and does not contain any pharmacodynamic or exposure-response data for levomilnacipran. |
-| popPK | Insausti_2022 | irrelevant | 0 | 0 | The paper is a structural biology study on HIV-1 antibody 10E8 and contains no pharmacokinetic data for levomilnacipran. |
+| popPK | Insausti_2022 | irrelevant | 0 | 0 | Paper is about HIV-1 antibody 10E8 structure-function, not levomilnacipran PK; no PK parameters present. |
 | PD | Insausti_2022 | not_relevant | 0 | 0 | The paper investigates the structural and functional properties of an HIV-1 neutralizing antibody (10E8), not the pharmacodynamics of the drug levomilnacipran. |
-| popPK | Joshi_2019 | irrelevant | 0 | 0 | The paper is a review of the enzyme CysK and its biological functions, containing no pharmacokinetic data for levomilnacipran. |
+| popPK | Joshi_2019 | irrelevant | 0 | 0 | Paper is about bacterial enzyme CysK and cysteine biosynthesis, with no levomilnacipran PK data or parameters. |
 | PD | Joshi_2019 | not_relevant | 0 | 0 | The paper is a review of the enzyme CysK and its biological functions, containing no information on levomilnacipran or any pharmacodynamic modeling. |
-| popPK | Langdon_2010 | irrelevant | 0 | 0 | The study focuses on the HIV agent PF-00821385, not levomilnacipran. |
+| popPK | Langdon_2010 | irrelevant | 0 | 0 | The paper models PF-00821385, not levomilnacipran; no levomilnacipran parameters appear. |
 | PD | Langdon_2010 | not_relevant | 0 | 0 | The paper reports PK/PD modeling for PF-00821385, not levomilnacipran. |
-| popPK | Liu_2026 | irrelevant | 0 | 0 | The paper focuses on molecular dynamics simulations of SARS-CoV-2 protease inhibitors and does not involve levomilnacipran or pharmacokinetic parameters. |
+| popPK | Liu_2026 | irrelevant | 0 | 0 | This is a molecular dynamics/binding free-energy study of SARS-CoV-2 Mpro inhibitor WU-04, with no levomilnacipran PK parameters. |
 | PD | Liu_2026 | not_relevant | 0 | 0 | The paper focuses on molecular dynamics simulations of SARS-CoV-2 Mpro resistance to WU-04 and does not contain any pharmacodynamic or exposure-response data for levomilnacipran. |
-| PGx | Macaluso_2018 | not_relevant | 0 | 0 | The paper discusses the general pharmacology of levomilnacipran (non-oxidative clearance) to explain why it is rarely flagged in pharmacogenetic tests, but it does not report a specific gene variant altering a PK or PD parameter. |
-| popPK | Montgomery_2014 | irrelevant | 1 | 0 | This is a clinical efficacy paper on levomilnacipran, not a PK study, and no quantitative disposition parameters are provided here. |
-| popPK | Priyanka_2026 | irrelevant | 0 | 0 | The paper is a review of the plant Azadirachta indica (Neem) and its antimicrobial properties, containing no information regarding levomilnacipran or its pharmacokinetics. |
+| PGx | Macaluso_2018 | not_relevant | 3 | 2 | Discusses GeneSight binning of levomilnacipran by metabolism dependence, but no gene variant effect on a specific PK/PD parameter is reported. |
+| popPK | Montgomery_2014 | irrelevant | 0 | 0 | This is a clinical efficacy/post-hoc analysis of levomilnacipran ER in depression with no pharmacokinetic parameters reported. |
+| popPK | Priyanka_2026 | irrelevant | 0 | 0 | Review of neem bioactive compounds with no levomilnacipran PK data. |
 | PD | Priyanka_2026 | not_relevant | 0 | 0 | The paper is a review of the plant Azadirachta indica (Neem) and its antimicrobial properties; it does not mention levomilnacipran or report any pharmacodynamic data. |
-| popPK | Sambunaris_2014 | irrelevant | 2 | 6 | This is a clinical efficacy/safety trial; only comparative PK statements for levomilnacipran vs F2696 are visible, not a levomilnacipran PK model with full readable parameters. |
-| popPK | Scafa_2025 | irrelevant | 0 | 0 | The paper focuses on deep brain stimulation for Parkinson's disease and does not involve levomilnacipran or pharmacokinetic parameters. |
+| popPK | Sambunaris_2014 | irrelevant | 3 | 3 | This is a phase III efficacy/safety trial; only brief background PK values (half-life ~9 h, relative AUC/clearance vs F2696) appear, with no compartmental or population-PK parameters for levomilnacipran itself. |
+| popPK | Scafa_2025 | irrelevant | 0 | 0 | This is a neuroscience/DBS study in Parkinson's disease with no levomilnacipran or pharmacokinetic content whatsoever. |
 | PD | Scafa_2025 | not_relevant | 0 | 0 | The paper focuses on adaptive deep brain stimulation for Parkinson's disease and does not mention levomilnacipran or report any pharmacodynamic or exposure-response data. |
 | PD | Shelton_2019_2 | not_relevant | 1 | 0 | The text is a qualitative review of SNRIs that mentions dose-dependent effects for levomilnacipran but provides no numeric PD parameters, concentration-effect curves, or formal PK/PD modeling. |
 | PD | Shuto_1996 | not_relevant | 0 | 0 | The paper reports in vitro binding and functional assay data (IC50) for milnacipran analogs, not in vivo pharmacodynamic or exposure-response relationships for levomilnacipran. |
-| popPK | Sureja_2022 | irrelevant | 0 | 0 | The paper is an in-silico study on lignan derivatives for SARS-CoV-2 and does not involve levomilnacipran or pharmacokinetic parameters. |
+| popPK | Sureja_2022 | irrelevant | 0 | 0 | In-silico docking study of lignan antivirals against SARS-CoV-2; no levomilnacipran or PK parameters present. |
 | PD | Sureja_2022 | not_relevant | 0 | 0 | The paper focuses on in-silico computational studies of lignan derivatives for SARS CoV-2 and does not mention levomilnacipran or report any pharmacodynamic data. |
 | PD | Tamiya_2008 | not_relevant | 0 | 0 | The paper reports in vitro IC50 values for milnacipran analogs, which are pharmacological potency data, not in vivo pharmacodynamic (exposure-response) or dose-response relationships for levomilnacipran. |
-| popPK | Vats_2025 | irrelevant | 0 | 0 | The paper is a review of the medicinal plant Tecomella undulata and contains no information regarding levomilnacipran or its pharmacokinetics. |
+| popPK | Vats_2025 | irrelevant | 0 | 0 | This is a review of a medicinal plant (Tecomella undulata) with no levomilnacipran PK data whatsoever. |
 | PD | Vats_2025 | not_relevant | 0 | 0 | The paper is a review of the plant Tecomella undulata and does not mention levomilnacipran or report any pharmacodynamic parameters. |
-| popPK | Vourvahis_2019 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of maraviroc, not levomilnacipran. |
+| popPK | Vourvahis_2019 | irrelevant | 0 | 0 | This is a maraviroc pharmacogenetics study; levomilnacipran is not mentioned at all. |
 | PD | Vourvahis_2019 | not_relevant | 0 | 0 | The paper focuses on maraviroc, not levomilnacipran, and reports no PD parameters for the target drug. |
-| popPK | unknown_2023 | irrelevant | 0 | 0 | no_text gate: only 62 chars of text extracted (&lt; 400) |
+| popPK | unknown_2023 | irrelevant | 0 | 0 | no_text gate: only 16 chars of text extracted (&lt; 400) |
 | PD | unknown_2023 | not_relevant | 0 | 0 | The provided text is a placeholder for a large PDF file from a conference and contains no scientific content, data, or mention of levomilnacipran or pharmacodynamics. |
 
 ---
