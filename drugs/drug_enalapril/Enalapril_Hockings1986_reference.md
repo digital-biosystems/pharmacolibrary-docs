@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C09A&quot;,&quot;href&quot;:&quot;atc/C09A.md&quot;},{&quot;label&quot;:&quot;enalapril&quot;,&quot;href&quot;:&quot;drugs/drug_enalapril/&quot;},{&quot;label&quot;:&quot;Hockings_1986 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Enalapril_Kechagia2015_reference&quot;,&quot;label&quot;:&quot;Kechagia_2015_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_enalapril/Enalapril_Kechagia2015_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Enalapril_Steichert2025v2_reference&quot;,&quot;label&quot;:&quot;Steichert_2025_2_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_enalapril/Enalapril_Steichert2025v2_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Hockings_1986_ACE_inhibition&quot;,&quot;label&quot;:&quot;Hockings_1986 \u00b7 ACE inhibition&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_enalapril/pd_Hockings_1986_ACE_inhibition.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Kechagia_2015_DBP&quot;,&quot;label&quot;:&quot;Kechagia_2015 \u00b7 DBP&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_enalapril/pd_Kechagia_2015_DBP.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Enalapril_Faisal2019v2_reference&quot;,&quot;label&quot;:&quot;Faisal_2019_2_mean&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_enalapril/Enalapril_Faisal2019v2_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Enalapril_Faisal2019v2_reference&quot;,&quot;label&quot;:&quot;Faisal_2019_2_median&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_enalapril/Enalapril_Faisal2019v2_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Enalapril_Kechagia2015_reference&quot;,&quot;label&quot;:&quot;Kechagia_2015_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_enalapril/Enalapril_Kechagia2015_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Enalapril_Steichert2025_reference&quot;,&quot;label&quot;:&quot;Steichert_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_enalapril/Enalapril_Steichert2025_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Enalapril_Steichert2025v2_reference&quot;,&quot;label&quot;:&quot;Steichert_2025_2_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_enalapril/Enalapril_Steichert2025v2_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Kechagia_2015_DBP&quot;,&quot;label&quot;:&quot;Kechagia_2015 \u00b7 DBP&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_enalapril/pd_Kechagia_2015_DBP.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # enalapril — `Enalapril_Hockings1986_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -23,6 +23,8 @@ The model links enalapril to its measured metabolite enalaprilat via hydrolysis 
 
 <sub>reviewed by glm-5.3-flash</sub>
 
+> ⚠️ **STALE** — review status `rejected` (reviewed 2026-10-05 09:26:42.453673+00:00) predates the upstream re-run (2026-10-07 05:42:26.296314+00:00). Current validate status: `needs_review`.
+
 > **Dose compound ≠ measured compound:** dosed `enalapril`, measured `enalaprilat`.
 
 ## Citation
@@ -30,21 +32,23 @@ Hockings N et al., Age and the pharmacokinetics of angiote…, British journal o
   ·  DOI: [10.1111/j.1365-2125.1986.tb05205.x](https://doi.org/10.1111/j.1365-2125.1986.tb05205.x)
 
 ## Model component
-<dbs-pgx drug="enalapril" model-id="Enalapril_Hockings1986_reference" status="rejected" stale="false" population="healthy young and elderly adults" measured-compound="enalaprilat" parameterization="mechanistic" topology="general_linear"></dbs-pgx>
+<dbs-pgx drug="enalapril" model-id="Enalapril_Hockings1986_reference" status="needs_review" stale="true" population="young and elderly healthy volunteers" measured-compound="enalaprilat" parameterization="mechanistic" topology="general_linear"></dbs-pgx>
 
 **Model structure:** general linear; no model was built for this record.  
-**Parameters:** 2 extracted.
+**Parameters:** 4 extracted.
 
 **Parameterization:** mechanistic.
 
 ## Parameters
-> ⚠️ This record is not accepted (current status `rejected`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
+> ⚠️ This record is not accepted (current status `needs_review`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
 | Y1 | `Q900` · equation variable | 129 | not captured | not captured | not captured | not captured | llm (0.6) | Hockings_1986_table_3:row2:col1, Hockings_1986_table_3:row2:col2, Hockings_1986_table_3:row2:col3, Hockings_1986_table_3:row2:col4, Hockings_1986_table_3:row2:col5 | — | not captured |
 | El | `Q47` · kel | 197 | 1/h | 0.05472222222222222 | 1/h | not captured | llm (0.6) | Hockings_1986_table_3:row13:col1, Hockings_1986_table_3:row13:col2, Hockings_1986_table_3:row13:col3, Hockings_1986_table_3:row13:col4, Hockings_1986_table_3:row13:col5 | — | not captured |
 | The clearance of enalaprilat | `Q22` · CL | 4.46 | L/h | 1.238888888888889e-06 | L/h | not captured | boundary (0.8) | Hockings_1986:other_prose | — | not captured |
+| VD (L) | `Q61` · V | 100.0 | L | 0.1 | L | not captured | review_gapfill (0.7) | Faisal_2019:review | — | not captured |
+| KA (1/h) | `Q49` · kabs | 5.0 | 1/h | 0.001388888888888889 | 1/h | not captured | review_gapfill (0.7) | Faisal_2019:review | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -82,6 +86,10 @@ Hockings N et al., Age and the pharmacokinetics of angiote…, British journal o
 - template fit: none — noncompartmental model — not a compartmental parent–metabolite model
 - row roles: 17 per-group rows of enalaprilat summary_statistic but 0 reference group(s) — kept as printed
 - row roles (LLM): model_class=noncompartmental; 18/18 row label(s) assigned, 0 linked by role; re-tagged parent→enalaprilat ×85
+- gap-filled Q61 (V) from Faisal_2019's review values (primary lacked it)
+- skipped review gap-fill of V2: primary is GENERAL_LINEAR (peripheral family needs ≥2C)
+- skipped review gap-fill of Q: primary's parameterization (rate-constant / ka-only) does not use it
+- gap-filled Q49 (kabs) from Faisal_2019's review values (primary lacked it)
 
 **Extraction notes:**
 - transposed table tab_1: parameters were across the columns, populations/subgroups down the first column — transposed for parsing
@@ -100,10 +108,13 @@ Hockings N et al., Age and the pharmacokinetics of angiote…, British journal o
 | C0c_disposition_complete | fail | not captured | not captured | not captured | not captured | not captured |
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Hockings_1986:other_prose'] |
 | C5_dimension_Q47 | pass | 1 / [time] | not captured | not captured | not captured | ['Hockings_1986_table_3:row13:col1', 'Hockings_1986_table_3:row13:col2', 'Hockings_1986_table_3:row13:col3', 'Hockings_1986_table_3:row13:col4', 'Hockings_1986_table_3:row13:col5'] |
+| C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['Faisal_2019:review'] |
 | C5_dimension_Q57 | pass | [time] | not captured | not captured | not captured | ['tab_1:row2:col1'] |
+| C5_dimension_Q61 | pass | [length] ** 3 | not captured | not captured | not captured | ['Faisal_2019:review'] |
 | C6_cl_magnitude | pass | &lt;= 90.0 L/h | 4.46 | not captured | not captured | ['Hockings_1986:other_prose'] |
-| C8_topology | fail | not captured | not captured | not captured | not captured | not captured |
+| C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
 | C9_phys_window_Q22 | pass | clearance within physiological range | 4.46 L/h | not captured | not captured | ['Hockings_1986:other_prose'] |
+| C9_phys_window_Q61 | pass | volume within physiological range | 100 L | not captured | not captured | ['Faisal_2019:review'] |
 
 <details class="legend">
 <summary>Check legend — what each column means</summary>
@@ -117,9 +128,19 @@ Hockings N et al., Age and the pharmacokinetics of angiote…, British journal o
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
-## Models
+## Downloadable models
 
-<p>No downloads: this record is <b>rejected</b>, so it is not published as a model. Any archives generated for it before the verdict have been removed — a download outlives the page that explains it.</p>
+<div class="pk-models-grid"><div class="pk-models-table">
+<table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
+</tbody></table>
+<p>No bundles have been generated for this record yet. When the engineer emits them they appear here automatically — this page reports what is on disk and generates nothing itself.</p>
+</div></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
@@ -128,4 +149,4 @@ _No web simulator for this record: its structure has no shared WebAssembly templ
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-09-30 23:08 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 05:42 UTC</sub>

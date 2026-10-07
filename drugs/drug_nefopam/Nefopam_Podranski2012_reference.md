@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N02B&quot;,&quot;href&quot;:&quot;atc/N02B.md&quot;},{&quot;label&quot;:&quot;nefopam&quot;,&quot;href&quot;:&quot;drugs/drug_nefopam/&quot;},{&quot;label&quot;:&quot;Podranski_2012 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Nefopam_Djerada2014_reference&quot;,&quot;label&quot;:&quot;Djerada_2014_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_nefopam/Nefopam_Djerada2014_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Nefopam_Djerada2014_reference&quot;,&quot;label&quot;:&quot;Djerada_2014_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_nefopam/Nefopam_Djerada2014_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # nefopam — `Nefopam_Podranski2012_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.556). The first reading is what the record holds.">cross-check: partial</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.556). The first reading is what the record holds.">cross-check: partial</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -25,15 +25,17 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the val
 
 <sub>reviewed by glm-5.3-flash</sub>
 
+> ⚠️ **STALE** — review status `rejected` (reviewed 2026-09-28 14:39:11.413659+00:00) predates the upstream re-run (2026-10-07 06:36:47.634842+00:00). Current validate status: `rejected`.
+
 ## Citation
 Podranski T et al., Compartmental pharmacokinetics of nefop…, British journal of anaesthe… (2012)
   ·  DOI: [10.1093/bja/aer517](https://doi.org/10.1093/bja/aer517)
 
 ## Model component
-<dbs-pgx drug="nefopam" model-id="Nefopam_Podranski2012_reference" status="rejected" stale="false" population="healthy adults" measured-compound="nefopam" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<dbs-pgx drug="nefopam" model-id="Nefopam_Podranski2012_reference" status="rejected" stale="true" population="healthy volunteers" measured-compound="nefopam" parameterization="mechanistic" topology="1C"></dbs-pgx>
 
-**Model structure:** 2-compartment; no model was built for this record.  
-**Parameters:** 3 extracted.
+**Model structure:** 1-compartment; no model was built for this record.  
+**Parameters:** 1 extracted.
 
 **Parameterization:** mechanistic.
 
@@ -42,9 +44,7 @@ Podranski T et al., Compartmental pharmacokinetics of nefop…, British journal 
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| V 1 | `Q63` · V1 | 24.3 | litre | 0.024300000000000002 | L | not captured | space_fold (0.95) | Podranski_2012:results_prose | — | not captured |
-| V 2 | `Q64` · V2 | 183.3 | litre | 0.18330000000000002 | L | not captured | space_fold (0.95) | Podranski_2012:results_prose | — | not captured |
-| elimination clearance [Cl el (SE %)] | `Q22` · CL | 52.9 | litre h 21 | not captured | litre h 21 | not captured | boundary (0.8) | Podranski_2012:discussion_prose | — | not captured |
+| NPD | `Q358` · CL_PD | 4481 | not captured | not captured | not captured | not captured | llm (0.6) | tab_0:row2:col1, tab_0:row2:col2, tab_0:row2:col3, tab_0:row2:col6, tab_0:row2:col7, tab_0:row2:col8 | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -60,16 +60,10 @@ Podranski T et al., Compartmental pharmacokinetics of nefop…, British journal 
 
 **Interpretation flags:**
 - column 'variable unit' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
-- dropped unlinked row (NIL): 'NPD' — extend the ontology if this is a real PK parameter (source ['tab_0:row2:col1', 'tab_0:row2:col2', 'tab_0:row2:col3', 'tab_0:row2:col6', 'tab_0:row2:col7', 'tab_0:row2:col8'])
 - dropped unlinked row (NIL): 'POP (B) Individual data' — extend the ontology if this is a real PK parameter (source ['tab_0:row3:col1', 'tab_0:row3:col2', 'tab_0:row3:col3'])
 - dropped unlinked row (NIL): 'POP' — extend the ontology if this is a real PK parameter (source ['tab_0:row4:col1', 'tab_0:row4:col2', 'tab_0:row4:col3', 'tab_0:row4:col6', 'tab_0:row6:col1', 'tab_0:row6:col2', 'tab_0:row6:col4', 'tab_0:row6:col6'])
-- table mostly unlinked (3/4 table-cell rows NIL) — likely the wrong table was located, not 1 genuinely-missing ontology parameter(s); route_to_review instead of building a model from the residual linked cell(s)
-- salvaged Q63 ('V 1'=24.3) from results prose — parameter table was unreadable
-- salvaged Q64 ('V 2'=183.3) from results prose — parameter table was unreadable
-- salvaged Q22 ('elimination clearance [Cl el (SE %)]'=52.9) from results prose — parameter table was unreadable
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=nefopam
-- held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
-- status held at route_to_review — not promoted
+- structure disagreement: deterministic 1C vs LLM 2C — review compartment count
 
 **Extraction notes:**
 - unparsed cell tab_0:row2:col4 = 'A V 1'
@@ -111,14 +105,10 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 3 | not captured | not captured | not captured |
-| C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
-| C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
-| C5_unit_missing_Q22 | fail | [length] ** 3 / [time] | litre h 21 | not captured | not captured | ['Podranski_2012:discussion_prose'] |
-| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 52.9 | not captured | not captured | ['Podranski_2012:discussion_prose'] |
-| C8_topology | fail | not captured | not captured | not captured | not captured | not captured |
-| C9_phys_window_Q63 | pass | volume within physiological range | 24.3 L | not captured | not captured | ['Podranski_2012:results_prose'] |
-| C9_phys_window_Q64 | pass | volume within physiological range | 183 L | not captured | not captured | ['Podranski_2012:results_prose'] |
+| C0_has_structural_params | pass | not captured | 1 | not captured | not captured | not captured |
+| C0b_disposition_core | fail | not captured | not captured | not captured | not captured | not captured |
+| C5_unit_missing_Q358 | fail | [length] ** 3 / [time] | not captured | not captured | not captured | ['tab_0:row2:col1', 'tab_0:row2:col2', 'tab_0:row2:col3', 'tab_0:row2:col6', 'tab_0:row2:col7', 'tab_0:row2:col8'] |
+| C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
 
 <details class="legend">
 <summary>Check legend — what each column means</summary>
@@ -143,4 +133,4 @@ _No web simulator for this record: its structure has no shared WebAssembly templ
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-09-21 03:58 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 06:36 UTC</sub>

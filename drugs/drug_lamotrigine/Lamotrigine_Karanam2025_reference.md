@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N03A&quot;,&quot;href&quot;:&quot;atc/N03A.md&quot;},{&quot;label&quot;:&quot;lamotrigine&quot;,&quot;href&quot;:&quot;drugs/drug_lamotrigine/&quot;},{&quot;label&quot;:&quot;Karanam_2025 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Lamotrigine_Karanam2025_reference&quot;,&quot;label&quot;:&quot;Karanam_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_lamotrigine/Lamotrigine_Karanam2025_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Lamotrigine_Huo2025_base&quot;,&quot;label&quot;:&quot;Huo_2025_base&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_lamotrigine/Lamotrigine_Huo2025_base.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Lamotrigine_Huo2025_final&quot;,&quot;label&quot;:&quot;Huo_2025_final&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_lamotrigine/Lamotrigine_Huo2025_final.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # lamotrigine — `Lamotrigine_Karanam2025_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.444). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.444). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -13,7 +13,7 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
-**Model:** A simulatable model was generated — see the **Models** and **Simulation** tabs.
+**Model:** No model was generated from this record.
 
 ### Reviewer guidance
 
@@ -25,26 +25,27 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the val
 
 <sub>reviewed by glm-5.3-flash</sub>
 
+> ⚠️ **STALE** — review status `needs_review` (reviewed 2026-09-28 14:38:27.114400+00:00) predates the upstream re-run (2026-10-07 07:02:18.049432+00:00). Current validate status: `needs_review`.
+
 ## Citation
 Karanam A et al., Characterization of lamotrigine disposi…, Pharmacotherapy (2025)
   ·  DOI: [10.1002/phar.4640](https://doi.org/10.1002/phar.4640)
 
 ## Model component
-<dbs-pgx drug="lamotrigine" model-id="Lamotrigine_Karanam2025_reference" status="needs_review" stale="false" population="women with epilepsy during pregnancy and postpartum, plus nonpregnant women with epilepsy" measured-compound="lamotrigine" parameterization="apparent" topology="1C"></dbs-pgx>
+<dbs-pgx drug="lamotrigine" model-id="Lamotrigine_Karanam2025_reference" status="needs_review" stale="true" population="women with epilepsy (pregnant and nonpregnant)" measured-compound="lamotrigine" parameterization="mechanistic" topology="1C"></dbs-pgx>
 
-**Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
-**Parameters:** 3 extracted.
+**Model structure:** 1-compartment; no model was built for this record.  
+**Parameters:** 1 extracted.
 
-**Parameterization:** CL/F, V/F — apparent, F unknown (apparent — bioavailability not identifiable).
+**Parameterization:** mechanistic.
 
 ## Parameters
 > ⚠️ This record is not accepted (current status `needs_review`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| nonpregnant V/F | `Q76` · V/F | 130 | L | 0.13 | L | not captured | boundary (0.8) | Karanam_2025:other_prose | — | not captured |
-| nonpregnant CL/F | `Q27` · CL/F | 2.9 | L/hour | 8.055555555555555e-07 | L/h | not captured | boundary (0.8) | Karanam_2025:other_prose | — | not captured |
-| nonpregnant clearance | `Q22` · CL | 0.33 | fold | not captured | fold | not captured | boundary (0.8) | Karanam_2025:other_prose | — | not captured |
+| CLBL (L/hour) | `Q22` · CL | 2.79 | L/hour | 7.75e-07 | [l] / [h] | 3 | llm (0.6) | phar4640-tbl-0002:row1:col1, phar4640-tbl-0002:row1:col3 | — | not captured |
+| P2 (%) | `Q900` · equation variable | 9.04 | not captured | not captured | not captured | 30 | llm (0.6) | phar4640-tbl-0002:row5:col1, phar4640-tbl-0002:row5:col3 | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -53,23 +54,18 @@ Karanam A et al., Characterization of lamotrigine disposi…, Pharmacotherapy (2
 
 ## Departures & gaps
 
-**Deviations:**
-- `defaulted_parameters`: ['ka', 'Tlag']
-- `apparent_assumption`: F=1, Fm=1, no molar correction (parameterization=apparent)
-- `invented_absorption`: ka defaulted — not reported in source
-- `input_model`: first-order depot input — apparent (/F) parameterization ⇒ extravascular dosing
-
 **Interpretation flags:**
-- salvaged Q76 ('nonpregnant V/F'=130) from results prose — parameter table was unreadable
-- salvaged Q27 ('nonpregnant CL/F'=2.9) from results prose — parameter table was unreadable
-- salvaged Q22 ('nonpregnant clearance'=0.33) from results prose — parameter table was unreadable
-- apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=lamotrigine
-- held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
-- status held at route_to_review — not promoted
+- dropped PD-category row 'Emax (L/hour)' → Q320 (Emax, category G11) — pharmacodynamic parameters belong to scholarpd, not the PK model (source ['phar4640-tbl-0002:row2:col1', 'phar4640-tbl-0002:row2:col3'])
+- dropped PD-category row 'EC50 (weeks)' → Q321 (EC50, category G11) — pharmacodynamic parameters belong to scholarpd, not the PK model (source ['phar4640-tbl-0002:row3:col1', 'phar4640-tbl-0002:row3:col3'])
+- dropped PD-category row 'Kdeg (1/weeks)' → Q328 (kout, category G11) — pharmacodynamic parameters belong to scholarpd, not the PK model (source ['phar4640-tbl-0002:row4:col1'])
+- dropped unlinked row (NIL): 'Estrogen‐based medications (%)' — extend the ontology if this is a real PK parameter (source ['phar4640-tbl-0002:row6:col1', 'phar4640-tbl-0002:row6:col3'])
+- dropped diagnostic row 'Enzyme‐inducing ASM (%)' → Q318 (shrinkage) — reported statistic, not a parameter
+- apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=lamotrigine
+- skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
+- skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
 
 **Extraction notes:**
-- no TEI final-model table id; trying text-pointer table recovery
-- text-pointer recovery: parsed 0 structural record(s) from the flattened table 1 sentence
+- LLM selected parameter table(s) 2
 
 ## Validation
 
@@ -102,14 +98,13 @@ first reading `qwen3.6:27b-q8_0` — the numbers on this page are its, whatever 
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 3 | not captured | not captured | not captured |
+| C0_has_structural_params | pass | not captured | 1 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
-| C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
-| C5_unit_missing_Q22 | fail | [length] ** 3 / [time] | fold | not captured | not captured | ['Karanam_2025:other_prose'] |
-| C7_apparent_coherence | pass | not captured | not captured | not captured | not captured | not captured |
+| C0c_disposition_complete | fail | not captured | not captured | not captured | not captured | not captured |
+| C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['phar4640-tbl-0002:row1:col1', 'phar4640-tbl-0002:row1:col3'] |
+| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 2.79 | not captured | not captured | ['phar4640-tbl-0002:row1:col1', 'phar4640-tbl-0002:row1:col3'] |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
-| C9_phys_window_Q27 | pass | clearance within physiological range | 2.9 L/h | not captured | not captured | ['Karanam_2025:other_prose'] |
-| C9_phys_window_Q76 | pass | volume within physiological range | 130 L | not captured | not captured | ['Karanam_2025:other_prose'] |
+| C9_phys_window_Q22 | pass | clearance within physiological range | 2.79 L/h | not captured | not captured | ['phar4640-tbl-0002:row1:col1', 'phar4640-tbl-0002:row1:col3'] |
 
 **Reviewer per-scenario checks:**
 
@@ -143,25 +138,20 @@ first reading `qwen3.6:27b-q8_0` — the numbers on this page are its, whatever 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
 <tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_lamotrigine/Lamotrigine_Karanam2025_reference/Lamotrigine_Karanam2025_reference_modelica.zip" download>Lamotrigine_Karanam2025_reference_modelica.zip</a> <span class="pk-size">(4.1 kB)</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_lamotrigine/Lamotrigine_Karanam2025_reference/Lamotrigine_Karanam2025_reference_fmi.zip" download>Lamotrigine_Karanam2025_reference_fmi.zip</a> <span class="pk-size">(4.3 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><a href="drugs/drug_lamotrigine/Lamotrigine_Karanam2025_reference/Lamotrigine_Karanam2025_reference_fmi.zip" download>Lamotrigine_Karanam2025_reference_fmi.zip</a> <span class="pk-size">(4.3 kB)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_lamotrigine/Lamotrigine_Karanam2025_reference/Lamotrigine_Karanam2025_reference_matlab.zip" download>Lamotrigine_Karanam2025_reference_matlab.zip</a> <span class="pk-size">(3.5 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_lamotrigine/Lamotrigine_Karanam2025_reference/Lamotrigine_Karanam2025_reference_matlab_simbio.zip" download>Lamotrigine_Karanam2025_reference_matlab_simbio.zip</a> <span class="pk-size">(2.9 kB)</span></td></tr>
 <tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_lamotrigine/Lamotrigine_Karanam2025_reference/Lamotrigine_Karanam2025_reference_sbml.zip" download>Lamotrigine_Karanam2025_reference_sbml.zip</a> <span class="pk-size">(2.7 kB)</span></td></tr>
 <tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_lamotrigine/Lamotrigine_Karanam2025_reference/Lamotrigine_Karanam2025_reference_cellml.zip" download>Lamotrigine_Karanam2025_reference_cellml.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
 </tbody></table>
 <p>Each archive holds the model source, a script that simulates it against the appropriate library, and a README describing both and how to run them.</p>
-<p><b>FMI is two downloads.</b> The archive holds this record's parameters and its driver; the simulator itself is <code>PK_1C_enteral.fmu</code>, one compiled template shared by every model of this structure. Take the FMU once, keep it beside the script (or pass <code>--fmu PATH</code>). Running it reproduces the model-specific FMU exactly.</p>
-</div><figure class="pk-models-diagram"><img src="drugs/drug_lamotrigine/Lamotrigine_Karanam2025_reference/Lamotrigine_Karanam2025_reference.svg" alt="Lamotrigine_Karanam2025_reference diagram"><figcaption>Model diagram (Modelica) using Pharmacolibrary v26.09 components, rendered by OpenModelica 1.26.7.</figcaption></figure></div>
+</div></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-**Administration: oral** — 300 mg, single dose, first-order absorption (ka 0.5 /h, F 1). _The paper's dose was not captured; the default is the WHO ATC DDD 300 mg oral (N03AX09) (defined daily dose)._
-
-<dbs-fmusim paramsurl="drugs/drug_lamotrigine/Lamotrigine_Karanam2025_reference/Lamotrigine_Karanam2025_reference_params.json" metaurl="assets/fmu/PK_1C_enteral.vr.json" wasmurl="assets/fmu/PK_1C_enteral.js" controlsurl="drugs/drug_lamotrigine/Lamotrigine_Karanam2025_reference/Lamotrigine_Karanam2025_reference_sim_controls.json"></dbs-fmusim>
-
-<sub>Runs this record's model in the browser as WebAssembly. Sliders start at the extracted values; the reference check compares the browser's peak against the FMPy result recorded when the record was built, and is withheld once a value has been edited. Template `PK_1C_enteral` · parameters `Lamotrigine_Karanam2025_reference_params.json` · controls `Lamotrigine_Karanam2025_reference_sim_controls.json`. A slider marked *simulator value* is running on the template's own default because this record does not pin that parameter.</sub>
+_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-07-15 12:51 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 07:02 UTC</sub>

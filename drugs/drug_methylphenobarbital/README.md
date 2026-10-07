@@ -18,19 +18,11 @@ Methylphenobarbital (mephobarbital) is a barbiturate anticonvulsant used to trea
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-10 01:24 | 1:41 | 0/0/0 | 0/1/0 | 0/0/0 | 1,658/392 | ollama / qwen3.8:27b-mtp-q8_0 | 2 | 3/1 | 1/1 | 0 |
+| 2026-10-07 07:12 | 0:22 | 0/0/0 | 0/0/0 | 0/0/0 | 41,795/1,011 | einfracz / qwen3.8-27b | 2 | 3/1 | 1/1 | 0 |
 
 ## popPK records
 
 _not available_
-
-## Pharmacodynamics (PD)
-
-| status | detail | about | model | citation | doi |
-|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">in vitro</span> | [Hamouda_2014_3H_ACh_binding](drugs/drug_methylphenobarbital/pd_Hamouda_2014_3H_ACh_binding.md) | name ← mTFD-MPAB · inhibition effect | — | Hamouda AK et al., Identifying barbiturate binding sites i…, Molecular pharmacology (2014) | [10.1124/mol.113.090985](https://doi.org/10.1124/mol.113.090985) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">in vitro</span> | [Hamouda_2014_3H_tenocyclidine_binding](drugs/drug_methylphenobarbital/pd_Hamouda_2014_3H_tenocyclidine_binding.md) | name ← mTFD-MPAB · inhibition effect | — | Hamouda AK et al., Identifying barbiturate binding sites i…, Molecular pharmacology (2014) | [10.1124/mol.113.090985](https://doi.org/10.1124/mol.113.090985) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">in vitro</span> | [Hamouda_2014_ACh_induced_currents](drugs/drug_methylphenobarbital/pd_Hamouda_2014_ACh_induced_currents.md) | name ← mTFD-MPAB · inhibition effect | — | Hamouda AK et al., Identifying barbiturate binding sites i…, Molecular pharmacology (2014) | [10.1124/mol.113.090985](https://doi.org/10.1124/mol.113.090985) |
 
 ## ADME sites
 
@@ -62,14 +54,14 @@ _6 paper(s) judged relevant from the abstract, with no full text on disk — pay
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Lim_1989.pdf` | Lim WH et al., Stereoselective metabolism and pharmaco…, Drug metabolism and disposi… (1989) | popPK | 10 | not captured | [2565213](https://pubmed.ncbi.nlm.nih.gov/2565213) | The paper reports specific quantitative pharmacokinetic parameters (half-life and oral clearance) for methylphenobarbital enantiomers in humans directly in the text. |
+| `Verpooten_1982.pdf` | Verpooten GA et al., Prediction of the efficacy of hemoperfu…, Archives of toxicology. Sup… (1982) | popPK | 9 | [10.1007/978-3-642-68511-8_54](https://doi.org/10.1007/978-3-642-68511-8_54) | [6954915](https://pubmed.ncbi.nlm.nih.gov/6954915) | The study reports one-compartment kinetics for methylphenobarbital in humans, but specific numeric PK parameters (CL, V, t1/2) are not present in the provided abstract text. |
 | `Matsumoto_1988.pdf` | Matsumoto K et al., Action of polychlorocycloalkane insecti…, Toxicology and applied phar… (1988) | pd | 5 | [10.1016/0041-008x(88)90158-5](https://doi.org/10.1016/0041-008x(88)90158-5) | [2458634](https://www.ncbi.nlm.nih.gov/pubmed/2458634) | metadata signals extractable PD data (IC50) |
 | `Daniell_1994.pdf` | Daniell LC, Effect of anesthetic and convulsant bar…, Pharmacology (1994) | pd | 4 | [10.1159/000139246](https://doi.org/10.1159/000139246) | [7862741](https://www.ncbi.nlm.nih.gov/pubmed/7862741) | metadata signals extractable PD data (IC50) |
 | `Kobayashi_2004.pdf` | Kobayashi K et al., Pharmacogenetic roles of CYP2C19 and CY…, Pharmacogenetics (2004) | pgx | 8 | [10.1097/01.fpc.0000114764.78957.22](https://doi.org/10.1097/01.fpc.0000114764.78957.22) | [15284537](https://www.ncbi.nlm.nih.gov/pubmed/15284537) | metadata signals extractable PGX data (CYP2C19, PK/PD-context) |
 | `Kobayashi_2001.pdf` | Kobayashi K et al., Role of CYP2C19 in stereoselective hydr…, Drug metabolism and disposi… (2001) | pgx | 5 | not captured | [11124227](https://www.ncbi.nlm.nih.gov/pubmed/11124227) | metadata signals extractable PGX data (CYP2C19) |
 | `Morita_2004.pdf` | Morita J et al., A novel single nucleotide polymorphism…, Drug metabolism and pharmac… (2004) | pgx | 5 | [10.2133/dmpk.19.236](https://doi.org/10.2133/dmpk.19.236) | [15499191](https://www.ncbi.nlm.nih.gov/pubmed/15499191) | metadata signals extractable PGX data (CYP2C19) |
 
-<sub>queue written 2026-09-10T01:24:02.792394+00:00</sub>
+<sub>queue written 2026-10-07T07:11:55.855140+00:00</sub>
 
 ## Screened and excluded
 
@@ -77,29 +69,29 @@ _6 paper(s) judged relevant from the abstract, with no full text on disk — pay
 |---|---|---|---|---|---|
 | popPK | Bialer_2025 | irrelevant | 0 | 0 | The paper is a review of chirality in antiseizure medications and does not report original quantitative pharmacokinetic parameters for methylphenobarbital. |
 | PD | Bialer_2025 | not_relevant | 1 | 0 | The paper is a qualitative review of chirality in antiseizure medications and does not report specific numeric PD parameters or exposure-response data for methylphenobarbital. |
-| PGx | Chang_2006 | not_relevant | 0 | 0 | The paper is a general review of cytochrome P450 catalytic assays and does not report specific pharmacogenomic effects on methylphenobarbital PK/PD parameters. |
+| PGx | Chang_2006 | not_relevant | 0 | 0 | The paper is a review of cytochrome P450 catalytic assays and substrates, containing no data on methylphenobarbital or pharmacogenomic effects on its PK/PD. |
 | popPK | Chernev_1984 | irrelevant | 0 | 0 | The provided evidence contains only a title regarding drug interactions with oral contraceptives and lacks any pharmacokinetic data or parameters for methylphenobarbital. |
 | PD | Chernev_1984 | not_relevant | 0 | 0 | The paper discusses drug interactions with oral contraceptives and does not report any pharmacodynamic or exposure-response analysis for methylphenobarbital. |
 | popPK | Daniell_1994 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of NMDA receptor function in brain membrane vesicles and does not report pharmacokinetic parameters for methylphenobarbital. |
 | popPK | Fletcher_1994 | irrelevant | 0 | 0 | The paper is a review discussing gender differences in pharmacokinetics and mentions mephobarbital (not methylphenobarbital) only as a qualitative example without providing any quantitative PK parameters. |
 | PD | Fletcher_1994 | not_relevant | 0 | 0 | The text is a general review of gender differences in pharmacokinetics and pharmacodynamics and does not report any specific study, data, or numeric PD parameters for methylphenobarbital. |
-| PGx | Hall_1987 | not_relevant | 0 | 0 | The paper investigates the metabolism of mephenytoin, not methylphenobarbital. |
-| popPK | Hamouda_2014 | irrelevant | 0 | 0 | The paper is a mechanistic study of barbiturate binding to nicotinic acetylcholine receptors in Torpedo membranes and Xenopus oocytes, not a pharmacokinetic study of methylphenobarbital. |
-| PGx | Jacqz_1986 | not_relevant | 0 | 0 | The paper studies mephobarbital and mephenytoin, not methylphenobarbital. |
-| PGx | Kalow_1989 | not_relevant | 0 | 0 | The paper discusses debrisoquine and mephenytoin polymorphisms and lists their substrates, but does not mention methylphenobarbital or report any pharmacogenomic effects on its PK/PD parameters. |
-| popPK | Kent_2019 | irrelevant | 0 | 0 | The study focuses on the pharmacodynamics of GABA receptor binding and anaesthetic potency in tadpoles, not the pharmacokinetic disposition parameters of methylphenobarbital. |
+| PGx | Hall_1987 | not_relevant | 0 | 0 | The paper studies mephenytoin metabolism, not methylphenobarbital, and discusses enzyme inhibition rather than pharmacogenomic effects on PK parameters for the target drug. |
+| popPK | Hamouda_2014 | irrelevant | 0 | 0 | The study focuses on the molecular interaction of a barbiturate analog with nicotinic acetylcholine receptors, not the pharmacokinetics of methylphenobarbital. |
+| PGx | Jacqz_1986 | not_relevant | 0 | 0 | The paper studies mephobarbital, not methylphenobarbital, which are distinct chemical compounds. |
+| PGx | Kalow_1989 | not_relevant | 0 | 0 | The text discusses debrisoquine and mephenytoin polymorphisms and lists substrates, but does not mention methylphenobarbital. |
+| popPK | Kent_2019 | irrelevant | 0 | 0 | The paper investigates the binding mechanisms and synergistic effects of general anaesthetics (including a mephobarbital derivative) on GABA receptors in tadpoles, but it does not report pharmacokinetic parameters (CL, V, etc.) for methylphenobarbital. |
 | PD | Kent_2019 | not_relevant | 0 | 0 | The paper focuses on the interaction of anaesthetic binding sites on GABA receptors using isobolographic analysis of mixtures, and does not report a pharmacokinetic or pharmacodynamic exposure-response model for methylphenobarbital. |
-| PGx | Kobayashi_1999 | not_relevant | 0 | 0 | The paper identifies CYP2B6 as the enzyme responsible for S-mephobarbital metabolism but does not report any pharmacogenomic effects (e.g., genotype-phenotype correlations) on PK parameters. |
+| PGx | Kobayashi_1999 | not_relevant | 2 | 5 | The paper identifies CYP2B6 as the enzyme metabolizing the drug (methylphenobarbital/mephobarbital) using in vitro systems but does not report a pharmacogenomic effect of specific gene variants on PK parameters in a population. |
 | PD | Lim_1989 | not_relevant | 0 | 0 | The paper reports stereoselective pharmacokinetics (clearance, half-life, metabolism) but explicitly states that pharmacodynamic implications are unclear and provides no concentration-effect or dose-response data. |
 | popPK | Matsumoto_1988 | irrelevant | 0 | 0 | The paper is an in-vitro binding study on Torpedo membranes involving insecticides and barbiturates, not a pharmacokinetic study of methylphenobarbital. |
 | PD | Matsumoto_1988 | not_relevant | 0 | 0 | The paper studies the binding of insecticides to Torpedo membranes and does not report any pharmacodynamic or exposure-response data for methylphenobarbital. |
-| PGx | Niu_2011 | not_relevant | 0 | 0 | The paper uses computational docking to predict binding modes of substrates to CYP2B6 and does not report pharmacogenomic effects on PK/PD parameters for methylphenobarbital. |
-| popPK | Pressler_2024 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of brivaracetam, and methylphenobarbital is only mentioned as a concomitant medication with no PK parameters reported for it. |
+| PGx | Niu_2011 | not_relevant | 0 | 0 | The paper uses computational docking to predict CYP2B6 binding modes for mephobarbital but does not report observed pharmacokinetic or pharmacodynamic changes based on genetic variants. |
+| popPK | Pressler_2024 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of brivaracetam, not methylphenobarbital. |
 | PD | Pressler_2024 | not_relevant | 0 | 0 | The paper reports pharmacokinetics (PK) and safety of brivaracetam, not methylphenobarbital, and contains no pharmacodynamic (PD) or exposure-response analysis. |
 | popPK | Sato_1983 | irrelevant | 0 | 0 | The provided evidence contains only software metadata and no scientific content or pharmacokinetic data for methylphenobarbital. |
 | PD | Sato_1983 | not_relevant | 0 | 0 | The provided text is metadata for the GROBID software and does not contain any scientific content regarding methylphenobarbital or pharmacodynamics. |
-| popPK | Savechenkov_2012 | irrelevant | 0 | 0 | The paper describes the synthesis and in-vitro pharmacological characterization of a novel barbiturate derivative, not the pharmacokinetics of methylphenobarbital. |
-| popPK | Verpooten_1982 | irrelevant | 2 | 0 | The paper mentions methylphenobarbital as one of nine drugs studied but provides no specific quantitative pharmacokinetic parameter values (CL, V, etc.) for it in the evidence. |
+| popPK | Savechenkov_2012 | irrelevant | 0 | 0 | The study is a mechanistic and medicinal chemistry paper describing a novel barbiturate derivative, not a pharmacokinetic study of methylphenobarbital. |
+| popPK | Verpooten_1982 | relevant | 9 | 0 | The study reports one-compartment kinetics for methylphenobarbital in humans, but specific numeric PK parameters (CL, V, t1/2) are not present in the provided abstract text. |
 
 ---
 <sub>Generated by `docs.py` (scholarv2)</sub>

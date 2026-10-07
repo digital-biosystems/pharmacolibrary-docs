@@ -1,0 +1,36 @@
+{
+ "dose_source": "paper",
+ "model_id": "Dapsone_Kotila2023_median",
+ "molar_masses": {
+  "central.C": 0.248301
+ },
+ "note": "Values for the shared PK_1C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "paper_doses_kind": "discrete",
+ "paper_doses_mg": [
+  50.0
+ ],
+ "parameters": {
+  "Cl": 4.2222222222222226e-07,
+  "F": 1.0,
+  "MM": 0.248301,
+  "Tlag": 0.0,
+  "VdPerKg": 0.0007937142857142858,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 5e-05,
+  "ka": 2.4999999999999998e-05,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 69085.37074148297
+ },
+ "reference_peaks": {
+  "central.C": 0.0005349897065620626
+ },
+ "stop_time": 604800.0,
+ "template": "PK_1C_enteral",
+ "template_fmu": "PK_1C_enteral.fmu"
+}

@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N03A&quot;,&quot;href&quot;:&quot;atc/N03A.md&quot;},{&quot;label&quot;:&quot;levetiracetam&quot;,&quot;href&quot;:&quot;drugs/drug_levetiracetam/&quot;},{&quot;label&quot;:&quot;Li_2023 \u00b7 final&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Levetiracetam_Schoemaker2018_reference&quot;,&quot;label&quot;:&quot;Schoemaker_2018_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_levetiracetam/Levetiracetam_Schoemaker2018_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Levetiracetam_Onos2022_reference&quot;,&quot;label&quot;:&quot;Onos_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_levetiracetam/Levetiracetam_Onos2022_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Levetiracetam_Li2023_base&quot;,&quot;label&quot;:&quot;Li_2023_base&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_levetiracetam/Levetiracetam_Li2023_base.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Levetiracetam_Schoemaker2018_reference&quot;,&quot;label&quot;:&quot;Schoemaker_2018_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_levetiracetam/Levetiracetam_Schoemaker2018_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Levetiracetam_Sharpe2024_reference&quot;,&quot;label&quot;:&quot;Sharpe_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_levetiracetam/Levetiracetam_Sharpe2024_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # levetiracetam — `Levetiracetam_Li2023_final`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -23,23 +23,28 @@ The paper reports no distribution volume and no clearance or elimination rate; i
 
 <sub>reviewed by rule template (no LLM)</sub>
 
+> ⚠️ **STALE** — review status `rejected` (reviewed 2026-09-28 14:38:27.566426+00:00) predates the upstream re-run (2026-10-07 07:04:42.234476+00:00). Current validate status: `needs_review`.
+
 ## Citation
 Li Y et al., Population pharmacokinetics and dosing…, British journal of clinical… (2023)
   ·  DOI: [10.1111/bcp.15572](https://doi.org/10.1111/bcp.15572)
 
 ## Model component
-<dbs-pgx drug="levetiracetam" model-id="Levetiracetam_Li2023_final" status="rejected" stale="false" population="women with epilepsy during pregnancy" measured-compound="levetiracetam" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<dbs-pgx drug="levetiracetam" model-id="Levetiracetam_Li2023_final" status="needs_review" stale="true" population="women with epilepsy during pregnancy" measured-compound="levetiracetam" parameterization="apparent" topology="1C"></dbs-pgx>
 
 **Model structure:** 1-compartment; no model was built for this record.  
-**Parameters:** 1 extracted.
+**Parameters:** 4 extracted.
 
-**Parameterization:** mechanistic.
+**Parameterization:** CL/F, V/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
 ## Parameters
-> ⚠️ This record is not accepted (current status `rejected`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
+> ⚠️ This record is not accepted (current status `needs_review`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
+| CL/F (L/h) | `Q27` · CL/F | 3.82 | L/h | 1.061111111111111e-06 | [l] / [h] | not captured | exact (1.0) | Li_2023_table_p6_1:row0:col5 | — | not captured |
+| V/F (L) | `Q76` · V/F | 42.0 | L | 0.042 | [l] | not captured | exact (1.0) | Li_2023_table_p6_1:row1:col5 | — | not captured |
+| Covariate effect on CL/F TBW | `Q31` · CL_ratio | 0.939 | not captured | not captured | not captured | not captured | llm_corrected (0.6) | Li_2023_table_p6_1:row2:col5 | — | not captured |
 | K a, 1/h | `Q49` · kabs | 2.98 | 1/h | 0.0008277777777777778 | 1/h | not captured | review_gapfill (0.7) | Schoemaker_2018:review | — | not captured |
 
 <details class="legend">
@@ -50,14 +55,15 @@ Li Y et al., Population pharmacokinetics and dosing…, British journal of clini
 ## Departures & gaps
 
 **Interpretation flags:**
-- apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=levetiracetam
-- model-stage split: 'final model shrinkage (%)' is the final model of Li_2023 (paper reports 4 stages: base model estimate, base model shrinkage (%), final model estimate, final model shrinkage (%)); same population, different model-building step
+- dropped unlinked row (NIL): 'TRIMESTER-2' — extend the ontology if this is a real PK parameter (source ['Li_2023_table_p6_1:row3:col5'])
+- dropped unlinked row (NIL): 'TRIMESRER-3' — extend the ontology if this is a real PK parameter (source ['Li_2023_table_p6_1:row4:col5'])
+- apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=levetiracetam
+- model-stage split: 'final model estimate' is the final model of Li_2023 (paper reports 2 stages: base model estimate, final model estimate); same population, different model-building step
 - skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
 - skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
 - gap-filled Q49 (kabs) from Schoemaker_2018's review values (primary lacked it)
 
 **Extraction notes:**
-- no TEI final-model table id; trying text-pointer table recovery
 - unparsed cell Li_2023_table_p6_1:row2:col8 = '(0.906'
 - unparsed cell Li_2023_table_p6_1:row3:col1 = 'θTRIMESTER-2'
 - unparsed cell Li_2023_table_p6_1:row4:col1 = 'θTRIMESRER-3'
@@ -68,10 +74,17 @@ Li Y et al., Population pharmacokinetics and dosing…, British journal of clini
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | fail | not captured | 0 | not captured | not captured | not captured |
-| C0b_disposition_core | fail | not captured | not captured | not captured | not captured | not captured |
+| C0_has_structural_params | pass | not captured | 3 | not captured | not captured | not captured |
+| C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
+| C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
+| C5_dimension_Q27 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Li_2023_table_p6_1:row0:col5'] |
 | C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['Schoemaker_2018:review'] |
+| C5_dimension_Q76 | pass | [length] ** 3 | not captured | not captured | not captured | ['Li_2023_table_p6_1:row1:col5'] |
+| C5_unit_missing_Q31 | fail | [length] ** 3 / [time] | not captured | not captured | not captured | ['Li_2023_table_p6_1:row2:col5'] |
+| C7_apparent_coherence | pass | not captured | not captured | not captured | not captured | not captured |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
+| C9_phys_window_Q27 | pass | clearance within physiological range | 3.82 L/h | not captured | not captured | ['Li_2023_table_p6_1:row0:col5'] |
+| C9_phys_window_Q76 | pass | volume within physiological range | 42 L | not captured | not captured | ['Li_2023_table_p6_1:row1:col5'] |
 
 <details class="legend">
 <summary>Check legend — what each column means</summary>
@@ -85,9 +98,19 @@ Li Y et al., Population pharmacokinetics and dosing…, British journal of clini
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
-## Models
+## Downloadable models
 
-<p>No downloads: this record is <b>rejected</b>, so it is not published as a model. Any archives generated for it before the verdict have been removed — a download outlives the page that explains it.</p>
+<div class="pk-models-grid"><div class="pk-models-table">
+<table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
+</tbody></table>
+<p>No bundles have been generated for this record yet. When the engineer emits them they appear here automatically — this page reports what is on disk and generates nothing itself.</p>
+</div></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
@@ -96,4 +119,4 @@ _No web simulator for this record: its structure has no shared WebAssembly templ
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-08-30 11:20 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 07:04 UTC</sub>

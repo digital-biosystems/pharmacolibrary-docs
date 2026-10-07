@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C09A&quot;,&quot;href&quot;:&quot;atc/C09A.md&quot;},{&quot;label&quot;:&quot;captopril&quot;,&quot;href&quot;:&quot;drugs/drug_captopril/&quot;},{&quot;label&quot;:&quot;Hu_2025 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Captopril_Hu2025_reference&quot;,&quot;label&quot;:&quot;Hu_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_captopril/Captopril_Hu2025_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Captopril_Hu2025_reference&quot;,&quot;label&quot;:&quot;Hu_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_captopril/Captopril_Hu2025_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # captopril — `Captopril_Hu2025_reference`
 
-> ## <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span>
+> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.8). The first reading is what the record holds.">cross-check: partial</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -19,14 +19,18 @@
 
 **Every check that could be run on this record passed.**
 
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on parameter Q40: this record has none, the second reading 80.8. That field does not shape the model.
+
 <sub>reviewed by rule template (no LLM)</sub>
+
+> ⚠️ **STALE** — review status `curated_candidate` (reviewed 2026-09-30 23:59:40.037697+00:00) predates the upstream re-run (2026-10-07 05:15:19.460873+00:00). Current validate status: `extracted`.
 
 ## Citation
 Hu L et al., A Systematic Review of Population Pharm…, Drug design, development an… (2025)
   ·  DOI: [10.2147/DDDT.S553073](https://doi.org/10.2147/DDDT.S553073)
 
 ## Model component
-<dbs-pgx drug="captopril" model-id="Captopril_Hu2025_reference" status="curated_candidate" stale="false" population="" measured-compound="captopril" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<dbs-pgx drug="captopril" model-id="Captopril_Hu2025_reference" status="extracted" stale="true" population="" measured-compound="captopril" parameterization="mechanistic" topology="1C"></dbs-pgx>
 
 **Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameters:** 2 extracted.
@@ -36,7 +40,7 @@ Hu L et al., A Systematic Review of Population Pharm…, Drug design, developmen
 ## Parameters
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| CL | `Q22` · CL | 3.31 | L/h | 9.194444444444444e-07 | L/h | not captured | review (0.7) | Hu_2025:review | — | not captured |
+| CL values for CP-A | `Q22` · CL | 3.31 | L/h | 9.194444444444444e-07 | L/h | not captured | review (0.7) | Hu_2025:review | — | not captured |
 | V (derived from CL·t½/ln2) | `Q61` · V | 116.5178 | L | 0.11651782228235624 | L | not captured | review (0.7) | Hu_2025:review | — | not captured |
 
 <details class="legend">
@@ -53,13 +57,19 @@ Hu L et al., A Systematic Review of Population Pharm…, Drug design, developmen
 ## Validation
 
 **Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
-first reading `glm-5.3-flash` — the numbers on this page are its, whatever the readers say
+first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | secondary_empty | 0.0 | none |
+| `gpt-oss:120b` | partly confirmed | 0.8 (4/5 fields) | 1 |
 
-_Every reader agrees on every compared field of this record._
+<details><summary>1 field(s) a reader read differently</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss:120b` | `values[Q40]` | not captured | 80.8 | only_one_extracted |
+
+</details>
 
 <details class="legend">
 <summary>Cross-check legend</summary>
@@ -111,7 +121,7 @@ _Every reader agrees on every compared field of this record._
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_captopril/Captopril_Hu2025_reference/Captopril_Hu2025_reference_modelica.zip" download>Captopril_Hu2025_reference_modelica.zip</a> <span class="pk-size">(3.2 kB)</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_captopril/Captopril_Hu2025_reference/Captopril_Hu2025_reference_modelica.zip" download>Captopril_Hu2025_reference_modelica.zip</a> <span class="pk-size">(3.5 kB)</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_captopril/Captopril_Hu2025_reference/Captopril_Hu2025_reference_fmi.zip" download>Captopril_Hu2025_reference_fmi.zip</a> <span class="pk-size">(4.1 kB)</span><br><a href="models/fmu/PK_1C.fmu" download>PK_1C.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_captopril/Captopril_Hu2025_reference/Captopril_Hu2025_reference_matlab.zip" download>Captopril_Hu2025_reference_matlab.zip</a> <span class="pk-size">(3.3 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_captopril/Captopril_Hu2025_reference/Captopril_Hu2025_reference_matlab_simbio.zip" download>Captopril_Hu2025_reference_matlab_simbio.zip</a> <span class="pk-size">(2.7 kB)</span></td></tr>
@@ -133,4 +143,4 @@ _Every reader agrees on every compared field of this record._
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-09-30 22:31 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 05:15 UTC</sub>

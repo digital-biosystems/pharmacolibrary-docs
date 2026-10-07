@@ -1,0 +1,38 @@
+{
+ "dose_source": "paper",
+ "model_id": "Abrocitinib_Wojciechowski2022_reference",
+ "molar_masses": {
+  "central.C": 0.32342000000000004
+ },
+ "note": "Values for the shared PK_2C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "paper_doses_kind": "discrete",
+ "paper_doses_mg": [
+  200.0
+ ],
+ "parameters": {
+  "Cl": 6.027777777777778e-06,
+  "F": 0.9,
+  "MM": 0.32342000000000004,
+  "Tlag": 0.0,
+  "VdPerKg": 0.001232857142857143,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 0.0002,
+  "k12": 3.6371829535213077e-06,
+  "k21": 3.8703932045485684e-05,
+  "ka": 0.0011083333333333333,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 2919.27751938575
+ },
+ "reference_peaks": {
+  "central.C": 0.0016578469880379368
+ },
+ "stop_time": 86400.0,
+ "template": "PK_2C_enteral",
+ "template_fmu": "PK_2C_enteral.fmu"
+}

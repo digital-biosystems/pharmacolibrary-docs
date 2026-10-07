@@ -1,8 +1,8 @@
-<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C09A&quot;,&quot;href&quot;:&quot;atc/C09A.md&quot;},{&quot;label&quot;:&quot;enalapril&quot;,&quot;href&quot;:&quot;drugs/drug_enalapril/&quot;},{&quot;label&quot;:&quot;Kechagia_2015 \u00b7 PD diastolic blood pressure&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Enalapril_Kechagia2015_reference&quot;,&quot;label&quot;:&quot;Kechagia_2015_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_enalapril/Enalapril_Kechagia2015_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Enalapril_Steichert2025v2_reference&quot;,&quot;label&quot;:&quot;Steichert_2025_2_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_enalapril/Enalapril_Steichert2025v2_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Hockings_1986_ACE_inhibition&quot;,&quot;label&quot;:&quot;Hockings_1986 \u00b7 ACE inhibition&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_enalapril/pd_Hockings_1986_ACE_inhibition.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Kechagia_2015_DBP&quot;,&quot;label&quot;:&quot;Kechagia_2015 \u00b7 DBP&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_enalapril/pd_Kechagia_2015_DBP.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C09A&quot;,&quot;href&quot;:&quot;atc/C09A.md&quot;},{&quot;label&quot;:&quot;enalapril&quot;,&quot;href&quot;:&quot;drugs/drug_enalapril/&quot;},{&quot;label&quot;:&quot;Kechagia_2015 \u00b7 PD diastolic blood pressure (DBP) reduction&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Enalapril_Faisal2019v2_reference&quot;,&quot;label&quot;:&quot;Faisal_2019_2_mean&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_enalapril/Enalapril_Faisal2019v2_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Enalapril_Faisal2019v2_reference&quot;,&quot;label&quot;:&quot;Faisal_2019_2_median&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_enalapril/Enalapril_Faisal2019v2_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Enalapril_Kechagia2015_reference&quot;,&quot;label&quot;:&quot;Kechagia_2015_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_enalapril/Enalapril_Kechagia2015_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Enalapril_Steichert2025_reference&quot;,&quot;label&quot;:&quot;Steichert_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_enalapril/Enalapril_Steichert2025_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Enalapril_Steichert2025v2_reference&quot;,&quot;label&quot;:&quot;Steichert_2025_2_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_enalapril/Enalapril_Steichert2025v2_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Kechagia_2015_DBP&quot;,&quot;label&quot;:&quot;Kechagia_2015 \u00b7 DBP&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_enalapril/pd_Kechagia_2015_DBP.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# diastolic blood pressure — PD  <span class="pk-badge pk-badge--orange">needs review</span>
+# diastolic blood pressure (DBP) reduction — PD  <span class="pk-badge pk-badge--orange">needs review</span>
 
 <details class="pk-legend"><summary>What the PGx badges mean — evidence, and whether a model runs</summary><table><tbody><tr><td><span class="pk-badge pk-badge--green">quantitative</span></td><td>the paper gives the effect of each phenotype (or genotype) on a named model parameter — a θ per category.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">qualitative</span></td><td>the paper links the gene to the drug but states no effect size on a model parameter, so it changes no model.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">guideline estimate</span></td><td>the effect comes from a CPIC / DPWG dosing guideline, not from this paper's numbers.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">safety allele</span></td><td>a risk allele for an adverse reaction (an HLA type, G6PD deficiency …): it changes no PK/PD parameter.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>the extraction is incomplete or inconsistent.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted.</td></tr><tr><td><span class="pk-badge pk-badge--green">▶ simulatable</span></td><td>the paper's popPK model runs per phenotype in the browser (Simulation tab); its PGx Modelica model is under Models.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">model only</span></td><td>a PGx Modelica model exists but has no in-browser simulator.</td></tr></tbody></table></details>
 
@@ -14,15 +14,15 @@
 
 ## What this record describes
 
-**As extracted:** Enalaprilat (concentrations from this paper's PK model) drives diastolic blood pressure (in mmHg): delayed effect through an effect compartment.
+**As extracted:** Enalaprilat (concentrations from the PK model of Hockings_1986) drives diastolic blood pressure (DBP) reduction (in mmHg): delayed effect through an effect compartment.
 
 **Model:** A simulatable model was generated — see the **Models** and **Simulation** tabs.
 
 - **paper:** `Kechagia_2015`
 - **model family:** `effect_compartment`
-- **driver:** `pk_record`
-- **tier:** population
-- **effect:** inhibition/unknown
+- **driver:** `cited_pk`
+- **tier:** descriptive
+- **effect:** inhibition/additive
 
 ## Citation
 Kechagia IA et al., Extrapolation of enalapril efficacy fro…, The Journal of pharmacy and… (2015)
@@ -31,10 +31,9 @@ Kechagia IA et al., Extrapolation of enalapril efficacy fro…, The Journal of p
 ## Parameters
 | role | label (paper) | Q-code · name | value | unit | value_si | link | source |
 |---|---|---|---|---|---|---|---|
-| PD (effect) | Emax (mmHg) — Estimate | `Q320` · not captured | -18 | mmHg | not captured | exact (not captured) | tab_4:row1:col1 |
-| PD (effect) | Emax (mmHg) — Standard Error | `Q320` · not captured | 1.4 | mmHg | not captured | exact (not captured) | tab_4:row1:col2 |
-| PD (effect) | Ki (ng/ml) — Estimate | `Q322` · not captured | 4 | ng/ml | not captured | llm (not captured) | tab_4:row2:col1 |
-| PD (effect) | Ki (ng/ml) — Standard Error | `Q322` · not captured | 1.3 | ng/ml | not captured | llm (not captured) | tab_4:row2:col2 |
+| PD (effect) | Emax | `Q323` · not captured | -18 | mmHg | not captured | direction (not captured) | Kechagia_2015:pdv3 |
+| PD (effect) | Ki | `Q321` · not captured | 4 | ng/ml | not captured | llm (not captured) | Kechagia_2015:pdv3 |
+| PD (effect) | Ke | `Q326` · not captured | 0.7 | 1/h | not captured | llm (not captured) | Kechagia_2015:pdv3 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -59,6 +58,7 @@ Deviations:
 
 - `defaulted_parameters` — E0, gamma
 - `pd_binding_family_inferred` — the record's model family is effect_compartment; read from the parameters: Emax/Imax and EC50/IC50 without a Hill coefficient — Emax
+- `pd_binding_imax_as_negative_emax` — Imax (Q323) enters SigmoidEmaxSweep as −Emax
 
 ## Review
 
@@ -84,12 +84,12 @@ Advisory:
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_enalapril/Enalapril_Kechagia2015_PD_dbp/Enalapril_Kechagia2015_PD_dbp_modelica.zip" download>Enalapril_Kechagia2015_PD_dbp_modelica.zip</a> <span class="pk-size">(3.3 kB)</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_enalapril/Enalapril_Kechagia2015_PD_dbp/Enalapril_Kechagia2015_PD_dbp_fmi.zip" download>Enalapril_Kechagia2015_PD_dbp_fmi.zip</a> <span class="pk-size">(4.5 kB)</span><br><a href="models/fmu/PD_SigmoidEmaxSweep.fmu" download>PD_SigmoidEmaxSweep.fmu</a> <span class="pk-size">(1.2 MB, shared)</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_enalapril/Enalapril_Kechagia2015_PD_dbp/Enalapril_Kechagia2015_PD_dbp_matlab.zip" download>Enalapril_Kechagia2015_PD_dbp_matlab.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_enalapril/Enalapril_Kechagia2015_PD_dbp/Enalapril_Kechagia2015_PD_dbp_modelica.zip" download>Enalapril_Kechagia2015_PD_dbp_modelica.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_enalapril/Enalapril_Kechagia2015_PD_dbp/Enalapril_Kechagia2015_PD_dbp_fmi.zip" download>Enalapril_Kechagia2015_PD_dbp_fmi.zip</a> <span class="pk-size">(4.6 kB)</span><br><a href="models/fmu/PD_SigmoidEmaxSweep.fmu" download>PD_SigmoidEmaxSweep.fmu</a> <span class="pk-size">(1.2 MB, shared)</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_enalapril/Enalapril_Kechagia2015_PD_dbp/Enalapril_Kechagia2015_PD_dbp_matlab.zip" download>Enalapril_Kechagia2015_PD_dbp_matlab.zip</a> <span class="pk-size">(3.2 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_enalapril/Enalapril_Kechagia2015_PD_dbp/Enalapril_Kechagia2015_PD_dbp_sbml.zip" download>Enalapril_Kechagia2015_PD_dbp_sbml.zip</a> <span class="pk-size">(2.6 kB)</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_enalapril/Enalapril_Kechagia2015_PD_dbp/Enalapril_Kechagia2015_PD_dbp_cellml.zip" download>Enalapril_Kechagia2015_PD_dbp_cellml.zip</a> <span class="pk-size">(2.5 kB)</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_enalapril/Enalapril_Kechagia2015_PD_dbp/Enalapril_Kechagia2015_PD_dbp_sbml.zip" download>Enalapril_Kechagia2015_PD_dbp_sbml.zip</a> <span class="pk-size">(2.7 kB)</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_enalapril/Enalapril_Kechagia2015_PD_dbp/Enalapril_Kechagia2015_PD_dbp_cellml.zip" download>Enalapril_Kechagia2015_PD_dbp_cellml.zip</a> <span class="pk-size">(2.6 kB)</span></td></tr>
 </tbody></table>
 <p>Each archive holds the model source, a script that simulates it against the appropriate library, and a README describing both and how to run them.</p>
 <p><b>FMI is two downloads.</b> The archive holds this record's parameters and its driver; the simulator itself is <code>PD_SigmoidEmaxSweep.fmu</code>, one compiled template shared by every model of this structure. Take the FMU once, keep it beside the script (or pass <code>--fmu PATH</code>). Running it reproduces the model-specific FMU exactly.</p>

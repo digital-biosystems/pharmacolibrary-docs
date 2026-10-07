@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N03A&quot;,&quot;href&quot;:&quot;atc/N03A.md&quot;},{&quot;label&quot;:&quot;carbamazepine&quot;,&quot;href&quot;:&quot;drugs/drug_carbamazepine/&quot;},{&quot;label&quot;:&quot;Punyawudho_2012 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Carbamazepine_Banach2015_reference&quot;,&quot;label&quot;:&quot;Banach_2015_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_carbamazepine/Carbamazepine_Banach2015_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Carbamazepine_Li2021_reference&quot;,&quot;label&quot;:&quot;Li_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_carbamazepine/Carbamazepine_Li2021_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Carbamazepine_Naik2021_reference&quot;,&quot;label&quot;:&quot;Naik_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_carbamazepine/Carbamazepine_Naik2021_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Carbamazepine_Punyawudho2012_reference&quot;,&quot;label&quot;:&quot;Punyawudho_2012_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_carbamazepine/Carbamazepine_Punyawudho2012_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Carbamazepine_Rambeck1993_reference&quot;,&quot;label&quot;:&quot;Rambeck_1993_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_carbamazepine/Carbamazepine_Rambeck1993_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Carbamazepine_Roberti2021_reference&quot;,&quot;label&quot;:&quot;Roberti_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_carbamazepine/Carbamazepine_Roberti2021_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Carbamazepine_TeixeiradaSilva2022_reference&quot;,&quot;label&quot;:&quot;Teixeira-da-Silva_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_carbamazepine/Carbamazepine_TeixeiradaSilva2022_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Carbamazepine_Yu2025_reference&quot;,&quot;label&quot;:&quot;Yu_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_carbamazepine/Carbamazepine_Yu2025_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Carbamazepine_Li2021_reference&quot;,&quot;label&quot;:&quot;Li_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_carbamazepine/Carbamazepine_Li2021_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Carbamazepine_Naik2021_reference&quot;,&quot;label&quot;:&quot;Naik_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_carbamazepine/Carbamazepine_Naik2021_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Carbamazepine_Punyawudho2012_reference&quot;,&quot;label&quot;:&quot;Punyawudho_2012_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_carbamazepine/Carbamazepine_Punyawudho2012_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Carbamazepine_Takenaka2018_reference&quot;,&quot;label&quot;:&quot;Takenaka_2018_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_carbamazepine/Carbamazepine_Takenaka2018_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Carbamazepine_TeixeiradaSilva2022_reference&quot;,&quot;label&quot;:&quot;Teixeira-da-Silva_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_carbamazepine/Carbamazepine_TeixeiradaSilva2022_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Carbamazepine_Yu2025_reference&quot;,&quot;label&quot;:&quot;Yu_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_carbamazepine/Carbamazepine_Yu2025_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Carbamazepine_Rambeck1993_reference&quot;,&quot;label&quot;:&quot;Rambeck_1993_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_carbamazepine/Carbamazepine_Rambeck1993_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # carbamazepine — `Carbamazepine_Punyawudho2012_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.714). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.714). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -25,12 +25,14 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 
 <sub>reviewed by glm-5.3-flash</sub>
 
+> ⚠️ **STALE** — review status `needs_review` (reviewed 2026-10-05 09:24:58.399330+00:00) predates the upstream re-run (2026-10-07 07:22:55.844241+00:00). Current validate status: `extracted`.
+
 ## Citation
 Punyawudho B et al., Population pharmacokinetics of carbamaz…, Therapeutic drug monitoring (2012)
   ·  DOI: [10.1097/FTD.0b013e31824d6a4e](https://doi.org/10.1097/FTD.0b013e31824d6a4e)
 
 ## Model component
-<dbs-pgx drug="carbamazepine" model-id="Carbamazepine_Punyawudho2012_reference" status="needs_review" stale="false" population="elderly patients with epilepsy" measured-compound="carbamazepine" parameterization="apparent" topology="1C"></dbs-pgx>
+<dbs-pgx drug="carbamazepine" model-id="Carbamazepine_Punyawudho2012_reference" status="extracted" stale="true" population="elderly patients with epilepsy" measured-compound="carbamazepine" parameterization="apparent" topology="1C"></dbs-pgx>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 3 extracted.
@@ -38,13 +40,12 @@ Punyawudho B et al., Population pharmacokinetics of carbamaz…, Therapeutic dru
 **Parameterization:** CL/F, V/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
 ## Parameters
-> ⚠️ This record is not accepted (current status `needs_review`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
-
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| CL/F (L/hr) | `Q27` · CL/F | 3.59 | L/hr | 9.972222222222222e-07 | [l] / [h] | not captured | exact (1.0) | T2:row4:col1, T2:row4:col3 | — | not captured |
-| V/F (L) | `Q76` · V/F | 102 | L | 0.10200000000000001 | [l] | not captured | exact (1.0) | T2:row6:col1, T2:row6:col3 | — | not captured |
-| Ka (hr−1) | `Q49` · kabs | 0.197 | hr−1 | 5.472222222222223e-05 | [1] / [h] | not captured | exact (1.0) | T2:row7:col1, T2:row7:col3 | — | not captured |
+| CL/F (L/hr) | `Q27` · CL/F | 3.58 | L/hr | 9.944444444444446e-07 | [l] / [h] | not captured | exact (1.0) | T2:row4:col1, T2:row4:col3 | — | not captured |
+| If taking PHT | `Q900` · equation variable | 1.26 | not captured | not captured | not captured | not captured | llm (0.6) | T2:row5:col1, T2:row5:col3 | — | not captured |
+| V/F (L) | `Q76` · V/F | 92.1 | L | 0.0921 | [l] | not captured | exact (1.0) | T2:row6:col1, T2:row6:col3 | — | not captured |
+| Ka (hr−1) | `Q49` · kabs | 0.19 | hr−1 | 5.277777777777778e-05 | [1] / [h] | not captured | exact (1.0) | T2:row7:col1, T2:row7:col3 | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -58,7 +59,6 @@ Punyawudho B et al., Population pharmacokinetics of carbamaz…, Therapeutic dru
 - `apparent_assumption`: F=1, Fm=1, no molar correction (parameterization=apparent)
 
 **Interpretation flags:**
-- dropped unlinked row (NIL): 'If taking PHT' — extend the ontology if this is a real PK parameter (source ['T2:row5:col1', 'T2:row5:col3'])
 - apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=carbamazepine
 - skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
 - skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
@@ -112,14 +112,14 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 | C0_has_structural_params | pass | not captured | 3 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
-| C1_half_life_beta | pass | 19.7 | 19.694 | 0.9997 | 0.25 | reported t½β |
+| C1_half_life_beta | pass | 19.7 | 17.832 | 0.9052 | 0.25 | reported t½β |
 | C5_dimension_Q27 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['T2:row4:col1', 'T2:row4:col3'] |
 | C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['T2:row7:col1', 'T2:row7:col3'] |
 | C5_dimension_Q76 | pass | [length] ** 3 | not captured | not captured | not captured | ['T2:row6:col1', 'T2:row6:col3'] |
 | C7_apparent_coherence | pass | not captured | not captured | not captured | not captured | not captured |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
-| C9_phys_window_Q27 | pass | clearance within physiological range | 3.59 L/h | not captured | not captured | ['T2:row4:col1', 'T2:row4:col3'] |
-| C9_phys_window_Q76 | pass | volume within physiological range | 102 L | not captured | not captured | ['T2:row6:col1', 'T2:row6:col3'] |
+| C9_phys_window_Q27 | pass | clearance within physiological range | 3.58 L/h | not captured | not captured | ['T2:row4:col1', 'T2:row4:col3'] |
+| C9_phys_window_Q76 | pass | volume within physiological range | 92.1 L | not captured | not captured | ['T2:row6:col1', 'T2:row6:col3'] |
 
 **Reviewer per-scenario checks:**
 
@@ -153,7 +153,7 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_carbamazepine/Carbamazepine_Punyawudho2012_reference/Carbamazepine_Punyawudho2012_reference_modelica.zip" download>Carbamazepine_Punyawudho2012_reference_modelica.zip</a> <span class="pk-size">(4.3 kB)</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_carbamazepine/Carbamazepine_Punyawudho2012_reference/Carbamazepine_Punyawudho2012_reference_modelica.zip" download>Carbamazepine_Punyawudho2012_reference_modelica.zip</a> <span class="pk-size">(4.1 kB)</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_carbamazepine/Carbamazepine_Punyawudho2012_reference/Carbamazepine_Punyawudho2012_reference_fmi.zip" download>Carbamazepine_Punyawudho2012_reference_fmi.zip</a> <span class="pk-size">(4.3 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_carbamazepine/Carbamazepine_Punyawudho2012_reference/Carbamazepine_Punyawudho2012_reference_matlab.zip" download>Carbamazepine_Punyawudho2012_reference_matlab.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_carbamazepine/Carbamazepine_Punyawudho2012_reference/Carbamazepine_Punyawudho2012_reference_matlab_simbio.zip" download>Carbamazepine_Punyawudho2012_reference_matlab_simbio.zip</a> <span class="pk-size">(2.8 kB)</span></td></tr>
@@ -166,7 +166,7 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-**Administration: oral** — 1000 mg, single dose, first-order absorption (ka 0.197 /h, F 1). _The paper's dose was not captured; the default is the WHO ATC DDD 1000 mg oral (N03AF01) (defined daily dose)._
+**Administration: oral** — 200 mg, single dose, first-order absorption (ka 0.19 /h, F 1). Doses in the paper: 200, 600 mg.
 
 <dbs-fmusim paramsurl="drugs/drug_carbamazepine/Carbamazepine_Punyawudho2012_reference/Carbamazepine_Punyawudho2012_reference_params.json" metaurl="assets/fmu/PK_1C_enteral.vr.json" wasmurl="assets/fmu/PK_1C_enteral.js" controlsurl="drugs/drug_carbamazepine/Carbamazepine_Punyawudho2012_reference/Carbamazepine_Punyawudho2012_reference_sim_controls.json"></dbs-fmusim>
 
@@ -175,4 +175,4 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-03 20:49 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 07:22 UTC</sub>

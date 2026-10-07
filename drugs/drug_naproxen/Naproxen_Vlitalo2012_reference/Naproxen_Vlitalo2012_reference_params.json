@@ -1,0 +1,32 @@
+{
+ "dose_source": "WHO ATC DDD 500 mg oral (M01AE02)",
+ "model_id": "Naproxen_Vlitalo2012_reference",
+ "molar_masses": {
+  "central.C": 0.2302592
+ },
+ "note": "Values for the shared PK_1C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "parameters": {
+  "Cl": 1.7222222222222222e-07,
+  "F": 1.0,
+  "MM": 0.2302592,
+  "Tlag": 0.0,
+  "VdPerKg": 0.00017857142857142857,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 0.0005,
+  "ka": 6.583333333333333e-05,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 30411.46160599871
+ },
+ "reference_peaks": {
+  "central.C": 0.026440510554127803
+ },
+ "stop_time": 345600.0,
+ "template": "PK_1C_enteral",
+ "template_fmu": "PK_1C_enteral.fmu"
+}

@@ -1,8 +1,8 @@
-<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;D11A&quot;,&quot;href&quot;:&quot;atc/D11A.md&quot;},{&quot;label&quot;:&quot;diclofenac&quot;,&quot;href&quot;:&quot;drugs/drug_diclofenac/&quot;},{&quot;label&quot;:&quot;Hannam_2014 \u00b7 PD visual analogue score&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Diclofenac_Yuan2017_reference&quot;,&quot;label&quot;:&quot;Yuan_2017_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_diclofenac/Diclofenac_Yuan2017_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Hannam_2014_VAS&quot;,&quot;label&quot;:&quot;Hannam_2014 \u00b7 VAS&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_diclofenac/pd_Hannam_2014_VAS.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;D11A&quot;,&quot;href&quot;:&quot;atc/D11A.md&quot;},{&quot;label&quot;:&quot;diclofenac&quot;,&quot;href&quot;:&quot;drugs/drug_diclofenac/&quot;},{&quot;label&quot;:&quot;Hannam_2014 \u00b7 PD pain&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Diclofenac_Standing2008_reference&quot;,&quot;label&quot;:&quot;Standing_2008_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_diclofenac/Diclofenac_Standing2008_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Diclofenac_Yuan2017_reference&quot;,&quot;label&quot;:&quot;Yuan_2017_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_diclofenac/Diclofenac_Yuan2017_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Hannam_2014_VAS&quot;,&quot;label&quot;:&quot;Hannam_2014 \u00b7 VAS&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_diclofenac/pd_Hannam_2014_VAS.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# visual analogue score — PD  <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by openai:gpt-6-luna (not confirmed, agreement 0.625). The first reading is what the record holds.">cross-check: disputed</span>
+# pain — PD  <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by openai:gpt-6-luna (not confirmed, agreement 0.625). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="pk-legend"><summary>What the PGx badges mean — evidence, and whether a model runs</summary><table><tbody><tr><td><span class="pk-badge pk-badge--green">quantitative</span></td><td>the paper gives the effect of each phenotype (or genotype) on a named model parameter — a θ per category.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">qualitative</span></td><td>the paper links the gene to the drug but states no effect size on a model parameter, so it changes no model.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">guideline estimate</span></td><td>the effect comes from a CPIC / DPWG dosing guideline, not from this paper's numbers.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">safety allele</span></td><td>a risk allele for an adverse reaction (an HLA type, G6PD deficiency …): it changes no PK/PD parameter.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>the extraction is incomplete or inconsistent.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted.</td></tr><tr><td><span class="pk-badge pk-badge--green">▶ simulatable</span></td><td>the paper's popPK model runs per phenotype in the browser (Simulation tab); its PGx Modelica model is under Models.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">model only</span></td><td>a PGx Modelica model exists but has no in-browser simulator.</td></tr></tbody></table></details>
 
@@ -14,7 +14,7 @@
 
 ## What this record describes
 
-**As extracted:** Diclofenac (concentrations from the PK model of Evans_1993) drives visual analogue score: direct Emax (saturable) effect.
+**As extracted:** Diclofenac (concentrations from the PK model of Evans_1993) drives pain (in VAS 0-10): direct Emax (saturable) effect.
 
 **Model:** A simulatable model was generated — see the **Models** and **Simulation** tabs.
 
@@ -22,7 +22,7 @@
 - **model family:** `emax`
 - **driver:** `cited_pk`
 - **tier:** population
-- **effect:** inhibition/additive
+- **effect:** inhibition/unknown
 
 ## Citation
 Hannam JA et al., Postoperative analgesia using diclofena…, Paediatric anaesthesia (2014)
@@ -33,7 +33,8 @@ Hannam JA et al., Postoperative analgesia using diclofena…, Paediatric anaesth
 |---|---|---|---|---|---|---|---|
 | PD (effect) | EMAX | `Q323` · not captured | 4.9 | not captured | not captured | direction (not captured) | Hannam_2014:pdv3 |
 | PD (effect) | C50 | `Q321` · not captured | 1.23 | mg·l(-1) | not captured | llm (not captured) | Hannam_2014:pdv3 |
-| PD (effect) | placebo_Emax | `Q341` · not captured | 6.8 | not captured | not captured | llm (not captured) | Hannam_2014:pdv3 |
+| — | equilibration half-time | `Q100` · not captured | 0.23 | h | not captured | nil (not captured) | Hannam_2014:pdv3 |
+| PD (effect) | peak placebo effect | `Q341` · not captured | 6.8 | not captured | not captured | boundary (not captured) | Hannam_2014:pdv3 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -48,7 +49,7 @@ Hannam JA et al., Postoperative analgesia using diclofena…, Paediatric anaesth
 | parameter | value (paper units) | SI |
 |---|---|---|
 | E0 | 0 | — |
-| Emax | -4.9 | — |
+| Emax | -4.9 VAS 0-10 | — |
 | EC50 | 1.23 mg·l(-1) | 0.00123 kg/m3 |
 | gamma | 1 | — |
 

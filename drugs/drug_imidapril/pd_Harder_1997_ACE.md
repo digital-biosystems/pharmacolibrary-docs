@@ -1,7 +1,7 @@
-<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C09A&quot;,&quot;href&quot;:&quot;atc/C09A.md&quot;},{&quot;label&quot;:&quot;imidapril&quot;,&quot;href&quot;:&quot;drugs/drug_imidapril/&quot;},{&quot;label&quot;:&quot;Harder_1997 \u00b7 PD plasma ACE activity&quot;}]"></div>
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C09A&quot;,&quot;href&quot;:&quot;atc/C09A.md&quot;},{&quot;label&quot;:&quot;imidapril&quot;,&quot;href&quot;:&quot;drugs/drug_imidapril/&quot;},{&quot;label&quot;:&quot;Harder_1997 \u00b7 PD ACE-activity&quot;}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# plasma ACE activity — PD  <span class="pk-badge pk-badge--red">rejected</span>
+# ACE-activity — PD  <span class="pk-badge pk-badge--green">accepted (caveats)</span>
 
 <details class="pk-legend"><summary>What the PGx badges mean — evidence, and whether a model runs</summary><table><tbody><tr><td><span class="pk-badge pk-badge--green">quantitative</span></td><td>the paper gives the effect of each phenotype (or genotype) on a named model parameter — a θ per category.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">qualitative</span></td><td>the paper links the gene to the drug but states no effect size on a model parameter, so it changes no model.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">guideline estimate</span></td><td>the effect comes from a CPIC / DPWG dosing guideline, not from this paper's numbers.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">safety allele</span></td><td>a risk allele for an adverse reaction (an HLA type, G6PD deficiency …): it changes no PK/PD parameter.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>the extraction is incomplete or inconsistent.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted.</td></tr><tr><td><span class="pk-badge pk-badge--green">▶ simulatable</span></td><td>the paper's popPK model runs per phenotype in the browser (Simulation tab); its PGx Modelica model is under Models.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">model only</span></td><td>a PGx Modelica model exists but has no in-browser simulator.</td></tr></tbody></table></details>
 
@@ -13,7 +13,7 @@
 
 ## What this record describes
 
-**As extracted:** Imidaprilat drives plasma ACE activity (in %): direct Emax (saturable) effect.
+**As extracted:** Imidaprilat drives ACE-activity (in u.l -1): direct Emax (saturable) effect.
 
 **Model:** No model was generated from this record.
 
@@ -21,7 +21,7 @@
 - **model family:** `emax`
 - **driver:** `not_resolved`
 - **tier:** descriptive
-- **effect:** inhibition/unknown
+- **effect:** inhibition/additive
 
 ## Citation
 Harder S et al., Pharmacokinetic and pharmacodynamic int…, British journal of clinical… (1997)
@@ -30,8 +30,9 @@ Harder S et al., Pharmacokinetic and pharmacodynamic int…, British journal of 
 ## Parameters
 | role | label (paper) | Q-code · name | value | unit | value_si | link | source |
 |---|---|---|---|---|---|---|---|
-| PD (effect) | Maximal ACE-inhibition (% BL) — I + P | `Q323` · not captured | 79 | % BL | not captured | llm (not captured) | tab_2:row2:col2 |
-| PD (effect) | Maximal ACE-inhibition (% BL) — I + D | `Q323` · not captured | 67 | % BL | not captured | llm (not captured) | tab_2:row2:col3 |
+| PD (effect) | E0 | `Q324` · not captured | 63 | u.l -1 | not captured | llm (not captured) | Harder_1997:pdv3 |
+| PD (effect) | E max | `Q323` · not captured | 44 | u.l -1 | not captured | llm (not captured) | Harder_1997:pdv3 |
+| PD (effect) | Ec 50 | `Q322` · not captured | 2.7 | ng ml -1 | not captured | llm (not captured) | Harder_1997:pdv3 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -41,9 +42,19 @@ Harder S et al., Pharmacokinetic and pharmacodynamic int…, British journal of 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
-## Models
+## Downloadable models
 
-<p>No downloads: this record is <b>rejected</b>, so it is not published as a model. Any archives generated for it before the verdict have been removed — a download outlives the page that explains it.</p>
+<div class="pk-models-grid"><div class="pk-models-table">
+<table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
+</tbody></table>
+<p>No bundles have been generated for this record yet. When the engineer emits them they appear here automatically — this page reports what is on disk and generates nothing itself.</p>
+</div></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 

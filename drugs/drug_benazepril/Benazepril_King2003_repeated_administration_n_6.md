@@ -4,7 +4,7 @@
 
 # benazepril — `Benazepril_King2003_repeated_administration_n_6`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.15). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (cat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">cat</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.786). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (cat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">cat</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -22,9 +22,11 @@
 
 The same half-life-versus-rate-constant confusion affects absorption, where kabs is labelled T 1/2 K a with value 0.62 h although it is meant as an absorption rate constant. The bioavailability parameter Fab (9.4 %) carries the garbled unit 'n ¼ 6', which could not be converted to SI, so the parameter reached the record without an SI value. The AUC∞ label embeds the figures 152 ± 85 while the extracted value is 1139 ng·h/mL, and TMDD-type parameters (Bmax 74 ng/mL, KD 0.0019 ng/mL) sit in a general linear structure; a second reader additionally extracted values for several parameters that the first reader left unset. Extracted — benazeprilat: V1/F 1.95 L/kg, kel 0.0001 h, Bmax 74 ng/mL, Cmax 17.2 nmol/L, KD 0.0019 ng/mL, Fab 9.4 n ¼ 6, kabs 0.62 h, AUC∞ 1.14e+03 ng·h/mL.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the links between molecules: this record has benazepril → benazeprilat (hydrolysis), the second reading none; it also differs on 16 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of t 1/2 k a: this record has none, the second reading 0.62; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by glm-5.3-flash</sub>
+
+> ⚠️ **STALE** — review status `rejected` (reviewed 2026-10-05 09:24:11.767547+00:00) predates the upstream re-run (2026-10-07 05:02:33.667430+00:00). Current validate status: `rejected`.
 
 > **Dose compound ≠ measured compound:** dosed `benazepril`, measured `benazeprilat`.
 
@@ -33,26 +35,26 @@ King JN et al., Pharmacokinetic/pharmacodynamic modelli…, Journal of veterinar
   ·  DOI: [10.1046/j.1365-2885.2003.00468.x](https://doi.org/10.1046/j.1365-2885.2003.00468.x)
 
 ## Model component
-<dbs-pgx drug="benazepril" model-id="Benazepril_King2003_repeated_administration_n_6" status="rejected" stale="false" population="healthy cats" measured-compound="benazeprilat" parameterization="apparent" topology="general_linear"></dbs-pgx>
+<dbs-pgx drug="benazepril" model-id="Benazepril_King2003_repeated_administration_n_6" status="rejected" stale="true" population="cats" measured-compound="benazeprilat" parameterization="apparent" topology="1C"></dbs-pgx>
 
-**Model structure:** general linear; no model was built for this record.  
+**Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 8 extracted.
 
-**Parameterization:** V1/F — apparent, F unknown (apparent — bioavailability not identifiable).
+**Parameterization:** V/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
 ## Parameters
 > ⚠️ This record is not accepted (current status `rejected`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| V c /F (L/kg) | `Q290` · V1/F | 1.95 | L/kg | 0.13649999999999998 | [l] / [kg] | not captured | exact (1.0) | tab_1:row4:col2, tab_1:row4:col4 | — | not captured |
-| T 1/2 K 10 (h) | `Q47` · kel | 0.0001 | h | not captured | [h] | not captured | exact (1.0) | tab_1:row6:col5, King_2003_table_1:row6:col4 | — | not captured |
-| B max (ng/mL) | `Q332` · Bmax | 74 | ng/mL | not captured | [ng] / [ml] | not captured | space_fold (0.95) | tab_1:row7:col2, tab_1:row7:col4, tab_1:row7:col5, tab_1:row7:col6, tab_1:row7:col8, King_2003_table_1:row8:col4 | — | not captured |
-| P max (nmol/L) | `Q32` · Cmax | 17.2 | nmol/L | not captured | [nM] / [l] | not captured | llm (0.6) | tab_1:row9:col2, tab_1:row9:col4, tab_1:row9:col5, tab_1:row9:col6, tab_1:row9:col8, King_2003_table_1:row10:col4 | — | not captured |
-| K d (ng/mL) | `Q331` · KD | 0.0019 | ng/mL | not captured | [ng] / [ml] | not captured | space_fold (0.95) | tab_1:row10:col5, King_2003_table_1:row11:col4 | — | not captured |
-| F circ (%) | `Q40` · Fab | 9.4 | n ¼ 6 | not captured | [n¼6] | not captured | llm (0.6) | tab_1:row12:col2, tab_1:row12:col4, tab_1:row12:col5, tab_1:row12:col6, tab_1:row12:col8, King_2003_table_1:row13:col4 | — | not captured |
+| V c /F (L/kg) | `Q76` · V/F | 1.95 | L/kg | 0.13649999999999998 | [l] / [kg] | not captured | exact (1.0) | tab_1:row4:col2, tab_1:row4:col4 | — | not captured |
+| T 1/2 K 10 (h) | `Q47` · kel | 0.0001 | h | not captured | [h] | not captured | exact (1.0) | tab_1:row6:col5 | — | not captured |
+| B max (ng/mL) | `Q332` · Bmax | 74 | ng/mL | not captured | [ng] / [ml] | not captured | space_fold (0.95) | tab_1:row7:col2, tab_1:row7:col4, tab_1:row7:col5, tab_1:row7:col6, tab_1:row7:col8 | — | not captured |
+| P max (nmol/L) | `Q32` · Cmax | 17.2 | nmol/L | not captured | [nM] / [l] | not captured | llm (0.6) | tab_1:row9:col2, tab_1:row9:col4, tab_1:row9:col5, tab_1:row9:col6, tab_1:row9:col8 | — | not captured |
+| K d (ng/mL) | `Q331` · KD | 0.0019 | ng/mL | not captured | [ng] / [ml] | not captured | space_fold (0.95) | tab_1:row10:col5 | — | not captured |
+| F circ (%) | `Q40` · Fab | 9.4 | n ¼ 6 | not captured | [n¼6] | not captured | llm (0.6) | tab_1:row12:col2, tab_1:row12:col4, tab_1:row12:col5, tab_1:row12:col6, tab_1:row12:col8 | — | not captured |
 | T 1/2 K a (h) | `Q49` · kabs | 0.62 | h | not captured | [h] | not captured | exact (1.0) | tab_1:row13:col5 | — | not captured |
-| AUC free(0-inf) (ng h/mL) 152 ± 85 | `Q17` · AUC∞ | 1139 | ng·h/mL | not captured | ng·h/mL | not captured | llm_corrected (0.6) | tab_1:row14:col2, tab_1:row14:col4, tab_1:row14:col5 | — | not captured |
+| AUC free(0-inf) (ng h/mL) 152 ± 85 | `Q17` · AUC∞ | 1139 | n ¼ 6 | not captured | [n¼6] | not captured | llm_corrected (0.6) | tab_1:row14:col2, tab_1:row14:col4, tab_1:row14:col5 | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -72,18 +74,16 @@ King JN et al., Pharmacokinetic/pharmacodynamic modelli…, Journal of veterinar
 - unit_dimension_mismatch: 'T 1/2 K a (h)' → Q49 (unit '[time]' vs ontology '1 / [time]') — route to review
 - unit_dimension_unknown: 'n ¼ 6' (AUC∞)
 - dropped duplicate Q17 ('AUC tot(0-inf) (ng h/mL) 409 ± 128', value '1351') — already have one for this compound
-- NIL: refused to back-fill base 'NIL' from footnote/prose loose number 0.25 (source ['tab_1:footnote', 'tab_1:footnote', 'tab_1:footnote']); the table cell was unparseable — needs review
-- NIL: refused to back-fill base 'NIL' from footnote/prose loose number 0.54 (source ['tab_1:footnote', 'tab_1:footnote', 'tab_1:footnote']); the table cell was unparseable — needs review
-- implicit units: 'AUC free(0-inf) (ng h/mL) 152 ± 85' → ng·h/mL (from the paper text: "The parameter listing itself gives the unit: 'AUC free(0-inf) (ng h/mL)'. This is consistent with the paper's concentrat")
+- implicit units: 'AUC free(0-inf) (ng h/mL) 152 ± 85' — the LLM proposed 'ng h/mL', whose dimension does not fit Q17; left unset
 - apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=benazeprilat
 - held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
-- topology: 1 first-order transfer(s) across 2 compounds → general_linear
-- template fit: PK_3M_9C — formed from central; parent 0, metabolites [1]
+- template fit: none — only the metabolite is modelled — no parent compartment
+- 1C volume normalization: Q290→Q76 (single-compartment model has no central/peripheral split; 'V c /F (L/kg)' is the general volume)
 - status held at route_to_review — not promoted
-- population split: 'repeated administration (n ¼ 6)' subgroup of King_2003 (paper reports 4 populations: i.v. benazeprilat, oral benazepril.hcl, repeated administration (n ¼ 6), single administration (n ¼ 5))
-- row roles (LLM): model_class=compartmental; 25/25 row label(s) assigned, 17 linked by role; re-tagged parent→benazeprilat ×59, benazepril→benazeprilat ×29, benazepril→parent ×1
+- population split: 'repeated administration (n ¼ 6)' subgroup of King_2003 (paper reports 2 populations: repeated administration (n ¼ 6), single administration (n ¼ 5))
+- row roles (LLM): model_class=compartmental; 13/13 row label(s) assigned, 7 linked by role
 - skipped review gap-fill of CL: primary's parameterization (rate-constant / ka-only) does not use it
-- skipped review gap-fill of V2: primary is GENERAL_LINEAR (peripheral family needs ≥2C)
+- skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
 - skipped review gap-fill of Q: primary's parameterization (rate-constant / ka-only) does not use it
 - skipped review gap-fill of TLAG: primary's parameterization (rate-constant / ka-only) does not use it
 
@@ -107,15 +107,7 @@ King JN et al., Pharmacokinetic/pharmacodynamic modelli…, Journal of veterinar
 - unparsed cell tab_1:row13:col1 = '1.65 ± 0.52 2.17 ± 0.99'
 - unparsed cell tab_1:row13:col2 = '2.81 ± 1.65 1.90 ± 1.66 2.53 ± 1.65'
 - unparsed cell tab_1:row13:col4 = '0.90 (0.57, 1.4)'
-- unparsed cell King_2003_table_1:row6:col3 = '3.03 (1.4, 6.7)'
-- unparsed cell King_2003_table_1:row8:col3 = '1.06 (0.58, 1.9)'
-- unparsed cell King_2003_table_1:row9:col3 = '1.05 (0.58, 0.93)'
-- unparsed cell King_2003_table_1:row10:col3 = '1.10 (0.56, 2.2)'
-- unparsed cell King_2003_table_1:row11:col3 = '1.73 (0.56, 5.4)'
-- unparsed cell King_2003_table_1:row12:col3 = '1.72 (0.56, 5.3)'
-- unparsed cell King_2003_table_1:row13:col3 = '1.05 (0.91, 1.2)'
-- companion parameter table 1 transcribed (37 record(s))
-- LLM selected parameter table(s) 1, 2
+- LLM selected parameter table(s) 2
 
 ## Validation
 
@@ -124,29 +116,15 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.15 (3/20 fields) | 17 |
+| `gpt-oss:120b` | not confirmed | 0.786 (11/14 fields) | 3 |
 
-<details><summary>17 field(s) a reader read differently</summary>
+<details><summary>3 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `model.links` | [['benazepril', 'benazeprilat', 'hydrolysis']] | [] | mismatch |
-| `gpt-oss:120b` | `parameters[auc free(0-inf) (ng h/ml) 152 ± 85]` | not captured | 1139 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[auc free(0-inf) (ng h/ml) 152 ± 85]` | 1139 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[b max]` | not captured | 74 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[b max]` | 74 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[f circ]` | not captured | 9.4 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[f circ]` | 9.4 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[k d]` | not captured | 0.0019 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[k d]` | 0.0019 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[p max]` | not captured | 17.2 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[p max]` | 17.2 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[t 1/2 k 10]` | not captured | 0.0001 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[t 1/2 k 10]` | 0.0001 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[t 1/2 k 10].parameter_id` | Q47 | Q60 | mismatch |
 | `gpt-oss:120b` | `parameters[t 1/2 k a]` | not captured | 0.62 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[t 1/2 k a]` | 0.62 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[v c /f]` | not captured | 1.95 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[v c /f]` | 1.95 | not captured | only_one_extracted |
 
 </details>
 
@@ -163,15 +141,15 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 | C0_has_structural_params | pass | not captured | 8 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
-| C5_dimension_Q17 | pass | [mass] * [time] / [length] ** 3 | not captured | not captured | not captured | ['tab_1:row14:col2', 'tab_1:row14:col4', 'tab_1:row14:col5'] |
-| C5_dimension_Q290 | pass | [length] ** 3 | not captured | not captured | not captured | ['tab_1:row4:col2', 'tab_1:row4:col4'] |
-| C5_dimension_Q32 | fail | [substance] / [length] ** 3 | nmol/L | not captured | not captured | ['tab_1:row9:col2', 'tab_1:row9:col4', 'tab_1:row9:col5', 'tab_1:row9:col6', 'tab_1:row9:col8', 'King_2003_table_1:row10:col4'] |
-| C5_dimension_Q331 | pass | [mass] / [length] ** 3 | not captured | not captured | not captured | ['tab_1:row10:col5', 'King_2003_table_1:row11:col4'] |
-| C5_dimension_Q47 | fail | [time] | h | not captured | not captured | ['tab_1:row6:col5', 'King_2003_table_1:row6:col4'] |
+| C5_dimension_Q32 | fail | [substance] / [length] ** 3 | nmol/L | not captured | not captured | ['tab_1:row9:col2', 'tab_1:row9:col4', 'tab_1:row9:col5', 'tab_1:row9:col6', 'tab_1:row9:col8'] |
+| C5_dimension_Q331 | pass | [mass] / [length] ** 3 | not captured | not captured | not captured | ['tab_1:row10:col5'] |
+| C5_dimension_Q47 | fail | [time] | h | not captured | not captured | ['tab_1:row6:col5'] |
 | C5_dimension_Q49 | fail | [time] | h | not captured | not captured | ['tab_1:row13:col5'] |
+| C5_dimension_Q76 | pass | [length] ** 3 | not captured | not captured | not captured | ['tab_1:row4:col2', 'tab_1:row4:col4'] |
+| C5_unit_missing_Q17 | fail | [mass] * [time] / [length] ** 3 | n ¼ 6 | not captured | not captured | ['tab_1:row14:col2', 'tab_1:row14:col4', 'tab_1:row14:col5'] |
 | C7_apparent_coherence | pass | not captured | not captured | not captured | not captured | not captured |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
-| C9_phys_window_Q290 | pass | volume within physiological range | 136 L | not captured | not captured | ['tab_1:row4:col2', 'tab_1:row4:col4'] |
+| C9_phys_window_Q76 | pass | volume within physiological range | 136 L | not captured | not captured | ['tab_1:row4:col2', 'tab_1:row4:col4'] |
 
 <details class="legend">
 <summary>Check legend — what each column means</summary>
@@ -196,4 +174,4 @@ _No web simulator for this record: its structure has no shared WebAssembly templ
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-09-30 22:19 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 05:02 UTC</sub>

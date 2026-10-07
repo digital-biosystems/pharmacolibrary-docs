@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N03A&quot;,&quot;href&quot;:&quot;atc/N03A.md&quot;},{&quot;label&quot;:&quot;cannabidiol&quot;,&quot;href&quot;:&quot;drugs/drug_cannabidiol/&quot;},{&quot;label&quot;:&quot;Davis_2021 \u00b7 PGx SLC15A1&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Cannabidiol_Nachnani2024_reference&quot;,&quot;label&quot;:&quot;Nachnani_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cannabidiol/Cannabidiol_Nachnani2024_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Cannabidiol_Shaik2026_reference&quot;,&quot;label&quot;:&quot;Shaik_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cannabidiol/Cannabidiol_Shaik2026_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Cannabidiol_Snchez2023_reference&quot;,&quot;label&quot;:&quot;S\u00e1nchez_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cannabidiol/Cannabidiol_Snchez2023_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Cannabidiol_Eichler2023_population_value&quot;,&quot;label&quot;:&quot;Eichler_2023_population_value&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cannabidiol/Cannabidiol_Eichler2023_population_value.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Cannabidiol_Eichler2023_population_value&quot;,&quot;label&quot;:&quot;Eichler_2023_population_value&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cannabidiol/Cannabidiol_Eichler2023_population_value.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Cannabidiol_LaporteAmargos2026_reference&quot;,&quot;label&quot;:&quot;Laporte-Amargos_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cannabidiol/Cannabidiol_LaporteAmargos2026_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Cannabidiol_McGilveray2005_reference&quot;,&quot;label&quot;:&quot;McGilveray_2005_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cannabidiol/Cannabidiol_McGilveray2005_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Cannabidiol_Shaik2026_reference&quot;,&quot;label&quot;:&quot;Shaik_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cannabidiol/Cannabidiol_Shaik2026_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Cannabidiol_Snchez2023_reference&quot;,&quot;label&quot;:&quot;S\u00e1nchez_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cannabidiol/Cannabidiol_Snchez2023_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # SLC15A1 — PGx  <span class="pk-badge pk-badge--neutral" title="the paper links the gene to the drug but states no effect size on a model parameter, so it changes no model.">qualitative</span>
@@ -13,8 +13,8 @@
 - **what it is:** qualitative — the paper links the gene to the drug but states no effect size on a model parameter, so it changes no model.
 - **source:** this paper, `Davis_2021` — [doi](https://doi.org/10.1002/cpt.2408)
 - **gene:** SLC15A1
-- **mechanism:** target — the gene's product is what the drug acts on
-- **applies to:** pharmacodynamics (response)
+- **mechanism:** transport — the gene's transporter moves the drug
+- **applies to:** pharmacokinetics (exposure)
 - **parameter it changes:** NIL (`Q100`)
 - **effect:** not quantified
 - **phenotype groups:** the paper's genotype groups were not mapped to standard phenotypes
@@ -22,7 +22,6 @@
 ### Notes from the extraction
 
 - association-only evidence (no extracted θ) — not a covariate
-- relevance flagged quantitative but no per-genotype θ table reached
 - genotype→phenotype map unresolved (no paper/CPIC/genotype mapping)
 - reference category (θ=0) not captured — must not be inferred
 

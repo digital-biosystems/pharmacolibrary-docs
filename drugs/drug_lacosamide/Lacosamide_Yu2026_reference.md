@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N03A&quot;,&quot;href&quot;:&quot;atc/N03A.md&quot;},{&quot;label&quot;:&quot;lacosamide&quot;,&quot;href&quot;:&quot;drugs/drug_lacosamide/&quot;},{&quot;label&quot;:&quot;Yu_2026 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Lacosamide_Yu2026_reference&quot;,&quot;label&quot;:&quot;Yu_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_lacosamide/Lacosamide_Yu2026_reference.md&quot;,&quot;status&quot;:&quot;accepted (caveats)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Lacosamide_Li2025_boostrap&quot;,&quot;label&quot;:&quot;Li_2025_boostrap&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_lacosamide/Lacosamide_Li2025_boostrap.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Lacosamide_Li2025_final_models&quot;,&quot;label&quot;:&quot;Li_2025_final_models&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_lacosamide/Lacosamide_Li2025_final_models.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Lacosamide_Li2025_boostrap&quot;,&quot;label&quot;:&quot;Li_2025_boostrap&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_lacosamide/Lacosamide_Li2025_boostrap.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Lacosamide_Li2025_final_models&quot;,&quot;label&quot;:&quot;Li_2025_final_models&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_lacosamide/Lacosamide_Li2025_final_models.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Lacosamide_Wang2024_reference&quot;,&quot;label&quot;:&quot;Wang_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_lacosamide/Lacosamide_Wang2024_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Lacosamide_Wu2026_reference&quot;,&quot;label&quot;:&quot;Wu_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_lacosamide/Lacosamide_Wu2026_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Lacosamide_Yu2026_reference&quot;,&quot;label&quot;:&quot;Yu_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_lacosamide/Lacosamide_Yu2026_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # lacosamide — `Lacosamide_Yu2026_reference`
 
-> ## <span class="pk-badge pk-badge--green" title="covariates_not_exercised: the record defines covariate effects (weight on clearance, renal function …) but the engineer simulated only the reference individual, so those scenarios were never run. The base model still reproduces the paper; what is missing is the covariate curves.">accepted (caveats)</span>
+> ## <span class="pk-badge pk-badge--green" title="covariates_not_exercised: the record defines covariate effects (weight on clearance, renal function …) but the engineer simulated only the reference individual, so those scenarios were never run. The base model still reproduces the paper; what is missing is the covariate curves.">extracted</span> <span class="pk-badge pk-badge--stale">stale</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -25,12 +25,14 @@ The base model was simulated, not the covariate effects the record defines.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
+> ⚠️ **STALE** — review status `accepted_with_caveats` (reviewed 2026-09-28 14:38:27.035553+00:00) predates the upstream re-run (2026-10-07 06:56:43.621803+00:00). Current validate status: `extracted`.
+
 ## Citation
 Yu L et al., Development and validation of a populat…, BMC pharmacology & toxicolo… (2026)
   ·  DOI: [10.1186/s40360-026-01114-2](https://doi.org/10.1186/s40360-026-01114-2)
 
 ## Model component
-<dbs-pgx drug="lacosamide" model-id="Lacosamide_Yu2026_reference" status="accepted_with_caveats" stale="false" population="adult patients with epilepsy" measured-compound="lacosamide" parameterization="apparent" topology="1C"></dbs-pgx>
+<dbs-pgx drug="lacosamide" model-id="Lacosamide_Yu2026_reference" status="extracted" stale="true" population="adult patients with epilepsy" measured-compound="lacosamide" parameterization="apparent" topology="1C"></dbs-pgx>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 3 extracted, plus 2 covariate effects.
@@ -58,10 +60,11 @@ Yu L et al., Development and validation of a populat…, BMC pharmacology & toxi
 - `apparent_assumption`: F=1, Fm=1, no molar correction (parameterization=apparent)
 
 **Interpretation flags:**
+- table section iiv: 'ω CL' routed out of structural estimates ('Interindividual variability')
+- table section residual_error: 'σ (proportional)' routed out of structural estimates ('Residual variability')
 - dropped unlinked row (NIL): 'CBZ on CL/F' — extend the ontology if this is a real PK parameter (source ['Tab2:row5:col1', 'Tab2:row5:col2', 'Tab2:row5:col3', 'Tab2:row5:col4'])
 - covariate level 'SEX on CL/F' → Q900:sex_on_cl_f = 0.875 (linear_fractional on Q27)
 - covariate level 'CRCL on CL/F' → Q900:crcl_on_cl_f = 0.311 (linear_fractional on Q27)
-- dropped unlinked row (NIL): 'ω CL' — extend the ontology if this is a real PK parameter (source ['Tab2:row9:col1', 'Tab2:row9:col2', 'Tab2:row9:col3', 'Tab2:row9:col5'])
 - apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=lacosamide
 - skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
 - skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
@@ -69,6 +72,7 @@ Yu L et al., Development and validation of a populat…, BMC pharmacology & toxi
 
 **Extraction notes:**
 - LLM selected parameter table(s) 2
+- dropped sensitivity-analysis table(s) 3 from the LLM selection — perturbations of a model, not a model
 
 ## Validation
 
@@ -119,8 +123,8 @@ Yu L et al., Development and validation of a populat…, BMC pharmacology & toxi
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_lacosamide/Lacosamide_Yu2026_reference/Lacosamide_Yu2026_reference_modelica.zip" download>Lacosamide_Yu2026_reference_modelica.zip</a> <span class="pk-size">(4.1 kB)</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_lacosamide/Lacosamide_Yu2026_reference/Lacosamide_Yu2026_reference_fmi.zip" download>Lacosamide_Yu2026_reference_fmi.zip</a> <span class="pk-size">(4.1 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_lacosamide/Lacosamide_Yu2026_reference/Lacosamide_Yu2026_reference_modelica.zip" download>Lacosamide_Yu2026_reference_modelica.zip</a> <span class="pk-size">(4.5 kB)</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_lacosamide/Lacosamide_Yu2026_reference/Lacosamide_Yu2026_reference_fmi.zip" download>Lacosamide_Yu2026_reference_fmi.zip</a> <span class="pk-size">(4.2 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_lacosamide/Lacosamide_Yu2026_reference/Lacosamide_Yu2026_reference_matlab.zip" download>Lacosamide_Yu2026_reference_matlab.zip</a> <span class="pk-size">(3.3 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_lacosamide/Lacosamide_Yu2026_reference/Lacosamide_Yu2026_reference_matlab_simbio.zip" download>Lacosamide_Yu2026_reference_matlab_simbio.zip</a> <span class="pk-size">(2.8 kB)</span></td></tr>
 <tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_lacosamide/Lacosamide_Yu2026_reference/Lacosamide_Yu2026_reference_sbml.zip" download>Lacosamide_Yu2026_reference_sbml.zip</a> <span class="pk-size">(2.6 kB)</span></td></tr>
@@ -141,4 +145,4 @@ Yu L et al., Development and validation of a populat…, BMC pharmacology & toxi
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-08-30 10:55 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 06:56 UTC</sub>

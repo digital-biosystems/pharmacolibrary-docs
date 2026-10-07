@@ -1,0 +1,36 @@
+{
+ "dose_source": "paper",
+ "model_id": "PotassiumSalicylate_Kotschwar2009_period_2",
+ "molar_masses": {
+  "central.C": 0.17621199999999998
+ },
+ "note": "Values for the shared PK_1C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "paper_doses_kind": "discrete",
+ "paper_doses_mg": [
+  3500.0
+ ],
+ "parameters": {
+  "Cl": 5.016666666666666e-06,
+  "F": 0.9,
+  "MM": 0.17621199999999998,
+  "Tlag": 10116.0,
+  "VdPerKg": 0.0002,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 0.0035,
+  "ka": 6.111111111111111e-05,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 16433.47843588351
+ },
+ "reference_peaks": {
+  "central.C": 0.0266643857186598
+ },
+ "stop_time": 86400.0,
+ "template": "PK_1C_enteral",
+ "template_fmu": "PK_1C_enteral.fmu"
+}

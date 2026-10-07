@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N03A&quot;,&quot;href&quot;:&quot;atc/N03A.md&quot;},{&quot;label&quot;:&quot;cannabidiol&quot;,&quot;href&quot;:&quot;drugs/drug_cannabidiol/&quot;},{&quot;label&quot;:&quot;Eichler_2023 \u00b7 population_value&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Cannabidiol_Nachnani2024_reference&quot;,&quot;label&quot;:&quot;Nachnani_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cannabidiol/Cannabidiol_Nachnani2024_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Cannabidiol_Shaik2026_reference&quot;,&quot;label&quot;:&quot;Shaik_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cannabidiol/Cannabidiol_Shaik2026_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Cannabidiol_Snchez2023_reference&quot;,&quot;label&quot;:&quot;S\u00e1nchez_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cannabidiol/Cannabidiol_Snchez2023_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Cannabidiol_Eichler2023_population_value&quot;,&quot;label&quot;:&quot;Eichler_2023_population_value&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cannabidiol/Cannabidiol_Eichler2023_population_value.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Cannabidiol_Eichler2023_population_value&quot;,&quot;label&quot;:&quot;Eichler_2023_population_value&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cannabidiol/Cannabidiol_Eichler2023_population_value.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Cannabidiol_LaporteAmargos2026_reference&quot;,&quot;label&quot;:&quot;Laporte-Amargos_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cannabidiol/Cannabidiol_LaporteAmargos2026_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Cannabidiol_McGilveray2005_reference&quot;,&quot;label&quot;:&quot;McGilveray_2005_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cannabidiol/Cannabidiol_McGilveray2005_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Cannabidiol_Shaik2026_reference&quot;,&quot;label&quot;:&quot;Shaik_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cannabidiol/Cannabidiol_Shaik2026_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Cannabidiol_Snchez2023_reference&quot;,&quot;label&quot;:&quot;S\u00e1nchez_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cannabidiol/Cannabidiol_Snchez2023_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # cannabidiol — `Cannabidiol_Eichler2023_population_value`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">horse</span>
+> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">horse</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -25,12 +25,14 @@ Simulated as the paper dosed it, the model's peak concentration exceeds the repo
 
 <sub>reviewed by glm-5.3-flash</sub>
 
+> ⚠️ **STALE** — review status `needs_review` (reviewed 2026-09-28 14:36:32.626641+00:00) predates the upstream re-run (2026-10-07 07:10:12.598474+00:00). Current validate status: `extracted`.
+
 ## Citation
 Eichler F et al., Pharmacokinetic modelling of orally adm…, Frontiers in veterinary sci… (2023)
   ·  DOI: [10.3389/fvets.2023.1234551](https://doi.org/10.3389/fvets.2023.1234551)
 
 ## Model component
-<dbs-pgx drug="cannabidiol" model-id="Cannabidiol_Eichler2023_population_value" status="needs_review" stale="false" population="horses" measured-compound="cannabidiol" parameterization="apparent" topology="2C"></dbs-pgx>
+<dbs-pgx drug="cannabidiol" model-id="Cannabidiol_Eichler2023_population_value" status="extracted" stale="true" population="horses" measured-compound="cannabidiol" parameterization="apparent" topology="2C"></dbs-pgx>
 
 **Model structure:** 2-compartment, oral mammillary model — template `PK_2C_enteral`.  
 **Parameters:** 6 extracted.
@@ -38,8 +40,6 @@ Eichler F et al., Pharmacokinetic modelling of orally adm…, Frontiers in veter
 **Parameterization:** CL/F, V1/F, V2/F, V3/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
 ## Parameters
-> ⚠️ This record is not accepted (current status `needs_review`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
-
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
 | Cl/F (L/h/kg) | `Q27` · CL/F | 10.75 | L/h/kg | 0.00020902777777777781 | [l] / [[h] · [kg]] | not captured | exact (1.0) | tab4:row3:col1 | — | not captured |
@@ -63,9 +63,9 @@ Eichler F et al., Pharmacokinetic modelling of orally adm…, Frontiers in veter
 - `input_model`: first-order depot input — apparent (/F) parameterization ⇒ extravascular dosing
 
 **Interpretation flags:**
+- table section residual_error: 'a' routed out of structural estimates ('Residual error')
+- table section residual_error: 'b' routed out of structural estimates ('Residual error')
 - dropped unlinked row (NIL): 'Tk0 (h)' — extend the ontology if this is a real PK parameter (source ['tab4:row2:col1'])
-- dropped unlinked row (NIL): 'a' — extend the ontology if this is a real PK parameter (source ['tab4:row10:col1'])
-- dropped unlinked row (NIL): 'b' — extend the ontology if this is a real PK parameter (source ['tab4:row11:col1'])
 - apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=cannabidiol
 - structure disagreement: deterministic 2C vs LLM 3C — review compartment count
 - population split: 'population value' subgroup of Eichler_2023 (paper reports 4 populations: first trial (0.2 mg/kg, n = 3), population value, second trial (1 mg/kg, n = 3), third trial (3 mg/kg, n = 5))
@@ -83,7 +83,6 @@ Eichler F et al., Pharmacokinetic modelling of orally adm…, Frontiers in veter
 | C0_has_structural_params | pass | not captured | 6 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
-| C1_half_life_beta | pass | 161.29 | 181.556 | 1.1256 | 0.25 | reported t½β |
 | C5_dimension_Q27 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['tab4:row3:col1'] |
 | C5_dimension_Q290 | pass | [length] ** 3 | not captured | not captured | not captured | ['tab4:row4:col1'] |
 | C5_dimension_Q30 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['tab4:row5:col1'] |
@@ -132,7 +131,7 @@ Eichler F et al., Pharmacokinetic modelling of orally adm…, Frontiers in veter
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_cannabidiol/Cannabidiol_Eichler2023_population_value/Cannabidiol_Eichler2023_population_value_modelica.zip" download>Cannabidiol_Eichler2023_population_value_modelica.zip</a> <span class="pk-size">(4.2 kB)</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_cannabidiol/Cannabidiol_Eichler2023_population_value/Cannabidiol_Eichler2023_population_value_modelica.zip" download>Cannabidiol_Eichler2023_population_value_modelica.zip</a> <span class="pk-size">(4.7 kB)</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_cannabidiol/Cannabidiol_Eichler2023_population_value/Cannabidiol_Eichler2023_population_value_fmi.zip" download>Cannabidiol_Eichler2023_population_value_fmi.zip</a> <span class="pk-size">(4.4 kB)</span><br><a href="models/fmu/PK_2C_enteral.fmu" download>PK_2C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_cannabidiol/Cannabidiol_Eichler2023_population_value/Cannabidiol_Eichler2023_population_value_matlab.zip" download>Cannabidiol_Eichler2023_population_value_matlab.zip</a> <span class="pk-size">(3.5 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_cannabidiol/Cannabidiol_Eichler2023_population_value/Cannabidiol_Eichler2023_population_value_matlab_simbio.zip" download>Cannabidiol_Eichler2023_population_value_matlab_simbio.zip</a> <span class="pk-size">(2.9 kB)</span></td></tr>
@@ -154,4 +153,4 @@ Eichler F et al., Pharmacokinetic modelling of orally adm…, Frontiers in veter
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-09-21 15:55 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 07:10 UTC</sub>

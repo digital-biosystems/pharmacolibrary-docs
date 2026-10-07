@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N02B&quot;,&quot;href&quot;:&quot;atc/N02B.md&quot;},{&quot;label&quot;:&quot;propacetamol&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Propacetamol_Prins2008_reference&quot;,&quot;label&quot;:&quot;Prins_2008_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_propacetamol/Propacetamol_Prins2008_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Propacetamol_Prins2008_reference&quot;,&quot;label&quot;:&quot;Prins_2008_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_propacetamol/Propacetamol_Prins2008_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 # propacetamol
 
@@ -15,20 +15,31 @@ Propacetamol is an anilide analgesic and antipyretic, a prodrug form of paraceta
 
 <small>Summary written by `glm-5.3-flash` from [Wikidata Q907888](https://www.wikidata.org/wiki/Q907888) and the WHO ATC classification; not checked by a person.</small>
 
+## Molecules and molar masses
+
+> The molar mass each model uses to convert mass to molar concentration and to form a metabolite molecule for molecule. Looked up, never estimated: DrugBank for the drug, the paper's own value or the PubChem entry matched to the paper's name for a metabolite.
+
+| molecule | role | molar mass (g/mol) | formula | source | PubChem | records |
+|---|---|---|---|---|---|---|
+| propacetamol | parent | 264.325 | C14H20N2O3 | DrugBank | [68865](https://pubchem.ncbi.nlm.nih.gov/compound/68865) | Krekels_2015, Prins_2008 |
+| paracetamol | metabolite | 151.165 | C8H9NO2 | PubChem | [1983](https://pubchem.ncbi.nlm.nih.gov/compound/1983) | Krekels_2015, Prins_2008 |
+| paracetamol-glucuronide | metabolite | — (mass units only) | — | — | — | — |
+| paracetamol-sulphate | metabolite | — (mass units only) | — | — | — | — |
+
 ## Extraction summary
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-21 16:58 | 3:35 | 0/3/1 | 0/0/0 | 0/0/0 | 77,676/6,683 | ollama / qwen3.8:27b-mtp-q8_0 | 2 | 0/2 | 2/0 | 0 |
+| 2026-10-07 07:22 | 2:05 | 1/3/0 | 0/0/0 | 0/0/0 | 82,441/7,904 | einfracz / qwen3.8-27b | 2 | 0/2 | 2/0 | 0 |
 
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.333). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: T3_param_coverage</sub><br><sub>route_to: `engineer`</sub> | [Prins_2008_reference](drugs/drug_propacetamol/Propacetamol_Prins2008_reference.md) | ▶ model + simulator | 1-compartment, IV | 5 | Prins SA et al., Pharmacokinetics and analgesic effects…, Paediatric anaesthesia (2008) | [10.1111/j.1460-9592.2008.02619.x](https://doi.org/10.1111/j.1460-9592.2008.02619.x) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.667). The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Allegaert_2004_reference](drugs/drug_propacetamol/Propacetamol_Allegaert2004_reference.md) | — | 1-compartment (no model) | 2 | Allegaert K et al., Intravenous paracetamol (propacetamol)…, European journal of clinica… (2004) | [10.1007/s00228-004-0756-x](https://doi.org/10.1007/s00228-004-0756-x) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.167). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: C7 apparent-parameter coherence violated (double correction)</sub><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Anderson_2005_reference](drugs/drug_propacetamol/Propacetamol_Anderson2005_reference.md) | — | 2-compartment (no model) | 7 | Anderson BJ et al., Pediatric intravenous paracetamol (prop…, Paediatric anaesthesia (2005) | [10.1111/j.1460-9592.2005.01455.x](https://doi.org/10.1111/j.1460-9592.2005.01455.x) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.733). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>route_to: `human_review`</sub> | [Krekels_2015_reference](drugs/drug_propacetamol/Propacetamol_Krekels2015_reference.md) | — | general linear (no model) | 4 | Krekels EH et al., Developmental changes rather than repea…, European journal of clinica… (2015) | [10.1007/s00228-015-1887-y](https://doi.org/10.1007/s00228-015-1887-y) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.333). The first reading is what the record holds.">cross-check: disputed</span><br><sub>STALE — current validate: extracted</sub><br><sub>route_to: `engineer_replication`</sub> | [Prins_2008_reference](drugs/drug_propacetamol/Propacetamol_Prins2008_reference.md) | ▶ model + simulator | 1-compartment, IV | 5 | Prins SA et al., Pharmacokinetics and analgesic effects…, Paediatric anaesthesia (2008) | [10.1111/j.1460-9592.2008.02619.x](https://doi.org/10.1111/j.1460-9592.2008.02619.x) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.667). The first reading is what the record holds.">cross-check: partial</span><br><sub>STALE — current validate: rejected</sub><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Allegaert_2004_reference](drugs/drug_propacetamol/Propacetamol_Allegaert2004_reference.md) | — | 1-compartment (no model) | 0 | Allegaert K et al., Intravenous paracetamol (propacetamol)…, European journal of clinica… (2004) | [10.1007/s00228-004-0756-x](https://doi.org/10.1007/s00228-004-0756-x) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.167). The first reading is what the record holds.">cross-check: disputed</span><br><sub>STALE — current validate: rejected</sub><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Anderson_2005_reference](drugs/drug_propacetamol/Propacetamol_Anderson2005_reference.md) | — | 1-compartment (no model) | 0 | Anderson BJ et al., Pediatric intravenous paracetamol (prop…, Paediatric anaesthesia (2005) | [10.1111/j.1460-9592.2005.01455.x](https://doi.org/10.1111/j.1460-9592.2005.01455.x) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.733). The first reading is what the record holds.">cross-check: disputed</span><br><sub>STALE — current validate: rejected</sub><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>route_to: `human_review`</sub> | [Krekels_2015_reference](drugs/drug_propacetamol/Propacetamol_Krekels2015_reference.md) | — | general linear (no model) | 5 | Krekels EH et al., Developmental changes rather than repea…, European journal of clinica… (2015) | [10.1007/s00228-015-1887-y](https://doi.org/10.1007/s00228-015-1887-y) |
 
 ## ADME sites
 
@@ -55,7 +66,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 - **PubMed hits:** 13 matched, 13 returned
 - **screened:** 4  ·  **relevant:** 4
-- **records:** 4  ·  extracted 0  ·  needs_review 1  ·  rejected 3  ·  stale 0
+- **records:** 4  ·  extracted 1  ·  needs_review 0  ·  rejected 3  ·  stale 4
 - **scholar-agent fallback query used:** not captured
 
 ## Full text wanted
@@ -64,26 +75,26 @@ _5 paper(s) judged relevant from the abstract, with no full text on disk — pay
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Allegaert_2004.pdf` | Allegaert K et al., Intravenous paracetamol (propacetamol)…, European journal of clinica… (2004) | popPK | 10 | [10.1007/s00228-004-0756-x](https://doi.org/10.1007/s00228-004-0756-x) | [15071761](https://pubmed.ncbi.nlm.nih.gov/15071761) | The study reports quantitative population pharmacokinetic parameters (Vd, CL) for propacetamol in neonates with specific numeric values provided in the text. |
-| `Anderson_2005.pdf` | Anderson BJ et al., Pediatric intravenous paracetamol (prop…, Paediatric anaesthesia (2005) | popPK | 10 | [10.1111/j.1460-9592.2005.01455.x](https://doi.org/10.1111/j.1460-9592.2005.01455.x) | [15787918](https://pubmed.ncbi.nlm.nih.gov/15787918) | The paper is a population pharmacokinetic study of propacetamol (via paracetamol profiles) and explicitly reports numeric values for clearance, volumes, intercompartmental clearance, and hydrolysis rate constant in the text. |
-| `Prins_2008.pdf` | Prins SA et al., Pharmacokinetics and analgesic effects…, Paediatric anaesthesia (2008) | popPK | 10 | [10.1111/j.1460-9592.2008.02619.x](https://doi.org/10.1111/j.1460-9592.2008.02619.x) | [18482233](https://pubmed.ncbi.nlm.nih.gov/18482233) | The paper reports a population pharmacokinetic analysis for propacetamol (via its metabolite paracetamol) with explicit numeric values for clearance, volumes, and half-lives in the text. |
-| `Hahn_2003.pdf` | Hahn TW et al., Analgesic effect of i.v. paracetamol: p…, Acta anaesthesiologica Scan… (2003) | popPK | 8 | [10.1034/j.1399-6576.2003.00046.x](https://doi.org/10.1034/j.1399-6576.2003.00046.x) | [12631041](https://pubmed.ncbi.nlm.nih.gov/12631041) | The study fits a pharmacokinetic model for paracetamol (the active metabolite of propacetamol) and reports initial concentrations, but specific quantitative disposition parameters (CL, V, ka) are not explicitly listed in the provided text. |
+| `Allegaert_2004.pdf` | Allegaert K et al., Intravenous paracetamol (propacetamol)…, European journal of clinica… (2004) | popPK | 10 | [10.1007/s00228-004-0756-x](https://doi.org/10.1007/s00228-004-0756-x) | [15071761](https://pubmed.ncbi.nlm.nih.gov/15071761) | The paper reports specific population pharmacokinetic parameters (Vd, CL, BSV) for propacetamol/paracetamol in neonates directly in the abstract. |
+| `Anderson_2005.pdf` | Anderson BJ et al., Pediatric intravenous paracetamol (prop…, Paediatric anaesthesia (2005) | popPK | 10 | [10.1111/j.1460-9592.2005.01455.x](https://doi.org/10.1111/j.1460-9592.2005.01455.x) | [15787918](https://pubmed.ncbi.nlm.nih.gov/15787918) | The paper provides a population PK model for propacetamol (via its metabolite paracetamol) with all quantitative parameters (CL, V2, V3, Q, Ka) explicitly listed in the abstract. |
+| `Prins_2008.pdf` | Prins SA et al., Pharmacokinetics and analgesic effects…, Paediatric anaesthesia (2008) | popPK | 10 | [10.1111/j.1460-9592.2008.02619.x](https://doi.org/10.1111/j.1460-9592.2008.02619.x) | [18482233](https://pubmed.ncbi.nlm.nih.gov/18482233) | The study reports a population pharmacokinetic model for propacetamol (via its metabolite paracetamol) with all specific numeric parameter values (CL, V, Q, t1/2) provided in the text. |
+| `Hahn_2003.pdf` | Hahn TW et al., Analgesic effect of i.v. paracetamol: p…, Acta anaesthesiologica Scan… (2003) | popPK | 8 | [10.1034/j.1399-6576.2003.00046.x](https://doi.org/10.1034/j.1399-6576.2003.00046.x) | [12631041](https://pubmed.ncbi.nlm.nih.gov/12631041) | The paper describes a compartmental PK model for paracetamol (metabolite of propacetamol) in humans, but specific quantitative parameters (CL, V, Q) are not listed in the evidence, only initial concentrations. |
 | `Cai_2025.pdf` | Cai X et al., Genetic and clinical factors associated…, Progress in neuro-psychopha… (2025) | pgx | 5 | [10.1016/j.pnpbp.2025.111468](https://doi.org/10.1016/j.pnpbp.2025.111468) | [40812711](https://www.ncbi.nlm.nih.gov/pubmed/40812711) | metadata signals extractable PGX data (CYP2C19) |
 
-<sub>queue written 2026-09-21T16:55:31.114400+00:00</sub>
+<sub>queue written 2026-10-07T07:20:44.109190+00:00</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
 | PD | Anderson_2005 | not_relevant | 3 | 2 | The paper is a population PK analysis that mentions a specific concentration (10 mg/L) associated with a pain score (2.6/10) in the conclusion, but it does not report a fitted PD model, Emax/EC50 parameters, or a derived concentration-effect curve. |
-| PGx | Anderson_2006 | not_relevant | 0 | 0 | The text is a general review of paediatric analgesics that mentions pharmacogenomics and propacetamol only in passing, without reporting specific gene-variant effects on PK or PD parameters. |
-| popPK | Barsch_2021 | irrelevant | 0 | 0 | The study is an in-vitro electrophysiology investigation of propacetamol's metabolite on glycine transporters and receptors, reporting no pharmacokinetic disposition parameters. |
+| PGx | Anderson_2006 | not_relevant | 0 | 0 | The text is a general introduction/review abstract discussing pharmacogenomics broadly without reporting specific gene-variant effects on propacetamol PK/PD parameters. |
+| popPK | Barsch_2021 | irrelevant | 0 | 0 | This is an in-vitro mechanistic study of propacetamol's metabolite (DEG) on glycine receptors/transporters in Xenopus oocytes, not a pharmacokinetic study reporting disposition parameters. |
 | PD | Barsch_2021 | not_relevant | 0 | 0 | The study investigates the molecular mechanism of propacetamol's metabolite (DEG) on glycine transporters and receptors in Xenopus oocytes, not the pharmacodynamic exposure-response relationship of propacetamol itself in a clinical or physiological context. |
-| PGx | Cai_2025 | not_relevant | 0 | 0 | The paper investigates the pharmacogenomics of valproic acid, not propacetamol. |
-| popPK | Hahn_2003 | relevant | 8 | 2 | The study fits a pharmacokinetic model for paracetamol (the active metabolite of propacetamol) and reports initial concentrations, but specific quantitative disposition parameters (CL, V, ka) are not explicitly listed in the provided text. |
-| popPK | Palmer_2008 | irrelevant | 2 | 0 | The study reports pharmacokinetic parameters for acetaminophen (the active metabolite), not propacetamol, despite mentioning propacetamol in the background and conclusions. |
-| PGx | Tsai_2018 | not_relevant | 0 | 0 | The study investigates the protective effects of kaempferol on propacetamol-induced liver injury in mice, focusing on mechanisms like CYP2E1 and UGT1A1 modulation, but does not report pharmacogenomic effects (gene variants) on PK or PD parameters. |
+| PGx | Cai_2025 | not_relevant | 0 | 0 | The paper focuses on the pharmacokinetics of valproic acid, where propacetamol is mentioned only as a clinical covariate/co-administration factor. |
+| popPK | Hahn_2003 | relevant | 8 | 2 | The paper describes a compartmental PK model for paracetamol (metabolite of propacetamol) in humans, but specific quantitative parameters (CL, V, Q) are not listed in the evidence, only initial concentrations. |
+| popPK | Palmer_2008 | irrelevant | 3 | 3 | The study reports pharmacokinetic parameters for acetaminophen (the metabolite) directly, noting that values for propacetamol (the prodrug) are "similar" but not explicitly provided in the text. |
+| PGx | Tsai_2018 | not_relevant | 0 | 0 | The study investigates the protective effects of kaempferol on propacetamol-induced liver injury in mice using a chemical intervention, not a genetic variant, genotype, or pharmacogenomic phenotype. |
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-09-21 16:55 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-10-07 07:20 UTC</sub>

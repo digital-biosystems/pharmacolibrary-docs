@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N03A&quot;,&quot;href&quot;:&quot;atc/N03A.md&quot;},{&quot;label&quot;:&quot;cannabidiol&quot;,&quot;href&quot;:&quot;drugs/drug_cannabidiol/&quot;},{&quot;label&quot;:&quot;Eichler_2023 \u00b7 first_trial_0_2_mg_kg_n_3&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Cannabidiol_Nachnani2024_reference&quot;,&quot;label&quot;:&quot;Nachnani_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cannabidiol/Cannabidiol_Nachnani2024_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Cannabidiol_Shaik2026_reference&quot;,&quot;label&quot;:&quot;Shaik_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cannabidiol/Cannabidiol_Shaik2026_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Cannabidiol_Snchez2023_reference&quot;,&quot;label&quot;:&quot;S\u00e1nchez_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cannabidiol/Cannabidiol_Snchez2023_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Cannabidiol_Eichler2023_population_value&quot;,&quot;label&quot;:&quot;Eichler_2023_population_value&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cannabidiol/Cannabidiol_Eichler2023_population_value.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Cannabidiol_Eichler2023_population_value&quot;,&quot;label&quot;:&quot;Eichler_2023_population_value&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cannabidiol/Cannabidiol_Eichler2023_population_value.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Cannabidiol_LaporteAmargos2026_reference&quot;,&quot;label&quot;:&quot;Laporte-Amargos_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cannabidiol/Cannabidiol_LaporteAmargos2026_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Cannabidiol_McGilveray2005_reference&quot;,&quot;label&quot;:&quot;McGilveray_2005_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cannabidiol/Cannabidiol_McGilveray2005_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Cannabidiol_Shaik2026_reference&quot;,&quot;label&quot;:&quot;Shaik_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cannabidiol/Cannabidiol_Shaik2026_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Cannabidiol_Snchez2023_reference&quot;,&quot;label&quot;:&quot;S\u00e1nchez_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cannabidiol/Cannabidiol_Snchez2023_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # cannabidiol — `Cannabidiol_Eichler2023_first_trial_0_2_mg_kg_n_3`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">horse</span>
+> ## <span class="pk-badge pk-badge--neutral">None</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">horse</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -15,7 +15,7 @@
 
 > **Species: horse.** This record comes from an animal study (horse), not from people. The values, the model and its simulation are shown as the paper reports them — they describe that system, not human pharmacology (read from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).
 
-**Model:** A model was built but held back: a core parameter had no value, so it is not published or simulated.
+**Model:** No model was generated from this record.
 
 ### Reviewer guidance
 
@@ -25,53 +25,26 @@ Simulated as the paper dosed it, the model's terminal half-life differs from the
 
 <sub>reviewed by rule template (no LLM)</sub>
 
+> ⚠️ **STALE** — review status `needs_review` (reviewed 2026-09-28 14:36:24.308903+00:00) predates the upstream re-run (2026-10-07 07:10:12.598474+00:00). Current validate status: `not captured`.
+
 ## Citation
 Eichler F et al., Pharmacokinetic modelling of orally adm…, Frontiers in veterinary sci… (2023)
   ·  DOI: [10.3389/fvets.2023.1234551](https://doi.org/10.3389/fvets.2023.1234551)
 
 ## Model component
-<dbs-pgx drug="cannabidiol" model-id="Cannabidiol_Eichler2023_first_trial_0_2_mg_kg_n_3" status="needs_review" stale="false" population="horses" measured-compound="cannabidiol" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<dbs-pgx drug="cannabidiol" model-id="Cannabidiol_Eichler2023_first_trial_0_2_mg_kg_n_3" status="" stale="true" population="horses" measured-compound="" parameterization="" topology=""></dbs-pgx>
 
-**Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
-**Parameters:** 6 extracted.
+**Model structure:** —; no model was built for this record.  
+**Parameters:** 0 extracted.
 
-**Parameterization:** mechanistic.
+**Parameterization:** not captured.
 
 ## Parameters
-> ⚠️ This record is not accepted (current status `needs_review`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
+> ⚠️ This record is not accepted (current status `not captured`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
 
-| label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
-|---|---|---|---|---|---|---|---|---|---|---|
-| AUC0–12 h (h·ng/mL) | `Q19` · AUCt | 4.99 | h·ng/mL | not captured | [[h] · [ng]] / [ml] | not captured | llm (0.6) | Eichler_2023_table_5:row0:col1 | — | not captured |
-| Cmax (ng/mL) | `Q32` · Cmax | 1.82 | ng/mL | not captured | [ng] / [ml] | not captured | exact (1.0) | Eichler_2023_table_5:row1:col1 | — | not captured |
-| tmax (hr) | `Q56` · tmax | 1.01 | hr | 3636.0 | [h] | not captured | exact (1.0) | Eichler_2023_table_5:row2:col1 | — | not captured |
-| Q2 | `Q30` · Q | 1.35 | L/h/kg | 2.625e-05 | L/h | not captured | special_case (0.95) | Eichler_2023:discussion_prose | — | not captured |
-| clearance | `Q22` · CL | 10.75 | L/h/kg | 0.00020902777777777781 | L/h | not captured | exact (1.0) | Eichler_2023:discussion_prose | — | not captured |
-| THC Volumedist (L) | `Q61` · V | 3173.0 | L | 3.173 | L | not captured | review_gapfill (0.7) | Hansen_2024:review | — | not captured |
-
-<details class="legend">
-<summary>Column legend — what each column means</summary>
-<table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>label (paper)</code></td><td>the row or statistic label exactly as printed in the paper (label_verbatim) — never normalised, so it can be found in the PDF.</td></tr><tr><td><code>Q-code · name</code></td><td>the ontology parameter this label was matched to (Q22 = clearance, Q27 = CL/F, Q49 = ka, Q57 = half-life, …) and its canonical name. The Q-code, not the label, is what scoring and cross-paper merging use.</td></tr><tr><td><code>value</code></td><td>the estimate as reported in the paper.</td></tr><tr><td><code>unit</code></td><td>the unit as printed (unit_verbatim).</td></tr><tr><td><code>value_si</code></td><td>the value converted to the canonical unit. Empty when no conversion was possible — usually an unparseable or missing unit.</td></tr><tr><td><code>unit_canonical</code></td><td>the canonical unit for that Q-code, i.e. what value_si is expressed in.</td></tr><tr><td><code>RSE%</code></td><td>relative standard error of the estimate, when the paper reports one.</td></tr><tr><td><code>link</code></td><td>how the label was matched to the Q-code, with confidence. exact / boundary / fuzzy / tv_prefix / caption_compartment / special_case are deterministic string matches; llm, llm_confirmed, llm_corrected involved the model; review and review_gapfill come from the secondary review tier, the latter filling a parameter the primary extraction missed; boundary_relink is a corrected match.</td></tr><tr><td><code>source</code></td><td>where in the paper the number came from: colN = that column of the located table, other_prose = running text, review = the secondary tier, pgx = a pharmacogenomic record.</td></tr><tr><td><code>covariates</code></td><td>covariate effects attached to this parameter (e.g. weight on CL).</td></tr><tr><td><code>IIV</code></td><td>inter-individual variability reported for this parameter.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>the field is absent from the KB artifact — nothing was recorded. This is NOT the same as zero or empty: the value is unknown, not measured to be nothing.</td></tr><tr><td><code>—</code></td><td>deliberately not shown: the column does not apply to this row.</td></tr><tr><td><code>not verified</code></td><td>the record is not in an accepted state (see the badge and the note above the table); the numbers are shown as extracted, not endorsed.</td></tr></tbody></table>
-</details>
+_No resolved parameters._
 
 ## Departures & gaps
-
-**Interpretation flags:**
-- unit_dimension_unknown: 'CBDNCA' (AUCt)
-- dropped duplicate Q19 ('AUC0−12h(CBDPop_PK)AUC0−12h(CBDNCA)', value '1.20') — already have one for this compound
-- unit_dimension_unknown: 'CBDNCA' (Cmax)
-- dropped duplicate Q32 ('Cmax(CBDPop_PK)Cmax(CBDNCA)', value '0.92') — already have one for this compound
-- unit_dimension_unknown: 'CBDNCA' (tmax)
-- dropped duplicate Q56 ('tmax(CBDPop_PK)tmax(CBDNCA)', value '1.01') — already have one for this compound
-- salvaged Q30 ('Q2'=1.35) from results prose — parameter table was unreadable
-- salvaged Q22 ('clearance'=10.75) from results prose — parameter table was unreadable
-- apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=cannabidiol
-- held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
-- structure disagreement: deterministic 1C vs LLM 2C — review compartment count
-- status held at route_to_review — not promoted
-- population split: 'first trial (0.2 mg/kg, n = 3)' subgroup of Eichler_2023 (paper reports 4 populations: first trial (0.2 mg/kg, n = 3), population value, second trial (1 mg/kg, n = 3), third trial (3 mg/kg, n = 5))
-- gap-filled Q61 (V) from Hansen_2024's review values (primary lacked it)
-- skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
 
 **Extraction notes:**
 - companion parameter table 5 transcribed (18 record(s))
@@ -79,27 +52,7 @@ Eichler F et al., Pharmacokinetic modelling of orally adm…, Frontiers in veter
 
 ## Validation
 
-**Scholar closed-form checks:**
-
-| check | status | expected | obtained | ratio | tol | source |
-|---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 5 | not captured | not captured | not captured |
-| C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
-| C0c_disposition_complete | fail | not captured | not captured | not captured | not captured | not captured |
-| C1_half_life_beta | fail | 161.29 | 204.591 | 1.2685 | 0.25 | reported t½β |
-| C5_dimension_Q19 | pass | [time] * [mass] / [length] ** 3 | not captured | not captured | not captured | ['Eichler_2023_table_5:row0:col1'] |
-| C5_dimension_Q32 | pass | [mass] / [length] ** 3 | not captured | not captured | not captured | ['Eichler_2023_table_5:row1:col1'] |
-| C5_dimension_Q56 | pass | [time] | not captured | not captured | not captured | ['Eichler_2023_table_5:row2:col1'] |
-| C5_dimension_Q61 | pass | [length] ** 3 | not captured | not captured | not captured | ['Hansen_2024:review'] |
-| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 10.75 | not captured | not captured | ['Eichler_2023:discussion_prose'] |
-| C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
-| C9_phys_window_Q22 | pass | clearance within physiological range | 753 L/h | not captured | not captured | ['Eichler_2023:discussion_prose'] |
-| C9_phys_window_Q61 | pass | volume within physiological range | 3.17e+03 L | not captured | not captured | ['Hansen_2024:review'] |
-
-<details class="legend">
-<summary>Check legend — what each column means</summary>
-<table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>check</code></td><td>the check id. C0_has_structural_params = at least one numeric structural parameter; C0b_disposition_core = a volume OR a clearance/elimination term (neither means an exposure/outcome paper, not popPK — rejected); C0c_disposition_complete = BOTH a volume AND a clearance/elimination term, which is what the engineer needs to build (one without the other routes to review, never to the engineer); C1_half_life(_beta) = reported half-life against V and CL; C2_reference = covariate scenarios are sign-plausible; C3_cl_dose_auc = CL against dose/AUC; C4_auc_closed_form = AUC recomputed in closed form; C5_dimension_&lt;Qcode&gt; = the parameter's units carry the dimension its Q-code requires.</td></tr><tr><td><code>status</code></td><td>pass, fail, or skipped. A skipped check had nothing to compare — the paper did not report the input it needs — and is not evidence against the record. The scholar table lists only pass and fail; the reviewer table also shows skipped, with the reason in note.</td></tr><tr><td><code>expected</code></td><td>the value the check required, from the paper or from the ontology.</td></tr><tr><td><code>obtained</code></td><td>what the record actually yields.</td></tr><tr><td><code>ratio</code></td><td>obtained / expected, where the check is a numeric comparison.</td></tr><tr><td><code>tol</code></td><td>the tolerance the ratio had to fall within to pass.</td></tr><tr><td><code>source</code></td><td>the artifact the expected value was taken from.</td></tr><tr><td><code>scenario</code></td><td>reviewer table only — the covariate scenario the check was run under.</td></tr><tr><td><code>note</code></td><td>why a check was skipped, or how it was judged.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>the field is absent from the KB artifact — nothing was recorded. This is NOT the same as zero or empty: the value is unknown, not measured to be nothing.</td></tr><tr><td><code>—</code></td><td>deliberately not shown: the column does not apply to this row.</td></tr><tr><td><code>not verified</code></td><td>the record is not in an accepted state (see the badge and the note above the table); the numbers are shown as extracted, not endorsed.</td></tr></tbody></table>
-</details>
+_No comparable checks._
 
 ## Raw artifacts
 
@@ -129,4 +82,4 @@ _No web simulator for this record: its structure has no shared WebAssembly templ
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-09-21 15:55 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 07:10 UTC</sub>

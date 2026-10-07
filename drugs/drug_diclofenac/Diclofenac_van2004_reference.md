@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;D11A&quot;,&quot;href&quot;:&quot;atc/D11A.md&quot;},{&quot;label&quot;:&quot;diclofenac&quot;,&quot;href&quot;:&quot;drugs/drug_diclofenac/&quot;},{&quot;label&quot;:&quot;van_2004 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Diclofenac_Yuan2017_reference&quot;,&quot;label&quot;:&quot;Yuan_2017_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_diclofenac/Diclofenac_Yuan2017_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Hannam_2014_VAS&quot;,&quot;label&quot;:&quot;Hannam_2014 \u00b7 VAS&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_diclofenac/pd_Hannam_2014_VAS.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Diclofenac_Standing2008_reference&quot;,&quot;label&quot;:&quot;Standing_2008_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_diclofenac/Diclofenac_Standing2008_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Diclofenac_Yuan2017_reference&quot;,&quot;label&quot;:&quot;Yuan_2017_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_diclofenac/Diclofenac_Yuan2017_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Hannam_2014_VAS&quot;,&quot;label&quot;:&quot;Hannam_2014 \u00b7 VAS&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_diclofenac/pd_Hannam_2014_VAS.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # diclofenac — `Diclofenac_van2004_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.368). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.368). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -25,15 +25,17 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 
 <sub>reviewed by glm-5.3-flash</sub>
 
+> ⚠️ **STALE** — review status `rejected` (reviewed 2026-10-05 09:26:24.553534+00:00) predates the upstream re-run (2026-10-07 08:02:38.109086+00:00). Current validate status: `rejected`.
+
 ## Citation
 van der Marel CD et al., Diclofenac and metabolite pharmacokinet…, Paediatric anaesthesia (2004)
   ·  DOI: [10.1111/j.1460-9592.2004.01232.x](https://doi.org/10.1111/j.1460-9592.2004.01232.x)
 
 ## Model component
-<dbs-pgx drug="diclofenac" model-id="Diclofenac_van2004_reference" status="rejected" stale="false" population="children undergoing tonsillectomy" measured-compound="diclofenac" parameterization="mechanistic" topology="general_linear"></dbs-pgx>
+<dbs-pgx drug="diclofenac" model-id="Diclofenac_van2004_reference" status="rejected" stale="true" population="children" measured-compound="diclofenac" parameterization="mechanistic" topology="1C"></dbs-pgx>
 
-**Model structure:** general linear; no model was built for this record.  
-**Parameters:** 8 extracted.
+**Model structure:** 1-compartment; no model was built for this record.  
+**Parameters:** 6 extracted.
 
 **Parameterization:** mechanistic.
 
@@ -42,43 +44,41 @@ van der Marel CD et al., Diclofenac and metabolite pharmacokinet…, Paediatric 
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| The formation clearance to 4'-hydroxydiclofenac (% CV) | `Q370` · CLfm | 8.41 | l.h(-1) | 2.3361111111111114e-06 | [l] / [h] | not captured | exact (1.0) | van_2004:abstract | — | not captured |
-| and to 5'-hydroxydiclofenac | `Q370` · CLfm | 3.41 | l.h(-1) | 9.472222222222223e-07 | [l] / [h] | not captured | exact (1.0) | van_2004:abstract | — | not captured |
+| The formation clearance to 4'-hydroxydiclofenac | `Q370` · CLfm | 8.41 | l.h(-1) | 2.3361111111111114e-06 | [l] / [h] | not captured | llm_confirmed (0.6) | van_2004:abstract | — | not captured |
 | Clearance by other routes | `Q22` · CL | 33.0 | l.h(-1) 70 kg(-1) | 0.0006416666666666667 | [l] / [[h] · [kg]] | not captured | llm_confirmed (0.6) | van_2004:abstract | — | not captured |
-| Elimination clearance of hydroxyl metabolites | `Q22` · CL | 27.5 | l.h(-1) 70 kg(-1) | 0.0005347222222222222 | [l] / [[h] · [kg]] | not captured | llm_confirmed (0.6) | van_2004:abstract | — | not captured |
-| absorption half-life | `Q95` · t1/2ka | 0.613 | h | 2206.8 | [h] | not captured | llm_corrected (0.6) | van_2004:abstract | — | not captured |
-| lag time | `Q83` · tlag | 0.188 | h | 676.8 | [h] | not captured | exact (1.0) | van_2004:abstract | — | not captured |
-| diclofenac volume of distribution | `Q61` · V | 55 | % | not captured | [%] | not captured | llm_confirmed (0.6) | van_2004:abstract | — | not captured |
-| The relative bioavailability of the suppository compared with an enteric-coated tablet | `Q87` · Frel | 1.26 | relative bioavailability | not captured | not captured | not captured | llm_confirmed (0.6) | van_2004:abstract | — | not captured |
+| The suppository formulation had an absorption half-life of | `Q95` · t1/2ka | 0.613 | h | 2206.8 | [h] | not captured | llm_corrected (0.6) | van_2004:abstract | — | not captured |
+| with a lag time of | `Q83` · tlag | 0.188 | h | 676.8 | [h] | not captured | llm_confirmed (0.6) | van_2004:abstract | — | not captured |
+| The relative bioavailability of the suppository compared with an enteric-coated tablet | `Q87` · Frel | 1.26 | 1 | not captured | not captured | not captured | llm_confirmed (0.6) | van_2004:abstract | — | not captured |
+| Vd | `Q61` · V | 0.23 | L | 0.00023 | L | not captured | review_gapfill (0.7) | Karunanidhi_2026:review | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
 <table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>label (paper)</code></td><td>the row or statistic label exactly as printed in the paper (label_verbatim) — never normalised, so it can be found in the PDF.</td></tr><tr><td><code>Q-code · name</code></td><td>the ontology parameter this label was matched to (Q22 = clearance, Q27 = CL/F, Q49 = ka, Q57 = half-life, …) and its canonical name. The Q-code, not the label, is what scoring and cross-paper merging use.</td></tr><tr><td><code>value</code></td><td>the estimate as reported in the paper.</td></tr><tr><td><code>unit</code></td><td>the unit as printed (unit_verbatim).</td></tr><tr><td><code>value_si</code></td><td>the value converted to the canonical unit. Empty when no conversion was possible — usually an unparseable or missing unit.</td></tr><tr><td><code>unit_canonical</code></td><td>the canonical unit for that Q-code, i.e. what value_si is expressed in.</td></tr><tr><td><code>RSE%</code></td><td>relative standard error of the estimate, when the paper reports one.</td></tr><tr><td><code>link</code></td><td>how the label was matched to the Q-code, with confidence. exact / boundary / fuzzy / tv_prefix / caption_compartment / special_case are deterministic string matches; llm, llm_confirmed, llm_corrected involved the model; review and review_gapfill come from the secondary review tier, the latter filling a parameter the primary extraction missed; boundary_relink is a corrected match.</td></tr><tr><td><code>source</code></td><td>where in the paper the number came from: colN = that column of the located table, other_prose = running text, review = the secondary tier, pgx = a pharmacogenomic record.</td></tr><tr><td><code>covariates</code></td><td>covariate effects attached to this parameter (e.g. weight on CL).</td></tr><tr><td><code>IIV</code></td><td>inter-individual variability reported for this parameter.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>the field is absent from the KB artifact — nothing was recorded. This is NOT the same as zero or empty: the value is unknown, not measured to be nothing.</td></tr><tr><td><code>—</code></td><td>deliberately not shown: the column does not apply to this row.</td></tr><tr><td><code>not verified</code></td><td>the record is not in an accepted state (see the badge and the note above the table); the numbers are shown as extracted, not endorsed.</td></tr></tbody></table>
 </details>
 
+### Unresolved rows _(no Q-code or no value — not parameters)_
+| label (paper) | Q-code | value | link |
+|---|---|---|---|
+| The formation clearance of the active metabolite 4'-hydroxydiclofenac contributed 19% of total clearance (44.82 l.h(-1) 70 kg(-1)). | Q371 | not captured | llm_corrected |
+
 ## Departures & gaps
 
 **Interpretation flags:**
-- routed "Interoccasion variability of formation clearance to 4'-hydroxydiclofenac" → Q313 (IOV) to iov — variability estimate, not a structural parameter
-- unit_dimension_mismatch: 'diclofenac volume of distribution' → Q61 (unit 'dimensionless' vs ontology '[length] ** 3') — route to review
-- unit_dimension_mismatch: 'absorption half-time' → Q95 (unit 'dimensionless' vs ontology '[time]') — route to review
-- dropped duplicate Q95 ('absorption half-time', value 14) — already have one for this compound
-- covariate category for tlag from footnote/prose kept as documentation only (['van_2004:abstract'])
-- unit_dimension_mismatch: "The formation clearance of the active metabolite 4'-hydroxydiclofenac contributed" → Q370 (unit 'dimensionless' vs ontology '[length] ** 3 / [time]') — route to review
-- dropped duplicate Q370 ("The formation clearance of the active metabolite 4'-hydroxydiclofenac contributed", value 19) — already have one for this compound
+- dropped unlinked row (NIL): "and to 5'-hydroxydiclofenac" — extend the ontology if this is a real PK parameter (source ['van_2004:abstract'])
+- dropped duplicate Q22 ('Elimination clearance of hydroxyl metabolites', value 27.5) — already have one for this compound
+- dropped value-less row: "Interoccasion variability of formation clearance to 4'-hydroxydiclofenac, diclofenac volume of distribution, absorption half-time and lag time for the suppository was 36%, 55%, 14% and 119%, respectively."
+- unit_dimension_unknown: '% of total clearance' (CLmp)
 - dropped duplicate Q22 ('total clearance', value 44.82) — already have one for this compound
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=diclofenac
 - held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
-- topology: 2 first-order transfer(s) across 3 compounds → general_linear
-- template fit: PK_3M_9C — formed from central; parent 1, metabolites [0, 0]
 - status held at route_to_review — not promoted
-- row roles (LLM): model_class=compartmental; 13/13 row label(s) assigned, 7 linked by role; re-tagged diclofenac→4'-hydroxydiclofenac ×3, diclofenac→5'-hydroxydiclofenac ×1, diclofenac→parent ×8
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
-- skipped review gap-fill of V2: primary is GENERAL_LINEAR (peripheral family needs ≥2C)
-- skipped review gap-fill of Q: primary is GENERAL_LINEAR (peripheral family needs ≥2C)
+- gap-filled Q61 (V) from Karunanidhi_2026's review values (primary lacked it)
+- skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
+- skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
 
 **Extraction notes:**
-- no GROBID TEI available — transcribed from abstract in van_2004_metadata.yaml (13 record(s)); values are summary statistics, not a fitted model
+- no GROBID TEI available — transcribed from abstract in van_2004_metadata.yaml (10 record(s)); values are summary statistics, not a fitted model
 
 ## Validation
 
@@ -118,20 +118,18 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 8 | not captured | not captured | not captured |
+| C0_has_structural_params | pass | not captured | 5 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
-| C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
-| C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['van_2004:abstract'] |
+| C0c_disposition_complete | fail | not captured | not captured | not captured | not captured | not captured |
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['van_2004:abstract'] |
 | C5_dimension_Q370 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['van_2004:abstract'] |
-| C5_dimension_Q370 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['van_2004:abstract'] |
-| C5_dimension_Q61 | fail | dimensionless | % | not captured | not captured | ['van_2004:abstract'] |
+| C5_dimension_Q61 | pass | [length] ** 3 | not captured | not captured | not captured | ['Karunanidhi_2026:review'] |
 | C5_dimension_Q83 | pass | [time] | not captured | not captured | not captured | ['van_2004:abstract'] |
 | C5_dimension_Q95 | pass | [time] | not captured | not captured | not captured | ['van_2004:abstract'] |
 | C6_cl_magnitude | pass | &lt;= 90.0 L/h | 33.0 | not captured | not captured | ['van_2004:abstract'] |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
 | C9_phys_window_Q22 | pass | clearance within physiological range | 2.31e+03 L/h | not captured | not captured | ['van_2004:abstract'] |
-| C9_phys_window_Q22 | pass | clearance within physiological range | 1.92e+03 L/h | not captured | not captured | ['van_2004:abstract'] |
+| C9_phys_window_Q61 | fail | volume within physiological range | 0.23 L | not captured | not captured | ['Karunanidhi_2026:review'] |
 
 <details class="legend">
 <summary>Check legend — what each column means</summary>
@@ -156,4 +154,4 @@ _No web simulator for this record: its structure has no shared WebAssembly templ
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-03 20:31 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 08:02 UTC</sub>

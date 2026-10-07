@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N02B&quot;,&quot;href&quot;:&quot;atc/N02B.md&quot;},{&quot;label&quot;:&quot;mirogabalin&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Mirogabalin_Li2023_reference&quot;,&quot;label&quot;:&quot;Li_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_mirogabalin/Mirogabalin_Li2023_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 # mirogabalin
 
@@ -14,22 +15,34 @@ Mirogabalin is a gabapentinoid drug developed as an analgesic for neuropathic pa
 
 <small>Summary written by `glm-5.3-flash` from [Wikidata Q20706932](https://www.wikidata.org/wiki/Q20706932) and the WHO ATC classification; not checked by a person.</small>
 
+## Molecules and molar masses
+
+> The molar mass each model uses to convert mass to molar concentration and to form a metabolite molecule for molecule. Looked up, never estimated: DrugBank for the drug, the paper's own value or the PubChem entry matched to the paper's name for a metabolite.
+
+| molecule | role | molar mass (g/mol) | formula | source | PubChem | records |
+|---|---|---|---|---|---|---|
+| mirogabalin | parent | 209.289 | C12H19NO2 | DrugBank | [59509752](https://pubchem.ncbi.nlm.nih.gov/compound/59509752) | Yin_2016 |
+| lactam metabolite | metabolite | — (mass units only) | — | — | — | — |
+
 ## Extraction summary
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-01 20:47 | 1:44 | 0/0/0 | 1/0/0 | 0/0/0 | 43,003/1,070 | ollama / qwen3.8:27b-mtp-q8_0 | 6 | 2/5 | 6/0 | 0 |
+| 2026-10-07 06:27 | 1:55 | 1/1/0 | 1/0/0 | 0/0/0 | 135,601/12,087 | einfracz / qwen3.8-27b | 6 | 2/5 | 6/0 | 0 |
 
 ## popPK records
 
-_not available_
+| status | detail | model | model structure | params | citation | doi |
+|---|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--green">extracted</span> | [Li_2023_reference](drugs/drug_mirogabalin/Mirogabalin_Li2023_reference.md) | ▶ model + simulator | 1-compartment, oral | 2 | Li Y et al., Safety, Tolerability and Pharmacokineti…, Advances in therapy (2023) | [10.1007/s12325-022-02424-7](https://doi.org/10.1007/s12325-022-02424-7) |
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Yin_2016_reference](drugs/drug_mirogabalin/Mirogabalin_Yin2016_reference.md) | — | parent + metabolite (no model) | 3 | Yin OQ et al., Population pharmacokinetic modeling and…, Journal of clinical pharmac… (2016) | [10.1002/jcph.584](https://doi.org/10.1002/jcph.584) |
 
 ## Pharmacodynamics (PD)
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">in vitro</span> | [Wu_2022_INa_L](drugs/drug_mirogabalin/pd_Wu_2022_INa_L.md) | sustained (late) INa ← mirogabalin · direct sigmoid Emax (Hill) effect | — | Wu CL et al., The Evidence for Effective Inhibition o…, International journal of mo… (2022) | [10.3390/ijms23073845](https://doi.org/10.3390/ijms23073845) |
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">in vitro</span> | [Wu_2022_INa_T](drugs/drug_mirogabalin/pd_Wu_2022_INa_T.md) | peak (transient) INa ← mirogabalin · direct sigmoid Emax (Hill) effect | — | Wu CL et al., The Evidence for Effective Inhibition o…, International journal of mo… (2022) | [10.3390/ijms23073845](https://doi.org/10.3390/ijms23073845) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">in vitro</span> | [Wu_2022_INa_L](drugs/drug_mirogabalin/pd_Wu_2022_INa_L.md) | sustained (late) INa (INa(L)) ← mirogabalin · direct sigmoid Emax (Hill) effect | — | Wu CL et al., The Evidence for Effective Inhibition o…, International journal of mo… (2022) | [10.3390/ijms23073845](https://doi.org/10.3390/ijms23073845) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">in vitro</span> | [Wu_2022_INa_T](drugs/drug_mirogabalin/pd_Wu_2022_INa_T.md) | transient (peak) INa (INa(T)) ← mirogabalin · direct sigmoid Emax (Hill) effect | — | Wu CL et al., The Evidence for Effective Inhibition o…, International journal of mo… (2022) | [10.3390/ijms23073845](https://doi.org/10.3390/ijms23073845) |
 
 ## ADME sites
 
@@ -49,8 +62,8 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 ## Coverage
 
 - **PubMed hits:** 18 matched, 18 returned
-- **screened:** 4  ·  **relevant:** 3
-- **records:** 0  ·  extracted 0  ·  needs_review 0  ·  rejected 0  ·  stale 0
+- **screened:** 5  ·  **relevant:** 4
+- **records:** 2  ·  extracted 1  ·  needs_review 0  ·  rejected 1  ·  stale 0
 - **scholar-agent fallback query used:** True
 
 ## Full text wanted
@@ -59,11 +72,11 @@ _3 paper(s) judged relevant from the abstract, with no full text on disk — pay
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Yin_2016.pdf` | Yin OQ et al., Population pharmacokinetic modeling and…, Journal of clinical pharmac… (2016) | popPK | 10 | [10.1002/jcph.584](https://doi.org/10.1002/jcph.584) | [26138993](https://pubmed.ncbi.nlm.nih.gov/26138993) | The paper is a population PK study for mirogabalin, but the specific numeric parameter values (CL, V, Q, etc.) are not present in the provided text, which only reports relative changes and simulation outcomes. |
+| `Yin_2016.pdf` | Yin OQ et al., Population pharmacokinetic modeling and…, Journal of clinical pharmac… (2016) | popPK | 10 | [10.1002/jcph.584](https://doi.org/10.1002/jcph.584) | [26138993](https://pubmed.ncbi.nlm.nih.gov/26138993) | The paper reports a population PK model for mirogabalin with clear quantitative effects (percent changes in clearance and AUC/Cmax) and covariate relationships, although specific absolute parameter estimates (e.g., CL value in L/h) are not explicitly listed in the provided text. |
 | `Hutmacher_2016.pdf` | Hutmacher MM et al., Exposure-response modeling of average d…, Journal of clinical pharmac… (2016) | pd | 5 | [10.1002/jcph.567](https://doi.org/10.1002/jcph.567) | [26073181](https://www.ncbi.nlm.nih.gov/pubmed/26073181) | metadata signals extractable PD data (Exposure-response) |
 | `Ahmad_2021.pdf` | Ahmad KA et al., Microglial IL-10 and β-endorphin expres…, Brain, behavior, and immuni… (2021) | pd | 4 | [10.1016/j.bbi.2021.04.007](https://doi.org/10.1016/j.bbi.2021.04.007) | [33862171](https://www.ncbi.nlm.nih.gov/pubmed/33862171) | metadata signals extractable PD data (Emax) |
 
-<sub>queue written 2026-10-01T20:47:02.535435+00:00</sub>
+<sub>queue written 2026-10-07T06:26:03.647874+00:00</sub>
 
 ## Screened and excluded
 
@@ -79,14 +92,13 @@ _3 paper(s) judged relevant from the abstract, with no full text on disk — pay
 | popPK | Jansen_2018_2 | irrelevant | 2 | 0 | The study is a drug-drug interaction trial reporting only relative changes (ratios) in peak concentration, not absolute quantitative disposition parameters (CL, V, t1/2) for mirogabalin. |
 | PD | Jansen_2018_2 | not_relevant | 2 | 1 | The paper reports qualitative PD changes and PK interaction ratios (Cmax) but does not provide numeric PD parameters (e.g., Emax, EC50) or concentration-effect curves for mirogabalin. |
 | popPK | Kitano_2019 | irrelevant | 4 | 2 | The paper is a review that summarizes PK properties (half-life, clearance, protein binding) but does not present original quantitative population-PK model parameters (CL, V, Q, ka) or a compartmental model for mirogabalin. |
-| PGx | Sloan_2022 | not_relevant | 0 | 0 | The paper is a general review of treatments for painful diabetic neuropathy and mentions mirogabalin only as an emerging therapy without reporting any pharmacogenomic data or specific PK/PD parameter changes. |
+| PGx | Sloan_2022 | not_relevant | 0 | 0 | The paper is a review of the treatment of painful diabetic neuropathy and does not report pharmacogenomic effects on the PK or PD of mirogabalin. |
 | popPK | Song_2026 | irrelevant | 0 | 0 | no_text gate: only 212 chars of text extracted (&lt; 400) |
 | popPK | Tang_2023 | relevant | 4 | 6 | The paper is a review that reports quantitative PK parameters (CL, T1/2, renal clearance) for mirogabalin, but it lacks a compartmental or population-PK model and volume of distribution values. |
 | PD | Tang_2023 | not_relevant | 2 | 0 | The paper is a narrative review summarizing clinical trials and does not present original pharmacodynamic modeling or extractable numeric PD parameters (e.g., Emax, EC50) for mirogabalin. |
 | popPK | Wu_2022 | irrelevant | 0 | 0 | The paper is an in-vitro electrophysiology study investigating the mechanism of action (Na+ channel inhibition) of mirogabalin, not a pharmacokinetic study reporting disposition parameters like clearance or volume. |
-| popPK | Yin_2016 | relevant | 10 | 2 | The paper is a population PK study for mirogabalin, but the specific numeric parameter values (CL, V, Q, etc.) are not present in the provided text, which only reports relative changes and simulation outcomes. |
 | popPK | Zajączkowska_2021 | irrelevant | 3 | 2 | The paper is a narrative review that summarizes PK properties (half-life, Tmax, protein binding) but does not report original quantitative compartmental parameters (CL, V, Q, ka) or population PK model estimates. |
 | PD | Zajączkowska_2021 | not_relevant | 2 | 1 | The text is a review article discussing mechanism of action and general PK/PD properties without providing specific numeric PD parameters or extractable concentration-effect curves. |
 
 ---
-<sub>Generated by `docs.py` (scholarv2)</sub>
+<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-10-07 06:26 UTC</sub>

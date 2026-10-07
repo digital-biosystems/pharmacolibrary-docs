@@ -4,7 +4,7 @@
 
 # benazepril — `Benazepril_King2003_i_v_benazeprilat`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.1). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (cat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">cat</span>
+> ## <span class="pk-badge pk-badge--neutral">None</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.1). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (cat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">cat</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -26,71 +26,26 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the lin
 
 <sub>reviewed by glm-5.3-flash</sub>
 
-> **Dose compound ≠ measured compound:** dosed `benazepril`, measured `benazeprilat`.
+> ⚠️ **STALE** — review status `rejected` (reviewed 2026-10-05 09:24:11.754809+00:00) predates the upstream re-run (2026-10-07 05:02:33.667430+00:00). Current validate status: `not captured`.
 
 ## Citation
 King JN et al., Pharmacokinetic/pharmacodynamic modelli…, Journal of veterinary pharm… (2003)
   ·  DOI: [10.1046/j.1365-2885.2003.00468.x](https://doi.org/10.1046/j.1365-2885.2003.00468.x)
 
 ## Model component
-<dbs-pgx drug="benazepril" model-id="Benazepril_King2003_i_v_benazeprilat" status="rejected" stale="false" population="healthy cats" measured-compound="benazeprilat" parameterization="apparent" topology="general_linear"></dbs-pgx>
+<dbs-pgx drug="benazepril" model-id="Benazepril_King2003_i_v_benazeprilat" status="" stale="true" population="cats" measured-compound="" parameterization="" topology=""></dbs-pgx>
 
-**Model structure:** general linear; no model was built for this record.  
-**Parameters:** 10 extracted.
+**Model structure:** —; no model was built for this record.  
+**Parameters:** 0 extracted.
 
-**Parameterization:** V1/F — apparent, F unknown (apparent — bioavailability not identifiable).
+**Parameterization:** not captured.
 
 ## Parameters
-> ⚠️ This record is not accepted (current status `rejected`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
+> ⚠️ This record is not accepted (current status `not captured`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
 
-| label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
-|---|---|---|---|---|---|---|---|---|---|---|
-| V c /F (L/kg) | `Q290` · V1/F | 0.0005 | L/kg | 3.5e-05 | [l] / [kg] | not captured | exact (1.0) | tab_1:row4:col4 | — | not captured |
-| T 1/2 K 10 (h) | `Q47` · kel | 0.0001 | h | not captured | [h] | not captured | exact (1.0) | tab_1:row6:col5, King_2003_table_1:row6:col1, King_2003_table_1:row6:col4 | — | not captured |
-| B max (ng/mL) | `Q332` · Bmax | 56 | ng/mL | not captured | [ng] / [ml] | not captured | space_fold (0.95) | tab_1:row7:col4, tab_1:row7:col5, tab_1:row7:col6, tab_1:row7:col8, King_2003_table_1:row8:col1, King_2003_table_1:row8:col4 | — | not captured |
-| P max (nmol/L) | `Q32` · Cmax | 12.3 | nmol/L | not captured | [nM] / [l] | not captured | llm (0.6) | tab_1:row9:col4, tab_1:row9:col5, tab_1:row9:col6, tab_1:row9:col8, King_2003_table_1:row10:col1, King_2003_table_1:row10:col4 | — | not captured |
-| K d (ng/mL) | `Q331` · KD | 0.0019 | ng/mL | not captured | [ng] / [ml] | not captured | space_fold (0.95) | tab_1:row10:col5, King_2003_table_1:row11:col1, King_2003_table_1:row11:col4 | — | not captured |
-| F circ (%) | `Q40` · Fab | 8.75 | not captured | not captured | not captured | not captured | llm (0.6) | tab_1:row12:col4, tab_1:row12:col5, tab_1:row12:col6, tab_1:row12:col8, King_2003_table_1:row13:col1, King_2003_table_1:row13:col4 | — | not captured |
-| T 1/2 K a (h) | `Q49` · kabs | 0.62 | h | not captured | [h] | not captured | exact (1.0) | tab_1:row13:col5 | — | not captured |
-| AUC free(0-inf) (ng h/mL) 152 ± 85 | `Q17` · AUC∞ | 575 | not captured | not captured | not captured | not captured | llm_corrected (0.6) | tab_1:row14:col4, tab_1:row14:col5 | — | not captured |
-| V c (L/kg) | `Q61` · V | 0.093 | L/kg | 0.00651 | [l] / [kg] | not captured | exact (1.0) | King_2003_table_1:row2:col1 | — | not captured |
-| Cl free (L/kg/h) | `Q22` · CL | 0.125 | L/kg/h | 2.4305555555555552e-06 | [l] / [[h] · [kg]] | not captured | exact (1.0) | King_2003_table_1:row4:col1 | — | not captured |
-
-<details class="legend">
-<summary>Column legend — what each column means</summary>
-<table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>label (paper)</code></td><td>the row or statistic label exactly as printed in the paper (label_verbatim) — never normalised, so it can be found in the PDF.</td></tr><tr><td><code>Q-code · name</code></td><td>the ontology parameter this label was matched to (Q22 = clearance, Q27 = CL/F, Q49 = ka, Q57 = half-life, …) and its canonical name. The Q-code, not the label, is what scoring and cross-paper merging use.</td></tr><tr><td><code>value</code></td><td>the estimate as reported in the paper.</td></tr><tr><td><code>unit</code></td><td>the unit as printed (unit_verbatim).</td></tr><tr><td><code>value_si</code></td><td>the value converted to the canonical unit. Empty when no conversion was possible — usually an unparseable or missing unit.</td></tr><tr><td><code>unit_canonical</code></td><td>the canonical unit for that Q-code, i.e. what value_si is expressed in.</td></tr><tr><td><code>RSE%</code></td><td>relative standard error of the estimate, when the paper reports one.</td></tr><tr><td><code>link</code></td><td>how the label was matched to the Q-code, with confidence. exact / boundary / fuzzy / tv_prefix / caption_compartment / special_case are deterministic string matches; llm, llm_confirmed, llm_corrected involved the model; review and review_gapfill come from the secondary review tier, the latter filling a parameter the primary extraction missed; boundary_relink is a corrected match.</td></tr><tr><td><code>source</code></td><td>where in the paper the number came from: colN = that column of the located table, other_prose = running text, review = the secondary tier, pgx = a pharmacogenomic record.</td></tr><tr><td><code>covariates</code></td><td>covariate effects attached to this parameter (e.g. weight on CL).</td></tr><tr><td><code>IIV</code></td><td>inter-individual variability reported for this parameter.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>the field is absent from the KB artifact — nothing was recorded. This is NOT the same as zero or empty: the value is unknown, not measured to be nothing.</td></tr><tr><td><code>—</code></td><td>deliberately not shown: the column does not apply to this row.</td></tr><tr><td><code>not verified</code></td><td>the record is not in an accepted state (see the badge and the note above the table); the numbers are shown as extracted, not endorsed.</td></tr></tbody></table>
-</details>
+_No resolved parameters._
 
 ## Departures & gaps
-
-**Interpretation flags:**
-- dropped unlinked row (NIL): 'Parameters (units)' — extend the ontology if this is a real PK parameter (source ['tab_1:row3:col4', 'tab_1:row3:col5', 'tab_1:row3:col6', 'tab_1:row3:col7'])
-- unit_dimension_mismatch: 'T 1/2 K 10 (h)' → Q47 (unit '[time]' vs ontology '1 / [time]') — route to review
-- dropped duplicate Q332 ('B max (nmol/L)', value '141') — already have one for this compound
-- unit_dimension_mismatch: 'P max (nmol/L)' → Q32 (unit '[substance] / [length] ** 3' vs ontology '[mass] / [length] ** 3') — route to review
-- unit_dimension_mismatch: 'K d (nmol/L)' → Q331 (unit '[substance] / [length] ** 3' vs ontology '[mass] / [length] ** 3') — route to review
-- dropped duplicate Q331 ('K d (nmol/L)', value '4.35') — already have one for this compound
-- unit_dimension_mismatch: 'T 1/2 K a (h)' → Q49 (unit '[time]' vs ontology '1 / [time]') — route to review
-- dropped duplicate Q17 ('AUC tot(0-inf) (ng h/mL) 409 ± 128', value '715') — already have one for this compound
-- dropped duplicate Q332 ('B max (nmol/kg)', value '18.2') — already have one for this compound
-- unit_dimension_unknown: 'ng h/mL' (AUC∞)
-- dropped duplicate Q17 ('AUC free(0-inf) (ng h/mL)', value '8195') — already have one for this compound
-- dropped duplicate Q17 ('AUC tot(0-last) (ng h/mL)', value '8420') — already have one for this compound
-- dropped duplicate Q17 ('AUC tot(0-inf) (ng h/mL)', value '8568') — already have one for this compound
-- NIL: refused to back-fill base 'NIL' from footnote/prose loose number 0.25 (source ['tab_1:footnote', 'tab_1:footnote', 'tab_1:footnote']); the table cell was unparseable — needs review
-- NIL: refused to back-fill base 'NIL' from footnote/prose loose number 0.54 (source ['tab_1:footnote', 'tab_1:footnote', 'tab_1:footnote']); the table cell was unparseable — needs review
-- implicit units: 'AUC free(0-inf) (ng h/mL) 152 ± 85' — the LLM proposed 'ng h/mL', whose dimension does not fit Q17; left unset
-- metabolite volume: 'V c (L/kg)' Q63→Q61 for benazeprilat — it is 1-compartment, so its central volume is its only volume
-- apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=benazeprilat
-- held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
-- topology: 1 first-order transfer(s) across 2 compounds → general_linear
-- template fit: PK_3M_9C — formed from central; parent 0, metabolites [1]
-- status held at route_to_review — not promoted
-- population split: 'i.v. benazeprilat' subgroup of King_2003 (paper reports 4 populations: i.v. benazeprilat, oral benazepril.hcl, repeated administration (n ¼ 6), single administration (n ¼ 5))
-- row roles (LLM): model_class=compartmental; 25/25 row label(s) assigned, 17 linked by role; re-tagged parent→benazeprilat ×59, benazepril→benazeprilat ×29, benazepril→parent ×1
-- skipped review gap-fill of V2: primary is GENERAL_LINEAR (peripheral family needs ≥2C)
-- skipped review gap-fill of Q: primary's parameterization (rate-constant / ka-only) does not use it
-- skipped review gap-fill of TLAG: primary's parameterization (rate-constant / ka-only) does not use it
 
 **Extraction notes:**
 - unparsed cell tab_1:row4:col1 = '1.09 ± 0.66 0.975 ± 0.412 1.30 ± 1.60 2.65 ± 0.66 1.74 ± 0.67'
@@ -112,15 +67,7 @@ King JN et al., Pharmacokinetic/pharmacodynamic modelli…, Journal of veterinar
 - unparsed cell tab_1:row13:col1 = '1.65 ± 0.52 2.17 ± 0.99'
 - unparsed cell tab_1:row13:col2 = '2.81 ± 1.65 1.90 ± 1.66 2.53 ± 1.65'
 - unparsed cell tab_1:row13:col4 = '0.90 (0.57, 1.4)'
-- unparsed cell King_2003_table_1:row6:col3 = '3.03 (1.4, 6.7)'
-- unparsed cell King_2003_table_1:row8:col3 = '1.06 (0.58, 1.9)'
-- unparsed cell King_2003_table_1:row9:col3 = '1.05 (0.58, 0.93)'
-- unparsed cell King_2003_table_1:row10:col3 = '1.10 (0.56, 2.2)'
-- unparsed cell King_2003_table_1:row11:col3 = '1.73 (0.56, 5.4)'
-- unparsed cell King_2003_table_1:row12:col3 = '1.72 (0.56, 5.3)'
-- unparsed cell King_2003_table_1:row13:col3 = '1.05 (0.91, 1.2)'
-- companion parameter table 1 transcribed (37 record(s))
-- LLM selected parameter table(s) 1, 2
+- LLM selected parameter table(s) 2
 
 ## Validation
 
@@ -171,27 +118,6 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 </details>
 
 
-**Scholar closed-form checks:**
-
-| check | status | expected | obtained | ratio | tol | source |
-|---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 10 | not captured | not captured | not captured |
-| C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
-| C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
-| C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['King_2003_table_1:row4:col1'] |
-| C5_dimension_Q290 | pass | [length] ** 3 | not captured | not captured | not captured | ['tab_1:row4:col4'] |
-| C5_dimension_Q32 | fail | [substance] / [length] ** 3 | nmol/L | not captured | not captured | ['tab_1:row9:col4', 'tab_1:row9:col5', 'tab_1:row9:col6', 'tab_1:row9:col8', 'King_2003_table_1:row10:col1', 'King_2003_table_1:row10:col4'] |
-| C5_dimension_Q331 | pass | [mass] / [length] ** 3 | not captured | not captured | not captured | ['tab_1:row10:col5', 'King_2003_table_1:row11:col1', 'King_2003_table_1:row11:col4'] |
-| C5_dimension_Q47 | fail | [time] | h | not captured | not captured | ['tab_1:row6:col5', 'King_2003_table_1:row6:col1', 'King_2003_table_1:row6:col4'] |
-| C5_dimension_Q49 | fail | [time] | h | not captured | not captured | ['tab_1:row13:col5'] |
-| C5_dimension_Q61 | pass | [length] ** 3 | not captured | not captured | not captured | ['King_2003_table_1:row2:col1'] |
-| C5_unit_missing_Q17 | fail | [mass] * [time] / [length] ** 3 | not captured | not captured | not captured | ['tab_1:row14:col4', 'tab_1:row14:col5'] |
-| C7_apparent_coherence | pass | not captured | not captured | not captured | not captured | not captured |
-| C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
-| C9_phys_window_Q22 | pass | clearance within physiological range | 8.75 L/h | not captured | not captured | ['King_2003_table_1:row4:col1'] |
-| C9_phys_window_Q290 | fail | volume within physiological range | 0.035 L | not captured | not captured | ['tab_1:row4:col4'] |
-| C9_phys_window_Q61 | pass | volume within physiological range | 6.51 L | not captured | not captured | ['King_2003_table_1:row2:col1'] |
-
 <details class="legend">
 <summary>Check legend — what each column means</summary>
 <table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>check</code></td><td>the check id. C0_has_structural_params = at least one numeric structural parameter; C0b_disposition_core = a volume OR a clearance/elimination term (neither means an exposure/outcome paper, not popPK — rejected); C0c_disposition_complete = BOTH a volume AND a clearance/elimination term, which is what the engineer needs to build (one without the other routes to review, never to the engineer); C1_half_life(_beta) = reported half-life against V and CL; C2_reference = covariate scenarios are sign-plausible; C3_cl_dose_auc = CL against dose/AUC; C4_auc_closed_form = AUC recomputed in closed form; C5_dimension_&lt;Qcode&gt; = the parameter's units carry the dimension its Q-code requires.</td></tr><tr><td><code>status</code></td><td>pass, fail, or skipped. A skipped check had nothing to compare — the paper did not report the input it needs — and is not evidence against the record. The scholar table lists only pass and fail; the reviewer table also shows skipped, with the reason in note.</td></tr><tr><td><code>expected</code></td><td>the value the check required, from the paper or from the ontology.</td></tr><tr><td><code>obtained</code></td><td>what the record actually yields.</td></tr><tr><td><code>ratio</code></td><td>obtained / expected, where the check is a numeric comparison.</td></tr><tr><td><code>tol</code></td><td>the tolerance the ratio had to fall within to pass.</td></tr><tr><td><code>source</code></td><td>the artifact the expected value was taken from.</td></tr><tr><td><code>scenario</code></td><td>reviewer table only — the covariate scenario the check was run under.</td></tr><tr><td><code>note</code></td><td>why a check was skipped, or how it was judged.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>the field is absent from the KB artifact — nothing was recorded. This is NOT the same as zero or empty: the value is unknown, not measured to be nothing.</td></tr><tr><td><code>—</code></td><td>deliberately not shown: the column does not apply to this row.</td></tr><tr><td><code>not verified</code></td><td>the record is not in an accepted state (see the badge and the note above the table); the numbers are shown as extracted, not endorsed.</td></tr></tbody></table>
@@ -204,9 +130,19 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
-## Models
+## Downloadable models
 
-<p>No downloads: this record is <b>rejected</b>, so it is not published as a model. Any archives generated for it before the verdict have been removed — a download outlives the page that explains it.</p>
+<div class="pk-models-grid"><div class="pk-models-table">
+<table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
+</tbody></table>
+<p>No bundles have been generated for this record yet. When the engineer emits them they appear here automatically — this page reports what is on disk and generates nothing itself.</p>
+</div></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
@@ -215,4 +151,4 @@ _No web simulator for this record: its structure has no shared WebAssembly templ
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-09-30 22:19 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 05:02 UTC</sub>

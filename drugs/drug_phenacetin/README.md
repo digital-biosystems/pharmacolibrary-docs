@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N02B&quot;,&quot;href&quot;:&quot;atc/N02B.md&quot;},{&quot;label&quot;:&quot;phenacetin&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Phenacetin_Shi2021_reference&quot;,&quot;label&quot;:&quot;Shi_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_phenacetin/Phenacetin_Shi2021_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 # phenacetin
 
@@ -18,13 +19,14 @@ Phenacetin is a non-opioid painkiller and fever reducer that was once used to tr
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-01 21:24 | 2:14 | 0/1/0 | 0/0/0 | 0/0/0 | 23,062/4,967 | ollama / qwen3.8:27b-mtp-q8_0 | 7 | 1/6 | 7/0 | 0 |
+| 2026-10-07 06:52 | 1:30 | 1/1/0 | 0/0/0 | 0/0/0 | 150,205/10,317 | einfracz / qwen3.8-27b | 7 | 1/6 | 7/0 | 0 |
 
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Raaflaub_1975_reference](drugs/drug_phenacetin/Phenacetin_Raaflaub1975_reference.md) | — | 1-compartment (no model) | 0 | Raaflaub J et al., On the pharmacokinetics of phenacetin i…, European journal of clinica… (1975) | [10.1007/BF00567125](https://doi.org/10.1007/BF00567125) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span> | [Shi_2021_reference](drugs/drug_phenacetin/Phenacetin_Shi2021_reference.md) | ▶ model + simulator | 1-compartment, oral | 2 | Shi Y et al., Effects of Avitinib on CYP450 Enzyme Ac…, Drug design, development an… (2021) | [10.2147/DDDT.S323186](https://doi.org/10.2147/DDDT.S323186) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: partial</span><br><sub>STALE — current validate: rejected</sub><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Raaflaub_1975_reference](drugs/drug_phenacetin/Phenacetin_Raaflaub1975_reference.md) | — | 1-compartment (no model) | 0 | Raaflaub J et al., On the pharmacokinetics of phenacetin i…, European journal of clinica… (1975) | [10.1007/BF00567125](https://doi.org/10.1007/BF00567125) |
 
 ## ADME sites
 
@@ -50,7 +52,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 - **PubMed hits:** 689 matched, 77 returned
 - **screened:** 6  ·  **relevant:** 1
-- **records:** 1  ·  extracted 0  ·  needs_review 0  ·  rejected 1  ·  stale 0
+- **records:** 2  ·  extracted 1  ·  needs_review 0  ·  rejected 1  ·  stale 1
 - **scholar-agent fallback query used:** not captured
 
 ## Full text wanted
@@ -59,7 +61,7 @@ _14 paper(s) judged relevant from the abstract, with no full text on disk — pa
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Raaflaub_1975.pdf` | Raaflaub J et al., On the pharmacokinetics of phenacetin i…, European journal of clinica… (1975) | popPK | 10 | [10.1007/BF00567125](https://doi.org/10.1007/BF00567125) | [1233222](https://pubmed.ncbi.nlm.nih.gov/1233222) | The paper reports quantitative PK parameters (t1/2, Vd, clearance) for phenacetin in humans, with specific numeric ranges provided in the text. |
+| `Raaflaub_1975.pdf` | Raaflaub J et al., On the pharmacokinetics of phenacetin i…, European journal of clinica… (1975) | popPK | 9 | [10.1007/BF00567125](https://doi.org/10.1007/BF00567125) | [1233222](https://pubmed.ncbi.nlm.nih.gov/1233222) | The paper reports specific quantitative pharmacokinetic parameters for phenacetin in humans, including elimination half-life (37-74 min) and volume of distribution (1.0-2.1 L/kg). |
 | `Gerin_2013.pdf` | Gerin B et al., Assessment of cytochrome P450 (1A2, 2B6…, Xenobiotica; the fate of fo… (2013) | pd | 4 | [10.3109/00498254.2012.719088](https://doi.org/10.3109/00498254.2012.719088) | [23153057](https://www.ncbi.nlm.nih.gov/pubmed/23153057) | metadata signals extractable PD data (EC50) |
 | `Squires_1993.pdf` | Squires RF et al., Indomethacin/ibuprofen-like anti-inflam…, Molecular pharmacology (1993) | pd | 4 | not captured | [8388990](https://www.ncbi.nlm.nih.gov/pubmed/8388990) | metadata signals extractable PD data (EC50) |
 | `Nagaya_2025.pdf` | Nagaya Y et al., In vitro-in vivo scaling of cytochrome…, Drug metabolism and disposi… (2025) | pgx | 8 | [10.1016/j.dmd.2025.100065](https://doi.org/10.1016/j.dmd.2025.100065) | [40199158](https://www.ncbi.nlm.nih.gov/pubmed/40199158) | metadata signals extractable PGX data (CYP1A2, PK/PD-context) |
@@ -74,67 +76,66 @@ _14 paper(s) judged relevant from the abstract, with no full text on disk — pa
 | `Ito_2015.pdf` | Ito M et al., Functional characterization of 20 allel…, Drug metabolism and pharmac… (2015) | pgx | 5 | [10.1016/j.dmpk.2015.03.001](https://doi.org/10.1016/j.dmpk.2015.03.001) | [26022657](https://www.ncbi.nlm.nih.gov/pubmed/26022657) | metadata signals extractable PGX data (CYP1A2) |
 | `Kim_2012.pdf` | Kim SY et al., Metabolism of R- and S-warfarin by CYP2…, Drug metabolism letters (2012) | pgx | 5 | [10.2174/1872312811206030002](https://doi.org/10.2174/1872312811206030002) | [23331088](https://www.ncbi.nlm.nih.gov/pubmed/23331088) | metadata signals extractable PGX data (CYP2C19) |
 
-<sub>queue written 2026-10-01T21:22:43.103713+00:00</sub>
+<sub>queue written 2026-10-07T06:51:07.260657+00:00</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| PGx | Albassam_2021 | not_relevant | 0 | 0 | The study investigates the in vitro inhibition of CYP enzymes by pterostilbene using phenacetin as a substrate, but does not report any pharmacogenomic effects (gene variants) on phenacetin's PK/PD parameters. |
-| PGx | Behera_2023 | not_relevant | 0 | 0 | The paper investigates the effect of a chemical inhibitor (saccharolactone) on CYP-mediated metabolism, not the effect of a gene variant or genotype on pharmacokinetics. |
-| popPK | Belle_2000 | irrelevant | 0 | 0 | The study reports in-vitro enzyme kinetics (Vmax, KM) for phenacetin metabolism, not in-vivo pharmacokinetic disposition parameters (CL, V, ka). |
-| PGx | Belle_2000 | not_relevant | 0 | 0 | The paper characterizes enzyme kinetics and identifies CYP1A2 as the responsible enzyme using population modeling, but it does not report a pharmacogenomic effect (gene variant/genotype) on a PK or PD parameter. |
-| PGx | Burnham_2022 | not_relevant | 0 | 0 | The study focuses on sunitinib metabolism and uses phenacetin only as a probe substrate to estimate CYP1A2 activity, not to report pharmacogenomic effects on phenacetin's PK/PD parameters. |
-| PGx | Ching_2001 | not_relevant | 0 | 0 | The paper investigates the inhibition of CYP enzymes by quinidine and quinine using phenacetin as a probe substrate, but does not report pharmacogenomic effects (gene variants) on phenacetin PK/PD. |
-| PGx | Chitrangi_2017 | not_relevant | 0 | 0 | The paper describes an in vitro model for drug metabolism and toxicity but does not report any pharmacogenomic effects (gene variants) on PK/PD parameters. |
-| PGx | Cohen_2000 | not_relevant | 0 | 0 | The paper discusses the epidemiology and etiology of bladder cancer, mentioning phenacetin as a carcinogen, but does not report pharmacogenomic effects on its pharmacokinetic or pharmacodynamic parameters. |
-| PGx | Distlerath_1985 | not_relevant | 2 | 0 | The paper characterizes the enzymes (P-450DB and P-450PA) involved in phenacetin metabolism but does not report specific pharmacokinetic or pharmacodynamic parameter changes linked to genotypes in a clinical or population study. |
-| PGx | Dong_2021 | not_relevant | 0 | 0 | The paper investigates drug-drug interaction (binimetinib inhibiting CYP1A2) and does not report any pharmacogenomic effects (gene variants) on phenacetin PK/PD. |
-| PGx | Edwards_1994 | not_relevant | 0 | 0 | The paper focuses on the metabolism of heterocyclic amines and uses phenacetin only as a probe substrate for enzyme activity, not as the drug of interest for pharmacogenomic PK/PD analysis. |
-| PGx | Eugster_1993 | not_relevant | 0 | 0 | The paper studies CYP1A1/2 enzyme kinetics and inhibition in yeast, not the effect of genetic variants on phenacetin pharmacokinetics or pharmacodynamics. |
-| PGx | Ge_2024 | not_relevant | 0 | 0 | The study investigates drug-drug interactions between herbal extracts and uses phenacetin only as a probe substrate for CYP1A2 activity, without reporting any pharmacogenomic effects (gene variants) on phenacetin PK/PD. |
-| popPK | Gerin_2013 | irrelevant | 0 | 0 | Phenacetin is used only as a probe substrate for CYP1A2 induction in an in-vitro hepatocyte assay, not as the subject drug for pharmacokinetic parameter estimation. |
+| PGx | Albassam_2021 | not_relevant | 0 | 0 | The paper reports in vitro CYP inhibition by pterostilbene using phenacetin as a substrate, but does not investigate gene variants or genetic phenotypes affecting the pharmacokinetics or pharmacodynamics of phenacetin. |
+| PGx | Behera_2023 | not_relevant | 0 | 0 | The paper investigates the in vitro effect of saccharolactone on CYP-mediated metabolism of phenacetin, which is an environmental/chemical interference study, not a pharmacogenomic study of genetic variants. |
+| popPK | Belle_2000 | irrelevant | 0 | 0 | The study reports in-vitro enzyme kinetics (Vmax, KM) for phenacetin metabolism in liver microsomes, not in-vivo pharmacokinetic disposition parameters (CL, V, ka). |
+| PGx | Belle_2000 | not_relevant | 0 | 0 | The study characterizes enzyme kinetics using human liver microsomes and correlates with probe activities, but does not report the effect of any specific genetic variant or genotype on phenacetin PK/PD parameters. |
+| PGx | Burnham_2022 | not_relevant | 0 | 0 | The study investigates sunitinib pharmacokinetics, and while phenacetin is used as a P450 1A2 activity probe, no pharmacogenomic effect of phenacetin is reported. |
+| PGx | Ching_2001 | not_relevant | 0 | 0 | The paper reports enzyme inhibition of CYP1A1/1A2 by quinidine and quinine, but it does not link any gene variant or genotype to changes in phenacetin PK/PD. |
+| PGx | Chitrangi_2017 | not_relevant | 0 | 0 | The paper describes an in vitro model for drug metabolism but does not report any genetic variants, genotypes, or phenotypes affecting phenacetin PK/PD parameters. |
+| PGx | Cohen_2000 | not_relevant | 0 | 0 | The paper is a review of bladder cancer epidemiology and does not report pharmacokinetic or pharmacodynamic parameters of phenacetin. |
+| PGx | Dong_2021 | not_relevant | 0 | 0 | The study investigates the CYP1A2 inhibition of binimetinib on phenacetin metabolism in human liver microsomes and does not report any gene variants or genotypes affecting pharmacokinetic or pharmacodynamic parameters. |
+| PGx | Edwards_1994 | not_relevant | 0 | 0 | The paper investigates the metabolic activation of heterocyclic amines (MeIQx, IQ, PhIP) in monkeys and humans, not the pharmacokinetics or pharmacodynamics of phenacetin. |
+| PGx | Eugster_1993 | not_relevant | 0 | 0 | The paper studies enzyme kinetics and inhibition in a heterologous yeast expression system; it does not report pharmacogenomic effects (gene variant associations) on phenacetin PK or PD in humans. |
+| PGx | Ge_2024 | not_relevant | 0 | 0 | The study investigates a drug-drug interaction between herbal extracts using phenacetin only as a probe substrate for CYP1A2, with no mention of genetic variants or pharmacogenomics. |
+| popPK | Gerin_2013 | irrelevant | 0 | 0 | Phenacetin is used only as a CYP1A2 probe substrate in an in vitro hepatocyte induction study, not as the subject drug for PK parameter estimation. |
 | PD | Gerin_2013 | not_relevant | 0 | 0 | The paper describes a method validation for CYP induction assays using phenacetin as a probe substrate, not a pharmacodynamic or exposure-response analysis of phenacetin itself. |
-| PGx | Guo_2021 | not_relevant | 0 | 0 | The paper is a general review of CYP1A2 regulation and metabolism, mentioning phenacetin only as a substrate without reporting specific pharmacogenomic effects on its PK/PD parameters. |
-| PGx | He_2022 | not_relevant | 2 | 5 | The paper investigates the role of the circadian clock gene NPAS2 in regulating CYP1A2 activity using phenacetin as a probe substrate, but it does not report pharmacokinetic or pharmacodynamic parameters of phenacetin itself as a therapeutic drug. |
-| PGx | Iwatsubo_1997 | not_relevant | 0 | 0 | The paper is a review on scaling in vitro to in vivo metabolism and does not report specific pharmacogenomic effects of gene variants on phenacetin PK/PD. |
-| PGx | Jiang_2020 | not_relevant | 0 | 0 | The study investigates the effect of selenium supplementation on CYP450 activity, not the effect of a gene variant/genotype on phenacetin pharmacokinetics. |
-| popPK | Kanebratt_2008 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic evaluation of CYP450 induction using HepaRG cells, where phenacetin is used only as a probe substrate for enzyme activity, not as the subject drug for PK parameter estimation. |
+| PGx | Guo_2021 | not_relevant | 0 | 0 | The text is a general review of CYP1A2 regulation and metabolism, mentioning phenacetin only as a substrate, but contains no specific data on gene variants affecting phenacetin pharmacokinetics. |
+| PGx | He_2022 | not_relevant | 2 | 0 | The study investigates the effect of a knockout mouse model (NPAS2 ablation) on CYP1A2 activity using phenacetin as a probe, not a human pharmacogenomic effect of a specific genetic variant on phenacetin PK/PD parameters. |
+| PGx | Iwatsubo_1997 | not_relevant | 0 | 0 | The paper is a review on predicting in vivo metabolism from in vitro data and does not report pharmacogenomic effects of specific gene variants on phenacetin PK/PD parameters. |
+| PGx | Jiang_2020 | not_relevant | 0 | 0 | The paper investigates the effect of dietary selenium (a nutrient/environmental factor) on CYP450 activity, not the effect of a human gene variant or genotype on phenacetin pharmacokinetics. |
+| popPK | Kanebratt_2008 | irrelevant | 0 | 0 | The study is an in vitro mechanistic evaluation of cytochrome P450 induction where phenacetin is used only as a probe substrate for enzyme activity, not for pharmacokinetic parameter estimation. |
 | PD | Kanebratt_2008 | not_relevant | 0 | 0 | The paper focuses on CYP450 enzyme induction in HepaRG cells and does not report a pharmacodynamic exposure-response or dose-response relationship for phenacetin itself. |
-| PGx | Kim_2012 | not_relevant | 0 | 0 | The paper focuses on warfarin metabolism and only mentions phenacetin as a probe substrate for CYP1A2 activity, not as the drug of interest for pharmacogenomic analysis. |
-| popPK | Krenc_2022 | irrelevant | 0 | 0 | The study focuses on the binding of β-eudesmol to CYP isoforms, and phenacetin is only mentioned as a reference substrate for affinity comparison, not as the subject of a pharmacokinetic study. |
+| PGx | Kim_2012 | not_relevant | 0 | 0 | The paper focuses on warfarin metabolism, and the mention of phenacetin is solely to define the activity marker for CYP1A2, not to report pharmacogenomic effects on phenacetin. |
+| popPK | Krenc_2022 | irrelevant | 0 | 0 | The study focuses on the binding of β-eudesmol to cytochrome P450 isoforms, using phenacetin only as a reference ligand for CYP1A2, not as the subject of a pharmacokinetic study. |
 | PD | Krenc_2022 | not_relevant | 0 | 0 | The paper reports in vitro ligand-binding affinities (Ks) for beta-eudesmol and phenacetin to CYP enzymes, which is a pharmacokinetic/metabolic interaction study, not a pharmacodynamic (exposure-response or dose-response) analysis of drug effect. |
-| popPK | Kwon_1997 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of phenytoin, using phenacetin only as an internal standard for HPLC analysis. |
-| PGx | Lee_2013 | not_relevant | 0 | 0 | The paper describes in vitro CYP inhibition assays using phenacetin as a probe substrate and does not report pharmacogenomic effects on phenacetin PK/PD. |
-| popPK | Li_1998 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of CYP1A2 induction where phenacetin is used only as a diagnostic substrate for enzyme activity, not as a subject for pharmacokinetic parameter estimation. |
+| popPK | Kwon_1997 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of phenytoin, with phenacetin used only as an internal standard for HPLC analysis. |
+| PGx | Lee_2013 | not_relevant | 0 | 0 | The paper reports a method for evaluating CYP enzyme inhibition (drug-drug interactions) and does not investigate gene variants or pharmacogenomic effects on PK/PD parameters. |
+| popPK | Li_1998 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of CYP1A2 regulation, using phenacetin only as a diagnostic probe substrate to measure enzyme activity, not to determine population pharmacokinetic parameters. |
 | PD | Li_1998 | not_relevant | 0 | 0 | The paper studies the induction of CYP1A2 by TCDD and MC, using phenacetin-O-deethylase activity only as a diagnostic marker for enzyme expression, not as a pharmacodynamic response to phenacetin exposure. |
 | PGx | Masubuchi_1994 | not_relevant | 0 | 0 | The paper focuses on the metabolism of propranolol, not phenacetin. |
-| PGx | Nagaya_2025 | not_relevant | 0 | 0 | The paper uses phenacetin as a probe substrate to validate a pharmacokinetic prediction method (RAF) but does not report any pharmacogenomic effects (gene variants) on phenacetin's PK or PD parameters. |
-| PGx | Nerurkar_1993 | not_relevant | 0 | 0 | The paper investigates CYP450 isozyme specificity for resorufin substrates in rodents and uses phenacetin only as a chemical inhibitor, not as a drug subject to pharmacogenomic analysis. |
-| popPK | Nielsen-Kudsk_1980 | irrelevant | 1 | 0 | The paper describes an HPLC method for phenacetin but only reports quantitative pharmacokinetic parameters for naproxen, not phenacetin. |
-| PGx | Park_2022 | not_relevant | 0 | 0 | The paper reports in vitro enzyme inhibition of CYP1A2 by a compound (obtusifolin) using phenacetin as a substrate, but does not report a pharmacogenomic effect (gene variant/genotype) on a PK/PD parameter. |
-| PGx | Paudel_2023 | not_relevant | 0 | 0 | The study investigates the inhibitory effect of a natural compound (suberosin) on CYP1A2 activity using phenacetin as a probe, but does not report any pharmacogenomic effects (gene variants) on PK/PD parameters. |
-| popPK | Qiu_2003 | irrelevant | 0 | 0 | Phenacetin is used only as an internal standard for the analysis of baicalin and oxymatrine, not as the subject drug for PK parameter estimation. |
-| popPK | Sharma_2012 | irrelevant | 0 | 0 | The study focuses on adenosine pharmacokinetics, using phenacetin only as an internal standard for the assay, and does not report PK parameters for phenacetin. |
+| PGx | Nagaya_2025 | not_relevant | 0 | 0 | The paper uses phenacetin as a CYP1A2 probe substrate to validate a relative activity factor method for predicting clearance, rather than investigating how specific genetic variants alter its PK/PD. |
+| PGx | Nerurkar_1993 | not_relevant | 0 | 0 | The paper investigates CYP450 isozyme specificity for methoxyresorufin and benzyloxyresorufin in animals, using phenacetin only as a chemical inhibitor to probe enzyme identity, rather than reporting pharmacogenomic effects of gene variants on phenacetin PK/PD. |
+| popPK | Nielsen-Kudsk_1980 | irrelevant | 0 | 0 | The study reports pharmacokinetic parameters for naproxen, while phenacetin is only listed as one of several drugs included in the HPLC analytical method validation. |
+| PGx | Park_2022 | not_relevant | 0 | 0 | The study investigates CYP1A2 inhibition by obtusifolin using phenacetin as a probe substrate, but it does not report pharmacogenomic effects of genetic variants on phenacetin's PK or PD parameters. |
+| PGx | Paudel_2023 | not_relevant | 0 | 0 | The paper investigates the inhibition of CYP1A2 by the phytoconstituent suberosin, not the effect of a human gene variant or genotype on phenacetin pharmacokinetics or pharmacodynamics. |
+| popPK | Qiu_2003 | irrelevant | 0 | 0 | Phenacetin is used only as an internal standard for oxymatrine analysis, not as the subject drug for pharmacokinetic parameter estimation. |
+| popPK | Sharma_2012 | irrelevant | 0 | 0 | Phenacetin is used solely as an internal standard in an assay for adenosine, with no pharmacokinetic data reported for phenacetin itself. |
 | PD | Sharma_2012 | not_relevant | 0 | 0 | The paper describes a method validation for adenosine and uses phenacetin only as an internal standard; it does not report any pharmacodynamic or exposure-response data for phenacetin. |
-| popPK | Shi_2021 | irrelevant | 2 | 8 | Phenacetin is used as a probe substrate to assess CYP1A2 activity in a drug-drug interaction study, not as the subject drug for PK characterization. |
-| PGx | Shi_2021 | not_relevant | 0 | 0 | The study investigates drug-drug interactions (avitinib inhibiting CYP450) in rats, not the effect of a gene variant or genotype on phenacetin pharmacokinetics. |
-| PGx | Sim_2015 | not_relevant | 0 | 0 | The paper reports in vitro inhibition of CYP enzymes by a compound (CTXA) and does not investigate the effect of human gene variants or genotypes on phenacetin pharmacokinetics or pharmacodynamics. |
-| popPK | Squires_1993 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of GABA receptor binding where phenacetin is only mentioned as a negative control, with no pharmacokinetic parameters reported. |
+| popPK | Shi_2021 | irrelevant | 1 | 1 | Phenacetin is used only as a probe substrate to assess the CYP450 inhibitory effects of avitinib, not as the subject of the pharmacokinetic study. |
+| PGx | Shi_2021 | not_relevant | 0 | 0 | The paper investigates the effect of the drug avitinib on CYP450-mediated phenacetin metabolism (drug-drug interaction), not the effect of a genetic variant. |
+| PGx | Sim_2015 | not_relevant | 0 | 0 | The paper studies in vitro enzyme inhibition by a compound (CTXA) and does not report any gene variant or genotype effects on pharmacokinetic or pharmacodynamic parameters. |
+| popPK | Squires_1993 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of GABA receptor binding where phenacetin is used merely as a negative control agent. |
 | PD | Squires_1993 | not_relevant | 0 | 0 | The paper reports that phenacetin failed to potentiate the GABA-antagonistic effect of norfloxacin, providing no numeric PD parameters or exposure-response relationship for phenacetin. |
-| popPK | Steinbrecht_2020 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic paper using phenacetin only as a substrate to measure CYP1A2 enzyme activity, not a pharmacokinetic study reporting disposition parameters for phenacetin. |
+| popPK | Steinbrecht_2020 | irrelevant | 1 | 0 | The study is an in-vitro mechanistic investigation establishing CYP1A2-expressing cell lines, using phenacetin only as a substrate to measure enzyme activity rather than reporting pharmacokinetic disposition parameters for the drug. |
 | PD | Steinbrecht_2020 | not_relevant | 0 | 0 | The paper reports CYP1A2 enzyme activity and aflatoxin B1 toxicity in cell lines, but does not report a pharmacodynamic exposure-response or dose-response relationship for phenacetin itself. |
-| PGx | Tassaneeyakul_1992 | not_relevant | 0 | 0 | The paper investigates caffeine as a probe for CYP450 enzymes and mentions phenacetin only as a substrate for inhibition studies, without reporting any pharmacogenomic effects on phenacetin PK/PD. |
-| PGx | Tassaneeyakul_1993 | not_relevant | 0 | 0 | The paper characterizes enzyme kinetics and inhibitor specificity for CYP1A1/1A2 using phenacetin as a probe, but does not report pharmacogenomic effects of human gene variants on phenacetin PK/PD parameters. |
-| PGx | Tassaneeyakul_1994 | not_relevant | 0 | 0 | The paper focuses on caffeine metabolism and only mentions phenacetin as a probe substrate for CYP1A2 activity without reporting any pharmacogenomic effects on phenacetin PK/PD parameters. |
-| popPK | Tsamandouras_2017 | irrelevant | 2 | 1 | The study is an in-vitro microphysiological system (hepatocyte) study reporting intrinsic clearance, not in-vivo population pharmacokinetic parameters (CL, V, Q, ka) for phenacetin. |
-| PGx | Wang_2020 | not_relevant | 0 | 0 | The paper investigates drug-drug interactions (vonoprazan inhibiting CYP enzymes) and does not report any pharmacogenomic effects (gene variants) on phenacetin PK/PD. |
-| PGx | Wang_2023 | not_relevant | 0 | 0 | The study investigates the effect of a disease state (diabetes) on CYP450 activity, not a genetic variant or genotype. |
-| PGx | Wu_2020 | not_relevant | 0 | 0 | The study investigates herb-drug interactions (calycosin) in rats, not the effect of a gene variant or genotype on phenacetin pharmacokinetics. |
-| PGx | Xiaodong_1994 | not_relevant | 0 | 0 | The study investigates the effect of a drug (omeprazole) on phenacetin pharmacokinetics, not the effect of a gene variant/genotype on phenacetin pharmacokinetics. |
-| PGx | Yun_1992 | not_relevant | 0 | 0 | The paper focuses on the pharmacogenetics of alfentanil metabolism, not phenacetin. |
-| popPK | Zhang_2007 | irrelevant | 0 | 0 | The study is an in-vitro cytotoxicity assay and does not report pharmacokinetic parameters for phenacetin. |
-| PGx | Zhao_1994 | not_relevant | 0 | 0 | The paper studies the metabolism of PhIP by CYP1A2 and mentions phenacetin only as a probe substrate for enzyme activity, not as the drug of interest for a pharmacogenomic study. |
+| PGx | Tassaneeyakul_1992 | not_relevant | 1 | 0 | The paper focuses on the enzymatic kinetics of caffeine metabolism and its interaction with phenacetin in vitro, reporting no pharmacogenomic associations or human clinical PK/PD data for phenacetin. |
+| PGx | Tassaneeyakul_1993 | not_relevant | 0 | 0 | The paper characterizes enzyme kinetics and inhibitor specificity of CYP1A1/1A2 using phenacetin, but does not report a pharmacogenomic effect (gene variant/genotype) on a PK or PD parameter of phenacetin in subjects. |
+| PGx | Tassaneeyakul_1994 | not_relevant | 0 | 0 | The paper investigates caffeine metabolism and only correlates phenacetin O-deethylase activity with CYP1A2 markers without reporting specific pharmacogenomic effect sizes or PK/PD parameters for phenacetin. |
+| popPK | Tsamandouras_2017 | irrelevant | 3 | 2 | This is an in-vitro mechanistic study using hepatocytes (LiverChip) to measure intrinsic metabolic clearance variability, not a pharmacokinetic study in vivo or in humans reporting standard disposition parameters (CL, V, t1/2) for phenacetin as the subject drug in a living organism. |
+| PGx | Wang_2020 | not_relevant | 0 | 0 | The study investigates drug-drug interactions (chemical inhibition) rather than the effect of a specific gene variant or genotype on pharmacokinetics. |
+| PGx | Wang_2023 | not_relevant | 0 | 0 | The study investigates the effect of a metabolic disease (diabetes) on drug PK, not a specific gene variant/genotype. |
+| PGx | Wu_2020 | not_relevant | 0 | 0 | The study investigates drug-drug interactions (calycosin affecting phenacetin metabolism), not the effect of a gene variant or genotype on pharmacokinetics. |
+| PGx | Xiaodong_1994 | not_relevant | 0 | 0 | The study investigates the effect of omeprazole (a drug-drug interaction) on phenacetin PK in healthy volunteers, not the effect of a gene variant or genotype on the parameter. |
+| PGx | Yun_1992 | not_relevant | 0 | 0 | The paper focuses on alfentanil pharmacokinetics and CYP3A4, mentioning phenacetin only as a marker for CYP1A2 activity, not reporting phenacetin pharmacogenomics. |
+| popPK | Zhang_2007 | irrelevant | 0 | 0 | The study is an in vitro cytotoxicity assay and does not report pharmacokinetic disposition parameters for phenacetin. |
+| PGx | Zhao_1994 | not_relevant | 0 | 0 | The paper investigates the metabolism of the food-derived carcinogen PhIP, not the pharmacokinetics or pharmacodynamics of phenacetin. |
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-09-21 04:49 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-10-07 06:51 UTC</sub>

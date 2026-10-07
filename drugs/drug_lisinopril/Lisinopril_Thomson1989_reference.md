@@ -1,10 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C09A&quot;,&quot;href&quot;:&quot;atc/C09A.md&quot;},{&quot;label&quot;:&quot;lisinopril&quot;,&quot;href&quot;:&quot;drugs/drug_lisinopril/&quot;},{&quot;label&quot;:&quot;Thomson_1989 \u00b7 reference&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Lisinopril_Sandra2024_reference&quot;,&quot;label&quot;:&quot;Sandra_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_lisinopril/Lisinopril_Sandra2024_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # lisinopril — `Lisinopril_Thomson1989_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.125). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -20,26 +21,30 @@
 
 A model needs both clearance and volume; without the clearance it could only be built on a library default, so it was not. Extracted — lisinopril: V 36.7 L.
 
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has lisinopril, the second reading unknown; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
+
 <sub>reviewed by rule template (no LLM)</sub>
+
+> ⚠️ **STALE** — review status `needs_review` (reviewed 2026-10-01 00:00:04.653744+00:00) predates the upstream re-run (2026-10-07 06:36:21.968202+00:00). Current validate status: `needs_review`.
 
 ## Citation
 Thomson AH et al., Lisinopril population pharmacokinetics…, British journal of clinical… (1989)
   ·  DOI: [10.1111/j.1365-2125.1989.tb05335.x](https://doi.org/10.1111/j.1365-2125.1989.tb05335.x)
 
 ## Model component
-<dbs-pgx drug="lisinopril" model-id="Lisinopril_Thomson1989_reference" status="needs_review" stale="false" population="elderly and renal disease patients with hypertension" measured-compound="lisinopril" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<dbs-pgx drug="lisinopril" model-id="Lisinopril_Thomson1989_reference" status="needs_review" stale="true" population="elderly and renal disease patients with hypertension" measured-compound="lisinopril" parameterization="apparent" topology="1C"></dbs-pgx>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 1 extracted.
 
-**Parameterization:** mechanistic.
+**Parameterization:** CL/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
 ## Parameters
 > ⚠️ This record is not accepted (current status `needs_review`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 0.251 | `Q61` · V | 36.7 | L | 0.0367 | L | not captured | llm (0.6) | Thomson_1989_table_3:row1:col1, Thomson_1989_table_3:row1:col2, Thomson_1989_table_3:row1:col3, Thomson_1989_table_3:row1:col4, Thomson_1989_table_3:row1:col5 | — | not captured |
+| CL/F | `Q27` · CL/F | 0.25 | L/h | 6.944444444444444e-08 | L/h | not captured | exact (1.0) | Thomson_1989:results_prose | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -50,9 +55,11 @@ Thomson AH et al., Lisinopril population pharmacokinetics…, British journal of
 
 **Interpretation flags:**
 - dropped unlinked row (NIL): '61' — extend the ontology if this is a real PK parameter (source ['Thomson_1989_table_3:row0:col1', 'Thomson_1989_table_3:row0:col2', 'Thomson_1989_table_3:row0:col3', 'Thomson_1989_table_3:row0:col4', 'Thomson_1989_table_3:row0:col5'])
+- dropped unlinked row (NIL): '0.251' — extend the ontology if this is a real PK parameter (source ['Thomson_1989_table_3:row1:col1', 'Thomson_1989_table_3:row1:col2', 'Thomson_1989_table_3:row1:col3', 'Thomson_1989_table_3:row1:col4', 'Thomson_1989_table_3:row1:col5'])
 - routed 'Interindividual variability' → Q312 (IIV) to iiv — variability estimate, not a structural parameter
-- implicit units: '0.251' → L (from the popPK convention: "The paper's footnote defines V as 'volume of distribution' but states no unit for it. Lisinopril is administered orally ")
-- apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=lisinopril
+- salvaged Q27 ('CL/F'=0.25) from results prose — parameter table was unreadable
+- implicit units: 'CL/F' → L/h (from the popPK convention: 'The paper does not explicitly state the unit for CL/F in the provided text or table captions. However, CL/F represents c')
+- apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=lisinopril
 - skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
 - skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
 
@@ -62,6 +69,33 @@ Thomson AH et al., Lisinopril population pharmacokinetics…, British journal of
 
 ## Validation
 
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
+
+| second reader | verdict | agreement | disagreements |
+|---|---|---|---|
+| `gpt-oss:120b` | not confirmed | 0.125 (1/8 fields) | 7 |
+
+<details><summary>7 field(s) a reader read differently</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss:120b` | `model.parameterization` | apparent | mechanistic | mismatch |
+| `gpt-oss:120b` | `parameters[14. v= 02 x wt]` | not captured | 13 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[2. cl = 01 x cr04]` | not captured | 1 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[20. ti = 03]` | not captured | 19 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[cl/f]` | 0.25 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `screen.dose_compound` | lisinopril | unknown | mismatch |
+| `gpt-oss:120b` | `screen.primary_analyte` | lisinopril | unknown | mismatch |
+
+</details>
+
+<details class="legend">
+<summary>Cross-check legend</summary>
+<table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>second reader</code></td><td>a model that re-read the paper independently, always from a different family than the first reading (scholarv2.secondary_for): a qwen primary is checked by gpt-oss:120b, a gpt-oss primary by qwen3.8:27b-mtp-q8_0 — two checkpoints of one family share their misreads, so agreement between them would mean little. A record can have several readers.</td></tr><tr><td><code>agreement</code></td><td>share of the compared fields that reader agreed on.</td></tr><tr><td><code>verdict</code></td><td>per reader: `confirmed` it agrees throughout · `partly confirmed` a non-structural field differs · `not confirmed` a structural one differs (clearance, a volume, ka, a lag) · `primary re-run` the first reading extracted nothing and was given one hinted retry.</td></tr><tr><td><code>combined</code></td><td>the record's verdict over ALL its readers: confirmed only when every reader that answered agrees, disputed as soon as one disagrees on a structural parameter. The most favourable reading is never taken — an extra reader must not be a way to find one that agrees.</td></tr><tr><td><code>kept</code></td><td>which reading the record holds. ALWAYS the first — a disagreement is a signal for a reviewer, never an automatic correction, so the numbers on this page are the first model's either way.</td></tr></tbody></table>
+</details>
+
+
 **Scholar closed-form checks:**
 
 | check | status | expected | obtained | ratio | tol | source |
@@ -69,9 +103,10 @@ Thomson AH et al., Lisinopril population pharmacokinetics…, British journal of
 | C0_has_structural_params | pass | not captured | 1 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | fail | not captured | not captured | not captured | not captured | not captured |
-| C5_dimension_Q61 | pass | [length] ** 3 | not captured | not captured | not captured | ['Thomson_1989_table_3:row1:col1', 'Thomson_1989_table_3:row1:col2', 'Thomson_1989_table_3:row1:col3', 'Thomson_1989_table_3:row1:col4', 'Thomson_1989_table_3:row1:col5'] |
+| C5_dimension_Q27 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Thomson_1989:results_prose'] |
+| C7_apparent_coherence | pass | not captured | not captured | not captured | not captured | not captured |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
-| C9_phys_window_Q61 | pass | volume within physiological range | 36.7 L | not captured | not captured | ['Thomson_1989_table_3:row1:col1', 'Thomson_1989_table_3:row1:col2', 'Thomson_1989_table_3:row1:col3', 'Thomson_1989_table_3:row1:col4', 'Thomson_1989_table_3:row1:col5'] |
+| C9_phys_window_Q27 | pass | clearance within physiological range | 0.25 L/h | not captured | not captured | ['Thomson_1989:results_prose'] |
 
 <details class="legend">
 <summary>Check legend — what each column means</summary>
@@ -106,4 +141,4 @@ _No web simulator for this record: its structure has no shared WebAssembly templ
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-09-30 23:26 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 06:36 UTC</sub>

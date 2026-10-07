@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N03A&quot;,&quot;href&quot;:&quot;atc/N03A.md&quot;},{&quot;label&quot;:&quot;cannabidiol&quot;,&quot;href&quot;:&quot;drugs/drug_cannabidiol/&quot;},{&quot;label&quot;:&quot;Eichler_2023 \u00b7 third_trial_3_mg_kg_n_5&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Cannabidiol_Nachnani2024_reference&quot;,&quot;label&quot;:&quot;Nachnani_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cannabidiol/Cannabidiol_Nachnani2024_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Cannabidiol_Shaik2026_reference&quot;,&quot;label&quot;:&quot;Shaik_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cannabidiol/Cannabidiol_Shaik2026_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Cannabidiol_Snchez2023_reference&quot;,&quot;label&quot;:&quot;S\u00e1nchez_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cannabidiol/Cannabidiol_Snchez2023_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Cannabidiol_Eichler2023_population_value&quot;,&quot;label&quot;:&quot;Eichler_2023_population_value&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cannabidiol/Cannabidiol_Eichler2023_population_value.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Cannabidiol_Eichler2023_population_value&quot;,&quot;label&quot;:&quot;Eichler_2023_population_value&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cannabidiol/Cannabidiol_Eichler2023_population_value.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Cannabidiol_LaporteAmargos2026_reference&quot;,&quot;label&quot;:&quot;Laporte-Amargos_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cannabidiol/Cannabidiol_LaporteAmargos2026_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Cannabidiol_McGilveray2005_reference&quot;,&quot;label&quot;:&quot;McGilveray_2005_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cannabidiol/Cannabidiol_McGilveray2005_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Cannabidiol_Shaik2026_reference&quot;,&quot;label&quot;:&quot;Shaik_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cannabidiol/Cannabidiol_Shaik2026_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Cannabidiol_Snchez2023_reference&quot;,&quot;label&quot;:&quot;S\u00e1nchez_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cannabidiol/Cannabidiol_Snchez2023_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # cannabidiol — `Cannabidiol_Eichler2023_third_trial_3_mg_kg_n_5`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">horse</span>
+> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">horse</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -15,7 +15,7 @@
 
 > **Species: horse.** This record comes from an animal study (horse), not from people. The values, the model and its simulation are shown as the paper reports them — they describe that system, not human pharmacology (read from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).
 
-**Model:** A model was built but held back: a core parameter had no value, so it is not published or simulated.
+**Model:** No model was generated from this record.
 
 ### Reviewer guidance
 
@@ -25,29 +25,29 @@ Simulated as the paper dosed it, the model's terminal half-life differs from the
 
 <sub>reviewed by rule template (no LLM)</sub>
 
+> ⚠️ **STALE** — review status `needs_review` (reviewed 2026-09-28 14:36:32.643563+00:00) predates the upstream re-run (2026-10-07 07:10:12.598474+00:00). Current validate status: `extracted`.
+
 ## Citation
 Eichler F et al., Pharmacokinetic modelling of orally adm…, Frontiers in veterinary sci… (2023)
   ·  DOI: [10.3389/fvets.2023.1234551](https://doi.org/10.3389/fvets.2023.1234551)
 
 ## Model component
-<dbs-pgx drug="cannabidiol" model-id="Cannabidiol_Eichler2023_third_trial_3_mg_kg_n_5" status="needs_review" stale="false" population="horses" measured-compound="cannabidiol" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<dbs-pgx drug="cannabidiol" model-id="Cannabidiol_Eichler2023_third_trial_3_mg_kg_n_5" status="extracted" stale="true" population="horses" measured-compound="cannabidiol" parameterization="apparent" topology="2C"></dbs-pgx>
 
-**Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
+**Model structure:** 2-compartment; no model was built for this record.  
 **Parameters:** 6 extracted.
 
-**Parameterization:** mechanistic.
+**Parameterization:** CL/F, V1/F, V2/F, V3/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
 ## Parameters
-> ⚠️ This record is not accepted (current status `needs_review`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
-
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| AUC0–12 h (h·ng/mL) | `Q19` · AUCt | 58.56 | h·ng/mL | not captured | [[h] · [ng]] / [ml] | not captured | llm (0.6) | Eichler_2023_table_5:row0:col3 | — | not captured |
-| Cmax (ng/mL) | `Q32` · Cmax | 14.61 | ng/mL | not captured | [ng] / [ml] | not captured | exact (1.0) | Eichler_2023_table_5:row1:col3 | — | not captured |
-| tmax (hr) | `Q56` · tmax | 1.02 | hr | 3672.0 | [h] | not captured | exact (1.0) | Eichler_2023_table_5:row2:col3 | — | not captured |
-| Q2 | `Q30` · Q | 1.35 | L/h/kg | 2.625e-05 | L/h | not captured | special_case (0.95) | Eichler_2023:discussion_prose | — | not captured |
-| clearance | `Q22` · CL | 10.75 | L/h/kg | 0.00020902777777777781 | L/h | not captured | exact (1.0) | Eichler_2023:discussion_prose | — | not captured |
-| THC Volumedist (L) | `Q61` · V | 3173.0 | L | 3.173 | L | not captured | review_gapfill (0.7) | Hansen_2024:review | — | not captured |
+| Cl/F (L/h/kg) | `Q27` · CL/F | 10.75 | L/h/kg | 0.00020902777777777781 | [l] / [[h] · [kg]] | not captured | exact (1.0) | tab4:row3:col1 | — | not captured |
+| V1/F (L/kg) | `Q290` · V1/F | 77.13 | L/kg | 5.399099999999999 | [l] / [kg] | not captured | exact (1.0) | tab4:row4:col1 | — | not captured |
+| Q2 (L/h/kg) | `Q30` · Q | 1.35 | L/h/kg | 2.625e-05 | [l] / [[h] · [kg]] | not captured | special_case (0.95) | tab4:row5:col1 | — | not captured |
+| V2/F (L/kg) | `Q82` · V2/F | 313.17 | L/kg | 21.9219 | [l] / [kg] | not captured | exact (1.0) | tab4:row6:col1 | — | not captured |
+| Q3 (L/h/kg) | `Q308` · Q3 | 38.23 | L/h/kg | 0.0007433611111111111 | [l] / [[h] · [kg]] | not captured | exact (1.0) | tab4:row7:col1 | — | not captured |
+| V3/F (L/kg) | `Q78` · V3/F | 241.98 | L/kg | 16.9386 | [l] / [kg] | not captured | exact (1.0) | tab4:row8:col1 | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -57,21 +57,12 @@ Eichler F et al., Pharmacokinetic modelling of orally adm…, Frontiers in veter
 ## Departures & gaps
 
 **Interpretation flags:**
-- unit_dimension_unknown: 'CBDNCA' (AUCt)
-- dropped duplicate Q19 ('AUC0−12h(CBDPop_PK)AUC0−12h(CBDNCA)', value '0.98') — already have one for this compound
-- unit_dimension_unknown: 'CBDNCA' (Cmax)
-- dropped duplicate Q32 ('Cmax(CBDPop_PK)Cmax(CBDNCA)', value '1.18') — already have one for this compound
-- unit_dimension_unknown: 'CBDNCA' (tmax)
-- dropped duplicate Q56 ('tmax(CBDPop_PK)tmax(CBDNCA)', value '1.12') — already have one for this compound
-- salvaged Q30 ('Q2'=1.35) from results prose — parameter table was unreadable
-- salvaged Q22 ('clearance'=10.75) from results prose — parameter table was unreadable
-- apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=cannabidiol
-- held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
-- structure disagreement: deterministic 1C vs LLM 2C — review compartment count
-- status held at route_to_review — not promoted
-- population split: 'third trial (3 mg/kg, n = 5)' subgroup of Eichler_2023 (paper reports 4 populations: first trial (0.2 mg/kg, n = 3), population value, second trial (1 mg/kg, n = 3), third trial (3 mg/kg, n = 5))
-- gap-filled Q61 (V) from Hansen_2024's review values (primary lacked it)
-- skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
+- table section residual_error: 'a' routed out of structural estimates ('Residual error')
+- table section residual_error: 'b' routed out of structural estimates ('Residual error')
+- dropped unlinked row (NIL): 'Tk0 (h)' — extend the ontology if this is a real PK parameter (source ['tab4:row2:col1'])
+- apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=cannabidiol
+- structure disagreement: deterministic 2C vs LLM 3C — review compartment count
+- population split: 'population value' subgroup of Eichler_2023 (paper reports 4 populations: first trial (0.2 mg/kg, n = 3), population value, second trial (1 mg/kg, n = 3), third trial (3 mg/kg, n = 5))
 
 **Extraction notes:**
 - companion parameter table 5 transcribed (18 record(s))
@@ -83,18 +74,20 @@ Eichler F et al., Pharmacokinetic modelling of orally adm…, Frontiers in veter
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 5 | not captured | not captured | not captured |
+| C0_has_structural_params | pass | not captured | 6 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
-| C0c_disposition_complete | fail | not captured | not captured | not captured | not captured | not captured |
-| C1_half_life_beta | fail | 161.29 | 204.591 | 1.2685 | 0.25 | reported t½β |
-| C5_dimension_Q19 | pass | [time] * [mass] / [length] ** 3 | not captured | not captured | not captured | ['Eichler_2023_table_5:row0:col3'] |
-| C5_dimension_Q32 | pass | [mass] / [length] ** 3 | not captured | not captured | not captured | ['Eichler_2023_table_5:row1:col3'] |
-| C5_dimension_Q56 | pass | [time] | not captured | not captured | not captured | ['Eichler_2023_table_5:row2:col3'] |
-| C5_dimension_Q61 | pass | [length] ** 3 | not captured | not captured | not captured | ['Hansen_2024:review'] |
-| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 10.75 | not captured | not captured | ['Eichler_2023:discussion_prose'] |
+| C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
+| C5_dimension_Q27 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['tab4:row3:col1'] |
+| C5_dimension_Q290 | pass | [length] ** 3 | not captured | not captured | not captured | ['tab4:row4:col1'] |
+| C5_dimension_Q30 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['tab4:row5:col1'] |
+| C5_dimension_Q308 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['tab4:row7:col1'] |
+| C5_dimension_Q78 | pass | [length] ** 3 | not captured | not captured | not captured | ['tab4:row8:col1'] |
+| C5_dimension_Q82 | pass | [length] ** 3 | not captured | not captured | not captured | ['tab4:row6:col1'] |
+| C7_apparent_coherence | pass | not captured | not captured | not captured | not captured | not captured |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
-| C9_phys_window_Q22 | pass | clearance within physiological range | 753 L/h | not captured | not captured | ['Eichler_2023:discussion_prose'] |
-| C9_phys_window_Q61 | pass | volume within physiological range | 3.17e+03 L | not captured | not captured | ['Hansen_2024:review'] |
+| C9_phys_window_Q27 | pass | clearance within physiological range | 753 L/h | not captured | not captured | ['tab4:row3:col1'] |
+| C9_phys_window_Q290 | pass | volume within physiological range | 5.4e+03 L | not captured | not captured | ['tab4:row4:col1'] |
+| C9_phys_window_Q82 | pass | volume within physiological range | 2.19e+04 L | not captured | not captured | ['tab4:row6:col1'] |
 
 <details class="legend">
 <summary>Check legend — what each column means</summary>
@@ -129,4 +122,4 @@ _No web simulator for this record: its structure has no shared WebAssembly templ
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-09-21 15:55 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 07:10 UTC</sub>

@@ -1,5 +1,5 @@
 {
- "dose_source": "paper",
+ "dose_source": "WHO ATC DDD 300 mg oral (N02BF02)",
  "model_id": "Pregabalin_Bae2016_reference",
  "molar_masses": {
   "central.C": 0.1592261
@@ -7,11 +7,6 @@
  "note": "Values for the shared PK_1C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
  "observables": [
   "central.C"
- ],
- "paper_doses_kind": "range",
- "paper_doses_mg": [
-  25.0,
-  1000.0
  ],
  "parameters": {
   "Cl": 3.222222222222222e-07,
@@ -21,65 +16,15 @@
   "VdPerKg": 0.0015571428571428572,
   "adminCount": 1.0,
   "adminDuration": 600.0,
-  "adminMass": 2.5e-05,
+  "adminMass": 0.0003,
   "ka": 0.0005555555555555556,
   "weight": 70.0
  },
- "pgx": {
-  "effects": {
-   "Intermediate": [
-    {
-     "compound": "pregabalin",
-     "parameter": "u 1 Typical value of apparent clearance (L/h)",
-     "reference": 1.16,
-     "scale": "categorical_fractional",
-     "theta": -0.0496,
-     "value": 1.1024639999999999
-    }
-   ],
-   "Poor": [
-    {
-     "compound": "pregabalin",
-     "parameter": "u 1 Typical value of apparent clearance (L/h)",
-     "reference": 1.16,
-     "scale": "categorical_fractional",
-     "theta": -0.0594,
-     "value": 1.0910959999999998
-    }
-   ]
-  },
-  "gene": "NAT2",
-  "labels": {
-   "Intermediate": "Intermediate metabolizer",
-   "Normal": "Normal metabolizer (reference)",
-   "Poor": "Poor metabolizer"
-  },
-  "note": "Each phenotype runs the same template with the parameters the gene acts on changed as the paper states (a fraction on the logit scale), and every parameter the template derives from them recomputed; the reference phenotype is the record's own model.",
-  "order": [
-   "Poor",
-   "Intermediate",
-   "Normal"
-  ],
-  "phenotypes": {
-   "Intermediate": {
-    "Cl": 3.0624e-07
-   },
-   "Normal": {},
-   "Poor": {
-    "Cl": 3.0308222222222216e-07
-   }
-  },
-  "record": "Bae_2016",
-  "reference": "Normal",
-  "sources": [
-   "Bae_2016 covariate NAT2"
-  ]
- },
  "reference_peak_times": {
-  "central.C": 9696.19238476954
+  "central.C": 9866.164276047984
  },
  "reference_peaks": {
-  "central.C": 0.00022301231119199977
+  "central.C": 0.0026762060924872978
  },
  "stop_time": 1209600.0,
  "template": "PK_1C_enteral",

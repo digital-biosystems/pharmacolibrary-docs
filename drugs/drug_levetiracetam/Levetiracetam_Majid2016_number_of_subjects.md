@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N03A&quot;,&quot;href&quot;:&quot;atc/N03A.md&quot;},{&quot;label&quot;:&quot;levetiracetam&quot;,&quot;href&quot;:&quot;drugs/drug_levetiracetam/&quot;},{&quot;label&quot;:&quot;Majid_2016 \u00b7 number_of_subjects&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Levetiracetam_Schoemaker2018_reference&quot;,&quot;label&quot;:&quot;Schoemaker_2018_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_levetiracetam/Levetiracetam_Schoemaker2018_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Levetiracetam_Onos2022_reference&quot;,&quot;label&quot;:&quot;Onos_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_levetiracetam/Levetiracetam_Onos2022_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Levetiracetam_Li2023_base&quot;,&quot;label&quot;:&quot;Li_2023_base&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_levetiracetam/Levetiracetam_Li2023_base.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Levetiracetam_Schoemaker2018_reference&quot;,&quot;label&quot;:&quot;Schoemaker_2018_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_levetiracetam/Levetiracetam_Schoemaker2018_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Levetiracetam_Sharpe2024_reference&quot;,&quot;label&quot;:&quot;Sharpe_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_levetiracetam/Levetiracetam_Sharpe2024_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -13,7 +13,7 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
-**Model:** A model was built but held back: a core parameter had no value, so it is not published or simulated.
+**Model:** No model was generated from this record.
 
 ### Reviewer guidance
 
@@ -32,7 +32,7 @@ Majid O et al., Impact of perampanel on pharmacokinetic…, British journal of c
 ## Model component
 <dbs-pgx drug="levetiracetam" model-id="Levetiracetam_Majid2016_number_of_subjects" status="model_quarantined" stale="false" population="patients with refractory partial-onset seizures" measured-compound="concomitant antiepileptic drugs" parameterization="mechanistic" topology="1C"></dbs-pgx>
 
-**Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
+**Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 1 extracted.
 
 **Parameterization:** mechanistic.
@@ -72,6 +72,7 @@ Majid O et al., Impact of perampanel on pharmacokinetic…, British journal of c
 - held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
 - status held at route_to_review — not promoted
 - population split: 'number of subjects' subgroup of Majid_2016 (paper reports 3 populations: aed apparent clearance (l h −1 ), number of subjects, variability)
+- review gap-fill skipped: this record measures 'concomitant antiepileptic drugs', not levetiracetam — the review values are the parent's
 
 **Extraction notes:**
 - LLM selected parameter table(s) 2

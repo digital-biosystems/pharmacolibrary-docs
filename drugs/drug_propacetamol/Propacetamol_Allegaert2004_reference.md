@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N02B&quot;,&quot;href&quot;:&quot;atc/N02B.md&quot;},{&quot;label&quot;:&quot;propacetamol&quot;,&quot;href&quot;:&quot;drugs/drug_propacetamol/&quot;},{&quot;label&quot;:&quot;Allegaert_2004 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Propacetamol_Prins2008_reference&quot;,&quot;label&quot;:&quot;Prins_2008_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_propacetamol/Propacetamol_Prins2008_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Propacetamol_Prins2008_reference&quot;,&quot;label&quot;:&quot;Prins_2008_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_propacetamol/Propacetamol_Prins2008_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # propacetamol — `Propacetamol_Allegaert2004_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.667). The first reading is what the record holds.">cross-check: partial</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.667). The first reading is what the record holds.">cross-check: partial</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -25,6 +25,8 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the val
 
 <sub>reviewed by glm-5.3-flash</sub>
 
+> ⚠️ **STALE** — review status `rejected` (reviewed 2026-09-28 14:39:30.132650+00:00) predates the upstream re-run (2026-10-07 07:20:49.684492+00:00). Current validate status: `rejected`.
+
 > **Dose compound ≠ measured compound:** dosed `propacetamol`, measured `paracetamol`.
 
 ## Citation
@@ -32,42 +34,28 @@ Allegaert K et al., Intravenous paracetamol (propacetamol)…, European journal 
   ·  DOI: [10.1007/s00228-004-0756-x](https://doi.org/10.1007/s00228-004-0756-x)
 
 ## Model component
-<dbs-pgx drug="propacetamol" model-id="Propacetamol_Allegaert2004_reference" status="rejected" stale="false" population="term and preterm neonates" measured-compound="paracetamol" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<dbs-pgx drug="propacetamol" model-id="Propacetamol_Allegaert2004_reference" status="rejected" stale="true" population="term and preterm neonates" measured-compound="paracetamol" parameterization="mechanistic" topology="1C"></dbs-pgx>
 
 **Model structure:** 1-compartment; no model was built for this record.  
-**Parameters:** 2 extracted.
+**Parameters:** 0 extracted.
 
 **Parameterization:** mechanistic.
 
 ## Parameters
 > ⚠️ This record is not accepted (current status `rejected`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
 
-| label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
-|---|---|---|---|---|---|---|---|---|---|---|
-| population volume of distribution estimate | `Q61` · V | 70.4 | l | 0.0704 | [l] | not captured | llm_confirmed (0.6) | Allegaert_2004:abstract | — | not captured |
-| Clearance | `Q22` · CL | 2.85 | l/70 kg | not captured | [l] / [70kg] | not captured | exact (1.0) | Allegaert_2004:abstract, Allegaert_2004:abstract | — | not captured |
-
-<details class="legend">
-<summary>Column legend — what each column means</summary>
-<table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>label (paper)</code></td><td>the row or statistic label exactly as printed in the paper (label_verbatim) — never normalised, so it can be found in the PDF.</td></tr><tr><td><code>Q-code · name</code></td><td>the ontology parameter this label was matched to (Q22 = clearance, Q27 = CL/F, Q49 = ka, Q57 = half-life, …) and its canonical name. The Q-code, not the label, is what scoring and cross-paper merging use.</td></tr><tr><td><code>value</code></td><td>the estimate as reported in the paper.</td></tr><tr><td><code>unit</code></td><td>the unit as printed (unit_verbatim).</td></tr><tr><td><code>value_si</code></td><td>the value converted to the canonical unit. Empty when no conversion was possible — usually an unparseable or missing unit.</td></tr><tr><td><code>unit_canonical</code></td><td>the canonical unit for that Q-code, i.e. what value_si is expressed in.</td></tr><tr><td><code>RSE%</code></td><td>relative standard error of the estimate, when the paper reports one.</td></tr><tr><td><code>link</code></td><td>how the label was matched to the Q-code, with confidence. exact / boundary / fuzzy / tv_prefix / caption_compartment / special_case are deterministic string matches; llm, llm_confirmed, llm_corrected involved the model; review and review_gapfill come from the secondary review tier, the latter filling a parameter the primary extraction missed; boundary_relink is a corrected match.</td></tr><tr><td><code>source</code></td><td>where in the paper the number came from: colN = that column of the located table, other_prose = running text, review = the secondary tier, pgx = a pharmacogenomic record.</td></tr><tr><td><code>covariates</code></td><td>covariate effects attached to this parameter (e.g. weight on CL).</td></tr><tr><td><code>IIV</code></td><td>inter-individual variability reported for this parameter.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>the field is absent from the KB artifact — nothing was recorded. This is NOT the same as zero or empty: the value is unknown, not measured to be nothing.</td></tr><tr><td><code>—</code></td><td>deliberately not shown: the column does not apply to this row.</td></tr><tr><td><code>not verified</code></td><td>the record is not in an accepted state (see the badge and the note above the table); the numbers are shown as extracted, not endorsed.</td></tr></tbody></table>
-</details>
+_No resolved parameters._
 
 ## Departures & gaps
 
 **Interpretation flags:**
-- unit_dimension_mismatch: 'Clearance' → Q22 (unit '[length] ** 3' vs ontology '[length] ** 3 / [time]') — route to review
-- covariate category for IOV from footnote/prose kept as documentation only (['Allegaert_2004:abstract'])
-- dropped unlinked row (NIL): 'daily dose' — extend the ontology if this is a real PK parameter (source ['Allegaert_2004:abstract'])
-- unit_dimension_unknown: 'l/h per kg' (CL)
-- dropped duplicate Q22 ('clearance', value 0.25) — already have one for this compound
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=paracetamol
-- held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
-- status held at route_to_review — not promoted
+- template fit: none — only the metabolite is modelled — no parent compartment
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
 - review gap-fill skipped: this record measures 'paracetamol', not propacetamol — the review values are the parent's
 
 **Extraction notes:**
-- no GROBID TEI available — transcribed from abstract in Allegaert_2004_metadata.yaml (8 record(s)); values are summary statistics, not a fitted model
+- no GROBID TEI available — transcribed from abstract in Allegaert_2004_metadata.yaml (0 record(s)); values are summary statistics, not a fitted model
 
 ## Validation
 
@@ -97,14 +85,9 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 2 | not captured | not captured | not captured |
-| C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
-| C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
-| C5_dimension_Q22 | fail | [length] ** 3 | l/70 kg | not captured | not captured | ['Allegaert_2004:abstract', 'Allegaert_2004:abstract'] |
-| C5_dimension_Q61 | pass | [length] ** 3 | not captured | not captured | not captured | ['Allegaert_2004:abstract'] |
-| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 2.85 | not captured | not captured | ['Allegaert_2004:abstract', 'Allegaert_2004:abstract'] |
+| C0_has_structural_params | fail | not captured | 0 | not captured | not captured | not captured |
+| C0b_disposition_core | fail | not captured | not captured | not captured | not captured | not captured |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
-| C9_phys_window_Q61 | pass | volume within physiological range | 70.4 L | not captured | not captured | ['Allegaert_2004:abstract'] |
 
 <details class="legend">
 <summary>Check legend — what each column means</summary>
@@ -129,4 +112,4 @@ _No web simulator for this record: its structure has no shared WebAssembly templ
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-09-21 16:55 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 07:20 UTC</sub>

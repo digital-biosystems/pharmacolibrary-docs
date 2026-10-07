@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N02B&quot;,&quot;href&quot;:&quot;atc/N02B.md&quot;},{&quot;label&quot;:&quot;nefopam&quot;,&quot;href&quot;:&quot;drugs/drug_nefopam/&quot;},{&quot;label&quot;:&quot;Mimoz_2010 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Nefopam_Djerada2014_reference&quot;,&quot;label&quot;:&quot;Djerada_2014_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_nefopam/Nefopam_Djerada2014_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Nefopam_Djerada2014_reference&quot;,&quot;label&quot;:&quot;Djerada_2014_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_nefopam/Nefopam_Djerada2014_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # nefopam — `Nefopam_Mimoz2010_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.667). The first reading is what the record holds.">cross-check: partial</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.667). The first reading is what the record holds.">cross-check: partial</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -25,45 +25,36 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the val
 
 <sub>reviewed by rule template (no LLM)</sub>
 
+> ⚠️ **STALE** — review status `needs_review` (reviewed 2026-09-28 14:39:11.409960+00:00) predates the upstream re-run (2026-10-07 06:36:51.613746+00:00). Current validate status: `rejected`.
+
+> **Dose compound ≠ measured compound:** dosed `nefopam`, measured `desmethyl-nefopam`.
+
 ## Citation
 Mimoz O et al., Nefopam pharmacokinetics in patients wi…, Anesthesia and analgesia (2010)
   ·  DOI: [10.1213/ANE.0b013e3181f33488](https://doi.org/10.1213/ANE.0b013e3181f33488)
 
 ## Model component
-<dbs-pgx drug="nefopam" model-id="Nefopam_Mimoz2010_reference" status="needs_review" stale="false" population="patients with end-stage renal disease and healthy volunteers" measured-compound="nefopam" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<dbs-pgx drug="nefopam" model-id="Nefopam_Mimoz2010_reference" status="rejected" stale="true" population="adults with end-stage renal disease" measured-compound="desmethyl-nefopam" parameterization="mechanistic" topology="parent_metabolite"></dbs-pgx>
 
-**Model structure:** 1-compartment; no model was built for this record.  
-**Parameters:** 1 extracted.
+**Model structure:** parent + metabolite; no model was built for this record.  
+**Parameters:** 0 extracted.
 
 **Parameterization:** mechanistic.
 
 ## Parameters
-> ⚠️ This record is not accepted (current status `needs_review`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
+> ⚠️ This record is not accepted (current status `rejected`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
 
-| label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
-|---|---|---|---|---|---|---|---|---|---|---|
-| 264 L | `Q61` · V | 264 | L | 0.264 | [l] | not captured | llm (0.6) | Mimoz_2010:abstract | — | not captured |
-
-<details class="legend">
-<summary>Column legend — what each column means</summary>
-<table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>label (paper)</code></td><td>the row or statistic label exactly as printed in the paper (label_verbatim) — never normalised, so it can be found in the PDF.</td></tr><tr><td><code>Q-code · name</code></td><td>the ontology parameter this label was matched to (Q22 = clearance, Q27 = CL/F, Q49 = ka, Q57 = half-life, …) and its canonical name. The Q-code, not the label, is what scoring and cross-paper merging use.</td></tr><tr><td><code>value</code></td><td>the estimate as reported in the paper.</td></tr><tr><td><code>unit</code></td><td>the unit as printed (unit_verbatim).</td></tr><tr><td><code>value_si</code></td><td>the value converted to the canonical unit. Empty when no conversion was possible — usually an unparseable or missing unit.</td></tr><tr><td><code>unit_canonical</code></td><td>the canonical unit for that Q-code, i.e. what value_si is expressed in.</td></tr><tr><td><code>RSE%</code></td><td>relative standard error of the estimate, when the paper reports one.</td></tr><tr><td><code>link</code></td><td>how the label was matched to the Q-code, with confidence. exact / boundary / fuzzy / tv_prefix / caption_compartment / special_case are deterministic string matches; llm, llm_confirmed, llm_corrected involved the model; review and review_gapfill come from the secondary review tier, the latter filling a parameter the primary extraction missed; boundary_relink is a corrected match.</td></tr><tr><td><code>source</code></td><td>where in the paper the number came from: colN = that column of the located table, other_prose = running text, review = the secondary tier, pgx = a pharmacogenomic record.</td></tr><tr><td><code>covariates</code></td><td>covariate effects attached to this parameter (e.g. weight on CL).</td></tr><tr><td><code>IIV</code></td><td>inter-individual variability reported for this parameter.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>the field is absent from the KB artifact — nothing was recorded. This is NOT the same as zero or empty: the value is unknown, not measured to be nothing.</td></tr><tr><td><code>—</code></td><td>deliberately not shown: the column does not apply to this row.</td></tr><tr><td><code>not verified</code></td><td>the record is not in an accepted state (see the badge and the note above the table); the numbers are shown as extracted, not endorsed.</td></tr></tbody></table>
-</details>
-
-### Unresolved rows _(no Q-code or no value — not parameters)_
-| label (paper) | Q-code | value | link |
-|---|---|---|---|
-| creatinine clearance | Q22 | not captured | llm_confirmed |
+_No resolved parameters._
 
 ## Departures & gaps
 
 **Interpretation flags:**
-- dropped unlinked row (NIL): 'mean age' — extend the ontology if this is a real PK parameter (source ['Mimoz_2010:abstract'])
-- dropped duplicate Q22 ('mean nefopam clearance', value 37.0) — already have one for this compound
-- apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=nefopam
+- apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=desmethyl-nefopam
+- template fit: none — only the metabolite is modelled — no parent compartment
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
 
 **Extraction notes:**
-- no GROBID TEI available — transcribed from abstract in Mimoz_2010_metadata.yaml (5 record(s)); values are summary statistics, not a fitted model
+- no GROBID TEI available — transcribed from abstract in Mimoz_2010_metadata.yaml (0 record(s)); values are summary statistics, not a fitted model
 
 ## Validation
 
@@ -93,13 +84,9 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 1 | not captured | not captured | not captured |
-| C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
-| C0c_disposition_complete | fail | not captured | not captured | not captured | not captured | not captured |
-| C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Mimoz_2010:abstract'] |
-| C5_dimension_Q61 | pass | [length] ** 3 | not captured | not captured | not captured | ['Mimoz_2010:abstract'] |
+| C0_has_structural_params | fail | not captured | 0 | not captured | not captured | not captured |
+| C0b_disposition_core | fail | not captured | not captured | not captured | not captured | not captured |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
-| C9_phys_window_Q61 | pass | volume within physiological range | 264 L | not captured | not captured | ['Mimoz_2010:abstract'] |
 
 <details class="legend">
 <summary>Check legend — what each column means</summary>
@@ -113,19 +100,9 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
-## Downloadable models
+## Models
 
-<div class="pk-models-grid"><div class="pk-models-table">
-<table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-</tbody></table>
-<p>No bundles have been generated for this record yet. When the engineer emits them they appear here automatically — this page reports what is on disk and generates nothing itself.</p>
-</div></div>
+<p>No downloads: this record is <b>rejected</b>, so it is not published as a model. Any archives generated for it before the verdict have been removed — a download outlives the page that explains it.</p>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
@@ -134,4 +111,4 @@ _No web simulator for this record: its structure has no shared WebAssembly templ
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-09-21 03:59 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 06:36 UTC</sub>

@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N03A&quot;,&quot;href&quot;:&quot;atc/N03A.md&quot;},{&quot;label&quot;:&quot;lacosamide&quot;,&quot;href&quot;:&quot;drugs/drug_lacosamide/&quot;},{&quot;label&quot;:&quot;Li_2025 \u00b7 boostrap&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Lacosamide_Yu2026_reference&quot;,&quot;label&quot;:&quot;Yu_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_lacosamide/Lacosamide_Yu2026_reference.md&quot;,&quot;status&quot;:&quot;accepted (caveats)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Lacosamide_Li2025_boostrap&quot;,&quot;label&quot;:&quot;Li_2025_boostrap&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_lacosamide/Lacosamide_Li2025_boostrap.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Lacosamide_Li2025_final_models&quot;,&quot;label&quot;:&quot;Li_2025_final_models&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_lacosamide/Lacosamide_Li2025_final_models.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Lacosamide_Li2025_boostrap&quot;,&quot;label&quot;:&quot;Li_2025_boostrap&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_lacosamide/Lacosamide_Li2025_boostrap.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Lacosamide_Li2025_final_models&quot;,&quot;label&quot;:&quot;Li_2025_final_models&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_lacosamide/Lacosamide_Li2025_final_models.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Lacosamide_Wang2024_reference&quot;,&quot;label&quot;:&quot;Wang_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_lacosamide/Lacosamide_Wang2024_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Lacosamide_Wu2026_reference&quot;,&quot;label&quot;:&quot;Wu_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_lacosamide/Lacosamide_Wu2026_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Lacosamide_Yu2026_reference&quot;,&quot;label&quot;:&quot;Yu_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_lacosamide/Lacosamide_Yu2026_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # lacosamide — `Lacosamide_Li2025_boostrap`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span>
+> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -23,28 +23,26 @@ The paper (Li_2025, children with epilepsy) reports CL/F 1.51 L/h, V/F 23.6 L, K
 
 <sub>reviewed by glm-5.3-flash</sub>
 
+> ⚠️ **STALE** — review status `needs_review` (reviewed 2026-09-28 14:38:27.020133+00:00) predates the upstream re-run (2026-10-07 06:56:42.344208+00:00). Current validate status: `extracted`.
+
 ## Citation
 Li Y et al., PopPK modeling supports BW band dosing…, NPJ genomic medicine (2025)
   ·  DOI: [10.1038/s41525-025-00519-y](https://doi.org/10.1038/s41525-025-00519-y)
 
 ## Model component
-<dbs-pgx drug="lacosamide" model-id="Lacosamide_Li2025_boostrap" status="needs_review" stale="false" population="children with epilepsy" measured-compound="lacosamide" parameterization="apparent" topology="1C"></dbs-pgx>
+<dbs-pgx drug="lacosamide" model-id="Lacosamide_Li2025_boostrap" status="extracted" stale="true" population="children with epilepsy" measured-compound="lacosamide" parameterization="apparent" topology="1C"></dbs-pgx>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
-**Parameters:** 5 extracted.
+**Parameters:** 3 extracted.
 
 **Parameterization:** CL/F, V/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
 ## Parameters
-> ⚠️ This record is not accepted (current status `needs_review`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
-
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
 | CL/F (L/h) | `Q27` · CL/F | 1.51 | L/h | 4.1944444444444446e-07 | [l] / [h] | not captured | exact (1.0) | Tab2:row3:col3, Tab2:row3:col5, Tab2:row15:col3, Tab2:row15:col5 | — | not captured |
 | V/F (L) | `Q76` · V/F | 23.6 | L | 0.023600000000000003 | [l] | not captured | exact (1.0) | Tab2:row4:col3, Tab2:row4:col5, Tab2:row16:col3, Tab2:row16:col5 | — | not captured |
-| Ka | `Q49` · kabs | 2.45 | not captured | not captured | not captured | not captured | exact (1.0) | Tab2:row5:col3, Tab2:row17:col3 | — | not captured |
-| CL-BW | `Q354` · CLnorm | 0.296 | not captured | not captured | not captured | not captured | llm_corrected (0.6) | Tab2:row7:col3, Tab2:row7:col5, Tab2:row19:col3, Tab2:row19:col5 | — | not captured |
-| CL-rs12769205*GG | `Q22` · CL | 0.736 | not captured | not captured | not captured | not captured | llm_confirmed (0.6) | Tab2:row21:col3, Tab2:row21:col5 | — | not captured |
+| Ka | `Q49` · kabs | 2.45 | 1/h | 0.0006805555555555556 | 1/h | not captured | exact (1.0) | Tab2:row5:col3, Tab2:row17:col3 | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -54,13 +52,14 @@ Li Y et al., PopPK modeling supports BW band dosing…, NPJ genomic medicine (20
 ## Departures & gaps
 
 **Deviations:**
-- `defaulted_parameters`: ['ka', 'Tlag']
+- `defaulted_parameters`: ['Tlag']
 - `apparent_assumption`: F=1, Fm=1, no molar correction (parameterization=apparent)
-- `invented_absorption`: ka defaulted — not reported in source
 
 **Interpretation flags:**
+- dropped unlinked row (NIL): 'CL-BW' — extend the ontology if this is a real PK parameter (source ['Tab2:row7:col3', 'Tab2:row7:col5', 'Tab2:row19:col3', 'Tab2:row19:col5'])
 - dropped unlinked row (NIL): 'CL-rs12769205*GA' — extend the ontology if this is a real PK parameter (source ['Tab2:row20:col3', 'Tab2:row20:col5'])
-- NIL: refused to back-fill base 'CL/F' from footnote/prose loose number None (source ['Tab2:footnote']); the table cell was unparseable — needs review
+- dropped unlinked row (NIL): 'CL-rs12769205*GG' — extend the ontology if this is a real PK parameter (source ['Tab2:row21:col3', 'Tab2:row21:col5'])
+- implicit units: 'Ka' → 1/h (from the paper text: 'ka was fixed at 2.45 h−1, based on values reported in a previous study')
 - apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=lacosamide
 - population split: 'boostrap' subgroup of Li_2025 (paper reports 2 populations: boostrap, final models)
 - skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
@@ -88,14 +87,12 @@ Li Y et al., PopPK modeling supports BW band dosing…, NPJ genomic medicine (20
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 5 | not captured | not captured | not captured |
+| C0_has_structural_params | pass | not captured | 3 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
 | C5_dimension_Q27 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Tab2:row3:col3', 'Tab2:row3:col5', 'Tab2:row15:col3', 'Tab2:row15:col5'] |
+| C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['Tab2:row5:col3', 'Tab2:row17:col3'] |
 | C5_dimension_Q76 | pass | [length] ** 3 | not captured | not captured | not captured | ['Tab2:row4:col3', 'Tab2:row4:col5', 'Tab2:row16:col3', 'Tab2:row16:col5'] |
-| C5_unit_missing_Q22 | fail | [length] ** 3 / [time] | not captured | not captured | not captured | ['Tab2:row21:col3', 'Tab2:row21:col5'] |
-| C5_unit_missing_Q354 | fail | [length] ** 3 / [time] | not captured | not captured | not captured | ['Tab2:row7:col3', 'Tab2:row7:col5', 'Tab2:row19:col3', 'Tab2:row19:col5'] |
-| C5_unit_missing_Q49 | fail | 1 / [time] | not captured | not captured | not captured | ['Tab2:row5:col3', 'Tab2:row17:col3'] |
 | C7_apparent_coherence | pass | not captured | not captured | not captured | not captured | not captured |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
 | C9_phys_window_Q27 | pass | clearance within physiological range | 1.51 L/h | not captured | not captured | ['Tab2:row3:col3', 'Tab2:row3:col5', 'Tab2:row15:col3', 'Tab2:row15:col5'] |
@@ -132,11 +129,11 @@ Li Y et al., PopPK modeling supports BW band dosing…, NPJ genomic medicine (20
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_lacosamide/Lacosamide_Li2025_boostrap/Lacosamide_Li2025_boostrap_modelica.zip" download>Lacosamide_Li2025_boostrap_modelica.zip</a> <span class="pk-size">(4.1 kB)</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_lacosamide/Lacosamide_Li2025_boostrap/Lacosamide_Li2025_boostrap_modelica.zip" download>Lacosamide_Li2025_boostrap_modelica.zip</a> <span class="pk-size">(4.5 kB)</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_lacosamide/Lacosamide_Li2025_boostrap/Lacosamide_Li2025_boostrap_fmi.zip" download>Lacosamide_Li2025_boostrap_fmi.zip</a> <span class="pk-size">(4.2 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_lacosamide/Lacosamide_Li2025_boostrap/Lacosamide_Li2025_boostrap_matlab.zip" download>Lacosamide_Li2025_boostrap_matlab.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_lacosamide/Lacosamide_Li2025_boostrap/Lacosamide_Li2025_boostrap_matlab_simbio.zip" download>Lacosamide_Li2025_boostrap_matlab_simbio.zip</a> <span class="pk-size">(2.8 kB)</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_lacosamide/Lacosamide_Li2025_boostrap/Lacosamide_Li2025_boostrap_sbml.zip" download>Lacosamide_Li2025_boostrap_sbml.zip</a> <span class="pk-size">(2.6 kB)</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_lacosamide/Lacosamide_Li2025_boostrap/Lacosamide_Li2025_boostrap_matlab.zip" download>Lacosamide_Li2025_boostrap_matlab.zip</a> <span class="pk-size">(3.3 kB)</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_lacosamide/Lacosamide_Li2025_boostrap/Lacosamide_Li2025_boostrap_matlab_simbio.zip" download>Lacosamide_Li2025_boostrap_matlab_simbio.zip</a> <span class="pk-size">(2.7 kB)</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_lacosamide/Lacosamide_Li2025_boostrap/Lacosamide_Li2025_boostrap_sbml.zip" download>Lacosamide_Li2025_boostrap_sbml.zip</a> <span class="pk-size">(2.5 kB)</span></td></tr>
 <tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_lacosamide/Lacosamide_Li2025_boostrap/Lacosamide_Li2025_boostrap_cellml.zip" download>Lacosamide_Li2025_boostrap_cellml.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
 </tbody></table>
 <p>Each archive holds the model source, a script that simulates it against the appropriate library, and a README describing both and how to run them.</p>
@@ -145,7 +142,7 @@ Li Y et al., PopPK modeling supports BW band dosing…, NPJ genomic medicine (20
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-**Administration: oral** — 300 mg, single dose, first-order absorption (ka 0.5 /h, F 1). _The paper's dose was not captured; the default is the WHO ATC DDD 300 mg oral (N03AX18) (defined daily dose)._
+**Administration: oral** — 300 mg, single dose, first-order absorption (ka 2.45 /h, F 1). _The paper's dose was not captured; the default is the WHO ATC DDD 300 mg oral (N03AX18) (defined daily dose)._
 
 <dbs-fmusim paramsurl="drugs/drug_lacosamide/Lacosamide_Li2025_boostrap/Lacosamide_Li2025_boostrap_params.json" metaurl="assets/fmu/PK_1C_enteral.vr.json" wasmurl="assets/fmu/PK_1C_enteral.js" controlsurl="drugs/drug_lacosamide/Lacosamide_Li2025_boostrap/Lacosamide_Li2025_boostrap_sim_controls.json"></dbs-fmusim>
 
@@ -154,4 +151,4 @@ Li Y et al., PopPK modeling supports BW band dosing…, NPJ genomic medicine (20
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-08-30 10:55 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 06:56 UTC</sub>

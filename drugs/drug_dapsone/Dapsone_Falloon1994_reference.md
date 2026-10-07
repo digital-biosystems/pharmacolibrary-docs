@@ -1,10 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;D10A&quot;,&quot;href&quot;:&quot;atc/D10A.md&quot;},{&quot;label&quot;:&quot;dapsone&quot;,&quot;href&quot;:&quot;drugs/drug_dapsone/&quot;},{&quot;label&quot;:&quot;Falloon_1994 \u00b7 reference&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Dapsone_Kotila2023_mean&quot;,&quot;label&quot;:&quot;Kotila_2023_mean&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_dapsone/Dapsone_Kotila2023_mean.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Dapsone_Kotila2023_median&quot;,&quot;label&quot;:&quot;Kotila_2023_median&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_dapsone/Dapsone_Kotila2023_median.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Dapsone_Mirochnick2001_reference&quot;,&quot;label&quot;:&quot;Mirochnick_2001_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_dapsone/Dapsone_Mirochnick2001_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # dapsone — `Dapsone_Falloon1994_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.667). The first reading is what the record holds.">cross-check: partial</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.667). The first reading is what the record holds.">cross-check: partial</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -24,12 +25,14 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the val
 
 <sub>reviewed by rule template (no LLM)</sub>
 
+> ⚠️ **STALE** — review status `rejected` (reviewed 2026-10-05 09:26:04.855066+00:00) predates the upstream re-run (2026-10-07 07:42:52.748215+00:00). Current validate status: `rejected`.
+
 ## Citation
 Falloon J et al., Pharmacokinetics and safety of weekly d…, Antimicrobial agents and ch… (1994)
   ·  DOI: [10.1128/AAC.38.7.1580](https://doi.org/10.1128/AAC.38.7.1580)
 
 ## Model component
-<dbs-pgx drug="dapsone" model-id="Dapsone_Falloon1994_reference" status="rejected" stale="false" population="adult HIV-infected patients" measured-compound="dapsone" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<dbs-pgx drug="dapsone" model-id="Dapsone_Falloon1994_reference" status="rejected" stale="true" population="HIV-infected adults" measured-compound="dapsone and pyrimethamine" parameterization="mechanistic" topology="1C"></dbs-pgx>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.
@@ -47,12 +50,11 @@ _No resolved parameters._
 - dropped unlinked row (NIL): 'Median' — extend the ontology if this is a real PK parameter (source ['tab_4:row2:col1', 'tab_4:row2:col2', 'tab_4:row2:col3', 'tab_4:row2:col4', 'tab_4:row2:col5', 'tab_4:row2:col6', 'tab_4:row2:col7', 'tab_4:row6:col1', 'tab_4:row6:col2', 'tab_4:row6:col3', 'tab_4:row6:col4', 'tab_4:row6:col5', 'tab_4:row6:col6', 'tab_4:row6:col7'])
 - dropped unlinked row (NIL): 'Mean' — extend the ontology if this is a real PK parameter (source ['tab_4:row3:col1', 'tab_4:row3:col2', 'tab_4:row3:col3', 'tab_4:row3:col4', 'tab_4:row3:col5', 'tab_4:row3:col6', 'tab_4:row3:col7', 'tab_4:row7:col1', 'tab_4:row7:col2', 'tab_4:row7:col3', 'tab_4:row7:col4', 'tab_4:row7:col5', 'tab_4:row7:col6', 'tab_4:row7:col7'])
 - dropped unlinked row (NIL): 'CV (%)' — extend the ontology if this is a real PK parameter (source ['tab_4:row4:col1', 'tab_4:row4:col2', 'tab_4:row4:col3', 'tab_4:row4:col4', 'tab_4:row4:col5', 'tab_4:row4:col6', 'tab_4:row4:col7', 'tab_4:row8:col1', 'tab_4:row8:col2', 'tab_4:row8:col3', 'tab_4:row8:col4', 'tab_4:row8:col5', 'tab_4:row8:col6', 'tab_4:row8:col7'])
-- apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=dapsone
+- apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=dapsone and pyrimethamine
+- review gap-fill skipped: this record carries no value of its own, and a model assembled entirely from other papers is not this paper's model
 
 **Extraction notes:**
-- unparsed cell tab_4:row0:col7 = 't1n (h)'
-- LLM region Falloon_1994:other_prose: no JSON records returned
-- LLM region Falloon_1994:discussion_prose: no JSON records returned
+- LLM selected parameter table(s) 4
 
 ## Validation
 
@@ -109,4 +111,4 @@ _No web simulator for this record: its structure has no shared WebAssembly templ
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-07-15 11:22 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 07:42 UTC</sub>

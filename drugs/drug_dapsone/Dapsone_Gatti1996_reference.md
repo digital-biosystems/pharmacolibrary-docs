@@ -1,10 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;D10A&quot;,&quot;href&quot;:&quot;atc/D10A.md&quot;},{&quot;label&quot;:&quot;dapsone&quot;,&quot;href&quot;:&quot;drugs/drug_dapsone/&quot;},{&quot;label&quot;:&quot;Gatti_1996 \u00b7 reference&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Dapsone_Kotila2023_mean&quot;,&quot;label&quot;:&quot;Kotila_2023_mean&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_dapsone/Dapsone_Kotila2023_mean.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Dapsone_Kotila2023_median&quot;,&quot;label&quot;:&quot;Kotila_2023_median&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_dapsone/Dapsone_Kotila2023_median.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Dapsone_Mirochnick2001_reference&quot;,&quot;label&quot;:&quot;Mirochnick_2001_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_dapsone/Dapsone_Mirochnick2001_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # dapsone — `Dapsone_Gatti1996_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.625). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.625). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -24,12 +25,14 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the lin
 
 <sub>reviewed by glm-5.3-flash</sub>
 
+> ⚠️ **STALE** — review status `needs_review` (reviewed 2026-10-05 09:26:06.663755+00:00) predates the upstream re-run (2026-10-07 07:43:03.070242+00:00). Current validate status: `needs_review`.
+
 ## Citation
 Gatti G et al., Population pharmacokinetics of dapsone…, Antimicrobial agents and ch… (1996)
   ·  DOI: [10.1128/AAC.40.12.2743](https://doi.org/10.1128/AAC.40.12.2743)
 
 ## Model component
-<dbs-pgx drug="dapsone" model-id="Dapsone_Gatti1996_reference" status="needs_review" stale="false" population="HIV-infected patients" measured-compound="dapsone" parameterization="apparent" topology="1C"></dbs-pgx>
+<dbs-pgx drug="dapsone" model-id="Dapsone_Gatti1996_reference" status="needs_review" stale="true" population="HIV-infected patients" measured-compound="dapsone" parameterization="apparent" topology="1C"></dbs-pgx>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 3 extracted.
@@ -41,9 +44,9 @@ Gatti G et al., Population pharmacokinetics of dapsone…, Antimicrobial agents 
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| CL/F | `Q27` · CL/F | 1.83 | liters/h | 5.083333333333334e-07 | L/h | not captured | exact (1.0) | Gatti_1996:other_prose | — | not captured |
-| V/F | `Q76` · V/F | 69.6 | liters | 0.0696 | L | not captured | exact (1.0) | Gatti_1996:other_prose | — | not captured |
-| decrease of clearance of dapsone by AZT | `Q22` · CL | 25 | % | not captured | % | not captured | boundary (0.8) | Gatti_1996:discussion_prose | — | not captured |
+| CL/F | `Q27` · CL/F | 1.98 | liters/h | 5.5e-07 | L/h | not captured | exact (1.0) | Gatti_1996:discussion_prose | — | not captured |
+| V/F | `Q76` · V/F | 75.2 | liters | 0.0752 | L | not captured | exact (1.0) | Gatti_1996:discussion_prose | — | not captured |
+| K a | `Q49` · kabs | 0.981 | h Ϫ1 | 0.0002725 | 1/h | not captured | space_fold (0.95) | Gatti_1996:discussion_prose | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -54,27 +57,20 @@ Gatti G et al., Population pharmacokinetics of dapsone…, Antimicrobial agents 
 
 **Interpretation flags:**
 - dropped unlinked row (NIL): 'Parameter' — extend the ontology if this is a real PK parameter (source ['tab_1:row0:col1', 'tab_1:row0:col4', 'tab_1:row0:col5'])
-- dropped unlinked row (NIL): 'Mean' — extend the ontology if this is a real PK parameter (source ['tab_1:row1:col1', 'tab_1:row1:col2', 'tab_1:row1:col3', 'tab_1:row1:col4', 'tab_1:row1:col6', 'tab_1:row1:col7'])
-- salvaged Q27 ('CL/F'=1.83) from results prose — parameter table was unreadable
-- salvaged Q76 ('V/F'=69.6) from results prose — parameter table was unreadable
-- salvaged Q22 ('decrease of clearance of dapsone by AZT'=25) from results prose — parameter table was unreadable
+- dropped unlinked row (NIL): 'Mean' — extend the ontology if this is a real PK parameter (source ['tab_1:row1:col1', 'tab_1:row1:col2', 'tab_1:row1:col3', 'tab_1:row1:col4', 'tab_1:row1:col5', 'tab_1:row1:col6', 'tab_1:row1:col7'])
+- salvaged Q27 ('CL/F'=1.98) from results prose — parameter table was unreadable
+- salvaged Q76 ('V/F'=75.2) from results prose — parameter table was unreadable
+- salvaged Q49 ('K a'=0.981) from results prose — parameter table was unreadable
 - apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=dapsone
 - held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
 - status held at route_to_review — not promoted
-- unit re-normalised: CL/F 'liters/h' now converts (value unchanged)
-- unit re-normalised: V/F 'liters' now converts (value unchanged)
+- skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
+- skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
+- skipped review gap-fill of TLAG: primary's parameterization (rate-constant / ka-only) does not use it
 
 **Extraction notes:**
 - unparsed cell tab_1:row0:col2 = '2 (liters)'
 - unparsed cell tab_1:row0:col3 = '3 (h Ϫ1 )'
-- unparsed cell tab_1:row1:col5 = 'Ϫ0.119'
-- unparsed cell tab_1:row2:col1 = '1.57, 2.09'
-- unparsed cell tab_1:row2:col2 = '57.4, 81.8'
-- unparsed cell tab_1:row2:col3 = '0.72, 1.36'
-- unparsed cell tab_1:row2:col4 = '0.318, 1.074'
-- unparsed cell tab_1:row2:col5 = 'Ϫ0.08, Ϫ0.158'
-- unparsed cell tab_1:row2:col6 = '20, 46'
-- unparsed cell tab_1:row2:col7 = '45, 111'
 
 ## Validation
 
@@ -108,12 +104,11 @@ first reading `qwen3.6:27b-q8_0` — the numbers on this page are its, whatever 
 | C0_has_structural_params | pass | not captured | 3 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
-| C2_base_Q27 | fail | 1.83 | 2.01 | 1.0984 | 0.05 | footnote reference category |
-| C5_unit_missing_Q22 | fail | [length] ** 3 / [time] | % | not captured | not captured | ['Gatti_1996:discussion_prose'] |
+| C1_half_life_beta | fail | 19.2 | 26.326 | 1.3711 | 0.25 | reported t½β |
 | C7_apparent_coherence | pass | not captured | not captured | not captured | not captured | not captured |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
-| C9_phys_window_Q27 | pass | clearance within physiological range | 1.83 L/h | not captured | not captured | ['Gatti_1996:other_prose'] |
-| C9_phys_window_Q76 | pass | volume within physiological range | 69.6 L | not captured | not captured | ['Gatti_1996:other_prose'] |
+| C9_phys_window_Q27 | pass | clearance within physiological range | 1.98 L/h | not captured | not captured | ['Gatti_1996:discussion_prose'] |
+| C9_phys_window_Q76 | pass | volume within physiological range | 75.2 L | not captured | not captured | ['Gatti_1996:discussion_prose'] |
 
 <details class="legend">
 <summary>Check legend — what each column means</summary>
@@ -148,4 +143,4 @@ _No web simulator for this record: its structure has no shared WebAssembly templ
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-07-15 11:22 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 07:43 UTC</sub>

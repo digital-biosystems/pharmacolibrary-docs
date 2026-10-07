@@ -1,0 +1,48 @@
+{
+ "dose_source": "paper",
+ "model_id": "Enalapril_Steichert2025_reference",
+ "molar_masses": {
+  "C_M1": 0.348399,
+  "central.C": 0.3764467
+ },
+ "note": "Values for the shared PK_3M_9C.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observable_labels": {
+  "C_M1": "enalaprilat",
+  "C_central": "enalapril"
+ },
+ "observables": [
+  "central.C",
+  "C_M1"
+ ],
+ "paper_doses_kind": "range",
+ "paper_doses_mg": [
+  2.1,
+  5.6
+ ],
+ "parameters": {
+  "CL1": 0.0,
+  "CLm1": 3.777777777777778e-07,
+  "F": 1.0,
+  "MW": 0.3764467,
+  "MW_m1": 0.348399,
+  "Tlag": 702.0,
+  "Vd1": 0.00283,
+  "Vd1m1": 0.02445,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 2.1000000000000002e-06,
+  "ka": 0.00016666666666666666,
+  "q1_m11": 9.527777777777779e-07
+ },
+ "reference_peak_times": {
+  "C_M1": 20777.55511022044,
+  "central.C": 5215.101062512035
+ },
+ "reference_peaks": {
+  "C_M1": 6.132765739838674e-05,
+  "central.C": 0.00018422449909641418
+ },
+ "stop_time": 86400.0,
+ "template": "PK_3M_9C",
+ "template_fmu": "PK_3M_9C.fmu"
+}

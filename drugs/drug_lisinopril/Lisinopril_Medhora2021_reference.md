@@ -1,10 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C09A&quot;,&quot;href&quot;:&quot;atc/C09A.md&quot;},{&quot;label&quot;:&quot;lisinopril&quot;,&quot;href&quot;:&quot;drugs/drug_lisinopril/&quot;},{&quot;label&quot;:&quot;Medhora_2021 \u00b7 reference&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Lisinopril_Sandra2024_reference&quot;,&quot;label&quot;:&quot;Sandra_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_lisinopril/Lisinopril_Sandra2024_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # lisinopril — `Lisinopril_Medhora2021_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by glm-5.3-flash, p(non-human) 1.00).">rat</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.846). The first reading is what the record holds.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by glm-5.3-flash, p(non-human) 1.00).">rat</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -22,19 +23,21 @@
 
 The two-compartment lisinopril model carries V1 = 0.008 L, far below plausible central volume for a rat, while the peripheral volume V2 = 0.513 L is vastly larger, an implausible magnitude consistent with a unit/scale extraction error. Renal clearance CLR = 0.009 L/h is likewise outside the physiological window. The remaining parameters (kabs 0.279 1/h, Q 0.014 L/h, Fab 0.192, CL_ratio 0.943, Frel 1.326) were extracted, but the implausible clearance/volume magnitudes caused rejection. Extracted — lisinopril: kabs 0.279 1/h, CLR 0.009 L/h, V1 0.008 L, Q 0.014 L/h, V2 0.513 L, Fab 0.192, CL_ratio 0.943, Frel 1.33.
 
-Independently confirmed by `gpt-oss:120b`.
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of bioavailability ratio: this record has none, the second reading 1.326; it also differs on 1 more field. That field does not shape the model.
 
 <sub>reviewed by glm-5.3-flash</sub>
+
+> ⚠️ **STALE** — review status `rejected` (reviewed 2026-09-30 20:08:01.966263+00:00) predates the upstream re-run (2026-10-07 06:36:15.655219+00:00). Current validate status: `rejected`.
 
 ## Citation
 Medhora M et al., Radiation Increases Bioavailability of…, Frontiers in pharmacology (2021)
   ·  DOI: [10.3389/fphar.2021.646076](https://doi.org/10.3389/fphar.2021.646076)
 
 ## Model component
-<dbs-pgx drug="lisinopril" model-id="Lisinopril_Medhora2021_reference" status="rejected" stale="false" population="female WAG/RijCmcr rats, irradiated and nonirradiated" measured-compound="lisinopril" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<dbs-pgx drug="lisinopril" model-id="Lisinopril_Medhora2021_reference" status="rejected" stale="true" population="irradiated and nonirradiated rats" measured-compound="lisinopril" parameterization="mechanistic" topology="2C"></dbs-pgx>
 
 **Model structure:** 2-compartment; no model was built for this record.  
-**Parameters:** 8 extracted.
+**Parameters:** 6 extracted.
 
 **Parameterization:** mechanistic.
 
@@ -49,8 +52,6 @@ Medhora M et al., Radiation Increases Bioavailability of…, Frontiers in pharma
 | Inter-compartmental clearance rate | `Q30` · Q | 0.014 | L/h | 3.8888888888888884e-09 | L/h | not captured | llm_confirmed (0.6) | T2:row4:col1, T2:row4:col2, T2:row4:col3 | — | not captured |
 | Peripheral volume (lung) | `Q64` · V2 | 0.513 | L | 0.000513 | L | not captured | exact (1.0) | T2:row5:col1, T2:row5:col2, T2:row5:col3 | — | not captured |
 | Bioavailability | `Q40` · Fab | 0.192 | not captured | not captured | not captured | not captured | exact (1.0) | T2:row6:col1, T2:row6:col2, T2:row6:col3 | — | not captured |
-| Renal clearance rate ratio | `Q31` · CL_ratio | 0.943 | not captured | not captured | not captured | not captured | llm_corrected (0.6) | Medhora_2021_table_3:row1:col1, Medhora_2021_table_3:row1:col2, Medhora_2021_table_3:row1:col3 | — | not captured |
-| Bioavailability ratio | `Q87` · Frel | 1.326 | not captured | not captured | not captured | not captured | llm_corrected (0.6) | Medhora_2021_table_3:row3:col1, Medhora_2021_table_3:row3:col2, Medhora_2021_table_3:row3:col3 | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -62,13 +63,14 @@ Medhora M et al., Radiation Increases Bioavailability of…, Frontiers in pharma
 **Interpretation flags:**
 - column 'units' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
 - unit_dimension_unknown: 'lung' (V2)
-- dropped duplicate Q49 ('Absorption rate ratio', value '0.883') — already have one for this compound
-- dropped duplicate Q31 ('Inter-compartmental clearance rate ratio', value '0.615') — already have one for this compound
-- implicit units: 'Absorption rate' → 1/h (from the popPK convention: 'No unit stated for kabs in text or captions; first-order absorption rate constants are conventionally in 1/h in populati')
-- implicit units: 'Renal clearance rate' → L/h (from the popPK convention: "Table 2 caption mentions a units column ('L represents liters in the units column') but no unit is printed for CLR; clea")
-- implicit units: 'Central volume' → L (from the popPK convention: 'Table 2 caption notes a units column with L for liters, but no unit is printed for V1; volumes of distribution are conve')
-- implicit units: 'Inter-compartmental clearance rate' → L/h (from the popPK convention: 'No unit stated for Q; intercompartmental clearances are conventionally L/h, consistent with the small rat-scale value 0.')
-- implicit units: 'Peripheral volume (lung)' → L (from the popPK convention: 'No unit stated for V2; peripheral volumes of distribution are conventionally in L, consistent with the value 0.513.')
+- dropped unlinked row (NIL): 'Absorption rate ratio' — extend the ontology if this is a real PK parameter (source ['Medhora_2021_table_3:row0:col1', 'Medhora_2021_table_3:row0:col2', 'Medhora_2021_table_3:row0:col3'])
+- dropped duplicate Q26 ('Renal clearance rate ratio', value '0.943') — already have one for this compound
+- dropped duplicate Q30 ('Inter-compartmental clearance rate ratio', value '0.615') — already have one for this compound
+- implicit units: 'Absorption rate' → 1/h (from the popPK convention: 'Absorption rate constants (kabs) are first-order rate constants, conventionally expressed in reciprocal time units (1/h)')
+- implicit units: 'Renal clearance rate' → L/h (from the popPK convention: 'Clearance parameters (Cl) are conventionally expressed in volume per time (L/h). The value 0.009 L/h is consistent with ')
+- implicit units: 'Central volume' → L (from the paper text: "The caption for Table 2 states: 'L represents liters in the units column.' Volumes of distribution are conventionally in")
+- implicit units: 'Inter-compartmental clearance rate' → L/h (from the popPK convention: 'Inter-compartmental clearance (Q) is a clearance parameter, conventionally expressed in volume per time (L/h). The value')
+- implicit units: 'Peripheral volume (lung)' → L (from the paper text: "The caption for Table 2 states: 'L represents liters in the units column.' Volumes of distribution are conventionally in")
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=lisinopril
 - skipped review gap-fill of TLAG: primary's parameterization (rate-constant / ka-only) does not use it
 
@@ -79,14 +81,21 @@ Medhora M et al., Radiation Increases Bioavailability of…, Frontiers in pharma
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--green">cross-checked ✓</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | confirmed | 1.0 (13/13 fields) | none |
+| `gpt-oss:120b` | partly confirmed | 0.846 (11/13 fields) | 2 |
 
-_Every reader agrees on every compared field of this record._
+<details><summary>2 field(s) a reader read differently</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss:120b` | `parameters[bioavailability ratio]` | not captured | 1.326 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[renal clearance rate ratio]` | not captured | 0.943 | only_one_extracted |
+
+</details>
 
 <details class="legend">
 <summary>Cross-check legend</summary>
@@ -98,7 +107,7 @@ _Every reader agrees on every compared field of this record._
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 8 | not captured | not captured | not captured |
+| C0_has_structural_params | pass | not captured | 6 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | fail | not captured | not captured | not captured | not captured | not captured |
 | C5_dimension_Q26 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['T2:row2:col1', 'T2:row2:col2', 'T2:row2:col3'] |
@@ -106,7 +115,6 @@ _Every reader agrees on every compared field of this record._
 | C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['T2:row1:col1', 'T2:row1:col2', 'T2:row1:col3', 'T2:row1:col4'] |
 | C5_dimension_Q63 | pass | [length] ** 3 | not captured | not captured | not captured | ['T2:row3:col1', 'T2:row3:col2', 'T2:row3:col3'] |
 | C5_dimension_Q64 | pass | [length] ** 3 | not captured | not captured | not captured | ['T2:row5:col1', 'T2:row5:col2', 'T2:row5:col3'] |
-| C5_unit_missing_Q31 | fail | [length] ** 3 / [time] | not captured | not captured | not captured | ['Medhora_2021_table_3:row1:col1', 'Medhora_2021_table_3:row1:col2', 'Medhora_2021_table_3:row1:col3'] |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
 | C9_phys_window_Q63 | fail | volume within physiological range | 0.008 L | not captured | not captured | ['T2:row3:col1', 'T2:row3:col2', 'T2:row3:col3'] |
 | C9_phys_window_Q64 | pass | volume within physiological range | 0.513 L | not captured | not captured | ['T2:row5:col1', 'T2:row5:col2', 'T2:row5:col3'] |
@@ -134,4 +142,4 @@ _No web simulator for this record: its structure has no shared WebAssembly templ
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-09-30 18:22 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 06:36 UTC</sub>

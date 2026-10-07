@@ -1,5 +1,5 @@
 {
- "dose_source": "WHO ATC DDD 1000 mg oral (N03AF01)",
+ "dose_source": "paper",
  "model_id": "Carbamazepine_Punyawudho2012_reference",
  "molar_masses": {
   "central.C": 0.2362686
@@ -8,23 +8,28 @@
  "observables": [
   "central.C"
  ],
+ "paper_doses_kind": "discrete",
+ "paper_doses_mg": [
+  200.0,
+  600.0
+ ],
  "parameters": {
-  "Cl": 9.972222222222222e-07,
+  "Cl": 9.944444444444446e-07,
   "F": 1.0,
   "MM": 0.2362686,
   "Tlag": 0.0,
-  "VdPerKg": 0.0014571428571428572,
+  "VdPerKg": 0.0013157142857142857,
   "adminCount": 1.0,
   "adminDuration": 600.0,
-  "adminMass": 0.001,
-  "ka": 5.472222222222223e-05,
+  "adminMass": 0.0002,
+  "ka": 5.277777777777778e-05,
   "weight": 70.0
  },
  "reference_peak_times": {
-  "central.C": 38707.57562561259
+  "central.C": 38092.18436873748
  },
  "reference_peaks": {
-  "central.C": 0.006740557565948372
+  "central.C": 0.001443847237712738
  },
  "stop_time": 432000.0,
  "template": "PK_1C_enteral",

@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C09A&quot;,&quot;href&quot;:&quot;atc/C09A.md&quot;},{&quot;label&quot;:&quot;captopril&quot;,&quot;href&quot;:&quot;drugs/drug_captopril/&quot;},{&quot;label&quot;:&quot;Duchin_1982 \u00b7 intravenous_dose_total_radioactivity&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Captopril_Hu2025_reference&quot;,&quot;label&quot;:&quot;Hu_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_captopril/Captopril_Hu2025_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Captopril_Hu2025_reference&quot;,&quot;label&quot;:&quot;Hu_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_captopril/Captopril_Hu2025_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # captopril — `Captopril_Duchin1982_intravenous_dose_total_radioactivity`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.211). The first reading is what the record holds.">cross-check: partial</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.105). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -21,19 +21,21 @@
 
 A volume and a clearance/elimination estimate from this paper are needed to build its model. Review values from other papers (Hu_2025) cannot stand in for this paper's evidence. Without a unit the value cannot be converted, so the model cannot use it. A reported unit could not be converted (AUC∞ and fe), so that value has no SI equivalent. Extracted — captopril: AUC∞ 1.02e+03 ng × hr/ml, fe 86.8 % dose, V 0.7 L/kg, CL 3.31 L/h.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of 1: this record has none, the second reading 0.35; it also differs on 14 more fields. That field does not shape the model.
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has captopril, the second reading unknown; it also differs on 16 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
+
+> ⚠️ **STALE** — review status `needs_review` (reviewed 2026-09-30 23:59:39.954472+00:00) predates the upstream re-run (2026-10-07 05:16:23.422669+00:00). Current validate status: `needs_review`.
 
 ## Citation
 Duchin KL et al., Captopril kinetics, Clinical pharmacology and t… (1982)
   ·  DOI: [10.1038/clpt.1982.59](https://doi.org/10.1038/clpt.1982.59)
 
 ## Model component
-<dbs-pgx drug="captopril" model-id="Captopril_Duchin1982_intravenous_dose_total_radioactivity" status="needs_review" stale="false" population="healthy adults" measured-compound="captopril" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<dbs-pgx drug="captopril" model-id="Captopril_Duchin1982_intravenous_dose_total_radioactivity" status="needs_review" stale="true" population="healthy subjects" measured-compound="captopril" parameterization="mechanistic" topology="1C"></dbs-pgx>
 
 **Model structure:** 1-compartment; no model was built for this record.  
-**Parameters:** 4 extracted.
+**Parameters:** 3 extracted.
 
 **Parameterization:** mechanistic.
 
@@ -44,8 +46,7 @@ Duchin KL et al., Captopril kinetics, Clinical pharmacology and t… (1982)
 |---|---|---|---|---|---|---|---|---|---|---|
 | AUC0-∞ (ng × hr/ml) | `Q17` · AUC∞ | 1025 | ng × hr/ml | not captured | [[h] · [ng]] / [ml] | not captured | exact (1.0) | Duchin_1982_table_1:row2:col3 | — | not captured |
 | Cumulative urinary excretion (% dose) | `Q44` · fe | 86.8 | % dose | not captured | [d] · [%] · [ose] | not captured | exact (1.0) | Duchin_1982_table_1:row3:col3 | — | not captured |
-| Vd | `Q61` · V | 0.7 | L/kg | 0.049 | L | not captured | exact (1.0) | Duchin_1982:discussion_prose | — | not captured |
-| CL | `Q22` · CL | 3.31 | L/h | 9.194444444444444e-07 | L/h | not captured | review_gapfill (0.7) | Hu_2025:review | — | not captured |
+| Vd (/ kg") | `Q61` · V | 0.7 | L/kg | 0.049 | L | not captured | exact (1.0) | Duchin_1982:discussion_prose | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -57,15 +58,15 @@ Duchin KL et al., Captopril kinetics, Clinical pharmacology and t… (1982)
 **Interpretation flags:**
 - unit_dimension_unknown: 'ng × hr/ml' (AUC∞)
 - unit_dimension_unknown: '% dose' (fe)
-- salvaged Q61 ('Vd'=0.7) from results prose — parameter table was unreadable
+- salvaged Q61 ('Vd (/ kg")'=0.7) from results prose — parameter table was unreadable
 - implicit units: 'AUC0-∞ (ng × hr/ml)' — the LLM proposed 'ng x hr/ml', whose dimension does not fit Q17; left unset
-- implicit units: 'Vd' → L/kg (from the paper text: "The abstract states 'The Vd at steady-state was 0.7 l/kg' (printed as '0.7 Ilkg'), so the volume of distribution is expr")
+- implicit units: 'Vd (/ kg")' → L/kg (from the paper text: "The abstract states: 'The Vd at steady-state was 0.7 Ilkg.' (where 'Ilkg' is an OCR error for 'L/kg'). The discussion al")
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=captopril
 - held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
 - structure disagreement: deterministic 1C vs LLM 3C — review compartment count
 - status held at route_to_review — not promoted
-- population split: 'intravenous dose* - total radioactivity' subgroup of Duchin_1982 (paper reports 4 populations: intravenous dose* - total radioactivity, intravenous dose* - unchanged captopril, oral dose* - total radioactivity, oral dose* - unchanged captopril)
-- gap-filled Q22 (CL) from Hu_2025's review values (primary lacked it)
+- population split: 'intravenous dose* total radioactivity' subgroup of Duchin_1982 (paper reports 4 populations: intravenous dose* total radioactivity, intravenous dose* unchanged captopril, oral dose* total radioactivity, oral dose* unchanged captopril)
+- skipped review gap-fill of CL from Hu_2025: its label names a different analyte ('cp-a') — 'CL values for CP-A'
 - skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
 - skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
 
@@ -75,32 +76,34 @@ Duchin KL et al., Captopril kinetics, Clinical pharmacology and t… (1982)
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | partly confirmed | 0.211 (4/19 fields) | 15 |
+| `gpt-oss:120b` | not confirmed | 0.105 (2/19 fields) | 17 |
 
-<details><summary>15 field(s) a reader read differently</summary>
+<details><summary>17 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `parameters[1]` | not captured | 0.35 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[2]` | not captured | 0.39 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[3]` | not captured | 0.42 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[4]` | not captured | 0.26 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[auc0-inf]` | 1025 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[clt]` | not captured | 0.62 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[cumulative urinary excretion]` | 86.8 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[k12]` | not captured | 4.64 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[k13]` | not captured | 1.02 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[k21]` | not captured | 8.62 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[k31]` | not captured | 0.44 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[t1⁄2β]` | not captured | 1.98 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[vc]` | not captured | 0.14 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[vd β]` | not captured | 1.78 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[k$_12$]` | not captured | 4.64 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[k$_13$]` | not captured | 1.02 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[k$_21$]` | not captured | 8.62 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[k$_31$]` | not captured | 0.44 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[k$_e1$]` | not captured | 4.44 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[t$_{1/2}β$]` | not captured | 1.98 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[v$_c$]` | not captured | 0.14 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[vd$_b$]` | not captured | 1.78 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[vd$_ss$]` | not captured | 0.64 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[vd]` | 0.7 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[vdss]` | not captured | 0.64 | only_one_extracted |
+| `gpt-oss:120b` | `screen.dose_compound` | captopril | unknown | mismatch |
+| `gpt-oss:120b` | `screen.primary_analyte` | captopril | unknown | mismatch |
 
 </details>
 
@@ -117,12 +120,9 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 | C0_has_structural_params | pass | not captured | 3 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | fail | not captured | not captured | not captured | not captured | not captured |
-| C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Hu_2025:review'] |
 | C5_dimension_Q61 | pass | [length] ** 3 | not captured | not captured | not captured | ['Duchin_1982:discussion_prose'] |
 | C5_unit_missing_Q17 | fail | [mass] * [time] / [length] ** 3 | ng × hr/ml | not captured | not captured | ['Duchin_1982_table_1:row2:col3'] |
-| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 3.31 | not captured | not captured | ['Hu_2025:review'] |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
-| C9_phys_window_Q22 | pass | clearance within physiological range | 3.31 L/h | not captured | not captured | ['Hu_2025:review'] |
 | C9_phys_window_Q61 | pass | volume within physiological range | 49 L | not captured | not captured | ['Duchin_1982:discussion_prose'] |
 
 <details class="legend">
@@ -158,4 +158,4 @@ _No web simulator for this record: its structure has no shared WebAssembly templ
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-09-30 22:31 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 05:16 UTC</sub>

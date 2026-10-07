@@ -27,20 +27,22 @@ Fosinopril is an ACE inhibitor used to treat high blood pressure and congestive 
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-30 23:21 | 2:49 | 0/2/0 | 1/0/0 | 0/0/0 | 76,318/18,126 | ollama / glm-5.3-flash | 6 | 5/1 | 2/4 | 0 |
+| 2026-10-07 06:30 | 1:33 | 0/2/0 | 2/0/0 | 0/0/0 | 42,889/1,990 | ollama / qwen3.8:27b-mtp-q8_0 | 6 | 5/1 | 2/4 | 0 |
 
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Hu_1997_caucasian](drugs/drug_fosinopril/Fosinopril_Hu1997_caucasian.md) | — | 1-compartment (no model) | 11 | Hu OY et al., Pharmacokinetics of fosinoprilat in Chi…, Journal of clinical pharmac… (1997) | [10.1002/j.1552-4604.1997.tb05632.x](https://doi.org/10.1002/j.1552-4604.1997.tb05632.x) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Hu_1997_chinese](drugs/drug_fosinopril/Fosinopril_Hu1997_chinese.md) | — | 1-compartment (no model) | 11 | Hu OY et al., Pharmacokinetics of fosinoprilat in Chi…, Journal of clinical pharmac… (1997) | [10.1002/j.1552-4604.1997.tb05632.x](https://doi.org/10.1002/j.1552-4604.1997.tb05632.x) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span><br><sub>STALE — current validate: rejected</sub><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Hu_1997_caucasian](drugs/drug_fosinopril/Fosinopril_Hu1997_caucasian.md) | — | 1-compartment (no model) | 11 | Hu OY et al., Pharmacokinetics of fosinoprilat in Chi…, Journal of clinical pharmac… (1997) | [10.1002/j.1552-4604.1997.tb05632.x](https://doi.org/10.1002/j.1552-4604.1997.tb05632.x) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span><br><sub>STALE — current validate: rejected</sub><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Hu_1997_chinese](drugs/drug_fosinopril/Fosinopril_Hu1997_chinese.md) | — | 1-compartment (no model) | 11 | Hu OY et al., Pharmacokinetics of fosinoprilat in Chi…, Journal of clinical pharmac… (1997) | [10.1002/j.1552-4604.1997.tb05632.x](https://doi.org/10.1002/j.1552-4604.1997.tb05632.x) |
 
 ## Pharmacodynamics (PD)
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> | [Gehr_1993_ACE_inhibition](drugs/drug_fosinopril/pd_Gehr_1993_ACE_inhibition.md) | serum ACE activity inhibition ← fosinoprilat · direct Emax (saturable) effect | — | Gehr TW et al., The pharmacokinetics and pharmacodynami…, European journal of clinica… (1993) | [10.1007/BF00315514](https://doi.org/10.1007/BF00315514) |
+| <span class="pk-badge pk-badge--green">extracted</span> | [Ford_1995_MAP](drugs/drug_fosinopril/pd_Ford_1995_MAP.md) | mean arterial pressure change ← fosinoprilat · direct Emax (saturable) effect | — | Ford NF et al., Invasive pharmacodynamics of fosinopril…, Journal of clinical pharmac… (1995) | [10.1002/j.1552-4604.1995.tb04121.x](https://doi.org/10.1002/j.1552-4604.1995.tb04121.x) |
+| <span class="pk-badge pk-badge--green">extracted</span> | [Ford_1995_PAWP](drugs/drug_fosinopril/pd_Ford_1995_PAWP.md) | pulmonary artery wedge pressure (PAWP) change ← fosinoprilat · direct linear effect | — | Ford NF et al., Invasive pharmacodynamics of fosinopril…, Journal of clinical pharmac… (1995) | [10.1002/j.1552-4604.1995.tb04121.x](https://doi.org/10.1002/j.1552-4604.1995.tb04121.x) |
+| <span class="pk-badge pk-badge--green">extracted</span> | [Gehr_1993_ACE_inhibition](drugs/drug_fosinopril/pd_Gehr_1993_ACE_inhibition.md) | percentage inhibition of serum ACE activity ← fosinoprilat · direct Emax (saturable) effect | — | Gehr TW et al., The pharmacokinetics and pharmacodynami…, European journal of clinica… (1993) | [10.1007/BF00315514](https://doi.org/10.1007/BF00315514) |
 
 ## ADME sites
 
@@ -63,8 +65,8 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 ## Coverage
 
 - **PubMed hits:** 9 matched, 9 returned
-- **screened:** 6  ·  **relevant:** 2
-- **records:** 2  ·  extracted 0  ·  needs_review 0  ·  rejected 2  ·  stale 0
+- **screened:** 7  ·  **relevant:** 3
+- **records:** 2  ·  extracted 0  ·  needs_review 0  ·  rejected 2  ·  stale 2
 - **scholar-agent fallback query used:** not captured
 
 ## Full text wanted
@@ -73,20 +75,19 @@ _1 paper(s) judged relevant from the abstract, with no full text on disk — pay
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Ford_1995.pdf` | Ford NF et al., Invasive pharmacodynamics of fosinopril…, Journal of clinical pharmac… (1995) | pd | 5 | [10.1002/j.1552-4604.1995.tb04121.x](https://doi.org/10.1002/j.1552-4604.1995.tb04121.x) | [8522635](https://www.ncbi.nlm.nih.gov/pubmed/8522635) | metadata signals extractable PD data (Emax) |
+| `Ford_1995.pdf` | Ford NF et al., Invasive pharmacodynamics of fosinopril…, Journal of clinical pharmac… (1995) | popPK | 8 | [10.1002/j.1552-4604.1995.tb04121.x](https://doi.org/10.1002/j.1552-4604.1995.tb04121.x) | [8522635](https://pubmed.ncbi.nlm.nih.gov/8522635) | The study reports quantitative pharmacokinetic parameters (AUC, Cmax, half-life, Tmax) for fosinoprilat, the active metabolite of fosinopril, in human patients. |
 
-<sub>queue written 2026-09-30T23:19:03.833882+00:00</sub>
+<sub>queue written 2026-10-07T06:29:32.707969+00:00</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| PGx | Anfinogenova_2024 | not_relevant | 0 | 0 | The paper studies potential drug-drug interactions of aspirin with ACE inhibitors including fosinopril, with no gene variant/genotype/phenotype effects on any PK or PD parameter. |
-| PGx | Ding_2000 | not_relevant | 2 | 3 | Fosinopril PK/PD differences are reported by ethnicity (Chinese vs Caucasian), not by gene variant/genotype/phenotype; ACE I/D polymorphism is discussed generally but no genotype-specific fosinopril PK/PD effect is reported. |
-| PGx | Filigheddu_2008 | not_relevant | 0 | 0 | The text contains only fragmentary references and citations; no gene variant/genotype effect on fosinopril PK or PD parameters is reported. |
-| popPK | Ford_1995 | irrelevant | 4 | 3 | This is a pharmacodynamic study in CHF patients; only AUC, Cmax, Tmax, and half-life are reported without CL, V, or a population-PK model, so no quantitative disposition parameters are present. |
-| PGx | Yang_2021 | not_relevant | 0 | 0 | Paper is about computational drug repositioning via substructure-indication prediction; fosinopril is only mentioned for anti-arrhythmia effects, with no gene variant effect on PK/PD parameters. |
-| popPK | Zitta_2000 | irrelevant | 1 | 0 | Fosinopril is only a treatment intervention; no PK disposition parameters for fosinopril are reported. |
+| PGx | Anfinogenova_2024 | not_relevant | 0 | 0 | The paper analyzes drug-drug interactions in cardiovascular patients and does not report any pharmacogenomic effects on the pharmacokinetic or pharmacodynamic parameters of fosinopril. |
+| PGx | Ding_2000 | not_relevant | 2 | 0 | The paper is a review discussing ethnic differences and mentions the ACE I/D polymorphism, but it does not report specific pharmacogenomic effects of a gene variant on fosinopril PK/PD parameters. |
+| PGx | Filigheddu_2008 | not_relevant | 0 | 0 | The text is a fragment of a review or introduction discussing general hypertension guidelines and fosinopril efficacy, but it does not report specific pharmacogenomic effects on PK/PD parameters. |
+| PGx | Yang_2021 | not_relevant | 0 | 0 | The paper is a computational drug repositioning study that mentions fosinopril only as an example of a drug with anti-arrhythmia effects, without reporting any pharmacogenomic effects on PK or PD parameters. |
+| popPK | Zitta_2000 | irrelevant | 0 | 0 | The study uses fosinopril as an antihypertensive treatment to assess renal function (GFR) via sinistrin and PAH clearance, not to determine the pharmacokinetic parameters of fosinopril itself. |
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-09-30 23:19 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-10-07 06:29 UTC</sub>

@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N02B&quot;,&quot;href&quot;:&quot;atc/N02B.md&quot;},{&quot;label&quot;:&quot;pregabalin&quot;,&quot;href&quot;:&quot;drugs/drug_pregabalin/&quot;},{&quot;label&quot;:&quot;Bender_2009 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Pregabalin_Bae2016_reference&quot;,&quot;label&quot;:&quot;Bae_2016_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_pregabalin/Pregabalin_Bae2016_reference.md&quot;,&quot;status&quot;:&quot;accepted (caveats)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Pregabalin_Bae2016_reference&quot;,&quot;label&quot;:&quot;Bae_2016_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_pregabalin/Pregabalin_Bae2016_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # pregabalin — `Pregabalin_Bender2009_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.692). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.692). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -27,15 +27,17 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the val
 
 <sub>reviewed by glm-5.3-flash</sub>
 
+> ⚠️ **STALE** — review status `rejected` (reviewed 2026-09-28 14:39:26.012228+00:00) predates the upstream re-run (2026-10-07 07:16:01.203144+00:00). Current validate status: `rejected`.
+
 ## Citation
 Bender G et al., Population pharmacokinetic model of the…, Pharmaceutical research (2009)
   ·  DOI: [10.1007/s11095-009-9942-y](https://doi.org/10.1007/s11095-009-9942-y)
 
 ## Model component
-<dbs-pgx drug="pregabalin" model-id="Pregabalin_Bender2009_reference" status="rejected" stale="false" population="rats" measured-compound="pregabalin" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<dbs-pgx drug="pregabalin" model-id="Pregabalin_Bender2009_reference" status="rejected" stale="true" population="rats" measured-compound="pregabalin" parameterization="mechanistic" topology="2C"></dbs-pgx>
 
 **Model structure:** 2-compartment; no model was built for this record.  
-**Parameters:** 6 extracted, plus 1 covariate effect.
+**Parameters:** 6 extracted.
 
 **Parameterization:** mechanistic.
 
@@ -51,7 +53,6 @@ Bender G et al., Population pharmacokinetic model of the…, Pharmaceutical rese
 | θSLD | `Q900` · θSLD | 0.302 | not captured | not captured | not captured | not captured | not captured (not captured) | not captured | — | not captured |
 | Absorption rate constant (k a ) | `Q49` · kabs | 2.0 | h À1 | 0.0005555555555555556 | 1/h | not captured | review_gapfill (0.7) | Bae_2016:review | — | not captured |
 | Lag time (hour) | `Q83` · tlag | 0.495 | hour | 1782.0 | h | not captured | review_gapfill (0.7) | van_2018:review | — | not captured |
-| NAT2 | `Q900` · NAT2 | {'*1/*1': 0.0, '*1/*6': -0.0783, 'C/C': -0.138, 'G/T': -0.2769, 'IM': -0.0496, 'PM': -0.0594, 'T/C': 0.007} | not captured | not captured | not captured | not captured | not captured (not captured) | pgx | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -64,7 +65,7 @@ Bender G et al., Population pharmacokinetic model of the…, Pharmaceutical rese
 - dropped unlinked row (NIL): 'OFV' — extend the ontology if this is a real PK parameter (source ['Tab4:row1:col1', 'Tab4:row1:col2', 'Tab4:row1:col3', 'Tab4:row1:col4', 'Tab4:row1:col5', 'Tab4:row1:col6', 'Tab4:row1:col7', 'Tab4:row1:col8', 'Tab4:row1:col9', 'Tab4:row1:col10', 'Tab4:row1:col11', 'Tab4:row1:col12'])
 - routed 'ω1CL' → Q314 (omega_cov) to covariance — variability estimate, not a structural parameter
 - dropped unlinked row (NIL): 'ω1V1' — extend the ontology if this is a real PK parameter (source ['Tab4:row8:col1', 'Tab4:row8:col3', 'Tab4:row8:col4', 'Tab4:row8:col5', 'Tab4:row8:col7', 'Tab4:row8:col8', 'Tab4:row8:col9', 'Tab4:row8:col11', 'Tab4:row8:col12'])
-- dropped unlinked row (NIL): 'ω1Q' — extend the ontology if this is a real PK parameter (source ['Tab4:row9:col1', 'Tab4:row9:col3', 'Tab4:row9:col4', 'Tab4:row9:col5', 'Tab4:row9:col7', 'Tab4:row9:col8', 'Tab4:row9:col9', 'Tab4:row9:col11', 'Tab4:row9:col12'])
+- routed 'ω1Q' → Q314 (omega_cov) to covariance — variability estimate, not a structural parameter
 - kept covariate coefficient θSLD=0.302 (covariate SLD) — not an ontology parameter
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=pregabalin
 - gap-filled Q49 (kabs) from Bae_2016's review values (primary lacked it)
@@ -138,7 +139,6 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 | C0_has_structural_params | pass | not captured | 4 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
-| C2_reference | pass | not captured | not captured | not captured | not captured | not captured |
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Tab4:row3:col1', 'Tab4:row3:col3', 'Tab4:row3:col4', 'Tab4:row3:col5', 'Tab4:row3:col7', 'Tab4:row3:col8', 'Tab4:row3:col9', 'Tab4:row3:col11', 'Tab4:row3:col12'] |
 | C5_dimension_Q30 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Tab4:row5:col1', 'Tab4:row5:col3', 'Tab4:row5:col4', 'Tab4:row5:col5', 'Tab4:row5:col7', 'Tab4:row5:col8', 'Tab4:row5:col9', 'Tab4:row5:col11', 'Tab4:row5:col12'] |
 | C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['Bae_2016:review'] |
@@ -174,4 +174,4 @@ _No web simulator for this record: its structure has no shared WebAssembly templ
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-09-21 16:45 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 07:16 UTC</sub>

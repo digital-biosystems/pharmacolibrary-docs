@@ -1,10 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N03A&quot;,&quot;href&quot;:&quot;atc/N03A.md&quot;},{&quot;label&quot;:&quot;oxcarbazepine&quot;,&quot;href&quot;:&quot;drugs/drug_oxcarbazepine/&quot;},{&quot;label&quot;:&quot;Wu_2024 \u00b7 reference&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Oxcarbazepine_Yu2025_reference&quot;,&quot;label&quot;:&quot;Yu_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_oxcarbazepine/Oxcarbazepine_Yu2025_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # oxcarbazepine — `Oxcarbazepine_Wu2024_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.3). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.3). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -24,6 +25,8 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on how the
 
 <sub>reviewed by rule template (no LLM)</sub>
 
+> ⚠️ **STALE** — review status `rejected` (reviewed 2026-10-05 09:29:09.095619+00:00) predates the upstream re-run (2026-10-07 07:13:03.552087+00:00). Current validate status: `rejected`.
+
 > **Dose compound ≠ measured compound:** dosed `oxcarbazepine`, measured `MHD`.
 
 ## Citation
@@ -31,45 +34,59 @@ Wu W et al., Population pharmacokinetics of oxcarbaz…, Basic & clinical pharma
   ·  DOI: [10.1111/bcpt.14000](https://doi.org/10.1111/bcpt.14000)
 
 ## Model component
-<dbs-pgx drug="oxcarbazepine" model-id="Oxcarbazepine_Wu2024_reference" status="rejected" stale="false" population="Chinese paediatric patients with epilepsy" measured-compound="MHD" parameterization="apparent" topology="1C"></dbs-pgx>
+<dbs-pgx drug="oxcarbazepine" model-id="Oxcarbazepine_Wu2024_reference" status="rejected" stale="true" population="Chinese paediatric patients with epilepsy" measured-compound="MHD" parameterization="apparent" topology="1C"></dbs-pgx>
 
 **Model structure:** 1-compartment; no model was built for this record.  
-**Parameters:** 1 extracted.
+**Parameters:** 5 extracted.
 
-**Parameterization:** V/F — apparent, F unknown (apparent — bioavailability not identifiable).
+**Parameterization:** CLm/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
 ## Parameters
 > ⚠️ This record is not accepted (current status `rejected`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| K a h −1 | `Q95` · t1/2ka | 0.83 | （） | not captured | [（）] | not captured | llm (0.5) | Wu_2024:table 2_flattened | — | not captured |
+| CL≤2y (L/h) | `Q351` · CLm/F | -5.6 | L/h | -1.5555555555555556e-06 | [l] / [h] | 45.6 | exact (1.0) | Wu_2024_table_4:row0:col2, Wu_2024_table_4:row0:col3, Wu_2024_table_4:row0:col4, Wu_2024_table_4:row0:col5 | — | 0.278 (None% RSE) |
+| Vp (L) | `Q61` · V | 0.7 | L | 0.0007 | [l] | 47.6 | exact (1.0) | Wu_2024_table_4:row2:col2, Wu_2024_table_4:row2:col3, Wu_2024_table_4:row2:col4, Wu_2024_table_4:row2:col5 | — | not captured |
+| Ka (h⁻¹) | `Q49` · kabs | 0.83 | h⁻¹ | 0.00023055555555555554 | [1] / [h] | not captured | exact (1.0) | Wu_2024_table_4:row3:col1 | — | not captured |
+| k1ᵇ | `Q47` · kel | -4.8 | 1/h | -0.0013333333333333333 | 1/h | 25 | exact (1.0) | Wu_2024_table_4:row4:col1, Wu_2024_table_4:row4:col2, Wu_2024_table_4:row4:col3, Wu_2024_table_4:row4:col4, Wu_2024_table_4:row4:col5 | — | not captured |
+| k2ᶜ | `Q302` · k21 | -4.1 | 1/h | -0.0011388888888888887 | 1/h | 9.2 | llm (0.6) | Wu_2024_table_4:row5:col1, Wu_2024_table_4:row5:col2, Wu_2024_table_4:row5:col3, Wu_2024_table_4:row5:col4, Wu_2024_table_4:row5:col5 | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
 <table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>label (paper)</code></td><td>the row or statistic label exactly as printed in the paper (label_verbatim) — never normalised, so it can be found in the PDF.</td></tr><tr><td><code>Q-code · name</code></td><td>the ontology parameter this label was matched to (Q22 = clearance, Q27 = CL/F, Q49 = ka, Q57 = half-life, …) and its canonical name. The Q-code, not the label, is what scoring and cross-paper merging use.</td></tr><tr><td><code>value</code></td><td>the estimate as reported in the paper.</td></tr><tr><td><code>unit</code></td><td>the unit as printed (unit_verbatim).</td></tr><tr><td><code>value_si</code></td><td>the value converted to the canonical unit. Empty when no conversion was possible — usually an unparseable or missing unit.</td></tr><tr><td><code>unit_canonical</code></td><td>the canonical unit for that Q-code, i.e. what value_si is expressed in.</td></tr><tr><td><code>RSE%</code></td><td>relative standard error of the estimate, when the paper reports one.</td></tr><tr><td><code>link</code></td><td>how the label was matched to the Q-code, with confidence. exact / boundary / fuzzy / tv_prefix / caption_compartment / special_case are deterministic string matches; llm, llm_confirmed, llm_corrected involved the model; review and review_gapfill come from the secondary review tier, the latter filling a parameter the primary extraction missed; boundary_relink is a corrected match.</td></tr><tr><td><code>source</code></td><td>where in the paper the number came from: colN = that column of the located table, other_prose = running text, review = the secondary tier, pgx = a pharmacogenomic record.</td></tr><tr><td><code>covariates</code></td><td>covariate effects attached to this parameter (e.g. weight on CL).</td></tr><tr><td><code>IIV</code></td><td>inter-individual variability reported for this parameter.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>the field is absent from the KB artifact — nothing was recorded. This is NOT the same as zero or empty: the value is unknown, not measured to be nothing.</td></tr><tr><td><code>—</code></td><td>deliberately not shown: the column does not apply to this row.</td></tr><tr><td><code>not verified</code></td><td>the record is not in an accepted state (see the badge and the note above the table); the numbers are shown as extracted, not endorsed.</td></tr></tbody></table>
 </details>
 
-### Unresolved rows _(no Q-code or no value — not parameters)_
-| label (paper) | Q-code | value | link |
-|---|---|---|---|
-| CL=F &gt; 2y L=h | Q22 | not captured | boundary |
-| V=F L | Q76 | not captured | llm |
-
 ## Departures & gaps
 
 **Interpretation flags:**
-- dropped unlinked row (NIL): 'θ' — extend the ontology if this is a real PK parameter (source ['Wu_2024:table 2_flattened'])
-- unit_dimension_unknown: '（）' (CL)
-- unit_dimension_unknown: '（）' (V/F)
-- unit_dimension_unknown: '（）' (t1/2ka )
+- table section iiv: 'ω [CL≤2y]' routed out of structural estimates ('Inter-individual variation')
+- table section iiv: 'ω [CL&gt;2y]' routed out of structural estimates ('Inter-individual variation')
+- table section iiv: 'ηCL1/F-shrinkage (%)' routed out of structural estimates ('Inter-individual variation')
+- table section iiv: 'ηCL2/F-shrinkage (%)' routed out of structural estimates ('Inter-individual variation')
+- dropped duplicate Q22 ('CL&gt;2y (L/h)', value '-1.5') — already have one for this compound
+- dropped unlinked row (NIL): 'k3' — extend the ontology if this is a real PK parameter (source ['Wu_2024_table_4:row6:col1', 'Wu_2024_table_4:row6:col2', 'Wu_2024_table_4:row6:col3', 'Wu_2024_table_4:row6:col4', 'Wu_2024_table_4:row6:col5'])
+- dropped diagnostic row 'ε-shrinkage (%)' → Q318 (shrinkage) — reported statistic, not a parameter
+- dropped unlinked row (NIL): 'Model description' — extend the ontology if this is a real PK parameter (source ['Wu_2024_table_4:row18:col3'])
+- implicit units: 'k1ᵇ' → 1/h (from the popPK convention: 'The parameter is a first-order elimination rate constant. In population pharmacokinetics, first-order rate constants are')
+- implicit units: 'k2ᶜ' → 1/h (from the popPK convention: 'The parameter is a first-order transfer rate constant (k21). First-order rate constants are conventionally expressed as ')
+- metabolite mhd: Q22→Q351 — only the metabolite is measured and fm is not identifiable, so its CL/V are apparent (fm-divided)
+- metabolite volume: 'Vp (L)' Q63→Q61 for MHD — it is 1-compartment, so its central volume is its only volume
 - apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=MHD
-- held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
-- status held at route_to_review — not promoted
+- template fit: none — only the metabolite is modelled — no parent compartment
+- structure disagreement: deterministic 1C vs LLM 2C — review compartment count
+- row roles: 2 per-group rows of MHD clearance but 0 reference group(s) — kept as printed
+- row roles: 2 per-group rows of MHD variability but 0 reference group(s) — kept as printed
+- row roles: 2 per-group rows of none summary_statistic but 0 reference group(s) — kept as printed
+- row roles (LLM): model_class=compartmental; 15/15 row label(s) assigned, 18 linked by role
+- review gap-fill skipped: this record measures 'MHD', not oxcarbazepine — the review values are the parent's
 
 **Extraction notes:**
 - no TEI final-model table id; trying text-pointer table recovery
-- text-pointer recovery: parsed 4 structural record(s) from the flattened table 2 sentence
+- LLM selected parameter table(s) 4
+- unparsed cell Wu_2024_table_4:row0:col1 = '8.151ᵉ'
+- unparsed cell Wu_2024_table_4:row1:col1 = '4.828ᶠ'
+- unparsed cell Wu_2024_table_4:row2:col1 = '678.688ᵍ'
 
 ## Validation
 
@@ -104,11 +121,18 @@ first reading `qwen3.6:27b-q8_0` — the numbers on this page are its, whatever 
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 1 | not captured | not captured | not captured |
-| C0b_disposition_core | fail | not captured | not captured | not captured | not captured | not captured |
-| C5_unit_missing_Q95 | fail | [time] | （） | not captured | not captured | ['Wu_2024:table 2_flattened'] |
+| C0_has_structural_params | pass | not captured | 5 | not captured | not captured | not captured |
+| C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
+| C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
+| C2_base_sign_Q351 | fail | not captured | -5.6 | not captured | not captured | not captured |
+| C5_dimension_Q302 | pass | 1 / [time] | not captured | not captured | not captured | ['Wu_2024_table_4:row5:col1', 'Wu_2024_table_4:row5:col2', 'Wu_2024_table_4:row5:col3', 'Wu_2024_table_4:row5:col4', 'Wu_2024_table_4:row5:col5'] |
+| C5_dimension_Q351 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Wu_2024_table_4:row0:col2', 'Wu_2024_table_4:row0:col3', 'Wu_2024_table_4:row0:col4', 'Wu_2024_table_4:row0:col5'] |
+| C5_dimension_Q47 | pass | 1 / [time] | not captured | not captured | not captured | ['Wu_2024_table_4:row4:col1', 'Wu_2024_table_4:row4:col2', 'Wu_2024_table_4:row4:col3', 'Wu_2024_table_4:row4:col4', 'Wu_2024_table_4:row4:col5'] |
+| C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['Wu_2024_table_4:row3:col1'] |
+| C5_dimension_Q61 | pass | [length] ** 3 | not captured | not captured | not captured | ['Wu_2024_table_4:row2:col2', 'Wu_2024_table_4:row2:col3', 'Wu_2024_table_4:row2:col4', 'Wu_2024_table_4:row2:col5'] |
 | C7_apparent_coherence | pass | not captured | not captured | not captured | not captured | not captured |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
+| C9_phys_window_Q61 | pass | volume within physiological range | 0.7 L | not captured | not captured | ['Wu_2024_table_4:row2:col2', 'Wu_2024_table_4:row2:col3', 'Wu_2024_table_4:row2:col4', 'Wu_2024_table_4:row2:col5'] |
 
 <details class="legend">
 <summary>Check legend — what each column means</summary>
@@ -133,4 +157,4 @@ _No web simulator for this record: its structure has no shared WebAssembly templ
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-07-19 01:34 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 07:13 UTC</sub>

@@ -1,0 +1,38 @@
+{
+ "dose_source": "paper",
+ "model_id": "Pyronaridine_Ayyoub2015_reference",
+ "molar_masses": {
+  "central.C": 0.51806
+ },
+ "note": "Values for the shared PK_1C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "paper_doses_kind": "discrete",
+ "paper_doses_mg": [
+  420.0,
+  630.0,
+  840.0
+ ],
+ "parameters": {
+  "Cl": 4.363425925925926e-06,
+  "F": 1.0,
+  "MM": 0.51806,
+  "Tlag": 0.0,
+  "VdPerKg": 0.0022285714285714287,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 0.00042,
+  "ka": 0.0002071759259259259,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 11535.871743486974
+ },
+ "reference_peaks": {
+  "central.C": 0.0019694825708280214
+ },
+ "stop_time": 140400.0,
+ "template": "PK_1C_enteral",
+ "template_fmu": "PK_1C_enteral.fmu"
+}

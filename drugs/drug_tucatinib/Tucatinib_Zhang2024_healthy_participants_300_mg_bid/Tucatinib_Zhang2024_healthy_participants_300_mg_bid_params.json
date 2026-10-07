@@ -1,0 +1,36 @@
+{
+ "dose_source": "paper",
+ "model_id": "Tucatinib_Zhang2024_healthy_participants_300_mg_bid",
+ "molar_masses": {
+  "central.C": 0.48053199999999996
+ },
+ "note": "Values for the shared PK_1C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "paper_doses_kind": "discrete",
+ "paper_doses_mg": [
+  300.0
+ ],
+ "parameters": {
+  "Cl": 3.2500000000000004e-05,
+  "F": 1.0,
+  "MM": 0.48053199999999996,
+  "Tlag": 0.0,
+  "VdPerKg": 0.01132857142857143,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 0.0003,
+  "ka": 0.0001388888888888889,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 12906.830460644382
+ },
+ "reference_peaks": {
+  "central.C": 0.00022694395678331342
+ },
+ "stop_time": 165600.0,
+ "template": "PK_1C_enteral",
+ "template_fmu": "PK_1C_enteral.fmu"
+}

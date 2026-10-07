@@ -1,10 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;P01B&quot;,&quot;href&quot;:&quot;atc/P01B.md&quot;},{&quot;label&quot;:&quot;chloroquine&quot;,&quot;href&quot;:&quot;drugs/drug_chloroquine/&quot;},{&quot;label&quot;:&quot;Karunajeewa_2010 \u00b7 reference&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Chloroquine_AbdRahman2020_reference&quot;,&quot;label&quot;:&quot;Abd-Rahman_2020_plasma_samples&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_chloroquine/Chloroquine_AbdRahman2020_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Chloroquine_AbdRahman2020_reference&quot;,&quot;label&quot;:&quot;Abd-Rahman_2020_whole_blood_samples&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_chloroquine/Chloroquine_AbdRahman2020_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Chloroquine_Chairat2018_reference&quot;,&quot;label&quot;:&quot;Chairat_2018_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_chloroquine/Chloroquine_Chairat2018_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Chloroquine_Yao2021_reference&quot;,&quot;label&quot;:&quot;Yao_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_chloroquine/Chloroquine_Yao2021_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # chloroquine — `Chloroquine_Karunajeewa2010_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.571). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.571). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -24,26 +25,29 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the val
 
 <sub>reviewed by rule template (no LLM)</sub>
 
+> ⚠️ **STALE** — review status `needs_review` (reviewed 2026-10-05 09:24:50.205695+00:00) predates the upstream re-run (2026-10-07 06:19:54.859551+00:00). Current validate status: `rejected`.
+
 ## Citation
 Karunajeewa HA et al., Pharmacokinetics of chloroquine and mon…, Antimicrobial agents and ch… (2010)
   ·  DOI: [10.1128/AAC.01269-09](https://doi.org/10.1128/AAC.01269-09)
 
 ## Model component
-<dbs-pgx drug="chloroquine" model-id="Chloroquine_Karunajeewa2010_reference" status="needs_review" stale="false" population="pregnant and nonpregnant Papua New Guinean women" measured-compound="chloroquine" parameterization="mechanistic" topology="parent_metabolite"></dbs-pgx>
+<dbs-pgx drug="chloroquine" model-id="Chloroquine_Karunajeewa2010_reference" status="rejected" stale="true" population="pregnant and nonpregnant women (Papua New Guinea)" measured-compound="chloroquine" parameterization="apparent" topology="parent_metabolite"></dbs-pgx>
 
 **Model structure:** parent + metabolite; no model was built for this record.  
 **Parameters:** 3 extracted.
 
-**Parameterization:** mechanistic.
+**Parameterization:** CL/F, V1/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
 ## Parameters
-> ⚠️ This record is not accepted (current status `needs_review`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
+> ⚠️ This record is not accepted (current status `rejected`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| OFV | `Q87` · Frel | 13462 | not captured | not captured | not captured | not captured | llm (0.5) | tab_0:row2:col1, tab_0:row2:col2 | — | not captured |
-| CQ metabolic clearance to DECQ (CL M ) accounts for | `Q22` · CL | 15.2 | % | not captured | % | not captured | boundary (0.8) | Karunajeewa_2010:results_prose | — | not captured |
-| median steady-state volume of distribution (V SS /F) | `Q61` · V | 6707 | liters | 6.707 | L | not captured | boundary (0.8) | Karunajeewa_2010:discussion_prose | — | not captured |
+| t 1/2abs CQ (h) | `Q49` · kabs | 0.492 | h | not captured | [h] | not captured | exact (1.0) | Karunajeewa_2010_table_2:row2:col1, Karunajeewa_2010_table_2:row2:col2 | — | not captured |
+| V C /F CQ (liters) | `Q290` · V1/F | 0.007 | liters | 7e-06 | [l] | not captured | llm (0.6) | Karunajeewa_2010_table_2:row4:col3 | — | not captured |
+| Nonpregnant (3 ϫ 3) | `Q900` · equation variable | 376 | not captured | not captured | not captured | not captured | llm (0.6) | Karunajeewa_2010_table_3:row3:col1, Karunajeewa_2010_table_3:row3:col2, Karunajeewa_2010_table_3:row3:col3, Karunajeewa_2010_table_3:row3:col4 | — | not captured |
+| CL/FPRQ (L/h) | `Q27` · CL/F | 16.0 | L/h | 4.444444444444444e-06 | L/h | not captured | review_gapfill (0.7) | Chairat_2018:review | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -53,79 +57,26 @@ Karunajeewa HA et al., Pharmacokinetics of chloroquine and mon…, Antimicrobial
 ## Departures & gaps
 
 **Interpretation flags:**
-- salvaged Q22 ('CQ metabolic clearance to DECQ (CL M ) accounts for'=15.2) from results prose — parameter table was unreadable
-- salvaged Q61 ('median steady-state volume of distribution (V SS /F)'=6707) from results prose — parameter table was unreadable
-- apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=chloroquine
+- dropped unlinked row (NIL): 'OFV' — extend the ontology if this is a real PK parameter (source ['tab_0:row2:col1', 'tab_0:row2:col2'])
+- unit_dimension_mismatch: 't 1/2abs CQ (h)' → Q49 (unit '[time]' vs ontology '1 / [time]') — route to review
+- apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=chloroquine
 - held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
+- template fit: PK_3M_9C — formed from central; parent 1, metabolites [0]
 - status held at route_to_review — not promoted
-- unit re-normalised: V 'liters' now converts (value unchanged)
+- row roles: per-genotype parameters — typical value from the reference group: Nonpregnant (3 ϫ 3)
+- row roles (LLM): model_class=compartmental; 7/7 row label(s) assigned, 3 linked by role
+- gap-filled Q27 (CL/F) from Chairat_2018's review values (primary lacked it)
+- skipped review gap-fill of V2: primary is PARENT_METABOLITE (peripheral family needs ≥2C)
+- skipped review gap-fill of Q: primary is PARENT_METABOLITE (peripheral family needs ≥2C)
+- skipped review gap-fill of TLAG: primary's parameterization (rate-constant / ka-only) does not use it
 
 **Extraction notes:**
-- unparsed cell tab_0:row1:col3 = 'Bootstrap replicates (n ϭ 1,000) (median ͓95% empirical CI e ͔)'
 - unparsed cell tab_0:row2:col3 = '13,442 ͓12,915-13,840͔'
-- unparsed cell tab_0:row4:col1 = '1.4 ͓17͔'
-- unparsed cell tab_0:row4:col2 = '1.4 ͓18͔'
-- unparsed cell tab_0:row4:col3 = '1.4 ͓1.0-2.0͔'
-- unparsed cell tab_0:row5:col1 = '34.1 ͓7͔'
-- unparsed cell tab_0:row5:col2 = '29.3 ͓6͔'
-- unparsed cell tab_0:row5:col3 = '29.4 ͓25.9-32.7͔'
-- unparsed cell tab_0:row6:col2 = '8.7 ͓23͔'
-- unparsed cell tab_0:row6:col3 = '8.7 ͓4.7-13.2͔'
-- unparsed cell tab_0:row7:col1 = '4,160 ͓7͔'
-- unparsed cell tab_0:row7:col2 = '4,220 ͓6͔'
-- unparsed cell tab_0:row7:col3 = '4,220 ͓3,727-4,713͔'
-- unparsed cell tab_0:row8:col2 = '221 ͓32͔'
-- unparsed cell tab_0:row8:col3 = '221 ͓77-347͔'
-- unparsed cell tab_0:row9:col1 = '20 ͓14͔'
-- unparsed cell tab_0:row9:col2 = '20 ͓13͔'
-- unparsed cell tab_0:row9:col3 = '20.1 ͓16.1-26.2͔'
-- unparsed cell tab_0:row10:col1 = '5,200 ͓10͔'
-- unparsed cell tab_0:row10:col2 = '5,190 ͓10͔'
-- unparsed cell tab_0:row10:col3 = '5,240 ͓4,380-6,460͔'
-- unparsed cell tab_0:row11:col1 = '9.2 ͓9͔'
-- unparsed cell tab_0:row11:col2 = '7.0 ͓7͔'
-- unparsed cell tab_0:row11:col3 = '7.0 ͓6.1-8.0͔'
-- unparsed cell tab_0:row12:col2 = '4.0 ͓16͔'
-- unparsed cell tab_0:row12:col3 = '4.0 ͓2.6-5.5͔'
-- unparsed cell tab_0:row13:col1 = '39.9 ͓10͔'
-- unparsed cell tab_0:row13:col2 = '40.0 ͓10͔'
-- unparsed cell tab_0:row13:col3 = '40.2 ͓33.0-47.7͔'
-- unparsed cell tab_0:row14:col1 = '3.6 ͓11͔'
-- unparsed cell tab_0:row14:col2 = '3.6 ͓10͔'
-- unparsed cell tab_0:row14:col3 = '3.6 ͓3.03-4.4͔'
-- unparsed cell tab_0:row15:col1 = '812 ͓17͔'
-- unparsed cell tab_0:row15:col2 = '840 ͓17͔'
-- unparsed cell tab_0:row15:col3 = '838 ͓610-1,130͔'
-- unparsed cell tab_0:row16:col1 = '33.5 ͓24͔'
-- unparsed cell tab_0:row16:col2 = '28.5 ͓24͔'
-- unparsed cell tab_0:row16:col3 = '27.8 ͓21.1-34.4͔'
-- unparsed cell tab_0:row17:col1 = '44.7 ͓20͔'
-- unparsed cell tab_0:row17:col2 = '40.1 ͓22͔'
-- unparsed cell tab_0:row17:col3 = '39.2 ͓30.6-48.3͔'
-- unparsed cell tab_0:row18:col1 = '48.6 ͓19͔'
-- unparsed cell tab_0:row18:col2 = '38.7 ͓20͔'
-- unparsed cell tab_0:row18:col3 = '38.1 ͓30.5-45.6͔'
-- unparsed cell tab_0:row19:col1 = '86.7 ͓25͔'
-- unparsed cell tab_0:row19:col2 = '87.9 ͓26͔'
-- unparsed cell tab_0:row19:col3 = '86.3 ͓64.4-108.6͔'
-- unparsed cell tab_0:row20:col1 = '62.4 ͓22͔'
-- unparsed cell tab_0:row20:col2 = '61.9 ͓22͔'
-- unparsed cell tab_0:row20:col3 = '61.8 ͓49.4-77.1͔'
-- unparsed cell tab_0:row22:col1 = '0.69 ͓24͔'
-- unparsed cell tab_0:row22:col2 = '0.63 ͓27͔'
-- unparsed cell tab_0:row22:col3 = '0.64 ͓0.44-0.79͔'
-- unparsed cell tab_0:row23:col1 = '0.86 ͓24͔'
-- unparsed cell tab_0:row23:col2 = '0.81 ͓26͔'
-- unparsed cell tab_0:row23:col3 = '0.82 ͓0.61-0.93͔'
-- unparsed cell tab_0:row24:col1 = '0.86 ͓20͔'
-- unparsed cell tab_0:row24:col2 = '0.88 ͓20͔'
-- unparsed cell tab_0:row24:col3 = '0.90 ͓0.80-0.98͔'
-- unparsed cell tab_0:row25:col1 = '40.6 ͓8͔'
-- unparsed cell tab_0:row25:col2 = '40.6 ͓8͔'
-- unparsed cell tab_0:row25:col3 = '40.5 ͓37.4-43.5͔'
-- unparsed cell tab_0:row26:col1 = '39.7 ͓7͔'
-- unparsed cell tab_0:row26:col2 = '39.7 ͓7͔'
-- unparsed cell tab_0:row26:col3 = '39.6 ͓37.1-42.2͔'
+- unparsed cell Karunajeewa_2010_table_2:row4:col1 = '2,702 ͓2,230-3,535͔'
+- unparsed cell Karunajeewa_2010_table_2:row4:col2 = '3,406 ͓2,819-4,919͔'
+- companion parameter table 2 transcribed (3 record(s))
+- companion parameter table 3 transcribed (16 record(s))
+- LLM selected parameter table(s) 1, 2, 3
 
 ## Validation
 
@@ -156,13 +107,16 @@ first reading `qwen3.6:27b-q8_0` — the numbers on this page are its, whatever 
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 3 | not captured | not captured | not captured |
+| C0_has_structural_params | pass | not captured | 2 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
-| C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
-| C5_unit_missing_Q22 | fail | [length] ** 3 / [time] | % | not captured | not captured | ['Karunajeewa_2010:results_prose'] |
-| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 15.2 | not captured | not captured | ['Karunajeewa_2010:results_prose'] |
+| C0c_disposition_complete | fail | not captured | not captured | not captured | not captured | not captured |
+| C5_dimension_Q27 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Chairat_2018:review'] |
+| C5_dimension_Q290 | pass | [length] ** 3 | not captured | not captured | not captured | ['Karunajeewa_2010_table_2:row4:col3'] |
+| C5_dimension_Q49 | fail | [time] | h | not captured | not captured | ['Karunajeewa_2010_table_2:row2:col1', 'Karunajeewa_2010_table_2:row2:col2'] |
+| C7_apparent_coherence | pass | not captured | not captured | not captured | not captured | not captured |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
-| C9_phys_window_Q61 | pass | volume within physiological range | 6.71e+03 L | not captured | not captured | ['Karunajeewa_2010:discussion_prose'] |
+| C9_phys_window_Q27 | pass | clearance within physiological range | 16 L/h | not captured | not captured | ['Chairat_2018:review'] |
+| C9_phys_window_Q290 | fail | volume within physiological range | 0.007 L | not captured | not captured | ['Karunajeewa_2010_table_2:row4:col3'] |
 
 <details class="legend">
 <summary>Check legend — what each column means</summary>
@@ -176,19 +130,9 @@ first reading `qwen3.6:27b-q8_0` — the numbers on this page are its, whatever 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
-## Downloadable models
+## Models
 
-<div class="pk-models-grid"><div class="pk-models-table">
-<table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-</tbody></table>
-<p>No bundles have been generated for this record yet. When the engineer emits them they appear here automatically — this page reports what is on disk and generates nothing itself.</p>
-</div></div>
+<p>No downloads: this record is <b>rejected</b>, so it is not published as a model. Any archives generated for it before the verdict have been removed — a download outlives the page that explains it.</p>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
@@ -197,4 +141,4 @@ _No web simulator for this record: its structure has no shared WebAssembly templ
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-07-15 11:06 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 06:19 UTC</sub>

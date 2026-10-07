@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N02B&quot;,&quot;href&quot;:&quot;atc/N02B.md&quot;},{&quot;label&quot;:&quot;propacetamol&quot;,&quot;href&quot;:&quot;drugs/drug_propacetamol/&quot;},{&quot;label&quot;:&quot;Krekels_2015 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Propacetamol_Prins2008_reference&quot;,&quot;label&quot;:&quot;Prins_2008_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_propacetamol/Propacetamol_Prins2008_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Propacetamol_Prins2008_reference&quot;,&quot;label&quot;:&quot;Prins_2008_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_propacetamol/Propacetamol_Prins2008_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # propacetamol — `Propacetamol_Krekels2015_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.733). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.733). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -25,6 +25,8 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the lin
 
 <sub>reviewed by glm-5.3-flash</sub>
 
+> ⚠️ **STALE** — review status `rejected` (reviewed 2026-09-28 14:39:30.144177+00:00) predates the upstream re-run (2026-10-07 07:20:46.675028+00:00). Current validate status: `rejected`.
+
 > **Dose compound ≠ measured compound:** dosed `propacetamol`, measured `paracetamol`.
 
 ## Citation
@@ -32,10 +34,10 @@ Krekels EH et al., Developmental changes rather than repea…, European journal 
   ·  DOI: [10.1007/s00228-015-1887-y](https://doi.org/10.1007/s00228-015-1887-y)
 
 ## Model component
-<dbs-pgx drug="propacetamol" model-id="Propacetamol_Krekels2015_reference" status="rejected" stale="false" population="preterm and term neonates and infants" measured-compound="paracetamol" parameterization="mechanistic" topology="general_linear"></dbs-pgx>
+<dbs-pgx drug="propacetamol" model-id="Propacetamol_Krekels2015_reference" status="rejected" stale="true" population="preterm and term neonates and infants" measured-compound="paracetamol" parameterization="mechanistic" topology="general_linear"></dbs-pgx>
 
 **Model structure:** general linear; no model was built for this record.  
-**Parameters:** 4 extracted.
+**Parameters:** 5 extracted.
 
 **Parameterization:** mechanistic.
 
@@ -44,11 +46,12 @@ Krekels EH et al., Developmental changes rather than repea…, European journal 
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| V1 (L/kg) | `Q63` · V1 | 1.06 | L/kg | 0.07420000000000002 | [l] / [kg] | 1.05 | exact (1.0) | Tab1:row2:col1, Tab1:row2:col2 | — | not captured |
-| CL1 (mL/min/kg) | `Q22` · CL | 0.266 | mL/min/kg | 3.1033333333333337e-07 | [ml] / [[min] · [kg]] | 0.273 | llm (0.6) | Tab1:row4:col1, Tab1:row4:col2 | — | not captured |
-| CL2 (mL/min/kgn) | `Q30` · Q | 1.46 | mL/min/kgn | not captured | [ml] / [[min] · [kg] · [n]] | 1.45 | special_case (0.95) | Tab1:row5:col1, Tab1:row5:col2 | — | not captured |
-| n | `Q311` · n_transit | 1.40 | not captured | not captured | not captured | 1.41 | llm (0.6) | Tab1:row7:col1, Tab1:row7:col2 | — | not captured |
-| P plasma, additive (mg/L) | `Q900` · equation variable | 0.354 | mg/L | not captured | [mg] / [l] | 0.383 | llm (0.6) | Tab1:row16:col1, Tab1:row16:col2 | — | not captured |
+| V1 (L/kg) | `Q61` · V | 1.06 | L/kg | 0.07420000000000002 | [l] / [kg] | 1.05 | exact (1.0) | Tab1:row2:col1, Tab1:row2:col2 | — | 0.0925 (29.5% RSE) |
+| CL1 (mL/min/kg) | `Q370` · CLfm | 0.266 | mL/min/kg | 3.1033333333333337e-07 | [ml] / [[min] · [kg]] | 0.273 | exact (1.0) | Tab1:row4:col1, Tab1:row4:col2 | — | not captured |
+| CL2 (mL/min/kgn) | `Q370` · CLfm | 1.46 | mL/min/kg | 1.7033333333333333e-06 | L/h | 1.45 | exact (1.0) | Tab1:row5:col1, Tab1:row5:col2 | — | not captured |
+| CL4 (mL/min/kg) | `Q22` · CL | 0.285 | mL/min/kg | 3.325e-07 | [ml] / [[min] · [kg]] | 0.282 | exact (1.0) | Tab1:row6:col1, Tab1:row6:col2 | — | not captured |
+| n | `Q900` · equation variable | 1.40 | not captured | not captured | not captured | 1.41 | llm (0.6) | Tab1:row7:col1, Tab1:row7:col2 | — | not captured |
+| mf | `Q45` · fm | 11.3 | not captured | not captured | not captured | 11.3 | llm (0.6) | Tab1:row8:col1, Tab1:row8:col2 | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -58,22 +61,28 @@ Krekels EH et al., Developmental changes rather than repea…, European journal 
 ## Departures & gaps
 
 **Interpretation flags:**
+- table section iiv: 'V1' routed out of structural estimates ('Inter-individual variability (variance)')
+- table section iiv: 'CL1' routed out of structural estimates ('Inter-individual variability (variance)')
+- table section iiv: 'CL2' routed out of structural estimates ('Inter-individual variability (variance)')
+- table section iiv: 'CL4' routed out of structural estimates ('Inter-individual variability (variance)')
+- table section residual_error: 'P plasma, additive (mg/L)' routed out of structural estimates ('Residual variability (variance)')
+- table section residual_error: 'P plasma, proportional' routed out of structural estimates ('Residual variability (variance)')
+- table section residual_error: 'PG urine, additive (mg)' routed out of structural estimates ('Residual variability (variance)')
+- table section residual_error: 'P urine , additive (mg)' routed out of structural estimates ('Residual variability (variance)')
+- table section residual_error: 'PS urine, additive (mg)' routed out of structural estimates ('Residual variability (variance)')
 - column 'model fit (rse%)' classified 'rse' by the LLM but kept as the estimate: the header names the point value
-- unit_dimension_unknown: 'mL/min/kgn' (Q)
-- dropped duplicate Q22 ('CL4 (mL/min/kg)', value '0.285') — already have one for this compound
-- dropped unlinked row (NIL): 'mf' — extend the ontology if this is a real PK parameter (source ['Tab1:row8:col1', 'Tab1:row8:col2'])
-- dropped duplicate Q63 ('V1', value '0.0925') — already have one for this compound
-- dropped duplicate Q22 ('CL1', value '0.599') — already have one for this compound
-- dropped duplicate Q30 ('CL2', value '0.312') — already have one for this compound
-- dropped unlinked row (NIL): 'CL4' — extend the ontology if this is a real PK parameter (source ['Tab1:row14:col1', 'Tab1:row14:col2'])
-- dropped unlinked row (NIL): 'P plasma, proportional' — extend the ontology if this is a real PK parameter (source ['Tab1:row17:col1', 'Tab1:row17:col2'])
-- dropped unlinked row (NIL): 'PG urine, additive (mg)' — extend the ontology if this is a real PK parameter (source ['Tab1:row18:col1', 'Tab1:row18:col2'])
-- dropped unlinked row (NIL): 'P urine , additive (mg)' — extend the ontology if this is a real PK parameter (source ['Tab1:row19:col1', 'Tab1:row19:col2'])
-- dropped unlinked row (NIL): 'PS urine, additive (mg)' — extend the ontology if this is a real PK parameter (source ['Tab1:row20:col1', 'Tab1:row20:col2'])
+- unit_dimension_unknown: 'mL/min/kgn' (CLfm)
+- implicit units: 'CL2 (mL/min/kgn)' → mL/min/kg (from the paper text: "The parameter description in the table row is 'CL2 (mL/min/kgn)'. The parameter 'n' is listed separately in the table wi")
+- metabolite volume: 'V1 (L/kg)' Q63→Q61 for paracetamol — it is 1-compartment, so its central volume is its only volume
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=paracetamol
-- held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
 - topology: transfer parameter unlinked (Q100) — add Kfm/formation-rate/rate-constant to the ontology; routing to review
+- template fit: none — only the metabolite is modelled — no parent compartment
 - status held at route_to_review — not promoted
+- row roles (LLM): model_class=compartmental; 15/15 row label(s) assigned, 8 linked by role; re-tagged parent→paracetamol ×14, parent→paracetamol-glucuronide ×6, parent→paracetamol-sulphate ×8
+- molar mass: none of 1 PubChem candidate(s) is 'paracetamol-glucuronide' (LLM) — left in mass units
+- molar mass: none of 1 PubChem candidate(s) is 'paracetamol-sulphate' (LLM) — left in mass units
+- molar mass: none found for 'paracetamol-glucuronide' — its concentrations stay mass-only
+- molar mass: none found for 'paracetamol-sulphate' — its concentrations stay mass-only
 - review gap-fill skipped: this record measures 'paracetamol', not propacetamol — the review values are the parent's
 
 **Extraction notes:**
@@ -109,16 +118,17 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 4 | not captured | not captured | not captured |
+| C0_has_structural_params | pass | not captured | 5 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
-| C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Tab1:row4:col1', 'Tab1:row4:col2'] |
-| C5_dimension_Q63 | pass | [length] ** 3 | not captured | not captured | not captured | ['Tab1:row2:col1', 'Tab1:row2:col2'] |
-| C5_unit_missing_Q30 | fail | [length] ** 3 / [time] | mL/min/kgn | not captured | not captured | ['Tab1:row5:col1', 'Tab1:row5:col2'] |
-| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 0.266 | not captured | not captured | ['Tab1:row4:col1', 'Tab1:row4:col2'] |
+| C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Tab1:row6:col1', 'Tab1:row6:col2'] |
+| C5_dimension_Q370 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Tab1:row4:col1', 'Tab1:row4:col2'] |
+| C5_dimension_Q370 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Tab1:row5:col1', 'Tab1:row5:col2'] |
+| C5_dimension_Q61 | pass | [length] ** 3 | not captured | not captured | not captured | ['Tab1:row2:col1', 'Tab1:row2:col2'] |
+| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 0.285 | not captured | not captured | ['Tab1:row6:col1', 'Tab1:row6:col2'] |
 | C8_topology | fail | ontology-linked transfer parameter on every edge | ['none'] | not captured | not captured | not captured |
-| C9_phys_window_Q22 | pass | clearance within physiological range | 1.12 L/h | not captured | not captured | ['Tab1:row4:col1', 'Tab1:row4:col2'] |
-| C9_phys_window_Q63 | pass | volume within physiological range | 74.2 L | not captured | not captured | ['Tab1:row2:col1', 'Tab1:row2:col2'] |
+| C9_phys_window_Q22 | pass | clearance within physiological range | 1.2 L/h | not captured | not captured | ['Tab1:row6:col1', 'Tab1:row6:col2'] |
+| C9_phys_window_Q61 | pass | volume within physiological range | 74.2 L | not captured | not captured | ['Tab1:row2:col1', 'Tab1:row2:col2'] |
 
 <details class="legend">
 <summary>Check legend — what each column means</summary>
@@ -143,4 +153,4 @@ _No web simulator for this record: its structure has no shared WebAssembly templ
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-09-21 16:55 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 07:20 UTC</sub>

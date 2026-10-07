@@ -1,0 +1,38 @@
+{
+ "dose_source": "paper",
+ "model_id": "Mefloquine_Rufener2018_reference",
+ "molar_masses": {
+  "central.C": 0.37831220000000004
+ },
+ "note": "Values for the shared PK_2C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "paper_doses_kind": "discrete",
+ "paper_doses_mg": [
+  7000.0
+ ],
+ "parameters": {
+  "Cl": 3.8888888888888884e-09,
+  "F": 1.0,
+  "MM": 0.37831220000000004,
+  "Tlag": 0.0,
+  "VdPerKg": 1.4857142857142858e-05,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 0.007,
+  "k12": 7.21153846153846e-06,
+  "k21": 1.0148849797023003e-06,
+  "ka": 8.333333333333333e-05,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 1128.1779403799565
+ },
+ "reference_peaks": {
+  "central.C": 0.07662929016038568
+ },
+ "stop_time": 1036800.0,
+ "template": "PK_2C_enteral",
+ "template_fmu": "PK_2C_enteral.fmu"
+}

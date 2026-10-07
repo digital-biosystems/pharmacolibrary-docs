@@ -1,0 +1,38 @@
+{
+ "dose_source": "paper",
+ "model_id": "Ethosuximide_Diezi2023_granules_b",
+ "molar_masses": {
+  "central.C": 0.1411677
+ },
+ "note": "Values for the shared PK_2C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "paper_doses_kind": "discrete",
+ "paper_doses_mg": [
+  700.0
+ ],
+ "parameters": {
+  "Cl": 1.5833333333333333e-07,
+  "F": 1.0,
+  "MM": 0.1411677,
+  "Tlag": 0.0,
+  "VdPerKg": 0.00044714285714285716,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 0.0007,
+  "k12": 9.052183173588922e-05,
+  "k21": 0.00020383693045563546,
+  "ka": 0.0015527777777777777,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 4259.514101092844
+ },
+ "reference_peaks": {
+  "central.C": 0.011677483440997598
+ },
+ "stop_time": 1036800.0,
+ "template": "PK_2C_enteral",
+ "template_fmu": "PK_2C_enteral.fmu"
+}

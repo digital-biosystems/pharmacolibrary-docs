@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N03A&quot;,&quot;href&quot;:&quot;atc/N03A.md&quot;},{&quot;label&quot;:&quot;perampanel&quot;,&quot;href&quot;:&quot;drugs/drug_perampanel/&quot;},{&quot;label&quot;:&quot;Jing_2023 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Perampanel_Jing2023_reference&quot;,&quot;label&quot;:&quot;Jing_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_perampanel/Perampanel_Jing2023_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Perampanel_Jing2023_reference&quot;,&quot;label&quot;:&quot;Jing_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_perampanel/Perampanel_Jing2023_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Perampanel_Silva2023_base&quot;,&quot;label&quot;:&quot;Silva_2023_base&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_perampanel/Perampanel_Silva2023_base.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Perampanel_Silva2023_final&quot;,&quot;label&quot;:&quot;Silva_2023_final&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_perampanel/Perampanel_Silva2023_final.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Perampanel_Yu2025_reference&quot;,&quot;label&quot;:&quot;Yu_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_perampanel/Perampanel_Yu2025_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # perampanel — `Perampanel_Jing2023_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.7). The first reading is what the record holds.">cross-check: partial</span>
+> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.7). The first reading is what the record holds.">cross-check: partial</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -25,12 +25,14 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on paramet
 
 <sub>reviewed by glm-5.3-flash</sub>
 
+> ⚠️ **STALE** — review status `needs_review` (reviewed 2026-09-28 14:39:24.346840+00:00) predates the upstream re-run (2026-10-07 07:16:18.953098+00:00). Current validate status: `extracted`.
+
 ## Citation
 Jing S et al., A Single- and Multiple-Dose Pharmacokin…, Clinical drug investigation (2023)
   ·  DOI: [10.1007/s40261-022-01241-8](https://doi.org/10.1007/s40261-022-01241-8)
 
 ## Model component
-<dbs-pgx drug="perampanel" model-id="Perampanel_Jing2023_reference" status="needs_review" stale="false" population="healthy Chinese adults" measured-compound="perampanel" parameterization="apparent" topology="1C"></dbs-pgx>
+<dbs-pgx drug="perampanel" model-id="Perampanel_Jing2023_reference" status="extracted" stale="true" population="healthy Chinese adults" measured-compound="perampanel" parameterization="apparent" topology="1C"></dbs-pgx>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 2 extracted.
@@ -38,8 +40,6 @@ Jing S et al., A Single- and Multiple-Dose Pharmacokin…, Clinical drug investi
 **Parameterization:** CL/F, V/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
 ## Parameters
-> ⚠️ This record is not accepted (current status `needs_review`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
-
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
 | CL/F, mL/min | `Q27` · CL/F | 7.85 | mL/min | 1.3083333333333333e-07 | L/h | not captured | review (0.7) | Jing_2023:review | — | not captured |
@@ -132,8 +132,8 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_perampanel/Perampanel_Jing2023_reference/Perampanel_Jing2023_reference_modelica.zip" download>Perampanel_Jing2023_reference_modelica.zip</a> <span class="pk-size">(3.7 kB)</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_perampanel/Perampanel_Jing2023_reference/Perampanel_Jing2023_reference_fmi.zip" download>Perampanel_Jing2023_reference_fmi.zip</a> <span class="pk-size">(4.2 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_perampanel/Perampanel_Jing2023_reference/Perampanel_Jing2023_reference_modelica.zip" download>Perampanel_Jing2023_reference_modelica.zip</a> <span class="pk-size">(4.1 kB)</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_perampanel/Perampanel_Jing2023_reference/Perampanel_Jing2023_reference_fmi.zip" download>Perampanel_Jing2023_reference_fmi.zip</a> <span class="pk-size">(4.3 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_perampanel/Perampanel_Jing2023_reference/Perampanel_Jing2023_reference_matlab.zip" download>Perampanel_Jing2023_reference_matlab.zip</a> <span class="pk-size">(3.5 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_perampanel/Perampanel_Jing2023_reference/Perampanel_Jing2023_reference_matlab_simbio.zip" download>Perampanel_Jing2023_reference_matlab_simbio.zip</a> <span class="pk-size">(2.9 kB)</span></td></tr>
 <tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_perampanel/Perampanel_Jing2023_reference/Perampanel_Jing2023_reference_sbml.zip" download>Perampanel_Jing2023_reference_sbml.zip</a> <span class="pk-size">(2.7 kB)</span></td></tr>
@@ -145,7 +145,7 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-**Administration: oral** — 2 mg, single dose, first-order absorption (ka 0.5 /h, F 1). Doses in the paper: 2, 4, 8 mg.
+**Administration: oral** — 8 mg, single dose, first-order absorption (ka 0.5 /h, F 1). _The paper's dose was not captured; the default is the WHO ATC DDD 8 mg oral (N03AX22) (defined daily dose)._
 
 <dbs-fmusim paramsurl="drugs/drug_perampanel/Perampanel_Jing2023_reference/Perampanel_Jing2023_reference_params.json" metaurl="assets/fmu/PK_1C_enteral.vr.json" wasmurl="assets/fmu/PK_1C_enteral.js" controlsurl="drugs/drug_perampanel/Perampanel_Jing2023_reference/Perampanel_Jing2023_reference_sim_controls.json"></dbs-fmusim>
 
@@ -154,4 +154,4 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-09-10 01:32 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 07:16 UTC</sub>

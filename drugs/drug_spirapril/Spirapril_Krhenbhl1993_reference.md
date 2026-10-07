@@ -4,7 +4,7 @@
 
 # spirapril — `Spirapril_Krhenbhl1993_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.25). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.182). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -20,9 +20,11 @@
 
 Three dimensioned parameters — the equilibrium dissociation constant KD (0.45), the extrapolated initial concentration C0 for spirapril (1600) and C0 for spiraprilat (553) — appear in the paper without a unit, so their values cannot be converted to a common measurement system and the model cannot use them. A further unit reported in the paper could not be converted to SI, leaving that parameter without a usable value. The two readers also disagree on the primary analyte (spiraprilat versus spirapril) and on whether the spirapril–spiraprilat link is hydrolysis or metabolism, and several parameter values (a 2.0 h⁻¹ rate constant and an AUC of 820) differ between the extractions. Extracted — spirapril: Cmax 572 ng/ml, tmax 0.8 h, AUC 1.19e+03 µg·h/l, CL/F 0.35 L/h, V/F 46.5 L, KD 0.45, C0 1.6e+03, t1/2z 1.53 h; spiraprilat: t1/2z 2 h, AUCt 611 µg·h/l, AUC 1.03e+03 µg·h/l, kfm 1.03 1/h, C0 553.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which molecule was measured: this record has spiraprilat, the second reading spirapril; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has spirapril, the second reading unknown; it also differs on 17 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by glm-5.3-flash</sub>
+
+> ⚠️ **STALE** — review status `needs_review` (reviewed 2026-10-05 09:31:52.733490+00:00) predates the upstream re-run (2026-10-07 07:27:57.794903+00:00). Current validate status: `needs_review`.
 
 > **Dose compound ≠ measured compound:** dosed `spirapril`, measured `spiraprilat`.
 
@@ -31,12 +33,12 @@ Krähenbühl S et al., Pharmacokinetics and haemodynamic effec…, European jour
   ·  DOI: [10.1007/BF00315391](https://doi.org/10.1007/BF00315391)
 
 ## Model component
-<dbs-pgx drug="spirapril" model-id="Spirapril_Krhenbhl1993_reference" status="needs_review" stale="false" population="patients with chronic liver disease (cirrhotic and non-cirrhotic) and healthy subjects" measured-compound="spiraprilat" parameterization="apparent" topology="parent_metabolite"></dbs-pgx>
+<dbs-pgx drug="spirapril" model-id="Spirapril_Krhenbhl1993_reference" status="needs_review" stale="true" population="patients with chronic liver disease and healthy subjects" measured-compound="spiraprilat" parameterization="apparent" topology="parent_metabolite"></dbs-pgx>
 
 **Model structure:** parent + metabolite; no model was built for this record.  
-**Parameters:** 13 extracted.
+**Parameters:** 10 extracted.
 
-**Parameterization:** CL/F, V/F — apparent, F unknown (apparent — bioavailability not identifiable).
+**Parameterization:** CLm/F, Vm/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
 ## Parameters
 > ⚠️ This record is not accepted (current status `needs_review`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
@@ -44,18 +46,15 @@ Krähenbühl S et al., Pharmacokinetics and haemodynamic effec…, European jour
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
 | Cma x | `Q32` · Cmax | 572 | ng/ml | not captured | ng/ml | not captured | space_fold (0.95) | tab_1:row0:col4, tab_1:row0:col5, tab_1:row0:col6, tab_1:row0:col7, tab_1:row0:col8, tab_1:row0:col9, tab_1:row0:col10, tab_1:row0:col11, tab_1:row0:col12, tab_1:row0:col13, tab_1:row0:col14, tab_1:row0:col16, tab_1:row0:col18 | — | not captured |
-| tma~ | `Q56` · tmax | 0.8 | h | 2880.0 | h | not captured | llm (0.6) | tab_1:row1:col4, tab_1:row1:col5, tab_1:row1:col6, tab_1:row1:col7, tab_1:row1:col8, tab_1:row1:col9, tab_1:row1:col10, tab_1:row1:col11, tab_1:row1:col12, tab_1:row1:col13, tab_1:row1:col14, tab_1:row1:col16, tab_1:row1:col18 | — | not captured |
-| AUC | `Q88` · AUC | 1190 | µg·h/l | not captured | µg·h/l | not captured | exact (1.0) | tab_1:row2:col4, tab_1:row2:col5, tab_1:row2:col6, tab_1:row2:col7, tab_1:row2:col8, tab_1:row2:col9, tab_1:row2:col10, tab_1:row2:col11, tab_1:row2:col12, tab_1:row2:col13, tab_1:row2:col18 | — | not captured |
-| CL/f ~ | `Q27` · CL/F | 0.35 | L/h | 9.722222222222222e-08 | L/h | not captured | llm_confirmed (0.6) | tab_1:row3:col4, tab_1:row3:col5, tab_1:row3:col6, tab_1:row3:col7, tab_1:row3:col8, tab_1:row3:col9, tab_1:row3:col10, tab_1:row3:col11, tab_1:row3:col12, tab_1:row3:col13, tab_1:row3:col18 | — | not captured |
-| Vdf ~ | `Q76` · V/F | 46.5 | L | 0.0465 | L | not captured | llm (0.6) | tab_1:row4:col4, tab_1:row4:col5, tab_1:row4:col6, tab_1:row4:col7, tab_1:row4:col8, tab_1:row4:col9, tab_1:row4:col10, tab_1:row4:col11, tab_1:row4:col12, tab_1:row4:col13, tab_1:row4:col14, tab_1:row4:col16, tab_1:row4:col18 | — | not captured |
+| AUC | `Q88` · AUC | 1190 | ng.h/ml | not captured | ng.h/ml | not captured | exact (1.0) | tab_1:row2:col4, tab_1:row2:col5, tab_1:row2:col6, tab_1:row2:col7, tab_1:row2:col8, tab_1:row2:col9, tab_1:row2:col10, tab_1:row2:col11, tab_1:row2:col12, tab_1:row2:col13, tab_1:row2:col18 | — | not captured |
+| CL/f ~ | `Q351` · CLm/F | 0.35 | L/h | 9.722222222222222e-08 | L/h | not captured | llm_confirmed (0.6) | tab_1:row3:col4, tab_1:row3:col5, tab_1:row3:col6, tab_1:row3:col7, tab_1:row3:col8, tab_1:row3:col9, tab_1:row3:col10, tab_1:row3:col11, tab_1:row3:col12, tab_1:row3:col13, tab_1:row3:col18 | — | not captured |
+| Vdf ~ | `Q367` · Vm/F | 46.5 | L | 0.0465 | L | not captured | llm (0.6) | tab_1:row4:col4, tab_1:row4:col5, tab_1:row4:col6, tab_1:row4:col7, tab_1:row4:col8, tab_1:row4:col9, tab_1:row4:col10, tab_1:row4:col11, tab_1:row4:col12, tab_1:row4:col13, tab_1:row4:col14, tab_1:row4:col16, tab_1:row4:col18 | — | not captured |
 | kd | `Q331` · KD | 0.45 | not captured | not captured | not captured | not captured | exact (1.0) | tab_1:row5:col4, tab_1:row5:col5, tab_1:row5:col6, tab_1:row5:col7, tab_1:row5:col8, tab_1:row5:col9, tab_1:row5:col10, tab_1:row5:col11, tab_1:row5:col12, tab_1:row5:col13, tab_1:row5:col14, tab_1:row5:col16, tab_1:row5:col18 | — | not captured |
 | C(0) | `Q86` · C0 | 1600 | not captured | not captured | not captured | not captured | llm (0.6) | tab_1:row6:col4, tab_1:row6:col5, tab_1:row6:col6, tab_1:row6:col7, tab_1:row6:col8, tab_1:row6:col9, tab_1:row6:col10, tab_1:row6:col11, tab_1:row6:col12, tab_1:row6:col13, tab_1:row6:col14, tab_1:row6:col16, tab_1:row6:col18 | — | not captured |
 | tl/21 | `Q57` · t1/2z | 1.53 | h | 5508.0 | h | not captured | llm (0.6) | tab_1:row7:col1, tab_1:row7:col4, tab_1:row7:col5, tab_1:row7:col6, tab_1:row7:col7, tab_1:row7:col8, tab_1:row7:col9, tab_1:row7:col10, tab_1:row7:col11, tab_1:row7:col12, tab_1:row7:col13 | — | not captured |
-| t~ | `Q57` · t1/2z | 2.0 | h | 7200.0 | h | not captured | llm (0.6) | Krähenbühl_1993_table_3:row1:col3, Krähenbühl_1993_table_3:row1:col4, Krähenbühl_1993_table_3:row1:col5, Krähenbühl_1993_table_3:row1:col6, Krähenbühl_1993_table_3:row1:col7, Krähenbühl_1993_table_3:row1:col8, Krähenbühl_1993_table_3:row1:col9, Krähenbühl_1993_table_3:row1:col10, Krähenbühl_1993_table_3:row1:col11, Krähenbühl_1993_table_3:row1:col12, Krähenbühl_1993_table_3:row1:col17 | — | not captured |
-| AUC (0-t) a | `Q19` · AUCt | 611 | µg·h/l | not captured | µg·h/l | not captured | llm_corrected (0.6) | Krähenbühl_1993_table_3:row2:col3, Krähenbühl_1993_table_3:row2:col4, Krähenbühl_1993_table_3:row2:col5, Krähenbühl_1993_table_3:row2:col6, Krähenbühl_1993_table_3:row2:col7, Krähenbühl_1993_table_3:row2:col8, Krähenbühl_1993_table_3:row2:col9, Krähenbühl_1993_table_3:row2:col10, Krähenbühl_1993_table_3:row2:col11, Krähenbühl_1993_table_3:row2:col12, Krähenbühl_1993_table_3:row2:col15, Krähenbühl_1993_table_3:row2:col17 | — | not captured |
-| AUG | `Q88` · AUC | 1030 | µg·h/l | not captured | µg·h/l | not captured | llm (0.6) | Krähenbühl_1993_table_3:row3:col3, Krähenbühl_1993_table_3:row3:col4, Krähenbühl_1993_table_3:row3:col5, Krähenbühl_1993_table_3:row3:col6, Krähenbühl_1993_table_3:row3:col7, Krähenbühl_1993_table_3:row3:col8, Krähenbühl_1993_table_3:row3:col9, Krähenbühl_1993_table_3:row3:col10, Krähenbühl_1993_table_3:row3:col11, Krähenbühl_1993_table_3:row3:col12, Krähenbühl_1993_table_3:row3:col15, Krähenbühl_1993_table_3:row3:col17 | — | not captured |
+| AUC (0-t) a | `Q19` · AUCt | 611 | ng.h/ml | not captured | ng.h/ml | not captured | llm_corrected (0.6) | Krähenbühl_1993_table_3:row2:col3, Krähenbühl_1993_table_3:row2:col4, Krähenbühl_1993_table_3:row2:col5, Krähenbühl_1993_table_3:row2:col6, Krähenbühl_1993_table_3:row2:col7, Krähenbühl_1993_table_3:row2:col8, Krähenbühl_1993_table_3:row2:col9, Krähenbühl_1993_table_3:row2:col10, Krähenbühl_1993_table_3:row2:col11, Krähenbühl_1993_table_3:row2:col12, Krähenbühl_1993_table_3:row2:col15, Krähenbühl_1993_table_3:row2:col17 | — | not captured |
 | km b | `Q305` · kfm | 1.03 | 1/h | 0.0002861111111111111 | 1/h | not captured | exact (1.0) | Krähenbühl_1993_table_3:row4:col3, Krähenbühl_1993_table_3:row4:col4, Krähenbühl_1993_table_3:row4:col5, Krähenbühl_1993_table_3:row4:col6, Krähenbühl_1993_table_3:row4:col7, Krähenbühl_1993_table_3:row4:col8, Krähenbühl_1993_table_3:row4:col9, Krähenbühl_1993_table_3:row4:col10, Krähenbühl_1993_table_3:row4:col11, Krähenbühl_1993_table_3:row4:col12, Krähenbühl_1993_table_3:row4:col13, Krähenbühl_1993_table_3:row4:col15, Krähenbühl_1993_table_3:row4:col17 | — | not captured |
-| C (0) | `Q86` · C0 | 553 | not captured | not captured | not captured | not captured | llm (0.6) | Krähenbühl_1993_table_3:row5:col3, Krähenbühl_1993_table_3:row5:col4, Krähenbühl_1993_table_3:row5:col5, Krähenbühl_1993_table_3:row5:col6, Krähenbühl_1993_table_3:row5:col7, Krähenbühl_1993_table_3:row5:col8, Krähenbühl_1993_table_3:row5:col9, Krähenbühl_1993_table_3:row5:col10, Krähenbühl_1993_table_3:row5:col11, Krähenbühl_1993_table_3:row5:col12, Krähenbühl_1993_table_3:row5:col13, Krähenbühl_1993_table_3:row5:col15, Krähenbühl_1993_table_3:row5:col17 | — | not captured |
+| tz/2 b | `Q57` · t1/2z | 1.29 | h | 4644.0 | h | not captured | llm (0.6) | Krähenbühl_1993_table_3:row6:col3, Krähenbühl_1993_table_3:row6:col4, Krähenbühl_1993_table_3:row6:col5, Krähenbühl_1993_table_3:row6:col6, Krähenbühl_1993_table_3:row6:col7, Krähenbühl_1993_table_3:row6:col8, Krähenbühl_1993_table_3:row6:col9, Krähenbühl_1993_table_3:row6:col10, Krähenbühl_1993_table_3:row6:col11, Krähenbühl_1993_table_3:row6:col12 | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -65,25 +64,36 @@ Krähenbühl S et al., Pharmacokinetics and haemodynamic effec…, European jour
 ## Departures & gaps
 
 **Interpretation flags:**
+- column '1' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
+- column '2' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
+- column '3' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
+- column '4' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
+- column '5' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
+- column '6' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
+- column '7' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
+- column '8' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
+- column '9' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
+- column '10' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
+- dropped unlinked row (NIL): 'tma~' — extend the ontology if this is a real PK parameter (source ['tab_1:row1:col4', 'tab_1:row1:col5', 'tab_1:row1:col6', 'tab_1:row1:col7', 'tab_1:row1:col8', 'tab_1:row1:col9', 'tab_1:row1:col10', 'tab_1:row1:col11', 'tab_1:row1:col12', 'tab_1:row1:col13', 'tab_1:row1:col14', 'tab_1:row1:col16', 'tab_1:row1:col18'])
 - dropped unlinked row (NIL): 'C .....' — extend the ontology if this is a real PK parameter (source ['Krähenbühl_1993_table_3:row0:col3', 'Krähenbühl_1993_table_3:row0:col4', 'Krähenbühl_1993_table_3:row0:col5', 'Krähenbühl_1993_table_3:row0:col6', 'Krähenbühl_1993_table_3:row0:col7', 'Krähenbühl_1993_table_3:row0:col8', 'Krähenbühl_1993_table_3:row0:col9', 'Krähenbühl_1993_table_3:row0:col10', 'Krähenbühl_1993_table_3:row0:col11', 'Krähenbühl_1993_table_3:row0:col12', 'Krähenbühl_1993_table_3:row0:col13', 'Krähenbühl_1993_table_3:row0:col15', 'Krähenbühl_1993_table_3:row0:col17'])
-- dropped duplicate Q57 ('tz/2 b', value '1.29') — already have one for this compound
-- dropped value-less row: 'Table 2 . Pharmacokinetic parameters of spirapril in patients and control subjects'
-- implicit units: 'Cma x' → ng/ml (from the popPK convention: 'The paper reports plasma concentrations in ng/ml (limit of quantification 4 ng.ml-1 for spirapril and 13 ng.ml-1 for spi')
-- implicit units: 'tma~' → h (from the popPK convention: 'tmax is a time point; the paper computes profiles over 24-28 h and reports half-lives in h (e.g. rate constants in h-1),')
-- implicit units: 'AUC' → µg·h/l (from the paper text: "Abstract states bioavailability AUC values as '820 gg. h-1-1, 923 gg. h-1-1 and 1300 gg-h. 1-1', i.e. µg·h·l-1 (µg·h/l).")
-- implicit units: 'CL/f ~' → L/h (from the popPK convention: 'No unit stated in the table; CL/F for a one-compartment oral PK analysis is conventionally in L/h, consistent with V/F o')
-- implicit units: 'Vdf ~' → L (from the popPK convention: 'No unit stated in the table; V/F for a one-compartment model is conventionally in L, consistent with CL/F of 0.35 L/h an')
+- dropped unlinked row (NIL): 't~' — extend the ontology if this is a real PK parameter (source ['Krähenbühl_1993_table_3:row1:col3', 'Krähenbühl_1993_table_3:row1:col4', 'Krähenbühl_1993_table_3:row1:col5', 'Krähenbühl_1993_table_3:row1:col6', 'Krähenbühl_1993_table_3:row1:col7', 'Krähenbühl_1993_table_3:row1:col8', 'Krähenbühl_1993_table_3:row1:col9', 'Krähenbühl_1993_table_3:row1:col10', 'Krähenbühl_1993_table_3:row1:col11', 'Krähenbühl_1993_table_3:row1:col12', 'Krähenbühl_1993_table_3:row1:col17'])
+- dropped unlinked row (NIL): 'AUG' — extend the ontology if this is a real PK parameter (source ['Krähenbühl_1993_table_3:row3:col3', 'Krähenbühl_1993_table_3:row3:col4', 'Krähenbühl_1993_table_3:row3:col5', 'Krähenbühl_1993_table_3:row3:col6', 'Krähenbühl_1993_table_3:row3:col7', 'Krähenbühl_1993_table_3:row3:col8', 'Krähenbühl_1993_table_3:row3:col9', 'Krähenbühl_1993_table_3:row3:col10', 'Krähenbühl_1993_table_3:row3:col11', 'Krähenbühl_1993_table_3:row3:col12', 'Krähenbühl_1993_table_3:row3:col15', 'Krähenbühl_1993_table_3:row3:col17'])
+- dropped unlinked row (NIL): 'C (0)' — extend the ontology if this is a real PK parameter (source ['Krähenbühl_1993_table_3:row5:col3', 'Krähenbühl_1993_table_3:row5:col4', 'Krähenbühl_1993_table_3:row5:col5', 'Krähenbühl_1993_table_3:row5:col6', 'Krähenbühl_1993_table_3:row5:col7', 'Krähenbühl_1993_table_3:row5:col8', 'Krähenbühl_1993_table_3:row5:col9', 'Krähenbühl_1993_table_3:row5:col10', 'Krähenbühl_1993_table_3:row5:col11', 'Krähenbühl_1993_table_3:row5:col12', 'Krähenbühl_1993_table_3:row5:col13', 'Krähenbühl_1993_table_3:row5:col15', 'Krähenbühl_1993_table_3:row5:col17'])
+- implicit units: 'Cma x' → ng/ml (from the paper text: "The text states: 'The limit of quantification was 4 ng. ml-1 for spirapril and 13 ng. ml 1 for spiraprilat.' Cmax is a p")
+- implicit units: 'AUC' → ng.h/ml (from the paper text: "The abstract states: 'AUC 820 gg. h-1-~, 923 gg. h-1-~ and 1300 gg-h. 1-1' (where 'gg' is an OCR error for 'ng' and '1-1")
+- implicit units: 'CL/f ~' → L/h (from the popPK convention: 'Clearance (CL/F) is conventionally expressed in L/h. The value 0.35 is consistent with this unit for a small molecule dr')
+- implicit units: 'Vdf ~' → L (from the popPK convention: 'Volume of distribution (Vdf) is conventionally expressed in L. The value 46.5 is consistent with this unit.')
 - implicit units: 'kd' — the LLM proposed '1/h', whose dimension does not fit Q331; left unset
 - implicit units: 'C(0)' — the LLM proposed 'ng/ml', whose dimension does not fit Q86; left unset
-- implicit units: 'tl/21' → h (from the popPK convention: 't1/2z is an elimination half-life; the paper discusses elimination half-life of spiraprilat in time units with rate cons')
-- implicit units: 't~' → h (from the popPK convention: 't1/2z is an elimination half-life; consistent with rate constants reported in h-1 in the abstract, the half-life is in h')
-- implicit units: 'AUC (0-t) a' → µg·h/l (from the paper text: 'AUC(0-t) is part of the AUC calculation (AUC = AUC(0-t) + C(t)/λz); the abstract gives AUC in µg·h·l-1, so AUC(0-t) is i')
-- implicit units: 'AUG' → µg·h/l (from the paper text: "Abstract reports AUC values as '820 gg. h-1-1, 923 gg. h-1-1 and 1300 gg-h. 1-1', i.e. µg·h·l-1 (µg·h/l).")
-- implicit units: 'km b' → 1/h (from the paper text: "The text defines km as 'the slope of the formation phase of spiraprilat', a first-order rate constant; the abstract repo")
-- implicit units: 'C (0)' — the LLM proposed 'ng/ml', whose dimension does not fit Q86; left unset
+- implicit units: 'tl/21' → h (from the popPK convention: 'Half-life (t1/2) is conventionally expressed in hours (h). The value 1.53 is consistent with this unit.')
+- implicit units: 'AUC (0-t) a' → ng.h/ml (from the paper text: "AUC(0-t) is a partial area under the concentration-time curve. The abstract establishes the AUC unit as 'ng.h.ml-1' (ng.")
+- implicit units: 'km b' → 1/h (from the paper text: "The abstract states: 'reduced rate constant of spiraprilat formation (1.10 h-~ in patients vs. 2.00 h -~ in control subj")
+- implicit units: 'tz/2 b' → h (from the popPK convention: 'Half-life (t1/2) is conventionally expressed in hours (h). The value 1.29 is consistent with this unit.')
+- metabolite spiraprilat: Q27→Q351 — only the metabolite is measured and fm is not identifiable, so its CL/V are apparent (fm-divided)
+- metabolite spiraprilat: Q61→Q367 — only the metabolite is measured and fm is not identifiable, so its CL/V are apparent (fm-divided)
 - apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=spiraprilat
 - template fit: none — noncompartmental model — not a compartmental parent–metabolite model
-- row roles (LLM): model_class=noncompartmental; 16/16 row label(s) assigned, 50 linked by role; re-tagged spirapril→parent ×98, spirapril→spiraprilat ×84
+- row roles (LLM): model_class=noncompartmental; 15/15 row label(s) assigned, 50 linked by role; re-tagged spirapril→parent ×98, spirapril→spiraprilat ×84
 - skipped review gap-fill of V2: primary is PARENT_METABOLITE (peripheral family needs ≥2C)
 - skipped review gap-fill of Q: primary is PARENT_METABOLITE (peripheral family needs ≥2C)
 - skipped review gap-fill of TLAG: primary's parameterization (rate-constant / ka-only) does not use it
@@ -118,18 +128,30 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.25 (2/8 fields) | 6 |
+| `gpt-oss:120b` | not confirmed | 0.182 (4/22 fields) | 18 |
 
-<details><summary>6 field(s) a reader read differently</summary>
+<details><summary>18 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `model.links` | [['spirapril', 'spiraprilat', 'hydrolysis']] | [['spirapril', 'spiraprilat', 'metabolism']] | mismatch |
-| `gpt-oss:120b` | `parameters[2.00 h-1 in control subjects]` | 2.0 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[2.00 h-1]` | not captured | 2.0 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[auc]` | not captured | 820 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[auc]` | 1300 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `screen.primary_analyte` | spiraprilat | spirapril | mismatch |
+| `gpt-oss:120b` | `parameters[auc]` | 1190 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[auc]` | not captured | 1190 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[c]` | 1600 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[c]` | not captured | 1600 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[c]` | not captured | 553 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[cl/f -]` | 0.35 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[cl/f -]` | not captured | 0.35 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[cma x]` | 572 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[cma x]` | not captured | 572 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[kd]` | 0.45 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[kd]` | not captured | 0.45 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[tl/21]` | 1.53 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[tl/21]` | not captured | 1.53 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[tz/2 b]` | 1.29 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[vdf -]` | 46.5 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[vdf -]` | not captured | 46.5 | only_one_extracted |
+| `gpt-oss:120b` | `screen.dose_compound` | spirapril | unknown | mismatch |
+| `gpt-oss:120b` | `screen.primary_analyte` | spiraprilat | unknown | mismatch |
 
 </details>
 
@@ -143,27 +165,21 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 13 | not captured | not captured | not captured |
+| C0_has_structural_params | pass | not captured | 10 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
-| C2_base_Q86 | fail | 1600.0 | 16.0 | 0.01 | 0.05 | footnote reference category |
 | C5_dimension_Q19 | pass | [mass] * [time] / [length] ** 3 | not captured | not captured | not captured | ['Krähenbühl_1993_table_3:row2:col3', 'Krähenbühl_1993_table_3:row2:col4', 'Krähenbühl_1993_table_3:row2:col5', 'Krähenbühl_1993_table_3:row2:col6', 'Krähenbühl_1993_table_3:row2:col7', 'Krähenbühl_1993_table_3:row2:col8', 'Krähenbühl_1993_table_3:row2:col9', 'Krähenbühl_1993_table_3:row2:col10', 'Krähenbühl_1993_table_3:row2:col11', 'Krähenbühl_1993_table_3:row2:col12', 'Krähenbühl_1993_table_3:row2:col15', 'Krähenbühl_1993_table_3:row2:col17'] |
-| C5_dimension_Q27 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['tab_1:row3:col4', 'tab_1:row3:col5', 'tab_1:row3:col6', 'tab_1:row3:col7', 'tab_1:row3:col8', 'tab_1:row3:col9', 'tab_1:row3:col10', 'tab_1:row3:col11', 'tab_1:row3:col12', 'tab_1:row3:col13', 'tab_1:row3:col18'] |
 | C5_dimension_Q305 | pass | 1 / [time] | not captured | not captured | not captured | ['Krähenbühl_1993_table_3:row4:col3', 'Krähenbühl_1993_table_3:row4:col4', 'Krähenbühl_1993_table_3:row4:col5', 'Krähenbühl_1993_table_3:row4:col6', 'Krähenbühl_1993_table_3:row4:col7', 'Krähenbühl_1993_table_3:row4:col8', 'Krähenbühl_1993_table_3:row4:col9', 'Krähenbühl_1993_table_3:row4:col10', 'Krähenbühl_1993_table_3:row4:col11', 'Krähenbühl_1993_table_3:row4:col12', 'Krähenbühl_1993_table_3:row4:col13', 'Krähenbühl_1993_table_3:row4:col15', 'Krähenbühl_1993_table_3:row4:col17'] |
 | C5_dimension_Q32 | pass | [mass] / [length] ** 3 | not captured | not captured | not captured | ['tab_1:row0:col4', 'tab_1:row0:col5', 'tab_1:row0:col6', 'tab_1:row0:col7', 'tab_1:row0:col8', 'tab_1:row0:col9', 'tab_1:row0:col10', 'tab_1:row0:col11', 'tab_1:row0:col12', 'tab_1:row0:col13', 'tab_1:row0:col14', 'tab_1:row0:col16', 'tab_1:row0:col18'] |
-| C5_dimension_Q56 | pass | [time] | not captured | not captured | not captured | ['tab_1:row1:col4', 'tab_1:row1:col5', 'tab_1:row1:col6', 'tab_1:row1:col7', 'tab_1:row1:col8', 'tab_1:row1:col9', 'tab_1:row1:col10', 'tab_1:row1:col11', 'tab_1:row1:col12', 'tab_1:row1:col13', 'tab_1:row1:col14', 'tab_1:row1:col16', 'tab_1:row1:col18'] |
+| C5_dimension_Q351 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['tab_1:row3:col4', 'tab_1:row3:col5', 'tab_1:row3:col6', 'tab_1:row3:col7', 'tab_1:row3:col8', 'tab_1:row3:col9', 'tab_1:row3:col10', 'tab_1:row3:col11', 'tab_1:row3:col12', 'tab_1:row3:col13', 'tab_1:row3:col18'] |
+| C5_dimension_Q367 | pass | [length] ** 3 | not captured | not captured | not captured | ['tab_1:row4:col4', 'tab_1:row4:col5', 'tab_1:row4:col6', 'tab_1:row4:col7', 'tab_1:row4:col8', 'tab_1:row4:col9', 'tab_1:row4:col10', 'tab_1:row4:col11', 'tab_1:row4:col12', 'tab_1:row4:col13', 'tab_1:row4:col14', 'tab_1:row4:col16', 'tab_1:row4:col18'] |
 | C5_dimension_Q57 | pass | [time] | not captured | not captured | not captured | ['tab_1:row7:col1', 'tab_1:row7:col4', 'tab_1:row7:col5', 'tab_1:row7:col6', 'tab_1:row7:col7', 'tab_1:row7:col8', 'tab_1:row7:col9', 'tab_1:row7:col10', 'tab_1:row7:col11', 'tab_1:row7:col12', 'tab_1:row7:col13'] |
-| C5_dimension_Q57 | pass | [time] | not captured | not captured | not captured | ['Krähenbühl_1993_table_3:row1:col3', 'Krähenbühl_1993_table_3:row1:col4', 'Krähenbühl_1993_table_3:row1:col5', 'Krähenbühl_1993_table_3:row1:col6', 'Krähenbühl_1993_table_3:row1:col7', 'Krähenbühl_1993_table_3:row1:col8', 'Krähenbühl_1993_table_3:row1:col9', 'Krähenbühl_1993_table_3:row1:col10', 'Krähenbühl_1993_table_3:row1:col11', 'Krähenbühl_1993_table_3:row1:col12', 'Krähenbühl_1993_table_3:row1:col17'] |
-| C5_dimension_Q76 | pass | [length] ** 3 | not captured | not captured | not captured | ['tab_1:row4:col4', 'tab_1:row4:col5', 'tab_1:row4:col6', 'tab_1:row4:col7', 'tab_1:row4:col8', 'tab_1:row4:col9', 'tab_1:row4:col10', 'tab_1:row4:col11', 'tab_1:row4:col12', 'tab_1:row4:col13', 'tab_1:row4:col14', 'tab_1:row4:col16', 'tab_1:row4:col18'] |
+| C5_dimension_Q57 | pass | [time] | not captured | not captured | not captured | ['Krähenbühl_1993_table_3:row6:col3', 'Krähenbühl_1993_table_3:row6:col4', 'Krähenbühl_1993_table_3:row6:col5', 'Krähenbühl_1993_table_3:row6:col6', 'Krähenbühl_1993_table_3:row6:col7', 'Krähenbühl_1993_table_3:row6:col8', 'Krähenbühl_1993_table_3:row6:col9', 'Krähenbühl_1993_table_3:row6:col10', 'Krähenbühl_1993_table_3:row6:col11', 'Krähenbühl_1993_table_3:row6:col12'] |
 | C5_dimension_Q88 | pass | [mass] * [time] / [length] ** 3 | not captured | not captured | not captured | ['tab_1:row2:col4', 'tab_1:row2:col5', 'tab_1:row2:col6', 'tab_1:row2:col7', 'tab_1:row2:col8', 'tab_1:row2:col9', 'tab_1:row2:col10', 'tab_1:row2:col11', 'tab_1:row2:col12', 'tab_1:row2:col13', 'tab_1:row2:col18'] |
-| C5_dimension_Q88 | pass | [mass] * [time] / [length] ** 3 | not captured | not captured | not captured | ['Krähenbühl_1993_table_3:row3:col3', 'Krähenbühl_1993_table_3:row3:col4', 'Krähenbühl_1993_table_3:row3:col5', 'Krähenbühl_1993_table_3:row3:col6', 'Krähenbühl_1993_table_3:row3:col7', 'Krähenbühl_1993_table_3:row3:col8', 'Krähenbühl_1993_table_3:row3:col9', 'Krähenbühl_1993_table_3:row3:col10', 'Krähenbühl_1993_table_3:row3:col11', 'Krähenbühl_1993_table_3:row3:col12', 'Krähenbühl_1993_table_3:row3:col15', 'Krähenbühl_1993_table_3:row3:col17'] |
 | C5_unit_missing_Q331 | fail | [mass] / [length] ** 3 | not captured | not captured | not captured | ['tab_1:row5:col4', 'tab_1:row5:col5', 'tab_1:row5:col6', 'tab_1:row5:col7', 'tab_1:row5:col8', 'tab_1:row5:col9', 'tab_1:row5:col10', 'tab_1:row5:col11', 'tab_1:row5:col12', 'tab_1:row5:col13', 'tab_1:row5:col14', 'tab_1:row5:col16', 'tab_1:row5:col18'] |
 | C5_unit_missing_Q86 | fail | [mass] * [time] / [length] ** 3 | not captured | not captured | not captured | ['tab_1:row6:col4', 'tab_1:row6:col5', 'tab_1:row6:col6', 'tab_1:row6:col7', 'tab_1:row6:col8', 'tab_1:row6:col9', 'tab_1:row6:col10', 'tab_1:row6:col11', 'tab_1:row6:col12', 'tab_1:row6:col13', 'tab_1:row6:col14', 'tab_1:row6:col16', 'tab_1:row6:col18'] |
-| C5_unit_missing_Q86 | fail | [mass] * [time] / [length] ** 3 | not captured | not captured | not captured | ['Krähenbühl_1993_table_3:row5:col3', 'Krähenbühl_1993_table_3:row5:col4', 'Krähenbühl_1993_table_3:row5:col5', 'Krähenbühl_1993_table_3:row5:col6', 'Krähenbühl_1993_table_3:row5:col7', 'Krähenbühl_1993_table_3:row5:col8', 'Krähenbühl_1993_table_3:row5:col9', 'Krähenbühl_1993_table_3:row5:col10', 'Krähenbühl_1993_table_3:row5:col11', 'Krähenbühl_1993_table_3:row5:col12', 'Krähenbühl_1993_table_3:row5:col13', 'Krähenbühl_1993_table_3:row5:col15', 'Krähenbühl_1993_table_3:row5:col17'] |
 | C7_apparent_coherence | pass | not captured | not captured | not captured | not captured | not captured |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
-| C9_phys_window_Q27 | pass | clearance within physiological range | 0.35 L/h | not captured | not captured | ['tab_1:row3:col4', 'tab_1:row3:col5', 'tab_1:row3:col6', 'tab_1:row3:col7', 'tab_1:row3:col8', 'tab_1:row3:col9', 'tab_1:row3:col10', 'tab_1:row3:col11', 'tab_1:row3:col12', 'tab_1:row3:col13', 'tab_1:row3:col18'] |
-| C9_phys_window_Q76 | pass | volume within physiological range | 46.5 L | not captured | not captured | ['tab_1:row4:col4', 'tab_1:row4:col5', 'tab_1:row4:col6', 'tab_1:row4:col7', 'tab_1:row4:col8', 'tab_1:row4:col9', 'tab_1:row4:col10', 'tab_1:row4:col11', 'tab_1:row4:col12', 'tab_1:row4:col13', 'tab_1:row4:col14', 'tab_1:row4:col16', 'tab_1:row4:col18'] |
 
 <details class="legend">
 <summary>Check legend — what each column means</summary>
@@ -198,4 +214,4 @@ _No web simulator for this record: its structure has no shared WebAssembly templ
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-09-30 23:48 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 07:27 UTC</sub>

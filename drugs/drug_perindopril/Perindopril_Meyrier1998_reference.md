@@ -4,7 +4,7 @@
 
 # perindopril — `Perindopril_Meyrier1998_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.75). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -20,7 +20,11 @@
 
 No clearance, volume or rate constant of the model is reported in it. No parameter values were extracted.
 
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has perindopril, the second reading perindopril + indapamide. That field shapes the model, so the record is marked disputed.
+
 <sub>reviewed by rule template (no LLM)</sub>
+
+> ⚠️ **STALE** — review status `rejected` (reviewed 2026-10-05 09:30:10.300696+00:00) predates the upstream re-run (2026-10-07 06:55:40.109405+00:00). Current validate status: `rejected`.
 
 > **Dose compound ≠ measured compound:** dosed `perindopril`, measured `perindoprilat`.
 
@@ -29,9 +33,9 @@ Meyrier A et al., Fixed low-dose perindopril-indapamide c…, American journal o
   ·  DOI: [10.1016/s0895-7061(98)00128-9](https://doi.org/10.1016/s0895-7061(98)00128-9)
 
 ## Model component
-<dbs-pgx drug="perindopril" model-id="Perindopril_Meyrier1998_reference" status="rejected" stale="false" population="adults with mild to moderate essential hypertension and mild to severe chronic renal failure" measured-compound="perindoprilat" parameterization="mechanistic" topology="general_linear"></dbs-pgx>
+<dbs-pgx drug="perindopril" model-id="Perindopril_Meyrier1998_reference" status="rejected" stale="true" population="hypertensive patients with chronic renal failure" measured-compound="perindoprilat" parameterization="mechanistic" topology="parent_metabolite"></dbs-pgx>
 
-**Model structure:** general linear; no model was built for this record.  
+**Model structure:** parent + metabolite; no model was built for this record.  
 **Parameters:** 0 extracted.
 
 **Parameterization:** mechanistic.
@@ -46,8 +50,9 @@ _No resolved parameters._
 **Interpretation flags:**
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=perindoprilat
 - topology: transfer parameter unlinked (Q100) — add Kfm/formation-rate/rate-constant to the ontology; routing to review
-- template fit: PK_3M_9C — formed from central; parent 0, metabolites [0]
+- template fit: none — only the metabolite is modelled — no parent compartment
 - status held at route_to_review — not promoted
+- review gap-fill skipped: this record carries no value of its own, and a model assembled entirely from other papers is not this paper's model
 
 **Extraction notes:**
 - no TEI final-model table id; trying text-pointer table recovery
@@ -56,13 +61,34 @@ _No resolved parameters._
 
 ## Validation
 
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
+
+| second reader | verdict | agreement | disagreements |
+|---|---|---|---|
+| `gpt-oss:120b` | not confirmed | 0.75 (3/4 fields) | 1 |
+
+<details><summary>1 field(s) a reader read differently</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss:120b` | `screen.dose_compound` | perindopril | perindopril + indapamide | mismatch |
+
+</details>
+
+<details class="legend">
+<summary>Cross-check legend</summary>
+<table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>second reader</code></td><td>a model that re-read the paper independently, always from a different family than the first reading (scholarv2.secondary_for): a qwen primary is checked by gpt-oss:120b, a gpt-oss primary by qwen3.8:27b-mtp-q8_0 — two checkpoints of one family share their misreads, so agreement between them would mean little. A record can have several readers.</td></tr><tr><td><code>agreement</code></td><td>share of the compared fields that reader agreed on.</td></tr><tr><td><code>verdict</code></td><td>per reader: `confirmed` it agrees throughout · `partly confirmed` a non-structural field differs · `not confirmed` a structural one differs (clearance, a volume, ka, a lag) · `primary re-run` the first reading extracted nothing and was given one hinted retry.</td></tr><tr><td><code>combined</code></td><td>the record's verdict over ALL its readers: confirmed only when every reader that answered agrees, disputed as soon as one disagrees on a structural parameter. The most favourable reading is never taken — an extra reader must not be a way to find one that agrees.</td></tr><tr><td><code>kept</code></td><td>which reading the record holds. ALWAYS the first — a disagreement is a signal for a reviewer, never an automatic correction, so the numbers on this page are the first model's either way.</td></tr></tbody></table>
+</details>
+
+
 **Scholar closed-form checks:**
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
 | C0_has_structural_params | fail | not captured | 0 | not captured | not captured | not captured |
 | C0b_disposition_core | fail | not captured | not captured | not captured | not captured | not captured |
-| C8_topology | fail | ontology-linked transfer parameter on every edge | ['unknown'] | not captured | not captured | not captured |
+| C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
 
 <details class="legend">
 <summary>Check legend — what each column means</summary>
@@ -87,4 +113,4 @@ _No web simulator for this record: its structure has no shared WebAssembly templ
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-09-30 23:36 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 06:55 UTC</sub>

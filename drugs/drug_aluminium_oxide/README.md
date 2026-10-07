@@ -1,0 +1,57 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;D10A&quot;,&quot;href&quot;:&quot;atc/D10A.md&quot;},{&quot;label&quot;:&quot;aluminium oxide&quot;}]"></div>
+
+# aluminium oxide
+
+- **generic name:** aluminium oxide
+- **ATC codes:** `D10AX04`
+- **DrugBank:** [DB11342](https://go.drugbank.com/drugs/DB11342) · **PubChem:** not captured
+- **groups:** approved, withdrawn
+
+## About
+
+Aluminium oxide is a chemical compound that was used in topical preparations for treating acne. It is no longer used, as it has been withdrawn.
+
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q177342](https://www.wikidata.org/wiki/Q177342) and the WHO ATC classification; not checked by a person.</small>
+
+## Extraction summary
+
+| extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
+|---|---|---|---|---|---|---|---|---|---|---|
+| 2026-10-07 07:29 | 0:56 | 0/0/0 | 0/1/0 | 0/0/0 | 50,986/1,461 | einfracz / qwen3.8-27b | 4 | 1/3 | 4/0 | 0 |
+
+## popPK records
+
+_not available_
+
+## Pharmacodynamics (PD)
+
+| status | detail | about | model | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--red">rejected</span> | [Santos_2023_abnormal_larvae](drugs/drug_aluminium_oxide/pd_Santos_2023_abnormal_larvae.md) | percentage of abnormal larval development ← PAVAL® (PV) aluminum oxide leachate · direct sigmoid Emax (Hill) effect | — | Santos J et al., Eco-toxicity assessment of industrial b…, Journal of environmental ma… (2023) | [10.1016/j.jenvman.2023.118100](https://doi.org/10.1016/j.jenvman.2023.118100) |
+
+<details class="legend">
+<summary>Badge legend — what each badge means</summary>
+<table><thead><tr><th>badge</th><th>what it means</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">curated</span></td><td>hand-authored by a person — an exemplar, not an extraction.</td></tr><tr><td><span class="pk-badge pk-badge--green">extracted</span></td><td>the pipeline accepted the record: every closed-form check it could run passed.</td></tr><tr><td><span class="pk-badge pk-badge--green">reviewed — candidate</span></td><td>the reviewer ran the built model against the paper's own reported values and they agree — the best automatic verdict there is.</td></tr><tr><td><span class="pk-badge pk-badge--green">accepted (caveats)</span></td><td>the model replicates the paper, but an advisory check failed — the record page names the caveat under the badge and the drug page shows it under the status.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>extracted, then a check failed or a value looks implausible. The numbers are shown as read, not endorsed.</td></tr><tr><td><span class="pk-badge pk-badge--orange">built, not shipped</span></td><td>a model was built, but a core parameter fell back to a library default, so it is not shipped.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted — the record is not a compartmental model, or nothing usable was extracted.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">not modelled</span></td><td>pipeline state, not a judgement: no model has been built for this record yet (likewise `not simulated`).</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>the reviewer's verdict predates the latest re-run of the paper — treat the status as out of date, not as current.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>every independent reader agreed on every compared field. With more than one reader the badge counts them, e.g. 'cross-checked ✓ 2/2'.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>a reader differs on a non-structural field (a population label, a flag), or the readers do not all agree with each other.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>at least one reader differs on a structural parameter — a clearance, a volume, ka, a lag. The record still holds the FIRST reading; the disagreement is a signal for a reviewer, never an automatic correction.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>the data come from an animal (or in-vitro) study, not from people. The record, its model and its simulation are kept — they describe that species.</td></tr></tbody></table>
+<p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
+</details>
+
+## Coverage
+
+- **PubMed hits:** 9 matched, 9 returned
+- **screened:** 0  ·  **relevant:** 0
+- **records:** 0  ·  extracted 0  ·  needs_review 0  ·  rejected 0  ·  stale 0
+- **scholar-agent fallback query used:** not captured
+
+## Screened and excluded
+
+| domain | paper | verdict | relevance | extractability | reason |
+|---|---|---|---|---|---|
+| popPK | Duranceau_2016 | irrelevant | 0 | 0 | The study evaluates the toxicity of adsorbent materials using a bacterial bioluminescence assay, not the pharmacokinetics of aluminium oxide. |
+| popPK | Durham_1976 | irrelevant | 0 | 0 | The paper studies guanylate cyclase enzyme properties and uses aluminium oxide only as a chromatographic column material, not as a pharmacological subject. |
+| popPK | Jiang_2024 | irrelevant | 0 | 0 | The study investigates the toxicological effects of nanosized aluminum oxide on dinoflagellates (Alexandrium tamarense) and is not a pharmacokinetic study of aluminium_oxide in a human or animal subject. |
+| popPK | Li_2004 | irrelevant | 0 | 0 | The study focuses on algal-inhibiting allelochemicals from plants, and aluminum oxide is used only as a chromatographic medium, not as a drug subject to pharmacokinetic analysis. |
+| popPK | Li_2011 | irrelevant | 0 | 0 | The paper reports nano-toxicity and energy budget effects of Al2O3 on the crustacean Ceriodaphnia dubia, not pharmacokinetic disposition parameters. |
+| popPK | da_2026 | irrelevant | 0 | 0 | The paper is an in vitro materials science study on dental resin composites where aluminium oxide is used as a polishing abrasive, not a subject drug. |
+
+---
+<sub>Generated by `docs.py` (scholarv2)</sub>

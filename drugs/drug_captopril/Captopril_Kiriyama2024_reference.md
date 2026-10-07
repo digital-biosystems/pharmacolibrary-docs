@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C09A&quot;,&quot;href&quot;:&quot;atc/C09A.md&quot;},{&quot;label&quot;:&quot;captopril&quot;,&quot;href&quot;:&quot;drugs/drug_captopril/&quot;},{&quot;label&quot;:&quot;Kiriyama_2024 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Captopril_Hu2025_reference&quot;,&quot;label&quot;:&quot;Hu_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_captopril/Captopril_Hu2025_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Captopril_Hu2025_reference&quot;,&quot;label&quot;:&quot;Hu_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_captopril/Captopril_Hu2025_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # captopril — `Captopril_Kiriyama2024_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.857). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.087). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -23,16 +23,18 @@
 
 Without a unit the value cannot be converted, so the model cannot use it. Extracted — captopril: V 54.2, kel 0.0521, k12 0.153, k21 0.0694, AUC 1.73e+03, t1/2z 81.6, CL 4.21, Vss 395, … (+1).
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has captopril, the second reading captopril, nifedipine; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has captopril, the second reading unknown; it also differs on 20 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
+
+> ⚠️ **STALE** — review status `needs_review` (reviewed 2026-09-30 23:59:40.045692+00:00) predates the upstream re-run (2026-10-07 05:16:33.266182+00:00). Current validate status: `rejected`.
 
 ## Citation
 Kiriyama A et al., Exploring the multiple effects of nifed…, Pharmacology research & per… (2024)
   ·  DOI: [10.1002/prp2.1249](https://doi.org/10.1002/prp2.1249)
 
 ## Model component
-<dbs-pgx drug="captopril" model-id="Captopril_Kiriyama2024_reference" status="needs_review" stale="false" population="spontaneously hypertensive rats" measured-compound="captopril" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<dbs-pgx drug="captopril" model-id="Captopril_Kiriyama2024_reference" status="rejected" stale="true" population="spontaneously hypertensive rats" measured-compound="captopril" parameterization="mechanistic" topology="1C"></dbs-pgx>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 9 extracted.
@@ -40,19 +42,19 @@ Kiriyama A et al., Exploring the multiple effects of nifed…, Pharmacology rese
 **Parameterization:** mechanistic.
 
 ## Parameters
-> ⚠️ This record is not accepted (current status `needs_review`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
+> ⚠️ This record is not accepted (current status `rejected`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| V1 | `Q61` · V | 54.2 | not captured | not captured | not captured | not captured | exact (1.0) | prp21249-tbl-0002:row2:col4, prp21249-tbl-0002:row2:col5 | — | not captured |
-| k10 | `Q47` · kel | 0.0521 | not captured | not captured | not captured | not captured | exact (1.0) | prp21249-tbl-0002:row3:col4, prp21249-tbl-0002:row3:col5 | — | not captured |
-| k12 | `Q301` · k12 | 0.153 | not captured | not captured | not captured | not captured | exact (1.0) | prp21249-tbl-0002:row4:col4, prp21249-tbl-0002:row4:col5 | — | not captured |
-| k21 | `Q302` · k21 | 0.0694 | not captured | not captured | not captured | not captured | exact (1.0) | prp21249-tbl-0002:row5:col4, prp21249-tbl-0002:row5:col5 | — | not captured |
-| AUC | `Q88` · AUC | 1730 | not captured | not captured | not captured | not captured | exact (1.0) | Kiriyama_2024_table_1:row3:col8, Kiriyama_2024_table_1:row3:col10, Kiriyama_2024_table_1:row3:col11, Kiriyama_2024_table_1:row3:col13 | — | not captured |
-| t1/2 | `Q57` · t1/2z | 81.6 | not captured | not captured | not captured | not captured | exact (1.0) | Kiriyama_2024_table_1:row4:col8, Kiriyama_2024_table_1:row4:col10, Kiriyama_2024_table_1:row4:col11, Kiriyama_2024_table_1:row4:col13 | — | not captured |
-| CLtot | `Q22` · CL | 4.21 | not captured | not captured | not captured | not captured | exact (1.0) | Kiriyama_2024_table_1:row5:col8, Kiriyama_2024_table_1:row5:col10, Kiriyama_2024_table_1:row5:col11, Kiriyama_2024_table_1:row5:col13 | — | not captured |
-| Vdss | `Q65` · Vss | 395 | not captured | not captured | not captured | not captured | llm (0.6) | Kiriyama_2024_table_1:row6:col8, Kiriyama_2024_table_1:row6:col10, Kiriyama_2024_table_1:row6:col11, Kiriyama_2024_table_1:row6:col13 | — | not captured |
-| MRT | `Q53` · MRT | 69.8 | not captured | not captured | not captured | not captured | exact (1.0) | Kiriyama_2024_table_1:row7:col8, Kiriyama_2024_table_1:row7:col10, Kiriyama_2024_table_1:row7:col11, Kiriyama_2024_table_1:row7:col13 | — | not captured |
+| V1 | `Q61` · V | 54.2 | mL | 5.42e-05 | L | not captured | exact (1.0) | prp21249-tbl-0002:row2:col4, prp21249-tbl-0002:row2:col5 | — | not captured |
+| k10 | `Q47` · kel | 0.0521 | 1/min | 0.0008683333333333334 | 1/h | not captured | exact (1.0) | prp21249-tbl-0002:row3:col4, prp21249-tbl-0002:row3:col5 | — | not captured |
+| k12 | `Q301` · k12 | 0.153 | 1/min | 0.0025499999999999997 | 1/h | not captured | exact (1.0) | prp21249-tbl-0002:row4:col4, prp21249-tbl-0002:row4:col5 | — | not captured |
+| k21 | `Q302` · k21 | 0.0694 | 1/min | 0.0011566666666666667 | 1/h | not captured | exact (1.0) | prp21249-tbl-0002:row5:col4, prp21249-tbl-0002:row5:col5 | — | not captured |
+| AUC | `Q88` · AUC | 1730 | ng·min/mL | not captured | ng·min/mL | not captured | exact (1.0) | Kiriyama_2024_table_1:row3:col8, Kiriyama_2024_table_1:row3:col10, Kiriyama_2024_table_1:row3:col11, Kiriyama_2024_table_1:row3:col13 | — | not captured |
+| t1/2 | `Q57` · t1/2z | 81.6 | min | 4896.0 | h | not captured | exact (1.0) | Kiriyama_2024_table_1:row4:col8, Kiriyama_2024_table_1:row4:col10, Kiriyama_2024_table_1:row4:col11, Kiriyama_2024_table_1:row4:col13 | — | not captured |
+| CLtot | `Q22` · CL | 4.21 | mL/min | 7.016666666666665e-08 | L/h | not captured | exact (1.0) | Kiriyama_2024_table_1:row5:col8, Kiriyama_2024_table_1:row5:col10, Kiriyama_2024_table_1:row5:col11, Kiriyama_2024_table_1:row5:col13 | — | not captured |
+| Vdss | `Q65` · Vss | 395 | mL | 0.000395 | L | not captured | llm (0.6) | Kiriyama_2024_table_1:row6:col8, Kiriyama_2024_table_1:row6:col10, Kiriyama_2024_table_1:row6:col11, Kiriyama_2024_table_1:row6:col13 | — | not captured |
+| MRT | `Q53` · MRT | 69.8 | min | 4188.0 | h | not captured | exact (1.0) | Kiriyama_2024_table_1:row7:col8, Kiriyama_2024_table_1:row7:col10, Kiriyama_2024_table_1:row7:col11, Kiriyama_2024_table_1:row7:col13 | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -64,9 +66,15 @@ Kiriyama A et al., Exploring the multiple effects of nifed…, Pharmacology rese
 **Interpretation flags:**
 - dropped unlinked row (NIL): 'AIC' — extend the ontology if this is a real PK parameter (source ['prp21249-tbl-0002:row6:col4', 'prp21249-tbl-0002:row6:col5'])
 - dropped unlinked row (NIL): 'Dose' — extend the ontology if this is a real PK parameter (source ['Kiriyama_2024_table_1:row2:col9', 'Kiriyama_2024_table_1:row2:col12'])
-- dropped value-less row: 'Doses of nifedipine are 1.0 and 0.5 mg/kg during monotherapy and coadministration, respectively'
-- dropped value-less row: 'Doses of captopril are 15.0 and 5.0 mg/kg during monotherapy and coadministration, respectively'
-- implicit units: LLM call failed (JSONDecodeError) — units left missing
+- implicit units: 'V1' → mL (from the popPK convention: 'V1 is the volume of the central compartment. In rat PK studies, volumes are typically expressed in mL (or L). Given the ')
+- implicit units: 'k10' → 1/min (from the popPK convention: 'k10 is a first-order elimination rate constant. The paper states AUC is in ng·min/mL and MRT is derived from AUMC/AUC. S')
+- implicit units: 'k12' → 1/min (from the popPK convention: 'k12 is a first-order transfer rate constant. Consistent with k10 and the time unit of minutes used for AUC and MRT in th')
+- implicit units: 'k21' → 1/min (from the popPK convention: 'k21 is a first-order transfer rate constant. Consistent with k10 and the time unit of minutes used for AUC and MRT in th')
+- implicit units: 'AUC' → ng·min/mL (from the paper text: "The text explicitly states: 'For nifedipine, the AUC per dose during monotherapy and coadministration was 237 ± 85 and 1")
+- implicit units: 't1/2' → min (from the popPK convention: 't1/2 is the terminal elimination half-life. It is calculated as ln2/k10. Since k10 is in 1/min (derived from AUC units o')
+- implicit units: 'CLtot' → mL/min (from the popPK convention: 'CLtot is total clearance. It is calculated as Dose/AUC. Dose is in mg/kg (or mg), AUC is in ng·min/mL. Clearance units a')
+- implicit units: 'Vdss' → mL (from the popPK convention: 'Vdss is the volume of distribution at steady state. It is calculated as CLtot/ke. Since CLtot is in mL/min and ke is in ')
+- implicit units: 'MRT' → min (from the popPK convention: 'MRT is the mean residence time. It is calculated as AUMC/AUC. Since AUC is in ng·min/mL, the time unit is minutes. The v')
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=captopril
 - structure disagreement: deterministic 1C vs LLM 2C — review compartment count
 - 1C volume normalization: Q63→Q61 (single-compartment model has no central/peripheral split; 'V1' is the general volume)
@@ -87,14 +95,33 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.857 (12/14 fields) | 2 |
+| `gpt-oss:120b` | not confirmed | 0.087 (2/23 fields) | 21 |
 
-<details><summary>2 field(s) a reader read differently</summary>
+<details><summary>21 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss:120b` | `parameters[auc]` | 1730 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[auc]` | not captured | 1730 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[cltot]` | 4.21 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[cltot]` | not captured | 4.21 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[dose]` | not captured | 15.0 | only_one_extracted |
-| `gpt-oss:120b` | `screen.dose_compound` | captopril | captopril, nifedipine | mismatch |
+| `gpt-oss:120b` | `parameters[k10]` | 0.0521 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[k10]` | not captured | 0.0521 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[k12]` | 0.153 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[k12]` | not captured | 0.153 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[k21]` | 0.0694 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[k21]` | not captured | 0.0694 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[mrt]` | 69.8 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[mrt]` | not captured | 69.8 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[t1/2]` | 81.6 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[t1/2]` | not captured | 81.6 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[v1]` | 54.2 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[v1]` | not captured | 54.2 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[vdss]` | 395 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[vdss]` | not captured | 395 | only_one_extracted |
+| `gpt-oss:120b` | `screen.dose_compound` | captopril | unknown | mismatch |
+| `gpt-oss:120b` | `screen.primary_analyte` | captopril | unknown | mismatch |
 
 </details>
 
@@ -111,17 +138,20 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 | C0_has_structural_params | pass | not captured | 9 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
-| C5_unit_missing_Q22 | fail | [length] ** 3 / [time] | not captured | not captured | not captured | ['Kiriyama_2024_table_1:row5:col8', 'Kiriyama_2024_table_1:row5:col10', 'Kiriyama_2024_table_1:row5:col11', 'Kiriyama_2024_table_1:row5:col13'] |
-| C5_unit_missing_Q301 | fail | 1 / [time] | not captured | not captured | not captured | ['prp21249-tbl-0002:row4:col4', 'prp21249-tbl-0002:row4:col5'] |
-| C5_unit_missing_Q302 | fail | 1 / [time] | not captured | not captured | not captured | ['prp21249-tbl-0002:row5:col4', 'prp21249-tbl-0002:row5:col5'] |
-| C5_unit_missing_Q47 | fail | 1 / [time] | not captured | not captured | not captured | ['prp21249-tbl-0002:row3:col4', 'prp21249-tbl-0002:row3:col5'] |
-| C5_unit_missing_Q53 | fail | [time] | not captured | not captured | not captured | ['Kiriyama_2024_table_1:row7:col8', 'Kiriyama_2024_table_1:row7:col10', 'Kiriyama_2024_table_1:row7:col11', 'Kiriyama_2024_table_1:row7:col13'] |
-| C5_unit_missing_Q57 | fail | [time] | not captured | not captured | not captured | ['Kiriyama_2024_table_1:row4:col8', 'Kiriyama_2024_table_1:row4:col10', 'Kiriyama_2024_table_1:row4:col11', 'Kiriyama_2024_table_1:row4:col13'] |
-| C5_unit_missing_Q61 | fail | [length] ** 3 | not captured | not captured | not captured | ['prp21249-tbl-0002:row2:col4', 'prp21249-tbl-0002:row2:col5'] |
-| C5_unit_missing_Q65 | fail | [length] ** 3 | not captured | not captured | not captured | ['Kiriyama_2024_table_1:row6:col8', 'Kiriyama_2024_table_1:row6:col10', 'Kiriyama_2024_table_1:row6:col11', 'Kiriyama_2024_table_1:row6:col13'] |
-| C5_unit_missing_Q88 | fail | [mass] * [time] / [length] ** 3 | not captured | not captured | not captured | ['Kiriyama_2024_table_1:row3:col8', 'Kiriyama_2024_table_1:row3:col10', 'Kiriyama_2024_table_1:row3:col11', 'Kiriyama_2024_table_1:row3:col13'] |
+| C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Kiriyama_2024_table_1:row5:col8', 'Kiriyama_2024_table_1:row5:col10', 'Kiriyama_2024_table_1:row5:col11', 'Kiriyama_2024_table_1:row5:col13'] |
+| C5_dimension_Q301 | pass | 1 / [time] | not captured | not captured | not captured | ['prp21249-tbl-0002:row4:col4', 'prp21249-tbl-0002:row4:col5'] |
+| C5_dimension_Q302 | pass | 1 / [time] | not captured | not captured | not captured | ['prp21249-tbl-0002:row5:col4', 'prp21249-tbl-0002:row5:col5'] |
+| C5_dimension_Q47 | pass | 1 / [time] | not captured | not captured | not captured | ['prp21249-tbl-0002:row3:col4', 'prp21249-tbl-0002:row3:col5'] |
+| C5_dimension_Q53 | pass | [time] | not captured | not captured | not captured | ['Kiriyama_2024_table_1:row7:col8', 'Kiriyama_2024_table_1:row7:col10', 'Kiriyama_2024_table_1:row7:col11', 'Kiriyama_2024_table_1:row7:col13'] |
+| C5_dimension_Q57 | pass | [time] | not captured | not captured | not captured | ['Kiriyama_2024_table_1:row4:col8', 'Kiriyama_2024_table_1:row4:col10', 'Kiriyama_2024_table_1:row4:col11', 'Kiriyama_2024_table_1:row4:col13'] |
+| C5_dimension_Q61 | pass | [length] ** 3 | not captured | not captured | not captured | ['prp21249-tbl-0002:row2:col4', 'prp21249-tbl-0002:row2:col5'] |
+| C5_dimension_Q65 | pass | [length] ** 3 | not captured | not captured | not captured | ['Kiriyama_2024_table_1:row6:col8', 'Kiriyama_2024_table_1:row6:col10', 'Kiriyama_2024_table_1:row6:col11', 'Kiriyama_2024_table_1:row6:col13'] |
+| C5_dimension_Q88 | pass | [mass] * [time] / [length] ** 3 | not captured | not captured | not captured | ['Kiriyama_2024_table_1:row3:col8', 'Kiriyama_2024_table_1:row3:col10', 'Kiriyama_2024_table_1:row3:col11', 'Kiriyama_2024_table_1:row3:col13'] |
 | C6_cl_magnitude | pass | &lt;= 90.0 L/h | 4.21 | not captured | not captured | ['Kiriyama_2024_table_1:row5:col8', 'Kiriyama_2024_table_1:row5:col10', 'Kiriyama_2024_table_1:row5:col11', 'Kiriyama_2024_table_1:row5:col13'] |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
+| C9_phys_window_Q22 | pass | clearance within physiological range | 0.253 L/h | not captured | not captured | ['Kiriyama_2024_table_1:row5:col8', 'Kiriyama_2024_table_1:row5:col10', 'Kiriyama_2024_table_1:row5:col11', 'Kiriyama_2024_table_1:row5:col13'] |
+| C9_phys_window_Q61 | fail | volume within physiological range | 0.0542 L | not captured | not captured | ['prp21249-tbl-0002:row2:col4', 'prp21249-tbl-0002:row2:col5'] |
+| C9_phys_window_Q65 | fail | volume within physiological range | 0.395 L | not captured | not captured | ['Kiriyama_2024_table_1:row6:col8', 'Kiriyama_2024_table_1:row6:col10', 'Kiriyama_2024_table_1:row6:col11', 'Kiriyama_2024_table_1:row6:col13'] |
 
 <details class="legend">
 <summary>Check legend — what each column means</summary>
@@ -135,19 +165,9 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
-## Downloadable models
+## Models
 
-<div class="pk-models-grid"><div class="pk-models-table">
-<table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-</tbody></table>
-<p>No bundles have been generated for this record yet. When the engineer emits them they appear here automatically — this page reports what is on disk and generates nothing itself.</p>
-</div></div>
+<p>No downloads: this record is <b>rejected</b>, so it is not published as a model. Any archives generated for it before the verdict have been removed — a download outlives the page that explains it.</p>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
@@ -156,4 +176,4 @@ _No web simulator for this record: its structure has no shared WebAssembly templ
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-09-30 22:31 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 05:16 UTC</sub>

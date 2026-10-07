@@ -1,10 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;D10A&quot;,&quot;href&quot;:&quot;atc/D10A.md&quot;},{&quot;label&quot;:&quot;dapsone&quot;,&quot;href&quot;:&quot;drugs/drug_dapsone/&quot;},{&quot;label&quot;:&quot;Simpson_2006_2 \u00b7 reference&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Dapsone_Kotila2023_mean&quot;,&quot;label&quot;:&quot;Kotila_2023_mean&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_dapsone/Dapsone_Kotila2023_mean.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Dapsone_Kotila2023_median&quot;,&quot;label&quot;:&quot;Kotila_2023_median&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_dapsone/Dapsone_Kotila2023_median.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Dapsone_Mirochnick2001_reference&quot;,&quot;label&quot;:&quot;Mirochnick_2001_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_dapsone/Dapsone_Mirochnick2001_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # dapsone — `Dapsone_Simpson2006v2_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.846). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.846). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -24,14 +25,16 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 
 <sub>reviewed by rule template (no LLM)</sub>
 
-> **Dose compound ≠ measured compound:** dosed `chlorproguanil/dapsone`, measured `chlorproguanil`.
+> ⚠️ **STALE** — review status `needs_review` (reviewed 2026-10-05 09:26:06.673230+00:00) predates the upstream re-run (2026-10-07 07:43:12.662759+00:00). Current validate status: `needs_review`.
+
+> **Dose compound ≠ measured compound:** dosed `chlorproguanil, dapsone`, measured `chlorproguanil, dapsone, chlorcycloguanil`.
 
 ## Citation
 Simpson JA et al., Population pharmacokinetic and pharmaco…, British journal of clinical… (2006)
   ·  DOI: [10.1111/j.1365-2125.2005.02567.x](https://doi.org/10.1111/j.1365-2125.2005.02567.x)
 
 ## Model component
-<dbs-pgx drug="dapsone" model-id="Dapsone_Simpson2006v2_reference" status="needs_review" stale="false" population="healthy volunteers and adults and children with uncomplicated falciparum malaria" measured-compound="chlorproguanil" parameterization="apparent" topology="parent_metabolite"></dbs-pgx>
+<dbs-pgx drug="dapsone" model-id="Dapsone_Simpson2006v2_reference" status="needs_review" stale="true" population="healthy adults, adults and children with P. falciparum malaria" measured-compound="chlorproguanil, dapsone, chlorcycloguanil" parameterization="apparent" topology="parent_metabolite"></dbs-pgx>
 
 **Model structure:** parent + metabolite; no model was built for this record.  
 **Parameters:** 8 extracted.
@@ -43,14 +46,14 @@ Simpson JA et al., Population pharmacokinetic and pharmaco…, British journal o
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| k a (h -1 ) | `Q49` · kabs | 0.93 | h -1 | 0.00025833333333333334 | [1] / [h] | not captured | llm (0.5) | tab_2:row4:col1, tab_2:row4:col2, tab_2:row15:col1 | — | not captured |
-| CL/F (l h -1 ) | `Q27` · CL/F | 72 | l h -1 | 2e-05 | [l] / [h] | not captured | exact (1.0) | tab_2:row5:col1, tab_2:row5:col2, tab_2:row16:col1, tab_2:row16:col2 | — | not captured |
+| k a (h -1 ) | `Q49` · kabs | 0.09 | h -1 | 2.4999999999999998e-05 | [1] / [h] | not captured | exact (1.0) | tab_2:row4:col1, tab_2:row4:col2, tab_2:row15:col1 | — | not captured |
+| CL/F (l h -1 ) | `Q27` · CL/F | 51.53 | l h -1 | 1.4313888888888888e-05 | [l] / [h] | not captured | exact (1.0) | tab_2:row5:col1, tab_2:row5:col2, tab_2:row16:col1, tab_2:row16:col2 | — | not captured |
 | CLD/F (l h -1 ) | `Q69` · Q/F | 54.67 | l h -1 | 1.5186111111111112e-05 | [l] / [h] | not captured | exact (1.0) | tab_2:row6:col1 | — | not captured |
-| V 1 /F (l) | `Q290` · V1/F | 50 | l | 0.05 | [l] | not captured | llm (0.5) | tab_2:row7:col1, tab_2:row7:col2 | — | not captured |
-| V 2 /F (l) | `Q82` · V2/F | 1612.75 | l | 1.6127500000000001 | [l] | not captured | llm (0.5) | tab_2:row8:col1 | — | not captured |
-| AUC (ng ml -1 h -1 ) = | `Q88` · AUC | 100503 | not captured | not captured | not captured | not captured | boundary (0.8) | tab_2:row10:col1, tab_2:row19:col1 | — | not captured |
-| t 1/2 elim (h) | `Q57` · t1/2z | 26.67 | h | 96012.0 | [h] | not captured | llm (0.5) | tab_2:row13:col1, tab_2:row22:col1 | — | not captured |
-| V/F (l) | `Q76` · V/F | 48 | l | 0.048 | [l] | not captured | exact (1.0) | tab_2:row17:col1, tab_2:row17:col2 | — | not captured |
+| V 1 /F (l) | `Q290` · V1/F | 234.40 | l | 0.2344 | [l] | not captured | exact (1.0) | tab_2:row7:col1, tab_2:row7:col2 | — | not captured |
+| V 2 /F (l) | `Q82` · V2/F | 1612.75 | l | 1.6127500000000001 | [l] | not captured | exact (1.0) | tab_2:row8:col1 | — | not captured |
+| AUC (ng ml -1 h -1 ) = | `Q88` · AUC | 3105 | not captured | not captured | not captured | not captured | llm_confirmed (0.6) | tab_2:row10:col1, tab_2:row19:col1 | — | not captured |
+| t 1/2 elim (h) | `Q57` · t1/2z | 34.7 | h | 124920.00000000001 | [h] | not captured | llm (0.6) | tab_2:row13:col1, tab_2:row22:col1 | — | not captured |
+| V/F (l) | `Q76` · V/F | 76.96 | l | 0.07696 | [l] | not captured | exact (1.0) | tab_2:row17:col1, tab_2:row17:col2 | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -60,7 +63,24 @@ Simpson JA et al., Population pharmacokinetic and pharmaco…, British journal o
 ## Departures & gaps
 
 **Interpretation flags:**
-- apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=chlorproguanil
+- column 'interpatient' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
+- implicit units: 'AUC (ng ml -1 h -1 ) =' — the LLM proposed 'ng ml -1 h -1', whose dimension does not fit Q88; left unset
+- apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=chlorproguanil, dapsone, chlorcycloguanil
+- topology: transfer parameter unlinked (Q100) — add Kfm/formation-rate/rate-constant to the ontology; routing to review
+- template fit: PK_3M_9C — formed from central; parent 2, metabolites [0]
+- status held at route_to_review — not promoted
+- row roles (LLM): model_class=compartmental; 9/9 row label(s) assigned, 13 linked by role; re-tagged parent→chlorproguanil ×17, parent→dapsone ×2
+- molar mass: no plausible PubChem entry for 'chlorproguanil, dapsone, chlorcycloguanil' ('no full name in the paper') — left in mass units
+- molar mass: PubChem entry choice failed (JSONDecodeError)
+- molar mass: none of 1 PubChem candidate(s) is 'chlorproguanil' (LLM) — left in mass units
+- molar mass: none of 2 PubChem candidate(s) is 'chlorcycloguanil' (LLM) — left in mass units
+- molar mass: none found for 'chlorproguanil' — its concentrations stay mass-only
+- molar mass: none found for 'chlorcycloguanil' — its concentrations stay mass-only
+- molar mass: none found for 'chlorproguanil, dapsone, chlorcycloguanil' — its concentrations stay mass-only
+- skipped review gap-fill of TLAG: primary's parameterization (rate-constant / ka-only) does not use it
+
+**Extraction notes:**
+- LLM selected parameter table(s) 3
 
 ## Validation
 
@@ -103,9 +123,9 @@ first reading `qwen3.6:27b-q8_0` — the numbers on this page are its, whatever 
 | C5_unit_missing_Q88 | fail | [mass] * [time] / [length] ** 3 | not captured | not captured | not captured | ['tab_2:row10:col1', 'tab_2:row19:col1'] |
 | C7_apparent_coherence | pass | not captured | not captured | not captured | not captured | not captured |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
-| C9_phys_window_Q27 | pass | clearance within physiological range | 72 L/h | not captured | not captured | ['tab_2:row5:col1', 'tab_2:row5:col2', 'tab_2:row16:col1', 'tab_2:row16:col2'] |
-| C9_phys_window_Q290 | pass | volume within physiological range | 50 L | not captured | not captured | ['tab_2:row7:col1', 'tab_2:row7:col2'] |
-| C9_phys_window_Q76 | pass | volume within physiological range | 48 L | not captured | not captured | ['tab_2:row17:col1', 'tab_2:row17:col2'] |
+| C9_phys_window_Q27 | pass | clearance within physiological range | 51.5 L/h | not captured | not captured | ['tab_2:row5:col1', 'tab_2:row5:col2', 'tab_2:row16:col1', 'tab_2:row16:col2'] |
+| C9_phys_window_Q290 | pass | volume within physiological range | 234 L | not captured | not captured | ['tab_2:row7:col1', 'tab_2:row7:col2'] |
+| C9_phys_window_Q76 | pass | volume within physiological range | 77 L | not captured | not captured | ['tab_2:row17:col1', 'tab_2:row17:col2'] |
 | C9_phys_window_Q82 | pass | volume within physiological range | 1.61e+03 L | not captured | not captured | ['tab_2:row8:col1'] |
 
 <details class="legend">
@@ -141,4 +161,4 @@ _No web simulator for this record: its structure has no shared WebAssembly templ
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-07-15 11:22 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 07:43 UTC</sub>

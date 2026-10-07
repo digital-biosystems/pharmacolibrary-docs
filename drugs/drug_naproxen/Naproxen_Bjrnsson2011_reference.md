@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;G02C&quot;,&quot;href&quot;:&quot;atc/G02C.md&quot;},{&quot;label&quot;:&quot;naproxen&quot;,&quot;href&quot;:&quot;drugs/drug_naproxen/&quot;},{&quot;label&quot;:&quot;Bj\u00f6rnsson_2011 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Naproxen_Bjrnsson2011_reference&quot;,&quot;label&quot;:&quot;Bj\u00f6rnsson_2011_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_naproxen/Naproxen_Bjrnsson2011_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Naproxen_Oliveira2022v2_reference&quot;,&quot;label&quot;:&quot;Oliveira_2022_2_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_naproxen/Naproxen_Oliveira2022v2_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Naproxen_Schlachter2026_reference&quot;,&quot;label&quot;:&quot;Schlachter_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_naproxen/Naproxen_Schlachter2026_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Naproxen_Vlitalo2012_reference&quot;,&quot;label&quot;:&quot;V\u00e4litalo_2012_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_naproxen/Naproxen_Vlitalo2012_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # naproxen — `Naproxen_Bjrnsson2011_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.833). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.833). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -13,7 +13,7 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
-**Model:** A simulatable model was generated — see the **Models** and **Simulation** tabs.
+**Model:** No model was generated from this record.
 
 ### Reviewer guidance
 
@@ -25,27 +25,37 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 
 <sub>reviewed by glm-5.3-flash</sub>
 
-> **Dose compound ≠ measured compound:** dosed `naproxcinod`, measured `naproxen`.
+> ⚠️ **STALE** — review status `needs_review` (reviewed 2026-09-28 14:39:11.248241+00:00) predates the upstream re-run (2026-10-07 08:21:11.804183+00:00). Current validate status: `rejected`.
+
+> **Dose compound ≠ measured compound:** dosed `naproxen, naproxcinod`, measured `naproxen`.
 
 ## Citation
 Björnsson MA et al., Modelling of pain intensity and informa…, British journal of clinical… (2011)
   ·  DOI: [10.1111/j.1365-2125.2011.03924.x](https://doi.org/10.1111/j.1365-2125.2011.03924.x)
 
 ## Model component
-<dbs-pgx drug="naproxen" model-id="Naproxen_Bjrnsson2011_reference" status="needs_review" stale="false" population="adults with dental pain" measured-compound="naproxen" parameterization="apparent" topology="1C"></dbs-pgx>
+<dbs-pgx drug="naproxen" model-id="Naproxen_Bjrnsson2011_reference" status="rejected" stale="true" population="adults with dental pain" measured-compound="naproxen" parameterization="apparent" topology="1C"></dbs-pgx>
 
-**Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
-**Parameters:** 2 extracted.
+**Model structure:** 1-compartment; no model was built for this record.  
+**Parameters:** 9 extracted.
 
-**Parameterization:** CL/F — apparent, F unknown (apparent — bioavailability not identifiable).
+**Parameterization:** V/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
 ## Parameters
-> ⚠️ This record is not accepted (current status `needs_review`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
+> ⚠️ This record is not accepted (current status `rejected`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| Oral clearance of unbound naproxen | `Q27` · CL/F | 515 | l h -1 | 0.00014305555555555556 | L/h | not captured | boundary (0.8) | Björnsson_2011:other_prose | — | not captured |
-| unbound volume of distribution | `Q61` · V | 4290 | l | 4.29 | L | not captured | boundary (0.8) | Björnsson_2011:other_prose | — | not captured |
+| CLu/F (l h -1 ) | `Q24` · CLu | 515 | l h -1 | 0.00014305555555555556 | [l] / [h] | 12.1 | llm (0.6) | tab_1:row1:col1 | — | not captured |
+| Vu/F (l) | `Q76` · V/F | 4290 | l | 4.29 | [l] | 13.6 | llm (0.6) | tab_1:row2:col1 | — | not captured |
+| MTTnaproxcinod (h) | `Q81` · MTT | 1.77 | h | not captured | [h] | 10.8 | llm (0.6) | tab_1:row3:col1 | — | not captured |
+| Bmax (mmol l -1 ) | `Q332` · Bmax | 643 | mmol l -1 | not captured | [mM] / [l] | 7.1 | exact (1.0) | tab_1:row7:col1 | — | 17 (44% RSE) |
+| Km (mmol l -1 ) | `Q1` · Km | 0.549 | mmol l -1 | not captured | [mM] / [l] | 10.2 | exact (1.0) | tab_1:row8:col1 | — | not captured |
+| Frel (%) | `Q87` · Frel | 59.7 | not captured | not captured | not captured | 14.6 | exact (1.0) | tab_1:row9:col1 | — | not captured |
+| sT,add (mmol l -1 ) | `Q900` · equation variable | 6.19 | mmol l -1 | not captured | [mM] / [l] | 22.3 | llm (0.6) | tab_1:row10:col1 | — | not captured |
+| sU,prop (%) | `Q46` · fu | 18.6 | not captured | not captured | not captured | 11.0 | llm (0.6) | tab_1:row12:col1 | — | not captured |
+| onset rate constant | `Q49` · kabs | 0.237 | h -1 | 6.583333333333333e-05 | 1/h | not captured | review_gapfill (0.7) | Björnsson_2011:review | — | not captured |
+| T lag (h) Esomeprazole (20 mg) | `Q83` · tlag | 0.0 | h | 0.0 | h | not captured | review_gapfill (0.7) | Yoo_2026:review | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -54,30 +64,29 @@ Björnsson MA et al., Modelling of pain intensity and informa…, British journa
 
 ## Departures & gaps
 
-**Deviations:**
-- `defaulted_parameters`: ['ka', 'Tlag']
-- `apparent_assumption`: F=1, Fm=1, no molar correction (parameterization=apparent)
-- `invented_absorption`: ka defaulted — not reported in source
-- `input_model`: first-order depot input — apparent (/F) parameterization ⇒ extravascular dosing
-
 **Interpretation flags:**
-- dropped value-less row: 'CLu/F (l h -1 )'
-- dropped value-less row: 'Vu/F (l)'
-- dropped value-less row: 'MTTnaproxcinod (h)'
-- dropped value-less row: 'NNnaproxcinod'
-- dropped value-less row: 'MTTnaproxen (h)'
-- dropped value-less row: 'NNnaproxen'
-- dropped value-less row: 'Bmax (mmol l -1 )'
-- dropped value-less row: 'Km (mmol l -1 )'
-- dropped value-less row: 'Frel (%)'
-- dropped value-less row: 'sT,add (mmol l -1 )'
-- dropped value-less row: 'sT,prop (%)'
-- dropped value-less row: 'sU,prop (%)'
-- salvaged Q27 ('Oral clearance of unbound naproxen'=515) from results prose — parameter table was unreadable
-- salvaged Q61 ('unbound volume of distribution'=4290) from results prose — parameter table was unreadable
+- table section iiv: 'CLu/F (l h -1 )' routed out of structural estimates ('IIV (RSE%)')
+- table section iiv: 'Vu/F (l)' routed out of structural estimates ('IIV (RSE%)')
+- table section iiv: 'MTTnaproxcinod (h)' routed out of structural estimates ('IIV (RSE%)')
+- table section iiv: 'NNnaproxcinod' routed out of structural estimates ('IIV (RSE%)')
+- table section iiv: 'MTTnaproxen (h)' routed out of structural estimates ('IIV (RSE%)')
+- table section iiv: 'NNnaproxen' routed out of structural estimates ('IIV (RSE%)')
+- table section iiv: 'Bmax (mmol l -1 )' routed out of structural estimates ('IIV (RSE%)')
+- dropped unlinked row (NIL): 'NNnaproxcinod' — extend the ontology if this is a real PK parameter (source ['tab_1:row4:col1'])
+- dropped duplicate Q81 ('MTTnaproxen (h)', value '0.500') — already have one for this compound
+- dropped unlinked row (NIL): 'NNnaproxen' — extend the ontology if this is a real PK parameter (source ['tab_1:row6:col1'])
+- unit_dimension_mismatch: 'Km (mmol l -1 )' → Q1 (unit '[substance] / [length] ** 3' vs ontology '[mass] / [length] ** 3') — route to review
+- routed 'sT,prop (%)' → Q312 (IIV) to iiv — variability estimate, not a structural parameter
 - apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=naproxen
 - held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
 - status held at route_to_review — not promoted
+- skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
+- skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
+- gap-filled Q49 (kabs) from Björnsson_2011's review values (primary lacked it)
+- gap-filled Q83 (tlag) from Yoo_2026's review values (primary lacked it)
+
+**Extraction notes:**
+- LLM selected parameter table(s) 1
 
 ## Validation
 
@@ -106,13 +115,18 @@ first reading `qwen3.6:27b-q8_0` — the numbers on this page are its, whatever 
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 2 | not captured | not captured | not captured |
+| C0_has_structural_params | pass | not captured | 8 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
+| C5_dimension_Q1 | fail | [substance] / [length] ** 3 | mmol l -1 | not captured | not captured | ['tab_1:row8:col1'] |
+| C5_dimension_Q24 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['tab_1:row1:col1'] |
+| C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['Björnsson_2011:review'] |
+| C5_dimension_Q76 | pass | [length] ** 3 | not captured | not captured | not captured | ['tab_1:row2:col1'] |
+| C5_dimension_Q83 | pass | [time] | not captured | not captured | not captured | ['Yoo_2026:review'] |
 | C7_apparent_coherence | pass | not captured | not captured | not captured | not captured | not captured |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
-| C9_phys_window_Q27 | pass | clearance within physiological range | 515 L/h | not captured | not captured | ['Björnsson_2011:other_prose'] |
-| C9_phys_window_Q61 | pass | volume within physiological range | 4.29e+03 L | not captured | not captured | ['Björnsson_2011:other_prose'] |
+| C9_phys_window_Q24 | pass | clearance within physiological range | 515 L/h | not captured | not captured | ['tab_1:row1:col1'] |
+| C9_phys_window_Q76 | pass | volume within physiological range | 4.29e+03 L | not captured | not captured | ['tab_1:row2:col1'] |
 
 **Reviewer per-scenario checks:**
 
@@ -141,30 +155,15 @@ first reading `qwen3.6:27b-q8_0` — the numbers on this page are its, whatever 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
-## Downloadable models
+## Models
 
-<div class="pk-models-grid"><div class="pk-models-table">
-<table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_naproxen/Naproxen_Bjrnsson2011_reference/Naproxen_Bjrnsson2011_reference_modelica.zip" download>Naproxen_Bjrnsson2011_reference_modelica.zip</a> <span class="pk-size">(4.2 kB)</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_naproxen/Naproxen_Bjrnsson2011_reference/Naproxen_Bjrnsson2011_reference_fmi.zip" download>Naproxen_Bjrnsson2011_reference_fmi.zip</a> <span class="pk-size">(4.3 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_naproxen/Naproxen_Bjrnsson2011_reference/Naproxen_Bjrnsson2011_reference_matlab.zip" download>Naproxen_Bjrnsson2011_reference_matlab.zip</a> <span class="pk-size">(3.5 kB)</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_naproxen/Naproxen_Bjrnsson2011_reference/Naproxen_Bjrnsson2011_reference_matlab_simbio.zip" download>Naproxen_Bjrnsson2011_reference_matlab_simbio.zip</a> <span class="pk-size">(2.9 kB)</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_naproxen/Naproxen_Bjrnsson2011_reference/Naproxen_Bjrnsson2011_reference_sbml.zip" download>Naproxen_Bjrnsson2011_reference_sbml.zip</a> <span class="pk-size">(2.7 kB)</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_naproxen/Naproxen_Bjrnsson2011_reference/Naproxen_Bjrnsson2011_reference_cellml.zip" download>Naproxen_Bjrnsson2011_reference_cellml.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
-</tbody></table>
-<p>Each archive holds the model source, a script that simulates it against the appropriate library, and a README describing both and how to run them.</p>
-<p><b>FMI is two downloads.</b> The archive holds this record's parameters and its driver; the simulator itself is <code>PK_1C_enteral.fmu</code>, one compiled template shared by every model of this structure. Take the FMU once, keep it beside the script (or pass <code>--fmu PATH</code>). Running it reproduces the model-specific FMU exactly.</p>
-</div><figure class="pk-models-diagram"><img src="drugs/drug_naproxen/Naproxen_Bjrnsson2011_reference/Naproxen_Bjrnsson2011_reference.svg" alt="Naproxen_Bjrnsson2011_reference diagram"><figcaption>Model diagram (Modelica) using Pharmacolibrary v26.09 components, rendered by OpenModelica 1.26.7.</figcaption></figure></div>
+<p>No downloads: this record is <b>rejected</b>, so it is not published as a model. Any archives generated for it before the verdict have been removed — a download outlives the page that explains it.</p>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-**Administration: oral** — 375 mg, single dose, first-order absorption (ka 0.5 /h, F 1). Doses in the paper: 375, 750, 1500, 2250 mg.
-
-<dbs-fmusim paramsurl="drugs/drug_naproxen/Naproxen_Bjrnsson2011_reference/Naproxen_Bjrnsson2011_reference_params.json" metaurl="assets/fmu/PK_1C_enteral.vr.json" wasmurl="assets/fmu/PK_1C_enteral.js" controlsurl="drugs/drug_naproxen/Naproxen_Bjrnsson2011_reference/Naproxen_Bjrnsson2011_reference_sim_controls.json"></dbs-fmusim>
-
-<sub>Runs this record's model in the browser as WebAssembly. Sliders start at the extracted values; the reference check compares the browser's peak against the FMPy result recorded when the record was built, and is withheld once a value has been edited. Template `PK_1C_enteral` · parameters `Naproxen_Bjrnsson2011_reference_params.json` · controls `Naproxen_Bjrnsson2011_reference_sim_controls.json`. A slider marked *simulator value* is running on the template's own default because this record does not pin that parameter.</sub>
+_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-07-15 13:58 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 08:21 UTC</sub>

@@ -1,0 +1,39 @@
+{
+ "dose_source": "paper",
+ "model_id": "Zanubrutinib_Ou2021_reference",
+ "molar_masses": {
+  "central.C": 0.47156099999999995
+ },
+ "note": "Values for the shared PK_2C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "paper_doses_kind": "range",
+ "paper_doses_mg": [
+  20.0,
+  320.0
+ ],
+ "parameters": {
+  "Cl": 4.722222222222223e-05,
+  "F": 1.0,
+  "MM": 0.47156099999999995,
+  "Tlag": 0.0,
+  "VdPerKg": 0.0016,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 2e-05,
+  "k12": 6.572420634920635e-05,
+  "k21": 2.1336553945249595e-05,
+  "ka": 0.00014611111111111113,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 4501.803607214429
+ },
+ "reference_peaks": {
+  "central.C": 2.2929927207307278e-05
+ },
+ "stop_time": 86400.0,
+ "template": "PK_2C_enteral",
+ "template_fmu": "PK_2C_enteral.fmu"
+}

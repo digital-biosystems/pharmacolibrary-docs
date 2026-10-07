@@ -29,22 +29,16 @@ Delapril is an ACE inhibitor antihypertensive drug used to treat arterial hypert
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-30 23:03 | 2:46 | 0/4/0 | 1/0/0 | 0/0/0 | 69,847/13,660 | ollama / glm-5.3-flash | 5 | 5/0 | 1/4 | 0 |
+| 2026-10-07 05:38 | 1:41 | 0/4/0 | 0/0/0 | 0/0/0 | 50,907/2,442 | ollama / qwen3.8:27b-mtp-q8_0 | 5 | 5/0 | 1/4 | 0 |
 
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>route_to: `human_review`</sub> | [Onoyama_1988_metabolite_1_m_1](drugs/drug_delapril/Delapril_Onoyama1988_metabolite_1_m_1.md) | — | general linear (no model) | 4 | Onoyama K et al., Pharmacokinetics of a new angiotensin I…, Clinical pharmacology and t… (1988) | [10.1038/clpt.1988.27](https://doi.org/10.1038/clpt.1988.27) |
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>route_to: `human_review`</sub> | [Onoyama_1988_metabolite_2_m_2_nrf](drugs/drug_delapril/Delapril_Onoyama1988_metabolite_2_m_2_nrf.md) | — | general linear (no model) | 1 | Onoyama K et al., Pharmacokinetics of a new angiotensin I…, Clinical pharmacology and t… (1988) | [10.1038/clpt.1988.27](https://doi.org/10.1038/clpt.1988.27) |
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Onoyama_1988_metabolite_2_m_2_srf](drugs/drug_delapril/Delapril_Onoyama1988_metabolite_2_m_2_srf.md) | — | general linear (no model) | 0 | Onoyama K et al., Pharmacokinetics of a new angiotensin I…, Clinical pharmacology and t… (1988) | [10.1038/clpt.1988.27](https://doi.org/10.1038/clpt.1988.27) |
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>route_to: `human_review`</sub> | [Onoyama_1988_metabolite_3_m_3](drugs/drug_delapril/Delapril_Onoyama1988_metabolite_3_m_3.md) | — | general linear (no model) | 4 | Onoyama K et al., Pharmacokinetics of a new angiotensin I…, Clinical pharmacology and t… (1988) | [10.1038/clpt.1988.27](https://doi.org/10.1038/clpt.1988.27) |
-
-## Pharmacodynamics (PD)
-
-| status | detail | about | model | citation | doi |
-|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> | [Ikemura_2019_CYP2J2_activity_luciferin_2J2_4F12_O_dealkylation](drugs/drug_delapril/pd_Ikemura_2019_CYP2J2_activity_luciferin_2J2_4F12_O_dealkylati.md) | CYP2J2 activity (luciferin-2J2/4F12 O-dealkylation) ← manidipine · direct Emax (saturable) effect | — | Ikemura N et al., Inhibitory effects of antihypertensive…, Chemico-biological interact… (2019) | [10.1016/j.cbi.2019.04.005](https://doi.org/10.1016/j.cbi.2019.04.005) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>STALE — current validate: rejected</sub><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>route_to: `human_review`</sub> | [Onoyama_1988_metabolite_1_m_1](drugs/drug_delapril/Delapril_Onoyama1988_metabolite_1_m_1.md) | — | general linear (no model) | 4 | Onoyama K et al., Pharmacokinetics of a new angiotensin I…, Clinical pharmacology and t… (1988) | [10.1038/clpt.1988.27](https://doi.org/10.1038/clpt.1988.27) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>STALE — current validate: rejected</sub><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>route_to: `human_review`</sub> | [Onoyama_1988_metabolite_2_m_2_nrf](drugs/drug_delapril/Delapril_Onoyama1988_metabolite_2_m_2_nrf.md) | — | general linear (no model) | 1 | Onoyama K et al., Pharmacokinetics of a new angiotensin I…, Clinical pharmacology and t… (1988) | [10.1038/clpt.1988.27](https://doi.org/10.1038/clpt.1988.27) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>STALE — current validate: rejected</sub><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Onoyama_1988_metabolite_2_m_2_srf](drugs/drug_delapril/Delapril_Onoyama1988_metabolite_2_m_2_srf.md) | — | general linear (no model) | 0 | Onoyama K et al., Pharmacokinetics of a new angiotensin I…, Clinical pharmacology and t… (1988) | [10.1038/clpt.1988.27](https://doi.org/10.1038/clpt.1988.27) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>STALE — current validate: rejected</sub><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>route_to: `human_review`</sub> | [Onoyama_1988_metabolite_3_m_3](drugs/drug_delapril/Delapril_Onoyama1988_metabolite_3_m_3.md) | — | general linear (no model) | 4 | Onoyama K et al., Pharmacokinetics of a new angiotensin I…, Clinical pharmacology and t… (1988) | [10.1038/clpt.1988.27](https://doi.org/10.1038/clpt.1988.27) |
 
 ## ADME sites
 
@@ -64,46 +58,45 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 ## Coverage
 
 - **PubMed hits:** 49 matched, 34 returned
-- **screened:** 6  ·  **relevant:** 2
-- **records:** 4  ·  extracted 0  ·  needs_review 0  ·  rejected 4  ·  stale 0
+- **screened:** 7  ·  **relevant:** 5
+- **records:** 4  ·  extracted 0  ·  needs_review 0  ·  rejected 4  ·  stale 4
 - **scholar-agent fallback query used:** True
 
 ## Full text wanted
 
-_1 paper(s) judged relevant from the abstract, with no full text on disk — paywalled, or the resolver could not reach them. Follow the DOI, then save the PDF into `papers/` as `&lt;save as&gt;.pdf` and re-run the extraction._
+_3 paper(s) judged relevant from the abstract, with no full text on disk — paywalled, or the resolver could not reach them. Follow the DOI, then save the PDF into `papers/` as `&lt;save as&gt;.pdf` and re-run the extraction._
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Shionoiri_1987_2.pdf` | Shionoiri H et al., Pharmacokinetics and acute effect on th…, Clinical nephrology (1987) | popPK | 7 | not captured | [3030595](https://pubmed.ncbi.nlm.nih.gov/3030595) | Original PK study of delapril with numeric t1/2, Cmax, AUC, and urinary excretion values present in the abstract, though no CL/V compartmental parameters are reported. |
+| `Shionoiri_1987_2.pdf` | Shionoiri H et al., Pharmacokinetics and acute effect on th…, Clinical nephrology (1987) | popPK | 9 | not captured | [3030595](https://pubmed.ncbi.nlm.nih.gov/3030595) | The study reports quantitative pharmacokinetic parameters (half-life, Cmax, AUC) for delapril and its active metabolites in humans, with values explicitly listed in the abstract. |
+| `Hutt_1994.pdf` | Hutt V et al., Bioavailability and pharmacokinetics of…, European journal of drug me… (1994) | popPK | 8 | [10.1007/BF03188824](https://doi.org/10.1007/BF03188824) | [7957454](https://pubmed.ncbi.nlm.nih.gov/7957454) | The study reports quantitative PK parameters (AUC, urinary excretion) for delapril and its metabolites in humans, but lacks specific clearance (CL) or volume (V) values. |
+| `Stockis_2003.pdf` | Stockis A et al., Pharmacokinetics and tolerability of a…, Arzneimittel-Forschung (2003) | popPK | 8 | [10.1055/s-0031-1297149](https://doi.org/10.1055/s-0031-1297149) | [13677245](https://pubmed.ncbi.nlm.nih.gov/13677245) | The study reports pharmacokinetic parameters (AUC, Cmax, t1/2) for delapril in humans, but the specific numeric values are not present in the provided abstract text. |
 
-<sub>queue written 2026-09-30T23:03:44.358328+00:00</sub>
+<sub>queue written 2026-10-07T05:38:01.737758+00:00</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Boschi_2000 | irrelevant | 0 | 0 | This is a pharmacodynamic dose-response efficacy study in rats with no PK parameters (CL, V, ka, half-life) or compartmental model reported for delapril. |
-| popPK | Hutt_1994 | relevant | 4 | 3 | Delapril is the subject drug with PK data (AUC, urinary excretion), but no clearance, volume, half-life, or compartmental parameters are reported; only AUC/Ae values are present. |
+| popPK | Boschi_2000 | irrelevant | 0 | 0 | The study is a long-term survival and blood pressure analysis in rats, not a pharmacokinetic study, and reports no disposition parameters (CL, V, ka, etc.) for delapril. |
 | popPK | Ikemura_2019 | irrelevant | 0 | 0 | In-vitro CYP2J2 inhibition study; delapril is only one of many tested inhibitors with an IC50, no PK disposition parameters. |
-| popPK | Ishizuka_1997 | irrelevant | 0 | 0 | The paper is about temocaprilat transport; delapril is only mentioned as a non-inhibitory comparator with no PK parameters. |
-| popPK | Kelly_1990 | irrelevant | 2 | 0 | A review with no original numeric PK parameters for delapril; only qualitative mentions (two active metabolites) appear. |
-| popPK | Minamisawa_1990 | relevant | 6 | 2 | A human PK study of delapril as subject drug, but the evidence contains only qualitative comparisons (Cmax, AUC) with no numeric CL/V/t½ values provided. |
-| popPK | Moroi_1995 | irrelevant | 0 | 0 | In-vitro vascular pharmacology study with no PK parameters for delapril; only its metabolite M-1 is mentioned as a comparator. |
+| popPK | Ishizuka_1997 | irrelevant | 0 | 0 | The study focuses on the biliary excretion mechanism of temocaprilat in rats, and delapril is only mentioned as a comparator that did not affect transport. |
+| popPK | Kelly_1990 | irrelevant | 1 | 0 | This is a review article that provides only qualitative descriptions and general ranges for ACE inhibitors, lacking specific quantitative PK parameter values for delapril. |
+| popPK | Moroi_1995 | irrelevant | 0 | 0 | The study is an in-vitro pharmacological investigation of vasodilation mechanisms using delapril's metabolite as a comparator, not a pharmacokinetic study. |
 | PD | Moroi_1995 | not_relevant | 2 | 1 | In vitro tissue-bath qualitative comparison of acetylcholine dose-response shifts; no numeric PD parameters (Emax, EC50, etc.) reported or derivable for delapril. |
-| popPK | Nishiyama_1990 | irrelevant | 1 | 0 | This is a pharmacodynamic/clinical study of delapril's effects on renal and hormonal parameters, with no PK disposition parameters (CL, V, half-life, or PK model) reported. |
-| popPK | Onoyama_1988 | relevant | 6 | 3 | Original PK study of delapril in renal impairment, but the evidence only summarizes qualitative findings (half-life, AUC, tmax trends) without numeric parameter values, which likely reside in tables/figures not provided. |
+| popPK | Nishiyama_1990 | irrelevant | 0 | 0 | The study reports hemodynamic and hormonal effects (renal function, RAAS, kallikrein-kinin) rather than pharmacokinetic disposition parameters (CL, V, ka, t1/2) for delapril. |
 | PD | Onoyama_1988 | not_relevant | 2 | 1 | Only qualitative PD observations (ACE activity suppressed at 4/24 h, greater BP reduction in renal failure) with no numeric PD parameters (Emax, EC50, slope) or effect-vs-concentration relationship stated or derivable. |
-| popPK | Paterna_2003 | irrelevant | 0 | 0 | This is a pharmacodynamic study of fibrinolytic markers with no PK parameters (CL, V, ka, half-life, or PK model) reported for delapril. |
-| popPK | Ruggenenti_2011 | irrelevant | 0 | 0 | This is a clinical outcomes trial (GFR, CV events) with no PK disposition parameters for delapril reported. |
-| popPK | Ruggenenti_2012 | irrelevant | 1 | 0 | This is a clinical outcomes study of hyperfiltration in diabetes where delapril is only a treatment arm; no PK parameters for delapril are reported. |
-| popPK | Sekiya_1995 | irrelevant | 0 | 0 | Delapril is only a therapeutic intervention; the PK parameters reported (insulin clearance) concern insulin, not delapril. |
-| popPK | Singlas_1991 | irrelevant | 2 | 0 | This is a review that only mentions delapril as needing further study; no numeric PK parameters are reported. |
-| popPK | Song_2002 | irrelevant | 1 | 0 | This is a review of other ACE inhibitors; delapril is only mentioned in a list, with no PK parameters for it. |
+| popPK | Paterna_2003 | irrelevant | 0 | 0 | The study evaluates the effects of delapril on fibrinolytic parameters (t-PA and PAI-1) rather than reporting pharmacokinetic disposition parameters for delapril itself. |
+| popPK | Ruggenenti_2011 | irrelevant | 0 | 0 | This is a clinical trial assessing nephroprotection and cardiovascular outcomes, not a pharmacokinetic study reporting disposition parameters for delapril. |
+| popPK | Ruggenenti_2012 | irrelevant | 0 | 0 | The study focuses on renal function (GFR) and nephropathy progression in diabetic patients, using delapril only as a background treatment/comparator, and does not report pharmacokinetic parameters for delapril. |
+| popPK | Sekiya_1995 | irrelevant | 0 | 0 | The study focuses on insulin sensitivity and secretion in hypertensive patients, using delapril only as a therapeutic agent to lower blood pressure, without reporting pharmacokinetic parameters for delapril itself. |
+| popPK | Singlas_1991 | irrelevant | 1 | 0 | The paper is a review that explicitly states delapril's disposition is "not well documented" and does not provide any original quantitative pharmacokinetic parameter values. |
+| popPK | Song_2002 | irrelevant | 0 | 0 | The paper is a review of newer ACE inhibitors (trandolapril, moexipril, etc.) and delapril is only listed as an established agent without specific quantitative PK parameters provided. |
 | PD | Song_2002 | not_relevant | 2 | 0 | Review article only qualitatively notes flat dose-response curves for ACE inhibitors; no numeric PD parameters for delapril are reported or derivable. |
-| popPK | Stockis_2003 | irrelevant | 4 | 2 | A human PK study of delapril, but only relative percentage changes in Cmax/AUC/t1/2 are given in the abstract; no CL, V, or population-PK parameter values are present (likely in tables/figures not provided). |
+| popPK | Stockis_2003 | relevant | 8 | 2 | The study reports pharmacokinetic parameters (AUC, Cmax, t1/2) for delapril in humans, but the specific numeric values are not present in the provided abstract text. |
 | PD | Stockis_2003 | not_relevant | 2 | 1 | BP/HR were recorded but no concentration-effect or dose-response analysis or numeric PD parameters are reported, only qualitative statements that profiles were superimposable. |
-| popPK | Stockis_2003_2 | irrelevant | 4 | 2 | A delapril PK interaction study, but evidence reports only Cmax/AUC ratios and half-life statements without quantitative disposition parameters (CL, V) or numeric half-lives. |
-| popPK | Weber_1997 | irrelevant | 1 | 0 | This is a narrative review of ARBs vs ACE inhibitors with no PK parameters for delapril reported. |
+| popPK | Stockis_2003_2 | irrelevant | 2 | 0 | The study is a drug-drug interaction trial where delapril is a co-administered agent, and no absolute quantitative PK parameters (CL, V, ka) are reported, only relative changes. |
+| popPK | Weber_1997 | irrelevant | 0 | 0 | The paper is a review comparing pharmacologic mechanisms and clinical effects of ACE inhibitors and AT1 blockers, containing no quantitative pharmacokinetic parameters for delapril. |
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-09-30 23:01 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-10-07 05:38 UTC</sub>

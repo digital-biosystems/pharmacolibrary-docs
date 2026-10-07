@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N02B&quot;,&quot;href&quot;:&quot;atc/N02B.md&quot;},{&quot;label&quot;:&quot;potassium salicylate&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;PotassiumSalicylate_Buntenktter2017_reference&quot;,&quot;label&quot;:&quot;Buntenk\u00f6tter_2017_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_potassium_salicylate/PotassiumSalicylate_Buntenktter2017_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;PotassiumSalicylate_Kotschwar2009_period_1&quot;,&quot;label&quot;:&quot;Kotschwar_2009_period_1&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_potassium_salicylate/PotassiumSalicylate_Kotschwar2009_period_1.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;PotassiumSalicylate_Kotschwar2009_period_2&quot;,&quot;label&quot;:&quot;Kotschwar_2009_period_2&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_potassium_salicylate/PotassiumSalicylate_Kotschwar2009_period_2.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;PotassiumSalicylate_Kotschwar2009_period_3&quot;,&quot;label&quot;:&quot;Kotschwar_2009_period_3&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_potassium_salicylate/PotassiumSalicylate_Kotschwar2009_period_3.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 # potassium salicylate
 
@@ -13,23 +14,38 @@ Potassium salicylate is a salicylic acid derivative classified as an analgesic a
 
 <small>Summary written by `glm-5.3-flash` from [Wikidata Q7234718](https://www.wikidata.org/wiki/Q7234718) and the WHO ATC classification; not checked by a person.</small>
 
+## Molecules and molar masses
+
+> The molar mass each model uses to convert mass to molar concentration and to form a metabolite molecule for molecule. Looked up, never estimated: DrugBank for the drug, the paper's own value or the PubChem entry matched to the paper's name for a metabolite.
+
+| molecule | role | molar mass (g/mol) | formula | source | PubChem | records |
+|---|---|---|---|---|---|---|
+| potassium_salicylate (salicylate) | metabolite | 176.212 | C7H5KO3 | PubChem | [23664627](https://pubchem.ncbi.nlm.nih.gov/compound/23664627) | Kotschwar_2009, Wójcicki_1981 |
+
 ## Extraction summary
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-01 22:21 | 36:55 | 0/0/0 | 3/0/0 | 0/0/0 | 435,418/14,085 | ollama / qwen3.8:27b-mtp-q8_0 | 72 | 12/82 | 69/3 | 0 |
+| 2026-10-07 07:15 | 10:58 | 4/3/0 | 2/0/0 | 0/0/0 | 944,670/57,836 | einfracz / qwen3.8-27b | 72 | 12/82 | 69/3 | 0 |
 
 ## popPK records
 
-_not available_
+| status | detail | model | model structure | params | citation | doi |
+|---|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">horse</span> | [Buntenkötter_2017_reference](drugs/drug_potassium_salicylate/PotassiumSalicylate_Buntenktter2017_reference.md) | ▶ model + simulator | 1-compartment, oral | 2 | Buntenkötter K et al., Pharmacokinetics and in vitro efficacy…, BMC veterinary research (2017) | [10.1186/s12917-017-0955-1](https://doi.org/10.1186/s12917-017-0955-1) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="Animal study (cattle), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">cattle</span> | [Kotschwar_2009_period_1](drugs/drug_potassium_salicylate/PotassiumSalicylate_Kotschwar2009_period_1.md) | ▶ model + simulator | 1-compartment, oral | 4 | Kotschwar JL et al., Analgesic efficacy of sodium salicylate…, Journal of dairy science (2009) | [10.3168/jds.2009-2058](https://doi.org/10.3168/jds.2009-2058) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="Animal study (cattle), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">cattle</span> | [Kotschwar_2009_period_2](drugs/drug_potassium_salicylate/PotassiumSalicylate_Kotschwar2009_period_2.md) | ▶ model + simulator | 1-compartment, oral | 4 | Kotschwar JL et al., Analgesic efficacy of sodium salicylate…, Journal of dairy science (2009) | [10.3168/jds.2009-2058](https://doi.org/10.3168/jds.2009-2058) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="Animal study (cattle), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">cattle</span> | [Kotschwar_2009_period_3](drugs/drug_potassium_salicylate/PotassiumSalicylate_Kotschwar2009_period_3.md) | ▶ model + simulator | 1-compartment, oral | 4 | Kotschwar JL et al., Analgesic efficacy of sodium salicylate…, Journal of dairy science (2009) | [10.3168/jds.2009-2058](https://doi.org/10.3168/jds.2009-2058) |
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C9 clearance/volume outside physiological window (implausible magnitude — unit/…</sub><br><sub>route_to: `human_review`</sub> | [Cao_2025_reference](drugs/drug_potassium_salicylate/PotassiumSalicylate_Cao2025_reference.md) | — | 2-compartment (no model) | 4 | Cao M et al., Safety, efficacy, and immunogenicity of…, Gene therapy (2025) | [10.1038/s41434-025-00512-1](https://doi.org/10.1038/s41434-025-00512-1) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (cattle), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">cattle</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Kotschwar_2009_mean_se](drugs/drug_potassium_salicylate/PotassiumSalicylate_Kotschwar2009_mean_se.md) | — | 1-compartment (no model) | 9 | Kotschwar JL et al., Analgesic efficacy of sodium salicylate…, Journal of dairy science (2009) | [10.3168/jds.2009-2058](https://doi.org/10.3168/jds.2009-2058) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rabbit), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rabbit</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Wójcicki_1981_reference](drugs/drug_potassium_salicylate/PotassiumSalicylate_Wjcicki1981_reference.md) | — | 1-compartment (no model) | 6 | Wójcicki J et al., Effect of unilateral nephrectomy in rab…, Polish journal of pharmacol… (1981) | — |
 
 ## Pharmacodynamics (PD)
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="Animal study (pig), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">pig</span> | [Kakehata_1996_C](drugs/drug_potassium_salicylate/pd_Kakehata_1996_C.md) | reduction in Cm pk ← salicylate · direct sigmoid Emax (Hill) effect | — | Kakehata S et al., Effects of salicylate and lanthanides o…, The Journal of neuroscience… (1996) | [10.1523/JNEUROSCI.16-16-04881.1996](https://doi.org/10.1523/JNEUROSCI.16-16-04881.1996) |
-| <span class="pk-badge pk-badge--green">reviewed — candidate</span> | [Koh_2025_TXB2](drugs/drug_potassium_salicylate/pd_Koh_2025_TXB2.md) | thromboxane B2 ← acetylsalicylic acid · indirect response — drug inhibits the production of thromboxane B2 | model (no simulator) | Koh J et al., Population Pharmacokinetic and Pharmaco…, Drug design, development an… (2025) | [10.2147/DDDT.S533428](https://doi.org/10.2147/DDDT.S533428) |
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="Animal study (pig), not measured in people (from an LLM reading of the title and abstract by qwen3.8:27b-mtp-q8_0, p(non-human) 1.00).">pig</span> | [Tunstall_1995_membrane_capacitance](drugs/drug_potassium_salicylate/pd_Tunstall_1995_membrane_capacitance.md) | membrane capacitance ← salicylate · direct sigmoid Emax (Hill) effect | — | Tunstall MJ et al., Action of salicylate on membrane capaci…, The Journal of physiology 4… (1995) | [10.1113/jphysiol.1995.sp020765](https://doi.org/10.1113/jphysiol.1995.sp020765) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="Animal study (pig), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">pig</span> | [Kakehata_1996_Cm_pk](drugs/drug_potassium_salicylate/pd_Kakehata_1996_Cm_pk.md) | nonlinear peak capacitance (Cm pk) reduction ← salicylate · direct sigmoid Emax (Hill) effect | — | Kakehata S et al., Effects of salicylate and lanthanides o…, The Journal of neuroscience… (1996) | [10.1523/JNEUROSCI.16-16-04881.1996](https://doi.org/10.1523/JNEUROSCI.16-16-04881.1996) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="Animal study (pig), not measured in people (from an LLM reading of the title and abstract by qwen3.8:27b-mtp-q8_0, p(non-human) 1.00).">pig</span> | [Tunstall_1995_fast_charge_movement_equivalent_to_a_voltage_dependent_membrane_capacitance](drugs/drug_potassium_salicylate/pd_Tunstall_1995_fast_charge_movement_equivalent_to_a_voltage_d.md) | fast charge movement equivalent to a voltage-dependent membrane capacitance ← salicylate · direct sigmoid Emax (Hill) effect | — | Tunstall MJ et al., Action of salicylate on membrane capaci…, The Journal of physiology 4… (1995) | [10.1113/jphysiol.1995.sp020765](https://doi.org/10.1113/jphysiol.1995.sp020765) |
 
 <details class="legend">
 <summary>Badge legend — what each badge means</summary>
@@ -40,16 +56,18 @@ _not available_
 ## Coverage
 
 - **PubMed hits:** 1047 matched, 315 returned
-- **screened:** 42  ·  **relevant:** 0
-- **records:** 0  ·  extracted 0  ·  needs_review 0  ·  rejected 0  ·  stale 0
+- **screened:** 45  ·  **relevant:** 3
+- **records:** 7  ·  extracted 4  ·  needs_review 0  ·  rejected 3  ·  stale 0
 - **scholar-agent fallback query used:** True
 
 ## Full text wanted
 
-_37 paper(s) judged relevant from the abstract, with no full text on disk — paywalled, or the resolver could not reach them. Follow the DOI, then save the PDF into `papers/` as `&lt;save as&gt;.pdf` and re-run the extraction._
+_39 paper(s) judged relevant from the abstract, with no full text on disk — paywalled, or the resolver could not reach them. Follow the DOI, then save the PDF into `papers/` as `&lt;save as&gt;.pdf` and re-run the extraction._
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
+| `Wójcicki_1981.pdf` | Wójcicki J et al., Effect of unilateral nephrectomy in rab…, Polish journal of pharmacol… (1981) | popPK | 8 | not captured | [7335555](https://pubmed.ncbi.nlm.nih.gov/7335555) | The study reports quantitative PK parameters (AUC, t0.5, kel) for salicylate in rabbits. |
+| `Yoshida_2007.pdf` | Yoshida D et al., Dermatopharmacokinetics of salicylate f…, International journal of ph… (2007) | popPK | 7 | [10.1016/j.ijpharm.2006.12.040](https://doi.org/10.1016/j.ijpharm.2006.12.040) | [17280809](https://pubmed.ncbi.nlm.nih.gov/17280809) | The study reports pharmacokinetic parameters (compartmental models, absorption rates) for salicylate (the active ion of potassium salicylate) in rats, but specific numerical values for clearance, volume, or half-life are not explicitly present in the provided text. |
 | `Mukherjee_2025.pdf` | Mukherjee A et al., Pharmacokinetic-Pharmacodynamic (PK-PD)…, Indian journal of pediatrics (2025) | pd | 5 | [10.1007/s12098-024-05135-9](https://doi.org/10.1007/s12098-024-05135-9) | [38802673](https://www.ncbi.nlm.nih.gov/pubmed/38802673) | metadata signals extractable PD data (PK-PD) |
 | `Pinder_2019.pdf` | Pinder N et al., Continuous infusion of physostigmine in…, Biomedicine & pharmacothera… (2019) | pd | 5 | [10.1016/j.biopha.2019.109318](https://doi.org/10.1016/j.biopha.2019.109318) | [31398669](https://www.ncbi.nlm.nih.gov/pubmed/31398669) | metadata signals extractable PD data (sigmoid) |
 | `Shen_2016.pdf` | Shen C et al., Pharmacokinetic and pharmacodynamic int…, Xenobiotica; the fate of fo… (2016) | pd | 5 | [10.3109/00498254.2015.1096979](https://doi.org/10.3109/00498254.2015.1096979) | [26548565](https://www.ncbi.nlm.nih.gov/pubmed/26548565) | metadata signals extractable PD data (Emax) |
@@ -88,243 +106,242 @@ _37 paper(s) judged relevant from the abstract, with no full text on disk — pa
 | `Kuehl_2006.pdf` | Kuehl GE et al., Glucuronidation of the aspirin metaboli…, Drug metabolism and disposi… (2006) | pgx | 5 | [10.1124/dmd.105.005652](https://doi.org/10.1124/dmd.105.005652) | [16258079](https://www.ncbi.nlm.nih.gov/pubmed/16258079) | metadata signals extractable PGX data (UGT1A6) |
 | `Wang_2016.pdf` | Wang SH et al., Comparison of the antiplatelet effect o…, Genetics and molecular rese… (2016) | pgx | 5 | [10.4238/gmr.15027136](https://doi.org/10.4238/gmr.15027136) | [27173230](https://www.ncbi.nlm.nih.gov/pubmed/27173230) | metadata signals extractable PGX data (CYP2C19*2) |
 
-<sub>queue written 2026-10-01T22:16:37.482299+00:00</sub>
+<sub>queue written 2026-10-07T07:06:44.851924+00:00</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
 | popPK | Abdelgawad_2025 | irrelevant | 0 | 0 | The study reports pharmacokinetic parameters for rifampicin, not potassium salicylate. |
-| PGx | Abe_2007 | not_relevant | 0 | 0 | The paper studies ameloblast differentiation in rats using sodium salicylate as a signaling modulator, not the pharmacogenomics of potassium salicylate. |
+| PGx | Abe_2007 | not_relevant | 0 | 0 | The paper studies ameloblast differentiation using sodium salicylate as a chemical inducer, not pharmacogenomics or PK/PD parameters of potassium salicylate. |
 | popPK | Accorsi-Mendonça_2004 | irrelevant | 0 | 0 | no_text gate: only 119 chars of text extracted (&lt; 400) |
 | popPK | Alam_1981 | irrelevant | 0 | 0 | The paper studies magnesium salicylate, not potassium salicylate, and no PK parameters for the target drug are provided. |
 | popPK | Alam_2020 | irrelevant | 0 | 0 | The paper studies the pharmacological properties of Millettia peguensis extract and does not report pharmacokinetic parameters for potassium salicylate. |
 | PD | Alam_2020 | not_relevant | 0 | 0 | The paper studies the pharmacological properties of a plant extract (Millettia peguensis) and does not report any pharmacodynamic or exposure-response data for potassium salicylate. |
-| popPK | Ali_2003 | irrelevant | 0 | 0 | The study investigates DL-lysine-acetyl salicylate, not potassium salicylate, which is the required subject drug. |
-| popPK | Aljanabi_2026 | irrelevant | 0 | 0 | The paper describes a computational web server for retrosynthesis and ADMET prediction and does not report any pharmacokinetic parameters for potassium salicylate. |
+| popPK | Ali_2003 | irrelevant | 1 | 0 | The study investigates DL-lysine-acetyl salicylate, not potassium salicylate, and focuses on veterinary species (camels, sheep, goats) which do not match the target drug. |
+| popPK | Aljanabi_2026 | irrelevant | 0 | 0 | The paper describes a computational web server for retrosynthesis and ADMET prediction and does not contain pharmacokinetic data for potassium salicylate. |
 | PD | Aljanabi_2026 | not_relevant | 0 | 0 | The paper describes a computational web server for retrosynthesis and ADMET prediction, containing no pharmacodynamic data, exposure-response analysis, or numeric PD parameters for potassium salicylate or any other drug. |
-| PGx | Allegaert_2008 | not_relevant | 0 | 0 | The paper discusses neonatal pharmacology for paracetamol, ibuprofen, tramadol, and propofol, but does not report pharmacogenomic effects on potassium salicylate. |
-| PGx | Arnerup_2011 | not_relevant | 0 | 0 | The paper studies plant defense mechanisms in Norway spruce and is unrelated to human pharmacogenomics or potassium salicylate. |
-| PGx | Asakawa_2017 | not_relevant | 0 | 0 | The paper investigates the effect of CYP1a2 on olfactory receptor responses to acetophenone and methyl salicylate, not the pharmacokinetics or pharmacodynamics of potassium salicylate. |
+| PGx | Allegaert_2008 | not_relevant | 0 | 0 | The paper discusses pharmacogenetics (CYP2D6) for tramadol, not for potassium salicylate. |
+| PGx | Arnerup_2011 | not_relevant | 0 | 0 | The paper focuses on plant defense responses in Norway spruce to fungal infection, which is unrelated to human pharmacogenomics or the pharmacokinetics of potassium salicylate. |
+| PGx | Asakawa_2017 | not_relevant | 0 | 0 | The paper studies the effect of CYP1a2 on olfactory receptor responses to acetophenone and the formation of methyl salicylate, not the pharmacokinetics or pharmacodynamics of the drug potassium salicylate. |
 | popPK | Aslan_2017 | irrelevant | 0 | 0 | no_text gate: only 67 chars of text extracted (&lt; 400) |
 | PD | Aslan_2017 | not_relevant | 0 | 0 | The paper focuses on phenolic compounds and polyol pathway enzymes, with no mention of potassium salicylate or any pharmacodynamic modeling. |
-| PGx | Baebler_2011 | not_relevant | 0 | 0 | The paper studies the role of salicylic acid in plant-virus interactions in potatoes, not the pharmacogenomics of potassium salicylate in humans. |
+| PGx | Baebler_2011 | not_relevant | 0 | 0 | Paper studies plant-virus interaction, not human pharmacogenomics or potassium salicylate pharmacokinetics. |
 | popPK | Banerjee_2025 | irrelevant | 0 | 0 | The paper focuses on the synthesis and in vitro anticancer activity of metformin-phenolic acid conjugates, not the pharmacokinetics of potassium salicylate. |
 | PD | Banerjee_2025 | not_relevant | 0 | 0 | The paper reports IC50 values for metformin-phenolic acid conjugates, not potassium salicylate, and does not provide a pharmacodynamic exposure-response model or curve for the target drug. |
-| popPK | Barnett_1977 | irrelevant | 1 | 0 | The study is an in-vitro mechanistic analysis of salicylate transport across rat jejunum, not a pharmacokinetic study of potassium salicylate disposition in a whole organism. |
+| popPK | Barnett_1977 | irrelevant | 2 | 0 | The study reports in-vitro salicylate transport parameters across rat jejunum, not systemic pharmacokinetic disposition parameters (CL, V, t1/2) for the drug in vivo. |
 | popPK | Barroso-Neto_2012 | irrelevant | 0 | 0 | The paper is a quantum chemistry study on the binding of aspirin/salicylic acid to COX-1, not a pharmacokinetic study of potassium salicylate. |
 | PD | Barroso-Neto_2012 | not_relevant | 1 | 0 | The paper is a quantum chemistry study of COX-1 binding and only qualitatively mentions IC50 values without providing a dose-response curve or extractable PD parameters. |
-| PGx | Basu_2004 | not_relevant | 0 | 0 | The paper discusses UGT1A10 enzyme activity and phosphorylation in vitro, but does not report pharmacogenomic effects on PK/PD parameters for potassium salicylate in humans. |
-| PGx | Bermejo_2010 | not_relevant | 0 | 0 | The paper discusses the clinical management of ulcerative colitis and the interaction between 5-ASA and thiopurines, but does not report pharmacogenomic effects on the PK or PD of potassium salicylate. |
-| PGx | Bitarishvili_2023 | not_relevant | 0 | 0 | The paper studies cadmium tolerance in barley plants, not the pharmacogenomics of potassium salicylate in humans. |
+| PGx | Basu_2004 | not_relevant | 0 | 0 | The paper characterizes the enzymatic activity and phosphorylation dependence of UGT1A10 in cell lines but does not report pharmacogenomic effects on the pharmacokinetics or pharmacodynamics of potassium salicylate in humans. |
+| PGx | Bermejo_2010 | not_relevant | 0 | 0 | The paper discusses clinical management and drug interactions (TPMT inhibition) of thiopurines, not the pharmacogenomics of potassium salicylate. |
+| PGx | Bitarishvili_2023 | not_relevant | 0 | 0 | The paper studies cadmium toxicity in barley plants, not human pharmacogenomics or drug pharmacokinetics/pharmacodynamics. |
 | popPK | Blanch_2020 | irrelevant | 0 | 0 | The paper is an agricultural study on the effect of salicylic acid on grape phenolic content, not a pharmacokinetic study of potassium salicylate. |
 | PD | Blanch_2020 | not_relevant | 0 | 0 | The paper investigates the agronomic effect of salicylic acid on grape phenolic content, not the pharmacodynamic response of a drug in a biological system. |
-| popPK | Bloch_1980 | irrelevant | 2 | 0 | The paper describes a simulation model ("MacDope") and uses aspirin/salicylate as an illustrative example, but does not report original quantitative PK parameter values for potassium salicylate. |
+| popPK | Bloch_1980 | irrelevant | 2 | 0 | The paper describes a simulation model ('MacDope') and uses aspirin/salicylate as an illustrative example, but it does not present original quantitative PK parameter estimates for potassium salicylate itself, nor does it contain specific numeric values for CL, V, or Q in the provided text. |
 | popPK | Brogden_1986 | irrelevant | 0 | 0 | The paper discusses pyrazolone derivatives (e.g., dipyrone) and does not contain pharmacokinetic data for potassium salicylate. |
-| popPK | Brouwers_1994 | irrelevant | 0 | 0 | The paper is a review of NSAID drug interactions and does not report quantitative pharmacokinetic parameters for potassium salicylate. |
+| popPK | Brouwers_1994 | irrelevant | 0 | 0 | The paper is a qualitative review of NSAID drug interactions and does not report specific quantitative pharmacokinetic parameters for potassium salicylate. |
 | PD | Brouwers_1994 | not_relevant | 0 | 0 | The text is a qualitative review of pharmacokinetic and pharmacodynamic drug interactions involving NSAIDs and salicylates, containing no numeric PD parameters, concentration-effect curves, or dose-response data for potassium salicylate. |
 | popPK | Buntenkötter_2017 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of salicylic acid (SA) after administration of acetylsalicylic acid (ASA) in horses, not potassium salicylate. |
 | popPK | Caboni_2013 | irrelevant | 0 | 0 | no_text gate: only 98 chars of text extracted (&lt; 400) |
 | PD | Caboni_2013 | not_relevant | 0 | 0 | The paper investigates the nematicidal activity of mint aqueous extracts, not the pharmacodynamics of potassium salicylate. |
-| popPK | Cai_2025 | irrelevant | 0 | 0 | The paper describes a deep learning method for detecting spiral ganglion neurons in cochleae and contains no pharmacokinetic data for potassium salicylate. |
+| popPK | Cai_2025 | irrelevant | 0 | 0 | The paper describes a deep learning method for counting spiral ganglion neurons in cochleae and contains no pharmacokinetic data for potassium salicylate. |
 | PD | Cai_2025 | not_relevant | 0 | 0 | The paper describes a deep learning method for detecting spiral ganglion neurons in cochleae and contains no pharmacodynamic or exposure-response analysis for potassium salicylate. |
-| popPK | Caldas_2023 | irrelevant | 0 | 0 | The study is an environmental toxicity assessment in *Ceriodaphnia silvestrii* using salicylic acid (not potassium salicylate) and reports no pharmacokinetic parameters. |
+| popPK | Caldas_2023 | irrelevant | 0 | 0 | The study is an environmental toxicity assessment on *Ceriodaphnia silvestrii* and does not report pharmacokinetic parameters for potassium salicylate. |
 | popPK | Calderin_2025 | irrelevant | 0 | 0 | The study reports pharmacokinetic parameters for dexamethasone, not potassium salicylate. |
 | popPK | Calderin_2025_2 | irrelevant | 0 | 0 | The study reports pharmacokinetic parameters for pyrazinamide and isoniazid, not potassium salicylate. |
-| popPK | Caminada_2006 | irrelevant | 0 | 0 | The study is an in-vitro cytotoxicity assay in fish cell lines, not a pharmacokinetic study, and does not report disposition parameters for potassium salicylate. |
-| popPK | Cao_2025 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of KJ103 (an IgG degrading enzyme), not potassium salicylate. |
-| popPK | Carpenter_2016 | irrelevant | 0 | 0 | The study is a production trial in dairy cattle measuring milk yield and metabolic markers, not a pharmacokinetic study reporting disposition parameters for potassium salicylate. |
+| popPK | Caminada_2006 | irrelevant | 0 | 0 | The paper is an in-vitro cytotoxicity study, not a pharmacokinetic study, and does not report disposition parameters for potassium salicylate. |
+| popPK | Cao_2025 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of KJ103 (an IgG-degrading enzyme), not potassium salicylate. |
+| popPK | Carpenter_2016 | irrelevant | 0 | 0 | The study focuses on milk yield and production performance in dairy cows, not on the pharmacokinetic characterization (e.g., clearance, volume, half-life) of potassium salicylate. |
 | popPK | Cazzaniga_2025 | irrelevant | 0 | 0 | The paper describes the synthesis and biological evaluation of novel MbtI inhibitors for tuberculosis, not the pharmacokinetics of potassium salicylate. |
 | PD | Cazzaniga_2025 | not_relevant | 0 | 0 | The paper reports in vitro enzyme inhibition (IC50) and MIC values for novel MtbI inhibitors, but does not contain any pharmacokinetic data, exposure-response analysis, or pharmacodynamic modeling for potassium salicylate or any other drug. |
 | popPK | Cerletti_2003 | irrelevant | 2 | 1 | The study focuses on aspirin (acetylsalicylic acid) and its metabolite salicylate, not potassium salicylate as the subject drug, and only reports AUC values rather than specific disposition parameters like clearance or volume for potassium salicylate. |
 | popPK | Cha_2024 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of zolpidem, not potassium salicylate. |
 | PD | Cha_2024 | not_relevant | 0 | 0 | The paper focuses exclusively on the pharmacokinetics (PK) of zolpidem and does not report any pharmacodynamic (PD) or exposure-response relationship for potassium salicylate or any other drug. |
-| PGx | Chauhan_2015 | not_relevant | 0 | 0 | The paper discusses plant genetics and salicylic acid as a plant hormone, not the pharmacokinetics or pharmacodynamics of the drug potassium salicylate in humans. |
-| popPK | Chen_1978 | irrelevant | 2 | 0 | The study focuses on salicylate (the ion) in dogs rather than the specific salt potassium_salicylate, and no quantitative PK parameter values are present in the provided evidence. |
-| PGx | Chen_2015 | not_relevant | 0 | 0 | The paper studies plant transcriptomics in response to a pathogen and does not involve human pharmacogenomics or the drug potassium salicylate. |
-| popPK | Cheng_2026 | irrelevant | 0 | 0 | The paper is a review of paclitaxel nanomedicines and does not involve potassium salicylate or report any pharmacokinetic parameters for it. |
+| PGx | Chauhan_2015 | not_relevant | 0 | 0 | The paper concerns plant pathology and defense pathways in barley/wheat, not human pharmacogenomics or the drug potassium_salicylate. |
+| popPK | Chen_1978 | irrelevant | 1 | 0 | The study reports the pharmacokinetics of salicylate (the active metabolite/ion) in dogs, not the parent drug potassium salicylate, and no quantitative parameter values are provided in the evidence. |
+| PGx | Chen_2015 | not_relevant | 0 | 0 | The paper discusses salicylic acid signaling in plant defense against pathogens, not the pharmacogenomics of the drug potassium salicylate. |
+| popPK | Cheng_2026 | irrelevant | 0 | 0 | The paper is a review of paclitaxel nanomedicines and does not study potassium salicylate or report its pharmacokinetic parameters. |
 | PD | Cheng_2026 | not_relevant | 0 | 0 | The paper is a narrative review on paclitaxel nanomedicines and does not report any pharmacodynamic or exposure-response data for potassium salicylate. |
-| popPK | Chung_2007 | irrelevant | 0 | 0 | The study is a mechanistic investigation of vasomotor function in Marfan syndrome using salicylate derivatives as pharmacological tools, not a pharmacokinetic study of potassium salicylate. |
+| popPK | Chung_2007 | irrelevant | 0 | 0 | The study is a mechanistic/in-vitro investigation of vasomotor function in mouse aortae using salicylate derivatives as pharmacological tools, not a pharmacokinetic study of potassium salicylate. |
 | PD | Chung_2007 | not_relevant | 0 | 0 | The study investigates the mechanism of vasomotor dysfunction in Marfan syndrome using COX inhibitors (indomethacin, valeryl salicylate) as tools, but does not report a pharmacodynamic exposure-response or dose-response relationship for potassium salicylate itself. |
-| PGx | Clappers_2008 | not_relevant | 0 | 0 | The paper studies the effect of a COX-1 polymorphism on the clinical efficacy of acetyl salicylic acid (aspirin), not potassium salicylate. |
-| popPK | Cleveland_1984 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of phenytoin in the presence of salicylate, not the pharmacokinetic parameters of potassium salicylate itself. |
-| PGx | Colizza_2007 | not_relevant | 0 | 0 | The paper studies the pharmacokinetics of CP-122,721, not potassium salicylate. |
+| PGx | Clappers_2008 | not_relevant | 0 | 0 | The paper studies aspirin (acetyl salicylic acid), not potassium salicylate, and reports clinical outcomes rather than pharmacokinetic parameters. |
+| popPK | Cleveland_1984 | irrelevant | 1 | 0 | The study investigates the pharmacokinetics of phenytoin (the subject drug) in the presence of salicylate (the target drug acting as an interacting agent), rather than modeling the pharmacokinetics of salicylate itself. |
+| PGx | Colizza_2007 | not_relevant | 0 | 0 | The paper reports pharmacogenomic differences in the pharmacokinetics of CP-122,721, not potassium salicylate. |
 | popPK | Collins-Smith_2026 | irrelevant | 0 | 0 | The study focuses on aspirin and its metabolite salicylic acid, not potassium salicylate, which is a distinct chemical entity. |
 | popPK | Conrath_1995 | irrelevant | 0 | 0 | The paper is a plant physiology study on salicylic acid's mechanism of action in tobacco, not a pharmacokinetic study of potassium salicylate in humans or animals. |
 | PD | Conrath_1995 | not_relevant | 0 | 0 | The paper studies plant defense mechanisms and catalase inhibition by salicylic acid, not the pharmacodynamics of potassium salicylate in a clinical or toxicological context. |
-| PGx | Cosme_2021 | not_relevant | 0 | 0 | The paper studies plant-mycorrhizal interactions and does not involve potassium salicylate or pharmacogenomics. |
+| PGx | Cosme_2021 | not_relevant | 0 | 0 | The paper investigates arbuscular mycorrhizal colonization in plant systems and contains no mention of potassium salicylate pharmacokinetics or pharmacogenomics. |
 | popPK | Costa_2014 | irrelevant | 0 | 0 | no_text gate: only 145 chars of text extracted (&lt; 400) |
 | PD | Costa_2014 | not_relevant | 0 | 0 | The paper focuses on the toxicity of ionic liquids and does not report any pharmacodynamic or exposure-response data for potassium salicylate. |
-| PGx | Coutinho_2019 | not_relevant | 0 | 0 | The paper discusses drought tolerance in transgenic soybeans and salicylic acid levels in plants, not the pharmacogenomics of potassium salicylate in humans. |
-| popPK | Cronstein_1994 | irrelevant | 0 | 0 | The paper is an in-vitro mechanistic study on neutrophil adhesion and does not report pharmacokinetic parameters for potassium salicylate. |
-| popPK | Cuesta-Gragera_2015 | irrelevant | 0 | 0 | The study focuses on acetylsalicylic acid (ASA) and its metabolites, not potassium salicylate, and does not report PK parameters for the target drug. |
-| popPK | Dandekar_1977 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of tetraethylammonium bromide, with sodium salicylate acting only as a co-administered inhibitor, and no PK parameters for potassium salicylate are reported. |
-| popPK | Dang_2025 | irrelevant | 0 | 0 | The paper investigates gut microbiome signatures for predicting 5-ASA efficacy in ulcerative colitis and does not report pharmacokinetic parameters for potassium salicylate. |
+| PGx | Coutinho_2019 | not_relevant | 0 | 0 | The paper discusses drought tolerance in transgenic soybeans and salicylic acid levels in plants, not pharmacogenomics or pharmacokinetics in humans. |
+| popPK | Cronstein_1994 | irrelevant | 0 | 0 | The paper describes an in vitro mechanistic study on neutrophil adhesion, not a pharmacokinetic study of potassium salicylate. |
+| popPK | Cuesta-Gragera_2015 | irrelevant | 0 | 0 | The paper focuses on acetylsalicylic acid (ASA) and its metabolites, not potassium salicylate. |
+| popPK | Dandekar_1977 | irrelevant | 1 | 0 | The study focuses on the pharmacokinetics of the probe drug tetraethylammonium bromide, with sodium salicylate acting only as a modulator of its elimination, rather than reporting PK parameters for potassium/sodium salicylate itself. |
+| popPK | Dang_2025 | irrelevant | 0 | 0 | The study investigates gut microbiome signatures to predict 5-ASA efficacy in ulcerative colitis and does not report any pharmacokinetic parameters for potassium salicylate or 5-ASA. |
 | PD | Dang_2025 | not_relevant | 0 | 0 | The paper investigates gut microbiome signatures to predict 5-ASA efficacy using machine learning (Random Forest) and does not report any pharmacokinetic or pharmacodynamic modeling, exposure-response relationships, or numeric PD parameters (e.g., Emax, EC50). |
 | popPK | Dash_2024 | irrelevant | 0 | 0 | The paper studies a novel salicylic acid-telmisartan conjugate (DDABT1) for antiviral and anti-inflammatory effects, not the pharmacokinetics of potassium salicylate. |
 | popPK | Davies_1995 | irrelevant | 0 | 0 | The paper is a review of flurbiprofen pharmacokinetics and does not report quantitative PK parameters for potassium salicylate. |
 | popPK | Davies_1998 | irrelevant | 0 | 0 | The paper focuses on the pharmacokinetics of oxaprozin, not potassium salicylate. |
-| popPK | De_1988 | irrelevant | 0 | 0 | The study focuses on the pharmacodynamic effects of triflusal and salicylic derivatives on cyclooxygenase, not the pharmacokinetics of potassium salicylate. |
-| PGx | Deng_2017 | not_relevant | 0 | 0 | The paper studies a rice mutant and salicylic acid signaling in plants, not human pharmacogenomics of potassium salicylate. |
+| popPK | De_1988_2 | irrelevant | 0 | 0 | The study focuses on the pharmacodynamic effects of triflusal and salicylic derivatives on cyclooxygenase, not the pharmacokinetics of potassium salicylate. |
+| PGx | Deng_2017 | not_relevant | 0 | 0 | The paper studies a rice leaf senescence mutant, not human pharmacogenomics or potassium salicylate pharmacokinetics/pharmacodynamics. |
 | popPK | Deng_2018 | irrelevant | 0 | 0 | The paper focuses on the synthesis and antitumour activity of chrysin salicylate derivatives, not the pharmacokinetics of potassium salicylate. |
 | popPK | Desager_1994 | irrelevant | 0 | 0 | The paper is a review of the pharmacokinetics of ticlopidine, not potassium salicylate. |
-| popPK | Deshpande_2001 | irrelevant | 0 | 0 | The paper describes the structure-activity relationship of influenza virus fusion inhibitors and does not report pharmacokinetic parameters for potassium salicylate. |
-| popPK | Ding_2026 | irrelevant | 0 | 0 | The paper is a microbiome and metabolomics study on sheep temperament and does not report pharmacokinetic parameters for potassium salicylate. |
+| popPK | Deshpande_2001 | irrelevant | 0 | 0 | The paper is an in vitro study of structure-activity relationships for influenza virus inhibitors (salicylic acid derivatives) and does not report pharmacokinetic parameters for potassium salicylate. |
+| popPK | Ding_2026 | irrelevant | 0 | 0 | The study focuses on gut microbiome and temperament in Merino sheep, with no pharmacokinetic data for potassium salicylate. |
 | PD | Ding_2026 | not_relevant | 0 | 0 | The paper investigates the association between the gut microbiome and temperament in sheep using multi-omics; it does not report a pharmacodynamic or exposure-response relationship for potassium salicylate. |
-| popPK | Dittert_1977 | irrelevant | 1 | 0 | The paper is a review that discusses salicylate only as an example of complex pharmacokinetic behavior without reporting specific quantitative disposition parameters for potassium salicylate. |
-| popPK | Dubovská_1995 | irrelevant | 0 | 0 | The study focuses on acetylsalicylic acid (ASA) and salicylic acid (SA), not potassium salicylate, and does not report parameters for the target drug. |
-| PGx | Ee_2013 | not_relevant | 0 | 0 | The paper studies plant gene expression in response to salicylic acid, not human pharmacogenomics or PK/PD of potassium salicylate. |
-| PGx | Ferreira_2025 | not_relevant | 0 | 0 | The paper studies wheat plant pathology and defense mechanisms against a fungal pathogen, not human pharmacogenomics or the pharmacokinetics/pharmacodynamics of potassium salicylate. |
-| PGx | Fuller_2018 | not_relevant | 0 | 0 | The paper evaluates the safety pharmacology of 2-hydroxybenzylamine (2-HOBA), not potassium salicylate, and does not report pharmacogenomic effects. |
-| popPK | Galbiati_2017 | irrelevant | 0 | 0 | The study is an in vitro toxicology assay for skin sensitization and does not report pharmacokinetic parameters for potassium salicylate. |
-| PGx | Galindo-González_2020 | not_relevant | 0 | 0 | The paper studies plant immunity to a pathogen and does not involve human pharmacogenomics or the drug potassium salicylate. |
+| popPK | Dittert_1977 | irrelevant | 0 | 0 | The paper is a review focusing on sulfamethazine and dicloxacillin, mentioning salicylate only as an example of complex behavior without providing any quantitative PK parameters for potassium salicylate. |
+| popPK | Dubovská_1995 | irrelevant | 0 | 0 | The study investigates acetylsalicylic acid and salicylic acid, not potassium salicylate, which is a distinct chemical entity. |
+| PGx | Ee_2013 | not_relevant | 0 | 0 | The paper investigates plant transcriptomics in response to salicylic acid, not human pharmacogenomics of potassium salicylate. |
+| PGx | Ferreira_2025 | not_relevant | 0 | 0 | The paper analyzes wheat resistance to a pathogen using transcriptomics and metabolomics, and is not a pharmacogenomic study of a drug's PK/PD. |
+| PGx | Fuller_2018 | not_relevant | 0 | 0 | The paper studies the safety pharmacology of 2-hydroxybenzylamine (2-HOBA), not potassium salicylate, and reports no pharmacogenomic data. |
+| popPK | Galbiati_2017 | irrelevant | 0 | 0 | The paper describes an in vitro skin sensitization assay for contact allergens and does not report pharmacokinetic parameters for potassium salicylate. |
+| PGx | Galindo-González_2020 | not_relevant | 0 | 0 | The paper studies plant immunity and salicylic acid signaling in Brassica napus, not human pharmacogenomics or drug pharmacokinetics of potassium salicylate. |
 | popPK | Gao_2025 | irrelevant | 0 | 0 | The paper investigates the mechanistic effects of aspirin on protein ubiquitination and degradation, not the pharmacokinetics of potassium salicylate. |
-| popPK | Gawarammana_2011 | irrelevant | 0 | 0 | The paper is a review of paraquat poisoning and only mentions salicylate as a potential antioxidant treatment without providing any pharmacokinetic parameters for potassium salicylate. |
-| popPK | Ghosh_2021 | irrelevant | 0 | 0 | The paper is a medicinal chemistry study on SARS-CoV-2 3CL protease inhibitors and does not report pharmacokinetic parameters for potassium salicylate. |
-| popPK | Gousiadou_2023 | irrelevant | 0 | 0 | The paper is a QSAR study on PAMPA permeability for SARS-CoV-2 drugs and does not report pharmacokinetic parameters for potassium salicylate. |
+| popPK | Gawarammana_2011 | irrelevant | 0 | 0 | The paper is a review on paraquat poisoning and mentions salicylate only as a potential antioxidant adjunct, containing no pharmacokinetic parameters for potassium salicylate. |
+| popPK | Ghosh_2021 | irrelevant | 0 | 0 | The paper is an in vitro medicinal chemistry study on salicylic acid esters as SARS-CoV-2 protease inhibitors and contains no pharmacokinetic data for potassium salicylate. |
+| popPK | Gousiadou_2023 | irrelevant | 0 | 0 | The paper focuses on QSAR modeling of PAMPA permeability for SARS-CoV-2 drugs and does not study potassium salicylate pharmacokinetics. |
 | PD | Gousiadou_2023 | not_relevant | 0 | 0 | The paper focuses on QSAR modeling of PAMPA permeability for SARS-CoV-2 drugs and does not contain any pharmacodynamic or exposure-response analysis for potassium salicylate. |
-| PGx | Gruszka_2016 | not_relevant | 0 | 0 | The paper studies plant phytohormones in barley, not human pharmacogenomics or the drug potassium salicylate. |
-| PGx | Grün_2006 | not_relevant | 0 | 0 | The paper discusses nitric oxide and gene regulation in plants, which is unrelated to human pharmacogenomics or the pharmacokinetics/pharmacodynamics of potassium salicylate. |
+| PGx | Gruszka_2016 | not_relevant | 0 | 0 | The paper studies plant physiology and phytohormone homeostasis in barley, not the pharmacokinetics or pharmacodynamics of potassium salicylate in humans. |
+| PGx | Grün_2006 | not_relevant | 0 | 0 | The paper discusses nitric oxide and gene regulation in plants, not human pharmacogenomics of potassium salicylate. |
 | popPK | Gu_2018 | irrelevant | 0 | 0 | no_text gate: only 184 chars of text extracted (&lt; 400) |
-| popPK | Guinea_2008 | irrelevant | 0 | 0 | The paper describes the electrochemical degradation of salicylic acid in an aqueous medium, which is a chemical engineering/environmental study, not a pharmacokinetic study of potassium salicylate in biological systems. |
-| PGx | Gulyás_2025 | not_relevant | 0 | 0 | The paper studies plant physiology (wheat freezing tolerance) and does not involve the drug potassium_salicylate or human pharmacogenomics. |
+| popPK | Guinea_2008 | irrelevant | 0 | 0 | The paper studies the electrochemical degradation (mineralization) of salicylic acid in vitro, which is not a pharmacokinetic study of potassium salicylate disposition in a biological system. |
+| PGx | Gulyás_2025 | not_relevant | 0 | 0 | This paper investigates plant biology, specifically the effect of light quality and dwarfing alleles (Rht12) on freezing tolerance and hormone levels (including salicylic acid) in wheat, and has nothing to do with the pharmacogenomics of the human drug potassium salicylate. |
 | popPK | Gupta_1982 | irrelevant | 0 | 0 | The study investigates aspirin (acetylsalicylic acid), not potassium salicylate, and does not report specific PK parameters for the target drug. |
 | PD | Gupta_1982 | not_relevant | 0 | 0 | The paper reports pharmacokinetic changes (AUC, t1/2) of aspirin and phenylbutazone due to oral contraceptives, but does not report any pharmacodynamic (exposure-response or dose-response) relationship or numeric PD parameters. |
-| PGx | Gómez-Tabales_2020 | not_relevant | 0 | 0 | The study investigates the modulation of CYP2C9 activity by cytochrome b5 in vitro, but does not report pharmacogenomic effects of specific gene variants on the PK/PD of potassium salicylate. |
-| popPK | Hadi_2025 | irrelevant | 0 | 0 | The study investigates the neuroprotective effects of rosiglitazone in a rat model of Parkinson's disease and does not report pharmacokinetic parameters for potassium salicylate. |
+| PGx | Gómez-Tabales_2020 | not_relevant | 0 | 0 | The paper studies the modulation of CYP2C9 enzyme activity by cytochrome b5 in vitro, but it does not report any human pharmacogenomic study linking specific gene variants to PK/PD parameters of potassium salicylate. |
+| popPK | Hadi_2025 | irrelevant | 0 | 0 | The study focuses on neuroprotection and gene expression in rats using rosiglitazone and tramadol, with no mention of potassium salicylate or pharmacokinetic parameters. |
 | PD | Hadi_2025 | not_relevant | 0 | 0 | The paper investigates rosiglitazone, not potassium salicylate, and reports dose-response data for the wrong drug. |
-| PGx | Haigler_1992 | not_relevant | 0 | 0 | The paper describes the biodegradation of aromatic compounds by a bacterial strain and does not involve human pharmacogenomics or the pharmacokinetics/pharmacodynamics of potassium salicylate. |
+| PGx | Haigler_1992 | not_relevant | 0 | 0 | The paper describes microbial biodegradation of aromatic compounds by Pseudomonas sp. and does not investigate human pharmacogenomics or the PK/PD of potassium salicylate. |
 | popPK | Hartwig-Otto_1983 | irrelevant | 2 | 0 | The paper is a general review of pharmacokinetic principles for analgesics (focusing on aspirin and paracetamol) and does not report specific quantitative PK parameters for potassium salicylate. |
 | PD | Hartwig-Otto_1983 | not_relevant | 1 | 0 | The text is a general review of pharmacokinetics and pharmacodynamics principles for analgesics, mentioning salicylate elimination kinetics but providing no specific numeric PD parameters or exposure-response data for potassium salicylate. |
-| popPK | Henschel_1997 | irrelevant | 0 | 0 | The paper is an ecotoxicological study assessing environmental hazards and does not report any pharmacokinetic parameters for potassium salicylate. |
+| popPK | Henschel_1997 | irrelevant | 0 | 0 | The study is an ecotoxicological assessment of environmental hazards, not a pharmacokinetic study, and does not report PK parameters for potassium salicylate. |
 | PD | Henschel_1997 | not_relevant | 0 | 0 | The paper reports ecotoxicological EC50 values for salicylic acid (not potassium salicylate) in environmental organisms, which is not a pharmacodynamic exposure-response relationship for the drug in a clinical or physiological context. |
-| popPK | Hernandez-Leyva_2026 | irrelevant | 0 | 0 | The paper focuses on gut microbiota and breath volatile organic compounds (VOCs) and does not involve potassium salicylate or pharmacokinetic parameters. |
+| popPK | Hernandez-Leyva_2026 | irrelevant | 0 | 0 | The study investigates the relationship between gut microbiota and breath volatile organic compounds in children and mice, containing no pharmacokinetic data for potassium salicylate. |
 | PD | Hernandez-Leyva_2026 | not_relevant | 0 | 0 | The paper focuses on gut microbiota and breath volatile organic compounds (VOCs) and does not mention potassium salicylate or any pharmacodynamic modeling. |
-| popPK | Hiromoto_2006 | irrelevant | 0 | 0 | The paper describes the molecular mechanism of a bacterial transcriptional regulator (MobR) and does not contain any pharmacokinetic data for potassium salicylate. |
-| popPK | Ho_2020 | irrelevant | 0 | 0 | The paper is a study on the allelopathic potential of rice cultivars and identifies plant metabolites (allelochemicals) like salicylic acid, but it does not study the pharmacokinetics of the drug potassium salicylate. |
-| popPK | Hou_2026 | irrelevant | 0 | 0 | The paper investigates selenium peptides for Parkinson's disease and does not study the pharmacokinetics of potassium salicylate. |
-| PGx | Huang_2005 | not_relevant | 0 | 0 | The paper describes the engineering of bacteria for salicylate detection and does not investigate human pharmacogenomics or PK/PD parameters of potassium salicylate. |
-| PGx | Huang_2016 | not_relevant | 0 | 0 | The paper studies plant biocontrol and gene expression in tomatoes, not human pharmacogenomics or potassium salicylate PK/PD. |
-| PGx | Huang_2018 | not_relevant | 0 | 0 | The paper investigates sugarcane plant genetics and fungal disease resistance, not human pharmacogenomics or potassium salicylate pharmacokinetics. |
-| popPK | Hung_1998 | irrelevant | 0 | 0 | The study investigates O-acyl esters of salicylic acid (aspirin analogues) in rat liver, not potassium salicylate. |
+| popPK | Hiromoto_2006 | irrelevant | 0 | 0 | The paper describes the molecular mechanism of a bacterial transcriptional regulator (MobR) for 3-hydroxybenzoate metabolism and does not contain any pharmacokinetic data for potassium salicylate. |
+| popPK | Ho_2020 | irrelevant | 0 | 0 | The paper is a metabolomics study on rice allelochemicals (weed control) and does not report pharmacokinetic parameters for potassium salicylate. |
+| popPK | Hou_2026 | irrelevant | 0 | 0 | The paper focuses on selenium peptides for Parkinson's disease in worms/cells and does not study potassium salicylate pharmacokinetics. |
+| PGx | Huang_2005 | not_relevant | 0 | 0 | The paper describes engineering bacteria to detect salicylate in environmental samples, not human pharmacogenomics or PK/PD parameters of potassium salicylate. |
+| PGx | Huang_2016 | not_relevant | 0 | 0 | The paper studies biocontrol bacteria in tomatoes and mentions salicylic acid pathway genes, but does not involve potassium salicylate pharmacokinetics or pharmacodynamics. |
+| PGx | Huang_2018 | not_relevant | 0 | 0 | The paper investigates the plant-pathogen interaction in sugarcane, not the pharmacogenomics of potassium salicylate in humans or animals. |
+| popPK | Hung_1998 | irrelevant | 1 | 0 | The study investigates a series of O-acyl esters of salicylic acid (aspirin analogs) in rat livers, not potassium salicylate. |
 | popPK | Hurni_1993 | irrelevant | 0 | 0 | no_text gate: only 225 chars of text extracted (&lt; 400) |
 | PD | Hurni_1993 | not_relevant | 0 | 0 | The paper studies sodium salicylate (not potassium salicylate) in Caco-2 cells and focuses on permeability enhancement and transport routes, not on a pharmacodynamic exposure-response or dose-response relationship with numeric PD parameters. |
-| popPK | Hussein_1994 | irrelevant | 2 | 2 | The study investigates salicylic acid (not potassium salicylate) in an isolated perfused rat liver model, reporting organ-specific dispersion parameters rather than systemic population pharmacokinetic parameters for the subject drug. |
-| PGx | Huws_2013 | not_relevant | 0 | 0 | The paper investigates the effect of plant stress volatiles on rumen microbiota and biohydrogenation, not the pharmacogenomics of potassium salicylate. |
+| popPK | Hussein_1994 | irrelevant | 3 | 4 | The study models salicylic acid (the acid form/metabolite) in an in vitro isolated perfused rat liver setup, which is a mechanistic/hepatic clearance study rather than a systemic PK study of the prodrug potassium salicylate in vivo. |
+| PGx | Huws_2013 | not_relevant | 0 | 0 | The study investigates the effect of plant volatile compounds on rumen microbiota and biohydrogenation, with no connection to potassium salicylate pharmacokinetics or pharmacogenomics. |
 | popPK | Ibrahim_2024 | irrelevant | 0 | 0 | The paper is a medicinal chemistry study involving NMR spectra and molecular docking, with no pharmacokinetic data for potassium salicylate. |
 | PD | Ibrahim_2024 | not_relevant | 0 | 0 | The text consists solely of supplementary figure captions for chemical characterization (NMR, Mass Spec) and molecular docking interactions, containing no pharmacodynamic data, exposure-response analysis, or numeric PD parameters. |
 | popPK | Iguchi_2022 | irrelevant | 0 | 0 | The paper is a phytochemical study on Betula alba bark and leaves, focusing on chemical isolation and aldose reductase inhibition, with no pharmacokinetic data for potassium salicylate. |
 | PD | Iguchi_2022 | not_relevant | 0 | 0 | The paper reports IC50 values for isolated plant compounds (including a methyl salicylate glycoside) against aldose reductase, but does not report a pharmacodynamic or exposure-response relationship for the drug potassium salicylate. |
-| popPK | Isla_2024 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of fosfomycin calcium, not potassium salicylate. |
+| popPK | Isla_2024 | irrelevant | 0 | 0 | The study reports population PK parameters for fosfomycin calcium, not potassium salicylate. |
 | PD | Isla_2024 | not_relevant | 0 | 0 | The paper reports a population pharmacokinetic (PK) model for fosfomycin calcium, not potassium salicylate, and contains no pharmacodynamic (PD) or exposure-response analysis. |
 | popPK | Izzo_2009 | irrelevant | 0 | 0 | The paper is a review of herbal medicine interactions and does not contain pharmacokinetic data for potassium salicylate. |
-| PGx | Joo_2015 | not_relevant | 0 | 0 | The paper reports in vitro UGT inhibition by NSAIDs (including salicylic acid) but does not report pharmacogenomic effects on PK/PD parameters for potassium salicylate. |
-| popPK | Jordan_2009 | irrelevant | 0 | 0 | The paper is a study on insect odorant receptors and their sensitivity to volatile compounds (methyl salicylate), not a pharmacokinetic study of potassium salicylate. |
+| PGx | Joo_2015 | not_relevant | 0 | 0 | The paper reports in vitro UGT inhibition by NSAIDs (including salicylic acid, not potassium salicylate) and does not involve gene variants or pharmacogenomics. |
+| popPK | Jordan_2009 | irrelevant | 0 | 0 | The paper investigates odorant receptor genetics and electrophysiology in a moth, not the pharmacokinetics of potassium salicylate. |
 | PD | Jordan_2009 | not_relevant | 0 | 0 | The paper reports EC50 values for odorant receptors in moths, which is a pharmacological binding/activation study, not a pharmacodynamic (exposure-response) analysis for the drug potassium salicylate. |
-| popPK | Jordan_2021 | irrelevant | 0 | 0 | The paper is a medical education study comparing teaching methods for salicylate toxicity and contains no pharmacokinetic data for potassium salicylate. |
-| popPK | Jovanović_2024 | irrelevant | 0 | 0 | The study focuses on vedolizumab, not potassium_salicylate. |
+| popPK | Jordan_2021 | irrelevant | 0 | 0 | The paper is a medical education study comparing teaching methods for salicylate toxicity and contains no pharmacokinetic data. |
+| popPK | Jovanović_2024 | irrelevant | 0 | 0 | The paper evaluates pharmacokinetic models for vedolizumab, not potassium salicylate. |
 | PD | Jovanović_2024 | not_relevant | 0 | 0 | The paper evaluates population pharmacokinetic (PK) models for vedolizumab, not potassium salicylate, and contains no pharmacodynamic (PD) or exposure-response analysis. |
-| popPK | Julien_1988 | irrelevant | 0 | 0 | The paper is an in-vitro mechanistic study on red blood cell anion transport inhibition, not a pharmacokinetic study of potassium salicylate. |
+| popPK | Julien_1988 | irrelevant | 0 | 0 | The paper is an in-vitro study on anion transport inhibition in red blood cell membranes and does not report pharmacokinetic parameters for potassium salicylate. |
 | PD | Julien_1988 | not_relevant | 0 | 0 | The paper studies the mechanism of anion transport inhibition by HNPG and phenylglyoxal in red blood cells; while it mentions salicylate as a protective agent, it does not report a pharmacodynamic exposure-response or dose-response relationship for potassium salicylate. |
-| popPK | Kakehata_1996 | irrelevant | 0 | 0 | The paper is an in-vitro electrophysiology study on guinea-pig outer hair cells investigating the mechanism of salicylate action, not a pharmacokinetic study reporting disposition parameters. |
-| popPK | Kaldestad_1975 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of indomethacin, with salicylate serving only as a co-administered agent/comparator, and no quantitative PK parameters for potassium salicylate are reported. |
-| PGx | Kanupriya_2025 | not_relevant | 0 | 0 | The paper studies sunburn mitigation in dragon fruit plants and does not involve human pharmacogenomics or the drug potassium salicylate. |
-| PGx | Karimi_2025 | not_relevant | 0 | 0 | The paper studies the effect of salicylic acid on plant stress tolerance, not the pharmacokinetics or pharmacodynamics of potassium salicylate in humans. |
+| popPK | Kakehata_1996 | irrelevant | 0 | 0 | The study investigates the electrophysiological effects of salicylate on guinea-pig outer hair cells in vitro and does not report pharmacokinetic parameters. |
+| popPK | Kaldestad_1975 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of indomethacin, with salicylate serving only as a concomitant medication/co-administered agent. |
+| PGx | Kanupriya_2025 | not_relevant | 0 | 0 | The paper investigates plant biology (dragon fruit sunburn mitigation) and is unrelated to human pharmacogenomics or the drug potassium_salicylate. |
+| PGx | Karimi_2025 | not_relevant | 0 | 0 | The paper examines the effects of salicylic acid on salt stress tolerance in bean plants, not the pharmacogenomics of the drug potassium_salicylate. |
 | popPK | Kastner_2023 | irrelevant | 0 | 0 | The study focuses on platinum(iv) prodrugs releasing aspirin (acetylsalicylic acid), not potassium salicylate, and does not report PK parameters for the target drug. |
-| popPK | Kaur_2025 | irrelevant | 0 | 0 | The paper is an in-silico and in-vitro study of novel NSAID analogues and does not report pharmacokinetic parameters for potassium salicylate. |
+| popPK | Kaur_2025 | irrelevant | 0 | 0 | The study focuses on the synthesis and in vitro mechanistic evaluation (COX inhibition) of novel NSAID analogues, not the pharmacokinetics of potassium salicylate. |
 | PD | Kaur_2025 | not_relevant | 0 | 0 | The paper reports in vitro IC50 values for novel synthesized analogues, not for potassium salicylate, and does not contain any pharmacokinetic or exposure-response data. |
-| PGx | Kaya_2020 | not_relevant | 0 | 0 | The paper studies salicylic acid in maize plants, not potassium salicylate in humans, and does not involve pharmacogenomics. |
-| PGx | Khan_2025 | not_relevant | 0 | 0 | The paper studies arsenic and submergence stress in rice genotypes, not the pharmacogenomics of potassium salicylate in humans. |
-| popPK | Khan_2026 | irrelevant | 0 | 0 | The paper is a pharmacovigilance study analyzing adverse drug withdrawal events in FAERS and Eudravigilance databases, containing no pharmacokinetic data or parameters for potassium salicylate. |
+| PGx | Kaya_2020 | not_relevant | 0 | 0 | The paper studies the interaction between salicylic acid and arsenic stress in maize plants, not the pharmacokinetics or pharmacodynamics of potassium salicylate in humans with genetic variants. |
+| PGx | Khan_2025 | not_relevant | 0 | 0 | The paper investigates arsenic and submergence stress in rice genotypes and involves salicylic acid metabolism, but does not study potassium_salicylate as a drug or its pharmacokinetics/pharmacodynamics in humans. |
+| popPK | Khan_2026 | irrelevant | 0 | 0 | This is a pharmacovigilance study analyzing adverse drug withdrawal events in databases; it does not contain any pharmacokinetic parameters for potassium salicylate. |
 | PD | Khan_2026 | not_relevant | 0 | 0 | The paper analyzes adverse drug withdrawal event reporting patterns in pharmacovigilance databases and does not contain any pharmacodynamic, exposure-response, or dose-response data for potassium salicylate. |
 | popPK | Khatua_2015 | irrelevant | 0 | 0 | no_text gate: only 71 chars of text extracted (&lt; 400) |
 | PD | Khatua_2015 | not_relevant | 0 | 0 | The paper studies a mushroom extract (RusePre) and reports in vitro antioxidant EC50 values, but does not report any pharmacodynamic or exposure-response relationship for the specific drug potassium salicylate. |
-| popPK | Khatua_2022 | irrelevant | 0 | 0 | The paper is a phytochemical and in-vitro bioactivity study of a mushroom extract, not a pharmacokinetic study of potassium salicylate. |
-| popPK | Kim_2025 | irrelevant | 0 | 0 | The paper is a horticultural study on the vase life of cut lisianthus flowers using salicylic acid, not a pharmacokinetic study of potassium salicylate. |
-| popPK | Kimitsuki_1994 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of ototoxic drugs on hair cell channels, not a pharmacokinetic study of potassium salicylate. |
+| popPK | Khatua_2022 | irrelevant | 0 | 0 | The paper studies the chemical composition and bioactivity of a mushroom extract, not the pharmacokinetics of potassium salicylate. |
+| popPK | Kim_2025 | irrelevant | 0 | 0 | The paper is a botanical study on the vase life of cut lisianthus flowers using salicylic acid, containing no pharmacokinetic data for potassium salicylate. |
+| popPK | Kimitsuki_1994 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of ototoxicity in chick hair cells, reporting no pharmacokinetic parameters for potassium salicylate. |
 | PD | Kimitsuki_1994 | not_relevant | 0 | 0 | The paper explicitly states that acetyl salicylate (the active metabolite of potassium salicylate) did not suppress the MET current, and no numeric PD parameters or dose-response relationship for salicylate are reported. |
-| popPK | Koh_2025 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of aspirin (ASA) and its metabolite salicylic acid (SA), not potassium salicylate, which is a distinct chemical entity. |
-| popPK | Kotschwar_2009 | irrelevant | 2 | 8 | The study reports pharmacokinetic parameters for sodium salicylate, not the target drug potassium salicylate. |
-| PGx | Kováčik_2012 | not_relevant | 0 | 0 | The paper studies aluminum toxicity in plants using salicylic acid, not the pharmacogenomics of potassium salicylate in humans. |
-| PGx | Kuehl_2006 | not_relevant | 0 | 0 | The paper characterizes UGT enzymes involved in salicylic acid glucuronidation but does not report pharmacogenomic effects of specific gene variants on PK/PD parameters. |
-| PGx | Kumar_2024 | not_relevant | 0 | 0 | The paper analyzes transcriptomic responses to a virus in watermelon plants and does not involve human pharmacogenomics or the drug potassium salicylate. |
-| popPK | Ledwidge_2012 | irrelevant | 0 | 0 | The study focuses on the prodrug ST0702 (niacin-aspirin) in non-human primates, not potassium salicylate, and does not report PK parameters for the target drug. |
-| PGx | Leneva_2009 | not_relevant | 0 | 0 | The paper describes microbial degradation of phenanthrene and anthracene, not human pharmacogenomics or potassium salicylate PK/PD. |
-| PGx | Lennard_1998 | not_relevant | 0 | 0 | The paper discusses TPMT pharmacogenomics for thiopurines and mentions salicylic acid only as a potential inhibitor of TPMT, not as the drug of interest for a pharmacogenomic effect. |
+| popPK | Koh_2025 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of aspirin and its metabolite salicylic acid, not the specific drug potassium salicylate. |
+| PGx | Kováčik_2012 | not_relevant | 0 | 0 | The paper studies plant physiology (aluminum uptake in chamomile) and does not involve human pharmacogenomics or potassium salicylate PK/PD. |
+| PGx | Kuehl_2006 | not_relevant | 1 | 0 | The paper characterizes UGT enzyme activity for salicylic acid but does not report any genotype-specific effects or pharmacogenomic variants. |
+| PGx | Kumar_2024 | not_relevant | 0 | 0 | The paper focuses on plant molecular biology and virus resistance in watermelon, not human pharmacogenomics. |
+| popPK | Ledwidge_2012 | irrelevant | 0 | 0 | The study evaluates a niacin-aspirin prodrug in non-human primates and does not report pharmacokinetic parameters for potassium salicylate. |
+| PGx | Leneva_2009 | not_relevant | 0 | 0 | The paper discusses microbial degradation of phenanthrene and anthracene, not the pharmacogenomics of potassium salicylate. |
+| PGx | Lennard_1998 | not_relevant | 0 | 0 | The paper discusses pharmacogenomics related to thiopurine metabolism and potential drug interactions involving aspirin/salicylates, but it does not report how a genetic variant affects the PK/PD of potassium salicylate. |
 | popPK | Levy_1978 | irrelevant | 2 | 0 | The paper is a review of aspirin/salicylic acid pharmacokinetics without original quantitative parameter values for potassium salicylate. |
-| PGx | Li_2008 | not_relevant | 0 | 0 | The paper studies a plant gene (OsBIRH1) in rice and Arabidopsis, not human pharmacogenomics or potassium salicylate PK/PD. |
+| PGx | Li_2008 | not_relevant | 0 | 0 | The paper focuses on plant defense mechanisms and gene function in rice and Arabidopsis, not human pharmacogenomics or PK/PD of potassium salicylate. |
 | popPK | Li_2019 | irrelevant | 0 | 0 | The paper focuses on the synthesis and in-vitro activity of salicylic acid derivatives as PTP1B inhibitors, not the pharmacokinetics of potassium salicylate. |
 | PD | Li_2019 | not_relevant | 0 | 0 | The paper reports in vitro enzyme inhibition (IC50) and permeability data for salicylic acid derivatives, not a pharmacodynamic exposure-response or dose-response relationship for potassium salicylate in a biological system. |
-| PGx | Li_2023 | not_relevant | 0 | 0 | The paper studies resin yield in Masson pine and does not involve the pharmacokinetics or pharmacodynamics of potassium salicylate in humans. |
+| PGx | Li_2023 | not_relevant | 0 | 0 | The paper concerns plant physiology and resin yield in pines, not human pharmacogenomics or the pharmacokinetics of potassium salicylate. |
 | popPK | Li_2024 | irrelevant | 0 | 0 | no_text gate: only 111 chars of text extracted (&lt; 400) |
 | PD | Li_2024 | not_relevant | 0 | 0 | The paper focuses on the endocrine-disrupting mechanism of salicylates on neurosteroidogenesis (5α-reductase inhibition) and does not report pharmacokinetic or pharmacodynamic exposure-response relationships for potassium salicylate. |
-| popPK | Li_2026 | irrelevant | 0 | 0 | The study focuses on the preparation and efficacy of chitosan nanocarriers for plant disease control, not the pharmacokinetics of potassium salicylate. |
+| popPK | Li_2026 | irrelevant | 0 | 0 | The study focuses on the plant pathology and pesticide efficacy of salicylic acid in ginseng, not the pharmacokinetics of potassium salicylate. |
 | PD | Li_2026 | not_relevant | 3 | 2 | The paper reports an EC50 for the nanocarrier formulation against a fungal pathogen (antimicrobial efficacy), not a pharmacodynamic exposure-response relationship for potassium salicylate in a biological system. |
-| PGx | Liao_2026 | not_relevant | 0 | 0 | The paper investigates plant salt tolerance and microbiome interactions, not human pharmacogenomics or the pharmacokinetics of potassium salicylate. |
+| PGx | Liao_2026 | not_relevant | 0 | 0 | The study investigates plant-microbe interactions and salt tolerance mechanisms, not human pharmacogenomics or the pharmacokinetics/pharmacodynamics of the drug potassium salicylate. |
 | PGx | Lihavainen_2023 | not_relevant | 0 | 0 | The paper studies salicylic acid metabolism in aspen trees, not the pharmacokinetics or pharmacodynamics of potassium salicylate in humans. |
-| PGx | Liu_2015 | not_relevant | 0 | 0 | The paper studies plant physiology and nitric oxide in Trifolium repens, not human pharmacogenomics or potassium salicylate. |
+| PGx | Liu_2015 | not_relevant | 0 | 0 | The paper studies plant physiology (Trifolium repens L.) and cadmium toxicity, not pharmacogenomics in humans. |
 | popPK | Liu_2016 | irrelevant | 0 | 0 | The paper focuses on the discovery of PTP1B inhibitors (methyl salicylate derivatives) and reports biochemical potency (IC50), not pharmacokinetic parameters for potassium salicylate. |
 | PD | Liu_2016 | not_relevant | 0 | 0 | The paper reports in vitro enzyme IC50 values for PTP1B inhibitors, which is a pharmacological potency metric, not a pharmacodynamic (exposure-response or dose-response) relationship for potassium salicylate or any drug in a biological system. |
 | popPK | Liu_2020 | irrelevant | 0 | 0 | The paper describes the synthesis and in vitro anti-tumor evaluation of novel flavonoid salicylate derivatives, not the pharmacokinetics of potassium salicylate. |
-| PGx | Liu_2023 | not_relevant | 0 | 0 | The paper investigates phenolic extracts from rapeseed meal and their effect on alpha-glucosidase, not the pharmacogenomics of potassium salicylate. |
-| popPK | Liu_2026 | irrelevant | 0 | 0 | The paper is a plant biology study on Isatis indigotica cultivars and contains no pharmacokinetic data for potassium salicylate. |
+| PGx | Liu_2023 | not_relevant | 0 | 0 | The paper analyzes rapeseed meal extracts and their effect on alpha-glucosidase, not the pharmacogenomics of potassium salicylate. |
+| popPK | Liu_2026 | irrelevant | 0 | 0 | The paper is a comparative study of plant cultivars (Isatis indigotica) focusing on phenotypic and transcriptomic differences, with no pharmacokinetic data for potassium salicylate. |
 | popPK | Lourenço-Silva_2026 | irrelevant | 0 | 0 | no_text gate: only 132 chars of text extracted (&lt; 400) |
 | PD | Lourenço-Silva_2026 | not_relevant | 0 | 0 | The paper focuses on the clinical effectiveness of allergic rhinitis medications using mobile health data and does not report pharmacokinetic or pharmacodynamic modeling or numeric exposure-response parameters for potassium salicylate. |
-| popPK | Lowenthal_1974 | irrelevant | 2 | 2 | The study investigates the pharmacokinetics of salicylic acid (administered as sodium salicylate), not potassium salicylate, which is a distinct salt form not reported as the subject drug. |
-| popPK | Lu_2026 | irrelevant | 0 | 0 | The paper is a clinical case-control study on tigecycline-associated acute pancreatitis and does not report pharmacokinetic parameters for potassium salicylate. |
+| popPK | Lowenthal_1974 | irrelevant | 2 | 1 | The study investigates the pharmacokinetics of salicylic acid/sodium salicylate, not potassium salicylate, and while PK parameters are present for the wrong drug, they do not meet the strict requirement for the subject drug potassium salicylate. |
+| popPK | Lu_2026 | irrelevant | 0 | 0 | The paper studies tigecycline's adverse effects and does not involve potassium_salicylate or any PK parameters for it. |
 | PD | Lu_2026 | not_relevant | 0 | 0 | The paper is a retrospective case-control study on tigecycline-associated acute pancreatitis and does not involve potassium salicylate or report any pharmacodynamic or exposure-response parameters. |
-| PGx | Lucas_2001 | not_relevant | 0 | 0 | The paper discusses CYP2E1 phenotyping in the context of environmental pollutant exposure and mentions salicylate only as a non-conclusive catalytic probe, without reporting pharmacogenomic effects on the PK/PD of potassium salicylate. |
-| PGx | Luchessi_2017 | not_relevant | 0 | 0 | The paper investigates the pharmacokinetics of salicylic acid (a metabolite of aspirin) and clopidogrel, not potassium salicylate. |
+| PGx | Lucas_2001 | not_relevant | 0 | 0 | The paper discusses CYP2E1 phenotyping for environmental pollutant exposure and mentions salicylate only as an unsuccessful catalytic probe, not as a drug for PK/PD pharmacogenomic study. |
+| PGx | Luchessi_2017 | not_relevant | 0 | 0 | The paper investigates clopidogrel and aspirin (acetylsalicylic acid), not potassium salicylate. |
 | popPK | Ludden_1991 | irrelevant | 0 | 0 | The paper is a general review of nonlinear pharmacokinetics that mentions salicylate only as an example of a drug with saturable elimination, without providing any quantitative PK parameters for potassium salicylate. |
-| PGx | Luis_2025 | not_relevant | 0 | 0 | The paper investigates plant genetics and induced systemic resistance in tomatoes, not human pharmacogenomics or the pharmacokinetics/pharmacodynamics of potassium salicylate. |
-| popPK | Luo_2026 | irrelevant | 0 | 0 | The paper studies cinnamic acid derivatives for plant viral disease control and does not involve potassium salicylate pharmacokinetics. |
+| PGx | Luis_2025 | not_relevant | 0 | 0 | The paper investigates plant biology (tomato genotypes and fungal resistance), not human pharmacogenomics or the pharmacokinetics of potassium salicylate. |
+| popPK | Luo_2026 | irrelevant | 0 | 0 | The paper studies cinnamic acid derivatives for plant viral disease control and does not report pharmacokinetic parameters for potassium salicylate. |
 | PD | Luo_2026 | not_relevant | 0 | 0 | The paper studies cinnamic acid derivatives (Compound B7) for plant viral disease control, not potassium salicylate, and does not report a pharmacodynamic model for the target drug. |
-| PGx | Ma_2021 | not_relevant | 0 | 0 | The paper studies flowering time in alfalfa plants and is unrelated to human pharmacogenomics or potassium salicylate. |
-| PGx | Maestro-Gaitán_2025 | not_relevant | 0 | 0 | The paper studies drought tolerance in quinoa plants and does not involve human pharmacogenomics or the drug potassium salicylate. |
-| popPK | Magavern_2025 | irrelevant | 0 | 0 | The study focuses on amitriptyline pharmacogenomics and does not report any pharmacokinetic parameters for potassium salicylate. |
+| PGx | Ma_2021 | not_relevant | 0 | 0 | The paper investigates flowering time regulation in alfalfa and does not involve pharmacogenomics or the pharmacokinetics/pharmacodynamics of potassium salicylate. |
+| PGx | Maestro-Gaitán_2025 | not_relevant | 0 | 0 | The paper studies drought tolerance in quinoa plants and contains no human pharmacogenomic or drug PK/PD data. |
+| popPK | Magavern_2025 | irrelevant | 0 | 0 | The study concerns amitriptyline pharmacogenomics and does not involve potassium salicylate or report any PK parameters. |
 | PD | Magavern_2025 | not_relevant | 0 | 0 | The paper investigates pharmacogenomics (CYP2C19) and family history of amitriptyline discontinuation, not potassium salicylate, and contains no PK/PD modeling or exposure-response analysis. |
 | popPK | Makhaeva_2023 | irrelevant | 0 | 0 | The paper describes the synthesis and in-vitro biological activity (cholinesterase inhibition, amyloid aggregation) of tacrine-salicylic acid conjugates, not the pharmacokinetics of potassium salicylate. |
 | PD | Makhaeva_2023 | not_relevant | 0 | 0 | The paper reports in vitro enzyme inhibition (IC50/Ki) and molecular docking for tacrine-salicylic acid conjugates, but does not report a pharmacokinetic/pharmacodynamic (PK/PD) exposure-response relationship or dose-response curve for potassium salicylate. |
-| PGx | Mangwanda_2016 | not_relevant | 0 | 0 | The paper studies fungal pathogenicity in Eucalyptus trees and does not involve human pharmacogenomics or the drug potassium salicylate. |
-| PGx | Mano_2007 | not_relevant | 0 | 0 | The study investigates in vitro enzyme inhibition of UGT2B7 by NSAIDs and does not report pharmacogenomic effects on the PK/PD of potassium salicylate. |
-| popPK | Marcin_2023 | irrelevant | 0 | 0 | The paper is an ecotoxicological study of UV filters (including 2-ethylhexyl salicylate) and does not report pharmacokinetic parameters for potassium salicylate. |
+| PGx | Mangwanda_2016 | not_relevant | 0 | 0 | The paper studies fungal pathogenicity in eucalyptus trees and does not involve the drug potassium_salicylate or human pharmacogenomics. |
+| PGx | Mano_2007 | not_relevant | 0 | 0 | The paper reports in vitro enzyme inhibition data and does not investigate gene variants or pharmacogenomic effects on the PK/PD of potassium salicylate. |
+| popPK | Marcin_2023 | irrelevant | 0 | 0 | The paper is an ecotoxicology study testing UV filters on crustaceans and bacteria, not a pharmacokinetic study for potassium salicylate. |
 | PD | Marcin_2023 | not_relevant | 0 | 0 | The paper reports ecotoxicological LC50/EC50 values for UV filters (including 2-ethylhexyl salicylate, not potassium salicylate) in environmental organisms, which is not a pharmacodynamic exposure-response relationship for the specified drug. |
-| popPK | Masuoka_2004 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of xanthine oxidase inhibition by anacardic acid, not a pharmacokinetic study of potassium salicylate. |
-| popPK | Matared_2026 | irrelevant | 0 | 0 | The paper is a plant pathology study on biocontrol bacteria and does not involve the pharmacokinetics of potassium salicylate. |
-| popPK | Mathurkar_2018 | irrelevant | 0 | 0 | The study investigates sodium salicylate (salicylic acid) in sheep, not potassium salicylate. |
+| popPK | Masuoka_2004 | irrelevant | 0 | 0 | The paper is an in-vitro mechanistic study of xanthine oxidase inhibition, not a pharmacokinetic study of potassium salicylate. |
+| popPK | Matared_2026 | irrelevant | 0 | 0 | The paper is a plant pathology study focusing on biocontrol bacteria in tomatoes and mentions salicylic acid signaling, but does not involve the drug potassium salicylate or pharmacokinetics. |
+| popPK | Mathurkar_2018 | irrelevant | 1 | 0 | The study investigates sodium salicylate in sheep, not potassium salicylate, and no parameters for the subject drug are present. |
 | PD | Mathurkar_2018 | not_relevant | 1 | 0 | The paper reports only pharmacokinetic parameters and explicitly states that PK/PD modelling is required to determine the effective concentration range, providing no numeric PD parameters or exposure-response relationship. |
 | popPK | Matthew_1992 | irrelevant | 0 | 0 | The study investigates the pharmacodynamic effects of physostigmine salicylate on exercise endurance and thermoregulation in rats, not the pharmacokinetics of potassium salicylate. |
-| PGx | Mei_2015 | not_relevant | 0 | 0 | The paper studies the effect of salicylic acid on copper toxicity in cotton plants, not the pharmacogenomics of potassium salicylate in humans. |
+| PGx | Mei_2015 | not_relevant | 0 | 0 | The paper studies the physiological response of cotton plants to copper stress and does not involve human pharmacogenomics or the pharmacokinetics/pharmacodynamics of potassium salicylate. |
 | popPK | Mitchell_1993 | irrelevant | 0 | 0 | The paper is an in-vitro mechanistic study on COX inhibition and does not report pharmacokinetic parameters for potassium salicylate. |
 | PD | Mitchell_1993 | not_relevant | 3 | 0 | The paper discusses sodium salicylate (not potassium salicylate) and only qualitatively describes it as a weak inhibitor without providing numeric IC50 values or dose-response curves in the text. |
-| popPK | Moore_2024 | irrelevant | 0 | 0 | The study investigates salicylic acid (SA) and nicotine, not potassium salicylate, and focuses on local skin bioavailability rather than systemic population pharmacokinetics. |
-| PGx | Mostofa_2019 | not_relevant | 0 | 0 | The paper studies the effects of salicylic acid on rice plants under cadmium stress, not human pharmacogenomics or PK/PD parameters. |
-| popPK | Mota_2021 | irrelevant | 0 | 0 | The paper is an in-vitro enzymatic inhibition study of ionic liquids and does not report pharmacokinetic parameters for potassium salicylate. |
+| popPK | Moore_2024 | irrelevant | 0 | 0 | The study investigates topical bioavailability of salicylic acid (the parent acid) and nicotine, not the systemic pharmacokinetics of potassium salicylate (the salt) as a subject drug. |
+| PGx | Mostofa_2019 | not_relevant | 0 | 0 | The paper studies salicylic acid in plants and is not a human pharmacogenomics study. |
+| popPK | Mota_2021 | irrelevant | 0 | 0 | no_text gate: only 118 chars of text extracted (&lt; 400) |
 | PD | Mota_2021 | not_relevant | 0 | 0 | The paper reports in vitro enzyme inhibition (EC50) for ionic liquids and salicylate salts, which is a biochemical assay, not a pharmacodynamic (exposure-response) relationship for a drug in a biological system. |
-| popPK | Mukherjee_2025 | irrelevant | 0 | 0 | The study focuses on anti-tubercular drugs (kanamycin, fluoroquinolones, ethionamide, PASA, cycloserine) and does not investigate potassium salicylate. |
+| popPK | Mukherjee_2025 | irrelevant | 0 | 0 | no_text gate: only 131 chars of text extracted (&lt; 400) |
 | PD | Mukherjee_2025 | not_relevant | 2 | 1 | The paper analyzes PK parameters (Cmax, AUC) and compares them to MICs for responders vs. non-responders, but reports no significant difference and does not provide numeric PD parameters (Emax, EC50) or a fitted concentration-effect curve for potassium salicylate (or any other drug). |
-| PGx | Mukherjee_2025 | not_relevant | 0 | 0 | The paper analyzes PK/PD of anti-tubercular drugs (including PASA, not potassium salicylate) and does not report any pharmacogenomic effects or gene variant associations. |
-| PGx | Murakoshi_2022 | not_relevant | 0 | 0 | The paper investigates the effect of salicylate derivatives on the protein localization of a specific SLC26A4 variant in cell culture, not the pharmacokinetic or pharmacodynamic parameters of potassium salicylate in humans. |
-| popPK | Muramatsu_1984 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of cyclooxygenase inhibition and does not report pharmacokinetic parameters for potassium salicylate. |
-| popPK | Nakijoba_2025 | irrelevant | 0 | 0 | The paper is a cross-sectional survey on medication use and safety during breastfeeding in Uganda and does not report any pharmacokinetic parameters for potassium salicylate. |
+| PGx | Mukherjee_2025 | not_relevant | 0 | 0 | The paper analyzes PK-PD of anti-tubercular drugs in children and does not mention potassium salicylate or pharmacogenomic effects. |
+| PGx | Murakoshi_2022 | not_relevant | 0 | 0 | The paper investigates the cellular localization of a specific protein variant (SLC26A4) and the effect of salicylate derivatives on it, which is a mechanistic study not related to the pharmacokinetics or pharmacodynamics of potassium salicylate in a clinical pharmacogenomic context. |
+| popPK | Muramatsu_1984 | irrelevant | 0 | 0 | The paper is an in-vitro study of cyclooxygenase inhibition mechanisms and does not report pharmacokinetic parameters for potassium salicylate. |
+| popPK | Nakijoba_2025 | irrelevant | 0 | 0 | The paper is a cross-sectional survey on medication use during breastfeeding and does not report any pharmacokinetic parameters for potassium salicylate. |
 | PD | Nakijoba_2025 | not_relevant | 0 | 0 | The paper is a cross-sectional survey on medication use prevalence and safety during breastfeeding; it does not report any pharmacokinetic or pharmacodynamic data, exposure-response relationships, or numeric PD parameters for potassium salicylate or any other drug. |
-| PGx | Namdjoyan_2017 | not_relevant | 0 | 0 | The study investigates the physiological effects of salicylic acid on safflower plants under zinc stress, not the pharmacogenomics of potassium salicylate in humans. |
-| PGx | Navarro_2011 | not_relevant | 0 | 0 | The paper focuses on aspirin metabolism and dietary inducers, not potassium salicylate or genetic variants. |
-| popPK | Ndovi_2006 | irrelevant | 2 | 0 | The study measures salicylate (metabolite of aspirin) concentrations in seminal fluid compartments, not the pharmacokinetic parameters (CL, V, etc.) of the specific drug potassium salicylate. |
+| PGx | Namdjoyan_2017 | not_relevant | 0 | 0 | The study investigates the interaction of salicylic acid and nitric oxide in alleviating zinc toxicity in plants, not pharmacogenomics or human PK/PD. |
+| PGx | Navarro_2011 | not_relevant | 0 | 0 | The study focuses on aspirin metabolism, whereas the target drug is potassium salicylate, and the paper explicitly concludes there was no effect of UGT1A6 genotypes. |
+| popPK | Ndovi_2006 | irrelevant | 2 | 2 | The study focuses on tissue compartmentation (semen/prostate) rather than standard systemic disposition parameters (CL, Vd), and the subject drug is aspirin (with salicylate as its metabolite), not potassium salicylate. |
 | popPK | Needs_1985 | irrelevant | 2 | 0 | The paper is a review discussing salicylates generally (focusing on aspirin and salicylic acid) and does not report specific quantitative PK parameters for potassium salicylate. |
 | popPK | Needs_1985_2 | irrelevant | 0 | 0 | The paper is a general review of antirheumatic medications in pregnancy and does not report any pharmacokinetic parameters for potassium salicylate. |
-| popPK | Obata_1999 | irrelevant | 0 | 0 | The study is a mechanistic investigation of dopamine oxidation and hydroxyl radical formation in rat striatum, using salicylic acid derivatives as trapping agents, and does not report pharmacokinetic parameters for potassium salicylate. |
-| PGx | Orf_2022 | not_relevant | 0 | 0 | The paper studies plant defense mechanisms in Arabidopsis, not human pharmacogenomics or the pharmacokinetics/pharmacodynamics of potassium salicylate. |
+| popPK | Obata_1999 | irrelevant | 0 | 0 | The study is a mechanistic investigation of dopamine and hydroxyl radical formation in rat striatum, not a pharmacokinetic study of potassium salicylate. |
+| PGx | Orf_2022 | not_relevant | 0 | 0 | The paper analyzes plant immunity in Arabidopsis and does not address human pharmacogenomics or the PK/PD of potassium salicylate. |
 | popPK | Othman_2023 | irrelevant | 0 | 0 | The paper is a medicinal chemistry study on the synthesis and in-vitro anticancer activity of salicylamide hybrids, containing no pharmacokinetic data for potassium salicylate. |
 | PD | Othman_2023 | not_relevant | 0 | 0 | The paper reports IC50 values for novel synthetic hybrids, not for potassium salicylate, and does not provide a pharmacodynamic model or exposure-response relationship for the specified drug. |
 | popPK | Pacifici_1991 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of hippuric acid formation and inhibition by salicylic acid, not a pharmacokinetic study of potassium salicylate. |
-| popPK | Paclíková_2025 | irrelevant | 0 | 0 | The paper is an ex-vivo platelet aggregation study investigating antiplatelet effects, not a pharmacokinetic study, and does not report disposition parameters for potassium salicylate. |
-| popPK | Page_2011 | irrelevant | 0 | 0 | The paper describes the synthesis and in vitro biological activity of a salicylic acid derivative as a Stat3 inhibitor, not the pharmacokinetics of potassium salicylate. |
-| PGx | Palikhe_2011 | not_relevant | 2 | 0 | The study investigates the association between gene polymorphisms and the clinical phenotype of aspirin-intolerant urticaria, not the effect of genotypes on specific pharmacokinetic or pharmacodynamic parameters of potassium salicylate. |
-| PGx | Palmer_1992 | not_relevant | 0 | 0 | The paper investigates plant tissue culture and shoot regeneration in Brassica campestris, not human pharmacogenomics or the pharmacokinetics of potassium salicylate. |
+| popPK | Paclíková_2025 | irrelevant | 0 | 0 | The study investigates platelet aggregation mechanisms using acetylsalicylic acid and 4-methylcatechol, not the pharmacokinetics of potassium salicylate. |
+| popPK | Page_2011 | irrelevant | 0 | 0 | The paper describes the development of salicylic acid derivatives as Stat3 inhibitors for cancer treatment and does not report pharmacokinetic parameters for potassium salicylate. |
+| PGx | Palikhe_2011 | not_relevant | 2 | 2 | The paper studies aspirin (acetyl salicylic acid), not potassium salicylate, and reports associations with urticaria risk rather than specific PK/PD parameter changes. |
+| PGx | Palmer_1992 | not_relevant | 0 | 0 | The paper focuses on plant shoot regeneration using silver nitrate and salicylic acid, not human pharmacogenomics of potassium salicylate. |
 | popPK | Pan_2018 | irrelevant | 0 | 0 | The paper is a review discussing the chemopreventive potential of aspirin and dietary phytochemicals, containing no original pharmacokinetic data or quantitative disposition parameters for potassium salicylate. |
 | PD | Pan_2018 | not_relevant | 1 | 0 | The text is a qualitative review discussing the potential synergistic effects of aspirin and dietary phytochemicals on colon cancer risk and COX inhibition, but it does not report any specific pharmacokinetic or pharmacodynamic data, numeric parameters, or exposure-response relationships for potassium salicylate. |
-| popPK | Parton_2000 | irrelevant | 0 | 0 | The study investigates carprofen and DL-lysine acetyl salicylate (aspirin), not potassium salicylate. |
+| popPK | Parton_2000 | irrelevant | 2 | 3 | The study investigates carprofen and DL-lysine acetyl salicylate (not potassium salicylate) as the subject drugs in cats. |
 | popPK | Paulus_1973 | irrelevant | 0 | 0 | no_text gate: only 35 chars of text extracted (&lt; 400) |
 | PD | Paulus_1973 | not_relevant | 1 | 0 | The text is a generic title or section header for a review of nonsteroidal anti-inflammatory agents and contains no specific data, models, or numeric parameters for potassium salicylate. |
 | popPK | Picone_2021 | irrelevant | 0 | 0 | no_text gate: only 125 chars of text extracted (&lt; 400) |
@@ -332,126 +349,124 @@ _37 paper(s) judged relevant from the abstract, with no full text on disk — pa
 | popPK | Pinder_2019 | irrelevant | 0 | 0 | no_text gate: only 162 chars of text extracted (&lt; 400) |
 | PD | Pinder_2019 | not_relevant | 0 | 0 | The paper focuses on physostigmine, not potassium salicylate. |
 | popPK | Poźniak_2013 | irrelevant | 0 | 0 | The study investigates acetylsalicylic acid and sodium salicylate, not potassium salicylate. |
-| popPK | Poźniak_2015 | irrelevant | 0 | 0 | The study investigates sodium salicylate (which dissociates to salicylate), not potassium salicylate, and is an animal study (hens) rather than a human PK study for the specific salt requested. |
-| PGx | Prerostova_2020 | not_relevant | 0 | 0 | The paper studies plant physiology (Arabidopsis cold stress response) and does not involve the drug potassium_salicylate or human pharmacogenomics. |
-| PGx | Prescott_1983 | not_relevant | 0 | 0 | The paper discusses drug-drug interactions (ethanol, cimetidine) and toxicity mechanisms, but does not report any pharmacogenomic effects (gene variants) on PK or PD parameters for potassium salicylate. |
-| PGx | Puthoff_2007 | not_relevant | 0 | 0 | The paper studies plant defense mechanisms in sugar beet roots, not human pharmacogenomics or the pharmacokinetics of potassium salicylate. |
-| PGx | Pál_2019 | not_relevant | 0 | 0 | The paper studies plant physiology and polyamine metabolism in wheat mutants, not human pharmacogenomics or the pharmacokinetics of potassium salicylate. |
-| popPK | Rajakulendran_2025 | irrelevant | 0 | 0 | The paper is a natural product isolation and structural characterization study of N-salicyl-amino acids, not a pharmacokinetic study of potassium salicylate. |
+| PGx | Prerostova_2020 | not_relevant | 0 | 0 | The paper studies cold stress responses in Arabidopsis and mentions salicylic acid as a phytohormone, but does not investigate potassium salicylate as a pharmaceutical or its pharmacokinetics. |
+| PGx | Prescott_1983 | not_relevant | 0 | 0 | The paper discusses drug interactions (alcohol, cimetidine) and general toxicity mechanisms for aspirin and acetaminophen, but does not report pharmacogenomic effects (gene variants) on PK/PD parameters. |
+| PGx | Puthoff_2007 | not_relevant | 0 | 0 | The paper is about plant biology (sugar beet defense genes) and has no connection to human pharmacogenomics or the drug potassium salicylate. |
+| PGx | Pál_2019 | not_relevant | 0 | 0 | The paper discusses salicylic acid in plants, not the pharmacokinetics of the drug potassium salicylate in humans. |
+| popPK | Rajakulendran_2025 | irrelevant | 0 | 0 | The paper is a natural product isolation and bioactivity study of N-salicyl-amino acids from bacteria, not a pharmacokinetic study of potassium salicylate. |
 | PD | Rajakulendran_2025 | not_relevant | 0 | 0 | The paper reports the isolation and structural elucidation of N-salicyl-amino acid derivatives and their in vitro antiparasitic activity (EC50), but does not report a pharmacodynamic (exposure-response) model or analysis for potassium salicylate. |
 | popPK | Ranade_2001 | irrelevant | 0 | 0 | The paper is a review of magnesium salts and does not report pharmacokinetic parameters for potassium salicylate. |
 | PD | Ranade_2001 | not_relevant | 0 | 0 | The paper is a review of magnesium salts and does not report any pharmacodynamic or exposure-response data for potassium salicylate. |
-| popPK | Raschka_2001 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of lysine acetylsalicylate and acetylsalicylic acid, not potassium salicylate. |
-| PGx | Redzic_2020 | not_relevant | 0 | 0 | The paper is a study protocol for a clinical trial assessing the efficacy of a combination therapy for warts and does not report pharmacogenomic effects on PK or PD parameters. |
+| popPK | Raschka_2001 | irrelevant | 0 | 0 | The study investigates acetylsalicylic acid (aspirin) and its lysine salt, not potassium salicylate, which is a different chemical entity. |
+| PGx | Redzic_2020 | not_relevant | 0 | 0 | The paper is a clinical trial protocol for cutaneous warts and does not report pharmacogenomic effects on PK/PD for potassium salicylate. |
 | popPK | Reingardiene_2006 | irrelevant | 0 | 0 | The paper is a review article discussing salicylate poisoning in general and does not report original quantitative pharmacokinetic parameters for potassium salicylate. |
 | PD | Reingardiene_2006 | not_relevant | 1 | 0 | The text is a review article discussing general aspects of salicylate poisoning and treatment without reporting specific numeric PD parameters or concentration-effect data for potassium salicylate. |
-| PGx | Ren_2026 | not_relevant | 0 | 0 | The paper focuses on plant pathology and microbiome interactions in peanuts, not human pharmacogenomics or the pharmacokinetics of potassium salicylate. |
+| PGx | Ren_2026 | not_relevant | 0 | 0 | The paper focuses on plant pathology (peanut defense against bacterial wilt) and microbiome dynamics, unrelated to human pharmacogenomics or potassium salicylate PK/PD parameters. |
 | popPK | Roberts_1982 | irrelevant | 0 | 0 | The paper focuses on methyl salicylate, not potassium salicylate, and no PK parameters for the target drug are present. |
 | popPK | Roch-Ramel_1997 | irrelevant | 0 | 0 | no_text gate: only 106 chars of text extracted (&lt; 400) |
 | popPK | Rolli_2016 | irrelevant | 0 | 0 | no_text gate: only 171 chars of text extracted (&lt; 400) |
 | PD | Rolli_2016 | not_relevant | 0 | 0 | The paper focuses on the phytotoxic effects of plant essential oils and isolated compounds, not the pharmacodynamics of potassium salicylate. |
-| PGx | Rosado_2021 | not_relevant | 0 | 0 | The paper studies bacterial succession during vermicomposting of a plant and does not involve human pharmacogenomics or the drug potassium salicylate. |
+| PGx | Rosado_2021 | not_relevant | 0 | 0 | The paper focuses on bacterial succession during vermicomposting and has no connection to pharmacogenomics or the drug potassium salicylate. |
 | popPK | Rosenberg_1981 | irrelevant | 2 | 0 | The paper is a review discussing general pharmacokinetic principles in overdose and mentions salicylate data, but it does not report specific quantitative PK parameters for potassium salicylate. |
-| popPK | Sabaliauske_2026 | irrelevant | 0 | 0 | The paper is a microbiology study on bacterial biosensors for hydroxybenzoic acids and does not contain pharmacokinetic data for potassium salicylate. |
+| popPK | Sabaliauske_2026 | irrelevant | 0 | 0 | The paper describes a bacterial biosensor for detecting hydroxybenzoic acids and contains no pharmacokinetic data for potassium salicylate. |
 | popPK | Saeed_2019 | irrelevant | 0 | 0 | no_text gate: only 142 chars of text extracted (&lt; 400) |
 | PD | Saeed_2019 | not_relevant | 0 | 0 | The paper focuses on phytochemical profiles and antioxidant/antiproliferative activities of kiwifruit cultivars and does not mention potassium salicylate or any pharmacodynamic modeling. |
-| PGx | Salhab_2022 | not_relevant | 0 | 0 | The paper describes an analytical method for quantifying a diclofenac metabolite and does not report pharmacogenomic effects on potassium salicylate PK/PD. |
+| PGx | Salhab_2022 | not_relevant | 0 | 0 | The paper describes a method development and validation for quantifying a metabolite in an in vitro drug-drug interaction assay; it does not report pharmacogenomic effects of gene variants on the pharmacokinetics or pharmacodynamics of potassium salicylate. |
 | popPK | Sansom_1995 | irrelevant | 0 | 0 | The paper reports pharmacokinetic parameters for tiludronate, not potassium salicylate. |
-| popPK | Santamaria_2021 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of rupatadine, not potassium salicylate. |
+| popPK | Santamaria_2021 | irrelevant | 0 | 0 | The study reports pharmacokinetic parameters for rupatadine, not potassium salicylate. |
 | PD | Santamaria_2021 | not_relevant | 0 | 0 | The paper reports a population pharmacokinetic (PK) study for rupatadine, not potassium salicylate, and contains no pharmacodynamic (PD) or exposure-response data. |
-| popPK | Santini_1999 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of cell growth and apoptosis in HT-29 cells, not a pharmacokinetic study, and uses sodium salicylate rather than potassium salicylate. |
-| popPK | Sharma_2011 | irrelevant | 0 | 0 | The paper is a medicinal chemistry study on HIV-1 integrase inhibitors and does not report pharmacokinetic parameters for potassium salicylate. |
+| popPK | Santini_1999 | irrelevant | 0 | 0 | The paper is an in-vitro mechanistic study on cell growth and apoptosis in HT-29 cells, not a pharmacokinetic study, and does not report disposition parameters for potassium salicylate. |
+| popPK | Sharma_2011 | irrelevant | 0 | 0 | The study investigates the synthesis and antiviral activity of salicylic acid chalcone derivatives, not the pharmacokinetics of potassium salicylate. |
 | popPK | Shen_2016 | irrelevant | 0 | 0 | no_text gate: only 88 chars of text extracted (&lt; 400) |
 | PD | Shen_2016 | not_relevant | 0 | 0 | The paper focuses on aspirin-warfarin interactions, not potassium salicylate, and does not report specific PD parameters for potassium salicylate. |
-| popPK | Shen_2025 | irrelevant | 0 | 0 | The paper studies 3-hydroxydecanoic acid as a biopesticide and mentions salicylic acid only as a plant immune marker, not potassium salicylate pharmacokinetics. |
+| popPK | Shen_2025 | irrelevant | 0 | 0 | The study focuses on 3-hydroxydecanoic acid as a biopesticide for wheat and mentions salicylic acid only in the context of plant immunity, not as the subject drug for pharmacokinetic analysis. |
 | PD | Shen_2025 | not_relevant | 0 | 0 | The paper studies 3-hydroxydecanoic acid (3-HDA) as a biopesticide, not potassium salicylate, and reports no pharmacodynamic or exposure-response data for the target drug. |
-| popPK | Shintaku_2007 | irrelevant | 2 | 2 | The study focuses on salicylic acid (the acid form) in an ex-vivo placental perfusion model, not the systemic population pharmacokinetics of the specific salt form potassium salicylate. |
-| popPK | Smith_1980 | irrelevant | 0 | 0 | The paper is an in-vitro mechanistic study on leucocyte chemokinesis and does not report pharmacokinetic parameters for potassium salicylate. |
+| popPK | Shintaku_2007 | irrelevant | 0 | 0 | The study investigates salicylic acid across human placenta in vitro, not the systemic population pharmacokinetics of the specific drug potassium salicylate. |
+| popPK | Smith_1980 | irrelevant | 0 | 0 | The paper is an in-vitro mechanistic study on PMN chemokinesis, not a pharmacokinetic study of potassium salicylate. |
 | PD | Smith_1980 | not_relevant | 3 | 2 | The paper reports qualitative dose-related inhibition of PMN chemokinesis by salicylic acid (a metabolite/related compound) but does not provide numeric PD parameters (e.g., IC50, Emax) or a quantitative concentration-effect curve for potassium salicylate. |
-| PGx | Stare_2015 | not_relevant | 0 | 0 | The paper studies plant-virus interactions and salicylic acid metabolism in potatoes, not human pharmacogenomics of potassium salicylate. |
-| PGx | Staszak_2026 | not_relevant | 0 | 0 | The paper studies phytohormone changes in plant galls and does not involve human pharmacogenomics or the drug potassium salicylate. |
-| popPK | Steppan_2012 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of vascular smooth muscle contraction using salicylate as a PYK2 inhibitor, not a pharmacokinetic study of potassium salicylate. |
-| popPK | Sturkenboom_2021 | irrelevant | 0 | 0 | The paper is a review of anti-tuberculosis drugs and does not contain any pharmacokinetic data for potassium salicylate. |
+| PGx | Stare_2015 | not_relevant | 0 | 0 | The paper studies the interaction between Potato virus Y and potato plants, focusing on salicylic acid biosynthesis pathways in plants, and does not investigate pharmacogenomics of potassium salicylate in humans or animals. |
+| PGx | Staszak_2026 | not_relevant | 0 | 0 | The paper studies phytohormones in plants, not human pharmacogenomics or potassium salicylate PK/PD. |
+| popPK | Steppan_2012 | irrelevant | 0 | 0 | This is an in-vitro mechanistic study in rat vascular rings using salicylate as a PYK2 inhibitor, not a pharmacokinetic study of potassium salicylate. |
+| popPK | Sturkenboom_2021 | irrelevant | 0 | 0 | The paper is a review of anti-tuberculosis drugs and does not mention potassium salicylate or provide pharmacokinetic data for it. |
 | PD | Sturkenboom_2021 | not_relevant | 0 | 0 | The paper is a review of population pharmacokinetic models for anti-TB drugs and does not report any pharmacodynamic or exposure-response analysis for potassium salicylate. |
-| PGx | Suo_2012 | not_relevant | 0 | 0 | The paper reports the isolation of phenolic lipids from cashew nuts and their biological activities, not the pharmacogenomics of potassium salicylate. |
-| PGx | Sánchez-Martín_2015 | not_relevant | 0 | 0 | The paper studies salicylic acid signaling in oats (plants) and does not involve human pharmacogenomics or potassium salicylate. |
-| popPK | Takechi_2025 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of nemolizumab, not potassium salicylate. |
+| PGx | Suo_2012 | not_relevant | 0 | 0 | The paper reports on natural phenolic lipids from cashew nuts and their biological activities, not on potassium salicylate pharmacokinetics or pharmacodynamics influenced by genetics. |
+| PGx | Sánchez-Martín_2015 | not_relevant | 0 | 0 | The paper studies drought tolerance mechanisms in oats and does not involve human pharmacogenomics or the pharmacokinetics of potassium salicylate. |
+| popPK | Takechi_2025 | irrelevant | 0 | 0 | The paper concerns the pharmacokinetics of nemolizumab, not potassium salicylate. |
 | PD | Takechi_2025 | not_relevant | 0 | 0 | The paper reports pharmacodynamic modeling for nemolizumab, not potassium salicylate. |
-| PGx | Takács_2018 | not_relevant | 0 | 0 | The paper studies the effect of salicylic acid on H2O2 homeostasis in tomato plants, not the pharmacokinetics or pharmacodynamics of potassium salicylate in humans. |
-| popPK | Tan_2026 | irrelevant | 0 | 0 | The paper is a phytochemical study on plant alkaloids and antiviral activity in plants, with no pharmacokinetic data for potassium salicylate. |
-| popPK | Tang_2026 | irrelevant | 0 | 0 | The paper is a study on the synthesis and antifungal bioactivity of arecoline derivatives, not a pharmacokinetic study of potassium salicylate. |
+| PGx | Takács_2018 | not_relevant | 0 | 0 | The paper studies salicylic acid (not potassium salicylate) pharmacodynamics in tomato plants, not human PK/PD pharmacogenomics. |
+| popPK | Tan_2026 | irrelevant | 0 | 0 | The paper investigates plant alkaloids and their antiviral activity against Tomato Spotted Wilt Virus, mentioning salicylic acid only as part of the plant defense mechanism, not as a subject for pharmacokinetic analysis. |
+| popPK | Tang_2026 | irrelevant | 0 | 0 | The study focuses on the synthesis and antifungal bioactivity of arecoline derivatives for plant protection, with no pharmacokinetic data for potassium salicylate. |
 | popPK | Thiessen_1983 | irrelevant | 0 | 0 | no_text gate: only 53 chars of text extracted (&lt; 400) |
 | PD | Thiessen_1983 | not_relevant | 0 | 0 | The provided text is only a title and contains no data, analysis, or numeric parameters. |
-| popPK | Thiessen_1984 | irrelevant | 2 | 2 | The study focuses on acetylsalicylic acid (ASA) and salicylic acid (SA), not potassium salicylate, and the reported PK parameters are for the ewe model rather than the specific subject drug. |
-| PGx | Thomas_2015 | not_relevant | 0 | 0 | The study investigates gene expression patterns and PGE2 levels in colon tissue, not pharmacokinetic or pharmacodynamic parameters of potassium salicylate. |
-| popPK | Tian_2017 | irrelevant | 0 | 0 | The study investigates aspirin (ASA) and its metabolite salicylic acid, not potassium salicylate, and reports non-compartmental parameters for a different drug. |
-| popPK | Tian_2018 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of Panax notoginseng saponins with aspirin as a co-administered agent, not potassium salicylate. |
-| PGx | Tlaye_2025 | not_relevant | 0 | 0 | The study explicitly states that genetic polymorphisms were not associated with aspirin nonresponsiveness or PK parameters, and the observed effect was due to placental enzyme expression (GLYAT) rather than a germline gene variant. |
+| popPK | Thiessen_1984 | irrelevant | 2 | 8 | The study uses acetylsalicylic acid and salicylic acid in sheep, which is a different animal species and not specifically focused on the drug potassium salicylate as a distinct subject in humans or the standard veterinary context implied for this specific salt. |
+| PGx | Thomas_2015 | not_relevant | 0 | 0 | Study reports no significant effect of UGT1A6 genotype on PGE2 levels (PD parameter) or salicylate PK, focusing instead on baseline tissue gene expression patterns. |
+| popPK | Tian_2017 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of aspirin (ASA) and its metabolite salicylic acid (SA), not potassium salicylate, and the subject drug is different. |
+| popPK | Tian_2018 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of Panax notoginseng saponins, with aspirin/salicylic acid acting only as an interacting agent rather than the subject drug. |
+| PGx | Tlaye_2025 | not_relevant | 2 | 5 | The study explicitly states that genetic polymorphisms were not associated with aspirin nonresponsiveness, and the reported effect of GLYAT is an expression change, not a genotype-based alteration of a PK/PD parameter. |
 | popPK | Toraman_2024 | irrelevant | 0 | 0 | The paper is an in-vitro/in-silico screening of green algae extracts and does not report pharmacokinetic parameters for potassium salicylate. |
 | PD | Toraman_2024 | not_relevant | 0 | 0 | The paper reports IC50 values for a crude algae extract, not for potassium salicylate, and does not provide a concentration-effect relationship or PD parameters for the specific drug in question. |
-| popPK | Trdá_2019 | irrelevant | 0 | 0 | The paper studies the antifungal and plant defense elicitor properties of the saponin aescin in plants and fungi, and does not involve the drug potassium salicylate or any pharmacokinetic analysis. |
-| popPK | Tunstall_1995 | irrelevant | 0 | 0 | The study is an in-vitro electrophysiological investigation of salicylate's effect on outer hair cell membrane capacitance, not a pharmacokinetic study reporting disposition parameters. |
-| popPK | Udebuani_2021 | irrelevant | 0 | 0 | The study is an ecotoxicology assessment of salicylic acid (not potassium salicylate) in freshwater organisms and does not report pharmacokinetic parameters. |
+| popPK | Trdá_2019 | irrelevant | 0 | 0 | The paper investigates the antifungal activity of the saponin aescin on plants and fungi, containing no pharmacokinetic data for potassium salicylate. |
+| popPK | Tunstall_1995 | irrelevant | 0 | 0 | The paper is an in-vitro electrophysiological study on guinea-pig cochlear cells investigating the mechanism of salicylate on membrane capacitance, not a pharmacokinetic study of potassium salicylate disposition. |
+| popPK | Udebuani_2021 | irrelevant | 0 | 0 | The paper is an acute toxicity study on freshwater organisms using salicylic acid (a related but distinct compound from potassium salicylate) and reports toxicological endpoints (EC50/LC50), not pharmacokinetic parameters. |
 | PD | Udebuani_2021 | not_relevant | 0 | 0 | The paper reports acute toxicity (EC50/LC50) for a mixture of veterinary pharmaceuticals including salicylic acid, but does not report a pharmacodynamic (exposure-response) relationship or numeric PD parameters for potassium salicylate specifically. |
-| popPK | Udebuani_2023 | irrelevant | 0 | 0 | The paper is an environmental ecotoxicology study investigating the ecological risk of veterinary pharmaceuticals (including salicylic acid, not potassium salicylate) in wastewater, and it does not report any pharmacokinetic parameters. |
+| popPK | Udebuani_2023 | irrelevant | 0 | 0 | no_text gate: only 115 chars of text extracted (&lt; 400) |
 | PD | Udebuani_2023 | not_relevant | 2 | 1 | The paper reports acute toxicity (EC50) of piggery effluent mixtures on aquatic organisms, not a pharmacodynamic exposure-response relationship for potassium salicylate in a clinical or pharmacological context. |
-| popPK | Ullah_2026 | irrelevant | 0 | 0 | The paper investigates the phytochemical and pharmacological properties of the plant Fingerhuthia africana and does not study the pharmacokinetics of potassium salicylate. |
+| popPK | Ullah_2026 | irrelevant | 0 | 0 | The paper studies the pharmacological properties of Fingerhuthia africana extract and contains no data on potassium salicylate pharmacokinetics. |
 | PD | Ullah_2026 | not_relevant | 0 | 0 | The paper studies the crude extract of Fingerhuthia africana, not the specific drug potassium salicylate. |
-| PGx | Veszelka_2018 | not_relevant | 0 | 0 | The paper compares in vitro cell culture models for drug transport and does not report pharmacogenomic effects on PK/PD parameters in humans. |
+| PGx | Veszelka_2018 | not_relevant | 0 | 0 | The study investigates blood-brain barrier models and transporter expression; it does not report on genetic variants affecting the PK or PD of potassium_salicylate. |
 | popPK | Vidhya_2020 | irrelevant | 0 | 0 | The study focuses on the anti-inflammatory effects of troxerutin in vitro, and salicylate is only mentioned as a comparator agent without any pharmacokinetic data. |
 | PD | Vidhya_2020 | not_relevant | 0 | 0 | The paper investigates troxerutin, not potassium salicylate, and reports IC50 values for troxerutin and elastatinal, not for the target drug. |
 | popPK | Vinazzer_1975 | irrelevant | 0 | 0 | The study focuses on acetylsalicylic acid (ASA) and its effect on platelet function, not potassium salicylate, and does not report compartmental PK parameters for the target drug. |
-| popPK | Vitali_2006 | irrelevant | 0 | 0 | The paper describes the purification and characterization of a plant protein and does not involve the drug potassium salicylate or any pharmacokinetic studies. |
-| PGx | Voora_2016 | not_relevant | 0 | 0 | The paper investigates the mechanism of aspirin's effect on gene expression (RUNX1) and disease outcomes, but does not report pharmacogenomic effects on the pharmacokinetic or pharmacodynamic parameters of potassium salicylate. |
-| PGx | Wang_2016 | not_relevant | 0 | 0 | The paper studies clopidogrel, not potassium salicylate. |
-| PGx | Wang_2017 | not_relevant | 0 | 0 | The paper investigates the mechanism of salicylate-induced bacterial persistence in E. coli, not the pharmacogenomics of potassium salicylate in humans. |
-| PGx | Wang_2018 | not_relevant | 0 | 0 | The paper studies plant defense mechanisms in tea plants, not human pharmacogenomics or the pharmacokinetics of potassium salicylate. |
-| popPK | Wang_2022 | irrelevant | 0 | 0 | The paper is a study on plant activators and antibacterial compounds, not a pharmacokinetic study of potassium salicylate. |
+| popPK | Vitali_2006 | irrelevant | 0 | 0 | The paper studies an antifungal protein from plant cell cultures and is unrelated to the pharmacokinetics of potassium salicylate. |
+| PGx | Voora_2016 | not_relevant | 1 | 5 | The paper discusses aspirin (not potassium salicylate) and analyzes RUNX1 expression and platelet function responses, but it does not report a specific gene variant/genotype effect on a pharmacokinetic or pharmacodynamic parameter of potassium salicylate. |
+| PGx | Wang_2016 | not_relevant | 0 | 0 | The paper investigates the pharmacodynamics of clopidogrel salts, not potassium salicylate. |
+| PGx | Wang_2017 | not_relevant | 0 | 0 | The study investigates bacterial physiology and persistence in E. coli, not human pharmacogenomics of potassium salicylate. |
+| PGx | Wang_2018 | not_relevant | 0 | 0 | The paper analyzes plant defense mechanisms in tea plants and does not study the pharmacokinetics or pharmacodynamics of potassium salicylate in humans. |
+| popPK | Wang_2022 | irrelevant | 0 | 0 | The paper describes the synthesis and antibacterial activity of steroid derivatives against plant pathogens, with no pharmacokinetic data for potassium salicylate. |
 | PD | Wang_2022 | not_relevant | 0 | 0 | The paper studies androst-4-ene derivatives as plant activators, not potassium salicylate, and reports only static EC50 values for antibacterial activity without a pharmacodynamic exposure-response model. |
-| PGx | Wang_2023 | not_relevant | 0 | 0 | The paper studies herbicide resistance in weeds (Beckmannia syzigachne) and rice, not the pharmacogenomics of potassium salicylate in humans. |
-| PGx | Wang_2025 | not_relevant | 0 | 0 | The paper focuses on the microbial production of salicylic acid in E. coli, not on human pharmacogenomics or the pharmacokinetics/pharmacodynamics of potassium salicylate. |
-| popPK | Wang_2026 | irrelevant | 0 | 0 | The paper is a phytochemical study on plant diterpenoids and viral activity, unrelated to the pharmacokinetics of potassium salicylate. |
-| PGx | Wei_2018 | not_relevant | 0 | 0 | The paper studies the effect of salicylic acid on tomato plants under cadmium stress, not the pharmacogenomics of potassium salicylate in humans. |
-| popPK | Wilkinson_2005 | irrelevant | 0 | 0 | The paper is a structural biology study on a bacterial transcriptional regulator (HucR) and does not report pharmacokinetic parameters for potassium salicylate. |
+| PGx | Wang_2023 | not_relevant | 0 | 0 | The paper discusses herbicide resistance in plants (Beckmannia syzigachne) and is unrelated to human pharmacogenomics or potassium salicylate. |
+| PGx | Wang_2025 | not_relevant | 0 | 0 | The paper concerns the metabolic engineering of E. coli for salicylic acid production, not the pharmacogenomics of potassium salicylate in humans. |
+| popPK | Wang_2026 | irrelevant | 0 | 0 | The paper is a phytochemical study of labdane diterpenoids for viral inhibition and does not contain any pharmacokinetic data for potassium salicylate. |
+| PGx | Wei_2018 | not_relevant | 0 | 0 | The study examines the agricultural effects of salicylic acid on tomato genotypes, not the pharmacogenomics of potassium salicylate in humans. |
+| popPK | Wilkinson_2005 | irrelevant | 0 | 0 | The paper is a structural/biochemical study of the HucR protein in Deinococcus radiodurans binding uric acid and salicylate, not a pharmacokinetic study of potassium salicylate in an animal or human model. |
 | popPK | Williams_1981 | irrelevant | 1 | 0 | The study focuses on the pharmacokinetics of ketoprofen, with salicylate (aspirin) serving only as a co-administered agent to assess drug-drug interactions, and no quantitative PK parameters for salicylate are reported. |
-| popPK | Winne_1987 | irrelevant | 0 | 0 | The study focuses on salicylic acid (not potassium salicylate) in an in-situ rat model and does not report standard population PK parameters like clearance or volume for the subject drug. |
-| PGx | Wu_2001 | not_relevant | 0 | 0 | The paper studies sodium salicylate (not potassium salicylate) and reports on CYP2E1 modulation and toxicity in cell lines, not a pharmacogenomic effect on PK/PD parameters. |
-| popPK | Wu_2026 | irrelevant | 0 | 0 | The study investigates the toxicological mechanisms of 2-ethylhexyl salicylate (a different chemical) in yeast, not the pharmacokinetics of potassium salicylate. |
-| popPK | Wójcicki_1981 | irrelevant | 2 | 2 | The study investigates sodium salicylate in rabbits, not potassium salicylate in humans, and the specific salt form differs from the target drug. |
-| PGx | Xie_2012 | not_relevant | 0 | 0 | The paper studies the metabolism of phospho-aspirin (MDC-22), not potassium salicylate, and does not report pharmacogenomic effects. |
-| popPK | Xie_2020 | irrelevant | 0 | 0 | The paper is a microbiology study on siderophore biosynthesis and anti-infection activity in C. elegans, not a pharmacokinetic study of potassium salicylate. |
+| popPK | Winne_1987 | irrelevant | 3 | 0 | The study focuses on salicylic acid, not potassium salicylate, and reports qualitative diffusion resistance percentages rather than quantitative PK parameters like CL, V, or Ka. |
+| PGx | Wu_2001 | not_relevant | 0 | 0 | The study describes salicylate increasing CYP2E1 protein levels, but does not report a pharmacogenomic effect (genotype-dependent change) on a PK or PD parameter of the drug. |
+| popPK | Wu_2026 | irrelevant | 0 | 0 | The paper studies 2-ethylhexyl salicylate in yeast via genomics and cytotoxicity, not the pharmacokinetics of the drug potassium salicylate. |
+| PGx | Xie_2012 | not_relevant | 0 | 0 | The paper studies the metabolism of phospho-aspirin (MDC-22), not potassium salicylate, and does not report pharmacogenomic effects (genotype/phenotype interactions) on PK/PD parameters. |
+| popPK | Xie_2020 | irrelevant | 0 | 0 | no_text gate: only 142 chars of text extracted (&lt; 400) |
 | PD | Xie_2020 | not_relevant | 0 | 0 | The paper focuses on the discovery of siderophores and their anti-infection activity in a C. elegans model, with no pharmacodynamic modeling or dose-response analysis for potassium salicylate. |
-| PGx | Xu_2024 | not_relevant | 0 | 0 | The paper analyzes plant gene families in Bletilla striata and does not involve human pharmacogenomics or the drug potassium salicylate. |
-| popPK | Xue_2018 | irrelevant | 2 | 0 | The study investigates salicylic acid (a metabolite of aspirin) rather than potassium salicylate, and no specific numeric PK parameter values are provided in the evidence. |
-| PGx | Yadu_2017 | not_relevant | 0 | 0 | The paper studies the effect of salicylic acid on plant stress tolerance in peas, not human pharmacogenomics or PK/PD parameters. |
+| PGx | Xu_2024 | not_relevant | 0 | 0 | The paper analyzes beta-glucosidase genes in the plant Bletilla striata and their role in metabolite biosynthesis, not pharmacogenomic effects on the pharmacokinetics or pharmacodynamics of potassium salicylate in humans. |
+| popPK | Xue_2018 | irrelevant | 1 | 0 | The study measures salicylic acid (aspirin metabolite) in rats, not potassium salicylate, and specific numeric PK parameter values are not provided in the evidence. |
+| PGx | Yadu_2017 | not_relevant | 0 | 0 | The paper is a plant physiology study on salinity tolerance in pea plants using salicylic acid, not a pharmacogenomic study of human pharmacokinetics or pharmacodynamics. |
 | popPK | Yang_2024 | irrelevant | 0 | 0 | The study is an in-vitro/in-silico mechanistic analysis of enzyme inhibition (IC50) and does not report pharmacokinetic parameters for potassium salicylate. |
-| popPK | Yang_2026 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of Di(2-ethylhexyl) Adipate (DEHA) and its metabolite, not potassium salicylate. |
+| popPK | Yang_2026 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of di(2-ethylhexyl) adipate and its metabolite in rats, not potassium salicylate. |
 | PD | Yang_2026 | not_relevant | 0 | 0 | The paper focuses on the pharmacokinetics (PBPK modeling) of DEHA and MEHA, not potassium salicylate, and does not report any pharmacodynamic or exposure-response relationships. |
-| popPK | Yao_2025 | irrelevant | 0 | 0 | The paper studies methyl salicylate (MeSA) as a biopesticide, not potassium salicylate, and reports toxicological/antifungal data rather than pharmacokinetic parameters. |
-| popPK | Yoon_2024 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of bepotastine, not potassium salicylate. |
+| popPK | Yao_2025 | irrelevant | 0 | 0 | The paper studies methyl salicylate (not potassium salicylate) as a biopesticide, reporting toxicity and antifungal data rather than pharmacokinetic parameters. |
+| popPK | Yoon_2024 | irrelevant | 0 | 0 | The paper is a pharmacokinetic study of bepotastine, not potassium salicylate. |
 | PD | Yoon_2024 | not_relevant | 0 | 0 | The paper focuses exclusively on population pharmacokinetic (popPK) and physiologically based pharmacokinetic (PBPK) modeling to determine optimal dosing regimens based on exposure metrics (Cmax, AUC), with no pharmacodynamic (PD) or exposure-response modeling reported. |
-| popPK | Yoshida_2007 | irrelevant | 2 | 2 | The study investigates sodium salicylate (SA-Na) in rats, not potassium salicylate, and while it reports PK parameters, the specific salt form differs from the target drug. |
-| popPK | Yoshida_2008 | irrelevant | 2 | 1 | The study uses salicylate as a model compound to investigate the effects of vasoactive agents on dermatopharmacokinetics, rather than reporting standard population PK parameters (CL, V) for potassium salicylate as the subject drug. |
-| PGx | Yu_2007 | not_relevant | 0 | 0 | The paper focuses on the structural biology and inhibition of the Lyp phosphatase (PTPN22) and does not report pharmacokinetic or pharmacodynamic parameters for potassium salicylate. |
-| popPK | Yu_2023 | irrelevant | 0 | 0 | The paper is a plant physiology study on salicylic acid elicitation in plant roots, not a pharmacokinetic study of potassium salicylate. |
+| popPK | Yoshida_2007 | relevant | 7 | 2 | The study reports pharmacokinetic parameters (compartmental models, absorption rates) for salicylate (the active ion of potassium salicylate) in rats, but specific numerical values for clearance, volume, or half-life are not explicitly present in the provided text. |
+| popPK | Yoshida_2008 | irrelevant | 1 | 3 | The study uses salicylate as a model compound for dermatopharmacokinetics in rats, not for systemic PK parameters of potassium salicylate. |
+| PGx | Yu_2007 | not_relevant | 0 | 0 | The paper studies the structure of a tyrosine phosphatase (Lyp) and a novel salicylic acid-based inhibitor for autoimmune diseases, not the pharmacogenomics of the drug potassium salicylate. |
+| popPK | Yu_2023 | irrelevant | 0 | 0 | This is an in-vitro plant physiology study investigating the effect of salicylic acid as an elicitor on metabolite production, not a pharmacokinetic study of the drug potassium salicylate. |
 | PD | Yu_2023 | not_relevant | 0 | 0 | The paper studies salicylic acid as a plant elicitor in cell culture, not as a drug in a pharmacological context, and the reported EC50 values refer to antioxidant activity assays, not drug pharmacodynamics. |
-| PGx | Zhang_2020 | not_relevant | 0 | 0 | The paper studies plant defense responses in pepper (Capsicum annuum) to spider mites and does not involve human pharmacogenomics or the drug potassium salicylate. |
-| PGx | Zhang_2021 | not_relevant | 0 | 0 | The paper is a review on pesticide metabolism in plants and does not discuss human pharmacogenomics or the pharmacokinetics of potassium salicylate. |
+| PGx | Zhang_2020 | not_relevant | 0 | 0 | The paper focuses on plant defense responses and metabolomics in pepper plants, unrelated to human pharmacogenomics or the pharmacokinetics of potassium salicylate. |
+| PGx | Zhang_2021 | not_relevant | 0 | 0 | The paper is a review on pesticide metabolism in plants and does not address pharmacogenomics or PK/PD of potassium salicylate in humans. |
 | popPK | Zhang_2022 | irrelevant | 0 | 0 | no_text gate: only 72 chars of text extracted (&lt; 400) |
-| PGx | Zhang_2022 | not_relevant | 0 | 0 | The paper focuses on methotrexate, not potassium salicylate. |
+| PGx | Zhang_2022 | not_relevant | 0 | 0 | The paper is a systematic review of pharmacokinetic models for Methotrexate, whereas the target drug is potassium salicylate. |
 | popPK | Zhang_2024 | irrelevant | 0 | 0 | no_text gate: only 139 chars of text extracted (&lt; 400) |
 | PD | Zhang_2024 | not_relevant | 0 | 0 | The paper focuses on the isolation and biological activity of compounds from Thermopsis lupinoides and does not mention potassium salicylate or report any pharmacodynamic parameters for it. |
-| popPK | Zhao_2025 | irrelevant | 0 | 0 | The paper describes a mass spectrometry database resource for drug exposure detection and does not report pharmacokinetic parameters for potassium salicylate. |
+| popPK | Zhao_2025 | irrelevant | 0 | 0 | The paper describes a mass spectrometry database resource and is not a pharmacokinetic study of potassium salicylate. |
 | PD | Zhao_2025 | not_relevant | 0 | 0 | The paper describes a metabolomics database for drug exposure detection and does not report any pharmacodynamic or exposure-response analysis for potassium salicylate. |
-| popPK | Zhao_2026 | irrelevant | 0 | 0 | The paper investigates a sialidase inhibitor for ulcerative colitis and does not mention potassium salicylate or report any pharmacokinetic parameters. |
+| popPK | Zhao_2026 | irrelevant | 0 | 0 | The paper investigates a sialidase inhibitor for ulcerative colitis and does not mention potassium salicylate or any pharmacokinetic parameters. |
 | PD | Zhao_2026 | not_relevant | 0 | 0 | The paper investigates a sialidase inhibitor for ulcerative colitis and does not mention potassium salicylate or report any pharmacodynamic or exposure-response parameters. |
-| PGx | Zheng_2025 | not_relevant | 0 | 0 | The paper studies plant immunity in rice and does not involve human pharmacogenomics or the drug potassium salicylate. |
-| popPK | Zhu_2018 | irrelevant | 0 | 0 | The paper is a medicinal chemistry study on the synthesis and fungicidal activity of phenazine-salicylic acid conjugates, containing no pharmacokinetic data for potassium salicylate. |
-| PGx | Zhu_2020 | not_relevant | 0 | 0 | The paper studies plant immunity to rice blast fungus, not human pharmacogenomics or the drug potassium salicylate. |
+| PGx | Zheng_2025 | not_relevant | 0 | 0 | The study investigates plant immune response pathways in rice, not human pharmacogenomics or the pharmacokinetics/pharmacodynamics of potassium salicylate. |
+| popPK | Zhu_2018 | irrelevant | 0 | 0 | The paper describes the synthesis and fungicidal activity of phenazine-salicylic acid conjugates, not the pharmacokinetics of potassium salicylate. |
+| PGx | Zhu_2020 | not_relevant | 0 | 0 | The paper reports on a rice plant gene (bsr-d1) and blast resistance, unrelated to the pharmacokinetics or pharmacodynamics of potassium salicylate in humans. |
 | popPK | Zou_2023 | irrelevant | 0 | 0 | The paper is a medicinal chemistry study on salicylic acid-modified flavonoid derivatives for anti-tumor activity, not a pharmacokinetic study of potassium salicylate. |
 | popPK | de_1988 | irrelevant | 0 | 0 | no_text gate: only 134 chars of text extracted (&lt; 400) |
 | PD | de_1988 | not_relevant | 0 | 0 | The paper investigates triflusal and acetylsalicylic acid, not potassium salicylate. |
-| PGx | van_2009 | not_relevant | 0 | 0 | The study investigates acetylsalicylic acid (ASA), not potassium salicylate. |
+| PGx | van_2009 | not_relevant | 2 | 10 | The study investigates acetylsalicylic acid (ASA), whereas the query specifically asks for potassium salicylate. |
 
 ---
-<sub>Generated by `docs.py` (scholarv2)</sub>
+<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-10-07 07:06 UTC</sub>

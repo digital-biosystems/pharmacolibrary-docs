@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N03A&quot;,&quot;href&quot;:&quot;atc/N03A.md&quot;},{&quot;label&quot;:&quot;lacosamide&quot;,&quot;href&quot;:&quot;drugs/drug_lacosamide/&quot;},{&quot;label&quot;:&quot;Jang_2025 \u00b7 p_value&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Lacosamide_Yu2026_reference&quot;,&quot;label&quot;:&quot;Yu_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_lacosamide/Lacosamide_Yu2026_reference.md&quot;,&quot;status&quot;:&quot;accepted (caveats)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Lacosamide_Li2025_boostrap&quot;,&quot;label&quot;:&quot;Li_2025_boostrap&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_lacosamide/Lacosamide_Li2025_boostrap.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Lacosamide_Li2025_final_models&quot;,&quot;label&quot;:&quot;Li_2025_final_models&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_lacosamide/Lacosamide_Li2025_final_models.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Lacosamide_Li2025_boostrap&quot;,&quot;label&quot;:&quot;Li_2025_boostrap&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_lacosamide/Lacosamide_Li2025_boostrap.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Lacosamide_Li2025_final_models&quot;,&quot;label&quot;:&quot;Li_2025_final_models&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_lacosamide/Lacosamide_Li2025_final_models.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Lacosamide_Wang2024_reference&quot;,&quot;label&quot;:&quot;Wang_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_lacosamide/Lacosamide_Wang2024_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Lacosamide_Wu2026_reference&quot;,&quot;label&quot;:&quot;Wu_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_lacosamide/Lacosamide_Wu2026_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Lacosamide_Yu2026_reference&quot;,&quot;label&quot;:&quot;Yu_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_lacosamide/Lacosamide_Yu2026_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # lacosamide — `Lacosamide_Jang2025_p_value`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span>
+> ## <span class="pk-badge pk-badge--neutral">None</span> <span class="pk-badge pk-badge--stale">stale</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -23,58 +23,26 @@ Nothing in the extracted data describes the drug's disposition, so there is no m
 
 <sub>reviewed by rule template (no LLM)</sub>
 
+> ⚠️ **STALE** — review status `rejected` (reviewed 2026-09-28 14:38:27.005694+00:00) predates the upstream re-run (2026-10-07 06:56:40.972298+00:00). Current validate status: `not captured`.
+
 ## Citation
 Jang Y et al., Saliva-based lacosamide monitoring pave…, Scientific reports (2025)
   ·  DOI: [10.1038/s41598-025-04044-x](https://doi.org/10.1038/s41598-025-04044-x)
 
 ## Model component
-<dbs-pgx drug="lacosamide" model-id="Lacosamide_Jang2025_p_value" status="rejected" stale="false" population="epilepsy patients" measured-compound="lacosamide" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<dbs-pgx drug="lacosamide" model-id="Lacosamide_Jang2025_p_value" status="" stale="true" population="epilepsy patients" measured-compound="" parameterization="" topology=""></dbs-pgx>
 
-**Model structure:** 1-compartment; no model was built for this record.  
+**Model structure:** —; no model was built for this record.  
 **Parameters:** 0 extracted.
 
-**Parameterization:** mechanistic.
+**Parameterization:** not captured.
 
 ## Parameters
-> ⚠️ This record is not accepted (current status `rejected`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
+> ⚠️ This record is not accepted (current status `not captured`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
 
 _No resolved parameters._
 
 ## Departures & gaps
-
-**Interpretation flags:**
-- dropped value-less row: 'Sex, male'
-- dropped value-less row: 'Height (cm)' (captured trailing unit 'cm' for child rows)
-- dropped value-less row: 'Body weights (kg)' (captured trailing unit 'kg' for child rows)
-- dropped value-less row: 'BSA (m2)' (captured trailing unit 'm2' for child rows)
-- dropped value-less row: 'Focal'
-- dropped value-less row: 'Adverse events (n)' (captured trailing unit 'n' for child rows)
-- dropped value-less row: 'BUN (mg/dL)' (captured trailing unit 'mg/dL' for child rows)
-- dropped value-less row: 'Creatinine (mg/dL)' (captured trailing unit 'mg/dL' for child rows)
-- dropped value-less row: 'GFR (mL/min/1.73 m2)' (captured trailing unit 'mL/min/1.73 m2' for child rows)
-- dropped value-less row: 'AST (U/L)' (captured trailing unit 'U/L' for child rows)
-- dropped value-less row: 'ALT (U/L)' (captured trailing unit 'U/L' for child rows)
-- dropped value-less row: 'EEG abnormality (n = 121)' (captured trailing unit 'n = 121' for child rows)
-- dropped value-less row: 'Frontal (n)' (captured trailing unit 'n' for child rows)
-- dropped value-less row: 'Temporal (n)' (captured trailing unit 'n' for child rows)
-- dropped value-less row: 'Parietal (n)' (captured trailing unit 'n' for child rows)
-- dropped value-less row: 'Occipital (n)' (captured trailing unit 'n' for child rows)
-- dropped value-less row: 'Patients with saliva samples in outpatient clinic (n)' (captured trailing unit 'n' for child rows)
-- dropped value-less row: 'Time duration from the last lacosamide (hours)' (captured trailing unit 'hours' for child rows)
-- dropped value-less row: 'Patients with saliva samples in peak level of lacosamide (Two hours after lacosamide intake)'
-- dropped value-less row: 'Patients with saliva samples in trough level of lacosamide (Twelve hours after lacosamide intake)'
-- dropped value-less row: 'Saliva sample in peak level of lacosamide (mg/L)' (captured trailing unit 'mg/L' for child rows)
-- dropped value-less row: 'Saliva sample in trough level of lacosamide (mg/L)' (captured trailing unit 'mg/L' for child rows)
-- dropped value-less row: 'Cmax in saliva (mg/L)' (captured trailing unit 'mg/L' for child rows)
-- dropped value-less row: 'Trough in saliva (mg/L)' (captured trailing unit 'mg/L' for child rows)
-- dropped value-less row: 'AUC in saliva (mg h/L)' (captured trailing unit 'mg h/L' for child rows)
-- dropped value-less row: 'Cmax in blood (mg/L)' (captured trailing unit 'mg/L' for child rows)
-- dropped value-less row: 'Trough in blood (mg/L)' (captured trailing unit 'mg/L' for child rows)
-- dropped value-less row: 'AUC in blood (mg h/L)' (captured trailing unit 'mg h/L' for child rows)
-- apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=lacosamide
-- population split: 'p-value' subgroup of Jang_2025 (paper reports 4 populations: high seizure burden group (n = 28), low seizure burden group (n = 95), p-value, total (n = 123))
-- skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
-- skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
 
 **Extraction notes:**
 - unparsed cell Tab1:row2:col4 = '0.029*'
@@ -121,21 +89,11 @@ _No resolved parameters._
 - unparsed cell Tab1:row37:col3 = '3.83 [3.27–6.33]'
 - unparsed cell Tab1:row39:col4 = '0.026*'
 - unparsed cell Tab1:row42:col4 = '0.011*'
+- LLM region Jang_2025:discussion_prose: no JSON records returned
 
 ## Validation
 
-**Scholar closed-form checks:**
-
-| check | status | expected | obtained | ratio | tol | source |
-|---|---|---|---|---|---|---|
-| C0_has_structural_params | fail | not captured | 0 | not captured | not captured | not captured |
-| C0b_disposition_core | fail | not captured | not captured | not captured | not captured | not captured |
-| C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
-
-<details class="legend">
-<summary>Check legend — what each column means</summary>
-<table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>check</code></td><td>the check id. C0_has_structural_params = at least one numeric structural parameter; C0b_disposition_core = a volume OR a clearance/elimination term (neither means an exposure/outcome paper, not popPK — rejected); C0c_disposition_complete = BOTH a volume AND a clearance/elimination term, which is what the engineer needs to build (one without the other routes to review, never to the engineer); C1_half_life(_beta) = reported half-life against V and CL; C2_reference = covariate scenarios are sign-plausible; C3_cl_dose_auc = CL against dose/AUC; C4_auc_closed_form = AUC recomputed in closed form; C5_dimension_&lt;Qcode&gt; = the parameter's units carry the dimension its Q-code requires.</td></tr><tr><td><code>status</code></td><td>pass, fail, or skipped. A skipped check had nothing to compare — the paper did not report the input it needs — and is not evidence against the record. The scholar table lists only pass and fail; the reviewer table also shows skipped, with the reason in note.</td></tr><tr><td><code>expected</code></td><td>the value the check required, from the paper or from the ontology.</td></tr><tr><td><code>obtained</code></td><td>what the record actually yields.</td></tr><tr><td><code>ratio</code></td><td>obtained / expected, where the check is a numeric comparison.</td></tr><tr><td><code>tol</code></td><td>the tolerance the ratio had to fall within to pass.</td></tr><tr><td><code>source</code></td><td>the artifact the expected value was taken from.</td></tr><tr><td><code>scenario</code></td><td>reviewer table only — the covariate scenario the check was run under.</td></tr><tr><td><code>note</code></td><td>why a check was skipped, or how it was judged.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>the field is absent from the KB artifact — nothing was recorded. This is NOT the same as zero or empty: the value is unknown, not measured to be nothing.</td></tr><tr><td><code>—</code></td><td>deliberately not shown: the column does not apply to this row.</td></tr><tr><td><code>not verified</code></td><td>the record is not in an accepted state (see the badge and the note above the table); the numbers are shown as extracted, not endorsed.</td></tr></tbody></table>
-</details>
+_No comparable checks._
 
 ## Raw artifacts
 
@@ -144,9 +102,19 @@ _No resolved parameters._
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
-## Models
+## Downloadable models
 
-<p>No downloads: this record is <b>rejected</b>, so it is not published as a model. Any archives generated for it before the verdict have been removed — a download outlives the page that explains it.</p>
+<div class="pk-models-grid"><div class="pk-models-table">
+<table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
+</tbody></table>
+<p>No bundles have been generated for this record yet. When the engineer emits them they appear here automatically — this page reports what is on disk and generates nothing itself.</p>
+</div></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
@@ -155,4 +123,4 @@ _No web simulator for this record: its structure has no shared WebAssembly templ
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-08-30 10:55 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 06:56 UTC</sub>

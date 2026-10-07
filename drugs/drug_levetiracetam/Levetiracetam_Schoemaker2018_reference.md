@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N03A&quot;,&quot;href&quot;:&quot;atc/N03A.md&quot;},{&quot;label&quot;:&quot;levetiracetam&quot;,&quot;href&quot;:&quot;drugs/drug_levetiracetam/&quot;},{&quot;label&quot;:&quot;Schoemaker_2018 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Levetiracetam_Schoemaker2018_reference&quot;,&quot;label&quot;:&quot;Schoemaker_2018_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_levetiracetam/Levetiracetam_Schoemaker2018_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Levetiracetam_Onos2022_reference&quot;,&quot;label&quot;:&quot;Onos_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_levetiracetam/Levetiracetam_Onos2022_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Levetiracetam_Li2023_base&quot;,&quot;label&quot;:&quot;Li_2023_base&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_levetiracetam/Levetiracetam_Li2023_base.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Levetiracetam_Schoemaker2018_reference&quot;,&quot;label&quot;:&quot;Schoemaker_2018_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_levetiracetam/Levetiracetam_Schoemaker2018_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Levetiracetam_Sharpe2024_reference&quot;,&quot;label&quot;:&quot;Sharpe_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_levetiracetam/Levetiracetam_Sharpe2024_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # levetiracetam — `Levetiracetam_Schoemaker2018_reference`
 
-> ## <span class="pk-badge pk-badge--green">reviewed — candidate</span>
+> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -21,12 +21,14 @@
 
 <sub>reviewed by rule template (no LLM)</sub>
 
+> ⚠️ **STALE** — review status `curated_candidate` (reviewed 2026-09-28 14:38:27.629100+00:00) predates the upstream re-run (2026-10-07 07:04:44.222909+00:00). Current validate status: `extracted`.
+
 ## Citation
 Schoemaker R et al., Extrapolation of a Brivaracetam Exposur…, Clinical pharmacokinetics (2018)
   ·  DOI: [10.1007/s40262-017-0597-2](https://doi.org/10.1007/s40262-017-0597-2)
 
 ## Model component
-<dbs-pgx drug="levetiracetam" model-id="Levetiracetam_Schoemaker2018_reference" status="curated_candidate" stale="false" population="adults and children with focal seizures" measured-compound="levetiracetam" parameterization="apparent_wrt_Fm" topology="1C"></dbs-pgx>
+<dbs-pgx drug="levetiracetam" model-id="Levetiracetam_Schoemaker2018_reference" status="extracted" stale="true" population="adults and children with focal seizures" measured-compound="levetiracetam" parameterization="apparent_wrt_Fm" topology="1C"></dbs-pgx>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 3 extracted.
@@ -36,8 +38,8 @@ Schoemaker R et al., Extrapolation of a Brivaracetam Exposur…, Clinical pharma
 ## Parameters
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| CL/F (L/h/kg) a | `Q27` · CL/F | 0.36 | L/h/kg | 7e-06 | L/h | not captured | review_gapfill (0.7) | Onos_2022:review | — | not captured |
-| Vd/F (L/kg) a | `Q76` · V/F | 1.33 | L/kg | 0.0931 | L | not captured | review_gapfill (0.7) | Onos_2022:review | — | not captured |
+| CL/F, L/h | `Q27` · CL/F | 3.38 | L/h | 9.388888888888888e-07 | L/h | not captured | review_gapfill (0.7) | Schoemaker_2018:review | — | not captured |
+| V/F, L | `Q76` · V/F | 48.7 | L | 0.04870000000000001 | L | not captured | review_gapfill (0.7) | Schoemaker_2018:review | — | not captured |
 | K a, 1/h | `Q49` · kabs | 2.98 | 1/h | 0.0008277777777777778 | 1/h | not captured | review_gapfill (0.7) | Schoemaker_2018:review | — | not captured |
 
 <details class="legend">
@@ -102,8 +104,8 @@ Schoemaker R et al., Extrapolation of a Brivaracetam Exposur…, Clinical pharma
 - apparent-ness: parameterization=apparent_wrt_Fm (metabolite model)
 - theta_crosscheck: table present but its labels did not align to bound THETAs (skipped)
 - status held at route_to_review — not promoted
-- gap-filled Q27 (CL/F) from Onos_2022's review values (primary lacked it)
-- gap-filled Q76 (V/F) from Onos_2022's review values (primary lacked it)
+- gap-filled Q27 (CL/F) from Schoemaker_2018's review values (primary lacked it)
+- gap-filled Q76 (V/F) from Schoemaker_2018's review values (primary lacked it)
 - skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
 - skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
 - gap-filled Q49 (kabs) from Schoemaker_2018's review values (primary lacked it)
@@ -114,15 +116,16 @@ Schoemaker R et al., Extrapolation of a Brivaracetam Exposur…, Clinical pharma
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 1 | not captured | not captured | not captured |
-| C0c_disposition_complete | fail | not captured | not captured | not captured | not captured | not captured |
-| C5_dimension_Q27 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Onos_2022:review'] |
+| C0_has_structural_params | pass | not captured | 3 | not captured | not captured | not captured |
+| C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
+| C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
+| C5_dimension_Q27 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Schoemaker_2018:review'] |
 | C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['Schoemaker_2018:review'] |
-| C5_dimension_Q76 | pass | [length] ** 3 | not captured | not captured | not captured | ['Onos_2022:review'] |
+| C5_dimension_Q76 | pass | [length] ** 3 | not captured | not captured | not captured | ['Schoemaker_2018:review'] |
 | C7_apparent_coherence | pass | not captured | not captured | not captured | not captured | not captured |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
-| C9_phys_window_Q27 | pass | clearance within physiological range | 25.2 L/h | not captured | not captured | ['Onos_2022:review'] |
-| C9_phys_window_Q76 | pass | volume within physiological range | 93.1 L | not captured | not captured | ['Onos_2022:review'] |
+| C9_phys_window_Q27 | pass | clearance within physiological range | 3.38 L/h | not captured | not captured | ['Schoemaker_2018:review'] |
+| C9_phys_window_Q76 | pass | volume within physiological range | 48.7 L | not captured | not captured | ['Schoemaker_2018:review'] |
 
 **Reviewer per-scenario checks:**
 
@@ -155,8 +158,8 @@ Schoemaker R et al., Extrapolation of a Brivaracetam Exposur…, Clinical pharma
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_levetiracetam/Levetiracetam_Schoemaker2018_reference/Levetiracetam_Schoemaker2018_reference_modelica.zip" download>Levetiracetam_Schoemaker2018_reference_modelica.zip</a> <span class="pk-size">(4.0 kB)</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_levetiracetam/Levetiracetam_Schoemaker2018_reference/Levetiracetam_Schoemaker2018_reference_fmi.zip" download>Levetiracetam_Schoemaker2018_reference_fmi.zip</a> <span class="pk-size">(4.2 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_levetiracetam/Levetiracetam_Schoemaker2018_reference/Levetiracetam_Schoemaker2018_reference_modelica.zip" download>Levetiracetam_Schoemaker2018_reference_modelica.zip</a> <span class="pk-size">(4.4 kB)</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_levetiracetam/Levetiracetam_Schoemaker2018_reference/Levetiracetam_Schoemaker2018_reference_fmi.zip" download>Levetiracetam_Schoemaker2018_reference_fmi.zip</a> <span class="pk-size">(4.3 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_levetiracetam/Levetiracetam_Schoemaker2018_reference/Levetiracetam_Schoemaker2018_reference_matlab.zip" download>Levetiracetam_Schoemaker2018_reference_matlab.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_levetiracetam/Levetiracetam_Schoemaker2018_reference/Levetiracetam_Schoemaker2018_reference_matlab_simbio.zip" download>Levetiracetam_Schoemaker2018_reference_matlab_simbio.zip</a> <span class="pk-size">(2.8 kB)</span></td></tr>
 <tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_levetiracetam/Levetiracetam_Schoemaker2018_reference/Levetiracetam_Schoemaker2018_reference_sbml.zip" download>Levetiracetam_Schoemaker2018_reference_sbml.zip</a> <span class="pk-size">(2.6 kB)</span></td></tr>
@@ -177,4 +180,4 @@ Schoemaker R et al., Extrapolation of a Brivaracetam Exposur…, Clinical pharma
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-08-30 11:20 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 07:04 UTC</sub>

@@ -18,7 +18,7 @@ Quinapril is an ACE inhibitor used to treat high blood pressure and congestive h
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-30 23:42 | 2:14 | 0/0/0 | 1/1/0 | 0/0/2 | 63,171/10,152 | ollama / glm-5.3-flash | 7 | 8/6 | 0/7 | 0 |
+| 2026-10-07 07:15 | 2:13 | 0/0/0 | 0/0/1 | 0/0/2 | 53,318/2,408 | ollama / qwen3.8:27b-mtp-q8_0 | 7 | 8/6 | 0/7 | 0 |
 
 ## popPK records
 
@@ -28,21 +28,14 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> | [Breslin_1996_A_I_pressor_response](drugs/drug_quinapril/pd_Breslin_1996_A_I_pressor_response.md) | angiotensin I pressor response ← quinaprilat · inhibition effect | — | Breslin E et al., A pharmacodynamic and pharmacokinetic c…, Journal of clinical pharmac… (1996) | [10.1002/j.1552-4604.1996.tb05028.x](https://doi.org/10.1002/j.1552-4604.1996.tb05028.x) |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Breslin_1996_plasma_ACE_activity](drugs/drug_quinapril/pd_Breslin_1996_plasma_ACE_activity.md) | plasma ACE activity ← quinaprilat · inhibition effect | — | Breslin E et al., A pharmacodynamic and pharmacokinetic c…, Journal of clinical pharmac… (1996) | [10.1002/j.1552-4604.1996.tb05028.x](https://doi.org/10.1002/j.1552-4604.1996.tb05028.x) |
-| <span class="pk-badge pk-badge--red">rejected</span> | [Begg_1990_ACE](drugs/drug_quinapril/pd_Begg_1990_ACE.md) | ACE activity ← quinaprilat · direct Emax (saturable) effect | — | Begg EJ et al., The pharmacokinetics and pharmacodynami…, British journal of clinical… (1990) | [10.1111/j.1365-2125.1990.tb03767.x](https://doi.org/10.1111/j.1365-2125.1990.tb03767.x) |
-| <span class="pk-badge pk-badge--red">rejected</span> | [Begg_1990_ANP](drugs/drug_quinapril/pd_Begg_1990_ANP.md) | atrial natriuretic peptide ← quinaprilat · direct Emax (saturable) effect | — | Begg EJ et al., The pharmacokinetics and pharmacodynami…, British journal of clinical… (1990) | [10.1111/j.1365-2125.1990.tb03767.x](https://doi.org/10.1111/j.1365-2125.1990.tb03767.x) |
-| <span class="pk-badge pk-badge--red">rejected</span> | [Begg_1990_BP](drugs/drug_quinapril/pd_Begg_1990_BP.md) | blood pressure ← quinaprilat · direct Emax (saturable) effect | — | Begg EJ et al., The pharmacokinetics and pharmacodynami…, British journal of clinical… (1990) | [10.1111/j.1365-2125.1990.tb03767.x](https://doi.org/10.1111/j.1365-2125.1990.tb03767.x) |
-| <span class="pk-badge pk-badge--red">rejected</span> | [Begg_1990_GFR](drugs/drug_quinapril/pd_Begg_1990_GFR.md) | glomerular filtration rate (Tc99mDTPA clearance) ← quinaprilat · direct Emax (saturable) effect | — | Begg EJ et al., The pharmacokinetics and pharmacodynami…, British journal of clinical… (1990) | [10.1111/j.1365-2125.1990.tb03767.x](https://doi.org/10.1111/j.1365-2125.1990.tb03767.x) |
-| <span class="pk-badge pk-badge--red">rejected</span> | [Begg_1990_PRA](drugs/drug_quinapril/pd_Begg_1990_PRA.md) | plasma renin activity ← quinaprilat · direct Emax (saturable) effect | — | Begg EJ et al., The pharmacokinetics and pharmacodynami…, British journal of clinical… (1990) | [10.1111/j.1365-2125.1990.tb03767.x](https://doi.org/10.1111/j.1365-2125.1990.tb03767.x) |
-| <span class="pk-badge pk-badge--red">rejected</span> | [Begg_1990_unknown](drugs/drug_quinapril/pd_Begg_1990_unknown.md) | aldosterone ← quinaprilat · direct Emax (saturable) effect | — | Begg EJ et al., The pharmacokinetics and pharmacodynami…, British journal of clinical… (1990) | [10.1111/j.1365-2125.1990.tb03767.x](https://doi.org/10.1111/j.1365-2125.1990.tb03767.x) |
+| <span class="pk-badge pk-badge--orange">needs review</span> | [Begg_1990_ACE_inhibition](drugs/drug_quinapril/pd_Begg_1990_ACE_inhibition.md) | ACE inhibition ← quinaprilat · direct sigmoid Emax (Hill) effect | — | Begg EJ et al., The pharmacokinetics and pharmacodynami…, British journal of clinical… (1990) | [10.1111/j.1365-2125.1990.tb03767.x](https://doi.org/10.1111/j.1365-2125.1990.tb03767.x) |
 
 ## Pharmacogenomics (PGx)
 
 | status | gene | affects | mechanism | detail | citation | doi |
 |---|---|---|---|---|---|---|
 | <span class="pk-badge pk-badge--neutral" title="the paper links the gene to the drug but states no effect size on a model parameter, so it changes no model.">qualitative</span> | **ACE** | `Q320` · Emax | target | [Pérez-Castrillón_2003](drugs/drug_quinapril/pgx_P_rez_Castrill_n_2003_ACE_Q320.md) | Pérez-Castrillón JL et al., Effect of quinapril, quinapril-hydrochl…, American journal of hyperte… (2003) | [10.1016/s0895-7061(03)00845-8](https://doi.org/10.1016/s0895-7061(03)00845-8) |
-| <span class="pk-badge pk-badge--neutral" title="the paper links the gene to the drug but states no effect size on a model parameter, so it changes no model.">qualitative</span> | **CES1** | `Q370` · CLfm | formation | [Tarkiainen_2015](drugs/drug_quinapril/pgx_Tarkiainen_2015_CES1_Q370.md) | Tarkiainen EK et al., Effect of carboxylesterase 1 c.428G &gt; A…, British journal of clinical… (2015) | [10.1111/bcp.12667](https://doi.org/10.1111/bcp.12667) |
+| <span class="pk-badge pk-badge--neutral" title="the paper links the gene to the drug but states no effect size on a model parameter, so it changes no model.">qualitative</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.25). The first reading is what the record holds.">cross-check: partial</span> | **CES1** | `Q27` · CL/F | formation | [Tarkiainen_2015](drugs/drug_quinapril/pgx_Tarkiainen_2015_CES1_Q27.md) | Tarkiainen EK et al., Effect of carboxylesterase 1 c.428G &gt; A…, British journal of clinical… (2015) | [10.1111/bcp.12667](https://doi.org/10.1111/bcp.12667) |
 
 <details class="pk-legend"><summary>What the PGx badges mean — evidence, and whether a model runs</summary><table><tbody><tr><td><span class="pk-badge pk-badge--green">quantitative</span></td><td>the paper gives the effect of each phenotype (or genotype) on a named model parameter — a θ per category.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">qualitative</span></td><td>the paper links the gene to the drug but states no effect size on a model parameter, so it changes no model.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">guideline estimate</span></td><td>the effect comes from a CPIC / DPWG dosing guideline, not from this paper's numbers.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">safety allele</span></td><td>a risk allele for an adverse reaction (an HLA type, G6PD deficiency …): it changes no PK/PD parameter.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>the extraction is incomplete or inconsistent.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted.</td></tr><tr><td><span class="pk-badge pk-badge--green">▶ simulatable</span></td><td>the paper's popPK model runs per phenotype in the browser (Simulation tab); its PGx Modelica model is under Models.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">model only</span></td><td>a PGx Modelica model exists but has no in-browser simulator.</td></tr></tbody></table></details>
 
@@ -88,7 +81,7 @@ _4 paper(s) judged relevant from the abstract, with no full text on disk — pay
 | `Müns_1993.pdf` | Müns G et al., Regulation of angiotensin I-converting…, Journal of cellular biochem… (1993) | pd | 4 | [10.1002/jcb.240530413](https://doi.org/10.1002/jcb.240530413) | [8300752](https://www.ncbi.nlm.nih.gov/pubmed/8300752) | metadata signals extractable PD data (IC50) |
 | `Reid_1991.pdf` | Reid JL et al., The contribution of ambulatory blood pr…, Journal of hypertension. Su… (1991) | pd | 4 | not captured | [1795202](https://www.ncbi.nlm.nih.gov/pubmed/1795202) | metadata signals extractable PD data (concentration-effect) |
 
-<sub>queue written 2026-09-30T23:42:57.281471+00:00</sub>
+<sub>queue written 2026-10-07T07:14:17.606915+00:00</sub>
 
 ## Screened and excluded
 
@@ -101,20 +94,20 @@ _4 paper(s) judged relevant from the abstract, with no full text on disk — pay
 | PD | Begg_1989 | not_relevant | 2 | 0 | Narrative review of ACE inhibitor PK/PD in renal impairment; only qualitative statements about prolonged ACE inhibition, no numeric PD parameters or effect-concentration data. |
 | popPK | Begg_1990 | relevant | 7 | 3 | PK study of quinapril/quinaprilat in renal impairment, but the evidence gives only summary statements (clearance–CLCr relationships, half-life trends) without actual numeric parameter values, which are not provided. |
 | popPK | Breslin_1996 | relevant | 6 | 3 | PK study of quinapril/quinaprilat in humans, but evidence gives only summary values (bioavailability ~50%, AUC comparisons) without CL/V/t½ or model parameters, which may be in figures/tables not provided. |
-| popPK | Cabré_2026 | irrelevant | 0 | 0 | Narrative review of cardiovascular pharmacotherapy with no quinapril PK parameters or numeric values. |
+| popPK | Cabré_2026 | irrelevant | 0 | 0 | The paper is a narrative review of cardiovascular pharmacotherapy and does not report quantitative pharmacokinetic parameters for quinapril. |
 | PD | Cabré_2026 | not_relevant | 1 | 0 | Narrative review of cardiovascular pharmacotherapy with no quinapril-specific PD or exposure-response data or numeric parameters. |
 | popPK | Canter_1994 | irrelevant | 0 | 0 | This is a clinical efficacy/dose-response trial with no pharmacokinetic parameters for quinapril reported. |
 | popPK | Chu_2007 | irrelevant | 0 | 0 | This is an in-vitro transporter study of sitagliptin; quinapril appears only as an OAT3 inhibitor (IC50), with no PK disposition parameters for quinapril. |
 | PD | Chu_2007 | not_relevant | 0 | 0 | In vitro transporter study; quinapril appears only as an OAT3 inhibitor IC50, no in vivo PD/exposure-response relationship. |
 | popPK | Elliott_1992 | relevant | 5 | 4 | Original PK study of quinapril in humans, but only a terminal half-life (26±7 h) is reported; no CL, V, or model parameters, and AUC/Cmax values are not given numerically. |
 | PD | Elliott_1992 | not_relevant | 0 | 0 | not captured |
-| popPK | Endlich_1995 | irrelevant | 0 | 0 | Quinapril is only used as a diagnostic ACE-inhibitor co-intervention; no PK parameters for quinapril are reported. |
+| popPK | Endlich_1995 | irrelevant | 0 | 0 | The study investigates the vascular effects of PTH and PTHRP in rat kidneys, using quinapril only as an ACE inhibitor to modulate the experimental conditions, not as the subject of pharmacokinetic analysis. |
 | PD | Endlich_1995 | not_relevant | 1 | 1 | Quinapril is used only as a fixed-dose ACE-inhibition intervention; the concentration-response relationships (EC50, Emax) reported are for PTH/PTHRP, not for quinapril, so no quinapril exposure-response PD parameters are extractable. |
 | popPK | Fernandez_1992 | irrelevant | 2 | 0 | This is a pharmacodynamic (orthostatic blood pressure) study; quinapril concentrations were sampled but no numeric PK parameters (CL, V, ka, half-life, model) appear in the evidence. |
 | PD | Fernandez_1992 | not_relevant | 3 | 2 | Reports qualitative orthostatic BP/HR responses to quinapril doses with plasma concentrations sampled, but no numeric PD parameters (Emax, EC50, slope) or effect-vs-concentration relationship are stated or derivable. |
-| popPK | Fernández-Llaneza_2025 | irrelevant | 0 | 0 | This is a drug-safety/AKI knowledge-integration study; quinapril is merely listed among nephrotoxicity-potential drugs, with no PK parameters reported. |
+| popPK | Fernández-Llaneza_2025 | irrelevant | 0 | 0 | The paper is a review of drug-induced acute kidney injury potential and does not report pharmacokinetic parameters for quinapril. |
 | PD | Fernández-Llaneza_2025 | not_relevant | 0 | 0 | This is a knowledge-aggregation/safety-signal study on drug-induced AKI (RORs, ADE frequencies); no quinapril concentration-effect or dose-response PD data or parameters are reported. |
-| popPK | Fiscon_2021 | irrelevant | 0 | 0 | This is a network-based drug repurposing study for COVID-19 with no pharmacokinetic parameters for quinapril (quinapril is not even mentioned). |
+| popPK | Fiscon_2021 | irrelevant | 0 | 0 | The paper is an in-silico drug repurposing study for COVID-19 and does not report any pharmacokinetic parameters for quinapril. |
 | PD | Fiscon_2021 | not_relevant | 0 | 0 | Network-based computational drug repurposing study; no quinapril exposure-, dose-, or concentration-effect data or PD parameters are reported. |
 | popPK | Frank_1990 | irrelevant | 2 | 0 | This is a clinical overview of efficacy/safety with no quantitative PK parameters for quinapril reported. |
 | PD | Frank_1990 | not_relevant | 1 | 0 | Narrative review summarizing trial counts and safety; no numeric PD or dose-response parameters reported. |
@@ -122,9 +115,9 @@ _4 paper(s) judged relevant from the abstract, with no full text on disk — pay
 | PD | Frohlich_1990 | not_relevant | 2 | 0 | Qualitative comparison of ACE inhibitor effects on cardiovascular mass/function in rats; no concentration- or dose-response data or numeric PD parameters reported. |
 | popPK | Frohlich_1991 | irrelevant | 0 | 0 | Pharmacodynamic/hemodynamic study in rats with no PK parameters or numeric disposition values for quinapril. |
 | PD | Frohlich_1991 | not_relevant | 2 | 1 | Animal dose-comparison study of ACE inhibitors reporting qualitative hemodynamic/structural effects with no concentration-effect data or numeric PD parameters. |
-| popPK | González-Correa_2025 | irrelevant | 0 | 0 | The study concerns hydrochlorothiazide and a probiotic in rats; quinapril is not the subject drug and no PK parameters appear. |
+| popPK | González-Correa_2025 | irrelevant | 0 | 0 | The study focuses on the probiotic Limosilactobacillus fermentum and hydrochlorothiazide in rats, with no mention of quinapril or its pharmacokinetics. |
 | PD | González-Correa_2025 | not_relevant | 2 | 0 | Animal study of probiotic potentiation of HCTZ antihypertensive effects; no concentration-effect or dose-response PD parameters (Emax, EC50, slope) reported or derivable. |
-| PGx | Hallberg_2017 | not_relevant | 2 | 3 | The paper reports genetic associations with ACE inhibitor-induced cough (an adverse event), not with any pharmacokinetic or pharmacodynamic parameter of quinapril. |
+| PGx | Hallberg_2017 | not_relevant | 0 | 0 | The paper reports genetic associations with ACE inhibitor-induced cough (an adverse event), not pharmacokinetic or pharmacodynamic parameters of quinapril. |
 | popPK | Ikemura_2019 | irrelevant | 0 | 0 | In-vitro CYP2J2 inhibition study; quinapril is only one of many tested inhibitors (IC50/Ki for enzyme inhibition), with no PK disposition parameters. |
 | PD | Ikemura_2019 | not_relevant | 1 | 2 | In vitro recombinant CYP2J2 enzyme inhibition study (IC50/Ki for quinapril), not an in vivo exposure-response or dose-effect PD relationship. |
 | popPK | Jallapally_2015 | irrelevant | 0 | 0 | This is a medicinal chemistry/ACE inhibition potency study; quinapril is only a comparator and no PK parameters are reported. |
@@ -136,10 +129,10 @@ _4 paper(s) judged relevant from the abstract, with no full text on disk — pay
 | popPK | Kieback_2009 | irrelevant | 3 | 1 | This is a narrative review of quinaprilat (the active metabolite) with no original quantitative PK parameters (CL, V, ka) reported in the evidence. |
 | PD | Kieback_2009 | not_relevant | 2 | 1 | A narrative review summarizing quinaprilat PK/PD qualitatively; no numeric PD parameters (Emax, EC50, effect curves) are reported or derivable from the abstract. |
 | popPK | Kim_2000 | irrelevant | 1 | 0 | Quinapril is used only as a co-administered ACE inhibitor in a bradykinin pharmacodynamic study; no PK parameters for quinapril are reported. |
-| popPK | Kim_2022 | irrelevant | 0 | 0 | This is a zebrafish neuroprotection screening study with no quinapril PK parameters reported. |
+| popPK | Kim_2022 | irrelevant | 0 | 0 | The paper is a neuroprotective compound screen in zebrafish and does not involve quinapril or its pharmacokinetics. |
 | PD | Kim_2022 | not_relevant | 0 | 0 | This is an in vivo zebrafish screening study for neuroprotective compounds; quinapril is not mentioned and no drug exposure-response or concentration-effect PD relationship with numeric parameters is reported. |
 | popPK | Kimura_1998 | irrelevant | 0 | 0 | This is a vascular pharmacodynamics study of adrenoceptor sensitivity with no PK parameters (CL, V, ka, half-life, or PK model) for quinapril reported. |
-| popPK | Lee_2026 | irrelevant | 0 | 0 | This is a survey study of natural health product-drug interactions in New Zealand with no pharmacokinetic parameters for quinapril or any drug. |
+| popPK | Lee_2026 | irrelevant | 0 | 0 | The paper is a survey on natural health product use and coding feasibility, containing no pharmacokinetic data for quinapril. |
 | PD | Lee_2026 | not_relevant | 0 | 0 | Survey/coding feasibility study of NHP use; no quinapril concentration- or dose-effect data or PD parameters. |
 | popPK | Lin_1999 | irrelevant | 1 | 1 | In-vitro transporter inhibition study; quinapril is only a test inhibitor, no PK disposition parameters reported. |
 | PD | Lin_1999 | not_relevant | 3 | 4 | In vitro transporter inhibition IC50/Ki values for quinapril/quinaprilat are reported, but this is a biochemical BBMV uptake study, not an in vivo exposure- or dose-response PD relationship for the drug. |
@@ -147,28 +140,29 @@ _4 paper(s) judged relevant from the abstract, with no full text on disk — pay
 | PD | Maeso_1999 | not_relevant | 2 | 1 | Preclinical rat study with fixed-dose quinapril; dose-response curves are for acetylcholine in isolated vessels, not a quinapril exposure/dose-effect relationship with extractable PD parameters. |
 | popPK | Müns_1993 | irrelevant | 0 | 0 | In-vitro enzyme inhibition study; quinapril is only an ACE inhibitor with an IC50, no PK disposition parameters. |
 | popPK | Oosterga_2000 | irrelevant | 0 | 0 | This is a vascular pharmacodynamics study of ACE inhibition with no PK parameters (CL, V, ka, half-life, or PK model) for quinapril reported. |
-| popPK | Padoin_1998 | irrelevant | 2 | 1 | Quinapril is only the interacting co-administered drug; all quantitative PK parameters (CL, ka, AUC) reported are for cephalexin, not quinapril. |
+| popPK | Padoin_1998 | irrelevant | 2 | 0 | The study focuses on the pharmacokinetics of cephalexin, with quinapril serving only as a co-administered agent to test for interactions, and no quantitative PK parameters for quinapril itself are reported. |
 | PD | Padoin_1998 | not_relevant | 0 | 0 | This is a purely pharmacokinetic interaction study (quinapril effects on cephalexin PK parameters); no pharmacodynamic or exposure-response relationship is modeled or reported. |
 | popPK | Plosker_1994 | irrelevant | 2 | 1 | This is a narrative review of pharmacology/efficacy with only a half-life mentioned and no quantitative PK parameters (CL, V, ka) or model values reported. |
 | PD | Plosker_1994 | not_relevant | 1 | 0 | Narrative review with only qualitative dose-range statements (10–40 mg/day efficacy) and no concentration-effect data or numeric PD parameters. |
+| PGx | Pérez-Castrillón_2003 | not_relevant | 2 | 5 | The study examines the effect of ACE polymorphisms on bone mineral density (a clinical outcome/PD endpoint) rather than standard pharmacokinetic parameters or direct pharmacodynamic markers of drug action (like blood pressure or ACE activity). |
 | popPK | Qi_2001 | irrelevant | 0 | 0 | This is a mechanistic cardiac physiology study using quinapril as a therapy, with no pharmacokinetic parameters reported. |
 | PD | Qi_2001 | not_relevant | 2 | 1 | Animal in-vitro ET-1 dose-response study with qualitative quinapril effects; no quinapril exposure-response relationship or numeric PD parameters (Emax, EC50, etc.) reported or derivable. |
 | popPK | Reid_1991 | irrelevant | 1 | 0 | This is a review/abstract on ambulatory blood pressure monitoring; no PK parameters or numeric values for quinapril are reported. |
 | PD | Reid_1991 | not_relevant | 2 | 0 | Abstract/review-style mention of using ABPM to assess quinapril dose and concentration-effect relationships, with no numeric PD parameters or effect-vs-concentration data reported. |
 | popPK | Schaison_1996 | irrelevant | 1 | 0 | This is a pharmacodynamic dose-response study of ACE inhibition in rats with no PK parameters (CL, V, ka, half-life, or PK model) reported for quinapril. |
-| popPK | Somogyi-Végh_2019 | irrelevant | 0 | 0 | This is a drug-drug interaction prevalence study with no pharmacokinetic parameters for quinapril; quinapril is not even mentioned. |
+| popPK | Somogyi-Végh_2019 | irrelevant | 0 | 0 | The paper is a retrospective analysis of drug interaction prevalence in pharmacy dispensing data and does not report any pharmacokinetic parameters for quinapril. |
 | PD | Somogyi-Végh_2019 | not_relevant | 0 | 0 | This is a drug-utilization/DDI prevalence study with no concentration-effect, dose-response, or PK/PD analysis for quinapril; no PD parameters are reported or derivable. |
 | popPK | Song_2002 | irrelevant | 2 | 0 | This is a review of other ACE inhibitors; quinapril is only mentioned as an established comparator with no quantitative PK parameters reported. |
 | PD | Song_2002 | not_relevant | 2 | 1 | This is a narrative review; quinapril is only mentioned qualitatively (flat dose-response class statement, mortality overview) with no numeric PD parameters or effect-vs-concentration data extractable. |
 | popPK | Tarkiainen_2015 | relevant | 6 | 2 | Quinapril is a subject drug in a PK study, but the evidence contains no numeric PK parameter values for quinapril (likely in tables/figures not provided). |
 | PD | Tarkiainen_2015 | not_relevant | 0 | 0 | This is a genotype-stratified pharmacokinetic study (CES1 c.428G&gt;A effect on quinapril/enalapril disposition) with no pharmacodynamic endpoint, concentration-effect, or dose-response data reported. |
 | PD | Wolter_1993 | not_relevant | 3 | 2 | Small-n PK/PD study showing ACE activity suppression and MAP/Ang II changes after 2.5 mg quinapril, but only qualitative concentration-effect description; no numeric PD parameters (Emax, EC50, slope) or effect-vs-concentration curve are reported or derivable. |
-| popPK | Wright_2025 | irrelevant | 0 | 0 | This is a population-PK study of colchicine, not quinapril; quinapril is not the subject drug and no quinapril parameters appear. |
+| popPK | Wright_2025 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of colchicine, not quinapril. |
 | PD | Wright_2025 | not_relevant | 0 | 0 | This is a population PK model for colchicine (not quinapril) with only a nominal concentration range used as a safety/efficacy proxy; no drug-effect vs exposure relationship or PD parameters are modeled or derivable. |
-| popPK | Yilmaz_2026 | irrelevant | 0 | 0 | Clinical vascular-function trial with no PK parameters or numeric disposition values for quinapril. |
+| popPK | Yilmaz_2026 | irrelevant | 0 | 0 | The study is a clinical trial assessing vascular function (FMD/CFR) and blood pressure, not a pharmacokinetic study reporting disposition parameters for quinapril. |
 | popPK | Yuan_2009 | relevant | 4 | 3 | Quinapril/quinaprilat is the subject drug with some PK values (AUC change, urinary excretion change, Km), but no CL/V/compartment parameters and no full PK model values are provided. |
 | PD | Yuan_2009 | not_relevant | 2 | 1 | The paper reports a transporter-mediated DDI (Km/IC50 values) and qualitative synergistic blood pressure reduction, but no concentration-effect or dose-response PD relationship for quinapril with extractable PD parameters. |
-| popPK | Zhao_2025 | irrelevant | 0 | 0 | This is a metabolomics drug-screening library paper; quinapril is only mentioned as an example of spectral analog matching, with no PK parameters reported. |
+| popPK | Zhao_2025 | irrelevant | 0 | 0 | The paper describes a mass spectrometry resource for drug screening and does not report pharmacokinetic parameters for quinapril. |
 | PD | Zhao_2025 | not_relevant | 0 | 0 | Metabolomics-based drug exposure detection resource; no quinapril concentration-effect or dose-response PD analysis or parameters. |
 
 ---

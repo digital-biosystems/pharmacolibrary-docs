@@ -18,7 +18,7 @@ Pheneturide is an anticonvulsant drug that was used to treat epilepsy. It is now
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-10 01:37 | 1:49 | 0/0/0 | 0/0/0 | 0/0/0 | 5,109/927 | ollama / qwen3.8:27b-mtp-q8_0 | 0 | 0/0 | 0/0 | 0 |
+| 2026-10-07 07:18 | 0:17 | 0/0/0 | 0/0/0 | 0/0/0 | 5,128/113 | einfracz / qwen3.8-27b | 0 | 0/0 | 0/0 | 0 |
 
 ## popPK records
 
@@ -43,9 +43,9 @@ _1 paper(s) judged relevant from the abstract, with no full text on disk — pay
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Galeazzi_1979.pdf` | Galeazzi RL et al., Pharmacokinetics of phenylethylacetylur…, Journal of pharmacokinetics… (1979) | popPK | 10 | [10.1007/BF01062387](https://doi.org/10.1007/BF01062387) | [529017](https://pubmed.ncbi.nlm.nih.gov/529017) | The abstract explicitly reports quantitative pharmacokinetic parameters for pheneturide, including half-life (54 hr, 40 hr) and total body clearance (2.6 L/hr). |
+| `Galeazzi_1979.pdf` | Galeazzi RL et al., Pharmacokinetics of phenylethylacetylur…, Journal of pharmacokinetics… (1979) | popPK | 10 | [10.1007/BF01062387](https://doi.org/10.1007/BF01062387) | [529017](https://pubmed.ncbi.nlm.nih.gov/529017) | The abstract provides explicit quantitative values for half-life and total body clearance for pheneturide in humans. |
 
-<sub>queue written 2026-09-10T01:37:07.692100+00:00</sub>
+<sub>queue written 2026-10-07T07:18:15.677996+00:00</sub>
 
 ## Screened and excluded
 

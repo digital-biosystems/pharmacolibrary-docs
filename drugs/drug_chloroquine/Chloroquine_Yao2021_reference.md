@@ -1,10 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;P01B&quot;,&quot;href&quot;:&quot;atc/P01B.md&quot;},{&quot;label&quot;:&quot;chloroquine&quot;,&quot;href&quot;:&quot;drugs/drug_chloroquine/&quot;},{&quot;label&quot;:&quot;Yao_2021 \u00b7 reference&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Chloroquine_AbdRahman2020_reference&quot;,&quot;label&quot;:&quot;Abd-Rahman_2020_plasma_samples&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_chloroquine/Chloroquine_AbdRahman2020_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Chloroquine_AbdRahman2020_reference&quot;,&quot;label&quot;:&quot;Abd-Rahman_2020_whole_blood_samples&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_chloroquine/Chloroquine_AbdRahman2020_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Chloroquine_Chairat2018_reference&quot;,&quot;label&quot;:&quot;Chairat_2018_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_chloroquine/Chloroquine_Chairat2018_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Chloroquine_Yao2021_reference&quot;,&quot;label&quot;:&quot;Yao_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_chloroquine/Chloroquine_Yao2021_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # chloroquine — `Chloroquine_Yao2021_reference`
 
-> ## <span class="pk-badge pk-badge--orange">built, not shipped</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.941). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.941). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -12,7 +13,7 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
-**Model:** A model was built but held back: a core parameter had no value, so it is not published or simulated.
+**Model:** A simulatable model was generated — see the **Models** and **Simulation** tabs.
 
 ### Reviewer guidance
 
@@ -24,28 +25,34 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on `parame
 
 <sub>reviewed by glm-5.3-flash</sub>
 
+> ⚠️ **STALE** — review status `model_quarantined` (reviewed 2026-10-05 09:24:57.156272+00:00) predates the upstream re-run (2026-10-07 06:19:56.943592+00:00). Current validate status: `extracted`.
+
+> **Dose compound ≠ measured compound:** dosed `chloroquine phosphate`, measured `chloroquine`.
+
 ## Citation
 Yao X et al., Population-based meta-analysis of chlor…, European journal of clinica… (2021)
   ·  DOI: [10.1007/s00228-020-03032-6](https://doi.org/10.1007/s00228-020-03032-6)
 
 ## Model component
-<dbs-pgx drug="chloroquine" model-id="Chloroquine_Yao2021_reference" status="model_quarantined" stale="false" population="COVID-19 patients" measured-compound="chloroquine" parameterization="apparent" topology="1C"></dbs-pgx>
+<dbs-pgx drug="chloroquine" model-id="Chloroquine_Yao2021_reference" status="extracted" stale="true" population="COVID-19 patients" measured-compound="chloroquine" parameterization="apparent" topology="1C"></dbs-pgx>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
-**Parameters:** 5 extracted.
+**Parameters:** 7 extracted, plus 2 covariate effects.
 
-**Parameterization:** CL/F, Q/F, V2/F, V3/F — apparent, F unknown (apparent — bioavailability not identifiable).
+**Parameterization:** CL/F, Q/F, V/F, V2/F, V3/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
 ## Parameters
-> ⚠️ This record is not accepted (current status `model_quarantined`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
-
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| CL/F (l/h) | `Q27` · CL/F | 33.3 | l/h | 9.25e-06 | [l] / [h] | 8.00 | exact (1.0) | tab_2:row1:col1, tab_2:row1:col2 | — | 48.8 (8.50% RSE) |
-| V2/F (l) | `Q82` · V2/F | 3630 | l | 3.63 | [l] | 13.3 | exact (1.0) | tab_2:row2:col1, tab_2:row2:col2 | — | 67.7 (14.0% RSE) |
-| Q/F (l/h) | `Q69` · Q/F | 58.7 | l/h | 1.6305555555555556e-05 | [l] / [h] | 15.4 | exact (1.0) | tab_2:row3:col1, tab_2:row3:col2 | — | 48.4 (26.1% RSE) |
-| V3/F (l) | `Q78` · V3/F | 5120 | l | 5.12 | [l] | 11.8 | exact (1.0) | tab_2:row4:col1, tab_2:row4:col2 | — | 48.2 (18.4% RSE) |
-| ka (h -1 ) | `Q49` · kabs | 0.559 | h -1 | 0.00015527777777777778 | [1] / [h] | 20.2 | exact (1.0) | tab_2:row5:col1, tab_2:row5:col2 | — | 111 (40.5% RSE) |
+| CL/F (l/h) | `Q27` · CL/F | 33.3 | l/h | 9.25e-06 | [l] / [h] | 8.00 | exact (1.0) | Tab4:row1:col1, Tab4:row1:col2 | — | 48.8 (8.50% RSE) |
+| V2/F (l) | `Q82` · V2/F | 3630 | l | 3.63 | [l] | 13.3 | exact (1.0) | Tab4:row2:col1, Tab4:row2:col2 | — | 67.7 (14.0% RSE) |
+| Q/F (l/h) | `Q69` · Q/F | 58.7 | l/h | 1.6305555555555556e-05 | [l] / [h] | 15.4 | exact (1.0) | Tab4:row3:col1, Tab4:row3:col2 | — | 48.4 (26.1% RSE) |
+| V3/F (l) | `Q78` · V3/F | 5120 | l | 5.12 | [l] | 11.8 | exact (1.0) | Tab4:row4:col1, Tab4:row4:col2 | — | 48.2 (18.4% RSE) |
+| ka (h−1) | `Q49` · kabs | 0.559 | h−1 | 0.00015527777777777778 | [1] / [h] | 20.2 | exact (1.0) | Tab4:row5:col1, Tab4:row5:col2 | — | 111 (40.5% RSE) |
+| ALAG1 (h) | `Q83` · tlag | 0.149 | h | 536.4 | [h] | 20.4 | llm (0.6) | Tab4:row6:col1, Tab4:row6:col2 | — | not captured |
+| theta_q314_weight | `Q900` · theta_q314_weight | 0.75 | not captured | not captured | not captured | not captured | not captured (not captured) | Tab4:row7:col1 | — | not captured |
+| theta_v2_f_weight | `Q900` · theta_v2_f_weight | 1 | not captured | not captured | not captured | not captured | not captured (not captured) | Tab4:row8:col1 | — | not captured |
+| V/FPRQ (L) | `Q76` · V/F | 156.0 | L | 0.156 | L | not captured | review_gapfill (0.7) | Chairat_2018:review | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -54,28 +61,30 @@ Yao X et al., Population-based meta-analysis of chlor…, European journal of cl
 
 ## Departures & gaps
 
+**Deviations:**
+- `apparent_assumption`: F=1, Fm=1, no molar correction (parameterization=apparent)
+
 **Interpretation flags:**
-- dropped unlinked row (NIL): 'ALAG1 (h)' — extend the ontology if this is a real PK parameter (source ['tab_2:row6:col1', 'tab_2:row6:col2'])
+- covariate effect for Q314 has no base parameter row (kept as unattached equation-variable)
 - apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=chloroquine
+- structure disagreement: deterministic 1C vs LLM 2C — review compartment count
+- gap-filled Q76 (V/F) from Chairat_2018's review values (primary lacked it)
 
 **Extraction notes:**
-- unparsed cell tab_2:row0:col3 = 'Bootstrap median (95 CI%)'
-- unparsed cell tab_2:row1:col3 = '33.7 (29.2, 38.6)'
-- unparsed cell tab_2:row2:col3 = '3598 (2521, 4532)'
-- unparsed cell tab_2:row3:col3 = '56.0 (43.7, 72.0)'
-- unparsed cell tab_2:row4:col3 = '5044 (4274, 6089)'
-- unparsed cell tab_2:row5:col3 = '0.607 (0.370, 1.12)'
-- unparsed cell tab_2:row6:col3 = '0.149 (0.130, 0.320)'
-- unparsed cell tab_2:row7:col1 = '0.75 FIX'
-- unparsed cell tab_2:row8:col1 = '1 FIX'
-- unparsed cell tab_2:row9:col3 = '47.4 (35.8, 61.3)'
-- unparsed cell tab_2:row10:col3 = '67.6 (49.8, 88.5)'
-- unparsed cell tab_2:row11:col3 = '46.8 (21.8, 63.8)'
-- unparsed cell tab_2:row12:col3 = '48.1 (27.8, 63.8)'
-- unparsed cell tab_2:row13:col3 = '106 (54.8, 139)'
-- unparsed cell tab_2:row14:col3 = '24.7 (19.4, 28.4)'
-- unparsed cell tab_2:row15:col3 = '58.6 (48.1, 72.5)'
-- LLM region Yao_2021:other_prose: no JSON records returned
+- unparsed cell Tab4:row1:col3 = '33.7 (29.2, 38.6)'
+- unparsed cell Tab4:row2:col3 = '3598 (2521, 4532)'
+- unparsed cell Tab4:row3:col3 = '56.0 (43.7, 72.0)'
+- unparsed cell Tab4:row4:col3 = '5044 (4274, 6089)'
+- unparsed cell Tab4:row5:col3 = '0.607 (0.370, 1.12)'
+- unparsed cell Tab4:row6:col3 = '0.149 (0.130, 0.320)'
+- unparsed cell Tab4:row9:col3 = '47.4 (35.8, 61.3)'
+- unparsed cell Tab4:row10:col3 = '67.6 (49.8, 88.5)'
+- unparsed cell Tab4:row11:col3 = '46.8 (21.8, 63.8)'
+- unparsed cell Tab4:row12:col3 = '48.1 (27.8, 63.8)'
+- unparsed cell Tab4:row13:col3 = '106 (54.8, 139)'
+- unparsed cell Tab4:row14:col3 = '24.7 (19.4, 28.4)'
+- unparsed cell Tab4:row15:col3 = '58.6 (48.1, 72.5)'
+- LLM selected parameter table(s) 4
 
 ## Validation
 
@@ -104,18 +113,22 @@ first reading `qwen3.6:27b-q8_0` — the numbers on this page are its, whatever 
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 5 | not captured | not captured | not captured |
+| C0_has_structural_params | pass | not captured | 6 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
-| C5_dimension_Q27 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['tab_2:row1:col1', 'tab_2:row1:col2'] |
-| C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['tab_2:row5:col1', 'tab_2:row5:col2'] |
-| C5_dimension_Q69 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['tab_2:row3:col1', 'tab_2:row3:col2'] |
-| C5_dimension_Q78 | pass | [length] ** 3 | not captured | not captured | not captured | ['tab_2:row4:col1', 'tab_2:row4:col2'] |
-| C5_dimension_Q82 | pass | [length] ** 3 | not captured | not captured | not captured | ['tab_2:row2:col1', 'tab_2:row2:col2'] |
+| C2_reference | pass | not captured | not captured | not captured | not captured | not captured |
+| C5_dimension_Q27 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Tab4:row1:col1', 'Tab4:row1:col2'] |
+| C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['Tab4:row5:col1', 'Tab4:row5:col2'] |
+| C5_dimension_Q69 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Tab4:row3:col1', 'Tab4:row3:col2'] |
+| C5_dimension_Q76 | pass | [length] ** 3 | not captured | not captured | not captured | ['Chairat_2018:review'] |
+| C5_dimension_Q78 | pass | [length] ** 3 | not captured | not captured | not captured | ['Tab4:row4:col1', 'Tab4:row4:col2'] |
+| C5_dimension_Q82 | pass | [length] ** 3 | not captured | not captured | not captured | ['Tab4:row2:col1', 'Tab4:row2:col2'] |
+| C5_dimension_Q83 | pass | [time] | not captured | not captured | not captured | ['Tab4:row6:col1', 'Tab4:row6:col2'] |
 | C7_apparent_coherence | pass | not captured | not captured | not captured | not captured | not captured |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
-| C9_phys_window_Q27 | pass | clearance within physiological range | 33.3 L/h | not captured | not captured | ['tab_2:row1:col1', 'tab_2:row1:col2'] |
-| C9_phys_window_Q82 | pass | volume within physiological range | 3.63e+03 L | not captured | not captured | ['tab_2:row2:col1', 'tab_2:row2:col2'] |
+| C9_phys_window_Q27 | pass | clearance within physiological range | 33.3 L/h | not captured | not captured | ['Tab4:row1:col1', 'Tab4:row1:col2'] |
+| C9_phys_window_Q76 | pass | volume within physiological range | 156 L | not captured | not captured | ['Chairat_2018:review'] |
+| C9_phys_window_Q82 | pass | volume within physiological range | 3.63e+03 L | not captured | not captured | ['Tab4:row2:col1', 'Tab4:row2:col2'] |
 
 **Reviewer per-scenario checks:**
 
@@ -151,21 +164,26 @@ first reading `qwen3.6:27b-q8_0` — the numbers on this page are its, whatever 
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_chloroquine/Chloroquine_Yao2021_reference/Chloroquine_Yao2021_reference_modelica.zip" download>Chloroquine_Yao2021_reference_modelica.zip</a> <span class="pk-size">(4.0 kB)</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_chloroquine/Chloroquine_Yao2021_reference/Chloroquine_Yao2021_reference_fmi.zip" download>Chloroquine_Yao2021_reference_fmi.zip</a> <span class="pk-size">(4.2 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_chloroquine/Chloroquine_Yao2021_reference/Chloroquine_Yao2021_reference_matlab.zip" download>Chloroquine_Yao2021_reference_matlab.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_chloroquine/Chloroquine_Yao2021_reference/Chloroquine_Yao2021_reference_matlab_simbio.zip" download>Chloroquine_Yao2021_reference_matlab_simbio.zip</a> <span class="pk-size">(2.8 kB)</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_chloroquine/Chloroquine_Yao2021_reference/Chloroquine_Yao2021_reference_sbml.zip" download>Chloroquine_Yao2021_reference_sbml.zip</a> <span class="pk-size">(2.8 kB)</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_chloroquine/Chloroquine_Yao2021_reference/Chloroquine_Yao2021_reference_cellml.zip" download>Chloroquine_Yao2021_reference_cellml.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
 </tbody></table>
-<p>No bundles have been generated for this record yet. When the engineer emits them they appear here automatically — this page reports what is on disk and generates nothing itself.</p>
-</div></div>
+<p>Each archive holds the model source, a script that simulates it against the appropriate library, and a README describing both and how to run them.</p>
+<p><b>FMI is two downloads.</b> The archive holds this record's parameters and its driver; the simulator itself is <code>PK_1C_enteral.fmu</code>, one compiled template shared by every model of this structure. Take the FMU once, keep it beside the script (or pass <code>--fmu PATH</code>). Running it reproduces the model-specific FMU exactly.</p>
+</div><figure class="pk-models-diagram"><img src="drugs/drug_chloroquine/Chloroquine_Yao2021_reference/Chloroquine_Yao2021_reference.svg" alt="Chloroquine_Yao2021_reference diagram"><figcaption>Model diagram (Modelica) using Pharmacolibrary v26.09 components, rendered by OpenModelica 1.26.7.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+**Administration: oral** — 500 mg, single dose, first-order absorption (ka 0.559 /h, lag 8.94 min, F 1). Dose in the paper: 500 mg.
+
+<dbs-fmusim paramsurl="drugs/drug_chloroquine/Chloroquine_Yao2021_reference/Chloroquine_Yao2021_reference_params.json" metaurl="assets/fmu/PK_1C_enteral.vr.json" wasmurl="assets/fmu/PK_1C_enteral.js" controlsurl="drugs/drug_chloroquine/Chloroquine_Yao2021_reference/Chloroquine_Yao2021_reference_sim_controls.json"></dbs-fmusim>
+
+<sub>Runs this record's model in the browser as WebAssembly. Sliders start at the extracted values; the reference check compares the browser's peak against the FMPy result recorded when the record was built, and is withheld once a value has been edited. Template `PK_1C_enteral` · parameters `Chloroquine_Yao2021_reference_params.json` · controls `Chloroquine_Yao2021_reference_sim_controls.json`. A slider marked *simulator value* is running on the template's own default because this record does not pin that parameter.</sub>
 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-07-15 11:06 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 06:19 UTC</sub>

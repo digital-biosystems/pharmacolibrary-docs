@@ -2,9 +2,9 @@
  "dose_source": "paper",
  "model_id": "Enalapril_Kechagia2015_reference",
  "molar_masses": {
-  "central.C": 0.348399
+  "central.C": 0.3764467
  },
- "note": "Values for the shared PK_1C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "note": "Values for the shared PK_2C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
  "observables": [
   "central.C"
  ],
@@ -15,23 +15,25 @@
  ],
  "parameters": {
   "Cl": 2.308333333333334e-06,
-  "F": 0.9,
-  "MM": 0.348399,
-  "Tlag": 0.0,
+  "F": 1.0,
+  "MM": 0.3764467,
+  "Tlag": 2808.0,
   "VdPerKg": 0.0012857142857142856,
   "adminCount": 1.0,
   "adminDuration": 600.0,
   "adminMass": 2.5e-06,
+  "k12": 8.179012345679013e-06,
+  "k21": 1.8086268086268082e-05,
   "ka": 0.00025833333333333334,
   "weight": 70.0
  },
  "reference_peak_times": {
-  "central.C": 10417.635270541083
+  "central.C": 12127.454909819638
  },
  "reference_peaks": {
-  "central.C": 1.937735014611968e-05
+  "central.C": 1.737326528848842e-05
  },
- "stop_time": 136800.0,
- "template": "PK_1C_enteral",
- "template_fmu": "PK_1C_enteral.fmu"
+ "stop_time": 147600.0,
+ "template": "PK_2C_enteral",
+ "template_fmu": "PK_2C_enteral.fmu"
 }

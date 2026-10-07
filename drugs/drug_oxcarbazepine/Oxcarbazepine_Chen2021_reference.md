@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N03A&quot;,&quot;href&quot;:&quot;atc/N03A.md&quot;},{&quot;label&quot;:&quot;oxcarbazepine&quot;,&quot;href&quot;:&quot;drugs/drug_oxcarbazepine/&quot;},{&quot;label&quot;:&quot;Chen_2021 \u00b7 reference&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Oxcarbazepine_Yu2025_reference&quot;,&quot;label&quot;:&quot;Yu_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_oxcarbazepine/Oxcarbazepine_Yu2025_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -51,6 +52,7 @@ _No resolved parameters._
 - column 'formu' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
 - dropped unlinked row (NIL): 'Lin et al.' — extend the ontology if this is a real PK parameter (source ['Chen_2021_table_2:row4:col2', 'Chen_2021_table_2:row4:col3', 'Chen_2021_table_2:row4:col5', 'Chen_2021_table_2:row4:col6', 'Chen_2021_table_2:row4:col8'])
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=MHD
+- review gap-fill skipped: this record measures 'MHD', not oxcarbazepine — the review values are the parent's
 
 ## Validation
 

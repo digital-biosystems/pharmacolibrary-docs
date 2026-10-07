@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N02B&quot;,&quot;href&quot;:&quot;atc/N02B.md&quot;},{&quot;label&quot;:&quot;propacetamol&quot;,&quot;href&quot;:&quot;drugs/drug_propacetamol/&quot;},{&quot;label&quot;:&quot;Prins_2008 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Propacetamol_Prins2008_reference&quot;,&quot;label&quot;:&quot;Prins_2008_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_propacetamol/Propacetamol_Prins2008_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Propacetamol_Prins2008_reference&quot;,&quot;label&quot;:&quot;Prins_2008_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_propacetamol/Propacetamol_Prins2008_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # propacetamol — `Propacetamol_Prins2008_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.333). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.333). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -25,14 +25,16 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the lin
 
 <sub>reviewed by glm-5.3-flash</sub>
 
-> **Dose compound ≠ measured compound:** dosed `propacetamol`, measured `paracetamol`.
+> ⚠️ **STALE** — review status `needs_review` (reviewed 2026-09-28 14:39:30.150414+00:00) predates the upstream re-run (2026-10-07 07:20:53.129357+00:00). Current validate status: `extracted`.
+
+> **Dose compound ≠ measured compound:** dosed `mixed (propacetamol/paracetamol)`, measured `paracetamol`.
 
 ## Citation
 Prins SA et al., Pharmacokinetics and analgesic effects…, Paediatric anaesthesia (2008)
   ·  DOI: [10.1111/j.1460-9592.2008.02619.x](https://doi.org/10.1111/j.1460-9592.2008.02619.x)
 
 ## Model component
-<dbs-pgx drug="propacetamol" model-id="Propacetamol_Prins2008_reference" status="needs_review" stale="false" population="infants after craniofacial surgery" measured-compound="paracetamol" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<dbs-pgx drug="propacetamol" model-id="Propacetamol_Prins2008_reference" status="extracted" stale="true" population="infants after craniofacial surgery" measured-compound="paracetamol" parameterization="mechanistic" topology="1C"></dbs-pgx>
 
 **Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameters:** 5 extracted.
@@ -40,15 +42,13 @@ Prins SA et al., Pharmacokinetics and analgesic effects…, Paediatric anaesthes
 **Parameterization:** mechanistic.
 
 ## Parameters
-> ⚠️ This record is not accepted (current status `needs_review`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
-
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
 | absorption half-life from the rectum | `Q95` · t1/2ka | 4.6 | h | 16560.0 | [h] | not captured | llm_corrected (0.6) | Prins_2008:abstract | — | not captured |
 | propacetamol hydrolysis half-life | `Q57` · t1/2z | 0.028 | h | 100.8 | [h] | not captured | llm (0.6) | Prins_2008:abstract | — | not captured |
 | clearance | `Q22` · CL | 12 | l.h(-1).70 kg(-1) | 0.00023333333333333333 | [l] / [[h] · [kg]] | not captured | exact (1.0) | Prins_2008:abstract | — | not captured |
 | intercompartmental clearance | `Q30` · Q | 116 | l.h(-1).70 kg(-1) | 0.002255555555555556 | [l] / [[h] · [kg]] | not captured | exact (1.0) | Prins_2008:abstract | — | not captured |
-| central and peripheral volume of distribution | `Q61` · V | 7.9 | l.70 kg(-1) | 0.553 | [l] / [kg] | not captured | llm_confirmed (0.6) | Prins_2008:abstract, Prins_2008:abstract | — | not captured |
+| central and peripheral volume of distribution | `Q64` · V2 | 7.9 | l.70 kg(-1) | 0.553 | [l] / [kg] | not captured | boundary_compartment (0.9) | Prins_2008:abstract, Prins_2008:abstract | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -104,12 +104,12 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Prins_2008:abstract'] |
 | C5_dimension_Q30 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Prins_2008:abstract'] |
 | C5_dimension_Q57 | pass | [time] | not captured | not captured | not captured | ['Prins_2008:abstract'] |
-| C5_dimension_Q61 | pass | [length] ** 3 | not captured | not captured | not captured | ['Prins_2008:abstract', 'Prins_2008:abstract'] |
+| C5_dimension_Q64 | pass | [length] ** 3 | not captured | not captured | not captured | ['Prins_2008:abstract', 'Prins_2008:abstract'] |
 | C5_dimension_Q95 | pass | [time] | not captured | not captured | not captured | ['Prins_2008:abstract'] |
 | C6_cl_magnitude | pass | &lt;= 90.0 L/h | 12.0 | not captured | not captured | ['Prins_2008:abstract'] |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
 | C9_phys_window_Q22 | pass | clearance within physiological range | 840 L/h | not captured | not captured | ['Prins_2008:abstract'] |
-| C9_phys_window_Q61 | pass | volume within physiological range | 553 L | not captured | not captured | ['Prins_2008:abstract', 'Prins_2008:abstract'] |
+| C9_phys_window_Q64 | pass | volume within physiological range | 553 L | not captured | not captured | ['Prins_2008:abstract', 'Prins_2008:abstract'] |
 
 **Reviewer per-scenario checks:**
 
@@ -141,8 +141,8 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_propacetamol/Propacetamol_Prins2008_reference/Propacetamol_Prins2008_reference_modelica.zip" download>Propacetamol_Prins2008_reference_modelica.zip</a> <span class="pk-size">(3.5 kB)</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_propacetamol/Propacetamol_Prins2008_reference/Propacetamol_Prins2008_reference_fmi.zip" download>Propacetamol_Prins2008_reference_fmi.zip</a> <span class="pk-size">(4.1 kB)</span><br><a href="models/fmu/PK_1C.fmu" download>PK_1C.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_propacetamol/Propacetamol_Prins2008_reference/Propacetamol_Prins2008_reference_fmi.zip" download>Propacetamol_Prins2008_reference_fmi.zip</a> <span class="pk-size">(4.0 kB)</span><br><a href="models/fmu/PK_1C.fmu" download>PK_1C.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_propacetamol/Propacetamol_Prins2008_reference/Propacetamol_Prins2008_reference_matlab.zip" download>Propacetamol_Prins2008_reference_matlab.zip</a> <span class="pk-size">(3.3 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_propacetamol/Propacetamol_Prins2008_reference/Propacetamol_Prins2008_reference_matlab_simbio.zip" download>Propacetamol_Prins2008_reference_matlab_simbio.zip</a> <span class="pk-size">(2.7 kB)</span></td></tr>
 <tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_propacetamol/Propacetamol_Prins2008_reference/Propacetamol_Prins2008_reference_sbml.zip" download>Propacetamol_Prins2008_reference_sbml.zip</a> <span class="pk-size">(2.4 kB)</span></td></tr>
@@ -163,4 +163,4 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-09-21 16:55 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 07:20 UTC</sub>

@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C09A&quot;,&quot;href&quot;:&quot;atc/C09A.md&quot;},{&quot;label&quot;:&quot;captopril&quot;,&quot;href&quot;:&quot;drugs/drug_captopril/&quot;},{&quot;label&quot;:&quot;Kiriyama_2024 \u00b7 PD blood pressure&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Captopril_Hu2025_reference&quot;,&quot;label&quot;:&quot;Hu_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_captopril/Captopril_Hu2025_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Captopril_Hu2025_reference&quot;,&quot;label&quot;:&quot;Hu_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_captopril/Captopril_Hu2025_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # blood pressure — PD  <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.541). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
@@ -16,7 +16,7 @@
 
 ## What this record describes
 
-**As extracted:** Nifedipine and captopril (parent plasma concentrations; no metabolite driver) (measured concentrations) drive blood pressure (in mmHg): indirect response — drug inhibits the production of blood pressure.
+**As extracted:** Captopril (concentrations from this paper's PK model) drives blood pressure (in mmHg): direct sigmoid Emax (Hill) effect.
 
 **Model:** A model was generated (see the **Models** tab); it has no in-browser simulator.
 
@@ -25,10 +25,10 @@
 > <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
 
 - **paper:** `Kiriyama_2024`
-- **model family:** `indirect_response_i`
-- **driver:** `conc_no_pk`
+- **model family:** `sigmoid_emax`
+- **driver:** `pk_record`
 - **tier:** descriptive
-- **effect:** inhibition/unknown
+- **effect:** inhibition/additive
 
 ## Citation
 Kiriyama A et al., Exploring the multiple effects of nifed…, Pharmacology research & per… (2024)
@@ -37,35 +37,11 @@ Kiriyama A et al., Exploring the multiple effects of nifed…, Pharmacology rese
 ## Parameters
 | role | label (paper) | Q-code · name | value | unit | value_si | link | source |
 |---|---|---|---|---|---|---|---|
-| PK (driver) | Nifedipine — BP | `Q38` · not captured | 0.135 | not captured | not captured | llm (not captured) | prp21249-tbl-0003:row2:col3 |
-| PD (effect) | Nifedipine — QT | `Q320` · not captured | 0.0117 | not captured | not captured | llm (not captured) | prp21249-tbl-0003:row2:col9 |
-| PD (effect) | kEHS,out — BP | `Q328` · not captured | 0.0119 | not captured | not captured | llm (not captured) | prp21249-tbl-0003:row4:col2 |
-| PD (effect) | kEHS,out — HR | `Q328` · not captured | 306 | not captured | not captured | llm (not captured) | prp21249-tbl-0003:row4:col5 |
-| PD (effect) | kEHS,out — QT | `Q328` · not captured | 75.8 | not captured | not captured | llm (not captured) | prp21249-tbl-0003:row4:col8 |
-| PD (effect) | EC50,1 — BP | `Q321` · not captured | 86.3 | ng/mL | not captured | llm_confirmed (not captured) | prp21249-tbl-0003:row5:col2 |
-| PD (effect) | EC50,1 — HR | `Q321` · not captured | 63.3 | ng/mL | not captured | llm_confirmed (not captured) | prp21249-tbl-0003:row5:col5 |
-| PD (effect) | EC50,1 — QT | `Q321` · not captured | 76.3 | ng/mL | not captured | llm_confirmed (not captured) | prp21249-tbl-0003:row5:col8 |
-| PD (effect) | EC50,2 — BP | `Q321` · not captured | 1450 | ng/mL | not captured | llm_confirmed (not captured) | prp21249-tbl-0003:row6:col2 |
-| PD (effect) | EC50,2 — HR | `Q321` · not captured | 0.931 | ng/mL | not captured | llm_confirmed (not captured) | prp21249-tbl-0003:row6:col5 |
-| PD (effect) | EC50,2 — QT | `Q321` · not captured | 0.857 | ng/mL | not captured | llm_confirmed (not captured) | prp21249-tbl-0003:row6:col8 |
-| PK (driver) | α — BP | `Q67` · not captured | 1.17 | not captured | not captured | exact (not captured) | prp21249-tbl-0003:row7:col2 |
-| PK (driver) | α — HR | `Q67` · not captured | 268.9 | not captured | not captured | exact (not captured) | prp21249-tbl-0003:row7:col5 |
-| PK (driver) | α — QT | `Q67` · not captured | 191.1 | not captured | not captured | exact (not captured) | prp21249-tbl-0003:row7:col8 |
-| PD (effect) | E0 — BP | `Q324` · not captured | 96.8 | not captured | not captured | exact (not captured) | prp21249-tbl-0003:row8:col2 |
-| PD (effect) | Emax,1 — BP | `Q320` · not captured | 67.1 | not captured | not captured | llm_confirmed (not captured) | prp21249-tbl-0003:row9:col2 |
-| PK (driver) | AIC — BP | `Q88` · not captured | 151.4 | not captured | not captured | llm (not captured) | prp21249-tbl-0003:row11:col2 |
-| PD (effect) | Captopril — BP | `Q320` · not captured | 0.0400 | not captured | not captured | llm (not captured) | prp21249-tbl-0003:row12:col3 |
-| PD (effect) | E0 — BP | `Q324` · not captured | 105 | not captured | not captured | exact (not captured) | prp21249-tbl-0003:row14:col2 |
-| PD (effect) | E0 — HR | `Q324` · not captured | 312.8 | not captured | not captured | exact (not captured) | prp21249-tbl-0003:row14:col5 |
-| PD (effect) | E0 — QT | `Q324` · not captured | 81.2 | not captured | not captured | exact (not captured) | prp21249-tbl-0003:row14:col8 |
-| PD (effect) | Emax — BP | `Q320` · not captured | 41.8 | not captured | not captured | exact (not captured) | prp21249-tbl-0003:row15:col2 |
-| PD (effect) | Emax — HR | `Q320` · not captured | 80.4 | not captured | not captured | exact (not captured) | prp21249-tbl-0003:row15:col5 |
-| PD (effect) | Emax — QT | `Q320` · not captured | 41.9 | not captured | not captured | exact (not captured) | prp21249-tbl-0003:row15:col8 |
-| PD (effect) | γ — BP | `Q325` · not captured | 0.662 | not captured | not captured | llm (not captured) | prp21249-tbl-0003:row16:col2 |
-| PK (driver) | γ — HR | `Q89` · not captured | 1.4 | not captured | not captured | llm (not captured) | prp21249-tbl-0003:row16:col5 |
-| PD (effect) | γ — QT | `Q335` · not captured | 0.1347 | not captured | not captured | llm (not captured) | prp21249-tbl-0003:row16:col8 |
-| PK (driver) | AIC — BP | `Q88` · not captured | 213.2 | not captured | not captured | llm (not captured) | prp21249-tbl-0003:row17:col2 |
-| model term | AIC — QT | `Q900` · not captured | 220.0 | not captured | not captured | llm (not captured) | prp21249-tbl-0003:row17:col8 |
+| PD (effect) | ke0 | `Q326` · not captured | 0.0400 | min−1 | not captured | llm (not captured) | Kiriyama_2024:pdv3 |
+| PD (effect) | EC50 | `Q321` · not captured | 7885 | ng/mL | not captured | llm (not captured) | Kiriyama_2024:pdv3 |
+| PD (effect) | E0 | `Q324` · not captured | 105 | mmHg | not captured | llm (not captured) | Kiriyama_2024:pdv3 |
+| PD (effect) | Emax | `Q323` · not captured | 41.8 | mmHg | not captured | direction (not captured) | Kiriyama_2024:pdv3 |
+| PD (effect) | γ | `Q325` · not captured | 0.662 | not captured | not captured | llm (not captured) | Kiriyama_2024:pdv3 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -75,16 +51,20 @@ Kiriyama A et al., Exploring the multiple effects of nifed…, Pharmacology rese
 
 ## Exposure-response model
 
-`Captopril_Kiriyama2024_PD_bp` — turnover (indirect response type I), `response = E0*(1 - Emax*frac)`
+`Captopril_Kiriyama2024_PD_bp` — sigmoid_emax, `response = E0 + Emax*frac`
 
 | parameter | value (paper units) | SI |
 |---|---|---|
-| E0 | 96.8 mmHg | — |
-| Emax | 0.0117 | — |
-| EC50 | 86.3 ng/mL | 8.63e-05 kg/m3 |
+| E0 | 105 mmHg | — |
+| Emax | -41.8 mmHg | — |
+| EC50 | 7885 ng/mL | 0.007885 kg/m3 |
 | gamma | 0.662 | — |
 
-Closed-form check points (response, SI): `at_0` = 96.8, `at_EC50` = 96.23, `at_inf` = 95.67
+Closed-form check points (response, SI): `at_0` = 105, `at_EC50` = 84.1, `at_inf` = 63.2
+
+Deviations:
+
+- `pd_binding_imax_as_negative_emax` — Imax (Q323) enters SigmoidEmaxSweep as −Emax
 
 ## Review
 
@@ -95,7 +75,7 @@ Verdict <span class="pk-badge pk-badge--green">reviewed — candidate</span>
 | `T0_driver` | pass | driver is the drug, a synonym or one of its metabolites (or unnamed) |
 | `T1_closed_form` | pass | engineer's check points reproduced from the bound parameters |
 | `T1b_fmu` | skipped | template FMU / fmpy not available — advisory only |
-| `T2_direction` | pass | the response falls, as IDR-I predicts |
+| `T2_direction` | pass | the response falls, as direct effect predicts |
 | `T3_plausibility` | pass | EC50, gamma, Imax and baseline in range |
 | `T4_defaults` | pass | nothing defaulted |
 
@@ -143,7 +123,7 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_captopril/Captopril_Kiriyama2024_PD_bp/Captopril_Kiriyama2024_PD_bp_modelica.zip" download>Captopril_Kiriyama2024_PD_bp_modelica.zip</a> <span class="pk-size">(2.8 kB)</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_captopril/Captopril_Kiriyama2024_PD_bp/Captopril_Kiriyama2024_PD_bp_modelica.zip" download>Captopril_Kiriyama2024_PD_bp_modelica.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_captopril/Captopril_Kiriyama2024_PD_bp/Captopril_Kiriyama2024_PD_bp_matlab.zip" download>Captopril_Kiriyama2024_PD_bp_matlab.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">not generated yet</span></td></tr>

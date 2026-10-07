@@ -4,7 +4,7 @@
 
 # perindopril — `Perindopril_Parker2005_single_dose`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.444). The first reading is what the record holds.">cross-check: partial</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.357). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -20,9 +20,11 @@
 
 The structural parameter V of perindoprilat carries the verbatim unit 'h' (label 'θ V1 (h)'), which cannot describe a volume of distribution; because this unit could not be converted to SI units, the parameter reached the record without an SI value. The other perindoprilat parameters are CL of 59 L/h (label 'θ CLu (1.5 mg)'), Bmax of 1.3 g/L and a tlag of 6.6 h. A second reader assigned the same clearance value 59 to apparent unbound clearance and a volume of 920 to apparent volume of distribution, whereas this record filed 59 under clu/f and 920 under v/f, and left the dose unextracted where the second reader read 3.1. Extracted — perindoprilat: V 94 h, CL 59 L/h, Bmax 1.3 g L -1, tlag 6.6 h.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of apparent unbound clearance: this record has none, the second reading 59; it also differs on 4 more fields. That field does not shape the model.
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on `parameters[b max].value`: this record has 2.5, the second reading 1.3; it also differs on 8 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by glm-5.3-flash</sub>
+
+> ⚠️ **STALE** — review status `rejected` (reviewed 2026-10-05 09:30:10.346748+00:00) predates the upstream re-run (2026-10-07 06:55:47.358088+00:00). Current validate status: `rejected`.
 
 > **Dose compound ≠ measured compound:** dosed `perindopril`, measured `perindoprilat`.
 
@@ -31,22 +33,23 @@ Parker E et al., The pharmacokinetics of perindoprilat i…, European journal of
   ·  DOI: [10.1016/j.ejps.2005.05.006](https://doi.org/10.1016/j.ejps.2005.05.006)
 
 ## Model component
-<dbs-pgx drug="perindopril" model-id="Perindopril_Parker2005_single_dose" status="rejected" stale="false" population="healthy volunteers and patients with hypertension, renal failure and heart failure (including elderly)" measured-compound="perindoprilat" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<dbs-pgx drug="perindopril" model-id="Perindopril_Parker2005_single_dose" status="rejected" stale="true" population="normal volunteers and patients" measured-compound="perindoprilat" parameterization="apparent" topology="1C"></dbs-pgx>
 
 **Model structure:** 1-compartment; no model was built for this record.  
-**Parameters:** 4 extracted.
+**Parameters:** 5 extracted.
 
-**Parameterization:** mechanistic.
+**Parameterization:** CLm/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
 ## Parameters
 > ⚠️ This record is not accepted (current status `rejected`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| θ V1 (h) | `Q61` · V | 94 | h | not captured | [h] | not captured | exact (1.0) | Parker_2005_table_3:row0:col1 | — | not captured |
-| θ CLu (1.5 mg) | `Q22` · CL | 59 | L/h | 1.638888888888889e-05 | L/h | not captured | exact (1.0) | Parker_2005_table_3:row3:col1 | — | not captured |
-| B max (g L -1 ) | `Q332` · Bmax | 1.3 | g L -1 | not captured | [g] / [l] | not captured | space_fold (0.95) | Parker_2005_table_3:row6:col1 | — | not captured |
-| T inp (h) | `Q83` · tlag | 6.6 | h | 23760.0 | [h] | not captured | llm (0.6) | Parker_2005_table_3:row7:col1 | — | not captured |
+| V 1 (L) | `Q61` · V | 6.4 | L | 0.0064 | [l] | not captured | exact (1.0) | Parker_2005_table_2:row1:col2 | — | not captured |
+| CL u (L h -1 ) | `Q351` · CLm/F | 7.0 | L h -1 | 1.9444444444444444e-06 | [l] / [h] | not captured | exact (1.0) | Parker_2005_table_2:row2:col2 | — | not captured |
+| B max (g L -1 ) | `Q332` · Bmax | 2.5 | g L -1 | not captured | [g] / [l] | not captured | space_fold (0.95) | Parker_2005_table_2:row4:col2, Parker_2005_table_3:row6:col1, Parker_2005_table_4:row4:col1 | — | not captured |
+| k 12 (h -1 ) | `Q30` · Q | 1.3 | h -1 | not captured | [1] / [h] | not captured | exact (1.0) | Parker_2005_table_2:row5:col2 | — | not captured |
+| T inp (h) | `Q49` · kabs | 6.6 | h | not captured | [h] | not captured | exact (1.0) | Parker_2005_table_3:row7:col1, Parker_2005_table_4:row5:col1 | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -56,52 +59,77 @@ Parker E et al., The pharmacokinetics of perindoprilat i…, European journal of
 ## Departures & gaps
 
 **Interpretation flags:**
+- dropped unlinked row (NIL): 'C u50 (g L -1 )' — extend the ontology if this is a real PK parameter (source ['Parker_2005_table_2:row3:col2', 'Parker_2005_table_3:row5:col1', 'Parker_2005_table_4:row3:col1'])
+- unit_dimension_mismatch: 'k 12 (h -1 )' → Q30 (unit '1 / [time]' vs ontology '[length] ** 3 / [time]') — route to review
+- unit_dimension_mismatch: 'k 21 (h -1 )' → Q30 (unit '1 / [time]' vs ontology '[length] ** 3 / [time]') — route to review
+- dropped duplicate Q30 ('k 21 (h -1 )', value '1.9') — already have one for this compound
+- dropped unlinked row (NIL): 'CV ε' — extend the ontology if this is a real PK parameter (source ['Parker_2005_table_2:row7:col2', 'Parker_2005_table_2:row7:col4'])
+- routed 'CV η' → Q312 (IIV) to iiv — variability estimate, not a structural parameter
 - unit_dimension_mismatch: 'θ V1 (h)' → Q63 (unit '[time]' vs ontology '[length] ** 3') — route to review
+- dropped duplicate Q63 ('θ V1 (h)', value '94') — already have one for this compound
 - dropped duplicate Q63 ('θ V2 (1.5 mg) (L)', value '320') — already have one for this compound
 - dropped duplicate Q63 ('θ V2 (3.1 mg) (L)', value '16') — already have one for this compound
+- dropped duplicate Q22 ('θ CLu (1.5 mg)', value '59') — already have one for this compound
 - dropped duplicate Q22 ('θ CLu (3.1 mg)', value '12') — already have one for this compound
-- dropped PD-category row 'C u50 (g L -1 )' → Q322 (IC50, category G11) — pharmacodynamic parameters belong to scholarpd, not the PK model (source ['Parker_2005_table_3:row5:col1'])
-- routed 'CV ε (%)' → Q316 (prop_error) to residual_error — variability estimate, not a structural parameter
+- unit_dimension_mismatch: 'T inp (h)' → Q49 (unit '[time]' vs ontology '1 / [time]') — route to review
+- dropped unlinked row (NIL): 'CV ε (%)' — extend the ontology if this is a real PK parameter (source ['Parker_2005_table_3:row8:col1', 'Parker_2005_table_4:row7:col1'])
 - routed 'CV η(V/F) (%)' → Q312 (IIV) to iiv — variability estimate, not a structural parameter
 - routed 'CV η(CLu/F ) (%)' → Q312 (IIV) to iiv — variability estimate, not a structural parameter
 - routed 'CV η(C u50 ) (%)' → Q312 (IIV) to iiv — variability estimate, not a structural parameter
-- implicit units: 'θ CLu (1.5 mg)' → L/h (from the paper text: 'The abstract states: "Apparent unbound clearance (CL u /F) ranged from 59 to 110 L h -1", and the value 59 matches this ')
-- metabolite volume: 'θ V1 (h)' Q63→Q61 for perindoprilat — it is 1-compartment, so its central volume is its only volume
-- apparent-by-design (ADVISORY, codes unchanged): extravascular dosing with no identifiable F, so these reported disposition parameters are likely apparent unless the model puts first-pass in its structure — Q61 (θ V1 (h)); Q22 (θ CLu (1.5 mg))
-- apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=perindoprilat
+- dropped duplicate Q63 ('θ V2 (L)', value '74') — already have one for this compound
+- dropped duplicate Q22 ('θ CLu', value '8.6') — already have one for this compound
+- unit_dimension_mismatch: 'T inp (heart failure) (h)' → Q49 (unit '[time]' vs ontology '1 / [time]') — route to review
+- dropped duplicate Q49 ('T inp (heart failure) (h)', value '6.9') — already have one for this compound
+- dropped duplicate Q22 ('CV η(θCL u,1 ) (%)', value '52') — already have one for this compound
+- routed 'CV η(Bmax) (%)' → Q312 (IIV) to iiv — variability estimate, not a structural parameter
+- metabolite perindoprilat: Q22→Q351 — only the metabolite is measured and fm is not identifiable, so its CL/V are apparent (fm-divided)
+- metabolite volume: 'V 1 (L)' Q63→Q61 for perindoprilat — it is 1-compartment, so its central volume is its only volume
+- apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=perindoprilat
 - held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
-- template fit: PK_3M_9C — formed from central; parent 0, metabolites [1]
+- template fit: none — only the metabolite is modelled — no parent compartment
+- structure disagreement: deterministic 1C vs LLM 2C — review compartment count
 - status held at route_to_review — not promoted
 - population split: 'single dose' subgroup of Parker_2005 (paper reports 4 populations: model 1, model 2, multiple dose, single dose)
 - row roles: 2 per-group rows of perindoprilat central_volume but 0 reference group(s) — kept as printed
 - row roles: 2 per-group rows of perindoprilat clearance but 0 reference group(s) — kept as printed
-- row roles (LLM): model_class=compartmental; 16/16 row label(s) assigned, 10 linked by role
+- row roles (LLM): model_class=compartmental; 27/27 row label(s) assigned, 23 linked by role
+- skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
+- skipped review gap-fill of TLAG: primary's parameterization (rate-constant / ka-only) does not use it
 
 **Extraction notes:**
 - transposed table tab_0: parameters were across the columns, populations/subgroups down the first column — transposed for parsing
 - unparsed cell tab_0:row0:col1 = 'B max (g L -1 )'
 - unparsed cell tab_0:row1:col1 = 'C u50 (g L -1 )'
+- unparsed cell Parker_2005_table_2:row2:col1 = '5 .9 (0.46)'
+- unparsed cell Parker_2005_table_2:row5:col1 = '1 .3 (0.24)'
+- unparsed cell Parker_2005_table_2:row6:col1 = '1 .6 (0.24)'
+- companion parameter table 2 transcribed (21 record(s))
 - companion parameter table 3 transcribed (24 record(s))
-- LLM selected parameter table(s) 3
+- companion parameter table 4 transcribed (12 record(s))
+- LLM selected parameter table(s) 2, 3, 4
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | partly confirmed | 0.444 (4/9 fields) | 5 |
+| `gpt-oss:120b` | not confirmed | 0.357 (5/14 fields) | 9 |
 
-<details><summary>5 field(s) a reader read differently</summary>
+<details><summary>9 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `parameters[apparent unbound clearance]` | not captured | 59 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[apparent volume of distribution]` | not captured | 920 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[clu/f]` | 59 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[dose]` | not captured | 3.1 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[v/f]` | 920 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[b max].value` | 2.5 | 1.3 | mismatch |
+| `gpt-oss:120b` | `parameters[cl u]` | 7.0 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[cv η(v/f)]` | not captured | 70 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[k 12]` | 1.3 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[t inp].parameter_id` | Q49 | Q83 | mismatch |
+| `gpt-oss:120b` | `parameters[v 1]` | 6.4 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[θ clu]` | not captured | 59 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[θ v1]` | not captured | 94 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[θ v2 (1.5 mg)]` | not captured | 320 | only_one_extracted |
 
 </details>
 
@@ -115,16 +143,16 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 4 | not captured | not captured | not captured |
+| C0_has_structural_params | pass | not captured | 5 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
-| C1_half_life_beta | pass | 1.0 | 1.104 | 1.104 | 0.25 | reported t½β |
-| C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Parker_2005_table_3:row3:col1'] |
-| C5_dimension_Q61 | fail | [time] | h | not captured | not captured | ['Parker_2005_table_3:row0:col1'] |
-| C5_dimension_Q83 | pass | [time] | not captured | not captured | not captured | ['Parker_2005_table_3:row7:col1'] |
-| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 59.0 | not captured | not captured | ['Parker_2005_table_3:row3:col1'] |
+| C5_dimension_Q30 | fail | 1 / [time] | h -1 | not captured | not captured | ['Parker_2005_table_2:row5:col2'] |
+| C5_dimension_Q351 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Parker_2005_table_2:row2:col2'] |
+| C5_dimension_Q49 | fail | [time] | h | not captured | not captured | ['Parker_2005_table_3:row7:col1', 'Parker_2005_table_4:row5:col1'] |
+| C5_dimension_Q61 | pass | [length] ** 3 | not captured | not captured | not captured | ['Parker_2005_table_2:row1:col2'] |
+| C7_apparent_coherence | pass | not captured | not captured | not captured | not captured | not captured |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
-| C9_phys_window_Q22 | pass | clearance within physiological range | 59 L/h | not captured | not captured | ['Parker_2005_table_3:row3:col1'] |
+| C9_phys_window_Q61 | pass | volume within physiological range | 6.4 L | not captured | not captured | ['Parker_2005_table_2:row1:col2'] |
 
 <details class="legend">
 <summary>Check legend — what each column means</summary>
@@ -149,4 +177,4 @@ _No web simulator for this record: its structure has no shared WebAssembly templ
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-09-30 23:36 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 06:55 UTC</sub>

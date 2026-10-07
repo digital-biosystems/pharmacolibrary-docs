@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;D11A&quot;,&quot;href&quot;:&quot;atc/D11A.md&quot;},{&quot;label&quot;:&quot;diclofenac&quot;,&quot;href&quot;:&quot;drugs/drug_diclofenac/&quot;},{&quot;label&quot;:&quot;Rahal_2008 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Diclofenac_Yuan2017_reference&quot;,&quot;label&quot;:&quot;Yuan_2017_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_diclofenac/Diclofenac_Yuan2017_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Hannam_2014_VAS&quot;,&quot;label&quot;:&quot;Hannam_2014 \u00b7 VAS&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_diclofenac/pd_Hannam_2014_VAS.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Diclofenac_Standing2008_reference&quot;,&quot;label&quot;:&quot;Standing_2008_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_diclofenac/Diclofenac_Standing2008_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Diclofenac_Yuan2017_reference&quot;,&quot;label&quot;:&quot;Yuan_2017_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_diclofenac/Diclofenac_Yuan2017_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Hannam_2014_VAS&quot;,&quot;label&quot;:&quot;Hannam_2014 \u00b7 VAS&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_diclofenac/pd_Hannam_2014_VAS.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # diclofenac — `Diclofenac_Rahal2008_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.143). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (sheep), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">sheep</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.143). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (sheep), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">sheep</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -27,12 +27,14 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 
 <sub>reviewed by rule template (no LLM)</sub>
 
+> ⚠️ **STALE** — review status `needs_review` (reviewed 2026-10-05 09:26:19.419962+00:00) predates the upstream re-run (2026-10-07 08:02:36.249742+00:00). Current validate status: `needs_review`.
+
 ## Citation
 Rahal A et al., Pharmacokinetics of diclofenac and its…, Research in veterinary scie… (2008)
   ·  DOI: [10.1016/j.rvsc.2007.06.002](https://doi.org/10.1016/j.rvsc.2007.06.002)
 
 ## Model component
-<dbs-pgx drug="diclofenac" model-id="Diclofenac_Rahal2008_reference" status="needs_review" stale="false" population="sheep" measured-compound="diclofenac" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<dbs-pgx drug="diclofenac" model-id="Diclofenac_Rahal2008_reference" status="needs_review" stale="true" population="sheep" measured-compound="diclofenac" parameterization="mechanistic" topology="1C"></dbs-pgx>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 5 extracted.
@@ -48,7 +50,7 @@ Rahal A et al., Pharmacokinetics of diclofenac and its…, Research in veterinar
 | AUC | `Q88` · AUC | 12.17 | microg h ml(-1) | not captured | [[h] · [µg]] / [ml] | not captured | exact (1.0) | Rahal_2008:abstract, Rahal_2008:abstract | — | not captured |
 | Vd(area) | `Q61` · V | 0.14 | Lkg(-1) | 0.009800000000000001 | [l] / [kg] | not captured | exact (1.0) | Rahal_2008:abstract, Rahal_2008:abstract | — | not captured |
 | MRT | `Q53` · MRT | 1.36 | h | 4896.0 | [h] | not captured | exact (1.0) | Rahal_2008:abstract | — | not captured |
-| Cl(B) | `Q22` · CL | 0.1 | L/h | 2.777777777777778e-08 | L/h | not captured | exact (1.0) | Rahal_2008:abstract, Rahal_2008:abstract | — | not captured |
+| Cl(B) | `Q22` · CL | 0.1 | Lkg(-1)h(-1) | not captured | [[h] · [l]] / [kg] | not captured | exact (1.0) | Rahal_2008:abstract, Rahal_2008:abstract | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -60,7 +62,6 @@ Rahal A et al., Pharmacokinetics of diclofenac and its…, Research in veterinar
 **Interpretation flags:**
 - unit_dimension_unknown: 'microg h ml(-1)' (AUC)
 - unit_dimension_unknown: 'Lkg(-1)h(-1)' (CL)
-- implicit units: 'Cl(B)' → L/h (from the popPK convention: 'No unit is stated in the provided text. Clearance (Cl) is conventionally expressed in L/h in population pharmacokinetics')
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=diclofenac
 - held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
 - structure disagreement: deterministic 1C vs LLM 2C — review compartment count
@@ -113,14 +114,13 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 | C0_has_structural_params | pass | not captured | 5 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
-| C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Rahal_2008:abstract', 'Rahal_2008:abstract'] |
 | C5_dimension_Q53 | pass | [time] | not captured | not captured | not captured | ['Rahal_2008:abstract'] |
 | C5_dimension_Q60 | pass | [time] | not captured | not captured | not captured | ['Rahal_2008:abstract', 'Rahal_2008:abstract'] |
 | C5_dimension_Q61 | pass | [length] ** 3 | not captured | not captured | not captured | ['Rahal_2008:abstract', 'Rahal_2008:abstract'] |
+| C5_unit_missing_Q22 | fail | [length] ** 3 / [time] | Lkg(-1)h(-1) | not captured | not captured | ['Rahal_2008:abstract', 'Rahal_2008:abstract'] |
 | C5_unit_missing_Q88 | fail | [mass] * [time] / [length] ** 3 | microg h ml(-1) | not captured | not captured | ['Rahal_2008:abstract', 'Rahal_2008:abstract'] |
 | C6_cl_magnitude | pass | &lt;= 90.0 L/h | 0.1 | not captured | not captured | ['Rahal_2008:abstract', 'Rahal_2008:abstract'] |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
-| C9_phys_window_Q22 | pass | clearance within physiological range | 0.1 L/h | not captured | not captured | ['Rahal_2008:abstract', 'Rahal_2008:abstract'] |
 | C9_phys_window_Q61 | pass | volume within physiological range | 9.8 L | not captured | not captured | ['Rahal_2008:abstract', 'Rahal_2008:abstract'] |
 
 <details class="legend">
@@ -156,4 +156,4 @@ _No web simulator for this record: its structure has no shared WebAssembly templ
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-03 20:31 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 08:02 UTC</sub>

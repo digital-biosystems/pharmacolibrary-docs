@@ -1,10 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N03A&quot;,&quot;href&quot;:&quot;atc/N03A.md&quot;},{&quot;label&quot;:&quot;brivaracetam&quot;,&quot;href&quot;:&quot;drugs/drug_brivaracetam/&quot;},{&quot;label&quot;:&quot;Schoemaker_2017_2 \u00b7 reference&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Brivaracetam_Klein2026_reference&quot;,&quot;label&quot;:&quot;Klein_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_brivaracetam/Brivaracetam_Klein2026_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Brivaracetam_Li2025_reference&quot;,&quot;label&quot;:&quot;Li_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_brivaracetam/Brivaracetam_Li2025_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Brivaracetam_Pressler2024_all_patients&quot;,&quot;label&quot;:&quot;Pressler_2024_all_patients&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_brivaracetam/Brivaracetam_Pressler2024_all_patients.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Brivaracetam_Pressler2024_individual_patient_data&quot;,&quot;label&quot;:&quot;Pressler_2024_individual_patient_data&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_brivaracetam/Brivaracetam_Pressler2024_individual_patient_data.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Brivaracetam_Schoemaker2018_reference&quot;,&quot;label&quot;:&quot;Schoemaker_2018_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_brivaracetam/Brivaracetam_Schoemaker2018_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Brivaracetam_Yu2026_reference&quot;,&quot;label&quot;:&quot;Yu_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_brivaracetam/Brivaracetam_Yu2026_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # brivaracetam — `Brivaracetam_Schoemaker2017v2_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -22,25 +23,28 @@ The record lists 'Allometric scaling CL/F' as 0.750 L and 'Allometric scaling V/
 
 <sub>reviewed by glm-5.3-flash</sub>
 
+> ⚠️ **STALE** — review status `rejected` (reviewed 2026-09-28 14:36:20.766033+00:00) predates the upstream re-run (2026-10-07 07:03:54.330090+00:00). Current validate status: `needs_review`.
+
 ## Citation
 Schoemaker R et al., Brivaracetam population pharmacokinetic…, European journal of clinica… (2017)
   ·  DOI: [10.1007/s00228-017-2230-6](https://doi.org/10.1007/s00228-017-2230-6)
 
 ## Model component
-<dbs-pgx drug="brivaracetam" model-id="Brivaracetam_Schoemaker2017v2_reference" status="rejected" stale="false" population="children with epilepsy aged 1 month to 16 years" measured-compound="brivaracetam" parameterization="apparent" topology="1C"></dbs-pgx>
+<dbs-pgx drug="brivaracetam" model-id="Brivaracetam_Schoemaker2017v2_reference" status="needs_review" stale="true" population="children with epilepsy aged 1 month to 16 years" measured-compound="brivaracetam" parameterization="apparent" topology="1C"></dbs-pgx>
 
 **Model structure:** 1-compartment; no model was built for this record.  
-**Parameters:** 2 extracted.
+**Parameters:** 3 extracted.
 
 **Parameterization:** CL/F, V/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
 ## Parameters
-> ⚠️ This record is not accepted (current status `rejected`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
+> ⚠️ This record is not accepted (current status `needs_review`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| Allometric scaling CL/F | `Q27` · CL/F | 0.750 | L | not captured | [l] | not captured | llm_confirmed (0.6) | Tab1:row4:col1 | — | not captured |
-| Allometric scaling V/F | `Q76` · V/F | 1.00 | L | 0.001 | [l] | not captured | llm_confirmed (0.6) | Tab1:row5:col1 | — | not captured |
+| Allometric scaling CL/F | `Q27` · CL/F | 0.750 | not captured | not captured | not captured | not captured | llm_confirmed (0.6) | Tab1:row4:col1 | — | not captured |
+| Allometric scaling V/F | `Q76` · V/F | 1.00 | not captured | not captured | not captured | not captured | llm_confirmed (0.6) | Tab1:row5:col1 | — | not captured |
+| absorption rate constant for the slow absorption component | `Q49` · kabs | 5.37 | h−1 | 0.0014916666666666667 | 1/h | not captured | review_gapfill (0.7) | Klein_2026:review | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -50,10 +54,10 @@ Schoemaker R et al., Brivaracetam population pharmacokinetic…, European journa
 ## Departures & gaps
 
 **Interpretation flags:**
-- unit_dimension_mismatch: 'Allometric scaling CL/F' → Q27 (unit '[length] ** 3' vs ontology '[length] ** 3 / [time]') — route to review
 - apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=brivaracetam
-- held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
-- status held at route_to_review — not promoted
+- skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
+- skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
+- gap-filled Q49 (kabs) from Klein_2026's review values (primary lacked it)
 
 **Extraction notes:**
 - LLM selected parameter table(s) 1
@@ -67,11 +71,11 @@ Schoemaker R et al., Brivaracetam population pharmacokinetic…, European journa
 | C0_has_structural_params | pass | not captured | 2 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
-| C5_dimension_Q27 | fail | [length] ** 3 | L | not captured | not captured | ['Tab1:row4:col1'] |
-| C5_dimension_Q76 | pass | [length] ** 3 | not captured | not captured | not captured | ['Tab1:row5:col1'] |
+| C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['Klein_2026:review'] |
+| C5_unit_missing_Q27 | fail | [length] ** 3 / [time] | not captured | not captured | not captured | ['Tab1:row4:col1'] |
+| C5_unit_missing_Q76 | fail | [length] ** 3 | not captured | not captured | not captured | ['Tab1:row5:col1'] |
 | C7_apparent_coherence | pass | not captured | not captured | not captured | not captured | not captured |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
-| C9_phys_window_Q76 | pass | volume within physiological range | 1 L | not captured | not captured | ['Tab1:row5:col1'] |
 
 <details class="legend">
 <summary>Check legend — what each column means</summary>
@@ -85,9 +89,19 @@ Schoemaker R et al., Brivaracetam population pharmacokinetic…, European journa
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
-## Models
+## Downloadable models
 
-<p>No downloads: this record is <b>rejected</b>, so it is not published as a model. Any archives generated for it before the verdict have been removed — a download outlives the page that explains it.</p>
+<div class="pk-models-grid"><div class="pk-models-table">
+<table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
+</tbody></table>
+<p>No bundles have been generated for this record yet. When the engineer emits them they appear here automatically — this page reports what is on disk and generates nothing itself.</p>
+</div></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
@@ -96,4 +110,4 @@ _No web simulator for this record: its structure has no shared WebAssembly templ
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-09-21 09:23 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-07 07:03 UTC</sub>

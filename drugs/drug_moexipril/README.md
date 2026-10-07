@@ -18,11 +18,17 @@ Moexipril is an ACE inhibitor used to treat high blood pressure and congestive h
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-30 23:34 | 0:47 | 0/0/0 | 0/0/0 | 0/0/0 | 2,356/507 | ollama / glm-5.3-flash | 0 | 2/0 | 0/0 | 0 |
+| 2026-10-07 06:54 | 0:50 | 0/0/0 | 1/0/0 | 0/0/0 | 22,527/1,229 | ollama / qwen3.8:27b-mtp-q8_0 | 0 | 2/0 | 0/0 | 0 |
 
 ## popPK records
 
 _not available_
+
+## Pharmacodynamics (PD)
+
+| status | detail | about | model | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--green">extracted</span> | [Cawello_2002_ACE_inhibition](drugs/drug_moexipril/pd_Cawello_2002_ACE_inhibition.md) | ACE inhibition ← moexiprilat · direct sigmoid Emax (Hill) effect | — | Cawello W et al., Moexipril shows a long duration of acti…, International journal of cl… (2002) | [10.5414/cpp40009](https://doi.org/10.5414/cpp40009) |
 
 ## ADME sites
 
@@ -45,7 +51,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 ## Coverage
 
 - **PubMed hits:** 16 matched, 16 returned
-- **screened:** 0  ·  **relevant:** 0
+- **screened:** 1  ·  **relevant:** 1
 - **records:** 0  ·  extracted 0  ·  needs_review 0  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** True
 
@@ -55,28 +61,27 @@ _1 paper(s) judged relevant from the abstract, with no full text on disk — pay
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Cawello_2002.pdf` | Cawello W et al., Moexipril shows a long duration of acti…, International journal of cl… (2002) | popPK | 5 | [10.5414/cpp40009](https://doi.org/10.5414/cpp40009) | [11837383](https://pubmed.ncbi.nlm.nih.gov/11837383) | Original PK study of moexipril/moexiprilat with t½ (29–30 h), Cmax, AUC, tmax values present, but no CL/V/compartmental model parameters reported. |
+| `Cawello_2002.pdf` | Cawello W et al., Moexipril shows a long duration of acti…, International journal of cl… (2002) | popPK | 9 | [10.5414/cpp40009](https://doi.org/10.5414/cpp40009) | [11837383](https://pubmed.ncbi.nlm.nih.gov/11837383) | The study reports quantitative PK parameters (t1/2, Cmax, AUC ratios, tmax) for moexiprilat (active metabolite) in humans, though specific clearance or volume values are not explicitly listed in the text. |
 
-<sub>queue written 2026-09-30T23:34:37.028966+00:00</sub>
+<sub>queue written 2026-10-07T06:54:28.109383+00:00</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Cabré_2026 | irrelevant | 0 | 0 | Narrative review of cardiovascular pharmacotherapy with no PK parameters for moexipril or any drug. |
+| popPK | Cabré_2026 | irrelevant | 0 | 0 | The paper is a narrative review of cardiovascular pharmacotherapy and does not report quantitative pharmacokinetic parameters for moexipril. |
 | PD | Cabré_2026 | not_relevant | 0 | 0 | Narrative review of cardiovascular pharmacotherapy with no moexipril-specific PD or exposure-response data or parameters. |
-| popPK | Cawello_2002 | relevant | 5 | 3 | Original PK study of moexipril/moexiprilat with t½ (29–30 h), Cmax, AUC, tmax values present, but no CL/V/compartmental model parameters reported. |
-| popPK | Drayer_1995 | irrelevant | 1 | 0 | This is an antihypertensive efficacy trial with no PK parameters (CL, V, ka, half-life, or population-PK model) reported for moexipril. |
+| popPK | Drayer_1995 | irrelevant | 0 | 0 | The paper is a clinical efficacy study evaluating antihypertensive effects and does not report pharmacokinetic parameters. |
 | popPK | Edling_1995 | irrelevant | 1 | 0 | This is a pharmacodynamic characterization of moexipril with no PK disposition parameters (CL, V, ka, half-life, or PK model) reported. |
-| popPK | Fernández-Llaneza_2025 | irrelevant | 0 | 0 | This is a drug-safety/AKI knowledge aggregation study with no pharmacokinetic parameters for moexipril; no numeric PK values are present. |
+| popPK | Fernández-Llaneza_2025 | irrelevant | 0 | 0 | The paper is a review of drugs causing acute kidney injury and does not report pharmacokinetic parameters for moexipril. |
 | PD | Fernández-Llaneza_2025 | not_relevant | 0 | 0 | This is a drug-safety knowledge aggregation study (AKI risk signals via RORs/ADE frequencies), with no concentration-effect or dose-response PD analysis or parameters for moexipril. |
-| popPK | Ferry_1987 | irrelevant | 0 | 0 | The study concerns quinapril and its metabolite CI-928, not moexipril, and no numeric PK parameter values appear in the evidence. |
-| popPK | Fiscon_2021 | irrelevant | 0 | 0 | Network-based drug repurposing study for COVID-19 with no pharmacokinetic parameters for moexipril (only mentioned indirectly via ACE-inhibitor class). |
+| popPK | Ferry_1987 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of quinapril and its metabolite, not moexipril. |
+| popPK | Fiscon_2021 | irrelevant | 0 | 0 | The paper is an in-silico drug repurposing study for COVID-19 and does not contain any pharmacokinetic data for moexipril. |
 | PD | Fiscon_2021 | not_relevant | 0 | 0 | Computational network-based drug repurposing study; no pharmacodynamic or exposure/dose-response data for moexipril or any drug. |
 | popPK | Friehe_1997 | irrelevant | 1 | 0 | This is a pharmacodynamic/toxicology study with no PK disposition parameters (CL, V, ka, half-life, or PK model) reported for moexipril. |
-| popPK | Song_2002 | irrelevant | 3 | 0 | This is a narrative review of ACE inhibitors including moexipril, but no numeric PK parameters (CL, V, t½, etc.) appear in the evidence. |
+| popPK | Song_2002 | irrelevant | 2 | 0 | This is a review article that discusses moexipril qualitatively but does not provide specific quantitative pharmacokinetic parameter values (CL, V, ka, etc.) in the text. |
 | PD | Song_2002 | not_relevant | 2 | 1 | A narrative review of ACE inhibitors; only qualitative statements (e.g., flat dose-response curves for ACE inhibitors) with no numeric PD parameters for moexipril. |
-| popPK | Van_1993 | irrelevant | 2 | 1 | Moexipril is only the co-administered interacting drug; all PK parameters reported are for warfarin, with no moexipril disposition values. |
+| popPK | Van_1993 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of warfarin (the subject drug) in the presence of moexipril (the co-administered agent), not the pharmacokinetics of moexipril itself. |
 
 ---
 <sub>Generated by `docs.py` (scholarv2)</sub>

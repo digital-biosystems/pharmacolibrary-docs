@@ -1,0 +1,28 @@
+{
+ "dose_source": "library default",
+ "model_id": "Dupilumab_Takechi2025_reference",
+ "note": "Values for the shared PK_1C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "parameters": {
+  "Cl": 3.935185185185186e-09,
+  "F": 1.0,
+  "Tlag": 0.0,
+  "VdPerKg": 0.00012057142857142857,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 0.0001,
+  "ka": 6.342592592592593e-06,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 441176.753507014
+ },
+ "reference_peaks": {
+  "central.C": 0.009631779303848636
+ },
+ "stop_time": 8467200.0,
+ "template": "PK_1C_enteral",
+ "template_fmu": "PK_1C_enteral.fmu"
+}

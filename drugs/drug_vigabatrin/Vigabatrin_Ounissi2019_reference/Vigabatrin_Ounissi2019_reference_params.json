@@ -1,0 +1,32 @@
+{
+ "dose_source": "WHO ATC DDD 2000 mg oral (N03AG04)",
+ "model_id": "Vigabatrin_Ounissi2019_reference",
+ "molar_masses": {
+  "central.C": 0.12915700000000002
+ },
+ "note": "Values for the shared PK_1C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "parameters": {
+  "Cl": 6.555555555555556e-07,
+  "F": 1.0,
+  "MM": 0.12915700000000002,
+  "Tlag": 0.0,
+  "VdPerKg": 0.00024285714285714289,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 0.002,
+  "ka": 0.0001388888888888889,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 13135.255668313093
+ },
+ "reference_peaks": {
+  "central.C": 0.07188595145875873
+ },
+ "stop_time": 90000.0,
+ "template": "PK_1C_enteral",
+ "template_fmu": "PK_1C_enteral.fmu"
+}

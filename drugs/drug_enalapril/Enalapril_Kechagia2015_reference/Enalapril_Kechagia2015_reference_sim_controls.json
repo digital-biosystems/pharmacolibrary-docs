@@ -49,6 +49,26 @@
   "step": 1
  },
  {
+  "key": "k12",
+  "label": "k12 (central→peripheral)",
+  "unit": "1/h",
+  "scale": 3600,
+  "min": 0.2,
+  "max": 5,
+  "step": 0.05,
+  "mult": true
+ },
+ {
+  "key": "k21",
+  "label": "k21 (peripheral→central)",
+  "unit": "1/h",
+  "scale": 3600,
+  "min": 0.2,
+  "max": 5,
+  "step": 0.05,
+  "mult": true
+ },
+ {
   "key": "weight",
   "label": "Body weight",
   "unit": "kg",
@@ -91,7 +111,7 @@
   "unit": "h",
   "scale": 0.0002777777777777778,
   "min": 5.0,
-  "max": 76.0,
+  "max": 82.0,
   "step": 1.0,
   "sim": true
  }

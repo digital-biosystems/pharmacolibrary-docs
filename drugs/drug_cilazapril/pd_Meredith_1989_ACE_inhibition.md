@@ -30,9 +30,9 @@ Meredith PA et al., The pharmacokinetics and angiotensin co…, British journal 
 ## Parameters
 | role | label (paper) | Q-code · name | value | unit | value_si | link | source |
 |---|---|---|---|---|---|---|---|
-| PD (effect) | C50 | `Q322` · not captured | 33 | pg ml-1 | not captured | llm (not captured) | Meredith_1989:pdv3 |
 | PD (effect) | Imax | `Q323` · not captured | 97.6 | % | not captured | llm (not captured) | Meredith_1989:pdv3 |
-| PD (effect) | P | `Q333` · not captured | 2.6 | ng ml-1 | not captured | llm (not captured) | Meredith_1989:pdv3 |
+| PD (effect) | C50 | `Q322` · not captured | 30.5 | ng ml-1 | not captured | llm (not captured) | Meredith_1989:pdv3 |
+| PD (effect) | P | `Q333` · not captured | 3.32 | ng ml-1 | not captured | llm (not captured) | Meredith_1989:pdv3 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

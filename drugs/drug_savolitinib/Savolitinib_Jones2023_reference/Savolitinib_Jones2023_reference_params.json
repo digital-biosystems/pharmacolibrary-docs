@@ -1,0 +1,41 @@
+{
+ "dose_source": "paper",
+ "model_id": "Savolitinib_Jones2023_reference",
+ "molar_masses": {
+  "central.C": 0.34537
+ },
+ "note": "Values for the shared PK_1C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "paper_doses_kind": "discrete",
+ "paper_doses_mg": [
+  1.4,
+  21.0,
+  70.0,
+  175.0,
+  700.0,
+  1050.0
+ ],
+ "parameters": {
+  "Cl": 8.361111111111111e-06,
+  "F": 0.9,
+  "MM": 0.34537,
+  "Tlag": 0.0,
+  "VdPerKg": 0.0014399999999999999,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 1.4e-06,
+  "ka": 0.00012222222222222221,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 10215.63126252505
+ },
+ "reference_peaks": {
+  "central.C": 5.511592652211701e-06
+ },
+ "stop_time": 86400.0,
+ "template": "PK_1C_enteral",
+ "template_fmu": "PK_1C_enteral.fmu"
+}

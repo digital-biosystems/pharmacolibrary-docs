@@ -18,7 +18,7 @@ Imidapril is an ACE inhibitor used to treat arterial hypertension. It is not aut
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-30 23:24 | 2:49 | 0/0/0 | 1/1/0 | 0/0/1 | 93,630/10,560 | ollama / glm-5.3-flash | 11 | 11/4 | 2/9 | 0 |
+| 2026-10-07 06:34 | 3:33 | 0/0/0 | 1/0/0 | 0/0/2 | 105,082/5,611 | ollama / qwen3.8:27b-mtp-q8_0 | 11 | 11/4 | 2/9 | 0 |
 
 ## popPK records
 
@@ -28,14 +28,14 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Phillips_2019_hCE1_mediated_imidapril_activation](drugs/drug_imidapril/pd_Phillips_2019_hCE1_mediated_imidapril_activation.md) | hCE1-mediated imidapril activation ← TPHP · direct Emax (saturable) effect | — | Phillips AL et al., Inhibition of Human Liver Carboxylester…, Toxicological sciences : an… (2019) | [10.1093/toxsci/kfz149](https://doi.org/10.1093/toxsci/kfz149) |
-| <span class="pk-badge pk-badge--red">rejected</span> | [Harder_1997_ACE](drugs/drug_imidapril/pd_Harder_1997_ACE.md) | plasma ACE activity ← imidaprilat · direct Emax (saturable) effect | — | Harder S et al., Pharmacokinetic and pharmacodynamic int…, British journal of clinical… (1997) | [10.1046/j.1365-2125.1997.00588.x](https://doi.org/10.1046/j.1365-2125.1997.00588.x) |
+| <span class="pk-badge pk-badge--green">accepted (caveats)</span> | [Harder_1997_ACE](drugs/drug_imidapril/pd_Harder_1997_ACE.md) | ACE-activity ← imidaprilat · direct Emax (saturable) effect | — | Harder S et al., Pharmacokinetic and pharmacodynamic int…, British journal of clinical… (1997) | [10.1046/j.1365-2125.1997.00588.x](https://doi.org/10.1046/j.1365-2125.1997.00588.x) |
 
 ## Pharmacogenomics (PGx)
 
 | status | gene | affects | mechanism | detail | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--neutral" title="the paper links the gene to the drug but states no effect size on a model parameter, so it changes no model.">qualitative</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.25). The first reading is what the record holds.">cross-check: partial</span> | **ACE2** | `Q320` · Emax | target | [Chen_2016](drugs/drug_imidapril/pgx_Chen_2016_ACE2_Q320.md) | Chen YY et al., Impact of ACE2 gene polymorphism on ant…, Journal of human hypertensi… (2016) | [10.1038/jhh.2016.24](https://doi.org/10.1038/jhh.2016.24) |
+| <span class="pk-badge pk-badge--neutral" title="the paper links the gene to the drug but states no effect size on a model parameter, so it changes no model.">qualitative</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span> | **ACE2** | `Q100` — no parameter target — an association/risk finding, not a parameter shift | target | [Chen_2016](drugs/drug_imidapril/pgx_Chen_2016_ACE2_Q100.md) | Chen YY et al., Impact of ACE2 gene polymorphism on ant…, Journal of human hypertensi… (2016) | [10.1038/jhh.2016.24](https://doi.org/10.1038/jhh.2016.24) |
+| <span class="pk-badge pk-badge--neutral" title="the paper links the gene to the drug but states no effect size on a model parameter, so it changes no model.">qualitative</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.25). The first reading is what the record holds.">cross-check: partial</span> | **CES1** | `Q32` · Cmax | formation | [Merali_2014](drugs/drug_imidapril/pgx_Merali_2014_CES1_Q32.md) | Merali Z et al., The pharmacogenetics of carboxylesteras…, Drug metabolism and drug in… (2014) | [10.1515/dmdi-2014-0009](https://doi.org/10.1515/dmdi-2014-0009) |
 
 <details class="pk-legend"><summary>What the PGx badges mean — evidence, and whether a model runs</summary><table><tbody><tr><td><span class="pk-badge pk-badge--green">quantitative</span></td><td>the paper gives the effect of each phenotype (or genotype) on a named model parameter — a θ per category.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">qualitative</span></td><td>the paper links the gene to the drug but states no effect size on a model parameter, so it changes no model.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">guideline estimate</span></td><td>the effect comes from a CPIC / DPWG dosing guideline, not from this paper's numbers.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">safety allele</span></td><td>a risk allele for an adverse reaction (an HLA type, G6PD deficiency …): it changes no PK/PD parameter.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>the extraction is incomplete or inconsistent.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted.</td></tr><tr><td><span class="pk-badge pk-badge--green">▶ simulatable</span></td><td>the paper's popPK model runs per phenotype in the browser (Simulation tab); its PGx Modelica model is under Models.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">model only</span></td><td>a PGx Modelica model exists but has no in-browser simulator.</td></tr></tbody></table></details>
 
@@ -50,6 +50,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 | process | tissue | actors (role) | evidence |
 |---|---|---|---|
+| metabolism | liver | `CES1` formation | paper PGx gene |
 
 <sub>Actors without a tissue in the table: ACE (modulator), ACE2 (target).</sub>
 
@@ -62,77 +63,77 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 ## Coverage
 
 - **PubMed hits:** 48 matched, 57 returned
-- **screened:** 12  ·  **relevant:** 2
+- **screened:** 12  ·  **relevant:** 3
 - **records:** 0  ·  extracted 0  ·  needs_review 0  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** True
 
 ## Full text wanted
 
-_4 paper(s) judged relevant from the abstract, with no full text on disk — paywalled, or the resolver could not reach them. Follow the DOI, then save the PDF into `papers/` as `&lt;save as&gt;.pdf` and re-run the extraction._
+_6 paper(s) judged relevant from the abstract, with no full text on disk — paywalled, or the resolver could not reach them. Follow the DOI, then save the PDF into `papers/` as `&lt;save as&gt;.pdf` and re-run the extraction._
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Yamada_1992.pdf` | Yamada Y et al., Metabolic fate of the new angiotensin-c…, Arzneimittel-Forschung (1992) | popPK | 6 | not captured | [1642673](https://pubmed.ncbi.nlm.nih.gov/1642673) | Animal PK study of imidapril reporting half-lives (e.g., M1 0.9–2.3 h rats, 6.3–9.3 h dogs), but no CL/V or compartmental parameters and no full numeric table in the evidence. |
-| `Yamada_1992_2.pdf` | Yamada Y et al., Metabolic fate of the new angiotensin-c…, Arzneimittel-Forschung (1992) | popPK | 6 | not captured | [1642668](https://pubmed.ncbi.nlm.nih.gov/1642668) | Animal PK study of imidapril as subject drug, but the evidence (abstract only) contains absorption fractions and timing, not numeric CL/V/compartmental parameters, which may be in tables not provided. |
+| `Yamada_1992_2.pdf` | Yamada Y et al., Metabolic fate of the new angiotensin-c…, Arzneimittel-Forschung (1992) | popPK | 10 | not captured | [1642668](https://pubmed.ncbi.nlm.nih.gov/1642668) | The study reports quantitative PK parameters for imidapril in rats and dogs, but the specific numeric values (CL, V, etc.) are not present in the provided abstract text. |
+| `Yamada_1992.pdf` | Yamada Y et al., Metabolic fate of the new angiotensin-c…, Arzneimittel-Forschung (1992) | popPK | 9 | not captured | [1642673](https://pubmed.ncbi.nlm.nih.gov/1642673) | The study reports quantitative pharmacokinetic parameters (half-lives) for the active metabolite of imidapril in animals, but specific clearance or volume values are not present in the provided abstract text. |
+| `Yamanaka_1997_2.pdf` | Yamanaka K et al., Pharmacokinetic and pharmacodynamic stu…, Journal of pharmaceutical a… (1997) | popPK | 9 | [10.1016/s0731-7085(96)02015-8](https://doi.org/10.1016/s0731-7085(96)02015-8) | [9278890](https://pubmed.ncbi.nlm.nih.gov/9278890) | The study reports PK/PD of imidaprilat (active metabolite of imidapril) in rats, but specific numeric parameter values (CL, V, etc.) are not present in the provided abstract text. |
+| `Yamanaka_1996.pdf` | Yamanaka K et al., Steady-state pharmacokinetics and pharm…, Journal of pharmaceutical s… (1996) | popPK | 8 | [10.1021/js9600033](https://doi.org/10.1021/js9600033) | [8923331](https://pubmed.ncbi.nlm.nih.gov/8923331) | The study reports steady-state pharmacokinetics of imidaprilat (active metabolite) in rats, but the specific numeric parameter values (CL, V, etc.) are not present in the provided abstract text. |
+| `Yamanaka_1997.pdf` | Yamanaka K et al., Pharmacokinetics and pharmacodynamics o…, Journal of pharmaceutical a… (1997) | popPK | 8 | [10.1016/s0731-7085(96)02016-x](https://doi.org/10.1016/s0731-7085(96)02016-x) | [9278891](https://pubmed.ncbi.nlm.nih.gov/9278891) | The study reports PK/PD of imidapril (via its active metabolite imidaprilat) in rats, but the provided evidence contains only qualitative descriptions of concentration profiles without specific numeric parameter values (CL, V, etc.). |
 | `Harder_1998.pdf` | Harder S et al., Single dose and steady state pharmacoki…, British journal of clinical… (1998) | pd | 5 | [10.1046/j.1365-2125.1998.t01-1-00694.x](https://doi.org/10.1046/j.1365-2125.1998.t01-1-00694.x) | [9578185](https://www.ncbi.nlm.nih.gov/pubmed/9578185) | metadata signals extractable PD data (concentrationeffect) |
-| `Yamanaka_1997.pdf` | Yamanaka K et al., Pharmacokinetics and pharmacodynamics o…, Journal of pharmaceutical a… (1997) | pd | 5 | [10.1016/s0731-7085(96)02016-x](https://doi.org/10.1016/s0731-7085(96)02016-x) | [9278891](https://www.ncbi.nlm.nih.gov/pubmed/9278891) | metadata signals extractable PD data (PK/PD) |
 
-<sub>queue written 2026-09-30T23:24:41.905951+00:00</sub>
+<sub>queue written 2026-10-07T06:32:02.446597+00:00</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Andrassy_1991 | irrelevant | 0 | 0 | The paper concerns flomoxef, not imidapril, and no PK parameters for imidapril appear. |
+| popPK | Andrassy_1991 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of flomoxef, not imidapril. |
 | PD | Breithaupt-Grögler_2001 | not_relevant | 3 | 2 | Reports numeric drug effects (BP reduction, PRA/TPR changes) after single doses via ANOVA, but no concentration-effect or dose-response analysis and no derivable PD parameters (Emax, EC50, slope, effect-vs-concentration curve). |
-| popPK | Cabré_2026 | irrelevant | 0 | 0 | Narrative review of cardiovascular pharmacotherapy with no imidapril PK parameters or numeric disposition data. |
+| popPK | Cabré_2026 | irrelevant | 0 | 0 | The paper is a narrative review of cardiovascular pharmacotherapy and does not report quantitative pharmacokinetic parameters for imidapril. |
 | PD | Cabré_2026 | not_relevant | 1 | 0 | Narrative review of cardiovascular pharmacotherapy with no imidapril-specific PD or exposure/dose-response data or numeric PD parameters. |
-| popPK | Cai_1998 | irrelevant | 0 | 0 | This is a pharmacodynamic study of cerebral blood flow autoregulation in rats; no PK parameters (CL, V, ka, half-life, or PK model) for imidapril are reported. |
-| popPK | Fujii_1993 | irrelevant | 0 | 0 | The paper reports PK parameters for flomoxef, not imidapril, so no imidapril disposition values are present. |
+| popPK | Cai_1998 | irrelevant | 0 | 0 | The study investigates cerebral blood flow autoregulation and hemodynamics, not the pharmacokinetic disposition parameters (CL, V, ka) of imidapril. |
+| popPK | Fujii_1993 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of flomoxef, not imidapril. |
 | popPK | Harder_1997 | irrelevant | 3 | 4 | A human interaction study reporting only non-compartmental exposure metrics (AUC, Cmax, tmax, urinary recovery) for imidapril/imidaprilat, with no clearance, volume, or population-PK model parameters; the ~19 h half-life is cited from literature without a volume. |
 | popPK | Harder_1998 | irrelevant | 0 | 0 | no_text gate: only 122 chars of text extracted (&lt; 400) |
-| PGx | He_2013 | not_relevant | 3 | 2 | For imidapril the paper explicitly reports no significant genotype effect on blood pressure response; pharmacogenomic effects are only for CCBs and alpha/beta-blockers. |
-| popPK | Higashino_1987 | irrelevant | 0 | 0 | The paper concerns flomoxef, not imidapril; no imidapril PK parameters are present. |
-| popPK | Hoogkamer_1997 | relevant | 6 | 1 | PK study of imidapril in liver-impaired patients, but evidence contains only abstract text with Cmax/AUC mentioned qualitatively and no numeric parameter values provided. |
-| popPK | Hoogkamer_1998 | relevant | 6 | 2 | A PK study of imidapril/imidaprilat in renal failure, but the evidence contains only Cmax/AUC comparisons, no numeric disposition parameters (CL, V, t½) which likely reside in tables/figures not provided. |
-| popPK | Hosoda_1987 | irrelevant | 0 | 0 | The paper reports PK parameters for flomoxef, not imidapril. |
-| popPK | Hosoya_2000 | irrelevant | 0 | 0 | This is a canine cardioprotection study with imidaprilat only as an infused intervention; no PK parameters (CL, V, ka, half-life, or PK model) are reported. |
+| PGx | He_2013 | not_relevant | 0 | 0 | The study explicitly reports no significant difference in drug response for imidapril among KCNH2 genotypes. |
+| popPK | Higashino_1987 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of flomoxef, not imidapril. |
+| popPK | Hosoda_1987 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of flomoxef, not imidapril. |
+| popPK | Hosoya_2000 | irrelevant | 0 | 0 | The study investigates the cardioprotective effects of imidapril on myocardial ischemia-reperjury in dogs, reporting hemodynamic and contractile parameters (E(c), L(0)) rather than pharmacokinetic disposition parameters (CL, V, ka). |
 | PD | Hosoya_2000 | not_relevant | 2 | 1 | Animal ischemia-reperfusion study with fixed-dose imidaprilat infusion vs control; no concentration-effect or dose-response relationship or PD parameters (Emax/EC50 etc.) reported or derivable. |
-| popPK | Ihara_1991 | irrelevant | 0 | 0 | The paper concerns flomoxef in neonates, not imidapril, and no imidapril PK parameters appear. |
-| popPK | Ishizuka_1997 | irrelevant | 0 | 0 | The study concerns temocaprilat biliary excretion; imidapril is only mentioned as a non-inhibiting comparator with no PK parameters reported. |
-| popPK | Katoh_2000 | irrelevant | 1 | 0 | This is a pharmacodynamic study of imidapril in diabetic mice with no PK parameters (CL, V, ka, half-life, or model) reported. |
-| popPK | Kim_2022 | irrelevant | 0 | 0 | This is a zebrafish neuroprotection screening study with no imidapril PK data; olmesartan is mentioned only as a screened compound, not imidapril. |
+| popPK | Ihara_1991 | irrelevant | 0 | 0 | The study evaluates the pharmacokinetics of flomoxef, not imidapril. |
+| popPK | Ishizuka_1997 | irrelevant | 0 | 0 | The study focuses on the biliary excretion mechanism of temocaprilat in rats, and imidapril is only mentioned as a comparator that did not affect transport. |
+| popPK | Katoh_2000 | irrelevant | 0 | 0 | The study is a pharmacodynamic/efficacy trial in mice measuring blood pressure and renal ACE activity, not a pharmacokinetic study reporting disposition parameters. |
+| popPK | Kim_2022 | irrelevant | 0 | 0 | The paper is a neuroprotective compound screen in zebrafish and does not involve imidapril or its pharmacokinetics. |
 | PD | Kim_2022 | not_relevant | 0 | 0 | This is a zebrafish phenotypic screening study for neuroprotective compounds; imidapril is not studied and no drug exposure-response or concentration-effect PD relationship with numeric parameters is reported. |
-| popPK | Matsubara_2002 | irrelevant | 0 | 0 | The paper concerns other drugs (450191-S, 480156-S, cephem antibiotics); imidapril is not mentioned and no PK parameters for it appear. |
-| popPK | Meguro_1987 | irrelevant | 0 | 0 | The paper concerns flomoxef, not imidapril; no imidapril PK parameters are present. |
-| PGx | Merali_2014 | not_relevant | 2 | 1 | Imidapril is only mentioned as a CES1 substrate; no gene variant effect on its PK/PD parameters is reported. |
-| popPK | Monteagudo_2018 | irrelevant | 0 | 0 | This is a dermatology case report about clindamycin hypersensitivity; imidapril is only mentioned as a concomitant medication with no PK parameters. |
-| popPK | Morimoto_1987 | irrelevant | 0 | 0 | The paper concerns flomoxef, not imidapril; no imidapril PK parameters are reported. |
-| popPK | Motohiro_1987 | irrelevant | 0 | 0 | The paper concerns flomoxef, not imidapril; no imidapril PK parameters are reported. |
-| PGx | Okamura_1999 | not_relevant | 2 | 3 | The paper examines whether ACE I/D genotype modifies the clinical effect of imidapril on restenosis after PTCA, not a PK or PD parameter of the drug. |
+| popPK | Matsubara_2002 | irrelevant | 0 | 0 | The paper discusses drug interactions and toxicology of unrelated compounds (rilmazafone, 480156-S, flomoxef) and does not mention imidapril. |
+| popPK | Meguro_1987 | irrelevant | 0 | 0 | The study evaluates the pharmacokinetics of flomoxef, not imidapril. |
+| popPK | Monteagudo_2018 | irrelevant | 0 | 0 | The paper is a dermatology case report regarding clindamycin hypersensitivity, and imidapril is only listed as a concomitant medication with no pharmacokinetic data. |
+| popPK | Morimoto_1987 | irrelevant | 0 | 0 | The study evaluates the pharmacokinetics of flomoxef, not imidapril. |
+| popPK | Motohiro_1987 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of flomoxef, not imidapril. |
+| PGx | Okamura_1999 | not_relevant | 2 | 0 | The study investigates the effect of ACE genotype on the clinical outcome (restenosis) of imidapril, not on its pharmacokinetic or pharmacodynamic parameters. |
 | popPK | Phillips_2019 | irrelevant | 1 | 2 | This is an in vitro enzyme-inhibition study of purified human carboxylesterase (hCE1) using imidapril only as a probe substrate; it reports enzyme kinetics (Km, Vmax, IC50, Ki) but no pharmacokinetic disposition parameters (CL, V, ka, half-life, or PK model) for imidapril. |
 | PD | Phillips_2019 | not_relevant | 2 | 5 | This is an in vitro enzyme-inhibition study (IC50/Ki of OPEs against hCE1-mediated imidapril prodrug activation), i.e., a metabolic/PK interaction, not a pharmacodynamic exposure-response relationship for imidapril; while numeric Ki/IC50 values are stated, they describe inhibitor-enzyme binding rather than imidapril dose/concentration-effect PD. |
-| popPK | Pinto_1996 | irrelevant | 2 | 0 | This is a haemodynamic dose-finding study with no PK parameters (no CL, V, ka, half-life, or PK model) reported for imidapril. |
-| popPK | Sanders_2005 | irrelevant | 0 | 0 | This is an in-vitro/mechanistic cancer cachexia study using imidapril only as a co-incubation tool and anticachectic treatment; no PK parameters (CL, V, ka, half-life, or PK model) for imidapril are reported. |
+| popPK | Pinto_1996 | irrelevant | 0 | 0 | The study is a dose-finding trial focusing on hemodynamic effects and ACE inhibition, reporting no quantitative pharmacokinetic parameters (CL, V, ka, etc.) for imidapril. |
+| popPK | Sanders_2005 | irrelevant | 0 | 0 | The study is a mechanistic investigation of protein catabolism in muscle and cancer cachexia where imidapril is used only as a pharmacological tool to inhibit ACE, not as the subject of a pharmacokinetic analysis. |
 | PD | Sanders_2005 | not_relevant | 2 | 1 | Imidapril appears only as a qualitative inhibitor/attenuator (in vitro imidaprilat, single-dose 30 mg/kg in vivo); the dose-response curves are for angiotensin I/II, not for imidapril, so no imidapril exposure-response or PD parameters are extractable. |
-| popPK | Song_2002 | irrelevant | 4 | 0 | This is a narrative review of ACE inhibitors including imidapril, with no numeric PK parameters (CL, V, t½, ka) present in the evidence. |
+| popPK | Song_2002 | irrelevant | 2 | 0 | This is a review article that discusses imidapril qualitatively but does not provide specific quantitative pharmacokinetic parameter values (CL, V, ka, etc.) in the text. |
 | PD | Song_2002 | not_relevant | 2 | 0 | Narrative review of ACE inhibitors; only qualitative statements (flat dose-response curves) with no numeric PD parameters for imidapril. |
 | popPK | Sugaya_1992 | irrelevant | 1 | 0 | This is an in vitro enzyme-kinetics study reporting ACE inhibition constants (Ki, IC50) for imidapril's active metabolite 6366A, not pharmacokinetic disposition parameters (CL, V, ka, half-life, or a PK model); no PK values are present. |
 | PD | Sugaya_1992 | not_relevant | 3 | 3 | In vitro ACE inhibition (Ki/IC50) for imidapril's active metabolite 6366A; no in-vivo exposure- or dose-response PD relationship. |
 | popPK | Thoulon_2003 | irrelevant | 3 | 4 | This is a 90-day tolerance/toxicity study in cats with only toxicokinetic accumulation ratios (Cmax and AUC day-to-day ratios) for imidapril/imidaprilat; no clearance, volume, half-life, or PK model parameters are reported, though the ratio values themselves are present in the text. |
 | PD | Thoulon_2003 | not_relevant | 1 | 0 | This is a 90-day tolerance/toxicity study in cats; PD is only mentioned qualitatively (0.5 mg/kg/day deemed pharmacodynamically effective) with no ACE activity, effect-vs-concentration data, or numeric PD parameters (Emax, EC50, etc.) reported or derivable. |
-| popPK | Toutain_2004 | irrelevant | 3 | 0 | A review-style discussion of ACE inhibitor PK/PD concepts with no numeric disposition parameters for imidapril present in the evidence. |
-| popPK | Yamada_1992 | relevant | 6 | 4 | Animal PK study of imidapril reporting half-lives (e.g., M1 0.9–2.3 h rats, 6.3–9.3 h dogs), but no CL/V or compartmental parameters and no full numeric table in the evidence. |
-| popPK | Yamada_1992_2 | relevant | 6 | 3 | Animal PK study of imidapril as subject drug, but the evidence (abstract only) contains absorption fractions and timing, not numeric CL/V/compartmental parameters, which may be in tables not provided. |
-| popPK | Yamanaka_1996 | irrelevant | 3 | 1 | This is a PK/PD steady-state infusion study in rats, but no quantitative disposition parameters (CL, V, half-life, or model values) for imidapril/imidaprilat appear in the evidence. |
-| popPK | Yamanaka_1996_2 | irrelevant | 2 | 1 | This is an analytical assay validation paper (RIA method) with no PK parameter values reported; it only mentions applicability to pharmacokinetic studies. |
-| popPK | Yamanaka_1997 | irrelevant | 4 | 1 | PK/PD study of imidapril in rats, but the evidence contains no numeric disposition parameters (CL, V, half-life) — values would be in figures/tables not provided. |
-| popPK | Yamanaka_1997_2 | irrelevant | 4 | 1 | PK/PD study of imidaprilat in rats, but no numeric disposition parameters (CL, V, t½) are present in the evidence. |
-| popPK | Yang_2014 | irrelevant | 0 | 0 | The paper is a PBPK model for methylphenidate, not imidapril; no imidapril parameters appear anywhere. |
+| popPK | Toutain_2004 | irrelevant | 2 | 0 | The paper is a mechanistic review discussing PK/PD concepts for ACE inhibitors without providing specific quantitative parameter values for imidapril. |
+| popPK | Tsuruoka_2007 | relevant | 4 | 8 | The study reports dialyzer clearance (CL) and elimination fraction for imidaprilat (active metabolite) in humans, which are quantitative disposition parameters, though it lacks a full compartmental PK model (V, Q, ka). |
+| popPK | Yamada_1992 | relevant | 9 | 2 | The study reports quantitative pharmacokinetic parameters (half-lives) for the active metabolite of imidapril in animals, but specific clearance or volume values are not present in the provided abstract text. |
+| popPK | Yamada_1992_2 | relevant | 10 | 2 | The study reports quantitative PK parameters for imidapril in rats and dogs, but the specific numeric values (CL, V, etc.) are not present in the provided abstract text. |
+| popPK | Yamanaka_1996 | relevant | 8 | 0 | The study reports steady-state pharmacokinetics of imidaprilat (active metabolite) in rats, but the specific numeric parameter values (CL, V, etc.) are not present in the provided abstract text. |
+| popPK | Yamanaka_1996_2 | irrelevant | 2 | 0 | The paper describes the development and validation of a radioimmunoassay method for imidapril and does not report quantitative pharmacokinetic parameters (CL, V, etc.) in the provided evidence. |
+| popPK | Yamanaka_1997 | relevant | 8 | 2 | The study reports PK/PD of imidapril (via its active metabolite imidaprilat) in rats, but the provided evidence contains only qualitative descriptions of concentration profiles without specific numeric parameter values (CL, V, etc.). |
+| popPK | Yamanaka_1997_2 | relevant | 9 | 2 | The study reports PK/PD of imidaprilat (active metabolite of imidapril) in rats, but specific numeric parameter values (CL, V, etc.) are not present in the provided abstract text. |
+| popPK | Yang_2014 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of methylphenidate, not imidapril. |
 | PD | Yang_2014 | not_relevant | 0 | 0 | Paper is purely a PBPK (pharmacokinetic) model for methylphenidate; no pharmacodynamic or exposure-response relationships or PD parameters are reported. |
-| popPK | Yanjiao_2013 | irrelevant | 2 | 1 | In-vitro enzyme inhibition study using imidapril only as a substrate; no PK disposition parameters (CL, V, t½, ka) for imidapril are reported. |
-| popPK | Yoshimura_2008 | irrelevant | 2 | 0 | Pharmacogenetic study of CES1 promoter polymorphisms with no PK parameters for imidapril reported. |
-| popPK | Zhang_2014 | irrelevant | 1 | 1 | In-vitro enzyme inhibition study using imidapril only as a CES substrate; no PK disposition parameters (CL, V, ka, half-life, or population-PK model) for imidapril are reported. |
+| popPK | Yanjiao_2013 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic evaluation of enzyme inhibition (CES1A1/CES2) using imidapril as a substrate, not a pharmacokinetic study reporting disposition parameters (CL, V, etc.) for imidapril. |
+| popPK | Yoshimura_2008 | irrelevant | 0 | 0 | The study focuses on pharmacogenetics (CES1A2 polymorphisms) and in vitro transcriptional activity, reporting no quantitative pharmacokinetic parameters (CL, V, ka, etc.) for imidapril. |
+| popPK | Zhang_2014 | irrelevant | 0 | 0 | The study is an in-vitro enzyme inhibition assay measuring the effect of excipients on carboxylesterase activity, not a pharmacokinetic study reporting disposition parameters (CL, V, ka) for imidapril. |
 
 ---
 <sub>Generated by `docs.py` (scholarv2)</sub>
