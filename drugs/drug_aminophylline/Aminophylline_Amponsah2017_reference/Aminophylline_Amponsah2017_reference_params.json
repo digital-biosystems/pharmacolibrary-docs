@@ -1,0 +1,30 @@
+{
+ "dose_source": "WHO ATC DDD 600 mg parenteral (R03DA05)",
+ "model_id": "Aminophylline_Amponsah2017_reference",
+ "molar_masses": {
+  "central.C": 0.4204264
+ },
+ "note": "Values for the shared PK_1C.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "parameters": {
+  "Cl": 4.2500000000000003e-08,
+  "F": 1.0,
+  "MM": 0.4204264,
+  "VdPerKg": 4.2e-05,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 0.0006,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 660.000000066213
+ },
+ "reference_peaks": {
+  "central.C": 0.20319913787592078
+ },
+ "stop_time": 259200.0,
+ "template": "PK_1C",
+ "template_fmu": "PK_1C.fmu"
+}

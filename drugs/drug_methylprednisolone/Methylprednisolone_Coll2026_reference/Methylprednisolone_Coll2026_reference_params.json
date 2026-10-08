@@ -1,0 +1,36 @@
+{
+ "dose_source": "paper",
+ "model_id": "Methylprednisolone_Coll2026_reference",
+ "molar_masses": {
+  "central.C": 0.3744706
+ },
+ "note": "Values for the shared PK_1C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "paper_doses_kind": "discrete",
+ "paper_doses_mg": [
+  12.0
+ ],
+ "parameters": {
+  "Cl": 2.4444444444444447e-06,
+  "F": 1.0,
+  "MM": 0.3744706,
+  "Tlag": 0.0,
+  "VdPerKg": 0.00013714285714285713,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 1.2e-05,
+  "ka": 0.00020833333333333332,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 4705.9863793380955
+ },
+ "reference_peaks": {
+  "central.C": 0.0004142268416125862
+ },
+ "stop_time": 86400.0,
+ "template": "PK_1C_enteral",
+ "template_fmu": "PK_1C_enteral.fmu"
+}

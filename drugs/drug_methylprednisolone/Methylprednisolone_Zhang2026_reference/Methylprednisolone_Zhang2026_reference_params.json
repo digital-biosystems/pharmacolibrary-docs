@@ -1,0 +1,32 @@
+{
+ "dose_source": "WHO ATC DDD 7.5 mg oral (H02AB04)",
+ "model_id": "Methylprednisolone_Zhang2026_reference",
+ "molar_masses": {
+  "central.C": 0.3744706
+ },
+ "note": "Values for the shared PK_1C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "parameters": {
+  "Cl": 5.63888888888889e-06,
+  "F": 1.0,
+  "MM": 0.3744706,
+  "Tlag": 0.0,
+  "VdPerKg": 0.027428571428571427,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 7.5e-06,
+  "ka": 0.0012444444444444445,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 4848.09619238477
+ },
+ "reference_peaks": {
+  "central.C": 3.849246917394921e-06
+ },
+ "stop_time": 1209600.0,
+ "template": "PK_1C_enteral",
+ "template_fmu": "PK_1C_enteral.fmu"
+}
