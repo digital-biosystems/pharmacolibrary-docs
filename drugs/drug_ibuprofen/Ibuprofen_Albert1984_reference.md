@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C01E&quot;,&quot;href&quot;:&quot;atc/C01E.md&quot;},{&quot;label&quot;:&quot;ibuprofen&quot;,&quot;href&quot;:&quot;drugs/drug_ibuprofen/&quot;},{&quot;label&quot;:&quot;Albert_1984 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Ibuprofen_Brown1998_ibu05&quot;,&quot;label&quot;:&quot;Brown_1998_ibu05&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ibuprofen/Ibuprofen_Brown1998_ibu05.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ibuprofen_Brown1998_ibu10&quot;,&quot;label&quot;:&quot;Brown_1998_ibu10&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ibuprofen/Ibuprofen_Brown1998_ibu10.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ibuprofen_Clissold1987_reference&quot;,&quot;label&quot;:&quot;Clissold_1987_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ibuprofen/Ibuprofen_Clissold1987_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ibuprofen_DeGraves1993v2_reference&quot;,&quot;label&quot;:&quot;DeGraves_1993_2_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ibuprofen/Ibuprofen_DeGraves1993v2_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ibuprofen_Knihinicki1990_reference&quot;,&quot;label&quot;:&quot;Knihinicki_1990_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ibuprofen/Ibuprofen_Knihinicki1990_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ibuprofen_Todd1986_reference&quot;,&quot;label&quot;:&quot;Todd_1986_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ibuprofen/Ibuprofen_Todd1986_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ibuprofen_Trocniz2000_reference&quot;,&quot;label&quot;:&quot;Troc\u00f3niz_2000_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ibuprofen/Ibuprofen_Trocniz2000_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Hannam_2018_PPPM&quot;,&quot;label&quot;:&quot;Hannam_2018 \u00b7 PPPM&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_ibuprofen/pd_Hannam_2018_PPPM.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Ibuprofen_DeGraves1993v2_reference&quot;,&quot;label&quot;:&quot;DeGraves_1993_2_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ibuprofen/Ibuprofen_DeGraves1993v2_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ibuprofen_Knihinicki1990_reference&quot;,&quot;label&quot;:&quot;Knihinicki_1990_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ibuprofen/Ibuprofen_Knihinicki1990_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ibuprofen_Todd1986_reference&quot;,&quot;label&quot;:&quot;Todd_1986_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ibuprofen/Ibuprofen_Todd1986_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ibuprofen_Trocniz2000_reference&quot;,&quot;label&quot;:&quot;Troc\u00f3niz_2000_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ibuprofen/Ibuprofen_Trocniz2000_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Hannam_2018_PPPM&quot;,&quot;label&quot;:&quot;Hannam_2018 \u00b7 PPPM&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_ibuprofen/pd_Hannam_2018_PPPM.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -23,7 +23,7 @@ The record is a general linear model for ibuprofen with a volume of distribution
 
 <sub>reviewed by glm-5.3-flash</sub>
 
-> ⚠️ **STALE** — review status `rejected` (reviewed 2026-09-28 14:38:18.998344+00:00) predates the upstream re-run (2026-10-06 11:48:01.930287+00:00). Current validate status: `rejected`.
+> ⚠️ **STALE** — review status `rejected` (reviewed 2026-09-28 14:38:18.998344+00:00) predates the upstream re-run (2026-10-08 11:42:00.530015+00:00). Current validate status: `rejected`.
 
 ## Citation
 Albert KS et al., Pharmacokinetics of ibuprofen, The American journal of med… (1984)
@@ -33,7 +33,7 @@ Albert KS et al., Pharmacokinetics of ibuprofen, The American journal of med… 
 <dbs-pgx drug="ibuprofen" model-id="Ibuprofen_Albert1984_reference" status="rejected" stale="true" population="healthy adults" measured-compound="ibuprofen" parameterization="mechanistic" topology="general_linear"></dbs-pgx>
 
 **Model structure:** general linear; no model was built for this record.  
-**Parameters:** 2 extracted.
+**Parameters:** 4 extracted.
 
 **Parameterization:** mechanistic.
 
@@ -43,7 +43,9 @@ Albert KS et al., Pharmacokinetics of ibuprofen, The American journal of med… 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
 | volume of distribution | `Q61` · V | 6.35 | liters | 0.00635 | L | not captured | exact (1.0) | Albert_1984:other_prose | — | not captured |
+| Plasma clearance | `Q22` · CL | 0.0 | L/h | 0.0 | L/h | not captured | review_gapfill (0.7) | Gonzalez_1987:review | — | not captured |
 | first-order absorption rate constant (k a) | `Q49` · kabs | 1.1 | h -1 | 0.0003055555555555556 | 1/h | not captured | review_gapfill (0.7) | Hong_2008:review | — | not captured |
+| lag time | `Q83` · tlag | 34.0 | min | 2040.0 | h | not captured | review_gapfill (0.7) | Nagayasu_2019:review | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -63,10 +65,11 @@ Albert KS et al., Pharmacokinetics of ibuprofen, The American journal of med… 
 - held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
 - topology: transfer parameter unlinked (Q100) — add Kfm/formation-rate/rate-constant to the ontology; routing to review
 - status held at route_to_review — not promoted
-- skipped review gap-fill of CL from Clissold_1987: its label names a different analyte ('proquazone') — 'total body clearance of proquazone'
+- gap-filled Q22 (CL) from Gonzalez_1987's review values (primary lacked it)
 - skipped review gap-fill of V2: primary is GENERAL_LINEAR (peripheral family needs ≥2C)
 - skipped review gap-fill of Q: primary is GENERAL_LINEAR (peripheral family needs ≥2C)
 - gap-filled Q49 (kabs) from Hong_2008's review values (primary lacked it)
+- gap-filled Q83 (tlag) from Nagayasu_2019's review values (primary lacked it)
 
 **Extraction notes:**
 - no TEI final-model table id; trying text-pointer table recovery
@@ -80,7 +83,6 @@ Albert KS et al., Pharmacokinetics of ibuprofen, The American journal of med… 
 | C0_has_structural_params | pass | not captured | 1 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | fail | not captured | not captured | not captured | not captured | not captured |
-| C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['Hong_2008:review'] |
 | C8_topology | fail | ontology-linked transfer parameter on every edge | ['none', 'none'] | not captured | not captured | not captured |
 | C9_phys_window_Q61 | pass | volume within physiological range | 6.35 L | not captured | not captured | ['Albert_1984:other_prose'] |
 
@@ -107,4 +109,4 @@ _No web simulator for this record: its structure has no shared WebAssembly templ
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-06 11:48 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-08 11:42 UTC</sub>

@@ -3496,7 +3496,7 @@
    "G04BE01"
   ],
   "counts": {
-   "pd": 0,
+   "pd": 1,
    "pgx": 0,
    "pk": 0
   },
@@ -52181,20 +52181,12 @@
    "R02AX02"
   ],
   "counts": {
-   "pd": 2,
-   "pgx": 8,
-   "pk": 7
+   "pd": 3,
+   "pgx": 11,
+   "pk": 5
   },
   "curated": 0,
   "details": [
-   {
-    "label": "Brown_1998 \u00b7 ibu05",
-    "model_id": "Ibuprofen_Brown1998_ibu05"
-   },
-   {
-    "label": "Brown_1998 \u00b7 ibu10",
-    "model_id": "Ibuprofen_Brown1998_ibu10"
-   },
    {
     "label": "Clissold_1987 \u00b7 reference",
     "model_id": "Ibuprofen_Clissold1987_reference"
@@ -52216,8 +52208,20 @@
     "model_id": "Ibuprofen_Trocniz2000_reference"
    },
    {
+    "label": "DeGraves_1993 \u00b7 reference",
+    "model_id": "Ibuprofen_DeGraves1993_reference"
+   },
+   {
     "label": "Gregoire_2004 \u00b7 reference",
     "model_id": "Ibuprofen_Gregoire2004_reference"
+   },
+   {
+    "label": "Hannam_2018 \u00b7 reference",
+    "model_id": "Ibuprofen_Hannam2018_reference"
+   },
+   {
+    "label": "Gonzalez_1987 \u00b7 reference",
+    "model_id": "Ibuprofen_Gonzalez1987_reference"
    },
    {
     "label": "Albert_1984 \u00b7 reference",
@@ -52232,12 +52236,12 @@
     "model_id": "Ibuprofen_Asif2025_reference"
    },
    {
-    "label": "DeGraves_1993 \u00b7 reference",
-    "model_id": "Ibuprofen_DeGraves1993_reference"
+    "label": "Brown_1998 \u00b7 ibu05",
+    "model_id": "Ibuprofen_Brown1998_ibu05"
    },
    {
-    "label": "Hannam_2018 \u00b7 reference",
-    "model_id": "Ibuprofen_Hannam2018_reference"
+    "label": "Brown_1998 \u00b7 ibu10",
+    "model_id": "Ibuprofen_Brown1998_ibu10"
    },
    {
     "label": "Kirchheiner_2002 \u00b7 reference",
@@ -52249,11 +52253,11 @@
    }
   ],
   "dir": "drug_ibuprofen",
-  "extracted": 7,
-  "last_change": "2026-10-06T11:52:49.784926+00:00",
+  "extracted": 5,
+  "last_change": "2026-10-08T11:43:25.267238+00:00",
   "name": "ibuprofen",
-  "needs_review": 1,
-  "records": 15,
+  "needs_review": 3,
+  "records": 16,
   "rejected": 7,
   "rendered": true,
   "slug": "ibuprofen",

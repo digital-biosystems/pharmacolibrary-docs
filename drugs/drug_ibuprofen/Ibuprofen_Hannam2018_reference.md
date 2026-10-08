@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C01E&quot;,&quot;href&quot;:&quot;atc/C01E.md&quot;},{&quot;label&quot;:&quot;ibuprofen&quot;,&quot;href&quot;:&quot;drugs/drug_ibuprofen/&quot;},{&quot;label&quot;:&quot;Hannam_2018 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Ibuprofen_Brown1998_ibu05&quot;,&quot;label&quot;:&quot;Brown_1998_ibu05&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ibuprofen/Ibuprofen_Brown1998_ibu05.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ibuprofen_Brown1998_ibu10&quot;,&quot;label&quot;:&quot;Brown_1998_ibu10&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ibuprofen/Ibuprofen_Brown1998_ibu10.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ibuprofen_Clissold1987_reference&quot;,&quot;label&quot;:&quot;Clissold_1987_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ibuprofen/Ibuprofen_Clissold1987_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ibuprofen_DeGraves1993v2_reference&quot;,&quot;label&quot;:&quot;DeGraves_1993_2_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ibuprofen/Ibuprofen_DeGraves1993v2_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ibuprofen_Knihinicki1990_reference&quot;,&quot;label&quot;:&quot;Knihinicki_1990_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ibuprofen/Ibuprofen_Knihinicki1990_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ibuprofen_Todd1986_reference&quot;,&quot;label&quot;:&quot;Todd_1986_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ibuprofen/Ibuprofen_Todd1986_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ibuprofen_Trocniz2000_reference&quot;,&quot;label&quot;:&quot;Troc\u00f3niz_2000_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ibuprofen/Ibuprofen_Trocniz2000_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Hannam_2018_PPPM&quot;,&quot;label&quot;:&quot;Hannam_2018 \u00b7 PPPM&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_ibuprofen/pd_Hannam_2018_PPPM.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Ibuprofen_DeGraves1993v2_reference&quot;,&quot;label&quot;:&quot;DeGraves_1993_2_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ibuprofen/Ibuprofen_DeGraves1993v2_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ibuprofen_Knihinicki1990_reference&quot;,&quot;label&quot;:&quot;Knihinicki_1990_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ibuprofen/Ibuprofen_Knihinicki1990_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ibuprofen_Todd1986_reference&quot;,&quot;label&quot;:&quot;Todd_1986_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ibuprofen/Ibuprofen_Todd1986_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ibuprofen_Trocniz2000_reference&quot;,&quot;label&quot;:&quot;Troc\u00f3niz_2000_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ibuprofen/Ibuprofen_Trocniz2000_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Hannam_2018_PPPM&quot;,&quot;label&quot;:&quot;Hannam_2018 \u00b7 PPPM&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_ibuprofen/pd_Hannam_2018_PPPM.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # ibuprofen — `Ibuprofen_Hannam2018_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. The first reading is what the record holds.">cross-check: partial</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. The first reading is what the record holds.">cross-check: partial</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -23,28 +23,29 @@ For ibuprofen in children undergoing adenotonsillectomy, the one-compartment mod
 
 <sub>reviewed by glm-5.3-flash</sub>
 
-> ⚠️ **STALE** — review status `rejected` (reviewed 2026-09-28 14:38:19.168458+00:00) predates the upstream re-run (2026-10-06 11:52:31.373824+00:00). Current validate status: `rejected`.
+> ⚠️ **STALE** — review status `rejected` (reviewed 2026-09-28 14:38:19.168458+00:00) predates the upstream re-run (2026-10-08 11:43:22.002452+00:00). Current validate status: `needs_review`.
 
 ## Citation
 Hannam JA et al., Acetaminophen, ibuprofen, and tramadol…, Paediatric anaesthesia (2018)
   ·  DOI: [10.1111/pan.13464](https://doi.org/10.1111/pan.13464)
 
 ## Model component
-<dbs-pgx drug="ibuprofen" model-id="Ibuprofen_Hannam2018_reference" status="rejected" stale="true" population="children undergoing adenotonsillectomy" measured-compound="ibuprofen" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<dbs-pgx drug="ibuprofen" model-id="Ibuprofen_Hannam2018_reference" status="needs_review" stale="true" population="children undergoing adenotonsillectomy" measured-compound="ibuprofen" parameterization="mechanistic" topology="1C"></dbs-pgx>
 
 **Model structure:** 1-compartment; no model was built for this record.  
-**Parameters:** 3 extracted.
+**Parameters:** 4 extracted.
 
 **Parameterization:** mechanistic.
 
 ## Parameters
-> ⚠️ This record is not accepted (current status `rejected`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
+> ⚠️ This record is not accepted (current status `needs_review`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
 | CL ACET (L/h.70 kg -1 ) | `Q22` · CL | 13.2 | L/h.70 kg -1 | 0.00025666666666666665 | L/h | not captured | boundary (0.8) | Hannam_2018:other_prose | — | not captured |
-| V,, | `Q61` · V | 22.37 | ml | 2.237e-05 | L | not captured | review_gapfill (0.7) | Askholt_1985:review | — | not captured |
+| VD (l/kg) | `Q61` · V | 0.13 | l/kg | 0.0091 | L | not captured | review_gapfill (0.7) | Brune_2007:review | — | not captured |
 | first-order absorption rate constant (k a) | `Q49` · kabs | 1.1 | h -1 | 0.0003055555555555556 | 1/h | not captured | review_gapfill (0.7) | Hong_2008:review | — | not captured |
+| lag time | `Q83` · tlag | 34.0 | min | 2040.0 | h | not captured | review_gapfill (0.7) | Nagayasu_2019:review | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -61,10 +62,11 @@ Hannam JA et al., Acetaminophen, ibuprofen, and tramadol…, Paediatric anaesthe
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=ibuprofen
 - held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
 - status held at route_to_review — not promoted
-- gap-filled Q61 (V) from Askholt_1985's review values (primary lacked it)
+- gap-filled Q61 (V) from Brune_2007's review values (primary lacked it)
 - skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
 - skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
 - gap-filled Q49 (kabs) from Hong_2008's review values (primary lacked it)
+- gap-filled Q83 (tlag) from Nagayasu_2019's review values (primary lacked it)
 
 **Extraction notes:**
 - transposed table Hannam_2018_table_p4_1: parameters were across the columns, populations/subgroups down the first column — transposed for parsing
@@ -78,12 +80,9 @@ Hannam JA et al., Acetaminophen, ibuprofen, and tramadol…, Paediatric anaesthe
 | C0_has_structural_params | pass | not captured | 1 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | fail | not captured | not captured | not captured | not captured | not captured |
-| C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['Hong_2008:review'] |
-| C5_dimension_Q61 | pass | [length] ** 3 | not captured | not captured | not captured | ['Askholt_1985:review'] |
 | C6_cl_magnitude | pass | &lt;= 90.0 L/h | 13.2 | not captured | not captured | ['Hannam_2018:other_prose'] |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
 | C9_phys_window_Q22 | pass | clearance within physiological range | 924 L/h | not captured | not captured | ['Hannam_2018:other_prose'] |
-| C9_phys_window_Q61 | fail | volume within physiological range | 0.0224 L | not captured | not captured | ['Askholt_1985:review'] |
 
 <details class="legend">
 <summary>Check legend — what each column means</summary>
@@ -97,9 +96,19 @@ Hannam JA et al., Acetaminophen, ibuprofen, and tramadol…, Paediatric anaesthe
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
-## Models
+## Downloadable models
 
-<p>No downloads: this record is <b>rejected</b>, so it is not published as a model. Any archives generated for it before the verdict have been removed — a download outlives the page that explains it.</p>
+<div class="pk-models-grid"><div class="pk-models-table">
+<table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
+</tbody></table>
+<p>No bundles have been generated for this record yet. When the engineer emits them they appear here automatically — this page reports what is on disk and generates nothing itself.</p>
+</div></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
@@ -108,4 +117,4 @@ _No web simulator for this record: its structure has no shared WebAssembly templ
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-06 11:52 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-08 11:43 UTC</sub>

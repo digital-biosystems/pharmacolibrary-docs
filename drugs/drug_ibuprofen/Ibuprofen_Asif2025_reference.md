@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C01E&quot;,&quot;href&quot;:&quot;atc/C01E.md&quot;},{&quot;label&quot;:&quot;ibuprofen&quot;,&quot;href&quot;:&quot;drugs/drug_ibuprofen/&quot;},{&quot;label&quot;:&quot;Asif_2025 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Ibuprofen_Brown1998_ibu05&quot;,&quot;label&quot;:&quot;Brown_1998_ibu05&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ibuprofen/Ibuprofen_Brown1998_ibu05.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ibuprofen_Brown1998_ibu10&quot;,&quot;label&quot;:&quot;Brown_1998_ibu10&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ibuprofen/Ibuprofen_Brown1998_ibu10.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ibuprofen_Clissold1987_reference&quot;,&quot;label&quot;:&quot;Clissold_1987_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ibuprofen/Ibuprofen_Clissold1987_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ibuprofen_DeGraves1993v2_reference&quot;,&quot;label&quot;:&quot;DeGraves_1993_2_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ibuprofen/Ibuprofen_DeGraves1993v2_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ibuprofen_Knihinicki1990_reference&quot;,&quot;label&quot;:&quot;Knihinicki_1990_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ibuprofen/Ibuprofen_Knihinicki1990_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ibuprofen_Todd1986_reference&quot;,&quot;label&quot;:&quot;Todd_1986_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ibuprofen/Ibuprofen_Todd1986_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ibuprofen_Trocniz2000_reference&quot;,&quot;label&quot;:&quot;Troc\u00f3niz_2000_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ibuprofen/Ibuprofen_Trocniz2000_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Hannam_2018_PPPM&quot;,&quot;label&quot;:&quot;Hannam_2018 \u00b7 PPPM&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_ibuprofen/pd_Hannam_2018_PPPM.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Ibuprofen_DeGraves1993v2_reference&quot;,&quot;label&quot;:&quot;DeGraves_1993_2_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ibuprofen/Ibuprofen_DeGraves1993v2_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ibuprofen_Knihinicki1990_reference&quot;,&quot;label&quot;:&quot;Knihinicki_1990_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ibuprofen/Ibuprofen_Knihinicki1990_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ibuprofen_Todd1986_reference&quot;,&quot;label&quot;:&quot;Todd_1986_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ibuprofen/Ibuprofen_Todd1986_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ibuprofen_Trocniz2000_reference&quot;,&quot;label&quot;:&quot;Troc\u00f3niz_2000_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ibuprofen/Ibuprofen_Trocniz2000_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Hannam_2018_PPPM&quot;,&quot;label&quot;:&quot;Hannam_2018 \u00b7 PPPM&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_ibuprofen/pd_Hannam_2018_PPPM.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -25,7 +25,7 @@ A second, independent reading of the paper (`gpt-5.6-luna`) disagrees on which m
 
 <sub>reviewed by glm-5.3-flash</sub>
 
-> ⚠️ **STALE** — review status `rejected` (reviewed 2026-09-28 14:38:19.023063+00:00) predates the upstream re-run (2026-10-06 11:48:11.986872+00:00). Current validate status: `rejected`.
+> ⚠️ **STALE** — review status `rejected` (reviewed 2026-09-28 14:38:19.023063+00:00) predates the upstream re-run (2026-10-08 11:42:03.805228+00:00). Current validate status: `rejected`.
 
 ## Citation
 Asif M et al., A Retrospective Analysis of PK and Resp…, Journal of clinical pharmac… (2025)
@@ -35,7 +35,7 @@ Asif M et al., A Retrospective Analysis of PK and Resp…, Journal of clinical p
 <dbs-pgx drug="ibuprofen" model-id="Ibuprofen_Asif2025_reference" status="rejected" stale="true" population="extremely low gestational age neonates with patent ductus arteriosus" measured-compound="ibuprofen" parameterization="mechanistic" topology="1C"></dbs-pgx>
 
 **Model structure:** 1-compartment; no model was built for this record.  
-**Parameters:** 3 extracted.
+**Parameters:** 5 extracted.
 
 **Parameterization:** mechanistic.
 
@@ -45,8 +45,10 @@ Asif M et al., A Retrospective Analysis of PK and Resp…, Journal of clinical p
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
 | AUC0‐24 h | `Q19` · AUCt | 486 | not captured | not captured | not captured | not captured | llm (0.6) | Asif_2025_table_2:row1:col1, Asif_2025_table_2:row1:col2 | — | not captured |
-| V,, | `Q61` · V | 22.37 | ml | 2.237e-05 | L | not captured | review_gapfill (0.7) | Askholt_1985:review | — | not captured |
+| Plasma clearance | `Q22` · CL | 0.0 | L/h | 0.0 | L/h | not captured | review_gapfill (0.7) | Gonzalez_1987:review | — | not captured |
+| VD (l/kg) | `Q61` · V | 0.13 | l/kg | 0.0091 | L | not captured | review_gapfill (0.7) | Brune_2007:review | — | not captured |
 | first-order absorption rate constant (k a) | `Q49` · kabs | 1.1 | h -1 | 0.0003055555555555556 | 1/h | not captured | review_gapfill (0.7) | Hong_2008:review | — | not captured |
+| lag time | `Q83` · tlag | 34.0 | min | 2040.0 | h | not captured | review_gapfill (0.7) | Nagayasu_2019:review | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -76,11 +78,12 @@ Asif M et al., A Retrospective Analysis of PK and Resp…, Journal of clinical p
 - table mostly unlinked (16/18 table-cell rows NIL) — likely the wrong table was located, not 2 genuinely-missing ontology parameter(s); route_to_review instead of building a model from the residual linked cell(s)
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=ibuprofen
 - status held at route_to_review — not promoted
-- skipped review gap-fill of CL from Clissold_1987: its label names a different analyte ('proquazone') — 'total body clearance of proquazone'
-- gap-filled Q61 (V) from Askholt_1985's review values (primary lacked it)
+- gap-filled Q22 (CL) from Gonzalez_1987's review values (primary lacked it)
+- gap-filled Q61 (V) from Brune_2007's review values (primary lacked it)
 - skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
 - skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
 - gap-filled Q49 (kabs) from Hong_2008's review values (primary lacked it)
+- gap-filled Q83 (tlag) from Nagayasu_2019's review values (primary lacked it)
 
 **Extraction notes:**
 - LLM selected parameter table(s) 2
@@ -127,12 +130,9 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
 | C0_has_structural_params | pass | not captured | 1 | not captured | not captured | not captured |
-| C0c_disposition_complete | fail | not captured | not captured | not captured | not captured | not captured |
-| C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['Hong_2008:review'] |
-| C5_dimension_Q61 | pass | [length] ** 3 | not captured | not captured | not captured | ['Askholt_1985:review'] |
+| C0b_disposition_core | fail | not captured | not captured | not captured | not captured | not captured |
 | C5_unit_missing_Q19 | fail | [mass] * [time] / [length] ** 3 | not captured | not captured | not captured | ['Asif_2025_table_2:row1:col1', 'Asif_2025_table_2:row1:col2'] |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
-| C9_phys_window_Q61 | fail | volume within physiological range | 0.0224 L | not captured | not captured | ['Askholt_1985:review'] |
 
 <details class="legend">
 <summary>Check legend — what each column means</summary>
@@ -157,4 +157,4 @@ _No web simulator for this record: its structure has no shared WebAssembly templ
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-06 11:48 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-08 11:42 UTC</sub>

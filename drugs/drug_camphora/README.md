@@ -18,7 +18,7 @@ Camphor is a natural compound that was used in cardiac therapy and, more general
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-06 11:37 | 5:20 | 0/0/0 | 0/0/0 | 0/0/0 | 246,008/3,812 | ollama / qwen3.8:27b-mtp-q8_0 | 38 | 2/18 | 37/1 | 0 |
+| 2026-10-08 11:38 | 1:15 | 0/0/0 | 0/0/0 | 0/0/0 | 243,358/3,863 | einfracz / qwen3.8-27b | 40 | 2/18 | 39/1 | 0 |
 
 ## popPK records
 
@@ -74,7 +74,7 @@ _21 paper(s) judged relevant from the abstract, with no full text on disk — pa
 | `Seo_2008.pdf` | Seo KA et al., The monoterpenoids citral and geraniol…, Chemico-biological interact… (2008) | pgx | 7 | [10.1016/j.cbi.2008.06.003](https://doi.org/10.1016/j.cbi.2008.06.003) | [18611395](https://www.ncbi.nlm.nih.gov/pubmed/18611395) | metadata signals extractable PGX data (CYP2B6, PK/PD-context) |
 | `Yao_2007.pdf` | Yao H et al., Structural evidence for a functionally…, Proteins (2007) | pgx | 7 | [10.1002/prot.21508](https://doi.org/10.1002/prot.21508) | [17598143](https://www.ncbi.nlm.nih.gov/pubmed/17598143) | metadata signals extractable PGX data (CYP3A4, PK/PD-context) |
 
-<sub>queue written 2026-10-06T11:33:56.658381+00:00</sub>
+<sub>queue written 2026-10-08T11:38:07.894484+00:00</sub>
 
 ## Screened and excluded
 
@@ -82,25 +82,25 @@ _21 paper(s) judged relevant from the abstract, with no full text on disk — pa
 |---|---|---|---|---|---|
 | PD | Aati_2024 | not_relevant | 0 | 0 | The paper reports phytochemical composition and in vitro enzyme inhibition percentages, but does not provide concentration-response curves, IC50 values, or any numeric pharmacodynamic parameters for camphor. |
 | PD | Ahmed-Laloui_2026 | not_relevant | 0 | 0 | The paper focuses on the cholinesterase inhibitory activity of Artemisia essential oils and does not mention camphora or report any pharmacodynamic or exposure-response relationships for it. |
-| popPK | Alfatemi_2015 | irrelevant | 0 | 0 | The study is an in-vitro analysis of essential oil composition and antibacterial activity, not a pharmacokinetic study of camphora. |
+| popPK | Alfatemi_2015 | irrelevant | 0 | 0 | The study analyzes the chemical composition and in vitro antimicrobial activity of essential oil, containing no pharmacokinetic parameters. |
 | PD | Alfatemi_2015 | not_relevant | 0 | 0 | The study reports the chemical composition of an essential oil (containing 3.71% camphor) and its bulk antimicrobial/antioxidant activity, but does not report a specific pharmacodynamic or exposure-response relationship for the individual compound camphor. |
-| popPK | Aramaki_2011 | irrelevant | 0 | 0 | The study investigates the molecular mechanism of d-camphor binding to a bacterial repressor protein (CamR) and reports dissociation constants (Kd), not pharmacokinetic disposition parameters (CL, V, ka, t1/2) for the drug. |
+| popPK | Aramaki_2011 | irrelevant | 0 | 0 | The paper studies the molecular binding mechanism of d-camphor to the bacterial repressor protein (CamR), which is an in vitro mechanistic study, not a pharmacokinetic study of drug disposition. |
 | PD | Aramaki_2011 | not_relevant | 0 | 0 | The paper describes molecular binding kinetics (Kd, Hill coefficient) of d-camphor to the CamR repressor protein, which is a biochemical mechanism study, not a pharmacodynamic (exposure-response) analysis of drug effect in a biological system. |
-| popPK | Asbabou_2024 | irrelevant | 0 | 0 | The study analyzes the phytochemical composition and antimicrobial properties of essential oils, not the pharmacokinetics of camphora. |
+| popPK | Asbabou_2024 | irrelevant | 0 | 0 | The study analyzes the phytochemical composition and antimicrobial properties of essential oils, containing no pharmacokinetic parameters for camphor. |
 | PD | Asbabou_2024 | not_relevant | 0 | 0 | The paper reports in vitro antioxidant and antimicrobial assays for essential oils, not a pharmacodynamic (exposure-response) relationship for the specific drug camphor. |
-| PGx | Avesani_2025 | not_relevant | 0 | 0 | The paper studies plant defense mechanisms in grapevine, not human pharmacogenomics or the pharmacokinetics/pharmacodynamics of camphor. |
+| PGx | Avesani_2025 | not_relevant | 0 | 0 | The paper studies plant defense mechanisms against downy mildew, not human pharmacogenomics or PK/PD parameters of the drug Camphora. |
 | popPK | Beiras_2019 | irrelevant | 0 | 0 | no_text gate: only 117 chars of text extracted (&lt; 400) |
 | PD | Beiras_2019 | not_relevant | 0 | 0 | The paper investigates the toxicity of nonylphenol and 4-MBC in the presence of microplastics, not the pharmacodynamics of camphora. |
 | PD | Burmistrov_2020 | not_relevant | 3 | 2 | The paper reports in vitro IC50 values for a series of compounds, which is a single-point potency metric rather than a pharmacodynamic exposure-response or dose-response curve analysis with derivable PD parameters like Emax or slope. |
 | popPK | Chebbac_2022 | irrelevant | 0 | 0 | no_text gate: only 146 chars of text extracted (&lt; 400) |
 | PD | Chebbac_2022 | not_relevant | 0 | 0 | The paper studies the antimicrobial activity of Artemisia aragonensis essential oil, not the pharmacodynamics of camphora. |
-| popPK | Chokechaijaroenporn_1994 | irrelevant | 0 | 0 | The study investigates mosquito repellent and larvicidal activities of essential oils, not the pharmacokinetics of camphora. |
+| popPK | Chokechaijaroenporn_1994 | irrelevant | 0 | 0 | The study reports mosquito repellent and larvicidal activities of essential oils, not pharmacokinetic parameters for camphor. |
 | PD | Chokechaijaroenporn_1994 | not_relevant | 3 | 2 | The paper reports EC50/EC90 values for essential oils (mixtures) against larvae, not for the specific compound camphor, and does not provide a concentration-effect curve or PD model for camphor itself. |
 | PD | DELPHAUT_1951 | not_relevant | 0 | 0 | The provided text is only a title and does not contain the full text or any numeric PD parameters, curves, or analysis results. |
-| popPK | Dai_2025 | irrelevant | 0 | 0 | The paper describes the synthesis and in vitro antifungal activity of camphor derivatives, not the pharmacokinetics of camphora. |
-| popPK | Demissie_2013 | irrelevant | 0 | 0 | The paper describes the biosynthesis of monoterpenes in lavender plants and does not report pharmacokinetic parameters for camphora. |
+| popPK | Dai_2025 | irrelevant | 0 | 0 | The study focuses on the in vitro antifungal activity and mechanistic design of camphor hydrazide derivatives as fungicides, not on the pharmacokinetics of camphora. |
+| popPK | Demissie_2013 | irrelevant | 0 | 0 | This is a biochemical study on the biosynthesis of monoterpenes in lavender plants (in vitro enzyme characterization) and does not report pharmacokinetic parameters for the drug camphora. |
 | PD | Demissie_2013 | not_relevant | 0 | 0 | The paper describes the biochemical characterization of a plant enzyme (lavandulyl diphosphate synthase) and its kinetic parameters (Km, kcat), not a pharmacodynamic or exposure-response relationship for the drug camphor. |
-| popPK | Duan_2022 | irrelevant | 0 | 0 | The study focuses on the synthesis, antifungal activity, and cytotoxicity of camphor derivatives, not on the pharmacokinetics of camphora. |
+| popPK | Duan_2022 | irrelevant | 0 | 0 | The study focuses on the synthesis and in vitro antifungal/cytotoxic activity of camphor derivatives, containing no pharmacokinetic data. |
 | popPK | Ed-Dra_2020 | irrelevant | 0 | 0 | no_text gate: only 177 chars of text extracted (&lt; 400) |
 | PD | Ed-Dra_2020 | not_relevant | 0 | 0 | The paper reports MICs and inhibition diameters for essential oils, not a pharmacodynamic exposure-response or dose-response curve with numeric PD parameters (e.g., Emax, EC50) for camphor. |
 | popPK | El_2022 | irrelevant | 0 | 0 | no_text gate: only 118 chars of text extracted (&lt; 400) |
@@ -112,21 +112,21 @@ _21 paper(s) judged relevant from the abstract, with no full text on disk — pa
 | PD | Ettakifi_2023 | not_relevant | 0 | 0 | The paper focuses on the chemical characterization and antifungal activity of Blue Tansy essential oil against a fungus, with no mention of camphora or any pharmacodynamic/exposure-response modeling. |
 | popPK | Farzaneh_2006 | irrelevant | 0 | 0 | no_text gate: only 130 chars of text extracted (&lt; 400) |
 | PD | Farzaneh_2006 | not_relevant | 0 | 0 | The paper studies the antifungal activity of Artemisia essential oils, not the drug camphora, and does not report pharmacodynamic parameters for camphora. |
-| popPK | Freitas_2021 | irrelevant | 0 | 0 | The study investigates the pharmacological mechanism of action (relaxing effect) of camphor in isolated rat trachea, not its pharmacokinetic disposition parameters. |
+| popPK | Freitas_2021 | irrelevant | 0 | 0 | The paper describes a pharmacological/mechanistic study of camphor's relaxing effect on isolated rat trachea (in vitro/ex vivo) rather than a pharmacokinetic study reporting disposition parameters. |
 | PD | Gogoi_2025 | not_relevant | 0 | 0 | The paper focuses on Curcuma amada essential oil, not camphora, and does not report specific pharmacodynamic parameters for camphora. |
-| popPK | Granger_2005 | irrelevant | 0 | 0 | The study is an in-vitro electrophysiology investigation of borneol's effect on GABA receptors, not a pharmacokinetic study of camphora. |
+| popPK | Granger_2005 | irrelevant | 0 | 0 | The study is an in-vitro electrophysiology investigation of borneol and its analogues (including camphor) on GABA receptors, containing no pharmacokinetic parameters. |
 | PD | Haj_2025 | not_relevant | 4 | 4 | The paper reports dose-response data (MIC, MFC, inhibition rates) for a complex essential oil mixture, not for the specific drug 'camphora' (camphor), and lacks a formal PD model or specific numeric PD parameters for the isolated compound. |
 | popPK | Hall_2004 | irrelevant | 0 | 0 | no_text gate: only 93 chars of text extracted (&lt; 400) |
 | PD | Hall_2004 | not_relevant | 0 | 0 | The paper investigates the pharmacology of monoterpenoids on recombinant receptors in Xenopus oocytes, not the pharmacodynamics of camphor in humans or a clinical PK/PD context. |
 | PD | Hashemi_2023 | not_relevant | 0 | 0 | The paper reports food science data (antimicrobial zones, lipid oxidation) for rosemary essential oil, not pharmacodynamic exposure-response relationships for the drug camphor. |
 | PD | He_2025 | not_relevant | 2 | 1 | The paper describes qualitative inhibition of foam-cell formation and atherosclerosis reduction but does not provide numeric PD parameters (e.g., IC50, Emax) or a quantitative exposure-response model for camphor. |
-| PGx | He_2025 | not_relevant | 0 | 0 | The paper investigates the pharmacokinetics and pharmacodynamics of Borneolum syntheticum (Bingpian) and its metabolites (including camphor) in wild-type humans and ApoE-/- mice, but it does not report any pharmacogenomic effects (i.e., how specific gene variants or genotypes alter PK/PD parameters). |
+| PGx | He_2025 | not_relevant | 2 | 0 | The study characterizes general first-pass metabolism of Borneolum syntheticum (Bingpian) constituents and their anti-atherosclerotic effects, but does not report any pharmacogenomic effects (gene variant-specific changes) on PK or PD parameters for camphora. |
 | popPK | Hendel_2024 | irrelevant | 0 | 0 | no_text gate: only 177 chars of text extracted (&lt; 400) |
 | PD | Hendel_2024 | not_relevant | 0 | 0 | The paper analyzes phytochemicals and antioxidant/antifungal activities of plant extracts, not the pharmacokinetics or pharmacodynamics of the specific drug camphora. |
-| popPK | Heneweer_2005 | irrelevant | 0 | 0 | The study is an in-vitro toxicology/estrogenicity assay of UV filters, not a pharmacokinetic study of camphora. |
+| popPK | Heneweer_2005 | irrelevant | 0 | 0 | The paper is an in-vitro toxicology study assessing estrogenic effects of UV filters (including 4-MBC, a camphor derivative) and does not report pharmacokinetic parameters for the drug camphora. |
 | PD | Huang_2025 | not_relevant | 1 | 0 | The study reports qualitative pharmacodynamic effects (inflammation markers) and pharmacokinetic changes (exposure) but does not provide numeric concentration-effect or dose-response parameters for camphor. |
 | PD | Ilić_2026 | not_relevant | 0 | 0 | The paper studies the effect of shading nets on lavender essential oil yield and composition, not the pharmacodynamics or exposure-response of a drug. |
-| PGx | Islam_1991 | not_relevant | 0 | 0 | The paper describes a molecular template for CYP2D6 substrates and does not report pharmacogenomic effects on the PK or PD of camphora. |
+| PGx | Islam_1991 | not_relevant | 0 | 0 | The paper discusses CYP2D6 substrate modeling and does not report pharmacogenomic effects on PK/PD parameters for camphora. |
 | popPK | Kang_2019 | irrelevant | 0 | 0 | no_text gate: only 158 chars of text extracted (&lt; 400) |
 | PD | Kang_2019 | not_relevant | 0 | 0 | The paper focuses on the identification of volatile compounds (L-fenchone and 1,8-cineole) and their allelopathic activity, not on the pharmacodynamics or exposure-response of camphora. |
 | PD | Karageçili_2026 | not_relevant | 0 | 0 | The paper focuses on the metabolite profiling and in vitro antioxidant/enzyme-inhibitory effects of lavender essential oil, not on the pharmacodynamics or exposure-response of camphora. |
@@ -135,20 +135,20 @@ _21 paper(s) judged relevant from the abstract, with no full text on disk — pa
 | PD | Khan_2025 | not_relevant | 0 | 0 | The paper reports antimicrobial MIC/IC50 values for whole essential oils, not a pharmacodynamic exposure-response relationship for the specific compound camphor. |
 | PD | Lenka_2025 | not_relevant | 0 | 0 | The paper reports chemometric diversity and bioactivity assays (DPPH IC50, MIC) for essential oil mixtures, not a pharmacodynamic exposure-response or dose-response relationship for the specific drug camphor. |
 | PD | Ling_2022 | not_relevant | 0 | 0 | The paper focuses on chemical composition and antioxidant activity of essential oils, not on pharmacokinetic or pharmacodynamic modeling of a specific drug. |
-| popPK | Liu_2021 | irrelevant | 0 | 0 | The paper is a study on the insecticidal and biochemical properties of essential oils (including camphor) in insects, not a pharmacokinetic study of camphor in a mammalian or human subject. |
+| popPK | Liu_2021 | irrelevant | 0 | 0 | The paper describes insecticidal and antifeedant activities (LC50, EC50) in insects, not pharmacokinetic disposition parameters. |
 | PD | Long_2026 | not_relevant | 0 | 0 | The paper focuses on the extraction, purification, and isolation of phenolic compounds from Cinnamomum camphora roots, not on the pharmacokinetics or pharmacodynamics of the drug camphor itself. |
-| PGx | Lonsdale_2012 | not_relevant | 0 | 0 | The paper is a computational chemistry study on DFT methods for P450 enzymes and does not report pharmacogenomic effects on PK/PD parameters. |
-| popPK | Ma_2003 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic assay of UV filters (including camphor derivatives) on androgen receptors, not a pharmacokinetic study of camphora. |
-| popPK | Madeddu_2021 | irrelevant | 0 | 0 | The study is an in-vitro antiviral assay of plant essential oil components (including camphor) against BVDV, not a pharmacokinetic study of camphora. |
+| PGx | Lonsdale_2012 | not_relevant | 0 | 0 | The paper focuses on computational chemistry (QM/MM) methods for modeling P450 enzymes, not on clinical pharmacogenomics or human drug parameters. |
+| popPK | Ma_2003 | irrelevant | 0 | 0 | The study is an in vitro assay of androgen receptor activity for UV filters and does not contain pharmacokinetic data for camphora. |
+| popPK | Madeddu_2021 | irrelevant | 0 | 0 | The paper is an in-vitro study evaluating the antiviral activity of plant essential oil components (including camphor) against BVDV, and it contains no pharmacokinetic or disposition parameters. |
 | PD | Malti_2019 | not_relevant | 1 | 1 | The paper reports a single IC50 value for the total essential oil (not the specific drug camphor) and focuses on chemical composition, lacking a dose-response curve or PK/PD modeling for the specific compound. |
-| popPK | Marcin_2023 | irrelevant | 0 | 0 | The paper is an ecotoxicology study assessing the acute toxicity of UV filters (including 4-methoxybenzylidene camphor) in aquatic organisms, not a pharmacokinetic study of the drug camphora. |
+| popPK | Marcin_2023 | irrelevant | 0 | 0 | The paper is an ecotoxicological study on UV filters, not a pharmacokinetic study on the drug camphora. |
 | popPK | Milenković_2026 | irrelevant | 0 | 0 | no_text gate: only 117 chars of text extracted (&lt; 400) |
 | PD | Milenković_2026 | not_relevant | 0 | 0 | The paper analyzes the effect of shading and harvest time on sage essential oil composition, not the pharmacodynamic or exposure-response relationship of camphora in a biological system. |
 | PD | Mohanty_2025 | not_relevant | 3 | 2 | The paper reports a single IC50 value for the whole essential oil (CZEO) but does not provide a dose-response curve, PK/PD model, or specific PD parameters for camphor itself. |
 | PD | Mostafa-Hedeab_2025 | not_relevant | 0 | 0 | The paper reports IC50 values for Thymol and Limonin, but does not report any quantitative antiviral activity or PD parameters for Camphor. |
 | PD | Muñoz-Núñez_2025 | not_relevant | 3 | 3 | The paper reports IC50 values for cytotoxicity, which are single-point potency metrics, but does not provide full dose-response curves, Emax, or any PK/PD modeling required for extractable pharmacodynamic relationships. |
 | PD | Oalđe_2025 | not_relevant | 0 | 0 | The paper reports IC50 values for whole plant extracts and rosmarinic acid, but does not provide a pharmacodynamic model or exposure-response relationship for camphor. |
-| popPK | Ogawa_1996 | irrelevant | 0 | 0 | The paper analyzes translocatory balance in fruit physiology and mentions Cinnamomum camphora only as a comparative plant species, not as a drug subject to pharmacokinetic analysis. |
+| popPK | Ogawa_1996 | irrelevant | 0 | 0 | The paper studies translocatory balance in fruit plants (durian and camphora tree) and does not involve drug pharmacokinetics. |
 | popPK | Paredes_2014 | irrelevant | 0 | 0 | no_text gate: only 189 chars of text extracted (&lt; 400) |
 | PD | Paudel_2025 | not_relevant | 0 | 0 | The paper reports in vitro IC50 values for whole essential oil extracts, not for the specific compound camphor, and does not provide a concentration-effect curve or PK/PD model for camphor. |
 | PD | Phyu_2026 | not_relevant | 0 | 0 | The paper focuses on extraction processing technologies and their effects on antioxidant activity in Cinnamomum camphora leaves, not on pharmacodynamic or exposure-response relationships for a drug. |
@@ -156,34 +156,34 @@ _21 paper(s) judged relevant from the abstract, with no full text on disk — pa
 | PD | Sankaranarayanan_2026 | not_relevant | 0 | 0 | The paper focuses on the chemical profiling (GC/MS) and molecular dynamics simulation of Tea tree oil, not on the pharmacodynamics or exposure-response of camphora. |
 | popPK | Schepetkin_2023 | irrelevant | 0 | 0 | no_text gate: only 185 chars of text extracted (&lt; 400) |
 | PD | Schepetkin_2023 | not_relevant | 0 | 0 | The paper focuses on the chemical composition and immunomodulatory activity of essential oils, specifically dillapiole, and does not contain any pharmacokinetic or pharmacodynamic modeling, exposure-response analysis, or numeric PD parameters for camphora. |
-| popPK | Schlumpf_2004 | irrelevant | 0 | 0 | The study focuses on the endocrine-disrupting activity and receptor binding of camphor derivatives, not on their pharmacokinetic disposition parameters. |
-| PGx | Seo_2008 | not_relevant | 0 | 0 | The paper reports in vitro enzyme inhibition of CYP2B6 by monoterpenoids (including camphor) but does not report any pharmacogenomic effects (gene variants) on PK/PD parameters. |
-| popPK | Shehata_2012 | irrelevant | 0 | 0 | The study investigates the genotoxicity (DNA double-strand breaks) of camphor-containing solutions in vitro, not its pharmacokinetics. |
-| popPK | Sieratowicz_2011 | irrelevant | 0 | 0 | The study is an ecotoxicology assessment of UV filters (including camphor derivatives) on algae and crustaceans, not a pharmacokinetic study of the drug camphora. |
+| popPK | Schlumpf_2004 | irrelevant | 0 | 0 | The study investigates the endocrine-disrupting properties (estrogenic activity) of a camphor derivative, not its pharmacokinetic parameters. |
+| PGx | Seo_2008 | not_relevant | 0 | 0 | The paper investigates CYP2B6 inhibition by monoterpenoids (including camphor) using a chemical probe (bupropion) and does not report any genetic variants or pharmacogenomic effects on the PK/PD of camphor itself. |
+| popPK | Shehata_2012 | irrelevant | 0 | 0 | The paper is an in vitro genotoxicity study investigating DNA double-strand breaks, containing no pharmacokinetic data for camphor. |
+| popPK | Sieratowicz_2011 | irrelevant | 0 | 0 | The study assesses acute and chronic toxicity (LC50/EC50) of UV filters in aquatic organisms, not the pharmacokinetic disposition parameters of camphora. |
 | popPK | Silva_2016 | irrelevant | 0 | 0 | no_text gate: only 115 chars of text extracted (&lt; 400) |
 | PD | Silva_2016 | not_relevant | 0 | 0 | The paper focuses on the chemical composition and general pharmacological properties of Lippia thymoides essential oils, not on the pharmacodynamics or exposure-response relationship of camphora. |
-| popPK | Sokolova_2021 | irrelevant | 0 | 0 | The study evaluates the antiviral activity of camphor derivatives against orthopoxviruses and does not report any pharmacokinetic parameters. |
+| popPK | Sokolova_2021 | irrelevant | 0 | 0 | The study reports antiviral activity and EC50 values, not pharmacokinetic disposition parameters (CL, V, etc.) for camphora. |
 | PD | Syaj_2025 | not_relevant | 0 | 0 | The paper reports IC50 values for plant extracts, not for the specific compound camphor, and does not provide a concentration-effect curve or PD model for camphor. |
 | PD | Tishchenko_2026 | not_relevant | 2 | 2 | The paper reports in vitro IC50 values and basic PK parameters (T1/2) but does not provide an exposure-response or dose-response analysis linking plasma concentrations to antiviral effect in vivo. |
-| popPK | Tovar-Sánchez_2013 | irrelevant | 0 | 0 | The paper is an environmental study on sunscreen pollutants in seawater and does not report pharmacokinetic parameters for camphora. |
+| popPK | Tovar-Sánchez_2013 | irrelevant | 0 | 0 | The paper is an environmental ecotoxicology study measuring UV filter concentrations in seawater and algal toxicity, not a pharmacokinetic study of the drug camphora. |
 | PD | Tsoĭ_1981 | not_relevant | 0 | 0 | The provided text contains only the title of the paper and lacks the full text, abstract, or data required to determine if numeric PD parameters are reported. |
-| popPK | Tsui_2019 | irrelevant | 0 | 0 | The paper is an environmental toxicology study on UV filters in marine water, not a pharmacokinetic study of camphora. |
+| popPK | Tsui_2019 | irrelevant | 0 | 0 | The paper is an environmental toxicology study on UV filters in marine water and does not report pharmacokinetic parameters for the drug camphora. |
 | popPK | Vieira_2021 | irrelevant | 0 | 0 | no_text gate: only 76 chars of text extracted (&lt; 400) |
 | PD | Vieira_2021 | not_relevant | 0 | 0 | The paper focuses on ecotoxicological screening of UV filters in marine bioassays and does not report pharmacodynamic or exposure-response relationships for the drug camphora. |
-| popPK | Vogt-Eisele_2007 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of TRPV3 ion channel activation by camphor and other monoterpenes, reporting no pharmacokinetic parameters. |
-| PGx | Wang_2009 | not_relevant | 0 | 0 | The paper studies the biosynthesis of artemisinin in Artemisia annua plants, not the pharmacogenomics of camphor in humans. |
-| PGx | Wang_2023 | not_relevant | 0 | 0 | The paper investigates the effect of a chemical adjuvant (borneol) on the pharmacokinetics of piperlongumine, not the effect of a gene variant or genotype. |
+| popPK | Vogt-Eisele_2007 | irrelevant | 0 | 0 | This is an in-vitro mechanistic study of ion channel activation, not a pharmacokinetic study, and contains no disposition parameters for camphora. |
+| PGx | Wang_2009 | not_relevant | 0 | 0 | The paper focuses on the biosynthesis of artemisinin in Artemisia annua and mentions camphor as a plant metabolite, not as a drug subject to pharmacogenomic analysis. |
+| PGx | Wang_2023 | not_relevant | 0 | 0 | The paper studies the effect of borneol (a P-gp/BCRP inhibitor) on the uptake of piperlongumine, not the pharmacogenomic effect of a gene variant on camphora. |
 | PD | Wang_2026 | not_relevant | 0 | 0 | The paper focuses on the isolation and antioxidant activity of Chamazulene, not the pharmacodynamics or exposure-response of camphora. |
-| popPK | Wang_2026_2 | irrelevant | 0 | 0 | The paper describes the synthesis and antifungal activity of camphor derivatives, not the pharmacokinetics of camphora. |
+| popPK | Wang_2026_2 | irrelevant | 0 | 0 | The study focuses on the antifungal activity and mechanism of action of camphor derivatives against a fungus, not on the pharmacokinetics of camphora. |
 | PD | Wildy_2026 | not_relevant | 0 | 0 | The paper reports MIC/MBC for plant extracts and identifies camphor via GC-MS, but does not perform any pharmacodynamic or exposure-response analysis on camphor itself. |
 | PD | Yan_2025 | not_relevant | 0 | 0 | The paper reports a safety/toxicology study (NOAEL) and explicitly states there were no dose-response relationships for the measured endpoints; it does not report pharmacodynamic parameters like Emax or EC50. |
-| popPK | Yang_2023 | irrelevant | 0 | 0 | The paper focuses on the synthesis and biological evaluation of camphor-based derivatives as fungicides, reporting toxicity and inhibition data rather than pharmacokinetic parameters for camphora. |
-| popPK | Yang_2023_2 | irrelevant | 0 | 0 | The paper describes the synthesis and antifungal activity of camphor derivatives, not the pharmacokinetics of camphora. |
+| popPK | Yang_2023 | irrelevant | 0 | 0 | The paper describes the synthesis and antifungal activity of camphor-based derivatives, not the pharmacokinetics of the drug camphora. |
+| popPK | Yang_2023_2 | irrelevant | 0 | 0 | The paper reports in vitro and in vivo antifungal activity of camphor derivatives against fungi, not pharmacokinetic parameters for the drug camphora. |
 | PD | Yang_2023_2 | not_relevant | 3 | 2 | The paper reports single-point IC50/EC50 values for antifungal and enzyme inhibition but does not provide a full dose-response curve, PK/PD model, or multiple concentration-effect data points to derive a PD relationship. |
-| PGx | Yao_2007 | not_relevant | 0 | 0 | The paper describes the structural mechanism of substrate binding in P450cam, not a pharmacogenomic effect on the PK/PD of a drug. |
-| popPK | Zarubaev_2015 | irrelevant | 0 | 0 | The study focuses on the antiviral efficacy and mechanism of action of a camphor derivative, not its pharmacokinetic disposition parameters. |
-| popPK | Zhang_2024 | irrelevant | 0 | 0 | The study investigates the antifungal activity and mechanism of action of camphor derivatives, not their pharmacokinetic disposition parameters. |
-| popPK | Zouari_2011 | irrelevant | 0 | 0 | The paper is a phytochemical analysis of a plant and reports the concentration of camphor in leaves, not pharmacokinetic parameters. |
+| PGx | Yao_2007 | not_relevant | 0 | 0 | The paper focuses on the structural and binding mechanism of camphor in P450cam, not on pharmacogenomic effects of human gene variants on drug pharmacokinetics or pharmacodynamics. |
+| popPK | Zarubaev_2015 | irrelevant | 0 | 0 | The study focuses on the antiviral efficacy and mechanism of action of a camphor derivative, not on the pharmacokinetic disposition parameters of camphora. |
+| popPK | Zhang_2024 | irrelevant | 0 | 0 | The study focuses on the antifungal activity and mechanism of camphor derivatives against a fungus, not on the pharmacokinetics of camphora as a drug. |
+| popPK | Zouari_2011 | irrelevant | 0 | 0 | The study is a phytochemical and nutritional analysis of a plant (*Malva aegyptiaca*) and reports the content of camphor in plant lipids, but contains no pharmacokinetic data, administration, or disposition parameters. |
 | PD | Zouari_2011 | not_relevant | 0 | 0 | The paper reports the chemical composition (camphor content) and antioxidant activity of plant extracts, but does not report a pharmacodynamic or exposure-response relationship for camphor itself. |
 
 ---

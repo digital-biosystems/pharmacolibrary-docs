@@ -15,15 +15,19 @@
 
 ## What this record describes
 
-**As extracted:** Ado (measured concentrations) drives IKACh: direct sigmoid Emax (Hill) effect.
+**As extracted:** Ado drives IKACh: direct Emax (saturable) effect.
 
 **Model:** No model was generated from this record.
 
+> Adenosine stimulates the IKACh current in guinea-pig cardiomyocytes via a direct sigmoidal Emax mechanism, with reported EC50 values of 288 nM and 240 nM, Emax values of 0.98 and 1.00, and Hill coefficients (nH) of 1.03 and 1.02. The paper does not specify kinetic rate parameters (e.g., kin, kout, ke0) for this adenosine-induced response.
+>
+> <sub>in the paper's terms — summarised by qwen3.8:27b-mtp-q8_0 from the paper's text; not checked by a person</sub>
+
 - **paper:** `López-Serrano_2022`
-- **model family:** `sigmoid_emax`
-- **driver:** `conc_no_pk`
+- **model family:** `emax`
+- **driver:** `not_resolved`
 - **tier:** descriptive
-- **effect:** stimulation/unknown
+- **effect:** stimulation/additive
 
 ## Citation
 López-Serrano AL et al., Differential voltage-dependent modulati…, PloS one (2022)

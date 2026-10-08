@@ -17,7 +17,7 @@ Crataegus glycosides, derived from hawthorn, are cardiac preparations used tradi
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-06 11:38 | 0:44 | 0/0/0 | 0/0/0 | 0/0/0 | 26,030/667 | ollama / qwen3.8:27b-mtp-q8_0 | 3 | 1/2 | 3/0 | 0 |
+| 2026-10-08 11:39 | 0:14 | 0/0/0 | 0/0/0 | 0/0/0 | 26,029/718 | einfracz / qwen3.8-27b | 3 | 1/2 | 3/0 | 0 |
 
 ## popPK records
 
@@ -42,23 +42,23 @@ _1 paper(s) judged relevant from the abstract, with no full text on disk — pay
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Ma_2010.pdf` | Ma LY et al., The pharmacokinetics of C-glycosyl flav…, Phytomedicine : internation… (2010) | popPK | 9 | [10.1016/j.phymed.2009.12.010](https://doi.org/10.1016/j.phymed.2009.12.010) | [20096549](https://pubmed.ncbi.nlm.nih.gov/20096549) | The study reports quantitative pharmacokinetic parameters (half-life, Tmax, recovery rates) for C-glycosyl flavones (VOG and VOR) from Hawthorn leaf flavonoids in rats. |
+| `Ma_2010.pdf` | Ma LY et al., The pharmacokinetics of C-glycosyl flav…, Phytomedicine : internation… (2010) | popPK | 9 | [10.1016/j.phymed.2009.12.010](https://doi.org/10.1016/j.phymed.2009.12.010) | [20096549](https://pubmed.ncbi.nlm.nih.gov/20096549) | The study reports PK parameters (Tmax, T1/2, recovery) for C-glycosyl flavones in rats, matching the subject drug class, but lacks compartmental parameters like CL, V, or ka. |
 
-<sub>queue written 2026-10-06T11:38:30.719070+00:00</sub>
+<sub>queue written 2026-10-08T11:39:09.706180+00:00</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
 | popPK | Ammon_1981 | irrelevant | 0 | 0 | no_text gate: only 90 chars of text extracted (&lt; 400) |
-| popPK | Boukerouis_2025 | irrelevant | 0 | 0 | The study focuses on fupenzic acid (a triterpene), not crataegus glycosides, and only provides in silico ADMET predictions rather than experimental PK parameters. |
-| popPK | Chang_2005 | irrelevant | 1 | 0 | The study investigates the pharmacokinetics of specific hawthorn phenolics (epicatechin, chlorogenic acid, etc.) rather than crataegus glycosides, and no numeric values are provided in the evidence. |
-| popPK | Chen_2025 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of ginsenosides and rutin, not crataegus_glycosides. |
-| popPK | Chow_2025 | irrelevant | 2 | 3 | The study investigates the absorption of hawthorn leaf flavonoids (a mixture) in rats, not the specific drug entity "crataegus_glycosides" as a single subject, and lacks standard population PK parameters (CL, V) for the defined drug. |
-| popPK | Liang_2007 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of vitexin rhamnoside, a specific constituent of hawthorn, rather than the general drug entity crataegus_glycosides. |
-| popPK | Liu_2010 | relevant | 9 | 2 | The study reports pharmacokinetic parameters for hyperoside (a crataegus glycoside) in rats, but the specific numeric values are in Table 4 which is not provided in the evidence. |
-| popPK | Xu_2022 | irrelevant | 0 | 0 | The paper is a review of hyperoside, not crataegus_glycosides, and contains no original quantitative PK parameters for the target drug. |
-| popPK | Zhu_2015 | irrelevant | 0 | 0 | The study analyzes hawthorn leaves flavonoids (rutin, quercetin, etc.), which are distinct from crataegus_glycosides, and no PK parameters for the target drug are reported. |
+| popPK | Boukerouis_2025 | irrelevant | 0 | 0 | The study focuses on the in silico ADMET prediction and in vitro anti-inflammatory mechanisms of fupenzic acid (a triterpene) from Crataegus, not the pharmacokinetics of crataegus glycosides. |
+| popPK | Chang_2005 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of specific hawthorn phenolic compounds (epicatechin, chlorogenic acid, etc.) in rats, not crataegus glycosides. |
+| popPK | Chen_2025 | irrelevant | 0 | 0 | The study analyzes pharmacokinetics of ginsenosides and rutin, not crataegus_glycosides. |
+| popPK | Chow_2025 | irrelevant | 2 | 1 | The study investigates the absorption of individual flavonoids (GLV, RHV, etc.) from hawthorn leaves, not the specific drug entity "crataegus_glycosides" (a defined mixture), and lacks a compartmental PK model or standard clearance/volume parameters for the named subject. |
+| popPK | Liang_2007 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of vitexin rhamnoside, a specific constituent, rather than the specific drug crataegus_glycosides. |
+| popPK | Liu_2010 | relevant | 9 | 3 | The paper reports pharmacokinetic parameters (CL, AUC, t1/2) for hyperoside (a crataegus glycoside) in rats, but the specific numeric values in Table 4 are not present in the provided text evidence, only the AUC values are partially visible in the parameter lines. |
+| popPK | Xu_2022 | irrelevant | 0 | 0 | The paper is a review of hyperoside, which is a different compound from crataegus_glycosides (the target drug), and does not provide original quantitative PK parameters for crataegus_glycosides. |
+| popPK | Zhu_2015 | irrelevant | 1 | 0 | The study analyzes hawthorn leaves flavonoids (specifically seven different compounds like rutin and quercetin) rather than the target drug crataegus_glycosides, and no specific PK parameter values are reported in the evidence. |
 
 ---
 <sub>Generated by `docs.py` (scholarv2)</sub>
