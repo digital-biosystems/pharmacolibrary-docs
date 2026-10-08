@@ -1,7 +1,7 @@
-<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C01B&quot;,&quot;href&quot;:&quot;atc/C01B.md&quot;},{&quot;label&quot;:&quot;dofetilide&quot;,&quot;href&quot;:&quot;drugs/drug_dofetilide/&quot;},{&quot;label&quot;:&quot;Le_1995 \u00b7 PD QTc interval duration&quot;}]"></div>
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C01B&quot;,&quot;href&quot;:&quot;atc/C01B.md&quot;},{&quot;label&quot;:&quot;dofetilide&quot;,&quot;href&quot;:&quot;drugs/drug_dofetilide/&quot;},{&quot;label&quot;:&quot;Le_1995 \u00b7 PD QT, interval duration&quot;}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# QTc interval duration — PD  <span class="pk-badge pk-badge--orange">needs review</span>
+# QT, interval duration — PD  <span class="pk-badge pk-badge--green">accepted (caveats)</span>
 
 <details class="pk-legend"><summary>What the PGx badges mean — evidence, and whether a model runs</summary><table><tbody><tr><td><span class="pk-badge pk-badge--green">quantitative</span></td><td>the paper gives the effect of each phenotype (or genotype) on a named model parameter — a θ per category.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">qualitative</span></td><td>the paper links the gene to the drug but states no effect size on a model parameter, so it changes no model.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">guideline estimate</span></td><td>the effect comes from a CPIC / DPWG dosing guideline, not from this paper's numbers.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">safety allele</span></td><td>a risk allele for an adverse reaction (an HLA type, G6PD deficiency …): it changes no PK/PD parameter.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>the extraction is incomplete or inconsistent.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted.</td></tr><tr><td><span class="pk-badge pk-badge--green">▶ simulatable</span></td><td>the paper's popPK model runs per phenotype in the browser (Simulation tab); its PGx Modelica model is under Models.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">model only</span></td><td>a PGx Modelica model exists but has no in-browser simulator.</td></tr></tbody></table></details>
 
@@ -13,12 +13,16 @@
 
 ## What this record describes
 
-**As extracted:** Dofetilide (concentrations from this paper's PK model) drives QTc interval duration (in msec): direct Emax (saturable) effect.
+**As extracted:** Dofetilide (concentrations from this paper's PK model) drives QT, interval duration (in msec): direct sigmoid Emax (Hill) effect.
 
 **Model:** No model was generated from this record.
 
+> Dofetilide concentration (ng/ml) directly stimulates QTc interval duration (msec) via an additive Emax model. The model is characterized by an Emax of 121 msec and an EC50 of 2.2 ng/ml.
+>
+> <sub>in the paper's terms — summarised by qwen3.8:27b-mtp-q8_0 from the paper's text; not checked by a person</sub>
+
 - **paper:** `Le_1995`
-- **model family:** `emax`
+- **model family:** `sigmoid_emax`
 - **driver:** `pk_record`
 - **tier:** descriptive
 - **effect:** stimulation/additive
@@ -30,8 +34,10 @@ Le Coz F et al., Pharmacokinetic and pharmacodynamic mod…, Clinical pharmacolo
 ## Parameters
 | role | label (paper) | Q-code · name | value | unit | value_si | link | source |
 |---|---|---|---|---|---|---|---|
-| PD (effect) | Emax | `Q320` · not captured | 121 | msec | not captured | llm (not captured) | Le_1995:pdv3 |
-| PD (effect) | EC50 | `Q321` · not captured | 2.2 | ng/ml | not captured | llm (not captured) | Le_1995:pdv3 |
+| PD (effect) | E max | `Q320` · not captured | 121 | msec | not captured | llm (not captured) | Le_1995:pdv3 |
+| PD (effect) | EC,, | `Q321` · not captured | 2.2 | ng/ml | not captured | llm (not captured) | Le_1995:pdv3 |
+| PD (effect) | k,, | `Q326` · not captured | 6.7 | hr-' | not captured | llm (not captured) | Le_1995:pdv3 |
+| PD (effect) | E,,, fitted minimum QT interval (effect at zero dofetilide concentration) | `Q324` · not captured | 368 | msec | not captured | llm (not captured) | Le_1995:pdv3 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

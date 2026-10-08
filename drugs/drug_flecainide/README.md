@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C01B&quot;,&quot;href&quot;:&quot;atc/C01B.md&quot;},{&quot;label&quot;:&quot;flecainide&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Flecainide_Horie2014_reference&quot;,&quot;label&quot;:&quot;Horie_2014_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_flecainide/Flecainide_Horie2014_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Flecainide_Sllstrm2014_reference&quot;,&quot;label&quot;:&quot;S\u00e4llstr\u00f6m_2014_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_flecainide/Flecainide_Sllstrm2014_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 # flecainide
 
@@ -20,29 +21,32 @@ Flecainide is a class Ic antiarrhythmic used to prevent and treat heart rhythm d
 
 | molecule | role | molar mass (g/mol) | formula | source | PubChem | records |
 |---|---|---|---|---|---|---|
-| flecainide | parent | 414.343 | C17H20F6N2O3 | DrugBank | [3356](https://pubchem.ncbi.nlm.nih.gov/compound/3356) | Doki_2006, Sangrador_1989 |
+| flecainide | parent | 414.343 | C17H20F6N2O3 | DrugBank | [3356](https://pubchem.ncbi.nlm.nih.gov/compound/3356) | Doki_2006, Doki_2012, Horie_2014, Sangrador_1989 |
 
 ## Extraction summary
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-06 03:51 | 9:17 | 0/3/1 | 3/0/0 | 0/0/0 | 220,941/23,693 | ollama / qwen3.8:27b-mtp-q8_0 | 18 | 4/0 | 4/0 | 0 |
+| 2026-10-08 18:14 | 18:19 | 2/2/2 | 4/0/0 | 0/0/0 | 193,871/51,894 | ollama / qwen3.8:27b-mtp-q8_0 | 24 | 24/0 | 4/6 | 0 |
 
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.286). The first reading is what the record holds.">cross-check: disputed</span><br><sub>STALE — current validate: needs_review</sub><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub><br><sub>route_to: `human_review`</sub> | [Doki_2006_reference](drugs/drug_flecainide/Flecainide_Doki2006_reference.md) | — | 1-compartment (no model) | 1 | Doki K et al., Effect of CYP2D6 genotype on flecainide…, European journal of clinica… (2006) | [10.1007/s00228-006-0188-x](https://doi.org/10.1007/s00228-006-0188-x) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.571). The first reading is what the record holds.">cross-check: partial</span> | [Horie_2014_reference](drugs/drug_flecainide/Flecainide_Horie2014_reference.md) | ▶ model + simulator | 1-compartment, oral | 3 | Horie A et al., Pharmacokinetic variability of flecaini…, Biopharmaceutics & drug dis… (2014) | [10.1002/bdd.1877](https://doi.org/10.1002/bdd.1877) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">dog</span> | [Sällström_2014_reference](drugs/drug_flecainide/Flecainide_Sllstrm2014_reference.md) | ▶ model + simulator | 1-compartment, oral | 3 | Sällström J et al., Pharmacokinetic-pharmacodynamic modelin…, Journal of pharmacological… (2014) | [10.1016/j.vascn.2013.10.001](https://doi.org/10.1016/j.vascn.2013.10.001) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.333). The first reading is what the record holds.">cross-check: disputed</span><br><sub>STALE — current validate: needs_review</sub><br><sub>blocking: C5 dimensioned parameter(s) without a unit: Q27 — no SI value to build from</sub><br><sub>route_to: `human_review`</sub> | [Doki_2006_reference](drugs/drug_flecainide/Flecainide_Doki2006_reference.md) | — | 1-compartment (no model) | 3 (+1 cov.) | Doki K et al., Effect of CYP2D6 genotype on flecainide…, European journal of clinica… (2006) | [10.1007/s00228-006-0188-x](https://doi.org/10.1007/s00228-006-0188-x) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.3). The first reading is what the record holds.">cross-check: disputed</span><br><sub>STALE — current validate: needs_review</sub><br><sub>blocking: C5 dimensioned parameter(s) without a unit: Q27 — no SI value to build from</sub><br><sub>route_to: `human_review`</sub> | [Doki_2012_reference](drugs/drug_flecainide/Flecainide_Doki2012_reference.md) | — | 1-compartment (no model) | 3 | Doki K et al., CYP2D6 genotype affects age-related dec…, Pharmacogenetics and genomi… (2012) | [10.1097/FPC.0b013e3283588fe5](https://doi.org/10.1097/FPC.0b013e3283588fe5) |
 | <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (primary re-run, agreement 0.4). The first reading is what the record holds.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">dog</span><br><sub>STALE — current validate: rejected</sub><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Bergenholm_2016_reference](drugs/drug_flecainide/Flecainide_Bergenholm2016_reference.md) | — | 1-compartment (no model) | 0 | Bergenholm L et al., PKPD modelling of PR and QRS intervals…, Journal of pharmacological… (2016) | [10.1016/j.vascn.2016.01.002](https://doi.org/10.1016/j.vascn.2016.01.002) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (primary re-run, agreement 0.286). The first reading is what the record holds.">cross-check: partial</span><br><sub>STALE — current validate: rejected</sub><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Doki_2012_reference](drugs/drug_flecainide/Flecainide_Doki2012_reference.md) | — | 1-compartment (no model) | 0 | Doki K et al., CYP2D6 genotype affects age-related dec…, Pharmacogenetics and genomi… (2012) | [10.1097/FPC.0b013e3283588fe5](https://doi.org/10.1097/FPC.0b013e3283588fe5) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.25). The first reading is what the record holds.">cross-check: disputed</span><br><sub>STALE — current validate: rejected</sub><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Sangrador_1989_reference](drugs/drug_flecainide/Flecainide_Sangrador1989_reference.md) | — | 1-compartment (no model) | 2 | Sangrador G et al., Clinical pharmacokinetics of intravenou…, Journal of clinical pharmac… (1989) | [10.1111/j.1365-2710.1989.tb00252.x](https://doi.org/10.1111/j.1365-2710.1989.tb00252.x) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.25). The first reading is what the record holds.">cross-check: disputed</span><br><sub>STALE — current validate: rejected</sub><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Sangrador_1989_reference](drugs/drug_flecainide/Flecainide_Sangrador1989_reference.md) | — | 1-compartment (no model) | 4 | Sangrador G et al., Clinical pharmacokinetics of intravenou…, Journal of clinical pharmac… (1989) | [10.1111/j.1365-2710.1989.tb00252.x](https://doi.org/10.1111/j.1365-2710.1989.tb00252.x) |
 
 ## Pharmacodynamics (PD)
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
 | <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [An_2018_Kv_current](drugs/drug_flecainide/pd_An_2018_Kv_current.md) | vascular Kv channel current ← flecainide · direct sigmoid Emax (Hill) effect | — | An JR et al., Inhibition of the voltage-dependent K, Clinical and experimental p… (2018) | [10.1111/1440-1681.13015](https://doi.org/10.1111/1440-1681.13015) |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Deneer_2004_QRS](drugs/drug_flecainide/pd_Deneer_2004_QRS.md) | QRS interval changes ← flecainide · direct linear effect | — | Deneer VH et al., Absorption kinetics and pharmacodynamic…, European journal of clinica… (2004) | [10.1007/s00228-004-0831-3](https://doi.org/10.1007/s00228-004-0831-3) |
+| <span class="pk-badge pk-badge--green">extracted</span> | [Deneer_2004_QRS](drugs/drug_flecainide/pd_Deneer_2004_QRS.md) | QRS interval change ← flecainide · direct linear effect | — | Deneer VH et al., Absorption kinetics and pharmacodynamic…, European journal of clinica… (2004) | [10.1007/s00228-004-0831-3](https://doi.org/10.1007/s00228-004-0831-3) |
+| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">dog</span> | [Sällström_2014_QRS](drugs/drug_flecainide/pd_S_llstr_m_2014_QRS.md) | QRS interval ← flecainide · direct linear effect | model (no simulator) | Sällström J et al., Pharmacokinetic-pharmacodynamic modelin…, Journal of pharmacological… (2014) | [10.1016/j.vascn.2013.10.001](https://doi.org/10.1016/j.vascn.2013.10.001) |
 | <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Wang_1995_KATP](drugs/drug_flecainide/pd_Wang_1995_KATP.md) | outward KATP channel current ← flecainide · direct sigmoid Emax (Hill) effect | — | Wang DW et al., Voltage dependent inhibition of ATP sen…, Cardiovascular research (1995) | — |
 
 ## ADME sites
@@ -75,24 +79,9 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 ## Coverage
 
 - **PubMed hits:** 31 matched, 31 returned
-- **screened:** 7  ·  **relevant:** 3
-- **records:** 4  ·  extracted 0  ·  needs_review 1  ·  rejected 3  ·  stale 4
+- **screened:** 21  ·  **relevant:** 3
+- **records:** 6  ·  extracted 2  ·  needs_review 2  ·  rejected 2  ·  stale 4
 - **scholar-agent fallback query used:** True
-
-## Full text wanted
-
-_6 paper(s) judged relevant from the abstract, with no full text on disk — paywalled, or the resolver could not reach them. Follow the DOI, then save the PDF into `papers/` as `&lt;save as&gt;.pdf` and re-run the extraction._
-
-| save as | citation | domain | score | DOI | PubMed | why wanted |
-|---|---|---|---|---|---|---|
-| `Doki_2006.pdf` | Doki K et al., Effect of CYP2D6 genotype on flecainide…, European journal of clinica… (2006) | popPK | 10 | [10.1007/s00228-006-0188-x](https://doi.org/10.1007/s00228-006-0188-x) | [16944116](https://pubmed.ncbi.nlm.nih.gov/16944116) | The study reports quantitative population PK parameters (CL/F) for flecainide in humans, with specific numeric values provided in the abstract. |
-| `Doki_2012.pdf` | Doki K et al., CYP2D6 genotype affects age-related dec…, Pharmacogenetics and genomi… (2012) | popPK | 10 | [10.1097/FPC.0b013e3283588fe5](https://doi.org/10.1097/FPC.0b013e3283588fe5) | [22941032](https://pubmed.ncbi.nlm.nih.gov/22941032) | The paper is a population PK study of flecainide in humans, but the specific numeric parameter values (CL, V, etc.) are not explicitly listed in the provided abstract text, only percentage changes and covariate effects. |
-| `Sangrador_1989.pdf` | Sangrador G et al., Clinical pharmacokinetics of intravenou…, Journal of clinical pharmac… (1989) | popPK | 10 | [10.1111/j.1365-2710.1989.tb00252.x](https://doi.org/10.1111/j.1365-2710.1989.tb00252.x) | [2507556](https://pubmed.ncbi.nlm.nih.gov/2507556) | The study reports quantitative pharmacokinetic parameters (half-life, volume of distribution) for flecainide in humans, with values explicitly stated in the text. |
-| `Deneer_2004.pdf` | Deneer VH et al., Absorption kinetics and pharmacodynamic…, European journal of clinica… (2004) | popPK | 9 | [10.1007/s00228-004-0831-3](https://doi.org/10.1007/s00228-004-0831-3) | [15619132](https://pubmed.ncbi.nlm.nih.gov/15619132) | The study reports quantitative pharmacokinetic parameters (Cmax, Tmax, ka) for flecainide in humans, though specific values for clearance or volume are not explicitly listed in the provided text. |
-| `Horie_2014.pdf` | Horie A et al., Pharmacokinetic variability of flecaini…, Biopharmaceutics & drug dis… (2014) | popPK | 9 | [10.1002/bdd.1877](https://doi.org/10.1002/bdd.1877) | [24166085](https://pubmed.ncbi.nlm.nih.gov/24166085) | The study reports a one-compartment PK model for flecainide in humans, but the specific numeric parameter values (CL/F, V/F) are not present in the provided evidence text. |
-| `Sällström_2014.pdf` | Sällström J et al., Pharmacokinetic-pharmacodynamic modelin…, Journal of pharmacological… (2014) | popPK | 8 | [10.1016/j.vascn.2013.10.001](https://doi.org/10.1016/j.vascn.2013.10.001) | [24140388](https://pubmed.ncbi.nlm.nih.gov/24140388) | The study reports a one-compartment PK model for flecainide in dogs, but the specific numeric parameter values (CL, V, ka) are not present in the provided evidence. |
-
-<sub>queue written 2026-10-06T03:43:38.707788+00:00</sub>
 
 ## Screened and excluded
 
@@ -133,4 +122,4 @@ _6 paper(s) judged relevant from the abstract, with no full text on disk — pay
 | popPK | Yue_2000 | irrelevant | 0 | 0 | The study is an in-vitro electrophysiological investigation of ion channel blockade in canine myocytes, not a pharmacokinetic study reporting disposition parameters. |
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-10-06 03:43 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-10-08 17:59 UTC</sub>

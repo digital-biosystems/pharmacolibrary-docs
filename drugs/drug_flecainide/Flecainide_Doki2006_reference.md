@@ -1,10 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C01B&quot;,&quot;href&quot;:&quot;atc/C01B.md&quot;},{&quot;label&quot;:&quot;flecainide&quot;,&quot;href&quot;:&quot;drugs/drug_flecainide/&quot;},{&quot;label&quot;:&quot;Doki_2006 \u00b7 reference&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Flecainide_Horie2014_reference&quot;,&quot;label&quot;:&quot;Horie_2014_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_flecainide/Flecainide_Horie2014_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Flecainide_Sllstrm2014_reference&quot;,&quot;label&quot;:&quot;S\u00e4llstr\u00f6m_2014_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_flecainide/Flecainide_Sllstrm2014_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # flecainide — `Flecainide_Doki2006_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.286). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.333). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -20,11 +21,11 @@
 
 A model needs both clearance and volume; without the volume it could only be built on a library default, so it was not. Without a unit the value cannot be converted, so the model cannot use it. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — flecainide: CL/F 0.25 l h(-1) kg(-1).
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has flecainide, the second reading unknown; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has flecainide, the second reading unknown; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
-> ⚠️ **STALE** — review status `needs_review` (reviewed 2026-09-28 14:38:00.944826+00:00) predates the upstream re-run (2026-10-06 03:43:44.531772+00:00). Current validate status: `needs_review`.
+> ⚠️ **STALE** — review status `needs_review` (reviewed 2026-09-28 14:38:00.944826+00:00) predates the upstream re-run (2026-10-08 17:58:33.246812+00:00). Current validate status: `needs_review`.
 
 ## Citation
 Doki K et al., Effect of CYP2D6 genotype on flecainide…, European journal of clinica… (2006)
@@ -34,16 +35,19 @@ Doki K et al., Effect of CYP2D6 genotype on flecainide…, European journal of c
 <dbs-pgx drug="flecainide" model-id="Flecainide_Doki2006_reference" status="needs_review" stale="true" population="Japanese patients with supraventricular tachyarrhythmia" measured-compound="flecainide" parameterization="apparent" topology="1C"></dbs-pgx>
 
 **Model structure:** 1-compartment; no model was built for this record.  
-**Parameters:** 1 extracted.
+**Parameters:** 3 extracted, plus 1 covariate effect.
 
-**Parameterization:** CL/F — apparent, F unknown (apparent — bioavailability not identifiable).
+**Parameterization:** CL/F, V/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
 ## Parameters
 > ⚠️ This record is not accepted (current status `needs_review`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| CL/F | `Q27` · CL/F | 0.25 | L/h | 6.944444444444444e-08 | L/h | not captured | exact (1.0) | Doki_2006:abstract | — | not captured |
+| genotype_of_cyp2d6 | `Q900` · genotype_of_cyp2d6 | 0.37 | not captured | not captured | not captured | not captured | not captured (not captured) | tab_3:row3:col6, tab_3:row3:col7, tab_3:row3:col8 | — | not captured |
+| interpatient variability of CL/F | `Q27` · CL/F | 32.9 | % | not captured | % | not captured | boundary (0.8) | Doki_2006:results_prose | — | not captured |
+| V/F (l) | `Q76` · V/F | 379.0 | l | 0.379 | L | not captured | exact (1.0) | Doki_2006:discussion_prose | — | not captured |
+| ka | `Q49` · kabs | 0.62 | h À1 | 0.0001722222222222222 | 1/h | not captured | review_gapfill (0.7) | Deneer_2004:review | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -53,15 +57,27 @@ Doki K et al., Effect of CYP2D6 genotype on flecainide…, European journal of c
 ## Departures & gaps
 
 **Interpretation flags:**
-- unit_dimension_unknown: 'l h(-1) kg(-1)' (CL/F)
-- implicit units: 'CL/F' → L/h (from the popPK convention: 'No unit is stated in the provided text or table captions. CL/F represents apparent total clearance. In population pharma')
+- column 'p &lt; 0.05' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
+- covariate level 'Genotype of CYP2D6' → Q900:genotype_of_cyp2d6 = 0.37 (linear_fractional on the model)
+- dropped unlinked row (NIL): 'hom-EMs' — extend the ontology if this is a real PK parameter (source ['tab_3:row4:col3', 'tab_3:row4:col4'])
+- dropped unlinked row (NIL): 'het-EMs' — extend the ontology if this is a real PK parameter (source ['tab_3:row5:col3', 'tab_3:row5:col4', 'tab_3:row5:col6'])
+- dropped unlinked row (NIL): 'IMs' — extend the ontology if this is a real PK parameter (source ['tab_3:row7:col3', 'tab_3:row7:col4'])
+- table mostly unlinked (3/4 table-cell rows NIL) — likely the wrong table was located, not 1 genuinely-missing ontology parameter(s); route_to_review instead of building a model from the residual linked cell(s)
+- salvaged Q27 ('interpatient variability of CL/F'=32.9) from results prose — parameter table was unreadable
+- salvaged Q76 ('V/F (l)'=379.0) from results prose — parameter table was unreadable
 - apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=flecainide
-- abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
+- held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
+- status held at route_to_review — not promoted
 - skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
 - skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
+- gap-filled Q49 (kabs) from Deneer_2004's review values (primary lacked it)
 
 **Extraction notes:**
-- no GROBID TEI available — transcribed from abstract in Doki_2006_metadata.yaml (1 record(s)); values are summary statistics, not a fitted model
+- unparsed cell tab_3:row3:col4 = 'Flecainide clearance (Lh -1'
+- unparsed cell tab_3:row3:col5 = '0.1 0.2 0.3 0.4'
+- unparsed cell tab_3:row4:col2 = '2θ E'
+- unparsed cell tab_3:row7:col2 = '2θ I'
+- LLM selected parameter table(s) 3
 
 ## Validation
 
@@ -70,15 +86,16 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.286 (2/7 fields) | 5 |
+| `gpt-oss:120b` | not confirmed | 0.333 (3/9 fields) | 6 |
 
-<details><summary>5 field(s) a reader read differently</summary>
+<details><summary>6 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `parameters[cl/f reduction by age]` | not captured | 30 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[cl/f reduction by sex]` | not captured | 24 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[cl/f]` | 0.25 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[interpatient variability of cl/f]` | 32.9 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[interpatient variability of cl/f]` | not captured | 32.9 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[v/f]` | 379.0 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[v/f]` | not captured | 379.0 | only_one_extracted |
 | `gpt-oss:120b` | `screen.dose_compound` | flecainide | unknown | mismatch |
 | `gpt-oss:120b` | `screen.primary_analyte` | flecainide | unknown | mismatch |
 
@@ -94,13 +111,14 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 1 | not captured | not captured | not captured |
+| C0_has_structural_params | pass | not captured | 2 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
-| C0c_disposition_complete | fail | not captured | not captured | not captured | not captured | not captured |
-| C5_dimension_Q27 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Doki_2006:abstract'] |
+| C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
+| C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['Deneer_2004:review'] |
+| C5_unit_missing_Q27 | fail | [length] ** 3 / [time] | % | not captured | not captured | ['Doki_2006:results_prose'] |
 | C7_apparent_coherence | pass | not captured | not captured | not captured | not captured | not captured |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
-| C9_phys_window_Q27 | pass | clearance within physiological range | 0.25 L/h | not captured | not captured | ['Doki_2006:abstract'] |
+| C9_phys_window_Q76 | pass | volume within physiological range | 379 L | not captured | not captured | ['Doki_2006:discussion_prose'] |
 
 <details class="legend">
 <summary>Check legend — what each column means</summary>
@@ -135,4 +153,4 @@ _No web simulator for this record: its structure has no shared WebAssembly templ
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-06 03:43 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-08 17:58 UTC</sub>

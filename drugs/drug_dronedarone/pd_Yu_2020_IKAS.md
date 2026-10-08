@@ -19,9 +19,9 @@
 
 **Model:** No model was generated from this record.
 
-> Dronedarone concentration-dependently inhibits SK channel current (IKAS) in human atrial myocytes (NSR and CAF) and KCNN2-expressing HEK-293 cells, with maximal inhibition of 82.1±2.93% (NSR) and 84.03±5.27% (CAF) at −110 mV in myocytes, an IC50 of 2.42 μM in CAF myocytes, and an IC50 of 1.7 μM in HEK-293 cells (vs 7.2 μM for amiodarone); inhibition was time-dependent and reached a steady maximal effect within ~15 minutes. The paper describes the effect as direct concentration-dependent channel inhibition fitted by a Hill equation and does not state a kinetic mechanism (no kin/kout or effect-compartment parameters).
+> Dronedarone concentrations directly inhibit the IKAS response in a concentration-dependent manner, with the paper describing a time-dependent inhibition that reaches a steady state within 15 minutes. The model is characterized by an IC50 of 1.7 μM in HEK-293 cells and a maximum inhibition of approximately 82.1% in NSR atrial myocytes.
 >
-> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+> <sub>in the paper's terms — summarised by qwen3.8:27b-mtp-q8_0 from the paper's text; not checked by a person</sub>
 
 - **paper:** `Yu_2020`
 - **model family:** `sigmoid_emax`

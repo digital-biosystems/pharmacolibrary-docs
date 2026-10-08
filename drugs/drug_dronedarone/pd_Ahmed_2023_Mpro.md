@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Dronedarone directly inhibits the enzymatic activity of SARS-CoV-2 Mpro, as measured by a fluorogenic substrate assay, with an IC50 of 18.03 µM. The paper does not specify the detailed molecular mechanism of inhibition (e.g., covalent vs. non-covalent) or kinetic parameters beyond the IC50.
+>
+> <sub>in the paper's terms — summarised by qwen3.8:27b-mtp-q8_0 from the paper's text; not checked by a person</sub>
+
 - **paper:** `Ahmed_2023`
 - **model family:** `sigmoid_emax`
 - **driver:** `conc_no_pk`

@@ -19,9 +19,9 @@
 
 **Model:** No model was generated from this record.
 
-> Dofetilide (with moxifloxacin and sotalol) plasma unbound concentration (µM free) drives QTc prolongation (ΔQTc, ms) via a sigmoid Emax concentration–effect relationship; the paper does not state a mechanistic production/elimination (kin/kout) or effect-compartment structure. The only potency value given is a relative parameter ρ Emax-EC50 for dofetilide of 0.78 (nM of µM free); no absolute Emax, EC50, or rate constants are reported, though dofetilide produced 4–18 ms (2–8%) prolongation in dog at 0.4–2 µM free.
+> Dofetilide plasma concentrations (nM) directly stimulate QTc prolongation (ms) via a sigmoid Emax model, with a baseline of 248 ms, a maximum effect (Emax) of 50.2 ms, an EC50 of 9.5 nM, and a Hill coefficient of 1.4. The paper describes this as a direct concentration-effect relationship for a Kv11.1 channel blocker, without specifying an effect compartment or indirect response mechanism.
 >
-> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+> <sub>in the paper's terms — summarised by qwen3.8:27b-mtp-q8_0 from the paper's text; not checked by a person</sub>
 
 - **paper:** `Gotta_2015`
 - **model family:** `sigmoid_emax`

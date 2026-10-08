@@ -2088,24 +2088,44 @@
    "C01BA05"
   ],
   "counts": {
-   "pd": 3,
+   "pd": 2,
    "pgx": 0,
-   "pk": 0
+   "pk": 1
   },
   "curated": 0,
   "details": [
    {
     "label": "Iven_1977 \u00b7 reference",
     "model_id": "Ajmaline_Iven1977_reference"
+   },
+   {
+    "label": "Elfner_1987 \u00b7 reference",
+    "model_id": "Ajmaline_Elfner1987_reference"
+   },
+   {
+    "label": "Yasuhara_1987 \u00b7 dog_1",
+    "model_id": "Ajmaline_Yasuhara1987_dog_1"
+   },
+   {
+    "label": "Yasuhara_1987 \u00b7 dog_2",
+    "model_id": "Ajmaline_Yasuhara1987_dog_2"
+   },
+   {
+    "label": "Yasuhara_1987 \u00b7 dog_3",
+    "model_id": "Ajmaline_Yasuhara1987_dog_3"
+   },
+   {
+    "label": "Yasuhara_1987 \u00b7 dog_4",
+    "model_id": "Ajmaline_Yasuhara1987_dog_4"
    }
   ],
   "dir": "drug_ajmaline",
-  "extracted": 0,
-  "last_change": "2026-10-06T01:58:39.739685+00:00",
+  "extracted": 1,
+  "last_change": "2026-10-08T15:33:21.291721+00:00",
   "name": "ajmaline",
-  "needs_review": 0,
-  "records": 1,
-  "rejected": 1,
+  "needs_review": 1,
+  "records": 6,
+  "rejected": 4,
   "rendered": true,
   "slug": "ajmaline",
   "stale": 1
@@ -4806,7 +4826,7 @@
   "counts": {
    "pd": 2,
    "pgx": 0,
-   "pk": 9
+   "pk": 7
   },
   "curated": 0,
   "details": [
@@ -4839,14 +4859,6 @@
     "model_id": "Amiodarone_Morath2025_reference"
    },
    {
-    "label": "Pollak_2000 \u00b7 amiodarone_typical_value",
-    "model_id": "Amiodarone_Pollak2000_amiodarone_typical_value"
-   },
-   {
-    "label": "Pollak_2000 \u00b7 desethylamiodarone_typical_value",
-    "model_id": "Amiodarone_Pollak2000_desethylamiodarone_typical_value"
-   },
-   {
     "label": "Sermsappasuk_2006 \u00b7 cva_mean_s_d",
     "model_id": "Amiodarone_Sermsappasuk2006_cva_mean_s_d"
    },
@@ -4871,14 +4883,6 @@
     "model_id": "Amiodarone_Yonezawa2002_mex_group"
    },
    {
-    "label": "Pollak_2000 \u00b7 aminodarone",
-    "model_id": "Amiodarone_Pollak2000_aminodarone"
-   },
-   {
-    "label": "Pollak_2000 \u00b7 desethylaminodarone",
-    "model_id": "Amiodarone_Pollak2000_desethylaminodarone"
-   },
-   {
     "label": "Anastasiou-Nana_1982 \u00b7 reference",
     "model_id": "Amiodarone_AnastasiouNana1982_reference"
    },
@@ -4887,20 +4891,28 @@
     "model_id": "Amiodarone_Lehnert2022_reference"
    },
    {
+    "label": "Pollak_2000 \u00b7 amiodarone_typical_value",
+    "model_id": "Amiodarone_Pollak2000_amiodarone_typical_value"
+   },
+   {
+    "label": "Pollak_2000 \u00b7 desethylamiodarone_typical_value",
+    "model_id": "Amiodarone_Pollak2000_desethylamiodarone_typical_value"
+   },
+   {
     "label": "Riva_1982 \u00b7 reference",
     "model_id": "Amiodarone_Riva1982_reference"
    }
   ],
   "dir": "drug_amiodarone",
-  "extracted": 9,
-  "last_change": "2026-10-06T02:04:53.678416+00:00",
+  "extracted": 7,
+  "last_change": "2026-10-08T15:52:34.508645+00:00",
   "name": "amiodarone",
   "needs_review": 6,
-  "records": 20,
-  "rejected": 3,
+  "records": 18,
+  "rejected": 5,
   "rendered": true,
   "slug": "amiodarone",
-  "stale": 13
+  "stale": 11
  },
  "drug_amisulpride": {
   "atc_codes": [
@@ -6661,7 +6673,7 @@
   ],
   "dir": "drug_aprindine",
   "extracted": 0,
-  "last_change": "2026-10-06T02:47:40.116504+00:00",
+  "last_change": "2026-10-08T15:53:07.045662+00:00",
   "name": "aprindine",
   "needs_review": 0,
   "records": 1,
@@ -12906,7 +12918,7 @@
   "counts": {
    "pd": 1,
    "pgx": 0,
-   "pk": 2
+   "pk": 5
   },
   "curated": 0,
   "details": [
@@ -12919,25 +12931,57 @@
     "model_id": "Bretylium_Kamath1981_reference"
    },
    {
+    "label": "Rapeport_1985 \u00b7 anderson_et_al_1980b",
+    "model_id": "Bretylium_Rapeport1985_anderson_et_al_1980b"
+   },
+   {
+    "label": "Rapeport_1985 \u00b7 garret_et_al",
+    "model_id": "Bretylium_Rapeport1985_garret_et_al"
+   },
+   {
+    "label": "Rapeport_1985 \u00b7 narang_et_al",
+    "model_id": "Bretylium_Rapeport1985_narang_et_al"
+   },
+   {
     "label": "Garrett_1982 \u00b7 reference",
     "model_id": "Bretylium_Garrett1982_reference"
+   },
+   {
+    "label": "Narang_1980 \u00b7 reference",
+    "model_id": "Bretylium_Narang1980_reference"
    },
    {
     "label": "Rapeport_1985 \u00b7 reference",
     "model_id": "Bretylium_Rapeport1985_reference"
    },
    {
-    "label": "Narang_1980 \u00b7 reference",
-    "model_id": "Bretylium_Narang1980_reference"
+    "label": "Narang_1980 \u00b7 b_b",
+    "model_id": "Bretylium_Narang1980_b_b"
+   },
+   {
+    "label": "Narang_1980 \u00b7 j_j",
+    "model_id": "Bretylium_Narang1980_j_j"
+   },
+   {
+    "label": "Narang_1980 \u00b7 mean",
+    "model_id": "Bretylium_Narang1980_mean"
+   },
+   {
+    "label": "Narang_1980 \u00b7 p_k",
+    "model_id": "Bretylium_Narang1980_p_k"
+   },
+   {
+    "label": "Narang_1980 \u00b7 s_b",
+    "model_id": "Bretylium_Narang1980_s_b"
    }
   ],
   "dir": "drug_bretylium",
-  "extracted": 2,
-  "last_change": "2026-10-06T02:51:40.761565+00:00",
+  "extracted": 5,
+  "last_change": "2026-10-08T16:04:02.592527+00:00",
   "name": "Bretylium",
-  "needs_review": 2,
-  "records": 5,
-  "rejected": 1,
+  "needs_review": 1,
+  "records": 13,
+  "rejected": 5,
   "rendered": true,
   "slug": "bretylium",
   "stale": 5
@@ -12949,13 +12993,25 @@
   "counts": {
    "pd": 1,
    "pgx": 0,
-   "pk": 1
+   "pk": 4
   },
   "curated": 0,
   "details": [
    {
     "label": "Kamath_1981 \u00b7 reference",
     "model_id": "BretyliumTosilate_Kamath1981_reference"
+   },
+   {
+    "label": "Rapeport_1985 \u00b7 anderson_et_al_1980b",
+    "model_id": "BretyliumTosilate_Rapeport1985_anderson_et_al_1980b"
+   },
+   {
+    "label": "Rapeport_1985 \u00b7 garret_et_al",
+    "model_id": "BretyliumTosilate_Rapeport1985_garret_et_al"
+   },
+   {
+    "label": "Rapeport_1985 \u00b7 narang_et_al",
+    "model_id": "BretyliumTosilate_Rapeport1985_narang_et_al"
    },
    {
     "label": "Garrett_1982 \u00b7 reference",
@@ -12968,15 +13024,35 @@
    {
     "label": "Rapeport_1985 \u00b7 reference",
     "model_id": "BretyliumTosilate_Rapeport1985_reference"
+   },
+   {
+    "label": "Narang_1980 \u00b7 b_b",
+    "model_id": "BretyliumTosilate_Narang1980_b_b"
+   },
+   {
+    "label": "Narang_1980 \u00b7 j_j",
+    "model_id": "BretyliumTosilate_Narang1980_j_j"
+   },
+   {
+    "label": "Narang_1980 \u00b7 mean",
+    "model_id": "BretyliumTosilate_Narang1980_mean"
+   },
+   {
+    "label": "Narang_1980 \u00b7 p_k",
+    "model_id": "BretyliumTosilate_Narang1980_p_k"
+   },
+   {
+    "label": "Narang_1980 \u00b7 s_b",
+    "model_id": "BretyliumTosilate_Narang1980_s_b"
    }
   ],
   "dir": "drug_bretylium_tosilate",
-  "extracted": 1,
-  "last_change": "2026-10-06T03:08:42.041923+00:00",
+  "extracted": 4,
+  "last_change": "2026-10-08T16:24:54.321028+00:00",
   "name": "bretylium tosilate",
   "needs_review": 1,
-  "records": 4,
-  "rejected": 2,
+  "records": 12,
+  "rejected": 5,
   "rendered": true,
   "slug": "bretylium_tosilate",
   "stale": 4
@@ -21735,19 +21811,24 @@
    "C01BG07"
   ],
   "counts": {
-   "pd": 3,
+   "pd": 11,
    "pgx": 0,
    "pk": 0
   },
   "curated": 0,
-  "details": [],
+  "details": [
+   {
+    "label": "Brazzell_1985 \u00b7 reference",
+    "model_id": "Cibenzoline_Brazzell1985_reference"
+   }
+  ],
   "dir": "drug_cibenzoline",
   "extracted": 0,
-  "last_change": null,
+  "last_change": "2026-10-08T16:46:43.725763+00:00",
   "name": "cibenzoline",
   "needs_review": 0,
-  "records": 0,
-  "rejected": 0,
+  "records": 1,
+  "rejected": 1,
   "rendered": true,
   "slug": "cibenzoline",
   "stale": 0
@@ -32825,10 +32906,14 @@
   "counts": {
    "pd": 2,
    "pgx": 0,
-   "pk": 7
+   "pk": 1
   },
   "curated": 0,
   "details": [
+   {
+    "label": "Bryson_1978 \u00b7 reference",
+    "model_id": "Disopyramide_Bryson1978_reference"
+   },
    {
     "label": "Aso_2001 \u00b7 dp",
     "model_id": "Disopyramide_Aso2001_dp"
@@ -32854,20 +32939,8 @@
     "model_id": "Disopyramide_Aso2001_udp"
    },
    {
-    "label": "Bryson_1978 \u00b7 reference",
-    "model_id": "Disopyramide_Bryson1978_reference"
-   },
-   {
     "label": "Pedersen_1986 \u00b7 reference",
     "model_id": "Disopyramide_Pedersen1986_reference"
-   },
-   {
-    "label": "Yukawa_2005 \u00b7 reference",
-    "model_id": "Disopyramide_Yukawa2005_reference"
-   },
-   {
-    "label": "Aso_2001 \u00b7 reference",
-    "model_id": "Disopyramide_Aso2001_reference"
    },
    {
     "label": "Bonde_1989 \u00b7 reference",
@@ -32876,18 +32949,26 @@
    {
     "label": "Burk_1983 \u00b7 reference",
     "model_id": "Disopyramide_Burk1983_reference"
+   },
+   {
+    "label": "Thibonnier_1984 \u00b7 reference",
+    "model_id": "Disopyramide_Thibonnier1984_reference"
+   },
+   {
+    "label": "Yukawa_2005 \u00b7 reference",
+    "model_id": "Disopyramide_Yukawa2005_reference"
    }
   ],
   "dir": "drug_disopyramide",
-  "extracted": 7,
-  "last_change": "2026-10-06T03:21:20.720363+00:00",
+  "extracted": 1,
+  "last_change": "2026-10-08T17:05:20.264490+00:00",
   "name": "disopyramide",
-  "needs_review": 2,
+  "needs_review": 7,
   "records": 12,
-  "rejected": 2,
+  "rejected": 4,
   "rendered": true,
   "slug": "disopyramide",
-  "stale": 6
+  "stale": 5
  },
  "drug_distigmine": {
   "atc_codes": [
@@ -33217,17 +33298,33 @@
     "model_id": "Dofetilide_Le1995_reference"
    },
    {
+    "label": "Tunblad_2008 \u00b7 base",
+    "model_id": "Dofetilide_Tunblad2008_base"
+   },
+   {
+    "label": "Tunblad_2008 \u00b7 final",
+    "model_id": "Dofetilide_Tunblad2008_final"
+   },
+   {
     "label": "Gotta_2015 \u00b7 reference",
     "model_id": "Dofetilide_Gotta2015_reference"
+   },
+   {
+    "label": "Tunblad_2008 \u00b7 median",
+    "model_id": "Dofetilide_Tunblad2008_median"
+   },
+   {
+    "label": "Uddin_2022 \u00b7 reference",
+    "model_id": "Dofetilide_Uddin2022_reference"
    }
   ],
   "dir": "drug_dofetilide",
   "extracted": 0,
-  "last_change": "2026-10-06T03:31:34.604635+00:00",
+  "last_change": "2026-10-08T17:27:58.516254+00:00",
   "name": "dofetilide",
   "needs_review": 1,
-  "records": 2,
-  "rejected": 1,
+  "records": 6,
+  "rejected": 3,
   "rendered": true,
   "slug": "dofetilide",
   "stale": 2
@@ -36502,7 +36599,7 @@
    "C01BC08"
   ],
   "counts": {
-   "pd": 2,
+   "pd": 3,
    "pgx": 0,
    "pk": 0
   },
@@ -43114,23 +43211,31 @@
    "C01BC04"
   ],
   "counts": {
-   "pd": 3,
+   "pd": 4,
    "pgx": 0,
-   "pk": 0
+   "pk": 2
   },
   "curated": 0,
   "details": [
+   {
+    "label": "Horie_2014 \u00b7 reference",
+    "model_id": "Flecainide_Horie2014_reference"
+   },
+   {
+    "label": "S\u00e4llstr\u00f6m_2014 \u00b7 reference",
+    "model_id": "Flecainide_Sllstrm2014_reference"
+   },
    {
     "label": "Doki_2006 \u00b7 reference",
     "model_id": "Flecainide_Doki2006_reference"
    },
    {
-    "label": "Bergenholm_2016 \u00b7 reference",
-    "model_id": "Flecainide_Bergenholm2016_reference"
-   },
-   {
     "label": "Doki_2012 \u00b7 reference",
     "model_id": "Flecainide_Doki2012_reference"
+   },
+   {
+    "label": "Bergenholm_2016 \u00b7 reference",
+    "model_id": "Flecainide_Bergenholm2016_reference"
    },
    {
     "label": "Sangrador_1989 \u00b7 reference",
@@ -43138,12 +43243,12 @@
    }
   ],
   "dir": "drug_flecainide",
-  "extracted": 0,
-  "last_change": "2026-10-06T03:43:50.160923+00:00",
+  "extracted": 2,
+  "last_change": "2026-10-08T17:59:58.729461+00:00",
   "name": "flecainide",
-  "needs_review": 1,
-  "records": 4,
-  "rejected": 3,
+  "needs_review": 2,
+  "records": 6,
+  "rejected": 2,
   "rendered": true,
   "slug": "flecainide",
   "stale": 4
@@ -52282,19 +52387,24 @@
    "C01BD05"
   ],
   "counts": {
-   "pd": 1,
+   "pd": 3,
    "pgx": 0,
    "pk": 0
   },
   "curated": 0,
-  "details": [],
+  "details": [
+   {
+    "label": "Zeng_2017 \u00b7 reference",
+    "model_id": "Ibutilide_Zeng2017_reference"
+   }
+  ],
   "dir": "drug_ibutilide",
   "extracted": 0,
-  "last_change": null,
+  "last_change": "2026-10-08T18:15:26.711562+00:00",
   "name": "ibutilide",
   "needs_review": 0,
-  "records": 0,
-  "rejected": 0,
+  "records": 1,
+  "rejected": 1,
   "rendered": true,
   "slug": "ibutilide",
   "stale": 0

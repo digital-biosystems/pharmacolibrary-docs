@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C01B&quot;,&quot;href&quot;:&quot;atc/C01B.md&quot;},{&quot;label&quot;:&quot;flecainide&quot;,&quot;href&quot;:&quot;drugs/drug_flecainide/&quot;},{&quot;label&quot;:&quot;Sangrador_1989 \u00b7 reference&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Flecainide_Horie2014_reference&quot;,&quot;label&quot;:&quot;Horie_2014_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_flecainide/Flecainide_Horie2014_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Flecainide_Sllstrm2014_reference&quot;,&quot;label&quot;:&quot;S\u00e4llstr\u00f6m_2014_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_flecainide/Flecainide_Sllstrm2014_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -24,7 +25,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 
 <sub>reviewed by glm-5.3-flash</sub>
 
-> ⚠️ **STALE** — review status `rejected` (reviewed 2026-09-28 14:38:00.950312+00:00) predates the upstream re-run (2026-10-06 03:43:50.160923+00:00). Current validate status: `rejected`.
+> ⚠️ **STALE** — review status `rejected` (reviewed 2026-09-28 14:38:00.950312+00:00) predates the upstream re-run (2026-10-08 17:59:47.856674+00:00). Current validate status: `rejected`.
 
 ## Citation
 Sangrador G et al., Clinical pharmacokinetics of intravenou…, Journal of clinical pharmac… (1989)
@@ -34,7 +35,7 @@ Sangrador G et al., Clinical pharmacokinetics of intravenou…, Journal of clini
 <dbs-pgx drug="flecainide" model-id="Flecainide_Sangrador1989_reference" status="rejected" stale="true" population="critically ill patients with acute myocardial infarction" measured-compound="flecainide" parameterization="mechanistic" topology="1C"></dbs-pgx>
 
 **Model structure:** 1-compartment; no model was built for this record.  
-**Parameters:** 2 extracted.
+**Parameters:** 4 extracted.
 
 **Parameterization:** mechanistic.
 
@@ -45,6 +46,8 @@ Sangrador G et al., Clinical pharmacokinetics of intravenou…, Journal of clini
 |---|---|---|---|---|---|---|---|---|---|---|
 | terminal plasma half-life (t1/2 beta) | `Q60` · t1/2β | 22.0 | h | 79200.0 | [h] | not captured | llm (0.6) | Sangrador_1989:abstract | — | not captured |
 | volume of distribution (V beta) | `Q61` · V | 7.99 | 1/kg | not captured | [1] / [kg] | not captured | exact (1.0) | Sangrador_1989:abstract | — | not captured |
+| Cl (L/h) | `Q22` · CL | 1.72 | L/h | 4.777777777777778e-07 | L/h | not captured | review_gapfill (0.7) | Sällström_2014:review | — | not captured |
+| ka | `Q49` · kabs | 0.62 | h À1 | 0.0001722222222222222 | 1/h | not captured | review_gapfill (0.7) | Deneer_2004:review | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -59,8 +62,10 @@ Sangrador G et al., Clinical pharmacokinetics of intravenou…, Journal of clini
 - held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
 - status held at route_to_review — not promoted
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
+- gap-filled Q22 (CL) from Sällström_2014's review values (primary lacked it)
 - skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
 - skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
+- gap-filled Q49 (kabs) from Deneer_2004's review values (primary lacked it)
 
 **Extraction notes:**
 - no GROBID TEI available — transcribed from abstract in Sangrador_1989_metadata.yaml (2 record(s)); values are summary statistics, not a fitted model
@@ -100,9 +105,13 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 | C0_has_structural_params | pass | not captured | 2 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | fail | not captured | not captured | not captured | not captured | not captured |
+| C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Sällström_2014:review'] |
+| C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['Deneer_2004:review'] |
 | C5_dimension_Q60 | pass | [time] | not captured | not captured | not captured | ['Sangrador_1989:abstract'] |
 | C5_dimension_Q61 | fail | dimensionless | 1/kg | not captured | not captured | ['Sangrador_1989:abstract'] |
+| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 1.72 | not captured | not captured | ['Sällström_2014:review'] |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
+| C9_phys_window_Q22 | pass | clearance within physiological range | 1.72 L/h | not captured | not captured | ['Sällström_2014:review'] |
 
 <details class="legend">
 <summary>Check legend — what each column means</summary>
@@ -127,4 +136,4 @@ _No web simulator for this record: its structure has no shared WebAssembly templ
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-06 03:43 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-08 17:59 UTC</sub>

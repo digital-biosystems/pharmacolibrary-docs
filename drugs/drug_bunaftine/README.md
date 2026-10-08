@@ -18,7 +18,7 @@ Bunaftine is an antiarrhythmic agent, a class III drug used to treat heart rhyth
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-06 03:16 | 0:14 | 0/0/0 | 0/0/0 | 0/0/0 | 517/56 | ollama / qwen3.8:27b-mtp-q8_0 | 0 | 0/0 | 0/0 | 0 |
+| 2026-10-08 16:45 | 0:32 | 0/0/0 | 0/0/0 | 0/0/0 | 1,673/168 | ollama / qwen3.8:27b-mtp-q8_0 | 0 | 0/0 | 0/0 | 0 |
 
 ## popPK records
 

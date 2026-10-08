@@ -1,10 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C01B&quot;,&quot;href&quot;:&quot;atc/C01B.md&quot;},{&quot;label&quot;:&quot;flecainide&quot;,&quot;href&quot;:&quot;drugs/drug_flecainide/&quot;},{&quot;label&quot;:&quot;Doki_2012 \u00b7 reference&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Flecainide_Horie2014_reference&quot;,&quot;label&quot;:&quot;Horie_2014_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_flecainide/Flecainide_Horie2014_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Flecainide_Sllstrm2014_reference&quot;,&quot;label&quot;:&quot;S\u00e4llstr\u00f6m_2014_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_flecainide/Flecainide_Sllstrm2014_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # flecainide — `Flecainide_Doki2012_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (primary re-run, agreement 0.286). The first reading is what the record holds.">cross-check: partial</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.3). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -20,57 +21,94 @@
 
 No clearance, volume or rate constant of the model is reported in it. Only the abstract was available, so reported summary statistics stand in for a fitted model. No parameter values were extracted.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has flecainide, the second reading unknown; it also differs on 4 more fields. That field does not shape the model.
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on how the model is parameterised: this record has apparent, the second reading mechanistic; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
-> ⚠️ **STALE** — review status `rejected` (reviewed 2026-09-28 14:38:00.947017+00:00) predates the upstream re-run (2026-10-06 03:42:55.107926+00:00). Current validate status: `rejected`.
+> ⚠️ **STALE** — review status `rejected` (reviewed 2026-09-28 14:38:00.947017+00:00) predates the upstream re-run (2026-10-08 17:58:41.083310+00:00). Current validate status: `needs_review`.
 
 ## Citation
 Doki K et al., CYP2D6 genotype affects age-related dec…, Pharmacogenetics and genomi… (2012)
   ·  DOI: [10.1097/FPC.0b013e3283588fe5](https://doi.org/10.1097/FPC.0b013e3283588fe5)
 
 ## Model component
-<dbs-pgx drug="flecainide" model-id="Flecainide_Doki2012_reference" status="rejected" stale="true" population="patients with supraventricular tachyarrhythmias" measured-compound="flecainide" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<dbs-pgx drug="flecainide" model-id="Flecainide_Doki2012_reference" status="needs_review" stale="true" population="adults with supraventricular tachyarrhythmias" measured-compound="flecainide" parameterization="apparent" topology="1C"></dbs-pgx>
 
 **Model structure:** 1-compartment; no model was built for this record.  
-**Parameters:** 0 extracted.
+**Parameters:** 3 extracted.
 
-**Parameterization:** mechanistic.
+**Parameterization:** CL/F, V/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
 ## Parameters
-> ⚠️ This record is not accepted (current status `rejected`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
+> ⚠️ This record is not accepted (current status `needs_review`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
 
-_No resolved parameters._
+| label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
+|---|---|---|---|---|---|---|---|---|---|---|
+| y 1 | `Q900` · equation variable | 8.83 | not captured | not captured | not captured | not captured | llm (0.6) | tab_2:row2:col1, tab_2:row2:col3 | — | not captured |
+| K a | `Q49` · kabs | 0.62 | /h | 0.0001722222222222222 | 1/h | not captured | space_fold (0.95) | Doki_2012:results_prose | — | not captured |
+| V/F | `Q76` · V/F | 6.0 | l/kg | 0.42 | L | not captured | exact (1.0) | Doki_2012:results_prose | — | not captured |
+| interpatient variability in CL/F with the base model (no covariates) | `Q27` · CL/F | 31.4 | % | not captured | % | not captured | boundary (0.8) | Doki_2012:other_prose | — | not captured |
+
+<details class="legend">
+<summary>Column legend — what each column means</summary>
+<table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>label (paper)</code></td><td>the row or statistic label exactly as printed in the paper (label_verbatim) — never normalised, so it can be found in the PDF.</td></tr><tr><td><code>Q-code · name</code></td><td>the ontology parameter this label was matched to (Q22 = clearance, Q27 = CL/F, Q49 = ka, Q57 = half-life, …) and its canonical name. The Q-code, not the label, is what scoring and cross-paper merging use.</td></tr><tr><td><code>value</code></td><td>the estimate as reported in the paper.</td></tr><tr><td><code>unit</code></td><td>the unit as printed (unit_verbatim).</td></tr><tr><td><code>value_si</code></td><td>the value converted to the canonical unit. Empty when no conversion was possible — usually an unparseable or missing unit.</td></tr><tr><td><code>unit_canonical</code></td><td>the canonical unit for that Q-code, i.e. what value_si is expressed in.</td></tr><tr><td><code>RSE%</code></td><td>relative standard error of the estimate, when the paper reports one.</td></tr><tr><td><code>link</code></td><td>how the label was matched to the Q-code, with confidence. exact / boundary / fuzzy / tv_prefix / caption_compartment / special_case are deterministic string matches; llm, llm_confirmed, llm_corrected involved the model; review and review_gapfill come from the secondary review tier, the latter filling a parameter the primary extraction missed; boundary_relink is a corrected match.</td></tr><tr><td><code>source</code></td><td>where in the paper the number came from: colN = that column of the located table, other_prose = running text, review = the secondary tier, pgx = a pharmacogenomic record.</td></tr><tr><td><code>covariates</code></td><td>covariate effects attached to this parameter (e.g. weight on CL).</td></tr><tr><td><code>IIV</code></td><td>inter-individual variability reported for this parameter.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>the field is absent from the KB artifact — nothing was recorded. This is NOT the same as zero or empty: the value is unknown, not measured to be nothing.</td></tr><tr><td><code>—</code></td><td>deliberately not shown: the column does not apply to this row.</td></tr><tr><td><code>not verified</code></td><td>the record is not in an accepted state (see the badge and the note above the table); the numbers are shown as extracted, not endorsed.</td></tr></tbody></table>
+</details>
 
 ## Departures & gaps
 
 **Interpretation flags:**
-- apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=flecainide
-- abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
-- review gap-fill skipped: this record carries no value of its own, and a model assembled entirely from other papers is not this paper's model
+- dropped unlinked row (NIL): 'y 2' — extend the ontology if this is a real PK parameter (source ['tab_2:row3:col1', 'tab_2:row3:col3'])
+- dropped unlinked row (NIL): 'y 3' — extend the ontology if this is a real PK parameter (source ['tab_2:row5:col1', 'tab_2:row5:col3'])
+- dropped unlinked row (NIL): 'y 4' — extend the ontology if this is a real PK parameter (source ['tab_2:row6:col1', 'tab_2:row6:col3'])
+- dropped unlinked row (NIL): 'y 5' — extend the ontology if this is a real PK parameter (source ['tab_2:row7:col1', 'tab_2:row7:col3'])
+- routed 'Interpatient variability' → Q312 (IIV) to iiv — variability estimate, not a structural parameter
+- salvaged Q49 ('K a'=0.62) from results prose — parameter table was unreadable
+- salvaged Q76 ('V/F'=6.0) from results prose — parameter table was unreadable
+- salvaged Q27 ('interpatient variability in CL/F with the base model (no covariates)'=31.4) from results prose — parameter table was unreadable
+- apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=flecainide
+- held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
+- status held at route_to_review — not promoted
+- skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
+- skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
+- skipped review gap-fill of TLAG: primary's parameterization (rate-constant / ka-only) does not use it
 
 **Extraction notes:**
-- no GROBID TEI available — transcribed from abstract in Doki_2012_metadata.yaml (0 record(s)); values are summary statistics, not a fitted model
+- unparsed cell tab_2:row2:col2 = '5.62, 12.04'
+- unparsed cell tab_2:row2:col4 = '5.20, 12.77'
+- unparsed cell tab_2:row3:col2 = '0.534,'
+- unparsed cell tab_2:row3:col4 = '0.523,'
+- unparsed cell tab_2:row5:col2 = '0.30, 2.93'
+- unparsed cell tab_2:row5:col4 = '0.32, 3.28'
+- unparsed cell tab_2:row6:col2 = '0.56, 5.11'
+- unparsed cell tab_2:row6:col4 = '1.09, 11.42'
+- unparsed cell tab_2:row7:col2 = '6.79, 12.79'
+- unparsed cell tab_2:row7:col4 = '6.30, 13.19'
+- unparsed cell tab_2:row8:col2 = '19.1, 26.0'
+- unparsed cell tab_2:row8:col4 = '18.7, 25.7'
+- unparsed cell tab_2:row10:col2 = '14.3, 20.2'
+- unparsed cell tab_2:row10:col4 = '14.3, 19.7'
+- LLM selected parameter table(s) 3
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | primary re-run | 0.286 (2/7 fields) | 5 |
+| `gpt-oss:120b` | not confirmed | 0.3 (3/10 fields) | 7 |
 
-<details><summary>5 field(s) a reader read differently</summary>
+<details><summary>7 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `parameters[16.3]` | not captured | 16.3 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[and]` | not captured | 49.5 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[reduction in metabolic clearance in elderly (70 years) patients compared with middle‐aged (52 years) patients was]` | not captured | 22.1 | only_one_extracted |
-| `gpt-oss:120b` | `screen.dose_compound` | flecainide | unknown | mismatch |
-| `gpt-oss:120b` | `screen.primary_analyte` | flecainide | unknown | mismatch |
+| `gpt-oss:120b` | `model.parameterization` | apparent | mechanistic | mismatch |
+| `gpt-oss:120b` | `parameters[interpatient variability in cl/f with the base model]` | 31.4 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[k a]` | 0.62 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[v/f]` | 6.0 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[y 1]` | 8.83 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[y 2]` | not captured | 0.713 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[y 3]` | not captured | 1.62 | only_one_extracted |
 
 </details>
 
@@ -84,9 +122,13 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | fail | not captured | 0 | not captured | not captured | not captured |
-| C0b_disposition_core | fail | not captured | not captured | not captured | not captured | not captured |
+| C0_has_structural_params | pass | not captured | 3 | not captured | not captured | not captured |
+| C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
+| C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
+| C5_unit_missing_Q27 | fail | [length] ** 3 / [time] | % | not captured | not captured | ['Doki_2012:other_prose'] |
+| C7_apparent_coherence | pass | not captured | not captured | not captured | not captured | not captured |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
+| C9_phys_window_Q76 | pass | volume within physiological range | 420 L | not captured | not captured | ['Doki_2012:results_prose'] |
 
 <details class="legend">
 <summary>Check legend — what each column means</summary>
@@ -100,9 +142,19 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
-## Models
+## Downloadable models
 
-<p>No downloads: this record is <b>rejected</b>, so it is not published as a model. Any archives generated for it before the verdict have been removed — a download outlives the page that explains it.</p>
+<div class="pk-models-grid"><div class="pk-models-table">
+<table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
+</tbody></table>
+<p>No bundles have been generated for this record yet. When the engineer emits them they appear here automatically — this page reports what is on disk and generates nothing itself.</p>
+</div></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
@@ -111,4 +163,4 @@ _No web simulator for this record: its structure has no shared WebAssembly templ
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-06 03:42 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-08 17:58 UTC</sub>

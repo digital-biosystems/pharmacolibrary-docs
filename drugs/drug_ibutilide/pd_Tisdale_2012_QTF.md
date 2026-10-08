@@ -13,17 +13,17 @@
 
 ## What this record describes
 
-**As extracted:** Ibutilide (measured concentrations) drives Fridericia-corrected QT interval (in s): direct sigmoid Emax (Hill) effect.
+**As extracted:** Ibutilide (concentrations from the PK model of Zeng_2017) drives Fridericia-corrected QT interval (in s): direct sigmoid Emax (Hill) effect.
 
 **Model:** No model was generated from this record.
 
-> Ibutilide serum concentration (μg/L) lengthens the QTF interval (s) via a sigmoid Emax model with an effect compartment (ke0 = 0.05 h−1) to account for the slight hysteresis/delay; Emax = 0.07 s and EC50 = 0.008 μg/L (median EC50 significantly lower in heart failure patients).
+> Ibutilide concentrations (μg/L) stimulate the Fridericia-corrected QT interval (QTF) via a sigmoidal Emax model with a hypothetical effect compartment to account for the observed delay in response. The key parameters are an EC50 of 0.48 μg/L, an Emax of 0.491 s, a Hill coefficient of 3.21, and a ke0 of 0.20 h−1.
 >
-> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+> <sub>in the paper's terms — summarised by qwen3.8:27b-mtp-q8_0 from the paper's text; not checked by a person</sub>
 
 - **paper:** `Tisdale_2012`
 - **model family:** `sigmoid_emax`
-- **driver:** `conc_no_pk`
+- **driver:** `cited_pk`
 - **tier:** descriptive
 - **effect:** stimulation/additive
 

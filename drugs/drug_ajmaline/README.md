@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C01B&quot;,&quot;href&quot;:&quot;atc/C01B.md&quot;},{&quot;label&quot;:&quot;ajmaline&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Ajmaline_Iven1977_reference&quot;,&quot;label&quot;:&quot;Iven_1977_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ajmaline/Ajmaline_Iven1977_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 # ajmaline
 
@@ -20,19 +21,25 @@ Ajmaline is a class Ia antiarrhythmic, a sodium channel blocker used to treat he
 
 | molecule | role | molar mass (g/mol) | formula | source | PubChem | records |
 |---|---|---|---|---|---|---|
-| ajmaline | parent | 326.433 | C20H26N2O2 | DrugBank | [441080](https://pubchem.ncbi.nlm.nih.gov/compound/441080) | Iven_1977 |
+| ajmaline | parent | 326.433 | C20H26N2O2 | DrugBank | [441080](https://pubchem.ncbi.nlm.nih.gov/compound/441080) | Elfner_1987, Iven_1977, Yasuhara_1987 |
+| n-propyl-ajmaline | metabolite | 369.529 | C23H33N2O2+ | PubChem | [76959818](https://pubchem.ncbi.nlm.nih.gov/compound/76959818) | Elfner_1987 |
 
 ## Extraction summary
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-06 02:01 | 3:57 | 0/1/0 | 3/0/0 | 0/0/0 | 70,064/9,538 | ollama / qwen3.8:27b-mtp-q8_0 | 3 | 1/2 | 3/0 | 0 |
+| 2026-10-08 15:52 | 20:14 | 1/4/1 | 2/0/1 | 0/0/1 | 207,433/60,541 | ollama / qwen3.8:27b-mtp-q8_0 | 8 | 6/2 | 3/5 | 0 |
 
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.333). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">mouse</span><br><sub>STALE — current validate: rejected</sub><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>blocking: C9 clearance/volume outside physiological window (implausible magnitude — unit/…</sub><br><sub>route_to: `human_review`</sub> | [Iven_1977_reference](drugs/drug_ajmaline/Ajmaline_Iven1977_reference.md) | — | 1-compartment (no model) | 1 | Iven H, The pharmacokinetics and organ distribu…, Naunyn-Schmiedeberg's archi… (1977) | [10.1007/BF00510985](https://doi.org/10.1007/BF00510985) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">mouse</span><br><sub>STALE — current validate: extracted</sub><br><sub>route_to: `engineer_replication`</sub> | [Iven_1977_reference](drugs/drug_ajmaline/Ajmaline_Iven1977_reference.md) | ▶ model + simulator | 1-compartment, oral | 2 | Iven H, The pharmacokinetics and organ distribu…, Naunyn-Schmiedeberg's archi… (1977) | [10.1007/BF00510985](https://doi.org/10.1007/BF00510985) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.154). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub><br><sub>blocking: C5 dimensioned parameter(s) without a unit: Q59 — no SI value to build from</sub><br><sub>route_to: `human_review`</sub> | [Elfner_1987_reference](drugs/drug_ajmaline/Ajmaline_Elfner1987_reference.md) | — | 1-compartment (no model) | 8 | Elfner R et al., Pharmacokinetics of n-propyl-ajmaline-b…, European journal of drug me… (1987) | [10.1007/BF03189865](https://doi.org/10.1007/BF03189865) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">dog</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Yasuhara_1987_dog_1](drugs/drug_ajmaline/Ajmaline_Yasuhara1987_dog_1.md) | — | 1-compartment (no model) | 5 | Yasuhara M et al., Kinetics of ajmaline disposition and ph…, Journal of pharmacokinetics… (1987) | [10.1007/BF01062938](https://doi.org/10.1007/BF01062938) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">dog</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Yasuhara_1987_dog_2](drugs/drug_ajmaline/Ajmaline_Yasuhara1987_dog_2.md) | — | 1-compartment (no model) | 5 | Yasuhara M et al., Kinetics of ajmaline disposition and ph…, Journal of pharmacokinetics… (1987) | [10.1007/BF01062938](https://doi.org/10.1007/BF01062938) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">dog</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Yasuhara_1987_dog_3](drugs/drug_ajmaline/Ajmaline_Yasuhara1987_dog_3.md) | — | 1-compartment (no model) | 5 | Yasuhara M et al., Kinetics of ajmaline disposition and ph…, Journal of pharmacokinetics… (1987) | [10.1007/BF01062938](https://doi.org/10.1007/BF01062938) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">dog</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Yasuhara_1987_dog_4](drugs/drug_ajmaline/Ajmaline_Yasuhara1987_dog_4.md) | — | 1-compartment (no model) | 5 | Yasuhara M et al., Kinetics of ajmaline disposition and ph…, Journal of pharmacokinetics… (1987) | [10.1007/BF01062938](https://doi.org/10.1007/BF01062938) |
 
 ## Pharmacodynamics (PD)
 
@@ -45,8 +52,21 @@ Ajmaline is a class Ia antiarrhythmic, a sodium channel blocker used to treat he
 | <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Bébarová_2005_current_measured_at_the_end_of_300_ms_depolarizing_impulse](drugs/drug_ajmaline/pd_B_barov_2005_current_measured_at_the_end_of_300_ms_depolariz.md) | current measured at the end of 300 ms depolarizing impulse ← ajmaline · direct sigmoid Emax (Hill) effect | — | Bébarová M et al., Effect of ajmaline on action potential…, General physiology and biop… (2005) | — |
 | <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span> <span class="pk-badge pk-badge--species" title="Animal study (other animal), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">other animal</span> | [Friedrich_2007_I_K](drugs/drug_ajmaline/pd_Friedrich_2007_I_K.md) | I K ← ajmaline · direct sigmoid Emax (Hill) effect | — | Friedrich O et al., NA+- and K+-channels as molecular targe…, British journal of pharmaco… (2007) | [10.1038/sj.bjp.0707194](https://doi.org/10.1038/sj.bjp.0707194) |
 | <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span> <span class="pk-badge pk-badge--species" title="Animal study (other animal), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">other animal</span> | [Friedrich_2007_I_Na](drugs/drug_ajmaline/pd_Friedrich_2007_I_Na.md) | I Na ← ajmaline · direct sigmoid Emax (Hill) effect | — | Friedrich O et al., NA+- and K+-channels as molecular targe…, British journal of pharmaco… (2007) | [10.1038/sj.bjp.0707194](https://doi.org/10.1038/sj.bjp.0707194) |
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">dog</span> | [Yasuhara_1987_PQ](drugs/drug_ajmaline/pd_Yasuhara_1987_PQ.md) | PQ interval ← ajmaline · delayed effect through an effect compartment | — | Yasuhara M et al., Kinetics of ajmaline disposition and ph…, Journal of pharmacokinetics… (1987) | [10.1007/BF01062938](https://doi.org/10.1007/BF01062938) |
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">dog</span> | [Yasuhara_1987_QRS](drugs/drug_ajmaline/pd_Yasuhara_1987_QRS.md) | QRS interval ← ajmaline · delayed effect through an effect compartment | — | Yasuhara M et al., Kinetics of ajmaline disposition and ph…, Journal of pharmacokinetics… (1987) | [10.1007/BF01062938](https://doi.org/10.1007/BF01062938) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">dog</span> | [Yasuhara_1987_PQ](drugs/drug_ajmaline/pd_Yasuhara_1987_PQ.md) | PQ interval change ← ajmaline · delayed effect through an effect compartment | model (no simulator) | Yasuhara M et al., Kinetics of ajmaline disposition and ph…, Journal of pharmacokinetics… (1987) | [10.1007/BF01062938](https://doi.org/10.1007/BF01062938) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">dog</span> | [Yasuhara_1987_QRS](drugs/drug_ajmaline/pd_Yasuhara_1987_QRS.md) | QRS interval change ← ajmaline · delayed effect through an effect compartment | model (no simulator) | Yasuhara M et al., Kinetics of ajmaline disposition and ph…, Journal of pharmacokinetics… (1987) | [10.1007/BF01062938](https://doi.org/10.1007/BF01062938) |
+
+## Pharmacogenomics (PGx)
+
+| status | gene | affects | mechanism | detail | citation | doi |
+|---|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--neutral" title="the paper links the gene to the drug but states no effect size on a model parameter, so it changes no model.">qualitative</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.25). The first reading is what the record holds.">cross-check: partial</span> | **CYP2D6** | `Q100` — no parameter target — an association/risk finding, not a parameter shift | metabolism | [Köppel_1989](drugs/drug_ajmaline/pgx_K_ppel_1989_CYP2D6_Q100.md) | Köppel C et al., Metabolic disposition of ajmaline, European journal of drug me… (1989) | [10.1007/BF03190117](https://doi.org/10.1007/BF03190117) |
+
+<details class="pk-legend"><summary>What the PGx badges mean — evidence, and whether a model runs</summary><table><tbody><tr><td><span class="pk-badge pk-badge--green">quantitative</span></td><td>the paper gives the effect of each phenotype (or genotype) on a named model parameter — a θ per category.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">qualitative</span></td><td>the paper links the gene to the drug but states no effect size on a model parameter, so it changes no model.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">guideline estimate</span></td><td>the effect comes from a CPIC / DPWG dosing guideline, not from this paper's numbers.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">safety allele</span></td><td>a risk allele for an adverse reaction (an HLA type, G6PD deficiency …): it changes no PK/PD parameter.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>the extraction is incomplete or inconsistent.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted.</td></tr><tr><td><span class="pk-badge pk-badge--green">▶ simulatable</span></td><td>the paper's popPK model runs per phenotype in the browser (Simulation tab); its PGx Modelica model is under Models.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">model only</span></td><td>a PGx Modelica model exists but has no in-browser simulator.</td></tr></tbody></table></details>
+
+<details class="legend">
+<summary>What the PGx columns mean</summary>
+<table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>gene</code></td><td>the gene whose variants the record is about. One record per gene, so a paper reporting several genes appears on several rows.</td></tr><tr><td><code>affects</code></td><td>the PK or PD parameter the genotype SHIFTS, as an ontology Q-code plus its name — Q22 = clearance, Q27 = CL/F (apparent clearance), Q32 = Cmax, Q88 = AUC, Q40 = Fab, Q321 = EC50, Q322 = IC50, Q305 = kfm. The record's per-phenotype theta is a multiplier ON that parameter: a poor-metaboliser theta shifts this value, it does not supply one. Two values are NOT parameters — Q100 (NIL) is an association or risk finding with no parameter target, and `safety` is an adverse-reaction risk such as an HLA allele. A PA… id instead of a Q-code marks a record derived from a ClinPGx/PharmGKB guideline lookup rather than read out of the paper.</td></tr><tr><td><code>mechanism</code></td><td>how the gene acts: metabolism, transport, target, formation, safety_allele, or unknown.</td></tr><tr><td><code>detail</code></td><td>the paper stem, linking to the full record page.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>the field is absent from the KB artifact — nothing was recorded. This is NOT the same as zero or empty: the value is unknown, not measured to be nothing.</td></tr><tr><td><code>—</code></td><td>deliberately not shown: the column does not apply to this row.</td></tr><tr><td><code>not verified</code></td><td>the record is not in an accepted state (see the badge and the note above the table); the numbers are shown as extracted, not endorsed.</td></tr></tbody></table>
+</details>
 
 ## ADME sites
 
@@ -55,6 +75,8 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 | process | tissue | actors (role) | evidence |
 |---|---|---|---|
 | distribution | blood | `ORM1` unknown | DrugBank actor |
+| metabolism | brain | `CYP2D6` metabolism | paper PGx gene |
+| metabolism | liver | `CYP2D6` metabolism | paper PGx gene |
 
 <sub>Actors without a tissue in the table: SCN5A (inhibitor).</sub>
 
@@ -67,24 +89,20 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 ## Coverage
 
 - **PubMed hits:** 43 matched, 31 returned
-- **screened:** 4  ·  **relevant:** 4
-- **records:** 1  ·  extracted 0  ·  needs_review 0  ·  rejected 1  ·  stale 1
+- **screened:** 8  ·  **relevant:** 4
+- **records:** 6  ·  extracted 1  ·  needs_review 1  ·  rejected 4  ·  stale 1
 - **scholar-agent fallback query used:** not captured
 
 ## Full text wanted
 
-_6 paper(s) judged relevant from the abstract, with no full text on disk — paywalled, or the resolver could not reach them. Follow the DOI, then save the PDF into `papers/` as `&lt;save as&gt;.pdf` and re-run the extraction._
+_2 paper(s) judged relevant from the abstract, with no full text on disk — paywalled, or the resolver could not reach them. Follow the DOI, then save the PDF into `papers/` as `&lt;save as&gt;.pdf` and re-run the extraction._
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Elfner_1987.pdf` | Elfner R et al., Pharmacokinetics of n-propyl-ajmaline-b…, European journal of drug me… (1987) | popPK | 10 | [10.1007/BF03189865](https://doi.org/10.1007/BF03189865) | [3609075](https://pubmed.ncbi.nlm.nih.gov/3609075) | The study reports quantitative pharmacokinetic parameters (clearance and volume of distribution) for N-propyl-ajmaline, a specific ajmaline derivative, in human patients. |
-| `Iven_1977.pdf` | Iven H, The pharmacokinetics and organ distribu…, Naunyn-Schmiedeberg's archi… (1977) | popPK | 10 | [10.1007/BF00510985](https://doi.org/10.1007/BF00510985) | [882146](https://pubmed.ncbi.nlm.nih.gov/882146) | The study reports quantitative pharmacokinetic parameters (half-lives, volume of distribution) for ajmaline in mice using a two-compartment model. |
-| `Yasuhara_1987.pdf` | Yasuhara M et al., Kinetics of ajmaline disposition and ph…, Journal of pharmacokinetics… (1987) | popPK | 9 | [10.1007/BF01062938](https://doi.org/10.1007/BF01062938) | [3625478](https://pubmed.ncbi.nlm.nih.gov/3625478) | The study reports a two-compartment PK model for ajmaline in dogs, but the specific numeric parameter values are not present in the provided evidence text. |
-| `Hori_1984.pdf` | Hori R et al., Quinidine-induced rise in ajmaline plas…, The Journal of pharmacy and… (1984) | popPK | 8 | [10.1111/j.2042-7158.1984.tb06942.x](https://doi.org/10.1111/j.2042-7158.1984.tb06942.x) | [6144760](https://pubmed.ncbi.nlm.nih.gov/6144760) | The study reports quantitative PK parameters (ka, elimination rate constant, AUC, Cmax) for ajmaline in humans, though specific clearance or volume values are not explicitly listed. |
 | `Spilker_1975.pdf` | Spilker B et al., Cardiovascular effects and blood concen…, Archives internationales de… (1975) | popPK | 8 | not captured | [1164107](https://pubmed.ncbi.nlm.nih.gov/1164107) | The study reports quantitative PK parameters for ajmaline in cats, specifically a half-life of 100 min and peak blood level timing, though full compartmental parameters (CL, V) are not explicitly listed in the text. |
 | `Miao_2025.pdf` | Miao Z et al., Zebrafish embryos as a teratogenicity s…, Reproductive toxicology (El… (2025) | pd | 5 | [10.1016/j.reprotox.2025.108895](https://doi.org/10.1016/j.reprotox.2025.108895) | [40097051](https://www.ncbi.nlm.nih.gov/pubmed/40097051) | metadata signals extractable PD data (EC50) |
 
-<sub>queue written 2026-10-06T01:58:33.979945+00:00</sub>
+<sub>queue written 2026-10-08T15:46:52.724249+00:00</sub>
 
 ## Screened and excluded
 
@@ -102,4 +120,4 @@ _6 paper(s) judged relevant from the abstract, with no full text on disk — pay
 | popPK | Yasuhara_1987 | relevant | 9 | 0 | The study reports a two-compartment PK model for ajmaline in dogs, but the specific numeric parameter values are not present in the provided evidence text. |
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-10-06 01:58 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-10-08 15:33 UTC</sub>

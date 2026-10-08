@@ -17,9 +17,9 @@
 
 **Model:** No model was generated from this record.
 
-> The paper does not report a dofetilide-specific concentration–QT model: the driving concentration is unresolved, and no mechanism, effect form, or potency/rate parameters (Imax, IC50, EC50, Emax, kin, kout, ke0, gamma) for dofetilide are given in the excerpts. The excerpts only describe linear mixed-effect concentration–QT (C-QT) analysis of ΔQT/ΔΔQT versus concentration, with slopes, intercepts, and critical concentration ratios reported for other compounds (moxifloxacin, ondansetron, verapamil), not for dofetilide.
+> The paper describes a linear mixed-effect concentration-QT model where dofetilide plasma concentrations (ng/mL) linearly stimulate the QT interval (ms) with an additive effect, characterized by a slope of 24.82 and an intercept of 0.67. The provided excerpts do not specify the underlying physiological mechanism (e.g., ion channel blockade) or potency parameters (IC50/EC50) for dofetilide, focusing instead on the statistical regression of the concentration-response relationship.
 >
-> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+> <sub>in the paper's terms — summarised by qwen3.8:27b-mtp-q8_0 from the paper's text; not checked by a person</sub>
 
 - **paper:** `Aguado-Sierra_2024`
 - **model family:** `linear`
