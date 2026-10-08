@@ -1,5 +1,5 @@
 {
- "kb_mtime": 1791494490.871833,
+ "kb_mtime": 1791501798.958304,
  "rows": [
   {
    "abstract_only": 83,
@@ -54245,7 +54245,7 @@
   {
    "abstract_only": 11,
    "backend": "ollama",
-   "calls": 77,
+   "calls": 380,
    "combination": null,
    "curated_models": 0,
    "drug": "propafenone",
@@ -54253,7 +54253,7 @@
     "approved",
     "investigational"
    ],
-   "elapsed_s": 520.0,
+   "elapsed_s": 1949.2,
    "eu_status": "not_centrally_authorised",
    "grobid": 3,
    "has_truth": false,
@@ -54293,22 +54293,22 @@
    "supp_other": 0,
    "supp_pd_none": 5,
    "supp_pk_none": 2,
-   "tokens_in": 96820,
-   "tokens_out": 28356
+   "tokens_in": 453522,
+   "tokens_out": 107996
   },
   {
-   "abstract_only": 11,
+   "abstract_only": 7,
    "backend": "ollama",
-   "calls": 143,
+   "calls": 188,
    "combination": null,
    "curated_models": 0,
    "drug": "quinidine",
    "drugbank_groups": [
     "approved"
    ],
-   "elapsed_s": 831.8,
+   "elapsed_s": 1254.6,
    "eu_status": "not_centrally_authorised",
-   "grobid": 4,
+   "grobid": 8,
    "has_truth": false,
    "interactions": 0,
    "jats": 4,
@@ -54332,22 +54332,22 @@
    "pk_gapfill": 0,
    "pk_review_models": 0,
    "poppk_extracted": 2,
-   "poppk_other": 1,
-   "poppk_rejected": 2,
+   "poppk_other": 4,
+   "poppk_rejected": 1,
    "relevant": 12,
    "reused_cache": false,
    "review_papers": 4,
    "review_records": 37,
    "src_pd_abstract_only": 1,
    "src_pd_grobid": 6,
-   "src_pk_abstract_only": 1,
+   "src_pk_grobid": 1,
    "src_pk_jats": 1,
    "supp_nonmem": 0,
    "supp_other": 0,
    "supp_pd_none": 7,
    "supp_pk_none": 2,
-   "tokens_in": 230976,
-   "tokens_out": 41472
+   "tokens_in": 241969,
+   "tokens_out": 57712
   },
   {
    "abstract_only": 65,
@@ -54440,9 +54440,9 @@
    "tokens_out": null
   },
   {
-   "abstract_only": 96,
+   "abstract_only": 63,
    "backend": "ollama",
-   "calls": 130,
+   "calls": 783,
    "combination": null,
    "curated_models": 0,
    "drug": "sparteine",
@@ -54450,9 +54450,9 @@
     "approved",
     "withdrawn"
    ],
-   "elapsed_s": 443.6,
+   "elapsed_s": 4276.3,
    "eu_status": "not_centrally_authorised",
-   "grobid": 14,
+   "grobid": 46,
    "has_truth": false,
    "interactions": 0,
    "jats": 5,
@@ -54462,60 +54462,65 @@
    "oa": 18,
    "panel": "dg-C01B-2",
    "papers": 115,
-   "pd_extracted": 4,
+   "pd_extracted": 7,
    "pd_gapfill": 0,
    "pd_other": 0,
    "pd_rejected": 2,
    "pd_review_models": 0,
-   "pdftext": 0,
-   "pgx_extracted": 0,
+   "pdftext": 1,
+   "pgx_extracted": 1,
    "pgx_gapfill": null,
-   "pgx_other": 9,
+   "pgx_other": 19,
    "pgx_rejected": 0,
    "pgx_review_models": 0,
    "pk_gapfill": 0,
-   "pk_review_models": 0,
-   "poppk_extracted": 0,
+   "pk_review_models": 4,
+   "poppk_extracted": 4,
    "poppk_other": 0,
-   "poppk_rejected": 0,
-   "relevant": 24,
+   "poppk_rejected": 4,
+   "relevant": 27,
    "reused_cache": false,
-   "review_papers": 0,
-   "review_records": 0,
+   "review_papers": 16,
+   "review_records": 329,
+   "src_pd_grobid": 3,
    "src_pd_jats": 4,
+   "src_pgx_grobid": 1,
+   "src_pk_grobid": 4,
    "supp_nonmem": 0,
    "supp_other": 3,
-   "supp_pd_none": 2,
+   "supp_pd_none": 5,
    "supp_pd_other": 2,
-   "tokens_in": 210916,
-   "tokens_out": 11229
+   "supp_pgx_none": 1,
+   "supp_pk_none": 4,
+   "tokens_in": 1148639,
+   "tokens_out": 210117
   },
   {
-   "abstract_only": 16,
+   "abstract_only": 13,
    "backend": "ollama",
-   "calls": 18,
+   "calls": 13,
    "combination": null,
    "curated_models": 0,
    "drug": "tedisamil",
    "drugbank_groups": [
     "experimental"
    ],
-   "elapsed_s": 113.3,
+   "elapsed_s": 247.6,
    "eu_status": "not_centrally_authorised",
-   "grobid": 3,
+   "grobid": 6,
    "has_truth": false,
    "interactions": 0,
    "jats": 0,
    "model": "qwen3.8:27b-mtp-q8_0",
-   "no_pdf": 16,
-   "non_oa": 0,
+   "no_pdf": 13,
+   "non_oa": 3,
    "oa": 3,
    "panel": "dg-C01B-2",
    "papers": 19,
    "pd_extracted": 5,
    "pd_gapfill": 0,
    "pd_other": 0,
-   "pd_rejected": 1,
+   "pd_rejected": 2,
    "pd_review_models": 0,
    "pdftext": 0,
    "pgx_extracted": 0,
@@ -54536,11 +54541,11 @@
    "supp_nonmem": 0,
    "supp_other": 0,
    "supp_pd_none": 5,
-   "tokens_in": 62858,
-   "tokens_out": 2355
+   "tokens_in": 52655,
+   "tokens_out": 9780
   },
   {
-   "abstract_only": 53,
+   "abstract_only": 26,
    "backend": "ollama",
    "calls": 150,
    "combination": null,
@@ -54552,7 +54557,7 @@
    ],
    "elapsed_s": 618.2,
    "eu_status": "not_centrally_authorised",
-   "grobid": 4,
+   "grobid": 31,
    "has_truth": false,
    "interactions": 0,
    "jats": 0,
@@ -54573,16 +54578,16 @@
    "pgx_other": 0,
    "pgx_rejected": 0,
    "pgx_review_models": 0,
-   "pk_gapfill": 1,
+   "pk_gapfill": 0,
    "pk_review_models": 1,
    "poppk_extracted": 0,
    "poppk_other": 1,
-   "poppk_rejected": 1,
-   "relevant": 31,
+   "poppk_rejected": 2,
+   "relevant": 33,
    "reused_cache": false,
    "review_papers": 3,
    "review_records": 99,
-   "src_pd_abstract_only": 3,
+   "src_pd_grobid": 3,
    "supp_nonmem": 0,
    "supp_other": 0,
    "supp_pd_none": 3,
@@ -54639,43 +54644,43 @@
    "tokens_out": 5143
   },
   {
-   "abstract_only": 392,
-   "calls": 1492,
+   "abstract_only": 325,
+   "calls": 2488,
    "drug": "TOTAL",
    "drugs": 15,
-   "elapsed_s": 8907.8,
-   "grobid": 107,
+   "elapsed_s": 14726.8,
+   "grobid": 173,
    "interactions": 0,
    "is_total": true,
    "jats": 41,
-   "no_pdf": 224,
-   "non_oa": 231,
+   "no_pdf": 221,
+   "non_oa": 234,
    "oa": 88,
    "panel": "dg-C01B-2",
    "papers": 543,
-   "pd_extracted": 45,
+   "pd_extracted": 48,
    "pd_gapfill": 0,
    "pd_other": 4,
-   "pd_rejected": 8,
+   "pd_rejected": 9,
    "pd_review_models": 0,
-   "pdftext": 3,
-   "pgx_extracted": 0,
+   "pdftext": 4,
+   "pgx_extracted": 1,
    "pgx_gapfill": null,
-   "pgx_other": 32,
+   "pgx_other": 42,
    "pgx_rejected": 0,
    "pgx_review_models": 0,
-   "pk_gapfill": 8,
-   "pk_review_models": 1,
-   "poppk_extracted": 8,
-   "poppk_other": 13,
-   "poppk_rejected": 38,
-   "relevant": 159,
-   "review_papers": 22,
-   "review_records": 343,
+   "pk_gapfill": 7,
+   "pk_review_models": 5,
+   "poppk_extracted": 12,
+   "poppk_other": 16,
+   "poppk_rejected": 42,
+   "relevant": 164,
+   "review_papers": 38,
+   "review_records": 672,
    "supp_nonmem": 0,
    "supp_other": 16,
-   "tokens_in": 2160389,
-   "tokens_out": 431952
+   "tokens_in": 3455604,
+   "tokens_out": 734145
   },
   {
    "abstract_only": 17,
@@ -270275,7 +270280,7 @@
    "tokens_out": null
   }
  ],
- "run_mtime": 1791494576.678986,
+ "run_mtime": 1791501784.0223901,
  "runs": {
   "dbs": {
    "attempts": 11,
@@ -319142,22 +319147,6 @@
    "year": "1994"
   },
   {
-   "authors": "Eichelbaum M; Spannbrucker N; Dengler HJ",
-   "doi": "10.1007/BF00562060",
-   "doi_url": "https://doi.org/10.1007/BF00562060",
-   "domain": "poppk",
-   "drug": "sparteine",
-   "journal": "European journal of clinical pharmacology 16(3):189\u2013194",
-   "pmid": "499319",
-   "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/499319",
-   "reason": "The abstract explicitly reports quantitative pharmacokinetic parameters (half-life and total plasma clearance) for sparteine in human metabolisers and nonmetabolisers.",
-   "relevance_score": 10,
-   "slug": "sparteine",
-   "stem": "Eichelbaum_1979",
-   "title": "Influence of the defective metabolism of sparteine on its pharmacokinetics",
-   "year": "1979"
-  },
-  {
    "authors": "Friis C; Erhardsen E; Madsen EB; Nielsen P; Raun K",
    "doi": "",
    "doi_url": "",
@@ -322070,54 +322059,6 @@
    "year": "2021"
   },
   {
-   "authors": "Graffner C; Conradson TB; Hofvendahl S; Ryd\u00e9n L",
-   "doi": "10.1038/clpt.1980.10",
-   "doi_url": "https://doi.org/10.1038/clpt.1980.10",
-   "domain": "poppk",
-   "drug": "tocainide",
-   "journal": "Clinical pharmacology and therapeutics 27(1):64\u201371",
-   "pmid": "7351118",
-   "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/7351118",
-   "reason": "The abstract explicitly reports quantitative PK parameters including half-life, volume of distribution, and renal clearance for tocainide in humans.",
-   "relevance_score": 10,
-   "slug": "tocainide",
-   "stem": "Graffner_1980",
-   "title": "Tocainide kinetics after intravenous and oral administration in healthy subjects and in patients with acute myocardial infarction",
-   "year": "1980"
-  },
-  {
-   "authors": "Lalka D; Meyer MB; Duce BR; Elvin AT",
-   "doi": "10.1002/cpt1976196757",
-   "doi_url": "https://doi.org/10.1002/cpt1976196757",
-   "domain": "poppk",
-   "drug": "tocainide",
-   "journal": "Clinical pharmacology and therapeutics 19(6):757\u2013766",
-   "pmid": "1269216",
-   "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/1269216",
-   "reason": "The abstract explicitly reports quantitative pharmacokinetic parameters for tocainide in humans, including central volume (0.92 L/kg), total body clearance (166 ml/min), and half-life (11 hr).",
-   "relevance_score": 10,
-   "slug": "tocainide",
-   "stem": "Lalka_1976",
-   "title": "Kinetics of the oral antiarrhythmic lidocaine congener, tocainide",
-   "year": "1976"
-  },
-  {
-   "authors": "McErlane KM; Axelson J; Vaughan R; Kerr CR; Price JD; Igwemezie L; et al.",
-   "doi": "10.1007/BF00315413",
-   "doi_url": "https://doi.org/10.1007/BF00315413",
-   "domain": "poppk",
-   "drug": "tocainide",
-   "journal": "European journal of clinical pharmacology 39(4):373\u2013376",
-   "pmid": "2127569",
-   "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/2127569",
-   "reason": "The abstract provides specific quantitative values for total body clearance, S/R clearance ratios, and half-life ratios for tocainide enantiomers in humans.",
-   "relevance_score": 10,
-   "slug": "tocainide",
-   "stem": "McErlane_1990",
-   "title": "Stereoselective pharmacokinetics of tocainide in human uraemic patients and in healthy subjects",
-   "year": "1990"
-  },
-  {
    "authors": "Rice TL; Patterson JH; Celestin C; Foster JR; Powell JR",
    "doi": "",
    "doi_url": "",
@@ -322132,22 +322073,6 @@
    "stem": "Rice_1989",
    "title": "Influence of rifampin on tocainide pharmacokinetics in humans",
    "year": "1989"
-  },
-  {
-   "authors": "Wiegers U; Hanrath P; Kuck KH; Pottage A; Graffner C; Augustin J; et al.",
-   "doi": "10.1007/BF00609893",
-   "doi_url": "https://doi.org/10.1007/BF00609893",
-   "domain": "poppk",
-   "drug": "tocainide",
-   "journal": "European journal of clinical pharmacology 24(4):503\u2013507",
-   "pmid": "6407848",
-   "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/6407848",
-   "reason": "The abstract provides specific quantitative values for plasma half-life and total plasma clearance for tocainide in patients with renal dysfunction.",
-   "relevance_score": 10,
-   "slug": "tocainide",
-   "stem": "Wiegers_1983",
-   "title": "Pharmacokinetics of tocainide in patients with renal dysfunction and during haemodialysis",
-   "year": "1983"
   },
   {
    "authors": "Frey N; Grange S; Woodworth T",
@@ -340628,38 +340553,6 @@
    "stem": "Sou_2020",
    "title": "Model-Informed Drug Development in Pulmonary Delivery: Semimechanistic Pharmacokinetic-Pharmacodynamic Modeling for Evaluation of Treatments against Chronic",
    "year": "2020"
-  },
-  {
-   "authors": "Braun J; S\u00f6rgel F; Engelmaier F; Gluth WP; Gessler U",
-   "doi": "10.1007/BF00607912",
-   "doi_url": "https://doi.org/10.1007/BF00607912",
-   "domain": "poppk",
-   "drug": "tocainide",
-   "journal": "European journal of clinical pharmacology 28(6):665\u2013670",
-   "pmid": "3933983",
-   "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/3933983",
-   "reason": "The study reports pharmacokinetic parameters for tocainide in humans, but the evidence only provides peak plasma concentrations (Cmax) and qualitative descriptions of clearance, lacking specific numeric values for CL, V, or half-life.",
-   "relevance_score": 9,
-   "slug": "tocainide",
-   "stem": "Braun_1985",
-   "title": "Pharmacokinetics of tocainide in patients with severe renal failure",
-   "year": "1985"
-  },
-  {
-   "authors": "Oltmanns D; Pottage A; Endell W",
-   "doi": "10.1007/BF00542521",
-   "doi_url": "https://doi.org/10.1007/BF00542521",
-   "domain": "poppk",
-   "drug": "tocainide",
-   "journal": "European journal of clinical pharmacology 25(6):787\u2013790",
-   "pmid": "6420165",
-   "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/6420165",
-   "reason": "The study reports quantitative pharmacokinetic parameters (half-life, clearance, volume of distribution) for tocainide in human patients with hepatic and renal dysfunction.",
-   "relevance_score": 9,
-   "slug": "tocainide",
-   "stem": "Oltmanns_1983",
-   "title": "Pharmacokinetics of tocainide in patients with combined hepatic and renal dysfunction",
-   "year": "1983"
   },
   {
    "authors": "Venkataramanan R; Axelson JE",
@@ -360148,70 +360041,6 @@
    "stem": "Christensen_1995_2",
    "title": "Assay of tocainide enantiomers in plasma by solid-phase extraction and indirect chiral high-performance liquid chromatography after derivatization with (-)-menthyl chloroformate",
    "year": "1995"
-  },
-  {
-   "authors": "Elvin AT; Lalka D; Stoeckel K; du Souich P; Axelson JE; Golden LH; et al.",
-   "doi": "10.1038/clpt.1980.217",
-   "doi_url": "https://doi.org/10.1038/clpt.1980.217",
-   "domain": "poppk",
-   "drug": "tocainide",
-   "journal": "Clinical pharmacology and therapeutics 28(5):652\u2013658",
-   "pmid": "6777107",
-   "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/6777107",
-   "reason": "The study reports quantitative PK parameters (AUC, urinary excretion percentages) for tocainide in humans, but does not explicitly list clearance (CL) or volume (V) values.",
-   "relevance_score": 8,
-   "slug": "tocainide",
-   "stem": "Elvin_1980",
-   "title": "Tocainide kinetics and metabolism: effects of phenobarbital and substrates of glucuronyl transferase",
-   "year": "1980"
-  },
-  {
-   "authors": "Klein MD; Levine PA; Ryan TJ",
-   "doi": "10.1378/chest.77.6.726",
-   "doi_url": "https://doi.org/10.1378/chest.77.6.726",
-   "domain": "poppk",
-   "drug": "tocainide",
-   "journal": "Chest 77(6):726\u2013730",
-   "pmid": "6772381",
-   "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/6772381",
-   "reason": "The study reports the plasma half-time of elimination (19.1 +/- 6.8 hours) for tocainide in humans, but lacks other quantitative disposition parameters like clearance or volume of distribution.",
-   "relevance_score": 8,
-   "slug": "tocainide",
-   "stem": "Klein_1980",
-   "title": "Antiarrhythmic efficacy, pharmacokinetics and clinical safety of tocainide in convalescent myocardial infarction patients",
-   "year": "1980"
-  },
-  {
-   "authors": "North DS; Mattern AL; Kapil RP; Lalonde RL",
-   "doi": "10.1002/j.1552-4604.1988.tb03188.x",
-   "doi_url": "https://doi.org/10.1002/j.1552-4604.1988.tb03188.x",
-   "domain": "poppk",
-   "drug": "tocainide",
-   "journal": "Journal of clinical pharmacology 28(7):640\u2013643",
-   "pmid": "2905709",
-   "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/2905709",
-   "reason": "The study reports quantitative PK parameters (AUC, Cmax, renal clearance, half-life) for tocainide in humans, though specific numeric values for clearance and half-life are not explicitly listed in the text provided.",
-   "relevance_score": 8,
-   "slug": "tocainide",
-   "stem": "North_1988",
-   "title": "The effect of histamine-2 receptor antagonists on tocainide pharmacokinetics",
-   "year": "1988"
-  },
-  {
-   "authors": "Runciman WB; Mather LE; Carapetis RJ; Ilsley AH; McLean CF",
-   "doi": "10.3109/00498258709043989",
-   "doi_url": "https://doi.org/10.3109/00498258709043989",
-   "domain": "poppk",
-   "drug": "tocainide",
-   "journal": "Xenobiotica; the fate of foreign compounds in biological systems 17(7):807\u2013813",
-   "pmid": "3660850",
-   "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/3660850",
-   "reason": "The study reports quantitative changes in tocainide clearance (50% reduction) and extraction ratios in sheep, but specific baseline numeric values for CL or V are not explicitly listed in the provided text.",
-   "relevance_score": 8,
-   "slug": "tocainide",
-   "stem": "Runciman_1987",
-   "title": "The effects of general anaesthesia on tocainide clearance in the sheep",
-   "year": "1987"
   },
   {
    "authors": "Venkataramanan R; Axelson JE",
@@ -392179,25 +392008,6 @@
    "year": "1990"
   },
   {
-   "authors": "Mueller JA; Cowell A; Chandler BD; Sigman MS",
-   "doi": "10.1021/ja053195p",
-   "doi_url": "https://doi.org/10.1021/ja053195p",
-   "domain": "pd",
-   "drug": "sparteine",
-   "journal": "Journal of the American Chemical Society",
-   "matched": [
-    "concentrationeffect"
-   ],
-   "pmid": "16231935",
-   "pubmed_url": "https://www.ncbi.nlm.nih.gov/pubmed/16231935",
-   "reason": "metadata signals extractable PD data (concentrationeffect)",
-   "relevance_score": 5,
-   "slug": "sparteine",
-   "stem": "Mueller_2005",
-   "title": "Origin of enantioselection in chiral alcohol oxidation catalyzed by Pd[(-)-sparteine]Cl2",
-   "year": "2005"
-  },
-  {
    "authors": "",
    "doi": "10.1016/S0009-9236(99)90053-X",
    "doi_url": "https://doi.org/10.1016/S0009-9236(99)90053-X",
@@ -392975,44 +392785,6 @@
    "stem": "Berndt_1994",
    "title": "Dose dependent tiracizine disposition in healthy volunteers: serum and urine kinetics and dose related ECG-changes",
    "year": "1994"
-  },
-  {
-   "authors": "Follath F; Ganzinger U; Schuetz E",
-   "doi": "10.2165/00003088-198308010-00004",
-   "doi_url": "https://doi.org/10.2165/00003088-198308010-00004",
-   "domain": "pd",
-   "drug": "tocainide",
-   "journal": "Clinical pharmacokinetics",
-   "matched": [
-    "concentration-effect"
-   ],
-   "pmid": "6404580",
-   "pubmed_url": "https://www.ncbi.nlm.nih.gov/pubmed/6404580",
-   "reason": "metadata signals extractable PD data (concentration-effect)",
-   "relevance_score": 5,
-   "slug": "tocainide",
-   "stem": "Follath_1983",
-   "title": "Reliability of antiarrhythmic drug plasma concentration monitoring",
-   "year": "1983"
-  },
-  {
-   "authors": "Meffin PJ; Winkle RA; Blaschke TF; Fitzgerald J; Harrison DC; Harapat SR; et al.",
-   "doi": "10.1002/cpt197722142",
-   "doi_url": "https://doi.org/10.1002/cpt197722142",
-   "domain": "pd",
-   "drug": "tocainide",
-   "journal": "Clinical pharmacology and therapeutics",
-   "matched": [
-    "concentrationeffect"
-   ],
-   "pmid": "872495",
-   "pubmed_url": "https://www.ncbi.nlm.nih.gov/pubmed/872495",
-   "reason": "metadata signals extractable PD data (concentrationeffect)",
-   "relevance_score": 5,
-   "slug": "tocainide",
-   "stem": "Meffin_1977",
-   "title": "Response optimization of drug dosage: antiarrhythmic studies with tocainide",
-   "year": "1977"
   },
   {
    "authors": "Watanabe A; Katsube T",
@@ -442054,44 +441826,6 @@
    "year": "2000"
   },
   {
-   "authors": "Ellis SW; Ching MS; Watson PF; Henderson CJ; Simula AP; Lennard MS; et al.",
-   "doi": "10.1016/0006-2952(92)90394-x",
-   "doi_url": "https://doi.org/10.1016/0006-2952(92)90394-x",
-   "domain": "pd",
-   "drug": "sparteine",
-   "journal": "Biochemical pharmacology",
-   "matched": [
-    "IC50"
-   ],
-   "pmid": "1510710",
-   "pubmed_url": "https://www.ncbi.nlm.nih.gov/pubmed/1510710",
-   "reason": "metadata signals extractable PD data (IC50)",
-   "relevance_score": 4,
-   "slug": "sparteine",
-   "stem": "Ellis_1992",
-   "title": "Catalytic activities of human debrisoquine 4-hydroxylase cytochrome P450 (CYP2D6) expressed in yeast",
-   "year": "1992"
-  },
-  {
-   "authors": "Honerj\u00e4ger P; Loibl E; Steidl I; Sch\u00f6nsteiner G; Ulm K",
-   "doi": "10.1007/BF00511411",
-   "doi_url": "https://doi.org/10.1007/BF00511411",
-   "domain": "pd",
-   "drug": "sparteine",
-   "journal": "Naunyn-Schmiedeberg's archives of pharmacology",
-   "matched": [
-    "IC50"
-   ],
-   "pmid": "2422563",
-   "pubmed_url": "https://www.ncbi.nlm.nih.gov/pubmed/2422563",
-   "reason": "metadata signals extractable PD data (IC50)",
-   "relevance_score": 4,
-   "slug": "sparteine",
-   "stem": "Honerj\u00e4ger_1986",
-   "title": "Negative inotropic effects of tetrodotoxin and seven class 1 antiarrhythmic drugs in relation to sodium channel blockade",
-   "year": "1986"
-  },
-  {
    "authors": "Jurima-Romet M; Crawford K; Cyr T; Inaba T",
    "doi": "",
    "doi_url": "",
@@ -442109,25 +441843,6 @@
    "stem": "Jurima-Romet_1994",
    "title": "Terfenadine metabolism in human liver. In vitro inhibition by macrolide antibiotics and azole antifungals",
    "year": "1994"
-  },
-  {
-   "authors": "K\u00f6rper S; Wink M; Fink RH",
-   "doi": "10.1016/s0014-5793(98)01135-1",
-   "doi_url": "https://doi.org/10.1016/s0014-5793(98)01135-1",
-   "domain": "pd",
-   "drug": "sparteine",
-   "journal": "FEBS letters",
-   "matched": [
-    "IC50"
-   ],
-   "pmid": "9781689",
-   "pubmed_url": "https://www.ncbi.nlm.nih.gov/pubmed/9781689",
-   "reason": "metadata signals extractable PD data (IC50)",
-   "relevance_score": 4,
-   "slug": "sparteine",
-   "stem": "K\u00f6rper_1998",
-   "title": "Differential effects of alkaloids on sodium currents of isolated single skeletal muscle fibers",
-   "year": "1998"
   },
   {
    "authors": "Tyndale RF; Sunahara R; Inaba T; Kalow W; Gonzalez FJ; Niznik HB",
@@ -442964,63 +442679,6 @@
    "stem": "McGoron_1997",
    "title": "Extraction and retention of technetium-99m Q12, technetium-99m sestamibi, and thallium-201 in isolated rat heart during coronary acidemia",
    "year": "1997"
-  },
-  {
-   "authors": "Pfr\u00fcnder D; Kreye VA",
-   "doi": "10.1007/BF00550866",
-   "doi_url": "https://doi.org/10.1007/BF00550866",
-   "domain": "pd",
-   "drug": "tedisamil",
-   "journal": "Pflugers Archiv : European journal of physiology",
-   "matched": [
-    "IC50"
-   ],
-   "pmid": "1876480",
-   "pubmed_url": "https://www.ncbi.nlm.nih.gov/pubmed/1876480",
-   "reason": "metadata signals extractable PD data (IC50)",
-   "relevance_score": 4,
-   "slug": "tedisamil",
-   "stem": "Pfr\u00fcnder_1991",
-   "title": "Tedisamil blocks single large-conductance Ca(2+)-activated K+ channels in membrane patches from smooth muscle cells of the guinea-pig portal vein",
-   "year": "1991"
-  },
-  {
-   "authors": "Quast U; Baumlin Y; Loffler C",
-   "doi": "10.1007/BF00168920",
-   "doi_url": "https://doi.org/10.1007/BF00168920",
-   "domain": "pd",
-   "drug": "tedisamil",
-   "journal": "Naunyn-Schmiedeberg's archives of pharmacology",
-   "matched": [
-    "IC50"
-   ],
-   "pmid": "8750921",
-   "pubmed_url": "https://www.ncbi.nlm.nih.gov/pubmed/8750921",
-   "reason": "metadata signals extractable PD data (IC50)",
-   "relevance_score": 4,
-   "slug": "tedisamil",
-   "stem": "Quast_1995",
-   "title": "Ba2+ differentially inhibits the Rb+ efflux promoting and the vasorelaxant effects of levcromakalim and minoxidil sulfate in rat isolated aorta",
-   "year": "1995"
-  },
-  {
-   "authors": "Thormann J; Mitrovic V; Riedel H; Neuzner J; Strasser R; Bahavar H; et al.",
-   "doi": "10.1016/0002-8703(93)90990-q",
-   "doi_url": "https://doi.org/10.1016/0002-8703(93)90990-q",
-   "domain": "pd",
-   "drug": "tedisamil",
-   "journal": "American heart journal",
-   "matched": [
-    "Emax"
-   ],
-   "pmid": "8480574",
-   "pubmed_url": "https://www.ncbi.nlm.nih.gov/pubmed/8480574",
-   "reason": "metadata signals extractable PD data (Emax)",
-   "relevance_score": 4,
-   "slug": "tedisamil",
-   "stem": "Thormann_1993",
-   "title": "Tedisamil (KC 8857) is a new specific bradycardic drug: does it also influence myocardial contractility? Analysis by the conductance (volume) technique in coronary artery disease",
-   "year": "1993"
   },
   {
    "authors": "Wu WC; Liu YM; Liao YH; Hsu KC; Lien ST; Chen IC; et al.",
@@ -444638,63 +444296,6 @@
    "year": "2005"
   },
   {
-   "authors": "Almotrefi AA; Dzimiri N",
-   "doi": "10.1016/0306-3623(91)90584-s",
-   "doi_url": "https://doi.org/10.1016/0306-3623(91)90584-s",
-   "domain": "pd",
-   "drug": "tocainide",
-   "journal": "General pharmacology",
-   "matched": [
-    "IC50"
-   ],
-   "pmid": "1667301",
-   "pubmed_url": "https://www.ncbi.nlm.nih.gov/pubmed/1667301",
-   "reason": "metadata signals extractable PD data (IC50)",
-   "relevance_score": 4,
-   "slug": "tocainide",
-   "stem": "Almotrefi_1991",
-   "title": "The effect of modifying potassium concentration on the inhibition of myocardial Na(+)-K(+)-ATPase by two class IB antiarrhythmic drugs: lidocaine and tocainide",
-   "year": "1991"
-  },
-  {
-   "authors": "De Luca A; Natuzzi F; Lentini G; Franchini C; Tortorella V; Conte Camerino D",
-   "doi": "10.1007/BF00171325",
-   "doi_url": "https://doi.org/10.1007/BF00171325",
-   "domain": "pd",
-   "drug": "tocainide",
-   "journal": "Naunyn-Schmiedeberg's archives of pharmacology",
-   "matched": [
-    "IC50"
-   ],
-   "pmid": "9053738",
-   "pubmed_url": "https://www.ncbi.nlm.nih.gov/pubmed/9053738",
-   "reason": "metadata signals extractable PD data (IC50)",
-   "relevance_score": 4,
-   "slug": "tocainide",
-   "stem": "De_1995",
-   "title": "Stereoselective effects of mexiletine enantiomers on sodium currents and excitability characteristics of adult skeletal muscle fibers",
-   "year": "1995"
-  },
-  {
-   "authors": "Dzimiri N; Almotrefi AA",
-   "doi": "10.1016/0306-3623(91)90472-i",
-   "doi_url": "https://doi.org/10.1016/0306-3623(91)90472-i",
-   "domain": "pd",
-   "drug": "tocainide",
-   "journal": "General pharmacology",
-   "matched": [
-    "IC50"
-   ],
-   "pmid": "1647350",
-   "pubmed_url": "https://www.ncbi.nlm.nih.gov/pubmed/1647350",
-   "reason": "metadata signals extractable PD data (IC50)",
-   "relevance_score": 4,
-   "slug": "tocainide",
-   "stem": "Dzimiri_1991",
-   "title": "Comparative effects of procainamide, tocainide and lorcainide on Na(+)-K(+)-ATPase in guinea pig heart preparations",
-   "year": "1991"
-  },
-  {
    "authors": "Dzimiri N",
    "doi": "",
    "doi_url": "",
@@ -444731,25 +444332,6 @@
    "stem": "Hill_1988",
    "title": "Determinants of stereospecific binding of type I antiarrhythmic drugs to cardiac sodium channels",
    "year": "1988"
-  },
-  {
-   "authors": "Honerj\u00e4ger P; Loibl E; Steidl I; Sch\u00f6nsteiner G; Ulm K",
-   "doi": "10.1007/BF00511411",
-   "doi_url": "https://doi.org/10.1007/BF00511411",
-   "domain": "pd",
-   "drug": "tocainide",
-   "journal": "Naunyn-Schmiedeberg's archives of pharmacology",
-   "matched": [
-    "IC50"
-   ],
-   "pmid": "2422563",
-   "pubmed_url": "https://www.ncbi.nlm.nih.gov/pubmed/2422563",
-   "reason": "metadata signals extractable PD data (IC50)",
-   "relevance_score": 4,
-   "slug": "tocainide",
-   "stem": "Honerj\u00e4ger_1986",
-   "title": "Negative inotropic effects of tetrodotoxin and seven class 1 antiarrhythmic drugs in relation to sodium channel blockade",
-   "year": "1986"
   },
   {
    "authors": "Sheldon RS; Cannon NJ; Nies AS; Duff HJ",
@@ -463079,26 +462661,6 @@
    "year": "1993"
   },
   {
-   "authors": "Eichelbaum M; Kroemer HK; Fromm MF",
-   "doi": "10.1016/s0169-409x(97)00042-2",
-   "doi_url": "https://doi.org/10.1016/s0169-409x(97)00042-2",
-   "domain": "pgx",
-   "drug": "sparteine",
-   "journal": "Advanced drug delivery reviews",
-   "matched": [
-    "CYP2D6",
-    "PK/PD-context"
-   ],
-   "pmid": "10837557",
-   "pubmed_url": "https://www.ncbi.nlm.nih.gov/pubmed/10837557",
-   "reason": "metadata signals extractable PGX data (CYP2D6, PK/PD-context)",
-   "relevance_score": 8,
-   "slug": "sparteine",
-   "stem": "Eichelbaum_1997",
-   "title": "Impact of P450 genetic polymorphism on the first-pass extraction of cardiovascular and neuroactive drugs",
-   "year": "1997"
-  },
-  {
    "authors": "Fjordside L; Jeppesen U; Eap CB; Powell K; Baumann P; Br\u00f8sen K",
    "doi": "10.1097/00008571-199902000-00008",
    "doi_url": "https://doi.org/10.1097/00008571-199902000-00008",
@@ -463117,26 +462679,6 @@
    "stem": "Fjordside_1999",
    "title": "The stereoselective metabolism of fluoxetine in poor and extensive metabolizers of sparteine",
    "year": "1999"
-  },
-  {
-   "authors": "Halling J; Weihe P; Brosen K",
-   "doi": "10.1097/FTD.0b013e3181666b2f",
-   "doi_url": "https://doi.org/10.1097/FTD.0b013e3181666b2f",
-   "domain": "pgx",
-   "drug": "sparteine",
-   "journal": "Therapeutic drug monitoring",
-   "matched": [
-    "CYP2D6",
-    "PK/PD-context"
-   ],
-   "pmid": "18520597",
-   "pubmed_url": "https://www.ncbi.nlm.nih.gov/pubmed/18520597",
-   "reason": "metadata signals extractable PGX data (CYP2D6, PK/PD-context)",
-   "relevance_score": 8,
-   "slug": "sparteine",
-   "stem": "Halling_2008",
-   "title": "CYP2D6 polymorphism in relation to tramadol metabolism: a study of faroese patients",
-   "year": "2008"
   },
   {
    "authors": "Heinig R; B\u00f6ttcher MF",
@@ -484619,26 +484161,6 @@
    "year": "2000"
   },
   {
-   "authors": "Br\u00f8sen K; Naranjo CA",
-   "doi": "10.1016/s0924-977x(01)00101-8",
-   "doi_url": "https://doi.org/10.1016/s0924-977x(01)00101-8",
-   "domain": "pgx",
-   "drug": "sparteine",
-   "journal": "European neuropsychopharmacology : the journal of the European College of Neuropsychopharmacology",
-   "matched": [
-    "CYP2C19",
-    "PK/PD-context"
-   ],
-   "pmid": "11532381",
-   "pubmed_url": "https://www.ncbi.nlm.nih.gov/pubmed/11532381",
-   "reason": "metadata signals extractable PGX data (CYP2C19, PK/PD-context)",
-   "relevance_score": 7,
-   "slug": "sparteine",
-   "stem": "Br\u00f8sen_2001",
-   "title": "Review of pharmacokinetic and pharmacodynamic interaction studies with citalopram",
-   "year": "2001"
-  },
-  {
    "authors": "Kees F; F\u00e4rber L; Bucher M; Mair G; M\u00f6rike K; Grobecker H",
    "doi": "10.1046/j.0306-5251.2001.01512.x",
    "doi_url": "https://doi.org/10.1046/j.0306-5251.2001.01512.x",
@@ -497143,63 +496665,6 @@
    "year": "2017"
   },
   {
-   "authors": "Bouchez J; Dumur V; Lhermitte M; Goudemand M",
-   "doi": "10.1016/0924-9338(96)80347-6",
-   "doi_url": "https://doi.org/10.1016/0924-9338(96)80347-6",
-   "domain": "pgx",
-   "drug": "sparteine",
-   "journal": "European psychiatry : the journal of the Association of European Psychiatrists",
-   "matched": [
-    "CYP2D6"
-   ],
-   "pmid": "19698378",
-   "pubmed_url": "https://www.ncbi.nlm.nih.gov/pubmed/19698378",
-   "reason": "metadata signals extractable PGX data (CYP2D6)",
-   "relevance_score": 5,
-   "slug": "sparteine",
-   "stem": "Bouchez_1995",
-   "title": "Genotypes of cytochrome P450 and clinical response to clomipramine in patients with major depression",
-   "year": "1995"
-  },
-  {
-   "authors": "Droll K; Bruce-Mensah K; Otton SV; Gaedigk A; Sellers EM; Tyndale RF",
-   "doi": "10.1097/00008571-199808000-00006",
-   "doi_url": "https://doi.org/10.1097/00008571-199808000-00006",
-   "domain": "pgx",
-   "drug": "sparteine",
-   "journal": "Pharmacogenetics",
-   "matched": [
-    "CYP2D6"
-   ],
-   "pmid": "9731719",
-   "pubmed_url": "https://www.ncbi.nlm.nih.gov/pubmed/9731719",
-   "reason": "metadata signals extractable PGX data (CYP2D6)",
-   "relevance_score": 5,
-   "slug": "sparteine",
-   "stem": "Droll_1998",
-   "title": "Comparison of three CYP2D6 probe substrates and genotype in Ghanaians, Chinese and Caucasians",
-   "year": "1998"
-  },
-  {
-   "authors": "Halling J; Petersen MS; Damkier P; Nielsen F; Grandjean P; Weihe P; et al.",
-   "doi": "10.1007/s00228-005-0938-1",
-   "doi_url": "https://doi.org/10.1007/s00228-005-0938-1",
-   "domain": "pgx",
-   "drug": "sparteine",
-   "journal": "European journal of clinical pharmacology",
-   "matched": [
-    "CYP2D6"
-   ],
-   "pmid": "16025294",
-   "pubmed_url": "https://www.ncbi.nlm.nih.gov/pubmed/16025294",
-   "reason": "metadata signals extractable PGX data (CYP2D6)",
-   "relevance_score": 5,
-   "slug": "sparteine",
-   "stem": "Halling_2005",
-   "title": "Polymorphism of CYP2D6, CYP2C19, CYP2C9 and CYP2C8 in the Faroese population",
-   "year": "2005"
-  },
-  {
    "authors": "Klein K; Burk O; Tremmel R; Buettner FA; Kaestle L; Schroth W; et al.",
    "doi": "10.1016/j.phrs.2025.107998",
    "doi_url": "https://doi.org/10.1016/j.phrs.2025.107998",
@@ -497217,44 +496682,6 @@
    "stem": "Klein_2025",
    "title": "Transcription factors of the Nuclear Factor I (NFI) family control hepatocyte differentiation and cytochrome P450 activity in human liver",
    "year": "2025"
-  },
-  {
-   "authors": "Niewinski P; Orzechowska-Juzwenko K; Hurkacz M; Rzemislawska Z; Ja\u017awinska-Tarnawska E; Milejski P; et al.",
-   "doi": "10.1007/s00228-002-0505-y",
-   "doi_url": "https://doi.org/10.1007/s00228-002-0505-y",
-   "domain": "pgx",
-   "drug": "sparteine",
-   "journal": "European journal of clinical pharmacology",
-   "matched": [
-    "CYP2D6"
-   ],
-   "pmid": "12536989",
-   "pubmed_url": "https://www.ncbi.nlm.nih.gov/pubmed/12536989",
-   "reason": "metadata signals extractable PGX data (CYP2D6)",
-   "relevance_score": 5,
-   "slug": "sparteine",
-   "stem": "Niewinski_2002",
-   "title": "CYP2D6 extensive, intermediate, and poor phenotypes and genotypes in a Polish population",
-   "year": "2002"
-  },
-  {
-   "authors": "Paar WD; Poche S; Gerloff J; Dengler HJ",
-   "doi": "10.1007/s002280050368",
-   "doi_url": "https://doi.org/10.1007/s002280050368",
-   "domain": "pgx",
-   "drug": "sparteine",
-   "journal": "European journal of clinical pharmacology",
-   "matched": [
-    "CYP2D6"
-   ],
-   "pmid": "9476037",
-   "pubmed_url": "https://www.ncbi.nlm.nih.gov/pubmed/9476037",
-   "reason": "metadata signals extractable PGX data (CYP2D6)",
-   "relevance_score": 5,
-   "slug": "sparteine",
-   "stem": "Paar_1997",
-   "title": "Polymorphic CYP2D6 mediates O-demethylation of the opioid analgesic tramadol",
-   "year": "1997"
   },
   {
    "authors": "Slanar O; Perl\u00edk F; Jir\u00e1sek V",
@@ -497293,25 +496720,6 @@
    "stem": "Szewczuk-Bogus\u0142awska_2004",
    "title": "Doxepin inhibits CYP2D6 activity in vivo",
    "year": "2004"
-  },
-  {
-   "authors": "Xu BQ; Aasmundstad TA; Bj\u00f8rneboe A; Christophersen AS; M\u00f8rland J",
-   "doi": "10.1016/0006-2952(94)00481-z",
-   "doi_url": "https://doi.org/10.1016/0006-2952(94)00481-z",
-   "domain": "pgx",
-   "drug": "sparteine",
-   "journal": "Biochemical pharmacology",
-   "matched": [
-    "CYP2D1"
-   ],
-   "pmid": "7872951",
-   "pubmed_url": "https://www.ncbi.nlm.nih.gov/pubmed/7872951",
-   "reason": "metadata signals extractable PGX data (CYP2D1)",
-   "relevance_score": 5,
-   "slug": "sparteine",
-   "stem": "Xu_1995",
-   "title": "Ethylmorphine O-deethylation in isolated rat hepatocytes. Involvement of codeine O-demethylation enzyme systems",
-   "year": "1995"
   },
   {
    "authors": "Yamamoto Y; Takahashi Y; Imai K; Miyakawa K; Nishimura S; Kasai R; et al.",
@@ -499102,6 +498510,6 @@
  ],
  "wanted_stamp": [
   2271,
-  1791493013.5256238
+  1791500779.0226033
  ]
 }
