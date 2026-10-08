@@ -1,8 +1,8 @@
-<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C02A&quot;,&quot;href&quot;:&quot;atc/C02A.md&quot;},{&quot;label&quot;:&quot;guanfacine&quot;,&quot;href&quot;:&quot;drugs/drug_guanfacine/&quot;},{&quot;label&quot;:&quot;Knebel_2015_2 \u00b7 PD ADHD Rating Scale-IV score&quot;}]"></div>
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C02A&quot;,&quot;href&quot;:&quot;atc/C02A.md&quot;},{&quot;label&quot;:&quot;guanfacine&quot;,&quot;href&quot;:&quot;drugs/drug_guanfacine/&quot;},{&quot;label&quot;:&quot;Knebel_2015_2 \u00b7 PD ADHD Rating Scale-IV (ADHD RS-IV) score&quot;}]"></div>
 <div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Guanfacine_Knebel2015_reference&quot;,&quot;label&quot;:&quot;Knebel_2015_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_guanfacine/Guanfacine_Knebel2015_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# ADHD Rating Scale-IV score — PD  <span class="pk-badge pk-badge--orange">needs review</span>
+# ADHD Rating Scale-IV (ADHD RS-IV) score — PD  <span class="pk-badge pk-badge--orange">needs review</span>
 
 <details class="pk-legend"><summary>What the PGx badges mean — evidence, and whether a model runs</summary><table><tbody><tr><td><span class="pk-badge pk-badge--green">quantitative</span></td><td>the paper gives the effect of each phenotype (or genotype) on a named model parameter — a θ per category.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">qualitative</span></td><td>the paper links the gene to the drug but states no effect size on a model parameter, so it changes no model.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">guideline estimate</span></td><td>the effect comes from a CPIC / DPWG dosing guideline, not from this paper's numbers.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">safety allele</span></td><td>a risk allele for an adverse reaction (an HLA type, G6PD deficiency …): it changes no PK/PD parameter.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>the extraction is incomplete or inconsistent.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted.</td></tr><tr><td><span class="pk-badge pk-badge--green">▶ simulatable</span></td><td>the paper's popPK model runs per phenotype in the browser (Simulation tab); its PGx Modelica model is under Models.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">model only</span></td><td>a PGx Modelica model exists but has no in-browser simulator.</td></tr></tbody></table></details>
 
@@ -14,15 +14,19 @@
 
 ## What this record describes
 
-**As extracted:** Guanfacine extended-release (the dose) drives ADHD Rating Scale-IV score: direct linear effect.
+**As extracted:** Guanfacine extended-release (the dose) drives ADHD Rating Scale-IV (ADHD RS-IV) score: direct linear effect.
 
 **Model:** A model was generated (see the **Models** tab); it has no in-browser simulator.
+
+> The paper does not provide a full text or mechanistic description, so the specific mechanism by which guanfacine extended-release affects the ADHD Rating Scale-IV score is not stated. The record indicates a linear, proportional inhibition where the score decreases by 37.1% per 0.1 mg/kg dose.
+>
+> <sub>in the paper's terms — summarised by qwen3.8:27b-mtp-q8_0 from the paper's text; not checked by a person</sub>
 
 - **paper:** `Knebel_2015_2`
 - **model family:** `linear`
 - **driver:** `dose_only`
 - **tier:** population
-- **effect:** inhibition/proportional
+- **effect:** inhibition/unknown
 
 ## Citation
 Knebel W et al., Modeling and simulation of the exposure…, Journal of pharmacokinetics… (2015)
@@ -31,7 +35,7 @@ Knebel W et al., Modeling and simulation of the exposure…, Journal of pharmaco
 ## Parameters
 | role | label (paper) | Q-code · name | value | unit | value_si | link | source |
 |---|---|---|---|---|---|---|---|
-| PD (effect) | decrease in ADHD RS-IV score | `Q335` · not captured | 37.1 | % per 0.1 mg/kg | not captured | llm (not captured) | Knebel_2015_2:pdv3 |
+| PD (effect) | decrease in ADHD RS-IV score from the placebo-response trajectory | `Q335` · not captured | 37.1 | % per 0.1 mg/kg | not captured | llm (not captured) | Knebel_2015_2:pdv3 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -78,7 +82,7 @@ Advisory:
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_guanfacine/Guanfacine_Knebel2015v2_PD_adhd_rs_iv/Guanfacine_Knebel2015v2_PD_adhd_rs_iv_modelica.zip" download>Guanfacine_Knebel2015v2_PD_adhd_rs_iv_modelica.zip</a> <span class="pk-size">(2.9 kB)</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_guanfacine/Guanfacine_Knebel2015v2_PD_adhd_rs_iv/Guanfacine_Knebel2015v2_PD_adhd_rs_iv_modelica.zip" download>Guanfacine_Knebel2015v2_PD_adhd_rs_iv_modelica.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_guanfacine/Guanfacine_Knebel2015v2_PD_adhd_rs_iv/Guanfacine_Knebel2015v2_PD_adhd_rs_iv_matlab.zip" download>Guanfacine_Knebel2015v2_PD_adhd_rs_iv_matlab.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">not generated yet</span></td></tr>

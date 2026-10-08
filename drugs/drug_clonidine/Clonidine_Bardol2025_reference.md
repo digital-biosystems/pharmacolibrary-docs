@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C02A&quot;,&quot;href&quot;:&quot;atc/C02A.md&quot;},{&quot;label&quot;:&quot;clonidine&quot;,&quot;href&quot;:&quot;drugs/drug_clonidine/&quot;},{&quot;label&quot;:&quot;Bardol_2025 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Clonidine_Larsson2011_reference&quot;,&quot;label&quot;:&quot;Larsson_2011_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_clonidine/Clonidine_Larsson2011_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Clonidine_Tang2021_reference&quot;,&quot;label&quot;:&quot;Tang_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_clonidine/Clonidine_Tang2021_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Clonidine_Tang2021_reference&quot;,&quot;label&quot;:&quot;Tang_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_clonidine/Clonidine_Tang2021_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # clonidine — `Clonidine_Bardol2025_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.556). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.5), gpt-oss:120b (not confirmed, agreement 0.556). The first reading is what the record holds.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -21,18 +21,18 @@
 
 The check had no reference to compare the clearance against, so the value is unverified rather than shown to be wrong. Extracted — clonidine: V1 202 L/70 kg; 1-OH midazolam: CLfm 33.4 L/h/70 kg, V 90.8 L/70 kg, CL 212 L/h/70 kg.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has clonidine, the second reading unknown; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has clonidine, the second reading unknown; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
-> ⚠️ **STALE** — review status `needs_review` (reviewed 2026-10-05 09:25:35.585253+00:00) predates the upstream re-run (2026-10-06 11:56:20.327687+00:00). Current validate status: `needs_review`.
+> ⚠️ **STALE** — review status `needs_review` (reviewed 2026-10-05 09:25:35.585253+00:00) predates the upstream re-run (2026-10-08 11:20:35.185922+00:00). Current validate status: `needs_review`.
 
 ## Citation
 Bardol M et al., Pharmacokinetic and Pharmacodynamic Mod…, Paediatric anaesthesia (2025)
   ·  DOI: [10.1111/pan.70050](https://doi.org/10.1111/pan.70050)
 
 ## Model component
-<dbs-pgx drug="clonidine" model-id="Clonidine_Bardol2025_reference" status="needs_review" stale="true" population="mechanically ventilated children in pediatric intensive care" measured-compound="clonidine" parameterization="mechanistic" topology="parent_metabolite"></dbs-pgx>
+<dbs-pgx drug="clonidine" model-id="Clonidine_Bardol2025_reference" status="needs_review" stale="true" population="mechanically ventilated children" measured-compound="clonidine" parameterization="mechanistic" topology="parent_metabolite"></dbs-pgx>
 
 **Model structure:** parent + metabolite; no model was built for this record.  
 **Parameters:** 4 extracted.
@@ -48,6 +48,7 @@ Bardol M et al., Pharmacokinetic and Pharmacodynamic Mod…, Paediatric anaesthe
 | CLmmid (L/h/70 kg) | `Q370` · CLfm | 33.4 | L/h/70 kg | 9.277777777777778e-06 | [l] / [[h] · [70kg]] | not captured | exact (1.0) | pan70050-tbl-0002:row9:col1 | — | not captured |
 | Vmmid (L/70 kg) | `Q61` · V | 90.8 | L/70 kg | 0.0908 | [l] / [70kg] | not captured | exact (1.0) | pan70050-tbl-0002:row10:col1 | — | not captured |
 | CLommid (L/h/70 kg) | `Q22` · CL | 211.6 | L/h/70 kg | 5.877777777777779e-05 | [l] / [[h] · [70kg]] | not captured | exact (1.0) | pan70050-tbl-0002:row11:col1 | — | not captured |
+| PMA_50mid | `Q900` · equation variable | 73.6 | not captured | not captured | not captured | not captured | llm (0.6) | pan70050-tbl-0002:row18:col1 | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -58,17 +59,17 @@ Bardol M et al., Pharmacokinetic and Pharmacodynamic Mod…, Paediatric anaesthe
 
 **Interpretation flags:**
 - column 'parameter' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
+- column 'estimate (rse)' classified 'rse' by the LLM but kept as the estimate: the header names the point value
 - dropped unlinked row (NIL): 'Clonidine' — extend the ontology if this is a real PK parameter (source ['pan70050-tbl-0002:row1:col1', 'pan70050-tbl-0002:row1:col2'])
 - routed 'Err propclon (%)' → Q316 (prop_error) to residual_error — variability estimate, not a structural parameter
 - dropped unlinked row (NIL): 'PMA_50clon' — extend the ontology if this is a real PK parameter (source ['pan70050-tbl-0002:row6:col1'])
 - dropped unlinked row (NIL): 'Hillclon' — extend the ontology if this is a real PK parameter (source ['pan70050-tbl-0002:row7:col1'])
 - dropped unlinked row (NIL): 'Midazolam' — extend the ontology if this is a real PK parameter (source ['pan70050-tbl-0002:row8:col1', 'pan70050-tbl-0002:row8:col2'])
 - routed 'Err propmid (%)' → Q316 (prop_error) to residual_error — variability estimate, not a structural parameter
-- routed 'Err addmid (ng/mL)' → Q317 (add_error) to residual_error — variability estimate, not a structural parameter
+- dropped unlinked row (NIL): 'Err addmid (ng/mL)' — extend the ontology if this is a real PK parameter (source ['pan70050-tbl-0002:row15:col1'])
 - routed 'Err propmmid(%)' → Q316 (prop_error) to residual_error — variability estimate, not a structural parameter
 - routed 'Err addmmid (ng/mL)' → Q317 (add_error) to residual_error — variability estimate, not a structural parameter
-- dropped unlinked row (NIL): 'PMA_50mid' — extend the ontology if this is a real PK parameter (source ['pan70050-tbl-0002:row18:col1'])
-- dropped PD-category row 'Hillmid' → Q325 (Hill, category G11) — pharmacodynamic parameters belong to scholarpd, not the PK model (source ['pan70050-tbl-0002:row19:col1'])
+- dropped unlinked row (NIL): 'Hillmid' — extend the ontology if this is a real PK parameter (source ['pan70050-tbl-0002:row19:col1'])
 - metabolite volume: 'Vmmid (L/70 kg)' Q63→Q61 for 1-OH midazolam — it is 1-compartment, so its central volume is its only volume
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=clonidine
 - template fit: PK_3M_9C — formed from central; parent 1, metabolites [1]
@@ -96,17 +97,23 @@ Bardol M et al., Pharmacokinetic and Pharmacodynamic Mod…, Paediatric anaesthe
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.5 (5/10 fields) | 5 |
 | `gpt-oss:120b` | not confirmed | 0.556 (5/9 fields) | 4 |
 
-<details><summary>4 field(s) a reader read differently</summary>
+<details><summary>9 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[pma_50mid]` | 73.6 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[vclon]` | 202.4 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[vclon]` | not captured | 202.4 | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | clonidine | unknown | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | clonidine | unknown | mismatch |
 | `gpt-oss:120b` | `parameters[vclon]` | 202.4 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[vclon]` | not captured | 202.4 | only_one_extracted |
 | `gpt-oss:120b` | `screen.dose_compound` | clonidine | unknown | mismatch |
@@ -170,4 +177,4 @@ _No web simulator for this record: its structure has no shared WebAssembly templ
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-06 11:56 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-08 11:20 UTC</sub>

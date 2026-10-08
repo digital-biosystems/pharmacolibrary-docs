@@ -18,7 +18,7 @@ Bietaserpine is a Rauwolfia alkaloid that was used as an antihypertensive drug t
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-06 11:54 | 0:10 | 0/0/0 | 0/0/0 | 0/0/0 | 429/56 | ollama / qwen3.8:27b-mtp-q8_0 | 0 | 0/0 | 0/0 | 0 |
+| 2026-10-08 11:19 | 0:07 | 0/0/0 | 0/0/0 | 0/0/0 | 429/56 | einfracz / qwen3.8-27b | 0 | 0/0 | 0/0 | 0 |
 
 ## popPK records
 

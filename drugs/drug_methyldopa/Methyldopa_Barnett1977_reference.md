@@ -4,7 +4,7 @@
 
 # Methyldopa — `Methyldopa_Barnett1977_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.857). The first reading is what the record holds.">cross-check: partial</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.222), gpt-oss:120b (partly confirmed, agreement 0.857). The first reading is what the record holds.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -20,11 +20,11 @@
 
 The dimension check on a structural parameter failed for methyldopa: the reported clearance of 11.2 l/h is inconsistent with the reported volume of distribution of 0.29 l/kg and elimination rate constant of 0.56 h-1. The record was built from the paper's abstract alone, so reported summary statistics stood in for a fitted model. A second reader returned null for the elimination constant, clearance and volume values, disagreeing with the extracted 0.56 h-1, 11.2 l/h and 0.29 l/kg, and left the dose compound and primary analyte as unknown rather than methyldopa. Extracted — methyldopa: kel 0.56 h-1, V 0.29 1 kg-1, CL 11.2 1 h-1.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of plasma clearance rate: this record has 11.2, the second reading none. That field does not shape the model.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has methyldopa, the second reading unknown; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by glm-5.3-flash</sub>
 
-> ⚠️ **STALE** — review status `rejected` (reviewed 2026-09-28 14:38:55.945693+00:00) predates the upstream re-run (2026-10-06 12:23:33.179020+00:00). Current validate status: `rejected`.
+> ⚠️ **STALE** — review status `rejected` (reviewed 2026-09-28 14:38:55.945693+00:00) predates the upstream re-run (2026-10-08 11:29:05.378381+00:00). Current validate status: `rejected`.
 
 ## Citation
 Barnett AJ et al., Pharmacokinetics of methyldopa. Plasma…, Clinical and experimental p… (1977)
@@ -43,7 +43,7 @@ Barnett AJ et al., Pharmacokinetics of methyldopa. Plasma…, Clinical and exper
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| overall elimination constant Ke1 | `Q47` · kel | 0.56 | h-1 | 0.00015555555555555556 | [1] / [h] | not captured | llm (0.6) | Barnett_1977:abstract | — | not captured |
+| Ke1 | `Q67` · λ1 | 0.56 | h-1 | not captured | [1] / [h] | not captured | llm (0.6) | Barnett_1977:abstract | — | not captured |
 | volume of distribution of the central compartment | `Q61` · V | 0.29 | 1 kg-1 | not captured | [1] / [kg] | not captured | boundary_compartment (0.9) | Barnett_1977:abstract | — | not captured |
 | plasma clearance rate | `Q22` · CL | 11.2 | 1 h-1 | not captured | [1] / [h] | not captured | llm_confirmed (0.6) | Barnett_1977:abstract | — | not captured |
 
@@ -55,6 +55,7 @@ Barnett AJ et al., Pharmacokinetics of methyldopa. Plasma…, Clinical and exper
 ## Departures & gaps
 
 **Interpretation flags:**
+- unit_dimension_mismatch: 'Ke1' → Q67 (unit '1 / [time]' vs ontology '[mass] / [time]') — route to review
 - unit_dimension_mismatch: 'volume of distribution of the central compartment' → Q63 (unit 'dimensionless' vs ontology '[length] ** 3') — route to review
 - unit_dimension_mismatch: 'plasma clearance rate' → Q22 (unit '1 / [time]' vs ontology '[length] ** 3 / [time]') — route to review
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=methyldopa
@@ -63,24 +64,32 @@ Barnett AJ et al., Pharmacokinetics of methyldopa. Plasma…, Clinical and exper
 - status held at route_to_review — not promoted
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
 - skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
-- skipped review gap-fill of Q: primary's parameterization (rate-constant / ka-only) does not use it
+- skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
 
 **Extraction notes:**
 - no GROBID TEI available — transcribed from abstract in Barnett_1977_metadata.yaml (3 record(s)); values are summary statistics, not a fitted model
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.222 (2/9 fields) | 7 |
 | `gpt-oss:120b` | partly confirmed | 0.857 (6/7 fields) | 1 |
 
-<details><summary>1 field(s) a reader read differently</summary>
+<details><summary>8 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[ke1]` | 0.56 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[overall elimination constant ke1]` | not captured | 0.56 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[plasma clearance rate]` | 11.2 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[volume of distribution of the central compartment]` | 0.29 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[volume of distribution of the central compartment]` | not captured | 0.29 | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | methyldopa | unknown | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | methyldopa | unknown | mismatch |
 | `gpt-oss:120b` | `parameters[plasma clearance rate]` | 11.2 | not captured | only_one_extracted |
 
 </details>
@@ -99,8 +108,8 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
 | C5_dimension_Q22 | fail | 1 / [time] | 1 h-1 | not captured | not captured | ['Barnett_1977:abstract'] |
-| C5_dimension_Q47 | pass | 1 / [time] | not captured | not captured | not captured | ['Barnett_1977:abstract'] |
 | C5_dimension_Q61 | fail | dimensionless | 1 kg-1 | not captured | not captured | ['Barnett_1977:abstract'] |
+| C5_dimension_Q67 | fail | 1 / [time] | h-1 | not captured | not captured | ['Barnett_1977:abstract'] |
 | C6_cl_magnitude | pass | &lt;= 90.0 L/h | 11.2 | not captured | not captured | ['Barnett_1977:abstract'] |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
 
@@ -127,4 +136,4 @@ _No web simulator for this record: its structure has no shared WebAssembly templ
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-06 12:23 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-08 11:29 UTC</sub>

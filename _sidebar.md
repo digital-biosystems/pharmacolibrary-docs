@@ -1253,7 +1253,7 @@
       - [C02A Antiadrenergic Agents, Centrally Acting](atc/C02A.md)
         - [bietaserpine <sub>(0/0/0)</sub>](drugs/drug_bietaserpine/)
         - bietaserpine combinations <sub>(0/0/0)</sub>
-        - [clonidine <sub>(2/3/0)</sub>](drugs/drug_clonidine/)
+        - [clonidine <sub>(1/3/0)</sub>](drugs/drug_clonidine/)
         - combinations of rauwolfia alkaloids <sub>(0/0/0)</sub>
         - combinations of rauwolfia alkoloids combinations <sub>(0/0/0)</sub>
         - [deserpidine <sub>(0/0/0)</sub>](drugs/drug_deserpidine/)
@@ -1313,7 +1313,7 @@
       - [C02L Antihypertensives And Diuretics In Combination](atc/C02L.md)
         - [bietaserpine <sub>(0/0/0)</sub>](drugs/drug_bietaserpine/)
         - bietaserpine and diuretics <sub>(0/0/0)</sub>
-        - [clonidine <sub>(2/3/0)</sub>](drugs/drug_clonidine/)
+        - [clonidine <sub>(1/3/0)</sub>](drugs/drug_clonidine/)
         - clonidine and diuretics <sub>(0/0/0)</sub>
         - clonidine and diuretics combinations with other drugs <sub>(0/0/0)</sub>
         - combination of rauwolfia alkaloids and diuretics incl other combinations <sub>(0/0/0)</sub>
@@ -4621,7 +4621,7 @@
       - [N02C Antimigraine Preparations](atc/N02C.md)
         - [almotriptan <sub>(0/0/0)</sub>](drugs/drug_almotriptan/)
         - [atogepant <sub>(1/0/0)</sub>](drugs/drug_atogepant/)
-        - [clonidine <sub>(2/3/0)</sub>](drugs/drug_clonidine/)
+        - [clonidine <sub>(1/3/0)</sub>](drugs/drug_clonidine/)
         - [dihydroergotamine <sub>(0/0/0)</sub>](drugs/drug_dihydroergotamine/)
         - dihydroergotamine combinations <sub>(0/0/0)</sub>
         - [dimetotiazine <sub>(0/0/0)</sub>](drugs/drug_dimetotiazine/)
@@ -5899,7 +5899,7 @@
         - [carbachol <sub>(0/5/0)</sub>](drugs/drug_carbachol/)
         - [carteolol <sub>(1/1/0)</sub>](drugs/drug_carteolol/)
         - carteolol combinations <sub>(0/0/0)</sub>
-        - [clonidine <sub>(2/3/0)</sub>](drugs/drug_clonidine/)
+        - [clonidine <sub>(1/3/0)</sub>](drugs/drug_clonidine/)
         - [dapiprazole <sub>(0/0/0)</sub>](drugs/drug_dapiprazole/)
         - [demecarium <sub>(0/0/0)</sub>](drugs/drug_demecarium/)
         - [diclofenamide <sub>(0/0/0)</sub>](drugs/drug_diclofenamide/)

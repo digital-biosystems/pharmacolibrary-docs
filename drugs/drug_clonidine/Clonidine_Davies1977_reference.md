@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C02A&quot;,&quot;href&quot;:&quot;atc/C02A.md&quot;},{&quot;label&quot;:&quot;clonidine&quot;,&quot;href&quot;:&quot;drugs/drug_clonidine/&quot;},{&quot;label&quot;:&quot;Davies_1977 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Clonidine_Larsson2011_reference&quot;,&quot;label&quot;:&quot;Larsson_2011_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_clonidine/Clonidine_Larsson2011_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Clonidine_Tang2021_reference&quot;,&quot;label&quot;:&quot;Tang_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_clonidine/Clonidine_Tang2021_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Clonidine_Tang2021_reference&quot;,&quot;label&quot;:&quot;Tang_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_clonidine/Clonidine_Tang2021_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # clonidine — `Clonidine_Davies1977_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.182). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.364), gpt-oss:120b (not confirmed, agreement 0.182). The first reading is what the record holds.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -21,11 +21,11 @@
 
 The paper reports no distribution volume and no clearance or elimination rate; it is an exposure/outcome paper. Only the abstract was available, so reported summary statistics stand in for a fitted model.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has clonidine, the second reading unknown; it also differs on 8 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on bioavailability: this record has 75.2, the second reading 50; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
-> ⚠️ **STALE** — review status `rejected` (reviewed 2026-10-05 09:25:35.620024+00:00) predates the upstream re-run (2026-10-06 11:56:31.089325+00:00). Current validate status: `needs_review`.
+> ⚠️ **STALE** — review status `rejected` (reviewed 2026-10-05 09:25:35.620024+00:00) predates the upstream re-run (2026-10-08 11:20:37.249772+00:00). Current validate status: `needs_review`.
 
 ## Citation
 Davies DS et al., Pharmacokinetics and concentration-effe…, Clinical pharmacology and t… (1977)
@@ -35,7 +35,7 @@ Davies DS et al., Pharmacokinetics and concentration-effe…, Clinical pharmacol
 <dbs-pgx drug="clonidine" model-id="Clonidine_Davies1977_reference" status="needs_review" stale="true" population="normotensive subjects" measured-compound="clonidine" parameterization="mechanistic" topology="1C"></dbs-pgx>
 
 **Model structure:** 1-compartment; no model was built for this record.  
-**Parameters:** 3 extracted.
+**Parameters:** 4 extracted.
 
 **Parameterization:** mechanistic.
 
@@ -44,7 +44,8 @@ Davies DS et al., Pharmacokinetics and concentration-effe…, Clinical pharmacol
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| bioavailability of oral clonidine in the tablets tested | `Q40` · Fab | 75.2 | % | not captured | not captured | not captured | llm_confirmed (0.6) | Davies_1977:abstract | — | not captured |
+| bioavailability of oral clonidine | `Q40` · Fab | 75.2 | % | not captured | not captured | not captured | llm_confirmed (0.6) | Davies_1977:abstract | — | not captured |
+| excreted unchanged in urine | `Q44` · fe | 40 | % | not captured | [%] | not captured | llm (0.6) | Davies_1977:abstract | — | not captured |
 | Renal clearance of the drug | `Q26` · CLR | 1.82 | ml/min/kg | 2.1233333333333335e-06 | [ml] / [[min] · [kg]] | not captured | llm_confirmed (0.6) | Davies_1977:abstract | — | not captured |
 | mean volume of distribution | `Q61` · V | 2.8 | L/kg | 0.196 | L | not captured | review_gapfill (0.7) | Tang_2021:review | — | not captured |
 
@@ -53,16 +54,12 @@ Davies DS et al., Pharmacokinetics and concentration-effe…, Clinical pharmacol
 <table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>label (paper)</code></td><td>the row or statistic label exactly as printed in the paper (label_verbatim) — never normalised, so it can be found in the PDF.</td></tr><tr><td><code>Q-code · name</code></td><td>the ontology parameter this label was matched to (Q22 = clearance, Q27 = CL/F, Q49 = ka, Q57 = half-life, …) and its canonical name. The Q-code, not the label, is what scoring and cross-paper merging use.</td></tr><tr><td><code>value</code></td><td>the estimate as reported in the paper.</td></tr><tr><td><code>unit</code></td><td>the unit as printed (unit_verbatim).</td></tr><tr><td><code>value_si</code></td><td>the value converted to the canonical unit. Empty when no conversion was possible — usually an unparseable or missing unit.</td></tr><tr><td><code>unit_canonical</code></td><td>the canonical unit for that Q-code, i.e. what value_si is expressed in.</td></tr><tr><td><code>RSE%</code></td><td>relative standard error of the estimate, when the paper reports one.</td></tr><tr><td><code>link</code></td><td>how the label was matched to the Q-code, with confidence. exact / boundary / fuzzy / tv_prefix / caption_compartment / special_case are deterministic string matches; llm, llm_confirmed, llm_corrected involved the model; review and review_gapfill come from the secondary review tier, the latter filling a parameter the primary extraction missed; boundary_relink is a corrected match.</td></tr><tr><td><code>source</code></td><td>where in the paper the number came from: colN = that column of the located table, other_prose = running text, review = the secondary tier, pgx = a pharmacogenomic record.</td></tr><tr><td><code>covariates</code></td><td>covariate effects attached to this parameter (e.g. weight on CL).</td></tr><tr><td><code>IIV</code></td><td>inter-individual variability reported for this parameter.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>the field is absent from the KB artifact — nothing was recorded. This is NOT the same as zero or empty: the value is unknown, not measured to be nothing.</td></tr><tr><td><code>—</code></td><td>deliberately not shown: the column does not apply to this row.</td></tr><tr><td><code>not verified</code></td><td>the record is not in an accepted state (see the badge and the note above the table); the numbers are shown as extracted, not endorsed.</td></tr></tbody></table>
 </details>
 
-### Unresolved rows _(no Q-code or no value — not parameters)_
-| label (paper) | Q-code | value | link |
-|---|---|---|---|
-| bioavailable dose excreted unchanged in urine | Q44 | not captured | llm |
-
 ## Departures & gaps
 
 **Interpretation flags:**
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=clonidine
 - held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
+- structure disagreement: deterministic 1C vs LLM 2C — review compartment count
 - status held at route_to_review — not promoted
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
 - gap-filled Q61 (V) from Tang_2021's review values (primary lacked it)
@@ -74,20 +71,28 @@ Davies DS et al., Pharmacokinetics and concentration-effe…, Clinical pharmacol
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.364 (4/11 fields) | 7 |
 | `gpt-oss:120b` | not confirmed | 0.182 (2/11 fields) | 9 |
 
-<details><summary>9 field(s) a reader read differently</summary>
+<details><summary>16 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `model.bioavailability.theta` | 75.2 | 50 | mismatch |
+| `gpt-oss-120b` | `parameters[bioavailability of oral clonidine in the tablets tested averaged]` | not captured | 75.2 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[bioavailability of oral clonidine]` | 75.2 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[bioavailable dose is excreted unchanged in urine]` | not captured | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[excreted unchanged in urine]` | 40 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[renal clearance of the drug showed considerable intersubject variation]` | not captured | 1.82 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[renal clearance of the drug]` | 1.82 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `model.bioavailability.theta` | not captured | 75.2 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[bioavailability of oral clonidine in the tablets tested averaged]` | not captured | 75.2 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[bioavailability of oral clonidine in the tablets tested]` | 75.2 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[bioavailability of oral clonidine in the tablets tested]` | not captured | 75.2 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[bioavailable dose excreted unchanged in urine]` | not captured | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[excreted unchanged in urine]` | not captured | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[renal clearance of the drug]` | 1.82 | not captured | only_one_extracted |
@@ -110,6 +115,7 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 | C0_has_structural_params | pass | not captured | 3 | not captured | not captured | not captured |
 | C0c_disposition_complete | fail | not captured | not captured | not captured | not captured | not captured |
 | C5_dimension_Q26 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Davies_1977:abstract'] |
+| C5_dimension_Q44 | pass | dimensionless | not captured | not captured | not captured | ['Davies_1977:abstract'] |
 | C5_dimension_Q61 | pass | [length] ** 3 | not captured | not captured | not captured | ['Tang_2021:review'] |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
 | C9_phys_window_Q61 | pass | volume within physiological range | 196 L | not captured | not captured | ['Tang_2021:review'] |
@@ -147,4 +153,4 @@ _No web simulator for this record: its structure has no shared WebAssembly templ
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-06 11:56 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-08 11:20 UTC</sub>

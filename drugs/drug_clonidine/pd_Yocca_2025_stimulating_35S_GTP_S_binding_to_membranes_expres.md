@@ -1,8 +1,8 @@
-<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C02A&quot;,&quot;href&quot;:&quot;atc/C02A.md&quot;},{&quot;label&quot;:&quot;clonidine&quot;,&quot;href&quot;:&quot;drugs/drug_clonidine/&quot;},{&quot;label&quot;:&quot;Yocca_2025 \u00b7 PD \u03b2-arrestin recruitment&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Clonidine_Larsson2011_reference&quot;,&quot;label&quot;:&quot;Larsson_2011_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_clonidine/Clonidine_Larsson2011_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Clonidine_Tang2021_reference&quot;,&quot;label&quot;:&quot;Tang_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_clonidine/Clonidine_Tang2021_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C02A&quot;,&quot;href&quot;:&quot;atc/C02A.md&quot;},{&quot;label&quot;:&quot;clonidine&quot;,&quot;href&quot;:&quot;drugs/drug_clonidine/&quot;},{&quot;label&quot;:&quot;Yocca_2025 \u00b7 PD stimulating [35S]GTP\u03b3S binding to membranes expressing human \u03b12A, \u03b12B or \u03b12C receptors&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Clonidine_Tang2021_reference&quot;,&quot;label&quot;:&quot;Tang_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_clonidine/Clonidine_Tang2021_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# β-arrestin recruitment — PD  <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
+# stimulating [35S]GTPγS binding to membranes expressing human α2A, α2B or α2C receptors — PD  <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
 
 <details class="pk-legend"><summary>What the PGx badges mean — evidence, and whether a model runs</summary><table><tbody><tr><td><span class="pk-badge pk-badge--green">quantitative</span></td><td>the paper gives the effect of each phenotype (or genotype) on a named model parameter — a θ per category.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">qualitative</span></td><td>the paper links the gene to the drug but states no effect size on a model parameter, so it changes no model.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">guideline estimate</span></td><td>the effect comes from a CPIC / DPWG dosing guideline, not from this paper's numbers.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">safety allele</span></td><td>a risk allele for an adverse reaction (an HLA type, G6PD deficiency …): it changes no PK/PD parameter.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>the extraction is incomplete or inconsistent.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted.</td></tr><tr><td><span class="pk-badge pk-badge--green">▶ simulatable</span></td><td>the paper's popPK model runs per phenotype in the browser (Simulation tab); its PGx Modelica model is under Models.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">model only</span></td><td>a PGx Modelica model exists but has no in-browser simulator.</td></tr></tbody></table></details>
 
@@ -16,12 +16,12 @@
 
 ## What this record describes
 
-**As extracted:** Clonidine (concentrations from the PK model of Bardol_2025) drives β-arrestin recruitment: direct Emax (saturable) effect.
+**As extracted:** Clonidine (concentrations from the PK model of Bardol_2025) drives stimulating [35S]GTPγS binding to membranes expressing human α2A, α2B or α2C receptors: direct sigmoid Emax (Hill) effect.
 
 **Model:** A model was generated (see the **Models** tab); it has no in-browser simulator.
 
 - **paper:** `Yocca_2025`
-- **model family:** `emax`
+- **model family:** `sigmoid_emax`
 - **driver:** `cited_pk`
 - **tier:** descriptive
 - **effect:** stimulation/unknown
@@ -33,8 +33,12 @@ Yocca FD et al., Dexmedetomidine potently and reversibly…, Frontiers in pharma
 ## Parameters
 | role | label (paper) | Q-code · name | value | unit | value_si | link | source |
 |---|---|---|---|---|---|---|---|
-| PD (effect) | EC50 | `Q321` · not captured | 13 | nM | not captured | llm (not captured) | Yocca_2025:pdv3 |
-| PD (effect) | Max activity | `Q320` · not captured | 93 | % | not captured | llm (not captured) | Yocca_2025:pdv3 |
+| PD (effect) | EC50 | `Q321` · not captured | 25 | nM | not captured | llm (not captured) | Yocca_2025:pdv3 |
+| PD (effect) | Max activity | `Q320` · not captured | 76 | % | not captured | llm (not captured) | Yocca_2025:pdv3 |
+| PD (effect) | EC50 | `Q321` · not captured | 49 | nM | not captured | llm (not captured) | Yocca_2025:pdv3 |
+| PD (effect) | Max activity | `Q320` · not captured | 49 | % | not captured | llm (not captured) | Yocca_2025:pdv3 |
+| PD (effect) | EC50 | `Q321` · not captured | 43 | nM | not captured | llm (not captured) | Yocca_2025:pdv3 |
+| PD (effect) | Max activity | `Q320` · not captured | 32 | % | not captured | llm (not captured) | Yocca_2025:pdv3 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -44,16 +48,16 @@ Yocca FD et al., Dexmedetomidine potently and reversibly…, Frontiers in pharma
 
 ## Exposure-response model
 
-`Clonidine_Yocca2025_PD_arrestin` — sigmoid_emax, `response = E0 + Emax*frac`
+`Clonidine_Yocca2025_PD_stimulating_35s_gtp_s_binding_to_memb` — sigmoid_emax, `response = E0 + Emax*frac`
 
 | parameter | value (paper units) | SI |
 |---|---|---|
 | E0 | 0 | — |
-| Emax | 93 % | 0.93 1 |
-| EC50 | 13 nM | — |
+| Emax | 76 % | 0.76 1 |
+| EC50 | 25 nM | — |
 | gamma | 1 | — |
 
-Closed-form check points (response, SI): `at_0` = 0, `at_EC50` = 0.465, `at_inf` = 0.93
+Closed-form check points (response, SI): `at_0` = 0, `at_EC50` = 0.38, `at_inf` = 0.76
 
 Deviations:
 
@@ -85,12 +89,12 @@ Advisory:
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_clonidine/Clonidine_Yocca2025_PD_arrestin/Clonidine_Yocca2025_PD_arrestin_modelica.zip" download>Clonidine_Yocca2025_PD_arrestin_modelica.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_clonidine/Clonidine_Yocca2025_PD_stimulating_35s_gtp_s_binding_to_memb/Clonidine_Yocca2025_PD_stimulating_35s_gtp_s_binding_to_memb_modelica.zip" download>Clonidine_Yocca2025_PD_stimulating_35s_gtp_s_binding_to_memb_modelica.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_clonidine/Clonidine_Yocca2025_PD_arrestin/Clonidine_Yocca2025_PD_arrestin_matlab.zip" download>Clonidine_Yocca2025_PD_arrestin_matlab.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_clonidine/Clonidine_Yocca2025_PD_stimulating_35s_gtp_s_binding_to_memb/Clonidine_Yocca2025_PD_stimulating_35s_gtp_s_binding_to_memb_matlab.zip" download>Clonidine_Yocca2025_PD_stimulating_35s_gtp_s_binding_to_memb_matlab.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_clonidine/Clonidine_Yocca2025_PD_arrestin/Clonidine_Yocca2025_PD_arrestin_sbml.zip" download>Clonidine_Yocca2025_PD_arrestin_sbml.zip</a> <span class="pk-size">(2.6 kB)</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_clonidine/Clonidine_Yocca2025_PD_arrestin/Clonidine_Yocca2025_PD_arrestin_cellml.zip" download>Clonidine_Yocca2025_PD_arrestin_cellml.zip</a> <span class="pk-size">(2.5 kB)</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_clonidine/Clonidine_Yocca2025_PD_stimulating_35s_gtp_s_binding_to_memb/Clonidine_Yocca2025_PD_stimulating_35s_gtp_s_binding_to_memb_sbml.zip" download>Clonidine_Yocca2025_PD_stimulating_35s_gtp_s_binding_to_memb_sbml.zip</a> <span class="pk-size">(2.9 kB)</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_clonidine/Clonidine_Yocca2025_PD_stimulating_35s_gtp_s_binding_to_memb/Clonidine_Yocca2025_PD_stimulating_35s_gtp_s_binding_to_memb_cellml.zip" download>Clonidine_Yocca2025_PD_stimulating_35s_gtp_s_binding_to_memb_cellml.zip</a> <span class="pk-size">(2.8 kB)</span></td></tr>
 </tbody></table>
 <p>Each archive holds the model source, a script that simulates it against the appropriate library, and a README describing both and how to run them.</p>
 </div></div>

@@ -23965,14 +23965,10 @@
   "counts": {
    "pd": 3,
    "pgx": 0,
-   "pk": 2
+   "pk": 1
   },
   "curated": 0,
   "details": [
-   {
-    "label": "Larsson_2011 \u00b7 reference",
-    "model_id": "Clonidine_Larsson2011_reference"
-   },
    {
     "label": "Tang_2021 \u00b7 reference",
     "model_id": "Clonidine_Tang2021_reference"
@@ -23984,6 +23980,10 @@
    {
     "label": "Davies_1977 \u00b7 reference",
     "model_id": "Clonidine_Davies1977_reference"
+   },
+   {
+    "label": "Larsson_2011 \u00b7 reference",
+    "model_id": "Clonidine_Larsson2011_reference"
    },
    {
     "label": "Blackburn_2014 \u00b7 reference",
@@ -24003,15 +24003,15 @@
    }
   ],
   "dir": "drug_clonidine",
-  "extracted": 2,
-  "last_change": "2026-10-06T11:56:43.150847+00:00",
+  "extracted": 1,
+  "last_change": "2026-10-08T11:20:38.934452+00:00",
   "name": "clonidine",
-  "needs_review": 2,
+  "needs_review": 3,
   "records": 8,
   "rejected": 4,
   "rendered": true,
   "slug": "clonidine",
-  "stale": 6
+  "stale": 7
  },
  "drug_clopamide": {
   "atc_codes": [
@@ -49716,7 +49716,7 @@
   ],
   "dir": "drug_guanfacine",
   "extracted": 1,
-  "last_change": "2026-10-06T12:14:01.278062+00:00",
+  "last_change": "2026-10-08T11:26:39.912039+00:00",
   "name": "guanfacine",
   "needs_review": 0,
   "records": 2,
@@ -67704,7 +67704,7 @@
   ],
   "dir": "drug_methyldopa",
   "extracted": 0,
-  "last_change": "2026-10-06T12:23:33.179020+00:00",
+  "last_change": "2026-10-08T11:29:05.378381+00:00",
   "name": "Methyldopa",
   "needs_review": 0,
   "records": 2,
