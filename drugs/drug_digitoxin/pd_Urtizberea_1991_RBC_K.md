@@ -17,6 +17,10 @@
 
 **Model:** No model was generated from this record.
 
+> The record indicates that digitoxin concentrations inhibit red blood cell K+ via a sigmoid Emax model, but the paper excerpts are unavailable to confirm the specific mechanism or provide key potency and rate values.
+>
+> <sub>in the paper's terms — summarised by qwen3.8:27b-mtp-q8_0 from the paper's text; not checked by a person</sub>
+
 - **paper:** `Urtizberea_1991`
 - **model family:** `sigmoid_emax`
 - **driver:** `cited_pk`

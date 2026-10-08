@@ -1106,7 +1106,7 @@
         - [deslanoside <sub>(0/0/0)</sub>](drugs/drug_deslanoside/)
         - [digitalis leaves <sub>(0/0/0)</sub>](drugs/drug_digitalis_leaves/)
         - [digitoxin <sub>(0/1/0)</sub>](drugs/drug_digitoxin/)
-        - [digoxin <sub>(14/0/0)</sub>](drugs/drug_digoxin/)
+        - [digoxin <sub>(12/0/0)</sub>](drugs/drug_digoxin/)
         - [g-strophanthin <sub>(0/2/0)</sub>](drugs/drug_g_strophanthin/)
         - [gitoformate <sub>(0/0/0)</sub>](drugs/drug_gitoformate/)
         - [lanatoside C <sub>(0/0/0)</sub>](drugs/drug_lanatoside_c/)

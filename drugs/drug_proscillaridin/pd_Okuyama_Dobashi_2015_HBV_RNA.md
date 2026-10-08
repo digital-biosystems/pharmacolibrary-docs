@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Proscillaridin A inhibits HBV infection (measured as intracellular HBV RNA) in a dose-dependent manner with an IC50 of 7.2 ± 2.5 nM. The paper states that the compound interacts with NTCP at the bile acid binding pocket, but does not explicitly define the specific pharmacodynamic mechanism (e.g., production vs. elimination) for the observed inhibition.
+>
+> <sub>in the paper's terms — summarised by qwen3.8:27b-mtp-q8_0 from the paper's text; not checked by a person</sub>
+
 - **paper:** `Okuyama-Dobashi_2015`
 - **model family:** `emax`
 - **driver:** `conc_no_pk`

@@ -18,7 +18,7 @@ Deslanoside is a digitalis glycoside used to treat atrial fibrillation, supraven
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-06 01:59 | 0:15 | 0/0/0 | 0/0/0 | 0/0/0 | 7,053/353 | ollama / qwen3.8:27b-mtp-q8_0 | 1 | 1/1 | 1/0 | 0 |
+| 2026-10-06 01:59 | 0:15 | 0/0/0 | 0/0/0 | 0/0/0 | 7,053/353 | ollama / qwen3.8:27b-mtp-q8_0 | 2 | 1/1 | 1/1 | 0 |
 
 ## popPK records
 

@@ -18,7 +18,7 @@ Acetyldigoxin is a digoxin derivative belonging to the cardiac glycoside group, 
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-06 01:57 | 3:43 | 0/0/0 | 0/0/0 | 0/0/0 | 126,553/3,662 | ollama / qwen3.8:27b-mtp-q8_0 | 12 | 0/13 | 12/0 | 0 |
+| 2026-10-06 01:57 | 3:43 | 0/0/0 | 0/0/0 | 0/0/0 | 126,553/3,662 | ollama / qwen3.8:27b-mtp-q8_0 | 14 | 0/13 | 12/2 | 0 |
 
 ## popPK records
 

@@ -17,9 +17,13 @@
 
 ### Reviewer guidance
 
+**The record was rejected because the 21% clearance increase was misinterpreted as a structural parameter with a dimension mismatch.**
+
+The record was built from the abstract alone, so reported summary statistics stood in for a fitted model. The 21% value represents a relative change in clearance, not a structural parameter, causing a dimension mismatch. A second reader disagreed on the dose compound and primary analyte, marking them as unknown. Extracted — digoxin: CL 21 %, V 5 L/kg, kabs 2.29 h−1.
+
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has digoxin, the second reading unknown; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
 
-> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+<sub>reviewed by qwen3.8:27b-mtp-q8_0</sub>
 
 ## Citation
 Hirai T et al., Population pharmacokinetic analysis of…, British journal of clinical… (2025)

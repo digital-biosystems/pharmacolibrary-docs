@@ -26,7 +26,7 @@ Digitoxin is a cardiac glycoside used to treat atrial fibrillation, supraventric
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-06 02:05 | 3:39 | 0/2/0 | 1/0/0 | 0/0/0 | 42,180/9,570 | ollama / qwen3.8:27b-mtp-q8_0 | 0 | 0/0 | 0/0 | 0 |
+| 2026-10-06 02:05 | 3:39 | 0/2/0 | 1/0/0 | 0/0/0 | 42,180/9,570 | ollama / qwen3.8:27b-mtp-q8_0 | 8 | 0/0 | 0/8 | 0 |
 
 ## popPK records
 

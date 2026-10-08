@@ -31046,7 +31046,7 @@
   ],
   "dir": "drug_digitoxin",
   "extracted": 0,
-  "last_change": "2026-10-06T02:02:30.270804+00:00",
+  "last_change": "2026-10-06T03:18:58.333075+00:00",
   "name": "digitoxin",
   "needs_review": 0,
   "records": 2,
@@ -31062,7 +31062,7 @@
   "counts": {
    "pd": 0,
    "pgx": 0,
-   "pk": 14
+   "pk": 12
   },
   "curated": 0,
   "details": [
@@ -31077,10 +31077,6 @@
    {
     "label": "Hirai_2022 \u00b7 reference",
     "model_id": "Digoxin_Hirai2022_reference"
-   },
-   {
-    "label": "Ishibashi_2024 \u00b7 reference",
-    "model_id": "Digoxin_Ishibashi2024_reference"
    },
    {
     "label": "Liao_2022 \u00b7 reference",
@@ -31117,10 +31113,6 @@
    {
     "label": "Steichert_2025 \u00b7 reference",
     "model_id": "Digoxin_Steichert2025_reference"
-   },
-   {
-    "label": "Xu_2023 \u00b7 reference",
-    "model_id": "Digoxin_Xu2023_reference"
    },
    {
     "label": "Gong_2014 \u00b7 reference",
@@ -31180,15 +31172,15 @@
    }
   ],
   "dir": "drug_digoxin",
-  "extracted": 14,
-  "last_change": "2026-10-06T02:12:33.256567+00:00",
+  "extracted": 12,
+  "last_change": "2026-10-06T03:19:02.455687+00:00",
   "name": "digoxin",
   "needs_review": 6,
-  "records": 28,
+  "records": 26,
   "rejected": 8,
   "rendered": true,
   "slug": "digoxin",
-  "stale": 27
+  "stale": 25
  },
  "drug_dihexyverine": {
   "atc_codes": [

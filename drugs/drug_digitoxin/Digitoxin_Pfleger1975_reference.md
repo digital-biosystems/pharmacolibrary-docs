@@ -18,9 +18,13 @@
 
 ### Reviewer guidance
 
+**The paper reports none of the model's key parameters.**
+
+No clearance, volume or rate constant of the model is reported in it. No parameter values were extracted.
+
 Independently confirmed by `gpt-oss:120b`.
 
-> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Pfleger K et al., [Pharmacokinetics and action of digitox…, Archives internationales de… (1975)

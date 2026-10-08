@@ -19,9 +19,9 @@
 
 **Model:** No model was generated from this record.
 
-> Ouabain (g_strophanthin) stimulates the density of TRPV4 currents (dITRPV4, pA/pF) with an Emax-type concentration–effect relationship and an EC50 of 1.89 nM; the mechanism is biphasic: a short-term enhancement via PLC-mediated PIP2 depletion (disinhibition of TRPV4) and a long-term enhancement via synthesis of new TRPV4 channels through Src/Ras/Raf/Mek/Erk and PI3K/Akt/mTOR pathways. No Imax, Emax, kin, kout or ke0 values are stated in the paper.
+> Ouabain stimulates the density of TRPV4 currents (dITRPV4) with an EC50 of 1.89 nM, acting via a short-term mechanism involving PLC activation and PIP2 depletion and a long-term mechanism promoting the synthesis of new TRPV4 channel units. The paper does not provide specific rate constants (e.g., kin, kout, ke0) or an Imax value for the sigmoidal Emax model.
 >
-> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+> <sub>in the paper's terms — summarised by qwen3.8:27b-mtp-q8_0 from the paper's text; not checked by a person</sub>
 
 - **paper:** `Ponce_2023`
 - **model family:** `sigmoid_emax`

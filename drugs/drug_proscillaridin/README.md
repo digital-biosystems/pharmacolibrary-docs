@@ -18,7 +18,7 @@ Proscillaridin is a cardiac glycoside from squill that has been used as a cardio
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-06 03:18 | 2:47 | 0/0/0 | 1/0/0 | 0/0/0 | 126,473/1,532 | ollama / qwen3.8:27b-mtp-q8_0 | 6 | 1/7 | 5/1 | 0 |
+| 2026-10-06 03:18 | 2:47 | 0/0/0 | 1/0/0 | 0/0/0 | 126,473/1,532 | ollama / qwen3.8:27b-mtp-q8_0 | 11 | 1/7 | 5/6 | 0 |
 
 ## popPK records
 
