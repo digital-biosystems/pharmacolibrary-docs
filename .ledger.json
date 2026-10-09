@@ -1,5 +1,5 @@
 {
- "kb_mtime": 1791501798.958304,
+ "kb_mtime": 1791509004.2836282,
  "rows": [
   {
    "abstract_only": 83,
@@ -54547,7 +54547,7 @@
   {
    "abstract_only": 26,
    "backend": "ollama",
-   "calls": 150,
+   "calls": 799,
    "combination": null,
    "curated_models": 0,
    "drug": "tocainide",
@@ -54555,7 +54555,7 @@
     "approved",
     "withdrawn"
    ],
-   "elapsed_s": 618.2,
+   "elapsed_s": 4441.9,
    "eu_status": "not_centrally_authorised",
    "grobid": 31,
    "has_truth": false,
@@ -54567,7 +54567,7 @@
    "oa": 4,
    "panel": "dg-C01B-2",
    "papers": 57,
-   "pd_extracted": 3,
+   "pd_extracted": 15,
    "pd_gapfill": 0,
    "pd_other": 0,
    "pd_rejected": 0,
@@ -54579,34 +54579,36 @@
    "pgx_rejected": 0,
    "pgx_review_models": 0,
    "pk_gapfill": 0,
-   "pk_review_models": 1,
-   "poppk_extracted": 0,
-   "poppk_other": 1,
+   "pk_review_models": 5,
+   "poppk_extracted": 3,
+   "poppk_other": 2,
    "poppk_rejected": 2,
    "relevant": 33,
    "reused_cache": false,
-   "review_papers": 3,
-   "review_records": 99,
-   "src_pd_grobid": 3,
+   "review_papers": 21,
+   "review_records": 625,
+   "src_pd_grobid": 15,
+   "src_pk_grobid": 3,
    "supp_nonmem": 0,
    "supp_other": 0,
-   "supp_pd_none": 3,
-   "tokens_in": 213605,
-   "tokens_out": 26553
+   "supp_pd_none": 15,
+   "supp_pk_none": 3,
+   "tokens_in": 1265248,
+   "tokens_out": 209613
   },
   {
-   "abstract_only": 13,
+   "abstract_only": 11,
    "backend": "ollama",
-   "calls": 21,
+   "calls": 85,
    "combination": null,
    "curated_models": 0,
    "drug": "vernakalant",
    "drugbank_groups": [
     "approved"
    ],
-   "elapsed_s": 117.9,
+   "elapsed_s": 963.8,
    "eu_status": "authorised_eu_central",
-   "grobid": 0,
+   "grobid": 2,
    "has_truth": false,
    "interactions": 0,
    "jats": 0,
@@ -54624,12 +54626,12 @@
    "pdftext": 0,
    "pgx_extracted": 0,
    "pgx_gapfill": null,
-   "pgx_other": 0,
+   "pgx_other": 2,
    "pgx_rejected": 0,
    "pgx_review_models": 0,
    "pk_gapfill": 0,
    "pk_review_models": 0,
-   "poppk_extracted": 0,
+   "poppk_extracted": 1,
    "poppk_other": 0,
    "poppk_rejected": 1,
    "relevant": 6,
@@ -54637,19 +54639,21 @@
    "review_papers": 0,
    "review_records": 0,
    "src_pd_abstract_only": 2,
+   "src_pk_grobid": 1,
    "supp_nonmem": 0,
    "supp_other": 0,
    "supp_pd_none": 2,
-   "tokens_in": 21842,
-   "tokens_out": 5143
+   "supp_pk_none": 1,
+   "tokens_in": 144649,
+   "tokens_out": 54731
   },
   {
-   "abstract_only": 325,
-   "calls": 2488,
+   "abstract_only": 323,
+   "calls": 3201,
    "drug": "TOTAL",
    "drugs": 15,
-   "elapsed_s": 14726.8,
-   "grobid": 173,
+   "elapsed_s": 19396.399999999998,
+   "grobid": 175,
    "interactions": 0,
    "is_total": true,
    "jats": 41,
@@ -54658,7 +54662,7 @@
    "oa": 88,
    "panel": "dg-C01B-2",
    "papers": 543,
-   "pd_extracted": 48,
+   "pd_extracted": 60,
    "pd_gapfill": 0,
    "pd_other": 4,
    "pd_rejected": 9,
@@ -54666,21 +54670,21 @@
    "pdftext": 4,
    "pgx_extracted": 1,
    "pgx_gapfill": null,
-   "pgx_other": 42,
+   "pgx_other": 44,
    "pgx_rejected": 0,
    "pgx_review_models": 0,
    "pk_gapfill": 7,
-   "pk_review_models": 5,
-   "poppk_extracted": 12,
-   "poppk_other": 16,
+   "pk_review_models": 9,
+   "poppk_extracted": 16,
+   "poppk_other": 17,
    "poppk_rejected": 42,
    "relevant": 164,
-   "review_papers": 38,
-   "review_records": 672,
+   "review_papers": 56,
+   "review_records": 1198,
    "supp_nonmem": 0,
    "supp_other": 16,
-   "tokens_in": 3455604,
-   "tokens_out": 734145
+   "tokens_in": 4630054,
+   "tokens_out": 966793
   },
   {
    "abstract_only": 17,
@@ -270280,7 +270284,7 @@
    "tokens_out": null
   }
  ],
- "run_mtime": 1791501784.0223901,
+ "run_mtime": 1791506500.8046958,
  "runs": {
   "dbs": {
    "attempts": 11,
@@ -273096,35 +273100,35 @@
   "dg-C01B-2": {
    "attempts": 5,
    "drugs": 15,
-   "elapsed_h": 1.893,
-   "finished_at": null,
+   "elapsed_h": 5.398,
+   "finished_at": "2026-10-09T00:36:11+00:00",
    "host": "http://sasdsnode03.vito.local:56456",
    "label": "dg-C01B-2",
    "model": "qwen3.8:27b-mtp-q8_0",
-   "pid": 821551,
+   "pid": null,
    "processed": 13,
    "started_at": "2026-10-08T19:12:19+00:00",
-   "status": "running",
+   "status": "finished",
    "tokens": {
-    "calls": 1226,
-    "in": 1828188,
-    "out": 291384
+    "calls": 3201,
+    "in": 4630054,
+    "out": 966793
    },
    "totals": {
     "PD": {
-     "extracted": 44,
+     "extracted": 60,
      "other": 4,
-     "rejected": 8
+     "rejected": 9
     },
     "PGx": {
-     "extracted": 0,
-     "other": 24,
+     "extracted": 1,
+     "other": 44,
      "rejected": 0
     },
     "popPK": {
-     "extracted": 7,
-     "other": 4,
-     "rejected": 25
+     "extracted": 16,
+     "other": 17,
+     "rejected": 42
     }
    }
   },
@@ -324441,22 +324445,6 @@
    "stem": "Trujillo_2022",
    "title": "Population Pharmacokinetics of Vericiguat in Patients With Heart Failure With Reduced Ejection Fraction: An Integrated Analysis",
    "year": "2022"
-  },
-  {
-   "authors": "Mao ZL; Townsend RW; Gao Y; Wheeler JJ; Kastrissios H; Keirns J",
-   "doi": "10.1177/0091270011408425",
-   "doi_url": "https://doi.org/10.1177/0091270011408425",
-   "domain": "poppk",
-   "drug": "vernakalant",
-   "journal": "Journal of clinical pharmacology 52(7):1042\u20131053",
-   "pmid": "21659624",
-   "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/21659624",
-   "reason": "The abstract provides specific quantitative values for median systemic clearance (0.35 L/h/kg) and intersubject variability (40%) for vernakalant in a population PK model.",
-   "relevance_score": 10,
-   "slug": "vernakalant",
-   "stem": "Mao_2012",
-   "title": "Population pharmacokinetics of vernakalant hydrochloride injection (RSD1235) in patients with atrial fibrillation or atrial flutter",
-   "year": "2012"
   },
   {
    "authors": "Molimard A; Foissac F; Bouazza N; Gana I; Benaboud S; Froelicher L; et al.",
@@ -464881,26 +464869,6 @@
    "year": "2008"
   },
   {
-   "authors": "Mao ZL; Wheeler JJ; Clohs L; Beatch GN; Keirns J",
-   "doi": "10.1177/0091270008325148",
-   "doi_url": "https://doi.org/10.1177/0091270008325148",
-   "domain": "pgx",
-   "drug": "vernakalant",
-   "journal": "Journal of clinical pharmacology",
-   "matched": [
-    "CYP2D6",
-    "PK/PD-context"
-   ],
-   "pmid": "18927241",
-   "pubmed_url": "https://www.ncbi.nlm.nih.gov/pubmed/18927241",
-   "reason": "metadata signals extractable PGX data (CYP2D6, PK/PD-context)",
-   "relevance_score": 8,
-   "slug": "vernakalant",
-   "stem": "Mao_2009",
-   "title": "Pharmacokinetics of novel atrial-selective antiarrhythmic agent vernakalant hydrochloride injection (RSD1235): influence of CYP2D6 expression and other factors",
-   "year": "2009"
-  },
-  {
    "authors": "Mao ZL; Alak A; Wheeler JJ; Keirns J",
    "doi": "10.2174/187231211795305249",
    "doi_url": "https://doi.org/10.2174/187231211795305249",
@@ -498510,6 +498478,6 @@
  ],
  "wanted_stamp": [
   2271,
-  1791500779.0226033
+  1791505929.7040544
  ]
 }

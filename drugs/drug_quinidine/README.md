@@ -21,14 +21,14 @@ Quinidine is a class Ia antiarrhythmic used to treat heart rhythm problems such 
 
 | molecule | role | molar mass (g/mol) | formula | source | PubChem | records |
 |---|---|---|---|---|---|---|
-| quinidine | parent | 324.417 | C20H24N2O2 | DrugBank | [441074](https://pubchem.ncbi.nlm.nih.gov/compound/441074) | Fattinger_1991_2, Kuroda_2024, Ueda_1980 |
-| 6'-hydroxycinchonine | metabolite | 340.423 | C20H24N2O3 | PubChem | [13217486](https://pubchem.ncbi.nlm.nih.gov/compound/13217486) | Ueda_1980 |
+| quinidine | parent | 324.417 | C20H24N2O2 | DrugBank | [441074](https://pubchem.ncbi.nlm.nih.gov/compound/441074) | Fattinger_1991, Fattinger_1991_2, Kuroda_2024, Ueda_1980, Verme_1992 |
+| 6'-hydroxycinchonine | metabolite | 310.397 | C19H22N2O2 | PubChem | [51196](https://pubchem.ncbi.nlm.nih.gov/compound/51196) | Ueda_1980 |
 
 ## Extraction summary
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-06 04:35 | 13:51 | 2/2/1 | 1/0/0 | 0/0/0 | 230,976/41,472 | ollama / qwen3.8:27b-mtp-q8_0 | 20 | 4/4 | 7/0 | 0 |
+| 2026-10-08 21:50 | 20:54 | 2/1/4 | 1/0/0 | 0/0/0 | 241,969/57,712 | ollama / qwen3.8:27b-mtp-q8_0 | 24 | 21/4 | 7/4 | 0 |
 
 ## popPK records
 
@@ -36,9 +36,11 @@ Quinidine is a class Ia antiarrhythmic used to treat heart rhythm problems such 
 |---|---|---|---|---|---|---|
 | <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">horse</span><br><sub>STALE — current validate: extracted</sub><br><sub>route_to: `engineer_replication`</sub> | [Kuroda_2024_reference](drugs/drug_quinidine/Quinidine_Kuroda2024_reference.md) | ▶ model + simulator | 2-compartment, oral | 13 | Kuroda T et al., Rational quinidine dosage regimen for a…, Frontiers in veterinary sci… (2024) | [10.3389/fvets.2024.1454342](https://doi.org/10.3389/fvets.2024.1454342) |
 | <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.4). The first reading is what the record holds.">cross-check: disputed</span><br><sub>STALE — current validate: extracted</sub><br><sub>route_to: `engineer_replication`</sub> | [Rakhit_1984_reference](drugs/drug_quinidine/Quinidine_Rakhit1984_reference.md) | model (no simulator) | 1-compartment general linear | 5 | Rakhit A et al., Pharmacokinetics of quinidine and three…, Journal of pharmacokinetics… (1984) | [10.1007/BF01063608](https://doi.org/10.1007/BF01063608) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.917). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: disposition incomplete — only volume extracted — the engineer needs clearance/e…</sub><br><sub>blocking: C5 dimensioned parameter(s) without a unit: Q26 — no SI value to build from</sub><br><sub>route_to: `human_review`</sub> | [Fattinger_1991_population_mean_estimate](drugs/drug_quinidine/Quinidine_Fattinger1991_population_mean_estimate.md) | — | 2-compartment (no model) | 6 (+1 cov.) | Fattinger K et al., Population pharmacokinetics of quinidine, British journal of clinical… (1991) | [10.1111/j.1365-2125.1991.tb05531.x](https://doi.org/10.1111/j.1365-2125.1991.tb05531.x) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.846). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: disposition incomplete — only volume extracted — the engineer needs clearance/e…</sub><br><sub>blocking: C5 dimensioned parameter(s) without a unit: Q26, Q30 — no SI value to build from</sub><br><sub>route_to: `human_review`</sub> | [Fattinger_1991_population_mean_s_e](drugs/drug_quinidine/Quinidine_Fattinger1991_population_mean_s_e.md) | — | 2-compartment (no model) | 6 (+1 cov.) | Fattinger K et al., Population pharmacokinetics of quinidine, British journal of clinical… (1991) | [10.1111/j.1365-2125.1991.tb05531.x](https://doi.org/10.1111/j.1365-2125.1991.tb05531.x) |
 | <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.947). The first reading is what the record holds.">cross-check: disputed</span><br><sub>STALE — current validate: needs_review</sub><br><sub>blocking: disposition incomplete — only volume extracted — the engineer needs clearance/e…</sub><br><sub>blocking: C5 dimensioned parameter(s) without a unit: Q26 — no SI value to build from</sub><br><sub>route_to: `human_review`</sub> | [Fattinger_1991_2_reference](drugs/drug_quinidine/Quinidine_Fattinger1991v2_reference.md) | — | 2-compartment (no model) | 6 (+1 cov.) | Fattinger K et al., Population pharmacokinetics of quinidine, British journal of clinical… (1991) | [10.1111/j.1365-2125.1991.tb05531.x](https://doi.org/10.1111/j.1365-2125.1991.tb05531.x) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.222). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rabbit), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rabbit</span><br><sub>STALE — current validate: rejected</sub><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Ueda_1980_reference](drugs/drug_quinidine/Quinidine_Ueda1980_reference.md) | — | parent + metabolite (no model) | 1 | Ueda CT et al., Comparative pharmacokinetics of quinidi…, Journal of pharmaceutical s… (1980) | [10.1002/jps.2600691212](https://doi.org/10.1002/jps.2600691212) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span><br><sub>STALE — current validate: rejected</sub><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Verme_1992_reference](drugs/drug_quinidine/Quinidine_Verme1992_reference.md) | — | 1-compartment (no model) | 0 | Verme CN et al., Pharmacokinetics of quinidine in male p…, Clinical pharmacokinetics (1992) | [10.2165/00003088-199222060-00005](https://doi.org/10.2165/00003088-199222060-00005) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.75). The first reading is what the record holds.">cross-check: partial</span><br><sub>STALE — current validate: needs_review</sub><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub><br><sub>blocking: C5 dimensioned parameter(s) without a unit: Q22 — no SI value to build from</sub><br><sub>route_to: `human_review`</sub> | [Verme_1992_reference](drugs/drug_quinidine/Quinidine_Verme1992_reference.md) | — | 1-compartment (no model) | 2 | Verme CN et al., Pharmacokinetics of quinidine in male p…, Clinical pharmacokinetics (1992) | [10.2165/00003088-199222060-00005](https://doi.org/10.2165/00003088-199222060-00005) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.095). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rabbit), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rabbit</span><br><sub>STALE — current validate: rejected</sub><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Ueda_1980_reference](drugs/drug_quinidine/Quinidine_Ueda1980_reference.md) | — | parent + metabolite (no model) | 8 | Ueda CT et al., Comparative pharmacokinetics of quinidi…, Journal of pharmaceutical s… (1980) | [10.1002/jps.2600691212](https://doi.org/10.1002/jps.2600691212) |
 
 ## Pharmacodynamics (PD)
 
@@ -79,23 +81,19 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 ## Coverage
 
 - **PubMed hits:** 114 matched, 20 returned
-- **screened:** 7  ·  **relevant:** 7
-- **records:** 5  ·  extracted 2  ·  needs_review 1  ·  rejected 2  ·  stale 5
+- **screened:** 20  ·  **relevant:** 7
+- **records:** 7  ·  extracted 2  ·  needs_review 4  ·  rejected 1  ·  stale 5
 - **scholar-agent fallback query used:** not captured
 
 ## Full text wanted
 
-_5 paper(s) judged relevant from the abstract, with no full text on disk — paywalled, or the resolver could not reach them. Follow the DOI, then save the PDF into `papers/` as `&lt;save as&gt;.pdf` and re-run the extraction._
+_1 paper(s) judged relevant from the abstract, with no full text on disk — paywalled, or the resolver could not reach them. Follow the DOI, then save the PDF into `papers/` as `&lt;save as&gt;.pdf` and re-run the extraction._
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Guentert_1979.pdf` | Guentert TW et al., Quinidine pharmacokinetics in man: choi…, Journal of pharmacokinetics… (1979) | popPK | 10 | [10.1007/BF01062532](https://doi.org/10.1007/BF01062532) | [512840](https://pubmed.ncbi.nlm.nih.gov/512840) | The paper reports quantitative pharmacokinetic parameters (V1, Vdarea, clearance, rate constants) for quinidine in humans with specific numeric values provided in the text. |
 | `Karbwang_1993.pdf` | Karbwang J et al., A comparison of the pharmacokinetic and…, British journal of clinical… (1993) | popPK | 10 | not captured | [8471402](https://pubmed.ncbi.nlm.nih.gov/8471402) | The abstract explicitly reports quantitative pharmacokinetic parameters for quinidine, including clearance, volume of distribution, and half-life. |
-| `Rakhit_1984.pdf` | Rakhit A et al., Pharmacokinetics of quinidine and three…, Journal of pharmacokinetics… (1984) | popPK | 10 | [10.1007/BF01063608](https://doi.org/10.1007/BF01063608) | [6747817](https://pubmed.ncbi.nlm.nih.gov/6747817) | The paper reports quantitative two-compartment pharmacokinetic parameters (Vl, clearance, rate constants) for quinidine in humans, with all numeric values explicitly provided in the text. |
-| `Ueda_1980.pdf` | Ueda CT et al., Comparative pharmacokinetics of quinidi…, Journal of pharmaceutical s… (1980) | popPK | 10 | [10.1002/jps.2600691212](https://doi.org/10.1002/jps.2600691212) | [7463324](https://pubmed.ncbi.nlm.nih.gov/7463324) | The study reports quantitative two-compartment PK parameters (half-lives, Vd, clearance) for quinidine in rabbits, with specific numeric values provided in the abstract. |
-| `Verme_1992.pdf` | Verme CN et al., Pharmacokinetics of quinidine in male p…, Clinical pharmacokinetics (1992) | popPK | 10 | [10.2165/00003088-199222060-00005](https://doi.org/10.2165/00003088-199222060-00005) | [1587058](https://pubmed.ncbi.nlm.nih.gov/1587058) | The abstract reports quantitative population PK parameters for quinidine in humans, including mean Vd (~230 L) and variability metrics, though specific clearance values are described qualitatively or via covariate effects rather than a single mean number. |
 
-<sub>queue written 2026-10-06T04:23:09.371477+00:00</sub>
+<sub>queue written 2026-10-08T21:29:12.433021+00:00</sub>
 
 ## Screened and excluded
 
@@ -119,4 +117,4 @@ _5 paper(s) judged relevant from the abstract, with no full text on disk — pay
 | PD | Yin_2014 | not_relevant | 0 | 0 | The paper analyzes the pharmacokinetics of edoxaban and its interaction with quinidine (as a P-gp inhibitor), but does not report a pharmacodynamic or exposure-response relationship for quinidine itself. |
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-10-06 04:23 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-10-08 21:32 UTC</sub>

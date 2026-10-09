@@ -5,7 +5,7 @@
 
 # quinidine — `Quinidine_Verme1992_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.75). The first reading is what the record holds.">cross-check: partial</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -21,54 +21,81 @@
 
 The analyte-identity check failed: the disposition parameter labelled 'calculated creatinine clearance' (50 ml/min) names a biomarker rather than quinidine or its metabolites, so the drug's own clearance is absent. The record was built from the abstract alone, so summary statistics stood in for a fitted model, and the builder substituted defaults for ka and Tlag, assumed F=1 and Fm=1 without molar correction, and used first-order depot input giving an apparent (/F) parameterization. A second reader disagreed on the parameterization (mechanistic rather than apparent) and returned no values for the 50 ml/min and 230 L parameters. Extracted — quinidine: V/F 230 L, CL 50 ml/min.
 
-Independently confirmed by `gpt-oss:120b`.
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of p1: this record has none, the second reading 18.0; it also differs on 1 more field. That field does not shape the model.
 
 <sub>reviewed by glm-5.3-flash</sub>
 
-> ⚠️ **STALE** — review status `rejected` (reviewed 2026-10-05 09:31:14.813081+00:00) predates the upstream re-run (2026-10-06 04:23:47.737897+00:00). Current validate status: `rejected`.
+> ⚠️ **STALE** — review status `rejected` (reviewed 2026-10-05 09:31:14.813081+00:00) predates the upstream re-run (2026-10-08 21:32:47.693894+00:00). Current validate status: `needs_review`.
 
 ## Citation
 Verme CN et al., Pharmacokinetics of quinidine in male p…, Clinical pharmacokinetics (1992)
   ·  DOI: [10.2165/00003088-199222060-00005](https://doi.org/10.2165/00003088-199222060-00005)
 
 ## Model component
-<dbs-pgx drug="quinidine" model-id="Quinidine_Verme1992_reference" status="rejected" stale="true" population="adult hospitalised men" measured-compound="quinidine" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<dbs-pgx drug="quinidine" model-id="Quinidine_Verme1992_reference" status="needs_review" stale="true" population="adult hospitalised men" measured-compound="quinidine" parameterization="mechanistic" topology="1C"></dbs-pgx>
 
 **Model structure:** 1-compartment; no model was built for this record.  
-**Parameters:** 0 extracted.
+**Parameters:** 2 extracted.
 
 **Parameterization:** mechanistic.
 
 ## Parameters
-> ⚠️ This record is not accepted (current status `rejected`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
+> ⚠️ This record is not accepted (current status `needs_review`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
 
-_No resolved parameters._
+| label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
+|---|---|---|---|---|---|---|---|---|---|---|
+| P₁₂ | `Q301` · k12 | -0.178 | 1/h | -4.944444444444444e-05 | 1/h | 38.1 | llm (0.6) | Verme_1992_table_4:row6:col1, Verme_1992_table_4:row6:col2, Verme_1992_table_4:row6:col3 | — | not captured |
+| unexplained intersubject variance (proportional variance model) in clearance | `Q22` · CL | 0.0566 | clearance | not captured | clearance | not captured | boundary (0.8) | Verme_1992:results_prose | — | not captured |
+
+<details class="legend">
+<summary>Column legend — what each column means</summary>
+<table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>label (paper)</code></td><td>the row or statistic label exactly as printed in the paper (label_verbatim) — never normalised, so it can be found in the PDF.</td></tr><tr><td><code>Q-code · name</code></td><td>the ontology parameter this label was matched to (Q22 = clearance, Q27 = CL/F, Q49 = ka, Q57 = half-life, …) and its canonical name. The Q-code, not the label, is what scoring and cross-paper merging use.</td></tr><tr><td><code>value</code></td><td>the estimate as reported in the paper.</td></tr><tr><td><code>unit</code></td><td>the unit as printed (unit_verbatim).</td></tr><tr><td><code>value_si</code></td><td>the value converted to the canonical unit. Empty when no conversion was possible — usually an unparseable or missing unit.</td></tr><tr><td><code>unit_canonical</code></td><td>the canonical unit for that Q-code, i.e. what value_si is expressed in.</td></tr><tr><td><code>RSE%</code></td><td>relative standard error of the estimate, when the paper reports one.</td></tr><tr><td><code>link</code></td><td>how the label was matched to the Q-code, with confidence. exact / boundary / fuzzy / tv_prefix / caption_compartment / special_case are deterministic string matches; llm, llm_confirmed, llm_corrected involved the model; review and review_gapfill come from the secondary review tier, the latter filling a parameter the primary extraction missed; boundary_relink is a corrected match.</td></tr><tr><td><code>source</code></td><td>where in the paper the number came from: colN = that column of the located table, other_prose = running text, review = the secondary tier, pgx = a pharmacogenomic record.</td></tr><tr><td><code>covariates</code></td><td>covariate effects attached to this parameter (e.g. weight on CL).</td></tr><tr><td><code>IIV</code></td><td>inter-individual variability reported for this parameter.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>the field is absent from the KB artifact — nothing was recorded. This is NOT the same as zero or empty: the value is unknown, not measured to be nothing.</td></tr><tr><td><code>—</code></td><td>deliberately not shown: the column does not apply to this row.</td></tr><tr><td><code>not verified</code></td><td>the record is not in an accepted state (see the badge and the note above the table); the numbers are shown as extracted, not endorsed.</td></tr></tbody></table>
+</details>
 
 ## Departures & gaps
 
 **Interpretation flags:**
-- table section residual_error: 'mean apparent volume of distribution (Vd)' routed out of structural estimates ('The interpatient variability in CL and the intrapatient residual variability expressed as coefficients of variation (CV) were 28 and 31%, respectively.')
-- table section residual_error: 'interpatient variability in CL' routed out of structural estimates ('The interpatient variability in CL and the intrapatient residual variability expressed as coefficients of variation (CV) were 28 and 31%, respectively.')
-- table section residual_error: 'intrapatient residual variability' routed out of structural estimates ('The interpatient variability in CL and the intrapatient residual variability expressed as coefficients of variation (CV) were 28 and 31%, respectively.')
-- table section residual_error: 'calculated creatinine clearance' routed out of structural estimates ('The interpatient variability in CL and the intrapatient residual variability expressed as coefficients of variation (CV) were 28 and 31%, respectively.')
-- table section residual_error: 'residual intrapatient CVs' routed out of structural estimates ('The interpatient variability in CL and the intrapatient residual variability expressed as coefficients of variation (CV) were 28 and 31%, respectively.')
+- dropped unlinked row (NIL): 'P₁' — extend the ontology if this is a real PK parameter (source ['Verme_1992_table_4:row0:col1', 'Verme_1992_table_4:row0:col2', 'Verme_1992_table_4:row0:col3'])
+- dropped unlinked row (NIL): 'P₂' — extend the ontology if this is a real PK parameter (source ['Verme_1992_table_4:row1:col1', 'Verme_1992_table_4:row1:col2', 'Verme_1992_table_4:row1:col3'])
+- dropped unlinked row (NIL): 'P₅' — extend the ontology if this is a real PK parameter (source ['Verme_1992_table_4:row2:col1', 'Verme_1992_table_4:row2:col2', 'Verme_1992_table_4:row2:col3'])
+- dropped unlinked row (NIL): 'P₆' — extend the ontology if this is a real PK parameter (source ['Verme_1992_table_4:row3:col1', 'Verme_1992_table_4:row3:col2', 'Verme_1992_table_4:row3:col3'])
+- dropped unlinked row (NIL): 'P₇' — extend the ontology if this is a real PK parameter (source ['Verme_1992_table_4:row4:col1', 'Verme_1992_table_4:row4:col2', 'Verme_1992_table_4:row4:col3'])
+- dropped unlinked row (NIL): 'P₁₀' — extend the ontology if this is a real PK parameter (source ['Verme_1992_table_4:row5:col1', 'Verme_1992_table_4:row5:col2', 'Verme_1992_table_4:row5:col3'])
+- dropped unlinked row (NIL): 'P1' — extend the ontology if this is a real PK parameter (source ['Verme_1992_table_6:row0:col1', 'Verme_1992_table_6:row0:col2', 'Verme_1992_table_6:row0:col3'])
+- dropped unlinked row (NIL): 'P2' — extend the ontology if this is a real PK parameter (source ['Verme_1992_table_6:row1:col1', 'Verme_1992_table_6:row1:col2', 'Verme_1992_table_6:row1:col3'])
+- dropped unlinked row (NIL): 'P12' — extend the ontology if this is a real PK parameter (source ['Verme_1992_table_6:row2:col1', 'Verme_1992_table_6:row2:col2', 'Verme_1992_table_6:row2:col3'])
+- dropped unlinked row (NIL): 'P15' — extend the ontology if this is a real PK parameter (source ['Verme_1992_table_6:row3:col1', 'Verme_1992_table_6:row3:col2', 'Verme_1992_table_6:row3:col3'])
+- dropped value-less row: 'P16'
+- table mostly unlinked (10/11 table-cell rows NIL) — likely the wrong table was located, not 1 genuinely-missing ontology parameter(s); route_to_review instead of building a model from the residual linked cell(s)
+- salvaged Q22 ('unexplained intersubject variance (proportional variance model) in clearance'=0.0566) from results prose — parameter table was unreadable
+- implicit units: 'P₁₂' → 1/h (from the popPK convention: 'The parameter is identified as a first-order transfer rate constant (k12). In population pharmacokinetics, first-order r')
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=quinidine
-- abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
-- review gap-fill skipped: this record carries no value of its own, and a model assembled entirely from other papers is not this paper's model
+- held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
+- structure disagreement: deterministic 1C vs LLM 2C — review compartment count
+- status held at route_to_review — not promoted
 
 **Extraction notes:**
-- no GROBID TEI available — transcribed from abstract in Verme_1992_metadata.yaml (7 record(s)); values are summary statistics, not a fitted model
+- no TEI final-model table id; trying text-pointer table recovery
+- LLM selected parameter table(s) 4, 6
+- unparsed cell Verme_1992_table_6:row4:col1 = '25 922'
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--green">cross-checked ✓</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | confirmed | 1.0 (4/4 fields) | none |
+| `gpt-oss:120b` | partly confirmed | 0.75 (6/8 fields) | 2 |
 
-_Every reader agrees on every compared field of this record._
+<details><summary>2 field(s) a reader read differently</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss:120b` | `parameters[p1]` | not captured | 18.0 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[unexplained intersubject variance (proportional variance model) in clearance]` | 0.0566 | not captured | only_one_extracted |
+
+</details>
 
 <details class="legend">
 <summary>Cross-check legend</summary>
@@ -80,8 +107,12 @@ _Every reader agrees on every compared field of this record._
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | fail | not captured | 0 | not captured | not captured | not captured |
-| C0b_disposition_core | fail | not captured | not captured | not captured | not captured | not captured |
+| C0_has_structural_params | pass | not captured | 2 | not captured | not captured | not captured |
+| C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
+| C0c_disposition_complete | fail | not captured | not captured | not captured | not captured | not captured |
+| C5_dimension_Q301 | pass | 1 / [time] | not captured | not captured | not captured | ['Verme_1992_table_4:row6:col1', 'Verme_1992_table_4:row6:col2', 'Verme_1992_table_4:row6:col3'] |
+| C5_unit_missing_Q22 | fail | [length] ** 3 / [time] | clearance | not captured | not captured | ['Verme_1992:results_prose'] |
+| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 0.0566 | not captured | not captured | ['Verme_1992:results_prose'] |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
 
 **Reviewer per-scenario checks:**
@@ -111,9 +142,19 @@ _Every reader agrees on every compared field of this record._
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
-## Models
+## Downloadable models
 
-<p>No downloads: this record is <b>rejected</b>, so it is not published as a model. Any archives generated for it before the verdict have been removed — a download outlives the page that explains it.</p>
+<div class="pk-models-grid"><div class="pk-models-table">
+<table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
+</tbody></table>
+<p>No bundles have been generated for this record yet. When the engineer emits them they appear here automatically — this page reports what is on disk and generates nothing itself.</p>
+</div></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
@@ -122,4 +163,4 @@ _No web simulator for this record: its structure has no shared WebAssembly templ
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-06 04:23 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-08 21:32 UTC</sub>

@@ -1,10 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C01B&quot;,&quot;href&quot;:&quot;atc/C01B.md&quot;},{&quot;label&quot;:&quot;tocainide&quot;,&quot;href&quot;:&quot;drugs/drug_tocainide/&quot;},{&quot;label&quot;:&quot;Winkle_1976 \u00b7 reference&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Tocainide_Harron1987_reference&quot;,&quot;label&quot;:&quot;Harron_1987_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tocainide/Tocainide_Harron1987_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Tocainide_Oltmanns1983_reference&quot;,&quot;label&quot;:&quot;Oltmanns_1983_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tocainide/Tocainide_Oltmanns1983_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Tocainide_Wiegers1983_reference&quot;,&quot;label&quot;:&quot;Wiegers_1983_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tocainide/Tocainide_Wiegers1983_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # tocainide — `Tocainide_Winkle1976_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.364). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.3). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -16,9 +17,13 @@
 
 ### Reviewer guidance
 
+**The clearance plausibility check could not be computed.**
+
+The check had no reference to compare the clearance against, so the value is unverified rather than shown to be wrong. Extracted — tocainide: CL 720 ml/min, V 748 L.
+
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on parameter Q174: this record has none, the second reading 2.3; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
 
-> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Winkle RA et al., Clinical efficacy and pharmacokinetics…, Circulation (1976)
@@ -58,7 +63,7 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.364 (4/11 fields) | 7 |
+| `gpt-oss:120b` | not confirmed | 0.3 (3/10 fields) | 7 |
 
 <details><summary>7 field(s) a reader read differently</summary>
 
@@ -67,10 +72,10 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 | `gpt-oss:120b` | `values[Q174]` | not captured | 2.3 | only_one_extracted |
 | `gpt-oss:120b` | `values[Q32]` | 2.3 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `values[Q34]` | not captured | 1.7 | only_one_extracted |
-| `gpt-oss:120b` | `values[Q37]` | not captured | 5.65 | only_one_extracted |
 | `gpt-oss:120b` | `values[Q44]` | 40.6 | 40.6 | mismatch |
+| `gpt-oss:120b` | `values[Q56]` | 1.3 | 1.3 | mismatch |
 | `gpt-oss:120b` | `values[Q57]` | 12 | 13.5 | mismatch |
-| `gpt-oss:120b` | `values[Q71]` | 5.65 | 5.76 | mismatch |
+| `gpt-oss:120b` | `values[Q71]` | 5.65 | 5.65 | mismatch |
 
 </details>
 

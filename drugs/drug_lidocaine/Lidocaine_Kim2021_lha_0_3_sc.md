@@ -4,7 +4,7 @@
 
 # lidocaine — `Lidocaine_Kim2021_lha_0_3_sc`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.0). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.875). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -22,7 +22,7 @@
 
 The paper is an exposure/outcome study, not a compartmental population PK model: no volume of distribution and no clearance or elimination rate are reported. The structure links lidocaine to MEGX and MEGX to GX via metabolism, but GX has no path from the dose, so the metabolite is unlinked. Additionally, a reported unit could not be converted to SI, so that parameter lacked an SI value. A second reader disagreed on parameterization (apparent vs mechanistic) and on several values, reading a clearance divided by fraction (0.13), a metabolic clearance divided by fraction (14.94), and fractions fm1 0.65 and fr 0.373 that this record left as null, while reading null for the half-life, Cmax and AUC∞ values recorded here. Extracted — lidocaine: t1/2z 0.98 h, Cmax 80 ng/mL, tmax 0.81 h, AUC∞ 197 h × ng/mL.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has lidocaine, the second reading unknown; it also differs on 20 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the links between molecules: this record has lidocaine → monoethylglycylxylidide (metabolism); monoethylglycylxylidide → glycylxylidide (metabolism), the second reading lidocaine → megx (metabolism); megx → gx (metabolism). That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by glm-5.3-flash</sub>
 
@@ -108,33 +108,13 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.0 (0/21 fields) | 21 |
+| `gpt-oss:120b` | not confirmed | 0.875 (7/8 fields) | 1 |
 
-<details><summary>21 field(s) a reader read differently</summary>
+<details><summary>1 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `model.links` | [['lidocaine', 'monoethylglycylxylidide', 'metabolism'], ['monoethylglycylxylidide', 'glycylxylidide', 'metabolism']] | [['lidocaine', 'megx', 'metabolism'], ['lidocaine', 'gx', 'metabolism']] | mismatch |
-| `gpt-oss:120b` | `model.parameterization` | mechanistic | apparent | mismatch |
-| `gpt-oss:120b` | `parameters[aucinf]` | 197.19 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[cld/f]` | not captured | 0.13 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[clm1/f]` | not captured | 14.94 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[clm2/f]` | not captured | 1.09 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[cmax or co]` | 80.03 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[fm1]` | not captured | 0.65 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[fm2]` | not captured | 0.47 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[fr]` | not captured | 0.373 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[half-life]` | 0.98 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[ka1]` | not captured | 5.92 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[km]` | not captured | 136808.67 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[mtt]` | not captured | 0.64 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[ntr]` | not captured | 4.97 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[tmax]` | 0.81 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[v1/f]` | not captured | 2.57 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[v2/f]` | not captured | 0.07 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[vmax]` | not captured | 423962.94 | only_one_extracted |
-| `gpt-oss:120b` | `screen.dose_compound` | lidocaine | unknown | mismatch |
-| `gpt-oss:120b` | `screen.primary_analyte` | lidocaine | unknown | mismatch |
+| `gpt-oss:120b` | `model.links` | [['lidocaine', 'monoethylglycylxylidide', 'metabolism'], ['monoethylglycylxylidide', 'glycylxylidide', 'metabolism']] | [['lidocaine', 'megx', 'metabolism'], ['megx', 'gx', 'metabolism']] | mismatch |
 
 </details>
 

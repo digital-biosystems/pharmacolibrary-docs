@@ -4,7 +4,7 @@
 
 # lidocaine — `Lidocaine_Kim2021_estimate`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.033). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -22,7 +22,7 @@
 
 The record lists lidocaine parameters already adjusted for bioavailability (V1/F, V2/F, Q/F, CLm1/F), yet the coherence check found a double correction applied to these apparent parameters. A dimension mismatch was flagged on a structural parameter, and the clearance/volume values fell outside a physiological window, consistent with a unit or scale extraction error. One reported unit could not be converted to SI, so that parameter was carried without an SI value. The second reader additionally supplied relative standard errors absent from this record (e.g., CLd/F 0.37%, CLm1/F 15.31%, Fm1 1.06%) and classified the absorption half-life parameter (t1/2ka, 5.92 h−1) differently from this record. Extracted — lidocaine: t1/2ka 5.92 h−1, V1/F 2.57 L, V2/F 0.07 L, Q/F 0.13 L/h, FR 0.373, MTT 0.64 h, Vmax 4.24e+05 nmol/h, Km 1.37e+05 nmol/L, … (+2).
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has lidocaine, the second reading unknown; it also differs on 28 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the links between molecules: this record has lidocaine → monoethylglycylxylidide (metabolism); monoethylglycylxylidide → glycylxylidide (metabolism), the second reading lidocaine → megx (metabolism); megx → gx (metabolism); it also differs on 10 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by glm-5.3-flash</sub>
 
@@ -121,15 +121,13 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.033 (1/30 fields) | 29 |
+| `gpt-oss:120b` | not confirmed | 0.5 (11/22 fields) | 11 |
 
-<details><summary>29 field(s) a reader read differently</summary>
+<details><summary>11 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `model.links` | [['lidocaine', 'monoethylglycylxylidide', 'metabolism'], ['monoethylglycylxylidide', 'glycylxylidide', 'metabolism']] | [['lidocaine', 'megx', 'metabolism'], ['lidocaine', 'gx', 'metabolism']] | mismatch |
-| `gpt-oss:120b` | `parameters[cld/f]` | 0.13 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[cld/f]` | not captured | 0.13 | only_one_extracted |
+| `gpt-oss:120b` | `model.links` | [['lidocaine', 'monoethylglycylxylidide', 'metabolism'], ['monoethylglycylxylidide', 'glycylxylidide', 'metabolism']] | [['lidocaine', 'megx', 'metabolism'], ['megx', 'gx', 'metabolism']] | mismatch |
 | `gpt-oss:120b` | `parameters[clm1/f]` | not captured | 14.94 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[clm1/f]` | 14.94 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[clm2/f]` | not captured | 1.09 | only_one_extracted |
@@ -138,24 +136,8 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 | `gpt-oss:120b` | `parameters[fm1]` | 0.65 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[fm2]` | not captured | 0.47 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[fm2]` | 0.47 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[fr]` | 0.373 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[fr]` | not captured | 0.373 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[ka1]` | 5.92 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[ka1]` | not captured | 5.92 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[ka2]` | 1.67 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[km]` | 136808.67 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[km]` | not captured | 136808.67 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[mtt]` | 0.64 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[mtt]` | not captured | 0.64 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[ntr]` | not captured | 4.97 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[v1/f]` | 2.57 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[v1/f]` | not captured | 2.57 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[v2/f]` | 0.07 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[v2/f]` | not captured | 0.07 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[vmax]` | 423962.94 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[vmax]` | not captured | 423962.94 | only_one_extracted |
-| `gpt-oss:120b` | `screen.dose_compound` | lidocaine | unknown | mismatch |
-| `gpt-oss:120b` | `screen.primary_analyte` | lidocaine | unknown | mismatch |
 
 </details>
 

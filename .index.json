@@ -60679,14 +60679,14 @@
   ],
   "dir": "drug_lidocaine",
   "extracted": 0,
-  "last_change": "2026-10-06T03:23:07.114836+00:00",
+  "last_change": "2026-10-08T19:14:13.680988+00:00",
   "name": "lidocaine",
   "needs_review": 1,
   "records": 16,
   "rejected": 15,
   "rendered": true,
   "slug": "lidocaine",
-  "stale": 14
+  "stale": 15
  },
  "drug_lidoflazine": {
   "atc_codes": [
@@ -62125,7 +62125,7 @@
   "counts": {
    "pd": 2,
    "pgx": 0,
-   "pk": 1
+   "pk": 0
   },
   "curated": 0,
   "details": [
@@ -62139,10 +62139,10 @@
    }
   ],
   "dir": "drug_lorcainide",
-  "extracted": 1,
-  "last_change": "2026-10-06T03:50:14.311319+00:00",
+  "extracted": 0,
+  "last_change": "2026-10-08T19:48:23.787568+00:00",
   "name": "lorcainide",
-  "needs_review": 1,
+  "needs_review": 2,
   "records": 2,
   "rejected": 0,
   "rendered": true,
@@ -68839,17 +68839,45 @@
   "curated": 0,
   "details": [
    {
+    "label": "H\u00e4selbarth_1981 \u00b7 subject_1",
+    "model_id": "Mexiletine_Hselbarth1981_subject_1"
+   },
+   {
+    "label": "H\u00e4selbarth_1981 \u00b7 subject_2",
+    "model_id": "Mexiletine_Hselbarth1981_subject_2"
+   },
+   {
+    "label": "H\u00e4selbarth_1981 \u00b7 subject_3",
+    "model_id": "Mexiletine_Hselbarth1981_subject_3"
+   },
+   {
+    "label": "H\u00e4selbarth_1981 \u00b7 subject_4",
+    "model_id": "Mexiletine_Hselbarth1981_subject_4"
+   },
+   {
+    "label": "H\u00e4selbarth_1981 \u00b7 subject_5",
+    "model_id": "Mexiletine_Hselbarth1981_subject_5"
+   },
+   {
+    "label": "H\u00e4selbarth_1981 \u00b7 subject_6",
+    "model_id": "Mexiletine_Hselbarth1981_subject_6"
+   },
+   {
+    "label": "Ueno_2002 \u00b7 reference",
+    "model_id": "Mexiletine_Ueno2002_reference"
+   },
+   {
     "label": "Vozeh_1982 \u00b7 reference",
     "model_id": "Mexiletine_Vozeh1982_reference"
    }
   ],
   "dir": "drug_mexiletine",
   "extracted": 0,
-  "last_change": "2026-10-06T03:56:19.921892+00:00",
+  "last_change": "2026-10-08T19:55:14.502735+00:00",
   "name": "mexiletine",
   "needs_review": 0,
-  "records": 1,
-  "rejected": 1,
+  "records": 8,
+  "rejected": 8,
   "rendered": true,
   "slug": "mexiletine",
   "stale": 1
@@ -86906,7 +86934,7 @@
    "C01BA08"
   ],
   "counts": {
-   "pd": 0,
+   "pd": 1,
    "pgx": 0,
    "pk": 0
   },
@@ -87884,21 +87912,25 @@
   "counts": {
    "pd": 1,
    "pgx": 0,
-   "pk": 3
+   "pk": 4
   },
   "curated": 0,
   "details": [
+   {
+    "label": "Ellis_1994 \u00b7 reference",
+    "model_id": "Procainamide_Ellis1994_reference"
+   },
    {
     "label": "Grasela_1984 \u00b7 reference",
     "model_id": "Procainamide_Grasela1984_reference"
    },
    {
-    "label": "Papich_1986 \u00b7 reference",
-    "model_id": "Procainamide_Papich1986_reference"
+    "label": "Kamath_1981 \u00b7 i_one_compartment_open_model",
+    "model_id": "Procainamide_Kamath1981_i_one_compartment_open_model"
    },
    {
-    "label": "Singh_1982 \u00b7 reference",
-    "model_id": "Procainamide_Singh1982_reference"
+    "label": "Papich_1986 \u00b7 reference",
+    "model_id": "Procainamide_Papich1986_reference"
    },
    {
     "label": "Kamath_1981 \u00b7 reference",
@@ -87907,18 +87939,54 @@
    {
     "label": "Kharidia_1996 \u00b7 reference",
     "model_id": "Procainamide_Kharidia1996_reference"
+   },
+   {
+    "label": "Gole_1991 \u00b7 reference",
+    "model_id": "Procainamide_Gole1991_reference"
+   },
+   {
+    "label": "Kamath_1981 \u00b7 ii_pseudo_three_compartment_modela",
+    "model_id": "Procainamide_Kamath1981_ii_pseudo_three_compartment_modela"
+   },
+   {
+    "label": "Kamath_1981 \u00b7 ii_two_compartment_open_modelb",
+    "model_id": "Procainamide_Kamath1981_ii_two_compartment_open_modelb"
+   },
+   {
+    "label": "Kamath_1981 \u00b7 mean",
+    "model_id": "Procainamide_Kamath1981_mean"
+   },
+   {
+    "label": "Kharidia_1996 \u00b7 n_acetylprocainamide_a_100_mg_kg",
+    "model_id": "Procainamide_Kharidia1996_n_acetylprocainamide_a_100_mg_kg"
+   },
+   {
+    "label": "Kharidia_1996 \u00b7 n_acetylprocainamide_a_50_mg_kg",
+    "model_id": "Procainamide_Kharidia1996_n_acetylprocainamide_a_50_mg_kg"
+   },
+   {
+    "label": "Kharidia_1996 \u00b7 procainamide_a_100_mg_kg",
+    "model_id": "Procainamide_Kharidia1996_procainamide_a_100_mg_kg"
+   },
+   {
+    "label": "Kharidia_1996 \u00b7 procainamide_a_50_mg_kg",
+    "model_id": "Procainamide_Kharidia1996_procainamide_a_50_mg_kg"
+   },
+   {
+    "label": "Singh_1982 \u00b7 reference",
+    "model_id": "Procainamide_Singh1982_reference"
    }
   ],
   "dir": "drug_procainamide",
-  "extracted": 3,
-  "last_change": "2026-10-06T04:05:22.765178+00:00",
+  "extracted": 4,
+  "last_change": "2026-10-08T20:24:35.177667+00:00",
   "name": "procainamide",
   "needs_review": 0,
-  "records": 5,
-  "rejected": 2,
+  "records": 15,
+  "rejected": 9,
   "rendered": true,
   "slug": "procainamide",
-  "stale": 4
+  "stale": 5
  },
  "drug_procaine": {
   "atc_codes": [
@@ -88431,21 +88499,61 @@
   "counts": {
    "pd": 4,
    "pgx": 0,
-   "pk": 1
+   "pk": 2
   },
   "curated": 0,
   "details": [
+   {
+    "label": "Connolly_1984 \u00b7 dose_150_mg_every_8_hr",
+    "model_id": "Propafenone_Connolly1984_dose_150_mg_every_8_hr"
+   },
+   {
+    "label": "Connolly_1984 \u00b7 dose_300_mg_every_8_hr",
+    "model_id": "Propafenone_Connolly1984_dose_300_mg_every_8_hr"
+   },
+   {
+    "label": "Fern\u00e1ndez_1991 \u00b7 brain",
+    "model_id": "Propafenone_Fernndez1991_brain"
+   },
+   {
+    "label": "Fern\u00e1ndez_1991 \u00b7 fat",
+    "model_id": "Propafenone_Fernndez1991_fat"
+   },
+   {
+    "label": "Fern\u00e1ndez_1991 \u00b7 heart",
+    "model_id": "Propafenone_Fernndez1991_heart"
+   },
+   {
+    "label": "Fern\u00e1ndez_1991 \u00b7 kidney",
+    "model_id": "Propafenone_Fernndez1991_kidney"
+   },
+   {
+    "label": "Fern\u00e1ndez_1991 \u00b7 liver",
+    "model_id": "Propafenone_Fernndez1991_liver"
+   },
+   {
+    "label": "Fern\u00e1ndez_1991 \u00b7 lung",
+    "model_id": "Propafenone_Fernndez1991_lung"
+   },
+   {
+    "label": "Fern\u00e1ndez_1991 \u00b7 muscle",
+    "model_id": "Propafenone_Fernndez1991_muscle"
+   },
+   {
+    "label": "Fern\u00e1ndez_1991 \u00b7 plasma",
+    "model_id": "Propafenone_Fernndez1991_plasma"
+   },
    {
     "label": "Connolly_1984 \u00b7 reference",
     "model_id": "Propafenone_Connolly1984_reference"
    },
    {
-    "label": "Arboix_1985 \u00b7 reference",
-    "model_id": "Propafenone_Arboix1985_reference"
-   },
-   {
     "label": "Fern\u00e1ndez_1991 \u00b7 reference",
     "model_id": "Propafenone_Fernndez1991_reference"
+   },
+   {
+    "label": "Arboix_1985 \u00b7 reference",
+    "model_id": "Propafenone_Arboix1985_reference"
    },
    {
     "label": "Haefeli_1991 \u00b7 reference",
@@ -88453,15 +88561,15 @@
    }
   ],
   "dir": "drug_propafenone",
-  "extracted": 1,
-  "last_change": "2026-10-06T04:14:06.352431+00:00",
+  "extracted": 2,
+  "last_change": "2026-10-08T20:59:43.592243+00:00",
   "name": "propafenone",
-  "needs_review": 0,
-  "records": 4,
-  "rejected": 3,
+  "needs_review": 8,
+  "records": 14,
+  "rejected": 2,
   "rendered": true,
   "slug": "propafenone",
-  "stale": 3
+  "stale": 4
  },
  "drug_propamidine": {
   "atc_codes": [
@@ -90035,25 +90143,33 @@
     "model_id": "Quinidine_Rakhit1984_reference"
    },
    {
+    "label": "Fattinger_1991 \u00b7 population_mean_estimate",
+    "model_id": "Quinidine_Fattinger1991_population_mean_estimate"
+   },
+   {
+    "label": "Fattinger_1991 \u00b7 population_mean_s_e",
+    "model_id": "Quinidine_Fattinger1991_population_mean_s_e"
+   },
+   {
     "label": "Fattinger_1991_2 \u00b7 reference",
     "model_id": "Quinidine_Fattinger1991v2_reference"
    },
    {
-    "label": "Ueda_1980 \u00b7 reference",
-    "model_id": "Quinidine_Ueda1980_reference"
-   },
-   {
     "label": "Verme_1992 \u00b7 reference",
     "model_id": "Quinidine_Verme1992_reference"
+   },
+   {
+    "label": "Ueda_1980 \u00b7 reference",
+    "model_id": "Quinidine_Ueda1980_reference"
    }
   ],
   "dir": "drug_quinidine",
   "extracted": 2,
-  "last_change": "2026-10-06T04:23:47.737897+00:00",
+  "last_change": "2026-10-08T21:32:47.693894+00:00",
   "name": "quinidine",
-  "needs_review": 1,
-  "records": 5,
-  "rejected": 2,
+  "needs_review": 4,
+  "records": 7,
+  "rejected": 1,
   "rendered": true,
   "slug": "quinidine",
   "stale": 5
@@ -99038,19 +99154,52 @@
    "C01BA04"
   ],
   "counts": {
-   "pd": 1,
-   "pgx": 0,
-   "pk": 0
+   "pd": 3,
+   "pgx": 1,
+   "pk": 4
   },
   "curated": 0,
-  "details": [],
+  "details": [
+   {
+    "label": "Br\u00f8sen_2001 \u00b7 reference",
+    "model_id": "Sparteine_Brsen2001_reference"
+   },
+   {
+    "label": "Cho-Schultz_2009 \u00b7 reference",
+    "model_id": "Sparteine_ChoSchultz2009_reference"
+   },
+   {
+    "label": "Eichelbaum_1997 \u00b7 reference",
+    "model_id": "Sparteine_Eichelbaum1997_reference"
+   },
+   {
+    "label": "Gross_1996 \u00b7 reference",
+    "model_id": "Sparteine_Gross1996_reference"
+   },
+   {
+    "label": "Eichelbaum_1979 \u00b7 metaboliser",
+    "model_id": "Sparteine_Eichelbaum1979_metaboliser"
+   },
+   {
+    "label": "Eichelbaum_1979 \u00b7 metabolisers",
+    "model_id": "Sparteine_Eichelbaum1979_metabolisers"
+   },
+   {
+    "label": "Eichelbaum_1979 \u00b7 nonmetaboliser",
+    "model_id": "Sparteine_Eichelbaum1979_nonmetaboliser"
+   },
+   {
+    "label": "Eichelbaum_1979 \u00b7 nonmetabolisers",
+    "model_id": "Sparteine_Eichelbaum1979_nonmetabolisers"
+   }
+  ],
   "dir": "drug_sparteine",
-  "extracted": 0,
-  "last_change": null,
+  "extracted": 4,
+  "last_change": "2026-10-08T21:55:13.671330+00:00",
   "name": "sparteine",
   "needs_review": 0,
-  "records": 0,
-  "rejected": 0,
+  "records": 8,
+  "rejected": 4,
   "rendered": true,
   "slug": "sparteine",
   "stale": 0
@@ -108009,12 +108158,28 @@
    "C01BB03"
   ],
   "counts": {
-   "pd": 3,
+   "pd": 7,
    "pgx": 0,
-   "pk": 0
+   "pk": 3
   },
   "curated": 0,
   "details": [
+   {
+    "label": "Harron_1987 \u00b7 reference",
+    "model_id": "Tocainide_Harron1987_reference"
+   },
+   {
+    "label": "Oltmanns_1983 \u00b7 reference",
+    "model_id": "Tocainide_Oltmanns1983_reference"
+   },
+   {
+    "label": "Wiegers_1983 \u00b7 reference",
+    "model_id": "Tocainide_Wiegers1983_reference"
+   },
+   {
+    "label": "McDevitt_1976 \u00b7 reference",
+    "model_id": "Tocainide_McDevitt1976_reference"
+   },
    {
     "label": "Winkle_1976 \u00b7 reference",
     "model_id": "Tocainide_Winkle1976_reference"
@@ -108022,15 +108187,23 @@
    {
     "label": "Lalka_1976 \u00b7 reference",
     "model_id": "Tocainide_Lalka1976_reference"
+   },
+   {
+    "label": "Lalka_1976 \u00b7 average",
+    "model_id": "Tocainide_Lalka1976_average"
+   },
+   {
+    "label": "Lalka_1976 \u00b7 nahco3_treated",
+    "model_id": "Tocainide_Lalka1976_nahco3_treated"
    }
   ],
   "dir": "drug_tocainide",
-  "extracted": 0,
-  "last_change": "2026-10-06T05:03:02.925116+00:00",
+  "extracted": 3,
+  "last_change": "2026-10-08T23:12:06.119575+00:00",
   "name": "tocainide",
-  "needs_review": 1,
-  "records": 2,
-  "rejected": 1,
+  "needs_review": 2,
+  "records": 8,
+  "rejected": 2,
   "rendered": true,
   "slug": "tocainide",
   "stale": 1
@@ -113667,21 +113840,29 @@
   "counts": {
    "pd": 0,
    "pgx": 0,
-   "pk": 0
+   "pk": 1
   },
   "curated": 0,
   "details": [
    {
+    "label": "Mao_2012 \u00b7 estimate",
+    "model_id": "Vernakalant_Mao2012_estimate"
+   },
+   {
     "label": "Mao_2012 \u00b7 reference",
     "model_id": "Vernakalant_Mao2012_reference"
+   },
+   {
+    "label": "Mao_2012 \u00b7 parameter_estimate_se",
+    "model_id": "Vernakalant_Mao2012_parameter_estimate_se"
    }
   ],
   "dir": "drug_vernakalant",
-  "extracted": 0,
-  "last_change": "2026-10-06T05:11:56.304491+00:00",
+  "extracted": 1,
+  "last_change": "2026-10-09T00:20:33.692609+00:00",
   "name": "vernakalant",
   "needs_review": 0,
-  "records": 1,
+  "records": 3,
   "rejected": 1,
   "rendered": true,
   "slug": "vernakalant",

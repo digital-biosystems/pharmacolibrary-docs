@@ -4,7 +4,7 @@
 
 # mexiletine — `Mexiletine_Vozeh1982_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.444). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -20,11 +20,11 @@
 
 Only the abstract was available, so reported summary statistics stand in for a fitted model.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has mexiletine, the second reading unknown; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has mexiletine, the second reading unknown; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
-> ⚠️ **STALE** — review status `curated_candidate` (reviewed 2026-09-28 14:39:00.247265+00:00) predates the upstream re-run (2026-10-06 03:56:19.921892+00:00). Current validate status: `rejected`.
+> ⚠️ **STALE** — review status `curated_candidate` (reviewed 2026-09-28 14:39:00.247265+00:00) predates the upstream re-run (2026-10-08 19:55:14.502735+00:00). Current validate status: `rejected`.
 
 ## Citation
 Vozeh S et al., Population pharmacokinetic parameters i…, European journal of clinica… (1982)
@@ -34,28 +34,50 @@ Vozeh S et al., Population pharmacokinetic parameters i…, European journal of 
 <dbs-pgx drug="mexiletine" model-id="Mexiletine_Vozeh1982_reference" status="rejected" stale="true" population="patients treated for arrhythmias" measured-compound="mexiletine" parameterization="mechanistic" topology="1C"></dbs-pgx>
 
 **Model structure:** 1-compartment; no model was built for this record.  
-**Parameters:** 0 extracted.
+**Parameters:** 3 extracted.
 
 **Parameterization:** mechanistic.
 
 ## Parameters
 > ⚠️ This record is not accepted (current status `rejected`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
 
-_No resolved parameters._
+| label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
+|---|---|---|---|---|---|---|---|---|---|---|
+| Vd [1/kg] | `Q352` · Vnorm | 5.3 | 1/kg | not captured | [1] / [kg] | not captured | llm_corrected (0.6) | tab_0:row4:col1 | — | not captured |
+| ka [h-1] | `Q49` · kabs | 3.1 | h-1 | 0.0008611111111111111 | [1] / [h] | not captured | llm_confirmed (0.6) | tab_0:row5:col1 | — | 0.54 (None% RSE) |
+| volume of distribution | `Q61` · V | 74.0 | L | 0.074 | L | not captured | review_gapfill (0.7) | Sauer_2025:review | — | not captured |
+
+<details class="legend">
+<summary>Column legend — what each column means</summary>
+<table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>label (paper)</code></td><td>the row or statistic label exactly as printed in the paper (label_verbatim) — never normalised, so it can be found in the PDF.</td></tr><tr><td><code>Q-code · name</code></td><td>the ontology parameter this label was matched to (Q22 = clearance, Q27 = CL/F, Q49 = ka, Q57 = half-life, …) and its canonical name. The Q-code, not the label, is what scoring and cross-paper merging use.</td></tr><tr><td><code>value</code></td><td>the estimate as reported in the paper.</td></tr><tr><td><code>unit</code></td><td>the unit as printed (unit_verbatim).</td></tr><tr><td><code>value_si</code></td><td>the value converted to the canonical unit. Empty when no conversion was possible — usually an unparseable or missing unit.</td></tr><tr><td><code>unit_canonical</code></td><td>the canonical unit for that Q-code, i.e. what value_si is expressed in.</td></tr><tr><td><code>RSE%</code></td><td>relative standard error of the estimate, when the paper reports one.</td></tr><tr><td><code>link</code></td><td>how the label was matched to the Q-code, with confidence. exact / boundary / fuzzy / tv_prefix / caption_compartment / special_case are deterministic string matches; llm, llm_confirmed, llm_corrected involved the model; review and review_gapfill come from the secondary review tier, the latter filling a parameter the primary extraction missed; boundary_relink is a corrected match.</td></tr><tr><td><code>source</code></td><td>where in the paper the number came from: colN = that column of the located table, other_prose = running text, review = the secondary tier, pgx = a pharmacogenomic record.</td></tr><tr><td><code>covariates</code></td><td>covariate effects attached to this parameter (e.g. weight on CL).</td></tr><tr><td><code>IIV</code></td><td>inter-individual variability reported for this parameter.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>the field is absent from the KB artifact — nothing was recorded. This is NOT the same as zero or empty: the value is unknown, not measured to be nothing.</td></tr><tr><td><code>—</code></td><td>deliberately not shown: the column does not apply to this row.</td></tr><tr><td><code>not verified</code></td><td>the record is not in an accepted state (see the badge and the note above the table); the numbers are shown as extracted, not endorsed.</td></tr></tbody></table>
+</details>
 
 ## Departures & gaps
 
 **Interpretation flags:**
-- table section iiv: 'oral total body clearance (Cl)' routed out of structural estimates ('Normalizing Cl and Vd for body weight significantly decreased their interindividual variability.')
-- table section iiv: 'apparent volume of distribution (Vd)' routed out of structural estimates ('Normalizing Cl and Vd for body weight significantly decreased their interindividual variability.')
-- table section iiv: 'absorption rate constant' routed out of structural estimates ('Normalizing Cl and Vd for body weight significantly decreased their interindividual variability.')
-- table section iiv: 'absorption time-lag' routed out of structural estimates ('Normalizing Cl and Vd for body weight significantly decreased their interindividual variability.')
+- table section iiv: 'C1 [1/h/kg]' routed out of structural estimates ('Interindividual')
+- table section iiv: 'Vd [1/kg]' routed out of structural estimates ('Interindividual')
+- table section iiv: 'ka [h-1]' routed out of structural estimates ('Interindividual')
+- table section iiv: 'to [h]' routed out of structural estimates ('Interindividual')
+- dropped unlinked row (NIL): 'C1 [1/h/kg]' — extend the ontology if this is a real PK parameter (source ['tab_0:row3:col1'])
+- unit_dimension_mismatch: 'Vd [1/kg]' → Q352 (unit 'dimensionless' vs ontology '[length] ** 3') — route to review
+- dropped unlinked row (NIL): 'to [h]' — extend the ontology if this is a real PK parameter (source ['tab_0:row6:col1'])
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=mexiletine
-- abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
-- review gap-fill skipped: this record carries no value of its own, and a model assembled entirely from other papers is not this paper's model
+- held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
+- status held at route_to_review — not promoted
+- gap-filled Q61 (V) from Sauer_2025's review values (primary lacked it)
+- skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
+- skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
+- skipped review gap-fill of TLAG: primary's parameterization (rate-constant / ka-only) does not use it
 
 **Extraction notes:**
-- no GROBID TEI available — transcribed from abstract in Vozeh_1982_metadata.yaml (4 record(s)); values are summary statistics, not a fitted model
+- unparsed cell tab_0:row3:col3 = '42%'
+- unparsed cell tab_0:row3:col4 = '11%'
+- unparsed cell tab_0:row4:col3 = '40%'
+- unparsed cell tab_0:row4:col4 = '16%'
+- unparsed cell tab_0:row5:col3 = '205%'
+- unparsed cell tab_0:row5:col4 = '9%'
+- LLM selected parameter table(s) 1
 
 ## Validation
 
@@ -64,12 +86,15 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.5 (2/4 fields) | 2 |
+| `gpt-oss:120b` | not confirmed | 0.444 (4/9 fields) | 5 |
 
-<details><summary>2 field(s) a reader read differently</summary>
+<details><summary>5 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss:120b` | `parameters[c1 [1/h/kg]]` | not captured | 0.38 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[to [h]]` | not captured | 0.3 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[vd [1/kg]].parameter_id` | Q352 | Q61 | mismatch |
 | `gpt-oss:120b` | `screen.dose_compound` | mexiletine | unknown | mismatch |
 | `gpt-oss:120b` | `screen.primary_analyte` | mexiletine | unknown | mismatch |
 
@@ -85,9 +110,13 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | fail | not captured | 0 | not captured | not captured | not captured |
-| C0b_disposition_core | fail | not captured | not captured | not captured | not captured | not captured |
+| C0_has_structural_params | pass | not captured | 2 | not captured | not captured | not captured |
+| C0c_disposition_complete | fail | not captured | not captured | not captured | not captured | not captured |
+| C5_dimension_Q352 | fail | dimensionless | 1/kg | not captured | not captured | ['tab_0:row4:col1'] |
+| C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['tab_0:row5:col1'] |
+| C5_dimension_Q61 | pass | [length] ** 3 | not captured | not captured | not captured | ['Sauer_2025:review'] |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
+| C9_phys_window_Q61 | pass | volume within physiological range | 74 L | not captured | not captured | ['Sauer_2025:review'] |
 
 **Reviewer per-scenario checks:**
 
@@ -127,4 +156,4 @@ _No web simulator for this record: its structure has no shared WebAssembly templ
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-06 03:56 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-08 19:55 UTC</sub>

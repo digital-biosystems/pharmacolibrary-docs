@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C01B&quot;,&quot;href&quot;:&quot;atc/C01B.md&quot;},{&quot;label&quot;:&quot;propafenone&quot;,&quot;href&quot;:&quot;drugs/drug_propafenone/&quot;},{&quot;label&quot;:&quot;Haefeli_1991 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Propafenone_Connolly1984_reference&quot;,&quot;label&quot;:&quot;Connolly_1984_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_propafenone/Propafenone_Connolly1984_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Propafenone_Connolly1984_dose_150_mg_every_8_hr&quot;,&quot;label&quot;:&quot;Connolly_1984_dose_150_mg_every_8_hr&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_propafenone/Propafenone_Connolly1984_dose_150_mg_every_8_hr.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Propafenone_Connolly1984_dose_300_mg_every_8_hr&quot;,&quot;label&quot;:&quot;Connolly_1984_dose_300_mg_every_8_hr&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_propafenone/Propafenone_Connolly1984_dose_300_mg_every_8_hr.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # propafenone — `Propafenone_Haefeli1991_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.286). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.143). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -17,43 +17,69 @@
 
 ### Reviewer guidance
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has 5-hydroxypropafenone, the second reading unknown; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
+**The paper reports none of the model's key parameters.**
 
-> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+No clearance, volume or rate constant of the model is reported in it. Only the abstract was available, so reported summary statistics stand in for a fitted model. No parameter values were extracted.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has S-hydroxypropafenone, the second reading 5-hydroxypropafenone; it also differs on 11 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>reviewed by rule template (no LLM)</sub>
+
+> ⚠️ **STALE** — review status `rejected` (reviewed 2026-10-06 05:14:04.847878+00:00) predates the upstream re-run (2026-10-08 20:59:43.592243+00:00). Current validate status: `rejected`.
 
 ## Citation
 Haefeli WE et al., Concentration-effect relations of 5-hyd…, The American journal of car… (1991)
   ·  DOI: [10.1016/0002-9149(91)90177-m](https://doi.org/10.1016/0002-9149(91)90177-m)
 
 ## Model component
-<dbs-pgx drug="propafenone" model-id="Propafenone_Haefeli1991_reference" status="rejected" stale="false" population="healthy extensive metabolizers of debrisoquine" measured-compound="5-hydroxypropafenone" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<dbs-pgx drug="propafenone" model-id="Propafenone_Haefeli1991_reference" status="rejected" stale="true" population="healthy extensive metabolizers of debrisoquine" measured-compound="S-hydroxypropafenone" parameterization="mechanistic" topology="1C"></dbs-pgx>
 
 **Model structure:** 1-compartment; no model was built for this record.  
-**Parameters:** 0 extracted.
+**Parameters:** 5 extracted.
 
 **Parameterization:** mechanistic.
 
 ## Parameters
 > ⚠️ This record is not accepted (current status `rejected`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
 
-_No resolved parameters._
+| label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
+|---|---|---|---|---|---|---|---|---|---|---|
+| Lag Time (min) | `Q83` · tlag | 5.0 | min | 300.0 | [min] | not captured | exact (1.0) | Haefeli_1991_table_p2_1:row2:col1, Haefeli_1991_table_p2_1:row2:col2, Haefeli_1991_table_p2_1:row2:col3, Haefeli_1991_table_p2_1:row2:col4, Haefeli_1991_table_p2_1:row2:col5, Haefeli_1991_table_p2_1:row2:col6, Haefeli_1991_table_p2_1:row2:col7 | — | not captured |
+| Cmax. (ng/ml) | `Q32` · Cmax | 337 | ng/ml | not captured | [ng] / [ml] | not captured | llm (0.6) | Haefeli_1991_table_p2_1:row3:col1, Haefeli_1991_table_p2_1:row3:col2, Haefeli_1991_table_p2_1:row3:col3, Haefeli_1991_table_p2_1:row3:col4, Haefeli_1991_table_p2_1:row3:col5, Haefeli_1991_table_p2_1:row3:col6, Haefeli_1991_table_p2_1:row3:col7 | — | not captured |
+| t1/2α (min) | `Q59` · t1/2α | 29.1 | min | 1746.0 | [min] | not captured | exact (1.0) | Haefeli_1991_table_p2_1:row4:col1, Haefeli_1991_table_p2_1:row4:col2, Haefeli_1991_table_p2_1:row4:col3, Haefeli_1991_table_p2_1:row4:col4, Haefeli_1991_table_p2_1:row4:col5, Haefeli_1991_table_p2_1:row4:col6, Haefeli_1991_table_p2_1:row4:col7 | — | not captured |
+| t1/2β (min) | `Q60` · t1/2β | 615 | min | 36900.0 | [min] | not captured | exact (1.0) | Haefeli_1991_table_p2_1:row5:col1, Haefeli_1991_table_p2_1:row5:col2, Haefeli_1991_table_p2_1:row5:col3, Haefeli_1991_table_p2_1:row5:col4, Haefeli_1991_table_p2_1:row5:col5, Haefeli_1991_table_p2_1:row5:col6, Haefeli_1991_table_p2_1:row5:col7 | — | not captured |
+| AUC0-12h (ng·min/liter) | `Q19` · AUCt | 28.6 | ng·min/liter | not captured | [[min] · [ng]] / [l] | not captured | llm (0.6) | Haefeli_1991_table_p2_1:row6:col1, Haefeli_1991_table_p2_1:row6:col2, Haefeli_1991_table_p2_1:row6:col3, Haefeli_1991_table_p2_1:row6:col4, Haefeli_1991_table_p2_1:row6:col5, Haefeli_1991_table_p2_1:row6:col6, Haefeli_1991_table_p2_1:row6:col7 | — | not captured |
 
-### Unresolved rows _(no Q-code or no value — not parameters)_
-| label (paper) | Q-code | value | link |
-|---|---|---|---|
-| terminal half-life | Q57 | not captured | llm |
+<details class="legend">
+<summary>Column legend — what each column means</summary>
+<table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>label (paper)</code></td><td>the row or statistic label exactly as printed in the paper (label_verbatim) — never normalised, so it can be found in the PDF.</td></tr><tr><td><code>Q-code · name</code></td><td>the ontology parameter this label was matched to (Q22 = clearance, Q27 = CL/F, Q49 = ka, Q57 = half-life, …) and its canonical name. The Q-code, not the label, is what scoring and cross-paper merging use.</td></tr><tr><td><code>value</code></td><td>the estimate as reported in the paper.</td></tr><tr><td><code>unit</code></td><td>the unit as printed (unit_verbatim).</td></tr><tr><td><code>value_si</code></td><td>the value converted to the canonical unit. Empty when no conversion was possible — usually an unparseable or missing unit.</td></tr><tr><td><code>unit_canonical</code></td><td>the canonical unit for that Q-code, i.e. what value_si is expressed in.</td></tr><tr><td><code>RSE%</code></td><td>relative standard error of the estimate, when the paper reports one.</td></tr><tr><td><code>link</code></td><td>how the label was matched to the Q-code, with confidence. exact / boundary / fuzzy / tv_prefix / caption_compartment / special_case are deterministic string matches; llm, llm_confirmed, llm_corrected involved the model; review and review_gapfill come from the secondary review tier, the latter filling a parameter the primary extraction missed; boundary_relink is a corrected match.</td></tr><tr><td><code>source</code></td><td>where in the paper the number came from: colN = that column of the located table, other_prose = running text, review = the secondary tier, pgx = a pharmacogenomic record.</td></tr><tr><td><code>covariates</code></td><td>covariate effects attached to this parameter (e.g. weight on CL).</td></tr><tr><td><code>IIV</code></td><td>inter-individual variability reported for this parameter.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>the field is absent from the KB artifact — nothing was recorded. This is NOT the same as zero or empty: the value is unknown, not measured to be nothing.</td></tr><tr><td><code>—</code></td><td>deliberately not shown: the column does not apply to this row.</td></tr><tr><td><code>not verified</code></td><td>the record is not in an accepted state (see the badge and the note above the table); the numbers are shown as extracted, not endorsed.</td></tr></tbody></table>
+</details>
 
 ## Departures & gaps
 
 **Interpretation flags:**
-- apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=5-hydroxypropafenone
+- column 'mb/m' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
+- column 'if/f' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
+- column 'eg/f' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
+- column 'rh/m' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
+- column 'mm/f' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
+- column 'it/m' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
+- dropped unlinked row (NIL): 'Age (yr)' — extend the ontology if this is a real PK parameter (source ['Haefeli_1991_table_p2_1:row0:col1', 'Haefeli_1991_table_p2_1:row0:col2', 'Haefeli_1991_table_p2_1:row0:col3', 'Haefeli_1991_table_p2_1:row0:col4', 'Haefeli_1991_table_p2_1:row0:col5', 'Haefeli_1991_table_p2_1:row0:col6', 'Haefeli_1991_table_p2_1:row0:col7'])
+- dropped unlinked row (NIL): 'Weight (kg)' — extend the ontology if this is a real PK parameter (source ['Haefeli_1991_table_p2_1:row1:col1', 'Haefeli_1991_table_p2_1:row1:col2', 'Haefeli_1991_table_p2_1:row1:col3', 'Haefeli_1991_table_p2_1:row1:col4', 'Haefeli_1991_table_p2_1:row1:col5', 'Haefeli_1991_table_p2_1:row1:col6', 'Haefeli_1991_table_p2_1:row1:col7'])
+- dropped unlinked row (NIL): 'PQ Interval PQ0 (ms)' — extend the ontology if this is a real PK parameter (source ['Haefeli_1991_table_p2_1:row7:col1', 'Haefeli_1991_table_p2_1:row7:col2', 'Haefeli_1991_table_p2_1:row7:col3', 'Haefeli_1991_table_p2_1:row7:col4', 'Haefeli_1991_table_p2_1:row7:col5', 'Haefeli_1991_table_p2_1:row7:col6', 'Haefeli_1991_table_p2_1:row7:col7'])
+- dropped unlinked row (NIL): 'PQ Interval PQmax (ms)' — extend the ontology if this is a real PK parameter (source ['Haefeli_1991_table_p2_1:row8:col1', 'Haefeli_1991_table_p2_1:row8:col2', 'Haefeli_1991_table_p2_1:row8:col3', 'Haefeli_1991_table_p2_1:row8:col4', 'Haefeli_1991_table_p2_1:row8:col5', 'Haefeli_1991_table_p2_1:row8:col6', 'Haefeli_1991_table_p2_1:row8:col7'])
+- dropped unlinked row (NIL): 'QRS Duration QRS0 (ms)' — extend the ontology if this is a real PK parameter (source ['Haefeli_1991_table_p2_1:row9:col1', 'Haefeli_1991_table_p2_1:row9:col2', 'Haefeli_1991_table_p2_1:row9:col3', 'Haefeli_1991_table_p2_1:row9:col4', 'Haefeli_1991_table_p2_1:row9:col5', 'Haefeli_1991_table_p2_1:row9:col6', 'Haefeli_1991_table_p2_1:row9:col7'])
+- dropped unlinked row (NIL): 'QRS Duration QRSmax (ms)' — extend the ontology if this is a real PK parameter (source ['Haefeli_1991_table_p2_1:row10:col1', 'Haefeli_1991_table_p2_1:row10:col2', 'Haefeli_1991_table_p2_1:row10:col3', 'Haefeli_1991_table_p2_1:row10:col4', 'Haefeli_1991_table_p2_1:row10:col5', 'Haefeli_1991_table_p2_1:row10:col6', 'Haefeli_1991_table_p2_1:row10:col7'])
+- apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=S-hydroxypropafenone
 - template fit: none — noncompartmental model — not a compartmental parent–metabolite model
-- row roles (LLM): model_class=noncompartmental; 1/1 row label(s) assigned, 0 linked by role
-- abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
-- review gap-fill skipped: this record carries no value of its own, and a model assembled entirely from other papers is not this paper's model
+- structure disagreement: deterministic 1C vs LLM 2C — review compartment count
+- row roles (LLM): model_class=noncompartmental; 11/11 row label(s) assigned, 7 linked by role
+- molar mass: no plausible PubChem entry for 'S-hydroxypropafenone' ('S-hydroxypropafenone') — left in mass units
+- molar mass: none found for 'S-hydroxypropafenone' — its concentrations stay mass-only
 
 **Extraction notes:**
-- no GROBID TEI available — transcribed from abstract in Haefeli_1991_metadata.yaml (1 record(s)); values are summary statistics, not a fitted model
+- no TEI final-model table id; trying text-pointer table recovery
+- transposed table Haefeli_1991_table_p2_1: parameters were across the columns, populations/subgroups down the first column — transposed for parsing
 
 ## Validation
 
@@ -62,17 +88,24 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.286 (2/7 fields) | 5 |
+| `gpt-oss:120b` | not confirmed | 0.143 (2/14 fields) | 12 |
 
-<details><summary>5 field(s) a reader read differently</summary>
+<details><summary>12 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `parameters[single oral dose]` | not captured | 300 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[terminal half-life]` | not captured | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[terminal half-life]` | not captured | not captured | only_one_extracted |
-| `gpt-oss:120b` | `screen.dose_compound` | 5-hydroxypropafenone | unknown | mismatch |
-| `gpt-oss:120b` | `screen.primary_analyte` | 5-hydroxypropafenone | unknown | mismatch |
+| `gpt-oss:120b` | `parameters[auc0-12h]` | not captured | 28.6 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[auc0-12h]` | 28.6 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[cmax.]` | not captured | 337 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[cmax.]` | 337 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[lag time]` | not captured | 5.0 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[lag time]` | 5.0 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[t1/2α]` | not captured | 29.1 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[t1/2α]` | 29.1 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[t1/2β]` | not captured | 615 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[t1/2β]` | 615 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `screen.dose_compound` | S-hydroxypropafenone | 5-hydroxypropafenone | mismatch |
+| `gpt-oss:120b` | `screen.primary_analyte` | S-hydroxypropafenone | 5-hydroxypropafenone | mismatch |
 
 </details>
 
@@ -86,9 +119,13 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | fail | not captured | 0 | not captured | not captured | not captured |
+| C0_has_structural_params | pass | not captured | 5 | not captured | not captured | not captured |
 | C0b_disposition_core | fail | not captured | not captured | not captured | not captured | not captured |
-| C5_dimension_Q57 | pass | [time] | not captured | not captured | not captured | ['Haefeli_1991:abstract'] |
+| C5_dimension_Q19 | pass | [mass] * [time] / [length] ** 3 | not captured | not captured | not captured | ['Haefeli_1991_table_p2_1:row6:col1', 'Haefeli_1991_table_p2_1:row6:col2', 'Haefeli_1991_table_p2_1:row6:col3', 'Haefeli_1991_table_p2_1:row6:col4', 'Haefeli_1991_table_p2_1:row6:col5', 'Haefeli_1991_table_p2_1:row6:col6', 'Haefeli_1991_table_p2_1:row6:col7'] |
+| C5_dimension_Q32 | pass | [mass] / [length] ** 3 | not captured | not captured | not captured | ['Haefeli_1991_table_p2_1:row3:col1', 'Haefeli_1991_table_p2_1:row3:col2', 'Haefeli_1991_table_p2_1:row3:col3', 'Haefeli_1991_table_p2_1:row3:col4', 'Haefeli_1991_table_p2_1:row3:col5', 'Haefeli_1991_table_p2_1:row3:col6', 'Haefeli_1991_table_p2_1:row3:col7'] |
+| C5_dimension_Q59 | pass | [time] | not captured | not captured | not captured | ['Haefeli_1991_table_p2_1:row4:col1', 'Haefeli_1991_table_p2_1:row4:col2', 'Haefeli_1991_table_p2_1:row4:col3', 'Haefeli_1991_table_p2_1:row4:col4', 'Haefeli_1991_table_p2_1:row4:col5', 'Haefeli_1991_table_p2_1:row4:col6', 'Haefeli_1991_table_p2_1:row4:col7'] |
+| C5_dimension_Q60 | pass | [time] | not captured | not captured | not captured | ['Haefeli_1991_table_p2_1:row5:col1', 'Haefeli_1991_table_p2_1:row5:col2', 'Haefeli_1991_table_p2_1:row5:col3', 'Haefeli_1991_table_p2_1:row5:col4', 'Haefeli_1991_table_p2_1:row5:col5', 'Haefeli_1991_table_p2_1:row5:col6', 'Haefeli_1991_table_p2_1:row5:col7'] |
+| C5_dimension_Q83 | pass | [time] | not captured | not captured | not captured | ['Haefeli_1991_table_p2_1:row2:col1', 'Haefeli_1991_table_p2_1:row2:col2', 'Haefeli_1991_table_p2_1:row2:col3', 'Haefeli_1991_table_p2_1:row2:col4', 'Haefeli_1991_table_p2_1:row2:col5', 'Haefeli_1991_table_p2_1:row2:col6', 'Haefeli_1991_table_p2_1:row2:col7'] |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
 
 <details class="legend">
@@ -114,4 +151,4 @@ _No web simulator for this record: its structure has no shared WebAssembly templ
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-06 04:14 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-08 20:59 UTC</sub>

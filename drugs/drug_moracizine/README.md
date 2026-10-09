@@ -17,7 +17,7 @@ Moracizine is a class I antiarrhythmic that was used to treat heart rhythm disor
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-06 04:03 | 0:25 | 0/0/0 | 0/0/0 | 0/0/0 | 7,200/239 | ollama / qwen3.8:27b-mtp-q8_0 | 0 | 0/0 | 0/0 | 0 |
+| 2026-10-08 20:17 | 0:46 | 0/0/0 | 0/0/0 | 0/0/0 | 4,665/435 | ollama / qwen3.8:27b-mtp-q8_0 | 1 | 1/0 | 0/1 | 0 |
 
 ## popPK records
 
@@ -46,21 +46,20 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 ## Coverage
 
 - **PubMed hits:** 10 matched, 10 returned
-- **screened:** 1  ·  **relevant:** 1
+- **screened:** 2  ·  **relevant:** 1
 - **records:** 0  ·  extracted 0  ·  needs_review 0  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** True
 
 ## Full text wanted
 
-_3 paper(s) judged relevant from the abstract, with no full text on disk — paywalled, or the resolver could not reach them. Follow the DOI, then save the PDF into `papers/` as `&lt;save as&gt;.pdf` and re-run the extraction._
+_2 paper(s) judged relevant from the abstract, with no full text on disk — paywalled, or the resolver could not reach them. Follow the DOI, then save the PDF into `papers/` as `&lt;save as&gt;.pdf` and re-run the extraction._
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
 | `Guo_1993.pdf` | Guo WY et al., [Pharmacokinetics of moracizine and mor…, Zhongguo yao li xue bao = A… (1993) | popPK | 9 | not captured | [8010035](https://pubmed.ncbi.nlm.nih.gov/8010035) | The study reports quantitative PK parameters (Cmax, T1/2, model) for moracizine in humans, but specific clearance (CL) and volume (V) values are not explicitly listed in the text. |
-| `Mannhold_1990.pdf` | Mannhold R et al., Molecular pharmacological aspects of an…, Archiv der Pharmazie (1990) | pd | 4 | [10.1002/ardp.19903230809](https://doi.org/10.1002/ardp.19903230809) | [2278515](https://www.ncbi.nlm.nih.gov/pubmed/2278515) | metadata signals extractable PD data (IC50) |
 | `Ratner_1992.pdf` | Ratner EI et al., Effect of moracizine and ethacizine on…, Arzneimittel-Forschung (1992) | pd | 4 | not captured | [1326968](https://www.ncbi.nlm.nih.gov/pubmed/1326968) | metadata signals extractable PD data (IC50) |
 
-<sub>queue written 2026-10-06T04:03:29.621623+00:00</sub>
+<sub>queue written 2026-10-08T20:17:41.267315+00:00</sub>
 
 ## Screened and excluded
 
@@ -71,7 +70,7 @@ _3 paper(s) judged relevant from the abstract, with no full text on disk — pay
 | popPK | Beloborodov_1986 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of ethacizine, not moracizine. |
 | popPK | Chan_1989 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of ethmozine, not moracizine. |
 | popPK | Mannhold_1990 | irrelevant | 0 | 0 | no_text gate: only 114 chars of text extracted (&lt; 400) |
-| PD | Mannhold_1990 | not_relevant | 0 | 0 | The paper focuses on molecular pharmacology and calmodulin interaction, not clinical exposure-response or dose-response relationships for moracizine. |
+| PD | Mannhold_1990 | not_relevant | 0 | 0 | The paper investigates the interaction of Class I antiarrhythmics with calmodulin in vitro and does not mention moracizine or report any pharmacodynamic exposure-response relationship for it. |
 | popPK | Morganroth_1987 | irrelevant | 0 | 0 | The paper is a clinical efficacy and tolerance study reporting dose-response and side effects, with no pharmacokinetic parameters (CL, V, t1/2) reported. |
 | popPK | Ratner_1992 | irrelevant | 0 | 0 | no_text gate: only 116 chars of text extracted (&lt; 400) |
 | PD | Ratner_1992 | not_relevant | 0 | 0 | The paper investigates the effect of moracizine on calcium channel receptors and binding proteins in vitro, not a pharmacodynamic exposure-response or dose-response relationship in a biological system with numeric PD parameters. |

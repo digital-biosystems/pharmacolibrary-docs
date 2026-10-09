@@ -1,0 +1,37 @@
+{
+ "dose_source": "paper",
+ "model_id": "Vernakalant_Mao2012_estimate",
+ "molar_masses": {
+  "central.C": 0.349471
+ },
+ "note": "Values for the shared PK_2C.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "paper_doses_kind": "discrete",
+ "paper_doses_mg": [
+  140.0,
+  210.0
+ ],
+ "parameters": {
+  "Cl": 3.88888888888889e-06,
+  "F": 1.0,
+  "MM": 0.349471,
+  "VdPerKg": 0.00051,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 0.00014,
+  "k12": 0.001432461873638344,
+  "k21": 0.000702457264957265,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 660.0000000662048
+ },
+ "reference_peaks": {
+  "central.C": 0.0009436141074433448
+ },
+ "stop_time": 86400.0,
+ "template": "PK_2C",
+ "template_fmu": "PK_2C.fmu"
+}

@@ -4,7 +4,7 @@
 
 # lidocaine — `Lidocaine_Bursi2017_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.308). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.346). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -20,7 +20,7 @@
 
 A model needs both clearance and volume; without the clearance it could only be built on a library default, so it was not. Without a unit the value cannot be converted, so the model cannot use it. A reported unit could not be converted (V1, theta_k31_category and theta_v1_category), so that value has no SI equivalent. Extracted — lidocaine: kcomp 1.93 h−1, k31 -0.526 h−1, V1 0.312 IIV.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the links between molecules: this record has lidocaine → 2,6-xylidine (metabolism); lidocaine → glycinexylidide (metabolism); glycinexylidide → monoethylglycinexylidide (metabolism), the second reading lidocaine → 2,6-xylidine (metabolism); lidocaine → glycinexylidide (metabolism); lidocaine → monoethylglycinexylidide (metabolism); it also differs on 17 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the links between molecules: this record has lidocaine → 2,6-xylidine (metabolism); lidocaine → glycinexylidide (metabolism); glycinexylidide → monoethylglycinexylidide (metabolism), the second reading lidocaine → 2,6-xylidine (metabolism); lidocaine → glycinexylidide (metabolism); lidocaine → monoethylglycinexylidide (metabolism); it also differs on 16 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -117,23 +117,22 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.308 (8/26 fields) | 18 |
+| `gpt-oss:120b` | not confirmed | 0.346 (9/26 fields) | 17 |
 
-<details><summary>18 field(s) a reader read differently</summary>
+<details><summary>17 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
 | `gpt-oss:120b` | `model.links` | [['lidocaine', '2,6-xylidine', 'metabolism'], ['lidocaine', 'glycinexylidide', 'metabolism'], ['glycinexylidide', 'monoethylglycinexylidide', 'metabolism']] | [['lidocaine', '2,6-xylidine', 'metabolism'], ['lidocaine', 'glycinexylidide', 'metabolism'], ['lidocaine', 'monoethylglycinexylidide', 'metabolism']] | mismatch |
-| `gpt-oss:120b` | `parameters[effect of alt &gt;11 on k 30]` | not captured | -0.492 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[effect of alt &gt;11 on k 40]` | not captured | 0.229 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[effect of bil &gt;0.53 on k 30].covariate_forms` | ['linear_fractional'] | [] | mismatch |
 | `gpt-oss:120b` | `parameters[effect of bil &gt;0.53 on k 30].parameter_id` | Q304 | Q48 | mismatch |
 | `gpt-oss:120b` | `parameters[effect of bil &gt;0.53 on k 30].rse_percent` | 0.148 | not captured | mismatch |
+| `gpt-oss:120b` | `parameters[effect of clcr ≤52.7 on k 30]` | not captured | -0.32 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[k 23].rse_percent` | 0.175 | not captured | mismatch |
 | `gpt-oss:120b` | `parameters[k 30]` | 0.39 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[k 40]` | 0.2 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[theta_k31_bmi]` | 0.938 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[theta_kel_bmi]` | not captured | 0.938 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[theta_kcomp_bmi]` | not captured | 0.938 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[theta_kel_category]` | not captured | 0.667 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[theta_kel_category]` | not captured | 1.44 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[theta_kel_cyp1a2]` | not captured | 0.852 | only_one_extracted |
