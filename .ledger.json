@@ -1,5 +1,5 @@
 {
- "kb_mtime": 1791516197.3506615,
+ "kb_mtime": 1791523148.492942,
  "rows": [
   {
    "abstract_only": 83,
@@ -189479,7 +189479,7 @@
    "tokens_out": 626
   },
   {
-   "abstract_only": 34,
+   "abstract_only": 33,
    "backend": "ollama",
    "calls": 19,
    "combination": "resolved",
@@ -189488,7 +189488,7 @@
    "drugbank_groups": [],
    "elapsed_s": 703.7,
    "eu_status": "not_centrally_authorised",
-   "grobid": 0,
+   "grobid": 1,
    "has_truth": false,
    "interactions": 0,
    "jats": 2,
@@ -189524,7 +189524,7 @@
    "tokens_out": 5892
   },
   {
-   "abstract_only": 105,
+   "abstract_only": 95,
    "backend": "ollama",
    "calls": 53,
    "combination": "resolved",
@@ -189533,10 +189533,10 @@
    "drugbank_groups": [],
    "elapsed_s": 1862.4,
    "eu_status": "not_centrally_authorised",
-   "grobid": 1,
+   "grobid": 5,
    "has_truth": false,
    "interactions": 0,
-   "jats": 0,
+   "jats": 6,
    "model": "qwen3.8:27b-mtp-q8_0",
    "no_pdf": 86,
    "non_oa": 4,
@@ -189569,7 +189569,7 @@
    "tokens_out": 5781
   },
   {
-   "abstract_only": 103,
+   "abstract_only": 96,
    "backend": "ollama",
    "calls": 43,
    "combination": "resolved",
@@ -189578,10 +189578,10 @@
    "drugbank_groups": [],
    "elapsed_s": 1727.3,
    "eu_status": "not_centrally_authorised",
-   "grobid": 1,
+   "grobid": 5,
    "has_truth": false,
    "interactions": 0,
-   "jats": 0,
+   "jats": 3,
    "model": "qwen3.8:27b-mtp-q8_0",
    "no_pdf": 83,
    "non_oa": 5,
@@ -189853,15 +189853,15 @@
    "tokens_out": 33562
   },
   {
-   "abstract_only": 560,
+   "abstract_only": 542,
    "calls": 1009,
    "drug": "TOTAL",
    "drugs": 15,
    "elapsed_s": 7921.9,
-   "grobid": 88,
+   "grobid": 97,
    "interactions": 0,
    "is_total": true,
-   "jats": 30,
+   "jats": 39,
    "no_pdf": 497,
    "non_oa": 45,
    "oa": 139,
