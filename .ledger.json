@@ -1,5 +1,5 @@
 {
- "kb_mtime": 1791509004.2836282,
+ "kb_mtime": 1791516197.3506615,
  "rows": [
   {
    "abstract_only": 83,
@@ -190077,7 +190077,7 @@
    "tokens_out": 490
   },
   {
-   "abstract_only": 30,
+   "abstract_only": 28,
    "backend": "ollama",
    "calls": 2,
    "combination": "resolved",
@@ -190086,7 +190086,7 @@
    "drugbank_groups": [],
    "elapsed_s": 365.6,
    "eu_status": "not_centrally_authorised",
-   "grobid": 1,
+   "grobid": 3,
    "has_truth": false,
    "interactions": 0,
    "jats": 2,
@@ -190591,12 +190591,12 @@
    "tokens_out": null
   },
   {
-   "abstract_only": 274,
+   "abstract_only": 272,
    "calls": 273,
    "drug": "TOTAL",
    "drugs": 15,
    "elapsed_s": 1132.3,
-   "grobid": 25,
+   "grobid": 27,
    "interactions": 0,
    "is_total": true,
    "jats": 33,
