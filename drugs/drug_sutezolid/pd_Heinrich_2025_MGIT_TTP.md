@@ -17,6 +17,10 @@
 
 **Model:** No model was generated from this record.
 
+> Sutezolid concentration (mg/L) drives a proportional increase in time to positivity, with a reported slope steepness of 16•7% and a node of 9•18 days.
+>
+> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+
 - **paper:** `Heinrich_2025`
 - **model family:** `linear`
 - **driver:** `conc_no_pk`

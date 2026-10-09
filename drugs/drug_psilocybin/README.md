@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;Psilocybin&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Psilocybin_Morse2025_reference&quot;,&quot;label&quot;:&quot;Morse_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_psilocybin/Psilocybin_Morse2025_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Psilocybin_Morse2025_reference&quot;,&quot;label&quot;:&quot;Morse_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_psilocybin/Psilocybin_Morse2025_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 # Psilocybin
 
@@ -27,7 +27,7 @@
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> | [Morse_2025_reference](drugs/drug_psilocybin/Psilocybin_Morse2025_reference.md) | ▶ model + simulator | 1-compartment, IV | 2 | Morse JD et al., Pharmacokinetics and pharmacodynamics o…, Journal of psychopharmacolo… (2025) | [10.1177/02698811251330747](https://doi.org/10.1177/02698811251330747) |
+| <span class="pk-badge pk-badge--green">reviewed — candidate</span> | [Morse_2025_reference](drugs/drug_psilocybin/Psilocybin_Morse2025_reference.md) | ▶ model + simulator | 1-compartment, IV | 2 | Morse JD et al., Pharmacokinetics and pharmacodynamics o…, Journal of psychopharmacolo… (2025) | [10.1177/02698811251330747](https://doi.org/10.1177/02698811251330747) |
 | <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Holze_2023_reference](drugs/drug_psilocybin/Psilocybin_Holze2023_reference.md) | — | 1-compartment (no model) | 0 | Holze F et al., Pharmacokinetics and Pharmacodynamics o…, Clinical pharmacology and t… (2023) | [10.1002/cpt.2821](https://doi.org/10.1002/cpt.2821) |
 
 ## Pharmacodynamics (PD)

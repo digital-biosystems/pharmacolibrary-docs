@@ -17,6 +17,10 @@
 
 **Model:** No model was generated from this record.
 
+> The model uses endoxifen concentration (ng/ml) as a direct driver to inhibit the probability of relapse, with the paper describing a decreasing linear relationship where higher concentrations correspond to a roughly 5% lower chance of relapse rather than specifying a distinct mechanistic model. The estimated odds ratio for this concentration-effect relationship was 0.971, which the paper notes is not statistically significant.
+>
+> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+
 - **paper:** `Sanchez-Spitman_2020`
 - **model family:** `categorical`
 - **driver:** `conc_no_pk`

@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;Taniborbactam&quot;,&quot;href&quot;:&quot;drugs/drug_taniborbactam/&quot;},{&quot;label&quot;:&quot;Fouad_2025 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Taniborbactam_Asempa2023_reference&quot;,&quot;label&quot;:&quot;Asempa_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_taniborbactam/Taniborbactam_Asempa2023_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Taniborbactam_Principe2022_reference&quot;,&quot;label&quot;:&quot;Principe_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_taniborbactam/Taniborbactam_Principe2022_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Taniborbactam_Asempa2023_reference&quot;,&quot;label&quot;:&quot;Asempa_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_taniborbactam/Taniborbactam_Asempa2023_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Taniborbactam_Principe2022_reference&quot;,&quot;label&quot;:&quot;Principe_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_taniborbactam/Taniborbactam_Principe2022_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -17,7 +17,13 @@
 
 **Model:** No model was generated from this record.
 
-> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+### Reviewer guidance
+
+**The effluent flow rate parameter is missing a defined link to a model compartment, leaving the system topology incomplete.**
+
+The record defines an effluent flow rate of 0.79 L/h for taniborbactam in renal replacement patients, but the parameter lacks a specified relationship to any compartment. This missing link results in an unreachable compartment within the general linear structure, preventing a valid pharmacokinetic simulation. Extracted — taniborbactam: Q 0.79, CL 6.3 L/h, V 20 L.
+
+<sub>reviewed by qwen3.8-27b</sub>
 
 > **Dose compound ≠ measured compound:** dosed `cefepime-taniborbactam`, measured `taniborbactam`.
 

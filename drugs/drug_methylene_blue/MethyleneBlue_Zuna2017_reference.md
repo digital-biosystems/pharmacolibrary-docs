@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;methylene blue&quot;,&quot;href&quot;:&quot;drugs/drug_methylene_blue/&quot;},{&quot;label&quot;:&quot;Zuna_2017 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;MethyleneBlue_Bonak2026_reference&quot;,&quot;label&quot;:&quot;Bo\u015fnak_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_methylene_blue/MethyleneBlue_Bonak2026_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;MethyleneBlue_Bonak2026_reference&quot;,&quot;label&quot;:&quot;Bo\u015fnak_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_methylene_blue/MethyleneBlue_Bonak2026_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -17,7 +17,13 @@
 
 **Model:** No model was generated from this record.
 
-> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+### Reviewer guidance
+
+**The extracted clearance of 12.8 ml/min and volume of 90.0 ml for methylene blue are physiologically implausible.**
+
+The record lists a total clearance of 12.8 ml/min and a volume of distribution of 90.0 ml for methylene blue. These magnitudes fall outside the acceptable physiological window, suggesting a unit or scale extraction error in the derived parameters. Extracted — methylene blue: CL 12.8 ml min–1, V 90 ml.
+
+<sub>reviewed by qwen3.8-27b</sub>
 
 ## Citation
 Zuna I et al., ADAM, a hands-on patient simulator for…, British journal of clinical… (2017)

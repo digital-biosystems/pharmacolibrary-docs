@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;Arketamine&quot;,&quot;href&quot;:&quot;drugs/drug_arketamine/&quot;},{&quot;label&quot;:&quot;Stojanova_2026 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Arketamine_Fux2022_reference&quot;,&quot;label&quot;:&quot;Fux_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_arketamine/Arketamine_Fux2022_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Arketamine_Fux2022_reference&quot;,&quot;label&quot;:&quot;Fux_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_arketamine/Arketamine_Fux2022_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -15,7 +15,13 @@
 
 **Model:** No model was generated from this record.
 
-> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+### Reviewer guidance
+
+**The intercompartmental clearance Q for tacrolimus has a dimension mismatch because it is reported in mass-normalized units (L/h/70 kg) instead of pure clearance units.**
+
+The parameter Q, representing drug distribution between kinetic compartments, is given a value of 23.7 with the unit L/h/70 kg. This unit includes a body weight normalization that is dimensionally incompatible with a simple intercompartmental clearance term in a two-compartment model. Consequently, the model record was rejected due to this structural unit inconsistency. Extracted — arketamine: CL 8.39 L/h/70 kg, V1 104 L/70 kg, ktr 3.3, kcomp 0.129 L/h/70 kg, V2 417 L/70 kg, kabs 2.18, Q 23.7 L/h/70 kg, tlag 0.24 h.
+
+<sub>reviewed by qwen3.8-27b</sub>
 
 > **Dose compound ≠ measured compound:** dosed `ketamine`, measured `tacrolimus`.
 

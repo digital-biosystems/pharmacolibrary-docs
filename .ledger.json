@@ -1,5 +1,5 @@
 {
- "kb_mtime": 1791549639.0,
+ "kb_mtime": 1791556645.0,
  "rows": [
   {
    "abstract_only": 83,
@@ -503796,7 +503796,7 @@
    "want_poppk_mid": 0
   }
  ],
- "run_mtime": 1791549480.4861476,
+ "run_mtime": 1791547976.1697118,
  "runs": {
   "dbs": {
    "attempts": 11,
@@ -503867,6 +503867,17 @@
      "rejected": 31
     }
    }
+  },
+  "ddd-v3-qwen3.8": {
+   "attempts": 2,
+   "drugs": null,
+   "elapsed_h": null,
+   "finished_at": null,
+   "label": "ddd-v3-qwen3.8",
+   "pid": null,
+   "source": "log",
+   "started_at": "2026-09-22 17:00:28",
+   "status": "interrupted"
   },
   "dg-A01A-1": {
    "attempts": 3,
@@ -518290,6 +518301,17 @@
      "rejected": 0
     }
    }
+  },
+  "ttd-arsenic": {
+   "attempts": 1,
+   "drugs": 5,
+   "elapsed_h": 5.8,
+   "finished_at": "2026-09-08 18:08:25",
+   "label": "ttd-arsenic",
+   "pid": null,
+   "source": "log",
+   "started_at": null,
+   "status": "finished"
   }
  },
  "schema": 2,

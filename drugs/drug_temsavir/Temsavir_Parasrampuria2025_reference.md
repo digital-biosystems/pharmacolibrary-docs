@@ -14,7 +14,13 @@
 
 **Model:** No model was generated from this record.
 
-> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+### Reviewer guidance
+
+**Temsavir absorption rate constant rejected because its unit 'units' could not be converted to standard time.**
+
+The absorption rate constant is labeled with the unit 'units' instead of a time inverse like 1/h. This non-standard unit prevented conversion to SI units. As a result, the parameter value could not be validated for dimensional consistency, causing the record to be rejected. Extracted — temsavir: CLm/F 51 L/h, V1/F 257 L, Q/F 2.58 L/h, V2/F 37.4 L, kabs 2.33 units.
+
+<sub>reviewed by qwen3.8-27b</sub>
 
 > **Dose compound ≠ measured compound:** dosed `fostemsavir`, measured `temsavir`.
 

@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;Contezolid&quot;,&quot;href&quot;:&quot;drugs/drug_contezolid/&quot;},{&quot;label&quot;:&quot;Wu_2020 \u00b7 PD \u0394QTcF interval&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Contezolid_Fu2024_reference&quot;,&quot;label&quot;:&quot;Fu_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_contezolid/Contezolid_Fu2024_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Contezolid_Fu2024_reference&quot;,&quot;label&quot;:&quot;Fu_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_contezolid/Contezolid_Fu2024_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # ΔQTcF interval — PD  <span class="pk-badge pk-badge--orange">needs review</span>
@@ -17,6 +17,10 @@
 **As extracted:** Contezolid (concentrations from the PK model of Bulitta_2024) drives ΔQTcF interval (in ms): direct linear effect.
 
 **Model:** A model was generated (see the **Models** tab); it has no in-browser simulator.
+
+> The paper does not provide full text to specify the mechanism by which contezolid concentrations drive the ΔQTcF interval, though the record indicates a linear stimulatory effect. The model characterizes this relationship with a slope of 0.227 ms per mg/liter.
+>
+> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
 
 - **paper:** `Wu_2020`
 - **model family:** `linear`

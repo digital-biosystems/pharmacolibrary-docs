@@ -17,6 +17,10 @@
 
 **Model:** No model was generated from this record.
 
+> The paper does not describe the pharmacodynamic model or mechanism for endoxifen, and no full text is available to extract specific potency or rate parameters.
+>
+> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+
 - **paper:** `Groenland_2019_2`
 - **model family:** `unknown`
 - **driver:** `not_resolved`

@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;Arketamine&quot;,&quot;href&quot;:&quot;drugs/drug_arketamine/&quot;},{&quot;label&quot;:&quot;Kim_2007 \u00b7 PD K(V) currents&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Arketamine_Fux2022_reference&quot;,&quot;label&quot;:&quot;Fux_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_arketamine/Arketamine_Fux2022_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Arketamine_Fux2022_reference&quot;,&quot;label&quot;:&quot;Fux_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_arketamine/Arketamine_Fux2022_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # K(V) currents — PD  <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span>
@@ -19,6 +19,10 @@
 **As extracted:** Ketamine (concentrations from the PK model of Kaka_1979) drives K(V) currents: direct sigmoid Emax (Hill) effect.
 
 **Model:** No model was generated from this record.
+
+> No mechanism or specific model parameters are provided in the available excerpts, so it is impossible to describe how arketamine or ketamine concentrations affect K(V) currents. The record lists a K(d) of 566.7 microM and a Hill coefficient of 0.75, but without the paper text, the role of these values in the pharmacodynamic mechanism cannot be confirmed.
+>
+> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
 
 - **paper:** `Kim_2007`
 - **model family:** `sigmoid_emax`

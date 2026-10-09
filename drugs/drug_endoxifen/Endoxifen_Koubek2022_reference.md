@@ -14,7 +14,13 @@
 
 **Model:** No model was generated from this record.
 
-> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+### Reviewer guidance
+
+**Z-endoxifen's peripheral volume (39.7 L) is in an unreachable compartment, so the two-compartment structure was rejected.**
+
+The record describes a two-compartment model for Z-endoxifen, but the peripheral compartment lacks a connection to the dose, making it unreachable. This structural issue prevents the peripheral volume from being meaningfully estimated. Additionally, the model was built from the paper's abstract, so its summary statistics stand in for a fitted model. Extracted — endoxifen: CL 4.89 L/h, V1/F 323 L, V2/F 39.7 L.
+
+<sub>reviewed by qwen3.8-27b</sub>
 
 > **Dose compound ≠ measured compound:** dosed `Z-endoxifen-HCl`, measured `Z-endoxifen`.
 

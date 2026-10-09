@@ -16,7 +16,13 @@
 
 **Model:** No model was generated from this record.
 
-> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+### Reviewer guidance
+
+**Only clearance was extracted — no volume; λ1 has no unit.**
+
+A model needs both clearance and volume; without the volume it could only be built on a library default, so it was not. Without a unit the value cannot be converted, so the model cannot use it. A reported unit could not be converted (equation variable), so that value has no SI equivalent. Extracted — islatravir: kabs 12 1/h, λ1 1.2, kel 0.103 1/h.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Kinsale TS et al., Pharmacokinetic Modeling to Guide Precl…, Pharmaceutics (2024)

@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;Taniborbactam&quot;,&quot;href&quot;:&quot;drugs/drug_taniborbactam/&quot;},{&quot;label&quot;:&quot;Abdelraouf_2023 \u00b7 PD changes in log10 cfu/lungs at 24 h relative to 0 h groups for the composites of examined Enterobacterales&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Taniborbactam_Asempa2023_reference&quot;,&quot;label&quot;:&quot;Asempa_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_taniborbactam/Taniborbactam_Asempa2023_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Taniborbactam_Principe2022_reference&quot;,&quot;label&quot;:&quot;Principe_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_taniborbactam/Taniborbactam_Principe2022_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Taniborbactam_Asempa2023_reference&quot;,&quot;label&quot;:&quot;Asempa_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_taniborbactam/Taniborbactam_Asempa2023_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Taniborbactam_Principe2022_reference&quot;,&quot;label&quot;:&quot;Principe_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_taniborbactam/Taniborbactam_Principe2022_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # changes in log10 cfu/lungs at 24 h relative to 0 h groups for the composites of examined Enterobacterales — PD  <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span>
@@ -19,6 +19,10 @@
 **As extracted:** Taniborbactam (concentrations from the PK model of Asempa_2023) drives changes in log10 cfu/lungs at 24 h relative to 0 h groups for the composites of examined Enterobacterales (in log10 cfu/lungs): direct sigmoid Emax (Hill) effect.
 
 **Model:** No model was generated from this record.
+
+> A sigmoidal inhibitory Emax model relates the free AUC0-24/MIC of taniborbactam to the change in log10 CFU/lungs at 24 hours, describing the inhibition of bacterial growth. The composite Enterobacterales data yield a maximum effect (Imax) of 5.59 log10 CFU/lungs, while specific fAUC0-24/MIC values for stasis, 1 log, and 2 log kill are not explicitly provided for this group.
+>
+> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
 
 - **paper:** `Abdelraouf_2023`
 - **model family:** `sigmoid_emax`

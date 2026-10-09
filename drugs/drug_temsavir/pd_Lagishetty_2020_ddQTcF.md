@@ -17,6 +17,10 @@
 
 **Model:** No model was generated from this record.
 
+> A linear model describes the additive effect of plasma temsavir concentration on the placebo-corrected change in Fridericia-corrected QT interval (ddQTcF). The model parameters are an intercept of -0.783 msec and a slope of 0.00126 msec per ng/mL temsavir, with the paper describing the mechanism solely as a linear function of plasma concentration without specifying a biological pathway such as inhibition or direct receptor action.
+>
+> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+
 - **paper:** `Lagishetty_2020`
 - **model family:** `linear`
 - **driver:** `cited_pk`

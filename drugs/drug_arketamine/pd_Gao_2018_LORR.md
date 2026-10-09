@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;Arketamine&quot;,&quot;href&quot;:&quot;drugs/drug_arketamine/&quot;},{&quot;label&quot;:&quot;Gao_2018 \u00b7 PD loss-of-righting reflex (LORR)&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Arketamine_Fux2022_reference&quot;,&quot;label&quot;:&quot;Fux_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_arketamine/Arketamine_Fux2022_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Arketamine_Fux2022_reference&quot;,&quot;label&quot;:&quot;Fux_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_arketamine/Arketamine_Fux2022_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # loss-of-righting reflex (LORR) — PD  <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span>
@@ -19,6 +19,10 @@
 **As extracted:** Ketamine (the dose) drives loss-of-righting reflex (LORR): direct sigmoid Emax (Hill) effect.
 
 **Model:** No model was generated from this record.
+
+> Ketamine produces loss-of-righting reflex (LORR) in a dose-dependent manner with an EC50 of 9.82 mg/kg in P35 mice. The paper attributes the developmental increase in sensitivity to changes in HCN channel expression and the resulting inhibition of HCN currents, rather than a simple pharmacodynamic effect compartment or production/elimination mechanism.
+>
+> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
 
 - **paper:** `Gao_2018`
 - **model family:** `sigmoid_emax`

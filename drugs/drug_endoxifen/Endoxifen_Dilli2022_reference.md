@@ -14,7 +14,13 @@
 
 **Model:** No model was generated from this record.
 
-> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+### Reviewer guidance
+
+**The paper reports none of the model's key parameters.**
+
+No clearance, volume or rate constant of the model is reported in it. No parameter values were extracted.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Dilli Batcha JS et al., Factors Influencing Pharmacokinetics of…, Biology (2022)

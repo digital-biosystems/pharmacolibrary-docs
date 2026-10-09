@@ -17,6 +17,10 @@
 
 **Model:** No model was generated from this record.
 
+> A logistic regression analysis evaluated the effect of endoxifen concentrations (ng/ml) on the probability of tamoxifen discontinuation, revealing a minimal increase in discontinuation probability for the highest endoxifen concentrations compared to the lowest. The association was not statistically significant with an odds ratio of 1.006 (95% CI 0.961–1.053, p=0.798), and the paper does not specify a mechanistic model such as Emax or effect compartments.
+>
+> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+
 - **paper:** `Sanchez-Spitman_2020`
 - **model family:** `categorical`
 - **driver:** `conc_no_pk`

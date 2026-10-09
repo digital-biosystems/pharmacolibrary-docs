@@ -17,6 +17,10 @@
 
 **Model:** No model was generated from this record.
 
+> Plasma temsavir concentrations (Ctau) drive a reduction in plasma HIV-1 RNA via an Emax model, where the response is defined as the change in viral load from Day 1 to Day 8. The model estimates E0 as -1.99 log10 c/mL, EC50 as 78.8 ng/mL, and Emax as -2.67 log10 c/mL, indicating that temsavir inhibits the viral response.
+>
+> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+
 - **paper:** `Parasrampuria_2025`
 - **model family:** `categorical`
 - **driver:** `pk_record`

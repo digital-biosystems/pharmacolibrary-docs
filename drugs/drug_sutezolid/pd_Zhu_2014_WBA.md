@@ -17,6 +17,10 @@
 
 **Model:** No model was generated from this record.
 
+> The extraction pipeline identified the driver compounds as sutezolid and its metabolite U-603 and the response as whole-blood bactericidal activity, but it did not resolve the specific units or the mathematical effect form. As no paper excerpts are available, the mechanism, potency parameters, and rate constants are not described.
+>
+> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+
 - **paper:** `Zhu_2014`
 - **model family:** `sigmoid_emax`
 - **driver:** `not_resolved`

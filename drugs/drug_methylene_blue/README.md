@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;methylene blue&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;MethyleneBlue_Bonak2026_reference&quot;,&quot;label&quot;:&quot;Bo\u015fnak_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_methylene_blue/MethyleneBlue_Bonak2026_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;MethyleneBlue_Bonak2026_reference&quot;,&quot;label&quot;:&quot;Bo\u015fnak_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_methylene_blue/MethyleneBlue_Bonak2026_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 # methylene blue
 
@@ -19,7 +19,7 @@
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> | [Boşnak_2026_reference](drugs/drug_methylene_blue/MethyleneBlue_Bonak2026_reference.md) | ▶ model + simulator | 1-compartment, oral | 3 | Boşnak C et al., Determinants of levofloxacin prophylaxi…, The Journal of antimicrobia… (2026) | [10.1093/jac/dkag284](https://doi.org/10.1093/jac/dkag284) |
+| <span class="pk-badge pk-badge--green">reviewed — candidate</span> | [Boşnak_2026_reference](drugs/drug_methylene_blue/MethyleneBlue_Bonak2026_reference.md) | ▶ model + simulator | 1-compartment, oral | 3 | Boşnak C et al., Determinants of levofloxacin prophylaxi…, The Journal of antimicrobia… (2026) | [10.1093/jac/dkag284](https://doi.org/10.1093/jac/dkag284) |
 | <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Milani_1992_reference](drugs/drug_methylene_blue/MethyleneBlue_Milani1992_reference.md) | — | general linear (no model) | 0 | Milani A et al., Ascites dynamics in cirrhosis. Proposal…, Journal of hepatology (1992) | [10.1016/s0168-8278(05)80672-5](https://doi.org/10.1016/s0168-8278(05)80672-5) |
 | <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span><br><sub>blocking: C9 clearance/volume outside physiological window (implausible magnitude — unit/…</sub><br><sub>route_to: `human_review`</sub> | [Zuna_2017_reference](drugs/drug_methylene_blue/MethyleneBlue_Zuna2017_reference.md) | — | 1-compartment (no model) | 2 | Zuna I et al., ADAM, a hands-on patient simulator for…, British journal of clinical… (2017) | [10.1111/bcp.13357](https://doi.org/10.1111/bcp.13357) |
 
@@ -27,7 +27,7 @@
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> | [Digby_2021_photocytotoxicity](drugs/drug_methylene_blue/pd_Digby_2021_photocytotoxicity.md) | photocytotoxicity biomarker turnover ← methylene_blue | — | Digby EM et al., Highly Potent Photoinactivation of Bact…, ACS infectious diseases (2021) | [10.1021/acsinfecdis.1c00313](https://doi.org/10.1021/acsinfecdis.1c00313) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="Data from bacteria, fungi or plants, not measured in people (from an LLM reading of the title and abstract by qwen3.8-27b, p(non-human) 1.00).">other organism</span> | [Digby_2021_photocytotoxicity](drugs/drug_methylene_blue/pd_Digby_2021_photocytotoxicity.md) | photocytotoxicity biomarker turnover ← methylene_blue | — | Digby EM et al., Highly Potent Photoinactivation of Bact…, ACS infectious diseases (2021) | [10.1021/acsinfecdis.1c00313](https://doi.org/10.1021/acsinfecdis.1c00313) |
 
 ## ADME sites
 

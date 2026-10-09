@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;Durlobactam&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Durlobactam_Cammarata2025_reference&quot;,&quot;label&quot;:&quot;Cammarata_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_durlobactam/Durlobactam_Cammarata2025_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Durlobactam_Cammarata2025_reference&quot;,&quot;label&quot;:&quot;Cammarata_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_durlobactam/Durlobactam_Cammarata2025_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 # Durlobactam
 
@@ -21,20 +21,20 @@
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-09 10:33 | 8:27 | 1/0/0 | 1/0/0 | 0/0/0 | 407,806/8,059 | einfracz / qwen3.8-27b | 26 | 0/12 | 26/0 | 0 |
+| 2026-10-09 10:33 | 8:27 | 0/0/1 | 1/0/0 | 0/0/0 | 407,806/8,059 | einfracz / qwen3.8-27b | 26 | 0/12 | 26/0 | 0 |
 
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> | [Cammarata_2025_reference](drugs/drug_durlobactam/Durlobactam_Cammarata2025_reference.md) | ▶ model + simulator | 2-compartment, oral | 9 (+1 cov.) | Cammarata AP et al., Population pharmacokinetic analyses for…, Antimicrobial agents and ch… (2025) | [10.1128/aac.00485-24](https://doi.org/10.1128/aac.00485-24) |
+| <span class="pk-badge pk-badge--orange">needs review</span><br><sub>caveat: the record defines covariate effects (weight on clearance, renal function …) but the engineer simulated only…</sub><br><sub>blocking: unreported model parameter default(s): ka</sub><br><sub>route_to: `scholar`</sub> | [Cammarata_2025_reference](drugs/drug_durlobactam/Durlobactam_Cammarata2025_reference.md) | ▶ model + simulator | 2-compartment, oral | 9 (+1 cov.) | Cammarata AP et al., Population pharmacokinetic analyses for…, Antimicrobial agents and ch… (2025) | [10.1128/aac.00485-24](https://doi.org/10.1128/aac.00485-24) |
 
 ## Pharmacodynamics (PD)
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> | [ODonnell_2023_Bacterial_Survival](drugs/drug_durlobactam/pd_ODonnell_2023_Bacterial_Survival.md) | Bacterial Survival ← durlobactam · direct Emax (saturable) effect | — | O'Donnell JP et al., The Pharmacokinetics/Pharmacodynamic Re…, Clinical infectious disease… (2023) | [10.1093/cid/ciad096](https://doi.org/10.1093/cid/ciad096) |
-| <span class="pk-badge pk-badge--green">extracted</span> | [ODonnell_2023_MIC](drugs/drug_durlobactam/pd_ODonnell_2023_MIC.md) | MIC ← durlobactam · direct linear effect | — | O'Donnell JP et al., The Pharmacokinetics/Pharmacodynamic Re…, Clinical infectious disease… (2023) | [10.1093/cid/ciad096](https://doi.org/10.1093/cid/ciad096) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="Data from bacteria, fungi or plants, not measured in people (from an LLM reading of the title and abstract by qwen3.8-27b, p(non-human) 1.00).">other organism</span> | [ODonnell_2023_Bacterial_Survival](drugs/drug_durlobactam/pd_ODonnell_2023_Bacterial_Survival.md) | Bacterial Survival ← durlobactam · direct Emax (saturable) effect | — | O'Donnell JP et al., The Pharmacokinetics/Pharmacodynamic Re…, Clinical infectious disease… (2023) | [10.1093/cid/ciad096](https://doi.org/10.1093/cid/ciad096) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="Data from bacteria, fungi or plants, not measured in people (from an LLM reading of the title and abstract by qwen3.8-27b, p(non-human) 1.00).">other organism</span> | [ODonnell_2023_MIC](drugs/drug_durlobactam/pd_ODonnell_2023_MIC.md) | MIC ← durlobactam · direct linear effect | — | O'Donnell JP et al., The Pharmacokinetics/Pharmacodynamic Re…, Clinical infectious disease… (2023) | [10.1093/cid/ciad096](https://doi.org/10.1093/cid/ciad096) |
 
 ## ADME sites
 
@@ -55,7 +55,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 - **PubMed hits:** 82 matched, 54 returned
 - **screened:** 5  ·  **relevant:** 2
-- **records:** 1  ·  extracted 1  ·  needs_review 0  ·  rejected 0  ·  stale 0
+- **records:** 1  ·  extracted 0  ·  needs_review 1  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Screened and excluded

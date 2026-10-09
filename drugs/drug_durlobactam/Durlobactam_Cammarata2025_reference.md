@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;Durlobactam&quot;,&quot;href&quot;:&quot;drugs/drug_durlobactam/&quot;},{&quot;label&quot;:&quot;Cammarata_2025 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Durlobactam_Cammarata2025_reference&quot;,&quot;label&quot;:&quot;Cammarata_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_durlobactam/Durlobactam_Cammarata2025_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Durlobactam_Cammarata2025_reference&quot;,&quot;label&quot;:&quot;Cammarata_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_durlobactam/Durlobactam_Cammarata2025_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # Durlobactam — `Durlobactam_Cammarata2025_reference`
 
-> ## <span class="pk-badge pk-badge--green">extracted</span>
+> ## <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: the record defines covariate effects (weight on clearance, renal function …) but the engineer simulated only the reference individual, so those scenarios were never run. The base model still reproduces the paper; what is missing is the covariate curves.">needs review</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -15,7 +15,15 @@
 
 **Model:** A simulatable model was generated — see the **Models** and **Simulation** tabs.
 
-> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+> **Caveat** (`covariates_not_exercised`): the record defines covariate effects (weight on clearance, renal function …) but the engineer simulated only the reference individual, so those scenarios were never run. The base model still reproduces the paper; what is missing is the covariate curves.
+
+### Reviewer guidance
+
+**Absorption rate constants were not reported, forcing the use of library defaults for durlobactam.**
+
+The record lists absorption parameters without extracted values, indicating they relied on generic placeholders rather than paper-specific estimates. This lack of source-backed absorption data invalidated the simulated dosing profile. Consequently, the model builder's assumption of a first-order depot input remains unsupported by the source. Extracted — durlobactam: CL 5.2 L/h, V1 5.32 L, Q 12.4 L/h, V2 6.74 L, fe 0.479, Q3 20.3 L/h, CLR 5.07 L/h, V3 65.6 L, … (+1).
+
+<sub>reviewed by qwen3.8-27b</sub>
 
 > **Dose compound ≠ measured compound:** dosed `sulbactam–durlobactam`, measured `durlobactam`.
 
@@ -24,7 +32,7 @@ Cammarata AP et al., Population pharmacokinetic analyses for…, Antimicrobial a
   ·  DOI: [10.1128/aac.00485-24](https://doi.org/10.1128/aac.00485-24)
 
 ## Model component
-<dbs-pgx drug="Durlobactam" model-id="Durlobactam_Cammarata2025_reference" status="extracted" stale="false" population="adults with hospital-acquired and ventilator-associated bacterial pneumonia" measured-compound="durlobactam" parameterization="apparent" topology="2C"></dbs-pgx>
+<dbs-pgx drug="Durlobactam" model-id="Durlobactam_Cammarata2025_reference" status="needs_review" stale="false" population="adults with hospital-acquired and ventilator-associated bacterial pneumonia" measured-compound="durlobactam" parameterization="apparent" topology="2C"></dbs-pgx>
 
 **Model structure:** 2-compartment, oral mammillary model — template `PK_2C_enteral`.  
 **Parameters:** 9 extracted, plus 1 covariate effect.
@@ -32,6 +40,8 @@ Cammarata AP et al., Population pharmacokinetic analyses for…, Antimicrobial a
 **Parameterization:** V3/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
 ## Parameters
+> ⚠️ This record is not accepted (current status `needs_review`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
+
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
 | CL (L/h) | `Q22` · CL | 5.2 | L/h | 1.4444444444444447e-06 | [l] / [h] | not captured | exact (1.0) | T1:row3:col1, T1:row3:col2, T1:row3:col4, T1:row3:col5, T1:row3:col6, T1:row26:col1, T1:row26:col2, T1:row26:col4, T1:row26:col5, T1:row26:col6 | — | not captured |
@@ -169,6 +179,18 @@ Cammarata AP et al., Population pharmacokinetic analyses for…, Antimicrobial a
 | C9_phys_window_Q63 | pass | volume within physiological range | 5.32 L | not captured | not captured | ['T1:row5:col1', 'T1:row5:col2', 'T1:row5:col4', 'T1:row5:col5', 'T1:row5:col6', 'T1:row28:col1', 'T1:row28:col2', 'T1:row28:col4', 'T1:row28:col5', 'T1:row28:col6'] |
 | C9_phys_window_Q64 | pass | volume within physiological range | 6.74 L | not captured | not captured | ['T1:row7:col1', 'T1:row7:col2', 'T1:row7:col4', 'T1:row7:col5', 'T1:row7:col6', 'T1:row30:col1', 'T1:row30:col2', 'T1:row30:col4', 'T1:row30:col5', 'T1:row30:col6'] |
 
+**Reviewer per-scenario checks:**
+
+| check | scenario | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|---|
+| T2_covariates_not_exercised | (all) | fail | not captured | not captured | not captured | record has covariate_effects but the engineer simulated only the reference individual — covariate scenarios were not exercised |
+| T0_analyte_identity | not captured | pass | not captured | not captured | not captured | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T3_apparent_invariant | not captured | pass | not captured | F=Fm=1, no molar correction | not captured | apparent params must not be double-corrected |
+| T3_output_variable | not captured | pass | C_central (measured=durlobactam) | central.C | not captured | output must be the measured/analyte compartment |
+| T3_param_coverage | not captured | pass | 4 scholar param(s) emitted or defaulted | 4 covered | not captured | all structural parameters accounted for |
+| T3_topology_template | not captured | pass | 2C → PK_2C* | PK_2C_enteral | not captured | engineer template must match the scholar topology |
+| T6_deviations | not captured | fail | not captured | defaulted_parameters: not acceptable; invented_absorption: not acceptable | not captured | LLM adjudication → deterministic rule |
+
 <details class="legend">
 <summary>Check legend — what each column means</summary>
 <table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>check</code></td><td>the check id. C0_has_structural_params = at least one numeric structural parameter; C0b_disposition_core = a volume OR a clearance/elimination term (neither means an exposure/outcome paper, not popPK — rejected); C0c_disposition_complete = BOTH a volume AND a clearance/elimination term, which is what the engineer needs to build (one without the other routes to review, never to the engineer); C1_half_life(_beta) = reported half-life against V and CL; C2_reference = covariate scenarios are sign-plausible; C3_cl_dose_auc = CL against dose/AUC; C4_auc_closed_form = AUC recomputed in closed form; C5_dimension_&lt;Qcode&gt; = the parameter's units carry the dimension its Q-code requires.</td></tr><tr><td><code>status</code></td><td>pass, fail, or skipped. A skipped check had nothing to compare — the paper did not report the input it needs — and is not evidence against the record. The scholar table lists only pass and fail; the reviewer table also shows skipped, with the reason in note.</td></tr><tr><td><code>expected</code></td><td>the value the check required, from the paper or from the ontology.</td></tr><tr><td><code>obtained</code></td><td>what the record actually yields.</td></tr><tr><td><code>ratio</code></td><td>obtained / expected, where the check is a numeric comparison.</td></tr><tr><td><code>tol</code></td><td>the tolerance the ratio had to fall within to pass.</td></tr><tr><td><code>source</code></td><td>the artifact the expected value was taken from.</td></tr><tr><td><code>scenario</code></td><td>reviewer table only — the covariate scenario the check was run under.</td></tr><tr><td><code>note</code></td><td>why a check was skipped, or how it was judged.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>the field is absent from the KB artifact — nothing was recorded. This is NOT the same as zero or empty: the value is unknown, not measured to be nothing.</td></tr><tr><td><code>—</code></td><td>deliberately not shown: the column does not apply to this row.</td></tr><tr><td><code>not verified</code></td><td>the record is not in an accepted state (see the badge and the note above the table); the numbers are shown as extracted, not endorsed.</td></tr></tbody></table>
@@ -177,6 +199,9 @@ Cammarata AP et al., Population pharmacokinetic analyses for…, Antimicrobial a
 ## Raw artifacts
 
 - scholar stages: `../../../knowledgebase/drugs_non_atc/drug_durlobactam/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Cammarata_2025` / `Cammarata_2025::reference`)
+- model: `../../../knowledgebase/drugs_non_atc/drug_durlobactam/models/modelica/Durlobactam_Cammarata2025_reference.mo`
+- deviation: `../../../knowledgebase/drugs_non_atc/drug_durlobactam/models/modelica/Durlobactam_Cammarata2025_reference.deviation.json`
+- sim: `../../../knowledgebase/drugs_non_atc/drug_durlobactam/models/modelica/Durlobactam_Cammarata2025_reference.json`
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>

@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;Dimethyltryptamine&quot;,&quot;href&quot;:&quot;drugs/drug_dimethyltryptamine/&quot;},{&quot;label&quot;:&quot;\u00c4bel\u00f6_2025 \u00b7 PD subjective intensity ratings of psychedelic effects&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Dimethyltryptamine_Jiang2016_reference&quot;,&quot;label&quot;:&quot;Jiang_2016_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_dimethyltryptamine/Dimethyltryptamine_Jiang2016_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Dimethyltryptamine_Jiang2016_reference&quot;,&quot;label&quot;:&quot;Jiang_2016_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_dimethyltryptamine/Dimethyltryptamine_Jiang2016_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # subjective intensity ratings of psychedelic effects — PD  <span class="pk-badge pk-badge--red">rejected</span>
@@ -17,6 +17,10 @@
 **As extracted:** N,N-dimethyltryptamine drive subjective intensity ratings of psychedelic effects: direct sigmoid Emax (Hill) effect.
 
 **Model:** No model was generated from this record.
+
+> The record classifies the model as a sigmoid Emax mechanism where dimethyltryptamine plasma concentrations stimulate subjective intensity ratings, but the specific potency and rate parameters (such as Emac, EC50, or gamma) are not stated in the provided excerpts. The paper does not specify the mechanism of action or quantitative values in the available text.
+>
+> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
 
 - **paper:** `Äbelö_2025`
 - **model family:** `sigmoid_emax`

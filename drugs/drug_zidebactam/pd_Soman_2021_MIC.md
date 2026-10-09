@@ -17,6 +17,10 @@
 
 **Model:** No model was generated from this record.
 
+> The record describes zidebactam concentration in mg/L inhibiting the MIC (mg/L) response, but the model family and effect form are listed as unknown. No paper excerpts are available to confirm the mechanism or provide specific potency or rate parameters.
+>
+> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+
 - **paper:** `Soman_2021`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;Midomafetamine&quot;,&quot;href&quot;:&quot;drugs/drug_midomafetamine/&quot;},{&quot;label&quot;:&quot;Huestis_2025 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Midomafetamine_Baggott2016_reference&quot;,&quot;label&quot;:&quot;Baggott_2016_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_midomafetamine/Midomafetamine_Baggott2016_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Midomafetamine_Hampsey2026_reference&quot;,&quot;label&quot;:&quot;Hampsey_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_midomafetamine/Midomafetamine_Hampsey2026_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Midomafetamine_chov2025_reference&quot;,&quot;label&quot;:&quot;\u0160\u00edchov\u00e1_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_midomafetamine/Midomafetamine_chov2025_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Midomafetamine_Hampsey2026_reference&quot;,&quot;label&quot;:&quot;Hampsey_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_midomafetamine/Midomafetamine_Hampsey2026_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Midomafetamine_chov2025_reference&quot;,&quot;label&quot;:&quot;\u0160\u00edchov\u00e1_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_midomafetamine/Midomafetamine_chov2025_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Midomafetamine_Baggott2016_reference&quot;,&quot;label&quot;:&quot;Baggott_2016_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_midomafetamine/Midomafetamine_Baggott2016_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -15,7 +15,13 @@
 
 **Model:** No model was generated from this record.
 
-> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+### Reviewer guidance
+
+**MDMA clearance turns negative due to a -0.263 volume shift, and the MDA metabolite is structurally orphaned with zero compartments.**
+
+The parameter labeled V1/F (central volume) carries the value 462 L, but the label V2/F (peripheral volume) holds -0.263, which renders peripheral volume implausible. The MDA metabolite is defined with n_cmt: 0, leaving it with no physical space to exist despite a 0.1 formation fraction. Extracted — midomafetamine: CL/F 41.5 L/h, V1/F 462 L, kabs 1.17, tlag 0.322 h, D1 0.304 h, V2/F -0.263; MDA: fm 0.1.
+
+<sub>reviewed by qwen3.8-27b</sub>
 
 ## Citation
 Huestis MA et al., MDMA pharmacokinetics: A population and…, CPT: pharmacometrics & syst… (2025)

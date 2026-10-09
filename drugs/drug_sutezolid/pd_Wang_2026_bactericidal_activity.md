@@ -17,6 +17,10 @@
 
 **Model:** No model was generated from this record.
 
+> The paper describes the drug sutezolid exerting an inhibitory effect on bactericidal activity, but no full text is available to specify the mechanism, driving concentrations, or key potency and rate parameters.
+>
+> <sub>in the paper's terms — summarised by qwen3.8-27b from the paper's text; not checked by a person</sub>
+
 - **paper:** `Wang_2026`
 - **model family:** `unknown`
 - **driver:** `not_resolved`

@@ -7114,7 +7114,7 @@
   ],
   "dir": "drug_arketamine",
   "extracted": 1,
-  "last_change": "2026-10-09T09:14:02.247764+00:00",
+  "last_change": "2026-10-09T12:27:40.704769+00:00",
   "name": "Arketamine",
   "needs_review": 1,
   "records": 8,
@@ -7239,7 +7239,7 @@
   "counts": {
    "pd": 1,
    "pgx": 0,
-   "pk": 4
+   "pk": 2
   },
   "curated": 0,
   "details": [
@@ -7252,20 +7252,20 @@
     "model_id": "Artefenomel_McCarthy2016_reference"
    },
    {
-    "label": "McCarthy_2019 \u00b7 reference",
-    "model_id": "Artefenomel_McCarthy2019_reference"
-   },
-   {
-    "label": "McCarthy_2020 \u00b7 reference",
-    "model_id": "Artefenomel_McCarthy2020_reference"
-   },
-   {
     "label": "Adoke_2021 \u00b7 reference",
     "model_id": "Artefenomel_Adoke2021_reference"
    },
    {
     "label": "Collins_2022 \u00b7 reference",
     "model_id": "Artefenomel_Collins2022_reference"
+   },
+   {
+    "label": "McCarthy_2019 \u00b7 reference",
+    "model_id": "Artefenomel_McCarthy2019_reference"
+   },
+   {
+    "label": "McCarthy_2020 \u00b7 reference",
+    "model_id": "Artefenomel_McCarthy2020_reference"
    },
    {
     "label": "Gansane_2023 \u00b7 ferroquine_400_mg",
@@ -7277,10 +7277,10 @@
    }
   ],
   "dir": "drug_artefenomel",
-  "extracted": 4,
-  "last_change": "2026-10-09T12:04:35.484444+00:00",
+  "extracted": 2,
+  "last_change": "2026-10-09T12:27:47.083671+00:00",
   "name": "Artefenomel",
-  "needs_review": 2,
+  "needs_review": 4,
   "records": 8,
   "rejected": 2,
   "rendered": true,
@@ -25765,7 +25765,7 @@
   ],
   "dir": "drug_contezolid",
   "extracted": 1,
-  "last_change": "2026-10-09T10:03:46.066039+00:00",
+  "last_change": "2026-10-09T12:27:41.468555+00:00",
   "name": "Contezolid",
   "needs_review": 3,
   "records": 4,
@@ -32201,14 +32201,10 @@
   "counts": {
    "pd": 0,
    "pgx": 0,
-   "pk": 1
+   "pk": 0
   },
   "curated": 0,
   "details": [
-   {
-    "label": "Jiang_2016 \u00b7 reference",
-    "model_id": "Dimethyltryptamine_Jiang2016_reference"
-   },
    {
     "label": "Good_2023 \u00b7 cohort_1",
     "model_id": "Dimethyltryptamine_Good2023_cohort_1"
@@ -32226,6 +32222,10 @@
     "model_id": "Dimethyltryptamine_Good2023_cohort_4"
    },
    {
+    "label": "Jiang_2016 \u00b7 reference",
+    "model_id": "Dimethyltryptamine_Jiang2016_reference"
+   },
+   {
     "label": "Eckern\u00e4s_2022 \u00b7 reference",
     "model_id": "Dimethyltryptamine_Eckerns2022_reference"
    },
@@ -32239,10 +32239,10 @@
    }
   ],
   "dir": "drug_dimethyltryptamine",
-  "extracted": 1,
-  "last_change": "2026-10-09T08:04:32.639481+00:00",
+  "extracted": 0,
+  "last_change": "2026-10-09T12:27:21.763054+00:00",
   "name": "Dimethyltryptamine",
-  "needs_review": 4,
+  "needs_review": 5,
   "records": 8,
   "rejected": 3,
   "rendered": true,
@@ -35052,7 +35052,7 @@
   "counts": {
    "pd": 1,
    "pgx": 0,
-   "pk": 1
+   "pk": 0
   },
   "curated": 0,
   "details": [
@@ -35062,10 +35062,10 @@
    }
   ],
   "dir": "drug_durlobactam",
-  "extracted": 1,
-  "last_change": "2026-10-09T10:30:39.501353+00:00",
+  "extracted": 0,
+  "last_change": "2026-10-09T12:27:44.394640+00:00",
   "name": "Durlobactam",
-  "needs_review": 0,
+  "needs_review": 1,
   "records": 1,
   "rejected": 0,
   "rendered": true,
@@ -36992,7 +36992,7 @@
   ],
   "dir": "drug_endoxifen",
   "extracted": 0,
-  "last_change": "2026-10-09T06:39:57.461007+00:00",
+  "last_change": "2026-10-09T12:27:20.849105+00:00",
   "name": "Endoxifen",
   "needs_review": 0,
   "records": 2,
@@ -57009,7 +57009,7 @@
   ],
   "dir": "drug_islatravir",
   "extracted": 0,
-  "last_change": "2026-10-09T10:10:48.890650+00:00",
+  "last_change": "2026-10-09T12:27:41.503091+00:00",
   "name": "Islatravir",
   "needs_review": 1,
   "records": 1,
@@ -68187,7 +68187,7 @@
   ],
   "dir": "drug_methylene_blue",
   "extracted": 1,
-  "last_change": "2026-10-09T09:50:39.672215+00:00",
+  "last_change": "2026-10-09T12:27:41.368411+00:00",
   "name": "methylene blue",
   "needs_review": 0,
   "records": 3,
@@ -69811,14 +69811,10 @@
   "counts": {
    "pd": 1,
    "pgx": 0,
-   "pk": 3
+   "pk": 2
   },
   "curated": 0,
   "details": [
-   {
-    "label": "Baggott_2016 \u00b7 reference",
-    "model_id": "Midomafetamine_Baggott2016_reference"
-   },
    {
     "label": "Hampsey_2026 \u00b7 reference",
     "model_id": "Midomafetamine_Hampsey2026_reference"
@@ -69828,15 +69824,19 @@
     "model_id": "Midomafetamine_chov2025_reference"
    },
    {
+    "label": "Baggott_2016 \u00b7 reference",
+    "model_id": "Midomafetamine_Baggott2016_reference"
+   },
+   {
     "label": "Huestis_2025 \u00b7 reference",
     "model_id": "Midomafetamine_Huestis2025_reference"
    }
   ],
   "dir": "drug_midomafetamine",
-  "extracted": 3,
-  "last_change": "2026-10-09T08:22:05.339747+00:00",
+  "extracted": 2,
+  "last_change": "2026-10-09T12:27:23.724991+00:00",
   "name": "Midomafetamine",
-  "needs_review": 0,
+  "needs_review": 1,
   "records": 4,
   "rejected": 1,
   "rendered": true,
@@ -89832,7 +89832,7 @@
   ],
   "dir": "drug_psilocybin",
   "extracted": 1,
-  "last_change": "2026-10-09T08:42:44.880823+00:00",
+  "last_change": "2026-10-09T12:27:23.806279+00:00",
   "name": "Psilocybin",
   "needs_review": 0,
   "records": 2,
@@ -102797,7 +102797,7 @@
   ],
   "dir": "drug_taniborbactam",
   "extracted": 2,
-  "last_change": "2026-10-09T10:22:22.216311+00:00",
+  "last_change": "2026-10-09T12:27:43.456894+00:00",
   "name": "Taniborbactam",
   "needs_review": 0,
   "records": 3,
@@ -104950,7 +104950,7 @@
   ],
   "dir": "drug_temsavir",
   "extracted": 0,
-  "last_change": "2026-10-09T10:16:52.803738+00:00",
+  "last_change": "2026-10-09T12:27:42.722481+00:00",
   "name": "Temsavir",
   "needs_review": 0,
   "records": 1,
