@@ -7070,6 +7070,59 @@
   "slug": "aripiprazole",
   "stale": 4
  },
+ "drug_arketamine": {
+  "atc_codes": [],
+  "counts": {
+   "pd": 4,
+   "pgx": 0,
+   "pk": 1
+  },
+  "curated": 0,
+  "details": [
+   {
+    "label": "Fux_2022 \u00b7 reference",
+    "model_id": "Arketamine_Fux2022_reference"
+   },
+   {
+    "label": "Kaka_1979 \u00b7 reference",
+    "model_id": "Arketamine_Kaka1979_reference"
+   },
+   {
+    "label": "Kaka_1980 \u00b7 reference",
+    "model_id": "Arketamine_Kaka1980_reference"
+   },
+   {
+    "label": "Stojanova_2026 \u00b7 reference",
+    "model_id": "Arketamine_Stojanova2026_reference"
+   },
+   {
+    "label": "Weiss_2023 \u00b7 ketamine",
+    "model_id": "Arketamine_Weiss2023_ketamine"
+   },
+   {
+    "label": "Weiss_2023 \u00b7 propiverine",
+    "model_id": "Arketamine_Weiss2023_propiverine"
+   },
+   {
+    "label": "Weiss_2023 \u00b7 trospium",
+    "model_id": "Arketamine_Weiss2023_trospium"
+   },
+   {
+    "label": "Wieber_1975 \u00b7 reference",
+    "model_id": "Arketamine_Wieber1975_reference"
+   }
+  ],
+  "dir": "drug_arketamine",
+  "extracted": 1,
+  "last_change": "2026-10-09T09:14:02.247764+00:00",
+  "name": "Arketamine",
+  "needs_review": 1,
+  "records": 8,
+  "rejected": 6,
+  "rendered": true,
+  "slug": "arketamine",
+  "stale": 0
+ },
  "drug_armodafinil": {
   "atc_codes": [
    "N06BA13"
@@ -7179,6 +7232,59 @@
   "rejected": 0,
   "rendered": true,
   "slug": "arsthinol",
+  "stale": 0
+ },
+ "drug_artefenomel": {
+  "atc_codes": [],
+  "counts": {
+   "pd": 1,
+   "pgx": 0,
+   "pk": 4
+  },
+  "curated": 0,
+  "details": [
+   {
+    "label": "Abd-Rahman_2020 \u00b7 reference",
+    "model_id": "Artefenomel_AbdRahman2020_reference"
+   },
+   {
+    "label": "McCarthy_2016 \u00b7 reference",
+    "model_id": "Artefenomel_McCarthy2016_reference"
+   },
+   {
+    "label": "McCarthy_2019 \u00b7 reference",
+    "model_id": "Artefenomel_McCarthy2019_reference"
+   },
+   {
+    "label": "McCarthy_2020 \u00b7 reference",
+    "model_id": "Artefenomel_McCarthy2020_reference"
+   },
+   {
+    "label": "Adoke_2021 \u00b7 reference",
+    "model_id": "Artefenomel_Adoke2021_reference"
+   },
+   {
+    "label": "Collins_2022 \u00b7 reference",
+    "model_id": "Artefenomel_Collins2022_reference"
+   },
+   {
+    "label": "Gansane_2023 \u00b7 ferroquine_400_mg",
+    "model_id": "Artefenomel_Gansane2023_ferroquine_400_mg"
+   },
+   {
+    "label": "Gansane_2023 \u00b7 ferroquine_400_mg_plus_artefenomel",
+    "model_id": "Artefenomel_Gansane2023_ferroquine_400_mg_plus_artefenomel"
+   }
+  ],
+  "dir": "drug_artefenomel",
+  "extracted": 4,
+  "last_change": "2026-10-09T12:04:35.484444+00:00",
+  "name": "Artefenomel",
+  "needs_review": 2,
+  "records": 8,
+  "rejected": 2,
+  "rendered": true,
+  "slug": "artefenomel",
   "stale": 0
  },
  "drug_artemether": {
@@ -14062,6 +14168,26 @@
   "rejected": 0,
   "rendered": true,
   "slug": "buformin",
+  "stale": 0
+ },
+ "drug_bufuralol": {
+  "atc_codes": [],
+  "counts": {
+   "pd": 0,
+   "pgx": 0,
+   "pk": 0
+  },
+  "curated": 0,
+  "details": [],
+  "dir": "drug_bufuralol",
+  "extracted": 0,
+  "last_change": null,
+  "name": "Bufuralol",
+  "needs_review": 0,
+  "records": 0,
+  "rejected": 0,
+  "rendered": true,
+  "slug": "bufuralol",
   "stale": 0
  },
  "drug_bufylline": {
@@ -25611,6 +25737,43 @@
   "slug": "contact_laxatives_in_combination",
   "stale": 0
  },
+ "drug_contezolid": {
+  "atc_codes": [],
+  "counts": {
+   "pd": 0,
+   "pgx": 0,
+   "pk": 1
+  },
+  "curated": 0,
+  "details": [
+   {
+    "label": "Fu_2024 \u00b7 reference",
+    "model_id": "Contezolid_Fu2024_reference"
+   },
+   {
+    "label": "Bulitta_2024 \u00b7 reference",
+    "model_id": "Contezolid_Bulitta2024_reference"
+   },
+   {
+    "label": "Liu_2026 \u00b7 reference",
+    "model_id": "Contezolid_Liu2026_reference"
+   },
+   {
+    "label": "Wu_2026 \u00b7 reference",
+    "model_id": "Contezolid_Wu2026_reference"
+   }
+  ],
+  "dir": "drug_contezolid",
+  "extracted": 1,
+  "last_change": "2026-10-09T10:03:46.066039+00:00",
+  "name": "Contezolid",
+  "needs_review": 3,
+  "records": 4,
+  "rejected": 0,
+  "rendered": true,
+  "slug": "contezolid",
+  "stale": 0
+ },
  "drug_copanlisib": {
   "atc_codes": [
    "L01EM02"
@@ -32033,6 +32196,59 @@
   "slug": "dimethylphthalate",
   "stale": 0
  },
+ "drug_dimethyltryptamine": {
+  "atc_codes": [],
+  "counts": {
+   "pd": 0,
+   "pgx": 0,
+   "pk": 1
+  },
+  "curated": 0,
+  "details": [
+   {
+    "label": "Jiang_2016 \u00b7 reference",
+    "model_id": "Dimethyltryptamine_Jiang2016_reference"
+   },
+   {
+    "label": "Good_2023 \u00b7 cohort_1",
+    "model_id": "Dimethyltryptamine_Good2023_cohort_1"
+   },
+   {
+    "label": "Good_2023 \u00b7 cohort_2",
+    "model_id": "Dimethyltryptamine_Good2023_cohort_2"
+   },
+   {
+    "label": "Good_2023 \u00b7 cohort_3a",
+    "model_id": "Dimethyltryptamine_Good2023_cohort_3a"
+   },
+   {
+    "label": "Good_2023 \u00b7 cohort_4",
+    "model_id": "Dimethyltryptamine_Good2023_cohort_4"
+   },
+   {
+    "label": "Eckern\u00e4s_2022 \u00b7 reference",
+    "model_id": "Dimethyltryptamine_Eckerns2022_reference"
+   },
+   {
+    "label": "Good_2023 \u00b7 mean_of_individual_parameters",
+    "model_id": "Dimethyltryptamine_Good2023_mean_of_individual_parameters"
+   },
+   {
+    "label": "Good_2023 \u00b7 parameters_derived_from_mean",
+    "model_id": "Dimethyltryptamine_Good2023_parameters_derived_from_mean"
+   }
+  ],
+  "dir": "drug_dimethyltryptamine",
+  "extracted": 1,
+  "last_change": "2026-10-09T08:04:32.639481+00:00",
+  "name": "Dimethyltryptamine",
+  "needs_review": 4,
+  "records": 8,
+  "rejected": 3,
+  "rendered": true,
+  "slug": "dimethyltryptamine",
+  "stale": 0
+ },
  "drug_dimethyltubocurarine": {
   "atc_codes": [
    "M03AA04"
@@ -34831,6 +35047,31 @@
   "slug": "dupilumab",
   "stale": 0
  },
+ "drug_durlobactam": {
+  "atc_codes": [],
+  "counts": {
+   "pd": 1,
+   "pgx": 0,
+   "pk": 1
+  },
+  "curated": 0,
+  "details": [
+   {
+    "label": "Cammarata_2025 \u00b7 reference",
+    "model_id": "Durlobactam_Cammarata2025_reference"
+   }
+  ],
+  "dir": "drug_durlobactam",
+  "extracted": 1,
+  "last_change": "2026-10-09T10:30:39.501353+00:00",
+  "name": "Durlobactam",
+  "needs_review": 0,
+  "records": 1,
+  "rejected": 0,
+  "rendered": true,
+  "slug": "durlobactam",
+  "stale": 0
+ },
  "drug_durvalumab": {
   "atc_codes": [
    "L01FF03",
@@ -36729,6 +36970,35 @@
   "rejected": 0,
   "rendered": true,
   "slug": "encorafenib",
+  "stale": 0
+ },
+ "drug_endoxifen": {
+  "atc_codes": [],
+  "counts": {
+   "pd": 0,
+   "pgx": 0,
+   "pk": 0
+  },
+  "curated": 0,
+  "details": [
+   {
+    "label": "Dilli_2022 \u00b7 reference",
+    "model_id": "Endoxifen_Dilli2022_reference"
+   },
+   {
+    "label": "Koubek_2022 \u00b7 reference",
+    "model_id": "Endoxifen_Koubek2022_reference"
+   }
+  ],
+  "dir": "drug_endoxifen",
+  "extracted": 0,
+  "last_change": "2026-10-09T06:39:57.461007+00:00",
+  "name": "Endoxifen",
+  "needs_review": 0,
+  "records": 2,
+  "rejected": 2,
+  "rendered": true,
+  "slug": "endoxifen",
   "stale": 0
  },
  "drug_endralazine": {
@@ -56723,6 +56993,31 @@
   "slug": "isepamicin",
   "stale": 0
  },
+ "drug_islatravir": {
+  "atc_codes": [],
+  "counts": {
+   "pd": 0,
+   "pgx": 0,
+   "pk": 0
+  },
+  "curated": 0,
+  "details": [
+   {
+    "label": "Kinsale_2024 \u00b7 reference",
+    "model_id": "Islatravir_Kinsale2024_reference"
+   }
+  ],
+  "dir": "drug_islatravir",
+  "extracted": 0,
+  "last_change": "2026-10-09T10:10:48.890650+00:00",
+  "name": "Islatravir",
+  "needs_review": 1,
+  "records": 1,
+  "rejected": 0,
+  "rendered": true,
+  "slug": "islatravir",
+  "stale": 0
+ },
  "drug_isoaminile": {
   "atc_codes": [
    "R05DB04"
@@ -67868,6 +68163,39 @@
   "slug": "methyldopa_racemic",
   "stale": 0
  },
+ "drug_methylene_blue": {
+  "atc_codes": [],
+  "counts": {
+   "pd": 1,
+   "pgx": 0,
+   "pk": 1
+  },
+  "curated": 0,
+  "details": [
+   {
+    "label": "Bo\u015fnak_2026 \u00b7 reference",
+    "model_id": "MethyleneBlue_Bonak2026_reference"
+   },
+   {
+    "label": "Milani_1992 \u00b7 reference",
+    "model_id": "MethyleneBlue_Milani1992_reference"
+   },
+   {
+    "label": "Zuna_2017 \u00b7 reference",
+    "model_id": "MethyleneBlue_Zuna2017_reference"
+   }
+  ],
+  "dir": "drug_methylene_blue",
+  "extracted": 1,
+  "last_change": "2026-10-09T09:50:39.672215+00:00",
+  "name": "methylene blue",
+  "needs_review": 0,
+  "records": 3,
+  "rejected": 2,
+  "rendered": true,
+  "slug": "methylene_blue",
+  "stale": 0
+ },
  "drug_methylergometrine": {
   "atc_codes": [
    "G02AB01",
@@ -69476,6 +69804,43 @@
   "rejected": 0,
   "rendered": true,
   "slug": "midodrine",
+  "stale": 0
+ },
+ "drug_midomafetamine": {
+  "atc_codes": [],
+  "counts": {
+   "pd": 1,
+   "pgx": 0,
+   "pk": 3
+  },
+  "curated": 0,
+  "details": [
+   {
+    "label": "Baggott_2016 \u00b7 reference",
+    "model_id": "Midomafetamine_Baggott2016_reference"
+   },
+   {
+    "label": "Hampsey_2026 \u00b7 reference",
+    "model_id": "Midomafetamine_Hampsey2026_reference"
+   },
+   {
+    "label": "\u0160\u00edchov\u00e1_2025 \u00b7 reference",
+    "model_id": "Midomafetamine_chov2025_reference"
+   },
+   {
+    "label": "Huestis_2025 \u00b7 reference",
+    "model_id": "Midomafetamine_Huestis2025_reference"
+   }
+  ],
+  "dir": "drug_midomafetamine",
+  "extracted": 3,
+  "last_change": "2026-10-09T08:22:05.339747+00:00",
+  "name": "Midomafetamine",
+  "needs_review": 0,
+  "records": 4,
+  "rejected": 1,
+  "rendered": true,
+  "slug": "midomafetamine",
   "stale": 0
  },
  "drug_midostaurin": {
@@ -89447,6 +89812,35 @@
   "slug": "pseudoephedrine",
   "stale": 0
  },
+ "drug_psilocybin": {
+  "atc_codes": [],
+  "counts": {
+   "pd": 2,
+   "pgx": 0,
+   "pk": 1
+  },
+  "curated": 0,
+  "details": [
+   {
+    "label": "Morse_2025 \u00b7 reference",
+    "model_id": "Psilocybin_Morse2025_reference"
+   },
+   {
+    "label": "Holze_2023 \u00b7 reference",
+    "model_id": "Psilocybin_Holze2023_reference"
+   }
+  ],
+  "dir": "drug_psilocybin",
+  "extracted": 1,
+  "last_change": "2026-10-09T08:42:44.880823+00:00",
+  "name": "Psilocybin",
+  "needs_review": 0,
+  "records": 2,
+  "rejected": 1,
+  "rendered": true,
+  "slug": "psilocybin",
+  "stale": 0
+ },
  "drug_psma_1007_18f": {
   "atc_codes": [
    "V09IX17"
@@ -101582,6 +101976,26 @@
   "slug": "susoctocog_alfa",
   "stale": 0
  },
+ "drug_sutezolid": {
+  "atc_codes": [],
+  "counts": {
+   "pd": 1,
+   "pgx": 0,
+   "pk": 0
+  },
+  "curated": 0,
+  "details": [],
+  "dir": "drug_sutezolid",
+  "extracted": 0,
+  "last_change": null,
+  "name": "Sutezolid",
+  "needs_review": 0,
+  "records": 0,
+  "rejected": 0,
+  "rendered": true,
+  "slug": "sutezolid",
+  "stale": 0
+ },
  "drug_sutimlimab": {
   "atc_codes": [
    "L04AJ04"
@@ -102358,6 +102772,39 @@
   "rendered": true,
   "slug": "tanezumab",
   "stale": 2
+ },
+ "drug_taniborbactam": {
+  "atc_codes": [],
+  "counts": {
+   "pd": 2,
+   "pgx": 0,
+   "pk": 2
+  },
+  "curated": 0,
+  "details": [
+   {
+    "label": "Asempa_2023 \u00b7 reference",
+    "model_id": "Taniborbactam_Asempa2023_reference"
+   },
+   {
+    "label": "Principe_2022 \u00b7 reference",
+    "model_id": "Taniborbactam_Principe2022_reference"
+   },
+   {
+    "label": "Fouad_2025 \u00b7 reference",
+    "model_id": "Taniborbactam_Fouad2025_reference"
+   }
+  ],
+  "dir": "drug_taniborbactam",
+  "extracted": 2,
+  "last_change": "2026-10-09T10:22:22.216311+00:00",
+  "name": "Taniborbactam",
+  "needs_review": 0,
+  "records": 3,
+  "rejected": 1,
+  "rendered": true,
+  "slug": "taniborbactam",
+  "stale": 0
  },
  "drug_tapentadol": {
   "atc_codes": [
@@ -104486,6 +104933,31 @@
   "rendered": true,
   "slug": "temozolomide",
   "stale": 1
+ },
+ "drug_temsavir": {
+  "atc_codes": [],
+  "counts": {
+   "pd": 0,
+   "pgx": 0,
+   "pk": 0
+  },
+  "curated": 0,
+  "details": [
+   {
+    "label": "Parasrampuria_2025 \u00b7 reference",
+    "model_id": "Temsavir_Parasrampuria2025_reference"
+   }
+  ],
+  "dir": "drug_temsavir",
+  "extracted": 0,
+  "last_change": "2026-10-09T10:16:52.803738+00:00",
+  "name": "Temsavir",
+  "needs_review": 0,
+  "records": 1,
+  "rejected": 1,
+  "rendered": true,
+  "slug": "temsavir",
+  "stale": 0
  },
  "drug_temsirolimus": {
   "atc_codes": [
@@ -115987,6 +116459,26 @@
   "rejected": 0,
   "rendered": true,
   "slug": "ziconotide",
+  "stale": 0
+ },
+ "drug_zidebactam": {
+  "atc_codes": [],
+  "counts": {
+   "pd": 1,
+   "pgx": 0,
+   "pk": 0
+  },
+  "curated": 0,
+  "details": [],
+  "dir": "drug_zidebactam",
+  "extracted": 0,
+  "last_change": null,
+  "name": "Zidebactam",
+  "needs_review": 0,
+  "records": 0,
+  "rejected": 0,
+  "rendered": true,
+  "slug": "zidebactam",
   "stale": 0
  },
  "drug_zidovudine": {

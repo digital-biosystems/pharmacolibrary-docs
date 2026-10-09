@@ -6545,21 +6545,21 @@
     - [tramadol <sub>(4/3/2)</sub>](drugs/drug_tramadol/)
     - [venlafaxine <sub>(4/4/0)</sub>](drugs/drug_venlafaxine/)
   - **dn1**
-    - arketamine <sub>(0/0/0)</sub>
-    - artefenomel <sub>(0/0/0)</sub>
-    - bufuralol <sub>(0/0/0)</sub>
-    - contezolid <sub>(0/0/0)</sub>
-    - dimethyltryptamine <sub>(0/0/0)</sub>
-    - durlobactam <sub>(0/0/0)</sub>
-    - endoxifen <sub>(0/0/0)</sub>
-    - islatravir <sub>(0/0/0)</sub>
-    - methylene_blue <sub>(0/0/0)</sub>
-    - midomafetamine <sub>(0/0/0)</sub>
-    - psilocybin <sub>(0/0/0)</sub>
-    - sutezolid <sub>(0/0/0)</sub>
-    - taniborbactam <sub>(0/0/0)</sub>
-    - temsavir <sub>(0/0/0)</sub>
-    - zidebactam <sub>(0/0/0)</sub>
+    - [Arketamine <sub>(1/4/0)</sub>](drugs/drug_arketamine/)
+    - [Artefenomel <sub>(4/1/0)</sub>](drugs/drug_artefenomel/)
+    - [Bufuralol <sub>(0/0/0)</sub>](drugs/drug_bufuralol/)
+    - [Contezolid <sub>(1/0/0)</sub>](drugs/drug_contezolid/)
+    - [Dimethyltryptamine <sub>(1/0/0)</sub>](drugs/drug_dimethyltryptamine/)
+    - [Durlobactam <sub>(1/1/0)</sub>](drugs/drug_durlobactam/)
+    - [Endoxifen <sub>(0/0/0)</sub>](drugs/drug_endoxifen/)
+    - [Islatravir <sub>(0/0/0)</sub>](drugs/drug_islatravir/)
+    - [methylene blue <sub>(1/1/0)</sub>](drugs/drug_methylene_blue/)
+    - [Midomafetamine <sub>(3/1/0)</sub>](drugs/drug_midomafetamine/)
+    - [Psilocybin <sub>(1/2/0)</sub>](drugs/drug_psilocybin/)
+    - [Sutezolid <sub>(0/1/0)</sub>](drugs/drug_sutezolid/)
+    - [Taniborbactam <sub>(2/2/0)</sub>](drugs/drug_taniborbactam/)
+    - [Temsavir <sub>(0/0/0)</sub>](drugs/drug_temsavir/)
+    - [Zidebactam <sub>(0/1/0)</sub>](drugs/drug_zidebactam/)
   - **tn1**
     - [2378_tetrachlorodibenzo_p_dioxin <sub>(0/0/0)</sub>](drugs/toxin_2378_tetrachlorodibenzo_p_dioxin/)
     - benzene <sub>(0/0/0)</sub>
