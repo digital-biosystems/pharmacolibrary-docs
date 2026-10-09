@@ -18,7 +18,7 @@ Gepefrine is an adrenergic (sympathomimetic) cardiac stimulant that has been inv
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-06 09:20 | 0:11 | 0/0/0 | 0/0/0 | 0/0/0 | 430/57 | ollama / qwen3.8:27b-mtp-q8_0 | 0 | 0/0 | 0/0 | 0 |
+| 2026-10-09 20:00 | 0:37 | 0/0/0 | 0/0/0 | 0/0/0 | 1,418/171 | ollama / qwen3.8:27b-mtp-q8_0 | 0 | 0/0 | 0/0 | 0 |
 
 ## popPK records
 

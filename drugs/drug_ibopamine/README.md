@@ -18,7 +18,7 @@ Ibopamine is a dopamine agonist that has been used as a cardiotonic agent for he
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-06 09:22 | 2:06 | 0/0/0 | 0/0/0 | 0/0/0 | 37,434/1,994 | ollama / qwen3.8:27b-mtp-q8_0 | 0 | 0/1 | 0/0 | 0 |
+| 2026-10-09 20:01 | 1:01 | 0/0/0 | 0/0/0 | 0/0/0 | 1,594/110 | ollama / qwen3.8:27b-mtp-q8_0 | 0 | 0/1 | 0/0 | 0 |
 
 ## popPK records
 
@@ -35,23 +35,24 @@ _not available_
 - **PubMed hits:** 55 matched, 57 returned
 - **screened:** 0  ·  **relevant:** 0
 - **records:** 0  ·  extracted 0  ·  needs_review 0  ·  rejected 0  ·  stale 0
-- **scholar-agent fallback query used:** not captured
+- **scholar-agent fallback query used:** True
 
 ## Full text wanted
 
-_7 paper(s) judged relevant from the abstract, with no full text on disk — paywalled, or the resolver could not reach them. Follow the DOI, then save the PDF into `papers/` as `&lt;save as&gt;.pdf` and re-run the extraction._
+_8 paper(s) judged relevant from the abstract, with no full text on disk — paywalled, or the resolver could not reach them. Follow the DOI, then save the PDF into `papers/` as `&lt;save as&gt;.pdf` and re-run the extraction._
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
 | `Ventresca_1988.pdf` | Ventresca GP et al., Clinical pharmacokinetics of ibopamine…, Arzneimittel-Forschung (1988) | popPK | 10 | not captured | [2904270](https://pubmed.ncbi.nlm.nih.gov/2904270) | The paper describes a clinical pharmacokinetic study of ibopamine and its active metabolite epinine, but the provided evidence contains only qualitative descriptions and no numeric parameter values. |
 | `Gifford_1986.pdf` | Gifford R et al., Analysis of epinine and its metabolites…, Journal of chromatography (1986) | popPK | 8 | [10.1016/s0378-4347(00)83567-7](https://doi.org/10.1016/s0378-4347(00)83567-7) | [3771727](https://pubmed.ncbi.nlm.nih.gov/3771727) | The paper describes a pharmacokinetic study of ibopamine (as a prodrug of epinine) in humans, but the provided evidence contains only methodological details and no quantitative parameter values. |
 | `Soldati_1993.pdf` | Soldati L et al., Ocular pharmacokinetics and pharmacodyn…, Experimental eye research (1993) | popPK | 8 | [10.1006/exer.1993.1032](https://doi.org/10.1006/exer.1993.1032) | [8096462](https://pubmed.ncbi.nlm.nih.gov/8096462) | The study investigates ocular pharmacokinetics of ibopamine in rabbits, but the provided evidence contains only qualitative descriptions and no numeric parameter values. |
+| `de_1989.pdf` | de Mey C et al., Pharmacokinetic and pharmacodynamic int…, Arzneimittel-Forschung (1989) | popPK | 8 | not captured | [2590265](https://pubmed.ncbi.nlm.nih.gov/2590265) | The study is a relevant PK/PD interaction study for ibopamine, but the evidence text only describes qualitative changes (reduction in Cmax/AUC) without providing specific numeric parameter values. |
 | `Bellotti_1996.pdf` | Bellotti G et al., [Acute effects of ibopamine on left ven…, Arquivos brasileiros de car… (1996) | pd | 4 | not captured | [9110439](https://www.ncbi.nlm.nih.gov/pubmed/9110439) | metadata signals extractable PD data (Emax) |
 | `Buikema_1993.pdf` | Buikema H et al., Endothelium dependent relaxation in two…, Cardiovascular research (1993) | pd | 4 | [10.1093/cvr/27.12.2118](https://doi.org/10.1093/cvr/27.12.2118) | [8313417](https://www.ncbi.nlm.nih.gov/pubmed/8313417) | metadata signals extractable PD data (Emax) |
 | `Buikema_1997.pdf` | Buikema H et al., Early pharmacologic intervention may pr…, Journal of cardiac failure (1997) | pd | 4 | [10.1016/s1071-9164(97)90046-4](https://doi.org/10.1016/s1071-9164(97)90046-4) | [9220312](https://www.ncbi.nlm.nih.gov/pubmed/9220312) | metadata signals extractable PD data (Emax) |
 | `Huang_1996.pdf` | Huang J et al., [Comparison between kinetics of positiv…, Zhongguo yao li xue bao = A… (1996) | pd | 4 | not captured | [8737459](https://www.ncbi.nlm.nih.gov/pubmed/8737459) | metadata signals extractable PD data (Emax) |
 
-<sub>queue written 2026-10-06T09:22:38.275147+00:00</sub>
+<sub>queue written 2026-10-09T20:01:15.694972+00:00</sub>
 
 ## Screened and excluded
 

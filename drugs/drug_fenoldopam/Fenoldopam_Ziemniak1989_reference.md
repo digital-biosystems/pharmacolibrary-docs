@@ -4,7 +4,7 @@
 
 # fenoldopam — `Fenoldopam_Ziemniak1989_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.111). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 0.99).">human + animal</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.125). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 0.99).">human + animal</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -22,7 +22,7 @@
 
 The paper reports no distribution volume and no clearance or elimination rate; it is an exposure/outcome paper. Only the abstract was available, so reported summary statistics stand in for a fitted model.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has fenoldopam, the second reading unknown; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has fenoldopam, the second reading unknown; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -79,16 +79,15 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.111 (1/9 fields) | 8 |
+| `gpt-oss:120b` | not confirmed | 0.125 (1/8 fields) | 7 |
 
-<details><summary>8 field(s) a reader read differently</summary>
+<details><summary>7 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
 | `gpt-oss:120b` | `model.links` | [['fenoldopam', 'fenoldopam-8-sulfate', 'metabolism'], ['fenoldopam-8-sulfate', 'fenoldopam', 'interconversion']] | [['fenoldopam-8-sulfate', 'fenoldopam', 'interconversion']] | mismatch |
 | `gpt-oss:120b` | `parameters[fenoldopam auc required to half-saturate fenoldopam renal clearance]` | 5.2 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[fenoldopam auc required to half-saturate fenoldopam renal clearance]` | not captured | 5.2 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[fenoldopam renal plasma clearance]` | not captured | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[mean (+/- se) renal plasma clearance]` | 129 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[mean (+/- se) renal plasma clearance]` | not captured | 129 | only_one_extracted |
 | `gpt-oss:120b` | `screen.dose_compound` | fenoldopam | unknown | mismatch |

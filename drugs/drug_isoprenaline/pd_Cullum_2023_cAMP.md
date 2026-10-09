@@ -1,7 +1,7 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C01C&quot;,&quot;href&quot;:&quot;atc/C01C.md&quot;},{&quot;label&quot;:&quot;isoprenaline&quot;,&quot;href&quot;:&quot;drugs/drug_isoprenaline/&quot;},{&quot;label&quot;:&quot;Cullum_2023 \u00b7 PD cAMP GloSensor\u2122 luminescence (peak response)&quot;}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# cAMP GloSensor™ luminescence (peak response) — PD  <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.444). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">in vitro</span>
+# cAMP GloSensor™ luminescence (peak response) — PD  <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">in vitro</span>
 
 <details class="pk-legend"><summary>What the PGx badges mean — evidence, and whether a model runs</summary><table><tbody><tr><td><span class="pk-badge pk-badge--green">quantitative</span></td><td>the paper gives the effect of each phenotype (or genotype) on a named model parameter — a θ per category.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">qualitative</span></td><td>the paper links the gene to the drug but states no effect size on a model parameter, so it changes no model.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">guideline estimate</span></td><td>the effect comes from a CPIC / DPWG dosing guideline, not from this paper's numbers.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">safety allele</span></td><td>a risk allele for an adverse reaction (an HLA type, G6PD deficiency …): it changes no PK/PD parameter.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>the extraction is incomplete or inconsistent.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted.</td></tr><tr><td><span class="pk-badge pk-badge--green">▶ simulatable</span></td><td>the paper's popPK model runs per phenotype in the browser (Simulation tab); its PGx Modelica model is under Models.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">model only</span></td><td>a PGx Modelica model exists but has no in-browser simulator.</td></tr></tbody></table></details>
 
@@ -19,9 +19,9 @@
 
 **Model:** No model was generated from this record.
 
-> Isoprenaline stimulates cAMP (GloSensor luminescence, RIU) via endogenous β2-adrenoceptors in HEK293 cells; peak responses were fitted with a sigmoid Emax model (isoprenaline Emax 100% of 1 μM isoprenaline, log EC50 −8.01 M) and initial rates with an operational model (IRmax 100%, log L50 −8.13 M), with the signal decline described by operational rate constants k1 and k2 (not assigned to specific processes).
+> Isoprenaline stimulates the peak cAMP GloSensor™ luminescence response in HEK293 cells via a sigmoidal Emax model, with a Log EC50 of −8.01 ± 0.12 M and an Emax of 100% relative to 1 μM isoprenaline. The paper describes the underlying mechanism as an initial rate of cAMP formation modified by two operational rate constants (k1 and k2) representing attenuation processes like phosphodiesterase activity or receptor desensitisation, but does not provide specific numerical values for these rate constants.
 >
-> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+> <sub>in the paper's terms — summarised by qwen3.8:27b-mtp-q8_0 from the paper's text; not checked by a person</sub>
 
 - **paper:** `Cullum_2023`
 - **model family:** `sigmoid_emax`
@@ -46,31 +46,19 @@ Cullum SA et al., Kinetic analysis of endogenous β2 -adre…, British journal o
 
 
 **Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
+first reading `ollama:qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.444 (12/27 fields) | 15 |
+| `einfracz:gpt-oss-120b` | not confirmed | 0.5 (3/6 fields) | 3 |
 
-<details><summary>15 field(s) a reader read differently</summary>
+<details><summary>3 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `driver_compound` | isoprenaline | β2‑adrenoceptor agonist | mismatch |
-| `gpt-oss:120b` | `parameters[Q320]` | not captured | 83.36 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q320]` | not captured | 30.34 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q320]` | not captured | 22.41 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q321]` | not captured | -8.13 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q321]` | not captured | -8.80 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q321]` | not captured | -6.68 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q321]` | not captured | -8.08 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q322]` | -8.13 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q322]` | -8.80 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q322]` | -6.68 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q322]` | -8.08 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q323]` | 83.36 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q323]` | 30.34 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q323]` | 22.41 | not captured | only_one_extracted |
+| `einfracz:gpt-oss-120b` | `effect_form` | unknown | additive | mismatch |
+| `einfracz:gpt-oss-120b` | `model_family` | sigmoid_emax | emax | mismatch |
+| `einfracz:gpt-oss-120b` | `parameters[Q321].value` | −8.01 ± 0.12 | -8.01 | mismatch |
 
 </details>
 

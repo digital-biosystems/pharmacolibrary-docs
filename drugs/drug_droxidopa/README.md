@@ -18,7 +18,7 @@ Droxidopa, a synthetic amino acid that the body converts into norepinephrine, is
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-06 08:55 | 2:01 | 0/0/0 | 0/0/1 | 0/0/0 | 54,180/1,305 | ollama / qwen3.8:27b-mtp-q8_0 | 5 | 0/9 | 5/0 | 0 |
+| 2026-10-09 19:52 | 1:12 | 0/0/0 | 0/0/1 | 0/0/0 | 12,287/1,267 | ollama / qwen3.8:27b-mtp-q8_0 | 5 | 0/9 | 5/0 | 0 |
 
 ## popPK records
 
@@ -28,7 +28,7 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">needs review</span> | [White_2018_QTcI](drugs/drug_droxidopa/pd_White_2018_QTcI.md) | QTcI ← droxidopa · direct linear effect | — | White WB et al., Impact of the Norepinephrine Prodrug Dr…, Clinical pharmacology in dr… (2018) | [10.1002/cpdd.393](https://doi.org/10.1002/cpdd.393) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by ollama:gpt-oss:120b (not confirmed, agreement 0.8), einfracz:gpt-oss-120b (not confirmed, agreement 0.8). The first reading is what the record holds.">cross-check: disputed 0/2</span> | [White_2018_QTcI](drugs/drug_droxidopa/pd_White_2018_QTcI.md) | QTcI ← droxidopa · direct linear effect | — | White WB et al., Impact of the Norepinephrine Prodrug Dr…, Clinical pharmacology in dr… (2018) | [10.1002/cpdd.393](https://doi.org/10.1002/cpdd.393) |
 
 ## ADME sites
 
@@ -48,10 +48,10 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 ## Coverage
 
-- **PubMed hits:** 26 matched, 20 returned
-- **screened:** 0  ·  **relevant:** 0
+- **PubMed hits:** 27 matched, 21 returned
+- **screened:** 1  ·  **relevant:** 0
 - **records:** 0  ·  extracted 0  ·  needs_review 0  ·  rejected 0  ·  stale 0
-- **scholar-agent fallback query used:** not captured
+- **scholar-agent fallback query used:** True
 
 ## Screened and excluded
 
@@ -81,6 +81,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 | popPK | White_2018 | relevant | 4 | 5 | The study reports non-compartmental PK parameters (AUC, Cmax, t1/2) for droxidopa, but lacks compartmental model parameters (CL, V, Q) and the specific numeric values for t1/2 and tmax are only described qualitatively in the text rather than listed in a table. |
 | popPK | Yamamoto_1988 | irrelevant | 0 | 0 | The study is a behavioral pharmacology experiment in rats involving serotonin antagonists and L-threo-DOPS, with no pharmacokinetic analysis or data for droxidopa. |
 | PD | Yamamoto_1988 | not_relevant | 0 | 0 | The paper studies muricide in rats using serotonin antagonists and methamphetamine; it does not mention droxidopa or report any pharmacodynamic parameters for it. |
+| popPK | Yin_2026 | irrelevant | 0 | 0 | The study is a mechanistic investigation of neuroprotection in a Parkinson's disease model and does not report any pharmacokinetic parameters for droxidopa. |
 | popPK | Zhang_2025 | irrelevant | 0 | 0 | The paper is a medical education study on peer-assisted learning and contains no pharmacokinetic data for droxidopa. |
 | popPK | unknown_2015 | irrelevant | 0 | 0 | no_text gate: only 106 chars of text extracted (&lt; 400) |
 | PD | unknown_2015 | not_relevant | 0 | 0 | The provided text is only a header for a conference abstract collection and contains no specific data, analysis, or mention of droxidopa pharmacodynamics. |

@@ -4,7 +4,7 @@
 
 # etilefrine — `Etilefrine_Hengstmann1975_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.889). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.778). The first reading is what the record holds.">cross-check: partial</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -20,7 +20,7 @@
 
 The volume of distribution of the peripheral compartment is reported as 160 with unit '1', a dimension mismatch for a structural volume parameter. The one-compartment structure also contains an unreachable compartment, so the topology is incomplete. The record was built from the abstract only, so summary statistics stood in for a fitted model, and a second reader recorded no values for the bioavailability (0.55), half-life (2 hours) and distribution volume (160), disagreeing with all three. Extracted — etilefrine: Fab 0.55, V2 160 1, t1/2z 2 hours.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on `parameters[vd, beta].parameter_id`: this record has Q64, the second reading Q61. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of vd, beta: this record has 160, the second reading none; it also differs on 1 more field. That field does not shape the model.
 
 <sub>reviewed by glm-5.3-flash</sub>
 
@@ -68,18 +68,19 @@ Hengstmann JH et al., The physiological disposition of etilef…, European journ
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.889 (8/9 fields) | 1 |
+| `gpt-oss:120b` | partly confirmed | 0.778 (7/9 fields) | 2 |
 
-<details><summary>1 field(s) a reader read differently</summary>
+<details><summary>2 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `parameters[vd, beta].parameter_id` | Q64 | Q61 | mismatch |
+| `gpt-oss:120b` | `parameters[vd, beta]` | 160 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[volume of distribution]` | not captured | 160 | only_one_extracted |
 
 </details>
 

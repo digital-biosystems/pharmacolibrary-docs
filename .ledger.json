@@ -1,5 +1,5 @@
 {
- "kb_mtime": 1791573787.8288467,
+ "kb_mtime": 1791581360.0,
  "rows": [
   {
    "abstract_only": 83,
@@ -103559,9 +103559,9 @@
    "want_poppk_mid": 5
   },
   {
-   "abstract_only": 10,
+   "abstract_only": 11,
    "backend": "ollama",
-   "calls": 17,
+   "calls": 4,
    "combination": null,
    "curated_models": 0,
    "drug": "droxidopa",
@@ -103569,7 +103569,7 @@
     "approved",
     "investigational"
    ],
-   "elapsed_s": 121.3,
+   "elapsed_s": 72.6,
    "eu_status": "not_centrally_authorised",
    "ft_any_hit": 1,
    "ft_any_papers": 1,
@@ -103605,11 +103605,11 @@
    "interactions": 0,
    "jats": 9,
    "model": "qwen3.8:27b-mtp-q8_0",
-   "no_pdf": 10,
+   "no_pdf": 11,
    "non_oa": 0,
    "oa": 9,
    "panel": "dg-C01C-2",
-   "papers": 19,
+   "papers": 20,
    "pd_extracted": 2,
    "pd_gapfill": 0,
    "pd_other": 0,
@@ -103634,8 +103634,8 @@
    "supp_nonmem": 0,
    "supp_other": 5,
    "supp_pd_other": 2,
-   "tokens_in": 54180,
-   "tokens_out": 1305,
+   "tokens_in": 12287,
+   "tokens_out": 1267,
    "want_pd_have": 0,
    "want_pd_hi": 0,
    "want_pd_lo": 0,
@@ -103650,9 +103650,9 @@
    "want_poppk_mid": 0
   },
   {
-   "abstract_only": 37,
+   "abstract_only": 40,
    "backend": "ollama",
-   "calls": 19,
+   "calls": 6,
    "combination": null,
    "curated_models": 0,
    "drug": "enoximone",
@@ -103661,7 +103661,7 @@
     "investigational",
     "withdrawn"
    ],
-   "elapsed_s": 66.0,
+   "elapsed_s": 69.7,
    "eu_status": "not_centrally_authorised",
    "ft_any_hit": 0,
    "ft_any_papers": 0,
@@ -103692,16 +103692,16 @@
    "ft_poppk_mid_hit": 0,
    "ft_poppk_mid_papers": 0,
    "ft_poppk_mid_rec": 0,
-   "grobid": 0,
+   "grobid": 1,
    "has_truth": false,
    "interactions": 0,
    "jats": 2,
    "model": "qwen3.8:27b-mtp-q8_0",
-   "no_pdf": 37,
-   "non_oa": 0,
+   "no_pdf": 40,
+   "non_oa": 1,
    "oa": 2,
    "panel": "dg-C01C-2",
-   "papers": 39,
+   "papers": 43,
    "pd_extracted": 0,
    "pd_gapfill": 0,
    "pd_other": 0,
@@ -103724,8 +103724,8 @@
    "review_records": 0,
    "supp_nonmem": 1,
    "supp_other": 0,
-   "tokens_in": 40258,
-   "tokens_out": 676,
+   "tokens_in": 6112,
+   "tokens_out": 424,
    "want_pd_have": 0,
    "want_pd_hi": 0,
    "want_pd_lo": 8,
@@ -103737,12 +103737,12 @@
    "want_poppk_have": 0,
    "want_poppk_hi": 0,
    "want_poppk_lo": 0,
-   "want_poppk_mid": 0
+   "want_poppk_mid": 1
   },
   {
    "abstract_only": 25,
    "backend": "ollama",
-   "calls": 101,
+   "calls": 4,
    "combination": null,
    "curated_models": 0,
    "drug": "ephedrine",
@@ -103750,7 +103750,7 @@
     "approved",
     "investigational"
    ],
-   "elapsed_s": 545.2,
+   "elapsed_s": 40.9,
    "eu_status": "not_centrally_authorised",
    "ft_any_hit": 1,
    "ft_any_papers": 2,
@@ -103817,8 +103817,8 @@
    "supp_other": 5,
    "supp_pd_other": 2,
    "supp_pk_other": 1,
-   "tokens_in": 155246,
-   "tokens_out": 22180,
+   "tokens_in": 12481,
+   "tokens_out": 1159,
    "want_pd_have": 0,
    "want_pd_hi": 0,
    "want_pd_lo": 5,
@@ -103833,9 +103833,9 @@
    "want_poppk_mid": 1
   },
   {
-   "abstract_only": 20,
+   "abstract_only": 18,
    "backend": "ollama",
-   "calls": 79,
+   "calls": 13,
    "combination": null,
    "curated_models": 0,
    "drug": "etilefrine",
@@ -103843,7 +103843,7 @@
     "approved",
     "withdrawn"
    ],
-   "elapsed_s": 458.9,
+   "elapsed_s": 158.9,
    "eu_status": "not_centrally_authorised",
    "ft_any_hit": 0,
    "ft_any_papers": 0,
@@ -103877,7 +103877,7 @@
    "grobid": 1,
    "has_truth": false,
    "interactions": 0,
-   "jats": 2,
+   "jats": 4,
    "model": "qwen3.8:27b-mtp-q8_0",
    "no_pdf": 18,
    "non_oa": 0,
@@ -103906,8 +103906,8 @@
    "review_records": 49,
    "supp_nonmem": 0,
    "supp_other": 0,
-   "tokens_in": 168779,
-   "tokens_out": 9882,
+   "tokens_in": 65137,
+   "tokens_out": 3707,
    "want_pd_have": 0,
    "want_pd_hi": 0,
    "want_pd_lo": 0,
@@ -104008,16 +104008,16 @@
    "want_poppk_mid": 0
   },
   {
-   "abstract_only": 36,
+   "abstract_only": 38,
    "backend": "ollama",
-   "calls": 52,
+   "calls": 13,
    "combination": null,
    "curated_models": 0,
    "drug": "fenoldopam",
    "drugbank_groups": [
     "approved"
    ],
-   "elapsed_s": 423.7,
+   "elapsed_s": 174.0,
    "eu_status": "not_centrally_authorised",
    "ft_any_hit": 0,
    "ft_any_papers": 1,
@@ -104053,11 +104053,11 @@
    "interactions": 0,
    "jats": 2,
    "model": "qwen3.8:27b-mtp-q8_0",
-   "no_pdf": 36,
+   "no_pdf": 38,
    "non_oa": 0,
    "oa": 2,
    "panel": "dg-C01C-2",
-   "papers": 38,
+   "papers": 40,
    "pd_extracted": 1,
    "pd_gapfill": 0,
    "pd_other": 0,
@@ -104082,8 +104082,8 @@
    "supp_nonmem": 0,
    "supp_other": 0,
    "supp_pd_none": 1,
-   "tokens_in": 64826,
-   "tokens_out": 10888,
+   "tokens_in": 12511,
+   "tokens_out": 8604,
    "want_pd_have": 0,
    "want_pd_hi": 0,
    "want_pd_lo": 5,
@@ -104100,14 +104100,14 @@
   {
    "abstract_only": 1,
    "backend": "ollama",
-   "calls": 1,
+   "calls": 3,
    "combination": null,
    "curated_models": 0,
    "drug": "gepefrine",
    "drugbank_groups": [
     "experimental"
    ],
-   "elapsed_s": 11.2,
+   "elapsed_s": 37.2,
    "eu_status": "not_centrally_authorised",
    "ft_any_hit": 0,
    "ft_any_papers": 0,
@@ -104170,8 +104170,8 @@
    "review_records": 0,
    "supp_nonmem": 0,
    "supp_other": 0,
-   "tokens_in": 430,
-   "tokens_out": 57,
+   "tokens_in": 1418,
+   "tokens_out": 171,
    "want_pd_have": 0,
    "want_pd_hi": 0,
    "want_pd_lo": 0,
@@ -104188,14 +104188,14 @@
   {
    "abstract_only": 44,
    "backend": "ollama",
-   "calls": 32,
+   "calls": 2,
    "combination": null,
    "curated_models": 0,
    "drug": "ibopamine",
    "drugbank_groups": [
     "experimental"
    ],
-   "elapsed_s": 126.8,
+   "elapsed_s": 61.4,
    "eu_status": "not_centrally_authorised",
    "ft_any_hit": 0,
    "ft_any_papers": 0,
@@ -104258,8 +104258,8 @@
    "review_records": 0,
    "supp_nonmem": 0,
    "supp_other": 0,
-   "tokens_in": 37434,
-   "tokens_out": 1994,
+   "tokens_in": 1594,
+   "tokens_out": 110,
    "want_pd_have": 0,
    "want_pd_hi": 0,
    "want_pd_lo": 4,
@@ -104271,10 +104271,10 @@
    "want_poppk_have": 0,
    "want_poppk_hi": 1,
    "want_poppk_lo": 0,
-   "want_poppk_mid": 2
+   "want_poppk_mid": 3
   },
   {
-   "abstract_only": 88,
+   "abstract_only": 111,
    "backend": "ollama",
    "calls": 155,
    "combination": null,
@@ -104287,12 +104287,12 @@
    "elapsed_s": 755.4,
    "eu_status": "not_centrally_authorised",
    "ft_any_hit": 10,
-   "ft_any_papers": 21,
+   "ft_any_papers": 22,
    "ft_pd_hi_hit": 1,
    "ft_pd_hi_papers": 2,
    "ft_pd_hi_rec": 1,
    "ft_pd_lo_hit": 6,
-   "ft_pd_lo_papers": 14,
+   "ft_pd_lo_papers": 15,
    "ft_pd_lo_rec": 15,
    "ft_pd_mid_hit": 3,
    "ft_pd_mid_papers": 5,
@@ -104318,13 +104318,13 @@
    "grobid": 14,
    "has_truth": false,
    "interactions": 0,
-   "jats": 29,
+   "jats": 30,
    "model": "qwen3.8:27b-mtp-q8_0",
-   "no_pdf": 87,
+   "no_pdf": 108,
    "non_oa": 1,
-   "oa": 43,
+   "oa": 46,
    "panel": "dg-C01C-2",
-   "papers": 131,
+   "papers": 155,
    "pd_extracted": 29,
    "pd_gapfill": 0,
    "pd_other": 0,
@@ -104341,7 +104341,7 @@
    "poppk_extracted": 0,
    "poppk_other": 0,
    "poppk_rejected": 0,
-   "relevant": 74,
+   "relevant": 75,
    "reused_cache": false,
    "review_papers": 0,
    "review_records": 0,
@@ -104355,7 +104355,7 @@
    "tokens_out": 12949,
    "want_pd_have": 0,
    "want_pd_hi": 0,
-   "want_pd_lo": 19,
+   "want_pd_lo": 27,
    "want_pd_mid": 0,
    "want_pgx_have": 0,
    "want_pgx_hi": 0,
@@ -104369,7 +104369,7 @@
   {
    "abstract_only": 13,
    "backend": "ollama",
-   "calls": 135,
+   "calls": 1,
    "combination": null,
    "curated_models": 0,
    "drug": "levosimendan",
@@ -104378,7 +104378,7 @@
     "investigational",
     "withdrawn"
    ],
-   "elapsed_s": 825.9,
+   "elapsed_s": 19.6,
    "eu_status": "not_centrally_authorised",
    "ft_any_hit": 3,
    "ft_any_papers": 4,
@@ -104447,8 +104447,8 @@
    "supp_other": 3,
    "supp_pd_none": 9,
    "supp_pk_other": 1,
-   "tokens_in": 229110,
-   "tokens_out": 41262,
+   "tokens_in": 8161,
+   "tokens_out": 200,
    "want_pd_have": 0,
    "want_pd_hi": 0,
    "want_pd_lo": 1,
@@ -104465,7 +104465,7 @@
   {
    "abstract_only": 2,
    "backend": "ollama",
-   "calls": 6,
+   "calls": 2,
    "combination": null,
    "curated_models": 0,
    "drug": "mephentermine",
@@ -104473,7 +104473,7 @@
     "approved",
     "withdrawn"
    ],
-   "elapsed_s": 24.2,
+   "elapsed_s": 19.7,
    "eu_status": "not_centrally_authorised",
    "ft_any_hit": 0,
    "ft_any_papers": 0,
@@ -104536,8 +104536,8 @@
    "review_records": 0,
    "supp_nonmem": 0,
    "supp_other": 0,
-   "tokens_in": 14049,
-   "tokens_out": 303,
+   "tokens_in": 1372,
+   "tokens_out": 172,
    "want_pd_have": 0,
    "want_pd_hi": 0,
    "want_pd_lo": 0,
@@ -104554,14 +104554,14 @@
   {
    "abstract_only": 7,
    "backend": "ollama",
-   "calls": 5,
+   "calls": 3,
    "combination": null,
    "curated_models": 0,
    "drug": "metaraminol",
    "drugbank_groups": [
     "approved"
    ],
-   "elapsed_s": 33.4,
+   "elapsed_s": 71.6,
    "eu_status": "not_centrally_authorised",
    "ft_any_hit": 0,
    "ft_any_papers": 1,
@@ -104624,8 +104624,8 @@
    "review_records": 0,
    "supp_nonmem": 0,
    "supp_other": 1,
-   "tokens_in": 21549,
-   "tokens_out": 684,
+   "tokens_in": 10093,
+   "tokens_out": 1234,
    "want_pd_have": 0,
    "want_pd_hi": 0,
    "want_pd_lo": 4,
@@ -104640,18 +104640,18 @@
    "want_poppk_mid": 0
   },
   {
-   "abstract_only": 284,
-   "calls": 602,
+   "abstract_only": 311,
+   "calls": 206,
    "drug": "TOTAL",
    "drugs": 12,
-   "elapsed_s": 3392.0,
+   "elapsed_s": 1481.0,
    "ft_any_hit": 15,
-   "ft_any_papers": 30,
+   "ft_any_papers": 31,
    "ft_pd_hi_hit": 1,
    "ft_pd_hi_papers": 2,
    "ft_pd_hi_rec": 1,
    "ft_pd_lo_hit": 9,
-   "ft_pd_lo_papers": 17,
+   "ft_pd_lo_papers": 18,
    "ft_pd_lo_rec": 22,
    "ft_pd_mid_hit": 4,
    "ft_pd_mid_papers": 7,
@@ -104674,15 +104674,15 @@
    "ft_poppk_mid_hit": 0,
    "ft_poppk_mid_papers": 0,
    "ft_poppk_mid_rec": 0,
-   "grobid": 18,
+   "grobid": 19,
    "interactions": 0,
    "is_total": true,
-   "jats": 60,
-   "no_pdf": 281,
-   "non_oa": 1,
-   "oa": 80,
+   "jats": 63,
+   "no_pdf": 308,
+   "non_oa": 2,
+   "oa": 83,
    "panel": "dg-C01C-2",
-   "papers": 362,
+   "papers": 393,
    "pd_extracted": 43,
    "pd_gapfill": 0,
    "pd_other": 2,
@@ -104699,16 +104699,16 @@
    "poppk_extracted": 2,
    "poppk_other": 0,
    "poppk_rejected": 5,
-   "relevant": 147,
+   "relevant": 148,
    "review_papers": 11,
    "review_records": 277,
    "supp_nonmem": 2,
    "supp_other": 28,
-   "tokens_in": 1344997,
-   "tokens_out": 102180,
+   "tokens_in": 690302,
+   "tokens_out": 29997,
    "want_pd_have": 0,
    "want_pd_hi": 0,
-   "want_pd_lo": 46,
+   "want_pd_lo": 54,
    "want_pd_mid": 0,
    "want_pgx_have": 0,
    "want_pgx_hi": 0,
@@ -104717,7 +104717,7 @@
    "want_poppk_have": 0,
    "want_poppk_hi": 9,
    "want_poppk_lo": 0,
-   "want_poppk_mid": 3
+   "want_poppk_mid": 5
   },
   {
    "abstract_only": 93,
@@ -503796,7 +503796,7 @@
    "want_poppk_mid": 0
   }
  ],
- "run_mtime": 1791547976.1697118,
+ "run_mtime": 1791576773.2414014,
  "runs": {
   "dbs": {
    "attempts": 11,
@@ -506680,21 +506680,21 @@
    }
   },
   "dg-C01C-2": {
-   "attempts": 5,
+   "attempts": 7,
    "drugs": 12,
-   "elapsed_h": 0.946,
-   "finished_at": "2026-10-06T09:50:14+00:00",
+   "elapsed_h": 0.284,
+   "finished_at": "2026-10-09T20:07:58+00:00",
    "host": "http://sasdsnode03.vito.local:56456",
    "label": "dg-C01C-2",
    "model": "qwen3.8:27b-mtp-q8_0",
    "pid": null,
-   "processed": 11,
-   "started_at": "2026-10-06T08:53:31+00:00",
+   "processed": 10,
+   "started_at": "2026-10-09T19:50:57+00:00",
    "status": "finished",
    "tokens": {
-    "calls": 602,
-    "in": 1344997,
-    "out": 102180
+    "calls": 64,
+    "in": 168927,
+    "out": 20704
    },
    "totals": {
     "PD": {
@@ -581725,6 +581725,22 @@
    "year": "1984"
   },
   {
+   "authors": "Smith NA; Kates RE; Lebsack C; Ruder MA; Mead RH; Bekele T; et al.",
+   "doi": "10.1016/0002-8703(91)90522-j",
+   "doi_url": "https://doi.org/10.1016/0002-8703(91)90522-j",
+   "domain": "poppk",
+   "drug": "enoximone",
+   "journal": "American heart journal 122(3 Pt 1):755\u2013763",
+   "pmid": "1831585",
+   "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/1831585",
+   "reason": "The study is a clinical PK/PD trial of enoximone, but the provided abstract lacks specific numeric PK parameter values (CL, V, t1/2), mentioning only qualitative observations of accumulation and half-life.",
+   "relevance_score": 8,
+   "slug": "enoximone",
+   "stem": "Smith_1991",
+   "title": "Clinical pharmacology of intravenous enoximone: pharmacodynamics and pharmacokinetics in patients with heart failure",
+   "year": "1991"
+  },
+  {
    "authors": "Peng WB; Sun WZ; Jiang T; Li GQ; Dai SJ",
    "doi": "10.1080/10286020.2010.508283",
    "doi_url": "https://doi.org/10.1080/10286020.2010.508283",
@@ -584155,6 +584171,22 @@
    "stem": "Soldati_1993",
    "title": "Ocular pharmacokinetics and pharmacodynamics in rabbits of ibopamine, a new mydriatic agent",
    "year": "1993"
+  },
+  {
+   "authors": "de Mey C; Enterling D; Meineke I",
+   "doi": "",
+   "doi_url": "",
+   "domain": "poppk",
+   "drug": "ibopamine",
+   "journal": "Arzneimittel-Forschung 39(9):1138\u20131143",
+   "pmid": "2590265",
+   "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/2590265",
+   "reason": "The study is a relevant PK/PD interaction study for ibopamine, but the evidence text only describes qualitative changes (reduction in Cmax/AUC) without providing specific numeric parameter values.",
+   "relevance_score": 8,
+   "slug": "ibopamine",
+   "stem": "de_1989",
+   "title": "Pharmacokinetic and pharmacodynamic interactions between single oral doses of ibopamine and food in normal man",
+   "year": "1989"
   },
   {
    "authors": "Meerkhan SA; Sj\u00f6green-Gleisner K; Larsson E; Strand SE; J\u00f6nsson BA",
@@ -619033,6 +619065,25 @@
    "stem": "Barrett_2018",
    "title": "Extended-Duration MK-8591-Eluting Implant as a Candidate for HIV Treatment and Prevention",
    "year": "2018"
+  },
+  {
+   "authors": "Abdel-Razaq W; Bates TE; Kendall DA",
+   "doi": "10.1016/j.bcp.2007.02.015",
+   "doi_url": "https://doi.org/10.1016/j.bcp.2007.02.015",
+   "domain": "pd",
+   "drug": "isoprenaline",
+   "journal": "Biochemical pharmacology",
+   "matched": [
+    "EC50"
+   ],
+   "pmid": "17382299",
+   "pubmed_url": "https://www.ncbi.nlm.nih.gov/pubmed/17382299",
+   "reason": "metadata signals extractable PD data (EC50)",
+   "relevance_score": 5,
+   "slug": "isoprenaline",
+   "stem": "Abdel-Razaq_2007",
+   "title": "The effects of antidepressants on cyclic AMP-response element-driven gene transcription in a model cell system",
+   "year": "2007"
   },
   {
    "authors": "Jones SM; Hunt NA; Del Monte F; Harding SE",
@@ -654926,6 +654977,44 @@
    "year": "1988"
   },
   {
+   "authors": "Abrahamsen J",
+   "doi": "10.1111/j.1600-0773.1991.tb01613.x",
+   "doi_url": "https://doi.org/10.1111/j.1600-0773.1991.tb01613.x",
+   "domain": "pd",
+   "drug": "isoprenaline",
+   "journal": "Pharmacology & toxicology",
+   "matched": [
+    "IC50"
+   ],
+   "pmid": "1762989",
+   "pubmed_url": "https://www.ncbi.nlm.nih.gov/pubmed/1762989",
+   "reason": "metadata signals extractable PD data (IC50)",
+   "relevance_score": 4,
+   "slug": "isoprenaline",
+   "stem": "Abrahamsen_1991",
+   "title": "Accumulation and release of adrenaline, and the modulation by adrenaline of noradrenaline release from rabbit blood vessels in vitro",
+   "year": "1991"
+  },
+  {
+   "authors": "Advenier C; Freslon JL",
+   "doi": "10.1111/j.1476-5381.1985.tb08905.x",
+   "doi_url": "https://doi.org/10.1111/j.1476-5381.1985.tb08905.x",
+   "domain": "pd",
+   "drug": "isoprenaline",
+   "journal": "British journal of pharmacology",
+   "matched": [
+    "EC50"
+   ],
+   "pmid": "4052734",
+   "pubmed_url": "https://www.ncbi.nlm.nih.gov/pubmed/4052734",
+   "reason": "metadata signals extractable PD data (EC50)",
+   "relevance_score": 4,
+   "slug": "isoprenaline",
+   "stem": "Advenier_1985",
+   "title": "The guinea-pig isolated bronchus for the in vitro study of small calibre airway reactivity",
+   "year": "1985"
+  },
+  {
    "authors": "Anesini C; Borda E",
    "doi": "10.1046/j.1474-8673.2002.00261.x",
    "doi_url": "https://doi.org/10.1046/j.1474-8673.2002.00261.x",
@@ -655002,6 +655091,25 @@
    "year": "1991"
   },
   {
+   "authors": "Fallgren B; Bjellin L; Edvinsson L",
+   "doi": "10.1111/j.1600-0773.1988.tb00971.x",
+   "doi_url": "https://doi.org/10.1111/j.1600-0773.1988.tb00971.x",
+   "domain": "pd",
+   "drug": "isoprenaline",
+   "journal": "Pharmacology & toxicology",
+   "matched": [
+    "Emax"
+   ],
+   "pmid": "2853340",
+   "pubmed_url": "https://www.ncbi.nlm.nih.gov/pubmed/2853340",
+   "reason": "metadata signals extractable PD data (Emax)",
+   "relevance_score": 4,
+   "slug": "isoprenaline",
+   "stem": "Fallgren_1988",
+   "title": "Effect of pregnancy and sex steroids on alpha 1-adrenoceptor mechanisms in the guinea-pig uterine vascular bed",
+   "year": "1988"
+  },
+  {
    "authors": "Garland LG; Marrion NV; Martin GR",
    "doi": "10.1007/BF00508831",
    "doi_url": "https://doi.org/10.1007/BF00508831",
@@ -655019,6 +655127,25 @@
    "stem": "Garland_1981",
    "title": "The extraneuronal O-methylation of 3H-(+)isoprenaline by guinea-pig tracheal rings in vitro",
    "year": "1981"
+  },
+  {
+   "authors": "Goldie RG; Papadimitriou JM; Paterson JW; Rigby PJ; Self HM; Spina D",
+   "doi": "10.1111/j.1476-5381.1986.tb10150.x",
+   "doi_url": "https://doi.org/10.1111/j.1476-5381.1986.tb10150.x",
+   "domain": "pd",
+   "drug": "isoprenaline",
+   "journal": "British journal of pharmacology",
+   "matched": [
+    "Emax"
+   ],
+   "pmid": "3006855",
+   "pubmed_url": "https://www.ncbi.nlm.nih.gov/pubmed/3006855",
+   "reason": "metadata signals extractable PD data (Emax)",
+   "relevance_score": 4,
+   "slug": "isoprenaline",
+   "stem": "Goldie_1986",
+   "title": "Influence of the epithelium on responsiveness of guinea-pig isolated trachea to contractile and relaxant agonists",
+   "year": "1986"
   },
   {
    "authors": "Hall IP; Widdop S; Townsend P; Daykin K",
@@ -655154,6 +655281,25 @@
    "year": "1997"
   },
   {
+   "authors": "Pino R; Cerbai E; Calamai G; Alajmo F; Borgioli A; Braconi L; et al.",
+   "doi": "10.1016/s0008-6363(98)00198-9",
+   "doi_url": "https://doi.org/10.1016/s0008-6363(98)00198-9",
+   "domain": "pd",
+   "drug": "isoprenaline",
+   "journal": "Cardiovascular research",
+   "matched": [
+    "EC50"
+   ],
+   "pmid": "10070492",
+   "pubmed_url": "https://www.ncbi.nlm.nih.gov/pubmed/10070492",
+   "reason": "metadata signals extractable PD data (EC50)",
+   "relevance_score": 4,
+   "slug": "isoprenaline",
+   "stem": "Pino_1998",
+   "title": "Effect of 5-HT4 receptor stimulation on the pacemaker current I(f) in human isolated atrial myocytes",
+   "year": "1998"
+  },
+  {
    "authors": "Robinson TN; Cross AJ; Green AR; Toczek JM; Boar BR",
    "doi": "10.1111/j.1476-5381.1989.tb14612.x",
    "doi_url": "https://doi.org/10.1111/j.1476-5381.1989.tb14612.x",
@@ -655171,6 +655317,25 @@
    "stem": "Robinson_1989",
    "title": "Effects of the putative antagonists phaclofen and delta-aminovaleric acid on GABAB receptor biochemistry",
    "year": "1989"
+  },
+  {
+   "authors": "Schoeffter P; Stoclet JC",
+   "doi": "10.1016/0014-2999(85)90430-3",
+   "doi_url": "https://doi.org/10.1016/0014-2999(85)90430-3",
+   "domain": "pd",
+   "drug": "isoprenaline",
+   "journal": "European journal of pharmacology",
+   "matched": [
+    "EC50"
+   ],
+   "pmid": "2986998",
+   "pubmed_url": "https://www.ncbi.nlm.nih.gov/pubmed/2986998",
+   "reason": "metadata signals extractable PD data (EC50)",
+   "relevance_score": 4,
+   "slug": "isoprenaline",
+   "stem": "Schoeffter_1985",
+   "title": "Effect of vasoactive intestinal polypeptide (VIP) on cyclic AMP level and relaxation in rat isolated aorta",
+   "year": "1985"
   },
   {
    "authors": "Souness JE; Carter CM; Diocee BK; Hassall GA; Wood LJ; Turner NC",
@@ -655247,6 +655412,25 @@
    "stem": "Vigholt-S\u00f8rensen_1991",
    "title": "Comparative effects of beta-adrenoceptor partial agonists on isolated rat atrium",
    "year": "1991"
+  },
+  {
+   "authors": "Yue L; Feng J; Wang Z; Nattel S",
+   "doi": "10.1111/j.1469-7793.1999.0385v.x",
+   "doi_url": "https://doi.org/10.1111/j.1469-7793.1999.0385v.x",
+   "domain": "pd",
+   "drug": "isoprenaline",
+   "journal": "The Journal of physiology",
+   "matched": [
+    "EC50"
+   ],
+   "pmid": "10087339",
+   "pubmed_url": "https://www.ncbi.nlm.nih.gov/pubmed/10087339",
+   "reason": "metadata signals extractable PD data (EC50)",
+   "relevance_score": 4,
+   "slug": "isoprenaline",
+   "stem": "Yue_1999",
+   "title": "Adrenergic control of the ultrarapid delayed rectifier current in canine atrial myocytes",
+   "year": "1999"
   },
   {
    "authors": "Arcanjo GS; Mounteer AH; Bellato CR; Silva LMMD; Brant Dias SH; Silva PRD",
@@ -734067,6 +734251,6 @@
  ],
  "wanted_stamp": [
   2283,
-  1791542675.15516
+  1791576458.2233226
  ]
 }
