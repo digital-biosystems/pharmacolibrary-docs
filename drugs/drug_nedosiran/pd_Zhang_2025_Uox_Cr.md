@@ -40,7 +40,6 @@ Zhang S et al., Population Pharmacokinetic and Pharmaco…, Clinical pharmacokin
 | PD (effect) | IC50 | `Q322` · not captured | 1.68 | ng/mL | not captured | llm (not captured) | Zhang_2025:pdv3 |
 | PD (effect) | Gamma | `Q325` · not captured | 2.56 | not captured | not captured | llm (not captured) | Zhang_2025:pdv3 |
 | PD (effect) | Lambda | `Q326` · not captured | 21.9 | week | not captured | llm (not captured) | Zhang_2025:pdv3 |
-| model term | AGE.BSL | `Q900` · not captured | -0.450 | not captured | not captured | llm (not captured) | Zhang_2025:pdv3 |
 | variability | IC50.IIV | `Q312` · not captured | 85.2 | % | not captured | llm (not captured) | Zhang_2025:pdv3 |
 
 <details class="legend">

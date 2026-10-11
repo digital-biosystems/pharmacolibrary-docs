@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C02A&quot;,&quot;href&quot;:&quot;atc/C02A.md&quot;},{&quot;label&quot;:&quot;clonidine&quot;,&quot;href&quot;:&quot;drugs/drug_clonidine/&quot;},{&quot;label&quot;:&quot;Li_2016 \u00b7 PD hot flashes&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Clonidine_Larsson2011_reference&quot;,&quot;label&quot;:&quot;Larsson_2011_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_clonidine/Clonidine_Larsson2011_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Clonidine_Tang2021_reference&quot;,&quot;label&quot;:&quot;Tang_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_clonidine/Clonidine_Tang2021_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Clonidine_Tang2021_reference&quot;,&quot;label&quot;:&quot;Tang_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_clonidine/Clonidine_Tang2021_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # hot flashes — PD  <span class="pk-badge pk-badge--green">extracted</span>
@@ -14,13 +14,17 @@
 
 ## What this record describes
 
-**As extracted:** Clonidine (the dose) drives hot flashes: direct Emax (saturable) effect.
+**As extracted:** Clonidine (concentrations from the PK model of Bardol_2025) drives hot flashes: direct Emax (saturable) effect.
 
 **Model:** No model was generated from this record.
 
+> The record describes a dose-only Emax model where clonidine inhibits hot flashes with a maximum effect (Emax) of 18.5% and an ET50 of 0 weeks. The paper does not provide full text to confirm the specific mechanism or additional potency parameters.
+>
+> <sub>in the paper's terms — summarised by qwen3.8:27b-mtp-q8_0 from the paper's text; not checked by a person</sub>
+
 - **paper:** `Li_2016`
 - **model family:** `emax`
-- **driver:** `dose_only`
+- **driver:** `cited_pk`
 - **tier:** population
 - **effect:** inhibition/unknown
 
@@ -31,8 +35,8 @@ Li L et al., Comparative efficacy of nonhormonal dru…, European journal of cli
 ## Parameters
 | role | label (paper) | Q-code · name | value | unit | value_si | link | source |
 |---|---|---|---|---|---|---|---|
-| PD (effect) | Emax | `Q323` · not captured | 18.5 | % | not captured | direction (not captured) | Li_2016:pdv3 |
-| — | ET50 | `Q100` · not captured | 0 | weeks | not captured | nil (not captured) | Li_2016:pdv3 |
+| PD (effect) | Emax | `Q323` · not captured | 18.5 % | % | not captured | direction (not captured) | Li_2016:pdv3 |
+| — | ET50 | `Q100` · not captured | 0 weeks | weeks | not captured | nil (not captured) | Li_2016:pdv3 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

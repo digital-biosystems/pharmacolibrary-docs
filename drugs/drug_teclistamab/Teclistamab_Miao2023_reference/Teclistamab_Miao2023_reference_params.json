@@ -1,0 +1,47 @@
+{
+ "dose_source": "paper",
+ "model_id": "Teclistamab_Miao2023_reference",
+ "note": "Values for the shared PK_2C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "paper_doses_kind": "discrete",
+ "paper_doses_mg": [
+  0.021,
+  0.7,
+  1.344,
+  1.4,
+  4.2,
+  5.6,
+  16.8,
+  50.4,
+  105.0,
+  140.0,
+  420.0,
+  2100.0,
+  10500.0,
+  21000.0
+ ],
+ "parameters": {
+  "Cl": 5.196759259259259e-09,
+  "F": 0.718,
+  "Tlag": 0.0,
+  "VdPerKg": 5.9e-05,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 2.1000000000000003e-08,
+  "k12": 1.0929513048157115e-07,
+  "k21": 3.368573797678275e-07,
+  "ka": 1.539351851851852e-06,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 1318682.1643286573
+ },
+ "reference_peaks": {
+  "central.C": 4.389182252211322e-07
+ },
+ "stop_time": 4838400.0,
+ "template": "PK_2C_enteral",
+ "template_fmu": "PK_2C_enteral.fmu"
+}

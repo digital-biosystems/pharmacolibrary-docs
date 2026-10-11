@@ -18,6 +18,10 @@
 
 **Model:** No model was generated from this record.
 
+> The record describes a linear additive model where quinidine concentrations stimulate the rate-corrected QT interval (QTc) with an effect compartment rate constant (keo) of 3.74 h-1. The paper does not provide full text to confirm the specific mechanism or other potency parameters.
+>
+> <sub>in the paper's terms — summarised by qwen3.8:27b-mtp-q8_0 from the paper's text; not checked by a person</sub>
+
 - **paper:** `Karbwang_1993`
 - **model family:** `linear`
 - **driver:** `cited_pk`

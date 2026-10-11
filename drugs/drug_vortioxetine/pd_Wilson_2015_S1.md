@@ -1,8 +1,7 @@
-<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N06A&quot;,&quot;href&quot;:&quot;atc/N06A.md&quot;},{&quot;label&quot;:&quot;vortioxetine&quot;,&quot;href&quot;:&quot;drugs/drug_vortioxetine/&quot;},{&quot;label&quot;:&quot;Wilson_2015 \u00b7 PD Sleep stage 1 (uncorrected data)&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Vortioxetine_Areberg2014v2_reference&quot;,&quot;label&quot;:&quot;Areberg_2014_2_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_vortioxetine/Vortioxetine_Areberg2014v2_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N06A&quot;,&quot;href&quot;:&quot;atc/N06A.md&quot;},{&quot;label&quot;:&quot;vortioxetine&quot;,&quot;href&quot;:&quot;drugs/drug_vortioxetine/&quot;},{&quot;label&quot;:&quot;Wilson_2015 \u00b7 PD Sleep stage 1&quot;}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# Sleep stage 1 (uncorrected data) — PD  <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span>
+# Sleep stage 1 — PD  <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span>
 
 <details class="pk-legend"><summary>What the PGx badges mean — evidence, and whether a model runs</summary><table><tbody><tr><td><span class="pk-badge pk-badge--green">quantitative</span></td><td>the paper gives the effect of each phenotype (or genotype) on a named model parameter — a θ per category.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">qualitative</span></td><td>the paper links the gene to the drug but states no effect size on a model parameter, so it changes no model.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">guideline estimate</span></td><td>the effect comes from a CPIC / DPWG dosing guideline, not from this paper's numbers.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">safety allele</span></td><td>a risk allele for an adverse reaction (an HLA type, G6PD deficiency …): it changes no PK/PD parameter.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>the extraction is incomplete or inconsistent.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted.</td></tr><tr><td><span class="pk-badge pk-badge--green">▶ simulatable</span></td><td>the paper's popPK model runs per phenotype in the browser (Simulation tab); its PGx Modelica model is under Models.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">model only</span></td><td>a PGx Modelica model exists but has no in-browser simulator.</td></tr></tbody></table></details>
 
@@ -14,11 +13,11 @@
 
 ## What this record describes
 
-**As extracted:** Vortioxetine (concentrations from the PK model of Areberg_2014_2) drives Sleep stage 1 (uncorrected data) (in min): direct linear effect.
+**As extracted:** Vortioxetine (concentrations from the PK model of Areberg_2014_2) drives Sleep stage 1 (in min): direct linear effect.
 
 **Model:** A model was generated (see the **Models** tab); it has no in-browser simulator.
 
-> Vortioxetine plasma exposure (Cav,sleep from a prior population PK model) was related to sleep stage 1 (S1) time via an inhibitory Emax model (E = E0 − Emax·C^γ/(EC50^γ + C^γ)); the paper does not state a production/elimination mechanism beyond this direct concentration–effect relation, and no Emax, EC50 or γ values for S1 are given in the excerpts (E0 is the placebo effect at C = 0).
+> Vortioxetine plasma concentration (ng/mL, individual Cav,sleep from a fixed population PK model) acts on sleep stage 1 duration (min) via a linear proportional stimulatory model with slope k = 0.72 min/(ng/mL) and baseline E0 = 42 min; the paper does not state a mechanistic production/elimination link for this response.
 >
 > <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
 
@@ -26,7 +25,7 @@
 - **model family:** `linear`
 - **driver:** `cited_pk`
 - **tier:** population
-- **effect:** stimulation/proportional
+- **effect:** stimulation/additive
 
 ## Citation
 Wilson S et al., Differentiated effects of the multimoda…, Journal of psychopharmacolo… (2015)

@@ -15,13 +15,17 @@
 
 ## What this record describes
 
-**As extracted:** Cibenzoline (measured concentrations) drives HCN4 channel current: direct Emax (saturable) effect.
+**As extracted:** Cibenzoline (concentrations from the PK model of Brazzell_1985) drives HCN4 channel current: direct Emax (saturable) effect.
 
 **Model:** No model was generated from this record.
 
+> Cibenzoline directly inhibits the HCN4 channel current (I_f) in HEK 293 cells, with an IC50 of 46.8 µM. The paper does not specify the underlying molecular mechanism of this inhibition.
+>
+> <sub>in the paper's terms — summarised by qwen3.8:27b-mtp-q8_0 from the paper's text; not checked by a person</sub>
+
 - **paper:** `Tamura_2009`
 - **model family:** `emax`
-- **driver:** `conc_no_pk`
+- **driver:** `cited_pk`
 - **tier:** descriptive
 - **effect:** inhibition/unknown
 

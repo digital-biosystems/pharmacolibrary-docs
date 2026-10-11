@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Dronedarone concentrations inhibit SARS-CoV-2 replication in a cell-based assay, with an EC50 of 0.38 µM and a CC50 of 20.20 µM. The paper reports that dronedarone inhibits the SARS-CoV-2 main protease (Mpro) with an IC50 of 18 µM, but does not explicitly state whether this Mpro inhibition is the direct mechanism for the observed reduction in viral replication.
+>
+> <sub>in the paper's terms — summarised by qwen3.8:27b-mtp-q8_0 from the paper's text; not checked by a person</sub>
+
 - **paper:** `Ahmed_2023`
 - **model family:** `sigmoid_emax`
 - **driver:** `conc_no_pk`

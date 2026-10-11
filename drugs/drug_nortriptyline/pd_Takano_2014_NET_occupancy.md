@@ -1,7 +1,7 @@
-<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N06A&quot;,&quot;href&quot;:&quot;atc/N06A.md&quot;},{&quot;label&quot;:&quot;nortriptyline&quot;,&quot;href&quot;:&quot;drugs/drug_nortriptyline/&quot;},{&quot;label&quot;:&quot;Takano_2014 \u00b7 PD NET occupancy in the thalamus&quot;}]"></div>
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N06A&quot;,&quot;href&quot;:&quot;atc/N06A.md&quot;},{&quot;label&quot;:&quot;nortriptyline&quot;,&quot;href&quot;:&quot;drugs/drug_nortriptyline/&quot;},{&quot;label&quot;:&quot;Takano_2014 \u00b7 PD Norepinephrine transporter occupancy&quot;}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# NET occupancy in the thalamus — PD  <span class="pk-badge pk-badge--green">extracted</span>
+# Norepinephrine transporter occupancy — PD  <span class="pk-badge pk-badge--green">extracted</span>
 
 <details class="pk-legend"><summary>What the PGx badges mean — evidence, and whether a model runs</summary><table><tbody><tr><td><span class="pk-badge pk-badge--green">quantitative</span></td><td>the paper gives the effect of each phenotype (or genotype) on a named model parameter — a θ per category.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">qualitative</span></td><td>the paper links the gene to the drug but states no effect size on a model parameter, so it changes no model.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">guideline estimate</span></td><td>the effect comes from a CPIC / DPWG dosing guideline, not from this paper's numbers.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">safety allele</span></td><td>a risk allele for an adverse reaction (an HLA type, G6PD deficiency …): it changes no PK/PD parameter.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>the extraction is incomplete or inconsistent.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted.</td></tr><tr><td><span class="pk-badge pk-badge--green">▶ simulatable</span></td><td>the paper's popPK model runs per phenotype in the browser (Simulation tab); its PGx Modelica model is under Models.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">model only</span></td><td>a PGx Modelica model exists but has no in-browser simulator.</td></tr></tbody></table></details>
 
@@ -13,15 +13,19 @@
 
 ## What this record describes
 
-**As extracted:** Nortriptyline (concentrations from the PK model of Koh_2019) drives NET occupancy in the thalamus (in %): direct sigmoid Emax (Hill) effect.
+**As extracted:** Nortriptyline (concentrations from the PK model of Usach_2022) drives Norepinephrine transporter occupancy (in %) (the model form was not identified).
 
 **Model:** No model was generated from this record.
 
+> Nortriptyline plasma concentrations (ng/ml) were related to thalamic norepinephrine transporter (NET) occupancy (%) via a sigmoid Emax model; the paper reports an EC50 of 79.8 ng/ml and an ED50 of 65.9 mg/d, but the excerpts do not state the mechanism (e.g., Emax/Imax, kin/kout, ke0) or other model parameters.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Takano_2014`
-- **model family:** `sigmoid_emax`
+- **model family:** `unknown`
 - **driver:** `cited_pk`
 - **tier:** descriptive
-- **effect:** inhibition/unknown
+- **effect:** unknown/unknown
 
 ## Citation
 Takano H et al., Norepinephrine transporter occupancy by…, The international journal o… (2014)
@@ -30,8 +34,7 @@ Takano H et al., Norepinephrine transporter occupancy by…, The international j
 ## Parameters
 | role | label (paper) | Q-code · name | value | unit | value_si | link | source |
 |---|---|---|---|---|---|---|---|
-| PD (effect) | EC50 | `Q321` · not captured | 79.8 | ng/ml | not captured | llm (not captured) | Takano_2014:pdv3 |
-| PD (effect) | ED50 | `Q321` · not captured | 65.9 | mg/d | not captured | llm (not captured) | Takano_2014:pdv3 |
+| PD (effect) | EC₅₀ | `Q321` · not captured | 79.8 | ng/ml | not captured | llm (not captured) | Takano_2014:pdv3 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

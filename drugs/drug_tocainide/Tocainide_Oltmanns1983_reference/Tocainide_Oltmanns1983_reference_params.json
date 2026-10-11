@@ -1,0 +1,30 @@
+{
+ "dose_source": "WHO ATC DDD 1200 mg parenteral (C01BB03)",
+ "model_id": "Tocainide_Oltmanns1983_reference",
+ "molar_masses": {
+  "central.C": 0.1922575
+ },
+ "note": "Values for the shared PK_1C.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "parameters": {
+  "Cl": 2.1466666666666663e-06,
+  "F": 1.0,
+  "MM": 0.1922575,
+  "VdPerKg": 0.0043640947908874786,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 0.0012,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 660.0000000662006
+ },
+ "reference_peaks": {
+  "central.C": 0.003919889391602843
+ },
+ "stop_time": 518400.0,
+ "template": "PK_1C",
+ "template_fmu": "PK_1C.fmu"
+}

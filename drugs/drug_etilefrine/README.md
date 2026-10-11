@@ -26,13 +26,13 @@ Etilefrine is a sympathomimetic drug that acts on alpha- and beta-1 adrenergic r
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-06 09:13 | 7:38 | 0/1/0 | 0/0/0 | 0/0/0 | 168,779/9,882 | ollama / qwen3.8:27b-mtp-q8_0 | 5 | 1/2 | 5/0 | 0 |
+| 2026-10-09 19:56 | 2:38 | 0/1/0 | 0/0/0 | 0/0/0 | 65,137/3,707 | ollama / qwen3.8:27b-mtp-q8_0 | 5 | 1/4 | 5/0 | 0 |
 
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.889). The first reading is what the record holds.">cross-check: disputed</span><br><sub>STALE — current validate: rejected</sub><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>route_to: `human_review`</sub> | [Hengstmann_1975_reference](drugs/drug_etilefrine/Etilefrine_Hengstmann1975_reference.md) | — | 1-compartment (no model) | 3 | Hengstmann JH et al., The physiological disposition of etilef…, European journal of clinica… (1975) | [10.1007/BF00614015](https://doi.org/10.1007/BF00614015) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.778). The first reading is what the record holds.">cross-check: partial</span><br><sub>STALE — current validate: rejected</sub><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>route_to: `human_review`</sub> | [Hengstmann_1975_reference](drugs/drug_etilefrine/Etilefrine_Hengstmann1975_reference.md) | — | 1-compartment (no model) | 3 | Hengstmann JH et al., The physiological disposition of etilef…, European journal of clinica… (1975) | [10.1007/BF00614015](https://doi.org/10.1007/BF00614015) |
 
 <details class="legend">
 <summary>Badge legend — what each badge means</summary>
@@ -43,7 +43,7 @@ Etilefrine is a sympathomimetic drug that acts on alpha- and beta-1 adrenergic r
 ## Coverage
 
 - **PubMed hits:** 24 matched, 24 returned
-- **screened:** 1  ·  **relevant:** 1
+- **screened:** 5  ·  **relevant:** 1
 - **records:** 1  ·  extracted 0  ·  needs_review 0  ·  rejected 1  ·  stale 1
 - **scholar-agent fallback query used:** not captured
 
@@ -55,7 +55,7 @@ _1 paper(s) judged relevant from the abstract, with no full text on disk — pay
 |---|---|---|---|---|---|---|
 | `Hengstmann_1975.pdf` | Hengstmann JH et al., The physiological disposition of etilef…, European journal of clinica… (1975) | popPK | 10 | [10.1007/BF00614015](https://doi.org/10.1007/BF00614015) | [9300](https://pubmed.ncbi.nlm.nih.gov/9300) | The abstract explicitly reports quantitative PK parameters including bioavailability (0.55), volume of distribution (160 L), and half-life (2 hours) for etilefrine in humans. |
 
-<sub>queue written 2026-10-06T09:07:54.030822+00:00</sub>
+<sub>queue written 2026-10-09T19:54:39.635752+00:00</sub>
 
 ## Screened and excluded
 

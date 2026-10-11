@@ -18,7 +18,7 @@ Hydroquinidine is a class Ia antiarrhythmic, a heart-rhythm medicine developed f
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-06 03:53 | 2:41 | 0/0/0 | 0/0/0 | 0/0/0 | 98,906/2,924 | ollama / qwen3.8:27b-mtp-q8_0 | 9 | 5/5 | 7/2 | 0 |
+| 2026-10-08 18:15 | 0:23 | 0/0/0 | 0/0/0 | 0/0/0 | 1,538/194 | ollama / qwen3.8:27b-mtp-q8_0 | 9 | 5/5 | 7/2 | 0 |
 
 ## popPK records
 
@@ -32,7 +32,7 @@ _not available_
 
 ## Coverage
 
-- **PubMed hits:** 13 matched, 56 returned
+- **PubMed hits:** 5 matched, 56 returned
 - **screened:** 0  ·  **relevant:** 0
 - **records:** 0  ·  extracted 0  ·  needs_review 0  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** True

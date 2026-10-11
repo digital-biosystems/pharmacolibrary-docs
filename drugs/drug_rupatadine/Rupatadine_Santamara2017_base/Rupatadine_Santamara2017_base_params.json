@@ -1,0 +1,39 @@
+{
+ "dose_source": "paper",
+ "model_id": "Rupatadine_Santamara2017_base",
+ "molar_masses": {
+  "central.C": 0.41597
+ },
+ "note": "Values for the shared PK_2C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "paper_doses_kind": "discrete",
+ "paper_doses_mg": [
+  2.5,
+  5.0
+ ],
+ "parameters": {
+  "Cl": 0.00015194444444444446,
+  "F": 1.0,
+  "MM": 0.41597,
+  "Tlag": 792.0,
+  "VdPerKg": 0.0014571428571428572,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 2.5e-06,
+  "k12": 0.0005664488017429194,
+  "k21": 3.751803751803752e-05,
+  "ka": 0.00014722222222222223,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 6752.705410821643
+ },
+ "reference_peaks": {
+  "central.C": 8.216464633282156e-07
+ },
+ "stop_time": 86400.0,
+ "template": "PK_2C_enteral",
+ "template_fmu": "PK_2C_enteral.fmu"
+}

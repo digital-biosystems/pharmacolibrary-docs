@@ -1,0 +1,37 @@
+{
+ "dose_source": "paper",
+ "model_id": "Favipiravir_Irie2023_reference",
+ "molar_masses": {
+  "central.C": 0.15710400000000002
+ },
+ "note": "Values for the shared PK_1C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "paper_doses_kind": "discrete",
+ "paper_doses_mg": [
+  600.0,
+  1600.0
+ ],
+ "parameters": {
+  "Cl": 1.4166666666666665e-06,
+  "F": 1.0,
+  "MM": 0.15710400000000002,
+  "Tlag": 0.0,
+  "VdPerKg": 0.0005942857142857144,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 0.0006,
+  "ka": 0.00041666666666666664,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 6912.713089914028
+ },
+ "reference_peaks": {
+  "central.C": 0.011538836033318277
+ },
+ "stop_time": 111600.0,
+ "template": "PK_1C_enteral",
+ "template_fmu": "PK_1C_enteral.fmu"
+}

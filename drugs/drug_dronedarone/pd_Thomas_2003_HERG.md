@@ -19,9 +19,9 @@
 
 **Model:** No model was generated from this record.
 
-> Dronedarone directly inhibits HERG tail currents (measured in cRNA-injected oocytes after a test pulse to 30 mV), blocking channels in the closed, open, and inactivated states; the concentration-response relation yielded an IC50 of 9.2 mM with a Hill coefficient of 0.91 (n=4-5), with maximum block reached after 30 min of perfusion and partial reversibility within 30 min of washout. No Emax, kin/kout, or ke0 values are given in the excerpts.
+> Dronedarone directly inhibits HERG tail currents via a sigmoidal Emax model, with an IC50 of 9.2 mM, a Hill coefficient of 0.91, and a maximum inhibition of 85.2%. The paper describes the mechanism as blocking HERG channels in closed, open, and inactivated states, with the block being partially reversible upon washout.
 >
-> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+> <sub>in the paper's terms — summarised by qwen3.8:27b-mtp-q8_0 from the paper's text; not checked by a person</sub>
 
 - **paper:** `Thomas_2003`
 - **model family:** `sigmoid_emax`

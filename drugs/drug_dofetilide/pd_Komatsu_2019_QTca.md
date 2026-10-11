@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> The record describes a linear, additive model where dofetilide concentrations stimulate the vehicle-adjusted change in QTca from baseline. The paper does not provide the specific mechanism or key potency and rate values.
+>
+> <sub>in the paper's terms — summarised by qwen3.8:27b-mtp-q8_0 from the paper's text; not checked by a person</sub>
+
 - **paper:** `Komatsu_2019`
 - **model family:** `linear`
 - **driver:** `cited_pk`

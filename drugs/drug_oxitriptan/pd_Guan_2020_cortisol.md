@@ -1,7 +1,7 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N06A&quot;,&quot;href&quot;:&quot;atc/N06A.md&quot;},{&quot;label&quot;:&quot;oxitriptan&quot;,&quot;href&quot;:&quot;drugs/drug_oxitriptan/&quot;},{&quot;label&quot;:&quot;Guan_2020 \u00b7 PD serum cortisol&quot;}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# serum cortisol — PD  <span class="pk-badge pk-badge--orange">needs review</span>
+# serum cortisol — PD  <span class="pk-badge pk-badge--green">reviewed — candidate</span>
 
 <details class="pk-legend"><summary>What the PGx badges mean — evidence, and whether a model runs</summary><table><tbody><tr><td><span class="pk-badge pk-badge--green">quantitative</span></td><td>the paper gives the effect of each phenotype (or genotype) on a named model parameter — a θ per category.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">qualitative</span></td><td>the paper links the gene to the drug but states no effect size on a model parameter, so it changes no model.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">guideline estimate</span></td><td>the effect comes from a CPIC / DPWG dosing guideline, not from this paper's numbers.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">safety allele</span></td><td>a risk allele for an adverse reaction (an HLA type, G6PD deficiency …): it changes no PK/PD parameter.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>the extraction is incomplete or inconsistent.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted.</td></tr><tr><td><span class="pk-badge pk-badge--green">▶ simulatable</span></td><td>the paper's popPK model runs per phenotype in the browser (Simulation tab); its PGx Modelica model is under Models.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">model only</span></td><td>a PGx Modelica model exists but has no in-browser simulator.</td></tr></tbody></table></details>
 
@@ -13,15 +13,19 @@
 
 ## What this record describes
 
-**As extracted:** 5-HTP drives serum cortisol (in ng mL-1): direct linear effect.
+**As extracted:** 5-HTP drives serum cortisol (in ng/mL): direct linear effect.
 
 **Model:** No model was generated from this record.
+
+> The paper does not provide excerpts describing the mechanism; the record indicates a linear, proportional stimulation model in which 5-HTP (oxitriptan) exposure drives serum cortisol (ng mL-1), with a fitted slope of 4.16 ng mL-1 h. No IC50, Emax, or rate parameters are stated.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
 
 - **paper:** `Guan_2020`
 - **model family:** `linear`
 - **driver:** `not_resolved`
 - **tier:** population
-- **effect:** stimulation/proportional
+- **effect:** stimulation/additive
 
 ## Citation
 Guan Z et al., PK/PD modeling of 5-hydroxytryptophan (…, Pharmacology research & per… (2020)
@@ -30,7 +34,11 @@ Guan Z et al., PK/PD modeling of 5-hydroxytryptophan (…, Pharmacology research
 ## Parameters
 | role | label (paper) | Q-code · name | value | unit | value_si | link | source |
 |---|---|---|---|---|---|---|---|
-| PD (effect) | slope | `Q335` · not captured | 4.16 | ng mL-1 h | not captured | llm (not captured) | Guan_2020:pdv3 |
+| PD (effect) | S 0 | `Q335` · not captured | 0.072 | not captured | not captured | llm (not captured) | Guan_2020:pdv3 |
+| PD (effect) | Baseline | `Q324` · not captured | 88.60 | ng/mL | not captured | llm (not captured) | Guan_2020:pdv3 |
+| model term | Amplitude | `Q900` · not captured | -0.23 | not captured | not captured | llm (not captured) | Guan_2020:pdv3 |
+| model term | Trend | `Q900` · not captured | 4.16 | ng/mL.h | not captured | llm (not captured) | Guan_2020:pdv3 |
+| model term | T peak | `Q900` · not captured | 11.50 | h | not captured | llm (not captured) | Guan_2020:pdv3 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

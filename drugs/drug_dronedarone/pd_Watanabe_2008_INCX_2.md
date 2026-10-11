@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> Dronedarone inhibits the inward Na+/Ca2+ exchange current (INCX) via a sigmoidal Emax model with an IC50 of 28 microM and a Hill coefficient of 1. The paper does not specify the underlying mechanism (e.g., production vs. elimination) or rate constants.
+>
+> <sub>in the paper's terms — summarised by qwen3.8:27b-mtp-q8_0 from the paper's text; not checked by a person</sub>
+
 - **paper:** `Watanabe_2008`
 - **model family:** `sigmoid_emax`
 - **driver:** `not_resolved`

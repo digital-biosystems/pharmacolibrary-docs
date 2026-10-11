@@ -1,0 +1,34 @@
+{
+ "dose_source": "library default",
+ "model_id": "Artefenomel_AbdRahman2020_reference",
+ "molar_masses": {
+  "central.C": 0.46962200000000004
+ },
+ "note": "Values for the shared PK_2C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "parameters": {
+  "Cl": 1.5166666666666667e-05,
+  "F": 1.0,
+  "MM": 0.46962200000000004,
+  "Tlag": 0.0,
+  "VdPerKg": 0.0005714285714285715,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 0.0001,
+  "k12": 0.0002520833333333333,
+  "k21": 3.893178893178893e-05,
+  "ka": 0.0002619444444444444,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 7445.290581162325
+ },
+ "reference_peaks": {
+  "central.C": 0.00016100224349965389
+ },
+ "stop_time": 86400.0,
+ "template": "PK_2C_enteral",
+ "template_fmu": "PK_2C_enteral.fmu"
+}

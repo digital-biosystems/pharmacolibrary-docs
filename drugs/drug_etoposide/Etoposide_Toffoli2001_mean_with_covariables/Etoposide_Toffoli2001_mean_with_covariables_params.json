@@ -1,0 +1,35 @@
+{
+ "dose_source": "paper",
+ "model_id": "Etoposide_Toffoli2001_mean_with_covariables",
+ "molar_masses": {
+  "central.C": 0.5885566
+ },
+ "note": "Values for the shared PK_1C.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "paper_doses_kind": "discrete",
+ "paper_doses_mg": [
+  50.0,
+  100.0
+ ],
+ "parameters": {
+  "Cl": 3.1666666666666667e-07,
+  "F": 1.0,
+  "MM": 0.5885566,
+  "VdPerKg": 8.714285714285714e-05,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 5e-05,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 660.0000000662014
+ },
+ "reference_peaks": {
+  "central.C": 0.008070382502074147
+ },
+ "stop_time": 86400.0,
+ "template": "PK_1C",
+ "template_fmu": "PK_1C.fmu"
+}

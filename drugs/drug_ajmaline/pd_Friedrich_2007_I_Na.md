@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C01B&quot;,&quot;href&quot;:&quot;atc/C01B.md&quot;},{&quot;label&quot;:&quot;ajmaline&quot;,&quot;href&quot;:&quot;drugs/drug_ajmaline/&quot;},{&quot;label&quot;:&quot;Friedrich_2007 \u00b7 PD I Na&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Ajmaline_Iven1977_reference&quot;,&quot;label&quot;:&quot;Iven_1977_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ajmaline/Ajmaline_Iven1977_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # I Na — PD  <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span> <span class="pk-badge pk-badge--species" title="Animal study (other animal), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">other animal</span>
@@ -19,9 +20,9 @@
 
 **Model:** No model was generated from this record.
 
-> Ajmaline inhibits the peak skeletal muscle sodium current (I_Na) measured with the loose-patch clamp technique, with a sigmoid Emax-type concentration dependence; the excerpts state an apparent IC50 for I_Na block (given as 'B23' in the Discussion) but provide no explicit PD mechanism beyond channel block and no Emax, kin, kout or ke0 values.
+> Ajmaline directly inhibits the peak sodium current (I Na) in a concentration-dependent manner, with an apparent IC50 of 23.2 mM and a Hill coefficient (h) of 1.21. The paper describes this as a direct block of the voltage-gated sodium channel, noting that the inhibition was almost complete after 90 seconds at 100 mM, but does not specify a distinct effect compartment or kinetic rate constants (e.g., ke0) for the onset of action.
 >
-> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+> <sub>in the paper's terms — summarised by qwen3.8:27b-mtp-q8_0 from the paper's text; not checked by a person</sub>
 
 - **paper:** `Friedrich_2007`
 - **model family:** `sigmoid_emax`

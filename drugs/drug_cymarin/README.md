@@ -18,7 +18,7 @@ Cymarin is a Strophanthus cardiac glycoside with cardiotonic and antiarrhythmic 
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-06 01:58 | 1:04 | 0/0/0 | 0/0/0 | 0/0/0 | 44,121/693 | ollama / qwen3.8:27b-mtp-q8_0 | 2 | 0/2 | 2/0 | 0 |
+| 2026-10-06 01:58 | 1:04 | 0/0/0 | 0/0/0 | 0/0/0 | 44,121/693 | ollama / qwen3.8:27b-mtp-q8_0 | 4 | 0/2 | 2/2 | 0 |
 
 ## popPK records
 

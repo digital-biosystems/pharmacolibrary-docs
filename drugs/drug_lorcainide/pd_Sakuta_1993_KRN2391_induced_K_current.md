@@ -1,5 +1,4 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C01B&quot;,&quot;href&quot;:&quot;atc/C01B.md&quot;},{&quot;label&quot;:&quot;lorcainide&quot;,&quot;href&quot;:&quot;drugs/drug_lorcainide/&quot;},{&quot;label&quot;:&quot;Sakuta_1993 \u00b7 PD KRN2391-induced K+ current&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Lorcainide_Kates1983_reference&quot;,&quot;label&quot;:&quot;Kates_1983_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_lorcainide/Lorcainide_Kates1983_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # KRN2391-induced K+ current — PD  <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">in vitro</span>
@@ -19,6 +18,10 @@
 **As extracted:** Lorcainide (concentrations from the PK model of Kates_1983) drives KRN2391-induced K+ current (in nA): direct Emax (saturable) effect.
 
 **Model:** No model was generated from this record.
+
+> Lorcainide directly inhibits the KRN2391-induced K+ current in a concentration-dependent manner, with an IC50 of 71 µM as reported in the paper (the record lists 120 µM, but the paper's value is followed). The paper describes this as a direct suppression of the current response without specifying a distinct kinetic mechanism such as an effect compartment or production/elimination rate constants.
+>
+> <sub>in the paper's terms — summarised by qwen3.8:27b-mtp-q8_0 from the paper's text; not checked by a person</sub>
 
 - **paper:** `Sakuta_1993`
 - **model family:** `emax`

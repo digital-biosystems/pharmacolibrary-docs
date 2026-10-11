@@ -1,0 +1,36 @@
+{
+ "dose_source": "paper",
+ "model_id": "Amikacin_Alhadab2018_reference",
+ "molar_masses": {
+  "central.C": 0.5856024999999999
+ },
+ "note": "Values for the shared PK_2C.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "paper_doses_kind": "discrete",
+ "paper_doses_mg": [
+  1050.0
+ ],
+ "parameters": {
+  "Cl": 3.0833333333333336e-06,
+  "F": 1.0,
+  "MM": 0.5856024999999999,
+  "VdPerKg": 0.00043142857142857143,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 0.00105,
+  "k12": 3.918322295805739e-05,
+  "k21": 7.941834451901566e-05,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 660.0000000662045
+ },
+ "reference_peaks": {
+  "central.C": 0.025457158927045476
+ },
+ "stop_time": 86400.0,
+ "template": "PK_2C",
+ "template_fmu": "PK_2C.fmu"
+}

@@ -17,7 +17,7 @@ Insulin glulisine is a fast-acting insulin analogue used to treat diabetes, part
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-04 22:13 | 1:21 | 0/0/0 | 0/0/0 | 0/0/0 | 55,016/1,140 | ollama / qwen3.8:27b-mtp-q8_0 | 4 | 1/2 | 4/0 | 0 |
+| 2026-10-07 21:13 | 0:20 | 0/0/0 | 0/0/0 | 0/0/0 | 58,280/1,268 | einfracz / qwen3.8-27b | 5 | 1/3 | 5/0 | 0 |
 
 ## popPK records
 
@@ -52,17 +52,17 @@ _3 paper(s) judged relevant from the abstract, with no full text on disk — pay
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Koksharova_2024.pdf` | Koksharova E et al., Clinical Pharmacology of GP40321 (Insul…, Clinical pharmacology in dr… (2024) | popPK | 8 | [10.1002/cpdd.1401](https://doi.org/10.1002/cpdd.1401) | [38515279](https://pubmed.ncbi.nlm.nih.gov/38515279) | The study reports PK comparability for insulin glulisine, but specific numeric parameter values (CL, V, etc.) are not present in the provided evidence. |
+| `Arnolds_2010.pdf` | Arnolds S et al., Insulin glulisine has a faster onset of…, Experimental and clinical e… (2010) | popPK | 7 | [10.1055/s-0030-1252067](https://doi.org/10.1055/s-0030-1252067) | [20429049](https://pubmed.ncbi.nlm.nih.gov/20429049) | The study reports comparative PK/PD parameters (onset, absorption timing) for insulin glulisine in humans, but specific quantitative disposition parameters like clearance or volume are not explicitly listed in the provided text. |
+| `Koksharova_2024.pdf` | Koksharova E et al., Clinical Pharmacology of GP40321 (Insul…, Clinical pharmacology in dr… (2024) | popPK | 7 | [10.1002/cpdd.1401](https://doi.org/10.1002/cpdd.1401) | [38515279](https://pubmed.ncbi.nlm.nih.gov/38515279) | The study reports a pharmacokinetic comparability study for insulin glulisine (biosimilar), but the evidence provided is limited to the abstract which summarizes the conclusion (90% CI within limits) without listing the specific numeric PK parameters (e.g., Cmax, AUC, clearance, half-life) or the ratio values themselves. |
 | `Ciaraldi_2005.pdf` | Ciaraldi TP et al., Effects of the rapid-acting insulin ana…, The Journal of clinical end… (2005) | pd | 5 | [10.1210/jc.2005-1007](https://doi.org/10.1210/jc.2005-1007) | [16030168](https://www.ncbi.nlm.nih.gov/pubmed/16030168) | metadata signals extractable PD data (EC50) |
-| `Heise_2009.pdf` | Heise T et al., Biphasic insulin aspart 30/70: pharmaco…, Diabetes care (2009) | pd | 5 | [10.2337/dc09-0097](https://doi.org/10.2337/dc09-0097) | [19487640](https://www.ncbi.nlm.nih.gov/pubmed/19487640) | metadata signals extractable PD data (PK/PD) |
 
-<sub>queue written 2026-10-04T22:12:43.813791+00:00</sub>
+<sub>queue written 2026-10-07T21:13:15.924739+00:00</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Arnolds_2010 | irrelevant | 2 | 0 | The study reports pharmacodynamic metrics (GIR, onset time) and qualitative absorption comparisons, but does not provide quantitative compartmental PK parameters (CL, V, ka) for insulin glulisine. |
+| popPK | Arnolds_2010 | relevant | 7 | 3 | The study reports comparative PK/PD parameters (onset, absorption timing) for insulin glulisine in humans, but specific quantitative disposition parameters like clearance or volume are not explicitly listed in the provided text. |
 | popPK | Atkin_2015 | irrelevant | 1 | 0 | The paper is a review focused on insulin degludec and aspart, mentioning insulin glulisine only as a comparator with no quantitative PK parameters (CL, V, ka) reported for it. |
 | PD | Atkin_2015 | not_relevant | 1 | 0 | The paper is a narrative review comparing insulin degludec and aspart; it provides qualitative PK/PD descriptions and clinical trial efficacy data but does not report numeric PD parameters (e.g., Emax, EC50) or concentration-effect curves for insulin glulisine. |
 | popPK | Barnett_2006 | irrelevant | 1 | 0 | The paper is a review discussing the impact of obesity on rapid-acting insulins and does not report original quantitative pharmacokinetic parameter values for insulin glulisine. |
@@ -72,7 +72,7 @@ _3 paper(s) judged relevant from the abstract, with no full text on disk — pay
 | popPK | Becker_2007 | irrelevant | 1 | 0 | The paper is a review of structure and activity without original quantitative pharmacokinetic parameter values for insulin glulisine. |
 | PD | Becker_2007 | not_relevant | 1 | 0 | The text is a qualitative review summary describing the general pharmacokinetic and pharmacodynamic properties of insulin glulisine without providing specific numeric PD parameters or extractable concentration-effect data. |
 | popPK | Becker_2007_2 | irrelevant | 0 | 0 | no_text gate: only 80 chars of text extracted (&lt; 400) |
-| popPK | Becker_2008 | irrelevant | 2 | 0 | The text is a qualitative review describing the pharmacokinetic profile (e.g., "peak concentration approximately twice") without providing specific quantitative parameter values (CL, V, ka, t1/2) or compartmental model estimates. |
+| popPK | Becker_2008 | irrelevant | 2 | 0 | The text is a qualitative review of insulin glulisine's pharmacokinetics without specific quantitative disposition parameters (CL, V, Q, ka) or compartmental model values. |
 | PD | Becker_2008 | not_relevant | 3 | 1 | The text is a qualitative review summarizing PK/PD characteristics (dose proportionality, onset, duration) but does not provide specific numeric PD parameters (e.g., Emax, EC50) or data points to derive a concentration-effect curve. |
 | popPK | Bolli_2011 | relevant | 4 | 5 | The study reports non-compartmental PK parameters (AUC, Cmax, Tmax) for insulin glulisine, but lacks compartmental model parameters (CL, V, Q, ka) required for population PK extraction. |
 | popPK | Ciaraldi_2005 | irrelevant | 0 | 0 | no_text gate: only 151 chars of text extracted (&lt; 400) |
@@ -84,32 +84,32 @@ _3 paper(s) judged relevant from the abstract, with no full text on disk — pay
 | popPK | Gillis_2021 | irrelevant | 0 | 0 | The paper is a structural and biophysical study (X-ray crystallography and analytical ultracentrifugation) that does not report in-vivo pharmacokinetic parameters such as clearance, volume of distribution, or half-life. |
 | PD | Gillis_2021 | not_relevant | 0 | 0 | The paper is a structural biology study (X-ray crystallography and biophysics) describing the molecular structure and self-association of insulin glulisine; it does not contain any pharmacokinetic or pharmacodynamic data, exposure-response analysis, or numeric PD parameters. |
 | popPK | Heise_2007 | irrelevant | 2 | 0 | The study reports pharmacodynamic (GIR) and basic PK (AUC, time to 10% AUC) data but does not provide compartmental PK parameters (CL, V, ka) or population PK model estimates. |
-| popPK | Heise_2009 | irrelevant | 0 | 0 | no_text gate: only 140 chars of text extracted (&lt; 400) |
+| popPK | Heise_2009 | irrelevant | 0 | 0 | The study focuses on biphasic insulin aspart 30/70 (BIAsp 30) as the subject drug, while insulin glulisine is only a comparator component in the basal-bolus therapy arm. |
 | PD | Heise_2009 | not_relevant | 0 | 0 | The paper focuses on biphasic insulin aspart 30/70, not insulin glulisine, and does not report PD parameters for the target drug. |
 | popPK | Helms_2009 | irrelevant | 0 | 0 | The paper is a review of pharmacodynamic properties and clinical efficacy, not a pharmacokinetic study reporting quantitative disposition parameters. |
 | PD | Helms_2009 | not_relevant | 2 | 1 | The paper is a narrative review summarizing clinical efficacy and safety, lacking specific numeric pharmacodynamic parameters (e.g., Emax, EC50) or detailed exposure-response modeling data. |
-| popPK | Home_2012 | irrelevant | 1 | 0 | The paper is a narrative review of rapid-acting insulin analogues and does not report original quantitative pharmacokinetic parameter values (CL, V, ka, etc.) for insulin glulisine. |
+| popPK | Home_2012 | irrelevant | 2 | 0 | The paper is a narrative review of clinical consequences and efficacy comparisons without reporting original quantitative population pharmacokinetic parameter values (CL, V, ka) for insulin glulisine. |
 | PD | Home_2012 | not_relevant | 2 | 0 | The text is a qualitative review summarizing clinical outcomes and general PK/PD profiles without providing specific numeric PD parameters or extractable concentration-effect curves for insulin glulisine. |
-| popPK | Kiss_2014 | irrelevant | 0 | 0 | The study investigates insulin degludec, not insulin glulisine. |
+| popPK | Kiss_2014 | irrelevant | 0 | 0 | The study investigates insulin degludec, not insulin glulisine, which is the target drug for this extraction. |
 | PD | Kiss_2014 | not_relevant | 0 | 0 | The paper reports pharmacokinetic parameters (AUC, Cmax, CL/F) for insulin degludec in renal impairment but does not report any pharmacodynamic (exposure-response or dose-response) analysis or numeric PD parameters. |
-| popPK | Koksharova_2024 | relevant | 8 | 0 | The study reports PK comparability for insulin glulisine, but specific numeric parameter values (CL, V, etc.) are not present in the provided evidence. |
-| popPK | Lamos_2016 | irrelevant | 2 | 1 | The study reports non-compartmental PK parameters (AUC, Tmax, Cmax) for a combination regimen of insulin glargine and insulin glulisine, but does not provide compartmental PK parameters (CL, V, Q, ka) or isolate the specific PK of insulin glulisine from the basal component. |
-| popPK | Lo_2018 | irrelevant | 0 | 0 | This is a systematic review of clinical efficacy and safety outcomes (HbA1c, BP, etc.) in diabetes/CKD, not a pharmacokinetic study reporting disposition parameters for insulin glulisine. |
+| popPK | Koksharova_2024 | relevant | 7 | 0 | The study reports a pharmacokinetic comparability study for insulin glulisine (biosimilar), but the evidence provided is limited to the abstract which summarizes the conclusion (90% CI within limits) without listing the specific numeric PK parameters (e.g., Cmax, AUC, clearance, half-life) or the ratio values themselves. |
+| popPK | Lamos_2016 | relevant | 5 | 4 | The study reports non-compartmental PK parameters (AUC, Tmax, Cmax) for insulin glulisine in humans, but lacks compartmental parameters like CL, V, or ka. |
+| popPK | Lo_2018 | irrelevant | 0 | 0 | This is a systematic review of clinical trials assessing efficacy and safety (HbA1c, hypoglycemia) in diabetes and CKD, containing no pharmacokinetic or pharmacodynamic parameter estimates (CL, V, etc.) for insulin glulisine. |
 | PD | Lo_2018 | not_relevant | 0 | 0 | The paper is a systematic review of clinical trials in CKD and does not report any pharmacokinetic or pharmacodynamic modeling, nor any numeric exposure-response or dose-response parameters for insulin glulisine. |
-| popPK | McCarty_2017 | irrelevant | 0 | 0 | The paper is a review of lixisenatide, and insulin glulisine is only mentioned as a comparator agent without any PK parameters reported for it. |
+| popPK | McCarty_2017 | irrelevant | 0 | 0 | The paper is a review of lixisenatide, where insulin glulisine is mentioned only as a comparator agent without any reported pharmacokinetic parameters for it. |
 | popPK | Presas_2018 | irrelevant | 2 | 0 | The study focuses on nanoparticle formulation and reports only relative bioavailability and pharmacodynamic effects, lacking quantitative compartmental PK parameters (CL, V, ka) for insulin glulisine. |
 | PD | Presas_2018 | not_relevant | 3 | 1 | The paper reports qualitative pharmacodynamic effects (blood glucose decrease) and relative bioavailability, but does not provide numeric PD parameters (e.g., Emax, EC50) or a quantitative exposure-response/dose-response model. |
 | popPK | Roach_2008 | irrelevant | 0 | 0 | The paper is a review discussing clinical considerations and general profiles without reporting specific quantitative pharmacokinetic parameters for insulin glulisine. |
 | PD | Roach_2008 | not_relevant | 1 | 0 | The text is a qualitative review summarizing clinical characteristics and comparisons of insulin analogues without providing specific numeric PD parameters or exposure-response data for insulin glulisine. |
-| popPK | Sokolov_2023 | relevant | 8 | 2 | The paper develops a one-compartment PK model for insulin glulisine, but the specific numeric parameter values are located in Table S1 (supplementary material) which is not provided in the evidence. |
+| popPK | Sokolov_2023 | relevant | 9 | 2 | The study develops a de novo one-compartment pharmacokinetic model for insulin glulisine in humans, but the specific numeric parameter values are reported in Table S1 (supplementary material) which is not provided in the evidence. |
 | PD | Sokolov_2023 | not_relevant | 0 | 0 | The paper focuses on a mechanistic model for dapagliflozin in T1DM; insulin glulisine is only included as a PK component for simulation, with no reported PD or exposure-response analysis for glulisine. |
 | popPK | Tibaldi_2012 | irrelevant | 0 | 0 | The paper is a narrative review of insulin development history and does not report original quantitative pharmacokinetic parameters for insulin glulisine. |
 | PD | Tibaldi_2012 | not_relevant | 1 | 0 | The paper is a narrative review of the history of insulin development and does not report specific numeric pharmacodynamic parameters (e.g., Emax, EC50) or exposure-response curves for insulin glulisine. |
-| popPK | Tibaldi_2014 | irrelevant | 1 | 0 | The paper is a general review of insulin analogs that mentions insulin glulisine only qualitatively without providing specific quantitative pharmacokinetic parameters (CL, V, ka) for it. |
+| popPK | Tibaldi_2014 | irrelevant | 2 | 0 | The paper is a narrative review of insulin evolution that discusses insulin glulisine qualitatively as a comparator class but provides no quantitative pharmacokinetic parameters (CL, V, ka, etc.) for insulin glulisine. |
 | PD | Tibaldi_2014 | not_relevant | 1 | 0 | The text is a general review of insulin evolution and clinical outcomes, lacking specific numeric pharmacodynamic parameters or exposure-response models for insulin glulisine. |
-| popPK | Tonneijck_2017 | irrelevant | 0 | 0 | The study investigates renal hemodynamics and uses insulin glulisine only as an active comparator, without reporting any pharmacokinetic parameters for the drug. |
-| popPK | Tonneijck_2018 | irrelevant | 0 | 0 | The study investigates the effects of GLP-1 receptor agonists on uric acid and kidney clearance, with insulin glulisine serving only as a comparator agent in one arm, and no pharmacokinetic parameters for insulin glulisine are reported. |
-| popPK | Zarini-Gakiye_2020 | irrelevant | 0 | 0 | The paper is a narrative review of Alzheimer's disease clinical trials and does not report pharmacokinetic parameters for insulin glulisine. |
+| popPK | Tonneijck_2017 | irrelevant | 1 | 0 | The study is a renal hemodynamic trial where insulin glulisine is used as an active comparator, and no pharmacokinetic parameters (CL, V, t1/2) are reported. |
+| popPK | Tonneijck_2018 | irrelevant | 0 | 0 | The study focuses on the effects of GLP-1 receptor agonists on uric acid kinetics, with insulin glulisine serving only as a comparator drug in one sub-study, and no PK parameters for insulin glulisine are reported. |
+| popPK | Zarini-Gakiye_2020 | irrelevant | 0 | 0 | The paper is a narrative review of Alzheimer's disease clinical trials and does not report any pharmacokinetic parameters for insulin glulisine. |
 
 ---
 <sub>Generated by `docs.py` (scholarv2)</sub>

@@ -27,19 +27,19 @@ Fenoldopam is an antihypertensive vasodilator used to treat severe hypertension 
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-06 09:20 | 7:03 | 0/1/0 | 0/0/1 | 0/0/0 | 64,826/10,888 | ollama / qwen3.8:27b-mtp-q8_0 | 1 | 0/2 | 1/0 | 0 |
+| 2026-10-09 19:59 | 2:54 | 0/1/0 | 0/0/1 | 0/0/0 | 12,511/8,604 | ollama / qwen3.8:27b-mtp-q8_0 | 1 | 0/2 | 1/0 | 0 |
 
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.111). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 0.99).">human + animal</span><br><sub>STALE — current validate: rejected</sub><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>route_to: `human_review`</sub> | [Ziemniak_1989_reference](drugs/drug_fenoldopam/Fenoldopam_Ziemniak1989_reference.md) | — | general linear (no model) | 2 | Ziemniak JA et al., A retrospective analysis of fenoldopam…, Pharmaceutical research (1989) | [10.1023/a:1015990506743](https://doi.org/10.1023/a:1015990506743) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.125). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 0.99).">human + animal</span><br><sub>STALE — current validate: rejected</sub><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>route_to: `human_review`</sub> | [Ziemniak_1989_reference](drugs/drug_fenoldopam/Fenoldopam_Ziemniak1989_reference.md) | — | general linear (no model) | 2 | Ziemniak JA et al., A retrospective analysis of fenoldopam…, Pharmaceutical research (1989) | [10.1023/a:1015990506743](https://doi.org/10.1023/a:1015990506743) |
 
 ## Pharmacodynamics (PD)
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Grenader_1991_cAMP](drugs/drug_fenoldopam/pd_Grenader_1991_cAMP.md) | cyclic AMP (cAMP) synthesis ← fenoldopam · direct Emax (saturable) effect | — | Grenader A et al., Fenoldopam is a partial agonist at dopa…, The Journal of pharmacology… (1991) | — |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by ollama:gpt-oss:120b (not confirmed, agreement 0.333), einfracz:gpt-oss-120b (not confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: disputed 0/2</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Grenader_1991_cAMP](drugs/drug_fenoldopam/pd_Grenader_1991_cAMP.md) | cyclic AMP (cAMP) synthesis ← fenoldopam · direct Emax (saturable) effect | — | Grenader A et al., Fenoldopam is a partial agonist at dopa…, The Journal of pharmacology… (1991) | — |
 
 ## ADME sites
 
@@ -60,7 +60,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 ## Coverage
 
-- **PubMed hits:** 64 matched, 49 returned
+- **PubMed hits:** 64 matched, 51 returned
 - **screened:** 2  ·  **relevant:** 2
 - **records:** 1  ·  extracted 0  ·  needs_review 0  ·  rejected 1  ·  stale 1
 - **scholar-agent fallback query used:** not captured
@@ -78,7 +78,7 @@ _6 paper(s) judged relevant from the abstract, with no full text on disk — pay
 | `Pizzi_1988.pdf` | Pizzi M et al., Dopamine D2 receptor stimulation inhibi…, Brain research (1988) | pd | 4 | [10.1016/0006-8993(88)90222-3](https://doi.org/10.1016/0006-8993(88)90222-3) | [2974746](https://www.ncbi.nlm.nih.gov/pubmed/2974746) | metadata signals extractable PD data (IC50) |
 | `Zeng_2004.pdf` | Zeng C et al., Aberrant D1 and D3 dopamine receptor tr…, Hypertension (Dallas, Tex.… (2004) | pd | 4 | [10.1161/01.HYP.0000114601.30306.bf](https://doi.org/10.1161/01.HYP.0000114601.30306.bf) | [14732731](https://www.ncbi.nlm.nih.gov/pubmed/14732731) | metadata signals extractable PD data (Emax) |
 
-<sub>queue written 2026-10-06T09:17:06.676050+00:00</sub>
+<sub>queue written 2026-10-09T19:57:22.866098+00:00</sub>
 
 ## Screened and excluded
 

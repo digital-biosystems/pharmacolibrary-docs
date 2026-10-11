@@ -15,13 +15,17 @@
 
 ## What this record describes
 
-**As extracted:** Cibenzoline (measured concentrations) drives outward I NCX: direct sigmoid Emax (Hill) effect.
+**As extracted:** Cibenzoline (concentrations from the PK model of Brazzell_1985) drives outward I NCX: direct sigmoid Emax (Hill) effect.
 
 **Model:** No model was generated from this record.
 
+> Cibenzoline directly inhibits the outward Na+/Ca2+ exchange current (I NCX) in a concentration-dependent manner, with an IC50 of 77 μM and a Hill coefficient of 1. The paper describes this as a direct concentration-response inhibition without specifying a distinct kinetic mechanism such as an effect compartment or specific production/elimination rates.
+>
+> <sub>in the paper's terms — summarised by qwen3.8:27b-mtp-q8_0 from the paper's text; not checked by a person</sub>
+
 - **paper:** `Yamakawa_2012`
 - **model family:** `sigmoid_emax`
-- **driver:** `conc_no_pk`
+- **driver:** `cited_pk`
 - **tier:** descriptive
 - **effect:** inhibition/proportional
 

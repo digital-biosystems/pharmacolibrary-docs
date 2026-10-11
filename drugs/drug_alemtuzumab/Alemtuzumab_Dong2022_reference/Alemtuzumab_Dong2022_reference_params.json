@@ -1,0 +1,26 @@
+{
+ "dose_source": "WHO ATC DDD 0.13 mg parenteral (L04AG06)",
+ "model_id": "Alemtuzumab_Dong2022_reference",
+ "note": "Values for the shared PK_1C.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "parameters": {
+  "Cl": 2.2222222222222224e-08,
+  "F": 1.0,
+  "VdPerKg": 0.00024857142857142857,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 1.3e-07,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 660.0000000662203
+ },
+ "reference_peaks": {
+  "central.C": 7.468401639991608e-06
+ },
+ "stop_time": 3024000.0,
+ "template": "PK_1C",
+ "template_fmu": "PK_1C.fmu"
+}

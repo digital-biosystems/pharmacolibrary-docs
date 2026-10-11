@@ -20,6 +20,10 @@
 
 **Model:** No model was generated from this record.
 
+> The paper does not provide a full text or explicit mechanism description, so the specific pharmacodynamic mechanism (e.g., inhibition of production vs. elimination) is not stated. The record indicates an effect compartment model where digoxin concentrations (ng/ml) drive a percentage decrease in heart rate, with a CPss(50) of 3.8–9.8 ng/ml and a delta parameter of 0.6–7.1.
+>
+> <sub>in the paper's terms — summarised by qwen3.8:27b-mtp-q8_0 from the paper's text; not checked by a person</sub>
+
 - **paper:** `Vetticaden_1989`
 - **model family:** `effect_compartment`
 - **driver:** `cited_pk`

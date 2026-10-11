@@ -13,7 +13,7 @@
 
 ## What this record describes
 
-**As extracted:** Nedosiran (concentrations from the PK model of Zhang_2025) drives 24-hour urinary oxalate excretion (in mmol per 24 hours): indirect response — drug inhibits the production of 24-hour urinary oxalate excretion.
+**As extracted:** Nedosiran (concentrations from the PK model of Zhang_2025) drives 24-hour urinary oxalate excretion (in mmol): indirect response — drug inhibits the production of 24-hour urinary oxalate excretion.
 
 **Model:** No model was generated from this record.
 

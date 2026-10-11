@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;B01A&quot;,&quot;href&quot;:&quot;atc/B01A.md&quot;},{&quot;label&quot;:&quot;selexipag&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Selexipag_Ruehs2021_reference&quot;,&quot;label&quot;:&quot;Ruehs_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_selexipag/Selexipag_Ruehs2021_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 # selexipag
 
@@ -14,15 +15,40 @@ Selexipag is a drug used to treat pulmonary hypertension. It is an approved anti
 
 <small>Summary written by `glm-5.3-flash` from [Wikidata Q15424759](https://www.wikidata.org/wiki/Q15424759) and the WHO ATC classification and the EMA medicines list; not checked by a person.</small>
 
+## Molecules and molar masses
+
+> The molar mass each model uses to convert mass to molar concentration and to form a metabolite molecule for molecule. Looked up, never estimated: DrugBank for the drug, the paper's own value or the PubChem entry matched to the paper's name for a metabolite.
+
+| molecule | role | molar mass (g/mol) | formula | source | PubChem | records |
+|---|---|---|---|---|---|---|
+| selexipag | parent | 496.63 | C26H32N4O4S | DrugBank | [9913767](https://pubchem.ncbi.nlm.nih.gov/compound/9913767) | Axelsen_2021, Axelsen_2024, Krause_2017 |
+| ACT-333679 | metabolite | 419.525 | C25H29N3O3 | PubChem | [9931891](https://pubchem.ncbi.nlm.nih.gov/compound/9931891) | Axelsen_2021, Krause_2017 |
+| JNJ-68006861 | metabolite | — (mass units only) | — | — | — | — |
+
 ## Extraction summary
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-05 16:13 | 0:59 | 0/0/0 | 0/0/0 | 1/0/1 | 33,493/916 | ollama / qwen3.8:27b-mtp-q8_0 | 2 | 2/4 | 2/0 | 0 |
+| 2026-10-07 18:22 | 2:15 | 1/2/1 | 1/0/0 | 1/0/1 | 144,754/13,017 | einfracz / qwen3.8-27b | 6 | 2/7 | 6/0 | 1 |
 
 ## popPK records
 
-_not available_
+| status | detail | model | model structure | params | citation | doi |
+|---|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--green">extracted</span> | [Ruehs_2021_reference](drugs/drug_selexipag/Selexipag_Ruehs2021_reference.md) | ▶ model + simulator | 1-compartment, oral | 3 | Ruehs H et al., Population Pharmacokinetics and Pharmac…, Clinical pharmacokinetics (2021) | [10.1007/s40262-021-01024-y](https://doi.org/10.1007/s40262-021-01024-y) |
+| <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: C5 dimensioned parameter(s) without a unit: Q30, Q99, Q30, Q99, Q1 — no SI valu…</sub><br><sub>route_to: `human_review`</sub> | [Krause_2017_reference](drugs/drug_selexipag/Selexipag_Krause2017_reference.md) | — | parent + metabolite (no model) | 12 (+5 cov.) | Krause A et al., Population Modeling of Selexipag Pharma…, CPT: pharmacometrics & syst… (2017) | [10.1002/psp4.12202](https://doi.org/10.1002/psp4.12202) |
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Axelsen_2021_reference](drugs/drug_selexipag/Selexipag_Axelsen2021_reference.md) | — | 1-compartment (no model) | 0 | Axelsen LN et al., Clopidogrel, a CYP2C8 inhibitor, causes…, British journal of clinical… (2021) | [10.1111/bcp.14365](https://doi.org/10.1111/bcp.14365) |
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: missing key parameters — none reported by this paper (the values present come f…</sub><br><sub>route_to: `human_review`</sub> | [Axelsen_2024_reference](drugs/drug_selexipag/Selexipag_Axelsen2024_reference.md) | — | parent + metabolite (no model) | 3 | Axelsen LN et al., Population pharmacokinetics of selexipa…, CPT: pharmacometrics & syst… (2024) | [10.1002/psp4.13231](https://doi.org/10.1002/psp4.13231) |
+
+## Pharmacodynamics (PD)
+
+| status | detail | about | model | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Gatfield_2017_arrestin_recruitment](drugs/drug_selexipag/pd_Gatfield_2017_arrestin_recruitment.md) | β-arrestin recruitment biomarker turnover ← ACT-333679 | — | Gatfield J et al., Selexipag Active Metabolite ACT-333679…, The Journal of pharmacology… (2017) | [10.1124/jpet.116.239665](https://doi.org/10.1124/jpet.116.239665) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Gatfield_2017_cAMP](drugs/drug_selexipag/pd_Gatfield_2017_cAMP.md) | cytosolic cAMP levels biomarker turnover ← ACT-333679 | — | Gatfield J et al., Selexipag Active Metabolite ACT-333679…, The Journal of pharmacology… (2017) | [10.1124/jpet.116.239665](https://doi.org/10.1124/jpet.116.239665) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Gatfield_2017_cell_proliferation](drugs/drug_selexipag/pd_Gatfield_2017_cell_proliferation.md) | cell proliferation biomarker turnover ← ACT-333679 | — | Gatfield J et al., Selexipag Active Metabolite ACT-333679…, The Journal of pharmacology… (2017) | [10.1124/jpet.116.239665](https://doi.org/10.1124/jpet.116.239665) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Gatfield_2017_cellular_relaxation](drugs/drug_selexipag/pd_Gatfield_2017_cellular_relaxation.md) | cellular relaxation biomarker turnover ← ACT-333679 | — | Gatfield J et al., Selexipag Active Metabolite ACT-333679…, The Journal of pharmacology… (2017) | [10.1124/jpet.116.239665](https://doi.org/10.1124/jpet.116.239665) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Gatfield_2017_extracellular_matrix_synthesis](drugs/drug_selexipag/pd_Gatfield_2017_extracellular_matrix_synthesis.md) | extracellular matrix synthesis biomarker turnover ← ACT-333679 | — | Gatfield J et al., Selexipag Active Metabolite ACT-333679…, The Journal of pharmacology… (2017) | [10.1124/jpet.116.239665](https://doi.org/10.1124/jpet.116.239665) |
 
 ## Pharmacogenomics (PGx)
 
@@ -66,69 +92,62 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 ## Coverage
 
 - **PubMed hits:** 33 matched, 33 returned
-- **screened:** 0  ·  **relevant:** 0
-- **records:** 0  ·  extracted 0  ·  needs_review 0  ·  rejected 0  ·  stale 0
+- **screened:** 3  ·  **relevant:** 3
+- **records:** 4  ·  extracted 1  ·  needs_review 1  ·  rejected 2  ·  stale 0
 - **scholar-agent fallback query used:** True
 
 ## Full text wanted
 
-_7 paper(s) judged relevant from the abstract, with no full text on disk — paywalled, or the resolver could not reach them. Follow the DOI, then save the PDF into `papers/` as `&lt;save as&gt;.pdf` and re-run the extraction._
+_3 paper(s) judged relevant from the abstract, with no full text on disk — paywalled, or the resolver could not reach them. Follow the DOI, then save the PDF into `papers/` as `&lt;save as&gt;.pdf` and re-run the extraction._
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Axelsen_2024.pdf` | Axelsen LN et al., Population pharmacokinetics of selexipa…, CPT: pharmacometrics & syst… (2024) | popPK | 10 | [10.1002/psp4.13231](https://doi.org/10.1002/psp4.13231) | [39570749](https://pubmed.ncbi.nlm.nih.gov/39570749) | The paper describes a population PK study for selexipag, but the specific numeric parameter values (CL, V, etc.) are not present in the provided abstract text. |
-| `Krause_2017.pdf` | Krause A et al., Population Modeling of Selexipag Pharma…, CPT: pharmacometrics & syst… (2017) | popPK | 10 | [10.1002/psp4.12202](https://doi.org/10.1002/psp4.12202) | [28556581](https://pubmed.ncbi.nlm.nih.gov/28556581) | The paper describes a population PK model for selexipag, but the specific numeric parameter values (CL, V, etc.) are not present in the provided abstract/evidence. |
-| `Axelsen_2021.pdf` | Axelsen LN et al., Clopidogrel, a CYP2C8 inhibitor, causes…, British journal of clinical… (2021) | popPK | 8 | [10.1111/bcp.14365](https://doi.org/10.1111/bcp.14365) | [32415684](https://pubmed.ncbi.nlm.nih.gov/32415684) | The study reports PK interaction data for selexipag and its active metabolite, but specific disposition parameters (CL, V, t1/2) are not explicitly listed in the text, only fold-changes in exposure. |
-| `Hoch_2015.pdf` | Hoch M et al., A thorough QT study in the context of a…, Drug design, development an… (2015) | pd | 5 | [10.2147/DDDT.S75565](https://doi.org/10.2147/DDDT.S75565) | [25552906](https://www.ncbi.nlm.nih.gov/pubmed/25552906) | metadata signals extractable PD data (exposure-response) |
 | `Gnerre_2018.pdf` | Gnerre C et al., The metabolism and drug-drug interactio…, Xenobiotica; the fate of fo… (2018) | pgx | 7 | [10.1080/00498254.2017.1357088](https://doi.org/10.1080/00498254.2017.1357088) | [28737453](https://www.ncbi.nlm.nih.gov/pubmed/28737453) | metadata signals extractable PGX data (CYP2C8, PK/PD-context) |
 | `Juif_2017.pdf` | Juif PE et al., A pharmacokinetic drug-drug interaction…, European journal of clinica… (2017) | pgx | 7 | [10.1007/s00228-017-2282-7](https://doi.org/10.1007/s00228-017-2282-7) | [28639119](https://www.ncbi.nlm.nih.gov/pubmed/28639119) | metadata signals extractable PGX data (CYP3A4, PK/PD-context) |
 | `Kaufmann_2015.pdf` | Kaufmann P et al., Effect of lopinavir/ritonavir on the ph…, British journal of clinical… (2015) | pgx | 7 | [10.1111/bcp.12650](https://doi.org/10.1111/bcp.12650) | [25851691](https://www.ncbi.nlm.nih.gov/pubmed/25851691) | metadata signals extractable PGX data (CYP3A4, PK/PD-context) |
 
-<sub>queue written 2026-10-05T16:13:24.555638+00:00</sub>
+<sub>queue written 2026-10-07T18:20:06.846721+00:00</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Axelsen_2021 | relevant | 8 | 2 | The study reports PK interaction data for selexipag and its active metabolite, but specific disposition parameters (CL, V, t1/2) are not explicitly listed in the text, only fold-changes in exposure. |
 | PD | Axelsen_2021 | not_relevant | 0 | 0 | The study reports only pharmacokinetic (PK) parameters (AUC, Cmax) and drug-drug interaction ratios; it does not report any pharmacodynamic (PD) or exposure-response relationship for selexipag. |
-| PGx | Axelsen_2021 | not_relevant | 2 | 10 | The study reports a drug-drug interaction (clopidogrel) and explicitly states that the effect on exposure was comparable across all CYP2C8 genotypes, indicating no significant pharmacogenomic effect. |
-| popPK | Axelsen_2024 | relevant | 10 | 0 | The paper describes a population PK study for selexipag, but the specific numeric parameter values (CL, V, etc.) are not present in the provided abstract text. |
+| PGx | Axelsen_2021 | not_relevant | 4 | 9 | The study assesses a drug-drug interaction (clopidogrel) and reports that the effect on PK is comparable across CYP2C8 genotypes, implying no significant pharmacogenomic effect. |
 | PD | Axelsen_2024 | not_relevant | 0 | 0 | The paper focuses exclusively on population pharmacokinetics (PK) and dose selection based on exposure matching, with no pharmacodynamic (PD) or exposure-response modeling or numeric PD parameters reported. |
 | popPK | Bruderer_2014 | relevant | 8 | 4 | The study reports quantitative PK parameters (half-life) for selexipag, but lacks other key disposition parameters like clearance or volume of distribution. |
 | PD | Bruderer_2014 | not_relevant | 2 | 1 | The study reports PK parameters and qualitative safety data, but explicitly states that platelet aggregation effects were variable without an obvious dose-dependent pattern, providing no numeric PD parameters or extractable exposure-response relationship. |
 | popPK | Bruderer_2016 | irrelevant | 2 | 0 | The study is a drug-drug interaction trial that reports only geometric mean ratios and qualitative statements about steady-state AUC, lacking specific quantitative PK parameter values (e.g., CL, V, t1/2) for selexipag. |
 | PD | Bruderer_2016 | not_relevant | 0 | 0 | The study reports a lack of interaction (GMRs for INR and PK parameters) but does not provide a concentration-effect or dose-response model with numeric PD parameters (e.g., Emax, EC50) for selexipag. |
-| popPK | Gatfield_2017 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic and pharmacodynamic analysis of selexipag's metabolite, reporting efficacy and potency (EC50/IC50) rather than pharmacokinetic disposition parameters (CL, V, t1/2). |
+| popPK | Gatfield_2017 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of pharmacodynamic effects (receptor binding, cAMP, cell proliferation) and does not report quantitative pharmacokinetic disposition parameters like clearance or volume. |
 | popPK | Genecand_2021 | irrelevant | 2 | 0 | The paper is a review article that discusses selexipag's pharmacokinetics but does not provide original quantitative disposition parameters or numeric values in the provided evidence. |
 | PD | Genecand_2021 | not_relevant | 2 | 1 | The text is a review article summary that mentions pharmacodynamics qualitatively but does not provide specific numeric PD parameters or exposure-response data. |
 | popPK | Ghosh_2017 | irrelevant | 2 | 0 | The paper is a review summarizing existing studies and does not present original quantitative pharmacokinetic parameter values for selexipag in the provided evidence. |
 | PD | Ghosh_2017 | not_relevant | 2 | 1 | The text is a review summary that qualitatively describes efficacy outcomes (e.g., 6-minute walk distance, mortality) but does not provide specific numeric PD parameters (Emax, EC50) or concentration-effect curves. |
-| PGx | Gnerre_2018 | not_relevant | 0 | 0 | The paper describes the metabolic pathways and drug-drug interaction potential of selexipag but does not report any pharmacogenomic effects (gene variants) on its PK or PD parameters. |
+| PGx | Gnerre_2018 | not_relevant | 0 | 0 | The paper describes the metabolic pathways and enzyme interactions of selexipag but does not report any pharmacogenomic effects (gene variant/genotype) on its PK or PD parameters. |
 | popPK | Hoch_2015 | irrelevant | 1 | 0 | The paper is a thorough QT study focused on cardiac repolarization and does not report quantitative pharmacokinetic disposition parameters (CL, V, etc.) for selexipag. |
 | PD | Hoch_2015 | not_relevant | 3 | 2 | The paper reports a qualitative conclusion that no exposure-response relationship was demonstrated for selexipag, without providing numeric PD parameters or a derivable concentration-effect curve. |
 | popPK | Honorato_2017 | irrelevant | 1 | 0 | The paper is a pharmacology review that discusses selexipag's pharmacokinetics qualitatively but does not provide original quantitative disposition parameters or numeric values. |
 | PD | Honorato_2017 | not_relevant | 2 | 1 | The text is a qualitative pharmacology review summary that discusses general pharmacodynamic properties and safety but does not provide specific numeric PD parameters (e.g., EC50, Emax) or exposure-response data for selexipag. |
-| PGx | Juif_2017 | not_relevant | 0 | 0 | The study investigates a drug-drug interaction (selexipag and midazolam) in healthy subjects and does not report any pharmacogenomic effects or gene variant analyses. |
-| PGx | Kaufmann_2015 | not_relevant | 0 | 0 | The study investigates a drug-drug interaction (lopinavir/ritonavir) rather than a pharmacogenomic effect (gene variant/genotype). |
-| popPK | Krause_2017 | relevant | 10 | 0 | The paper describes a population PK model for selexipag, but the specific numeric parameter values (CL, V, etc.) are not present in the provided abstract/evidence. |
-| PGx | Lattanzio_2022 | not_relevant | 4 | 2 | The paper reports a case of hepatotoxicity associated with a poor metabolizer genotype but does not provide quantitative pharmacokinetic or pharmacodynamic parameter data (e.g., AUC, Cmax) to define a specific effect size. |
+| PGx | Juif_2017 | not_relevant | 0 | 10 | This study evaluates a drug-drug interaction between selexipag and midazolam, not a pharmacogenomic effect. |
+| PGx | Kaufmann_2015 | not_relevant | 0 | 0 | The study investigates a drug-drug interaction (lopinavir/ritonavir) and does not report any effects of gene variants, genotypes, or pharmacogenomic phenotypes. |
+| PGx | Lattanzio_2022 | not_relevant | 4 | 1 | The paper is a case report that hypothesizes a link between CYP2C8/9 genotypes and hepatotoxicity but lacks quantitative PK data or fitted effect sizes. |
 | popPK | Lindegaard_2020 | irrelevant | 0 | 0 | The paper is a review focused on treprostinil, and selexipag is only mentioned as a comparator drug without any quantitative pharmacokinetic parameters provided. |
 | PD | Lindegaard_2020 | not_relevant | 1 | 0 | The paper is a mini-review of treprostinil and only mentions selexipag as a comparator without providing any specific pharmacodynamic data or exposure-response parameters for it. |
 | popPK | Najjar_2020 | irrelevant | 0 | 0 | The paper is a review of prodrugs and does not report quantitative pharmacokinetic parameters for selexipag. |
 | PD | Najjar_2020 | not_relevant | 0 | 0 | The paper is a general review of prodrugs and does not contain specific pharmacodynamic or exposure-response data for selexipag. |
 | popPK | Oriaku_2020 | irrelevant | 0 | 0 | This is a clinical case report describing a drug transition and hemodynamic changes, not a pharmacokinetic study, and it contains no quantitative PK parameters (CL, V, ka, etc.) for selexipag. |
 | PD | Oriaku_2020 | not_relevant | 1 | 0 | The paper is a single case report describing a drug transition with qualitative and percentage-based hemodynamic improvements, but it does not report any concentration-effect data, dose-response curves, or numeric PD parameters (e.g., Emax, EC50) for selexipag. |
-| popPK | Ruehs_2021 | irrelevant | 0 | 0 | The study reports population pharmacokinetic parameters for vericiguat, not selexipag. |
+| popPK | Ruehs_2021 | irrelevant | 0 | 0 | The study analyzes the pharmacokinetics of vericiguat, not selexipag. |
 | popPK | Sardana_2016 | irrelevant | 2 | 0 | The paper is a review article discussing the development and clinical trials of selexipag, but the provided evidence contains no original quantitative pharmacokinetic parameter values (e.g., CL, V, t1/2). |
 | PD | Sardana_2016 | not_relevant | 2 | 1 | The text is an abstract of a review article that discusses the pharmacodynamics of selexipag qualitatively but does not provide specific numeric PD parameters or exposure-response data. |
 | popPK | Skoro-Sajer_2014 | irrelevant | 0 | 0 | The paper is a Phase 3 clinical efficacy and safety trial (GRIPHON) reporting clinical endpoints, not a pharmacokinetic study with disposition parameters. |
 | PD | Skoro-Sajer_2014 | not_relevant | 0 | 0 | The paper is a Phase 3 clinical trial (GRIPHON) reporting clinical efficacy and safety outcomes (time-to-event, 6MWD) but does not contain pharmacokinetic data, concentration-effect modeling, or numeric PD parameters (e.g., Emax, EC50). |
 | popPK | Varian_2024 | irrelevant | 0 | 0 | The paper is a clinical trial protocol for pulmonary arterial hypertension that uses selexipag as a therapeutic agent but does not report any pharmacokinetic parameters or disposition data. |
 | PD | Varian_2024 | not_relevant | 0 | 0 | The text is a study protocol for a clinical trial comparing therapeutic strategies and does not report any pharmacokinetic or pharmacodynamic data, exposure-response relationships, or numeric PD parameters. |
-| PGx | Wu_2022 | not_relevant | 0 | 0 | The paper discusses drug-drug interactions (CYP2C8 inhibitors) for selexipag, not pharmacogenomic effects of gene variants. |
-| popPK | Zhang_2024 | irrelevant | 0 | 0 | The study is a pharmacovigilance analysis of PDE5 inhibitors (sildenafil, tadalafil, vardenafil, avanafil) and does not involve selexipag or report any pharmacokinetic parameters. |
+| PGx | Wu_2022 | not_relevant | 0 | 0 | The paper is a review of drug-drug interactions and metabolism, reporting on CYP2C8 inhibitor effects on selexipag levels, but it does not report on gene variants (pharmacogenomics) affecting PK or PD. |
+| popPK | Zhang_2024 | irrelevant | 0 | 0 | The study is a pharmacovigilance analysis of adverse events (hearing impairment) for PDE5 inhibitors and contains no pharmacokinetic data for selexipag. |
 | PD | Zhang_2024 | not_relevant | 0 | 0 | The paper is a pharmacovigilance study analyzing adverse event reports (hearing impairment) for PDE5 inhibitors using disproportionality analysis; it does not report any pharmacodynamic, exposure-response, or dose-response relationships or numeric PD parameters for selexipag. |
 
 ---
-<sub>Generated by `docs.py` (scholarv2)</sub>
+<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-10-07 18:20 UTC</sub>

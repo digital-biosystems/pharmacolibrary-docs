@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C01B&quot;,&quot;href&quot;:&quot;atc/C01B.md&quot;},{&quot;label&quot;:&quot;ajmaline&quot;,&quot;href&quot;:&quot;drugs/drug_ajmaline/&quot;},{&quot;label&quot;:&quot;B\u00e9barov\u00e1_2005 \u00b7 PD current measured at the end of 300 ms depolarizing impulse&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Ajmaline_Iven1977_reference&quot;,&quot;label&quot;:&quot;Iven_1977_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ajmaline/Ajmaline_Iven1977_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # current measured at the end of 300 ms depolarizing impulse — PD  <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span>
@@ -18,6 +19,10 @@
 **As extracted:** Ajmaline (concentrations from the PK model of Iven_1977) drives current measured at the end of 300 ms depolarizing impulse: direct sigmoid Emax (Hill) effect.
 
 **Model:** No model was generated from this record.
+
+> Ajmaline concentrations inhibit the current measured at the end of a 300 ms depolarizing impulse via a sigmoidal Emax model with an IC50 of 61.0 micromol/l and a Hill coefficient of 0.91. The paper does not provide a full text to specify the underlying mechanism (e.g., production vs. elimination) or rate constants.
+>
+> <sub>in the paper's terms — summarised by qwen3.8:27b-mtp-q8_0 from the paper's text; not checked by a person</sub>
 
 - **paper:** `Bébarová_2005`
 - **model family:** `sigmoid_emax`

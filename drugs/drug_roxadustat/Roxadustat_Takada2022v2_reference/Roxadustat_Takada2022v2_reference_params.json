@@ -1,0 +1,39 @@
+{
+ "dose_source": "paper",
+ "model_id": "Roxadustat_Takada2022v2_reference",
+ "molar_masses": {
+  "central.C": 0.352346
+ },
+ "note": "Values for the shared PK_2C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "paper_doses_kind": "range",
+ "paper_doses_mg": [
+  20.0,
+  250.0
+ ],
+ "parameters": {
+  "Cl": 2.538888888888889e-07,
+  "F": 1.0,
+  "MM": 0.352346,
+  "Tlag": 0.0,
+  "VdPerKg": 0.00020571428571428574,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 2e-05,
+  "k12": 2.5270061728395063e-06,
+  "k21": 1.259131103421761e-05,
+  "ka": 0.0001775,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 11947.094188376754
+ },
+ "reference_peaks": {
+  "central.C": 0.0006430704803520952
+ },
+ "stop_time": 259200.0,
+ "template": "PK_2C_enteral",
+ "template_fmu": "PK_2C_enteral.fmu"
+}

@@ -15,13 +15,17 @@
 
 ## What this record describes
 
-**As extracted:** Ibutilide (measured concentrations) drives IKr (in pA/pF): direct sigmoid Emax (Hill) effect.
+**As extracted:** Ibutilide (concentrations from the PK model of Zeng_2017) drives IKr (in pA/pF): direct sigmoid Emax (Hill) effect.
 
 **Model:** No model was generated from this record.
 
+> Ibutilide concentrations (nM) directly inhibit the IKr current (pA/pF) via a sigmoidal Emax mechanism, with IC50 values ranging from 22.2 to 105.3 nM depending on the co-expressed MDR1 variant. The paper attributes the reduced potency in MDR1*7 cells to enhanced drug efflux by the P-glycoprotein pump, which lowers the intracellular drug concentration available to block the channel.
+>
+> <sub>in the paper's terms — summarised by qwen3.8:27b-mtp-q8_0 from the paper's text; not checked by a person</sub>
+
 - **paper:** `McBride_2009`
 - **model family:** `sigmoid_emax`
-- **driver:** `conc_no_pk`
+- **driver:** `cited_pk`
 - **tier:** descriptive
 - **effect:** inhibition/proportional
 

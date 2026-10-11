@@ -18,7 +18,7 @@ Vilazodone is an antidepressant of the SSRI type, listed for treating anxiety. I
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 00:18 | 0:41 | 0/0/0 | 2/0/0 | 0/0/5 | 81,308/2,184 | ollama / glm-5.3-flash | 19 | 1/4 | 5/0 | 0 |
+| 2026-10-07 19:03 | 0:31 | 0/0/0 | 0/0/1 | 0/0/5 | 76,985/1,339 | einfracz / qwen3.8-27b | 20 | 1/4 | 6/0 | 0 |
 
 ## popPK records
 
@@ -28,10 +28,7 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> | [Edwards_2013_QTcI](drugs/drug_vilazodone/pd_Edwards_2013_QTcI.md) | time-matched change from baseline in QTc interval corrected by individual correction method ← vilazodone · direct linear effect | — | Edwards J et al., Vilazodone lacks proarrhythmogenic pote…, International journal of cl… (2013) | [10.5414/CP201826](https://doi.org/10.5414/CP201826) |
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span> | [Li_2017_5_HT1A_EC50](drugs/drug_vilazodone/pd_Li_2017_5_HT1A_EC50.md) | 5-HT1A receptor agonism ← compound 1e (vilazodone-tacrine hybrid) · direct sigmoid Emax (Hill) effect | — | Li X et al., Novel Vilazodone-Tacrine Hybrids as Pot…, ACS chemical neuroscience (2017) | [10.1021/acschemneuro.7b00259](https://doi.org/10.1021/acschemneuro.7b00259) |
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span> | [Li_2017_AChE_IC50](drugs/drug_vilazodone/pd_Li_2017_AChE_IC50.md) | Acetylcholinesterase inhibition ← compound 1e (vilazodone-tacrine hybrid) · direct sigmoid Emax (Hill) effect | — | Li X et al., Novel Vilazodone-Tacrine Hybrids as Pot…, ACS chemical neuroscience (2017) | [10.1021/acschemneuro.7b00259](https://doi.org/10.1021/acschemneuro.7b00259) |
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span> | [Li_2017_SERT_IC50](drugs/drug_vilazodone/pd_Li_2017_SERT_IC50.md) | 5-HT reuptake inhibition ← compound 1e (vilazodone-tacrine hybrid) · direct sigmoid Emax (Hill) effect | — | Li X et al., Novel Vilazodone-Tacrine Hybrids as Pot…, ACS chemical neuroscience (2017) | [10.1021/acschemneuro.7b00259](https://doi.org/10.1021/acschemneuro.7b00259) |
+| <span class="pk-badge pk-badge--orange">needs review</span> | [Edwards_2013_QTcI](drugs/drug_vilazodone/pd_Edwards_2013_QTcI.md) | QT interval corrected for heart rate (QTcI) ← vilazodone · direct linear effect | — | Edwards J et al., Vilazodone lacks proarrhythmogenic pote…, International journal of cl… (2013) | [10.5414/CP201826](https://doi.org/10.5414/CP201826) |
 
 ## Pharmacogenomics (PGx)
 
@@ -81,36 +78,36 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 ## Full text wanted
 
-_3 paper(s) judged relevant from the abstract, with no full text on disk — paywalled, or the resolver could not reach them. Follow the DOI, then save the PDF into `papers/` as `&lt;save as&gt;.pdf` and re-run the extraction._
+_2 paper(s) judged relevant from the abstract, with no full text on disk — paywalled, or the resolver could not reach them. Follow the DOI, then save the PDF into `papers/` as `&lt;save as&gt;.pdf` and re-run the extraction._
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
 | `Bundgaard_2016.pdf` | Bundgaard C et al., P-glycoprotein differentially affects e…, Neuropharmacology (2016) | pd | 5 | [10.1016/j.neuropharm.2015.12.009](https://doi.org/10.1016/j.neuropharm.2015.12.009) | [26700248](https://www.ncbi.nlm.nih.gov/pubmed/26700248) | metadata signals extractable PD data (EC50) |
 | `Edwards_2013.pdf` | Edwards J et al., Vilazodone lacks proarrhythmogenic pote…, International journal of cl… (2013) | pd | 5 | [10.5414/CP201826](https://doi.org/10.5414/CP201826) | [23611569](https://www.ncbi.nlm.nih.gov/pubmed/23611569) | metadata signals extractable PD data (pharmacodynamicmodel) |
-| `Jiménez_2023.pdf` | Jiménez EM et al., Drug Repurposing to Inhibit Histamine N…, Molecules (Basel, Switzerla… (2023) | pd | 4 | [10.3390/molecules28020576](https://doi.org/10.3390/molecules28020576) | [36677633](https://www.ncbi.nlm.nih.gov/pubmed/36677633) | metadata signals extractable PD data (IC50) |
 
-<sub>queue written 2026-10-07T00:17:51.899314+00:00</sub>
+<sub>queue written 2026-10-07T19:03:00.632221+00:00</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| PGx | Ali_2026 | not_relevant | 2 | 3 | SLC6A4 genotype is discussed speculatively regarding serotonin toxicity risk, not as a quantified effect on vilazodone PK/PD parameters; vilazodone only mentioned as a tolerated trial with parasomnias. |
+| PGx | Ali_2026 | not_relevant | 0 | 0 | The paper is a case report of neuropsychiatric complications post-bariatric surgery and does not analyze the pharmacokinetic or pharmacodynamic effects of specific gene variants on vilazodone. |
 | popPK | Bousman_2023 | irrelevant | 1 | 0 | This is a pharmacogenetics guideline (CPIC) focusing on genotype-based dosing recommendations rather than a study reporting quantitative pharmacokinetic parameters (CL, V, etc.) for vilazodone. |
 | PD | Bousman_2023 | not_relevant | 1 | 0 | The paper is a clinical pharmacogenetics guideline (CPIC) focusing on genotype-based dosing recommendations and does not report primary pharmacodynamic modeling or numeric exposure-response parameters for vilazodone. |
+| PGx | Bousman_2023 | not_relevant | 3 | 5 | The paper is a CPIC guideline recommending dosing adjustments based on CYP2D6/CYP2C19 genotypes for vilazodone, but it is a consensus document that summarizes evidence rather than reporting primary pharmacokinetic data or fitted quantitative effect sizes derived from the drug's metabolism. |
 | popPK | Bundgaard_2016 | irrelevant | 0 | 0 | no_text gate: only 147 chars of text extracted (&lt; 400) |
 | PD | Bundgaard_2016 | not_relevant | 0 | 0 | The paper focuses on P-glycoprotein transport kinetics at the blood-brain barrier, not on pharmacodynamic exposure-response or dose-response relationships. |
-| popPK | Cantwell_2026 | irrelevant | 0 | 0 | This is a GlyT2 inhibitor (RPI-GLYT2-82) structural/pharmacology study; vilazodone is not mentioned and no PK parameters for it appear. |
-| popPK | Cheng_2020 | irrelevant | 0 | 0 | This is a model-based meta-analysis of antidepressant efficacy (dose-effect on depression scales), not a pharmacokinetic study reporting disposition parameters for vilazodone. |
+| popPK | Cantwell_2026 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics and structure of RPI-GLYT2-82, a GlyT2 inhibitor, and does not mention or study vilazodone. |
+| popPK | Cheng_2020 | irrelevant | 0 | 0 | This is a network meta-analysis of antidepressant efficacy (depression score reduction) and does not report pharmacokinetic parameters or disposition data for vilazodone. |
 | PD | Cheng_2020 | not_relevant | 2 | 1 | The paper is a meta-analysis that explicitly states no significant dose-response relationship was observed for the antidepressants, and it does not provide specific numeric PD parameters (like Emax or EC50) for vilazodone. |
 | popPK | Citrome_2016_2 | irrelevant | 0 | 0 | The paper is a clinical efficacy and tolerability comparison (NNT/NNH) and does not report any pharmacokinetic parameters for vilazodone. |
 | PD | Citrome_2016_2 | not_relevant | 0 | 0 | The paper is an indirect comparison of clinical trial outcomes (NNT/NNH) and does not report any pharmacokinetic or pharmacodynamic modeling, exposure-response relationships, or numeric PD parameters for vilazodone. |
 | popPK | Cohen_2022 | irrelevant | 0 | 0 | The study is a behavioral pharmacology experiment in rats assessing the anti-dyskinetic effects of vilazodone, with no pharmacokinetic parameters or disposition data reported. |
-| popPK | Croft_2014 | irrelevant | 0 | 0 | This is an efficacy/safety clinical trial with no pharmacokinetic parameters reported. |
-| popPK | Durgam_2016 | irrelevant | 0 | 0 | This is an efficacy/safety clinical trial with no pharmacokinetic parameters reported. |
+| popPK | Croft_2014 | irrelevant | 0 | 0 | The paper is a clinical efficacy and safety trial reporting psychometric outcomes (MADRS, CGI) and adverse events, containing no pharmacokinetic data or disposition parameters. |
+| popPK | Durgam_2016 | irrelevant | 0 | 0 | The study is a clinical trial evaluating the efficacy and safety of vilazodone for generalized anxiety disorder and does not report any pharmacokinetic parameters. |
 | popPK | Edwards_2013 | irrelevant | 2 | 0 | The study is a thorough QT/ECG safety assessment, not a PK study, and no quantitative disposition parameters (CL, V, ka, etc.) for vilazodone are reported in the provided text. |
-| PGx | El-Kasaby_2024 | not_relevant | 2 | 3 | In vitro study of drug effects on SERT and a folding-deficient SERT variant; no gene variant/genotype effect on vilazodone PK/PD parameters reported. |
-| popPK | Gommoll_2015 | irrelevant | 0 | 0 | This is a clinical efficacy/safety trial of vilazodone in GAD with no pharmacokinetic parameters (no CL, V, ka, half-life, or PK model) reported. |
+| PGx | El-Kasaby_2024 | not_relevant | 0 | 0 | The paper investigates the mechanism of action of trazodone and nefazodone on the serotonin transporter and their effects on a mutant variant, but it does not report a pharmacogenomic effect on the PK or PD of vilazodone itself. |
+| popPK | Gommoll_2015 | irrelevant | 0 | 0 | The paper is a clinical efficacy trial for generalized anxiety disorder and does not report any pharmacokinetic parameters for vilazodone. |
 | popPK | Guay_2012_2 | irrelevant | 2 | 0 | The paper is a narrative review of vilazodone that summarizes general pharmacokinetic properties (e.g., metabolism, food effect) but does not report specific quantitative disposition parameters (CL, V, ka) in the provided text. |
 | PD | Guay_2012_2 | not_relevant | 2 | 1 | The paper is a general review of vilazodone's chemistry, PK, and clinical efficacy, lacking specific numeric PD parameters or detailed exposure-response modeling. |
 | popPK | Heinrich_2004 | irrelevant | 0 | 0 | The paper is a structure-activity relationship study reporting in vitro receptor binding affinities, not pharmacokinetic disposition parameters. |
@@ -119,8 +116,8 @@ _3 paper(s) judged relevant from the abstract, with no full text on disk — pay
 | PD | Italiano_2014_2 | not_relevant | 1 | 0 | The paper is a review of PK/PD interactions that explicitly states the absence of PD DI studies and provides no numeric PD parameters or concentration-effect data for vilazodone. |
 | popPK | Jiménez_2023 | irrelevant | 0 | 0 | no_text gate: only 58 chars of text extracted (&lt; 400) |
 | PD | Jiménez_2023 | not_relevant | 0 | 0 | The paper focuses on drug repurposing for histamine N-methyl transferase inhibition and does not report pharmacodynamic or exposure-response data for vilazodone. |
-| popPK | Li_2017 | irrelevant | 0 | 0 | Medicinal chemistry study of vilazodone-tacrine hybrids with in vitro potency data only; no PK parameters for vilazodone. |
-| popPK | Liu_2018 | irrelevant | 0 | 0 | Medicinal chemistry study of vilazodone-tacrine hybrid compounds with in vitro pharmacology data, no PK parameters for vilazodone. |
+| popPK | Li_2017 | irrelevant | 0 | 0 | The study focuses on the synthesis and biological evaluation of novel hybrid compounds, not the pharmacokinetic disposition parameters of vilazodone itself. |
+| popPK | Liu_2018 | irrelevant | 0 | 0 | The study focuses on the design, synthesis, and in-vitro biological evaluation of vilazodone-tacrine hybrid compounds, not the pharmacokinetics of vilazodone itself. |
 | PD | Liu_2018 | not_relevant | 0 | 0 | The paper reports in vitro pharmacological potency (EC50/IC50) for novel vilazodone-tacrine hybrids, not a pharmacodynamic or exposure-response relationship for the drug vilazodone itself. |
 | popPK | Mandrioli_2012 | irrelevant | 1 | 0 | The paper is a review article describing general properties of SSRIs including vilazodone, but it does not report original quantitative pharmacokinetic parameter values for vilazodone. |
 | PD | Mandrioli_2012 | not_relevant | 1 | 0 | The text is a review abstract describing general properties and TDM for SSRIs, including vilazodone, but does not report specific numeric PD parameters or exposure-response relationships. |
@@ -130,8 +127,8 @@ _3 paper(s) judged relevant from the abstract, with no full text on disk — pay
 | PD | McKean_2015_2 | not_relevant | 1 | 0 | The paper is a single case report describing an adverse event (seizures) without providing any concentration-effect data, dose-response curves, or numeric pharmacodynamic parameters. |
 | popPK | Park_2014_2 | irrelevant | 0 | 0 | The paper is a review of case reports regarding serotonin syndrome and does not report any quantitative pharmacokinetic parameters for vilazodone. |
 | PD | Park_2014_2 | not_relevant | 0 | 0 | The paper is a qualitative review of case reports regarding serotonin syndrome risk and does not contain any quantitative pharmacodynamic or exposure-response modeling for vilazodone. |
-| PGx | Park_2014_2 | not_relevant | 2 | 1 | Review of tramadol-antidepressant serotonin syndrome cases; no gene variant effect on vilazodone PK/PD parameters reported. |
-| PGx | Rickels_2009 | not_relevant | 3 | 1 | Abstract only mentions pharmacogenetic data and biomarkers for response without reporting any gene-variant effect on a PK/PD parameter. |
+| PGx | Park_2014_2 | not_relevant | 0 | 0 | The paper reviews serotonin syndrome cases with tramadol and does not report pharmacogenomic effects on vilazodone PK/PD. |
+| PGx | Rickels_2009 | not_relevant | 2 | 1 | The provided text is only an abstract/introduction that mentions the review will cover pharmacogenetic data, but it does not report specific genetic variants, PK/PD parameters, or quantitative effect sizes. |
 | popPK | Schwartz_2011_2 | irrelevant | 0 | 0 | The paper is a pharmacological and clinical review focusing on mechanism of action and efficacy, not a pharmacokinetic study reporting quantitative disposition parameters. |
 | PD | Schwartz_2011_2 | not_relevant | 1 | 0 | The paper is a qualitative pharmacological and clinical review that describes the mechanism of action but does not report any numeric PD parameters, exposure-response curves, or dose-effect data. |
 | popPK | Singh_2012 | irrelevant | 0 | 0 | The paper is a narrative review of clinical utility and mechanism of action, containing no original quantitative pharmacokinetic parameters for vilazodone. |
@@ -140,7 +137,7 @@ _3 paper(s) judged relevant from the abstract, with no full text on disk — pay
 | PD | Spina_2012 | not_relevant | 1 | 0 | The text is a qualitative review of drug interactions and does not report any numeric pharmacodynamic parameters or exposure-response relationships for vilazodone. |
 | popPK | Stuivenga_2019_2 | irrelevant | 3 | 4 | The paper is a clinical review that reports general PK parameters (Vd, t1/2, bioavailability) but lacks the specific quantitative disposition parameters (CL, Q, ka) or population-PK model estimates required for extraction. |
 | PD | Stuivenga_2019_2 | not_relevant | 2 | 0 | The paper is a narrative review discussing the clinical utility and general pharmacodynamics of vilazodone, but it does not present original data, specific numeric PD parameters (e.g., EC50, Emax), or extractable concentration-effect curves. |
-| popPK | Wei_2025 | irrelevant | 0 | 0 | No vilazodone PK parameters; this is a TCM network pharmacology study in mice with no quantitative disposition data. |
+| popPK | Wei_2025 | irrelevant | 0 | 0 | The paper focuses on the mechanisms of Ganmai Dazao Decoction in a mouse model of depression and does not mention or analyze the pharmacokinetics of vilazodone. |
 | PD | Wei_2025 | not_relevant | 0 | 0 | The paper studies Ganmai Dazao Decoction, not vilazodone, and does not report any exposure-response or dose-response PD parameters for vilazodone. |
 | popPK | Wen_2025 | irrelevant | 0 | 0 | The paper is a meta-analysis of gastrointestinal adverse effects (safety) and does not report any pharmacokinetic parameters for vilazodone. |
 | popPK | Zhang_2022 | irrelevant | 0 | 0 | The paper is a medicinal chemistry study on novel dual inhibitors where vilazodone is only used as a pharmacophore reference, and no PK parameters for vilazodone are reported. |

@@ -18,7 +18,7 @@ Acoramidis is a heart medicine used to treat familial amyloid polyneuropathy, a 
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-06 11:03 | 2:58 | 0/0/0 | 0/0/0 | 0/0/0 | 118,471/2,225 | ollama / qwen3.8:27b-mtp-q8_0 | 10 | 4/7 | 9/1 | 0 |
+| 2026-10-08 11:29 | 0:44 | 0/0/0 | 0/0/0 | 0/0/0 | 119,144/2,399 | einfracz / qwen3.8-27b | 10 | 4/7 | 9/1 | 0 |
 
 ## popPK records
 
@@ -64,63 +64,62 @@ _1 paper(s) judged relevant from the abstract, with no full text on disk — pay
 |---|---|---|---|---|---|---|
 | `Yu_2026.pdf` | Yu J et al., Understanding Pharmacokinetic-Drug Inte…, Current therapeutic researc… (2026) | pgx | 7 | [10.1016/j.curtheres.2025.100818](https://doi.org/10.1016/j.curtheres.2025.100818) | [41567854](https://www.ncbi.nlm.nih.gov/pubmed/41567854) | metadata signals extractable PGX data (CYP3A, PK/PD-context) |
 
-<sub>queue written 2026-10-06T11:02:10.519810+00:00</sub>
+<sub>queue written 2026-10-08T11:29:38.180990+00:00</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Alkholief_2019 | irrelevant | 0 | 0 | The study investigates the ocular delivery of Acyclovir, not acoramidis. |
+| popPK | Alkholief_2019 | irrelevant | 0 | 0 | The study focuses on the ocular delivery of Acyclovir in rabbits, not the pharmacokinetics of Acoramidis. |
 | popPK | Allender_2013 | irrelevant | 0 | 0 | no_text gate: only 114 chars of text extracted (&lt; 400) |
-| popPK | Andermatt_2022 | irrelevant | 0 | 0 | The paper reports viral clearance data for HSV-2 and EBV, not pharmacokinetic parameters for acoramidis. |
-| popPK | Basavaraju_2026 | irrelevant | 0 | 0 | The study focuses on valaciclovir/acyclovir formulation and does not involve acoramidis. |
-| popPK | Brandariz-Nuñez_2021 | irrelevant | 0 | 0 | The paper is a systematic review of neurotoxicity cases associated with acyclovir and valacyclovir, not a pharmacokinetic study of acoramidis. |
+| popPK | Andermatt_2022 | irrelevant | 0 | 0 | The paper concerns the clearance of viruses (HSV-2 and EBV) using blood filters and plasma exchange in a liver failure patient, with no mention of acoramidis or its pharmacokinetics. |
+| popPK | Basavaraju_2026 | irrelevant | 0 | 0 | The paper studies valaciclovir/acyclovir, not acoramidis. |
+| popPK | Brandariz-Nuñez_2021 | irrelevant | 0 | 0 | The paper is a systematic review of neurotoxicity cases associated with acyclovir and valacyclovir, and does not report pharmacokinetic parameters for acoramidis. |
 | popPK | Brigden_1981 | irrelevant | 0 | 0 | no_text gate: only 94 chars of text extracted (&lt; 400) |
-| popPK | Dong_2025 | irrelevant | 0 | 0 | The study focuses on acyclovir and OAT2 transporters in kidney injury, with no mention of acoramidis. |
+| popPK | Dong_2025 | irrelevant | 0 | 0 | The study focuses on the transport of acyclovir and the mechanism of OAT2 downregulation; acoramidis is not mentioned. |
 | PD | Endo_2026 | not_relevant | 2 | 1 | The paper reports clinical efficacy and PK/PD biomarker changes (TTR levels, stabilization) over time but does not provide a concentration-effect or dose-response model with numeric PD parameters (e.g., Emax, EC50). |
 | popPK | Englund_1987 | irrelevant | 0 | 0 | no_text gate: only 81 chars of text extracted (&lt; 400) |
-| popPK | Erlich_1997 | irrelevant | 0 | 0 | The paper discusses antiviral management of herpes and varicella-zoster infections and does not mention acoramidis or report any pharmacokinetic parameters for it. |
+| popPK | Erlich_1997 | irrelevant | 0 | 0 | The paper is a review of antiviral treatments for HSV/VZV and does not mention acoramidis. |
 | popPK | Fletcher_1985 | irrelevant | 0 | 0 | no_text gate: only 31 chars of text extracted (&lt; 400) |
-| popPK | Fontana_2026 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics and pharmacodynamics of vutrisiran (an RNAi therapeutic), not acoramidis, which is only mentioned as a comparator TTR stabilizer. |
-| PGx | Ji_2025 | not_relevant | 0 | 0 | The paper reports in vitro binding affinities and kinetics of acoramidis to wild-type TTR, not the effect of a gene variant on PK/PD parameters. |
+| popPK | Fontana_2026 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics and pharmacodynamics of vutrisiran (an RNAi therapeutic for transthyretin amyloidosis); acoramidis is mentioned only in the introduction as a TTR stabilizer, not as the subject of any PK analysis. |
+| PGx | Ji_2025 | not_relevant | 0 | 0 | The paper reports in vitro binding kinetics and stabilization properties of acoramidis on purified protein, but contains no information on pharmacogenomics, gene variants, or their effects on clinical pharmacokinetics or pharmacodynamics. |
 | popPK | Jones_1991 | irrelevant | 0 | 0 | no_text gate: only 28 chars of text extracted (&lt; 400) |
 | popPK | Joshi_1995 | irrelevant | 0 | 0 | no_text gate: only 126 chars of text extracted (&lt; 400) |
 | PD | Judge_2026 | not_relevant | 3 | 2 | The paper reports qualitative comparisons of TTR stabilization percentages and in vitro potency at fixed concentrations, but does not provide a dose-response curve, Emax/EC50 parameters, or a PK/PD model for acoramidis. |
-| PGx | Judge_2026 | not_relevant | 2 | 5 | The paper compares the pharmacodynamic efficacy (TTR stabilization) of acoramidis vs tafamidis in patients with different TTR genotypes, but does not report a pharmacogenomic effect (i.e., how a patient's genetic variant alters the PK/PD of the drug itself). |
-| popPK | Khammesri_2022 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of acyclovir in Asian elephants, not acoramidis. |
+| popPK | Khammesri_2022 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of acyclovir, not acoramidis. |
 | popPK | Kissling_2015 | irrelevant | 0 | 0 | no_text gate: only 83 chars of text extracted (&lt; 400) |
 | popPK | Laskin_1982 | irrelevant | 0 | 0 | no_text gate: only 60 chars of text extracted (&lt; 400) |
 | popPK | Laskin_1983 | irrelevant | 0 | 0 | no_text gate: only 38 chars of text extracted (&lt; 400) |
-| popPK | Liu_2021 | irrelevant | 0 | 0 | The study focuses on placental transfer of eight other drugs (acyclovir, cefuroxime, etc.) and does not report pharmacokinetic parameters for acoramidis. |
-| popPK | Lomoio_2025 | irrelevant | 0 | 0 | The study is an in silico structural and docking analysis of transthyretin variants, not a pharmacokinetic study reporting quantitative disposition parameters for acoramidis. |
+| popPK | Liu_2021 | irrelevant | 0 | 0 | The study models the placental transfer of acyclovir, cefuroxime, diazepam, dolutegravir, emtricitabine, metronidazole, ondansetron, and raltegravir, but does not study or report parameters for acoramidis. |
+| popPK | Lomoio_2025 | irrelevant | 0 | 0 | This is an in silico structural and docking study of transthyretin stabilizers, not a pharmacokinetic study reporting quantitative disposition parameters for acoramidis. |
 | PD | Lomoio_2025 | not_relevant | 0 | 0 | The paper is an in silico structural and docking study analyzing binding affinities of acoramidis to TTR variants, not a pharmacodynamic or exposure-response analysis in biological systems. |
-| popPK | Manczak_2023 | irrelevant | 0 | 0 | The paper reports pharmacokinetic parameters for letermovir, not acoramidis. |
-| popPK | Matsumoto_2026 | irrelevant | 0 | 0 | The study concerns the pharmacokinetics of amenamevir, not acoramidis. |
-| popPK | Maurer_2025 | irrelevant | 2 | 0 | The study focuses on the pharmacodynamic relationship between serum transthyretin levels and mortality, and while it mentions population PK modeling, no quantitative PK parameters (CL, V, etc.) are reported in the provided text. |
-| PGx | Maurer_2025 | not_relevant | 0 | 0 | The paper reports a pharmacodynamic effect of acoramidis on survival and TTR levels, but does not report a pharmacogenomic effect (gene variant/genotype) on PK or PD parameters. |
-| popPK | Methven_2026 | irrelevant | 0 | 0 | The paper presents a mechanistic mathematical model of transthyretin (TTR) dissociation and amyloid formation, not a pharmacokinetic study of acoramidis. |
+| popPK | Manczak_2023 | irrelevant | 0 | 0 | The paper concerns the pharmacokinetics of letermovir, not acoramidis. |
+| popPK | Matsumoto_2026 | irrelevant | 0 | 0 | The paper concerns amenamevir, not acoramidis. |
+| popPK | Maurer_2025 | irrelevant | 0 | 0 | The paper analyzes the prognostic value of serum transthyretin (pharmacodynamic) levels on survival outcomes and mentions population PK modeling only as a method without reporting any quantitative PK parameters (CL, V, etc.). |
+| PGx | Maurer_2025 | not_relevant | 2 | 0 | The paper analyzes the prognostic value of the pharmacodynamic marker (sTTR) and adjusts for TTR variant status, but it does not report a pharmacogenomic effect on a PK/PD parameter (i.e., it does not compare how the gene variant changes the drug's exposure or effect magnitude in a fitted model). |
+| popPK | Methven_2026 | irrelevant | 0 | 0 | The paper presents a mechanistic model of TTR dissociation and amyloid formation, not a pharmacokinetic study of acoramidis disposition parameters. |
 | PD | Methven_2026 | not_relevant | 3 | 2 | The paper presents a mechanistic disease model comparing treatment modalities and reports a predicted percentage reduction in a proxy metric (monomer efflux), but it does not provide an exposure-response or dose-response curve with numeric PD parameters (e.g., EC50, Emax) for acoramidis. |
 | popPK | Nair_2016 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of acyclovir, not acoramidis. |
-| popPK | Orr_1995 | irrelevant | 0 | 0 | The paper studies uridine phosphorylase inhibitors (5-benzyluracils) and does not involve the drug acoramidis. |
+| popPK | Orr_1995 | irrelevant | 0 | 0 | The paper is a mechanistic study of uridine phosphorylase inhibitors (analogues of acyclovir) in rats and does not involve the drug acoramidis. |
 | popPK | Owens_1996 | irrelevant | 0 | 0 | no_text gate: only 40 chars of text extracted (&lt; 400) |
-| popPK | Preston_1995 | irrelevant | 0 | 0 | The paper discusses dosage adjustment for 10 antimicrobials (including acyclovir, ceftazidime, imipenem) and does not mention acoramidis or report any pharmacokinetic parameters for it. |
-| popPK | Ramirez_2018 | irrelevant | 0 | 0 | The paper studies HSV encephalitis and viral load in CSF, not the pharmacokinetics of acoramidis. |
-| popPK | Samies_2025 | irrelevant | 0 | 0 | The study reports pharmacokinetic parameters for valacyclovir and acyclovir, not acoramidis. |
-| popPK | Schaller-Ammann_2022 | irrelevant | 0 | 0 | The study is an in vitro dermal penetration study using acyclovir, lidocaine, and diclofenac, and does not involve acoramidis. |
+| popPK | Preston_1995 | irrelevant | 0 | 0 | The study discusses dosage adjustment for 10 antimicrobials but does not include acoramidis (a purine nucleoside monophosphatase inhibitor used for gout/leukemia, not an antimicrobial) nor report any pharmacokinetic parameters for it. |
+| popPK | Ramirez_2018 | irrelevant | 0 | 0 | The study focuses on herpes simplex virus encephalitis and does not mention acoramidis or report any pharmacokinetic parameters for it. |
+| popPK | Samies_2025 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of valacyclovir/acyclovir, not acoramidis. |
+| popPK | Schaller-Ammann_2022 | irrelevant | 0 | 0 | The study focuses on in-vitro dermal penetration of acyclovir, lidocaine, and diclofenac, and does not involve acoramidis. |
 | popPK | Seth_1985 | irrelevant | 0 | 0 | no_text gate: only 84 chars of text extracted (&lt; 400) |
-| popPK | Shakiba_1995 | irrelevant | 0 | 0 | The study investigates acyclovir diphosphate dimyristoylglycerol (ACVDP-DG), not acoramidis. |
-| popPK | Sherrod_2026 | irrelevant | 0 | 0 | The paper is a secondary analysis of a clinical trial focusing on patient-reported health status outcomes (KCCQ-OS) and does not report any pharmacokinetic parameters. |
+| popPK | Shakiba_1995 | irrelevant | 0 | 0 | The study investigates acyclovir diphosphate dimyristoylglycerol, not acoramidis. |
+| popPK | Sherrod_2026 | irrelevant | 0 | 0 | This paper reports on clinical efficacy and health status outcomes (KCCQ scores) in a Phase 3 trial, containing no pharmacokinetic parameter values such as clearance or volume. |
 | popPK | Shoji_2022 | irrelevant | 0 | 0 | The study reports pharmacokinetics for acyclovir, not acoramidis. |
-| popPK | Singhal_1995 | irrelevant | 0 | 0 | The paper is a clinical study on ganciclovir treatment for CMV and does not involve acoramidis or report any pharmacokinetic parameters. |
+| popPK | Singhal_1995 | irrelevant | 0 | 0 | The paper is a clinical efficacy study of ganciclovir for CMV and does not contain pharmacokinetic data for acoramidis. |
 | popPK | Smiley_1996 | irrelevant | 0 | 0 | The paper discusses the pharmacokinetics of valacyclovir and acyclovir, not acoramidis. |
 | popPK | Smith_2016 | irrelevant | 0 | 0 | no_text gate: only 79 chars of text extracted (&lt; 400) |
-| popPK | Stuijt_2025 | irrelevant | 0 | 0 | The paper discusses acyclovir and cimetidine, not acoramidis. |
-| popPK | Stuijt_2026 | irrelevant | 0 | 0 | The paper discusses acyclovir and cimetidine, not acoramidis. |
-| popPK | Testani_2026 | irrelevant | 0 | 0 | The study reports renal function outcomes (eGFR, albumin-to-creatinine ratio) rather than pharmacokinetic parameters (CL, V, ka) for acoramidis. |
-| popPK | Voigt_2016 | irrelevant | 0 | 0 | The paper discusses brincidofovir and acyclovir, not acoramidis, and contains no relevant pharmacokinetic data for the target drug. |
-| popPK | Wang_2026 | irrelevant | 0 | 0 | The paper is a case report on peginterferon alfa-2b and does not involve acoramidis or report any pharmacokinetic parameters. |
+| popPK | Stuijt_2025 | irrelevant | 0 | 0 | The study concerns acyclovir/valacyclovir and cimetidine; acoramidis is not the subject drug. |
+| popPK | Stuijt_2026 | irrelevant | 0 | 0 | The paper focuses on acyclovir and valacyclovir, not acoramidis. |
+| popPK | Testani_2026 | irrelevant | 0 | 0 | The paper reports renal function endpoints (eGFR, albumin-to-creatinine ratio) rather than pharmacokinetic disposition parameters (CL, V, etc.) for acoramidis. |
+| popPK | Voigt_2016 | irrelevant | 0 | 0 | The paper discusses brincidofovir and acyclovir, not acoramidis, and contains no PK parameters for acoramidis. |
+| popPK | Wang_2026 | irrelevant | 0 | 0 | The paper is a case report regarding peginterferon alfa-2b and does not contain pharmacokinetic data for acoramidis. |
 | popPK | Yu_2026 | irrelevant | 0 | 0 | no_text gate: only 244 chars of text extracted (&lt; 400) |
-| PGx | Yu_2026 | not_relevant | 0 | 0 | The paper is a review of drug-drug interactions for FDA-approved drugs in 2024 and does not report pharmacogenomic effects on acoramidis. |
+| PGx | Yu_2026 | not_relevant | 0 | 0 | The paper is a review of drug-drug interactions for FDA approvals in 2024 and does not report pharmacogenomic effects on acoramidis. |
 | PD | unknown_2025 | not_relevant | 0 | 0 | The provided text is only a title and contains no data, analysis, or numeric parameters to derive a pharmacodynamic relationship. |
 | PD | unknown_2025_2 | not_relevant | 0 | 0 | The provided text is a title for a paper on vutrisiran, not acoramidis, and contains no pharmacodynamic data or parameters. |
 

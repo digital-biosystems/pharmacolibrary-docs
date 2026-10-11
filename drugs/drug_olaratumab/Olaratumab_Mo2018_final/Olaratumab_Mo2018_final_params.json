@@ -1,0 +1,33 @@
+{
+ "dose_source": "paper",
+ "model_id": "Olaratumab_Mo2018_final",
+ "note": "Values for the shared PK_2C.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "paper_doses_kind": "discrete",
+ "paper_doses_mg": [
+  1050.0,
+  1400.0
+ ],
+ "parameters": {
+  "Cl": 6.4722222222222226e-09,
+  "F": 1.0,
+  "VdPerKg": 5.9428571428571434e-05,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 0.00105,
+  "k12": 2.1033653846153845e-06,
+  "k21": 2.4441340782122904e-06,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 660.0000000662022
+ },
+ "reference_peaks": {
+  "central.C": 0.21787072528569362
+ },
+ "stop_time": 2419200.0,
+ "template": "PK_2C",
+ "template_fmu": "PK_2C.fmu"
+}

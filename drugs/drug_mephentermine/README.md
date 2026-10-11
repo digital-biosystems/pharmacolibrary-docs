@@ -18,7 +18,7 @@ Mephentermine is a sympathomimetic, alpha-adrenergic vasoconstrictor that was us
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-06 09:49 | 0:24 | 0/0/0 | 0/0/0 | 0/0/0 | 14,049/303 | ollama / qwen3.8:27b-mtp-q8_0 | 0 | 0/1 | 0/0 | 0 |
+| 2026-10-09 20:06 | 0:19 | 0/0/0 | 0/0/0 | 0/0/0 | 1,372/172 | ollama / qwen3.8:27b-mtp-q8_0 | 0 | 0/1 | 0/0 | 0 |
 
 ## popPK records
 

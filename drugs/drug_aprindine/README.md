@@ -26,7 +26,7 @@ Aprindine is an antiarrhythmic drug of class Ib, used to treat heart rhythm diso
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-06 02:49 | 2:51 | 0/1/0 | 0/0/0 | 0/0/1 | 33,635/5,736 | ollama / qwen3.8:27b-mtp-q8_0 | 2 | 2/0 | 2/0 | 0 |
+| 2026-10-08 16:01 | 9:07 | 0/1/0 | 0/0/0 | 0/0/1 | 131,355/5,937 | ollama / qwen3.8:27b-mtp-q8_0 | 18 | 15/2 | 8/10 | 0 |
 
 ## popPK records
 
@@ -67,10 +67,10 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 ## Coverage
 
-- **PubMed hits:** 13 matched, 13 returned
-- **screened:** 1  ·  **relevant:** 1
+- **PubMed hits:** 34 matched, 34 returned
+- **screened:** 14  ·  **relevant:** 2
 - **records:** 1  ·  extracted 0  ·  needs_review 0  ·  rejected 1  ·  stale 1
-- **scholar-agent fallback query used:** not captured
+- **scholar-agent fallback query used:** True
 
 ## Full text wanted
 
@@ -78,25 +78,42 @@ _4 paper(s) judged relevant from the abstract, with no full text on disk — pay
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Kobari_1984.pdf` | Kobari T et al., Dose-dependent pharmacokinetics of apri…, European journal of clinica… (1984) | popPK | 10 | [10.1007/BF00546721](https://doi.org/10.1007/BF00546721) | [6714286](https://pubmed.ncbi.nlm.nih.gov/6714286) | The study reports quantitative pharmacokinetic parameters (half-life, clearance, volume of distribution) for aprindine in humans, with specific numeric values provided in the abstract. |
 | `de_1981.pdf` | de Suray JM et al., Pharmacokinetic study of aprindine and…, International journal of cl… (1981) | popPK | 10 | not captured | [7251236](https://pubmed.ncbi.nlm.nih.gov/7251236) | The study reports quantitative PK parameters for aprindine in dogs, but the specific numeric values for clearance, volume, and rate constants are described qualitatively (e.g., "similar", "twice as high") without explicit numbers in the provided text. |
+| `Matsumoto_1990.pdf` | Matsumoto N et al., [Effects of intravenous aprindine on he…, Kokyu to junkan. Respiratio… (1990) | popPK | 8 | not captured | [1694595](https://pubmed.ncbi.nlm.nih.gov/1694595) | The study reports quantitative PK parameters for aprindine in humans, specifically the elimination half-life (18.9 +/- 8.4 hours) and plasma concentration-time data, though it lacks explicit clearance or volume of distribution values. |
 | `Wirth_1983.pdf` | Wirth KE et al., [Detection of aprindine and its metabol…, Herz (1983) | popPK | 8 | not captured | [6642401](https://pubmed.ncbi.nlm.nih.gov/6642401) | The study reports a two-compartment model and elimination half-lives (37h plasma, 31h urine) for aprindine in humans, but lacks explicit values for clearance, volume of distribution, or absorption rate constants. |
-| `Kobayashi_1998.pdf` | Kobayashi K et al., Inhibitory effects of antiarrhythmic dr…, British journal of clinical… (1998) | pgx | 7 | [10.1046/j.1365-2125.1998.t01-1-00692.x](https://doi.org/10.1046/j.1365-2125.1998.t01-1-00692.x) | [9578183](https://www.ncbi.nlm.nih.gov/pubmed/9578183) | metadata signals extractable PGX data (CYP1A2, PK/PD-context) |
+| `Nawada_1994.pdf` | Nawada T et al., Evaluation of negative inotropic and an…, International journal of cl… (1994) | pd | 4 | not captured | [7952796](https://www.ncbi.nlm.nih.gov/pubmed/7952796) | metadata signals extractable PD data (IC50) |
 
-<sub>queue written 2026-10-06T02:47:35.113759+00:00</sub>
+<sub>queue written 2026-10-08T16:01:12.262876+00:00</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| PGx | Kobayashi_1998 | not_relevant | 0 | 0 | The paper reports in vitro CYP1A2 inhibition by aprindine, not a pharmacogenomic effect (gene variant) on aprindine's PK or PD. |
+| popPK | Adams_1986 | irrelevant | 0 | 0 | The paper is a review of pharmacodynamic classification of antiarrhythmic drugs and contains no pharmacokinetic data or quantitative disposition parameters for aprindine. |
+| popPK | Hashimoto_1991 | irrelevant | 0 | 0 | The study investigates the pharmacodynamics of a different drug (TYB-3823) in dogs, mentioning aprindine only as a comparator for its antiarrhythmic profile. |
+| popPK | Hiiro_2023 | irrelevant | 0 | 0 | The study is an in-vitro pharmacological investigation of negative inotropic effects in guinea pig tissue, not a pharmacokinetic study reporting disposition parameters. |
+| popPK | Honerjäger_1986 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of negative inotropic effects on guinea-pig papillary muscles and does not report pharmacokinetic parameters for aprindine. |
+| popPK | Honerjäger_1986_2 | irrelevant | 0 | 0 | The study is an in-vitro pharmacological investigation of negative inotropic and electrophysiological effects in guinea-pig papillary muscles, reporting no pharmacokinetic parameters (CL, V, ka, etc.) for aprindine. |
+| popPK | Huang_2025 | irrelevant | 0 | 0 | The paper describes a general automated pipeline for generating initial PK estimates and uses other drugs (e.g., cefaclor, ceftriaxone) for validation, with no data or parameters reported for aprindine. |
+| popPK | Huang_2025_2 | irrelevant | 0 | 0 | The paper describes a general method for calculating initial PK estimates and uses various drugs (e.g., ceftriaxone, vancomycin) as test cases, but does not study aprindine. |
+| popPK | Huang_2026 | irrelevant | 0 | 0 | The paper is a methodological study on automated PopPK modeling using 22 datasets, and aprindine is only mentioned in a reference list without any associated data or parameters. |
+| popPK | Kobayashi_1998 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of CYP1A2 inhibition by antiarrhythmic drugs, not a pharmacokinetic study reporting disposition parameters for aprindine. |
+| PGx | Kobayashi_1998 | not_relevant | 0 | 0 | The paper investigates drug-drug interactions (CYP1A2 inhibition) and does not report any pharmacogenomic effects (gene variants) on the PK or PD of aprindine. |
+| popPK | Komatsu_2015 | irrelevant | 0 | 0 | The study reports population pharmacokinetic parameters for digoxin, not aprindine (which is only listed as a concomitant medication). |
+| popPK | Lesko_1989 | irrelevant | 1 | 0 | The paper is a review of amiodarone drug interactions where aprindine is only a co-administered drug, and no quantitative PK parameters (CL, V, t1/2) for aprindine are reported. |
+| popPK | Mannhold_1990 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of calmodulin inhibition and lipophilicity, not a pharmacokinetic study. |
 | popPK | Matsuo_2000 | irrelevant | 0 | 0 | The study focuses on propiverine and other anticholinergics in mice, with aprindine mentioned only as a prior comparator for receptor binding, not as the subject of PK analysis. |
 | PD | Matsuo_2000 | not_relevant | 1 | 0 | The paper focuses on propiverine and other drugs, mentioning aprindine only in the context of previous work without providing any new numeric PD parameters or exposure-response data for aprindine. |
+| popPK | Nawada_1994 | irrelevant | 0 | 0 | The study is an in-vitro electrophysiological and mechanistic evaluation of negative inotropic effects, not a pharmacokinetic study reporting disposition parameters. |
+| popPK | Ohmoto-Sekine_1999 | irrelevant | 0 | 0 | The study is an in-vitro electrophysiological investigation of aprindine's mechanism of action on ion channels in guinea-pig cells, not a pharmacokinetic study reporting disposition parameters. |
+| popPK | Sakuta_1992 | irrelevant | 0 | 0 | The study is an in-vitro electrophysiological investigation of ion channel blockade in Xenopus oocytes, not a pharmacokinetic study reporting disposition parameters like clearance or volume. |
 | popPK | Taguchi_2006 | irrelevant | 0 | 0 | The study reports pharmacokinetic parameters for bepridil, with aprindine serving only as a co-administered inhibitor/comparator, not as the subject drug. |
 | PGx | Taguchi_2006 | not_relevant | 0 | 0 | The paper reports pharmacokinetic parameters for bepridil, not aprindine; aprindine is only mentioned as a co-administered drug affecting bepridil clearance. |
+| popPK | Tamura_2009 | irrelevant | 0 | 0 | The study is an in-vitro electrophysiology investigation of ion channel inhibition (IC50) and does not report pharmacokinetic disposition parameters for aprindine. |
 | popPK | Tanaka_1990 | irrelevant | 0 | 0 | The study is an in-vitro electrophysiological investigation of ion channel effects, not a pharmacokinetic study reporting disposition parameters. |
+| popPK | Watanabe_2002 | irrelevant | 0 | 0 | The study is an in-vitro electrophysiological investigation of aprindine's mechanism of action on Na+/Ca2+ exchangers, reporting IC50 values rather than pharmacokinetic disposition parameters like clearance or volume. |
 | popPK | Wirth_1983 | relevant | 8 | 4 | The study reports a two-compartment model and elimination half-lives (37h plasma, 31h urine) for aprindine in humans, but lacks explicit values for clearance, volume of distribution, or absorption rate constants. |
 | popPK | de_1981 | relevant | 10 | 2 | The study reports quantitative PK parameters for aprindine in dogs, but the specific numeric values for clearance, volume, and rate constants are described qualitatively (e.g., "similar", "twice as high") without explicit numbers in the provided text. |
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-10-06 02:47 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-10-08 15:53 UTC</sub>

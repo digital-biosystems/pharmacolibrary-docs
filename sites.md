@@ -33,16 +33,29 @@ DrugBank's curated actors + a tissue table), downloaded once; nothing is sent an
       <button class="pkq-btn" id="pks-share">copy link to this set</button>
       <span class="pkq-meta" id="pks-meta"></span>
     </p>
-    <div class="pks-evkey"><span><i class="e3"></i>DrugBank actor</span><span><i class="e2"></i>paper PGx gene</span><span><i class="e1"></i>ADME prose</span><span><i class="e0"></i>none</span><span><i class="aff"></i>affected by co-administration</span><span><i class="dot"></i>dot = the perpetrator's colour (filled inhibits, hollow induces)</span></div>
-    <h2>Site heat-map</h2>
+    <div class="pks-evkey"><span><i class="e3"></i>DrugBank actor</span><span><i class="e2"></i>paper PGx gene</span><span><i class="e1"></i>ADME prose</span><span><i class="e0"></i>none</span><span><i class="aff"></i>affected by co-administration</span><span><i class="dot">⊣</i>dot = the perpetrator's colour, ⊣ inhibits · ↑ induces</span><span><span class="shade"><b></b><b></b><b></b><b></b></span>heat-map shade: 0 · 1 · 2 · 3+ interactions at the site (other drugs + patient pharmacogenes)</span></div>
+    <div class="pk-tabs pks-tabs">
+    <div class="pk-tabbar" role="tablist" aria-label="views of this set">
+      <button type="button" role="tab" data-pkstab="heatmap" aria-selected="true">Site heat-map</button>
+      <button type="button" role="tab" data-pkstab="ddi" aria-selected="false">Who affects whom</button>
+      <button type="button" role="tab" data-pkstab="pgx" aria-selected="false">Pharmacogenomics</button>
+      <button type="button" role="tab" data-pkstab="body" aria-selected="false">Anatomogram</button>
+      <button type="button" role="tab" data-pkstab="shared" aria-selected="false">Shared actors</button>
+      <button type="button" role="tab" data-pkstab="table" aria-selected="false">Table view</button>
+      <button type="button" role="tab" data-pkstab="help" aria-selected="false">Help</button>
+    </div>
+    <div class="pk-tabpanel" role="tabpanel" data-pkspanel="heatmap">
     <div class="pks-heatmap"></div>
-    <h2>Who affects whom</h2>
+    </div>
+    <div class="pk-tabpanel" role="tabpanel" data-pkspanel="ddi" hidden>
     <p class="pkq-meta">Rows are perpetrators, columns victims: the cell names the enzyme or transporter through which the row drug can change the column drug's exposure (⊣ inhibits, ↑ induces; the column drug is its substrate). The same pairs are marked on the heat-map row labels — ⇠ the drugs that affect this one, ⇢ the drugs it affects.</p>
     <div class="pks-ddi-box"></div>
-    <h2>Pharmacogenomics for this patient</h2>
-    <p class="pkq-meta">A phenotype belongs to the patient, so it applies to every drug of the set. Per drug: the direction (▲ exposure or active metabolite up, ▼ down) from how the gene acts on it — forming an active metabolite (read from the CPIC / DPWG guideline's own wording — both the parent's exposure and the metabolite then move) or clearing it (a DrugBank substrate, or a paper's metabolism/transport record backed by DrugBank, a guideline or a paper effect size) — the size of the effect where a paper reports it for that phenotype, and the CPIC / DPWG guideline's own row for it.</p>
+    </div>
+    <div class="pk-tabpanel" role="tabpanel" data-pkspanel="pgx" hidden>
+    <p class="pkq-meta"><b>For this patient.</b> A phenotype belongs to the patient, so it applies to every drug of the set. Per drug: the direction (▲ exposure or active metabolite up, ▼ down) from how the gene acts on it — forming an active metabolite (read from the CPIC / DPWG guideline's own wording — both the parent's exposure and the metabolite then move) or clearing it (a DrugBank substrate, or a paper's metabolism/transport record backed by DrugBank, a guideline or a paper effect size) — the size of the effect where a paper reports it for that phenotype, and the CPIC / DPWG guideline's own row for it.</p>
     <div class="pks-pgx-box"></div>
-    <h2>Anatomogram</h2>
+    </div>
+    <div class="pk-tabpanel" role="tabpanel" data-pkspanel="body" hidden>
     <p class="pkq-row pks-sex" role="group" aria-label="body shown">
       <button type="button" class="pkq-btn pks-sexbtn" data-sex="female" aria-pressed="true">♀ female</button>
       <button type="button" class="pkq-btn pks-sexbtn" data-sex="male" aria-pressed="false">♂ male</button>
@@ -50,28 +63,29 @@ DrugBank's curated actors + a tissue table), downloaded once; nothing is sent an
     </p>
     <p class="pkq-meta">The body is the EMBL-EBI Expression Atlas anatomogram (female or male view, CC BY 4.0), each organ tinted by the set's strongest evidence there (the kidney and the blood in their own red ramp — the kidney lies on the liver and the intestine, the vessels run through every organ) and outlined in the perpetrator's colour where another drug in the set inhibits or induces the actor at work in it. Beside each organ, one slot per drug in the chips' order, shaded by evidence, ringed when affected; click a chip to isolate a drug and draw the perpetrator → victim arrows. Hover an organ or a slot for its actors, click to pin.</p>
     <div class="pks-grid"><div class="pks-anatomogram"></div><div class="pks-detailbox"></div></div>
-    <h2>Shared actors — the co-administration table</h2>
-    <p class="pkq-meta">An actor two drugs share, with both roles. Substrate on one side and inhibitor/inducer on the other is a mechanism for one drug to change the other's exposure at that actor's tissue.</p>
+    </div>
+    <div class="pk-tabpanel" role="tabpanel" data-pkspanel="shared" hidden>
+    <p class="pkq-meta"><b>The co-administration table.</b> An actor two drugs share, with both roles. Substrate on one side and inhibitor/inducer on the other is a mechanism for one drug to change the other's exposure at that actor's tissue.</p>
     <div class="pks-shared"></div>
-    <details><summary>Table view — every site row</summary><div class="pks-scroll pks-table"></div></details>
+    </div>
+    <div class="pk-tabpanel" role="tabpanel" data-pkspanel="table" hidden>
+    <p class="pkq-meta">Every site row of the set: drug, process, tissue, actor, its role and the evidence behind it.</p>
+    <div class="pks-scroll pks-table"></div>
+    </div>
+    <div class="pk-tabpanel pks-help" role="tabpanel" data-pkspanel="help" hidden>
+    <h3>What is in it</h3>
+    <table>
+      <tr><th>table</th><th>what it holds</th></tr>
+      <tr><td><code>adme_drug</code></td><td>every KB drug with a curated actor, an ADME paragraph or an extracted record (~11k)</td></tr>
+      <tr><td><code>adme_actor</code></td><td>DrugBank enzymes / transporters / carriers / targets with the drug's <b>role</b> (substrate, inhibitor, inducer …); the genes named by the KB's own PGx records, each with the paper it came from (its page here and its DOI)</td></tr>
+      <tr><td><code>adme_site</code></td><td>the actor → process / tissue (UBERON) / cell hand table (~75 ADME genes)</td></tr>
+      <tr><td><code>adme_text</code></td><td>the sites DrugBank's absorption / metabolism / elimination prose states — read by an LLM that tells a site ("3.2 % was exhaled" → lung) from a mere mention ("hepatic impairment does not affect clearance") — the site only, not DrugBank's wording; organ keywords where the paragraph has not been read (<code>pk_knowledge_scripts.adme_text_llm</code>)</td></tr>
+    </table>
+    <h3>Evidence tiers</h3>
+    <p>Strongest first: a curated DrugBank actor mapped through the tissue table (3); a gene a paper's pharmacogenomic record ties to this drug (2); a site the prose states (1). Curated ≠ clinically relevant: DrugBank roles carry no potency and no fraction metabolised, and the tissue of an actor is a property of the protein, not of the paper. An actor the hand table does not know appears in the tables with no tissue and is absent from the maps.</p>
+    <h3>Sharing a comparison</h3>
+    <p>A comparison is a URL: <code>#/sites?drugs=tolvaptan,telmisartan,hydrochlorothiazide</code> opens this page with those drugs selected. The per-drug logic is <code>pk_knowledge_scripts.adme_sites</code>; the database is <code>pk_knowledge_scripts.export.adme_sqlite</code>.</p>
+    </div>
+    </div>
   </div>
 </div>
-
-## What is in it
-
-| table | what it holds |
-|---|---|
-| `adme_drug` | every KB drug with a curated actor, an ADME paragraph or an extracted record (~11k) |
-| `adme_actor` | DrugBank enzymes / transporters / carriers / targets with the drug's **role** (substrate, inhibitor, inducer …); the genes named by the KB's own PGx records, each with the paper it came from (its page here and its DOI) |
-| `adme_site` | the actor → process / tissue (UBERON) / cell hand table (~75 ADME genes) |
-| `adme_text` | the sites DrugBank's absorption / metabolism / elimination prose states — read by an LLM that tells a site ("3.2 % was exhaled" → lung) from a mere mention ("hepatic impairment does not affect clearance") — the site only, not DrugBank's wording; organ keywords where the paragraph has not been read (`pk_knowledge_scripts.adme_text_llm`) |
-
-Evidence tiers, strongest first: a curated DrugBank actor mapped through the tissue table (3);
-a gene a paper's pharmacogenomic record ties to this drug (2); a site the prose states (1).
-Curated ≠ clinically relevant: DrugBank roles carry no potency and no fraction metabolised,
-and the tissue of an actor is a property of the protein, not of the paper. An actor the hand
-table does not know appears in the tables with no tissue and is absent from the maps.
-
-A comparison is a URL: `#/sites?drugs=tolvaptan,telmisartan,hydrochlorothiazide` opens this
-page with those drugs selected. The per-drug logic is `pk_knowledge_scripts.adme_sites`; the
-database is `pk_knowledge_scripts.export.adme_sqlite`.

@@ -18,7 +18,7 @@ Metildigoxin is a digitalis cardiac glycoside with cardiotonic and antiarrhythmi
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-06 03:11 | 0:51 | 0/1/0 | 0/0/0 | 0/0/0 | 21,792/1,300 | ollama / qwen3.8:27b-mtp-q8_0 | 1 | 1/0 | 1/0 | 0 |
+| 2026-10-06 03:11 | 0:51 | 0/1/0 | 0/0/0 | 0/0/0 | 21,792/1,300 | ollama / qwen3.8:27b-mtp-q8_0 | 6 | 1/0 | 1/5 | 0 |
 
 ## popPK records
 

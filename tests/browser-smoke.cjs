@@ -110,6 +110,11 @@ const record = '#/drugs/drug_clopidogrel/Clopidogrel_Jung2024';
     await page.locator('.pks-results button').first().click();
     await page.waitForSelector('.pks-chips .pks-chip');
     assert.ok(await page.locator('#pks-pgx-gene option').count() > 0);
+    await page.locator('button[data-pkstab="help"]').click();
+    assert.equal(await page.locator('[data-pkspanel="help"]').isVisible(), true);
+    assert.equal(await page.locator('[data-pkspanel="heatmap"]').isVisible(), false);
+    await page.locator('button[data-pkstab="heatmap"]').click();
+    assert.equal(await page.locator('[data-pkspanel="heatmap"]').isVisible(), true);
     console.log('PASS sites selection and PGx controls');
 
     await page.goto(base + record);

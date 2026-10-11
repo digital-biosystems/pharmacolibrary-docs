@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> The paper describes a sigmoidal Emax model where dronedarone concentration (in microM) inhibits the outward Na+/Ca2+ exchange current (INCX) with an IC50 of 33 microM and a Hill coefficient of 1. No specific mechanism of action (e.g., production vs. elimination) or rate constants are provided in the available excerpts.
+>
+> <sub>in the paper's terms — summarised by qwen3.8:27b-mtp-q8_0 from the paper's text; not checked by a person</sub>
+
 - **paper:** `Watanabe_2008`
 - **model family:** `sigmoid_emax`
 - **driver:** `not_resolved`

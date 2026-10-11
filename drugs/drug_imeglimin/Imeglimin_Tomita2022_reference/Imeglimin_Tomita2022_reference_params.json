@@ -1,0 +1,41 @@
+{
+ "dose_source": "paper",
+ "model_id": "Imeglimin_Tomita2022_reference",
+ "molar_masses": {
+  "central.C": 0.155205
+ },
+ "note": "Values for the shared PK_2C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "paper_doses_kind": "discrete",
+ "paper_doses_mg": [
+  500.0,
+  1000.0,
+  1500.0,
+  2000.0
+ ],
+ "parameters": {
+  "Cl": 1.8583333333333332e-05,
+  "F": 1.0,
+  "MM": 0.155205,
+  "Tlag": 824.4,
+  "VdPerKg": 0.0020285714285714286,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 0.0005,
+  "k12": 3.110328638497653e-05,
+  "k21": 1.1809269162210339e-05,
+  "ka": 3.9999999999999996e-05,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 18620.440881763527
+ },
+ "reference_peaks": {
+  "central.C": 0.0004587017497948596
+ },
+ "stop_time": 104400.0,
+ "template": "PK_2C_enteral",
+ "template_fmu": "PK_2C_enteral.fmu"
+}

@@ -1,0 +1,32 @@
+{
+ "dose_source": "library default",
+ "model_id": "Methionine_Giulidori1984_reference",
+ "molar_masses": {
+  "central.C": 0.399446
+ },
+ "note": "Values for the shared PK_1C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "parameters": {
+  "Cl": 1.0277777777777777e-06,
+  "F": 1.0,
+  "MM": 0.399446,
+  "Tlag": 0.0,
+  "VdPerKg": 0.00040699999999999997,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 0.0001,
+  "ka": 0.0001388888888888889,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 13483.555982362785
+ },
+ "reference_peaks": {
+  "central.C": 0.002187005098363409
+ },
+ "stop_time": 86400.0,
+ "template": "PK_1C_enteral",
+ "template_fmu": "PK_1C_enteral.fmu"
+}

@@ -1,32 +1,30 @@
 {
- "dose_source": "WHO ATC DDD 20 mg oral (B01AF01)",
+ "dose_source": "library default",
  "model_id": "Rivaroxaban_Esmaeili2022_reference",
  "molar_masses": {
   "central.C": 0.43588099999999996
  },
- "note": "Values for the shared PK_1C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "note": "Values for the shared PK_1C.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
  "observables": [
   "central.C"
  ],
  "parameters": {
   "Cl": 1.0222222222222223e-06,
-  "F": 0.9,
+  "F": 1.0,
   "MM": 0.43588099999999996,
-  "Tlag": 0.0,
   "VdPerKg": 0.0008742857142857144,
   "adminCount": 1.0,
   "adminDuration": 600.0,
-  "adminMass": 2e-05,
-  "ka": 0.00022805555555555554,
+  "adminMass": 1e-05,
   "weight": 70.0
  },
  "reference_peak_times": {
-  "central.C": 12843.097895522034
+  "central.C": 660.0000000662086
  },
  "reference_peaks": {
-  "central.C": 0.00023920332229136908
+  "central.C": 0.00016258266288720217
  },
  "stop_time": 259200.0,
- "template": "PK_1C_enteral",
- "template_fmu": "PK_1C_enteral.fmu"
+ "template": "PK_1C",
+ "template_fmu": "PK_1C.fmu"
 }

@@ -1,0 +1,35 @@
+{
+ "dose_source": "paper",
+ "model_id": "Benralizumab_Yan2019_final",
+ "note": "Values for the shared PK_2C.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "paper_doses_kind": "discrete",
+ "paper_doses_mg": [
+  2.0,
+  30.0,
+  100.0,
+  200.0
+ ],
+ "parameters": {
+  "Cl": 3.3680555555555554e-09,
+  "F": 1.0,
+  "VdPerKg": 4.471428571428571e-05,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 2e-06,
+  "k12": 2.7289669861554847e-06,
+  "k21": 3.3895502645502645e-06,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 660.000000066205
+ },
+ "reference_peaks": {
+  "central.C": 0.0004987797981444352
+ },
+ "stop_time": 3628800.0,
+ "template": "PK_2C",
+ "template_fmu": "PK_2C.fmu"
+}

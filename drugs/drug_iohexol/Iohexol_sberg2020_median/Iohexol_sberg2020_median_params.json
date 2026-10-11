@@ -1,0 +1,36 @@
+{
+ "dose_source": "paper",
+ "model_id": "Iohexol_sberg2020_median",
+ "molar_masses": {
+  "central.C": 0.8211379
+ },
+ "note": "Values for the shared PK_2C.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "paper_doses_kind": "discrete",
+ "paper_doses_mg": [
+  3235.0
+ ],
+ "parameters": {
+  "Cl": 4.305555555555556e-07,
+  "F": 1.0,
+  "MM": 0.8211379,
+  "VdPerKg": 0.00014957142857142857,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 0.003235,
+  "k12": 0.0001589196646503237,
+  "k21": 0.00020746744250484903,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 660.0000000662054
+ },
+ "reference_peaks": {
+  "central.C": 0.07764736394755477
+ },
+ "stop_time": 86400.0,
+ "template": "PK_2C",
+ "template_fmu": "PK_2C.fmu"
+}

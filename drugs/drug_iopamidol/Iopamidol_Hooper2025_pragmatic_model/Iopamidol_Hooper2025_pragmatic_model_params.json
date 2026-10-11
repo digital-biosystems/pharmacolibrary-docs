@@ -1,0 +1,36 @@
+{
+ "dose_source": "paper",
+ "model_id": "Iopamidol_Hooper2025_pragmatic_model",
+ "molar_masses": {
+  "central.C": 0.7770853
+ },
+ "note": "Values for the shared PK_2C.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "paper_doses_kind": "discrete",
+ "paper_doses_mg": [
+  1618.0
+ ],
+ "parameters": {
+  "Cl": 9.959999999999999e-07,
+  "F": 1.0,
+  "MM": 0.7770853,
+  "VdPerKg": 8.46962857142857e-05,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 0.001618,
+  "k12": 0.0003528012135237279,
+  "k21": 0.0004893703305101929,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 660.0000000662158
+ },
+ "reference_peaks": {
+  "central.C": 0.037161299800204856
+ },
+ "stop_time": 86400.0,
+ "template": "PK_2C",
+ "template_fmu": "PK_2C.fmu"
+}

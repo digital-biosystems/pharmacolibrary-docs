@@ -18,7 +18,7 @@ Cetrimonium is a quaternary ammonium compound whose salts are used as antiseptic
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-29 18:03 | 0:37 | 0/0/0 | 0/0/0 | 0/0/0 | 2,134/302 | ollama / qwen3.8:27b-mtp-q8_0 | 1 | 1/2 | 1/0 | 0 |
+| 2026-10-07 23:10 | 0:52 | 0/0/0 | 0/0/0 | 0/0/0 | 28,293/1,448 | ollama / glm-5.3-flash | 2 | 1/2 | 2/0 | 0 |
 
 ## popPK records
 
@@ -32,10 +32,10 @@ _not available_
 
 ## Coverage
 
-- **PubMed hits:** 36 matched, 31 returned
+- **PubMed hits:** 36 matched, 36 returned
 - **screened:** 0  ·  **relevant:** 0
 - **records:** 0  ·  extracted 0  ·  needs_review 0  ·  rejected 0  ·  stale 0
-- **scholar-agent fallback query used:** True
+- **scholar-agent fallback query used:** not captured
 
 ## Full text wanted
 
@@ -45,7 +45,7 @@ _1 paper(s) judged relevant from the abstract, with no full text on disk — pay
 |---|---|---|---|---|---|---|
 | `Qv_2013.pdf` | Qv XY et al., Toxicity evaluation of two typical surf…, Environmental toxicology an… (2013) | pd | 4 | [10.1002/etc.2073](https://doi.org/10.1002/etc.2073) | [23166012](https://www.ncbi.nlm.nih.gov/pubmed/23166012) | metadata signals extractable PD data (IC50) |
 
-<sub>queue written 2026-09-29T18:03:44.573735+00:00</sub>
+<sub>queue written 2026-10-07T23:09:56.663518+00:00</sub>
 
 ## Screened and excluded
 
@@ -55,47 +55,47 @@ _1 paper(s) judged relevant from the abstract, with no full text on disk — pay
 | PD | Abdelaziz_2019 | not_relevant | 0 | 0 | The paper focuses on pemetrexed and resveratrol delivery; cetrimonium is not mentioned, and no PD parameters for it are reported. |
 | popPK | Battu_2010 | irrelevant | 0 | 0 | The study focuses on the physicochemical characterization of berberine chloride, not the pharmacokinetics of cetrimonium. |
 | PD | Battu_2010 | not_relevant | 0 | 0 | The paper focuses on the physicochemical characterization and solubility of berberine chloride, not cetrimonium, and contains no pharmacodynamic or exposure-response data. |
-| popPK | Biju_2026 | irrelevant | 0 | 0 | The paper is a review on bacterial endophytic secondary metabolites and does not study cetrimonium or report any pharmacokinetic parameters for it. |
+| popPK | Biju_2026 | irrelevant | 0 | 0 | A review on endophytic secondary metabolites with no pharmacokinetic data or parameters for cetrimonium. |
 | PD | Biju_2026 | not_relevant | 0 | 0 | The paper is a review on endophytic metabolites and does not report any pharmacodynamic or exposure-response data for cetrimonium. |
 | popPK | Chang_2021 | irrelevant | 0 | 0 | The paper studies the removal of graphene oxides using cetyl trimethyl ammonium bromide (CTAB) as a flotation reagent, not the pharmacokinetics of cetrimonium. |
 | PD | Chang_2021 | not_relevant | 0 | 0 | The paper studies the removal of graphene oxides using cetyl trimethyl ammonium bromide (CTAB) in wastewater treatment, not the pharmacodynamics of cetrimonium in a biological system. |
 | popPK | Chen_2016 | irrelevant | 0 | 0 | The paper investigates the hydrophobic aggregation of coal slurry particles using quaternary ammonium salts and does not involve cetrimonium or pharmacokinetic parameters. |
 | PD | Chen_2016 | not_relevant | 0 | 0 | The paper investigates the physical chemistry of coal slurry aggregation using quaternary ammonium salts and does not mention cetrimonium or report any pharmacodynamic or exposure-response data. |
-| popPK | Chen_2020 | irrelevant | 0 | 0 | The study focuses on voriconazole pharmacokinetics, and cetrimonium (or CTAC) is only mentioned as a formulation carrier, not as the subject drug for PK parameter extraction. |
-| popPK | David_2010 | irrelevant | 0 | 0 | The paper is a microbiological study on mycoplasma inactivation using cetyltrimethylammonium bromide (a different compound) and does not report pharmacokinetic parameters for cetrimonium. |
-| popPK | Davies_2018 | irrelevant | 0 | 0 | The paper is a study protocol for tuberculosis drugs (e.g., pyrazinamide, ethambutol) and does not mention cetrimonium or report any pharmacokinetic parameters for it. |
+| popPK | Chen_2020 | irrelevant | 0 | 0 | Cetrimonium (CTAC) is only used as a carrier excipient; the pharmacokinetics reported are for voriconazole in rats, not cetrimonium. |
+| popPK | David_2010 | irrelevant | 0 | 0 | Cetrimonium (CTAB) is only an inactivating reagent in vitro; no PK parameters for it are reported. |
+| popPK | Davies_2018 | irrelevant | 0 | 0 | Study protocol for TDM of second-line antituberculosis drugs; cetrimonium is not a subject drug and no PK parameters are reported. |
 | PD | Davies_2018 | not_relevant | 0 | 0 | The paper is a study protocol for a prospective observational cohort and does not report any results, data, or numeric PD parameters. |
 | popPK | Dong_2018 | irrelevant | 0 | 0 | The paper investigates the adsorption of Chromium(VI) onto a surfactant-modified substrate and does not involve the drug cetrimonium or any pharmacokinetic parameters. |
 | PD | Dong_2018 | not_relevant | 0 | 0 | The paper investigates the adsorption of Chromium(VI) onto a surfactant-modified substrate and does not involve the drug cetrimonium or any pharmacodynamic analysis. |
-| popPK | Fatoki_2020 | irrelevant | 0 | 0 | The study is an in-silico investigation of excipients (including CTAB, not cetrimonium) and does not report quantitative pharmacokinetic parameters for cetrimonium. |
-| popPK | Gurjar_2018 | irrelevant | 0 | 0 | The study is an in-vitro investigation of excipient effects on P-glycoprotein using digoxin as a substrate, and does not report pharmacokinetic parameters for cetrimonium. |
-| popPK | Huang_2005 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of penicillin (ampicillin), using cetyltrimethylammonium bromide (CTMAB) only as a reagent for detection, not as the subject drug. |
+| popPK | Fatoki_2020 | irrelevant | 0 | 0 | In silico docking/PK prediction study of excipients including CTAB; no measured disposition parameters for cetrimonium. |
+| popPK | Gurjar_2018 | irrelevant | 0 | 0 | In-vitro P-gp inhibition study where CTAB (cetrimonium bromide) is only an excipient probe; no PK disposition parameters for cetrimonium. |
+| popPK | Huang_2005 | irrelevant | 0 | 0 | Cetrimonium (CTMAB) is only an analytical reagent for detecting penicillins in urine; the PK parameters reported (half-time, excretion fraction) are for ampicillin, not cetrimonium. |
 | popPK | Huang_2019 | irrelevant | 0 | 0 | The paper is a study on microalgae harvesting using surfactants and does not involve cetrimonium pharmacokinetics. |
 | PD | Huang_2019 | not_relevant | 0 | 0 | The paper discusses a Gemini surfactant (BCBD) and compares it to CTAB, but does not report any pharmacodynamic or exposure-response relationship for cetrimonium (or any other drug) with numeric PD parameters. |
-| popPK | Li_2026 | irrelevant | 0 | 0 | The paper is an in-vitro microbiology study on antibiotic resistance evolution in E. coli and does not report pharmacokinetic parameters for cetrimonium. |
+| popPK | Li_2026 | irrelevant | 0 | 0 | In vitro E. coli evolution study of resistance selection; no pharmacokinetic parameters for cetrimonium are reported. |
 | PD | Li_2026 | not_relevant | 0 | 0 | The paper focuses on evolutionary microbiology and antibiotic resistance mechanisms in E. coli, not pharmacodynamic modeling or exposure-response relationships for cetrimonium. |
 | popPK | Liu_2021 | irrelevant | 0 | 0 | The paper studies the adsorption of 2,4-dichlorophenol by CTAB-modified biochar, which is an environmental chemistry study unrelated to the pharmacokinetics of cetrimonium. |
 | PD | Liu_2021 | not_relevant | 0 | 0 | The paper describes the adsorption of a chemical pollutant (2,4-DCP) by a modified biochar material, which is a physicochemical/environmental engineering study, not a pharmacodynamic or exposure-response study of a drug. |
-| popPK | Liu_2021_2 | irrelevant | 0 | 0 | The paper is an in-vitro mechanistic study on autophagy and lipid clearance, not a pharmacokinetic study, and reports no disposition parameters. |
-| popPK | Marchianò_2023 | irrelevant | 0 | 0 | The paper focuses on the formulation and characterization of nanovesicles for vanillin delivery, not the pharmacokinetics of cetrimonium. |
+| popPK | Liu_2021_2 | irrelevant | 0 | 0 | In-vitro mechanistic study of CTAB on autophagy/TFEB in cell lines; no PK parameters (CL, V, ka, half-life) for cetrimonium are reported. |
+| popPK | Marchianò_2023 | irrelevant | 0 | 0 | This is a formulation/nanovesicle study of vanillin; CTAB is only an excipient surfactant, with no PK parameters for cetrimonium. |
 | popPK | Moawed_2023 | irrelevant | 0 | 0 | The study focuses on the antitumor efficacy of a copper-CTAB complex in vitro and in vivo, reporting no pharmacokinetic parameters for cetrimonium. |
-| popPK | Mrestani_2004 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of cefodizime, not cetrimonium, and cetrimonium is not mentioned in the provided evidence. |
+| popPK | Mrestani_2004 | irrelevant | 0 | 0 | Cetrimonium (hexadecyltrimethylammonium bromide) is only a co-administered absorption enhancer; the PK parameters reported are for cefodizime in rabbits, not cetrimonium. |
 | popPK | Nagireddi_2019 | irrelevant | 0 | 0 | The paper studies palladium adsorption using a chitosan resin and does not involve cetrimonium or pharmacokinetics. |
 | PD | Nagireddi_2019 | not_relevant | 0 | 0 | The paper discusses the adsorption of Palladium (Pd) from plating solutions, not the pharmacodynamics of the drug cetrimonium. |
-| popPK | Pejaver_1985 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of liposomal stability and ester hydrolysis, not a pharmacokinetic study of cetrimonium disposition. |
+| popPK | Pejaver_1985 | irrelevant | 0 | 0 | In-vitro liposomal chemistry study; cetrimonium is only a reagent, no PK parameters. |
 | popPK | Qv_2013 | irrelevant | 0 | 0 | The paper studies the toxicity of surfactants (SDBS and CTAC) on algae, not the pharmacokinetics of cetrimonium. |
 | popPK | Saravani_2017 | irrelevant | 0 | 0 | The paper studies phenol removal using Cetyl Trimethyl Ammonium Bromide (CTAB) as a surfactant, not cetrimonium as a subject drug, and contains no pharmacokinetic parameters. |
 | PD | Saravani_2017 | not_relevant | 0 | 0 | The paper describes a chemical engineering process (foam separation/biosorption) for phenol removal using a surfactant, not a pharmacodynamic or exposure-response analysis of a drug. |
 | popPK | Shi_2021 | irrelevant | 0 | 0 | The paper investigates surfactant-assisted thermal hydrolysis of sludge and does not involve cetrimonium or pharmacokinetic parameters. |
 | PD | Shi_2021 | not_relevant | 0 | 0 | The paper investigates the effect of cetyl trimethyl ammonium bromide (CTAB), not cetrimonium, and focuses on sludge treatment engineering parameters rather than pharmacodynamic exposure-response relationships. |
-| popPK | Smith_1991 | irrelevant | 0 | 0 | The paper describes an HPLC assay for oxycodone where cetrimonium (cetavlon) is used only as a mobile phase additive, not as the subject drug for PK analysis. |
-| popPK | Song_2022 | irrelevant | 0 | 0 | The paper describes an electrochemical biosensor for rutin detection and does not report pharmacokinetic parameters for cetrimonium. |
-| popPK | Su_2012 | irrelevant | 0 | 0 | The study focuses on gold nanorods as optical contrast agents and does not involve cetrimonium or report pharmacokinetic parameters for it. |
+| popPK | Smith_1991 | irrelevant | 0 | 0 | This is an analytical assay paper for oxycodone; cetrimonium (cetavlon) is only a mobile-phase additive, not the subject drug, and no PK parameters are reported. |
+| popPK | Song_2022 | irrelevant | 0 | 0 | This is an electrochemical biosensor paper for rutin; CTAB is only an electrode modifier, not a pharmacokinetic subject, and no PK parameters appear. |
+| popPK | Su_2012 | irrelevant | 0 | 0 | Imaging biodistribution study of gold nanorods in mice; no PK parameters for cetrimonium, which is only a synthesis reagent removed from the nanorods. |
 | popPK | Taghavijeloudar_2019 | irrelevant | 0 | 0 | The paper investigates the effect of surfactants on microalgae dewaterability and does not involve cetrimonium or pharmacokinetic parameters. |
 | PD | Taghavijeloudar_2019 | not_relevant | 0 | 0 | The paper investigates the effect of surfactants on microalgae dewaterability (filtration flux), which is a physicochemical engineering process, not a pharmacodynamic (drug-response) relationship in a biological system. |
-| popPK | Xu_2009 | irrelevant | 0 | 0 | The study investigates hemoglobin-loaded polymeric nanoparticles where cetrimonium (CTAB) is used only as a surface modifier, not as the subject drug for PK parameter extraction. |
-| popPK | Xu_2016 | irrelevant | 0 | 0 | The study focuses on paclitaxel biodistribution using CTAB as a formulation excipient, not on the pharmacokinetics of cetrimonium. |
-| popPK | Zhang_2021 | irrelevant | 0 | 0 | The paper studies the antifungal activity and cytotoxicity of a nanoparticle hybrid, not the pharmacokinetics of cetrimonium. |
+| popPK | Xu_2009 | irrelevant | 1 | 1 | CTAB (cetrimonium bromide) is only a surface-charge modifier of nanoparticles; the PK half-lives reported are for the HbPNP carriers, not for cetrimonium itself. |
+| popPK | Xu_2016 | irrelevant | 0 | 0 | CTAB is only a cationic excipient in a paclitaxel nanoformulation; no PK parameters for cetrimonium itself are reported. |
+| popPK | Zhang_2021 | irrelevant | 0 | 0 | This is a materials-science/antifungal study of a CTMAB-containing compound; no pharmacokinetic parameters for cetrimonium are reported. |
 
 ---
 <sub>Generated by `docs.py` (scholarv2)</sub>

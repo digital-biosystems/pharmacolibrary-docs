@@ -19,6 +19,10 @@
 
 **Model:** No model was generated from this record.
 
+> The paper describes (±)-cibenzoline as a direct, reversible inhibitor of the Y-26763-induced K+ current (and KRN2391-induced glibenclamide-sensitive K+ currents) in a concentration-dependent manner, with an IC50 of 6.6 µM for the Y-26763-induced response. The record lists an IC50 of 4.5 µM for the KRN2391-induced current, but the provided excerpts do not explicitly state this specific value or the mechanism for the KRN2391-induced response, only noting that these currents were also suppressed by the drugs.
+>
+> <sub>in the paper's terms — summarised by qwen3.8:27b-mtp-q8_0 from the paper's text; not checked by a person</sub>
+
 - **paper:** `Sakuta_1993`
 - **model family:** `emax`
 - **driver:** `conc_no_pk`

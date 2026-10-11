@@ -1,0 +1,44 @@
+{
+ "dose_source": "paper",
+ "model_id": "Ensitrelvir_Ishibashi2024_median",
+ "molar_masses": {
+  "central.C": 0.53188
+ },
+ "note": "Values for the shared PK_1C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "paper_doses_kind": "discrete",
+ "paper_doses_mg": [
+  20.0,
+  70.0,
+  125.0,
+  250.0,
+  375.0,
+  500.0,
+  750.0,
+  1000.0,
+  2000.0
+ ],
+ "parameters": {
+  "Cl": 5.5e-08,
+  "F": 1.0,
+  "MM": 0.53188,
+  "Tlag": 0.0,
+  "VdPerKg": 0.00020142857142857142,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 2e-05,
+  "ka": 0.0001388888888888889,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 26972.938121179577
+ },
+ "reference_peaks": {
+  "central.C": 0.0012792977192541291
+ },
+ "stop_time": 950400.0,
+ "template": "PK_1C_enteral",
+ "template_fmu": "PK_1C_enteral.fmu"
+}

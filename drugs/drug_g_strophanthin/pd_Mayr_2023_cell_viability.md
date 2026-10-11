@@ -19,9 +19,9 @@
 
 **Model:** No model was generated from this record.
 
-> Ouabain reduces cell viability (%) of biliary tract cancer cells in vitro in a concentration-dependent manner, fitted with a sigmoid Emax (inhibitory) model; the paper states the cytotoxicity occurs at sub-saturating (low nM) concentrations via a Na+/K+-ATPase signaling pathway (Src/EGFR/Ras-MAPK activation) rather than inhibition of the ion-pumping function, with apoptosis induction. IC50 values were cell line-dependent, ranging from 14 nM (most sensitive) to 485 nM (least sensitive); no Emax, gamma, kin, kout or ke0 values are given.
+> Ouabain concentrations directly inhibit cell viability in biliary tract cancer cells via a sigmoid Emax mechanism, with IC50 values ranging from 14 nM to 485 nM depending on the cell line. The paper does not specify the underlying molecular mechanism for this cytotoxicity, noting only that it is independent of Na+/K+-ATPase pumping function at sub-saturating levels.
 >
-> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+> <sub>in the paper's terms — summarised by qwen3.8:27b-mtp-q8_0 from the paper's text; not checked by a person</sub>
 
 - **paper:** `Mayr_2023`
 - **model family:** `sigmoid_emax`

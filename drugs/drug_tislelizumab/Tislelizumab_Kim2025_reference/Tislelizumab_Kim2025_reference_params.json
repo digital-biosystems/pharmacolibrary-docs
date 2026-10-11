@@ -1,0 +1,30 @@
+{
+ "dose_source": "paper",
+ "model_id": "Tislelizumab_Kim2025_reference",
+ "note": "Values for the shared PK_1C.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "paper_doses_kind": "discrete",
+ "paper_doses_mg": [
+  200.0
+ ],
+ "parameters": {
+  "Cl": 1.7708333333333335e-09,
+  "F": 1.0,
+  "VdPerKg": 9.171428571428572e-05,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 0.0002,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 660.0000000662037
+ },
+ "reference_peaks": {
+  "central.C": 0.031150070262858424
+ },
+ "stop_time": 12700800.0,
+ "template": "PK_1C",
+ "template_fmu": "PK_1C.fmu"
+}

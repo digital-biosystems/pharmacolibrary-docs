@@ -1,0 +1,30 @@
+{
+ "dose_source": "library default",
+ "model_id": "IndocyanineGreen_Han2025_reference",
+ "molar_masses": {
+  "central.C": 0.77497
+ },
+ "note": "Values for the shared PK_1C.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "parameters": {
+  "Cl": 1.6666666666666667e-08,
+  "F": 1.0,
+  "MM": 0.77497,
+  "VdPerKg": 3.9e-05,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 1e-05,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 660.0000000662071
+ },
+ "reference_peaks": {
+  "central.C": 0.003656303063225201
+ },
+ "stop_time": 604800.0,
+ "template": "PK_1C",
+ "template_fmu": "PK_1C.fmu"
+}
