@@ -32,8 +32,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Violet PC et al., Vitamin E sequestration by liver fat in…, JCI insight (2020)
   ·  DOI: [10.1172/jci.insight.133309](https://doi.org/10.1172/jci.insight.133309)
 
-## Model component
-<dbs-pgx drug="tocopherol (vit E)" model-id="TocopherolVitE_Violet2020_iv_d6_tocopherol" status="rejected" stale="true" population="women with obesity-associated hepatosteatosis and healthy controls" measured-compound="d6-α-tocopherol" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="tocopherol (vit E)" model-id="TocopherolVitE_Violet2020_iv_d6_tocopherol" status="rejected" stale="true" population="women with obesity-associated hepatosteatosis and healthy controls" measured-compound="d6-α-tocopherol" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 5 extracted.

@@ -21,8 +21,7 @@
 Zhang CX et al., Clofazimine pharmacokinetics in HIV-inf…, CPT: pharmacometrics & syst… (2024)
   ·  DOI: [10.1002/psp4.13092](https://doi.org/10.1002/psp4.13092)
 
-## Model component
-<dbs-pgx drug="clofazimine" model-id="Clofazimine_Zhang2024_reference" status="rejected" stale="false" population="" measured-compound="clofazimine" parameterization="apparent" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="clofazimine" model-id="Clofazimine_Zhang2024_reference" status="rejected" stale="false" population="" measured-compound="clofazimine" parameterization="apparent" topology="2C"></div>
 
 **Model structure:** 2-compartment; no model was built for this record.  
 **Parameters:** 4 extracted.

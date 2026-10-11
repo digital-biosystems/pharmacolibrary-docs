@@ -25,8 +25,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the val
 Aoki FY et al., Amantadine kinetics in healthy elderly…, Clinical pharmacology and t… (1985)
   ·  DOI: [10.1038/clpt.1985.25](https://doi.org/10.1038/clpt.1985.25)
 
-## Model component
-<dbs-pgx drug="amantadine" model-id="Amantadine_Aoki1985_reference" status="needs_review" stale="false" population="healthy elderly men" measured-compound="amantadine" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="amantadine" model-id="Amantadine_Aoki1985_reference" status="needs_review" stale="false" population="healthy elderly men" measured-compound="amantadine" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 6 extracted.

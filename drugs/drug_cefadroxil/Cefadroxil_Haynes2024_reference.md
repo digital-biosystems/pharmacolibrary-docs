@@ -20,8 +20,7 @@
 Haynes AS et al., Cefadroxil and cephalexin pharmacokinet…, Antimicrobial agents and ch… (2024)
   ·  DOI: [10.1128/aac.00182-24](https://doi.org/10.1128/aac.00182-24)
 
-## Model component
-<dbs-pgx drug="cefadroxil" model-id="Cefadroxil_Haynes2024_reference" status="rejected" stale="false" population="children with musculoskeletal infections" measured-compound="cefadroxil" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="cefadroxil" model-id="Cefadroxil_Haynes2024_reference" status="rejected" stale="false" population="children with musculoskeletal infections" measured-compound="cefadroxil" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

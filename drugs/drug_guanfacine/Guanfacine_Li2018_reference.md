@@ -29,8 +29,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Li A et al., Correction to: Development of Guanfacin…, Paediatric drugs (2018)
   ·  DOI: [10.1007/s40272-017-0275-8](https://doi.org/10.1007/s40272-017-0275-8)
 
-## Model component
-<dbs-pgx drug="guanfacine" model-id="Guanfacine_Li2018_reference" status="rejected" stale="false" population="children and adolescents with ADHD" measured-compound="guanfacine" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="guanfacine" model-id="Guanfacine_Li2018_reference" status="rejected" stale="false" population="children and adolescents with ADHD" measured-compound="guanfacine" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

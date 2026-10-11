@@ -24,8 +24,7 @@
 ## Citation
 Moreau JP et al., [Absorption, distribution and eliminati…, Presse medicale (Paris, Fra… (1986)
 
-## Model component
-<dbs-pgx drug="Ginkgo folium" model-id="GinkgoFolium_Moreau1986_reference" status="needs_review" stale="false" population="rats" measured-compound="radiolabelled Ginkgo biloba extract constituents (total 14C radioactivity)" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="Ginkgo folium" model-id="GinkgoFolium_Moreau1986_reference" status="needs_review" stale="false" population="rats" measured-compound="radiolabelled Ginkgo biloba extract constituents (total 14C radioactivity)" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 4 extracted.

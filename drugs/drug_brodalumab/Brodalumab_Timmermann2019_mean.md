@@ -21,8 +21,7 @@
 Timmermann S et al., Population pharmacokinetics of brodalum…, Basic & clinical pharmacolo… (2019)
   ·  DOI: [10.1111/bcpt.13202](https://doi.org/10.1111/bcpt.13202)
 
-## Model component
-<dbs-pgx drug="brodalumab" model-id="Brodalumab_Timmermann2019_mean" status="needs_review" stale="false" population="patients with moderate to severe plaque psoriasis" measured-compound="brodalumab" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="brodalumab" model-id="Brodalumab_Timmermann2019_mean" status="needs_review" stale="false" population="patients with moderate to severe plaque psoriasis" measured-compound="brodalumab" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 4 extracted.

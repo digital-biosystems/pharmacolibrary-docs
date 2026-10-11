@@ -21,8 +21,7 @@
 Khoei A et al., Dolutegravir population pharmacokinetic…, HIV medicine (2026)
   ·  DOI: [10.1111/hiv.70278](https://doi.org/10.1111/hiv.70278)
 
-## Model component
-<dbs-pgx drug="Bictegravir" model-id="Bictegravir_Khoei2026_reference" status="extracted" stale="false" population="" measured-compound="bictegravir" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="Bictegravir" model-id="Bictegravir_Khoei2026_reference" status="extracted" stale="false" population="" measured-compound="bictegravir" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 3 extracted.

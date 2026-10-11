@@ -29,8 +29,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on paramet
 Zhu Y et al., A validated UPLC-MS/MS method for quant…, Frontiers in pharmacology (2024)
   ·  DOI: [10.3389/fphar.2024.1432944](https://doi.org/10.3389/fphar.2024.1432944)
 
-## Model component
-<dbs-pgx drug="montelukast" model-id="Montelukast_Zhu2024_reference" status="extracted" stale="true" population="" measured-compound="montelukast" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="montelukast" model-id="Montelukast_Zhu2024_reference" status="extracted" stale="true" population="" measured-compound="montelukast" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 3 extracted.

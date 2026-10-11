@@ -28,8 +28,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on paramet
 Rodón J et al., Pharmacokinetic, pharmacodynamic and bi…, Investigational new drugs (2015)
   ·  DOI: [10.1007/s10637-014-0192-4](https://doi.org/10.1007/s10637-014-0192-4)
 
-## Model component
-<dbs-pgx drug="lomustine" model-id="Lomustine_Rodn2015_reference" status="extracted" stale="true" population="" measured-compound="" parameterization="" topology=""></dbs-pgx>
+<div class="pk-model-meta" hidden drug="lomustine" model-id="Lomustine_Rodn2015_reference" status="extracted" stale="true" population="" measured-compound="" parameterization="" topology=""></div>
 
 **Model structure:** —; no model was built for this record.  
 **Parameters:** 0 extracted.

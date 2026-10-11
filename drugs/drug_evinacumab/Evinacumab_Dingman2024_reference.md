@@ -24,8 +24,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Dingman R et al., Evinacumab: Mechanism of action, clinic…, Clinical and translational… (2024)
   ·  DOI: [10.1111/cts.13836](https://doi.org/10.1111/cts.13836)
 
-## Model component
-<dbs-pgx drug="evinacumab" model-id="Evinacumab_Dingman2024_reference" status="needs_review" stale="false" population="patients with homozygous familial hypercholesterolemia" measured-compound="evinacumab" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="evinacumab" model-id="Evinacumab_Dingman2024_reference" status="needs_review" stale="false" population="patients with homozygous familial hypercholesterolemia" measured-compound="evinacumab" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 2 extracted.

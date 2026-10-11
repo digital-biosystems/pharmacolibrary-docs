@@ -33,8 +33,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on how the
 Wu W et al., Population pharmacokinetics of oxcarbaz…, Basic & clinical pharmacolo… (2024)
   ·  DOI: [10.1111/bcpt.14000](https://doi.org/10.1111/bcpt.14000)
 
-## Model component
-<dbs-pgx drug="oxcarbazepine" model-id="Oxcarbazepine_Wu2024_reference" status="rejected" stale="true" population="Chinese paediatric patients with epilepsy" measured-compound="MHD" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="oxcarbazepine" model-id="Oxcarbazepine_Wu2024_reference" status="rejected" stale="true" population="Chinese paediatric patients with epilepsy" measured-compound="MHD" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 5 extracted.

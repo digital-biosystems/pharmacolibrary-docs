@@ -28,8 +28,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Gibbons JA et al., Pharmacokinetic Drug Interaction Studie…, Clinical pharmacokinetics (2015)
   ·  DOI: [10.1007/s40262-015-0283-1](https://doi.org/10.1007/s40262-015-0283-1)
 
-## Model component
-<dbs-pgx drug="pioglitazone" model-id="Pioglitazone_Gibbons2015_reference" status="rejected" stale="false" population="healthy male subjects" measured-compound="enzalutamide" parameterization="apparent" topology="general_linear"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="pioglitazone" model-id="Pioglitazone_Gibbons2015_reference" status="rejected" stale="false" population="healthy male subjects" measured-compound="enzalutamide" parameterization="apparent" topology="general_linear"></div>
 
 **Model structure:** general linear; no model was built for this record.  
 **Parameters:** 5 extracted.

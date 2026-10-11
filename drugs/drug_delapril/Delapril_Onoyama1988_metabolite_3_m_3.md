@@ -30,8 +30,7 @@ No distribution volume and no clearance or elimination rate are reported, so thi
 Onoyama K et al., Pharmacokinetics of a new angiotensin I…, Clinical pharmacology and t… (1988)
   ·  DOI: [10.1038/clpt.1988.27](https://doi.org/10.1038/clpt.1988.27)
 
-## Model component
-<dbs-pgx drug="delapril" model-id="Delapril_Onoyama1988_metabolite_3_m_3" status="rejected" stale="true" population="adults with normal and deteriorated kidney function" measured-compound="M-1 (CV-3317-COOH)" parameterization="mechanistic" topology="general_linear"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="delapril" model-id="Delapril_Onoyama1988_metabolite_3_m_3" status="rejected" stale="true" population="adults with normal and deteriorated kidney function" measured-compound="M-1 (CV-3317-COOH)" parameterization="mechanistic" topology="general_linear"></div>
 
 **Model structure:** general linear; no model was built for this record.  
 **Parameters:** 4 extracted.

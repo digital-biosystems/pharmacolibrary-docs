@@ -21,8 +21,7 @@
 Wiersma HE et al., Pharmacokinetics of a single oral dose…, Therapeutic drug monitoring (2003)
   ·  DOI: [10.1097/00007691-200302000-00014](https://doi.org/10.1097/00007691-200302000-00014)
 
-## Model component
-<dbs-pgx drug="baclofen" model-id="Baclofen_Wiersma2003_reference" status="needs_review" stale="false" population="pediatric patients with gastroesophageal reflux disease" measured-compound="baclofen" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="baclofen" model-id="Baclofen_Wiersma2003_reference" status="needs_review" stale="false" population="pediatric patients with gastroesophageal reflux disease" measured-compound="baclofen" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 3 extracted.

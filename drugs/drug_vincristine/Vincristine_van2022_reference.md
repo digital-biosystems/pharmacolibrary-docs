@@ -21,8 +21,7 @@
 van de Velde ME et al., Genetic Polymorphisms Associated with V…, Cancers (2022)
   ·  DOI: [10.3390/cancers14143510](https://doi.org/10.3390/cancers14143510)
 
-## Model component
-<dbs-pgx drug="vincristine" model-id="Vincristine_van2022_reference" status="needs_review" stale="false" population="pediatric oncology patients" measured-compound="vincristine" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="vincristine" model-id="Vincristine_van2022_reference" status="needs_review" stale="false" population="pediatric oncology patients" measured-compound="vincristine" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 3 extracted.

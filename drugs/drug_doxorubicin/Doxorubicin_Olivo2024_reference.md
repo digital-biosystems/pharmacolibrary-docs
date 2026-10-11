@@ -29,8 +29,7 @@ Independently confirmed by `gpt-oss:120b`.
 Olivo LB et al., Anticipating Leucovorin Rescue Therapy…, Pharmaceutics (2024)
   ·  DOI: [10.3390/pharmaceutics16091180](https://doi.org/10.3390/pharmaceutics16091180)
 
-## Model component
-<dbs-pgx drug="doxorubicin" model-id="Doxorubicin_Olivo2024_reference" status="extracted" stale="true" population="" measured-compound="doxorubicin" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="doxorubicin" model-id="Doxorubicin_Olivo2024_reference" status="extracted" stale="true" population="" measured-compound="doxorubicin" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment, IV mammillary model — template `PK_2C`.  
 **Parameters:** 4 extracted.

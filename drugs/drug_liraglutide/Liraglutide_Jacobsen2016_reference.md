@@ -29,8 +29,7 @@ Independently confirmed by `gpt-oss:120b`.
 Jacobsen LV et al., Liraglutide in Type 2 Diabetes Mellitus…, Clinical pharmacokinetics (2016)
   ·  DOI: [10.1007/s40262-015-0343-6](https://doi.org/10.1007/s40262-015-0343-6)
 
-## Model component
-<dbs-pgx drug="liraglutide" model-id="Liraglutide_Jacobsen2016_reference" status="rejected" stale="false" population="healthy volunteers and subjects with type 2 diabetes" measured-compound="liraglutide" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="liraglutide" model-id="Liraglutide_Jacobsen2016_reference" status="rejected" stale="false" population="healthy volunteers and subjects with type 2 diabetes" measured-compound="liraglutide" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

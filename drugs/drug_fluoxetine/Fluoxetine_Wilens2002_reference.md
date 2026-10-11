@@ -31,8 +31,7 @@ Independently confirmed by `gpt-oss:120b`.
 Wilens TE et al., Fluoxetine pharmacokinetics in pediatri…, Journal of clinical psychop… (2002)
   ·  DOI: [10.1097/00004714-200212000-00006](https://doi.org/10.1097/00004714-200212000-00006)
 
-## Model component
-<dbs-pgx drug="fluoxetine" model-id="Fluoxetine_Wilens2002_reference" status="rejected" stale="true" population="pediatric patients" measured-compound="fluoxetine" parameterization="mechanistic" topology="parent_metabolite"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="fluoxetine" model-id="Fluoxetine_Wilens2002_reference" status="rejected" stale="true" population="pediatric patients" measured-compound="fluoxetine" parameterization="mechanistic" topology="parent_metabolite"></div>
 
 **Model structure:** parent + metabolite; no model was built for this record.  
 **Parameters:** 0 extracted.

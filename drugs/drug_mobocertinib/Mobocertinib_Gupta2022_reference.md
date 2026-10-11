@@ -20,8 +20,7 @@
 Gupta N et al., Population pharmacokinetics of mobocert…, CPT: pharmacometrics & syst… (2022)
   ·  DOI: [10.1002/psp4.12785](https://doi.org/10.1002/psp4.12785)
 
-## Model component
-<dbs-pgx drug="mobocertinib" model-id="Mobocertinib_Gupta2022_reference" status="needs_review" stale="false" population="healthy volunteers and patients with mNSCLC" measured-compound="mobocertinib" parameterization="apparent" topology="general_linear"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="mobocertinib" model-id="Mobocertinib_Gupta2022_reference" status="needs_review" stale="false" population="healthy volunteers and patients with mNSCLC" measured-compound="mobocertinib" parameterization="apparent" topology="general_linear"></div>
 
 **Model structure:** general linear; no model was built for this record.  
 **Parameters:** 4 extracted.

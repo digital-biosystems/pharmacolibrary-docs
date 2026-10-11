@@ -30,8 +30,7 @@ Independently confirmed by `gpt-oss:120b`.
 Xin Y et al., Effect of CYP2D6 and ABCB1 polymorphism…, BMC pediatrics (2025)
   ·  DOI: [10.1186/s12887-025-05856-6](https://doi.org/10.1186/s12887-025-05856-6)
 
-## Model component
-<dbs-pgx drug="aripiprazole" model-id="Aripiprazole_Xin2025_reference" status="rejected" stale="true" population="pediatric patients with tic disorders" measured-compound="aripiprazole" parameterization="mechanistic" topology="parent_metabolite"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="aripiprazole" model-id="Aripiprazole_Xin2025_reference" status="rejected" stale="true" population="pediatric patients with tic disorders" measured-compound="aripiprazole" parameterization="mechanistic" topology="parent_metabolite"></div>
 
 **Model structure:** parent + metabolite; no model was built for this record.  
 **Parameters:** 0 extracted.

@@ -33,8 +33,7 @@ Independently confirmed by `gpt-oss:120b`.
 Wang Q et al., Population Pharmacokinetics and Exposur…, Journal of clinical pharmac… (2019)
   ·  DOI: [10.1002/jcph.1366](https://doi.org/10.1002/jcph.1366)
 
-## Model component
-<dbs-pgx drug="daunorubicin" model-id="Daunorubicin_Wang2019_reference" status="rejected" stale="true" population="adults with hematologic malignancies" measured-compound="daunorubicin" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="daunorubicin" model-id="Daunorubicin_Wang2019_reference" status="rejected" stale="true" population="adults with hematologic malignancies" measured-compound="daunorubicin" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

@@ -27,8 +27,7 @@
 Li J et al., Model Informed Development of VRC01 in…, Clinical pharmacology and t… (2021)
   ·  DOI: [10.1002/cpt.2026](https://doi.org/10.1002/cpt.2026)
 
-## Model component
-<dbs-pgx drug="palivizumab" model-id="Palivizumab_Li2021_reference" status="extracted" stale="true" population="" measured-compound="palivizumab" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="palivizumab" model-id="Palivizumab_Li2021_reference" status="extracted" stale="true" population="" measured-compound="palivizumab" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameters:** 2 extracted.

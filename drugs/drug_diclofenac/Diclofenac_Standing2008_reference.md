@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on how the
 Standing JF et al., Population pharmacokinetics of oral dic…, British journal of clinical… (2008)
   ·  DOI: [10.1111/j.1365-2125.2008.03289.x](https://doi.org/10.1111/j.1365-2125.2008.03289.x)
 
-## Model component
-<dbs-pgx drug="diclofenac" model-id="Diclofenac_Standing2008_reference" status="extracted" stale="true" population="adult volunteers and paediatric patients" measured-compound="diclofenac" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="diclofenac" model-id="Diclofenac_Standing2008_reference" status="extracted" stale="true" population="adult volunteers and paediatric patients" measured-compound="diclofenac" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 2 extracted.

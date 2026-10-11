@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Saleh S et al., Population pharmacokinetics and the pha…, Pulmonary circulation 6(Sup… (2016)
   ·  DOI: [10.1086/685404](https://doi.org/10.1086/685404)
 
-## Model component
-<dbs-pgx drug="riociguat" model-id="Riociguat_Saleh2016_reference" status="extracted" stale="true" population="patients with pulmonary arterial hypertension or chronic thromboembolic pulmonary hypertension" measured-compound="riociguat" parameterization="mechanistic" topology="parent_metabolite"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="riociguat" model-id="Riociguat_Saleh2016_reference" status="extracted" stale="true" population="patients with pulmonary arterial hypertension or chronic thromboembolic pulmonary hypertension" measured-compound="riociguat" parameterization="mechanistic" topology="parent_metabolite"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 6 extracted.

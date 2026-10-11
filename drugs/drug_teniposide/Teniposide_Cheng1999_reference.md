@@ -27,8 +27,7 @@ Nothing in the extracted data describes the drug's disposition, so there is no m
 ## Citation
 Cheng A et al., [A pharmacokinetic study of teniposide…, Hua xi yi ke da xue xue bao… (1999)
 
-## Model component
-<dbs-pgx drug="teniposide" model-id="Teniposide_Cheng1999_reference" status="needs_review" stale="true" population="patients with ovarian cancer receiving intraperitoneal chemotherapy" measured-compound="teniposide" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="teniposide" model-id="Teniposide_Cheng1999_reference" status="needs_review" stale="true" population="patients with ovarian cancer receiving intraperitoneal chemotherapy" measured-compound="teniposide" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 4 extracted.

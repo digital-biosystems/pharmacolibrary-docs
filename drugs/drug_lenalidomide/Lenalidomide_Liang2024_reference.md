@@ -21,8 +21,7 @@
 Liang X et al., Population pharmacokinetics of lenalido…, Scientific reports (2024)
   ·  DOI: [10.1038/s41598-024-52460-2](https://doi.org/10.1038/s41598-024-52460-2)
 
-## Model component
-<dbs-pgx drug="lenalidomide" model-id="Lenalidomide_Liang2024_reference" status="needs_review" stale="false" population="Chinese patients" measured-compound="lenalidomide" parameterization="apparent" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="lenalidomide" model-id="Lenalidomide_Liang2024_reference" status="needs_review" stale="false" population="Chinese patients" measured-compound="lenalidomide" parameterization="apparent" topology="2C"></div>
 
 **Model structure:** 2-compartment; no model was built for this record.  
 **Parameters:** 4 extracted.

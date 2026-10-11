@@ -23,8 +23,7 @@
 Jimenez-Toro I et al., A new pharmacodynamic approach to study…, PloS one (2020)
   ·  DOI: [10.1371/journal.pone.0243365](https://doi.org/10.1371/journal.pone.0243365)
 
-## Model component
-<dbs-pgx drug="ampicillin" model-id="Ampicillin_JimenezToro2020_reference" status="rejected" stale="false" population="" measured-compound="ampicillin" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="ampicillin" model-id="Ampicillin_JimenezToro2020_reference" status="rejected" stale="false" population="" measured-compound="ampicillin" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment; no model was built for this record.  
 **Parameters:** 4 extracted.

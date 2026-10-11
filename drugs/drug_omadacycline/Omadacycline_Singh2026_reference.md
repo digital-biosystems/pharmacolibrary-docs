@@ -23,8 +23,7 @@
 Singh S et al., Eravacycline pharmacokinetics/pharmacod…, Microbiology spectrum (2026)
   ·  DOI: [10.1128/spectrum.03432-25](https://doi.org/10.1128/spectrum.03432-25)
 
-## Model component
-<dbs-pgx drug="omadacycline" model-id="Omadacycline_Singh2026_reference" status="extracted" stale="false" population="" measured-compound="omadacycline" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="omadacycline" model-id="Omadacycline_Singh2026_reference" status="extracted" stale="false" population="" measured-compound="omadacycline" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment, IV mammillary model — template `PK_2C`.  
 **Parameters:** 3 extracted.

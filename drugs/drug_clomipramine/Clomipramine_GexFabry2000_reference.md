@@ -30,8 +30,7 @@ Independently confirmed by `gpt-oss:120b`.
 Gex-Fabry M et al., Population pharmacokinetics of clomipra…, Therapeutic drug monitoring (2000)
   ·  DOI: [10.1097/00007691-200012000-00009](https://doi.org/10.1097/00007691-200012000-00009)
 
-## Model component
-<dbs-pgx drug="clomipramine" model-id="Clomipramine_GexFabry2000_reference" status="rejected" stale="true" population="patients with depression" measured-compound="clomipramine" parameterization="mechanistic" topology="general_linear"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="clomipramine" model-id="Clomipramine_GexFabry2000_reference" status="rejected" stale="true" population="patients with depression" measured-compound="clomipramine" parameterization="mechanistic" topology="general_linear"></div>
 
 **Model structure:** general linear; no model was built for this record.  
 **Parameters:** 0 extracted.

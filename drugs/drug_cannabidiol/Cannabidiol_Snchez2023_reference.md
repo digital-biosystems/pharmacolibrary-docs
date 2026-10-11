@@ -31,8 +31,7 @@ Only the abstract was available, so reported summary statistics stand in for a f
 Sánchez de Medina A et al., Pharmacokinetics and oral bioavailabili…, Equine veterinary journal (2023)
   ·  DOI: [10.1111/evj.13923](https://doi.org/10.1111/evj.13923)
 
-## Model component
-<dbs-pgx drug="cannabidiol" model-id="Cannabidiol_Snchez2023_reference" status="extracted" stale="true" population="healthy horses" measured-compound="cannabidiol" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="cannabidiol" model-id="Cannabidiol_Snchez2023_reference" status="extracted" stale="true" population="healthy horses" measured-compound="cannabidiol" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameters:** 3 extracted.

@@ -20,8 +20,7 @@
 Polito A et al., Pharmacokinetics of oral fludrocortison…, British journal of clinical… (2016)
   ·  DOI: [10.1111/bcp.13065](https://doi.org/10.1111/bcp.13065)
 
-## Model component
-<dbs-pgx drug="fludrocortisone" model-id="Fludrocortisone_Polito2016_reference" status="needs_review" stale="false" population="adults with septic shock" measured-compound="fludrocortisone" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="fludrocortisone" model-id="Fludrocortisone_Polito2016_reference" status="needs_review" stale="false" population="adults with septic shock" measured-compound="fludrocortisone" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 5 extracted.

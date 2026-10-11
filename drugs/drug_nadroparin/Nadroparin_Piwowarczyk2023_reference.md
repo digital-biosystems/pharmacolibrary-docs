@@ -27,8 +27,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Piwowarczyk P et al., Population Pharmacokinetics and Probabi…, Clinical pharmacokinetics (2023)
   ·  DOI: [10.1007/s40262-023-01244-4](https://doi.org/10.1007/s40262-023-01244-4)
 
-## Model component
-<dbs-pgx drug="nadroparin" model-id="Nadroparin_Piwowarczyk2023_reference" status="curated_candidate" stale="false" population="patients with COVID-19" measured-compound="nadroparin" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="nadroparin" model-id="Nadroparin_Piwowarczyk2023_reference" status="curated_candidate" stale="false" population="patients with COVID-19" measured-compound="nadroparin" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 3 extracted.

@@ -33,8 +33,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Rubin P et al., Prazosin first-pass metabolism and hepa…, Journal of cardiovascular p… (1979)
   ·  DOI: [10.1097/00005344-197911000-00005](https://doi.org/10.1097/00005344-197911000-00005)
 
-## Model component
-<dbs-pgx drug="prazosin" model-id="Prazosin_Rubin1979_reference" status="needs_review" stale="true" population="dogs" measured-compound="prazosin" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="prazosin" model-id="Prazosin_Rubin1979_reference" status="needs_review" stale="true" population="dogs" measured-compound="prazosin" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 4 extracted.

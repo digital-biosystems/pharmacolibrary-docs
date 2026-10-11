@@ -22,8 +22,7 @@
 Thakkar N et al., Population Pharmacokinetics/Pharmacodyn…, CPT: pharmacometrics & syst… (2017)
   ·  DOI: [10.1002/psp4.12218](https://doi.org/10.1002/psp4.12218)
 
-## Model component
-<dbs-pgx drug="amifampridine" model-id="Amifampridine_Thakkar2017_reference" status="extracted" stale="false" population="patients with Lambert-Eaton myasthenia" measured-compound="3,4-diaminopyridine (amifampridine)" parameterization="apparent" topology="parent_metabolite"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="amifampridine" model-id="Amifampridine_Thakkar2017_reference" status="extracted" stale="false" population="patients with Lambert-Eaton myasthenia" measured-compound="3,4-diaminopyridine (amifampridine)" parameterization="apparent" topology="parent_metabolite"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 7 extracted, plus 1 covariate effect.

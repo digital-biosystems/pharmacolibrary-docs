@@ -20,8 +20,7 @@
 Yin OQ et al., A mechanism-based population pharmacoki…, Clinical pharmacokinetics (2008)
   ·  DOI: [10.2165/0003088-200847120-00005](https://doi.org/10.2165/0003088-200847120-00005)
 
-## Model component
-<dbs-pgx drug="midostaurin" model-id="Midostaurin_Yin2008_reference" status="rejected" stale="false" population="diabetic patients" measured-compound="midostaurin" parameterization="mechanistic" topology="general_linear"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="midostaurin" model-id="Midostaurin_Yin2008_reference" status="rejected" stale="false" population="diabetic patients" measured-compound="midostaurin" parameterization="mechanistic" topology="general_linear"></div>
 
 **Model structure:** general linear; no model was built for this record.  
 **Parameters:** 2 extracted.

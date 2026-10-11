@@ -33,8 +33,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on how the
 Kechagia IA et al., Extrapolation of enalapril efficacy fro…, The Journal of pharmacy and… (2015)
   ·  DOI: [10.1111/jphp.12471](https://doi.org/10.1111/jphp.12471)
 
-## Model component
-<dbs-pgx drug="enalapril" model-id="Enalapril_Kechagia2015_reference" status="extracted" stale="true" population="paediatric patients (0-16 years)" measured-compound="enalapril" parameterization="apparent" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="enalapril" model-id="Enalapril_Kechagia2015_reference" status="extracted" stale="true" population="paediatric patients (0-16 years)" measured-compound="enalapril" parameterization="apparent" topology="2C"></div>
 
 **Model structure:** 2-compartment, oral mammillary model — template `PK_2C_enteral`.  
 **Parameters:** 6 extracted, plus 4 covariate effects.

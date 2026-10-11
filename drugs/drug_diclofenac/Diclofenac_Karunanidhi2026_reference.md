@@ -27,8 +27,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on paramet
 Karunanidhi A et al., Ceftazidime/avibactam and aztreonam com…, Antimicrobial agents and ch… (2026)
   ·  DOI: [10.1128/aac.01540-25](https://doi.org/10.1128/aac.01540-25)
 
-## Model component
-<dbs-pgx drug="diclofenac" model-id="Diclofenac_Karunanidhi2026_reference" status="rejected" stale="false" population="" measured-compound="diclofenac" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="diclofenac" model-id="Diclofenac_Karunanidhi2026_reference" status="rejected" stale="false" population="" measured-compound="diclofenac" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 2 extracted.

@@ -29,8 +29,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Setiawan E et al., Population pharmacokinetics and dose op…, Scientific reports (2022)
   ·  DOI: [10.1038/s41598-022-12627-1](https://doi.org/10.1038/s41598-022-12627-1)
 
-## Model component
-<dbs-pgx drug="levofloxacin" model-id="Levofloxacin_Setiawan2022_median" status="extracted" stale="true" population="hospitalized adult patients" measured-compound="levofloxacin" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="levofloxacin" model-id="Levofloxacin_Setiawan2022_median" status="extracted" stale="true" population="hospitalized adult patients" measured-compound="levofloxacin" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment, IV mammillary model — template `PK_2C`.  
 **Parameters:** 4 extracted.

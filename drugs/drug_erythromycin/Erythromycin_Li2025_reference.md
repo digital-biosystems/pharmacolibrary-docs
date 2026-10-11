@@ -21,8 +21,7 @@
 Li X et al., Population pharmacokinetics study on ne…, Antimicrobial agents and ch… (2025)
   ·  DOI: [10.1128/aac.00044-25](https://doi.org/10.1128/aac.00044-25)
 
-## Model component
-<dbs-pgx drug="erythromycin" model-id="Erythromycin_Li2025_reference" status="extracted" stale="false" population="" measured-compound="erythromycin" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="erythromycin" model-id="Erythromycin_Li2025_reference" status="extracted" stale="false" population="" measured-compound="erythromycin" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment, IV mammillary model — template `PK_2C`.  
 **Parameters:** 4 extracted.

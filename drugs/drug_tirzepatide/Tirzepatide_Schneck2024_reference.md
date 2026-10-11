@@ -30,8 +30,7 @@ Independently confirmed by `gpt-oss:120b`.
 Schneck K et al., Population pharmacokinetics of the GIP/…, CPT: pharmacometrics & syst… (2024)
   ·  DOI: [10.1002/psp4.13099](https://doi.org/10.1002/psp4.13099)
 
-## Model component
-<dbs-pgx drug="tirzepatide" model-id="Tirzepatide_Schneck2024_reference" status="rejected" stale="true" population="adults with type 2 diabetes mellitus" measured-compound="tirzepatide" parameterization="apparent" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="tirzepatide" model-id="Tirzepatide_Schneck2024_reference" status="rejected" stale="true" population="adults with type 2 diabetes mellitus" measured-compound="tirzepatide" parameterization="apparent" topology="2C"></div>
 
 **Model structure:** 2-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

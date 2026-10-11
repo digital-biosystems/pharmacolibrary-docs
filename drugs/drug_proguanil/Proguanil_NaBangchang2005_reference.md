@@ -21,8 +21,7 @@
 Na-Bangchang K et al., The pharmacokinetics and pharmacodynami…, European journal of clinica… (2005)
   ·  DOI: [10.1007/s00228-005-0969-7](https://doi.org/10.1007/s00228-005-0969-7)
 
-## Model component
-<dbs-pgx drug="proguanil" model-id="Proguanil_NaBangchang2005_reference" status="rejected" stale="false" population="third-trimester pregnant women with uncomplicated falciparum malaria" measured-compound="proguanil" parameterization="mechanistic" topology="parent_metabolite"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="proguanil" model-id="Proguanil_NaBangchang2005_reference" status="rejected" stale="false" population="third-trimester pregnant women with uncomplicated falciparum malaria" measured-compound="proguanil" parameterization="mechanistic" topology="parent_metabolite"></div>
 
 **Model structure:** parent + metabolite; no model was built for this record.  
 **Parameters:** 0 extracted.

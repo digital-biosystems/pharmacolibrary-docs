@@ -21,8 +21,7 @@
 Irby DJ et al., Approaches to handling missing or "prob…, CPT: pharmacometrics & syst… (2021)
   ·  DOI: [10.1002/psp4.12611](https://doi.org/10.1002/psp4.12611)
 
-## Model component
-<dbs-pgx drug="cefotiam" model-id="Cefotiam_Irby2021_reference" status="extracted" stale="false" population="" measured-compound="cefotiam" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="cefotiam" model-id="Cefotiam_Irby2021_reference" status="extracted" stale="false" population="" measured-compound="cefotiam" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameters:** 2 extracted.

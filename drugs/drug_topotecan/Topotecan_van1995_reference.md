@@ -29,8 +29,7 @@ No volume or clearance — not a compartmental population PK model. The paper re
 van Warmerdam LJ et al., Pharmacokinetics and pharmacodynamics o…, Cancer chemotherapy and pha… (1995)
   ·  DOI: [10.1007/BF00686554](https://doi.org/10.1007/BF00686554)
 
-## Model component
-<dbs-pgx drug="topotecan" model-id="Topotecan_van1995_reference" status="rejected" stale="true" population="patients with solid tumors" measured-compound="topotecan" parameterization="mechanistic" topology="parent_metabolite"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="topotecan" model-id="Topotecan_van1995_reference" status="rejected" stale="true" population="patients with solid tumors" measured-compound="topotecan" parameterization="mechanistic" topology="parent_metabolite"></div>
 
 **Model structure:** parent + metabolite; no model was built for this record.  
 **Parameters:** 1 extracted.

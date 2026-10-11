@@ -26,8 +26,7 @@ A model needs both clearance and volume; without the clearance it could only be 
 Iida S; Kinoshita H; Holford NH et al. (2008). British journal of clinical pharmacology 66
   ·  DOI: [10.1111/j.1365-2125.2008.03257.x](https://doi.org/10.1111/j.1365-2125.2008.03257.x)
 
-## Model component
-<dbs-pgx drug="nicorandil" model-id="Nicorandil_Iida2008_obj" status="needs_review" stale="false" population="healthy subjects and acute heart failure patients" measured-compound="nicorandil" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="nicorandil" model-id="Nicorandil_Iida2008_obj" status="needs_review" stale="false" population="healthy subjects and acute heart failure patients" measured-compound="nicorandil" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 2 extracted.

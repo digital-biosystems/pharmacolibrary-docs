@@ -22,8 +22,7 @@
 Brier ME et al., Population pharmacokinetics of the acti…, Clinical pharmacology and t… (1995)
   ·  DOI: [10.1016/0009-9236(95)90224-4](https://doi.org/10.1016/0009-9236(95)90224-4)
 
-## Model component
-<dbs-pgx drug="nabumetone" model-id="Nabumetone_Brier1995_reference" status="rejected" stale="false" population="subjects with renal dysfunction and normal subjects" measured-compound="6-methoxy-2-naphythylacetic acid" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="nabumetone" model-id="Nabumetone_Brier1995_reference" status="rejected" stale="false" population="subjects with renal dysfunction and normal subjects" measured-compound="6-methoxy-2-naphythylacetic acid" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

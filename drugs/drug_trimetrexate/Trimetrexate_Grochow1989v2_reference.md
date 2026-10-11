@@ -22,8 +22,7 @@
 Grochow LB et al., A phase I trial of trimetrexate glucuro…, Cancer chemotherapy and pha… (1989)
   ·  DOI: [10.1007/BF00304765](https://doi.org/10.1007/BF00304765)
 
-## Model component
-<dbs-pgx drug="trimetrexate" model-id="Trimetrexate_Grochow1989v2_reference" status="rejected" stale="false" population="patients with advanced solid tumors" measured-compound="trimetrexate" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="trimetrexate" model-id="Trimetrexate_Grochow1989v2_reference" status="rejected" stale="false" population="patients with advanced solid tumors" measured-compound="trimetrexate" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 2 extracted.

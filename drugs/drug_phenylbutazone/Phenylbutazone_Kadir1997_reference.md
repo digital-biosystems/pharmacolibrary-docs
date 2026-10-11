@@ -22,8 +22,7 @@
 Kadir A et al., Phenylbutazone pharmacokinetics and bio…, Journal of veterinary pharm… (1997)
   ·  DOI: [10.1046/j.1365-2885.1997.04427.x](https://doi.org/10.1046/j.1365-2885.1997.04427.x)
 
-## Model component
-<dbs-pgx drug="phenylbutazone" model-id="Phenylbutazone_Kadir1997_reference" status="needs_review" stale="false" population="female dromedary camels" measured-compound="phenylbutazone" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="phenylbutazone" model-id="Phenylbutazone_Kadir1997_reference" status="needs_review" stale="false" population="female dromedary camels" measured-compound="phenylbutazone" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 6 extracted.

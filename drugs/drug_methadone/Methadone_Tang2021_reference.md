@@ -23,8 +23,7 @@
 Tang F et al., Clinical pharmacology and dosing regime…, Clinical and translational… (2021)
   ·  DOI: [10.1111/cts.12994](https://doi.org/10.1111/cts.12994)
 
-## Model component
-<dbs-pgx drug="methadone" model-id="Methadone_Tang2021_reference" status="extracted" stale="false" population="neonates with neonatal opioid withdrawal syndrome" measured-compound="methadone" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="methadone" model-id="Methadone_Tang2021_reference" status="extracted" stale="false" population="neonates with neonatal opioid withdrawal syndrome" measured-compound="methadone" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameters:** 2 extracted.

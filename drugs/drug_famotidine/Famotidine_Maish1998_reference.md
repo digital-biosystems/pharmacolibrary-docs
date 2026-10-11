@@ -31,8 +31,7 @@ Independently confirmed by `gpt-oss:120b`.
 Maish WA et al., Pharmacokinetics of famotidine in patie…, Journal of clinical pharmac… (1998)
   ·  DOI: [10.1177/009127009803801104](https://doi.org/10.1177/009127009803801104)
 
-## Model component
-<dbs-pgx drug="famotidine" model-id="Famotidine_Maish1998_reference" status="extracted" stale="true" population="patients with cystic fibrosis" measured-compound="famotidine" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="famotidine" model-id="Famotidine_Maish1998_reference" status="extracted" stale="true" population="patients with cystic fibrosis" measured-compound="famotidine" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 8 extracted.

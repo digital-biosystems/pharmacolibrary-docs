@@ -33,8 +33,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the val
 Bailey RS et al., Pharmacokinetics of orally administered…, Journal of veterinary pharm… (2019)
   ·  DOI: [10.1111/jvp.12743](https://doi.org/10.1111/jvp.12743)
 
-## Model component
-<dbs-pgx drug="tramadol" model-id="Tramadol_Bailey2019_reference" status="needs_review" stale="true" population="Muscovy ducks" measured-compound="tramadol" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="tramadol" model-id="Tramadol_Bailey2019_reference" status="needs_review" stale="true" population="Muscovy ducks" measured-compound="tramadol" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 4 extracted.

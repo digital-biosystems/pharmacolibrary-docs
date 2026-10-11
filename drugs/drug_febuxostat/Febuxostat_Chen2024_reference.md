@@ -21,8 +21,7 @@
 Chen W et al., Population pharmacokinetic analysis of…, BMC pharmacology & toxicolo… (2024)
   ·  DOI: [10.1186/s40360-024-00783-1](https://doi.org/10.1186/s40360-024-00783-1)
 
-## Model component
-<dbs-pgx drug="febuxostat" model-id="Febuxostat_Chen2024_reference" status="needs_review" stale="false" population="healthy Chinese adults" measured-compound="febuxostat" parameterization="apparent" topology="3C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="febuxostat" model-id="Febuxostat_Chen2024_reference" status="needs_review" stale="false" population="healthy Chinese adults" measured-compound="febuxostat" parameterization="apparent" topology="3C"></div>
 
 **Model structure:** 3-compartment; no model was built for this record.  
 **Parameters:** 10 extracted.

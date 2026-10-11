@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Yukawa E et al., Population pharmacokinetics of digoxin…, Clinical pharmacokinetics (2001)
   ·  DOI: [10.2165/00003088-200140100-00005](https://doi.org/10.2165/00003088-200140100-00005)
 
-## Model component
-<dbs-pgx drug="digoxin" model-id="Digoxin_Yukawa2001_reference" status="needs_review" stale="true" population="Japanese patients with heart failure and atrial fibrillation" measured-compound="digoxin" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="digoxin" model-id="Digoxin_Yukawa2001_reference" status="needs_review" stale="true" population="Japanese patients with heart failure and atrial fibrillation" measured-compound="digoxin" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment; no model was built for this record.  
 **Parameters:** 4 extracted.

@@ -22,8 +22,7 @@
 ## Citation
 Fukuda M et al., [Antibiotic ophthalmic solutions evalua…, Nippon Ganka Gakkai zasshi (2002)
 
-## Model component
-<dbs-pgx drug="erythromycin" model-id="Erythromycin_Fukuda2002v2_reference" status="rejected" stale="false" population="New Zealand White rabbits" measured-compound="erythromycin lactobionate" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="erythromycin" model-id="Erythromycin_Fukuda2002v2_reference" status="rejected" stale="false" population="New Zealand White rabbits" measured-compound="erythromycin lactobionate" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

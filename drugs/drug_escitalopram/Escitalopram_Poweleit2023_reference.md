@@ -31,8 +31,7 @@ The base model was simulated, not the covariate effects the record defines. Only
 Poweleit EA et al., Escitalopram and Sertraline Population…, Clinical pharmacokinetics (2023)
   ·  DOI: [10.1007/s40262-023-01294-8](https://doi.org/10.1007/s40262-023-01294-8)
 
-## Model component
-<dbs-pgx drug="escitalopram" model-id="Escitalopram_Poweleit2023_reference" status="extracted" stale="true" population="psychiatrically hospitalized pediatric patients aged 5-18 years" measured-compound="escitalopram" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="escitalopram" model-id="Escitalopram_Poweleit2023_reference" status="extracted" stale="true" population="psychiatrically hospitalized pediatric patients aged 5-18 years" measured-compound="escitalopram" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 3 extracted.

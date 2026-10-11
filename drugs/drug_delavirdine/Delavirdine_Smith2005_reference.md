@@ -28,8 +28,7 @@ The V(max) parameter carries a value of 1376 mg/day, but its label and meaning d
 Smith PF et al., Population pharmacokinetics of delavird…, Clinical pharmacokinetics (2005)
   ·  DOI: [10.2165/00003088-200544010-00004](https://doi.org/10.2165/00003088-200544010-00004)
 
-## Model component
-<dbs-pgx drug="delavirdine" model-id="Delavirdine_Smith2005_reference" status="rejected" stale="true" population="HIV-infected adults (ACTG 260/261)" measured-compound="delavirdine" parameterization="apparent" topology="manual_model_class"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="delavirdine" model-id="Delavirdine_Smith2005_reference" status="rejected" stale="true" population="HIV-infected adults (ACTG 260/261)" measured-compound="delavirdine" parameterization="apparent" topology="manual_model_class"></div>
 
 **Model structure:** nonlinear / manual; no model was built for this record.  
 **Parameters:** 5 extracted.

@@ -30,8 +30,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the val
 Suryawanshi A et al., Preclinical evaluation of cilnidipine n…, Annales pharmaceutiques fra… (2026)
   ·  DOI: [10.1016/j.pharma.2026.05.010](https://doi.org/10.1016/j.pharma.2026.05.010)
 
-## Model component
-<dbs-pgx drug="cilnidipine" model-id="Cilnidipine_Suryawanshi2026_reference" status="rejected" stale="false" population="male wistar rats" measured-compound="cilnidipine" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="cilnidipine" model-id="Cilnidipine_Suryawanshi2026_reference" status="rejected" stale="false" population="male wistar rats" measured-compound="cilnidipine" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 5 extracted.

@@ -28,8 +28,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on how the
 Chala A et al., Genetic and non-genetic factors influen…, CPT: pharmacometrics & syst… (2023)
   ·  DOI: [10.1002/psp4.12951](https://doi.org/10.1002/psp4.12951)
 
-## Model component
-<dbs-pgx drug="efavirenz" model-id="Efavirenz_Chala2023_reference" status="rejected" stale="true" population="HIV-1-infected children in Ethiopia" measured-compound="efavirenz" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="efavirenz" model-id="Efavirenz_Chala2023_reference" status="rejected" stale="true" population="HIV-1-infected children in Ethiopia" measured-compound="efavirenz" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 1 extracted.

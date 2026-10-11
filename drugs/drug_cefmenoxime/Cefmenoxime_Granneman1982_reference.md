@@ -20,8 +20,7 @@
 Granneman GR et al., Intramuscular and intravenous pharmacok…, Antimicrobial agents and ch… (1982)
   ·  DOI: [10.1128/AAC.21.1.141](https://doi.org/10.1128/AAC.21.1.141)
 
-## Model component
-<dbs-pgx drug="cefmenoxime" model-id="Cefmenoxime_Granneman1982_reference" status="rejected" stale="false" population="healthy subjects" measured-compound="cefmenoxime" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="cefmenoxime" model-id="Cefmenoxime_Granneman1982_reference" status="rejected" stale="false" population="healthy subjects" measured-compound="cefmenoxime" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

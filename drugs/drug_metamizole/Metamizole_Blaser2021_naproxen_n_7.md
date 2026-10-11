@@ -29,8 +29,7 @@ Every extracted parameter (kabs 0.538, V1/F 3.27 L, k12 0.185, k14 1.334, kel 0.
 Blaser LS et al., Comparative Effects of Metamizole (Dipy…, Frontiers in pharmacology (2021)
   ·  DOI: [10.3389/fphar.2021.620635](https://doi.org/10.3389/fphar.2021.620635)
 
-## Model component
-<dbs-pgx drug="Metamizole" model-id="Metamizole_Blaser2021_naproxen_n_7" status="" stale="true" population="salt-depleted healthy male volunteers" measured-compound="" parameterization="" topology=""></dbs-pgx>
+<div class="pk-model-meta" hidden drug="Metamizole" model-id="Metamizole_Blaser2021_naproxen_n_7" status="" stale="true" population="salt-depleted healthy male volunteers" measured-compound="" parameterization="" topology=""></div>
 
 **Model structure:** —; no model was built for this record.  
 **Parameters:** 0 extracted.

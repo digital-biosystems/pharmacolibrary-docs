@@ -20,8 +20,7 @@
 Lee YH et al., Efficiency of a New Mesh-Type Nebulizer…, Basic & clinical pharmacolo… (2016)
   ·  DOI: [10.1111/bcpt.12499](https://doi.org/10.1111/bcpt.12499)
 
-## Model component
-<dbs-pgx drug="ipratropium bromide" model-id="IpratropiumBromide_Lee2016_reference" status="rejected" stale="false" population="surgical patients under mechanical ventilation" measured-compound="ipratropium bromide" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="ipratropium bromide" model-id="IpratropiumBromide_Lee2016_reference" status="rejected" stale="false" population="surgical patients under mechanical ventilation" measured-compound="ipratropium bromide" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 3 extracted.

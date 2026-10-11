@@ -26,8 +26,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the val
 ## Citation
 Sponer G et al., Pharmacokinetic aspects of isosorbide-5…, The Journal of pharmacology… (1984)
 
-## Model component
-<dbs-pgx drug="isosorbide dinitrate" model-id="IsosorbideDinitrate_Sponer1984_reference" status="needs_review" stale="false" population="beagle dogs" measured-compound="isosorbide-5-mononitrate" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="isosorbide dinitrate" model-id="IsosorbideDinitrate_Sponer1984_reference" status="needs_review" stale="false" population="beagle dogs" measured-compound="isosorbide-5-mononitrate" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 3 extracted.

@@ -22,8 +22,7 @@
 Mehta R et al., Population Pharmacokinetic Analysis of…, Journal of clinical pharmac… (2018)
   ·  DOI: [10.1002/jcph.1253](https://doi.org/10.1002/jcph.1253)
 
-## Model component
-<dbs-pgx drug="Vilanterol" model-id="Vilanterol_Mehta2018_reference" status="needs_review" stale="false" population="adults with symptomatic COPD" measured-compound="vilanterol" parameterization="apparent_wrt_Fm" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="Vilanterol" model-id="Vilanterol_Mehta2018_reference" status="needs_review" stale="false" population="adults with symptomatic COPD" measured-compound="vilanterol" parameterization="apparent_wrt_Fm" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 1 extracted.

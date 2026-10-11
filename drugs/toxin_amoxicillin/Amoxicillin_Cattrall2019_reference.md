@@ -21,8 +21,7 @@
 Cattrall JWS; Asín-Prieto E; Freeman J; Trocóniz IF; Kirby A et al. (2019). European journal of clinical microbiology & infectious diseases : official publication of the European Society of Clinical Microbiology 38
   ·  DOI: [10.1007/s10096-019-03679-9](https://doi.org/10.1007/s10096-019-03679-9)
 
-## Model component
-<dbs-pgx drug="amoxicillin" model-id="Amoxicillin_Cattrall2019_reference" status="extracted" stale="true" population="" measured-compound="amoxicillin" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="amoxicillin" model-id="Amoxicillin_Cattrall2019_reference" status="extracted" stale="true" population="" measured-compound="amoxicillin" parameterization="mechanistic" topology="2C"></div>
 
 **Parameterization:** mechanistic.
 

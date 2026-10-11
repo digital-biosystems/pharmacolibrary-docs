@@ -27,8 +27,7 @@
 Karalis VD, An In Silico Approach toward the Approp…, Pharmaceuticals (Basel, Swi… (2023)
   ·  DOI: [10.3390/ph16050725](https://doi.org/10.3390/ph16050725)
 
-## Model component
-<dbs-pgx drug="amlodipine" model-id="Amlodipine_Karalis2023_reference" status="extracted" stale="true" population="virtual subjects" measured-compound="hydrochlorothiazide, donepezil, and amlodipine" parameterization="apparent" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="amlodipine" model-id="Amlodipine_Karalis2023_reference" status="extracted" stale="true" population="virtual subjects" measured-compound="hydrochlorothiazide, donepezil, and amlodipine" parameterization="apparent" topology="2C"></div>
 
 **Model structure:** 2-compartment, oral mammillary model — template `PK_2C_enteral`.  
 **Parameters:** 6 extracted.

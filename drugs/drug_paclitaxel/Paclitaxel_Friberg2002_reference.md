@@ -28,8 +28,7 @@ The paper reports no distribution volume and no clearance or elimination rate; i
 Friberg LE; Henningsson A; Maas H; Nguyen L; Karlsson MO et al. (2002). Journal of clinical oncology : official journal of the American Society of Clinical Oncology 20
   ·  DOI: [10.1200/JCO.2002.02.140](https://doi.org/10.1200/JCO.2002.02.140)
 
-## Model component
-<dbs-pgx drug="paclitaxel" model-id="Paclitaxel_Friberg2002_reference" status="rejected" stale="false" population="cancer patients" measured-compound="leukocytes, neutrophils" parameterization="mechanistic" topology="parent_metabolite"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="paclitaxel" model-id="Paclitaxel_Friberg2002_reference" status="rejected" stale="false" population="cancer patients" measured-compound="leukocytes, neutrophils" parameterization="mechanistic" topology="parent_metabolite"></div>
 
 **Model structure:** parent + metabolite; no model was built for this record.  
 **Parameters:** 2 extracted.

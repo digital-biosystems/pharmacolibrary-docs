@@ -21,8 +21,7 @@
 Šantavý P et al., Population Pharmacokinetics of Prophyla…, Antibiotics (Basel, Switzer… (2022)
   ·  DOI: [10.3390/antibiotics11111582](https://doi.org/10.3390/antibiotics11111582)
 
-## Model component
-<dbs-pgx drug="cefazolin" model-id="Cefazolin_antav2022_reference" status="needs_review" stale="false" population="adult patients undergoing cardiac surgery" measured-compound="cefazolin" parameterization="mechanistic" topology="3C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="cefazolin" model-id="Cefazolin_antav2022_reference" status="needs_review" stale="false" population="adult patients undergoing cardiac surgery" measured-compound="cefazolin" parameterization="mechanistic" topology="3C"></div>
 
 **Model structure:** 3-compartment; no model was built for this record.  
 **Parameters:** 5 extracted.

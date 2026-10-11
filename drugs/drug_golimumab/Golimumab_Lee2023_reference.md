@@ -21,8 +21,7 @@
 Lee JB et al., Population Pharmacokinetics and Exposur…, Journal of clinical pharmac… (2023)
   ·  DOI: [10.1002/jcph.2217](https://doi.org/10.1002/jcph.2217)
 
-## Model component
-<dbs-pgx drug="golimumab" model-id="Golimumab_Lee2023_reference" status="extracted" stale="false" population="children and young adults with type 1 diabetes" measured-compound="golimumab" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="golimumab" model-id="Golimumab_Lee2023_reference" status="extracted" stale="false" population="children and young adults with type 1 diabetes" measured-compound="golimumab" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 3 extracted.

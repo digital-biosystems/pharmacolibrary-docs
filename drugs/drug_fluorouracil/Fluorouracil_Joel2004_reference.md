@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Joel SP et al., Lack of pharmacokinetic interaction bet…, Clinical pharmacology and t… (2004)
   ·  DOI: [10.1016/j.clpt.2004.03.008](https://doi.org/10.1016/j.clpt.2004.03.008)
 
-## Model component
-<dbs-pgx drug="fluorouracil" model-id="Fluorouracil_Joel2004_reference" status="rejected" stale="true" population="patients with advanced/metastatic colorectal cancer" measured-compound="5-fluorouracil" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="fluorouracil" model-id="Fluorouracil_Joel2004_reference" status="rejected" stale="true" population="patients with advanced/metastatic colorectal cancer" measured-compound="5-fluorouracil" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

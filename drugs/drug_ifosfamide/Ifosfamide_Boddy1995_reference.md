@@ -21,8 +21,7 @@
 Boddy AV et al., The kinetics of the auto-induction of i…, Cancer chemotherapy and pha… (1995)
   ·  DOI: [10.1007/BF00685732](https://doi.org/10.1007/BF00685732)
 
-## Model component
-<dbs-pgx drug="ifosfamide" model-id="Ifosfamide_Boddy1995_reference" status="rejected" stale="false" population="paediatric oncology patients" measured-compound="ifosfamide" parameterization="mechanistic" topology="parent_metabolite"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="ifosfamide" model-id="Ifosfamide_Boddy1995_reference" status="rejected" stale="false" population="paediatric oncology patients" measured-compound="ifosfamide" parameterization="mechanistic" topology="parent_metabolite"></div>
 
 **Model structure:** parent + metabolite; no model was built for this record.  
 **Parameters:** 0 extracted.

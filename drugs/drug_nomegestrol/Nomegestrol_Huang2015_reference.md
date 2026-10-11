@@ -22,8 +22,7 @@
 Huang Q et al., Pharmacokinetics, tissue distribution,…, European journal of drug me… (2015)
   ·  DOI: [10.1007/s13318-014-0224-7](https://doi.org/10.1007/s13318-014-0224-7)
 
-## Model component
-<dbs-pgx drug="nomegestrol" model-id="Nomegestrol_Huang2015_reference" status="rejected" stale="false" population="female Sprague-Dawley rats" measured-compound="nomegestrol acetate" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="nomegestrol" model-id="Nomegestrol_Huang2015_reference" status="rejected" stale="false" population="female Sprague-Dawley rats" measured-compound="nomegestrol acetate" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 1 extracted.

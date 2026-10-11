@@ -21,8 +21,7 @@
 Du S et al., A Novel Empirical Autoinduction Model t…, CPT: pharmacometrics & syst… (2025)
   ·  DOI: [10.1002/psp4.70036](https://doi.org/10.1002/psp4.70036)
 
-## Model component
-<dbs-pgx drug="repotrectinib" model-id="Repotrectinib_Du2025_reference" status="extracted" stale="false" population="healthy volunteers and patients with advanced solid tumors harboring ALK, ROS1, or NTRK1-3 rearrangements" measured-compound="repotrectinib" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="repotrectinib" model-id="Repotrectinib_Du2025_reference" status="extracted" stale="false" population="healthy volunteers and patients with advanced solid tumors harboring ALK, ROS1, or NTRK1-3 rearrangements" measured-compound="repotrectinib" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment, IV mammillary model — template `PK_2C`.  
 **Parameters:** 7 extracted, plus 7 covariate effects.

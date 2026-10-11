@@ -29,8 +29,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Edwina AE et al., Population pharmacokinetics of edoxaban…, Journal of thrombosis and h… (2025)
   ·  DOI: [10.1016/j.jtha.2025.06.023](https://doi.org/10.1016/j.jtha.2025.06.023)
 
-## Model component
-<dbs-pgx drug="edoxaban" model-id="Edoxaban_Edwina2025_reference" status="rejected" stale="false" population="geriatric patients with atrial fibrillation" measured-compound="edoxaban" parameterization="mechanistic" topology="parent_metabolite"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="edoxaban" model-id="Edoxaban_Edwina2025_reference" status="rejected" stale="false" population="geriatric patients with atrial fibrillation" measured-compound="edoxaban" parameterization="mechanistic" topology="parent_metabolite"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 4 extracted.

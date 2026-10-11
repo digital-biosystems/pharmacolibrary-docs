@@ -22,8 +22,7 @@
 Lashev L et al., Species specific pharmacokinetics of ro…, Zentralblatt fur Veterinarm… (1995)
   ·  DOI: [10.1111/j.1439-0442.1995.tb00371.x](https://doi.org/10.1111/j.1439-0442.1995.tb00371.x)
 
-## Model component
-<dbs-pgx drug="rolitetracycline" model-id="Rolitetracycline_Lashev1995_reference" status="rejected" stale="false" population="sheep, pigs, rabbits, chickens and pigeons" measured-compound="rolitetracycline" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="rolitetracycline" model-id="Rolitetracycline_Lashev1995_reference" status="rejected" stale="false" population="sheep, pigs, rabbits, chickens and pigeons" measured-compound="rolitetracycline" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 1 extracted.

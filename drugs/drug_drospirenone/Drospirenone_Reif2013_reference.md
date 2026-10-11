@@ -20,8 +20,7 @@
 Reif S et al., Characterisation of the pharmacokinetic…, The journal of family plann… (2013)
   ·  DOI: [10.1136/jfprhc-2012-100397](https://doi.org/10.1136/jfprhc-2012-100397)
 
-## Model component
-<dbs-pgx drug="drospirenone" model-id="Drospirenone_Reif2013_reference" status="extracted" stale="false" population="healthy young women" measured-compound="drospirenone and ethinylestradiol" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="drospirenone" model-id="Drospirenone_Reif2013_reference" status="extracted" stale="false" population="healthy young women" measured-compound="drospirenone and ethinylestradiol" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 10 extracted.

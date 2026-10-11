@@ -31,8 +31,7 @@ Independently confirmed by `gpt-oss:120b`.
 Medina-Aymerich L et al., Population Pharmacokinetics of Alfentan…, Journal of clinical pharmac… (2025)
   ·  DOI: [10.1002/jcph.70044](https://doi.org/10.1002/jcph.70044)
 
-## Model component
-<dbs-pgx drug="alfentanil" model-id="Alfentanil_MedinaAymerich2025_reference" status="rejected" stale="true" population="children" measured-compound="alfentanil" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="alfentanil" model-id="Alfentanil_MedinaAymerich2025_reference" status="rejected" stale="true" population="children" measured-compound="alfentanil" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

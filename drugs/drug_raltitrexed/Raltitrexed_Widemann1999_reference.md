@@ -23,8 +23,7 @@
 Widemann BC et al., The plasma pharmacokinetics and cerebro…, Cancer chemotherapy and pha… (1999)
   ·  DOI: [10.1007/s002800051116](https://doi.org/10.1007/s002800051116)
 
-## Model component
-<dbs-pgx drug="raltitrexed" model-id="Raltitrexed_Widemann1999_reference" status="rejected" stale="false" population="nonhuman primates" measured-compound="raltitrexed" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="raltitrexed" model-id="Raltitrexed_Widemann1999_reference" status="rejected" stale="false" population="nonhuman primates" measured-compound="raltitrexed" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

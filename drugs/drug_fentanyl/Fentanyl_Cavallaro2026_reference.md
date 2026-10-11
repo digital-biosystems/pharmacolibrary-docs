@@ -29,8 +29,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on paramet
 Cavallaro G et al., Pharmacological therapy of neonatal ana…, Frontiers in pediatrics (2026)
   ·  DOI: [10.3389/fped.2026.1757704](https://doi.org/10.3389/fped.2026.1757704)
 
-## Model component
-<dbs-pgx drug="fentanyl" model-id="Fentanyl_Cavallaro2026_reference" status="extracted" stale="true" population="" measured-compound="fentanyl" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="fentanyl" model-id="Fentanyl_Cavallaro2026_reference" status="extracted" stale="true" population="" measured-compound="fentanyl" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameters:** 2 extracted.

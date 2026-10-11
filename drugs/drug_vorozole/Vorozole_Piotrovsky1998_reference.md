@@ -21,8 +21,7 @@
 Piotrovsky VK et al., Effects of demographic variables on vor…, Cancer chemotherapy and pha… (1998)
   ·  DOI: [10.1007/s002800050808](https://doi.org/10.1007/s002800050808)
 
-## Model component
-<dbs-pgx drug="vorozole" model-id="Vorozole_Piotrovsky1998_reference" status="extracted" stale="false" population="healthy volunteers and breast cancer patients" measured-compound="vorozole" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="vorozole" model-id="Vorozole_Piotrovsky1998_reference" status="extracted" stale="false" population="healthy volunteers and breast cancer patients" measured-compound="vorozole" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment, IV mammillary model — template `PK_2C`.  
 **Parameters:** 4 extracted.

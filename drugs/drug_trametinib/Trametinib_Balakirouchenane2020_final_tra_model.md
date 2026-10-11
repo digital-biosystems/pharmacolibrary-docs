@@ -23,8 +23,7 @@
 Balakirouchenane D et al., Population Pharmacokinetics/Pharmacodyn…, Cancers (2020)
   ·  DOI: [10.3390/cancers12040931](https://doi.org/10.3390/cancers12040931)
 
-## Model component
-<dbs-pgx drug="trametinib" model-id="Trametinib_Balakirouchenane2020_final_tra_model" status="extracted" stale="false" population="patients with BRAF-mutated metastatic solid tumors" measured-compound="trametinib" parameterization="apparent" topology="parent_metabolite"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="trametinib" model-id="Trametinib_Balakirouchenane2020_final_tra_model" status="extracted" stale="false" population="patients with BRAF-mutated metastatic solid tumors" measured-compound="trametinib" parameterization="apparent" topology="parent_metabolite"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 6 extracted.

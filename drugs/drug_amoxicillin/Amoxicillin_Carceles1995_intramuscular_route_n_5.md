@@ -33,8 +33,7 @@ The clavulanic acid record lists V2, the peripheral volume of distribution, with
 Carceles CM et al., Pharmacokinetics of amoxicillin-clavula…, Avian pathology : journal o… (1995)
   ·  DOI: [10.1080/03079459508419104](https://doi.org/10.1080/03079459508419104)
 
-## Model component
-<dbs-pgx drug="amoxicillin" model-id="Amoxicillin_Carceles1995_intramuscular_route_n_5" status="rejected" stale="true" population="turkeys and chickens" measured-compound="amoxicillin and clavulanic acid" parameterization="apparent" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="amoxicillin" model-id="Amoxicillin_Carceles1995_intramuscular_route_n_5" status="rejected" stale="true" population="turkeys and chickens" measured-compound="amoxicillin and clavulanic acid" parameterization="apparent" topology="2C"></div>
 
 **Model structure:** 2-compartment; no model was built for this record.  
 **Parameters:** 9 extracted.

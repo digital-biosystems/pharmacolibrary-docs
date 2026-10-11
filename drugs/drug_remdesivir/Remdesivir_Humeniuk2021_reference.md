@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on paramet
 Humeniuk R et al., Pharmacokinetic, Pharmacodynamic, and D…, Clinical pharmacokinetics (2021)
   ·  DOI: [10.1007/s40262-021-00984-5](https://doi.org/10.1007/s40262-021-00984-5)
 
-## Model component
-<dbs-pgx drug="remdesivir" model-id="Remdesivir_Humeniuk2021_reference" status="needs_review" stale="false" population="healthy adults" measured-compound="remdesivir" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="remdesivir" model-id="Remdesivir_Humeniuk2021_reference" status="needs_review" stale="false" population="healthy adults" measured-compound="remdesivir" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 2 extracted.

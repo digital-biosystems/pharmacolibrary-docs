@@ -32,8 +32,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on bioavai
 Lainesse C et al., Pharmacokinetics of clomipramine and de…, Journal of veterinary pharm… (2006)
   ·  DOI: [10.1111/j.1365-2885.2006.00742.x](https://doi.org/10.1111/j.1365-2885.2006.00742.x)
 
-## Model component
-<dbs-pgx drug="clomipramine" model-id="Clomipramine_Lainesse2006_reference" status="needs_review" stale="true" population="adult spayed cats" measured-compound="clomipramine" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="clomipramine" model-id="Clomipramine_Lainesse2006_reference" status="needs_review" stale="true" population="adult spayed cats" measured-compound="clomipramine" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 9 extracted.

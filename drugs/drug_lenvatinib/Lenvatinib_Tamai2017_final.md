@@ -20,8 +20,7 @@
 Tamai T et al., Dose Finding of Lenvatinib in Subjects…, Journal of clinical pharmac… (2017)
   ·  DOI: [10.1002/jcph.917](https://doi.org/10.1002/jcph.917)
 
-## Model component
-<dbs-pgx drug="lenvatinib" model-id="Lenvatinib_Tamai2017_final" status="rejected" stale="false" population="healthy subjects and subjects with cancer, including HCC" measured-compound="lenvatinib" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="lenvatinib" model-id="Lenvatinib_Tamai2017_final" status="rejected" stale="false" population="healthy subjects and subjects with cancer, including HCC" measured-compound="lenvatinib" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 3 extracted, plus 3 covariate effects.

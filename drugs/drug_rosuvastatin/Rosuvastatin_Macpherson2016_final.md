@@ -33,8 +33,7 @@ Independently confirmed by `gpt-oss:120b`.
 Macpherson M et al., Population pharmacokinetics of rosuvast…, European journal of clinica… (2016)
   ·  DOI: [10.1007/s00228-015-1946-4](https://doi.org/10.1007/s00228-015-1946-4)
 
-## Model component
-<dbs-pgx drug="rosuvastatin" model-id="Rosuvastatin_Macpherson2016_final" status="extracted" stale="true" population="pediatric patients with heterozygous familial hypercholesterolemia" measured-compound="rosuvastatin" parameterization="apparent" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="rosuvastatin" model-id="Rosuvastatin_Macpherson2016_final" status="extracted" stale="true" population="pediatric patients with heterozygous familial hypercholesterolemia" measured-compound="rosuvastatin" parameterization="apparent" topology="2C"></div>
 
 **Model structure:** 2-compartment, oral mammillary model — template `PK_2C_enteral`.  
 **Parameters:** 5 extracted.

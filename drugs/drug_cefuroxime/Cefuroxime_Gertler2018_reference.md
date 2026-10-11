@@ -21,8 +21,7 @@
 Gertler R et al., Pharmacokinetics of cefuroxime in infan…, British journal of clinical… (2018)
   ·  DOI: [10.1111/bcp.13632](https://doi.org/10.1111/bcp.13632)
 
-## Model component
-<dbs-pgx drug="cefuroxime" model-id="Cefuroxime_Gertler2018_reference" status="extracted" stale="false" population="infants and neonates undergoing cardiac surgery" measured-compound="cefuroxime" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="cefuroxime" model-id="Cefuroxime_Gertler2018_reference" status="extracted" stale="false" population="infants and neonates undergoing cardiac surgery" measured-compound="cefuroxime" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment, oral mammillary model — template `PK_2C_enteral`.  
 **Parameters:** 6 extracted.

@@ -21,8 +21,7 @@
 Xiang Q et al., Population Pharmacokinetic/Pharmacodyna…, Drug design, development an… (2025)
   ·  DOI: [10.2147/DDDT.S542786](https://doi.org/10.2147/DDDT.S542786)
 
-## Model component
-<dbs-pgx drug="glucose" model-id="Glucose_Xiang2025_reference" status="extracted" stale="false" population="" measured-compound="glucose" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="glucose" model-id="Glucose_Xiang2025_reference" status="extracted" stale="false" population="" measured-compound="glucose" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 3 extracted.

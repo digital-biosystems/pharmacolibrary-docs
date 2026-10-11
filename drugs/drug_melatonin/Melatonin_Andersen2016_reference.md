@@ -21,8 +21,7 @@
 Andersen LP et al., Pharmacokinetics of oral and intravenou…, BMC pharmacology & toxicolo… (2016)
   ·  DOI: [10.1186/s40360-016-0052-2](https://doi.org/10.1186/s40360-016-0052-2)
 
-## Model component
-<dbs-pgx drug="melatonin" model-id="Melatonin_Andersen2016_reference" status="needs_review" stale="false" population="healthy male volunteers" measured-compound="melatonin" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="melatonin" model-id="Melatonin_Andersen2016_reference" status="needs_review" stale="false" population="healthy male volunteers" measured-compound="melatonin" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 4 extracted.

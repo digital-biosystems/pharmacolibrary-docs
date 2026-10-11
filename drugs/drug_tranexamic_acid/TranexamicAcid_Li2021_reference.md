@@ -29,8 +29,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Li S et al., Population pharmacokinetics and pharmac…, British journal of clinical… (2021)
   ·  DOI: [10.1111/bcp.14767](https://doi.org/10.1111/bcp.14767)
 
-## Model component
-<dbs-pgx drug="tranexamic acid" model-id="TranexamicAcid_Li2021_reference" status="curated_candidate" stale="false" population="pregnant women undergoing caesarean delivery" measured-compound="tranexamic acid" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="tranexamic acid" model-id="TranexamicAcid_Li2021_reference" status="curated_candidate" stale="false" population="pregnant women undergoing caesarean delivery" measured-compound="tranexamic acid" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment, IV mammillary model — template `PK_2C`.  
 **Parameters:** 4 extracted.

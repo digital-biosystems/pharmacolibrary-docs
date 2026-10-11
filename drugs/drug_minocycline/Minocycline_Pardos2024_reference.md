@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Pardos SL et al., Population pharmacokinetics/pharmacodyn…, The Journal of antimicrobia… (2024)
   ·  DOI: [10.1093/jac/dkae363](https://doi.org/10.1093/jac/dkae363)
 
-## Model component
-<dbs-pgx drug="minocycline" model-id="Minocycline_Pardos2024_reference" status="extracted" stale="true" population="patients with complicated skin and soft tissue infections caused by MRSA" measured-compound="minocycline" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="minocycline" model-id="Minocycline_Pardos2024_reference" status="extracted" stale="true" population="patients with complicated skin and soft tissue infections caused by MRSA" measured-compound="minocycline" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameters:** 2 extracted.

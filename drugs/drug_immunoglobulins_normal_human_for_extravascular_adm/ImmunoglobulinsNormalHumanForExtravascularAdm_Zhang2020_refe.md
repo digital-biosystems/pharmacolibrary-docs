@@ -23,8 +23,7 @@
 Zhang Y et al., Population pharmacokinetic analysis of…, International immunopharmac… (2020)
   ·  DOI: [10.1016/j.intimp.2019.106005](https://doi.org/10.1016/j.intimp.2019.106005)
 
-## Model component
-<dbs-pgx drug="immunoglobulins, normal human, for extravascular adm." model-id="ImmunoglobulinsNormalHumanForExtravascularAdm_Zhang2020_refe" status="extracted" stale="false" population="patients with primary immunodeficiency" measured-compound="serum IgG" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="immunoglobulins, normal human, for extravascular adm." model-id="ImmunoglobulinsNormalHumanForExtravascularAdm_Zhang2020_refe" status="extracted" stale="false" population="patients with primary immunodeficiency" measured-compound="serum IgG" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment, IV mammillary model — template `PK_2C`.  
 **Parameters:** 4 extracted.

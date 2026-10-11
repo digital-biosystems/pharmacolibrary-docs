@@ -22,8 +22,7 @@
 Pfister M et al., Modeling of transfer kinetics at the se…, Antimicrobial agents and ch… (2003)
   ·  DOI: [10.1128/AAC.47.1.138-143.2003](https://doi.org/10.1128/AAC.47.1.138-143.2003)
 
-## Model component
-<dbs-pgx drug="grepafloxacin" model-id="Grepafloxacin_Pfister2003_reference" status="rejected" stale="false" population="rabbits with experimental pneumococcal meningitis" measured-compound="grepafloxacin" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="grepafloxacin" model-id="Grepafloxacin_Pfister2003_reference" status="rejected" stale="false" population="rabbits with experimental pneumococcal meningitis" measured-compound="grepafloxacin" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 1 extracted.

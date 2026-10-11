@@ -22,8 +22,7 @@
 Beier E et al., Oral pharmacokinetics of fenbendazole i…, Small ruminant research : t… (2000)
   ·  DOI: [10.1016/s0921-4488(00)00124-3](https://doi.org/10.1016/s0921-4488(00)00124-3)
 
-## Model component
-<dbs-pgx drug="fenbendazole" model-id="Fenbendazole_Beier2000_reference" status="needs_review" stale="false" population="llamas" measured-compound="fenbendazole" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="fenbendazole" model-id="Fenbendazole_Beier2000_reference" status="needs_review" stale="false" population="llamas" measured-compound="fenbendazole" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 2 extracted.

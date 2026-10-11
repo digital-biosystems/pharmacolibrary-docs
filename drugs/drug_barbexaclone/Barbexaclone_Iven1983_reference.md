@@ -32,8 +32,7 @@ The model links barbexaclone to phenobarbital and to propylhexedrine by hydrolys
 Iven H et al., Pharmacokinetics of phenobarbital and p…, Naunyn-Schmiedeberg's archi… (1983)
   ·  DOI: [10.1007/BF00497022](https://doi.org/10.1007/BF00497022)
 
-## Model component
-<dbs-pgx drug="barbexaclone" model-id="Barbexaclone_Iven1983_reference" status="rejected" stale="true" population="mice" measured-compound="phenobarbital" parameterization="mechanistic" topology="general_linear"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="barbexaclone" model-id="Barbexaclone_Iven1983_reference" status="rejected" stale="true" population="mice" measured-compound="phenobarbital" parameterization="mechanistic" topology="general_linear"></div>
 
 **Model structure:** general linear; no model was built for this record.  
 **Parameters:** 6 extracted.

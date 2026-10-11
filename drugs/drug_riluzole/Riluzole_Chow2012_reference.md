@@ -21,8 +21,7 @@
 Chow DS et al., Pharmacology of riluzole in acute spina…, Journal of neurosurgery. Sp… (2012)
   ·  DOI: [10.3171/2012.5.AOSPINE12112](https://doi.org/10.3171/2012.5.AOSPINE12112)
 
-## Model component
-<dbs-pgx drug="riluzole" model-id="Riluzole_Chow2012_reference" status="rejected" stale="false" population="adults with acute spinal cord injury" measured-compound="riluzole" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="riluzole" model-id="Riluzole_Chow2012_reference" status="rejected" stale="false" population="adults with acute spinal cord injury" measured-compound="riluzole" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 7 extracted.

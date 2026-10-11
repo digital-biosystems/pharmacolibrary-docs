@@ -32,8 +32,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Benet LZ, Safety and pharmacokinetics: colloidal…, Scandinavian journal of gas… (1991)
   ·  DOI: [10.3109/00365529109093217](https://doi.org/10.3109/00365529109093217)
 
-## Model component
-<dbs-pgx drug="bismuth subcitrate" model-id="BismuthSubcitrate_Benet1991_reference" status="rejected" stale="true" population="adults" measured-compound="bismuth" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="bismuth subcitrate" model-id="BismuthSubcitrate_Benet1991_reference" status="rejected" stale="true" population="adults" measured-compound="bismuth" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

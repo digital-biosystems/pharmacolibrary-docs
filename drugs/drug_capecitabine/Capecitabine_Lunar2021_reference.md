@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on `parame
 Lunar N et al., Population pharmacokinetic and pharmaco…, Cancer chemotherapy and pha… (2021)
   ·  DOI: [10.1007/s00280-020-04208-8](https://doi.org/10.1007/s00280-020-04208-8)
 
-## Model component
-<dbs-pgx drug="capecitabine" model-id="Capecitabine_Lunar2021_reference" status="" stale="true" population="patients with metastatic breast cancer" measured-compound="" parameterization="" topology=""></dbs-pgx>
+<div class="pk-model-meta" hidden drug="capecitabine" model-id="Capecitabine_Lunar2021_reference" status="" stale="true" population="patients with metastatic breast cancer" measured-compound="" parameterization="" topology=""></div>
 
 **Model structure:** —; no model was built for this record.  
 **Parameters:** 0 extracted.

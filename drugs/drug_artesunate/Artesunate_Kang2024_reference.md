@@ -23,8 +23,7 @@
 Kang DW et al., Inter-Species Pharmacokinetic Modeling…, International journal of mo… (2024)
   ·  DOI: [10.3390/ijms25136998](https://doi.org/10.3390/ijms25136998)
 
-## Model component
-<dbs-pgx drug="artesunate" model-id="Artesunate_Kang2024_reference" status="rejected" stale="false" population="hamsters, rats, and dogs (preclinical PK for allometric scaling)" measured-compound="artesunate" parameterization="apparent" topology="parent_metabolite"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="artesunate" model-id="Artesunate_Kang2024_reference" status="rejected" stale="false" population="hamsters, rats, and dogs (preclinical PK for allometric scaling)" measured-compound="artesunate" parameterization="apparent" topology="parent_metabolite"></div>
 
 **Model structure:** parent + metabolite; no model was built for this record.  
 **Parameters:** 9 extracted.

@@ -24,8 +24,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on `parame
 Lo A et al., Population Pharmacokinetics of Revefena…, Clinical pharmacokinetics (2021)
   ·  DOI: [10.1007/s40262-020-00938-3](https://doi.org/10.1007/s40262-020-00938-3)
 
-## Model component
-<dbs-pgx drug="revefenacin" model-id="Revefenacin_Lo2021_reference" status="rejected" stale="false" population="patients with chronic obstructive pulmonary disease" measured-compound="revefenacin" parameterization="apparent" topology="parent_metabolite"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="revefenacin" model-id="Revefenacin_Lo2021_reference" status="rejected" stale="false" population="patients with chronic obstructive pulmonary disease" measured-compound="revefenacin" parameterization="apparent" topology="parent_metabolite"></div>
 
 **Model structure:** parent + metabolite; no model was built for this record.  
 **Parameters:** 11 extracted, plus 1 covariate effect.

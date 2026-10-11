@@ -21,8 +21,7 @@
 Kerbusch T et al., Evaluation of the autoinduction of ifos…, British journal of clinical… (2000)
   ·  DOI: [10.1046/j.1365-2125.2000.00217.x](https://doi.org/10.1046/j.1365-2125.2000.00217.x)
 
-## Model component
-<dbs-pgx drug="ifosfamide" model-id="Ifosfamide_Kerbusch2000_reference" status="rejected" stale="false" population="patients with soft tissue sarcoma" measured-compound="ifosfamide" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="ifosfamide" model-id="Ifosfamide_Kerbusch2000_reference" status="rejected" stale="false" population="patients with soft tissue sarcoma" measured-compound="ifosfamide" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

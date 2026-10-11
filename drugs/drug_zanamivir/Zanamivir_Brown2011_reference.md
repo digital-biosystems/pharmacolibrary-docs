@@ -23,8 +23,7 @@
 Brown AN et al., Effect of half-life on the pharmacodyna…, Antimicrobial agents and ch… (2011)
   ·  DOI: [10.1128/AAC.01629-10](https://doi.org/10.1128/AAC.01629-10)
 
-## Model component
-<dbs-pgx drug="zanamivir" model-id="Zanamivir_Brown2011_reference" status="needs_review" stale="false" population="hollow-fiber infection model system" measured-compound="zanamivir" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="zanamivir" model-id="Zanamivir_Brown2011_reference" status="needs_review" stale="false" population="hollow-fiber infection model system" measured-compound="zanamivir" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 3 extracted.

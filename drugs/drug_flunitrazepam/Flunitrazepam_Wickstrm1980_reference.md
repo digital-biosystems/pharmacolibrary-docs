@@ -21,8 +21,7 @@
 Wickstrøm E et al., Pharmacokinetic and clinical observatio…, European journal of clinica… (1980)
   ·  DOI: [10.1007/BF00561899](https://doi.org/10.1007/BF00561899)
 
-## Model component
-<dbs-pgx drug="flunitrazepam" model-id="Flunitrazepam_Wickstrm1980_reference" status="rejected" stale="false" population="insomnia patients" measured-compound="flunitrazepam" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="flunitrazepam" model-id="Flunitrazepam_Wickstrm1980_reference" status="rejected" stale="false" population="insomnia patients" measured-compound="flunitrazepam" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

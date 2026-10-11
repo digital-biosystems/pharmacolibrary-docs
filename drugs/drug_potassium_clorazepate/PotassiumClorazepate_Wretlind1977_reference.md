@@ -22,8 +22,7 @@
 ## Citation
 Wretlind M et al., Disposition of three benzodiazepines af…, Acta pharmacologica et toxi… (1977)
 
-## Model component
-<dbs-pgx drug="potassium clorazepate" model-id="PotassiumClorazepate_Wretlind1977_reference" status="rejected" stale="false" population="healthy volunteers" measured-compound="N-desmethyldiazepam" parameterization="mechanistic" topology="general_linear"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="potassium clorazepate" model-id="PotassiumClorazepate_Wretlind1977_reference" status="rejected" stale="false" population="healthy volunteers" measured-compound="N-desmethyldiazepam" parameterization="mechanistic" topology="general_linear"></div>
 
 **Model structure:** general linear; no model was built for this record.  
 **Parameters:** 0 extracted.

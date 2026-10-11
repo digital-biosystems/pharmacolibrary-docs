@@ -21,8 +21,7 @@
 Onita T et al., Population Pharmacokinetic Analysis and…, Journal of the Pediatric In… (2025)
   ·  DOI: [10.1093/jpids/piaf043](https://doi.org/10.1093/jpids/piaf043)
 
-## Model component
-<dbs-pgx drug="sulbactam" model-id="Sulbactam_Onita2025_reference" status="extracted" stale="false" population="" measured-compound="sulbactam" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="sulbactam" model-id="Sulbactam_Onita2025_reference" status="extracted" stale="false" population="" measured-compound="sulbactam" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameters:** 2 extracted.

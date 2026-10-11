@@ -21,8 +21,7 @@
 Westra N et al., Systematic Evaluation of Osimertinib Po…, European journal of drug me… (2024)
   ·  DOI: [10.1007/s13318-024-00904-5](https://doi.org/10.1007/s13318-024-00904-5)
 
-## Model component
-<dbs-pgx drug="osimertinib" model-id="Osimertinib_Westra2024_reference" status="rejected" stale="false" population="Dutch adults with non-small cell lung cancer and low osimertinib exposure" measured-compound="osimertinib" parameterization="mechanistic" topology="general_linear"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="osimertinib" model-id="Osimertinib_Westra2024_reference" status="rejected" stale="false" population="Dutch adults with non-small cell lung cancer and low osimertinib exposure" measured-compound="osimertinib" parameterization="mechanistic" topology="general_linear"></div>
 
 **Model structure:** general linear; no model was built for this record.  
 **Parameters:** 0 extracted.

@@ -29,8 +29,7 @@ The paper reports no distribution volume and no clearance or elimination rate; i
 Tatsunami S et al., Determination of pharmacokinetic parame…, European journal of drug me… (2001)
   ·  DOI: [10.1007/BF03190387](https://doi.org/10.1007/BF03190387)
 
-## Model component
-<dbs-pgx drug="stavudine" model-id="Stavudine_Tatsunami2001_reference" status="rejected" stale="true" population="Japanese HIV-1 infected adults (asymptomatic carriers)" measured-compound="stavudine" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="stavudine" model-id="Stavudine_Tatsunami2001_reference" status="rejected" stale="true" population="Japanese HIV-1 infected adults (asymptomatic carriers)" measured-compound="stavudine" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 6 extracted.

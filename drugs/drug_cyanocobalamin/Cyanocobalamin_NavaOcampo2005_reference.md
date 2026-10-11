@@ -32,8 +32,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the val
 Nava-Ocampo AA et al., Pharmacokinetics of high doses of cyano…, Clinical and experimental p… (2005)
   ·  DOI: [10.1111/j.1440-1681.2005.04145.x](https://doi.org/10.1111/j.1440-1681.2005.04145.x)
 
-## Model component
-<dbs-pgx drug="cyanocobalamin" model-id="Cyanocobalamin_NavaOcampo2005_reference" status="rejected" stale="true" population="rats" measured-compound="cyanocobalamin" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="cyanocobalamin" model-id="Cyanocobalamin_NavaOcampo2005_reference" status="rejected" stale="true" population="rats" measured-compound="cyanocobalamin" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

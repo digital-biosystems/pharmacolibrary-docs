@@ -21,8 +21,7 @@
 Velev M et al., Association between Olaparib Exposure a…, Pharmaceuticals (Basel, Swi… (2021)
   ·  DOI: [10.3390/ph14080804](https://doi.org/10.3390/ph14080804)
 
-## Model component
-<dbs-pgx drug="olaparib" model-id="Olaparib_Velev2021_reference" status="extracted" stale="false" population="BRCA-mutated ovarian cancer patients" measured-compound="olaparib" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="olaparib" model-id="Olaparib_Velev2021_reference" status="extracted" stale="false" population="BRCA-mutated ovarian cancer patients" measured-compound="olaparib" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment, oral mammillary model — template `PK_2C_enteral`.  
 **Parameters:** 7 extracted.

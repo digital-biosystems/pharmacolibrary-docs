@@ -29,8 +29,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 ## Citation
 Arigoni R et al., Pharmacokinetics of tiropramide after s…, Arzneimittel-Forschung (1986)
 
-## Model component
-<dbs-pgx drug="tiropramide" model-id="Tiropramide_Arigoni1986_reference" status="extracted" stale="true" population="healthy volunteers" measured-compound="tiropramide" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="tiropramide" model-id="Tiropramide_Arigoni1986_reference" status="extracted" stale="true" population="healthy volunteers" measured-compound="tiropramide" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameters:** 5 extracted.

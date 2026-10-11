@@ -25,8 +25,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the val
 Kornhuber J et al., Pharmacokinetic characterization of ama…, Therapeutic drug monitoring (2006)
   ·  DOI: [10.1097/01.ftd.0000245390.48552.04](https://doi.org/10.1097/01.ftd.0000245390.48552.04)
 
-## Model component
-<dbs-pgx drug="amantadine" model-id="Amantadine_Kornhuber2006_reference" status="needs_review" stale="false" population="patients with brain tissue samples" measured-compound="amantadine" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="amantadine" model-id="Amantadine_Kornhuber2006_reference" status="needs_review" stale="false" population="patients with brain tissue samples" measured-compound="amantadine" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 4 extracted.

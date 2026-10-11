@@ -21,8 +21,7 @@
 Zhou Y et al., Combined PK/PD Index May Be a More Appr…, Antibiotics (Basel, Switzer… (2022)
   ·  DOI: [10.3390/antibiotics11050703](https://doi.org/10.3390/antibiotics11050703)
 
-## Model component
-<dbs-pgx drug="sulbactam" model-id="Sulbactam_Zhou2022_reference" status="extracted" stale="false" population="adults with hospital-acquired or ventilator-associated pneumonia caused by Acinetobacter baumannii" measured-compound="cefoperazone/sulbactam" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="sulbactam" model-id="Sulbactam_Zhou2022_reference" status="extracted" stale="false" population="adults with hospital-acquired or ventilator-associated pneumonia caused by Acinetobacter baumannii" measured-compound="cefoperazone/sulbactam" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment, oral mammillary model — template `PK_2C_enteral`.  
 **Parameters:** 5 extracted.

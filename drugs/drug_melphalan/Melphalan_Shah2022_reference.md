@@ -29,8 +29,7 @@ The model was built, but melphalan's clearance had no value, so a library placeh
 Shah GL et al., Population Pharmacokinetics of Melphala…, Clinical pharmacokinetics (2022)
   ·  DOI: [10.1007/s40262-021-01093-z](https://doi.org/10.1007/s40262-021-01093-z)
 
-## Model component
-<dbs-pgx drug="melphalan" model-id="Melphalan_Shah2022_reference" status="needs_review" stale="true" population="adults with autologous and allogeneic hematopoietic cell transplantation" measured-compound="melphalan" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="melphalan" model-id="Melphalan_Shah2022_reference" status="needs_review" stale="true" population="adults with autologous and allogeneic hematopoietic cell transplantation" measured-compound="melphalan" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 1 extracted.

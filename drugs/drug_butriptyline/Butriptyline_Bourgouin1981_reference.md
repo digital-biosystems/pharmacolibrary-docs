@@ -22,8 +22,7 @@
 Bourgouin J et al., Butriptyline: human pharmacokinetics an…, Biopharmaceutics & drug dis… (1981)
   ·  DOI: [10.1002/bdd.2510020204](https://doi.org/10.1002/bdd.2510020204)
 
-## Model component
-<dbs-pgx drug="butriptyline" model-id="Butriptyline_Bourgouin1981_reference" status="rejected" stale="false" population="healthy volunteers" measured-compound="butriptyline" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="butriptyline" model-id="Butriptyline_Bourgouin1981_reference" status="rejected" stale="false" population="healthy volunteers" measured-compound="butriptyline" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 3 extracted.

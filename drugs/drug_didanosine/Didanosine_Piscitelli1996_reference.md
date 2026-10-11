@@ -21,8 +21,7 @@
 Piscitelli SC et al., Effects of cytokines on antiviral pharm…, Antimicrobial agents and ch… (1996)
   ·  DOI: [10.1128/AAC.40.1.161](https://doi.org/10.1128/AAC.40.1.161)
 
-## Model component
-<dbs-pgx drug="didanosine" model-id="Didanosine_Piscitelli1996_reference" status="needs_review" stale="false" population="HIV-infected patients" measured-compound="didanosine" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="didanosine" model-id="Didanosine_Piscitelli1996_reference" status="needs_review" stale="false" population="HIV-infected patients" measured-compound="didanosine" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 3 extracted.

@@ -29,8 +29,7 @@ Independently confirmed by `gpt-oss:120b`.
 Al-Zubaydi F et al., Development of a Population Pharmacokin…, Pharmaceutics (2024)
   ·  DOI: [10.3390/pharmaceutics16121514](https://doi.org/10.3390/pharmaceutics16121514)
 
-## Model component
-<dbs-pgx drug="gabapentin" model-id="Gabapentin_AlZubaydi2024_reference" status="rejected" stale="true" population="hospitalized adults" measured-compound="gabapentin" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="gabapentin" model-id="Gabapentin_AlZubaydi2024_reference" status="rejected" stale="true" population="hospitalized adults" measured-compound="gabapentin" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 4 extracted.

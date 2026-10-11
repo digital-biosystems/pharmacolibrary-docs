@@ -21,8 +21,7 @@
 Scala M et al., A Pharmacokinetics, Efficacy, and Safet…, Investigative radiology (2018)
   ·  DOI: [10.1097/rli.0000000000000412](https://doi.org/10.1097/rli.0000000000000412)
 
-## Model component
-<dbs-pgx drug="tafamidis" model-id="Tafamidis_Scala2018_reference" status="rejected" stale="false" population="" measured-compound="tafamidis" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="tafamidis" model-id="Tafamidis_Scala2018_reference" status="rejected" stale="false" population="" measured-compound="tafamidis" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment; no model was built for this record.  
 **Parameters:** 3 extracted.

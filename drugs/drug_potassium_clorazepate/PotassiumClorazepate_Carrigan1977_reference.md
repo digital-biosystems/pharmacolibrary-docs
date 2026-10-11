@@ -23,8 +23,7 @@
 Carrigan PJ et al., Steady-state bioavailability of two clo…, Journal of clinical pharmac… (1977)
   ·  DOI: [10.1002/j.1552-4604.1977.tb04582.x](https://doi.org/10.1002/j.1552-4604.1977.tb04582.x)
 
-## Model component
-<dbs-pgx drug="potassium clorazepate" model-id="PotassiumClorazepate_Carrigan1977_reference" status="rejected" stale="false" population="healthy adults" measured-compound="nordiazepam" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="potassium clorazepate" model-id="PotassiumClorazepate_Carrigan1977_reference" status="rejected" stale="false" population="healthy adults" measured-compound="nordiazepam" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 3 extracted.

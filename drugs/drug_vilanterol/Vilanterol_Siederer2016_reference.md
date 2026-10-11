@@ -20,8 +20,7 @@
 Siederer S et al., Population Pharmacokinetics of Inhaled…, European journal of drug me… (2016)
   ·  DOI: [10.1007/s13318-015-0303-4](https://doi.org/10.1007/s13318-015-0303-4)
 
-## Model component
-<dbs-pgx drug="Vilanterol" model-id="Vilanterol_Siederer2016_reference" status="rejected" stale="false" population="COPD patients and healthy subjects" measured-compound="vilanterol" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="Vilanterol" model-id="Vilanterol_Siederer2016_reference" status="rejected" stale="false" population="COPD patients and healthy subjects" measured-compound="vilanterol" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 4 extracted.

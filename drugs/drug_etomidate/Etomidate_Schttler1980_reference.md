@@ -20,8 +20,7 @@
 ## Citation
 Schüttler J et al., [Pharmacokinetics of etomidate in man (…, Der Anaesthesist (1980)
 
-## Model component
-<dbs-pgx drug="etomidate" model-id="Etomidate_Schttler1980_reference" status="needs_review" stale="false" population="patients" measured-compound="etomidate" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="etomidate" model-id="Etomidate_Schttler1980_reference" status="needs_review" stale="false" population="patients" measured-compound="etomidate" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 4 extracted.

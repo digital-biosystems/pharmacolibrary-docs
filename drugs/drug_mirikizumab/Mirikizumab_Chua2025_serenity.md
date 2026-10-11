@@ -21,8 +21,7 @@
 Chua L et al., Mirikizumab Pharmacokinetics and Exposu…, Clinical and translational… (2025)
   ·  DOI: [10.1111/cts.70320](https://doi.org/10.1111/cts.70320)
 
-## Model component
-<dbs-pgx drug="mirikizumab" model-id="Mirikizumab_Chua2025_serenity" status="needs_review" stale="false" population="adults with moderately-to-severely active Crohn&#39;s disease" measured-compound="mirikizumab" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="mirikizumab" model-id="Mirikizumab_Chua2025_serenity" status="needs_review" stale="false" population="adults with moderately-to-severely active Crohn&#39;s disease" measured-compound="mirikizumab" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 1 extracted, plus 8 covariate effects.

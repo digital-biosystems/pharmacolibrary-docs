@@ -23,8 +23,7 @@
 Landoni MF et al., Pharmacokinetics and pharmacodynamics o…, Journal of veterinary pharm… (1995)
   ·  DOI: [10.1111/j.1365-2885.1995.tb00597.x](https://doi.org/10.1111/j.1365-2885.1995.tb00597.x)
 
-## Model component
-<dbs-pgx drug="ketoprofen" model-id="Ketoprofen_Landoni1995_reference" status="extracted" stale="false" population="calves" measured-compound="ketoprofen" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="ketoprofen" model-id="Ketoprofen_Landoni1995_reference" status="extracted" stale="false" population="calves" measured-compound="ketoprofen" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 4 extracted.

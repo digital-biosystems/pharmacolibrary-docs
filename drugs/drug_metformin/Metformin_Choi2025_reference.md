@@ -29,8 +29,7 @@ The record describes metformin with CL/F 0.032 L/h, central volume 2.8 L, periph
 Choi S et al., Population pharmacokinetics of efpeglen…, Frontiers in pharmacology (2025)
   ·  DOI: [10.3389/fphar.2025.1715585](https://doi.org/10.3389/fphar.2025.1715585)
 
-## Model component
-<dbs-pgx drug="metformin" model-id="Metformin_Choi2025_reference" status="rejected" stale="true" population="" measured-compound="metformin" parameterization="apparent" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="metformin" model-id="Metformin_Choi2025_reference" status="rejected" stale="true" population="" measured-compound="metformin" parameterization="apparent" topology="2C"></div>
 
 **Model structure:** 2-compartment; no model was built for this record.  
 **Parameters:** 4 extracted.

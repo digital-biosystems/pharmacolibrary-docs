@@ -30,8 +30,7 @@ No volume or clearance — not a compartmental population PK model. The paper re
 ## Citation
 Grochow LB et al., Pharmacokinetics and pharmacodynamics o…, Drug metabolism and disposi… (1992)
 
-## Model component
-<dbs-pgx drug="topotecan" model-id="Topotecan_Grochow1992_reference" status="rejected" stale="true" population="patients with advanced cancer" measured-compound="topotecan" parameterization="mechanistic" topology="general_linear"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="topotecan" model-id="Topotecan_Grochow1992_reference" status="rejected" stale="true" population="patients with advanced cancer" measured-compound="topotecan" parameterization="mechanistic" topology="general_linear"></div>
 
 **Model structure:** general linear; no model was built for this record.  
 **Parameters:** 0 extracted.

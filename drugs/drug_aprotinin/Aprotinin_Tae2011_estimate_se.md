@@ -28,8 +28,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the val
 Tae YM et al., Population pharmacokinetic analysis and…, Journal of clinical pharmac… (2011)
   ·  DOI: [10.1177/0091270010379411](https://doi.org/10.1177/0091270010379411)
 
-## Model component
-<dbs-pgx drug="aprotinin" model-id="Aprotinin_Tae2011_estimate_se" status="needs_review" stale="false" population="neonates and young infants undergoing cardiopulmonary bypass" measured-compound="aprotinin" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="aprotinin" model-id="Aprotinin_Tae2011_estimate_se" status="needs_review" stale="false" population="neonates and young infants undergoing cardiopulmonary bypass" measured-compound="aprotinin" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 3 extracted.

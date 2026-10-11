@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on paramet
 Morrisette T et al., The Pharmacokinetic and Pharmacodynamic…, Infectious diseases and the… (2020)
   ·  DOI: [10.1007/s40121-020-00325-2](https://doi.org/10.1007/s40121-020-00325-2)
 
-## Model component
-<dbs-pgx drug="remdesivir" model-id="Remdesivir_Morrisette2020_reference" status="curated_candidate" stale="false" population="unknown" measured-compound="remdesivir" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="remdesivir" model-id="Remdesivir_Morrisette2020_reference" status="curated_candidate" stale="false" population="unknown" measured-compound="remdesivir" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameters:** 2 extracted.

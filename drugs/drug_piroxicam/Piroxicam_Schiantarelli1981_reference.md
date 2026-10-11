@@ -21,8 +21,7 @@
 ## Citation
 Schiantarelli P et al., Some pharmacokinetic properties and bio…, Arzneimittel-Forschung (1981)
 
-## Model component
-<dbs-pgx drug="piroxicam" model-id="Piroxicam_Schiantarelli1981_reference" status="rejected" stale="false" population="rodents and humans" measured-compound="piroxicam" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="piroxicam" model-id="Piroxicam_Schiantarelli1981_reference" status="rejected" stale="false" population="rodents and humans" measured-compound="piroxicam" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 2 extracted.

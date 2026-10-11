@@ -33,8 +33,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the val
 Comisar CM et al., Exposure Matching Using Population Phar…, Clinical and translational… (2025)
   ·  DOI: [10.1111/cts.70360](https://doi.org/10.1111/cts.70360)
 
-## Model component
-<dbs-pgx drug="rimegepant" model-id="Rimegepant_Comisar2025_reference" status="extracted" stale="true" population="pediatric and adult" measured-compound="rimegepant" parameterization="apparent" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="rimegepant" model-id="Rimegepant_Comisar2025_reference" status="extracted" stale="true" population="pediatric and adult" measured-compound="rimegepant" parameterization="apparent" topology="2C"></div>
 
 **Model structure:** 2-compartment, oral mammillary model — template `PK_2C_enteral`.  
 **Parameters:** 7 extracted, plus 7 covariate effects.

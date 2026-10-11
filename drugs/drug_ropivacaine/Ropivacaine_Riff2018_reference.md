@@ -21,8 +21,7 @@
 Riff C et al., Ropivacaine Wound Infiltration for Pain…, Clinical pharmacology in dr… (2018)
   ·  DOI: [10.1002/cpdd.452](https://doi.org/10.1002/cpdd.452)
 
-## Model component
-<dbs-pgx drug="ropivacaine" model-id="Ropivacaine_Riff2018_reference" status="rejected" stale="false" population="women undergoing unilateral mastectomy" measured-compound="ropivacaine" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="ropivacaine" model-id="Ropivacaine_Riff2018_reference" status="rejected" stale="false" population="women undergoing unilateral mastectomy" measured-compound="ropivacaine" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 4 extracted.

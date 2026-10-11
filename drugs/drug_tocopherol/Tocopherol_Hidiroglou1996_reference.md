@@ -34,8 +34,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Hidiroglou M, Pharmacokinetic profile of plasma tocop…, Journal of dairy science (1996)
   ·  DOI: [10.3168/jds.S0022-0302(96)76455-X](https://doi.org/10.3168/jds.S0022-0302(96)76455-X)
 
-## Model component
-<dbs-pgx drug="Tocopherol" model-id="Tocopherol_Hidiroglou1996_reference" status="rejected" stale="true" population="sheep" measured-compound="alpha-tocopherol" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="Tocopherol" model-id="Tocopherol_Hidiroglou1996_reference" status="rejected" stale="true" population="sheep" measured-compound="alpha-tocopherol" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 4 extracted.

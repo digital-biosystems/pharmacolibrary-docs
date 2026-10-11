@@ -21,8 +21,7 @@
 Horton TM et al., Phase I trial and pharmacokinetic study…, Clinical cancer research :… (2005)
   ·  DOI: [10.1158/1078-0432.CCR-04-1676](https://doi.org/10.1158/1078-0432.CCR-04-1676)
 
-## Model component
-<dbs-pgx drug="raltitrexed" model-id="Raltitrexed_Horton2005_reference" status="needs_review" stale="false" population="children with recurrent or refractory leukemia" measured-compound="raltitrexed" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="raltitrexed" model-id="Raltitrexed_Horton2005_reference" status="needs_review" stale="false" population="children with recurrent or refractory leukemia" measured-compound="raltitrexed" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 4 extracted.

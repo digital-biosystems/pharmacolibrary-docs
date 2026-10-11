@@ -21,8 +21,7 @@
 Karl HW et al., Pharmacokinetics of oral triazolam in c…, Journal of clinical psychop… (1997)
   ·  DOI: [10.1097/00004714-199706000-00005](https://doi.org/10.1097/00004714-199706000-00005)
 
-## Model component
-<dbs-pgx drug="triazolam" model-id="Triazolam_Karl1997_reference" status="rejected" stale="false" population="healthy children" measured-compound="triazolam" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="triazolam" model-id="Triazolam_Karl1997_reference" status="rejected" stale="false" population="healthy children" measured-compound="triazolam" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 3 extracted.

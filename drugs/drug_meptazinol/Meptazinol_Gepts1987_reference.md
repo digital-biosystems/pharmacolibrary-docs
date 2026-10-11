@@ -19,8 +19,7 @@
 ## Citation
 Gepts E et al., Pharmacokinetics of intravenously admin…, European journal of anaesth… (1987)
 
-## Model component
-<dbs-pgx drug="meptazinol" model-id="Meptazinol_Gepts1987_reference" status="needs_review" stale="false" population="anaesthetised patients" measured-compound="meptazinol" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="meptazinol" model-id="Meptazinol_Gepts1987_reference" status="needs_review" stale="false" population="anaesthetised patients" measured-compound="meptazinol" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 5 extracted.

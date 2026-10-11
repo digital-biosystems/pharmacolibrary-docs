@@ -26,8 +26,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 ## Citation
 El-Sayed MG et al., Disposition kinetics of furosemide in d…, Archives internationales de… (1981)
 
-## Model component
-<dbs-pgx drug="furosemide" model-id="Furosemide_ElSayed1981_reference" status="needs_review" stale="false" population="mongrel dogs" measured-compound="furosemide" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="furosemide" model-id="Furosemide_ElSayed1981_reference" status="needs_review" stale="false" population="mongrel dogs" measured-compound="furosemide" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 5 extracted.

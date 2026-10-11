@@ -28,8 +28,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the val
 Wang XP et al., Population pharmacokinetics and safety…, International journal of cl… (2015)
   ·  DOI: [10.5414/CP202196](https://doi.org/10.5414/CP202196)
 
-## Model component
-<dbs-pgx drug="eptifibatide" model-id="Eptifibatide_Wang2015_reference" status="rejected" stale="false" population="healthy Chinese volunteers" measured-compound="eptifibatide" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="eptifibatide" model-id="Eptifibatide_Wang2015_reference" status="rejected" stale="false" population="healthy Chinese volunteers" measured-compound="eptifibatide" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment; no model was built for this record.  
 **Parameters:** 3 extracted.

@@ -21,8 +21,7 @@
 ## Citation
 Lu Y et al., [Study on pharmacokinetics of glycyrrhe…, Zhongguo Zhong yao za zhi =… (2008)
 
-## Model component
-<dbs-pgx drug="enoxolone" model-id="Enoxolone_Lu2008_reference" status="rejected" stale="false" population="rats" measured-compound="glycyrrhetic acid (GA; enoxolone)" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="enoxolone" model-id="Enoxolone_Lu2008_reference" status="rejected" stale="false" population="rats" measured-compound="glycyrrhetic acid (GA; enoxolone)" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 6 extracted.

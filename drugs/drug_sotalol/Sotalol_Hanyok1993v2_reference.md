@@ -33,8 +33,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Hanyok JJ, Clinical pharmacokinetics of sotalol, The American journal of car… (1993)
   ·  DOI: [10.1016/0002-9149(93)90021-4](https://doi.org/10.1016/0002-9149(93)90021-4)
 
-## Model component
-<dbs-pgx drug="sotalol" model-id="Sotalol_Hanyok1993v2_reference" status="needs_review" stale="true" population="adults" measured-compound="sotalol" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="sotalol" model-id="Sotalol_Hanyok1993v2_reference" status="needs_review" stale="true" population="adults" measured-compound="sotalol" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 1 extracted.

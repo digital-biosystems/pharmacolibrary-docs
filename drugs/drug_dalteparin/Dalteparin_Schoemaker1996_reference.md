@@ -27,8 +27,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on paramet
 Schoemaker RC et al., Estimating impossible curves using NONM…, British journal of clinical… (1996)
   ·  DOI: [10.1046/j.1365-2125.1996.04231.x](https://doi.org/10.1046/j.1365-2125.1996.04231.x)
 
-## Model component
-<dbs-pgx drug="dalteparin" model-id="Dalteparin_Schoemaker1996_reference" status="curated_candidate" stale="false" population="" measured-compound="dalteparin" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="dalteparin" model-id="Dalteparin_Schoemaker1996_reference" status="curated_candidate" stale="false" population="" measured-compound="dalteparin" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameters:** 2 extracted.

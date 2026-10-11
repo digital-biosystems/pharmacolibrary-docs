@@ -31,8 +31,7 @@ No clearance, volume or rate constant of the model is reported in it. Only the a
 Knihinicki RD et al., Stereoselective disposition of ibuprofe…, Chirality (1990)
   ·  DOI: [10.1002/chir.530020303](https://doi.org/10.1002/chir.530020303)
 
-## Model component
-<dbs-pgx drug="flurbiprofen" model-id="Flurbiprofen_Knihinicki1990_reference" status="rejected" stale="true" population="rats" measured-compound="flurbiprofen" parameterization="mechanistic" topology="general_linear"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="flurbiprofen" model-id="Flurbiprofen_Knihinicki1990_reference" status="rejected" stale="true" population="rats" measured-compound="flurbiprofen" parameterization="mechanistic" topology="general_linear"></div>
 
 **Model structure:** general linear; no model was built for this record.  
 **Parameters:** 0 extracted.

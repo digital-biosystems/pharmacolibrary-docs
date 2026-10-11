@@ -25,8 +25,7 @@ Independently confirmed by `gpt-oss:120b`.
 Kassem I et al., Population Pharmacokinetics of Candesar…, Clinical and translational… (2021)
   ·  DOI: [10.1111/cts.12842](https://doi.org/10.1111/cts.12842)
 
-## Model component
-<dbs-pgx drug="candesartan" model-id="Candesartan_Kassem2021_estimates" status="extracted" stale="false" population="patients with chronic heart failure" measured-compound="candesartan" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="candesartan" model-id="Candesartan_Kassem2021_estimates" status="extracted" stale="false" population="patients with chronic heart failure" measured-compound="candesartan" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 4 extracted, plus 4 covariate effects.

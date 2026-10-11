@@ -30,8 +30,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Adiwijaya BS et al., Population Pharmacokinetics of Liposoma…, Clinical pharmacology and t… (2017)
   ·  DOI: [10.1002/cpt.720](https://doi.org/10.1002/cpt.720)
 
-## Model component
-<dbs-pgx drug="irinotecan" model-id="Irinotecan_Adiwijaya2017_reference" status="needs_review" stale="false" population="patients with cancer" measured-compound="total irinotecan" parameterization="mechanistic" topology="parent_metabolite"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="irinotecan" model-id="Irinotecan_Adiwijaya2017_reference" status="needs_review" stale="false" population="patients with cancer" measured-compound="total irinotecan" parameterization="mechanistic" topology="parent_metabolite"></div>
 
 **Model structure:** parent + metabolite; no model was built for this record.  
 **Parameters:** 1 extracted.

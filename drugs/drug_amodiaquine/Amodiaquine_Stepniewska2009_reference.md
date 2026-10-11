@@ -22,8 +22,7 @@
 Stepniewska K et al., Population pharmacokinetics of artesuna…, Malaria journal (2009)
   ·  DOI: [10.1186/1475-2875-8-200](https://doi.org/10.1186/1475-2875-8-200)
 
-## Model component
-<dbs-pgx drug="amodiaquine" model-id="Amodiaquine_Stepniewska2009_reference" status="rejected" stale="false" population="African children with acute uncomplicated falciparum malaria" measured-compound="desethylamodiaquine" parameterization="apparent" topology="general_linear"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="amodiaquine" model-id="Amodiaquine_Stepniewska2009_reference" status="rejected" stale="false" population="African children with acute uncomplicated falciparum malaria" measured-compound="desethylamodiaquine" parameterization="apparent" topology="general_linear"></div>
 
 **Model structure:** general linear; no model was built for this record.  
 **Parameters:** 8 extracted, plus 2 covariate effects.

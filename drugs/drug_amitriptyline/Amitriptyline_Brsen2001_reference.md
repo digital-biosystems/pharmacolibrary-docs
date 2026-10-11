@@ -21,8 +21,7 @@
 Brøsen K et al., Review of pharmacokinetic and pharmacod…, European neuropsychopharmac… (2001)
   ·  DOI: [10.1016/s0924-977x(01)00101-8](https://doi.org/10.1016/s0924-977x(01)00101-8)
 
-## Model component
-<dbs-pgx drug="amitriptyline" model-id="Amitriptyline_Brsen2001_reference" status="extracted" stale="false" population="" measured-compound="amitriptyline" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="amitriptyline" model-id="Amitriptyline_Brsen2001_reference" status="extracted" stale="false" population="" measured-compound="amitriptyline" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 2 extracted.

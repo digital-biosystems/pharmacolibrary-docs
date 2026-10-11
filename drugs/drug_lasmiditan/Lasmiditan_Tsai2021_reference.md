@@ -33,8 +33,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the val
 Tsai M et al., Pharmacokinetics, Safety, and Tolerabil…, Clinical pharmacokinetics (2021)
   ·  DOI: [10.1007/s40262-020-00966-z](https://doi.org/10.1007/s40262-020-00966-z)
 
-## Model component
-<dbs-pgx drug="lasmiditan" model-id="Lasmiditan_Tsai2021_reference" status="" stale="true" population="pediatric patients with migraine" measured-compound="" parameterization="" topology=""></dbs-pgx>
+<div class="pk-model-meta" hidden drug="lasmiditan" model-id="Lasmiditan_Tsai2021_reference" status="" stale="true" population="pediatric patients with migraine" measured-compound="" parameterization="" topology=""></div>
 
 **Model structure:** —; no model was built for this record.  
 **Parameters:** 0 extracted.

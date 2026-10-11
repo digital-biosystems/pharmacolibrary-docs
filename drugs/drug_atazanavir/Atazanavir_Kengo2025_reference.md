@@ -33,8 +33,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on paramet
 Kengo A et al., Model-based evaluation of the interacti…, British journal of clinical… (2025)
   ·  DOI: [10.1002/bcp.70195](https://doi.org/10.1002/bcp.70195)
 
-## Model component
-<dbs-pgx drug="atazanavir" model-id="Atazanavir_Kengo2025_reference" status="needs_review" stale="true" population="Ugandan adults with HIV on ATV/r second-line ART" measured-compound="atazanavir" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="atazanavir" model-id="Atazanavir_Kengo2025_reference" status="needs_review" stale="true" population="Ugandan adults with HIV on ATV/r second-line ART" measured-compound="atazanavir" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 2 extracted.

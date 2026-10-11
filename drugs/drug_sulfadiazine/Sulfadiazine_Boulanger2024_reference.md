@@ -23,8 +23,7 @@
 Boulanger M et al., Pharmacokinetic modeling of sulfamethox…, Poultry science (2024)
   ·  DOI: [10.1016/j.psj.2024.104200](https://doi.org/10.1016/j.psj.2024.104200)
 
-## Model component
-<dbs-pgx drug="sulfadiazine" model-id="Sulfadiazine_Boulanger2024_reference" status="extracted" stale="false" population="" measured-compound="sulfadiazine" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="sulfadiazine" model-id="Sulfadiazine_Boulanger2024_reference" status="extracted" stale="false" population="" measured-compound="sulfadiazine" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameters:** 2 extracted.

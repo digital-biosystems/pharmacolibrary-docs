@@ -28,8 +28,7 @@ Nothing in the extracted data describes the drug's disposition, so there is no m
 Macias WL et al., Pharmacokinetic-pharmacodynamic analysi…, Clinical pharmacology and t… (2002)
   ·  DOI: [10.1067/mcp.2002.128148](https://doi.org/10.1067/mcp.2002.128148)
 
-## Model component
-<dbs-pgx drug="drotrecogin alfa (activated)" model-id="DrotrecoginAlfaActivated_Macias2002_patients_with_severe_sep" status="" stale="true" population="patients with severe sepsis" measured-compound="" parameterization="" topology=""></dbs-pgx>
+<div class="pk-model-meta" hidden drug="drotrecogin alfa (activated)" model-id="DrotrecoginAlfaActivated_Macias2002_patients_with_severe_sep" status="" stale="true" population="patients with severe sepsis" measured-compound="" parameterization="" topology=""></div>
 
 **Model structure:** —; no model was built for this record.  
 **Parameters:** 0 extracted.

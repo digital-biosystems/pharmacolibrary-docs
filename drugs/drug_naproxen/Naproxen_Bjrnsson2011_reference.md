@@ -33,8 +33,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Björnsson MA et al., Modelling of pain intensity and informa…, British journal of clinical… (2011)
   ·  DOI: [10.1111/j.1365-2125.2011.03924.x](https://doi.org/10.1111/j.1365-2125.2011.03924.x)
 
-## Model component
-<dbs-pgx drug="naproxen" model-id="Naproxen_Bjrnsson2011_reference" status="rejected" stale="true" population="adults with dental pain" measured-compound="naproxen" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="naproxen" model-id="Naproxen_Bjrnsson2011_reference" status="rejected" stale="true" population="adults with dental pain" measured-compound="naproxen" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 9 extracted.

@@ -30,8 +30,7 @@ The apparent clearance of tenofovir is listed as 16.7 L/h, which falls outside t
 Scott RK et al., Clinical trial simulation to evaluate t…, Frontiers in reproductive h… (2023)
   ·  DOI: [10.3389/frph.2023.1224580](https://doi.org/10.3389/frph.2023.1224580)
 
-## Model component
-<dbs-pgx drug="tenofovir disoproxil" model-id="TenofovirDisoproxil_Scott2023_reference" status="rejected" stale="true" population="cisgender women at risk of HIV (PrEP), pregnancy simulation" measured-compound="tenofovir (TFV)" parameterization="apparent" topology="general_linear"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="tenofovir disoproxil" model-id="TenofovirDisoproxil_Scott2023_reference" status="rejected" stale="true" population="cisgender women at risk of HIV (PrEP), pregnancy simulation" measured-compound="tenofovir (TFV)" parameterization="apparent" topology="general_linear"></div>
 
 **Model structure:** general linear; no model was built for this record.  
 **Parameters:** 5 extracted.

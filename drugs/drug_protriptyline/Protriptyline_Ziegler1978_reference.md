@@ -30,8 +30,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the val
 Ziegler VE et al., Protriptyline kinetics, Clinical pharmacology and t… (1978)
   ·  DOI: [10.1002/cpt1978235580](https://doi.org/10.1002/cpt1978235580)
 
-## Model component
-<dbs-pgx drug="protriptyline" model-id="Protriptyline_Ziegler1978_reference" status="needs_review" stale="true" population="healthy adults" measured-compound="protriptyline" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="protriptyline" model-id="Protriptyline_Ziegler1978_reference" status="needs_review" stale="true" population="healthy adults" measured-compound="protriptyline" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 2 extracted.

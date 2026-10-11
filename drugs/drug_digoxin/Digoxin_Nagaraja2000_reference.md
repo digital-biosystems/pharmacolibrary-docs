@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Nagaraja NV et al., Population pharmacokinetics of digoxin…, International journal of cl… (2000)
   ·  DOI: [10.5414/cpp38291](https://doi.org/10.5414/cpp38291)
 
-## Model component
-<dbs-pgx drug="digoxin" model-id="Digoxin_Nagaraja2000_reference" status="extracted" stale="true" population="Korean patients" measured-compound="digoxin" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="digoxin" model-id="Digoxin_Nagaraja2000_reference" status="extracted" stale="true" population="Korean patients" measured-compound="digoxin" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 3 extracted.

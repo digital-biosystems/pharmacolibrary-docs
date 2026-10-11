@@ -20,8 +20,7 @@
 ## Citation
 Nakashima M et al., Phase 1 study of L-627, biapenem, a new…, International journal of cl… (1993)
 
-## Model component
-<dbs-pgx drug="biapenem" model-id="Biapenem_Nakashima1993_reference" status="rejected" stale="false" population="healthy volunteers" measured-compound="biapenem" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="biapenem" model-id="Biapenem_Nakashima1993_reference" status="rejected" stale="false" population="healthy volunteers" measured-compound="biapenem" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 2 extracted.

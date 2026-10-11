@@ -33,8 +33,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on `parame
 Hedaya MA et al., Modeling of the pharmacokinetic/pharmac…, Biopharmaceutics & drug dis… (2015)
   ·  DOI: [10.1002/bdd.1935](https://doi.org/10.1002/bdd.1935)
 
-## Model component
-<dbs-pgx drug="hydrochlorothiazide" model-id="Hydrochlorothiazide_Hedaya2015_reference" status="rejected" stale="true" population="normotensive subjects" measured-compound="irbesartan, hydrochlorothiazide" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="hydrochlorothiazide" model-id="Hydrochlorothiazide_Hedaya2015_reference" status="rejected" stale="true" population="normotensive subjects" measured-compound="irbesartan, hydrochlorothiazide" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

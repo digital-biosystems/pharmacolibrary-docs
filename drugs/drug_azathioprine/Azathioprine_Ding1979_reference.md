@@ -34,8 +34,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 ## Citation
 Ding TL et al., Comparative bioavailability and pharmac…, Drug metabolism and disposi… (1979)
 
-## Model component
-<dbs-pgx drug="azathioprine" model-id="Azathioprine_Ding1979_reference" status="rejected" stale="true" population="rhesus monkeys" measured-compound="6-mercaptopurine" parameterization="apparent" topology="general_linear"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="azathioprine" model-id="Azathioprine_Ding1979_reference" status="rejected" stale="true" population="rhesus monkeys" measured-compound="6-mercaptopurine" parameterization="apparent" topology="general_linear"></div>
 
 **Model structure:** general linear; no model was built for this record.  
 **Parameters:** 3 extracted.

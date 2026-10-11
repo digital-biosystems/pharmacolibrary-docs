@@ -29,8 +29,7 @@ No clearance, volume or rate constant of the model is reported in it. Only the a
 Zhou XJ et al., Population pharmacokinetics of nevirapi…, Antimicrobial agents and ch… (1999)
   ·  DOI: [10.1128/AAC.43.1.121](https://doi.org/10.1128/AAC.43.1.121)
 
-## Model component
-<dbs-pgx drug="didanosine" model-id="Didanosine_Zhou1999_reference" status="extracted" stale="true" population="HIV-infected adults (ACTG 241)" measured-compound="didanosine" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="didanosine" model-id="Didanosine_Zhou1999_reference" status="extracted" stale="true" population="HIV-infected adults (ACTG 241)" measured-compound="didanosine" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 7 extracted.

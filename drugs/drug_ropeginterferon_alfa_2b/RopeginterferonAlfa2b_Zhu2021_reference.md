@@ -21,8 +21,7 @@
 Zhu M et al., Population Pharmacokinetics of Ropegint…, Frontiers in pharmacology (2021)
   ·  DOI: [10.3389/fphar.2021.673492](https://doi.org/10.3389/fphar.2021.673492)
 
-## Model component
-<dbs-pgx drug="ropeginterferon alfa-2b" model-id="RopeginterferonAlfa2b_Zhu2021_reference" status="extracted" stale="false" population="healthy Caucasian and Chinese adults" measured-compound="ropeginterferon_alfa_2b" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="ropeginterferon alfa-2b" model-id="RopeginterferonAlfa2b_Zhu2021_reference" status="extracted" stale="false" population="healthy Caucasian and Chinese adults" measured-compound="ropeginterferon_alfa_2b" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 6 extracted, plus 1 covariate effect.

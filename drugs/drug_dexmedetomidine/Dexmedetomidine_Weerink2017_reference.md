@@ -21,8 +21,7 @@
 Weerink MAS et al., Clinical Pharmacokinetics and Pharmacod…, Clinical pharmacokinetics (2017)
   ·  DOI: [10.1007/s40262-017-0507-7](https://doi.org/10.1007/s40262-017-0507-7)
 
-## Model component
-<dbs-pgx drug="dexmedetomidine" model-id="Dexmedetomidine_Weerink2017_reference" status="rejected" stale="false" population="adult and pediatric ICU/surgical patients and healthy volunteers (review of published PopPK models)" measured-compound="dexmedetomidine" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="dexmedetomidine" model-id="Dexmedetomidine_Weerink2017_reference" status="rejected" stale="false" population="adult and pediatric ICU/surgical patients and healthy volunteers (review of published PopPK models)" measured-compound="dexmedetomidine" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

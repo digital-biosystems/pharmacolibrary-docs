@@ -30,8 +30,7 @@ The model was built, but carmustine's clearance had no value, so a library place
 ## Citation
 Levin VA et al., Pharmacokinetics of BCNU in man: a prel…, Cancer treatment reports (1978)
 
-## Model component
-<dbs-pgx drug="carmustine" model-id="Carmustine_Levin1978_reference" status="extracted" stale="true" population="20 patients" measured-compound="BCNU" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="carmustine" model-id="Carmustine_Levin1978_reference" status="extracted" stale="true" population="20 patients" measured-compound="BCNU" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameters:** 3 extracted.

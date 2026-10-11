@@ -28,8 +28,7 @@ The record describes crizanlizumab (Adakveo) in healthy subjects and sickle cell
 Sy SKB et al., Population Pharmacokinetics and Pharmac…, Clinical pharmacokinetics (2023)
   ·  DOI: [10.1007/s40262-022-01193-4](https://doi.org/10.1007/s40262-022-01193-4)
 
-## Model component
-<dbs-pgx drug="crizanlizumab" model-id="Crizanlizumab_Sy2023_reference" status="rejected" stale="true" population="healthy subjects and patients with sickle cell disease" measured-compound="crizanlizumab" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="crizanlizumab" model-id="Crizanlizumab_Sy2023_reference" status="rejected" stale="true" population="healthy subjects and patients with sickle cell disease" measured-compound="crizanlizumab" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment; no model was built for this record.  
 **Parameters:** 4 extracted.

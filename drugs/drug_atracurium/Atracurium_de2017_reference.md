@@ -21,8 +21,7 @@
 de Hoogd S et al., Influence of Morbid Obesity on the Phar…, Clinical pharmacokinetics (2017)
   ·  DOI: [10.1007/s40262-017-0544-2](https://doi.org/10.1007/s40262-017-0544-2)
 
-## Model component
-<dbs-pgx drug="atracurium" model-id="Atracurium_de2017_reference" status="extracted" stale="false" population="" measured-compound="atracurium" parameterization="apparent" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="atracurium" model-id="Atracurium_de2017_reference" status="extracted" stale="false" population="" measured-compound="atracurium" parameterization="apparent" topology="2C"></div>
 
 **Model structure:** 2-compartment, oral mammillary model — template `PK_2C_enteral`.  
 **Parameters:** 4 extracted.

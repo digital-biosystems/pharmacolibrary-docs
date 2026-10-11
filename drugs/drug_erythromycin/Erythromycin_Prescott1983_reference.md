@@ -23,8 +23,7 @@
 Prescott JF et al., Pharmacokinetics of erythromycin in foa…, Journal of veterinary pharm… (1983)
   ·  DOI: [10.1111/j.1365-2885.1983.tb00456.x](https://doi.org/10.1111/j.1365-2885.1983.tb00456.x)
 
-## Model component
-<dbs-pgx drug="erythromycin" model-id="Erythromycin_Prescott1983_reference" status="rejected" stale="false" population="foals and adult horses" measured-compound="erythromycin" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="erythromycin" model-id="Erythromycin_Prescott1983_reference" status="rejected" stale="false" population="foals and adult horses" measured-compound="erythromycin" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

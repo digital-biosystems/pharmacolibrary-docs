@@ -21,8 +21,7 @@
 Edstein MD et al., Population pharmacokinetics of the new…, British journal of clinical… (2001)
   ·  DOI: [10.1046/j.0306-5251.2001.01482.x](https://doi.org/10.1046/j.0306-5251.2001.01482.x)
 
-## Model component
-<dbs-pgx drug="tafenoquine" model-id="Tafenoquine_Edstein2001_reference" status="needs_review" stale="false" population="healthy male Thai soldiers" measured-compound="tafenoquine" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="tafenoquine" model-id="Tafenoquine_Edstein2001_reference" status="needs_review" stale="false" population="healthy male Thai soldiers" measured-compound="tafenoquine" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 2 extracted.

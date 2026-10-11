@@ -35,8 +35,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Nicolas LB et al., Integrated pharmacokinetics and pharmac…, British journal of clinical… (2012)
   ·  DOI: [10.1111/j.1365-2125.2012.04301.x](https://doi.org/10.1111/j.1365-2125.2012.04301.x)
 
-## Model component
-<dbs-pgx drug="epoprostenol" model-id="Epoprostenol_Nicolas2012_reference" status="extracted" stale="true" population="healthy male subjects" measured-compound="6-keto-prostacyclin F1a" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="epoprostenol" model-id="Epoprostenol_Nicolas2012_reference" status="extracted" stale="true" population="healthy male subjects" measured-compound="6-keto-prostacyclin F1a" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 5 extracted, plus 3 covariate effects.

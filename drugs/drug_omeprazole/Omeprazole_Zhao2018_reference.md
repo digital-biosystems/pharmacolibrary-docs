@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the lin
 Zhao W et al., Developmental pharmacogenetics of CYP2C…, British journal of clinical… (2018)
   ·  DOI: [10.1111/bcp.13526](https://doi.org/10.1111/bcp.13526)
 
-## Model component
-<dbs-pgx drug="omeprazole" model-id="Omeprazole_Zhao2018_reference" status="accepted_with_caveats" stale="false" population="neonates and young infants" measured-compound="omeprazole" parameterization="apparent" topology="general_linear"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="omeprazole" model-id="Omeprazole_Zhao2018_reference" status="accepted_with_caveats" stale="false" population="neonates and young infants" measured-compound="omeprazole" parameterization="apparent" topology="general_linear"></div>
 
 **Model structure:** parent–metabolite model: parent with 1 compartment(s); metabolite 5-hydroxy-omeprazole: 1 compartment(s); metabolite omeprazole sulfone: 1 compartment(s); formed from the central compartment; oral dose — template `PK_3M_9C`.  
 **Parameters:** 9 extracted, plus 2 covariate effects.

@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Salcedo-Mingoarranz AL et al., Population Pharmacokinetics of Digoxin…, Clinical pharmacokinetics (2023)
   ·  DOI: [10.1007/s40262-023-01313-8](https://doi.org/10.1007/s40262-023-01313-8)
 
-## Model component
-<dbs-pgx drug="digoxin" model-id="Digoxin_SalcedoMingoarranz2023_reference" status="rejected" stale="true" population="nonagenarian patients" measured-compound="digoxin" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="digoxin" model-id="Digoxin_SalcedoMingoarranz2023_reference" status="rejected" stale="true" population="nonagenarian patients" measured-compound="digoxin" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 1 extracted.

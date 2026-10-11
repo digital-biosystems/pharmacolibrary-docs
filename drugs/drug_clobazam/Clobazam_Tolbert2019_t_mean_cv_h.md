@@ -20,8 +20,7 @@
 Tolbert D et al., A Comprehensive Overview of the Clinica…, Journal of clinical pharmac… (2019)
   ·  DOI: [10.1002/jcph.1313](https://doi.org/10.1002/jcph.1313)
 
-## Model component
-<dbs-pgx drug="clobazam" model-id="Clobazam_Tolbert2019_t_mean_cv_h" status="rejected" stale="false" population="healthy subjects and patients with Lennox-Gastaut syndrome" measured-compound="clobazam" parameterization="apparent" topology="parent_metabolite"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="clobazam" model-id="Clobazam_Tolbert2019_t_mean_cv_h" status="rejected" stale="false" population="healthy subjects and patients with Lennox-Gastaut syndrome" measured-compound="clobazam" parameterization="apparent" topology="parent_metabolite"></div>
 
 **Model structure:** parent + metabolite; no model was built for this record.  
 **Parameters:** 5 extracted, plus 1 covariate effect.

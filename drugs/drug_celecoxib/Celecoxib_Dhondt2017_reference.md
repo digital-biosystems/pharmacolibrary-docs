@@ -33,8 +33,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Dhondt L et al., Comparative population pharmacokinetics…, Scientific reports (2017)
   ·  DOI: [10.1038/s41598-017-12159-z](https://doi.org/10.1038/s41598-017-12159-z)
 
-## Model component
-<dbs-pgx drug="celecoxib" model-id="Celecoxib_Dhondt2017_reference" status="rejected" stale="true" population="cockatiels" measured-compound="celecoxib" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="celecoxib" model-id="Celecoxib_Dhondt2017_reference" status="rejected" stale="true" population="cockatiels" measured-compound="celecoxib" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 11 extracted.

@@ -33,8 +33,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on paramet
 Ma S et al., Synergistic effects of clopidogrel and…, Evidence-based complementar… (2014)
   ·  DOI: [10.1155/2014/789142](https://doi.org/10.1155/2014/789142)
 
-## Model component
-<dbs-pgx drug="clopidogrel" model-id="Clopidogrel_Ma2014_reference" status="extracted" stale="true" population="SD rats" measured-compound="clopidogrel" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="clopidogrel" model-id="Clopidogrel_Ma2014_reference" status="extracted" stale="true" population="SD rats" measured-compound="clopidogrel" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 2 extracted.

@@ -21,8 +21,7 @@
 Zheng Y et al., Population Pharmacokinetics and Dosing…, Antimicrobial agents and ch… (2018)
   ·  DOI: [10.1128/AAC.00686-18](https://doi.org/10.1128/AAC.00686-18)
 
-## Model component
-<dbs-pgx drug="azithromycin" model-id="Azithromycin_Zheng2018_reference" status="rejected" stale="false" population="children with community-acquired pneumonia" measured-compound="azithromycin" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="azithromycin" model-id="Azithromycin_Zheng2018_reference" status="rejected" stale="false" population="children with community-acquired pneumonia" measured-compound="azithromycin" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

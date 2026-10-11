@@ -22,8 +22,7 @@
 Comiran E et al., Lisdexamfetamine and amphetamine pharma…, Biopharmaceutics & drug dis… (2021)
   ·  DOI: [10.1002/bdd.2254](https://doi.org/10.1002/bdd.2254)
 
-## Model component
-<dbs-pgx drug="lisdexamfetamine" model-id="Lisdexamfetamine_Comiran2021_reference" status="rejected" stale="false" population="healthy volunteers" measured-compound="d-amphetamine" parameterization="mechanistic" topology="general_linear"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="lisdexamfetamine" model-id="Lisdexamfetamine_Comiran2021_reference" status="rejected" stale="false" population="healthy volunteers" measured-compound="d-amphetamine" parameterization="mechanistic" topology="general_linear"></div>
 
 **Model structure:** general linear; no model was built for this record.  
 **Parameters:** 0 extracted.

@@ -29,8 +29,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Kim BR et al., Pharmacokinetics of human antithrombin…, British journal of clinical… (2020)
   ·  DOI: [10.1111/bcp.14200](https://doi.org/10.1111/bcp.14200)
 
-## Model component
-<dbs-pgx drug="antithrombin III" model-id="AntithrombinIii_Kim2020_reference" status="curated_candidate" stale="false" population="liver transplant recipients" measured-compound="antithrombin_iii" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="antithrombin III" model-id="AntithrombinIii_Kim2020_reference" status="curated_candidate" stale="false" population="liver transplant recipients" measured-compound="antithrombin_iii" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameters:** 2 extracted.

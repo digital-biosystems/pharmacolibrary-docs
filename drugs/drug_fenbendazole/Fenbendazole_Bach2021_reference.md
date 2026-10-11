@@ -22,8 +22,7 @@
 Bach T et al., Population Pharmacokinetic Model of Oxf…, Antimicrobial agents and ch… (2021)
   ·  DOI: [10.1128/AAC.02129-20](https://doi.org/10.1128/AAC.02129-20)
 
-## Model component
-<dbs-pgx drug="fenbendazole" model-id="Fenbendazole_Bach2021_reference" status="rejected" stale="false" population="healthy adults" measured-compound="fenbendazole" parameterization="apparent" topology="general_linear"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="fenbendazole" model-id="Fenbendazole_Bach2021_reference" status="rejected" stale="false" population="healthy adults" measured-compound="fenbendazole" parameterization="apparent" topology="general_linear"></div>
 
 **Model structure:** general linear; no model was built for this record.  
 **Parameters:** 9 extracted.

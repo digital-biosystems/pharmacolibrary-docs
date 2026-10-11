@@ -21,8 +21,7 @@
 Tsuchiwata S et al., Population pharmacokinetics of tofaciti…, International journal of cl… (2026)
   ·  DOI: [10.5414/CP204781](https://doi.org/10.5414/CP204781)
 
-## Model component
-<dbs-pgx drug="tofacitinib" model-id="Tofacitinib_Tsuchiwata2026_reference" status="extracted" stale="false" population="adults with active ankylosing spondylitis" measured-compound="tofacitinib" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="tofacitinib" model-id="Tofacitinib_Tsuchiwata2026_reference" status="extracted" stale="false" population="adults with active ankylosing spondylitis" measured-compound="tofacitinib" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 3 extracted.

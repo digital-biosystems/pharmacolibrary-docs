@@ -31,8 +31,7 @@ Simulated as the paper dosed it, the model's terminal half-life differs from the
 Sadiq MW et al., Oxymorphone active uptake at the blood-…, Journal of pharmaceutical s… (2013)
   ·  DOI: [10.1002/jps.23492](https://doi.org/10.1002/jps.23492)
 
-## Model component
-<dbs-pgx drug="oxymorphone" model-id="Oxymorphone_Sadiq2013_reference" status="extracted" stale="true" population="male Sprague-Dawley rats" measured-compound="oxymorphone" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="oxymorphone" model-id="Oxymorphone_Sadiq2013_reference" status="extracted" stale="true" population="male Sprague-Dawley rats" measured-compound="oxymorphone" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 6 extracted.

@@ -25,8 +25,7 @@
 Boulanger M et al., Population pharmacokinetic modeling of…, The veterinary quarterly (2025)
   ·  DOI: [10.1080/01652176.2025.2565351](https://doi.org/10.1080/01652176.2025.2565351)
 
-## Model component
-<dbs-pgx drug="sulfamethoxazole" model-id="Sulfamethoxazole_Boulanger2025_reference" status="rejected" stale="false" population="growing pigs" measured-compound="sulfamethoxazole" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="sulfamethoxazole" model-id="Sulfamethoxazole_Boulanger2025_reference" status="rejected" stale="false" population="growing pigs" measured-compound="sulfamethoxazole" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 2 extracted.

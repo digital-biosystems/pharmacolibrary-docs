@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Fritz AK et al., Relative bioavailability and pharmacoki…, Journal of pharmaceutical s… (1984)
   ·  DOI: [10.1002/jps.2600730311](https://doi.org/10.1002/jps.2600730311)
 
-## Model component
-<dbs-pgx drug="paracetamol" model-id="Paracetamol_Fritz1984_reference" status="needs_review" stale="true" population="healthy human males" measured-compound="acetaminophen, pentazocine" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="paracetamol" model-id="Paracetamol_Fritz1984_reference" status="needs_review" stale="true" population="healthy human males" measured-compound="acetaminophen, pentazocine" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 4 extracted.

@@ -21,8 +21,7 @@
 Lin T et al., Population pharmacokinetics of intramus…, Clinical and translational… (2023)
   ·  DOI: [10.1111/cts.13499](https://doi.org/10.1111/cts.13499)
 
-## Model component
-<dbs-pgx drug="pegaspargase" model-id="Pegaspargase_Lin2023_reference" status="rejected" stale="false" population="" measured-compound="pegaspargase" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="pegaspargase" model-id="Pegaspargase_Lin2023_reference" status="rejected" stale="false" population="" measured-compound="pegaspargase" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 2 extracted.

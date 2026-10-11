@@ -22,8 +22,7 @@
 Choi S; Seo J; Park S; Kim NY; Kim H; Lim HS et al. (2025). Frontiers in pharmacology 16
   ·  DOI: [10.3389/fphar.2025.1715585](https://doi.org/10.3389/fphar.2025.1715585)
 
-## Model component
-<dbs-pgx drug="semaglutide" model-id="Semaglutide_Choi2025_reference" status="rejected" stale="true" population="" measured-compound="semaglutide" parameterization="apparent" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="semaglutide" model-id="Semaglutide_Choi2025_reference" status="rejected" stale="true" population="" measured-compound="semaglutide" parameterization="apparent" topology="2C"></div>
 
 **Parameterization:** CL/F — apparent, F unknown (apparent — bioavailability not identifiable).
 

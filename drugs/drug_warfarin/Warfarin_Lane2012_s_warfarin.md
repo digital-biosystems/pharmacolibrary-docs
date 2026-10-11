@@ -33,8 +33,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Lane S et al., The population pharmacokinetics of R- a…, British journal of clinical… (2012)
   ·  DOI: [10.1111/j.1365-2125.2011.04051.x](https://doi.org/10.1111/j.1365-2125.2011.04051.x)
 
-## Model component
-<dbs-pgx drug="warfarin" model-id="Warfarin_Lane2012_s_warfarin" status="extracted" stale="true" population="patients on long-term warfarin therapy" measured-compound="R-warfarin, S-warfarin" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="warfarin" model-id="Warfarin_Lane2012_s_warfarin" status="extracted" stale="true" population="patients on long-term warfarin therapy" measured-compound="R-warfarin, S-warfarin" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 5 extracted.

@@ -22,8 +22,7 @@
 Donabella P et al., Development of supported liquid-phase m…, Bioanalysis (2015)
   ·  DOI: [10.4155/bio.15.7](https://doi.org/10.4155/bio.15.7)
 
-## Model component
-<dbs-pgx drug="oxybutynin" model-id="Oxybutynin_Donabella2015_reference" status="rejected" stale="false" population="rabbits" measured-compound="oxybutynin" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="oxybutynin" model-id="Oxybutynin_Donabella2015_reference" status="rejected" stale="false" population="rabbits" measured-compound="oxybutynin" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

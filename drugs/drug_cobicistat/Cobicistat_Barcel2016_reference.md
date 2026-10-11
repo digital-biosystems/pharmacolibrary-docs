@@ -29,8 +29,7 @@ The abstract provides values for clearance and volume of distribution but omits 
 Barceló C et al., Population pharmacokinetic analysis of…, The Journal of antimicrobia… (2016)
   ·  DOI: [10.1093/jac/dkw050](https://doi.org/10.1093/jac/dkw050)
 
-## Model component
-<dbs-pgx drug="cobicistat" model-id="Cobicistat_Barcel2016_reference" status="extracted" stale="true" population="HIV-1-infected adults" measured-compound="cobicistat" parameterization="mechanistic" topology="parent_metabolite"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="cobicistat" model-id="Cobicistat_Barcel2016_reference" status="extracted" stale="true" population="HIV-1-infected adults" measured-compound="cobicistat" parameterization="mechanistic" topology="parent_metabolite"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 3 extracted.

@@ -21,8 +21,7 @@
 Ma S; Ju W; Dai G; Zhao W; Cheng X; Fang Z; et al. et al. (2014). Evidence-based complementary and alternative medicine : eCAM 2014
   ·  DOI: [10.1155/2014/789142](https://doi.org/10.1155/2014/789142)
 
-## Model component
-<dbs-pgx drug="clopidogrel" model-id="Clopidogrel_Ma2014_reference" status="extracted" stale="true" population="SD rats" measured-compound="clopidogrel" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="clopidogrel" model-id="Clopidogrel_Ma2014_reference" status="extracted" stale="true" population="SD rats" measured-compound="clopidogrel" parameterization="apparent" topology="1C"></div>
 
 **Parameterization:** CL/F, V/F — apparent, F unknown (apparent — bioavailability not identifiable).
 

@@ -21,8 +21,7 @@
 ## Citation
 Matsumoto K et al., Population pharmacokinetic analysis of…, The Japanese journal of ant… (2013)
 
-## Model component
-<dbs-pgx drug="cefditoren" model-id="Cefditoren_Matsumoto2013_reference" status="needs_review" stale="false" population="pediatric patients with infection" measured-compound="cefditoren" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="cefditoren" model-id="Cefditoren_Matsumoto2013_reference" status="needs_review" stale="false" population="pediatric patients with infection" measured-compound="cefditoren" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 2 extracted.

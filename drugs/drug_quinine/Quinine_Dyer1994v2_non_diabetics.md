@@ -23,8 +23,7 @@
 Dyer JR et al., The pharmacokinetics and pharmacodynami…, British journal of clinical… (1994)
   ·  DOI: [10.1111/j.1365-2125.1994.tb04343.x](https://doi.org/10.1111/j.1365-2125.1994.tb04343.x)
 
-## Model component
-<dbs-pgx drug="quinine" model-id="Quinine_Dyer1994v2_non_diabetics" status="needs_review" stale="false" population="elderly diabetic and non-diabetic adults" measured-compound="quinine" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="quinine" model-id="Quinine_Dyer1994v2_non_diabetics" status="needs_review" stale="false" population="elderly diabetic and non-diabetic adults" measured-compound="quinine" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 6 extracted.

@@ -21,8 +21,7 @@
 Mathad JS et al., Pharmacokinetics and Safety of 3 Months…, Clinical infectious disease… (2022)
   ·  DOI: [10.1093/cid/ciab665](https://doi.org/10.1093/cid/ciab665)
 
-## Model component
-<dbs-pgx drug="rifapentine" model-id="Rifapentine_Mathad2022_reference" status="rejected" stale="false" population="pregnant women" measured-compound="rifapentine" parameterization="mechanistic" topology="parent_metabolite"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="rifapentine" model-id="Rifapentine_Mathad2022_reference" status="rejected" stale="false" population="pregnant women" measured-compound="rifapentine" parameterization="mechanistic" topology="parent_metabolite"></div>
 
 **Model structure:** parent + metabolite; no model was built for this record.  
 **Parameters:** 1 extracted.

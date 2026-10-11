@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Saleh MI et al., Bayesian Population Pharmacokinetic Mod…, European journal of drug me… (2019)
   ·  DOI: [10.1007/s13318-018-0490-x](https://doi.org/10.1007/s13318-018-0490-x)
 
-## Model component
-<dbs-pgx drug="eltrombopag" model-id="Eltrombopag_Saleh2019_reference" status="rejected" stale="true" population="chronic hepatitis C patients" measured-compound="eltrombopag" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="eltrombopag" model-id="Eltrombopag_Saleh2019_reference" status="rejected" stale="true" population="chronic hepatitis C patients" measured-compound="eltrombopag" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 3 extracted.

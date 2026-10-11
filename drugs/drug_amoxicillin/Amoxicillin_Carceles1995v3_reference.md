@@ -33,8 +33,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Carceles CM et al., Pharmacokinetics of amoxicillin/clavula…, The veterinary quarterly (1995)
   ·  DOI: [10.1080/01652176.1995.9694552](https://doi.org/10.1080/01652176.1995.9694552)
 
-## Model component
-<dbs-pgx drug="amoxicillin" model-id="Amoxicillin_Carceles1995v3_reference" status="needs_review" stale="true" population="goats" measured-compound="amoxicillin" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="amoxicillin" model-id="Amoxicillin_Carceles1995v3_reference" status="needs_review" stale="true" population="goats" measured-compound="amoxicillin" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 10 extracted.

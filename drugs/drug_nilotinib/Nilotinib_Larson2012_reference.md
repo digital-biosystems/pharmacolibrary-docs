@@ -20,8 +20,7 @@
 Larson RA et al., Population pharmacokinetic and exposure…, European journal of clinica… (2012)
   ·  DOI: [10.1007/s00228-011-1200-7](https://doi.org/10.1007/s00228-011-1200-7)
 
-## Model component
-<dbs-pgx drug="nilotinib" model-id="Nilotinib_Larson2012_reference" status="rejected" stale="false" population="patients with newly diagnosed Ph+ chronic myeloid leukemia in chronic phase" measured-compound="nilotinib" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="nilotinib" model-id="Nilotinib_Larson2012_reference" status="rejected" stale="false" population="patients with newly diagnosed Ph+ chronic myeloid leukemia in chronic phase" measured-compound="nilotinib" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 1 extracted.

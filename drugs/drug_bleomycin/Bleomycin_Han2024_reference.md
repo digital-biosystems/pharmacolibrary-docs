@@ -21,8 +21,7 @@
 Han LW et al., A Phase 1a Study to Evaluate Safety, To…, Rheumatology and therapy (2024)
   ·  DOI: [10.1007/s40744-024-00670-5](https://doi.org/10.1007/s40744-024-00670-5)
 
-## Model component
-<dbs-pgx drug="bleomycin" model-id="Bleomycin_Han2024_reference" status="needs_review" stale="false" population="" measured-compound="bleomycin" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="bleomycin" model-id="Bleomycin_Han2024_reference" status="needs_review" stale="false" population="" measured-compound="bleomycin" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 2 extracted.

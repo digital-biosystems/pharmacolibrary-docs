@@ -21,8 +21,7 @@
 Alghamdi WA et al., Cycloserine Population Pharmacokinetics…, Antimicrobial agents and ch… (2019)
   ·  DOI: [10.1128/AAC.00055-19](https://doi.org/10.1128/AAC.00055-19)
 
-## Model component
-<dbs-pgx drug="cycloserine" model-id="Cycloserine_Alghamdi2019_reference" status="rejected" stale="false" population="TB patients and healthy subjects" measured-compound="cycloserine" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="cycloserine" model-id="Cycloserine_Alghamdi2019_reference" status="rejected" stale="false" population="TB patients and healthy subjects" measured-compound="cycloserine" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 5 extracted, plus 1 covariate effect.

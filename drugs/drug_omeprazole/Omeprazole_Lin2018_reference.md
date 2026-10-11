@@ -29,8 +29,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the val
 Lin S et al., Evaluation of Omeprazole Limited Sampli…, Therapeutic drug monitoring (2018)
   ·  DOI: [10.1097/FTD.0000000000000554](https://doi.org/10.1097/FTD.0000000000000554)
 
-## Model component
-<dbs-pgx drug="omeprazole" model-id="Omeprazole_Lin2018_reference" status="needs_review" stale="false" population="healthy adults" measured-compound="omeprazole" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="omeprazole" model-id="Omeprazole_Lin2018_reference" status="needs_review" stale="false" population="healthy adults" measured-compound="omeprazole" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 4 extracted.

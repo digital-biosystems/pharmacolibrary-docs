@@ -30,8 +30,7 @@ Only the abstract was available, so reported summary statistics stand in for a f
 ## Citation
 Russo R et al., Differential pulse polarographic determ…, Cancer treatment reports (1981)
 
-## Model component
-<dbs-pgx drug="carmustine" model-id="Carmustine_Russo1981_reference" status="extracted" stale="true" population="patients with lung cancer" measured-compound="BCNU" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="carmustine" model-id="Carmustine_Russo1981_reference" status="extracted" stale="true" population="patients with lung cancer" measured-compound="BCNU" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameters:** 3 extracted.

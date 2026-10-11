@@ -20,8 +20,7 @@
 Matzke GR et al., Cefsulodin pharmacokinetics in patients…, Antimicrobial agents and ch… (1983)
   ·  DOI: [10.1128/AAC.23.3.369](https://doi.org/10.1128/AAC.23.3.369)
 
-## Model component
-<dbs-pgx drug="cefsulodin" model-id="Cefsulodin_Matzke1983_reference" status="rejected" stale="false" population="patients with various degrees of renal function" measured-compound="cefsulodin" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="cefsulodin" model-id="Cefsulodin_Matzke1983_reference" status="rejected" stale="false" population="patients with various degrees of renal function" measured-compound="cefsulodin" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

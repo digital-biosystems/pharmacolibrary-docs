@@ -29,8 +29,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the val
 ## Citation
 Vergin H et al., Pharmacokinetics and bioequivalence of…, Arzneimittel-Forschung (1986)
 
-## Model component
-<dbs-pgx drug="pirenzepine" model-id="Pirenzepine_Vergin1986_reference" status="needs_review" stale="true" population="healthy volunteers" measured-compound="pirenzepine" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="pirenzepine" model-id="Pirenzepine_Vergin1986_reference" status="needs_review" stale="true" population="healthy volunteers" measured-compound="pirenzepine" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 3 extracted.

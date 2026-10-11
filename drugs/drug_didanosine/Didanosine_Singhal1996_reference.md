@@ -32,8 +32,7 @@ A model needs both clearance and volume; without the volume it could only be bui
 ## Citation
 Singhal D et al., Role of altered metabolism in dideoxynu…, Drug metabolism and disposi… (1996)
 
-## Model component
-<dbs-pgx drug="didanosine" model-id="Didanosine_Singhal1996_reference" status="needs_review" stale="true" population="chronically catheterized rats" measured-compound="F-ddI" parameterization="mechanistic" topology="parent_metabolite"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="didanosine" model-id="Didanosine_Singhal1996_reference" status="needs_review" stale="true" population="chronically catheterized rats" measured-compound="F-ddI" parameterization="mechanistic" topology="parent_metabolite"></div>
 
 **Model structure:** parent + metabolite; no model was built for this record.  
 **Parameters:** 4 extracted.

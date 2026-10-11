@@ -31,8 +31,7 @@ Independently confirmed by `gpt-oss:120b`.
 Anadón A et al., Pharmacokinetics of tetracycline in chi…, Poultry science (1985)
   ·  DOI: [10.3382/ps.0642273](https://doi.org/10.3382/ps.0642273)
 
-## Model component
-<dbs-pgx drug="tetracycline" model-id="Tetracycline_Anadn1985_reference" status="rejected" stale="true" population="chickens" measured-compound="tetracycline" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="tetracycline" model-id="Tetracycline_Anadn1985_reference" status="rejected" stale="true" population="chickens" measured-compound="tetracycline" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

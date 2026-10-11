@@ -20,8 +20,7 @@
 ## Citation
 Nilsen OG et al., Steady state pharmacokinetics of tiapro…, Arzneimittel-Forschung (1985)
 
-## Model component
-<dbs-pgx drug="tiaprofenic acid" model-id="TiaprofenicAcid_Nilsen1985v2_reference" status="extracted" stale="false" population="elderly patients" measured-compound="tiaprofenic acid" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="tiaprofenic acid" model-id="TiaprofenicAcid_Nilsen1985v2_reference" status="extracted" stale="false" population="elderly patients" measured-compound="tiaprofenic acid" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 6 extracted.

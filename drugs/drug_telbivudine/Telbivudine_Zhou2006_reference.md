@@ -28,8 +28,7 @@ The paper reports no distribution volume and no clearance or elimination rate; i
 Zhou XJ et al., Pharmacokinetics of telbivudine followi…, Antimicrobial agents and ch… (2006)
   ·  DOI: [10.1128/AAC.50.3.874-879.2006](https://doi.org/10.1128/AAC.50.3.874-879.2006)
 
-## Model component
-<dbs-pgx drug="telbivudine" model-id="Telbivudine_Zhou2006_reference" status="needs_review" stale="true" population="adults with chronic hepatitis B virus infection" measured-compound="telbivudine" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="telbivudine" model-id="Telbivudine_Zhou2006_reference" status="needs_review" stale="true" population="adults with chronic hepatitis B virus infection" measured-compound="telbivudine" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 3 extracted.

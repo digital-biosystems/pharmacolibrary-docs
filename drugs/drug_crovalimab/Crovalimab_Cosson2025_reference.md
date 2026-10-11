@@ -20,8 +20,7 @@
 Cosson V et al., Pharmacokinetic characterization and ex…, British journal of clinical… (2025)
   ·  DOI: [10.1111/bcp.16394](https://doi.org/10.1111/bcp.16394)
 
-## Model component
-<dbs-pgx drug="crovalimab" model-id="Crovalimab_Cosson2025_reference" status="needs_review" stale="false" population="patients with paroxysmal nocturnal haemoglobinuria" measured-compound="crovalimab" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="crovalimab" model-id="Crovalimab_Cosson2025_reference" status="needs_review" stale="false" population="patients with paroxysmal nocturnal haemoglobinuria" measured-compound="crovalimab" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 1 extracted.

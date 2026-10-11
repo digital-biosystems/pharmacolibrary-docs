@@ -34,8 +34,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 ## Citation
 Papich MG et al., Pharmacokinetics of procainamide hydroc…, American journal of veterin… (1986)
 
-## Model component
-<dbs-pgx drug="procainamide" model-id="Procainamide_Papich1986_reference" status="extracted" stale="true" population="dogs" measured-compound="procainamide" parameterization="apparent" topology="parent_metabolite"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="procainamide" model-id="Procainamide_Papich1986_reference" status="extracted" stale="true" population="dogs" measured-compound="procainamide" parameterization="apparent" topology="parent_metabolite"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 6 extracted.

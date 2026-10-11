@@ -33,8 +33,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which m
 Saito M et al., Population pharmacokinetics of R- and S…, Biological & pharmaceutical… (2010)
   ·  DOI: [10.1248/bpb.33.1378](https://doi.org/10.1248/bpb.33.1378)
 
-## Model component
-<dbs-pgx drug="carvedilol" model-id="Carvedilol_Saito2010_reference" status="needs_review" stale="true" population="Japanese patients with chronic heart failure" measured-compound="R-carvedilol, S-carvedilol" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="carvedilol" model-id="Carvedilol_Saito2010_reference" status="needs_review" stale="true" population="Japanese patients with chronic heart failure" measured-compound="R-carvedilol, S-carvedilol" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 2 extracted.

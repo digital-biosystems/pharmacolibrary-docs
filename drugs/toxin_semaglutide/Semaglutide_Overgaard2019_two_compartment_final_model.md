@@ -11,8 +11,7 @@
 ## Citation
 not matched (stem Overgaard_2019)
 
-## Model component
-<dbs-pgx drug="semaglutide" model-id="Semaglutide_Overgaard2019_two_compartment_final_model" status="extracted" stale="false" population="healthy subjects and subjects with type 2 diabetes" measured-compound="semaglutide" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="semaglutide" model-id="Semaglutide_Overgaard2019_two_compartment_final_model" status="extracted" stale="false" population="healthy subjects and subjects with type 2 diabetes" measured-compound="semaglutide" parameterization="apparent" topology="1C"></div>
 
 **Parameterization:** CL/F, V/F — apparent, F unknown (apparent — bioavailability not identifiable).
 

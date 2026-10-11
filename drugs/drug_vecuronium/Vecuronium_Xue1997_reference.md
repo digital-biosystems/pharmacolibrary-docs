@@ -20,8 +20,7 @@
 Xue FS et al., Pharmacokinetics of vecuronium during a…, British journal of anaesthe… (1997)
   ·  DOI: [10.1093/bja/79.5.612](https://doi.org/10.1093/bja/79.5.612)
 
-## Model component
-<dbs-pgx drug="vecuronium" model-id="Vecuronium_Xue1997_reference" status="needs_review" stale="false" population="adult patients undergoing plastic surgery" measured-compound="vecuronium" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="vecuronium" model-id="Vecuronium_Xue1997_reference" status="needs_review" stale="false" population="adult patients undergoing plastic surgery" measured-compound="vecuronium" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 4 extracted.

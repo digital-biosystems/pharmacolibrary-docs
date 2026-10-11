@@ -27,8 +27,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Na YG et al., Effect of Ticagrelor, a Cytochrome P450…, Pharmaceutics (2019)
   ·  DOI: [10.3390/pharmaceutics11070354](https://doi.org/10.3390/pharmaceutics11070354)
 
-## Model component
-<dbs-pgx drug="tadalafil" model-id="Tadalafil_Na2019_group_t" status="extracted" stale="false" population="male rats" measured-compound="tadalafil" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="tadalafil" model-id="Tadalafil_Na2019_group_t" status="extracted" stale="false" population="male rats" measured-compound="tadalafil" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 3 extracted.

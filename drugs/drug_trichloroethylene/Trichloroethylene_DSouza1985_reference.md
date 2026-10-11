@@ -22,8 +22,7 @@
 D'Souza RW et al., Oral and intravenous trichloroethylene…, Journal of toxicology and e… (1985)
   ·  DOI: [10.1080/15287398509530688](https://doi.org/10.1080/15287398509530688)
 
-## Model component
-<dbs-pgx drug="trichloroethylene" model-id="Trichloroethylene_DSouza1985_reference" status="rejected" stale="false" population="male Sprague-Dawley rats" measured-compound="trichloroethylene" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="trichloroethylene" model-id="Trichloroethylene_DSouza1985_reference" status="rejected" stale="false" population="male Sprague-Dawley rats" measured-compound="trichloroethylene" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

@@ -21,8 +21,7 @@
 Thomas CM et al., Pharmacokinetic-pharmacodynamic modelli…, British journal of clinical… (2026)
   ·  DOI: [10.1002/bcp.70477](https://doi.org/10.1002/bcp.70477)
 
-## Model component
-<dbs-pgx drug="risankizumab" model-id="Risankizumab_Thomas2026_reference" status="extracted" stale="false" population="chronic plaque psoriasis patients" measured-compound="risankizumab" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="risankizumab" model-id="Risankizumab_Thomas2026_reference" status="extracted" stale="false" population="chronic plaque psoriasis patients" measured-compound="risankizumab" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 2 extracted.

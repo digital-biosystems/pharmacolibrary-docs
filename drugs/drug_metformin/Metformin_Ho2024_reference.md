@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the val
 Ho H et al., &lt;i&gt;In silico&lt;/i&gt; modeling for &lt;i&gt;ex viv…, Frontiers in pharmacology (2024)
   ·  DOI: [10.3389/fphar.2024.1275467](https://doi.org/10.3389/fphar.2024.1275467)
 
-## Model component
-<dbs-pgx drug="metformin" model-id="Metformin_Ho2024_reference" status="rejected" stale="true" population="" measured-compound="metformin" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="metformin" model-id="Metformin_Ho2024_reference" status="rejected" stale="true" population="" measured-compound="metformin" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment; no model was built for this record.  
 **Parameters:** 3 extracted.

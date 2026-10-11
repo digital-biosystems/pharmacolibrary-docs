@@ -28,8 +28,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the val
 Dowling J et al., Population pharmacokinetics of intraven…, Therapeutic drug monitoring (2008)
   ·  DOI: [10.1097/FTD.0b013e3181816214](https://doi.org/10.1097/FTD.0b013e3181816214)
 
-## Model component
-<dbs-pgx drug="naloxone" model-id="Naloxone_Dowling2008_reference" status="needs_review" stale="false" population="healthy male volunteers" measured-compound="naloxone" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="naloxone" model-id="Naloxone_Dowling2008_reference" status="needs_review" stale="false" population="healthy male volunteers" measured-compound="naloxone" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment; no model was built for this record.  
 **Parameters:** 7 extracted.

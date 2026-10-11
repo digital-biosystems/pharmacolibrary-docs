@@ -29,8 +29,7 @@ The check had no reference to compare the clearance against, so the value is unv
 Bressolle F et al., Population pharmacokinetics of nalbuphi…, British journal of anaesthe… (2011)
   ·  DOI: [10.1093/bja/aer001](https://doi.org/10.1093/bja/aer001)
 
-## Model component
-<dbs-pgx drug="nalbuphine" model-id="Nalbuphine_Bressolle2011_final" status="needs_review" stale="true" population="paediatric patients" measured-compound="nalbuphine" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="nalbuphine" model-id="Nalbuphine_Bressolle2011_final" status="needs_review" stale="true" population="paediatric patients" measured-compound="nalbuphine" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment; no model was built for this record.  
 **Parameters:** 6 extracted.

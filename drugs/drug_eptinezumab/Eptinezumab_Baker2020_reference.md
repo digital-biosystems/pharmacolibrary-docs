@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the val
 Baker B et al., Population pharmacokinetic and exposure…, Pharmacology research & per… (2020)
   ·  DOI: [10.1002/prp2.567](https://doi.org/10.1002/prp2.567)
 
-## Model component
-<dbs-pgx drug="eptinezumab" model-id="Eptinezumab_Baker2020_reference" status="extracted" stale="true" population="patients with episodic or chronic migraine" measured-compound="eptinezumab" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="eptinezumab" model-id="Eptinezumab_Baker2020_reference" status="extracted" stale="true" population="patients with episodic or chronic migraine" measured-compound="eptinezumab" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameters:** 7 extracted.

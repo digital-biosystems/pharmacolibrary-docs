@@ -21,8 +21,7 @@
 Ho H; Zhang S; Kurosawa K; Jiang B; Chiba K et al. (2024). Frontiers in pharmacology 15
   ·  DOI: [10.3389/fphar.2024.1275467](https://doi.org/10.3389/fphar.2024.1275467)
 
-## Model component
-<dbs-pgx drug="metformin" model-id="Metformin_Ho2024_reference" status="rejected" stale="true" population="" measured-compound="metformin" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="metformin" model-id="Metformin_Ho2024_reference" status="rejected" stale="true" population="" measured-compound="metformin" parameterization="mechanistic" topology="2C"></div>
 
 **Parameterization:** mechanistic.
 

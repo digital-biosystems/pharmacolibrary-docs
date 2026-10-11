@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Ishizaki T et al., Pharmacokinetics and absolute bioavaila…, European journal of clinica… (1983)
   ·  DOI: [10.1007/BF00544023](https://doi.org/10.1007/BF00544023)
 
-## Model component
-<dbs-pgx drug="carteolol" model-id="Carteolol_Ishizaki1983_reference" status="extracted" stale="true" population="normal volunteers" measured-compound="carteolol" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="carteolol" model-id="Carteolol_Ishizaki1983_reference" status="extracted" stale="true" population="normal volunteers" measured-compound="carteolol" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment, IV mammillary model — template `PK_2C`.  
 **Parameters:** 7 extracted.

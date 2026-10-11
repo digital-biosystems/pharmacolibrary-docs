@@ -20,8 +20,7 @@
 Nakao K et al., Population pharmacokinetics of afatinib…, Scientific reports (2019)
   ·  DOI: [10.1038/s41598-019-54804-9](https://doi.org/10.1038/s41598-019-54804-9)
 
-## Model component
-<dbs-pgx drug="afatinib" model-id="Afatinib_Nakao2019_reference" status="extracted" stale="false" population="Japanese patients with EGFR mutation-positive advanced non-small cell lung cancer" measured-compound="afatinib" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="afatinib" model-id="Afatinib_Nakao2019_reference" status="extracted" stale="false" population="Japanese patients with EGFR mutation-positive advanced non-small cell lung cancer" measured-compound="afatinib" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 3 extracted.

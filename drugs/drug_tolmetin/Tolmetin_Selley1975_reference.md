@@ -21,8 +21,7 @@
 Selley ML et al., Pharmacokinetic studies of tolmetin in…, Clinical pharmacology and t… (1975)
   ·  DOI: [10.1002/cpt1975175599](https://doi.org/10.1002/cpt1975175599)
 
-## Model component
-<dbs-pgx drug="tolmetin" model-id="Tolmetin_Selley1975_reference" status="extracted" stale="false" population="normal subjects and patients with rheumatoid arthritis" measured-compound="tolmetin" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="tolmetin" model-id="Tolmetin_Selley1975_reference" status="extracted" stale="false" population="normal subjects and patients with rheumatoid arthritis" measured-compound="tolmetin" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 3 extracted.

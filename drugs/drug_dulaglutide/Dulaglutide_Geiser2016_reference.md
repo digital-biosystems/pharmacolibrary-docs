@@ -29,8 +29,7 @@ Independently confirmed by `gpt-oss:120b`.
 Geiser JS et al., Clinical Pharmacokinetics of Dulaglutid…, Clinical pharmacokinetics (2016)
   ·  DOI: [10.1007/s40262-015-0338-3](https://doi.org/10.1007/s40262-015-0338-3)
 
-## Model component
-<dbs-pgx drug="dulaglutide" model-id="Dulaglutide_Geiser2016_reference" status="rejected" stale="false" population="patients with type 2 diabetes" measured-compound="dulaglutide" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="dulaglutide" model-id="Dulaglutide_Geiser2016_reference" status="rejected" stale="false" population="patients with type 2 diabetes" measured-compound="dulaglutide" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

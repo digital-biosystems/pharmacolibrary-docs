@@ -29,8 +29,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on paramet
 Lakota EA et al., Population Pharmacokinetic Analyses for…, Antimicrobial agents and ch… (2020)
   ·  DOI: [10.1128/AAC.02263-19](https://doi.org/10.1128/AAC.02263-19)
 
-## Model component
-<dbs-pgx drug="tetracycline" model-id="Tetracycline_Lakota2020_reference" status="extracted" stale="true" population="" measured-compound="tetracycline" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="tetracycline" model-id="Tetracycline_Lakota2020_reference" status="extracted" stale="true" population="" measured-compound="tetracycline" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameters:** 2 extracted.

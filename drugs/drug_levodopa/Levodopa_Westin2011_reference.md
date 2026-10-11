@@ -27,8 +27,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Westin J et al., A pharmacokinetic-pharmacodynamic model…, Clinical neuropharmacology (2011)
   ·  DOI: [10.1097/WNF.0b013e31820b570a](https://doi.org/10.1097/WNF.0b013e31820b570a)
 
-## Model component
-<dbs-pgx drug="levodopa" model-id="Levodopa_Westin2011_reference" status="needs_review" stale="false" population="adults with advanced Parkinson disease" measured-compound="levodopa" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="levodopa" model-id="Levodopa_Westin2011_reference" status="needs_review" stale="false" population="adults with advanced Parkinson disease" measured-compound="levodopa" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 5 extracted.

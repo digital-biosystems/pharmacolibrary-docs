@@ -23,8 +23,7 @@
 Roch A et al., Effect of fluid loading during hypovola…, Critical care (London, Engl… (2011)
   ·  DOI: [10.1186/cc10455](https://doi.org/10.1186/cc10455)
 
-## Model component
-<dbs-pgx drug="pancuronium" model-id="Pancuronium_Roch2011_reference" status="extracted" stale="false" population="" measured-compound="pancuronium" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="pancuronium" model-id="Pancuronium_Roch2011_reference" status="extracted" stale="false" population="" measured-compound="pancuronium" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment, IV mammillary model — template `PK_2C`.  
 **Parameters:** 4 extracted.

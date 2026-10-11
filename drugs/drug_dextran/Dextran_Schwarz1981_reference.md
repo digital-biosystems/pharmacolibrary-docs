@@ -29,8 +29,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on `parame
 ## Citation
 Schwarz JA et al., Pharmacokinetics of low molecular (mono…, International journal of cl… (1981)
 
-## Model component
-<dbs-pgx drug="dextran" model-id="Dextran_Schwarz1981_reference" status="rejected" stale="true" population="healthy volunteers" measured-compound="dextran 1" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="dextran" model-id="Dextran_Schwarz1981_reference" status="rejected" stale="true" population="healthy volunteers" measured-compound="dextran 1" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 4 extracted.

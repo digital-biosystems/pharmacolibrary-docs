@@ -29,8 +29,7 @@ Nothing in the extracted data describes the drug's disposition, so there is no m
 ## Citation
 Hummel L, Studies on the synthesis of liver phosp…, Acta biologica et medica Ge… (1975)
 
-## Model component
-<dbs-pgx drug="phospholipids" model-id="Phospholipids_Hummel1975_non_pregnant_female_rats" status="" stale="true" population="non pregnant female rats" measured-compound="" parameterization="" topology=""></dbs-pgx>
+<div class="pk-model-meta" hidden drug="phospholipids" model-id="Phospholipids_Hummel1975_non_pregnant_female_rats" status="" stale="true" population="non pregnant female rats" measured-compound="" parameterization="" topology=""></div>
 
 **Model structure:** —; no model was built for this record.  
 **Parameters:** 0 extracted.

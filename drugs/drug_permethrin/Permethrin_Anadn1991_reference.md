@@ -22,8 +22,7 @@
 Anadón A et al., Toxicokinetics of permethrin in the rat, Toxicology and applied phar… (1991)
   ·  DOI: [10.1016/0041-008x(91)90284-l](https://doi.org/10.1016/0041-008x(91)90284-l)
 
-## Model component
-<dbs-pgx drug="permethrin" model-id="Permethrin_Anadn1991_reference" status="rejected" stale="false" population="male Sprague-Dawley rats" measured-compound="permethrin" parameterization="mechanistic" topology="general_linear"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="permethrin" model-id="Permethrin_Anadn1991_reference" status="rejected" stale="false" population="male Sprague-Dawley rats" measured-compound="permethrin" parameterization="mechanistic" topology="general_linear"></div>
 
 **Model structure:** general linear; no model was built for this record.  
 **Parameters:** 7 extracted.

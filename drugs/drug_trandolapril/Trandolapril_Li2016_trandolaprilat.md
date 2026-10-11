@@ -26,8 +26,7 @@ The metabolite trandolaprilat is formed from trandolapril by hydrolysis in the c
 Li X et al., Pharmacokinetics, Pharmacodynamics, and…, European journal of drug me… (2016)
   ·  DOI: [10.1007/s13318-015-0277-2](https://doi.org/10.1007/s13318-015-0277-2)
 
-## Model component
-<dbs-pgx drug="trandolapril" model-id="Trandolapril_Li2016_trandolaprilat" status="rejected" stale="false" population="healthy Chinese subjects" measured-compound="trandolapril" parameterization="apparent" topology="general_linear"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="trandolapril" model-id="Trandolapril_Li2016_trandolaprilat" status="rejected" stale="false" population="healthy Chinese subjects" measured-compound="trandolapril" parameterization="apparent" topology="general_linear"></div>
 
 **Model structure:** general linear; no model was built for this record.  
 **Parameters:** 13 extracted.

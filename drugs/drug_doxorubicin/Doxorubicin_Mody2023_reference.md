@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Mody H et al., In vitro to clinical translational phar…, Scientific reports (2023)
   ·  DOI: [10.1038/s41598-023-29964-4](https://doi.org/10.1038/s41598-023-29964-4)
 
-## Model component
-<dbs-pgx drug="doxorubicin" model-id="Doxorubicin_Mody2023_reference" status="needs_review" stale="true" population="unknown" measured-compound="doxorubicin and dexrazoxane" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="doxorubicin" model-id="Doxorubicin_Mody2023_reference" status="needs_review" stale="true" population="unknown" measured-compound="doxorubicin and dexrazoxane" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment; no model was built for this record.  
 **Parameters:** 9 extracted.

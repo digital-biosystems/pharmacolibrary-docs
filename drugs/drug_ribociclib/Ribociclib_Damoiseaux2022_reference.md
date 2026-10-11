@@ -22,8 +22,7 @@
 Damoiseaux D et al., Predictiveness of the Human-CYP3A4-Tran…, Pharmaceuticals (Basel, Swi… (2022)
   ·  DOI: [10.3390/ph15070860](https://doi.org/10.3390/ph15070860)
 
-## Model component
-<dbs-pgx drug="ribociclib" model-id="Ribociclib_Damoiseaux2022_reference" status="rejected" stale="false" population="WT and Cyp3aXAV mice" measured-compound="ribociclib" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="ribociclib" model-id="Ribociclib_Damoiseaux2022_reference" status="rejected" stale="false" population="WT and Cyp3aXAV mice" measured-compound="ribociclib" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 1 extracted.

@@ -22,8 +22,7 @@
 Hagedorn M et al., Characterization of a major permeabilit…, Biology of reproduction (1998)
   ·  DOI: [10.1095/biolreprod59.5.1240](https://doi.org/10.1095/biolreprod59.5.1240)
 
-## Model component
-<dbs-pgx drug="dimethyl sulfoxide" model-id="DimethylSulfoxide_Hagedorn1998_reference" status="rejected" stale="false" population="zebrafish embryos" measured-compound="dimethyl_sulfoxide" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="dimethyl sulfoxide" model-id="DimethylSulfoxide_Hagedorn1998_reference" status="rejected" stale="false" population="zebrafish embryos" measured-compound="dimethyl_sulfoxide" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

@@ -21,8 +21,7 @@
 Jain L et al., Population pharmacokinetic analysis of…, British journal of clinical… (2011)
   ·  DOI: [10.1111/j.1365-2125.2011.03963.x](https://doi.org/10.1111/j.1365-2125.2011.03963.x)
 
-## Model component
-<dbs-pgx drug="sorafenib" model-id="Sorafenib_Jain2011_reference" status="extracted" stale="false" population="patients with solid tumours" measured-compound="sorafenib" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="sorafenib" model-id="Sorafenib_Jain2011_reference" status="extracted" stale="false" population="patients with solid tumours" measured-compound="sorafenib" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameters:** 3 extracted.

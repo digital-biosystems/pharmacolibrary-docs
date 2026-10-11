@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on paramet
 Tran QT et al., Clinical Evaluation of Acetaminophen-Ga…, Pharmaceutics (2020)
   ·  DOI: [10.3390/pharmaceutics12121182](https://doi.org/10.3390/pharmaceutics12121182)
 
-## Model component
-<dbs-pgx drug="ephedrine" model-id="Ephedrine_Tran2020_reference" status="extracted" stale="true" population="" measured-compound="ephedrine" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="ephedrine" model-id="Ephedrine_Tran2020_reference" status="extracted" stale="true" population="" measured-compound="ephedrine" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 2 extracted.

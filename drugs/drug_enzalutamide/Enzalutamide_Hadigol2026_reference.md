@@ -21,8 +21,7 @@
 Hadigol M et al., Population Pharmacokinetics Analysis of…, Journal of clinical pharmac… (2026)
   ·  DOI: [10.1002/jcph.70125](https://doi.org/10.1002/jcph.70125)
 
-## Model component
-<dbs-pgx drug="enzalutamide" model-id="Enzalutamide_Hadigol2026_reference" status="extracted" stale="false" population="patients with metastatic castration-resistant prostate cancer" measured-compound="enzalutamide" parameterization="apparent" topology="parent_metabolite"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="enzalutamide" model-id="Enzalutamide_Hadigol2026_reference" status="extracted" stale="false" population="patients with metastatic castration-resistant prostate cancer" measured-compound="enzalutamide" parameterization="apparent" topology="parent_metabolite"></div>
 
 **Model structure:** parent–metabolite model: parent with 1 compartment(s); metabolite N-desmethyl enzalutamide: 2 compartment(s); formed from the central compartment; oral dose — template `PK_3M_9C`.  
 **Parameters:** 14 extracted, plus 6 covariate effects.

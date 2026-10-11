@@ -27,8 +27,7 @@ The clearance of racemic ibuprofen is reported as 0.062 with unit '3', a unit th
 Kirchheiner J et al., Enantiospecific effects of cytochrome P…, Clinical pharmacology and t… (2002)
   ·  DOI: [10.1067/mcp.2002.125726](https://doi.org/10.1067/mcp.2002.125726)
 
-## Model component
-<dbs-pgx drug="ibuprofen" model-id="Ibuprofen_Kirchheiner2002_reference" status="rejected" stale="false" population="healthy volunteers" measured-compound="racemic ibuprofen" parameterization="mechanistic" topology="general_linear"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="ibuprofen" model-id="Ibuprofen_Kirchheiner2002_reference" status="rejected" stale="false" population="healthy volunteers" measured-compound="racemic ibuprofen" parameterization="mechanistic" topology="general_linear"></div>
 
 **Model structure:** general linear; no model was built for this record.  
 **Parameters:** 3 extracted.

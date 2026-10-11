@@ -27,8 +27,7 @@ Without a unit the value cannot be converted, so the model cannot use it. The ch
 Sáez-Belló M et al., Evaluation of ABC gene polymorphisms on…, British journal of clinical… (2021)
   ·  DOI: [10.1111/bcp.14441](https://doi.org/10.1111/bcp.14441)
 
-## Model component
-<dbs-pgx drug="fluorouracil" model-id="Fluorouracil_SezBell2021_reference" status="needs_review" stale="false" population="adults with colorectal cancer" measured-compound="capecitabine" parameterization="mechanistic" topology="general_linear"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="fluorouracil" model-id="Fluorouracil_SezBell2021_reference" status="needs_review" stale="false" population="adults with colorectal cancer" measured-compound="capecitabine" parameterization="mechanistic" topology="general_linear"></div>
 
 **Model structure:** general linear; no model was built for this record.  
 **Parameters:** 6 extracted.

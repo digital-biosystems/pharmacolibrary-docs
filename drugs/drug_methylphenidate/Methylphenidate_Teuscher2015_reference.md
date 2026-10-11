@@ -32,8 +32,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Teuscher NS et al., Population pharmacokinetics of methylph…, Drug design, development an… (2015)
   ·  DOI: [10.2147/DDDT.S83234](https://doi.org/10.2147/DDDT.S83234)
 
-## Model component
-<dbs-pgx drug="methylphenidate" model-id="Methylphenidate_Teuscher2015_reference" status="rejected" stale="true" population="pediatric subjects with ADHD" measured-compound="methylphenidate" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="methylphenidate" model-id="Methylphenidate_Teuscher2015_reference" status="rejected" stale="true" population="pediatric subjects with ADHD" measured-compound="methylphenidate" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

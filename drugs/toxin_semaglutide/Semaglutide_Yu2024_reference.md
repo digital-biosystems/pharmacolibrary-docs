@@ -21,8 +21,7 @@
 Yu H; Ueckert S; Zhou L; Cheng J; Robertson D; Hansen L; Flor A; Parker V; Hamrén B; Khan AA et al. (2024). CPT: pharmacometrics & systems pharmacology 13
   ·  DOI: [10.1002/psp4.13194](https://doi.org/10.1002/psp4.13194)
 
-## Model component
-<dbs-pgx drug="semaglutide" model-id="Semaglutide_Yu2024_reference" status="extracted" stale="true" population="" measured-compound="semaglutide" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="semaglutide" model-id="Semaglutide_Yu2024_reference" status="extracted" stale="true" population="" measured-compound="semaglutide" parameterization="apparent" topology="1C"></div>
 
 **Parameterization:** CL/F, V/F — apparent, F unknown (apparent — bioavailability not identifiable).
 

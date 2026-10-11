@@ -25,8 +25,7 @@
 Li QG et al., The pharmacokinetics and bioavailabilit…, The Journal of pharmacy and… (1998)
   ·  DOI: [10.1111/j.2042-7158.1998.tb06173.x](https://doi.org/10.1111/j.2042-7158.1998.tb06173.x)
 
-## Model component
-<dbs-pgx drug="artesunate" model-id="Artesunate_Li1998_reference" status="needs_review" stale="false" population="rats" measured-compound="dihydroartemisinin" parameterization="mechanistic" topology="general_linear"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="artesunate" model-id="Artesunate_Li1998_reference" status="needs_review" stale="false" population="rats" measured-compound="dihydroartemisinin" parameterization="mechanistic" topology="general_linear"></div>
 
 **Model structure:** general linear; no model was built for this record.  
 **Parameters:** 15 extracted.

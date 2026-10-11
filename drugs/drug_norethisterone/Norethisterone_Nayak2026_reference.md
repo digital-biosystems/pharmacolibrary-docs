@@ -21,8 +21,7 @@
 Nayak S et al., Clinical Pharmacokinetics and Pharmacod…, Clinical pharmacokinetics (2026)
   ·  DOI: [10.1007/s40262-026-01695-5](https://doi.org/10.1007/s40262-026-01695-5)
 
-## Model component
-<dbs-pgx drug="norethisterone" model-id="Norethisterone_Nayak2026_reference" status="extracted" stale="false" population="" measured-compound="norethisterone" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="norethisterone" model-id="Norethisterone_Nayak2026_reference" status="extracted" stale="false" population="" measured-compound="norethisterone" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment, oral mammillary model — template `PK_2C_enteral`.  
 **Parameters:** 6 extracted.

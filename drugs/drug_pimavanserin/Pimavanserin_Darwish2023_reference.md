@@ -20,8 +20,7 @@
 Darwish M et al., Population Pharmacokinetic Modeling and…, Journal of clinical pharmac… (2023)
   ·  DOI: [10.1002/jcph.2315](https://doi.org/10.1002/jcph.2315)
 
-## Model component
-<dbs-pgx drug="pimavanserin" model-id="Pimavanserin_Darwish2023_reference" status="rejected" stale="false" population="pediatric patients aged 5-17 years with psychiatric conditions (pooled with adults)" measured-compound="pimavanserin" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="pimavanserin" model-id="Pimavanserin_Darwish2023_reference" status="rejected" stale="false" population="pediatric patients aged 5-17 years with psychiatric conditions (pooled with adults)" measured-compound="pimavanserin" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 2 extracted.

@@ -33,8 +33,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Ait-Oudhia S et al., Population pharmacokinetic modeling of…, CPT: pharmacometrics & syst… (2024)
   ·  DOI: [10.1002/psp4.13166](https://doi.org/10.1002/psp4.13166)
 
-## Model component
-<dbs-pgx drug="sotatercept" model-id="Sotatercept_AitOudhia2024_reference" status="extracted" stale="true" population="healthy participants and patients with pulmonary arterial hypertension" measured-compound="sotatercept" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="sotatercept" model-id="Sotatercept_AitOudhia2024_reference" status="extracted" stale="true" population="healthy participants and patients with pulmonary arterial hypertension" measured-compound="sotatercept" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment, oral mammillary model — template `PK_2C_enteral`.  
 **Parameters:** 6 extracted, plus 3 covariate effects.

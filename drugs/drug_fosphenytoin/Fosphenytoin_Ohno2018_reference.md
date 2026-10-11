@@ -30,8 +30,7 @@ No clearance, volume or rate constant of the model is reported in it. No paramet
 Ohno Y et al., Time-Dependent Decline in Serum Phenyto…, Therapeutic drug monitoring (2018)
   ·  DOI: [10.1097/FTD.0000000000000521](https://doi.org/10.1097/FTD.0000000000000521)
 
-## Model component
-<dbs-pgx drug="fosphenytoin" model-id="Fosphenytoin_Ohno2018_reference" status="rejected" stale="true" population="adult Japanese patients" measured-compound="phenytoin" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="fosphenytoin" model-id="Fosphenytoin_Ohno2018_reference" status="rejected" stale="true" population="adult Japanese patients" measured-compound="phenytoin" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

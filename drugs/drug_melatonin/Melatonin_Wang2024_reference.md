@@ -23,8 +23,7 @@
 Wang M et al., LC-MS/MS-Based Concurrent Quantificatio…, Pharmaceutics (2024)
   ·  DOI: [10.3390/pharmaceutics16121511](https://doi.org/10.3390/pharmaceutics16121511)
 
-## Model component
-<dbs-pgx drug="melatonin" model-id="Melatonin_Wang2024_reference" status="extracted" stale="false" population="male ICR mice" measured-compound="melatonin" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="melatonin" model-id="Melatonin_Wang2024_reference" status="extracted" stale="false" population="male ICR mice" measured-compound="melatonin" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameters:** 2 extracted.

@@ -23,8 +23,7 @@
 Landoni MF et al., Pharmacokinetics and pharmacodynamics o…, Research in veterinary scie… (1996)
   ·  DOI: [10.1016/s0034-5288(96)90106-x](https://doi.org/10.1016/s0034-5288(96)90106-x)
 
-## Model component
-<dbs-pgx drug="tolfenamic acid" model-id="TolfenamicAcid_Landoni1996_reference" status="extracted" stale="false" population="calves" measured-compound="tolfenamic acid" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="tolfenamic acid" model-id="TolfenamicAcid_Landoni1996_reference" status="extracted" stale="false" population="calves" measured-compound="tolfenamic acid" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameters:** 3 extracted.

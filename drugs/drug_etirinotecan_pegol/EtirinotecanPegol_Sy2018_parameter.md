@@ -26,8 +26,7 @@ The table was split into one record per column, and 'parameter' holds a statisti
 Sy SKB et al., Integrated population pharmacokinetics…, Cancer chemotherapy and pha… (2018)
   ·  DOI: [10.1007/s00280-018-3562-3](https://doi.org/10.1007/s00280-018-3562-3)
 
-## Model component
-<dbs-pgx drug="etirinotecan pegol" model-id="EtirinotecanPegol_Sy2018_parameter" status="rejected" stale="false" population="cancer patients with solid tumors" measured-compound="etirinotecan pegol" parameterization="mechanistic" topology="general_linear"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="etirinotecan pegol" model-id="EtirinotecanPegol_Sy2018_parameter" status="rejected" stale="false" population="cancer patients with solid tumors" measured-compound="etirinotecan pegol" parameterization="mechanistic" topology="general_linear"></div>
 
 **Model structure:** general linear; no model was built for this record.  
 **Parameters:** 3 extracted.

@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the lin
 Magee MH et al., Pharmacokinetic/pharmacodynamic model f…, British journal of clinical… (2002)
   ·  DOI: [10.1046/j.1365-2125.2002.01567.x](https://doi.org/10.1046/j.1365-2125.2002.01567.x)
 
-## Model component
-<dbs-pgx drug="prednisolone" model-id="Prednisolone_Magee2002_reference" status="rejected" stale="false" population="healthy adults" measured-compound="prednisolone" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="prednisolone" model-id="Prednisolone_Magee2002_reference" status="rejected" stale="false" population="healthy adults" measured-compound="prednisolone" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

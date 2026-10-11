@@ -29,8 +29,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the val
 Levêque D et al., Clinical pharmacokinetics of vinorelbine, Clinical pharmacokinetics (1996)
   ·  DOI: [10.2165/00003088-199631030-00003](https://doi.org/10.2165/00003088-199631030-00003)
 
-## Model component
-<dbs-pgx drug="vinblastine" model-id="Vinblastine_Levque1996_reference" status="needs_review" stale="true" population="" measured-compound="vinblastine" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="vinblastine" model-id="Vinblastine_Levque1996_reference" status="needs_review" stale="true" population="" measured-compound="vinblastine" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 2 extracted.

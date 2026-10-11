@@ -21,8 +21,7 @@
 Darwish M et al., Population Pharmacokinetic Modeling to…, Advances in therapy (2025)
   ·  DOI: [10.1007/s12325-024-03056-9](https://doi.org/10.1007/s12325-024-03056-9)
 
-## Model component
-<dbs-pgx drug="trofinetide" model-id="Trofinetide_Darwish2025_reference" status="extracted" stale="false" population="healthy volunteers and patients with Rett syndrome, fragile X syndrome, or traumatic brain injury (age 5-64 years)" measured-compound="trofinetide" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="trofinetide" model-id="Trofinetide_Darwish2025_reference" status="extracted" stale="false" population="healthy volunteers and patients with Rett syndrome, fragile X syndrome, or traumatic brain injury (age 5-64 years)" measured-compound="trofinetide" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment, oral mammillary model — template `PK_2C_enteral`.  
 **Parameters:** 6 extracted, plus 9 covariate effects.

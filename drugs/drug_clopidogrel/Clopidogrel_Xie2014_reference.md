@@ -32,8 +32,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the lin
 ## Citation
 Xie C et al., [Population pharmacokinetics and pharma…, Yao xue xue bao = Acta phar… (2014)
 
-## Model component
-<dbs-pgx drug="clopidogrel" model-id="Clopidogrel_Xie2014_reference" status="rejected" stale="true" population="patients with acute coronary syndrome" measured-compound="clopidogrel active metabolite" parameterization="apparent" topology="parent_metabolite"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="clopidogrel" model-id="Clopidogrel_Xie2014_reference" status="rejected" stale="true" population="patients with acute coronary syndrome" measured-compound="clopidogrel active metabolite" parameterization="apparent" topology="parent_metabolite"></div>
 
 **Model structure:** parent + metabolite; no model was built for this record.  
 **Parameters:** 5 extracted.

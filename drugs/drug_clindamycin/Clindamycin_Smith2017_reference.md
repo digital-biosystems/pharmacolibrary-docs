@@ -21,8 +21,7 @@
 Smith MJ et al., Pharmacokinetics of Clindamycin in Obes…, Antimicrobial agents and ch… (2017)
   ·  DOI: [10.1128/AAC.02014-16](https://doi.org/10.1128/AAC.02014-16)
 
-## Model component
-<dbs-pgx drug="clindamycin" model-id="Clindamycin_Smith2017_reference" status="rejected" stale="false" population="obese and nonobese children" measured-compound="clindamycin" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="clindamycin" model-id="Clindamycin_Smith2017_reference" status="rejected" stale="false" population="obese and nonobese children" measured-compound="clindamycin" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

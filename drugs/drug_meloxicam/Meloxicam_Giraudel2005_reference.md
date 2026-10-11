@@ -23,8 +23,7 @@
 Giraudel JM et al., Pharmacokinetic/pharmacodynamic modelli…, British journal of pharmaco… (2005)
   ·  DOI: [10.1038/sj.bjp.0706372](https://doi.org/10.1038/sj.bjp.0706372)
 
-## Model component
-<dbs-pgx drug="meloxicam" model-id="Meloxicam_Giraudel2005_reference" status="needs_review" stale="false" population="cats with kaolin-induced inflammation" measured-compound="meloxicam" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="meloxicam" model-id="Meloxicam_Giraudel2005_reference" status="needs_review" stale="false" population="cats with kaolin-induced inflammation" measured-compound="meloxicam" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 2 extracted.

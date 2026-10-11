@@ -21,8 +21,7 @@
 Bardhi A; Scala-Bertola J; Gehring R; Mariella J; Freccero F; Scarpellini R; Castagnetti C; Djerada Z; Barbarossa A et al. (2026). Journal of veterinary internal medicine 40
   ·  DOI: [10.1093/jvimsj/aalag021](https://doi.org/10.1093/jvimsj/aalag021)
 
-## Model component
-<dbs-pgx drug="amoxicillin" model-id="Amoxicillin_Bardhi2026_reference" status="extracted" stale="true" population="" measured-compound="amoxicillin" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="amoxicillin" model-id="Amoxicillin_Bardhi2026_reference" status="extracted" stale="true" population="" measured-compound="amoxicillin" parameterization="mechanistic" topology="1C"></div>
 
 **Parameterization:** mechanistic.
 

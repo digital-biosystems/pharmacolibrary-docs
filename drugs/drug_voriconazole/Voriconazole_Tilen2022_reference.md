@@ -21,8 +21,7 @@
 Tilen R et al., Pharmacogenetic Analysis of Voriconazol…, Pharmaceutics (2022)
   ·  DOI: [10.3390/pharmaceutics14061289](https://doi.org/10.3390/pharmaceutics14061289)
 
-## Model component
-<dbs-pgx drug="voriconazole" model-id="Voriconazole_Tilen2022_reference" status="needs_review" stale="false" population="pediatric patients with invasive fungal infections" measured-compound="voriconazole" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="voriconazole" model-id="Voriconazole_Tilen2022_reference" status="needs_review" stale="false" population="pediatric patients with invasive fungal infections" measured-compound="voriconazole" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 3 extracted, plus 7 covariate effects.

@@ -29,8 +29,7 @@ The record covers only 4 of the 6 expected parameters: kabs and tlag were neithe
 Blesch KS et al., Clinical pharmacokinetic/pharmacodynami…, Investigational new drugs (2003)
   ·  DOI: [10.1023/a:1023525513696](https://doi.org/10.1023/a:1023525513696)
 
-## Model component
-<dbs-pgx drug="capecitabine" model-id="Capecitabine_Blesch2003_reference" status="needs_review" stale="true" population="cancer patients" measured-compound="capecitabine" parameterization="mechanistic" topology="general_linear"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="capecitabine" model-id="Capecitabine_Blesch2003_reference" status="needs_review" stale="true" population="cancer patients" measured-compound="capecitabine" parameterization="mechanistic" topology="general_linear"></div>
 
 **Model structure:** general linear; no model was built for this record.  
 **Parameters:** 9 extracted.

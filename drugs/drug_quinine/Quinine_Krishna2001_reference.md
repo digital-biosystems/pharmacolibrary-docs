@@ -23,8 +23,7 @@
 Krishna S et al., Population pharmacokinetics of intramus…, Antimicrobial agents and ch… (2001)
   ·  DOI: [10.1128/AAC.45.6.1803-1809.2001](https://doi.org/10.1128/AAC.45.6.1803-1809.2001)
 
-## Model component
-<dbs-pgx drug="quinine" model-id="Quinine_Krishna2001_reference" status="needs_review" stale="false" population="Ghanaian children with severe malaria" measured-compound="quinine" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="quinine" model-id="Quinine_Krishna2001_reference" status="needs_review" stale="false" population="Ghanaian children with severe malaria" measured-compound="quinine" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 2 extracted.

@@ -29,8 +29,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on paramet
 Ueshima S et al., Pharmacokinetic and pharmacodynamic cha…, Scientific reports (2025)
   ·  DOI: [10.1038/s41598-025-10015-z](https://doi.org/10.1038/s41598-025-10015-z)
 
-## Model component
-<dbs-pgx drug="fentanyl" model-id="Fentanyl_Ueshima2025_reference" status="extracted" stale="true" population="" measured-compound="" parameterization="" topology=""></dbs-pgx>
+<div class="pk-model-meta" hidden drug="fentanyl" model-id="Fentanyl_Ueshima2025_reference" status="extracted" stale="true" population="" measured-compound="" parameterization="" topology=""></div>
 
 **Model structure:** —; no model was built for this record.  
 **Parameters:** 0 extracted.

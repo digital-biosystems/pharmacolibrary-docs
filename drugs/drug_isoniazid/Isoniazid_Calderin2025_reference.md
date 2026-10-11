@@ -23,8 +23,7 @@
 Calderin JM et al., Population pharmacokinetics of pyrazina…, Antimicrobial agents and ch… (2025)
   ·  DOI: [10.1128/aac.00099-25](https://doi.org/10.1128/aac.00099-25)
 
-## Model component
-<dbs-pgx drug="isoniazid" model-id="Isoniazid_Calderin2025_reference" status="extracted" stale="false" population="South African adults with tuberculous meningitis" measured-compound="pyrazinamide, isoniazid" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="isoniazid" model-id="Isoniazid_Calderin2025_reference" status="extracted" stale="false" population="South African adults with tuberculous meningitis" measured-compound="pyrazinamide, isoniazid" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 3 extracted.

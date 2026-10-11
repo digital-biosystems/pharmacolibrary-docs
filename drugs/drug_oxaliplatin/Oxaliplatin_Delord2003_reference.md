@@ -21,8 +21,7 @@
 Delord JP et al., Population pharmacokinetics of oxalipla…, Cancer chemotherapy and pha… (2003)
   ·  DOI: [10.1007/s00280-002-0550-3](https://doi.org/10.1007/s00280-002-0550-3)
 
-## Model component
-<dbs-pgx drug="oxaliplatin" model-id="Oxaliplatin_Delord2003_reference" status="rejected" stale="false" population="advanced colorectal cancer patients" measured-compound="oxaliplatin" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="oxaliplatin" model-id="Oxaliplatin_Delord2003_reference" status="rejected" stale="false" population="advanced colorectal cancer patients" measured-compound="oxaliplatin" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

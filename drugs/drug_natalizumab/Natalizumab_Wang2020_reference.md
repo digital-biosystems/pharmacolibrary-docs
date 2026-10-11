@@ -21,8 +21,7 @@
 Wang Y et al., Population Pharmacokinetics and Pharmac…, Journal of clinical pharmac… (2020)
   ·  DOI: [10.1002/jcph.1590](https://doi.org/10.1002/jcph.1590)
 
-## Model component
-<dbs-pgx drug="natalizumab" model-id="Natalizumab_Wang2020_reference" status="rejected" stale="false" population="" measured-compound="natalizumab" parameterization="apparent" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="natalizumab" model-id="Natalizumab_Wang2020_reference" status="rejected" stale="false" population="" measured-compound="natalizumab" parameterization="apparent" topology="2C"></div>
 
 **Model structure:** 2-compartment; no model was built for this record.  
 **Parameters:** 6 extracted.

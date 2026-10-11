@@ -23,8 +23,7 @@
 Tu YH et al., Pharmacokinetics of trimethoprim in the…, Journal of pharmaceutical s… (1989)
   ·  DOI: [10.1002/jps.2600780709](https://doi.org/10.1002/jps.2600780709)
 
-## Model component
-<dbs-pgx drug="trimethoprim" model-id="Trimethoprim_Tu1989_reference" status="extracted" stale="false" population="male Sprague-Dawley rats" measured-compound="trimethoprim" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="trimethoprim" model-id="Trimethoprim_Tu1989_reference" status="extracted" stale="false" population="male Sprague-Dawley rats" measured-compound="trimethoprim" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 6 extracted.

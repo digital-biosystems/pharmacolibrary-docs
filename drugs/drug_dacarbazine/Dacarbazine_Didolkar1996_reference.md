@@ -20,8 +20,7 @@
 Didolkar MS et al., Pharmacokinetics of dacarbazine in the…, Journal of surgical oncology (1996)
   ·  DOI: [10.1002/(SICI)1096-9098(199611)63:3<148::AID-JSO4>3.0.CO;2-D](https://doi.org/10.1002/(SICI)1096-9098(199611)63:3<148::AID-JSO4>3.0.CO;2-D)
 
-## Model component
-<dbs-pgx drug="dacarbazine" model-id="Dacarbazine_Didolkar1996_reference" status="rejected" stale="false" population="adults with melanoma" measured-compound="dacarbazine" parameterization="mechanistic" topology="general_linear"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="dacarbazine" model-id="Dacarbazine_Didolkar1996_reference" status="rejected" stale="false" population="adults with melanoma" measured-compound="dacarbazine" parameterization="mechanistic" topology="general_linear"></div>
 
 **Model structure:** general linear; no model was built for this record.  
 **Parameters:** 0 extracted.

@@ -29,8 +29,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on paramet
 Clissold SP et al., Proquazone. A review of its pharmacodyn…, Drugs (1987)
   ·  DOI: [10.2165/00003495-198733050-00004](https://doi.org/10.2165/00003495-198733050-00004)
 
-## Model component
-<dbs-pgx drug="ibuprofen" model-id="Ibuprofen_Clissold1987_reference" status="curated_candidate" stale="false" population="patients with rheumatic diseases and pain states" measured-compound="ibuprofen" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="ibuprofen" model-id="Ibuprofen_Clissold1987_reference" status="curated_candidate" stale="false" population="patients with rheumatic diseases and pain states" measured-compound="ibuprofen" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameters:** 2 extracted.

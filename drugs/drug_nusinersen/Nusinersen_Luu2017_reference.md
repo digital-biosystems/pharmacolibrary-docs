@@ -20,8 +20,7 @@
 Luu KT et al., Population Pharmacokinetics of Nusiners…, Journal of clinical pharmac… (2017)
   ·  DOI: [10.1002/jcph.884](https://doi.org/10.1002/jcph.884)
 
-## Model component
-<dbs-pgx drug="nusinersen" model-id="Nusinersen_Luu2017_reference" status="rejected" stale="false" population="pediatric patients with spinal muscular atrophy" measured-compound="nusinersen" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="nusinersen" model-id="Nusinersen_Luu2017_reference" status="rejected" stale="false" population="pediatric patients with spinal muscular atrophy" measured-compound="nusinersen" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

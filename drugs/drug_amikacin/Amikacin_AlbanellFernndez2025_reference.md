@@ -27,8 +27,7 @@
 Albanell-Fernández M et al., A Review of Vancomycin, Gentamicin, and…, Clinical pharmacokinetics (2025)
   ·  DOI: [10.1007/s40262-024-01459-z](https://doi.org/10.1007/s40262-024-01459-z)
 
-## Model component
-<dbs-pgx drug="amikacin" model-id="Amikacin_AlbanellFernndez2025_reference" status="curated_candidate" stale="false" population="neonates and infants with no previous pathologies" measured-compound="amikacin" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="amikacin" model-id="Amikacin_AlbanellFernndez2025_reference" status="curated_candidate" stale="false" population="neonates and infants with no previous pathologies" measured-compound="amikacin" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameters:** 2 extracted.

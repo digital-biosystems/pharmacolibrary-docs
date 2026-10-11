@@ -29,8 +29,7 @@ Simulated as the paper dosed it, the model's terminal half-life differs from the
 Samukawa Y et al., Mechanism-Based Pharmacokinetic-Pharmac…, Biological & pharmaceutical… (2017)
   ·  DOI: [10.1248/bpb.b16-00998](https://doi.org/10.1248/bpb.b16-00998)
 
-## Model component
-<dbs-pgx drug="luseogliflozin" model-id="Luseogliflozin_Samukawa2017_reference" status="extracted" stale="true" population="Japanese patients with type 2 diabetes mellitus" measured-compound="luseogliflozin" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="luseogliflozin" model-id="Luseogliflozin_Samukawa2017_reference" status="extracted" stale="true" population="Japanese patients with type 2 diabetes mellitus" measured-compound="luseogliflozin" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 4 extracted.

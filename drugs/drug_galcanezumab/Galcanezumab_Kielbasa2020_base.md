@@ -31,8 +31,7 @@ Independently confirmed by `gpt-oss:120b`.
 Kielbasa W et al., Population Pharmacokinetics of Galcanez…, Journal of clinical pharmac… (2020)
   ·  DOI: [10.1002/jcph.1511](https://doi.org/10.1002/jcph.1511)
 
-## Model component
-<dbs-pgx drug="galcanezumab" model-id="Galcanezumab_Kielbasa2020_base" status="rejected" stale="true" population="healthy individuals and patients with migraine" measured-compound="galcanezumab" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="galcanezumab" model-id="Galcanezumab_Kielbasa2020_base" status="rejected" stale="true" population="healthy individuals and patients with migraine" measured-compound="galcanezumab" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted, plus 1 covariate effect.

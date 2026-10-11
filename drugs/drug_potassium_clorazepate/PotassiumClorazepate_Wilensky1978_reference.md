@@ -23,8 +23,7 @@
 Wilensky AJ et al., Clorazepate kinetics in treated epilept…, Clinical pharmacology and t… (1978)
   ·  DOI: [10.1002/cpt197824122](https://doi.org/10.1002/cpt197824122)
 
-## Model component
-<dbs-pgx drug="potassium clorazepate" model-id="PotassiumClorazepate_Wilensky1978_reference" status="extracted" stale="false" population="treated epileptic patients" measured-compound="desmethyldiazepam" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="potassium clorazepate" model-id="PotassiumClorazepate_Wilensky1978_reference" status="extracted" stale="false" population="treated epileptic patients" measured-compound="desmethyldiazepam" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 4 extracted.

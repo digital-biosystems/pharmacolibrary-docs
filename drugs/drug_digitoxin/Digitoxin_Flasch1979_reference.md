@@ -32,8 +32,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Flasch H et al., Pharmacokinetics of dihydrodigitoxin in…, Naunyn-Schmiedeberg's archi… (1979)
   ·  DOI: [10.1007/BF00500279](https://doi.org/10.1007/BF00500279)
 
-## Model component
-<dbs-pgx drug="digitoxin" model-id="Digitoxin_Flasch1979_reference" status="rejected" stale="true" population="cats" measured-compound="digitoxin" parameterization="mechanistic" topology="parent_metabolite"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="digitoxin" model-id="Digitoxin_Flasch1979_reference" status="rejected" stale="true" population="cats" measured-compound="digitoxin" parameterization="mechanistic" topology="parent_metabolite"></div>
 
 **Model structure:** parent + metabolite; no model was built for this record.  
 **Parameters:** 1 extracted.

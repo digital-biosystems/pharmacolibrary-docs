@@ -32,8 +32,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 ## Citation
 Katashima M et al., Comparative pharmacokinetic/pharmacodyn…, Drug metabolism and disposi… (1995)
 
-## Model component
-<dbs-pgx drug="lansoprazole" model-id="Lansoprazole_Katashima1995_reference" status="needs_review" stale="true" population="rats" measured-compound="lansoprazole" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="lansoprazole" model-id="Lansoprazole_Katashima1995_reference" status="needs_review" stale="true" population="rats" measured-compound="lansoprazole" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 2 extracted.

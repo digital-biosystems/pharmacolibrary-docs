@@ -25,8 +25,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Seker F et al., Pharmacokinetic Modeling of Intra-arter…, Clinical neuroradiology (2017)
   ·  DOI: [10.1007/s00062-015-0464-1](https://doi.org/10.1007/s00062-015-0464-1)
 
-## Model component
-<dbs-pgx drug="nimodipine" model-id="Nimodipine_Seker2017_reference" status="rejected" stale="false" population="adults with subarachnoid hemorrhage" measured-compound="nimodipine" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="nimodipine" model-id="Nimodipine_Seker2017_reference" status="rejected" stale="false" population="adults with subarachnoid hemorrhage" measured-compound="nimodipine" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 3 extracted.

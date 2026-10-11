@@ -25,8 +25,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Gibbs JP et al., Impact of Target-Mediated Elimination o…, Journal of clinical pharmac… (2017)
   ·  DOI: [10.1002/jcph.840](https://doi.org/10.1002/jcph.840)
 
-## Model component
-<dbs-pgx drug="evolocumab" model-id="Evolocumab_Gibbs2017_random_effects_intersubject_residual_va" status="rejected" stale="false" population="healthy subjects and statin-treated hypercholesterolemic patients" measured-compound="evolocumab" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="evolocumab" model-id="Evolocumab_Gibbs2017_random_effects_intersubject_residual_va" status="rejected" stale="false" population="healthy subjects and statin-treated hypercholesterolemic patients" measured-compound="evolocumab" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 3 extracted.

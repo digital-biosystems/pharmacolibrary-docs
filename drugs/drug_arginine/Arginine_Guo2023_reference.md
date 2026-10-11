@@ -29,8 +29,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on paramet
 Guo C et al., PK/PD model-informed dose selection for…, CPT: pharmacometrics & syst… (2023)
   ·  DOI: [10.1002/psp4.12882](https://doi.org/10.1002/psp4.12882)
 
-## Model component
-<dbs-pgx drug="Arginine" model-id="Arginine_Guo2023_reference" status="extracted" stale="true" population="" measured-compound="arginine" parameterization="apparent" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="Arginine" model-id="Arginine_Guo2023_reference" status="extracted" stale="true" population="" measured-compound="arginine" parameterization="apparent" topology="2C"></div>
 
 **Model structure:** 2-compartment, oral mammillary model — template `PK_2C_enteral`.  
 **Parameters:** 5 extracted.

@@ -31,8 +31,7 @@ Independently confirmed by `gpt-oss:120b`.
 Overgaard RV et al., Levels of circulating semaglutide deter…, Cell reports. Medicine (2021)
   ·  DOI: [10.1016/j.xcrm.2021.100387](https://doi.org/10.1016/j.xcrm.2021.100387)
 
-## Model component
-<dbs-pgx drug="semaglutide" model-id="Semaglutide_Overgaard2021v2_reference" status="rejected" stale="true" population="adults with type 2 diabetes" measured-compound="semaglutide" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="semaglutide" model-id="Semaglutide_Overgaard2021v2_reference" status="rejected" stale="true" population="adults with type 2 diabetes" measured-compound="semaglutide" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

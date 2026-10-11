@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Baklouti S et al., Population pharmacokinetic modelling of…, British journal of clinical… (2026)
   ·  DOI: [10.1002/bcp.70434](https://doi.org/10.1002/bcp.70434)
 
-## Model component
-<dbs-pgx drug="amoxicillin" model-id="Amoxicillin_Baklouti2026_reference" status="extracted" stale="true" population="breastfeeding mothers" measured-compound="amoxicillin" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="amoxicillin" model-id="Amoxicillin_Baklouti2026_reference" status="extracted" stale="true" population="breastfeeding mothers" measured-compound="amoxicillin" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 5 extracted.

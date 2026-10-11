@@ -22,8 +22,7 @@
 Agersø H et al., The dosing solution influence on the ph…, European journal of pharmac… (2003)
   ·  DOI: [10.1016/j.ejps.2003.08.001](https://doi.org/10.1016/j.ejps.2003.08.001)
 
-## Model component
-<dbs-pgx drug="degarelix" model-id="Degarelix_Agers2003_reference" status="rejected" stale="false" population="male beagle dogs" measured-compound="degarelix" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="degarelix" model-id="Degarelix_Agers2003_reference" status="rejected" stale="false" population="male beagle dogs" measured-compound="degarelix" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 1 extracted.

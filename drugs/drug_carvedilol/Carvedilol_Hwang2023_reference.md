@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Hwang S et al., Population Pharmacokinetic-Pharmacodyna…, Journal of Korean medical s… (2023)
   ·  DOI: [10.3346/jkms.2023.38.e173](https://doi.org/10.3346/jkms.2023.38.e173)
 
-## Model component
-<dbs-pgx drug="carvedilol" model-id="Carvedilol_Hwang2023_reference" status="rejected" stale="true" population="healthy adults" measured-compound="carvedilol" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="carvedilol" model-id="Carvedilol_Hwang2023_reference" status="rejected" stale="true" population="healthy adults" measured-compound="carvedilol" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

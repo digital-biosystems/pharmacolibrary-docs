@@ -20,8 +20,7 @@
 Chen C et al., Population and Noncompartmental Pharmac…, Clinical and translational… (2020)
   ·  DOI: [10.1111/cts.12780](https://doi.org/10.1111/cts.12780)
 
-## Model component
-<dbs-pgx drug="sodium oxybate" model-id="SodiumOxybate_Chen2020_reference" status="rejected" stale="false" population="children and adults with narcolepsy and healthy adults" measured-compound="sodium oxybate" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="sodium oxybate" model-id="SodiumOxybate_Chen2020_reference" status="rejected" stale="false" population="children and adults with narcolepsy and healthy adults" measured-compound="sodium oxybate" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment; no model was built for this record.  
 **Parameters:** 7 extracted, plus 3 covariate effects.

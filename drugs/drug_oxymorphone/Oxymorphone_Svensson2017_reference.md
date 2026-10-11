@@ -29,8 +29,7 @@ The model builder substituted default values for k21 and Tlag rather than extrac
 Svensson RJ et al., Improved power for TB Phase IIa trials…, The Journal of antimicrobia… (2017)
   ·  DOI: [10.1093/jac/dkx129](https://doi.org/10.1093/jac/dkx129)
 
-## Model component
-<dbs-pgx drug="oxymorphone" model-id="Oxymorphone_Svensson2017_reference" status="extracted" stale="true" population="" measured-compound="oxymorphone" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="oxymorphone" model-id="Oxymorphone_Svensson2017_reference" status="extracted" stale="true" population="" measured-compound="oxymorphone" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 3 extracted.

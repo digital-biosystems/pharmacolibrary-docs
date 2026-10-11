@@ -23,8 +23,7 @@
 Magorian T et al., The pharmacokinetics and neuromuscular…, Anesthesia and analgesia (1995)
   ·  DOI: [10.1097/00000539-199504000-00018](https://doi.org/10.1097/00000539-199504000-00018)
 
-## Model component
-<dbs-pgx drug="Rocuronium" model-id="Rocuronium_Magorian1995_reference" status="needs_review" stale="false" population="patients with liver disease and healthy controls" measured-compound="rocuronium" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="Rocuronium" model-id="Rocuronium_Magorian1995_reference" status="needs_review" stale="false" population="patients with liver disease and healthy controls" measured-compound="rocuronium" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 4 extracted.

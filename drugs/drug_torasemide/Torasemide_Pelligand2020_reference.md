@@ -32,8 +32,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Pelligand L et al., Population Pharmacokinetics and Pharmac…, Frontiers in veterinary sci… (2020)
   ·  DOI: [10.3389/fvets.2020.00151](https://doi.org/10.3389/fvets.2020.00151)
 
-## Model component
-<dbs-pgx drug="torasemide" model-id="Torasemide_Pelligand2020_reference" status="needs_review" stale="true" population="healthy dogs" measured-compound="torasemide" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="torasemide" model-id="Torasemide_Pelligand2020_reference" status="needs_review" stale="true" population="healthy dogs" measured-compound="torasemide" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 1 extracted.

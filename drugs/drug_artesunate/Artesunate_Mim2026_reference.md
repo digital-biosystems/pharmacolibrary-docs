@@ -23,8 +23,7 @@
 Mim SR et al., Pharmacokinetic and pharmacodynamic mod…, Antimicrobial agents and ch… (2026)
   ·  DOI: [10.1128/aac.01717-25](https://doi.org/10.1128/aac.01717-25)
 
-## Model component
-<dbs-pgx drug="artesunate" model-id="Artesunate_Mim2026_reference" status="rejected" stale="false" population="P. berghei-infected Swiss mice" measured-compound="artesunate" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="artesunate" model-id="Artesunate_Mim2026_reference" status="rejected" stale="false" population="P. berghei-infected Swiss mice" measured-compound="artesunate" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 4 extracted.

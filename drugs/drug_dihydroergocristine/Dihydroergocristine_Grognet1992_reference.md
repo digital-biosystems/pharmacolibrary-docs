@@ -32,8 +32,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the val
 ## Citation
 Grognet JM et al., [The pharmacokinetics of dihydroergocri…, Arzneimittel-Forschung (1992)
 
-## Model component
-<dbs-pgx drug="dihydroergocristine" model-id="Dihydroergocristine_Grognet1992_reference" status="extracted" stale="true" population="rats" measured-compound="dihydroergocristine" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="dihydroergocristine" model-id="Dihydroergocristine_Grognet1992_reference" status="extracted" stale="true" population="rats" measured-compound="dihydroergocristine" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameters:** 3 extracted.

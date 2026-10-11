@@ -21,8 +21,7 @@
 Yassen A et al., Mechanism-based PK/PD modeling of the r…, Clinical pharmacology and t… (2007)
   ·  DOI: [10.1038/sj.clpt.6100025](https://doi.org/10.1038/sj.clpt.6100025)
 
-## Model component
-<dbs-pgx drug="buprenorphine" model-id="Buprenorphine_Yassen2007_reference" status="needs_review" stale="false" population="healthy volunteers" measured-compound="buprenorphine" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="buprenorphine" model-id="Buprenorphine_Yassen2007_reference" status="needs_review" stale="false" population="healthy volunteers" measured-compound="buprenorphine" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 5 extracted.

@@ -21,8 +21,7 @@
 Ali AM et al., Pharmacokinetics and cardiac safety of…, Antimicrobial agents and ch… (2024)
   ·  DOI: [10.1128/aac.00794-23](https://doi.org/10.1128/aac.00794-23)
 
-## Model component
-<dbs-pgx drug="clofazimine" model-id="Clofazimine_Ali2024_reference" status="rejected" stale="false" population="children with rifampicin-resistant tuberculosis" measured-compound="clofazimine" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="clofazimine" model-id="Clofazimine_Ali2024_reference" status="rejected" stale="false" population="children with rifampicin-resistant tuberculosis" measured-compound="clofazimine" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

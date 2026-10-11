@@ -30,8 +30,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 ## Citation
 Höglund P et al., Pharmacokinetics of diltiazem and its m…, Therapeutic drug monitoring (1989)
 
-## Model component
-<dbs-pgx drug="diltiazem" model-id="Diltiazem_Hglund1989_reference" status="rejected" stale="true" population="healthy middle-aged volunteers" measured-compound="diltiazem" parameterization="mechanistic" topology="general_linear"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="diltiazem" model-id="Diltiazem_Hglund1989_reference" status="rejected" stale="true" population="healthy middle-aged volunteers" measured-compound="diltiazem" parameterization="mechanistic" topology="general_linear"></div>
 
 **Model structure:** general linear; no model was built for this record.  
 **Parameters:** 2 extracted.

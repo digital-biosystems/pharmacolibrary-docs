@@ -20,8 +20,7 @@
 Garrett M et al., Population pharmacokinetics of inotuzum…, Journal of pharmacokinetics… (2019)
   ·  DOI: [10.1007/s10928-018-9614-9](https://doi.org/10.1007/s10928-018-9614-9)
 
-## Model component
-<dbs-pgx drug="inotuzumab ozogamicin" model-id="InotuzumabOzogamicin_Garrett2019_reference" status="needs_review" stale="false" population="patients with relapsed/refractory B-cell ALL or NHL" measured-compound="inotuzumab ozogamicin" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="inotuzumab ozogamicin" model-id="InotuzumabOzogamicin_Garrett2019_reference" status="needs_review" stale="false" population="patients with relapsed/refractory B-cell ALL or NHL" measured-compound="inotuzumab ozogamicin" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment; no model was built for this record.  
 **Parameters:** 4 extracted.

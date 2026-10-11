@@ -21,8 +21,7 @@
 Perry G et al., Pharmacokinetics of rufloxacin in patie…, Antimicrobial agents and ch… (1993)
   ·  DOI: [10.1128/AAC.37.4.637](https://doi.org/10.1128/AAC.37.4.637)
 
-## Model component
-<dbs-pgx drug="rufloxacin" model-id="Rufloxacin_Perry1993_reference" status="needs_review" stale="false" population="patients with renal impairment and normal subjects" measured-compound="rufloxacin" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="rufloxacin" model-id="Rufloxacin_Perry1993_reference" status="needs_review" stale="false" population="patients with renal impairment and normal subjects" measured-compound="rufloxacin" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 2 extracted.

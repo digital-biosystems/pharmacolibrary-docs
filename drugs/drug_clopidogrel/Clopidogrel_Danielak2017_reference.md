@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on `parame
 Danielak D et al., Influence of genetic co-factors on the…, European journal of clinica… (2017)
   ·  DOI: [10.1007/s00228-017-2334-z](https://doi.org/10.1007/s00228-017-2334-z)
 
-## Model component
-<dbs-pgx drug="clopidogrel" model-id="Clopidogrel_Danielak2017_reference" status="rejected" stale="true" population="patients undergoing elective coronarography or percutaneous coronary intervention" measured-compound="clopidogrel" parameterization="apparent" topology="parent_metabolite"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="clopidogrel" model-id="Clopidogrel_Danielak2017_reference" status="rejected" stale="true" population="patients undergoing elective coronarography or percutaneous coronary intervention" measured-compound="clopidogrel" parameterization="apparent" topology="parent_metabolite"></div>
 
 **Model structure:** parent + metabolite; no model was built for this record.  
 **Parameters:** 6 extracted.

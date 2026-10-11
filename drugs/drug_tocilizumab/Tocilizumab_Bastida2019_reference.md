@@ -20,8 +20,7 @@
 Bastida C et al., Exposure-response modeling of tocilizum…, British journal of clinical… (2019)
   ·  DOI: [10.1111/bcp.13954](https://doi.org/10.1111/bcp.13954)
 
-## Model component
-<dbs-pgx drug="tocilizumab" model-id="Tocilizumab_Bastida2019_reference" status="needs_review" stale="false" population="adults with rheumatoid arthritis" measured-compound="tocilizumab" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="tocilizumab" model-id="Tocilizumab_Bastida2019_reference" status="needs_review" stale="false" population="adults with rheumatoid arthritis" measured-compound="tocilizumab" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 2 extracted.

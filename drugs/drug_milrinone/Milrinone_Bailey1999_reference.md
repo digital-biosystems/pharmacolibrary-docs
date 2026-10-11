@@ -25,8 +25,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Bailey JM et al., The pharmacokinetics of milrinone in pe…, Anesthesiology (1999)
   ·  DOI: [10.1097/00000542-199904000-00014](https://doi.org/10.1097/00000542-199904000-00014)
 
-## Model component
-<dbs-pgx drug="milrinone" model-id="Milrinone_Bailey1999_reference" status="rejected" stale="false" population="pediatric patients after cardiac surgery" measured-compound="milrinone" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="milrinone" model-id="Milrinone_Bailey1999_reference" status="rejected" stale="false" population="pediatric patients after cardiac surgery" measured-compound="milrinone" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

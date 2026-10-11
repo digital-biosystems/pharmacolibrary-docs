@@ -30,8 +30,7 @@ No clearance, volume or rate constant of the model is reported in it. No paramet
 Moffett BS et al., Fosphenytoin Population Pharmacokinetic…, Pediatric critical care med… (2018)
   ·  DOI: [10.1097/PCC.0000000000001627](https://doi.org/10.1097/PCC.0000000000001627)
 
-## Model component
-<dbs-pgx drug="fosphenytoin" model-id="Fosphenytoin_Moffett2018_reference" status="rejected" stale="true" population="acutely ill pediatric patients" measured-compound="phenytoin" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="fosphenytoin" model-id="Fosphenytoin_Moffett2018_reference" status="rejected" stale="true" population="acutely ill pediatric patients" measured-compound="phenytoin" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

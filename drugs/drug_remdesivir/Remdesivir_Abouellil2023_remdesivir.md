@@ -29,8 +29,7 @@ Independently confirmed by `gpt-oss:120b`.
 Abouellil A et al., A population pharmacokinetic model of r…, Naunyn-Schmiedeberg's archi… (2023)
   ·  DOI: [10.1007/s00210-022-02292-6](https://doi.org/10.1007/s00210-022-02292-6)
 
-## Model component
-<dbs-pgx drug="remdesivir" model-id="Remdesivir_Abouellil2023_remdesivir" status="needs_review" stale="false" population="healthy adults" measured-compound="remdesivir" parameterization="mechanistic" topology="general_linear"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="remdesivir" model-id="Remdesivir_Abouellil2023_remdesivir" status="needs_review" stale="false" population="healthy adults" measured-compound="remdesivir" parameterization="mechanistic" topology="general_linear"></div>
 
 **Model structure:** 2-compartment general linear model (non-mammillary edges) — template `PK_General_Linear`.  
 **Parameters:** 4 extracted.

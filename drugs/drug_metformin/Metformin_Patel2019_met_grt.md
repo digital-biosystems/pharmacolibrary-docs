@@ -33,8 +33,7 @@ Independently confirmed by `gpt-oss:120b`.
 Patel O et al., Pharmacokinetic Interaction of Green Ro…, Frontiers in pharmacology (2019)
   ·  DOI: [10.3389/fphar.2019.01243](https://doi.org/10.3389/fphar.2019.01243)
 
-## Model component
-<dbs-pgx drug="metformin" model-id="Metformin_Patel2019_met_grt" status="rejected" stale="true" population="Wistar rats" measured-compound="metformin" parameterization="apparent" topology="3C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="metformin" model-id="Metformin_Patel2019_met_grt" status="rejected" stale="true" population="Wistar rats" measured-compound="metformin" parameterization="apparent" topology="3C"></div>
 
 **Model structure:** 3-compartment; no model was built for this record.  
 **Parameters:** 11 extracted.

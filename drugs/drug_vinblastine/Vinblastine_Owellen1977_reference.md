@@ -30,8 +30,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 ## Citation
 Owellen RJ et al., Pharmacokinetics and metabolism of vinb…, Cancer research (1977)
 
-## Model component
-<dbs-pgx drug="vinblastine" model-id="Vinblastine_Owellen1977_reference" status="needs_review" stale="true" population="humans" measured-compound="vinblastine" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="vinblastine" model-id="Vinblastine_Owellen1977_reference" status="needs_review" stale="true" population="humans" measured-compound="vinblastine" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment; no model was built for this record.  
 **Parameters:** 6 extracted.

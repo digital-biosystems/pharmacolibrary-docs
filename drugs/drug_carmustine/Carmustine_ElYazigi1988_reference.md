@@ -31,8 +31,7 @@ The record reports BCNU disposition in rabbits with a fast-phase macro-rate cons
 El-Yazigi A et al., Capillary gas chromatography and thermi…, Pharmaceutical research (1988)
   ·  DOI: [10.1023/a:1015989612562](https://doi.org/10.1023/a:1015989612562)
 
-## Model component
-<dbs-pgx drug="carmustine" model-id="Carmustine_ElYazigi1988_reference" status="rejected" stale="true" population="rabbits" measured-compound="BCNU" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="carmustine" model-id="Carmustine_ElYazigi1988_reference" status="rejected" stale="true" population="rabbits" measured-compound="BCNU" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 3 extracted.

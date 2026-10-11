@@ -27,8 +27,7 @@ The record contains a presystemic simvastatin acid metabolite formed from simvas
 Tsamandouras N et al., Development and Application of a Mechan…, Pharmaceutical research (2015)
   ·  DOI: [10.1007/s11095-014-1581-2](https://doi.org/10.1007/s11095-014-1581-2)
 
-## Model component
-<dbs-pgx drug="simvastatin" model-id="Simvastatin_Tsamandouras2015_reference" status="rejected" stale="false" population="healthy volunteers" measured-compound="simvastatin" parameterization="mechanistic" topology="parent_metabolite"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="simvastatin" model-id="Simvastatin_Tsamandouras2015_reference" status="rejected" stale="false" population="healthy volunteers" measured-compound="simvastatin" parameterization="mechanistic" topology="parent_metabolite"></div>
 
 **Model structure:** parent + metabolite; no model was built for this record.  
 **Parameters:** 8 extracted, plus 2 covariate effects.

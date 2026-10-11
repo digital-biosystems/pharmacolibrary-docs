@@ -20,8 +20,7 @@
 Nauta EH et al., Pharmacokinetics of flucloxacillin and…, British journal of clinical… (1975)
   ·  DOI: [10.1111/j.1365-2125.1975.tb01566.x](https://doi.org/10.1111/j.1365-2125.1975.tb01566.x)
 
-## Model component
-<dbs-pgx drug="cloxacillin" model-id="Cloxacillin_Nauta1975_reference" status="needs_review" stale="false" population="healthy subjects and patients on chronic intermittent haemodialysis" measured-compound="cloxacillin" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="cloxacillin" model-id="Cloxacillin_Nauta1975_reference" status="needs_review" stale="false" population="healthy subjects and patients on chronic intermittent haemodialysis" measured-compound="cloxacillin" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 2 extracted.

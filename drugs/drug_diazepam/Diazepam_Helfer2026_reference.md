@@ -29,8 +29,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the val
 Helfer VE et al., Population Pharmacokinetics and Dosing…, Journal of clinical pharmac… (2026)
   ·  DOI: [10.1002/jcph.70204](https://doi.org/10.1002/jcph.70204)
 
-## Model component
-<dbs-pgx drug="diazepam" model-id="Diazepam_Helfer2026_reference" status="rejected" stale="true" population="" measured-compound="diazepam" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="diazepam" model-id="Diazepam_Helfer2026_reference" status="rejected" stale="true" population="" measured-compound="diazepam" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment; no model was built for this record.  
 **Parameters:** 3 extracted.

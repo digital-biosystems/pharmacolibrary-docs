@@ -29,8 +29,7 @@ Independently confirmed by `gpt-oss:120b`.
 Sridharan K et al., Evaluation of pharmacokinetics of warfa…, ADMET & DMPK (2021)
   ·  DOI: [10.5599/admet.909](https://doi.org/10.5599/admet.909)
 
-## Model component
-<dbs-pgx drug="warfarin" model-id="Warfarin_Sridharan2021_reference" status="extracted" stale="true" population="patients receiving warfarin" measured-compound="warfarin" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="warfarin" model-id="Warfarin_Sridharan2021_reference" status="extracted" stale="true" population="patients receiving warfarin" measured-compound="warfarin" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameters:** 2 extracted.

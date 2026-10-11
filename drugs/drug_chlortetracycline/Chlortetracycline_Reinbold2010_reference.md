@@ -32,8 +32,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Reinbold JB et al., Plasma pharmacokinetics of oral chlorte…, Journal of veterinary pharm… (2010)
   ·  DOI: [10.1111/j.1365-2885.2009.1116.x](https://doi.org/10.1111/j.1365-2885.2009.1116.x)
 
-## Model component
-<dbs-pgx drug="chlortetracycline" model-id="Chlortetracycline_Reinbold2010_reference" status="needs_review" stale="true" population="group fed, ruminating, Holstein steers" measured-compound="chlortetracycline" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="chlortetracycline" model-id="Chlortetracycline_Reinbold2010_reference" status="needs_review" stale="true" population="group fed, ruminating, Holstein steers" measured-compound="chlortetracycline" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 7 extracted.

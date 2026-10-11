@@ -23,8 +23,7 @@
 Albarellos GA et al., Effect of food on the pharmacokinetics…, Journal of veterinary pharm… (2020)
   ·  DOI: [10.1111/jvp.12854](https://doi.org/10.1111/jvp.12854)
 
-## Model component
-<dbs-pgx drug="cefuroxime" model-id="Cefuroxime_Albarellos2020_reference" status="needs_review" stale="false" population="Beagle dogs" measured-compound="cefuroxime axetil" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="cefuroxime" model-id="Cefuroxime_Albarellos2020_reference" status="needs_review" stale="false" population="Beagle dogs" measured-compound="cefuroxime axetil" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 8 extracted.

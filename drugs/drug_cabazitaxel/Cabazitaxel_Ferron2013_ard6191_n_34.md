@@ -26,8 +26,7 @@ Simulated as the paper dosed it, the model's terminal half-life differs from the
 Ferron GM et al., Population pharmacokinetics of cabazita…, Cancer chemotherapy and pha… (2013)
   ·  DOI: [10.1007/s00280-012-2058-9](https://doi.org/10.1007/s00280-012-2058-9)
 
-## Model component
-<dbs-pgx drug="cabazitaxel" model-id="Cabazitaxel_Ferron2013_ard6191_n_34" status="needs_review" stale="false" population="patients with advanced solid tumors" measured-compound="cabazitaxel" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="cabazitaxel" model-id="Cabazitaxel_Ferron2013_ard6191_n_34" status="needs_review" stale="false" population="patients with advanced solid tumors" measured-compound="cabazitaxel" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 6 extracted.

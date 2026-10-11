@@ -33,8 +33,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the val
 Larsen MS et al., Pharmacokinetic/Pharmacodynamic Relatio…, Pharmaceutical research (2016)
   ·  DOI: [10.1007/s11095-016-1859-7](https://doi.org/10.1007/s11095-016-1859-7)
 
-## Model component
-<dbs-pgx drug="gabapentin" model-id="Gabapentin_Larsen2016_reference" status="rejected" stale="true" population="rats with CFA-induced inflammatory hyperalgesia" measured-compound="gabapentin" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="gabapentin" model-id="Gabapentin_Larsen2016_reference" status="rejected" stale="true" population="rats with CFA-induced inflammatory hyperalgesia" measured-compound="gabapentin" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 5 extracted.

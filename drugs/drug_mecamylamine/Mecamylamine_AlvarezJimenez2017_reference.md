@@ -30,8 +30,7 @@ Independently confirmed by `gpt-oss:120b`.
 Alvarez-Jimenez R et al., Pharmacokinetics and pharmacodynamics o…, Journal of psychopharmacolo… (2017)
   ·  DOI: [10.1177/0269881116681417](https://doi.org/10.1177/0269881116681417)
 
-## Model component
-<dbs-pgx drug="mecamylamine" model-id="Mecamylamine_AlvarezJimenez2017_reference" status="rejected" stale="true" population="healthy adults" measured-compound="mecamylamine" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="mecamylamine" model-id="Mecamylamine_AlvarezJimenez2017_reference" status="rejected" stale="true" population="healthy adults" measured-compound="mecamylamine" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

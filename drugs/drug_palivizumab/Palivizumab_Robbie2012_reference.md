@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Robbie GJ et al., Population pharmacokinetics of palivizu…, Antimicrobial agents and ch… (2012)
   ·  DOI: [10.1128/AAC.06446-11](https://doi.org/10.1128/AAC.06446-11)
 
-## Model component
-<dbs-pgx drug="palivizumab" model-id="Palivizumab_Robbie2012_reference" status="needs_review" stale="true" population="adults and children" measured-compound="palivizumab" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="palivizumab" model-id="Palivizumab_Robbie2012_reference" status="needs_review" stale="true" population="adults and children" measured-compound="palivizumab" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment; no model was built for this record.  
 **Parameters:** 5 extracted.

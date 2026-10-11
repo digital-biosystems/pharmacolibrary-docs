@@ -31,8 +31,7 @@ Independently confirmed by `gpt-oss:120b`.
 Hirai T et al., Kinetic-pharmacodynamic model of warfar…, British journal of clinical… (2024)
   ·  DOI: [10.1111/bcp.15967](https://doi.org/10.1111/bcp.15967)
 
-## Model component
-<dbs-pgx drug="warfarin" model-id="Warfarin_Hirai2024_estimates" status="needs_review" stale="true" population="Japanese adult patients" measured-compound="warfarin" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="warfarin" model-id="Warfarin_Hirai2024_estimates" status="needs_review" stale="true" population="Japanese adult patients" measured-compound="warfarin" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 4 extracted, plus 1 covariate effect.

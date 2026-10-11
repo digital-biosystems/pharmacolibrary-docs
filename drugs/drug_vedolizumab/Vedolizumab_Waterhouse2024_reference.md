@@ -20,8 +20,7 @@
 Waterhouse T et al., Population pharmacokinetic modeling of…, Pharmacology research & per… (2024)
   ·  DOI: [10.1002/prp2.1257](https://doi.org/10.1002/prp2.1257)
 
-## Model component
-<dbs-pgx drug="vedolizumab" model-id="Vedolizumab_Waterhouse2024_reference" status="rejected" stale="false" population="adults with allogeneic hematopoietic stem cell transplant" measured-compound="vedolizumab" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="vedolizumab" model-id="Vedolizumab_Waterhouse2024_reference" status="rejected" stale="false" population="adults with allogeneic hematopoietic stem cell transplant" measured-compound="vedolizumab" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 1 extracted.

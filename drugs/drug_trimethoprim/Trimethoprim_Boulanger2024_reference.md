@@ -23,8 +23,7 @@
 Boulanger M et al., Pharmacokinetic modeling of sulfamethox…, Poultry science (2024)
   ·  DOI: [10.1016/j.psj.2024.104200](https://doi.org/10.1016/j.psj.2024.104200)
 
-## Model component
-<dbs-pgx drug="trimethoprim" model-id="Trimethoprim_Boulanger2024_reference" status="rejected" stale="false" population="broilers" measured-compound="trimethoprim" parameterization="mechanistic" topology="general_linear"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="trimethoprim" model-id="Trimethoprim_Boulanger2024_reference" status="rejected" stale="false" population="broilers" measured-compound="trimethoprim" parameterization="mechanistic" topology="general_linear"></div>
 
 **Model structure:** general linear; no model was built for this record.  
 **Parameters:** 9 extracted.

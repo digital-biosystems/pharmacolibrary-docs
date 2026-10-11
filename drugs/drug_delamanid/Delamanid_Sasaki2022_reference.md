@@ -20,8 +20,7 @@
 Sasaki T et al., Population Pharmacokinetic and Concentr…, Antimicrobial agents and ch… (2022)
   ·  DOI: [10.1128/AAC.01608-21](https://doi.org/10.1128/AAC.01608-21)
 
-## Model component
-<dbs-pgx drug="delamanid" model-id="Delamanid_Sasaki2022_reference" status="rejected" stale="false" population="pediatric participants with multidrug-resistant tuberculosis" measured-compound="delamanid" parameterization="mechanistic" topology="parent_metabolite"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="delamanid" model-id="Delamanid_Sasaki2022_reference" status="rejected" stale="false" population="pediatric participants with multidrug-resistant tuberculosis" measured-compound="delamanid" parameterization="mechanistic" topology="parent_metabolite"></div>
 
 **Model structure:** parent + metabolite; no model was built for this record.  
 **Parameters:** 0 extracted.

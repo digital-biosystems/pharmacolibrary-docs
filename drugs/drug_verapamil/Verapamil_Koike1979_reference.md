@@ -29,8 +29,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 ## Citation
 Koike Y et al., Pharmacokinetics of verapamil in man, Research communications in… (1979)
 
-## Model component
-<dbs-pgx drug="verapamil" model-id="Verapamil_Koike1979_reference" status="rejected" stale="true" population="healthy subjects" measured-compound="verapamil" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="verapamil" model-id="Verapamil_Koike1979_reference" status="rejected" stale="true" population="healthy subjects" measured-compound="verapamil" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 7 extracted.

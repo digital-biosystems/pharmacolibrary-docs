@@ -29,8 +29,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on paramet
 Bertin S et al., Population Pharmacokinetics of Levosime…, Clinical pharmacokinetics (2026)
   ·  DOI: [10.1007/s40262-025-01591-4](https://doi.org/10.1007/s40262-025-01591-4)
 
-## Model component
-<dbs-pgx drug="Calcium" model-id="Calcium_Bertin2026_reference" status="extracted" stale="true" population="" measured-compound="calcium" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="Calcium" model-id="Calcium_Bertin2026_reference" status="extracted" stale="true" population="" measured-compound="calcium" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameters:** 2 extracted.

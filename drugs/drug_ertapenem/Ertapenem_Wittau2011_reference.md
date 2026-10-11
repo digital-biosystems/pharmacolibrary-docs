@@ -21,8 +21,7 @@
 Wittau M et al., Pharmacokinetics of ertapenem in colore…, Chemotherapy (2011)
   ·  DOI: [10.1159/000333377](https://doi.org/10.1159/000333377)
 
-## Model component
-<dbs-pgx drug="ertapenem" model-id="Ertapenem_Wittau2011_reference" status="rejected" stale="false" population="patients with colorectal surgery" measured-compound="ertapenem" parameterization="apparent" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="ertapenem" model-id="Ertapenem_Wittau2011_reference" status="rejected" stale="false" population="patients with colorectal surgery" measured-compound="ertapenem" parameterization="apparent" topology="2C"></div>
 
 **Model structure:** 2-compartment; no model was built for this record.  
 **Parameters:** 4 extracted, plus 1 covariate effect.

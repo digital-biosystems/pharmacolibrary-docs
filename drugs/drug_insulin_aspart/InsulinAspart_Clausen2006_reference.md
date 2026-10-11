@@ -32,8 +32,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Clausen WH et al., Within-patient variation of the pharmac…, Diabetologia (2006)
   ·  DOI: [10.1007/s00125-006-0327-z](https://doi.org/10.1007/s00125-006-0327-z)
 
-## Model component
-<dbs-pgx drug="insulin aspart" model-id="InsulinAspart_Clausen2006_reference" status="needs_review" stale="true" population="type 1 diabetes subjects" measured-compound="insulin aspart" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="insulin aspart" model-id="InsulinAspart_Clausen2006_reference" status="needs_review" stale="true" population="type 1 diabetes subjects" measured-compound="insulin aspart" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 6 extracted.

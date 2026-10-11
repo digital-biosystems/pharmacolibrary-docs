@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on bioavai
 Fiedler-Kelly JB et al., Population pharmacokinetic modelling an…, British journal of clinical… (2019)
   ·  DOI: [10.1111/bcp.14096](https://doi.org/10.1111/bcp.14096)
 
-## Model component
-<dbs-pgx drug="fremanezumab" model-id="Fremanezumab_FiedlerKelly2019_reference" status="extracted" stale="true" population="healthy subjects and patients with migraine" measured-compound="fremanezumab" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="fremanezumab" model-id="Fremanezumab_FiedlerKelly2019_reference" status="extracted" stale="true" population="healthy subjects and patients with migraine" measured-compound="fremanezumab" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment, oral mammillary model — template `PK_2C_enteral`.  
 **Parameters:** 6 extracted, plus 2 covariate effects.

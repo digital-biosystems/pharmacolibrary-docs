@@ -22,8 +22,7 @@
 Yang B et al., Virtual population pharmacokinetic usin…, Asian journal of pharmaceut… (2017)
   ·  DOI: [10.1016/j.ajps.2016.03.003](https://doi.org/10.1016/j.ajps.2016.03.003)
 
-## Model component
-<dbs-pgx drug="lacidipine" model-id="Lacidipine_Yang2017_reference" status="rejected" stale="false" population="healthy beagle dogs" measured-compound="lacidipine" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="lacidipine" model-id="Lacidipine_Yang2017_reference" status="rejected" stale="false" population="healthy beagle dogs" measured-compound="lacidipine" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 6 extracted.

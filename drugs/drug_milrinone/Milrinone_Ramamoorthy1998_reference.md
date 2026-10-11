@@ -25,8 +25,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Ramamoorthy C et al., Pharmacokinetics and side effects of mi…, Anesthesia and analgesia (1998)
   ·  DOI: [10.1097/00000539-199802000-00011](https://doi.org/10.1097/00000539-199802000-00011)
 
-## Model component
-<dbs-pgx drug="milrinone" model-id="Milrinone_Ramamoorthy1998_reference" status="rejected" stale="false" population="infants and children after open heart surgery" measured-compound="milrinone" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="milrinone" model-id="Milrinone_Ramamoorthy1998_reference" status="rejected" stale="false" population="infants and children after open heart surgery" measured-compound="milrinone" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 3 extracted.

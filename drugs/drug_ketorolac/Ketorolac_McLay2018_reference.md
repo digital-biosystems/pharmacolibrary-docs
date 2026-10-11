@@ -21,8 +21,7 @@
 McLay JS et al., The pharmacokinetics of intravenous ket…, Paediatric anaesthesia (2018)
   ·  DOI: [10.1111/pan.13302](https://doi.org/10.1111/pan.13302)
 
-## Model component
-<dbs-pgx drug="ketorolac" model-id="Ketorolac_McLay2018_reference" status="rejected" stale="false" population="children aged 2 months to 16 years" measured-compound="ketorolac" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="ketorolac" model-id="Ketorolac_McLay2018_reference" status="rejected" stale="false" population="children aged 2 months to 16 years" measured-compound="ketorolac" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 3 extracted.

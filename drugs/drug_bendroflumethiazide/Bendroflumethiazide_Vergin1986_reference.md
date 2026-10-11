@@ -29,8 +29,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the lin
 ## Citation
 Vergin H et al., [Pharmacokinetic studies and bioavailab…, Arzneimittel-Forschung (1986)
 
-## Model component
-<dbs-pgx drug="bendroflumethiazide" model-id="Bendroflumethiazide_Vergin1986_reference" status="needs_review" stale="true" population="healthy volunteers" measured-compound="bendroflumethiazide" parameterization="mechanistic" topology="parent_metabolite"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="bendroflumethiazide" model-id="Bendroflumethiazide_Vergin1986_reference" status="needs_review" stale="true" population="healthy volunteers" measured-compound="bendroflumethiazide" parameterization="mechanistic" topology="parent_metabolite"></div>
 
 **Model structure:** parent + metabolite; no model was built for this record.  
 **Parameters:** 2 extracted.

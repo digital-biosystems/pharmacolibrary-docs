@@ -27,8 +27,7 @@ Nothing in the extracted data describes the drug's disposition, so there is no m
 Weber LW; Ernst SW; Stahl BU; Rozman K et al. (1993). Fundamental and applied toxicology : official journal of the Society of Toxicology 21
   ·  DOI: [10.1006/faat.1993.1129](https://doi.org/10.1006/faat.1993.1129)
 
-## Model component
-<dbs-pgx drug="2378_tetrachlorodibenzo_p_dioxin" model-id="D_2378TetrachlorodibenzoPDioxin_Weber1993_reference" status="rejected" stale="false" population="male Sprague-Dawley rats" measured-compound="2,3,7,8-tetrachlorodibenzo-p-dioxin" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="2378_tetrachlorodibenzo_p_dioxin" model-id="D_2378TetrachlorodibenzoPDioxin_Weber1993_reference" status="rejected" stale="false" population="male Sprague-Dawley rats" measured-compound="2,3,7,8-tetrachlorodibenzo-p-dioxin" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

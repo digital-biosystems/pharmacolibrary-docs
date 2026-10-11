@@ -21,8 +21,7 @@
 Zuppa AF et al., Population pharmacokinetics of ketorola…, American journal of therape… (2009)
   ·  DOI: [10.1097/MJT.0b013e31818071df](https://doi.org/10.1097/MJT.0b013e31818071df)
 
-## Model component
-<dbs-pgx drug="ketorolac" model-id="Ketorolac_Zuppa2009_reference" status="rejected" stale="false" population="neonates and young infants" measured-compound="ketorolac" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="ketorolac" model-id="Ketorolac_Zuppa2009_reference" status="rejected" stale="false" population="neonates and young infants" measured-compound="ketorolac" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment; no model was built for this record.  
 **Parameters:** 4 extracted.

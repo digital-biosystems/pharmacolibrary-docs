@@ -29,8 +29,7 @@ Only the abstract was available, so reported summary statistics stand in for a f
 Alvarez-Jimenez R et al., Model-based exposure-response analysis…, British journal of clinical… (2016)
   ·  DOI: [10.1111/bcp.13031](https://doi.org/10.1111/bcp.13031)
 
-## Model component
-<dbs-pgx drug="scopolamine" model-id="Scopolamine_AlvarezJimenez2016_reference" status="extracted" stale="true" population="healthy subjects" measured-compound="scopolamine" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="scopolamine" model-id="Scopolamine_AlvarezJimenez2016_reference" status="extracted" stale="true" population="healthy subjects" measured-compound="scopolamine" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameters:** 2 extracted.

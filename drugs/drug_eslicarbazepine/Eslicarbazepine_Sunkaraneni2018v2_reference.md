@@ -33,8 +33,7 @@ The paper does not report an absorption rate constant (ka) or lag time, so place
 Sunkaraneni S et al., Modeling and simulations to support dos…, Journal of pharmacokinetics… (2018)
   ·  DOI: [10.1007/s10928-018-9596-7](https://doi.org/10.1007/s10928-018-9596-7)
 
-## Model component
-<dbs-pgx drug="eslicarbazepine" model-id="Eslicarbazepine_Sunkaraneni2018v2_reference" status="extracted" stale="true" population="pediatric patients with partial-onset seizures" measured-compound="eslicarbazepine" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="eslicarbazepine" model-id="Eslicarbazepine_Sunkaraneni2018v2_reference" status="extracted" stale="true" population="pediatric patients with partial-onset seizures" measured-compound="eslicarbazepine" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 3 extracted, plus 2 covariate effects.

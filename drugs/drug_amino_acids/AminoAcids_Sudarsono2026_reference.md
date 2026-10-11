@@ -33,8 +33,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the val
 Sudarsono LM et al., A novel hollow-fiber infection model (H…, Antimicrobial agents and ch… (2026)
   ·  DOI: [10.1128/aac.00381-26](https://doi.org/10.1128/aac.00381-26)
 
-## Model component
-<dbs-pgx drug="amino acids" model-id="AminoAcids_Sudarsono2026_reference" status="rejected" stale="true" population="" measured-compound="amino_acids" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="amino acids" model-id="AminoAcids_Sudarsono2026_reference" status="rejected" stale="true" population="" measured-compound="amino_acids" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 2 extracted.

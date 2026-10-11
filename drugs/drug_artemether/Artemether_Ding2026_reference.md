@@ -21,8 +21,7 @@
 Ding J et al., Population pharmacokinetics of artemeth…, British journal of clinical… (2026)
   ·  DOI: [10.1002/bcp.70301](https://doi.org/10.1002/bcp.70301)
 
-## Model component
-<dbs-pgx drug="artemether" model-id="Artemether_Ding2026_reference" status="rejected" stale="false" population="patients with uncomplicated Plasmodium falciparum malaria" measured-compound="artemether" parameterization="apparent" topology="general_linear"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="artemether" model-id="Artemether_Ding2026_reference" status="rejected" stale="false" population="patients with uncomplicated Plasmodium falciparum malaria" measured-compound="artemether" parameterization="apparent" topology="general_linear"></div>
 
 **Model structure:** general linear; no model was built for this record.  
 **Parameters:** 26 extracted.

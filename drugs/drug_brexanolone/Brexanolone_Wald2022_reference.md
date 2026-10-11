@@ -32,8 +32,7 @@ Independently confirmed by `gpt-oss:120b`.
 Wald J et al., Allopregnanolone Concentrations in Brea…, Clinical pharmacokinetics (2022)
   ·  DOI: [10.1007/s40262-022-01155-w](https://doi.org/10.1007/s40262-022-01155-w)
 
-## Model component
-<dbs-pgx drug="brexanolone" model-id="Brexanolone_Wald2022_reference" status="rejected" stale="true" population="healthy lactating women and patients with postpartum depression" measured-compound="allopregnanolone" parameterization="mechanistic" topology="general_linear"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="brexanolone" model-id="Brexanolone_Wald2022_reference" status="rejected" stale="true" population="healthy lactating women and patients with postpartum depression" measured-compound="allopregnanolone" parameterization="mechanistic" topology="general_linear"></div>
 
 **Model structure:** general linear; no model was built for this record.  
 **Parameters:** 10 extracted.

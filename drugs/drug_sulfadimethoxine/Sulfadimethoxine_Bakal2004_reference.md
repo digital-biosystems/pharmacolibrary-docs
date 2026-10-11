@@ -24,8 +24,7 @@
 Bakal RS et al., Pharmacokinetics of sulfadimethoxine an…, Journal of veterinary pharm… (2004)
   ·  DOI: [10.1046/j.0140-7783.2003.00540.x](https://doi.org/10.1046/j.0140-7783.2003.00540.x)
 
-## Model component
-<dbs-pgx drug="sulfadimethoxine" model-id="Sulfadimethoxine_Bakal2004_reference" status="rejected" stale="false" population="hybrid striped bass" measured-compound="sulfadimethoxine" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="sulfadimethoxine" model-id="Sulfadimethoxine_Bakal2004_reference" status="rejected" stale="false" population="hybrid striped bass" measured-compound="sulfadimethoxine" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

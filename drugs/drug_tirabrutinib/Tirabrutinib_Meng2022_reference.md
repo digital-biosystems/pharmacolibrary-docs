@@ -20,8 +20,7 @@
 Meng A et al., Semi-Mechanistic PK/PD Modeling and Sim…, Clinical pharmacology and t… (2022)
   ·  DOI: [10.1002/cpt.2439](https://doi.org/10.1002/cpt.2439)
 
-## Model component
-<dbs-pgx drug="tirabrutinib" model-id="Tirabrutinib_Meng2022_reference" status="rejected" stale="false" population="healthy volunteers and subjects with rheumatoid arthritis" measured-compound="tirabrutinib" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="tirabrutinib" model-id="Tirabrutinib_Meng2022_reference" status="rejected" stale="false" population="healthy volunteers and subjects with rheumatoid arthritis" measured-compound="tirabrutinib" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

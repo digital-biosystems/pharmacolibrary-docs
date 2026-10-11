@@ -29,8 +29,7 @@ No clearance, volume or rate constant of the model is reported in it. No paramet
 Chen YT; Wang CY; Yin YW; Li ZR; Lin WW; Zhu M; et al. et al. (2021). Expert review of clinical pharmacology 14
   ·  DOI: [10.1080/17512433.2021.1917377](https://doi.org/10.1080/17512433.2021.1917377)
 
-## Model component
-<dbs-pgx drug="oxcarbazepine" model-id="Oxcarbazepine_Chen2021_reference" status="rejected" stale="false" population="children and adults with epilepsy" measured-compound="MHD" parameterization="mechanistic" topology="parent_metabolite"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="oxcarbazepine" model-id="Oxcarbazepine_Chen2021_reference" status="rejected" stale="false" population="children and adults with epilepsy" measured-compound="MHD" parameterization="mechanistic" topology="parent_metabolite"></div>
 
 **Model structure:** parent + metabolite; no model was built for this record.  
 **Parameters:** 0 extracted.

@@ -24,8 +24,7 @@
 Jones HJ et al., Photodynamic therapy effect of m-THPC (…, British journal of cancer (2003)
   ·  DOI: [10.1038/sj.bjc.6601101](https://doi.org/10.1038/sj.bjc.6601101)
 
-## Model component
-<dbs-pgx drug="temoporfin" model-id="Temoporfin_Jones2003_reference" status="rejected" stale="false" population="BDIX rats with LSBD1 fibrosarcoma" measured-compound="14C m-THPC (temoporfin)" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="temoporfin" model-id="Temoporfin_Jones2003_reference" status="rejected" stale="false" population="BDIX rats with LSBD1 fibrosarcoma" measured-compound="14C m-THPC (temoporfin)" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 6 extracted.

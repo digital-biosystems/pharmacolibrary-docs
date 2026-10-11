@@ -21,8 +21,7 @@
 Ait-Oudhia S et al., Bridging Clinical Outcomes of Canakinum…, CPT: pharmacometrics & syst… (2012)
   ·  DOI: [10.1038/psp.2012.6](https://doi.org/10.1038/psp.2012.6)
 
-## Model component
-<dbs-pgx drug="canakinumab" model-id="Canakinumab_AitOudhia2012_reference" status="rejected" stale="false" population="patients with rheumatoid arthritis" measured-compound="canakinumab" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="canakinumab" model-id="Canakinumab_AitOudhia2012_reference" status="rejected" stale="false" population="patients with rheumatoid arthritis" measured-compound="canakinumab" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment; no model was built for this record.  
 **Parameters:** 9 extracted.

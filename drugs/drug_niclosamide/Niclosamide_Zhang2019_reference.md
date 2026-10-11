@@ -23,8 +23,7 @@
 Zhang J et al., Determination and pharmacokinetics stud…, BMC veterinary research (2019)
   ·  DOI: [10.1186/s12917-019-1963-0](https://doi.org/10.1186/s12917-019-1963-0)
 
-## Model component
-<dbs-pgx drug="niclosamide" model-id="Niclosamide_Zhang2019_reference" status="extracted" stale="false" population="" measured-compound="niclosamide" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="niclosamide" model-id="Niclosamide_Zhang2019_reference" status="extracted" stale="false" population="" measured-compound="niclosamide" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 2 extracted.

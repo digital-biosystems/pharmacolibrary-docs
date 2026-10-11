@@ -21,8 +21,7 @@
 Bustinduy AL et al., Population Pharmacokinetics of Praziqua…, Antimicrobial agents and ch… (2020)
   ·  DOI: [10.1128/AAC.00566-20](https://doi.org/10.1128/AAC.00566-20)
 
-## Model component
-<dbs-pgx drug="praziquantel" model-id="Praziquantel_Bustinduy2020_median" status="rejected" stale="false" population="pregnant and lactating Filipino women infected with Schistosoma japonicum" measured-compound="praziquantel" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="praziquantel" model-id="Praziquantel_Bustinduy2020_median" status="rejected" stale="false" population="pregnant and lactating Filipino women infected with Schistosoma japonicum" measured-compound="praziquantel" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

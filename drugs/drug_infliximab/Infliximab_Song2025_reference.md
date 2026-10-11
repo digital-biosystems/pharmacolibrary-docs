@@ -21,8 +21,7 @@
 Song JH et al., Population Pharmacokinetic Model for th…, Gut and liver (2025)
   ·  DOI: [10.5009/gnl240503](https://doi.org/10.5009/gnl240503)
 
-## Model component
-<dbs-pgx drug="infliximab" model-id="Infliximab_Song2025_reference" status="rejected" stale="false" population="patients with inflammatory bowel disease" measured-compound="infliximab" parameterization="apparent" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="infliximab" model-id="Infliximab_Song2025_reference" status="rejected" stale="false" population="patients with inflammatory bowel disease" measured-compound="infliximab" parameterization="apparent" topology="2C"></div>
 
 **Model structure:** 2-compartment; no model was built for this record.  
 **Parameters:** 7 extracted.

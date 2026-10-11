@@ -31,8 +31,7 @@ Independently confirmed by `gpt-oss:120b`.
 McCann S et al., Physiologically Based and Population Ph…, Clinical and translational… (2025)
   ·  DOI: [10.1111/cts.70247](https://doi.org/10.1111/cts.70247)
 
-## Model component
-<dbs-pgx drug="midazolam" model-id="Midazolam_McCann2025_reference" status="extracted" stale="true" population="children with and without obesity" measured-compound="midazolam" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="midazolam" model-id="Midazolam_McCann2025_reference" status="extracted" stale="true" population="children with and without obesity" measured-compound="midazolam" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment, oral mammillary model — template `PK_2C_enteral`.  
 **Parameters:** 6 extracted.

@@ -22,8 +22,7 @@
 Möllmann H et al., Pharmacokinetic/pharmacodynamic evaluat…, Pharmaceutical research (1995)
   ·  DOI: [10.1023/a:1016287104656](https://doi.org/10.1023/a:1016287104656)
 
-## Model component
-<dbs-pgx drug="deflazacort" model-id="Deflazacort_Mllmann1995_reference" status="rejected" stale="false" population="healthy volunteers" measured-compound="21-desacetyldeflazacort" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="deflazacort" model-id="Deflazacort_Mllmann1995_reference" status="rejected" stale="false" population="healthy volunteers" measured-compound="21-desacetyldeflazacort" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 2 extracted.

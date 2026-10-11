@@ -29,8 +29,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on paramet
 Henrich A et al., Pharmacokinetic/pharmacodynamic modelin…, CPT: pharmacometrics & syst… (2021)
   ·  DOI: [10.1002/psp4.12641](https://doi.org/10.1002/psp4.12641)
 
-## Model component
-<dbs-pgx drug="cangrelor" model-id="Cangrelor_Henrich2021_reference" status="needs_review" stale="false" population="" measured-compound="cangrelor" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="cangrelor" model-id="Cangrelor_Henrich2021_reference" status="needs_review" stale="false" population="" measured-compound="cangrelor" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment, oral mammillary model — template `PK_2C_enteral`.  
 **Parameters:** 5 extracted.

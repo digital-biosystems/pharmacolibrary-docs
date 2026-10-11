@@ -21,8 +21,7 @@
 Bienert A et al., The influence of cardiac output on prop…, Journal of pharmacokinetics… (2020)
   ·  DOI: [10.1007/s10928-020-09712-1](https://doi.org/10.1007/s10928-020-09712-1)
 
-## Model component
-<dbs-pgx drug="pancuronium" model-id="Pancuronium_Bienert2020_reference" status="extracted" stale="false" population="" measured-compound="pancuronium" parameterization="apparent" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="pancuronium" model-id="Pancuronium_Bienert2020_reference" status="extracted" stale="false" population="" measured-compound="pancuronium" parameterization="apparent" topology="2C"></div>
 
 **Model structure:** 2-compartment, oral mammillary model — template `PK_2C_enteral`.  
 **Parameters:** 4 extracted.

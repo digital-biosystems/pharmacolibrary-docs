@@ -21,8 +21,7 @@
 Thoueille P et al., Pharmacometric-Based Evaluation of Salm…, CPT: pharmacometrics & syst… (2026)
   ·  DOI: [10.1002/psp4.70187](https://doi.org/10.1002/psp4.70187)
 
-## Model component
-<dbs-pgx drug="salmeterol" model-id="Salmeterol_Thoueille2026_reference" status="extracted" stale="false" population="healthy participants, chronic asthmatics, and athletes" measured-compound="salmeterol" parameterization="apparent" topology="parent_metabolite"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="salmeterol" model-id="Salmeterol_Thoueille2026_reference" status="extracted" stale="false" population="healthy participants, chronic asthmatics, and athletes" measured-compound="salmeterol" parameterization="apparent" topology="parent_metabolite"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 9 extracted.

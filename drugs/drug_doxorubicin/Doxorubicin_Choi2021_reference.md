@@ -33,8 +33,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the val
 Choi YH et al., A Novel Integrated Pharmacokinetic-Phar…, The Journal of pharmacology… (2021)
   ·  DOI: [10.1124/jpet.121.000584](https://doi.org/10.1124/jpet.121.000584)
 
-## Model component
-<dbs-pgx drug="doxorubicin" model-id="Doxorubicin_Choi2021_reference" status="rejected" stale="true" population="" measured-compound="doxorubicin" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="doxorubicin" model-id="Doxorubicin_Choi2021_reference" status="rejected" stale="true" population="" measured-compound="doxorubicin" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 2 extracted.

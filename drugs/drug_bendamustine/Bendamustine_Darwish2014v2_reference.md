@@ -21,8 +21,7 @@
 Darwish M et al., An evaluation of the potential for drug…, Cancer chemotherapy and pha… (2014)
   ·  DOI: [10.1007/s00280-014-2445-5](https://doi.org/10.1007/s00280-014-2445-5)
 
-## Model component
-<dbs-pgx drug="bendamustine" model-id="Bendamustine_Darwish2014v2_reference" status="rejected" stale="false" population="adults with indolent non-Hodgkin lymphoma or mantle cell lymphoma" measured-compound="bendamustine" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="bendamustine" model-id="Bendamustine_Darwish2014v2_reference" status="rejected" stale="false" population="adults with indolent non-Hodgkin lymphoma or mantle cell lymphoma" measured-compound="bendamustine" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

@@ -22,8 +22,7 @@
 Malik JK et al., Pharmacokinetics of pefloxacin in goats…, Veterinary research communi… (2002)
   ·  DOI: [10.1023/a:1014047702196](https://doi.org/10.1023/a:1014047702196)
 
-## Model component
-<dbs-pgx drug="pefloxacin" model-id="Pefloxacin_Malik2002_reference" status="needs_review" stale="false" population="healthy female goats" measured-compound="pefloxacin" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="pefloxacin" model-id="Pefloxacin_Malik2002_reference" status="needs_review" stale="false" population="healthy female goats" measured-compound="pefloxacin" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 11 extracted.

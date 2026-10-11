@@ -21,8 +21,7 @@
 Kim CO et al., Decreased potency of fimasartan in live…, Translational and clinical… (2017)
   ·  DOI: [10.12793/tcp.2017.25.1.43](https://doi.org/10.12793/tcp.2017.25.1.43)
 
-## Model component
-<dbs-pgx drug="fimasartan" model-id="Fimasartan_Kim2017_reference" status="needs_review" stale="false" population="healthy adults and adults with hepatic impairment" measured-compound="fimasartan" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="fimasartan" model-id="Fimasartan_Kim2017_reference" status="needs_review" stale="false" population="healthy adults and adults with hepatic impairment" measured-compound="fimasartan" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 8 extracted.

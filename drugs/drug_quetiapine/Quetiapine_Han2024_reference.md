@@ -21,8 +21,7 @@
 Han L et al., Insights into the population pharmacoki…, Expert review of clinical p… (2024)
   ·  DOI: [10.1080/17512433.2023.2295428](https://doi.org/10.1080/17512433.2023.2295428)
 
-## Model component
-<dbs-pgx drug="quetiapine" model-id="Quetiapine_Han2024_reference" status="needs_review" stale="false" population="adults (systematic review of population PK/PD studies)" measured-compound="quetiapine" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="quetiapine" model-id="Quetiapine_Han2024_reference" status="needs_review" stale="false" population="adults (systematic review of population PK/PD studies)" measured-compound="quetiapine" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 3 extracted.

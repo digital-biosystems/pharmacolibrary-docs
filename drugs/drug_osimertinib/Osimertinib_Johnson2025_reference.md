@@ -21,8 +21,7 @@
 Johnson M et al., Population Pharmacokinetics of Osimerti…, Pharmacology research & per… (2025)
   ·  DOI: [10.1002/prp2.70098](https://doi.org/10.1002/prp2.70098)
 
-## Model component
-<dbs-pgx drug="osimertinib" model-id="Osimertinib_Johnson2025_reference" status="needs_review" stale="false" population="patients with advanced non-small cell lung cancer" measured-compound="osimertinib" parameterization="apparent" topology="parent_metabolite"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="osimertinib" model-id="Osimertinib_Johnson2025_reference" status="needs_review" stale="false" population="patients with advanced non-small cell lung cancer" measured-compound="osimertinib" parameterization="apparent" topology="parent_metabolite"></div>
 
 **Model structure:** parent + metabolite; no model was built for this record.  
 **Parameters:** 6 extracted, plus 7 covariate effects.

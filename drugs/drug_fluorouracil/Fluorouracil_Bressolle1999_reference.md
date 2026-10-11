@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Bressolle F et al., Circadian rhythm of 5-fluorouracil popu…, Cancer chemotherapy and pha… (1999)
   ·  DOI: [10.1007/s002800050980](https://doi.org/10.1007/s002800050980)
 
-## Model component
-<dbs-pgx drug="fluorouracil" model-id="Fluorouracil_Bressolle1999_reference" status="needs_review" stale="true" population="patients with metastatic colorectal cancer" measured-compound="5-fluorouracil" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="fluorouracil" model-id="Fluorouracil_Bressolle1999_reference" status="needs_review" stale="true" population="patients with metastatic colorectal cancer" measured-compound="5-fluorouracil" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 3 extracted.

@@ -21,8 +21,7 @@
 Pokorná P et al., Sufentanil Disposition and Pharmacokine…, Pharmacology (2021)
   ·  DOI: [10.1159/000515787](https://doi.org/10.1159/000515787)
 
-## Model component
-<dbs-pgx drug="sufentanil" model-id="Sufentanil_Pokorn2021_reference" status="extracted" stale="false" population="ventilated full-term neonates" measured-compound="sufentanil" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="sufentanil" model-id="Sufentanil_Pokorn2021_reference" status="extracted" stale="false" population="ventilated full-term neonates" measured-compound="sufentanil" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameters:** 2 extracted.

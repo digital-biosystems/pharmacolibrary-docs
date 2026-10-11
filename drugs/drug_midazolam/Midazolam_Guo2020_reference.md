@@ -29,8 +29,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on how the
 Guo Y et al., Quantitative Prediction of CYP3A4- and…, Clinical pharmacology and t… (2020)
   ·  DOI: [10.1002/cpt.1596](https://doi.org/10.1002/cpt.1596)
 
-## Model component
-<dbs-pgx drug="midazolam" model-id="Midazolam_Guo2020_reference" status="needs_review" stale="false" population="healthy adults" measured-compound="midazolam" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="midazolam" model-id="Midazolam_Guo2020_reference" status="needs_review" stale="false" population="healthy adults" measured-compound="midazolam" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 5 extracted.

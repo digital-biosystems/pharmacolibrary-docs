@@ -21,8 +21,7 @@
 Roberts JK et al., A Population Pharmacokinetic Analysis o…, Clinical drug investigation (2015)
   ·  DOI: [10.1007/s40261-015-0323-5](https://doi.org/10.1007/s40261-015-0323-5)
 
-## Model component
-<dbs-pgx drug="dexamfetamine" model-id="Dexamfetamine_Roberts2015_final" status="rejected" stale="false" population="healthy adults" measured-compound="dextroamphetamine" parameterization="apparent" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="dexamfetamine" model-id="Dexamfetamine_Roberts2015_final" status="rejected" stale="false" population="healthy adults" measured-compound="dextroamphetamine" parameterization="apparent" topology="2C"></div>
 
 **Model structure:** 2-compartment; no model was built for this record.  
 **Parameters:** 5 extracted.

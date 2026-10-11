@@ -21,8 +21,7 @@
 Han K et al., Population pharmacokinetics and dosing…, Cancer chemotherapy and pha… (2015)
   ·  DOI: [10.1007/s00280-015-2862-0](https://doi.org/10.1007/s00280-015-2862-0)
 
-## Model component
-<dbs-pgx drug="cobimetinib" model-id="Cobimetinib_Han2015_reference" status="rejected" stale="false" population="patients with various solid tumors, mainly melanoma" measured-compound="cobimetinib" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="cobimetinib" model-id="Cobimetinib_Han2015_reference" status="rejected" stale="false" population="patients with various solid tumors, mainly melanoma" measured-compound="cobimetinib" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

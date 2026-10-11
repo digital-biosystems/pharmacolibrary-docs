@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on paramet
 Younis IR et al., Stable Isotope Pharmacokinetic Studies…, Thyroid : official journal… (2018)
   ·  DOI: [10.1089/thy.2017.0380](https://doi.org/10.1089/thy.2017.0380)
 
-## Model component
-<dbs-pgx drug="Levothyroxine" model-id="Levothyroxine_Younis2018_reference" status="extracted" stale="true" population="adults with hypothyroidism" measured-compound="levothyroxine" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="Levothyroxine" model-id="Levothyroxine_Younis2018_reference" status="extracted" stale="true" population="adults with hypothyroidism" measured-compound="levothyroxine" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 2 extracted.

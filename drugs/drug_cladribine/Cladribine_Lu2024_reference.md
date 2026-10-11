@@ -29,8 +29,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the val
 Lu H et al., Asia-inclusive drug development leverag…, Clinical and translational… (2024)
   ·  DOI: [10.1111/cts.70050](https://doi.org/10.1111/cts.70050)
 
-## Model component
-<dbs-pgx drug="cladribine" model-id="Cladribine_Lu2024_reference" status="extracted" stale="true" population="" measured-compound="cladribine" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="cladribine" model-id="Cladribine_Lu2024_reference" status="extracted" stale="true" population="" measured-compound="cladribine" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameters:** 2 extracted.

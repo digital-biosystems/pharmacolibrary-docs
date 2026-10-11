@@ -29,8 +29,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on paramet
 Banach M et al., Pharmacokinetic/pharmacodynamic evaluat…, Expert opinion on drug meta… (2015)
   ·  DOI: [10.1517/17425255.2015.1021686](https://doi.org/10.1517/17425255.2015.1021686)
 
-## Model component
-<dbs-pgx drug="carbamazepine" model-id="Carbamazepine_Banach2015_reference" status="extracted" stale="true" population="adults with epilepsy" measured-compound="" parameterization="" topology=""></dbs-pgx>
+<div class="pk-model-meta" hidden drug="carbamazepine" model-id="Carbamazepine_Banach2015_reference" status="extracted" stale="true" population="adults with epilepsy" measured-compound="" parameterization="" topology=""></div>
 
 **Model structure:** —; no model was built for this record.  
 **Parameters:** 0 extracted.

@@ -22,8 +22,7 @@
 Shargel L et al., Bioavailability and cardiovascular safe…, Biopharmaceutics & drug dis… (1990)
   ·  DOI: [10.1002/bdd.2510110703](https://doi.org/10.1002/bdd.2510110703)
 
-## Model component
-<dbs-pgx drug="phenylpropanolamine" model-id="Phenylpropanolamine_Shargel1990_reference" status="rejected" stale="false" population="healthy adults" measured-compound="phenylpropanolamine" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="phenylpropanolamine" model-id="Phenylpropanolamine_Shargel1990_reference" status="rejected" stale="false" population="healthy adults" measured-compound="phenylpropanolamine" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 6 extracted.

@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Saleh S et al., Population pharmacokinetics of single-d…, Pulmonary circulation 6(Sup… (2016)
   ·  DOI: [10.1086/685647](https://doi.org/10.1086/685647)
 
-## Model component
-<dbs-pgx drug="riociguat" model-id="Riociguat_Saleh2016v2_reference" status="needs_review" stale="true" population="patients with renal or hepatic impairment" measured-compound="riociguat" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="riociguat" model-id="Riociguat_Saleh2016v2_reference" status="needs_review" stale="true" population="patients with renal or hepatic impairment" measured-compound="riociguat" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 4 extracted.

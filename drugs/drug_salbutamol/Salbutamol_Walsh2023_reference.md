@@ -29,8 +29,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Walsh S et al., Optimising intravenous salbutamol in ch…, Archives of disease in chil… (2023)
   ·  DOI: [10.1136/archdischild-2022-324008](https://doi.org/10.1136/archdischild-2022-324008)
 
-## Model component
-<dbs-pgx drug="salbutamol" model-id="Salbutamol_Walsh2023_reference" status="rejected" stale="true" population="children with acute asthma" measured-compound="salbutamol" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="salbutamol" model-id="Salbutamol_Walsh2023_reference" status="rejected" stale="true" population="children with acute asthma" measured-compound="salbutamol" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment; no model was built for this record.  
 **Parameters:** 7 extracted.

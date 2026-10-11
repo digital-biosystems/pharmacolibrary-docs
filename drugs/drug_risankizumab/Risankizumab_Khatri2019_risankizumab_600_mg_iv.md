@@ -21,8 +21,7 @@
 Khatri A et al., Pharmacokinetics of Risankizumab in Asi…, Journal of clinical pharmac… (2019)
   ·  DOI: [10.1002/jcph.1473](https://doi.org/10.1002/jcph.1473)
 
-## Model component
-<dbs-pgx drug="risankizumab" model-id="Risankizumab_Khatri2019_risankizumab_600_mg_iv" status="needs_review" stale="false" population="healthy subjects and patients with psoriasis, GPP, or EP" measured-compound="risankizumab" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="risankizumab" model-id="Risankizumab_Khatri2019_risankizumab_600_mg_iv" status="needs_review" stale="false" population="healthy subjects and patients with psoriasis, GPP, or EP" measured-compound="risankizumab" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 6 extracted.

@@ -30,8 +30,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the val
 Cao M et al., Safety, efficacy, and immunogenicity of…, Gene therapy (2025)
   ·  DOI: [10.1038/s41434-025-00512-1](https://doi.org/10.1038/s41434-025-00512-1)
 
-## Model component
-<dbs-pgx drug="valoctocogene roxaparvovec" model-id="ValoctocogeneRoxaparvovec_Cao2025_reference" status="rejected" stale="true" population="" measured-compound="valoctocogene_roxaparvovec" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="valoctocogene roxaparvovec" model-id="ValoctocogeneRoxaparvovec_Cao2025_reference" status="rejected" stale="true" population="" measured-compound="valoctocogene_roxaparvovec" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment; no model was built for this record.  
 **Parameters:** 4 extracted.

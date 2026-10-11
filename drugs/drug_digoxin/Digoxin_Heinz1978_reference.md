@@ -33,8 +33,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Heinz N et al., Comparison of the pharmacokinetics of d…, Naunyn-Schmiedeberg's archi… (1978)
   ·  DOI: [10.1007/BF00508066](https://doi.org/10.1007/BF00508066)
 
-## Model component
-<dbs-pgx drug="digoxin" model-id="Digoxin_Heinz1978_reference" status="needs_review" stale="true" population="cats" measured-compound="digoxin and dihydrodigoxin" parameterization="mechanistic" topology="parent_metabolite"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="digoxin" model-id="Digoxin_Heinz1978_reference" status="needs_review" stale="true" population="cats" measured-compound="digoxin and dihydrodigoxin" parameterization="mechanistic" topology="parent_metabolite"></div>
 
 **Model structure:** parent + metabolite; no model was built for this record.  
 **Parameters:** 4 extracted.

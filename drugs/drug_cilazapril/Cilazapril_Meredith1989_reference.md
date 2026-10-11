@@ -32,8 +32,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on how the
 Meredith PA et al., The pharmacokinetics and angiotensin co…, British journal of clinical… (1989)
   ·  DOI: [10.1111/j.1365-2125.1989.tb03490.x](https://doi.org/10.1111/j.1365-2125.1989.tb03490.x)
 
-## Model component
-<dbs-pgx drug="cilazapril" model-id="Cilazapril_Meredith1989_reference" status="needs_review" stale="true" population="patients with essential hypertension" measured-compound="cilazaprilat" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="cilazapril" model-id="Cilazapril_Meredith1989_reference" status="needs_review" stale="true" population="patients with essential hypertension" measured-compound="cilazaprilat" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 5 extracted.

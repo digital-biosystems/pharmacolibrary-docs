@@ -21,8 +21,7 @@
 Ogasawara K et al., Recurrent or progressive pediatric brai…, Pediatric research (2021)
   ·  DOI: [10.1038/s41390-020-01304-6](https://doi.org/10.1038/s41390-020-01304-6)
 
-## Model component
-<dbs-pgx drug="pomalidomide" model-id="Pomalidomide_Ogasawara2021_reference" status="extracted" stale="false" population="pediatric patients with recurrent or progressive primary brain tumors" measured-compound="pomalidomide" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="pomalidomide" model-id="Pomalidomide_Ogasawara2021_reference" status="extracted" stale="false" population="pediatric patients with recurrent or progressive primary brain tumors" measured-compound="pomalidomide" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 4 extracted.

@@ -32,8 +32,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Komsta-Szumska E et al., A kinetic analysis of the interaction b…, Toxicology (1984)
   ·  DOI: [10.1016/0300-483x(84)90039-8](https://doi.org/10.1016/0300-483x(84)90039-8)
 
-## Model component
-<dbs-pgx drug="mercuric chloride" model-id="MercuricChloride_KomstaSzumska1984_reference" status="rejected" stale="false" population="guinea pigs" measured-compound="mercury" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="mercuric chloride" model-id="MercuricChloride_KomstaSzumska1984_reference" status="rejected" stale="false" population="guinea pigs" measured-compound="mercury" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 1 extracted.

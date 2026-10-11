@@ -21,8 +21,7 @@
 Omori T et al., Pharmacokinetic/Pharmacodynamic Modelin…, Biological & pharmaceutical… (2022)
   ·  DOI: [10.1248/bpb.b22-00398](https://doi.org/10.1248/bpb.b22-00398)
 
-## Model component
-<dbs-pgx drug="pentazocine" model-id="Pentazocine_Omori2022_reference" status="extracted" stale="false" population="" measured-compound="pentazocine" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="pentazocine" model-id="Pentazocine_Omori2022_reference" status="extracted" stale="false" population="" measured-compound="pentazocine" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment, IV mammillary model — template `PK_2C`.  
 **Parameters:** 4 extracted.

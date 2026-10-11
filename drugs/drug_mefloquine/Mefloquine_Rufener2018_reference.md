@@ -23,8 +23,7 @@
 Rufener R et al., Activity of mefloquine and mefloquine d…, International journal for p… (2018)
   ·  DOI: [10.1016/j.ijpddr.2018.06.004](https://doi.org/10.1016/j.ijpddr.2018.06.004)
 
-## Model component
-<dbs-pgx drug="mefloquine" model-id="Mefloquine_Rufener2018_reference" status="extracted" stale="false" population="mice infected with E. multilocularis eggs" measured-compound="mefloquine" parameterization="apparent" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="mefloquine" model-id="Mefloquine_Rufener2018_reference" status="extracted" stale="false" population="mice infected with E. multilocularis eggs" measured-compound="mefloquine" parameterization="apparent" topology="2C"></div>
 
 **Model structure:** 2-compartment, oral mammillary model — template `PK_2C_enteral`.  
 **Parameters:** 5 extracted.

@@ -20,8 +20,7 @@
 Qi T et al., Dissecting sources of variability in pa…, European journal of pharmac… (2023)
   ·  DOI: [10.1016/j.ejps.2023.106467](https://doi.org/10.1016/j.ejps.2023.106467)
 
-## Model component
-<dbs-pgx drug="neratinib" model-id="Neratinib_Qi2023_reference" status="needs_review" stale="false" population="virtual HER2-positive breast cancer patients" measured-compound="neratinib" parameterization="apparent" topology="parent_metabolite"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="neratinib" model-id="Neratinib_Qi2023_reference" status="needs_review" stale="false" population="virtual HER2-positive breast cancer patients" measured-compound="neratinib" parameterization="apparent" topology="parent_metabolite"></div>
 
 **Model structure:** parent + metabolite; no model was built for this record.  
 **Parameters:** 1 extracted.

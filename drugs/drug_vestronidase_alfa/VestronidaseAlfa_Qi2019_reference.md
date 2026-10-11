@@ -29,8 +29,7 @@ All four structural parameters of the two-compartment model — clearance 9.61, 
 Qi Y et al., Pharmacokinetic and Pharmacodynamic Mod…, Clinical pharmacokinetics (2019)
   ·  DOI: [10.1007/s40262-018-0721-y](https://doi.org/10.1007/s40262-018-0721-y)
 
-## Model component
-<dbs-pgx drug="vestronidase alfa" model-id="VestronidaseAlfa_Qi2019_reference" status="extracted" stale="true" population="adult and pediatric subjects with MPS VII" measured-compound="vestronidase_alfa" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="vestronidase alfa" model-id="VestronidaseAlfa_Qi2019_reference" status="extracted" stale="true" population="adult and pediatric subjects with MPS VII" measured-compound="vestronidase_alfa" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment, IV mammillary model — template `PK_2C`.  
 **Parameters:** 4 extracted.

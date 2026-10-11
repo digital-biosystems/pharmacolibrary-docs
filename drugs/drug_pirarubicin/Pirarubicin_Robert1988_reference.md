@@ -21,8 +21,7 @@
 Robert J et al., Pharmacokinetics and metabolism of pira…, European journal of cancer… (1988)
   ·  DOI: [10.1016/0277-5379(88)90217-9](https://doi.org/10.1016/0277-5379(88)90217-9)
 
-## Model component
-<dbs-pgx drug="pirarubicin" model-id="Pirarubicin_Robert1988_reference" status="extracted" stale="false" population="patients with advanced cancer" measured-compound="pirarubicin" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="pirarubicin" model-id="Pirarubicin_Robert1988_reference" status="extracted" stale="false" population="patients with advanced cancer" measured-compound="pirarubicin" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameters:** 2 extracted.

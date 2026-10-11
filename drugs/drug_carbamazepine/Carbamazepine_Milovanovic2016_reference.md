@@ -27,8 +27,7 @@ A volume and a clearance/elimination estimate from this paper are needed to buil
 Milovanovic DD et al., The influence of CYP2C8*3 on carbamazep…, Balkan journal of medical g… (2016)
   ·  DOI: [10.1515/bjmg-2016-0003](https://doi.org/10.1515/bjmg-2016-0003)
 
-## Model component
-<dbs-pgx drug="carbamazepine" model-id="Carbamazepine_Milovanovic2016_reference" status="needs_review" stale="false" population="epileptic pediatric patients" measured-compound="carbamazepine" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="carbamazepine" model-id="Carbamazepine_Milovanovic2016_reference" status="needs_review" stale="false" population="epileptic pediatric patients" measured-compound="carbamazepine" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 3 extracted.

@@ -31,8 +31,7 @@ The record lists volumes of 94.88 mL/kg and 101.8 mL/kg for the central and peri
 Cagnardi P et al., Clinical efficacy and pharmacokinetics…, PloS one (2017)
   ·  DOI: [10.1371/journal.pone.0187252](https://doi.org/10.1371/journal.pone.0187252)
 
-## Model component
-<dbs-pgx drug="meloxicam" model-id="Meloxicam_Cagnardi2017_reference" status="rejected" stale="true" population="buffalo calves" measured-compound="meloxicam" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="meloxicam" model-id="Meloxicam_Cagnardi2017_reference" status="rejected" stale="true" population="buffalo calves" measured-compound="meloxicam" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment; no model was built for this record.  
 **Parameters:** 3 extracted.

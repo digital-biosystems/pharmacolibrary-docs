@@ -23,8 +23,7 @@
 Lacayo NJ et al., Pharmacokinetic interactions of cyclosp…, Leukemia (2002)
   ·  DOI: [10.1038/sj.leu.2402455](https://doi.org/10.1038/sj.leu.2402455)
 
-## Model component
-<dbs-pgx drug="mitoxantrone" model-id="Mitoxantrone_Lacayo2002_control_arm" status="needs_review" stale="false" population="children with de novo acute myeloid leukemia" measured-compound="mitoxantrone" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="mitoxantrone" model-id="Mitoxantrone_Lacayo2002_control_arm" status="needs_review" stale="false" population="children with de novo acute myeloid leukemia" measured-compound="mitoxantrone" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 7 extracted.

@@ -21,8 +21,7 @@
 Yoo O et al., Population pharmacokinetics of penicill…, Antimicrobial agents and ch… (2025)
   ·  DOI: [10.1128/aac.00269-25](https://doi.org/10.1128/aac.00269-25)
 
-## Model component
-<dbs-pgx drug="benzylpenicillin" model-id="Benzylpenicillin_Yoo2025_reference" status="needs_review" stale="false" population="healthy adult volunteers" measured-compound="benzylpenicillin" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="benzylpenicillin" model-id="Benzylpenicillin_Yoo2025_reference" status="needs_review" stale="false" population="healthy adult volunteers" measured-compound="benzylpenicillin" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment; no model was built for this record.  
 **Parameters:** 4 extracted.

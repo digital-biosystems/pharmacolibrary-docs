@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Momčilović S et al., Population Pharmacokinetic Analysis of…, Journal of cardiovascular p… (2019)
   ·  DOI: [10.1097/FJC.0000000000000644](https://doi.org/10.1097/FJC.0000000000000644)
 
-## Model component
-<dbs-pgx drug="bisoprolol" model-id="Bisoprolol_Momilovi2019_reference" status="extracted" stale="true" population="patients with acute coronary syndrome" measured-compound="bisoprolol" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="bisoprolol" model-id="Bisoprolol_Momilovi2019_reference" status="extracted" stale="true" population="patients with acute coronary syndrome" measured-compound="bisoprolol" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 2 extracted.

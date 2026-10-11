@@ -21,8 +21,7 @@
 Ngo L et al., Development of a Pharmacokinetic Model…, CPT: pharmacometrics & syst… (2020)
   ·  DOI: [10.1002/psp4.12555](https://doi.org/10.1002/psp4.12555)
 
-## Model component
-<dbs-pgx drug="anakinra" model-id="Anakinra_Ngo2020_reference" status="extracted" stale="false" population="" measured-compound="anakinra" parameterization="apparent" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="anakinra" model-id="Anakinra_Ngo2020_reference" status="extracted" stale="false" population="" measured-compound="anakinra" parameterization="apparent" topology="2C"></div>
 
 **Model structure:** 2-compartment, oral mammillary model — template `PK_2C_enteral`.  
 **Parameters:** 6 extracted.

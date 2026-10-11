@@ -32,8 +32,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the val
 ## Citation
 Szeto HH et al., Urinary excretion of meperidine by the…, The Journal of pharmacology… (1979)
 
-## Model component
-<dbs-pgx drug="pethidine" model-id="Pethidine_Szeto1979_reference" status="rejected" stale="true" population="fetal lamb" measured-compound="meperidine" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="pethidine" model-id="Pethidine_Szeto1979_reference" status="rejected" stale="true" population="fetal lamb" measured-compound="meperidine" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 1 extracted.

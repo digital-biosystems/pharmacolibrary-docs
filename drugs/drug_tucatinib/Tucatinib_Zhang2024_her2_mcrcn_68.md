@@ -21,8 +21,7 @@
 Zhang D et al., Population Pharmacokinetic Analysis of…, Clinical pharmacokinetics (2024)
   ·  DOI: [10.1007/s40262-024-01412-0](https://doi.org/10.1007/s40262-024-01412-0)
 
-## Model component
-<dbs-pgx drug="tucatinib" model-id="Tucatinib_Zhang2024_her2_mcrcn_68" status="extracted" stale="false" population="healthy participants and patients with HER2+ metastatic breast or colorectal cancer" measured-compound="tucatinib" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="tucatinib" model-id="Tucatinib_Zhang2024_her2_mcrcn_68" status="extracted" stale="false" population="healthy participants and patients with HER2+ metastatic breast or colorectal cancer" measured-compound="tucatinib" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 8 extracted.

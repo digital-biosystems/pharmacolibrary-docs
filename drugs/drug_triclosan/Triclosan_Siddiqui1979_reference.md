@@ -22,8 +22,7 @@
 ## Citation
 Siddiqui WH et al., Pharmacokinetics of triclosan in rat af…, Journal of environmental pa… (1979)
 
-## Model component
-<dbs-pgx drug="triclosan" model-id="Triclosan_Siddiqui1979_reference" status="extracted" stale="false" population="sexually mature virgin Wistar rats" measured-compound="triclosan" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="triclosan" model-id="Triclosan_Siddiqui1979_reference" status="extracted" stale="false" population="sexually mature virgin Wistar rats" measured-compound="triclosan" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 3 extracted.

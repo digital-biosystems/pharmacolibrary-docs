@@ -21,8 +21,7 @@
 van Donge T et al., Middle-Out Physiologically Based Pharma…, CPT: pharmacometrics & syst… (2025)
   ·  DOI: [10.1002/psp4.70020](https://doi.org/10.1002/psp4.70020)
 
-## Model component
-<dbs-pgx drug="alectinib" model-id="Alectinib_van2025_1_3_5_years_190_mg_bid" status="rejected" stale="false" population="adults with ALK-positive advanced NSCLC and virtual pediatric patients" measured-compound="alectinib" parameterization="mechanistic" topology="parent_metabolite"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="alectinib" model-id="Alectinib_van2025_1_3_5_years_190_mg_bid" status="rejected" stale="false" population="adults with ALK-positive advanced NSCLC and virtual pediatric patients" measured-compound="alectinib" parameterization="mechanistic" topology="parent_metabolite"></div>
 
 **Model structure:** parent + metabolite; no model was built for this record.  
 **Parameters:** 1 extracted.

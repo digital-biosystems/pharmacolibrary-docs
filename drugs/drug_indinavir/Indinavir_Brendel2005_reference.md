@@ -21,8 +21,7 @@
 Brendel K et al., Population pharmacokinetic analysis of…, Fundamental & clinical phar… (2005)
   ·  DOI: [10.1111/j.1472-8206.2005.00315.x](https://doi.org/10.1111/j.1472-8206.2005.00315.x)
 
-## Model component
-<dbs-pgx drug="indinavir" model-id="Indinavir_Brendel2005_reference" status="rejected" stale="false" population="HIV-infected patients with sustained virological response" measured-compound="indinavir" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="indinavir" model-id="Indinavir_Brendel2005_reference" status="rejected" stale="false" population="HIV-infected patients with sustained virological response" measured-compound="indinavir" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

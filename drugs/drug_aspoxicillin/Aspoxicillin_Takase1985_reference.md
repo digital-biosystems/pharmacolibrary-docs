@@ -19,8 +19,7 @@
 ## Citation
 Takase Z et al., [Fundamental studies on aspoxicillin in…, The Japanese journal of ant… (1985)
 
-## Model component
-<dbs-pgx drug="aspoxicillin" model-id="Aspoxicillin_Takase1985_reference" status="rejected" stale="false" population="gynecological patients" measured-compound="aspoxicillin" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="aspoxicillin" model-id="Aspoxicillin_Takase1985_reference" status="rejected" stale="false" population="gynecological patients" measured-compound="aspoxicillin" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

@@ -21,8 +21,7 @@
 Marsot A et al., Interaction of thiopental with esomepra…, European journal of clinica… (2013)
   ·  DOI: [10.1007/s00228-013-1527-3](https://doi.org/10.1007/s00228-013-1527-3)
 
-## Model component
-<dbs-pgx drug="thiopental" model-id="Thiopental_Marsot2013_reference" status="extracted" stale="false" population="critically ill patients with intracranial hypertension" measured-compound="thiopental" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="thiopental" model-id="Thiopental_Marsot2013_reference" status="extracted" stale="false" population="critically ill patients with intracranial hypertension" measured-compound="thiopental" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 3 extracted.

@@ -32,8 +32,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the val
 Nasser A et al., Population Pharmacokinetics of Viloxazi…, Journal of clinical pharmac… (2021)
   ·  DOI: [10.1002/jcph.1940](https://doi.org/10.1002/jcph.1940)
 
-## Model component
-<dbs-pgx drug="viloxazine" model-id="Viloxazine_Nasser2021_reference" status="rejected" stale="true" population="pediatric subjects with ADHD" measured-compound="viloxazine" parameterization="mechanistic" topology="parent_metabolite"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="viloxazine" model-id="Viloxazine_Nasser2021_reference" status="rejected" stale="true" population="pediatric subjects with ADHD" measured-compound="viloxazine" parameterization="mechanistic" topology="parent_metabolite"></div>
 
 **Model structure:** parent + metabolite; no model was built for this record.  
 **Parameters:** 0 extracted.

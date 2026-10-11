@@ -21,8 +21,7 @@
 Trang JM et al., Cefotaxime and desacetylcefotaxime phar…, Antimicrobial agents and ch… (1985)
   ·  DOI: [10.1128/AAC.28.6.791](https://doi.org/10.1128/AAC.28.6.791)
 
-## Model component
-<dbs-pgx drug="cefotaxime" model-id="Cefotaxime_Trang1985_model_dependent" status="needs_review" stale="false" population="infants and children with meningitis" measured-compound="cefotaxime" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="cefotaxime" model-id="Cefotaxime_Trang1985_model_dependent" status="needs_review" stale="false" population="infants and children with meningitis" measured-compound="cefotaxime" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 4 extracted.

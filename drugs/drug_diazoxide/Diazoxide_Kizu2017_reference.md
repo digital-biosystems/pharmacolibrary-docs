@@ -30,8 +30,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Kizu R et al., Population Pharmacokinetics of Diazoxid…, Hormone research in paediat… (2017)
   ·  DOI: [10.1159/000478696](https://doi.org/10.1159/000478696)
 
-## Model component
-<dbs-pgx drug="diazoxide" model-id="Diazoxide_Kizu2017_reference" status="rejected" stale="true" population="children with hyperinsulinemic hypoglycemia" measured-compound="diazoxide" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="diazoxide" model-id="Diazoxide_Kizu2017_reference" status="rejected" stale="true" population="children with hyperinsulinemic hypoglycemia" measured-compound="diazoxide" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

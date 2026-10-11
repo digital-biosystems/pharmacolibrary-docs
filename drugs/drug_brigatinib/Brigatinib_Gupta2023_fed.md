@@ -21,8 +21,7 @@
 Gupta N et al., Clinical Pharmacology of Brigatinib: A…, Clinical pharmacokinetics (2023)
   ·  DOI: [10.1007/s40262-023-01284-w](https://doi.org/10.1007/s40262-023-01284-w)
 
-## Model component
-<dbs-pgx drug="brigatinib" model-id="Brigatinib_Gupta2023_fed" status="rejected" stale="false" population="patients with advanced malignancies in phase I/II and phase II ALTA studies" measured-compound="brigatinib" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="brigatinib" model-id="Brigatinib_Gupta2023_fed" status="rejected" stale="false" population="patients with advanced malignancies in phase I/II and phase II ALTA studies" measured-compound="brigatinib" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

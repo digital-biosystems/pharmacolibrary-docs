@@ -20,8 +20,7 @@
 Olsson Gisleskog PO et al., Nicotine Population Pharmacokinetics in…, Clinical pharmacokinetics (2021)
   ·  DOI: [10.1007/s40262-020-00960-5](https://doi.org/10.1007/s40262-020-00960-5)
 
-## Model component
-<dbs-pgx drug="nicotine" model-id="Nicotine_Olsson2021_lozenge" status="needs_review" stale="false" population="healthy smokers" measured-compound="nicotine" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="nicotine" model-id="Nicotine_Olsson2021_lozenge" status="needs_review" stale="false" population="healthy smokers" measured-compound="nicotine" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 6 extracted.

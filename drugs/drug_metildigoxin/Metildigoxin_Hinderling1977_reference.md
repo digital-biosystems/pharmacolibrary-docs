@@ -30,8 +30,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Hinderling PH et al., Pharmacokinetics of beta-methyldigoxin…, Journal of pharmaceutical s… (1977)
   ·  DOI: [10.1002/jps.2600660304](https://doi.org/10.1002/jps.2600660304)
 
-## Model component
-<dbs-pgx drug="metildigoxin" model-id="Metildigoxin_Hinderling1977_reference" status="rejected" stale="true" population="healthy humans" measured-compound="beta-methyldigoxin" parameterization="mechanistic" topology="parent_metabolite"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="metildigoxin" model-id="Metildigoxin_Hinderling1977_reference" status="rejected" stale="true" population="healthy humans" measured-compound="beta-methyldigoxin" parameterization="mechanistic" topology="parent_metabolite"></div>
 
 **Model structure:** parent + metabolite; no model was built for this record.  
 **Parameters:** 0 extracted.

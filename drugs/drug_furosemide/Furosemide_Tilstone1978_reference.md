@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Tilstone WJ et al., Furosemide kinetics in renal failure, Clinical pharmacology and t… (1978)
   ·  DOI: [10.1002/cpt1978236644](https://doi.org/10.1002/cpt1978236644)
 
-## Model component
-<dbs-pgx drug="furosemide" model-id="Furosemide_Tilstone1978_reference" status="extracted" stale="true" population="normal volunteers and patients with renal failure" measured-compound="furosemide" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="furosemide" model-id="Furosemide_Tilstone1978_reference" status="extracted" stale="true" population="normal volunteers and patients with renal failure" measured-compound="furosemide" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment, oral mammillary model — template `PK_2C_enteral`.  
 **Parameters:** 7 extracted.

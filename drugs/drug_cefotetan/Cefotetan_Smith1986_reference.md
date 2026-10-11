@@ -20,8 +20,7 @@
 Smith BR et al., Cefotetan pharmacokinetics in volunteer…, Antimicrobial agents and ch… (1986)
   ·  DOI: [10.1128/AAC.29.5.887](https://doi.org/10.1128/AAC.29.5.887)
 
-## Model component
-<dbs-pgx drug="cefotetan" model-id="Cefotetan_Smith1986_reference" status="rejected" stale="false" population="adults with various degrees of renal function" measured-compound="cefotetan" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="cefotetan" model-id="Cefotetan_Smith1986_reference" status="rejected" stale="false" population="adults with various degrees of renal function" measured-compound="cefotetan" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

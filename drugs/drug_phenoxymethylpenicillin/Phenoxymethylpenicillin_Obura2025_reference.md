@@ -21,8 +21,7 @@
 Obura B et al., Pharmacokinetics of Intrapartum Benzylp…, CPT: pharmacometrics & syst… (2025)
   ·  DOI: [10.1002/psp4.70072](https://doi.org/10.1002/psp4.70072)
 
-## Model component
-<dbs-pgx drug="phenoxymethylpenicillin" model-id="Phenoxymethylpenicillin_Obura2025_reference" status="extracted" stale="false" population="" measured-compound="phenoxymethylpenicillin" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="phenoxymethylpenicillin" model-id="Phenoxymethylpenicillin_Obura2025_reference" status="extracted" stale="false" population="" measured-compound="phenoxymethylpenicillin" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameters:** 2 extracted.

@@ -21,8 +21,7 @@
 Yang J et al., Population Pharmacokinetics of Perampan…, Therapeutic drug monitoring (2025)
   ·  DOI: [10.1097/FTD.0000000000001296](https://doi.org/10.1097/FTD.0000000000001296)
 
-## Model component
-<dbs-pgx drug="perampanel" model-id="Perampanel_Yang2025_reference" status="rejected" stale="false" population="Chinese pediatric and adult patients with epilepsy" measured-compound="perampanel" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="perampanel" model-id="Perampanel_Yang2025_reference" status="rejected" stale="false" population="Chinese pediatric and adult patients with epilepsy" measured-compound="perampanel" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

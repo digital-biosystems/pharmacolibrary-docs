@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the val
 Sumner DJ et al., Digoxin pharmacokinetics: multicompartm…, British journal of clinical… (1976)
   ·  DOI: [10.1111/j.1365-2125.1976.tb00596.x](https://doi.org/10.1111/j.1365-2125.1976.tb00596.x)
 
-## Model component
-<dbs-pgx drug="digoxin" model-id="Digoxin_Sumner1976_reference" status="needs_review" stale="true" population="healthy volunteers" measured-compound="digoxin" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="digoxin" model-id="Digoxin_Sumner1976_reference" status="needs_review" stale="true" population="healthy volunteers" measured-compound="digoxin" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 3 extracted.

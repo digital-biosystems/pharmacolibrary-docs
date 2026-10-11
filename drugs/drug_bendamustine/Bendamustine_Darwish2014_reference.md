@@ -21,8 +21,7 @@
 Darwish M et al., Population pharmacokinetics and pharmac…, Current medical research an… (2014)
   ·  DOI: [10.1185/03007995.2014.941976](https://doi.org/10.1185/03007995.2014.941976)
 
-## Model component
-<dbs-pgx drug="bendamustine" model-id="Bendamustine_Darwish2014_reference" status="rejected" stale="false" population="pediatric patients with relapsed/refractory acute leukemia" measured-compound="bendamustine" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="bendamustine" model-id="Bendamustine_Darwish2014_reference" status="rejected" stale="false" population="pediatric patients with relapsed/refractory acute leukemia" measured-compound="bendamustine" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 5 extracted.

@@ -21,8 +21,7 @@
 Khalil F et al., Population Pharmacokinetics of Tapentad…, Journal of pain research (2020)
   ·  DOI: [10.2147/JPR.S269549](https://doi.org/10.2147/JPR.S269549)
 
-## Model component
-<dbs-pgx drug="tapentadol" model-id="Tapentadol_Khalil2020_final_final_model_with_fixed_exponents" status="needs_review" stale="false" population="children from birth to &lt;18 years old with acute pain" measured-compound="tapentadol" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="tapentadol" model-id="Tapentadol_Khalil2020_final_final_model_with_fixed_exponents" status="needs_review" stale="false" population="children from birth to &lt;18 years old with acute pain" measured-compound="tapentadol" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 6 extracted, plus 3 covariate effects.

@@ -33,8 +33,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the val
 Belle DJ et al., A population approach to enzyme charact…, Pharmaceutical research (2000)
   ·  DOI: [10.1023/a:1007665310830](https://doi.org/10.1023/a:1007665310830)
 
-## Model component
-<dbs-pgx drug="paracetamol" model-id="Paracetamol_Belle2000_base" status="rejected" stale="false" population="human liver microsomes" measured-compound="acetaminophen" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="paracetamol" model-id="Paracetamol_Belle2000_base" status="rejected" stale="false" population="human liver microsomes" measured-compound="acetaminophen" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 4 extracted.

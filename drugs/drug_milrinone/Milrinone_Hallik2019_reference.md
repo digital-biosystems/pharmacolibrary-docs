@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Hallik M et al., Population Pharmacokinetics and Dosing…, Pediatric critical care med… (2019)
   ·  DOI: [10.1097/PCC.0000000000001879](https://doi.org/10.1097/PCC.0000000000001879)
 
-## Model component
-<dbs-pgx drug="milrinone" model-id="Milrinone_Hallik2019_reference" status="rejected" stale="true" population="preterm infants" measured-compound="milrinone" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="milrinone" model-id="Milrinone_Hallik2019_reference" status="rejected" stale="true" population="preterm infants" measured-compound="milrinone" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

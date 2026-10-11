@@ -33,8 +33,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on `parame
 Yu B et al., Population Pharmacokinetics and Covaria…, Drug design, development an… (2025)
   ·  DOI: [10.2147/DDDT.S545368](https://doi.org/10.2147/DDDT.S545368)
 
-## Model component
-<dbs-pgx drug="methotrexate" model-id="Methotrexate_Yu2025_reference" status="extracted" stale="true" population="pediatric patients with acute lymphoblastic leukemia" measured-compound="methotrexate" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="methotrexate" model-id="Methotrexate_Yu2025_reference" status="extracted" stale="true" population="pediatric patients with acute lymphoblastic leukemia" measured-compound="methotrexate" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment, oral mammillary model — template `PK_2C_enteral`.  
 **Parameters:** 6 extracted.

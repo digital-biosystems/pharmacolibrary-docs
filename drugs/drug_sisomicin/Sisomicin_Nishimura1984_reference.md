@@ -19,8 +19,7 @@
 ## Citation
 Nishimura T et al., [A pharmacokinetic investigation of sis…, The Japanese journal of ant… (1984)
 
-## Model component
-<dbs-pgx drug="sisomicin" model-id="Sisomicin_Nishimura1984_reference" status="rejected" stale="false" population="children" measured-compound="sisomicin" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="sisomicin" model-id="Sisomicin_Nishimura1984_reference" status="rejected" stale="false" population="children" measured-compound="sisomicin" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

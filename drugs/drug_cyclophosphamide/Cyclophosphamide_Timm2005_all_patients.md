@@ -21,8 +21,7 @@
 Timm R et al., Association of cyclophosphamide pharmac…, The pharmacogenomics journal (2005)
   ·  DOI: [10.1038/sj.tpj.6500330](https://doi.org/10.1038/sj.tpj.6500330)
 
-## Model component
-<dbs-pgx drug="cyclophosphamide" model-id="Cyclophosphamide_Timm2005_all_patients" status="rejected" stale="false" population="patients" measured-compound="cyclophosphamide" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="cyclophosphamide" model-id="Cyclophosphamide_Timm2005_all_patients" status="rejected" stale="false" population="patients" measured-compound="cyclophosphamide" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

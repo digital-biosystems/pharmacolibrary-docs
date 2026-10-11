@@ -31,8 +31,7 @@ Independently confirmed by `gpt-oss:120b`.
 Bressolle F et al., Bayesian estimation of doxorubicin phar…, Cancer chemotherapy and pha… (1991)
   ·  DOI: [10.1007/BF00686336](https://doi.org/10.1007/BF00686336)
 
-## Model component
-<dbs-pgx drug="doxorubicin" model-id="Doxorubicin_Bressolle1991_reference" status="rejected" stale="true" population="patients receiving chemotherapy" measured-compound="doxorubicin" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="doxorubicin" model-id="Doxorubicin_Bressolle1991_reference" status="rejected" stale="true" population="patients receiving chemotherapy" measured-compound="doxorubicin" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 4 extracted.

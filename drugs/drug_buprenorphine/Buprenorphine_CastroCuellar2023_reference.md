@@ -23,8 +23,7 @@
 Castro-Cuellar G et al., Pharmacokinetics of intra-articular bup…, Journal of veterinary pharm… (2023)
   ·  DOI: [10.1111/jvp.13119](https://doi.org/10.1111/jvp.13119)
 
-## Model component
-<dbs-pgx drug="buprenorphine" model-id="Buprenorphine_CastroCuellar2023_reference" status="rejected" stale="false" population="horses with LPS-induced synovitis" measured-compound="buprenorphine" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="buprenorphine" model-id="Buprenorphine_CastroCuellar2023_reference" status="rejected" stale="false" population="horses with LPS-induced synovitis" measured-compound="buprenorphine" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

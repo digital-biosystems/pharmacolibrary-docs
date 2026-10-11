@@ -31,8 +31,7 @@ Independently confirmed by `gpt-oss:120b`.
 Iannone LF et al., Pharmacokinetics and Pharmacodynamics,…, European journal of drug me… (2026)
   ·  DOI: [10.1007/s13318-026-00990-7](https://doi.org/10.1007/s13318-026-00990-7)
 
-## Model component
-<dbs-pgx drug="fremanezumab" model-id="Fremanezumab_Iannone2026_children_adolescents_6_17_years" status="rejected" stale="true" population="children and adolescents" measured-compound="fremanezumab" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="fremanezumab" model-id="Fremanezumab_Iannone2026_children_adolescents_6_17_years" status="rejected" stale="true" population="children and adolescents" measured-compound="fremanezumab" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

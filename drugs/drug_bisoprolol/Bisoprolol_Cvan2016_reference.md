@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the val
 KatjaCvan Trobec katja.cvan.trobec@gmail.com Faculty of Pharmacy University of Ljubljana Ljubljana Slovenia et al., PHARMACOKINETICS AND DISPOSITION Bisopr… (2016)
   ·  DOI: [10.1007/s00228-016-2041-1](https://doi.org/10.1007/s00228-016-2041-1)
 
-## Model component
-<dbs-pgx drug="bisoprolol" model-id="Bisoprolol_Cvan2016_reference" status="accepted_with_caveats" stale="false" population="patients with chronic heart failure" measured-compound="bisoprolol" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="bisoprolol" model-id="Bisoprolol_Cvan2016_reference" status="accepted_with_caveats" stale="false" population="patients with chronic heart failure" measured-compound="bisoprolol" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 4 extracted.

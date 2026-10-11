@@ -29,8 +29,7 @@ The paper reports CL/F (1.51 L/h), V/F (23.7 L), a body-size-normalized clearanc
 Li Y et al., PopPK modeling supports BW band dosing…, NPJ genomic medicine (2025)
   ·  DOI: [10.1038/s41525-025-00519-y](https://doi.org/10.1038/s41525-025-00519-y)
 
-## Model component
-<dbs-pgx drug="lacosamide" model-id="Lacosamide_Li2025_final_models" status="extracted" stale="true" population="children with epilepsy" measured-compound="lacosamide" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="lacosamide" model-id="Lacosamide_Li2025_final_models" status="extracted" stale="true" population="children with epilepsy" measured-compound="lacosamide" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 3 extracted.

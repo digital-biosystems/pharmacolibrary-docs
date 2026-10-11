@@ -30,8 +30,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the val
 Ruzilawati AB et al., Population pharmacokinetic modelling of…, Journal of clinical pharmac… (2010)
   ·  DOI: [10.1111/j.1365-2710.2009.01042.x](https://doi.org/10.1111/j.1365-2710.2009.01042.x)
 
-## Model component
-<dbs-pgx drug="repaglinide" model-id="Repaglinide_Ruzilawati2010_reference" status="rejected" stale="true" population="healthy Malaysian volunteers" measured-compound="repaglinide" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="repaglinide" model-id="Repaglinide_Ruzilawati2010_reference" status="rejected" stale="true" population="healthy Malaysian volunteers" measured-compound="repaglinide" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 2 extracted.

@@ -24,8 +24,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Cook GJ et al., Differences in skeletal kinetics betwee…, Journal of bone and mineral… (2000)
   ·  DOI: [10.1359/jbmr.2000.15.4.763](https://doi.org/10.1359/jbmr.2000.15.4.763)
 
-## Model component
-<dbs-pgx drug="sodium fluoride (18F)" model-id="SodiumFluoride18f_Cook2000_reference" status="rejected" stale="false" population="postmenopausal women" measured-compound="18F-fluoride" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="sodium fluoride (18F)" model-id="SodiumFluoride18f_Cook2000_reference" status="rejected" stale="false" population="postmenopausal women" measured-compound="18F-fluoride" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

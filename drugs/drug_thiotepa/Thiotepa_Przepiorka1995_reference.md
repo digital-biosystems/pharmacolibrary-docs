@@ -27,8 +27,7 @@ Nothing in the extracted data describes the drug's disposition, so there is no m
 ## Citation
 Przepiorka D et al., Dosing of thioTEPA for myeloablative th…, Cancer chemotherapy and pha… (1995)
 
-## Model component
-<dbs-pgx drug="thiotepa" model-id="Thiotepa_Przepiorka1995_reference" status="needs_review" stale="true" population="adults undergoing marrow transplantation for hematologic malignancies" measured-compound="thiotepa" parameterization="mechanistic" topology="parent_metabolite"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="thiotepa" model-id="Thiotepa_Przepiorka1995_reference" status="needs_review" stale="true" population="adults undergoing marrow transplantation for hematologic malignancies" measured-compound="thiotepa" parameterization="mechanistic" topology="parent_metabolite"></div>
 
 **Model structure:** parent + metabolite; no model was built for this record.  
 **Parameters:** 5 extracted.

@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-5.6-luna`) disagrees on which m
 Chu WY et al., Pharmacokinetic/Pharmacodynamic Modelli…, Clinical pharmacokinetics (2022)
   ·  DOI: [10.1007/s40262-021-01068-0](https://doi.org/10.1007/s40262-021-01068-0)
 
-## Model component
-<dbs-pgx drug="allopurinol" model-id="Allopurinol_Chu2022_reference" status="rejected" stale="true" population="neonates with hypoxic-ischemic encephalopathy" measured-compound="allopurinol" parameterization="mechanistic" topology="general_linear"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="allopurinol" model-id="Allopurinol_Chu2022_reference" status="rejected" stale="true" population="neonates with hypoxic-ischemic encephalopathy" measured-compound="allopurinol" parameterization="mechanistic" topology="general_linear"></div>
 
 **Model structure:** general linear; no model was built for this record.  
 **Parameters:** 0 extracted.

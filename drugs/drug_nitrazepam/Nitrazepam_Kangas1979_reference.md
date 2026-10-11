@@ -20,8 +20,7 @@
 Kangas L et al., Human pharmacokinetics of nitrazepam: e…, European journal of clinica… (1979)
   ·  DOI: [10.1007/BF00563100](https://doi.org/10.1007/BF00563100)
 
-## Model component
-<dbs-pgx drug="nitrazepam" model-id="Nitrazepam_Kangas1979_reference" status="rejected" stale="false" population="young healthy volunteers, geriatric and psychiatric patients, epileptic children" measured-compound="nitrazepam" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="nitrazepam" model-id="Nitrazepam_Kangas1979_reference" status="rejected" stale="false" population="young healthy volunteers, geriatric and psychiatric patients, epileptic children" measured-compound="nitrazepam" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 4 extracted.

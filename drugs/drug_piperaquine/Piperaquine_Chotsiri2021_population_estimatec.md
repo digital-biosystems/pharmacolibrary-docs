@@ -21,8 +21,7 @@
 Chotsiri P et al., Piperaquine Pharmacokinetics during Int…, Antimicrobial agents and ch… (2021)
   ·  DOI: [10.1128/AAC.01150-20](https://doi.org/10.1128/AAC.01150-20)
 
-## Model component
-<dbs-pgx drug="Piperaquine" model-id="Piperaquine_Chotsiri2021_population_estimatec" status="extracted" stale="false" population="pregnant women receiving IPTp with dihydroartemisinin-piperaquine" measured-compound="piperaquine" parameterization="apparent" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="Piperaquine" model-id="Piperaquine_Chotsiri2021_population_estimatec" status="extracted" stale="false" population="pregnant women receiving IPTp with dihydroartemisinin-piperaquine" measured-compound="piperaquine" parameterization="apparent" topology="2C"></div>
 
 **Model structure:** 2-compartment, oral mammillary model — template `PK_2C_enteral`.  
 **Parameters:** 8 extracted.

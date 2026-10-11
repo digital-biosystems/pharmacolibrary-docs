@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the val
 Falloon J et al., Pharmacokinetics and safety of weekly d…, Antimicrobial agents and ch… (1994)
   ·  DOI: [10.1128/AAC.38.7.1580](https://doi.org/10.1128/AAC.38.7.1580)
 
-## Model component
-<dbs-pgx drug="dapsone" model-id="Dapsone_Falloon1994_reference" status="rejected" stale="true" population="HIV-infected adults" measured-compound="dapsone and pyrimethamine" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="dapsone" model-id="Dapsone_Falloon1994_reference" status="rejected" stale="true" population="HIV-infected adults" measured-compound="dapsone and pyrimethamine" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

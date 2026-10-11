@@ -20,8 +20,7 @@
 Pétain A et al., Effect of ethnicity on vinorelbine phar…, Cancer chemotherapy and pha… (2019)
   ·  DOI: [10.1007/s00280-019-03872-9](https://doi.org/10.1007/s00280-019-03872-9)
 
-## Model component
-<dbs-pgx drug="vinorelbine" model-id="Vinorelbine_Ptain2019_intravenous_vinorelbine" status="needs_review" stale="false" population="Asian and European patients with non-small-cell lung cancer or advanced breast cancer" measured-compound="vinorelbine" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="vinorelbine" model-id="Vinorelbine_Ptain2019_intravenous_vinorelbine" status="needs_review" stale="false" population="Asian and European patients with non-small-cell lung cancer or advanced breast cancer" measured-compound="vinorelbine" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 2 extracted.

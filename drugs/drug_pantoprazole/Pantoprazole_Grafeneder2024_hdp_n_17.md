@@ -29,8 +29,7 @@ No clearance, volume or rate constant of the model is reported in it. No paramet
 Grafeneder J et al., Prospective Trial on the Pharmacokineti…, Kidney international reports (2024)
   ·  DOI: [10.1016/j.ekir.2024.07.029](https://doi.org/10.1016/j.ekir.2024.07.029)
 
-## Model component
-<dbs-pgx drug="pantoprazole" model-id="Pantoprazole_Grafeneder2024_hdp_n_17" status="rejected" stale="false" population="hemodialysis patients and healthy volunteers" measured-compound="clopidogrel active metabolite" parameterization="mechanistic" topology="parent_metabolite"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="pantoprazole" model-id="Pantoprazole_Grafeneder2024_hdp_n_17" status="rejected" stale="false" population="hemodialysis patients and healthy volunteers" measured-compound="clopidogrel active metabolite" parameterization="mechanistic" topology="parent_metabolite"></div>
 
 **Model structure:** parent + metabolite; no model was built for this record.  
 **Parameters:** 0 extracted, plus 4 covariate effects.

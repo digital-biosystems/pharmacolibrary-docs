@@ -23,8 +23,7 @@
 Liu H et al., Time-Dependent Bias and Prognostic Conf…, Clinical pharmacology and t… (2026)
   ·  DOI: [10.1002/cpt.70447](https://doi.org/10.1002/cpt.70447)
 
-## Model component
-<dbs-pgx drug="sunitinib" model-id="Sunitinib_Liu2026_reference" status="needs_review" stale="false" population="patients with metastatic renal cell carcinoma from four clinical trials" measured-compound="sunitinib and SU12662" parameterization="apparent" topology="parent_metabolite"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="sunitinib" model-id="Sunitinib_Liu2026_reference" status="needs_review" stale="false" population="patients with metastatic renal cell carcinoma from four clinical trials" measured-compound="sunitinib and SU12662" parameterization="apparent" topology="parent_metabolite"></div>
 
 **Model structure:** parent + metabolite; no model was built for this record.  
 **Parameters:** 3 extracted.

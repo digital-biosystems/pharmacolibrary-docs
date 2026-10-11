@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Ferguson-Sells L et al., Population Pharmacokinetics of Tadalafi…, Clinical pharmacokinetics (2022)
   ·  DOI: [10.1007/s40262-021-01052-8](https://doi.org/10.1007/s40262-021-01052-8)
 
-## Model component
-<dbs-pgx drug="tadalafil" model-id="Tadalafil_FergusonSells2022_reference" status="rejected" stale="true" population="adults and pediatric patients with pulmonary arterial hypertension" measured-compound="tadalafil" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="tadalafil" model-id="Tadalafil_FergusonSells2022_reference" status="rejected" stale="true" population="adults and pediatric patients with pulmonary arterial hypertension" measured-compound="tadalafil" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 2 extracted.

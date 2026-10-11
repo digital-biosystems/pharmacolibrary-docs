@@ -30,8 +30,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Lalka D et al., Kinetics of the oral antiarrhythmic lid…, Clinical pharmacology and t… (1976)
   ·  DOI: [10.1002/cpt1976196757](https://doi.org/10.1002/cpt1976196757)
 
-## Model component
-<dbs-pgx drug="tocainide" model-id="Tocainide_Lalka1976_reference" status="rejected" stale="true" population="healthy male subjects" measured-compound="tocainide" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="tocainide" model-id="Tocainide_Lalka1976_reference" status="rejected" stale="true" population="healthy male subjects" measured-compound="tocainide" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 6 extracted.

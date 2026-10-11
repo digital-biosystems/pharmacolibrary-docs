@@ -20,8 +20,7 @@
 Norman T et al., Single oral dose pharmacokinetics of ti…, European journal of clinica… (1987)
   ·  DOI: [10.1007/BF02455992](https://doi.org/10.1007/BF02455992)
 
-## Model component
-<dbs-pgx drug="tiapride" model-id="Tiapride_Norman1987_reference" status="needs_review" stale="false" population="patients with Huntington&#39;s disease" measured-compound="tiapride" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="tiapride" model-id="Tiapride_Norman1987_reference" status="needs_review" stale="false" population="patients with Huntington&#39;s disease" measured-compound="tiapride" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 4 extracted.

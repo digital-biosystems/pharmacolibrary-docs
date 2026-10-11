@@ -20,8 +20,7 @@
 Casanova M et al., Regorafenib plus Vincristine and Irinot…, Clinical cancer research :… (2023)
   ·  DOI: [10.1158/1078-0432.CCR-23-0257](https://doi.org/10.1158/1078-0432.CCR-23-0257)
 
-## Model component
-<dbs-pgx drug="regorafenib" model-id="Regorafenib_Casanova2023_reference" status="needs_review" stale="false" population="pediatric patients with recurrent/refractory solid tumors" measured-compound="regorafenib" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="regorafenib" model-id="Regorafenib_Casanova2023_reference" status="needs_review" stale="false" population="pediatric patients with recurrent/refractory solid tumors" measured-compound="regorafenib" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 4 extracted.

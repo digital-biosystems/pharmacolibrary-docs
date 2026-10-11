@@ -13,8 +13,7 @@
 ## Citation
 not matched (stem Carceles_1995)
 
-## Model component
-<dbs-pgx drug="amoxicillin" model-id="Amoxicillin_Carceles1995_intravenous_route_w_10" status="rejected" stale="false" population="turkeys and chickens" measured-compound="amoxicillin and clavulanic acid" parameterization="apparent" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="amoxicillin" model-id="Amoxicillin_Carceles1995_intravenous_route_w_10" status="rejected" stale="false" population="turkeys and chickens" measured-compound="amoxicillin and clavulanic acid" parameterization="apparent" topology="2C"></div>
 
 **Parameterization:** CL/F, V/F — apparent, F unknown (apparent — bioavailability not identifiable).
 

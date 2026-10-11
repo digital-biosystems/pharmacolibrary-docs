@@ -23,8 +23,7 @@
 Ganesan H et al., Population Pharmacokinetic Analyses for…, Antimicrobial agents and ch… (2023)
   ·  DOI: [10.1128/aac.01451-22](https://doi.org/10.1128/aac.01451-22)
 
-## Model component
-<dbs-pgx drug="tebipenem pivoxil" model-id="TebipenemPivoxil_Ganesan2023_reference" status="extracted" stale="false" population="adults with cUTI/AP and healthy adults" measured-compound="tebipenem" parameterization="apparent" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="tebipenem pivoxil" model-id="TebipenemPivoxil_Ganesan2023_reference" status="extracted" stale="false" population="adults with cUTI/AP and healthy adults" measured-compound="tebipenem" parameterization="apparent" topology="2C"></div>
 
 **Model structure:** 2-compartment, oral mammillary model — template `PK_2C_enteral`.  
 **Parameters:** 6 extracted, plus 2 covariate effects.

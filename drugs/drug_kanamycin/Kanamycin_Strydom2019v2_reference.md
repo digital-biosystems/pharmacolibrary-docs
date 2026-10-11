@@ -29,8 +29,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on `parame
 Strydom N et al., Tuberculosis drugs' distribution and em…, PLoS medicine (2019)
   ·  DOI: [10.1371/journal.pmed.1002773](https://doi.org/10.1371/journal.pmed.1002773)
 
-## Model component
-<dbs-pgx drug="kanamycin" model-id="Kanamycin_Strydom2019v2_reference" status="extracted" stale="true" population="adults with tuberculosis" measured-compound="kanamycin" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="kanamycin" model-id="Kanamycin_Strydom2019v2_reference" status="extracted" stale="true" population="adults with tuberculosis" measured-compound="kanamycin" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 3 extracted.

@@ -30,8 +30,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on `parame
 Frechen S et al., Population pharmacokinetic and pharmaco…, Drug metabolism and pharmac… (2015)
   ·  DOI: [10.1016/j.dmpk.2015.08.002](https://doi.org/10.1016/j.dmpk.2015.08.002)
 
-## Model component
-<dbs-pgx drug="epinephrine" model-id="Epinephrine_Frechen2015_reference" status="needs_review" stale="true" population="healthy volunteers" measured-compound="epinephrine" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="epinephrine" model-id="Epinephrine_Frechen2015_reference" status="needs_review" stale="true" population="healthy volunteers" measured-compound="epinephrine" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 6 extracted.

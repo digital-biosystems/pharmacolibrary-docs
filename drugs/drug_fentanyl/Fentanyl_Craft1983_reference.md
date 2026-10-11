@@ -32,8 +32,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on `parame
 ## Citation
 Craft JB et al., Placental passage and uterine effects o…, Anesthesia and analgesia (1983)
 
-## Model component
-<dbs-pgx drug="fentanyl" model-id="Fentanyl_Craft1983_reference" status="needs_review" stale="true" population="pregnant ewes" measured-compound="fentanyl" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="fentanyl" model-id="Fentanyl_Craft1983_reference" status="needs_review" stale="true" population="pregnant ewes" measured-compound="fentanyl" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 4 extracted.

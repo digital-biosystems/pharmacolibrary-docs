@@ -27,8 +27,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the val
 Béguin J; Mahfoudhi S; Uzel M; Rostang A; Ibish C; Ferran AA; Pelligand L; Hulin A; Kohlhauer M et al. (2024). BMC veterinary research 20
   ·  DOI: [10.1186/s12917-024-04404-1](https://doi.org/10.1186/s12917-024-04404-1)
 
-## Model component
-<dbs-pgx drug="doxorubicin" model-id="Doxorubicin_Bguin2024_reference" status="curated_candidate" stale="false" population="" measured-compound="doxorubicin" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="doxorubicin" model-id="Doxorubicin_Bguin2024_reference" status="curated_candidate" stale="false" population="" measured-compound="doxorubicin" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameters:** 2 extracted.

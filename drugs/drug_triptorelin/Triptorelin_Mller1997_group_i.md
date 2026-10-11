@@ -22,8 +22,7 @@
 Müller FO et al., Pharmacokinetics of triptorelin after i…, British journal of clinical… (1997)
   ·  DOI: [10.1046/j.1365-2125.1997.t01-1-00592.x](https://doi.org/10.1046/j.1365-2125.1997.t01-1-00592.x)
 
-## Model component
-<dbs-pgx drug="triptorelin" model-id="Triptorelin_Mller1997_group_i" status="needs_review" stale="false" population="healthy males and males with renal or hepatic insufficiency" measured-compound="triptorelin" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="triptorelin" model-id="Triptorelin_Mller1997_group_i" status="needs_review" stale="false" population="healthy males and males with renal or hepatic insufficiency" measured-compound="triptorelin" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 7 extracted.

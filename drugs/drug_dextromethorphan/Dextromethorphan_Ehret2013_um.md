@@ -19,8 +19,7 @@
 ## Citation
 Ehret GB et al., Influence of CYP2D6 activity on pre-emp…, Pain physician (2013)
 
-## Model component
-<dbs-pgx drug="dextromethorphan" model-id="Dextromethorphan_Ehret2013_um" status="needs_review" stale="false" population="adults with acute post-operative pain (knee ligament surgery) plus healthy volunteers" measured-compound="dextromethorphan" parameterization="mechanistic" topology="parent_metabolite"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="dextromethorphan" model-id="Dextromethorphan_Ehret2013_um" status="needs_review" stale="false" population="adults with acute post-operative pain (knee ligament surgery) plus healthy volunteers" measured-compound="dextromethorphan" parameterization="mechanistic" topology="parent_metabolite"></div>
 
 **Model structure:** parent + metabolite; no model was built for this record.  
 **Parameters:** 2 extracted.

@@ -27,8 +27,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on paramet
 Devineni D et al., Clinical Pharmacokinetic, Pharmacodynam…, Clinical pharmacokinetics (2015)
   ·  DOI: [10.1007/s40262-015-0285-z](https://doi.org/10.1007/s40262-015-0285-z)
 
-## Model component
-<dbs-pgx drug="simvastatin" model-id="Simvastatin_Devineni2015_reference" status="curated_candidate" stale="false" population="" measured-compound="simvastatin" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="simvastatin" model-id="Simvastatin_Devineni2015_reference" status="curated_candidate" stale="false" population="" measured-compound="simvastatin" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameters:** 2 extracted.

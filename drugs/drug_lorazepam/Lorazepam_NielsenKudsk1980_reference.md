@@ -23,8 +23,7 @@
 Nielsen-Kudsk F et al., Disposition pharmacokinetics of lorazep…, Acta pharmacologica et toxi… (1980)
   ·  DOI: [10.1111/j.1600-0773.1980.tb02471.x](https://doi.org/10.1111/j.1600-0773.1980.tb02471.x)
 
-## Model component
-<dbs-pgx drug="lorazepam" model-id="Lorazepam_NielsenKudsk1980_reference" status="rejected" stale="false" population="rabbits" measured-compound="lorazepam" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="lorazepam" model-id="Lorazepam_NielsenKudsk1980_reference" status="rejected" stale="false" population="rabbits" measured-compound="lorazepam" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 7 extracted.

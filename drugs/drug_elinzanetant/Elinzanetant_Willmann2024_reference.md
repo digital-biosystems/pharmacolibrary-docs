@@ -20,8 +20,7 @@
 Willmann S et al., Population pharmacokinetic-pharmacodyna…, CPT: pharmacometrics & syst… (2024)
   ·  DOI: [10.1002/psp4.13226](https://doi.org/10.1002/psp4.13226)
 
-## Model component
-<dbs-pgx drug="elinzanetant" model-id="Elinzanetant_Willmann2024_reference" status="extracted" stale="false" population="healthy adults and women with vasomotor symptoms" measured-compound="elinzanetant" parameterization="mechanistic" topology="general_linear"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="elinzanetant" model-id="Elinzanetant_Willmann2024_reference" status="extracted" stale="false" population="healthy adults and women with vasomotor symptoms" measured-compound="elinzanetant" parameterization="mechanistic" topology="general_linear"></div>
 
 **Model structure:** 4-compartment general linear model (non-mammillary edges) — template `PK_General_Linear`.  
 **Parameters:** 20 extracted.

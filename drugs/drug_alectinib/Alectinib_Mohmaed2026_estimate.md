@@ -23,8 +23,7 @@
 Mohmaed Ali MI et al., Reducing the Burden of Interaction Stud…, Clinical pharmacology and t… (2026)
   ·  DOI: [10.1002/cpt.70141](https://doi.org/10.1002/cpt.70141)
 
-## Model component
-<dbs-pgx drug="alectinib" model-id="Alectinib_Mohmaed2026_estimate" status="rejected" stale="false" population="patients with ALK-positive non-small cell lung cancer" measured-compound="2H6-alectinib" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="alectinib" model-id="Alectinib_Mohmaed2026_estimate" status="rejected" stale="false" population="patients with ALK-positive non-small cell lung cancer" measured-compound="2H6-alectinib" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 5 extracted, plus 1 covariate effect.

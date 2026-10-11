@@ -21,8 +21,7 @@
 Okada Y et al., Population estimation regarding the eff…, Therapeutic drug monitoring (2008)
   ·  DOI: [10.1097/FTD.0b013e31817d842a](https://doi.org/10.1097/FTD.0b013e31817d842a)
 
-## Model component
-<dbs-pgx drug="zonisamide" model-id="Zonisamide_Okada2008_reference" status="needs_review" stale="false" population="Japanese epileptic patients" measured-compound="zonisamide" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="zonisamide" model-id="Zonisamide_Okada2008_reference" status="needs_review" stale="false" population="Japanese epileptic patients" measured-compound="zonisamide" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 1 extracted.

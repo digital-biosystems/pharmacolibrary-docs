@@ -33,8 +33,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the val
 Mc Laughlin AM et al., Nonlinear Mixed-Effects Model of Z-Endo…, Clinical pharmacology and t… (2024)
   ·  DOI: [10.1002/cpt.3238](https://doi.org/10.1002/cpt.3238)
 
-## Model component
-<dbs-pgx drug="tamoxifen" model-id="Tamoxifen_Mc2024_reference" status="rejected" stale="true" population="tamoxifen-treated patients" measured-compound="Z-endoxifen" parameterization="mechanistic" topology="parent_metabolite"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="tamoxifen" model-id="Tamoxifen_Mc2024_reference" status="rejected" stale="true" population="tamoxifen-treated patients" measured-compound="Z-endoxifen" parameterization="mechanistic" topology="parent_metabolite"></div>
 
 **Model structure:** parent + metabolite; no model was built for this record.  
 **Parameters:** 0 extracted.

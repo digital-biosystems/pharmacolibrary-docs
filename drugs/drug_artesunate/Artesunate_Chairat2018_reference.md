@@ -21,8 +21,7 @@
 Chairat K et al., Enantiospecific pharmacokinetics and dr…, The Journal of antimicrobia… (2018)
   ·  DOI: [10.1093/jac/dky297](https://doi.org/10.1093/jac/dky297)
 
-## Model component
-<dbs-pgx drug="artesunate" model-id="Artesunate_Chairat2018_reference" status="extracted" stale="false" population="" measured-compound="artesunate" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="artesunate" model-id="Artesunate_Chairat2018_reference" status="extracted" stale="false" population="" measured-compound="artesunate" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 2 extracted.

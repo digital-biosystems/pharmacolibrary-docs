@@ -27,8 +27,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on paramet
 Plosker GL, Tolvaptan, Drugs (2010)
   ·  DOI: [10.2165/11204630-000000000-00000](https://doi.org/10.2165/11204630-000000000-00000)
 
-## Model component
-<dbs-pgx drug="tolvaptan" model-id="Tolvaptan_Plosker2010_reference" status="curated_candidate" stale="false" population="patients with hyponatraemia" measured-compound="tolvaptan" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="tolvaptan" model-id="Tolvaptan_Plosker2010_reference" status="curated_candidate" stale="false" population="patients with hyponatraemia" measured-compound="tolvaptan" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameters:** 2 extracted.

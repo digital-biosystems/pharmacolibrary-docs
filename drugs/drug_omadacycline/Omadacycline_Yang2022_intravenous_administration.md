@@ -21,8 +21,7 @@
 Yang H et al., Pharmacokinetics, Safety and Pharmacoki…, Frontiers in pharmacology (2022)
   ·  DOI: [10.3389/fphar.2022.869237](https://doi.org/10.3389/fphar.2022.869237)
 
-## Model component
-<dbs-pgx drug="omadacycline" model-id="Omadacycline_Yang2022_intravenous_administration" status="needs_review" stale="false" population="healthy adults" measured-compound="omadacycline" parameterization="mechanistic" topology="3C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="omadacycline" model-id="Omadacycline_Yang2022_intravenous_administration" status="needs_review" stale="false" population="healthy adults" measured-compound="omadacycline" parameterization="mechanistic" topology="3C"></div>
 
 **Model structure:** 3-compartment; no model was built for this record.  
 **Parameters:** 15 extracted.

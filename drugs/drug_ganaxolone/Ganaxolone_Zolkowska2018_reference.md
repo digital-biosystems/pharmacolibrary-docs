@@ -31,8 +31,7 @@ Nothing in the extracted data describes the drug's disposition, so there is no m
 Zolkowska D et al., Intramuscular allopregnanolone and gana…, Epilepsia 59 Suppl 2(Suppl… (2018)
   ·  DOI: [10.1111/epi.13999](https://doi.org/10.1111/epi.13999)
 
-## Model component
-<dbs-pgx drug="ganaxolone" model-id="Ganaxolone_Zolkowska2018_reference" status="extracted" stale="true" population="mice" measured-compound="ganaxolone and allopregnanolone" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="ganaxolone" model-id="Ganaxolone_Zolkowska2018_reference" status="extracted" stale="true" population="mice" measured-compound="ganaxolone and allopregnanolone" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameters:** 5 extracted.

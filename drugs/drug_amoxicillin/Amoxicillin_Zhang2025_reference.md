@@ -29,8 +29,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on paramet
 Zhang P et al., Population pharmacokinetics of imipenem…, Frontiers in pharmacology (2025)
   ·  DOI: [10.3389/fphar.2025.1738055](https://doi.org/10.3389/fphar.2025.1738055)
 
-## Model component
-<dbs-pgx drug="amoxicillin" model-id="Amoxicillin_Zhang2025_reference" status="extracted" stale="true" population="" measured-compound="amoxicillin" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="amoxicillin" model-id="Amoxicillin_Zhang2025_reference" status="extracted" stale="true" population="" measured-compound="amoxicillin" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment, IV mammillary model — template `PK_2C`.  
 **Parameters:** 4 extracted.

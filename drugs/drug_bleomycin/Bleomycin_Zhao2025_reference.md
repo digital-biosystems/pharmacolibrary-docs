@@ -29,8 +29,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the val
 Zhao J et al., Population pharmacokinetic model of hig…, Frontiers in pharmacology (2025)
   ·  DOI: [10.3389/fphar.2025.1548203](https://doi.org/10.3389/fphar.2025.1548203)
 
-## Model component
-<dbs-pgx drug="bleomycin" model-id="Bleomycin_Zhao2025_reference" status="extracted" stale="true" population="" measured-compound="bleomycin" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="bleomycin" model-id="Bleomycin_Zhao2025_reference" status="extracted" stale="true" population="" measured-compound="bleomycin" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment, IV mammillary model — template `PK_2C`.  
 **Parameters:** 4 extracted.

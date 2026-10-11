@@ -29,8 +29,7 @@ The record for duloxetine in children and adolescents with major depressive diso
 Lobo ED et al., Pharmacokinetics of orally administered…, Clinical pharmacokinetics (2014)
   ·  DOI: [10.1007/s40262-014-0149-y](https://doi.org/10.1007/s40262-014-0149-y)
 
-## Model component
-<dbs-pgx drug="duloxetine" model-id="Duloxetine_Lobo2014_reference" status="rejected" stale="true" population="children and adolescents with MDD" measured-compound="duloxetine" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="duloxetine" model-id="Duloxetine_Lobo2014_reference" status="rejected" stale="true" population="children and adolescents with MDD" measured-compound="duloxetine" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 5 extracted.

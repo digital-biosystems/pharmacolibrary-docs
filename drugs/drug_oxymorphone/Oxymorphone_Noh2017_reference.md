@@ -31,8 +31,7 @@ The record contains explicit estimates for total clearance, central volume, inte
 Noh K et al., Calculation of a First-In-Man Dose of 7…, Biomolecules & therapeutics (2017)
   ·  DOI: [10.4062/biomolther.2016.192](https://doi.org/10.4062/biomolther.2016.192)
 
-## Model component
-<dbs-pgx drug="oxymorphone" model-id="Oxymorphone_Noh2017_reference" status="extracted" stale="true" population="" measured-compound="oxymorphone" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="oxymorphone" model-id="Oxymorphone_Noh2017_reference" status="extracted" stale="true" population="" measured-compound="oxymorphone" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment, oral mammillary model — template `PK_2C_enteral`.  
 **Parameters:** 4 extracted.

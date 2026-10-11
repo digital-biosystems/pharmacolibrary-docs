@@ -31,8 +31,7 @@ Independently confirmed by `gpt-oss:120b`.
 Alonso R et al., Molecular Epidemiology, Antimicrobial S…, Pharmaceutics (2021)
   ·  DOI: [10.3390/pharmaceutics13101699](https://doi.org/10.3390/pharmaceutics13101699)
 
-## Model component
-<dbs-pgx drug="ciprofloxacin" model-id="Ciprofloxacin_Alonso2021_reference" status="extracted" stale="true" population="patients with gonorrhea" measured-compound="" parameterization="" topology=""></dbs-pgx>
+<div class="pk-model-meta" hidden drug="ciprofloxacin" model-id="Ciprofloxacin_Alonso2021_reference" status="extracted" stale="true" population="patients with gonorrhea" measured-compound="" parameterization="" topology=""></div>
 
 **Model structure:** —; no model was built for this record.  
 **Parameters:** 0 extracted.

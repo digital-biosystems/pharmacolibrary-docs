@@ -20,8 +20,7 @@
 Okamoto H et al., Population pharmacokinetics of vedolizu…, Intestinal research (2021)
   ·  DOI: [10.5217/ir.2019.09167](https://doi.org/10.5217/ir.2019.09167)
 
-## Model component
-<dbs-pgx drug="vedolizumab" model-id="Vedolizumab_Okamoto2021_reference" status="rejected" stale="false" population="Asian and non-Asian patients with ulcerative colitis and Crohn’s disease" measured-compound="vedolizumab" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="vedolizumab" model-id="Vedolizumab_Okamoto2021_reference" status="rejected" stale="false" population="Asian and non-Asian patients with ulcerative colitis and Crohn’s disease" measured-compound="vedolizumab" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment; no model was built for this record.  
 **Parameters:** 6 extracted, plus 7 covariate effects.

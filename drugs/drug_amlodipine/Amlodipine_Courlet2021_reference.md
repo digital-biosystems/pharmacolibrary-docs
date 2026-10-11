@@ -33,8 +33,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on `parame
 Courlet P et al., Population pharmacokinetic modelling to…, European journal of clinica… (2021)
   ·  DOI: [10.1007/s00228-020-03060-2](https://doi.org/10.1007/s00228-020-03060-2)
 
-## Model component
-<dbs-pgx drug="amlodipine" model-id="Amlodipine_Courlet2021_reference" status="extracted" stale="true" population="elderly people living with HIV" measured-compound="amlodipine" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="amlodipine" model-id="Amlodipine_Courlet2021_reference" status="extracted" stale="true" population="elderly people living with HIV" measured-compound="amlodipine" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 4 extracted.

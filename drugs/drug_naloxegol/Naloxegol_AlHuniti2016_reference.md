@@ -29,8 +29,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Al-Huniti N et al., Population pharmacokinetics of naloxego…, British journal of clinical… (2016)
   ·  DOI: [10.1111/bcp.12756](https://doi.org/10.1111/bcp.12756)
 
-## Model component
-<dbs-pgx drug="naloxegol" model-id="Naloxegol_AlHuniti2016_reference" status="needs_review" stale="false" population="healthy subjects and patients with OIC and non-OIC" measured-compound="naloxegol" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="naloxegol" model-id="Naloxegol_AlHuniti2016_reference" status="needs_review" stale="false" population="healthy subjects and patients with OIC and non-OIC" measured-compound="naloxegol" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 2 extracted.

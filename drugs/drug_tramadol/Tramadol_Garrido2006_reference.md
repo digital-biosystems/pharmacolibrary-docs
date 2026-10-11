@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Garrido MJ et al., Population pharmacokinetic/pharmacodyna…, Pharmaceutical research (2006)
   ·  DOI: [10.1007/s11095-006-9049-7](https://doi.org/10.1007/s11095-006-9049-7)
 
-## Model component
-<dbs-pgx drug="tramadol" model-id="Tramadol_Garrido2006_reference" status="extracted" stale="true" population="pediatric" measured-compound="tramadol" parameterization="apparent" topology="parent_metabolite"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="tramadol" model-id="Tramadol_Garrido2006_reference" status="extracted" stale="true" population="pediatric" measured-compound="tramadol" parameterization="apparent" topology="parent_metabolite"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 4 extracted.

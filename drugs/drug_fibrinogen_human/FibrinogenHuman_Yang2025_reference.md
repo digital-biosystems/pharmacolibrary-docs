@@ -27,8 +27,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on paramet
 Yang J et al., Population pharmacokinetics of polymyxi…, Frontiers in pharmacology (2025)
   ·  DOI: [10.3389/fphar.2025.1511088](https://doi.org/10.3389/fphar.2025.1511088)
 
-## Model component
-<dbs-pgx drug="fibrinogen, human" model-id="FibrinogenHuman_Yang2025_reference" status="curated_candidate" stale="false" population="" measured-compound="fibrinogen_human" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="fibrinogen, human" model-id="FibrinogenHuman_Yang2025_reference" status="curated_candidate" stale="false" population="" measured-compound="fibrinogen_human" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameters:** 2 extracted.

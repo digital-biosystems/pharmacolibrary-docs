@@ -29,8 +29,7 @@ Nothing in the extracted data describes the drug's disposition, so there is no m
 Jung W et al., A Mechanism-Based Multi-Level Populatio…, CPT: pharmacometrics & syst… (2026)
   ·  DOI: [10.1002/psp4.70181](https://doi.org/10.1002/psp4.70181)
 
-## Model component
-<dbs-pgx drug="fexuprazan" model-id="Fexuprazan_Jung2026_reference" status="rejected" stale="true" population="healthy adults" measured-compound="fexuprazan" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="fexuprazan" model-id="Fexuprazan_Jung2026_reference" status="rejected" stale="true" population="healthy adults" measured-compound="fexuprazan" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

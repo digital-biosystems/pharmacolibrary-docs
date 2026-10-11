@@ -25,8 +25,7 @@
 Engel N et al., Intravenous and Subcutaneous Pharmacoki…, Biomedicines (2026)
   ·  DOI: [10.3390/biomedicines14040873](https://doi.org/10.3390/biomedicines14040873)
 
-## Model component
-<dbs-pgx drug="medroxyprogesterone" model-id="Medroxyprogesterone_Engel2026_mpa_estimates" status="rejected" stale="false" population="female BALB/c mice" measured-compound="medroxyprogesterone acetate, cabotegravir" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="medroxyprogesterone" model-id="Medroxyprogesterone_Engel2026_mpa_estimates" status="rejected" stale="false" population="female BALB/c mice" measured-compound="medroxyprogesterone acetate, cabotegravir" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 2 extracted.

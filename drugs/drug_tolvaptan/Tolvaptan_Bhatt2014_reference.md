@@ -29,8 +29,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on paramet
 Bhatt PR et al., Review of Tolvaptan's Pharmacokinetic a…, Journal of clinical medicine (2014)
   ·  DOI: [10.3390/jcm3041276](https://doi.org/10.3390/jcm3041276)
 
-## Model component
-<dbs-pgx drug="tolvaptan" model-id="Tolvaptan_Bhatt2014_reference" status="needs_review" stale="false" population="adults with hyponatremia" measured-compound="tolvaptan" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="tolvaptan" model-id="Tolvaptan_Bhatt2014_reference" status="needs_review" stale="false" population="adults with hyponatremia" measured-compound="tolvaptan" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 2 extracted.

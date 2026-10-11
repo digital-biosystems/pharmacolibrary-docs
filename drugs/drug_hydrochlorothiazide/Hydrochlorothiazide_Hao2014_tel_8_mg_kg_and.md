@@ -27,8 +27,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Hao K et al., Pharmacokinetic-pharmacodynamic model o…, The Journal of pharmacy and… (2014)
   ·  DOI: [10.1111/jphp.12230](https://doi.org/10.1111/jphp.12230)
 
-## Model component
-<dbs-pgx drug="hydrochlorothiazide" model-id="Hydrochlorothiazide_Hao2014_tel_8_mg_kg_and" status="needs_review" stale="false" population="spontaneously hypertensive rats" measured-compound="hydrochlorothiazide" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="hydrochlorothiazide" model-id="Hydrochlorothiazide_Hao2014_tel_8_mg_kg_and" status="needs_review" stale="false" population="spontaneously hypertensive rats" measured-compound="hydrochlorothiazide" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 4 extracted.

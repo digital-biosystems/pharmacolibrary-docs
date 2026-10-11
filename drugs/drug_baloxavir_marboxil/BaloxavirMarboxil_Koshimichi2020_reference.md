@@ -31,8 +31,7 @@ The absorption rate constant is assigned a value of 0.905 with the unit 'liters/
 Koshimichi H et al., Population Pharmacokinetics and Exposur…, Antimicrobial agents and ch… (2020)
   ·  DOI: [10.1128/AAC.00119-20](https://doi.org/10.1128/AAC.00119-20)
 
-## Model component
-<dbs-pgx drug="baloxavir marboxil" model-id="BaloxavirMarboxil_Koshimichi2020_reference" status="rejected" stale="true" population="influenza patients including those at high risk of complications" measured-compound="baloxavir acid" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="baloxavir marboxil" model-id="BaloxavirMarboxil_Koshimichi2020_reference" status="rejected" stale="true" population="influenza patients including those at high risk of complications" measured-compound="baloxavir acid" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 8 extracted, plus 5 covariate effects.

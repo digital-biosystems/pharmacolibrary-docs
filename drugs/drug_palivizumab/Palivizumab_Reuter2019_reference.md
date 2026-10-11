@@ -31,8 +31,7 @@ Independently confirmed by `gpt-oss:120b`.
 Reuter SE et al., Reducing Palivizumab Dose Requirements…, CPT: pharmacometrics & syst… (2019)
   ·  DOI: [10.1002/psp4.12364](https://doi.org/10.1002/psp4.12364)
 
-## Model component
-<dbs-pgx drug="palivizumab" model-id="Palivizumab_Reuter2019_reference" status="rejected" stale="true" population="premature infants" measured-compound="palivizumab" parameterization="mechanistic" topology="manual_model_class"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="palivizumab" model-id="Palivizumab_Reuter2019_reference" status="rejected" stale="true" population="premature infants" measured-compound="palivizumab" parameterization="mechanistic" topology="manual_model_class"></div>
 
 **Model structure:** nonlinear / manual; no model was built for this record.  
 **Parameters:** 0 extracted.

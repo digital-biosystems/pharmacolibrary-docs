@@ -26,8 +26,7 @@ Without a unit the value cannot be converted, so the model cannot use it. Extrac
 ## Citation
 Bischoff, Methotrexate pharmacokinetics (1971)
 
-## Model component
-<dbs-pgx drug="methotrexate" model-id="Methotrexate_Bischoff1971_mouse" status="needs_review" stale="false" population="mice, rats, dogs, and man" measured-compound="methotrexate" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="methotrexate" model-id="Methotrexate_Bischoff1971_mouse" status="needs_review" stale="false" population="mice, rats, dogs, and man" measured-compound="methotrexate" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment; no model was built for this record.  
 **Parameters:** 9 extracted.

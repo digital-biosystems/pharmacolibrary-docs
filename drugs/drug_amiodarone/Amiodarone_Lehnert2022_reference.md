@@ -31,8 +31,7 @@ Independently confirmed by `gpt-oss:120b`.
 Lehnert A et al., Amiodarone/N-desethylamiodarone populat…, British journal of clinical… (2022)
   ·  DOI: [10.1111/bcp.15458](https://doi.org/10.1111/bcp.15458)
 
-## Model component
-<dbs-pgx drug="amiodarone" model-id="Amiodarone_Lehnert2022_reference" status="rejected" stale="true" population="paediatric patients with arrhythmias" measured-compound="amiodarone" parameterization="mechanistic" topology="parent_metabolite"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="amiodarone" model-id="Amiodarone_Lehnert2022_reference" status="rejected" stale="true" population="paediatric patients with arrhythmias" measured-compound="amiodarone" parameterization="mechanistic" topology="parent_metabolite"></div>
 
 **Model structure:** parent + metabolite; no model was built for this record.  
 **Parameters:** 0 extracted.

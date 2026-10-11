@@ -23,8 +23,7 @@
 Kaminskas LM et al., Aerosol Pirfenidone Pharmacokinetics af…, Pharmaceutical research (2019)
   ·  DOI: [10.1007/s11095-019-2732-2](https://doi.org/10.1007/s11095-019-2732-2)
 
-## Model component
-<dbs-pgx drug="pirfenidone" model-id="Pirfenidone_Kaminskas2019_reference" status="rejected" stale="false" population="healthy adult sheep" measured-compound="pirfenidone" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="pirfenidone" model-id="Pirfenidone_Kaminskas2019_reference" status="rejected" stale="false" population="healthy adult sheep" measured-compound="pirfenidone" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment; no model was built for this record.  
 **Parameters:** 3 extracted.

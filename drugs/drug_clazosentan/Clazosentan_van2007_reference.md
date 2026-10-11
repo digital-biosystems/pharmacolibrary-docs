@@ -30,8 +30,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 van Giersbergen PL et al., Influence of ethnic origin and sex on t…, Journal of clinical pharmac… (2007)
   ·  DOI: [10.1177/0091270007307337](https://doi.org/10.1177/0091270007307337)
 
-## Model component
-<dbs-pgx drug="clazosentan" model-id="Clazosentan_van2007_reference" status="rejected" stale="true" population="healthy Caucasian and Japanese adults" measured-compound="clazosentan" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="clazosentan" model-id="Clazosentan_van2007_reference" status="rejected" stale="true" population="healthy Caucasian and Japanese adults" measured-compound="clazosentan" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 1 extracted.

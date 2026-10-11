@@ -21,8 +21,7 @@
 Modr Z et al., [Azlocillin--a new anti-pseudomonas pen…, Infection 10 Suppl (1982)
   ·  DOI: [10.1007/BF01640668](https://doi.org/10.1007/BF01640668)
 
-## Model component
-<dbs-pgx drug="azlocillin" model-id="Azlocillin_Modr1982_reference" status="extracted" stale="false" population="healthy persons" measured-compound="azlocillin" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="azlocillin" model-id="Azlocillin_Modr1982_reference" status="extracted" stale="false" population="healthy persons" measured-compound="azlocillin" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameters:** 2 extracted.

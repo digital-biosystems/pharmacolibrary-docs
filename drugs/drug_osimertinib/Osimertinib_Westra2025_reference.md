@@ -23,8 +23,7 @@
 Westra N et al., Osimertinib Cost Minimization in Non-Sm…, Journal of clinical pharmac… (2025)
   ·  DOI: [10.1002/jcph.70085](https://doi.org/10.1002/jcph.70085)
 
-## Model component
-<dbs-pgx drug="osimertinib" model-id="Osimertinib_Westra2025_reference" status="extracted" stale="false" population="patients with NSCLC in the OSIBOOST cohort" measured-compound="osimertinib" parameterization="apparent" topology="parent_metabolite"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="osimertinib" model-id="Osimertinib_Westra2025_reference" status="extracted" stale="false" population="patients with NSCLC in the OSIBOOST cohort" measured-compound="osimertinib" parameterization="apparent" topology="parent_metabolite"></div>
 
 **Model structure:** parent–metabolite model: parent with 1 compartment(s); metabolite AZ5104: 1 compartment(s); formed from the central compartment; oral dose — template `PK_3M_9C`.  
 **Parameters:** 7 extracted.

@@ -32,8 +32,7 @@ Independently confirmed by `gpt-oss:120b`.
 Boström E et al., Exposure vs. response of blood pressure…, Journal of clinical pharmac… (2014)
   ·  DOI: [10.1002/jcph.341](https://doi.org/10.1002/jcph.341)
 
-## Model component
-<dbs-pgx drug="fostamatinib" model-id="Fostamatinib_Bostrm2014_reference" status="needs_review" stale="true" population="patients with rheumatoid arthritis" measured-compound="R406" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="fostamatinib" model-id="Fostamatinib_Bostrm2014_reference" status="needs_review" stale="true" population="patients with rheumatoid arthritis" measured-compound="R406" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 1 extracted.

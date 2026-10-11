@@ -20,8 +20,7 @@
 Hartvig P et al., Clinical pharmacokinetics of intravenou…, European journal of clinica… (1990)
   ·  DOI: [10.1007/BF00315027](https://doi.org/10.1007/BF00315027)
 
-## Model component
-<dbs-pgx drug="tacrine" model-id="Tacrine_Hartvig1990_reference" status="rejected" stale="false" population="patients with amyotrophic lateral sclerosis" measured-compound="tacrine" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="tacrine" model-id="Tacrine_Hartvig1990_reference" status="rejected" stale="false" population="patients with amyotrophic lateral sclerosis" measured-compound="tacrine" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

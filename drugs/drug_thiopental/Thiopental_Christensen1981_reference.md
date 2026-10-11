@@ -21,8 +21,7 @@
 Christensen JH et al., Pharmacokinetics of thiopental in caesa…, Acta anaesthesiologica Scan… (1981)
   ·  DOI: [10.1111/j.1399-6576.1981.tb01632.x](https://doi.org/10.1111/j.1399-6576.1981.tb01632.x)
 
-## Model component
-<dbs-pgx drug="thiopental" model-id="Thiopental_Christensen1981_reference" status="rejected" stale="false" population="mothers and newborns undergoing caesarian section" measured-compound="thiopental" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="thiopental" model-id="Thiopental_Christensen1981_reference" status="rejected" stale="false" population="mothers and newborns undergoing caesarian section" measured-compound="thiopental" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

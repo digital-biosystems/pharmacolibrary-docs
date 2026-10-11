@@ -33,8 +33,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the val
 Lemmens HJ, Pharmacokinetic-pharmacodynamic relatio…, Clinical pharmacokinetics (1995)
   ·  DOI: [10.2165/00003088-199529040-00003](https://doi.org/10.2165/00003088-199529040-00003)
 
-## Model component
-<dbs-pgx drug="fentanyl" model-id="Fentanyl_Lemmens1995_reference" status="needs_review" stale="true" population="unknown" measured-compound="fentanyl" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="fentanyl" model-id="Fentanyl_Lemmens1995_reference" status="needs_review" stale="true" population="unknown" measured-compound="fentanyl" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 2 extracted.

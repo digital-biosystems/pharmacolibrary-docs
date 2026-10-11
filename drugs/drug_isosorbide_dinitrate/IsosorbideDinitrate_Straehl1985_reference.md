@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Straehl P et al., Isosorbide dinitrate bioavailability, k…, Clinical pharmacology and t… (1985)
   ·  DOI: [10.1038/clpt.1985.150](https://doi.org/10.1038/clpt.1985.150)
 
-## Model component
-<dbs-pgx drug="isosorbide dinitrate" model-id="IsosorbideDinitrate_Straehl1985_reference" status="needs_review" stale="true" population="healthy adults" measured-compound="isosorbide dinitrate" parameterization="mechanistic" topology="general_linear"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="isosorbide dinitrate" model-id="IsosorbideDinitrate_Straehl1985_reference" status="needs_review" stale="true" population="healthy adults" measured-compound="isosorbide dinitrate" parameterization="mechanistic" topology="general_linear"></div>
 
 **Model structure:** general linear; no model was built for this record.  
 **Parameters:** 5 extracted.

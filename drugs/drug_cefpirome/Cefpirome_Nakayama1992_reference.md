@@ -20,8 +20,7 @@
 Nakayama I et al., Single- and multiple-dose pharmacokinet…, Journal of clinical pharmac… (1992)
   ·  DOI: [10.1002/j.1552-4604.1992.tb03834.x](https://doi.org/10.1002/j.1552-4604.1992.tb03834.x)
 
-## Model component
-<dbs-pgx drug="cefpirome" model-id="Cefpirome_Nakayama1992_reference" status="rejected" stale="false" population="healthy male volunteers" measured-compound="cefpirome" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="cefpirome" model-id="Cefpirome_Nakayama1992_reference" status="rejected" stale="false" population="healthy male volunteers" measured-compound="cefpirome" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

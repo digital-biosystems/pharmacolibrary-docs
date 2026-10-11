@@ -33,8 +33,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the val
 Jung YS et al., Population pharmacokinetic-pharmacodyna…, CPT: pharmacometrics & syst… (2024)
   ·  DOI: [10.1002/psp4.13053](https://doi.org/10.1002/psp4.13053)
 
-## Model component
-<dbs-pgx drug="clopidogrel" model-id="Clopidogrel_Jung2024_reference" status="extracted" stale="true" population="healthy male participants" measured-compound="clopidogrel" parameterization="mechanistic" topology="general_linear"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="clopidogrel" model-id="Clopidogrel_Jung2024_reference" status="extracted" stale="true" population="healthy male participants" measured-compound="clopidogrel" parameterization="mechanistic" topology="general_linear"></div>
 
 **Model structure:** parent–metabolite model: parent with 2 compartment(s) plus a liver compartment (first pass); metabolite clopidogrel H4: 1 compartment(s); metabolite clopidogrel carboxylic acid: 2 compartment(s); formed in the liver; oral dose — template `PK_3M_3C`.  
 **Parameters:** 14 extracted, plus 4 covariate effects.

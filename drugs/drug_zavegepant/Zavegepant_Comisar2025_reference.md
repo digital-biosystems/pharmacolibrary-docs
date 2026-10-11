@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Comisar CM et al., Population pharmacokinetic modeling of…, CPT: pharmacometrics & syst… (2025)
   ·  DOI: [10.1002/psp4.13257](https://doi.org/10.1002/psp4.13257)
 
-## Model component
-<dbs-pgx drug="zavegepant" model-id="Zavegepant_Comisar2025_reference" status="rejected" stale="true" population="healthy adults and patients with migraine" measured-compound="zavegepant" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="zavegepant" model-id="Zavegepant_Comisar2025_reference" status="rejected" stale="true" population="healthy adults and patients with migraine" measured-compound="zavegepant" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

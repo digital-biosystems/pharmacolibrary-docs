@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on paramet
 Yukawa E et al., Population pharmacokinetics of haloperi…, Clinical pharmacokinetics (2002)
   ·  DOI: [10.2165/00003088-200241020-00006](https://doi.org/10.2165/00003088-200241020-00006)
 
-## Model component
-<dbs-pgx drug="amitriptyline" model-id="Amitriptyline_Yukawa2002_reference" status="extracted" stale="true" population="" measured-compound="amitriptyline" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="amitriptyline" model-id="Amitriptyline_Yukawa2002_reference" status="extracted" stale="true" population="" measured-compound="amitriptyline" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 2 extracted.

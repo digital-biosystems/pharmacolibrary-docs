@@ -20,8 +20,7 @@
 ## Citation
 Ding JS et al., [Determination of octreotide in human p…, Yao xue xue bao = Acta phar… (2004)
 
-## Model component
-<dbs-pgx drug="octreotide" model-id="Octreotide_Ding2004_reference" status="rejected" stale="false" population="healthy adults" measured-compound="octreotide" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="octreotide" model-id="Octreotide_Ding2004_reference" status="rejected" stale="false" population="healthy adults" measured-compound="octreotide" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 6 extracted.

@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Manchandani P et al., Population Pharmacokinetics of Polymyxi…, Clinical pharmacology and t… (2018)
   ·  DOI: [10.1002/cpt.981](https://doi.org/10.1002/cpt.981)
 
-## Model component
-<dbs-pgx drug="polymyxin B" model-id="PolymyxinB_Manchandani2018_reference" status="extracted" stale="true" population="adult patients" measured-compound="polymyxin_b" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="polymyxin B" model-id="PolymyxinB_Manchandani2018_reference" status="extracted" stale="true" population="adult patients" measured-compound="polymyxin_b" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameters:** 2 extracted.

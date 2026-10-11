@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Soria-Chacartegui P et al., Role of Pharmacogenetics on Tramadol Ph…, European journal of drug me… (2026)
   ·  DOI: [10.1007/s13318-026-00986-3](https://doi.org/10.1007/s13318-026-00986-3)
 
-## Model component
-<dbs-pgx drug="tramadol" model-id="Tramadol_SoriaChacartegui2026_reference" status="needs_review" stale="true" population="healthy volunteers" measured-compound="tramadol" parameterization="mechanistic" topology="3C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="tramadol" model-id="Tramadol_SoriaChacartegui2026_reference" status="needs_review" stale="true" population="healthy volunteers" measured-compound="tramadol" parameterization="mechanistic" topology="3C"></div>
 
 **Model structure:** 3-compartment; no model was built for this record.  
 **Parameters:** 12 extracted, plus 2 covariate effects.

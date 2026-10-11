@@ -21,8 +21,7 @@
 Dvorchik B et al., Population pharmacokinetics of daptomyc…, Antimicrobial agents and ch… (2004)
   ·  DOI: [10.1128/AAC.48.8.2799-2807.2004](https://doi.org/10.1128/AAC.48.8.2799-2807.2004)
 
-## Model component
-<dbs-pgx drug="daptomycin" model-id="Daptomycin_Dvorchik2004_reference" status="rejected" stale="false" population="healthy subjects and patients with acute bacterial infections" measured-compound="daptomycin" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="daptomycin" model-id="Daptomycin_Dvorchik2004_reference" status="rejected" stale="false" population="healthy subjects and patients with acute bacterial infections" measured-compound="daptomycin" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

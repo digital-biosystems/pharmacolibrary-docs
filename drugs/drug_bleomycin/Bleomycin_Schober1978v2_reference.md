@@ -29,8 +29,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on bioavai
 Schober O; Mariss P; Pertynski T; Zimmermann P; Börner P et al. (1978). RoFo : Fortschritte auf dem Gebiete der Rontgenstrahlen und der Nuklearmedizin 128
   ·  DOI: [10.1055/s-0029-1230942](https://doi.org/10.1055/s-0029-1230942)
 
-## Model component
-<dbs-pgx drug="bleomycin" model-id="Bleomycin_Schober1978v2_reference" status="needs_review" stale="false" population="patients with cervical carcinoma" measured-compound="57Co-Bleomycin" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="bleomycin" model-id="Bleomycin_Schober1978v2_reference" status="needs_review" stale="false" population="patients with cervical carcinoma" measured-compound="57Co-Bleomycin" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 5 extracted.

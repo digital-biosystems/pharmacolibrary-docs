@@ -28,8 +28,7 @@ Nothing in the extracted data describes the drug's disposition, so there is no m
 de Jonge ME et al., Integrated Population Pharmacokinetic M…, Journal of pharmacokinetics… (2004)
   ·  DOI: [10.1023/b:jopa.0000034405.03895.c2](https://doi.org/10.1023/b:jopa.0000034405.03895.c2)
 
-## Model component
-<dbs-pgx drug="thiotepa" model-id="Thiotepa_de2004_reference" status="rejected" stale="true" population="patients receiving high-dose chemotherapy" measured-compound="thiotepa" parameterization="mechanistic" topology="general_linear"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="thiotepa" model-id="Thiotepa_de2004_reference" status="rejected" stale="true" population="patients receiving high-dose chemotherapy" measured-compound="thiotepa" parameterization="mechanistic" topology="general_linear"></div>
 
 **Model structure:** general linear; no model was built for this record.  
 **Parameters:** 2 extracted.

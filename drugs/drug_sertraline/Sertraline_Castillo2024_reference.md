@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the val
 Castillo CEC et al., Population Pharmacokinetics of Sertrali…, Journal of clinical pharmac… (2024)
   ·  DOI: [10.1002/jcph.2457](https://doi.org/10.1002/jcph.2457)
 
-## Model component
-<dbs-pgx drug="sertraline" model-id="Sertraline_Castillo2024_reference" status="rejected" stale="true" population="Mexican patients with psychiatric and substance use disorders" measured-compound="sertraline" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="sertraline" model-id="Sertraline_Castillo2024_reference" status="rejected" stale="true" population="Mexican patients with psychiatric and substance use disorders" measured-compound="sertraline" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

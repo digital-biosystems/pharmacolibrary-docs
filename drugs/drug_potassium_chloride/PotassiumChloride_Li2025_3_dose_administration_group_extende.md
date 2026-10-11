@@ -32,8 +32,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on `parame
 Li X et al., Plasma pharmacokinetics of the combinat…, Frontiers in cardiovascular… (2025)
   ·  DOI: [10.3389/fcvm.2025.1636090](https://doi.org/10.3389/fcvm.2025.1636090)
 
-## Model component
-<dbs-pgx drug="potassium chloride" model-id="PotassiumChloride_Li2025_3_dose_administration_group_extende" status="rejected" stale="true" population="patients with cardiovascular emergencies" measured-compound="potassium" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="potassium chloride" model-id="PotassiumChloride_Li2025_3_dose_administration_group_extende" status="rejected" stale="true" population="patients with cardiovascular emergencies" measured-compound="potassium" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 6 extracted.

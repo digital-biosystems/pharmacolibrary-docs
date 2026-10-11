@@ -21,8 +21,7 @@
 Gupta N et al., Switching from body surface area-based…, British journal of clinical… (2015)
   ·  DOI: [10.1111/bcp.12542](https://doi.org/10.1111/bcp.12542)
 
-## Model component
-<dbs-pgx drug="ixazomib" model-id="Ixazomib_Gupta2015_reference" status="needs_review" stale="false" population="adult patients with multiple myeloma, lymphoma or solid tumours" measured-compound="ixazomib" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="ixazomib" model-id="Ixazomib_Gupta2015_reference" status="needs_review" stale="false" population="adult patients with multiple myeloma, lymphoma or solid tumours" measured-compound="ixazomib" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 3 extracted.

@@ -30,8 +30,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Fleuren HL et al., Absolute bioavailability of chlorthalid…, European journal of clinica… (1979)
   ·  DOI: [10.1007/BF00563556](https://doi.org/10.1007/BF00563556)
 
-## Model component
-<dbs-pgx drug="chlortalidone" model-id="Chlortalidone_Fleuren1979_reference" status="rejected" stale="true" population="normal human volunteers" measured-compound="chlorthalidone" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="chlortalidone" model-id="Chlortalidone_Fleuren1979_reference" status="rejected" stale="true" population="normal human volunteers" measured-compound="chlorthalidone" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 2 extracted.

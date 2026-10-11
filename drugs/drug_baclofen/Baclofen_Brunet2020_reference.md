@@ -21,8 +21,7 @@
 Brunet M et al., Baclofen self-poisoning: Is renal repla…, Anaesthesia, critical care… (2020)
   ·  DOI: [10.1016/j.accpm.2020.07.021](https://doi.org/10.1016/j.accpm.2020.07.021)
 
-## Model component
-<dbs-pgx drug="baclofen" model-id="Baclofen_Brunet2020_reference" status="rejected" stale="false" population="adults with baclofen self-poisoning" measured-compound="baclofen" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="baclofen" model-id="Baclofen_Brunet2020_reference" status="rejected" stale="false" population="adults with baclofen self-poisoning" measured-compound="baclofen" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 5 extracted.

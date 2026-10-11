@@ -20,8 +20,7 @@
 Chen P et al., Population Pharmacokinetic and Pharmaco…, Clinical pharmacokinetics (2018)
   ·  DOI: [10.1007/s40262-017-0550-4](https://doi.org/10.1007/s40262-017-0550-4)
 
-## Model component
-<dbs-pgx drug="etelcalcetide" model-id="Etelcalcetide_Chen2018_reference" status="rejected" stale="false" population="patients with chronic kidney disease and secondary hyperparathyroidism receiving hemodialysis" measured-compound="etelcalcetide" parameterization="mechanistic" topology="general_linear"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="etelcalcetide" model-id="Etelcalcetide_Chen2018_reference" status="rejected" stale="false" population="patients with chronic kidney disease and secondary hyperparathyroidism receiving hemodialysis" measured-compound="etelcalcetide" parameterization="mechanistic" topology="general_linear"></div>
 
 **Model structure:** general linear; no model was built for this record.  
 **Parameters:** 3 extracted.

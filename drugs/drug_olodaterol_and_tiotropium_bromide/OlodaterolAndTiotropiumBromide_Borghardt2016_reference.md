@@ -20,8 +20,7 @@
 Borghardt JM et al., Model-based evaluation of pulmonary pha…, British journal of clinical… (2016)
   ·  DOI: [10.1111/bcp.12999](https://doi.org/10.1111/bcp.12999)
 
-## Model component
-<dbs-pgx drug="olodaterol and tiotropium bromide" model-id="OlodaterolAndTiotropiumBromide_Borghardt2016_reference" status="rejected" stale="false" population="asthmatic patients, COPD patients and healthy volunteers" measured-compound="olodaterol" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="olodaterol and tiotropium bromide" model-id="OlodaterolAndTiotropiumBromide_Borghardt2016_reference" status="rejected" stale="false" population="asthmatic patients, COPD patients and healthy volunteers" measured-compound="olodaterol" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 2 extracted.

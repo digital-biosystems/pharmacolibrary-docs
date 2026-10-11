@@ -29,8 +29,7 @@ Independently confirmed by `gpt-oss:120b`.
 Taguchi M et al., Pharmacokinetic variability of routinel…, Biological & pharmaceutical… (2005)
   ·  DOI: [10.1248/bpb.28.876](https://doi.org/10.1248/bpb.28.876)
 
-## Model component
-<dbs-pgx drug="bisoprolol" model-id="Bisoprolol_Taguchi2005_reference" status="needs_review" stale="false" population="middle-aged and elderly Japanese patients" measured-compound="bisoprolol" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="bisoprolol" model-id="Bisoprolol_Taguchi2005_reference" status="needs_review" stale="false" population="middle-aged and elderly Japanese patients" measured-compound="bisoprolol" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 4 extracted.

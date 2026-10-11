@@ -29,8 +29,7 @@ Without a unit the value cannot be converted, so the model cannot use it. Extrac
 Vlachou M et al., An In Vitro-In Vivo Simulation Approach…, Materials (Basel, Switzerla… (2021)
   ·  DOI: [10.3390/ma14030555](https://doi.org/10.3390/ma14030555)
 
-## Model component
-<dbs-pgx drug="amlodipine" model-id="Amlodipine_Vlachou2021_reference" status="needs_review" stale="true" population="healthy adults" measured-compound="amlodipine" parameterization="apparent" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="amlodipine" model-id="Amlodipine_Vlachou2021_reference" status="needs_review" stale="true" population="healthy adults" measured-compound="amlodipine" parameterization="apparent" topology="2C"></div>
 
 **Model structure:** 2-compartment; no model was built for this record.  
 **Parameters:** 6 extracted.

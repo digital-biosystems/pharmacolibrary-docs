@@ -25,8 +25,7 @@
 Patel K et al., Predicting the parasite killing effect…, The Journal of antimicrobia… (2014)
   ·  DOI: [10.1093/jac/dku120](https://doi.org/10.1093/jac/dku120)
 
-## Model component
-<dbs-pgx drug="Piperaquine" model-id="Piperaquine_Patel2014_reference" status="needs_review" stale="false" population="Plasmodium berghei-infected Swiss mice" measured-compound="piperaquine" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="Piperaquine" model-id="Piperaquine_Patel2014_reference" status="needs_review" stale="false" population="Plasmodium berghei-infected Swiss mice" measured-compound="piperaquine" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 1 extracted.

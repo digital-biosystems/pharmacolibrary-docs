@@ -21,8 +21,7 @@
 Ehninger G et al., The pharmacokinetics and metabolism of…, Investigational new drugs (1985)
   ·  DOI: [10.1007/BF00174157](https://doi.org/10.1007/BF00174157)
 
-## Model component
-<dbs-pgx drug="mitoxantrone" model-id="Mitoxantrone_Ehninger1985_reference" status="needs_review" stale="false" population="men" measured-compound="mitoxantrone" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="mitoxantrone" model-id="Mitoxantrone_Ehninger1985_reference" status="needs_review" stale="false" population="men" measured-compound="mitoxantrone" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 4 extracted.

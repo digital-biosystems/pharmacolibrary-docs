@@ -21,8 +21,7 @@
 Xu Z et al., Population pharmacokinetics of golimuma…, Journal of clinical pharmac… (2009)
   ·  DOI: [10.1177/0091270009339192](https://doi.org/10.1177/0091270009339192)
 
-## Model component
-<dbs-pgx drug="golimumab" model-id="Golimumab_Xu2009_reference" status="rejected" stale="false" population="patients with active psoriatic arthritis" measured-compound="golimumab" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="golimumab" model-id="Golimumab_Xu2009_reference" status="rejected" stale="false" population="patients with active psoriatic arthritis" measured-compound="golimumab" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

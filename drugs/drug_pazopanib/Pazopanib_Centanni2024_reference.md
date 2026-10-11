@@ -21,8 +21,7 @@
 Centanni M et al., Physiologically-based pharmacokinetic m…, Cancer chemotherapy and pha… (2024)
   ·  DOI: [10.1007/s00280-024-04678-0](https://doi.org/10.1007/s00280-024-04678-0)
 
-## Model component
-<dbs-pgx drug="pazopanib" model-id="Pazopanib_Centanni2024_reference" status="rejected" stale="false" population="pediatric patients aged 2 years and older" measured-compound="pazopanib" parameterization="mechanistic" topology="general_linear"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="pazopanib" model-id="Pazopanib_Centanni2024_reference" status="rejected" stale="false" population="pediatric patients aged 2 years and older" measured-compound="pazopanib" parameterization="mechanistic" topology="general_linear"></div>
 
 **Model structure:** general linear; no model was built for this record.  
 **Parameters:** 6 extracted, plus 1 covariate effect.

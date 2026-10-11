@@ -27,8 +27,7 @@
 Anderson BJ et al., Considerations when using pharmacokinet…, Expert opinion on drug meta… (2015)
   ·  DOI: [10.1517/17425255.2015.1061505](https://doi.org/10.1517/17425255.2015.1061505)
 
-## Model component
-<dbs-pgx drug="paracetamol" model-id="Paracetamol_Anderson2015_reference" status="extracted" stale="true" population="" measured-compound="paracetamol" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="paracetamol" model-id="Paracetamol_Anderson2015_reference" status="extracted" stale="true" population="" measured-compound="paracetamol" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameters:** 2 extracted.

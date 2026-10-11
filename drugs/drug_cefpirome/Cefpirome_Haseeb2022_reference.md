@@ -20,8 +20,7 @@
 Haseeb A et al., Dose optimization of β-lactams antibiot…, Frontiers in pharmacology (2022)
   ·  DOI: [10.3389/fphar.2022.964005](https://doi.org/10.3389/fphar.2022.964005)
 
-## Model component
-<dbs-pgx drug="cefpirome" model-id="Cefpirome_Haseeb2022_reference" status="rejected" stale="false" population="" measured-compound="cefpirome" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="cefpirome" model-id="Cefpirome_Haseeb2022_reference" status="rejected" stale="false" population="" measured-compound="cefpirome" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment; no model was built for this record.  
 **Parameters:** 3 extracted.

@@ -28,8 +28,7 @@ The paper reports no distribution volume and no clearance or elimination rate; i
 Fox AW, Subcutaneous sumatriptan pharmacokineti…, Headache (2010)
   ·  DOI: [10.1111/j.1526-4610.2009.01568.x](https://doi.org/10.1111/j.1526-4610.2009.01568.x)
 
-## Model component
-<dbs-pgx drug="sumatriptan" model-id="Sumatriptan_Fox2010_reference" status="rejected" stale="true" population="adults with migraine" measured-compound="sumatriptan" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="sumatriptan" model-id="Sumatriptan_Fox2010_reference" status="rejected" stale="true" population="adults with migraine" measured-compound="sumatriptan" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 2 extracted.

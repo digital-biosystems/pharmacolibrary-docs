@@ -29,8 +29,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on paramet
 James C Thigpen et al., Opioids: A Review of Pharmacokinetics a…, European journal of drug me… (2019)
   ·  DOI: [10.1007/s13318-019-00552-0](https://doi.org/10.1007/s13318-019-00552-0)
 
-## Model component
-<dbs-pgx drug="codeine" model-id="Codeine_Thigpen2019_reference" status="curated_candidate" stale="false" population="neonates, infants, and children" measured-compound="codeine" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="codeine" model-id="Codeine_Thigpen2019_reference" status="curated_candidate" stale="false" population="neonates, infants, and children" measured-compound="codeine" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameters:** 2 extracted.

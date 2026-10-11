@@ -21,8 +21,7 @@
 McGready R et al., The pharmacokinetics of atovaquone and…, European journal of clinica… (2003)
   ·  DOI: [10.1007/s00228-003-0652-9](https://doi.org/10.1007/s00228-003-0652-9)
 
-## Model component
-<dbs-pgx drug="atovaquone" model-id="Atovaquone_McGready2003_reference" status="needs_review" stale="false" population="pregnant women with falciparum malaria" measured-compound="atovaquone" parameterization="apparent" topology="parent_metabolite"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="atovaquone" model-id="Atovaquone_McGready2003_reference" status="needs_review" stale="false" population="pregnant women with falciparum malaria" measured-compound="atovaquone" parameterization="apparent" topology="parent_metabolite"></div>
 
 **Model structure:** parent + metabolite; no model was built for this record.  
 **Parameters:** 5 extracted.

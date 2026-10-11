@@ -29,8 +29,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the val
 Mao J et al., Dosing Regimen Recommendations for Siro…, Drug design, development an… (2024)
   ·  DOI: [10.2147/dddt.s503463](https://doi.org/10.2147/dddt.s503463)
 
-## Model component
-<dbs-pgx drug="amlodipine" model-id="Amlodipine_Mao2024_reference" status="extracted" stale="true" population="" measured-compound="amlodipine" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="amlodipine" model-id="Amlodipine_Mao2024_reference" status="extracted" stale="true" population="" measured-compound="amlodipine" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 3 extracted.

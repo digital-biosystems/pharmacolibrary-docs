@@ -20,8 +20,7 @@
 Gauvin A et al., Blood and plasma pharmacokinetics of vi…, Cancer chemotherapy and pha… (2002)
   ·  DOI: [10.1007/s00280-001-0378-2](https://doi.org/10.1007/s00280-001-0378-2)
 
-## Model component
-<dbs-pgx drug="vinorelbine" model-id="Vinorelbine_Gauvin2002_reference" status="needs_review" stale="false" population="elderly patients with advanced metastatic cancer" measured-compound="vinorelbine" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="vinorelbine" model-id="Vinorelbine_Gauvin2002_reference" status="needs_review" stale="false" population="elderly patients with advanced metastatic cancer" measured-compound="vinorelbine" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 3 extracted.

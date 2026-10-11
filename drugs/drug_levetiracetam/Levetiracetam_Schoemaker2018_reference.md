@@ -27,8 +27,7 @@
 Schoemaker R et al., Extrapolation of a Brivaracetam Exposur…, Clinical pharmacokinetics (2018)
   ·  DOI: [10.1007/s40262-017-0597-2](https://doi.org/10.1007/s40262-017-0597-2)
 
-## Model component
-<dbs-pgx drug="levetiracetam" model-id="Levetiracetam_Schoemaker2018_reference" status="extracted" stale="true" population="adults and children with focal seizures" measured-compound="levetiracetam" parameterization="apparent_wrt_Fm" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="levetiracetam" model-id="Levetiracetam_Schoemaker2018_reference" status="extracted" stale="true" population="adults and children with focal seizures" measured-compound="levetiracetam" parameterization="apparent_wrt_Fm" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 3 extracted.

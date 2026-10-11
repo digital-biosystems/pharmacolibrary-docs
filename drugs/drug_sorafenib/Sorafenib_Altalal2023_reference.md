@@ -25,8 +25,7 @@
 Altalal A et al., Development and validation of a UPLC-MS…, Saudi pharmaceutical journa… (2023)
   ·  DOI: [10.1016/j.jsps.2023.05.025](https://doi.org/10.1016/j.jsps.2023.05.025)
 
-## Model component
-<dbs-pgx drug="sorafenib" model-id="Sorafenib_Altalal2023_reference" status="extracted" stale="false" population="Wistar rats" measured-compound="sorafenib" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="sorafenib" model-id="Sorafenib_Altalal2023_reference" status="extracted" stale="false" population="Wistar rats" measured-compound="sorafenib" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 2 extracted.

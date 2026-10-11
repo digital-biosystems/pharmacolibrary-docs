@@ -29,8 +29,7 @@ The paper reports no distribution volume and no clearance or elimination rate; i
 Doshi S et al., Rilotumumab exposure-response relations…, Clinical cancer research :… (2015)
   ·  DOI: [10.1158/1078-0432.CCR-14-1661](https://doi.org/10.1158/1078-0432.CCR-14-1661)
 
-## Model component
-<dbs-pgx drug="capecitabine" model-id="Capecitabine_Doshi2015_typical_value" status="rejected" stale="true" population="patients with advanced or metastatic gastric/GEJ cancer" measured-compound="rilotumumab" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="capecitabine" model-id="Capecitabine_Doshi2015_typical_value" status="rejected" stale="true" population="patients with advanced or metastatic gastric/GEJ cancer" measured-compound="rilotumumab" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 2 extracted.

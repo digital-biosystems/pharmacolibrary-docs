@@ -19,8 +19,7 @@
 ## Citation
 Matteo RS et al., Distribution, elimination, and action o…, Anesthesia and analgesia (1984)
 
-## Model component
-<dbs-pgx drug="tubocurarine" model-id="Tubocurarine_Matteo1984_reference" status="needs_review" stale="false" population="neonates, infants, children, and adults" measured-compound="d-tubocurarine" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="tubocurarine" model-id="Tubocurarine_Matteo1984_reference" status="needs_review" stale="false" population="neonates, infants, children, and adults" measured-compound="d-tubocurarine" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 2 extracted.

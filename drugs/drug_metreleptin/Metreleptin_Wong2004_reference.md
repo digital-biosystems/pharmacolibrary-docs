@@ -30,8 +30,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Wong SL et al., Leptin hormonal kinetics in the fed sta…, The Journal of clinical end… (2004)
   ·  DOI: [10.1210/jc.2003-031931](https://doi.org/10.1210/jc.2003-031931)
 
-## Model component
-<dbs-pgx drug="metreleptin" model-id="Metreleptin_Wong2004_reference" status="rejected" stale="true" population="healthy subjects" measured-compound="r-metHuLeptin" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="metreleptin" model-id="Metreleptin_Wong2004_reference" status="rejected" stale="true" population="healthy subjects" measured-compound="r-metHuLeptin" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 3 extracted.

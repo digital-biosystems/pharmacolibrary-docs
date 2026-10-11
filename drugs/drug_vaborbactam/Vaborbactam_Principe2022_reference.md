@@ -21,8 +21,7 @@
 Principe L et al., Microbiological, Clinical, and PK/PD Fe…, Pharmaceuticals (Basel, Swi… (2022)
   ·  DOI: [10.3390/ph15040463](https://doi.org/10.3390/ph15040463)
 
-## Model component
-<dbs-pgx drug="Vaborbactam" model-id="Vaborbactam_Principe2022_reference" status="extracted" stale="false" population="" measured-compound="vaborbactam" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="Vaborbactam" model-id="Vaborbactam_Principe2022_reference" status="extracted" stale="false" population="" measured-compound="vaborbactam" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameters:** 2 extracted.

@@ -28,8 +28,7 @@ Without a unit the value cannot be converted, so the model cannot use it. Extrac
 Hu Z et al., Population Pharmacokinetics of Clesrovi…, Clinical pharmacology and t… (2026)
   ·  DOI: [10.1002/cpt.70199](https://doi.org/10.1002/cpt.70199)
 
-## Model component
-<dbs-pgx drug="clesrovimab" model-id="Clesrovimab_Hu2026_reference" status="rejected" stale="true" population="preterm and full-term infants" measured-compound="clesrovimab" parameterization="apparent" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="clesrovimab" model-id="Clesrovimab_Hu2026_reference" status="rejected" stale="true" population="preterm and full-term infants" measured-compound="clesrovimab" parameterization="apparent" topology="2C"></div>
 
 **Model structure:** 2-compartment; no model was built for this record.  
 **Parameters:** 6 extracted.

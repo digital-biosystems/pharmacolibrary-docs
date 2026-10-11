@@ -21,8 +21,7 @@
 Gaffney A et al., Population Pharmacokinetic Modeling of…, Journal of clinical pharmac… (2026)
   ·  DOI: [10.1002/jcph.70210](https://doi.org/10.1002/jcph.70210)
 
-## Model component
-<dbs-pgx drug="niraparib" model-id="Niraparib_Gaffney2026_reference" status="extracted" stale="false" population="patients with advanced solid tumors or ovarian cancer" measured-compound="niraparib" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="niraparib" model-id="Niraparib_Gaffney2026_reference" status="extracted" stale="false" population="patients with advanced solid tumors or ovarian cancer" measured-compound="niraparib" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 7 extracted, plus 6 covariate effects.

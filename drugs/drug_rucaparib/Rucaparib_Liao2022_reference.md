@@ -20,8 +20,7 @@
 Liao M et al., Clinical Pharmacokinetics and Pharmacod…, Clinical pharmacokinetics (2022)
   ·  DOI: [10.1007/s40262-022-01157-8](https://doi.org/10.1007/s40262-022-01157-8)
 
-## Model component
-<dbs-pgx drug="rucaparib" model-id="Rucaparib_Liao2022_reference" status="needs_review" stale="false" population="patients with cancer" measured-compound="rucaparib" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="rucaparib" model-id="Rucaparib_Liao2022_reference" status="needs_review" stale="false" population="patients with cancer" measured-compound="rucaparib" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 7 extracted.

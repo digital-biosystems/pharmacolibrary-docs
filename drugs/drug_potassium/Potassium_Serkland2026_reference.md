@@ -21,8 +21,7 @@
 Serkland TT et al., Pharmacokinetic-Pharmacodynamic Modelli…, Clinical pharmacokinetics (2026)
   ·  DOI: [10.1007/s40262-026-01692-8](https://doi.org/10.1007/s40262-026-01692-8)
 
-## Model component
-<dbs-pgx drug="Potassium" model-id="Potassium_Serkland2026_reference" status="extracted" stale="false" population="" measured-compound="potassium" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="Potassium" model-id="Potassium_Serkland2026_reference" status="extracted" stale="false" population="" measured-compound="potassium" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment, IV mammillary model — template `PK_2C`.  
 **Parameters:** 4 extracted.

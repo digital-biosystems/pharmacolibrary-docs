@@ -31,8 +31,7 @@ Independently confirmed by `gpt-oss:120b`.
 Canini L et al., Pharmacokinetics and pharmacodynamics m…, Hepatology communications (2017)
   ·  DOI: [10.1002/hep4.1043](https://doi.org/10.1002/hep4.1043)
 
-## Model component
-<dbs-pgx drug="lonafarnib" model-id="Lonafarnib_Canini2017_reference" status="extracted" stale="true" population="patients with chronic hepatitis delta virus infection" measured-compound="lonafarnib" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="lonafarnib" model-id="Lonafarnib_Canini2017_reference" status="extracted" stale="true" population="patients with chronic hepatitis delta virus infection" measured-compound="lonafarnib" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 3 extracted.

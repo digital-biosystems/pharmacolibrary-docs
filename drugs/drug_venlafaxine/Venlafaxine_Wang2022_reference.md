@@ -29,8 +29,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the lin
 Wang Z et al., Joint population pharmacokinetic modeli…, Frontiers in pharmacology (2022)
   ·  DOI: [10.3389/fphar.2022.978202](https://doi.org/10.3389/fphar.2022.978202)
 
-## Model component
-<dbs-pgx drug="venlafaxine" model-id="Venlafaxine_Wang2022_reference" status="extracted" stale="true" population="healthy volunteers and psychiatric patients" measured-compound="venlafaxine" parameterization="apparent" topology="parent_metabolite"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="venlafaxine" model-id="Venlafaxine_Wang2022_reference" status="extracted" stale="true" population="healthy volunteers and psychiatric patients" measured-compound="venlafaxine" parameterization="apparent" topology="parent_metabolite"></div>
 
 **Model structure:** parent–metabolite model: parent with 1 compartment(s) plus a liver compartment (first pass); metabolite O-desmethyl venlafaxine: 1 compartment(s); formed in the liver; oral dose — template `PK_3M_3C`.  
 **Parameters:** 7 extracted.

@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Yoo O et al., A randomised controlled trial of a nove…, Anaesthesia (2022)
   ·  DOI: [10.1111/anae.15650](https://doi.org/10.1111/anae.15650)
 
-## Model component
-<dbs-pgx drug="tramadol" model-id="Tramadol_Yoo2022_reference" status="rejected" stale="true" population="children" measured-compound="tramadol" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="tramadol" model-id="Tramadol_Yoo2022_reference" status="rejected" stale="true" population="children" measured-compound="tramadol" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

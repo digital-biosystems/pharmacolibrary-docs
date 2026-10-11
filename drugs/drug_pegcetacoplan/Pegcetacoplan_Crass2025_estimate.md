@@ -21,8 +21,7 @@
 Crass RL et al., Population Pharmacokinetics of Pegcetac…, Ophthalmology science (2025)
   ·  DOI: [10.1016/j.xops.2024.100657](https://doi.org/10.1016/j.xops.2024.100657)
 
-## Model component
-<dbs-pgx drug="pegcetacoplan" model-id="Pegcetacoplan_Crass2025_estimate" status="needs_review" stale="false" population="patients with geographic atrophy or neovascular age-related macular degeneration" measured-compound="pegcetacoplan" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="pegcetacoplan" model-id="Pegcetacoplan_Crass2025_estimate" status="needs_review" stale="false" population="patients with geographic atrophy or neovascular age-related macular degeneration" measured-compound="pegcetacoplan" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 1 extracted.

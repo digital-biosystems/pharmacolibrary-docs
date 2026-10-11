@@ -30,8 +30,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on how the
 Urien S et al., Population pharmacokinetics of total an…, British journal of clinical… (2004)
   ·  DOI: [10.1111/j.1365-2125.2004.02082.x](https://doi.org/10.1111/j.1365-2125.2004.02082.x)
 
-## Model component
-<dbs-pgx drug="cisplatin" model-id="Cisplatin_Urien2004_reference" status="rejected" stale="false" population="adult patients with various malignancies" measured-compound="unbound platinum" parameterization="apparent" topology="parent_metabolite"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="cisplatin" model-id="Cisplatin_Urien2004_reference" status="rejected" stale="false" population="adult patients with various malignancies" measured-compound="unbound platinum" parameterization="apparent" topology="parent_metabolite"></div>
 
 **Model structure:** parent + metabolite; no model was built for this record.  
 **Parameters:** 4 extracted.

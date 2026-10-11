@@ -21,8 +21,7 @@
 ## Citation
 Lees P et al., Pharmacokinetics, metabolism and excret…, Research in veterinary scie… (1988)
 
-## Model component
-<dbs-pgx drug="phenylbutazone" model-id="Phenylbutazone_Lees1988_reference" status="rejected" stale="false" population="adult cattle" measured-compound="phenylbutazone" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="phenylbutazone" model-id="Phenylbutazone_Lees1988_reference" status="rejected" stale="false" population="adult cattle" measured-compound="phenylbutazone" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

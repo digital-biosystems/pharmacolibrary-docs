@@ -29,8 +29,7 @@ Independently confirmed by `gpt-oss:120b`.
 Schöning V et al., Improving Population Pharmacokinetic Mo…, Pharmacology research & per… (2026)
   ·  DOI: [10.1002/prp2.70241](https://doi.org/10.1002/prp2.70241)
 
-## Model component
-<dbs-pgx drug="von Willebrand factor" model-id="VonWillebrandFactor_Schning2026_reference" status="extracted" stale="true" population="" measured-compound="von_willebrand_factor" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="von Willebrand factor" model-id="VonWillebrandFactor_Schning2026_reference" status="extracted" stale="true" population="" measured-compound="von_willebrand_factor" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 3 extracted.

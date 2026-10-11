@@ -23,8 +23,7 @@
 Rao GS et al., Pharmacokinetics and bioavailability of…, Journal of veterinary pharm… (2007)
   ·  DOI: [10.1111/j.1365-2885.2007.00838.x](https://doi.org/10.1111/j.1365-2885.2007.00838.x)
 
-## Model component
-<dbs-pgx drug="nimesulide" model-id="Nimesulide_Rao2007_reference" status="rejected" stale="false" population="female goats" measured-compound="nimesulide" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="nimesulide" model-id="Nimesulide_Rao2007_reference" status="rejected" stale="false" population="female goats" measured-compound="nimesulide" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

@@ -28,8 +28,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on paramet
 ## Citation
 Sinha, Population Pharmacokinetic Modeling of… (2026)
 
-## Model component
-<dbs-pgx drug="doxorubicin" model-id="Doxorubicin_Sinha2026_reference" status="needs_review" stale="false" population="" measured-compound="doxorubicin" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="doxorubicin" model-id="Doxorubicin_Sinha2026_reference" status="needs_review" stale="false" population="" measured-compound="doxorubicin" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 2 extracted.

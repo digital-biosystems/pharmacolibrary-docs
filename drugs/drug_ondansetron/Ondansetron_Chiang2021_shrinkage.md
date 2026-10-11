@@ -27,8 +27,7 @@ The table was split into one record per column, and 'shrinkage (%)' holds a stat
 Chiang MD; Frey K; Lee C; Kharasch ED; Tallchief D; Sawyer C; et al. et al. (2021). British journal of clinical pharmacology 87
   ·  DOI: [10.1111/bcp.14412](https://doi.org/10.1111/bcp.14412)
 
-## Model component
-<dbs-pgx drug="ondansetron" model-id="Ondansetron_Chiang2021_shrinkage" status="rejected" stale="false" population="adults undergoing elective hip or knee arthroplasty" measured-compound="ondansetron" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="ondansetron" model-id="Ondansetron_Chiang2021_shrinkage" status="rejected" stale="false" population="adults undergoing elective hip or knee arthroplasty" measured-compound="ondansetron" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 3 extracted.

@@ -35,8 +35,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on paramet
 Sang K et al., Pharmacokinetic-Pharmacodynamic Modelin…, Frontiers in veterinary sci… (2015)
   ·  DOI: [10.3389/fvets.2015.00080](https://doi.org/10.3389/fvets.2015.00080)
 
-## Model component
-<dbs-pgx drug="ciprofloxacin" model-id="Ciprofloxacin_Sang2015_reference" status="extracted" stale="true" population="broilers" measured-compound="ciprofloxacin" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="ciprofloxacin" model-id="Ciprofloxacin_Sang2015_reference" status="extracted" stale="true" population="broilers" measured-compound="ciprofloxacin" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 3 extracted.

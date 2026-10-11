@@ -29,8 +29,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Lohitnavy M et al., Pharmacokinetic model for the inhibitio…, Annual International Confer… (2015)
   ·  DOI: [10.1109/EMBC.2015.7319084](https://doi.org/10.1109/EMBC.2015.7319084)
 
-## Model component
-<dbs-pgx drug="simvastatin" model-id="Simvastatin_Lohitnavy2015_reference" status="rejected" stale="false" population="healthy adults" measured-compound="simvastatin" parameterization="mechanistic" topology="parent_metabolite"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="simvastatin" model-id="Simvastatin_Lohitnavy2015_reference" status="rejected" stale="false" population="healthy adults" measured-compound="simvastatin" parameterization="mechanistic" topology="parent_metabolite"></div>
 
 **Model structure:** parent + metabolite; no model was built for this record.  
 **Parameters:** 0 extracted.

@@ -20,8 +20,7 @@
 Jeong SH et al., Modeling population pharmacokinetics of…, Naunyn-Schmiedeberg's archi… (2024)
   ·  DOI: [10.1007/s00210-023-02640-0](https://doi.org/10.1007/s00210-023-02640-0)
 
-## Model component
-<dbs-pgx drug="morniflumate" model-id="Morniflumate_Jeong2024_reference" status="rejected" stale="false" population="healthy Korean men" measured-compound="morniflumate" parameterization="apparent" topology="parent_metabolite"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="morniflumate" model-id="Morniflumate_Jeong2024_reference" status="rejected" stale="false" population="healthy Korean men" measured-compound="morniflumate" parameterization="apparent" topology="parent_metabolite"></div>
 
 **Model structure:** parent + metabolite; no model was built for this record.  
 **Parameters:** 4 extracted.

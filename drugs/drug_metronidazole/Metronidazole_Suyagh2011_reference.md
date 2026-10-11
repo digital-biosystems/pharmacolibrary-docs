@@ -30,8 +30,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Suyagh M et al., Metronidazole population pharmacokineti…, Pediatrics (2011)
   ·  DOI: [10.1542/peds.2010-0807](https://doi.org/10.1542/peds.2010-0807)
 
-## Model component
-<dbs-pgx drug="metronidazole" model-id="Metronidazole_Suyagh2011_reference" status="rejected" stale="true" population="preterm neonates" measured-compound="metronidazole" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="metronidazole" model-id="Metronidazole_Suyagh2011_reference" status="rejected" stale="true" population="preterm neonates" measured-compound="metronidazole" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

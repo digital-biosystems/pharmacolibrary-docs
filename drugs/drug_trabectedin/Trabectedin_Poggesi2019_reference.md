@@ -26,8 +26,7 @@
 Poggesi I et al., Population pharmacokinetics of trabecte…, Cancer chemotherapy and pha… (2019)
   ·  DOI: [10.1007/s00280-019-03899-y](https://doi.org/10.1007/s00280-019-03899-y)
 
-## Model component
-<dbs-pgx drug="trabectedin" model-id="Trabectedin_Poggesi2019_reference" status="needs_review" stale="true" population="children and adolescent patients with cancer" measured-compound="trabectedin" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="trabectedin" model-id="Trabectedin_Poggesi2019_reference" status="needs_review" stale="true" population="children and adolescent patients with cancer" measured-compound="trabectedin" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 3 extracted.

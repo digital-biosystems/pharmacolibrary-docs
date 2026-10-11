@@ -28,8 +28,7 @@ Nothing in the extracted data describes the drug's disposition, so there is no m
 Crider KS et al., Systematic Review and Bayesian Meta-ana…, Nutrients (2019)
   ·  DOI: [10.3390/nu11010071](https://doi.org/10.3390/nu11010071)
 
-## Model component
-<dbs-pgx drug="folic acid" model-id="FolicAcid_Crider2019_women_of_reproductive_age" status="" stale="true" population="women of reproductive age" measured-compound="" parameterization="" topology=""></dbs-pgx>
+<div class="pk-model-meta" hidden drug="folic acid" model-id="FolicAcid_Crider2019_women_of_reproductive_age" status="" stale="true" population="women of reproductive age" measured-compound="" parameterization="" topology=""></div>
 
 **Model structure:** —; no model was built for this record.  
 **Parameters:** 0 extracted.

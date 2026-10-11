@@ -21,8 +21,7 @@
 Sun S et al., Population Pharmacokinetics of Bictegra…, Journal of clinical pharmac… (2026)
   ·  DOI: [10.1002/jcph.70134](https://doi.org/10.1002/jcph.70134)
 
-## Model component
-<dbs-pgx drug="Bictegravir" model-id="Bictegravir_Sun2026_reference" status="rejected" stale="false" population="pregnant and postpartum women with HIV" measured-compound="bictegravir" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="Bictegravir" model-id="Bictegravir_Sun2026_reference" status="rejected" stale="false" population="pregnant and postpartum women with HIV" measured-compound="bictegravir" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 4 extracted.

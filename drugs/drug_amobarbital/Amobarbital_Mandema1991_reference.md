@@ -22,8 +22,7 @@
 Mandema JW et al., Estimation of amobarbital plasma-effect…, Journal of pharmacokinetics… (1991)
   ·  DOI: [10.1007/BF01080870](https://doi.org/10.1007/BF01080870)
 
-## Model component
-<dbs-pgx drug="amobarbital" model-id="Amobarbital_Mandema1991_reference" status="rejected" stale="false" population="male Wistar-derived rats" measured-compound="amobarbital" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="amobarbital" model-id="Amobarbital_Mandema1991_reference" status="rejected" stale="false" population="male Wistar-derived rats" measured-compound="amobarbital" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

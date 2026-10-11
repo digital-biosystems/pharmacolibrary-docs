@@ -21,8 +21,7 @@
 Baalbaki N et al., Pharmacokinetics and pharmacodynamics o…, European journal of pharmac… (2023)
   ·  DOI: [10.1016/j.ejps.2023.106418](https://doi.org/10.1016/j.ejps.2023.106418)
 
-## Model component
-<dbs-pgx drug="imatinib" model-id="Imatinib_Baalbaki2023_reference" status="rejected" stale="false" population="COVID-19 patients and cancer patients" measured-compound="imatinib" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="imatinib" model-id="Imatinib_Baalbaki2023_reference" status="rejected" stale="false" population="COVID-19 patients and cancer patients" measured-compound="imatinib" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

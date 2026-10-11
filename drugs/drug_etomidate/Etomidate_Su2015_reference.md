@@ -21,8 +21,7 @@
 Su F et al., Population pharmacokinetics of etomidat…, Biopharmaceutics & drug dis… (2015)
   ·  DOI: [10.1002/bdd.1924](https://doi.org/10.1002/bdd.1924)
 
-## Model component
-<dbs-pgx drug="etomidate" model-id="Etomidate_Su2015_reference" status="rejected" stale="false" population="neonates and infants with congenital heart disease" measured-compound="etomidate" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="etomidate" model-id="Etomidate_Su2015_reference" status="rejected" stale="false" population="neonates and infants with congenital heart disease" measured-compound="etomidate" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

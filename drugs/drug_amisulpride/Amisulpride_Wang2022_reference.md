@@ -21,8 +21,7 @@
 Wang Z et al., Joint population pharmacokinetic modeli…, Frontiers in pharmacology (2022)
   ·  DOI: [10.3389/fphar.2022.978202](https://doi.org/10.3389/fphar.2022.978202)
 
-## Model component
-<dbs-pgx drug="amisulpride" model-id="Amisulpride_Wang2022_reference" status="extracted" stale="false" population="" measured-compound="amisulpride" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="amisulpride" model-id="Amisulpride_Wang2022_reference" status="extracted" stale="false" population="" measured-compound="amisulpride" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 3 extracted.

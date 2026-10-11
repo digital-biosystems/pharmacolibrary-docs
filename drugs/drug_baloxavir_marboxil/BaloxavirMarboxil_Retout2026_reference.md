@@ -33,8 +33,7 @@ The record lists V2/F as 260 L, but the simulation engine failed to cover this p
 Retout S et al., Population Pharmacokinetic and Exposure…, Clinical pharmacology and t… (2026)
   ·  DOI: [10.1002/cpt.70204](https://doi.org/10.1002/cpt.70204)
 
-## Model component
-<dbs-pgx drug="baloxavir marboxil" model-id="BaloxavirMarboxil_Retout2026_reference" status="extracted" stale="true" population="patients aged ≥1 year with influenza (treatment and post-exposure prophylaxis)" measured-compound="baloxavir acid" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="baloxavir marboxil" model-id="BaloxavirMarboxil_Retout2026_reference" status="extracted" stale="true" population="patients aged ≥1 year with influenza (treatment and post-exposure prophylaxis)" measured-compound="baloxavir acid" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 6 extracted, plus 5 covariate effects.

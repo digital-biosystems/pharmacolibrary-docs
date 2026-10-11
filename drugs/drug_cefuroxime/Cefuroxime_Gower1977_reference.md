@@ -21,8 +21,7 @@
 Gower PE et al., The pharmacokinetics of cefuroxime afte…, European journal of clinica… (1977)
   ·  DOI: [10.1007/BF00609865](https://doi.org/10.1007/BF00609865)
 
-## Model component
-<dbs-pgx drug="cefuroxime" model-id="Cefuroxime_Gower1977_reference" status="needs_review" stale="false" population="healthy volunteers" measured-compound="cefuroxime" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="cefuroxime" model-id="Cefuroxime_Gower1977_reference" status="needs_review" stale="false" population="healthy volunteers" measured-compound="cefuroxime" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 4 extracted.

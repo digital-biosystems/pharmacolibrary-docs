@@ -21,8 +21,7 @@
 Khwarg J et al., Population Pharmacokinetic Modeling and…, Neurology and therapy (2024)
   ·  DOI: [10.1007/s40120-024-00643-4](https://doi.org/10.1007/s40120-024-00643-4)
 
-## Model component
-<dbs-pgx drug="donepezil" model-id="Donepezil_Khwarg2024_bootstrapa" status="needs_review" stale="false" population="healthy adults" measured-compound="donepezil" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="donepezil" model-id="Donepezil_Khwarg2024_bootstrapa" status="needs_review" stale="false" population="healthy adults" measured-compound="donepezil" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 3 extracted.

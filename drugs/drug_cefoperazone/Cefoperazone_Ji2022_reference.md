@@ -23,8 +23,7 @@
 Ji XW et al., Model-Informed Drug Development of New…, Frontiers in pharmacology (2022)
   ·  DOI: [10.3389/fphar.2022.856792](https://doi.org/10.3389/fphar.2022.856792)
 
-## Model component
-<dbs-pgx drug="cefoperazone" model-id="Cefoperazone_Ji2022_reference" status="needs_review" stale="false" population="healthy adults" measured-compound="cefoperazone and sulbactam" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="cefoperazone" model-id="Cefoperazone_Ji2022_reference" status="needs_review" stale="false" population="healthy adults" measured-compound="cefoperazone and sulbactam" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 3 extracted.

@@ -20,8 +20,7 @@
 ## Citation
 Kearns CM et al., Pharmacokinetics of cladribine (2-chlor…, Cancer research (1994)
 
-## Model component
-<dbs-pgx drug="cladribine" model-id="Cladribine_Kearns1994_reference" status="rejected" stale="false" population="children with acute leukemia" measured-compound="cladribine" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="cladribine" model-id="Cladribine_Kearns1994_reference" status="rejected" stale="false" population="children with acute leukemia" measured-compound="cladribine" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 6 extracted.

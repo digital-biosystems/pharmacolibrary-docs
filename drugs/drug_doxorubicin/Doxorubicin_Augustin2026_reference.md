@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on paramet
 Augustin A et al., Translational strategy to support the f…, Frontiers in immunology (2026)
   ·  DOI: [10.3389/fimmu.2026.1736584](https://doi.org/10.3389/fimmu.2026.1736584)
 
-## Model component
-<dbs-pgx drug="doxorubicin" model-id="Doxorubicin_Augustin2026_reference" status="rejected" stale="true" population="" measured-compound="" parameterization="" topology=""></dbs-pgx>
+<div class="pk-model-meta" hidden drug="doxorubicin" model-id="Doxorubicin_Augustin2026_reference" status="rejected" stale="true" population="" measured-compound="" parameterization="" topology=""></div>
 
 **Model structure:** —; no model was built for this record.  
 **Parameters:** 0 extracted.

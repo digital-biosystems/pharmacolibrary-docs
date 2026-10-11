@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the lin
 Gatti G et al., Population pharmacokinetics of dapsone…, Antimicrobial agents and ch… (1996)
   ·  DOI: [10.1128/AAC.40.12.2743](https://doi.org/10.1128/AAC.40.12.2743)
 
-## Model component
-<dbs-pgx drug="dapsone" model-id="Dapsone_Gatti1996_reference" status="needs_review" stale="true" population="HIV-infected patients" measured-compound="dapsone" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="dapsone" model-id="Dapsone_Gatti1996_reference" status="needs_review" stale="true" population="HIV-infected patients" measured-compound="dapsone" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 3 extracted.

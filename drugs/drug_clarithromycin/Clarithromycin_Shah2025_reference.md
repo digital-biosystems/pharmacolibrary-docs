@@ -29,8 +29,7 @@ Independently confirmed by `gpt-oss:120b`.
 Shah RV et al., Intravenous Clarithromycin in Criticall…, Antibiotics (Basel, Switzer… (2025)
   ·  DOI: [10.3390/antibiotics14060559](https://doi.org/10.3390/antibiotics14060559)
 
-## Model component
-<dbs-pgx drug="clarithromycin" model-id="Clarithromycin_Shah2025_reference" status="extracted" stale="true" population="critically ill adults" measured-compound="clarithromycin" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="clarithromycin" model-id="Clarithromycin_Shah2025_reference" status="extracted" stale="true" population="critically ill adults" measured-compound="clarithromycin" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameters:** 3 extracted.

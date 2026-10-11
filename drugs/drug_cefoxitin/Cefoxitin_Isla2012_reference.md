@@ -21,8 +21,7 @@
 Isla A et al., Population pharmacokinetics of prophyla…, European journal of clinica… (2012)
   ·  DOI: [10.1007/s00228-011-1206-1](https://doi.org/10.1007/s00228-011-1206-1)
 
-## Model component
-<dbs-pgx drug="cefoxitin" model-id="Cefoxitin_Isla2012_reference" status="needs_review" stale="false" population="patients undergoing elective colorectal surgery" measured-compound="cefoxitin" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="cefoxitin" model-id="Cefoxitin_Isla2012_reference" status="needs_review" stale="false" population="patients undergoing elective colorectal surgery" measured-compound="cefoxitin" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 2 extracted.

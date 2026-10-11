@@ -21,8 +21,7 @@
 Chan V et al., Population pharmacokinetics of lamotrig…, Therapeutic drug monitoring (2001)
   ·  DOI: [10.1097/00007691-200112000-00006](https://doi.org/10.1097/00007691-200112000-00006)
 
-## Model component
-<dbs-pgx drug="lamotrigine" model-id="Lamotrigine_Chan2001_reference" status="rejected" stale="false" population="patients receiving oral lamotrigine therapy with drug concentration monitoring" measured-compound="lamotrigine" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="lamotrigine" model-id="Lamotrigine_Chan2001_reference" status="rejected" stale="false" population="patients receiving oral lamotrigine therapy with drug concentration monitoring" measured-compound="lamotrigine" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

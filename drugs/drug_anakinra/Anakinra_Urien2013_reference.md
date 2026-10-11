@@ -21,8 +21,7 @@
 Urien S et al., Anakinra pharmacokinetics in children a…, BMC pharmacology & toxicolo… (2013)
   ·  DOI: [10.1186/2050-6511-14-40](https://doi.org/10.1186/2050-6511-14-40)
 
-## Model component
-<dbs-pgx drug="anakinra" model-id="Anakinra_Urien2013_reference" status="rejected" stale="false" population="children and adolescents with systemic-onset juvenile idiopathic arthritis and autoinflammatory syndromes" measured-compound="anakinra" parameterization="apparent" topology="general_linear"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="anakinra" model-id="Anakinra_Urien2013_reference" status="rejected" stale="false" population="children and adolescents with systemic-onset juvenile idiopathic arthritis and autoinflammatory syndromes" measured-compound="anakinra" parameterization="apparent" topology="general_linear"></div>
 
 **Model structure:** general linear; no model was built for this record.  
 **Parameters:** 3 extracted.

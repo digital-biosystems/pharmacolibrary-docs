@@ -21,8 +21,7 @@
 Yoon SK et al., Pharmacokinetic Evaluation by Modeling…, Drug design, development an… (2020)
   ·  DOI: [10.2147/DDDT.S244957](https://doi.org/10.2147/DDDT.S244957)
 
-## Model component
-<dbs-pgx drug="donepezil" model-id="Donepezil_Yoon2020_reference" status="rejected" stale="false" population="healthy Korean male subjects" measured-compound="donepezil" parameterization="apparent" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="donepezil" model-id="Donepezil_Yoon2020_reference" status="rejected" stale="false" population="healthy Korean male subjects" measured-compound="donepezil" parameterization="apparent" topology="2C"></div>
 
 **Model structure:** 2-compartment; no model was built for this record.  
 **Parameters:** 9 extracted.

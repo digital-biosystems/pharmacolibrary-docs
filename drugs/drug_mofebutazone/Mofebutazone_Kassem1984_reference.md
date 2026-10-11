@@ -20,8 +20,7 @@
 Kassem MA et al., Pharmacokinetics of [4-14C] mofebutazon…, European journal of drug me… (1984)
   ·  DOI: [10.1007/BF03189645](https://doi.org/10.1007/BF03189645)
 
-## Model component
-<dbs-pgx drug="mofebutazone" model-id="Mofebutazone_Kassem1984_reference" status="needs_review" stale="false" population="adults" measured-compound="mofebutazone" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="mofebutazone" model-id="Mofebutazone_Kassem1984_reference" status="needs_review" stale="false" population="adults" measured-compound="mofebutazone" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 3 extracted.

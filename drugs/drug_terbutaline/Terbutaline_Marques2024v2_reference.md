@@ -21,8 +21,7 @@
 Marques L et al., Toward Personalized Salbutamol Therapy:…, Pharmaceutics (2024)
   ·  DOI: [10.3390/pharmaceutics16070881](https://doi.org/10.3390/pharmaceutics16070881)
 
-## Model component
-<dbs-pgx drug="terbutaline" model-id="Terbutaline_Marques2024v2_reference" status="rejected" stale="false" population="" measured-compound="terbutaline" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="terbutaline" model-id="Terbutaline_Marques2024v2_reference" status="rejected" stale="false" population="" measured-compound="terbutaline" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment; no model was built for this record.  
 **Parameters:** 5 extracted.

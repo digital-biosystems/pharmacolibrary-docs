@@ -30,8 +30,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Bolognani F et al., Characterization of the Pharmacokinetic…, The Journal of pharmacology… (2023)
   ·  DOI: [10.1124/jpet.123.001582](https://doi.org/10.1124/jpet.123.001582)
 
-## Model component
-<dbs-pgx drug="apraglutide" model-id="Apraglutide_Bolognani2023_reference" status="rejected" stale="true" population="healthy adults" measured-compound="apraglutide" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="apraglutide" model-id="Apraglutide_Bolognani2023_reference" status="rejected" stale="true" population="healthy adults" measured-compound="apraglutide" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

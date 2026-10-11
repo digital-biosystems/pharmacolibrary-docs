@@ -33,8 +33,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the val
 Lee J et al., Population pharmacokinetic/pharmacodyna…, Journal of clinical pharmac… (2012)
   ·  DOI: [10.1177/0091270011409228](https://doi.org/10.1177/0091270011409228)
 
-## Model component
-<dbs-pgx drug="clopidogrel" model-id="Clopidogrel_Lee2012_reference" status="rejected" stale="true" population="Korean healthy volunteers and stroke patients" measured-compound="SR26334" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="clopidogrel" model-id="Clopidogrel_Lee2012_reference" status="rejected" stale="true" population="Korean healthy volunteers and stroke patients" measured-compound="SR26334" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 3 extracted.

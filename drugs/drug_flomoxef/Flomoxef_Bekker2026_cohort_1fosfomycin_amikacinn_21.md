@@ -21,8 +21,7 @@
 Bekker A et al., Pharmacokinetics and safety of fosfomyc…, Antimicrobial agents and ch… (2026)
   ·  DOI: [10.1128/aac.01126-25](https://doi.org/10.1128/aac.01126-25)
 
-## Model component
-<dbs-pgx drug="flomoxef" model-id="Flomoxef_Bekker2026_cohort_1fosfomycin_amikacinn_21" status="rejected" stale="false" population="neonates with suspected sepsis" measured-compound="flomoxef" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="flomoxef" model-id="Flomoxef_Bekker2026_cohort_1fosfomycin_amikacinn_21" status="rejected" stale="false" population="neonates with suspected sepsis" measured-compound="flomoxef" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

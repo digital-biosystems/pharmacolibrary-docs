@@ -31,8 +31,7 @@ Independently confirmed by `gpt-oss:120b`.
 Ku LC et al., Population Pharmacokinetics and Explora…, CPT: pharmacometrics & syst… (2018)
   ·  DOI: [10.1002/psp4.12349](https://doi.org/10.1002/psp4.12349)
 
-## Model component
-<dbs-pgx drug="diazepam" model-id="Diazepam_Ku2018_reference" status="rejected" stale="true" population="children with status epilepticus" measured-compound="diazepam" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="diazepam" model-id="Diazepam_Ku2018_reference" status="rejected" stale="true" population="children with status epilepticus" measured-compound="diazepam" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

@@ -27,8 +27,7 @@ The record describes a three-compartment paclitaxel model with CL 29.7 L/h, V1 1
 ## Citation
 not matched (stem Tsushima_2020)
 
-## Model component
-<dbs-pgx drug="paclitaxel" model-id="Paclitaxel_Tsushima2020_reference" status="rejected" stale="false" population="adults with metastatic solid cancer" measured-compound="paclitaxel" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="paclitaxel" model-id="Paclitaxel_Tsushima2020_reference" status="rejected" stale="false" population="adults with metastatic solid cancer" measured-compound="paclitaxel" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 7 extracted.

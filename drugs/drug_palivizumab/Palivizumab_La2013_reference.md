@@ -21,8 +21,7 @@
 La Via WV et al., Three monthly doses of palivizumab are…, Pulmonary pharmacology & th… (2013)
   ·  DOI: [10.1016/j.pupt.2013.03.007](https://doi.org/10.1016/j.pupt.2013.03.007)
 
-## Model component
-<dbs-pgx drug="palivizumab" model-id="Palivizumab_La2013_reference" status="rejected" stale="false" population="paediatric high-risk infants and children with chronic lung disease of prematurity" measured-compound="palivizumab" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="palivizumab" model-id="Palivizumab_La2013_reference" status="rejected" stale="false" population="paediatric high-risk infants and children with chronic lung disease of prematurity" measured-compound="palivizumab" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

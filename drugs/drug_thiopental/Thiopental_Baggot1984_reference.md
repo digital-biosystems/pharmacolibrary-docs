@@ -23,8 +23,7 @@
 Baggot JD et al., Effect of premedication with acetylprom…, Journal of veterinary pharm… (1984)
   ·  DOI: [10.1111/j.1365-2885.1984.tb00900.x](https://doi.org/10.1111/j.1365-2885.1984.tb00900.x)
 
-## Model component
-<dbs-pgx drug="thiopental" model-id="Thiopental_Baggot1984_reference" status="needs_review" stale="false" population="normal dogs" measured-compound="thiopental" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="thiopental" model-id="Thiopental_Baggot1984_reference" status="needs_review" stale="false" population="normal dogs" measured-compound="thiopental" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 2 extracted.

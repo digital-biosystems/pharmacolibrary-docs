@@ -30,8 +30,7 @@ A model needs both clearance and volume; without the volume it could only be bui
 Gladziwa U et al., Pharmacokinetics and pharmacodynamics o…, British journal of clinical… (1995)
   ·  DOI: [10.1111/j.1365-2125.1995.tb04423.x](https://doi.org/10.1111/j.1365-2125.1995.tb04423.x)
 
-## Model component
-<dbs-pgx drug="roxatidine" model-id="Roxatidine_Gladziwa1995_reference" status="needs_review" stale="true" population="patients with renal insufficiency" measured-compound="roxatidine" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="roxatidine" model-id="Roxatidine_Gladziwa1995_reference" status="needs_review" stale="true" population="patients with renal insufficiency" measured-compound="roxatidine" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 1 extracted.

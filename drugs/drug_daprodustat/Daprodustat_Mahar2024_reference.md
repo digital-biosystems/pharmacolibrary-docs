@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Mahar KM et al., Integrated Population Pharmacokinetics…, Clinical pharmacokinetics (2024)
   ·  DOI: [10.1007/s40262-024-01417-9](https://doi.org/10.1007/s40262-024-01417-9)
 
-## Model component
-<dbs-pgx drug="daprodustat" model-id="Daprodustat_Mahar2024_reference" status="extracted" stale="true" population="adults with chronic kidney disease and anemia" measured-compound="daprodustat" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="daprodustat" model-id="Daprodustat_Mahar2024_reference" status="extracted" stale="true" population="adults with chronic kidney disease and anemia" measured-compound="daprodustat" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 4 extracted.

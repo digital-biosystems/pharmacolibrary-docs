@@ -24,8 +24,7 @@
 Alvarez-Bujidos ML et al., Pharmacokinetics of triclabendazole in…, Comparative biochemistry an… (1993)
   ·  DOI: [10.1016/0742-8413(93)90245-g](https://doi.org/10.1016/0742-8413(93)90245-g)
 
-## Model component
-<dbs-pgx drug="triclabendazole" model-id="Triclabendazole_AlvarezBujidos1993_reference" status="rejected" stale="false" population="rabbits" measured-compound="triclabendazole sulphoxide" parameterization="mechanistic" topology="general_linear"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="triclabendazole" model-id="Triclabendazole_AlvarezBujidos1993_reference" status="rejected" stale="false" population="rabbits" measured-compound="triclabendazole sulphoxide" parameterization="mechanistic" topology="general_linear"></div>
 
 **Model structure:** general linear; no model was built for this record.  
 **Parameters:** 2 extracted.

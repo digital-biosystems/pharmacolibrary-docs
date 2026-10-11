@@ -22,8 +22,7 @@
 Head-Rapson AG et al., Pharmacokinetics of the three isomers o…, British journal of anaesthe… (1994)
   ·  DOI: [10.1093/bja/73.5.613](https://doi.org/10.1093/bja/73.5.613)
 
-## Model component
-<dbs-pgx drug="mivacurium chloride" model-id="MivacuriumChloride_HeadRapson1994_reference" status="rejected" stale="false" population="healthy subjects and patients with mild or moderate hepatic cirrhosis" measured-compound="mivacurium isomers (cis-trans, trans-trans, cis-cis)" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="mivacurium chloride" model-id="MivacuriumChloride_HeadRapson1994_reference" status="rejected" stale="false" population="healthy subjects and patients with mild or moderate hepatic cirrhosis" measured-compound="mivacurium isomers (cis-trans, trans-trans, cis-cis)" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

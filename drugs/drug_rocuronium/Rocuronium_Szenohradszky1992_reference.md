@@ -23,8 +23,7 @@
 Szenohradszky J et al., Pharmacokinetics of rocuronium bromide…, Anesthesiology (1992)
   ·  DOI: [10.1097/00000542-199211000-00010](https://doi.org/10.1097/00000542-199211000-00010)
 
-## Model component
-<dbs-pgx drug="Rocuronium" model-id="Rocuronium_Szenohradszky1992_reference" status="extracted" stale="false" population="patients undergoing cadaver renal transplantation and healthy controls" measured-compound="rocuronium" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="Rocuronium" model-id="Rocuronium_Szenohradszky1992_reference" status="extracted" stale="false" population="patients undergoing cadaver renal transplantation and healthy controls" measured-compound="rocuronium" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameters:** 4 extracted.

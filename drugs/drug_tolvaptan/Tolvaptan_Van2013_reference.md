@@ -33,8 +33,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Van Wart SA et al., Population pharmacokinetics of tolvapta…, Biopharmaceutics & drug dis… (2013)
   ·  DOI: [10.1002/bdd.1849](https://doi.org/10.1002/bdd.1849)
 
-## Model component
-<dbs-pgx drug="tolvaptan" model-id="Tolvaptan_Van2013_reference" status="extracted" stale="true" population="healthy subjects and patients with hyponatremia secondary to congestive heart failure or hepatic cirrhosis" measured-compound="tolvaptan" parameterization="apparent" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="tolvaptan" model-id="Tolvaptan_Van2013_reference" status="extracted" stale="true" population="healthy subjects and patients with hyponatremia secondary to congestive heart failure or hepatic cirrhosis" measured-compound="tolvaptan" parameterization="apparent" topology="2C"></div>
 
 **Model structure:** 2-compartment, oral mammillary model — template `PK_2C_enteral`.  
 **Parameters:** 6 extracted, plus 9 covariate effects.

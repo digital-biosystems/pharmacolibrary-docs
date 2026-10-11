@@ -20,8 +20,7 @@
 ## Citation
 Motzer RJ et al., Phase II trial of suramin in patients w…, Cancer research (1992)
 
-## Model component
-<dbs-pgx drug="suramin sodium" model-id="SuraminSodium_Motzer1992_reference" status="needs_review" stale="false" population="patients with advanced renal cell carcinoma" measured-compound="suramin" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="suramin sodium" model-id="SuraminSodium_Motzer1992_reference" status="needs_review" stale="false" population="patients with advanced renal cell carcinoma" measured-compound="suramin" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 4 extracted.

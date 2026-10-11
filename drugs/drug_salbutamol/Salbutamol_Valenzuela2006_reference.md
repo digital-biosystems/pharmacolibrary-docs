@@ -33,8 +33,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the val
 Valenzuela B et al., Modelling intestinal absorption of salb…, International journal of ph… (2006)
   ·  DOI: [10.1016/j.ijpharm.2006.01.019](https://doi.org/10.1016/j.ijpharm.2006.01.019)
 
-## Model component
-<dbs-pgx drug="salbutamol" model-id="Salbutamol_Valenzuela2006_reference" status="rejected" stale="true" population="rat small intestine (in situ)" measured-compound="salbutamol sulphate" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="salbutamol" model-id="Salbutamol_Valenzuela2006_reference" status="rejected" stale="true" population="rat small intestine (in situ)" measured-compound="salbutamol sulphate" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 4 extracted.

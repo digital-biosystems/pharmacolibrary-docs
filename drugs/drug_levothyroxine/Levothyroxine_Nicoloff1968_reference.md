@@ -31,8 +31,7 @@ Independently confirmed by `gpt-oss:120b`.
 Nicoloff JT et al., Studies of peripheral thyroxine distrib…, The Journal of clinical inv… (1968)
   ·  DOI: [10.1172/JCI105887](https://doi.org/10.1172/JCI105887)
 
-## Model component
-<dbs-pgx drug="Levothyroxine" model-id="Levothyroxine_Nicoloff1968_reference" status="rejected" stale="true" population="subjects with thyrotoxicosis and hypothyroidism" measured-compound="thyroxine" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="Levothyroxine" model-id="Levothyroxine_Nicoloff1968_reference" status="rejected" stale="true" population="subjects with thyrotoxicosis and hypothyroidism" measured-compound="thyroxine" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

@@ -29,8 +29,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 ## Citation
 Ritschel WA et al., Pharmacokinetics of papaverine in man, International journal of cl… (1977)
 
-## Model component
-<dbs-pgx drug="papaverine" model-id="Papaverine_Ritschel1977_reference" status="needs_review" stale="true" population="man" measured-compound="papaverine" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="papaverine" model-id="Papaverine_Ritschel1977_reference" status="needs_review" stale="true" population="man" measured-compound="papaverine" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 1 extracted.

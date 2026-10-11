@@ -31,8 +31,7 @@ Independently confirmed by `gpt-oss:120b`.
 Yukawa E et al., Population pharmacokinetic investigatio…, Journal of clinical pharmac… (2007)
   ·  DOI: [10.1111/j.1365-2710.2007.00833.x](https://doi.org/10.1111/j.1365-2710.2007.00833.x)
 
-## Model component
-<dbs-pgx drug="digoxin" model-id="Digoxin_Yukawa2007_reference" status="rejected" stale="true" population="Japanese neonates" measured-compound="digoxin" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="digoxin" model-id="Digoxin_Yukawa2007_reference" status="rejected" stale="true" population="Japanese neonates" measured-compound="digoxin" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

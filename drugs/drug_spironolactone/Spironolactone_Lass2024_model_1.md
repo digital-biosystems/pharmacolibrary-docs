@@ -25,8 +25,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Lass J et al., Pharmacokinetics of oral spironolactone…, European journal of clinica… (2024)
   ·  DOI: [10.1007/s00228-023-03599-w](https://doi.org/10.1007/s00228-023-03599-w)
 
-## Model component
-<dbs-pgx drug="spironolactone" model-id="Spironolactone_Lass2024_model_1" status="needs_review" stale="false" population="infants with chronic heart failure, ascites and/or oedema" measured-compound="spironolactone" parameterization="mechanistic" topology="general_linear"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="spironolactone" model-id="Spironolactone_Lass2024_model_1" status="needs_review" stale="false" population="infants with chronic heart failure, ascites and/or oedema" measured-compound="spironolactone" parameterization="mechanistic" topology="general_linear"></div>
 
 **Model structure:** general linear; no model was built for this record.  
 **Parameters:** 3 extracted.

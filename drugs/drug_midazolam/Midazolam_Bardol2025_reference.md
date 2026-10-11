@@ -27,8 +27,7 @@
 Bardol M et al., Pharmacokinetic and Pharmacodynamic Mod…, Paediatric anaesthesia (2025)
   ·  DOI: [10.1111/pan.70050](https://doi.org/10.1111/pan.70050)
 
-## Model component
-<dbs-pgx drug="midazolam" model-id="Midazolam_Bardol2025_reference" status="extracted" stale="true" population="" measured-compound="midazolam" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="midazolam" model-id="Midazolam_Bardol2025_reference" status="extracted" stale="true" population="" measured-compound="midazolam" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameters:** 2 extracted.

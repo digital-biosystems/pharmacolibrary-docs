@@ -23,8 +23,7 @@
 Chen B et al., Population pharmacokinetics and Monte C…, Antimicrobial agents and ch… (2025)
   ·  DOI: [10.1128/aac.00519-25](https://doi.org/10.1128/aac.00519-25)
 
-## Model component
-<dbs-pgx drug="trimethoprim" model-id="Trimethoprim_Chen2025_reference" status="rejected" stale="false" population="adult patients with Pneumocystis jirovecii pneumonia" measured-compound="trimethoprim" parameterization="mechanistic" topology="general_linear"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="trimethoprim" model-id="Trimethoprim_Chen2025_reference" status="rejected" stale="false" population="adult patients with Pneumocystis jirovecii pneumonia" measured-compound="trimethoprim" parameterization="mechanistic" topology="general_linear"></div>
 
 **Model structure:** general linear; no model was built for this record.  
 **Parameters:** 3 extracted.

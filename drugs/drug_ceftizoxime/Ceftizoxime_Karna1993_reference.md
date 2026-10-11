@@ -21,8 +21,7 @@
 Karna P et al., Population pharmacokinetics of ceftizox…, Developmental pharmacology… (1993)
   ·  DOI: [10.1159/000457554](https://doi.org/10.1159/000457554)
 
-## Model component
-<dbs-pgx drug="ceftizoxime" model-id="Ceftizoxime_Karna1993_reference" status="extracted" stale="false" population="premature newborns" measured-compound="ceftizoxime" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="ceftizoxime" model-id="Ceftizoxime_Karna1993_reference" status="extracted" stale="false" population="premature newborns" measured-compound="ceftizoxime" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameters:** 3 extracted.

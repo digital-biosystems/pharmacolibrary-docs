@@ -20,8 +20,7 @@
 ## Citation
 Schleyer E et al., New aspects on the pharmacokinetics of…, Leukemia (1994)
 
-## Model component
-<dbs-pgx drug="mitoxantrone" model-id="Mitoxantrone_Schleyer1994_reference" status="rejected" stale="false" population="patients with acute myeloid leukemia or chronic lymphocytic leukemia" measured-compound="mitoxantrone" parameterization="mechanistic" topology="general_linear"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="mitoxantrone" model-id="Mitoxantrone_Schleyer1994_reference" status="rejected" stale="false" population="patients with acute myeloid leukemia or chronic lymphocytic leukemia" measured-compound="mitoxantrone" parameterization="mechanistic" topology="general_linear"></div>
 
 **Model structure:** general linear; no model was built for this record.  
 **Parameters:** 2 extracted.

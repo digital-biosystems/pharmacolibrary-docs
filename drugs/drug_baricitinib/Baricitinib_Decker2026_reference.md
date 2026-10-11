@@ -20,8 +20,7 @@
 Decker RL et al., A Population Pharmacokinetic and Exposu…, Clinical pharmacokinetics (2026)
   ·  DOI: [10.1007/s40262-025-01563-8](https://doi.org/10.1007/s40262-025-01563-8)
 
-## Model component
-<dbs-pgx drug="baricitinib" model-id="Baricitinib_Decker2026_reference" status="rejected" stale="false" population="pediatric patients with atopic dermatitis" measured-compound="baricitinib" parameterization="apparent" topology="3C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="baricitinib" model-id="Baricitinib_Decker2026_reference" status="rejected" stale="false" population="pediatric patients with atopic dermatitis" measured-compound="baricitinib" parameterization="apparent" topology="3C"></div>
 
 **Model structure:** 3-compartment; no model was built for this record.  
 **Parameters:** 9 extracted, plus 1 covariate effect.

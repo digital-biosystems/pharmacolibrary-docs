@@ -20,8 +20,7 @@
 ## Citation
 Vergin H et al., [The pharmacokinetics and bioequivalenc…, Arzneimittel-Forschung (1985)
 
-## Model component
-<dbs-pgx drug="ambroxol" model-id="Ambroxol_Vergin1985_reference" status="extracted" stale="false" population="healthy adults" measured-compound="ambroxol" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="ambroxol" model-id="Ambroxol_Vergin1985_reference" status="extracted" stale="false" population="healthy adults" measured-compound="ambroxol" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 3 extracted.

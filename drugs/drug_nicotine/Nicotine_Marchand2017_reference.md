@@ -20,8 +20,7 @@
 Marchand M et al., Nicotine Population Pharmacokinetics in…, European journal of drug me… (2017)
   ·  DOI: [10.1007/s13318-017-0405-2](https://doi.org/10.1007/s13318-017-0405-2)
 
-## Model component
-<dbs-pgx drug="nicotine" model-id="Nicotine_Marchand2017_reference" status="rejected" stale="false" population="healthy adult smokers" measured-compound="nicotine" parameterization="apparent" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="nicotine" model-id="Nicotine_Marchand2017_reference" status="rejected" stale="false" population="healthy adult smokers" measured-compound="nicotine" parameterization="apparent" topology="2C"></div>
 
 **Model structure:** 2-compartment; no model was built for this record.  
 **Parameters:** 12 extracted.

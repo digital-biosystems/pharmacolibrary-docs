@@ -21,8 +21,7 @@
 Hampsey E et al., A systematic review of the pharmacokine…, Journal of psychopharmacolo… (2026)
   ·  DOI: [10.1177/02698811261453938](https://doi.org/10.1177/02698811261453938)
 
-## Model component
-<dbs-pgx drug="nitrous oxide" model-id="NitrousOxide_Hampsey2026_reference" status="extracted" stale="false" population="" measured-compound="nitrous_oxide" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="nitrous oxide" model-id="NitrousOxide_Hampsey2026_reference" status="extracted" stale="false" population="" measured-compound="nitrous_oxide" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameters:** 2 extracted.

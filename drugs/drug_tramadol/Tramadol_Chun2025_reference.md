@@ -33,8 +33,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the lin
 Chun D et al., Enhanced Sensitivity to Tramadol in Dia…, CPT: pharmacometrics & syst… (2025)
   ·  DOI: [10.1002/psp4.13315](https://doi.org/10.1002/psp4.13315)
 
-## Model component
-<dbs-pgx drug="tramadol" model-id="Tramadol_Chun2025_reference" status="rejected" stale="true" population="patients with chronic neuropathic pain" measured-compound="tramadol" parameterization="apparent_wrt_Fm" topology="general_linear"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="tramadol" model-id="Tramadol_Chun2025_reference" status="rejected" stale="true" population="patients with chronic neuropathic pain" measured-compound="tramadol" parameterization="apparent_wrt_Fm" topology="general_linear"></div>
 
 **Model structure:** general linear; no model was built for this record.  
 **Parameters:** 0 extracted.

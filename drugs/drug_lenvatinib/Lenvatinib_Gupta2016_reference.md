@@ -20,8 +20,7 @@
 Gupta A et al., Population pharmacokinetic analysis of…, British journal of clinical… (2016)
   ·  DOI: [10.1111/bcp.12907](https://doi.org/10.1111/bcp.12907)
 
-## Model component
-<dbs-pgx drug="lenvatinib" model-id="Lenvatinib_Gupta2016_reference" status="needs_review" stale="false" population="healthy subjects and patients with cancer" measured-compound="lenvatinib" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="lenvatinib" model-id="Lenvatinib_Gupta2016_reference" status="needs_review" stale="false" population="healthy subjects and patients with cancer" measured-compound="lenvatinib" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 2 extracted.

@@ -20,8 +20,7 @@
 Yu RZ et al., Population Pharmacokinetic-Pharmacodyna…, Nucleic acid therapeutics (2020)
   ·  DOI: [10.1089/nat.2019.0822](https://doi.org/10.1089/nat.2019.0822)
 
-## Model component
-<dbs-pgx drug="inotersen" model-id="Inotersen_Yu2020v2_reference" status="needs_review" stale="false" population="healthy volunteers and patients with hATTR-PN" measured-compound="inotersen" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="inotersen" model-id="Inotersen_Yu2020v2_reference" status="needs_review" stale="false" population="healthy volunteers and patients with hATTR-PN" measured-compound="inotersen" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment; no model was built for this record.  
 **Parameters:** 5 extracted.

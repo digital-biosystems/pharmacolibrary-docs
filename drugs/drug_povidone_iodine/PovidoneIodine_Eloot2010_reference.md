@@ -30,8 +30,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Eloot S et al., How to remove accumulated iodine in bur…, Nephrology, dialysis, trans… (2010)
   ·  DOI: [10.1093/ndt/gfp647](https://doi.org/10.1093/ndt/gfp647)
 
-## Model component
-<dbs-pgx drug="povidone-iodine" model-id="PovidoneIodine_Eloot2010_reference" status="needs_review" stale="false" population="burn-injured patients" measured-compound="iodine" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="povidone-iodine" model-id="PovidoneIodine_Eloot2010_reference" status="needs_review" stale="false" population="burn-injured patients" measured-compound="iodine" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment; no model was built for this record.  
 **Parameters:** 3 extracted.

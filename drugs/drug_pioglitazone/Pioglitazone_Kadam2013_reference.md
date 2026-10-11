@@ -30,8 +30,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on `parame
 Kadam R et al., Effect of Cytochrome P450 2C8*3 on the…, Biological & pharmaceutical… (2013)
   ·  DOI: [10.1248/bpb.b12-00657](https://doi.org/10.1248/bpb.b12-00657)
 
-## Model component
-<dbs-pgx drug="pioglitazone" model-id="Pioglitazone_Kadam2013_reference" status="rejected" stale="true" population="healthy Caucasian volunteers" measured-compound="pioglitazone" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="pioglitazone" model-id="Pioglitazone_Kadam2013_reference" status="rejected" stale="true" population="healthy Caucasian volunteers" measured-compound="pioglitazone" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 1 extracted.

@@ -29,8 +29,7 @@ No clearance, volume or rate constant of the model is reported in it. Only the a
 Chaw SH et al., Population Pharmacokinetics and Dosing…, European journal of drug me… (2023)
   ·  DOI: [10.1007/s13318-022-00795-4](https://doi.org/10.1007/s13318-022-00795-4)
 
-## Model component
-<dbs-pgx drug="oxycodone" model-id="Oxycodone_Chaw2023_reference" status="rejected" stale="true" population="adult surgical patients with obesity" measured-compound="oxycodone" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="oxycodone" model-id="Oxycodone_Chaw2023_reference" status="rejected" stale="true" population="adult surgical patients with obesity" measured-compound="oxycodone" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

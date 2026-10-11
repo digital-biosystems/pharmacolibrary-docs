@@ -20,8 +20,7 @@
 Guk J et al., Quantitative Assessment of Food Effect…, Basic & clinical pharmacolo… (2017)
   ·  DOI: [10.1111/bcpt.12677](https://doi.org/10.1111/bcpt.12677)
 
-## Model component
-<dbs-pgx drug="megestrol" model-id="Megestrol_Guk2017_reference" status="rejected" stale="false" population="healthy volunteers" measured-compound="megestrol acetate" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="megestrol" model-id="Megestrol_Guk2017_reference" status="rejected" stale="false" population="healthy volunteers" measured-compound="megestrol acetate" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

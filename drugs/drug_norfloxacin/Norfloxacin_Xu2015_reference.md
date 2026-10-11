@@ -23,8 +23,7 @@
 Xu N et al., Comparative pharmacokinetics of norflox…, Journal of veterinary pharm… (2015)
   ·  DOI: [10.1111/jvp.12193](https://doi.org/10.1111/jvp.12193)
 
-## Model component
-<dbs-pgx drug="norfloxacin" model-id="Norfloxacin_Xu2015_reference" status="needs_review" stale="false" population="common carp and crucian carp" measured-compound="norfloxacin nicotinate" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="norfloxacin" model-id="Norfloxacin_Xu2015_reference" status="needs_review" stale="false" population="common carp and crucian carp" measured-compound="norfloxacin nicotinate" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 7 extracted.

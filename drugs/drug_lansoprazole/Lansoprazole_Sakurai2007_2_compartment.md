@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the val
 Sakurai Y et al., Population pharmacokinetics and proton…, Biological & pharmaceutical… (2007)
   ·  DOI: [10.1248/bpb.30.2238](https://doi.org/10.1248/bpb.30.2238)
 
-## Model component
-<dbs-pgx drug="lansoprazole" model-id="Lansoprazole_Sakurai2007_2_compartment" status="rejected" stale="true" population="healthy Japanese males" measured-compound="lansoprazole" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="lansoprazole" model-id="Lansoprazole_Sakurai2007_2_compartment" status="rejected" stale="true" population="healthy Japanese males" measured-compound="lansoprazole" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 4 extracted.

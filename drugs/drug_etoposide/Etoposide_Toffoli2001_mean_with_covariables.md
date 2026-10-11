@@ -26,8 +26,7 @@ The model was built, but etoposide's clearance had no value, so a library placeh
 Toffoli G et al., Population pharmacokinetics and pharmac…, British journal of clinical… (2001)
   ·  DOI: [10.1046/j.0306-5251.2001.01468.x](https://doi.org/10.1046/j.0306-5251.2001.01468.x)
 
-## Model component
-<dbs-pgx drug="etoposide" model-id="Etoposide_Toffoli2001_mean_with_covariables" status="model_quarantined" stale="false" population="adults with solid tumours" measured-compound="etoposide" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="etoposide" model-id="Etoposide_Toffoli2001_mean_with_covariables" status="model_quarantined" stale="false" population="adults with solid tumours" measured-compound="etoposide" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameters:** 5 extracted.

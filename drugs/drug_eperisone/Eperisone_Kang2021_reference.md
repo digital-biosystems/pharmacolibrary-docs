@@ -21,8 +21,7 @@
 Kang WH et al., Population Pharmacokinetic Method to Pr…, Pharmaceuticals (Basel, Swi… (2021)
   ·  DOI: [10.3390/ph14020114](https://doi.org/10.3390/ph14020114)
 
-## Model component
-<dbs-pgx drug="eperisone" model-id="Eperisone_Kang2021_reference" status="extracted" stale="false" population="" measured-compound="eperisone" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="eperisone" model-id="Eperisone_Kang2021_reference" status="extracted" stale="false" population="" measured-compound="eperisone" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameters:** 2 extracted.

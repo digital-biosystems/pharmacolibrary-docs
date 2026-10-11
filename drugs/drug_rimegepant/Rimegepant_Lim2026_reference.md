@@ -29,8 +29,7 @@ A volume and a clearance/elimination estimate from this paper are needed to buil
 Lim CN et al., A phase 1, multicenter, open-label stud…, Headache (2026)
   ·  DOI: [10.1111/head.15074](https://doi.org/10.1111/head.15074)
 
-## Model component
-<dbs-pgx drug="rimegepant" model-id="Rimegepant_Lim2026_reference" status="" stale="true" population="children aged 6 to &lt;12 years with a history of migraine" measured-compound="" parameterization="" topology=""></dbs-pgx>
+<div class="pk-model-meta" hidden drug="rimegepant" model-id="Rimegepant_Lim2026_reference" status="" stale="true" population="children aged 6 to &lt;12 years with a history of migraine" measured-compound="" parameterization="" topology=""></div>
 
 **Model structure:** —; no model was built for this record.  
 **Parameters:** 0 extracted.

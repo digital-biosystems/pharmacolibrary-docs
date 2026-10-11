@@ -23,8 +23,7 @@
 White K et al., Alfaxalone population pharmacokinetics…, Pharmacology research & per… (2022)
   ·  DOI: [10.1002/prp2.1031](https://doi.org/10.1002/prp2.1031)
 
-## Model component
-<dbs-pgx drug="alfaxalone" model-id="Alfaxalone_White2022_male" status="needs_review" stale="false" population="inbred and outbred rat strains" measured-compound="alfaxalone" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="alfaxalone" model-id="Alfaxalone_White2022_male" status="needs_review" stale="false" population="inbred and outbred rat strains" measured-compound="alfaxalone" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 4 extracted.

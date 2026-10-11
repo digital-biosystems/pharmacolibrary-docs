@@ -23,8 +23,7 @@
 Liu HC et al., PK/PD modeling based on NO-ET homeostas…, Acta pharmacologica Sinica (2020)
   ·  DOI: [10.1038/s41401-019-0331-8](https://doi.org/10.1038/s41401-019-0331-8)
 
-## Model component
-<dbs-pgx drug="sunitinib" model-id="Sunitinib_Liu2020_reference" status="needs_review" stale="false" population="rats administered high-dose sunitinib" measured-compound="sunitinib" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="sunitinib" model-id="Sunitinib_Liu2020_reference" status="needs_review" stale="false" population="rats administered high-dose sunitinib" measured-compound="sunitinib" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 3 extracted.

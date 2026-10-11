@@ -21,8 +21,7 @@
 Chen X et al., Initial dosage optimization of olanzapi…, Frontiers in pharmacology (2024)
   ·  DOI: [10.3389/fphar.2024.1444169](https://doi.org/10.3389/fphar.2024.1444169)
 
-## Model component
-<dbs-pgx drug="buspirone" model-id="Buspirone_Chen2024v2_reference" status="extracted" stale="false" population="" measured-compound="buspirone" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="buspirone" model-id="Buspirone_Chen2024v2_reference" status="extracted" stale="false" population="" measured-compound="buspirone" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 3 extracted.

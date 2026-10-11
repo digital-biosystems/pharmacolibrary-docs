@@ -22,8 +22,7 @@
 ## Citation
 Zheng J et al., [Experimental study on concentrations a…, Zhonghua wai ke za zhi [Chi… (2014)
 
-## Model component
-<dbs-pgx drug="cefoperazone" model-id="Cefoperazone_Zheng2014_reference" status="needs_review" stale="false" population="healthy rabbits" measured-compound="cefoperazone" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="cefoperazone" model-id="Cefoperazone_Zheng2014_reference" status="needs_review" stale="false" population="healthy rabbits" measured-compound="cefoperazone" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 4 extracted.

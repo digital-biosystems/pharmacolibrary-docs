@@ -20,8 +20,7 @@
 Chatfield DH et al., Pharmacokinetic studies with benoxaprof…, British journal of clinical… (1977)
   ·  DOI: [10.1111/j.1365-2125.1977.tb00789.x](https://doi.org/10.1111/j.1365-2125.1977.tb00789.x)
 
-## Model component
-<dbs-pgx drug="benoxaprofen" model-id="Benoxaprofen_Chatfield1977_reference" status="rejected" stale="false" population="adults" measured-compound="benoxaprofen" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="benoxaprofen" model-id="Benoxaprofen_Chatfield1977_reference" status="rejected" stale="false" population="adults" measured-compound="benoxaprofen" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

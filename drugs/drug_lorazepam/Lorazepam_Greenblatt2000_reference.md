@@ -21,8 +21,7 @@
 Greenblatt DJ et al., Kinetics and dynamics of lorazepam duri…, Critical care medicine (2000)
   ·  DOI: [10.1097/00003246-200008000-00011](https://doi.org/10.1097/00003246-200008000-00011)
 
-## Model component
-<dbs-pgx drug="lorazepam" model-id="Lorazepam_Greenblatt2000_reference" status="needs_review" stale="false" population="healthy volunteers" measured-compound="lorazepam" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="lorazepam" model-id="Lorazepam_Greenblatt2000_reference" status="needs_review" stale="false" population="healthy volunteers" measured-compound="lorazepam" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 5 extracted.

@@ -29,8 +29,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on paramet
 Mauri MC et al., Clinical Pharmacokinetics of Atypical A…, Clinical pharmacokinetics (2018)
   ·  DOI: [10.1007/s40262-018-0664-3](https://doi.org/10.1007/s40262-018-0664-3)
 
-## Model component
-<dbs-pgx drug="brexpiprazole" model-id="Brexpiprazole_Mauri2018_reference" status="curated_candidate" stale="false" population="unknown" measured-compound="brexpiprazole" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="brexpiprazole" model-id="Brexpiprazole_Mauri2018_reference" status="curated_candidate" stale="false" population="unknown" measured-compound="brexpiprazole" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameters:** 2 extracted.

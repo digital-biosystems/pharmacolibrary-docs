@@ -33,8 +33,7 @@ Independently confirmed by `gpt-oss:120b`.
 Doyle E et al., Pharmacokinetics of isosorbide dinitrat…, Journal of pharmaceutical s… (1981)
   ·  DOI: [10.1002/jps.2600701122](https://doi.org/10.1002/jps.2600701122)
 
-## Model component
-<dbs-pgx drug="isosorbide dinitrate" model-id="IsosorbideDinitrate_Doyle1981_reference" status="rejected" stale="true" population="rhesus monkey, cynomolgus monkey, and baboon" measured-compound="isosorbide dinitrate" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="isosorbide dinitrate" model-id="IsosorbideDinitrate_Doyle1981_reference" status="rejected" stale="true" population="rhesus monkey, cynomolgus monkey, and baboon" measured-compound="isosorbide dinitrate" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

@@ -23,8 +23,7 @@
 Chotsiri P et al., Population pharmacokinetics and electro…, British journal of clinical… (2017)
   ·  DOI: [10.1111/bcp.13372](https://doi.org/10.1111/bcp.13372)
 
-## Model component
-<dbs-pgx drug="Piperaquine" model-id="Piperaquine_Chotsiri2017_reference" status="rejected" stale="false" population="healthy Thai adults" measured-compound="piperaquine" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="Piperaquine" model-id="Piperaquine_Chotsiri2017_reference" status="rejected" stale="false" population="healthy Thai adults" measured-compound="piperaquine" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

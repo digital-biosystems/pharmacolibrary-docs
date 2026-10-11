@@ -21,8 +21,7 @@
 Wiesel FA et al., The pharmacokinetics of intravenous and…, European journal of clinica… (1980)
   ·  DOI: [10.1007/BF00558453](https://doi.org/10.1007/BF00558453)
 
-## Model component
-<dbs-pgx drug="sulpiride" model-id="Sulpiride_Wiesel1980_reference" status="needs_review" stale="false" population="healthy volunteers" measured-compound="sulpiride" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="sulpiride" model-id="Sulpiride_Wiesel1980_reference" status="needs_review" stale="false" population="healthy volunteers" measured-compound="sulpiride" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 8 extracted.

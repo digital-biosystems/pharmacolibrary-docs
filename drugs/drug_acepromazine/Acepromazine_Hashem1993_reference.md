@@ -23,8 +23,7 @@
 Hashem A et al., Disposition, bioavailability and clinic…, Journal of veterinary pharm… (1993)
   ·  DOI: [10.1111/j.1365-2885.1993.tb00183.x](https://doi.org/10.1111/j.1365-2885.1993.tb00183.x)
 
-## Model component
-<dbs-pgx drug="acepromazine" model-id="Acepromazine_Hashem1993_reference" status="rejected" stale="false" population="horses" measured-compound="acepromazine" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="acepromazine" model-id="Acepromazine_Hashem1993_reference" status="rejected" stale="false" population="horses" measured-compound="acepromazine" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 5 extracted.

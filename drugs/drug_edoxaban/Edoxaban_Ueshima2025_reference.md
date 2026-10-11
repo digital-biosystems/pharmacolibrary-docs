@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Ueshima S et al., Population pharmacokinetics and pharmac…, Journal of pharmaceutical h… (2025)
   ·  DOI: [10.1186/s40780-025-00453-2](https://doi.org/10.1186/s40780-025-00453-2)
 
-## Model component
-<dbs-pgx drug="edoxaban" model-id="Edoxaban_Ueshima2025_reference" status="needs_review" stale="true" population="Japanese adults with atrial fibrillation" measured-compound="edoxaban" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="edoxaban" model-id="Edoxaban_Ueshima2025_reference" status="needs_review" stale="true" population="Japanese adults with atrial fibrillation" measured-compound="edoxaban" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 1 extracted.

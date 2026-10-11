@@ -29,8 +29,7 @@ The parameter t1/2ka carries the verbatim label ka_pop (/h) with value 0.054 /h,
 Sethuramalingam S et al., Comparative assessment of asparaginase…, BMC cancer (2026)
   ·  DOI: [10.1186/s12885-026-16362-y](https://doi.org/10.1186/s12885-026-16362-y)
 
-## Model component
-<dbs-pgx drug="escherichia coli" model-id="EscherichiaColi_Sethuramalingam2026_reference" status="rejected" stale="true" population="children with newly diagnosed acute lymphoblastic leukemia" measured-compound="asparaginase" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="escherichia coli" model-id="EscherichiaColi_Sethuramalingam2026_reference" status="rejected" stale="true" population="children with newly diagnosed acute lymphoblastic leukemia" measured-compound="asparaginase" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 3 extracted.

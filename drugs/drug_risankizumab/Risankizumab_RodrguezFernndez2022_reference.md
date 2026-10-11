@@ -21,8 +21,7 @@
 Rodríguez-Fernández K et al., Impact of Pharmacokinetic and Pharmacod…, Pharmaceutics (2022)
   ·  DOI: [10.3390/pharmaceutics14030654](https://doi.org/10.3390/pharmaceutics14030654)
 
-## Model component
-<dbs-pgx drug="risankizumab" model-id="Risankizumab_RodrguezFernndez2022_reference" status="extracted" stale="false" population="" measured-compound="risankizumab" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="risankizumab" model-id="Risankizumab_RodrguezFernndez2022_reference" status="extracted" stale="false" population="" measured-compound="risankizumab" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 3 extracted.

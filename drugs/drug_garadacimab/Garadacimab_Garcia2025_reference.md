@@ -24,8 +24,7 @@ Independently confirmed by `gpt-oss:120b`.
 Garcia R et al., Population Pharmacokinetic/Pharmacodyna…, CPT: pharmacometrics & syst… (2025)
   ·  DOI: [10.1002/psp4.70009](https://doi.org/10.1002/psp4.70009)
 
-## Model component
-<dbs-pgx drug="garadacimab" model-id="Garadacimab_Garcia2025_reference" status="rejected" stale="false" population="healthy volunteers and patients with hereditary angioedema" measured-compound="garadacimab" parameterization="apparent" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="garadacimab" model-id="Garadacimab_Garcia2025_reference" status="rejected" stale="false" population="healthy volunteers and patients with hereditary angioedema" measured-compound="garadacimab" parameterization="apparent" topology="2C"></div>
 
 **Model structure:** 2-compartment; no model was built for this record.  
 **Parameters:** 1 extracted.

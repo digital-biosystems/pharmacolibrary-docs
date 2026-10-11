@@ -21,8 +21,7 @@
 Hamada Y et al., Pharmacokinetic/Pharmacodynamic Analysi…, Antibiotics (Basel, Switzer… (2022)
   ·  DOI: [10.3390/antibiotics11040456](https://doi.org/10.3390/antibiotics11040456)
 
-## Model component
-<dbs-pgx drug="flomoxef" model-id="Flomoxef_Hamada2022_reference" status="rejected" stale="false" population="patients with invasive urinary tract infection" measured-compound="flomoxef" parameterization="mechanistic" topology="general_linear"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="flomoxef" model-id="Flomoxef_Hamada2022_reference" status="rejected" stale="false" population="patients with invasive urinary tract infection" measured-compound="flomoxef" parameterization="mechanistic" topology="general_linear"></div>
 
 **Model structure:** general linear; no model was built for this record.  
 **Parameters:** 0 extracted.

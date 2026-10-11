@@ -22,8 +22,7 @@
 Wilson WD et al., Cefadroxil in the horse: pharmacokineti…, Journal of veterinary pharm… (1985)
   ·  DOI: [10.1111/j.1365-2885.1985.tb00953.x](https://doi.org/10.1111/j.1365-2885.1985.tb00953.x)
 
-## Model component
-<dbs-pgx drug="cefadroxil" model-id="Cefadroxil_Wilson1985_reference" status="rejected" stale="false" population="healthy adult mares" measured-compound="cefadroxil" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="cefadroxil" model-id="Cefadroxil_Wilson1985_reference" status="rejected" stale="false" population="healthy adult mares" measured-compound="cefadroxil" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 4 extracted.

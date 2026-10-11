@@ -21,8 +21,7 @@
 Chen J et al., Population PK-PD Modeling of Danicopan…, CPT: pharmacometrics & syst… (2026)
   ·  DOI: [10.1002/psp4.70209](https://doi.org/10.1002/psp4.70209)
 
-## Model component
-<dbs-pgx drug="eculizumab" model-id="Eculizumab_Chen2026_reference" status="rejected" stale="false" population="" measured-compound="eculizumab" parameterization="apparent" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="eculizumab" model-id="Eculizumab_Chen2026_reference" status="rejected" stale="false" population="" measured-compound="eculizumab" parameterization="apparent" topology="2C"></div>
 
 **Model structure:** 2-compartment; no model was built for this record.  
 **Parameters:** 3 extracted.

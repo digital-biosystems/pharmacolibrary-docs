@@ -19,8 +19,7 @@
 ## Citation
 Beveridge T et al., Pharmacokinetic study with synthetic sa…, Zeitschrift fur Gastroenter… (1976)
 
-## Model component
-<dbs-pgx drug="calcitonin (salmon synthetic)" model-id="CalcitoninSalmonSynthetic_Beveridge1976_reference" status="needs_review" stale="false" population="patients" measured-compound="synthetic salmon calcitonin" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="calcitonin (salmon synthetic)" model-id="CalcitoninSalmonSynthetic_Beveridge1976_reference" status="needs_review" stale="false" population="patients" measured-compound="synthetic salmon calcitonin" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 2 extracted.

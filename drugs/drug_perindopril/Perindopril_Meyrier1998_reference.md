@@ -32,8 +32,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Meyrier A et al., Fixed low-dose perindopril-indapamide c…, American journal of hyperte… (1998)
   ·  DOI: [10.1016/s0895-7061(98)00128-9](https://doi.org/10.1016/s0895-7061(98)00128-9)
 
-## Model component
-<dbs-pgx drug="perindopril" model-id="Perindopril_Meyrier1998_reference" status="rejected" stale="true" population="hypertensive patients with chronic renal failure" measured-compound="perindoprilat" parameterization="mechanistic" topology="parent_metabolite"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="perindopril" model-id="Perindopril_Meyrier1998_reference" status="rejected" stale="true" population="hypertensive patients with chronic renal failure" measured-compound="perindoprilat" parameterization="mechanistic" topology="parent_metabolite"></div>
 
 **Model structure:** parent + metabolite; no model was built for this record.  
 **Parameters:** 0 extracted.

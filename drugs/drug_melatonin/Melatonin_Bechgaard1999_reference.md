@@ -23,8 +23,7 @@
 Bechgaard E et al., Intranasal absorption of melatonin in v…, International journal of ph… (1999)
   ·  DOI: [10.1016/s0378-5173(99)00019-8](https://doi.org/10.1016/s0378-5173(99)00019-8)
 
-## Model component
-<dbs-pgx drug="melatonin" model-id="Melatonin_Bechgaard1999_reference" status="needs_review" stale="false" population="rabbits" measured-compound="melatonin" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="melatonin" model-id="Melatonin_Bechgaard1999_reference" status="needs_review" stale="false" population="rabbits" measured-compound="melatonin" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 6 extracted.

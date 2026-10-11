@@ -23,8 +23,7 @@
 Onita T et al., Pulmonary Pharmacokinetic and Pharmacod…, Antibiotics (Basel, Switzer… (2023)
   ·  DOI: [10.3390/antibiotics12020303](https://doi.org/10.3390/antibiotics12020303)
 
-## Model component
-<dbs-pgx drug="ampicillin" model-id="Ampicillin_Onita2023_sulbactam" status="extracted" stale="false" population="typical patients with various creatinine clearances" measured-compound="ampicillin" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="ampicillin" model-id="Ampicillin_Onita2023_sulbactam" status="extracted" stale="false" population="typical patients with various creatinine clearances" measured-compound="ampicillin" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment, oral mammillary model — template `PK_2C_enteral`.  
 **Parameters:** 6 extracted.

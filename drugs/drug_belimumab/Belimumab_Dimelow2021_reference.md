@@ -20,8 +20,7 @@
 Dimelow R et al., Pharmacokinetics of Belimumab in Childr…, Clinical pharmacology in dr… (2021)
   ·  DOI: [10.1002/cpdd.889](https://doi.org/10.1002/cpdd.889)
 
-## Model component
-<dbs-pgx drug="belimumab" model-id="Belimumab_Dimelow2021_reference" status="rejected" stale="false" population="paediatric patients with childhood-onset systemic lupus erythematosus (cSLE)" measured-compound="belimumab" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="belimumab" model-id="Belimumab_Dimelow2021_reference" status="rejected" stale="false" population="paediatric patients with childhood-onset systemic lupus erythematosus (cSLE)" measured-compound="belimumab" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

@@ -29,8 +29,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on paramet
 Dong Q et al., Understanding adefovir pharmacokinetics…, European journal of clinica… (2024)
   ·  DOI: [10.1007/s00228-024-03673-x](https://doi.org/10.1007/s00228-024-03673-x)
 
-## Model component
-<dbs-pgx drug="digoxin" model-id="Digoxin_Dong2024_reference" status="extracted" stale="true" population="" measured-compound="digoxin" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="digoxin" model-id="Digoxin_Dong2024_reference" status="extracted" stale="true" population="" measured-compound="digoxin" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 3 extracted.

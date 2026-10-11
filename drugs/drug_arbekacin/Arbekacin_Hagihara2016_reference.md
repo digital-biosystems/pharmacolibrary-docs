@@ -21,8 +21,7 @@
 Hagihara M et al., Population pharmacokinetics of arbekaci…, Journal of infection and ch… (2016)
   ·  DOI: [10.1016/j.jiac.2016.03.008](https://doi.org/10.1016/j.jiac.2016.03.008)
 
-## Model component
-<dbs-pgx drug="arbekacin" model-id="Arbekacin_Hagihara2016_reference" status="rejected" stale="false" population="patients with infectious diseases" measured-compound="arbekacin" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="arbekacin" model-id="Arbekacin_Hagihara2016_reference" status="rejected" stale="false" population="patients with infectious diseases" measured-compound="arbekacin" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

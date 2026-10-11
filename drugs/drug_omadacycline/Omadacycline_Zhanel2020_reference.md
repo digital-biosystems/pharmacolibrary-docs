@@ -21,8 +21,7 @@
 Zhanel GG et al., Omadacycline: A Novel Oral and Intraven…, Drugs (2020)
   ·  DOI: [10.1007/s40265-020-01257-4](https://doi.org/10.1007/s40265-020-01257-4)
 
-## Model component
-<dbs-pgx drug="omadacycline" model-id="Omadacycline_Zhanel2020_reference" status="needs_review" stale="false" population="healthy subjects" measured-compound="omadacycline" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="omadacycline" model-id="Omadacycline_Zhanel2020_reference" status="needs_review" stale="false" population="healthy subjects" measured-compound="omadacycline" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 7 extracted.

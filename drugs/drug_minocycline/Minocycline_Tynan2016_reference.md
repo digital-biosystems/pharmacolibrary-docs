@@ -33,8 +33,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on how the
 Tynan BE et al., Pharmacokinetics of minocycline in dome…, Journal of feline medicine… (2016)
   ·  DOI: [10.1177/1098612X15579114](https://doi.org/10.1177/1098612X15579114)
 
-## Model component
-<dbs-pgx drug="minocycline" model-id="Minocycline_Tynan2016_reference" status="extracted" stale="true" population="domestic cats" measured-compound="minocycline" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="minocycline" model-id="Minocycline_Tynan2016_reference" status="extracted" stale="true" population="domestic cats" measured-compound="minocycline" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameters:** 6 extracted.

@@ -21,8 +21,7 @@
 McGuire EA et al., Effects of arterial versus venous sampl…, Journal of applied physiolo… (1976)
   ·  DOI: [10.1152/jappl.1976.41.4.565](https://doi.org/10.1152/jappl.1976.41.4.565)
 
-## Model component
-<dbs-pgx drug="glucose" model-id="Glucose_McGuire1976_reference" status="rejected" stale="false" population="man" measured-compound="glucose" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="glucose" model-id="Glucose_McGuire1976_reference" status="rejected" stale="false" population="man" measured-compound="glucose" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

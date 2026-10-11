@@ -21,8 +21,7 @@
 Zhou H et al., Population PK and PK/PD modelling of mi…, British journal of clinical… (2000)
   ·  DOI: [10.1046/j.1365-2125.2000.00297.x](https://doi.org/10.1046/j.1365-2125.2000.00297.x)
 
-## Model component
-<dbs-pgx drug="octreotide" model-id="Octreotide_Zhou2000_reference" status="rejected" stale="false" population="healthy cholecystectomized subjects" measured-compound="octreotide" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="octreotide" model-id="Octreotide_Zhou2000_reference" status="rejected" stale="false" population="healthy cholecystectomized subjects" measured-compound="octreotide" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 2 extracted.

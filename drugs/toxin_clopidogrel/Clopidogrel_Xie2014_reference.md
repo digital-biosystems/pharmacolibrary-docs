@@ -22,8 +22,7 @@
 ## Citation
 Xie C; Ding XL; Xue L; Jiang B; Hang YF; Gao J; et al. et al. (2014). Yao xue xue bao = Acta pharmaceutica Sinica 49
 
-## Model component
-<dbs-pgx drug="clopidogrel" model-id="Clopidogrel_Xie2014_reference" status="rejected" stale="true" population="patients with acute coronary syndrome" measured-compound="clopidogrel active metabolite" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="clopidogrel" model-id="Clopidogrel_Xie2014_reference" status="rejected" stale="true" population="patients with acute coronary syndrome" measured-compound="clopidogrel active metabolite" parameterization="apparent" topology="1C"></div>
 
 **Parameterization:** CL/F, V/F — apparent, F unknown (apparent — bioavailability not identifiable).
 

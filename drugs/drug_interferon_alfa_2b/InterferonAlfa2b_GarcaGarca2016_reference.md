@@ -23,8 +23,7 @@
 García-García I et al., Pharmacokinetic and pharmacodynamic cha…, BMC pharmacology & toxicolo… (2016)
   ·  DOI: [10.1186/s40360-016-0103-8](https://doi.org/10.1186/s40360-016-0103-8)
 
-## Model component
-<dbs-pgx drug="interferon alfa-2b" model-id="InterferonAlfa2b_GarcaGarca2016_reference" status="extracted" stale="false" population="healthy male volunteers" measured-compound="interferon_alfa_2b" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="interferon alfa-2b" model-id="InterferonAlfa2b_GarcaGarca2016_reference" status="extracted" stale="false" population="healthy male volunteers" measured-compound="interferon_alfa_2b" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 5 extracted.

@@ -20,8 +20,7 @@
 Hibma JE et al., Elranatamab Population Pharmacokinetics…, Clinical pharmacokinetics (2026)
   ·  DOI: [10.1007/s40262-026-01663-z](https://doi.org/10.1007/s40262-026-01663-z)
 
-## Model component
-<dbs-pgx drug="elranatamab" model-id="Elranatamab_Hibma2026_reference" status="rejected" stale="false" population="patients with relapsed or refractory multiple myeloma" measured-compound="elranatamab" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="elranatamab" model-id="Elranatamab_Hibma2026_reference" status="rejected" stale="false" population="patients with relapsed or refractory multiple myeloma" measured-compound="elranatamab" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment; no model was built for this record.  
 **Parameters:** 7 extracted, plus 2 covariate effects.

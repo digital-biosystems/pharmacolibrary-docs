@@ -29,8 +29,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on paramet
 Gaspar F et al., Improving Understanding of Fexofenadine…, Clinical pharmacokinetics (2025)
   ·  DOI: [10.1007/s40262-024-01470-4](https://doi.org/10.1007/s40262-024-01470-4)
 
-## Model component
-<dbs-pgx drug="omeprazole" model-id="Omeprazole_Gaspar2025_reference" status="needs_review" stale="false" population="" measured-compound="omeprazole" parameterization="apparent" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="omeprazole" model-id="Omeprazole_Gaspar2025_reference" status="needs_review" stale="false" population="" measured-compound="omeprazole" parameterization="apparent" topology="2C"></div>
 
 **Model structure:** 2-compartment, oral mammillary model — template `PK_2C_enteral`.  
 **Parameters:** 4 extracted.

@@ -28,8 +28,7 @@ Independently confirmed by `gpt-oss:120b`.
 Dhawan S et al., Bioavailability of immediate- and exten…, Clinical pharmacokinetics (2006)
   ·  DOI: [10.2165/00003088-200645030-00007](https://doi.org/10.2165/00003088-200645030-00007)
 
-## Model component
-<dbs-pgx drug="glipizide" model-id="Glipizide_Dhawan2006_reference" status="rejected" stale="false" population="healthy male volunteers" measured-compound="glipizide" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="glipizide" model-id="Glipizide_Dhawan2006_reference" status="rejected" stale="false" population="healthy male volunteers" measured-compound="glipizide" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

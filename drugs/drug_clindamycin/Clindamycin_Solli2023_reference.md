@@ -23,8 +23,7 @@
 Solli CN et al., Plasma concentration of orally administ…, The Journal of antimicrobia… (2023)
   ·  DOI: [10.1093/jac/dkad002](https://doi.org/10.1093/jac/dkad002)
 
-## Model component
-<dbs-pgx drug="clindamycin" model-id="Clindamycin_Solli2023_reference" status="rejected" stale="false" population="adults receiving chronic haemodialysis" measured-compound="clindamycin and amoxicillin" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="clindamycin" model-id="Clindamycin_Solli2023_reference" status="rejected" stale="false" population="adults receiving chronic haemodialysis" measured-compound="clindamycin and amoxicillin" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 1 extracted.

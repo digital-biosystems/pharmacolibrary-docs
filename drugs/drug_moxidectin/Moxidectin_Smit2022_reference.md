@@ -21,8 +21,7 @@
 Smit C et al., Characterization of the Population Phar…, Clinical pharmacokinetics (2022)
   ·  DOI: [10.1007/s40262-021-01048-4](https://doi.org/10.1007/s40262-021-01048-4)
 
-## Model component
-<dbs-pgx drug="moxidectin" model-id="Moxidectin_Smit2022_reference" status="extracted" stale="false" population="adults infected with Strongyloides stercoralis" measured-compound="moxidectin" parameterization="apparent" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="moxidectin" model-id="Moxidectin_Smit2022_reference" status="extracted" stale="false" population="adults infected with Strongyloides stercoralis" measured-compound="moxidectin" parameterization="apparent" topology="2C"></div>
 
 **Model structure:** 2-compartment, oral mammillary model — template `PK_2C_enteral`.  
 **Parameters:** 6 extracted, plus 4 covariate effects.

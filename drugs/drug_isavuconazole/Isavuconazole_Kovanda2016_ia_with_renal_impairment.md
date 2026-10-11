@@ -23,8 +23,7 @@
 Kovanda LL et al., Isavuconazole Population Pharmacokineti…, Antimicrobial agents and ch… (2016)
   ·  DOI: [10.1128/AAC.00514-16](https://doi.org/10.1128/AAC.00514-16)
 
-## Model component
-<dbs-pgx drug="isavuconazole" model-id="Isavuconazole_Kovanda2016_ia_with_renal_impairment" status="extracted" stale="false" population="patients with invasive fungal disease" measured-compound="isavuconazole" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="isavuconazole" model-id="Isavuconazole_Kovanda2016_ia_with_renal_impairment" status="extracted" stale="false" population="patients with invasive fungal disease" measured-compound="isavuconazole" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 3 extracted.

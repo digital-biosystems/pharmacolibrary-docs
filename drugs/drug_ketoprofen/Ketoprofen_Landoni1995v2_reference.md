@@ -23,8 +23,7 @@
 Landoni MF et al., Pharmacokinetics and pharmacodynamics o…, Chirality (1995)
   ·  DOI: [10.1002/chir.530070806](https://doi.org/10.1002/chir.530070806)
 
-## Model component
-<dbs-pgx drug="ketoprofen" model-id="Ketoprofen_Landoni1995v2_reference" status="needs_review" stale="false" population="calves" measured-compound="ketoprofen" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="ketoprofen" model-id="Ketoprofen_Landoni1995v2_reference" status="needs_review" stale="false" population="calves" measured-compound="ketoprofen" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 4 extracted.

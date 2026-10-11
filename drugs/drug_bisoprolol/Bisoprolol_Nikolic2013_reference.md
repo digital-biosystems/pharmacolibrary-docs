@@ -29,8 +29,7 @@ Independently confirmed by `gpt-oss:120b`.
 ValentinaNNikolic valentina@medfak.ni.ac.rs et al., PHARMACOKINETICS AND DISPOSITION Popula… (2013)
   ·  DOI: [10.1007/s00228-012-1427-y](https://doi.org/10.1007/s00228-012-1427-y)
 
-## Model component
-<dbs-pgx drug="bisoprolol" model-id="Bisoprolol_Nikolic2013_reference" status="model_quarantined" stale="false" population="patients with chronic heart failure" measured-compound="bisoprolol" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="bisoprolol" model-id="Bisoprolol_Nikolic2013_reference" status="model_quarantined" stale="false" population="patients with chronic heart failure" measured-compound="bisoprolol" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 3 extracted.

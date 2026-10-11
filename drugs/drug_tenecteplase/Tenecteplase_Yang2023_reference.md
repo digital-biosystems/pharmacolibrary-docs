@@ -26,8 +26,7 @@ The paper reports no distribution volume and no clearance or elimination rate; i
 Yang Y et al., In Silico Study of Different Thrombolyt…, Pharmaceutics (2023)
   ·  DOI: [10.3390/pharmaceutics15030797](https://doi.org/10.3390/pharmaceutics15030797)
 
-## Model component
-<dbs-pgx drug="tenecteplase" model-id="Tenecteplase_Yang2023_reference" status="rejected" stale="false" population="adults with acute ischemic stroke" measured-compound="alteplase, urokinase, tenecteplase, reteplase" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="tenecteplase" model-id="Tenecteplase_Yang2023_reference" status="rejected" stale="false" population="adults with acute ischemic stroke" measured-compound="alteplase, urokinase, tenecteplase, reteplase" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 3 extracted.

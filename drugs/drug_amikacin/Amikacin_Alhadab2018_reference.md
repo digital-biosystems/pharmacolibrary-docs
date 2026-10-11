@@ -29,8 +29,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the val
 Alhadab AA et al., Amikacin Pharmacokinetic-Pharmacodynami…, Antimicrobial agents and ch… (2018)
   ·  DOI: [10.1128/AAC.01781-17](https://doi.org/10.1128/AAC.01781-17)
 
-## Model component
-<dbs-pgx drug="amikacin" model-id="Amikacin_Alhadab2018_reference" status="needs_review" stale="false" population="pediatric cancer patients" measured-compound="amikacin" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="amikacin" model-id="Amikacin_Alhadab2018_reference" status="needs_review" stale="false" population="pediatric cancer patients" measured-compound="amikacin" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 4 extracted.

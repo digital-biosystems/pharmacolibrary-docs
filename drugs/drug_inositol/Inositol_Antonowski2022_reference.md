@@ -23,8 +23,7 @@
 Antonowski T et al., Pharmacokinetics of, International journal of mo… (2022)
   ·  DOI: [10.3390/ijms231911246](https://doi.org/10.3390/ijms231911246)
 
-## Model component
-<dbs-pgx drug="inositol" model-id="Inositol_Antonowski2022_reference" status="rejected" stale="false" population="Wistar rats" measured-compound="myo-inositol" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="inositol" model-id="Inositol_Antonowski2022_reference" status="rejected" stale="false" population="Wistar rats" measured-compound="myo-inositol" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 7 extracted.

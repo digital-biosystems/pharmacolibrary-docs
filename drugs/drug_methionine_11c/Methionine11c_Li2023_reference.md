@@ -24,8 +24,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Li J et al., Metabolic kinetic modeling of [, European journal of nuclear… (2023)
   ·  DOI: [10.1007/s00259-023-06219-y](https://doi.org/10.1007/s00259-023-06219-y)
 
-## Model component
-<dbs-pgx drug="methionine (11C)" model-id="Methionine11c_Li2023_reference" status="rejected" stale="false" population="adults with multiple myeloma and healthy controls" measured-compound="methionine_11c" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="methionine (11C)" model-id="Methionine11c_Li2023_reference" status="rejected" stale="false" population="adults with multiple myeloma and healthy controls" measured-compound="methionine_11c" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

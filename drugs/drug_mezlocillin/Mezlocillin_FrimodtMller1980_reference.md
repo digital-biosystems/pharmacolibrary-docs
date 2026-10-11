@@ -21,8 +21,7 @@
 Frimodt-Möller N et al., Mezlocillin pharmacokinetics after sing…, Antimicrobial agents and ch… (1980)
   ·  DOI: [10.1128/AAC.17.4.599](https://doi.org/10.1128/AAC.17.4.599)
 
-## Model component
-<dbs-pgx drug="mezlocillin" model-id="Mezlocillin_FrimodtMller1980_reference" status="extracted" stale="false" population="patients with varying degrees of renal function" measured-compound="mezlocillin" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="mezlocillin" model-id="Mezlocillin_FrimodtMller1980_reference" status="extracted" stale="false" population="patients with varying degrees of renal function" measured-compound="mezlocillin" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameters:** 3 extracted.

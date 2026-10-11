@@ -23,8 +23,7 @@
 Wang LL et al., An Experimental Pharmacokinetics Study…, Journal of analytical toxic… (2020)
   ·  DOI: [10.1093/jat/bkz101](https://doi.org/10.1093/jat/bkz101)
 
-## Model component
-<dbs-pgx drug="nordazepam" model-id="Nordazepam_Wang2020v2_reference" status="rejected" stale="false" population="healthy Chinese adults" measured-compound="nordazepam" parameterization="mechanistic" topology="parent_metabolite"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="nordazepam" model-id="Nordazepam_Wang2020v2_reference" status="rejected" stale="false" population="healthy Chinese adults" measured-compound="nordazepam" parameterization="mechanistic" topology="parent_metabolite"></div>
 
 **Model structure:** parent + metabolite; no model was built for this record.  
 **Parameters:** 0 extracted.

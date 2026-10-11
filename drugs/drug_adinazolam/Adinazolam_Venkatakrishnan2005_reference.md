@@ -23,8 +23,7 @@
 Venkatakrishnan K et al., Kinetics and dynamics of intravenous ad…, Journal of clinical pharmac… (2005)
   ·  DOI: [10.1177/0091270004269105](https://doi.org/10.1177/0091270004269105)
 
-## Model component
-<dbs-pgx drug="adinazolam" model-id="Adinazolam_Venkatakrishnan2005_reference" status="extracted" stale="false" population="healthy male volunteers" measured-compound="N-desmethyl adinazolam" parameterization="apparent" topology="parent_metabolite"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="adinazolam" model-id="Adinazolam_Venkatakrishnan2005_reference" status="extracted" stale="false" population="healthy male volunteers" measured-compound="N-desmethyl adinazolam" parameterization="apparent" topology="parent_metabolite"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 9 extracted.

@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Bartolucci R et al., A Population Pharmacokinetic Model of M…, Clinical pharmacokinetics (2021)
   ·  DOI: [10.1007/s40262-021-01049-3](https://doi.org/10.1007/s40262-021-01049-3)
 
-## Model component
-<dbs-pgx drug="macitentan" model-id="Macitentan_Bartolucci2021_reference" status="extracted" stale="true" population="healthy adults and adult subjects with pulmonary arterial hypertension" measured-compound="macitentan" parameterization="apparent" topology="parent_metabolite"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="macitentan" model-id="Macitentan_Bartolucci2021_reference" status="extracted" stale="true" population="healthy adults and adult subjects with pulmonary arterial hypertension" measured-compound="macitentan" parameterization="apparent" topology="parent_metabolite"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 5 extracted.

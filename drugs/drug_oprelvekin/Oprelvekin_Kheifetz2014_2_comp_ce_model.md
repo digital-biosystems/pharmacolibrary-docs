@@ -21,8 +21,7 @@
 Kheifetz Y et al., Complex pattern of interleukin-11-induc…, Journal of pharmacokinetics… (2014)
   ·  DOI: [10.1007/s10928-014-9383-z](https://doi.org/10.1007/s10928-014-9383-z)
 
-## Model component
-<dbs-pgx drug="oprelvekin" model-id="Oprelvekin_Kheifetz2014_2_comp_ce_model" status="extracted" stale="false" population="healthy males" measured-compound="oprelvekin" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="oprelvekin" model-id="Oprelvekin_Kheifetz2014_2_comp_ce_model" status="extracted" stale="false" population="healthy males" measured-compound="oprelvekin" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment, oral mammillary model — template `PK_2C_enteral`.  
 **Parameters:** 5 extracted.

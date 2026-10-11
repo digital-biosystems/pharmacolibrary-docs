@@ -27,8 +27,7 @@ The values on this record come from other papers. Extracted — methotrexate: CL
 Simon N et al., Distribution-based covariate assessment…, Frontiers in pharmacology (2026)
   ·  DOI: [10.3389/fphar.2026.1804989](https://doi.org/10.3389/fphar.2026.1804989)
 
-## Model component
-<dbs-pgx drug="methotrexate" model-id="Methotrexate_Simon2026_reference" status="rejected" stale="false" population="patients with lymphoid malignancies" measured-compound="methotrexate" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="methotrexate" model-id="Methotrexate_Simon2026_reference" status="rejected" stale="false" population="patients with lymphoid malignancies" measured-compound="methotrexate" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

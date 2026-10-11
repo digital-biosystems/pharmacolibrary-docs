@@ -33,8 +33,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Abadía AR et al., Disposition of ciprofloxacin following…, Journal of veterinary pharm… (1994)
   ·  DOI: [10.1111/j.1365-2885.1994.tb00264.x](https://doi.org/10.1111/j.1365-2885.1994.tb00264.x)
 
-## Model component
-<dbs-pgx drug="ciprofloxacin" model-id="Ciprofloxacin_Abada1994_reference" status="needs_review" stale="true" population="dogs" measured-compound="ciprofloxacin" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="ciprofloxacin" model-id="Ciprofloxacin_Abada1994_reference" status="needs_review" stale="true" population="dogs" measured-compound="ciprofloxacin" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 6 extracted.

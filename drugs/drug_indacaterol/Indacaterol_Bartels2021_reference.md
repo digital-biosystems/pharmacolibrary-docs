@@ -23,8 +23,7 @@
 Bartels C et al., Population Pharmacokinetic Analysis of…, European journal of drug me… (2021)
   ·  DOI: [10.1007/s13318-021-00689-x](https://doi.org/10.1007/s13318-021-00689-x)
 
-## Model component
-<dbs-pgx drug="indacaterol" model-id="Indacaterol_Bartels2021_reference" status="rejected" stale="false" population="patients with asthma" measured-compound="indacaterol" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="indacaterol" model-id="Indacaterol_Bartels2021_reference" status="rejected" stale="false" population="patients with asthma" measured-compound="indacaterol" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 2 extracted, plus 2 covariate effects.

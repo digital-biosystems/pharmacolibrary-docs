@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Diris JH et al., Pharmacokinetics of C1-inhibitor protei…, Clinical pharmacology and t… (2002)
   ·  DOI: [10.1067/mcp.2002.129320](https://doi.org/10.1067/mcp.2002.129320)
 
-## Model component
-<dbs-pgx drug="c1-inhibitor, plasma derived" model-id="C1InhibitorPlasmaDerived_Diris2002_reference" status="needs_review" stale="true" population="patients with acute myocardial infarction" measured-compound="C1-inhibitor" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="c1-inhibitor, plasma derived" model-id="C1InhibitorPlasmaDerived_Diris2002_reference" status="needs_review" stale="true" population="patients with acute myocardial infarction" measured-compound="C1-inhibitor" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment; no model was built for this record.  
 **Parameters:** 2 extracted.

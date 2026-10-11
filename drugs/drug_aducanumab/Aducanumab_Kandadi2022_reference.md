@@ -20,8 +20,7 @@
 Kandadi Muralidharan K et al., Population pharmacokinetics and standar…, CPT: pharmacometrics & syst… (2022)
   ·  DOI: [10.1002/psp4.12728](https://doi.org/10.1002/psp4.12728)
 
-## Model component
-<dbs-pgx drug="aducanumab" model-id="Aducanumab_Kandadi2022_reference" status="rejected" stale="false" population="patients with early Alzheimer&#39;s disease" measured-compound="aducanumab" parameterization="mechanistic" topology="parent_metabolite"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="aducanumab" model-id="Aducanumab_Kandadi2022_reference" status="rejected" stale="false" population="patients with early Alzheimer&#39;s disease" measured-compound="aducanumab" parameterization="mechanistic" topology="parent_metabolite"></div>
 
 **Model structure:** parent + metabolite; no model was built for this record.  
 **Parameters:** 0 extracted, plus 4 covariate effects.

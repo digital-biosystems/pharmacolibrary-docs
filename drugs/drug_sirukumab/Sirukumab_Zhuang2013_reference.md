@@ -21,8 +21,7 @@
 Zhuang Y et al., Pharmacokinetics and safety of sirukuma…, International journal of cl… (2013)
   ·  DOI: [10.5414/CP201785](https://doi.org/10.5414/CP201785)
 
-## Model component
-<dbs-pgx drug="sirukumab" model-id="Sirukumab_Zhuang2013_reference" status="extracted" stale="false" population="healthy Japanese and Caucasian adults" measured-compound="sirukumab" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="sirukumab" model-id="Sirukumab_Zhuang2013_reference" status="extracted" stale="false" population="healthy Japanese and Caucasian adults" measured-compound="sirukumab" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 3 extracted.

@@ -35,8 +35,7 @@ Independently confirmed by `gpt-oss:120b`.
 Shimizu R et al., The pharmacokinetic-pharmacodynamic ass…, Drug metabolism and pharmac… (2012)
   ·  DOI: [10.2133/dmpk.dmpk-11-rg-060](https://doi.org/10.2133/dmpk.dmpk-11-rg-060)
 
-## Model component
-<dbs-pgx drug="hydrochlorothiazide" model-id="Hydrochlorothiazide_Shimizu2012_reference" status="rejected" stale="true" population="spontaneously hypertensive rats" measured-compound="losartan" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="hydrochlorothiazide" model-id="Hydrochlorothiazide_Shimizu2012_reference" status="rejected" stale="true" population="spontaneously hypertensive rats" measured-compound="losartan" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

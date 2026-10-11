@@ -33,8 +33,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Bukkems LH et al., Population pharmacokinetics of the von…, Blood advances (2021)
   ·  DOI: [10.1182/bloodadvances.2020003891](https://doi.org/10.1182/bloodadvances.2020003891)
 
-## Model component
-<dbs-pgx drug="von Willebrand factor" model-id="VonWillebrandFactor_Bukkems2021_base" status="needs_review" stale="true" population="perioperative patients with von Willebrand disease" measured-compound="von Willebrand factor" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="von Willebrand factor" model-id="VonWillebrandFactor_Bukkems2021_base" status="needs_review" stale="true" population="perioperative patients with von Willebrand disease" measured-compound="von Willebrand factor" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 4 extracted.

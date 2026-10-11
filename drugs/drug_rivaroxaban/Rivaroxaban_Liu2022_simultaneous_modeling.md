@@ -33,8 +33,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Liu XQ et al., Population pharmacokinetic and pharmaco…, Acta pharmacologica Sinica (2022)
   ·  DOI: [10.1038/s41401-022-00892-9](https://doi.org/10.1038/s41401-022-00892-9)
 
-## Model component
-<dbs-pgx drug="rivaroxaban" model-id="Rivaroxaban_Liu2022_simultaneous_modeling" status="extracted" stale="true" population="Chinese patients with non-valvular atrial fibrillation" measured-compound="rivaroxaban" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="rivaroxaban" model-id="Rivaroxaban_Liu2022_simultaneous_modeling" status="extracted" stale="true" population="Chinese patients with non-valvular atrial fibrillation" measured-compound="rivaroxaban" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 3 extracted, plus 2 covariate effects.

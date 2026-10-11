@@ -31,8 +31,7 @@ The record defines a two-compartment structure for meloxicam with central and pe
 Uslu M et al., Effect of Meloxicam on the Pharmacokine…, Veterinary medicine and sci… (2025)
   ·  DOI: [10.1002/vms3.70462](https://doi.org/10.1002/vms3.70462)
 
-## Model component
-<dbs-pgx drug="meloxicam" model-id="Meloxicam_Uslu2025_reference" status="rejected" stale="true" population="" measured-compound="meloxicam" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="meloxicam" model-id="Meloxicam_Uslu2025_reference" status="rejected" stale="true" population="" measured-compound="meloxicam" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment; no model was built for this record.  
 **Parameters:** 3 extracted.

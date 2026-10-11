@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on paramet
 Kudo S et al., Pharmacokinetics of haloperidol: an upd…, Clinical pharmacokinetics (1999)
   ·  DOI: [10.2165/00003088-199937060-00001](https://doi.org/10.2165/00003088-199937060-00001)
 
-## Model component
-<dbs-pgx drug="carbamazepine" model-id="Carbamazepine_Kudo1999_reference" status="needs_review" stale="false" population="unknown" measured-compound="carbamazepine" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="carbamazepine" model-id="Carbamazepine_Kudo1999_reference" status="needs_review" stale="false" population="unknown" measured-compound="carbamazepine" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 2 extracted.

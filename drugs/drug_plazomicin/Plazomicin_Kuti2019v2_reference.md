@@ -21,8 +21,7 @@
 Kuti JL et al., Evaluation of Plazomicin, Tigecycline,…, Infectious diseases and the… (2019)
   ·  DOI: [10.1007/s40121-019-0251-4](https://doi.org/10.1007/s40121-019-0251-4)
 
-## Model component
-<dbs-pgx drug="plazomicin" model-id="Plazomicin_Kuti2019v2_reference" status="extracted" stale="false" population="" measured-compound="plazomicin" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="plazomicin" model-id="Plazomicin_Kuti2019v2_reference" status="extracted" stale="false" population="" measured-compound="plazomicin" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameters:** 2 extracted.

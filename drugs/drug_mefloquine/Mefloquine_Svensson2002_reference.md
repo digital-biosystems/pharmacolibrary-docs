@@ -23,8 +23,7 @@
 Svensson US et al., Population pharmacokinetic and pharmaco…, European journal of clinica… (2002)
   ·  DOI: [10.1007/s00228-002-0485-y](https://doi.org/10.1007/s00228-002-0485-y)
 
-## Model component
-<dbs-pgx drug="mefloquine" model-id="Mefloquine_Svensson2002_reference" status="needs_review" stale="false" population="patients with falciparum malaria" measured-compound="mefloquine enantiomers" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="mefloquine" model-id="Mefloquine_Svensson2002_reference" status="needs_review" stale="false" population="patients with falciparum malaria" measured-compound="mefloquine enantiomers" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 4 extracted.

@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Chen R et al., Population pharmacokinetics of digoxin…, European journal of drug me… (2013)
   ·  DOI: [10.1007/s13318-012-0107-8](https://doi.org/10.1007/s13318-012-0107-8)
 
-## Model component
-<dbs-pgx drug="digoxin" model-id="Digoxin_Chen2013_reference" status="rejected" stale="true" population="elderly patients" measured-compound="digoxin" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="digoxin" model-id="Digoxin_Chen2013_reference" status="rejected" stale="true" population="elderly patients" measured-compound="digoxin" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

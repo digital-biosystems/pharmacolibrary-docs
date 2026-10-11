@@ -20,8 +20,7 @@
 Keunecke A et al., Population pharmacokinetics of regorafe…, British journal of clinical… (2020)
   ·  DOI: [10.1111/bcp.14334](https://doi.org/10.1111/bcp.14334)
 
-## Model component
-<dbs-pgx drug="regorafenib" model-id="Regorafenib_Keunecke2020_reference" status="extracted" stale="false" population="patients with advanced solid tumours" measured-compound="regorafenib" parameterization="apparent" topology="general_linear"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="regorafenib" model-id="Regorafenib_Keunecke2020_reference" status="extracted" stale="false" population="patients with advanced solid tumours" measured-compound="regorafenib" parameterization="apparent" topology="general_linear"></div>
 
 **Model structure:** 3-compartment general linear model (non-mammillary edges) — template `PK_General_Linear`.  
 **Parameters:** 13 extracted, plus 4 covariate effects.

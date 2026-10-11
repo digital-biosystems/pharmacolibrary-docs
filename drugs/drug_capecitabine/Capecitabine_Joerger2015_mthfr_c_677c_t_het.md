@@ -27,8 +27,7 @@ Nothing in the extracted data describes the drug's disposition, so there is no m
 Joerger M et al., Germline TYMS genotype is highly predic…, Cancer chemotherapy and pha… (2015)
   ·  DOI: [10.1007/s00280-015-2698-7](https://doi.org/10.1007/s00280-015-2698-7)
 
-## Model component
-<dbs-pgx drug="capecitabine" model-id="Capecitabine_Joerger2015_mthfr_c_677c_t_het" status="rejected" stale="false" population="patients with metastatic gastrointestinal malignancies" measured-compound="capecitabine" parameterization="mechanistic" topology="general_linear"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="capecitabine" model-id="Capecitabine_Joerger2015_mthfr_c_677c_t_het" status="rejected" stale="false" population="patients with metastatic gastrointestinal malignancies" measured-compound="capecitabine" parameterization="mechanistic" topology="general_linear"></div>
 
 **Model structure:** general linear; no model was built for this record.  
 **Parameters:** 0 extracted.

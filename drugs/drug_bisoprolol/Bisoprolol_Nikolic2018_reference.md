@@ -29,8 +29,7 @@ Independently confirmed by `gpt-oss:120b`.
 ValentinaNNikolic valentina@medfak.ni.ac.rs Ó Springer International Publishing Switzerland et al., Population Pharmacokinetic Analysis of… (2017)
   ·  DOI: [10.1007/s13318-017-0414-1](https://doi.org/10.1007/s13318-017-0414-1)
 
-## Model component
-<dbs-pgx drug="bisoprolol" model-id="Bisoprolol_Nikolic2018_reference" status="needs_review" stale="false" population="patients with stable coronary artery disease" measured-compound="bisoprolol" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="bisoprolol" model-id="Bisoprolol_Nikolic2018_reference" status="needs_review" stale="false" population="patients with stable coronary artery disease" measured-compound="bisoprolol" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 4 extracted.

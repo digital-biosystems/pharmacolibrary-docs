@@ -23,8 +23,7 @@
 Huntjens DR et al., Correlation between in vitro and in viv…, British journal of pharmaco… (2006)
   ·  DOI: [10.1038/sj.bjp.0706737](https://doi.org/10.1038/sj.bjp.0706737)
 
-## Model component
-<dbs-pgx drug="naproxen" model-id="Naproxen_Huntjens2006_reference" status="rejected" stale="false" population="" measured-compound="naproxen" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="naproxen" model-id="Naproxen_Huntjens2006_reference" status="rejected" stale="false" population="" measured-compound="naproxen" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment; no model was built for this record.  
 **Parameters:** 4 extracted.

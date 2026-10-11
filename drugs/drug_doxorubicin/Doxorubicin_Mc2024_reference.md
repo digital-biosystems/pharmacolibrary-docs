@@ -33,8 +33,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Mc Laughlin AM et al., Population pharmacokinetics of TLD-1, a…, Cancer chemotherapy and pha… (2024)
   ·  DOI: [10.1007/s00280-024-04679-z](https://doi.org/10.1007/s00280-024-04679-z)
 
-## Model component
-<dbs-pgx drug="doxorubicin" model-id="Doxorubicin_Mc2024_reference" status="extracted" stale="true" population="adults with advanced solid tumours" measured-compound="doxorubicin (entrapped and free)" parameterization="mechanistic" topology="general_linear"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="doxorubicin" model-id="Doxorubicin_Mc2024_reference" status="extracted" stale="true" population="adults with advanced solid tumours" measured-compound="doxorubicin (entrapped and free)" parameterization="mechanistic" topology="general_linear"></div>
 
 **Model structure:** 2-compartment general linear model (non-mammillary edges) — template `PK_General_Linear`.  
 **Parameters:** 9 extracted.

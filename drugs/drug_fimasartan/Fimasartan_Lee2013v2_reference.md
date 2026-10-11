@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on how the
 Lee H et al., A Population Pharmacokinetic Analysis o…, Clinical pharmacology in dr… (2013)
   ·  DOI: [10.1002/cpdd.10](https://doi.org/10.1002/cpdd.10)
 
-## Model component
-<dbs-pgx drug="fimasartan" model-id="Fimasartan_Lee2013v2_reference" status="rejected" stale="true" population="healthy Caucasian subjects and Korean patients with hypertension" measured-compound="fimasartan" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="fimasartan" model-id="Fimasartan_Lee2013v2_reference" status="rejected" stale="true" population="healthy Caucasian subjects and Korean patients with hypertension" measured-compound="fimasartan" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

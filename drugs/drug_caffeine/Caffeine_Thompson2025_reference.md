@@ -21,8 +21,7 @@
 Thompson EJ et al., Population Pharmacokinetics of Caffeine…, Journal of clinical pharmac… (2025)
   ·  DOI: [10.1002/jcph.70004](https://doi.org/10.1002/jcph.70004)
 
-## Model component
-<dbs-pgx drug="caffeine" model-id="Caffeine_Thompson2025_reference" status="extracted" stale="false" population="term infants with hypoxic-ischemic encephalopathy" measured-compound="caffeine" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="caffeine" model-id="Caffeine_Thompson2025_reference" status="extracted" stale="false" population="term infants with hypoxic-ischemic encephalopathy" measured-compound="caffeine" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameters:** 2 extracted.

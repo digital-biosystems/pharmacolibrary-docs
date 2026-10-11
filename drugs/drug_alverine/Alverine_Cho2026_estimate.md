@@ -30,8 +30,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Cho A et al., Development of Integrated Parent-Metabo…, CPT: pharmacometrics & syst… (2026)
   ·  DOI: [10.1002/psp4.70342](https://doi.org/10.1002/psp4.70342)
 
-## Model component
-<dbs-pgx drug="alverine" model-id="Alverine_Cho2026_estimate" status="rejected" stale="false" population="mice" measured-compound="alverine" parameterization="mechanistic" topology="general_linear"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="alverine" model-id="Alverine_Cho2026_estimate" status="rejected" stale="false" population="mice" measured-compound="alverine" parameterization="mechanistic" topology="general_linear"></div>
 
 **Model structure:** general linear; no model was built for this record.  
 **Parameters:** 18 extracted.

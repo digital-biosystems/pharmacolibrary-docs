@@ -20,8 +20,7 @@
 Huang W et al., Population Pharmacokinetics of Tiapride…, Drug design, development an… (2026)
   ·  DOI: [10.2147/DDDT.S587387](https://doi.org/10.2147/DDDT.S587387)
 
-## Model component
-<dbs-pgx drug="tiapride" model-id="Tiapride_Huang2026_reference" status="rejected" stale="false" population="children and adolescents with tic disorders" measured-compound="tiapride" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="tiapride" model-id="Tiapride_Huang2026_reference" status="rejected" stale="false" population="children and adolescents with tic disorders" measured-compound="tiapride" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 6 extracted.

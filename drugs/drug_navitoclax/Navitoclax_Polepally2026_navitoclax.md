@@ -20,8 +20,7 @@
 Polepally AR et al., Semi-Mechanistic PK/PD Modeling of Plat…, CPT: pharmacometrics & syst… (2026)
   ·  DOI: [10.1002/psp4.70260](https://doi.org/10.1002/psp4.70260)
 
-## Model component
-<dbs-pgx drug="navitoclax" model-id="Navitoclax_Polepally2026_navitoclax" status="needs_review" stale="false" population="patients with myelofibrosis" measured-compound="navitoclax" parameterization="apparent" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="navitoclax" model-id="Navitoclax_Polepally2026_navitoclax" status="needs_review" stale="false" population="patients with myelofibrosis" measured-compound="navitoclax" parameterization="apparent" topology="2C"></div>
 
 **Model structure:** 2-compartment; no model was built for this record.  
 **Parameters:** 7 extracted.

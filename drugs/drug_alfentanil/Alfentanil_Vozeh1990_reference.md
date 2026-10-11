@@ -31,8 +31,7 @@ Independently confirmed by `gpt-oss:120b`.
 Vozeh S et al., Evaluation of population (NONMEM) pharm…, Journal of pharmacokinetics… (1990)
   ·  DOI: [10.1007/BF01063558](https://doi.org/10.1007/BF01063558)
 
-## Model component
-<dbs-pgx drug="alfentanil" model-id="Alfentanil_Vozeh1990_reference" status="needs_review" stale="true" population="unknown" measured-compound="alfentanil" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="alfentanil" model-id="Alfentanil_Vozeh1990_reference" status="needs_review" stale="true" population="unknown" measured-compound="alfentanil" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 5 extracted.

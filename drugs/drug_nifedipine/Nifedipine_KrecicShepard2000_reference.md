@@ -25,8 +25,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Krecic-Shepard ME et al., Race and sex influence clearance of nif…, Clinical pharmacology and t… (2000)
   ·  DOI: [10.1067/mcp.2000.108678](https://doi.org/10.1067/mcp.2000.108678)
 
-## Model component
-<dbs-pgx drug="nifedipine" model-id="Nifedipine_KrecicShepard2000_reference" status="rejected" stale="false" population="patients with hypertension and coronary artery disease" measured-compound="nifedipine" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="nifedipine" model-id="Nifedipine_KrecicShepard2000_reference" status="rejected" stale="false" population="patients with hypertension and coronary artery disease" measured-compound="nifedipine" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

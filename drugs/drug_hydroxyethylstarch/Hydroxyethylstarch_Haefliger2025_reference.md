@@ -29,8 +29,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on paramet
 Haefliger D et al., Individualization of piperacillin dosag…, The Journal of antimicrobia… (2025)
   ·  DOI: [10.1093/jac/dkaf007](https://doi.org/10.1093/jac/dkaf007)
 
-## Model component
-<dbs-pgx drug="hydroxyethylstarch" model-id="Hydroxyethylstarch_Haefliger2025_reference" status="extracted" stale="true" population="" measured-compound="hydroxyethylstarch" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="hydroxyethylstarch" model-id="Hydroxyethylstarch_Haefliger2025_reference" status="extracted" stale="true" population="" measured-compound="hydroxyethylstarch" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameters:** 2 extracted.

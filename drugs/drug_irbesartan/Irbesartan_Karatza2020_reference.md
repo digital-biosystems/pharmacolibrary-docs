@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Karatza E et al., Delay differential equations for the de…, European journal of pharmac… (2020)
   ·  DOI: [10.1016/j.ejps.2020.105498](https://doi.org/10.1016/j.ejps.2020.105498)
 
-## Model component
-<dbs-pgx drug="irbesartan" model-id="Irbesartan_Karatza2020_reference" status="extracted" stale="true" population="unknown" measured-compound="irbesartan" parameterization="apparent" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="irbesartan" model-id="Irbesartan_Karatza2020_reference" status="extracted" stale="true" population="unknown" measured-compound="irbesartan" parameterization="apparent" topology="2C"></div>
 
 **Model structure:** 2-compartment, oral mammillary model — template `PK_2C_enteral`.  
 **Parameters:** 5 extracted.

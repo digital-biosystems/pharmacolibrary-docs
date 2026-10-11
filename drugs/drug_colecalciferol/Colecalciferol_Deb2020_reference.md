@@ -25,8 +25,7 @@
 Deb S et al., Simulation of Physicochemical and Pharm…, Pharmaceuticals (Basel, Swi… (2020)
   ·  DOI: [10.3390/ph13080160](https://doi.org/10.3390/ph13080160)
 
-## Model component
-<dbs-pgx drug="colecalciferol" model-id="Colecalciferol_Deb2020_reference" status="curated_candidate" stale="false" population="" measured-compound="colecalciferol" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="colecalciferol" model-id="Colecalciferol_Deb2020_reference" status="curated_candidate" stale="false" population="" measured-compound="colecalciferol" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameters:** 2 extracted.

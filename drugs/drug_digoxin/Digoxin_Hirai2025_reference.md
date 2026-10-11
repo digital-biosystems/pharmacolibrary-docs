@@ -25,8 +25,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Hirai T et al., Population pharmacokinetic analysis of…, British journal of clinical… (2025)
   ·  DOI: [10.1002/bcp.70075](https://doi.org/10.1002/bcp.70075)
 
-## Model component
-<dbs-pgx drug="digoxin" model-id="Digoxin_Hirai2025_reference" status="rejected" stale="false" population="Japanese patients with atrial fibrillation and heart failure" measured-compound="digoxin" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="digoxin" model-id="Digoxin_Hirai2025_reference" status="rejected" stale="false" population="Japanese patients with atrial fibrillation and heart failure" measured-compound="digoxin" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 3 extracted.

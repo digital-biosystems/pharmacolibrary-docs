@@ -30,8 +30,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Sadaf A et al., A Population Pharmacokinetic Analysis o…, Clinical pharmacokinetics (2024)
   ·  DOI: [10.1007/s40262-024-01349-4](https://doi.org/10.1007/s40262-024-01349-4)
 
-## Model component
-<dbs-pgx drug="glutamine" model-id="Glutamine_Sadaf2024v2_reference" status="needs_review" stale="true" population="patients with sickle cell disease and healthy volunteers" measured-compound="l-glutamine" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="glutamine" model-id="Glutamine_Sadaf2024v2_reference" status="needs_review" stale="true" population="patients with sickle cell disease and healthy volunteers" measured-compound="l-glutamine" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 4 extracted.

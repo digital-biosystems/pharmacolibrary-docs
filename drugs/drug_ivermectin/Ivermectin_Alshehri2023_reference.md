@@ -21,8 +21,7 @@
 Alshehri A et al., Population pharmacokinetic model of ive…, PLoS neglected tropical dis… (2023)
   ·  DOI: [10.1371/journal.pntd.0011319](https://doi.org/10.1371/journal.pntd.0011319)
 
-## Model component
-<dbs-pgx drug="ivermectin" model-id="Ivermectin_Alshehri2023_reference" status="extracted" stale="false" population="Wuchereria bancrofti-infected and uninfected adults in Côte d’Ivoire" measured-compound="ivermectin" parameterization="apparent" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="ivermectin" model-id="Ivermectin_Alshehri2023_reference" status="extracted" stale="false" population="Wuchereria bancrofti-infected and uninfected adults in Côte d’Ivoire" measured-compound="ivermectin" parameterization="apparent" topology="2C"></div>
 
 **Model structure:** 2-compartment, oral mammillary model — template `PK_2C_enteral`.  
 **Parameters:** 6 extracted, plus 1 covariate effect.

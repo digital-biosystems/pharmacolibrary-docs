@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on bioavai
 Khalil F et al., Population Pharmacokinetics of Tapentad…, Journal of pain research (2020)
   ·  DOI: [10.2147/JPR.S269549](https://doi.org/10.2147/JPR.S269549)
 
-## Model component
-<dbs-pgx drug="tapentadol" model-id="Tapentadol_Khalil2020_final" status="extracted" stale="true" population="children from birth to &lt;18 years old with acute pain" measured-compound="tapentadol" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="tapentadol" model-id="Tapentadol_Khalil2020_final" status="extracted" stale="true" population="children from birth to &lt;18 years old with acute pain" measured-compound="tapentadol" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 6 extracted, plus 3 covariate effects.

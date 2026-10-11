@@ -33,8 +33,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on `parame
 Ieiri I et al., Pharmacokinetic and pharmacogenomic pro…, Pharmacogenetics and genomi… (2011)
   ·  DOI: [10.1097/FPC.0b013e3283489ce2](https://doi.org/10.1097/FPC.0b013e3283489ce2)
 
-## Model component
-<dbs-pgx drug="telmisartan" model-id="Telmisartan_Ieiri2011_reference" status="extracted" stale="true" population="healthy volunteers" measured-compound="telmisartan" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="telmisartan" model-id="Telmisartan_Ieiri2011_reference" status="extracted" stale="true" population="healthy volunteers" measured-compound="telmisartan" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 6 extracted, plus 1 covariate effect.

@@ -29,8 +29,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the val
 Yu H et al., Population Pharmacokinetic-B Cell Model…, CNS drugs (2022)
   ·  DOI: [10.1007/s40263-021-00895-w](https://doi.org/10.1007/s40263-021-00895-w)
 
-## Model component
-<dbs-pgx drug="blood plasma" model-id="BloodPlasma_Yu2022_reference" status="extracted" stale="true" population="" measured-compound="blood_plasma" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="blood plasma" model-id="BloodPlasma_Yu2022_reference" status="extracted" stale="true" population="" measured-compound="blood_plasma" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment, oral mammillary model — template `PK_2C_enteral`.  
 **Parameters:** 5 extracted.

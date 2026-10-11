@@ -28,8 +28,7 @@ No clearance, volume or rate constant of the model is reported in it. No paramet
 Beliveau M et al., Population pharmacokinetics of tenofovi…, Scientific reports (2026)
   ·  DOI: [10.1038/s41598-026-48746-2](https://doi.org/10.1038/s41598-026-48746-2)
 
-## Model component
-<dbs-pgx drug="tenofovir alafenamide" model-id="TenofovirAlafenamide_Beliveau2026_group_2_aone_taf_implant" status="rejected" stale="true" population="South African women in HIV PrEP trial" measured-compound="tenofovir alafenamide" parameterization="mechanistic" topology="general_linear"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="tenofovir alafenamide" model-id="TenofovirAlafenamide_Beliveau2026_group_2_aone_taf_implant" status="rejected" stale="true" population="South African women in HIV PrEP trial" measured-compound="tenofovir alafenamide" parameterization="mechanistic" topology="general_linear"></div>
 
 **Model structure:** general linear; no model was built for this record.  
 **Parameters:** 0 extracted.

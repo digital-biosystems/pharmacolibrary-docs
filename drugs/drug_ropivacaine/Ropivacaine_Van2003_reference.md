@@ -21,8 +21,7 @@
 Van Obbergh LJ et al., In children, the addition of epinephrin…, Canadian journal of anaesth… (2003)
   ·  DOI: [10.1007/BF03018647](https://doi.org/10.1007/BF03018647)
 
-## Model component
-<dbs-pgx drug="ropivacaine" model-id="Ropivacaine_Van2003_reference" status="rejected" stale="false" population="children" measured-compound="ropivacaine" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="ropivacaine" model-id="Ropivacaine_Van2003_reference" status="rejected" stale="false" population="children" measured-compound="ropivacaine" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

@@ -21,8 +21,7 @@
 Nguyen JH et al., Population Pharmacokinetics of Dupiluma…, Clinical pharmacology and t… (2026)
   ·  DOI: [10.1002/cpt.70233](https://doi.org/10.1002/cpt.70233)
 
-## Model component
-<dbs-pgx drug="dupilumab" model-id="Dupilumab_Nguyen2026_reference" status="rejected" stale="false" population="adults, adolescents, and children with eosinophilic esophagitis" measured-compound="dupilumab" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="dupilumab" model-id="Dupilumab_Nguyen2026_reference" status="rejected" stale="false" population="adults, adolescents, and children with eosinophilic esophagitis" measured-compound="dupilumab" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

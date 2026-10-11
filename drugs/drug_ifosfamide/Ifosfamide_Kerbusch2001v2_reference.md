@@ -21,8 +21,7 @@
 Kerbusch T et al., Population pharmacokinetics of ifosfami…, Clinical pharmacokinetics (2001)
   ·  DOI: [10.2165/00003088-200140080-00005](https://doi.org/10.2165/00003088-200140080-00005)
 
-## Model component
-<dbs-pgx drug="ifosfamide" model-id="Ifosfamide_Kerbusch2001v2_reference" status="extracted" stale="false" population="children with malignant disease" measured-compound="ifosfamide" parameterization="mechanistic" topology="general_linear"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="ifosfamide" model-id="Ifosfamide_Kerbusch2001v2_reference" status="extracted" stale="false" population="children with malignant disease" measured-compound="ifosfamide" parameterization="mechanistic" topology="general_linear"></div>
 
 **Model structure:** 1-compartment general linear model (non-mammillary edges) — template `PK_General_Linear`.  
 **Parameters:** 3 extracted.

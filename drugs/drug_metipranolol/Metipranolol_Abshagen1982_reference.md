@@ -32,8 +32,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Abshagen U et al., Pharmacokinetics of metipranolol in nor…, European journal of clinica… (1982)
   ·  DOI: [10.1007/BF00637616](https://doi.org/10.1007/BF00637616)
 
-## Model component
-<dbs-pgx drug="metipranolol" model-id="Metipranolol_Abshagen1982_reference" status="extracted" stale="true" population="normal volunteers" measured-compound="deacetyl metipranolol" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="metipranolol" model-id="Metipranolol_Abshagen1982_reference" status="extracted" stale="true" population="normal volunteers" measured-compound="deacetyl metipranolol" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 10 extracted.

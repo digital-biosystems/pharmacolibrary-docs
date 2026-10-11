@@ -25,8 +25,7 @@
 Li Z et al., Blood-Nanoparticle Interactions Create…, International journal of na… (2024)
   ·  DOI: [10.2147/ijn.s440598](https://doi.org/10.2147/ijn.s440598)
 
-## Model component
-<dbs-pgx drug="doxorubicin" model-id="Doxorubicin_Li2024_doxil_stealth_liposome_6_mg_kg_1" status="rejected" stale="false" population="rats (healthy and tumor-bearing animals)" measured-compound="doxorubicin" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="doxorubicin" model-id="Doxorubicin_Li2024_doxil_stealth_liposome_6_mg_kg_1" status="rejected" stale="false" population="rats (healthy and tumor-bearing animals)" measured-compound="doxorubicin" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 3 extracted.

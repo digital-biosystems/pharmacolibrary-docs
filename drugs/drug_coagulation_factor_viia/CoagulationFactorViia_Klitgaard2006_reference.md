@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Klitgaard T et al., Pharmacokinetics of recombinant activat…, Critical care (London, Engl… (2006)
   ·  DOI: [10.1186/cc4977](https://doi.org/10.1186/cc4977)
 
-## Model component
-<dbs-pgx drug="coagulation factor VIIa" model-id="CoagulationFactorViia_Klitgaard2006_reference" status="needs_review" stale="true" population="trauma patients with severe bleeding" measured-compound="recombinant activated factor VII" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="coagulation factor VIIa" model-id="CoagulationFactorViia_Klitgaard2006_reference" status="needs_review" stale="true" population="trauma patients with severe bleeding" measured-compound="recombinant activated factor VII" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 2 extracted.

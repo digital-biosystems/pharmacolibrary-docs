@@ -20,8 +20,7 @@
 Jang JH et al., Population Pharmacokinetics of, Pharmaceutics (2019)
   ·  DOI: [10.3390/pharmaceutics11100531](https://doi.org/10.3390/pharmaceutics11100531)
 
-## Model component
-<dbs-pgx drug="cefprozil" model-id="Cefprozil_Jang2019_reference" status="needs_review" stale="false" population="healthy male Koreans" measured-compound="cefprozil" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="cefprozil" model-id="Cefprozil_Jang2019_reference" status="needs_review" stale="false" population="healthy male Koreans" measured-compound="cefprozil" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 4 extracted.

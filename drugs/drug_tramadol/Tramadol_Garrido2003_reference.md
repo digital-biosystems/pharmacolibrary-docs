@@ -35,8 +35,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the val
 Garrido MJ et al., Pharmacokinetic/pharmacodynamic modelin…, The Journal of pharmacology… (2003)
   ·  DOI: [10.1124/jpet.102.047779](https://doi.org/10.1124/jpet.102.047779)
 
-## Model component
-<dbs-pgx drug="tramadol" model-id="Tramadol_Garrido2003_reference" status="needs_review" stale="true" population="unknown" measured-compound="(+)-O-demethyltramadol" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="tramadol" model-id="Tramadol_Garrido2003_reference" status="needs_review" stale="true" population="unknown" measured-compound="(+)-O-demethyltramadol" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 4 extracted.

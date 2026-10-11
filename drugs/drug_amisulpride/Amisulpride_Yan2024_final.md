@@ -21,8 +21,7 @@
 Yan D et al., External Validation of the Population P…, Drug design, development an… (2024)
   ·  DOI: [10.2147/DDDT.S469149](https://doi.org/10.2147/DDDT.S469149)
 
-## Model component
-<dbs-pgx drug="amisulpride" model-id="Amisulpride_Yan2024_final" status="extracted" stale="false" population="Chinese adult inpatients with schizophrenia" measured-compound="amisulpride" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="amisulpride" model-id="Amisulpride_Yan2024_final" status="extracted" stale="false" population="Chinese adult inpatients with schizophrenia" measured-compound="amisulpride" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 3 extracted.

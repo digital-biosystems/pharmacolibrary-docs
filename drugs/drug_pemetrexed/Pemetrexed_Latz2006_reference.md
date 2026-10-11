@@ -21,8 +21,7 @@
 Latz JE et al., Population pharmacokinetic analysis of…, Cancer chemotherapy and pha… (2006)
   ·  DOI: [10.1007/s00280-005-0036-1](https://doi.org/10.1007/s00280-005-0036-1)
 
-## Model component
-<dbs-pgx drug="pemetrexed" model-id="Pemetrexed_Latz2006_reference" status="needs_review" stale="false" population="cancer patients" measured-compound="pemetrexed" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="pemetrexed" model-id="Pemetrexed_Latz2006_reference" status="needs_review" stale="false" population="cancer patients" measured-compound="pemetrexed" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment; no model was built for this record.  
 **Parameters:** 5 extracted.

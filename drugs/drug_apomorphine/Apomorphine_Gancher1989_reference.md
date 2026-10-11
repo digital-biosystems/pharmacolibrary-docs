@@ -20,8 +20,7 @@
 Gancher ST et al., Peripheral pharmacokinetics of apomorph…, Annals of neurology (1989)
   ·  DOI: [10.1002/ana.410260209](https://doi.org/10.1002/ana.410260209)
 
-## Model component
-<dbs-pgx drug="apomorphine" model-id="Apomorphine_Gancher1989_reference" status="rejected" stale="false" population="patients with parkinsonism" measured-compound="apomorphine" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="apomorphine" model-id="Apomorphine_Gancher1989_reference" status="rejected" stale="false" population="patients with parkinsonism" measured-compound="apomorphine" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 3 extracted.

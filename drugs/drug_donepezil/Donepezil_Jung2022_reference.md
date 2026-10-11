@@ -21,8 +21,7 @@
 Jung W et al., Model-Based Equivalent Dose Optimizatio…, Pharmaceutics (2022)
   ·  DOI: [10.3390/pharmaceutics14020244](https://doi.org/10.3390/pharmaceutics14020244)
 
-## Model component
-<dbs-pgx drug="donepezil" model-id="Donepezil_Jung2022_reference" status="needs_review" stale="false" population="healthy adults" measured-compound="donepezil" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="donepezil" model-id="Donepezil_Jung2022_reference" status="needs_review" stale="false" population="healthy adults" measured-compound="donepezil" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 4 extracted.

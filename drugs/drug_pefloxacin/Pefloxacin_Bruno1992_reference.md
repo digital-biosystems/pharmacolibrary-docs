@@ -20,8 +20,7 @@
 Bruno R et al., Evaluation of Bayesian estimation in co…, Journal of pharmacokinetics… (1992)
   ·  DOI: [10.1007/BF01064424](https://doi.org/10.1007/BF01064424)
 
-## Model component
-<dbs-pgx drug="pefloxacin" model-id="Pefloxacin_Bruno1992_reference" status="needs_review" stale="false" population="intensive care unit patients" measured-compound="pefloxacin" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="pefloxacin" model-id="Pefloxacin_Bruno1992_reference" status="needs_review" stale="false" population="intensive care unit patients" measured-compound="pefloxacin" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 1 extracted.

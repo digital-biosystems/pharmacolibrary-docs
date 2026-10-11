@@ -33,8 +33,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the lin
 Ho PC et al., Pharmacokinetics of canrenone and metab…, European journal of clinica… (1984)
   ·  DOI: [10.1007/BF00549592](https://doi.org/10.1007/BF00549592)
 
-## Model component
-<dbs-pgx drug="canrenone" model-id="Canrenone_Ho1984_reference" status="rejected" stale="true" population="young volunteers" measured-compound="canrenone" parameterization="mechanistic" topology="parent_metabolite"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="canrenone" model-id="Canrenone_Ho1984_reference" status="rejected" stale="true" population="young volunteers" measured-compound="canrenone" parameterization="mechanistic" topology="parent_metabolite"></div>
 
 **Model structure:** parent + metabolite; no model was built for this record.  
 **Parameters:** 2 extracted.

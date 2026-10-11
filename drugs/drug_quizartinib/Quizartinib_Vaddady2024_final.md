@@ -20,8 +20,7 @@
 Vaddady P et al., Population pharmacokinetic analysis of…, Clinical and translational… (2024)
   ·  DOI: [10.1111/cts.70074](https://doi.org/10.1111/cts.70074)
 
-## Model component
-<dbs-pgx drug="quizartinib" model-id="Quizartinib_Vaddady2024_final" status="needs_review" stale="false" population="newly diagnosed and relapsed/refractory FLT3-ITD-positive AML patients and non-AML subjects" measured-compound="quizartinib" parameterization="mechanistic" topology="parent_metabolite"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="quizartinib" model-id="Quizartinib_Vaddady2024_final" status="needs_review" stale="false" population="newly diagnosed and relapsed/refractory FLT3-ITD-positive AML patients and non-AML subjects" measured-compound="quizartinib" parameterization="mechanistic" topology="parent_metabolite"></div>
 
 **Model structure:** parent + metabolite; no model was built for this record.  
 **Parameters:** 6 extracted, plus 4 covariate effects.

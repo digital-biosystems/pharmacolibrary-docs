@@ -20,8 +20,7 @@
 ## Citation
 Hurault de Ligny B et al., [Pharmacokinetics of intravenous ketopr…, Nephrologie (1989)
 
-## Model component
-<dbs-pgx drug="ketoprofen" model-id="Ketoprofen_Hurault1989_reference" status="rejected" stale="false" population="patients with acute ureteral colic" measured-compound="ketoprofen" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="ketoprofen" model-id="Ketoprofen_Hurault1989_reference" status="rejected" stale="false" population="patients with acute ureteral colic" measured-compound="ketoprofen" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 8 extracted.

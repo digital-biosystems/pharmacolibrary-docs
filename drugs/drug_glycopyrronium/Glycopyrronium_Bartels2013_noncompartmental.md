@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the val
 Bartels C et al., Determination of the pharmacokinetics o…, British journal of clinical… (2013)
   ·  DOI: [10.1111/bcp.12118](https://doi.org/10.1111/bcp.12118)
 
-## Model component
-<dbs-pgx drug="glycopyrronium" model-id="Glycopyrronium_Bartels2013_noncompartmental" status="extracted" stale="true" population="healthy volunteers" measured-compound="glycopyrronium" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="glycopyrronium" model-id="Glycopyrronium_Bartels2013_noncompartmental" status="extracted" stale="true" population="healthy volunteers" measured-compound="glycopyrronium" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameters:** 3 extracted.

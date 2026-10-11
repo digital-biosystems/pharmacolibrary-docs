@@ -20,8 +20,7 @@
 Gandhi Y et al., Model-Based Selection and Recommendatio…, Journal of clinical pharmac… (2021)
   ·  DOI: [10.1002/jcph.1797](https://doi.org/10.1002/jcph.1797)
 
-## Model component
-<dbs-pgx drug="abatacept" model-id="Abatacept_Gandhi2021_reference" status="rejected" stale="false" population="adults with rheumatoid arthritis and children with polyarticular juvenile idiopathic arthritis" measured-compound="abatacept" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="abatacept" model-id="Abatacept_Gandhi2021_reference" status="rejected" stale="false" population="adults with rheumatoid arthritis and children with polyarticular juvenile idiopathic arthritis" measured-compound="abatacept" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment; no model was built for this record.  
 **Parameters:** 8 extracted, plus 8 covariate effects.

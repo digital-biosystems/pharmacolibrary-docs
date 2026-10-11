@@ -22,8 +22,7 @@
 Plakas SM et al., Pharmacokinetics, tissue distribution a…, Xenobiotica; the fate of fo… (1998)
   ·  DOI: [10.1080/004982598239353](https://doi.org/10.1080/004982598239353)
 
-## Model component
-<dbs-pgx drug="acriflavinium chloride" model-id="AcriflaviniumChloride_Plakas1998_reference" status="rejected" stale="false" population="channel catfish" measured-compound="acriflavine" parameterization="mechanistic" topology="general_linear"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="acriflavinium chloride" model-id="AcriflaviniumChloride_Plakas1998_reference" status="rejected" stale="false" population="channel catfish" measured-compound="acriflavine" parameterization="mechanistic" topology="general_linear"></div>
 
 **Model structure:** general linear; no model was built for this record.  
 **Parameters:** 1 extracted.

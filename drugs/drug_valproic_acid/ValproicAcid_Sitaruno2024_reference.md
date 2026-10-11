@@ -21,8 +21,7 @@
 Sitaruno S et al., Population Pharmacokinetics and Loading…, Journal of clinical pharmac… (2024)
   ·  DOI: [10.1002/jcph.6102](https://doi.org/10.1002/jcph.6102)
 
-## Model component
-<dbs-pgx drug="valproic acid" model-id="ValproicAcid_Sitaruno2024_reference" status="rejected" stale="false" population="hospitalized Thai patients" measured-compound="valproic acid" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="valproic acid" model-id="ValproicAcid_Sitaruno2024_reference" status="rejected" stale="false" population="hospitalized Thai patients" measured-compound="valproic acid" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

@@ -30,8 +30,7 @@ The metabolites formed from dothiepin are each listed with zero compartments, so
 Yu DK et al., Pharmacokinetics of dothiepin in humans…, Journal of pharmaceutical s… (1986)
   ·  DOI: [10.1002/jps.2600750612](https://doi.org/10.1002/jps.2600750612)
 
-## Model component
-<dbs-pgx drug="dosulepin" model-id="Dosulepin_Yu1986_reference" status="rejected" stale="true" population="healthy men" measured-compound="dothiepin" parameterization="mechanistic" topology="general_linear"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="dosulepin" model-id="Dosulepin_Yu1986_reference" status="rejected" stale="true" population="healthy men" measured-compound="dothiepin" parameterization="mechanistic" topology="general_linear"></div>
 
 **Model structure:** general linear; no model was built for this record.  
 **Parameters:** 2 extracted.

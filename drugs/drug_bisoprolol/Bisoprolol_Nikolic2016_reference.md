@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on `parame
 Nikolic VN et al., Population Pharmacokinetics of Bisoprol…, Pharmacology (2016)
   ·  DOI: [10.1159/000443179](https://doi.org/10.1159/000443179)
 
-## Model component
-<dbs-pgx drug="bisoprolol" model-id="Bisoprolol_Nikolic2016_reference" status="extracted" stale="true" population="hemodialysis patients with hypertension" measured-compound="bisoprolol" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="bisoprolol" model-id="Bisoprolol_Nikolic2016_reference" status="extracted" stale="true" population="hemodialysis patients with hypertension" measured-compound="bisoprolol" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 3 extracted.

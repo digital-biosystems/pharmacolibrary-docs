@@ -29,8 +29,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Leegwater E et al., Population Pharmacokinetics of Remdesiv…, Antimicrobial agents and ch… (2022)
   ·  DOI: [10.1128/aac.00254-22](https://doi.org/10.1128/aac.00254-22)
 
-## Model component
-<dbs-pgx drug="remdesivir" model-id="Remdesivir_Leegwater2022_reference" status="needs_review" stale="false" population="hospitalized COVID-19 patients" measured-compound="remdesivir" parameterization="mechanistic" topology="parent_metabolite"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="remdesivir" model-id="Remdesivir_Leegwater2022_reference" status="needs_review" stale="false" population="hospitalized COVID-19 patients" measured-compound="remdesivir" parameterization="mechanistic" topology="parent_metabolite"></div>
 
 **Model structure:** parent + metabolite; no model was built for this record.  
 **Parameters:** 4 extracted, plus 1 covariate effect.

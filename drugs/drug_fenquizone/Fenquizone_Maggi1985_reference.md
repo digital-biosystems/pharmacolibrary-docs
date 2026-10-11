@@ -29,8 +29,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 ## Citation
 Maggi GC et al., Single-dose pharmacokinetics of fenquiz…, Arzneimittel-Forschung (1985)
 
-## Model component
-<dbs-pgx drug="fenquizone" model-id="Fenquizone_Maggi1985_reference" status="rejected" stale="true" population="healthy volunteers" measured-compound="fenquizone" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="fenquizone" model-id="Fenquizone_Maggi1985_reference" status="rejected" stale="true" population="healthy volunteers" measured-compound="fenquizone" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 5 extracted.

@@ -35,8 +35,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which m
 Nichols JW et al., Use of online microdialysis sampling to…, Drug metabolism and disposi… (2008)
   ·  DOI: [10.1124/dmd.107.020123](https://doi.org/10.1124/dmd.107.020123)
 
-## Model component
-<dbs-pgx drug="phenol" model-id="Phenol_Nichols2008_reference" status="needs_review" stale="true" population="rainbow trout" measured-compound="phenol and phenyl glucuronide" parameterization="mechanistic" topology="parent_metabolite"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="phenol" model-id="Phenol_Nichols2008_reference" status="needs_review" stale="true" population="rainbow trout" measured-compound="phenol and phenyl glucuronide" parameterization="mechanistic" topology="parent_metabolite"></div>
 
 **Model structure:** parent + metabolite; no model was built for this record.  
 **Parameters:** 6 extracted.

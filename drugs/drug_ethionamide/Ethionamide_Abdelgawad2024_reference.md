@@ -21,8 +21,7 @@
 Abdelgawad N et al., Pharmacokinetics of antitubercular drug… (2024)
   ·  DOI: [10.12688/wellcomeopenres.17660.3](https://doi.org/10.12688/wellcomeopenres.17660.3)
 
-## Model component
-<dbs-pgx drug="ethionamide" model-id="Ethionamide_Abdelgawad2024_reference" status="extracted" stale="false" population="" measured-compound="ethionamide" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="ethionamide" model-id="Ethionamide_Abdelgawad2024_reference" status="extracted" stale="false" population="" measured-compound="ethionamide" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameters:** 2 extracted.

@@ -20,8 +20,7 @@
 Gueorguieva I et al., Donanemab exposure-response in early sy…, Alzheimer's & dementia : th… (2025)
   ·  DOI: [10.1002/alz.70491](https://doi.org/10.1002/alz.70491)
 
-## Model component
-<dbs-pgx drug="donanemab" model-id="Donanemab_Gueorguieva2025_reference" status="rejected" stale="false" population="adults with early symptomatic Alzheimer&#39;s disease" measured-compound="donanemab" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="donanemab" model-id="Donanemab_Gueorguieva2025_reference" status="rejected" stale="false" population="adults with early symptomatic Alzheimer&#39;s disease" measured-compound="donanemab" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment; no model was built for this record.  
 **Parameters:** 3 extracted.

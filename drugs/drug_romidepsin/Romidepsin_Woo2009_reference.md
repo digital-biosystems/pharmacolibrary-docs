@@ -20,8 +20,7 @@
 Woo S et al., Population pharmacokinetics of romideps…, Clinical cancer research :… (2009)
   ·  DOI: [10.1158/1078-0432.CCR-08-1215](https://doi.org/10.1158/1078-0432.CCR-08-1215)
 
-## Model component
-<dbs-pgx drug="romidepsin" model-id="Romidepsin_Woo2009_reference" status="needs_review" stale="false" population="patients with cutaneous T-cell lymphoma and relapsed peripheral T-cell lymphoma" measured-compound="romidepsin" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="romidepsin" model-id="Romidepsin_Woo2009_reference" status="needs_review" stale="false" population="patients with cutaneous T-cell lymphoma and relapsed peripheral T-cell lymphoma" measured-compound="romidepsin" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 1 extracted.

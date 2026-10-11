@@ -33,8 +33,7 @@ Independently confirmed by `gpt-oss:120b`.
 Stocker SL et al., The pharmacokinetics of oxypurinol in p…, British journal of clinical… (2012)
   ·  DOI: [10.1111/j.1365-2125.2012.04207.x](https://doi.org/10.1111/j.1365-2125.2012.04207.x)
 
-## Model component
-<dbs-pgx drug="allopurinol" model-id="Allopurinol_Stocker2012_reference" status="needs_review" stale="true" population="gouty patients" measured-compound="oxypurinol" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="allopurinol" model-id="Allopurinol_Stocker2012_reference" status="needs_review" stale="true" population="gouty patients" measured-compound="oxypurinol" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 1 extracted.

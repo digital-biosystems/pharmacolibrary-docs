@@ -22,8 +22,7 @@
 Deshpande D et al., Thioridazine as Chemotherapy for Mycoba…, Antimicrobial agents and ch… (2016)
   ·  DOI: [10.1128/AAC.02985-15](https://doi.org/10.1128/AAC.02985-15)
 
-## Model component
-<dbs-pgx drug="thioridazine" model-id="Thioridazine_Deshpande2016_reference" status="rejected" stale="false" population="hollow-fiber model of intracellular MAC (in vitro)" measured-compound="thioridazine" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="thioridazine" model-id="Thioridazine_Deshpande2016_reference" status="rejected" stale="false" population="hollow-fiber model of intracellular MAC (in vitro)" measured-compound="thioridazine" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

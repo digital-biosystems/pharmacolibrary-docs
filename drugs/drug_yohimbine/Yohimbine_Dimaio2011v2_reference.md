@@ -23,8 +23,7 @@
 Dimaio Knych HK et al., Pharmacokinetics of yohimbine following…, Journal of veterinary pharm… (2011)
   ·  DOI: [10.1111/j.1365-2885.2010.01194.x](https://doi.org/10.1111/j.1365-2885.2010.01194.x)
 
-## Model component
-<dbs-pgx drug="yohimbine" model-id="Yohimbine_Dimaio2011v2_reference" status="extracted" stale="false" population="healthy adult horses" measured-compound="yohimbine" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="yohimbine" model-id="Yohimbine_Dimaio2011v2_reference" status="extracted" stale="false" population="healthy adult horses" measured-compound="yohimbine" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameters:** 3 extracted.

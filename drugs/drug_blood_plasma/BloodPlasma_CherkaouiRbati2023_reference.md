@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on paramet
 Cherkaoui-Rbati MH et al., A pharmacokinetic-pharmacodynamic model…, CPT: pharmacometrics & syst… (2023)
   ·  DOI: [10.1002/psp4.12875](https://doi.org/10.1002/psp4.12875)
 
-## Model component
-<dbs-pgx drug="blood plasma" model-id="BloodPlasma_CherkaouiRbati2023_reference" status="extracted" stale="true" population="" measured-compound="blood_plasma" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="blood plasma" model-id="BloodPlasma_CherkaouiRbati2023_reference" status="extracted" stale="true" population="" measured-compound="blood_plasma" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment, IV mammillary model — template `PK_2C`.  
 **Parameters:** 5 extracted.

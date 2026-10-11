@@ -21,8 +21,7 @@
 el Touny M et al., Pharmacokinetics of cefodizime in patie…, Chemotherapy (1992)
   ·  DOI: [10.1159/000239001](https://doi.org/10.1159/000239001)
 
-## Model component
-<dbs-pgx drug="cefodizime" model-id="Cefodizime_el1992_reference" status="needs_review" stale="false" population="healthy males and patients with liver cirrhosis and ascites" measured-compound="cefodizime" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="cefodizime" model-id="Cefodizime_el1992_reference" status="needs_review" stale="false" population="healthy males and patients with liver cirrhosis and ascites" measured-compound="cefodizime" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 3 extracted.

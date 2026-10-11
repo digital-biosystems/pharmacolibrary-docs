@@ -21,8 +21,7 @@
 Lakota EA et al., Population Pharmacokinetic Analyses for…, Antimicrobial agents and ch… (2020)
   ·  DOI: [10.1128/AAC.02263-19](https://doi.org/10.1128/AAC.02263-19)
 
-## Model component
-<dbs-pgx drug="omadacycline" model-id="Omadacycline_Lakota2020_reference" status="extracted" stale="false" population="mixed" measured-compound="omadacycline" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="omadacycline" model-id="Omadacycline_Lakota2020_reference" status="extracted" stale="false" population="mixed" measured-compound="omadacycline" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment, oral mammillary model — template `PK_2C_enteral`.  
 **Parameters:** 6 extracted, plus 3 covariate effects.

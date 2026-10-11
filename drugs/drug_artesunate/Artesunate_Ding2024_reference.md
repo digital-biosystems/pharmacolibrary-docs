@@ -21,8 +21,7 @@
 Ding J et al., Population pharmacokinetics of amodiaqu…, CPT: pharmacometrics & syst… (2024)
   ·  DOI: [10.1002/psp4.13211](https://doi.org/10.1002/psp4.13211)
 
-## Model component
-<dbs-pgx drug="artesunate" model-id="Artesunate_Ding2024_reference" status="extracted" stale="false" population="" measured-compound="artesunate" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="artesunate" model-id="Artesunate_Ding2024_reference" status="extracted" stale="false" population="" measured-compound="artesunate" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameters:** 2 extracted.

@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on paramet
 Moran SM et al., Pathophysiology of protracted acute ren…, The Journal of clinical inv… (1985)
   ·  DOI: [10.1172/JCI112122](https://doi.org/10.1172/JCI112122)
 
-## Model component
-<dbs-pgx drug="angiotensin II" model-id="AngiotensinIi_Moran1985_reference" status="rejected" stale="true" population="" measured-compound="angiotensin_ii" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="angiotensin II" model-id="AngiotensinIi_Moran1985_reference" status="rejected" stale="true" population="" measured-compound="angiotensin_ii" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 2 extracted.

@@ -21,8 +21,7 @@
 Bundtzen RW et al., Pharmacokinetics of cefuroxime in norma…, Antimicrobial agents and ch… (1981)
   ·  DOI: [10.1128/AAC.19.3.443](https://doi.org/10.1128/AAC.19.3.443)
 
-## Model component
-<dbs-pgx drug="cefuroxime" model-id="Cefuroxime_Bundtzen1981_reference" status="rejected" stale="false" population="normal and impaired renal function" measured-compound="cefuroxime" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="cefuroxime" model-id="Cefuroxime_Bundtzen1981_reference" status="rejected" stale="false" population="normal and impaired renal function" measured-compound="cefuroxime" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

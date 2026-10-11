@@ -21,8 +21,7 @@
 Introna M et al., Target controlled infusion in the inten…, Journal of clinical monitor… (2026)
   ·  DOI: [10.1007/s10877-025-01356-1](https://doi.org/10.1007/s10877-025-01356-1)
 
-## Model component
-<dbs-pgx drug="fentanyl" model-id="Fentanyl_Introna2026_reference" status="extracted" stale="false" population="" measured-compound="fentanyl" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="fentanyl" model-id="Fentanyl_Introna2026_reference" status="extracted" stale="false" population="" measured-compound="fentanyl" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameters:** 2 extracted.

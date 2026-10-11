@@ -21,8 +21,7 @@
 Sassen SD et al., Population pharmacokinetics of intraven…, Haematologica (2017)
   ·  DOI: [10.3324/haematol.2016.149195](https://doi.org/10.3324/haematol.2016.149195)
 
-## Model component
-<dbs-pgx drug="pegaspargase" model-id="Pegaspargase_Sassen2017_reference" status="extracted" stale="false" population="" measured-compound="pegaspargase" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="pegaspargase" model-id="Pegaspargase_Sassen2017_reference" status="extracted" stale="false" population="" measured-compound="pegaspargase" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment, IV mammillary model — template `PK_2C`.  
 **Parameters:** 4 extracted.

@@ -29,8 +29,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Salem AM et al., Reassessing the Pediatric Dosing Recomm…, Journal of clinical pharmac… (2022)
   ·  DOI: [10.1002/jcph.2007](https://doi.org/10.1002/jcph.2007)
 
-## Model component
-<dbs-pgx drug="heparin" model-id="Heparin_Salem2022_reference" status="needs_review" stale="false" population="pediatric patients" measured-compound="unfractionated heparin" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="heparin" model-id="Heparin_Salem2022_reference" status="needs_review" stale="false" population="pediatric patients" measured-compound="unfractionated heparin" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 3 extracted.

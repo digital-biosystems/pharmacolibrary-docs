@@ -20,8 +20,7 @@
 Hadigol M et al., Population Pharmacokinetics Analysis of…, Journal of clinical pharmac… (2026)
   ·  DOI: [10.1002/jcph.70125](https://doi.org/10.1002/jcph.70125)
 
-## Model component
-<dbs-pgx drug="talazoparib" model-id="Talazoparib_Hadigol2026_reference" status="rejected" stale="false" population="patients with metastatic castration-resistant prostate cancer" measured-compound="talazoparib" parameterization="apparent" topology="parent_metabolite"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="talazoparib" model-id="Talazoparib_Hadigol2026_reference" status="rejected" stale="false" population="patients with metastatic castration-resistant prostate cancer" measured-compound="talazoparib" parameterization="apparent" topology="parent_metabolite"></div>
 
 **Model structure:** parent + metabolite; no model was built for this record.  
 **Parameters:** 15 extracted, plus 5 covariate effects.

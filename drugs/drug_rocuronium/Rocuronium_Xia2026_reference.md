@@ -21,8 +21,7 @@
 Xia M et al., Magnesium sulfate pharmacology for mate…, Frontiers in pharmacology (2026)
   ·  DOI: [10.3389/fphar.2026.1749828](https://doi.org/10.3389/fphar.2026.1749828)
 
-## Model component
-<dbs-pgx drug="Rocuronium" model-id="Rocuronium_Xia2026_reference" status="extracted" stale="false" population="" measured-compound="rocuronium" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="Rocuronium" model-id="Rocuronium_Xia2026_reference" status="extracted" stale="false" population="" measured-compound="rocuronium" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 2 extracted.

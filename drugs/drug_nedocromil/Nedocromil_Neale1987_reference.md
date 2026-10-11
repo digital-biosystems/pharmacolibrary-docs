@@ -20,8 +20,7 @@
 Neale MG et al., The pharmacokinetics of nedocromil sodi…, British journal of clinical… (1987)
   ·  DOI: [10.1111/j.1365-2125.1987.tb03203.x](https://doi.org/10.1111/j.1365-2125.1987.tb03203.x)
 
-## Model component
-<dbs-pgx drug="nedocromil" model-id="Nedocromil_Neale1987_reference" status="needs_review" stale="false" population="healthy volunteers and asthmatic patients" measured-compound="nedocromil sodium" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="nedocromil" model-id="Nedocromil_Neale1987_reference" status="needs_review" stale="false" population="healthy volunteers and asthmatic patients" measured-compound="nedocromil sodium" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 2 extracted.

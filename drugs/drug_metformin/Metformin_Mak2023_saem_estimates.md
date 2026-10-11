@@ -33,8 +33,7 @@ Independently confirmed by `gpt-oss:120b`, `gpt-5.6-luna`.
 Mak WY et al., Assessment of the nlmixr R package for…, British journal of clinical… (2023)
   ·  DOI: [10.1111/bcp.15496](https://doi.org/10.1111/bcp.15496)
 
-## Model component
-<dbs-pgx drug="metformin" model-id="Metformin_Mak2023_saem_estimates" status="extracted" stale="true" population="healthy adults" measured-compound="metformin" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="metformin" model-id="Metformin_Mak2023_saem_estimates" status="extracted" stale="true" population="healthy adults" measured-compound="metformin" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 3 extracted, plus 1 covariate effect.

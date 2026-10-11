@@ -30,8 +30,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Brørs O et al., Distribution of elimination of hydroflu…, European journal of clinica… (1979)
   ·  DOI: [10.1007/BF00563119](https://doi.org/10.1007/BF00563119)
 
-## Model component
-<dbs-pgx drug="hydroflumethiazide" model-id="Hydroflumethiazide_Brrs1979_reference" status="rejected" stale="true" population="healthy subjects" measured-compound="hydroflumethiazide" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="hydroflumethiazide" model-id="Hydroflumethiazide_Brrs1979_reference" status="rejected" stale="true" population="healthy subjects" measured-compound="hydroflumethiazide" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 1 extracted.

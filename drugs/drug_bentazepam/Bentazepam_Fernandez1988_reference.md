@@ -19,8 +19,7 @@
 ## Citation
 Fernandez Lastra C et al., Discrimination of kinetic models in het…, International journal of cl… (1988)
 
-## Model component
-<dbs-pgx drug="bentazepam" model-id="Bentazepam_Fernandez1988_reference" status="extracted" stale="false" population="patients receiving multiple oral doses of bentazepam" measured-compound="bentazepam" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="bentazepam" model-id="Bentazepam_Fernandez1988_reference" status="extracted" stale="false" population="patients receiving multiple oral doses of bentazepam" measured-compound="bentazepam" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment, oral mammillary model — template `PK_2C_enteral`.  
 **Parameters:** 6 extracted.

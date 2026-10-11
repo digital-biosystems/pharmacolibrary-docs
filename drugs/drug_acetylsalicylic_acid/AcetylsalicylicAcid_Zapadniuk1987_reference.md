@@ -28,8 +28,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 ## Citation
 Zapadniuk VI et al., [Age-related characteristics of the pha…, Farmakologiia i toksikologi… (1987)
 
-## Model component
-<dbs-pgx drug="acetylsalicylic acid" model-id="AcetylsalicylicAcid_Zapadniuk1987_reference" status="needs_review" stale="false" population="young, elderly and old patients" measured-compound="acetylsalicylic_acid" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="acetylsalicylic acid" model-id="AcetylsalicylicAcid_Zapadniuk1987_reference" status="needs_review" stale="false" population="young, elderly and old patients" measured-compound="acetylsalicylic_acid" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 5 extracted.

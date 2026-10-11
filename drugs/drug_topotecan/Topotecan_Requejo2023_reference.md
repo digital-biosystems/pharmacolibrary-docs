@@ -23,8 +23,7 @@
 Requejo F et al., Pharmacokinetics of Orbital Topotecan A…, Investigative ophthalmology… (2023)
   ·  DOI: [10.1167/iovs.64.12.3](https://doi.org/10.1167/iovs.64.12.3)
 
-## Model component
-<dbs-pgx drug="topotecan" model-id="Topotecan_Requejo2023_reference" status="rejected" stale="false" population="Landrace pigs" measured-compound="topotecan" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="topotecan" model-id="Topotecan_Requejo2023_reference" status="rejected" stale="false" population="Landrace pigs" measured-compound="topotecan" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

@@ -23,8 +23,7 @@
 Michels LR et al., Effects of Surface Characteristics of P…, International journal of na… (2019)
   ·  DOI: [10.2147/IJN.S227914](https://doi.org/10.2147/IJN.S227914)
 
-## Model component
-<dbs-pgx drug="quinine" model-id="Quinine_Michels2019_two_compartmental_model" status="rejected" stale="false" population="P. berghei-infected Wistar rats" measured-compound="quinine" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="quinine" model-id="Quinine_Michels2019_two_compartmental_model" status="rejected" stale="false" population="P. berghei-infected Wistar rats" measured-compound="quinine" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 5 extracted.

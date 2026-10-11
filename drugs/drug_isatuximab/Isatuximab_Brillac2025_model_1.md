@@ -21,8 +21,7 @@
 Brillac C et al., Selection of isatuximab dosing regimen…, Cancer chemotherapy and pha… (2025)
   ·  DOI: [10.1007/s00280-025-04832-2](https://doi.org/10.1007/s00280-025-04832-2)
 
-## Model component
-<dbs-pgx drug="isatuximab" model-id="Isatuximab_Brillac2025_model_1" status="rejected" stale="false" population="Pediatric patients with R/R acute leukemia pooled with adults from ISLAY" measured-compound="isatuximab" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="isatuximab" model-id="Isatuximab_Brillac2025_model_1" status="rejected" stale="false" population="Pediatric patients with R/R acute leukemia pooled with adults from ISLAY" measured-compound="isatuximab" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment; no model was built for this record.  
 **Parameters:** 3 extracted.

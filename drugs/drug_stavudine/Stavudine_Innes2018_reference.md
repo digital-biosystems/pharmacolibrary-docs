@@ -31,8 +31,7 @@ Without a unit the value cannot be converted, so the model cannot use it. A repo
 Innes S et al., Can We Improve Stavudine's Safety Profi…, Antimicrobial agents and ch… (2018)
   ·  DOI: [10.1128/AAC.00761-18](https://doi.org/10.1128/AAC.00761-18)
 
-## Model component
-<dbs-pgx drug="stavudine" model-id="Stavudine_Innes2018_reference" status="needs_review" stale="true" population="HIV-infected children and adults on stavudine" measured-compound="stavudine triphosphate" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="stavudine" model-id="Stavudine_Innes2018_reference" status="needs_review" stale="true" population="HIV-infected children and adults on stavudine" measured-compound="stavudine triphosphate" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 5 extracted.

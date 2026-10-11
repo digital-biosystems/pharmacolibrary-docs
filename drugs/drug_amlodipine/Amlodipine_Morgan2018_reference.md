@@ -33,8 +33,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Morgan JL et al., Pharmacokinetics of amlodipine besylate…, Pregnancy hypertension (2018)
   ·  DOI: [10.1016/j.preghy.2018.01.002](https://doi.org/10.1016/j.preghy.2018.01.002)
 
-## Model component
-<dbs-pgx drug="amlodipine" model-id="Amlodipine_Morgan2018_reference" status="needs_review" stale="true" population="pregnant women with chronic hypertension" measured-compound="amlodipine" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="amlodipine" model-id="Amlodipine_Morgan2018_reference" status="needs_review" stale="true" population="pregnant women with chronic hypertension" measured-compound="amlodipine" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 7 extracted.

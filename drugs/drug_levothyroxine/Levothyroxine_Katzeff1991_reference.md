@@ -33,8 +33,7 @@ Independently confirmed by `gpt-oss:120b`.
 Katzeff HL et al., Maintenance of thyroid hormone producti…, The American journal of phy… (1991)
   ·  DOI: [10.1152/ajpendo.1991.261.3.E382](https://doi.org/10.1152/ajpendo.1991.261.3.E382)
 
-## Model component
-<dbs-pgx drug="Levothyroxine" model-id="Levothyroxine_Katzeff1991_reference" status="rejected" stale="true" population="animals" measured-compound="T4" parameterization="mechanistic" topology="parent_metabolite"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="Levothyroxine" model-id="Levothyroxine_Katzeff1991_reference" status="rejected" stale="true" population="animals" measured-compound="T4" parameterization="mechanistic" topology="parent_metabolite"></div>
 
 **Model structure:** parent + metabolite; no model was built for this record.  
 **Parameters:** 0 extracted.

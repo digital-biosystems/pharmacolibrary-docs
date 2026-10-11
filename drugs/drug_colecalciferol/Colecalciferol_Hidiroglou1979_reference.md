@@ -33,8 +33,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Hidiroglou M et al., Pharmacokinetics and amounts of 25-hydr…, Journal of dairy science (1979)
   ·  DOI: [10.3168/jds.S0022-0302(79)83291-9](https://doi.org/10.3168/jds.S0022-0302(79)83291-9)
 
-## Model component
-<dbs-pgx drug="colecalciferol" model-id="Colecalciferol_Hidiroglou1979_reference" status="needs_review" stale="false" population="lambs with osteodystrophy" measured-compound="25-hydroxycholecalciferol" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="colecalciferol" model-id="Colecalciferol_Hidiroglou1979_reference" status="needs_review" stale="false" population="lambs with osteodystrophy" measured-compound="25-hydroxycholecalciferol" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 5 extracted.

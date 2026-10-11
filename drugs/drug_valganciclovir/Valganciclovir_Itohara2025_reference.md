@@ -30,8 +30,7 @@ The record lists a forward intercompartmental clearance (Q) of 13.9 L/h but omit
 Itohara K et al., Pharmacokinetic and Pharmacodynamic Ass…, Therapeutic drug monitoring (2025)
   ·  DOI: [10.1097/FTD.0000000000001257](https://doi.org/10.1097/FTD.0000000000001257)
 
-## Model component
-<dbs-pgx drug="valganciclovir" model-id="Valganciclovir_Itohara2025_reference" status="rejected" stale="true" population="Japanese infants with symptomatic congenital cytomegalovirus infection" measured-compound="ganciclovir" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="valganciclovir" model-id="Valganciclovir_Itohara2025_reference" status="rejected" stale="true" population="Japanese infants with symptomatic congenital cytomegalovirus infection" measured-compound="ganciclovir" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 5 extracted.

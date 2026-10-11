@@ -21,8 +21,7 @@
 ## Citation
 Abd El-Aty AM et al., Pharmacodisposition of thiamphenicol in…, DTW. Deutsche tierarztliche… (2001)
 
-## Model component
-<dbs-pgx drug="thiamphenicol" model-id="Thiamphenicol_Abd2001_reference" status="needs_review" stale="false" population="New Zealand white rabbits" measured-compound="thiamphenicol" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="thiamphenicol" model-id="Thiamphenicol_Abd2001_reference" status="needs_review" stale="false" population="New Zealand white rabbits" measured-compound="thiamphenicol" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 3 extracted.

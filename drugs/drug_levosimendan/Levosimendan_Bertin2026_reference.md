@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Bertin S et al., Population Pharmacokinetics of Levosime…, Clinical pharmacokinetics (2026)
   ·  DOI: [10.1007/s40262-025-01591-4](https://doi.org/10.1007/s40262-025-01591-4)
 
-## Model component
-<dbs-pgx drug="levosimendan" model-id="Levosimendan_Bertin2026_reference" status="rejected" stale="true" population="critically ill adults, neonates and infants on VA-ECMO" measured-compound="levosimendan" parameterization="apparent_wrt_Fm" topology="general_linear"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="levosimendan" model-id="Levosimendan_Bertin2026_reference" status="rejected" stale="true" population="critically ill adults, neonates and infants on VA-ECMO" measured-compound="levosimendan" parameterization="apparent_wrt_Fm" topology="general_linear"></div>
 
 **Model structure:** general linear; no model was built for this record.  
 **Parameters:** 0 extracted.

@@ -21,8 +21,7 @@
 Lemmens HJ et al., Pharmacokinetic-pharmacodynamic modelin…, Clinical pharmacology and t… (1994)
   ·  DOI: [10.1038/clpt.1994.136](https://doi.org/10.1038/clpt.1994.136)
 
-## Model component
-<dbs-pgx drug="alfentanil" model-id="Alfentanil_Lemmens1994_reference" status="rejected" stale="false" population="healthy adult male volunteers" measured-compound="alfentanil" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="alfentanil" model-id="Alfentanil_Lemmens1994_reference" status="rejected" stale="false" population="healthy adult male volunteers" measured-compound="alfentanil" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 7 extracted.

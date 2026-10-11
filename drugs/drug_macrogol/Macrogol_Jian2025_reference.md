@@ -27,8 +27,7 @@
 Jian W et al., Population Pharmacokinetic Model of Peg…, CPT: pharmacometrics & syst… (2025)
   ·  DOI: [10.1002/psp4.70104](https://doi.org/10.1002/psp4.70104)
 
-## Model component
-<dbs-pgx drug="macrogol" model-id="Macrogol_Jian2025_reference" status="extracted" stale="true" population="" measured-compound="macrogol" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="macrogol" model-id="Macrogol_Jian2025_reference" status="extracted" stale="true" population="" measured-compound="macrogol" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 3 extracted.

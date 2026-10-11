@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Holladay J et al., Acetaminophen pharmacokinetics in infan…, Paediatric anaesthesia (2023)
   ·  DOI: [10.1111/pan.14579](https://doi.org/10.1111/pan.14579)
 
-## Model component
-<dbs-pgx drug="paracetamol" model-id="Paracetamol_Holladay2023_reference" status="rejected" stale="true" population="children with congenital heart disease" measured-compound="acetaminophen" parameterization="apparent_wrt_Fm" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="paracetamol" model-id="Paracetamol_Holladay2023_reference" status="rejected" stale="true" population="children with congenital heart disease" measured-compound="acetaminophen" parameterization="apparent_wrt_Fm" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

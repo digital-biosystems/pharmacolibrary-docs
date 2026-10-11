@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the lin
 Ericsson H et al., Pharmacokinetics and pharmacodynamics o…, European journal of clinica… (1999)
   ·  DOI: [10.1007/s002280050594](https://doi.org/10.1007/s002280050594)
 
-## Model component
-<dbs-pgx drug="clevidipine" model-id="Clevidipine_Ericsson1999v2_reference" status="rejected" stale="true" population="healthy male volunteers" measured-compound="clevidipine" parameterization="mechanistic" topology="parent_metabolite"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="clevidipine" model-id="Clevidipine_Ericsson1999v2_reference" status="rejected" stale="true" population="healthy male volunteers" measured-compound="clevidipine" parameterization="mechanistic" topology="parent_metabolite"></div>
 
 **Model structure:** parent + metabolite; no model was built for this record.  
 **Parameters:** 5 extracted.

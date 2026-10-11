@@ -28,8 +28,7 @@ Nothing in the extracted data describes the drug's disposition, so there is no m
 Abduljalil K et al., Quantifying the effect of covariates on…, Clinical pharmacokinetics (2013)
   ·  DOI: [10.1007/s40262-013-0043-z](https://doi.org/10.1007/s40262-013-0043-z)
 
-## Model component
-<dbs-pgx drug="phenprocoumon" model-id="Phenprocoumon_Abduljalil2013_patients_on_steady_state_phenpr" status="" stale="true" population="patients" measured-compound="" parameterization="" topology=""></dbs-pgx>
+<div class="pk-model-meta" hidden drug="phenprocoumon" model-id="Phenprocoumon_Abduljalil2013_patients_on_steady_state_phenpr" status="" stale="true" population="patients" measured-compound="" parameterization="" topology=""></div>
 
 **Model structure:** —; no model was built for this record.  
 **Parameters:** 0 extracted.

@@ -29,8 +29,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 ## Citation
 Diembeck W et al., [Pharmacokinetics of xipamide and triam…, Arzneimittel-Forschung (1982)
 
-## Model component
-<dbs-pgx drug="triamterene" model-id="Triamterene_Diembeck1982_reference" status="rejected" stale="true" population="healthy volunteers" measured-compound="triamterene" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="triamterene" model-id="Triamterene_Diembeck1982_reference" status="rejected" stale="true" population="healthy volunteers" measured-compound="triamterene" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

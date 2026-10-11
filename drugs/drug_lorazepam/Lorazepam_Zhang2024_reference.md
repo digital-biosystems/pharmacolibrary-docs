@@ -21,8 +21,7 @@
 Zhang C et al., Effects of Aripiprazole on Olanzapine P…, Neuropsychiatric disease an… (2024)
   ·  DOI: [10.2147/ndt.s455183](https://doi.org/10.2147/ndt.s455183)
 
-## Model component
-<dbs-pgx drug="lorazepam" model-id="Lorazepam_Zhang2024_reference" status="extracted" stale="false" population="" measured-compound="lorazepam" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="lorazepam" model-id="Lorazepam_Zhang2024_reference" status="extracted" stale="false" population="" measured-compound="lorazepam" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 3 extracted.

@@ -29,8 +29,7 @@ Independently confirmed by `gpt-oss:120b`.
 ## Citation
 Rey E et al., Pharmacokinetics of buflomedil after in…, International journal of cl… (1984)
 
-## Model component
-<dbs-pgx drug="buflomedil" model-id="Buflomedil_Rey1984_reference" status="needs_review" stale="true" population="patients with chronic renal failure" measured-compound="buflomedil" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="buflomedil" model-id="Buflomedil_Rey1984_reference" status="needs_review" stale="true" population="patients with chronic renal failure" measured-compound="buflomedil" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 2 extracted.

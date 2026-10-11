@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the val
 Grasela TH et al., Development of a population pharmacokin…, European journal of clinica… (1993)
   ·  DOI: [10.1007/BF00315502](https://doi.org/10.1007/BF00315502)
 
-## Model component
-<dbs-pgx drug="tianeptine" model-id="Tianeptine_Grasela1993_reference" status="rejected" stale="true" population="patients in nine tianeptine PK studies (including alcoholics and depressed patients)" measured-compound="tianeptine" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="tianeptine" model-id="Tianeptine_Grasela1993_reference" status="rejected" stale="true" population="patients in nine tianeptine PK studies (including alcoholics and depressed patients)" measured-compound="tianeptine" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

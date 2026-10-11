@@ -21,8 +21,7 @@
 Isberner N et al., Ruxolitinib exposure in patients with a…, Cancer chemotherapy and pha… (2021)
   ·  DOI: [10.1007/s00280-021-04351-w](https://doi.org/10.1007/s00280-021-04351-w)
 
-## Model component
-<dbs-pgx drug="ruxolitinib" model-id="Ruxolitinib_Isberner2021_reference" status="rejected" stale="false" population="patients with acute or chronic graft versus host disease" measured-compound="ruxolitinib" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="ruxolitinib" model-id="Ruxolitinib_Isberner2021_reference" status="rejected" stale="false" population="patients with acute or chronic graft versus host disease" measured-compound="ruxolitinib" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

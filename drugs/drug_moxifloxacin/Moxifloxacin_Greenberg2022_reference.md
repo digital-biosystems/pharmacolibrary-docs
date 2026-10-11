@@ -31,8 +31,7 @@ Independently confirmed by `gpt-oss:120b`.
 Greenberg RG et al., Population Pharmacokinetics of Moxiflox…, Paediatric drugs (2022)
   ·  DOI: [10.1007/s40272-022-00493-3](https://doi.org/10.1007/s40272-022-00493-3)
 
-## Model component
-<dbs-pgx drug="moxifloxacin" model-id="Moxifloxacin_Greenberg2022_reference" status="extracted" stale="true" population="children" measured-compound="moxifloxacin" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="moxifloxacin" model-id="Moxifloxacin_Greenberg2022_reference" status="extracted" stale="true" population="children" measured-compound="moxifloxacin" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 5 extracted.

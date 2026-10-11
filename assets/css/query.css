@@ -1,0 +1,95 @@
+/* ── query page ───────────────────────────────────────────────────────────
+   Only the /query route uses these; the engine itself (sql.js, 688 kB) is
+   fetched by the plugin below and never on any other page. */
+.pkq-status { padding: 10px 12px; border-radius: 6px; background: #f1f5f9;
+  color: #475569; font-size: 14px; margin: 12px 0; }
+.pkq-status.err { background: #fef2f2; color: #b91c1c; }
+.pkq-btn { font: inherit; font-size: 13px; padding: 5px 10px; cursor: pointer;
+  border: 1px solid #cbd5e1; border-radius: 999px; background: #fff; color: #334155; }
+.pkq-btn:hover { border-color: var(--theme-color, #0074d9); color: var(--theme-color, #0074d9); }
+.pkq-btn.pkq-run { border-radius: 6px; background: var(--theme-color, #0074d9);
+  color: #fff; border-color: transparent; padding: 6px 16px; }
+.pkq-row { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; margin: 10px 0; }
+.pkq-row label { font-size: 13px; color: #64748b; }
+.pkq-row input { font: inherit; font-size: 13px; padding: 5px 8px; min-width: 190px;
+  border: 1px solid #cbd5e1; border-radius: 6px; }
+.pkq-meta { font-size: 12.5px; color: #64748b; }
+/* the chat: a scrolling conversation above a prompt bar, one screen tall */
+#pkq-ui { display: flex; flex-direction: column; height: calc(100vh - 150px); min-height: 420px;
+  border: 1px solid #e2e8f0; border-radius: 10px; overflow: hidden; background: #fff; }
+#pkq-ui[hidden] { display: none; }
+.pkq-log { flex: 1; overflow-y: auto; padding: 14px 14px 6px; scroll-behavior: smooth; }
+.pkq-empty { color: #475569; font-size: 14.5px; max-width: 640px; margin: 8vh auto 0; text-align: center; }
+.pkq-empty .pkq-chips { justify-content: center; margin-top: 14px; }
+.pkq-turn { margin: 0 0 18px; }
+.pkq-q { margin: 0 0 8px auto; max-width: 80%; width: fit-content; padding: 8px 13px;
+  border-radius: 14px 14px 3px 14px; background: var(--theme-color, #0074d9); color: #fff;
+  font-size: 14.5px; white-space: pre-wrap; overflow-wrap: anywhere; }
+.pkq-a { max-width: 100%; padding: 10px 13px; border-radius: 14px 14px 14px 3px;
+  background: #f8fafc; border: 1px solid #e2e8f0; font-size: 14.5px; }
+.pkq-a .pkq-text { line-height: 1.55; }
+.pkq-a .pkq-text.pending { color: #94a3b8; }
+.pkq-a .pkq-text.streaming::after { content: ' ▍'; color: #64748b; }
+.pkq-thinking-box { box-sizing: border-box; max-height: 2.8em; overflow-y: auto; overflow-wrap: anywhere;
+  margin: 0 0 7px; padding: 4px 7px; border-left: 2px solid #cbd5e1; border-radius: 3px;
+  background: #f1f5f9; color: #64748b; font-size: 11px; line-height: 1.35; white-space: pre-wrap; }
+.pkq-thinking-box[hidden] { display: none; }
+.pkq-thinking-label { font-weight: 600; color: #475569; }
+.pkq-sim { margin: 8px 0 0; }
+.pkq-simchart { width: 100%; max-width: 640px; height: auto; display: block; font-size: 11px; fill: #64748b; }
+.pkq-simchart .grid { stroke: #e2e8f0; stroke-width: 1; }
+.pkq-simchart path { fill: none; stroke-linejoin: round; }
+.pkq-simchart path.main { stroke: #2563eb; stroke-width: 2; }
+.pkq-simchart path.other { stroke: #94a3b8; stroke-width: 1; opacity: .7; }
+.pkq-sim-main { color: #2563eb; } .pkq-sim-other { color: #94a3b8; }
+.pkq-sources { margin: 4px 0 0; padding-left: 22px; font-size: 12.5px; color: #475569; }
+.pkq-sources li { margin: 0 0 6px; }
+.pkq-source-text { color: #64748b; font-size: 12px; line-height: 1.4; }
+.pkq-a .pkq-sub { display: block; margin-top: 6px; font-size: 12.5px; color: #64748b; }
+.pkq-chips { display: flex; flex-wrap: wrap; gap: 5px; margin: 0 0 6px; }
+.pkq-chip { font-size: 11.5px; padding: 1px 8px; border-radius: 999px; background: #eef2ff;
+  color: #3730a3; border: 1px solid #c7d2fe; }
+.pkq-chip.warn { background: #fffbeb; color: #92400e; border-color: #fde68a; }
+button.pkq-chip { cursor: pointer; font: inherit; font-size: 12.5px; padding: 3px 10px; }
+button.pkq-chip:hover { border-color: var(--theme-color, #0074d9); }
+.pkq-table { margin-top: 8px; max-height: 300px; overflow: auto; border: 1px solid #e2e8f0;
+  border-radius: 6px; background: #fff; }
+.pkq-table table { font-size: 12.5px; border-collapse: collapse; margin: 0; width: 100%; display: table; }
+.pkq-table th { text-align: left; background: #f1f5f9; position: sticky; top: 0; z-index: 1; }
+.pkq-table th, .pkq-table td { padding: 3px 8px; border-bottom: 1px solid #e2e8f0;
+  white-space: nowrap; max-width: 320px; overflow: hidden; text-overflow: ellipsis; }
+.pkq-table td.num { text-align: right; font-variant-numeric: tabular-nums; }
+.pkq-sqlbox { margin-top: 6px; font-size: 12.5px; }
+.pkq-sqlbox summary { cursor: pointer; color: #64748b; }
+.pkq-sqlbox textarea { width: 100%; min-height: 110px; margin-top: 6px; padding: 8px;
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 12px;
+  border: 1px solid #cbd5e1; border-radius: 6px; background: #f8fafc; color: #0f172a; }
+.pkq-sqlbox .err { color: #b91c1c; }
+.pkq-bar { display: flex; gap: 8px; align-items: center; padding: 10px; border-top: 1px solid #e2e8f0;
+  background: #fff; }
+.pkq-bar input { flex: 1; min-width: 0; font: inherit; font-size: 15px; padding: 9px 12px;
+  border: 1px solid #cbd5e1; border-radius: 999px; }
+.pkq-bar input:focus { outline: none; border-color: var(--theme-color, #0074d9); }
+.pkq-send { font: inherit; font-size: 14px; padding: 8px 16px; border-radius: 999px; cursor: pointer;
+  background: var(--theme-color, #0074d9); color: #fff; border: 0; }
+.pkq-send:disabled { opacity: .5; cursor: default; }
+.pkq-mode { font: inherit; font-size: 12px; padding: 7px 8px; border-radius: 999px; cursor: pointer;
+  border: 1px solid #cbd5e1; background: #fff; color: #475569; max-width: 230px; }
+.pkq-thinking-control { display: inline-flex; align-items: center; gap: 5px; white-space: nowrap;
+  font-size: 12px; color: #64748b; cursor: pointer; }
+.pkq-thinking-control[hidden] { display: none; }
+.pkq-thinking-control input { width: 13px; height: 13px; margin: 0; }
+.pkq-llmnote { margin: 0; padding: 0 16px 8px; font-size: 11.5px; line-height: 1.45; color: #94a3b8;
+  background: #fff; }
+.pkq-llmnote .pkq-llmstatus { color: #166534; font-weight: 600; }
+.pkq-llmnote:empty { display: none; }
+.pkq-mode.on { border-color: #86efac; background: #f0fdf4; color: #166534; }
+/* the database description sits below the chat, small */
+.markdown-section #pkq ~ h2 { font-size: 15px; margin-top: 28px; color: #475569; border: 0; }
+.markdown-section #pkq ~ p, .markdown-section #pkq ~ table { font-size: 12.5px; color: #64748b; }
+.markdown-section #pkq ~ table td, .markdown-section #pkq ~ table th { padding: 3px 8px; }
+@media (max-width: 600px) {
+  #pkq-ui { height: calc(100vh - 110px); border-radius: 0; border-left: 0; border-right: 0; }
+  .pkq-bar { flex-wrap: wrap; }
+  .pkq-mode { order: -1; flex: 1 0 100%; max-width: none; }
+}

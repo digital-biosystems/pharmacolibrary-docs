@@ -31,8 +31,7 @@ Although the paper reports edoxaban values such as CL/F 42.87 L/h, Ka 3.71 1/h, 
 Zou P et al., Population pharmacokinetics and pharmac…, CPT: pharmacometrics & syst… (2025)
   ·  DOI: [10.1002/psp4.13248](https://doi.org/10.1002/psp4.13248)
 
-## Model component
-<dbs-pgx drug="edoxaban" model-id="Edoxaban_Zou2025_reference" status="extracted" stale="true" population="pediatric patients" measured-compound="edoxaban" parameterization="apparent" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="edoxaban" model-id="Edoxaban_Zou2025_reference" status="extracted" stale="true" population="pediatric patients" measured-compound="edoxaban" parameterization="apparent" topology="2C"></div>
 
 **Model structure:** 2-compartment, oral mammillary model — template `PK_2C_enteral`.  
 **Parameters:** 6 extracted, plus 2 covariate effects.

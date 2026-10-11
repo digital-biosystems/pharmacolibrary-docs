@@ -21,8 +21,7 @@
 Balyan R et al., Hydromorphone population pharmacokineti…, Paediatric anaesthesia (2020)
   ·  DOI: [10.1111/pan.13975](https://doi.org/10.1111/pan.13975)
 
-## Model component
-<dbs-pgx drug="hydromorphone" model-id="Hydromorphone_Balyan2020_reference" status="extracted" stale="false" population="pediatric surgical patients" measured-compound="hydromorphone" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="hydromorphone" model-id="Hydromorphone_Balyan2020_reference" status="extracted" stale="false" population="pediatric surgical patients" measured-compound="hydromorphone" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment, IV mammillary model — template `PK_2C`.  
 **Parameters:** 4 extracted.

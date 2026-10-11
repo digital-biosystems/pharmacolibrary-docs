@@ -21,8 +21,7 @@
 Hsyu PH et al., Population pharmacokinetic and pharmaco…, Drug metabolism and pharmac… (2014)
   ·  DOI: [10.2133/dmpk.DMPK-13-RG-126](https://doi.org/10.2133/dmpk.DMPK-13-RG-126)
 
-## Model component
-<dbs-pgx drug="bosutinib" model-id="Bosutinib_Hsyu2014_reference" status="needs_review" stale="false" population="patients with solid tumors or Philadelphia chromosome-positive leukemia" measured-compound="bosutinib" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="bosutinib" model-id="Bosutinib_Hsyu2014_reference" status="needs_review" stale="false" population="patients with solid tumors or Philadelphia chromosome-positive leukemia" measured-compound="bosutinib" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 4 extracted.

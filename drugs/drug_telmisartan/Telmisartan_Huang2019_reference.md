@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on `parame
 Huang L et al., Effects of UGT1A1 Polymorphism, Gender…, European journal of drug me… (2019)
   ·  DOI: [10.1007/s13318-019-00567-7](https://doi.org/10.1007/s13318-019-00567-7)
 
-## Model component
-<dbs-pgx drug="telmisartan" model-id="Telmisartan_Huang2019_reference" status="model_quarantined" stale="false" population="Chinese patients with hypertension" measured-compound="telmisartan" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="telmisartan" model-id="Telmisartan_Huang2019_reference" status="model_quarantined" stale="false" population="Chinese patients with hypertension" measured-compound="telmisartan" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 7 extracted, plus 1 covariate effect.

@@ -27,8 +27,7 @@
 Osawa M et al., Population Pharmacokinetic Analysis for…, Journal of clinical pharmac… (2018)
   ·  DOI: [10.1002/jcph.1274](https://doi.org/10.1002/jcph.1274)
 
-## Model component
-<dbs-pgx drug="asunaprevir" model-id="Asunaprevir_Osawa2018_reference" status="extracted" stale="true" population="Japanese adults with chronic HCV genotype 1 infection" measured-compound="asunaprevir" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="asunaprevir" model-id="Asunaprevir_Osawa2018_reference" status="extracted" stale="true" population="Japanese adults with chronic HCV genotype 1 infection" measured-compound="asunaprevir" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 3 extracted.

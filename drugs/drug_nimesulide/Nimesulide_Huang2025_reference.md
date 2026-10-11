@@ -23,8 +23,7 @@
 Huang L et al., Enterohepatic Recirculation-Mediated Re…, Toxics (2025)
   ·  DOI: [10.3390/toxics13110919](https://doi.org/10.3390/toxics13110919)
 
-## Model component
-<dbs-pgx drug="nimesulide" model-id="Nimesulide_Huang2025_reference" status="extracted" stale="false" population="" measured-compound="nimesulide" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="nimesulide" model-id="Nimesulide_Huang2025_reference" status="extracted" stale="false" population="" measured-compound="nimesulide" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 2 extracted.

@@ -29,8 +29,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the lin
 Yip VLM et al., Evaluation of clinical and genetic fact…, British journal of clinical… (2021)
   ·  DOI: [10.1111/bcp.14667](https://doi.org/10.1111/bcp.14667)
 
-## Model component
-<dbs-pgx drug="carbamazepine" model-id="Carbamazepine_Yip2021_reference" status="rejected" stale="false" population="healthy volunteers and epilepsy patients" measured-compound="carbamazepine" parameterization="mechanistic" topology="general_linear"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="carbamazepine" model-id="Carbamazepine_Yip2021_reference" status="rejected" stale="false" population="healthy volunteers and epilepsy patients" measured-compound="carbamazepine" parameterization="mechanistic" topology="general_linear"></div>
 
 **Model structure:** general linear; no model was built for this record.  
 **Parameters:** 0 extracted.

@@ -21,8 +21,7 @@
 Wada R et al., Population pharmacokinetic analysis of…, CPT: pharmacometrics & syst… (2023)
   ·  DOI: [10.1002/psp4.12996](https://doi.org/10.1002/psp4.12996)
 
-## Model component
-<dbs-pgx drug="sparsentan" model-id="Sparsentan_Wada2023_reference" status="extracted" stale="false" population="healthy volunteers and patients with focal segmental glomerulosclerosis" measured-compound="sparsentan" parameterization="apparent" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="sparsentan" model-id="Sparsentan_Wada2023_reference" status="extracted" stale="false" population="healthy volunteers and patients with focal segmental glomerulosclerosis" measured-compound="sparsentan" parameterization="apparent" topology="2C"></div>
 
 **Model structure:** 2-compartment, oral mammillary model — template `PK_2C_enteral`.  
 **Parameters:** 8 extracted, plus 3 covariate effects.

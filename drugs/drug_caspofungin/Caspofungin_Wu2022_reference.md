@@ -21,8 +21,7 @@
 Wu Z et al., Population Pharmacokinetics of Caspofun…, Antimicrobial agents and ch… (2022)
   ·  DOI: [10.1128/aac.02249-21](https://doi.org/10.1128/aac.02249-21)
 
-## Model component
-<dbs-pgx drug="caspofungin" model-id="Caspofungin_Wu2022_reference" status="rejected" stale="false" population="heart transplant and non-heart transplant patients" measured-compound="caspofungin" parameterization="apparent_wrt_Fm" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="caspofungin" model-id="Caspofungin_Wu2022_reference" status="rejected" stale="false" population="heart transplant and non-heart transplant patients" measured-compound="caspofungin" parameterization="apparent_wrt_Fm" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Lode H et al., Comparative pharmacokinetics of intrave…, The Journal of antimicrobia… (1988)
   ·  DOI: [10.1093/jac/22.supplement_c.73](https://doi.org/10.1093/jac/22.supplement_c.73)
 
-## Model component
-<dbs-pgx drug="ciprofloxacin" model-id="Ciprofloxacin_Lode1988_reference" status="rejected" stale="true" population="healthy volunteers" measured-compound="ciprofloxacin" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="ciprofloxacin" model-id="Ciprofloxacin_Lode1988_reference" status="rejected" stale="true" population="healthy volunteers" measured-compound="ciprofloxacin" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

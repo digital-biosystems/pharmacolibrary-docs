@@ -30,8 +30,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 ## Citation
 Zuidema J et al., Pharmacokinetics of etofylline after in…, International journal of cl… (1981)
 
-## Model component
-<dbs-pgx drug="etofylline nicotinate" model-id="EtofyllineNicotinate_Zuidema1981_reference" status="extracted" stale="true" population="healthy volunteers" measured-compound="etofylline" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="etofylline nicotinate" model-id="EtofyllineNicotinate_Zuidema1981_reference" status="extracted" stale="true" population="healthy volunteers" measured-compound="etofylline" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameters:** 6 extracted.

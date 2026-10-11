@@ -31,8 +31,7 @@ No clearance, volume or rate constant of the model is reported in it. Only the a
 Montazeri A et al., Population pharmacokinetics of topoteca…, Cancer chemotherapy and pha… (2000)
   ·  DOI: [10.1007/s002800000161](https://doi.org/10.1007/s002800000161)
 
-## Model component
-<dbs-pgx drug="topotecan" model-id="Topotecan_Montazeri2000_reference" status="rejected" stale="true" population="women with metastatic epithelial ovarian cancer" measured-compound="total topotecan" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="topotecan" model-id="Topotecan_Montazeri2000_reference" status="rejected" stale="true" population="women with metastatic epithelial ovarian cancer" measured-compound="total topotecan" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

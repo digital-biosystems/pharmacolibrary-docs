@@ -33,8 +33,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which m
 Modi NB et al., Application of a system analysis approa…, Journal of pharmaceutical s… (1993)
   ·  DOI: [10.1002/jps.2600820707](https://doi.org/10.1002/jps.2600820707)
 
-## Model component
-<dbs-pgx drug="nicardipine" model-id="Nicardipine_Modi1993_reference" status="extracted" stale="true" population="healthy males" measured-compound="nicardipine" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="nicardipine" model-id="Nicardipine_Modi1993_reference" status="extracted" stale="true" population="healthy males" measured-compound="nicardipine" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameters:** 2 extracted.

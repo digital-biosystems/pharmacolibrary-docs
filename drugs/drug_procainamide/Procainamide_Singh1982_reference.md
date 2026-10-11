@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the val
 Singh S et al., Procainamide elimination kinetics in pe…, Clinical pharmacology and t… (1982)
   ·  DOI: [10.1038/clpt.1982.210](https://doi.org/10.1038/clpt.1982.210)
 
-## Model component
-<dbs-pgx drug="procainamide" model-id="Procainamide_Singh1982_reference" status="extracted" stale="true" population="pediatric patients" measured-compound="procainamide" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="procainamide" model-id="Procainamide_Singh1982_reference" status="extracted" stale="true" population="pediatric patients" measured-compound="procainamide" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameters:** 5 extracted.

@@ -22,8 +22,7 @@
 ## Citation
 Ito K et al., [Fundamental and clinical studies of im…, The Japanese journal of ant… (1986)
 
-## Model component
-<dbs-pgx drug="Imipenem" model-id="Imipenem_Ito1986_reference" status="rejected" stale="false" population="patients undergoing hysterectomy and cervical cancer surgery" measured-compound="imipenem, cilastatin" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="Imipenem" model-id="Imipenem_Ito1986_reference" status="rejected" stale="false" population="patients undergoing hysterectomy and cervical cancer surgery" measured-compound="imipenem, cilastatin" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

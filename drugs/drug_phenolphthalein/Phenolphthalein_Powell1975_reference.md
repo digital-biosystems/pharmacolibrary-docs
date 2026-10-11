@@ -30,8 +30,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Powell GM et al., A model system for investigating the bi…, The Biochemical journal (1975)
   ·  DOI: [10.1042/bj1480303](https://doi.org/10.1042/bj1480303)
 
-## Model component
-<dbs-pgx drug="phenolphthalein" model-id="Phenolphthalein_Powell1975_reference" status="rejected" stale="false" population="male MRC hooded rats" measured-compound="phenolphthalein di[35S]sulphate" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="phenolphthalein" model-id="Phenolphthalein_Powell1975_reference" status="rejected" stale="false" population="male MRC hooded rats" measured-compound="phenolphthalein di[35S]sulphate" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

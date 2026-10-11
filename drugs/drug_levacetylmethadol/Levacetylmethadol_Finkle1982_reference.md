@@ -20,8 +20,7 @@
 Finkle BS et al., Plasma and urine disposition of 1-alpha…, Journal of analytical toxic… (1982)
   ·  DOI: [10.1093/jat/6.2.100](https://doi.org/10.1093/jat/6.2.100)
 
-## Model component
-<dbs-pgx drug="levacetylmethadol" model-id="Levacetylmethadol_Finkle1982_reference" status="rejected" stale="false" population="human subjects (opioid-dependent/maintenance)" measured-compound="levacetylmethadol" parameterization="mechanistic" topology="general_linear"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="levacetylmethadol" model-id="Levacetylmethadol_Finkle1982_reference" status="rejected" stale="false" population="human subjects (opioid-dependent/maintenance)" measured-compound="levacetylmethadol" parameterization="mechanistic" topology="general_linear"></div>
 
 **Model structure:** general linear; no model was built for this record.  
 **Parameters:** 3 extracted.

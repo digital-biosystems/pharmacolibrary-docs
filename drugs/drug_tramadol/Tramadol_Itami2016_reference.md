@@ -33,8 +33,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on paramet
 Itami T et al., Comparison of pharmacokinetics of trama…, The Journal of veterinary m… (2016)
   ·  DOI: [10.1292/jvms.15-0638](https://doi.org/10.1292/jvms.15-0638)
 
-## Model component
-<dbs-pgx drug="tramadol" model-id="Tramadol_Itami2016_reference" status="rejected" stale="true" population="young and middle-aged dogs" measured-compound="tramadol" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="tramadol" model-id="Tramadol_Itami2016_reference" status="rejected" stale="true" population="young and middle-aged dogs" measured-compound="tramadol" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment; no model was built for this record.  
 **Parameters:** 3 extracted.

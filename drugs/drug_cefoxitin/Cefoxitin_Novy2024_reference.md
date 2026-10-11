@@ -21,8 +21,7 @@
 Novy E et al., Population pharmacokinetics of prophyla…, Anaesthesia, critical care… (2024)
   ·  DOI: [10.1016/j.accpm.2024.101376](https://doi.org/10.1016/j.accpm.2024.101376)
 
-## Model component
-<dbs-pgx drug="cefoxitin" model-id="Cefoxitin_Novy2024_reference" status="extracted" stale="false" population="obese patients undergoing elective bariatric surgery" measured-compound="cefoxitin" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="cefoxitin" model-id="Cefoxitin_Novy2024_reference" status="extracted" stale="false" population="obese patients undergoing elective bariatric surgery" measured-compound="cefoxitin" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 3 extracted.

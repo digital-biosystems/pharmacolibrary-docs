@@ -21,8 +21,7 @@
 Tan Z et al., Model-Informed Dose Optimization of Paz…, Clinical pharmacokinetics (2025)
   ·  DOI: [10.1007/s40262-025-01504-5](https://doi.org/10.1007/s40262-025-01504-5)
 
-## Model component
-<dbs-pgx drug="pazopanib" model-id="Pazopanib_Tan2025_reference" status="needs_review" stale="false" population="real-world patients with mRCC and soft tissue sarcoma" measured-compound="pazopanib" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="pazopanib" model-id="Pazopanib_Tan2025_reference" status="needs_review" stale="false" population="real-world patients with mRCC and soft tissue sarcoma" measured-compound="pazopanib" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 4 extracted.

@@ -20,8 +20,7 @@
 Chigutsa E et al., Development and Application of a Mechan…, CPT: pharmacometrics & syst… (2020)
   ·  DOI: [10.1002/psp4.12544](https://doi.org/10.1002/psp4.12544)
 
-## Model component
-<dbs-pgx drug="abemaciclib" model-id="Abemaciclib_Chigutsa2020_estimate_see" status="rejected" stale="false" population="healthy subjects and patients with cancer" measured-compound="abemaciclib" parameterization="mechanistic" topology="general_linear"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="abemaciclib" model-id="Abemaciclib_Chigutsa2020_estimate_see" status="rejected" stale="false" population="healthy subjects and patients with cancer" measured-compound="abemaciclib" parameterization="mechanistic" topology="general_linear"></div>
 
 **Model structure:** general linear; no model was built for this record.  
 **Parameters:** 13 extracted, plus 6 covariate effects.

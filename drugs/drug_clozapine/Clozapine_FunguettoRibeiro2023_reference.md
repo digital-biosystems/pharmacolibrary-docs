@@ -23,8 +23,7 @@
 Funguetto-Ribeiro AC et al., Clozapine-loaded nanocapsules improve a…, Pharmaceutical research (2023)
   ·  DOI: [10.1007/s11095-023-03551-8](https://doi.org/10.1007/s11095-023-03551-8)
 
-## Model component
-<dbs-pgx drug="clozapine" model-id="Clozapine_FunguettoRibeiro2023_reference" status="rejected" stale="false" population="male Wistar rats" measured-compound="clozapine" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="clozapine" model-id="Clozapine_FunguettoRibeiro2023_reference" status="rejected" stale="false" population="male Wistar rats" measured-compound="clozapine" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 1 extracted.

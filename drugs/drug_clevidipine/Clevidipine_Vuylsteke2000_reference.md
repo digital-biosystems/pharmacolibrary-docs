@@ -31,8 +31,7 @@ Independently confirmed by `gpt-oss:120b`.
 Vuylsteke A et al., Pharmacokinetics and pulmonary extracti…, British journal of anaesthe… (2000)
   ·  DOI: [10.1093/bja/85.5.683](https://doi.org/10.1093/bja/85.5.683)
 
-## Model component
-<dbs-pgx drug="clevidipine" model-id="Clevidipine_Vuylsteke2000_reference" status="extracted" stale="true" population="patients undergoing cardiac surgery" measured-compound="clevidipine" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="clevidipine" model-id="Clevidipine_Vuylsteke2000_reference" status="extracted" stale="true" population="patients undergoing cardiac surgery" measured-compound="clevidipine" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameters:** 3 extracted.

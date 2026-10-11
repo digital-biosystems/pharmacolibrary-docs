@@ -21,8 +21,7 @@
 Ju G et al., Model-Informed Precision Dosing of Ison…, Drug design, development an… (2024)
   ·  DOI: [10.2147/DDDT.S434919](https://doi.org/10.2147/DDDT.S434919)
 
-## Model component
-<dbs-pgx drug="isoniazid" model-id="Isoniazid_Ju2024_reference" status="needs_review" stale="false" population="adults and children with tuberculosis" measured-compound="isoniazid" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="isoniazid" model-id="Isoniazid_Ju2024_reference" status="needs_review" stale="false" population="adults and children with tuberculosis" measured-compound="isoniazid" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

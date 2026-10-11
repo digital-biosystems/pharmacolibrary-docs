@@ -21,8 +21,7 @@
 Jia M et al., Population pharmacokinetics of rivaroxa…, European journal of clinica… (2026)
   ·  DOI: [10.1007/s00228-026-04034-6](https://doi.org/10.1007/s00228-026-04034-6)
 
-## Model component
-<dbs-pgx drug="norethisterone" model-id="Norethisterone_Jia2026_reference" status="extracted" stale="false" population="" measured-compound="norethisterone" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="norethisterone" model-id="Norethisterone_Jia2026_reference" status="extracted" stale="false" population="" measured-compound="norethisterone" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 3 extracted.

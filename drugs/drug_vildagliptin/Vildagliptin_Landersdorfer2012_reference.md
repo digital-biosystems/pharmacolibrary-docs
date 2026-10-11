@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on `parame
 Landersdorfer CB et al., Mechanism-based population pharmacokine…, British journal of clinical… (2012)
   ·  DOI: [10.1111/j.1365-2125.2011.04108.x](https://doi.org/10.1111/j.1365-2125.2011.04108.x)
 
-## Model component
-<dbs-pgx drug="vildagliptin" model-id="Vildagliptin_Landersdorfer2012_reference" status="rejected" stale="true" population="type 2 diabetic patients" measured-compound="vildagliptin" parameterization="mechanistic" topology="general_linear"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="vildagliptin" model-id="Vildagliptin_Landersdorfer2012_reference" status="rejected" stale="true" population="type 2 diabetic patients" measured-compound="vildagliptin" parameterization="mechanistic" topology="general_linear"></div>
 
 **Model structure:** general linear; no model was built for this record.  
 **Parameters:** 3 extracted.

@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 ## Citation
 Tomono Y et al., Pharmacokinetic study of deuterium-labe…, International journal of cl… (1986)
 
-## Model component
-<dbs-pgx drug="ubidecarenone" model-id="Ubidecarenone_Tomono1986_reference" status="rejected" stale="true" population="healthy male subjects" measured-compound="coenzyme Q10" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="ubidecarenone" model-id="Ubidecarenone_Tomono1986_reference" status="rejected" stale="true" population="healthy male subjects" measured-compound="coenzyme Q10" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 2 extracted.

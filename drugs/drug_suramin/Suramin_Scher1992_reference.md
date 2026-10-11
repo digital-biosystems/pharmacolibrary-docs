@@ -20,8 +20,7 @@
 ## Citation
 Scher HI et al., Use of adaptive control with feedback t…, Cancer research (1992)
 
-## Model component
-<dbs-pgx drug="Suramin" model-id="Suramin_Scher1992_reference" status="rejected" stale="false" population="adult cancer patients" measured-compound="suramin" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="Suramin" model-id="Suramin_Scher1992_reference" status="rejected" stale="false" population="adult cancer patients" measured-compound="suramin" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment; no model was built for this record.  
 **Parameters:** 5 extracted.

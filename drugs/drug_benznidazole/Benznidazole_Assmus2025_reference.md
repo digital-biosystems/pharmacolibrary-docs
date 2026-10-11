@@ -23,8 +23,7 @@
 Assmus F et al., Pharmacokinetic-pharmacodynamic modelin…, PLoS neglected tropical dis… (2025)
   ·  DOI: [10.1371/journal.pntd.0012968](https://doi.org/10.1371/journal.pntd.0012968)
 
-## Model component
-<dbs-pgx drug="benznidazole" model-id="Benznidazole_Assmus2025_reference" status="rejected" stale="false" population="uninfected BALB/c mice" measured-compound="benznidazole" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="benznidazole" model-id="Benznidazole_Assmus2025_reference" status="rejected" stale="false" population="uninfected BALB/c mice" measured-compound="benznidazole" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 1 extracted.

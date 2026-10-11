@@ -23,8 +23,7 @@
 White NJ et al., Quinine disposition kinetics, British journal of clinical… (1983)
   ·  DOI: [10.1111/j.1365-2125.1983.tb02184.x](https://doi.org/10.1111/j.1365-2125.1983.tb02184.x)
 
-## Model component
-<dbs-pgx drug="quinine" model-id="Quinine_White1983_reference" status="rejected" stale="false" population="healthy male volunteers" measured-compound="quinine" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="quinine" model-id="Quinine_White1983_reference" status="rejected" stale="false" population="healthy male volunteers" measured-compound="quinine" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 5 extracted.

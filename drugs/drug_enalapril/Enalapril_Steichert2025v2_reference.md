@@ -33,8 +33,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on `parame
 Steichert M et al., Angiotensin II/Angiotensin I Ratio as a…, Pharmaceutics (2025)
   ·  DOI: [10.3390/pharmaceutics17101345](https://doi.org/10.3390/pharmaceutics17101345)
 
-## Model component
-<dbs-pgx drug="enalapril" model-id="Enalapril_Steichert2025v2_reference" status="extracted" stale="true" population="healthy adults and children with heart failure" measured-compound="enalaprilat" parameterization="apparent" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="enalapril" model-id="Enalapril_Steichert2025v2_reference" status="extracted" stale="true" population="healthy adults and children with heart failure" measured-compound="enalaprilat" parameterization="apparent" topology="2C"></div>
 
 **Model structure:** 2-compartment, oral mammillary model — template `PK_2C_enteral`.  
 **Parameters:** 7 extracted.

@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on paramet
 Allegaert K et al., Neonatal clinical pharmacology, Paediatric anaesthesia (2014)
   ·  DOI: [10.1111/pan.12176](https://doi.org/10.1111/pan.12176)
 
-## Model component
-<dbs-pgx drug="paracetamol" model-id="Paracetamol_Allegaert2014_reference" status="rejected" stale="false" population="neonates" measured-compound="paracetamol" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="paracetamol" model-id="Paracetamol_Allegaert2014_reference" status="rejected" stale="false" population="neonates" measured-compound="paracetamol" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment; no model was built for this record.  
 **Parameters:** 3 extracted.

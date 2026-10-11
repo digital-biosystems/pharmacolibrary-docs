@@ -21,8 +21,7 @@
 Proctor JR et al., Albumin Levels Are Predictive of Cachex…, CPT: pharmacometrics & syst… (2026)
   ·  DOI: [10.1002/psp4.70185](https://doi.org/10.1002/psp4.70185)
 
-## Model component
-<dbs-pgx drug="durvalumab" model-id="Durvalumab_Proctor2026_reference" status="rejected" stale="false" population="patients with advanced cancer treated with durvalumab" measured-compound="durvalumab" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="durvalumab" model-id="Durvalumab_Proctor2026_reference" status="rejected" stale="false" population="patients with advanced cancer treated with durvalumab" measured-compound="durvalumab" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 2 extracted.

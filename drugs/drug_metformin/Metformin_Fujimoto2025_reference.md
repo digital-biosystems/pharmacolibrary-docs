@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on paramet
 Fujimoto K et al., Impact of Administration Time Errors on…, Clinical and translational… (2025)
   ·  DOI: [10.1111/cts.70448](https://doi.org/10.1111/cts.70448)
 
-## Model component
-<dbs-pgx drug="metformin" model-id="Metformin_Fujimoto2025_reference" status="extracted" stale="true" population="simulated data" measured-compound="metformin" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="metformin" model-id="Metformin_Fujimoto2025_reference" status="extracted" stale="true" population="simulated data" measured-compound="metformin" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 3 extracted.

@@ -29,8 +29,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Collins KS et al., A Population Pharmacokinetic Approach t…, CPT: pharmacometrics & syst… (2025)
   ·  DOI: [10.1002/psp4.70116](https://doi.org/10.1002/psp4.70116)
 
-## Model component
-<dbs-pgx drug="midazolam" model-id="Midazolam_Collins2025_reference" status="rejected" stale="false" population="healthy volunteers" measured-compound="midazolam" parameterization="apparent_wrt_Fm" topology="parent_metabolite"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="midazolam" model-id="Midazolam_Collins2025_reference" status="rejected" stale="false" population="healthy volunteers" measured-compound="midazolam" parameterization="apparent_wrt_Fm" topology="parent_metabolite"></div>
 
 **Model structure:** parent + metabolite; no model was built for this record.  
 **Parameters:** 0 extracted.

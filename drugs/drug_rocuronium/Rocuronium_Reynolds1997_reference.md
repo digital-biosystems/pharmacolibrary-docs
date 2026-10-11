@@ -21,8 +21,7 @@
 Reynolds LM et al., Bioavailability of intramuscular rocuro…, Anesthesiology (1997)
   ·  DOI: [10.1097/00000542-199711000-00014](https://doi.org/10.1097/00000542-199711000-00014)
 
-## Model component
-<dbs-pgx drug="Rocuronium" model-id="Rocuronium_Reynolds1997_reference" status="needs_review" stale="false" population="infants and children" measured-compound="rocuronium" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="Rocuronium" model-id="Rocuronium_Reynolds1997_reference" status="needs_review" stale="false" population="infants and children" measured-compound="rocuronium" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 4 extracted.

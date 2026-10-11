@@ -29,8 +29,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the val
 Terranova N et al., Population pharmacokinetics of ATR inhi…, Cancer chemotherapy and pha… (2021)
   ·  DOI: [10.1007/s00280-020-04184-z](https://doi.org/10.1007/s00280-020-04184-z)
 
-## Model component
-<dbs-pgx drug="gemcitabine" model-id="Gemcitabine_Terranova2021_reference" status="extracted" stale="true" population="" measured-compound="gemcitabine" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="gemcitabine" model-id="Gemcitabine_Terranova2021_reference" status="extracted" stale="true" population="" measured-compound="gemcitabine" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment, IV mammillary model — template `PK_2C`.  
 **Parameters:** 4 extracted.

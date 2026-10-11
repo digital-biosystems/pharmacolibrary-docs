@@ -22,8 +22,7 @@
 Zhu P et al., Application of gas chromatography-mass…, Biomedical and environmenta… (2014)
   ·  DOI: [10.3967/bes2014.035](https://doi.org/10.3967/bes2014.035)
 
-## Model component
-<dbs-pgx drug="decamethrin" model-id="Decamethrin_Zhu2014_reference" status="rejected" stale="false" population="miniature pigs" measured-compound="deltamethrin" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="decamethrin" model-id="Decamethrin_Zhu2014_reference" status="rejected" stale="false" population="miniature pigs" measured-compound="deltamethrin" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 3 extracted.

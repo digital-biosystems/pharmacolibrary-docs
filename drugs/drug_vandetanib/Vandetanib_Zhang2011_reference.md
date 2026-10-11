@@ -20,8 +20,7 @@
 Zhang L et al., Pharmacokinetics and tolerability of va…, Clinical therapeutics (2011)
   ·  DOI: [10.1016/j.clinthera.2011.04.005](https://doi.org/10.1016/j.clinthera.2011.04.005)
 
-## Model component
-<dbs-pgx drug="vandetanib" model-id="Vandetanib_Zhang2011_reference" status="rejected" stale="false" population="Chinese, Western, and Japanese patients with solid malignant tumors" measured-compound="vandetanib" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="vandetanib" model-id="Vandetanib_Zhang2011_reference" status="rejected" stale="false" population="Chinese, Western, and Japanese patients with solid malignant tumors" measured-compound="vandetanib" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

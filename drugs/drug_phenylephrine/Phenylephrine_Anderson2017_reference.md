@@ -30,8 +30,7 @@ Independently confirmed by `gpt-oss:120b`.
 Anderson BJ et al., The phenylephrine concentration-respons…, Paediatric anaesthesia (2017)
   ·  DOI: [10.1111/pan.13221](https://doi.org/10.1111/pan.13221)
 
-## Model component
-<dbs-pgx drug="phenylephrine" model-id="Phenylephrine_Anderson2017_reference" status="needs_review" stale="true" population="children and adults" measured-compound="phenylephrine" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="phenylephrine" model-id="Phenylephrine_Anderson2017_reference" status="needs_review" stale="true" population="children and adults" measured-compound="phenylephrine" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment; no model was built for this record.  
 **Parameters:** 7 extracted.

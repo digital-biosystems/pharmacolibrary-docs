@@ -19,8 +19,7 @@
 ## Citation
 Cascone S et al., Pharmacokinetics of Remifentanil: a thr…, Translational medicine @ Un… (2013)
 
-## Model component
-<dbs-pgx drug="remifentanil" model-id="Remifentanil_Cascone2013_reference" status="rejected" stale="false" population="" measured-compound="remifentanil" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="remifentanil" model-id="Remifentanil_Cascone2013_reference" status="rejected" stale="false" population="" measured-compound="remifentanil" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment; no model was built for this record.  
 **Parameters:** 3 extracted.

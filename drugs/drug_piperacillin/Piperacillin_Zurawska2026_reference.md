@@ -23,8 +23,7 @@
 Zurawska M et al., Pharmacokinetic-pharmacodynamic target…, Antimicrobial agents and ch… (2026)
   ·  DOI: [10.1128/aac.01760-25](https://doi.org/10.1128/aac.01760-25)
 
-## Model component
-<dbs-pgx drug="piperacillin" model-id="Piperacillin_Zurawska2026_reference" status="needs_review" stale="false" population="ICU patients with hospital-acquired pneumonia" measured-compound="piperacillin" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="piperacillin" model-id="Piperacillin_Zurawska2026_reference" status="needs_review" stale="false" population="ICU patients with hospital-acquired pneumonia" measured-compound="piperacillin" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 4 extracted.

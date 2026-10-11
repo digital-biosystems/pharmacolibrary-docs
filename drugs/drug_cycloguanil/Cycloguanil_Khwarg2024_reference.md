@@ -23,8 +23,7 @@
 Khwarg J et al., Effect of SLC22A1 polymorphism on the p…, Clinical and translational… (2024)
   ·  DOI: [10.1111/cts.70103](https://doi.org/10.1111/cts.70103)
 
-## Model component
-<dbs-pgx drug="Cycloguanil" model-id="Cycloguanil_Khwarg2024_reference" status="rejected" stale="false" population="healthy Korean adults" measured-compound="cycloguanil" parameterization="apparent_wrt_Fm" topology="parent_metabolite"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="Cycloguanil" model-id="Cycloguanil_Khwarg2024_reference" status="rejected" stale="false" population="healthy Korean adults" measured-compound="cycloguanil" parameterization="apparent_wrt_Fm" topology="parent_metabolite"></div>
 
 **Model structure:** parent + metabolite; no model was built for this record.  
 **Parameters:** 0 extracted.

@@ -34,8 +34,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Yue PF et al., Preparation, characterization, and bioa…, Drug development and indust… (2008)
   ·  DOI: [10.1080/03639040701842477](https://doi.org/10.1080/03639040701842477)
 
-## Model component
-<dbs-pgx drug="ursodeoxycholic acid" model-id="UrsodeoxycholicAcid_Yue2008_reference" status="rejected" stale="true" population="rats" measured-compound="ursodeoxycholic acid" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="ursodeoxycholic acid" model-id="UrsodeoxycholicAcid_Yue2008_reference" status="rejected" stale="true" population="rats" measured-compound="ursodeoxycholic acid" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 3 extracted.

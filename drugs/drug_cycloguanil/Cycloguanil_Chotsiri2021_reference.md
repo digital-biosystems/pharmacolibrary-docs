@@ -21,8 +21,7 @@
 Chotsiri P et al., Piperaquine Pharmacokinetics during Int…, Antimicrobial agents and ch… (2021)
   ·  DOI: [10.1128/aac.01150-20](https://doi.org/10.1128/aac.01150-20)
 
-## Model component
-<dbs-pgx drug="Cycloguanil" model-id="Cycloguanil_Chotsiri2021_reference" status="extracted" stale="false" population="" measured-compound="cycloguanil" parameterization="apparent" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="Cycloguanil" model-id="Cycloguanil_Chotsiri2021_reference" status="extracted" stale="false" population="" measured-compound="cycloguanil" parameterization="apparent" topology="2C"></div>
 
 **Model structure:** 2-compartment, oral mammillary model — template `PK_2C_enteral`.  
 **Parameters:** 3 extracted.

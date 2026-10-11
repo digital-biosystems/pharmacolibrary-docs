@@ -31,8 +31,7 @@ The metabolism link from tegafur to 5-chloro-2,4-dihydroxypyridine carries no pa
 Hirose T et al., Pharmacokinetics of S-1 and CYP2A6 geno…, Oncology reports (2010)
   ·  DOI: [10.3892/or_00000889](https://doi.org/10.3892/or_00000889)
 
-## Model component
-<dbs-pgx drug="tegafur" model-id="Tegafur_Hirose2010_reference" status="rejected" stale="true" population="Japanese patients with advanced cancer" measured-compound="tegafur" parameterization="apparent" topology="general_linear"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="tegafur" model-id="Tegafur_Hirose2010_reference" status="rejected" stale="true" population="Japanese patients with advanced cancer" measured-compound="tegafur" parameterization="apparent" topology="general_linear"></div>
 
 **Model structure:** general linear; no model was built for this record.  
 **Parameters:** 4 extracted.

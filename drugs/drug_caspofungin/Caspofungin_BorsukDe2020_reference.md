@@ -21,8 +21,7 @@
 Borsuk-De Moor A et al., Nonstationary Pharmacokinetics of Caspo…, Antimicrobial agents and ch… (2020)
   ·  DOI: [10.1128/AAC.00345-20](https://doi.org/10.1128/AAC.00345-20)
 
-## Model component
-<dbs-pgx drug="caspofungin" model-id="Caspofungin_BorsukDe2020_reference" status="extracted" stale="false" population="intensive care unit patients" measured-compound="caspofungin" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="caspofungin" model-id="Caspofungin_BorsukDe2020_reference" status="extracted" stale="false" population="intensive care unit patients" measured-compound="caspofungin" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment, IV mammillary model — template `PK_2C`.  
 **Parameters:** 4 extracted.

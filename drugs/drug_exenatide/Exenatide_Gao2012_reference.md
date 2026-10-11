@@ -35,8 +35,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the val
 Gao W et al., Target-mediated pharmacokinetic and pha…, Drug metabolism and disposi… (2012)
   ·  DOI: [10.1124/dmd.111.042291](https://doi.org/10.1124/dmd.111.042291)
 
-## Model component
-<dbs-pgx drug="exenatide" model-id="Exenatide_Gao2012_reference" status="rejected" stale="true" population="rats, monkeys, and humans" measured-compound="exenatide" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="exenatide" model-id="Exenatide_Gao2012_reference" status="rejected" stale="true" population="rats, monkeys, and humans" measured-compound="exenatide" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 2 extracted.

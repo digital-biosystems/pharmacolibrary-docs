@@ -21,8 +21,7 @@
 Sanz-Codina M et al., Target-site cefiderocol pharmacokinetic…, The Journal of antimicrobia… (2024)
   ·  DOI: [10.1093/jac/dkae359](https://doi.org/10.1093/jac/dkae359)
 
-## Model component
-<dbs-pgx drug="cefiderocol" model-id="Cefiderocol_SanzCodina2024_reference" status="extracted" stale="false" population="healthy volunteers" measured-compound="cefiderocol" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="cefiderocol" model-id="Cefiderocol_SanzCodina2024_reference" status="extracted" stale="false" population="healthy volunteers" measured-compound="cefiderocol" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment, IV mammillary model — template `PK_2C`.  
 **Parameters:** 5 extracted.

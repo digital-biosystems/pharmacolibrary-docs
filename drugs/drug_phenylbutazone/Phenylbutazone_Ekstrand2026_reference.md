@@ -22,8 +22,7 @@
 Ekstrand C et al., Differences in Plasma Exposure of Canna…, Journal of veterinary pharm… (2026)
   ·  DOI: [10.1111/jvp.70027](https://doi.org/10.1111/jvp.70027)
 
-## Model component
-<dbs-pgx drug="phenylbutazone" model-id="Phenylbutazone_Ekstrand2026_reference" status="rejected" stale="false" population="" measured-compound="phenylbutazone" parameterization="apparent" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="phenylbutazone" model-id="Phenylbutazone_Ekstrand2026_reference" status="rejected" stale="false" population="" measured-compound="phenylbutazone" parameterization="apparent" topology="2C"></div>
 
 **Model structure:** 2-compartment; no model was built for this record.  
 **Parameters:** 5 extracted.

@@ -28,8 +28,7 @@ Independently confirmed by `gpt-oss:120b`.
 Nafziger AN et al., Desirudin dosing and monitoring in mode…, Journal of clinical pharmac… (2010)
   ·  DOI: [10.1177/0091270009350626](https://doi.org/10.1177/0091270009350626)
 
-## Model component
-<dbs-pgx drug="desirudin" model-id="Desirudin_Nafziger2010_moderate_renal_impairment" status="rejected" stale="false" population="adults with normal or moderate renal impairment" measured-compound="desirudin" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="desirudin" model-id="Desirudin_Nafziger2010_moderate_renal_impairment" status="rejected" stale="false" population="adults with normal or moderate renal impairment" measured-compound="desirudin" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 6 extracted.

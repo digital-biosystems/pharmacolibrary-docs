@@ -29,8 +29,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on `parame
 Xia H et al., Investigating Remedial Strategies for M…, Drug design, development an… (2025)
   ·  DOI: [10.2147/DDDT.S504521](https://doi.org/10.2147/DDDT.S504521)
 
-## Model component
-<dbs-pgx drug="sertraline" model-id="Sertraline_Xia2025_reference" status="extracted" stale="true" population="Chinese adolescent patients with depressive disorders" measured-compound="sertraline" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="sertraline" model-id="Sertraline_Xia2025_reference" status="extracted" stale="true" population="Chinese adolescent patients with depressive disorders" measured-compound="sertraline" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 3 extracted.

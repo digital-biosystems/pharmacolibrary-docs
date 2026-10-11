@@ -33,8 +33,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Kim MS et al., Kinetic Modeling for BT200 to Predict t…, The AAPS journal (2024)
   ·  DOI: [10.1208/s12248-024-00952-4](https://doi.org/10.1208/s12248-024-00952-4)
 
-## Model component
-<dbs-pgx drug="von Willebrand factor" model-id="VonWillebrandFactor_Kim2024_1" status="rejected" stale="true" population="humans" measured-compound="factor VIII" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="von Willebrand factor" model-id="VonWillebrandFactor_Kim2024_1" status="rejected" stale="true" population="humans" measured-compound="factor VIII" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 3 extracted.

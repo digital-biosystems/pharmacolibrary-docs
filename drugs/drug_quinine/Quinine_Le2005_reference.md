@@ -21,8 +21,7 @@
 Le Jouan M et al., Quinine pharmacokinetics and pharmacody…, Antimicrobial agents and ch… (2005)
   ·  DOI: [10.1128/AAC.49.9.3658-3662.2005](https://doi.org/10.1128/AAC.49.9.3658-3662.2005)
 
-## Model component
-<dbs-pgx drug="quinine" model-id="Quinine_Le2005_reference" status="rejected" stale="false" population="children with uncomplicated falciparum malaria" measured-compound="quinine" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="quinine" model-id="Quinine_Le2005_reference" status="rejected" stale="false" population="children with uncomplicated falciparum malaria" measured-compound="quinine" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 3 extracted.

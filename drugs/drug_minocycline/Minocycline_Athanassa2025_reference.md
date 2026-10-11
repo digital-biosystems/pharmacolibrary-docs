@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Athanassa Z et al., Population pharmacokinetic model of ora…, The Journal of antimicrobia… (2025)
   ·  DOI: [10.1093/jac/dkaf090](https://doi.org/10.1093/jac/dkaf090)
 
-## Model component
-<dbs-pgx drug="minocycline" model-id="Minocycline_Athanassa2025_reference" status="needs_review" stale="true" population="critically ill adult patients with ventilator-associated pneumonia" measured-compound="minocycline" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="minocycline" model-id="Minocycline_Athanassa2025_reference" status="needs_review" stale="true" population="critically ill adult patients with ventilator-associated pneumonia" measured-compound="minocycline" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 3 extracted.

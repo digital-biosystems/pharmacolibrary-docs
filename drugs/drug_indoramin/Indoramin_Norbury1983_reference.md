@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on `parame
 Norbury HM et al., Pharmacokinetics of intravenous indoram…, European journal of clinica… (1983)
   ·  DOI: [10.1007/BF00543798](https://doi.org/10.1007/BF00543798)
 
-## Model component
-<dbs-pgx drug="indoramin" model-id="Indoramin_Norbury1983_reference" status="extracted" stale="true" population="middle-aged healthy volunteers" measured-compound="indoramin" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="indoramin" model-id="Indoramin_Norbury1983_reference" status="extracted" stale="true" population="middle-aged healthy volunteers" measured-compound="indoramin" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameters:** 4 extracted.

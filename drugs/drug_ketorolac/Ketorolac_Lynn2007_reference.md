@@ -21,8 +21,7 @@
 Lynn AM et al., Postoperative ketorolac tromethamine us…, Anesthesia and analgesia (2007)
   ·  DOI: [10.1213/01.ane.0000260320.60867.6c](https://doi.org/10.1213/01.ane.0000260320.60867.6c)
 
-## Model component
-<dbs-pgx drug="ketorolac" model-id="Ketorolac_Lynn2007_reference" status="rejected" stale="false" population="infants and toddlers (aged 6-18 mo)" measured-compound="ketorolac" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="ketorolac" model-id="Ketorolac_Lynn2007_reference" status="rejected" stale="false" population="infants and toddlers (aged 6-18 mo)" measured-compound="ketorolac" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

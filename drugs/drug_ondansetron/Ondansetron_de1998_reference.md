@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the val
 de Alwis DP et al., Population pharmacokinetics of ondanset…, British journal of clinical… (1998)
   ·  DOI: [10.1046/j.1365-2125.1998.00756.x](https://doi.org/10.1046/j.1365-2125.1998.00756.x)
 
-## Model component
-<dbs-pgx drug="ondansetron" model-id="Ondansetron_de1998_reference" status="rejected" stale="true" population="paediatric patients, young, elderly and aged volunteers" measured-compound="ondansetron" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="ondansetron" model-id="Ondansetron_de1998_reference" status="rejected" stale="true" population="paediatric patients, young, elderly and aged volunteers" measured-compound="ondansetron" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 1 extracted.

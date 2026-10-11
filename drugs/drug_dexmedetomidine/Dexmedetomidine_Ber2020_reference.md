@@ -21,8 +21,7 @@
 Ber J et al., Population Pharmacokinetic Model of Dex…, Journal of clinical pharmac… (2020)
   ·  DOI: [10.1002/jcph.1647](https://doi.org/10.1002/jcph.1647)
 
-## Model component
-<dbs-pgx drug="dexmedetomidine" model-id="Dexmedetomidine_Ber2020_reference" status="extracted" stale="false" population="heterogeneous ICU patients" measured-compound="dexmedetomidine" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="dexmedetomidine" model-id="Dexmedetomidine_Ber2020_reference" status="extracted" stale="false" population="heterogeneous ICU patients" measured-compound="dexmedetomidine" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment, IV mammillary model — template `PK_2C`.  
 **Parameters:** 4 extracted.

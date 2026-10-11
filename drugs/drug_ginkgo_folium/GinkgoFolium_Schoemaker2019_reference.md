@@ -21,8 +21,7 @@
 Schoemaker R et al., Performance of the SAEM and FOCEI Algor…, CPT: pharmacometrics & syst… (2019)
   ·  DOI: [10.1002/psp4.12471](https://doi.org/10.1002/psp4.12471)
 
-## Model component
-<dbs-pgx drug="Ginkgo folium" model-id="GinkgoFolium_Schoemaker2019_reference" status="extracted" stale="false" population="" measured-compound="ginkgo_folium" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="Ginkgo folium" model-id="GinkgoFolium_Schoemaker2019_reference" status="extracted" stale="false" population="" measured-compound="ginkgo_folium" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment, oral mammillary model — template `PK_2C_enteral`.  
 **Parameters:** 5 extracted.

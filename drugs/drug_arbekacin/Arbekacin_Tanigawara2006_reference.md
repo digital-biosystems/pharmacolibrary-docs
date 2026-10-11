@@ -21,8 +21,7 @@
 Tanigawara Y et al., Population pharmacokinetics of Arbekaci…, Antimicrobial agents and ch… (2006)
   ·  DOI: [10.1128/AAC.00420-05](https://doi.org/10.1128/AAC.00420-05)
 
-## Model component
-<dbs-pgx drug="arbekacin" model-id="Arbekacin_Tanigawara2006_reference" status="needs_review" stale="false" population="patients infected with MRSA and healthy/renally impaired volunteers" measured-compound="arbekacin" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="arbekacin" model-id="Arbekacin_Tanigawara2006_reference" status="needs_review" stale="false" population="patients infected with MRSA and healthy/renally impaired volunteers" measured-compound="arbekacin" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 1 extracted.

@@ -25,8 +25,7 @@
 Andersen HB et al., Pharmacokinetics of intravenous, intrat…, Acta anaesthesiologica Scan… (1986)
   ·  DOI: [10.1111/j.1399-6576.1986.tb02437.x](https://doi.org/10.1111/j.1399-6576.1986.tb02437.x)
 
-## Model component
-<dbs-pgx drug="fentanyl" model-id="Fentanyl_Andersen1986_reference" status="rejected" stale="false" population="goats" measured-compound="fentanyl" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="fentanyl" model-id="Fentanyl_Andersen1986_reference" status="rejected" stale="false" population="goats" measured-compound="fentanyl" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment; no model was built for this record.  
 **Parameters:** 4 extracted.

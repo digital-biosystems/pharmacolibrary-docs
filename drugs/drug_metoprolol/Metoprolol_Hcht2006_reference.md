@@ -32,8 +32,7 @@ Independently confirmed by `gpt-oss:120b`.
 Höcht C et al., Pharmacokinetic-pharmacodynamic (PK-PD)…, Naunyn-Schmiedeberg's archi… (2006)
   ·  DOI: [10.1007/s00210-006-0078-x](https://doi.org/10.1007/s00210-006-0078-x)
 
-## Model component
-<dbs-pgx drug="metoprolol" model-id="Metoprolol_Hcht2006_reference" status="needs_review" stale="true" population="spontaneously hypertensive rats and Wistar Kyoto rats" measured-compound="metoprolol" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="metoprolol" model-id="Metoprolol_Hcht2006_reference" status="needs_review" stale="true" population="spontaneously hypertensive rats and Wistar Kyoto rats" measured-compound="metoprolol" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 1 extracted.

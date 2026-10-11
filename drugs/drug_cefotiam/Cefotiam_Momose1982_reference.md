@@ -20,8 +20,7 @@
 ## Citation
 Momose A et al., [The studies on distributions of cefsul…, The Japanese journal of ant… (1982)
 
-## Model component
-<dbs-pgx drug="cefotiam" model-id="Cefotiam_Momose1982_reference" status="rejected" stale="false" population="humans (likely ophthalmology patients requiring intraocular infection treatment or similar ocular procedures)" measured-compound="cefotiam" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="cefotiam" model-id="Cefotiam_Momose1982_reference" status="rejected" stale="false" population="humans (likely ophthalmology patients requiring intraocular infection treatment or similar ocular procedures)" measured-compound="cefotiam" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 4 extracted.

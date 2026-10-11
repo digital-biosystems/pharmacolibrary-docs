@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the lin
 Ruehs H et al., Population Pharmacokinetics and Pharmac…, Clinical pharmacokinetics (2021)
   ·  DOI: [10.1007/s40262-021-01024-y](https://doi.org/10.1007/s40262-021-01024-y)
 
-## Model component
-<dbs-pgx drug="vericiguat" model-id="Vericiguat_Ruehs2021_reference" status="extracted" stale="true" population="adults with heart failure and reduced ejection fraction" measured-compound="vericiguat" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="vericiguat" model-id="Vericiguat_Ruehs2021_reference" status="extracted" stale="true" population="adults with heart failure and reduced ejection fraction" measured-compound="vericiguat" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 3 extracted, plus 4 covariate effects.

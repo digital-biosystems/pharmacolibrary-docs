@@ -26,8 +26,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Webb NJ et al., Single-dose pharmacokinetics and safety…, European journal of clinica… (2016)
   ·  DOI: [10.1007/s00228-015-1987-8](https://doi.org/10.1007/s00228-015-1987-8)
 
-## Model component
-<dbs-pgx drug="azilsartan medoxomil" model-id="AzilsartanMedoxomil_Webb2016_cohort_3" status="rejected" stale="false" population="children and adolescents with hypertension and healthy adults" measured-compound="azilsartan" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="azilsartan medoxomil" model-id="AzilsartanMedoxomil_Webb2016_cohort_3" status="rejected" stale="false" population="children and adolescents with hypertension and healthy adults" measured-compound="azilsartan" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 5 extracted.

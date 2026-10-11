@@ -30,8 +30,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on `parame
 Tham LS et al., Modeling Pharmacokinetic Profiles of In…, Journal of clinical pharmac… (2017)
   ·  DOI: [10.1002/jcph.899](https://doi.org/10.1002/jcph.899)
 
-## Model component
-<dbs-pgx drug="insulin glargine" model-id="InsulinGlargine_Tham2017_reference" status="rejected" stale="true" population="healthy adults" measured-compound="insulin glargine" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="insulin glargine" model-id="InsulinGlargine_Tham2017_reference" status="rejected" stale="true" population="healthy adults" measured-compound="insulin glargine" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 6 extracted, plus 2 covariate effects.

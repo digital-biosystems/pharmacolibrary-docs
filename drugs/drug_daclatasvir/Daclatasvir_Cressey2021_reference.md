@@ -29,8 +29,7 @@ No clearance, volume or rate constant of the model is reported in it. Only the a
 Cressey TR et al., Effective and Safe Daclatasvir Drug Exp…, The Pediatric infectious di… (2021)
   ·  DOI: [10.1097/INF.0000000000003282](https://doi.org/10.1097/INF.0000000000003282)
 
-## Model component
-<dbs-pgx drug="daclatasvir" model-id="Daclatasvir_Cressey2021_reference" status="rejected" stale="true" population="HCV-infected adolescents and simulated children" measured-compound="daclatasvir" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="daclatasvir" model-id="Daclatasvir_Cressey2021_reference" status="rejected" stale="true" population="HCV-infected adolescents and simulated children" measured-compound="daclatasvir" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

@@ -23,8 +23,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 ## Citation
 Yoshida H et al., [Correlation analysis between patlak pl…, Nihon Igaku Hoshasen Gakkai… (1995)
 
-## Model component
-<dbs-pgx drug="methionine (11C)" model-id="Methionine11c_Yoshida1995_reference" status="rejected" stale="false" population="patients with lymphoma" measured-compound="11C-methionine" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="methionine (11C)" model-id="Methionine11c_Yoshida1995_reference" status="rejected" stale="false" population="patients with lymphoma" measured-compound="11C-methionine" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

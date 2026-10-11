@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on paramet
 Valderrama D et al., Comparing Scientific Machine Learning W…, CPT: pharmacometrics & syst… (2025)
   ·  DOI: [10.1002/psp4.13313](https://doi.org/10.1002/psp4.13313)
 
-## Model component
-<dbs-pgx drug="fluorouracil" model-id="Fluorouracil_Valderrama2025_reference" status="needs_review" stale="true" population="" measured-compound="" parameterization="" topology=""></dbs-pgx>
+<div class="pk-model-meta" hidden drug="fluorouracil" model-id="Fluorouracil_Valderrama2025_reference" status="needs_review" stale="true" population="" measured-compound="" parameterization="" topology=""></div>
 
 **Model structure:** —; no model was built for this record.  
 **Parameters:** 0 extracted.

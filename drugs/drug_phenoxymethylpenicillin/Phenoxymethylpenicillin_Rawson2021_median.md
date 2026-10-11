@@ -21,8 +21,7 @@
 Rawson TM et al., Exploring the Pharmacokinetics of Pheno…, Open forum infectious disea… (2021)
   ·  DOI: [10.1093/ofid/ofab573](https://doi.org/10.1093/ofid/ofab573)
 
-## Model component
-<dbs-pgx drug="phenoxymethylpenicillin" model-id="Phenoxymethylpenicillin_Rawson2021_median" status="needs_review" stale="false" population="healthy adults" measured-compound="phenoxymethylpenicillin" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="phenoxymethylpenicillin" model-id="Phenoxymethylpenicillin_Rawson2021_median" status="needs_review" stale="false" population="healthy adults" measured-compound="phenoxymethylpenicillin" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 6 extracted.

@@ -33,8 +33,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Kim TH et al., Population Pharmacokinetic Modeling of…, The AAPS journal (2015)
   ·  DOI: [10.1208/s12248-015-9764-2](https://doi.org/10.1208/s12248-015-9764-2)
 
-## Model component
-<dbs-pgx drug="fimasartan" model-id="Fimasartan_Kim2015_reference" status="needs_review" stale="true" population="rats, dogs, and healthy volunteers" measured-compound="fimasartan" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="fimasartan" model-id="Fimasartan_Kim2015_reference" status="needs_review" stale="true" population="rats, dogs, and healthy volunteers" measured-compound="fimasartan" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment; no model was built for this record.  
 **Parameters:** 4 extracted.

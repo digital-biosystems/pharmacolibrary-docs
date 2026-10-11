@@ -20,8 +20,7 @@
 Peigné S et al., Population Pharmacokinetics of Stiripen…, Clinical pharmacokinetics (2018)
   ·  DOI: [10.1007/s40262-017-0592-7](https://doi.org/10.1007/s40262-017-0592-7)
 
-## Model component
-<dbs-pgx drug="stiripentol" model-id="Stiripentol_Peign2018_reference" status="rejected" stale="false" population="paediatric patients with Dravet syndrome" measured-compound="stiripentol" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="stiripentol" model-id="Stiripentol_Peign2018_reference" status="rejected" stale="false" population="paediatric patients with Dravet syndrome" measured-compound="stiripentol" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

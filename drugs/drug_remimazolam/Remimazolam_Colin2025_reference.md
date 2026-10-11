@@ -21,8 +21,7 @@
 Colin PJ et al., Pharmacokinetics and Pharmacodynamics o…, Anesthesiology (2025)
   ·  DOI: [10.1097/ALN.0000000000005560](https://doi.org/10.1097/ALN.0000000000005560)
 
-## Model component
-<dbs-pgx drug="remimazolam" model-id="Remimazolam_Colin2025_reference" status="extracted" stale="false" population="pediatric patients aged 6 to 18 yr undergoing procedural sedation" measured-compound="remimazolam" parameterization="mechanistic" topology="parent_metabolite"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="remimazolam" model-id="Remimazolam_Colin2025_reference" status="extracted" stale="false" population="pediatric patients aged 6 to 18 yr undergoing procedural sedation" measured-compound="remimazolam" parameterization="mechanistic" topology="parent_metabolite"></div>
 
 **Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameters:** 8 extracted.

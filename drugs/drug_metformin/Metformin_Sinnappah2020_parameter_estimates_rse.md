@@ -31,8 +31,7 @@ Independently confirmed by `gpt-oss:120b`.
 Sinnappah KA et al., The pharmacokinetics of metformin in pa…, British journal of clinical… (2020)
   ·  DOI: [10.1111/bcp.14244](https://doi.org/10.1111/bcp.14244)
 
-## Model component
-<dbs-pgx drug="metformin" model-id="Metformin_Sinnappah2020_parameter_estimates_rse" status="needs_review" stale="true" population="patients with Type 2 diabetes receiving intermittent haemodialysis" measured-compound="metformin" parameterization="apparent" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="metformin" model-id="Metformin_Sinnappah2020_parameter_estimates_rse" status="needs_review" stale="true" population="patients with Type 2 diabetes receiving intermittent haemodialysis" measured-compound="metformin" parameterization="apparent" topology="2C"></div>
 
 **Model structure:** 2-compartment; no model was built for this record.  
 **Parameters:** 8 extracted.

@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Brookhuis SAM et al., Modelling Tools to Characterize Acetami…, Pharmaceutics (2021)
   ·  DOI: [10.3390/pharmaceutics13081302](https://doi.org/10.3390/pharmaceutics13081302)
 
-## Model component
-<dbs-pgx drug="paracetamol" model-id="Paracetamol_Brookhuis2021_allegaert_et_al_16" status="needs_review" stale="true" population="pregnant women" measured-compound="paracetamol" parameterization="apparent" topology="general_linear"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="paracetamol" model-id="Paracetamol_Brookhuis2021_allegaert_et_al_16" status="needs_review" stale="true" population="pregnant women" measured-compound="paracetamol" parameterization="apparent" topology="general_linear"></div>
 
 **Model structure:** general linear; no model was built for this record.  
 **Parameters:** 3 extracted.

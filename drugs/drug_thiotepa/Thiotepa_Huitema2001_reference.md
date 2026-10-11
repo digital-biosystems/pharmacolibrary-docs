@@ -28,8 +28,7 @@ Nothing in the extracted data describes the drug's disposition, so there is no m
 Huitema AD et al., Population pharmacokinetics of thioTEPA…, British journal of clinical… (2001)
   ·  DOI: [10.1046/j.1365-2125.2001.01301.x](https://doi.org/10.1046/j.1365-2125.2001.01301.x)
 
-## Model component
-<dbs-pgx drug="thiotepa" model-id="Thiotepa_Huitema2001_reference" status="rejected" stale="true" population="patients undergoing high-dose chemotherapy" measured-compound="thiotepa" parameterization="mechanistic" topology="parent_metabolite"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="thiotepa" model-id="Thiotepa_Huitema2001_reference" status="rejected" stale="true" population="patients undergoing high-dose chemotherapy" measured-compound="thiotepa" parameterization="mechanistic" topology="parent_metabolite"></div>
 
 **Model structure:** parent + metabolite; no model was built for this record.  
 **Parameters:** 0 extracted.

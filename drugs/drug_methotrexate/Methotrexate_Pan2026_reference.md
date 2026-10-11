@@ -29,8 +29,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on paramet
 Pan S et al., Evaluation of a Therapeutic Drug Monito…, Clinical and translational… (2026)
   ·  DOI: [10.1111/cts.70563](https://doi.org/10.1111/cts.70563)
 
-## Model component
-<dbs-pgx drug="methotrexate" model-id="Methotrexate_Pan2026_reference" status="extracted" stale="true" population="" measured-compound="methotrexate" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="methotrexate" model-id="Methotrexate_Pan2026_reference" status="extracted" stale="true" population="" measured-compound="methotrexate" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 3 extracted.

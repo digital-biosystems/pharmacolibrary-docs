@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Doroshyenko O et al., Clinical pharmacokinetics of trospium c…, Clinical pharmacokinetics (2005)
   ·  DOI: [10.2165/00003088-200544070-00003](https://doi.org/10.2165/00003088-200544070-00003)
 
-## Model component
-<dbs-pgx drug="trospium" model-id="Trospium_Doroshyenko2005_reference" status="needs_review" stale="true" population="healthy volunteers, patients with renal and hepatic impairment, and patients with overactive bladder" measured-compound="trospium chloride" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="trospium" model-id="Trospium_Doroshyenko2005_reference" status="needs_review" stale="true" population="healthy volunteers, patients with renal and hepatic impairment, and patients with overactive bladder" measured-compound="trospium chloride" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 5 extracted.

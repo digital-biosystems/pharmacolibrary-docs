@@ -21,8 +21,7 @@
 Takechi T et al., Quantitative Evaluation of Nemolizumab…, Dermatology and therapy (2025)
   ·  DOI: [10.1007/s13555-025-01554-4](https://doi.org/10.1007/s13555-025-01554-4)
 
-## Model component
-<dbs-pgx drug="nemolizumab" model-id="Nemolizumab_Takechi2025_reference" status="needs_review" stale="false" population="adult patients with prurigo nodularis and atopic dermatitis" measured-compound="nemolizumab" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="nemolizumab" model-id="Nemolizumab_Takechi2025_reference" status="needs_review" stale="false" population="adult patients with prurigo nodularis and atopic dermatitis" measured-compound="nemolizumab" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 5 extracted.

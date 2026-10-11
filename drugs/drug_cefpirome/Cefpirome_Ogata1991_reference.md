@@ -20,8 +20,7 @@
 Ogata Y et al., [Pharmacokinetics of cefpirome (CPR) in…, Kansenshogaku zasshi. The J… (1991)
   ·  DOI: [10.11150/kansenshogakuzasshi1970.65.1514](https://doi.org/10.11150/kansenshogakuzasshi1970.65.1514)
 
-## Model component
-<dbs-pgx drug="cefpirome" model-id="Cefpirome_Ogata1991_reference" status="rejected" stale="false" population="patients with impaired renal function" measured-compound="cefpirome" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="cefpirome" model-id="Cefpirome_Ogata1991_reference" status="rejected" stale="false" population="patients with impaired renal function" measured-compound="cefpirome" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

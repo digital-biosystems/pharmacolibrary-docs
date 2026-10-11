@@ -21,8 +21,7 @@
 Okada A et al., Appropriate use of triazolam in elderly…, BMC pharmacology & toxicolo… (2024)
   ·  DOI: [10.1186/s40360-024-00777-z](https://doi.org/10.1186/s40360-024-00777-z)
 
-## Model component
-<dbs-pgx drug="triazolam" model-id="Triazolam_Okada2024_reference" status="rejected" stale="false" population="elderly patients (and young adults from literature data)" measured-compound="triazolam" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="triazolam" model-id="Triazolam_Okada2024_reference" status="rejected" stale="false" population="elderly patients (and young adults from literature data)" measured-compound="triazolam" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 3 extracted, plus 2 covariate effects.

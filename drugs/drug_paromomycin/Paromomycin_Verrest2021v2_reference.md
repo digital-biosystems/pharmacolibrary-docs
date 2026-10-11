@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Verrest L et al., Geographical Variability in Paromomycin…, Clinical pharmacokinetics (2021)
   ·  DOI: [10.1007/s40262-021-01036-8](https://doi.org/10.1007/s40262-021-01036-8)
 
-## Model component
-<dbs-pgx drug="paromomycin" model-id="Paromomycin_Verrest2021v2_reference" status="rejected" stale="true" population="visceral leishmaniasis patients" measured-compound="paromomycin" parameterization="mechanistic" topology="manual_model_class"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="paromomycin" model-id="Paromomycin_Verrest2021v2_reference" status="rejected" stale="true" population="visceral leishmaniasis patients" measured-compound="paromomycin" parameterization="mechanistic" topology="manual_model_class"></div>
 
 **Model structure:** nonlinear / manual; no model was built for this record.  
 **Parameters:** 0 extracted.

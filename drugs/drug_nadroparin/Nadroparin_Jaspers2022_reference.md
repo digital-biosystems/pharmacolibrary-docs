@@ -35,8 +35,7 @@ Independently confirmed by `gpt-oss:120b`.
 Jaspers TCC et al., Optimising the Nadroparin Dose for Thro…, Clinical pharmacokinetics (2022)
   ·  DOI: [10.1007/s40262-022-01162-x](https://doi.org/10.1007/s40262-022-01162-x)
 
-## Model component
-<dbs-pgx drug="nadroparin" model-id="Nadroparin_Jaspers2022_reference" status="needs_review" stale="true" population="hemodialysis patients" measured-compound="anti-Xa" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="nadroparin" model-id="Nadroparin_Jaspers2022_reference" status="needs_review" stale="true" population="hemodialysis patients" measured-compound="anti-Xa" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 2 extracted, plus 2 covariate effects.

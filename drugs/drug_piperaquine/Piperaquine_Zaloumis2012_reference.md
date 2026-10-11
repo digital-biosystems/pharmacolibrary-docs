@@ -23,8 +23,7 @@
 Zaloumis S et al., Assessing the utility of an anti-malari…, Malaria journal (2012)
   ·  DOI: [10.1186/1475-2875-11-303](https://doi.org/10.1186/1475-2875-11-303)
 
-## Model component
-<dbs-pgx drug="Piperaquine" model-id="Piperaquine_Zaloumis2012_reference" status="extracted" stale="false" population="patients with uncomplicated P. falciparum malaria (simulated)" measured-compound="piperaquine" parameterization="apparent" topology="3C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="Piperaquine" model-id="Piperaquine_Zaloumis2012_reference" status="extracted" stale="false" population="patients with uncomplicated P. falciparum malaria (simulated)" measured-compound="piperaquine" parameterization="apparent" topology="3C"></div>
 
 **Model structure:** 3-compartment, oral mammillary model — template `PK_3C_enteral`.  
 **Parameters:** 6 extracted.

@@ -30,8 +30,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Brørs O et al., Pharmacokinetics of a single oral dose…, European journal of clinica… (1979)
   ·  DOI: [10.1007/BF00609872](https://doi.org/10.1007/BF00609872)
 
-## Model component
-<dbs-pgx drug="muzolimine" model-id="Muzolimine_Brrs1979_reference" status="rejected" stale="true" population="patients with cardiac failure and healthy subjects" measured-compound="muzolimine" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="muzolimine" model-id="Muzolimine_Brrs1979_reference" status="rejected" stale="true" population="patients with cardiac failure and healthy subjects" measured-compound="muzolimine" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 2 extracted.

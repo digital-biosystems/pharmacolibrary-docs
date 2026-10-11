@@ -23,8 +23,7 @@
 Arora P et al., Gender-based differences in brain and p…, PloS one (2021)
   ·  DOI: [10.1371/journal.pone.0248579](https://doi.org/10.1371/journal.pone.0248579)
 
-## Model component
-<dbs-pgx drug="letrozole" model-id="Letrozole_Arora2021_females" status="needs_review" stale="false" population="Sprague-Dawley rats" measured-compound="letrozole" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="letrozole" model-id="Letrozole_Arora2021_females" status="needs_review" stale="false" population="Sprague-Dawley rats" measured-compound="letrozole" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 4 extracted.

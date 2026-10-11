@@ -21,8 +21,7 @@
 Zhu M et al., Population pharmacokinetics of ethionam…, Tuberculosis (Edinburgh, Sc… (2002)
   ·  DOI: [10.1054/tube.2002.0330](https://doi.org/10.1054/tube.2002.0330)
 
-## Model component
-<dbs-pgx drug="ethionamide" model-id="Ethionamide_Zhu2002_reference" status="extracted" stale="false" population="patients with tuberculosis" measured-compound="ethionamide" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="ethionamide" model-id="Ethionamide_Zhu2002_reference" status="extracted" stale="false" population="patients with tuberculosis" measured-compound="ethionamide" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 6 extracted.

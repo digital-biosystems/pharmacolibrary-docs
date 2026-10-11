@@ -24,8 +24,7 @@
 Mihailova D et al., Pharmacokinetics of galanthamine hydrob…, Pharmacology (1986)
   ·  DOI: [10.1159/000138184](https://doi.org/10.1159/000138184)
 
-## Model component
-<dbs-pgx drug="galantamine" model-id="Galantamine_Mihailova1986_reference" status="rejected" stale="false" population="male Wistar rats" measured-compound="galantamine" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="galantamine" model-id="Galantamine_Mihailova1986_reference" status="rejected" stale="false" population="male Wistar rats" measured-compound="galantamine" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

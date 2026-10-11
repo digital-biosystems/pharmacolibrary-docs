@@ -22,8 +22,7 @@
 ## Citation
 Kelley JA et al., The disposition and metabolism of 2',3'…, Drug metabolism and disposi… (1987)
 
-## Model component
-<dbs-pgx drug="zalcitabine" model-id="Zalcitabine_Kelley1987_reference" status="needs_review" stale="false" population="BDF1 mice and rhesus monkeys" measured-compound="2&#39;,3&#39;-dideoxycytidine (zalcitabine)" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="zalcitabine" model-id="Zalcitabine_Kelley1987_reference" status="needs_review" stale="false" population="BDF1 mice and rhesus monkeys" measured-compound="2&#39;,3&#39;-dideoxycytidine (zalcitabine)" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 3 extracted.

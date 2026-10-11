@@ -22,8 +22,7 @@
 Joisten CS et al., Clinical impact of potential drug-drug…, Antimicrobial agents and ch… (2026)
   ·  DOI: [10.1128/aac.01951-25](https://doi.org/10.1128/aac.01951-25)
 
-## Model component
-<dbs-pgx drug="midostaurin" model-id="Midostaurin_Joisten2026_reference" status="needs_review" stale="false" population="patients with FLT3-mutated AML receiving concomitant midostaurin and posaconazole" measured-compound="midostaurin" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="midostaurin" model-id="Midostaurin_Joisten2026_reference" status="needs_review" stale="false" population="patients with FLT3-mutated AML receiving concomitant midostaurin and posaconazole" measured-compound="midostaurin" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 2 extracted.

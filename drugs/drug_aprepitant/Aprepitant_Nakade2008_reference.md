@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the lin
 Nakade S et al., Population pharmacokinetics of aprepita…, Cancer chemotherapy and pha… (2008)
   ·  DOI: [10.1007/s00280-008-0713-y](https://doi.org/10.1007/s00280-008-0713-y)
 
-## Model component
-<dbs-pgx drug="aprepitant" model-id="Aprepitant_Nakade2008_reference" status="rejected" stale="true" population="Japanese cancer patients and healthy volunteers" measured-compound="aprepitant" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="aprepitant" model-id="Aprepitant_Nakade2008_reference" status="rejected" stale="true" population="Japanese cancer patients and healthy volunteers" measured-compound="aprepitant" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 5 extracted.

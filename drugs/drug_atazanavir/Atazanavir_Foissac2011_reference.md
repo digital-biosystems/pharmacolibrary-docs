@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 FrantzFoissac frantz.foissac@gmail.com EA 3620 Unité de Recherche Clinique Paris Centre Université Paris Descartes Assistance Publique Hôpitaux de Paris et al., Population pharmacokinetics of atazanav… (2011)
   ·  DOI: [10.1111/j.1365-2125.2011.04035.x](https://doi.org/10.1111/j.1365-2125.2011.04035.x)
 
-## Model component
-<dbs-pgx drug="atazanavir" model-id="Atazanavir_Foissac2011_reference" status="model_quarantined" stale="false" population="HIV-1-infected children and adolescents" measured-compound="atazanavir" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="atazanavir" model-id="Atazanavir_Foissac2011_reference" status="model_quarantined" stale="false" population="HIV-1-infected children and adolescents" measured-compound="atazanavir" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 3 extracted.

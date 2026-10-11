@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on paramet
 Foulds G et al., Pharmacokinetics of sulbactam in humans, Antimicrobial agents and ch… (1983)
   ·  DOI: [10.1128/AAC.23.5.692](https://doi.org/10.1128/AAC.23.5.692)
 
-## Model component
-<dbs-pgx drug="amoxicillin" model-id="Amoxicillin_Foulds1983_reference" status="needs_review" stale="true" population="" measured-compound="amoxicillin" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="amoxicillin" model-id="Amoxicillin_Foulds1983_reference" status="needs_review" stale="true" population="" measured-compound="amoxicillin" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 2 extracted.

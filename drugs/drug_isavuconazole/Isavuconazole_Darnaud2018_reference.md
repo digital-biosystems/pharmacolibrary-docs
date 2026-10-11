@@ -21,8 +21,7 @@
 Darnaud L et al., Isavuconazole Kinetic Exploration for C…, Drugs in R&D (2018)
   ·  DOI: [10.1007/s40268-018-0251-y](https://doi.org/10.1007/s40268-018-0251-y)
 
-## Model component
-<dbs-pgx drug="isavuconazole" model-id="Isavuconazole_Darnaud2018_reference" status="rejected" stale="false" population="adults with invasive fungal infections" measured-compound="isavuconazole" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="isavuconazole" model-id="Isavuconazole_Darnaud2018_reference" status="rejected" stale="false" population="adults with invasive fungal infections" measured-compound="isavuconazole" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

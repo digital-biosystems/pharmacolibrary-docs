@@ -20,8 +20,7 @@
 Barrett JS et al., Population pharmacokinetic meta-analysi…, International journal of cl… (2002)
   ·  DOI: [10.5414/cpp40507](https://doi.org/10.5414/cpp40507)
 
-## Model component
-<dbs-pgx drug="efavirenz" model-id="Efavirenz_Barrett2002_reference" status="needs_review" stale="false" population="healthy volunteers" measured-compound="efavirenz" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="efavirenz" model-id="Efavirenz_Barrett2002_reference" status="needs_review" stale="false" population="healthy volunteers" measured-compound="efavirenz" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 3 extracted.

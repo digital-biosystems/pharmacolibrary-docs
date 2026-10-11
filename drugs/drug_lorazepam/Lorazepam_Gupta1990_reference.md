@@ -21,8 +21,7 @@
 Gupta SK et al., Simultaneous modeling of the pharmacoki…, Journal of pharmacokinetics… (1990)
   ·  DOI: [10.1007/BF01063553](https://doi.org/10.1007/BF01063553)
 
-## Model component
-<dbs-pgx drug="lorazepam" model-id="Lorazepam_Gupta1990_reference" status="rejected" stale="false" population="healthy adult males" measured-compound="lorazepam" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="lorazepam" model-id="Lorazepam_Gupta1990_reference" status="rejected" stale="false" population="healthy adult males" measured-compound="lorazepam" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

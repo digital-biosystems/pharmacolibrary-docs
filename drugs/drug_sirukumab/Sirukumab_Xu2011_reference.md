@@ -21,8 +21,7 @@
 Xu Z et al., Pharmacokinetics, pharmacodynamics and…, British journal of clinical… (2011)
   ·  DOI: [10.1111/j.1365-2125.2011.03964.x](https://doi.org/10.1111/j.1365-2125.2011.03964.x)
 
-## Model component
-<dbs-pgx drug="sirukumab" model-id="Sirukumab_Xu2011_reference" status="extracted" stale="false" population="healthy adults" measured-compound="sirukumab" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="sirukumab" model-id="Sirukumab_Xu2011_reference" status="extracted" stale="false" population="healthy adults" measured-compound="sirukumab" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment, IV mammillary model — template `PK_2C`.  
 **Parameters:** 4 extracted.

@@ -21,8 +21,7 @@
 Shoaf SE; Bricmont P; Dandurand A et al. (2017). European journal of clinical pharmacology 73
   ·  DOI: [10.1007/s00228-017-2302-7](https://doi.org/10.1007/s00228-017-2302-7)
 
-## Model component
-<dbs-pgx drug="tolvaptan" model-id="Tolvaptan_Shoaf2017_reference" status="extracted" stale="true" population="healthy adults and patients with SIADH" measured-compound="tolvaptan" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="tolvaptan" model-id="Tolvaptan_Shoaf2017_reference" status="extracted" stale="true" population="healthy adults and patients with SIADH" measured-compound="tolvaptan" parameterization="apparent" topology="1C"></div>
 
 **Parameterization:** CL/F, V/F — apparent, F unknown (apparent — bioavailability not identifiable).
 

@@ -21,8 +21,7 @@
 Hu J et al., Pharmacokinetic Properties and Therapeu…, Pharmacology research & per… (2025)
   ·  DOI: [10.1002/prp2.70130](https://doi.org/10.1002/prp2.70130)
 
-## Model component
-<dbs-pgx drug="remimazolam" model-id="Remimazolam_Hu2025_reference" status="rejected" stale="false" population="ICU patients on mechanical ventilation" measured-compound="remimazolam" parameterization="mechanistic" topology="parent_metabolite"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="remimazolam" model-id="Remimazolam_Hu2025_reference" status="rejected" stale="false" population="ICU patients on mechanical ventilation" measured-compound="remimazolam" parameterization="mechanistic" topology="parent_metabolite"></div>
 
 **Model structure:** parent + metabolite; no model was built for this record.  
 **Parameters:** 7 extracted.

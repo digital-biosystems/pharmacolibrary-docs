@@ -29,8 +29,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on paramet
 Friedrich S et al., The pharmacokinetics and pharmacokineti…, CPT: pharmacometrics & syst… (2014)
   ·  DOI: [10.1038/psp.2013.70](https://doi.org/10.1038/psp.2013.70)
 
-## Model component
-<dbs-pgx drug="simvastatin" model-id="Simvastatin_Friedrich2014_reference" status="needs_review" stale="false" population="" measured-compound="simvastatin" parameterization="apparent" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="simvastatin" model-id="Simvastatin_Friedrich2014_reference" status="needs_review" stale="false" population="" measured-compound="simvastatin" parameterization="apparent" topology="2C"></div>
 
 **Model structure:** 2-compartment, oral mammillary model — template `PK_2C_enteral`.  
 **Parameters:** 5 extracted.

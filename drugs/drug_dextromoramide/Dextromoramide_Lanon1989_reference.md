@@ -21,8 +21,7 @@
 Lançon JP et al., [Pharmacokinetics of dextromoramide in…, Annales francaises d'anesth… (1989)
   ·  DOI: [10.1016/s0750-7658(89)80015-2](https://doi.org/10.1016/s0750-7658(89)80015-2)
 
-## Model component
-<dbs-pgx drug="dextromoramide" model-id="Dextromoramide_Lanon1989_reference" status="extracted" stale="false" population="surgical patients" measured-compound="dextromoramide" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="dextromoramide" model-id="Dextromoramide_Lanon1989_reference" status="extracted" stale="false" population="surgical patients" measured-compound="dextromoramide" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameters:** 3 extracted.

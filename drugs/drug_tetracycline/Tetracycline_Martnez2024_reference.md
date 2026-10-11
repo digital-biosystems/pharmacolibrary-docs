@@ -29,8 +29,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on paramet
 Martínez J et al., Pharmacokinetics of Doxycycline in Plas…, Animals : an open access jo… (2024)
   ·  DOI: [10.3390/ani14162416](https://doi.org/10.3390/ani14162416)
 
-## Model component
-<dbs-pgx drug="tetracycline" model-id="Tetracycline_Martnez2024_reference" status="curated_candidate" stale="false" population="" measured-compound="tetracycline" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="tetracycline" model-id="Tetracycline_Martnez2024_reference" status="curated_candidate" stale="false" population="" measured-compound="tetracycline" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameters:** 2 extracted.

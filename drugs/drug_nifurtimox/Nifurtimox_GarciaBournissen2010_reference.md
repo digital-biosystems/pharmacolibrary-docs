@@ -21,8 +21,7 @@
 Garcia-Bournissen F et al., Is use of nifurtimox for the treatment…, Archives of disease in chil… (2010)
   ·  DOI: [10.1136/adc.2008.157297](https://doi.org/10.1136/adc.2008.157297)
 
-## Model component
-<dbs-pgx drug="nifurtimox" model-id="Nifurtimox_GarciaBournissen2010_reference" status="rejected" stale="false" population="adults with Chagas disease (plasma data from published studies)" measured-compound="nifurtimox" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="nifurtimox" model-id="Nifurtimox_GarciaBournissen2010_reference" status="rejected" stale="false" population="adults with Chagas disease (plasma data from published studies)" measured-compound="nifurtimox" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

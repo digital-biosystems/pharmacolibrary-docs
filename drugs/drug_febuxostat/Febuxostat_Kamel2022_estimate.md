@@ -21,8 +21,7 @@
 Kamel B et al., Population pharmacokinetic modelling of…, British journal of clinical… (2022)
   ·  DOI: [10.1111/bcp.15462](https://doi.org/10.1111/bcp.15462)
 
-## Model component
-<dbs-pgx drug="febuxostat" model-id="Febuxostat_Kamel2022_estimate" status="extracted" stale="false" population="healthy subjects and people with gout" measured-compound="febuxostat" parameterization="apparent" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="febuxostat" model-id="Febuxostat_Kamel2022_estimate" status="extracted" stale="false" population="healthy subjects and people with gout" measured-compound="febuxostat" parameterization="apparent" topology="2C"></div>
 
 **Model structure:** 2-compartment, oral mammillary model — template `PK_2C_enteral`.  
 **Parameters:** 5 extracted, plus 2 covariate effects.

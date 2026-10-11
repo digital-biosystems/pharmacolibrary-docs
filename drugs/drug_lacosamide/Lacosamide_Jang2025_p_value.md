@@ -29,8 +29,7 @@ Nothing in the extracted data describes the drug's disposition, so there is no m
 Jang Y et al., Saliva-based lacosamide monitoring pave…, Scientific reports (2025)
   ·  DOI: [10.1038/s41598-025-04044-x](https://doi.org/10.1038/s41598-025-04044-x)
 
-## Model component
-<dbs-pgx drug="lacosamide" model-id="Lacosamide_Jang2025_p_value" status="" stale="true" population="epilepsy patients" measured-compound="" parameterization="" topology=""></dbs-pgx>
+<div class="pk-model-meta" hidden drug="lacosamide" model-id="Lacosamide_Jang2025_p_value" status="" stale="true" population="epilepsy patients" measured-compound="" parameterization="" topology=""></div>
 
 **Model structure:** —; no model was built for this record.  
 **Parameters:** 0 extracted.

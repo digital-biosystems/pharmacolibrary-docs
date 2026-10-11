@@ -20,8 +20,7 @@
 Yang Y et al., Impact of valproate co-medication and a…, Frontiers in pharmacology (2026)
   ·  DOI: [10.3389/fphar.2026.1810528](https://doi.org/10.3389/fphar.2026.1810528)
 
-## Model component
-<dbs-pgx drug="lurasidone" model-id="Lurasidone_Yang2026_final_model" status="rejected" stale="false" population="Chinese psychiatric inpatients" measured-compound="lurasidone" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="lurasidone" model-id="Lurasidone_Yang2026_final_model" status="rejected" stale="false" population="Chinese psychiatric inpatients" measured-compound="lurasidone" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 3 extracted.

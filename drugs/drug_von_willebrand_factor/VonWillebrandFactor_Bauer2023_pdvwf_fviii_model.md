@@ -35,8 +35,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which m
 Bauer A et al., Pharmacokinetic-Pharmacodynamic Compari…, Journal of blood medicine (2023)
   ·  DOI: [10.2147/JBM.S395845](https://doi.org/10.2147/JBM.S395845)
 
-## Model component
-<dbs-pgx drug="von Willebrand factor" model-id="VonWillebrandFactor_Bauer2023_pdvwf_fviii_model" status="rejected" stale="true" population="adults with von Willebrand disease" measured-compound="von Willebrand factor" parameterization="mechanistic" topology="general_linear"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="von Willebrand factor" model-id="VonWillebrandFactor_Bauer2023_pdvwf_fviii_model" status="rejected" stale="true" population="adults with von Willebrand disease" measured-compound="von Willebrand factor" parameterization="mechanistic" topology="general_linear"></div>
 
 **Model structure:** general linear; no model was built for this record.  
 **Parameters:** 5 extracted, plus 2 covariate effects.

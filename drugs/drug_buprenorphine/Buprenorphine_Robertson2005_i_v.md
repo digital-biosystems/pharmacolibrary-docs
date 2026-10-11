@@ -23,8 +23,7 @@
 Robertson SA et al., PK-PD modeling of buprenorphine in cats…, Journal of veterinary pharm… (2005)
   ·  DOI: [10.1111/j.1365-2885.2005.00677.x](https://doi.org/10.1111/j.1365-2885.2005.00677.x)
 
-## Model component
-<dbs-pgx drug="buprenorphine" model-id="Buprenorphine_Robertson2005_i_v" status="extracted" stale="false" population="adult cats" measured-compound="buprenorphine" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="buprenorphine" model-id="Buprenorphine_Robertson2005_i_v" status="extracted" stale="false" population="adult cats" measured-compound="buprenorphine" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameters:** 2 extracted.

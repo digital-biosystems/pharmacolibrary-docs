@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the val
 Dings C et al., Population kinetic/pharmacodynamic mode…, British journal of clinical… (2024)
   ·  DOI: [10.1111/bcp.16083](https://doi.org/10.1111/bcp.16083)
 
-## Model component
-<dbs-pgx drug="cafedrine" model-id="Cafedrine_Dings2024_reference" status="rejected" stale="true" population="patients under general anaesthesia" measured-compound="cafedrine" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="cafedrine" model-id="Cafedrine_Dings2024_reference" status="rejected" stale="true" population="patients under general anaesthesia" measured-compound="cafedrine" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 2 extracted.

@@ -21,8 +21,7 @@
 Li BL et al., Population Pharmacokinetics of Intranas…, Anesthesiology (2022)
   ·  DOI: [10.1097/ALN.0000000000004258](https://doi.org/10.1097/ALN.0000000000004258)
 
-## Model component
-<dbs-pgx drug="dexmedetomidine" model-id="Dexmedetomidine_Li2022_reference" status="needs_review" stale="false" population="infants and young children (3-36 months) undergoing interventional radiological procedures" measured-compound="dexmedetomidine" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="dexmedetomidine" model-id="Dexmedetomidine_Li2022_reference" status="needs_review" stale="false" population="infants and young children (3-36 months) undergoing interventional radiological procedures" measured-compound="dexmedetomidine" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 3 extracted.

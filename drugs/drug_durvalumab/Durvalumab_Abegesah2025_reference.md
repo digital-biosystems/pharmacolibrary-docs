@@ -21,8 +21,7 @@
 Abegesah A et al., Population pharmacokinetics and exposur…, Cancer chemotherapy and pha… (2025)
   ·  DOI: [10.1007/s00280-024-04743-8](https://doi.org/10.1007/s00280-024-04743-8)
 
-## Model component
-<dbs-pgx drug="durvalumab" model-id="Durvalumab_Abegesah2025_reference" status="extracted" stale="false" population="patients with advanced cancers, including biliary tract cancer" measured-compound="durvalumab" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="durvalumab" model-id="Durvalumab_Abegesah2025_reference" status="extracted" stale="false" population="patients with advanced cancers, including biliary tract cancer" measured-compound="durvalumab" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment, IV mammillary model — template `PK_2C`.  
 **Parameters:** 4 extracted, plus 4 covariate effects.

@@ -29,8 +29,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Zang YN et al., Population pharmacokinetics of lyophili…, International journal of cl… (2017)
   ·  DOI: [10.5414/CP202973](https://doi.org/10.5414/CP202973)
 
-## Model component
-<dbs-pgx drug="exenatide" model-id="Exenatide_Zang2017_reference" status="rejected" stale="false" population="Chinese patients with type 2 diabetes mellitus" measured-compound="recombinant exendin-4" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="exenatide" model-id="Exenatide_Zang2017_reference" status="rejected" stale="false" population="Chinese patients with type 2 diabetes mellitus" measured-compound="recombinant exendin-4" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

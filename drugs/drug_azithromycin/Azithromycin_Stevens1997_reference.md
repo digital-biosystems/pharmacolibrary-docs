@@ -20,8 +20,7 @@
 ## Citation
 Stevens RC et al., Pharmacokinetics of azithromycin after…, Pharmacotherapy (1997)
 
-## Model component
-<dbs-pgx drug="azithromycin" model-id="Azithromycin_Stevens1997_reference" status="needs_review" stale="false" population="children with and without cancer" measured-compound="azithromycin" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="azithromycin" model-id="Azithromycin_Stevens1997_reference" status="needs_review" stale="false" population="children with and without cancer" measured-compound="azithromycin" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 6 extracted.

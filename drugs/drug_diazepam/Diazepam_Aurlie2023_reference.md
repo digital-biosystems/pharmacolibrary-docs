@@ -29,8 +29,7 @@ The record reports diazepam parameters CL 1.236 L/h, V1 7.44 L, V2 0.62 L, Q 93.
 Aurélie L et al., External Evaluation of Population Pharm…, Pharmaceuticals (Basel, Swi… (2023)
   ·  DOI: [10.3390/ph16111627](https://doi.org/10.3390/ph16111627)
 
-## Model component
-<dbs-pgx drug="diazepam" model-id="Diazepam_Aurlie2023_reference" status="extracted" stale="true" population="" measured-compound="diazepam" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="diazepam" model-id="Diazepam_Aurlie2023_reference" status="extracted" stale="true" population="" measured-compound="diazepam" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment, oral mammillary model — template `PK_2C_enteral`.  
 **Parameters:** 6 extracted.

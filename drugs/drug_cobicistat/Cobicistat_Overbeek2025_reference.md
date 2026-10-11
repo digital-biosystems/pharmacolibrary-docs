@@ -21,8 +21,7 @@
 Overbeek JK et al., Population Pharmacokinetics of Cobicist…, Clinical pharmacokinetics (2025)
   ·  DOI: [10.1007/s40262-025-01480-w](https://doi.org/10.1007/s40262-025-01480-w)
 
-## Model component
-<dbs-pgx drug="cobicistat" model-id="Cobicistat_Overbeek2025_reference" status="needs_review" stale="false" population="healthy volunteers and patients with rheumatoid arthritis, cancer, or HIV infection" measured-compound="cobicistat" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="cobicistat" model-id="Cobicistat_Overbeek2025_reference" status="needs_review" stale="false" population="healthy volunteers and patients with rheumatoid arthritis, cancer, or HIV infection" measured-compound="cobicistat" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 5 extracted.

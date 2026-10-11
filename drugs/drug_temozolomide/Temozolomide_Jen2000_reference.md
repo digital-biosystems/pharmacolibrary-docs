@@ -21,8 +21,7 @@
 Jen JF et al., Population pharmacokinetics of temozolo…, Pharmaceutical research (2000)
   ·  DOI: [10.1023/a:1026403805756](https://doi.org/10.1023/a:1026403805756)
 
-## Model component
-<dbs-pgx drug="temozolomide" model-id="Temozolomide_Jen2000_reference" status="rejected" stale="false" population="cancer patients" measured-compound="temozolomide" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="temozolomide" model-id="Temozolomide_Jen2000_reference" status="rejected" stale="false" population="cancer patients" measured-compound="temozolomide" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

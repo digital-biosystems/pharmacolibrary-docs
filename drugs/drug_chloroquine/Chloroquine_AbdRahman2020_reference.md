@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Abd-Rahman AN et al., Population Pharmacokinetics and Pharmac…, Clinical pharmacology and t… (2020)
   ·  DOI: [10.1002/cpt.1893](https://doi.org/10.1002/cpt.1893)
 
-## Model component
-<dbs-pgx drug="chloroquine" model-id="Chloroquine_AbdRahman2020_reference" status="extracted" stale="true" population="healthy adults inoculated with blood-stage Plasmodium vivax" measured-compound="chloroquine" parameterization="apparent" topology="parent_metabolite"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="chloroquine" model-id="Chloroquine_AbdRahman2020_reference" status="extracted" stale="true" population="healthy adults inoculated with blood-stage Plasmodium vivax" measured-compound="chloroquine" parameterization="apparent" topology="parent_metabolite"></div>
 
 **Model structure:** parent–metabolite model: parent with 2 compartment(s); metabolite desethylchloroquine: 2 compartment(s); formed from the central compartment; oral dose — template `PK_3M_9C`.  
 **Parameters:** 10 extracted.

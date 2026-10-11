@@ -25,8 +25,7 @@
 Corum O et al., Plasma and Milk Pharmacokinetics and Es…, Veterinary medicine and sci… (2024)
   ·  DOI: [10.1002/vms3.70047](https://doi.org/10.1002/vms3.70047)
 
-## Model component
-<dbs-pgx drug="tolfenamic acid" model-id="TolfenamicAcid_Corum2024_reference" status="extracted" stale="false" population="lactating sheep" measured-compound="tolfenamic_acid" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="tolfenamic acid" model-id="TolfenamicAcid_Corum2024_reference" status="extracted" stale="false" population="lactating sheep" measured-compound="tolfenamic_acid" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameters:** 2 extracted.

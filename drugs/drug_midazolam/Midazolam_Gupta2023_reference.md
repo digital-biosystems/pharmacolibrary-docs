@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on paramet
 Gupta N et al., Clinical Pharmacology of Brigatinib: A…, Clinical pharmacokinetics (2023)
   ·  DOI: [10.1007/s40262-023-01284-w](https://doi.org/10.1007/s40262-023-01284-w)
 
-## Model component
-<dbs-pgx drug="midazolam" model-id="Midazolam_Gupta2023_reference" status="extracted" stale="true" population="" measured-compound="midazolam" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="midazolam" model-id="Midazolam_Gupta2023_reference" status="extracted" stale="true" population="" measured-compound="midazolam" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 2 extracted.

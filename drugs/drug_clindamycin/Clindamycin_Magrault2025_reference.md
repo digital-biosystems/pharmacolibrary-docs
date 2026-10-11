@@ -21,8 +21,7 @@
 Magréault S et al., Dosing and route of administration of c…, Clinical microbiology and i… (2025)
   ·  DOI: [10.1016/j.cmi.2025.01.005](https://doi.org/10.1016/j.cmi.2025.01.005)
 
-## Model component
-<dbs-pgx drug="clindamycin" model-id="Clindamycin_Magrault2025_reference" status="rejected" stale="false" population="patients with bone and joint infections" measured-compound="clindamycin" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="clindamycin" model-id="Clindamycin_Magrault2025_reference" status="rejected" stale="false" population="patients with bone and joint infections" measured-compound="clindamycin" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

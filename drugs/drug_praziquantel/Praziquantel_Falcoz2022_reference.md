@@ -23,8 +23,7 @@
 Falcoz C et al., R-praziquantel integrated population ph…, Journal of pharmacokinetics… (2022)
   ·  DOI: [10.1007/s10928-021-09791-8](https://doi.org/10.1007/s10928-021-09791-8)
 
-## Model component
-<dbs-pgx drug="praziquantel" model-id="Praziquantel_Falcoz2022_reference" status="rejected" stale="false" population="African children with schistosomiasis and Lao adults with opisthorchiasis" measured-compound="R-praziquantel" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="praziquantel" model-id="Praziquantel_Falcoz2022_reference" status="rejected" stale="false" population="African children with schistosomiasis and Lao adults with opisthorchiasis" measured-compound="R-praziquantel" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 1 extracted.

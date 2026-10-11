@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the lin
 Lass J et al., Pharmacokinetics of oral spironolactone…, European journal of clinica… (2024)
   ·  DOI: [10.1007/s00228-023-03599-w](https://doi.org/10.1007/s00228-023-03599-w)
 
-## Model component
-<dbs-pgx drug="canrenone" model-id="Canrenone_Lass2024_reference" status="extracted" stale="true" population="infants with chronic heart failure, ascites and/or oedema" measured-compound="spironolactone" parameterization="apparent" topology="general_linear"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="canrenone" model-id="Canrenone_Lass2024_reference" status="extracted" stale="true" population="infants with chronic heart failure, ascites and/or oedema" measured-compound="spironolactone" parameterization="apparent" topology="general_linear"></div>
 
 **Model structure:** 1-compartment general linear model (non-mammillary edges) — template `PK_General_Linear`.  
 **Parameters:** 5 extracted.

@@ -21,8 +21,7 @@
 Hahn J et al., Population pharmacokinetics of intraven…, Critical care (London, Engl… (2019)
   ·  DOI: [10.1186/s13054-019-2508-4](https://doi.org/10.1186/s13054-019-2508-4)
 
-## Model component
-<dbs-pgx drug="sufentanil" model-id="Sufentanil_Hahn2019_final" status="extracted" stale="false" population="critically ill patients supported with extracorporeal membrane oxygenation therapy" measured-compound="sufentanil" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="sufentanil" model-id="Sufentanil_Hahn2019_final" status="extracted" stale="false" population="critically ill patients supported with extracorporeal membrane oxygenation therapy" measured-compound="sufentanil" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment, IV mammillary model — template `PK_2C`.  
 **Parameters:** 4 extracted.

@@ -21,8 +21,7 @@
 Chevillard L et al., Population pharmacokinetics of oral bac…, Fundamental & clinical phar… (2018)
   ·  DOI: [10.1111/fcp.12330](https://doi.org/10.1111/fcp.12330)
 
-## Model component
-<dbs-pgx drug="baclofen" model-id="Baclofen_Chevillard2018_reference" status="rejected" stale="false" population="alcoholic-dependent adult patients" measured-compound="baclofen" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="baclofen" model-id="Baclofen_Chevillard2018_reference" status="rejected" stale="false" population="alcoholic-dependent adult patients" measured-compound="baclofen" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

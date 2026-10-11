@@ -29,8 +29,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Kubo K et al., Population differences in S-warfarin ph…, The pharmacogenomics journal (2017)
   ·  DOI: [10.1038/tpj.2016.57](https://doi.org/10.1038/tpj.2016.57)
 
-## Model component
-<dbs-pgx drug="warfarin" model-id="Warfarin_Kubo2017_reference" status="needs_review" stale="false" population="African American, Asian and white patients" measured-compound="S-warfarin" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="warfarin" model-id="Warfarin_Kubo2017_reference" status="needs_review" stale="false" population="African American, Asian and white patients" measured-compound="S-warfarin" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 4 extracted, plus 7 covariate effects.

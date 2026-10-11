@@ -20,8 +20,7 @@
 Chen Y et al., Integrative population pharmacokinetic/…, Frontiers in pharmacology (2023)
   ·  DOI: [10.3389/fphar.2023.912962](https://doi.org/10.3389/fphar.2023.912962)
 
-## Model component
-<dbs-pgx drug="nemonoxacin" model-id="Nemonoxacin_Chen2023_bias" status="extracted" stale="false" population="Chinese patients with community-acquired pneumonia and healthy subjects" measured-compound="nemonoxacin" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="nemonoxacin" model-id="Nemonoxacin_Chen2023_bias" status="extracted" stale="false" population="Chinese patients with community-acquired pneumonia and healthy subjects" measured-compound="nemonoxacin" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 6 extracted.

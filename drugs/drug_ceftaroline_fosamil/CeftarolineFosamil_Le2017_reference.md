@@ -23,8 +23,7 @@
 Le J et al., Pharmacokinetics of single-dose ceftaro…, Pediatric pulmonology (2017)
   ·  DOI: [10.1002/ppul.23827](https://doi.org/10.1002/ppul.23827)
 
-## Model component
-<dbs-pgx drug="ceftaroline fosamil" model-id="CeftarolineFosamil_Le2017_reference" status="rejected" stale="false" population="children with cystic fibrosis" measured-compound="ceftaroline" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="ceftaroline fosamil" model-id="CeftarolineFosamil_Le2017_reference" status="rejected" stale="false" population="children with cystic fibrosis" measured-compound="ceftaroline" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

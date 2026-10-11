@@ -20,8 +20,7 @@
 Dogterom P et al., Asenapine pharmacokinetics and tolerabi…, Drug design, development an… (2018)
   ·  DOI: [10.2147/DDDT.S171475](https://doi.org/10.2147/DDDT.S171475)
 
-## Model component
-<dbs-pgx drug="asenapine" model-id="Asenapine_Dogterom2018_reference" status="extracted" stale="false" population="pediatric patients with schizophrenia or bipolar I disorder" measured-compound="asenapine" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="asenapine" model-id="Asenapine_Dogterom2018_reference" status="extracted" stale="false" population="pediatric patients with schizophrenia or bipolar I disorder" measured-compound="asenapine" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 5 extracted.

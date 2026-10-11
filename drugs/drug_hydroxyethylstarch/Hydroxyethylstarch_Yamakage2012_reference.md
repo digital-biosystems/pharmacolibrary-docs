@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Yamakage M et al., Pharmacokinetics and safety of 6 % hydr…, Journal of anesthesia (2012)
   ·  DOI: [10.1007/s00540-012-1430-6](https://doi.org/10.1007/s00540-012-1430-6)
 
-## Model component
-<dbs-pgx drug="hydroxyethylstarch" model-id="Hydroxyethylstarch_Yamakage2012_reference" status="extracted" stale="true" population="healthy male Japanese volunteers" measured-compound="hydroxyethylstarch 130/0.4" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="hydroxyethylstarch" model-id="Hydroxyethylstarch_Yamakage2012_reference" status="extracted" stale="true" population="healthy male Japanese volunteers" measured-compound="hydroxyethylstarch 130/0.4" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameters:** 3 extracted.

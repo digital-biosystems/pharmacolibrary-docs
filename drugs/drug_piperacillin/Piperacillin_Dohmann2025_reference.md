@@ -23,8 +23,7 @@
 Dohmann E et al., Probability of pharmacokinetic/pharmaco…, British journal of clinical… (2025)
   ·  DOI: [10.1002/bcp.70153](https://doi.org/10.1002/bcp.70153)
 
-## Model component
-<dbs-pgx drug="piperacillin" model-id="Piperacillin_Dohmann2025_reference" status="extracted" stale="false" population="patients with impaired renal function" measured-compound="piperacillin" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="piperacillin" model-id="Piperacillin_Dohmann2025_reference" status="extracted" stale="false" population="patients with impaired renal function" measured-compound="piperacillin" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameters:** 4 extracted.

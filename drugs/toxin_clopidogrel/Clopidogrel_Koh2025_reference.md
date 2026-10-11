@@ -21,8 +21,7 @@
 Koh J; Khwarg J; Yu KS; Lee S; Jang IJ; Lee S et al. (2025). Drug design, development and therapy 19
   ·  DOI: [10.2147/dddt.s533428](https://doi.org/10.2147/dddt.s533428)
 
-## Model component
-<dbs-pgx drug="clopidogrel" model-id="Clopidogrel_Koh2025_reference" status="extracted" stale="true" population="" measured-compound="clopidogrel" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="clopidogrel" model-id="Clopidogrel_Koh2025_reference" status="extracted" stale="true" population="" measured-compound="clopidogrel" parameterization="apparent" topology="1C"></div>
 
 **Parameterization:** CL/F — apparent, F unknown (apparent — bioavailability not identifiable).
 

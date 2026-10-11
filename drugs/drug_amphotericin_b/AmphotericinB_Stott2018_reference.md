@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Stott KE et al., Population Pharmacokinetic Model and Me…, Antimicrobial agents and ch… (2018)
   ·  DOI: [10.1128/AAC.02526-17](https://doi.org/10.1128/AAC.02526-17)
 
-## Model component
-<dbs-pgx drug="amphotericin B" model-id="AmphotericinB_Stott2018_reference" status="rejected" stale="true" population="adults with cryptococcal meningitis" measured-compound="amphotericin_b" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="amphotericin B" model-id="AmphotericinB_Stott2018_reference" status="rejected" stale="true" population="adults with cryptococcal meningitis" measured-compound="amphotericin_b" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 3 extracted.

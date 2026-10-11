@@ -27,8 +27,7 @@
 Zhu L et al., Population Pharmacokinetic Analysis of…, Infectious diseases and the… (2018)
   ·  DOI: [10.1007/s40121-018-0197-y](https://doi.org/10.1007/s40121-018-0197-y)
 
-## Model component
-<dbs-pgx drug="macrogol" model-id="Macrogol_Zhu2018_reference" status="extracted" stale="true" population="" measured-compound="macrogol" parameterization="apparent" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="macrogol" model-id="Macrogol_Zhu2018_reference" status="extracted" stale="true" population="" measured-compound="macrogol" parameterization="apparent" topology="2C"></div>
 
 **Model structure:** 2-compartment, oral mammillary model — template `PK_2C_enteral`.  
 **Parameters:** 5 extracted.

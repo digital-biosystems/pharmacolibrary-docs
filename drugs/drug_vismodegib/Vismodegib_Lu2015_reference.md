@@ -20,8 +20,7 @@
 Lu T et al., Semi-Mechanism-Based Population Pharmac…, CPT: pharmacometrics & syst… (2015)
   ·  DOI: [10.1002/psp4.12039](https://doi.org/10.1002/psp4.12039)
 
-## Model component
-<dbs-pgx drug="vismodegib" model-id="Vismodegib_Lu2015_reference" status="rejected" stale="false" population="adults with advanced solid tumors and healthy women of nonchildbearing potential" measured-compound="vismodegib" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="vismodegib" model-id="Vismodegib_Lu2015_reference" status="rejected" stale="false" population="adults with advanced solid tumors and healthy women of nonchildbearing potential" measured-compound="vismodegib" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 1 extracted.

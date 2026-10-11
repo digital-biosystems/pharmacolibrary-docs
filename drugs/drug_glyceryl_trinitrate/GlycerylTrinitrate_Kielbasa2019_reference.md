@@ -29,8 +29,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on paramet
 Kielbasa W et al., A new era for migraine: Pharmacokinetic…, Cephalalgia : an internatio… (2019)
   ·  DOI: [10.1177/0333102419840780](https://doi.org/10.1177/0333102419840780)
 
-## Model component
-<dbs-pgx drug="glyceryl trinitrate" model-id="GlycerylTrinitrate_Kielbasa2019_reference" status="extracted" stale="true" population="" measured-compound="glyceryl_trinitrate" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="glyceryl trinitrate" model-id="GlycerylTrinitrate_Kielbasa2019_reference" status="extracted" stale="true" population="" measured-compound="glyceryl_trinitrate" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 3 extracted.

@@ -33,8 +33,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on paramet
 Groenendaal D et al., Population pharmacokinetic modelling of…, British journal of pharmaco… (2007)
   ·  DOI: [10.1038/sj.bjp.0707257](https://doi.org/10.1038/sj.bjp.0707257)
 
-## Model component
-<dbs-pgx drug="nalbuphine" model-id="Nalbuphine_Groenendaal2007_reference" status="rejected" stale="true" population="" measured-compound="nalbuphine" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="nalbuphine" model-id="Nalbuphine_Groenendaal2007_reference" status="rejected" stale="true" population="" measured-compound="nalbuphine" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment; no model was built for this record.  
 **Parameters:** 3 extracted.

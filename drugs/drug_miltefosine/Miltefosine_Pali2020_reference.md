@@ -21,8 +21,7 @@
 Palić S et al., Characterizing the non-linear pharmacok…, The Journal of antimicrobia… (2020)
   ·  DOI: [10.1093/jac/dkaa314](https://doi.org/10.1093/jac/dkaa314)
 
-## Model component
-<dbs-pgx drug="miltefosine" model-id="Miltefosine_Pali2020_reference" status="extracted" stale="false" population="paediatric visceral leishmaniasis patients from Eastern Africa" measured-compound="miltefosine" parameterization="apparent" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="miltefosine" model-id="Miltefosine_Pali2020_reference" status="extracted" stale="false" population="paediatric visceral leishmaniasis patients from Eastern Africa" measured-compound="miltefosine" parameterization="apparent" topology="2C"></div>
 
 **Model structure:** 2-compartment, oral mammillary model — template `PK_2C_enteral`.  
 **Parameters:** 7 extracted, plus 1 covariate effect.

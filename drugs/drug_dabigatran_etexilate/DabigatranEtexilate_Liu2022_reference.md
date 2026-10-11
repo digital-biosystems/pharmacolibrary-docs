@@ -32,8 +32,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Liu YO et al., Population pharmacokinetic analysis for…, Frontiers in cardiovascular… (2022)
   ·  DOI: [10.3389/fcvm.2022.998751](https://doi.org/10.3389/fcvm.2022.998751)
 
-## Model component
-<dbs-pgx drug="dabigatran etexilate" model-id="DabigatranEtexilate_Liu2022_reference" status="needs_review" stale="true" population="healthy Chinese volunteers and patients with non-valvular atrial fibrillation" measured-compound="dabigatran" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="dabigatran etexilate" model-id="DabigatranEtexilate_Liu2022_reference" status="needs_review" stale="true" population="healthy Chinese volunteers and patients with non-valvular atrial fibrillation" measured-compound="dabigatran" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 1 extracted.

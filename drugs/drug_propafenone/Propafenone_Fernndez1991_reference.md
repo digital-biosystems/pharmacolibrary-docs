@@ -33,8 +33,7 @@ Independently confirmed by `gpt-oss:120b`.
 Fernández J et al., Tissue distribution of propafenone in t…, European journal of drug me… (1991)
   ·  DOI: [10.1007/BF03189870](https://doi.org/10.1007/BF03189870)
 
-## Model component
-<dbs-pgx drug="propafenone" model-id="Propafenone_Fernndez1991_reference" status="rejected" stale="true" population="rats" measured-compound="propafenone" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="propafenone" model-id="Propafenone_Fernndez1991_reference" status="rejected" stale="true" population="rats" measured-compound="propafenone" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 4 extracted.

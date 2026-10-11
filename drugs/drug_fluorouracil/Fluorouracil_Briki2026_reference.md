@@ -21,8 +21,7 @@
 Briki M et al., Model-based meta-analysis of individual…, Cancer chemotherapy and pha… (2026)
   ·  DOI: [10.1007/s00280-026-04885-x](https://doi.org/10.1007/s00280-026-04885-x)
 
-## Model component
-<dbs-pgx drug="fluorouracil" model-id="Fluorouracil_Briki2026_reference" status="rejected" stale="false" population="patients" measured-compound="5-fluorouracil" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="fluorouracil" model-id="Fluorouracil_Briki2026_reference" status="rejected" stale="false" population="patients" measured-compound="5-fluorouracil" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

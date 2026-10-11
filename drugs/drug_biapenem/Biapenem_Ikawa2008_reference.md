@@ -21,8 +21,7 @@
 Ikawa K et al., Pharmacodynamic evaluation of biapenem…, International journal of an… (2008)
   ·  DOI: [10.1016/j.ijantimicag.2008.03.011](https://doi.org/10.1016/j.ijantimicag.2008.03.011)
 
-## Model component
-<dbs-pgx drug="biapenem" model-id="Biapenem_Ikawa2008_reference" status="needs_review" stale="false" population="adults before abdominal surgery" measured-compound="biapenem" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="biapenem" model-id="Biapenem_Ikawa2008_reference" status="needs_review" stale="false" population="adults before abdominal surgery" measured-compound="biapenem" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment; no model was built for this record.  
 **Parameters:** 6 extracted.

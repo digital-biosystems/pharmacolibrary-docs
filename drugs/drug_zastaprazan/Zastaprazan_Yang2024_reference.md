@@ -30,8 +30,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Yang E et al., Population pharmacokinetic analysis of…, CPT: pharmacometrics & syst… (2024)
   ·  DOI: [10.1002/psp4.13228](https://doi.org/10.1002/psp4.13228)
 
-## Model component
-<dbs-pgx drug="zastaprazan" model-id="Zastaprazan_Yang2024_reference" status="rejected" stale="true" population="patients with GERD and healthy volunteers" measured-compound="zastaprazan" parameterization="mechanistic" topology="general_linear"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="zastaprazan" model-id="Zastaprazan_Yang2024_reference" status="rejected" stale="true" population="patients with GERD and healthy volunteers" measured-compound="zastaprazan" parameterization="mechanistic" topology="general_linear"></div>
 
 **Model structure:** general linear; no model was built for this record.  
 **Parameters:** 0 extracted.

@@ -21,8 +21,7 @@
 Lin M et al., The impact of CYP3A5*3 on oral quetiapi…, Journal of affective disord… (2024)
   ·  DOI: [10.1016/j.jad.2024.01.170](https://doi.org/10.1016/j.jad.2024.01.170)
 
-## Model component
-<dbs-pgx drug="quetiapine" model-id="Quetiapine_Lin2024_reference" status="rejected" stale="false" population="Chinese patients with bipolar disorder" measured-compound="quetiapine" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="quetiapine" model-id="Quetiapine_Lin2024_reference" status="rejected" stale="false" population="Chinese patients with bipolar disorder" measured-compound="quetiapine" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

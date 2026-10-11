@@ -21,8 +21,7 @@
 Hu Z et al., Nivolumab and ipilimumab population pha…, CPT: pharmacometrics & syst… (2024)
   ·  DOI: [10.1002/psp4.13098](https://doi.org/10.1002/psp4.13098)
 
-## Model component
-<dbs-pgx drug="ipilimumab" model-id="Ipilimumab_Hu2024_reference" status="extracted" stale="false" population="pediatric and adult oncology patients" measured-compound="ipilimumab" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="ipilimumab" model-id="Ipilimumab_Hu2024_reference" status="extracted" stale="false" population="pediatric and adult oncology patients" measured-compound="ipilimumab" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment, IV mammillary model — template `PK_2C`.  
 **Parameters:** 5 extracted, plus 3 covariate effects.

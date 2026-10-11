@@ -19,8 +19,7 @@
 ## Citation
 Heintz RC et al., Pharmacokinetics of tenoxicam in health…, European journal of rheumat… (1984)
 
-## Model component
-<dbs-pgx drug="tenoxicam" model-id="Tenoxicam_Heintz1984_reference" status="rejected" stale="false" population="healthy adult volunteers" measured-compound="tenoxicam" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="tenoxicam" model-id="Tenoxicam_Heintz1984_reference" status="rejected" stale="false" population="healthy adult volunteers" measured-compound="tenoxicam" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 1 extracted.

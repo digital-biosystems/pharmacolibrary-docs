@@ -25,8 +25,7 @@
 Kotschwar JL et al., Analgesic efficacy of sodium salicylate…, Journal of dairy science (2009)
   ·  DOI: [10.3168/jds.2009-2058](https://doi.org/10.3168/jds.2009-2058)
 
-## Model component
-<dbs-pgx drug="potassium salicylate" model-id="PotassiumSalicylate_Kotschwar2009_period_3" status="extracted" stale="false" population="bovine calves" measured-compound="salicylate" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="potassium salicylate" model-id="PotassiumSalicylate_Kotschwar2009_period_3" status="extracted" stale="false" population="bovine calves" measured-compound="salicylate" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 4 extracted.

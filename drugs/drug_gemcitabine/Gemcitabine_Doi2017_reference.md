@@ -29,8 +29,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on paramet
 Doi T et al., NC-6004 Phase I study in combination wi…, Cancer chemotherapy and pha… (2017)
   ·  DOI: [10.1007/s00280-017-3254-4](https://doi.org/10.1007/s00280-017-3254-4)
 
-## Model component
-<dbs-pgx drug="gemcitabine" model-id="Gemcitabine_Doi2017_reference" status="extracted" stale="true" population="" measured-compound="gemcitabine" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="gemcitabine" model-id="Gemcitabine_Doi2017_reference" status="extracted" stale="true" population="" measured-compound="gemcitabine" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment, IV mammillary model — template `PK_2C`.  
 **Parameters:** 4 extracted.

@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the val
 Cullberg M et al., Pharmacokinetics of ximelagatran and re…, Clinical pharmacology and t… (2005)
   ·  DOI: [10.1016/j.clpt.2004.11.001](https://doi.org/10.1016/j.clpt.2004.11.001)
 
-## Model component
-<dbs-pgx drug="ximelagatran" model-id="Ximelagatran_Cullberg2005_reference" status="model_quarantined" stale="false" population="patients with acute deep vein thrombosis" measured-compound="melagatran" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="ximelagatran" model-id="Ximelagatran_Cullberg2005_reference" status="model_quarantined" stale="false" population="patients with acute deep vein thrombosis" measured-compound="melagatran" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 3 extracted.

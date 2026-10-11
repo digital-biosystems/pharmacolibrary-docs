@@ -21,8 +21,7 @@
 Hurwitz SJ et al., Pharmacokinetics of Ruxolitinib in HIV…, Journal of clinical pharmac… (2021)
   ·  DOI: [10.1002/jcph.1930](https://doi.org/10.1002/jcph.1930)
 
-## Model component
-<dbs-pgx drug="ruxolitinib" model-id="Ruxolitinib_Hurwitz2021_reference" status="rejected" stale="false" population="HIV suppressed individuals on antiretroviral therapy" measured-compound="ruxolitinib" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="ruxolitinib" model-id="Ruxolitinib_Hurwitz2021_reference" status="rejected" stale="false" population="HIV suppressed individuals on antiretroviral therapy" measured-compound="ruxolitinib" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

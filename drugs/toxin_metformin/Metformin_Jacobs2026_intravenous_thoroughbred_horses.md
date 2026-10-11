@@ -27,8 +27,7 @@
 Jacobs ME; Blea J; Hardy M; McKemie DS; Traynham M; Knych HK et al. (2026). Drug testing and analysis 18
   ·  DOI: [10.1002/dta.70000](https://doi.org/10.1002/dta.70000)
 
-## Model component
-<dbs-pgx drug="metformin" model-id="Metformin_Jacobs2026_intravenous_thoroughbred_horses" status="" stale="true" population="Thoroughbred horses" measured-compound="" parameterization="" topology=""></dbs-pgx>
+<div class="pk-model-meta" hidden drug="metformin" model-id="Metformin_Jacobs2026_intravenous_thoroughbred_horses" status="" stale="true" population="Thoroughbred horses" measured-compound="" parameterization="" topology=""></div>
 
 **Parameterization:** not captured.
 

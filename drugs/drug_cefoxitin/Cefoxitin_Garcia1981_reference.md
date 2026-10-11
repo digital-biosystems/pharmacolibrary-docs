@@ -21,8 +21,7 @@
 Garcia MJ et al., Disposition of cefoxitin in patients wi…, European journal of clinica… (1981)
   ·  DOI: [10.1007/BF00615407](https://doi.org/10.1007/BF00615407)
 
-## Model component
-<dbs-pgx drug="cefoxitin" model-id="Cefoxitin_Garcia1981_reference" status="rejected" stale="false" population="cirrhotic patients with ascites" measured-compound="cefoxitin" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="cefoxitin" model-id="Cefoxitin_Garcia1981_reference" status="rejected" stale="false" population="cirrhotic patients with ascites" measured-compound="cefoxitin" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

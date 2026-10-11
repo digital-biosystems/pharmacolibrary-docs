@@ -21,8 +21,7 @@
 Russo H et al., Time-dependent pharmacokinetics of high…, Pharmaceutical research (1997)
   ·  DOI: [10.1023/a:1012130402199](https://doi.org/10.1023/a:1012130402199)
 
-## Model component
-<dbs-pgx drug="thiopental" model-id="Thiopental_Russo1997v2_reference" status="needs_review" stale="false" population="intensive care patients with severe head injuries" measured-compound="thiopental" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="thiopental" model-id="Thiopental_Russo1997v2_reference" status="needs_review" stale="false" population="intensive care patients with severe head injuries" measured-compound="thiopental" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 2 extracted.

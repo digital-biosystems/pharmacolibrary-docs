@@ -21,8 +21,7 @@
 Li A et al., Pharmacokinetic and pharmacodynamic stu…, British journal of anaesthe… (2018)
   ·  DOI: [10.1016/j.bja.2017.11.100](https://doi.org/10.1016/j.bja.2017.11.100)
 
-## Model component
-<dbs-pgx drug="dexmedetomidine" model-id="Dexmedetomidine_Li2018_reference" status="needs_review" stale="false" population="healthy adults" measured-compound="dexmedetomidine" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="dexmedetomidine" model-id="Dexmedetomidine_Li2018_reference" status="needs_review" stale="false" population="healthy adults" measured-compound="dexmedetomidine" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 4 extracted.

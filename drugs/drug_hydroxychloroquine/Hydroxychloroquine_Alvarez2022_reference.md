@@ -31,8 +31,7 @@ Independently confirmed by `gpt-oss:120b`.
 Alvarez JC et al., Population Pharmacokinetics of Hydroxyc…, Pharmaceuticals (Basel, Swi… (2022)
   ·  DOI: [10.3390/ph15020256](https://doi.org/10.3390/ph15020256)
 
-## Model component
-<dbs-pgx drug="hydroxychloroquine" model-id="Hydroxychloroquine_Alvarez2022_reference" status="extracted" stale="true" population="hospitalized COVID-19 patients" measured-compound="hydroxychloroquine" parameterization="apparent" topology="general_linear"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="hydroxychloroquine" model-id="Hydroxychloroquine_Alvarez2022_reference" status="extracted" stale="true" population="hospitalized COVID-19 patients" measured-compound="hydroxychloroquine" parameterization="apparent" topology="general_linear"></div>
 
 **Model structure:** 2-compartment general linear model (non-mammillary edges) — template `PK_General_Linear`.  
 **Parameters:** 10 extracted.

@@ -21,8 +21,7 @@
 Danielak D et al., Population pharmacokinetics of treosulf…, European journal of clinica… (2018)
   ·  DOI: [10.1007/s00228-017-2344-x](https://doi.org/10.1007/s00228-017-2344-x)
 
-## Model component
-<dbs-pgx drug="treosulfan" model-id="Treosulfan_Danielak2018_reference" status="extracted" stale="false" population="pediatric patients" measured-compound="treosulfan" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="treosulfan" model-id="Treosulfan_Danielak2018_reference" status="extracted" stale="false" population="pediatric patients" measured-compound="treosulfan" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment, IV mammillary model — template `PK_2C`.  
 **Parameters:** 4 extracted.

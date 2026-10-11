@@ -29,8 +29,7 @@ The table was split into one record per column, and 'variability' holds a statis
 Majid O et al., Impact of perampanel on pharmacokinetic…, British journal of clinical… (2016)
   ·  DOI: [10.1111/bcp.12951](https://doi.org/10.1111/bcp.12951)
 
-## Model component
-<dbs-pgx drug="levetiracetam" model-id="Levetiracetam_Majid2016_variability" status="rejected" stale="false" population="patients with refractory partial-onset seizures" measured-compound="concomitant antiepileptic drugs" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="levetiracetam" model-id="Levetiracetam_Majid2016_variability" status="rejected" stale="false" population="patients with refractory partial-onset seizures" measured-compound="concomitant antiepileptic drugs" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 1 extracted.

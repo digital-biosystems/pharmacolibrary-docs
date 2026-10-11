@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Kunisawa T et al., Target-controlled infusion and populati…, Therapeutics and clinical r… (2015)
   ·  DOI: [10.2147/TCRM.S74867](https://doi.org/10.2147/TCRM.S74867)
 
-## Model component
-<dbs-pgx drug="landiolol" model-id="Landiolol_Kunisawa2015v2_reference" status="extracted" stale="true" population="patients with peripheral arterial disease" measured-compound="landiolol" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="landiolol" model-id="Landiolol_Kunisawa2015v2_reference" status="extracted" stale="true" population="patients with peripheral arterial disease" measured-compound="landiolol" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment, IV mammillary model — template `PK_2C`.  
 **Parameters:** 5 extracted.

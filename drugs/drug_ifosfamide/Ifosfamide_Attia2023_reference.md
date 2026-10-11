@@ -21,8 +21,7 @@
 Attia S et al., Randomized Phase 2 Clinical Trial of Ol…, Cancers (2023)
   ·  DOI: [10.3390/cancers15194871](https://doi.org/10.3390/cancers15194871)
 
-## Model component
-<dbs-pgx drug="ifosfamide" model-id="Ifosfamide_Attia2023_reference" status="extracted" stale="false" population="" measured-compound="ifosfamide" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="ifosfamide" model-id="Ifosfamide_Attia2023_reference" status="extracted" stale="false" population="" measured-compound="ifosfamide" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameters:** 2 extracted.

@@ -22,8 +22,7 @@
 ## Citation
 Geodakian SV et al., [Pharmacokinetic study of aclarubicin.…, Antibiotiki i meditsinskaia… (1987)
 
-## Model component
-<dbs-pgx drug="aclarubicin" model-id="Aclarubicin_Geodakian1987_reference" status="needs_review" stale="false" population="rats" measured-compound="aclarubicin" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="aclarubicin" model-id="Aclarubicin_Geodakian1987_reference" status="needs_review" stale="false" population="rats" measured-compound="aclarubicin" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 3 extracted.

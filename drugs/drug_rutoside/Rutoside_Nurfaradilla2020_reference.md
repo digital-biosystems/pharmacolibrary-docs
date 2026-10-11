@@ -27,8 +27,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on paramet
 Nurfaradilla SA et al., Pharmacokinetic Herb-Drug Interaction b…, Evidence-based complementar… (2020)
   ·  DOI: [10.1155/2020/5013898](https://doi.org/10.1155/2020/5013898)
 
-## Model component
-<dbs-pgx drug="rutoside" model-id="Rutoside_Nurfaradilla2020_reference" status="rejected" stale="false" population="" measured-compound="rutoside" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="rutoside" model-id="Rutoside_Nurfaradilla2020_reference" status="rejected" stale="false" population="" measured-compound="rutoside" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 2 extracted.

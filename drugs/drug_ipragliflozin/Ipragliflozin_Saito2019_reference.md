@@ -30,8 +30,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Saito M et al., Pharmacokinetic and pharmacodynamic mod…, British journal of clinical… (2019)
   ·  DOI: [10.1111/bcp.13972](https://doi.org/10.1111/bcp.13972)
 
-## Model component
-<dbs-pgx drug="ipragliflozin" model-id="Ipragliflozin_Saito2019_reference" status="needs_review" stale="true" population="healthy subjects and patients with type 2 diabetes mellitus" measured-compound="ipragliflozin" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="ipragliflozin" model-id="Ipragliflozin_Saito2019_reference" status="needs_review" stale="true" population="healthy subjects and patients with type 2 diabetes mellitus" measured-compound="ipragliflozin" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 2 extracted.

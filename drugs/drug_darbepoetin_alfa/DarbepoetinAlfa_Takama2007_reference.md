@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Takama H et al., Population pharmacokinetics of darbepoe…, British journal of clinical… (2007)
   ·  DOI: [10.1111/j.1365-2125.2006.02756.x](https://doi.org/10.1111/j.1365-2125.2006.02756.x)
 
-## Model component
-<dbs-pgx drug="darbepoetin alfa" model-id="DarbepoetinAlfa_Takama2007_reference" status="rejected" stale="true" population="haemodialysis and peritoneal dialysis patients" measured-compound="darbepoetin_alfa" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="darbepoetin alfa" model-id="DarbepoetinAlfa_Takama2007_reference" status="rejected" stale="true" population="haemodialysis and peritoneal dialysis patients" measured-compound="darbepoetin_alfa" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

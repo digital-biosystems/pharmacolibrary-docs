@@ -20,8 +20,7 @@
 Cronnelly R et al., Pharmacokinetics and pharmacodynamics o…, Anesthesiology (1983)
   ·  DOI: [10.1097/00000542-198305000-00002](https://doi.org/10.1097/00000542-198305000-00002)
 
-## Model component
-<dbs-pgx drug="vecuronium" model-id="Vecuronium_Cronnelly1983_reference" status="needs_review" stale="false" population="anesthetized humans" measured-compound="vecuronium" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="vecuronium" model-id="Vecuronium_Cronnelly1983_reference" status="needs_review" stale="false" population="anesthetized humans" measured-compound="vecuronium" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 2 extracted.

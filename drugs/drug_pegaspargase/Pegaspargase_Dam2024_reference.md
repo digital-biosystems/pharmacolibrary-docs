@@ -23,8 +23,7 @@
 Dam M et al., Increase in peg-asparaginase clearance…, Leukemia (2024)
   ·  DOI: [10.1038/s41375-024-02153-6](https://doi.org/10.1038/s41375-024-02153-6)
 
-## Model component
-<dbs-pgx drug="pegaspargase" model-id="Pegaspargase_Dam2024_reference" status="needs_review" stale="false" population="patients with acute lymphoblastic leukemia" measured-compound="asparaginase enzyme activity (AEA)" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="pegaspargase" model-id="Pegaspargase_Dam2024_reference" status="needs_review" stale="false" population="patients with acute lymphoblastic leukemia" measured-compound="asparaginase enzyme activity (AEA)" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 1 extracted.

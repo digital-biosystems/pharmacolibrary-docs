@@ -21,8 +21,7 @@
 Teixeira-da-Silva P et al., Population pharmacokinetics of phenobar…, European journal of pharmac… (2020)
   ·  DOI: [10.1016/j.ejps.2020.105484](https://doi.org/10.1016/j.ejps.2020.105484)
 
-## Model component
-<dbs-pgx drug="phenobarbital" model-id="Phenobarbital_TeixeiradaSilva2020_reference" status="rejected" stale="false" population="Caucasian patients with epilepsy over 15 years of age" measured-compound="phenobarbital" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="phenobarbital" model-id="Phenobarbital_TeixeiradaSilva2020_reference" status="rejected" stale="false" population="Caucasian patients with epilepsy over 15 years of age" measured-compound="phenobarbital" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

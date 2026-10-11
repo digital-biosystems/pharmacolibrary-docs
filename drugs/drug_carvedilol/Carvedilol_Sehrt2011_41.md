@@ -25,8 +25,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Sehrt D et al., Carvedilol pharmacokinetics and pharmac…, Pharmacogenomics (2011)
   ·  DOI: [10.2217/pgs.11.20](https://doi.org/10.2217/pgs.11.20)
 
-## Model component
-<dbs-pgx drug="carvedilol" model-id="Carvedilol_Sehrt2011_41" status="needs_review" stale="false" population="healthy volunteers" measured-compound="carvedilol" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="carvedilol" model-id="Carvedilol_Sehrt2011_41" status="needs_review" stale="false" population="healthy volunteers" measured-compound="carvedilol" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 2 extracted.

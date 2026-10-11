@@ -21,8 +21,7 @@
 Ravix A et al., Population Pharmacokinetics of Trametin…, Cancers (2024)
   ·  DOI: [10.3390/cancers16122193](https://doi.org/10.3390/cancers16122193)
 
-## Model component
-<dbs-pgx drug="trametinib" model-id="Trametinib_Ravix2024_reference" status="extracted" stale="false" population="adult oncology patients with solid tumours" measured-compound="trametinib" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="trametinib" model-id="Trametinib_Ravix2024_reference" status="extracted" stale="false" population="adult oncology patients with solid tumours" measured-compound="trametinib" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment, IV mammillary model — template `PK_2C`.  
 **Parameters:** 4 extracted.

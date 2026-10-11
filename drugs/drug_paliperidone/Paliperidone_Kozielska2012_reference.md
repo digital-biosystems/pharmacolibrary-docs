@@ -23,8 +23,7 @@
 Kozielska M et al., Pharmacokinetic-pharmacodynamic modelin…, Pharmaceutical research (2012)
   ·  DOI: [10.1007/s11095-012-0722-8](https://doi.org/10.1007/s11095-012-0722-8)
 
-## Model component
-<dbs-pgx drug="paliperidone" model-id="Paliperidone_Kozielska2012_reference" status="extracted" stale="false" population="rats" measured-compound="risperidone" parameterization="mechanistic" topology="parent_metabolite"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="paliperidone" model-id="Paliperidone_Kozielska2012_reference" status="extracted" stale="false" population="rats" measured-compound="risperidone" parameterization="mechanistic" topology="parent_metabolite"></div>
 
 **Model structure:** parent–metabolite model: parent with 2 compartment(s) plus a liver compartment (first pass); metabolite paliperidone: 2 compartment(s); formed in the liver; oral dose — template `PK_3M_3C`.  
 **Parameters:** 15 extracted.

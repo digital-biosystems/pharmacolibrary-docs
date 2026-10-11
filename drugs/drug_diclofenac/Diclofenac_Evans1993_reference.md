@@ -33,8 +33,7 @@ Independently confirmed by `gpt-oss:120b`.
 Evans AM et al., Influence of albumin on the distributio…, Journal of pharmaceutical s… (1993)
   ·  DOI: [10.1002/jps.2600820417](https://doi.org/10.1002/jps.2600820417)
 
-## Model component
-<dbs-pgx drug="diclofenac" model-id="Diclofenac_Evans1993_reference" status="rejected" stale="true" population="isolated rat liver" measured-compound="diclofenac" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="diclofenac" model-id="Diclofenac_Evans1993_reference" status="rejected" stale="true" population="isolated rat liver" measured-compound="diclofenac" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

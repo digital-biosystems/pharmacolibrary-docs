@@ -21,8 +21,7 @@
 Ward RM et al., The pharmacokinetics of methadone and i…, Paediatric anaesthesia (2014)
   ·  DOI: [10.1111/pan.12385](https://doi.org/10.1111/pan.12385)
 
-## Model component
-<dbs-pgx drug="methadone" model-id="Methadone_Ward2014_reference" status="extracted" stale="false" population="neonates, infants, and children" measured-compound="methadone" parameterization="mechanistic" topology="general_linear"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="methadone" model-id="Methadone_Ward2014_reference" status="extracted" stale="false" population="neonates, infants, and children" measured-compound="methadone" parameterization="mechanistic" topology="general_linear"></div>
 
 **Model structure:** 2-compartment general linear model (non-mammillary edges) — template `PK_General_Linear`.  
 **Parameters:** 9 extracted.

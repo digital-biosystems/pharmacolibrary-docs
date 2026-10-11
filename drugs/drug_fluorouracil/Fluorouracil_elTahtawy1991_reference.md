@@ -32,8 +32,7 @@ Independently confirmed by `gpt-oss:120b`.
 ## Citation
 el-Tahtawy A et al., In vivo measurements of intratumoral me…, Cancer research (1991)
 
-## Model component
-<dbs-pgx drug="fluorouracil" model-id="Fluorouracil_elTahtawy1991_reference" status="rejected" stale="true" population="rats bearing Walker 256 adenocarcinoma" measured-compound="5-fluorouracil" parameterization="mechanistic" topology="parent_metabolite"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="fluorouracil" model-id="Fluorouracil_elTahtawy1991_reference" status="rejected" stale="true" population="rats bearing Walker 256 adenocarcinoma" measured-compound="5-fluorouracil" parameterization="mechanistic" topology="parent_metabolite"></div>
 
 **Model structure:** parent + metabolite; no model was built for this record.  
 **Parameters:** 0 extracted.

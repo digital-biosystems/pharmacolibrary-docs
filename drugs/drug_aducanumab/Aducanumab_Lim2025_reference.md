@@ -20,8 +20,7 @@
 Lim S et al., Sex differences in efficacy/safety of a…, Translational and clinical… (2025)
   ·  DOI: [10.12793/tcp.2025.33.e19](https://doi.org/10.12793/tcp.2025.33.e19)
 
-## Model component
-<dbs-pgx drug="aducanumab" model-id="Aducanumab_Lim2025_reference" status="rejected" stale="false" population="" measured-compound="aducanumab" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="aducanumab" model-id="Aducanumab_Lim2025_reference" status="rejected" stale="false" population="" measured-compound="aducanumab" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment; no model was built for this record.  
 **Parameters:** 3 extracted.

@@ -22,8 +22,7 @@
 ## Citation
 Chen SA et al., Plasma and lymph pharmacokinetics of re…, The Journal of pharmacology… (2000)
 
-## Model component
-<dbs-pgx drug="aldesleukin" model-id="Aldesleukin_Chen2000_reference" status="extracted" stale="false" population="Yorkshire pigs" measured-compound="interleukin-2" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="aldesleukin" model-id="Aldesleukin_Chen2000_reference" status="extracted" stale="false" population="Yorkshire pigs" measured-compound="interleukin-2" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameters:** 4 extracted.

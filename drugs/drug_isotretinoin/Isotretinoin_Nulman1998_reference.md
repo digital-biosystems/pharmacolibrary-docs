@@ -20,8 +20,7 @@
 Nulman I et al., Steady-state pharmacokinetics of isotre…, Journal of clinical pharmac… (1998)
   ·  DOI: [10.1002/j.1552-4604.1998.tb04388.x](https://doi.org/10.1002/j.1552-4604.1998.tb04388.x)
 
-## Model component
-<dbs-pgx drug="isotretinoin" model-id="Isotretinoin_Nulman1998_reference" status="rejected" stale="false" population="adult patients treated for acne" measured-compound="isotretinoin" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="isotretinoin" model-id="Isotretinoin_Nulman1998_reference" status="rejected" stale="false" population="adult patients treated for acne" measured-compound="isotretinoin" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 1 extracted.

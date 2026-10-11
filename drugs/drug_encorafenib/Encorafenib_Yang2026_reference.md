@@ -21,8 +21,7 @@
 Yang DZ et al., Population Pharmacokinetic Modeling of…, Clinical pharmacokinetics (2026)
   ·  DOI: [10.1007/s40262-025-01608-y](https://doi.org/10.1007/s40262-025-01608-y)
 
-## Model component
-<dbs-pgx drug="encorafenib" model-id="Encorafenib_Yang2026_reference" status="extracted" stale="false" population="healthy participants and patients with melanoma, metastatic CRC, NSCLC, or other solid tumors" measured-compound="encorafenib" parameterization="apparent" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="encorafenib" model-id="Encorafenib_Yang2026_reference" status="extracted" stale="false" population="healthy participants and patients with melanoma, metastatic CRC, NSCLC, or other solid tumors" measured-compound="encorafenib" parameterization="apparent" topology="2C"></div>
 
 **Model structure:** 2-compartment, oral mammillary model — template `PK_2C_enteral`.  
 **Parameters:** 6 extracted.

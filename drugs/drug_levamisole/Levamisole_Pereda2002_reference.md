@@ -23,8 +23,7 @@
 Pereda P et al., Intra-arterial pharmacokinetics and pul…, Pharmacological research (2002)
   ·  DOI: [10.1006/phrs.2002.0966](https://doi.org/10.1006/phrs.2002.0966)
 
-## Model component
-<dbs-pgx drug="levamisole" model-id="Levamisole_Pereda2002_reference" status="rejected" stale="false" population="rabbits" measured-compound="levamisole" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="levamisole" model-id="Levamisole_Pereda2002_reference" status="rejected" stale="false" population="rabbits" measured-compound="levamisole" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 5 extracted.

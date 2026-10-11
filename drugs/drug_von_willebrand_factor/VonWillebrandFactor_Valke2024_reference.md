@@ -27,8 +27,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on paramet
 Valke LLFG et al., Pharmacokinetic-Pharmacodynamic Modelli…, European journal of drug me… (2024)
   ·  DOI: [10.1007/s13318-024-00876-6](https://doi.org/10.1007/s13318-024-00876-6)
 
-## Model component
-<dbs-pgx drug="von Willebrand factor" model-id="VonWillebrandFactor_Valke2024_reference" status="curated_candidate" stale="false" population="" measured-compound="von_willebrand_factor" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="von Willebrand factor" model-id="VonWillebrandFactor_Valke2024_reference" status="curated_candidate" stale="false" population="" measured-compound="von_willebrand_factor" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment, IV mammillary model — template `PK_2C`.  
 **Parameters:** 4 extracted.

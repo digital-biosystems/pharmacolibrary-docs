@@ -23,8 +23,7 @@
 Upton CM et al., Cerebrospinal fluid penetration of cycl…, Antimicrobial agents and ch… (2025)
   ·  DOI: [10.1128/aac.00931-25](https://doi.org/10.1128/aac.00931-25)
 
-## Model component
-<dbs-pgx drug="terizidone" model-id="Terizidone_Upton2025_reference" status="extracted" stale="false" population="adults with pulmonary drug-resistant TB" measured-compound="cycloserine" parameterization="apparent" topology="parent_metabolite"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="terizidone" model-id="Terizidone_Upton2025_reference" status="extracted" stale="false" population="adults with pulmonary drug-resistant TB" measured-compound="cycloserine" parameterization="apparent" topology="parent_metabolite"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 2 extracted.

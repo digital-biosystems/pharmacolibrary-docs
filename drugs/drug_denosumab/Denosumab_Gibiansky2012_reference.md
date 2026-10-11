@@ -21,8 +21,7 @@
 Gibiansky L et al., Population pharmacokinetic analysis of…, Clinical pharmacokinetics (2012)
   ·  DOI: [10.2165/11598090-000000000-00000](https://doi.org/10.2165/11598090-000000000-00000)
 
-## Model component
-<dbs-pgx drug="denosumab" model-id="Denosumab_Gibiansky2012_reference" status="needs_review" stale="false" population="advanced cancer patients with solid tumours and bone metastases" measured-compound="denosumab" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="denosumab" model-id="Denosumab_Gibiansky2012_reference" status="needs_review" stale="false" population="advanced cancer patients with solid tumours and bone metastases" measured-compound="denosumab" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 4 extracted.

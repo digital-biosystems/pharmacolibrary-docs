@@ -33,8 +33,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Yuen E et al., Ethnic differences in the population ph…, Journal of pharmacokinetics… (2010)
   ·  DOI: [10.1007/s10928-009-9138-4](https://doi.org/10.1007/s10928-009-9138-4)
 
-## Model component
-<dbs-pgx drug="warfarin" model-id="Warfarin_Yuen2010_reference" status="needs_review" stale="true" population="healthy Chinese and Indian volunteers" measured-compound="S-warfarin" parameterization="apparent" topology="parent_metabolite"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="warfarin" model-id="Warfarin_Yuen2010_reference" status="needs_review" stale="true" population="healthy Chinese and Indian volunteers" measured-compound="S-warfarin" parameterization="apparent" topology="parent_metabolite"></div>
 
 **Model structure:** parent + metabolite; no model was built for this record.  
 **Parameters:** 3 extracted.

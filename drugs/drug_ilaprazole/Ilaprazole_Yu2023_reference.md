@@ -28,8 +28,7 @@ The record describes a two-compartment structure for ilaprazole with central vol
 Yu M et al., Population pharmacokinetic modeling of…, Frontiers in pharmacology (2023)
   ·  DOI: [10.3389/fphar.2023.1306222](https://doi.org/10.3389/fphar.2023.1306222)
 
-## Model component
-<dbs-pgx drug="ilaprazole" model-id="Ilaprazole_Yu2023_reference" status="rejected" stale="true" population="healthy subjects and patients with duodenal ulcer" measured-compound="ilaprazole" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="ilaprazole" model-id="Ilaprazole_Yu2023_reference" status="rejected" stale="true" population="healthy subjects and patients with duodenal ulcer" measured-compound="ilaprazole" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment; no model was built for this record.  
 **Parameters:** 3 extracted, plus 2 covariate effects.

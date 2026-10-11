@@ -21,8 +21,7 @@
 Mulubwa M et al., Steady-state population pharmacokinetic…, British journal of clinical… (2019)
   ·  DOI: [10.1111/bcp.13975](https://doi.org/10.1111/bcp.13975)
 
-## Model component
-<dbs-pgx drug="terizidone" model-id="Terizidone_Mulubwa2019_reference" status="extracted" stale="false" population="adult DR-TB patients" measured-compound="terizidone" parameterization="apparent" topology="parent_metabolite"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="terizidone" model-id="Terizidone_Mulubwa2019_reference" status="extracted" stale="false" population="adult DR-TB patients" measured-compound="terizidone" parameterization="apparent" topology="parent_metabolite"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 5 extracted.

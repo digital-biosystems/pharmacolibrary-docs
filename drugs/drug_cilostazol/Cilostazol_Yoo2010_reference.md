@@ -28,8 +28,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Yoo HD et al., Population pharmacokinetic analysis of…, British journal of clinical… (2010)
   ·  DOI: [10.1111/j.1365-2125.2009.03558.x](https://doi.org/10.1111/j.1365-2125.2009.03558.x)
 
-## Model component
-<dbs-pgx drug="cilostazol" model-id="Cilostazol_Yoo2010_reference" status="rejected" stale="false" population="healthy subjects" measured-compound="cilostazol" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="cilostazol" model-id="Cilostazol_Yoo2010_reference" status="rejected" stale="false" population="healthy subjects" measured-compound="cilostazol" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

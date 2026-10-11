@@ -30,8 +30,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Shoji S et al., Population pharmacokinetics of tanezuma…, British journal of clinical… (2022)
   ·  DOI: [10.1111/bcp.15259](https://doi.org/10.1111/bcp.15259)
 
-## Model component
-<dbs-pgx drug="tanezumab" model-id="Tanezumab_Shoji2022_reference" status="rejected" stale="true" population="patients with osteoarthritis or chronic low back pain" measured-compound="tanezumab" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="tanezumab" model-id="Tanezumab_Shoji2022_reference" status="rejected" stale="true" population="patients with osteoarthritis or chronic low back pain" measured-compound="tanezumab" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment; no model was built for this record.  
 **Parameters:** 5 extracted.

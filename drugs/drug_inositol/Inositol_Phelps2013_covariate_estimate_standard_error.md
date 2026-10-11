@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Phelps DL et al., Pharmacokinetics and safety of a single…, Pediatric research (2013)
   ·  DOI: [10.1038/pr.2013.162](https://doi.org/10.1038/pr.2013.162)
 
-## Model component
-<dbs-pgx drug="inositol" model-id="Inositol_Phelps2013_covariate_estimate_standard_error" status="needs_review" stale="true" population="preterm infants" measured-compound="inositol" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="inositol" model-id="Inositol_Phelps2013_covariate_estimate_standard_error" status="needs_review" stale="true" population="preterm infants" measured-compound="inositol" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 1 extracted.

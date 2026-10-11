@@ -33,8 +33,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the val
 Murata K et al., Pharmacokinetics of an oral sustained-r…, Journal of pharmaceutical s… (1989)
   ·  DOI: [10.1002/jps.2600781116](https://doi.org/10.1002/jps.2600781116)
 
-## Model component
-<dbs-pgx drug="diltiazem" model-id="Diltiazem_Murata1989_reference" status="rejected" stale="true" population="adults" measured-compound="diltiazem" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="diltiazem" model-id="Diltiazem_Murata1989_reference" status="rejected" stale="true" population="adults" measured-compound="diltiazem" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 1 extracted.

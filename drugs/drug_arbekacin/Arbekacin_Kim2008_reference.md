@@ -21,8 +21,7 @@
 Kim JH et al., Population pharmacokinetics of arbekaci…, European journal of clinica… (2008)
   ·  DOI: [10.1007/s00228-008-0470-1](https://doi.org/10.1007/s00228-008-0470-1)
 
-## Model component
-<dbs-pgx drug="arbekacin" model-id="Arbekacin_Kim2008_reference" status="rejected" stale="false" population="burn patients" measured-compound="arbekacin" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="arbekacin" model-id="Arbekacin_Kim2008_reference" status="rejected" stale="false" population="burn patients" measured-compound="arbekacin" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

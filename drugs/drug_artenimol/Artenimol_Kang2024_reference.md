@@ -25,8 +25,7 @@
 Kang DW et al., Inter-Species Pharmacokinetic Modeling…, International journal of mo… (2024)
   ·  DOI: [10.3390/ijms25136998](https://doi.org/10.3390/ijms25136998)
 
-## Model component
-<dbs-pgx drug="artenimol" model-id="Artenimol_Kang2024_reference" status="needs_review" stale="false" population="hamsters, rats, and dogs (preclinical allometric scaling to humans)" measured-compound="dihydroartemisinin" parameterization="apparent" topology="parent_metabolite"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="artenimol" model-id="Artenimol_Kang2024_reference" status="needs_review" stale="false" population="hamsters, rats, and dogs (preclinical allometric scaling to humans)" measured-compound="dihydroartemisinin" parameterization="apparent" topology="parent_metabolite"></div>
 
 **Model structure:** parent + metabolite; no model was built for this record.  
 **Parameters:** 10 extracted.

@@ -23,8 +23,7 @@
 Xu J et al., Population pharmacokinetics and pharmac…, Journal of clinical pharmac… (2010)
   ·  DOI: [10.1177/0091270009354994](https://doi.org/10.1177/0091270009354994)
 
-## Model component
-<dbs-pgx drug="ciclesonide" model-id="Ciclesonide_Xu2010_reference" status="extracted" stale="false" population="adults with persistent asthma" measured-compound="desisobutyryl-ciclesonide" parameterization="apparent" topology="parent_metabolite"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="ciclesonide" model-id="Ciclesonide_Xu2010_reference" status="extracted" stale="false" population="adults with persistent asthma" measured-compound="desisobutyryl-ciclesonide" parameterization="apparent" topology="parent_metabolite"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 5 extracted.

@@ -31,8 +31,7 @@ Independently confirmed by `gpt-oss:120b`.
 Janssen A et al., Deep compartment models: A deep learnin…, CPT: pharmacometrics & syst… (2022)
   ·  DOI: [10.1002/psp4.12808](https://doi.org/10.1002/psp4.12808)
 
-## Model component
-<dbs-pgx drug="von Willebrand factor" model-id="VonWillebrandFactor_Janssen2022_reference" status="needs_review" stale="true" population="" measured-compound="von_willebrand_factor" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="von Willebrand factor" model-id="VonWillebrandFactor_Janssen2022_reference" status="needs_review" stale="true" population="" measured-compound="von_willebrand_factor" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment; no model was built for this record.  
 **Parameters:** 4 extracted.

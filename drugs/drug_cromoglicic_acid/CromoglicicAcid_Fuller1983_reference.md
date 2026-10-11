@@ -28,8 +28,7 @@ Without a unit the value cannot be converted, so the model cannot use it. Only t
 Fuller RW et al., The pharmacokinetic assessment of sodiu…, The Journal of pharmacy and… (1983)
   ·  DOI: [10.1111/j.2042-7158.1983.tb02936.x](https://doi.org/10.1111/j.2042-7158.1983.tb02936.x)
 
-## Model component
-<dbs-pgx drug="cromoglicic acid" model-id="CromoglicicAcid_Fuller1983_reference" status="needs_review" stale="true" population="healthy subjects" measured-compound="sodium cromoglycate" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="cromoglicic acid" model-id="CromoglicicAcid_Fuller1983_reference" status="needs_review" stale="true" population="healthy subjects" measured-compound="sodium cromoglycate" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 2 extracted.

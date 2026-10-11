@@ -30,8 +30,7 @@ Independently confirmed by `gpt-oss:120b`.
 Konofal E et al., Pilot Phase II study of mazindol in chi…, Drug design, development an… (2014)
   ·  DOI: [10.2147/DDDT.S65495](https://doi.org/10.2147/DDDT.S65495)
 
-## Model component
-<dbs-pgx drug="mazindol" model-id="Mazindol_Konofal2014_basic_model" status="extracted" stale="true" population="children with ADHD" measured-compound="mazindol" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="mazindol" model-id="Mazindol_Konofal2014_basic_model" status="extracted" stale="true" population="children with ADHD" measured-compound="mazindol" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 2 extracted.

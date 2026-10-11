@@ -25,8 +25,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Wade KC et al., Population pharmacokinetics of fluconaz…, Antimicrobial agents and ch… (2008)
   ·  DOI: [10.1128/AAC.00569-08](https://doi.org/10.1128/AAC.00569-08)
 
-## Model component
-<dbs-pgx drug="fluconazole" model-id="Fluconazole_Wade2008_reference" status="needs_review" stale="false" population="young infants (23-40 weeks gestation, &lt;120 days age)" measured-compound="fluconazole" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="fluconazole" model-id="Fluconazole_Wade2008_reference" status="needs_review" stale="false" population="young infants (23-40 weeks gestation, &lt;120 days age)" measured-compound="fluconazole" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 2 extracted.

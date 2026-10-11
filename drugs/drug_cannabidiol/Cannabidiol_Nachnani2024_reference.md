@@ -27,8 +27,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on paramet
 Nachnani R et al., Systematic review of drug-drug interact…, Frontiers in pharmacology (2024)
   ·  DOI: [10.3389/fphar.2024.1282831](https://doi.org/10.3389/fphar.2024.1282831)
 
-## Model component
-<dbs-pgx drug="cannabidiol" model-id="Cannabidiol_Nachnani2024_reference" status="curated_candidate" stale="false" population="" measured-compound="" parameterization="" topology=""></dbs-pgx>
+<div class="pk-model-meta" hidden drug="cannabidiol" model-id="Cannabidiol_Nachnani2024_reference" status="curated_candidate" stale="false" population="" measured-compound="" parameterization="" topology=""></div>
 
 **Model structure:** —; no model was built for this record.  
 **Parameters:** 0 extracted.

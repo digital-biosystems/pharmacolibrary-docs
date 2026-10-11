@@ -22,8 +22,7 @@
 Barbhaiya RH et al., Pharmacokinetics of mitomycin C in dogs…, Journal of pharmaceutical s… (1984)
   ·  DOI: [10.1002/jps.2600730909](https://doi.org/10.1002/jps.2600730909)
 
-## Model component
-<dbs-pgx drug="mitomycin" model-id="Mitomycin_Barbhaiya1984_reference" status="needs_review" stale="false" population="beagle dogs" measured-compound="mitomycin C" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="mitomycin" model-id="Mitomycin_Barbhaiya1984_reference" status="needs_review" stale="false" population="beagle dogs" measured-compound="mitomycin C" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 4 extracted.

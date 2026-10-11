@@ -33,8 +33,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the val
 Petkova T et al., Population Pharmacokinetics of Doxycycl…, Pharmaceutics (2022)
   ·  DOI: [10.3390/pharmaceutics14112440](https://doi.org/10.3390/pharmaceutics14112440)
 
-## Model component
-<dbs-pgx drug="doxycycline" model-id="Doxycycline_Petkova2022_reference" status="extracted" stale="true" population="healthy and M. gallisepticum-infected broiler chickens" measured-compound="doxycycline" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="doxycycline" model-id="Doxycycline_Petkova2022_reference" status="extracted" stale="true" population="healthy and M. gallisepticum-infected broiler chickens" measured-compound="doxycycline" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 4 extracted.

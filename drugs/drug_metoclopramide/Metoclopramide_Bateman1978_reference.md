@@ -30,8 +30,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Bateman DN et al., Pharmacokinetic and concentration-effec…, British journal of clinical… (1978)
   ·  DOI: [10.1111/j.1365-2125.1978.tb04604.x](https://doi.org/10.1111/j.1365-2125.1978.tb04604.x)
 
-## Model component
-<dbs-pgx drug="metoclopramide" model-id="Metoclopramide_Bateman1978_reference" status="needs_review" stale="true" population="normal male volunteers" measured-compound="metoclopramide" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="metoclopramide" model-id="Metoclopramide_Bateman1978_reference" status="needs_review" stale="true" population="normal male volunteers" measured-compound="metoclopramide" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 1 extracted.

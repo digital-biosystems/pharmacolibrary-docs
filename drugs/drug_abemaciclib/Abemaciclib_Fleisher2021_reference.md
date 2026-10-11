@@ -20,8 +20,7 @@
 Fleisher B et al., In vitro to Clinical Translation of Com…, Breast cancer (Dove Medical… (2021)
   ·  DOI: [10.2147/BCTT.S292161](https://doi.org/10.2147/BCTT.S292161)
 
-## Model component
-<dbs-pgx drug="abemaciclib" model-id="Abemaciclib_Fleisher2021_reference" status="rejected" stale="false" population="clinical subjects from published pharmacokinetic studies; clinical model translated to TNBC patients" measured-compound="abemaciclib; doxorubicin; liposomal doxorubicin" parameterization="mechanistic" topology="general_linear"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="abemaciclib" model-id="Abemaciclib_Fleisher2021_reference" status="rejected" stale="false" population="clinical subjects from published pharmacokinetic studies; clinical model translated to TNBC patients" measured-compound="abemaciclib; doxorubicin; liposomal doxorubicin" parameterization="mechanistic" topology="general_linear"></div>
 
 **Model structure:** general linear; no model was built for this record.  
 **Parameters:** 3 extracted.

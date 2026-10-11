@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Hempel G et al., Population pharmacokinetics of liposoma…, British journal of clinical… (2003)
   ·  DOI: [10.1046/j.1365-2125.2003.01886.x](https://doi.org/10.1046/j.1365-2125.2003.01886.x)
 
-## Model component
-<dbs-pgx drug="daunorubicin" model-id="Daunorubicin_Hempel2003_reference" status="" stale="true" population="paediatric oncology patients with relapsed AML and other malignancies" measured-compound="" parameterization="" topology=""></dbs-pgx>
+<div class="pk-model-meta" hidden drug="daunorubicin" model-id="Daunorubicin_Hempel2003_reference" status="" stale="true" population="paediatric oncology patients with relapsed AML and other malignancies" measured-compound="" parameterization="" topology=""></div>
 
 **Model structure:** —; no model was built for this record.  
 **Parameters:** 0 extracted.

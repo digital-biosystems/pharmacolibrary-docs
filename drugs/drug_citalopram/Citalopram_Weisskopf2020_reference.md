@@ -29,8 +29,7 @@ The paper's structure is parent–metabolite with a three-compartment PK model, 
 Weisskopf E et al., A population pharmacokinetic model for…, British journal of clinical… (2020)
   ·  DOI: [10.1111/bcp.14278](https://doi.org/10.1111/bcp.14278)
 
-## Model component
-<dbs-pgx drug="citalopram" model-id="Citalopram_Weisskopf2020_reference" status="" stale="true" population="lactating women treated with escitalopram or racemic citalopram (perinatal period)" measured-compound="" parameterization="" topology=""></dbs-pgx>
+<div class="pk-model-meta" hidden drug="citalopram" model-id="Citalopram_Weisskopf2020_reference" status="" stale="true" population="lactating women treated with escitalopram or racemic citalopram (perinatal period)" measured-compound="" parameterization="" topology=""></div>
 
 **Model structure:** —; no model was built for this record.  
 **Parameters:** 0 extracted.

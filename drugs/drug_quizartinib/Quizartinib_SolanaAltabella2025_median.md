@@ -20,8 +20,7 @@
 Solana-Altabella A et al., Validation of pharmacokinetic model for…, European journal of clinica… (2025)
   ·  DOI: [10.1007/s00228-025-03909-4](https://doi.org/10.1007/s00228-025-03909-4)
 
-## Model component
-<dbs-pgx drug="quizartinib" model-id="Quizartinib_SolanaAltabella2025_median" status="rejected" stale="false" population="adult patients with newly diagnosed FLT3-ITD-negative AML" measured-compound="quizartinib" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="quizartinib" model-id="Quizartinib_SolanaAltabella2025_median" status="rejected" stale="false" population="adult patients with newly diagnosed FLT3-ITD-negative AML" measured-compound="quizartinib" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment; no model was built for this record.  
 **Parameters:** 9 extracted.

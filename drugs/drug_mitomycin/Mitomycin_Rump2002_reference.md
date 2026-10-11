@@ -20,8 +20,7 @@
 Rump AF et al., Pharmacokinetics of intra-arterial mito…, European journal of clinica… (2002)
   ·  DOI: [10.1007/s00228-002-0496-8](https://doi.org/10.1007/s00228-002-0496-8)
 
-## Model component
-<dbs-pgx drug="mitomycin" model-id="Mitomycin_Rump2002_reference" status="needs_review" stale="false" population="patients with liver metastases undergoing chemoembolization" measured-compound="mitomycin C" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="mitomycin" model-id="Mitomycin_Rump2002_reference" status="needs_review" stale="false" population="patients with liver metastases undergoing chemoembolization" measured-compound="mitomycin C" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 7 extracted.

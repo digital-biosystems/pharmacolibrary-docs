@@ -29,8 +29,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on paramet
 Boşnak C et al., Determinants of levofloxacin prophylaxi…, The Journal of antimicrobia… (2026)
   ·  DOI: [10.1093/jac/dkag284](https://doi.org/10.1093/jac/dkag284)
 
-## Model component
-<dbs-pgx drug="escherichia coli" model-id="EscherichiaColi_Bonak2026_reference" status="extracted" stale="true" population="" measured-compound="escherichia_coli" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="escherichia coli" model-id="EscherichiaColi_Bonak2026_reference" status="extracted" stale="true" population="" measured-compound="escherichia_coli" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 3 extracted.

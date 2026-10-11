@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on paramet
 Morse JD et al., Population Pharmacokinetic Modelling of…, European journal of drug me… (2022)
   ·  DOI: [10.1007/s13318-022-00766-9](https://doi.org/10.1007/s13318-022-00766-9)
 
-## Model component
-<dbs-pgx drug="pethidine" model-id="Pethidine_Morse2022_reference" status="extracted" stale="true" population="" measured-compound="" parameterization="" topology=""></dbs-pgx>
+<div class="pk-model-meta" hidden drug="pethidine" model-id="Pethidine_Morse2022_reference" status="extracted" stale="true" population="" measured-compound="" parameterization="" topology=""></div>
 
 **Model structure:** —; no model was built for this record.  
 **Parameters:** 0 extracted.

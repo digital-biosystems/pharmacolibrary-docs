@@ -22,8 +22,7 @@
 ## Citation
 Chulay JD et al., Pharmacokinetics of antimony during tre…, Transactions of the Royal S… (1988)
 
-## Model component
-<dbs-pgx drug="sodium stibogluconate" model-id="SodiumStibogluconate_Chulay1988_reference" status="rejected" stale="false" population="patients with visceral leishmaniasis" measured-compound="antimony" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="sodium stibogluconate" model-id="SodiumStibogluconate_Chulay1988_reference" status="rejected" stale="false" population="patients with visceral leishmaniasis" measured-compound="antimony" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 3 extracted.

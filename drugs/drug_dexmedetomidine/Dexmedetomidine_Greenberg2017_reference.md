@@ -21,8 +21,7 @@
 Greenberg RG et al., Population Pharmacokinetics of Dexmedet…, Journal of clinical pharmac… (2017)
   ·  DOI: [10.1002/jcph.904](https://doi.org/10.1002/jcph.904)
 
-## Model component
-<dbs-pgx drug="dexmedetomidine" model-id="Dexmedetomidine_Greenberg2017_reference" status="rejected" stale="false" population="infants receiving dexmedetomidine for sedation" measured-compound="dexmedetomidine" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="dexmedetomidine" model-id="Dexmedetomidine_Greenberg2017_reference" status="rejected" stale="false" population="infants receiving dexmedetomidine for sedation" measured-compound="dexmedetomidine" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 2 extracted.

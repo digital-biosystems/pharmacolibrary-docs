@@ -31,8 +31,7 @@ The record describes duloxetine in Sprague-Dawley rats with a presystemic and sy
 Ngo TL et al., Application of an Inter-Species Extrapo…, International journal of mo… (2020)
   ·  DOI: [10.3390/ijms21051862](https://doi.org/10.3390/ijms21051862)
 
-## Model component
-<dbs-pgx drug="duloxetine" model-id="Duloxetine_Ngo2020_estimates" status="rejected" stale="true" population="Sprague-Dawley rats" measured-compound="duloxetine" parameterization="apparent" topology="parent_metabolite"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="duloxetine" model-id="Duloxetine_Ngo2020_estimates" status="rejected" stale="true" population="Sprague-Dawley rats" measured-compound="duloxetine" parameterization="apparent" topology="parent_metabolite"></div>
 
 **Model structure:** parent + metabolite; no model was built for this record.  
 **Parameters:** 8 extracted.

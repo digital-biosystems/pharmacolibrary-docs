@@ -29,8 +29,7 @@ Only the abstract was available, so reported summary statistics stand in for a f
 Pai SM et al., Population pharmacokinetic analysis of…, Journal of clinical pharmac… (1992)
   ·  DOI: [10.1002/j.1552-4604.1992.tb03832.x](https://doi.org/10.1002/j.1552-4604.1992.tb03832.x)
 
-## Model component
-<dbs-pgx drug="didanosine" model-id="Didanosine_Pai1992_reference" status="needs_review" stale="true" population="patients with AIDS or AIDS-related complex" measured-compound="didanosine" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="didanosine" model-id="Didanosine_Pai1992_reference" status="needs_review" stale="true" population="patients with AIDS or AIDS-related complex" measured-compound="didanosine" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 6 extracted.

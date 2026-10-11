@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Hempel G et al., Population pharmacokinetic-pharmacodyna…, Clinical pharmacology and t… (1998)
   ·  DOI: [10.1016/S0009-9236(98)90053-4](https://doi.org/10.1016/S0009-9236(98)90053-4)
 
-## Model component
-<dbs-pgx drug="moxonidine" model-id="Moxonidine_Hempel1998_reference" status="extracted" stale="true" population="patients with hypertension" measured-compound="moxonidine" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="moxonidine" model-id="Moxonidine_Hempel1998_reference" status="extracted" stale="true" population="patients with hypertension" measured-compound="moxonidine" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameters:** 2 extracted.

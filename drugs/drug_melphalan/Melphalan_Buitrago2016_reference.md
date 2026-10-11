@@ -23,8 +23,7 @@
 Buitrago E et al., Pharmacokinetics of Melphalan After Int…, Journal of ocular pharmacol… (2016)
   ·  DOI: [10.1089/jop.2015.0088](https://doi.org/10.1089/jop.2015.0088)
 
-## Model component
-<dbs-pgx drug="melphalan" model-id="Melphalan_Buitrago2016_reference" status="rejected" stale="false" population="New Zealand rabbits" measured-compound="melphalan" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="melphalan" model-id="Melphalan_Buitrago2016_reference" status="rejected" stale="false" population="New Zealand rabbits" measured-compound="melphalan" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 2 extracted.

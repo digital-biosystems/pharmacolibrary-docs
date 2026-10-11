@@ -21,8 +21,7 @@
 Kovarik JM et al., Population pharmacokinetics and exposur…, Transplantation (1999)
   ·  DOI: [10.1097/00007890-199911150-00012](https://doi.org/10.1097/00007890-199911150-00012)
 
-## Model component
-<dbs-pgx drug="basiliximab" model-id="Basiliximab_Kovarik1999_reference" status="extracted" stale="false" population="kidney transplant recipients" measured-compound="basiliximab" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="basiliximab" model-id="Basiliximab_Kovarik1999_reference" status="extracted" stale="false" population="kidney transplant recipients" measured-compound="basiliximab" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameters:** 3 extracted.

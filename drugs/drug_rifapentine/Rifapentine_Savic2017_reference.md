@@ -21,8 +21,7 @@
 Savic RM et al., Defining the optimal dose of rifapentin…, Clinical pharmacology and t… (2017)
   ·  DOI: [10.1002/cpt.634](https://doi.org/10.1002/cpt.634)
 
-## Model component
-<dbs-pgx drug="rifapentine" model-id="Rifapentine_Savic2017_reference" status="rejected" stale="false" population="adults with pulmonary tuberculosis" measured-compound="rifapentine" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="rifapentine" model-id="Rifapentine_Savic2017_reference" status="rejected" stale="false" population="adults with pulmonary tuberculosis" measured-compound="rifapentine" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 8 extracted, plus 2 covariate effects.

@@ -31,8 +31,7 @@ The central volume of distribution is listed as 215.0 mL and the peripheral volu
 Chen X et al., Revisiting atenolol as a low passive pe…, Fluids and barriers of the… (2017)
   ·  DOI: [10.1186/s12987-017-0078-x](https://doi.org/10.1186/s12987-017-0078-x)
 
-## Model component
-<dbs-pgx drug="oxymorphone" model-id="Oxymorphone_Chen2017_reference" status="rejected" stale="true" population="" measured-compound="" parameterization="" topology=""></dbs-pgx>
+<div class="pk-model-meta" hidden drug="oxymorphone" model-id="Oxymorphone_Chen2017_reference" status="rejected" stale="true" population="" measured-compound="" parameterization="" topology=""></div>
 
 **Model structure:** —; no model was built for this record.  
 **Parameters:** 0 extracted.

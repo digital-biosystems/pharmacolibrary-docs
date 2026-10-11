@@ -21,8 +21,7 @@
 Huang Y et al., Population pharmacokinetic modeling of…, Frontiers in pharmacology (2025)
   ·  DOI: [10.3389/fphar.2025.1662364](https://doi.org/10.3389/fphar.2025.1662364)
 
-## Model component
-<dbs-pgx drug="dexmedetomidine" model-id="Dexmedetomidine_Huang2025_reference" status="extracted" stale="false" population="Chinese healthy volunteers and patients (adults)" measured-compound="dexmedetomidine" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="dexmedetomidine" model-id="Dexmedetomidine_Huang2025_reference" status="extracted" stale="false" population="Chinese healthy volunteers and patients (adults)" measured-compound="dexmedetomidine" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment, oral mammillary model — template `PK_2C_enteral`.  
 **Parameters:** 7 extracted.

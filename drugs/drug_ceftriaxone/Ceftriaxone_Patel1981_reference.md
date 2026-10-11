@@ -21,8 +21,7 @@
 Patel IH et al., Pharmacokinetics of ceftriaxone in huma…, Antimicrobial agents and ch… (1981)
   ·  DOI: [10.1128/AAC.20.5.634](https://doi.org/10.1128/AAC.20.5.634)
 
-## Model component
-<dbs-pgx drug="ceftriaxone" model-id="Ceftriaxone_Patel1981_reference" status="rejected" stale="false" population="healthy adults" measured-compound="ceftriaxone" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="ceftriaxone" model-id="Ceftriaxone_Patel1981_reference" status="rejected" stale="false" population="healthy adults" measured-compound="ceftriaxone" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 4 extracted.

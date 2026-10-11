@@ -30,8 +30,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the lin
 Kim E et al., Modeling of aceclofenac metabolism to m…, Drug metabolism and pharmac… (2016)
   ·  DOI: [10.1016/j.dmpk.2016.10.001](https://doi.org/10.1016/j.dmpk.2016.10.001)
 
-## Model component
-<dbs-pgx drug="aceclofenac" model-id="Aceclofenac_Kim2016_reference" status="rejected" stale="true" population="healthy volunteers" measured-compound="aceclofenac" parameterization="mechanistic" topology="general_linear"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="aceclofenac" model-id="Aceclofenac_Kim2016_reference" status="rejected" stale="true" population="healthy volunteers" measured-compound="aceclofenac" parameterization="mechanistic" topology="general_linear"></div>
 
 **Model structure:** general linear; no model was built for this record.  
 **Parameters:** 0 extracted.

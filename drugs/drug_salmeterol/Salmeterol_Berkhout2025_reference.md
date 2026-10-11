@@ -21,8 +21,7 @@
 Berkhout J et al., A model-based approach using GSK3772847…, CPT: pharmacometrics & syst… (2025)
   ·  DOI: [10.1002/psp4.13234](https://doi.org/10.1002/psp4.13234)
 
-## Model component
-<dbs-pgx drug="salmeterol" model-id="Salmeterol_Berkhout2025_reference" status="extracted" stale="false" population="" measured-compound="salmeterol" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="salmeterol" model-id="Salmeterol_Berkhout2025_reference" status="extracted" stale="false" population="" measured-compound="salmeterol" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment, oral mammillary model — template `PK_2C_enteral`.  
 **Parameters:** 5 extracted.

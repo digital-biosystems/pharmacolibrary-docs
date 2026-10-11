@@ -20,8 +20,7 @@
 Toyoshima J et al., Population pharmacokinetic analysis of…, British journal of clinical… (2021)
   ·  DOI: [10.1111/bcp.14605](https://doi.org/10.1111/bcp.14605)
 
-## Model component
-<dbs-pgx drug="peficitinib" model-id="Peficitinib_Toyoshima2021_median" status="needs_review" stale="false" population="patients with rheumatoid arthritis" measured-compound="peficitinib" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="peficitinib" model-id="Peficitinib_Toyoshima2021_median" status="needs_review" stale="false" population="patients with rheumatoid arthritis" measured-compound="peficitinib" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment; no model was built for this record.  
 **Parameters:** 6 extracted.

@@ -30,8 +30,7 @@ A model needs both clearance and volume; without the volume it could only be bui
 Spreux-Varoquaux O et al., Pharmacokinetics of molsidomine and its…, British journal of clinical… (1991)
   ·  DOI: [10.1111/j.1365-2125.1991.tb03919.x](https://doi.org/10.1111/j.1365-2125.1991.tb03919.x)
 
-## Model component
-<dbs-pgx drug="linsidomine" model-id="Linsidomine_SpreuxVaroquaux1991_reference" status="needs_review" stale="true" population="patients with liver cirrhosis" measured-compound="linsidomine" parameterization="apparent" topology="parent_metabolite"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="linsidomine" model-id="Linsidomine_SpreuxVaroquaux1991_reference" status="needs_review" stale="true" population="patients with liver cirrhosis" measured-compound="linsidomine" parameterization="apparent" topology="parent_metabolite"></div>
 
 **Model structure:** parent + metabolite; no model was built for this record.  
 **Parameters:** 3 extracted.

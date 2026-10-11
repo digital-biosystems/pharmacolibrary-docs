@@ -22,8 +22,7 @@
 Anadón A et al., Toxicokinetics of deltamethrin and its…, Toxicology and applied phar… (1996)
   ·  DOI: [10.1006/taap.1996.0254](https://doi.org/10.1006/taap.1996.0254)
 
-## Model component
-<dbs-pgx drug="decamethrin" model-id="Decamethrin_Anadn1996_reference" status="rejected" stale="false" population="male Wistar rats" measured-compound="deltamethrin" parameterization="mechanistic" topology="parent_metabolite"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="decamethrin" model-id="Decamethrin_Anadn1996_reference" status="rejected" stale="false" population="male Wistar rats" measured-compound="deltamethrin" parameterization="mechanistic" topology="parent_metabolite"></div>
 
 **Model structure:** parent + metabolite; no model was built for this record.  
 **Parameters:** 9 extracted.

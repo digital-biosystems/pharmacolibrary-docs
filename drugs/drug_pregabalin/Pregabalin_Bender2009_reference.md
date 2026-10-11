@@ -33,8 +33,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the val
 Bender G et al., Population pharmacokinetic model of the…, Pharmaceutical research (2009)
   ·  DOI: [10.1007/s11095-009-9942-y](https://doi.org/10.1007/s11095-009-9942-y)
 
-## Model component
-<dbs-pgx drug="pregabalin" model-id="Pregabalin_Bender2009_reference" status="rejected" stale="true" population="rats" measured-compound="pregabalin" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="pregabalin" model-id="Pregabalin_Bender2009_reference" status="rejected" stale="true" population="rats" measured-compound="pregabalin" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment; no model was built for this record.  
 **Parameters:** 6 extracted.

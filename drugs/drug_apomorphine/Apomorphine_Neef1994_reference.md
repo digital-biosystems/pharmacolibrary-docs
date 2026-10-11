@@ -20,8 +20,7 @@
 Neef C et al., Comparison of two software programs to…, International journal of bi… (1994)
   ·  DOI: [10.1016/0020-7101(94)90107-4](https://doi.org/10.1016/0020-7101(94)90107-4)
 
-## Model component
-<dbs-pgx drug="apomorphine" model-id="Apomorphine_Neef1994_reference" status="needs_review" stale="false" population="unknown" measured-compound="apomorphine" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="apomorphine" model-id="Apomorphine_Neef1994_reference" status="needs_review" stale="false" population="unknown" measured-compound="apomorphine" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 2 extracted.

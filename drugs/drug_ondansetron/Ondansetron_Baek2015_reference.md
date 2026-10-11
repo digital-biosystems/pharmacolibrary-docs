@@ -33,8 +33,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the val
 Baek IH et al., Pharmacokinetic modeling and Monte Carl…, Journal of veterinary pharm… (2015)
   ·  DOI: [10.1111/jvp.12147](https://doi.org/10.1111/jvp.12147)
 
-## Model component
-<dbs-pgx drug="ondansetron" model-id="Ondansetron_Baek2015_reference" status="rejected" stale="true" population="beagles" measured-compound="ondansetron" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="ondansetron" model-id="Ondansetron_Baek2015_reference" status="rejected" stale="true" population="beagles" measured-compound="ondansetron" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 5 extracted.

@@ -23,8 +23,7 @@
 Fernández M et al., Pharmacokinetics of levamisole in sheep…, New Zealand veterinary jour… (1997)
   ·  DOI: [10.1080/00480169.1997.35991](https://doi.org/10.1080/00480169.1997.35991)
 
-## Model component
-<dbs-pgx drug="levamisole" model-id="Levamisole_Fernndez1997_reference" status="needs_review" stale="false" population="healthy Merino sheep" measured-compound="levamisole" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="levamisole" model-id="Levamisole_Fernndez1997_reference" status="needs_review" stale="false" population="healthy Merino sheep" measured-compound="levamisole" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 3 extracted.

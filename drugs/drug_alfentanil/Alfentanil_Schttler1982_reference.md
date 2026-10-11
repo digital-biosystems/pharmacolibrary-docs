@@ -20,8 +20,7 @@
 ## Citation
 Schüttler J et al., [Clinical pharmacokinetics of alfentany…, Der Anaesthesist (1982)
 
-## Model component
-<dbs-pgx drug="alfentanil" model-id="Alfentanil_Schttler1982_reference" status="rejected" stale="false" population="patients (ASA class I and II)" measured-compound="alfentanyl" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="alfentanil" model-id="Alfentanil_Schttler1982_reference" status="rejected" stale="false" population="patients (ASA class I and II)" measured-compound="alfentanyl" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 6 extracted.

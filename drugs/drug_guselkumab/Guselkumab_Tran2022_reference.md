@@ -21,8 +21,7 @@
 Tran L et al., Population pharmacokinetics analysis of…, British journal of clinical… (2022)
   ·  DOI: [10.1111/bcp.15364](https://doi.org/10.1111/bcp.15364)
 
-## Model component
-<dbs-pgx drug="guselkumab" model-id="Guselkumab_Tran2022_reference" status="rejected" stale="false" population="healthy subjects and patients with psoriatic arthritis, plaque psoriasis and palmoplantar pustulosis" measured-compound="guselkumab" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="guselkumab" model-id="Guselkumab_Tran2022_reference" status="rejected" stale="false" population="healthy subjects and patients with psoriatic arthritis, plaque psoriasis and palmoplantar pustulosis" measured-compound="guselkumab" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

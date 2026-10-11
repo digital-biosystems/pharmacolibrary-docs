@@ -20,8 +20,7 @@
 ## Citation
 Dahaba AA et al., Influence of acute normovolemic hemodil…, Minerva anestesiologica (2013)
 
-## Model component
-<dbs-pgx drug="cisatracurium" model-id="Cisatracurium_Dahaba2013_reference" status="needs_review" stale="false" population="patients undergoing acute normovolemic hemodilution or control" measured-compound="cisatracurium" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="cisatracurium" model-id="Cisatracurium_Dahaba2013_reference" status="needs_review" stale="false" population="patients undergoing acute normovolemic hemodilution or control" measured-compound="cisatracurium" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 4 extracted.

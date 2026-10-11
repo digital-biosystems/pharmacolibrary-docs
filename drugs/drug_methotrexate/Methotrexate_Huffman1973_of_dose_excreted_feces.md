@@ -26,8 +26,7 @@ Without a unit the value cannot be converted, so the model cannot use it. A repo
 ## Citation
 Huffman, Pharmacokinetics of methotrexate (1973)
 
-## Model component
-<dbs-pgx drug="methotrexate" model-id="Methotrexate_Huffman1973_of_dose_excreted_feces" status="needs_review" stale="false" population="patients with malignancies" measured-compound="methotrexate" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="methotrexate" model-id="Methotrexate_Huffman1973_of_dose_excreted_feces" status="needs_review" stale="false" population="patients with malignancies" measured-compound="methotrexate" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 5 extracted.

@@ -32,8 +32,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Blake GM et al., Sr-89 therapy: strontium kinetics in di…, European journal of nuclear… (1986)
   ·  DOI: [10.1007/BF00254749](https://doi.org/10.1007/BF00254749)
 
-## Model component
-<dbs-pgx drug="strontium (89Sr) chloride" model-id="Strontium89srChloride_Blake1986_reference" status="rejected" stale="true" population="patients with metastatic bone disease secondary to prostatic carcinoma" measured-compound="strontium" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="strontium (89Sr) chloride" model-id="Strontium89srChloride_Blake1986_reference" status="rejected" stale="true" population="patients with metastatic bone disease secondary to prostatic carcinoma" measured-compound="strontium" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

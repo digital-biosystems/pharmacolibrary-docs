@@ -21,8 +21,7 @@
 van Bussel MTJ et al., Intracranial antitumor responses of niv…, BMC cancer (2019)
   ·  DOI: [10.1186/s12885-019-5741-y](https://doi.org/10.1186/s12885-019-5741-y)
 
-## Model component
-<dbs-pgx drug="ipilimumab" model-id="Ipilimumab_van2019_reference" status="extracted" stale="false" population="" measured-compound="ipilimumab" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="ipilimumab" model-id="Ipilimumab_van2019_reference" status="extracted" stale="false" population="" measured-compound="ipilimumab" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameters:** 2 extracted.

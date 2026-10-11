@@ -32,8 +32,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Wójcicki J et al., Comparative pharmacokinetics and pharma…, Biopharmaceutics & drug dis… (2003)
   ·  DOI: [10.1002/bdd.357](https://doi.org/10.1002/bdd.357)
 
-## Model component
-<dbs-pgx drug="atenolol" model-id="Atenolol_Wjcicki2003_reference" status="rejected" stale="true" population="obese and lean subjects" measured-compound="propranolol and atenolol" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="atenolol" model-id="Atenolol_Wjcicki2003_reference" status="rejected" stale="true" population="obese and lean subjects" measured-compound="propranolol and atenolol" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

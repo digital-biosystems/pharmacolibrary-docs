@@ -32,8 +32,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Celardo A et al., Pharmacokinetic and pharmacodynamic mod…, European journal of drug me… (1987)
   ·  DOI: [10.1007/BF03189860](https://doi.org/10.1007/BF03189860)
 
-## Model component
-<dbs-pgx drug="atenolol" model-id="Atenolol_Celardo1987_during_renal_failure" status="rejected" stale="true" population="rabbits on continuous peritoneal dialysis" measured-compound="atenolol" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="atenolol" model-id="Atenolol_Celardo1987_during_renal_failure" status="rejected" stale="true" population="rabbits on continuous peritoneal dialysis" measured-compound="atenolol" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 16 extracted.

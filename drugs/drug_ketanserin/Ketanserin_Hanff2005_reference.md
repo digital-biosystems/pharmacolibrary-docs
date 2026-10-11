@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Hanff LM et al., Population pharmacokinetics of ketanser…, Fundamental & clinical phar… (2005)
   ·  DOI: [10.1111/j.1472-8206.2005.00354.x](https://doi.org/10.1111/j.1472-8206.2005.00354.x)
 
-## Model component
-<dbs-pgx drug="ketanserin" model-id="Ketanserin_Hanff2005_reference" status="extracted" stale="true" population="pre-eclamptic patients" measured-compound="ketanserin" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="ketanserin" model-id="Ketanserin_Hanff2005_reference" status="extracted" stale="true" population="pre-eclamptic patients" measured-compound="ketanserin" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 2 extracted.

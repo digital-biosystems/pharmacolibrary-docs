@@ -23,8 +23,7 @@
 Imbs DC et al., Pharmacokinetic interaction between paz…, Cancer chemotherapy and pha… (2016)
   ·  DOI: [10.1007/s00280-015-2953-y](https://doi.org/10.1007/s00280-015-2953-y)
 
-## Model component
-<dbs-pgx drug="pazopanib" model-id="Pazopanib_Imbs2016_reference" status="rejected" stale="false" population="patients in a phase I pazopanib-cisplatin combination study" measured-compound="pazopanib and ultrafilterable cisplatin" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="pazopanib" model-id="Pazopanib_Imbs2016_reference" status="rejected" stale="false" population="patients in a phase I pazopanib-cisplatin combination study" measured-compound="pazopanib and ultrafilterable cisplatin" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

@@ -22,8 +22,7 @@
 Dvořáčková E et al., Population Pharmacokinetics and Dose Op…, Medical principles and prac… (2026)
   ·  DOI: [10.1159/000548942](https://doi.org/10.1159/000548942)
 
-## Model component
-<dbs-pgx drug="valganciclovir" model-id="Valganciclovir_Dvokov2026_reference" status="rejected" stale="false" population="lung transplant recipients" measured-compound="ganciclovir" parameterization="apparent" topology="general_linear"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="valganciclovir" model-id="Valganciclovir_Dvokov2026_reference" status="rejected" stale="false" population="lung transplant recipients" measured-compound="ganciclovir" parameterization="apparent" topology="general_linear"></div>
 
 **Model structure:** general linear; no model was built for this record.  
 **Parameters:** 7 extracted, plus 1 covariate effect.

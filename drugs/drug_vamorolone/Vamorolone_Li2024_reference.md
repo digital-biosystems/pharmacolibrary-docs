@@ -20,8 +20,7 @@
 Li X et al., Assessing Pharmacogenomic loci Associat…, Journal of clinical pharmac… (2024)
   ·  DOI: [10.1002/jcph.2446](https://doi.org/10.1002/jcph.2446)
 
-## Model component
-<dbs-pgx drug="vamorolone" model-id="Vamorolone_Li2024_reference" status="rejected" stale="false" population="boys with Duchenne Muscular Dystrophy" measured-compound="vamorolone" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="vamorolone" model-id="Vamorolone_Li2024_reference" status="rejected" stale="false" population="boys with Duchenne Muscular Dystrophy" measured-compound="vamorolone" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 4 extracted.

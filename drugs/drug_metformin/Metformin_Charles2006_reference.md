@@ -33,8 +33,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Charles B et al., Population pharmacokinetics of metformi…, Therapeutic drug monitoring (2006)
   ·  DOI: [10.1097/01.ftd.0000184161.52573.0e](https://doi.org/10.1097/01.ftd.0000184161.52573.0e)
 
-## Model component
-<dbs-pgx drug="metformin" model-id="Metformin_Charles2006_reference" status="needs_review" stale="true" population="women in late pregnancy with gestational diabetes or type 2 diabetes" measured-compound="metformin" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="metformin" model-id="Metformin_Charles2006_reference" status="needs_review" stale="true" population="women in late pregnancy with gestational diabetes or type 2 diabetes" measured-compound="metformin" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 5 extracted.

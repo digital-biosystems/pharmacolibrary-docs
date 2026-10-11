@@ -25,8 +25,7 @@
 ABO EL-SOOUD K et al., Pharmacokinetics and intramuscular bioa…, Research in veterinary scie… (2000)
   ·  DOI: [10.1053/rvsc.2000.0412](https://doi.org/10.1053/rvsc.2000.0412)
 
-## Model component
-<dbs-pgx drug="cefuroxime" model-id="Cefuroxime_ABO2000_reference" status="rejected" stale="false" population="goats" measured-compound="cefuroxime" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="cefuroxime" model-id="Cefuroxime_ABO2000_reference" status="rejected" stale="false" population="goats" measured-compound="cefuroxime" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 8 extracted.

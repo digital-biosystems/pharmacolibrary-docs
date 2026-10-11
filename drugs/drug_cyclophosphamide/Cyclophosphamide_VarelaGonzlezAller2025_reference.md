@@ -21,8 +21,7 @@
 Varela-González-Aller J et al., Towards Personalized Lymphodepletion: A…, Pharmaceutics (2025)
   ·  DOI: [10.3390/pharmaceutics17121592](https://doi.org/10.3390/pharmaceutics17121592)
 
-## Model component
-<dbs-pgx drug="cyclophosphamide" model-id="Cyclophosphamide_VarelaGonzlezAller2025_reference" status="rejected" stale="false" population="" measured-compound="cyclophosphamide" parameterization="apparent" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="cyclophosphamide" model-id="Cyclophosphamide_VarelaGonzlezAller2025_reference" status="rejected" stale="false" population="" measured-compound="cyclophosphamide" parameterization="apparent" topology="2C"></div>
 
 **Model structure:** 2-compartment; no model was built for this record.  
 **Parameters:** 3 extracted.

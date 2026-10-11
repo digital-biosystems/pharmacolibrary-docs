@@ -21,8 +21,7 @@
 Papathanasiou T et al., Population Pharmacokinetics and Pharmac…, Clinical pharmacokinetics (2021)
   ·  DOI: [10.1007/s40262-021-01011-3](https://doi.org/10.1007/s40262-021-01011-3)
 
-## Model component
-<dbs-pgx drug="somatropin" model-id="Somatropin_Papathanasiou2021_reference" status="rejected" stale="false" population="children and adults with growth hormone deficiency" measured-compound="somatropin" parameterization="mechanistic" topology="general_linear"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="somatropin" model-id="Somatropin_Papathanasiou2021_reference" status="rejected" stale="false" population="children and adults with growth hormone deficiency" measured-compound="somatropin" parameterization="mechanistic" topology="general_linear"></div>
 
 **Model structure:** general linear; no model was built for this record.  
 **Parameters:** 0 extracted.

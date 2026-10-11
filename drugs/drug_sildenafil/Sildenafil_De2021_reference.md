@@ -23,8 +23,7 @@
 De Bie FR et al., Pharmacokinetics and pharmacodynamics o…, Biomedicine & pharmacothera… (2021)
   ·  DOI: [10.1016/j.biopha.2021.112161](https://doi.org/10.1016/j.biopha.2021.112161)
 
-## Model component
-<dbs-pgx drug="sildenafil" model-id="Sildenafil_De2021_reference" status="rejected" stale="false" population="fetal lambs on extracorporeal support" measured-compound="sildenafil" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="sildenafil" model-id="Sildenafil_De2021_reference" status="rejected" stale="false" population="fetal lambs on extracorporeal support" measured-compound="sildenafil" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

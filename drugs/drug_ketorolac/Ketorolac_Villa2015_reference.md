@@ -23,8 +23,7 @@
 Villa R et al., Pharmacokinetics of intravenous ketorol…, New Zealand veterinary jour… (2015)
   ·  DOI: [10.1080/00480169.2014.987329](https://doi.org/10.1080/00480169.2014.987329)
 
-## Model component
-<dbs-pgx drug="ketorolac" model-id="Ketorolac_Villa2015_reference" status="extracted" stale="false" population="cats undergoing gonadectomy" measured-compound="ketorolac" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="ketorolac" model-id="Ketorolac_Villa2015_reference" status="extracted" stale="false" population="cats undergoing gonadectomy" measured-compound="ketorolac" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameters:** 4 extracted.

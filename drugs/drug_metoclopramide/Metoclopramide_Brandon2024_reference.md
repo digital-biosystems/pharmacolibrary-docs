@@ -30,8 +30,7 @@ Simulated as the paper dosed it, the model's terminal half-life differs from the
 Brandon AM et al., Evaluation of pharmacokinetics of metoc…, Veterinary surgery : VS (2024)
   ·  DOI: [10.1111/vsu.14128](https://doi.org/10.1111/vsu.14128)
 
-## Model component
-<dbs-pgx drug="metoclopramide" model-id="Metoclopramide_Brandon2024_reference" status="needs_review" stale="true" population="healthy adult horses" measured-compound="metoclopramide" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="metoclopramide" model-id="Metoclopramide_Brandon2024_reference" status="needs_review" stale="true" population="healthy adult horses" measured-compound="metoclopramide" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 2 extracted.

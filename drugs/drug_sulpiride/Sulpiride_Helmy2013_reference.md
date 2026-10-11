@@ -21,8 +21,7 @@
 Helmy SA, Therapeutic drug monitoring and pharmac…, Biopharmaceutics & drug dis… (2013)
   ·  DOI: [10.1002/bdd.1843](https://doi.org/10.1002/bdd.1843)
 
-## Model component
-<dbs-pgx drug="sulpiride" model-id="Sulpiride_Helmy2013_reference" status="rejected" stale="false" population="healthy volunteers" measured-compound="sulpiride" parameterization="apparent" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="sulpiride" model-id="Sulpiride_Helmy2013_reference" status="rejected" stale="false" population="healthy volunteers" measured-compound="sulpiride" parameterization="apparent" topology="2C"></div>
 
 **Model structure:** 2-compartment; no model was built for this record.  
 **Parameters:** 10 extracted.

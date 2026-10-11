@@ -20,8 +20,7 @@
 Hanley MJ et al., Population Pharmacokinetics of Ponatini…, Journal of clinical pharmac… (2022)
   ·  DOI: [10.1002/jcph.1990](https://doi.org/10.1002/jcph.1990)
 
-## Model component
-<dbs-pgx drug="ponatinib" model-id="Ponatinib_Hanley2022_estimate" status="rejected" stale="false" population="healthy volunteers and patients with hematologic malignancies" measured-compound="ponatinib" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="ponatinib" model-id="Ponatinib_Hanley2022_estimate" status="rejected" stale="false" population="healthy volunteers and patients with hematologic malignancies" measured-compound="ponatinib" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 1 extracted, plus 2 covariate effects.

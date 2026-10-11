@@ -21,8 +21,7 @@
 Mandema JW et al., Pharmacokinetic-pharmacodynamic modelin…, Clinical pharmacology and t… (1992)
   ·  DOI: [10.1038/clpt.1992.84](https://doi.org/10.1038/clpt.1992.84)
 
-## Model component
-<dbs-pgx drug="midazolam" model-id="Midazolam_Mandema1992_reference" status="needs_review" stale="false" population="healthy volunteers" measured-compound="midazolam" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="midazolam" model-id="Midazolam_Mandema1992_reference" status="needs_review" stale="false" population="healthy volunteers" measured-compound="midazolam" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 2 extracted.

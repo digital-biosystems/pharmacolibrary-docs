@@ -21,8 +21,7 @@
 Lim SY et al., Model-Based Analysis of Cannabidiol Dos…, Pharmacotherapy (2020)
   ·  DOI: [10.1002/phar.2377](https://doi.org/10.1002/phar.2377)
 
-## Model component
-<dbs-pgx drug="cannabidiol" model-id="Cannabidiol_Lim2020_reference" status="rejected" stale="false" population="healthy volunteers" measured-compound="cannabidiol" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="cannabidiol" model-id="Cannabidiol_Lim2020_reference" status="rejected" stale="false" population="healthy volunteers" measured-compound="cannabidiol" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

@@ -29,8 +29,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on paramet
 Kwack H et al., PKGPT: Expert-Orchestrated Recursive LL…, Pharmaceutics (2026)
   ·  DOI: [10.3390/pharmaceutics18040501](https://doi.org/10.3390/pharmaceutics18040501)
 
-## Model component
-<dbs-pgx drug="Ornithine" model-id="Ornithine_Kwack2026_reference" status="needs_review" stale="false" population="" measured-compound="ornithine" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="Ornithine" model-id="Ornithine_Kwack2026_reference" status="needs_review" stale="false" population="" measured-compound="ornithine" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment, oral mammillary model — template `PK_2C_enteral`.  
 **Parameters:** 6 extracted.

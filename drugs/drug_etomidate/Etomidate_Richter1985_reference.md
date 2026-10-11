@@ -20,8 +20,7 @@
 ## Citation
 Richter O et al., Pharmacokinetic data analysis of alfent…, International journal of cl… (1985)
 
-## Model component
-<dbs-pgx drug="etomidate" model-id="Etomidate_Richter1985_reference" status="rejected" stale="false" population="patients undergoing orthopedic surgery" measured-compound="etomidate" parameterization="mechanistic" topology="general_linear"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="etomidate" model-id="Etomidate_Richter1985_reference" status="rejected" stale="false" population="patients undergoing orthopedic surgery" measured-compound="etomidate" parameterization="mechanistic" topology="general_linear"></div>
 
 **Model structure:** general linear; no model was built for this record.  
 **Parameters:** 1 extracted.

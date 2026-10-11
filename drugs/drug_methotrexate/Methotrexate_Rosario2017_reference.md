@@ -31,8 +31,7 @@ Independently confirmed by `gpt-oss:120b`.
 Rosario M et al., A Review of the Clinical Pharmacokineti…, Clinical pharmacokinetics (2017)
   ·  DOI: [10.1007/s40262-017-0546-0](https://doi.org/10.1007/s40262-017-0546-0)
 
-## Model component
-<dbs-pgx drug="methotrexate" model-id="Methotrexate_Rosario2017_reference" status="rejected" stale="true" population="" measured-compound="methotrexate" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="methotrexate" model-id="Methotrexate_Rosario2017_reference" status="rejected" stale="true" population="" measured-compound="methotrexate" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment; no model was built for this record.  
 **Parameters:** 3 extracted.

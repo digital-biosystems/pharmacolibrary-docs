@@ -23,8 +23,7 @@
 Booka E et al., Development of an S-1 dosage formula ba…, Gastric cancer : official j… (2016)
   ·  DOI: [10.1007/s10120-015-0536-6](https://doi.org/10.1007/s10120-015-0536-6)
 
-## Model component
-<dbs-pgx drug="tegafur" model-id="Tegafur_Booka2016_reference" status="rejected" stale="false" population="cancer patients with various degrees of renal function" measured-compound="5-FU" parameterization="apparent" topology="general_linear"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="tegafur" model-id="Tegafur_Booka2016_reference" status="rejected" stale="false" population="cancer patients with various degrees of renal function" measured-compound="5-FU" parameterization="apparent" topology="general_linear"></div>
 
 **Model structure:** general linear; no model was built for this record.  
 **Parameters:** 2 extracted.

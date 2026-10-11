@@ -21,8 +21,7 @@
 Ketharanathan N et al., A Population Pharmacokinetic Model of P…, Clinical pharmacokinetics (2023)
   ·  DOI: [10.1007/s40262-023-01249-z](https://doi.org/10.1007/s40262-023-01249-z)
 
-## Model component
-<dbs-pgx drug="pentobarbital" model-id="Pentobarbital_Ketharanathan2023_final" status="extracted" stale="false" population="critically ill children with refractory status epilepticus or severe traumatic brain injury (PICU)" measured-compound="pentobarbital" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="pentobarbital" model-id="Pentobarbital_Ketharanathan2023_final" status="extracted" stale="false" population="critically ill children with refractory status epilepticus or severe traumatic brain injury (PICU)" measured-compound="pentobarbital" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameters:** 2 extracted.

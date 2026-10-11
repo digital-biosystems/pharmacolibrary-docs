@@ -21,8 +21,7 @@
 Marquez-Megias S et al., Population Pharmacokinetic Model of Ada…, Biomedicines (2023)
   ·  DOI: [10.3390/biomedicines11102822](https://doi.org/10.3390/biomedicines11102822)
 
-## Model component
-<dbs-pgx drug="adalimumab" model-id="Adalimumab_MarquezMegias2023_reference" status="rejected" stale="false" population="adults with inflammatory bowel disease" measured-compound="adalimumab" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="adalimumab" model-id="Adalimumab_MarquezMegias2023_reference" status="rejected" stale="false" population="adults with inflammatory bowel disease" measured-compound="adalimumab" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

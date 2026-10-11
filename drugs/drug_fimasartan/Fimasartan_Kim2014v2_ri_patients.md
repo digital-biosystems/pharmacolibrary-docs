@@ -21,8 +21,7 @@
 Kim S et al., Effect of renal function on the pharmac…, Drug design, development an… (2014)
   ·  DOI: [10.2147/DDDT.S68784](https://doi.org/10.2147/DDDT.S68784)
 
-## Model component
-<dbs-pgx drug="fimasartan" model-id="Fimasartan_Kim2014v2_ri_patients" status="rejected" stale="false" population="patients with renal impairment and healthy volunteers" measured-compound="fimasartan" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="fimasartan" model-id="Fimasartan_Kim2014v2_ri_patients" status="rejected" stale="false" population="patients with renal impairment and healthy volunteers" measured-compound="fimasartan" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 3 extracted.

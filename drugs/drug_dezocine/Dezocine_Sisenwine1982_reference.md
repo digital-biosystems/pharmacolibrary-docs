@@ -21,8 +21,7 @@
 ## Citation
 Sisenwine SF et al., Pharmacokinetics of parenteral dezocine…, Drug metabolism and disposi… (1982)
 
-## Model component
-<dbs-pgx drug="dezocine" model-id="Dezocine_Sisenwine1982_reference" status="needs_review" stale="false" population="rhesus monkeys and dogs" measured-compound="dezocine" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="dezocine" model-id="Dezocine_Sisenwine1982_reference" status="needs_review" stale="false" population="rhesus monkeys and dogs" measured-compound="dezocine" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 2 extracted.

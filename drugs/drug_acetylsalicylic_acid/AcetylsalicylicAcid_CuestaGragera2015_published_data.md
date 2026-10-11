@@ -27,8 +27,7 @@ A volume and a clearance/elimination estimate from this paper are needed to buil
 Cuesta-Gragera A et al., Semi-physiologic model validation and b…, European journal of pharmac… (2015)
   ·  DOI: [10.1016/j.ejps.2015.04.002](https://doi.org/10.1016/j.ejps.2015.04.002)
 
-## Model component
-<dbs-pgx drug="acetylsalicylic acid" model-id="AcetylsalicylicAcid_CuestaGragera2015_published_data" status="needs_review" stale="false" population="healthy adults" measured-compound="acetylsalicylic_acid" parameterization="mechanistic" topology="general_linear"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="acetylsalicylic acid" model-id="AcetylsalicylicAcid_CuestaGragera2015_published_data" status="needs_review" stale="false" population="healthy adults" measured-compound="acetylsalicylic_acid" parameterization="mechanistic" topology="general_linear"></div>
 
 **Model structure:** general linear; no model was built for this record.  
 **Parameters:** 7 extracted.

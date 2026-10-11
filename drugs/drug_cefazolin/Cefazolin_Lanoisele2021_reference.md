@@ -21,8 +21,7 @@
 Lanoiselée J et al., Population pharmacokinetic model of cef…, Scientific reports (2021)
   ·  DOI: [10.1038/s41598-021-99162-7](https://doi.org/10.1038/s41598-021-99162-7)
 
-## Model component
-<dbs-pgx drug="cefazolin" model-id="Cefazolin_Lanoisele2021_reference" status="needs_review" stale="false" population="adults undergoing total hip arthroplasty" measured-compound="cefazolin" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="cefazolin" model-id="Cefazolin_Lanoisele2021_reference" status="needs_review" stale="false" population="adults undergoing total hip arthroplasty" measured-compound="cefazolin" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment; no model was built for this record.  
 **Parameters:** 3 extracted.

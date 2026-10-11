@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Yukawa E et al., Digoxin population pharmacokinetics fro…, The Journal of pharmacy and… (1992)
   ·  DOI: [10.1111/j.2042-7158.1992.tb05515.x](https://doi.org/10.1111/j.2042-7158.1992.tb05515.x)
 
-## Model component
-<dbs-pgx drug="digoxin" model-id="Digoxin_Yukawa1992_reference" status="rejected" stale="true" population="patients receiving digoxin" measured-compound="digoxin" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="digoxin" model-id="Digoxin_Yukawa1992_reference" status="rejected" stale="true" population="patients receiving digoxin" measured-compound="digoxin" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

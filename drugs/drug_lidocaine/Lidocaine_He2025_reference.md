@@ -30,8 +30,7 @@ Independently confirmed by `gpt-oss:120b`.
 He C et al., Optimizing Lidocaine Dosing in Hepatect…, Drug design, development an… (2025)
   ·  DOI: [10.2147/DDDT.S485389](https://doi.org/10.2147/DDDT.S485389)
 
-## Model component
-<dbs-pgx drug="lidocaine" model-id="Lidocaine_He2025_reference" status="rejected" stale="true" population="partial hepatectomy patients" measured-compound="lidocaine" parameterization="mechanistic" topology="general_linear"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="lidocaine" model-id="Lidocaine_He2025_reference" status="rejected" stale="true" population="partial hepatectomy patients" measured-compound="lidocaine" parameterization="mechanistic" topology="general_linear"></div>
 
 **Model structure:** general linear; no model was built for this record.  
 **Parameters:** 1 extracted.

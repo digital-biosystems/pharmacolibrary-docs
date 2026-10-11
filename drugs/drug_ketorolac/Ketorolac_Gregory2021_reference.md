@@ -23,8 +23,7 @@
 Gregory TM et al., Pharmacokinetics of ketorolac in juveni…, Journal of veterinary pharm… (2021)
   ·  DOI: [10.1111/jvp.12952](https://doi.org/10.1111/jvp.12952)
 
-## Model component
-<dbs-pgx drug="ketorolac" model-id="Ketorolac_Gregory2021_reference" status="needs_review" stale="false" population="juvenile loggerhead sea turtles" measured-compound="ketorolac" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="ketorolac" model-id="Ketorolac_Gregory2021_reference" status="needs_review" stale="false" population="juvenile loggerhead sea turtles" measured-compound="ketorolac" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 4 extracted.

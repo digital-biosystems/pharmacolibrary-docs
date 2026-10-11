@@ -31,8 +31,7 @@ The base model was simulated, not the covariate effects the record defines. A re
 Abdalla S et al., Simultaneous pharmacokinetic modeling o…, Antimicrobial agents and ch… (2024)
   ·  DOI: [10.1128/aac.01004-23](https://doi.org/10.1128/aac.01004-23)
 
-## Model component
-<dbs-pgx drug="darunavir" model-id="Darunavir_Abdalla2024_reference" status="rejected" stale="true" population="HIV-1 infected adolescents aged 12-18 years" measured-compound="darunavir" parameterization="apparent" topology="parent_metabolite"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="darunavir" model-id="Darunavir_Abdalla2024_reference" status="rejected" stale="true" population="HIV-1 infected adolescents aged 12-18 years" measured-compound="darunavir" parameterization="apparent" topology="parent_metabolite"></div>
 
 **Model structure:** parent + metabolite; no model was built for this record.  
 **Parameters:** 6 extracted, plus 1 covariate effect.

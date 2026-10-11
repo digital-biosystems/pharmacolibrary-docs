@@ -19,8 +19,7 @@
 ## Citation
 Colino CI et al., Open-loop feedback control of serum ben…, International journal of cl… (1991)
 
-## Model component
-<dbs-pgx drug="bentazepam" model-id="Bentazepam_Colino1991_reference" status="rejected" stale="false" population="patients receiving anxiolytic therapy" measured-compound="bentazepam" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="bentazepam" model-id="Bentazepam_Colino1991_reference" status="rejected" stale="false" population="patients receiving anxiolytic therapy" measured-compound="bentazepam" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 4 extracted.

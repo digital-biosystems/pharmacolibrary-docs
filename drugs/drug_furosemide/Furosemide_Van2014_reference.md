@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Van Wart SA et al., Population-based meta-analysis of furos…, Biopharmaceutics & drug dis… (2014)
   ·  DOI: [10.1002/bdd.1874](https://doi.org/10.1002/bdd.1874)
 
-## Model component
-<dbs-pgx drug="furosemide" model-id="Furosemide_Van2014_reference" status="needs_review" stale="true" population="healthy subjects and fluid overload patients" measured-compound="furosemide" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="furosemide" model-id="Furosemide_Van2014_reference" status="needs_review" stale="true" population="healthy subjects and fluid overload patients" measured-compound="furosemide" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 5 extracted.

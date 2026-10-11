@@ -27,8 +27,7 @@
 Boosman RJ et al., Prediction of the pharmacokinetics of p…, British journal of clinical… (2023)
   ·  DOI: [10.1111/bcp.15520](https://doi.org/10.1111/bcp.15520)
 
-## Model component
-<dbs-pgx drug="pemetrexed" model-id="Pemetrexed_Boosman2023_reference" status="extracted" stale="true" population="patients with lung cancer and mesothelioma" measured-compound="pemetrexed" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="pemetrexed" model-id="Pemetrexed_Boosman2023_reference" status="extracted" stale="true" population="patients with lung cancer and mesothelioma" measured-compound="pemetrexed" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameters:** 4 extracted.

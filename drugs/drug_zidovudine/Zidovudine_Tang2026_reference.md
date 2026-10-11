@@ -21,8 +21,7 @@
 Tang F et al., The study on the transport and phosphor…, Scientific reports (2026)
   ·  DOI: [10.1038/s41598-026-49905-1](https://doi.org/10.1038/s41598-026-49905-1)
 
-## Model component
-<dbs-pgx drug="zidovudine" model-id="Zidovudine_Tang2026_reference" status="rejected" stale="false" population="healthy Chinese volunteers" measured-compound="zidovudine (AZT)" parameterization="mechanistic" topology="general_linear"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="zidovudine" model-id="Zidovudine_Tang2026_reference" status="rejected" stale="false" population="healthy Chinese volunteers" measured-compound="zidovudine (AZT)" parameterization="mechanistic" topology="general_linear"></div>
 
 **Model structure:** general linear; no model was built for this record.  
 **Parameters:** 7 extracted.

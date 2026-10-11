@@ -22,8 +22,7 @@
 ## Citation
 Baggot JD et al., Disposition kinetics of ketamine in the…, Archives internationales de… (1976)
 
-## Model component
-<dbs-pgx drug="ketamine" model-id="Ketamine_Baggot1976_reference" status="needs_review" stale="false" population="normal domestic cats" measured-compound="ketamine" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="ketamine" model-id="Ketamine_Baggot1976_reference" status="needs_review" stale="false" population="normal domestic cats" measured-compound="ketamine" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 5 extracted.

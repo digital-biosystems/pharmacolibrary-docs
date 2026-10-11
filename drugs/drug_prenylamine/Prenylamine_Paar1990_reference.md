@@ -29,8 +29,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on `parame
 ## Citation
 Paar WD et al., Pharmacokinetics of prenylamine racemat…, Arzneimittel-Forschung (1990)
 
-## Model component
-<dbs-pgx drug="prenylamine" model-id="Prenylamine_Paar1990_reference" status="rejected" stale="true" population="healthy volunteers" measured-compound="prenylamine" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="prenylamine" model-id="Prenylamine_Paar1990_reference" status="rejected" stale="true" population="healthy volunteers" measured-compound="prenylamine" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 5 extracted.

@@ -23,8 +23,7 @@
 Ramzan MI et al., Pharmacokinetic studies in man with gal…, European journal of clinica… (1980)
   ·  DOI: [10.1007/BF00562622](https://doi.org/10.1007/BF00562622)
 
-## Model component
-<dbs-pgx drug="gallamine" model-id="Gallamine_Ramzan1980_reference" status="extracted" stale="false" population="patients undergoing elective surgery" measured-compound="gallamine" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="gallamine" model-id="Gallamine_Ramzan1980_reference" status="extracted" stale="false" population="patients undergoing elective surgery" measured-compound="gallamine" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 4 extracted.

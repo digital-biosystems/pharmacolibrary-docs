@@ -21,8 +21,7 @@
 Danielak D; Karaźniewicz-Łada M; Komosa A; Burchardt P; Lesiak M; Kruszyna Ł; et al. et al. (2017). European journal of clinical pharmacology 73
   ·  DOI: [10.1007/s00228-017-2334-z](https://doi.org/10.1007/s00228-017-2334-z)
 
-## Model component
-<dbs-pgx drug="clopidogrel" model-id="Clopidogrel_Danielak2017_reference" status="rejected" stale="true" population="patients undergoing elective coronarography or percutaneous coronary intervention" measured-compound="clopidogrel" parameterization="apparent" topology="parent_metabolite"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="clopidogrel" model-id="Clopidogrel_Danielak2017_reference" status="rejected" stale="true" population="patients undergoing elective coronarography or percutaneous coronary intervention" measured-compound="clopidogrel" parameterization="apparent" topology="parent_metabolite"></div>
 
 **Parameterization:** CL/F, Q2/F, V/F, V2/F, V3/F — apparent, F unknown (apparent — bioavailability not identifiable).
 

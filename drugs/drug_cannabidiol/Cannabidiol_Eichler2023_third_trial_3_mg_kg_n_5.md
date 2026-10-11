@@ -31,8 +31,7 @@ Simulated as the paper dosed it, the model's terminal half-life differs from the
 Eichler F et al., Pharmacokinetic modelling of orally adm…, Frontiers in veterinary sci… (2023)
   ·  DOI: [10.3389/fvets.2023.1234551](https://doi.org/10.3389/fvets.2023.1234551)
 
-## Model component
-<dbs-pgx drug="cannabidiol" model-id="Cannabidiol_Eichler2023_third_trial_3_mg_kg_n_5" status="extracted" stale="true" population="horses" measured-compound="cannabidiol" parameterization="apparent" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="cannabidiol" model-id="Cannabidiol_Eichler2023_third_trial_3_mg_kg_n_5" status="extracted" stale="true" population="horses" measured-compound="cannabidiol" parameterization="apparent" topology="2C"></div>
 
 **Model structure:** 2-compartment; no model was built for this record.  
 **Parameters:** 6 extracted.

@@ -21,8 +21,7 @@
 Bins S et al., Impact of CYP3A4*22 on Pazopanib Pharma…, Clinical pharmacokinetics (2019)
   ·  DOI: [10.1007/s40262-018-0719-5](https://doi.org/10.1007/s40262-018-0719-5)
 
-## Model component
-<dbs-pgx drug="pazopanib" model-id="Pazopanib_Bins2019_parameter_estimate_rse" status="needs_review" stale="false" population="cancer patients" measured-compound="pazopanib" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="pazopanib" model-id="Pazopanib_Bins2019_parameter_estimate_rse" status="needs_review" stale="false" population="cancer patients" measured-compound="pazopanib" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 4 extracted.

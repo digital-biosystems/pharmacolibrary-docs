@@ -33,8 +33,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Cuffari C et al., Randomized clinical trial: pharmacokine…, Drug design, development an… (2016)
   ·  DOI: [10.2147/DDDT.S95316](https://doi.org/10.2147/DDDT.S95316)
 
-## Model component
-<dbs-pgx drug="mesalazine" model-id="Mesalazine_Cuffari2016_nonmem_estimates" status="not_simulated" stale="false" population="children and adolescents with ulcerative colitis" measured-compound="5-ASA" parameterization="apparent" topology="parent_metabolite"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="mesalazine" model-id="Mesalazine_Cuffari2016_nonmem_estimates" status="not_simulated" stale="false" population="children and adolescents with ulcerative colitis" measured-compound="5-ASA" parameterization="apparent" topology="parent_metabolite"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 8 extracted, plus 6 covariate effects.

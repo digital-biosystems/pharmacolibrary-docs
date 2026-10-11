@@ -18,8 +18,7 @@
 ## Citation
 not matched (stem Shoaf_2012_3)
 
-## Model component
-<dbs-pgx drug="tolvaptan" model-id="Tolvaptan_Shoaf2012v3_reference" status="not_modelled" stale="false" population="" measured-compound="tolvaptan" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="tolvaptan" model-id="Tolvaptan_Shoaf2012v3_reference" status="not_modelled" stale="false" population="" measured-compound="tolvaptan" parameterization="apparent" topology="1C"></div>
 
 **Parameterization:** CL/F, V/F — apparent, F unknown (apparent — bioavailability not identifiable).
 

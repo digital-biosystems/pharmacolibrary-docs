@@ -31,8 +31,7 @@ Independently confirmed by `gpt-oss:120b`.
 Wittwer CT et al., Metabolism of pantethine in cystinosis, The Journal of clinical inv… (1985)
   ·  DOI: [10.1172/JCI112152](https://doi.org/10.1172/JCI112152)
 
-## Model component
-<dbs-pgx drug="calcium pantothenate" model-id="CalciumPantothenate_Wittwer1985_reference" status="rejected" stale="false" population="children with cystinosis" measured-compound="pantothenate" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="calcium pantothenate" model-id="CalciumPantothenate_Wittwer1985_reference" status="rejected" stale="false" population="children with cystinosis" measured-compound="pantothenate" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

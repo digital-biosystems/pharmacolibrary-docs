@@ -21,8 +21,7 @@
 Kimura T et al., Population pharmacokinetics of arbekaci…, Antimicrobial agents and ch… (2004)
   ·  DOI: [10.1128/AAC.48.4.1159-1167.2004](https://doi.org/10.1128/AAC.48.4.1159-1167.2004)
 
-## Model component
-<dbs-pgx drug="arbekacin" model-id="Arbekacin_Kimura2004_reference" status="needs_review" stale="false" population="neonates" measured-compound="arbekacin" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="arbekacin" model-id="Arbekacin_Kimura2004_reference" status="needs_review" stale="false" population="neonates" measured-compound="arbekacin" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 1 extracted.

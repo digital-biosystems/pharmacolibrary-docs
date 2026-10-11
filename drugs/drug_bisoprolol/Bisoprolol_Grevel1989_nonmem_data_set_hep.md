@@ -25,8 +25,7 @@ Independently confirmed by `gpt-oss:120b`.
 Grevel J et al., Population pharmacokinetic analysis of…, Clinical pharmacokinetics (1989)
   ·  DOI: [10.2165/00003088-198917010-00005](https://doi.org/10.2165/00003088-198917010-00005)
 
-## Model component
-<dbs-pgx drug="bisoprolol" model-id="Bisoprolol_Grevel1989_nonmem_data_set_hep" status="needs_review" stale="false" population="patients with essential hypertension, renal impairment, and hepatic impairment" measured-compound="bisoprolol" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="bisoprolol" model-id="Bisoprolol_Grevel1989_nonmem_data_set_hep" status="needs_review" stale="false" population="patients with essential hypertension, renal impairment, and hepatic impairment" measured-compound="bisoprolol" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 4 extracted.

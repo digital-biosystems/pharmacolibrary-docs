@@ -20,8 +20,7 @@
 Yan L et al., Population Pharmacokinetic Modeling of…, Clinical pharmacokinetics (2022)
   ·  DOI: [10.1007/s40262-021-01071-5](https://doi.org/10.1007/s40262-021-01071-5)
 
-## Model component
-<dbs-pgx drug="inebilizumab" model-id="Inebilizumab_Yan2022_reference" status="rejected" stale="false" population="adult subjects with NMOSD, SSc, or MS" measured-compound="inebilizumab" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="inebilizumab" model-id="Inebilizumab_Yan2022_reference" status="rejected" stale="false" population="adult subjects with NMOSD, SSc, or MS" measured-compound="inebilizumab" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment; no model was built for this record.  
 **Parameters:** 7 extracted, plus 4 covariate effects.

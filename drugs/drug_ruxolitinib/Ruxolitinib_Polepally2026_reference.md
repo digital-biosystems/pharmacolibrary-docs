@@ -23,8 +23,7 @@
 Polepally AR et al., Semi-Mechanistic PK/PD Modeling of Plat…, CPT: pharmacometrics & syst… (2026)
   ·  DOI: [10.1002/psp4.70260](https://doi.org/10.1002/psp4.70260)
 
-## Model component
-<dbs-pgx drug="ruxolitinib" model-id="Ruxolitinib_Polepally2026_reference" status="extracted" stale="false" population="patients with myelofibrosis" measured-compound="ruxolitinib" parameterization="apparent" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="ruxolitinib" model-id="Ruxolitinib_Polepally2026_reference" status="extracted" stale="false" population="patients with myelofibrosis" measured-compound="ruxolitinib" parameterization="apparent" topology="2C"></div>
 
 **Model structure:** 2-compartment, oral mammillary model — template `PK_2C_enteral`.  
 **Parameters:** 6 extracted.

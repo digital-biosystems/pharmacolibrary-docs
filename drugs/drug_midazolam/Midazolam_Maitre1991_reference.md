@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Maitre PO et al., A three-step approach combining Bayesia…, Journal of pharmacokinetics… (1991)
   ·  DOI: [10.1007/BF01061662](https://doi.org/10.1007/BF01061662)
 
-## Model component
-<dbs-pgx drug="midazolam" model-id="Midazolam_Maitre1991_reference" status="needs_review" stale="true" population="subjects including patients with liver disease" measured-compound="midazolam" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="midazolam" model-id="Midazolam_Maitre1991_reference" status="needs_review" stale="true" population="subjects including patients with liver disease" measured-compound="midazolam" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 5 extracted.

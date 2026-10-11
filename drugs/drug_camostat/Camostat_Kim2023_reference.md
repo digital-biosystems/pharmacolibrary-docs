@@ -29,8 +29,7 @@ The volume of distribution for GBA is listed as 1046 h, a time unit that is dime
 Kim G et al., Safety Evaluation and Population Pharma…, Pharmaceutics (2023)
   ·  DOI: [10.3390/pharmaceutics15092357](https://doi.org/10.3390/pharmaceutics15092357)
 
-## Model component
-<dbs-pgx drug="camostat" model-id="Camostat_Kim2023_reference" status="rejected" stale="false" population="healthy adults" measured-compound="GBPA" parameterization="apparent" topology="general_linear"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="camostat" model-id="Camostat_Kim2023_reference" status="rejected" stale="false" population="healthy adults" measured-compound="GBPA" parameterization="apparent" topology="general_linear"></div>
 
 **Model structure:** general linear; no model was built for this record.  
 **Parameters:** 6 extracted.

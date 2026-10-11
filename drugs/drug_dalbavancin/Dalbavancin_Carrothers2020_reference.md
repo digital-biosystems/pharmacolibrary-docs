@@ -21,8 +21,7 @@
 Carrothers TJ et al., Dalbavancin Population Pharmacokinetic…, Clinical pharmacology in dr… (2020)
   ·  DOI: [10.1002/cpdd.695](https://doi.org/10.1002/cpdd.695)
 
-## Model component
-<dbs-pgx drug="dalbavancin" model-id="Dalbavancin_Carrothers2020_reference" status="rejected" stale="false" population="adults with acute bacterial skin and skin structure infections" measured-compound="dalbavancin" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="dalbavancin" model-id="Dalbavancin_Carrothers2020_reference" status="rejected" stale="false" population="adults with acute bacterial skin and skin structure infections" measured-compound="dalbavancin" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 2 extracted.

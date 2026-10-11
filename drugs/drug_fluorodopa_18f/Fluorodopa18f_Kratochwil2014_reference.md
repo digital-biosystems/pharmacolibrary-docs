@@ -24,8 +24,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Kratochwil C et al., Intra-individual comparison of ¹⁸F-FET…, Neuro-oncology (2014)
   ·  DOI: [10.1093/neuonc/not199](https://doi.org/10.1093/neuonc/not199)
 
-## Model component
-<dbs-pgx drug="fluorodopa (18F)" model-id="Fluorodopa18f_Kratochwil2014_reference" status="rejected" stale="false" population="patients with recurrent low-grade astrocytoma or high-grade glioblastoma" measured-compound="fluorodopa_18f" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="fluorodopa (18F)" model-id="Fluorodopa18f_Kratochwil2014_reference" status="rejected" stale="false" population="patients with recurrent low-grade astrocytoma or high-grade glioblastoma" measured-compound="fluorodopa_18f" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

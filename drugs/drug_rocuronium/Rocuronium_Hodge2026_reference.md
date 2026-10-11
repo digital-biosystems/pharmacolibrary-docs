@@ -23,8 +23,7 @@
 Hodge AT et al., Plasma levels and postpartum breastmilk…, International journal of ob… (2026)
   ·  DOI: [10.1016/j.ijoa.2026.104874](https://doi.org/10.1016/j.ijoa.2026.104874)
 
-## Model component
-<dbs-pgx drug="Rocuronium" model-id="Rocuronium_Hodge2026_reference" status="rejected" stale="false" population="pregnant women undergoing caesarean delivery" measured-compound="sugammadex" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="Rocuronium" model-id="Rocuronium_Hodge2026_reference" status="rejected" stale="false" population="pregnant women undergoing caesarean delivery" measured-compound="sugammadex" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

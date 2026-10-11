@@ -23,8 +23,7 @@
 El-Kholy H et al., Pharmacokinetics of levamisole in broil…, Journal of veterinary pharm… (2006)
   ·  DOI: [10.1111/j.1365-2885.2006.00710.x](https://doi.org/10.1111/j.1365-2885.2006.00710.x)
 
-## Model component
-<dbs-pgx drug="levamisole" model-id="Levamisole_ElKholy2006_reference" status="needs_review" stale="false" population="broiler breeder chickens (prelay and peak egg production)" measured-compound="levamisole" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="levamisole" model-id="Levamisole_ElKholy2006_reference" status="needs_review" stale="false" population="broiler breeder chickens (prelay and peak egg production)" measured-compound="levamisole" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 3 extracted.

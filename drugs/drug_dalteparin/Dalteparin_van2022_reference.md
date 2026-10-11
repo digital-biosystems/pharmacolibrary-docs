@@ -33,8 +33,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 van der Heijden CDCC et al., Effects of dalteparin on anti-Xa activi…, British journal of clinical… (2022)
   ·  DOI: [10.1111/bcp.15208](https://doi.org/10.1111/bcp.15208)
 
-## Model component
-<dbs-pgx drug="dalteparin" model-id="Dalteparin_van2022_reference" status="rejected" stale="true" population="critically ill COVID-19 patients" measured-compound="anti-Xa activity" parameterization="mechanistic" topology="general_linear"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="dalteparin" model-id="Dalteparin_van2022_reference" status="rejected" stale="true" population="critically ill COVID-19 patients" measured-compound="anti-Xa activity" parameterization="mechanistic" topology="general_linear"></div>
 
 **Model structure:** general linear; no model was built for this record.  
 **Parameters:** 0 extracted.

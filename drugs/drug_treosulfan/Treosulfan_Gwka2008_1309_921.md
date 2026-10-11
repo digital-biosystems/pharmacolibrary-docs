@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on `parame
 Główka FK et al., Pharmacokinetics of high-dose i.v. treo…, Bone marrow transplantation… (2008)
   ·  DOI: [10.1038/bmt.2008.287](https://doi.org/10.1038/bmt.2008.287)
 
-## Model component
-<dbs-pgx drug="treosulfan" model-id="Treosulfan_Gwka2008_1309_921" status="rejected" stale="true" population="paediatric patients undergoing allogeneic haematopoietic SCT" measured-compound="treosulfan" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="treosulfan" model-id="Treosulfan_Gwka2008_1309_921" status="rejected" stale="true" population="paediatric patients undergoing allogeneic haematopoietic SCT" measured-compound="treosulfan" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 6 extracted.

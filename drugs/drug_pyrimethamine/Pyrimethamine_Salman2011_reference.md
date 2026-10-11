@@ -22,8 +22,7 @@
 Salman S et al., Pharmacokinetic properties of conventio…, Antimicrobial agents and ch… (2011)
   ·  DOI: [10.1128/AAC.01075-10](https://doi.org/10.1128/AAC.01075-10)
 
-## Model component
-<dbs-pgx drug="pyrimethamine" model-id="Pyrimethamine_Salman2011_reference" status="rejected" stale="false" population="Papua New Guinean infants aged 2 to 13 months" measured-compound="pyrimethamine" parameterization="mechanistic" topology="parent_metabolite"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="pyrimethamine" model-id="Pyrimethamine_Salman2011_reference" status="rejected" stale="false" population="Papua New Guinean infants aged 2 to 13 months" measured-compound="pyrimethamine" parameterization="mechanistic" topology="parent_metabolite"></div>
 
 **Model structure:** parent + metabolite; no model was built for this record.  
 **Parameters:** 4 extracted.

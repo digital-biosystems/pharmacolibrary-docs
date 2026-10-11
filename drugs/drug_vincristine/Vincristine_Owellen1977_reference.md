@@ -20,8 +20,7 @@
 ## Citation
 Owellen RJ et al., Pharmacokinetics of vindesine and vincr…, Cancer research (1977)
 
-## Model component
-<dbs-pgx drug="vincristine" model-id="Vincristine_Owellen1977_reference" status="needs_review" stale="false" population="humans" measured-compound="vindesine and vincristine" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="vincristine" model-id="Vincristine_Owellen1977_reference" status="needs_review" stale="false" population="humans" measured-compound="vindesine and vincristine" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment; no model was built for this record.  
 **Parameters:** 6 extracted.

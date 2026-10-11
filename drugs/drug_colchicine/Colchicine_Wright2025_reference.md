@@ -20,8 +20,7 @@
 Wright DFB et al., The Influence of Patient Factors on the…, Clinical pharmacokinetics (2025)
   ·  DOI: [10.1007/s40262-025-01551-y](https://doi.org/10.1007/s40262-025-01551-y)
 
-## Model component
-<dbs-pgx drug="colchicine" model-id="Colchicine_Wright2025_reference" status="rejected" stale="false" population="people with gout" measured-compound="colchicine" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="colchicine" model-id="Colchicine_Wright2025_reference" status="rejected" stale="false" population="people with gout" measured-compound="colchicine" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 3 extracted.

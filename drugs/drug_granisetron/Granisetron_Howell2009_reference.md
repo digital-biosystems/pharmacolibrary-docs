@@ -28,8 +28,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Howell J et al., Pharmacokinetics of a granisetron trans…, Journal of oncology pharmac… (2009)
   ·  DOI: [10.1177/1078155209104063](https://doi.org/10.1177/1078155209104063)
 
-## Model component
-<dbs-pgx drug="granisetron" model-id="Granisetron_Howell2009_reference" status="rejected" stale="false" population="healthy subjects and patients with cancer" measured-compound="granisetron" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="granisetron" model-id="Granisetron_Howell2009_reference" status="rejected" stale="false" population="healthy subjects and patients with cancer" measured-compound="granisetron" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 3 extracted.

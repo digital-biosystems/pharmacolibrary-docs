@@ -21,8 +21,7 @@
 Mader RM et al., Pharmacokinetics of 4'-O-tetrahydropyra…, Cancer chemotherapy and pha… (1995)
   ·  DOI: [10.1007/BF00685634](https://doi.org/10.1007/BF00685634)
 
-## Model component
-<dbs-pgx drug="pirarubicin" model-id="Pirarubicin_Mader1995_reference" status="rejected" stale="false" population="patients with advanced breast cancer" measured-compound="THP-ADM (pirarubicin)" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="pirarubicin" model-id="Pirarubicin_Mader1995_reference" status="rejected" stale="false" population="patients with advanced breast cancer" measured-compound="THP-ADM (pirarubicin)" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 4 extracted.

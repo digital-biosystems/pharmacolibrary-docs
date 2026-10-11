@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Bailey JM et al., Clevidipine in adult cardiac surgical p…, Anesthesiology (2002)
   ·  DOI: [10.1097/00000542-200205000-00010](https://doi.org/10.1097/00000542-200205000-00010)
 
-## Model component
-<dbs-pgx drug="clevidipine" model-id="Clevidipine_Bailey2002_reference" status="extracted" stale="true" population="adult cardiac surgical patients" measured-compound="clevidipine" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="clevidipine" model-id="Clevidipine_Bailey2002_reference" status="extracted" stale="true" population="adult cardiac surgical patients" measured-compound="clevidipine" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameters:** 3 extracted.

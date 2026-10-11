@@ -21,8 +21,7 @@
 Yang S et al., Population Pharmacokinetics Modeling of…, European journal of drug me… (2017)
   ·  DOI: [10.1007/s13318-016-0331-8](https://doi.org/10.1007/s13318-016-0331-8)
 
-## Model component
-<dbs-pgx drug="umeclidinium" model-id="Umeclidinium_Yang2017_reference" status="extracted" stale="false" population="adults with asthma" measured-compound="umeclidinium" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="umeclidinium" model-id="Umeclidinium_Yang2017_reference" status="extracted" stale="false" population="adults with asthma" measured-compound="umeclidinium" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 4 extracted.

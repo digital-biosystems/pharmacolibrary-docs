@@ -29,8 +29,7 @@ The record lists 'Allometric scaling CL/F' as 0.750 L and 'Allometric scaling V/
 Schoemaker R et al., Brivaracetam population pharmacokinetic…, European journal of clinica… (2017)
   ·  DOI: [10.1007/s00228-017-2230-6](https://doi.org/10.1007/s00228-017-2230-6)
 
-## Model component
-<dbs-pgx drug="brivaracetam" model-id="Brivaracetam_Schoemaker2017v2_reference" status="needs_review" stale="true" population="children with epilepsy aged 1 month to 16 years" measured-compound="brivaracetam" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="brivaracetam" model-id="Brivaracetam_Schoemaker2017v2_reference" status="needs_review" stale="true" population="children with epilepsy aged 1 month to 16 years" measured-compound="brivaracetam" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 3 extracted.

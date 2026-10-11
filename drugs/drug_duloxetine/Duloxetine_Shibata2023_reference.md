@@ -29,8 +29,7 @@ Only the abstract was available, so reported summary statistics stand in for a f
 Shibata RY et al., Population pharmacokinetics of duloxeti…, Drug metabolism and pharmac… (2023)
   ·  DOI: [10.1016/j.dmpk.2023.100496](https://doi.org/10.1016/j.dmpk.2023.100496)
 
-## Model component
-<dbs-pgx drug="duloxetine" model-id="Duloxetine_Shibata2023_reference" status="extracted" stale="true" population="Japanese pediatric patients with MDD" measured-compound="duloxetine" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="duloxetine" model-id="Duloxetine_Shibata2023_reference" status="extracted" stale="true" population="Japanese pediatric patients with MDD" measured-compound="duloxetine" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 3 extracted.

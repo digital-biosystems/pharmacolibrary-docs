@@ -20,8 +20,7 @@
 Iwata H et al., Machine Learning Prediction and Validat…, Molecular pharmaceutics (2025)
   ·  DOI: [10.1021/acs.molpharmaceut.4c01431](https://doi.org/10.1021/acs.molpharmaceut.4c01431)
 
-## Model component
-<dbs-pgx drug="remifentanil" model-id="Remifentanil_Iwata2025_reference" status="rejected" stale="false" population="adults" measured-compound="remifentanil" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="remifentanil" model-id="Remifentanil_Iwata2025_reference" status="rejected" stale="false" population="adults" measured-compound="remifentanil" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

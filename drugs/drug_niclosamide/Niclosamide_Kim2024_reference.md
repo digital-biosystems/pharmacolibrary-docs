@@ -23,8 +23,7 @@
 Kim T et al., Predicting lung exposure of intramuscul…, Clinical and translational… (2024)
   ·  DOI: [10.1111/cts.13833](https://doi.org/10.1111/cts.13833)
 
-## Model component
-<dbs-pgx drug="niclosamide" model-id="Niclosamide_Kim2024_reference" status="rejected" stale="false" population="male hamsters" measured-compound="niclosamide" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="niclosamide" model-id="Niclosamide_Kim2024_reference" status="rejected" stale="false" population="male hamsters" measured-compound="niclosamide" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment; no model was built for this record.  
 **Parameters:** 6 extracted.

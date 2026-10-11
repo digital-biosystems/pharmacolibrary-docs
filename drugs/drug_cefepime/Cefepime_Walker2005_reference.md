@@ -21,8 +21,7 @@
 Walker P et al., Subcutaneous administration of cefepime, Journal of pain and symptom… (2005)
   ·  DOI: [10.1016/j.jpainsymman.2005.03.007](https://doi.org/10.1016/j.jpainsymman.2005.03.007)
 
-## Model component
-<dbs-pgx drug="cefepime" model-id="Cefepime_Walker2005_reference" status="rejected" stale="false" population="healthy adult volunteers" measured-compound="cefepime" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="cefepime" model-id="Cefepime_Walker2005_reference" status="rejected" stale="false" population="healthy adult volunteers" measured-compound="cefepime" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Marques L et al., Improving Individualized Salbutamol Tre…, Pharmaceutics (2024)
   ·  DOI: [10.3390/pharmaceutics17010039](https://doi.org/10.3390/pharmaceutics17010039)
 
-## Model component
-<dbs-pgx drug="salbutamol" model-id="Salbutamol_Marques2024_estimate" status="needs_review" stale="true" population="virtual patients aged 5-65 years (PBPK-derived), healthy and cirrhosis A" measured-compound="salbutamol" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="salbutamol" model-id="Salbutamol_Marques2024_estimate" status="needs_review" stale="true" population="virtual patients aged 5-65 years (PBPK-derived), healthy and cirrhosis A" measured-compound="salbutamol" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment; no model was built for this record.  
 **Parameters:** 7 extracted.

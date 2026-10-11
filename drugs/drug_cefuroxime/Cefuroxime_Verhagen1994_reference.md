@@ -21,8 +21,7 @@
 Verhagen CA et al., The renal clearance of cefuroxime and c…, British journal of clinical… (1994)
   ·  DOI: [10.1111/j.1365-2125.1994.tb04260.x](https://doi.org/10.1111/j.1365-2125.1994.tb04260.x)
 
-## Model component
-<dbs-pgx drug="cefuroxime" model-id="Cefuroxime_Verhagen1994_reference" status="rejected" stale="false" population="healthy adults" measured-compound="cefuroxime" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="cefuroxime" model-id="Cefuroxime_Verhagen1994_reference" status="rejected" stale="false" population="healthy adults" measured-compound="cefuroxime" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

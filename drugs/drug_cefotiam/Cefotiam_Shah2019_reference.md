@@ -21,8 +21,7 @@
 Shah NR et al., Novel Population Pharmacokinetic Approa…, Pharmaceutics (2019)
   ·  DOI: [10.3390/pharmaceutics11060286](https://doi.org/10.3390/pharmaceutics11060286)
 
-## Model component
-<dbs-pgx drug="cefotiam" model-id="Cefotiam_Shah2019_reference" status="extracted" stale="false" population="patients with cystic fibrosis and healthy volunteers" measured-compound="cefotiam" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="cefotiam" model-id="Cefotiam_Shah2019_reference" status="extracted" stale="false" population="patients with cystic fibrosis and healthy volunteers" measured-compound="cefotiam" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameters:** 2 extracted, plus 1 covariate effect.

@@ -21,8 +21,7 @@
 Merchant NM et al., Pharmacokinetics of melatonin in preter…, British journal of clinical… (2013)
   ·  DOI: [10.1111/bcp.12092](https://doi.org/10.1111/bcp.12092)
 
-## Model component
-<dbs-pgx drug="melatonin" model-id="Melatonin_Merchant2013_reference" status="extracted" stale="false" population="preterm infants" measured-compound="melatonin" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="melatonin" model-id="Melatonin_Merchant2013_reference" status="extracted" stale="false" population="preterm infants" measured-compound="melatonin" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameters:** 4 extracted.

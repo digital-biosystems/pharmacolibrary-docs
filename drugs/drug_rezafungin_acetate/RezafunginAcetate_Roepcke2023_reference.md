@@ -21,8 +21,7 @@
 Roepcke S et al., Population pharmacokinetic modeling and…, Antimicrobial agents and ch… (2023)
   ·  DOI: [10.1128/aac.00916-23](https://doi.org/10.1128/aac.00916-23)
 
-## Model component
-<dbs-pgx drug="rezafungin acetate" model-id="RezafunginAcetate_Roepcke2023_reference" status="extracted" stale="false" population="healthy volunteers and patients with candidemia/invasive candidiasis" measured-compound="rezafungin" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="rezafungin acetate" model-id="RezafunginAcetate_Roepcke2023_reference" status="extracted" stale="false" population="healthy volunteers and patients with candidemia/invasive candidiasis" measured-compound="rezafungin" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameters:** 4 extracted, plus 6 covariate effects.

@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on paramet
 Latif R et al., New small molecule agonists to the thyr…, Thyroid : official journal… (2015)
   ·  DOI: [10.1089/thy.2014.0119](https://doi.org/10.1089/thy.2014.0119)
 
-## Model component
-<dbs-pgx drug="Levothyroxine" model-id="Levothyroxine_Latif2015_reference" status="extracted" stale="true" population="" measured-compound="" parameterization="" topology=""></dbs-pgx>
+<div class="pk-model-meta" hidden drug="Levothyroxine" model-id="Levothyroxine_Latif2015_reference" status="extracted" stale="true" population="" measured-compound="" parameterization="" topology=""></div>
 
 **Model structure:** —; no model was built for this record.  
 **Parameters:** 0 extracted.

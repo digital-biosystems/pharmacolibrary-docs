@@ -24,8 +24,7 @@
 Mestorino N et al., Pharmacokinetic disposition of triclabe…, Veterinary research communi… (2008)
   ·  DOI: [10.1007/s11259-007-9000-3](https://doi.org/10.1007/s11259-007-9000-3)
 
-## Model component
-<dbs-pgx drug="triclabendazole" model-id="Triclabendazole_Mestorino2008_calves" status="needs_review" stale="false" population="female calves and female sheep" measured-compound="triclabendazole sulfoxide" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="triclabendazole" model-id="Triclabendazole_Mestorino2008_calves" status="needs_review" stale="false" population="female calves and female sheep" measured-compound="triclabendazole sulfoxide" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 7 extracted.

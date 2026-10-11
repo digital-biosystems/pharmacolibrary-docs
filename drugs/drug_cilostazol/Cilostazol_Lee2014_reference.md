@@ -28,8 +28,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Lee D et al., Population pharmacokinetic analysis of…, Therapeutic drug monitoring (2014)
   ·  DOI: [10.1097/FTD.0000000000000077](https://doi.org/10.1097/FTD.0000000000000077)
 
-## Model component
-<dbs-pgx drug="cilostazol" model-id="Cilostazol_Lee2014_reference" status="rejected" stale="false" population="healthy volunteers" measured-compound="cilostazol" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="cilostazol" model-id="Cilostazol_Lee2014_reference" status="rejected" stale="false" population="healthy volunteers" measured-compound="cilostazol" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 1 extracted.

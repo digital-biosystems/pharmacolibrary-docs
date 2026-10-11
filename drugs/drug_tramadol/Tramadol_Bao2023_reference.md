@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on paramet
 Bao SS et al., Effect of apatinib on the pharmacokinet…, PeerJ (2023)
   ·  DOI: [10.7717/peerj.16051](https://doi.org/10.7717/peerj.16051)
 
-## Model component
-<dbs-pgx drug="tramadol" model-id="Tramadol_Bao2023_reference" status="needs_review" stale="false" population="" measured-compound="tramadol" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="tramadol" model-id="Tramadol_Bao2023_reference" status="needs_review" stale="false" population="" measured-compound="tramadol" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 2 extracted.

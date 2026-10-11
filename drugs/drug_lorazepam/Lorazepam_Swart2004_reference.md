@@ -21,8 +21,7 @@
 Swart EL et al., Comparative population pharmacokinetics…, British journal of clinical… (2004)
   ·  DOI: [10.1046/j.1365-2125.2003.01957.x](https://doi.org/10.1046/j.1365-2125.2003.01957.x)
 
-## Model component
-<dbs-pgx drug="lorazepam" model-id="Lorazepam_Swart2004_reference" status="needs_review" stale="false" population="critically ill mechanically ventilated patients" measured-compound="lorazepam" parameterization="mechanistic" topology="parent_metabolite"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="lorazepam" model-id="Lorazepam_Swart2004_reference" status="needs_review" stale="false" population="critically ill mechanically ventilated patients" measured-compound="lorazepam" parameterization="mechanistic" topology="parent_metabolite"></div>
 
 **Model structure:** parent + metabolite; no model was built for this record.  
 **Parameters:** 6 extracted.

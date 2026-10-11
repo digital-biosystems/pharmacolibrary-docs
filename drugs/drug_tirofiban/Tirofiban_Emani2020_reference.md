@@ -28,8 +28,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Emani S et al., Platelet Inhibition With IV Glycoprotei…, Pediatric critical care med… (2020)
   ·  DOI: [10.1097/PCC.0000000000002292](https://doi.org/10.1097/PCC.0000000000002292)
 
-## Model component
-<dbs-pgx drug="tirofiban" model-id="Tirofiban_Emani2020_reference" status="rejected" stale="false" population="pediatric patients undergoing aortopulmonary shunting" measured-compound="tirofiban" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="tirofiban" model-id="Tirofiban_Emani2020_reference" status="rejected" stale="false" population="pediatric patients undergoing aortopulmonary shunting" measured-compound="tirofiban" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 2 extracted.

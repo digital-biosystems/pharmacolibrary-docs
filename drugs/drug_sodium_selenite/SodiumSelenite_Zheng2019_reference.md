@@ -32,8 +32,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Zheng S et al., Pharmacokinetics of Sodium Selenite Adm…, Biological trace element re… (2019)
   ·  DOI: [10.1007/s12011-018-1567-8](https://doi.org/10.1007/s12011-018-1567-8)
 
-## Model component
-<dbs-pgx drug="sodium selenite" model-id="SodiumSelenite_Zheng2019_reference" status="rejected" stale="true" population="selenium-deficient ducklings" measured-compound="sodium selenite" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="sodium selenite" model-id="SodiumSelenite_Zheng2019_reference" status="rejected" stale="true" population="selenium-deficient ducklings" measured-compound="sodium selenite" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 3 extracted.

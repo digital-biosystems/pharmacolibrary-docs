@@ -21,8 +21,7 @@
 Simpson JA et al., Population pharmacokinetics of mefloqui…, Clinical pharmacology and t… (1999)
   ·  DOI: [10.1016/S0009-9236(99)70010-X](https://doi.org/10.1016/S0009-9236(99)70010-X)
 
-## Model component
-<dbs-pgx drug="mefloquine" model-id="Mefloquine_Simpson1999_reference" status="rejected" stale="false" population="patients with acute falciparum malaria" measured-compound="mefloquine" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="mefloquine" model-id="Mefloquine_Simpson1999_reference" status="rejected" stale="false" population="patients with acute falciparum malaria" measured-compound="mefloquine" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 6 extracted.

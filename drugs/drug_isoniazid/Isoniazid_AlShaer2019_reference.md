@@ -21,8 +21,7 @@
 Al-Shaer MH et al., Fluoroquinolones in Drug-Resistant Tube…, Antimicrobial agents and ch… (2019)
   ·  DOI: [10.1128/AAC.00279-19](https://doi.org/10.1128/AAC.00279-19)
 
-## Model component
-<dbs-pgx drug="isoniazid" model-id="Isoniazid_AlShaer2019_reference" status="extracted" stale="false" population="" measured-compound="isoniazid" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="isoniazid" model-id="Isoniazid_AlShaer2019_reference" status="extracted" stale="false" population="" measured-compound="isoniazid" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 3 extracted.

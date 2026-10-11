@@ -21,8 +21,7 @@
 Bustinduy AL et al., Population Pharmacokinetics and Pharmac…, mBio (2016)
   ·  DOI: [10.1128/mBio.00227-16](https://doi.org/10.1128/mBio.00227-16)
 
-## Model component
-<dbs-pgx drug="praziquantel" model-id="Praziquantel_Bustinduy2016_s_pzq" status="rejected" stale="false" population="Ugandan children with intestinal schistosomiasis" measured-compound="praziquantel" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="praziquantel" model-id="Praziquantel_Bustinduy2016_s_pzq" status="rejected" stale="false" population="Ugandan children with intestinal schistosomiasis" measured-compound="praziquantel" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 4 extracted.

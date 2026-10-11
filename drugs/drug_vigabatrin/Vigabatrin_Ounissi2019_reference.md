@@ -21,8 +21,7 @@
 Ounissi M et al., Proposition of a Minimal Effective Dose…, Journal of clinical pharmac… (2019)
   ·  DOI: [10.1002/jcph.1309](https://doi.org/10.1002/jcph.1309)
 
-## Model component
-<dbs-pgx drug="vigabatrin" model-id="Vigabatrin_Ounissi2019_reference" status="extracted" stale="false" population="children with infantile spasms" measured-compound="vigabatrin" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="vigabatrin" model-id="Vigabatrin_Ounissi2019_reference" status="extracted" stale="false" population="children with infantile spasms" measured-compound="vigabatrin" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 2 extracted.

@@ -20,8 +20,7 @@
 Majid O et al., Population pharmacokinetics and exposur…, CPT: pharmacometrics & syst… (2024)
   ·  DOI: [10.1002/psp4.13224](https://doi.org/10.1002/psp4.13224)
 
-## Model component
-<dbs-pgx drug="lecanemab" model-id="Lecanemab_Majid2024_reference" status="needs_review" stale="false" population="subjects with early Alzheimer&#39;s disease (MCI or mild dementia)" measured-compound="lecanemab" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="lecanemab" model-id="Lecanemab_Majid2024_reference" status="needs_review" stale="false" population="subjects with early Alzheimer&#39;s disease (MCI or mild dementia)" measured-compound="lecanemab" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment; no model was built for this record.  
 **Parameters:** 6 extracted, plus 6 covariate effects.

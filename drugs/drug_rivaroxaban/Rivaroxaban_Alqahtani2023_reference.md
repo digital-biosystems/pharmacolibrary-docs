@@ -29,8 +29,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Alqahtani S et al., Population Pharmacokinetics of Rivaroxa…, Journal of clinical pharmac… (2023)
   ·  DOI: [10.1002/jcph.2255](https://doi.org/10.1002/jcph.2255)
 
-## Model component
-<dbs-pgx drug="rivaroxaban" model-id="Rivaroxaban_Alqahtani2023_reference" status="rejected" stale="false" population="real-world patients" measured-compound="rivaroxaban" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="rivaroxaban" model-id="Rivaroxaban_Alqahtani2023_reference" status="rejected" stale="false" population="real-world patients" measured-compound="rivaroxaban" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

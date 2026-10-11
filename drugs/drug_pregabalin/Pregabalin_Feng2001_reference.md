@@ -33,8 +33,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the val
 Feng MR et al., Brain microdialysis and PK/PD correlati…, European journal of drug me… (2001)
   ·  DOI: [10.1007/BF03190385](https://doi.org/10.1007/BF03190385)
 
-## Model component
-<dbs-pgx drug="pregabalin" model-id="Pregabalin_Feng2001_reference" status="rejected" stale="true" population="rats" measured-compound="pregabalin" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="pregabalin" model-id="Pregabalin_Feng2001_reference" status="rejected" stale="true" population="rats" measured-compound="pregabalin" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

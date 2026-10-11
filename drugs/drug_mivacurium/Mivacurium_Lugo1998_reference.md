@@ -22,8 +22,7 @@
 Lugo SI et al., Pharmacokinetics and pharmacodynamics o…, Biopharmaceutics & drug dis… (1998)
   ·  DOI: [10.1002/(sici)1099-081x(1998110)19:8<485::aid-bdd131>3.0.co;2-g](https://doi.org/10.1002/(sici)1099-081x(1998110)19:8<485::aid-bdd131>3.0.co;2-g)
 
-## Model component
-<dbs-pgx drug="Mivacurium" model-id="Mivacurium_Lugo1998_reference" status="rejected" stale="false" population="beagle dogs" measured-compound="mivacurium" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="Mivacurium" model-id="Mivacurium_Lugo1998_reference" status="rejected" stale="false" population="beagle dogs" measured-compound="mivacurium" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

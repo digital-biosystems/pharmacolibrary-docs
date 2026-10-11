@@ -12,8 +12,7 @@
 Patel O; Muller CJF; Joubert E; Rosenkranz B; Taylor MJC; Louw J; et al. et al. (2019). Frontiers in pharmacology 10
   ·  DOI: [10.3389/fphar.2019.01243](https://doi.org/10.3389/fphar.2019.01243)
 
-## Model component
-<dbs-pgx drug="metformin" model-id="Metformin_Patel2019_ator_grt" status="rejected" stale="false" population="Wistar rats" measured-compound="metformin" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="metformin" model-id="Metformin_Patel2019_ator_grt" status="rejected" stale="false" population="Wistar rats" measured-compound="metformin" parameterization="mechanistic" topology="1C"></div>
 
 **Parameterization:** mechanistic.
 

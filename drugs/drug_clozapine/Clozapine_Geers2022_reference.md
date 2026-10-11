@@ -31,8 +31,7 @@ Independently confirmed by `gpt-oss:120b`.
 Geers LM et al., Population pharmacokinetic model and li…, Therapeutic advances in psy… (2022)
   ·  DOI: [10.1177/20451253211065857](https://doi.org/10.1177/20451253211065857)
 
-## Model component
-<dbs-pgx drug="clozapine" model-id="Clozapine_Geers2022_reference" status="extracted" stale="true" population="schizophrenia patients on clozapine" measured-compound="clozapine" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="clozapine" model-id="Clozapine_Geers2022_reference" status="extracted" stale="true" population="schizophrenia patients on clozapine" measured-compound="clozapine" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 4 extracted.

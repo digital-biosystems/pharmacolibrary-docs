@@ -33,8 +33,7 @@ Independently confirmed by `gpt-oss:120b`.
 Ansari JR et al., Bioequivalence and Pharmacokinetics of…, Anesthesiology (2025)
   ·  DOI: [10.1097/ALN.0000000000005248](https://doi.org/10.1097/ALN.0000000000005248)
 
-## Model component
-<dbs-pgx drug="calcium chloride" model-id="CalciumChloride_Ansari2025_reference" status="rejected" stale="true" population="parturients undergoing cesarean delivery" measured-compound="ionized calcium" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="calcium chloride" model-id="CalciumChloride_Ansari2025_reference" status="rejected" stale="true" population="parturients undergoing cesarean delivery" measured-compound="ionized calcium" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment; no model was built for this record.  
 **Parameters:** 3 extracted.

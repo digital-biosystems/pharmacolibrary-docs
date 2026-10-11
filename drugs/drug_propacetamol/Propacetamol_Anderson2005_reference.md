@@ -33,8 +33,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the lin
 Anderson BJ et al., Pediatric intravenous paracetamol (prop…, Paediatric anaesthesia (2005)
   ·  DOI: [10.1111/j.1460-9592.2005.01455.x](https://doi.org/10.1111/j.1460-9592.2005.01455.x)
 
-## Model component
-<dbs-pgx drug="propacetamol" model-id="Propacetamol_Anderson2005_reference" status="rejected" stale="true" population="children" measured-compound="paracetamol" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="propacetamol" model-id="Propacetamol_Anderson2005_reference" status="rejected" stale="true" population="children" measured-compound="paracetamol" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

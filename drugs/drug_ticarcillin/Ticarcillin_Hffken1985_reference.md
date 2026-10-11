@@ -21,8 +21,7 @@
 Höffken G et al., Pharmacokinetics and serum bactericidal…, The Journal of antimicrobia… (1985)
   ·  DOI: [10.1093/jac/16.6.763](https://doi.org/10.1093/jac/16.6.763)
 
-## Model component
-<dbs-pgx drug="ticarcillin" model-id="Ticarcillin_Hffken1985_reference" status="needs_review" stale="false" population="healthy volunteers" measured-compound="ticarcillin" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="ticarcillin" model-id="Ticarcillin_Hffken1985_reference" status="needs_review" stale="false" population="healthy volunteers" measured-compound="ticarcillin" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 3 extracted.

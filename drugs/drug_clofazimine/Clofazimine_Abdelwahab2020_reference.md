@@ -21,8 +21,7 @@
 Abdelwahab MT et al., Clofazimine pharmacokinetics in patient…, The Journal of antimicrobia… (2020)
   ·  DOI: [10.1093/jac/dkaa310](https://doi.org/10.1093/jac/dkaa310)
 
-## Model component
-<dbs-pgx drug="clofazimine" model-id="Clofazimine_Abdelwahab2020_reference" status="rejected" stale="false" population="adults with drug-resistant TB" measured-compound="clofazimine" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="clofazimine" model-id="Clofazimine_Abdelwahab2020_reference" status="rejected" stale="false" population="adults with drug-resistant TB" measured-compound="clofazimine" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

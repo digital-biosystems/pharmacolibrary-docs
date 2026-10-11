@@ -23,8 +23,7 @@
 von Kleist M et al., Pharmacokinetic-pharmacodynamic relatio…, European journal of pharmac… (2009)
   ·  DOI: [10.1016/j.ejps.2008.12.010](https://doi.org/10.1016/j.ejps.2008.12.010)
 
-## Model component
-<dbs-pgx drug="zidovudine" model-id="Zidovudine_von2009_reference" status="rejected" stale="false" population="HIV-infected patients" measured-compound="zidovudine (AZT)" parameterization="mechanistic" topology="general_linear"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="zidovudine" model-id="Zidovudine_von2009_reference" status="rejected" stale="false" population="HIV-infected patients" measured-compound="zidovudine (AZT)" parameterization="mechanistic" topology="general_linear"></div>
 
 **Model structure:** general linear; no model was built for this record.  
 **Parameters:** 6 extracted, plus 3 covariate effects.

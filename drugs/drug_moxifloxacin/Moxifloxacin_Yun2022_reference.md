@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on `parame
 Yun HY et al., Model-Based Efficacy and Toxicity Compa…, Open forum infectious disea… (2022)
   ·  DOI: [10.1093/ofid/ofab660](https://doi.org/10.1093/ofid/ofab660)
 
-## Model component
-<dbs-pgx drug="moxifloxacin" model-id="Moxifloxacin_Yun2022_reference" status="extracted" stale="true" population="adults with multidrug-resistant tuberculosis" measured-compound="moxifloxacin" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="moxifloxacin" model-id="Moxifloxacin_Yun2022_reference" status="extracted" stale="true" population="adults with multidrug-resistant tuberculosis" measured-compound="moxifloxacin" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment, oral mammillary model — template `PK_2C_enteral`.  
 **Parameters:** 6 extracted, plus 1 covariate effect.

@@ -21,8 +21,7 @@
 Li S et al., Population pharmacokinetics and dosing…, Epilepsia (2024)
   ·  DOI: [10.1111/epi.17954](https://doi.org/10.1111/epi.17954)
 
-## Model component
-<dbs-pgx drug="perampanel" model-id="Perampanel_Li2024_reference" status="rejected" stale="false" population="children with epilepsy" measured-compound="perampanel" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="perampanel" model-id="Perampanel_Li2024_reference" status="rejected" stale="false" population="children with epilepsy" measured-compound="perampanel" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

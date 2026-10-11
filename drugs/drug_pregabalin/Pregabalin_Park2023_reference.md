@@ -29,8 +29,7 @@ The paper reports no distribution volume and no clearance or elimination rate; i
 Park M et al., Pharmacokinetic properties of a new sus…, Translational and clinical… (2023)
   ·  DOI: [10.12793/tcp.2023.31.e20](https://doi.org/10.12793/tcp.2023.31.e20)
 
-## Model component
-<dbs-pgx drug="pregabalin" model-id="Pregabalin_Park2023_reference" status="rejected" stale="true" population="adults with reduced renal function" measured-compound="pregabalin" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="pregabalin" model-id="Pregabalin_Park2023_reference" status="rejected" stale="true" population="adults with reduced renal function" measured-compound="pregabalin" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

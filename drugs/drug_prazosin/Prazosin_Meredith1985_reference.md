@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Meredith PA et al., Application of pharmacokinetic-pharmaco…, Journal of cardiovascular p… (1985)
   ·  DOI: [10.1097/00005344-198505000-00019](https://doi.org/10.1097/00005344-198505000-00019)
 
-## Model component
-<dbs-pgx drug="prazosin" model-id="Prazosin_Meredith1985_reference" status="needs_review" stale="true" population="normotensive volunteers" measured-compound="prazosin" parameterization="mechanistic" topology="parent_metabolite"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="prazosin" model-id="Prazosin_Meredith1985_reference" status="needs_review" stale="true" population="normotensive volunteers" measured-compound="prazosin" parameterization="mechanistic" topology="parent_metabolite"></div>
 
 **Model structure:** parent + metabolite; no model was built for this record.  
 **Parameters:** 2 extracted.

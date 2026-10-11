@@ -21,8 +21,7 @@
 Zhang C; Jiang L; Hu K; Chen L; Zhang YJ; Shi HZ; He SM; Chen X; Wang DD et al. (2024). Neuropsychiatric disease and treatment 20
   ·  DOI: [10.2147/ndt.s455183](https://doi.org/10.2147/ndt.s455183)
 
-## Model component
-<dbs-pgx drug="clopidogrel" model-id="Clopidogrel_Zhang2024_reference" status="extracted" stale="true" population="" measured-compound="clopidogrel" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="clopidogrel" model-id="Clopidogrel_Zhang2024_reference" status="extracted" stale="true" population="" measured-compound="clopidogrel" parameterization="apparent" topology="1C"></div>
 
 **Parameterization:** CL/F, V/F — apparent, F unknown (apparent — bioavailability not identifiable).
 

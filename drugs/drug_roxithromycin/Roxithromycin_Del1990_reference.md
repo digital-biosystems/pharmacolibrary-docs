@@ -20,8 +20,7 @@
 Del Tacca M et al., Roxithromycin penetration into gingiva…, Chemotherapy (1990)
   ·  DOI: [10.1159/000238785](https://doi.org/10.1159/000238785)
 
-## Model component
-<dbs-pgx drug="roxithromycin" model-id="Roxithromycin_Del1990_reference" status="rejected" stale="false" population="odontoiatric patients" measured-compound="roxithromycin" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="roxithromycin" model-id="Roxithromycin_Del1990_reference" status="rejected" stale="false" population="odontoiatric patients" measured-compound="roxithromycin" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

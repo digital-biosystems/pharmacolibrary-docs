@@ -20,8 +20,7 @@
 ## Citation
 Dagrosa EE et al., Dose linearity and other pharmacokineti…, Clinical therapeutics (1987)
 
-## Model component
-<dbs-pgx drug="cefodizime" model-id="Cefodizime_Dagrosa1987_reference" status="needs_review" stale="false" population="healthy adult males" measured-compound="cefodizime" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="cefodizime" model-id="Cefodizime_Dagrosa1987_reference" status="needs_review" stale="false" population="healthy adult males" measured-compound="cefodizime" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 5 extracted.

@@ -23,8 +23,7 @@
 Kosarek CE et al., Phase I evaluation of low-dose suramin…, Journal of veterinary inter… (2006)
   ·  DOI: [10.1892/0891-6640(2006)20[1172:pieols]2.0.co;2](https://doi.org/10.1892/0891-6640(2006)20[1172:pieols]2.0.co;2)
 
-## Model component
-<dbs-pgx drug="Suramin" model-id="Suramin_Kosarek2006_reference" status="extracted" stale="false" population="dogs with naturally occurring cancers" measured-compound="suramin" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="Suramin" model-id="Suramin_Kosarek2006_reference" status="extracted" stale="false" population="dogs with naturally occurring cancers" measured-compound="suramin" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameters:** 2 extracted.

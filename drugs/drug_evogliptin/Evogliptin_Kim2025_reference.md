@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Kim B et al., Population pharmacokinetic and pharmaco…, CPT: pharmacometrics & syst… (2025)
   ·  DOI: [10.1002/psp4.13263](https://doi.org/10.1002/psp4.13263)
 
-## Model component
-<dbs-pgx drug="evogliptin" model-id="Evogliptin_Kim2025_reference" status="accepted_with_caveats" stale="false" population="patients with varying degrees of renal disease and healthy subjects" measured-compound="evogliptin" parameterization="apparent" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="evogliptin" model-id="Evogliptin_Kim2025_reference" status="accepted_with_caveats" stale="false" population="patients with varying degrees of renal disease and healthy subjects" measured-compound="evogliptin" parameterization="apparent" topology="2C"></div>
 
 **Model structure:** 2-compartment, oral mammillary model — template `PK_2C_enteral`.  
 **Parameters:** 6 extracted, plus 4 covariate effects.

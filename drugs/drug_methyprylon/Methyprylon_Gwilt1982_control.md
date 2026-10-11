@@ -23,8 +23,7 @@
 Gwilt PR et al., The effect of oral castor oil on the di…, Canadian Anaesthetists' Soc… (1982)
   ·  DOI: [10.1007/BF03007530](https://doi.org/10.1007/BF03007530)
 
-## Model component
-<dbs-pgx drug="methyprylon" model-id="Methyprylon_Gwilt1982_control" status="rejected" stale="false" population="intoxicated beagle dogs" measured-compound="methyprylon" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="methyprylon" model-id="Methyprylon_Gwilt1982_control" status="rejected" stale="false" population="intoxicated beagle dogs" measured-compound="methyprylon" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment; no model was built for this record.  
 **Parameters:** 9 extracted.

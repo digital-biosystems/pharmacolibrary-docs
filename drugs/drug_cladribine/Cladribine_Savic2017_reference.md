@@ -29,8 +29,7 @@ The record carries both a bioavailability fraction (Fab 0.456) and F-adjusted ap
 Savic RM et al., Population Pharmacokinetics of Cladribi…, Clinical pharmacokinetics (2017)
   ·  DOI: [10.1007/s40262-017-0516-6](https://doi.org/10.1007/s40262-017-0516-6)
 
-## Model component
-<dbs-pgx drug="cladribine" model-id="Cladribine_Savic2017_reference" status="rejected" stale="true" population="adults with multiple sclerosis" measured-compound="cladribine" parameterization="apparent" topology="parent_metabolite"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="cladribine" model-id="Cladribine_Savic2017_reference" status="rejected" stale="true" population="adults with multiple sclerosis" measured-compound="cladribine" parameterization="apparent" topology="parent_metabolite"></div>
 
 **Model structure:** parent + metabolite; no model was built for this record.  
 **Parameters:** 14 extracted, plus 1 covariate effect.

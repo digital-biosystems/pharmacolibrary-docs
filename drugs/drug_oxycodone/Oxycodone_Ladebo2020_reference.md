@@ -29,8 +29,7 @@ A volume and a clearance/elimination estimate from this paper are needed to buil
 Ladebo L et al., Population pharmacokinetic-pharmacodyna…, Basic & clinical pharmacolo… (2020)
   ·  DOI: [10.1111/bcpt.13330](https://doi.org/10.1111/bcpt.13330)
 
-## Model component
-<dbs-pgx drug="oxycodone" model-id="Oxycodone_Ladebo2020_reference" status="rejected" stale="true" population="healthy volunteers" measured-compound="oxycodone" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="oxycodone" model-id="Oxycodone_Ladebo2020_reference" status="rejected" stale="true" population="healthy volunteers" measured-compound="oxycodone" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 6 extracted.

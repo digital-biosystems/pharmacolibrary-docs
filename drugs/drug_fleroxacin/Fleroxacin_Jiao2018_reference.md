@@ -20,8 +20,7 @@
 Jiao Y et al., First population pharmacokinetic analys…, European journal of pharmac… (2018)
   ·  DOI: [10.1016/j.ejps.2018.07.054](https://doi.org/10.1016/j.ejps.2018.07.054)
 
-## Model component
-<dbs-pgx drug="fleroxacin" model-id="Fleroxacin_Jiao2018_reference" status="rejected" stale="false" population="adults with cystic fibrosis and healthy adults" measured-compound="fleroxacin" parameterization="mechanistic" topology="general_linear"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="fleroxacin" model-id="Fleroxacin_Jiao2018_reference" status="rejected" stale="false" population="adults with cystic fibrosis and healthy adults" measured-compound="fleroxacin" parameterization="mechanistic" topology="general_linear"></div>
 
 **Model structure:** general linear; no model was built for this record.  
 **Parameters:** 2 extracted.

@@ -29,8 +29,7 @@ The source review does not report specific estimates for the absorption rate con
 Greenberg RG et al., Population Pharmacokinetics of Moxiflox…, Paediatric drugs (2022)
   ·  DOI: [10.1007/s40272-022-00493-3](https://doi.org/10.1007/s40272-022-00493-3)
 
-## Model component
-<dbs-pgx drug="didanosine" model-id="Didanosine_Greenberg2022_reference" status="extracted" stale="true" population="" measured-compound="didanosine" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="didanosine" model-id="Didanosine_Greenberg2022_reference" status="extracted" stale="true" population="" measured-compound="didanosine" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameters:** 2 extracted.

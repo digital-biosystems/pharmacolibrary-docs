@@ -29,8 +29,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Gatti G et al., Population pharmacokinetics of rifabuti…, Antimicrobial agents and ch… (1998)
   ·  DOI: [10.1128/AAC.42.8.2017](https://doi.org/10.1128/AAC.42.8.2017)
 
-## Model component
-<dbs-pgx drug="rifabutin" model-id="Rifabutin_Gatti1998_reference" status="needs_review" stale="false" population="HIV-infected patients" measured-compound="rifabutin" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="rifabutin" model-id="Rifabutin_Gatti1998_reference" status="needs_review" stale="false" population="HIV-infected patients" measured-compound="rifabutin" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment; no model was built for this record.  
 **Parameters:** 5 extracted.

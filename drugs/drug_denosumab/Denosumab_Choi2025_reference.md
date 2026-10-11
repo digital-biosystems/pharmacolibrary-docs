@@ -21,8 +21,7 @@
 Choi S et al., Population pharmacokinetics/pharmacodyn…, Frontiers in pharmacology (2025)
   ·  DOI: [10.3389/fphar.2025.1631034](https://doi.org/10.3389/fphar.2025.1631034)
 
-## Model component
-<dbs-pgx drug="denosumab" model-id="Denosumab_Choi2025_reference" status="needs_review" stale="false" population="healthy adults and postmenopausal women with osteoporosis" measured-compound="denosumab" parameterization="apparent" topology="3C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="denosumab" model-id="Denosumab_Choi2025_reference" status="needs_review" stale="false" population="healthy adults and postmenopausal women with osteoporosis" measured-compound="denosumab" parameterization="apparent" topology="3C"></div>
 
 **Model structure:** 3-compartment; no model was built for this record.  
 **Parameters:** 6 extracted, plus 3 covariate effects.

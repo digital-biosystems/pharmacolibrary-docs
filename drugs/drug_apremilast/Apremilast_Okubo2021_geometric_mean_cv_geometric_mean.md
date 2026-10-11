@@ -21,8 +21,7 @@
 Okubo Y et al., Population pharmacokinetic and exposure…, The Journal of dermatology (2021)
   ·  DOI: [10.1111/1346-8138.16068](https://doi.org/10.1111/1346-8138.16068)
 
-## Model component
-<dbs-pgx drug="apremilast" model-id="Apremilast_Okubo2021_geometric_mean_cv_geometric_mean" status="rejected" stale="false" population="subjects with moderate to severe psoriasis" measured-compound="apremilast" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="apremilast" model-id="Apremilast_Okubo2021_geometric_mean_cv_geometric_mean" status="rejected" stale="false" population="subjects with moderate to severe psoriasis" measured-compound="apremilast" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 4 extracted.

@@ -21,8 +21,7 @@
 ## Citation
 Wang JD et al., [Pharmacokinetics of photosensitizer m-…, Zhonghua wai ke za zhi [Chi… (2011)
 
-## Model component
-<dbs-pgx drug="temoporfin" model-id="Temoporfin_Wang2011_reference" status="rejected" stale="false" population="rats with liver cancer" measured-compound="m-THPC" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="temoporfin" model-id="Temoporfin_Wang2011_reference" status="rejected" stale="false" population="rats with liver cancer" measured-compound="m-THPC" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

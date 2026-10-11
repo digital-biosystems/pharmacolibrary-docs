@@ -21,8 +21,7 @@
 Dave N et al., Model-Informed Dosing of Venetoclax in…, Clinical and translational… (2019)
   ·  DOI: [10.1111/cts.12665](https://doi.org/10.1111/cts.12665)
 
-## Model component
-<dbs-pgx drug="venetoclax" model-id="Venetoclax_Dave2019_reference" status="rejected" stale="false" population="healthy subjects" measured-compound="venetoclax" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="venetoclax" model-id="Venetoclax_Dave2019_reference" status="rejected" stale="false" population="healthy subjects" measured-compound="venetoclax" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 9 extracted, plus 1 covariate effect.

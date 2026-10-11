@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the val
 Mungall DR et al., Population pharmacokinetics of racemic…, Journal of pharmacokinetics… (1985)
   ·  DOI: [10.1007/BF01065653](https://doi.org/10.1007/BF01065653)
 
-## Model component
-<dbs-pgx drug="warfarin" model-id="Warfarin_Mungall1985_reference" status="needs_review" stale="true" population="adult patients" measured-compound="warfarin" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="warfarin" model-id="Warfarin_Mungall1985_reference" status="needs_review" stale="true" population="adult patients" measured-compound="warfarin" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 3 extracted.

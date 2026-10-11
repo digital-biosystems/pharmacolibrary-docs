@@ -31,8 +31,7 @@ A model needs both clearance and volume; without the volume it could only be bui
 Pedersen LE et al., The pharmacokinetics and protein bindin…, Acta pharmacologica et toxi… (1986)
   ·  DOI: [10.1111/j.1600-0773.1986.tb00110.x](https://doi.org/10.1111/j.1600-0773.1986.tb00110.x)
 
-## Model component
-<dbs-pgx drug="disopyramide" model-id="Disopyramide_Pedersen1986_reference" status="needs_review" stale="true" population="pigs" measured-compound="disopyramide" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="disopyramide" model-id="Disopyramide_Pedersen1986_reference" status="needs_review" stale="true" population="pigs" measured-compound="disopyramide" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 2 extracted.

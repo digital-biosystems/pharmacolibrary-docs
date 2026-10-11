@@ -21,8 +21,7 @@
 Gordi T et al., Semi-mechanistic pharmacokinetic/pharma…, British journal of clinical… (2005)
   ·  DOI: [10.1111/j.1365-2125.2005.02508.x](https://doi.org/10.1111/j.1365-2125.2005.02508.x)
 
-## Model component
-<dbs-pgx drug="artemisinin" model-id="Artemisinin_Gordi2005_reference" status="needs_review" stale="false" population="Vietnamese malaria patients" measured-compound="artemisinin" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="artemisinin" model-id="Artemisinin_Gordi2005_reference" status="needs_review" stale="false" population="Vietnamese malaria patients" measured-compound="artemisinin" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 4 extracted.

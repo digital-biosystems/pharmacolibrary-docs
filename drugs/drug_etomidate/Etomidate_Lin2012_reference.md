@@ -21,8 +21,7 @@
 Lin L et al., Population pharmacokinetics of intraven…, Paediatric anaesthesia (2012)
   ·  DOI: [10.1111/j.1460-9592.2011.03696.x](https://doi.org/10.1111/j.1460-9592.2011.03696.x)
 
-## Model component
-<dbs-pgx drug="etomidate" model-id="Etomidate_Lin2012_reference" status="extracted" stale="false" population="children over 6 months of age" measured-compound="etomidate" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="etomidate" model-id="Etomidate_Lin2012_reference" status="extracted" stale="false" population="children over 6 months of age" measured-compound="etomidate" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameters:** 2 extracted.

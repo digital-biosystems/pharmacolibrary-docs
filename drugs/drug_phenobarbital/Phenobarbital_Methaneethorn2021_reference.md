@@ -21,8 +21,7 @@
 Methaneethorn J et al., Pharmacokinetic variability of phenobar…, European journal of clinica… (2021)
   ·  DOI: [10.1007/s00228-020-03011-x](https://doi.org/10.1007/s00228-020-03011-x)
 
-## Model component
-<dbs-pgx drug="phenobarbital" model-id="Phenobarbital_Methaneethorn2021_reference" status="rejected" stale="false" population="mixed (patients and healthy subjects from 18 studies)" measured-compound="phenobarbital" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="phenobarbital" model-id="Phenobarbital_Methaneethorn2021_reference" status="rejected" stale="false" population="mixed (patients and healthy subjects from 18 studies)" measured-compound="phenobarbital" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

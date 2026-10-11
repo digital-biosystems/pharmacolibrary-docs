@@ -23,8 +23,7 @@
 Singh S et al., Eravacycline pharmacokinetics/pharmacod…, Microbiology spectrum (2026)
   ·  DOI: [10.1128/spectrum.03432-25](https://doi.org/10.1128/spectrum.03432-25)
 
-## Model component
-<dbs-pgx drug="eravacycline" model-id="Eravacycline_Singh2026_reference" status="extracted" stale="false" population="virtual patients (M. abscessus lung disease)" measured-compound="eravacycline" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="eravacycline" model-id="Eravacycline_Singh2026_reference" status="extracted" stale="false" population="virtual patients (M. abscessus lung disease)" measured-compound="eravacycline" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment, IV mammillary model — template `PK_2C`.  
 **Parameters:** 5 extracted.

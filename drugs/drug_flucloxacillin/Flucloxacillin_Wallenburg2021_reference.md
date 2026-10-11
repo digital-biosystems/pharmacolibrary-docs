@@ -30,8 +30,7 @@ Independently confirmed by `gpt-oss:120b`.
 Wallenburg E et al., High unbound flucloxacillin fraction in…, The Journal of antimicrobia… (2021)
   ·  DOI: [10.1093/jac/dkab314](https://doi.org/10.1093/jac/dkab314)
 
-## Model component
-<dbs-pgx drug="flucloxacillin" model-id="Flucloxacillin_Wallenburg2021_reference" status="rejected" stale="true" population="critically ill patients" measured-compound="flucloxacillin" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="flucloxacillin" model-id="Flucloxacillin_Wallenburg2021_reference" status="rejected" stale="true" population="critically ill patients" measured-compound="flucloxacillin" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

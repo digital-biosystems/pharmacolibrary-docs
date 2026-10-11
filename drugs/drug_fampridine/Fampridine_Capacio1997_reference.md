@@ -23,8 +23,7 @@
 Capacio BR et al., Pharmacokinetics and pharmacodynamics o…, Drug and chemical toxicology (1997)
   ·  DOI: [10.3109/01480549709003876](https://doi.org/10.3109/01480549709003876)
 
-## Model component
-<dbs-pgx drug="fampridine" model-id="Fampridine_Capacio1997_reference" status="rejected" stale="false" population="awake guinea pigs (instrumented and uninstrumented)" measured-compound="4-aminopyridine" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="fampridine" model-id="Fampridine_Capacio1997_reference" status="rejected" stale="false" population="awake guinea pigs (instrumented and uninstrumented)" measured-compound="4-aminopyridine" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

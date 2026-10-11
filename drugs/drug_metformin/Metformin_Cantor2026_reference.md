@@ -25,8 +25,7 @@
 Cantor SL et al., OCT1 Variants Are Associated with Metfo…, medRxiv : the preprint serv… (2026)
   ·  DOI: [10.64898/2026.05.27.26354152](https://doi.org/10.64898/2026.05.27.26354152)
 
-## Model component
-<dbs-pgx drug="metformin" model-id="Metformin_Cantor2026_reference" status="curated_candidate" stale="false" population="youth-onset type 2 diabetes" measured-compound="metformin" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="metformin" model-id="Metformin_Cantor2026_reference" status="curated_candidate" stale="false" population="youth-onset type 2 diabetes" measured-compound="metformin" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 3 extracted.

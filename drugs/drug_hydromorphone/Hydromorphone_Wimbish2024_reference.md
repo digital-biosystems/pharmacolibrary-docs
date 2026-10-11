@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on paramet
 Wimbish C et al., Pharmacokinetics of a continuous intrav…, Frontiers in veterinary sci… (2024)
   ·  DOI: [10.3389/fvets.2024.1362730](https://doi.org/10.3389/fvets.2024.1362730)
 
-## Model component
-<dbs-pgx drug="hydromorphone" model-id="Hydromorphone_Wimbish2024_reference" status="extracted" stale="true" population="healthy Beagle dogs" measured-compound="hydromorphone" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="hydromorphone" model-id="Hydromorphone_Wimbish2024_reference" status="extracted" stale="true" population="healthy Beagle dogs" measured-compound="hydromorphone" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment, IV mammillary model — template `PK_2C`.  
 **Parameters:** 3 extracted.

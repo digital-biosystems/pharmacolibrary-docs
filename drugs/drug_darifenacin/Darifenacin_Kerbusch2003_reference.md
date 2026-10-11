@@ -20,8 +20,7 @@
 Kerbusch T et al., Population pharmacokinetic modelling of…, British journal of clinical… (2003)
   ·  DOI: [10.1046/j.1365-2125.2003.01967.x](https://doi.org/10.1046/j.1365-2125.2003.01967.x)
 
-## Model component
-<dbs-pgx drug="darifenacin" model-id="Darifenacin_Kerbusch2003_reference" status="rejected" stale="false" population="healthy subjects and patients with OAB" measured-compound="darifenacin" parameterization="mechanistic" topology="parent_metabolite"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="darifenacin" model-id="Darifenacin_Kerbusch2003_reference" status="rejected" stale="false" population="healthy subjects and patients with OAB" measured-compound="darifenacin" parameterization="mechanistic" topology="parent_metabolite"></div>
 
 **Model structure:** parent + metabolite; no model was built for this record.  
 **Parameters:** 4 extracted, plus 1 covariate effect.

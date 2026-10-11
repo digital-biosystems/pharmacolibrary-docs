@@ -26,8 +26,7 @@ Independently confirmed by `gpt-oss:120b`.
 Jaisser F et al., The Non-Steroidal Mineralocorticoid Rec…, Frontiers in pharmacology (2021)
   ·  DOI: [10.3389/fphar.2021.604928](https://doi.org/10.3389/fphar.2021.604928)
 
-## Model component
-<dbs-pgx drug="eplerenone" model-id="Eplerenone_Jaisser2021_reference" status="rejected" stale="false" population="uninephrectomized Sprague Dawley rats with mineralocorticoid-induced renal injury" measured-compound="eplerenone" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="eplerenone" model-id="Eplerenone_Jaisser2021_reference" status="rejected" stale="false" population="uninephrectomized Sprague Dawley rats with mineralocorticoid-induced renal injury" measured-compound="eplerenone" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 2 extracted.

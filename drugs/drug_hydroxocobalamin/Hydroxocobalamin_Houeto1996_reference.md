@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the val
 Houeto P et al., Pharmacokinetics of hydroxocobalamin in…, Journal of toxicology. Clin… (1996)
   ·  DOI: [10.3109/15563659609013809](https://doi.org/10.3109/15563659609013809)
 
-## Model component
-<dbs-pgx drug="hydroxocobalamin" model-id="Hydroxocobalamin_Houeto1996_reference" status="extracted" stale="true" population="smoke inhalation victims" measured-compound="hydroxocobalamin" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="hydroxocobalamin" model-id="Hydroxocobalamin_Houeto1996_reference" status="extracted" stale="true" population="smoke inhalation victims" measured-compound="hydroxocobalamin" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 4 extracted.

@@ -21,8 +21,7 @@
 Jeleazcov C et al., Population pharmacokinetic modeling of…, Anesthesiology (2014)
   ·  DOI: [10.1097/ALN.0b013e3182a76d05](https://doi.org/10.1097/ALN.0b013e3182a76d05)
 
-## Model component
-<dbs-pgx drug="hydromorphone" model-id="Hydromorphone_Jeleazcov2014_reference" status="rejected" stale="false" population="cardiac surgery patients" measured-compound="hydromorphone" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="hydromorphone" model-id="Hydromorphone_Jeleazcov2014_reference" status="rejected" stale="false" population="cardiac surgery patients" measured-compound="hydromorphone" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 1 extracted.

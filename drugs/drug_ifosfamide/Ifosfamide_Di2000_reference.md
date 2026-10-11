@@ -21,8 +21,7 @@
 Di Marco MP et al., New insights into the pharmacokinetics…, Pharmaceutical research (2000)
   ·  DOI: [10.1023/a:1007561727948](https://doi.org/10.1023/a:1007561727948)
 
-## Model component
-<dbs-pgx drug="ifosfamide" model-id="Ifosfamide_Di2000_reference" status="rejected" stale="false" population="cancer patients" measured-compound="(R,S)-ifosfamide" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="ifosfamide" model-id="Ifosfamide_Di2000_reference" status="rejected" stale="false" population="cancer patients" measured-compound="(R,S)-ifosfamide" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

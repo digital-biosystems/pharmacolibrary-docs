@@ -23,8 +23,7 @@
 Wasfi IA et al., Comparative disposition of tripelennami…, Journal of veterinary pharm… (2000)
   ·  DOI: [10.1046/j.1365-2885.2000.00261.x](https://doi.org/10.1046/j.1365-2885.2000.00261.x)
 
-## Model component
-<dbs-pgx drug="tripelennamine" model-id="Tripelennamine_Wasfi2000_reference" status="extracted" stale="false" population="horses and camels" measured-compound="tripelennamine" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="tripelennamine" model-id="Tripelennamine_Wasfi2000_reference" status="extracted" stale="false" population="horses and camels" measured-compound="tripelennamine" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameters:** 5 extracted.

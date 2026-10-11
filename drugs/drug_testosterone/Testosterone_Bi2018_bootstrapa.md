@@ -22,8 +22,7 @@
 Bi Y et al., Population Pharmacokinetic/Pharmacodyna…, CPT: pharmacometrics & syst… (2018)
   ·  DOI: [10.1002/psp4.12287](https://doi.org/10.1002/psp4.12287)
 
-## Model component
-<dbs-pgx drug="testosterone" model-id="Testosterone_Bi2018_bootstrapa" status="needs_review" stale="false" population="healthy male subjects" measured-compound="testosterone" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="testosterone" model-id="Testosterone_Bi2018_bootstrapa" status="needs_review" stale="false" population="healthy male subjects" measured-compound="testosterone" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 3 extracted.

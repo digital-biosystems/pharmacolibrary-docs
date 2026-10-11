@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on how the
 Hirai T et al., Population Pharmacokinetic Model of Ami…, Biological & pharmaceutical… (2022)
   ·  DOI: [10.1248/bpb.b21-00940](https://doi.org/10.1248/bpb.b21-00940)
 
-## Model component
-<dbs-pgx drug="amiodarone" model-id="Amiodarone_Hirai2022_reference" status="extracted" stale="true" population="adult patients" measured-compound="amiodarone" parameterization="apparent" topology="parent_metabolite"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="amiodarone" model-id="Amiodarone_Hirai2022_reference" status="extracted" stale="true" population="adult patients" measured-compound="amiodarone" parameterization="apparent" topology="parent_metabolite"></div>
 
 **Model structure:** parent–metabolite model: parent with 1 compartment(s); metabolite N-desethylamiodarone: 1 compartment(s); formed from the central compartment; oral dose — template `PK_3M_9C`.  
 **Parameters:** 6 extracted.

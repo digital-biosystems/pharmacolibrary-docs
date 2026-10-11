@@ -29,8 +29,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the val
 Yadav R et al., Utilizing PK and PD Biomarkers to Guide…, Journal of pharmaceutical s… (2023)
   ·  DOI: [10.1016/j.xphs.2023.07.005](https://doi.org/10.1016/j.xphs.2023.07.005)
 
-## Model component
-<dbs-pgx drug="bleomycin" model-id="Bleomycin_Yadav2023_reference" status="curated_candidate" stale="false" population="" measured-compound="bleomycin" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="bleomycin" model-id="Bleomycin_Yadav2023_reference" status="curated_candidate" stale="false" population="" measured-compound="bleomycin" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameters:** 2 extracted.

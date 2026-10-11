@@ -30,8 +30,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Fabre D et al., Identification of patients with impaire…, Clinical pharmacokinetics (1993)
   ·  DOI: [10.2165/00003088-199324040-00006](https://doi.org/10.2165/00003088-199324040-00006)
 
-## Model component
-<dbs-pgx drug="phenazone" model-id="Phenazone_Fabre1993_reference" status="rejected" stale="true" population="healthy volunteers and patients with chronic liver disease" measured-compound="phenazone" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="phenazone" model-id="Phenazone_Fabre1993_reference" status="rejected" stale="true" population="healthy volunteers and patients with chronic liver disease" measured-compound="phenazone" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

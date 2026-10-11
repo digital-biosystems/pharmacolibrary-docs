@@ -23,8 +23,7 @@
 Fukamatsu M et al., An ordinary differential equation-based…, The Journal of veterinary m… (2026)
   ·  DOI: [10.1292/jvms.26-0177](https://doi.org/10.1292/jvms.26-0177)
 
-## Model component
-<dbs-pgx drug="Potassium" model-id="Potassium_Fukamatsu2026_reference" status="rejected" stale="false" population="" measured-compound="potassium" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="Potassium" model-id="Potassium_Fukamatsu2026_reference" status="rejected" stale="false" population="" measured-compound="potassium" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 3 extracted.

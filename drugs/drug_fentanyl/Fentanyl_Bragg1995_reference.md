@@ -35,8 +35,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Bragg P et al., Opioid pharmacodynamics in neonatal dog…, Journal of applied physiolo… (1995)
   ·  DOI: [10.1152/jappl.1995.79.5.1519](https://doi.org/10.1152/jappl.1995.79.5.1519)
 
-## Model component
-<dbs-pgx drug="fentanyl" model-id="Fentanyl_Bragg1995_reference" status="rejected" stale="true" population="neonatal dogs" measured-compound="fentanyl" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="fentanyl" model-id="Fentanyl_Bragg1995_reference" status="rejected" stale="true" population="neonatal dogs" measured-compound="fentanyl" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 5 extracted.

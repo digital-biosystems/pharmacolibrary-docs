@@ -19,8 +19,7 @@
 ## Citation
 Nielsen HC et al., Chlorpromazine excretion by the neonate…, Pediatric pharmacology (New… (1983)
 
-## Model component
-<dbs-pgx drug="chlorpromazine" model-id="Chlorpromazine_Nielsen1983_reference" status="rejected" stale="false" population="neonate with in utero chlorpromazine exposure" measured-compound="chlorpromazine" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="chlorpromazine" model-id="Chlorpromazine_Nielsen1983_reference" status="rejected" stale="false" population="neonate with in utero chlorpromazine exposure" measured-compound="chlorpromazine" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 2 extracted.

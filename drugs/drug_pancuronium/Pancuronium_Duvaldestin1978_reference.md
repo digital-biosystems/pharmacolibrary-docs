@@ -21,8 +21,7 @@
 Duvaldestin P et al., Pancuronium pharmacokinetics in patient…, British journal of anaesthe… (1978)
   ·  DOI: [10.1093/bja/50.11.1131](https://doi.org/10.1093/bja/50.11.1131)
 
-## Model component
-<dbs-pgx drug="pancuronium" model-id="Pancuronium_Duvaldestin1978_reference" status="rejected" stale="false" population="adults with liver cirrhosis" measured-compound="pancuronium" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="pancuronium" model-id="Pancuronium_Duvaldestin1978_reference" status="rejected" stale="false" population="adults with liver cirrhosis" measured-compound="pancuronium" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

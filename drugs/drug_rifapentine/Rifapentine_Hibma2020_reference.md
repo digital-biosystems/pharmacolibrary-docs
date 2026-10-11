@@ -21,8 +21,7 @@
 Hibma JE et al., Rifapentine Population Pharmacokinetics…, American journal of respira… (2020)
   ·  DOI: [10.1164/rccm.201912-2489OC](https://doi.org/10.1164/rccm.201912-2489OC)
 
-## Model component
-<dbs-pgx drug="rifapentine" model-id="Rifapentine_Hibma2020_reference" status="extracted" stale="false" population="adults with latent tuberculosis infection" measured-compound="rifapentine" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="rifapentine" model-id="Rifapentine_Hibma2020_reference" status="extracted" stale="false" population="adults with latent tuberculosis infection" measured-compound="rifapentine" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 7 extracted.

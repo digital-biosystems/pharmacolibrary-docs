@@ -33,8 +33,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on paramet
 Petersen KU et al., Carboxylesterase 1-Based Drug-Drug Inte…, Current drug metabolism (2024)
   ·  DOI: [10.2174/0113892002308233240801104910](https://doi.org/10.2174/0113892002308233240801104910)
 
-## Model component
-<dbs-pgx drug="telmisartan" model-id="Telmisartan_Petersen2024_reference" status="needs_review" stale="false" population="unknown" measured-compound="telmisartan" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="telmisartan" model-id="Telmisartan_Petersen2024_reference" status="needs_review" stale="false" population="unknown" measured-compound="telmisartan" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 2 extracted.

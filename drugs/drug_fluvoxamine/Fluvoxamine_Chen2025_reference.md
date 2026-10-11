@@ -27,8 +27,7 @@
 Chen X et al., Drug-Drug Interactions and Initial Dosa…, Drug design, development an… (2025)
   ·  DOI: [10.2147/DDDT.S538856](https://doi.org/10.2147/DDDT.S538856)
 
-## Model component
-<dbs-pgx drug="fluvoxamine" model-id="Fluvoxamine_Chen2025_reference" status="extracted" stale="true" population="" measured-compound="fluvoxamine" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="fluvoxamine" model-id="Fluvoxamine_Chen2025_reference" status="extracted" stale="true" population="" measured-compound="fluvoxamine" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 3 extracted.

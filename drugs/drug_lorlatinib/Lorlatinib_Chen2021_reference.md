@@ -21,8 +21,7 @@
 Chen J et al., Population pharmacokinetic model with t…, CPT: pharmacometrics & syst… (2021)
   ·  DOI: [10.1002/psp4.12585](https://doi.org/10.1002/psp4.12585)
 
-## Model component
-<dbs-pgx drug="lorlatinib" model-id="Lorlatinib_Chen2021_reference" status="extracted" stale="false" population="patients with ALK-positive or ROS1-positive NSCLC and healthy participants" measured-compound="lorlatinib" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="lorlatinib" model-id="Lorlatinib_Chen2021_reference" status="extracted" stale="false" population="patients with ALK-positive or ROS1-positive NSCLC and healthy participants" measured-compound="lorlatinib" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 7 extracted, plus 2 covariate effects.

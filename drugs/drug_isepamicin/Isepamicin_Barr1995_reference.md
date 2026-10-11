@@ -19,8 +19,7 @@
 ## Citation
 Barr WH et al., Pharmacokinetics of isepamicin, Journal of chemotherapy (Fl… (1995)
 
-## Model component
-<dbs-pgx drug="isepamicin" model-id="Isepamicin_Barr1995_reference" status="rejected" stale="false" population="mixed populations (neonatal to elderly and renally impaired)" measured-compound="isepamicin" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="isepamicin" model-id="Isepamicin_Barr1995_reference" status="rejected" stale="false" population="mixed populations (neonatal to elderly and renally impaired)" measured-compound="isepamicin" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 2 extracted.

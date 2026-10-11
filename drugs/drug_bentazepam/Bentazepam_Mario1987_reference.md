@@ -19,8 +19,7 @@
 ## Citation
 Mariño EL et al., Simulation of plasma bentazepam levels…, International journal of cl… (1987)
 
-## Model component
-<dbs-pgx drug="bentazepam" model-id="Bentazepam_Mario1987_reference" status="rejected" stale="false" population="patients receiving multiple dosage regimen" measured-compound="bentazepam" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="bentazepam" model-id="Bentazepam_Mario1987_reference" status="rejected" stale="false" population="patients receiving multiple dosage regimen" measured-compound="bentazepam" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 3 extracted.

@@ -23,8 +23,7 @@
 Upton RN et al., Myocardial pharmacokinetics of thiopent…, Journal of pharmaceutical s… (1996)
   ·  DOI: [10.1021/js950461w](https://doi.org/10.1021/js950461w)
 
-## Model component
-<dbs-pgx drug="thiopental" model-id="Thiopental_Upton1996_reference" status="rejected" stale="false" population="sheep" measured-compound="thiopental" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="thiopental" model-id="Thiopental_Upton1996_reference" status="rejected" stale="false" population="sheep" measured-compound="thiopental" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

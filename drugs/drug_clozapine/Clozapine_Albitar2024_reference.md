@@ -21,8 +21,7 @@
 Albitar O et al., Semi-physiological Pharmacokinetic Mode…, CNS drugs (2024)
   ·  DOI: [10.1007/s40263-024-01092-1](https://doi.org/10.1007/s40263-024-01092-1)
 
-## Model component
-<dbs-pgx drug="clozapine" model-id="Clozapine_Albitar2024_reference" status="rejected" stale="false" population="healthy non-smoking volunteers" measured-compound="clozapine" parameterization="mechanistic" topology="parent_metabolite"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="clozapine" model-id="Clozapine_Albitar2024_reference" status="rejected" stale="false" population="healthy non-smoking volunteers" measured-compound="clozapine" parameterization="mechanistic" topology="parent_metabolite"></div>
 
 **Model structure:** parent + metabolite; no model was built for this record.  
 **Parameters:** 2 extracted.

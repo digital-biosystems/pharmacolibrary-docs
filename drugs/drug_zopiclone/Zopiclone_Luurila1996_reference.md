@@ -21,8 +21,7 @@
 Luurila H et al., Pharmacokinetic-pharmacodynamic modelli…, Pharmacology & toxicology (1996)
   ·  DOI: [10.1111/j.1600-0773.1996.tb01387.x](https://doi.org/10.1111/j.1600-0773.1996.tb01387.x)
 
-## Model component
-<dbs-pgx drug="zopiclone" model-id="Zopiclone_Luurila1996_reference" status="extracted" stale="false" population="healthy volunteers" measured-compound="zopiclone" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="zopiclone" model-id="Zopiclone_Luurila1996_reference" status="extracted" stale="false" population="healthy volunteers" measured-compound="zopiclone" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 4 extracted.

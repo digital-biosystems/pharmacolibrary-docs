@@ -32,8 +32,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the lin
 ## Citation
 Ericsson H et al., Pharmacokinetics of new calcium channel…, Drug metabolism and disposi… (1999)
 
-## Model component
-<dbs-pgx drug="clevidipine" model-id="Clevidipine_Ericsson1999v3_reference" status="rejected" stale="true" population="rats, rabbits, and dogs" measured-compound="clevidipine" parameterization="mechanistic" topology="general_linear"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="clevidipine" model-id="Clevidipine_Ericsson1999v3_reference" status="rejected" stale="true" population="rats, rabbits, and dogs" measured-compound="clevidipine" parameterization="mechanistic" topology="general_linear"></div>
 
 **Model structure:** general linear; no model was built for this record.  
 **Parameters:** 2 extracted.

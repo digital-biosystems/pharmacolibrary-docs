@@ -23,8 +23,7 @@
 Cerreta AJ et al., Pharmacokinetics of ketorolac in wild E…, Journal of veterinary pharm… (2019)
   ·  DOI: [10.1111/jvp.12733](https://doi.org/10.1111/jvp.12733)
 
-## Model component
-<dbs-pgx drug="ketorolac" model-id="Ketorolac_Cerreta2019_reference" status="needs_review" stale="false" population="injured Eastern box turtles" measured-compound="ketorolac" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="ketorolac" model-id="Ketorolac_Cerreta2019_reference" status="needs_review" stale="false" population="injured Eastern box turtles" measured-compound="ketorolac" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 3 extracted.

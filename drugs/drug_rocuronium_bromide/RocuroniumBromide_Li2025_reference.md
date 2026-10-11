@@ -23,8 +23,7 @@
 Li X et al., Rapid quantification and PK-PD modeling…, Frontiers in veterinary sci… (2025)
   ·  DOI: [10.3389/fvets.2025.1543086](https://doi.org/10.3389/fvets.2025.1543086)
 
-## Model component
-<dbs-pgx drug="rocuronium bromide" model-id="RocuroniumBromide_Li2025_reference" status="extracted" stale="false" population="beagles" measured-compound="rocuronium_bromide" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="rocuronium bromide" model-id="RocuroniumBromide_Li2025_reference" status="extracted" stale="false" population="beagles" measured-compound="rocuronium_bromide" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameters:** 2 extracted.

@@ -21,8 +21,7 @@
 Gao XN et al., Pharmacokinetic Study of Nalbuphine in…, Drug design, development an… (2022)
   ·  DOI: [10.2147/DDDT.S371596](https://doi.org/10.2147/DDDT.S371596)
 
-## Model component
-<dbs-pgx drug="nalbuphine" model-id="Nalbuphine_Gao2022_reference" status="extracted" stale="false" population="surgical patients with varying degrees of liver dysfunction" measured-compound="nalbuphine" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="nalbuphine" model-id="Nalbuphine_Gao2022_reference" status="extracted" stale="false" population="surgical patients with varying degrees of liver dysfunction" measured-compound="nalbuphine" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameters:** 2 extracted.

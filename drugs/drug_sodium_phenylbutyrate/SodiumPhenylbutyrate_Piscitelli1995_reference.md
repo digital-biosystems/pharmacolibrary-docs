@@ -31,8 +31,7 @@ Independently confirmed by `gpt-oss:120b`.
 Piscitelli SC et al., Disposition of phenylbutyrate and its m…, Journal of clinical pharmac… (1995)
   ·  DOI: [10.1002/j.1552-4604.1995.tb04075.x](https://doi.org/10.1002/j.1552-4604.1995.tb04075.x)
 
-## Model component
-<dbs-pgx drug="sodium phenylbutyrate" model-id="SodiumPhenylbutyrate_Piscitelli1995_reference" status="rejected" stale="true" population="patients with cancer" measured-compound="phenylbutyrate" parameterization="mechanistic" topology="general_linear"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="sodium phenylbutyrate" model-id="SodiumPhenylbutyrate_Piscitelli1995_reference" status="rejected" stale="true" population="patients with cancer" measured-compound="phenylbutyrate" parameterization="mechanistic" topology="general_linear"></div>
 
 **Model structure:** general linear; no model was built for this record.  
 **Parameters:** 0 extracted.

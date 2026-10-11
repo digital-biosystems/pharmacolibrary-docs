@@ -21,8 +21,7 @@
 Hosseini I et al., gPKPDSim: a SimBiology&lt;sup&gt;®&lt;/sup&gt;-base…, Journal of pharmacokinetics… (2018)
   ·  DOI: [10.1007/s10928-017-9562-9](https://doi.org/10.1007/s10928-017-9562-9)
 
-## Model component
-<dbs-pgx drug="pyridostigmine" model-id="Pyridostigmine_Hosseini2018_reference" status="extracted" stale="false" population="" measured-compound="pyridostigmine" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="pyridostigmine" model-id="Pyridostigmine_Hosseini2018_reference" status="extracted" stale="false" population="" measured-compound="pyridostigmine" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameters:** 2 extracted.

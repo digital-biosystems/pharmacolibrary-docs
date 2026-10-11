@@ -12,8 +12,7 @@
 Jung YS; Jin BH; Park MS; Kim CO; Chae D et al. (2024). CPT: pharmacometrics & systems pharmacology 13
   ·  DOI: [10.1002/psp4.13053](https://doi.org/10.1002/psp4.13053)
 
-## Model component
-<dbs-pgx drug="clopidogrel" model-id="Clopidogrel_Jung2024" status="curated" stale="false" population="healthy male adults" measured-compound="clopidogrel" parameterization="apparent" topology="general_linear"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="clopidogrel" model-id="Clopidogrel_Jung2024" status="curated" stale="false" population="healthy male adults" measured-compound="clopidogrel" parameterization="apparent" topology="general_linear"></div>
 
 **Parameterization:** apparent.
 

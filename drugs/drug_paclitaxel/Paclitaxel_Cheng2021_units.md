@@ -28,8 +28,7 @@ No clearance, volume or rate constant of the model is reported in it. No paramet
 Cheng S et al., Pharmacokinetic-Pharmacodynamic Modelin…, Pharmaceutics (2021)
   ·  DOI: [10.3390/pharmaceutics13010092](https://doi.org/10.3390/pharmaceutics13010092)
 
-## Model component
-<dbs-pgx drug="paclitaxel" model-id="Paclitaxel_Cheng2021_units" status="rejected" stale="false" population="SCID Beige mice with A549 lung tumors" measured-compound="paclitaxel" parameterization="mechanistic" topology="general_linear"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="paclitaxel" model-id="Paclitaxel_Cheng2021_units" status="rejected" stale="false" population="SCID Beige mice with A549 lung tumors" measured-compound="paclitaxel" parameterization="mechanistic" topology="general_linear"></div>
 
 **Model structure:** general linear; no model was built for this record.  
 **Parameters:** 0 extracted.

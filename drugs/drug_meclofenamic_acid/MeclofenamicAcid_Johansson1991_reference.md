@@ -22,8 +22,7 @@
 Johansson IM et al., Studies of meclofenamic acid and two me…, Journal of veterinary pharm… (1991)
   ·  DOI: [10.1111/j.1365-2885.1991.tb00832.x](https://doi.org/10.1111/j.1365-2885.1991.tb00832.x)
 
-## Model component
-<dbs-pgx drug="meclofenamic acid" model-id="MeclofenamicAcid_Johansson1991_reference" status="needs_review" stale="false" population="Standardbred horses" measured-compound="meclofenamic acid" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="meclofenamic acid" model-id="MeclofenamicAcid_Johansson1991_reference" status="needs_review" stale="false" population="Standardbred horses" measured-compound="meclofenamic acid" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 3 extracted.

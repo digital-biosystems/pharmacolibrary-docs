@@ -33,8 +33,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on paramet
 Zhu S et al., The development and characterization of…, Journal of thrombosis and h… (2020)
   ·  DOI: [10.1111/jth.14755](https://doi.org/10.1111/jth.14755)
 
-## Model component
-<dbs-pgx drug="von Willebrand factor" model-id="VonWillebrandFactor_Zhu2020_reference" status="extracted" stale="true" population="" measured-compound="von_willebrand_factor" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="von Willebrand factor" model-id="VonWillebrandFactor_Zhu2020_reference" status="extracted" stale="true" population="" measured-compound="von_willebrand_factor" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 2 extracted.

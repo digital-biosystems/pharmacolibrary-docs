@@ -23,8 +23,7 @@
 Bhagunde P et al., Population Pharmacokinetic Analysis for…, CPT: pharmacometrics & syst… (2019)
   ·  DOI: [10.1002/psp4.12462](https://doi.org/10.1002/psp4.12462)
 
-## Model component
-<dbs-pgx drug="Relebactam" model-id="Relebactam_Bhagunde2019_reference" status="extracted" stale="false" population="healthy volunteers and patients with bacterial infections" measured-compound="relebactam and imipenem" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="Relebactam" model-id="Relebactam_Bhagunde2019_reference" status="extracted" stale="false" population="healthy volunteers and patients with bacterial infections" measured-compound="relebactam and imipenem" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment, IV mammillary model — template `PK_2C`.  
 **Parameters:** 4 extracted, plus 2 covariate effects.

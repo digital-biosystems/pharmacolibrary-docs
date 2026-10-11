@@ -31,8 +31,7 @@ A model needs both clearance and volume; without the volume it could only be bui
 Kim TH et al., Effect of Sipjeondaebo-Tang on the Phar…, Molecules (Basel, Switzerla… (2017)
   ·  DOI: [10.3390/molecules22091488](https://doi.org/10.3390/molecules22091488)
 
-## Model component
-<dbs-pgx drug="tegafur" model-id="Tegafur_Kim2017_population_mean_bsv" status="rejected" stale="true" population="rats" measured-compound="tegafur" parameterization="mechanistic" topology="parent_metabolite"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="tegafur" model-id="Tegafur_Kim2017_population_mean_bsv" status="rejected" stale="true" population="rats" measured-compound="tegafur" parameterization="mechanistic" topology="parent_metabolite"></div>
 
 **Model structure:** parent + metabolite; no model was built for this record.  
 **Parameters:** 0 extracted.

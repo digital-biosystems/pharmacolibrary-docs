@@ -21,8 +21,7 @@
 Karlén B et al., Pharmacokinetics of terodiline in human…, European journal of clinica… (1982)
   ·  DOI: [10.1007/BF00547566](https://doi.org/10.1007/BF00547566)
 
-## Model component
-<dbs-pgx drug="terodiline" model-id="Terodiline_Karln1982_reference" status="extracted" stale="false" population="healthy volunteers" measured-compound="terodiline" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="terodiline" model-id="Terodiline_Karln1982_reference" status="extracted" stale="false" population="healthy volunteers" measured-compound="terodiline" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 5 extracted.

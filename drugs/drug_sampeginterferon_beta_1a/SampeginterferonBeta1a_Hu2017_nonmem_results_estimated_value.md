@@ -20,8 +20,7 @@
 Hu X et al., Population-Based Pharmacokinetic and Ex…, Journal of clinical pharmac… (2017)
   ·  DOI: [10.1002/jcph.883](https://doi.org/10.1002/jcph.883)
 
-## Model component
-<dbs-pgx drug="sampeginterferon beta-1a" model-id="SampeginterferonBeta1a_Hu2017_nonmem_results_estimated_value" status="rejected" stale="false" population="adults with relapsing multiple sclerosis" measured-compound="peginterferon beta-1a" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="sampeginterferon beta-1a" model-id="SampeginterferonBeta1a_Hu2017_nonmem_results_estimated_value" status="rejected" stale="false" population="adults with relapsing multiple sclerosis" measured-compound="peginterferon beta-1a" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 3 extracted.

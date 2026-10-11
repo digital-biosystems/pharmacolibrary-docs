@@ -21,8 +21,7 @@
 Bruin G et al., Population Pharmacokinetic Modeling of…, Journal of clinical pharmac… (2017)
   ·  DOI: [10.1002/jcph.876](https://doi.org/10.1002/jcph.876)
 
-## Model component
-<dbs-pgx drug="secukinumab" model-id="Secukinumab_Bruin2017_reference" status="extracted" stale="false" population="patients with moderate to severe psoriasis" measured-compound="secukinumab" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="secukinumab" model-id="Secukinumab_Bruin2017_reference" status="extracted" stale="false" population="patients with moderate to severe psoriasis" measured-compound="secukinumab" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 6 extracted.

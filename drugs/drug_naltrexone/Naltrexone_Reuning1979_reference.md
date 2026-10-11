@@ -30,8 +30,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Reuning RH et al., Plasma naltrexone kinetics after intrav…, Journal of pharmaceutical s… (1979)
   ·  DOI: [10.1002/jps.2600680405](https://doi.org/10.1002/jps.2600680405)
 
-## Model component
-<dbs-pgx drug="naltrexone" model-id="Naltrexone_Reuning1979_reference" status="needs_review" stale="false" population="dogs and monkeys" measured-compound="naltrexone" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="naltrexone" model-id="Naltrexone_Reuning1979_reference" status="needs_review" stale="false" population="dogs and monkeys" measured-compound="naltrexone" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 4 extracted.

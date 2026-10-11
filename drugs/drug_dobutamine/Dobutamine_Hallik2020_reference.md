@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Hallik M et al., Population pharmacokinetics and pharmac…, British journal of clinical… (2020)
   ·  DOI: [10.1111/bcp.14146](https://doi.org/10.1111/bcp.14146)
 
-## Model component
-<dbs-pgx drug="dobutamine" model-id="Dobutamine_Hallik2020_reference" status="extracted" stale="true" population="critically ill neonates" measured-compound="dobutamine" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="dobutamine" model-id="Dobutamine_Hallik2020_reference" status="extracted" stale="true" population="critically ill neonates" measured-compound="dobutamine" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameters:** 2 extracted.

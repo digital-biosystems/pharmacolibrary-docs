@@ -30,8 +30,7 @@ Nothing in the extracted data describes the drug's disposition, so there is no m
 Crook KI et al., The pharmacokinetics of cytarabine in d…, Journal of veterinary pharm… (2013)
   ·  DOI: [10.1111/jvp.12008](https://doi.org/10.1111/jvp.12008)
 
-## Model component
-<dbs-pgx drug="cytarabine" model-id="Cytarabine_Crook2013_healthy_dogs" status="" stale="true" population="healthy dogs" measured-compound="" parameterization="" topology=""></dbs-pgx>
+<div class="pk-model-meta" hidden drug="cytarabine" model-id="Cytarabine_Crook2013_healthy_dogs" status="" stale="true" population="healthy dogs" measured-compound="" parameterization="" topology=""></div>
 
 **Model structure:** —; no model was built for this record.  
 **Parameters:** 0 extracted.

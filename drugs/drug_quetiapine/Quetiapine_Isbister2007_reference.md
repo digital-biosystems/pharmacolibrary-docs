@@ -21,8 +21,7 @@
 Isbister GK et al., Pharmacokinetics of quetiapine in overd…, Clinical pharmacology and t… (2007)
   ·  DOI: [10.1038/sj.clpt.6100193](https://doi.org/10.1038/sj.clpt.6100193)
 
-## Model component
-<dbs-pgx drug="quetiapine" model-id="Quetiapine_Isbister2007_reference" status="needs_review" stale="false" population="quetiapine overdose patients" measured-compound="quetiapine" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="quetiapine" model-id="Quetiapine_Isbister2007_reference" status="needs_review" stale="false" population="quetiapine overdose patients" measured-compound="quetiapine" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 4 extracted.

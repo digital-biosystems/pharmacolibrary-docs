@@ -27,8 +27,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the val
 Blea CW et al., Effect of nifedipine on fetal and mater…, American journal of obstetr… (1997)
   ·  DOI: [10.1016/s0002-9378(97)70622-7](https://doi.org/10.1016/s0002-9378(97)70622-7)
 
-## Model component
-<dbs-pgx drug="nifedipine" model-id="Nifedipine_Blea1997_reference" status="needs_review" stale="false" population="pregnant ewes" measured-compound="nifedipine" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="nifedipine" model-id="Nifedipine_Blea1997_reference" status="needs_review" stale="false" population="pregnant ewes" measured-compound="nifedipine" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 2 extracted.

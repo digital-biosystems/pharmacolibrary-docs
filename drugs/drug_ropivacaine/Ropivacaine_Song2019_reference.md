@@ -21,8 +21,7 @@
 Song IK et al., A Population Pharmacokinetic Model of I…, Journal of clinical medicine (2019)
   ·  DOI: [10.3390/jcm8101563](https://doi.org/10.3390/jcm8101563)
 
-## Model component
-<dbs-pgx drug="ropivacaine" model-id="Ropivacaine_Song2019_reference" status="extracted" stale="false" population="" measured-compound="ropivacaine" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="ropivacaine" model-id="Ropivacaine_Song2019_reference" status="extracted" stale="false" population="" measured-compound="ropivacaine" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment, IV mammillary model — template `PK_2C`.  
 **Parameters:** 4 extracted.

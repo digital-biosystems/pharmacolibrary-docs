@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on `parame
 Huo J et al., Dosing Optimization of Lamotrigine in P…, Drug design, development an… (2025)
   ·  DOI: [10.2147/DDDT.S541597](https://doi.org/10.2147/DDDT.S541597)
 
-## Model component
-<dbs-pgx drug="lamotrigine" model-id="Lamotrigine_Huo2025_reference" status="" stale="true" population="Chinese epileptic patients during the peripregnancy period" measured-compound="" parameterization="" topology=""></dbs-pgx>
+<div class="pk-model-meta" hidden drug="lamotrigine" model-id="Lamotrigine_Huo2025_reference" status="" stale="true" population="Chinese epileptic patients during the peripregnancy period" measured-compound="" parameterization="" topology=""></div>
 
 **Model structure:** —; no model was built for this record.  
 **Parameters:** 0 extracted.

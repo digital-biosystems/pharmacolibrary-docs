@@ -22,8 +22,7 @@
 Kably B et al., Population pharmacokinetics of aciclovi…, The Journal of antimicrobia… (2025)
   ·  DOI: [10.1093/jac/dkaf070](https://doi.org/10.1093/jac/dkaf070)
 
-## Model component
-<dbs-pgx drug="valaciclovir" model-id="Valaciclovir_Kably2025_reference" status="rejected" stale="false" population="early liver transplant recipients" measured-compound="aciclovir" parameterization="mechanistic" topology="parent_metabolite"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="valaciclovir" model-id="Valaciclovir_Kably2025_reference" status="rejected" stale="false" population="early liver transplant recipients" measured-compound="aciclovir" parameterization="mechanistic" topology="parent_metabolite"></div>
 
 **Model structure:** parent + metabolite; no model was built for this record.  
 **Parameters:** 3 extracted.

@@ -30,8 +30,7 @@ Independently confirmed by `gpt-oss:120b`.
 Sowinski KM et al., Effect of aging on atenolol pharmacokin…, Journal of clinical pharmac… (1995)
   ·  DOI: [10.1002/j.1552-4604.1995.tb04124.x](https://doi.org/10.1002/j.1552-4604.1995.tb04124.x)
 
-## Model component
-<dbs-pgx drug="atenolol" model-id="Atenolol_Sowinski1995_reference" status="needs_review" stale="true" population="young and elderly healthy men" measured-compound="atenolol" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="atenolol" model-id="Atenolol_Sowinski1995_reference" status="needs_review" stale="true" population="young and elderly healthy men" measured-compound="atenolol" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 7 extracted.

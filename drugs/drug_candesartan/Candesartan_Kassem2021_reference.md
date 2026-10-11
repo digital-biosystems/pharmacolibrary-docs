@@ -29,8 +29,7 @@ A model needs both clearance and volume; without the volume it could only be bui
 Kassem I et al., Population Pharmacokinetics of Candesar…, Clinical and translational… (2021)
   ·  DOI: [10.1111/cts.12842](https://doi.org/10.1111/cts.12842)
 
-## Model component
-<dbs-pgx drug="candesartan" model-id="Candesartan_Kassem2021_reference" status="" stale="true" population="patients with chronic heart failure" measured-compound="" parameterization="" topology=""></dbs-pgx>
+<div class="pk-model-meta" hidden drug="candesartan" model-id="Candesartan_Kassem2021_reference" status="" stale="true" population="patients with chronic heart failure" measured-compound="" parameterization="" topology=""></div>
 
 **Model structure:** —; no model was built for this record.  
 **Parameters:** 0 extracted.

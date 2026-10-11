@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the val
 Marques L et al., New Data for Nebivolol after In Silico…, Pharmaceutics (2022)
   ·  DOI: [10.3390/pharmaceutics14091911](https://doi.org/10.3390/pharmaceutics14091911)
 
-## Model component
-<dbs-pgx drug="nebivolol" model-id="Nebivolol_Marques2022_reference" status="extracted" stale="true" population="young and healthy individuals" measured-compound="nebivolol" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="nebivolol" model-id="Nebivolol_Marques2022_reference" status="extracted" stale="true" population="young and healthy individuals" measured-compound="nebivolol" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment, oral mammillary model — template `PK_2C_enteral`.  
 **Parameters:** 6 extracted.

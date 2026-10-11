@@ -19,8 +19,7 @@
 ## Citation
 van Hazel GA et al., Pharmacokinetics of mitomycin C in pati…, Cancer treatment reports (1983)
 
-## Model component
-<dbs-pgx drug="mitomycin" model-id="Mitomycin_van1983_reference" status="rejected" stale="false" population="patients receiving mitomycin C alone or in combination with other chemotherapeutic drugs" measured-compound="mitomycin C" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="mitomycin" model-id="Mitomycin_van1983_reference" status="rejected" stale="false" population="patients receiving mitomycin C alone or in combination with other chemotherapeutic drugs" measured-compound="mitomycin C" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 3 extracted.

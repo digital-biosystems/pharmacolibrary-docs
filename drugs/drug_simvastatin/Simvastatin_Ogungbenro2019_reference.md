@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Ogungbenro K et al., A population pharmacokinetic model for…, European journal of clinica… (2019)
   ·  DOI: [10.1007/s00228-019-02697-y](https://doi.org/10.1007/s00228-019-02697-y)
 
-## Model component
-<dbs-pgx drug="simvastatin" model-id="Simvastatin_Ogungbenro2019_reference" status="not_simulated" stale="false" population="children and adolescents" measured-compound="simvastatin" parameterization="apparent" topology="general_linear"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="simvastatin" model-id="Simvastatin_Ogungbenro2019_reference" status="not_simulated" stale="false" population="children and adolescents" measured-compound="simvastatin" parameterization="apparent" topology="general_linear"></div>
 
 **Model structure:** 1-compartment general linear model (non-mammillary edges) — template `PK_General_Linear`.  
 **Parameters:** 8 extracted, plus 2 covariate effects.

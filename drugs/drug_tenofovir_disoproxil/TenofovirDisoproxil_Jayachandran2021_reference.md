@@ -30,8 +30,7 @@ No clearance, volume or rate constant of the model is reported in it. No paramet
 Jayachandran P et al., A Mechanistic In Vivo/Ex Vivo Pharmacok…, CPT: pharmacometrics & syst… (2021)
   ·  DOI: [10.1002/psp4.12583](https://doi.org/10.1002/psp4.12583)
 
-## Model component
-<dbs-pgx drug="tenofovir disoproxil" model-id="TenofovirDisoproxil_Jayachandran2021_reference" status="rejected" stale="true" population="HIV-1 seronegative healthy adults" measured-compound="tenofovir" parameterization="mechanistic" topology="general_linear"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="tenofovir disoproxil" model-id="TenofovirDisoproxil_Jayachandran2021_reference" status="rejected" stale="true" population="HIV-1 seronegative healthy adults" measured-compound="tenofovir" parameterization="mechanistic" topology="general_linear"></div>
 
 **Model structure:** general linear; no model was built for this record.  
 **Parameters:** 0 extracted.

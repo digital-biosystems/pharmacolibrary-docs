@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the val
 Hill KD et al., A Randomized, Controlled Pharmacokineti…, Pediatric critical care med… (2020)
   ·  DOI: [10.1097/PCC.0000000000002410](https://doi.org/10.1097/PCC.0000000000002410)
 
-## Model component
-<dbs-pgx drug="ambrisentan" model-id="Ambrisentan_Hill2020_reference" status="extracted" stale="true" population="children after Fontan surgery" measured-compound="ambrisentan" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="ambrisentan" model-id="Ambrisentan_Hill2020_reference" status="extracted" stale="true" population="children after Fontan surgery" measured-compound="ambrisentan" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameters:** 2 extracted.

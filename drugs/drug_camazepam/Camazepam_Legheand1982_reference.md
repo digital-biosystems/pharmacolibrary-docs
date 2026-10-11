@@ -21,8 +21,7 @@
 ## Citation
 Legheand J et al., Pharmacokinetics of intravenous camazep…, Arzneimittel-Forschung (1982)
 
-## Model component
-<dbs-pgx drug="camazepam" model-id="Camazepam_Legheand1982_reference" status="rejected" stale="false" population="healthy male mongrel dogs" measured-compound="camazepam" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="camazepam" model-id="Camazepam_Legheand1982_reference" status="rejected" stale="false" population="healthy male mongrel dogs" measured-compound="camazepam" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 3 extracted.

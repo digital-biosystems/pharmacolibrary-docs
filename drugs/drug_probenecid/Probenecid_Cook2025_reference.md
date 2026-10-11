@@ -23,8 +23,7 @@
 Cook M et al., Evaluation of the Safety and Pharmacoki…, Journal of veterinary inter… (2025)
   ·  DOI: [10.1111/jvim.70221](https://doi.org/10.1111/jvim.70221)
 
-## Model component
-<dbs-pgx drug="probenecid" model-id="Probenecid_Cook2025_reference" status="rejected" stale="false" population="healthy beagle dogs" measured-compound="probenecid" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="probenecid" model-id="Probenecid_Cook2025_reference" status="rejected" stale="false" population="healthy beagle dogs" measured-compound="probenecid" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

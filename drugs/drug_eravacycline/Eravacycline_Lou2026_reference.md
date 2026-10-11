@@ -21,8 +21,7 @@
 Lou L et al., Population pharmacokinetic analysis and…, The Journal of antimicrobia… (2026)
   ·  DOI: [10.1093/jac/dkag178](https://doi.org/10.1093/jac/dkag178)
 
-## Model component
-<dbs-pgx drug="eravacycline" model-id="Eravacycline_Lou2026_reference" status="rejected" stale="false" population="critically ill patients with carbapenem-resistant Acinetobacter baumannii pneumonia" measured-compound="eravacycline" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="eravacycline" model-id="Eravacycline_Lou2026_reference" status="rejected" stale="false" population="critically ill patients with carbapenem-resistant Acinetobacter baumannii pneumonia" measured-compound="eravacycline" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

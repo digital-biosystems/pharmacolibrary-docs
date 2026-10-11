@@ -21,8 +21,7 @@
 Balevic SJ et al., Hydroxychloroquine PK and exposure-resp…, Lupus science & medicine (2022)
   ·  DOI: [10.1136/lupus-2021-000602](https://doi.org/10.1136/lupus-2021-000602)
 
-## Model component
-<dbs-pgx drug="hydroxychloroquine" model-id="Hydroxychloroquine_Balevic2022_first" status="needs_review" stale="false" population="pregnant women with SLE" measured-compound="hydroxychloroquine" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="hydroxychloroquine" model-id="Hydroxychloroquine_Balevic2022_first" status="needs_review" stale="false" population="pregnant women with SLE" measured-compound="hydroxychloroquine" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 4 extracted.

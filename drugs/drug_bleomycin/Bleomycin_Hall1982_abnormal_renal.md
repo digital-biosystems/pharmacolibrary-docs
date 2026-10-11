@@ -28,8 +28,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the val
 ## Citation
 StephenWHall Department of Medicine Reno School of Medicine Reno Veterans Administration University of Nevada 1000 Locust St. 89520 Reno Nevada et al., ancer hemotherapy harmacology (1982)
 
-## Model component
-<dbs-pgx drug="bleomycin" model-id="Bleomycin_Hall1982_abnormal_renal" status="needs_review" stale="false" population="cancer patients" measured-compound="bleomycin" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="bleomycin" model-id="Bleomycin_Hall1982_abnormal_renal" status="needs_review" stale="false" population="cancer patients" measured-compound="bleomycin" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 2 extracted.

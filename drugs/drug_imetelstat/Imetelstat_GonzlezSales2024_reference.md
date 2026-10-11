@@ -20,8 +20,7 @@
 González-Sales M et al., Population pharmacokinetics of imetelst…, CPT: pharmacometrics & syst… (2024)
   ·  DOI: [10.1002/psp4.13160](https://doi.org/10.1002/psp4.13160)
 
-## Model component
-<dbs-pgx drug="imetelstat" model-id="Imetelstat_GonzlezSales2024_reference" status="rejected" stale="false" population="adults with solid tumors or hematologic malignancies" measured-compound="imetelstat" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="imetelstat" model-id="Imetelstat_GonzlezSales2024_reference" status="rejected" stale="false" population="adults with solid tumors or hematologic malignancies" measured-compound="imetelstat" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 8 extracted, plus 2 covariate effects.

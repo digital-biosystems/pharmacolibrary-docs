@@ -20,8 +20,7 @@
 Gisleskog PO et al., The pharmacokinetic modelling of GI1987…, British journal of clinical… (1999)
   ·  DOI: [10.1046/j.1365-2125.1999.00843.x](https://doi.org/10.1046/j.1365-2125.1999.00843.x)
 
-## Model component
-<dbs-pgx drug="dutasteride" model-id="Dutasteride_Gisleskog1999_reference" status="rejected" stale="false" population="healthy male volunteers" measured-compound="dutasteride" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="dutasteride" model-id="Dutasteride_Gisleskog1999_reference" status="rejected" stale="false" population="healthy male volunteers" measured-compound="dutasteride" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

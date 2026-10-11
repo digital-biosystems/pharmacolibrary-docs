@@ -29,8 +29,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Li RC et al., A model based assessment of redistribut…, Biopharmaceutics & drug dis… (1996)
   ·  DOI: [10.1002/(SICI)1099-081X(199604)17:3<223::AID-BDD954>3.0.CO;2-S](https://doi.org/10.1002/(SICI)1099-081X(199604)17:3<223::AID-BDD954>3.0.CO;2-S)
 
-## Model component
-<dbs-pgx drug="rifabutin" model-id="Rifabutin_Li1996_reference" status="rejected" stale="false" population="healthy normal volunteers" measured-compound="rifabutin" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="rifabutin" model-id="Rifabutin_Li1996_reference" status="rejected" stale="false" population="healthy normal volunteers" measured-compound="rifabutin" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

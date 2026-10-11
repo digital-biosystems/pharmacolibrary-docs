@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Cirincione B et al., Population pharmacokinetics of exenatide, British journal of clinical… (2017)
   ·  DOI: [10.1111/bcp.13135](https://doi.org/10.1111/bcp.13135)
 
-## Model component
-<dbs-pgx drug="exenatide" model-id="Exenatide_Cirincione2017v2_reference" status="rejected" stale="true" population="adults with type 2 diabetes mellitus" measured-compound="exenatide" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="exenatide" model-id="Exenatide_Cirincione2017v2_reference" status="rejected" stale="true" population="adults with type 2 diabetes mellitus" measured-compound="exenatide" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment; no model was built for this record.  
 **Parameters:** 10 extracted.

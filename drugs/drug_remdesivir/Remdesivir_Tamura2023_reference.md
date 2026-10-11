@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Tamura R et al., Population pharmacokinetics and exposur…, CPT: pharmacometrics & syst… (2023)
   ·  DOI: [10.1002/psp4.12936](https://doi.org/10.1002/psp4.12936)
 
-## Model component
-<dbs-pgx drug="remdesivir" model-id="Remdesivir_Tamura2023_reference" status="rejected" stale="false" population="patients with moderate and severe COVID-19" measured-compound="GS-441524" parameterization="apparent_wrt_Fm" topology="parent_metabolite"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="remdesivir" model-id="Remdesivir_Tamura2023_reference" status="rejected" stale="false" population="patients with moderate and severe COVID-19" measured-compound="GS-441524" parameterization="apparent_wrt_Fm" topology="parent_metabolite"></div>
 
 **Model structure:** parent + metabolite; no model was built for this record.  
 **Parameters:** 0 extracted.

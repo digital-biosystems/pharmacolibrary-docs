@@ -33,8 +33,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Schmulenson E et al., Population pharmacokinetic analyses of…, British journal of clinical… (2022)
   ·  DOI: [10.1111/bcp.15461](https://doi.org/10.1111/bcp.15461)
 
-## Model component
-<dbs-pgx drug="capecitabine" model-id="Capecitabine_Schmulenson2022_reference" status="extracted" stale="true" population="locally advanced rectal cancer" measured-compound="capecitabine" parameterization="apparent" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="capecitabine" model-id="Capecitabine_Schmulenson2022_reference" status="extracted" stale="true" population="locally advanced rectal cancer" measured-compound="capecitabine" parameterization="apparent" topology="2C"></div>
 
 **Model structure:** 2-compartment, oral mammillary model — template `PK_2C_enteral`.  
 **Parameters:** 7 extracted.

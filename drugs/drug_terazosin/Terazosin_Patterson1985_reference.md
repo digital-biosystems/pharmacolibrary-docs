@@ -21,8 +21,7 @@
 Patterson SE, Terazosin kinetics after oral and intra…, Clinical pharmacology and t… (1985)
   ·  DOI: [10.1038/clpt.1985.198](https://doi.org/10.1038/clpt.1985.198)
 
-## Model component
-<dbs-pgx drug="terazosin" model-id="Terazosin_Patterson1985_reference" status="rejected" stale="false" population="normal subjects" measured-compound="terazosin" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="terazosin" model-id="Terazosin_Patterson1985_reference" status="rejected" stale="false" population="normal subjects" measured-compound="terazosin" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

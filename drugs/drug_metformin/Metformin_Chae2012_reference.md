@@ -29,8 +29,7 @@ A second, independent reading of the paper (`gpt-5.6-luna`) disagrees on `parame
 Chae JW et al., Population PK/PD analysis of metformin…, British journal of clinical… (2012)
   ·  DOI: [10.1111/j.1365-2125.2012.04260.x](https://doi.org/10.1111/j.1365-2125.2012.04260.x)
 
-## Model component
-<dbs-pgx drug="metformin" model-id="Metformin_Chae2012_reference" status="extracted" stale="true" population="healthy humans" measured-compound="metformin" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="metformin" model-id="Metformin_Chae2012_reference" status="extracted" stale="true" population="healthy humans" measured-compound="metformin" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 3 extracted.

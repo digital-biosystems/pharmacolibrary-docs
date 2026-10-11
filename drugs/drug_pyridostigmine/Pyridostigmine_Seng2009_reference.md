@@ -23,8 +23,7 @@
 Seng KY et al., Retrospective population pharmacokineti…, The Journal of pharmacy and… (2009)
   ·  DOI: [10.1211/jpp/61.09.0008](https://doi.org/10.1211/jpp/61.09.0008)
 
-## Model component
-<dbs-pgx drug="pyridostigmine" model-id="Pyridostigmine_Seng2009_reference" status="extracted" stale="false" population="healthy Chinese males" measured-compound="pyridostigmine" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="pyridostigmine" model-id="Pyridostigmine_Seng2009_reference" status="extracted" stale="false" population="healthy Chinese males" measured-compound="pyridostigmine" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 4 extracted.

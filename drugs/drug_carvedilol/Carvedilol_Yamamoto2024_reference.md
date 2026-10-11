@@ -33,8 +33,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Yamamoto PA et al., Rerouting cardiovascular management fol…, British journal of clinical… (2024)
   ·  DOI: [10.1111/bcp.16129](https://doi.org/10.1111/bcp.16129)
 
-## Model component
-<dbs-pgx drug="carvedilol" model-id="Carvedilol_Yamamoto2024_reference" status="extracted" stale="true" population="nonobese, obese, and post-RYGB patients" measured-compound="(S)-carvedilol" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="carvedilol" model-id="Carvedilol_Yamamoto2024_reference" status="extracted" stale="true" population="nonobese, obese, and post-RYGB patients" measured-compound="(S)-carvedilol" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment; no model was built for this record.  
 **Parameters:** 7 extracted.

@@ -20,8 +20,7 @@
 Yu M et al., Population Pharmacokinetic and Covariat…, Clinical pharmacokinetics (2017)
   ·  DOI: [10.1007/s40262-016-0427-y](https://doi.org/10.1007/s40262-016-0427-y)
 
-## Model component
-<dbs-pgx drug="rivoceranib" model-id="Rivoceranib_Yu2017_reference" status="needs_review" stale="false" population="healthy volunteers and patients with malignant solid tumors" measured-compound="apatinib (rivoceranib)" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="rivoceranib" model-id="Rivoceranib_Yu2017_reference" status="needs_review" stale="false" population="healthy volunteers and patients with malignant solid tumors" measured-compound="apatinib (rivoceranib)" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 3 extracted.

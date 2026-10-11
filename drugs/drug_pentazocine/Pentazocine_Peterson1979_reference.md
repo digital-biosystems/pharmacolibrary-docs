@@ -23,8 +23,7 @@
 Peterson JE et al., Plasma pentazocine radioimmunoassay, Journal of pharmaceutical s… (1979)
   ·  DOI: [10.1002/jps.2600680530](https://doi.org/10.1002/jps.2600680530)
 
-## Model component
-<dbs-pgx drug="pentazocine" model-id="Pentazocine_Peterson1979_reference" status="needs_review" stale="false" population="beagle hounds" measured-compound="pentazocine" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="pentazocine" model-id="Pentazocine_Peterson1979_reference" status="needs_review" stale="false" population="beagle hounds" measured-compound="pentazocine" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 2 extracted.

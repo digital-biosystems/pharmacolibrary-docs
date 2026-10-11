@@ -29,8 +29,7 @@ Only the abstract was available, so reported summary statistics stand in for a f
 Drusano GL et al., Impact of bioavailability on determinat…, Antimicrobial agents and ch… (1992)
   ·  DOI: [10.1128/AAC.36.6.1280](https://doi.org/10.1128/AAC.36.6.1280)
 
-## Model component
-<dbs-pgx drug="didanosine" model-id="Didanosine_Drusano1992_reference" status="needs_review" stale="true" population="HIV-infected patients" measured-compound="didanosine" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="didanosine" model-id="Didanosine_Drusano1992_reference" status="needs_review" stale="true" population="HIV-infected patients" measured-compound="didanosine" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 7 extracted.

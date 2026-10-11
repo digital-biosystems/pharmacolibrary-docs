@@ -20,8 +20,7 @@
 Emery P et al., Association Between Abatacept Exposure…, The Journal of rheumatology (2025)
   ·  DOI: [10.3899/jrheum.2024-0498](https://doi.org/10.3899/jrheum.2024-0498)
 
-## Model component
-<dbs-pgx drug="abatacept" model-id="Abatacept_Emery2025_reference" status="rejected" stale="false" population="adults with early rheumatoid arthritis" measured-compound="abatacept" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="abatacept" model-id="Abatacept_Emery2025_reference" status="rejected" stale="false" population="adults with early rheumatoid arthritis" measured-compound="abatacept" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

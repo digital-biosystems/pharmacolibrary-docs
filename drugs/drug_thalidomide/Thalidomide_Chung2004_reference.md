@@ -23,8 +23,7 @@
 Chung F et al., Thalidomide pharmacokinetics and metabo…, Clinical cancer research :… (2004)
   ·  DOI: [10.1158/1078-0432.CCR-04-0421](https://doi.org/10.1158/1078-0432.CCR-04-0421)
 
-## Model component
-<dbs-pgx drug="thalidomide" model-id="Thalidomide_Chung2004_reference" status="rejected" stale="false" population="multiple myeloma patients" measured-compound="thalidomide" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="thalidomide" model-id="Thalidomide_Chung2004_reference" status="rejected" stale="false" population="multiple myeloma patients" measured-compound="thalidomide" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

@@ -21,8 +21,7 @@
 Thakkar N et al., Population Pharmacokinetics of Tafenoqu…, Antimicrobial agents and ch… (2018)
   ·  DOI: [10.1128/AAC.00711-18](https://doi.org/10.1128/AAC.00711-18)
 
-## Model component
-<dbs-pgx drug="tafenoquine" model-id="Tafenoquine_Thakkar2018v2_reference" status="rejected" stale="false" population="healthy volunteers and patients with P. vivax malaria" measured-compound="tafenoquine" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="tafenoquine" model-id="Tafenoquine_Thakkar2018v2_reference" status="rejected" stale="false" population="healthy volunteers and patients with P. vivax malaria" measured-compound="tafenoquine" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 7 extracted.

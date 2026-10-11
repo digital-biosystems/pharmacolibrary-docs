@@ -29,8 +29,7 @@ The model expected five parameters, but the absorption lag time of 8.7 minutes w
 Morse JD et al., Population pharmacokinetics of oxycodon…, Paediatric anaesthesia (2021)
   ·  DOI: [10.1111/pan.14283](https://doi.org/10.1111/pan.14283)
 
-## Model component
-<dbs-pgx drug="oxycodone" model-id="Oxycodone_Morse2021_reference" status="extracted" stale="true" population="preterm neonates to adults" measured-compound="oxycodone" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="oxycodone" model-id="Oxycodone_Morse2021_reference" status="extracted" stale="true" population="preterm neonates to adults" measured-compound="oxycodone" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment, IV mammillary model — template `PK_2C`.  
 **Parameters:** 8 extracted.

@@ -29,8 +29,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the val
 Hennig S et al., Population pharmacokinetic drug-drug in…, The Journal of antimicrobia… (2016)
   ·  DOI: [10.1093/jac/dkv470](https://doi.org/10.1093/jac/dkv470)
 
-## Model component
-<dbs-pgx drug="rifabutin" model-id="Rifabutin_Hennig2016_reference" status="rejected" stale="false" population="healthy volunteers and patients with HIV and TB" measured-compound="rifabutin" parameterization="mechanistic" topology="parent_metabolite"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="rifabutin" model-id="Rifabutin_Hennig2016_reference" status="rejected" stale="false" population="healthy volunteers and patients with HIV and TB" measured-compound="rifabutin" parameterization="mechanistic" topology="parent_metabolite"></div>
 
 **Model structure:** parent + metabolite; no model was built for this record.  
 **Parameters:** 0 extracted.

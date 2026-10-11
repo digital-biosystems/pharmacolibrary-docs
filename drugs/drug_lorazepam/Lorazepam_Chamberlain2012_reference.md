@@ -21,8 +21,7 @@
 Chamberlain JM et al., Pharmacokinetics of intravenous lorazep…, The Journal of pediatrics (2012)
   ·  DOI: [10.1016/j.jpeds.2011.09.048](https://doi.org/10.1016/j.jpeds.2011.09.048)
 
-## Model component
-<dbs-pgx drug="lorazepam" model-id="Lorazepam_Chamberlain2012_reference" status="rejected" stale="false" population="pediatric patients with or at risk of status epilepticus" measured-compound="lorazepam" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="lorazepam" model-id="Lorazepam_Chamberlain2012_reference" status="rejected" stale="false" population="pediatric patients with or at risk of status epilepticus" measured-compound="lorazepam" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 6 extracted.

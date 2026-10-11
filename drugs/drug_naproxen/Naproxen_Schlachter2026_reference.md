@@ -21,8 +21,7 @@
 Schlachter L et al., Population Pharmacokinetics of Atogepan…, Clinical pharmacokinetics (2026)
   ·  DOI: [10.1007/s40262-025-01566-5](https://doi.org/10.1007/s40262-025-01566-5)
 
-## Model component
-<dbs-pgx drug="naproxen" model-id="Naproxen_Schlachter2026_reference" status="extracted" stale="false" population="" measured-compound="naproxen" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="naproxen" model-id="Naproxen_Schlachter2026_reference" status="extracted" stale="false" population="" measured-compound="naproxen" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 3 extracted.

@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Chu WY et al., Population Pharmacokinetics and Target…, Clinical pharmacokinetics (2024)
   ·  DOI: [10.1007/s40262-024-01401-3](https://doi.org/10.1007/s40262-024-01401-3)
 
-## Model component
-<dbs-pgx drug="allopurinol" model-id="Allopurinol_Chu2024_reference" status="rejected" stale="true" population="neonates with critical congenital heart disease" measured-compound="allopurinol" parameterization="apparent_wrt_Fm" topology="parent_metabolite"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="allopurinol" model-id="Allopurinol_Chu2024_reference" status="rejected" stale="true" population="neonates with critical congenital heart disease" measured-compound="allopurinol" parameterization="apparent_wrt_Fm" topology="parent_metabolite"></div>
 
 **Model structure:** parent + metabolite; no model was built for this record.  
 **Parameters:** 0 extracted.

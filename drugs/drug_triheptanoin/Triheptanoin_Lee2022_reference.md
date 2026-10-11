@@ -30,8 +30,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Lee SK et al., Population Pharmacokinetics of Heptanoa…, Clinical pharmacology in dr… (2022)
   ·  DOI: [10.1002/cpdd.1145](https://doi.org/10.1002/cpdd.1145)
 
-## Model component
-<dbs-pgx drug="triheptanoin" model-id="Triheptanoin_Lee2022_reference" status="rejected" stale="false" population="healthy adults and patients with long-chain fatty acid oxidation disorders" measured-compound="heptanoate" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="triheptanoin" model-id="Triheptanoin_Lee2022_reference" status="rejected" stale="false" population="healthy adults and patients with long-chain fatty acid oxidation disorders" measured-compound="heptanoate" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 1 extracted.

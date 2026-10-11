@@ -29,8 +29,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on paramet
 Hu L et al., A Systematic Review of Population Pharm…, Drug design, development an… (2025)
   ·  DOI: [10.2147/DDDT.S553073](https://doi.org/10.2147/DDDT.S553073)
 
-## Model component
-<dbs-pgx drug="captopril" model-id="Captopril_Hu2025_reference" status="extracted" stale="true" population="" measured-compound="captopril" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="captopril" model-id="Captopril_Hu2025_reference" status="extracted" stale="true" population="" measured-compound="captopril" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameters:** 2 extracted.

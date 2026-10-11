@@ -21,8 +21,7 @@
 Yao Z et al., Population Pharmacokinetic Modeling of…, Journal of clinical pharmac… (2018)
   ·  DOI: [10.1002/jcph.1063](https://doi.org/10.1002/jcph.1063)
 
-## Model component
-<dbs-pgx drug="guselkumab" model-id="Guselkumab_Yao2018_reference" status="extracted" stale="false" population="patients with moderate to severe plaque psoriasis" measured-compound="guselkumab" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="guselkumab" model-id="Guselkumab_Yao2018_reference" status="extracted" stale="false" population="patients with moderate to severe plaque psoriasis" measured-compound="guselkumab" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 4 extracted.

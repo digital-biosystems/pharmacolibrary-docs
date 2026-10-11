@@ -21,8 +21,7 @@
 Wood ND et al., The use of quantitative clinical pharma…, PLoS neglected tropical dis… (2024)
   ·  DOI: [10.1371/journal.pntd.0012351](https://doi.org/10.1371/journal.pntd.0012351)
 
-## Model component
-<dbs-pgx drug="moxidectin" model-id="Moxidectin_Wood2024_reference" status="needs_review" stale="false" population="healthy lactating women (with PBPK predictions in neonates/infants)" measured-compound="moxidectin" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="moxidectin" model-id="Moxidectin_Wood2024_reference" status="needs_review" stale="false" population="healthy lactating women (with PBPK predictions in neonates/infants)" measured-compound="moxidectin" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 8 extracted.

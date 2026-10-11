@@ -21,8 +21,7 @@
 Ter Avest M et al., Model-Informed Precision Dosing of Ecul…, Clinical pharmacokinetics (2025)
   ·  DOI: [10.1007/s40262-025-01536-x](https://doi.org/10.1007/s40262-025-01536-x)
 
-## Model component
-<dbs-pgx drug="eculizumab" model-id="Eculizumab_Ter2025_reference" status="rejected" stale="false" population="adults with paroxysmal nocturnal hemoglobinuria and atypical hemolytic uremic syndrome" measured-compound="eculizumab" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="eculizumab" model-id="Eculizumab_Ter2025_reference" status="rejected" stale="false" population="adults with paroxysmal nocturnal hemoglobinuria and atypical hemolytic uremic syndrome" measured-compound="eculizumab" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment; no model was built for this record.  
 **Parameters:** 5 extracted, plus 1 covariate effect.

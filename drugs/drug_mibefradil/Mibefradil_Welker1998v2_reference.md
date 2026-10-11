@@ -24,8 +24,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Welker HA et al., Clinical pharmacokinetics of mibefradil, Clinical pharmacokinetics (1998)
   ·  DOI: [10.2165/00003088-199835060-00001](https://doi.org/10.2165/00003088-199835060-00001)
 
-## Model component
-<dbs-pgx drug="mibefradil" model-id="Mibefradil_Welker1998v2_reference" status="needs_review" stale="false" population="adults with hypertension and chronic stable angina pectoris" measured-compound="mibefradil" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="mibefradil" model-id="Mibefradil_Welker1998v2_reference" status="needs_review" stale="false" population="adults with hypertension and chronic stable angina pectoris" measured-compound="mibefradil" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 3 extracted.

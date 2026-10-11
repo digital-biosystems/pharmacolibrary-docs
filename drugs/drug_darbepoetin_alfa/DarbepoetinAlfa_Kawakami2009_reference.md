@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Kawakami K et al., Population pharmacokinetics of darbepoe…, European journal of clinica… (2009)
   ·  DOI: [10.1007/s00228-008-0561-z](https://doi.org/10.1007/s00228-008-0561-z)
 
-## Model component
-<dbs-pgx drug="darbepoetin alfa" model-id="DarbepoetinAlfa_Kawakami2009_reference" status="extracted" stale="true" population="peritoneal dialysis and non-dialysis patients with chronic kidney disease" measured-compound="darbepoetin_alfa" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="darbepoetin alfa" model-id="DarbepoetinAlfa_Kawakami2009_reference" status="extracted" stale="true" population="peritoneal dialysis and non-dialysis patients with chronic kidney disease" measured-compound="darbepoetin_alfa" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 3 extracted.

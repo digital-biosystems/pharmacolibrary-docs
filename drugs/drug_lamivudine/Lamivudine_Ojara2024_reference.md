@@ -21,8 +21,7 @@
 Ojara FW et al., Population pharmacokinetic modeling of…, CPT: pharmacometrics & syst… (2024)
   ·  DOI: [10.1002/psp4.13274](https://doi.org/10.1002/psp4.13274)
 
-## Model component
-<dbs-pgx drug="lamivudine" model-id="Lamivudine_Ojara2024_reference" status="needs_review" stale="false" population="breastfeeding HIV-infected mothers" measured-compound="lamivudine" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="lamivudine" model-id="Lamivudine_Ojara2024_reference" status="needs_review" stale="false" population="breastfeeding HIV-infected mothers" measured-compound="lamivudine" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 4 extracted.

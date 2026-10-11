@@ -33,8 +33,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Simpson JA et al., Population pharmacokinetic and pharmaco…, British journal of clinical… (2006)
   ·  DOI: [10.1111/j.1365-2125.2005.02567.x](https://doi.org/10.1111/j.1365-2125.2005.02567.x)
 
-## Model component
-<dbs-pgx drug="dapsone" model-id="Dapsone_Simpson2006v2_reference" status="needs_review" stale="true" population="healthy adults, adults and children with P. falciparum malaria" measured-compound="chlorproguanil, dapsone, chlorcycloguanil" parameterization="apparent" topology="parent_metabolite"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="dapsone" model-id="Dapsone_Simpson2006v2_reference" status="needs_review" stale="true" population="healthy adults, adults and children with P. falciparum malaria" measured-compound="chlorproguanil, dapsone, chlorcycloguanil" parameterization="apparent" topology="parent_metabolite"></div>
 
 **Model structure:** parent + metabolite; no model was built for this record.  
 **Parameters:** 8 extracted.

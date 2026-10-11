@@ -32,8 +32,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the lin
 King JN et al., Pharmacokinetic/pharmacodynamic modelli…, Journal of veterinary pharm… (2003)
   ·  DOI: [10.1046/j.1365-2885.2003.00468.x](https://doi.org/10.1046/j.1365-2885.2003.00468.x)
 
-## Model component
-<dbs-pgx drug="benazepril" model-id="Benazepril_King2003_i_v_benazeprilat" status="" stale="true" population="cats" measured-compound="" parameterization="" topology=""></dbs-pgx>
+<div class="pk-model-meta" hidden drug="benazepril" model-id="Benazepril_King2003_i_v_benazeprilat" status="" stale="true" population="cats" measured-compound="" parameterization="" topology=""></div>
 
 **Model structure:** —; no model was built for this record.  
 **Parameters:** 0 extracted.

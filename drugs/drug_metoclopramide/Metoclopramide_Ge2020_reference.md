@@ -30,8 +30,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Ge S et al., Population Pharmacokinetics of Metoclop…, Clinical and translational… (2020)
   ·  DOI: [10.1111/cts.12803](https://doi.org/10.1111/cts.12803)
 
-## Model component
-<dbs-pgx drug="metoclopramide" model-id="Metoclopramide_Ge2020_reference" status="needs_review" stale="true" population="infants, children, and adolescents" measured-compound="metoclopramide" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="metoclopramide" model-id="Metoclopramide_Ge2020_reference" status="needs_review" stale="true" population="infants, children, and adolescents" measured-compound="metoclopramide" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 5 extracted.

@@ -21,8 +21,7 @@
 Bouillon T et al., Pharmacokinetic-pharmacodynamic modelin…, Anesthesiology (1999)
   ·  DOI: [10.1097/00000542-199907000-00023](https://doi.org/10.1097/00000542-199907000-00023)
 
-## Model component
-<dbs-pgx drug="alfentanil" model-id="Alfentanil_Bouillon1999_reference" status="extracted" stale="false" population="adult men undergoing urologic surgery" measured-compound="alfentanil" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="alfentanil" model-id="Alfentanil_Bouillon1999_reference" status="extracted" stale="false" population="adult men undergoing urologic surgery" measured-compound="alfentanil" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameters:** 4 extracted.

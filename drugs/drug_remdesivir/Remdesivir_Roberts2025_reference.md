@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Roberts DM et al., Population Pharmacokinetic Modelling of…, Clinical pharmacokinetics (2025)
   ·  DOI: [10.1007/s40262-025-01496-2](https://doi.org/10.1007/s40262-025-01496-2)
 
-## Model component
-<dbs-pgx drug="remdesivir" model-id="Remdesivir_Roberts2025_reference" status="model_quarantined" stale="false" population="hospitalised adults with confirmed SARS-CoV-2 infection" measured-compound="remdesivir" parameterization="apparent" topology="parent_metabolite"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="remdesivir" model-id="Remdesivir_Roberts2025_reference" status="model_quarantined" stale="false" population="hospitalised adults with confirmed SARS-CoV-2 infection" measured-compound="remdesivir" parameterization="apparent" topology="parent_metabolite"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 4 extracted, plus 2 covariate effects.

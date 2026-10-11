@@ -29,8 +29,7 @@ The record lists total clearance CL1 = 75.8 L/h and central volume of distributi
 Blesch KS et al., Clinical pharmacokinetic/pharmacodynami…, Investigational new drugs (2003)
   ·  DOI: [10.1023/a:1023525513696](https://doi.org/10.1023/a:1023525513696)
 
-## Model component
-<dbs-pgx drug="fluorouracil" model-id="Fluorouracil_Blesch2003_reference" status="extracted" stale="true" population="" measured-compound="" parameterization="" topology=""></dbs-pgx>
+<div class="pk-model-meta" hidden drug="fluorouracil" model-id="Fluorouracil_Blesch2003_reference" status="extracted" stale="true" population="" measured-compound="" parameterization="" topology=""></div>
 
 **Model structure:** —; no model was built for this record.  
 **Parameters:** 0 extracted.

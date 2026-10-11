@@ -21,8 +21,7 @@
 Mugabo P et al., Ethionamide population pharmacokinetics…, British journal of clinical… (2021)
   ·  DOI: [10.1111/bcp.14795](https://doi.org/10.1111/bcp.14795)
 
-## Model component
-<dbs-pgx drug="ethionamide" model-id="Ethionamide_Mugabo2021_reference" status="rejected" stale="false" population="adult patients with drug-resistant tuberculosis" measured-compound="ethionamide" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="ethionamide" model-id="Ethionamide_Mugabo2021_reference" status="rejected" stale="false" population="adult patients with drug-resistant tuberculosis" measured-compound="ethionamide" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

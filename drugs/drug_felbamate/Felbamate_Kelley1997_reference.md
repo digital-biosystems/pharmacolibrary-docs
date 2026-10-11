@@ -28,8 +28,7 @@ Nothing in the extracted data describes the drug's disposition, so there is no m
 Kelley MT et al., Population pharmacokinetics of felbamat…, Therapeutic drug monitoring (1997)
   ·  DOI: [10.1097/00007691-199702000-00005](https://doi.org/10.1097/00007691-199702000-00005)
 
-## Model component
-<dbs-pgx drug="felbamate" model-id="Felbamate_Kelley1997_reference" status="needs_review" stale="true" population="children" measured-compound="felbamate" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="felbamate" model-id="Felbamate_Kelley1997_reference" status="needs_review" stale="true" population="children" measured-compound="felbamate" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 1 extracted.

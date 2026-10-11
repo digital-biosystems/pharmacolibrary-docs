@@ -22,8 +22,7 @@
 Cai L et al., Intranasal diamorphine population pharm…, CPT: pharmacometrics & syst… (2025)
   ·  DOI: [10.1002/psp4.13186](https://doi.org/10.1002/psp4.13186)
 
-## Model component
-<dbs-pgx drug="diamorphine" model-id="Diamorphine_Cai2025_population_value_estimation_mode" status="rejected" stale="false" population="adults (model) with pediatric simulation for breakthrough pain" measured-compound="morphine" parameterization="mechanistic" topology="general_linear"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="diamorphine" model-id="Diamorphine_Cai2025_population_value_estimation_mode" status="rejected" stale="false" population="adults (model) with pediatric simulation for breakthrough pain" measured-compound="morphine" parameterization="mechanistic" topology="general_linear"></div>
 
 **Model structure:** general linear; no model was built for this record.  
 **Parameters:** 0 extracted.

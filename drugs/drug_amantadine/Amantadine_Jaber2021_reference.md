@@ -25,8 +25,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on paramet
 Jaber MM et al., Application of Deep Neural Networks as…, Pharmaceutics (2021)
   ·  DOI: [10.3390/pharmaceutics13060797](https://doi.org/10.3390/pharmaceutics13060797)
 
-## Model component
-<dbs-pgx drug="amantadine" model-id="Amantadine_Jaber2021_reference" status="extracted" stale="false" population="" measured-compound="amantadine" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="amantadine" model-id="Amantadine_Jaber2021_reference" status="extracted" stale="false" population="" measured-compound="amantadine" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 3 extracted.

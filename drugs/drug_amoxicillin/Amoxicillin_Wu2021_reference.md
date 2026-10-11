@@ -29,8 +29,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on `parame
 Wu YE et al., Population Pharmacokinetics and Dosing…, Journal of clinical pharmac… (2021)
   ·  DOI: [10.1002/jcph.1752](https://doi.org/10.1002/jcph.1752)
 
-## Model component
-<dbs-pgx drug="amoxicillin" model-id="Amoxicillin_Wu2021_reference" status="extracted" stale="true" population="Chinese infants" measured-compound="amoxicillin" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="amoxicillin" model-id="Amoxicillin_Wu2021_reference" status="extracted" stale="true" population="Chinese infants" measured-compound="amoxicillin" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment, oral mammillary model — template `PK_2C_enteral`.  
 **Parameters:** 5 extracted.

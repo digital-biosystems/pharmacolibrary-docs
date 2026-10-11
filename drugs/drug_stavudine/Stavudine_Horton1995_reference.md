@@ -29,8 +29,7 @@ The absorption rate constant is reported as 2.38 liters/h, which is dimensionall
 Horton CM et al., Population pharmacokinetics of stavudin…, Antimicrobial agents and ch… (1995)
   ·  DOI: [10.1128/AAC.39.10.2309](https://doi.org/10.1128/AAC.39.10.2309)
 
-## Model component
-<dbs-pgx drug="stavudine" model-id="Stavudine_Horton1995_reference" status="" stale="true" population="patients with AIDS or advanced AIDS-related complex" measured-compound="" parameterization="" topology=""></dbs-pgx>
+<div class="pk-model-meta" hidden drug="stavudine" model-id="Stavudine_Horton1995_reference" status="" stale="true" population="patients with AIDS or advanced AIDS-related complex" measured-compound="" parameterization="" topology=""></div>
 
 **Model structure:** —; no model was built for this record.  
 **Parameters:** 0 extracted.

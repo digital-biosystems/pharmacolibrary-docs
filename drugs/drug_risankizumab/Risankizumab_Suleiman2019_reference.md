@@ -21,8 +21,7 @@
 Suleiman AA et al., Population Pharmacokinetics of Risankiz…, Clinical pharmacokinetics (2019)
   ·  DOI: [10.1007/s40262-019-00759-z](https://doi.org/10.1007/s40262-019-00759-z)
 
-## Model component
-<dbs-pgx drug="risankizumab" model-id="Risankizumab_Suleiman2019_reference" status="extracted" stale="false" population="healthy volunteers and subjects with moderate to severe plaque psoriasis" measured-compound="risankizumab" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="risankizumab" model-id="Risankizumab_Suleiman2019_reference" status="extracted" stale="false" population="healthy volunteers and subjects with moderate to severe plaque psoriasis" measured-compound="risankizumab" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment, oral mammillary model — template `PK_2C_enteral`.  
 **Parameters:** 6 extracted, plus 5 covariate effects.

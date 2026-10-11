@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the val
 Allegaert K et al., Paracetamol pharmacokinetics and metabo…, BMC anesthesiology (2015)
   ·  DOI: [10.1186/s12871-015-0144-3](https://doi.org/10.1186/s12871-015-0144-3)
 
-## Model component
-<dbs-pgx drug="paracetamol" model-id="Paracetamol_Allegaert2015_reference" status="extracted" stale="true" population="young women" measured-compound="paracetamol" parameterization="mechanistic" topology="general_linear"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="paracetamol" model-id="Paracetamol_Allegaert2015_reference" status="extracted" stale="true" population="young women" measured-compound="paracetamol" parameterization="mechanistic" topology="general_linear"></div>
 
 **Model structure:** 2-compartment general linear model (non-mammillary edges) — template `PK_General_Linear`.  
 **Parameters:** 9 extracted.

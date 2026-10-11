@@ -21,8 +21,7 @@
 Krishna S et al., Pharmacokinetics, efficacy and toxicity…, British journal of clinical… (1993)
   ·  DOI: [10.1111/j.1365-2125.1993.tb00419.x](https://doi.org/10.1111/j.1365-2125.1993.tb00419.x)
 
-## Model component
-<dbs-pgx drug="halofantrine" model-id="Halofantrine_Krishna1993_reference" status="rejected" stale="false" population="adults with acute uncomplicated falciparum malaria" measured-compound="halofantrine" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="halofantrine" model-id="Halofantrine_Krishna1993_reference" status="rejected" stale="false" population="adults with acute uncomplicated falciparum malaria" measured-compound="halofantrine" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

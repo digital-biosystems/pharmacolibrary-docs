@@ -23,8 +23,7 @@
 Bertler A et al., Pharmacokinetics of chlorazepate after…, Psychopharmacology (1983)
   ·  DOI: [10.1007/BF00436160](https://doi.org/10.1007/BF00436160)
 
-## Model component
-<dbs-pgx drug="nordazepam" model-id="Nordazepam_Bertler1983_reference" status="rejected" stale="false" population="healthy adults" measured-compound="desmethyldiazepam (nordazepam)" parameterization="mechanistic" topology="general_linear"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="nordazepam" model-id="Nordazepam_Bertler1983_reference" status="rejected" stale="false" population="healthy adults" measured-compound="desmethyldiazepam (nordazepam)" parameterization="mechanistic" topology="general_linear"></div>
 
 **Model structure:** general linear; no model was built for this record.  
 **Parameters:** 2 extracted.

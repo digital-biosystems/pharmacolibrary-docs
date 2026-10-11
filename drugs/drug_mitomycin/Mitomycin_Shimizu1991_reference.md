@@ -20,8 +20,7 @@
 Shimizu E et al., Pharmacokinetics of bronchial artery in…, European journal of cancer… (1991)
   ·  DOI: [10.1016/0277-5379(91)90278-l](https://doi.org/10.1016/0277-5379(91)90278-l)
 
-## Model component
-<dbs-pgx drug="mitomycin" model-id="Mitomycin_Shimizu1991_reference" status="rejected" stale="false" population="patients with non-small cell lung cancer" measured-compound="mitomycin" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="mitomycin" model-id="Mitomycin_Shimizu1991_reference" status="rejected" stale="false" population="patients with non-small cell lung cancer" measured-compound="mitomycin" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 5 extracted.

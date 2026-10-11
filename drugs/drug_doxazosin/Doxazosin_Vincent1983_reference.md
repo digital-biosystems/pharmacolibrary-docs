@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on bioavai
 Vincent J et al., Doxazosin, an alpha 1-adrenoceptor anta…, British journal of clinical… (1983)
   ·  DOI: [10.1111/j.1365-2125.1983.tb01556.x](https://doi.org/10.1111/j.1365-2125.1983.tb01556.x)
 
-## Model component
-<dbs-pgx drug="doxazosin" model-id="Doxazosin_Vincent1983_reference" status="rejected" stale="true" population="normotensive volunteers" measured-compound="doxazosin" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="doxazosin" model-id="Doxazosin_Vincent1983_reference" status="rejected" stale="true" population="normotensive volunteers" measured-compound="doxazosin" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

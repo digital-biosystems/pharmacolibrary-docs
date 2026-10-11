@@ -12,8 +12,7 @@
 Nikolaidis S; Kosmidis I; Papadopoulos S; Lioupi A; Gandanidou M; Gika H; Dokoumetzidis A; Theodoridis G; Mougios V et al. (2026). British journal of pharmacology 183
   ·  DOI: [10.1111/bph.70208](https://doi.org/10.1111/bph.70208)
 
-## Model component
-<dbs-pgx drug="metformin" model-id="Metformin_Nikolaidis2026_base" status="extracted" stale="false" population="healthy men" measured-compound="metformin" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="metformin" model-id="Metformin_Nikolaidis2026_base" status="extracted" stale="false" population="healthy men" measured-compound="metformin" parameterization="apparent" topology="1C"></div>
 
 **Parameterization:** CL/F, V/F — apparent, F unknown (apparent — bioavailability not identifiable).
 

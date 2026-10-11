@@ -28,8 +28,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the val
 Kirchheiner J et al., Pharmacokinetics and pharmacodynamics o…, Clinical pharmacology and t… (2006)
   ·  DOI: [10.1016/j.clpt.2006.09.008](https://doi.org/10.1016/j.clpt.2006.09.008)
 
-## Model component
-<dbs-pgx drug="rosiglitazone" model-id="Rosiglitazone_Kirchheiner2006_reference" status="needs_review" stale="false" population="healthy volunteers" measured-compound="rosiglitazone" parameterization="mechanistic" topology="parent_metabolite"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="rosiglitazone" model-id="Rosiglitazone_Kirchheiner2006_reference" status="needs_review" stale="false" population="healthy volunteers" measured-compound="rosiglitazone" parameterization="mechanistic" topology="parent_metabolite"></div>
 
 **Model structure:** parent + metabolite; no model was built for this record.  
 **Parameters:** 3 extracted.

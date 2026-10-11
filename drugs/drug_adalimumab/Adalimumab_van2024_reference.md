@@ -21,8 +21,7 @@
 van Huizen A et al., Quantifying the Effect of Methotrexate…, The Journal of investigativ… (2024)
   ·  DOI: [10.1016/j.jid.2023.10.022](https://doi.org/10.1016/j.jid.2023.10.022)
 
-## Model component
-<dbs-pgx drug="adalimumab" model-id="Adalimumab_van2024_reference" status="extracted" stale="false" population="patients with psoriasis" measured-compound="adalimumab" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="adalimumab" model-id="Adalimumab_van2024_reference" status="extracted" stale="false" population="patients with psoriasis" measured-compound="adalimumab" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 2 extracted.

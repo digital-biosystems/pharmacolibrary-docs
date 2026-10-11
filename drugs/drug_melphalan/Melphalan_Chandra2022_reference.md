@@ -21,8 +21,7 @@
 Chandra S et al., Test-dose pharmacokinetics guided melph…, British journal of clinical… (2022)
   ·  DOI: [10.1111/bcp.14932](https://doi.org/10.1111/bcp.14932)
 
-## Model component
-<dbs-pgx drug="melphalan" model-id="Melphalan_Chandra2022_reference" status="rejected" stale="false" population="children and young adults with non-malignant disorders" measured-compound="melphalan" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="melphalan" model-id="Melphalan_Chandra2022_reference" status="rejected" stale="false" population="children and young adults with non-malignant disorders" measured-compound="melphalan" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

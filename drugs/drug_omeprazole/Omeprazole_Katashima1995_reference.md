@@ -30,8 +30,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 ## Citation
 Katashima M et al., Comparative pharmacokinetic/pharmacodyn…, Drug metabolism and disposi… (1995)
 
-## Model component
-<dbs-pgx drug="omeprazole" model-id="Omeprazole_Katashima1995_reference" status="needs_review" stale="false" population="rats" measured-compound="omeprazole" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="omeprazole" model-id="Omeprazole_Katashima1995_reference" status="needs_review" stale="false" population="rats" measured-compound="omeprazole" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 4 extracted.

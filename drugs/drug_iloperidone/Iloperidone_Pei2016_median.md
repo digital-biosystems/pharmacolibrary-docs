@@ -20,8 +20,7 @@
 Pei Q et al., Influences of CYP2D6, Acta pharmacologica Sinica (2016)
   ·  DOI: [10.1038/aps.2016.96](https://doi.org/10.1038/aps.2016.96)
 
-## Model component
-<dbs-pgx drug="iloperidone" model-id="Iloperidone_Pei2016_median" status="rejected" stale="false" population="Chinese schizophrenia patients" measured-compound="iloperidone" parameterization="mechanistic" topology="general_linear"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="iloperidone" model-id="Iloperidone_Pei2016_median" status="rejected" stale="false" population="Chinese schizophrenia patients" measured-compound="iloperidone" parameterization="mechanistic" topology="general_linear"></div>
 
 **Model structure:** general linear; no model was built for this record.  
 **Parameters:** 0 extracted.

@@ -23,8 +23,7 @@
 Kim JH et al., Evaluation of Lidocaine and Metabolite…, Pharmaceutics (2021)
   ·  DOI: [10.3390/pharmaceutics13020203](https://doi.org/10.3390/pharmaceutics13020203)
 
-## Model component
-<dbs-pgx drug="hyaluronic acid" model-id="HyaluronicAcid_Kim2021_reference" status="rejected" stale="false" population="" measured-compound="hyaluronic_acid" parameterization="apparent" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="hyaluronic acid" model-id="HyaluronicAcid_Kim2021_reference" status="rejected" stale="false" population="" measured-compound="hyaluronic_acid" parameterization="apparent" topology="2C"></div>
 
 **Model structure:** 2-compartment; no model was built for this record.  
 **Parameters:** 5 extracted.

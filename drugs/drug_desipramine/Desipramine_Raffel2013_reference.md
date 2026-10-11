@@ -22,8 +22,7 @@
 Raffel DM et al., Quantification of cardiac sympathetic n…, Journal of nuclear medicine… (2013)
   ·  DOI: [10.2967/jnumed.113.120659](https://doi.org/10.2967/jnumed.113.120659)
 
-## Model component
-<dbs-pgx drug="desipramine" model-id="Desipramine_Raffel2013_reference" status="rejected" stale="false" population="" measured-compound="desipramine" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="desipramine" model-id="Desipramine_Raffel2013_reference" status="rejected" stale="false" population="" measured-compound="desipramine" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 2 extracted.

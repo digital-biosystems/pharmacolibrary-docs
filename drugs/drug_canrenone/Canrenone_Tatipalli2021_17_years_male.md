@@ -25,8 +25,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which m
 Tatipalli M et al., Model-Informed Optimization of a Pediat…, Pharmaceutics (2021)
   ·  DOI: [10.3390/pharmaceutics13060849](https://doi.org/10.3390/pharmaceutics13060849)
 
-## Model component
-<dbs-pgx drug="canrenone" model-id="Canrenone_Tatipalli2021_17_years_male" status="needs_review" stale="false" population="healthy adults" measured-compound="spironolactone" parameterization="mechanistic" topology="parent_metabolite"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="canrenone" model-id="Canrenone_Tatipalli2021_17_years_male" status="needs_review" stale="false" population="healthy adults" measured-compound="spironolactone" parameterization="mechanistic" topology="parent_metabolite"></div>
 
 **Model structure:** parent + metabolite; no model was built for this record.  
 **Parameters:** 12 extracted.

@@ -21,8 +21,7 @@
 Diezi L et al., An innovative ethosuximide granule form…, Pharmacology research & per… (2023)
   ·  DOI: [10.1002/prp2.1032](https://doi.org/10.1002/prp2.1032)
 
-## Model component
-<dbs-pgx drug="ethosuximide" model-id="Ethosuximide_Diezi2023_final_model" status="extracted" stale="false" population="healthy adults" measured-compound="ethosuximide" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="ethosuximide" model-id="Ethosuximide_Diezi2023_final_model" status="extracted" stale="false" population="healthy adults" measured-compound="ethosuximide" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment, oral mammillary model — template `PK_2C_enteral`.  
 **Parameters:** 6 extracted.

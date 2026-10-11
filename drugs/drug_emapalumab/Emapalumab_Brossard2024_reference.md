@@ -21,8 +21,7 @@
 Brossard P et al., Population Pharmacokinetics of the Anti…, Rheumatology and therapy (2024)
   ·  DOI: [10.1007/s40744-024-00669-y](https://doi.org/10.1007/s40744-024-00669-y)
 
-## Model component
-<dbs-pgx drug="emapalumab" model-id="Emapalumab_Brossard2024_reference" status="needs_review" stale="false" population="patients with primary HLH or MAS in sJIA" measured-compound="emapalumab" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="emapalumab" model-id="Emapalumab_Brossard2024_reference" status="needs_review" stale="false" population="patients with primary HLH or MAS in sJIA" measured-compound="emapalumab" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment; no model was built for this record.  
 **Parameters:** 5 extracted.

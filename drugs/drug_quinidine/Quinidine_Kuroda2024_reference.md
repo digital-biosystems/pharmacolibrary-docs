@@ -35,8 +35,7 @@ Independently confirmed by `gpt-oss:120b`.
 Kuroda T et al., Rational quinidine dosage regimen for a…, Frontiers in veterinary sci… (2024)
   ·  DOI: [10.3389/fvets.2024.1454342](https://doi.org/10.3389/fvets.2024.1454342)
 
-## Model component
-<dbs-pgx drug="quinidine" model-id="Quinidine_Kuroda2024_reference" status="extracted" stale="true" population="Thoroughbred racehorses" measured-compound="quinidine" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="quinidine" model-id="Quinidine_Kuroda2024_reference" status="extracted" stale="true" population="Thoroughbred racehorses" measured-compound="quinidine" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment, oral mammillary model — template `PK_2C_enteral`.  
 **Parameters:** 13 extracted.

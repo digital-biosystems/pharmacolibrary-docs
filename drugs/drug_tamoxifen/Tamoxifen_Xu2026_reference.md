@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on paramet
 Xu H et al., Noncanonical NF-κB pathway driven infla…, Frontiers in immunology (2026)
   ·  DOI: [10.3389/fimmu.2026.1825442](https://doi.org/10.3389/fimmu.2026.1825442)
 
-## Model component
-<dbs-pgx drug="tamoxifen" model-id="Tamoxifen_Xu2026_reference" status="extracted" stale="true" population="" measured-compound="tamoxifen" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="tamoxifen" model-id="Tamoxifen_Xu2026_reference" status="extracted" stale="true" population="" measured-compound="tamoxifen" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameters:** 2 extracted.

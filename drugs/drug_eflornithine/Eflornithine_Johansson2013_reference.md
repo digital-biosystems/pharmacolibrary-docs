@@ -25,8 +25,7 @@
 Johansson CC et al., Population pharmacokinetic modeling and…, Journal of pharmacokinetics… (2013)
   ·  DOI: [10.1007/s10928-012-9293-x](https://doi.org/10.1007/s10928-012-9293-x)
 
-## Model component
-<dbs-pgx drug="eflornithine" model-id="Eflornithine_Johansson2013_reference" status="rejected" stale="false" population="rat" measured-compound="L-eflornithine" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="eflornithine" model-id="Eflornithine_Johansson2013_reference" status="rejected" stale="false" population="rat" measured-compound="L-eflornithine" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 5 extracted.

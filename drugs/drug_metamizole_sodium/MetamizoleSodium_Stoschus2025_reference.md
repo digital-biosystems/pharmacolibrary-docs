@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the val
 Stoschus M et al., Optimizing phenobarbital dosing in crit…, Epilepsia (2025)
   ·  DOI: [10.1111/epi.18517](https://doi.org/10.1111/epi.18517)
 
-## Model component
-<dbs-pgx drug="metamizole sodium" model-id="MetamizoleSodium_Stoschus2025_reference" status="extracted" stale="true" population="" measured-compound="metamizole_sodium" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="metamizole sodium" model-id="MetamizoleSodium_Stoschus2025_reference" status="extracted" stale="true" population="" measured-compound="metamizole_sodium" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 3 extracted.

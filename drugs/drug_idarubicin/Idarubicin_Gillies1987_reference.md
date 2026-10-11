@@ -21,8 +21,7 @@
 Gillies HC et al., Pharmacokinetics of idarubicin (4-demet…, British journal of clinical… (1987)
   ·  DOI: [10.1111/j.1365-2125.1987.tb03049.x](https://doi.org/10.1111/j.1365-2125.1987.tb03049.x)
 
-## Model component
-<dbs-pgx drug="idarubicin" model-id="Idarubicin_Gillies1987_reference" status="needs_review" stale="false" population="patients with advanced malignant disease" measured-compound="idarubicin" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="idarubicin" model-id="Idarubicin_Gillies1987_reference" status="needs_review" stale="false" population="patients with advanced malignant disease" measured-compound="idarubicin" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 3 extracted.

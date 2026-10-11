@@ -29,8 +29,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on paramet
 Yu H et al., Exposure-response modeling for nausea i…, CPT: pharmacometrics & syst… (2024)
   ·  DOI: [10.1002/psp4.13194](https://doi.org/10.1002/psp4.13194)
 
-## Model component
-<dbs-pgx drug="dulaglutide" model-id="Dulaglutide_Yu2024_reference" status="extracted" stale="true" population="" measured-compound="dulaglutide" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="dulaglutide" model-id="Dulaglutide_Yu2024_reference" status="extracted" stale="true" population="" measured-compound="dulaglutide" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 3 extracted.

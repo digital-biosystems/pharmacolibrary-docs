@@ -21,8 +21,7 @@
 Kawuma AN et al., Dolutegravir pharmacokinetics during co…, The Journal of antimicrobia… (2021)
   ·  DOI: [10.1093/jac/dkab022](https://doi.org/10.1093/jac/dkab022)
 
-## Model component
-<dbs-pgx drug="dolutegravir" model-id="Dolutegravir_Kawuma2021_reference" status="rejected" stale="false" population="healthy volunteers" measured-compound="dolutegravir" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="dolutegravir" model-id="Dolutegravir_Kawuma2021_reference" status="rejected" stale="false" population="healthy volunteers" measured-compound="dolutegravir" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment; no model was built for this record.  
 **Parameters:** 5 extracted.

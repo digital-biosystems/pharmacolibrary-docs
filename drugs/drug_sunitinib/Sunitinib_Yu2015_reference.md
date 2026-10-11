@@ -23,8 +23,7 @@
 Yu H et al., Integrated semi-physiological pharmacok…, British journal of clinical… (2015)
   ·  DOI: [10.1111/bcp.12550](https://doi.org/10.1111/bcp.12550)
 
-## Model component
-<dbs-pgx drug="sunitinib" model-id="Sunitinib_Yu2015_reference" status="rejected" stale="false" population="cancer patients" measured-compound="sunitinib and SU12662" parameterization="mechanistic" topology="parent_metabolite"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="sunitinib" model-id="Sunitinib_Yu2015_reference" status="rejected" stale="false" population="cancer patients" measured-compound="sunitinib and SU12662" parameterization="mechanistic" topology="parent_metabolite"></div>
 
 **Model structure:** parent + metabolite; no model was built for this record.  
 **Parameters:** 5 extracted.

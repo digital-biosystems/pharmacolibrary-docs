@@ -21,8 +21,7 @@
 Wang J et al., Population Pharmacokinetics of Voricona…, Journal of clinical pharmac… (2024)
   ·  DOI: [10.1002/jcph.2357](https://doi.org/10.1002/jcph.2357)
 
-## Model component
-<dbs-pgx drug="voriconazole" model-id="Voriconazole_Wang2024_reference" status="extracted" stale="false" population="elderly Chinese patients with invasive aspergillosis" measured-compound="voriconazole" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="voriconazole" model-id="Voriconazole_Wang2024_reference" status="extracted" stale="false" population="elderly Chinese patients with invasive aspergillosis" measured-compound="voriconazole" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameters:** 2 extracted.

@@ -33,8 +33,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the val
 Kurup S et al., Semi-mechanistic population pharmacokin…, Journal of pharmacokinetics… (2024)
   ·  DOI: [10.1007/s10928-024-09947-2](https://doi.org/10.1007/s10928-024-09947-2)
 
-## Model component
-<dbs-pgx drug="angiotensin II" model-id="AngiotensinIi_Kurup2024_reference" status="rejected" stale="true" population="" measured-compound="angiotensin_ii" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="angiotensin II" model-id="AngiotensinIi_Kurup2024_reference" status="rejected" stale="true" population="" measured-compound="angiotensin_ii" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment; no model was built for this record.  
 **Parameters:** 4 extracted.

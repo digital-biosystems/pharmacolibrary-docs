@@ -21,8 +21,7 @@
 Kim H et al., Population Pharmacokinetics and Model-I…, Drug design, development an… (2026)
   ·  DOI: [10.2147/DDDT.S605741](https://doi.org/10.2147/DDDT.S605741)
 
-## Model component
-<dbs-pgx drug="lenalidomide" model-id="Lenalidomide_Kim2026_moderate_ri" status="rejected" stale="false" population="adults with multiple myeloma and renal impairment" measured-compound="lenalidomide" parameterization="apparent" topology="3C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="lenalidomide" model-id="Lenalidomide_Kim2026_moderate_ri" status="rejected" stale="false" population="adults with multiple myeloma and renal impairment" measured-compound="lenalidomide" parameterization="apparent" topology="3C"></div>
 
 **Model structure:** 3-compartment; no model was built for this record.  
 **Parameters:** 12 extracted.

@@ -21,8 +21,7 @@
 Guo W; Xu Z; Zou H; Li F; Li Y; Feng J; et al. et al. (2023). Molecular metabolism 75
   ·  DOI: [10.1016/j.molmet.2023.101762](https://doi.org/10.1016/j.molmet.2023.101762)
 
-## Model component
-<dbs-pgx drug="semaglutide" model-id="Semaglutide_Guo2023_reference" status="rejected" stale="true" population="" measured-compound="semaglutide" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="semaglutide" model-id="Semaglutide_Guo2023_reference" status="rejected" stale="true" population="" measured-compound="semaglutide" parameterization="apparent" topology="1C"></div>
 
 **Parameterization:** CL/F, V/F — apparent, F unknown (apparent — bioavailability not identifiable).
 

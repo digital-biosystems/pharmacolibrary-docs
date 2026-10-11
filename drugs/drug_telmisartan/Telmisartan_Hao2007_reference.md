@@ -33,8 +33,7 @@ Independently confirmed by `gpt-oss:120b`.
 Hao K et al., Pharmacokinetic-pharmacodynamic modelin…, Acta pharmacologica Sinica (2007)
   ·  DOI: [10.1111/j.1745-7254.2007.00556.x](https://doi.org/10.1111/j.1745-7254.2007.00556.x)
 
-## Model component
-<dbs-pgx drug="telmisartan" model-id="Telmisartan_Hao2007_reference" status="rejected" stale="true" population="spontaneously hypertensive rats" measured-compound="telmisartan" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="telmisartan" model-id="Telmisartan_Hao2007_reference" status="rejected" stale="true" population="spontaneously hypertensive rats" measured-compound="telmisartan" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted, plus 1 covariate effect.

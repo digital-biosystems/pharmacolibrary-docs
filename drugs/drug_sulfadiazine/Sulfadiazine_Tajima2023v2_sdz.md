@@ -23,8 +23,7 @@
 Tajima T et al., Oral pharmacokinetics of sulfadiazine a…, The Journal of veterinary m… (2023)
   ·  DOI: [10.1292/jvms.23-0110](https://doi.org/10.1292/jvms.23-0110)
 
-## Model component
-<dbs-pgx drug="sulfadiazine" model-id="Sulfadiazine_Tajima2023v2_sdz" status="extracted" stale="false" population="female Holstein milking cows" measured-compound="sulfadiazine" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="sulfadiazine" model-id="Sulfadiazine_Tajima2023v2_sdz" status="extracted" stale="false" population="female Holstein milking cows" measured-compound="sulfadiazine" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 11 extracted.

@@ -31,8 +31,7 @@ Independently confirmed by `gpt-oss:120b`.
 Puszkiel A et al., Evaluation of the Interaction of Amino…, Clinical pharmacokinetics (2019)
   ·  DOI: [10.1007/s40262-018-0674-1](https://doi.org/10.1007/s40262-018-0674-1)
 
-## Model component
-<dbs-pgx drug="lutetium (177Lu) oxodotreotide" model-id="Lutetium177luOxodotreotide_Puszkiel2019_reference" status="rejected" stale="true" population="cancer patients" measured-compound="lutetium_177lu_oxodotreotide" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="lutetium (177Lu) oxodotreotide" model-id="Lutetium177luOxodotreotide_Puszkiel2019_reference" status="rejected" stale="true" population="cancer patients" measured-compound="lutetium_177lu_oxodotreotide" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

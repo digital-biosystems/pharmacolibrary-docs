@@ -20,8 +20,7 @@
 Krause A et al., Population pharmacokinetic modeling of…, CPT: pharmacometrics & syst… (2023)
   ·  DOI: [10.1002/psp4.12877](https://doi.org/10.1002/psp4.12877)
 
-## Model component
-<dbs-pgx drug="daridorexant" model-id="Daridorexant_Krause2023_food" status="rejected" stale="false" population="healthy subjects and patients with insomnia disorder (phase I-III pooled)" measured-compound="daridorexant" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="daridorexant" model-id="Daridorexant_Krause2023_food" status="rejected" stale="false" population="healthy subjects and patients with insomnia disorder (phase I-III pooled)" measured-compound="daridorexant" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

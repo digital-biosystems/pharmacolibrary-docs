@@ -20,8 +20,7 @@
 Qi Y et al., Development of a Weight-Band Dosing App…, Clinical pharmacokinetics (2024)
   ·  DOI: [10.1007/s40262-024-01371-6](https://doi.org/10.1007/s40262-024-01371-6)
 
-## Model component
-<dbs-pgx drug="vosoritide" model-id="Vosoritide_Qi2024_median" status="rejected" stale="false" population="children with achondroplasia" measured-compound="vosoritide" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="vosoritide" model-id="Vosoritide_Qi2024_median" status="rejected" stale="false" population="children with achondroplasia" measured-compound="vosoritide" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 4 extracted, plus 2 covariate effects.

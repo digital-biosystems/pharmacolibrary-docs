@@ -21,8 +21,7 @@
 Valderrama D et al., Comparing Scientific Machine Learning W…, CPT: pharmacometrics & syst… (2025)
   ·  DOI: [10.1002/psp4.13313](https://doi.org/10.1002/psp4.13313)
 
-## Model component
-<dbs-pgx drug="sunitinib" model-id="Sunitinib_Valderrama2025_reference" status="extracted" stale="false" population="patients receiving sunitinib" measured-compound="sunitinib" parameterization="mechanistic" topology="parent_metabolite"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="sunitinib" model-id="Sunitinib_Valderrama2025_reference" status="extracted" stale="false" population="patients receiving sunitinib" measured-compound="sunitinib" parameterization="mechanistic" topology="parent_metabolite"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 3 extracted.

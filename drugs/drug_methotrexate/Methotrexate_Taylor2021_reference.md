@@ -29,8 +29,7 @@ The values on this record come from other papers. Extracted — methotrexate: CL
 Taylor ZL et al., Toward pharmacogenetic SLCO1B1-guided d…, Clinical and translational… (2021)
   ·  DOI: [10.1111/cts.13086](https://doi.org/10.1111/cts.13086)
 
-## Model component
-<dbs-pgx drug="methotrexate" model-id="Methotrexate_Taylor2021_reference" status="rejected" stale="false" population="mice with collagen-induced arthritis" measured-compound="methotrexate" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="methotrexate" model-id="Methotrexate_Taylor2021_reference" status="rejected" stale="false" population="mice with collagen-induced arthritis" measured-compound="methotrexate" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

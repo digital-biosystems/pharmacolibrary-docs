@@ -21,8 +21,7 @@
 Goodchild CS et al., Pharmacokinetic and Pharmacodynamic Ana…, Anesthesia and analgesia (2020)
   ·  DOI: [10.1213/ANE.0000000000004204](https://doi.org/10.1213/ANE.0000000000004204)
 
-## Model component
-<dbs-pgx drug="alfaxalone" model-id="Alfaxalone_Goodchild2020_reference" status="extracted" stale="false" population="healthy male volunteers" measured-compound="alfaxalone" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="alfaxalone" model-id="Alfaxalone_Goodchild2020_reference" status="extracted" stale="false" population="healthy male volunteers" measured-compound="alfaxalone" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment, IV mammillary model — template `PK_2C`.  
 **Parameters:** 7 extracted.

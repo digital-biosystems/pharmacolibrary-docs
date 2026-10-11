@@ -30,8 +30,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Scherholz ML et al., A framework for 2-stage global sensitiv…, Journal of pharmacokinetics… (2018)
   ·  DOI: [10.1007/s10928-018-9573-1](https://doi.org/10.1007/s10928-018-9573-1)
 
-## Model component
-<dbs-pgx drug="atenolol" model-id="Atenolol_Scherholz2018_reference" status="rejected" stale="true" population="virtual subjects (in silico)" measured-compound="acetaminophen, risperidone, atenolol, furosemide" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="atenolol" model-id="Atenolol_Scherholz2018_reference" status="rejected" stale="true" population="virtual subjects (in silico)" measured-compound="acetaminophen, risperidone, atenolol, furosemide" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

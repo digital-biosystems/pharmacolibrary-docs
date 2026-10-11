@@ -21,8 +21,7 @@
 Wang HC et al., Integrated pharmacokinetic/viral dynami…, Acta pharmacologica Sinica (2018)
   ·  DOI: [10.1038/aps.2017.84](https://doi.org/10.1038/aps.2017.84)
 
-## Model component
-<dbs-pgx drug="daclatasvir" model-id="Daclatasvir_Wang2018_dcv_estimate_rse" status="extracted" stale="false" population="healthy subjects and adults with genotype 1 chronic hepatitis C" measured-compound="daclatasvir" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="daclatasvir" model-id="Daclatasvir_Wang2018_dcv_estimate_rse" status="extracted" stale="false" population="healthy subjects and adults with genotype 1 chronic hepatitis C" measured-compound="daclatasvir" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment, oral mammillary model — template `PK_2C_enteral`.  
 **Parameters:** 5 extracted.

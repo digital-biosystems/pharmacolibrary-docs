@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the val
 Vu T et al., Pharmacokinetic-Pharmacodynamic Relatio…, Pharmaceutical research (2017)
   ·  DOI: [10.1007/s11095-017-2183-6](https://doi.org/10.1007/s11095-017-2183-6)
 
-## Model component
-<dbs-pgx drug="erenumab" model-id="Erenumab_Vu2017_reference" status="rejected" stale="true" population="healthy and migraine subjects" measured-compound="erenumab" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="erenumab" model-id="Erenumab_Vu2017_reference" status="rejected" stale="true" population="healthy and migraine subjects" measured-compound="erenumab" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment; no model was built for this record.  
 **Parameters:** 8 extracted.

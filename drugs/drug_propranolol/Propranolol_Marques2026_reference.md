@@ -21,8 +21,7 @@
 Marques L et al., Model-Based Virtual Clinical Trial Reve…, Pharmaceutics (2026)
   ·  DOI: [10.3390/pharmaceutics18060636](https://doi.org/10.3390/pharmaceutics18060636)
 
-## Model component
-<dbs-pgx drug="propranolol" model-id="Propranolol_Marques2026_reference" status="extracted" stale="false" population="virtual patients" measured-compound="propranolol" parameterization="mechanistic" topology="general_linear"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="propranolol" model-id="Propranolol_Marques2026_reference" status="extracted" stale="false" population="virtual patients" measured-compound="propranolol" parameterization="mechanistic" topology="general_linear"></div>
 
 **Model structure:** 2-compartment general linear model (non-mammillary edges) — template `PK_General_Linear`.  
 **Parameters:** 5 extracted.

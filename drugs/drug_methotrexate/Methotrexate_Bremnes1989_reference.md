@@ -32,8 +32,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 ## Citation
 Bremnes RM et al., Formation and elimination of 7-hydroxym…, Cancer research (1989)
 
-## Model component
-<dbs-pgx drug="methotrexate" model-id="Methotrexate_Bremnes1989_reference" status="needs_review" stale="true" population="rats" measured-compound="methotrexate" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="methotrexate" model-id="Methotrexate_Bremnes1989_reference" status="needs_review" stale="true" population="rats" measured-compound="methotrexate" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 6 extracted.

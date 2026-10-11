@@ -33,8 +33,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on paramet
 Bae EK et al., Factors influencing topiramate clearanc…, Seizure (2016)
   ·  DOI: [10.1016/j.seizure.2016.02.002](https://doi.org/10.1016/j.seizure.2016.02.002)
 
-## Model component
-<dbs-pgx drug="pregabalin" model-id="Pregabalin_Bae2016_reference" status="extracted" stale="true" population="" measured-compound="pregabalin" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="pregabalin" model-id="Pregabalin_Bae2016_reference" status="extracted" stale="true" population="" measured-compound="pregabalin" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 3 extracted.

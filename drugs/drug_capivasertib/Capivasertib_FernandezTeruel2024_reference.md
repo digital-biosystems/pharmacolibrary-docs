@@ -21,8 +21,7 @@
 Fernandez-Teruel C et al., Population Pharmacokinetics of Capivase…, Clinical pharmacokinetics (2024)
   ·  DOI: [10.1007/s40262-024-01407-x](https://doi.org/10.1007/s40262-024-01407-x)
 
-## Model component
-<dbs-pgx drug="capivasertib" model-id="Capivasertib_FernandezTeruel2024_reference" status="needs_review" stale="false" population="patients with advanced or metastatic solid tumours" measured-compound="capivasertib" parameterization="apparent" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="capivasertib" model-id="Capivasertib_FernandezTeruel2024_reference" status="needs_review" stale="false" population="patients with advanced or metastatic solid tumours" measured-compound="capivasertib" parameterization="apparent" topology="2C"></div>
 
 **Model structure:** 2-compartment; no model was built for this record.  
 **Parameters:** 10 extracted.

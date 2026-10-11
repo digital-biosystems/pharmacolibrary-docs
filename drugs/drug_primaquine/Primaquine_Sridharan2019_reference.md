@@ -21,8 +21,7 @@
 Sridharan K et al., Population pharmacokinetics of primaqui…, Indian journal of pharmacol… (2019)
   ·  DOI: [10.4103/ijp.IJP_230_16](https://doi.org/10.4103/ijp.IJP_230_16)
 
-## Model component
-<dbs-pgx drug="primaquine" model-id="Primaquine_Sridharan2019_reference" status="extracted" stale="false" population="healthy volunteers and patients with hepatic or renal dysfunction" measured-compound="primaquine" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="primaquine" model-id="Primaquine_Sridharan2019_reference" status="extracted" stale="false" population="healthy volunteers and patients with hepatic or renal dysfunction" measured-compound="primaquine" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 4 extracted.

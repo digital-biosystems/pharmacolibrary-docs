@@ -20,8 +20,7 @@
 Struemper H et al., Population pharmacokinetics of belimuma…, Journal of clinical pharmac… (2013)
   ·  DOI: [10.1002/jcph.104](https://doi.org/10.1002/jcph.104)
 
-## Model component
-<dbs-pgx drug="belimumab" model-id="Belimumab_Struemper2013_reference" status="needs_review" stale="false" population="patients with systemic lupus erythematosus" measured-compound="belimumab" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="belimumab" model-id="Belimumab_Struemper2013_reference" status="needs_review" stale="false" population="patients with systemic lupus erythematosus" measured-compound="belimumab" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 3 extracted.

@@ -23,8 +23,7 @@
 Rumpler MJ et al., The pharmacokinetics of methocarbamol a…, Journal of veterinary pharm… (2014)
   ·  DOI: [10.1111/jvp.12068](https://doi.org/10.1111/jvp.12068)
 
-## Model component
-<dbs-pgx drug="methocarbamol" model-id="Methocarbamol_Rumpler2014_reference" status="extracted" stale="false" population="Thoroughbred horses" measured-compound="methocarbamol" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="methocarbamol" model-id="Methocarbamol_Rumpler2014_reference" status="extracted" stale="false" population="Thoroughbred horses" measured-compound="methocarbamol" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 8 extracted.

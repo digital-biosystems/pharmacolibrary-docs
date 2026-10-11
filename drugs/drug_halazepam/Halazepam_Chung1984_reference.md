@@ -20,8 +20,7 @@
 Chung M et al., Multiple-dose halazepam kinetics, Clinical pharmacology and t… (1984)
   ·  DOI: [10.1038/clpt.1984.122](https://doi.org/10.1038/clpt.1984.122)
 
-## Model component
-<dbs-pgx drug="halazepam" model-id="Halazepam_Chung1984_reference" status="rejected" stale="false" population="healthy adult men" measured-compound="halazepam" parameterization="mechanistic" topology="parent_metabolite"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="halazepam" model-id="Halazepam_Chung1984_reference" status="rejected" stale="false" population="healthy adult men" measured-compound="halazepam" parameterization="mechanistic" topology="parent_metabolite"></div>
 
 **Model structure:** parent + metabolite; no model was built for this record.  
 **Parameters:** 0 extracted.

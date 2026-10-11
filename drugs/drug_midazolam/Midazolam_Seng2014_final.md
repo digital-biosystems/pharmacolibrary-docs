@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Seng KY et al., CYP3A5*3 and bilirubin predict midazola…, Journal of clinical pharmac… (2014)
   ·  DOI: [10.1002/jcph.230](https://doi.org/10.1002/jcph.230)
 
-## Model component
-<dbs-pgx drug="midazolam" model-id="Midazolam_Seng2014_final" status="not_simulated" stale="false" population="adult cancer patients" measured-compound="midazolam" parameterization="mechanistic" topology="general_linear"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="midazolam" model-id="Midazolam_Seng2014_final" status="not_simulated" stale="false" population="adult cancer patients" measured-compound="midazolam" parameterization="mechanistic" topology="general_linear"></div>
 
 **Model structure:** 1-compartment general linear model (non-mammillary edges) — template `PK_General_Linear`.  
 **Parameters:** 11 extracted, plus 4 covariate effects.

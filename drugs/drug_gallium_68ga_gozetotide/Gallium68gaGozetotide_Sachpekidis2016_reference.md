@@ -24,8 +24,7 @@ Independently confirmed by `gpt-oss:120b`.
 Sachpekidis C et al., 68Ga-PSMA-11 Dynamic PET/CT Imaging in…, Clinical nuclear medicine (2016)
   ·  DOI: [10.1097/RLU.0000000000001349](https://doi.org/10.1097/RLU.0000000000001349)
 
-## Model component
-<dbs-pgx drug="gallium (68Ga) gozetotide" model-id="Gallium68gaGozetotide_Sachpekidis2016_reference" status="rejected" stale="false" population="patients with primary prostate cancer" measured-compound="Ga-PSMA-11" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="gallium (68Ga) gozetotide" model-id="Gallium68gaGozetotide_Sachpekidis2016_reference" status="rejected" stale="false" population="patients with primary prostate cancer" measured-compound="Ga-PSMA-11" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

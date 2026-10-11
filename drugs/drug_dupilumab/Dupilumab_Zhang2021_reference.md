@@ -21,8 +21,7 @@
 Zhang L et al., Population pharmacokinetic analysis of…, CPT: pharmacometrics & syst… (2021)
   ·  DOI: [10.1002/psp4.12667](https://doi.org/10.1002/psp4.12667)
 
-## Model component
-<dbs-pgx drug="dupilumab" model-id="Dupilumab_Zhang2021_reference" status="rejected" stale="false" population="adults and adolescents with asthma" measured-compound="dupilumab" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="dupilumab" model-id="Dupilumab_Zhang2021_reference" status="rejected" stale="false" population="adults and adolescents with asthma" measured-compound="dupilumab" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 7 extracted, plus 6 covariate effects.

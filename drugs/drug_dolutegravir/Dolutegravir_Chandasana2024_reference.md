@@ -29,8 +29,7 @@ No clearance, volume or rate constant of the model is reported in it. Only the a
 Chandasana H et al., Population Pharmacokinetic Analysis of…, Journal of clinical pharmac… (2024)
   ·  DOI: [10.1002/jcph.2494](https://doi.org/10.1002/jcph.2494)
 
-## Model component
-<dbs-pgx drug="dolutegravir" model-id="Dolutegravir_Chandasana2024_reference" status="rejected" stale="true" population="treatment-experienced adults living with HIV-1" measured-compound="dolutegravir" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="dolutegravir" model-id="Dolutegravir_Chandasana2024_reference" status="rejected" stale="true" population="treatment-experienced adults living with HIV-1" measured-compound="dolutegravir" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

@@ -30,8 +30,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Blanchette VS et al., A Practical, One-Clinic Visit Protocol…, Thrombosis and haemostasis (2021)
   ·  DOI: [10.1055/a-1376-0970](https://doi.org/10.1055/a-1376-0970)
 
-## Model component
-<dbs-pgx drug="coagulation factor VIII" model-id="CoagulationFactorViii_Blanchette2021_reference" status="rejected" stale="true" population="adults with severe hemophilia A" measured-compound="coagulation_factor_viii" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="coagulation factor VIII" model-id="CoagulationFactorViii_Blanchette2021_reference" status="rejected" stale="true" population="adults with severe hemophilia A" measured-compound="coagulation_factor_viii" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

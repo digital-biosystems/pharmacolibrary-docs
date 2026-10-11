@@ -19,8 +19,7 @@
 ## Citation
 Ma XH et al., [High performance liquid chromatographi…, Yao xue xue bao = Acta phar… (1997)
 
-## Model component
-<dbs-pgx drug="ipriflavone" model-id="Ipriflavone_Ma1997_reference" status="rejected" stale="false" population="healthy volunteers" measured-compound="ipriflavone" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="ipriflavone" model-id="Ipriflavone_Ma1997_reference" status="rejected" stale="false" population="healthy volunteers" measured-compound="ipriflavone" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 3 extracted.

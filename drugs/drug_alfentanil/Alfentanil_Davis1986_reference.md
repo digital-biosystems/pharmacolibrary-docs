@@ -33,8 +33,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the val
 Davis PJ et al., Clinical pharmacokinetics of the newer…, Clinical pharmacokinetics (1986)
   ·  DOI: [10.2165/00003088-198611010-00002](https://doi.org/10.2165/00003088-198611010-00002)
 
-## Model component
-<dbs-pgx drug="alfentanil" model-id="Alfentanil_Davis1986_reference" status="needs_review" stale="true" population="patients undergoing coronary revascularisation" measured-compound="sufentanil" parameterization="apparent" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="alfentanil" model-id="Alfentanil_Davis1986_reference" status="needs_review" stale="true" population="patients undergoing coronary revascularisation" measured-compound="sufentanil" parameterization="apparent" topology="2C"></div>
 
 **Model structure:** 2-compartment; no model was built for this record.  
 **Parameters:** 3 extracted.

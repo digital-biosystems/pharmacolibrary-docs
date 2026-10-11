@@ -21,8 +21,7 @@
 Ueshima S et al., Pharmacokinetic and pharmacodynamic cha…, Scientific reports (2025)
   ·  DOI: [10.1038/s41598-025-10015-z](https://doi.org/10.1038/s41598-025-10015-z)
 
-## Model component
-<dbs-pgx drug="remimazolam" model-id="Remimazolam_Ueshima2025_reference" status="rejected" stale="false" population="older Japanese adults undergoing general anesthesia" measured-compound="remimazolam" parameterization="mechanistic" topology="parent_metabolite"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="remimazolam" model-id="Remimazolam_Ueshima2025_reference" status="rejected" stale="false" population="older Japanese adults undergoing general anesthesia" measured-compound="remimazolam" parameterization="mechanistic" topology="parent_metabolite"></div>
 
 **Model structure:** parent + metabolite; no model was built for this record.  
 **Parameters:** 0 extracted.

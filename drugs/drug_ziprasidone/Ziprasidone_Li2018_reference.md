@@ -21,8 +21,7 @@
 Li A et al., Development of a population pharmacokin…, BMJ open (2018)
   ·  DOI: [10.1136/bmjopen-2017-020070](https://doi.org/10.1136/bmjopen-2017-020070)
 
-## Model component
-<dbs-pgx drug="ziprasidone" model-id="Ziprasidone_Li2018_reference" status="extracted" stale="false" population="" measured-compound="ziprasidone" parameterization="apparent" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="ziprasidone" model-id="Ziprasidone_Li2018_reference" status="extracted" stale="false" population="" measured-compound="ziprasidone" parameterization="apparent" topology="2C"></div>
 
 **Model structure:** 2-compartment, oral mammillary model — template `PK_2C_enteral`.  
 **Parameters:** 5 extracted.

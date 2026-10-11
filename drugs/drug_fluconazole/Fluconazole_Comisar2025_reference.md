@@ -25,8 +25,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on paramet
 Comisar CM et al., Population Pharmacokinetic Modeling of…, CPT: pharmacometrics & syst… (2025)
   ·  DOI: [10.1002/psp4.70051](https://doi.org/10.1002/psp4.70051)
 
-## Model component
-<dbs-pgx drug="fluconazole" model-id="Fluconazole_Comisar2025_reference" status="extracted" stale="false" population="" measured-compound="fluconazole" parameterization="apparent" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="fluconazole" model-id="Fluconazole_Comisar2025_reference" status="extracted" stale="false" population="" measured-compound="fluconazole" parameterization="apparent" topology="2C"></div>
 
 **Model structure:** 2-compartment, oral mammillary model — template `PK_2C_enteral`.  
 **Parameters:** 5 extracted.

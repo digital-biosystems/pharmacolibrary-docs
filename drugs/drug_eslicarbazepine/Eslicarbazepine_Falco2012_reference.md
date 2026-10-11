@@ -31,8 +31,7 @@ A model needs both clearance and volume; without the volume it could only be bui
 Falcão A et al., Pharmacokinetics, drug interactions and…, CNS drugs (2012)
   ·  DOI: [10.2165/11596290-000000000-00000](https://doi.org/10.2165/11596290-000000000-00000)
 
-## Model component
-<dbs-pgx drug="eslicarbazepine" model-id="Eslicarbazepine_Falco2012_reference" status="rejected" stale="true" population="adult patients with partial-onset seizures" measured-compound="eslicarbazepine" parameterization="mechanistic" topology="parent_metabolite"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="eslicarbazepine" model-id="Eslicarbazepine_Falco2012_reference" status="rejected" stale="true" population="adult patients with partial-onset seizures" measured-compound="eslicarbazepine" parameterization="mechanistic" topology="parent_metabolite"></div>
 
 **Model structure:** parent + metabolite; no model was built for this record.  
 **Parameters:** 0 extracted.

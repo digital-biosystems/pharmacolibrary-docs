@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the val
 Ng CM et al., Population Pharmacokinetic Model of Sub…, Pharmacotherapy (2015)
   ·  DOI: [10.1002/phar.1610](https://doi.org/10.1002/phar.1610)
 
-## Model component
-<dbs-pgx drug="buprenorphine" model-id="Buprenorphine_Ng2015_reference" status="" stale="true" population="neonates with NAS and healthy adults" measured-compound="" parameterization="" topology=""></dbs-pgx>
+<div class="pk-model-meta" hidden drug="buprenorphine" model-id="Buprenorphine_Ng2015_reference" status="" stale="true" population="neonates with NAS and healthy adults" measured-compound="" parameterization="" topology=""></div>
 
 **Model structure:** —; no model was built for this record.  
 **Parameters:** 0 extracted.

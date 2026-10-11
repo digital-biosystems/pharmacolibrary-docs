@@ -26,8 +26,7 @@ No clearance, volume or rate constant of the model is reported in it. Only the a
 Abdel-Rahman SM et al., Developmental pharmacokinetics and phar…, Journal of pediatric gastro… (2004)
   ·  DOI: [10.1097/00005176-200404000-00015](https://doi.org/10.1097/00005176-200404000-00015)
 
-## Model component
-<dbs-pgx drug="nizatidine" model-id="Nizatidine_AbdelRahman2004_reference" status="rejected" stale="false" population="children and adults" measured-compound="nizatidine" parameterization="apparent" topology="parent_metabolite"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="nizatidine" model-id="Nizatidine_AbdelRahman2004_reference" status="rejected" stale="false" population="children and adults" measured-compound="nizatidine" parameterization="apparent" topology="parent_metabolite"></div>
 
 **Model structure:** parent + metabolite; no model was built for this record.  
 **Parameters:** 0 extracted.

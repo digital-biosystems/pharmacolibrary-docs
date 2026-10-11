@@ -23,8 +23,7 @@
 Leegwater E et al., Population Pharmacokinetics of Trimetho…, Clinical pharmacology and t… (2025)
   ·  DOI: [10.1002/cpt.3421](https://doi.org/10.1002/cpt.3421)
 
-## Model component
-<dbs-pgx drug="trimethoprim" model-id="Trimethoprim_Leegwater2025_reference" status="needs_review" stale="false" population="hospitalized patients with renal insufficiency or receiving CRRT" measured-compound="trimethoprim" parameterization="apparent" topology="parent_metabolite"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="trimethoprim" model-id="Trimethoprim_Leegwater2025_reference" status="needs_review" stale="false" population="hospitalized patients with renal insufficiency or receiving CRRT" measured-compound="trimethoprim" parameterization="apparent" topology="parent_metabolite"></div>
 
 **Model structure:** parent + metabolite; no model was built for this record.  
 **Parameters:** 5 extracted, plus 1 covariate effect.

@@ -25,8 +25,7 @@
 Li DZ et al., Pharmacokinetic studies of norethistero…, Journal of Tongji Medical U… (1991)
   ·  DOI: [10.1007/BF02888093](https://doi.org/10.1007/BF02888093)
 
-## Model component
-<dbs-pgx drug="norethisterone" model-id="Norethisterone_Li1991_reference" status="rejected" stale="false" population="rhesus monkeys" measured-compound="norethisterone, norethisterone-3-oxime" parameterization="mechanistic" topology="general_linear"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="norethisterone" model-id="Norethisterone_Li1991_reference" status="rejected" stale="false" population="rhesus monkeys" measured-compound="norethisterone, norethisterone-3-oxime" parameterization="mechanistic" topology="general_linear"></div>
 
 **Model structure:** general linear; no model was built for this record.  
 **Parameters:** 4 extracted.

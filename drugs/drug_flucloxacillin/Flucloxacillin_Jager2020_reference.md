@@ -30,8 +30,7 @@ Independently confirmed by `gpt-oss:120b`.
 Jager NGL et al., Optimization of flucloxacillin dosing r…, The Journal of antimicrobia… (2020)
   ·  DOI: [10.1093/jac/dkaa187](https://doi.org/10.1093/jac/dkaa187)
 
-## Model component
-<dbs-pgx drug="flucloxacillin" model-id="Flucloxacillin_Jager2020_reference" status="" stale="true" population="critically ill patients" measured-compound="" parameterization="" topology=""></dbs-pgx>
+<div class="pk-model-meta" hidden drug="flucloxacillin" model-id="Flucloxacillin_Jager2020_reference" status="" stale="true" population="critically ill patients" measured-compound="" parameterization="" topology=""></div>
 
 **Model structure:** —; no model was built for this record.  
 **Parameters:** 0 extracted.

@@ -21,8 +21,7 @@
 de Wit D et al., Effect of gastrointestinal resection on…, BMC cancer (2014)
   ·  DOI: [10.1186/1471-2407-14-575](https://doi.org/10.1186/1471-2407-14-575)
 
-## Model component
-<dbs-pgx drug="sunitinib" model-id="Sunitinib_de2014_reference" status="needs_review" stale="false" population="GIST patients from four phase I–III trials" measured-compound="sunitinib" parameterization="apparent" topology="parent_metabolite"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="sunitinib" model-id="Sunitinib_de2014_reference" status="needs_review" stale="false" population="GIST patients from four phase I–III trials" measured-compound="sunitinib" parameterization="apparent" topology="parent_metabolite"></div>
 
 **Model structure:** parent + metabolite; no model was built for this record.  
 **Parameters:** 3 extracted.

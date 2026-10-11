@@ -23,8 +23,7 @@
 Ulaszek S et al., Exploring Tafamidis Effects Through PBP…, Pharmaceutics (2026)
   ·  DOI: [10.3390/pharmaceutics18030367](https://doi.org/10.3390/pharmaceutics18030367)
 
-## Model component
-<dbs-pgx drug="tafamidis" model-id="Tafamidis_Ulaszek2026_dosing_regimen" status="rejected" stale="false" population="virtual healthy male subjects aged 30-40 years" measured-compound="tafamidis" parameterization="mechanistic" topology="general_linear"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="tafamidis" model-id="Tafamidis_Ulaszek2026_dosing_regimen" status="rejected" stale="false" population="virtual healthy male subjects aged 30-40 years" measured-compound="tafamidis" parameterization="mechanistic" topology="general_linear"></div>
 
 **Model structure:** general linear; no model was built for this record.  
 **Parameters:** 0 extracted.

@@ -23,8 +23,7 @@
 Maciel TR et al., Improved Malaria Therapy with Cationic…, Pharmaceutics (2024)
   ·  DOI: [10.3390/pharmaceutics16111369](https://doi.org/10.3390/pharmaceutics16111369)
 
-## Model component
-<dbs-pgx drug="quinine" model-id="Quinine_Maciel2024_influence_of_nanostructures_in_mice" status="rejected" stale="false" population="P. berghei-infected rodents (rats and mice)" measured-compound="quinine" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="quinine" model-id="Quinine_Maciel2024_influence_of_nanostructures_in_mice" status="rejected" stale="false" population="P. berghei-infected rodents (rats and mice)" measured-compound="quinine" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted, plus 4 covariate effects.

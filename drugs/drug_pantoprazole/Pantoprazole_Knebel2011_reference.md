@@ -29,8 +29,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Knebel W et al., Population pharmacokinetic modeling of…, Journal of clinical pharmac… (2011)
   ·  DOI: [10.1177/0091270010366146](https://doi.org/10.1177/0091270010366146)
 
-## Model component
-<dbs-pgx drug="pantoprazole" model-id="Pantoprazole_Knebel2011_reference" status="rejected" stale="false" population="pediatric patients from birth to 16 years" measured-compound="pantoprazole" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="pantoprazole" model-id="Pantoprazole_Knebel2011_reference" status="rejected" stale="false" population="pediatric patients from birth to 16 years" measured-compound="pantoprazole" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

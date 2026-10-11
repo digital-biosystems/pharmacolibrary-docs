@@ -33,8 +33,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Lakota EA et al., Personalizing Polymyxin B Dosing Using…, Antimicrobial agents and ch… (2018)
   ·  DOI: [10.1128/AAC.00483-18](https://doi.org/10.1128/AAC.00483-18)
 
-## Model component
-<dbs-pgx drug="polymyxin B" model-id="PolymyxinB_Lakota2018_reference" status="needs_review" stale="true" population="adults with multidrug-resistant Gram-negative bacterial infections" measured-compound="polymyxin_b" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="polymyxin B" model-id="PolymyxinB_Lakota2018_reference" status="needs_review" stale="true" population="adults with multidrug-resistant Gram-negative bacterial infections" measured-compound="polymyxin_b" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 2 extracted.

@@ -21,8 +21,7 @@
 van Erp NP et al., Marginal increase of sunitinib exposure…, Cancer chemotherapy and pha… (2011)
   ·  DOI: [10.1007/s00280-010-1367-0](https://doi.org/10.1007/s00280-010-1367-0)
 
-## Model component
-<dbs-pgx drug="triazolam" model-id="Triazolam_van2011_reference" status="extracted" stale="false" population="" measured-compound="triazolam" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="triazolam" model-id="Triazolam_van2011_reference" status="extracted" stale="false" population="" measured-compound="triazolam" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 4 extracted.

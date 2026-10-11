@@ -21,8 +21,7 @@
 Sabo JP et al., Pharmacokinetics of nevirapine and lami…, AAPS pharmSci (2000)
   ·  DOI: [10.1208/ps020101](https://doi.org/10.1208/ps020101)
 
-## Model component
-<dbs-pgx drug="lamivudine" model-id="Lamivudine_Sabo2000_reference" status="needs_review" stale="false" population="HIV-1 infected patients" measured-compound="lamivudine" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="lamivudine" model-id="Lamivudine_Sabo2000_reference" status="needs_review" stale="false" population="HIV-1 infected patients" measured-compound="lamivudine" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 3 extracted.

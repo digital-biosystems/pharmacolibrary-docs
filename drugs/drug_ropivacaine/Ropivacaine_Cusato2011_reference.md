@@ -21,8 +21,7 @@
 Cusato M et al., Flip-flop kinetics of ropivacaine durin…, European journal of clinica… (2011)
   ·  DOI: [10.1007/s00228-010-0927-x](https://doi.org/10.1007/s00228-010-0927-x)
 
-## Model component
-<dbs-pgx drug="ropivacaine" model-id="Ropivacaine_Cusato2011_reference" status="extracted" stale="false" population="adults scheduled for major abdominal or urologic surgery" measured-compound="ropivacaine" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="ropivacaine" model-id="Ropivacaine_Cusato2011_reference" status="extracted" stale="false" population="adults scheduled for major abdominal or urologic surgery" measured-compound="ropivacaine" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 5 extracted.

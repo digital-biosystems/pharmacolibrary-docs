@@ -22,8 +22,7 @@
 Usach I et al., The Usefulness of In Vitro Percutaneous…, Pharmaceutics (2022)
   ·  DOI: [10.3390/pharmaceutics14071457](https://doi.org/10.3390/pharmaceutics14071457)
 
-## Model component
-<dbs-pgx drug="nortriptyline" model-id="Nortriptyline_Usach2022_reference" status="rejected" stale="false" population="rats dosed percutaneously with NT gel" measured-compound="nortriptyline" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="nortriptyline" model-id="Nortriptyline_Usach2022_reference" status="rejected" stale="false" population="rats dosed percutaneously with NT gel" measured-compound="nortriptyline" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 6 extracted.

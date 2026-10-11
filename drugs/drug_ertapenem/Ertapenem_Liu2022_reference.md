@@ -21,8 +21,7 @@
 Liu L et al., Model-Informed Precision Dosing of Anti…, Infection and drug resistan… (2022)
   ·  DOI: [10.2147/idr.s332366](https://doi.org/10.2147/idr.s332366)
 
-## Model component
-<dbs-pgx drug="ertapenem" model-id="Ertapenem_Liu2022_reference" status="rejected" stale="false" population="osteoarticular infection patients" measured-compound="unknown" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="ertapenem" model-id="Ertapenem_Liu2022_reference" status="rejected" stale="false" population="osteoarticular infection patients" measured-compound="unknown" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 2 extracted.

@@ -21,8 +21,7 @@
 Caillé G et al., Pharmacokinetics of two lorazepam formu…, Biopharmaceutics & drug dis… (1983)
   ·  DOI: [10.1002/bdd.2510040106](https://doi.org/10.1002/bdd.2510040106)
 
-## Model component
-<dbs-pgx drug="lorazepam" model-id="Lorazepam_Caill1983_reference" status="needs_review" stale="false" population="healthy male volunteers" measured-compound="lorazepam" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="lorazepam" model-id="Lorazepam_Caill1983_reference" status="needs_review" stale="false" population="healthy male volunteers" measured-compound="lorazepam" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 7 extracted.

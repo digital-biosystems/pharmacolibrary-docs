@@ -20,8 +20,7 @@
 Roy JJ et al., Concentration-effect relation of succin…, Anesthesiology (2002)
   ·  DOI: [10.1097/00000542-200211000-00009](https://doi.org/10.1097/00000542-200211000-00009)
 
-## Model component
-<dbs-pgx drug="suxamethonium" model-id="Suxamethonium_Roy2002_reference" status="needs_review" stale="false" population="anesthetized patients" measured-compound="succinylcholine" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="suxamethonium" model-id="Suxamethonium_Roy2002_reference" status="needs_review" stale="false" population="anesthetized patients" measured-compound="succinylcholine" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 1 extracted.

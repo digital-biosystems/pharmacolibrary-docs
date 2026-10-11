@@ -22,8 +22,7 @@
 Rodríguez JL et al., Bioavailability and nervous tissue dist…, Food and chemical toxicolog… (2018)
   ·  DOI: [10.1016/j.fct.2018.05.012](https://doi.org/10.1016/j.fct.2018.05.012)
 
-## Model component
-<dbs-pgx drug="cyfluthrin" model-id="Cyfluthrin_Rodrguez2018_reference" status="rejected" stale="false" population="rats" measured-compound="cyfluthrin" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="cyfluthrin" model-id="Cyfluthrin_Rodrguez2018_reference" status="rejected" stale="false" population="rats" measured-compound="cyfluthrin" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 5 extracted.

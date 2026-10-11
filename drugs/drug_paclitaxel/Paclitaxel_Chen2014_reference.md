@@ -27,8 +27,7 @@ No clearance, volume or rate constant of the model is reported in it. Only the a
 ## Citation
 not matched (stem Chen_2014)
 
-## Model component
-<dbs-pgx drug="paclitaxel" model-id="Paclitaxel_Chen2014_reference" status="rejected" stale="false" population="patients with solid tumors" measured-compound="paclitaxel" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="paclitaxel" model-id="Paclitaxel_Chen2014_reference" status="rejected" stale="false" population="patients with solid tumors" measured-compound="paclitaxel" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

@@ -32,8 +32,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Mao ZL et al., Population pharmacokinetics of vernakal…, Journal of clinical pharmac… (2012)
   ·  DOI: [10.1177/0091270011408425](https://doi.org/10.1177/0091270011408425)
 
-## Model component
-<dbs-pgx drug="vernakalant" model-id="Vernakalant_Mao2012_reference" status="rejected" stale="true" population="patients with atrial fibrillation or atrial flutter and healthy volunteers" measured-compound="vernakalant" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="vernakalant" model-id="Vernakalant_Mao2012_reference" status="rejected" stale="true" population="patients with atrial fibrillation or atrial flutter and healthy volunteers" measured-compound="vernakalant" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 2 extracted.

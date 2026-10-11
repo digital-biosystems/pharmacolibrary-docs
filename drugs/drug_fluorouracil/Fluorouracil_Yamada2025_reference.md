@@ -29,8 +29,7 @@ No clearance, volume or rate constant of the model is reported in it. No paramet
 Yamada A et al., Population pharmacokinetic analysis of…, Cancer chemotherapy and pha… (2025)
   ·  DOI: [10.1007/s00280-025-04808-2](https://doi.org/10.1007/s00280-025-04808-2)
 
-## Model component
-<dbs-pgx drug="fluorouracil" model-id="Fluorouracil_Yamada2025_reference" status="rejected" stale="true" population="patients with locally advanced unresectable or metastatic HER2-negative, CLDN18.2-positive gastric or gastroesophageal junction adenocarcinoma" measured-compound="5-fluorouracil" parameterization="mechanistic" topology="general_linear"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="fluorouracil" model-id="Fluorouracil_Yamada2025_reference" status="rejected" stale="true" population="patients with locally advanced unresectable or metastatic HER2-negative, CLDN18.2-positive gastric or gastroesophageal junction adenocarcinoma" measured-compound="5-fluorouracil" parameterization="mechanistic" topology="general_linear"></div>
 
 **Model structure:** general linear; no model was built for this record.  
 **Parameters:** 0 extracted.

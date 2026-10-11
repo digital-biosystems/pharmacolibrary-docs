@@ -25,8 +25,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on paramet
 McTavish D et al., Carvedilol. A review of its pharmacodyn…, Drugs (1993)
   ·  DOI: [10.2165/00003495-199345020-00006](https://doi.org/10.2165/00003495-199345020-00006)
 
-## Model component
-<dbs-pgx drug="carvedilol" model-id="Carvedilol_McTavish1993_reference" status="extracted" stale="false" population="unknown" measured-compound="carvedilol" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="carvedilol" model-id="Carvedilol_McTavish1993_reference" status="extracted" stale="false" population="unknown" measured-compound="carvedilol" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameters:** 2 extracted.

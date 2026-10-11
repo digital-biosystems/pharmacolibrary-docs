@@ -33,8 +33,7 @@ Independently confirmed by `gpt-oss:120b`.
 Liang S et al., Pharmacokinetic-pharmacodynamic modelli…, British journal of clinical… (2016)
   ·  DOI: [10.1111/bcp.12989](https://doi.org/10.1111/bcp.12989)
 
-## Model component
-<dbs-pgx drug="doxorubicin" model-id="Doxorubicin_Liang2016_reference" status="rejected" stale="true" population="women with stages 1–3 breast cancer receiving adjuvant chemotherapy" measured-compound="doxorubicin" parameterization="mechanistic" topology="parent_metabolite"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="doxorubicin" model-id="Doxorubicin_Liang2016_reference" status="rejected" stale="true" population="women with stages 1–3 breast cancer receiving adjuvant chemotherapy" measured-compound="doxorubicin" parameterization="mechanistic" topology="parent_metabolite"></div>
 
 **Model structure:** parent + metabolite; no model was built for this record.  
 **Parameters:** 0 extracted.

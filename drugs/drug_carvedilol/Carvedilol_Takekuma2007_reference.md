@@ -29,8 +29,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on `parame
 Takekuma Y et al., Evaluation of effects of polymorphism f…, Biological & pharmaceutical… (2007)
   ·  DOI: [10.1248/bpb.30.537](https://doi.org/10.1248/bpb.30.537)
 
-## Model component
-<dbs-pgx drug="carvedilol" model-id="Carvedilol_Takekuma2007_reference" status="needs_review" stale="false" population="Japanese patients with chronic heart failure or angina pectoris" measured-compound="carvedilol" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="carvedilol" model-id="Carvedilol_Takekuma2007_reference" status="needs_review" stale="false" population="Japanese patients with chronic heart failure or angina pectoris" measured-compound="carvedilol" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 2 extracted, plus 2 covariate effects.

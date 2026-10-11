@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Retout S et al., Population Pharmacokinetic Analysis and…, Clinical pharmacokinetics (2020)
   ·  DOI: [10.1007/s40262-020-00904-z](https://doi.org/10.1007/s40262-020-00904-z)
 
-## Model component
-<dbs-pgx drug="emicizumab" model-id="Emicizumab_Retout2020_estimate" status="extracted" stale="true" population="adult and pediatric persons with hemophilia A" measured-compound="emicizumab" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="emicizumab" model-id="Emicizumab_Retout2020_estimate" status="extracted" stale="true" population="adult and pediatric persons with hemophilia A" measured-compound="emicizumab" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 3 extracted.

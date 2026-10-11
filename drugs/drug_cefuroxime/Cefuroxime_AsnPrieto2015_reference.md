@@ -21,8 +21,7 @@
 Asín-Prieto E et al., Population pharmacokinetic models for c…, International journal of an… (2015)
   ·  DOI: [10.1016/j.ijantimicag.2015.01.008](https://doi.org/10.1016/j.ijantimicag.2015.01.008)
 
-## Model component
-<dbs-pgx drug="cefuroxime" model-id="Cefuroxime_AsnPrieto2015_reference" status="rejected" stale="false" population="adults undergoing colorectal surgery" measured-compound="cefuroxime" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="cefuroxime" model-id="Cefuroxime_AsnPrieto2015_reference" status="rejected" stale="false" population="adults undergoing colorectal surgery" measured-compound="cefuroxime" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

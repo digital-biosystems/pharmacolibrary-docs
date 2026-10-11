@@ -29,8 +29,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the val
 ## Citation
 Eichelbaum M et al., Pharmacokinetics and metabolism of anti…, Arzneimittel-Forschung (1982)
 
-## Model component
-<dbs-pgx drug="phenazone" model-id="Phenazone_Eichelbaum1982_reference" status="rejected" stale="true" population="healthy male volunteers (smokers and non-smokers)" measured-compound="phenazone" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="phenazone" model-id="Phenazone_Eichelbaum1982_reference" status="rejected" stale="true" population="healthy male volunteers (smokers and non-smokers)" measured-compound="phenazone" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

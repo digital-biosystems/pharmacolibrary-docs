@@ -25,8 +25,7 @@
 Muthukrishnan VY; Kerbusch T; Strong LE; Kleijn HJ; Pfister M; Chang AM; Acharya M; Nandy P; McCune JS et al. (2025). Clinical and translational science 18
   ·  DOI: [10.1111/cts.70381](https://doi.org/10.1111/cts.70381)
 
-## Model component
-<dbs-pgx drug="cadmium" model-id="Cadmium_Muthukrishnan2025_reference" status="not_modelled" stale="false" population="" measured-compound="cadmium" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="cadmium" model-id="Cadmium_Muthukrishnan2025_reference" status="not_modelled" stale="false" population="" measured-compound="cadmium" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment, IV mammillary model — template `PK_2C`.  
 **Parameters:** 4 extracted.

@@ -27,8 +27,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the lin
 Back HM et al., A mechanism-based pharmacokinetic model…, BMC pharmacology & toxicolo… (2018)
   ·  DOI: [10.1186/s40360-018-0194-5](https://doi.org/10.1186/s40360-018-0194-5)
 
-## Model component
-<dbs-pgx drug="fenofibrate" model-id="Fenofibrate_Back2018_reference" status="extracted" stale="false" population="healthy adults" measured-compound="fenofibric acid" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="fenofibrate" model-id="Fenofibrate_Back2018_reference" status="extracted" stale="false" population="healthy adults" measured-compound="fenofibric acid" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 4 extracted.

@@ -30,8 +30,7 @@ Independently confirmed by `gpt-oss:120b`.
 Dailly E et al., Population pharmacokinetics of domperid…, European journal of clinica… (2008)
   ·  DOI: [10.1007/s00228-008-0535-1](https://doi.org/10.1007/s00228-008-0535-1)
 
-## Model component
-<dbs-pgx drug="domperidone" model-id="Domperidone_Dailly2008_reference" status="rejected" stale="true" population="preterm neonates" measured-compound="domperidone" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="domperidone" model-id="Domperidone_Dailly2008_reference" status="rejected" stale="true" population="preterm neonates" measured-compound="domperidone" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 3 extracted.

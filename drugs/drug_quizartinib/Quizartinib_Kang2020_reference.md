@@ -20,8 +20,7 @@
 Kang D et al., Population Pharmacokinetic Analysis of…, Journal of clinical pharmac… (2020)
   ·  DOI: [10.1002/jcph.1680](https://doi.org/10.1002/jcph.1680)
 
-## Model component
-<dbs-pgx drug="quizartinib" model-id="Quizartinib_Kang2020_reference" status="rejected" stale="false" population="healthy volunteers and patients with AML" measured-compound="quizartinib" parameterization="mechanistic" topology="parent_metabolite"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="quizartinib" model-id="Quizartinib_Kang2020_reference" status="rejected" stale="false" population="healthy volunteers and patients with AML" measured-compound="quizartinib" parameterization="mechanistic" topology="parent_metabolite"></div>
 
 **Model structure:** parent + metabolite; no model was built for this record.  
 **Parameters:** 5 extracted, plus 22 covariate effects.

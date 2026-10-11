@@ -23,8 +23,7 @@
 Schwieger IM et al., The pharmacokinetics and pharmacodynami…, Journal of pharmacokinetics… (1991)
   ·  DOI: [10.1007/BF01073866](https://doi.org/10.1007/BF01073866)
 
-## Model component
-<dbs-pgx drug="ketamine" model-id="Ketamine_Schwieger1991_reference" status="needs_review" stale="false" population="dogs anesthetized with enflurane" measured-compound="ketamine" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="ketamine" model-id="Ketamine_Schwieger1991_reference" status="needs_review" stale="false" population="dogs anesthetized with enflurane" measured-compound="ketamine" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 4 extracted.

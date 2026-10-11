@@ -20,8 +20,7 @@
 Freiwald M et al., Population pharmacokinetics of afatinib…, Cancer chemotherapy and pha… (2014)
   ·  DOI: [10.1007/s00280-014-2403-2](https://doi.org/10.1007/s00280-014-2403-2)
 
-## Model component
-<dbs-pgx drug="afatinib" model-id="Afatinib_Freiwald2014_reference" status="needs_review" stale="false" population="patients with advanced solid tumors" measured-compound="afatinib" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="afatinib" model-id="Afatinib_Freiwald2014_reference" status="needs_review" stale="false" population="patients with advanced solid tumors" measured-compound="afatinib" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 1 extracted.

@@ -23,8 +23,7 @@
 Wei Y et al., Population pharmacokinetics of mycophen…, Frontiers in pharmacology (2022)
   ·  DOI: [10.3389/fphar.2022.1002628](https://doi.org/10.3389/fphar.2022.1002628)
 
-## Model component
-<dbs-pgx drug="mycophenolic acid" model-id="MycophenolicAcid_Wei2022_reference" status="extracted" stale="false" population="pediatric patients after liver transplantation" measured-compound="mycophenolic acid" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="mycophenolic acid" model-id="MycophenolicAcid_Wei2022_reference" status="extracted" stale="false" population="pediatric patients after liver transplantation" measured-compound="mycophenolic acid" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 5 extracted.

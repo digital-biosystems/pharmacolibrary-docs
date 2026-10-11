@@ -20,8 +20,7 @@
 Turcant A et al., Pharmacokinetics of ornidazole in neona…, European journal of clinica… (1987)
   ·  DOI: [10.1007/BF00609970](https://doi.org/10.1007/BF00609970)
 
-## Model component
-<dbs-pgx drug="ornidazole" model-id="Ornidazole_Turcant1987_reference" status="rejected" stale="false" population="neonates and infants" measured-compound="ornidazole" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="ornidazole" model-id="Ornidazole_Turcant1987_reference" status="rejected" stale="false" population="neonates and infants" measured-compound="ornidazole" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 2 extracted.

@@ -30,8 +30,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on `parame
 Ishizaki T et al., Clinical pharmacologic observations on…, Journal of clinical pharmac… (1978)
   ·  DOI: [10.1002/j.1552-4604.1978.tb01580.x](https://doi.org/10.1002/j.1552-4604.1978.tb01580.x)
 
-## Model component
-<dbs-pgx drug="timolol" model-id="Timolol_Ishizaki1978_reference" status="needs_review" stale="true" population="normal individuals" measured-compound="timolol" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="timolol" model-id="Timolol_Ishizaki1978_reference" status="needs_review" stale="true" population="normal individuals" measured-compound="timolol" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 4 extracted.

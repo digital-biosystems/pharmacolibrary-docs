@@ -21,8 +21,7 @@
 Toso C et al., Vinorelbine: a novel vinca alkaloid, American journal of health-… (1995)
   ·  DOI: [10.1093/ajhp/52.12.1287](https://doi.org/10.1093/ajhp/52.12.1287)
 
-## Model component
-<dbs-pgx drug="vinblastine" model-id="Vinblastine_Toso1995_reference" status="extracted" stale="false" population="" measured-compound="vinblastine" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="vinblastine" model-id="Vinblastine_Toso1995_reference" status="extracted" stale="false" population="" measured-compound="vinblastine" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameters:** 2 extracted.

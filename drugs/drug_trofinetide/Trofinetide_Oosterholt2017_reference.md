@@ -21,8 +21,7 @@
 Oosterholt SP et al., Population pharmacokinetics of NNZ-2566…, European journal of pharmac… (2017)
   ·  DOI: [10.1016/j.ejps.2017.05.032](https://doi.org/10.1016/j.ejps.2017.05.032)
 
-## Model component
-<dbs-pgx drug="trofinetide" model-id="Trofinetide_Oosterholt2017_reference" status="rejected" stale="false" population="healthy adults" measured-compound="trofinetide (NNZ-2566)" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="trofinetide" model-id="Trofinetide_Oosterholt2017_reference" status="rejected" stale="false" population="healthy adults" measured-compound="trofinetide (NNZ-2566)" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

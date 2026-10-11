@@ -30,8 +30,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Kobari T et al., Dose-dependent pharmacokinetics of apri…, European journal of clinica… (1984)
   ·  DOI: [10.1007/BF00546721](https://doi.org/10.1007/BF00546721)
 
-## Model component
-<dbs-pgx drug="aprindine" model-id="Aprindine_Kobari1984_reference" status="rejected" stale="true" population="healthy volunteers" measured-compound="aprindine" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="aprindine" model-id="Aprindine_Kobari1984_reference" status="rejected" stale="true" population="healthy volunteers" measured-compound="aprindine" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 1 extracted.

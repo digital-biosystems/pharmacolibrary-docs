@@ -21,8 +21,7 @@
 Silva R et al., A new population pharmacokinetic model…, European journal of pharmac… (2025)
   ·  DOI: [10.1016/j.ejps.2025.107023](https://doi.org/10.1016/j.ejps.2025.107023)
 
-## Model component
-<dbs-pgx drug="zonisamide" model-id="Zonisamide_Silva2025_reference" status="rejected" stale="false" population="adults with refractory epilepsy" measured-compound="zonisamide" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="zonisamide" model-id="Zonisamide_Silva2025_reference" status="rejected" stale="false" population="adults with refractory epilepsy" measured-compound="zonisamide" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 4 extracted.

@@ -20,8 +20,7 @@
 Othman AA et al., Population pharmacokinetics of daclizum…, Clinical pharmacokinetics (2014)
   ·  DOI: [10.1007/s40262-014-0159-9](https://doi.org/10.1007/s40262-014-0159-9)
 
-## Model component
-<dbs-pgx drug="daclizumab" model-id="Daclizumab_Othman2014_reference" status="needs_review" stale="false" population="healthy volunteers" measured-compound="daclizumab high-yield process" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="daclizumab" model-id="Daclizumab_Othman2014_reference" status="needs_review" stale="false" population="healthy volunteers" measured-compound="daclizumab high-yield process" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 5 extracted.

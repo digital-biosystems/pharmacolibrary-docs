@@ -28,8 +28,7 @@ The record only reports vinorelbine's oral apparent clearance (89.4 l/h/m2) and 
 Pétain A et al., Effect of ethnicity on vinorelbine phar…, Cancer chemotherapy and pha… (2019)
   ·  DOI: [10.1007/s00280-019-03872-9](https://doi.org/10.1007/s00280-019-03872-9)
 
-## Model component
-<dbs-pgx drug="vinorelbine" model-id="Vinorelbine_Ptain2019_oral_vinorelbine_n_222" status="" stale="true" population="Asian and European patients with non-small-cell lung cancer or advanced breast cancer" measured-compound="" parameterization="" topology=""></dbs-pgx>
+<div class="pk-model-meta" hidden drug="vinorelbine" model-id="Vinorelbine_Ptain2019_oral_vinorelbine_n_222" status="" stale="true" population="Asian and European patients with non-small-cell lung cancer or advanced breast cancer" measured-compound="" parameterization="" topology=""></div>
 
 **Model structure:** —; no model was built for this record.  
 **Parameters:** 0 extracted.

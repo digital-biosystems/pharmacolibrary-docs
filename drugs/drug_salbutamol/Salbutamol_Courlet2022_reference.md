@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Courlet P et al., Model-based meta-analysis of salbutamol…, CPT: pharmacometrics & syst… (2022)
   ·  DOI: [10.1002/psp4.12773](https://doi.org/10.1002/psp4.12773)
 
-## Model component
-<dbs-pgx drug="salbutamol" model-id="Salbutamol_Courlet2022_reference" status="extracted" stale="true" population="healthy adults (MBMA of salbutamol PK studies)" measured-compound="salbutamol" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="salbutamol" model-id="Salbutamol_Courlet2022_reference" status="extracted" stale="true" population="healthy adults (MBMA of salbutamol PK studies)" measured-compound="salbutamol" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 6 extracted.

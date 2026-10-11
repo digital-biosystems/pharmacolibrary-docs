@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on paramet
 Gouin-Thibault I et al., Tinzaparin, an alternative to subcutane…, Journal of thrombosis and h… (2024)
   ·  DOI: [10.1016/j.jtha.2024.07.006](https://doi.org/10.1016/j.jtha.2024.07.006)
 
-## Model component
-<dbs-pgx drug="heparin" model-id="Heparin_GouinThibault2024_reference" status="needs_review" stale="true" population="" measured-compound="heparin" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="heparin" model-id="Heparin_GouinThibault2024_reference" status="needs_review" stale="true" population="" measured-compound="heparin" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 3 extracted.

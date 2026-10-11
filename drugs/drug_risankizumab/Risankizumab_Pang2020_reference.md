@@ -21,8 +21,7 @@
 Pang Y et al., Clinical Pharmacokinetics and Pharmacod…, Clinical pharmacokinetics (2020)
   ·  DOI: [10.1007/s40262-019-00842-5](https://doi.org/10.1007/s40262-019-00842-5)
 
-## Model component
-<dbs-pgx drug="risankizumab" model-id="Risankizumab_Pang2020_reference" status="rejected" stale="false" population="patients with moderate-to-severe plaque psoriasis" measured-compound="risankizumab" parameterization="mechanistic" topology="3C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="risankizumab" model-id="Risankizumab_Pang2020_reference" status="rejected" stale="false" population="patients with moderate-to-severe plaque psoriasis" measured-compound="risankizumab" parameterization="mechanistic" topology="3C"></div>
 
 **Model structure:** 3-compartment; no model was built for this record.  
 **Parameters:** 5 extracted.

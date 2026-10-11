@@ -20,8 +20,7 @@
 Marouille AL et al., Pharmacokinetic/Pharmacodynamic Model o…, Pharmaceutics (2021)
   ·  DOI: [10.3390/pharmaceutics13101708](https://doi.org/10.3390/pharmaceutics13101708)
 
-## Model component
-<dbs-pgx drug="palbociclib" model-id="Palbociclib_Marouille2021_final" status="rejected" stale="false" population="women with HR+/HER2− advanced or metastatic breast cancer" measured-compound="palbociclib" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="palbociclib" model-id="Palbociclib_Marouille2021_final" status="rejected" stale="false" population="women with HR+/HER2− advanced or metastatic breast cancer" measured-compound="palbociclib" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 1 extracted, plus 1 covariate effect.

@@ -27,8 +27,7 @@ The record lists oral clearance and volume of distribution but omits the absorpt
 Corvino A et al., Phloroglucinol-Derived Medications are…, Advances in therapy (2023)
   ·  DOI: [10.1007/s12325-022-02347-3](https://doi.org/10.1007/s12325-022-02347-3)
 
-## Model component
-<dbs-pgx drug="metamizole sodium" model-id="MetamizoleSodium_Corvino2023_reference" status="needs_review" stale="false" population="" measured-compound="" parameterization="" topology=""></dbs-pgx>
+<div class="pk-model-meta" hidden drug="metamizole sodium" model-id="MetamizoleSodium_Corvino2023_reference" status="needs_review" stale="false" population="" measured-compound="" parameterization="" topology=""></div>
 
 **Model structure:** —; no model was built for this record.  
 **Parameters:** 0 extracted.

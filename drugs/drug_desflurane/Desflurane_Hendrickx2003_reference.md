@@ -20,8 +20,7 @@
 Hendrickx JF et al., Isoflurane and desflurane uptake during…, Anesthesia and analgesia (2003)
   ·  DOI: [10.1097/00000539-200302000-00011](https://doi.org/10.1097/00000539-200302000-00011)
 
-## Model component
-<dbs-pgx drug="desflurane" model-id="Desflurane_Hendrickx2003_reference" status="rejected" stale="false" population="patients undergoing liver resection and transplantation" measured-compound="desflurane" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="desflurane" model-id="Desflurane_Hendrickx2003_reference" status="rejected" stale="false" population="patients undergoing liver resection and transplantation" measured-compound="desflurane" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

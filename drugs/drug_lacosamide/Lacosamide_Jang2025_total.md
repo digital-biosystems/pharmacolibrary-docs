@@ -21,8 +21,7 @@
 Jang Y et al., Saliva-based lacosamide monitoring pave…, Scientific reports (2025)
   ·  DOI: [10.1038/s41598-025-04044-x](https://doi.org/10.1038/s41598-025-04044-x)
 
-## Model component
-<dbs-pgx drug="lacosamide" model-id="Lacosamide_Jang2025_total" status="rejected" stale="false" population="epilepsy patients" measured-compound="lacosamide" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="lacosamide" model-id="Lacosamide_Jang2025_total" status="rejected" stale="false" population="epilepsy patients" measured-compound="lacosamide" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 4 extracted.

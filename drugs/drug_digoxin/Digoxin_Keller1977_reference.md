@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Keller F et al., Overall pharmacokinetics during prolong…, European journal of clinica… (1977)
   ·  DOI: [10.1007/BF00562456](https://doi.org/10.1007/BF00562456)
 
-## Model component
-<dbs-pgx drug="digoxin" model-id="Digoxin_Keller1977_reference" status="needs_review" stale="true" population="healthy volunteers" measured-compound="digoxin" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="digoxin" model-id="Digoxin_Keller1977_reference" status="needs_review" stale="true" population="healthy volunteers" measured-compound="digoxin" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 3 extracted.

@@ -21,8 +21,7 @@
 Yoon S et al., Effect of CYP3A4 metabolism on sex diff…, Scientific reports (2021)
   ·  DOI: [10.1038/s41598-021-98689-z](https://doi.org/10.1038/s41598-021-98689-z)
 
-## Model component
-<dbs-pgx drug="zolpidem" model-id="Zolpidem_Yoon2021_reference" status="extracted" stale="false" population="healthy adults" measured-compound="zolpidem" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="zolpidem" model-id="Zolpidem_Yoon2021_reference" status="extracted" stale="false" population="healthy adults" measured-compound="zolpidem" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 2 extracted.

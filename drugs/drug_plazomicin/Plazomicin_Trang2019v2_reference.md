@@ -29,8 +29,7 @@ No clearance, volume or rate constant of the model is reported in it. Only the a
 Trang M et al., Population Pharmacokinetic Analyses for…, Antimicrobial agents and ch… (2019)
   ·  DOI: [10.1128/AAC.02329-18](https://doi.org/10.1128/AAC.02329-18)
 
-## Model component
-<dbs-pgx drug="plazomicin" model-id="Plazomicin_Trang2019v2_reference" status="" stale="true" population="adult patients with cUTI/AP and serious infections caused by CRE" measured-compound="" parameterization="" topology=""></dbs-pgx>
+<div class="pk-model-meta" hidden drug="plazomicin" model-id="Plazomicin_Trang2019v2_reference" status="" stale="true" population="adult patients with cUTI/AP and serious infections caused by CRE" measured-compound="" parameterization="" topology=""></div>
 
 **Model structure:** —; no model was built for this record.  
 **Parameters:** 0 extracted.

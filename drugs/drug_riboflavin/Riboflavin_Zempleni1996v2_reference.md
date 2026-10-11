@@ -29,8 +29,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 ## Citation
 Zempleni J et al., The metabolism of riboflavin in female…, International journal for v… (1996)
 
-## Model component
-<dbs-pgx drug="riboflavin" model-id="Riboflavin_Zempleni1996v2_reference" status="rejected" stale="true" population="female patients with liver cirrhosis" measured-compound="riboflavin" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="riboflavin" model-id="Riboflavin_Zempleni1996v2_reference" status="rejected" stale="true" population="female patients with liver cirrhosis" measured-compound="riboflavin" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

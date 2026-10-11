@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Feng Y et al., Paroxetine: population pharmacokinetic…, British journal of clinical… (2006)
   ·  DOI: [10.1111/j.1365-2125.2006.02629.x](https://doi.org/10.1111/j.1365-2125.2006.02629.x)
 
-## Model component
-<dbs-pgx drug="paroxetine" model-id="Paroxetine_Feng2006_base" status="rejected" stale="true" population="elderly depressed subjects (late-life major depressive disorder)" measured-compound="paroxetine" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="paroxetine" model-id="Paroxetine_Feng2006_base" status="rejected" stale="true" population="elderly depressed subjects (late-life major depressive disorder)" measured-compound="paroxetine" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 6 extracted, plus 6 covariate effects.

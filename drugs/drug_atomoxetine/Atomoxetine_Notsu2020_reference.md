@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on how the
 Notsu Y et al., Simple pharmacokinetic models accountin…, Drug metabolism and pharmac… (2020)
   ·  DOI: [10.1016/j.dmpk.2019.08.005](https://doi.org/10.1016/j.dmpk.2019.08.005)
 
-## Model component
-<dbs-pgx drug="atomoxetine" model-id="Atomoxetine_Notsu2020_reference" status="needs_review" stale="true" population="Japanese pediatric ADHD patients genotyped for CYP2D6" measured-compound="atomoxetine" parameterization="mechanistic" topology="parent_metabolite"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="atomoxetine" model-id="Atomoxetine_Notsu2020_reference" status="needs_review" stale="true" population="Japanese pediatric ADHD patients genotyped for CYP2D6" measured-compound="atomoxetine" parameterization="mechanistic" topology="parent_metabolite"></div>
 
 **Model structure:** parent + metabolite; no model was built for this record.  
 **Parameters:** 4 extracted.

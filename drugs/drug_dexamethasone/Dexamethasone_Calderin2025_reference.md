@@ -31,8 +31,7 @@ Independently confirmed by `gpt-oss:120b`.
 Calderin JM et al., Pharmacokinetics of Dexamethasone in Tu…, Clinical infectious disease… (2026)
   ·  DOI: [10.1093/cid/ciaf642](https://doi.org/10.1093/cid/ciaf642)
 
-## Model component
-<dbs-pgx drug="dexamethasone" model-id="Dexamethasone_Calderin2025_reference" status="extracted" stale="true" population="adults with HIV-associated tuberculous meningitis" measured-compound="dexamethasone" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="dexamethasone" model-id="Dexamethasone_Calderin2025_reference" status="extracted" stale="true" population="adults with HIV-associated tuberculous meningitis" measured-compound="dexamethasone" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 4 extracted.

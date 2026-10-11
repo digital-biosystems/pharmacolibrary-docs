@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Fauchet F et al., Population pharmacokinetics of abacavir…, Antimicrobial agents and ch… (2014)
   ·  DOI: [10.1128/AAC.03469-14](https://doi.org/10.1128/AAC.03469-14)
 
-## Model component
-<dbs-pgx drug="abacavir" model-id="Abacavir_Fauchet2014_reference" status="extracted" stale="true" population="HIV-infected pregnant and nonpregnant women" measured-compound="abacavir" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="abacavir" model-id="Abacavir_Fauchet2014_reference" status="extracted" stale="true" population="HIV-infected pregnant and nonpregnant women" measured-compound="abacavir" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 4 extracted.

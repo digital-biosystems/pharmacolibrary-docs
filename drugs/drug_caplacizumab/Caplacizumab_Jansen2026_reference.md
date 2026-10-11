@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the val
 Jansen E et al., Characterization of the VHH-Fc construc…, PLoS medicine (2026)
   ·  DOI: [10.1371/journal.pmed.1004609](https://doi.org/10.1371/journal.pmed.1004609)
 
-## Model component
-<dbs-pgx drug="caplacizumab" model-id="Caplacizumab_Jansen2026_reference" status="rejected" stale="true" population="" measured-compound="caplacizumab" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="caplacizumab" model-id="Caplacizumab_Jansen2026_reference" status="rejected" stale="true" population="" measured-compound="caplacizumab" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment; no model was built for this record.  
 **Parameters:** 3 extracted.

@@ -21,8 +21,7 @@
 Stodtmann S et al., A Population Pharmacokinetic Meta-Analy…, Journal of clinical pharmac… (2021)
   ·  DOI: [10.1002/jcph.1875](https://doi.org/10.1002/jcph.1875)
 
-## Model component
-<dbs-pgx drug="veliparib" model-id="Veliparib_Stodtmann2021_reference" status="needs_review" stale="false" population="adult subjects with ovarian cancer, breast cancer, or other solid tumors" measured-compound="veliparib" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="veliparib" model-id="Veliparib_Stodtmann2021_reference" status="needs_review" stale="false" population="adult subjects with ovarian cancer, breast cancer, or other solid tumors" measured-compound="veliparib" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 3 extracted, plus 6 covariate effects.

@@ -22,8 +22,7 @@
 ## Citation
 Goudah A et al., Pharmacokinetics and tissue residue pro…, DTW. Deutsche tierarztliche… (2004)
 
-## Model component
-<dbs-pgx drug="erythromycin" model-id="Erythromycin_Goudah2004_reference" status="rejected" stale="false" population="broiler chickens" measured-compound="erythromycin" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="erythromycin" model-id="Erythromycin_Goudah2004_reference" status="rejected" stale="false" population="broiler chickens" measured-compound="erythromycin" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

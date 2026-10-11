@@ -30,8 +30,7 @@ Independently confirmed by `gpt-oss:120b`.
 Vucicevic K et al., Population Pharmacokinetic-Pharmacogene…, Cureus (2025)
   ·  DOI: [10.7759/cureus.88533](https://doi.org/10.7759/cureus.88533)
 
-## Model component
-<dbs-pgx drug="efavirenz" model-id="Efavirenz_Vucicevic2025_reference" status="needs_review" stale="true" population="HIV-1-infected adults" measured-compound="efavirenz" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="efavirenz" model-id="Efavirenz_Vucicevic2025_reference" status="needs_review" stale="true" population="HIV-1-infected adults" measured-compound="efavirenz" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 3 extracted.

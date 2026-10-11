@@ -20,8 +20,7 @@
 Clegg L et al., Population Pharmacokinetics of Nirsevim…, Journal of clinical pharmac… (2024)
   ·  DOI: [10.1002/jcph.2401](https://doi.org/10.1002/jcph.2401)
 
-## Model component
-<dbs-pgx drug="nirsevimab" model-id="Nirsevimab_Clegg2024_reference" status="rejected" stale="false" population="preterm and term infants" measured-compound="nirsevimab" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="nirsevimab" model-id="Nirsevimab_Clegg2024_reference" status="rejected" stale="false" population="preterm and term infants" measured-compound="nirsevimab" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

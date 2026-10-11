@@ -30,8 +30,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the val
 Tamayo M et al., Population pharmacokinetics of imiprami…, European journal of clinica… (1992)
   ·  DOI: [10.1007/BF02280761](https://doi.org/10.1007/BF02280761)
 
-## Model component
-<dbs-pgx drug="imipramine" model-id="Imipramine_Tamayo1992_reference" status="rejected" stale="true" population="enuretic children" measured-compound="imipramine" parameterization="mechanistic" topology="parent_metabolite"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="imipramine" model-id="Imipramine_Tamayo1992_reference" status="rejected" stale="true" population="enuretic children" measured-compound="imipramine" parameterization="mechanistic" topology="parent_metabolite"></div>
 
 **Model structure:** parent + metabolite; no model was built for this record.  
 **Parameters:** 0 extracted.

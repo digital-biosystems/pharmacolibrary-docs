@@ -33,8 +33,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Bertera FM et al., Is urethane-chloralose anaesthesia appr…, Journal of pharmacological… (2009)
   ·  DOI: [10.1016/j.vascn.2008.10.001](https://doi.org/10.1016/j.vascn.2008.10.001)
 
-## Model component
-<dbs-pgx drug="carvedilol" model-id="Carvedilol_Bertera2009_l_name_rats" status="rejected" stale="true" population="control and L-NAME hypertensive rats" measured-compound="carvedilol" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="carvedilol" model-id="Carvedilol_Bertera2009_l_name_rats" status="rejected" stale="true" population="control and L-NAME hypertensive rats" measured-compound="carvedilol" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 5 extracted.

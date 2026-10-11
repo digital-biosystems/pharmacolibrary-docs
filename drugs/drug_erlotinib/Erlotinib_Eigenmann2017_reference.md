@@ -22,8 +22,7 @@
 Eigenmann MJ et al., PKPD modeling of acquired resistance to…, Journal of pharmacokinetics… (2017)
   ·  DOI: [10.1007/s10928-017-9553-x](https://doi.org/10.1007/s10928-017-9553-x)
 
-## Model component
-<dbs-pgx drug="erlotinib" model-id="Erlotinib_Eigenmann2017_reference" status="rejected" stale="false" population="patient-derived NSCLC xenograft mice" measured-compound="erlotinib and gefitinib" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="erlotinib" model-id="Erlotinib_Eigenmann2017_reference" status="rejected" stale="false" population="patient-derived NSCLC xenograft mice" measured-compound="erlotinib and gefitinib" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

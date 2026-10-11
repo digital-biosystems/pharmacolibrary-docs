@@ -21,8 +21,7 @@
 Saeheng T et al., Prediction of improved antimalarial che…, PloS one (2023)
   ·  DOI: [10.1371/journal.pone.0282099](https://doi.org/10.1371/journal.pone.0282099)
 
-## Model component
-<dbs-pgx drug="mefloquine" model-id="Mefloquine_Saeheng2023_reference" status="rejected" stale="false" population="adults with uncomplicated P. falciparum malaria" measured-compound="mefloquine" parameterization="mechanistic" topology="parent_metabolite"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="mefloquine" model-id="Mefloquine_Saeheng2023_reference" status="rejected" stale="false" population="adults with uncomplicated P. falciparum malaria" measured-compound="mefloquine" parameterization="mechanistic" topology="parent_metabolite"></div>
 
 **Model structure:** parent + metabolite; no model was built for this record.  
 **Parameters:** 6 extracted.

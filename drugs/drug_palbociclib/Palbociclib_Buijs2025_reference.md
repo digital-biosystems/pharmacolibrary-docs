@@ -20,8 +20,7 @@
 Buijs SM et al., Palbociclib exposure in relation to eff…, ESMO open (2025)
   ·  DOI: [10.1016/j.esmoop.2025.104290](https://doi.org/10.1016/j.esmoop.2025.104290)
 
-## Model component
-<dbs-pgx drug="palbociclib" model-id="Palbociclib_Buijs2025_reference" status="rejected" stale="false" population="patients with advanced estrogen receptor-positive, HER2-negative breast cancer" measured-compound="palbociclib" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="palbociclib" model-id="Palbociclib_Buijs2025_reference" status="rejected" stale="false" population="patients with advanced estrogen receptor-positive, HER2-negative breast cancer" measured-compound="palbociclib" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment; no model was built for this record.  
 **Parameters:** 3 extracted, plus 1 covariate effect.

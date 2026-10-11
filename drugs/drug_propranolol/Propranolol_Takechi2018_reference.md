@@ -33,8 +33,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Takechi T et al., Population Pharmacokinetics and Pharmac…, Journal of clinical pharmac… (2018)
   ·  DOI: [10.1002/jcph.1149](https://doi.org/10.1002/jcph.1149)
 
-## Model component
-<dbs-pgx drug="propranolol" model-id="Propranolol_Takechi2018_reference" status="extracted" stale="true" population="pediatric patients with infantile hemangioma" measured-compound="propranolol" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="propranolol" model-id="Propranolol_Takechi2018_reference" status="extracted" stale="true" population="pediatric patients with infantile hemangioma" measured-compound="propranolol" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 3 extracted, plus 2 covariate effects.

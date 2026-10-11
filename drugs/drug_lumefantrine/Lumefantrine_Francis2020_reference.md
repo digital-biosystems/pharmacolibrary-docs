@@ -21,8 +21,7 @@
 Francis J et al., An Individual Participant Data Populati…, Antimicrobial agents and ch… (2020)
   ·  DOI: [10.1128/AAC.02394-19](https://doi.org/10.1128/AAC.02394-19)
 
-## Model component
-<dbs-pgx drug="Lumefantrine" model-id="Lumefantrine_Francis2020_reference" status="rejected" stale="false" population="nonpregnant adults with uncomplicated malaria, HIV infection, or both" measured-compound="lumefantrine" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="Lumefantrine" model-id="Lumefantrine_Francis2020_reference" status="rejected" stale="false" population="nonpregnant adults with uncomplicated malaria, HIV infection, or both" measured-compound="lumefantrine" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment; no model was built for this record.  
 **Parameters:** 11 extracted, plus 2 covariate effects.

@@ -21,8 +21,7 @@
 Liu W et al., Pharmacokinetics and safety of rifapent…, The Journal of antimicrobia… (2025)
   ·  DOI: [10.1093/jac/dkaf029](https://doi.org/10.1093/jac/dkaf029)
 
-## Model component
-<dbs-pgx drug="rifapentine" model-id="Rifapentine_Liu2025_reference" status="rejected" stale="false" population="children with latent tuberculosis infection" measured-compound="rifapentine" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="rifapentine" model-id="Rifapentine_Liu2025_reference" status="rejected" stale="false" population="children with latent tuberculosis infection" measured-compound="rifapentine" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 2 extracted.

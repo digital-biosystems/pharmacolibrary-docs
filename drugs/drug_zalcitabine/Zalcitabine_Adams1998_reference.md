@@ -21,8 +21,7 @@
 Adams JM et al., Zalcitabine population pharmacokinetics…, Antimicrobial agents and ch… (1998)
   ·  DOI: [10.1128/AAC.42.2.409](https://doi.org/10.1128/AAC.42.2.409)
 
-## Model component
-<dbs-pgx drug="zalcitabine" model-id="Zalcitabine_Adams1998_reference" status="extracted" stale="false" population="HIV-infected patients" measured-compound="zalcitabine" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="zalcitabine" model-id="Zalcitabine_Adams1998_reference" status="extracted" stale="false" population="HIV-infected patients" measured-compound="zalcitabine" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 4 extracted.

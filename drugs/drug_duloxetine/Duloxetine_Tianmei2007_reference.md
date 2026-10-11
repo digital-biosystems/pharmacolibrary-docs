@@ -29,8 +29,7 @@ Only the abstract was available, so reported summary statistics stand in for a f
 Tianmei S et al., Pharmacokinetics and tolerability of du…, Clinical pharmacokinetics (2007)
   ·  DOI: [10.2165/00003088-200746090-00004](https://doi.org/10.2165/00003088-200746090-00004)
 
-## Model component
-<dbs-pgx drug="duloxetine" model-id="Duloxetine_Tianmei2007_reference" status="extracted" stale="true" population="healthy Chinese adults" measured-compound="duloxetine" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="duloxetine" model-id="Duloxetine_Tianmei2007_reference" status="extracted" stale="true" population="healthy Chinese adults" measured-compound="duloxetine" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 4 extracted.

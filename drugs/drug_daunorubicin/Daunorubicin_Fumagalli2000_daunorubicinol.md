@@ -23,8 +23,7 @@
 Fumagalli L et al., The pharmacokinetics of liposomal encap…, Cancer chemotherapy and pha… (2000)
   ·  DOI: [10.1007/s002800051025](https://doi.org/10.1007/s002800051025)
 
-## Model component
-<dbs-pgx drug="daunorubicin" model-id="Daunorubicin_Fumagalli2000_daunorubicinol" status="needs_review" stale="false" population="HIV-positive patients with extensive or rapidly progressing AIDS-related Kaposi&#39;s sarcoma" measured-compound="daunorubicin" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="daunorubicin" model-id="Daunorubicin_Fumagalli2000_daunorubicinol" status="needs_review" stale="false" population="HIV-positive patients with extensive or rapidly progressing AIDS-related Kaposi&#39;s sarcoma" measured-compound="daunorubicin" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 1 extracted.

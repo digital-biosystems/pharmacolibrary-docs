@@ -31,8 +31,7 @@ The paper reports doxycycline parameters (kabs 1.68, t1/2α 0.41, Cmax 1.09, tma
 Duyen HTK et al., Pharmacokinetics, pharmacodynamics and…, Veterinary research communi… (2026)
   ·  DOI: [10.1007/s11259-026-11183-7](https://doi.org/10.1007/s11259-026-11183-7)
 
-## Model component
-<dbs-pgx drug="doxycycline" model-id="Doxycycline_Duyen2026_reference" status="needs_review" stale="true" population="white leg shrimp" measured-compound="doxycycline" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="doxycycline" model-id="Doxycycline_Duyen2026_reference" status="needs_review" stale="true" population="white leg shrimp" measured-compound="doxycycline" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 8 extracted.

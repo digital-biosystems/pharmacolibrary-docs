@@ -23,8 +23,7 @@
 Comets E et al., Comparison of the pharmacokinetics of S…, Journal of pharmacokinetics… (2003)
   ·  DOI: [10.1023/a:1026142601822](https://doi.org/10.1023/a:1026142601822)
 
-## Model component
-<dbs-pgx drug="tegafur" model-id="Tegafur_Comets2003_population_mean_se" status="rejected" stale="false" population="Western cancer patients" measured-compound="tegafur, 5-fluorouracil, oteracil, CDHP" parameterization="mechanistic" topology="parent_metabolite"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="tegafur" model-id="Tegafur_Comets2003_population_mean_se" status="rejected" stale="false" population="Western cancer patients" measured-compound="tegafur, 5-fluorouracil, oteracil, CDHP" parameterization="mechanistic" topology="parent_metabolite"></div>
 
 **Model structure:** parent + metabolite; no model was built for this record.  
 **Parameters:** 0 extracted.

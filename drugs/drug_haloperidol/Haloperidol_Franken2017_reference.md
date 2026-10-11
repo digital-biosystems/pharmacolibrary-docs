@@ -31,8 +31,7 @@ Independently confirmed by `gpt-oss:120b`.
 Franken LG et al., Population pharmacokinetics of haloperi…, European journal of clinica… (2017)
   ·  DOI: [10.1007/s00228-017-2283-6](https://doi.org/10.1007/s00228-017-2283-6)
 
-## Model component
-<dbs-pgx drug="haloperidol" model-id="Haloperidol_Franken2017_reference" status="extracted" stale="true" population="terminally ill adult patients" measured-compound="haloperidol" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="haloperidol" model-id="Haloperidol_Franken2017_reference" status="extracted" stale="true" population="terminally ill adult patients" measured-compound="haloperidol" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameters:** 3 extracted.

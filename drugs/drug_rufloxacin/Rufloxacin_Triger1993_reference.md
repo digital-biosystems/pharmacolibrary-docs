@@ -21,8 +21,7 @@
 Triger DR et al., Multiple-dose pharmacokinetics of ruflo…, Hepatology (Baltimore, Md.) (1993)
   ·  DOI: [10.1002/hep.1840180415](https://doi.org/10.1002/hep.1840180415)
 
-## Model component
-<dbs-pgx drug="rufloxacin" model-id="Rufloxacin_Triger1993_reference" status="needs_review" stale="false" population="patients with cirrhosis and healthy controls" measured-compound="rufloxacin" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="rufloxacin" model-id="Rufloxacin_Triger1993_reference" status="needs_review" stale="false" population="patients with cirrhosis and healthy controls" measured-compound="rufloxacin" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 5 extracted.

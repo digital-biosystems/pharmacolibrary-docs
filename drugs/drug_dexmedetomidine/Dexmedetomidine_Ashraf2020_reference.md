@@ -21,8 +21,7 @@
 Ashraf MW et al., Population Modelling of Dexmedetomidine…, Clinical pharmacokinetics (2020)
   ·  DOI: [10.1007/s40262-020-00900-3](https://doi.org/10.1007/s40262-020-00900-3)
 
-## Model component
-<dbs-pgx drug="dexmedetomidine" model-id="Dexmedetomidine_Ashraf2020_reference" status="rejected" stale="false" population="healthy adults" measured-compound="dexmedetomidine" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="dexmedetomidine" model-id="Dexmedetomidine_Ashraf2020_reference" status="rejected" stale="false" population="healthy adults" measured-compound="dexmedetomidine" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment; no model was built for this record.  
 **Parameters:** 8 extracted.

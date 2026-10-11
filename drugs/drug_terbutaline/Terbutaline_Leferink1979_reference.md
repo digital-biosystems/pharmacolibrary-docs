@@ -20,8 +20,7 @@
 ## Citation
 Leferink JG et al., Pharmacokinetics of terbutaline after s…, International journal of cl… (1979)
 
-## Model component
-<dbs-pgx drug="terbutaline" model-id="Terbutaline_Leferink1979_reference" status="rejected" stale="false" population="patients receiving subcutaneous terbutaline" measured-compound="terbutaline" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="terbutaline" model-id="Terbutaline_Leferink1979_reference" status="rejected" stale="false" population="patients receiving subcutaneous terbutaline" measured-compound="terbutaline" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

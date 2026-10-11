@@ -30,8 +30,7 @@ No clearance, volume or rate constant of the model is reported in it. No paramet
 Empey PE et al., Therapeutic hypothermia decreases pheny…, Critical care medicine (2013)
   ·  DOI: [10.1097/CCM.0b013e318292316c](https://doi.org/10.1097/CCM.0b013e318292316c)
 
-## Model component
-<dbs-pgx drug="fosphenytoin" model-id="Fosphenytoin_Empey2013_reference" status="rejected" stale="true" population="children with severe traumatic brain injury" measured-compound="phenytoin" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="fosphenytoin" model-id="Fosphenytoin_Empey2013_reference" status="rejected" stale="true" population="children with severe traumatic brain injury" measured-compound="phenytoin" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

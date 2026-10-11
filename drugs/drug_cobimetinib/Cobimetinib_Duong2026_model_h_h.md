@@ -21,8 +21,7 @@
 Duong NH et al., Cellular Heterogeneity in Drug Uptake A…, CPT: pharmacometrics & syst… (2026)
   ·  DOI: [10.1002/psp4.70282](https://doi.org/10.1002/psp4.70282)
 
-## Model component
-<dbs-pgx drug="cobimetinib" model-id="Cobimetinib_Duong2026_model_h_h" status="extracted" stale="false" population="in silico tumor-cell populations" measured-compound="cobimetinib" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="cobimetinib" model-id="Cobimetinib_Duong2026_model_h_h" status="extracted" stale="false" population="in silico tumor-cell populations" measured-compound="cobimetinib" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 3 extracted.

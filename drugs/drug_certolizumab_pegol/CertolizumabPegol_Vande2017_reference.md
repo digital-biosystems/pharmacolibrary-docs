@@ -21,8 +21,7 @@
 Vande Casteele N et al., Accounting for Pharmacokinetic Variabil…, Clinical pharmacokinetics (2017)
   ·  DOI: [10.1007/s40262-017-0535-3](https://doi.org/10.1007/s40262-017-0535-3)
 
-## Model component
-<dbs-pgx drug="certolizumab pegol" model-id="CertolizumabPegol_Vande2017_reference" status="rejected" stale="false" population="Crohn&#39;s disease patients" measured-compound="certolizumab_pegol" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="certolizumab pegol" model-id="CertolizumabPegol_Vande2017_reference" status="rejected" stale="false" population="Crohn&#39;s disease patients" measured-compound="certolizumab_pegol" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

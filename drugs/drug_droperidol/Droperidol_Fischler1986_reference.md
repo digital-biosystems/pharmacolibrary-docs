@@ -21,8 +21,7 @@
 Fischler M et al., The pharmacokinetics of droperidol in a…, Anesthesiology (1986)
   ·  DOI: [10.1097/00000542-198604000-00012](https://doi.org/10.1097/00000542-198604000-00012)
 
-## Model component
-<dbs-pgx drug="droperidol" model-id="Droperidol_Fischler1986_reference" status="rejected" stale="false" population="anesthetized patients" measured-compound="droperidol" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="droperidol" model-id="Droperidol_Fischler1986_reference" status="rejected" stale="false" population="anesthetized patients" measured-compound="droperidol" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 4 extracted.

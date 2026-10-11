@@ -20,8 +20,7 @@
 Variol P et al., A simultaneous oral/intravenous populat…, European journal of clinica… (2002)
   ·  DOI: [10.1007/s00228-002-0506-x](https://doi.org/10.1007/s00228-002-0506-x)
 
-## Model component
-<dbs-pgx drug="vinorelbine" model-id="Vinorelbine_Variol2002_reference" status="rejected" stale="false" population="phase I/II patients treated with vinorelbine monotherapy" measured-compound="vinorelbine" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="vinorelbine" model-id="Vinorelbine_Variol2002_reference" status="rejected" stale="false" population="phase I/II patients treated with vinorelbine monotherapy" measured-compound="vinorelbine" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 1 extracted.

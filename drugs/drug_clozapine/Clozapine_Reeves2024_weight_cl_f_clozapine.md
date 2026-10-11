@@ -25,8 +25,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the val
 Reeves S et al., A population pharmacokinetic model to g…, British journal of clinical… (2024)
   ·  DOI: [10.1111/bcp.15691](https://doi.org/10.1111/bcp.15691)
 
-## Model component
-<dbs-pgx drug="clozapine" model-id="Clozapine_Reeves2024_weight_cl_f_clozapine" status="needs_review" stale="false" population="patients with treatment-resistant schizophrenia on clozapine TDM" measured-compound="clozapine" parameterization="apparent" topology="parent_metabolite"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="clozapine" model-id="Clozapine_Reeves2024_weight_cl_f_clozapine" status="needs_review" stale="false" population="patients with treatment-resistant schizophrenia on clozapine TDM" measured-compound="clozapine" parameterization="apparent" topology="parent_metabolite"></div>
 
 **Model structure:** parent + metabolite; no model was built for this record.  
 **Parameters:** 2 extracted.

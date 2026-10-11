@@ -33,8 +33,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the val
 Medhora M et al., Radiation Increases Bioavailability of…, Frontiers in pharmacology (2021)
   ·  DOI: [10.3389/fphar.2021.646076](https://doi.org/10.3389/fphar.2021.646076)
 
-## Model component
-<dbs-pgx drug="lisinopril" model-id="Lisinopril_Medhora2021_reference" status="rejected" stale="true" population="irradiated and nonirradiated rats" measured-compound="lisinopril" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="lisinopril" model-id="Lisinopril_Medhora2021_reference" status="rejected" stale="true" population="irradiated and nonirradiated rats" measured-compound="lisinopril" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment; no model was built for this record.  
 **Parameters:** 6 extracted.

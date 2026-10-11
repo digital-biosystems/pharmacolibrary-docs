@@ -35,8 +35,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on paramet
 Aljaeid BM et al., Chitosan-TPP nanoparticles stabilized b…, Drug development and indust… (2019)
   ·  DOI: [10.1080/03639045.2019.1597105](https://doi.org/10.1080/03639045.2019.1597105)
 
-## Model component
-<dbs-pgx drug="doxazosin" model-id="Doxazosin_Aljaeid2019_reference" status="rejected" stale="true" population="healthy albino male rabbits" measured-compound="doxazosin" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="doxazosin" model-id="Doxazosin_Aljaeid2019_reference" status="rejected" stale="true" population="healthy albino male rabbits" measured-compound="doxazosin" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 2 extracted.

@@ -25,8 +25,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Stott KE et al., Population pharmacokinetics and CSF pen…, The Journal of antimicrobia… (2023)
   ·  DOI: [10.1093/jac/dkad038](https://doi.org/10.1093/jac/dkad038)
 
-## Model component
-<dbs-pgx drug="flucytosine" model-id="Flucytosine_Stott2023_median" status="extracted" stale="false" population="adults with HIV-associated cryptococcal meningoencephalitis" measured-compound="flucytosine" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="flucytosine" model-id="Flucytosine_Stott2023_median" status="extracted" stale="false" population="adults with HIV-associated cryptococcal meningoencephalitis" measured-compound="flucytosine" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 4 extracted.

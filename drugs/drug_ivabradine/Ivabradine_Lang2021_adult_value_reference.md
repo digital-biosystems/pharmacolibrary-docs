@@ -30,8 +30,7 @@ Independently confirmed by `gpt-oss:120b`.
 Lang J et al., Impact of Hepatic CYP3A4 Ontogeny Funct…, Clinical pharmacology and t… (2021)
   ·  DOI: [10.1002/cpt.2134](https://doi.org/10.1002/cpt.2134)
 
-## Model component
-<dbs-pgx drug="ivabradine" model-id="Ivabradine_Lang2021_adult_value_reference" status="rejected" stale="true" population="children (0.5-18 years)" measured-compound="ivabradine" parameterization="mechanistic" topology="parent_metabolite"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="ivabradine" model-id="Ivabradine_Lang2021_adult_value_reference" status="rejected" stale="true" population="children (0.5-18 years)" measured-compound="ivabradine" parameterization="mechanistic" topology="parent_metabolite"></div>
 
 **Model structure:** parent + metabolite; no model was built for this record.  
 **Parameters:** 0 extracted.

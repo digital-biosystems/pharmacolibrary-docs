@@ -30,8 +30,7 @@ No clearance, volume or rate constant of the model is reported in it. No paramet
 Kawuma AN et al., Population pharmacokinetics of tenofovi…, CPT: pharmacometrics & syst… (2023)
   ·  DOI: [10.1002/psp4.12955](https://doi.org/10.1002/psp4.12955)
 
-## Model component
-<dbs-pgx drug="tenofovir alafenamide" model-id="TenofovirAlafenamide_Kawuma2023_reference" status="rejected" stale="true" population="South African adults living with HIV" measured-compound="tenofovir" parameterization="apparent" topology="general_linear"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="tenofovir alafenamide" model-id="TenofovirAlafenamide_Kawuma2023_reference" status="rejected" stale="true" population="South African adults living with HIV" measured-compound="tenofovir" parameterization="apparent" topology="general_linear"></div>
 
 **Model structure:** general linear; no model was built for this record.  
 **Parameters:** 1 extracted.

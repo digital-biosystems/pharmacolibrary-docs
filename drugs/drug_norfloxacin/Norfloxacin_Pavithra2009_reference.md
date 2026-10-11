@@ -23,8 +23,7 @@
 Pavithra BH et al., Modification of pharmacokinetics of nor…, Journal of veterinary scien… (2009)
   ·  DOI: [10.4142/jvs.2009.10.4.293](https://doi.org/10.4142/jvs.2009.10.4.293)
 
-## Model component
-<dbs-pgx drug="norfloxacin" model-id="Norfloxacin_Pavithra2009_reference" status="rejected" stale="false" population="adult New Zealand white rabbits" measured-compound="norfloxacin" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="norfloxacin" model-id="Norfloxacin_Pavithra2009_reference" status="rejected" stale="false" population="adult New Zealand white rabbits" measured-compound="norfloxacin" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

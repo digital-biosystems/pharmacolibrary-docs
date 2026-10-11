@@ -31,8 +31,7 @@ Independently confirmed by `gpt-oss:120b`.
 Michaličková D et al., Population pharmacokinetics of riocigua…, Pulmonary circulation (2020)
   ·  DOI: [10.1177/2045894019898031](https://doi.org/10.1177/2045894019898031)
 
-## Model component
-<dbs-pgx drug="riociguat" model-id="Riociguat_Michalikov2020_reference" status="needs_review" stale="true" population="patients with chronic thromboembolic pulmonary hypertension" measured-compound="riociguat" parameterization="mechanistic" topology="parent_metabolite"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="riociguat" model-id="Riociguat_Michalikov2020_reference" status="needs_review" stale="true" population="patients with chronic thromboembolic pulmonary hypertension" measured-compound="riociguat" parameterization="mechanistic" topology="parent_metabolite"></div>
 
 **Model structure:** parent + metabolite; no model was built for this record.  
 **Parameters:** 3 extracted.

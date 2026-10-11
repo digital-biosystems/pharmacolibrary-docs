@@ -21,8 +21,7 @@
 Simon N et al., Individual Influence in Population Phar…, Pharmaceutics (2026)
   ·  DOI: [10.3390/pharmaceutics18080984](https://doi.org/10.3390/pharmaceutics18080984)
 
-## Model component
-<dbs-pgx drug="fampridine" model-id="Fampridine_Simon2026_reference" status="extracted" stale="false" population="" measured-compound="fampridine" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="fampridine" model-id="Fampridine_Simon2026_reference" status="extracted" stale="false" population="" measured-compound="fampridine" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 3 extracted.

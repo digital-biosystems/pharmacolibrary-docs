@@ -25,8 +25,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Butterworth JF et al., A pharmacokinetic and pharmacodynamic e…, Anesthesia and analgesia (1995)
   ·  DOI: [10.1097/00000539-199510000-00022](https://doi.org/10.1097/00000539-199510000-00022)
 
-## Model component
-<dbs-pgx drug="milrinone" model-id="Milrinone_Butterworth1995_reference" status="needs_review" stale="false" population="adults undergoing cardiac surgery" measured-compound="milrinone" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="milrinone" model-id="Milrinone_Butterworth1995_reference" status="needs_review" stale="false" population="adults undergoing cardiac surgery" measured-compound="milrinone" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 4 extracted.

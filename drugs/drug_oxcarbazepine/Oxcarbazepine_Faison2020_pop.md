@@ -31,8 +31,7 @@ No clearance, volume or rate constant of the model is reported in it. No paramet
 Faison S et al., Predicted Efficacy of Once-Daily Extend…, Clinical pharmacology : adv… (2020)
   ·  DOI: [10.2147/CPAA.S256972](https://doi.org/10.2147/CPAA.S256972)
 
-## Model component
-<dbs-pgx drug="oxcarbazepine" model-id="Oxcarbazepine_Faison2020_pop" status="rejected" stale="true" population="adults and children with partial-onset seizures" measured-compound="monohydroxy derivative" parameterization="mechanistic" topology="parent_metabolite"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="oxcarbazepine" model-id="Oxcarbazepine_Faison2020_pop" status="rejected" stale="true" population="adults and children with partial-onset seizures" measured-compound="monohydroxy derivative" parameterization="mechanistic" topology="parent_metabolite"></div>
 
 **Model structure:** parent + metabolite; no model was built for this record.  
 **Parameters:** 0 extracted.

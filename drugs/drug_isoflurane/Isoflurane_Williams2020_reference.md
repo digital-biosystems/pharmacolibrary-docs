@@ -34,8 +34,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Williams CJA et al., Ectothermy and cardiac shunts profoundl…, Scientific reports (2020)
   ·  DOI: [10.1038/s41598-020-74014-y](https://doi.org/10.1038/s41598-020-74014-y)
 
-## Model component
-<dbs-pgx drug="isoflurane" model-id="Isoflurane_Williams2020_reference" status="rejected" stale="true" population="mammalian and ectotherm vertebrates" measured-compound="arterial blood anaesthetic partial pressure" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="isoflurane" model-id="Isoflurane_Williams2020_reference" status="rejected" stale="true" population="mammalian and ectotherm vertebrates" measured-compound="arterial blood anaesthetic partial pressure" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

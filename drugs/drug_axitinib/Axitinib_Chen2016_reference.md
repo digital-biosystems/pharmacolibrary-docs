@@ -21,8 +21,7 @@
 Chen Y et al., Effect of Renal Impairment on the Pharm…, Targeted oncology (2016)
   ·  DOI: [10.1007/s11523-015-0389-2](https://doi.org/10.1007/s11523-015-0389-2)
 
-## Model component
-<dbs-pgx drug="axitinib" model-id="Axitinib_Chen2016_reference" status="needs_review" stale="false" population="patients with advanced solid tumors and healthy volunteers" measured-compound="axitinib" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="axitinib" model-id="Axitinib_Chen2016_reference" status="needs_review" stale="false" population="patients with advanced solid tumors and healthy volunteers" measured-compound="axitinib" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 2 extracted.

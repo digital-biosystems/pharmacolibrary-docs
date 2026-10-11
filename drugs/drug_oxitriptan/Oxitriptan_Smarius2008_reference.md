@@ -20,8 +20,7 @@
 Smarius LJ et al., Pharmacology of rising oral doses of 5-…, Journal of psychopharmacolo… (2008)
   ·  DOI: [10.1177/0269881107082025](https://doi.org/10.1177/0269881107082025)
 
-## Model component
-<dbs-pgx drug="oxitriptan" model-id="Oxitriptan_Smarius2008_reference" status="needs_review" stale="false" population="healthy male volunteers" measured-compound="5-hydroxytryptophan (oxitriptan)" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="oxitriptan" model-id="Oxitriptan_Smarius2008_reference" status="needs_review" stale="false" population="healthy male volunteers" measured-compound="5-hydroxytryptophan (oxitriptan)" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 1 extracted.

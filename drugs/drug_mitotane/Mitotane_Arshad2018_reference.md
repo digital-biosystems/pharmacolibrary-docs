@@ -21,8 +21,7 @@
 Arshad U et al., Enzyme autoinduction by mitotane suppor…, European journal of endocri… (2018)
   ·  DOI: [10.1530/EJE-18-0342](https://doi.org/10.1530/EJE-18-0342)
 
-## Model component
-<dbs-pgx drug="mitotane" model-id="Mitotane_Arshad2018_reference" status="needs_review" stale="false" population="adrenocortical carcinoma patients" measured-compound="mitotane" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="mitotane" model-id="Mitotane_Arshad2018_reference" status="needs_review" stale="false" population="adrenocortical carcinoma patients" measured-compound="mitotane" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 1 extracted.

@@ -21,8 +21,7 @@
 Lander RD et al., Pharmacokinetic comparison of 5 g of az…, Antimicrobial agents and ch… (1989)
   ·  DOI: [10.1128/AAC.33.5.710](https://doi.org/10.1128/AAC.33.5.710)
 
-## Model component
-<dbs-pgx drug="azlocillin" model-id="Azlocillin_Lander1989_reference" status="needs_review" stale="false" population="healthy volunteers" measured-compound="azlocillin" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="azlocillin" model-id="Azlocillin_Lander1989_reference" status="needs_review" stale="false" population="healthy volunteers" measured-compound="azlocillin" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 5 extracted.

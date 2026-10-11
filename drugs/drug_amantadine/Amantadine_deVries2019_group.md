@@ -27,8 +27,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 deVries T et al., Effects of Renal Impairment on the Phar…, CNS drugs (2019)
   ·  DOI: [10.1007/s40263-019-00651-1](https://doi.org/10.1007/s40263-019-00651-1)
 
-## Model component
-<dbs-pgx drug="amantadine" model-id="Amantadine_deVries2019_group" status="rejected" stale="false" population="adults with normal, moderate, or severe renal impairment" measured-compound="amantadine" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="amantadine" model-id="Amantadine_deVries2019_group" status="rejected" stale="false" population="adults with normal, moderate, or severe renal impairment" measured-compound="amantadine" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

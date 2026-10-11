@@ -23,8 +23,7 @@
 Delbaldo C et al., Pharmacokinetic-pharmacodynamic relatio…, Clinical cancer research :… (2006)
   ·  DOI: [10.1158/1078-0432.CCR-05-2596](https://doi.org/10.1158/1078-0432.CCR-05-2596)
 
-## Model component
-<dbs-pgx drug="imatinib" model-id="Imatinib_Delbaldo2006_reference" status="needs_review" stale="false" population="patients with advanced gastrointestinal stromal tumors" measured-compound="imatinib and CGP 74588" parameterization="apparent" topology="parent_metabolite"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="imatinib" model-id="Imatinib_Delbaldo2006_reference" status="needs_review" stale="false" population="patients with advanced gastrointestinal stromal tumors" measured-compound="imatinib and CGP 74588" parameterization="apparent" topology="parent_metabolite"></div>
 
 **Model structure:** parent + metabolite; no model was built for this record.  
 **Parameters:** 4 extracted.

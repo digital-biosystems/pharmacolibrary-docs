@@ -21,8 +21,7 @@
 Thompson P et al., Pharmacokinetics and pharmacogenomics o…, Cancer chemotherapy and pha… (2014)
   ·  DOI: [10.1007/s00280-014-2535-4](https://doi.org/10.1007/s00280-014-2535-4)
 
-## Model component
-<dbs-pgx drug="daunorubicin" model-id="Daunorubicin_Thompson2014v2_reference" status="needs_review" stale="false" population="children with cancer" measured-compound="daunorubicin" parameterization="apparent" topology="parent_metabolite"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="daunorubicin" model-id="Daunorubicin_Thompson2014v2_reference" status="needs_review" stale="false" population="children with cancer" measured-compound="daunorubicin" parameterization="apparent" topology="parent_metabolite"></div>
 
 **Model structure:** parent + metabolite; no model was built for this record.  
 **Parameters:** 3 extracted.

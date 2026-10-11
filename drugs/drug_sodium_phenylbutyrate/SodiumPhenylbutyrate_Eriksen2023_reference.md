@@ -29,8 +29,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the val
 Eriksen PL et al., Clearance and production of ammonia qua…, Journal of hepatology (2023)
   ·  DOI: [10.1016/j.jhep.2023.03.042](https://doi.org/10.1016/j.jhep.2023.03.042)
 
-## Model component
-<dbs-pgx drug="sodium phenylbutyrate" model-id="SodiumPhenylbutyrate_Eriksen2023_reference" status="extracted" stale="true" population="" measured-compound="sodium_phenylbutyrate" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="sodium phenylbutyrate" model-id="SodiumPhenylbutyrate_Eriksen2023_reference" status="extracted" stale="true" population="" measured-compound="sodium_phenylbutyrate" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameters:** 2 extracted.

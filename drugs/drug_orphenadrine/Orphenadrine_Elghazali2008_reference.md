@@ -23,8 +23,7 @@
 Elghazali M et al., Pharmacokinetic, metabolism and withdra…, Research in veterinary scie… (2008)
   ·  DOI: [10.1016/j.rvsc.2008.01.006](https://doi.org/10.1016/j.rvsc.2008.01.006)
 
-## Model component
-<dbs-pgx drug="Orphenadrine" model-id="Orphenadrine_Elghazali2008_reference" status="extracted" stale="false" population="camels" measured-compound="orphenadrine" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="Orphenadrine" model-id="Orphenadrine_Elghazali2008_reference" status="extracted" stale="false" population="camels" measured-compound="orphenadrine" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameters:** 6 extracted.

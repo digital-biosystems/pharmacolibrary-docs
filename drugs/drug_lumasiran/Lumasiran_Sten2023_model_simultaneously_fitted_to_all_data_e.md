@@ -31,8 +31,7 @@ Independently confirmed by `gpt-oss:120b`.
 Sten S et al., Plasma Pharmacokinetics of N-Acetylgala…, Clinical pharmacokinetics (2023)
   ·  DOI: [10.1007/s40262-023-01314-7](https://doi.org/10.1007/s40262-023-01314-7)
 
-## Model component
-<dbs-pgx drug="lumasiran" model-id="Lumasiran_Sten2023_model_simultaneously_fitted_to_all_data_e" status="needs_review" stale="false" population="healthy adults and patients with primary hyperoxaluria type 1" measured-compound="lumasiran" parameterization="apparent" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="lumasiran" model-id="Lumasiran_Sten2023_model_simultaneously_fitted_to_all_data_e" status="needs_review" stale="false" population="healthy adults and patients with primary hyperoxaluria type 1" measured-compound="lumasiran" parameterization="apparent" topology="2C"></div>
 
 **Model structure:** 2-compartment, oral mammillary model — template `PK_2C_enteral`.  
 **Parameters:** 6 extracted.

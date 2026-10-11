@@ -30,8 +30,7 @@ Independently confirmed by `gpt-oss:120b`.
 Li Y et al., Population Pharmacokinetic Modelling of…, Clinical pharmacokinetics (2024)
   ·  DOI: [10.1007/s40262-024-01430-y](https://doi.org/10.1007/s40262-024-01430-y)
 
-## Model component
-<dbs-pgx drug="norepinephrine" model-id="Norepinephrine_Li2024_reference" status="rejected" stale="true" population="healthy volunteers" measured-compound="norepinephrine" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="norepinephrine" model-id="Norepinephrine_Li2024_reference" status="rejected" stale="true" population="healthy volunteers" measured-compound="norepinephrine" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

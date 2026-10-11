@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Frederiksen T et al., Estimating the In Vivo Function of CYP2…, Clinical pharmacology and t… (2023)
   ·  DOI: [10.1002/cpt.2791](https://doi.org/10.1002/cpt.2791)
 
-## Model component
-<dbs-pgx drug="brexpiprazole" model-id="Brexpiprazole_Frederiksen2023v3_reference" status="extracted" stale="true" population="healthy subjects and patients" measured-compound="brexpiprazole" parameterization="mechanistic" topology="general_linear"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="brexpiprazole" model-id="Brexpiprazole_Frederiksen2023v3_reference" status="extracted" stale="true" population="healthy subjects and patients" measured-compound="brexpiprazole" parameterization="mechanistic" topology="general_linear"></div>
 
 **Model structure:** parent–metabolite model: parent with 2 compartment(s); metabolite DM-3411: 1 compartment(s); metabolite DM-3412: 2 compartment(s); formed from the central compartment; oral dose — template `PK_3M_9C`.  
 **Parameters:** 13 extracted.

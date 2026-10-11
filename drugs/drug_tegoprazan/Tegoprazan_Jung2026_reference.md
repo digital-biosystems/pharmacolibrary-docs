@@ -29,8 +29,7 @@ A model needs both clearance and volume; without the clearance it could only be 
 Jung W et al., A Mechanism-Based Multi-Level Populatio…, CPT: pharmacometrics & syst… (2026)
   ·  DOI: [10.1002/psp4.70181](https://doi.org/10.1002/psp4.70181)
 
-## Model component
-<dbs-pgx drug="tegoprazan" model-id="Tegoprazan_Jung2026_reference" status="rejected" stale="true" population="adults" measured-compound="tegoprazan" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="tegoprazan" model-id="Tegoprazan_Jung2026_reference" status="rejected" stale="true" population="adults" measured-compound="tegoprazan" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

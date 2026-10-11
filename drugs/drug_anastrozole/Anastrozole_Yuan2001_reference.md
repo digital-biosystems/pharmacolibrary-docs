@@ -19,8 +19,7 @@
 ## Citation
 Yuan J et al., Pharmacokinetics of anastrozole in Chin…, Acta pharmacologica Sinica (2001)
 
-## Model component
-<dbs-pgx drug="anastrozole" model-id="Anastrozole_Yuan2001_reference" status="rejected" stale="false" population="Chinese male volunteers" measured-compound="anastrozole" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="anastrozole" model-id="Anastrozole_Yuan2001_reference" status="rejected" stale="false" population="Chinese male volunteers" measured-compound="anastrozole" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

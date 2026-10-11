@@ -21,8 +21,7 @@
 Ikawa K et al., Pharmacokinetic-pharmacodynamic target…, International journal of an… (2009)
   ·  DOI: [10.1016/j.ijantimicag.2008.08.031](https://doi.org/10.1016/j.ijantimicag.2008.08.031)
 
-## Model component
-<dbs-pgx drug="doripenem" model-id="Doripenem_Ikawa2009_reference" status="rejected" stale="false" population="infected patients" measured-compound="doripenem" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="doripenem" model-id="Doripenem_Ikawa2009_reference" status="rejected" stale="false" population="infected patients" measured-compound="doripenem" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

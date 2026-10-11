@@ -21,8 +21,7 @@
 Malehorn EN et al., Pharmacokinetic analysis of conventiona…, Pediatric research (2026)
   ·  DOI: [10.1038/s41390-026-05158-2](https://doi.org/10.1038/s41390-026-05158-2)
 
-## Model component
-<dbs-pgx drug="tobramycin" model-id="Tobramycin_Malehorn2026_reference" status="extracted" stale="false" population="" measured-compound="tobramycin" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="tobramycin" model-id="Tobramycin_Malehorn2026_reference" status="extracted" stale="false" population="" measured-compound="tobramycin" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameters:** 2 extracted.

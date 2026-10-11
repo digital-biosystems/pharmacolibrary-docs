@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on paramet
 Greenblatt DJ et al., Pharmacokinetic and electroencephalogra…, Clinical pharmacology and t… (1989)
   ·  DOI: [10.1038/clpt.1989.41](https://doi.org/10.1038/clpt.1989.41)
 
-## Model component
-<dbs-pgx drug="midazolam" model-id="Midazolam_Greenblatt1989_reference" status="extracted" stale="true" population="healthy adults" measured-compound="midazolam" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="midazolam" model-id="Midazolam_Greenblatt1989_reference" status="extracted" stale="true" population="healthy adults" measured-compound="midazolam" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameters:** 2 extracted.

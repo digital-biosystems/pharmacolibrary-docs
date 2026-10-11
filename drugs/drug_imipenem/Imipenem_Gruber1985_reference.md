@@ -23,8 +23,7 @@
 Gruber WC et al., Single-dose pharmacokinetics of imipene…, Antimicrobial agents and ch… (1985)
   ·  DOI: [10.1128/AAC.27.4.511](https://doi.org/10.1128/AAC.27.4.511)
 
-## Model component
-<dbs-pgx drug="Imipenem" model-id="Imipenem_Gruber1985_reference" status="needs_review" stale="false" population="neonates" measured-compound="imipenem" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="Imipenem" model-id="Imipenem_Gruber1985_reference" status="needs_review" stale="false" population="neonates" measured-compound="imipenem" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 4 extracted.

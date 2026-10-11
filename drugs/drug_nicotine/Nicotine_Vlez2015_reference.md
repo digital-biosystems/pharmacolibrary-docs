@@ -20,8 +20,7 @@
 Vélez de Mendizábal N et al., Nicotine and cotinine exposure from ele…, Clinical pharmacokinetics (2015)
   ·  DOI: [10.1007/s40262-014-0221-7](https://doi.org/10.1007/s40262-014-0221-7)
 
-## Model component
-<dbs-pgx drug="nicotine" model-id="Nicotine_Vlez2015_reference" status="extracted" stale="false" population="heavy smokers (adults)" measured-compound="nicotine" parameterization="mechanistic" topology="parent_metabolite"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="nicotine" model-id="Nicotine_Vlez2015_reference" status="extracted" stale="false" population="heavy smokers (adults)" measured-compound="nicotine" parameterization="mechanistic" topology="parent_metabolite"></div>
 
 **Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameters:** 5 extracted.

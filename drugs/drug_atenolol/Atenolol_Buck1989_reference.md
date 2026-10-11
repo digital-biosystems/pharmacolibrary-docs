@@ -30,8 +30,7 @@ Independently confirmed by `gpt-oss:120b`.
 Buck ML et al., Pharmacokinetics and pharmacodynamics o…, Clinical pharmacology and t… (1989)
   ·  DOI: [10.1038/clpt.1989.198](https://doi.org/10.1038/clpt.1989.198)
 
-## Model component
-<dbs-pgx drug="atenolol" model-id="Atenolol_Buck1989_reference" status="rejected" stale="true" population="children with arrhythmias" measured-compound="atenolol" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="atenolol" model-id="Atenolol_Buck1989_reference" status="rejected" stale="true" population="children with arrhythmias" measured-compound="atenolol" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

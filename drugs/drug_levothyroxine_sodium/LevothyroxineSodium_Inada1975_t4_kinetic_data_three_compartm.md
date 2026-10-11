@@ -22,8 +22,7 @@
 Inada M et al., Estimation of thyroxine and triiodothyr…, The Journal of clinical inv… (1975)
   ·  DOI: [10.1172/JCI108053](https://doi.org/10.1172/JCI108053)
 
-## Model component
-<dbs-pgx drug="levothyroxine sodium" model-id="LevothyroxineSodium_Inada1975_t4_kinetic_data_three_compartm" status="needs_review" stale="false" population="normal adults, hypothyroid patients" measured-compound="levothyroxine (T4), liothyronine (T3)" parameterization="mechanistic" topology="parent_metabolite"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="levothyroxine sodium" model-id="LevothyroxineSodium_Inada1975_t4_kinetic_data_three_compartm" status="needs_review" stale="false" population="normal adults, hypothyroid patients" measured-compound="levothyroxine (T4), liothyronine (T3)" parameterization="mechanistic" topology="parent_metabolite"></div>
 
 **Model structure:** parent + metabolite; no model was built for this record.  
 **Parameters:** 2 extracted.

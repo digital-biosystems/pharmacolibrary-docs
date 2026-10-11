@@ -24,8 +24,7 @@
 Snow DH et al., The pharmacokinetics of meclofenamic ac…, Journal of veterinary pharm… (1981)
   ·  DOI: [10.1111/j.1365-2885.1981.tb00724.x](https://doi.org/10.1111/j.1365-2885.1981.tb00724.x)
 
-## Model component
-<dbs-pgx drug="meclofenamic acid" model-id="MeclofenamicAcid_Snow1981_reference" status="needs_review" stale="false" population="Thoroughbred horses and ponies" measured-compound="meclofenamic acid" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="meclofenamic acid" model-id="MeclofenamicAcid_Snow1981_reference" status="needs_review" stale="false" population="Thoroughbred horses and ponies" measured-compound="meclofenamic acid" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 2 extracted.

@@ -27,8 +27,7 @@
 Fiedler-Kelly JB et al., Population pharmacokinetic modelling an…, British journal of clinical… (2019)
   ·  DOI: [10.1111/bcp.14096](https://doi.org/10.1111/bcp.14096)
 
-## Model component
-<dbs-pgx drug="erenumab" model-id="Erenumab_FiedlerKelly2019_reference" status="extracted" stale="true" population="" measured-compound="erenumab" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="erenumab" model-id="Erenumab_FiedlerKelly2019_reference" status="extracted" stale="true" population="" measured-compound="erenumab" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameters:** 2 extracted.

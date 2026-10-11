@@ -29,8 +29,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on paramet
 McCann S et al., Population Pharmacokinetics of Posacona…, Clinical pharmacokinetics (2023)
   ·  DOI: [10.1007/s40262-023-01254-2](https://doi.org/10.1007/s40262-023-01254-2)
 
-## Model component
-<dbs-pgx drug="omeprazole" model-id="Omeprazole_McCann2023_reference" status="needs_review" stale="false" population="" measured-compound="omeprazole" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="omeprazole" model-id="Omeprazole_McCann2023_reference" status="needs_review" stale="false" population="" measured-compound="omeprazole" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 4 extracted.

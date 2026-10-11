@@ -21,8 +21,7 @@
 Dede E; Tindall MJ; Cherrie JW; Hankin S; Collins C et al. (2017).
   ·  DOI: [10.1016/j.etap.2017.12.003](https://doi.org/10.1016/j.etap.2017.12.003)
 
-## Model component
-<dbs-pgx drug="lead" model-id="Lead_Dede2017_exposure" status="needs_review" stale="false" population="adult humans" measured-compound="arsenic, cadmium, chromium, nickel, lead" parameterization="mechanistic" topology="manual_model_class"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="lead" model-id="Lead_Dede2017_exposure" status="needs_review" stale="false" population="adult humans" measured-compound="arsenic, cadmium, chromium, nickel, lead" parameterization="mechanistic" topology="manual_model_class"></div>
 
 **Model structure:** nonlinear / manual; no model was built for this record.  
 **Parameters:** 2 extracted.

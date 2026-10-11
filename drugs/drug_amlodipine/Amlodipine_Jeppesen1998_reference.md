@@ -33,8 +33,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Jeppesen P et al., Amlodipine dynamic effects and myocardi…, Pharmacology & toxicology (1998)
   ·  DOI: [10.1111/j.1600-0773.1998.tb01433.x](https://doi.org/10.1111/j.1600-0773.1998.tb01433.x)
 
-## Model component
-<dbs-pgx drug="amlodipine" model-id="Amlodipine_Jeppesen1998_reference" status="needs_review" stale="true" population="isolated guinea-pig hearts" measured-compound="amlodipine" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="amlodipine" model-id="Amlodipine_Jeppesen1998_reference" status="needs_review" stale="true" population="isolated guinea-pig hearts" measured-compound="amlodipine" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 5 extracted.

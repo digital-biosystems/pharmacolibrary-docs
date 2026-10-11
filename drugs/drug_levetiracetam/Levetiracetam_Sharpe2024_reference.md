@@ -21,8 +21,7 @@
 Sharpe C et al., Pharmacokinetic and pharmacodynamic dat…, Archives of disease in chil… (2024)
   ·  DOI: [10.1136/archdischild-2022-324952](https://doi.org/10.1136/archdischild-2022-324952)
 
-## Model component
-<dbs-pgx drug="levetiracetam" model-id="Levetiracetam_Sharpe2024_reference" status="extracted" stale="false" population="term neonates with electrographically confirmed seizures" measured-compound="levetiracetam" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="levetiracetam" model-id="Levetiracetam_Sharpe2024_reference" status="extracted" stale="false" population="term neonates with electrographically confirmed seizures" measured-compound="levetiracetam" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 3 extracted.

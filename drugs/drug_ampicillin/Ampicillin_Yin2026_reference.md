@@ -21,8 +21,7 @@
 Yin Q et al., Population pharmacokinetic modeling and…, Antimicrobial agents and ch… (2026)
   ·  DOI: [10.1128/aac.01810-25](https://doi.org/10.1128/aac.01810-25)
 
-## Model component
-<dbs-pgx drug="ampicillin" model-id="Ampicillin_Yin2026_reference" status="extracted" stale="false" population="" measured-compound="ampicillin" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="ampicillin" model-id="Ampicillin_Yin2026_reference" status="extracted" stale="false" population="" measured-compound="ampicillin" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameters:** 2 extracted.

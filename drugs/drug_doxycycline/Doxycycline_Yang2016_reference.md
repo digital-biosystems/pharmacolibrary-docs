@@ -33,8 +33,7 @@ Independently confirmed by `gpt-oss:120b`.
 Yang F et al., Pharmacokinetics of doxycycline in layi…, British poultry science (2016)
   ·  DOI: [10.1080/00071668.2016.1184228](https://doi.org/10.1080/00071668.2016.1184228)
 
-## Model component
-<dbs-pgx drug="doxycycline" model-id="Doxycycline_Yang2016_reference" status="needs_review" stale="true" population="laying hens" measured-compound="doxycycline" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="doxycycline" model-id="Doxycycline_Yang2016_reference" status="needs_review" stale="true" population="laying hens" measured-compound="doxycycline" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 8 extracted.

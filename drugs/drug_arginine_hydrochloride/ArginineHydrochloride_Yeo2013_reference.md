@@ -27,8 +27,7 @@
 Yeo TW et al., A randomized pilot study of L-arginine…, PloS one (2013)
   ·  DOI: [10.1371/journal.pone.0069587](https://doi.org/10.1371/journal.pone.0069587)
 
-## Model component
-<dbs-pgx drug="arginine hydrochloride" model-id="ArginineHydrochloride_Yeo2013_reference" status="" stale="true" population="adults with severe falciparum malaria" measured-compound="" parameterization="" topology=""></dbs-pgx>
+<div class="pk-model-meta" hidden drug="arginine hydrochloride" model-id="ArginineHydrochloride_Yeo2013_reference" status="" stale="true" population="adults with severe falciparum malaria" measured-compound="" parameterization="" topology=""></div>
 
 **Model structure:** —; no model was built for this record.  
 **Parameters:** 0 extracted.

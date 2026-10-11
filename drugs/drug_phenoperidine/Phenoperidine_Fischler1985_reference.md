@@ -21,8 +21,7 @@
 Fischler M et al., Pharmacokinetics of phenoperidine in an…, British journal of anaesthe… (1985)
   ·  DOI: [10.1093/bja/57.9.872](https://doi.org/10.1093/bja/57.9.872)
 
-## Model component
-<dbs-pgx drug="phenoperidine" model-id="Phenoperidine_Fischler1985_reference" status="extracted" stale="false" population="anaesthetized patients undergoing general surgery" measured-compound="phenoperidine" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="phenoperidine" model-id="Phenoperidine_Fischler1985_reference" status="extracted" stale="false" population="anaesthetized patients undergoing general surgery" measured-compound="phenoperidine" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameters:** 4 extracted.

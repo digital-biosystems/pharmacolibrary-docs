@@ -23,8 +23,7 @@
 Van Hamme MJ et al., Pharmacokinetics of etomidate, a new in…, Anesthesiology (1978)
   ·  DOI: [10.1097/00000542-197810000-00010](https://doi.org/10.1097/00000542-197810000-00010)
 
-## Model component
-<dbs-pgx drug="etomidate" model-id="Etomidate_Van1978_reference" status="extracted" stale="false" population="patients" measured-compound="etomidate" parameterization="apparent" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="etomidate" model-id="Etomidate_Van1978_reference" status="extracted" stale="false" population="patients" measured-compound="etomidate" parameterization="apparent" topology="2C"></div>
 
 **Model structure:** 2-compartment, oral mammillary model — template `PK_2C_enteral`.  
 **Parameters:** 8 extracted.

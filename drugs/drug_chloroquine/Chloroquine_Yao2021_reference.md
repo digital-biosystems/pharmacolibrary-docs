@@ -33,8 +33,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on `parame
 Yao X et al., Population-based meta-analysis of chlor…, European journal of clinica… (2021)
   ·  DOI: [10.1007/s00228-020-03032-6](https://doi.org/10.1007/s00228-020-03032-6)
 
-## Model component
-<dbs-pgx drug="chloroquine" model-id="Chloroquine_Yao2021_reference" status="extracted" stale="true" population="COVID-19 patients" measured-compound="chloroquine" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="chloroquine" model-id="Chloroquine_Yao2021_reference" status="extracted" stale="true" population="COVID-19 patients" measured-compound="chloroquine" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 7 extracted, plus 2 covariate effects.

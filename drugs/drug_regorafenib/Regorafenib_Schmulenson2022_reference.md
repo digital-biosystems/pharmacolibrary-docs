@@ -22,8 +22,7 @@
 Schmulenson E et al., Population pharmacokinetic analyses of…, British journal of clinical… (2022)
   ·  DOI: [10.1111/bcp.15461](https://doi.org/10.1111/bcp.15461)
 
-## Model component
-<dbs-pgx drug="regorafenib" model-id="Regorafenib_Schmulenson2022_reference" status="rejected" stale="false" population="patients with locally advanced rectal cancer" measured-compound="regorafenib" parameterization="apparent" topology="general_linear"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="regorafenib" model-id="Regorafenib_Schmulenson2022_reference" status="rejected" stale="false" population="patients with locally advanced rectal cancer" measured-compound="regorafenib" parameterization="apparent" topology="general_linear"></div>
 
 **Model structure:** general linear; no model was built for this record.  
 **Parameters:** 12 extracted.

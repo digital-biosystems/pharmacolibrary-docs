@@ -20,8 +20,7 @@
 Nedelman J et al., Population Pharmacokinetics of Subcutan…, Clinical pharmacokinetics (2018)
   ·  DOI: [10.1007/s40262-017-0600-y](https://doi.org/10.1007/s40262-017-0600-y)
 
-## Model component
-<dbs-pgx drug="pasireotide" model-id="Pasireotide_Nedelman2018_reference" status="rejected" stale="false" population="healthy volunteers and Cushing&#39;s disease patients" measured-compound="pasireotide" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="pasireotide" model-id="Pasireotide_Nedelman2018_reference" status="rejected" stale="false" population="healthy volunteers and Cushing&#39;s disease patients" measured-compound="pasireotide" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

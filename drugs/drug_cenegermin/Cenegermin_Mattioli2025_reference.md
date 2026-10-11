@@ -22,8 +22,7 @@
 Mattioli SL et al., Human nerve growth factor delivery to t…, PNAS nexus (2025)
   ·  DOI: [10.1093/pnasnexus/pgaf250](https://doi.org/10.1093/pnasnexus/pgaf250)
 
-## Model component
-<dbs-pgx drug="cenegermin" model-id="Cenegermin_Mattioli2025_reference" status="rejected" stale="false" population="rats and rabbits (preclinical ocular biodistribution)" measured-compound="rhNGF (cenegermin)" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="cenegermin" model-id="Cenegermin_Mattioli2025_reference" status="rejected" stale="false" population="rats and rabbits (preclinical ocular biodistribution)" measured-compound="rhNGF (cenegermin)" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

@@ -21,8 +21,7 @@
 Zhang S et al., Effect of Adjunctive Inhalation on the… (2026)
   ·  DOI: [10.64898/2026.04.29.26352086](https://doi.org/10.64898/2026.04.29.26352086)
 
-## Model component
-<dbs-pgx drug="erythromycin" model-id="Erythromycin_Zhang2026v2_reference" status="extracted" stale="false" population="" measured-compound="erythromycin" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="erythromycin" model-id="Erythromycin_Zhang2026v2_reference" status="extracted" stale="false" population="" measured-compound="erythromycin" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment, IV mammillary model — template `PK_2C`.  
 **Parameters:** 4 extracted.

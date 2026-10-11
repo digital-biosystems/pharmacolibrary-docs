@@ -29,8 +29,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on paramet
 Woodward HN et al., Once-weekly albiglutide in the manageme…, Patient preference and adhe… (2014)
   ·  DOI: [10.2147/PPA.S53075](https://doi.org/10.2147/PPA.S53075)
 
-## Model component
-<dbs-pgx drug="liraglutide" model-id="Liraglutide_Woodward2014_reference" status="curated_candidate" stale="false" population="adults with type 2 diabetes" measured-compound="liraglutide" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="liraglutide" model-id="Liraglutide_Woodward2014_reference" status="curated_candidate" stale="false" population="adults with type 2 diabetes" measured-compound="liraglutide" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameters:** 2 extracted.

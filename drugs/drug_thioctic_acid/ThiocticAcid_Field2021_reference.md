@@ -32,8 +32,7 @@ Independently confirmed by `gpt-oss:120b`.
 Field CL et al., PHARMACOKINETICS OF SUBCUTANEOUS ALPHA…, Journal of zoo and wildlife… (2021)
   ·  DOI: [10.1638/2020-0223](https://doi.org/10.1638/2020-0223)
 
-## Model component
-<dbs-pgx drug="thioctic acid" model-id="ThiocticAcid_Field2021_reference" status="rejected" stale="true" population="healthy rehabilitated California sea lions" measured-compound="alpha lipoic acid" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="thioctic acid" model-id="ThiocticAcid_Field2021_reference" status="rejected" stale="true" population="healthy rehabilitated California sea lions" measured-compound="alpha lipoic acid" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 1 extracted.

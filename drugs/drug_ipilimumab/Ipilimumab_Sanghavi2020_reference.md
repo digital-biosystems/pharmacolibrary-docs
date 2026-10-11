@@ -21,8 +21,7 @@
 Sanghavi K et al., Population Pharmacokinetics of Ipilimum…, CPT: pharmacometrics & syst… (2020)
   ·  DOI: [10.1002/psp4.12477](https://doi.org/10.1002/psp4.12477)
 
-## Model component
-<dbs-pgx drug="ipilimumab" model-id="Ipilimumab_Sanghavi2020_reference" status="needs_review" stale="false" population="patients with advanced solid tumors receiving ipilimumab alone or with nivolumab" measured-compound="ipilimumab" parameterization="mechanistic" topology="3C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="ipilimumab" model-id="Ipilimumab_Sanghavi2020_reference" status="needs_review" stale="false" population="patients with advanced solid tumors receiving ipilimumab alone or with nivolumab" measured-compound="ipilimumab" parameterization="mechanistic" topology="3C"></div>
 
 **Model structure:** 3-compartment; no model was built for this record.  
 **Parameters:** 8 extracted.

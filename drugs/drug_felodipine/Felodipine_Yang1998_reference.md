@@ -29,8 +29,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 ## Citation
 Yang L et al., [Determination of felodipine concentrat…, Yao xue xue bao = Acta phar… (1998)
 
-## Model component
-<dbs-pgx drug="felodipine" model-id="Felodipine_Yang1998_reference" status="rejected" stale="true" population="ten men" measured-compound="felodipine" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="felodipine" model-id="Felodipine_Yang1998_reference" status="rejected" stale="true" population="ten men" measured-compound="felodipine" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 6 extracted.

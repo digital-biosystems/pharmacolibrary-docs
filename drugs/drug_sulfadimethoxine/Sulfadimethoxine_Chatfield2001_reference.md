@@ -22,8 +22,7 @@
 Chatfield J et al., Disposition of sulfadimethoxine in came…, Journal of zoo and wildlife… (2001)
   ·  DOI: [10.1638/1042-7260(2001)032[0430:DOSICC]2.0.CO;2](https://doi.org/10.1638/1042-7260(2001)032[0430:DOSICC]2.0.CO;2)
 
-## Model component
-<dbs-pgx drug="sulfadimethoxine" model-id="Sulfadimethoxine_Chatfield2001_reference" status="extracted" stale="false" population="adult camels" measured-compound="sulfadimethoxine" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="sulfadimethoxine" model-id="Sulfadimethoxine_Chatfield2001_reference" status="extracted" stale="false" population="adult camels" measured-compound="sulfadimethoxine" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameters:** 5 extracted.

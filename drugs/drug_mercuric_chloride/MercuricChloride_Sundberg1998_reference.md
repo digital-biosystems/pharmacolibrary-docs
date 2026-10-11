@@ -30,8 +30,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Sundberg J et al., Kinetics of methylmercury and inorganic…, Toxicology and applied phar… (1998)
   ·  DOI: [10.1006/taap.1998.8456](https://doi.org/10.1006/taap.1998.8456)
 
-## Model component
-<dbs-pgx drug="mercuric chloride" model-id="MercuricChloride_Sundberg1998_reference" status="rejected" stale="false" population="lactating and nonlactating mice" measured-compound="mercuric chloride" parameterization="mechanistic" topology="parent_metabolite"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="mercuric chloride" model-id="MercuricChloride_Sundberg1998_reference" status="rejected" stale="false" population="lactating and nonlactating mice" measured-compound="mercuric chloride" parameterization="mechanistic" topology="parent_metabolite"></div>
 
 **Model structure:** parent + metabolite; no model was built for this record.  
 **Parameters:** 1 extracted.

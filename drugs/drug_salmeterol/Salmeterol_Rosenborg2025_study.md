@@ -23,8 +23,7 @@
 Rosenborg J et al., Relative Bioavailability of Inhaled Flu…, Drug design, development an… (2025)
   ·  DOI: [10.2147/DDDT.S480189](https://doi.org/10.2147/DDDT.S480189)
 
-## Model component
-<dbs-pgx drug="salmeterol" model-id="Salmeterol_Rosenborg2025_study" status="rejected" stale="false" population="healthy adults" measured-compound="salmeterol" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="salmeterol" model-id="Salmeterol_Rosenborg2025_study" status="rejected" stale="false" population="healthy adults" measured-compound="salmeterol" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 4 extracted.

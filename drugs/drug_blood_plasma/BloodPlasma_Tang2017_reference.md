@@ -33,8 +33,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on paramet
 Tang Z et al., Liver, blood microdialysate and plasma…, Die Pharmazie (2017)
   ·  DOI: [10.1691/ph.2017.6101](https://doi.org/10.1691/ph.2017.6101)
 
-## Model component
-<dbs-pgx drug="blood plasma" model-id="BloodPlasma_Tang2017_reference" status="extracted" stale="true" population="" measured-compound="blood_plasma" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="blood plasma" model-id="BloodPlasma_Tang2017_reference" status="extracted" stale="true" population="" measured-compound="blood_plasma" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 2 extracted.

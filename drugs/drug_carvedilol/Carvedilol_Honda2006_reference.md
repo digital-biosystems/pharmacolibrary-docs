@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which m
 Honda M et al., Multiple regression analysis of pharmac…, Biological & pharmaceutical… (2006)
   ·  DOI: [10.1248/bpb.29.772](https://doi.org/10.1248/bpb.29.772)
 
-## Model component
-<dbs-pgx drug="carvedilol" model-id="Carvedilol_Honda2006_reference" status="rejected" stale="false" population="healthy Japanese volunteers" measured-compound="R- and S-carvedilol" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="carvedilol" model-id="Carvedilol_Honda2006_reference" status="rejected" stale="false" population="healthy Japanese volunteers" measured-compound="R- and S-carvedilol" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 3 extracted.

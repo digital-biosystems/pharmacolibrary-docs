@@ -23,8 +23,7 @@
 Weiss M et al., P-glycoprotein inhibitors enhance satur…, The Journal of pharmacology… (2002)
   ·  DOI: [10.1124/jpet.300.2.688](https://doi.org/10.1124/jpet.300.2.688)
 
-## Model component
-<dbs-pgx drug="idarubicin" model-id="Idarubicin_Weiss2002_reference" status="rejected" stale="false" population="single-pass isolated perfused rat hearts" measured-compound="idarubicin" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="idarubicin" model-id="Idarubicin_Weiss2002_reference" status="rejected" stale="false" population="single-pass isolated perfused rat hearts" measured-compound="idarubicin" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 2 extracted.

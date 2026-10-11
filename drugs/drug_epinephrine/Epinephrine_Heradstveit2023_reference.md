@@ -30,8 +30,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Heradstveit BE et al., Pharmacokinetics of Epinephrine During…, Resuscitation:110025 (2023)
   ·  DOI: [10.1016/j.resuscitation.2023.110025](https://doi.org/10.1016/j.resuscitation.2023.110025)
 
-## Model component
-<dbs-pgx drug="epinephrine" model-id="Epinephrine_Heradstveit2023_reference" status="rejected" stale="true" population="patients with cardiac arrest" measured-compound="epinephrine" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="epinephrine" model-id="Epinephrine_Heradstveit2023_reference" status="rejected" stale="true" population="patients with cardiac arrest" measured-compound="epinephrine" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

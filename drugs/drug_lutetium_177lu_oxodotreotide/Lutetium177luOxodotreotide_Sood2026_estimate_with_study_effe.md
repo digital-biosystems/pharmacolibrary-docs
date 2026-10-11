@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Sood M et al., [, Journal of nuclear medicine… (2026)
   ·  DOI: [10.2967/jnumed.125.270202](https://doi.org/10.2967/jnumed.125.270202)
 
-## Model component
-<dbs-pgx drug="lutetium (177Lu) oxodotreotide" model-id="Lutetium177luOxodotreotide_Sood2026_estimate_with_study_effe" status="rejected" stale="true" population="adolescent and adult patients with somatostatin receptor–positive gastroenteropancreatic neuroendocrine tumors" measured-compound="lutetium_177lu_oxodotreotide" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="lutetium (177Lu) oxodotreotide" model-id="Lutetium177luOxodotreotide_Sood2026_estimate_with_study_effe" status="rejected" stale="true" population="adolescent and adult patients with somatostatin receptor–positive gastroenteropancreatic neuroendocrine tumors" measured-compound="lutetium_177lu_oxodotreotide" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted, plus 3 covariate effects.

@@ -29,8 +29,7 @@ A model needs both clearance and volume; without the volume it could only be bui
 Higashi K et al., Population pharmacokinetics of brexpipr…, Drug metabolism and pharmac… (2025)
   ·  DOI: [10.1016/j.dmpk.2025.101057](https://doi.org/10.1016/j.dmpk.2025.101057)
 
-## Model component
-<dbs-pgx drug="brexpiprazole" model-id="Brexpiprazole_Higashi2025_reference" status="" stale="true" population="Japanese healthy subjects and patients with schizophrenia" measured-compound="" parameterization="" topology=""></dbs-pgx>
+<div class="pk-model-meta" hidden drug="brexpiprazole" model-id="Brexpiprazole_Higashi2025_reference" status="" stale="true" population="Japanese healthy subjects and patients with schizophrenia" measured-compound="" parameterization="" topology=""></div>
 
 **Model structure:** —; no model was built for this record.  
 **Parameters:** 0 extracted.

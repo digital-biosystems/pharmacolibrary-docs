@@ -31,8 +31,7 @@ Independently confirmed by `gpt-oss:120b`.
 Macias WL et al., Pharmacokinetic-pharmacodynamic analysi…, Clinical pharmacology and t… (2002)
   ·  DOI: [10.1067/mcp.2002.128148](https://doi.org/10.1067/mcp.2002.128148)
 
-## Model component
-<dbs-pgx drug="protein C" model-id="ProteinC_Macias2002_reference" status="rejected" stale="true" population="patients with severe sepsis" measured-compound="drotrecogin alfa (activated)" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="protein C" model-id="ProteinC_Macias2002_reference" status="rejected" stale="true" population="patients with severe sepsis" measured-compound="drotrecogin alfa (activated)" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

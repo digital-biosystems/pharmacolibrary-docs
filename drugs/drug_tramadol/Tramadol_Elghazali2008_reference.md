@@ -33,8 +33,7 @@ Independently confirmed by `gpt-oss:120b`.
 Elghazali M et al., The pharmacokinetics, metabolism and ur…, Veterinary journal (London,… (2008)
   ·  DOI: [10.1016/j.tvjl.2007.07.008](https://doi.org/10.1016/j.tvjl.2007.07.008)
 
-## Model component
-<dbs-pgx drug="tramadol" model-id="Tramadol_Elghazali2008_reference" status="needs_review" stale="true" population="camels" measured-compound="tramadol" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="tramadol" model-id="Tramadol_Elghazali2008_reference" status="needs_review" stale="true" population="camels" measured-compound="tramadol" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 11 extracted.

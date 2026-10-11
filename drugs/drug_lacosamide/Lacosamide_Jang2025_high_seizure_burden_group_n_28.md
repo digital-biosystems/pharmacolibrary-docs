@@ -29,8 +29,7 @@ The paper reports no distribution volume and no clearance or elimination rate; i
 Jang Y et al., Saliva-based lacosamide monitoring pave…, Scientific reports (2025)
   ·  DOI: [10.1038/s41598-025-04044-x](https://doi.org/10.1038/s41598-025-04044-x)
 
-## Model component
-<dbs-pgx drug="lacosamide" model-id="Lacosamide_Jang2025_high_seizure_burden_group_n_28" status="" stale="true" population="epilepsy patients" measured-compound="" parameterization="" topology=""></dbs-pgx>
+<div class="pk-model-meta" hidden drug="lacosamide" model-id="Lacosamide_Jang2025_high_seizure_burden_group_n_28" status="" stale="true" population="epilepsy patients" measured-compound="" parameterization="" topology=""></div>
 
 **Model structure:** —; no model was built for this record.  
 **Parameters:** 0 extracted.

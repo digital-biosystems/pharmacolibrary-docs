@@ -21,8 +21,7 @@
 Lakota EA et al., Population Pharmacokinetic Analyses for…, Antimicrobial agents and ch… (2018)
   ·  DOI: [10.1128/AAC.02603-17](https://doi.org/10.1128/AAC.02603-17)
 
-## Model component
-<dbs-pgx drug="rezafungin acetate" model-id="RezafunginAcetate_Lakota2018_reference" status="extracted" stale="false" population="" measured-compound="rezafungin_acetate" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="rezafungin acetate" model-id="RezafunginAcetate_Lakota2018_reference" status="extracted" stale="false" population="" measured-compound="rezafungin_acetate" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment, IV mammillary model — template `PK_2C`.  
 **Parameters:** 4 extracted.

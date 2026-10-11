@@ -21,8 +21,7 @@
 Kuchimanchi M et al., Population pharmacokinetics and exposur…, British journal of clinical… (2025)
   ·  DOI: [10.1111/bcp.16325](https://doi.org/10.1111/bcp.16325)
 
-## Model component
-<dbs-pgx drug="dostarlimab" model-id="Dostarlimab_Kuchimanchi2025_reference" status="extracted" stale="false" population="patients with primary advanced or recurrent endometrial cancer" measured-compound="dostarlimab" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="dostarlimab" model-id="Dostarlimab_Kuchimanchi2025_reference" status="extracted" stale="false" population="patients with primary advanced or recurrent endometrial cancer" measured-compound="dostarlimab" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment, IV mammillary model — template `PK_2C`.  
 **Parameters:** 5 extracted, plus 3 covariate effects.

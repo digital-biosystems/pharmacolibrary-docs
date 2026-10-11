@@ -22,8 +22,7 @@
 Ahn JE et al., Phenytoin half-life and clearance durin…, Neurology (2008)
   ·  DOI: [10.1212/01.wnl.0000316392.55784.57](https://doi.org/10.1212/01.wnl.0000316392.55784.57)
 
-## Model component
-<dbs-pgx drug="fosphenytoin" model-id="Fosphenytoin_Ahn2008_reference" status="rejected" stale="false" population="adults and elderly patients with epilepsy" measured-compound="phenytoin" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="fosphenytoin" model-id="Fosphenytoin_Ahn2008_reference" status="rejected" stale="false" population="adults and elderly patients with epilepsy" measured-compound="phenytoin" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

@@ -31,8 +31,7 @@ Independently confirmed by `gpt-oss:120b`.
 Methaneethorn J et al., Sources of lamotrigine pharmacokinetic…, Seizure (2020)
   ·  DOI: [10.1016/j.seizure.2020.07.014](https://doi.org/10.1016/j.seizure.2020.07.014)
 
-## Model component
-<dbs-pgx drug="lamotrigine" model-id="Lamotrigine_Methaneethorn2020_reference" status="rejected" stale="true" population="humans with epilepsy and other conditions included in 19 population pharmacokinetic studies" measured-compound="lamotrigine" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="lamotrigine" model-id="Lamotrigine_Methaneethorn2020_reference" status="rejected" stale="true" population="humans with epilepsy and other conditions included in 19 population pharmacokinetic studies" measured-compound="lamotrigine" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

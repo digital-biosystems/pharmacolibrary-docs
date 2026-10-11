@@ -29,8 +29,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the val
 Wilde S et al., Population pharmacokinetics of the BEAC…, Clinical pharmacokinetics (2007)
   ·  DOI: [10.2165/00003088-200746040-00005](https://doi.org/10.2165/00003088-200746040-00005)
 
-## Model component
-<dbs-pgx drug="bleomycin" model-id="Bleomycin_Wilde2007_reference" status="extracted" stale="true" population="" measured-compound="bleomycin" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="bleomycin" model-id="Bleomycin_Wilde2007_reference" status="extracted" stale="true" population="" measured-compound="bleomycin" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment, IV mammillary model — template `PK_2C`.  
 **Parameters:** 4 extracted.

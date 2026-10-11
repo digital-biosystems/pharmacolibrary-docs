@@ -23,8 +23,7 @@
 Li X et al., Population pharmacokinetics of oxcarbaz…, European journal of pediatr… (2023)
   ·  DOI: [10.1007/s00431-023-05092-z](https://doi.org/10.1007/s00431-023-05092-z)
 
-## Model component
-<dbs-pgx drug="oxcarbazepine" model-id="Oxcarbazepine_Li2023_reference" status="rejected" stale="false" population="Chinese children with epilepsy" measured-compound="MHD" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="oxcarbazepine" model-id="Oxcarbazepine_Li2023_reference" status="rejected" stale="false" population="Chinese children with epilepsy" measured-compound="MHD" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

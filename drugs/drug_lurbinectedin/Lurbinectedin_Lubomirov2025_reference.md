@@ -21,8 +21,7 @@
 Lubomirov R et al., CYP3A Genotype Is Associated With Varia…, Clinical and translational… (2025)
   ·  DOI: [10.1111/cts.70173](https://doi.org/10.1111/cts.70173)
 
-## Model component
-<dbs-pgx drug="lurbinectedin" model-id="Lurbinectedin_Lubomirov2025_reference" status="extracted" stale="false" population="cancer patients" measured-compound="lurbinectedin" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="lurbinectedin" model-id="Lurbinectedin_Lubomirov2025_reference" status="extracted" stale="false" population="cancer patients" measured-compound="lurbinectedin" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment, IV mammillary model — template `PK_2C`.  
 **Parameters:** 3 extracted.

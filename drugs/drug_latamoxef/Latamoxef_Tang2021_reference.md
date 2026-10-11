@@ -20,8 +20,7 @@
 Tang BH et al., Drug Clearance in Neonates: A Combinati…, Clinical pharmacokinetics (2021)
   ·  DOI: [10.1007/s40262-021-01033-x](https://doi.org/10.1007/s40262-021-01033-x)
 
-## Model component
-<dbs-pgx drug="latamoxef" model-id="Latamoxef_Tang2021_reference" status="needs_review" stale="false" population="neonates" measured-compound="latamoxef" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="latamoxef" model-id="Latamoxef_Tang2021_reference" status="needs_review" stale="false" population="neonates" measured-compound="latamoxef" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 3 extracted.

@@ -31,8 +31,7 @@ The record reports oral hexahydrocannabinol parameters in male Wistar rats with 
 Šíchová K et al., Hexahydrocannabinol: pharmacokinetics,…, The international journal o… (2025)
   ·  DOI: [10.1093/ijnp/pyaf041](https://doi.org/10.1093/ijnp/pyaf041)
 
-## Model component
-<dbs-pgx drug="cannabinoids" model-id="Cannabinoids_chov2025_r_hhc_population_pk_model" status="extracted" stale="true" population="male Wistar rats" measured-compound="hexahydrocannabinol" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="cannabinoids" model-id="Cannabinoids_chov2025_r_hhc_population_pk_model" status="extracted" stale="true" population="male Wistar rats" measured-compound="hexahydrocannabinol" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 4 extracted.

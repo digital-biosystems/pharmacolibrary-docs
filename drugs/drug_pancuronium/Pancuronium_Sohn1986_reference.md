@@ -20,8 +20,7 @@
 ## Citation
 Sohn YJ et al., Comparative pharmacokinetics and dynami…, Anesthesia and analgesia (1986)
 
-## Model component
-<dbs-pgx drug="pancuronium" model-id="Pancuronium_Sohn1986_reference" status="rejected" stale="false" population="anesthetized gynecologic patients" measured-compound="pancuronium" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="pancuronium" model-id="Pancuronium_Sohn1986_reference" status="rejected" stale="false" population="anesthetized gynecologic patients" measured-compound="pancuronium" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

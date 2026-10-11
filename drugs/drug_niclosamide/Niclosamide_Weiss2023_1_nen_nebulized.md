@@ -25,8 +25,7 @@
 Weiss A et al., Single-dose pharmacokinetics and lung f…, Pharmaceutical research (2023)
   ·  DOI: [10.1007/s11095-023-03559-0](https://doi.org/10.1007/s11095-023-03559-0)
 
-## Model component
-<dbs-pgx drug="niclosamide" model-id="Niclosamide_Weiss2023_1_nen_nebulized" status="rejected" stale="false" population="sheep" measured-compound="niclosamide" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="niclosamide" model-id="Niclosamide_Weiss2023_1_nen_nebulized" status="rejected" stale="false" population="sheep" measured-compound="niclosamide" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 4 extracted.

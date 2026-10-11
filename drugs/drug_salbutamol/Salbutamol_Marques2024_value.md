@@ -29,8 +29,7 @@ A model needs both clearance and volume; without the clearance it could only be 
 Marques L et al., Improving Individualized Salbutamol Tre…, Pharmaceutics (2024)
   ·  DOI: [10.3390/pharmaceutics17010039](https://doi.org/10.3390/pharmaceutics17010039)
 
-## Model component
-<dbs-pgx drug="salbutamol" model-id="Salbutamol_Marques2024_value" status="needs_review" stale="true" population="virtual patients aged 5-65 years (PBPK-derived), healthy and cirrhosis A" measured-compound="salbutamol" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="salbutamol" model-id="Salbutamol_Marques2024_value" status="needs_review" stale="true" population="virtual patients aged 5-65 years (PBPK-derived), healthy and cirrhosis A" measured-compound="salbutamol" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 6 extracted.

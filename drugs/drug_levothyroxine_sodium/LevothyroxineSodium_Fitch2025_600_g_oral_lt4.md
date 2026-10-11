@@ -22,8 +22,7 @@
 Fitch R et al., Phase 1 Study Evaluating the Pharmacoki…, Clinical and translational… (2025)
   ·  DOI: [10.1111/cts.70244](https://doi.org/10.1111/cts.70244)
 
-## Model component
-<dbs-pgx drug="levothyroxine sodium" model-id="LevothyroxineSodium_Fitch2025_600_g_oral_lt4" status="rejected" stale="false" population="healthy adults" measured-compound="levothyroxine" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="levothyroxine sodium" model-id="LevothyroxineSodium_Fitch2025_600_g_oral_lt4" status="rejected" stale="false" population="healthy adults" measured-compound="levothyroxine" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

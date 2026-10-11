@@ -23,8 +23,7 @@
 Yoo SD et al., Transplacental and nonplacental clearan…, Journal of pharmaceutical s… (1993)
   ·  DOI: [10.1002/jps.2600820206](https://doi.org/10.1002/jps.2600820206)
 
-## Model component
-<dbs-pgx drug="diphenhydramine" model-id="Diphenhydramine_Yoo1993_reference" status="needs_review" stale="false" population="chronically instrumented pregnant sheep" measured-compound="diphenhydramine" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="diphenhydramine" model-id="Diphenhydramine_Yoo1993_reference" status="needs_review" stale="false" population="chronically instrumented pregnant sheep" measured-compound="diphenhydramine" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 5 extracted.

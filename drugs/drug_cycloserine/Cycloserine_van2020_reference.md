@@ -21,8 +21,7 @@
 van der Galiën R et al., Pharmacokinetic Modeling, Simulation, a…, Clinical pharmacokinetics (2020)
   ·  DOI: [10.1007/s40262-020-00860-8](https://doi.org/10.1007/s40262-020-00860-8)
 
-## Model component
-<dbs-pgx drug="cycloserine" model-id="Cycloserine_van2020_reference" status="needs_review" stale="false" population="patients with multidrug-/extensively drug-resistant tuberculosis" measured-compound="cycloserine" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="cycloserine" model-id="Cycloserine_van2020_reference" status="needs_review" stale="false" population="patients with multidrug-/extensively drug-resistant tuberculosis" measured-compound="cycloserine" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 5 extracted.

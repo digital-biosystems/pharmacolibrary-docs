@@ -21,8 +21,7 @@
 Shin K et al., [Pharmacokinetics of oral alminoprofen…, Nihon Ronen Igakkai zasshi.… (1992)
   ·  DOI: [10.3143/geriatrics.29.881](https://doi.org/10.3143/geriatrics.29.881)
 
-## Model component
-<dbs-pgx drug="alminoprofen" model-id="Alminoprofen_Shin1992_reference" status="rejected" stale="false" population="elderly patients with rheumatoid arthritis and spondylosis deformans" measured-compound="alminoprofen" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="alminoprofen" model-id="Alminoprofen_Shin1992_reference" status="rejected" stale="false" population="elderly patients with rheumatoid arthritis and spondylosis deformans" measured-compound="alminoprofen" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

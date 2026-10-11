@@ -21,8 +21,7 @@
 Murínová I et al., Population Pharmacokinetic Analysis Pro…, Antibiotics (Basel, Switzer… (2022)
   ·  DOI: [10.3390/antibiotics11121736](https://doi.org/10.3390/antibiotics11121736)
 
-## Model component
-<dbs-pgx drug="oxacillin" model-id="Oxacillin_Murnov2022_reference" status="extracted" stale="false" population="patients with staphylococcal infections" measured-compound="oxacillin" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="oxacillin" model-id="Oxacillin_Murnov2022_reference" status="extracted" stale="false" population="patients with staphylococcal infections" measured-compound="oxacillin" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameters:** 2 extracted.

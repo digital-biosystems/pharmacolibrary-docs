@@ -23,8 +23,7 @@
 Corum O et al., Pharmacokinetics and Bioavailability of…, Veterinary medicine and sci… (2026)
   ·  DOI: [10.1002/vms3.71024](https://doi.org/10.1002/vms3.71024)
 
-## Model component
-<dbs-pgx drug="tolfenamic acid" model-id="TolfenamicAcid_Corum2026_reference" status="needs_review" stale="false" population="calves" measured-compound="tolfenamic acid" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="tolfenamic acid" model-id="TolfenamicAcid_Corum2026_reference" status="needs_review" stale="false" population="calves" measured-compound="tolfenamic acid" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 3 extracted.

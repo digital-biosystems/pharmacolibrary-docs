@@ -24,8 +24,7 @@
 Mackintosh CG et al., Efficacy and pharmacokinetics of febant…, New Zealand veterinary jour… (1985)
   ·  DOI: [10.1080/00480169.1985.35194](https://doi.org/10.1080/00480169.1985.35194)
 
-## Model component
-<dbs-pgx drug="fenbendazole" model-id="Fenbendazole_Mackintosh1985_reference" status="rejected" stale="false" population="red deer calves" measured-compound="fenbendazole" parameterization="mechanistic" topology="general_linear"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="fenbendazole" model-id="Fenbendazole_Mackintosh1985_reference" status="rejected" stale="false" population="red deer calves" measured-compound="fenbendazole" parameterization="mechanistic" topology="general_linear"></div>
 
 **Model structure:** general linear; no model was built for this record.  
 **Parameters:** 0 extracted.

@@ -29,8 +29,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the val
 Steffens NA et al., Therapeutic Drug Monitoring-Based Popul…, Antibiotics (Basel, Switzer… (2025)
   ·  DOI: [10.3390/antibiotics14060531](https://doi.org/10.3390/antibiotics14060531)
 
-## Model component
-<dbs-pgx drug="escherichia coli" model-id="EscherichiaColi_Steffens2025_reference" status="extracted" stale="true" population="" measured-compound="escherichia_coli" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="escherichia coli" model-id="EscherichiaColi_Steffens2025_reference" status="extracted" stale="true" population="" measured-compound="escherichia_coli" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameters:** 2 extracted.

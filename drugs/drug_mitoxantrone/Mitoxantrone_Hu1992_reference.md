@@ -21,8 +21,7 @@
 Hu OY et al., Pharmacokinetic and pharmacodynamic stu…, Cancer (1992)
   ·  DOI: [10.1002/1097-0142(19920215)69:4<847::aid-cncr2820690402>3.0.co;2-l](https://doi.org/10.1002/1097-0142(19920215)69:4<847::aid-cncr2820690402>3.0.co;2-l)
 
-## Model component
-<dbs-pgx drug="mitoxantrone" model-id="Mitoxantrone_Hu1992_reference" status="needs_review" stale="false" population="patients with advanced nasopharyngeal carcinoma" measured-compound="mitoxantrone" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="mitoxantrone" model-id="Mitoxantrone_Hu1992_reference" status="needs_review" stale="false" population="patients with advanced nasopharyngeal carcinoma" measured-compound="mitoxantrone" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 4 extracted.

@@ -29,8 +29,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on paramet
 Cojutti PG et al., Population Pharmacokinetics and Pharmac…, Clinical pharmacokinetics (2024)
   ·  DOI: [10.1007/s40262-024-01410-2](https://doi.org/10.1007/s40262-024-01410-2)
 
-## Model component
-<dbs-pgx drug="protein C" model-id="ProteinC_Cojutti2024_reference" status="extracted" stale="true" population="" measured-compound="protein_c" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="protein C" model-id="ProteinC_Cojutti2024_reference" status="extracted" stale="true" population="" measured-compound="protein_c" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment, IV mammillary model — template `PK_2C`.  
 **Parameters:** 4 extracted.

@@ -27,8 +27,7 @@ Independently confirmed by `gpt-oss:120b`.
 Crcek M et al., A review of population pharmacokinetic…, Journal of clinical pharmac… (2019)
   ·  DOI: [10.1111/jcpt.12850](https://doi.org/10.1111/jcpt.12850)
 
-## Model component
-<dbs-pgx drug="gentamicin" model-id="Gentamicin_Crcek2019_reference" status="curated_candidate" stale="false" population="paediatric patients" measured-compound="gentamicin" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="gentamicin" model-id="Gentamicin_Crcek2019_reference" status="curated_candidate" stale="false" population="paediatric patients" measured-compound="gentamicin" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameters:** 2 extracted.

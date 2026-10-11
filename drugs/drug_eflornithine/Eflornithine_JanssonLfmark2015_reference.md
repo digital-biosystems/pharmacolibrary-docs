@@ -21,8 +21,7 @@
 Jansson-Löfmark R et al., Enantiospecific reassessment of the pha…, Antimicrobial agents and ch… (2015)
   ·  DOI: [10.1128/AAC.04101-14](https://doi.org/10.1128/AAC.04101-14)
 
-## Model component
-<dbs-pgx drug="eflornithine" model-id="Eflornithine_JanssonLfmark2015_reference" status="rejected" stale="false" population="patients with late-stage Trypanosoma brucei gambiense sleeping sickness" measured-compound="eflornithine" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="eflornithine" model-id="Eflornithine_JanssonLfmark2015_reference" status="rejected" stale="false" population="patients with late-stage Trypanosoma brucei gambiense sleeping sickness" measured-compound="eflornithine" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 4 extracted.

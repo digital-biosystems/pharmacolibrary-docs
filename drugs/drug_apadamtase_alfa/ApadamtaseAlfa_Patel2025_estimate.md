@@ -30,8 +30,7 @@ The model for ADAMTS13 (apadamtase alfa) in patients with congenital thrombotic 
 Patel M et al., Use of PopPK and E-R Analyses toward Ex…, Clinical pharmacology and t… (2025)
   ·  DOI: [10.1002/cpt.3720](https://doi.org/10.1002/cpt.3720)
 
-## Model component
-<dbs-pgx drug="Apadamtase alfa" model-id="ApadamtaseAlfa_Patel2025_estimate" status="rejected" stale="true" population="patients with congenital thrombotic thrombocytopenic purpura (cTTP)" measured-compound="ADAMTS13" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="Apadamtase alfa" model-id="ApadamtaseAlfa_Patel2025_estimate" status="rejected" stale="true" population="patients with congenital thrombotic thrombocytopenic purpura (cTTP)" measured-compound="ADAMTS13" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment; no model was built for this record.  
 **Parameters:** 4 extracted.

@@ -23,8 +23,7 @@
 Zhou J et al., Cardiac arrest and therapeutic hypother…, Drug metabolism and disposi… (2011)
   ·  DOI: [10.1124/dmd.111.040642](https://doi.org/10.1124/dmd.111.040642)
 
-## Model component
-<dbs-pgx drug="chlorzoxazone" model-id="Chlorzoxazone_Zhou2011_reference" status="rejected" stale="false" population="rats" measured-compound="chlorzoxazone" parameterization="mechanistic" topology="general_linear"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="chlorzoxazone" model-id="Chlorzoxazone_Zhou2011_reference" status="rejected" stale="false" population="rats" measured-compound="chlorzoxazone" parameterization="mechanistic" topology="general_linear"></div>
 
 **Model structure:** general linear; no model was built for this record.  
 **Parameters:** 1 extracted.

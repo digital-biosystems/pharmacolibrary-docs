@@ -21,8 +21,7 @@
 Clements JD et al., Simultaneous Population PKPD Analysis o…, CPT: pharmacometrics & syst… (2026)
   ·  DOI: [10.1002/psp4.70337](https://doi.org/10.1002/psp4.70337)
 
-## Model component
-<dbs-pgx drug="norethisterone" model-id="Norethisterone_Clements2026_reference" status="extracted" stale="false" population="" measured-compound="norethisterone" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="norethisterone" model-id="Norethisterone_Clements2026_reference" status="extracted" stale="false" population="" measured-compound="norethisterone" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment, IV mammillary model — template `PK_2C`.  
 **Parameters:** 4 extracted.

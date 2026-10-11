@@ -29,8 +29,7 @@ Independently confirmed by `gpt-oss:120b`.
 Li L et al., Pharmacokinetics of Haloperidol in Crit…, Pharmaceutics (2022)
   ·  DOI: [10.3390/pharmaceutics14030549](https://doi.org/10.3390/pharmaceutics14030549)
 
-## Model component
-<dbs-pgx drug="haloperidol" model-id="Haloperidol_Li2022_reference" status="" stale="true" population="critically ill adults with ICU delirium" measured-compound="" parameterization="" topology=""></dbs-pgx>
+<div class="pk-model-meta" hidden drug="haloperidol" model-id="Haloperidol_Li2022_reference" status="" stale="true" population="critically ill adults with ICU delirium" measured-compound="" parameterization="" topology=""></div>
 
 **Model structure:** —; no model was built for this record.  
 **Parameters:** 0 extracted.

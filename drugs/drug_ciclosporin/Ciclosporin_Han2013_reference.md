@@ -21,8 +21,7 @@
 Han K et al., Population pharmacokinetics of cyclospo…, The AAPS journal (2013)
   ·  DOI: [10.1208/s12248-013-9500-8](https://doi.org/10.1208/s12248-013-9500-8)
 
-## Model component
-<dbs-pgx drug="ciclosporin" model-id="Ciclosporin_Han2013_reference" status="extracted" stale="false" population="transplant recipients" measured-compound="cyclosporine" parameterization="apparent" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="ciclosporin" model-id="Ciclosporin_Han2013_reference" status="extracted" stale="false" population="transplant recipients" measured-compound="cyclosporine" parameterization="apparent" topology="2C"></div>
 
 **Model structure:** 2-compartment, oral mammillary model — template `PK_2C_enteral`.  
 **Parameters:** 6 extracted.

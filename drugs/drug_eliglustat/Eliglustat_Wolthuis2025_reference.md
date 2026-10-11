@@ -32,8 +32,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Wolthuis DFGJ et al., Model-informed repurposing of eliglusta…, Pediatric nephrology (Berli… (2025)
   ·  DOI: [10.1007/s00467-025-06688-3](https://doi.org/10.1007/s00467-025-06688-3)
 
-## Model component
-<dbs-pgx drug="eliglustat" model-id="Eliglustat_Wolthuis2025_reference" status="rejected" stale="true" population="virtual pediatric population extrapolated from adults" measured-compound="eliglustat" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="eliglustat" model-id="Eliglustat_Wolthuis2025_reference" status="rejected" stale="true" population="virtual pediatric population extrapolated from adults" measured-compound="eliglustat" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

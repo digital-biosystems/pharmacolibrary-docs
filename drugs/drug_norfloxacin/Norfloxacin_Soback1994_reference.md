@@ -25,8 +25,7 @@
 Soback S et al., Effect of lactation on single-dose phar…, Antimicrobial agents and ch… (1994)
   ·  DOI: [10.1128/AAC.38.10.2336](https://doi.org/10.1128/AAC.38.10.2336)
 
-## Model component
-<dbs-pgx drug="norfloxacin" model-id="Norfloxacin_Soback1994_reference" status="rejected" stale="false" population="lactating ewes" measured-compound="norfloxacin" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="norfloxacin" model-id="Norfloxacin_Soback1994_reference" status="rejected" stale="false" population="lactating ewes" measured-compound="norfloxacin" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

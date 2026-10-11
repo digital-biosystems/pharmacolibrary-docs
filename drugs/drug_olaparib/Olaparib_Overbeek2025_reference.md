@@ -21,8 +21,7 @@
 Overbeek JK et al., Population Pharmacokinetics of Cobicist…, Clinical pharmacokinetics (2025)
   ·  DOI: [10.1007/s40262-025-01480-w](https://doi.org/10.1007/s40262-025-01480-w)
 
-## Model component
-<dbs-pgx drug="olaparib" model-id="Olaparib_Overbeek2025_reference" status="needs_review" stale="false" population="healthy volunteers and patients" measured-compound="olaparib" parameterization="mechanistic" topology="parent_metabolite"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="olaparib" model-id="Olaparib_Overbeek2025_reference" status="needs_review" stale="false" population="healthy volunteers and patients" measured-compound="olaparib" parameterization="mechanistic" topology="parent_metabolite"></div>
 
 **Model structure:** parent + metabolite; no model was built for this record.  
 **Parameters:** 3 extracted.

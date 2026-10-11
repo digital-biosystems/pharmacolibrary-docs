@@ -23,8 +23,7 @@
 Johno I et al., Pharmacokinetic profile of progabide, a…, Journal of pharmaceutical s… (1982)
   ·  DOI: [10.1002/jps.2600710609](https://doi.org/10.1002/jps.2600710609)
 
-## Model component
-<dbs-pgx drug="progabide" model-id="Progabide_Johno1982_reference" status="extracted" stale="false" population="male rhesus monkeys" measured-compound="progabide" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="progabide" model-id="Progabide_Johno1982_reference" status="extracted" stale="false" population="male rhesus monkeys" measured-compound="progabide" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameters:** 3 extracted.

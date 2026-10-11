@@ -28,8 +28,7 @@ Nothing in the extracted data describes the drug's disposition, so there is no m
 Yang JC et al., Pharmacokinetic- pharmacodynamic analys…, British journal of clinical… (2009)
   ·  DOI: [10.1111/j.1365-2125.2009.03393.x](https://doi.org/10.1111/j.1365-2125.2009.03393.x)
 
-## Model component
-<dbs-pgx drug="rabeprazole" model-id="Rabeprazole_Yang2009_reference" status="rejected" stale="true" population="adults with H. pylori infection" measured-compound="rabeprazole" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="rabeprazole" model-id="Rabeprazole_Yang2009_reference" status="rejected" stale="true" population="adults with H. pylori infection" measured-compound="rabeprazole" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

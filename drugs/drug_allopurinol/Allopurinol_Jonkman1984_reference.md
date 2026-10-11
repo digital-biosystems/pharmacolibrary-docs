@@ -27,8 +27,7 @@ Independently confirmed by `gpt-oss:120b`.
 Jonkman JH et al., Pharmacokinetic drug interactions with…, Clinical pharmacokinetics (1984)
   ·  DOI: [10.2165/00003088-198409040-00002](https://doi.org/10.2165/00003088-198409040-00002)
 
-## Model component
-<dbs-pgx drug="allopurinol" model-id="Allopurinol_Jonkman1984_reference" status="curated_candidate" stale="false" population="healthy adults and asthmatic patients" measured-compound="" parameterization="" topology=""></dbs-pgx>
+<div class="pk-model-meta" hidden drug="allopurinol" model-id="Allopurinol_Jonkman1984_reference" status="curated_candidate" stale="false" population="healthy adults and asthmatic patients" measured-compound="" parameterization="" topology=""></div>
 
 **Model structure:** —; no model was built for this record.  
 **Parameters:** 0 extracted.

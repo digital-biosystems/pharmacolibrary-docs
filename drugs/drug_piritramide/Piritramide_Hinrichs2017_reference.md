@@ -27,8 +27,7 @@ The source reports only unbound clearance (8.7 ml/min) and volume of distributio
 Hinrichs M et al., [Piritramide : A critical review], Schmerz (Berlin, Germany) (2017)
   ·  DOI: [10.1007/s00482-017-0197-y](https://doi.org/10.1007/s00482-017-0197-y)
 
-## Model component
-<dbs-pgx drug="piritramide" model-id="Piritramide_Hinrichs2017_reference" status="needs_review" stale="false" population="adults" measured-compound="" parameterization="" topology=""></dbs-pgx>
+<div class="pk-model-meta" hidden drug="piritramide" model-id="Piritramide_Hinrichs2017_reference" status="needs_review" stale="false" population="adults" measured-compound="" parameterization="" topology=""></div>
 
 **Model structure:** —; no model was built for this record.  
 **Parameters:** 0 extracted.

@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on bioavai
 ## Citation
 Setnikar I et al., Relative bioavailability of fluoride fr…, Arzneimittel-Forschung (1990)
 
-## Model component
-<dbs-pgx drug="sodium monofluorophosphate" model-id="SodiumMonofluorophosphate_Setnikar1990_reference" status="rejected" stale="true" population="healthy adults" measured-compound="fluoride" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="sodium monofluorophosphate" model-id="SodiumMonofluorophosphate_Setnikar1990_reference" status="rejected" stale="true" population="healthy adults" measured-compound="fluoride" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 3 extracted.

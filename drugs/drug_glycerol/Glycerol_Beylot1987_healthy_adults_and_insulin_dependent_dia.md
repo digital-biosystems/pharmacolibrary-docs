@@ -27,8 +27,7 @@ Nothing in the extracted data describes the drug's disposition, so there is no m
 ## Citation
 Beylot M et al., Determination of steady state and nonst…, Journal of lipid research (1987)
 
-## Model component
-<dbs-pgx drug="glycerol" model-id="Glycerol_Beylot1987_healthy_adults_and_insulin_dependent_dia" status="" stale="true" population="normal subjects and insulin-dependent diabetic patients" measured-compound="" parameterization="" topology=""></dbs-pgx>
+<div class="pk-model-meta" hidden drug="glycerol" model-id="Glycerol_Beylot1987_healthy_adults_and_insulin_dependent_dia" status="" stale="true" population="normal subjects and insulin-dependent diabetic patients" measured-compound="" parameterization="" topology=""></div>
 
 **Model structure:** —; no model was built for this record.  
 **Parameters:** 0 extracted.

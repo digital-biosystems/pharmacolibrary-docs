@@ -28,8 +28,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Melin J et al., Dapagliflozin Pharmacokinetics Is Simil…, Journal of clinical pharmac… (2022)
   ·  DOI: [10.1002/jcph.2062](https://doi.org/10.1002/jcph.2062)
 
-## Model component
-<dbs-pgx drug="dapagliflozin" model-id="Dapagliflozin_Melin2022_reference" status="needs_review" stale="false" population="adults with type 1 diabetes mellitus" measured-compound="dapagliflozin" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="dapagliflozin" model-id="Dapagliflozin_Melin2022_reference" status="needs_review" stale="false" population="adults with type 1 diabetes mellitus" measured-compound="dapagliflozin" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 3 extracted.

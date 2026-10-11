@@ -21,8 +21,7 @@
 Kraft WK, Buprenorphine in Neonatal Abstinence Sy…, Clinical pharmacology and t… (2018)
   ·  DOI: [10.1002/cpt.930](https://doi.org/10.1002/cpt.930)
 
-## Model component
-<dbs-pgx drug="buprenorphine" model-id="Buprenorphine_Kraft2018_reference" status="extracted" stale="false" population="" measured-compound="buprenorphine" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="buprenorphine" model-id="Buprenorphine_Kraft2018_reference" status="extracted" stale="false" population="" measured-compound="buprenorphine" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameters:** 2 extracted.

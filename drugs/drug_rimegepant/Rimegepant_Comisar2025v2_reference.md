@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on how the
 Comisar CM et al., Population Pharmacokinetic Modeling of…, CPT: pharmacometrics & syst… (2025)
   ·  DOI: [10.1002/psp4.70051](https://doi.org/10.1002/psp4.70051)
 
-## Model component
-<dbs-pgx drug="rimegepant" model-id="Rimegepant_Comisar2025v2_reference" status="rejected" stale="true" population="healthy adults, elderly, adults with renal or hepatic dysfunction, Japanese and Chinese adults" measured-compound="rimegepant" parameterization="apparent" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="rimegepant" model-id="Rimegepant_Comisar2025v2_reference" status="rejected" stale="true" population="healthy adults, elderly, adults with renal or hepatic dysfunction, Japanese and Chinese adults" measured-compound="rimegepant" parameterization="apparent" topology="2C"></div>
 
 **Model structure:** 2-compartment; no model was built for this record.  
 **Parameters:** 7 extracted, plus 4 covariate effects.

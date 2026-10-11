@@ -21,8 +21,7 @@
 Jansen E et al., Characterization of the VHH-Fc construc…, PLoS medicine (2026)
   ·  DOI: [10.1371/journal.pmed.1004609](https://doi.org/10.1371/journal.pmed.1004609)
 
-## Model component
-<dbs-pgx drug="Cilgavimab" model-id="Cilgavimab_Jansen2026_reference" status="rejected" stale="false" population="" measured-compound="cilgavimab" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="Cilgavimab" model-id="Cilgavimab_Jansen2026_reference" status="rejected" stale="false" population="" measured-compound="cilgavimab" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment; no model was built for this record.  
 **Parameters:** 3 extracted.

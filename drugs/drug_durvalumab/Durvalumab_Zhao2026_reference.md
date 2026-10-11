@@ -21,8 +21,7 @@
 Zhao X et al., Population pharmacokinetics and exposur…, British journal of clinical… (2026)
   ·  DOI: [10.1002/bcp.70287](https://doi.org/10.1002/bcp.70287)
 
-## Model component
-<dbs-pgx drug="durvalumab" model-id="Durvalumab_Zhao2026_reference" status="extracted" stale="false" population="Patients with urothelial carcinoma, NSCLC, SCLC and other solid tumours in the pooled PopPK dataset, including patients with resectable NSCLC" measured-compound="durvalumab" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="durvalumab" model-id="Durvalumab_Zhao2026_reference" status="extracted" stale="false" population="Patients with urothelial carcinoma, NSCLC, SCLC and other solid tumours in the pooled PopPK dataset, including patients with resectable NSCLC" measured-compound="durvalumab" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment, IV mammillary model — template `PK_2C`.  
 **Parameters:** 4 extracted, plus 6 covariate effects.

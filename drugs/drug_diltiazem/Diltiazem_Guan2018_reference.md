@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Guan XF et al., Population Pharmacokinetic Modeling of…, European journal of drug me… (2018)
   ·  DOI: [10.1007/s13318-017-0425-y](https://doi.org/10.1007/s13318-017-0425-y)
 
-## Model component
-<dbs-pgx drug="diltiazem" model-id="Diltiazem_Guan2018_reference" status="extracted" stale="true" population="Chinese renal transplant recipients" measured-compound="diltiazem" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="diltiazem" model-id="Diltiazem_Guan2018_reference" status="extracted" stale="true" population="Chinese renal transplant recipients" measured-compound="diltiazem" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 3 extracted.

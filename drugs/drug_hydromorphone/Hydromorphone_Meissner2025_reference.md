@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which m
 Meissner K et al., Morphine and hydromorphone pharmacokine…, British journal of anaesthe… (2025)
   ·  DOI: [10.1016/j.bja.2024.08.042](https://doi.org/10.1016/j.bja.2024.08.042)
 
-## Model component
-<dbs-pgx drug="hydromorphone" model-id="Hydromorphone_Meissner2025_reference" status="extracted" stale="true" population="healthy adults" measured-compound="hydromorphone" parameterization="mechanistic" topology="parent_metabolite"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="hydromorphone" model-id="Hydromorphone_Meissner2025_reference" status="extracted" stale="true" population="healthy adults" measured-compound="hydromorphone" parameterization="mechanistic" topology="parent_metabolite"></div>
 
 **Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameters:** 3 extracted.

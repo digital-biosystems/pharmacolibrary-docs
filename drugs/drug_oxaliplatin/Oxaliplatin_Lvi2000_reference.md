@@ -23,8 +23,7 @@
 Lévi F et al., Oxaliplatin: pharmacokinetics and chron…, Clinical pharmacokinetics (2000)
   ·  DOI: [10.2165/00003088-200038010-00001](https://doi.org/10.2165/00003088-200038010-00001)
 
-## Model component
-<dbs-pgx drug="oxaliplatin" model-id="Oxaliplatin_Lvi2000_reference" status="rejected" stale="false" population="adults with colorectal cancer" measured-compound="platinum" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="oxaliplatin" model-id="Oxaliplatin_Lvi2000_reference" status="rejected" stale="false" population="adults with colorectal cancer" measured-compound="platinum" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 1 extracted.

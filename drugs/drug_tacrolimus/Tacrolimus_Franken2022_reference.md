@@ -27,8 +27,7 @@
 Franken LG et al., A Population Pharmacokinetic Model of W…, European journal of drug me… (2022)
   ·  DOI: [10.1007/s13318-022-00767-8](https://doi.org/10.1007/s13318-022-00767-8)
 
-## Model component
-<dbs-pgx drug="tacrolimus" model-id="Tacrolimus_Franken2022_reference" status="extracted" stale="true" population="kidney transplant recipients" measured-compound="tacrolimus" parameterization="apparent" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="tacrolimus" model-id="Tacrolimus_Franken2022_reference" status="extracted" stale="true" population="kidney transplant recipients" measured-compound="tacrolimus" parameterization="apparent" topology="2C"></div>
 
 **Model structure:** 2-compartment, oral mammillary model — template `PK_2C_enteral`.  
 **Parameters:** 6 extracted, plus 1 covariate effect.

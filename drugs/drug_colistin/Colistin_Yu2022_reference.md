@@ -29,8 +29,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Yu XB et al., Population Pharmacokinetics of Colistin…, Frontiers in pharmacology (2022)
   ·  DOI: [10.3389/fphar.2022.915958](https://doi.org/10.3389/fphar.2022.915958)
 
-## Model component
-<dbs-pgx drug="colistin" model-id="Colistin_Yu2022_reference" status="needs_review" stale="false" population="critically ill patients with carbapenem-resistant organism infections" measured-compound="colistin sulfate" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="colistin" model-id="Colistin_Yu2022_reference" status="needs_review" stale="false" population="critically ill patients with carbapenem-resistant organism infections" measured-compound="colistin sulfate" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 1 extracted, plus 1 covariate effect.

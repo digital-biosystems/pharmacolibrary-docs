@@ -21,8 +21,7 @@
 Figg WD et al., Pharmacokinetics of thalidomide in an e…, Journal of pharmaceutical s… (1999)
   ·  DOI: [10.1021/js980172i](https://doi.org/10.1021/js980172i)
 
-## Model component
-<dbs-pgx drug="thalidomide" model-id="Thalidomide_Figg1999_reference" status="extracted" stale="false" population="elderly with hormone-refractory prostate cancer" measured-compound="thalidomide" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="thalidomide" model-id="Thalidomide_Figg1999_reference" status="extracted" stale="false" population="elderly with hormone-refractory prostate cancer" measured-compound="thalidomide" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 5 extracted.

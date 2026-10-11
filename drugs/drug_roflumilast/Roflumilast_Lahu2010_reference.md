@@ -22,8 +22,7 @@
 Lahu G et al., Population pharmacokinetic modelling of…, Clinical pharmacokinetics (2010)
   ·  DOI: [10.2165/11536600-000000000-00000](https://doi.org/10.2165/11536600-000000000-00000)
 
-## Model component
-<dbs-pgx drug="roflumilast" model-id="Roflumilast_Lahu2010_reference" status="rejected" stale="false" population="healthy subjects and patients with moderate-to-severe COPD" measured-compound="roflumilast and roflumilast N-oxide" parameterization="mechanistic" topology="parent_metabolite"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="roflumilast" model-id="Roflumilast_Lahu2010_reference" status="rejected" stale="false" population="healthy subjects and patients with moderate-to-severe COPD" measured-compound="roflumilast and roflumilast N-oxide" parameterization="mechanistic" topology="parent_metabolite"></div>
 
 **Model structure:** parent + metabolite; no model was built for this record.  
 **Parameters:** 0 extracted.

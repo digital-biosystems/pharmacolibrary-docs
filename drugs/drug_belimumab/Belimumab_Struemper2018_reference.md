@@ -20,8 +20,7 @@
 Struemper H et al., Population Pharmacokinetic and Pharmaco…, Clinical pharmacokinetics (2018)
   ·  DOI: [10.1007/s40262-017-0586-5](https://doi.org/10.1007/s40262-017-0586-5)
 
-## Model component
-<dbs-pgx drug="belimumab" model-id="Belimumab_Struemper2018_reference" status="rejected" stale="false" population="healthy volunteers and patients with systemic lupus erythematosus" measured-compound="belimumab" parameterization="mechanistic" topology="3C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="belimumab" model-id="Belimumab_Struemper2018_reference" status="rejected" stale="false" population="healthy volunteers and patients with systemic lupus erythematosus" measured-compound="belimumab" parameterization="mechanistic" topology="3C"></div>
 
 **Model structure:** 3-compartment; no model was built for this record.  
 **Parameters:** 5 extracted.

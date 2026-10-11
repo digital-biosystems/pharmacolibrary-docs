@@ -31,8 +31,7 @@ No volume or clearance — not a compartmental population PK model. The paper re
 Davies BE et al., The pharmacokinetics of topotecan and i…, Pharmaceutical research (1997)
   ·  DOI: [10.1023/a:1012189225880](https://doi.org/10.1023/a:1012189225880)
 
-## Model component
-<dbs-pgx drug="topotecan" model-id="Topotecan_Davies1997_reference" status="rejected" stale="true" population="female beagle dogs" measured-compound="topotecan and SK&amp;F 105,992" parameterization="mechanistic" topology="general_linear"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="topotecan" model-id="Topotecan_Davies1997_reference" status="rejected" stale="true" population="female beagle dogs" measured-compound="topotecan and SK&amp;F 105,992" parameterization="mechanistic" topology="general_linear"></div>
 
 **Model structure:** general linear; no model was built for this record.  
 **Parameters:** 1 extracted.

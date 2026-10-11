@@ -23,8 +23,7 @@
 Fornari C et al., Dose rationale for the use of meropenem…, British journal of clinical… (2024)
   ·  DOI: [10.1111/bcp.16145](https://doi.org/10.1111/bcp.16145)
 
-## Model component
-<dbs-pgx drug="Vaborbactam" model-id="Vaborbactam_Fornari2024_reference" status="rejected" stale="false" population="paediatric patients with Gram-negative bacterial infections" measured-compound="vaborbactam" parameterization="apparent" topology="general_linear"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="Vaborbactam" model-id="Vaborbactam_Fornari2024_reference" status="rejected" stale="false" population="paediatric patients with Gram-negative bacterial infections" measured-compound="vaborbactam" parameterization="apparent" topology="general_linear"></div>
 
 **Model structure:** general linear; no model was built for this record.  
 **Parameters:** 6 extracted.

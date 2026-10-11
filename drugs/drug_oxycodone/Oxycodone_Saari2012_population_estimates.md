@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the val
 Saari TI et al., Oxycodone clearance is markedly reduced…, British journal of anaesthe… (2012)
   ·  DOI: [10.1093/bja/aer395](https://doi.org/10.1093/bja/aer395)
 
-## Model component
-<dbs-pgx drug="oxycodone" model-id="Oxycodone_Saari2012_population_estimates" status="rejected" stale="true" population="individuals aged 19-89 years" measured-compound="oxycodone" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="oxycodone" model-id="Oxycodone_Saari2012_population_estimates" status="rejected" stale="true" population="individuals aged 19-89 years" measured-compound="oxycodone" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 7 extracted.

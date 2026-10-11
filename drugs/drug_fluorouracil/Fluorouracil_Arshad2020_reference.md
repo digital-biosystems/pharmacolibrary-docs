@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Arshad U et al., Prediction of exposure-driven myelotoxi…, Cancer chemotherapy and pha… (2020)
   ·  DOI: [10.1007/s00280-019-04028-5](https://doi.org/10.1007/s00280-019-04028-5)
 
-## Model component
-<dbs-pgx drug="fluorouracil" model-id="Fluorouracil_Arshad2020_reference" status="rejected" stale="true" population="gastrointestinal cancer patients" measured-compound="5-fluorouracil" parameterization="apparent_wrt_Fm" topology="parent_metabolite"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="fluorouracil" model-id="Fluorouracil_Arshad2020_reference" status="rejected" stale="true" population="gastrointestinal cancer patients" measured-compound="5-fluorouracil" parameterization="apparent_wrt_Fm" topology="parent_metabolite"></div>
 
 **Model structure:** parent + metabolite; no model was built for this record.  
 **Parameters:** 0 extracted.

@@ -20,8 +20,7 @@
 Wang Y et al., Population Pharmacokinetics and Dosing…, Pharmaceutics (2022)
   ·  DOI: [10.3390/pharmaceutics14051033](https://doi.org/10.3390/pharmaceutics14051033)
 
-## Model component
-<dbs-pgx drug="latamoxef" model-id="Latamoxef_Wang2022_reference" status="rejected" stale="false" population="Chinese children" measured-compound="latamoxef" parameterization="mechanistic" topology="general_linear"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="latamoxef" model-id="Latamoxef_Wang2022_reference" status="rejected" stale="false" population="Chinese children" measured-compound="latamoxef" parameterization="mechanistic" topology="general_linear"></div>
 
 **Model structure:** general linear; no model was built for this record.  
 **Parameters:** 0 extracted.

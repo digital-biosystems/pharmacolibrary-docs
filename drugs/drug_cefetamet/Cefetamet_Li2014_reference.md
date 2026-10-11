@@ -19,8 +19,7 @@
 ## Citation
 Li CZ et al., [Phase I clinical trial on the safety o…, Sichuan da xue xue bao. Yi… (2014)
 
-## Model component
-<dbs-pgx drug="cefetamet" model-id="Cefetamet_Li2014_reference" status="rejected" stale="false" population="healthy Chinese volunteers" measured-compound="cefetamet" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="cefetamet" model-id="Cefetamet_Li2014_reference" status="rejected" stale="false" population="healthy Chinese volunteers" measured-compound="cefetamet" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

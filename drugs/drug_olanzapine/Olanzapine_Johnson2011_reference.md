@@ -23,8 +23,7 @@
 Johnson M et al., Mechanism-based pharmacokinetic-pharmac…, Pharmaceutical research (2011)
   ·  DOI: [10.1007/s11095-011-0477-7](https://doi.org/10.1007/s11095-011-0477-7)
 
-## Model component
-<dbs-pgx drug="olanzapine" model-id="Olanzapine_Johnson2011_reference" status="extracted" stale="false" population="rats" measured-compound="olanzapine" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="olanzapine" model-id="Olanzapine_Johnson2011_reference" status="extracted" stale="false" population="rats" measured-compound="olanzapine" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment, oral mammillary model — template `PK_2C_enteral`.  
 **Parameters:** 6 extracted.

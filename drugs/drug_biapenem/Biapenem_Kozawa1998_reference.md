@@ -21,8 +21,7 @@
 Kozawa O et al., Pharmacokinetics and safety of a new pa…, Antimicrobial agents and ch… (1998)
   ·  DOI: [10.1128/AAC.42.6.1433](https://doi.org/10.1128/AAC.42.6.1433)
 
-## Model component
-<dbs-pgx drug="biapenem" model-id="Biapenem_Kozawa1998_reference" status="rejected" stale="false" population="healthy volunteers" measured-compound="biapenem" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="biapenem" model-id="Biapenem_Kozawa1998_reference" status="rejected" stale="false" population="healthy volunteers" measured-compound="biapenem" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 2 extracted.

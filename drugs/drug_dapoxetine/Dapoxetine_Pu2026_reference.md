@@ -21,8 +21,7 @@
 Pu L et al., Population Pharmacokinetics of Dapoxeti…, Journal of clinical pharmac… (2026)
   ·  DOI: [10.1002/jcph.70117](https://doi.org/10.1002/jcph.70117)
 
-## Model component
-<dbs-pgx drug="dapoxetine" model-id="Dapoxetine_Pu2026_reference" status="extracted" stale="false" population="healthy Chinese male subjects" measured-compound="dapoxetine" parameterization="apparent" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="dapoxetine" model-id="Dapoxetine_Pu2026_reference" status="extracted" stale="false" population="healthy Chinese male subjects" measured-compound="dapoxetine" parameterization="apparent" topology="2C"></div>
 
 **Model structure:** 2-compartment, oral mammillary model — template `PK_2C_enteral`.  
 **Parameters:** 6 extracted.

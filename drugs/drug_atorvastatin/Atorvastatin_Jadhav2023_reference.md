@@ -29,8 +29,7 @@ Independently confirmed by `gpt-oss:120b`.
 Jadhav SB et al., Population pharmacokinetic and pharmaco…, Journal of pharmacokinetics… (2023)
   ·  DOI: [10.1007/s10928-023-09864-w](https://doi.org/10.1007/s10928-023-09864-w)
 
-## Model component
-<dbs-pgx drug="atorvastatin" model-id="Atorvastatin_Jadhav2023_reference" status="needs_review" stale="false" population="" measured-compound="atorvastatin" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="atorvastatin" model-id="Atorvastatin_Jadhav2023_reference" status="needs_review" stale="false" population="" measured-compound="atorvastatin" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 3 extracted.

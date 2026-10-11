@@ -23,8 +23,7 @@
 Caldwell JE et al., Pipecuronium and pancuronium: compariso…, British journal of anaesthe… (1988)
   ·  DOI: [10.1093/bja/61.6.693](https://doi.org/10.1093/bja/61.6.693)
 
-## Model component
-<dbs-pgx drug="pipecuronium bromide" model-id="PipecuroniumBromide_Caldwell1988_reference" status="rejected" stale="false" population="ASA class I or II patients" measured-compound="pipecuronium" parameterization="mechanistic" topology="parent_metabolite"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="pipecuronium bromide" model-id="PipecuroniumBromide_Caldwell1988_reference" status="rejected" stale="false" population="ASA class I or II patients" measured-compound="pipecuronium" parameterization="mechanistic" topology="parent_metabolite"></div>
 
 **Model structure:** parent + metabolite; no model was built for this record.  
 **Parameters:** 2 extracted.

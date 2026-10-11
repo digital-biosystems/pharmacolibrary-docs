@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Li TY et al., Dose Optimization of Rivaroxaban in Eld…, Drug design, development an… (2025)
   ·  DOI: [10.2147/DDDT.S563521](https://doi.org/10.2147/DDDT.S563521)
 
-## Model component
-<dbs-pgx drug="rivaroxaban" model-id="Rivaroxaban_Li2025_final" status="extracted" stale="true" population="elderly Chinese patients with non-valvular atrial fibrillation" measured-compound="rivaroxaban" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="rivaroxaban" model-id="Rivaroxaban_Li2025_final" status="extracted" stale="true" population="elderly Chinese patients with non-valvular atrial fibrillation" measured-compound="rivaroxaban" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 2 extracted.

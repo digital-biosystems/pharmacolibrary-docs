@@ -30,8 +30,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 ## Citation
 Kölle EU et al., Pharmacokinetic model of diltiazem, Arzneimittel-Forschung (1983)
 
-## Model component
-<dbs-pgx drug="diltiazem" model-id="Diltiazem_Klle1983_reference" status="extracted" stale="true" population="healthy subjects" measured-compound="diltiazem" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="diltiazem" model-id="Diltiazem_Klle1983_reference" status="extracted" stale="true" population="healthy subjects" measured-compound="diltiazem" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameters:** 7 extracted.

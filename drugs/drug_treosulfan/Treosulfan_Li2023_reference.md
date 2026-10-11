@@ -21,8 +21,7 @@
 Li X et al., Population pharmacokinetic modeling of…, Drug metabolism and pharmac… (2023)
   ·  DOI: [10.1016/j.dmpk.2023.100515](https://doi.org/10.1016/j.dmpk.2023.100515)
 
-## Model component
-<dbs-pgx drug="treosulfan" model-id="Treosulfan_Li2023_reference" status="rejected" stale="false" population="children" measured-compound="treosulfan" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="treosulfan" model-id="Treosulfan_Li2023_reference" status="rejected" stale="false" population="children" measured-compound="treosulfan" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

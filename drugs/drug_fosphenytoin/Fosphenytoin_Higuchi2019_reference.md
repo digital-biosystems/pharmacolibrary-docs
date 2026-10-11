@@ -30,8 +30,7 @@ No clearance, volume or rate constant of the model is reported in it. Only the a
 Higuchi K et al., Population Pharmacokinetic Analysis of…, Therapeutic drug monitoring (2019)
   ·  DOI: [10.1097/FTD.0000000000000651](https://doi.org/10.1097/FTD.0000000000000651)
 
-## Model component
-<dbs-pgx drug="fosphenytoin" model-id="Fosphenytoin_Higuchi2019_reference" status="needs_review" stale="true" population="adult and elderly epileptic patients" measured-compound="phenytoin" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="fosphenytoin" model-id="Fosphenytoin_Higuchi2019_reference" status="needs_review" stale="true" population="adult and elderly epileptic patients" measured-compound="phenytoin" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 1 extracted.

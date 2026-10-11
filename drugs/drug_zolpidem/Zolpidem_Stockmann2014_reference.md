@@ -21,8 +21,7 @@
 Stockmann C et al., Preliminary assessment of zolpidem phar…, Therapeutic drug monitoring (2014)
   ·  DOI: [10.1097/FTD.0000000000000017](https://doi.org/10.1097/FTD.0000000000000017)
 
-## Model component
-<dbs-pgx drug="zolpidem" model-id="Zolpidem_Stockmann2014_reference" status="needs_review" stale="false" population="pediatric burn patients" measured-compound="zolpidem" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="zolpidem" model-id="Zolpidem_Stockmann2014_reference" status="needs_review" stale="false" population="pediatric burn patients" measured-compound="zolpidem" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 3 extracted.

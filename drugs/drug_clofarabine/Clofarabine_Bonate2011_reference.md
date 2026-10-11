@@ -21,8 +21,7 @@
 Bonate PL et al., Population pharmacokinetics of clofarab…, Cancer chemotherapy and pha… (2011)
   ·  DOI: [10.1007/s00280-010-1376-z](https://doi.org/10.1007/s00280-010-1376-z)
 
-## Model component
-<dbs-pgx drug="clofarabine" model-id="Clofarabine_Bonate2011_reference" status="extracted" stale="false" population="adult and pediatric patients with cancer" measured-compound="clofarabine" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="clofarabine" model-id="Clofarabine_Bonate2011_reference" status="extracted" stale="false" population="adult and pediatric patients with cancer" measured-compound="clofarabine" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameters:** 5 extracted.

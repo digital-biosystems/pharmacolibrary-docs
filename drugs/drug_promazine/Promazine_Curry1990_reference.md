@@ -20,8 +20,7 @@
 ## Citation
 Curry SH et al., A third, "deep," compartment for phenot…, Psychopharmacology bulletin (1990)
 
-## Model component
-<dbs-pgx drug="promazine" model-id="Promazine_Curry1990_reference" status="rejected" stale="false" population="healthy volunteers" measured-compound="promazine" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="promazine" model-id="Promazine_Curry1990_reference" status="rejected" stale="false" population="healthy volunteers" measured-compound="promazine" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

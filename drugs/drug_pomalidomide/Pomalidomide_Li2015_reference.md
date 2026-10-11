@@ -21,8 +21,7 @@
 Li Y et al., Population pharmacokinetics of pomalido…, Journal of clinical pharmac… (2015)
   ·  DOI: [10.1002/jcph.455](https://doi.org/10.1002/jcph.455)
 
-## Model component
-<dbs-pgx drug="pomalidomide" model-id="Pomalidomide_Li2015_reference" status="needs_review" stale="false" population="healthy participants and patients with multiple myeloma" measured-compound="pomalidomide" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="pomalidomide" model-id="Pomalidomide_Li2015_reference" status="needs_review" stale="false" population="healthy participants and patients with multiple myeloma" measured-compound="pomalidomide" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 7 extracted, plus 2 covariate effects.

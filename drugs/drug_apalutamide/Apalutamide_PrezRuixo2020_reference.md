@@ -20,8 +20,7 @@
 Pérez-Ruixo C et al., Population Pharmacokinetics of Apalutam…, Clinical pharmacokinetics (2020)
   ·  DOI: [10.1007/s40262-019-00808-7](https://doi.org/10.1007/s40262-019-00808-7)
 
-## Model component
-<dbs-pgx drug="apalutamide" model-id="Apalutamide_PrezRuixo2020_reference" status="rejected" stale="false" population="healthy males and castration-resistant prostate cancer subjects" measured-compound="apalutamide" parameterization="mechanistic" topology="parent_metabolite"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="apalutamide" model-id="Apalutamide_PrezRuixo2020_reference" status="rejected" stale="false" population="healthy males and castration-resistant prostate cancer subjects" measured-compound="apalutamide" parameterization="mechanistic" topology="parent_metabolite"></div>
 
 **Model structure:** parent + metabolite; no model was built for this record.  
 **Parameters:** 0 extracted.

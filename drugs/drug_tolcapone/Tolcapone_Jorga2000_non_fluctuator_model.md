@@ -20,8 +20,7 @@
 Jorga K et al., Population pharmacokinetics of tolcapon…, British journal of clinical… (2000)
   ·  DOI: [10.1046/j.1365-2125.2000.00113.x](https://doi.org/10.1046/j.1365-2125.2000.00113.x)
 
-## Model component
-<dbs-pgx drug="tolcapone" model-id="Tolcapone_Jorga2000_non_fluctuator_model" status="rejected" stale="false" population="parkinsonian patients" measured-compound="tolcapone" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="tolcapone" model-id="Tolcapone_Jorga2000_non_fluctuator_model" status="rejected" stale="false" population="parkinsonian patients" measured-compound="tolcapone" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment; no model was built for this record.  
 **Parameters:** 10 extracted.

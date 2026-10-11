@@ -31,8 +31,7 @@ No clearance, volume or rate constant of the model is reported in it. Only the a
 Dailly E et al., Impact of nevirapine or efavirenz co-ad…, Fundamental & clinical phar… (2008)
   ·  DOI: [10.1111/j.1472-8206.2007.00556.x](https://doi.org/10.1111/j.1472-8206.2007.00556.x)
 
-## Model component
-<dbs-pgx drug="amprenavir" model-id="Amprenavir_Dailly2008_reference" status="needs_review" stale="true" population="HIV-infected adults on ritonavir-boosted fosamprenavir" measured-compound="amprenavir" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="amprenavir" model-id="Amprenavir_Dailly2008_reference" status="needs_review" stale="true" population="HIV-infected adults on ritonavir-boosted fosamprenavir" measured-compound="amprenavir" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 3 extracted.

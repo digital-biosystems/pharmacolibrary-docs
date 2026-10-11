@@ -33,8 +33,7 @@ Independently confirmed by `gpt-oss:120b`.
 Wade JR et al., The effect of saturation of ACE binding…, British journal of clinical… (1992)
   ·  DOI: [10.1111/j.1365-2125.1992.tb04018.x](https://doi.org/10.1111/j.1365-2125.1992.tb04018.x)
 
-## Model component
-<dbs-pgx drug="enalapril" model-id="Enalapril_Wade1992_reference" status="rejected" stale="true" population="healthy male volunteers" measured-compound="enalaprilat" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="enalapril" model-id="Enalapril_Wade1992_reference" status="rejected" stale="true" population="healthy male volunteers" measured-compound="enalaprilat" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

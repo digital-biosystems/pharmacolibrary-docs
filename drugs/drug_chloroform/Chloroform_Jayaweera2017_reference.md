@@ -20,8 +20,7 @@
 Jayaweera D et al., Chloroform ingestion causing severe gas…, Clinical toxicology (Philad… (2017)
   ·  DOI: [10.1080/15563650.2016.1249795](https://doi.org/10.1080/15563650.2016.1249795)
 
-## Model component
-<dbs-pgx drug="chloroform" model-id="Chloroform_Jayaweera2017_reference" status="rejected" stale="false" population="30-year-old female" measured-compound="chloroform" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="chloroform" model-id="Chloroform_Jayaweera2017_reference" status="rejected" stale="false" population="30-year-old female" measured-compound="chloroform" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

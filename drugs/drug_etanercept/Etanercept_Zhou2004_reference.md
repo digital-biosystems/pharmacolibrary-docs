@@ -21,8 +21,7 @@
 Zhou H et al., Unaltered etanercept pharmacokinetics w…, Journal of clinical pharmac… (2004)
   ·  DOI: [10.1177/0091270004268049](https://doi.org/10.1177/0091270004268049)
 
-## Model component
-<dbs-pgx drug="etanercept" model-id="Etanercept_Zhou2004_reference" status="rejected" stale="false" population="patients with rheumatoid arthritis" measured-compound="etanercept" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="etanercept" model-id="Etanercept_Zhou2004_reference" status="rejected" stale="false" population="patients with rheumatoid arthritis" measured-compound="etanercept" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

@@ -20,8 +20,7 @@
 Cerretani D et al., Pharmacokinetics of intraarterial mitom…, Vascular pharmacology (2002)
   ·  DOI: [10.1016/s1537-1891(02)00280-x](https://doi.org/10.1016/s1537-1891(02)00280-x)
 
-## Model component
-<dbs-pgx drug="mitomycin" model-id="Mitomycin_Cerretani2002_reference" status="needs_review" stale="false" population="patients with hepatic metastases from colorectal cancer" measured-compound="mitomycin C" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="mitomycin" model-id="Mitomycin_Cerretani2002_reference" status="needs_review" stale="false" population="patients with hepatic metastases from colorectal cancer" measured-compound="mitomycin C" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 3 extracted.

@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on `parame
 Pilla Reddy V et al., Population pharmacokinetic-pharmacodyna…, Journal of clinical psychop… (2013)
   ·  DOI: [10.1097/JCP.0b013e3182a4ee2c](https://doi.org/10.1097/JCP.0b013e3182a4ee2c)
 
-## Model component
-<dbs-pgx drug="haloperidol" model-id="Haloperidol_Pilla2013_reference" status="needs_review" stale="true" population="patients with schizophrenia" measured-compound="haloperidol" parameterization="apparent" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="haloperidol" model-id="Haloperidol_Pilla2013_reference" status="needs_review" stale="true" population="patients with schizophrenia" measured-compound="haloperidol" parameterization="apparent" topology="2C"></div>
 
 **Model structure:** 2-compartment; no model was built for this record.  
 **Parameters:** 13 extracted.

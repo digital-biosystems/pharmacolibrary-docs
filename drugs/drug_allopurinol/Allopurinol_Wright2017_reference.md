@@ -35,8 +35,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Wright DF et al., A population pharmacokinetic model to p…, European journal of clinica… (2017)
   ·  DOI: [10.1007/s00228-016-2133-y](https://doi.org/10.1007/s00228-016-2133-y)
 
-## Model component
-<dbs-pgx drug="allopurinol" model-id="Allopurinol_Wright2017_reference" status="needs_review" stale="true" population="adults with gout receiving haemodialysis and non-dialysis" measured-compound="oxypurinol" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="allopurinol" model-id="Allopurinol_Wright2017_reference" status="needs_review" stale="true" population="adults with gout receiving haemodialysis and non-dialysis" measured-compound="oxypurinol" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 3 extracted.

@@ -21,8 +21,7 @@
 Dorlo TP et al., Pharmacokinetics of miltefosine in Old…, Antimicrobial agents and ch… (2008)
   ·  DOI: [10.1128/AAC.00014-08](https://doi.org/10.1128/AAC.00014-08)
 
-## Model component
-<dbs-pgx drug="miltefosine" model-id="Miltefosine_Dorlo2008_reference" status="needs_review" stale="false" population="adults with Old World cutaneous leishmaniasis" measured-compound="miltefosine" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="miltefosine" model-id="Miltefosine_Dorlo2008_reference" status="needs_review" stale="false" population="adults with Old World cutaneous leishmaniasis" measured-compound="miltefosine" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment; no model was built for this record.  
 **Parameters:** 3 extracted.

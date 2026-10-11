@@ -21,8 +21,7 @@
 Eleveld DJ et al., Pharmacokinetic-pharmacodynamic model f…, British journal of anaesthe… (2018)
   ·  DOI: [10.1016/j.bja.2018.01.018](https://doi.org/10.1016/j.bja.2018.01.018)
 
-## Model component
-<dbs-pgx drug="propofol" model-id="Propofol_Eleveld2018_reference" status="extracted" stale="false" population="young children, children, adults, elderly, and high-BMI individuals" measured-compound="propofol" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="propofol" model-id="Propofol_Eleveld2018_reference" status="extracted" stale="false" population="young children, children, adults, elderly, and high-BMI individuals" measured-compound="propofol" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment, IV mammillary model — template `PK_2C`.  
 **Parameters:** 6 extracted.

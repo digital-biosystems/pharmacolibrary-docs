@@ -30,8 +30,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Jain M et al., Population Pharmacokinetics of Intranas…, European journal of drug me… (2026)
   ·  DOI: [10.1007/s13318-026-01011-3](https://doi.org/10.1007/s13318-026-01011-3)
 
-## Model component
-<dbs-pgx drug="amiloride" model-id="Amiloride_Jain2026_reference" status="rejected" stale="true" population="healthy adults" measured-compound="amiloride" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="amiloride" model-id="Amiloride_Jain2026_reference" status="rejected" stale="true" population="healthy adults" measured-compound="amiloride" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 4 extracted.

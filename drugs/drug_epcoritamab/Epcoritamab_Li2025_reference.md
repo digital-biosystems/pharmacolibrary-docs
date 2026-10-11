@@ -21,8 +21,7 @@
 Li T et al., Population Pharmacokinetics of Epcorita…, Clinical pharmacokinetics (2025)
   ·  DOI: [10.1007/s40262-024-01464-2](https://doi.org/10.1007/s40262-024-01464-2)
 
-## Model component
-<dbs-pgx drug="epcoritamab" model-id="Epcoritamab_Li2025_reference" status="extracted" stale="false" population="adults with relapsed or refractory B-cell non-Hodgkin lymphoma" measured-compound="epcoritamab" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="epcoritamab" model-id="Epcoritamab_Li2025_reference" status="extracted" stale="false" population="adults with relapsed or refractory B-cell non-Hodgkin lymphoma" measured-compound="epcoritamab" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 4 extracted.

@@ -27,8 +27,7 @@ A model needs both clearance and volume; without the volume it could only be bui
 ## Citation
 Welker HA et al., Mibefradil pharmacokinetic and pharmaco…, International journal of cl… (1998)
 
-## Model component
-<dbs-pgx drug="mibefradil" model-id="Mibefradil_Welker1998_reference" status="needs_review" stale="true" population="patients with hypertension and chronic stable angina pectoris" measured-compound="mibefradil" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="mibefradil" model-id="Mibefradil_Welker1998_reference" status="needs_review" stale="true" population="patients with hypertension and chronic stable angina pectoris" measured-compound="mibefradil" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 4 extracted.

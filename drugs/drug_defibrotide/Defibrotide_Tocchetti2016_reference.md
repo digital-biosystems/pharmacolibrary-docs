@@ -27,8 +27,7 @@ Independently confirmed by `gpt-oss:120b`.
 Tocchetti P et al., Pharmacokinetic profile of defibrotide…, Drug design, development an… (2016)
   ·  DOI: [10.2147/DDDT.S112181](https://doi.org/10.2147/DDDT.S112181)
 
-## Model component
-<dbs-pgx drug="defibrotide" model-id="Defibrotide_Tocchetti2016_reference" status="curated_candidate" stale="false" population="adults with renal impairment" measured-compound="defibrotide" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="defibrotide" model-id="Defibrotide_Tocchetti2016_reference" status="curated_candidate" stale="false" population="adults with renal impairment" measured-compound="defibrotide" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameters:** 2 extracted.

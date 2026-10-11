@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Bouazza N et al., Population pharmacokinetic modelling of…, British journal of clinical… (2025)
   ·  DOI: [10.1002/bcp.70103](https://doi.org/10.1002/bcp.70103)
 
-## Model component
-<dbs-pgx drug="prednisone" model-id="Prednisone_Bouazza2025_reference" status="needs_review" stale="false" population="systemic lupus erythematosus patients" measured-compound="prednisolone" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="prednisone" model-id="Prednisone_Bouazza2025_reference" status="needs_review" stale="false" population="systemic lupus erythematosus patients" measured-compound="prednisolone" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 4 extracted.

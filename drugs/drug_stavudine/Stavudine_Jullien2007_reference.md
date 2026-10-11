@@ -29,8 +29,7 @@ No clearance, volume or rate constant of the model is reported in it. Only the a
 Jullien V et al., Age-related differences in the pharmaco…, British journal of clinical… (2007)
   ·  DOI: [10.1111/j.1365-2125.2007.02854.x](https://doi.org/10.1111/j.1365-2125.2007.02854.x)
 
-## Model component
-<dbs-pgx drug="stavudine" model-id="Stavudine_Jullien2007_reference" status="extracted" stale="true" population="children from birth to 16 years" measured-compound="stavudine" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="stavudine" model-id="Stavudine_Jullien2007_reference" status="extracted" stale="true" population="children from birth to 16 years" measured-compound="stavudine" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 4 extracted.

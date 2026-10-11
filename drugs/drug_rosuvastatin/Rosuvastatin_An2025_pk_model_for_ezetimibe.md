@@ -27,8 +27,7 @@ A model needs both clearance and volume; without the clearance it could only be 
 An H et al., Population Pharmacokinetics and Pharmac…, Drug design, development an… (2025)
   ·  DOI: [10.2147/DDDT.S522863](https://doi.org/10.2147/DDDT.S522863)
 
-## Model component
-<dbs-pgx drug="rosuvastatin" model-id="Rosuvastatin_An2025_pk_model_for_ezetimibe" status="needs_review" stale="false" population="healthy adults" measured-compound="rosuvastatin" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="rosuvastatin" model-id="Rosuvastatin_An2025_pk_model_for_ezetimibe" status="needs_review" stale="false" population="healthy adults" measured-compound="rosuvastatin" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment; no model was built for this record.  
 **Parameters:** 5 extracted.

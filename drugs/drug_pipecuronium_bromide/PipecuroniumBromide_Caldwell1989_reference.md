@@ -23,8 +23,7 @@
 Caldwell JE et al., The influence of renal failure on the p…, Anesthesiology (1989)
   ·  DOI: [10.1097/00000542-198901000-00004](https://doi.org/10.1097/00000542-198901000-00004)
 
-## Model component
-<dbs-pgx drug="pipecuronium bromide" model-id="PipecuroniumBromide_Caldwell1989_reference" status="rejected" stale="false" population="patients anesthetized with halothane and nitrous oxide" measured-compound="pipecuronium" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="pipecuronium bromide" model-id="PipecuroniumBromide_Caldwell1989_reference" status="rejected" stale="false" population="patients anesthetized with halothane and nitrous oxide" measured-compound="pipecuronium" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 3 extracted.

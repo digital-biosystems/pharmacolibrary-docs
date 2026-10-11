@@ -21,8 +21,7 @@
 ## Citation
 Kelly DW et al., The metabolism and elimination of pyril…, Drug metabolism and disposi… (1987)
 
-## Model component
-<dbs-pgx drug="mepyramine" model-id="Mepyramine_Kelly1987_reference" status="rejected" stale="false" population="adult male Fischer-344 rats" measured-compound="pyrilamine (mepyramine)" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="mepyramine" model-id="Mepyramine_Kelly1987_reference" status="rejected" stale="false" population="adult male Fischer-344 rats" measured-compound="pyrilamine (mepyramine)" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 1 extracted.

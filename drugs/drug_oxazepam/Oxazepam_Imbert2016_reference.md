@@ -21,8 +21,7 @@
 Imbert B et al., Population Pharmacokinetics of High-Dos…, Therapeutic drug monitoring (2016)
   ·  DOI: [10.1097/FTD.0000000000000262](https://doi.org/10.1097/FTD.0000000000000262)
 
-## Model component
-<dbs-pgx drug="oxazepam" model-id="Oxazepam_Imbert2016_reference" status="extracted" stale="false" population="alcohol-dependent outpatients treated for alcohol withdrawal syndrome" measured-compound="oxazepam" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="oxazepam" model-id="Oxazepam_Imbert2016_reference" status="extracted" stale="false" population="alcohol-dependent outpatients treated for alcohol withdrawal syndrome" measured-compound="oxazepam" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 4 extracted.

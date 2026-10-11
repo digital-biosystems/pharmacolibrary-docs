@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Carlsson Petri KC et al., Liraglutide pharmacokinetics and exposu…, Pediatric obesity (2021)
   ·  DOI: [10.1111/ijpo.12799](https://doi.org/10.1111/ijpo.12799)
 
-## Model component
-<dbs-pgx drug="liraglutide" model-id="Liraglutide_Carlsson2021_reference" status="accepted_with_caveats" stale="false" population="children, adolescents and adults with obesity" measured-compound="liraglutide" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="liraglutide" model-id="Liraglutide_Carlsson2021_reference" status="accepted_with_caveats" stale="false" population="children, adolescents and adults with obesity" measured-compound="liraglutide" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 3 extracted, plus 5 covariate effects.

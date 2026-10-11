@@ -21,8 +21,7 @@
 Qiu X et al., Population pharmacokinetics of zonisami…, International journal of cl… (2016)
   ·  DOI: [10.5414/CP202104](https://doi.org/10.5414/CP202104)
 
-## Model component
-<dbs-pgx drug="zonisamide" model-id="Zonisamide_Qiu2016_reference" status="extracted" stale="false" population="healthy Chinese adults" measured-compound="zonisamide" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="zonisamide" model-id="Zonisamide_Qiu2016_reference" status="extracted" stale="false" population="healthy Chinese adults" measured-compound="zonisamide" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment, oral mammillary model — template `PK_2C_enteral`.  
 **Parameters:** 5 extracted.

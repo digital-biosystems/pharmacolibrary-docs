@@ -30,8 +30,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Taguchi M et al., Nonlinear mixed effects model analysis…, Biological & pharmaceutical… (2006)
   ·  DOI: [10.1248/bpb.29.517](https://doi.org/10.1248/bpb.29.517)
 
-## Model component
-<dbs-pgx drug="bepridil" model-id="Bepridil_Taguchi2006_reference" status="rejected" stale="true" population="Japanese patients with arrhythmias" measured-compound="bepridil" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="bepridil" model-id="Bepridil_Taguchi2006_reference" status="rejected" stale="true" population="Japanese patients with arrhythmias" measured-compound="bepridil" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 1 extracted.

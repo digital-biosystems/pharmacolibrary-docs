@@ -22,8 +22,7 @@
 Bovis MJ et al., Improved in vivo delivery of m-THPC via…, Journal of controlled relea… (2012)
   ·  DOI: [10.1016/j.jconrel.2011.09.085](https://doi.org/10.1016/j.jconrel.2011.09.085)
 
-## Model component
-<dbs-pgx drug="temoporfin" model-id="Temoporfin_Bovis2012_reference" status="rejected" stale="false" population="normal and tumour bearing rats" measured-compound="m-THPC" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="temoporfin" model-id="Temoporfin_Bovis2012_reference" status="rejected" stale="false" population="normal and tumour bearing rats" measured-compound="m-THPC" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

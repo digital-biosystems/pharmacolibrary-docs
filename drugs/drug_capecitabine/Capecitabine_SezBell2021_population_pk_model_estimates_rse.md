@@ -27,8 +27,7 @@ The record lists five parameters for capecitabine: CL (12 L/h), V2 (13 L), tlag 
 Sáez-Belló M et al., Evaluation of ABC gene polymorphisms on…, British journal of clinical… (2021)
   ·  DOI: [10.1111/bcp.14441](https://doi.org/10.1111/bcp.14441)
 
-## Model component
-<dbs-pgx drug="capecitabine" model-id="Capecitabine_SezBell2021_population_pk_model_estimates_rse" status="not_simulated" stale="false" population="adults with colorectal cancer" measured-compound="capecitabine" parameterization="mechanistic" topology="general_linear"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="capecitabine" model-id="Capecitabine_SezBell2021_population_pk_model_estimates_rse" status="not_simulated" stale="false" population="adults with colorectal cancer" measured-compound="capecitabine" parameterization="mechanistic" topology="general_linear"></div>
 
 **Model structure:** general linear; no model was built for this record.  
 **Parameters:** 5 extracted.

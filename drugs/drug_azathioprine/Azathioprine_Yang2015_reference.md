@@ -29,8 +29,7 @@ A model needs both clearance and volume; without the clearance it could only be 
 Yang X et al., Pharmacokinetic modeling of therapies f…, Expert review of clinical p… (2015)
   ·  DOI: [10.1586/17512433.2015.1059751](https://doi.org/10.1586/17512433.2015.1059751)
 
-## Model component
-<dbs-pgx drug="azathioprine" model-id="Azathioprine_Yang2015_reference" status="needs_review" stale="true" population="SLE patients" measured-compound="unknown" parameterization="apparent" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="azathioprine" model-id="Azathioprine_Yang2015_reference" status="needs_review" stale="true" population="SLE patients" measured-compound="unknown" parameterization="apparent" topology="2C"></div>
 
 **Model structure:** 2-compartment; no model was built for this record.  
 **Parameters:** 4 extracted.

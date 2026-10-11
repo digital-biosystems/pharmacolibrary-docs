@@ -21,8 +21,7 @@
 Li Y et al., Modeling and simulation of the endogeno…, Clinical pharmacology : adv… (2019)
   ·  DOI: [10.2147/CPAA.S192687](https://doi.org/10.2147/CPAA.S192687)
 
-## Model component
-<dbs-pgx drug="enasidenib" model-id="Enasidenib_Li2019_reference" status="extracted" stale="false" population="subjects with advanced hematologic malignancies" measured-compound="enasidenib" parameterization="apparent" topology="parent_metabolite"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="enasidenib" model-id="Enasidenib_Li2019_reference" status="extracted" stale="false" population="subjects with advanced hematologic malignancies" measured-compound="enasidenib" parameterization="apparent" topology="parent_metabolite"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 3 extracted.

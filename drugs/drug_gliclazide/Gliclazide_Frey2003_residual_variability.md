@@ -29,8 +29,7 @@ The paper (Frey_2003, Type 2 diabetic patients) reports gliclazide AUCt of 47 mg
 Frey N et al., Population PKPD modelling of the long-t…, British journal of clinical… (2003)
   ·  DOI: [10.1046/j.1365-2125.2003.01751.x](https://doi.org/10.1046/j.1365-2125.2003.01751.x)
 
-## Model component
-<dbs-pgx drug="gliclazide" model-id="Gliclazide_Frey2003_residual_variability" status="rejected" stale="true" population="Type 2 diabetic patients" measured-compound="gliclazide" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="gliclazide" model-id="Gliclazide_Frey2003_residual_variability" status="rejected" stale="true" population="Type 2 diabetic patients" measured-compound="gliclazide" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 4 extracted.

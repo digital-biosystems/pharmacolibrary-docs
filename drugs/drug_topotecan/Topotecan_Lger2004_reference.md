@@ -31,8 +31,7 @@ The model was built, but topotecan's clearance and volume of distribution had no
 Léger F et al., Factors affecting pharmacokinetic varia…, British journal of cancer (2004)
   ·  DOI: [10.1038/sj.bjc.6601469](https://doi.org/10.1038/sj.bjc.6601469)
 
-## Model component
-<dbs-pgx drug="topotecan" model-id="Topotecan_Lger2004_reference" status="extracted" stale="true" population="patients" measured-compound="topotecan" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="topotecan" model-id="Topotecan_Lger2004_reference" status="extracted" stale="true" population="patients" measured-compound="topotecan" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameters:** 2 extracted, plus 1 covariate effect.

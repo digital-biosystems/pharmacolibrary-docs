@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Zhou D et al., Population pharmacokinetic modelling to…, Journal of clinical pharmac… (2014)
   ·  DOI: [10.1111/jcpt.12152](https://doi.org/10.1111/jcpt.12152)
 
-## Model component
-<dbs-pgx drug="midazolam" model-id="Midazolam_Zhou2014_reference" status="needs_review" stale="false" population="healthy adults" measured-compound="midazolam" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="midazolam" model-id="Midazolam_Zhou2014_reference" status="needs_review" stale="false" population="healthy adults" measured-compound="midazolam" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment, oral mammillary model — template `PK_2C_enteral`.  
 **Parameters:** 7 extracted.

@@ -32,8 +32,7 @@ Independently confirmed by `gpt-oss:120b`.
 Rindi G et al., Thiamine content and turnover rates of…, Brain research (1980)
   ·  DOI: [10.1016/0006-8993(80)90619-8](https://doi.org/10.1016/0006-8993(80)90619-8)
 
-## Model component
-<dbs-pgx drug="Thiamine" model-id="Thiamine_Rindi1980_reference" status="rejected" stale="true" population="rats" measured-compound="thiamine" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="Thiamine" model-id="Thiamine_Rindi1980_reference" status="rejected" stale="true" population="rats" measured-compound="thiamine" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

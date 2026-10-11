@@ -23,8 +23,7 @@
 Buntenkötter K et al., Pharmacokinetics and in vitro efficacy…, BMC veterinary research (2017)
   ·  DOI: [10.1186/s12917-017-0955-1](https://doi.org/10.1186/s12917-017-0955-1)
 
-## Model component
-<dbs-pgx drug="potassium salicylate" model-id="PotassiumSalicylate_Buntenktter2017_reference" status="extracted" stale="false" population="" measured-compound="potassium_salicylate" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="potassium salicylate" model-id="PotassiumSalicylate_Buntenktter2017_reference" status="extracted" stale="false" population="" measured-compound="potassium_salicylate" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 2 extracted.

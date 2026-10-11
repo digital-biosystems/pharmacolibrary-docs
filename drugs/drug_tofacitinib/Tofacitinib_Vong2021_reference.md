@@ -21,8 +21,7 @@
 Vong C et al., Population Pharmacokinetics of Tofaciti…, Clinical pharmacology in dr… (2021)
   ·  DOI: [10.1002/cpdd.899](https://doi.org/10.1002/cpdd.899)
 
-## Model component
-<dbs-pgx drug="tofacitinib" model-id="Tofacitinib_Vong2021_reference" status="extracted" stale="false" population="patients with moderate to severe ulcerative colitis" measured-compound="tofacitinib" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="tofacitinib" model-id="Tofacitinib_Vong2021_reference" status="extracted" stale="false" population="patients with moderate to severe ulcerative colitis" measured-compound="tofacitinib" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 5 extracted.

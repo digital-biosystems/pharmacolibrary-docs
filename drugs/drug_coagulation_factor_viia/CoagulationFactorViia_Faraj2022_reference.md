@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Faraj A et al., Phase III dose selection of marzeptacog…, CPT: pharmacometrics & syst… (2022)
   ·  DOI: [10.1002/psp4.12872](https://doi.org/10.1002/psp4.12872)
 
-## Model component
-<dbs-pgx drug="coagulation factor VIIa" model-id="CoagulationFactorViia_Faraj2022_reference" status="rejected" stale="true" population="patients with hemophilia A or B with or without inhibitors" measured-compound="marzeptacog alfa (activated)" parameterization="apparent_wrt_Fm" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="coagulation factor VIIa" model-id="CoagulationFactorViia_Faraj2022_reference" status="rejected" stale="true" population="patients with hemophilia A or B with or without inhibitors" measured-compound="marzeptacog alfa (activated)" parameterization="apparent_wrt_Fm" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

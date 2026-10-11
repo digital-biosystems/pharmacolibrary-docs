@@ -28,8 +28,7 @@
 Foulds G; Stankewich JP; Marshall DC; O'Brien MM; Hayes SL; Weidler DJ; et al. et al. (1983). Antimicrobial agents and chemotherapy 23
   ·  DOI: [10.1128/AAC.23.5.692](https://doi.org/10.1128/AAC.23.5.692)
 
-## Model component
-<dbs-pgx drug="amoxicillin" model-id="Amoxicillin_Foulds1983_reference" status="needs_review" stale="true" population="" measured-compound="amoxicillin" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="amoxicillin" model-id="Amoxicillin_Foulds1983_reference" status="needs_review" stale="true" population="" measured-compound="amoxicillin" parameterization="mechanistic" topology="1C"></div>
 
 **Parameterization:** mechanistic.
 

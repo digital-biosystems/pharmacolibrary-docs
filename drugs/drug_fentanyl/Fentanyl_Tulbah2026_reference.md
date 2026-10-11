@@ -27,8 +27,7 @@
 Tulbah Y et al., Advances in pharmacokinetic-pharmacodyn…, Frontiers in pharmacology (2026)
   ·  DOI: [10.3389/fphar.2026.1741851](https://doi.org/10.3389/fphar.2026.1741851)
 
-## Model component
-<dbs-pgx drug="fentanyl" model-id="Fentanyl_Tulbah2026_reference" status="extracted" stale="true" population="" measured-compound="" parameterization="" topology=""></dbs-pgx>
+<div class="pk-model-meta" hidden drug="fentanyl" model-id="Fentanyl_Tulbah2026_reference" status="extracted" stale="true" population="" measured-compound="" parameterization="" topology=""></div>
 
 **Model structure:** —; no model was built for this record.  
 **Parameters:** 0 extracted.

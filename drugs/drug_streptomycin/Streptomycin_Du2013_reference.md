@@ -32,8 +32,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on how the
 Du B et al., Chemiluminescence determination of stre…, Spectrochimica acta. Part A… (2013)
   ·  DOI: [10.1016/j.saa.2013.07.007](https://doi.org/10.1016/j.saa.2013.07.007)
 
-## Model component
-<dbs-pgx drug="streptomycin" model-id="Streptomycin_Du2013_reference" status="needs_review" stale="true" population="rats" measured-compound="streptomycin" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="streptomycin" model-id="Streptomycin_Du2013_reference" status="needs_review" stale="true" population="rats" measured-compound="streptomycin" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 7 extracted.

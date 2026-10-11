@@ -25,8 +25,7 @@
 Leber B et al., Pharmacokinetics of immunosuppressive a…, Frontiers in medicine (2023)
   ·  DOI: [10.3389/fmed.2023.1258661](https://doi.org/10.3389/fmed.2023.1258661)
 
-## Model component
-<dbs-pgx drug="everolimus" model-id="Everolimus_Leber2023_reference" status="rejected" stale="false" population="healthy sheep" measured-compound="everolimus" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="everolimus" model-id="Everolimus_Leber2023_reference" status="rejected" stale="false" population="healthy sheep" measured-compound="everolimus" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

@@ -20,8 +20,7 @@
 ## Citation
 Tassonyi E et al., Pharmacokinetics of pipecurium bromide,…, Arzneimittel-Forschung (1981)
 
-## Model component
-<dbs-pgx drug="pipecuronium bromide" model-id="PipecuroniumBromide_Tassonyi1981_reference" status="needs_review" stale="false" population="surgical patients" measured-compound="pipecuronium_bromide" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="pipecuronium bromide" model-id="PipecuroniumBromide_Tassonyi1981_reference" status="needs_review" stale="false" population="surgical patients" measured-compound="pipecuronium_bromide" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 4 extracted.

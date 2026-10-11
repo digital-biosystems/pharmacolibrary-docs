@@ -23,8 +23,7 @@
 Chen X et al., Model Linking Plasma and Intracellular…, PloS one (2016)
   ·  DOI: [10.1371/journal.pone.0165505](https://doi.org/10.1371/journal.pone.0165505)
 
-## Model component
-<dbs-pgx drug="emtricitabine" model-id="Emtricitabine_Chen2016_reference" status="needs_review" stale="false" population="HIV-positive and HIV-negative subjects" measured-compound="emtricitabine" parameterization="apparent" topology="general_linear"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="emtricitabine" model-id="Emtricitabine_Chen2016_reference" status="needs_review" stale="false" population="HIV-positive and HIV-negative subjects" measured-compound="emtricitabine" parameterization="apparent" topology="general_linear"></div>
 
 **Model structure:** general linear; no model was built for this record.  
 **Parameters:** 8 extracted, plus 1 covariate effect.

@@ -29,8 +29,7 @@ Metamizole's elimination clearance and intercompartmental clearance (Q1) had no 
 Blaser LS et al., Comparative Effects of Metamizole (Dipy…, Frontiers in pharmacology (2021)
   ·  DOI: [10.3389/fphar.2021.620635](https://doi.org/10.3389/fphar.2021.620635)
 
-## Model component
-<dbs-pgx drug="Metamizole" model-id="Metamizole_Blaser2021_metamizole_n_8" status="" stale="true" population="salt-depleted healthy male volunteers" measured-compound="" parameterization="" topology=""></dbs-pgx>
+<div class="pk-model-meta" hidden drug="Metamizole" model-id="Metamizole_Blaser2021_metamizole_n_8" status="" stale="true" population="salt-depleted healthy male volunteers" measured-compound="" parameterization="" topology=""></div>
 
 **Model structure:** —; no model was built for this record.  
 **Parameters:** 0 extracted.

@@ -23,8 +23,7 @@
 Kloprogge F et al., Population pharmacokinetics of quinine…, The Journal of antimicrobia… (2014)
   ·  DOI: [10.1093/jac/dku228](https://doi.org/10.1093/jac/dku228)
 
-## Model component
-<dbs-pgx drug="quinine" model-id="Quinine_Kloprogge2014_reference" status="extracted" stale="false" population="pregnant women with uncomplicated falciparum malaria" measured-compound="quinine" parameterization="apparent" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="quinine" model-id="Quinine_Kloprogge2014_reference" status="extracted" stale="false" population="pregnant women with uncomplicated falciparum malaria" measured-compound="quinine" parameterization="apparent" topology="2C"></div>
 
 **Model structure:** 2-compartment, oral mammillary model — template `PK_2C_enteral`.  
 **Parameters:** 5 extracted.

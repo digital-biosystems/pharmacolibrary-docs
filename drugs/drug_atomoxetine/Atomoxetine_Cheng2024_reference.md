@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the val
 Cheng S et al., Population Pharmacokinetic Analysis of…, Clinical pharmacology and t… (2024)
   ·  DOI: [10.1002/cpt.3155](https://doi.org/10.1002/cpt.3155)
 
-## Model component
-<dbs-pgx drug="atomoxetine" model-id="Atomoxetine_Cheng2024_reference" status="needs_review" stale="true" population="children and adolescents with ADHD" measured-compound="atomoxetine" parameterization="apparent" topology="general_linear"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="atomoxetine" model-id="Atomoxetine_Cheng2024_reference" status="needs_review" stale="true" population="children and adolescents with ADHD" measured-compound="atomoxetine" parameterization="apparent" topology="general_linear"></div>
 
 **Model structure:** general linear; no model was built for this record.  
 **Parameters:** 4 extracted.

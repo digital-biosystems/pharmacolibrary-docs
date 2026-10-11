@@ -23,8 +23,7 @@
 Patel M et al., Population pharmacokinetic/pharmacodyna…, Clinical and translational… (2022)
   ·  DOI: [10.1111/cts.13158](https://doi.org/10.1111/cts.13158)
 
-## Model component
-<dbs-pgx drug="Relebactam" model-id="Relebactam_Patel2022_reference" status="rejected" stale="false" population="adults with hospital-acquired/ventilator-associated bacterial pneumonia" measured-compound="relebactam" parameterization="mechanistic" topology="general_linear"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="Relebactam" model-id="Relebactam_Patel2022_reference" status="rejected" stale="false" population="adults with hospital-acquired/ventilator-associated bacterial pneumonia" measured-compound="relebactam" parameterization="mechanistic" topology="general_linear"></div>
 
 **Model structure:** general linear; no model was built for this record.  
 **Parameters:** 4 extracted.

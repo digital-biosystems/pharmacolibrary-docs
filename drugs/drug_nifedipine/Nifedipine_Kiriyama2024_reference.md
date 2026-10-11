@@ -27,8 +27,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Kiriyama A et al., Exploring the multiple effects of nifed…, Pharmacology research & per… (2024)
   ·  DOI: [10.1002/prp2.1249](https://doi.org/10.1002/prp2.1249)
 
-## Model component
-<dbs-pgx drug="nifedipine" model-id="Nifedipine_Kiriyama2024_reference" status="rejected" stale="false" population="spontaneously hypertensive rats" measured-compound="nifedipine" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="nifedipine" model-id="Nifedipine_Kiriyama2024_reference" status="rejected" stale="false" population="spontaneously hypertensive rats" measured-compound="nifedipine" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 9 extracted.

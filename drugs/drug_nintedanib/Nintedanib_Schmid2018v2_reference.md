@@ -21,8 +21,7 @@
 Schmid U et al., Population pharmacokinetics of nintedan…, Cancer chemotherapy and pha… (2018)
   ·  DOI: [10.1007/s00280-017-3452-0](https://doi.org/10.1007/s00280-017-3452-0)
 
-## Model component
-<dbs-pgx drug="nintedanib" model-id="Nintedanib_Schmid2018v2_reference" status="extracted" stale="false" population="patients with NSCLC or IPF" measured-compound="nintedanib" parameterization="apparent" topology="parent_metabolite"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="nintedanib" model-id="Nintedanib_Schmid2018v2_reference" status="extracted" stale="false" population="patients with NSCLC or IPF" measured-compound="nintedanib" parameterization="apparent" topology="parent_metabolite"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 5 extracted.

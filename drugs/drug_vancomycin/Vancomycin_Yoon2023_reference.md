@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the val
 Yoon S et al., Model-informed precision dosing in vanc…, Frontiers in pharmacology (2023)
   ·  DOI: [10.3389/fphar.2023.1252757](https://doi.org/10.3389/fphar.2023.1252757)
 
-## Model component
-<dbs-pgx drug="vancomycin" model-id="Vancomycin_Yoon2023_reference" status="extracted" stale="true" population="patients with infections (including children)" measured-compound="vancomycin" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="vancomycin" model-id="Vancomycin_Yoon2023_reference" status="extracted" stale="true" population="patients with infections (including children)" measured-compound="vancomycin" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment, IV mammillary model — template `PK_2C`.  
 **Parameters:** 5 extracted.

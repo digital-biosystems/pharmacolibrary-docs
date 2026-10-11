@@ -20,8 +20,7 @@
 Samant TS et al., Ribociclib Bioavailability Is Not Affec…, Clinical pharmacology and t… (2018)
   ·  DOI: [10.1002/cpt.940](https://doi.org/10.1002/cpt.940)
 
-## Model component
-<dbs-pgx drug="ribociclib" model-id="Ribociclib_Samant2018_fasted_state" status="rejected" stale="false" population="patients with advanced breast cancer" measured-compound="ribociclib" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="ribociclib" model-id="Ribociclib_Samant2018_fasted_state" status="rejected" stale="false" population="patients with advanced breast cancer" measured-compound="ribociclib" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 4 extracted.

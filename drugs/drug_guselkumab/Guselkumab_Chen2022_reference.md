@@ -21,8 +21,7 @@
 Chen Y et al., Population pharmacokinetics and exposur…, Clinical and translational… (2022)
   ·  DOI: [10.1111/cts.13197](https://doi.org/10.1111/cts.13197)
 
-## Model component
-<dbs-pgx drug="guselkumab" model-id="Guselkumab_Chen2022_reference" status="extracted" stale="false" population="patients with psoriatic arthritis" measured-compound="guselkumab" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="guselkumab" model-id="Guselkumab_Chen2022_reference" status="extracted" stale="false" population="patients with psoriatic arthritis" measured-compound="guselkumab" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 2 extracted.

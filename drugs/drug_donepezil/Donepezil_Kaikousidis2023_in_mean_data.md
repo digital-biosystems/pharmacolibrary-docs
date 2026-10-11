@@ -23,8 +23,7 @@
 Kaikousidis C et al., Donepezil Brain and Blood Pharmacokinet…, Pharmaceutics (2023)
   ·  DOI: [10.3390/pharmaceutics15051409](https://doi.org/10.3390/pharmaceutics15051409)
 
-## Model component
-<dbs-pgx drug="donepezil" model-id="Donepezil_Kaikousidis2023_in_mean_data" status="rejected" stale="false" population="mice (brain and blood PK)" measured-compound="donepezil" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="donepezil" model-id="Donepezil_Kaikousidis2023_in_mean_data" status="rejected" stale="false" population="mice (brain and blood PK)" measured-compound="donepezil" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment; no model was built for this record.  
 **Parameters:** 10 extracted.

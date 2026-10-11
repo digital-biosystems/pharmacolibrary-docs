@@ -21,8 +21,7 @@
 Zaloumis S et al., Assessing the utility of an anti-malari…, Malaria journal (2012)
   ·  DOI: [10.1186/1475-2875-11-303](https://doi.org/10.1186/1475-2875-11-303)
 
-## Model component
-<dbs-pgx drug="artemether" model-id="Artemether_Zaloumis2012_reference" status="extracted" stale="false" population="simulated P. falciparum malaria patients" measured-compound="artemether" parameterization="apparent" topology="parent_metabolite"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="artemether" model-id="Artemether_Zaloumis2012_reference" status="extracted" stale="false" population="simulated P. falciparum malaria patients" measured-compound="artemether" parameterization="apparent" topology="parent_metabolite"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 5 extracted.

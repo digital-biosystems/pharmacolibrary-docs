@@ -32,8 +32,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the lin
 Kubota K et al., Dose-dependent pharmacokinetics of benz…, European journal of clinica… (1991)
   ·  DOI: [10.1007/BF00314969](https://doi.org/10.1007/BF00314969)
 
-## Model component
-<dbs-pgx drug="sodium benzoate" model-id="SodiumBenzoate_Kubota1991_reference" status="rejected" stale="true" population="healthy adults" measured-compound="benzoic acid" parameterization="mechanistic" topology="manual_model_class"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="sodium benzoate" model-id="SodiumBenzoate_Kubota1991_reference" status="rejected" stale="true" population="healthy adults" measured-compound="benzoic acid" parameterization="mechanistic" topology="manual_model_class"></div>
 
 **Model structure:** nonlinear / manual; no model was built for this record.  
 **Parameters:** 1 extracted.

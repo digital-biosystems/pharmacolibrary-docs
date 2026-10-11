@@ -24,8 +24,7 @@
 ## Citation
 Wójcicki J et al., Effect of unilateral nephrectomy in rab…, Polish journal of pharmacol… (1981)
 
-## Model component
-<dbs-pgx drug="potassium salicylate" model-id="PotassiumSalicylate_Wjcicki1981_reference" status="rejected" stale="false" population="rabbits 6 months after unilateral nephrectomy" measured-compound="salicylate" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="potassium salicylate" model-id="PotassiumSalicylate_Wjcicki1981_reference" status="rejected" stale="false" population="rabbits 6 months after unilateral nephrectomy" measured-compound="salicylate" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 6 extracted.

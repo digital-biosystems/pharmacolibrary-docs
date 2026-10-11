@@ -23,8 +23,7 @@
 Yang J et al., Population Pharmacokinetics and Exposur…, Clinical pharmacology and t… (2025)
   ·  DOI: [10.1002/cpt.3759](https://doi.org/10.1002/cpt.3759)
 
-## Model component
-<dbs-pgx drug="osimertinib" model-id="Osimertinib_Yang2025_reference" status="rejected" stale="false" population="patients with EGFR-mutated advanced NSCLC across six studies" measured-compound="osimertinib and AZ5104" parameterization="apparent" topology="parent_metabolite"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="osimertinib" model-id="Osimertinib_Yang2025_reference" status="rejected" stale="false" population="patients with EGFR-mutated advanced NSCLC across six studies" measured-compound="osimertinib and AZ5104" parameterization="apparent" topology="parent_metabolite"></div>
 
 **Model structure:** parent + metabolite; no model was built for this record.  
 **Parameters:** 8 extracted, plus 3 covariate effects.

@@ -20,8 +20,7 @@
 Pescovitz MD et al., Safety and pharmacokinetics of daclizum…, Pediatric transplantation (2008)
   ·  DOI: [10.1111/j.1399-3046.2007.00830.x](https://doi.org/10.1111/j.1399-3046.2007.00830.x)
 
-## Model component
-<dbs-pgx drug="daclizumab" model-id="Daclizumab_Pescovitz2008_reference" status="rejected" stale="false" population="pediatric renal transplant recipients" measured-compound="daclizumab" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="daclizumab" model-id="Daclizumab_Pescovitz2008_reference" status="rejected" stale="false" population="pediatric renal transplant recipients" measured-compound="daclizumab" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

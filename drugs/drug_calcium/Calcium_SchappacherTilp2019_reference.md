@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on paramet
 Schappacher-Tilp G et al., A Multi-Compartment Model Capturing the…, Cellular physiology and bio… (2019)
   ·  DOI: [10.33594/000000148](https://doi.org/10.33594/000000148)
 
-## Model component
-<dbs-pgx drug="Calcium" model-id="Calcium_SchappacherTilp2019_reference" status="extracted" stale="true" population="" measured-compound="calcium" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="Calcium" model-id="Calcium_SchappacherTilp2019_reference" status="extracted" stale="true" population="" measured-compound="calcium" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 2 extracted.

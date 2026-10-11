@@ -21,8 +21,7 @@
 Ouellet D et al., Population pharmacokinetics of pemetrex…, Cancer chemotherapy and pha… (2000)
   ·  DOI: [10.1007/s002800000144](https://doi.org/10.1007/s002800000144)
 
-## Model component
-<dbs-pgx drug="pemetrexed" model-id="Pemetrexed_Ouellet2000_reference" status="rejected" stale="false" population="cancer patients" measured-compound="pemetrexed disodium" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="pemetrexed" model-id="Pemetrexed_Ouellet2000_reference" status="rejected" stale="false" population="cancer patients" measured-compound="pemetrexed disodium" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment; no model was built for this record.  
 **Parameters:** 3 extracted.

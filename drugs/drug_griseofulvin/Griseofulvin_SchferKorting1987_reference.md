@@ -25,8 +25,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 ## Citation
 Schäfer-Korting M, Pharmacokinetics of griseofulvin in blo…, Drug metabolism and disposi… (1987)
 
-## Model component
-<dbs-pgx drug="griseofulvin" model-id="Griseofulvin_SchferKorting1987_reference" status="rejected" stale="false" population="rats" measured-compound="griseofulvin" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="griseofulvin" model-id="Griseofulvin_SchferKorting1987_reference" status="rejected" stale="false" population="rats" measured-compound="griseofulvin" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

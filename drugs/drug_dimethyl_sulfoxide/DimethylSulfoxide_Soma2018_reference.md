@@ -22,8 +22,7 @@
 Soma LR et al., Pharmacokinetics, disposition, and plas…, Journal of veterinary pharm… (2018)
   ·  DOI: [10.1111/jvp.12476](https://doi.org/10.1111/jvp.12476)
 
-## Model component
-<dbs-pgx drug="dimethyl sulfoxide" model-id="DimethylSulfoxide_Soma2018_reference" status="needs_review" stale="false" population="horses" measured-compound="dimethyl sulfoxide" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="dimethyl sulfoxide" model-id="DimethylSulfoxide_Soma2018_reference" status="needs_review" stale="false" population="horses" measured-compound="dimethyl sulfoxide" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 1 extracted.

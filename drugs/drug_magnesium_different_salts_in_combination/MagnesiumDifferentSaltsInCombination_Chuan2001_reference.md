@@ -33,8 +33,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Chuan FS et al., Population pharmacokinetics of magnesiu…, American journal of obstetr… (2001)
   ·  DOI: [10.1067/mob.2001.116726](https://doi.org/10.1067/mob.2001.116726)
 
-## Model component
-<dbs-pgx drug="magnesium (different salts in combination)" model-id="MagnesiumDifferentSaltsInCombination_Chuan2001_reference" status="extracted" stale="true" population="patients with preeclampsia" measured-compound="magnesium" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="magnesium (different salts in combination)" model-id="MagnesiumDifferentSaltsInCombination_Chuan2001_reference" status="extracted" stale="true" population="patients with preeclampsia" measured-compound="magnesium" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameters:** 4 extracted.

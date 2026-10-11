@@ -28,8 +28,7 @@ Without a unit the value cannot be converted, so the model cannot use it. Only t
 Lönnebo A et al., An integrated model for the effect of b…, British journal of clinical… (2007)
   ·  DOI: [10.1111/j.1365-2125.2007.02867.x](https://doi.org/10.1111/j.1365-2125.2007.02867.x)
 
-## Model component
-<dbs-pgx drug="budesonide" model-id="Budesonide_Lnnebo2007_reference" status="needs_review" stale="true" population="healthy volunteers" measured-compound="budesonide" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="budesonide" model-id="Budesonide_Lnnebo2007_reference" status="needs_review" stale="true" population="healthy volunteers" measured-compound="budesonide" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 3 extracted.

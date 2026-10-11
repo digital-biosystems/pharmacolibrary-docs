@@ -21,8 +21,7 @@
 Ostermann S et al., Plasma and cerebrospinal fluid populati…, Clinical cancer research :… (2004)
   ·  DOI: [10.1158/1078-0432.CCR-03-0807](https://doi.org/10.1158/1078-0432.CCR-03-0807)
 
-## Model component
-<dbs-pgx drug="temozolomide" model-id="Temozolomide_Ostermann2004_reference" status="rejected" stale="false" population="malignant glioma patients" measured-compound="temozolomide" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="temozolomide" model-id="Temozolomide_Ostermann2004_reference" status="rejected" stale="false" population="malignant glioma patients" measured-compound="temozolomide" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 8 extracted.

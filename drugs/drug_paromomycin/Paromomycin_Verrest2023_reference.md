@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Verrest L et al., Population pharmacokinetics of a combin…, The Journal of antimicrobia… (2023)
   ·  DOI: [10.1093/jac/dkad286](https://doi.org/10.1093/jac/dkad286)
 
-## Model component
-<dbs-pgx drug="paromomycin" model-id="Paromomycin_Verrest2023_reference" status="extracted" stale="true" population="children and adults with visceral leishmaniasis" measured-compound="paromomycin" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="paromomycin" model-id="Paromomycin_Verrest2023_reference" status="extracted" stale="true" population="children and adults with visceral leishmaniasis" measured-compound="paromomycin" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment, oral mammillary model — template `PK_2C_enteral`.  
 **Parameters:** 6 extracted, plus 1 covariate effect.

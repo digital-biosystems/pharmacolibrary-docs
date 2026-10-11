@@ -26,8 +26,7 @@
 Perez-Ruixo JJ et al., Population pharmacokinetic meta-analysi…, Clinical pharmacokinetics (2007)
   ·  DOI: [10.2165/00003088-200746100-00005](https://doi.org/10.2165/00003088-200746100-00005)
 
-## Model component
-<dbs-pgx drug="trabectedin" model-id="Trabectedin_PerezRuixo2007_reference" status="needs_review" stale="true" population="cancer patients" measured-compound="trabectedin" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="trabectedin" model-id="Trabectedin_PerezRuixo2007_reference" status="needs_review" stale="true" population="cancer patients" measured-compound="trabectedin" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 2 extracted.

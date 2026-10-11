@@ -28,8 +28,7 @@ The reported ka (0.0179 1/h) is flagged as invented: the source did not report a
 Wang Y et al., Pharmacokinetics, Pharmacodynamics, and…, Clinical and translational… (2020)
   ·  DOI: [10.1111/cts.12806](https://doi.org/10.1111/cts.12806)
 
-## Model component
-<dbs-pgx drug="lanadelumab" model-id="Lanadelumab_Wang2020_final" status="needs_review" stale="true" population="healthy subjects and patients with hereditary angioedema" measured-compound="lanadelumab" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="lanadelumab" model-id="Lanadelumab_Wang2020_final" status="needs_review" stale="true" population="healthy subjects and patients with hereditary angioedema" measured-compound="lanadelumab" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 10 extracted.

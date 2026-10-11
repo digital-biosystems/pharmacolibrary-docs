@@ -21,8 +21,7 @@
 Goulenok T et al., Pharmacokinetic interaction between rif…, International journal of an… (2023)
   ·  DOI: [10.1016/j.ijantimicag.2023.106885](https://doi.org/10.1016/j.ijantimicag.2023.106885)
 
-## Model component
-<dbs-pgx drug="clindamycin" model-id="Clindamycin_Goulenok2023_reference" status="rejected" stale="false" population="patients with staphylococcal osteoarticular infections" measured-compound="clindamycin" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="clindamycin" model-id="Clindamycin_Goulenok2023_reference" status="rejected" stale="false" population="patients with staphylococcal osteoarticular infections" measured-compound="clindamycin" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 1 extracted.

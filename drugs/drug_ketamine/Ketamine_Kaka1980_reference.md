@@ -23,8 +23,7 @@
 Kaka JS et al., Pharmacokinetics of ketamine and two me…, Journal of pharmacokinetics… (1980)
   ·  DOI: [10.1007/BF01065193](https://doi.org/10.1007/BF01065193)
 
-## Model component
-<dbs-pgx drug="ketamine" model-id="Ketamine_Kaka1980_reference" status="rejected" stale="false" population="dogs" measured-compound="ketamine" parameterization="mechanistic" topology="general_linear"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="ketamine" model-id="Ketamine_Kaka1980_reference" status="rejected" stale="false" population="dogs" measured-compound="ketamine" parameterization="mechanistic" topology="general_linear"></div>
 
 **Model structure:** general linear; no model was built for this record.  
 **Parameters:** 6 extracted.

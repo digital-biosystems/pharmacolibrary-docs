@@ -21,8 +21,7 @@
 Lakota EA et al., Population Pharmacokinetic Analyses for…, Antimicrobial agents and ch… (2018)
   ·  DOI: [10.1128/AAC.00784-18](https://doi.org/10.1128/AAC.00784-18)
 
-## Model component
-<dbs-pgx drug="ertapenem" model-id="Ertapenem_Lakota2018_reference" status="rejected" stale="false" population="healthy adults" measured-compound="ertapenem" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="ertapenem" model-id="Ertapenem_Lakota2018_reference" status="rejected" stale="false" population="healthy adults" measured-compound="ertapenem" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

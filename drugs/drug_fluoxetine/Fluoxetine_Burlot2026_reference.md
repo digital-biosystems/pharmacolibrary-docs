@@ -27,8 +27,7 @@
 Burlot C et al., PK and PK/PD Modeling of Bcl2 Inhibitor…, CPT: pharmacometrics & syst… (2026)
   ·  DOI: [10.1002/psp4.70288](https://doi.org/10.1002/psp4.70288)
 
-## Model component
-<dbs-pgx drug="fluoxetine" model-id="Fluoxetine_Burlot2026_reference" status="extracted" stale="true" population="" measured-compound="fluoxetine" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="fluoxetine" model-id="Fluoxetine_Burlot2026_reference" status="extracted" stale="true" population="" measured-compound="fluoxetine" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameters:** 2 extracted.

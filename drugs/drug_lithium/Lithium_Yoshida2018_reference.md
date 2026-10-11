@@ -21,8 +21,7 @@
 Yoshida K et al., Prediction Model of Serum Lithium Conce…, Pharmacopsychiatry (2018)
   ·  DOI: [10.1055/s-0043-116855](https://doi.org/10.1055/s-0043-116855)
 
-## Model component
-<dbs-pgx drug="lithium" model-id="Lithium_Yoshida2018_reference" status="needs_review" stale="false" population="adults receiving lithium" measured-compound="lithium" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="lithium" model-id="Lithium_Yoshida2018_reference" status="needs_review" stale="false" population="adults receiving lithium" measured-compound="lithium" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 3 extracted.

@@ -21,8 +21,7 @@
 Choe S et al., Parameter estimation for sigmoid E&lt;sub&gt;…, Translational and clinical… (2017)
   ·  DOI: [10.12793/tcp.2017.25.2.74](https://doi.org/10.12793/tcp.2017.25.2.74)
 
-## Model component
-<dbs-pgx drug="octreotide" model-id="Octreotide_Choe2017_reference" status="extracted" stale="false" population="" measured-compound="octreotide" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="octreotide" model-id="Octreotide_Choe2017_reference" status="extracted" stale="false" population="" measured-compound="octreotide" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 3 extracted.

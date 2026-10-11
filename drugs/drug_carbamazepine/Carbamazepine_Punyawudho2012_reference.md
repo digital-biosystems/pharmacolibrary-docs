@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Punyawudho B et al., Population pharmacokinetics of carbamaz…, Therapeutic drug monitoring (2012)
   ·  DOI: [10.1097/FTD.0b013e31824d6a4e](https://doi.org/10.1097/FTD.0b013e31824d6a4e)
 
-## Model component
-<dbs-pgx drug="carbamazepine" model-id="Carbamazepine_Punyawudho2012_reference" status="extracted" stale="true" population="elderly patients with epilepsy" measured-compound="carbamazepine" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="carbamazepine" model-id="Carbamazepine_Punyawudho2012_reference" status="extracted" stale="true" population="elderly patients with epilepsy" measured-compound="carbamazepine" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 3 extracted.

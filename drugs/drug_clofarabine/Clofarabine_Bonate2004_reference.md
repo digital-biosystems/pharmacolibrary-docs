@@ -21,8 +21,7 @@
 Bonate PL et al., Population pharmacokinetics of clofarab…, Journal of clinical pharmac… (2004)
   ·  DOI: [10.1177/0091270004269236](https://doi.org/10.1177/0091270004269236)
 
-## Model component
-<dbs-pgx drug="clofarabine" model-id="Clofarabine_Bonate2004_reference" status="rejected" stale="false" population="pediatric patients with acute leukemias" measured-compound="clofarabine" parameterization="mechanistic" topology="3C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="clofarabine" model-id="Clofarabine_Bonate2004_reference" status="rejected" stale="false" population="pediatric patients with acute leukemias" measured-compound="clofarabine" parameterization="mechanistic" topology="3C"></div>
 
 **Model structure:** 3-compartment; no model was built for this record.  
 **Parameters:** 6 extracted.

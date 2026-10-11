@@ -25,8 +25,7 @@
 Kim TH et al., Alterations in Pharmacokinetics of Gemc…, Molecules (Basel, Switzerla… (2017)
   ·  DOI: [10.3390/molecules22091515](https://doi.org/10.3390/molecules22091515)
 
-## Model component
-<dbs-pgx drug="gemcitabine" model-id="Gemcitabine_Kim2017_single_dose" status="rejected" stale="false" population="rats" measured-compound="erlotinib, OSI-420, OSI-413" parameterization="apparent" topology="general_linear"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="gemcitabine" model-id="Gemcitabine_Kim2017_single_dose" status="rejected" stale="false" population="rats" measured-compound="erlotinib, OSI-420, OSI-413" parameterization="apparent" topology="general_linear"></div>
 
 **Model structure:** general linear; no model was built for this record.  
 **Parameters:** 10 extracted.

@@ -29,8 +29,7 @@ The model was built, but pemetrexed's volume of distribution had no value, so a 
 de Rouw N et al., Hyperhydration with cisplatin does not…, British journal of clinical… (2022)
   ·  DOI: [10.1111/bcp.15031](https://doi.org/10.1111/bcp.15031)
 
-## Model component
-<dbs-pgx drug="pemetrexed" model-id="Pemetrexed_de2022_reference" status="rejected" stale="true" population="adults with lung cancer" measured-compound="pemetrexed" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="pemetrexed" model-id="Pemetrexed_de2022_reference" status="rejected" stale="true" population="adults with lung cancer" measured-compound="pemetrexed" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

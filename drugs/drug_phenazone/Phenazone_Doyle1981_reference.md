@@ -32,8 +32,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Doyle E et al., Comparative pharmacokinetics of antipyr…, Toxicology (1981)
   ·  DOI: [10.1016/0300-483x(81)90097-4](https://doi.org/10.1016/0300-483x(81)90097-4)
 
-## Model component
-<dbs-pgx drug="phenazone" model-id="Phenazone_Doyle1981_reference" status="rejected" stale="true" population="non-human primates" measured-compound="phenazone" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="phenazone" model-id="Phenazone_Doyle1981_reference" status="rejected" stale="true" population="non-human primates" measured-compound="phenazone" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

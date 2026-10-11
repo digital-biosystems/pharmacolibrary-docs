@@ -21,8 +21,7 @@
 Edwina AE et al., Population plasma and urine pharmacokin…, European journal of clinica… (2023)
   ·  DOI: [10.1007/s00228-023-03477-5](https://doi.org/10.1007/s00228-023-03477-5)
 
-## Model component
-<dbs-pgx drug="cefixime" model-id="Cefixime_Edwina2023_reference" status="extracted" stale="false" population="" measured-compound="cefixime" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="cefixime" model-id="Cefixime_Edwina2023_reference" status="extracted" stale="false" population="" measured-compound="cefixime" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment, IV mammillary model — template `PK_2C`.  
 **Parameters:** 4 extracted.

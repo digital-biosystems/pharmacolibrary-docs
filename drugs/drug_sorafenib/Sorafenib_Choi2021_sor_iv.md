@@ -25,8 +25,7 @@
 Choi YH et al., A Novel Integrated Pharmacokinetic-Phar…, The Journal of pharmacology… (2021)
   ·  DOI: [10.1124/jpet.121.000584](https://doi.org/10.1124/jpet.121.000584)
 
-## Model component
-<dbs-pgx drug="sorafenib" model-id="Sorafenib_Choi2021_sor_iv" status="rejected" stale="false" population="female mice bearing orthotopic human osteosarcoma xenografts" measured-compound="sorafenib" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="sorafenib" model-id="Sorafenib_Choi2021_sor_iv" status="rejected" stale="false" population="female mice bearing orthotopic human osteosarcoma xenografts" measured-compound="sorafenib" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

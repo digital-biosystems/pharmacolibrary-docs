@@ -20,8 +20,7 @@
 Brunner HI et al., Pharmacokinetics, Pharmacodynamics, and…, Arthritis care & research (2026)
   ·  DOI: [10.1002/acr.25700](https://doi.org/10.1002/acr.25700)
 
-## Model component
-<dbs-pgx drug="belimumab" model-id="Belimumab_Brunner2025_reference" status="rejected" stale="false" population="pediatric patients with systemic lupus erythematosus" measured-compound="belimumab" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="belimumab" model-id="Belimumab_Brunner2025_reference" status="rejected" stale="false" population="pediatric patients with systemic lupus erythematosus" measured-compound="belimumab" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

@@ -32,8 +32,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 ## Citation
 Shah J et al., Pharmacokinetics of codeine after paren…, Drug metabolism and disposi… (1990)
 
-## Model component
-<dbs-pgx drug="codeine" model-id="Codeine_Shah1990_reference" status="rejected" stale="true" population="male Sprague-Dawley rats" measured-compound="codeine" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="codeine" model-id="Codeine_Shah1990_reference" status="rejected" stale="true" population="male Sprague-Dawley rats" measured-compound="codeine" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 5 extracted.

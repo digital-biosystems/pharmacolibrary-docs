@@ -21,8 +21,7 @@
 Panetta JC et al., Population pharmacokinetics of temozolo…, Cancer chemotherapy and pha… (2003)
   ·  DOI: [10.1007/s00280-003-0670-4](https://doi.org/10.1007/s00280-003-0670-4)
 
-## Model component
-<dbs-pgx drug="temozolomide" model-id="Temozolomide_Panetta2003_reference" status="extracted" stale="false" population="infants and children with primary central nervous system tumors" measured-compound="temozolomide" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="temozolomide" model-id="Temozolomide_Panetta2003_reference" status="extracted" stale="false" population="infants and children with primary central nervous system tumors" measured-compound="temozolomide" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 4 extracted.

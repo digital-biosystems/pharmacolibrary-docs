@@ -21,8 +21,7 @@
 Valentin T et al., Population pharmacokinetic analysis rev…, European journal of pharmac… (2023)
   ·  DOI: [10.1016/j.ejps.2023.106420](https://doi.org/10.1016/j.ejps.2023.106420)
 
-## Model component
-<dbs-pgx drug="ifosfamide" model-id="Ifosfamide_Valentin2023_reference" status="extracted" stale="false" population="adults with soft tissue sarcomas" measured-compound="ifosfamide" parameterization="mechanistic" topology="general_linear"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="ifosfamide" model-id="Ifosfamide_Valentin2023_reference" status="extracted" stale="false" population="adults with soft tissue sarcomas" measured-compound="ifosfamide" parameterization="mechanistic" topology="general_linear"></div>
 
 **Model structure:** 1-compartment general linear model (non-mammillary edges) — template `PK_General_Linear`.  
 **Parameters:** 6 extracted.

@@ -31,8 +31,7 @@ The base model was simulated, not the covariate effects the record defines.
 Stillemans G et al., Exploration of Reduced Doses and Short-…, Clinical pharmacokinetics (2021)
   ·  DOI: [10.1007/s40262-020-00920-z](https://doi.org/10.1007/s40262-020-00920-z)
 
-## Model component
-<dbs-pgx drug="darunavir" model-id="Darunavir_Stillemans2021_reference" status="extracted" stale="true" population="adults with HIV-1 infection" measured-compound="darunavir" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="darunavir" model-id="Darunavir_Stillemans2021_reference" status="extracted" stale="true" population="adults with HIV-1 infection" measured-compound="darunavir" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 3 extracted, plus 1 covariate effect.

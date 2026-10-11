@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on bioavai
 Strauss WL et al., Characterization of human brain pharmac…, Biological psychiatry (1999)
   ·  DOI: [10.1016/s0006-3223(98)00324-2](https://doi.org/10.1016/s0006-3223(98)00324-2)
 
-## Model component
-<dbs-pgx drug="fluvoxamine" model-id="Fluvoxamine_Strauss1999_reference" status="extracted" stale="true" population="adults (human brain 19F MRS data)" measured-compound="fluvoxamine" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="fluvoxamine" model-id="Fluvoxamine_Strauss1999_reference" status="extracted" stale="true" population="adults (human brain 19F MRS data)" measured-compound="fluvoxamine" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 4 extracted.

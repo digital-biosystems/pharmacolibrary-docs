@@ -30,8 +30,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 ## Citation
 Kamel RS et al., Pharmacokinetics of small doses of meth…, Acta dermato-venereologica (1988)
 
-## Model component
-<dbs-pgx drug="methotrexate" model-id="Methotrexate_Kamel1988_reference" status="needs_review" stale="true" population="patients with chronic plaque psoriasis" measured-compound="methotrexate" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="methotrexate" model-id="Methotrexate_Kamel1988_reference" status="needs_review" stale="true" population="patients with chronic plaque psoriasis" measured-compound="methotrexate" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 6 extracted.

@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on paramet
 Ferguson-Sells L et al., Population Pharmacokinetics of Tadalafi…, Clinical pharmacokinetics (2022)
   ·  DOI: [10.1007/s40262-021-01052-8](https://doi.org/10.1007/s40262-021-01052-8)
 
-## Model component
-<dbs-pgx drug="bosentan" model-id="Bosentan_FergusonSells2022_reference" status="extracted" stale="true" population="" measured-compound="bosentan" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="bosentan" model-id="Bosentan_FergusonSells2022_reference" status="extracted" stale="true" population="" measured-compound="bosentan" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 2 extracted.

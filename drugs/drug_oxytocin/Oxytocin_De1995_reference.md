@@ -21,8 +21,7 @@
 De Groot AN et al., Bioavailability and pharmacokinetics of…, The Journal of pharmacy and… (1995)
   ·  DOI: [10.1111/j.2042-7158.1995.tb06716.x](https://doi.org/10.1111/j.2042-7158.1995.tb06716.x)
 
-## Model component
-<dbs-pgx drug="oxytocin" model-id="Oxytocin_De1995_reference" status="extracted" stale="false" population="male volunteers" measured-compound="oxytocin" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="oxytocin" model-id="Oxytocin_De1995_reference" status="extracted" stale="false" population="male volunteers" measured-compound="oxytocin" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameters:** 6 extracted.

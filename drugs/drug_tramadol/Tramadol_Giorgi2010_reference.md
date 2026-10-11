@@ -33,8 +33,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Giorgi M et al., Pharmacokinetics of tramadol and metabo…, Polish journal of veterinar… (2010)
   ·  DOI: [10.2478/v10181-010-0027-y](https://doi.org/10.2478/v10181-010-0027-y)
 
-## Model component
-<dbs-pgx drug="tramadol" model-id="Tramadol_Giorgi2010_reference" status="needs_review" stale="true" population="healthy male beagle dogs" measured-compound="tramadol" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="tramadol" model-id="Tramadol_Giorgi2010_reference" status="needs_review" stale="true" population="healthy male beagle dogs" measured-compound="tramadol" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment; no model was built for this record.  
 **Parameters:** 15 extracted.

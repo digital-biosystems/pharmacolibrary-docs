@@ -12,8 +12,7 @@
 Mak WY; Ooi QX; Cruz CV; Looi I; Yuen KH; Standing JF et al. (2023). British journal of clinical pharmacology 89
   ·  DOI: [10.1111/bcp.15496](https://doi.org/10.1111/bcp.15496)
 
-## Model component
-<dbs-pgx drug="metformin" model-id="Metformin_Mak2023_saem_estimates" status="extracted" stale="false" population="healthy adults" measured-compound="metformin" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="metformin" model-id="Metformin_Mak2023_saem_estimates" status="extracted" stale="false" population="healthy adults" measured-compound="metformin" parameterization="mechanistic" topology="1C"></div>
 
 **Parameterization:** mechanistic.
 

@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Buck ML et al., Pharmacokinetics and pharmacodynamics o…, Clinical pharmacology and t… (1989)
   ·  DOI: [10.1038/clpt.1989.198](https://doi.org/10.1038/clpt.1989.198)
 
-## Model component
-<dbs-pgx drug="s-atenolol" model-id="SAtenolol_Buck1989_reference" status="extracted" stale="true" population="children" measured-compound="atenolol" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="s-atenolol" model-id="SAtenolol_Buck1989_reference" status="extracted" stale="true" population="children" measured-compound="atenolol" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameters:** 5 extracted.

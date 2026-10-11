@@ -21,8 +21,7 @@
 Tanigawara Y et al., Population pharmacokinetics and pharmac…, Journal of infection and ch… (2013)
   ·  DOI: [10.1007/s10156-013-0580-2](https://doi.org/10.1007/s10156-013-0580-2)
 
-## Model component
-<dbs-pgx drug="sitafloxacin" model-id="Sitafloxacin_Tanigawara2013_reference" status="needs_review" stale="false" population="patients with community-acquired respiratory tract infections" measured-compound="sitafloxacin" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="sitafloxacin" model-id="Sitafloxacin_Tanigawara2013_reference" status="needs_review" stale="false" population="patients with community-acquired respiratory tract infections" measured-compound="sitafloxacin" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 2 extracted.

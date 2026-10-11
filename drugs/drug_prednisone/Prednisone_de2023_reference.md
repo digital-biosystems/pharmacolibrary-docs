@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the val
 de Truchis C et al., Prednisolone pharmacokinetics after ora…, British journal of clinical… (2023)
   ·  DOI: [10.1111/bcp.15610](https://doi.org/10.1111/bcp.15610)
 
-## Model component
-<dbs-pgx drug="prednisone" model-id="Prednisone_de2023_reference" status="rejected" stale="false" population="paediatric kidney transplant recipients" measured-compound="prednisolone" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="prednisone" model-id="Prednisone_de2023_reference" status="rejected" stale="false" population="paediatric kidney transplant recipients" measured-compound="prednisolone" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 2 extracted.

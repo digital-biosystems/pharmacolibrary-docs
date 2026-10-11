@@ -21,8 +21,7 @@
 Fediuk DJ et al., Population pharmacokinetics and exposur…, CPT: pharmacometrics & syst… (2021)
   ·  DOI: [10.1002/psp4.12645](https://doi.org/10.1002/psp4.12645)
 
-## Model component
-<dbs-pgx drug="varenicline" model-id="Varenicline_Fediuk2021_reference" status="extracted" stale="false" population="adolescent smokers" measured-compound="varenicline" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="varenicline" model-id="Varenicline_Fediuk2021_reference" status="extracted" stale="false" population="adolescent smokers" measured-compound="varenicline" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 3 extracted.

@@ -20,8 +20,7 @@
 Royston L et al., Population pharmacokinetic analysis of…, Antimicrobial agents and ch… (2025)
   ·  DOI: [10.1128/aac.00697-25](https://doi.org/10.1128/aac.00697-25)
 
-## Model component
-<dbs-pgx drug="letermovir" model-id="Letermovir_Royston2025_reference" status="rejected" stale="false" population="adult allogeneic hematopoietic cell transplant recipients" measured-compound="letermovir" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="letermovir" model-id="Letermovir_Royston2025_reference" status="rejected" stale="false" population="adult allogeneic hematopoietic cell transplant recipients" measured-compound="letermovir" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

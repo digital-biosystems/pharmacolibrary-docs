@@ -27,8 +27,7 @@
 Wang K et al., Population Pharmacokinetic Analysis of…, Clinical pharmacokinetics (2023)
   ·  DOI: [10.1007/s40262-023-01286-8](https://doi.org/10.1007/s40262-023-01286-8)
 
-## Model component
-<dbs-pgx drug="dorzagliatin" model-id="Dorzagliatin_Wang2023_reference" status="extracted" stale="true" population="healthy subjects and patients with type 2 diabetes mellitus" measured-compound="dorzagliatin" parameterization="apparent" topology="3C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="dorzagliatin" model-id="Dorzagliatin_Wang2023_reference" status="extracted" stale="true" population="healthy subjects and patients with type 2 diabetes mellitus" measured-compound="dorzagliatin" parameterization="apparent" topology="3C"></div>
 
 **Model structure:** 3-compartment, oral mammillary model — template `PK_3C_enteral`.  
 **Parameters:** 8 extracted.

@@ -28,8 +28,7 @@ The record describes a two-compartment structure for valganciclovir with a centr
 Märtson AG et al., Therapeutic Drug Monitoring of Ganciclo…, Therapeutic drug monitoring (2022)
   ·  DOI: [10.1097/FTD.0000000000000925](https://doi.org/10.1097/FTD.0000000000000925)
 
-## Model component
-<dbs-pgx drug="valganciclovir" model-id="Valganciclovir_Mrtson2022_reference" status="rejected" stale="true" population="unknown" measured-compound="valganciclovir" parameterization="apparent" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="valganciclovir" model-id="Valganciclovir_Mrtson2022_reference" status="rejected" stale="true" population="unknown" measured-compound="valganciclovir" parameterization="apparent" topology="2C"></div>
 
 **Model structure:** 2-compartment; no model was built for this record.  
 **Parameters:** 5 extracted.

@@ -23,8 +23,7 @@
 ## Citation
 Morin JP et al., [Comparative pharmacokinetics and renal…, Pathologie-biologie (1987)
 
-## Model component
-<dbs-pgx drug="ioxitalamic acid" model-id="IoxitalamicAcid_Morin1987_reference" status="rejected" stale="false" population="male and female rabbits" measured-compound="ioxitalamic acid, ioxaglic acid, iohexol" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="ioxitalamic acid" model-id="IoxitalamicAcid_Morin1987_reference" status="rejected" stale="false" population="male and female rabbits" measured-compound="ioxitalamic acid, ioxaglic acid, iohexol" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

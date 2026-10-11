@@ -19,8 +19,7 @@
 ## Citation
 Kees F et al., Pharmacokinetics of ciprofloxacin in el…, Arzneimittel-Forschung (1989)
 
-## Model component
-<dbs-pgx drug="ioxitalamic acid" model-id="IoxitalamicAcid_Kees1989_reference" status="needs_review" stale="false" population="" measured-compound="ioxitalamic_acid" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="ioxitalamic acid" model-id="IoxitalamicAcid_Kees1989_reference" status="needs_review" stale="false" population="" measured-compound="ioxitalamic_acid" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 2 extracted.

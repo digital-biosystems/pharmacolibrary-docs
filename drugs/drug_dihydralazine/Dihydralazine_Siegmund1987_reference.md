@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the val
 ## Citation
 Siegmund W et al., [Pharmacokinetics of dihydralazine foll…, Die Pharmazie (1987)
 
-## Model component
-<dbs-pgx drug="dihydralazine" model-id="Dihydralazine_Siegmund1987_reference" status="rejected" stale="true" population="laboratory animals (rats, rabbits, dogs)" measured-compound="dihydralazine" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="dihydralazine" model-id="Dihydralazine_Siegmund1987_reference" status="rejected" stale="true" population="laboratory animals (rats, rabbits, dogs)" measured-compound="dihydralazine" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

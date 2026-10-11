@@ -23,8 +23,7 @@
 Lebel L et al., A pharmacokinetic model of intravenousl…, Pharmaceutical research (1989)
   ·  DOI: [10.1023/a:1015982204926](https://doi.org/10.1023/a:1015982204926)
 
-## Model component
-<dbs-pgx drug="hyaluronic acid" model-id="HyaluronicAcid_Lebel1989_reference" status="rejected" stale="false" population="conscious sheep" measured-compound="hyaluronic_acid" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="hyaluronic acid" model-id="HyaluronicAcid_Lebel1989_reference" status="rejected" stale="false" population="conscious sheep" measured-compound="hyaluronic_acid" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 3 extracted.

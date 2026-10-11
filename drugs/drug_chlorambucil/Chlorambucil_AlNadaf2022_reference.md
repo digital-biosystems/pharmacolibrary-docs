@@ -30,8 +30,7 @@ Nothing in the extracted data describes the drug's disposition, so there is no m
 Al-Nadaf S et al., Population pharmacokinetics identifies…, American journal of veterin… (2022)
   ·  DOI: [10.2460/ajvr.22.06.0099](https://doi.org/10.2460/ajvr.22.06.0099)
 
-## Model component
-<dbs-pgx drug="chlorambucil" model-id="Chlorambucil_AlNadaf2022_reference" status="rejected" stale="true" population="cats with indolent lymphoproliferative malignancies" measured-compound="chlorambucil" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="chlorambucil" model-id="Chlorambucil_AlNadaf2022_reference" status="rejected" stale="true" population="cats with indolent lymphoproliferative malignancies" measured-compound="chlorambucil" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 2 extracted.

@@ -21,8 +21,7 @@
 Swart EL et al., Population pharmacokinetics of lorazepa…, American journal of kidney… (2005)
   ·  DOI: [10.1053/j.ajkd.2004.09.004](https://doi.org/10.1053/j.ajkd.2004.09.004)
 
-## Model component
-<dbs-pgx drug="lorazepam" model-id="Lorazepam_Swart2005_reference" status="rejected" stale="false" population="critically ill adults with acute renal failure on CVVH" measured-compound="lorazepam" parameterization="mechanistic" topology="general_linear"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="lorazepam" model-id="Lorazepam_Swart2005_reference" status="rejected" stale="false" population="critically ill adults with acute renal failure on CVVH" measured-compound="lorazepam" parameterization="mechanistic" topology="general_linear"></div>
 
 **Model structure:** general linear; no model was built for this record.  
 **Parameters:** 8 extracted.

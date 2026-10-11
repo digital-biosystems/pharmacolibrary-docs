@@ -20,8 +20,7 @@
 Marchbanks CR et al., Pharmacokinetics and bioavailability of…, Antimicrobial agents and ch… (1990)
   ·  DOI: [10.1128/AAC.34.10.1966](https://doi.org/10.1128/AAC.34.10.1966)
 
-## Model component
-<dbs-pgx drug="enoxacin" model-id="Enoxacin_Marchbanks1990_reference" status="needs_review" stale="false" population="elderly patients with complicated urinary tract infections" measured-compound="enoxacin" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="enoxacin" model-id="Enoxacin_Marchbanks1990_reference" status="needs_review" stale="false" population="elderly patients with complicated urinary tract infections" measured-compound="enoxacin" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 2 extracted.

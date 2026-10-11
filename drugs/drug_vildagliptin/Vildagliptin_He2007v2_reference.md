@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 He YL et al., The absolute oral bioavailability and p…, Clinical pharmacokinetics (2007)
   ·  DOI: [10.2165/00003088-200746090-00006](https://doi.org/10.2165/00003088-200746090-00006)
 
-## Model component
-<dbs-pgx drug="vildagliptin" model-id="Vildagliptin_He2007v2_reference" status="needs_review" stale="true" population="healthy volunteers" measured-compound="vildagliptin" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="vildagliptin" model-id="Vildagliptin_He2007v2_reference" status="needs_review" stale="true" population="healthy volunteers" measured-compound="vildagliptin" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 4 extracted.

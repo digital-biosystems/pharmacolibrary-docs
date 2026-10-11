@@ -33,8 +33,7 @@ Independently confirmed by `gpt-oss:120b`.
 Onos KD et al., Pharmacokinetic, pharmacodynamic, and t…, Alzheimer's & dementia (New… (2022)
   ·  DOI: [10.1002/trc2.12329](https://doi.org/10.1002/trc2.12329)
 
-## Model component
-<dbs-pgx drug="levetiracetam" model-id="Levetiracetam_Onos2022_reference" status="extracted" stale="true" population="5XFAD mice" measured-compound="" parameterization="" topology=""></dbs-pgx>
+<div class="pk-model-meta" hidden drug="levetiracetam" model-id="Levetiracetam_Onos2022_reference" status="extracted" stale="true" population="5XFAD mice" measured-compound="" parameterization="" topology=""></div>
 
 **Model structure:** —; no model was built for this record.  
 **Parameters:** 0 extracted.

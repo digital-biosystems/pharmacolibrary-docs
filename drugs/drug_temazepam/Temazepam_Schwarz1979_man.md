@@ -21,8 +21,7 @@
 Schwarz HJ, Pharmacokinetics and metabolism of tema…, British journal of clinical… (1979)
   ·  DOI: [10.1111/j.1365-2125.1979.tb00451.x](https://doi.org/10.1111/j.1365-2125.1979.tb00451.x)
 
-## Model component
-<dbs-pgx drug="temazepam" model-id="Temazepam_Schwarz1979_man" status="rejected" stale="false" population="healthy adults" measured-compound="temazepam" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="temazepam" model-id="Temazepam_Schwarz1979_man" status="rejected" stale="false" population="healthy adults" measured-compound="temazepam" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 3 extracted.

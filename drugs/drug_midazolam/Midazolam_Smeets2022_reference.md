@@ -29,8 +29,7 @@ Independently confirmed by `gpt-oss:120b`.
 Smeets TJL et al., Hyperinflammation Reduces Midazolam Met…, Clinical pharmacokinetics (2022)
   ·  DOI: [10.1007/s40262-022-01122-5](https://doi.org/10.1007/s40262-022-01122-5)
 
-## Model component
-<dbs-pgx drug="midazolam" model-id="Midazolam_Smeets2022_reference" status="rejected" stale="false" population="critically ill adults with COVID-19" measured-compound="midazolam" parameterization="apparent_wrt_Fm" topology="general_linear"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="midazolam" model-id="Midazolam_Smeets2022_reference" status="rejected" stale="false" population="critically ill adults with COVID-19" measured-compound="midazolam" parameterization="apparent_wrt_Fm" topology="general_linear"></div>
 
 **Model structure:** general linear; no model was built for this record.  
 **Parameters:** 0 extracted.

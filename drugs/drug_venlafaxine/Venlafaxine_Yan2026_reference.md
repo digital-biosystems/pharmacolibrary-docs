@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the val
 Yan H et al., Optimizing Mirtazapine Initial Dosing:…, Drug design, development an… (2026)
   ·  DOI: [10.2147/dddt.s601238](https://doi.org/10.2147/dddt.s601238)
 
-## Model component
-<dbs-pgx drug="venlafaxine" model-id="Venlafaxine_Yan2026_reference" status="extracted" stale="true" population="" measured-compound="venlafaxine" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="venlafaxine" model-id="Venlafaxine_Yan2026_reference" status="extracted" stale="true" population="" measured-compound="venlafaxine" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 2 extracted.

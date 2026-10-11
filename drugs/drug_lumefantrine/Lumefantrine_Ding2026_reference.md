@@ -23,8 +23,7 @@
 Ding J et al., Population pharmacokinetics of artemeth…, British journal of clinical… (2026)
   ·  DOI: [10.1002/bcp.70301](https://doi.org/10.1002/bcp.70301)
 
-## Model component
-<dbs-pgx drug="Lumefantrine" model-id="Lumefantrine_Ding2026_reference" status="extracted" stale="false" population="patients with uncomplicated Plasmodium falciparum malaria" measured-compound="lumefantrine" parameterization="apparent" topology="general_linear"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="Lumefantrine" model-id="Lumefantrine_Ding2026_reference" status="extracted" stale="false" population="patients with uncomplicated Plasmodium falciparum malaria" measured-compound="lumefantrine" parameterization="apparent" topology="general_linear"></div>
 
 **Model structure:** 2-compartment general linear model (non-mammillary edges) — template `PK_General_Linear`.  
 **Parameters:** 25 extracted.

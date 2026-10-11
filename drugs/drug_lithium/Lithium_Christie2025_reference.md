@@ -23,8 +23,7 @@
 Christie JT et al., Pharmacokinetics and Bioavailability of…, Journal of veterinary pharm… (2025)
   ·  DOI: [10.1111/jvp.13507](https://doi.org/10.1111/jvp.13507)
 
-## Model component
-<dbs-pgx drug="lithium" model-id="Lithium_Christie2025_reference" status="extracted" stale="false" population="" measured-compound="lithium" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="lithium" model-id="Lithium_Christie2025_reference" status="extracted" stale="false" population="" measured-compound="lithium" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment, oral mammillary model — template `PK_2C_enteral`.  
 **Parameters:** 5 extracted.

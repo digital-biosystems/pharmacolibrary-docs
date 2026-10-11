@@ -31,8 +31,7 @@ The paper reports kabs = 2.38 1/h for voxelotor, yet the model builder substitut
 Savic RM et al., Model-informed drug development of voxe…, CPT: pharmacometrics & syst… (2022)
   ·  DOI: [10.1002/psp4.12731](https://doi.org/10.1002/psp4.12731)
 
-## Model component
-<dbs-pgx drug="voxelotor" model-id="Voxelotor_Savic2022_reference" status="extracted" stale="true" population="adults and adolescents with sickle cell disease" measured-compound="voxelotor" parameterization="apparent" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="voxelotor" model-id="Voxelotor_Savic2022_reference" status="extracted" stale="true" population="adults and adolescents with sickle cell disease" measured-compound="voxelotor" parameterization="apparent" topology="2C"></div>
 
 **Model structure:** 2-compartment, oral mammillary model — template `PK_2C_enteral`.  
 **Parameters:** 6 extracted, plus 1 covariate effect.

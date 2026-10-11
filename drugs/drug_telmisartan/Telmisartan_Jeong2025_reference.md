@@ -33,8 +33,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Jeong IH et al., Population Pharmacokinetics of Telmisar…, Clinical pharmacokinetics (2025)
   ·  DOI: [10.1007/s40262-024-01471-3](https://doi.org/10.1007/s40262-024-01471-3)
 
-## Model component
-<dbs-pgx drug="telmisartan" model-id="Telmisartan_Jeong2025_reference" status="extracted" stale="true" population="healthy subjects and hypertensive patients" measured-compound="telmisartan" parameterization="apparent" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="telmisartan" model-id="Telmisartan_Jeong2025_reference" status="extracted" stale="true" population="healthy subjects and hypertensive patients" measured-compound="telmisartan" parameterization="apparent" topology="2C"></div>
 
 **Model structure:** 2-compartment, oral mammillary model — template `PK_2C_enteral`.  
 **Parameters:** 6 extracted.

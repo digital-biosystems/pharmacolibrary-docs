@@ -29,8 +29,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Dowd NP et al., Pharmacokinetics of tranexamic acid dur…, Anesthesiology (2002)
   ·  DOI: [10.1097/00000542-200208000-00016](https://doi.org/10.1097/00000542-200208000-00016)
 
-## Model component
-<dbs-pgx drug="tranexamic acid" model-id="TranexamicAcid_Dowd2002_reference" status="rejected" stale="false" population="adult patients undergoing cardiac surgery" measured-compound="tranexamic acid" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="tranexamic acid" model-id="TranexamicAcid_Dowd2002_reference" status="rejected" stale="false" population="adult patients undergoing cardiac surgery" measured-compound="tranexamic acid" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

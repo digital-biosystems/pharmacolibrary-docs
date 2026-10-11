@@ -33,8 +33,7 @@ Independently confirmed by `gpt-oss:120b`.
 Ekstrand C et al., Plasma atropine concentrations associat…, Frontiers in veterinary sci… (2022)
   ·  DOI: [10.3389/fvets.2022.951300](https://doi.org/10.3389/fvets.2022.951300)
 
-## Model component
-<dbs-pgx drug="atropine" model-id="Atropine_Ekstrand2022_reference" status="rejected" stale="true" population="standardbred horses" measured-compound="atropine" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="atropine" model-id="Atropine_Ekstrand2022_reference" status="rejected" stale="true" population="standardbred horses" measured-compound="atropine" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

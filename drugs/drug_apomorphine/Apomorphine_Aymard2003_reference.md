@@ -20,8 +20,7 @@
 Aymard G et al., Pharmacokinetic-pharmacodynamic study o…, Fundamental & clinical phar… (2003)
   ·  DOI: [10.1046/j.1472-8206.2003.00152.x](https://doi.org/10.1046/j.1472-8206.2003.00152.x)
 
-## Model component
-<dbs-pgx drug="apomorphine" model-id="Apomorphine_Aymard2003_reference" status="rejected" stale="false" population="healthy subjects" measured-compound="apomorphine" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="apomorphine" model-id="Apomorphine_Aymard2003_reference" status="rejected" stale="false" population="healthy subjects" measured-compound="apomorphine" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

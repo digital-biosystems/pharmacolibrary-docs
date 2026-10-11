@@ -27,8 +27,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 ## Citation
 de Boer A et al., Pharmacokinetics of saruplase, a recomb…, Thrombosis and haemostasis (1993)
 
-## Model component
-<dbs-pgx drug="saruplase" model-id="Saruplase_de1993_reference" status="needs_review" stale="false" population="healthy male subjects" measured-compound="saruplase" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="saruplase" model-id="Saruplase_de1993_reference" status="needs_review" stale="false" population="healthy male subjects" measured-compound="saruplase" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 1 extracted.

@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Qi Y et al., A prospective population pharmacokineti…, Clinical pharmacokinetics (2015)
   ·  DOI: [10.1007/s40262-014-0196-4](https://doi.org/10.1007/s40262-014-0196-4)
 
-## Model component
-<dbs-pgx drug="sapropterin" model-id="Sapropterin_Qi2015_reference" status="rejected" stale="true" population="pediatric and adult patients with phenylketonuria" measured-compound="sapropterin" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="sapropterin" model-id="Sapropterin_Qi2015_reference" status="rejected" stale="true" population="pediatric and adult patients with phenylketonuria" measured-compound="sapropterin" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 5 extracted, plus 2 covariate effects.

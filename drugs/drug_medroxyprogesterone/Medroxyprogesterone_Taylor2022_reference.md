@@ -21,8 +21,7 @@
 Taylor DJ et al., Return to ovulation after Sayana Press…, Contraception: X (2022)
   ·  DOI: [10.1016/j.conx.2022.100080](https://doi.org/10.1016/j.conx.2022.100080)
 
-## Model component
-<dbs-pgx drug="medroxyprogesterone" model-id="Medroxyprogesterone_Taylor2022_reference" status="rejected" stale="false" population="women of reproductive age using contraception" measured-compound="medroxyprogesterone acetate" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="medroxyprogesterone" model-id="Medroxyprogesterone_Taylor2022_reference" status="rejected" stale="false" population="women of reproductive age using contraception" measured-compound="medroxyprogesterone acetate" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 2 extracted.

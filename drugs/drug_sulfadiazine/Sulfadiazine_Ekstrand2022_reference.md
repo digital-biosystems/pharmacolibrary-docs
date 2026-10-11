@@ -25,8 +25,7 @@
 Ekstrand C et al., The disposition of trimethoprim and sul…, Veterinary medicine and sci… (2022)
   ·  DOI: [10.1002/vms3.763](https://doi.org/10.1002/vms3.763)
 
-## Model component
-<dbs-pgx drug="sulfadiazine" model-id="Sulfadiazine_Ekstrand2022_reference" status="rejected" stale="false" population="neonatal foals" measured-compound="sulfadiazine" parameterization="mechanistic" topology="general_linear"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="sulfadiazine" model-id="Sulfadiazine_Ekstrand2022_reference" status="rejected" stale="false" population="neonatal foals" measured-compound="sulfadiazine" parameterization="mechanistic" topology="general_linear"></div>
 
 **Model structure:** general linear; no model was built for this record.  
 **Parameters:** 9 extracted.

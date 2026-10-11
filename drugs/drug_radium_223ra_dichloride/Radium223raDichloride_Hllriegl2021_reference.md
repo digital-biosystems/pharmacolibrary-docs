@@ -30,8 +30,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the lin
 Höllriegl V et al., Radiopharmacokinetic modelling and radi…, EJNMMI physics (2021)
   ·  DOI: [10.1186/s40658-021-00388-1](https://doi.org/10.1186/s40658-021-00388-1)
 
-## Model component
-<dbs-pgx drug="radium (223Ra) dichloride" model-id="Radium223raDichloride_Hllriegl2021_reference" status="rejected" stale="true" population="patients with metastatic castration-resistant prostate cancer" measured-compound="radium_223ra_dichloride" parameterization="mechanistic" topology="general_linear"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="radium (223Ra) dichloride" model-id="Radium223raDichloride_Hllriegl2021_reference" status="rejected" stale="true" population="patients with metastatic castration-resistant prostate cancer" measured-compound="radium_223ra_dichloride" parameterization="mechanistic" topology="general_linear"></div>
 
 **Model structure:** general linear; no model was built for this record.  
 **Parameters:** 0 extracted.

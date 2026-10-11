@@ -21,8 +21,7 @@
 Nielsen EI et al., Population Pharmacokinetic Analysis of…, Journal of clinical pharmac… (2017)
   ·  DOI: [10.1002/jcph.961](https://doi.org/10.1002/jcph.961)
 
-## Model component
-<dbs-pgx drug="oxytocin" model-id="Oxytocin_Nielsen2017_reference" status="extracted" stale="false" population="postmenopausal women" measured-compound="oxytocin" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="oxytocin" model-id="Oxytocin_Nielsen2017_reference" status="extracted" stale="false" population="postmenopausal women" measured-compound="oxytocin" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameters:** 5 extracted.

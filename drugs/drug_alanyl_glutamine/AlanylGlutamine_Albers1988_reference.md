@@ -30,8 +30,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Albers S et al., Availability of amino acids supplied in…, Clinical science (London, E… (1988)
   ·  DOI: [10.1042/cs0750463](https://doi.org/10.1042/cs0750463)
 
-## Model component
-<dbs-pgx drug="alanyl glutamine" model-id="AlanylGlutamine_Albers1988_reference" status="rejected" stale="true" population="healthy adults" measured-compound="alanyl_glutamine" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="alanyl glutamine" model-id="AlanylGlutamine_Albers1988_reference" status="rejected" stale="true" population="healthy adults" measured-compound="alanyl_glutamine" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

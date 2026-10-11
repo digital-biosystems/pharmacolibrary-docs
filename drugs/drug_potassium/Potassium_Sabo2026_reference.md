@@ -21,8 +21,7 @@
 Sabo AN et al., The Hydroxyurea Absorption Phenotype: A…, Pharmaceutics (2026)
   ·  DOI: [10.3390/pharmaceutics18060654](https://doi.org/10.3390/pharmaceutics18060654)
 
-## Model component
-<dbs-pgx drug="Potassium" model-id="Potassium_Sabo2026_reference" status="extracted" stale="false" population="" measured-compound="potassium" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="Potassium" model-id="Potassium_Sabo2026_reference" status="extracted" stale="false" population="" measured-compound="potassium" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 2 extracted.

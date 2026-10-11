@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the val
 Trenk D et al., Pharmacokinetics and pharmacodynamics o…, Journal of cardiovascular p… (1983)
   ·  DOI: [10.1097/00005344-198311000-00018](https://doi.org/10.1097/00005344-198311000-00018)
 
-## Model component
-<dbs-pgx drug="ketanserin" model-id="Ketanserin_Trenk1983_reference" status="extracted" stale="true" population="healthy volunteers" measured-compound="ketanserin" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="ketanserin" model-id="Ketanserin_Trenk1983_reference" status="extracted" stale="true" population="healthy volunteers" measured-compound="ketanserin" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameters:** 4 extracted.

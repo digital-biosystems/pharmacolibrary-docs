@@ -28,8 +28,7 @@ No clearance, volume or rate constant of the model is reported in it. Only the a
 Huang J et al., Population pharmacokinetics of adefovir…, International journal of cl… (2014)
   ·  DOI: [10.5414/CP201928](https://doi.org/10.5414/CP201928)
 
-## Model component
-<dbs-pgx drug="adefovir dipivoxil" model-id="AdefovirDipivoxil_Huang2014_reference" status="rejected" stale="true" population="healthy Chinese volunteers" measured-compound="adefovir dipivoxil" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="adefovir dipivoxil" model-id="AdefovirDipivoxil_Huang2014_reference" status="rejected" stale="true" population="healthy Chinese volunteers" measured-compound="adefovir dipivoxil" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

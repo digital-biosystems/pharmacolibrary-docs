@@ -30,8 +30,7 @@ The record reports budesonide parameters V1 = 216 L, CL = 18.4 L·hr−1, absorp
 Back HM et al., Exposure-Response and Clinical Outcome…, Pharmaceutics (2020)
   ·  DOI: [10.3390/pharmaceutics12040336](https://doi.org/10.3390/pharmaceutics12040336)
 
-## Model component
-<dbs-pgx drug="budesonide" model-id="Budesonide_Back2020_reference" status="rejected" stale="true" population="adults with moderate asthma" measured-compound="budesonide" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="budesonide" model-id="Budesonide_Back2020_reference" status="rejected" stale="true" population="adults with moderate asthma" measured-compound="budesonide" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment; no model was built for this record.  
 **Parameters:** 4 extracted.

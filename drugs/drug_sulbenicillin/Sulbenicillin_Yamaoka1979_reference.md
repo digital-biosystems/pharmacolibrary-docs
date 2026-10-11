@@ -20,8 +20,7 @@
 Yamaoka K et al., High-performance liquid chromatographic…, Journal of chromatography (1979)
   ·  DOI: [10.1016/s0021-9673(00)80708-6](https://doi.org/10.1016/s0021-9673(00)80708-6)
 
-## Model component
-<dbs-pgx drug="sulbenicillin" model-id="Sulbenicillin_Yamaoka1979_reference" status="rejected" stale="false" population="healthy volunteers" measured-compound="sulbenicillin" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="sulbenicillin" model-id="Sulbenicillin_Yamaoka1979_reference" status="rejected" stale="false" population="healthy volunteers" measured-compound="sulbenicillin" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

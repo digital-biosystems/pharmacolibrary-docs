@@ -23,8 +23,7 @@
 Vanapalli SR et al., Pharmacokinetics and dose proportionali…, Biopharmaceutics & drug dis… (2002)
   ·  DOI: [10.1002/bdd.313](https://doi.org/10.1002/bdd.313)
 
-## Model component
-<dbs-pgx drug="moxidectin" model-id="Moxidectin_Vanapalli2002_reference" status="rejected" stale="false" population="beagle dogs infected with Brugia pahangi" measured-compound="moxidectin" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="moxidectin" model-id="Moxidectin_Vanapalli2002_reference" status="rejected" stale="false" population="beagle dogs infected with Brugia pahangi" measured-compound="moxidectin" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 3 extracted.

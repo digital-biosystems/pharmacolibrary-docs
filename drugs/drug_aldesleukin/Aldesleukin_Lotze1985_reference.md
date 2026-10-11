@@ -20,8 +20,7 @@
 ## Citation
 Lotze MT et al., In vivo administration of purified huma…, Journal of immunology (Balt… (1985)
 
-## Model component
-<dbs-pgx drug="aldesleukin" model-id="Aldesleukin_Lotze1985_reference" status="rejected" stale="false" population="patients with a variety of malignancies" measured-compound="aldesleukin" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="aldesleukin" model-id="Aldesleukin_Lotze1985_reference" status="rejected" stale="false" population="patients with a variety of malignancies" measured-compound="aldesleukin" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 1 extracted.

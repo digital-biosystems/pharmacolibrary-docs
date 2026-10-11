@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on paramet
 Echizen H, The First-in-Class Potassium-Competitiv…, Clinical pharmacokinetics (2016)
   ·  DOI: [10.1007/s40262-015-0326-7](https://doi.org/10.1007/s40262-015-0326-7)
 
-## Model component
-<dbs-pgx drug="amoxicillin" model-id="Amoxicillin_Echizen2016_reference" status="extracted" stale="true" population="" measured-compound="amoxicillin" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="amoxicillin" model-id="Amoxicillin_Echizen2016_reference" status="extracted" stale="true" population="" measured-compound="amoxicillin" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 2 extracted.

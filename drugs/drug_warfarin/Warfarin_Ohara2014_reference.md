@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the lin
 Ohara M et al., Determinants of the over-anticoagulatio…, PloS one (2014)
   ·  DOI: [10.1371/journal.pone.0105891](https://doi.org/10.1371/journal.pone.0105891)
 
-## Model component
-<dbs-pgx drug="warfarin" model-id="Warfarin_Ohara2014_reference" status="rejected" stale="false" population="Chinese patients" measured-compound="S-warfarin" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="warfarin" model-id="Warfarin_Ohara2014_reference" status="rejected" stale="false" population="Chinese patients" measured-compound="S-warfarin" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 6 extracted, plus 3 covariate effects.

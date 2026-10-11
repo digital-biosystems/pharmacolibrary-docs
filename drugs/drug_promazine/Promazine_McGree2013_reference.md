@@ -23,8 +23,7 @@
 McGree JM et al., A Bayesian approach for estimating dete…, Journal of veterinary pharm… (2013)
   ·  DOI: [10.1111/j.1365-2885.2013.01389.x](https://doi.org/10.1111/j.1365-2885.2013.01389.x)
 
-## Model component
-<dbs-pgx drug="promazine" model-id="Promazine_McGree2013_reference" status="extracted" stale="false" population="" measured-compound="promazine" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="promazine" model-id="Promazine_McGree2013_reference" status="extracted" stale="false" population="" measured-compound="promazine" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 2 extracted.

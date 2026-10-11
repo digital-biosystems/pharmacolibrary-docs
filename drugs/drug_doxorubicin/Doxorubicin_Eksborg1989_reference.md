@@ -29,8 +29,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Eksborg S et al. (1989). Acta oncologica (Stockholm, Sweden) 28
   ·  DOI: [10.3109/02841868909092323](https://doi.org/10.3109/02841868909092323)
 
-## Model component
-<dbs-pgx drug="doxorubicin" model-id="Doxorubicin_Eksborg1989_reference" status="rejected" stale="false" population="cancer patients" measured-compound="doxorubicin" parameterization="mechanistic" topology="general_linear"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="doxorubicin" model-id="Doxorubicin_Eksborg1989_reference" status="rejected" stale="false" population="cancer patients" measured-compound="doxorubicin" parameterization="mechanistic" topology="general_linear"></div>
 
 **Model structure:** general linear; no model was built for this record.  
 **Parameters:** 0 extracted.

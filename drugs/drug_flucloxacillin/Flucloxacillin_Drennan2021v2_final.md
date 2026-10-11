@@ -26,8 +26,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the val
 Drennan PG et al., Population pharmacokinetics of free flu…, British journal of clinical… (2021)
   ·  DOI: [10.1111/bcp.14887](https://doi.org/10.1111/bcp.14887)
 
-## Model component
-<dbs-pgx drug="flucloxacillin" model-id="Flucloxacillin_Drennan2021v2_final" status="rejected" stale="false" population="adults with staphylococcal infections and healthy adults" measured-compound="free flucloxacillin" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="flucloxacillin" model-id="Flucloxacillin_Drennan2021v2_final" status="rejected" stale="false" population="adults with staphylococcal infections and healthy adults" measured-compound="free flucloxacillin" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 6 extracted.

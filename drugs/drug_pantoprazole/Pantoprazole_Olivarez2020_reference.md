@@ -29,8 +29,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on paramet
 Olivarez JD et al., Pharmacokinetics and Tissue Levels of P…, Frontiers in veterinary sci… (2020)
   ·  DOI: [10.3389/fvets.2020.580735](https://doi.org/10.3389/fvets.2020.580735)
 
-## Model component
-<dbs-pgx drug="pantoprazole" model-id="Pantoprazole_Olivarez2020_reference" status="curated_candidate" stale="false" population="neonatal Holstein calves" measured-compound="pantoprazole" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="pantoprazole" model-id="Pantoprazole_Olivarez2020_reference" status="curated_candidate" stale="false" population="neonatal Holstein calves" measured-compound="pantoprazole" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameters:** 2 extracted.

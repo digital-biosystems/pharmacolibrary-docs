@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Asskali F et al., [The accumulation of different substitu…, Anasthesiologie, Intensivme… (1999)
   ·  DOI: [10.1055/s-1999-208](https://doi.org/10.1055/s-1999-208)
 
-## Model component
-<dbs-pgx drug="hydroxyethylstarch" model-id="Hydroxyethylstarch_Asskali1999_reference" status="needs_review" stale="true" population="healthy volunteers" measured-compound="hydroxyethylstarch" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="hydroxyethylstarch" model-id="Hydroxyethylstarch_Asskali1999_reference" status="needs_review" stale="true" population="healthy volunteers" measured-compound="hydroxyethylstarch" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 3 extracted.

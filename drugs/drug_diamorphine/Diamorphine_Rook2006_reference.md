@@ -22,8 +22,7 @@
 Rook EJ et al., Population pharmacokinetics of heroin a…, Clinical pharmacokinetics (2006)
   ·  DOI: [10.2165/00003088-200645040-00005](https://doi.org/10.2165/00003088-200645040-00005)
 
-## Model component
-<dbs-pgx drug="diamorphine" model-id="Diamorphine_Rook2006_reference" status="rejected" stale="false" population="heroin-dependent adults (inhalers and injectors)" measured-compound="heroin (diamorphine)" parameterization="mechanistic" topology="general_linear"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="diamorphine" model-id="Diamorphine_Rook2006_reference" status="rejected" stale="false" population="heroin-dependent adults (inhalers and injectors)" measured-compound="heroin (diamorphine)" parameterization="mechanistic" topology="general_linear"></div>
 
 **Model structure:** general linear; no model was built for this record.  
 **Parameters:** 4 extracted.

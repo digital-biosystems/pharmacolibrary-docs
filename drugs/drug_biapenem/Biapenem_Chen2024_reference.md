@@ -21,8 +21,7 @@
 Chen D et al., Population pharmacokinetics, dosing opt…, Frontiers in pharmacology (2024)
   ·  DOI: [10.3389/fphar.2024.1388150](https://doi.org/10.3389/fphar.2024.1388150)
 
-## Model component
-<dbs-pgx drug="biapenem" model-id="Biapenem_Chen2024_reference" status="needs_review" stale="false" population="patients with sepsis" measured-compound="biapenem" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="biapenem" model-id="Biapenem_Chen2024_reference" status="needs_review" stale="false" population="patients with sepsis" measured-compound="biapenem" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 2 extracted.

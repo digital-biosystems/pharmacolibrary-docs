@@ -20,8 +20,7 @@
 ## Citation
 Obata T et al., [Studies on antimicrobial concentration…, The Japanese journal of ant… (1987)
 
-## Model component
-<dbs-pgx drug="flomoxef" model-id="Flomoxef_Obata1987_reference" status="needs_review" stale="false" population="women undergoing hysterectomy" measured-compound="flomoxef" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="flomoxef" model-id="Flomoxef_Obata1987_reference" status="needs_review" stale="false" population="women undergoing hysterectomy" measured-compound="flomoxef" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 3 extracted.

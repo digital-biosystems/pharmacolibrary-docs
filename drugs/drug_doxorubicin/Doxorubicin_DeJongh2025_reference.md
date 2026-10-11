@@ -25,8 +25,7 @@
 DeJongh J; Cadogan E; Davies M; Ramos-Montoya A; Smith A; van Steeg T; Richards R et al. (2025). Journal of pharmacokinetics and pharmacodynamics 52
   ·  DOI: [10.1007/s10928-025-09962-x](https://doi.org/10.1007/s10928-025-09962-x)
 
-## Model component
-<dbs-pgx drug="doxorubicin" model-id="Doxorubicin_DeJongh2025_reference" status="curated_candidate" stale="false" population="" measured-compound="doxorubicin" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="doxorubicin" model-id="Doxorubicin_DeJongh2025_reference" status="curated_candidate" stale="false" population="" measured-compound="doxorubicin" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameters:** 2 extracted.

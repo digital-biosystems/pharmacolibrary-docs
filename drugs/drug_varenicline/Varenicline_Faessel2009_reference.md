@@ -21,8 +21,7 @@
 Faessel H et al., Pharmacokinetics, safety, and tolerabil…, Clinical therapeutics (2009)
   ·  DOI: [10.1016/j.clinthera.2009.01.003](https://doi.org/10.1016/j.clinthera.2009.01.003)
 
-## Model component
-<dbs-pgx drug="varenicline" model-id="Varenicline_Faessel2009_reference" status="rejected" stale="false" population="healthy adolescent smokers" measured-compound="varenicline" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="varenicline" model-id="Varenicline_Faessel2009_reference" status="rejected" stale="false" population="healthy adolescent smokers" measured-compound="varenicline" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 4 extracted.

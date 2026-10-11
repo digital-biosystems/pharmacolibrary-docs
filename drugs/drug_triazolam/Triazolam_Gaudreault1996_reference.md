@@ -23,8 +23,7 @@
 Gaudreault J et al., Anticonvulsant pharmacodynamics and dis…, Journal of pharmaceutical s… (1996)
   ·  DOI: [10.1021/js9503183](https://doi.org/10.1021/js9503183)
 
-## Model component
-<dbs-pgx drug="triazolam" model-id="Triazolam_Gaudreault1996_reference" status="needs_review" stale="false" population="Sprague-Dawley rats" measured-compound="triazolam" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="triazolam" model-id="Triazolam_Gaudreault1996_reference" status="needs_review" stale="false" population="Sprague-Dawley rats" measured-compound="triazolam" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 5 extracted.

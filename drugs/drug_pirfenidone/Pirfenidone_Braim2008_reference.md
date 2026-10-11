@@ -23,8 +23,7 @@
 Braim AE et al., Pharmacokinetics and clinical effects o…, American journal of veterin… (2008)
   ·  DOI: [10.2460/ajvr.69.7.952](https://doi.org/10.2460/ajvr.69.7.952)
 
-## Model component
-<dbs-pgx drug="pirfenidone" model-id="Pirfenidone_Braim2008_reference" status="extracted" stale="false" population="adult horses" measured-compound="pirfenidone" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="pirfenidone" model-id="Pirfenidone_Braim2008_reference" status="extracted" stale="false" population="adult horses" measured-compound="pirfenidone" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameters:** 3 extracted.

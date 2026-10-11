@@ -23,8 +23,7 @@
 Youn JH et al., Kinetic Modeling of In Vivo K+ Distribu…, International journal of mo… (2024)
   ·  DOI: [10.3390/ijms25179664](https://doi.org/10.3390/ijms25179664)
 
-## Model component
-<dbs-pgx drug="Potassium" model-id="Potassium_Youn2024_control" status="rejected" stale="false" population="rats" measured-compound="potassium" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="Potassium" model-id="Potassium_Youn2024_control" status="rejected" stale="false" population="rats" measured-compound="potassium" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 7 extracted.

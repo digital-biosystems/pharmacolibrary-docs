@@ -29,8 +29,7 @@ The paper reports only apparent parameters for vinblastine — CL/F of 56.15 L/h
 Petric Z et al., Clinical Pharmacology of Vinpocetine: P…, Pharmaceutics (2023)
   ·  DOI: [10.3390/pharmaceutics15102502](https://doi.org/10.3390/pharmaceutics15102502)
 
-## Model component
-<dbs-pgx drug="vinblastine" model-id="Vinblastine_Petric2023_reference" status="extracted" stale="true" population="" measured-compound="" parameterization="" topology=""></dbs-pgx>
+<div class="pk-model-meta" hidden drug="vinblastine" model-id="Vinblastine_Petric2023_reference" status="extracted" stale="true" population="" measured-compound="" parameterization="" topology=""></div>
 
 **Model structure:** —; no model was built for this record.  
 **Parameters:** 0 extracted.

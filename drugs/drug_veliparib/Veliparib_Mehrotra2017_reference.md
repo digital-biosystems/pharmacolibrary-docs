@@ -21,8 +21,7 @@
 Mehrotra S et al., Population pharmacokinetics and site of…, British journal of clinical… (2017)
   ·  DOI: [10.1111/bcp.13253](https://doi.org/10.1111/bcp.13253)
 
-## Model component
-<dbs-pgx drug="veliparib" model-id="Veliparib_Mehrotra2017_reference" status="rejected" stale="false" population="patients with refractory acute leukaemia" measured-compound="veliparib" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="veliparib" model-id="Veliparib_Mehrotra2017_reference" status="rejected" stale="false" population="patients with refractory acute leukaemia" measured-compound="veliparib" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

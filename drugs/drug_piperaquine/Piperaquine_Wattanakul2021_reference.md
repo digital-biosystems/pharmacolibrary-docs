@@ -21,8 +21,7 @@
 Wattanakul T et al., Semimechanistic Pharmacokinetic and Pha…, Antimicrobial agents and ch… (2021)
   ·  DOI: [10.1128/AAC.01583-20](https://doi.org/10.1128/AAC.01583-20)
 
-## Model component
-<dbs-pgx drug="Piperaquine" model-id="Piperaquine_Wattanakul2021_reference" status="needs_review" stale="false" population="healthy adults with induced P. falciparum malaria" measured-compound="piperaquine" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="Piperaquine" model-id="Piperaquine_Wattanakul2021_reference" status="needs_review" stale="false" population="healthy adults with induced P. falciparum malaria" measured-compound="piperaquine" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 1 extracted.

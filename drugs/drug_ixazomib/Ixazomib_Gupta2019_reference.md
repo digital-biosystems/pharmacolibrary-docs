@@ -23,8 +23,7 @@
 Gupta N et al., Clinical Pharmacology of Ixazomib: The…, Clinical pharmacokinetics (2019)
   ·  DOI: [10.1007/s40262-018-0702-1](https://doi.org/10.1007/s40262-018-0702-1)
 
-## Model component
-<dbs-pgx drug="ixazomib" model-id="Ixazomib_Gupta2019_reference" status="rejected" stale="false" population="adults with multiple myeloma" measured-compound="ixazomib" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="ixazomib" model-id="Ixazomib_Gupta2019_reference" status="rejected" stale="false" population="adults with multiple myeloma" measured-compound="ixazomib" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

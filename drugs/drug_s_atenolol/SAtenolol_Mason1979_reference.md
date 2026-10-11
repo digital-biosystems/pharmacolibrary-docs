@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the val
 Mason WD et al., Kinetics and absolute bioavailability o…, Clinical pharmacology and t… (1979)
   ·  DOI: [10.1002/cpt1979254408](https://doi.org/10.1002/cpt1979254408)
 
-## Model component
-<dbs-pgx drug="s-atenolol" model-id="SAtenolol_Mason1979_reference" status="needs_review" stale="true" population="healthy volunteers" measured-compound="atenolol" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="s-atenolol" model-id="SAtenolol_Mason1979_reference" status="needs_review" stale="true" population="healthy volunteers" measured-compound="atenolol" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 8 extracted.

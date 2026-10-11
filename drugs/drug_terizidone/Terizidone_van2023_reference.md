@@ -23,8 +23,7 @@
 van der Laan LE et al., Optimizing dosing of the cycloserine pr…, Antimicrobial agents and ch… (2023)
   ·  DOI: [10.1128/aac.00611-23](https://doi.org/10.1128/aac.00611-23)
 
-## Model component
-<dbs-pgx drug="terizidone" model-id="Terizidone_van2023_reference" status="needs_review" stale="false" population="children with rifampicin-resistant tuberculosis" measured-compound="cycloserine" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="terizidone" model-id="Terizidone_van2023_reference" status="needs_review" stale="false" population="children with rifampicin-resistant tuberculosis" measured-compound="cycloserine" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 2 extracted.

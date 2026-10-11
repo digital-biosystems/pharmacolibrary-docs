@@ -21,8 +21,7 @@
 Nikolic VN et al., Population pharmacokinetics of tamsulos…, World journal of urology (2024)
   ·  DOI: [10.1007/s00345-024-05115-w](https://doi.org/10.1007/s00345-024-05115-w)
 
-## Model component
-<dbs-pgx drug="tamsulosin" model-id="Tamsulosin_Nikolic2024_reference" status="rejected" stale="false" population="patients with benign prostatic hyperplasia" measured-compound="tamsulosin" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="tamsulosin" model-id="Tamsulosin_Nikolic2024_reference" status="rejected" stale="false" population="patients with benign prostatic hyperplasia" measured-compound="tamsulosin" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

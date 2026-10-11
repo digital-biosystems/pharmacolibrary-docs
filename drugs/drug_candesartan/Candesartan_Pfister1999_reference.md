@@ -33,8 +33,7 @@ Independently confirmed by `gpt-oss:120b`.
 Pfister M et al., Pharmacokinetics and haemodynamics of c…, British journal of clinical… (1999)
   ·  DOI: [10.1046/j.1365-2125.1999.00939.x](https://doi.org/10.1046/j.1365-2125.1999.00939.x)
 
-## Model component
-<dbs-pgx drug="candesartan" model-id="Candesartan_Pfister1999_reference" status="rejected" stale="true" population="hypertensive patients on regular haemodialysis" measured-compound="candesartan" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="candesartan" model-id="Candesartan_Pfister1999_reference" status="rejected" stale="true" population="hypertensive patients on regular haemodialysis" measured-compound="candesartan" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 1 extracted.

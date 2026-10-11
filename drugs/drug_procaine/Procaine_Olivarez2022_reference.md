@@ -27,8 +27,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on paramet
 Olivarez JD et al., Pharmacokinetic and pharmacodynamic pro…, Frontiers in veterinary sci… (2022)
   ·  DOI: [10.3389/fvets.2022.1101461](https://doi.org/10.3389/fvets.2022.1101461)
 
-## Model component
-<dbs-pgx drug="procaine" model-id="Procaine_Olivarez2022_reference" status="needs_review" stale="false" population="" measured-compound="procaine" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="procaine" model-id="Procaine_Olivarez2022_reference" status="needs_review" stale="false" population="" measured-compound="procaine" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 2 extracted.

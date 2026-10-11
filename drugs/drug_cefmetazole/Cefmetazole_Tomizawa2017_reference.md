@@ -21,8 +21,7 @@
 Tomizawa A et al., Optimal dosage of cefmetazole for intra…, Journal of pharmaceutical h… (2017)
   ·  DOI: [10.1186/s40780-016-0071-6](https://doi.org/10.1186/s40780-016-0071-6)
 
-## Model component
-<dbs-pgx drug="cefmetazole" model-id="Cefmetazole_Tomizawa2017_reference" status="rejected" stale="false" population="patients with colorectal cancer" measured-compound="cefmetazole" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="cefmetazole" model-id="Cefmetazole_Tomizawa2017_reference" status="rejected" stale="false" population="patients with colorectal cancer" measured-compound="cefmetazole" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

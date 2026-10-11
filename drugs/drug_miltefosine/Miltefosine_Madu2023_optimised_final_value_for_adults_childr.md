@@ -21,8 +21,7 @@
 Madu SJ et al., Assessing Dose-Exposure-Response Relati…, Pharmaceutical research (2023)
   ·  DOI: [10.1007/s11095-023-03610-0](https://doi.org/10.1007/s11095-023-03610-0)
 
-## Model component
-<dbs-pgx drug="miltefosine" model-id="Miltefosine_Madu2023_optimised_final_value_for_adults_childr" status="needs_review" stale="false" population="adult and paediatric patients with leishmaniasis (PBPK virtual populations)" measured-compound="miltefosine" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="miltefosine" model-id="Miltefosine_Madu2023_optimised_final_value_for_adults_childr" status="needs_review" stale="false" population="adult and paediatric patients with leishmaniasis (PBPK virtual populations)" measured-compound="miltefosine" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 8 extracted.

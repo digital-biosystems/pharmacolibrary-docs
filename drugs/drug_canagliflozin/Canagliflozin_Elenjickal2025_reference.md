@@ -29,8 +29,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Elenjickal EJ et al., Population Pharmacokinetic Modeling of…, Clinical pharmacokinetics (2025)
   ·  DOI: [10.1007/s40262-025-01571-8](https://doi.org/10.1007/s40262-025-01571-8)
 
-## Model component
-<dbs-pgx drug="canagliflozin" model-id="Canagliflozin_Elenjickal2025_reference" status="rejected" stale="false" population="patients with advanced chronic kidney disease" measured-compound="canagliflozin" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="canagliflozin" model-id="Canagliflozin_Elenjickal2025_reference" status="rejected" stale="false" population="patients with advanced chronic kidney disease" measured-compound="canagliflozin" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 3 extracted.

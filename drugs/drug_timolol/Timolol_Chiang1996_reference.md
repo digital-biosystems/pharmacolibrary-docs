@@ -32,8 +32,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Chiang CH et al., Pharmacokinetics and intraocular pressu…, Journal of ocular pharmacol… (1996)
   ·  DOI: [10.1089/jop.1996.12.471](https://doi.org/10.1089/jop.1996.12.471)
 
-## Model component
-<dbs-pgx drug="timolol" model-id="Timolol_Chiang1996_reference" status="rejected" stale="true" population="rabbits" measured-compound="timolol" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="timolol" model-id="Timolol_Chiang1996_reference" status="rejected" stale="true" population="rabbits" measured-compound="timolol" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 1 extracted.

@@ -25,8 +25,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the val
 Šíma M et al., Effect of co-medication on the pharmaco…, Physiological research 64(S… (2015)
   ·  DOI: [10.33549/physiolres.933213](https://doi.org/10.33549/physiolres.933213)
 
-## Model component
-<dbs-pgx drug="furosemide" model-id="Furosemide_ma2015_reference" status="extracted" stale="false" population="" measured-compound="furosemide" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="furosemide" model-id="Furosemide_ma2015_reference" status="extracted" stale="false" population="" measured-compound="furosemide" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameters:** 2 extracted.

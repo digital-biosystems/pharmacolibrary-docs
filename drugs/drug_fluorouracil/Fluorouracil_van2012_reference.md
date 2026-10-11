@@ -27,8 +27,7 @@ Without a unit the value cannot be converted, so the model cannot use it. A repo
 van Kuilenburg AB et al., Evaluation of 5-fluorouracil pharmacoki…, Clinical pharmacokinetics (2012)
   ·  DOI: [10.1007/BF03257473](https://doi.org/10.1007/BF03257473)
 
-## Model component
-<dbs-pgx drug="fluorouracil" model-id="Fluorouracil_van2012_reference" status="needs_review" stale="false" population="cancer patients with DPD deficiency and controls" measured-compound="5-fluorouracil" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="fluorouracil" model-id="Fluorouracil_van2012_reference" status="needs_review" stale="false" population="cancer patients with DPD deficiency and controls" measured-compound="5-fluorouracil" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment; no model was built for this record.  
 **Parameters:** 5 extracted.

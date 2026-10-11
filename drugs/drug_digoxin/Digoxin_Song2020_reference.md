@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on paramet
 Song IH et al., Effects of Maribavir on P-Glycoprotein…, Journal of clinical pharmac… (2020)
   ·  DOI: [10.1002/jcph.1504](https://doi.org/10.1002/jcph.1504)
 
-## Model component
-<dbs-pgx drug="digoxin" model-id="Digoxin_Song2020_reference" status="extracted" stale="true" population="" measured-compound="digoxin" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="digoxin" model-id="Digoxin_Song2020_reference" status="extracted" stale="true" population="" measured-compound="digoxin" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 2 extracted.

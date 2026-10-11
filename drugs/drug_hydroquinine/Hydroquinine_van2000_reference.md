@@ -23,8 +23,7 @@
 van Kan HJ et al., Hydroquinine pharmacokinetics after ora…, European journal of clinica… (2000)
   ·  DOI: [10.1007/s002280000128](https://doi.org/10.1007/s002280000128)
 
-## Model component
-<dbs-pgx drug="hydroquinine" model-id="Hydroquinine_van2000_reference" status="extracted" stale="false" population="adult patients with muscle cramps" measured-compound="hydroquinine" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="hydroquinine" model-id="Hydroquinine_van2000_reference" status="extracted" stale="false" population="adult patients with muscle cramps" measured-compound="hydroquinine" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameters:** 3 extracted.

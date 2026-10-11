@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-5.6-luna`) disagrees on `parame
 Arancibia A et al., Absorption and disposition kinetics of…, Antimicrobial agents and ch… (1980)
   ·  DOI: [10.1128/AAC.17.2.199](https://doi.org/10.1128/AAC.17.2.199)
 
-## Model component
-<dbs-pgx drug="amoxicillin" model-id="Amoxicillin_Arancibia1980_reference" status="needs_review" stale="true" population="healthy adults" measured-compound="amoxicillin" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="amoxicillin" model-id="Amoxicillin_Arancibia1980_reference" status="needs_review" stale="true" population="healthy adults" measured-compound="amoxicillin" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 8 extracted.

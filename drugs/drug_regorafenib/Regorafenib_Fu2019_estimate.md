@@ -22,8 +22,7 @@
 Fu Q et al., Interaction Between Sex and Organic Ani…, Clinical and translational… (2019)
   ·  DOI: [10.1111/cts.12630](https://doi.org/10.1111/cts.12630)
 
-## Model component
-<dbs-pgx drug="regorafenib" model-id="Regorafenib_Fu2019_estimate" status="rejected" stale="false" population="male and female wild-type and Oatp1b2-deficient mice" measured-compound="regorafenib" parameterization="apparent" topology="general_linear"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="regorafenib" model-id="Regorafenib_Fu2019_estimate" status="rejected" stale="false" population="male and female wild-type and Oatp1b2-deficient mice" measured-compound="regorafenib" parameterization="apparent" topology="general_linear"></div>
 
 **Model structure:** general linear; no model was built for this record.  
 **Parameters:** 7 extracted.

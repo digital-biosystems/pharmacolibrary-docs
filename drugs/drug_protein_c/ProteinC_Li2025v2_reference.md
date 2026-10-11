@@ -33,8 +33,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Li Z et al., Pharmacokinetic Evidence Supporting Sub…, TH open : companion journal… (2025)
   ·  DOI: [10.1055/a-2731-5372](https://doi.org/10.1055/a-2731-5372)
 
-## Model component
-<dbs-pgx drug="protein C" model-id="ProteinC_Li2025v2_reference" status="model_quarantined" stale="false" population="patients with severe congenital protein C deficiency" measured-compound="protein C" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="protein C" model-id="ProteinC_Li2025v2_reference" status="model_quarantined" stale="false" population="patients with severe congenital protein C deficiency" measured-compound="protein C" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 4 extracted, plus 2 covariate effects.

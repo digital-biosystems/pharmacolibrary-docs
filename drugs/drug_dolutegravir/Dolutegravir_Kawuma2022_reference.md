@@ -29,8 +29,7 @@ The model topology defines a two-compartment system with central and peripheral 
 Kawuma AN et al., Population Pharmacokinetic Model and Al…, Antimicrobial agents and ch… (2022)
   ·  DOI: [10.1128/aac.00215-22](https://doi.org/10.1128/aac.00215-22)
 
-## Model component
-<dbs-pgx drug="dolutegravir" model-id="Dolutegravir_Kawuma2022_reference" status="rejected" stale="true" population="healthy volunteers and adults living with HIV (HIV/tuberculosis cotreatment)" measured-compound="dolutegravir" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="dolutegravir" model-id="Dolutegravir_Kawuma2022_reference" status="rejected" stale="true" population="healthy volunteers and adults living with HIV (HIV/tuberculosis cotreatment)" measured-compound="dolutegravir" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment; no model was built for this record.  
 **Parameters:** 4 extracted.

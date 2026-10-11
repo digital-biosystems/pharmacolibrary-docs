@@ -21,8 +21,7 @@
 Li X et al., Multi-objective optimization in populat…, Journal of pharmacokinetics… (2026)
   ·  DOI: [10.1007/s10928-026-10036-9](https://doi.org/10.1007/s10928-026-10036-9)
 
-## Model component
-<dbs-pgx drug="quetiapine" model-id="Quetiapine_Li2026_reference" status="extracted" stale="false" population="" measured-compound="quetiapine" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="quetiapine" model-id="Quetiapine_Li2026_reference" status="extracted" stale="false" population="" measured-compound="quetiapine" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 3 extracted.

@@ -21,8 +21,7 @@
 Jonkers R et al., Beta-2-adrenoceptor-mediated hypokalemi…, Clinical pharmacology and t… (1987)
   ·  DOI: [10.1038/clpt.1987.210](https://doi.org/10.1038/clpt.1987.210)
 
-## Model component
-<dbs-pgx drug="terbutaline" model-id="Terbutaline_Jonkers1987_reference" status="rejected" stale="false" population="healthy adults" measured-compound="terbutaline" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="terbutaline" model-id="Terbutaline_Jonkers1987_reference" status="rejected" stale="false" population="healthy adults" measured-compound="terbutaline" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

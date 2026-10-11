@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Hinderling PH et al., Integrated pharmacokinetics and pharmac…, Journal of pharmaceutical s… (1985)
   ·  DOI: [10.1002/jps.2600740702](https://doi.org/10.1002/jps.2600740702)
 
-## Model component
-<dbs-pgx drug="atropine" model-id="Atropine_Hinderling1985_reference" status="needs_review" stale="true" population="healthy males" measured-compound="atropine" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="atropine" model-id="Atropine_Hinderling1985_reference" status="needs_review" stale="true" population="healthy males" measured-compound="atropine" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 3 extracted.

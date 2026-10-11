@@ -29,8 +29,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on paramet
 Wang X et al., Population Pharmacokinetic Analysis to…, Clinical pharmacokinetics (2022)
   ·  DOI: [10.1007/s40262-021-01075-1](https://doi.org/10.1007/s40262-021-01075-1)
 
-## Model component
-<dbs-pgx drug="ornithine oxoglurate" model-id="OrnithineOxoglurate_Wang2022_reference" status="needs_review" stale="false" population="" measured-compound="ornithine_oxoglurate" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="ornithine oxoglurate" model-id="OrnithineOxoglurate_Wang2022_reference" status="needs_review" stale="false" population="" measured-compound="ornithine_oxoglurate" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 2 extracted.

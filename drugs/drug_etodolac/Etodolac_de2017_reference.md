@@ -23,8 +23,7 @@
 de Miranda Silva C et al., Development of an Enantioselective and…, The AAPS journal (2017)
   ·  DOI: [10.1208/s12248-017-0138-9](https://doi.org/10.1208/s12248-017-0138-9)
 
-## Model component
-<dbs-pgx drug="etodolac" model-id="Etodolac_de2017_reference" status="extracted" stale="false" population="healthy volunteers" measured-compound="R-etodolac and S-etodolac" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="etodolac" model-id="Etodolac_de2017_reference" status="extracted" stale="false" population="healthy volunteers" measured-compound="R-etodolac and S-etodolac" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameters:** 2 extracted.

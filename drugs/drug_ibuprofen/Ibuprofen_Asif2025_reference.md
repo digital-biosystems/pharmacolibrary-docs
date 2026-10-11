@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-5.6-luna`) disagrees on which m
 Asif M et al., A Retrospective Analysis of PK and Resp…, Journal of clinical pharmac… (2025)
   ·  DOI: [10.1002/jcph.70033](https://doi.org/10.1002/jcph.70033)
 
-## Model component
-<dbs-pgx drug="ibuprofen" model-id="Ibuprofen_Asif2025_reference" status="rejected" stale="true" population="extremely low gestational age neonates with patent ductus arteriosus" measured-compound="ibuprofen" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="ibuprofen" model-id="Ibuprofen_Asif2025_reference" status="rejected" stale="true" population="extremely low gestational age neonates with patent ductus arteriosus" measured-compound="ibuprofen" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 3 extracted.

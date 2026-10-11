@@ -20,8 +20,7 @@
 Ouellet D et al., Population pharmacokinetics of dabrafen…, Journal of clinical pharmac… (2014)
   ·  DOI: [10.1002/jcph.263](https://doi.org/10.1002/jcph.263)
 
-## Model component
-<dbs-pgx drug="dabrafenib" model-id="Dabrafenib_Ouellet2014_reference" status="needs_review" stale="false" population="patients with BRAF V600E mutation-positive melanoma" measured-compound="dabrafenib" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="dabrafenib" model-id="Dabrafenib_Ouellet2014_reference" status="needs_review" stale="false" population="patients with BRAF V600E mutation-positive melanoma" measured-compound="dabrafenib" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 4 extracted.

@@ -29,8 +29,7 @@ No clearance, volume or rate constant of the model is reported in it. Only the a
 Yee KL et al., Population Pharmacokinetics and Pharmac…, Antimicrobial agents and ch… (2019)
   ·  DOI: [10.1128/AAC.01971-18](https://doi.org/10.1128/AAC.01971-18)
 
-## Model component
-<dbs-pgx drug="bezlotoxumab" model-id="Bezlotoxumab_Yee2019_reference" status="rejected" stale="true" population="adults with Clostridioides difficile infection" measured-compound="bezlotoxumab" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="bezlotoxumab" model-id="Bezlotoxumab_Yee2019_reference" status="rejected" stale="true" population="adults with Clostridioides difficile infection" measured-compound="bezlotoxumab" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

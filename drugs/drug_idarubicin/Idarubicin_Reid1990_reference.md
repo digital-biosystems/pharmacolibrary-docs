@@ -20,8 +20,7 @@
 ## Citation
 Reid JM et al., Plasma pharmacokinetics and cerebrospin…, Cancer research (1990)
 
-## Model component
-<dbs-pgx drug="idarubicin" model-id="Idarubicin_Reid1990_reference" status="needs_review" stale="false" population="pediatric leukemia patients in second or subsequent relapse" measured-compound="idarubicin" parameterization="mechanistic" topology="parent_metabolite"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="idarubicin" model-id="Idarubicin_Reid1990_reference" status="needs_review" stale="false" population="pediatric leukemia patients in second or subsequent relapse" measured-compound="idarubicin" parameterization="mechanistic" topology="parent_metabolite"></div>
 
 **Model structure:** parent + metabolite; no model was built for this record.  
 **Parameters:** 4 extracted.

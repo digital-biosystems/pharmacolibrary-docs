@@ -20,8 +20,7 @@
 Warnke K et al., The pharmacokinetics of the beta 2-adre…, European journal of clinica… (1992)
   ·  DOI: [10.1007/BF02284970](https://doi.org/10.1007/BF02284970)
 
-## Model component
-<dbs-pgx drug="fenoterol" model-id="Fenoterol_Warnke1992_reference" status="rejected" stale="false" population="healthy women" measured-compound="fenoterol" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="fenoterol" model-id="Fenoterol_Warnke1992_reference" status="rejected" stale="false" population="healthy women" measured-compound="fenoterol" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

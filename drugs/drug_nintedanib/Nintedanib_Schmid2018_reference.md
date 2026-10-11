@@ -21,8 +21,7 @@
 Schmid U et al., Population pharmacokinetics of nintedan…, Pulmonary pharmacology & th… (2018)
   ·  DOI: [10.1016/j.pupt.2017.11.004](https://doi.org/10.1016/j.pupt.2017.11.004)
 
-## Model component
-<dbs-pgx drug="nintedanib" model-id="Nintedanib_Schmid2018_reference" status="extracted" stale="false" population="patients with idiopathic pulmonary fibrosis" measured-compound="nintedanib" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="nintedanib" model-id="Nintedanib_Schmid2018_reference" status="extracted" stale="false" population="patients with idiopathic pulmonary fibrosis" measured-compound="nintedanib" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 4 extracted.

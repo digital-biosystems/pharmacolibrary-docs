@@ -29,8 +29,7 @@
 Hall RI et al., Pharmacokinetics and pharmacodynamics o…, Journal of pharmacokinetics… (1988)
   ·  DOI: [10.1007/BF01062136](https://doi.org/10.1007/BF01062136)
 
-## Model component
-<dbs-pgx drug="midazolam" model-id="Midazolam_Hall1988_reference" status="extracted" stale="true" population="enflurane-anesthetized dogs" measured-compound="midazolam" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="midazolam" model-id="Midazolam_Hall1988_reference" status="extracted" stale="true" population="enflurane-anesthetized dogs" measured-compound="midazolam" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameters:** 2 extracted.

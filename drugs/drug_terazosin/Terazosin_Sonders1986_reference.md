@@ -21,8 +21,7 @@
 Sonders RC, Pharmacokinetics of terazosin, The American journal of med… (1986)
   ·  DOI: [10.1016/0002-9343(86)90847-8](https://doi.org/10.1016/0002-9343(86)90847-8)
 
-## Model component
-<dbs-pgx drug="terazosin" model-id="Terazosin_Sonders1986_reference" status="extracted" stale="false" population="human volunteers, hypertensive patients, elderly volunteers, patients with congestive heart failure" measured-compound="terazosin" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="terazosin" model-id="Terazosin_Sonders1986_reference" status="extracted" stale="false" population="human volunteers, hypertensive patients, elderly volunteers, patients with congestive heart failure" measured-compound="terazosin" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 5 extracted.

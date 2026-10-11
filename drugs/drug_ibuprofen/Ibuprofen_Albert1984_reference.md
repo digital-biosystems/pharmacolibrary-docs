@@ -29,8 +29,7 @@ The record is a general linear model for ibuprofen with a volume of distribution
 Albert KS et al., Pharmacokinetics of ibuprofen, The American journal of med… (1984)
   ·  DOI: [10.1016/s0002-9343(84)80017-0](https://doi.org/10.1016/s0002-9343(84)80017-0)
 
-## Model component
-<dbs-pgx drug="ibuprofen" model-id="Ibuprofen_Albert1984_reference" status="rejected" stale="true" population="healthy adults" measured-compound="ibuprofen" parameterization="mechanistic" topology="general_linear"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="ibuprofen" model-id="Ibuprofen_Albert1984_reference" status="rejected" stale="true" population="healthy adults" measured-compound="ibuprofen" parameterization="mechanistic" topology="general_linear"></div>
 
 **Model structure:** general linear; no model was built for this record.  
 **Parameters:** 2 extracted.

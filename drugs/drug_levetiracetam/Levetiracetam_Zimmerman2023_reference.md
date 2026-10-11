@@ -21,8 +21,7 @@
 Zimmerman KO et al., Pharmacokinetics and Proposed Dosing of…, The journal of pediatric ph… (2023)
   ·  DOI: [10.5863/1551-6776-28.8.693](https://doi.org/10.5863/1551-6776-28.8.693)
 
-## Model component
-<dbs-pgx drug="levetiracetam" model-id="Levetiracetam_Zimmerman2023_reference" status="rejected" stale="false" population="children with obesity" measured-compound="levetiracetam" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="levetiracetam" model-id="Levetiracetam_Zimmerman2023_reference" status="rejected" stale="false" population="children with obesity" measured-compound="levetiracetam" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

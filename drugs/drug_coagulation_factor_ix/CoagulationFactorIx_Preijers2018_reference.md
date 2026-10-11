@@ -30,8 +30,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Preijers T et al., Population pharmacokinetics of factor I…, Journal of thrombosis and h… (2018)
   ·  DOI: [10.1111/jth.14292](https://doi.org/10.1111/jth.14292)
 
-## Model component
-<dbs-pgx drug="coagulation factor IX" model-id="CoagulationFactorIx_Preijers2018_reference" status="needs_review" stale="true" population="hemophilia B patients undergoing surgery" measured-compound="factor IX" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="coagulation factor IX" model-id="CoagulationFactorIx_Preijers2018_reference" status="needs_review" stale="true" population="hemophilia B patients undergoing surgery" measured-compound="factor IX" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment; no model was built for this record.  
 **Parameters:** 6 extracted.

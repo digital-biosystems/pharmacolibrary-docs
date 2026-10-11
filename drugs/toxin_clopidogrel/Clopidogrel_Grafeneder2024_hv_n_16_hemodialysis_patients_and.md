@@ -29,8 +29,7 @@
 Grafeneder J; van Os W; Minichmayr IK; Kovacevic Miljevic KD; Reiter B; Säemann MD; et al. et al. (2024). Kidney international reports 9
   ·  DOI: [10.1016/j.ekir.2024.07.029](https://doi.org/10.1016/j.ekir.2024.07.029)
 
-## Model component
-<dbs-pgx drug="clopidogrel" model-id="Clopidogrel_Grafeneder2024_hv_n_16_hemodialysis_patients_and" status="" stale="true" population="hemodialysis patients and healthy volunteers" measured-compound="" parameterization="" topology=""></dbs-pgx>
+<div class="pk-model-meta" hidden drug="clopidogrel" model-id="Clopidogrel_Grafeneder2024_hv_n_16_hemodialysis_patients_and" status="" stale="true" population="hemodialysis patients and healthy volunteers" measured-compound="" parameterization="" topology=""></div>
 
 **Parameterization:** not captured.
 

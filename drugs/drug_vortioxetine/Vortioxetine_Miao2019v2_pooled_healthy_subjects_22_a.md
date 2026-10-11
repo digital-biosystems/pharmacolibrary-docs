@@ -31,8 +31,7 @@ Independently confirmed by `gpt-oss:120b`.
 Miao J et al., Pharmacokinetics and Safety of Vortioxe…, Advances in therapy (2019)
   ·  DOI: [10.1007/s12325-019-01092-4](https://doi.org/10.1007/s12325-019-01092-4)
 
-## Model component
-<dbs-pgx drug="vortioxetine" model-id="Vortioxetine_Miao2019v2_pooled_healthy_subjects_22_a" status="rejected" stale="true" population="healthy Chinese subjects and Chinese patients with MDD" measured-compound="vortioxetine" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="vortioxetine" model-id="Vortioxetine_Miao2019v2_pooled_healthy_subjects_22_a" status="rejected" stale="true" population="healthy Chinese subjects and Chinese patients with MDD" measured-compound="vortioxetine" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 3 extracted.

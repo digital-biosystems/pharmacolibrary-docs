@@ -21,8 +21,7 @@
 Yukawa E et al., Population pharmacokinetics of haloperi…, Clinical pharmacokinetics (2002)
   ·  DOI: [10.2165/00003088-200241020-00006](https://doi.org/10.2165/00003088-200241020-00006)
 
-## Model component
-<dbs-pgx drug="haloperidol" model-id="Haloperidol_Yukawa2002_reference" status="rejected" stale="false" population="Japanese patients with psychiatric disorders" measured-compound="haloperidol" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="haloperidol" model-id="Haloperidol_Yukawa2002_reference" status="rejected" stale="false" population="Japanese patients with psychiatric disorders" measured-compound="haloperidol" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 1 extracted.

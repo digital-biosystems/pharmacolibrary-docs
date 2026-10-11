@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Stott KE et al., Population pharmacokinetics of liposoma…, The Journal of antimicrobia… (2022)
   ·  DOI: [10.1093/jac/dkac389](https://doi.org/10.1093/jac/dkac389)
 
-## Model component
-<dbs-pgx drug="amphotericin B" model-id="AmphotericinB_Stott2022_reference" status="extracted" stale="true" population="adults with HIV-associated cryptococcal meningoencephalitis" measured-compound="liposomal amphotericin B" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="amphotericin B" model-id="AmphotericinB_Stott2022_reference" status="extracted" stale="true" population="adults with HIV-associated cryptococcal meningoencephalitis" measured-compound="liposomal amphotericin B" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameters:** 3 extracted.

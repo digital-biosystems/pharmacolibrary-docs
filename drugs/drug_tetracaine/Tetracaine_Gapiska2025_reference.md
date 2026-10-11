@@ -27,8 +27,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on paramet
 Gapińska N et al., Effect of SSR504734, a Selective Glycin…, ACS chemical neuroscience (2025)
   ·  DOI: [10.1021/acschemneuro.5c00039](https://doi.org/10.1021/acschemneuro.5c00039)
 
-## Model component
-<dbs-pgx drug="tetracaine" model-id="Tetracaine_Gapiska2025_reference" status="extracted" stale="false" population="" measured-compound="tetracaine" parameterization="apparent" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="tetracaine" model-id="Tetracaine_Gapiska2025_reference" status="extracted" stale="false" population="" measured-compound="tetracaine" parameterization="apparent" topology="2C"></div>
 
 **Model structure:** 2-compartment, oral mammillary model — template `PK_2C_enteral`.  
 **Parameters:** 3 extracted.

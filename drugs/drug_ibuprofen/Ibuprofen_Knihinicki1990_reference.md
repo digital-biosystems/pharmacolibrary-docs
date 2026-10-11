@@ -33,8 +33,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on paramet
 Knihinicki RD et al., Stereoselective disposition of ibuprofe…, Chirality (1990)
   ·  DOI: [10.1002/chir.530020303](https://doi.org/10.1002/chir.530020303)
 
-## Model component
-<dbs-pgx drug="ibuprofen" model-id="Ibuprofen_Knihinicki1990_reference" status="extracted" stale="true" population="rats" measured-compound="ibuprofen" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="ibuprofen" model-id="Ibuprofen_Knihinicki1990_reference" status="extracted" stale="true" population="rats" measured-compound="ibuprofen" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameters:** 2 extracted.

@@ -27,8 +27,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on paramet
 Young RA et al., Doxazosin. A review of its pharmacodyna…, Drugs (1988)
   ·  DOI: [10.2165/00003495-198835050-00003](https://doi.org/10.2165/00003495-198835050-00003)
 
-## Model component
-<dbs-pgx drug="doxazosin" model-id="Doxazosin_Young1988_reference" status="curated_candidate" stale="false" population="unknown" measured-compound="doxazosin" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="doxazosin" model-id="Doxazosin_Young1988_reference" status="curated_candidate" stale="false" population="unknown" measured-compound="doxazosin" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameters:** 2 extracted.

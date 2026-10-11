@@ -21,8 +21,7 @@
 Campillo JA et al., Disposition of Dibekacin in patients un…, European journal of clinica… (1980)
   ·  DOI: [10.1007/BF00561393](https://doi.org/10.1007/BF00561393)
 
-## Model component
-<dbs-pgx drug="dibekacin" model-id="Dibekacin_Campillo1980_reference" status="rejected" stale="false" population="patients with terminal renal impairment undergoing haemodialysis" measured-compound="dibekacin" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="dibekacin" model-id="Dibekacin_Campillo1980_reference" status="rejected" stale="false" population="patients with terminal renal impairment undergoing haemodialysis" measured-compound="dibekacin" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

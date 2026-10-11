@@ -30,8 +30,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Sangrador G et al., Clinical pharmacokinetics of intravenou…, Journal of clinical pharmac… (1989)
   ·  DOI: [10.1111/j.1365-2710.1989.tb00252.x](https://doi.org/10.1111/j.1365-2710.1989.tb00252.x)
 
-## Model component
-<dbs-pgx drug="flecainide" model-id="Flecainide_Sangrador1989_reference" status="rejected" stale="true" population="critically ill patients with acute myocardial infarction" measured-compound="flecainide" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="flecainide" model-id="Flecainide_Sangrador1989_reference" status="rejected" stale="true" population="critically ill patients with acute myocardial infarction" measured-compound="flecainide" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 2 extracted.

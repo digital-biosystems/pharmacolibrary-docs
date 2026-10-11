@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on paramet
 Alshehri A et al., Population pharmacokinetic model of ive…, PLoS neglected tropical dis… (2023)
   ·  DOI: [10.1371/journal.pntd.0011319](https://doi.org/10.1371/journal.pntd.0011319)
 
-## Model component
-<dbs-pgx drug="blood plasma" model-id="BloodPlasma_Alshehri2023_reference" status="extracted" stale="true" population="adults with lymphatic filariasis and healthy adults" measured-compound="blood_plasma" parameterization="apparent" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="blood plasma" model-id="BloodPlasma_Alshehri2023_reference" status="extracted" stale="true" population="adults with lymphatic filariasis and healthy adults" measured-compound="blood_plasma" parameterization="apparent" topology="2C"></div>
 
 **Model structure:** 2-compartment, oral mammillary model — template `PK_2C_enteral`.  
 **Parameters:** 6 extracted.

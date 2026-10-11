@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the val
 Farrell C et al., Population pharmacokinetic/pharmacodyna…, British journal of clinical… (2014)
   ·  DOI: [10.1111/bcp.12244](https://doi.org/10.1111/bcp.12244)
 
-## Model component
-<dbs-pgx drug="eltrombopag" model-id="Eltrombopag_Farrell2014_reference" status="extracted" stale="true" population="healthy volunteers and subjects with chronic liver disease" measured-compound="eltrombopag" parameterization="apparent" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="eltrombopag" model-id="Eltrombopag_Farrell2014_reference" status="extracted" stale="true" population="healthy volunteers and subjects with chronic liver disease" measured-compound="eltrombopag" parameterization="apparent" topology="2C"></div>
 
 **Model structure:** 2-compartment, oral mammillary model — template `PK_2C_enteral`.  
 **Parameters:** 7 extracted.

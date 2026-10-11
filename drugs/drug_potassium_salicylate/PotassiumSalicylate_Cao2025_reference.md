@@ -21,8 +21,7 @@
 Cao M et al., Safety, efficacy, and immunogenicity of…, Gene therapy (2025)
   ·  DOI: [10.1038/s41434-025-00512-1](https://doi.org/10.1038/s41434-025-00512-1)
 
-## Model component
-<dbs-pgx drug="potassium salicylate" model-id="PotassiumSalicylate_Cao2025_reference" status="rejected" stale="false" population="" measured-compound="potassium_salicylate" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="potassium salicylate" model-id="PotassiumSalicylate_Cao2025_reference" status="rejected" stale="false" population="" measured-compound="potassium_salicylate" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment; no model was built for this record.  
 **Parameters:** 4 extracted.

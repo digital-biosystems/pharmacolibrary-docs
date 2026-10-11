@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Fu M et al., Pharmacokinetics and pharmacodynamic ef…, Journal of clinical pharmac… (1987)
   ·  DOI: [10.1002/j.1552-4604.1987.tb02169.x](https://doi.org/10.1002/j.1552-4604.1987.tb02169.x)
 
-## Model component
-<dbs-pgx drug="diltiazem" model-id="Diltiazem_Fu1987_reference" status="rejected" stale="true" population="healthy adults" measured-compound="diltiazem" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="diltiazem" model-id="Diltiazem_Fu1987_reference" status="rejected" stale="true" population="healthy adults" measured-compound="diltiazem" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 2 extracted.

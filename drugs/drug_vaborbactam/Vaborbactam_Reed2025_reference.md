@@ -23,8 +23,7 @@
 Reed G et al., Population pharmacokinetics of meropene…, Antimicrobial agents and ch… (2025)
   ·  DOI: [10.1128/aac.00108-25](https://doi.org/10.1128/aac.00108-25)
 
-## Model component
-<dbs-pgx drug="Vaborbactam" model-id="Vaborbactam_Reed2025_reference" status="needs_review" stale="false" population="acutely ill hospitalized patients with various degrees of renal dysfunction including continuous renal replacement therapy" measured-compound="vaborbactam" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="Vaborbactam" model-id="Vaborbactam_Reed2025_reference" status="needs_review" stale="false" population="acutely ill hospitalized patients with various degrees of renal dysfunction including continuous renal replacement therapy" measured-compound="vaborbactam" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 5 extracted.

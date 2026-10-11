@@ -27,8 +27,7 @@ Nothing in the extracted data describes the drug's disposition, so there is no m
 Jacobs BAW et al., Pharmacokinetics of Capecitabine and Fo…, CPT: pharmacometrics & syst… (2019)
   ·  DOI: [10.1002/psp4.12474](https://doi.org/10.1002/psp4.12474)
 
-## Model component
-<dbs-pgx drug="capecitabine" model-id="Capecitabine_Jacobs2019_reference" status="rejected" stale="false" population="heterogeneous population of cancer patients" measured-compound="capecitabine" parameterization="mechanistic" topology="general_linear"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="capecitabine" model-id="Capecitabine_Jacobs2019_reference" status="rejected" stale="false" population="heterogeneous population of cancer patients" measured-compound="capecitabine" parameterization="mechanistic" topology="general_linear"></div>
 
 **Model structure:** general linear; no model was built for this record.  
 **Parameters:** 0 extracted.

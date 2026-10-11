@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on paramet
 Gawarammana IB et al., Medical management of paraquat ingestion, British journal of clinical… (2011)
   ·  DOI: [10.1111/j.1365-2125.2011.04026.x](https://doi.org/10.1111/j.1365-2125.2011.04026.x)
 
-## Model component
-<dbs-pgx drug="dexamethasone" model-id="Dexamethasone_Gawarammana2011_reference" status="needs_review" stale="true" population="" measured-compound="dexamethasone" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="dexamethasone" model-id="Dexamethasone_Gawarammana2011_reference" status="needs_review" stale="true" population="" measured-compound="dexamethasone" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 2 extracted.

@@ -30,8 +30,7 @@ Independently confirmed by `gpt-oss:120b`.
 Liu S et al., Pharmacokinetic and pharmacodynamic mod…, BMC pharmacology & toxicolo… (2017)
   ·  DOI: [10.1186/s40360-017-0161-6](https://doi.org/10.1186/s40360-017-0161-6)
 
-## Model component
-<dbs-pgx drug="mitiglinide" model-id="Mitiglinide_Liu2017_reference" status="needs_review" stale="true" population="healthy Chinese volunteers" measured-compound="mitiglinide" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="mitiglinide" model-id="Mitiglinide_Liu2017_reference" status="needs_review" stale="true" population="healthy Chinese volunteers" measured-compound="mitiglinide" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 4 extracted.

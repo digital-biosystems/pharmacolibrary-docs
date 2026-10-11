@@ -33,8 +33,7 @@ Independently confirmed by `gpt-oss:120b`.
 Casbeer HC et al., Pharmacokinetics and pharmacodynamic ef…, Veterinary journal (London,… (2013)
   ·  DOI: [10.1016/j.tvjl.2012.12.006](https://doi.org/10.1016/j.tvjl.2012.12.006)
 
-## Model component
-<dbs-pgx drug="tolazoline" model-id="Tolazoline_Casbeer2013_reference" status="extracted" stale="true" population="healthy adult horses" measured-compound="tolazoline" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="tolazoline" model-id="Tolazoline_Casbeer2013_reference" status="extracted" stale="true" population="healthy adult horses" measured-compound="tolazoline" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameters:** 3 extracted.

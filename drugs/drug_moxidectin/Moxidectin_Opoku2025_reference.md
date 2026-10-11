@@ -21,8 +21,7 @@
 Opoku NO et al., Identification of a moxidectin dose for…, Parasites & vectors (2025)
   ·  DOI: [10.1186/s13071-025-06891-z](https://doi.org/10.1186/s13071-025-06891-z)
 
-## Model component
-<dbs-pgx drug="moxidectin" model-id="Moxidectin_Opoku2025_reference" status="rejected" stale="false" population="children and adolescents aged 4-17 years in an onchocerciasis-endemic area of Ghana (model also incorporates adult data)" measured-compound="moxidectin" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="moxidectin" model-id="Moxidectin_Opoku2025_reference" status="rejected" stale="false" population="children and adolescents aged 4-17 years in an onchocerciasis-endemic area of Ghana (model also incorporates adult data)" measured-compound="moxidectin" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 4 extracted.

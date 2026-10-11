@@ -20,8 +20,7 @@
 Nasser A et al., Model-based comparison of subcutaneous…, Journal of pharmacokinetics… (2024)
   ·  DOI: [10.1007/s10928-024-09914-x](https://doi.org/10.1007/s10928-024-09914-x)
 
-## Model component
-<dbs-pgx drug="apomorphine" model-id="Apomorphine_Nasser2024_sublingual" status="rejected" stale="false" population="hypothetical subjects" measured-compound="apomorphine" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="apomorphine" model-id="Apomorphine_Nasser2024_sublingual" status="rejected" stale="false" population="hypothetical subjects" measured-compound="apomorphine" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 9 extracted.

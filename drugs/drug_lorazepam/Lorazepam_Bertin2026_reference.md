@@ -21,8 +21,7 @@
 Bertin S et al., Population Pharmacokinetics of Propofol…, Clinical pharmacokinetics (2026)
   ·  DOI: [10.1007/s40262-025-01585-2](https://doi.org/10.1007/s40262-025-01585-2)
 
-## Model component
-<dbs-pgx drug="lorazepam" model-id="Lorazepam_Bertin2026_reference" status="rejected" stale="false" population="" measured-compound="lorazepam" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="lorazepam" model-id="Lorazepam_Bertin2026_reference" status="rejected" stale="false" population="" measured-compound="lorazepam" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment; no model was built for this record.  
 **Parameters:** 3 extracted.

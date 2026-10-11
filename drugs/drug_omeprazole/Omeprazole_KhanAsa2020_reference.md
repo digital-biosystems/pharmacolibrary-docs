@@ -29,8 +29,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on paramet
 Khan-Asa B et al., Impact of Albumin and Omeprazole on Ste…, Antibiotics (Basel, Switzer… (2020)
   ·  DOI: [10.3390/antibiotics9090574](https://doi.org/10.3390/antibiotics9090574)
 
-## Model component
-<dbs-pgx drug="omeprazole" model-id="Omeprazole_KhanAsa2020_reference" status="needs_review" stale="false" population="" measured-compound="omeprazole" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="omeprazole" model-id="Omeprazole_KhanAsa2020_reference" status="needs_review" stale="false" population="" measured-compound="omeprazole" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 3 extracted.

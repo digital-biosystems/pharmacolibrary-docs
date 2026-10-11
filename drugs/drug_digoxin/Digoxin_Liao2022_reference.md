@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on paramet
 Liao M et al., Clinical Pharmacokinetics and Pharmacod…, Clinical pharmacokinetics (2022)
   ·  DOI: [10.1007/s40262-022-01157-8](https://doi.org/10.1007/s40262-022-01157-8)
 
-## Model component
-<dbs-pgx drug="digoxin" model-id="Digoxin_Liao2022_reference" status="extracted" stale="true" population="" measured-compound="digoxin" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="digoxin" model-id="Digoxin_Liao2022_reference" status="extracted" stale="true" population="" measured-compound="digoxin" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 2 extracted.

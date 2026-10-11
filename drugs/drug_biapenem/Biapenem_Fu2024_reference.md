@@ -21,8 +21,7 @@
 Fu G et al., An insight into pharmacokinetics and do…, Frontiers in pharmacology (2024)
   ·  DOI: [10.3389/fphar.2024.1396994](https://doi.org/10.3389/fphar.2024.1396994)
 
-## Model component
-<dbs-pgx drug="biapenem" model-id="Biapenem_Fu2024_reference" status="extracted" stale="false" population="" measured-compound="biapenem" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="biapenem" model-id="Biapenem_Fu2024_reference" status="extracted" stale="false" population="" measured-compound="biapenem" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameters:** 2 extracted.

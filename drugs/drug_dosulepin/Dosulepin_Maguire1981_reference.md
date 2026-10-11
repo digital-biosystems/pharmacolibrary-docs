@@ -28,8 +28,7 @@ Both metabolites (dothiepin S-oxide and northiaden, each with 0 compartments) ar
 Maguire KP et al., Metabolism and pharmacokinetics of doth…, British journal of clinical… (1981)
   ·  DOI: [10.1111/j.1365-2125.1981.tb01235.x](https://doi.org/10.1111/j.1365-2125.1981.tb01235.x)
 
-## Model component
-<dbs-pgx drug="dosulepin" model-id="Dosulepin_Maguire1981_reference" status="rejected" stale="true" population="healthy volunteers" measured-compound="dothiepin" parameterization="apparent" topology="general_linear"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="dosulepin" model-id="Dosulepin_Maguire1981_reference" status="rejected" stale="true" population="healthy volunteers" measured-compound="dothiepin" parameterization="apparent" topology="general_linear"></div>
 
 **Model structure:** general linear; no model was built for this record.  
 **Parameters:** 7 extracted.

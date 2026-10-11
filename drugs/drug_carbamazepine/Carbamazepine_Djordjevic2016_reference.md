@@ -27,8 +27,7 @@ A volume and a clearance/elimination estimate from this paper are needed to buil
 Djordjevic N et al., CYP1A2 genotype affects carbamazepine p…, European journal of clinica… (2016)
   ·  DOI: [10.1007/s00228-015-2006-9](https://doi.org/10.1007/s00228-015-2006-9)
 
-## Model component
-<dbs-pgx drug="carbamazepine" model-id="Carbamazepine_Djordjevic2016_reference" status="needs_review" stale="false" population="pediatric epileptic patients" measured-compound="carbamazepine" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="carbamazepine" model-id="Carbamazepine_Djordjevic2016_reference" status="needs_review" stale="false" population="pediatric epileptic patients" measured-compound="carbamazepine" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 3 extracted.

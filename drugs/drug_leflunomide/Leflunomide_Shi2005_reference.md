@@ -22,8 +22,7 @@
 Shi J et al., Population pharmacokinetics of the acti…, Journal of pharmacokinetics… (2005)
   ·  DOI: [10.1007/s10928-005-0049-8](https://doi.org/10.1007/s10928-005-0049-8)
 
-## Model component
-<dbs-pgx drug="leflunomide" model-id="Leflunomide_Shi2005_reference" status="rejected" stale="false" population="pediatric subjects with polyarticular course juvenile rheumatoid arthritis" measured-compound="tereflunomide" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="leflunomide" model-id="Leflunomide_Shi2005_reference" status="rejected" stale="false" population="pediatric subjects with polyarticular course juvenile rheumatoid arthritis" measured-compound="tereflunomide" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

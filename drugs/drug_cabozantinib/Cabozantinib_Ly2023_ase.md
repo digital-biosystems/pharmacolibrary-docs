@@ -21,8 +21,7 @@
 Ly NS et al., Population Pharmacokinetics and Exposur…, Clinical pharmacokinetics (2023)
   ·  DOI: [10.1007/s40262-023-01210-0](https://doi.org/10.1007/s40262-023-01210-0)
 
-## Model component
-<dbs-pgx drug="cabozantinib" model-id="Cabozantinib_Ly2023_ase" status="extracted" stale="false" population="patients with various cancer types and healthy volunteers" measured-compound="cabozantinib" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="cabozantinib" model-id="Cabozantinib_Ly2023_ase" status="extracted" stale="false" population="patients with various cancer types and healthy volunteers" measured-compound="cabozantinib" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 7 extracted, plus 2 covariate effects.

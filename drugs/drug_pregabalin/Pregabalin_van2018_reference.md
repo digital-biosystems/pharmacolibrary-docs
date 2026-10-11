@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the val
 van Esdonk MJ et al., Population Pharmacokinetic/Pharmacodyna…, CPT: pharmacometrics & syst… (2018)
   ·  DOI: [10.1002/psp4.12318](https://doi.org/10.1002/psp4.12318)
 
-## Model component
-<dbs-pgx drug="pregabalin" model-id="Pregabalin_van2018_reference" status="rejected" stale="true" population="healthy adults" measured-compound="pregabalin" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="pregabalin" model-id="Pregabalin_van2018_reference" status="rejected" stale="true" population="healthy adults" measured-compound="pregabalin" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

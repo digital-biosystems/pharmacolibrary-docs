@@ -20,8 +20,7 @@
 Morcos PN et al., Copanlisib population pharmacokinetics…, CPT: pharmacometrics & syst… (2023)
   ·  DOI: [10.1002/psp4.13000](https://doi.org/10.1002/psp4.13000)
 
-## Model component
-<dbs-pgx drug="copanlisib" model-id="Copanlisib_Morcos2023_reference" status="rejected" stale="false" population="patients across nine phase I–III studies" measured-compound="copanlisib" parameterization="apparent" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="copanlisib" model-id="Copanlisib_Morcos2023_reference" status="rejected" stale="false" population="patients across nine phase I–III studies" measured-compound="copanlisib" parameterization="apparent" topology="2C"></div>
 
 **Model structure:** 2-compartment; no model was built for this record.  
 **Parameters:** 7 extracted.

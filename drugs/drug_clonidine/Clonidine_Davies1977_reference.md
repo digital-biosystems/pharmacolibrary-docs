@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Davies DS et al., Pharmacokinetics and concentration-effe…, Clinical pharmacology and t… (1977)
   ·  DOI: [10.1002/cpt1977215593](https://doi.org/10.1002/cpt1977215593)
 
-## Model component
-<dbs-pgx drug="clonidine" model-id="Clonidine_Davies1977_reference" status="needs_review" stale="true" population="normotensive subjects" measured-compound="clonidine" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="clonidine" model-id="Clonidine_Davies1977_reference" status="needs_review" stale="true" population="normotensive subjects" measured-compound="clonidine" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 3 extracted.

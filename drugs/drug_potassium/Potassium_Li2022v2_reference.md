@@ -21,8 +21,7 @@
 Li Q et al., Population pharmacokinetic/pharmacodyna…, Frontiers in pharmacology (2022)
   ·  DOI: [10.3389/fphar.2022.966176](https://doi.org/10.3389/fphar.2022.966176)
 
-## Model component
-<dbs-pgx drug="Potassium" model-id="Potassium_Li2022v2_reference" status="extracted" stale="false" population="" measured-compound="potassium" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="Potassium" model-id="Potassium_Li2022v2_reference" status="extracted" stale="false" population="" measured-compound="potassium" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 3 extracted.

@@ -20,8 +20,7 @@
 Agbo F et al., Population pharmacokinetic analysis of…, Clinical and translational… (2021)
   ·  DOI: [10.1111/cts.13008](https://doi.org/10.1111/cts.13008)
 
-## Model component
-<dbs-pgx drug="apomorphine" model-id="Apomorphine_Agbo2021_reference" status="rejected" stale="false" population="healthy subjects and patients with Parkinson&#39;s disease" measured-compound="apomorphine" parameterization="apparent" topology="parent_metabolite"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="apomorphine" model-id="Apomorphine_Agbo2021_reference" status="rejected" stale="false" population="healthy subjects and patients with Parkinson&#39;s disease" measured-compound="apomorphine" parameterization="apparent" topology="parent_metabolite"></div>
 
 **Model structure:** parent + metabolite; no model was built for this record.  
 **Parameters:** 8 extracted, plus 7 covariate effects.

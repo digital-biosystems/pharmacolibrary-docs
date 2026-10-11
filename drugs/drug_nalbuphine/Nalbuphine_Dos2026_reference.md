@@ -23,8 +23,7 @@
 Dos Santos EAR et al., Pharmacokinetics of Intravenous and Int…, Journal of veterinary pharm… (2026)
   ·  DOI: [10.1111/jvp.70099](https://doi.org/10.1111/jvp.70099)
 
-## Model component
-<dbs-pgx drug="nalbuphine" model-id="Nalbuphine_Dos2026_reference" status="rejected" stale="false" population="isoflurane-anesthetized chickens" measured-compound="nalbuphine" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="nalbuphine" model-id="Nalbuphine_Dos2026_reference" status="rejected" stale="false" population="isoflurane-anesthetized chickens" measured-compound="nalbuphine" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

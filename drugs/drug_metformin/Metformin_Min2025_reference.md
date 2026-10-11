@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on paramet
 Min JS et al., A Comprehensive Review on the Pharmacok…, Drug design, development an… (2025)
   ·  DOI: [10.2147/dddt.s506957](https://doi.org/10.2147/dddt.s506957)
 
-## Model component
-<dbs-pgx drug="metformin" model-id="Metformin_Min2025_reference" status="extracted" stale="true" population="" measured-compound="metformin" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="metformin" model-id="Metformin_Min2025_reference" status="extracted" stale="true" population="" measured-compound="metformin" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 2 extracted.

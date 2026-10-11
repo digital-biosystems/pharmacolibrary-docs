@@ -28,8 +28,7 @@ Nothing in the extracted data describes the drug's disposition, so there is no m
 Nelson RL et al., Clinical pharmacokinetics of vindesine, Cancer chemotherapy and pha… (1979)
   ·  DOI: [10.1007/BF00257188](https://doi.org/10.1007/BF00257188)
 
-## Model component
-<dbs-pgx drug="vindesine" model-id="Vindesine_Nelson1979_reference" status="rejected" stale="true" population="patients with advanced cancer" measured-compound="vindesine" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="vindesine" model-id="Vindesine_Nelson1979_reference" status="rejected" stale="true" population="patients with advanced cancer" measured-compound="vindesine" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

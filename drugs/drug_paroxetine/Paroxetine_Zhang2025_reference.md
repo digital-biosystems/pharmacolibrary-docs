@@ -29,8 +29,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on paramet
 Zhang C et al., Drug-drug interaction of paroxetine on…, Frontiers in psychiatry (2025)
   ·  DOI: [10.3389/fpsyt.2025.1538996](https://doi.org/10.3389/fpsyt.2025.1538996)
 
-## Model component
-<dbs-pgx drug="paroxetine" model-id="Paroxetine_Zhang2025_reference" status="extracted" stale="true" population="" measured-compound="paroxetine" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="paroxetine" model-id="Paroxetine_Zhang2025_reference" status="extracted" stale="true" population="" measured-compound="paroxetine" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 3 extracted.

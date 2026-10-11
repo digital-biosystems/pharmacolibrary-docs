@@ -31,8 +31,7 @@ Independently confirmed by `gpt-oss:120b`.
 Albanell-Fernández M et al., A Review of Vancomycin, Gentamicin, and…, Clinical pharmacokinetics (2025)
   ·  DOI: [10.1007/s40262-024-01459-z](https://doi.org/10.1007/s40262-024-01459-z)
 
-## Model component
-<dbs-pgx drug="amoxicillin" model-id="Amoxicillin_AlbanellFernndez2025_reference" status="extracted" stale="true" population="neonates and infants with no previous pathologies" measured-compound="amoxicillin" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="amoxicillin" model-id="Amoxicillin_AlbanellFernndez2025_reference" status="extracted" stale="true" population="neonates and infants with no previous pathologies" measured-compound="amoxicillin" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment, IV mammillary model — template `PK_2C`.  
 **Parameters:** 4 extracted.

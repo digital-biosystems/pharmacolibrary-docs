@@ -33,8 +33,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Overgaard RV et al., Population Pharmacokinetics of Semaglut…, Diabetes therapy : research… (2019)
   ·  DOI: [10.1007/s13300-019-0581-y](https://doi.org/10.1007/s13300-019-0581-y)
 
-## Model component
-<dbs-pgx drug="semaglutide" model-id="Semaglutide_Overgaard2019_one_compartment_model_from_phase_3" status="needs_review" stale="true" population="healthy subjects and those with type 2 diabetes" measured-compound="semaglutide" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="semaglutide" model-id="Semaglutide_Overgaard2019_one_compartment_model_from_phase_3" status="needs_review" stale="true" population="healthy subjects and those with type 2 diabetes" measured-compound="semaglutide" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 3 extracted, plus 1 covariate effect.

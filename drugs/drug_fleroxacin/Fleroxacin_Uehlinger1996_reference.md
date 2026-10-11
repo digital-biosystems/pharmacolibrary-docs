@@ -20,8 +20,7 @@
 Uehlinger DE et al., Pharmacokinetics of fleroxacin after mu…, Antimicrobial agents and ch… (1996)
   ·  DOI: [10.1128/AAC.40.8.1903](https://doi.org/10.1128/AAC.40.8.1903)
 
-## Model component
-<dbs-pgx drug="fleroxacin" model-id="Fleroxacin_Uehlinger1996_reference" status="needs_review" stale="false" population="patients receiving regular hemodialysis" measured-compound="fleroxacin" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="fleroxacin" model-id="Fleroxacin_Uehlinger1996_reference" status="needs_review" stale="false" population="patients receiving regular hemodialysis" measured-compound="fleroxacin" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 3 extracted.

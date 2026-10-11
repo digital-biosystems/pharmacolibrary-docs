@@ -23,8 +23,7 @@
 Gapińska N et al., Effect of SSR504734, a Selective Glycin…, ACS chemical neuroscience (2025)
   ·  DOI: [10.1021/acschemneuro.5c00039](https://doi.org/10.1021/acschemneuro.5c00039)
 
-## Model component
-<dbs-pgx drug="nimesulide" model-id="Nimesulide_Gapiska2025_reference" status="extracted" stale="false" population="" measured-compound="nimesulide" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="nimesulide" model-id="Nimesulide_Gapiska2025_reference" status="extracted" stale="false" population="" measured-compound="nimesulide" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 2 extracted.

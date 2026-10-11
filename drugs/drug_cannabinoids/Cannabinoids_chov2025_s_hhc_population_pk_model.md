@@ -31,8 +31,7 @@ The record reports tlag 0.49 h, kabs 0.41 h−1, V/F 1925.9 mL and CL/F 3732.1 m
 Šíchová K et al., Hexahydrocannabinol: pharmacokinetics,…, The international journal o… (2025)
   ·  DOI: [10.1093/ijnp/pyaf041](https://doi.org/10.1093/ijnp/pyaf041)
 
-## Model component
-<dbs-pgx drug="cannabinoids" model-id="Cannabinoids_chov2025_s_hhc_population_pk_model" status="extracted" stale="true" population="male Wistar rats" measured-compound="hexahydrocannabinol" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="cannabinoids" model-id="Cannabinoids_chov2025_s_hhc_population_pk_model" status="extracted" stale="true" population="male Wistar rats" measured-compound="hexahydrocannabinol" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 4 extracted.

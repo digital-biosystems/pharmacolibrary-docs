@@ -21,8 +21,7 @@
 Alonso R et al., Molecular Epidemiology, Antimicrobial S…, Pharmaceutics (2021)
   ·  DOI: [10.3390/pharmaceutics13101699](https://doi.org/10.3390/pharmaceutics13101699)
 
-## Model component
-<dbs-pgx drug="cefixime" model-id="Cefixime_Alonso2021_reference" status="extracted" stale="false" population="" measured-compound="cefixime" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="cefixime" model-id="Cefixime_Alonso2021_reference" status="extracted" stale="false" population="" measured-compound="cefixime" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 3 extracted.

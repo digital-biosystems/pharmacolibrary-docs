@@ -29,8 +29,7 @@ The check had no reference to compare the clearance against, so the value is unv
 van Lier D et al., Safety, tolerability, and pharmacokinet…, mAbs (2026)
   ·  DOI: [10.1080/19420862.2026.2671468](https://doi.org/10.1080/19420862.2026.2671468)
 
-## Model component
-<dbs-pgx drug="angiotensin II" model-id="AngiotensinIi_van2026_reference" status="needs_review" stale="true" population="" measured-compound="angiotensin_ii" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="angiotensin II" model-id="AngiotensinIi_van2026_reference" status="needs_review" stale="true" population="" measured-compound="angiotensin_ii" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 2 extracted.

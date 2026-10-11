@@ -28,8 +28,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Schiavon M et al., Modeling Subcutaneous Absorption of Lon…, IEEE transactions on bio-me… (2020)
   ·  DOI: [10.1109/TBME.2019.2919250](https://doi.org/10.1109/TBME.2019.2919250)
 
-## Model component
-<dbs-pgx drug="insulin glargine" model-id="InsulinGlargine_Schiavon2020_reference" status="rejected" stale="false" population="adults with type 1 diabetes" measured-compound="insulin_glargine" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="insulin glargine" model-id="InsulinGlargine_Schiavon2020_reference" status="rejected" stale="false" population="adults with type 1 diabetes" measured-compound="insulin_glargine" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

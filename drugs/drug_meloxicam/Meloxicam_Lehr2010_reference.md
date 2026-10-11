@@ -31,8 +31,7 @@ Only the abstract was available, so reported summary statistics stand in for a f
 Lehr T et al., Population pharmacokinetic modelling an…, Journal of veterinary pharm… (2010)
   ·  DOI: [10.1111/j.1365-2885.2009.01134.x](https://doi.org/10.1111/j.1365-2885.2009.01134.x)
 
-## Model component
-<dbs-pgx drug="meloxicam" model-id="Meloxicam_Lehr2010_reference" status="extracted" stale="true" population="healthy cats" measured-compound="meloxicam" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="meloxicam" model-id="Meloxicam_Lehr2010_reference" status="extracted" stale="true" population="healthy cats" measured-compound="meloxicam" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 4 extracted.

@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Tzeng TB et al., Population pharmacokinetics of rosuvast…, Current medical research an… (2008)
   ·  DOI: [10.1185/03007990802312807](https://doi.org/10.1185/03007990802312807)
 
-## Model component
-<dbs-pgx drug="rosuvastatin" model-id="Rosuvastatin_Tzeng2008_reference" status="needs_review" stale="true" population="healthy volunteers, subjects with dyslipidaemia, and renal failure patients" measured-compound="rosuvastatin" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="rosuvastatin" model-id="Rosuvastatin_Tzeng2008_reference" status="needs_review" stale="true" population="healthy volunteers, subjects with dyslipidaemia, and renal failure patients" measured-compound="rosuvastatin" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 2 extracted.

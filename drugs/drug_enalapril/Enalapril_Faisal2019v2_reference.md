@@ -29,8 +29,7 @@ No clearance, volume or rate constant of the model is reported in it. No paramet
 Faisal M et al., Simultaneous Semi-Mechanistic Populatio…, Frontiers in pediatrics (2019)
   ·  DOI: [10.3389/fped.2019.00281](https://doi.org/10.3389/fped.2019.00281)
 
-## Model component
-<dbs-pgx drug="enalapril" model-id="Enalapril_Faisal2019v2_reference" status="extracted" stale="true" population="healthy adults" measured-compound="enalapril" parameterization="mechanistic" topology="parent_metabolite"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="enalapril" model-id="Enalapril_Faisal2019v2_reference" status="extracted" stale="true" population="healthy adults" measured-compound="enalapril" parameterization="mechanistic" topology="parent_metabolite"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 3 extracted.

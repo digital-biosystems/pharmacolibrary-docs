@@ -31,8 +31,7 @@ Independently confirmed by `gpt-oss:120b`.
 Chelle P et al., Routine clinical care data for populati…, Journal of pharmacokinetics… (2019)
   ·  DOI: [10.1007/s10928-019-09637-4](https://doi.org/10.1007/s10928-019-09637-4)
 
-## Model component
-<dbs-pgx drug="von Willebrand factor" model-id="VonWillebrandFactor_Chelle2019_reference" status="rejected" stale="true" population="" measured-compound="von_willebrand_factor" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="von Willebrand factor" model-id="VonWillebrandFactor_Chelle2019_reference" status="rejected" stale="true" population="" measured-compound="von_willebrand_factor" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment; no model was built for this record.  
 **Parameters:** 4 extracted.

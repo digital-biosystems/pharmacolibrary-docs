@@ -21,8 +21,7 @@
 van Esdonk MJ et al., The power of modelling pulsatile profil…, Journal of pharmacokinetics… (2021)
   ·  DOI: [10.1007/s10928-021-09743-2](https://doi.org/10.1007/s10928-021-09743-2)
 
-## Model component
-<dbs-pgx drug="somatropin" model-id="Somatropin_van2021_reference" status="extracted" stale="false" population="" measured-compound="somatropin" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="somatropin" model-id="Somatropin_van2021_reference" status="extracted" stale="false" population="" measured-compound="somatropin" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 3 extracted.

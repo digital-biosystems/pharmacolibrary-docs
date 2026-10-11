@@ -20,8 +20,7 @@
 Das S et al., Dose selection for aztreonam-avibactam,…, European journal of clinica… (2024)
   ·  DOI: [10.1007/s00228-023-03609-x](https://doi.org/10.1007/s00228-023-03609-x)
 
-## Model component
-<dbs-pgx drug="aztreonam" model-id="Aztreonam_Das2024_reference" status="rejected" stale="false" population="patients with complicated infections (healthy subjects and patients with cIAI/cUTI)" measured-compound="aztreonam" parameterization="mechanistic" topology="3C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="aztreonam" model-id="Aztreonam_Das2024_reference" status="rejected" stale="false" population="patients with complicated infections (healthy subjects and patients with cIAI/cUTI)" measured-compound="aztreonam" parameterization="mechanistic" topology="3C"></div>
 
 **Model structure:** 3-compartment; no model was built for this record.  
 **Parameters:** 11 extracted, plus 10 covariate effects.

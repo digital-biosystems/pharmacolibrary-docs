@@ -29,8 +29,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on paramet
 Lv D et al., Population Pharmacokinetic Modeling Ana…, Drug design, development an… (2025)
   ·  DOI: [10.2147/dddt.s517282](https://doi.org/10.2147/dddt.s517282)
 
-## Model component
-<dbs-pgx drug="clopidogrel" model-id="Clopidogrel_Lv2025_reference" status="extracted" stale="true" population="" measured-compound="clopidogrel" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="clopidogrel" model-id="Clopidogrel_Lv2025_reference" status="extracted" stale="true" population="" measured-compound="clopidogrel" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment, IV mammillary model — template `PK_2C`.  
 **Parameters:** 4 extracted.

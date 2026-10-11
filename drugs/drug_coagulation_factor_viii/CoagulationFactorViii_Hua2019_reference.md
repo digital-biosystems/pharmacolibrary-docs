@@ -30,8 +30,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Hua BL et al., [Population pharmacokinetics of two rec…, Zhonghua xue ye xue za zhi… (2019)
   ·  DOI: [10.3760/cma.j.issn.0253-2727.2019.08.009](https://doi.org/10.3760/cma.j.issn.0253-2727.2019.08.009)
 
-## Model component
-<dbs-pgx drug="coagulation factor VIII" model-id="CoagulationFactorViii_Hua2019_reference" status="rejected" stale="true" population="patients with hemophilia A" measured-compound="coagulation_factor_viii" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="coagulation factor VIII" model-id="CoagulationFactorViii_Hua2019_reference" status="rejected" stale="true" population="patients with hemophilia A" measured-compound="coagulation_factor_viii" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

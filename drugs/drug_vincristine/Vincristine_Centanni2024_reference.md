@@ -29,8 +29,7 @@ Although the record lists CL 45.2 L/h, V1 23.3 L, Q 114 L/h and V2 576 L for vin
 Centanni M et al., Model-Informed Precision Dosing to Redu…, Clinical pharmacokinetics (2024)
   ·  DOI: [10.1007/s40262-023-01336-1](https://doi.org/10.1007/s40262-023-01336-1)
 
-## Model component
-<dbs-pgx drug="vincristine" model-id="Vincristine_Centanni2024_reference" status="extracted" stale="true" population="pediatric oncology patients" measured-compound="vincristine" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="vincristine" model-id="Vincristine_Centanni2024_reference" status="extracted" stale="true" population="pediatric oncology patients" measured-compound="vincristine" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment, IV mammillary model — template `PK_2C`.  
 **Parameters:** 5 extracted.

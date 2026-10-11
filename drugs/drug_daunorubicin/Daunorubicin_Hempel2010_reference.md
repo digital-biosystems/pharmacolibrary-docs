@@ -21,8 +21,7 @@
 Hempel G et al., Pharmacokinetics of daunorubicin and da…, Pediatric blood & cancer (2010)
   ·  DOI: [10.1002/pbc.22266](https://doi.org/10.1002/pbc.22266)
 
-## Model component
-<dbs-pgx drug="daunorubicin" model-id="Daunorubicin_Hempel2010_reference" status="needs_review" stale="false" population="paediatric patients with leukemia" measured-compound="daunorubicin" parameterization="apparent" topology="parent_metabolite"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="daunorubicin" model-id="Daunorubicin_Hempel2010_reference" status="needs_review" stale="false" population="paediatric patients with leukemia" measured-compound="daunorubicin" parameterization="apparent" topology="parent_metabolite"></div>
 
 **Model structure:** parent + metabolite; no model was built for this record.  
 **Parameters:** 2 extracted.

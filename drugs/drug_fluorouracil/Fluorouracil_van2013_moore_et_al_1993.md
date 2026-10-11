@@ -27,8 +27,7 @@ No clearance, volume or rate constant of the model is reported in it. No paramet
 AndréBp Van Kuilenburg a.b.vankuilenburg@amc.uva.nl Academic Medical Center Emma Children's Hospital & Department of Clinical Chemistry University of Amsterdam Laboratory Genetic Metabolic Diseases Meibergdreef 9 F0-220 1105 AZ Amsterdam The Netherlands et al., KEYWORDS: 5-fluorouracil n dihydropyrim… (2013)
   ·  DOI: [10.2217/PGS.13.54](https://doi.org/10.2217/PGS.13.54)
 
-## Model component
-<dbs-pgx drug="fluorouracil" model-id="Fluorouracil_van2013_moore_et_al_1993" status="rejected" stale="false" population="cancer patients" measured-compound="5-fluorouracil" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="fluorouracil" model-id="Fluorouracil_van2013_moore_et_al_1993" status="rejected" stale="false" population="cancer patients" measured-compound="5-fluorouracil" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

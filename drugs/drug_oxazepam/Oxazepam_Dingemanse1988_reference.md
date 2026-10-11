@@ -23,8 +23,7 @@
 Dingemanse J et al., Pharmacokinetic modeling of the anticon…, Journal of pharmacokinetics… (1988)
   ·  DOI: [10.1007/BF01062261](https://doi.org/10.1007/BF01062261)
 
-## Model component
-<dbs-pgx drug="oxazepam" model-id="Oxazepam_Dingemanse1988_reference" status="rejected" stale="false" population="rats" measured-compound="oxazepam" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="oxazepam" model-id="Oxazepam_Dingemanse1988_reference" status="rejected" stale="false" population="rats" measured-compound="oxazepam" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

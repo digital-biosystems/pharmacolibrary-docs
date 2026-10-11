@@ -21,8 +21,7 @@
 Caldwell JE et al., Pipecuronium and pancuronium: compariso…, British journal of anaesthe… (1988)
   ·  DOI: [10.1093/bja/61.6.693](https://doi.org/10.1093/bja/61.6.693)
 
-## Model component
-<dbs-pgx drug="Pipecuronium" model-id="Pipecuronium_Caldwell1988_reference" status="extracted" stale="false" population="ASA class I or II patients" measured-compound="pipecuronium and pancuronium" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="Pipecuronium" model-id="Pipecuronium_Caldwell1988_reference" status="extracted" stale="false" population="ASA class I or II patients" measured-compound="pipecuronium and pancuronium" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameters:** 2 extracted.

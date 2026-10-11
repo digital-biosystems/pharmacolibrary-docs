@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the val
 Nichols AI et al., Population Pharmacokinetics of Desvenla…, Clinical pharmacology in dr… (2018)
   ·  DOI: [10.1002/cpdd.419](https://doi.org/10.1002/cpdd.419)
 
-## Model component
-<dbs-pgx drug="desvenlafaxine" model-id="Desvenlafaxine_Nichols2018_reference" status="rejected" stale="true" population="healthy volunteers and patients with major depressive disorder (Korean and US)" measured-compound="desvenlafaxine" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="desvenlafaxine" model-id="Desvenlafaxine_Nichols2018_reference" status="rejected" stale="true" population="healthy volunteers and patients with major depressive disorder (Korean and US)" measured-compound="desvenlafaxine" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

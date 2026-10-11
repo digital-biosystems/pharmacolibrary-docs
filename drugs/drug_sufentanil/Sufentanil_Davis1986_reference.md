@@ -21,8 +21,7 @@
 Davis PJ et al., Clinical pharmacokinetics of the newer…, Clinical pharmacokinetics (1986)
   ·  DOI: [10.2165/00003088-198611010-00002](https://doi.org/10.2165/00003088-198611010-00002)
 
-## Model component
-<dbs-pgx drug="sufentanil" model-id="Sufentanil_Davis1986_reference" status="rejected" stale="false" population="adult patients" measured-compound="sufentanil" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="sufentanil" model-id="Sufentanil_Davis1986_reference" status="rejected" stale="false" population="adult patients" measured-compound="sufentanil" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

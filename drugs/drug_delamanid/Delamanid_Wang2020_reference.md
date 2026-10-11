@@ -20,8 +20,7 @@
 Wang X et al., Population Pharmacokinetic Analysis of…, Antimicrobial agents and ch… (2020)
   ·  DOI: [10.1128/AAC.01202-20](https://doi.org/10.1128/AAC.01202-20)
 
-## Model component
-<dbs-pgx drug="delamanid" model-id="Delamanid_Wang2020_reference" status="needs_review" stale="false" population="patients with pulmonary multidrug-resistant tuberculosis" measured-compound="delamanid" parameterization="apparent" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="delamanid" model-id="Delamanid_Wang2020_reference" status="needs_review" stale="false" population="patients with pulmonary multidrug-resistant tuberculosis" measured-compound="delamanid" parameterization="apparent" topology="2C"></div>
 
 **Model structure:** 2-compartment; no model was built for this record.  
 **Parameters:** 10 extracted, plus 3 covariate effects.

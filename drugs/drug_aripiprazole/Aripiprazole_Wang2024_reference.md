@@ -28,8 +28,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the val
 Wang Y et al., Population Pharmacokinetics and Dosing…, Clinical pharmacology in dr… (2024)
   ·  DOI: [10.1002/cpdd.1397](https://doi.org/10.1002/cpdd.1397)
 
-## Model component
-<dbs-pgx drug="aripiprazole" model-id="Aripiprazole_Wang2024_reference" status="rejected" stale="false" population="adults with schizophrenia or bipolar I disorder" measured-compound="aripiprazole" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="aripiprazole" model-id="Aripiprazole_Wang2024_reference" status="rejected" stale="false" population="adults with schizophrenia or bipolar I disorder" measured-compound="aripiprazole" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 2 extracted.

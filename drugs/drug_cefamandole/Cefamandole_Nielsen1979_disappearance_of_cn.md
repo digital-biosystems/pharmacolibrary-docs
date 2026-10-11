@@ -22,8 +22,7 @@
 Nielsen RL et al., Hydrolysis of cefamandole nafate in dia…, Antimicrobial agents and ch… (1979)
   ·  DOI: [10.1128/AAC.16.5.683](https://doi.org/10.1128/AAC.16.5.683)
 
-## Model component
-<dbs-pgx drug="cefamandole" model-id="Cefamandole_Nielsen1979_disappearance_of_cn" status="rejected" stale="false" population="dialysis patients and subjects with normal renal function" measured-compound="cefamandole" parameterization="mechanistic" topology="general_linear"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="cefamandole" model-id="Cefamandole_Nielsen1979_disappearance_of_cn" status="rejected" stale="false" population="dialysis patients and subjects with normal renal function" measured-compound="cefamandole" parameterization="mechanistic" topology="general_linear"></div>
 
 **Model structure:** general linear; no model was built for this record.  
 **Parameters:** 2 extracted.

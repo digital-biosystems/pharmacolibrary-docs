@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on bioavai
 Agoram B et al., Development and evaluation of a populat…, The AAPS journal (2006)
   ·  DOI: [10.1208/aapsj080364](https://doi.org/10.1208/aapsj080364)
 
-## Model component
-<dbs-pgx drug="darbepoetin alfa" model-id="DarbepoetinAlfa_Agoram2006_reference" status="needs_review" stale="true" population="patients with nonmyeloid malignancies and chemotherapy-induced anemia" measured-compound="darbepoetin_alfa" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="darbepoetin alfa" model-id="DarbepoetinAlfa_Agoram2006_reference" status="needs_review" stale="true" population="patients with nonmyeloid malignancies and chemotherapy-induced anemia" measured-compound="darbepoetin_alfa" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 4 extracted.

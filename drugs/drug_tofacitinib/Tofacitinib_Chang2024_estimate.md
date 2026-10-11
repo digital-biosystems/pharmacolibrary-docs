@@ -21,8 +21,7 @@
 Chang C et al., Tofacitinib pharmacokinetics in childre…, CPT: pharmacometrics & syst… (2024)
   ·  DOI: [10.1002/psp4.13104](https://doi.org/10.1002/psp4.13104)
 
-## Model component
-<dbs-pgx drug="tofacitinib" model-id="Tofacitinib_Chang2024_estimate" status="extracted" stale="false" population="children and adolescents with juvenile idiopathic arthritis" measured-compound="tofacitinib" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="tofacitinib" model-id="Tofacitinib_Chang2024_estimate" status="extracted" stale="false" population="children and adolescents with juvenile idiopathic arthritis" measured-compound="tofacitinib" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 4 extracted, plus 3 covariate effects.

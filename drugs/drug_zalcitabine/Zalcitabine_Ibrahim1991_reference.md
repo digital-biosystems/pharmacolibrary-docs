@@ -23,8 +23,7 @@
 Ibrahim SS et al., Pharmacokinetics of 2',3'-dideoxycytidi…, Journal of pharmaceutical s… (1991)
   ·  DOI: [10.1002/jps.2600800110](https://doi.org/10.1002/jps.2600800110)
 
-## Model component
-<dbs-pgx drug="zalcitabine" model-id="Zalcitabine_Ibrahim1991_reference" status="extracted" stale="false" population="rats administered high-dose DDC" measured-compound="2&#39;,3&#39;-dideoxycytidine (DDC; zalcitabine)" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="zalcitabine" model-id="Zalcitabine_Ibrahim1991_reference" status="extracted" stale="false" population="rats administered high-dose DDC" measured-compound="2&#39;,3&#39;-dideoxycytidine (DDC; zalcitabine)" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 7 extracted.

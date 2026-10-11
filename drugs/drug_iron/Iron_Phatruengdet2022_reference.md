@@ -33,8 +33,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Phatruengdet T et al., Pharmacokinetic/Pharmacodynamic Determi…, Nanotheranostics (2022)
   ·  DOI: [10.7150/ntno.63310](https://doi.org/10.7150/ntno.63310)
 
-## Model component
-<dbs-pgx drug="Iron" model-id="Iron_Phatruengdet2022_reference" status="needs_review" stale="true" population="rats" measured-compound="iron-tannic nanoparticles" parameterization="mechanistic" topology="parent_metabolite"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="Iron" model-id="Iron_Phatruengdet2022_reference" status="needs_review" stale="true" population="rats" measured-compound="iron-tannic nanoparticles" parameterization="mechanistic" topology="parent_metabolite"></div>
 
 **Model structure:** parent + metabolite; no model was built for this record.  
 **Parameters:** 5 extracted.

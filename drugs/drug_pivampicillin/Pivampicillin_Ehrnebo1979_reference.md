@@ -22,8 +22,7 @@
 Ehrnebo M et al., Pharmacokinetics of ampicillin and its…, Journal of pharmacokinetics… (1979)
   ·  DOI: [10.1007/BF01062386](https://doi.org/10.1007/BF01062386)
 
-## Model component
-<dbs-pgx drug="pivampicillin" model-id="Pivampicillin_Ehrnebo1979_reference" status="rejected" stale="false" population="healthy fasting male subjects" measured-compound="ampicillin" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="pivampicillin" model-id="Pivampicillin_Ehrnebo1979_reference" status="rejected" stale="false" population="healthy fasting male subjects" measured-compound="ampicillin" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

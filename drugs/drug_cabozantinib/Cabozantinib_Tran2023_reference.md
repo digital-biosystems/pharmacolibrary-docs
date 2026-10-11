@@ -23,8 +23,7 @@
 Tran BD et al., Cabozantinib exposure-response analysis…, Cancer chemotherapy and pha… (2023)
   ·  DOI: [10.1007/s00280-022-04500-9](https://doi.org/10.1007/s00280-022-04500-9)
 
-## Model component
-<dbs-pgx drug="cabozantinib" model-id="Cabozantinib_Tran2023_reference" status="needs_review" stale="false" population="healthy subjects and patients with various malignancies" measured-compound="cabozantinib" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="cabozantinib" model-id="Cabozantinib_Tran2023_reference" status="needs_review" stale="false" population="healthy subjects and patients with various malignancies" measured-compound="cabozantinib" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 3 extracted.

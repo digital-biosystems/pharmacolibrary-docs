@@ -31,8 +31,7 @@ The base model was simulated, not the covariate effects the record defines.
 Yu L et al., Development and validation of a populat…, BMC pharmacology & toxicolo… (2026)
   ·  DOI: [10.1186/s40360-026-01114-2](https://doi.org/10.1186/s40360-026-01114-2)
 
-## Model component
-<dbs-pgx drug="lacosamide" model-id="Lacosamide_Yu2026_reference" status="extracted" stale="true" population="adult patients with epilepsy" measured-compound="lacosamide" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="lacosamide" model-id="Lacosamide_Yu2026_reference" status="extracted" stale="true" population="adult patients with epilepsy" measured-compound="lacosamide" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 3 extracted, plus 2 covariate effects.

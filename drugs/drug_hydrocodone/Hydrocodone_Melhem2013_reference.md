@@ -28,8 +28,7 @@ Only the abstract was available, so reported summary statistics stand in for a f
 Melhem MR et al., Population pharmacokinetic analysis for…, Clinical pharmacokinetics (2013)
   ·  DOI: [10.1007/s40262-013-0081-6](https://doi.org/10.1007/s40262-013-0081-6)
 
-## Model component
-<dbs-pgx drug="hydrocodone" model-id="Hydrocodone_Melhem2013_reference" status="rejected" stale="true" population="unknown" measured-compound="hydrocodone" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="hydrocodone" model-id="Hydrocodone_Melhem2013_reference" status="rejected" stale="true" population="unknown" measured-compound="hydrocodone" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

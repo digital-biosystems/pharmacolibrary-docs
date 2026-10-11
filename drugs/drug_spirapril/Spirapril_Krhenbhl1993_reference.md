@@ -32,8 +32,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Krähenbühl S et al., Pharmacokinetics and haemodynamic effec…, European journal of clinica… (1993)
   ·  DOI: [10.1007/BF00315391](https://doi.org/10.1007/BF00315391)
 
-## Model component
-<dbs-pgx drug="spirapril" model-id="Spirapril_Krhenbhl1993_reference" status="needs_review" stale="true" population="patients with chronic liver disease and healthy subjects" measured-compound="spiraprilat" parameterization="apparent" topology="parent_metabolite"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="spirapril" model-id="Spirapril_Krhenbhl1993_reference" status="needs_review" stale="true" population="patients with chronic liver disease and healthy subjects" measured-compound="spiraprilat" parameterization="apparent" topology="parent_metabolite"></div>
 
 **Model structure:** parent + metabolite; no model was built for this record.  
 **Parameters:** 10 extracted.

@@ -23,8 +23,7 @@
 Pelligand L et al., Differential pharmacokinetics and pharm…, Journal of veterinary pharm… (2014)
   ·  DOI: [10.1111/jvp.12107](https://doi.org/10.1111/jvp.12107)
 
-## Model component
-<dbs-pgx drug="ketoprofen" model-id="Ketoprofen_Pelligand2014_reference" status="rejected" stale="false" population="cats with inflammation" measured-compound="ketoprofen" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="ketoprofen" model-id="Ketoprofen_Pelligand2014_reference" status="rejected" stale="false" population="cats with inflammation" measured-compound="ketoprofen" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 3 extracted.

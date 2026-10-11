@@ -21,8 +21,7 @@
 Ji T et al., Population Pharmacokinetics Analysis of…, Clinical pharmacology in dr… (2022)
   ·  DOI: [10.1002/cpdd.1038](https://doi.org/10.1002/cpdd.1038)
 
-## Model component
-<dbs-pgx drug="pemigatinib" model-id="Pemigatinib_Ji2022_reference" status="needs_review" stale="false" population="patients with advanced malignancies" measured-compound="pemigatinib" parameterization="apparent" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="pemigatinib" model-id="Pemigatinib_Ji2022_reference" status="needs_review" stale="false" population="patients with advanced malignancies" measured-compound="pemigatinib" parameterization="apparent" topology="2C"></div>
 
 **Model structure:** 2-compartment; no model was built for this record.  
 **Parameters:** 6 extracted, plus 3 covariate effects.

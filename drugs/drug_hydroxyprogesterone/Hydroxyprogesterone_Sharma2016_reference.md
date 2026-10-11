@@ -21,8 +21,7 @@
 Sharma S et al., Population pharmacokinetics of 17α-hydr…, British journal of clinical… (2016)
   ·  DOI: [10.1111/bcp.12990](https://doi.org/10.1111/bcp.12990)
 
-## Model component
-<dbs-pgx drug="hydroxyprogesterone" model-id="Hydroxyprogesterone_Sharma2016_reference" status="rejected" stale="false" population="pregnant women with singleton gestation" measured-compound="17α-hydroxyprogesterone caproate" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="hydroxyprogesterone" model-id="Hydroxyprogesterone_Sharma2016_reference" status="rejected" stale="false" population="pregnant women with singleton gestation" measured-compound="17α-hydroxyprogesterone caproate" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

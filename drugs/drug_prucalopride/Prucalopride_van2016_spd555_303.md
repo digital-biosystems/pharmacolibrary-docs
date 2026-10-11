@@ -30,8 +30,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the val
 van Schaick E et al., Development of a population pharmacokin…, Pharmacology research & per… (2016)
   ·  DOI: [10.1002/prp2.236](https://doi.org/10.1002/prp2.236)
 
-## Model component
-<dbs-pgx drug="prucalopride" model-id="Prucalopride_van2016_spd555_303" status="rejected" stale="true" population="children with functional constipation" measured-compound="prucalopride" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="prucalopride" model-id="Prucalopride_van2016_spd555_303" status="rejected" stale="true" population="children with functional constipation" measured-compound="prucalopride" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 5 extracted.

@@ -21,8 +21,7 @@
 Davies BE et al., Pharmacokinetics of ticarcillin in man, European journal of clinica… (1982)
   ·  DOI: [10.1007/BF00545973](https://doi.org/10.1007/BF00545973)
 
-## Model component
-<dbs-pgx drug="ticarcillin" model-id="Ticarcillin_Davies1982_reference" status="rejected" stale="false" population="healthy adults" measured-compound="ticarcillin" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="ticarcillin" model-id="Ticarcillin_Davies1982_reference" status="rejected" stale="false" population="healthy adults" measured-compound="ticarcillin" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

@@ -21,8 +21,7 @@
 Chen Y et al., Toward Model-Informed Precision Dosing…, Pharmaceutics (2024)
   ·  DOI: [10.3390/pharmaceutics16091122](https://doi.org/10.3390/pharmaceutics16091122)
 
-## Model component
-<dbs-pgx drug="remimazolam" model-id="Remimazolam_Chen2024_reference" status="rejected" stale="false" population="healthy Chinese volunteers" measured-compound="remimazolam" parameterization="mechanistic" topology="parent_metabolite"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="remimazolam" model-id="Remimazolam_Chen2024_reference" status="rejected" stale="false" population="healthy Chinese volunteers" measured-compound="remimazolam" parameterization="mechanistic" topology="parent_metabolite"></div>
 
 **Model structure:** parent + metabolite; no model was built for this record.  
 **Parameters:** 0 extracted, plus 2 covariate effects.

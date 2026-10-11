@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on `parame
 Delavenne X et al., Investigation of PK-PD drug-drug intera…, Fundamental & clinical phar… (2009)
   ·  DOI: [10.1111/j.1472-8206.2008.00642.x](https://doi.org/10.1111/j.1472-8206.2008.00642.x)
 
-## Model component
-<dbs-pgx drug="acenocoumarol" model-id="Acenocoumarol_Delavenne2009_reference" status="extracted" stale="true" population="healthy volunteers" measured-compound="acenocoumarol" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="acenocoumarol" model-id="Acenocoumarol_Delavenne2009_reference" status="extracted" stale="true" population="healthy volunteers" measured-compound="acenocoumarol" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 5 extracted.

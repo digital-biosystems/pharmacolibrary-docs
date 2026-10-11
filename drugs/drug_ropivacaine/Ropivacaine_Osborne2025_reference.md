@@ -21,8 +21,7 @@
 Osborne KW et al., Pharmacokinetics of Intraperitoneal Lid…, European journal of drug me… (2025)
   ·  DOI: [10.1007/s13318-025-00948-1](https://doi.org/10.1007/s13318-025-00948-1)
 
-## Model component
-<dbs-pgx drug="ropivacaine" model-id="Ropivacaine_Osborne2025_reference" status="rejected" stale="false" population="" measured-compound="ropivacaine" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="ropivacaine" model-id="Ropivacaine_Osborne2025_reference" status="rejected" stale="false" population="" measured-compound="ropivacaine" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 2 extracted.

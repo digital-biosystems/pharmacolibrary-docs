@@ -29,8 +29,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Stricker PA et al., Population pharmacokinetics of epsilon-…, British journal of anaesthe… (2013)
   ·  DOI: [10.1093/bja/aes507](https://doi.org/10.1093/bja/aes507)
 
-## Model component
-<dbs-pgx drug="aminocaproic acid" model-id="AminocaproicAcid_Stricker2013_reference" status="curated_candidate" stale="false" population="infants undergoing craniofacial reconstruction surgery" measured-compound="epsilon-aminocaproic acid" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="aminocaproic acid" model-id="AminocaproicAcid_Stricker2013_reference" status="curated_candidate" stale="false" population="infants undergoing craniofacial reconstruction surgery" measured-compound="epsilon-aminocaproic acid" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment, IV mammillary model — template `PK_2C`.  
 **Parameters:** 4 extracted.

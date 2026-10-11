@@ -25,8 +25,7 @@
 Sunnåker M; Leander J; Ericsson H et al. (2026). Pharmacology research & perspectives 14
   ·  DOI: [10.1002/prp2.70259](https://doi.org/10.1002/prp2.70259)
 
-## Model component
-<dbs-pgx drug="cadmium" model-id="Cadmium_Sunnker2026_reference" status="not_modelled" stale="false" population="" measured-compound="cadmium" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="cadmium" model-id="Cadmium_Sunnker2026_reference" status="not_modelled" stale="false" population="" measured-compound="cadmium" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameters:** 2 extracted.

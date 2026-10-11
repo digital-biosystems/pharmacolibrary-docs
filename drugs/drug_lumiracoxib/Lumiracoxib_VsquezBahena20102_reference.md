@@ -32,8 +32,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the lin
 Vásquez-Bahena DA et al., Pharmacokinetic-pharmacodynamic modelli…, British journal of pharmaco… (2010)
   ·  DOI: [10.1111/j.1476-5381.2009.00508.x](https://doi.org/10.1111/j.1476-5381.2009.00508.x)
 
-## Model component
-<dbs-pgx drug="lumiracoxib" model-id="Lumiracoxib_VsquezBahena20102_reference" status="" stale="true" population="female Wistar rats with carrageenan-induced hyperalgesia" measured-compound="" parameterization="" topology=""></dbs-pgx>
+<div class="pk-model-meta" hidden drug="lumiracoxib" model-id="Lumiracoxib_VsquezBahena20102_reference" status="" stale="true" population="female Wistar rats with carrageenan-induced hyperalgesia" measured-compound="" parameterization="" topology=""></div>
 
 **Model structure:** —; no model was built for this record.  
 **Parameters:** 0 extracted.

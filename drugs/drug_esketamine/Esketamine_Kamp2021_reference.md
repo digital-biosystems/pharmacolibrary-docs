@@ -20,8 +20,7 @@
 Kamp J et al., Stereoselective ketamine effect on card…, British journal of anaesthe… (2021)
   ·  DOI: [10.1016/j.bja.2021.02.034](https://doi.org/10.1016/j.bja.2021.02.034)
 
-## Model component
-<dbs-pgx drug="esketamine" model-id="Esketamine_Kamp2021_reference" status="rejected" stale="false" population="" measured-compound="esketamine" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="esketamine" model-id="Esketamine_Kamp2021_reference" status="rejected" stale="false" population="" measured-compound="esketamine" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 2 extracted.

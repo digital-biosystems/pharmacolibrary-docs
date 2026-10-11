@@ -21,8 +21,7 @@
 Suzuki K et al., Pharmacokinetics and dosing of arbekaci…, Pediatrics international :… (2003)
   ·  DOI: [10.1046/j.1442-200x.2003.01679.x](https://doi.org/10.1046/j.1442-200x.2003.01679.x)
 
-## Model component
-<dbs-pgx drug="arbekacin" model-id="Arbekacin_Suzuki2003_reference" status="extracted" stale="false" population="preterm and term newborn infants" measured-compound="arbekacin" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="arbekacin" model-id="Arbekacin_Suzuki2003_reference" status="extracted" stale="false" population="preterm and term newborn infants" measured-compound="arbekacin" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameters:** 2 extracted.

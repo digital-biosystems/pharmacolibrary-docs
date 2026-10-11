@@ -27,8 +27,7 @@ Without a unit the value cannot be converted, so the model cannot use it. A repo
 Yoon H et al., Influences of organic cation transporte…, The AAPS journal (2013)
   ·  DOI: [10.1208/s12248-013-9460-z](https://doi.org/10.1208/s12248-013-9460-z)
 
-## Model component
-<dbs-pgx drug="metformin" model-id="Metformin_Yoon2013_estimate_rse" status="needs_review" stale="false" population="healthy subjects" measured-compound="metformin" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="metformin" model-id="Metformin_Yoon2013_estimate_rse" status="needs_review" stale="false" population="healthy subjects" measured-compound="metformin" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 4 extracted.

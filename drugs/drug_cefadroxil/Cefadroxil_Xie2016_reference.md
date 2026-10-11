@@ -22,8 +22,7 @@
 Xie Y et al., Population pharmacokinetic modeling of…, Xenobiotica; the fate of fo… (2016)
   ·  DOI: [10.3109/00498254.2015.1080881](https://doi.org/10.3109/00498254.2015.1080881)
 
-## Model component
-<dbs-pgx drug="cefadroxil" model-id="Cefadroxil_Xie2016_reference" status="rejected" stale="false" population="wild-type and Pept2 knockout mice" measured-compound="cefadroxil" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="cefadroxil" model-id="Cefadroxil_Xie2016_reference" status="rejected" stale="false" population="wild-type and Pept2 knockout mice" measured-compound="cefadroxil" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 1 extracted.

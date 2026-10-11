@@ -33,8 +33,7 @@ The simulated peak concentration is 7.10419045677101e-05, while the expected val
 Kim Y et al., Pharmacokinetics and safety of a novel…, Clinical and translational… (2022)
   ·  DOI: [10.1111/cts.13160](https://doi.org/10.1111/cts.13160)
 
-## Model component
-<dbs-pgx drug="baloxavir marboxil" model-id="BaloxavirMarboxil_Kim2022_reference" status="extracted" stale="true" population="healthy Korean and Japanese adults" measured-compound="baloxavir acid" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="baloxavir marboxil" model-id="BaloxavirMarboxil_Kim2022_reference" status="extracted" stale="true" population="healthy Korean and Japanese adults" measured-compound="baloxavir acid" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 10 extracted, plus 2 covariate effects.

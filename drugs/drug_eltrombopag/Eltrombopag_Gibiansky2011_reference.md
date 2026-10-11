@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Gibiansky E et al., Population pharmacokinetics of eltrombo…, Journal of clinical pharmac… (2011)
   ·  DOI: [10.1177/0091270010375427](https://doi.org/10.1177/0091270010375427)
 
-## Model component
-<dbs-pgx drug="eltrombopag" model-id="Eltrombopag_Gibiansky2011_reference" status="extracted" stale="true" population="healthy subjects and patients with chronic idiopathic thrombocytopenic purpura" measured-compound="eltrombopag" parameterization="apparent" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="eltrombopag" model-id="Eltrombopag_Gibiansky2011_reference" status="extracted" stale="true" population="healthy subjects and patients with chronic idiopathic thrombocytopenic purpura" measured-compound="eltrombopag" parameterization="apparent" topology="2C"></div>
 
 **Model structure:** 2-compartment, oral mammillary model — template `PK_2C_enteral`.  
 **Parameters:** 4 extracted.

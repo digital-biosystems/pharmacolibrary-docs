@@ -21,8 +21,7 @@
 Tanii H et al., Population pharmacokinetic analysis of…, European journal of clinica… (2011)
   ·  DOI: [10.1007/s00228-011-1042-3](https://doi.org/10.1007/s00228-011-1042-3)
 
-## Model component
-<dbs-pgx drug="letrozole" model-id="Letrozole_Tanii2011_reference" status="rejected" stale="false" population="Japanese postmenopausal women" measured-compound="letrozole" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="letrozole" model-id="Letrozole_Tanii2011_reference" status="rejected" stale="false" population="Japanese postmenopausal women" measured-compound="letrozole" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

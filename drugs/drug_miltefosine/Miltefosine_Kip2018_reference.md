@@ -21,8 +21,7 @@
 Kip AE et al., Simultaneous population pharmacokinetic…, The Journal of antimicrobia… (2018)
   ·  DOI: [10.1093/jac/dky143](https://doi.org/10.1093/jac/dky143)
 
-## Model component
-<dbs-pgx drug="miltefosine" model-id="Miltefosine_Kip2018_reference" status="rejected" stale="false" population="Colombian cutaneous leishmaniasis patients (children and adults)" measured-compound="miltefosine" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="miltefosine" model-id="Miltefosine_Kip2018_reference" status="rejected" stale="false" population="Colombian cutaneous leishmaniasis patients (children and adults)" measured-compound="miltefosine" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 3 extracted.

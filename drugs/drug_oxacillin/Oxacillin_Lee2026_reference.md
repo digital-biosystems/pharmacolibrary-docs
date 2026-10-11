@@ -21,8 +21,7 @@
 Lee A et al., Population pharmacokinetics and safety…, Antimicrobial agents and ch… (2026)
   ·  DOI: [10.1128/aac.01777-25](https://doi.org/10.1128/aac.01777-25)
 
-## Model component
-<dbs-pgx drug="oxacillin" model-id="Oxacillin_Lee2026_reference" status="extracted" stale="false" population="preterm and term neonates and infants" measured-compound="oxacillin" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="oxacillin" model-id="Oxacillin_Lee2026_reference" status="extracted" stale="false" population="preterm and term neonates and infants" measured-compound="oxacillin" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameters:** 2 extracted.

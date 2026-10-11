@@ -21,8 +21,7 @@
 Hughes JH et al., Predictions of Systemic, Intracellular,…, CPT: pharmacometrics & syst… (2020)
   ·  DOI: [10.1002/psp4.12537](https://doi.org/10.1002/psp4.12537)
 
-## Model component
-<dbs-pgx drug="azithromycin" model-id="Azithromycin_Hughes2020_hybrid_model_5_14" status="rejected" stale="false" population="healthy adults and patients" measured-compound="azithromycin" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="azithromycin" model-id="Azithromycin_Hughes2020_hybrid_model_5_14" status="rejected" stale="false" population="healthy adults and patients" measured-compound="azithromycin" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 8 extracted, plus 1 covariate effect.

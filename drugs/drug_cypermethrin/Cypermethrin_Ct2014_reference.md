@@ -22,8 +22,7 @@
 Côté J et al., A novel toxicokinetic modeling of cyper…, PloS one (2014)
   ·  DOI: [10.1371/journal.pone.0088517](https://doi.org/10.1371/journal.pone.0088517)
 
-## Model component
-<dbs-pgx drug="cypermethrin" model-id="Cypermethrin_Ct2014_reference" status="rejected" stale="false" population="healthy adult volunteers" measured-compound="trans-DCCA" parameterization="mechanistic" topology="general_linear"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="cypermethrin" model-id="Cypermethrin_Ct2014_reference" status="rejected" stale="false" population="healthy adult volunteers" measured-compound="trans-DCCA" parameterization="mechanistic" topology="general_linear"></div>
 
 **Model structure:** general linear; no model was built for this record.  
 **Parameters:** 1 extracted.

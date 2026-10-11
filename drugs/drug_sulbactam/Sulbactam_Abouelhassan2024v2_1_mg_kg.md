@@ -25,8 +25,7 @@
 Abouelhassan Y et al., Pharmacokinetic/pharmacodynamic analysi…, JAC-antimicrobial resistance (2024)
   ·  DOI: [10.1093/jacamr/dlae203](https://doi.org/10.1093/jacamr/dlae203)
 
-## Model component
-<dbs-pgx drug="sulbactam" model-id="Sulbactam_Abouelhassan2024v2_1_mg_kg" status="needs_review" stale="false" population="healthy volunteers" measured-compound="sulbactam" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="sulbactam" model-id="Sulbactam_Abouelhassan2024v2_1_mg_kg" status="needs_review" stale="false" population="healthy volunteers" measured-compound="sulbactam" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 5 extracted.

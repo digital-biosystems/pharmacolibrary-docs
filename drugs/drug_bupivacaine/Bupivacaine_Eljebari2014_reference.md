@@ -21,8 +21,7 @@
 Eljebari H et al., Population pharmacokinetics of bupivaca…, Indian journal of pharmacol… (2014)
   ·  DOI: [10.4103/0253-7613.129318](https://doi.org/10.4103/0253-7613.129318)
 
-## Model component
-<dbs-pgx drug="bupivacaine" model-id="Bupivacaine_Eljebari2014_reference" status="needs_review" stale="false" population="adults scheduled for elective lower extremity surgery" measured-compound="bupivacaine" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="bupivacaine" model-id="Bupivacaine_Eljebari2014_reference" status="needs_review" stale="false" population="adults scheduled for elective lower extremity surgery" measured-compound="bupivacaine" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 6 extracted.

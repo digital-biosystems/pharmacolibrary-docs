@@ -32,8 +32,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Gotta V et al., Inter-study variability of preclinical…, British journal of pharmaco… (2015)
   ·  DOI: [10.1111/bph.13218](https://doi.org/10.1111/bph.13218)
 
-## Model component
-<dbs-pgx drug="dofetilide" model-id="Dofetilide_Gotta2015_reference" status="rejected" stale="true" population="conscious dogs" measured-compound="dofetilide" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="dofetilide" model-id="Dofetilide_Gotta2015_reference" status="rejected" stale="true" population="conscious dogs" measured-compound="dofetilide" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

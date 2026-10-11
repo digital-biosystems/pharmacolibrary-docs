@@ -30,8 +30,7 @@ Nothing in the extracted data describes the drug's disposition, so there is no m
 ## Citation
 el Sayed MA et al., Pharmacokinetics of ethosuximide in the…, Archives internationales de… (1978)
 
-## Model component
-<dbs-pgx drug="ethosuximide" model-id="Ethosuximide_el1978_reference" status="needs_review" stale="true" population="dogs" measured-compound="ethosuximide" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="ethosuximide" model-id="Ethosuximide_el1978_reference" status="needs_review" stale="true" population="dogs" measured-compound="ethosuximide" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 4 extracted.

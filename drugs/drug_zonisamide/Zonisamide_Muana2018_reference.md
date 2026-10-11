@@ -23,8 +23,7 @@
 Muñana KR et al., Population pharmacokinetics of extended…, Journal of veterinary inter… (2018)
   ·  DOI: [10.1111/jvim.15298](https://doi.org/10.1111/jvim.15298)
 
-## Model component
-<dbs-pgx drug="zonisamide" model-id="Zonisamide_Muana2018_reference" status="extracted" stale="false" population="" measured-compound="zonisamide" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="zonisamide" model-id="Zonisamide_Muana2018_reference" status="extracted" stale="false" population="" measured-compound="zonisamide" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 2 extracted.

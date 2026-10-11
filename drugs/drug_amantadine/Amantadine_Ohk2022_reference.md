@@ -25,8 +25,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on paramet
 Ohk B et al., Evaluation of sex differences in the ph…, Biopharmaceutics & drug dis… (2022)
   ·  DOI: [10.1002/bdd.2307](https://doi.org/10.1002/bdd.2307)
 
-## Model component
-<dbs-pgx drug="amantadine" model-id="Amantadine_Ohk2022_reference" status="extracted" stale="false" population="" measured-compound="amantadine" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="amantadine" model-id="Amantadine_Ohk2022_reference" status="extracted" stale="false" population="" measured-compound="amantadine" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 2 extracted.

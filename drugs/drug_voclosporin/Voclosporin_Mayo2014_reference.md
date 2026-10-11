@@ -21,8 +21,7 @@
 Mayo PR et al., Population PKPD of voclosporin in renal…, Journal of clinical pharmac… (2014)
   ·  DOI: [10.1002/jcph.237](https://doi.org/10.1002/jcph.237)
 
-## Model component
-<dbs-pgx drug="voclosporin" model-id="Voclosporin_Mayo2014_reference" status="rejected" stale="false" population="renal allograft patients" measured-compound="voclosporin" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="voclosporin" model-id="Voclosporin_Mayo2014_reference" status="rejected" stale="false" population="renal allograft patients" measured-compound="voclosporin" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 2 extracted.

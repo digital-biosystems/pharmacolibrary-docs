@@ -23,8 +23,7 @@
 Parkinson J et al., Modeling of age-dependent amyloid accum…, Pharmacology research & per… (2013)
   ·  DOI: [10.1002/prp2.12](https://doi.org/10.1002/prp2.12)
 
-## Model component
-<dbs-pgx drug="tafamidis" model-id="Tafamidis_Parkinson2013_reference" status="extracted" stale="false" population="" measured-compound="tafamidis" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="tafamidis" model-id="Tafamidis_Parkinson2013_reference" status="extracted" stale="false" population="" measured-compound="tafamidis" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment, oral mammillary model — template `PK_2C_enteral`.  
 **Parameters:** 5 extracted.

@@ -30,8 +30,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Mehta AV et al., Pharmacokinetics of nadolol in children…, Journal of clinical pharmac… (1992)
   ·  DOI: [10.1002/j.1552-4604.1992.tb03805.x](https://doi.org/10.1002/j.1552-4604.1992.tb03805.x)
 
-## Model component
-<dbs-pgx drug="nadolol" model-id="Nadolol_Mehta1992_reference" status="rejected" stale="true" population="children with supraventricular tachycardia" measured-compound="nadolol" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="nadolol" model-id="Nadolol_Mehta1992_reference" status="rejected" stale="true" population="children with supraventricular tachycardia" measured-compound="nadolol" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 1 extracted.

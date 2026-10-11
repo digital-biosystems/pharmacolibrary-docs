@@ -25,8 +25,7 @@ Independently confirmed by `gpt-oss:120b`.
 Taniguchi T et al., Pharmacokinetics of milrinone in patien…, Intensive care medicine (2000)
   ·  DOI: [10.1007/s001340051322](https://doi.org/10.1007/s001340051322)
 
-## Model component
-<dbs-pgx drug="milrinone" model-id="Milrinone_Taniguchi2000_reference" status="needs_review" stale="false" population="patients with severe congestive heart failure during CVVH" measured-compound="milrinone" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="milrinone" model-id="Milrinone_Taniguchi2000_reference" status="needs_review" stale="false" population="patients with severe congestive heart failure during CVVH" measured-compound="milrinone" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 4 extracted.

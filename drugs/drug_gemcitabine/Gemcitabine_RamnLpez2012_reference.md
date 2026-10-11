@@ -21,8 +21,7 @@
 Ramón-López A et al., [Population pharmacokinetics of gemcita…, Farmacia hospitalaria : org… (2012)
   ·  DOI: [10.1016/j.farma.2011.04.002](https://doi.org/10.1016/j.farma.2011.04.002)
 
-## Model component
-<dbs-pgx drug="gemcitabine" model-id="Gemcitabine_RamnLpez2012_reference" status="extracted" stale="false" population="cancer patients" measured-compound="gemcitabine" parameterization="mechanistic" topology="parent_metabolite"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="gemcitabine" model-id="Gemcitabine_RamnLpez2012_reference" status="extracted" stale="false" population="cancer patients" measured-compound="gemcitabine" parameterization="mechanistic" topology="parent_metabolite"></div>
 
 **Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameters:** 3 extracted.

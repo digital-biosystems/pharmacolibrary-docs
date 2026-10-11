@@ -23,8 +23,7 @@
 Lee DY et al., Establishment of Level a In Vitro-In Vi…, Pharmaceutics (2022)
   ·  DOI: [10.3390/pharmaceutics14061226](https://doi.org/10.3390/pharmaceutics14061226)
 
-## Model component
-<dbs-pgx drug="donepezil" model-id="Donepezil_Lee2022_sr_3" status="rejected" stale="false" population="Beagle dogs" measured-compound="donepezil" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="donepezil" model-id="Donepezil_Lee2022_sr_3" status="rejected" stale="false" population="Beagle dogs" measured-compound="donepezil" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 10 extracted.

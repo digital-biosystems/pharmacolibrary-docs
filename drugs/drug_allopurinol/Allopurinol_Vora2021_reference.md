@@ -33,8 +33,7 @@ Independently confirmed by `gpt-oss:120b`.
 Vora B et al., Oxypurinol pharmacokinetics and pharmac…, Clinical and translational… (2021)
   ·  DOI: [10.1111/cts.12992](https://doi.org/10.1111/cts.12992)
 
-## Model component
-<dbs-pgx drug="allopurinol" model-id="Allopurinol_Vora2021_reference" status="rejected" stale="true" population="healthy volunteers" measured-compound="oxypurinol" parameterization="mechanistic" topology="manual_model_class"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="allopurinol" model-id="Allopurinol_Vora2021_reference" status="rejected" stale="true" population="healthy volunteers" measured-compound="oxypurinol" parameterization="mechanistic" topology="manual_model_class"></div>
 
 **Model structure:** nonlinear / manual; no model was built for this record.  
 **Parameters:** 0 extracted.

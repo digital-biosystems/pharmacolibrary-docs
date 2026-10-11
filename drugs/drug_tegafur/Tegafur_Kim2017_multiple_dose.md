@@ -31,8 +31,7 @@ Simulated as the paper dosed it, the model's terminal half-life is 3.23 h agains
 Kim TH et al., Effect of Sipjeondaebo-Tang on the Phar…, Molecules (Basel, Switzerla… (2017)
   ·  DOI: [10.3390/molecules22091488](https://doi.org/10.3390/molecules22091488)
 
-## Model component
-<dbs-pgx drug="tegafur" model-id="Tegafur_Kim2017_multiple_dose" status="extracted" stale="true" population="rats" measured-compound="tegafur" parameterization="apparent" topology="parent_metabolite"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="tegafur" model-id="Tegafur_Kim2017_multiple_dose" status="extracted" stale="true" population="rats" measured-compound="tegafur" parameterization="apparent" topology="parent_metabolite"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 6 extracted.

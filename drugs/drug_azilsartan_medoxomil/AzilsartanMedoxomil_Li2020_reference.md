@@ -24,8 +24,7 @@ Independently confirmed by `gpt-oss:120b`.
 Li X et al., Clinical Evaluation of the Tolerability…, Clinical pharmacology in dr… (2020)
   ·  DOI: [10.1002/cpdd.735](https://doi.org/10.1002/cpdd.735)
 
-## Model component
-<dbs-pgx drug="azilsartan medoxomil" model-id="AzilsartanMedoxomil_Li2020_reference" status="needs_review" stale="false" population="healthy Chinese adults" measured-compound="azilsartan" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="azilsartan medoxomil" model-id="AzilsartanMedoxomil_Li2020_reference" status="needs_review" stale="false" population="healthy Chinese adults" measured-compound="azilsartan" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 1 extracted.

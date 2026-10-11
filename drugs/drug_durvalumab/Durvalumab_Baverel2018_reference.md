@@ -21,8 +21,7 @@
 Baverel PG et al., Population Pharmacokinetics of Durvalum…, Clinical pharmacology and t… (2018)
   ·  DOI: [10.1002/cpt.982](https://doi.org/10.1002/cpt.982)
 
-## Model component
-<dbs-pgx drug="durvalumab" model-id="Durvalumab_Baverel2018_reference" status="rejected" stale="false" population="cancer patients with solid tumors" measured-compound="durvalumab" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="durvalumab" model-id="Durvalumab_Baverel2018_reference" status="rejected" stale="false" population="cancer patients with solid tumors" measured-compound="durvalumab" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment; no model was built for this record.  
 **Parameters:** 3 extracted.

@@ -25,8 +25,7 @@ Independently confirmed by `gpt-oss:120b`.
 ## Citation
 Pfleger K et al., [Pharmacokinetics and action of digitox…, Archives internationales de… (1975)
 
-## Model component
-<dbs-pgx drug="digitoxin" model-id="Digitoxin_Pfleger1975_reference" status="rejected" stale="false" population="isolated guinea pig and rat hearts" measured-compound="digitoxin" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="digitoxin" model-id="Digitoxin_Pfleger1975_reference" status="rejected" stale="false" population="isolated guinea pig and rat hearts" measured-compound="digitoxin" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

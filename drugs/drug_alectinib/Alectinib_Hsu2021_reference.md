@@ -23,8 +23,7 @@
 Hsu JC et al., Pharmacometric analyses of alectinib to…, CPT: pharmacometrics & syst… (2021)
   ·  DOI: [10.1002/psp4.12702](https://doi.org/10.1002/psp4.12702)
 
-## Model component
-<dbs-pgx drug="alectinib" model-id="Alectinib_Hsu2021_reference" status="rejected" stale="false" population="patients with ALK-positive NSCLC who failed crizotinib" measured-compound="alectinib and M4" parameterization="mechanistic" topology="parent_metabolite"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="alectinib" model-id="Alectinib_Hsu2021_reference" status="rejected" stale="false" population="patients with ALK-positive NSCLC who failed crizotinib" measured-compound="alectinib and M4" parameterization="mechanistic" topology="parent_metabolite"></div>
 
 **Model structure:** parent + metabolite; no model was built for this record.  
 **Parameters:** 0 extracted.

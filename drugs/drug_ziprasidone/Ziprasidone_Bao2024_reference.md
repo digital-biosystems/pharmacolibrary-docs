@@ -21,8 +21,7 @@
 Bao S et al., Ziprasidone population pharmacokinetics…, Naunyn-Schmiedeberg's archi… (2024)
   ·  DOI: [10.1007/s00210-024-03244-y](https://doi.org/10.1007/s00210-024-03244-y)
 
-## Model component
-<dbs-pgx drug="ziprasidone" model-id="Ziprasidone_Bao2024_reference" status="extracted" stale="false" population="Chinese psychiatric disorder patients" measured-compound="ziprasidone" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="ziprasidone" model-id="Ziprasidone_Bao2024_reference" status="extracted" stale="false" population="Chinese psychiatric disorder patients" measured-compound="ziprasidone" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 3 extracted.

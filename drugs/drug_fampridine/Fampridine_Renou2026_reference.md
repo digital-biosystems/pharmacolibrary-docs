@@ -21,8 +21,7 @@
 Renou Q et al., External Evaluation of Population Pharm…, CPT: pharmacometrics & syst… (2026)
   ·  DOI: [10.1002/psp4.70180](https://doi.org/10.1002/psp4.70180)
 
-## Model component
-<dbs-pgx drug="fampridine" model-id="Fampridine_Renou2026_reference" status="extracted" stale="false" population="" measured-compound="fampridine" parameterization="apparent" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="fampridine" model-id="Fampridine_Renou2026_reference" status="extracted" stale="false" population="" measured-compound="fampridine" parameterization="apparent" topology="2C"></div>
 
 **Model structure:** 2-compartment, oral mammillary model — template `PK_2C_enteral`.  
 **Parameters:** 5 extracted.

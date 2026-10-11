@@ -21,8 +21,7 @@
 Zhang X et al., Population pharmacokinetics of enfuvirt…, Journal of clinical pharmac… (2007)
   ·  DOI: [10.1177/0091270006299089](https://doi.org/10.1177/0091270006299089)
 
-## Model component
-<dbs-pgx drug="enfuvirtide" model-id="Enfuvirtide_Zhang2007_reference" status="rejected" stale="false" population="HIV-1-infected pediatric patients" measured-compound="enfuvirtide" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="enfuvirtide" model-id="Enfuvirtide_Zhang2007_reference" status="rejected" stale="false" population="HIV-1-infected pediatric patients" measured-compound="enfuvirtide" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

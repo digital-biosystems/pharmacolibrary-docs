@@ -21,8 +21,7 @@
 Romano MJ et al., Single-dose pharmacokinetics and safety…, The Journal of pediatrics (1993)
   ·  DOI: [10.1016/s0022-3476(09)90031-2](https://doi.org/10.1016/s0022-3476(09)90031-2)
 
-## Model component
-<dbs-pgx drug="nebacumab" model-id="Nebacumab_Romano1993_reference" status="extracted" stale="false" population="pediatric patients with sepsis syndrome or septic shock" measured-compound="nebacumab" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="nebacumab" model-id="Nebacumab_Romano1993_reference" status="extracted" stale="false" population="pediatric patients with sepsis syndrome or septic shock" measured-compound="nebacumab" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameters:** 4 extracted.

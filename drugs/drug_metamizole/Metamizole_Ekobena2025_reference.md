@@ -29,8 +29,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the val
 Ekobena P et al., Population pharmacokinetics of bictegra…, The Journal of antimicrobia… (2025)
   ·  DOI: [10.1093/jac/dkaf297](https://doi.org/10.1093/jac/dkaf297)
 
-## Model component
-<dbs-pgx drug="Metamizole" model-id="Metamizole_Ekobena2025_reference" status="extracted" stale="true" population="" measured-compound="metamizole" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="Metamizole" model-id="Metamizole_Ekobena2025_reference" status="extracted" stale="true" population="" measured-compound="metamizole" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 4 extracted.

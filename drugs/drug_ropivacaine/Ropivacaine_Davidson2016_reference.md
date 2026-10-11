@@ -23,8 +23,7 @@
 Davidson EM et al., A Novel Proliposomal Ropivacaine Oil: P…, Anesthesia and analgesia (2016)
   ·  DOI: [10.1213/ANE.0000000000001200](https://doi.org/10.1213/ANE.0000000000001200)
 
-## Model component
-<dbs-pgx drug="ropivacaine" model-id="Ropivacaine_Davidson2016_reference" status="rejected" stale="false" population="young piglets" measured-compound="ropivacaine" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="ropivacaine" model-id="Ropivacaine_Davidson2016_reference" status="rejected" stale="false" population="young piglets" measured-compound="ropivacaine" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

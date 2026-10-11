@@ -21,8 +21,7 @@
 Zhou H et al., Pharmacokinetics and safety of golimuma…, Journal of clinical pharmac… (2007)
   ·  DOI: [10.1177/0091270006298188](https://doi.org/10.1177/0091270006298188)
 
-## Model component
-<dbs-pgx drug="golimumab" model-id="Golimumab_Zhou2007_reference" status="rejected" stale="false" population="adults with rheumatoid arthritis" measured-compound="golimumab" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="golimumab" model-id="Golimumab_Zhou2007_reference" status="rejected" stale="false" population="adults with rheumatoid arthritis" measured-compound="golimumab" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

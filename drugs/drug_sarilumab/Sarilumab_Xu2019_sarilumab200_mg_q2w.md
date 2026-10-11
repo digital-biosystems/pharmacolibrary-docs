@@ -20,8 +20,7 @@
 Xu C et al., Population Pharmacokinetics of Sariluma…, Clinical pharmacokinetics (2019)
   ·  DOI: [10.1007/s40262-019-00765-1](https://doi.org/10.1007/s40262-019-00765-1)
 
-## Model component
-<dbs-pgx drug="sarilumab" model-id="Sarilumab_Xu2019_sarilumab200_mg_q2w" status="needs_review" stale="false" population="patients with rheumatoid arthritis" measured-compound="sarilumab" parameterization="apparent" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="sarilumab" model-id="Sarilumab_Xu2019_sarilumab200_mg_q2w" status="needs_review" stale="false" population="patients with rheumatoid arthritis" measured-compound="sarilumab" parameterization="apparent" topology="2C"></div>
 
 **Model structure:** 2-compartment; no model was built for this record.  
 **Parameters:** 7 extracted.

@@ -22,8 +22,7 @@
 Plakas SM et al., Furazolidone disposition after intravas…, Xenobiotica; the fate of fo… (1994)
   ·  DOI: [10.3109/00498259409038669](https://doi.org/10.3109/00498259409038669)
 
-## Model component
-<dbs-pgx drug="furazolidone" model-id="Furazolidone_Plakas1994v2_reference" status="rejected" stale="false" population="channel catfish" measured-compound="furazolidone" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="furazolidone" model-id="Furazolidone_Plakas1994v2_reference" status="rejected" stale="false" population="channel catfish" measured-compound="furazolidone" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

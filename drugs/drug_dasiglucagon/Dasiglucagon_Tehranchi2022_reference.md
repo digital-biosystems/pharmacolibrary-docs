@@ -20,8 +20,7 @@
 Tehranchi R et al., Dasiglucagon Effects on QTc in Healthy…, Current therapeutic researc… (2022)
   ·  DOI: [10.1016/j.curtheres.2022.100668](https://doi.org/10.1016/j.curtheres.2022.100668)
 
-## Model component
-<dbs-pgx drug="dasiglucagon" model-id="Dasiglucagon_Tehranchi2022_reference" status="rejected" stale="false" population="healthy volunteers" measured-compound="dasiglucagon" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="dasiglucagon" model-id="Dasiglucagon_Tehranchi2022_reference" status="rejected" stale="false" population="healthy volunteers" measured-compound="dasiglucagon" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

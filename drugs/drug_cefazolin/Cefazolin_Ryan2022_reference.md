@@ -21,8 +21,7 @@
 Ryan RL et al., Plasma and Interstitial Fluid Pharmacok…, Antimicrobial agents and ch… (2022)
   ·  DOI: [10.1128/aac.00419-22](https://doi.org/10.1128/aac.00419-22)
 
-## Model component
-<dbs-pgx drug="cefazolin" model-id="Cefazolin_Ryan2022_reference" status="extracted" stale="false" population="obese bariatric surgery patients" measured-compound="cefazolin" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="cefazolin" model-id="Cefazolin_Ryan2022_reference" status="extracted" stale="false" population="obese bariatric surgery patients" measured-compound="cefazolin" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameters:** 2 extracted.

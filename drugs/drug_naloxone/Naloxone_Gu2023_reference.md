@@ -30,8 +30,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Gu M et al., Population pharmacokinetics of buprenor…, Frontiers in pharmacology (2023)
   ·  DOI: [10.3389/fphar.2023.1089862](https://doi.org/10.3389/fphar.2023.1089862)
 
-## Model component
-<dbs-pgx drug="naloxone" model-id="Naloxone_Gu2023_reference" status="rejected" stale="false" population="Chinese healthy volunteers and patients with opioid use disorder" measured-compound="naloxone" parameterization="apparent_wrt_Fm" topology="parent_metabolite"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="naloxone" model-id="Naloxone_Gu2023_reference" status="rejected" stale="false" population="Chinese healthy volunteers and patients with opioid use disorder" measured-compound="naloxone" parameterization="apparent_wrt_Fm" topology="parent_metabolite"></div>
 
 **Model structure:** parent + metabolite; no model was built for this record.  
 **Parameters:** 0 extracted.

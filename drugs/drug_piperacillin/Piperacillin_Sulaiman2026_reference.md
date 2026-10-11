@@ -21,8 +21,7 @@
 Sulaiman H et al., A multicentre evaluation of pharmacokin…, The Journal of antimicrobia… (2026)
   ·  DOI: [10.1093/jac/dkag199](https://doi.org/10.1093/jac/dkag199)
 
-## Model component
-<dbs-pgx drug="piperacillin" model-id="Piperacillin_Sulaiman2026_reference" status="extracted" stale="false" population="critically ill adults with sepsis or septic shock" measured-compound="piperacillin" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="piperacillin" model-id="Piperacillin_Sulaiman2026_reference" status="extracted" stale="false" population="critically ill adults with sepsis or septic shock" measured-compound="piperacillin" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameters:** 3 extracted.

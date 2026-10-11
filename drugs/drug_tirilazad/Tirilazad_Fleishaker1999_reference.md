@@ -20,8 +20,7 @@
 Fleishaker JC et al., Population pharmacokinetics of tirilaza…, Pharmaceutical research (1999)
   ·  DOI: [10.1023/a:1018835516040](https://doi.org/10.1023/a:1018835516040)
 
-## Model component
-<dbs-pgx drug="tirilazad" model-id="Tirilazad_Fleishaker1999_reference" status="rejected" stale="false" population="healthy volunteers and subarachnoid hemorrhage patients" measured-compound="tirilazad" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="tirilazad" model-id="Tirilazad_Fleishaker1999_reference" status="rejected" stale="false" population="healthy volunteers and subarachnoid hemorrhage patients" measured-compound="tirilazad" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

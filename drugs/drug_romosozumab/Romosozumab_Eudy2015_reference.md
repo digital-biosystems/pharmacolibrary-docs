@@ -20,8 +20,7 @@
 Eudy RJ et al., Connecting the Dots: Linking Osteocyte…, CPT: pharmacometrics & syst… (2015)
   ·  DOI: [10.1002/psp4.12013](https://doi.org/10.1002/psp4.12013)
 
-## Model component
-<dbs-pgx drug="romosozumab" model-id="Romosozumab_Eudy2015_reference" status="rejected" stale="false" population="unknown" measured-compound="romosozumab" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="romosozumab" model-id="Romosozumab_Eudy2015_reference" status="rejected" stale="false" population="unknown" measured-compound="romosozumab" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

@@ -21,8 +21,7 @@
 Helmers H et al., Alfentanil kinetics in the elderly, Clinical pharmacology and t… (1984)
   ·  DOI: [10.1038/clpt.1984.169](https://doi.org/10.1038/clpt.1984.169)
 
-## Model component
-<dbs-pgx drug="alfentanil" model-id="Alfentanil_Helmers1984_reference" status="extracted" stale="false" population="elderly surgical patients" measured-compound="alfentanil" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="alfentanil" model-id="Alfentanil_Helmers1984_reference" status="extracted" stale="false" population="elderly surgical patients" measured-compound="alfentanil" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment, IV mammillary model — template `PK_2C`.  
 **Parameters:** 8 extracted.

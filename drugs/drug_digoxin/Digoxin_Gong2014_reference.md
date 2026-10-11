@@ -31,8 +31,7 @@ Independently confirmed by `gpt-oss:120b`.
 Gong Y et al., Population pharmacokinetic analysis of…, Journal of pharmacological… (2014)
   ·  DOI: [10.1254/jphs.13233fp](https://doi.org/10.1254/jphs.13233fp)
 
-## Model component
-<dbs-pgx drug="digoxin" model-id="Digoxin_Gong2014_reference" status="needs_review" stale="true" population="Chinese neonates and infants" measured-compound="digoxin" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="digoxin" model-id="Digoxin_Gong2014_reference" status="needs_review" stale="true" population="Chinese neonates and infants" measured-compound="digoxin" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 4 extracted.

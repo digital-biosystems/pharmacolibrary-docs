@@ -24,8 +24,7 @@
 ## Citation
 Zhao H; Ge P; Chang X; Ren X; Chen L; Gao J; et al. et al. (2017). Wei sheng yan jiu = Journal of hygiene research 46
 
-## Model component
-<dbs-pgx drug="nickel" model-id="Nickel_Zhao2017_reference" status="not_modelled" stale="false" population="rat and occupational population" measured-compound="nickel" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="nickel" model-id="Nickel_Zhao2017_reference" status="not_modelled" stale="false" population="rat and occupational population" measured-compound="nickel" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 4 extracted.

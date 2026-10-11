@@ -21,8 +21,7 @@
 Stewart DJ et al., Bioavailability and pharmacology of ora…, Cancer chemotherapy and pha… (1991)
   ·  DOI: [10.1007/BF00685117](https://doi.org/10.1007/BF00685117)
 
-## Model component
-<dbs-pgx drug="idarubicin" model-id="Idarubicin_Stewart1991_reference" status="rejected" stale="false" population="patients in a phase I trial and bioavailability study" measured-compound="idarubicin" parameterization="mechanistic" topology="parent_metabolite"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="idarubicin" model-id="Idarubicin_Stewart1991_reference" status="rejected" stale="false" population="patients in a phase I trial and bioavailability study" measured-compound="idarubicin" parameterization="mechanistic" topology="parent_metabolite"></div>
 
 **Model structure:** parent + metabolite; no model was built for this record.  
 **Parameters:** 1 extracted.

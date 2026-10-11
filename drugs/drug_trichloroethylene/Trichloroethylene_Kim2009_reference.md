@@ -24,8 +24,7 @@
 Kim S et al., Pharmacokinetic analysis of trichloroet…, Toxicology and applied phar… (2009)
   ·  DOI: [10.1016/j.taap.2009.04.019](https://doi.org/10.1016/j.taap.2009.04.019)
 
-## Model component
-<dbs-pgx drug="trichloroethylene" model-id="Trichloroethylene_Kim2009_reference" status="rejected" stale="false" population="male B6C3F1 mice" measured-compound="trichloroacetic acid" parameterization="apparent" topology="general_linear"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="trichloroethylene" model-id="Trichloroethylene_Kim2009_reference" status="rejected" stale="false" population="male B6C3F1 mice" measured-compound="trichloroacetic acid" parameterization="apparent" topology="general_linear"></div>
 
 **Model structure:** general linear; no model was built for this record.  
 **Parameters:** 3 extracted.

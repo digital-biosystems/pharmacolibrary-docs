@@ -25,8 +25,7 @@
 Ekstrand C et al., Comparative pharmacokinetics of trimeth…, BMC veterinary research (2026)
   ·  DOI: [10.1186/s12917-026-05604-7](https://doi.org/10.1186/s12917-026-05604-7)
 
-## Model component
-<dbs-pgx drug="sulfamethoxazole" model-id="Sulfamethoxazole_Ekstrand2026_reference" status="extracted" stale="false" population="Beagle dogs" measured-compound="sulfamethoxazole" parameterization="mechanistic" topology="3C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="sulfamethoxazole" model-id="Sulfamethoxazole_Ekstrand2026_reference" status="extracted" stale="false" population="Beagle dogs" measured-compound="sulfamethoxazole" parameterization="mechanistic" topology="3C"></div>
 
 **Model structure:** 3-compartment, oral mammillary model — template `PK_3C_enteral`.  
 **Parameters:** 7 extracted.

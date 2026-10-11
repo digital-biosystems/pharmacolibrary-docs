@@ -27,8 +27,7 @@
 Yee KL et al., A time-to-event analysis of the exposur…, Journal of pharmacokinetics… (2020)
   ·  DOI: [10.1007/s10928-019-09660-5](https://doi.org/10.1007/s10928-019-09660-5)
 
-## Model component
-<dbs-pgx drug="bezlotoxumab" model-id="Bezlotoxumab_Yee2020_reference" status="extracted" stale="true" population="adults with CDI" measured-compound="bezlotoxumab" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="bezlotoxumab" model-id="Bezlotoxumab_Yee2020_reference" status="extracted" stale="true" population="adults with CDI" measured-compound="bezlotoxumab" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameters:** 2 extracted.

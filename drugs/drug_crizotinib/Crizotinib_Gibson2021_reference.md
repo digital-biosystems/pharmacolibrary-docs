@@ -21,8 +21,7 @@
 Gibson EG et al., Population pharmacokinetic analysis of…, Cancer chemotherapy and pha… (2021)
   ·  DOI: [10.1007/s00280-021-04357-4](https://doi.org/10.1007/s00280-021-04357-4)
 
-## Model component
-<dbs-pgx drug="crizotinib" model-id="Crizotinib_Gibson2021_reference" status="extracted" stale="false" population="children with progressive or recurrent high-grade and diffuse intrinsic pontine gliomas" measured-compound="crizotinib" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="crizotinib" model-id="Crizotinib_Gibson2021_reference" status="extracted" stale="false" population="children with progressive or recurrent high-grade and diffuse intrinsic pontine gliomas" measured-compound="crizotinib" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 3 extracted.

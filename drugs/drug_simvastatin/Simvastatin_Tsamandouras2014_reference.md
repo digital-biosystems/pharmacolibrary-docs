@@ -27,8 +27,7 @@ The parameter CL/F is labelled 'θ₃; CLSVA/VSA (h)' with unit h, while its mea
 Tsamandouras N et al., Identification of the effect of multipl…, Clinical pharmacology and t… (2014)
   ·  DOI: [10.1038/clpt.2014.55](https://doi.org/10.1038/clpt.2014.55)
 
-## Model component
-<dbs-pgx drug="simvastatin" model-id="Simvastatin_Tsamandouras2014_reference" status="rejected" stale="false" population="individuals from three clinical trials" measured-compound="simvastatin" parameterization="apparent" topology="parent_metabolite"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="simvastatin" model-id="Simvastatin_Tsamandouras2014_reference" status="rejected" stale="false" population="individuals from three clinical trials" measured-compound="simvastatin" parameterization="apparent" topology="parent_metabolite"></div>
 
 **Model structure:** parent + metabolite; no model was built for this record.  
 **Parameters:** 6 extracted, plus 6 covariate effects.

@@ -25,8 +25,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Andreasen F et al., The pharmacokinetics of frusemide are i…, British journal of clinical… (1983)
   ·  DOI: [10.1111/j.1365-2125.1983.tb02183.x](https://doi.org/10.1111/j.1365-2125.1983.tb02183.x)
 
-## Model component
-<dbs-pgx drug="furosemide" model-id="Furosemide_Andreasen1983_reference" status="rejected" stale="false" population="young and elderly healthy male volunteers" measured-compound="frusemide" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="furosemide" model-id="Furosemide_Andreasen1983_reference" status="rejected" stale="false" population="young and elderly healthy male volunteers" measured-compound="frusemide" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 6 extracted.

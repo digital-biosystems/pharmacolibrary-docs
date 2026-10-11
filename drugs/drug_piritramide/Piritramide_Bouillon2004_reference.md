@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the val
 Bouillon T et al., The pharmacokinetics of piritramide aft…, European journal of anaesth… (2004)
   ·  DOI: [10.1017/s0265021504009019](https://doi.org/10.1017/s0265021504009019)
 
-## Model component
-<dbs-pgx drug="piritramide" model-id="Piritramide_Bouillon2004_reference" status="extracted" stale="true" population="intensive care patients" measured-compound="piritramide" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="piritramide" model-id="Piritramide_Bouillon2004_reference" status="extracted" stale="true" population="intensive care patients" measured-compound="piritramide" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment, IV mammillary model — template `PK_2C`.  
 **Parameters:** 7 extracted.

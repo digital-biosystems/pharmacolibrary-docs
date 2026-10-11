@@ -33,8 +33,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Embree L et al., Chromatographic analysis and pharmacoki…, Journal of pharmaceutical s… (1993)
   ·  DOI: [10.1002/jps.2600820617](https://doi.org/10.1002/jps.2600820617)
 
-## Model component
-<dbs-pgx drug="doxorubicin" model-id="Doxorubicin_Embree1993_reference" status="rejected" stale="true" population="non-small-cell lung cancer patients" measured-compound="doxorubicin" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="doxorubicin" model-id="Doxorubicin_Embree1993_reference" status="rejected" stale="true" population="non-small-cell lung cancer patients" measured-compound="doxorubicin" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 2 extracted.

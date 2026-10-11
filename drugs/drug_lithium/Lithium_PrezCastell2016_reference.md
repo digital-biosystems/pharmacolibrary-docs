@@ -21,8 +21,7 @@
 Pérez-Castelló I et al., Population pharmacokinetic model of lit…, European neuropsychopharmac… (2016)
   ·  DOI: [10.1016/j.euroneuro.2016.11.005](https://doi.org/10.1016/j.euroneuro.2016.11.005)
 
-## Model component
-<dbs-pgx drug="lithium" model-id="Lithium_PrezCastell2016_reference" status="rejected" stale="false" population="bipolar disorder patients on lithium TDM" measured-compound="lithium" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="lithium" model-id="Lithium_PrezCastell2016_reference" status="rejected" stale="false" population="bipolar disorder patients on lithium TDM" measured-compound="lithium" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

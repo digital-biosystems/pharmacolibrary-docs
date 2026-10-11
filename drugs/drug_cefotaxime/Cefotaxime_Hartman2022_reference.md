@@ -21,8 +21,7 @@
 Hartman SJF et al., Population pharmacokinetics of intraven…, The Journal of antimicrobia… (2022)
   ·  DOI: [10.1093/jac/dkac095](https://doi.org/10.1093/jac/dkac095)
 
-## Model component
-<dbs-pgx drug="cefotaxime" model-id="Cefotaxime_Hartman2022_reference" status="rejected" stale="false" population="critically ill children" measured-compound="cefotaxime" parameterization="apparent_wrt_Fm" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="cefotaxime" model-id="Cefotaxime_Hartman2022_reference" status="rejected" stale="false" population="critically ill children" measured-compound="cefotaxime" parameterization="apparent_wrt_Fm" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

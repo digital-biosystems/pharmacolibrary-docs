@@ -23,8 +23,7 @@
 Chen C et al., Studies on the pharmacokinetics of cisa…, Journal of veterinary pharm… (2009)
   ·  DOI: [10.1111/j.1365-2885.2009.01078.x](https://doi.org/10.1111/j.1365-2885.2009.01078.x)
 
-## Model component
-<dbs-pgx drug="cisatracurium" model-id="Cisatracurium_Chen2009_reference" status="rejected" stale="false" population="anesthetized dogs" measured-compound="cisatracurium" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="cisatracurium" model-id="Cisatracurium_Chen2009_reference" status="rejected" stale="false" population="anesthetized dogs" measured-compound="cisatracurium" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

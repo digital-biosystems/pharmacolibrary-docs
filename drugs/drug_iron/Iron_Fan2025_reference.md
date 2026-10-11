@@ -35,8 +35,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Fan X et al., A whole-body mechanistic physiologicall…, Drug delivery and translati… (2025)
   ·  DOI: [10.1007/s13346-024-01675-x](https://doi.org/10.1007/s13346-024-01675-x)
 
-## Model component
-<dbs-pgx drug="Iron" model-id="Iron_Fan2025_reference" status="rejected" stale="true" population="mice (iron deficient, adequate, loaded)" measured-compound="iron" parameterization="mechanistic" topology="manual_model_class"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="Iron" model-id="Iron_Fan2025_reference" status="rejected" stale="true" population="mice (iron deficient, adequate, loaded)" measured-compound="iron" parameterization="mechanistic" topology="manual_model_class"></div>
 
 **Model structure:** nonlinear / manual; no model was built for this record.  
 **Parameters:** 0 extracted.

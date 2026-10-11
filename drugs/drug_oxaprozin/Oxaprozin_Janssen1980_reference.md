@@ -20,8 +20,7 @@
 Janssen FW et al., Metabolism and kinetics of oxaprozin in…, Clinical pharmacology and t… (1980)
   ·  DOI: [10.1038/clpt.1980.47](https://doi.org/10.1038/clpt.1980.47)
 
-## Model component
-<dbs-pgx drug="oxaprozin" model-id="Oxaprozin_Janssen1980_reference" status="rejected" stale="false" population="normal subjects" measured-compound="oxaprozin" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="oxaprozin" model-id="Oxaprozin_Janssen1980_reference" status="rejected" stale="false" population="normal subjects" measured-compound="oxaprozin" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

@@ -23,8 +23,7 @@
 Russo FM et al., Pregnancy affects the pharmacokinetics…, Xenobiotica; the fate of fo… (2019)
   ·  DOI: [10.1080/00498254.2017.1422217](https://doi.org/10.1080/00498254.2017.1422217)
 
-## Model component
-<dbs-pgx drug="sildenafil" model-id="Sildenafil_Russo2019_final" status="extracted" stale="false" population="rabbits" measured-compound="sildenafil" parameterization="apparent" topology="parent_metabolite"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="sildenafil" model-id="Sildenafil_Russo2019_final" status="extracted" stale="false" population="rabbits" measured-compound="sildenafil" parameterization="apparent" topology="parent_metabolite"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 5 extracted.

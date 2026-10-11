@@ -21,8 +21,7 @@
 Gonzalez D et al., Population Pharmacokinetics and Explora…, Clinical pharmacokinetics (2017)
   ·  DOI: [10.1007/s40262-016-0486-0](https://doi.org/10.1007/s40262-016-0486-0)
 
-## Model component
-<dbs-pgx drug="lorazepam" model-id="Lorazepam_Gonzalez2017_reference" status="rejected" stale="false" population="infants and children with status epilepticus" measured-compound="lorazepam" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="lorazepam" model-id="Lorazepam_Gonzalez2017_reference" status="rejected" stale="false" population="infants and children with status epilepticus" measured-compound="lorazepam" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

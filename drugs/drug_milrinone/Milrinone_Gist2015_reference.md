@@ -25,8 +25,7 @@ Independently confirmed by `gpt-oss:120b`.
 Gist KM et al., Retrospective Evaluation of Milrinone P…, Therapeutic drug monitoring (2015)
   ·  DOI: [10.1097/FTD.0000000000000214](https://doi.org/10.1097/FTD.0000000000000214)
 
-## Model component
-<dbs-pgx drug="milrinone" model-id="Milrinone_Gist2015_reference" status="needs_review" stale="false" population="children with acute kidney injury" measured-compound="milrinone" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="milrinone" model-id="Milrinone_Gist2015_reference" status="needs_review" stale="false" population="children with acute kidney injury" measured-compound="milrinone" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 2 extracted.

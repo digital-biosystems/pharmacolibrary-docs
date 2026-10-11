@@ -21,8 +21,7 @@
 Shang ZH et al., Optimal dose of cefotaxime in neonates…, Frontiers in pharmacology (2022)
   ·  DOI: [10.3389/fphar.2022.916253](https://doi.org/10.3389/fphar.2022.916253)
 
-## Model component
-<dbs-pgx drug="cefotaxime" model-id="Cefotaxime_Shang2022_reference" status="rejected" stale="false" population="neonates with early-onset sepsis" measured-compound="cefotaxime" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="cefotaxime" model-id="Cefotaxime_Shang2022_reference" status="rejected" stale="false" population="neonates with early-onset sepsis" measured-compound="cefotaxime" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

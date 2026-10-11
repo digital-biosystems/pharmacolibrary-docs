@@ -34,8 +34,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Dresow B et al., Bioavailability of bismuth from 205Bi-l…, Archives of toxicology (1991)
   ·  DOI: [10.1007/BF02098030](https://doi.org/10.1007/BF02098030)
 
-## Model component
-<dbs-pgx drug="bismuth subcitrate" model-id="BismuthSubcitrate_Dresow1991_reference" status="rejected" stale="true" population="rats" measured-compound="bismuth" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="bismuth subcitrate" model-id="BismuthSubcitrate_Dresow1991_reference" status="rejected" stale="true" population="rats" measured-compound="bismuth" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

@@ -23,8 +23,7 @@
 Yata M et al., Population Pharmacokinetics of Sildenaf…, Journal of veterinary pharm… (2026)
   ·  DOI: [10.1111/jvp.70057](https://doi.org/10.1111/jvp.70057)
 
-## Model component
-<dbs-pgx drug="sildenafil" model-id="Sildenafil_Yata2026_reference" status="needs_review" stale="false" population="dogs with pulmonary hypertension" measured-compound="sildenafil" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="sildenafil" model-id="Sildenafil_Yata2026_reference" status="needs_review" stale="false" population="dogs with pulmonary hypertension" measured-compound="sildenafil" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 8 extracted.

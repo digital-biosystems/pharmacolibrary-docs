@@ -22,8 +22,7 @@
 Ding J et al., Adherence and Population Pharmacokineti…, Clinical pharmacology and t… (2020)
   ·  DOI: [10.1002/cpt.1707](https://doi.org/10.1002/cpt.1707)
 
-## Model component
-<dbs-pgx drug="amodiaquine" model-id="Amodiaquine_Ding2020_reference" status="extracted" stale="false" population="African children under 5 years receiving seasonal malaria chemoprevention" measured-compound="desethylamodiaquine" parameterization="apparent" topology="parent_metabolite"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="amodiaquine" model-id="Amodiaquine_Ding2020_reference" status="extracted" stale="false" population="African children under 5 years receiving seasonal malaria chemoprevention" measured-compound="desethylamodiaquine" parameterization="apparent" topology="parent_metabolite"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 12 extracted.

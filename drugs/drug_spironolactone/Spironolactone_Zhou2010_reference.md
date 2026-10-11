@@ -25,8 +25,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on paramet
 Zhou XD et al., Population pharmacokinetic model of dig…, Acta pharmacologica Sinica (2010)
   ·  DOI: [10.1038/aps.2010.51](https://doi.org/10.1038/aps.2010.51)
 
-## Model component
-<dbs-pgx drug="spironolactone" model-id="Spironolactone_Zhou2010_reference" status="extracted" stale="false" population="" measured-compound="spironolactone" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="spironolactone" model-id="Spironolactone_Zhou2010_reference" status="extracted" stale="false" population="" measured-compound="spironolactone" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 3 extracted.

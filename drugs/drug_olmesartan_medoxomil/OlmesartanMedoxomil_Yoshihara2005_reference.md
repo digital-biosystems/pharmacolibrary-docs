@@ -26,8 +26,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Yoshihara K et al., Population pharmacokinetics of olmesart…, Clinical pharmacokinetics (2005)
   ·  DOI: [10.2165/00003088-200544120-00011](https://doi.org/10.2165/00003088-200544120-00011)
 
-## Model component
-<dbs-pgx drug="olmesartan medoxomil" model-id="OlmesartanMedoxomil_Yoshihara2005_reference" status="needs_review" stale="false" population="healthy volunteers and hypertensive patients" measured-compound="olmesartan" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="olmesartan medoxomil" model-id="OlmesartanMedoxomil_Yoshihara2005_reference" status="needs_review" stale="false" population="healthy volunteers and hypertensive patients" measured-compound="olmesartan" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 5 extracted.

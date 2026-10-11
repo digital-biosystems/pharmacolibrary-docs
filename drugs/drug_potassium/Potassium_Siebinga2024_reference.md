@@ -23,8 +23,7 @@
 Siebinga H et al., Quantification of biochemical PSA dynam…, EJNMMI physics (2024)
   ·  DOI: [10.1186/s40658-024-00642-2](https://doi.org/10.1186/s40658-024-00642-2)
 
-## Model component
-<dbs-pgx drug="Potassium" model-id="Potassium_Siebinga2024_reference" status="extracted" stale="false" population="patients with metastatic castration-resistant prostate cancer" measured-compound="potassium" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="Potassium" model-id="Potassium_Siebinga2024_reference" status="extracted" stale="false" population="patients with metastatic castration-resistant prostate cancer" measured-compound="potassium" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameters:** 2 extracted.

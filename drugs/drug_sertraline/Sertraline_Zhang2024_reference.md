@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on `parame
 Zhang Z et al., Population pharmacokinetic approach to…, Heliyon (2024)
   ·  DOI: [10.1016/j.heliyon.2024.e25231](https://doi.org/10.1016/j.heliyon.2024.e25231)
 
-## Model component
-<dbs-pgx drug="sertraline" model-id="Sertraline_Zhang2024_reference" status="needs_review" stale="true" population="Chinese patients with psychiatric disorders" measured-compound="sertraline" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="sertraline" model-id="Sertraline_Zhang2024_reference" status="needs_review" stale="true" population="Chinese patients with psychiatric disorders" measured-compound="sertraline" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 4 extracted.

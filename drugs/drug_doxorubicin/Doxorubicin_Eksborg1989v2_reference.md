@@ -21,8 +21,7 @@
 Eksborg S, Pharmacokinetics of anthracyclines, Acta oncologica (Stockholm,… (1989)
   ·  DOI: [10.3109/02841868909092323](https://doi.org/10.3109/02841868909092323)
 
-## Model component
-<dbs-pgx drug="doxorubicin" model-id="Doxorubicin_Eksborg1989v2_reference" status="rejected" stale="false" population="cancer patients" measured-compound="doxorubicin; 4&#39;epi-doxorubicin" parameterization="mechanistic" topology="general_linear"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="doxorubicin" model-id="Doxorubicin_Eksborg1989v2_reference" status="rejected" stale="false" population="cancer patients" measured-compound="doxorubicin; 4&#39;epi-doxorubicin" parameterization="mechanistic" topology="general_linear"></div>
 
 **Model structure:** general linear; no model was built for this record.  
 **Parameters:** 0 extracted.

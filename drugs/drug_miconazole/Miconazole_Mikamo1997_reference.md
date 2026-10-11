@@ -30,8 +30,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Mikamo H et al., Pharmacokinetics of miconazole in serum…, International journal of an… (1997)
   ·  DOI: [10.1016/s0924-8579(97)00050-2](https://doi.org/10.1016/s0924-8579(97)00050-2)
 
-## Model component
-<dbs-pgx drug="miconazole" model-id="Miconazole_Mikamo1997_reference" status="rejected" stale="true" population="patients after radical hysterectomy and pelvic lymphadenectomy" measured-compound="miconazole" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="miconazole" model-id="Miconazole_Mikamo1997_reference" status="rejected" stale="true" population="patients after radical hysterectomy and pelvic lymphadenectomy" measured-compound="miconazole" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 3 extracted.

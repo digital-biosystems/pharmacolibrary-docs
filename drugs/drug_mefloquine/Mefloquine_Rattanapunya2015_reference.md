@@ -21,8 +21,7 @@
 Rattanapunya S et al., Pharmacokinetic interactions between ar…, Malaria journal (2015)
   ·  DOI: [10.1186/s12936-015-0916-8](https://doi.org/10.1186/s12936-015-0916-8)
 
-## Model component
-<dbs-pgx drug="mefloquine" model-id="Mefloquine_Rattanapunya2015_reference" status="extracted" stale="false" population="healthy Thai adults" measured-compound="mefloquine" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="mefloquine" model-id="Mefloquine_Rattanapunya2015_reference" status="extracted" stale="false" population="healthy Thai adults" measured-compound="mefloquine" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 2 extracted.

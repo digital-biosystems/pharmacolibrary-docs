@@ -21,8 +21,7 @@
 Menshykau D et al., Population PK modeling of certolizumab…, CPT: pharmacometrics & syst… (2024)
   ·  DOI: [10.1002/psp4.13220](https://doi.org/10.1002/psp4.13220)
 
-## Model component
-<dbs-pgx drug="certolizumab pegol" model-id="CertolizumabPegol_Menshykau2024_reference" status="extracted" stale="false" population="pregnant women with chronic inflammatory diseases" measured-compound="certolizumab_pegol" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="certolizumab pegol" model-id="CertolizumabPegol_Menshykau2024_reference" status="extracted" stale="false" population="pregnant women with chronic inflammatory diseases" measured-compound="certolizumab_pegol" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 4 extracted.

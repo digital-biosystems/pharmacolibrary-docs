@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Nikolic VN et al., Population pharmacokinetics of carvedil…, Journal of pharmaceutical s… (2013)
   ·  DOI: [10.1002/jps.23626](https://doi.org/10.1002/jps.23626)
 
-## Model component
-<dbs-pgx drug="carvedilol" model-id="Carvedilol_Nikolic2013_reference" status="extracted" stale="true" population="adult patients with chronic heart failure" measured-compound="carvedilol" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="carvedilol" model-id="Carvedilol_Nikolic2013_reference" status="extracted" stale="true" population="adult patients with chronic heart failure" measured-compound="carvedilol" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameters:** 2 extracted.

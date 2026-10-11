@@ -21,8 +21,7 @@
 Badri P et al., Pharmacokinetic and Pharmacodynamic Pro…, Clinical pharmacokinetics (2021)
   ·  DOI: [10.1007/s40262-020-00940-9](https://doi.org/10.1007/s40262-020-00940-9)
 
-## Model component
-<dbs-pgx drug="eculizumab" model-id="Eculizumab_Badri2021_reference" status="extracted" stale="false" population="" measured-compound="eculizumab" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="eculizumab" model-id="Eculizumab_Badri2021_reference" status="extracted" stale="false" population="" measured-compound="eculizumab" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 2 extracted.

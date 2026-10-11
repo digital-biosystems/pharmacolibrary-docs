@@ -21,8 +21,7 @@
 Tan Z et al., Population Pharmacokinetics of Cabozant…, Clinical pharmacokinetics (2024)
   ·  DOI: [10.1007/s40262-024-01379-y](https://doi.org/10.1007/s40262-024-01379-y)
 
-## Model component
-<dbs-pgx drug="cabozantinib" model-id="Cabozantinib_Tan2024_estimates_of_the_final_poppk_model_rse" status="needs_review" stale="false" population="metastatic renal cell carcinoma patients" measured-compound="cabozantinib" parameterization="apparent" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="cabozantinib" model-id="Cabozantinib_Tan2024_estimates_of_the_final_poppk_model_rse" status="needs_review" stale="false" population="metastatic renal cell carcinoma patients" measured-compound="cabozantinib" parameterization="apparent" topology="2C"></div>
 
 **Model structure:** 2-compartment; no model was built for this record.  
 **Parameters:** 7 extracted, plus 1 covariate effect.

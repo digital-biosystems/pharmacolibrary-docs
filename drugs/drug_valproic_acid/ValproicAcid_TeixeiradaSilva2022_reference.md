@@ -21,8 +21,7 @@
 Teixeira-da-Silva P et al., Population Pharmacokinetics of Valproic…, Pharmaceutics (2022)
   ·  DOI: [10.3390/pharmaceutics14040811](https://doi.org/10.3390/pharmaceutics14040811)
 
-## Model component
-<dbs-pgx drug="valproic acid" model-id="ValproicAcid_TeixeiradaSilva2022_reference" status="needs_review" stale="false" population="pediatric and adult Caucasian patients" measured-compound="valproic acid" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="valproic acid" model-id="ValproicAcid_TeixeiradaSilva2022_reference" status="needs_review" stale="false" population="pediatric and adult Caucasian patients" measured-compound="valproic acid" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 3 extracted.

@@ -20,8 +20,7 @@
 ## Citation
 Krupp A et al., [The effect of continuous arteriovenous…, Der Anaesthesist (1990)
 
-## Model component
-<dbs-pgx drug="azlocillin" model-id="Azlocillin_Krupp1990_reference" status="needs_review" stale="false" population="anuric intensive care patients" measured-compound="azlocillin" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="azlocillin" model-id="Azlocillin_Krupp1990_reference" status="needs_review" stale="false" population="anuric intensive care patients" measured-compound="azlocillin" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 3 extracted.

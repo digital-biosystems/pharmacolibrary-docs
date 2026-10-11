@@ -29,8 +29,7 @@ The record carries explicit estimates for clearance (0.258 L/h for R-warfarin, 0
 Zhu YB et al., Development of a novel individualized w…, Acta pharmacologica Sinica (2017)
   ·  DOI: [10.1038/aps.2016.163](https://doi.org/10.1038/aps.2016.163)
 
-## Model component
-<dbs-pgx drug="warfarin" model-id="Warfarin_Zhu2017_reference" status="needs_review" stale="false" population="Chinese patients with valve replacement" measured-compound="S-warfarin" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="warfarin" model-id="Warfarin_Zhu2017_reference" status="needs_review" stale="false" population="Chinese patients with valve replacement" measured-compound="S-warfarin" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 6 extracted.

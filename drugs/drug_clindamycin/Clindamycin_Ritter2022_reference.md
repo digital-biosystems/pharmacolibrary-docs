@@ -23,8 +23,7 @@
 Ritter L et al., Is clindamycin a potential treatment fo…, APMIS : acta pathologica, m… (2022)
   ·  DOI: [10.1111/apm.13205](https://doi.org/10.1111/apm.13205)
 
-## Model component
-<dbs-pgx drug="clindamycin" model-id="Clindamycin_Ritter2022_reference" status="rejected" stale="false" population="rats" measured-compound="clindamycin" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="clindamycin" model-id="Clindamycin_Ritter2022_reference" status="rejected" stale="false" population="rats" measured-compound="clindamycin" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

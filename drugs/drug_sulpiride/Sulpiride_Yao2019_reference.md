@@ -23,8 +23,7 @@
 Yao QY et al., Preclinical PK/PD model for the combina…, Acta pharmacologica Sinica (2019)
   ·  DOI: [10.1038/s41401-019-0251-7](https://doi.org/10.1038/s41401-019-0251-7)
 
-## Model component
-<dbs-pgx drug="sulpiride" model-id="Sulpiride_Yao2019_reference" status="rejected" stale="false" population="nude mice bearing MCF-7/Adr breast cancer xenografts" measured-compound="sulpiride" parameterization="apparent" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="sulpiride" model-id="Sulpiride_Yao2019_reference" status="rejected" stale="false" population="nude mice bearing MCF-7/Adr breast cancer xenografts" measured-compound="sulpiride" parameterization="apparent" topology="2C"></div>
 
 **Model structure:** 2-compartment; no model was built for this record.  
 **Parameters:** 7 extracted.

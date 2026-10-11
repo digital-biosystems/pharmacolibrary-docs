@@ -24,8 +24,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Cook GJ et al., Quantification of skeletal kinetic indi…, Journal of bone and mineral… (2002)
   ·  DOI: [10.1359/jbmr.2002.17.5.854](https://doi.org/10.1359/jbmr.2002.17.5.854)
 
-## Model component
-<dbs-pgx drug="sodium fluoride (18F)" model-id="SodiumFluoride18f_Cook2002_reference" status="needs_review" stale="false" population="patients with vertebral Paget&#39;s disease" measured-compound="sodium_fluoride_18f" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="sodium fluoride (18F)" model-id="SodiumFluoride18f_Cook2002_reference" status="needs_review" stale="false" population="patients with vertebral Paget&#39;s disease" measured-compound="sodium_fluoride_18f" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 2 extracted.

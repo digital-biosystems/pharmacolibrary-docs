@@ -20,8 +20,7 @@
 Hamitouche N et al., Population Pharmacokinetic-Pharmacodyna…, The AAPS journal (2017)
   ·  DOI: [10.1208/s12248-016-0041-9](https://doi.org/10.1208/s12248-016-0041-9)
 
-## Model component
-<dbs-pgx drug="fludrocortisone" model-id="Fludrocortisone_Hamitouche2017_reference" status="rejected" stale="false" population="healthy adults" measured-compound="fludrocortisone" parameterization="mechanistic" topology="general_linear"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="fludrocortisone" model-id="Fludrocortisone_Hamitouche2017_reference" status="rejected" stale="false" population="healthy adults" measured-compound="fludrocortisone" parameterization="mechanistic" topology="general_linear"></div>
 
 **Model structure:** general linear; no model was built for this record.  
 **Parameters:** 2 extracted.

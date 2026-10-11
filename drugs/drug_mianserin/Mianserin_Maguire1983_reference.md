@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on how the
 Maguire K et al., The pharmacokinetics of mianserin in el…, Psychiatry research (1983)
   ·  DOI: [10.1016/0165-1781(83)90016-1](https://doi.org/10.1016/0165-1781(83)90016-1)
 
-## Model component
-<dbs-pgx drug="mianserin" model-id="Mianserin_Maguire1983_reference" status="rejected" stale="true" population="elderly depressed patients" measured-compound="mianserin" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="mianserin" model-id="Mianserin_Maguire1983_reference" status="rejected" stale="true" population="elderly depressed patients" measured-compound="mianserin" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 7 extracted.

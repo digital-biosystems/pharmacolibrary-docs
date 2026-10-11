@@ -29,8 +29,7 @@ Independently confirmed by `gpt-oss:120b`.
 Potocka E et al., Population pharmacokinetic model of hum…, Journal of clinical pharmac… (2011)
   ·  DOI: [10.1177/0091270010378520](https://doi.org/10.1177/0091270010378520)
 
-## Model component
-<dbs-pgx drug="insulin (human)" model-id="InsulinHuman_Potocka2011_reference" status="needs_review" stale="false" population="healthy volunteers" measured-compound="insulin_human" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="insulin (human)" model-id="InsulinHuman_Potocka2011_reference" status="needs_review" stale="false" population="healthy volunteers" measured-compound="insulin_human" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment, oral mammillary model — template `PK_2C_enteral`.  
 **Parameters:** 5 extracted.

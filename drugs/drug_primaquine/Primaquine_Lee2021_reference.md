@@ -21,8 +21,7 @@
 Lee WY et al., Population Pharmacokinetics of Primaqui…, Pharmaceutics (2021)
   ·  DOI: [10.3390/pharmaceutics13050652](https://doi.org/10.3390/pharmaceutics13050652)
 
-## Model component
-<dbs-pgx drug="primaquine" model-id="Primaquine_Lee2021_reference" status="rejected" stale="false" population="healthy Korean adults (normal and obese groups)" measured-compound="primaquine" parameterization="apparent" topology="parent_metabolite"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="primaquine" model-id="Primaquine_Lee2021_reference" status="rejected" stale="false" population="healthy Korean adults (normal and obese groups)" measured-compound="primaquine" parameterization="apparent" topology="parent_metabolite"></div>
 
 **Model structure:** parent + metabolite; no model was built for this record.  
 **Parameters:** 0 extracted.

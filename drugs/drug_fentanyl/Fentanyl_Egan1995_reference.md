@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on paramet
 Egan TD, Remifentanil pharmacokinetics and pharm…, Clinical pharmacokinetics (1995)
   ·  DOI: [10.2165/00003088-199529020-00003](https://doi.org/10.2165/00003088-199529020-00003)
 
-## Model component
-<dbs-pgx drug="fentanyl" model-id="Fentanyl_Egan1995_reference" status="rejected" stale="true" population="" measured-compound="fentanyl" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="fentanyl" model-id="Fentanyl_Egan1995_reference" status="rejected" stale="true" population="" measured-compound="fentanyl" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment; no model was built for this record.  
 **Parameters:** 3 extracted.

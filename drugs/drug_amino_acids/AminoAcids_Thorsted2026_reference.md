@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on paramet
 Thorsted A et al., Population Pharmacokinetics and Pharmac…, Journal of clinical pharmac… (2026)
   ·  DOI: [10.1002/jcph.70187](https://doi.org/10.1002/jcph.70187)
 
-## Model component
-<dbs-pgx drug="amino acids" model-id="AminoAcids_Thorsted2026_reference" status="extracted" stale="true" population="" measured-compound="amino_acids" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="amino acids" model-id="AminoAcids_Thorsted2026_reference" status="extracted" stale="true" population="" measured-compound="amino_acids" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 2 extracted.

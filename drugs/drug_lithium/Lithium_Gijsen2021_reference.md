@@ -21,8 +21,7 @@
 Gijsen M et al., Meropenem Pharmacokinetics and Target A…, Microorganisms (2021)
   ·  DOI: [10.3390/microorganisms9061310](https://doi.org/10.3390/microorganisms9061310)
 
-## Model component
-<dbs-pgx drug="lithium" model-id="Lithium_Gijsen2021_reference" status="extracted" stale="false" population="" measured-compound="lithium" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="lithium" model-id="Lithium_Gijsen2021_reference" status="extracted" stale="false" population="" measured-compound="lithium" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment, IV mammillary model — template `PK_2C`.  
 **Parameters:** 4 extracted.

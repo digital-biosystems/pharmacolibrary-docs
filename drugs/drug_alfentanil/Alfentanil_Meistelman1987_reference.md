@@ -21,8 +21,7 @@
 Meistelman C et al., A comparison of alfentanil pharmacokine…, Anesthesiology (1987)
   ·  DOI: [10.1097/00000542-198701000-00003](https://doi.org/10.1097/00000542-198701000-00003)
 
-## Model component
-<dbs-pgx drug="alfentanil" model-id="Alfentanil_Meistelman1987_reference" status="needs_review" stale="false" population="children and adults" measured-compound="alfentanil" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="alfentanil" model-id="Alfentanil_Meistelman1987_reference" status="needs_review" stale="false" population="children and adults" measured-compound="alfentanil" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 4 extracted.

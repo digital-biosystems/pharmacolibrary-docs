@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on paramet
 Chapagain M et al., Omadacycline efficacy in the hollow fib…, The Journal of antimicrobia… (2022)
   ·  DOI: [10.1093/jac/dkac068](https://doi.org/10.1093/jac/dkac068)
 
-## Model component
-<dbs-pgx drug="rifabutin" model-id="Rifabutin_Chapagain2022_reference" status="rejected" stale="false" population="" measured-compound="rifabutin" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="rifabutin" model-id="Rifabutin_Chapagain2022_reference" status="rejected" stale="false" population="" measured-compound="rifabutin" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 2 extracted.

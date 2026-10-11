@@ -23,8 +23,7 @@
 Rubino CM et al., Population Pharmacokinetics of Rezafung…, Antimicrobial agents and ch… (2021)
   ·  DOI: [10.1128/AAC.00842-21](https://doi.org/10.1128/AAC.00842-21)
 
-## Model component
-<dbs-pgx drug="rezafungin acetate" model-id="RezafunginAcetate_Rubino2021_reference" status="extracted" stale="false" population="healthy volunteers and patients with fungal infections" measured-compound="rezafungin" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="rezafungin acetate" model-id="RezafunginAcetate_Rubino2021_reference" status="extracted" stale="false" population="healthy volunteers and patients with fungal infections" measured-compound="rezafungin" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment, IV mammillary model — template `PK_2C`.  
 **Parameters:** 5 extracted, plus 4 covariate effects.

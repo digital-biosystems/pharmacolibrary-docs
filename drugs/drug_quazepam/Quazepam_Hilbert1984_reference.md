@@ -21,8 +21,7 @@
 Hilbert JM et al., Quazepam kinetics in the elderly, Clinical pharmacology and t… (1984)
   ·  DOI: [10.1038/clpt.1984.220](https://doi.org/10.1038/clpt.1984.220)
 
-## Model component
-<dbs-pgx drug="quazepam" model-id="Quazepam_Hilbert1984_reference" status="rejected" stale="false" population="geriatric subjects" measured-compound="quazepam" parameterization="mechanistic" topology="general_linear"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="quazepam" model-id="Quazepam_Hilbert1984_reference" status="rejected" stale="false" population="geriatric subjects" measured-compound="quazepam" parameterization="mechanistic" topology="general_linear"></div>
 
 **Model structure:** general linear; no model was built for this record.  
 **Parameters:** 6 extracted.

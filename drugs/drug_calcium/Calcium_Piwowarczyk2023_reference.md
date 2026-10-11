@@ -27,8 +27,7 @@
 Piwowarczyk P et al., Population Pharmacokinetics and Probabi…, Clinical pharmacokinetics (2023)
   ·  DOI: [10.1007/s40262-023-01244-4](https://doi.org/10.1007/s40262-023-01244-4)
 
-## Model component
-<dbs-pgx drug="Calcium" model-id="Calcium_Piwowarczyk2023_reference" status="extracted" stale="true" population="" measured-compound="calcium" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="Calcium" model-id="Calcium_Piwowarczyk2023_reference" status="extracted" stale="true" population="" measured-compound="calcium" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 3 extracted.

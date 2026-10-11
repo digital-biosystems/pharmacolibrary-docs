@@ -23,8 +23,7 @@
 Hoglund RM et al., Population Pharmacokinetic Properties o…, PLoS medicine (2017)
   ·  DOI: [10.1371/journal.pmed.1002212](https://doi.org/10.1371/journal.pmed.1002212)
 
-## Model component
-<dbs-pgx drug="Piperaquine" model-id="Piperaquine_Hoglund2017_reference" status="needs_review" stale="false" population="adults and children with uncomplicated falciparum malaria and healthy volunteers" measured-compound="piperaquine" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="Piperaquine" model-id="Piperaquine_Hoglund2017_reference" status="needs_review" stale="false" population="adults and children with uncomplicated falciparum malaria and healthy volunteers" measured-compound="piperaquine" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 1 extracted.

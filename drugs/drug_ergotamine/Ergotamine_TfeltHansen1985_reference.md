@@ -30,8 +30,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the val
 Tfelt-Hansen P et al., Intramuscular ergotamine: plasma levels…, Clinical pharmacology and t… (1985)
   ·  DOI: [10.1038/clpt.1985.7](https://doi.org/10.1038/clpt.1985.7)
 
-## Model component
-<dbs-pgx drug="ergotamine" model-id="Ergotamine_TfeltHansen1985_reference" status="rejected" stale="true" population="subjects with migraine" measured-compound="ergotamine" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="ergotamine" model-id="Ergotamine_TfeltHansen1985_reference" status="rejected" stale="true" population="subjects with migraine" measured-compound="ergotamine" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 1 extracted.

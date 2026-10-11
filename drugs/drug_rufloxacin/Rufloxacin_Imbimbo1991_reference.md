@@ -21,8 +21,7 @@
 Imbimbo BP et al., Inter- and intrasubject variabilities i…, Antimicrobial agents and ch… (1991)
   ·  DOI: [10.1128/AAC.35.2.390](https://doi.org/10.1128/AAC.35.2.390)
 
-## Model component
-<dbs-pgx drug="rufloxacin" model-id="Rufloxacin_Imbimbo1991_reference" status="extracted" stale="false" population="healthy male volunteers" measured-compound="rufloxacin" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="rufloxacin" model-id="Rufloxacin_Imbimbo1991_reference" status="extracted" stale="false" population="healthy male volunteers" measured-compound="rufloxacin" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 2 extracted.

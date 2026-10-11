@@ -21,8 +21,7 @@
 Roubaud Baudron C et al., Is the subcutaneous route an alternativ…, The Journal of antimicrobia… (2019)
   ·  DOI: [10.1093/jac/dkz385](https://doi.org/10.1093/jac/dkz385)
 
-## Model component
-<dbs-pgx drug="ertapenem" model-id="Ertapenem_Roubaud2019_reference" status="needs_review" stale="false" population="older patients" measured-compound="ertapenem" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="ertapenem" model-id="Ertapenem_Roubaud2019_reference" status="needs_review" stale="false" population="older patients" measured-compound="ertapenem" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 3 extracted.

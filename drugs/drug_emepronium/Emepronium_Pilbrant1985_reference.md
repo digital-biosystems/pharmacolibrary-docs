@@ -32,8 +32,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which m
 Pilbrant A et al., Pharmacokinetics and pharmacodynamics o…, Acta pharmacologica et toxi… (1985)
   ·  DOI: [10.1111/j.1600-0773.1985.tb01292.x](https://doi.org/10.1111/j.1600-0773.1985.tb01292.x)
 
-## Model component
-<dbs-pgx drug="emepronium" model-id="Emepronium_Pilbrant1985_reference" status="rejected" stale="true" population="healthy volunteers" measured-compound="emepronium" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="emepronium" model-id="Emepronium_Pilbrant1985_reference" status="rejected" stale="true" population="healthy volunteers" measured-compound="emepronium" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

@@ -30,8 +30,7 @@ No clearance, volume or rate constant of the model is reported in it. Only the a
 Bouazza N et al., Population pharmacokinetics of tenofovi…, Journal of acquired immune… (2011)
   ·  DOI: [10.1097/QAI.0b013e3182302ea8](https://doi.org/10.1097/QAI.0b013e3182302ea8)
 
-## Model component
-<dbs-pgx drug="tenofovir disoproxil" model-id="TenofovirDisoproxil_Bouazza2011_reference" status="extracted" stale="true" population="HIV-1-infected pediatric patients" measured-compound="tenofovir" parameterization="apparent" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="tenofovir disoproxil" model-id="TenofovirDisoproxil_Bouazza2011_reference" status="extracted" stale="true" population="HIV-1-infected pediatric patients" measured-compound="tenofovir" parameterization="apparent" topology="2C"></div>
 
 **Model structure:** 2-compartment, oral mammillary model — template `PK_2C_enteral`.  
 **Parameters:** 5 extracted.

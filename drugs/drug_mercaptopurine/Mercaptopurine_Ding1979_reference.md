@@ -23,8 +23,7 @@
 ## Citation
 Ding TL et al., Comparative bioavailability and pharmac…, Drug metabolism and disposi… (1979)
 
-## Model component
-<dbs-pgx drug="mercaptopurine" model-id="Mercaptopurine_Ding1979_reference" status="rejected" stale="false" population="male rhesus monkeys" measured-compound="mercaptopurine" parameterization="mechanistic" topology="general_linear"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="mercaptopurine" model-id="Mercaptopurine_Ding1979_reference" status="rejected" stale="false" population="male rhesus monkeys" measured-compound="mercaptopurine" parameterization="mechanistic" topology="general_linear"></div>
 
 **Model structure:** general linear; no model was built for this record.  
 **Parameters:** 3 extracted.

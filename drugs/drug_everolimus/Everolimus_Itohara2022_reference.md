@@ -21,8 +21,7 @@
 Itohara K et al., Population pharmacokinetics of everolim…, Clinical and translational… (2022)
   ·  DOI: [10.1111/cts.13389](https://doi.org/10.1111/cts.13389)
 
-## Model component
-<dbs-pgx drug="everolimus" model-id="Everolimus_Itohara2022_reference" status="needs_review" stale="false" population="Japanese adult liver transplant patients" measured-compound="everolimus" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="everolimus" model-id="Everolimus_Itohara2022_reference" status="needs_review" stale="false" population="Japanese adult liver transplant patients" measured-compound="everolimus" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 1 extracted, plus 1 covariate effect.

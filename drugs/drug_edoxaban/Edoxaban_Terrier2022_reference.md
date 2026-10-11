@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Terrier J et al., Population Pharmacokinetic Models for D…, Clinical pharmacology and t… (2022)
   ·  DOI: [10.1002/cpt.2649](https://doi.org/10.1002/cpt.2649)
 
-## Model component
-<dbs-pgx drug="edoxaban" model-id="Edoxaban_Terrier2022_reference" status="rejected" stale="true" population="mixed (AF, VTE, healthy volunteers)" measured-compound="dabigatran, apixaban, rivaroxaban, edoxaban" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="edoxaban" model-id="Edoxaban_Terrier2022_reference" status="rejected" stale="true" population="mixed (AF, VTE, healthy volunteers)" measured-compound="dabigatran, apixaban, rivaroxaban, edoxaban" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

@@ -23,8 +23,7 @@
 Upton CM et al., Cerebrospinal fluid penetration of cycl…, Antimicrobial agents and ch… (2025)
   ·  DOI: [10.1128/aac.00931-25](https://doi.org/10.1128/aac.00931-25)
 
-## Model component
-<dbs-pgx drug="cycloserine" model-id="Cycloserine_Upton2025_reference" status="rejected" stale="false" population="adults with pulmonary drug-resistant tuberculosis" measured-compound="cycloserine" parameterization="apparent" topology="general_linear"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="cycloserine" model-id="Cycloserine_Upton2025_reference" status="rejected" stale="false" population="adults with pulmonary drug-resistant tuberculosis" measured-compound="cycloserine" parameterization="apparent" topology="general_linear"></div>
 
 **Model structure:** general linear; no model was built for this record.  
 **Parameters:** 6 extracted.

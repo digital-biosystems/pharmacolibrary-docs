@@ -23,8 +23,7 @@
 Onita T et al., Prostatic Pharmacokinetic/Pharmacodynam…, Journal of clinical pharmac… (2021)
   ·  DOI: [10.1002/jcph.1800](https://doi.org/10.1002/jcph.1800)
 
-## Model component
-<dbs-pgx drug="ampicillin" model-id="Ampicillin_Onita2021_reference" status="needs_review" stale="false" population="prostatic hyperplasia patients" measured-compound="ampicillin, sulbactam" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="ampicillin" model-id="Ampicillin_Onita2021_reference" status="needs_review" stale="false" population="prostatic hyperplasia patients" measured-compound="ampicillin, sulbactam" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 3 extracted.

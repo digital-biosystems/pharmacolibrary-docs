@@ -23,8 +23,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 ## Citation
 Hawkins RA et al., Evaluation of the skeletal kinetics of…, Journal of nuclear medicine… (1992)
 
-## Model component
-<dbs-pgx drug="sodium fluoride (18F)" model-id="SodiumFluoride18f_Hawkins1992_reference" status="rejected" stale="false" population="humans with focal and generalized bone disease" measured-compound="sodium_fluoride_18f" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="sodium fluoride (18F)" model-id="SodiumFluoride18f_Hawkins1992_reference" status="rejected" stale="false" population="humans with focal and generalized bone disease" measured-compound="sodium_fluoride_18f" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

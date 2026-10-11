@@ -30,8 +30,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the val
 ## Citation
 Chmelar V et al., Sex differences in the fate of N-methyl…, Materia medica Polona. Poli… (1975)
 
-## Model component
-<dbs-pgx drug="pethidine" model-id="Pethidine_Chmelar1975_reference" status="rejected" stale="true" population="male and female rats" measured-compound="pethidine" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="pethidine" model-id="Pethidine_Chmelar1975_reference" status="rejected" stale="true" population="male and female rats" measured-compound="pethidine" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

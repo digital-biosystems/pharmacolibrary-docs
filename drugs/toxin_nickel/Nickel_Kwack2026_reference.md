@@ -25,8 +25,7 @@
 Kwack H; Kong H; Lim J; Zhang BT; Hahn J; Chang MJ et al. (2026). Pharmaceutics 18
   ·  DOI: [10.3390/pharmaceutics18040501](https://doi.org/10.3390/pharmaceutics18040501)
 
-## Model component
-<dbs-pgx drug="nickel" model-id="Nickel_Kwack2026_reference" status="not_modelled" stale="false" population="" measured-compound="nickel" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="nickel" model-id="Nickel_Kwack2026_reference" status="not_modelled" stale="false" population="" measured-compound="nickel" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 4 extracted.

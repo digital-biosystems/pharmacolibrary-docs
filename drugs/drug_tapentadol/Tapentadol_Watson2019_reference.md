@@ -33,8 +33,7 @@ Independently confirmed by `gpt-oss:120b`.
 Watson E et al., Population pharmacokinetic modeling to…, Journal of pain research (2019)
   ·  DOI: [10.2147/JPR.S208454](https://doi.org/10.2147/JPR.S208454)
 
-## Model component
-<dbs-pgx drug="tapentadol" model-id="Tapentadol_Watson2019_reference" status="extracted" stale="true" population="pediatric patients (2 to &lt;18 years)" measured-compound="tapentadol" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="tapentadol" model-id="Tapentadol_Watson2019_reference" status="extracted" stale="true" population="pediatric patients (2 to &lt;18 years)" measured-compound="tapentadol" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 4 extracted, plus 2 covariate effects.

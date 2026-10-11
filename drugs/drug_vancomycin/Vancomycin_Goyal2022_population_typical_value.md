@@ -29,8 +29,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Goyal RK et al., Population Pharmacokinetics of Vancomyc…, Frontiers in pharmacology (2022)
   ·  DOI: [10.3389/fphar.2022.873439](https://doi.org/10.3389/fphar.2022.873439)
 
-## Model component
-<dbs-pgx drug="vancomycin" model-id="Vancomycin_Goyal2022_population_typical_value" status="extracted" stale="true" population="pregnant women" measured-compound="vancomycin" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="vancomycin" model-id="Vancomycin_Goyal2022_population_typical_value" status="extracted" stale="true" population="pregnant women" measured-compound="vancomycin" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment, IV mammillary model — template `PK_2C`.  
 **Parameters:** 4 extracted.

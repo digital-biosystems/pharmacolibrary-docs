@@ -20,8 +20,7 @@
 Konishi K et al., Pharmacokinetics of carumonam (AMA-1080…, Antimicrobial agents and ch… (1991)
   ·  DOI: [10.1128/AAC.35.6.1048](https://doi.org/10.1128/AAC.35.6.1048)
 
-## Model component
-<dbs-pgx drug="carumonam" model-id="Carumonam_Konishi1991_reference" status="rejected" stale="false" population="patients with impaired renal function and hemodialysis" measured-compound="carumonam" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="carumonam" model-id="Carumonam_Konishi1991_reference" status="rejected" stale="false" population="patients with impaired renal function and hemodialysis" measured-compound="carumonam" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

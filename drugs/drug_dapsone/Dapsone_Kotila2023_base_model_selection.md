@@ -25,8 +25,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the val
 Kotila OA et al., Non-compartmental and population pharma…, British journal of clinical… (2023)
   ·  DOI: [10.1111/bcp.15862](https://doi.org/10.1111/bcp.15862)
 
-## Model component
-<dbs-pgx drug="dapsone" model-id="Dapsone_Kotila2023_base_model_selection" status="needs_review" stale="false" population="healthy Nigerians" measured-compound="dapsone" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="dapsone" model-id="Dapsone_Kotila2023_base_model_selection" status="needs_review" stale="false" population="healthy Nigerians" measured-compound="dapsone" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 4 extracted, plus 1 covariate effect.

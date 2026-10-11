@@ -29,8 +29,7 @@ Independently confirmed by `gpt-oss:120b`.
 Bardol M et al., Fentanyl dosage for preterm infants sug…, Pediatric research (2025)
   ·  DOI: [10.1038/s41390-024-03404-z](https://doi.org/10.1038/s41390-024-03404-z)
 
-## Model component
-<dbs-pgx drug="fentanyl" model-id="Fentanyl_Bardol2025_reference" status="needs_review" stale="false" population="preterm infants" measured-compound="fentanyl" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="fentanyl" model-id="Fentanyl_Bardol2025_reference" status="needs_review" stale="false" population="preterm infants" measured-compound="fentanyl" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment; no model was built for this record.  
 **Parameters:** 5 extracted.

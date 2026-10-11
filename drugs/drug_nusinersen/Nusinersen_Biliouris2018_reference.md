@@ -22,8 +22,7 @@
 Biliouris K et al., A Semi-Mechanistic Population Pharmacok…, CPT: pharmacometrics & syst… (2018)
   ·  DOI: [10.1002/psp4.12323](https://doi.org/10.1002/psp4.12323)
 
-## Model component
-<dbs-pgx drug="nusinersen" model-id="Nusinersen_Biliouris2018_reference" status="rejected" stale="false" population="nonhuman primates" measured-compound="nusinersen" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="nusinersen" model-id="Nusinersen_Biliouris2018_reference" status="rejected" stale="false" population="nonhuman primates" measured-compound="nusinersen" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

@@ -22,8 +22,7 @@
 Pan WJ et al., An animal model for simultaneous pharma…, Journal of pharmacological… (1998)
   ·  DOI: [10.1016/s1056-8719(97)00097-x](https://doi.org/10.1016/s1056-8719(97)00097-x)
 
-## Model component
-<dbs-pgx drug="cocaine" model-id="Cocaine_Pan1998_reference" status="rejected" stale="false" population="rats" measured-compound="cocaine" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="cocaine" model-id="Cocaine_Pan1998_reference" status="rejected" stale="false" population="rats" measured-compound="cocaine" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 2 extracted.

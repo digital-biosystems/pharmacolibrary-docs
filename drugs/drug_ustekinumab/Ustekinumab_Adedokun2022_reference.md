@@ -21,8 +21,7 @@
 Adedokun OJ et al., Population Pharmacokinetics and Exposur…, Clinical therapeutics (2022)
   ·  DOI: [10.1016/j.clinthera.2022.08.010](https://doi.org/10.1016/j.clinthera.2022.08.010)
 
-## Model component
-<dbs-pgx drug="ustekinumab" model-id="Ustekinumab_Adedokun2022_reference" status="extracted" stale="false" population="adults with moderately to severely active Crohn&#39;s disease" measured-compound="ustekinumab" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="ustekinumab" model-id="Ustekinumab_Adedokun2022_reference" status="extracted" stale="false" population="adults with moderately to severely active Crohn&#39;s disease" measured-compound="ustekinumab" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 6 extracted.

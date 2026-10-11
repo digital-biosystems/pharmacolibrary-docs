@@ -29,8 +29,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on paramet
 Briassoulis G et al., Lamotrigine childhood overdose, Pediatric neurology (1998)
   ·  DOI: [10.1016/s0887-8994(98)00050-2](https://doi.org/10.1016/s0887-8994(98)00050-2)
 
-## Model component
-<dbs-pgx drug="midazolam" model-id="Midazolam_Briassoulis1998_reference" status="curated_candidate" stale="false" population="2-year-old male" measured-compound="midazolam" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="midazolam" model-id="Midazolam_Briassoulis1998_reference" status="curated_candidate" stale="false" population="2-year-old male" measured-compound="midazolam" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameters:** 2 extracted.

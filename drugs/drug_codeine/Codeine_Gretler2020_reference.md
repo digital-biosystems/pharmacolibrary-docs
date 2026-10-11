@@ -33,8 +33,7 @@ Independently confirmed by `gpt-oss:120b`.
 Gretler SR et al., Metabolism, pharmacokinetics and select…, Veterinary anaesthesia and… (2020)
   ·  DOI: [10.1016/j.vaa.2020.04.004](https://doi.org/10.1016/j.vaa.2020.04.004)
 
-## Model component
-<dbs-pgx drug="codeine" model-id="Codeine_Gretler2020_reference" status="rejected" stale="true" population="Thoroughbred horses" measured-compound="codeine" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="codeine" model-id="Codeine_Gretler2020_reference" status="rejected" stale="true" population="Thoroughbred horses" measured-compound="codeine" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 5 extracted.

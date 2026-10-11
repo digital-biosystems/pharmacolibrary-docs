@@ -29,8 +29,7 @@ No clearance, volume or rate constant of the model is reported in it. No paramet
 Han K et al., Population pharmacokinetics of cabotegr…, Antimicrobial agents and ch… (2024)
   ·  DOI: [10.1128/aac.00880-24](https://doi.org/10.1128/aac.00880-24)
 
-## Model component
-<dbs-pgx drug="cabotegravir" model-id="Cabotegravir_Han2024v2_reference" status="rejected" stale="true" population="adults with and without HIV" measured-compound="cabotegravir" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="cabotegravir" model-id="Cabotegravir_Han2024v2_reference" status="rejected" stale="true" population="adults with and without HIV" measured-compound="cabotegravir" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

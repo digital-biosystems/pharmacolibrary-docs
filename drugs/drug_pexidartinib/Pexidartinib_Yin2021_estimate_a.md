@@ -20,8 +20,7 @@
 Yin O et al., Population Pharmacokinetic Analysis of…, Journal of clinical pharmac… (2021)
   ·  DOI: [10.1002/jcph.1753](https://doi.org/10.1002/jcph.1753)
 
-## Model component
-<dbs-pgx drug="pexidartinib" model-id="Pexidartinib_Yin2021_estimate_a" status="rejected" stale="false" population="healthy subjects and patients with TGCT or other solid tumors" measured-compound="pexidartinib" parameterization="apparent" topology="parent_metabolite"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="pexidartinib" model-id="Pexidartinib_Yin2021_estimate_a" status="rejected" stale="false" population="healthy subjects and patients with TGCT or other solid tumors" measured-compound="pexidartinib" parameterization="apparent" topology="parent_metabolite"></div>
 
 **Model structure:** parent + metabolite; no model was built for this record.  
 **Parameters:** 3 extracted.

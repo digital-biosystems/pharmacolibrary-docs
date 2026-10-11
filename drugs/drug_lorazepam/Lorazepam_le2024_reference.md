@@ -21,8 +21,7 @@
 le Noble JLML et al., Pharmacokinetics of Enteral Lormetazepa…, Clinical pharmacokinetics (2024)
   ·  DOI: [10.1007/s40262-024-01455-3](https://doi.org/10.1007/s40262-024-01455-3)
 
-## Model component
-<dbs-pgx drug="lorazepam" model-id="Lorazepam_le2024_reference" status="extracted" stale="false" population="" measured-compound="lorazepam" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="lorazepam" model-id="Lorazepam_le2024_reference" status="extracted" stale="false" population="" measured-compound="lorazepam" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 3 extracted.

@@ -21,8 +21,7 @@
 Sutjandra L et al., Population pharmacokinetic meta-analysi…, Clinical pharmacokinetics (2011)
   ·  DOI: [10.2165/11594240-000000000-00000](https://doi.org/10.2165/11594240-000000000-00000)
 
-## Model component
-<dbs-pgx drug="denosumab" model-id="Denosumab_Sutjandra2011_reference" status="extracted" stale="false" population="healthy subjects and postmenopausal women with osteopenia or osteoporosis" measured-compound="denosumab" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="denosumab" model-id="Denosumab_Sutjandra2011_reference" status="extracted" stale="false" population="healthy subjects and postmenopausal women with osteopenia or osteoporosis" measured-compound="denosumab" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameters:** 4 extracted.

@@ -21,8 +21,7 @@
 Abdalla S et al., Simultaneous pharmacokinetic modeling o…, Antimicrobial agents and ch… (2024)
   ·  DOI: [10.1128/aac.01004-23](https://doi.org/10.1128/aac.01004-23)
 
-## Model component
-<dbs-pgx drug="cobicistat" model-id="Cobicistat_Abdalla2024_reference" status="rejected" stale="false" population="" measured-compound="cobicistat" parameterization="apparent" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="cobicistat" model-id="Cobicistat_Abdalla2024_reference" status="rejected" stale="false" population="" measured-compound="cobicistat" parameterization="apparent" topology="2C"></div>
 
 **Model structure:** 2-compartment; no model was built for this record.  
 **Parameters:** 3 extracted.

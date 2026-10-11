@@ -20,8 +20,7 @@
 Noetzli M et al., Population pharmacokinetic study of mem…, Clinical pharmacokinetics (2013)
   ·  DOI: [10.1007/s40262-013-0032-2](https://doi.org/10.1007/s40262-013-0032-2)
 
-## Model component
-<dbs-pgx drug="memantine" model-id="Memantine_Noetzli2013_reference" status="rejected" stale="false" population="patients with dementia (naturalistic setting)" measured-compound="memantine" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="memantine" model-id="Memantine_Noetzli2013_reference" status="rejected" stale="false" population="patients with dementia (naturalistic setting)" measured-compound="memantine" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

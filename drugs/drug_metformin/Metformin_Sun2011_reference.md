@@ -29,8 +29,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the val
 Sun L et al., Pharmacokinetic-Pharmacodynamic Modelin…, The open biomedical enginee… (2011)
   ·  DOI: [10.2174/1874120701105010001](https://doi.org/10.2174/1874120701105010001)
 
-## Model component
-<dbs-pgx drug="metformin" model-id="Metformin_Sun2011_reference" status="needs_review" stale="false" population="healthy subjects and type II diabetic patients" measured-compound="metformin" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="metformin" model-id="Metformin_Sun2011_reference" status="needs_review" stale="false" population="healthy subjects and type II diabetic patients" measured-compound="metformin" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 5 extracted.

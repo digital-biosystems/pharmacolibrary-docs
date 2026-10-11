@@ -29,8 +29,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the val
 Keizer RJ et al., A model of hypertension and proteinuria…, Journal of pharmacokinetics… (2010)
   ·  DOI: [10.1007/s10928-010-9164-2](https://doi.org/10.1007/s10928-010-9164-2)
 
-## Model component
-<dbs-pgx drug="epoprostenol" model-id="Epoprostenol_Keizer2010_reference" status="extracted" stale="true" population="" measured-compound="epoprostenol" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="epoprostenol" model-id="Epoprostenol_Keizer2010_reference" status="extracted" stale="true" population="" measured-compound="epoprostenol" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameters:** 2 extracted.

@@ -29,8 +29,7 @@ Independently confirmed by `gpt-oss:120b`.
 Mohmaed Ali MI et al., A Population Pharmacokinetic Study to E…, Clinical pharmacokinetics (2024)
   ·  DOI: [10.1007/s40262-024-01445-5](https://doi.org/10.1007/s40262-024-01445-5)
 
-## Model component
-<dbs-pgx drug="doxorubicin" model-id="Doxorubicin_Mohmaed2024_reference" status="extracted" stale="true" population="patients across all age groups" measured-compound="doxorubicin" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="doxorubicin" model-id="Doxorubicin_Mohmaed2024_reference" status="extracted" stale="true" population="patients across all age groups" measured-compound="doxorubicin" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameters:** 5 extracted.

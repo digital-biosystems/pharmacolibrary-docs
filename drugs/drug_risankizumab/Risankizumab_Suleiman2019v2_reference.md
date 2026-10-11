@@ -21,8 +21,7 @@
 Suleiman AA et al., Population Pharmacokinetics of the Inte…, Clinical pharmacokinetics (2019)
   ·  DOI: [10.1007/s40262-018-0704-z](https://doi.org/10.1007/s40262-018-0704-z)
 
-## Model component
-<dbs-pgx drug="risankizumab" model-id="Risankizumab_Suleiman2019v2_reference" status="rejected" stale="false" population="adults with psoriasis and Crohn&#39;s disease" measured-compound="risankizumab" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="risankizumab" model-id="Risankizumab_Suleiman2019v2_reference" status="rejected" stale="false" population="adults with psoriasis and Crohn&#39;s disease" measured-compound="risankizumab" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment; no model was built for this record.  
 **Parameters:** 6 extracted, plus 2 covariate effects.

@@ -23,8 +23,7 @@
 Arun B et al., Ampicillin/Sulbactam in Combination wit…, The Journal of infectious d… (2026)
   ·  DOI: [10.1093/infdis/jiaf567](https://doi.org/10.1093/infdis/jiaf567)
 
-## Model component
-<dbs-pgx drug="sulbactam" model-id="Sulbactam_Arun2026_reference" status="rejected" stale="false" population="" measured-compound="sulbactam" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="sulbactam" model-id="Sulbactam_Arun2026_reference" status="rejected" stale="false" population="" measured-compound="sulbactam" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 2 extracted.

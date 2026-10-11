@@ -33,8 +33,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Wang KS et al., The clearance and metabolism of biotin…, The Journal of nutrition (2001)
   ·  DOI: [10.1093/jn/131.4.1271](https://doi.org/10.1093/jn/131.4.1271)
 
-## Model component
-<dbs-pgx drug="biotin" model-id="Biotin_Wang2001_reference" status="rejected" stale="true" population="Landrace-Cambrough pigs" measured-compound="biotin" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="biotin" model-id="Biotin_Wang2001_reference" status="rejected" stale="true" population="Landrace-Cambrough pigs" measured-compound="biotin" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

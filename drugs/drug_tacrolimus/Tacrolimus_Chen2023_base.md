@@ -21,8 +21,7 @@
 Chen D et al., Population PK/PD model of tacrolimus fo…, CPT: pharmacometrics & syst… (2023)
   ·  DOI: [10.1002/psp4.12966](https://doi.org/10.1002/psp4.12966)
 
-## Model component
-<dbs-pgx drug="tacrolimus" model-id="Tacrolimus_Chen2023_base" status="extracted" stale="false" population="adults with myasthenia gravis" measured-compound="tacrolimus" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="tacrolimus" model-id="Tacrolimus_Chen2023_base" status="extracted" stale="false" population="adults with myasthenia gravis" measured-compound="tacrolimus" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 4 extracted.

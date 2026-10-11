@@ -21,8 +21,7 @@
 Yin OQ et al., Population pharmacokinetic modeling and…, Journal of clinical pharmac… (2016)
   ·  DOI: [10.1002/jcph.584](https://doi.org/10.1002/jcph.584)
 
-## Model component
-<dbs-pgx drug="mirogabalin" model-id="Mirogabalin_Yin2016_reference" status="rejected" stale="false" population="subjects with varying degrees of renal function" measured-compound="mirogabalin" parameterization="mechanistic" topology="parent_metabolite"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="mirogabalin" model-id="Mirogabalin_Yin2016_reference" status="rejected" stale="false" population="subjects with varying degrees of renal function" measured-compound="mirogabalin" parameterization="mechanistic" topology="parent_metabolite"></div>
 
 **Model structure:** parent + metabolite; no model was built for this record.  
 **Parameters:** 3 extracted.

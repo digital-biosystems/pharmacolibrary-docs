@@ -31,8 +31,7 @@ Independently confirmed by `gpt-oss:120b`.
 Meineke I et al., Population pharmacokinetic analysis of…, British journal of clinical… (2003)
   ·  DOI: [10.1046/j.1365-2125.2003.01753.x](https://doi.org/10.1046/j.1365-2125.2003.01753.x)
 
-## Model component
-<dbs-pgx drug="meloxicam" model-id="Meloxicam_Meineke2003_nonmem_estimate" status="needs_review" stale="true" population="rheumatoid arthritis patients" measured-compound="meloxicam" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="meloxicam" model-id="Meloxicam_Meineke2003_nonmem_estimate" status="needs_review" stale="true" population="rheumatoid arthritis patients" measured-compound="meloxicam" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 3 extracted.

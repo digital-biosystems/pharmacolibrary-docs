@@ -33,8 +33,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on paramet
 Ma P et al., Lonicerae Japonicae Flos with the homol…, Frontiers in oncology (2024)
   ·  DOI: [10.3389/fonc.2024.1446328](https://doi.org/10.3389/fonc.2024.1446328)
 
-## Model component
-<dbs-pgx drug="rutoside" model-id="Rutoside_Ma2024_reference" status="needs_review" stale="true" population="" measured-compound="rutoside" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="rutoside" model-id="Rutoside_Ma2024_reference" status="needs_review" stale="true" population="" measured-compound="rutoside" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 2 extracted.

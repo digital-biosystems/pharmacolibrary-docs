@@ -31,8 +31,7 @@ Independently confirmed by `gpt-oss:120b`.
 Harrison SA et al., Rencofilstat, a cyclophilin inhibitor:…, Hepatology communications (2022)
   ·  DOI: [10.1002/hep4.2100](https://doi.org/10.1002/hep4.2100)
 
-## Model component
-<dbs-pgx drug="cannabinoids" model-id="Cannabinoids_Harrison2022_reference" status="extracted" stale="true" population="" measured-compound="cannabinoids" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="cannabinoids" model-id="Cannabinoids_Harrison2022_reference" status="extracted" stale="true" population="" measured-compound="cannabinoids" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 2 extracted.

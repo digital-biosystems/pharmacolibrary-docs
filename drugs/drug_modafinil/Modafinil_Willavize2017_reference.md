@@ -21,8 +21,7 @@
 Willavize S et al., Population Pharmacokinetic Modeling of…, Journal of clinical pharmac… (2017)
   ·  DOI: [10.1002/jcph.800](https://doi.org/10.1002/jcph.800)
 
-## Model component
-<dbs-pgx drug="modafinil" model-id="Modafinil_Willavize2017_reference" status="rejected" stale="false" population="healthy subjects and patients with bipolar I disorder" measured-compound="armodafinil" parameterization="apparent" topology="general_linear"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="modafinil" model-id="Modafinil_Willavize2017_reference" status="rejected" stale="false" population="healthy subjects and patients with bipolar I disorder" measured-compound="armodafinil" parameterization="apparent" topology="general_linear"></div>
 
 **Model structure:** general linear; no model was built for this record.  
 **Parameters:** 4 extracted.

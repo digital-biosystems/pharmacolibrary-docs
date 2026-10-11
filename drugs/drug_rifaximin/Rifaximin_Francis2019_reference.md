@@ -29,8 +29,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on paramet
 Francis J et al., A Population Pharmacokinetic Analysis S…, Antimicrobial agents and ch… (2019)
   ·  DOI: [10.1128/aac.01964-18](https://doi.org/10.1128/aac.01964-18)
 
-## Model component
-<dbs-pgx drug="rifaximin" model-id="Rifaximin_Francis2019_reference" status="extracted" stale="true" population="" measured-compound="rifaximin" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="rifaximin" model-id="Rifaximin_Francis2019_reference" status="extracted" stale="true" population="" measured-compound="rifaximin" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameters:** 2 extracted.

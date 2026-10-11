@@ -31,8 +31,7 @@ Independently confirmed by `gpt-oss:120b`.
 Schmulenson E et al., Influence of the skeletal muscle index…, Cancer medicine (2023)
   ·  DOI: [10.1002/cam4.5118](https://doi.org/10.1002/cam4.5118)
 
-## Model component
-<dbs-pgx drug="fluorouracil" model-id="Fluorouracil_Schmulenson2023_estimate_relative_standard_erro" status="rejected" stale="true" population="oncology patients receiving fluorouracil-based chemotherapy" measured-compound="fluorouracil" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="fluorouracil" model-id="Fluorouracil_Schmulenson2023_estimate_relative_standard_erro" status="rejected" stale="true" population="oncology patients receiving fluorouracil-based chemotherapy" measured-compound="fluorouracil" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 3 extracted.

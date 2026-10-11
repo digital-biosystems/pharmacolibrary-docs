@@ -21,8 +21,7 @@
 Zhu J et al., From pharmacokinetics to precision dosi…, Frontiers in pharmacology (2026)
   ·  DOI: [10.3389/fphar.2026.1764590](https://doi.org/10.3389/fphar.2026.1764590)
 
-## Model component
-<dbs-pgx drug="Potassium" model-id="Potassium_Zhu2026_reference" status="extracted" stale="false" population="" measured-compound="potassium" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="Potassium" model-id="Potassium_Zhu2026_reference" status="extracted" stale="false" population="" measured-compound="potassium" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment, IV mammillary model — template `PK_2C`.  
 **Parameters:** 4 extracted.

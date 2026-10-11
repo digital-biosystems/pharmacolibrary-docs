@@ -23,8 +23,7 @@
 Casoni D et al., Clinical and pharmacokinetic evaluation…, Acta veterinaria Scandinavi… (2015)
   ·  DOI: [10.1186/s13028-015-0112-4](https://doi.org/10.1186/s13028-015-0112-4)
 
-## Model component
-<dbs-pgx drug="levomethadone" model-id="Levomethadone_Casoni2015_reference" status="rejected" stale="false" population="" measured-compound="levomethadone" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="levomethadone" model-id="Levomethadone_Casoni2015_reference" status="rejected" stale="false" population="" measured-compound="levomethadone" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment; no model was built for this record.  
 **Parameters:** 3 extracted.

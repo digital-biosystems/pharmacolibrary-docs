@@ -21,8 +21,7 @@
 Le Tilly O et al., Eculizumab dose tapering should take in…, British journal of clinical… (2024)
   ·  DOI: [10.1111/bcp.16019](https://doi.org/10.1111/bcp.16019)
 
-## Model component
-<dbs-pgx drug="eculizumab" model-id="Eculizumab_Le2024_reference" status="rejected" stale="false" population="adults with atypical haemolytic uraemic syndrome and C3 glomerulopathy" measured-compound="eculizumab" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="eculizumab" model-id="Eculizumab_Le2024_reference" status="rejected" stale="false" population="adults with atypical haemolytic uraemic syndrome and C3 glomerulopathy" measured-compound="eculizumab" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 4 extracted.

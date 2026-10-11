@@ -20,8 +20,7 @@
 Ter Heine R et al., Optimizing lazertinib therapy through G…, Cancer chemotherapy and pha… (2025)
   ·  DOI: [10.1007/s00280-025-04828-y](https://doi.org/10.1007/s00280-025-04828-y)
 
-## Model component
-<dbs-pgx drug="lazertinib" model-id="Lazertinib_Ter2025_gstm1_non_nullapproved_dose" status="rejected" stale="false" population="individuals enrolled in the lazertinib clinical development program" measured-compound="lazertinib" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="lazertinib" model-id="Lazertinib_Ter2025_gstm1_non_nullapproved_dose" status="rejected" stale="false" population="individuals enrolled in the lazertinib clinical development program" measured-compound="lazertinib" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

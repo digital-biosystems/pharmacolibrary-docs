@@ -23,8 +23,7 @@
 Lohy Das J et al., Population Pharmacokinetics of Artemeth…, Antimicrobial agents and ch… (2018)
   ·  DOI: [10.1128/AAC.00518-18](https://doi.org/10.1128/AAC.00518-18)
 
-## Model component
-<dbs-pgx drug="artemether" model-id="Artemether_Lohy2018_reference" status="extracted" stale="false" population="pregnant women with uncomplicated Plasmodium falciparum malaria (Rwanda)" measured-compound="artemether" parameterization="apparent" topology="parent_metabolite"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="artemether" model-id="Artemether_Lohy2018_reference" status="extracted" stale="false" population="pregnant women with uncomplicated Plasmodium falciparum malaria (Rwanda)" measured-compound="artemether" parameterization="apparent" topology="parent_metabolite"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 12 extracted.

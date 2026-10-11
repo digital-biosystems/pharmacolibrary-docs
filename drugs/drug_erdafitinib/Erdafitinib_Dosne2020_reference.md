@@ -20,8 +20,7 @@
 Dosne AG et al., Population Pharmacokinetics of Total an…, Journal of clinical pharmac… (2020)
   ·  DOI: [10.1002/jcph.1547](https://doi.org/10.1002/jcph.1547)
 
-## Model component
-<dbs-pgx drug="erdafitinib" model-id="Erdafitinib_Dosne2020_reference" status="needs_review" stale="false" population="adult healthy volunteers and cancer patients" measured-compound="erdafitinib" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="erdafitinib" model-id="Erdafitinib_Dosne2020_reference" status="needs_review" stale="false" population="adult healthy volunteers and cancer patients" measured-compound="erdafitinib" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 3 extracted.

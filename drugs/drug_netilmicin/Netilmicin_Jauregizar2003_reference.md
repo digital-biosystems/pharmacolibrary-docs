@@ -31,8 +31,7 @@ Independently confirmed by `gpt-oss:120b`.
 Jauregizar N et al., Population pharmacokinetics of netilmic…, British journal of clinical… (2003)
   ·  DOI: [10.1046/j.1365-2125.2003.01783.x](https://doi.org/10.1046/j.1365-2125.2003.01783.x)
 
-## Model component
-<dbs-pgx drug="netilmicin" model-id="Netilmicin_Jauregizar2003_reference" status="rejected" stale="true" population="adult urology patients" measured-compound="netilmicin" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="netilmicin" model-id="Netilmicin_Jauregizar2003_reference" status="rejected" stale="true" population="adult urology patients" measured-compound="netilmicin" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

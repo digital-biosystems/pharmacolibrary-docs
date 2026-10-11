@@ -24,8 +24,7 @@
 Yang B et al., Pharmacokinetics of the prodrug thiamph…, Xenobiotica; the fate of fo… (2011)
   ·  DOI: [10.3109/00498254.2010.535218](https://doi.org/10.3109/00498254.2010.535218)
 
-## Model component
-<dbs-pgx drug="thiamphenicol" model-id="Thiamphenicol_Yang2011_reference" status="needs_review" stale="false" population="beagle dogs" measured-compound="thiamphenicol" parameterization="mechanistic" topology="parent_metabolite"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="thiamphenicol" model-id="Thiamphenicol_Yang2011_reference" status="needs_review" stale="false" population="beagle dogs" measured-compound="thiamphenicol" parameterization="mechanistic" topology="parent_metabolite"></div>
 
 **Model structure:** parent + metabolite; no model was built for this record.  
 **Parameters:** 4 extracted.

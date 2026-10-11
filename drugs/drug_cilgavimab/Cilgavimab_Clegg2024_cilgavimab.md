@@ -23,8 +23,7 @@
 Clegg LE et al., Accelerating therapeutics development d…, Antimicrobial agents and ch… (2024)
   ·  DOI: [10.1128/aac.01587-23](https://doi.org/10.1128/aac.01587-23)
 
-## Model component
-<dbs-pgx drug="Cilgavimab" model-id="Cilgavimab_Clegg2024_cilgavimab" status="rejected" stale="false" population="adults and adolescents receiving AZD7442 for prophylaxis or treatment of COVID-19" measured-compound="AZD7442" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="Cilgavimab" model-id="Cilgavimab_Clegg2024_cilgavimab" status="rejected" stale="false" population="adults and adolescents receiving AZD7442 for prophylaxis or treatment of COVID-19" measured-compound="AZD7442" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 2 extracted.

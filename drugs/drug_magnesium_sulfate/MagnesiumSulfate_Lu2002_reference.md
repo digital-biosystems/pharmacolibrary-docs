@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Lu J et al., Pharmacokinetic-pharmacodynamic modelli…, Clinical pharmacokinetics (2002)
   ·  DOI: [10.2165/00003088-200241130-00007](https://doi.org/10.2165/00003088-200241130-00007)
 
-## Model component
-<dbs-pgx drug="magnesium sulfate" model-id="MagnesiumSulfate_Lu2002_reference" status="rejected" stale="false" population="preeclamptic women" measured-compound="magnesium" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="magnesium sulfate" model-id="MagnesiumSulfate_Lu2002_reference" status="rejected" stale="false" population="preeclamptic women" measured-compound="magnesium" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

@@ -21,8 +21,7 @@
 Lam E et al., Pharmacokinetics and Safety of Ustekinu…, Rheumatology and therapy (2026)
   ·  DOI: [10.1007/s40744-025-00820-3](https://doi.org/10.1007/s40744-025-00820-3)
 
-## Model component
-<dbs-pgx drug="ustekinumab" model-id="Ustekinumab_Lam2026_reference" status="extracted" stale="false" population="paediatric patients with juvenile psoriatic arthritis or psoriasis" measured-compound="ustekinumab" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="ustekinumab" model-id="Ustekinumab_Lam2026_reference" status="extracted" stale="false" population="paediatric patients with juvenile psoriatic arthritis or psoriasis" measured-compound="ustekinumab" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 2 extracted.

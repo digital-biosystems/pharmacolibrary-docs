@@ -20,8 +20,7 @@
 Prohn M et al., Population pharmacokinetics of letermov…, CPT: pharmacometrics & syst… (2021)
   ·  DOI: [10.1002/psp4.12593](https://doi.org/10.1002/psp4.12593)
 
-## Model component
-<dbs-pgx drug="letermovir" model-id="Letermovir_Prohn2021_reference" status="rejected" stale="false" population="healthy participants and allogeneic hematopoietic cell transplantation recipients" measured-compound="letermovir" parameterization="mechanistic" topology="3C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="letermovir" model-id="Letermovir_Prohn2021_reference" status="rejected" stale="false" population="healthy participants and allogeneic hematopoietic cell transplantation recipients" measured-compound="letermovir" parameterization="mechanistic" topology="3C"></div>
 
 **Model structure:** 3-compartment; no model was built for this record.  
 **Parameters:** 11 extracted, plus 2 covariate effects.

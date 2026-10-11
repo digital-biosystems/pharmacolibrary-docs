@@ -23,8 +23,7 @@
 Sy SK et al., Estimation of intracellular concentrati…, Antimicrobial agents and ch… (2014)
   ·  DOI: [10.1128/AAC.01717-13](https://doi.org/10.1128/AAC.01717-13)
 
-## Model component
-<dbs-pgx drug="stavudine" model-id="Stavudine_Sy2014_reference" status="rejected" stale="false" population="HIV-infected children" measured-compound="stavudine triphosphate" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="stavudine" model-id="Stavudine_Sy2014_reference" status="rejected" stale="false" population="HIV-infected children" measured-compound="stavudine triphosphate" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

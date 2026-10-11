@@ -35,8 +35,7 @@ Independently confirmed by `gpt-oss:120b`.
 Sullivan J et al., Pharmacokinetics and Anti-Inflammatory…, Journal of veterinary pharm… (2026)
   ·  DOI: [10.1111/jvp.70052](https://doi.org/10.1111/jvp.70052)
 
-## Model component
-<dbs-pgx drug="betamethasone" model-id="Betamethasone_Sullivan2026_reference" status="rejected" stale="true" population="exercised Thoroughbred horses" measured-compound="betamethasone" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="betamethasone" model-id="Betamethasone_Sullivan2026_reference" status="rejected" stale="true" population="exercised Thoroughbred horses" measured-compound="betamethasone" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 3 extracted.

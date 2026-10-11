@@ -21,8 +21,7 @@
 Kramer WG et al., The pharmacokinetics of bleomycin in man, Journal of clinical pharmac… (1978)
   ·  DOI: [10.1002/j.1552-4604.1978.tb01604.x](https://doi.org/10.1002/j.1552-4604.1978.tb01604.x)
 
-## Model component
-<dbs-pgx drug="bleomycin" model-id="Bleomycin_Kramer1978_ii" status="needs_review" stale="false" population="patients with neoplastic disorders" measured-compound="bleomycin" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="bleomycin" model-id="Bleomycin_Kramer1978_ii" status="needs_review" stale="false" population="patients with neoplastic disorders" measured-compound="bleomycin" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 4 extracted.

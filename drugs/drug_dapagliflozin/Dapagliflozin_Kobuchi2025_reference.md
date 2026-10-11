@@ -32,8 +32,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on `parame
 Kobuchi S et al., Population Pharmacokinetic-pharmacodyna…, International journal of me… (2025)
   ·  DOI: [10.7150/ijms.111519](https://doi.org/10.7150/ijms.111519)
 
-## Model component
-<dbs-pgx drug="dapagliflozin" model-id="Dapagliflozin_Kobuchi2025_reference" status="needs_review" stale="true" population="Japanese patients with type 2 diabetes mellitus" measured-compound="dapagliflozin" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="dapagliflozin" model-id="Dapagliflozin_Kobuchi2025_reference" status="needs_review" stale="true" population="Japanese patients with type 2 diabetes mellitus" measured-compound="dapagliflozin" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 3 extracted.

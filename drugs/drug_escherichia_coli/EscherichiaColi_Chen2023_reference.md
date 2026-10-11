@@ -33,8 +33,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on paramet
 Chen JC et al., Pharmacokinetics of Danofloxacin in Gus…, Metabolites (2023)
   ·  DOI: [10.3390/metabo13080906](https://doi.org/10.3390/metabo13080906)
 
-## Model component
-<dbs-pgx drug="escherichia coli" model-id="EscherichiaColi_Chen2023_reference" status="needs_review" stale="true" population="" measured-compound="escherichia_coli" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="escherichia coli" model-id="EscherichiaColi_Chen2023_reference" status="needs_review" stale="true" population="" measured-compound="escherichia_coli" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 2 extracted.

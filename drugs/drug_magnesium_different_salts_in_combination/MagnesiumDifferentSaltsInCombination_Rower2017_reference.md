@@ -33,8 +33,7 @@ Independently confirmed by `gpt-oss:120b`.
 Rower JE et al., Clinical pharmacokinetics of magnesium…, European journal of clinica… (2017)
   ·  DOI: [10.1007/s00228-016-2165-3](https://doi.org/10.1007/s00228-016-2165-3)
 
-## Model component
-<dbs-pgx drug="magnesium (different salts in combination)" model-id="MagnesiumDifferentSaltsInCombination_Rower2017_reference" status="rejected" stale="true" population="children with severe acute asthma" measured-compound="magnesium" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="magnesium (different salts in combination)" model-id="MagnesiumDifferentSaltsInCombination_Rower2017_reference" status="rejected" stale="true" population="children with severe acute asthma" measured-compound="magnesium" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 1 extracted.

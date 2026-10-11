@@ -33,8 +33,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the val
 Allegaert K et al., Intravenous paracetamol (propacetamol)…, European journal of clinica… (2004)
   ·  DOI: [10.1007/s00228-004-0756-x](https://doi.org/10.1007/s00228-004-0756-x)
 
-## Model component
-<dbs-pgx drug="propacetamol" model-id="Propacetamol_Allegaert2004_reference" status="rejected" stale="true" population="term and preterm neonates" measured-compound="paracetamol" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="propacetamol" model-id="Propacetamol_Allegaert2004_reference" status="rejected" stale="true" population="term and preterm neonates" measured-compound="paracetamol" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

@@ -30,8 +30,7 @@ No clearance, volume or rate constant of the model is reported in it. Only the a
 ## Citation
 Wang CL et al., [Population pharmacokinetic modeling of…, Yao xue xue bao = Acta phar… (2010)
 
-## Model component
-<dbs-pgx drug="flurbiprofen" model-id="Flurbiprofen_Wang2010_reference" status="rejected" stale="true" population="general anaesthesia patients undergoing surgery" measured-compound="flurbiprofen" parameterization="apparent" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="flurbiprofen" model-id="Flurbiprofen_Wang2010_reference" status="rejected" stale="true" population="general anaesthesia patients undergoing surgery" measured-compound="flurbiprofen" parameterization="apparent" topology="2C"></div>
 
 **Model structure:** 2-compartment; no model was built for this record.  
 **Parameters:** 8 extracted.

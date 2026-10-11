@@ -21,8 +21,7 @@
 Conte JE, Pharmacokinetics of cefodizime in volun…, Journal of clinical pharmac… (1994)
   ·  DOI: [10.1002/j.1552-4604.1994.tb01982.x](https://doi.org/10.1002/j.1552-4604.1994.tb01982.x)
 
-## Model component
-<dbs-pgx drug="cefodizime" model-id="Cefodizime_Conte1994_reference" status="rejected" stale="false" population="subjects with normal, impaired renal function or requiring chronic hemodialysis" measured-compound="cefodizime" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="cefodizime" model-id="Cefodizime_Conte1994_reference" status="rejected" stale="false" population="subjects with normal, impaired renal function or requiring chronic hemodialysis" measured-compound="cefodizime" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

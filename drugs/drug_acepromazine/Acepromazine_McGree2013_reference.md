@@ -25,8 +25,7 @@
 McGree JM et al., A Bayesian approach for estimating dete…, Journal of veterinary pharm… (2013)
   ·  DOI: [10.1111/j.1365-2885.2013.01389.x](https://doi.org/10.1111/j.1365-2885.2013.01389.x)
 
-## Model component
-<dbs-pgx drug="acepromazine" model-id="Acepromazine_McGree2013_reference" status="needs_review" stale="false" population="horses" measured-compound="2-(1-hydroxyethyl)promazine" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="acepromazine" model-id="Acepromazine_McGree2013_reference" status="needs_review" stale="false" population="horses" measured-compound="2-(1-hydroxyethyl)promazine" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 1 extracted.

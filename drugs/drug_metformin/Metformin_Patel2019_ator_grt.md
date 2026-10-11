@@ -31,8 +31,7 @@ The paper (Patel_2019, Wistar rats, one-compartment metformin model) labels the 
 Patel O et al., Pharmacokinetic Interaction of Green Ro…, Frontiers in pharmacology (2019)
   ·  DOI: [10.3389/fphar.2019.01243](https://doi.org/10.3389/fphar.2019.01243)
 
-## Model component
-<dbs-pgx drug="metformin" model-id="Metformin_Patel2019_ator_grt" status="rejected" stale="true" population="Wistar rats" measured-compound="metformin" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="metformin" model-id="Metformin_Patel2019_ator_grt" status="rejected" stale="true" population="Wistar rats" measured-compound="metformin" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 9 extracted.

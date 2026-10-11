@@ -29,8 +29,7 @@ Independently confirmed by `gpt-oss:120b`.
 BaraleePunyawudho baralee.p@cmu.ac.th Department of Pharmaceutical Care Faculty of Pharmacy Chiang Mai University Chiang Mai 50200 Thailand et al., Population pharmacokinetics and dose op… (2017)
   ·  DOI: [10.1016/j.ijantimicag.2016.11.019](https://doi.org/10.1016/j.ijantimicag.2016.11.019)
 
-## Model component
-<dbs-pgx drug="atazanavir" model-id="Atazanavir_Punyawudho2017_reference" status="model_quarantined" stale="false" population="Thai HIV-infected patients" measured-compound="atazanavir" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="atazanavir" model-id="Atazanavir_Punyawudho2017_reference" status="model_quarantined" stale="false" population="Thai HIV-infected patients" measured-compound="atazanavir" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 2 extracted.

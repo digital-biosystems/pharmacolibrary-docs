@@ -21,8 +21,7 @@
 Watson JA et al., The clinical pharmacology of tafenoquin…, eLife 11 (2022)
   ·  DOI: [10.7554/eLife.83433](https://doi.org/10.7554/eLife.83433)
 
-## Model component
-<dbs-pgx drug="tafenoquine" model-id="Tafenoquine_Watson2022_reference" status="extracted" stale="false" population="patients with P. vivax malaria and healthy volunteers" measured-compound="tafenoquine" parameterization="apparent" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="tafenoquine" model-id="Tafenoquine_Watson2022_reference" status="extracted" stale="false" population="patients with P. vivax malaria and healthy volunteers" measured-compound="tafenoquine" parameterization="apparent" topology="2C"></div>
 
 **Model structure:** 2-compartment, oral mammillary model — template `PK_2C_enteral`.  
 **Parameters:** 7 extracted.

@@ -24,8 +24,7 @@
 Zheng ZQ; Jin YW; Yin D; Chen X; He SM; Liu CX; Zhang C; Wang DD et al. (2024). Frontiers in psychiatry 15
   ·  DOI: [10.3389/fpsyt.2024.1497119](https://doi.org/10.3389/fpsyt.2024.1497119)
 
-## Model component
-<dbs-pgx drug="metformin" model-id="Metformin_Zheng2024_reference" status="extracted" stale="true" population="" measured-compound="metformin" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="metformin" model-id="Metformin_Zheng2024_reference" status="extracted" stale="true" population="" measured-compound="metformin" parameterization="apparent" topology="1C"></div>
 
 **Parameterization:** CL/F, V/F — apparent, F unknown (apparent — bioavailability not identifiable).
 

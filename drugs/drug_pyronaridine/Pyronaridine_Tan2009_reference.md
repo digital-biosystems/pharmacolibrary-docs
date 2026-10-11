@@ -21,8 +21,7 @@
 Tan B et al., Population pharmacokinetics of artesuna…, Malaria journal (2009)
   ·  DOI: [10.1186/1475-2875-8-304](https://doi.org/10.1186/1475-2875-8-304)
 
-## Model component
-<dbs-pgx drug="Pyronaridine" model-id="Pyronaridine_Tan2009_reference" status="extracted" stale="false" population="" measured-compound="pyronaridine" parameterization="apparent" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="Pyronaridine" model-id="Pyronaridine_Tan2009_reference" status="extracted" stale="false" population="" measured-compound="pyronaridine" parameterization="apparent" topology="2C"></div>
 
 **Model structure:** 2-compartment, oral mammillary model — template `PK_2C_enteral`.  
 **Parameters:** 5 extracted.

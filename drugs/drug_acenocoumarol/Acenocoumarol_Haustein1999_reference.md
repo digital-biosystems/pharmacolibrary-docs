@@ -29,8 +29,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on paramet
 Haustein KO, Pharmacokinetic and pharmacodynamic pro…, Seminars in thrombosis and… (1999)
   ·  DOI: [10.1055/s-2007-996417](https://doi.org/10.1055/s-2007-996417)
 
-## Model component
-<dbs-pgx drug="acenocoumarol" model-id="Acenocoumarol_Haustein1999_reference" status="curated_candidate" stale="false" population="patients treated with phenprocoumon" measured-compound="acenocoumarol" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="acenocoumarol" model-id="Acenocoumarol_Haustein1999_reference" status="curated_candidate" stale="false" population="patients treated with phenprocoumon" measured-compound="acenocoumarol" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameters:** 2 extracted.

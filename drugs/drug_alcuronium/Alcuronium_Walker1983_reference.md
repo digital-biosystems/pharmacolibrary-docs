@@ -20,8 +20,7 @@
 Walker JS et al., Alcuronium kinetics and plasma concentr…, Clinical pharmacology and t… (1983)
   ·  DOI: [10.1038/clpt.1983.69](https://doi.org/10.1038/clpt.1983.69)
 
-## Model component
-<dbs-pgx drug="alcuronium" model-id="Alcuronium_Walker1983_reference" status="rejected" stale="false" population="surgical patients" measured-compound="alcuronium" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="alcuronium" model-id="Alcuronium_Walker1983_reference" status="rejected" stale="false" population="surgical patients" measured-compound="alcuronium" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 1 extracted.

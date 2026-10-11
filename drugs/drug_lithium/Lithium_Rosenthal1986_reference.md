@@ -25,8 +25,7 @@
 Rosenthal RC et al., Pharmacokinetics of lithium in the dog, Journal of veterinary pharm… (1986)
   ·  DOI: [10.1111/j.1365-2885.1986.tb00015.x](https://doi.org/10.1111/j.1365-2885.1986.tb00015.x)
 
-## Model component
-<dbs-pgx drug="lithium" model-id="Lithium_Rosenthal1986_reference" status="needs_review" stale="false" population="adult dogs" measured-compound="lithium" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="lithium" model-id="Lithium_Rosenthal1986_reference" status="needs_review" stale="false" population="adult dogs" measured-compound="lithium" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 6 extracted.

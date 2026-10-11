@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on paramet
 Wong DF et al., An open-label, positron emission tomogr…, European journal of clinica… (2021)
   ·  DOI: [10.1007/s00228-020-03021-9](https://doi.org/10.1007/s00228-020-03021-9)
 
-## Model component
-<dbs-pgx drug="brexpiprazole" model-id="Brexpiprazole_Wong2021_reference" status="extracted" stale="true" population="healthy adults" measured-compound="brexpiprazole" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="brexpiprazole" model-id="Brexpiprazole_Wong2021_reference" status="extracted" stale="true" population="healthy adults" measured-compound="brexpiprazole" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 2 extracted.

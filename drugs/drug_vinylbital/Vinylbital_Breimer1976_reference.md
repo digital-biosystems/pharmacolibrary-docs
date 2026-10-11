@@ -19,8 +19,7 @@
 ## Citation
 Breimer DD et al., Pharmacokinetics and relative bioavaila…, Arzneimittel-Forschung (1976)
 
-## Model component
-<dbs-pgx drug="vinylbital" model-id="Vinylbital_Breimer1976_reference" status="rejected" stale="false" population="healthy volunteers" measured-compound="vinylbital" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="vinylbital" model-id="Vinylbital_Breimer1976_reference" status="rejected" stale="false" population="healthy volunteers" measured-compound="vinylbital" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 3 extracted.

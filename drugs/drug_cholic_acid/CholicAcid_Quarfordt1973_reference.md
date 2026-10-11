@@ -30,8 +30,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which m
 Quarfordt SH et al., Estimation of cholesterol and bile acid…, The Journal of clinical inv… (1973)
   ·  DOI: [10.1172/JCI107378](https://doi.org/10.1172/JCI107378)
 
-## Model component
-<dbs-pgx drug="cholic acid" model-id="CholicAcid_Quarfordt1973_reference" status="rejected" stale="true" population="normal humans and a patient with macronodular cirrhosis" measured-compound="cholesterol" parameterization="mechanistic" topology="general_linear"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="cholic acid" model-id="CholicAcid_Quarfordt1973_reference" status="rejected" stale="true" population="normal humans and a patient with macronodular cirrhosis" measured-compound="cholesterol" parameterization="mechanistic" topology="general_linear"></div>
 
 **Model structure:** general linear; no model was built for this record.  
 **Parameters:** 0 extracted.

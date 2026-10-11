@@ -21,8 +21,7 @@
 Köllő Z et al., A Nonparametric Population Pharmacokine…, CPT: pharmacometrics & syst… (2026)
   ·  DOI: [10.1002/psp4.70156](https://doi.org/10.1002/psp4.70156)
 
-## Model component
-<dbs-pgx drug="selumetinib" model-id="Selumetinib_Kll2026_reference" status="rejected" stale="false" population="pediatric patients with neurofibromatosis type I or plexiform neurofibromas" measured-compound="selumetinib" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="selumetinib" model-id="Selumetinib_Kll2026_reference" status="rejected" stale="false" population="pediatric patients with neurofibromatosis type I or plexiform neurofibromas" measured-compound="selumetinib" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

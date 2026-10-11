@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Okubo K et al., Montelukast in the treatment of perenni…, Journal of drug assessment (2016)
   ·  DOI: [10.1080/21556660.2016.1209507](https://doi.org/10.1080/21556660.2016.1209507)
 
-## Model component
-<dbs-pgx drug="montelukast" model-id="Montelukast_Okubo2016_all" status="rejected" stale="true" population="paediatric Japanese patients with perennial allergic rhinitis" measured-compound="montelukast" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="montelukast" model-id="Montelukast_Okubo2016_all" status="rejected" stale="true" population="paediatric Japanese patients with perennial allergic rhinitis" measured-compound="montelukast" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 0 extracted.

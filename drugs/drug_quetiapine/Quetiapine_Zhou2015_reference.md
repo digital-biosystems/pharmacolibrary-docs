@@ -21,8 +21,7 @@
 Zhou D et al., Population pharmacokinetic modeling of…, Journal of clinical pharmac… (2015)
   ·  DOI: [10.1002/jcph.544](https://doi.org/10.1002/jcph.544)
 
-## Model component
-<dbs-pgx drug="quetiapine" model-id="Quetiapine_Zhou2015_reference" status="extracted" stale="false" population="Western and Chinese patients with schizophrenia, schizoaffective disorder, or bipolar disorder" measured-compound="quetiapine" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="quetiapine" model-id="Quetiapine_Zhou2015_reference" status="extracted" stale="false" population="Western and Chinese patients with schizophrenia, schizoaffective disorder, or bipolar disorder" measured-compound="quetiapine" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 4 extracted.

@@ -21,8 +21,7 @@
 Swartling M et al., Population pharmacokinetics of cefotaxi…, European journal of clinica… (2022)
   ·  DOI: [10.1007/s00228-021-03218-6](https://doi.org/10.1007/s00228-021-03218-6)
 
-## Model component
-<dbs-pgx drug="cefotaxime" model-id="Cefotaxime_Swartling2022_reference" status="rejected" stale="false" population="adult ICU patients" measured-compound="cefotaxime" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="cefotaxime" model-id="Cefotaxime_Swartling2022_reference" status="rejected" stale="false" population="adult ICU patients" measured-compound="cefotaxime" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment; no model was built for this record.  
 **Parameters:** 4 extracted.

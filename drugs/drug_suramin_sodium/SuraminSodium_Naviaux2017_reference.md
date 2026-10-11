@@ -21,8 +21,7 @@
 Naviaux RK et al., Low-dose suramin in autism spectrum dis…, Annals of clinical and tran… (2017)
   ·  DOI: [10.1002/acn3.424](https://doi.org/10.1002/acn3.424)
 
-## Model component
-<dbs-pgx drug="suramin sodium" model-id="SuraminSodium_Naviaux2017_reference" status="extracted" stale="false" population="children with autism spectrum disorder" measured-compound="suramin" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="suramin sodium" model-id="SuraminSodium_Naviaux2017_reference" status="extracted" stale="false" population="children with autism spectrum disorder" measured-compound="suramin" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameters:** 2 extracted.

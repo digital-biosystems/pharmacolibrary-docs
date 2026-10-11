@@ -21,8 +21,7 @@
 DeVane CL et al., Evaluation of population pharmacokineti…, Clinical pharmacology and t… (1993)
   ·  DOI: [10.1038/clpt.1993.65](https://doi.org/10.1038/clpt.1993.65)
 
-## Model component
-<dbs-pgx drug="alprazolam" model-id="Alprazolam_DeVane1993_reference" status="rejected" stale="false" population="psychiatric inpatients" measured-compound="alprazolam" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="alprazolam" model-id="Alprazolam_DeVane1993_reference" status="rejected" stale="false" population="psychiatric inpatients" measured-compound="alprazolam" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

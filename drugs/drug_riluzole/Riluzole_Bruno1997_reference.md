@@ -21,8 +21,7 @@
 Bruno R et al., Population pharmacokinetics of riluzole…, Clinical pharmacology and t… (1997)
   ·  DOI: [10.1016/S0009-9236(97)90047-3](https://doi.org/10.1016/S0009-9236(97)90047-3)
 
-## Model component
-<dbs-pgx drug="riluzole" model-id="Riluzole_Bruno1997_reference" status="needs_review" stale="false" population="patients with amyotrophic lateral sclerosis" measured-compound="riluzole" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="riluzole" model-id="Riluzole_Bruno1997_reference" status="needs_review" stale="false" population="patients with amyotrophic lateral sclerosis" measured-compound="riluzole" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 2 extracted.

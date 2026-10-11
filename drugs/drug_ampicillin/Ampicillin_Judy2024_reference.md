@@ -21,8 +21,7 @@
 Judy AE et al., Ampicillin Pharmacokinetics in Peripart…, American journal of perinat… (2024)
   ·  DOI: [10.1055/a-1674-6394](https://doi.org/10.1055/a-1674-6394)
 
-## Model component
-<dbs-pgx drug="ampicillin" model-id="Ampicillin_Judy2024_reference" status="extracted" stale="false" population="peripartum and laboring women" measured-compound="ampicillin" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="ampicillin" model-id="Ampicillin_Judy2024_reference" status="extracted" stale="false" population="peripartum and laboring women" measured-compound="ampicillin" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment, oral mammillary model — template `PK_2C_enteral`.  
 **Parameters:** 5 extracted.

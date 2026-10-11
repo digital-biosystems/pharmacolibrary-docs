@@ -21,8 +21,7 @@
 Cardone KE et al., Ertapenem pharmacokinetics and pharmaco…, Antimicrobial agents and ch… (2012)
   ·  DOI: [10.1128/AAC.05515-11](https://doi.org/10.1128/AAC.05515-11)
 
-## Model component
-<dbs-pgx drug="ertapenem" model-id="Ertapenem_Cardone2012_reference" status="extracted" stale="false" population="patients on continuous ambulatory peritoneal dialysis" measured-compound="ertapenem" parameterization="apparent" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="ertapenem" model-id="Ertapenem_Cardone2012_reference" status="extracted" stale="false" population="patients on continuous ambulatory peritoneal dialysis" measured-compound="ertapenem" parameterization="apparent" topology="2C"></div>
 
 **Model structure:** 2-compartment, oral mammillary model — template `PK_2C_enteral`.  
 **Parameters:** 4 extracted.

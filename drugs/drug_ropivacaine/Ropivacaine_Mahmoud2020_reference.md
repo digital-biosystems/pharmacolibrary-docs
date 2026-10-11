@@ -21,8 +21,7 @@
 Mahmoud M et al., Dexmedetomidine: What's New for Pediatr…, Journal of clinical medicine (2020)
   ·  DOI: [10.3390/jcm9092724](https://doi.org/10.3390/jcm9092724)
 
-## Model component
-<dbs-pgx drug="ropivacaine" model-id="Ropivacaine_Mahmoud2020_reference" status="extracted" stale="false" population="" measured-compound="ropivacaine" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="ropivacaine" model-id="Ropivacaine_Mahmoud2020_reference" status="extracted" stale="false" population="" measured-compound="ropivacaine" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameters:** 2 extracted.

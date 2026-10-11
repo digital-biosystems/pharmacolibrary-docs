@@ -29,8 +29,7 @@ Independently confirmed by `gpt-oss:120b`.
 Thémans P et al., Population Pharmacokinetics of Hydroxyc…, European journal of drug me… (2020)
   ·  DOI: [10.1007/s13318-020-00648-y](https://doi.org/10.1007/s13318-020-00648-y)
 
-## Model component
-<dbs-pgx drug="hydroxychloroquine" model-id="Hydroxychloroquine_Thmans2020_reference" status="" stale="true" population="COVID-19 patients" measured-compound="" parameterization="" topology=""></dbs-pgx>
+<div class="pk-model-meta" hidden drug="hydroxychloroquine" model-id="Hydroxychloroquine_Thmans2020_reference" status="" stale="true" population="COVID-19 patients" measured-compound="" parameterization="" topology=""></div>
 
 **Model structure:** —; no model was built for this record.  
 **Parameters:** 0 extracted.

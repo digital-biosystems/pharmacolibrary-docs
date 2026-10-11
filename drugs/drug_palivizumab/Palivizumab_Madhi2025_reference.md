@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on paramet
 Madhi SA et al., A Phase 1b/2a Trial of a Half-life Exte…, The Journal of infectious d… (2025)
   ·  DOI: [10.1093/infdis/jiae581](https://doi.org/10.1093/infdis/jiae581)
 
-## Model component
-<dbs-pgx drug="palivizumab" model-id="Palivizumab_Madhi2025_reference" status="rejected" stale="true" population="" measured-compound="palivizumab" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="palivizumab" model-id="Palivizumab_Madhi2025_reference" status="rejected" stale="true" population="" measured-compound="palivizumab" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 2 extracted.

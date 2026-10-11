@@ -31,8 +31,7 @@ Independently confirmed by `gpt-oss:120b`.
 Allegaert K et al., Tramadol and o-desmethyl tramadol clear…, Clinical pharmacokinetics (2015)
   ·  DOI: [10.1007/s40262-014-0191-9](https://doi.org/10.1007/s40262-014-0191-9)
 
-## Model component
-<dbs-pgx drug="tramadol" model-id="Tramadol_Allegaert2015_reference" status="rejected" stale="true" population="neonates, infants, children and adults" measured-compound="tramadol" parameterization="mechanistic" topology="parent_metabolite"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="tramadol" model-id="Tramadol_Allegaert2015_reference" status="rejected" stale="true" population="neonates, infants, children and adults" measured-compound="tramadol" parameterization="mechanistic" topology="parent_metabolite"></div>
 
 **Model structure:** parent + metabolite; no model was built for this record.  
 **Parameters:** 0 extracted.

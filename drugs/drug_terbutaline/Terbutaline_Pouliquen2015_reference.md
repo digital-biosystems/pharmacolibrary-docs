@@ -21,8 +21,7 @@
 Pouliquen IJ et al., Characterization of the relationship be…, International journal of cl… (2015)
   ·  DOI: [10.5414/cp202446](https://doi.org/10.5414/cp202446)
 
-## Model component
-<dbs-pgx drug="terbutaline" model-id="Terbutaline_Pouliquen2015_reference" status="extracted" stale="false" population="" measured-compound="terbutaline" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="terbutaline" model-id="Terbutaline_Pouliquen2015_reference" status="extracted" stale="false" population="" measured-compound="terbutaline" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameters:** 2 extracted.

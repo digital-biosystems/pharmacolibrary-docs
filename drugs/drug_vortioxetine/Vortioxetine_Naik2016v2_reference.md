@@ -31,8 +31,7 @@ Independently confirmed by `gpt-oss:120b`.
 Naik H et al., A Population Pharmacokinetic-Pharmacody…, Basic & clinical pharmacolo… (2016)
   ·  DOI: [10.1111/bcpt.12513](https://doi.org/10.1111/bcpt.12513)
 
-## Model component
-<dbs-pgx drug="vortioxetine" model-id="Vortioxetine_Naik2016v2_reference" status="needs_review" stale="true" population="patients with major depressive disorder" measured-compound="vortioxetine" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="vortioxetine" model-id="Vortioxetine_Naik2016v2_reference" status="needs_review" stale="true" population="patients with major depressive disorder" measured-compound="vortioxetine" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 1 extracted.

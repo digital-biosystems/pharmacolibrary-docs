@@ -35,8 +35,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Foster DJ et al., Population pharmacokinetics of (R)-, (S…, British journal of clinical… (2004)
   ·  DOI: [10.1111/j.1365-2125.2004.02079.x](https://doi.org/10.1111/j.1365-2125.2004.02079.x)
 
-## Model component
-<dbs-pgx drug="methadone" model-id="Methadone_Foster2004_reference" status="needs_review" stale="true" population="methadone maintenance patients" measured-compound="(R)-methadone" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="methadone" model-id="Methadone_Foster2004_reference" status="needs_review" stale="true" population="methadone maintenance patients" measured-compound="(R)-methadone" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 5 extracted.

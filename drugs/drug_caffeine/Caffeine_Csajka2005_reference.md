@@ -23,8 +23,7 @@
 Csajka C et al., Mechanistic pharmacokinetic modelling o…, British journal of clinical… (2005)
   ·  DOI: [10.1111/j.1365-2125.2005.02254.x](https://doi.org/10.1111/j.1365-2125.2005.02254.x)
 
-## Model component
-<dbs-pgx drug="caffeine" model-id="Caffeine_Csajka2005_reference" status="rejected" stale="false" population="healthy subjects" measured-compound="caffeine" parameterization="mechanistic" topology="parent_metabolite"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="caffeine" model-id="Caffeine_Csajka2005_reference" status="rejected" stale="false" population="healthy subjects" measured-compound="caffeine" parameterization="mechanistic" topology="parent_metabolite"></div>
 
 **Model structure:** parent + metabolite; no model was built for this record.  
 **Parameters:** 5 extracted.

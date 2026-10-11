@@ -29,8 +29,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the val
 Troisi C et al., Impact of Continuous Infusion Meropenem…, Clinical pharmacokinetics (2024)
   ·  DOI: [10.1007/s40262-024-01436-6](https://doi.org/10.1007/s40262-024-01436-6)
 
-## Model component
-<dbs-pgx drug="protein C" model-id="ProteinC_Troisi2024_reference" status="extracted" stale="true" population="" measured-compound="protein_c" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="protein C" model-id="ProteinC_Troisi2024_reference" status="extracted" stale="true" population="" measured-compound="protein_c" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameters:** 2 extracted.

@@ -30,8 +30,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the val
 Hilke H et al., Dihydroergotamine: pharmacokinetics and…, Acta anaesthesiologica Scan… (1978)
   ·  DOI: [10.1111/aas.1978.22.3.215](https://doi.org/10.1111/aas.1978.22.3.215)
 
-## Model component
-<dbs-pgx drug="dihydroergotamine" model-id="Dihydroergotamine_Hilke1978_reference" status="needs_review" stale="true" population="patients undergoing spinal anaesthesia" measured-compound="dihydroergotamine" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="dihydroergotamine" model-id="Dihydroergotamine_Hilke1978_reference" status="needs_review" stale="true" population="patients undergoing spinal anaesthesia" measured-compound="dihydroergotamine" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 4 extracted.

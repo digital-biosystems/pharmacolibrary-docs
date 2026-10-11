@@ -27,8 +27,7 @@
 Johnson DH et al., Genomewide association study of atazana…, Pharmacogenetics and genomi… (2014)
   ·  DOI: [10.1097/fpc.0000000000000034](https://doi.org/10.1097/fpc.0000000000000034)
 
-## Model component
-<dbs-pgx drug="amprenavir" model-id="Amprenavir_Johnson2014_reference" status="extracted" stale="true" population="" measured-compound="amprenavir" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="amprenavir" model-id="Amprenavir_Johnson2014_reference" status="extracted" stale="true" population="" measured-compound="amprenavir" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 3 extracted.

@@ -20,8 +20,7 @@
 Ohkawa M et al., Pharmacokinetics of cefroxadine in heal…, Chemotherapy (1981)
   ·  DOI: [10.1159/000237971](https://doi.org/10.1159/000237971)
 
-## Model component
-<dbs-pgx drug="cefroxadine" model-id="Cefroxadine_Ohkawa1981_reference" status="rejected" stale="false" population="healthy volunteers and patients with impaired renal function" measured-compound="cefroxadine" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="cefroxadine" model-id="Cefroxadine_Ohkawa1981_reference" status="rejected" stale="false" population="healthy volunteers and patients with impaired renal function" measured-compound="cefroxadine" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

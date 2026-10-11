@@ -27,8 +27,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Tobin T et al., A review of the pharmacology, pharmacok…, British journal of sports m… (1976)
   ·  DOI: [10.1136/bjsm.10.3.109](https://doi.org/10.1136/bjsm.10.3.109)
 
-## Model component
-<dbs-pgx drug="procaine" model-id="Procaine_Tobin1976_reference" status="needs_review" stale="false" population="thoroughbred mares" measured-compound="procaine" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="procaine" model-id="Procaine_Tobin1976_reference" status="needs_review" stale="false" population="thoroughbred mares" measured-compound="procaine" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 5 extracted.

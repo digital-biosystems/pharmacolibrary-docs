@@ -20,8 +20,7 @@
 Uniyal JP et al., Disappearance of (14,15-3H)d,1-norgestr…, Acta endocrinologica (1976)
   ·  DOI: [10.1530/acta.0.0820851](https://doi.org/10.1530/acta.0.0820851)
 
-## Model component
-<dbs-pgx drug="Norgestrel" model-id="Norgestrel_Uniyal1976_reference" status="rejected" stale="false" population="women" measured-compound="norgestrel" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="Norgestrel" model-id="Norgestrel_Uniyal1976_reference" status="rejected" stale="false" population="women" measured-compound="norgestrel" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 2 extracted.

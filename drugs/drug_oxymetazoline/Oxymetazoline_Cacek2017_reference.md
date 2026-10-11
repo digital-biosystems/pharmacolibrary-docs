@@ -20,8 +20,7 @@
 Cacek AT et al., Population Pharmacokinetics of an Intra…, Journal of clinical pharmac… (2017)
   ·  DOI: [10.1002/jcph.799](https://doi.org/10.1002/jcph.799)
 
-## Model component
-<dbs-pgx drug="oxymetazoline" model-id="Oxymetazoline_Cacek2017_reference" status="rejected" stale="false" population="healthy volunteers" measured-compound="oxymetazoline" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="oxymetazoline" model-id="Oxymetazoline_Cacek2017_reference" status="rejected" stale="false" population="healthy volunteers" measured-compound="oxymetazoline" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

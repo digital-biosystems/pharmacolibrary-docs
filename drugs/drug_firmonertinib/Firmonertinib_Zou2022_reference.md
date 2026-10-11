@@ -20,8 +20,7 @@
 Zou HX et al., Effect of autoinduction and food on the…, Acta pharmacologica Sinica (2022)
   ·  DOI: [10.1038/s41401-021-00798-y](https://doi.org/10.1038/s41401-021-00798-y)
 
-## Model component
-<dbs-pgx drug="firmonertinib" model-id="Firmonertinib_Zou2022_reference" status="rejected" stale="false" population="NSCLC patients and healthy volunteers" measured-compound="furmonertinib (AST2818)" parameterization="apparent" topology="parent_metabolite"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="firmonertinib" model-id="Firmonertinib_Zou2022_reference" status="rejected" stale="false" population="NSCLC patients and healthy volunteers" measured-compound="furmonertinib (AST2818)" parameterization="apparent" topology="parent_metabolite"></div>
 
 **Model structure:** parent + metabolite; no model was built for this record.  
 **Parameters:** 10 extracted, plus 2 covariate effects.

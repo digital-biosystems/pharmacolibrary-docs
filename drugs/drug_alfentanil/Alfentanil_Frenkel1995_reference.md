@@ -21,8 +21,7 @@
 Frenkel C et al., Pharmacokinetics and pharmacodynamics o…, Intensive care medicine (1995)
   ·  DOI: [10.1007/BF01700659](https://doi.org/10.1007/BF01700659)
 
-## Model component
-<dbs-pgx drug="alfentanil" model-id="Alfentanil_Frenkel1995_reference" status="needs_review" stale="false" population="ICU patients" measured-compound="alfentanil" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="alfentanil" model-id="Alfentanil_Frenkel1995_reference" status="needs_review" stale="false" population="ICU patients" measured-compound="alfentanil" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 6 extracted.

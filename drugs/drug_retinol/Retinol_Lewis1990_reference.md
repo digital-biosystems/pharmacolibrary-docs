@@ -29,8 +29,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 ## Citation
 Lewis KC et al., Retinol metabolism in rats with low vit…, Journal of lipid research (1990)
 
-## Model component
-<dbs-pgx drug="retinol" model-id="Retinol_Lewis1990_reference" status="rejected" stale="false" population="rats with low vitamin A status" measured-compound="retinol" parameterization="mechanistic" topology="parent_metabolite"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="retinol" model-id="Retinol_Lewis1990_reference" status="rejected" stale="false" population="rats with low vitamin A status" measured-compound="retinol" parameterization="mechanistic" topology="parent_metabolite"></div>
 
 **Model structure:** parent + metabolite; no model was built for this record.  
 **Parameters:** 0 extracted.

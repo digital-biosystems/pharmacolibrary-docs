@@ -21,8 +21,7 @@
 Albanell-Fernández M; Rodríguez-Reyes M; Bastida C; Soy D et al. (2025). Clinical pharmacokinetics 64
   ·  DOI: [10.1007/s40262-024-01459-z](https://doi.org/10.1007/s40262-024-01459-z)
 
-## Model component
-<dbs-pgx drug="amoxicillin" model-id="Amoxicillin_AlbanellFernndez2025_review_reference" status="extracted" stale="true" population="neonates and infants with no previous pathologies" measured-compound="" parameterization="" topology=""></dbs-pgx>
+<div class="pk-model-meta" hidden drug="amoxicillin" model-id="Amoxicillin_AlbanellFernndez2025_review_reference" status="extracted" stale="true" population="neonates and infants with no previous pathologies" measured-compound="" parameterization="" topology=""></div>
 
 **Parameterization:** not captured.
 

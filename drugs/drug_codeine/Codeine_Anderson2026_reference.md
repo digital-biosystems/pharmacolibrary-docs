@@ -33,8 +33,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Anderson BJ et al., Codeine and Metabolite Concentrations i…, Paediatric anaesthesia (2026)
   ·  DOI: [10.1002/pan.70227](https://doi.org/10.1002/pan.70227)
 
-## Model component
-<dbs-pgx drug="codeine" model-id="Codeine_Anderson2026_reference" status="rejected" stale="true" population="breastfed neonates" measured-compound="morphine" parameterization="mechanistic" topology="parent_metabolite"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="codeine" model-id="Codeine_Anderson2026_reference" status="rejected" stale="true" population="breastfed neonates" measured-compound="morphine" parameterization="mechanistic" topology="parent_metabolite"></div>
 
 **Model structure:** parent + metabolite; no model was built for this record.  
 **Parameters:** 0 extracted.

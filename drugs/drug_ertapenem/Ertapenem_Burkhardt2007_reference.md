@@ -21,8 +21,7 @@
 Burkhardt O et al., Ertapenem in critically ill patients wi…, The Journal of antimicrobia… (2007)
   ·  DOI: [10.1093/jac/dkl485](https://doi.org/10.1093/jac/dkl485)
 
-## Model component
-<dbs-pgx drug="ertapenem" model-id="Ertapenem_Burkhardt2007_reference" status="rejected" stale="false" population="critically ill patients with early-onset ventilator-associated pneumonia" measured-compound="ertapenem" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="ertapenem" model-id="Ertapenem_Burkhardt2007_reference" status="rejected" stale="false" population="critically ill patients with early-onset ventilator-associated pneumonia" measured-compound="ertapenem" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

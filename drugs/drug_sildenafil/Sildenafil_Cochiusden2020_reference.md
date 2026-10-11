@@ -21,8 +21,7 @@
 Cochius-den Otter SCM et al., Pharmacokinetic modeling of intravenous…, European journal of clinica… (2020)
   ·  DOI: [10.1007/s00228-019-02767-1](https://doi.org/10.1007/s00228-019-02767-1)
 
-## Model component
-<dbs-pgx drug="sildenafil" model-id="Sildenafil_Cochiusden2020_reference" status="extracted" stale="false" population="" measured-compound="sildenafil" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="sildenafil" model-id="Sildenafil_Cochiusden2020_reference" status="extracted" stale="false" population="" measured-compound="sildenafil" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment, IV mammillary model — template `PK_2C`.  
 **Parameters:** 4 extracted.

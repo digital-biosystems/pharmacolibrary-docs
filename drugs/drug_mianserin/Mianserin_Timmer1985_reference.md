@@ -33,8 +33,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on bioavai
 Timmer CJ et al., Absolute bioavailability of mianserin t…, European journal of drug me… (1985)
   ·  DOI: [10.1007/BF03189759](https://doi.org/10.1007/BF03189759)
 
-## Model component
-<dbs-pgx drug="mianserin" model-id="Mianserin_Timmer1985_reference" status="extracted" stale="true" population="healthy male adults" measured-compound="mianserin" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="mianserin" model-id="Mianserin_Timmer1985_reference" status="extracted" stale="true" population="healthy male adults" measured-compound="mianserin" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameters:** 5 extracted.

@@ -20,8 +20,7 @@
 ## Citation
 Chen TL et al., Plasma pharmacokinetics and urinary exc…, Drug metabolism and disposi… (1989)
 
-## Model component
-<dbs-pgx drug="thalidomide" model-id="Thalidomide_Chen1989_reference" status="extracted" stale="false" population="healthy male volunteers" measured-compound="thalidomide" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="thalidomide" model-id="Thalidomide_Chen1989_reference" status="extracted" stale="false" population="healthy male volunteers" measured-compound="thalidomide" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 6 extracted.

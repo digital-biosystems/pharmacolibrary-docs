@@ -30,8 +30,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Toja-Camba FJ et al., Review of Pharmacokinetics and Pharmaco…, Pharmaceutics (2021)
   ·  DOI: [10.3390/pharmaceutics13070935](https://doi.org/10.3390/pharmaceutics13070935)
 
-## Model component
-<dbs-pgx drug="aripiprazole" model-id="Aripiprazole_TojaCamba2021_reference" status="rejected" stale="true" population="patients treated with LAI aripiprazole" measured-compound="aripiprazole" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="aripiprazole" model-id="Aripiprazole_TojaCamba2021_reference" status="rejected" stale="true" population="patients treated with LAI aripiprazole" measured-compound="aripiprazole" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

@@ -29,8 +29,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Methaneethorn J et al., Pharmacokinetic modeling of simvastatin…, Annual International Confer… (2014)
   ·  DOI: [10.1109/EMBC.2014.6944925](https://doi.org/10.1109/EMBC.2014.6944925)
 
-## Model component
-<dbs-pgx drug="simvastatin" model-id="Simvastatin_Methaneethorn2014_reference" status="needs_review" stale="false" population="healthy adults" measured-compound="simvastatin" parameterization="mechanistic" topology="general_linear"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="simvastatin" model-id="Simvastatin_Methaneethorn2014_reference" status="needs_review" stale="false" population="healthy adults" measured-compound="simvastatin" parameterization="mechanistic" topology="general_linear"></div>
 
 **Model structure:** general linear; no model was built for this record.  
 **Parameters:** 3 extracted.

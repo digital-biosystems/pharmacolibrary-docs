@@ -21,8 +21,7 @@
 Crass RL et al., Pharmacokinetic/pharmacodynamic analysi…, CPT: pharmacometrics & syst… (2025)
   ·  DOI: [10.1002/psp4.13264](https://doi.org/10.1002/psp4.13264)
 
-## Model component
-<dbs-pgx drug="pegcetacoplan" model-id="Pegcetacoplan_Crass2025v2_reference" status="rejected" stale="false" population="" measured-compound="pegcetacoplan" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="pegcetacoplan" model-id="Pegcetacoplan_Crass2025v2_reference" status="rejected" stale="false" population="" measured-compound="pegcetacoplan" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 2 extracted.

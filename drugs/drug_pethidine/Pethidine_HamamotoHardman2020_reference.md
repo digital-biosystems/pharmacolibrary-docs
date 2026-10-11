@@ -29,8 +29,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on paramet
 Hamamoto-Hardman BD et al., Meperidine pharmacokinetics and effects…, BMC veterinary research (2020)
   ·  DOI: [10.1186/s12917-020-02564-4](https://doi.org/10.1186/s12917-020-02564-4)
 
-## Model component
-<dbs-pgx drug="pethidine" model-id="Pethidine_HamamotoHardman2020_reference" status="curated_candidate" stale="false" population="" measured-compound="pethidine" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="pethidine" model-id="Pethidine_HamamotoHardman2020_reference" status="curated_candidate" stale="false" population="" measured-compound="pethidine" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameters:** 2 extracted.

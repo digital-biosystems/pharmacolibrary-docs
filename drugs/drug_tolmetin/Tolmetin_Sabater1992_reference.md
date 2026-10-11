@@ -22,8 +22,7 @@
 ## Citation
 Sabater J et al., Pharmacokinetic study of tolmetin in th…, Arzneimittel-Forschung (1992)
 
-## Model component
-<dbs-pgx drug="tolmetin" model-id="Tolmetin_Sabater1992_reference" status="rejected" stale="false" population="male Wistar rats" measured-compound="tolmetin" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="tolmetin" model-id="Tolmetin_Sabater1992_reference" status="rejected" stale="false" population="male Wistar rats" measured-compound="tolmetin" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 2 extracted.

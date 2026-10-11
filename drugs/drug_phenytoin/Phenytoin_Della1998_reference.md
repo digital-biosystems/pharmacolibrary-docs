@@ -22,8 +22,7 @@
 Della Paschoa OE et al., Modelling of the pharmacodynamic intera…, British journal of pharmaco… (1998)
   ·  DOI: [10.1038/sj.bjp.0702235](https://doi.org/10.1038/sj.bjp.0702235)
 
-## Model component
-<dbs-pgx drug="phenytoin" model-id="Phenytoin_Della1998_reference" status="rejected" stale="false" population="Male Wistar rats" measured-compound="phenytoin" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="phenytoin" model-id="Phenytoin_Della1998_reference" status="rejected" stale="false" population="Male Wistar rats" measured-compound="phenytoin" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

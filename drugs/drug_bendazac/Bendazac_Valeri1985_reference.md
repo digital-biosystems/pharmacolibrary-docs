@@ -24,8 +24,7 @@
 Valeri P et al., Investigations on the ocular pharmacoki…, Experimental and molecular… (1985)
   ·  DOI: [10.1016/0014-4800(85)90065-6](https://doi.org/10.1016/0014-4800(85)90065-6)
 
-## Model component
-<dbs-pgx drug="bendazac" model-id="Bendazac_Valeri1985_reference" status="rejected" stale="false" population="rabbits" measured-compound="bendazac" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="bendazac" model-id="Bendazac_Valeri1985_reference" status="rejected" stale="false" population="rabbits" measured-compound="bendazac" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 1 extracted.

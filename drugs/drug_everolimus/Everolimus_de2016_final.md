@@ -21,8 +21,7 @@
 de Wit D et al., Everolimus pharmacokinetics and its exp…, Cancer chemotherapy and pha… (2016)
   ·  DOI: [10.1007/s00280-016-3050-6](https://doi.org/10.1007/s00280-016-3050-6)
 
-## Model component
-<dbs-pgx drug="everolimus" model-id="Everolimus_de2016_final" status="extracted" stale="false" population="patients with advanced thyroid carcinoma" measured-compound="everolimus" parameterization="apparent" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="everolimus" model-id="Everolimus_de2016_final" status="extracted" stale="false" population="patients with advanced thyroid carcinoma" measured-compound="everolimus" parameterization="apparent" topology="2C"></div>
 
 **Model structure:** 2-compartment, oral mammillary model — template `PK_2C_enteral`.  
 **Parameters:** 6 extracted.

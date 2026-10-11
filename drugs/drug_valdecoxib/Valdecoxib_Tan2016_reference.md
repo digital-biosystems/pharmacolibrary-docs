@@ -23,8 +23,7 @@
 Tan L et al., Pharmacokinetics and analgesic effectiv…, Paediatric anaesthesia (2016)
   ·  DOI: [10.1111/pan.13009](https://doi.org/10.1111/pan.13009)
 
-## Model component
-<dbs-pgx drug="valdecoxib" model-id="Valdecoxib_Tan2016_reference" status="extracted" stale="false" population="children undergoing tonsillectomy +/- adenoidectomy" measured-compound="valdecoxib" parameterization="apparent" topology="3C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="valdecoxib" model-id="Valdecoxib_Tan2016_reference" status="extracted" stale="false" population="children undergoing tonsillectomy +/- adenoidectomy" measured-compound="valdecoxib" parameterization="apparent" topology="3C"></div>
 
 **Model structure:** 3-compartment, oral mammillary model — template `PK_3C_enteral`.  
 **Parameters:** 7 extracted.

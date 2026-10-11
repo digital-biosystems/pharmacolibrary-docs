@@ -22,8 +22,7 @@
 ## Citation
 Frederiksen MC et al., Pharmacokinetics of pentobarbital in th…, The Journal of pharmacology… (1983)
 
-## Model component
-<dbs-pgx drug="pentobarbital" model-id="Pentobarbital_Frederiksen1983_reference" status="extracted" stale="false" population="dogs" measured-compound="pentobarbital" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="pentobarbital" model-id="Pentobarbital_Frederiksen1983_reference" status="extracted" stale="false" population="dogs" measured-compound="pentobarbital" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameters:** 3 extracted.

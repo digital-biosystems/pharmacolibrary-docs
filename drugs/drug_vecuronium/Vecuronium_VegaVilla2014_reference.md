@@ -20,8 +20,7 @@
 Vega-Villa KR et al., Vecuronium pharmacokinetics in patients…, British journal of anaesthe… (2014)
   ·  DOI: [10.1093/bja/aet309](https://doi.org/10.1093/bja/aet309)
 
-## Model component
-<dbs-pgx drug="vecuronium" model-id="Vecuronium_VegaVilla2014_reference" status="needs_review" stale="false" population="adults with major burns" measured-compound="vecuronium" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="vecuronium" model-id="Vecuronium_VegaVilla2014_reference" status="needs_review" stale="false" population="adults with major burns" measured-compound="vecuronium" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 1 extracted.

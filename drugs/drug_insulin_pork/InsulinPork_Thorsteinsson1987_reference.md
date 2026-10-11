@@ -28,8 +28,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Thorsteinsson B et al., Kinetics of human and porcine insulins…, European journal of clinica… (1987)
   ·  DOI: [10.1007/BF00544563](https://doi.org/10.1007/BF00544563)
 
-## Model component
-<dbs-pgx drug="insulin (pork)" model-id="InsulinPork_Thorsteinsson1987_reference" status="needs_review" stale="false" population="normal and type I diabetic subjects" measured-compound="insulin_pork" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="insulin (pork)" model-id="InsulinPork_Thorsteinsson1987_reference" status="needs_review" stale="false" population="normal and type I diabetic subjects" measured-compound="insulin_pork" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 1 extracted.

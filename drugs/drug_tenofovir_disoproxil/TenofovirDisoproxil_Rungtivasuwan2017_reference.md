@@ -30,8 +30,7 @@ The source was limited to the abstract, so reported summary statistics stood in 
 Rungtivasuwan K et al., Pharmacogenetics-based population pharm…, Pharmacogenomics (2017)
   ·  DOI: [10.2217/pgs-2017-0128](https://doi.org/10.2217/pgs-2017-0128)
 
-## Model component
-<dbs-pgx drug="tenofovir disoproxil" model-id="TenofovirDisoproxil_Rungtivasuwan2017_reference" status="rejected" stale="true" population="Thai HIV-infected patients" measured-compound="tenofovir" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="tenofovir disoproxil" model-id="TenofovirDisoproxil_Rungtivasuwan2017_reference" status="rejected" stale="true" population="Thai HIV-infected patients" measured-compound="tenofovir" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 1 extracted.

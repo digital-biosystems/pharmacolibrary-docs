@@ -26,8 +26,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the lin
 ## Citation
 Lücker PW et al., [Metabolism and pharmacokinetics of eto…, Arzneimittel-Forschung (1980)
 
-## Model component
-<dbs-pgx drug="etofylline nicotinate" model-id="EtofyllineNicotinate_Lcker1980_reference" status="rejected" stale="false" population="healthy volunteers" measured-compound="etofylline" parameterization="mechanistic" topology="general_linear"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="etofylline nicotinate" model-id="EtofyllineNicotinate_Lcker1980_reference" status="rejected" stale="false" population="healthy volunteers" measured-compound="etofylline" parameterization="mechanistic" topology="general_linear"></div>
 
 **Model structure:** general linear; no model was built for this record.  
 **Parameters:** 1 extracted.

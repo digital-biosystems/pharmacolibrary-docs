@@ -21,8 +21,7 @@
 Drover DR et al., The pharmacokinetics of ketorolac after…, Anesthesia and analgesia (2012)
   ·  DOI: [10.1213/ANE.0b013e31824f92c2](https://doi.org/10.1213/ANE.0b013e31824f92c2)
 
-## Model component
-<dbs-pgx drug="ketorolac" model-id="Ketorolac_Drover2012_reference" status="extracted" stale="false" population="adolescent surgical patients" measured-compound="ketorolac" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="ketorolac" model-id="Ketorolac_Drover2012_reference" status="extracted" stale="false" population="adolescent surgical patients" measured-compound="ketorolac" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameters:** 4 extracted.

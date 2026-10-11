@@ -35,8 +35,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the val
 Ström L et al., Topical ophthalmic atropine in horses,…, BMC veterinary research (2021)
   ·  DOI: [10.1186/s12917-021-02847-4](https://doi.org/10.1186/s12917-021-02847-4)
 
-## Model component
-<dbs-pgx drug="atropine" model-id="Atropine_Strm2021_reference" status="extracted" stale="true" population="horses" measured-compound="atropine" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="atropine" model-id="Atropine_Strm2021_reference" status="extracted" stale="true" population="horses" measured-compound="atropine" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment, oral mammillary model — template `PK_2C_enteral`.  
 **Parameters:** 11 extracted.

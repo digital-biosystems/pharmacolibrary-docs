@@ -20,8 +20,7 @@
 ## Citation
 Zhuo HT et al., Pharmacokinetics of ofloxacin through t…, Zhongguo yao li xue bao = A… (1994)
 
-## Model component
-<dbs-pgx drug="ofloxacin" model-id="Ofloxacin_Zhuo1994_reference" status="extracted" stale="false" population="patients with respiratory tract infections" measured-compound="ofloxacin" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="ofloxacin" model-id="Ofloxacin_Zhuo1994_reference" status="extracted" stale="false" population="patients with respiratory tract infections" measured-compound="ofloxacin" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 6 extracted.

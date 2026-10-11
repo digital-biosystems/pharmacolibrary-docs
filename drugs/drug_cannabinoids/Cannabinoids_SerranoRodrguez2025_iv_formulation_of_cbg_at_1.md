@@ -31,8 +31,7 @@ The apparent-parameter coherence check failed with a double correction: kel = 1.
 Serrano-Rodríguez JM et al., Metabolism, pharmacokinetics, and bioav…, Frontiers in veterinary sci… (2025)
   ·  DOI: [10.3389/fvets.2025.1688214](https://doi.org/10.3389/fvets.2025.1688214)
 
-## Model component
-<dbs-pgx drug="cannabinoids" model-id="Cannabinoids_SerranoRodrguez2025_iv_formulation_of_cbg_at_1" status="rejected" stale="true" population="healthy adult horses" measured-compound="cannabigerol" parameterization="apparent" topology="parent_metabolite"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="cannabinoids" model-id="Cannabinoids_SerranoRodrguez2025_iv_formulation_of_cbg_at_1" status="rejected" stale="true" population="healthy adult horses" measured-compound="cannabigerol" parameterization="apparent" topology="parent_metabolite"></div>
 
 **Model structure:** parent + metabolite; no model was built for this record.  
 **Parameters:** 16 extracted.

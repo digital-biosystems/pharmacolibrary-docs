@@ -21,8 +21,7 @@
 Smith CE et al., A comparison of the infusion pharmacoki…, Anaesthesia (1997)
   ·  DOI: [10.1111/j.1365-2044.1997.195-az0331.x](https://doi.org/10.1111/j.1365-2044.1997.195-az0331.x)
 
-## Model component
-<dbs-pgx drug="cisatracurium" model-id="Cisatracurium_Smith1997_reference" status="rejected" stale="false" population="healthy patients" measured-compound="cisatracurium" parameterization="mechanistic" topology="general_linear"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="cisatracurium" model-id="Cisatracurium_Smith1997_reference" status="rejected" stale="false" population="healthy patients" measured-compound="cisatracurium" parameterization="mechanistic" topology="general_linear"></div>
 
 **Model structure:** general linear; no model was built for this record.  
 **Parameters:** 0 extracted.

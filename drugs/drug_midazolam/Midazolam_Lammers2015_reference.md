@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on `parame
 Lammers LA et al., Short-term fasting alters cytochrome P4…, Drug metabolism and disposi… (2015)
   ·  DOI: [10.1124/dmd.114.062299](https://doi.org/10.1124/dmd.114.062299)
 
-## Model component
-<dbs-pgx drug="midazolam" model-id="Midazolam_Lammers2015_reference" status="needs_review" stale="false" population="healthy adults" measured-compound="midazolam" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="midazolam" model-id="Midazolam_Lammers2015_reference" status="needs_review" stale="false" population="healthy adults" measured-compound="midazolam" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 5 extracted.

@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Knebel W et al., Population Pharmacokinetic Modeling of…, Clinical pharmacokinetics (2015)
   ·  DOI: [10.1007/s40262-015-0245-7](https://doi.org/10.1007/s40262-015-0245-7)
 
-## Model component
-<dbs-pgx drug="guanfacine" model-id="Guanfacine_Knebel2015_reference" status="extracted" stale="true" population="pediatric patients" measured-compound="guanfacine" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="guanfacine" model-id="Guanfacine_Knebel2015_reference" status="extracted" stale="true" population="pediatric patients" measured-compound="guanfacine" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 4 extracted.

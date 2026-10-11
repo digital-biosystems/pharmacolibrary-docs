@@ -31,8 +31,7 @@ Independently confirmed by `gpt-oss:120b`.
 Sandra L et al., Population pharmacokinetics of lisinopr…, British journal of clinical… (2024)
   ·  DOI: [10.1111/bcp.15936](https://doi.org/10.1111/bcp.15936)
 
-## Model component
-<dbs-pgx drug="lisinopril" model-id="Lisinopril_Sandra2024_reference" status="extracted" stale="true" population="hypertensive children and adolescents with normal to mildly reduced kidney function" measured-compound="lisinopril" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="lisinopril" model-id="Lisinopril_Sandra2024_reference" status="extracted" stale="true" population="hypertensive children and adolescents with normal to mildly reduced kidney function" measured-compound="lisinopril" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 3 extracted.

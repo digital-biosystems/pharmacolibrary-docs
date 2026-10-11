@@ -32,8 +32,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 ## Citation
 DeGraves FJ et al., Pharmacokinetics of ibuprofen in lactat…, American journal of veterin… (1993)
 
-## Model component
-<dbs-pgx drug="ibuprofen" model-id="Ibuprofen_DeGraves1993v2_reference" status="extracted" stale="true" population="lactating dairy cows" measured-compound="ibuprofen" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="ibuprofen" model-id="Ibuprofen_DeGraves1993v2_reference" status="extracted" stale="true" population="lactating dairy cows" measured-compound="ibuprofen" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameters:** 4 extracted.

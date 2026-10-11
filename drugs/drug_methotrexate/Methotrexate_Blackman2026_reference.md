@@ -29,8 +29,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Blackman MH et al., Development and validation of high-dose…, European journal of clinica… (2026)
   ·  DOI: [10.1007/s00228-026-04080-0](https://doi.org/10.1007/s00228-026-04080-0)
 
-## Model component
-<dbs-pgx drug="methotrexate" model-id="Methotrexate_Blackman2026_reference" status="rejected" stale="true" population="adults with acute lymphoblastic leukemia, osteosarcoma, and lymphoma" measured-compound="methotrexate" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="methotrexate" model-id="Methotrexate_Blackman2026_reference" status="rejected" stale="true" population="adults with acute lymphoblastic leukemia, osteosarcoma, and lymphoma" measured-compound="methotrexate" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

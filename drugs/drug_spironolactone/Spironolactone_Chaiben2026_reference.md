@@ -25,8 +25,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on paramet
 Chaiben S et al., Blood Never Lies: The PopPK-Based Lie D…, Clinical pharmacokinetics (2026)
   ·  DOI: [10.1007/s40262-026-01652-2](https://doi.org/10.1007/s40262-026-01652-2)
 
-## Model component
-<dbs-pgx drug="spironolactone" model-id="Spironolactone_Chaiben2026_reference" status="needs_review" stale="false" population="" measured-compound="spironolactone" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="spironolactone" model-id="Spironolactone_Chaiben2026_reference" status="needs_review" stale="false" population="" measured-compound="spironolactone" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment; no model was built for this record.  
 **Parameters:** 4 extracted.

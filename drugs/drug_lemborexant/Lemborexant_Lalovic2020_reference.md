@@ -20,8 +20,7 @@
 Lalovic B et al., Population Pharmacokinetics and Exposur…, Journal of clinical pharmac… (2020)
   ·  DOI: [10.1002/jcph.1683](https://doi.org/10.1002/jcph.1683)
 
-## Model component
-<dbs-pgx drug="lemborexant" model-id="Lemborexant_Lalovic2020_reference" status="rejected" stale="false" population="subjects with insomnia disorder (phases 1-3, healthy and insomnia subjects)" measured-compound="lemborexant" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="lemborexant" model-id="Lemborexant_Lalovic2020_reference" status="rejected" stale="false" population="subjects with insomnia disorder (phases 1-3, healthy and insomnia subjects)" measured-compound="lemborexant" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 7 extracted, plus 3 covariate effects.

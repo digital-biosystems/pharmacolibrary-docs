@@ -21,8 +21,7 @@
 Housman ST et al., Ertapenem Concentrations in Obese Patie…, Surgical infections (2022)
   ·  DOI: [10.1089/sur.2022.005](https://doi.org/10.1089/sur.2022.005)
 
-## Model component
-<dbs-pgx drug="ertapenem" model-id="Ertapenem_Housman2022_reference" status="needs_review" stale="false" population="obese patients undergoing surgery" measured-compound="ertapenem" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="ertapenem" model-id="Ertapenem_Housman2022_reference" status="needs_review" stale="false" population="obese patients undergoing surgery" measured-compound="ertapenem" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 5 extracted.

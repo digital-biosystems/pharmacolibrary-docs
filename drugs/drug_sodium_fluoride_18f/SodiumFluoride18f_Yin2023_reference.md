@@ -24,8 +24,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on paramet
 Yin W et al., Population pharmacokinetics, enzyme occ…, Clinical and translational… (2023)
   ·  DOI: [10.1111/cts.13517](https://doi.org/10.1111/cts.13517)
 
-## Model component
-<dbs-pgx drug="sodium fluoride (18F)" model-id="SodiumFluoride18f_Yin2023_reference" status="needs_review" stale="false" population="" measured-compound="sodium_fluoride_18f" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="sodium fluoride (18F)" model-id="SodiumFluoride18f_Yin2023_reference" status="needs_review" stale="false" population="" measured-compound="sodium_fluoride_18f" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 2 extracted.

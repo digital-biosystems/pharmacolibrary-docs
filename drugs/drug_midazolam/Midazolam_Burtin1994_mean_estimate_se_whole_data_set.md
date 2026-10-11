@@ -31,8 +31,7 @@ Independently confirmed by `gpt-oss:120b`.
 Burtin P et al., Population pharmacokinetics of midazola…, Clinical pharmacology and t… (1994)
   ·  DOI: [10.1038/clpt.1994.186](https://doi.org/10.1038/clpt.1994.186)
 
-## Model component
-<dbs-pgx drug="midazolam" model-id="Midazolam_Burtin1994_mean_estimate_se_whole_data_set" status="rejected" stale="true" population="critically ill neonates requiring IV sedation for artificial ventilation" measured-compound="midazolam" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="midazolam" model-id="Midazolam_Burtin1994_mean_estimate_se_whole_data_set" status="rejected" stale="true" population="critically ill neonates requiring IV sedation for artificial ventilation" measured-compound="midazolam" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment; no model was built for this record.  
 **Parameters:** 6 extracted.

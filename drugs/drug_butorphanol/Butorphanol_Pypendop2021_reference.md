@@ -28,8 +28,7 @@
 Pypendop BH et al., Pharmacokinetics of butorphanol in male…, Journal of veterinary pharm… (2021)
   ·  DOI: [10.1111/jvp.13014](https://doi.org/10.1111/jvp.13014)
 
-## Model component
-<dbs-pgx drug="butorphanol" model-id="Butorphanol_Pypendop2021_reference" status="rejected" stale="true" population="male neutered cats anesthetized with isoflurane" measured-compound="butorphanol" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="butorphanol" model-id="Butorphanol_Pypendop2021_reference" status="rejected" stale="true" population="male neutered cats anesthetized with isoflurane" measured-compound="butorphanol" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

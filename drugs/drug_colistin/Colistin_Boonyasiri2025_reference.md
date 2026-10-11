@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Boonyasiri A et al., Disposition of colistin in critically-i…, Clinical microbiology and i… (2025)
   ·  DOI: [10.1016/j.cmi.2025.05.021](https://doi.org/10.1016/j.cmi.2025.05.021)
 
-## Model component
-<dbs-pgx drug="colistin" model-id="Colistin_Boonyasiri2025_reference" status="rejected" stale="false" population="critically-ill patients on sustained low-efficiency dialysis" measured-compound="colistin" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="colistin" model-id="Colistin_Boonyasiri2025_reference" status="rejected" stale="false" population="critically-ill patients on sustained low-efficiency dialysis" measured-compound="colistin" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

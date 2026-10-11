@@ -23,8 +23,7 @@
 Nguyen HQ et al., Population Pharmacokinetic and Exposure…, Journal of clinical pharmac… (2025)
   ·  DOI: [10.1002/jcph.70092](https://doi.org/10.1002/jcph.70092)
 
-## Model component
-<dbs-pgx drug="valbenazine" model-id="Valbenazine_Nguyen2025_reference" status="extracted" stale="false" population="healthy subjects and patients with tardive dyskinesia and Huntington&#39;s disease chorea" measured-compound="[+]-α-HTBZ" parameterization="apparent" topology="parent_metabolite"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="valbenazine" model-id="Valbenazine_Nguyen2025_reference" status="extracted" stale="false" population="healthy subjects and patients with tardive dyskinesia and Huntington&#39;s disease chorea" measured-compound="[+]-α-HTBZ" parameterization="apparent" topology="parent_metabolite"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 10 extracted, plus 2 covariate effects.

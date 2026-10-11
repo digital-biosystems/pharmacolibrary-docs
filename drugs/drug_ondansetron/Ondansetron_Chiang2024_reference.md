@@ -33,8 +33,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on paramet
 Chiang M et al., Pharmacokinetic Modeling of the Effect…, Pharmaceutical research (2024)
   ·  DOI: [10.1007/s11095-024-03739-6](https://doi.org/10.1007/s11095-024-03739-6)
 
-## Model component
-<dbs-pgx drug="ondansetron" model-id="Ondansetron_Chiang2024_reference" status="rejected" stale="true" population="wild-type and Pgp knockout rats" measured-compound="ondansetron" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="ondansetron" model-id="Ondansetron_Chiang2024_reference" status="rejected" stale="true" population="wild-type and Pgp knockout rats" measured-compound="ondansetron" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 2 extracted.

@@ -23,8 +23,7 @@
 Wang W et al., Population Pharmacokinetic Analysis to…, Neurology and therapy (2024)
   ·  DOI: [10.1007/s40120-024-00578-w](https://doi.org/10.1007/s40120-024-00578-w)
 
-## Model component
-<dbs-pgx drug="risperidone" model-id="Risperidone_Wang2024_consta" status="rejected" stale="false" population="adults with schizophrenia or schizoaffective disorder" measured-compound="active moiety (risperidone + 9-OH-risperidone)" parameterization="mechanistic" topology="parent_metabolite"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="risperidone" model-id="Risperidone_Wang2024_consta" status="rejected" stale="false" population="adults with schizophrenia or schizoaffective disorder" measured-compound="active moiety (risperidone + 9-OH-risperidone)" parameterization="mechanistic" topology="parent_metabolite"></div>
 
 **Model structure:** parent + metabolite; no model was built for this record.  
 **Parameters:** 6 extracted.

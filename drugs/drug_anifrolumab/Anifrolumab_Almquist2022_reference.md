@@ -20,8 +20,7 @@
 Almquist J et al., Nonlinear Population Pharmacokinetics o…, Journal of clinical pharmac… (2022)
   ·  DOI: [10.1002/jcph.2055](https://doi.org/10.1002/jcph.2055)
 
-## Model component
-<dbs-pgx drug="anifrolumab" model-id="Anifrolumab_Almquist2022_reference" status="needs_review" stale="false" population="healthy volunteers and patients with systemic lupus erythematosus" measured-compound="anifrolumab" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="anifrolumab" model-id="Anifrolumab_Almquist2022_reference" status="needs_review" stale="false" population="healthy volunteers and patients with systemic lupus erythematosus" measured-compound="anifrolumab" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment; no model was built for this record.  
 **Parameters:** 7 extracted.

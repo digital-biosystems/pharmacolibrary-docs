@@ -21,8 +21,7 @@
 McCann ME et al., The pharmacokinetics of epidural ropiva…, Anesthesia and analgesia (2001)
   ·  DOI: [10.1097/00000539-200110000-00018](https://doi.org/10.1097/00000539-200110000-00018)
 
-## Model component
-<dbs-pgx drug="ropivacaine" model-id="Ropivacaine_McCann2001_reference" status="extracted" stale="false" population="infants and young children" measured-compound="ropivacaine" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="ropivacaine" model-id="Ropivacaine_McCann2001_reference" status="extracted" stale="false" population="infants and young children" measured-compound="ropivacaine" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 3 extracted.

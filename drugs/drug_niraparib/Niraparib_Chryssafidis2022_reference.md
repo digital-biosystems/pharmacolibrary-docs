@@ -21,8 +21,7 @@
 Chryssafidis P et al., Re-writing Oral Pharmacokinetics Using…, Pharmaceutical research (2022)
   ·  DOI: [10.1007/s11095-022-03230-0](https://doi.org/10.1007/s11095-022-03230-0)
 
-## Model component
-<dbs-pgx drug="niraparib" model-id="Niraparib_Chryssafidis2022_reference" status="rejected" stale="false" population="healthy adults" measured-compound="niraparib" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="niraparib" model-id="Niraparib_Chryssafidis2022_reference" status="rejected" stale="false" population="healthy adults" measured-compound="niraparib" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

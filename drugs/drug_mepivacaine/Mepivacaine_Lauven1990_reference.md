@@ -19,8 +19,7 @@
 ## Citation
 Lauven PM et al., [An infusion model for intraoperative p…, Anasthesie, Intensivtherapi… (1990)
 
-## Model component
-<dbs-pgx drug="mepivacaine" model-id="Mepivacaine_Lauven1990_reference" status="needs_review" stale="false" population="patients undergoing lumbar epidural anesthesia" measured-compound="mepivacaine" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="mepivacaine" model-id="Mepivacaine_Lauven1990_reference" status="needs_review" stale="false" population="patients undergoing lumbar epidural anesthesia" measured-compound="mepivacaine" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 4 extracted.

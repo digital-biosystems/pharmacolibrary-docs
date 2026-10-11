@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on paramet
 Ikawa K et al., Pharmacokinetic and pharmacodynamic pro…, Biological & pharmaceutical… (2007)
   ·  DOI: [10.1248/bpb.30.1003](https://doi.org/10.1248/bpb.30.1003)
 
-## Model component
-<dbs-pgx drug="famotidine" model-id="Famotidine_Ikawa2007_reference" status="extracted" stale="true" population="healthy subjects" measured-compound="famotidine" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="famotidine" model-id="Famotidine_Ikawa2007_reference" status="extracted" stale="true" population="healthy subjects" measured-compound="famotidine" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 4 extracted.

@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the val
 Vert P et al., Pharmacokinetics of furosemide in neona…, European journal of clinica… (1982)
   ·  DOI: [10.1007/BF00606423](https://doi.org/10.1007/BF00606423)
 
-## Model component
-<dbs-pgx drug="furosemide" model-id="Furosemide_Vert1982_reference" status="needs_review" stale="true" population="neonates" measured-compound="furosemide" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="furosemide" model-id="Furosemide_Vert1982_reference" status="needs_review" stale="true" population="neonates" measured-compound="furosemide" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 4 extracted.

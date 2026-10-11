@@ -21,8 +21,7 @@
 Dong J et al., Optimal dosing regimen of biapenem in C…, International journal of an… (2016)
   ·  DOI: [10.1016/j.ijantimicag.2015.12.018](https://doi.org/10.1016/j.ijantimicag.2015.12.018)
 
-## Model component
-<dbs-pgx drug="biapenem" model-id="Biapenem_Dong2016_reference" status="needs_review" stale="false" population="Chinese patients with lower respiratory tract infections" measured-compound="biapenem" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="biapenem" model-id="Biapenem_Dong2016_reference" status="needs_review" stale="false" population="Chinese patients with lower respiratory tract infections" measured-compound="biapenem" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment; no model was built for this record.  
 **Parameters:** 4 extracted.

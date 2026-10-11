@@ -33,8 +33,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Hill L et al., The usage of a three-compartment model…, Mathematical medicine and b… (2017)
   ·  DOI: [10.1093/imammb/dqv029](https://doi.org/10.1093/imammb/dqv029)
 
-## Model component
-<dbs-pgx drug="gefitinib" model-id="Gefitinib_Hill2017_reference" status="rejected" stale="true" population="HRN and wild type mice" measured-compound="gefitinib" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="gefitinib" model-id="Gefitinib_Hill2017_reference" status="rejected" stale="true" population="HRN and wild type mice" measured-compound="gefitinib" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

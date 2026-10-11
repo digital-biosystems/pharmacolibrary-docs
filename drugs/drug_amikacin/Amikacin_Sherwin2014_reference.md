@@ -29,8 +29,7 @@ Independently confirmed by `gpt-oss:120b`.
 Sherwin CM et al., Amikacin population pharmacokinetics am…, Burns : journal of the Inte… (2014)
   ·  DOI: [10.1016/j.burns.2013.06.015](https://doi.org/10.1016/j.burns.2013.06.015)
 
-## Model component
-<dbs-pgx drug="amikacin" model-id="Amikacin_Sherwin2014_reference" status="model_quarantined" stale="false" population="paediatric burn patients" measured-compound="amikacin" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="amikacin" model-id="Amikacin_Sherwin2014_reference" status="model_quarantined" stale="false" population="paediatric burn patients" measured-compound="amikacin" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameters:** 5 extracted.

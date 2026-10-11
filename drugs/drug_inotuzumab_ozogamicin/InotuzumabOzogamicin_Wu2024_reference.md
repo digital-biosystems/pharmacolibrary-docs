@@ -20,8 +20,7 @@
 Wu JH et al., Population Pharmacokinetics of Inotuzum…, Clinical pharmacokinetics (2024)
   ·  DOI: [10.1007/s40262-024-01386-z](https://doi.org/10.1007/s40262-024-01386-z)
 
-## Model component
-<dbs-pgx drug="inotuzumab ozogamicin" model-id="InotuzumabOzogamicin_Wu2024_reference" status="needs_review" stale="false" population="adult B-cell NHL and BCP-ALL patients and pediatric BCP-ALL patients" measured-compound="inotuzumab ozogamicin" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="inotuzumab ozogamicin" model-id="InotuzumabOzogamicin_Wu2024_reference" status="needs_review" stale="false" population="adult B-cell NHL and BCP-ALL patients and pediatric BCP-ALL patients" measured-compound="inotuzumab ozogamicin" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment; no model was built for this record.  
 **Parameters:** 4 extracted.

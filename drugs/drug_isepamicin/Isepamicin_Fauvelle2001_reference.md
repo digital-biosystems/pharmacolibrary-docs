@@ -20,8 +20,7 @@
 Fauvelle F et al., Comparison of two methods to obtain a d…, Fundamental & clinical phar… (2001)
   ·  DOI: [10.1046/j.1472-8206.2001.00020.x](https://doi.org/10.1046/j.1472-8206.2001.00020.x)
 
-## Model component
-<dbs-pgx drug="isepamicin" model-id="Isepamicin_Fauvelle2001_reference" status="needs_review" stale="false" population="ICU patients" measured-compound="isepamicin" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="isepamicin" model-id="Isepamicin_Fauvelle2001_reference" status="needs_review" stale="false" population="ICU patients" measured-compound="isepamicin" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 1 extracted.

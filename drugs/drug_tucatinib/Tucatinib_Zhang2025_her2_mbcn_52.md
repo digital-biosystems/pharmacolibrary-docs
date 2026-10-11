@@ -21,8 +21,7 @@
 Zhang D et al., Correction: Population Pharmacokinetic…, Clinical pharmacokinetics (2025)
   ·  DOI: [10.1007/s40262-024-01458-0](https://doi.org/10.1007/s40262-024-01458-0)
 
-## Model component
-<dbs-pgx drug="tucatinib" model-id="Tucatinib_Zhang2025_her2_mbcn_52" status="needs_review" stale="false" population="healthy participants and patients with HER2-positive metastatic breast or colorectal cancer" measured-compound="tucatinib" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="tucatinib" model-id="Tucatinib_Zhang2025_her2_mbcn_52" status="needs_review" stale="false" population="healthy participants and patients with HER2-positive metastatic breast or colorectal cancer" measured-compound="tucatinib" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 8 extracted.

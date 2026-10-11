@@ -21,8 +21,7 @@
 Foulds G et al., Pharmacokinetics of sulbactam in humans, Antimicrobial agents and ch… (1983)
   ·  DOI: [10.1128/AAC.23.5.692](https://doi.org/10.1128/AAC.23.5.692)
 
-## Model component
-<dbs-pgx drug="sulbactam" model-id="Sulbactam_Foulds1983_reference" status="needs_review" stale="false" population="healthy adults" measured-compound="sulbactam" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="sulbactam" model-id="Sulbactam_Foulds1983_reference" status="needs_review" stale="false" population="healthy adults" measured-compound="sulbactam" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 4 extracted.

@@ -21,8 +21,7 @@
 Li N et al., Safety, Tolerability, and Pharmacokinet…, Clinical pharmacology in dr… (2025)
   ·  DOI: [10.1002/cpdd.1583](https://doi.org/10.1002/cpdd.1583)
 
-## Model component
-<dbs-pgx drug="Cilgavimab" model-id="Cilgavimab_Li2025_reference" status="extracted" stale="false" population="" measured-compound="cilgavimab" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="Cilgavimab" model-id="Cilgavimab_Li2025_reference" status="extracted" stale="false" population="" measured-compound="cilgavimab" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 2 extracted.

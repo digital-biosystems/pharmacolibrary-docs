@@ -23,8 +23,7 @@
 Levionnois OL et al., Enantiospecific pharmacokinetics of int…, Journal of veterinary pharm… (2022)
   ·  DOI: [10.1111/jvp.13063](https://doi.org/10.1111/jvp.13063)
 
-## Model component
-<dbs-pgx drug="dexmedetomidine" model-id="Dexmedetomidine_Levionnois2022_reference" status="extracted" stale="false" population="" measured-compound="dexmedetomidine" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="dexmedetomidine" model-id="Dexmedetomidine_Levionnois2022_reference" status="extracted" stale="false" population="" measured-compound="dexmedetomidine" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment, IV mammillary model — template `PK_2C`.  
 **Parameters:** 4 extracted.

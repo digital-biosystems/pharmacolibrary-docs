@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on paramet
 Altan F et al., Pharmacokinetic behaviour and pharmacok…, Veterinary medicine and sci… (2024)
   ·  DOI: [10.1002/vms3.1419](https://doi.org/10.1002/vms3.1419)
 
-## Model component
-<dbs-pgx drug="doxycycline" model-id="Doxycycline_Altan2024_reference" status="extracted" stale="true" population="rainbow trout" measured-compound="doxycycline" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="doxycycline" model-id="Doxycycline_Altan2024_reference" status="extracted" stale="true" population="rainbow trout" measured-compound="doxycycline" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameters:** 2 extracted.

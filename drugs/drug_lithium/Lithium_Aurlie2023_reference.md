@@ -21,8 +21,7 @@
 Aurélie L et al., External Evaluation of Population Pharm…, Pharmaceuticals (Basel, Swi… (2023)
   ·  DOI: [10.3390/ph16111627](https://doi.org/10.3390/ph16111627)
 
-## Model component
-<dbs-pgx drug="lithium" model-id="Lithium_Aurlie2023_reference" status="rejected" stale="false" population="adults with bipolar disorder" measured-compound="lithium" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="lithium" model-id="Lithium_Aurlie2023_reference" status="rejected" stale="false" population="adults with bipolar disorder" measured-compound="lithium" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

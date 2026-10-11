@@ -29,8 +29,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Yin OQ et al., Population pharmacokinetics and dose-ex…, Clinical drug investigation (2014)
   ·  DOI: [10.1007/s40261-014-0229-7](https://doi.org/10.1007/s40261-014-0229-7)
 
-## Model component
-<dbs-pgx drug="edoxaban" model-id="Edoxaban_Yin2014_reference" status="rejected" stale="false" population="healthy volunteers" measured-compound="edoxaban" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="edoxaban" model-id="Edoxaban_Yin2014_reference" status="rejected" stale="false" population="healthy volunteers" measured-compound="edoxaban" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 2 extracted.

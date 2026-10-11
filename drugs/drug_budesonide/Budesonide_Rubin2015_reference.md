@@ -30,8 +30,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Rubin DT et al., Budesonide Foam Has a Favorable Safety…, Digestive diseases and scie… (2015)
   ·  DOI: [10.1007/s10620-015-3868-5](https://doi.org/10.1007/s10620-015-3868-5)
 
-## Model component
-<dbs-pgx drug="budesonide" model-id="Budesonide_Rubin2015_reference" status="needs_review" stale="true" population="patients with mild-to-moderate ulcerative proctitis or proctosigmoiditis and healthy volunteers" measured-compound="budesonide" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="budesonide" model-id="Budesonide_Rubin2015_reference" status="needs_review" stale="true" population="patients with mild-to-moderate ulcerative proctitis or proctosigmoiditis and healthy volunteers" measured-compound="budesonide" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 5 extracted.

@@ -21,8 +21,7 @@
 Yang P et al., Predicting the Outcome of Voriconazole…, Frontiers in pharmacology (2021)
   ·  DOI: [10.3389/fphar.2021.711187](https://doi.org/10.3389/fphar.2021.711187)
 
-## Model component
-<dbs-pgx drug="voriconazole" model-id="Voriconazole_Yang2021_reference" status="needs_review" stale="false" population="hospitalized patients with invasive fungal infections" measured-compound="voriconazole" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="voriconazole" model-id="Voriconazole_Yang2021_reference" status="needs_review" stale="false" population="hospitalized patients with invasive fungal infections" measured-compound="voriconazole" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 1 extracted.

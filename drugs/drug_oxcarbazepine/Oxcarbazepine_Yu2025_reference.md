@@ -21,8 +21,7 @@
 Yu L et al., Development and Validation of a Populat…, Drug design, development an… (2025)
   ·  DOI: [10.2147/DDDT.S499085](https://doi.org/10.2147/DDDT.S499085)
 
-## Model component
-<dbs-pgx drug="oxcarbazepine" model-id="Oxcarbazepine_Yu2025_reference" status="extracted" stale="false" population="" measured-compound="oxcarbazepine" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="oxcarbazepine" model-id="Oxcarbazepine_Yu2025_reference" status="extracted" stale="false" population="" measured-compound="oxcarbazepine" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 2 extracted.

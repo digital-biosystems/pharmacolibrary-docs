@@ -30,8 +30,7 @@ No clearance, volume or rate constant of the model is reported in it. Only the a
 Czock D et al., Pharmacokinetics of valganciclovir and…, Clinical pharmacology and t… (2002)
   ·  DOI: [10.1067/mcp.2002.126306](https://doi.org/10.1067/mcp.2002.126306)
 
-## Model component
-<dbs-pgx drug="valganciclovir" model-id="Valganciclovir_Czock2002_reference" status="rejected" stale="true" population="adults with renal impairment, HIV/CMV-positive patients and healthy subjects" measured-compound="ganciclovir" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="valganciclovir" model-id="Valganciclovir_Czock2002_reference" status="rejected" stale="true" population="adults with renal impairment, HIV/CMV-positive patients and healthy subjects" measured-compound="ganciclovir" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 4 extracted.

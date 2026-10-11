@@ -21,8 +21,7 @@
 Wenk M et al., Multicompartment pharmacokinetics of ne…, European journal of clinica… (1979)
   ·  DOI: [10.1007/BF00605631](https://doi.org/10.1007/BF00605631)
 
-## Model component
-<dbs-pgx drug="netilmicin" model-id="Netilmicin_Wenk1979_reference" status="needs_review" stale="false" population="healthy adults" measured-compound="netilmicin" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="netilmicin" model-id="Netilmicin_Wenk1979_reference" status="needs_review" stale="false" population="healthy adults" measured-compound="netilmicin" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 6 extracted.

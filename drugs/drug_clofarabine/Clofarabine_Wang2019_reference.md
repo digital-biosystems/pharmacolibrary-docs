@@ -21,8 +21,7 @@
 Wang H et al., Population Pharmacokinetics of Clofarab…, Biology of blood and marrow… (2019)
   ·  DOI: [10.1016/j.bbmt.2019.04.017](https://doi.org/10.1016/j.bbmt.2019.04.017)
 
-## Model component
-<dbs-pgx drug="clofarabine" model-id="Clofarabine_Wang2019_reference" status="rejected" stale="false" population="pediatric subjects undergoing allogeneic hematopoietic cell transplantation" measured-compound="clofarabine" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="clofarabine" model-id="Clofarabine_Wang2019_reference" status="rejected" stale="false" population="pediatric subjects undergoing allogeneic hematopoietic cell transplantation" measured-compound="clofarabine" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

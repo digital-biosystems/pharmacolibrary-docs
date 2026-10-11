@@ -31,8 +31,7 @@ No clearance, volume or rate constant of the model is reported in it. No paramet
 Aoyama T et al., External Evaluation of a Bayesian Warfa…, Biological & pharmaceutical… (2022)
   ·  DOI: [10.1248/bpb.b21-00778](https://doi.org/10.1248/bpb.b21-00778)
 
-## Model component
-<dbs-pgx drug="warfarin" model-id="Warfarin_Aoyama2022_reference" status="rejected" stale="true" population="adult patients" measured-compound="S-warfarin" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="warfarin" model-id="Warfarin_Aoyama2022_reference" status="rejected" stale="true" population="adult patients" measured-compound="S-warfarin" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

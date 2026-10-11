@@ -29,8 +29,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Kirchheiner J et al., Impact of CYP2C9 and CYP2C19 polymorphi…, Pharmacogenetics (2002)
   ·  DOI: [10.1097/00008571-200203000-00004](https://doi.org/10.1097/00008571-200203000-00004)
 
-## Model component
-<dbs-pgx drug="tolbutamide" model-id="Tolbutamide_Kirchheiner2002_reference" status="needs_review" stale="false" population="healthy volunteers" measured-compound="tolbutamide" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="tolbutamide" model-id="Tolbutamide_Kirchheiner2002_reference" status="needs_review" stale="false" population="healthy volunteers" measured-compound="tolbutamide" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 2 extracted.

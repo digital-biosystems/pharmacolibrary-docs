@@ -30,8 +30,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the lin
 Reichel C et al., The lignocaine metabolite (MEGX) liver…, British journal of clinical… (1998)
   ·  DOI: [10.1046/j.1365-2125.1998.00829.x](https://doi.org/10.1046/j.1365-2125.1998.00829.x)
 
-## Model component
-<dbs-pgx drug="lidocaine" model-id="Lidocaine_Reichel1998_reference" status="needs_review" stale="false" population="healthy volunteers" measured-compound="MEGX" parameterization="mechanistic" topology="parent_metabolite"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="lidocaine" model-id="Lidocaine_Reichel1998_reference" status="needs_review" stale="false" population="healthy volunteers" measured-compound="MEGX" parameterization="mechanistic" topology="parent_metabolite"></div>
 
 **Model structure:** parent + metabolite; no model was built for this record.  
 **Parameters:** 1 extracted.

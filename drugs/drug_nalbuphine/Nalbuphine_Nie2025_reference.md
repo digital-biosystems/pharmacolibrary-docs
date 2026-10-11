@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on paramet
 Nie Y et al., Population Pharmacokinetic of Epidural…, Drug design, development an… (2025)
   ·  DOI: [10.2147/dddt.s500189](https://doi.org/10.2147/dddt.s500189)
 
-## Model component
-<dbs-pgx drug="nalbuphine" model-id="Nalbuphine_Nie2025_reference" status="rejected" stale="true" population="" measured-compound="nalbuphine" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="nalbuphine" model-id="Nalbuphine_Nie2025_reference" status="rejected" stale="true" population="" measured-compound="nalbuphine" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment; no model was built for this record.  
 **Parameters:** 4 extracted.

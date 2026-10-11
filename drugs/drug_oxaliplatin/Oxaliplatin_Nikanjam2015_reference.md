@@ -23,8 +23,7 @@
 Nikanjam M et al., Population pharmacokinetic analysis of…, Cancer chemotherapy and pha… (2015)
   ·  DOI: [10.1007/s00280-014-2667-6](https://doi.org/10.1007/s00280-014-2667-6)
 
-## Model component
-<dbs-pgx drug="oxaliplatin" model-id="Oxaliplatin_Nikanjam2015_reference" status="needs_review" stale="false" population="adults and children" measured-compound="platinum ultrafiltrate" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="oxaliplatin" model-id="Oxaliplatin_Nikanjam2015_reference" status="needs_review" stale="false" population="adults and children" measured-compound="platinum ultrafiltrate" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 5 extracted.

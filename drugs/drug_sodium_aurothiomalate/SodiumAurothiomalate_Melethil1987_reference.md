@@ -24,8 +24,7 @@
 Melethil S et al., Pharmacokinetics of gold sodium thiomal…, Pharmaceutical research (1987)
   ·  DOI: [10.1023/a:1016453421958](https://doi.org/10.1023/a:1016453421958)
 
-## Model component
-<dbs-pgx drug="sodium aurothiomalate" model-id="SodiumAurothiomalate_Melethil1987_reference" status="rejected" stale="false" population="male New Zealand white rabbits" measured-compound="gold" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="sodium aurothiomalate" model-id="SodiumAurothiomalate_Melethil1987_reference" status="rejected" stale="false" population="male New Zealand white rabbits" measured-compound="gold" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 2 extracted.

@@ -23,8 +23,7 @@
 Toja-Camba FJ et al., Review of Pharmacokinetics and Pharmaco…, Pharmaceutics (2021)
   ·  DOI: [10.3390/pharmaceutics13070935](https://doi.org/10.3390/pharmaceutics13070935)
 
-## Model component
-<dbs-pgx drug="paliperidone" model-id="Paliperidone_TojaCamba2021_reference" status="rejected" stale="false" population="patients with schizophrenia treated with LAI antipsychotics" measured-compound="paliperidone" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="paliperidone" model-id="Paliperidone_TojaCamba2021_reference" status="rejected" stale="false" population="patients with schizophrenia treated with LAI antipsychotics" measured-compound="paliperidone" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

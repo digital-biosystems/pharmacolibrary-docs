@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Pettersen G et al., Population pharmacokinetics of intraven…, British journal of clinical… (2009)
   ·  DOI: [10.1111/j.1365-2125.2008.03328.x](https://doi.org/10.1111/j.1365-2125.2008.03328.x)
 
-## Model component
-<dbs-pgx drug="pantoprazole" model-id="Pantoprazole_Pettersen2009_reference" status="needs_review" stale="false" population="paediatric intensive care patients" measured-compound="pantoprazole" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="pantoprazole" model-id="Pantoprazole_Pettersen2009_reference" status="needs_review" stale="false" population="paediatric intensive care patients" measured-compound="pantoprazole" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment, oral mammillary model — template `PK_2C_enteral`.  
 **Parameters:** 6 extracted, plus 3 covariate effects.

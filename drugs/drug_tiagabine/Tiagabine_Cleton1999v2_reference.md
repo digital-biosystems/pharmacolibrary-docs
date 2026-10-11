@@ -23,8 +23,7 @@
 Cleton A et al., Stereoselective central nervous system…, British journal of pharmaco… (1999)
   ·  DOI: [10.1038/sj.bjp.0702962](https://doi.org/10.1038/sj.bjp.0702962)
 
-## Model component
-<dbs-pgx drug="tiagabine" model-id="Tiagabine_Cleton1999v2_reference" status="rejected" stale="false" population="conscious rats" measured-compound="tiagabine" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="tiagabine" model-id="Tiagabine_Cleton1999v2_reference" status="rejected" stale="false" population="conscious rats" measured-compound="tiagabine" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

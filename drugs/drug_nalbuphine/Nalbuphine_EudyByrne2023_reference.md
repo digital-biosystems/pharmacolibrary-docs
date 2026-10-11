@@ -21,8 +21,7 @@
 Eudy-Byrne R et al., A population pharmacokinetic-pharmacody…, British journal of clinical… (2023)
   ·  DOI: [10.1111/bcp.15663](https://doi.org/10.1111/bcp.15663)
 
-## Model component
-<dbs-pgx drug="nalbuphine" model-id="Nalbuphine_EudyByrne2023_reference" status="extracted" stale="false" population="patients with prurigo nodularis" measured-compound="nalbuphine" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="nalbuphine" model-id="Nalbuphine_EudyByrne2023_reference" status="extracted" stale="false" population="patients with prurigo nodularis" measured-compound="nalbuphine" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 7 extracted, plus 4 covariate effects.

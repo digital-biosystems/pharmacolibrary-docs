@@ -22,8 +22,7 @@
 Zhuang L et al., HPLC method validation for the quantifi…, European journal of drug me… (2011)
   ·  DOI: [10.1007/s13318-011-0030-4](https://doi.org/10.1007/s13318-011-0030-4)
 
-## Model component
-<dbs-pgx drug="lomustine" model-id="Lomustine_Zhuang2011_reference" status="rejected" stale="false" population="C6 glioma rats" measured-compound="lomustine" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="lomustine" model-id="Lomustine_Zhuang2011_reference" status="rejected" stale="false" population="C6 glioma rats" measured-compound="lomustine" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 3 extracted.

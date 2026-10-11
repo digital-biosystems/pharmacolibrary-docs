@@ -21,8 +21,7 @@
 Tassonyi E et al., Pharmacokinetics of pipecuronium in inf…, European journal of drug me… (1995)
   ·  DOI: [10.1007/BF03189671](https://doi.org/10.1007/BF03189671)
 
-## Model component
-<dbs-pgx drug="Pipecuronium" model-id="Pipecuronium_Tassonyi1995_reference" status="needs_review" stale="false" population="infants, children and adults" measured-compound="pipecuronium" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="Pipecuronium" model-id="Pipecuronium_Tassonyi1995_reference" status="needs_review" stale="false" population="infants, children and adults" measured-compound="pipecuronium" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 2 extracted.

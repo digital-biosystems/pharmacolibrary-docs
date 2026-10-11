@@ -21,8 +21,7 @@
 Darlow CA et al., Flomoxef for neonates: extending option…, The Journal of antimicrobia… (2022)
   ·  DOI: [10.1093/jac/dkab468](https://doi.org/10.1093/jac/dkab468)
 
-## Model component
-<dbs-pgx drug="flomoxef" model-id="Flomoxef_Darlow2022v2_reference" status="needs_review" stale="false" population="neonates" measured-compound="flomoxef" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="flomoxef" model-id="Flomoxef_Darlow2022v2_reference" status="needs_review" stale="false" population="neonates" measured-compound="flomoxef" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 5 extracted.

@@ -21,8 +21,7 @@
 Jauslin P et al., Population-Pharmacokinetic Modeling of…, Clinical pharmacokinetics (2019)
   ·  DOI: [10.1007/s40262-019-00743-7](https://doi.org/10.1007/s40262-019-00743-7)
 
-## Model component
-<dbs-pgx drug="tildrakizumab" model-id="Tildrakizumab_Jauslin2019_reference" status="extracted" stale="false" population="healthy volunteers and subjects with psoriasis" measured-compound="tildrakizumab" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="tildrakizumab" model-id="Tildrakizumab_Jauslin2019_reference" status="extracted" stale="false" population="healthy volunteers and subjects with psoriasis" measured-compound="tildrakizumab" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 6 extracted.

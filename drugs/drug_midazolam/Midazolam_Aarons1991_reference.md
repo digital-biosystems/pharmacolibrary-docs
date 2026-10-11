@@ -33,8 +33,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Aarons L et al., A population analysis of the pharmacoki…, Journal of pharmacokinetics… (1991)
   ·  DOI: [10.1007/BF01062959](https://doi.org/10.1007/BF01062959)
 
-## Model component
-<dbs-pgx drug="midazolam" model-id="Midazolam_Aarons1991_reference" status="" stale="true" population="rats" measured-compound="" parameterization="" topology=""></dbs-pgx>
+<div class="pk-model-meta" hidden drug="midazolam" model-id="Midazolam_Aarons1991_reference" status="" stale="true" population="rats" measured-compound="" parameterization="" topology=""></div>
 
 **Model structure:** —; no model was built for this record.  
 **Parameters:** 0 extracted.

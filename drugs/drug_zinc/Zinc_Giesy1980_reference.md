@@ -33,8 +33,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Giesy JP et al., Cadmium and zinc accumulation and elimi…, Archives of environmental c… (1980)
   ·  DOI: [10.1007/BF01055544](https://doi.org/10.1007/BF01055544)
 
-## Model component
-<dbs-pgx drug="zinc" model-id="Zinc_Giesy1980_reference" status="needs_review" stale="true" population="freshwater crayfish" measured-compound="zinc" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="zinc" model-id="Zinc_Giesy1980_reference" status="needs_review" stale="true" population="freshwater crayfish" measured-compound="zinc" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 5 extracted.

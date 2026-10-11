@@ -21,8 +21,7 @@
 Mattina R et al., Pharmacokinetics of rufloxacin in healt…, Chemotherapy (1991)
   ·  DOI: [10.1159/000238885](https://doi.org/10.1159/000238885)
 
-## Model component
-<dbs-pgx drug="rufloxacin" model-id="Rufloxacin_Mattina1991_reference" status="extracted" stale="false" population="healthy volunteers" measured-compound="rufloxacin" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="rufloxacin" model-id="Rufloxacin_Mattina1991_reference" status="extracted" stale="false" population="healthy volunteers" measured-compound="rufloxacin" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 6 extracted.

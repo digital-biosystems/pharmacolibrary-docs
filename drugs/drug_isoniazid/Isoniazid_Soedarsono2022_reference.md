@@ -21,8 +21,7 @@
 Soedarsono S et al., Development of population pharmacokinet…, International journal of in… (2022)
   ·  DOI: [10.1016/j.ijid.2022.01.003](https://doi.org/10.1016/j.ijid.2022.01.003)
 
-## Model component
-<dbs-pgx drug="isoniazid" model-id="Isoniazid_Soedarsono2022_reference" status="rejected" stale="false" population="Indonesian patients with tuberculosis" measured-compound="isoniazid" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="isoniazid" model-id="Isoniazid_Soedarsono2022_reference" status="rejected" stale="false" population="Indonesian patients with tuberculosis" measured-compound="isoniazid" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

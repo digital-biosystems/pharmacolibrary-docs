@@ -20,8 +20,7 @@
 Savelieva M et al., Population pharmacokinetics of intraven…, European journal of clinica… (2015)
   ·  DOI: [10.1007/s00228-015-1846-7](https://doi.org/10.1007/s00228-015-1846-7)
 
-## Model component
-<dbs-pgx drug="panobinostat" model-id="Panobinostat_Savelieva2015_reference" status="needs_review" stale="false" population="patients with hematologic and solid tumors" measured-compound="panobinostat" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="panobinostat" model-id="Panobinostat_Savelieva2015_reference" status="needs_review" stale="false" population="patients with hematologic and solid tumors" measured-compound="panobinostat" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 1 extracted, plus 3 covariate effects.

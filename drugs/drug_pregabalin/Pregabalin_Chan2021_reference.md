@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the val
 Chan PLS et al., Pregabalin Population Pharmacokinetic a…, Clinical pharmacology and t… (2021)
   ·  DOI: [10.1002/cpt.2132](https://doi.org/10.1002/cpt.2132)
 
-## Model component
-<dbs-pgx drug="pregabalin" model-id="Pregabalin_Chan2021_reference" status="needs_review" stale="true" population="children (4–16 years) and adults with focal onset seizures" measured-compound="pregabalin" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="pregabalin" model-id="Pregabalin_Chan2021_reference" status="needs_review" stale="true" population="children (4–16 years) and adults with focal onset seizures" measured-compound="pregabalin" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 4 extracted, plus 4 covariate effects.

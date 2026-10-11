@@ -23,8 +23,7 @@
 Edlund H et al., Population Pharmacokinetics of the BTK…, Clinical pharmacokinetics (2019)
   ·  DOI: [10.1007/s40262-018-0725-7](https://doi.org/10.1007/s40262-018-0725-7)
 
-## Model component
-<dbs-pgx drug="acalabrutinib" model-id="Acalabrutinib_Edlund2019_reference" status="rejected" stale="false" population="adult healthy volunteers and patients with B-cell malignancies" measured-compound="acalabrutinib and ACP-5862" parameterization="mechanistic" topology="parent_metabolite"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="acalabrutinib" model-id="Acalabrutinib_Edlund2019_reference" status="rejected" stale="false" population="adult healthy volunteers and patients with B-cell malignancies" measured-compound="acalabrutinib and ACP-5862" parameterization="mechanistic" topology="parent_metabolite"></div>
 
 **Model structure:** parent + metabolite; no model was built for this record.  
 **Parameters:** 0 extracted.

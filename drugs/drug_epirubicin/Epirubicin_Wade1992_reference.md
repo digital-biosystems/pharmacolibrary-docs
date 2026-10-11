@@ -21,8 +21,7 @@
 Wade JR et al., Variability in the pharmacokinetics of…, Cancer chemotherapy and pha… (1992)
   ·  DOI: [10.1007/BF00686009](https://doi.org/10.1007/BF00686009)
 
-## Model component
-<dbs-pgx drug="epirubicin" model-id="Epirubicin_Wade1992_reference" status="needs_review" stale="false" population="patients with normal liver and renal function" measured-compound="epirubicin" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="epirubicin" model-id="Epirubicin_Wade1992_reference" status="needs_review" stale="false" population="patients with normal liver and renal function" measured-compound="epirubicin" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 1 extracted.

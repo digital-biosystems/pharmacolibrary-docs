@@ -21,8 +21,7 @@
 Mohammed BS et al., The enantioselective population pharmac…, The Journal of pharmacy and… (2015)
   ·  DOI: [10.1111/jphp.12418](https://doi.org/10.1111/jphp.12418)
 
-## Model component
-<dbs-pgx drug="ketorolac" model-id="Ketorolac_Mohammed2015_reference" status="rejected" stale="false" population="children" measured-compound="ketorolac" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="ketorolac" model-id="Ketorolac_Mohammed2015_reference" status="rejected" stale="false" population="children" measured-compound="ketorolac" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

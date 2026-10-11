@@ -21,8 +21,7 @@
 Liu Z et al., Real-World Pharmacokinetic and Exposure…, Drug design, development an… (2026)
   ·  DOI: [10.2147/DDDT.S563629](https://doi.org/10.2147/DDDT.S563629)
 
-## Model component
-<dbs-pgx drug="venetoclax" model-id="Venetoclax_Liu2026_reference" status="extracted" stale="false" population="Chinese patients with hematological malignancies" measured-compound="venetoclax" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="venetoclax" model-id="Venetoclax_Liu2026_reference" status="extracted" stale="false" population="Chinese patients with hematological malignancies" measured-compound="venetoclax" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 3 extracted.

@@ -26,8 +26,7 @@
 Spyker DA; Rugloski RJ; Vann RL; O'Brien WM et al. (1977). Antimicrobial agents and chemotherapy 11
   ·  DOI: [10.1128/AAC.11.1.132](https://doi.org/10.1128/AAC.11.1.132)
 
-## Model component
-<dbs-pgx drug="amoxicillin" model-id="Amoxicillin_Spyker1977_reference" status="extracted" stale="true" population="healthy adult male volunteers" measured-compound="amoxicillin" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="amoxicillin" model-id="Amoxicillin_Spyker1977_reference" status="extracted" stale="true" population="healthy adult male volunteers" measured-compound="amoxicillin" parameterization="mechanistic" topology="1C"></div>
 
 **Parameterization:** mechanistic.
 

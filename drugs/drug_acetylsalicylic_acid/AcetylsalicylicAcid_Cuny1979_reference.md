@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which m
 Cuny G et al., Pharmacokinetics of salicylates in elde…, Gerontology (1979)
   ·  DOI: [10.1159/000212320](https://doi.org/10.1159/000212320)
 
-## Model component
-<dbs-pgx drug="acetylsalicylic acid" model-id="AcetylsalicylicAcid_Cuny1979_reference" status="needs_review" stale="false" population="elderly and young inpatients" measured-compound="salicylate" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="acetylsalicylic acid" model-id="AcetylsalicylicAcid_Cuny1979_reference" status="needs_review" stale="false" population="elderly and young inpatients" measured-compound="salicylate" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 2 extracted.

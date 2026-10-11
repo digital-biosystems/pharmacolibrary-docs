@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Thomson AH et al., Lisinopril population pharmacokinetics…, British journal of clinical… (1989)
   ·  DOI: [10.1111/j.1365-2125.1989.tb05335.x](https://doi.org/10.1111/j.1365-2125.1989.tb05335.x)
 
-## Model component
-<dbs-pgx drug="lisinopril" model-id="Lisinopril_Thomson1989_reference" status="needs_review" stale="true" population="elderly and renal disease patients with hypertension" measured-compound="lisinopril" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="lisinopril" model-id="Lisinopril_Thomson1989_reference" status="needs_review" stale="true" population="elderly and renal disease patients with hypertension" measured-compound="lisinopril" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 1 extracted.

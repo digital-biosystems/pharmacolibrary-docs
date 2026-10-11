@@ -21,8 +21,7 @@
 Chakraborty A et al., Pharmacokinetic and pharmacodynamic pro…, Clinical pharmacokinetics (2012)
   ·  DOI: [10.2165/11599820-000000000-00000](https://doi.org/10.2165/11599820-000000000-00000)
 
-## Model component
-<dbs-pgx drug="canakinumab" model-id="Canakinumab_Chakraborty2012_population_mean_se_of_2" status="extracted" stale="false" population="CAPS patients" measured-compound="canakinumab" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="canakinumab" model-id="Canakinumab_Chakraborty2012_population_mean_se_of_2" status="extracted" stale="false" population="CAPS patients" measured-compound="canakinumab" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment, oral mammillary model — template `PK_2C_enteral`.  
 **Parameters:** 6 extracted.

@@ -20,8 +20,7 @@
 Zhou X et al., Prediction of Belimumab Pharmacokinetic…, Drugs in R&D (2021)
   ·  DOI: [10.1007/s40268-021-00363-2](https://doi.org/10.1007/s40268-021-00363-2)
 
-## Model component
-<dbs-pgx drug="belimumab" model-id="Belimumab_Zhou2021_reference" status="needs_review" stale="false" population="adults and pediatric patients with systemic lupus erythematosus" measured-compound="belimumab" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="belimumab" model-id="Belimumab_Zhou2021_reference" status="needs_review" stale="false" population="adults and pediatric patients with systemic lupus erythematosus" measured-compound="belimumab" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment; no model was built for this record.  
 **Parameters:** 4 extracted.

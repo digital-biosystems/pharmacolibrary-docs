@@ -33,8 +33,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on bioavai
 Wang Z et al., Joint population pharmacokinetic modeli…, Frontiers in pharmacology (2022)
   ·  DOI: [10.3389/fphar.2022.978202](https://doi.org/10.3389/fphar.2022.978202)
 
-## Model component
-<dbs-pgx drug="desvenlafaxine" model-id="Desvenlafaxine_Wang2022_reference" status="needs_review" stale="true" population="healthy volunteers and psychiatric patients" measured-compound="O-desmethyl venlafaxine" parameterization="apparent" topology="parent_metabolite"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="desvenlafaxine" model-id="Desvenlafaxine_Wang2022_reference" status="needs_review" stale="true" population="healthy volunteers and psychiatric patients" measured-compound="O-desmethyl venlafaxine" parameterization="apparent" topology="parent_metabolite"></div>
 
 **Model structure:** parent + metabolite; no model was built for this record.  
 **Parameters:** 7 extracted.

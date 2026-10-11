@@ -21,8 +21,7 @@
 Xie R et al., Population pharmacokinetics of tofaciti…, International journal of cl… (2019)
   ·  DOI: [10.5414/CP203516](https://doi.org/10.5414/CP203516)
 
-## Model component
-<dbs-pgx drug="tofacitinib" model-id="Tofacitinib_Xie2019_reference" status="extracted" stale="false" population="adult patients with psoriatic arthritis" measured-compound="tofacitinib" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="tofacitinib" model-id="Tofacitinib_Xie2019_reference" status="extracted" stale="false" population="adult patients with psoriatic arthritis" measured-compound="tofacitinib" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 4 extracted.

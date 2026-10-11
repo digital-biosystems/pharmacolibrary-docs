@@ -21,8 +21,7 @@
 García-Martínez T et al., Population Pharmacokinetic/Pharmacodyna…, Pharmaceutics (2022)
   ·  DOI: [10.3390/pharmaceutics14102226](https://doi.org/10.3390/pharmaceutics14102226)
 
-## Model component
-<dbs-pgx drug="daptomycin" model-id="Daptomycin_GarcaMartnez2022_reference" status="rejected" stale="false" population="patients with normal and impaired renal function" measured-compound="daptomycin" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="daptomycin" model-id="Daptomycin_GarcaMartnez2022_reference" status="rejected" stale="false" population="patients with normal and impaired renal function" measured-compound="daptomycin" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment; no model was built for this record.  
 **Parameters:** 6 extracted, plus 1 covariate effect.

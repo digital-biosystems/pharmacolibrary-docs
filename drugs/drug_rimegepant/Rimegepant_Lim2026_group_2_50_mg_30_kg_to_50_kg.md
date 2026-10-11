@@ -21,8 +21,7 @@
 Lim CN et al., A phase 1, multicenter, open-label stud…, Headache (2026)
   ·  DOI: [10.1111/head.15074](https://doi.org/10.1111/head.15074)
 
-## Model component
-<dbs-pgx drug="rimegepant" model-id="Rimegepant_Lim2026_group_2_50_mg_30_kg_to_50_kg" status="needs_review" stale="false" population="children aged 6 to &lt;12 years with a history of migraine" measured-compound="rimegepant" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="rimegepant" model-id="Rimegepant_Lim2026_group_2_50_mg_30_kg_to_50_kg" status="needs_review" stale="false" population="children aged 6 to &lt;12 years with a history of migraine" measured-compound="rimegepant" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

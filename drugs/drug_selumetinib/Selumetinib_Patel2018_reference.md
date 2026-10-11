@@ -23,8 +23,7 @@
 Patel P et al., Population pharmacokinetics of the MEK…, British journal of clinical… (2018)
   ·  DOI: [10.1111/bcp.13404](https://doi.org/10.1111/bcp.13404)
 
-## Model component
-<dbs-pgx drug="selumetinib" model-id="Selumetinib_Patel2018_reference" status="extracted" stale="false" population="healthy volunteers" measured-compound="selumetinib and N-desmethyl selumetinib" parameterization="mechanistic" topology="parent_metabolite"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="selumetinib" model-id="Selumetinib_Patel2018_reference" status="extracted" stale="false" population="healthy volunteers" measured-compound="selumetinib and N-desmethyl selumetinib" parameterization="mechanistic" topology="parent_metabolite"></div>
 
 **Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameters:** 2 extracted.

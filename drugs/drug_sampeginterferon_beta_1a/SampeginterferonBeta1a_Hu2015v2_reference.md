@@ -20,8 +20,7 @@
 Hu X et al., Pharmacokinetics, pharmacodynamics, and…, Journal of clinical pharmac… (2015)
   ·  DOI: [10.1002/jcph.390](https://doi.org/10.1002/jcph.390)
 
-## Model component
-<dbs-pgx drug="sampeginterferon beta-1a" model-id="SampeginterferonBeta1a_Hu2015v2_reference" status="rejected" stale="false" population="subjects with normal or impaired renal function" measured-compound="peginterferon beta-1a" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="sampeginterferon beta-1a" model-id="SampeginterferonBeta1a_Hu2015v2_reference" status="rejected" stale="false" population="subjects with normal or impaired renal function" measured-compound="peginterferon beta-1a" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment; no model was built for this record.  
 **Parameters:** 5 extracted.

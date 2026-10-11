@@ -30,8 +30,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Wang Y et al., Population Pharmacokinetics and Exposur…, Journal of clinical pharmac… (2021)
   ·  DOI: [10.1002/jcph.1768](https://doi.org/10.1002/jcph.1768)
 
-## Model component
-<dbs-pgx drug="icatibant" model-id="Icatibant_Wang2021_typical_value_rse" status="rejected" stale="true" population="pediatric and adult patients with hereditary angioedema and healthy adults" measured-compound="icatibant" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="icatibant" model-id="Icatibant_Wang2021_typical_value_rse" status="rejected" stale="true" population="pediatric and adult patients with hereditary angioedema and healthy adults" measured-compound="icatibant" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 2 extracted.

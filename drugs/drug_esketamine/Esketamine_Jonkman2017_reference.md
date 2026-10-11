@@ -20,8 +20,7 @@
 Jonkman K et al., Pharmacokinetics and Bioavailability of…, Anesthesiology (2017)
   ·  DOI: [10.1097/ALN.0000000000001798](https://doi.org/10.1097/ALN.0000000000001798)
 
-## Model component
-<dbs-pgx drug="esketamine" model-id="Esketamine_Jonkman2017_reference" status="rejected" stale="false" population="healthy volunteers" measured-compound="esketamine" parameterization="mechanistic" topology="parent_metabolite"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="esketamine" model-id="Esketamine_Jonkman2017_reference" status="rejected" stale="false" population="healthy volunteers" measured-compound="esketamine" parameterization="mechanistic" topology="parent_metabolite"></div>
 
 **Model structure:** parent + metabolite; no model was built for this record.  
 **Parameters:** 0 extracted.

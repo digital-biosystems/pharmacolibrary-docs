@@ -21,8 +21,7 @@
 Fauchet F et al., Model-informed drug development to supp…, British journal of clinical… (2026)
   ·  DOI: [10.1002/bcp.70435](https://doi.org/10.1002/bcp.70435)
 
-## Model component
-<dbs-pgx drug="nemolizumab" model-id="Nemolizumab_Fauchet2026_reference" status="extracted" stale="false" population="adults and adolescents with moderate to severe atopic dermatitis" measured-compound="nemolizumab" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="nemolizumab" model-id="Nemolizumab_Fauchet2026_reference" status="extracted" stale="false" population="adults and adolescents with moderate to severe atopic dermatitis" measured-compound="nemolizumab" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 4 extracted, plus 8 covariate effects.

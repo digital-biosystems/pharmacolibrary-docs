@@ -29,8 +29,7 @@ Independently confirmed by `gpt-oss:120b`.
 El-Nabarawy NA et al., Assessment Of Spanlastic Vesicles Of Zo…, Drug design, development an… (2019)
   ·  DOI: [10.2147/DDDT.S220473](https://doi.org/10.2147/DDDT.S220473)
 
-## Model component
-<dbs-pgx drug="glyceryl trinitrate" model-id="GlycerylTrinitrate_ElNabarawy2019_reference" status="curated_candidate" stale="false" population="" measured-compound="glyceryl_trinitrate" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="glyceryl trinitrate" model-id="GlycerylTrinitrate_ElNabarawy2019_reference" status="curated_candidate" stale="false" population="" measured-compound="glyceryl_trinitrate" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameters:** 2 extracted.

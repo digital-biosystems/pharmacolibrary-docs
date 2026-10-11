@@ -31,8 +31,7 @@ Independently confirmed by `gpt-oss:120b`.
 Taguchi M et al., Pharmacokinetics of bosentan in routine…, Drug metabolism and pharmac… (2011)
   ·  DOI: [10.2133/dmpk.DMPK-10-RG-113](https://doi.org/10.2133/dmpk.DMPK-10-RG-113)
 
-## Model component
-<dbs-pgx drug="bosentan" model-id="Bosentan_Taguchi2011_reference" status="needs_review" stale="true" population="Japanese pediatric patients with pulmonary arterial hypertension" measured-compound="bosentan" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="bosentan" model-id="Bosentan_Taguchi2011_reference" status="needs_review" stale="true" population="Japanese pediatric patients with pulmonary arterial hypertension" measured-compound="bosentan" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 2 extracted.

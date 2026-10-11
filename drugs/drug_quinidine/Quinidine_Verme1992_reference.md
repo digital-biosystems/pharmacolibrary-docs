@@ -31,8 +31,7 @@ Independently confirmed by `gpt-oss:120b`.
 Verme CN et al., Pharmacokinetics of quinidine in male p…, Clinical pharmacokinetics (1992)
   ·  DOI: [10.2165/00003088-199222060-00005](https://doi.org/10.2165/00003088-199222060-00005)
 
-## Model component
-<dbs-pgx drug="quinidine" model-id="Quinidine_Verme1992_reference" status="rejected" stale="true" population="adult hospitalised men" measured-compound="quinidine" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="quinidine" model-id="Quinidine_Verme1992_reference" status="rejected" stale="true" population="adult hospitalised men" measured-compound="quinidine" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

@@ -31,8 +31,7 @@ Independently confirmed by `gpt-oss:120b`.
 Honda N et al., Population pharmacokinetics of landiolo…, Drug metabolism and pharmac… (2008)
   ·  DOI: [10.2133/dmpk.23.447](https://doi.org/10.2133/dmpk.23.447)
 
-## Model component
-<dbs-pgx drug="landiolol" model-id="Landiolol_Honda2008_reference" status="rejected" stale="true" population="healthy male subjects" measured-compound="landiolol hydrochloride" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="landiolol" model-id="Landiolol_Honda2008_reference" status="rejected" stale="true" population="healthy male subjects" measured-compound="landiolol hydrochloride" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

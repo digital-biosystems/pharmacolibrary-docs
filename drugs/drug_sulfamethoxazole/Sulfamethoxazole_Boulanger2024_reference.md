@@ -23,8 +23,7 @@
 Boulanger M et al., Pharmacokinetic modeling of sulfamethox…, Poultry science (2024)
   ·  DOI: [10.1016/j.psj.2024.104200](https://doi.org/10.1016/j.psj.2024.104200)
 
-## Model component
-<dbs-pgx drug="sulfamethoxazole" model-id="Sulfamethoxazole_Boulanger2024_reference" status="needs_review" stale="false" population="broilers" measured-compound="sulfamethoxazole" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="sulfamethoxazole" model-id="Sulfamethoxazole_Boulanger2024_reference" status="needs_review" stale="false" population="broilers" measured-compound="sulfamethoxazole" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment; no model was built for this record.  
 **Parameters:** 9 extracted.

@@ -29,8 +29,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the val
 ## Citation
 Ringwelski L, [Analog computer analysis of radioactiv…, International journal of cl… (1975)
 
-## Model component
-<dbs-pgx drug="tilidine" model-id="Tilidine_Ringwelski1975_reference" status="rejected" stale="true" population="healthy adults" measured-compound="tilidine" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="tilidine" model-id="Tilidine_Ringwelski1975_reference" status="rejected" stale="true" population="healthy adults" measured-compound="tilidine" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 1 extracted.

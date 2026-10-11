@@ -33,8 +33,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Chen Y et al., Is the current therapeutic dosage of na…, Frontiers in pharmacology (2024)
   ·  DOI: [10.3389/fphar.2024.1331673](https://doi.org/10.3389/fphar.2024.1331673)
 
-## Model component
-<dbs-pgx drug="nadroparin" model-id="Nadroparin_Chen2024_reference" status="extracted" stale="true" population="neonates and infants under 8 months" measured-compound="anti-Xa" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="nadroparin" model-id="Nadroparin_Chen2024_reference" status="extracted" stale="true" population="neonates and infants under 8 months" measured-compound="anti-Xa" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 3 extracted.

@@ -21,8 +21,7 @@
 Zhang W et al., Population pharmacokinetics of high-dos…, Chinese medical journal (2015)
   ·  DOI: [10.4103/0366-6999.147829](https://doi.org/10.4103/0366-6999.147829)
 
-## Model component
-<dbs-pgx drug="ifosfamide" model-id="Ifosfamide_Zhang2015_reference" status="extracted" stale="false" population="" measured-compound="ifosfamide" parameterization="apparent" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="ifosfamide" model-id="Ifosfamide_Zhang2015_reference" status="extracted" stale="false" population="" measured-compound="ifosfamide" parameterization="apparent" topology="2C"></div>
 
 **Model structure:** 2-compartment, oral mammillary model — template `PK_2C_enteral`.  
 **Parameters:** 4 extracted.

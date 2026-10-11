@@ -31,8 +31,7 @@ Independently confirmed by `gpt-oss:120b`.
 Nijstad AL et al., A simple extemporaneous oral suspension…, Journal of oncology pharmac… (2023)
   ·  DOI: [10.1177/10781552221089243](https://doi.org/10.1177/10781552221089243)
 
-## Model component
-<dbs-pgx drug="aprepitant" model-id="Aprepitant_Nijstad2023_reference" status="extracted" stale="true" population="pediatric patients" measured-compound="aprepitant" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="aprepitant" model-id="Aprepitant_Nijstad2023_reference" status="extracted" stale="true" population="pediatric patients" measured-compound="aprepitant" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameters:** 4 extracted.

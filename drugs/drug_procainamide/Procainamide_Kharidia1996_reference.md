@@ -33,8 +33,7 @@ Independently confirmed by `gpt-oss:120b`.
 Kharidia J et al., Application of computer-assisted radiot…, Journal of pharmaceutical s… (1996)
   ·  DOI: [10.1021/js950473h](https://doi.org/10.1021/js950473h)
 
-## Model component
-<dbs-pgx drug="procainamide" model-id="Procainamide_Kharidia1996_reference" status="rejected" stale="true" population="male Sprague Dawley rats" measured-compound="procainamide" parameterization="mechanistic" topology="parent_metabolite"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="procainamide" model-id="Procainamide_Kharidia1996_reference" status="rejected" stale="true" population="male Sprague Dawley rats" measured-compound="procainamide" parameterization="mechanistic" topology="parent_metabolite"></div>
 
 **Model structure:** parent + metabolite; no model was built for this record.  
 **Parameters:** 0 extracted.

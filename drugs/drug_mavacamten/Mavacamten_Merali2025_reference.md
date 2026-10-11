@@ -30,8 +30,7 @@ Independently confirmed by `gpt-oss:120b`.
 Merali S et al., Exposure-Response Modeling and Simulati…, Journal of clinical pharmac… (2025)
   ·  DOI: [10.1002/jcph.70072](https://doi.org/10.1002/jcph.70072)
 
-## Model component
-<dbs-pgx drug="mavacamten" model-id="Mavacamten_Merali2025_reference" status="rejected" stale="true" population="patients with obstructive hypertrophic cardiomyopathy" measured-compound="mavacamten" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="mavacamten" model-id="Mavacamten_Merali2025_reference" status="rejected" stale="true" population="patients with obstructive hypertrophic cardiomyopathy" measured-compound="mavacamten" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Vølund A et al., Calculated pattern of intraportal insul…, Diabetes (1987)
   ·  DOI: [10.2337/diab.36.10.1195](https://doi.org/10.2337/diab.36.10.1195)
 
-## Model component
-<dbs-pgx drug="insulin (human)" model-id="InsulinHuman_Vlund1987_reference" status="rejected" stale="false" population="conscious dogs" measured-compound="insulin_human" parameterization="mechanistic" topology="general_linear"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="insulin (human)" model-id="InsulinHuman_Vlund1987_reference" status="rejected" stale="false" population="conscious dogs" measured-compound="insulin_human" parameterization="mechanistic" topology="general_linear"></div>
 
 **Model structure:** general linear; no model was built for this record.  
 **Parameters:** 2 extracted.

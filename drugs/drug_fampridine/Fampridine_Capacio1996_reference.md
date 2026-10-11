@@ -23,8 +23,7 @@
 Capacio BR et al., A method for determining 4-aminopyridin…, Biomedical chromatography :… (1996)
   ·  DOI: [10.1002/(SICI)1099-0801(199605)10:3<111::AID-BMC569>3.0.CO;2-E](https://doi.org/10.1002/(SICI)1099-0801(199605)10:3<111::AID-BMC569>3.0.CO;2-E)
 
-## Model component
-<dbs-pgx drug="fampridine" model-id="Fampridine_Capacio1996_reference" status="needs_review" stale="false" population="anaesthetized guinea pigs" measured-compound="4-aminopyridine" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="fampridine" model-id="Fampridine_Capacio1996_reference" status="needs_review" stale="false" population="anaesthetized guinea pigs" measured-compound="4-aminopyridine" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 6 extracted.

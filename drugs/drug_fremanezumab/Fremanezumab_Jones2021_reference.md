@@ -31,8 +31,7 @@ The base model was simulated, not the covariate effects the record defines.
 Jones A et al., Scaling Approaches for Pediatric Dose S…, Pharmaceutics (2021)
   ·  DOI: [10.3390/pharmaceutics13060785](https://doi.org/10.3390/pharmaceutics13060785)
 
-## Model component
-<dbs-pgx drug="fremanezumab" model-id="Fremanezumab_Jones2021_reference" status="" stale="true" population="pediatric patients with migraine" measured-compound="" parameterization="" topology=""></dbs-pgx>
+<div class="pk-model-meta" hidden drug="fremanezumab" model-id="Fremanezumab_Jones2021_reference" status="" stale="true" population="pediatric patients with migraine" measured-compound="" parameterization="" topology=""></div>
 
 **Model structure:** —; no model was built for this record.  
 **Parameters:** 0 extracted.

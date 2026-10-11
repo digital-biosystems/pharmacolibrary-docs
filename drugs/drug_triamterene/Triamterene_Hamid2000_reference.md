@@ -32,8 +32,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Hamid O et al., Triamterene measurements in the aqueous…, Journal of ocular pharmacol… (2000)
   ·  DOI: [10.1089/jop.2000.16.565](https://doi.org/10.1089/jop.2000.16.565)
 
-## Model component
-<dbs-pgx drug="triamterene" model-id="Triamterene_Hamid2000_reference" status="needs_review" stale="true" population="rabbits" measured-compound="triamterene" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="triamterene" model-id="Triamterene_Hamid2000_reference" status="needs_review" stale="true" population="rabbits" measured-compound="triamterene" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 2 extracted.

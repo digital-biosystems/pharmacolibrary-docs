@@ -20,8 +20,7 @@
 Torda TA et al., Pharmacokinetics and pharmacodynamics o…, Anaesthesia and intensive c… (1997)
   ·  DOI: [10.1177/0310057X9702500312](https://doi.org/10.1177/0310057X9702500312)
 
-## Model component
-<dbs-pgx drug="suxamethonium" model-id="Suxamethonium_Torda1997v2_reference" status="rejected" stale="false" population="patients" measured-compound="suxamethonium" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="suxamethonium" model-id="Suxamethonium_Torda1997v2_reference" status="rejected" stale="false" population="patients" measured-compound="suxamethonium" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

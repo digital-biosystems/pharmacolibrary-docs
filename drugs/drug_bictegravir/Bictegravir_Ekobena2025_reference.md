@@ -29,8 +29,7 @@ Without a unit the value cannot be converted, so the model cannot use it. Extrac
 Ekobena P et al., Population pharmacokinetics of bictegra…, The Journal of antimicrobia… (2025)
   ·  DOI: [10.1093/jac/dkaf297](https://doi.org/10.1093/jac/dkaf297)
 
-## Model component
-<dbs-pgx drug="Bictegravir" model-id="Bictegravir_Ekobena2025_reference" status="extracted" stale="true" population="people with HIV" measured-compound="bictegravir" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="Bictegravir" model-id="Bictegravir_Ekobena2025_reference" status="extracted" stale="true" population="people with HIV" measured-compound="bictegravir" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 3 extracted.

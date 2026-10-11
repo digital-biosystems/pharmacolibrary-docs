@@ -31,8 +31,7 @@ Independently confirmed by `gpt-oss:120b`.
 Jung YS et al., A population pharmacokinetic model of m…, British journal of clinical… (2024)
   ·  DOI: [10.1111/bcp.15969](https://doi.org/10.1111/bcp.15969)
 
-## Model component
-<dbs-pgx drug="methotrexate" model-id="Methotrexate_Jung2024_reference" status="rejected" stale="true" population="Korean patients with haematologic malignancy" measured-compound="methotrexate" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="methotrexate" model-id="Methotrexate_Jung2024_reference" status="rejected" stale="true" population="Korean patients with haematologic malignancy" measured-compound="methotrexate" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment; no model was built for this record.  
 **Parameters:** 4 extracted.

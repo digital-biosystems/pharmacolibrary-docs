@@ -23,8 +23,7 @@
 Chu WY et al., Pharmacokinetics and Pharmacodynamics o…, The Journal of infectious d… (2025)
   ·  DOI: [10.1093/infdis/jiaf279](https://doi.org/10.1093/infdis/jiaf279)
 
-## Model component
-<dbs-pgx drug="itraconazole" model-id="Itraconazole_Chu2025_reference" status="rejected" stale="false" population="adults with eumycetoma" measured-compound="itraconazole, hydroxyitraconazole" parameterization="mechanistic" topology="general_linear"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="itraconazole" model-id="Itraconazole_Chu2025_reference" status="rejected" stale="false" population="adults with eumycetoma" measured-compound="itraconazole, hydroxyitraconazole" parameterization="mechanistic" topology="general_linear"></div>
 
 **Model structure:** general linear; no model was built for this record.  
 **Parameters:** 8 extracted, plus 2 covariate effects.

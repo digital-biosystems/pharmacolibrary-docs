@@ -21,8 +21,7 @@
 Rapp HJ et al., Ropivacaine in neonates and infants: a…, Paediatric anaesthesia (2004)
   ·  DOI: [10.1111/j.1460-9592.2004.01373.x](https://doi.org/10.1111/j.1460-9592.2004.01373.x)
 
-## Model component
-<dbs-pgx drug="ropivacaine" model-id="Ropivacaine_Rapp2004_reference" status="rejected" stale="false" population="neonates and infants" measured-compound="ropivacaine" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="ropivacaine" model-id="Ropivacaine_Rapp2004_reference" status="rejected" stale="false" population="neonates and infants" measured-compound="ropivacaine" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

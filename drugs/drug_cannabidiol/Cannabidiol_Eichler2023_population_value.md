@@ -31,8 +31,7 @@ Simulated as the paper dosed it, the model's peak concentration exceeds the repo
 Eichler F et al., Pharmacokinetic modelling of orally adm…, Frontiers in veterinary sci… (2023)
   ·  DOI: [10.3389/fvets.2023.1234551](https://doi.org/10.3389/fvets.2023.1234551)
 
-## Model component
-<dbs-pgx drug="cannabidiol" model-id="Cannabidiol_Eichler2023_population_value" status="extracted" stale="true" population="horses" measured-compound="cannabidiol" parameterization="apparent" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="cannabidiol" model-id="Cannabidiol_Eichler2023_population_value" status="extracted" stale="true" population="horses" measured-compound="cannabidiol" parameterization="apparent" topology="2C"></div>
 
 **Model structure:** 2-compartment, oral mammillary model — template `PK_2C_enteral`.  
 **Parameters:** 6 extracted.

@@ -21,8 +21,7 @@
 Boyd AH et al., Comparison of the pharmacodynamics and…, British journal of anaesthe… (1996)
   ·  DOI: [10.1093/bja/76.3.382](https://doi.org/10.1093/bja/76.3.382)
 
-## Model component
-<dbs-pgx drug="atracurium" model-id="Atracurium_Boyd1996_reference" status="rejected" stale="false" population="critically ill patients" measured-compound="atracurium" parameterization="mechanistic" topology="general_linear"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="atracurium" model-id="Atracurium_Boyd1996_reference" status="rejected" stale="false" population="critically ill patients" measured-compound="atracurium" parameterization="mechanistic" topology="general_linear"></div>
 
 **Model structure:** general linear; no model was built for this record.  
 **Parameters:** 3 extracted.

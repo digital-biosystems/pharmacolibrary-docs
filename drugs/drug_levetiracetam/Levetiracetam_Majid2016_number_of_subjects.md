@@ -29,8 +29,7 @@ The model was built, but levetiracetam's volume of distribution had no value, so
 Majid O et al., Impact of perampanel on pharmacokinetic…, British journal of clinical… (2016)
   ·  DOI: [10.1111/bcp.12951](https://doi.org/10.1111/bcp.12951)
 
-## Model component
-<dbs-pgx drug="levetiracetam" model-id="Levetiracetam_Majid2016_number_of_subjects" status="model_quarantined" stale="false" population="patients with refractory partial-onset seizures" measured-compound="concomitant antiepileptic drugs" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="levetiracetam" model-id="Levetiracetam_Majid2016_number_of_subjects" status="model_quarantined" stale="false" population="patients with refractory partial-onset seizures" measured-compound="concomitant antiepileptic drugs" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 1 extracted.

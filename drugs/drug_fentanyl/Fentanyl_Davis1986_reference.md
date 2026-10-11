@@ -29,8 +29,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on paramet
 Davis PJ et al., Clinical pharmacokinetics of the newer…, Clinical pharmacokinetics (1986)
   ·  DOI: [10.2165/00003088-198611010-00002](https://doi.org/10.2165/00003088-198611010-00002)
 
-## Model component
-<dbs-pgx drug="fentanyl" model-id="Fentanyl_Davis1986_reference" status="extracted" stale="true" population="" measured-compound="fentanyl" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="fentanyl" model-id="Fentanyl_Davis1986_reference" status="extracted" stale="true" population="" measured-compound="fentanyl" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameters:** 2 extracted.

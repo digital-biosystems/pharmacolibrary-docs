@@ -21,8 +21,7 @@
 Cressey TR et al., Influence of body weight on achieving i…, Therapeutic drug monitoring (2011)
   ·  DOI: [10.1097/FTD.0b013e3182057f6f](https://doi.org/10.1097/FTD.0b013e3182057f6f)
 
-## Model component
-<dbs-pgx drug="indinavir" model-id="Indinavir_Cressey2011_reference" status="extracted" stale="false" population="HIV-infected Thai adults" measured-compound="indinavir" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="indinavir" model-id="Indinavir_Cressey2011_reference" status="extracted" stale="false" population="HIV-infected Thai adults" measured-compound="indinavir" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 4 extracted.

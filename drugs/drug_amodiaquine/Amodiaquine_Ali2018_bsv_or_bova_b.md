@@ -22,8 +22,7 @@
 Ali AM et al., Population Pharmacokinetics of the Anti…, Antimicrobial agents and ch… (2018)
   ·  DOI: [10.1128/AAC.02193-17](https://doi.org/10.1128/AAC.02193-17)
 
-## Model component
-<dbs-pgx drug="amodiaquine" model-id="Amodiaquine_Ali2018_bsv_or_bova_b" status="needs_review" stale="false" population="pediatric and adult patients with uncomplicated malaria" measured-compound="desethylamodiaquine" parameterization="apparent" topology="parent_metabolite"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="amodiaquine" model-id="Amodiaquine_Ali2018_bsv_or_bova_b" status="needs_review" stale="false" population="pediatric and adult patients with uncomplicated malaria" measured-compound="desethylamodiaquine" parameterization="apparent" topology="parent_metabolite"></div>
 
 **Model structure:** parent + metabolite; no model was built for this record.  
 **Parameters:** 1 extracted.

@@ -29,8 +29,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on paramet
 Ji X-w et al., Population pharmacokinetics and pulmona…, Antimicrobial agents and ch… (2025)
   ·  DOI: [10.1128/aac.01065-24](https://doi.org/10.1128/aac.01065-24)
 
-## Model component
-<dbs-pgx drug="tetracycline" model-id="Tetracycline_Ji2025_reference" status="extracted" stale="true" population="" measured-compound="tetracycline" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="tetracycline" model-id="Tetracycline_Ji2025_reference" status="extracted" stale="true" population="" measured-compound="tetracycline" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment, IV mammillary model — template `PK_2C`.  
 **Parameters:** 4 extracted.

@@ -22,8 +22,7 @@
 ## Citation
 Rupp SM et al., Pharmacokinetics and pharmacodynamics o…, The Journal of pharmacology… (1983)
 
-## Model component
-<dbs-pgx drug="fampridine" model-id="Fampridine_Rupp1983_reference" status="extracted" stale="false" population="anesthetized dogs" measured-compound="4-aminopyridine" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="fampridine" model-id="Fampridine_Rupp1983_reference" status="extracted" stale="false" population="anesthetized dogs" measured-compound="4-aminopyridine" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 6 extracted.

@@ -21,8 +21,7 @@
 ## Citation
 Dengler HG et al., Metabolism and pharmacokinetics of orci…, Archives internationales de… (1976)
 
-## Model component
-<dbs-pgx drug="orciprenaline" model-id="Orciprenaline_Dengler1976_reference" status="rejected" stale="false" population="healthy adults (man) plus rat, rabbit, cat" measured-compound="orciprenaline" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="orciprenaline" model-id="Orciprenaline_Dengler1976_reference" status="rejected" stale="false" population="healthy adults (man) plus rat, rabbit, cat" measured-compound="orciprenaline" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 4 extracted.

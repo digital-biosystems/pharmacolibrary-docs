@@ -21,8 +21,7 @@
 Song S et al., Population Pharmacokinetics of Tigecycl…, Drug design, development an… (2024)
   ·  DOI: [10.2147/DDDT.S473080](https://doi.org/10.2147/DDDT.S473080)
 
-## Model component
-<dbs-pgx drug="tigecycline" model-id="Tigecycline_Song2024_non_crrt" status="extracted" stale="false" population="critically ill patients" measured-compound="tigecycline" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="tigecycline" model-id="Tigecycline_Song2024_non_crrt" status="extracted" stale="false" population="critically ill patients" measured-compound="tigecycline" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment, IV mammillary model — template `PK_2C`.  
 **Parameters:** 4 extracted.

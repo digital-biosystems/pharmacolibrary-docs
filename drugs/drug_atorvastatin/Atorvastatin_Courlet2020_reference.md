@@ -29,8 +29,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the lin
 Courlet P et al., Influence of Drug-Drug Interactions on…, Clinical pharmacokinetics (2020)
   ·  DOI: [10.1007/s40262-020-00876-0](https://doi.org/10.1007/s40262-020-00876-0)
 
-## Model component
-<dbs-pgx drug="atorvastatin" model-id="Atorvastatin_Courlet2020_reference" status="rejected" stale="false" population="aging people living with HIV" measured-compound="atorvastatin" parameterization="mechanistic" topology="parent_metabolite"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="atorvastatin" model-id="Atorvastatin_Courlet2020_reference" status="rejected" stale="false" population="aging people living with HIV" measured-compound="atorvastatin" parameterization="mechanistic" topology="parent_metabolite"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 7 extracted.

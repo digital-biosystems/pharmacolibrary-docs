@@ -33,8 +33,7 @@ The metabolite ciprofloxacin, formed from enrofloxacin in the central compartmen
 Ambros LA et al., Pharmacokinetic and Pharmacodynamic Mod…, Veterinary sciences (2025)
   ·  DOI: [10.3390/vetsci12060588](https://doi.org/10.3390/vetsci12060588)
 
-## Model component
-<dbs-pgx drug="ciprofloxacin" model-id="Ciprofloxacin_Ambros2025_reference" status="rejected" stale="true" population="pregnant goats" measured-compound="ciprofloxacin" parameterization="apparent" topology="manual_model_class"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="ciprofloxacin" model-id="Ciprofloxacin_Ambros2025_reference" status="rejected" stale="true" population="pregnant goats" measured-compound="ciprofloxacin" parameterization="apparent" topology="manual_model_class"></div>
 
 **Model structure:** nonlinear / manual; no model was built for this record.  
 **Parameters:** 14 extracted.

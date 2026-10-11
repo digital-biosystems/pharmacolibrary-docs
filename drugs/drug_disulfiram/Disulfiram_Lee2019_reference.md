@@ -20,8 +20,7 @@
 Lee SA et al., Population Pharmacokinetics and Pharmac…, Clinical pharmacology and t… (2019)
   ·  DOI: [10.1002/cpt.1220](https://doi.org/10.1002/cpt.1220)
 
-## Model component
-<dbs-pgx drug="disulfiram" model-id="Disulfiram_Lee2019_reference" status="needs_review" stale="false" population="HIV+ ART-suppressed adults" measured-compound="disulfiram" parameterization="mechanistic" topology="manual_model_class"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="disulfiram" model-id="Disulfiram_Lee2019_reference" status="needs_review" stale="false" population="HIV+ ART-suppressed adults" measured-compound="disulfiram" parameterization="mechanistic" topology="manual_model_class"></div>
 
 **Model structure:** nonlinear / manual; no model was built for this record.  
 **Parameters:** 3 extracted.

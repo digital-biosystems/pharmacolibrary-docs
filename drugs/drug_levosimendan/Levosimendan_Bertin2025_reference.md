@@ -29,8 +29,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on paramet
 Bertin S et al., Pharmacokinetics of levosimendan in cri…, Frontiers in pediatrics (2025)
   ·  DOI: [10.3389/fped.2025.1542417](https://doi.org/10.3389/fped.2025.1542417)
 
-## Model component
-<dbs-pgx drug="levosimendan" model-id="Levosimendan_Bertin2025_reference" status="extracted" stale="true" population="critically ill children on ECMO" measured-compound="levosimendan" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="levosimendan" model-id="Levosimendan_Bertin2025_reference" status="extracted" stale="true" population="critically ill children on ECMO" measured-compound="levosimendan" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameters:** 2 extracted.

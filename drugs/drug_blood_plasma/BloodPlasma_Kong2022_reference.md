@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on paramet
 Kong J et al., The pharmacokinetics of buserelin after…, BMC veterinary research (2022)
   ·  DOI: [10.1186/s12917-022-03237-0](https://doi.org/10.1186/s12917-022-03237-0)
 
-## Model component
-<dbs-pgx drug="blood plasma" model-id="BloodPlasma_Kong2022_reference" status="extracted" stale="true" population="" measured-compound="blood_plasma" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="blood plasma" model-id="BloodPlasma_Kong2022_reference" status="extracted" stale="true" population="" measured-compound="blood_plasma" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 3 extracted.

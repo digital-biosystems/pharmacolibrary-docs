@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-5.6-luna`) disagrees on `parame
 Eshelman FN et al., Pharmacokinetics of amoxicillin and amp…, Antimicrobial agents and ch… (1978)
   ·  DOI: [10.1128/AAC.14.4.539](https://doi.org/10.1128/AAC.14.4.539)
 
-## Model component
-<dbs-pgx drug="amoxicillin" model-id="Amoxicillin_Eshelman1978_reference" status="needs_review" stale="true" population="healthy adults" measured-compound="amoxicillin and ampicillin" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="amoxicillin" model-id="Amoxicillin_Eshelman1978_reference" status="needs_review" stale="true" population="healthy adults" measured-compound="amoxicillin and ampicillin" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 4 extracted.

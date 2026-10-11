@@ -21,8 +21,7 @@
 Ferron GM et al., Population pharmacokinetics of sirolimu…, Clinical pharmacology and t… (1997)
   ·  DOI: [10.1016/S0009-9236(97)90192-2](https://doi.org/10.1016/S0009-9236(97)90192-2)
 
-## Model component
-<dbs-pgx drug="sirolimus" model-id="Sirolimus_Ferron1997_reference" status="needs_review" stale="false" population="kidney transplant patients" measured-compound="sirolimus" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="sirolimus" model-id="Sirolimus_Ferron1997_reference" status="needs_review" stale="false" population="kidney transplant patients" measured-compound="sirolimus" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 4 extracted.

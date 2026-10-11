@@ -21,8 +21,7 @@
 Zhang R et al., Significant Predictors of Azithromycin…, Drug design, development an… (2025)
   ·  DOI: [10.2147/DDDT.S519597](https://doi.org/10.2147/DDDT.S519597)
 
-## Model component
-<dbs-pgx drug="azithromycin" model-id="Azithromycin_Zhang2025_wu_et_al41" status="rejected" stale="false" population="mixed (preterm neonates, children, pregnant/non-pregnant women, adults)" measured-compound="azithromycin" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="azithromycin" model-id="Azithromycin_Zhang2025_wu_et_al41" status="rejected" stale="false" population="mixed (preterm neonates, children, pregnant/non-pregnant women, adults)" measured-compound="azithromycin" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

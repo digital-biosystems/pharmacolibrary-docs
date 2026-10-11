@@ -29,8 +29,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Zufferey PJ et al., Pharmacokinetics of enoxaparin in COVID…, Thrombosis research (2021)
   ·  DOI: [10.1016/j.thromres.2021.07.010](https://doi.org/10.1016/j.thromres.2021.07.010)
 
-## Model component
-<dbs-pgx drug="enoxaparin" model-id="Enoxaparin_Zufferey2021_reference" status="needs_review" stale="false" population="critically ill patients with COVID-19" measured-compound="enoxaparin" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="enoxaparin" model-id="Enoxaparin_Zufferey2021_reference" status="needs_review" stale="false" population="critically ill patients with COVID-19" measured-compound="enoxaparin" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 1 extracted.

@@ -21,8 +21,7 @@
 Noetzli M et al., Population pharmacokinetic approach to…, British journal of clinical… (2014)
   ·  DOI: [10.1111/bcp.12325](https://doi.org/10.1111/bcp.12325)
 
-## Model component
-<dbs-pgx drug="donepezil" model-id="Donepezil_Noetzli2014_reference" status="rejected" stale="false" population="older patients treated with donepezil" measured-compound="donepezil" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="donepezil" model-id="Donepezil_Noetzli2014_reference" status="rejected" stale="false" population="older patients treated with donepezil" measured-compound="donepezil" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

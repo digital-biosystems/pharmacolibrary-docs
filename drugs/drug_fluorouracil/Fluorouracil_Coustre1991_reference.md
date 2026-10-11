@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Coustère C et al., A mathematical model of the kinetics of…, Cancer chemotherapy and pha… (1991)
   ·  DOI: [10.1007/BF00689701](https://doi.org/10.1007/BF00689701)
 
-## Model component
-<dbs-pgx drug="fluorouracil" model-id="Fluorouracil_Coustre1991_reference" status="rejected" stale="true" population="cancer patients" measured-compound="5-fluorouracil" parameterization="mechanistic" topology="general_linear"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="fluorouracil" model-id="Fluorouracil_Coustre1991_reference" status="rejected" stale="true" population="cancer patients" measured-compound="5-fluorouracil" parameterization="mechanistic" topology="general_linear"></div>
 
 **Model structure:** general linear; no model was built for this record.  
 **Parameters:** 3 extracted.

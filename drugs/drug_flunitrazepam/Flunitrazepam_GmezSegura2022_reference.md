@@ -23,8 +23,7 @@
 Gómez-Segura L et al., Swine as the Animal Model for Testing N…, Pharmaceutics (2022)
   ·  DOI: [10.3390/pharmaceutics14051045](https://doi.org/10.3390/pharmaceutics14051045)
 
-## Model component
-<dbs-pgx drug="flunitrazepam" model-id="Flunitrazepam_GmezSegura2022_reference" status="extracted" stale="false" population="" measured-compound="flunitrazepam" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="flunitrazepam" model-id="Flunitrazepam_GmezSegura2022_reference" status="extracted" stale="false" population="" measured-compound="flunitrazepam" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameters:** 2 extracted.

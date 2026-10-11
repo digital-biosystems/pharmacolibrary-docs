@@ -21,8 +21,7 @@
 Baek IH et al., Pharmacokinetics of eperisone following…, Biopharmaceutics & drug dis… (2021)
   ·  DOI: [10.1002/bdd.2264](https://doi.org/10.1002/bdd.2264)
 
-## Model component
-<dbs-pgx drug="eperisone" model-id="Eperisone_Baek2021_reference" status="extracted" stale="false" population="healthy Korean volunteers" measured-compound="eperisone" parameterization="apparent" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="eperisone" model-id="Eperisone_Baek2021_reference" status="extracted" stale="false" population="healthy Korean volunteers" measured-compound="eperisone" parameterization="apparent" topology="2C"></div>
 
 **Model structure:** 2-compartment, oral mammillary model — template `PK_2C_enteral`.  
 **Parameters:** 5 extracted.

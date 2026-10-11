@@ -32,8 +32,7 @@ No clearance, volume or rate constant of the model is reported in it. Only the a
 Coles LD et al., Use of IV fosphenytoin pharmacokinetics…, Epilepsia (2015)
   ·  DOI: [10.1111/epi.12961](https://doi.org/10.1111/epi.12961)
 
-## Model component
-<dbs-pgx drug="fosphenytoin" model-id="Fosphenytoin_Coles2015_reference" status="rejected" stale="true" population="healthy dogs" measured-compound="phenytoin" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="fosphenytoin" model-id="Fosphenytoin_Coles2015_reference" status="rejected" stale="true" population="healthy dogs" measured-compound="phenytoin" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

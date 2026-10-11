@@ -23,8 +23,7 @@
 Mager DE et al., Receptor-mediated pharmacokinetics and…, The Journal of pharmacology… (2003)
   ·  DOI: [10.1124/jpet.103.049502](https://doi.org/10.1124/jpet.103.049502)
 
-## Model component
-<dbs-pgx drug="interferon beta-1a" model-id="InterferonBeta1a_Mager2003_reference" status="rejected" stale="false" population="monkeys" measured-compound="interferon_beta_1a" parameterization="mechanistic" topology="parent_metabolite"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="interferon beta-1a" model-id="InterferonBeta1a_Mager2003_reference" status="rejected" stale="false" population="monkeys" measured-compound="interferon_beta_1a" parameterization="mechanistic" topology="parent_metabolite"></div>
 
 **Model structure:** parent + metabolite; no model was built for this record.  
 **Parameters:** 2 extracted.

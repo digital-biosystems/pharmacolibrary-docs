@@ -20,8 +20,7 @@
 Xiong W et al., Population pharmacokinetic analysis of…, Cancer chemotherapy and pha… (2022)
   ·  DOI: [10.1007/s00280-022-04423-5](https://doi.org/10.1007/s00280-022-04423-5)
 
-## Model component
-<dbs-pgx drug="tepotinib" model-id="Tepotinib_Xiong2022_reference" status="needs_review" stale="false" population="patients with cancer and healthy participants" measured-compound="tepotinib" parameterization="apparent" topology="parent_metabolite"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="tepotinib" model-id="Tepotinib_Xiong2022_reference" status="needs_review" stale="false" population="patients with cancer and healthy participants" measured-compound="tepotinib" parameterization="apparent" topology="parent_metabolite"></div>
 
 **Model structure:** parent + metabolite; no model was built for this record.  
 **Parameters:** 15 extracted, plus 6 covariate effects.

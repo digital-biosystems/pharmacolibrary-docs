@@ -22,8 +22,7 @@
 Patel YT et al., CNS penetration of the CDK4/6 inhibitor…, Cancer chemotherapy and pha… (2019)
   ·  DOI: [10.1007/s00280-019-03864-9](https://doi.org/10.1007/s00280-019-03864-9)
 
-## Model component
-<dbs-pgx drug="ribociclib" model-id="Ribociclib_Patel2019_reference" status="rejected" stale="false" population="non-tumor-bearing and DIPGx7 glioma cortical allograft mice" measured-compound="ribociclib" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="ribociclib" model-id="Ribociclib_Patel2019_reference" status="rejected" stale="false" population="non-tumor-bearing and DIPGx7 glioma cortical allograft mice" measured-compound="ribociclib" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 1 extracted.

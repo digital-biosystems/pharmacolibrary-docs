@@ -29,8 +29,7 @@ The model was built, but clofarabine's clearance and volume of distribution had 
 Nijstad AL et al., Population pharmacokinetics of clofarab…, British journal of clinical… (2021)
   ·  DOI: [10.1111/bcp.14738](https://doi.org/10.1111/bcp.14738)
 
-## Model component
-<dbs-pgx drug="clofarabine" model-id="Clofarabine_Nijstad2021_reference" status="rejected" stale="true" population="paediatric patients and one adult undergoing allogeneic HCT" measured-compound="clofarabine" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="clofarabine" model-id="Clofarabine_Nijstad2021_reference" status="rejected" stale="true" population="paediatric patients and one adult undergoing allogeneic HCT" measured-compound="clofarabine" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 2 extracted.

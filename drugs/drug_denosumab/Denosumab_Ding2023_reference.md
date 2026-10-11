@@ -23,8 +23,7 @@
 Ding Y et al., A randomized trial comparing LY01011, b…, Journal of bone oncology (2023)
   ·  DOI: [10.1016/j.jbo.2023.100499](https://doi.org/10.1016/j.jbo.2023.100499)
 
-## Model component
-<dbs-pgx drug="denosumab" model-id="Denosumab_Ding2023_reference" status="extracted" stale="false" population="healthy Chinese adults" measured-compound="denosumab" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="denosumab" model-id="Denosumab_Ding2023_reference" status="extracted" stale="false" population="healthy Chinese adults" measured-compound="denosumab" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 2 extracted.

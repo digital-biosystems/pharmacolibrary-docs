@@ -33,8 +33,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Wehrfritz A et al., A clinical case and pharmacokinetic ana…, SAGE open medical case repo… (2026)
   ·  DOI: [10.1177/2050313X261439208](https://doi.org/10.1177/2050313X261439208)
 
-## Model component
-<dbs-pgx drug="metamizole sodium" model-id="MetamizoleSodium_Wehrfritz2026_reference" status="rejected" stale="true" population="adult patient" measured-compound="4-methylaminoantipyrine" parameterization="mechanistic" topology="general_linear"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="metamizole sodium" model-id="MetamizoleSodium_Wehrfritz2026_reference" status="rejected" stale="true" population="adult patient" measured-compound="4-methylaminoantipyrine" parameterization="mechanistic" topology="general_linear"></div>
 
 **Model structure:** general linear; no model was built for this record.  
 **Parameters:** 0 extracted.

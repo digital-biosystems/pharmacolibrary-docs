@@ -20,8 +20,7 @@
 Widerlöv E et al., Effect of urinary pH on the plasma and…, European journal of clinica… (1989)
   ·  DOI: [10.1007/BF00558500](https://doi.org/10.1007/BF00558500)
 
-## Model component
-<dbs-pgx drug="remoxipride" model-id="Remoxipride_Widerlv1989_reference" status="needs_review" stale="false" population="healthy male volunteers" measured-compound="remoxipride" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="remoxipride" model-id="Remoxipride_Widerlv1989_reference" status="needs_review" stale="false" population="healthy male volunteers" measured-compound="remoxipride" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 3 extracted.

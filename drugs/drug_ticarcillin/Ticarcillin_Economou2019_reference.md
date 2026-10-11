@@ -21,8 +21,7 @@
 Economou CJP et al., Population pharmacokinetics of ticarcil…, International journal of an… (2019)
   ·  DOI: [10.1016/j.ijantimicag.2019.06.027](https://doi.org/10.1016/j.ijantimicag.2019.06.027)
 
-## Model component
-<dbs-pgx drug="ticarcillin" model-id="Ticarcillin_Economou2019_reference" status="extracted" stale="false" population="critically ill patients with acute kidney injury receiving extended daily diafiltration" measured-compound="ticarcillin" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="ticarcillin" model-id="Ticarcillin_Economou2019_reference" status="extracted" stale="false" population="critically ill patients with acute kidney injury receiving extended daily diafiltration" measured-compound="ticarcillin" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 4 extracted.

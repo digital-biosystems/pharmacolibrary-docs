@@ -25,8 +25,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on `parame
 Willmann S et al., Population pharmacokinetics of riocigua…, Pediatric pulmonology (2023)
   ·  DOI: [10.1002/ppul.26277](https://doi.org/10.1002/ppul.26277)
 
-## Model component
-<dbs-pgx drug="riociguat" model-id="Riociguat_Willmann2023_reference" status="needs_review" stale="false" population="pediatric patients with pulmonary arterial hypertension" measured-compound="riociguat" parameterization="apparent" topology="parent_metabolite"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="riociguat" model-id="Riociguat_Willmann2023_reference" status="needs_review" stale="false" population="pediatric patients with pulmonary arterial hypertension" measured-compound="riociguat" parameterization="apparent" topology="parent_metabolite"></div>
 
 **Model structure:** parent + metabolite; no model was built for this record.  
 **Parameters:** 1 extracted.

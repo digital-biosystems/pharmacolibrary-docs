@@ -20,8 +20,7 @@
 Hu Y et al., Population Pharmacokinetic Modeling of…, Journal of clinical pharmac… (2022)
   ·  DOI: [10.1002/jcph.2103](https://doi.org/10.1002/jcph.2103)
 
-## Model component
-<dbs-pgx drug="lenvatinib" model-id="Lenvatinib_Hu2022_reference" status="needs_review" stale="false" population="Chinese patients with advanced hepatocellular carcinoma" measured-compound="lenvatinib" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="lenvatinib" model-id="Lenvatinib_Hu2022_reference" status="needs_review" stale="false" population="Chinese patients with advanced hepatocellular carcinoma" measured-compound="lenvatinib" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 1 extracted.

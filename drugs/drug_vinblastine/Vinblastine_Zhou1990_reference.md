@@ -33,8 +33,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Zhou XJ et al., In vivo and in vitro pharmacokinetics a…, European journal of drug me… (1990)
   ·  DOI: [10.1007/BF03190222](https://doi.org/10.1007/BF03190222)
 
-## Model component
-<dbs-pgx drug="vinblastine" model-id="Vinblastine_Zhou1990_reference" status="extracted" stale="true" population="rats given intravenous vinblastine or vincristine" measured-compound="vinblastine and vincristine" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="vinblastine" model-id="Vinblastine_Zhou1990_reference" status="extracted" stale="true" population="rats given intravenous vinblastine or vincristine" measured-compound="vinblastine and vincristine" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment, IV mammillary model — template `PK_2C`.  
 **Parameters:** 3 extracted, plus 4 covariate effects.

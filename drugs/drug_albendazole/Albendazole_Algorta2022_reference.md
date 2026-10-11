@@ -21,8 +21,7 @@
 Algorta J et al., Pharmacokinetic Characterization and Co…, Frontiers in pharmacology (2022)
   ·  DOI: [10.3389/fphar.2022.914886](https://doi.org/10.3389/fphar.2022.914886)
 
-## Model component
-<dbs-pgx drug="albendazole" model-id="Albendazole_Algorta2022_reference" status="extracted" stale="false" population="healthy volunteers" measured-compound="albendazole" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="albendazole" model-id="Albendazole_Algorta2022_reference" status="extracted" stale="false" population="healthy volunteers" measured-compound="albendazole" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 2 extracted.

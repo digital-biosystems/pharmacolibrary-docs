@@ -27,8 +27,7 @@ A model needs both clearance and volume; without the volume it could only be bui
 Yonezawa E et al., Lack of interaction between amiodarone…, Journal of clinical pharmac… (2002)
   ·  DOI: [10.1177/00912700222011265](https://doi.org/10.1177/00912700222011265)
 
-## Model component
-<dbs-pgx drug="amiodarone" model-id="Amiodarone_Yonezawa2002_mex_amd_group_1" status="needs_review" stale="false" population="inpatients with supraventricular tachyarrhythmias" measured-compound="mexiletine" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="amiodarone" model-id="Amiodarone_Yonezawa2002_mex_amd_group_1" status="needs_review" stale="false" population="inpatients with supraventricular tachyarrhythmias" measured-compound="mexiletine" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 1 extracted.

@@ -29,8 +29,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Agersø H et al., Recombinant human factor VIIa (rFVIIa)…, Journal of thrombosis and h… (2011)
   ·  DOI: [10.1111/j.1538-7836.2010.04152.x](https://doi.org/10.1111/j.1538-7836.2010.04152.x)
 
-## Model component
-<dbs-pgx drug="coagulation factor VIIa" model-id="CoagulationFactorViia_Agers2011_reference" status="needs_review" stale="false" population="severe hemophilia patients" measured-compound="rFVIIa" parameterization="mechanistic" topology="parent_metabolite"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="coagulation factor VIIa" model-id="CoagulationFactorViia_Agers2011_reference" status="needs_review" stale="false" population="severe hemophilia patients" measured-compound="rFVIIa" parameterization="mechanistic" topology="parent_metabolite"></div>
 
 **Model structure:** parent + metabolite; no model was built for this record.  
 **Parameters:** 5 extracted.

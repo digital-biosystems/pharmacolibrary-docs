@@ -21,8 +21,7 @@
 Gupta N et al., Population pharmacokinetic and exposure…, Clinical and translational… (2022)
   ·  DOI: [10.1111/cts.13231](https://doi.org/10.1111/cts.13231)
 
-## Model component
-<dbs-pgx drug="brigatinib" model-id="Brigatinib_Gupta2022_reference" status="rejected" stale="false" population="patients with ALK-positive NSCLC in ALTA-1L" measured-compound="brigatinib" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="brigatinib" model-id="Brigatinib_Gupta2022_reference" status="rejected" stale="false" population="patients with ALK-positive NSCLC in ALTA-1L" measured-compound="brigatinib" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

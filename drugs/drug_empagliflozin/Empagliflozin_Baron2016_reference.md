@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Baron KT et al., Population Pharmacokinetics and Exposur…, Diabetes therapy : research… (2016)
   ·  DOI: [10.1007/s13300-016-0174-y](https://doi.org/10.1007/s13300-016-0174-y)
 
-## Model component
-<dbs-pgx drug="empagliflozin" model-id="Empagliflozin_Baron2016_reference" status="extracted" stale="true" population="patients with type 2 diabetes" measured-compound="empagliflozin" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="empagliflozin" model-id="Empagliflozin_Baron2016_reference" status="extracted" stale="true" population="patients with type 2 diabetes" measured-compound="empagliflozin" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 5 extracted.

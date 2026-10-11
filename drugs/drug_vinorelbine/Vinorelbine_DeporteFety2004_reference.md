@@ -20,8 +20,7 @@
 Deporte-Fety R et al., Population pharmacokinetics of short in…, Cancer chemotherapy and pha… (2004)
   ·  DOI: [10.1007/s00280-003-0729-2](https://doi.org/10.1007/s00280-003-0729-2)
 
-## Model component
-<dbs-pgx drug="vinorelbine" model-id="Vinorelbine_DeporteFety2004_reference" status="rejected" stale="false" population="patients with metastatic breast cancer" measured-compound="vinorelbine" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="vinorelbine" model-id="Vinorelbine_DeporteFety2004_reference" status="rejected" stale="false" population="patients with metastatic breast cancer" measured-compound="vinorelbine" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

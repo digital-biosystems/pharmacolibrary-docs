@@ -29,8 +29,7 @@ No clearance, volume or rate constant of the model is reported in it. Only the a
 Gallo JM et al., Population pharmacokinetic model for to…, Journal of clinical oncolog… (2000)
   ·  DOI: [10.1200/JCO.2000.18.12.2459](https://doi.org/10.1200/JCO.2000.18.12.2459)
 
-## Model component
-<dbs-pgx drug="topotecan" model-id="Topotecan_Gallo2000_reference" status="rejected" stale="true" population="cancer patients" measured-compound="topotecan" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="topotecan" model-id="Topotecan_Gallo2000_reference" status="rejected" stale="true" population="cancer patients" measured-compound="topotecan" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

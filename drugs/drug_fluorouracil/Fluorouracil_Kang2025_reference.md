@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on paramet
 Kang M et al., Population Pharmacokinetics of Radotini…, Pharmaceuticals (Basel, Swi… (2025)
   ·  DOI: [10.3390/ph18111705](https://doi.org/10.3390/ph18111705)
 
-## Model component
-<dbs-pgx drug="fluorouracil" model-id="Fluorouracil_Kang2025_reference" status="extracted" stale="true" population="" measured-compound="" parameterization="" topology=""></dbs-pgx>
+<div class="pk-model-meta" hidden drug="fluorouracil" model-id="Fluorouracil_Kang2025_reference" status="extracted" stale="true" population="" measured-compound="" parameterization="" topology=""></div>
 
 **Model structure:** —; no model was built for this record.  
 **Parameters:** 0 extracted.

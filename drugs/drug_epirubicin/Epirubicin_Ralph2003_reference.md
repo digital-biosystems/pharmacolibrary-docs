@@ -21,8 +21,7 @@
 Ralph LD et al., A population model of epirubicin pharma…, Cancer chemotherapy and pha… (2003)
   ·  DOI: [10.1007/s00280-003-0608-x](https://doi.org/10.1007/s00280-003-0608-x)
 
-## Model component
-<dbs-pgx drug="epirubicin" model-id="Epirubicin_Ralph2003_reference" status="rejected" stale="false" population="patients with advanced breast cancer" measured-compound="epirubicin" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="epirubicin" model-id="Epirubicin_Ralph2003_reference" status="rejected" stale="false" population="patients with advanced breast cancer" measured-compound="epirubicin" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

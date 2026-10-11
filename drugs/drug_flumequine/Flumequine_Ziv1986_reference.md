@@ -23,8 +23,7 @@
 Ziv G et al., Clinical pharmacokinetics of flumequine…, Journal of veterinary pharm… (1986)
   ·  DOI: [10.1111/j.1365-2885.1986.tb00027.x](https://doi.org/10.1111/j.1365-2885.1986.tb00027.x)
 
-## Model component
-<dbs-pgx drug="flumequine" model-id="Flumequine_Ziv1986_reference" status="needs_review" stale="false" population="calves" measured-compound="flumequine" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="flumequine" model-id="Flumequine_Ziv1986_reference" status="needs_review" stale="false" population="calves" measured-compound="flumequine" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 7 extracted.

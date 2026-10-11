@@ -20,8 +20,7 @@
 Meyers BR et al., Pharmacokinetic parameters of sisomicin, Antimicrobial agents and ch… (1976)
   ·  DOI: [10.1128/AAC.10.1.25](https://doi.org/10.1128/AAC.10.1.25)
 
-## Model component
-<dbs-pgx drug="sisomicin" model-id="Sisomicin_Meyers1976_reference" status="needs_review" stale="false" population="healthy adults" measured-compound="sisomicin" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="sisomicin" model-id="Sisomicin_Meyers1976_reference" status="needs_review" stale="false" population="healthy adults" measured-compound="sisomicin" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 1 extracted.

@@ -20,8 +20,7 @@
 Rosario M et al., Population pharmacokinetics-pharmacodyn…, Alimentary pharmacology & t… (2015)
   ·  DOI: [10.1111/apt.13243](https://doi.org/10.1111/apt.13243)
 
-## Model component
-<dbs-pgx drug="vedolizumab" model-id="Vedolizumab_Rosario2015_reference" status="rejected" stale="false" population="patients with ulcerative colitis and Crohn&#39;s disease" measured-compound="vedolizumab" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="vedolizumab" model-id="Vedolizumab_Rosario2015_reference" status="rejected" stale="false" population="patients with ulcerative colitis and Crohn&#39;s disease" measured-compound="vedolizumab" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

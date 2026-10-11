@@ -21,8 +21,7 @@
 Gobburu JV et al., Pharmacokinetic-pharmacodynamic modelin…, Journal of clinical pharmac… (2001)
   ·  DOI: [10.1177/00912700122012689](https://doi.org/10.1177/00912700122012689)
 
-## Model component
-<dbs-pgx drug="rivastigmine" model-id="Rivastigmine_Gobburu2001_reference" status="extracted" stale="false" population="patients with Alzheimer&#39;s disease" measured-compound="rivastigmine" parameterization="apparent" topology="parent_metabolite"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="rivastigmine" model-id="Rivastigmine_Gobburu2001_reference" status="extracted" stale="false" population="patients with Alzheimer&#39;s disease" measured-compound="rivastigmine" parameterization="apparent" topology="parent_metabolite"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 5 extracted.

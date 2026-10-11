@@ -23,8 +23,7 @@
 de Kock M et al., Population Pharmacokinetic Properties o…, Antimicrobial agents and ch… (2018)
   ·  DOI: [10.1128/AAC.01370-17](https://doi.org/10.1128/AAC.01370-17)
 
-## Model component
-<dbs-pgx drug="Sulfadoxine" model-id="Sulfadoxine_de2018_reference" status="extracted" stale="false" population="African children and adults with uncomplicated falciparum malaria" measured-compound="sulfadoxine" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="Sulfadoxine" model-id="Sulfadoxine_de2018_reference" status="extracted" stale="false" population="African children and adults with uncomplicated falciparum malaria" measured-compound="sulfadoxine" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 4 extracted, plus 1 covariate effect.

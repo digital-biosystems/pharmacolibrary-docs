@@ -21,8 +21,7 @@
 Välitalo PA et al., Population pharmacokinetics of dexmedet…, Clinical drug investigation (2013)
   ·  DOI: [10.1007/s40261-013-0101-1](https://doi.org/10.1007/s40261-013-0101-1)
 
-## Model component
-<dbs-pgx drug="dexmedetomidine" model-id="Dexmedetomidine_Vlitalo2013_reference" status="needs_review" stale="false" population="critically ill patients" measured-compound="dexmedetomidine" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="dexmedetomidine" model-id="Dexmedetomidine_Vlitalo2013_reference" status="needs_review" stale="false" population="critically ill patients" measured-compound="dexmedetomidine" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 1 extracted.

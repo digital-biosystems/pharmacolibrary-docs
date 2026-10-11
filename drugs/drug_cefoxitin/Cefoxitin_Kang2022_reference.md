@@ -21,8 +21,7 @@
 Kang HU et al., Predictive performance of pharmacokinet…, Clinical and experimental p… (2022)
   ·  DOI: [10.1111/1440-1681.13695](https://doi.org/10.1111/1440-1681.13695)
 
-## Model component
-<dbs-pgx drug="cefoxitin" model-id="Cefoxitin_Kang2022_reference" status="needs_review" stale="false" population="patients with colorectal surgery" measured-compound="cefoxitin" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="cefoxitin" model-id="Cefoxitin_Kang2022_reference" status="needs_review" stale="false" population="patients with colorectal surgery" measured-compound="cefoxitin" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted, plus 4 covariate effects.

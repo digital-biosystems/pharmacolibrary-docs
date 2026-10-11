@@ -22,8 +22,7 @@
 ## Citation
 Alvinerie M et al., The pharmacokinetics of moxidectin afte…, Veterinary research (1998)
 
-## Model component
-<dbs-pgx drug="moxidectin" model-id="Moxidectin_Alvinerie1998_reference" status="rejected" stale="false" population="sheep" measured-compound="moxidectin" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="moxidectin" model-id="Moxidectin_Alvinerie1998_reference" status="rejected" stale="false" population="sheep" measured-compound="moxidectin" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 2 extracted.

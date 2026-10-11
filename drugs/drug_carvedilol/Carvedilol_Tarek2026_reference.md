@@ -29,8 +29,7 @@ Independently confirmed by `gpt-oss:120b`.
 Tarek M et al., Model-informed dose optimization of car…, Scientific reports (2026)
   ·  DOI: [10.1038/s41598-026-56578-3](https://doi.org/10.1038/s41598-026-56578-3)
 
-## Model component
-<dbs-pgx drug="carvedilol" model-id="Carvedilol_Tarek2026_reference" status="rejected" stale="false" population="adults with cirrhosis (Child-Pugh A/B) and healthy volunteers" measured-compound="carvedilol" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="carvedilol" model-id="Carvedilol_Tarek2026_reference" status="rejected" stale="false" population="adults with cirrhosis (Child-Pugh A/B) and healthy volunteers" measured-compound="carvedilol" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

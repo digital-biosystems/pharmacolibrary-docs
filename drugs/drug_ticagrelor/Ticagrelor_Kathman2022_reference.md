@@ -31,8 +31,7 @@ The paper (Kathman_2022, healthy volunteers, PB2452 measured) is an exposure/out
 Kathman SJ et al., Population pharmacokinetic-pharmacodyna…, CPT: pharmacometrics & syst… (2022)
   ·  DOI: [10.1002/psp4.12734](https://doi.org/10.1002/psp4.12734)
 
-## Model component
-<dbs-pgx drug="ticagrelor" model-id="Ticagrelor_Kathman2022_reference" status="rejected" stale="true" population="healthy volunteers" measured-compound="PB2452" parameterization="apparent" topology="parent_metabolite"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="ticagrelor" model-id="Ticagrelor_Kathman2022_reference" status="rejected" stale="true" population="healthy volunteers" measured-compound="PB2452" parameterization="apparent" topology="parent_metabolite"></div>
 
 **Model structure:** parent + metabolite; no model was built for this record.  
 **Parameters:** 1 extracted, plus 5 covariate effects.

@@ -31,8 +31,7 @@ The model defines covariate effects (e.g., exponent_for_pru_error 0.48), but onl
 Åstrand M et al., Pharmacokinetic-pharmacodynamic modelli…, British journal of clinical… (2019)
   ·  DOI: [10.1111/bcp.13812](https://doi.org/10.1111/bcp.13812)
 
-## Model component
-<dbs-pgx drug="ticagrelor" model-id="Ticagrelor_strand2019_reference" status="extracted" stale="true" population="stable coronary artery disease and prior myocardial infarction patients" measured-compound="ticagrelor" parameterization="apparent" topology="parent_metabolite"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="ticagrelor" model-id="Ticagrelor_strand2019_reference" status="extracted" stale="true" population="stable coronary artery disease and prior myocardial infarction patients" measured-compound="ticagrelor" parameterization="apparent" topology="parent_metabolite"></div>
 
 **Model structure:** parent–metabolite model: parent with 2 compartment(s); metabolite AR-C124910XX: 2 compartment(s); formed from the central compartment; oral dose — template `PK_3M_9C`.  
 **Parameters:** 12 extracted, plus 1 covariate effect.

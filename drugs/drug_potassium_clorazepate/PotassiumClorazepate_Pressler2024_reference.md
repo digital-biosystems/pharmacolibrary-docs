@@ -21,8 +21,7 @@
 Pressler R et al., Pharmacokinetics and safety of brivarac…, Epilepsia open (2024)
   ·  DOI: [10.1002/epi4.12875](https://doi.org/10.1002/epi4.12875)
 
-## Model component
-<dbs-pgx drug="potassium clorazepate" model-id="PotassiumClorazepate_Pressler2024_reference" status="extracted" stale="false" population="" measured-compound="potassium_clorazepate" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="potassium clorazepate" model-id="PotassiumClorazepate_Pressler2024_reference" status="extracted" stale="false" population="" measured-compound="potassium_clorazepate" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameters:** 2 extracted.

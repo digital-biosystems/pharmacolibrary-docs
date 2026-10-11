@@ -29,8 +29,7 @@ Independently confirmed by `gpt-oss:120b`.
 DzenefaAlihodzi d.alihodzic@uke.de 0000-0003-0480-2089 Hospital Pharmacy University Medical Center Hamburg-Eppendorf Martinistraße 52 20246 Hamburg Germany; Department of Clinical Pharmacy Institute of Pharmacy University of Hamburg Bundesstraße 45 20146 Hamburg Germany et al., Ciprofloxacin in Patients Undergoing Ex… (2022)
   ·  DOI: [10.3390/pharmaceutics14050965](https://doi.org/10.3390/pharmaceutics14050965)
 
-## Model component
-<dbs-pgx drug="ciprofloxacin" model-id="Ciprofloxacin_Alihodzic2022_reference" status="needs_review" stale="false" population="critically ill adults undergoing ECMO" measured-compound="ciprofloxacin" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="ciprofloxacin" model-id="Ciprofloxacin_Alihodzic2022_reference" status="needs_review" stale="false" population="critically ill adults undergoing ECMO" measured-compound="ciprofloxacin" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment, oral mammillary model — template `PK_2C_enteral`.  
 **Parameters:** 6 extracted.

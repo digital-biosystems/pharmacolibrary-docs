@@ -21,8 +21,7 @@
 Oelkers R et al., Disposition and effects of flurbiprofen…, British journal of clinical… (1997)
   ·  DOI: [10.1046/j.1365-2125.1997.05333.x](https://doi.org/10.1046/j.1365-2125.1997.05333.x)
 
-## Model component
-<dbs-pgx drug="flurbiprofen" model-id="Flurbiprofen_Oelkers1997v2_reference" status="rejected" stale="false" population="healthy volunteers" measured-compound="flurbiprofen enantiomers" parameterization="mechanistic" topology="general_linear"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="flurbiprofen" model-id="Flurbiprofen_Oelkers1997v2_reference" status="rejected" stale="false" population="healthy volunteers" measured-compound="flurbiprofen enantiomers" parameterization="mechanistic" topology="general_linear"></div>
 
 **Model structure:** general linear; no model was built for this record.  
 **Parameters:** 2 extracted.

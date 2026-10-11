@@ -21,8 +21,7 @@
 Välitalo P et al., Plasma and cerebrospinal fluid pharmaco…, Journal of clinical pharmac… (2012)
   ·  DOI: [10.1177/0091270011418658](https://doi.org/10.1177/0091270011418658)
 
-## Model component
-<dbs-pgx drug="naproxen" model-id="Naproxen_Vlitalo2012_reference" status="extracted" stale="false" population="healthy children" measured-compound="naproxen" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="naproxen" model-id="Naproxen_Vlitalo2012_reference" status="extracted" stale="false" population="healthy children" measured-compound="naproxen" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 4 extracted.

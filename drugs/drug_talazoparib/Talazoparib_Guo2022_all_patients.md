@@ -20,8 +20,7 @@
 Guo C et al., Evaluation of pharmacokinetics and safe…, British journal of clinical… (2022)
   ·  DOI: [10.1111/bcp.15294](https://doi.org/10.1111/bcp.15294)
 
-## Model component
-<dbs-pgx drug="talazoparib" model-id="Talazoparib_Guo2022_all_patients" status="needs_review" stale="false" population="patients with advanced solid tumours and varying degrees of hepatic impairment" measured-compound="talazoparib" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="talazoparib" model-id="Talazoparib_Guo2022_all_patients" status="needs_review" stale="false" population="patients with advanced solid tumours and varying degrees of hepatic impairment" measured-compound="talazoparib" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 7 extracted.

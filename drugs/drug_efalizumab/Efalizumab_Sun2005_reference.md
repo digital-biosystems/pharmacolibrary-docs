@@ -20,8 +20,7 @@
 Sun YN et al., Population pharmacokinetics of efalizum…, Journal of clinical pharmac… (2005)
   ·  DOI: [10.1177/0091270004272731](https://doi.org/10.1177/0091270004272731)
 
-## Model component
-<dbs-pgx drug="efalizumab" model-id="Efalizumab_Sun2005_reference" status="rejected" stale="false" population="psoriasis subjects" measured-compound="efalizumab" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="efalizumab" model-id="Efalizumab_Sun2005_reference" status="rejected" stale="false" population="psoriasis subjects" measured-compound="efalizumab" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

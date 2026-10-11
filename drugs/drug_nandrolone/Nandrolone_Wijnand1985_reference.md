@@ -32,8 +32,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Wijnand HP et al., Pharmacokinetic parameters of nandrolon…, Acta endocrinologica. Suppl… (1985)
   ·  DOI: [10.1530/acta.0.109s00019](https://doi.org/10.1530/acta.0.109s00019)
 
-## Model component
-<dbs-pgx drug="nandrolone" model-id="Nandrolone_Wijnand1985_reference" status="rejected" stale="true" population="healthy volunteers" measured-compound="nandrolone" parameterization="apparent" topology="general_linear"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="nandrolone" model-id="Nandrolone_Wijnand1985_reference" status="rejected" stale="true" population="healthy volunteers" measured-compound="nandrolone" parameterization="apparent" topology="general_linear"></div>
 
 **Model structure:** general linear; no model was built for this record.  
 **Parameters:** 1 extracted.

@@ -23,8 +23,7 @@
 Minamijima Y et al., Plasma and Urine Pharmacokinetics of In…, Journal of veterinary pharm… (2026)
   ·  DOI: [10.1111/jvp.70029](https://doi.org/10.1111/jvp.70029)
 
-## Model component
-<dbs-pgx drug="pridinol" model-id="Pridinol_Minamijima2026_reference" status="extracted" stale="false" population="Thoroughbred horses" measured-compound="pridinol" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="pridinol" model-id="Pridinol_Minamijima2026_reference" status="extracted" stale="false" population="Thoroughbred horses" measured-compound="pridinol" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameters:** 2 extracted.

@@ -29,8 +29,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Green MH et al., A Compartmental Model Describing the Ki…, The Journal of nutrition (2021)
   ·  DOI: [10.1093/jn/nxaa306](https://doi.org/10.1093/jn/nxaa306)
 
-## Model component
-<dbs-pgx drug="betacarotene" model-id="Betacarotene_Green2021_reference" status="rejected" stale="false" population="healthy older adults" measured-compound="betacarotene" parameterization="mechanistic" topology="general_linear"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="betacarotene" model-id="Betacarotene_Green2021_reference" status="rejected" stale="false" population="healthy older adults" measured-compound="betacarotene" parameterization="mechanistic" topology="general_linear"></div>
 
 **Model structure:** general linear; no model was built for this record.  
 **Parameters:** 5 extracted.

@@ -21,8 +21,7 @@
 Fimbo AM et al., Population pharmacokinetics of ivermect…, CPT: pharmacometrics & syst… (2023)
   ·  DOI: [10.1002/psp4.13038](https://doi.org/10.1002/psp4.13038)
 
-## Model component
-<dbs-pgx drug="albendazole" model-id="Albendazole_Fimbo2023_reference" status="extracted" stale="false" population="" measured-compound="albendazole" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="albendazole" model-id="Albendazole_Fimbo2023_reference" status="extracted" stale="false" population="" measured-compound="albendazole" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment, oral mammillary model — template `PK_2C_enteral`.  
 **Parameters:** 5 extracted.

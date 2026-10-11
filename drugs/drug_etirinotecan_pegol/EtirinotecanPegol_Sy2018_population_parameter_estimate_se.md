@@ -24,8 +24,7 @@
 Sy SKB et al., Integrated population pharmacokinetics…, Cancer chemotherapy and pha… (2018)
   ·  DOI: [10.1007/s00280-018-3562-3](https://doi.org/10.1007/s00280-018-3562-3)
 
-## Model component
-<dbs-pgx drug="etirinotecan pegol" model-id="EtirinotecanPegol_Sy2018_population_parameter_estimate_se" status="not_simulated" stale="false" population="cancer patients with solid tumors" measured-compound="etirinotecan pegol" parameterization="mechanistic" topology="general_linear"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="etirinotecan pegol" model-id="EtirinotecanPegol_Sy2018_population_parameter_estimate_se" status="not_simulated" stale="false" population="cancer patients with solid tumors" measured-compound="etirinotecan pegol" parameterization="mechanistic" topology="general_linear"></div>
 
 **Model structure:** 2-compartment general linear model (non-mammillary edges) — template `PK_General_Linear`.  
 **Parameters:** 3 extracted.

@@ -24,8 +24,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Takesh M, Kinetic Modeling Application to (18)F-f…, World journal of nuclear me… (2013)
   ·  DOI: [10.4103/1450-1147.136734](https://doi.org/10.4103/1450-1147.136734)
 
-## Model component
-<dbs-pgx drug="fluoroethylcholine (18F)" model-id="Fluoroethylcholine18f_Takesh2013_reference" status="rejected" stale="false" population="patients with primary and recurrent prostate cancer" measured-compound="fluoroethylcholine_18f" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="fluoroethylcholine (18F)" model-id="Fluoroethylcholine18f_Takesh2013_reference" status="rejected" stale="false" population="patients with primary and recurrent prostate cancer" measured-compound="fluoroethylcholine_18f" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

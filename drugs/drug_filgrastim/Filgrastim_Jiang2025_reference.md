@@ -21,8 +21,7 @@
 Jiang X et al., Population Pharmacokinetic-Pharmacodyna…, Clinical and translational… (2025)
   ·  DOI: [10.1111/cts.70121](https://doi.org/10.1111/cts.70121)
 
-## Model component
-<dbs-pgx drug="filgrastim" model-id="Filgrastim_Jiang2025_reference" status="rejected" stale="false" population="healthy adults" measured-compound="filgrastim" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="filgrastim" model-id="Filgrastim_Jiang2025_reference" status="rejected" stale="false" population="healthy adults" measured-compound="filgrastim" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment; no model was built for this record.  
 **Parameters:** 5 extracted.

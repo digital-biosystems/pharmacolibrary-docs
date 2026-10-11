@@ -31,8 +31,7 @@ No clearance, volume or rate constant of the model is reported in it. Only the a
 Chinnadurai SK et al., Meloxicam pharmacokinetics using nonlin…, Journal of veterinary pharm… (2014)
   ·  DOI: [10.1111/jvp.12099](https://doi.org/10.1111/jvp.12099)
 
-## Model component
-<dbs-pgx drug="meloxicam" model-id="Meloxicam_Chinnadurai2014_reference" status="rejected" stale="true" population="male and female ferrets" measured-compound="meloxicam" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="meloxicam" model-id="Meloxicam_Chinnadurai2014_reference" status="rejected" stale="true" population="male and female ferrets" measured-compound="meloxicam" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 4 extracted.

@@ -30,8 +30,7 @@ The model defines tenofovir diphosphate as forming from the parent drug but assi
 Burns RN et al., Population pharmacokinetics of tenofovi…, Journal of clinical pharmac… (2015)
   ·  DOI: [10.1002/jcph.461](https://doi.org/10.1002/jcph.461)
 
-## Model component
-<dbs-pgx drug="tenofovir disoproxil" model-id="TenofovirDisoproxil_Burns2015_final" status="rejected" stale="true" population="healthy women" measured-compound="tenofovir" parameterization="apparent" topology="parent_metabolite"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="tenofovir disoproxil" model-id="TenofovirDisoproxil_Burns2015_final" status="rejected" stale="true" population="healthy women" measured-compound="tenofovir" parameterization="apparent" topology="parent_metabolite"></div>
 
 **Model structure:** parent + metabolite; no model was built for this record.  
 **Parameters:** 7 extracted, plus 1 covariate effect.

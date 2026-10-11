@@ -20,8 +20,7 @@
 Tuo Y et al., Population Pharmacokinetics and Model-I…, Pharmaceutics (2025)
   ·  DOI: [10.3390/pharmaceutics17070813](https://doi.org/10.3390/pharmaceutics17070813)
 
-## Model component
-<dbs-pgx drug="clobazam" model-id="Clobazam_Tuo2025_reference" status="rejected" stale="false" population="Chinese children with refractory epilepsy" measured-compound="clobazam" parameterization="apparent" topology="parent_metabolite"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="clobazam" model-id="Clobazam_Tuo2025_reference" status="rejected" stale="false" population="Chinese children with refractory epilepsy" measured-compound="clobazam" parameterization="apparent" topology="parent_metabolite"></div>
 
 **Model structure:** parent + metabolite; no model was built for this record.  
 **Parameters:** 5 extracted.

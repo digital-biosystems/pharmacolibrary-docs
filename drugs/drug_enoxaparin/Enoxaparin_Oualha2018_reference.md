@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the val
 Oualha M et al., Population pharmacokinetics of enoxapar…, British journal of clinical… (2018)
   ·  DOI: [10.1111/bcp.13543](https://doi.org/10.1111/bcp.13543)
 
-## Model component
-<dbs-pgx drug="enoxaparin" model-id="Enoxaparin_Oualha2018_reference" status="curated_candidate" stale="false" population="paediatric liver transplantation" measured-compound="anti-Xa activity" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="enoxaparin" model-id="Enoxaparin_Oualha2018_reference" status="curated_candidate" stale="false" population="paediatric liver transplantation" measured-compound="anti-Xa activity" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameters:** 2 extracted.

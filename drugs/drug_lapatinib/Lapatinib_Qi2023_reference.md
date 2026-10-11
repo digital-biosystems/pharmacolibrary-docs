@@ -20,8 +20,7 @@
 Qi T et al., Dissecting sources of variability in pa…, European journal of pharmac… (2023)
   ·  DOI: [10.1016/j.ejps.2023.106467](https://doi.org/10.1016/j.ejps.2023.106467)
 
-## Model component
-<dbs-pgx drug="lapatinib" model-id="Lapatinib_Qi2023_reference" status="needs_review" stale="false" population="virtual patients with HER2-positive breast cancer" measured-compound="lapatinib" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="lapatinib" model-id="Lapatinib_Qi2023_reference" status="needs_review" stale="false" population="virtual patients with HER2-positive breast cancer" measured-compound="lapatinib" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 1 extracted.

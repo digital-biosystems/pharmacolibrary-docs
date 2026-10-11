@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Momčilović S et al., Population pharmacokinetic analysis of…, European journal of clinica… (2020)
   ·  DOI: [10.1007/s00228-020-02937-6](https://doi.org/10.1007/s00228-020-02937-6)
 
-## Model component
-<dbs-pgx drug="bisoprolol" model-id="Bisoprolol_Momilovi2020_reference" status="needs_review" stale="true" population="adults with hypertension and type 2 diabetes mellitus" measured-compound="bisoprolol" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="bisoprolol" model-id="Bisoprolol_Momilovi2020_reference" status="needs_review" stale="true" population="adults with hypertension and type 2 diabetes mellitus" measured-compound="bisoprolol" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 2 extracted.

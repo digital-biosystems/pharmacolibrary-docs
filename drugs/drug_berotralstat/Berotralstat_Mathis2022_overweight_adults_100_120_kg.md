@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the val
 Mathis A et al., Population pharmacokinetic modeling and…, Clinical and translational… (2022)
   ·  DOI: [10.1111/cts.13233](https://doi.org/10.1111/cts.13233)
 
-## Model component
-<dbs-pgx drug="berotralstat" model-id="Berotralstat_Mathis2022_overweight_adults_100_120_kg" status="rejected" stale="true" population="healthy subjects and patients with hereditary angioedema" measured-compound="berotralstat" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="berotralstat" model-id="Berotralstat_Mathis2022_overweight_adults_100_120_kg" status="rejected" stale="true" population="healthy subjects and patients with hereditary angioedema" measured-compound="berotralstat" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 3 extracted.

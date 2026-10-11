@@ -22,8 +22,7 @@
 Pastuszak AW et al., Population Pharmacokinetic Modeling and…, Journal of clinical pharmac… (2021)
   ·  DOI: [10.1002/jcph.1939](https://doi.org/10.1002/jcph.1939)
 
-## Model component
-<dbs-pgx drug="testosterone" model-id="Testosterone_Pastuszak2021_reference" status="rejected" stale="false" population="adult males with hypogonadism" measured-compound="testosterone" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="testosterone" model-id="Testosterone_Pastuszak2021_reference" status="rejected" stale="false" population="adult males with hypogonadism" measured-compound="testosterone" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 4 extracted, plus 3 covariate effects.

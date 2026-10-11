@@ -20,8 +20,7 @@
 Nauta EH et al., Dicloxacillin and cloxacillin: pharmaco…, Clinical pharmacology and t… (1976)
   ·  DOI: [10.1002/cpt197620198](https://doi.org/10.1002/cpt197620198)
 
-## Model component
-<dbs-pgx drug="cloxacillin" model-id="Cloxacillin_Nauta1976_reference" status="needs_review" stale="false" population="healthy adults and hemodialysis patients" measured-compound="dicloxacillin and cloxacillin" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="cloxacillin" model-id="Cloxacillin_Nauta1976_reference" status="needs_review" stale="false" population="healthy adults and hemodialysis patients" measured-compound="dicloxacillin and cloxacillin" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 4 extracted.

@@ -21,8 +21,7 @@
 Pea F et al., Multidrug resistance modulation in vivo…, European journal of clinica… (1999)
   ·  DOI: [10.1007/s002280050641](https://doi.org/10.1007/s002280050641)
 
-## Model component
-<dbs-pgx drug="idarubicin" model-id="Idarubicin_Pea1999_reference" status="needs_review" stale="false" population="patients with acute myelogenous leukemia" measured-compound="idarubicin" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="idarubicin" model-id="Idarubicin_Pea1999_reference" status="needs_review" stale="false" population="patients with acute myelogenous leukemia" measured-compound="idarubicin" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 2 extracted.

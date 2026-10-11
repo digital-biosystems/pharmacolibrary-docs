@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Eriksson UG et al., Pharmacokinetics of melagatran and the…, Clinical pharmacokinetics (2003)
   ·  DOI: [10.2165/00003088-200342070-00006](https://doi.org/10.2165/00003088-200342070-00006)
 
-## Model component
-<dbs-pgx drug="ximelagatran" model-id="Ximelagatran_Eriksson2003_reference" status="rejected" stale="false" population="orthopaedic surgery patients" measured-compound="melagatran" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="ximelagatran" model-id="Ximelagatran_Eriksson2003_reference" status="rejected" stale="false" population="orthopaedic surgery patients" measured-compound="melagatran" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 5 extracted.

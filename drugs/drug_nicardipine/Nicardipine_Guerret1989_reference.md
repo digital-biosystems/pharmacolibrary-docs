@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Guerret M et al., Simultaneous study of the pharmacokinet…, European journal of clinica… (1989)
   ·  DOI: [10.1007/BF00558504](https://doi.org/10.1007/BF00558504)
 
-## Model component
-<dbs-pgx drug="nicardipine" model-id="Nicardipine_Guerret1989_reference" status="needs_review" stale="true" population="healthy male volunteers" measured-compound="nicardipine" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="nicardipine" model-id="Nicardipine_Guerret1989_reference" status="needs_review" stale="true" population="healthy male volunteers" measured-compound="nicardipine" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 2 extracted.

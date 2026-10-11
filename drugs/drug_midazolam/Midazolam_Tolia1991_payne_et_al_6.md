@@ -29,8 +29,7 @@ Independently confirmed by `gpt-oss:120b`.
 Tolia V et al., Pharmacokinetic and pharmacodynamic stu…, The Journal of pediatrics (1991)
   ·  DOI: [10.1016/s0022-3476(05)82066-9](https://doi.org/10.1016/s0022-3476(05)82066-9)
 
-## Model component
-<dbs-pgx drug="midazolam" model-id="Midazolam_Tolia1991_payne_et_al_6" status="needs_review" stale="false" population="children undergoing esophagogastroduodenoscopy" measured-compound="midazolam" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="midazolam" model-id="Midazolam_Tolia1991_payne_et_al_6" status="needs_review" stale="false" population="children undergoing esophagogastroduodenoscopy" measured-compound="midazolam" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 5 extracted.

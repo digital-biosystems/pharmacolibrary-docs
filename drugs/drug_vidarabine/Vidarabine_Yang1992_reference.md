@@ -23,8 +23,7 @@
 ## Citation
 Yang TY et al., [Studies on pharmacokinetics of 9-beta-…, Yao xue xue bao = Acta phar… (1992)
 
-## Model component
-<dbs-pgx drug="vidarabine" model-id="Vidarabine_Yang1992_reference" status="rejected" stale="false" population="rabbits and mice" measured-compound="vidarabine (Ara-A)" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="vidarabine" model-id="Vidarabine_Yang1992_reference" status="rejected" stale="false" population="rabbits and mice" measured-compound="vidarabine (Ara-A)" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 3 extracted.

@@ -20,8 +20,7 @@
 Beck D et al., Population Pharmacokinetics of Elagolix…, Clinical pharmacokinetics (2022)
   ·  DOI: [10.1007/s40262-021-01096-w](https://doi.org/10.1007/s40262-021-01096-w)
 
-## Model component
-<dbs-pgx drug="elagolix" model-id="Elagolix_Beck2022_reference" status="rejected" stale="false" population="healthy premenopausal women and premenopausal women with uterine fibroids or endometriosis" measured-compound="elagolix" parameterization="apparent" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="elagolix" model-id="Elagolix_Beck2022_reference" status="rejected" stale="false" population="healthy premenopausal women and premenopausal women with uterine fibroids or endometriosis" measured-compound="elagolix" parameterization="apparent" topology="2C"></div>
 
 **Model structure:** 2-compartment; no model was built for this record.  
 **Parameters:** 6 extracted, plus 1 covariate effect.

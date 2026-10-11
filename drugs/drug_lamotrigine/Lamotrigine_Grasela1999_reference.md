@@ -21,8 +21,7 @@
 Grasela TH et al., Population pharmacokinetics of lamotrig…, Journal of clinical pharmac… (1999)
   ·  DOI: [10.1177/00912709922007949](https://doi.org/10.1177/00912709922007949)
 
-## Model component
-<dbs-pgx drug="lamotrigine" model-id="Lamotrigine_Grasela1999_reference" status="rejected" stale="false" population="adults with epilepsy" measured-compound="lamotrigine" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="lamotrigine" model-id="Lamotrigine_Grasela1999_reference" status="rejected" stale="false" population="adults with epilepsy" measured-compound="lamotrigine" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

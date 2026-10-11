@@ -33,8 +33,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Liu F et al., A novel method to estimate the absorpti…, Frontiers in pharmacology (2023)
   ·  DOI: [10.3389/fphar.2023.1087913](https://doi.org/10.3389/fphar.2023.1087913)
 
-## Model component
-<dbs-pgx drug="telmisartan" model-id="Telmisartan_Liu2023_reference" status="rejected" stale="true" population="healthy volunteers" measured-compound="telmisartan" parameterization="mechanistic" topology="general_linear"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="telmisartan" model-id="Telmisartan_Liu2023_reference" status="rejected" stale="true" population="healthy volunteers" measured-compound="telmisartan" parameterization="mechanistic" topology="general_linear"></div>
 
 **Model structure:** general linear; no model was built for this record.  
 **Parameters:** 4 extracted.

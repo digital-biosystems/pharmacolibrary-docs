@@ -22,8 +22,7 @@
 Lin KJ et al., Population Pharmacokinetics of Casirivi…, Pharmaceutical research (2024)
   ·  DOI: [10.1007/s11095-024-03764-5](https://doi.org/10.1007/s11095-024-03764-5)
 
-## Model component
-<dbs-pgx drug="Casirivimab" model-id="Casirivimab_Lin2024_reference" status="rejected" stale="false" population="pediatric and adult non-infected individuals and SARS-CoV-2 infected patients or household contacts" measured-compound="casirivimab" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="Casirivimab" model-id="Casirivimab_Lin2024_reference" status="rejected" stale="false" population="pediatric and adult non-infected individuals and SARS-CoV-2 infected patients or household contacts" measured-compound="casirivimab" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment; no model was built for this record.  
 **Parameters:** 6 extracted, plus 5 covariate effects.

@@ -21,8 +21,7 @@
 Sonderegger T et al., Pharmacokinetics of 2-chloro-2'-deoxyad…, Cancer chemotherapy and pha… (2000)
   ·  DOI: [10.1007/s002800000129](https://doi.org/10.1007/s002800000129)
 
-## Model component
-<dbs-pgx drug="cladribine" model-id="Cladribine_Sonderegger2000_reference" status="needs_review" stale="false" population="patients with lymphoproliferative disorders" measured-compound="cladribine" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="cladribine" model-id="Cladribine_Sonderegger2000_reference" status="needs_review" stale="false" population="patients with lymphoproliferative disorders" measured-compound="cladribine" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 4 extracted.

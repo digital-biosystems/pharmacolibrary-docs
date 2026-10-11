@@ -23,8 +23,7 @@
 Baek IH, Pharmacokinetic modeling and simulation…, Xenobiotica; the fate of fo… (2019)
   ·  DOI: [10.1080/00498254.2018.1524185](https://doi.org/10.1080/00498254.2018.1524185)
 
-## Model component
-<dbs-pgx drug="etodolac" model-id="Etodolac_Baek2019_reference" status="rejected" stale="false" population="healthy beagle dogs" measured-compound="etodolac" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="etodolac" model-id="Etodolac_Baek2019_reference" status="rejected" stale="false" population="healthy beagle dogs" measured-compound="etodolac" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 5 extracted.

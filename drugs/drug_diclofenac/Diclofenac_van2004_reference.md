@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 van der Marel CD et al., Diclofenac and metabolite pharmacokinet…, Paediatric anaesthesia (2004)
   ·  DOI: [10.1111/j.1460-9592.2004.01232.x](https://doi.org/10.1111/j.1460-9592.2004.01232.x)
 
-## Model component
-<dbs-pgx drug="diclofenac" model-id="Diclofenac_van2004_reference" status="rejected" stale="true" population="children" measured-compound="diclofenac" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="diclofenac" model-id="Diclofenac_van2004_reference" status="rejected" stale="true" population="children" measured-compound="diclofenac" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 6 extracted.

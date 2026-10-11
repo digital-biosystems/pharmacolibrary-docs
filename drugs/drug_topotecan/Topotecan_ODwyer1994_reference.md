@@ -29,8 +29,7 @@ The paper reports no distribution volume and no clearance or elimination rate; i
 O'Dwyer PJ et al., Clinical, pharmacokinetic and biologica…, Cancer chemotherapy and pha… (1994)
   ·  DOI: [10.1007/BF00684863](https://doi.org/10.1007/BF00684863)
 
-## Model component
-<dbs-pgx drug="topotecan" model-id="Topotecan_ODwyer1994_reference" status="rejected" stale="true" population="patients in a phase I trial with cancer" measured-compound="topotecan" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="topotecan" model-id="Topotecan_ODwyer1994_reference" status="rejected" stale="true" population="patients in a phase I trial with cancer" measured-compound="topotecan" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 1 extracted.

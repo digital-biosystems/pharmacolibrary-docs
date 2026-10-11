@@ -21,8 +21,7 @@
 Appeldoorn TYJ et al., Pharmacokinetics and Pharmacodynamics o…, Clinical pharmacokinetics (2023)
   ·  DOI: [10.1007/s40262-023-01225-7](https://doi.org/10.1007/s40262-023-01225-7)
 
-## Model component
-<dbs-pgx drug="ruxolitinib" model-id="Ruxolitinib_Appeldoorn2023_reference" status="rejected" stale="false" population="" measured-compound="ruxolitinib" parameterization="apparent" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="ruxolitinib" model-id="Ruxolitinib_Appeldoorn2023_reference" status="rejected" stale="false" population="" measured-compound="ruxolitinib" parameterization="apparent" topology="2C"></div>
 
 **Model structure:** 2-compartment; no model was built for this record.  
 **Parameters:** 4 extracted.

@@ -29,8 +29,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the val
 Krieger K et al., Kinetics of the amino acid uptake trace…, EJNMMI research (2025)
   ·  DOI: [10.1186/s13550-025-01279-7](https://doi.org/10.1186/s13550-025-01279-7)
 
-## Model component
-<dbs-pgx drug="amino acids" model-id="AminoAcids_Krieger2025_reference" status="extracted" stale="true" population="" measured-compound="amino_acids" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="amino acids" model-id="AminoAcids_Krieger2025_reference" status="extracted" stale="true" population="" measured-compound="amino_acids" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameters:** 2 extracted.

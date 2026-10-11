@@ -21,8 +21,7 @@
 Dorlo TP et al., Optimal dosing of miltefosine in childr…, Antimicrobial agents and ch… (2012)
   ·  DOI: [10.1128/AAC.00292-12](https://doi.org/10.1128/AAC.00292-12)
 
-## Model component
-<dbs-pgx drug="miltefosine" model-id="Miltefosine_Dorlo2012_reference" status="rejected" stale="false" population="children and adults with visceral leishmaniasis (Indian children, Indian adults, European adults)" measured-compound="miltefosine" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="miltefosine" model-id="Miltefosine_Dorlo2012_reference" status="rejected" stale="false" population="children and adults with visceral leishmaniasis (Indian children, Indian adults, European adults)" measured-compound="miltefosine" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

@@ -33,8 +33,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Papich MG, Ciprofloxacin Pharmacokinetics in Clini…, Journal of veterinary inter… (2017)
   ·  DOI: [10.1111/jvim.14788](https://doi.org/10.1111/jvim.14788)
 
-## Model component
-<dbs-pgx drug="ciprofloxacin" model-id="Ciprofloxacin_Papich2017_reference" status="extracted" stale="true" population="clinical canine patients" measured-compound="ciprofloxacin" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="ciprofloxacin" model-id="Ciprofloxacin_Papich2017_reference" status="extracted" stale="true" population="clinical canine patients" measured-compound="ciprofloxacin" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 10 extracted.

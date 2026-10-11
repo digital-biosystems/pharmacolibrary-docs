@@ -21,8 +21,7 @@
 Ling J et al., Comparison of the pharmacokinetic varia…, Frontiers in pharmacology (2025)
   ·  DOI: [10.3389/fphar.2025.1540606](https://doi.org/10.3389/fphar.2025.1540606)
 
-## Model component
-<dbs-pgx drug="ropivacaine" model-id="Ropivacaine_Ling2025_reference" status="rejected" stale="false" population="patients undergoing thoracoscopic lobectomy" measured-compound="ropivacaine" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="ropivacaine" model-id="Ropivacaine_Ling2025_reference" status="rejected" stale="false" population="patients undergoing thoracoscopic lobectomy" measured-compound="ropivacaine" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

@@ -20,8 +20,7 @@
 Veal GJ et al., Pharmacokinetics and metabolism of 13-c…, British journal of cancer (2007)
   ·  DOI: [10.1038/sj.bjc.6603554](https://doi.org/10.1038/sj.bjc.6603554)
 
-## Model component
-<dbs-pgx drug="isotretinoin" model-id="Isotretinoin_Veal2007_reference" status="needs_review" stale="false" population="children with high-risk neuroblastoma" measured-compound="isotretinoin" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="isotretinoin" model-id="Isotretinoin_Veal2007_reference" status="needs_review" stale="false" population="children with high-risk neuroblastoma" measured-compound="isotretinoin" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 4 extracted.

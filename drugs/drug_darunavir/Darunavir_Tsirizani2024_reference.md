@@ -21,8 +21,7 @@
 Tsirizani L et al., Pharmacokinetics of once-daily darunavi…, The Journal of antimicrobia… (2024)
   ·  DOI: [10.1093/jac/dkae319](https://doi.org/10.1093/jac/dkae319)
 
-## Model component
-<dbs-pgx drug="darunavir" model-id="Darunavir_Tsirizani2024_reference" status="rejected" stale="false" population="African children with HIV, second-line treatment" measured-compound="darunavir" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="darunavir" model-id="Darunavir_Tsirizani2024_reference" status="rejected" stale="false" population="African children with HIV, second-line treatment" measured-compound="darunavir" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

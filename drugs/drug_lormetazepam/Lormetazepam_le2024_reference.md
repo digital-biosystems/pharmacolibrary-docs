@@ -20,8 +20,7 @@
 le Noble JLML et al., Pharmacokinetics of Enteral Lormetazepa…, Clinical pharmacokinetics (2024)
   ·  DOI: [10.1007/s40262-024-01455-3](https://doi.org/10.1007/s40262-024-01455-3)
 
-## Model component
-<dbs-pgx drug="lormetazepam" model-id="Lormetazepam_le2024_reference" status="needs_review" stale="false" population="mechanically ventilated ICU patients with COVID-19/ARDS" measured-compound="lormetazepam" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="lormetazepam" model-id="Lormetazepam_le2024_reference" status="needs_review" stale="false" population="mechanically ventilated ICU patients with COVID-19/ARDS" measured-compound="lormetazepam" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 3 extracted.

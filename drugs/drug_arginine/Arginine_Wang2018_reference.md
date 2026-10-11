@@ -35,8 +35,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Wang J et al., Population pharmacokinetics of arginine…, Xenobiotica; the fate of fo… (2018)
   ·  DOI: [10.1080/00498254.2017.1370745](https://doi.org/10.1080/00498254.2017.1370745)
 
-## Model component
-<dbs-pgx drug="Arginine" model-id="Arginine_Wang2018_reference" status="rejected" stale="true" population="healthy Chinese volunteers" measured-compound="arginine" parameterization="mechanistic" topology="general_linear"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="Arginine" model-id="Arginine_Wang2018_reference" status="rejected" stale="true" population="healthy Chinese volunteers" measured-compound="arginine" parameterization="mechanistic" topology="general_linear"></div>
 
 **Model structure:** general linear; no model was built for this record.  
 **Parameters:** 3 extracted.

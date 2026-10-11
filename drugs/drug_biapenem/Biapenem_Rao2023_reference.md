@@ -21,8 +21,7 @@
 Rao Q et al., Optimal dosing regimen of biapenem base…, International journal of an… (2023)
   ·  DOI: [10.1016/j.ijantimicag.2023.106841](https://doi.org/10.1016/j.ijantimicag.2023.106841)
 
-## Model component
-<dbs-pgx drug="biapenem" model-id="Biapenem_Rao2023_reference" status="needs_review" stale="false" population="patients with febrile neutropenia and haematological malignancies" measured-compound="biapenem" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="biapenem" model-id="Biapenem_Rao2023_reference" status="needs_review" stale="false" population="patients with febrile neutropenia and haematological malignancies" measured-compound="biapenem" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 2 extracted.

@@ -29,8 +29,7 @@ No clearance, volume or rate constant of the model is reported in it. No paramet
 Sale M et al., Pharmacokinetic modeling and simulation…, Antimicrobial agents and ch… (2002)
   ·  DOI: [10.1128/AAC.46.3.746-754.2002](https://doi.org/10.1128/AAC.46.3.746-754.2002)
 
-## Model component
-<dbs-pgx drug="amprenavir" model-id="Amprenavir_Sale2002_reference" status="rejected" stale="true" population="healthy HIV-seronegative adults" measured-compound="amprenavir" parameterization="mechanistic" topology="parent_metabolite"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="amprenavir" model-id="Amprenavir_Sale2002_reference" status="rejected" stale="true" population="healthy HIV-seronegative adults" measured-compound="amprenavir" parameterization="mechanistic" topology="parent_metabolite"></div>
 
 **Model structure:** parent + metabolite; no model was built for this record.  
 **Parameters:** 0 extracted.

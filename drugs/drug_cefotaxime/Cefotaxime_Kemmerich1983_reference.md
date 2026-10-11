@@ -21,8 +21,7 @@
 Kemmerich B et al., Comparative pharmacokinetics of cefoper…, Antimicrobial agents and ch… (1983)
   ·  DOI: [10.1128/AAC.23.3.429](https://doi.org/10.1128/AAC.23.3.429)
 
-## Model component
-<dbs-pgx drug="cefotaxime" model-id="Cefotaxime_Kemmerich1983_reference" status="rejected" stale="false" population="healthy adults" measured-compound="cefotaxime" parameterization="mechanistic" topology="parent_metabolite"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="cefotaxime" model-id="Cefotaxime_Kemmerich1983_reference" status="rejected" stale="false" population="healthy adults" measured-compound="cefotaxime" parameterization="mechanistic" topology="parent_metabolite"></div>
 
 **Model structure:** parent + metabolite; no model was built for this record.  
 **Parameters:** 1 extracted.

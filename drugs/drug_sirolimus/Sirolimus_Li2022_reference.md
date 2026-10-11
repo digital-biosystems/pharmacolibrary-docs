@@ -21,8 +21,7 @@
 Li S et al., Population Pharmacokinetic Analysis and…, Journal of clinical pharmac… (2022)
   ·  DOI: [10.1002/jcph.2033](https://doi.org/10.1002/jcph.2033)
 
-## Model component
-<dbs-pgx drug="sirolimus" model-id="Sirolimus_Li2022_reference" status="extracted" stale="false" population="children with tuberous sclerosis complex" measured-compound="sirolimus" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="sirolimus" model-id="Sirolimus_Li2022_reference" status="extracted" stale="false" population="children with tuberous sclerosis complex" measured-compound="sirolimus" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 2 extracted.

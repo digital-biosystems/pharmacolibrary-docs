@@ -20,8 +20,7 @@
 Cerretani D et al., Pharmacokinetics of mitomycin C after r…, Journal of chemotherapy (Fl… (2005)
   ·  DOI: [10.1179/joc.2005.17.6.668](https://doi.org/10.1179/joc.2005.17.6.668)
 
-## Model component
-<dbs-pgx drug="mitomycin" model-id="Mitomycin_Cerretani2005_reference" status="needs_review" stale="false" population="patients with peritoneal carcinomatosis" measured-compound="mitomycin C" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="mitomycin" model-id="Mitomycin_Cerretani2005_reference" status="needs_review" stale="false" population="patients with peritoneal carcinomatosis" measured-compound="mitomycin C" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 5 extracted.

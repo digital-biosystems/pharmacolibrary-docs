@@ -20,8 +20,7 @@
 Phelps RT et al., Multiple-dose pharmacokinetics of cefon…, Antimicrobial agents and ch… (1986)
   ·  DOI: [10.1128/AAC.29.5.913](https://doi.org/10.1128/AAC.29.5.913)
 
-## Model component
-<dbs-pgx drug="cefonicid" model-id="Cefonicid_Phelps1986_reference" status="rejected" stale="false" population="patients with impaired renal function" measured-compound="cefonicid" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="cefonicid" model-id="Cefonicid_Phelps1986_reference" status="rejected" stale="false" population="patients with impaired renal function" measured-compound="cefonicid" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

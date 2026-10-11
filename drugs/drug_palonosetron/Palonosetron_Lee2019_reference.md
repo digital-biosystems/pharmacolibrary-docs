@@ -28,8 +28,7 @@ Independently confirmed by `gpt-oss:120b`.
 Lee S et al., Population pharmacokinetics of palonose…, Journal of anesthesia (2019)
   ·  DOI: [10.1007/s00540-019-02641-5](https://doi.org/10.1007/s00540-019-02641-5)
 
-## Model component
-<dbs-pgx drug="palonosetron" model-id="Palonosetron_Lee2019_reference" status="rejected" stale="false" population="adult patients undergoing general anesthesia" measured-compound="palonosetron" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="palonosetron" model-id="Palonosetron_Lee2019_reference" status="rejected" stale="false" population="adult patients undergoing general anesthesia" measured-compound="palonosetron" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

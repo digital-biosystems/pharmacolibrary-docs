@@ -21,8 +21,7 @@
 Gao X et al., Population Pharmacokinetics of Cyclospo…, Frontiers in pharmacology (2022)
   ·  DOI: [10.3389/fphar.2022.933739](https://doi.org/10.3389/fphar.2022.933739)
 
-## Model component
-<dbs-pgx drug="ciclosporin" model-id="Ciclosporin_Gao2022_reference" status="rejected" stale="false" population="Chinese pediatric patients with acquired aplastic anemia" measured-compound="cyclosporine" parameterization="apparent" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="ciclosporin" model-id="Ciclosporin_Gao2022_reference" status="rejected" stale="false" population="Chinese pediatric patients with acquired aplastic anemia" measured-compound="cyclosporine" parameterization="apparent" topology="2C"></div>
 
 **Model structure:** 2-compartment; no model was built for this record.  
 **Parameters:** 6 extracted.

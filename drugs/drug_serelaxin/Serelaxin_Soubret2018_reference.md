@@ -30,8 +30,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Soubret A et al., Population pharmacokinetics of serelaxi…, British journal of clinical… (2018)
   ·  DOI: [10.1111/bcp.13714](https://doi.org/10.1111/bcp.13714)
 
-## Model component
-<dbs-pgx drug="serelaxin" model-id="Serelaxin_Soubret2018_reference" status="rejected" stale="true" population="patients with acute or chronic heart failure, hepatic or renal impairment, or portal hypertension and healthy subjects" measured-compound="serelaxin" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="serelaxin" model-id="Serelaxin_Soubret2018_reference" status="rejected" stale="true" population="patients with acute or chronic heart failure, hepatic or renal impairment, or portal hypertension and healthy subjects" measured-compound="serelaxin" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 2 extracted.

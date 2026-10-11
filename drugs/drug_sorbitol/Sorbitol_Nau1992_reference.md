@@ -30,8 +30,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the val
 Nau R et al., Low blood-to-cerebrospinal fluid passag…, Stroke (1992)
   ·  DOI: [10.1161/01.str.23.9.1276](https://doi.org/10.1161/01.str.23.9.1276)
 
-## Model component
-<dbs-pgx drug="sorbitol" model-id="Sorbitol_Nau1992_reference" status="rejected" stale="true" population="adults with brain edema due to cerebrovascular disease" measured-compound="sorbitol" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="sorbitol" model-id="Sorbitol_Nau1992_reference" status="rejected" stale="true" population="adults with brain edema due to cerebrovascular disease" measured-compound="sorbitol" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 5 extracted.

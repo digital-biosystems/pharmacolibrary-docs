@@ -33,8 +33,7 @@ Independently confirmed by `gpt-oss:120b`.
 Hope WW et al., Derivation of an in vivo drug exposure…, Antimicrobial agents and ch… (2006)
   ·  DOI: [10.1128/AAC.00369-06](https://doi.org/10.1128/AAC.00369-06)
 
-## Model component
-<dbs-pgx drug="flucytosine" model-id="Flucytosine_Hope2006_reference" status="rejected" stale="true" population="immunosuppressed mice" measured-compound="flucytosine" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="flucytosine" model-id="Flucytosine_Hope2006_reference" status="rejected" stale="true" population="immunosuppressed mice" measured-compound="flucytosine" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 3 extracted.

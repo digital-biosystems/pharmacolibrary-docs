@@ -21,8 +21,7 @@
 Tsuda Y et al., Population pharmacokinetics of tamsulos…, British journal of clinical… (2010)
   ·  DOI: [10.1111/j.1365-2125.2010.03662.x](https://doi.org/10.1111/j.1365-2125.2010.03662.x)
 
-## Model component
-<dbs-pgx drug="tamsulosin" model-id="Tamsulosin_Tsuda2010_reference" status="extracted" stale="false" population="paediatric patients with neuropathic and non-neuropathic bladder" measured-compound="tamsulosin" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="tamsulosin" model-id="Tamsulosin_Tsuda2010_reference" status="extracted" stale="false" population="paediatric patients with neuropathic and non-neuropathic bladder" measured-compound="tamsulosin" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 3 extracted.

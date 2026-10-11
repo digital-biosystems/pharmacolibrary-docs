@@ -21,8 +21,7 @@
 Zhao Y et al., Population Pharmacokinetic Models of Ve…, Drug design, development an… (2024)
   ·  DOI: [10.2147/DDDT.S458927](https://doi.org/10.2147/DDDT.S458927)
 
-## Model component
-<dbs-pgx drug="venetoclax" model-id="Venetoclax_Zhao2024_samineni_2022b19" status="extracted" stale="false" population="adults with hematologic malignancies" measured-compound="venetoclax" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="venetoclax" model-id="Venetoclax_Zhao2024_samineni_2022b19" status="extracted" stale="false" population="adults with hematologic malignancies" measured-compound="venetoclax" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 6 extracted.

@@ -21,8 +21,7 @@
 Helfer VE et al., Population Pharmacokinetics and Dosing…, Journal of clinical pharmac… (2026)
   ·  DOI: [10.1002/jcph.70204](https://doi.org/10.1002/jcph.70204)
 
-## Model component
-<dbs-pgx drug="pentobarbital" model-id="Pentobarbital_Helfer2026_reference" status="extracted" stale="false" population="pediatric patients (birth to 21 years)" measured-compound="pentobarbital" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="pentobarbital" model-id="Pentobarbital_Helfer2026_reference" status="extracted" stale="false" population="pediatric patients (birth to 21 years)" measured-compound="pentobarbital" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment, IV mammillary model — template `PK_2C`.  
 **Parameters:** 4 extracted.

@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the val
 Feillet F et al., Pharmacokinetics of sapropterin in pati…, Clinical pharmacokinetics (2008)
   ·  DOI: [10.2165/0003088-200847120-00006](https://doi.org/10.2165/0003088-200847120-00006)
 
-## Model component
-<dbs-pgx drug="sapropterin" model-id="Sapropterin_Feillet2008_reference" status="extracted" stale="true" population="patients with phenylketonuria" measured-compound="sapropterin" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="sapropterin" model-id="Sapropterin_Feillet2008_reference" status="extracted" stale="true" population="patients with phenylketonuria" measured-compound="sapropterin" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 3 extracted.

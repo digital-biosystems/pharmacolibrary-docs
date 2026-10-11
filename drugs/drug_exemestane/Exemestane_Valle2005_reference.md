@@ -20,8 +20,7 @@
 Valle M et al., A predictive model for exemestane pharm…, British journal of clinical… (2005)
   ·  DOI: [10.1111/j.1365-2125.2005.02335.x](https://doi.org/10.1111/j.1365-2125.2005.02335.x)
 
-## Model component
-<dbs-pgx drug="exemestane" model-id="Exemestane_Valle2005_reference" status="rejected" stale="false" population="healthy postmenopausal women" measured-compound="exemestane" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="exemestane" model-id="Exemestane_Valle2005_reference" status="rejected" stale="false" population="healthy postmenopausal women" measured-compound="exemestane" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 2 extracted.

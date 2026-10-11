@@ -29,8 +29,7 @@ No clearance, volume or rate constant of the model is reported in it. No paramet
 Stage C et al., The Pharmacokinetics of Enalapril in Re…, Basic & clinical pharmacolo… (2017)
   ·  DOI: [10.1111/bcpt.12835](https://doi.org/10.1111/bcpt.12835)
 
-## Model component
-<dbs-pgx drug="enalapril" model-id="Enalapril_Stage2017_reference" status="rejected" stale="false" population="healthy Danish volunteers" measured-compound="enalaprilat" parameterization="mechanistic" topology="general_linear"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="enalapril" model-id="Enalapril_Stage2017_reference" status="rejected" stale="false" population="healthy Danish volunteers" measured-compound="enalaprilat" parameterization="mechanistic" topology="general_linear"></div>
 
 **Model structure:** general linear; no model was built for this record.  
 **Parameters:** 0 extracted.

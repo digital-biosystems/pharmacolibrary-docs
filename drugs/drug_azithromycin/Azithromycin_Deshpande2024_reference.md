@@ -23,8 +23,7 @@
 Deshpande D et al., Antibacterial action of penicillin agai…, IJTLD open (2024)
   ·  DOI: [10.5588/ijtldopen.24.0238](https://doi.org/10.5588/ijtldopen.24.0238)
 
-## Model component
-<dbs-pgx drug="azithromycin" model-id="Azithromycin_Deshpande2024_reference" status="rejected" stale="false" population="" measured-compound="azithromycin" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="azithromycin" model-id="Azithromycin_Deshpande2024_reference" status="rejected" stale="false" population="" measured-compound="azithromycin" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 2 extracted.

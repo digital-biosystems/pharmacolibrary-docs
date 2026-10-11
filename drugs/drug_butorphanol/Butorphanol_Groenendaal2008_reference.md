@@ -20,8 +20,7 @@
 Groenendaal D et al., Pharmacokinetic/pharmacodynamic modelli…, European journal of pharmac… (2008)
   ·  DOI: [10.1016/j.ejps.2008.03.003](https://doi.org/10.1016/j.ejps.2008.03.003)
 
-## Model component
-<dbs-pgx drug="butorphanol" model-id="Butorphanol_Groenendaal2008_reference" status="rejected" stale="false" population="healthy adults" measured-compound="butorphanol" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="butorphanol" model-id="Butorphanol_Groenendaal2008_reference" status="rejected" stale="false" population="healthy adults" measured-compound="butorphanol" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

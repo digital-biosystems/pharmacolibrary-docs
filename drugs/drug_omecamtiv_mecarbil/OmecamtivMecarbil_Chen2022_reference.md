@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Chen PW et al., Population Pharmacokinetic Properties o…, Journal of cardiovascular p… (2022)
   ·  DOI: [10.1097/FJC.0000000000001207](https://doi.org/10.1097/FJC.0000000000001207)
 
-## Model component
-<dbs-pgx drug="omecamtiv mecarbil" model-id="OmecamtivMecarbil_Chen2022_reference" status="extracted" stale="true" population="healthy subjects and patients with heart failure with reduced ejection fraction" measured-compound="omecamtiv mecarbil" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="omecamtiv mecarbil" model-id="OmecamtivMecarbil_Chen2022_reference" status="extracted" stale="true" population="healthy subjects and patients with heart failure with reduced ejection fraction" measured-compound="omecamtiv mecarbil" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameters:** 3 extracted.

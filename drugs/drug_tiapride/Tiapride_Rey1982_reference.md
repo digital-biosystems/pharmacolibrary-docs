@@ -19,8 +19,7 @@
 ## Citation
 Rey E et al., Pharmacokinetics of tiapride and absolu…, International journal of cl… (1982)
 
-## Model component
-<dbs-pgx drug="tiapride" model-id="Tiapride_Rey1982_reference" status="rejected" stale="false" population="healthy adults" measured-compound="tiapride" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="tiapride" model-id="Tiapride_Rey1982_reference" status="rejected" stale="false" population="healthy adults" measured-compound="tiapride" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 2 extracted.

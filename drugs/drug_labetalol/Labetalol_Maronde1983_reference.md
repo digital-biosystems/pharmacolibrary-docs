@@ -30,8 +30,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Maronde RF et al., Study of single and multiple dose pharm…, The American journal of med… (1983)
   ·  DOI: [10.1016/0002-9343(83)90135-3](https://doi.org/10.1016/0002-9343(83)90135-3)
 
-## Model component
-<dbs-pgx drug="labetalol" model-id="Labetalol_Maronde1983_reference" status="needs_review" stale="true" population="patients with mild to moderate hypertension" measured-compound="labetalol" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="labetalol" model-id="Labetalol_Maronde1983_reference" status="needs_review" stale="true" population="patients with mild to moderate hypertension" measured-compound="labetalol" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 2 extracted.

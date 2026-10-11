@@ -23,8 +23,7 @@
 Hoglund RM et al., Artemether-lumefantrine co-administrati…, British journal of clinical… (2015)
   ·  DOI: [10.1111/bcp.12529](https://doi.org/10.1111/bcp.12529)
 
-## Model component
-<dbs-pgx drug="artemether" model-id="Artemether_Hoglund2015_reference" status="rejected" stale="false" population="HIV-infected patients treated with antiretroviral therapy" measured-compound="artemether" parameterization="mechanistic" topology="general_linear"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="artemether" model-id="Artemether_Hoglund2015_reference" status="rejected" stale="false" population="HIV-infected patients treated with antiretroviral therapy" measured-compound="artemether" parameterization="mechanistic" topology="general_linear"></div>
 
 **Model structure:** general linear; no model was built for this record.  
 **Parameters:** 6 extracted.

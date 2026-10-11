@@ -29,8 +29,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on paramet
 Roberti R et al., Pharmacology of Cenobamate: Mechanism o…, CNS drugs (2021)
   ·  DOI: [10.1007/s40263-021-00819-8](https://doi.org/10.1007/s40263-021-00819-8)
 
-## Model component
-<dbs-pgx drug="carbamazepine" model-id="Carbamazepine_Roberti2021_reference" status="needs_review" stale="false" population="adults with focal onset seizures" measured-compound="" parameterization="" topology=""></dbs-pgx>
+<div class="pk-model-meta" hidden drug="carbamazepine" model-id="Carbamazepine_Roberti2021_reference" status="needs_review" stale="false" population="adults with focal onset seizures" measured-compound="" parameterization="" topology=""></div>
 
 **Model structure:** —; no model was built for this record.  
 **Parameters:** 0 extracted.

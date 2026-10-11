@@ -30,8 +30,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Trobec KČ et al., Population pharmacokinetics of ramipril…, Acta pharmaceutica (Zagreb,… (2024)
   ·  DOI: [10.2478/acph-2024-0018](https://doi.org/10.2478/acph-2024-0018)
 
-## Model component
-<dbs-pgx drug="ramipril" model-id="Ramipril_Trobec2024_reference" status="rejected" stale="true" population="patients with chronic heart failure" measured-compound="ramipril" parameterization="apparent" topology="parent_metabolite"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="ramipril" model-id="Ramipril_Trobec2024_reference" status="rejected" stale="true" population="patients with chronic heart failure" measured-compound="ramipril" parameterization="apparent" topology="parent_metabolite"></div>
 
 **Model structure:** parent + metabolite; no model was built for this record.  
 **Parameters:** 8 extracted, plus 1 covariate effect.

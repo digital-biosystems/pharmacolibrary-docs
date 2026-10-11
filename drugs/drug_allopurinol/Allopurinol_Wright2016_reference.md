@@ -33,8 +33,7 @@ Independently confirmed by `gpt-oss:120b`.
 Wright DF et al., Predicting allopurinol response in pati…, British journal of clinical… (2016)
   ·  DOI: [10.1111/bcp.12799](https://doi.org/10.1111/bcp.12799)
 
-## Model component
-<dbs-pgx drug="allopurinol" model-id="Allopurinol_Wright2016_reference" status="rejected" stale="true" population="adults with gout" measured-compound="oxypurinol" parameterization="apparent" topology="parent_metabolite"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="allopurinol" model-id="Allopurinol_Wright2016_reference" status="rejected" stale="true" population="adults with gout" measured-compound="oxypurinol" parameterization="apparent" topology="parent_metabolite"></div>
 
 **Model structure:** parent + metabolite; no model was built for this record.  
 **Parameters:** 4 extracted.

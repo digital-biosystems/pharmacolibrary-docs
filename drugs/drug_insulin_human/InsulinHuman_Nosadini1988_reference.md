@@ -29,8 +29,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Nosadini R et al., Porcine and human insulin absorption fr…, The Journal of clinical end… (1988)
   ·  DOI: [10.1210/jcem-67-3-551](https://doi.org/10.1210/jcem-67-3-551)
 
-## Model component
-<dbs-pgx drug="insulin (human)" model-id="InsulinHuman_Nosadini1988_reference" status="rejected" stale="false" population="normal and insulin-dependent diabetic subjects" measured-compound="insulin_human" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="insulin (human)" model-id="InsulinHuman_Nosadini1988_reference" status="rejected" stale="false" population="normal and insulin-dependent diabetic subjects" measured-compound="insulin_human" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 2 extracted.

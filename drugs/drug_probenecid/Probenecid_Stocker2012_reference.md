@@ -21,8 +21,7 @@
 Stocker SL et al., The pharmacokinetics of oxypurinol in p…, British journal of clinical… (2012)
   ·  DOI: [10.1111/j.1365-2125.2012.04207.x](https://doi.org/10.1111/j.1365-2125.2012.04207.x)
 
-## Model component
-<dbs-pgx drug="probenecid" model-id="Probenecid_Stocker2012_reference" status="extracted" stale="false" population="" measured-compound="probenecid" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="probenecid" model-id="Probenecid_Stocker2012_reference" status="extracted" stale="false" population="" measured-compound="probenecid" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 2 extracted.

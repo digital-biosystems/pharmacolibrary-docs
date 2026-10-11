@@ -20,8 +20,7 @@
 Yang YO et al., Semimechanistic Population PK/PD Modeli…, Clinical pharmacology and t… (2025)
   ·  DOI: [10.1002/cpt.3503](https://doi.org/10.1002/cpt.3503)
 
-## Model component
-<dbs-pgx drug="axatilimab" model-id="Axatilimab_Yang2025_reference" status="rejected" stale="false" population="healthy participants and patients with solid tumors or chronic graft-versus-host disease" measured-compound="axatilimab" parameterization="mechanistic" topology="general_linear"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="axatilimab" model-id="Axatilimab_Yang2025_reference" status="rejected" stale="false" population="healthy participants and patients with solid tumors or chronic graft-versus-host disease" measured-compound="axatilimab" parameterization="mechanistic" topology="general_linear"></div>
 
 **Model structure:** general linear; no model was built for this record.  
 **Parameters:** 8 extracted, plus 2 covariate effects.

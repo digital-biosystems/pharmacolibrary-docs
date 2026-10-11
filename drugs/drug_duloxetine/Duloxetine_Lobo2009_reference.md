@@ -29,8 +29,7 @@ No clearance, volume or rate constant of the model is reported in it. Only the a
 Lobo ED et al., Population pharmacokinetics of orally a…, Clinical pharmacokinetics (2009)
   ·  DOI: [10.2165/00003088-200948030-00005](https://doi.org/10.2165/00003088-200948030-00005)
 
-## Model component
-<dbs-pgx drug="duloxetine" model-id="Duloxetine_Lobo2009_reference" status="rejected" stale="true" population="patients with major depressive disorder, diabetic peripheral neuropathic pain, stress urinary incontinence or fibromyalgia" measured-compound="duloxetine" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="duloxetine" model-id="Duloxetine_Lobo2009_reference" status="rejected" stale="true" population="patients with major depressive disorder, diabetic peripheral neuropathic pain, stress urinary incontinence or fibromyalgia" measured-compound="duloxetine" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

@@ -21,8 +21,7 @@
 Assmus F et al., Population pharmacokinetic-pharmacodyna…, PLoS neglected tropical dis… (2025)
   ·  DOI: [10.1371/journal.pntd.0013522](https://doi.org/10.1371/journal.pntd.0013522)
 
-## Model component
-<dbs-pgx drug="benznidazole" model-id="Benznidazole_Assmus2025v2_reference" status="rejected" stale="false" population="adults with chronic indeterminate Chagas disease" measured-compound="benznidazole" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="benznidazole" model-id="Benznidazole_Assmus2025v2_reference" status="rejected" stale="false" population="adults with chronic indeterminate Chagas disease" measured-compound="benznidazole" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

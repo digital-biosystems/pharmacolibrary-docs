@@ -21,8 +21,7 @@
 Zuo L et al., Establishment and validation of a popul…, BMC cancer (2024)
   ·  DOI: [10.1186/s12885-024-13118-4](https://doi.org/10.1186/s12885-024-13118-4)
 
-## Model component
-<dbs-pgx drug="tegafur" model-id="Tegafur_Zuo2024_reference" status="extracted" stale="false" population="" measured-compound="tegafur" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="tegafur" model-id="Tegafur_Zuo2024_reference" status="extracted" stale="false" population="" measured-compound="tegafur" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 3 extracted.

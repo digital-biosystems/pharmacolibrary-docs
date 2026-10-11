@@ -21,8 +21,7 @@
 Lee J et al., Population pharmacokinetic analysis of…, Drug design, development an… (2019)
   ·  DOI: [10.2147/DDDT.S199574](https://doi.org/10.2147/DDDT.S199574)
 
-## Model component
-<dbs-pgx drug="tramadol" model-id="Tramadol_Lee2019_reference" status="rejected" stale="false" population="healthy Korean male subjects" measured-compound="tramadol" parameterization="apparent" topology="parent_metabolite"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="tramadol" model-id="Tramadol_Lee2019_reference" status="rejected" stale="false" population="healthy Korean male subjects" measured-compound="tramadol" parameterization="apparent" topology="parent_metabolite"></div>
 
 **Model structure:** parent + metabolite; no model was built for this record.  
 **Parameters:** 8 extracted, plus 2 covariate effects.

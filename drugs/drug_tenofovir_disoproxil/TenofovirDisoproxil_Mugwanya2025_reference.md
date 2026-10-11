@@ -30,8 +30,7 @@ No clearance, volume or rate constant of the model is reported in it. No paramet
 Mugwanya KK et al., Adherence thresholds for emtricitabine-…, PLoS medicine (2025)
   ·  DOI: [10.1371/journal.pmed.1004732](https://doi.org/10.1371/journal.pmed.1004732)
 
-## Model component
-<dbs-pgx drug="tenofovir disoproxil" model-id="TenofovirDisoproxil_Mugwanya2025_reference" status="needs_review" stale="true" population="healthy HIV-uninfected cisgender women in Kenya" measured-compound="tenofovir diphosphate" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="tenofovir disoproxil" model-id="TenofovirDisoproxil_Mugwanya2025_reference" status="needs_review" stale="true" population="healthy HIV-uninfected cisgender women in Kenya" measured-compound="tenofovir diphosphate" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 1 extracted.

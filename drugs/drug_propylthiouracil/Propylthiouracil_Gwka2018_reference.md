@@ -21,8 +21,7 @@
 Główka FK et al., Bioavailability of propylthiouracil fro…, Die Pharmazie (2018)
   ·  DOI: [10.1691/ph.2018.8552](https://doi.org/10.1691/ph.2018.8552)
 
-## Model component
-<dbs-pgx drug="propylthiouracil" model-id="Propylthiouracil_Gwka2018_reference" status="extracted" stale="false" population="healthy subjects" measured-compound="propylthiouracil" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="propylthiouracil" model-id="Propylthiouracil_Gwka2018_reference" status="extracted" stale="false" population="healthy subjects" measured-compound="propylthiouracil" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 6 extracted.

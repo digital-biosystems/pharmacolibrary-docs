@@ -30,8 +30,7 @@ The paper reports no distribution volume and no clearance or elimination rate fo
 Luo X et al., Simultaneously Predicting the Pharmacok…, Pharmaceutics (2024)
   ·  DOI: [10.3390/pharmaceutics16020234](https://doi.org/10.3390/pharmaceutics16020234)
 
-## Model component
-<dbs-pgx drug="temocapril" model-id="Temocapril_Luo2024_reference" status="rejected" stale="true" population="healthy subjects and liver cirrhosis patients (virtual populations, CP-A/B/C)" measured-compound="temocapril and temocaprilat" parameterization="mechanistic" topology="general_linear"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="temocapril" model-id="Temocapril_Luo2024_reference" status="rejected" stale="true" population="healthy subjects and liver cirrhosis patients (virtual populations, CP-A/B/C)" measured-compound="temocapril and temocaprilat" parameterization="mechanistic" topology="general_linear"></div>
 
 **Model structure:** general linear; no model was built for this record.  
 **Parameters:** 2 extracted.

@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 He YY et al., Population pharmacokinetics and dose op…, British journal of clinical… (2024)
   ·  DOI: [10.1111/bcp.16003](https://doi.org/10.1111/bcp.16003)
 
-## Model component
-<dbs-pgx drug="levofloxacin" model-id="Levofloxacin_He2024_reference" status="needs_review" stale="true" population="elderly patients with pneumonia" measured-compound="levofloxacin" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="levofloxacin" model-id="Levofloxacin_He2024_reference" status="needs_review" stale="true" population="elderly patients with pneumonia" measured-compound="levofloxacin" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 1 extracted.

@@ -29,8 +29,7 @@ The paper reports no distribution volume and no clearance or elimination rate; i
 Iliopoulou VN et al., Population pharmacokinetics of cyclopho…, The Journal of pharmacy and… (2021)
   ·  DOI: [10.1093/jpp/rgab135](https://doi.org/10.1093/jpp/rgab135)
 
-## Model component
-<dbs-pgx drug="cyclophosphamide" model-id="Cyclophosphamide_Iliopoulou2021_reference" status="extracted" stale="true" population="patients with autoimmune glomerulonephritis" measured-compound="cyclophosphamide" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="cyclophosphamide" model-id="Cyclophosphamide_Iliopoulou2021_reference" status="extracted" stale="true" population="patients with autoimmune glomerulonephritis" measured-compound="cyclophosphamide" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 3 extracted.

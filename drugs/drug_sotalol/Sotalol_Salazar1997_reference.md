@@ -25,8 +25,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Salazar DE et al., A pharmacokinetic-pharmacodynamic model…, Journal of clinical pharmac… (1997)
   ·  DOI: [10.1002/j.1552-4604.1997.tb05627.x](https://doi.org/10.1002/j.1552-4604.1997.tb05627.x)
 
-## Model component
-<dbs-pgx drug="sotalol" model-id="Sotalol_Salazar1997_reference" status="needs_review" stale="false" population="healthy young men and women" measured-compound="d-sotalol" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="sotalol" model-id="Sotalol_Salazar1997_reference" status="needs_review" stale="false" population="healthy young men and women" measured-compound="d-sotalol" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 1 extracted.

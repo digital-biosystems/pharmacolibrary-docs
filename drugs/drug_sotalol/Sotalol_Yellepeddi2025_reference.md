@@ -33,8 +33,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on `parame
 Yellepeddi VK et al., Population Pharmacokinetics and Pharmac…, CPT: pharmacometrics & syst… (2025)
   ·  DOI: [10.1002/psp4.13302](https://doi.org/10.1002/psp4.13302)
 
-## Model component
-<dbs-pgx drug="sotalol" model-id="Sotalol_Yellepeddi2025_reference" status="extracted" stale="true" population="adults with atrial arrhythmias" measured-compound="sotalol" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="sotalol" model-id="Sotalol_Yellepeddi2025_reference" status="extracted" stale="true" population="adults with atrial arrhythmias" measured-compound="sotalol" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment, oral mammillary model — template `PK_2C_enteral`.  
 **Parameters:** 6 extracted, plus 1 covariate effect.

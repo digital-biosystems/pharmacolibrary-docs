@@ -21,8 +21,7 @@
 Zahr N et al., Total and Unbound Pharmacokinetics of C…, Pharmaceutics (2022)
   ·  DOI: [10.3390/pharmaceutics14122786](https://doi.org/10.3390/pharmaceutics14122786)
 
-## Model component
-<dbs-pgx drug="cefiderocol" model-id="Cefiderocol_Zahr2022_reference" status="extracted" stale="false" population="critically ill adult patients" measured-compound="cefiderocol" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="cefiderocol" model-id="Cefiderocol_Zahr2022_reference" status="extracted" stale="false" population="critically ill adult patients" measured-compound="cefiderocol" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameters:** 3 extracted, plus 1 covariate effect.

@@ -22,8 +22,7 @@
 ## Citation
 Dodam JR et al., Duration of etomidate-induced adrenocor…, American journal of veterin… (1990)
 
-## Model component
-<dbs-pgx drug="etomidate" model-id="Etomidate_Dodam1990_reference" status="rejected" stale="false" population="canine surgical patients" measured-compound="etomidate" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="etomidate" model-id="Etomidate_Dodam1990_reference" status="rejected" stale="false" population="canine surgical patients" measured-compound="etomidate" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 2 extracted.

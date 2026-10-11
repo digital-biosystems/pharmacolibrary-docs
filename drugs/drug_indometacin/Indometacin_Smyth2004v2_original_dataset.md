@@ -24,8 +24,7 @@ Independently confirmed by `gpt-oss:120b`.
 Smyth JM et al., Intravenous indometacin in preterm infa…, British journal of clinical… (2004)
   ·  DOI: [10.1111/j.1365-2125.2004.02139.x](https://doi.org/10.1111/j.1365-2125.2004.02139.x)
 
-## Model component
-<dbs-pgx drug="indometacin" model-id="Indometacin_Smyth2004v2_original_dataset" status="needs_review" stale="false" population="preterm infants with symptomatic patent ductus arteriosus" measured-compound="indometacin" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="indometacin" model-id="Indometacin_Smyth2004v2_original_dataset" status="needs_review" stale="false" population="preterm infants with symptomatic patent ductus arteriosus" measured-compound="indometacin" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 2 extracted.

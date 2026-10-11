@@ -23,8 +23,7 @@
 Dingemanse J et al., Pharmacokinetic-pharmacodynamic modelli…, British journal of pharmaco… (1990)
   ·  DOI: [10.1111/j.1476-5381.1990.tb14653.x](https://doi.org/10.1111/j.1476-5381.1990.tb14653.x)
 
-## Model component
-<dbs-pgx drug="oxazepam" model-id="Oxazepam_Dingemanse1990_reference" status="rejected" stale="false" population="rats" measured-compound="oxazepam" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="oxazepam" model-id="Oxazepam_Dingemanse1990_reference" status="rejected" stale="false" population="rats" measured-compound="oxazepam" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 3 extracted.

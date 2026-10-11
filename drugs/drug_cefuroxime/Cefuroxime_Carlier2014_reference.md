@@ -21,8 +21,7 @@
 Carlier M et al., Population pharmacokinetics and dosing…, The Journal of antimicrobia… (2014)
   ·  DOI: [10.1093/jac/dku195](https://doi.org/10.1093/jac/dku195)
 
-## Model component
-<dbs-pgx drug="cefuroxime" model-id="Cefuroxime_Carlier2014_reference" status="rejected" stale="false" population="critically ill patients" measured-compound="cefuroxime" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="cefuroxime" model-id="Cefuroxime_Carlier2014_reference" status="rejected" stale="false" population="critically ill patients" measured-compound="cefuroxime" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

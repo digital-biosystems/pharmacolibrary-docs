@@ -20,8 +20,7 @@
 ## Citation
 Calvo MV et al., Pharmacokinetics of naproxen in healthy…, International journal of cl… (1979)
 
-## Model component
-<dbs-pgx drug="naproxen" model-id="Naproxen_Calvo1979_reference" status="rejected" stale="false" population="healthy volunteers and patients with diabetic microangiopathy" measured-compound="naproxen" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="naproxen" model-id="Naproxen_Calvo1979_reference" status="rejected" stale="false" population="healthy volunteers and patients with diabetic microangiopathy" measured-compound="naproxen" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 9 extracted.

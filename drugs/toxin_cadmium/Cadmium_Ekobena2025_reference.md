@@ -26,8 +26,7 @@ Ekobena P; Briki M; Dao K; Marzolini C; Andre P; Buclin T; Cavassini M; Guidi M;
  et al. (2025). The Journal of antimicrobial chemotherapy 80
   ·  DOI: [10.1093/jac/dkaf297](https://doi.org/10.1093/jac/dkaf297)
 
-## Model component
-<dbs-pgx drug="cadmium" model-id="Cadmium_Ekobena2025_reference" status="not_modelled" stale="false" population="" measured-compound="cadmium" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="cadmium" model-id="Cadmium_Ekobena2025_reference" status="not_modelled" stale="false" population="" measured-compound="cadmium" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 4 extracted.

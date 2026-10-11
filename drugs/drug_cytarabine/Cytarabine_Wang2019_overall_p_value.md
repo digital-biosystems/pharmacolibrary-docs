@@ -22,8 +22,7 @@
 Wang Q et al., Population Pharmacokinetics and Exposur…, Journal of clinical pharmac… (2019)
   ·  DOI: [10.1002/jcph.1366](https://doi.org/10.1002/jcph.1366)
 
-## Model component
-<dbs-pgx drug="cytarabine" model-id="Cytarabine_Wang2019_overall_p_value" status="rejected" stale="false" population="patients with hematologic malignancies (AML, ALL, MDS)" measured-compound="cytarabine" parameterization="mechanistic" topology="general_linear"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="cytarabine" model-id="Cytarabine_Wang2019_overall_p_value" status="rejected" stale="false" population="patients with hematologic malignancies (AML, ALL, MDS)" measured-compound="cytarabine" parameterization="mechanistic" topology="general_linear"></div>
 
 **Model structure:** general linear; no model was built for this record.  
 **Parameters:** 0 extracted.

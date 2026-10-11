@@ -29,8 +29,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 ## Citation
 Millart H et al., Pharmacokinetic study of two pharmaceut…, International journal of cl… (1983)
 
-## Model component
-<dbs-pgx drug="vincamine" model-id="Vincamine_Millart1983_reference" status="rejected" stale="true" population="healthy volunteers" measured-compound="vincamine" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="vincamine" model-id="Vincamine_Millart1983_reference" status="rejected" stale="true" population="healthy volunteers" measured-compound="vincamine" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 3 extracted.

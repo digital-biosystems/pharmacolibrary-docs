@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the val
 Bouillon T et al., Population pharmacokinetics of piritram…, Anesthesiology (1999)
   ·  DOI: [10.1097/00000542-199901000-00004](https://doi.org/10.1097/00000542-199901000-00004)
 
-## Model component
-<dbs-pgx drug="piritramide" model-id="Piritramide_Bouillon1999_reference" status="rejected" stale="true" population="surgical patients" measured-compound="piritramide" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="piritramide" model-id="Piritramide_Bouillon1999_reference" status="rejected" stale="true" population="surgical patients" measured-compound="piritramide" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

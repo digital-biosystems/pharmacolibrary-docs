@@ -20,8 +20,7 @@
 Erlichman C et al., Mitomycin C pharmacokinetics in patient…, Canadian journal of physiol… (1987)
   ·  DOI: [10.1139/y87-068](https://doi.org/10.1139/y87-068)
 
-## Model component
-<dbs-pgx drug="mitomycin" model-id="Mitomycin_Erlichman1987_reference" status="rejected" stale="false" population="patients with recurrent or metastatic colorectal carcinoma" measured-compound="mitomycin C" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="mitomycin" model-id="Mitomycin_Erlichman1987_reference" status="rejected" stale="false" population="patients with recurrent or metastatic colorectal carcinoma" measured-compound="mitomycin C" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 2 extracted.

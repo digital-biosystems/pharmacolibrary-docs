@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Zhao W et al., Population pharmacokinetics of abacavir…, British journal of clinical… (2013)
   ·  DOI: [10.1111/bcp.12024](https://doi.org/10.1111/bcp.12024)
 
-## Model component
-<dbs-pgx drug="abacavir" model-id="Abacavir_Zhao2013_reference" status="rejected" stale="true" population="HIV-infected infants, toddlers and children" measured-compound="abacavir" parameterization="apparent" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="abacavir" model-id="Abacavir_Zhao2013_reference" status="rejected" stale="true" population="HIV-infected infants, toddlers and children" measured-compound="abacavir" parameterization="apparent" topology="2C"></div>
 
 **Model structure:** 2-compartment; no model was built for this record.  
 **Parameters:** 5 extracted.

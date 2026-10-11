@@ -20,8 +20,7 @@
 Mavroudis PD et al., Population Pharmacokinetics of Vamorolo…, Journal of clinical pharmac… (2019)
   ·  DOI: [10.1002/jcph.1388](https://doi.org/10.1002/jcph.1388)
 
-## Model component
-<dbs-pgx drug="vamorolone" model-id="Vamorolone_Mavroudis2019_reference" status="rejected" stale="false" population="healthy men and boys with Duchenne muscular dystrophy" measured-compound="vamorolone" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="vamorolone" model-id="Vamorolone_Mavroudis2019_reference" status="rejected" stale="false" population="healthy men and boys with Duchenne muscular dystrophy" measured-compound="vamorolone" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 2 extracted.

@@ -21,8 +21,7 @@
 Bressolle F et al., Sulpiride pharmacokinetics in humans af…, Journal of pharmaceutical s… (1984)
   ·  DOI: [10.1002/jps.2600730826](https://doi.org/10.1002/jps.2600730826)
 
-## Model component
-<dbs-pgx drug="sulpiride" model-id="Sulpiride_Bressolle1984_reference" status="extracted" stale="false" population="healthy male subjects" measured-compound="sulpiride" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="sulpiride" model-id="Sulpiride_Bressolle1984_reference" status="extracted" stale="false" population="healthy male subjects" measured-compound="sulpiride" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 8 extracted.

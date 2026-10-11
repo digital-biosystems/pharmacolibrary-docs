@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on paramet
 Yu L et al., Development and Validation of a Populat…, Drug design, development an… (2025)
   ·  DOI: [10.2147/DDDT.S499085](https://doi.org/10.2147/DDDT.S499085)
 
-## Model component
-<dbs-pgx drug="carbamazepine" model-id="Carbamazepine_Yu2025_reference" status="extracted" stale="true" population="" measured-compound="carbamazepine" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="carbamazepine" model-id="Carbamazepine_Yu2025_reference" status="extracted" stale="true" population="" measured-compound="carbamazepine" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 2 extracted.

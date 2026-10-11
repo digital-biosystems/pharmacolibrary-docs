@@ -20,8 +20,7 @@
 Diao L et al., Population Pharmacokinetics of Daclizum…, Clinical pharmacokinetics (2016)
   ·  DOI: [10.1007/s40262-016-0366-7](https://doi.org/10.1007/s40262-016-0366-7)
 
-## Model component
-<dbs-pgx drug="daclizumab" model-id="Daclizumab_Diao2016_reference" status="rejected" stale="false" population="healthy volunteers and subjects with multiple sclerosis" measured-compound="daclizumab" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="daclizumab" model-id="Daclizumab_Diao2016_reference" status="rejected" stale="false" population="healthy volunteers and subjects with multiple sclerosis" measured-compound="daclizumab" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment; no model was built for this record.  
 **Parameters:** 7 extracted.

@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 ## Citation
 Molino G et al., Sorbitol clearance: a parameter reflect…, Research communications in… (1986)
 
-## Model component
-<dbs-pgx drug="sorbitol" model-id="Sorbitol_Molino1986_reference" status="rejected" stale="true" population="male Wistar rats" measured-compound="sorbitol" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="sorbitol" model-id="Sorbitol_Molino1986_reference" status="rejected" stale="true" population="male Wistar rats" measured-compound="sorbitol" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 1 extracted.

@@ -20,8 +20,7 @@
 Dai C et al., The impact of CYP3A4 rs2242480 on oral…, Journal of affective disord… (2026)
   ·  DOI: [10.1016/j.jad.2025.120588](https://doi.org/10.1016/j.jad.2025.120588)
 
-## Model component
-<dbs-pgx drug="lurasidone" model-id="Lurasidone_Dai2026_reference" status="rejected" stale="false" population="Chinese patients with bipolar depression" measured-compound="lurasidone" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="lurasidone" model-id="Lurasidone_Dai2026_reference" status="rejected" stale="false" population="Chinese patients with bipolar depression" measured-compound="lurasidone" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 2 extracted.

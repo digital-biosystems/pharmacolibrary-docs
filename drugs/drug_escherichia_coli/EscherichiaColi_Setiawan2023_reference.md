@@ -29,8 +29,7 @@ Independently confirmed by `gpt-oss:120b`.
 Setiawan E et al., Population Pharmacokinetics and Dosing…, Clinical pharmacokinetics (2023)
   ·  DOI: [10.1007/s40262-023-01219-5](https://doi.org/10.1007/s40262-023-01219-5)
 
-## Model component
-<dbs-pgx drug="escherichia coli" model-id="EscherichiaColi_Setiawan2023_reference" status="extracted" stale="true" population="" measured-compound="escherichia_coli" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="escherichia coli" model-id="EscherichiaColi_Setiawan2023_reference" status="extracted" stale="true" population="" measured-compound="escherichia_coli" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameters:** 2 extracted.

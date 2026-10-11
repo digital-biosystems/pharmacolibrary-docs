@@ -20,8 +20,7 @@
 Rezai K et al., Pharmacokinetic evaluation of the vinor…, Cancer chemotherapy and pha… (2011)
   ·  DOI: [10.1007/s00280-011-1650-8](https://doi.org/10.1007/s00280-011-1650-8)
 
-## Model component
-<dbs-pgx drug="lapatinib" model-id="Lapatinib_Rezai2011_reference" status="rejected" stale="false" population="women with HER2-positive locally advanced or metastatic breast cancer" measured-compound="lapatinib and vinorelbine" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="lapatinib" model-id="Lapatinib_Rezai2011_reference" status="rejected" stale="false" population="women with HER2-positive locally advanced or metastatic breast cancer" measured-compound="lapatinib and vinorelbine" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

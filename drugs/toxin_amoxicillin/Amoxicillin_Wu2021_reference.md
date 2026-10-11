@@ -21,8 +21,7 @@
 Wu YE; Wang YK; Tang BH; Dong L; Li X; Zhang W; et al. et al. (2021). Journal of clinical pharmacology 61
   ·  DOI: [10.1002/jcph.1752](https://doi.org/10.1002/jcph.1752)
 
-## Model component
-<dbs-pgx drug="amoxicillin" model-id="Amoxicillin_Wu2021_reference" status="extracted" stale="true" population="Chinese infants" measured-compound="amoxicillin" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="amoxicillin" model-id="Amoxicillin_Wu2021_reference" status="extracted" stale="true" population="Chinese infants" measured-compound="amoxicillin" parameterization="mechanistic" topology="2C"></div>
 
 **Parameterization:** mechanistic.
 

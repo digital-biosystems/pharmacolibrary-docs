@@ -25,8 +25,7 @@
 Venkatachalam D et al., Pharmacokinetics and efficacy of a nove…, Frontiers in veterinary sci… (2022)
   ·  DOI: [10.3389/fvets.2022.1060951](https://doi.org/10.3389/fvets.2022.1060951)
 
-## Model component
-<dbs-pgx drug="bupivacaine" model-id="Bupivacaine_Venkatachalam2022_reference" status="extracted" stale="false" population="calves" measured-compound="bupivacaine" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="bupivacaine" model-id="Bupivacaine_Venkatachalam2022_reference" status="extracted" stale="false" population="calves" measured-compound="bupivacaine" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameters:** 2 extracted.

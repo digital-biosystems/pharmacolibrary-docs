@@ -20,8 +20,7 @@
 Ogasawara K et al., Population Cellular Kinetics of Lisocab…, Clinical pharmacokinetics (2021)
   ·  DOI: [10.1007/s40262-021-01039-5](https://doi.org/10.1007/s40262-021-01039-5)
 
-## Model component
-<dbs-pgx drug="lisocabtagene maraleucel" model-id="LisocabtageneMaraleucel_Ogasawara2021_reference" status="rejected" stale="false" population="patients with relapsed/refractory large B-cell lymphoma" measured-compound="lisocabtagene_maraleucel" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="lisocabtagene maraleucel" model-id="LisocabtageneMaraleucel_Ogasawara2021_reference" status="rejected" stale="false" population="patients with relapsed/refractory large B-cell lymphoma" measured-compound="lisocabtagene_maraleucel" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 4 extracted.

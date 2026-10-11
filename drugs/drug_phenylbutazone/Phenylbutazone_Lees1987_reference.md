@@ -21,8 +21,7 @@
 ## Citation
 Lees P et al., Metabolism, excretion, pharmacokinetics…, The Cornell veterinarian (1987)
 
-## Model component
-<dbs-pgx drug="phenylbutazone" model-id="Phenylbutazone_Lees1987_reference" status="needs_review" stale="false" population="horses" measured-compound="phenylbutazone" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="phenylbutazone" model-id="Phenylbutazone_Lees1987_reference" status="needs_review" stale="false" population="horses" measured-compound="phenylbutazone" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 5 extracted.

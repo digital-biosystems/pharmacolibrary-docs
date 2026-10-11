@@ -21,8 +21,7 @@
 Jones RD et al., Pharmacokinetics of propofol in children, British journal of anaesthe… (1990)
   ·  DOI: [10.1093/bja/65.5.661](https://doi.org/10.1093/bja/65.5.661)
 
-## Model component
-<dbs-pgx drug="propofol" model-id="Propofol_Jones1990_reference" status="extracted" stale="false" population="healthy children" measured-compound="propofol" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="propofol" model-id="Propofol_Jones1990_reference" status="extracted" stale="false" population="healthy children" measured-compound="propofol" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameters:** 4 extracted.

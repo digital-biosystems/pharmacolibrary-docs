@@ -21,8 +21,7 @@
 Vuong ML et al., A fluconazole population pharmacokineti…, Infection (2026)
   ·  DOI: [10.1007/s15010-025-02663-0](https://doi.org/10.1007/s15010-025-02663-0)
 
-## Model component
-<dbs-pgx drug="fluconazole" model-id="Fluconazole_Vuong2026_reference" status="needs_review" stale="false" population="critically ill patients" measured-compound="fluconazole" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="fluconazole" model-id="Fluconazole_Vuong2026_reference" status="needs_review" stale="false" population="critically ill patients" measured-compound="fluconazole" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment; no model was built for this record.  
 **Parameters:** 6 extracted.

@@ -34,8 +34,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on `parame
 Wang T et al., Pharmacokinetic/Pharmacodynamic modelli…, BMC pharmacology & toxicolo… (2024)
   ·  DOI: [10.1186/s40360-024-00757-3](https://doi.org/10.1186/s40360-024-00757-3)
 
-## Model component
-<dbs-pgx drug="saxagliptin" model-id="Saxagliptin_Wang2024_reference" status="needs_review" stale="true" population="unknown" measured-compound="saxagliptin" parameterization="mechanistic" topology="parent_metabolite"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="saxagliptin" model-id="Saxagliptin_Wang2024_reference" status="needs_review" stale="true" population="unknown" measured-compound="saxagliptin" parameterization="mechanistic" topology="parent_metabolite"></div>
 
 **Model structure:** parent + metabolite; no model was built for this record.  
 **Parameters:** 16 extracted.

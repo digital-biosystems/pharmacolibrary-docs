@@ -20,8 +20,7 @@
 Dao K et al., Sultiame pharmacokinetic profile in pla…, Pharmacology research & per… (2020)
   ·  DOI: [10.1002/prp2.558](https://doi.org/10.1002/prp2.558)
 
-## Model component
-<dbs-pgx drug="sultiame" model-id="Sultiame_Dao2020_reference" status="needs_review" stale="false" population="healthy volunteers" measured-compound="sultiame" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="sultiame" model-id="Sultiame_Dao2020_reference" status="needs_review" stale="false" population="healthy volunteers" measured-compound="sultiame" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment; no model was built for this record.  
 **Parameters:** 7 extracted.

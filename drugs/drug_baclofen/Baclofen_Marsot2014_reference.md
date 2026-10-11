@@ -21,8 +21,7 @@
 Marsot A et al., High variability in the exposure of bac…, Alcoholism, clinical and ex… (2014)
   ·  DOI: [10.1111/acer.12235](https://doi.org/10.1111/acer.12235)
 
-## Model component
-<dbs-pgx drug="baclofen" model-id="Baclofen_Marsot2014_reference" status="rejected" stale="false" population="alcohol-dependent patients" measured-compound="baclofen" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="baclofen" model-id="Baclofen_Marsot2014_reference" status="rejected" stale="false" population="alcohol-dependent patients" measured-compound="baclofen" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

@@ -29,8 +29,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the val
 Walzer M et al., Pharmacokinetic drug interactions betwe…, Pharmacotherapy (2012)
   ·  DOI: [10.1002/j.1875-9114.2012.01028.x](https://doi.org/10.1002/j.1875-9114.2012.01028.x)
 
-## Model component
-<dbs-pgx drug="midazolam" model-id="Midazolam_Walzer2012_arithmetic_mean_a_cv" status="rejected" stale="false" population="healthy adults and patients with Lennox-Gastaut syndrome" measured-compound="clobazam" parameterization="mechanistic" topology="general_linear"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="midazolam" model-id="Midazolam_Walzer2012_arithmetic_mean_a_cv" status="rejected" stale="false" population="healthy adults and patients with Lennox-Gastaut syndrome" measured-compound="clobazam" parameterization="mechanistic" topology="general_linear"></div>
 
 **Model structure:** general linear; no model was built for this record.  
 **Parameters:** 6 extracted.

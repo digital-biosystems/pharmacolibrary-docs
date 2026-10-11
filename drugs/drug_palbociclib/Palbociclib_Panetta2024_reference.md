@@ -20,8 +20,7 @@
 Panetta JC et al., Population Pharmacokinetic and Pharmaco…, Pharmaceutics (2024)
   ·  DOI: [10.3390/pharmaceutics16121528](https://doi.org/10.3390/pharmaceutics16121528)
 
-## Model component
-<dbs-pgx drug="palbociclib" model-id="Palbociclib_Panetta2024_reference" status="needs_review" stale="false" population="children and young adults with recurrent, progressive, or refractory brain tumors" measured-compound="palbociclib" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="palbociclib" model-id="Palbociclib_Panetta2024_reference" status="needs_review" stale="false" population="children and young adults with recurrent, progressive, or refractory brain tumors" measured-compound="palbociclib" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 4 extracted.

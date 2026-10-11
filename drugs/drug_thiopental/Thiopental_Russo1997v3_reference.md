@@ -21,8 +21,7 @@
 Russo H et al., Pharmacokinetics of high-dose thiopenta…, Therapeutic drug monitoring (1997)
   ·  DOI: [10.1097/00007691-199702000-00011](https://doi.org/10.1097/00007691-199702000-00011)
 
-## Model component
-<dbs-pgx drug="thiopental" model-id="Thiopental_Russo1997v3_reference" status="extracted" stale="false" population="pediatric patients with increased intracranial pressure" measured-compound="thiopental" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="thiopental" model-id="Thiopental_Russo1997v3_reference" status="extracted" stale="false" population="pediatric patients with increased intracranial pressure" measured-compound="thiopental" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 4 extracted.

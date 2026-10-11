@@ -20,8 +20,7 @@
 ## Citation
 Mäntylä R et al., Bioavailability and effect of food on t…, Annals of clinical research (1978)
 
-## Model component
-<dbs-pgx drug="erythromycin" model-id="Erythromycin_Mntyl1978_reference" status="rejected" stale="false" population="healthy adults" measured-compound="erythromycin" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="erythromycin" model-id="Erythromycin_Mntyl1978_reference" status="rejected" stale="false" population="healthy adults" measured-compound="erythromycin" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

@@ -23,8 +23,7 @@
 García-Otero X et al., PET study of intravitreal adalimumab ph…, International journal of ph… (2022)
   ·  DOI: [10.1016/j.ijpharm.2022.122261](https://doi.org/10.1016/j.ijpharm.2022.122261)
 
-## Model component
-<dbs-pgx drug="adalimumab" model-id="Adalimumab_GarcaOtero2022_reference" status="rejected" stale="false" population="uveitis rats" measured-compound="adalimumab" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="adalimumab" model-id="Adalimumab_GarcaOtero2022_reference" status="rejected" stale="false" population="uveitis rats" measured-compound="adalimumab" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

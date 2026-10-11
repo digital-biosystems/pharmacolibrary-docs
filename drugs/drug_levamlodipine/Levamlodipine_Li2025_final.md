@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Li G et al., Model-Informed Precision Dosing of Leva…, Drug design, development an… (2025)
   ·  DOI: [10.2147/DDDT.S501762](https://doi.org/10.2147/DDDT.S501762)
 
-## Model component
-<dbs-pgx drug="levamlodipine" model-id="Levamlodipine_Li2025_final" status="extracted" stale="true" population="smoking patients" measured-compound="levamlodipine besylate" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="levamlodipine" model-id="Levamlodipine_Li2025_final" status="extracted" stale="true" population="smoking patients" measured-compound="levamlodipine besylate" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 3 extracted.

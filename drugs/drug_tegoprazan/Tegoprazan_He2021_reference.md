@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 He J et al., Safety, Tolerability and Pharmacokineti…, Clinical drug investigation (2021)
   ·  DOI: [10.1007/s40261-020-00986-4](https://doi.org/10.1007/s40261-020-00986-4)
 
-## Model component
-<dbs-pgx drug="tegoprazan" model-id="Tegoprazan_He2021_reference" status="needs_review" stale="true" population="healthy Chinese adults" measured-compound="tegoprazan" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="tegoprazan" model-id="Tegoprazan_He2021_reference" status="needs_review" stale="true" population="healthy Chinese adults" measured-compound="tegoprazan" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 5 extracted.

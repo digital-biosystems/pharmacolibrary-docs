@@ -21,8 +21,7 @@
 Fau JB et al., Drug-Disease Interaction and Time-Depen…, CPT: pharmacometrics & syst… (2020)
   ·  DOI: [10.1002/psp4.12561](https://doi.org/10.1002/psp4.12561)
 
-## Model component
-<dbs-pgx drug="isatuximab" model-id="Isatuximab_Fau2020_reference" status="extracted" stale="false" population="patients with relapsed/refractory multiple myeloma" measured-compound="isatuximab" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="isatuximab" model-id="Isatuximab_Fau2020_reference" status="extracted" stale="false" population="patients with relapsed/refractory multiple myeloma" measured-compound="isatuximab" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameters:** 2 extracted.

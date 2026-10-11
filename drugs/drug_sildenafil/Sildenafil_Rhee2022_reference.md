@@ -21,8 +21,7 @@
 Rhee SJ et al., Population pharmacokinetic analysis of…, Scientific reports (2022)
   ·  DOI: [10.1038/s41598-022-11038-6](https://doi.org/10.1038/s41598-022-11038-6)
 
-## Model component
-<dbs-pgx drug="sildenafil" model-id="Sildenafil_Rhee2022_reference" status="needs_review" stale="false" population="term and preterm neonates with pulmonary arterial hypertension" measured-compound="sildenafil" parameterization="apparent" topology="parent_metabolite"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="sildenafil" model-id="Sildenafil_Rhee2022_reference" status="needs_review" stale="false" population="term and preterm neonates with pulmonary arterial hypertension" measured-compound="sildenafil" parameterization="apparent" topology="parent_metabolite"></div>
 
 **Model structure:** parent + metabolite; no model was built for this record.  
 **Parameters:** 3 extracted, plus 3 covariate effects.

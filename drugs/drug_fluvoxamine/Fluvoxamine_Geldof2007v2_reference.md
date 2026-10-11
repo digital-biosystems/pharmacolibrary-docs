@@ -33,8 +33,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the val
 Geldof M et al., Population pharmacokinetic model of flu…, European journal of pharmac… (2007)
   ·  DOI: [10.1016/j.ejps.2006.10.001](https://doi.org/10.1016/j.ejps.2006.10.001)
 
-## Model component
-<dbs-pgx drug="fluvoxamine" model-id="Fluvoxamine_Geldof2007v2_reference" status="rejected" stale="true" population="rats" measured-compound="fluvoxamine" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="fluvoxamine" model-id="Fluvoxamine_Geldof2007v2_reference" status="rejected" stale="true" population="rats" measured-compound="fluvoxamine" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

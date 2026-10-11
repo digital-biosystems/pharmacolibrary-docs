@@ -29,8 +29,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the val
 Smith JS et al., Pharmacokinetics of Pantoprazole and Pa…, Frontiers in veterinary sci… (2021)
   ·  DOI: [10.3389/fvets.2021.744813](https://doi.org/10.3389/fvets.2021.744813)
 
-## Model component
-<dbs-pgx drug="pantoprazole" model-id="Pantoprazole_Smith2021v2_reference" status="curated_candidate" stale="false" population="adult goats" measured-compound="pantoprazole" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="pantoprazole" model-id="Pantoprazole_Smith2021v2_reference" status="curated_candidate" stale="false" population="adult goats" measured-compound="pantoprazole" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameters:** 2 extracted.

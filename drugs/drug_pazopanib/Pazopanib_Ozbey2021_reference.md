@@ -21,8 +21,7 @@
 Ozbey AC et al., Population Pharmacokinetic Analysis of…, Pharmaceuticals (Basel, Swi… (2021)
   ·  DOI: [10.3390/ph14090927](https://doi.org/10.3390/ph14090927)
 
-## Model component
-<dbs-pgx drug="pazopanib" model-id="Pazopanib_Ozbey2021_reference" status="extracted" stale="false" population="patients with cancer" measured-compound="pazopanib" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="pazopanib" model-id="Pazopanib_Ozbey2021_reference" status="extracted" stale="false" population="patients with cancer" measured-compound="pazopanib" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 3 extracted.

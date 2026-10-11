@@ -31,8 +31,7 @@ Independently confirmed by `gpt-oss:120b`.
 Zhang L et al., Quantifying the Exposure of Tapentadol…, Clinical drug investigation (2017)
   ·  DOI: [10.1007/s40261-016-0482-z](https://doi.org/10.1007/s40261-016-0482-z)
 
-## Model component
-<dbs-pgx drug="tapentadol" model-id="Tapentadol_Zhang2017_reference" status="rejected" stale="true" population="Japanese adults" measured-compound="tapentadol" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="tapentadol" model-id="Tapentadol_Zhang2017_reference" status="rejected" stale="true" population="Japanese adults" measured-compound="tapentadol" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

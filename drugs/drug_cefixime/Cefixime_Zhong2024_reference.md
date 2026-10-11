@@ -21,8 +21,7 @@
 Zhong J et al., Evaluating the efficacy of different an…, BMC infectious diseases (2024)
   ·  DOI: [10.1186/s12879-023-08938-x](https://doi.org/10.1186/s12879-023-08938-x)
 
-## Model component
-<dbs-pgx drug="cefixime" model-id="Cefixime_Zhong2024_reference" status="rejected" stale="false" population="" measured-compound="cefixime" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="cefixime" model-id="Cefixime_Zhong2024_reference" status="rejected" stale="false" population="" measured-compound="cefixime" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 2 extracted.

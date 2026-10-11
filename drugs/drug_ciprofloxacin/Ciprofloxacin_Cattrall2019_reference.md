@@ -25,8 +25,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on paramet
 Cattrall JWS et al., A pharmacokinetic-pharmacodynamic asses…, European journal of clinica… (2019)
   ·  DOI: [10.1007/s10096-019-03679-9](https://doi.org/10.1007/s10096-019-03679-9)
 
-## Model component
-<dbs-pgx drug="ciprofloxacin" model-id="Ciprofloxacin_Cattrall2019_reference" status="needs_review" stale="false" population="adults" measured-compound="ciprofloxacin" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="ciprofloxacin" model-id="Ciprofloxacin_Cattrall2019_reference" status="needs_review" stale="false" population="adults" measured-compound="ciprofloxacin" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted, plus 1 covariate effect.

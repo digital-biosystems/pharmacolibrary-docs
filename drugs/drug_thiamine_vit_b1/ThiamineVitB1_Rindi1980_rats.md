@@ -30,8 +30,7 @@ Nothing in the extracted data describes the drug's disposition, so there is no m
 Rindi G et al., Thiamine content and turnover rates of…, Brain research (1980)
   ·  DOI: [10.1016/0006-8993(80)90619-8](https://doi.org/10.1016/0006-8993(80)90619-8)
 
-## Model component
-<dbs-pgx drug="thiamine (vit B1)" model-id="ThiamineVitB1_Rindi1980_rats" status="" stale="true" population="rats" measured-compound="" parameterization="" topology=""></dbs-pgx>
+<div class="pk-model-meta" hidden drug="thiamine (vit B1)" model-id="ThiamineVitB1_Rindi1980_rats" status="" stale="true" population="rats" measured-compound="" parameterization="" topology=""></div>
 
 **Model structure:** —; no model was built for this record.  
 **Parameters:** 0 extracted.

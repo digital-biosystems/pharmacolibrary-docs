@@ -21,8 +21,7 @@
 Trenque T et al., Population pharmacokinetics of pyrimeth…, British journal of clinical… (2004)
   ·  DOI: [10.1111/j.1365-2125.2004.02077.x](https://doi.org/10.1111/j.1365-2125.2004.02077.x)
 
-## Model component
-<dbs-pgx drug="Sulfadoxine" model-id="Sulfadoxine_Trenque2004_reference" status="extracted" stale="false" population="children with congenital toxoplasmosis" measured-compound="sulfadoxine" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="Sulfadoxine" model-id="Sulfadoxine_Trenque2004_reference" status="extracted" stale="false" population="children with congenital toxoplasmosis" measured-compound="sulfadoxine" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameters:** 2 extracted.

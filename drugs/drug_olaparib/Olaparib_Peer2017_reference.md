@@ -21,8 +21,7 @@
 Peer CJ et al., Population pharmacokinetic analyses of…, Cancer chemotherapy and pha… (2017)
   ·  DOI: [10.1007/s00280-017-3346-1](https://doi.org/10.1007/s00280-017-3346-1)
 
-## Model component
-<dbs-pgx drug="olaparib" model-id="Olaparib_Peer2017_reference" status="rejected" stale="false" population="recurrent or refractory women&#39;s cancers" measured-compound="olaparib" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="olaparib" model-id="Olaparib_Peer2017_reference" status="rejected" stale="false" population="recurrent or refractory women&#39;s cancers" measured-compound="olaparib" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

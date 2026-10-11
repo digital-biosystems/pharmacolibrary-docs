@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Klotz U et al., The effects of age and liver disease on…, The Journal of clinical inv… (1975)
   ·  DOI: [10.1172/JCI107938](https://doi.org/10.1172/JCI107938)
 
-## Model component
-<dbs-pgx drug="diazepam" model-id="Diazepam_Klotz1975_reference" status="rejected" stale="true" population="healthy adults and patients with liver disease" measured-compound="diazepam" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="diazepam" model-id="Diazepam_Klotz1975_reference" status="rejected" stale="true" population="healthy adults and patients with liver disease" measured-compound="diazepam" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 6 extracted.

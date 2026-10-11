@@ -21,8 +21,7 @@
 Ma P et al., Pharmacokinetic-pharmacodynamic compari…, Clinical pharmacology and t… (2005)
   ·  DOI: [10.1016/j.clpt.2005.04.003](https://doi.org/10.1016/j.clpt.2005.04.003)
 
-## Model component
-<dbs-pgx drug="octreotide" model-id="Octreotide_Ma2005_reference" status="needs_review" stale="false" population="patients with active acromegaly" measured-compound="octreotide" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="octreotide" model-id="Octreotide_Ma2005_reference" status="needs_review" stale="false" population="patients with active acromegaly" measured-compound="octreotide" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 3 extracted.

@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Carlson TH et al., In vivo behavior of radioiodinated rabb…, The Journal of clinical inv… (1984)
   ·  DOI: [10.1172/JCI111401](https://doi.org/10.1172/JCI111401)
 
-## Model component
-<dbs-pgx drug="antithrombin III" model-id="AntithrombinIii_Carlson1984_reference" status="rejected" stale="false" population="rabbits" measured-compound="antithrombin_iii" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="antithrombin III" model-id="AntithrombinIii_Carlson1984_reference" status="rejected" stale="false" population="rabbits" measured-compound="antithrombin_iii" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

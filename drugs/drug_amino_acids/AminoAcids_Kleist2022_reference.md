@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on `parame
 Kleist CJ et al., Population kinetics of homoarginine and…, Amino acids (2022)
   ·  DOI: [10.1007/s00726-022-03169-x](https://doi.org/10.1007/s00726-022-03169-x)
 
-## Model component
-<dbs-pgx drug="amino acids" model-id="AminoAcids_Kleist2022_reference" status="needs_review" stale="true" population="healthy adults" measured-compound="homoarginine" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="amino acids" model-id="AminoAcids_Kleist2022_reference" status="needs_review" stale="true" population="healthy adults" measured-compound="homoarginine" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 1 extracted, plus 2 covariate effects.

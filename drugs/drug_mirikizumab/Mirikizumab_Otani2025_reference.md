@@ -21,8 +21,7 @@
 Otani Y et al., Mirikizumab pharmacokinetics and exposu…, CPT: pharmacometrics & syst… (2025)
   ·  DOI: [10.1002/psp4.13286](https://doi.org/10.1002/psp4.13286)
 
-## Model component
-<dbs-pgx drug="mirikizumab" model-id="Mirikizumab_Otani2025_reference" status="needs_review" stale="false" population="pediatric patients with moderate-to-severe ulcerative colitis" measured-compound="mirikizumab" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="mirikizumab" model-id="Mirikizumab_Otani2025_reference" status="needs_review" stale="false" population="pediatric patients with moderate-to-severe ulcerative colitis" measured-compound="mirikizumab" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 1 extracted.

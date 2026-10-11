@@ -28,8 +28,7 @@ No clearance, volume or rate constant of the model is reported in it. No paramet
 MDMarkSWainwright Department of Neurology Division of Pediatric Neurology University of Washington Seattle Children's Hospital Seattle WA, Fat, Pharmacokinetics, and Fosphenytoin… (2018)
   ·  DOI: [10.1097/PCC.0000000000001647](https://doi.org/10.1097/PCC.0000000000001647)
 
-## Model component
-<dbs-pgx drug="fosphenytoin" model-id="Fosphenytoin_Wainwright2018_reference" status="rejected" stale="false" population="critically ill children" measured-compound="phenytoin" parameterization="mechanistic" topology="parent_metabolite"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="fosphenytoin" model-id="Fosphenytoin_Wainwright2018_reference" status="rejected" stale="false" population="critically ill children" measured-compound="phenytoin" parameterization="mechanistic" topology="parent_metabolite"></div>
 
 **Model structure:** parent + metabolite; no model was built for this record.  
 **Parameters:** 0 extracted.

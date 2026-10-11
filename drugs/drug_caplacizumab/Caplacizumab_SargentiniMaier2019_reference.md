@@ -27,8 +27,7 @@ The model was built, but caplacizumab's bioavailability, volume of distribution 
 Sargentini-Maier ML et al., Clinical pharmacology of caplacizumab f…, Expert review of clinical p… (2019)
   ·  DOI: [10.1080/17512433.2019.1607293](https://doi.org/10.1080/17512433.2019.1607293)
 
-## Model component
-<dbs-pgx drug="caplacizumab" model-id="Caplacizumab_SargentiniMaier2019_reference" status="model_quarantined" stale="false" population="adults with acquired thrombotic thrombocytopenic purpura" measured-compound="caplacizumab" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="caplacizumab" model-id="Caplacizumab_SargentiniMaier2019_reference" status="model_quarantined" stale="false" population="adults with acquired thrombotic thrombocytopenic purpura" measured-compound="caplacizumab" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 2 extracted.

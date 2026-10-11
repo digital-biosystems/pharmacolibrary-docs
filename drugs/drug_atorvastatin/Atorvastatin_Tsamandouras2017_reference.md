@@ -29,8 +29,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Tsamandouras N et al., Modelling of atorvastatin pharmacokinet…, Pharmacogenetics and genomi… (2017)
   ·  DOI: [10.1097/FPC.0000000000000252](https://doi.org/10.1097/FPC.0000000000000252)
 
-## Model component
-<dbs-pgx drug="atorvastatin" model-id="Atorvastatin_Tsamandouras2017_reference" status="rejected" stale="false" population="Japanese adults with dyslipidemia" measured-compound="atorvastatin" parameterization="mechanistic" topology="parent_metabolite"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="atorvastatin" model-id="Atorvastatin_Tsamandouras2017_reference" status="rejected" stale="false" population="Japanese adults with dyslipidemia" measured-compound="atorvastatin" parameterization="mechanistic" topology="parent_metabolite"></div>
 
 **Model structure:** parent + metabolite; no model was built for this record.  
 **Parameters:** 0 extracted.

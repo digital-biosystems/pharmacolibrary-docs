@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Sukeishi A et al., Population pharmacokinetic modeling of…, CPT: pharmacometrics & syst… (2022)
   ·  DOI: [10.1002/psp4.12736](https://doi.org/10.1002/psp4.12736)
 
-## Model component
-<dbs-pgx drug="remdesivir" model-id="Remdesivir_Sukeishi2022_reference" status="rejected" stale="false" population="Japanese adults with COVID-19 and renal dysfunction" measured-compound="GS-441524" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="remdesivir" model-id="Remdesivir_Sukeishi2022_reference" status="rejected" stale="false" population="Japanese adults with COVID-19 and renal dysfunction" measured-compound="GS-441524" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

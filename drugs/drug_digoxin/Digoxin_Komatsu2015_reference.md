@@ -29,8 +29,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Komatsu T et al., Population pharmacokinetics and optimiz…, Journal of pharmaceutical h… (2015)
   ·  DOI: [10.1186/s40780-015-0023-6](https://doi.org/10.1186/s40780-015-0023-6)
 
-## Model component
-<dbs-pgx drug="digoxin" model-id="Digoxin_Komatsu2015_reference" status="rejected" stale="true" population="adult patients" measured-compound="digoxin" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="digoxin" model-id="Digoxin_Komatsu2015_reference" status="rejected" stale="true" population="adult patients" measured-compound="digoxin" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

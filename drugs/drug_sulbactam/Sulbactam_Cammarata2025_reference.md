@@ -23,8 +23,7 @@
 Cammarata AP et al., Population pharmacokinetic analyses for…, Antimicrobial agents and ch… (2025)
   ·  DOI: [10.1128/aac.00485-24](https://doi.org/10.1128/aac.00485-24)
 
-## Model component
-<dbs-pgx drug="sulbactam" model-id="Sulbactam_Cammarata2025_reference" status="extracted" stale="false" population="healthy adults and patients with HABP, VABP, or cUTI/AP" measured-compound="sulbactam" parameterization="apparent" topology="3C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="sulbactam" model-id="Sulbactam_Cammarata2025_reference" status="extracted" stale="false" population="healthy adults and patients with HABP, VABP, or cUTI/AP" measured-compound="sulbactam" parameterization="apparent" topology="3C"></div>
 
 **Model structure:** 3-compartment, oral mammillary model — template `PK_3C_enteral`.  
 **Parameters:** 10 extracted, plus 1 covariate effect.

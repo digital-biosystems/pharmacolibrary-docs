@@ -20,8 +20,7 @@
 Gibson TP et al., Cefsulodin kinetics in renal impairment, Clinical pharmacology and t… (1982)
   ·  DOI: [10.1038/clpt.1982.84](https://doi.org/10.1038/clpt.1982.84)
 
-## Model component
-<dbs-pgx drug="cefsulodin" model-id="Cefsulodin_Gibson1982_reference" status="rejected" stale="false" population="adults with normal renal function and renal impairment" measured-compound="cefsulodin" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="cefsulodin" model-id="Cefsulodin_Gibson1982_reference" status="rejected" stale="false" population="adults with normal renal function and renal impairment" measured-compound="cefsulodin" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 6 extracted.

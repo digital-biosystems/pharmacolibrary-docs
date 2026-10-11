@@ -22,8 +22,7 @@
 Trocóniz IF et al., Pharmacokinetic-pharmacodynamic modelin…, Journal of pharmaceutical s… (1997)
   ·  DOI: [10.1021/js960153d](https://doi.org/10.1021/js960153d)
 
-## Model component
-<dbs-pgx drug="Mivacurium" model-id="Mivacurium_Trocniz1997_reference" status="rejected" stale="false" population="rats" measured-compound="mivacurium" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="Mivacurium" model-id="Mivacurium_Trocniz1997_reference" status="rejected" stale="false" population="rats" measured-compound="mivacurium" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

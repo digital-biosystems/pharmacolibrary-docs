@@ -30,8 +30,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Berger J et al., Intra-monocyte Pharmacokinetics of Imig…, Clinical pharmacokinetics (2019)
   ·  DOI: [10.1007/s40262-018-0708-8](https://doi.org/10.1007/s40262-018-0708-8)
 
-## Model component
-<dbs-pgx drug="imiglucerase" model-id="Imiglucerase_Berger2019_reference" status="rejected" stale="true" population="patients with Gaucher disease type 1" measured-compound="imiglucerase" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="imiglucerase" model-id="Imiglucerase_Berger2019_reference" status="rejected" stale="true" population="patients with Gaucher disease type 1" measured-compound="imiglucerase" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 2 extracted.

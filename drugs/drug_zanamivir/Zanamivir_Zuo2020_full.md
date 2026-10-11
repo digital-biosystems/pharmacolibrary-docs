@@ -21,8 +21,7 @@
 Zuo P et al., Population Pharmacokinetic/Pharmacodyna…, Clinical and translational… (2020)
   ·  DOI: [10.1111/cts.12697](https://doi.org/10.1111/cts.12697)
 
-## Model component
-<dbs-pgx drug="zanamivir" model-id="Zanamivir_Zuo2020_full" status="extracted" stale="false" population="healthy adults and hospitalized adult and pediatric subjects with influenza" measured-compound="zanamivir" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="zanamivir" model-id="Zanamivir_Zuo2020_full" status="extracted" stale="false" population="healthy adults and hospitalized adult and pediatric subjects with influenza" measured-compound="zanamivir" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment, IV mammillary model — template `PK_2C`.  
 **Parameters:** 4 extracted, plus 4 covariate effects.

@@ -25,8 +25,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the val
 Huang Y et al., Population pharmacokinetics analysis of…, mAbs (2017)
   ·  DOI: [10.1080/19420862.2017.1311435](https://doi.org/10.1080/19420862.2017.1311435)
 
-## Model component
-<dbs-pgx drug="palivizumab" model-id="Palivizumab_Huang2017_reference" status="extracted" stale="false" population="" measured-compound="palivizumab" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="palivizumab" model-id="Palivizumab_Huang2017_reference" status="extracted" stale="false" population="" measured-compound="palivizumab" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameters:** 2 extracted.

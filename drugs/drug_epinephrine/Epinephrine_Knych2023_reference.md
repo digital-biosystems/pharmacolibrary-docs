@@ -32,8 +32,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the val
 Knych HK et al., Pharmacokinetics and metabolism of lido…, BMC veterinary research (2023)
   ·  DOI: [10.1186/s12917-023-03787-x](https://doi.org/10.1186/s12917-023-03787-x)
 
-## Model component
-<dbs-pgx drug="epinephrine" model-id="Epinephrine_Knych2023_reference" status="rejected" stale="true" population="" measured-compound="epinephrine" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="epinephrine" model-id="Epinephrine_Knych2023_reference" status="rejected" stale="true" population="" measured-compound="epinephrine" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment; no model was built for this record.  
 **Parameters:** 4 extracted.

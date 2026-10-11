@@ -20,8 +20,7 @@
 ## Citation
 Yajima C et al., [Comparative pharmacokinetics of pipecu…, Masui. The Japanese journal… (1990)
 
-## Model component
-<dbs-pgx drug="pipecuronium bromide" model-id="PipecuroniumBromide_Yajima1990_reference" status="extracted" stale="false" population="male patients" measured-compound="pipecuronium_bromide" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="pipecuronium bromide" model-id="PipecuroniumBromide_Yajima1990_reference" status="extracted" stale="false" population="male patients" measured-compound="pipecuronium_bromide" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameters:** 5 extracted.

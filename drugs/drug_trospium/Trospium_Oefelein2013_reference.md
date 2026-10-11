@@ -33,8 +33,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on paramet
 Oefelein MG et al., Effect of concomitant administration of…, Clinical drug investigation (2013)
   ·  DOI: [10.1007/s40261-012-0049-6](https://doi.org/10.1007/s40261-012-0049-6)
 
-## Model component
-<dbs-pgx drug="trospium" model-id="Trospium_Oefelein2013_reference" status="extracted" stale="true" population="healthy adults" measured-compound="trospium" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="trospium" model-id="Trospium_Oefelein2013_reference" status="extracted" stale="true" population="healthy adults" measured-compound="trospium" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 2 extracted.

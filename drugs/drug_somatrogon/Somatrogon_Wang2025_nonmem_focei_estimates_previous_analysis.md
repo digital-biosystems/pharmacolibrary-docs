@@ -21,8 +21,7 @@
 Wang Y et al., Implementing a Bayesian approach using…, CPT: pharmacometrics & syst… (2025)
   ·  DOI: [10.1002/psp4.13279](https://doi.org/10.1002/psp4.13279)
 
-## Model component
-<dbs-pgx drug="somatrogon" model-id="Somatrogon_Wang2025_nonmem_focei_estimates_previous_analysis" status="rejected" stale="false" population="pediatric participants" measured-compound="somatrogon" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="somatrogon" model-id="Somatrogon_Wang2025_nonmem_focei_estimates_previous_analysis" status="rejected" stale="false" population="pediatric participants" measured-compound="somatrogon" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

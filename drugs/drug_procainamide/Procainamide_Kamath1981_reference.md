@@ -27,8 +27,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Kamath BL et al., Pharmacokinetics of procainamide and N-…, Journal of pharmaceutical s… (1981)
   ·  DOI: [10.1002/jps.2600700319](https://doi.org/10.1002/jps.2600700319)
 
-## Model component
-<dbs-pgx drug="procainamide" model-id="Procainamide_Kamath1981_reference" status="rejected" stale="false" population="rats" measured-compound="procainamide" parameterization="mechanistic" topology="parent_metabolite"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="procainamide" model-id="Procainamide_Kamath1981_reference" status="rejected" stale="false" population="rats" measured-compound="procainamide" parameterization="mechanistic" topology="parent_metabolite"></div>
 
 **Model structure:** parent + metabolite; no model was built for this record.  
 **Parameters:** 0 extracted.

@@ -20,8 +20,7 @@
 Wickramasinghe C et al., Population Pharmacokinetic Modeling of…, Pharmaceutics (2025)
   ·  DOI: [10.3390/pharmaceutics17040524](https://doi.org/10.3390/pharmaceutics17040524)
 
-## Model component
-<dbs-pgx drug="pamiparib" model-id="Pamiparib_Wickramasinghe2025_unbound_pamiparib" status="rejected" stale="false" population="glioblastoma patients" measured-compound="pamiparib" parameterization="apparent" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="pamiparib" model-id="Pamiparib_Wickramasinghe2025_unbound_pamiparib" status="rejected" stale="false" population="glioblastoma patients" measured-compound="pamiparib" parameterization="apparent" topology="2C"></div>
 
 **Model structure:** 2-compartment; no model was built for this record.  
 **Parameters:** 7 extracted, plus 1 covariate effect.

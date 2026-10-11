@@ -33,8 +33,7 @@ Independently confirmed by `gpt-oss:120b`.
 Kitagawa J et al., A phase I study of high dose camostat m…, Clinical and translational… (2021)
   ·  DOI: [10.1111/cts.13052](https://doi.org/10.1111/cts.13052)
 
-## Model component
-<dbs-pgx drug="camostat" model-id="Camostat_Kitagawa2021_reference" status="rejected" stale="true" population="healthy adults" measured-compound="GBPA" parameterization="apparent" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="camostat" model-id="Camostat_Kitagawa2021_reference" status="rejected" stale="true" population="healthy adults" measured-compound="GBPA" parameterization="apparent" topology="2C"></div>
 
 **Model structure:** 2-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

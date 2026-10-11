@@ -33,8 +33,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Wright DF et al., The population pharmacokinetics of allo…, European journal of clinica… (2013)
   ·  DOI: [10.1007/s00228-013-1478-8](https://doi.org/10.1007/s00228-013-1478-8)
 
-## Model component
-<dbs-pgx drug="allopurinol" model-id="Allopurinol_Wright2013_final" status="rejected" stale="true" population="patients with gout and healthy volunteers" measured-compound="oxypurinol" parameterization="mechanistic" topology="parent_metabolite"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="allopurinol" model-id="Allopurinol_Wright2013_final" status="rejected" stale="true" population="patients with gout and healthy volunteers" measured-compound="oxypurinol" parameterization="mechanistic" topology="parent_metabolite"></div>
 
 **Model structure:** parent + metabolite; no model was built for this record.  
 **Parameters:** 2 extracted.

@@ -29,8 +29,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 ter Heine R et al., Population pharmacokinetic modelling to…, British journal of clinical… (2014)
   ·  DOI: [10.1111/bcp.12388](https://doi.org/10.1111/bcp.12388)
 
-## Model component
-<dbs-pgx drug="tamoxifen" model-id="Tamoxifen_ter2014_reference" status="needs_review" stale="false" population="breast cancer patients" measured-compound="tamoxifen" parameterization="mechanistic" topology="general_linear"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="tamoxifen" model-id="Tamoxifen_ter2014_reference" status="needs_review" stale="false" population="breast cancer patients" measured-compound="tamoxifen" parameterization="mechanistic" topology="general_linear"></div>
 
 **Model structure:** general linear; no model was built for this record.  
 **Parameters:** 11 extracted.

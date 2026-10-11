@@ -21,8 +21,7 @@
 Rosser SPA et al., Evaluation of treosulfan cumulative exp…, British journal of clinical… (2023)
   ·  DOI: [10.1111/bcp.15599](https://doi.org/10.1111/bcp.15599)
 
-## Model component
-<dbs-pgx drug="treosulfan" model-id="Treosulfan_Rosser2023_reference" status="extracted" stale="false" population="paediatric patients undergoing haematopoietic stem cell transplantation" measured-compound="treosulfan" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="treosulfan" model-id="Treosulfan_Rosser2023_reference" status="extracted" stale="false" population="paediatric patients undergoing haematopoietic stem cell transplantation" measured-compound="treosulfan" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameters:** 2 extracted.

@@ -24,8 +24,7 @@
 Boulanger M et al., Population pharmacokinetic modeling of…, The veterinary quarterly (2025)
   ·  DOI: [10.1080/01652176.2025.2565351](https://doi.org/10.1080/01652176.2025.2565351)
 
-## Model component
-<dbs-pgx drug="sulfadimethoxine" model-id="Sulfadimethoxine_Boulanger2025_reference" status="rejected" stale="false" population="growing pigs" measured-compound="sulfadimethoxine" parameterization="mechanistic" topology="general_linear"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="sulfadimethoxine" model-id="Sulfadimethoxine_Boulanger2025_reference" status="rejected" stale="false" population="growing pigs" measured-compound="sulfadimethoxine" parameterization="mechanistic" topology="general_linear"></div>
 
 **Model structure:** general linear; no model was built for this record.  
 **Parameters:** 3 extracted.

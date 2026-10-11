@@ -21,8 +21,7 @@
 Chen J et al., Population pharmacokinetic analysis of…, Frontiers in pharmacology (2025)
   ·  DOI: [10.3389/fphar.2025.1526266](https://doi.org/10.3389/fphar.2025.1526266)
 
-## Model component
-<dbs-pgx drug="remimazolam" model-id="Remimazolam_Chen2025_median_by_1_000_bootstraps" status="extracted" stale="false" population="critically ill patients" measured-compound="remimazolam" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="remimazolam" model-id="Remimazolam_Chen2025_median_by_1_000_bootstraps" status="extracted" stale="false" population="critically ill patients" measured-compound="remimazolam" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment, IV mammillary model — template `PK_2C`.  
 **Parameters:** 4 extracted.

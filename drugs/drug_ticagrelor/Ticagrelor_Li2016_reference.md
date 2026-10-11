@@ -29,8 +29,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the val
 Li J et al., Population pharmacokinetics of ticagrel…, International journal of cl… (2016)
   ·  DOI: [10.5414/CP202549](https://doi.org/10.5414/CP202549)
 
-## Model component
-<dbs-pgx drug="ticagrelor" model-id="Ticagrelor_Li2016_reference" status="rejected" stale="false" population="patients with acute coronary syndromes" measured-compound="ticagrelor" parameterization="apparent" topology="parent_metabolite"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="ticagrelor" model-id="Ticagrelor_Li2016_reference" status="rejected" stale="false" population="patients with acute coronary syndromes" measured-compound="ticagrelor" parameterization="apparent" topology="parent_metabolite"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 4 extracted.

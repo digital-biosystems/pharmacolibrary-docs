@@ -21,8 +21,7 @@
 Schüttler J et al., Pharmacokinetics and Pharmacodynamics o…, Anesthesiology (2020)
   ·  DOI: [10.1097/ALN.0000000000003103](https://doi.org/10.1097/ALN.0000000000003103)
 
-## Model component
-<dbs-pgx drug="remimazolam" model-id="Remimazolam_Schttler2020_reference" status="extracted" stale="false" population="healthy male volunteers" measured-compound="remimazolam" parameterization="mechanistic" topology="parent_metabolite"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="remimazolam" model-id="Remimazolam_Schttler2020_reference" status="extracted" stale="false" population="healthy male volunteers" measured-compound="remimazolam" parameterization="mechanistic" topology="parent_metabolite"></div>
 
 **Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameters:** 3 extracted.

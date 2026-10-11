@@ -32,8 +32,7 @@ Independently confirmed by `gpt-oss:120b`.
 Hori T et al., Influence of modes of ACNU administrati…, Journal of neurosurgery (1987)
   ·  DOI: [10.3171/jns.1987.66.3.0372](https://doi.org/10.3171/jns.1987.66.3.0372)
 
-## Model component
-<dbs-pgx drug="nimustine" model-id="Nimustine_Hori1987_reference" status="rejected" stale="true" population="patients with malignant brain tumors" measured-compound="ACNU" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="nimustine" model-id="Nimustine_Hori1987_reference" status="rejected" stale="true" population="patients with malignant brain tumors" measured-compound="ACNU" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

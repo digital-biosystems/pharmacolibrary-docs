@@ -33,8 +33,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Wen YF et al., Population pharmacokinetics, pharmacody…, British journal of clinical… (2023)
   ·  DOI: [10.1111/bcp.15792](https://doi.org/10.1111/bcp.15792)
 
-## Model component
-<dbs-pgx drug="allopurinol" model-id="Allopurinol_Wen2023_base" status="extracted" stale="true" population="Hmong adults with gout and/or hyperuricemia" measured-compound="oxypurinol" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="allopurinol" model-id="Allopurinol_Wen2023_base" status="extracted" stale="true" population="Hmong adults with gout and/or hyperuricemia" measured-compound="oxypurinol" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 3 extracted.

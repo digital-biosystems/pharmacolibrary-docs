@@ -32,8 +32,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 van Steeg TJ et al., Pharmacokinetic-pharmacodynamic modelli…, British journal of pharmaco… (2007)
   ·  DOI: [10.1038/sj.bjp.0707234](https://doi.org/10.1038/sj.bjp.0707234)
 
-## Model component
-<dbs-pgx drug="atenolol" model-id="Atenolol_van2007_reference" status="rejected" stale="true" population="WKY rats" measured-compound="S(-)-atenolol" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="atenolol" model-id="Atenolol_van2007_reference" status="rejected" stale="true" population="WKY rats" measured-compound="S(-)-atenolol" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

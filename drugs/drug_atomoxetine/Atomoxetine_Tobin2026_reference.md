@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the val
 Tobin KV et al., Understanding Atomoxetine Exposure Vari…, Journal of clinical pharmac… (2026)
   ·  DOI: [10.1002/jcph.70168](https://doi.org/10.1002/jcph.70168)
 
-## Model component
-<dbs-pgx drug="atomoxetine" model-id="Atomoxetine_Tobin2026_reference" status="extracted" stale="true" population="children and adolescents with ADHD" measured-compound="atomoxetine" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="atomoxetine" model-id="Atomoxetine_Tobin2026_reference" status="extracted" stale="true" population="children and adolescents with ADHD" measured-compound="atomoxetine" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 3 extracted, plus 4 covariate effects.

@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 An G et al., Population Pharmacokinetics of Darbepoe…, Journal of pharmaceutical s… (2017)
   ·  DOI: [10.1016/j.xphs.2017.02.001](https://doi.org/10.1016/j.xphs.2017.02.001)
 
-## Model component
-<dbs-pgx drug="darbepoetin alfa" model-id="DarbepoetinAlfa_An2017_reference" status="rejected" stale="true" population="infants" measured-compound="darbepoetin_alfa" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="darbepoetin alfa" model-id="DarbepoetinAlfa_An2017_reference" status="rejected" stale="true" population="infants" measured-compound="darbepoetin_alfa" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 3 extracted.

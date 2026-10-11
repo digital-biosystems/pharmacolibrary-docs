@@ -23,8 +23,7 @@
 Setiawan E et al., Population Pharmacokinetics and Dosing…, Clinical pharmacokinetics (2023)
   ·  DOI: [10.1007/s40262-023-01219-5](https://doi.org/10.1007/s40262-023-01219-5)
 
-## Model component
-<dbs-pgx drug="sulbactam" model-id="Sulbactam_Setiawan2023_reference" status="rejected" stale="false" population="hospitalised adult patients" measured-compound="sulbactam" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="sulbactam" model-id="Sulbactam_Setiawan2023_reference" status="rejected" stale="false" population="hospitalised adult patients" measured-compound="sulbactam" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 5 extracted.

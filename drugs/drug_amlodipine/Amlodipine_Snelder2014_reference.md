@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on paramet
 Snelder N et al., Drug effects on the CVS in conscious ra…, British journal of pharmaco… (2014)
   ·  DOI: [10.1111/bph.12824](https://doi.org/10.1111/bph.12824)
 
-## Model component
-<dbs-pgx drug="amlodipine" model-id="Amlodipine_Snelder2014_reference" status="extracted" stale="true" population="" measured-compound="amlodipine" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="amlodipine" model-id="Amlodipine_Snelder2014_reference" status="extracted" stale="true" population="" measured-compound="amlodipine" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 3 extracted.

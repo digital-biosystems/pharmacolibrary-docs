@@ -21,8 +21,7 @@
 Freyer G et al., Population pharmacokinetics of doxorubi…, British journal of clinical… (2000)
   ·  DOI: [10.1046/j.1365-2125.2000.00269.x](https://doi.org/10.1046/j.1365-2125.2000.00269.x)
 
-## Model component
-<dbs-pgx drug="ifosfamide" model-id="Ifosfamide_Freyer2000_reference" status="rejected" stale="false" population="small cell lung cancer patients" measured-compound="ifosfamide" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="ifosfamide" model-id="Ifosfamide_Freyer2000_reference" status="rejected" stale="false" population="small cell lung cancer patients" measured-compound="ifosfamide" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

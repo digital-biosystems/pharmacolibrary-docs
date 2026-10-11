@@ -23,8 +23,7 @@
 Oishi M et al., Population pharmacokinetics of the 5-hy…, Journal of clinical pharmac… (2014)
   ·  DOI: [10.1002/jcph.274](https://doi.org/10.1002/jcph.274)
 
-## Model component
-<dbs-pgx drug="fesoterodine" model-id="Fesoterodine_Oishi2014_reference" status="rejected" stale="false" population="overactive bladder patients" measured-compound="5-hydroxymethyl tolterodine" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="fesoterodine" model-id="Fesoterodine_Oishi2014_reference" status="rejected" stale="false" population="overactive bladder patients" measured-compound="5-hydroxymethyl tolterodine" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

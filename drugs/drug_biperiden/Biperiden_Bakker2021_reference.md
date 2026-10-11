@@ -20,8 +20,7 @@
 Bakker C et al., Biperiden Challenge Model in Healthy El…, Journal of clinical pharmac… (2021)
   ·  DOI: [10.1002/jcph.1913](https://doi.org/10.1002/jcph.1913)
 
-## Model component
-<dbs-pgx drug="biperiden" model-id="Biperiden_Bakker2021_reference" status="needs_review" stale="false" population="healthy elderly subjects" measured-compound="biperiden" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="biperiden" model-id="Biperiden_Bakker2021_reference" status="needs_review" stale="false" population="healthy elderly subjects" measured-compound="biperiden" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 2 extracted.

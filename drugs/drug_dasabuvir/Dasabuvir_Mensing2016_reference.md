@@ -29,8 +29,7 @@ The record lists the apparent intercompartmental clearance between the central a
 Mensing S et al., Population Pharmacokinetics of Paritapr…, The AAPS journal (2016)
   ·  DOI: [10.1208/s12248-015-9846-1](https://doi.org/10.1208/s12248-015-9846-1)
 
-## Model component
-<dbs-pgx drug="dasabuvir" model-id="Dasabuvir_Mensing2016_reference" status="extracted" stale="true" population="adults with chronic HCV genotype 1 infection" measured-compound="dasabuvir" parameterization="apparent" topology="parent_metabolite"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="dasabuvir" model-id="Dasabuvir_Mensing2016_reference" status="extracted" stale="true" population="adults with chronic HCV genotype 1 infection" measured-compound="dasabuvir" parameterization="apparent" topology="parent_metabolite"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 5 extracted.

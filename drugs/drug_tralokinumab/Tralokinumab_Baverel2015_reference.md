@@ -20,8 +20,7 @@
 Baverel PG et al., Pharmacokinetics of tralokinumab in ado…, British journal of clinical… (2015)
   ·  DOI: [10.1111/bcp.12725](https://doi.org/10.1111/bcp.12725)
 
-## Model component
-<dbs-pgx drug="tralokinumab" model-id="Tralokinumab_Baverel2015_reference" status="rejected" stale="false" population="adolescents with asthma" measured-compound="tralokinumab" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="tralokinumab" model-id="Tralokinumab_Baverel2015_reference" status="rejected" stale="false" population="adolescents with asthma" measured-compound="tralokinumab" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

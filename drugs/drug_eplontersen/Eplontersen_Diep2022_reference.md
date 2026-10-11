@@ -20,8 +20,7 @@
 Diep JK et al., Population pharmacokinetic/pharmacodyna…, British journal of clinical… (2022)
   ·  DOI: [10.1111/bcp.15468](https://doi.org/10.1111/bcp.15468)
 
-## Model component
-<dbs-pgx drug="eplontersen" model-id="Eplontersen_Diep2022_reference" status="rejected" stale="false" population="healthy volunteers" measured-compound="eplontersen" parameterization="mechanistic" topology="parent_metabolite"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="eplontersen" model-id="Eplontersen_Diep2022_reference" status="rejected" stale="false" population="healthy volunteers" measured-compound="eplontersen" parameterization="mechanistic" topology="parent_metabolite"></div>
 
 **Model structure:** parent + metabolite; no model was built for this record.  
 **Parameters:** 2 extracted.

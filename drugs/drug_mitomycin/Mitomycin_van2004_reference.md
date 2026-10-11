@@ -20,8 +20,7 @@
 van Ruth S et al., Population pharmacokinetics and pharmac…, Clinical pharmacokinetics (2004)
   ·  DOI: [10.2165/00003088-200443020-00005](https://doi.org/10.2165/00003088-200443020-00005)
 
-## Model component
-<dbs-pgx drug="mitomycin" model-id="Mitomycin_van2004_reference" status="rejected" stale="false" population="patients undergoing cytoreductive surgery with HIPEC" measured-compound="mitomycin" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="mitomycin" model-id="Mitomycin_van2004_reference" status="rejected" stale="false" population="patients undergoing cytoreductive surgery with HIPEC" measured-compound="mitomycin" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment; no model was built for this record.  
 **Parameters:** 4 extracted.

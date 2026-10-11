@@ -20,8 +20,7 @@
 Tanneau L et al., Population Pharmacokinetics of Delamani…, Clinical pharmacokinetics (2022)
   ·  DOI: [10.1007/s40262-022-01133-2](https://doi.org/10.1007/s40262-022-01133-2)
 
-## Model component
-<dbs-pgx drug="delamanid" model-id="Delamanid_Tanneau2022_reference" status="rejected" stale="false" population="adults with drug-resistant tuberculosis" measured-compound="delamanid" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="delamanid" model-id="Delamanid_Tanneau2022_reference" status="rejected" stale="false" population="adults with drug-resistant tuberculosis" measured-compound="delamanid" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

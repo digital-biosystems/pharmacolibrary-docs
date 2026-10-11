@@ -21,8 +21,7 @@
 Ravva P et al., Population pharmacokinetic analysis of…, British journal of clinical… (2009)
   ·  DOI: [10.1111/j.1365-2125.2009.03520.x](https://doi.org/10.1111/j.1365-2125.2009.03520.x)
 
-## Model component
-<dbs-pgx drug="varenicline" model-id="Varenicline_Ravva2009_reference" status="rejected" stale="false" population="adult smokers" measured-compound="varenicline" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="varenicline" model-id="Varenicline_Ravva2009_reference" status="rejected" stale="false" population="adult smokers" measured-compound="varenicline" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 6 extracted.

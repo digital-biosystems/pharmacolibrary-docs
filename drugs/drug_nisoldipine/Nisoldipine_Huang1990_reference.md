@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 ## Citation
 Huang Y et al., Pharmacokinetics of m-nisoldipine in ra…, Zhongguo yao li xue bao = A… (1990)
 
-## Model component
-<dbs-pgx drug="nisoldipine" model-id="Nisoldipine_Huang1990_reference" status="rejected" stale="true" population="rabbits and rats" measured-compound="m-nisoldipine" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="nisoldipine" model-id="Nisoldipine_Huang1990_reference" status="rejected" stale="true" population="rabbits and rats" measured-compound="m-nisoldipine" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 7 extracted.

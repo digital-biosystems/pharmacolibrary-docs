@@ -20,8 +20,7 @@
 Hayato S et al., Population pharmacokinetic-pharmacodyna…, CPT: pharmacometrics & syst… (2022)
   ·  DOI: [10.1002/psp4.12862](https://doi.org/10.1002/psp4.12862)
 
-## Model component
-<dbs-pgx drug="lecanemab" model-id="Lecanemab_Hayato2022_reference" status="rejected" stale="false" population="adults with early Alzheimer&#39;s disease" measured-compound="lecanemab" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="lecanemab" model-id="Lecanemab_Hayato2022_reference" status="rejected" stale="false" population="adults with early Alzheimer&#39;s disease" measured-compound="lecanemab" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment; no model was built for this record.  
 **Parameters:** 5 extracted, plus 6 covariate effects.

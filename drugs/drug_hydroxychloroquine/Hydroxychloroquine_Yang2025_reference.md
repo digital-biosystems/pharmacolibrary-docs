@@ -21,8 +21,7 @@
 Yang C et al., Population pharmacokinetics of long-ter…, British journal of clinical… (2025)
   ·  DOI: [10.1111/bcp.16257](https://doi.org/10.1111/bcp.16257)
 
-## Model component
-<dbs-pgx drug="hydroxychloroquine" model-id="Hydroxychloroquine_Yang2025_reference" status="extracted" stale="false" population="patients with rheumatic diseases on long-term HCQ" measured-compound="hydroxychloroquine" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="hydroxychloroquine" model-id="Hydroxychloroquine_Yang2025_reference" status="extracted" stale="false" population="patients with rheumatic diseases on long-term HCQ" measured-compound="hydroxychloroquine" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 4 extracted.

@@ -22,8 +22,7 @@
 ## Citation
 Millart H et al., [Bone and blood levels of azlocillin af…, Presse medicale (Paris, Fra… (1984)
 
-## Model component
-<dbs-pgx drug="azlocillin" model-id="Azlocillin_Millart1984_reference" status="needs_review" stale="false" population="dogs" measured-compound="azlocillin" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="azlocillin" model-id="Azlocillin_Millart1984_reference" status="needs_review" stale="false" population="dogs" measured-compound="azlocillin" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 3 extracted.

@@ -21,8 +21,7 @@
 Solas C et al., Minimal effect of MDR1 and CYP3A5 genet…, British journal of clinical… (2007)
   ·  DOI: [10.1111/j.1365-2125.2007.02903.x](https://doi.org/10.1111/j.1365-2125.2007.02903.x)
 
-## Model component
-<dbs-pgx drug="indinavir" model-id="Indinavir_Solas2007_reference" status="rejected" stale="false" population="HIV-infected patients" measured-compound="indinavir" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="indinavir" model-id="Indinavir_Solas2007_reference" status="rejected" stale="false" population="HIV-infected patients" measured-compound="indinavir" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

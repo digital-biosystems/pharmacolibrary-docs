@@ -21,8 +21,7 @@
 Lindholm AØ et al., Concentration and Detection Time of Nit…, Drug testing and analysis (2026)
   ·  DOI: [10.1002/dta.70053](https://doi.org/10.1002/dta.70053)
 
-## Model component
-<dbs-pgx drug="nitrous oxide" model-id="NitrousOxide_Lindholm2026_reference" status="rejected" stale="false" population="healthy adults" measured-compound="nitrous_oxide" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="nitrous oxide" model-id="NitrousOxide_Lindholm2026_reference" status="rejected" stale="false" population="healthy adults" measured-compound="nitrous_oxide" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 6 extracted.

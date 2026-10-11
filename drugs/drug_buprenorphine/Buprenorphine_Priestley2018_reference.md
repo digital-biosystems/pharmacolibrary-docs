@@ -31,8 +31,7 @@ Independently confirmed by `gpt-oss:120b`.
 Priestley T et al., Converting from Transdermal to Buccal F…, Pain medicine (Malden, Mass… (2018)
   ·  DOI: [10.1093/pm/pnx235](https://doi.org/10.1093/pm/pnx235)
 
-## Model component
-<dbs-pgx drug="buprenorphine" model-id="Buprenorphine_Priestley2018_reference" status="needs_review" stale="true" population="healthy adults" measured-compound="buprenorphine" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="buprenorphine" model-id="Buprenorphine_Priestley2018_reference" status="needs_review" stale="true" population="healthy adults" measured-compound="buprenorphine" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment; no model was built for this record.  
 **Parameters:** 8 extracted.

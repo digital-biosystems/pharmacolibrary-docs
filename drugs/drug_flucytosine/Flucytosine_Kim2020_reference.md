@@ -25,8 +25,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on paramet
 Kim HY et al., Saliva for Precision Dosing of Antifung…, Frontiers in pharmacology (2020)
   ·  DOI: [10.3389/fphar.2020.00894](https://doi.org/10.3389/fphar.2020.00894)
 
-## Model component
-<dbs-pgx drug="flucytosine" model-id="Flucytosine_Kim2020_reference" status="extracted" stale="false" population="" measured-compound="flucytosine" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="flucytosine" model-id="Flucytosine_Kim2020_reference" status="extracted" stale="false" population="" measured-compound="flucytosine" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameters:** 2 extracted.

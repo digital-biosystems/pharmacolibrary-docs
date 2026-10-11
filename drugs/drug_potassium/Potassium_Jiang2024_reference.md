@@ -21,8 +21,7 @@
 Jiang J et al., Population pharmacokinetic/pharmacodyna…, Journal of pharmacokinetics… (2024)
   ·  DOI: [10.1007/s10928-023-09882-8](https://doi.org/10.1007/s10928-023-09882-8)
 
-## Model component
-<dbs-pgx drug="Potassium" model-id="Potassium_Jiang2024_reference" status="extracted" stale="false" population="" measured-compound="potassium" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="Potassium" model-id="Potassium_Jiang2024_reference" status="extracted" stale="false" population="" measured-compound="potassium" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment, IV mammillary model — template `PK_2C`.  
 **Parameters:** 4 extracted.

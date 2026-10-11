@@ -31,8 +31,7 @@ Independently confirmed by `gpt-oss:120b`.
 Meredith PA et al., Application of pharmacokinetic-pharmaco…, Journal of cardiovascular p… (1985)
   ·  DOI: [10.1097/00005344-198505000-00019](https://doi.org/10.1097/00005344-198505000-00019)
 
-## Model component
-<dbs-pgx drug="doxazosin" model-id="Doxazosin_Meredith1985_reference" status="rejected" stale="true" population="normotensive volunteers" measured-compound="doxazosin" parameterization="mechanistic" topology="parent_metabolite"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="doxazosin" model-id="Doxazosin_Meredith1985_reference" status="rejected" stale="true" population="normotensive volunteers" measured-compound="doxazosin" parameterization="mechanistic" topology="parent_metabolite"></div>
 
 **Model structure:** parent + metabolite; no model was built for this record.  
 **Parameters:** 0 extracted.

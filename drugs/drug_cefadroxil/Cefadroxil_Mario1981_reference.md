@@ -19,8 +19,7 @@
 ## Citation
 Mariño EL et al., The pharmacokinetics of cefadroxil asso…, International journal of cl… (1981)
 
-## Model component
-<dbs-pgx drug="cefadroxil" model-id="Cefadroxil_Mario1981_reference" status="rejected" stale="false" population="unknown" measured-compound="cefadroxil" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="cefadroxil" model-id="Cefadroxil_Mario1981_reference" status="rejected" stale="false" population="unknown" measured-compound="cefadroxil" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 1 extracted.

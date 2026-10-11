@@ -1,0 +1,126 @@
+/* ── sites page ────────────────────────────────────────────────────────────
+   Only the /sites route uses these (pk-sites.js + the ADME database, fetched by the
+   plugin below and never on any other page). Evidence tiers are three light hues —
+   cyan (ADME prose), azure (paper PGx gene), violet (DrugBank actor) — each lighter and
+   cooler than every drug colour, so a tier reads apart from its neighbour (the old single
+   blue ramp did not) and from the drug dots drawn on it; the drug colours are the fixed
+   categorical order pk-sites.js carries. */
+:root { --pks-ev0: #f1f0eb; --pks-ev1: #9be3e6; --pks-ev2: #8cc4f7; --pks-ev3: #b9a3f0;
+  --pks-kid1: #f0a3a3; --pks-kid2: #d94a4a; --pks-kid3: #a3201f;   /* the kidney's and the blood's own ramp on the body */
+  --pks-warn: #b4530f; --pks-organ: #e6e4dd; --pks-organ-line: #b9b5aa; --pks-body: #f3f2ed; }
+.pks-results { display: flex; flex-wrap: wrap; gap: 6px; margin: 4px 0 8px; }
+.pks-results button { font: inherit; font-size: 13px; padding: 4px 10px; cursor: pointer;
+  border: 1px solid #cbd5e1; border-radius: 999px; background: #fff; color: #334155; }
+.pks-results button:hover { border-color: var(--theme-color, #0074d9); color: var(--theme-color, #0074d9); }
+.pks-results button small { color: #94a3b8; }
+.pks-chips { display: flex; flex-wrap: wrap; gap: 8px; margin: 6px 0 10px; }
+.pks-chip { display: inline-flex; align-items: center; gap: 7px; padding: 4px 8px 4px 5px;
+  border: 1px solid #cbd5e1; border-radius: 999px; background: #fff; font-size: 13px;
+  font-weight: 500; color: #1e293b; cursor: pointer; }
+.pks-chip[aria-pressed="true"] { border-color: #1e293b; box-shadow: inset 0 0 0 1px #1e293b; }
+.pks-chip .sw { width: 18px; height: 18px; border-radius: 50%; display: inline-grid;
+  place-items: center; color: #fff; font: 600 10px ui-monospace, Menlo, monospace; }
+.pks-chip .x { color: #94a3b8; padding-left: 4px; font-size: 14px; line-height: 1; }
+.pks-chip .x:hover { color: #b91c1c; }
+.pks-controls label { display: inline-flex; gap: 5px; align-items: center; cursor: pointer; }
+.pks-sex { gap: 6px; }
+.pks-pgxrow select { font: inherit; font-size: 13px; padding: 4px 6px; max-width: 320px; }
+.pks-pgxchip { background: #eef2ff; }
+.pks-filebtn { cursor: pointer; }
+.pks-pgxm { position: absolute; right: 1px; top: -1px; font-size: 10px; line-height: 1; color: #111827; }
+.pks-hm td { position: relative; }
+.pks-body .pgxm { font-size: 10px; fill: #111827; }
+table.pks-pgx { border-collapse: collapse; font-size: 13px; }
+table.pks-pgx th, table.pks-pgx td { border-bottom: 1px solid #e2e8f0; padding: 6px 8px; vertical-align: top; text-align: left; }
+table.pks-pgx td i { display: inline-block; width: 10px; height: 10px; border-radius: 50%; margin-right: 5px; }
+.pks-gl { margin-bottom: 4px; } .pks-glsrc { font-size: 11px; font-weight: 600; background: #e2e8f0; border-radius: 3px; padding: 0 4px; }
+.pks-sexbtn[aria-pressed="true"] { background: #1e293b; color: #fff; border-color: #1e293b; }
+.pks-controls input[type=checkbox] { min-width: 0; width: auto; margin: 0; }
+.pks-evkey { display: flex; gap: 12px; flex-wrap: wrap; font-size: 12px; color: #475569; margin: 6px 0 4px; }
+.pks-evkey i { display: inline-block; width: 13px; height: 13px; border-radius: 3px;
+  border: 1px solid #cbd5e1; vertical-align: -2px; margin-right: 4px; }
+.pks-evkey i.e0 { background: var(--pks-ev0); } .pks-evkey i.e1 { background: var(--pks-ev1); }
+.pks-evkey i.e2 { background: var(--pks-ev2); } .pks-evkey i.e3 { background: var(--pks-ev3); }
+.pks-evkey i.aff { box-shadow: inset 0 0 0 2px var(--pks-warn); }
+.pks-evkey i.dot { border-radius: 50%; width: 9px; height: 9px; background: #64748b; border: 2px solid #64748b; box-sizing: border-box; }
+.pks-scroll { overflow-x: auto; }
+/* who-affects-whom: the partner codes on a heat-map row label and the directed matrix */
+.pks-partners { font-size: 11px; color: #64748b; white-space: nowrap; margin-left: 4px; }
+.pks-code { display: inline-block; font: 600 10.5px ui-monospace, Menlo, monospace; color: #1e293b;
+  border: 1px solid #cbd5e1; border-radius: 999px; padding: 0 5px 0 3px; margin-left: 2px; background: #fff; }
+.pks-code i, .pks-hm th.drug .pks-code i { display: inline-block; width: 8px; height: 8px; border-radius: 50%; margin-right: 3px; vertical-align: 0; }
+.pks-tbl a.pks-doi { font: 500 10.5px ui-monospace, Menlo, monospace; border: 1px solid #cbd5e1;
+  border-radius: 999px; padding: 0 5px; margin-left: 2px; text-decoration: none; }
+.pks-ddi { border-collapse: separate; border-spacing: 2px; font-size: 12px; }
+.pks-ddi th { font-weight: 500; color: #475569; text-align: left; padding: 3px 8px; white-space: nowrap; vertical-align: bottom; }
+.pks-ddi th.corner span { font: 500 11px ui-monospace, Menlo, monospace; letter-spacing: .04em; text-transform: uppercase; color: #94a3b8; }
+.pks-ddi th i { display: inline-block; width: 10px; height: 10px; border-radius: 2px; margin-right: 6px; vertical-align: -1px; }
+.pks-ddi tr.pks-pgxrow th.perp { background: #eef2ff; border-radius: 4px; }
+.pks-ddi th i.pgx { background: transparent; border: 1.5px dashed #4a3aa7; }
+.pks-ddi tr.pks-pgxrow td.hit { background: #e0e7ff; }
+.pks-ddi td { min-width: 96px; height: 30px; padding: 4px 8px; border-radius: 4px; background: var(--pks-ev0); vertical-align: middle; }
+.pks-ddi td.self { background: repeating-linear-gradient(135deg, #e2e8f0 0 3px, transparent 3px 7px); }
+.pks-ddi td.hit { background: #fff; box-shadow: inset 0 0 0 2px var(--pks-warn); line-height: 1.5; }
+.pks-ddi .pks-act { white-space: nowrap; }
+.pks-ddi .dim, .pks-ddi tr.dim th, .pks-ddi tr.dim td { opacity: .35; }
+.pks-hm { border-collapse: separate; border-spacing: 2px; font-size: 12px; }
+.pks-hm th { font-weight: 500; color: #475569; text-align: left; padding: 2px 6px; white-space: nowrap; }
+.pks-hm th.proc { font: 500 11px ui-monospace, Menlo, monospace; letter-spacing: .06em;
+  text-transform: uppercase; color: #94a3b8; border-bottom: 1px solid #cbd5e1; padding-bottom: 4px; }
+.pks-hm th.tissue { height: 118px; vertical-align: bottom; padding: 0; }
+.pks-hm th.tissue span { writing-mode: vertical-rl; transform: rotate(180deg); display: block;
+  font-size: 11px; padding: 6px 0; }
+.pks-hm th.drug { font-weight: 600; padding-right: 10px; }
+.pks-hm th.drug i { display: inline-block; width: 10px; height: 10px; border-radius: 50%; margin-right: 6px; }
+.pks-hm td { width: 30px; height: 30px; border-radius: 4px; background: var(--pks-ev0); }
+.pks-hm td.e1 { background: var(--pks-ev1); } .pks-hm td.e2 { background: var(--pks-ev2); }
+.pks-hm td.e3 { background: var(--pks-ev3); }
+.pks-hm td.aff { box-shadow: inset 0 0 0 2px var(--pks-warn); position: relative; }
+/* perpetrator dots in an affected cell: filled = inhibits, hollow = induces, colour = the drug */
+.pks-hm .pks-dots { position: absolute; right: 3px; bottom: 3px; display: flex; gap: 2px; pointer-events: none; }
+.pks-hm .pks-dots i { display: block; width: 7px; height: 7px; border-radius: 50%; box-sizing: border-box;
+  border: 2px solid transparent; box-shadow: 0 0 0 1px #fff; }
+.pks-hm .pks-dots i.ind { background: #fff; }
+.pks-hm td:focus-visible { outline: 2px solid #1e293b; outline-offset: 1px; }
+.pks-hm .gap { background: transparent; width: 8px; }
+.pks-hm tr.dim { opacity: .3; }
+.pks-tip { position: fixed; z-index: 40; pointer-events: none; background: #1e293b; color: #f8fafc;
+  padding: 8px 10px; border-radius: 6px; font-size: 12px; max-width: 320px; line-height: 1.35;
+  box-shadow: 0 4px 14px rgba(15, 23, 42, .25); opacity: 0; transition: opacity .08s; }
+.pks-tip b { display: block; margin-bottom: 2px; } .pks-tip small { opacity: .75; }
+.pks-grid { display: grid; grid-template-columns: 2fr 1fr; gap: 20px; align-items: start; }
+@media (max-width: 760px) { .pks-grid { grid-template-columns: 1fr; } }
+.pks-body { width: 100%; height: auto; max-width: 800px; display: block; margin: 0 auto; }
+/* the EBI drawing: silhouette grey, organs coloured per id by pk-sites.js (inline style) */
+.pks-body .anat #LAYER_OUTLINE { fill: #b9b5aa; opacity: .9; }
+.pks-body .anat .organ { cursor: pointer; transition: fill-opacity .12s; }
+.pks-body .anat .organ:hover { fill-opacity: 1 !important; }
+.pks-body .anat .organ.hidden { pointer-events: none; }
+.pks-body .lead { fill: none; stroke: #94a3b8; stroke-width: .8; stroke-dasharray: 2 2; opacity: .8; }
+.pks-body .credit { font: 9px system-ui, sans-serif; fill: #94a3b8; }
+.pks-body a:hover .credit { fill: var(--theme-color, #0074d9); }
+.pks-body .lbl { font: 500 10px ui-monospace, Menlo, monospace; fill: #475569; letter-spacing: .04em; text-transform: uppercase; }
+.pks-body .slot { stroke: #fff; stroke-width: 1.2; } .pks-body .slot.dim { opacity: .25; }
+.pks-body .slot.e0 { fill: var(--pks-ev0); } .pks-body .slot.e1 { fill: var(--pks-ev1); }
+.pks-body .slot.e2 { fill: var(--pks-ev2); } .pks-body .slot.e3 { fill: var(--pks-ev3); }
+.pks-body .cd { font: 600 7.5px ui-monospace, Menlo, monospace; fill: #94a3b8; pointer-events: none; }
+.pks-body .cd.on { fill: #1e293b; }   /* the tiers are light: dark letters on them */
+.pks-body .aff { fill: none; stroke: var(--pks-warn); stroke-width: 2; stroke-dasharray: 3 2; }
+.pks-body .arrow { fill: none; stroke-width: 2; marker-end: url(#pks-ah); }
+.pks-detailbox h4 { margin: 0 0 6px; font-size: 14px; } .pks-detailbox h4.warn { color: var(--pks-warn); margin-top: 12px; }
+.pks-detail { border-collapse: collapse; width: 100%; font-size: 12.5px; }
+.pks-detail td, .pks-detail th { text-align: left; padding: 5px 6px; border-bottom: 1px solid #e2e8f0; vertical-align: top; }
+.pks-detail th { color: #475569; font-weight: 500; font-size: 11px; text-transform: uppercase; letter-spacing: .05em; }
+.mono { font-family: ui-monospace, Menlo, monospace; font-size: 12px; }
+.pks-role { display: inline-block; padding: 1px 6px; border-radius: 4px; background: #f1f5f9; font-size: 11px; margin-right: 3px; }
+.pks-role.inhibitor, .pks-role.inducer { background: #fdebd9; color: var(--pks-warn); }
+.pks-row { display: grid; grid-template-columns: auto 1fr; gap: 10px; align-items: baseline;
+  padding: 8px 10px; border: 1px solid #e2e8f0; border-radius: 8px; margin-bottom: 8px; font-size: 13px; }
+.pks-row .who { font-weight: 600; white-space: nowrap; }
+.pks-row .who i { display: inline-block; width: 10px; height: 10px; border-radius: 50%; margin-right: 5px; }
+.pks-row .warn, .pks-detailbox .warn { color: var(--pks-warn); }
+.pks-tbl { border-collapse: collapse; font-size: 12px; }
+.pks-tbl td, .pks-tbl th { border-bottom: 1px solid #e2e8f0; padding: 4px 6px; text-align: left; white-space: nowrap; }
+.pks-tbl .pks-quote { display: inline-block; max-width: 26em; overflow: hidden; text-overflow: ellipsis;
+  vertical-align: bottom; color: #475569; font-style: italic; cursor: help; }
+.pks-empty, .pks-meta { color: #64748b; font-size: 12.5px; }

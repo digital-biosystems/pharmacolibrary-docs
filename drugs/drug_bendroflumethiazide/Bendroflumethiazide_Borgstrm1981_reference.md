@@ -30,8 +30,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Borgström L et al., Pharmacokinetics of bendroflumethiazide…, Journal of pharmacokinetics… (1981)
   ·  DOI: [10.1007/BF01060887](https://doi.org/10.1007/BF01060887)
 
-## Model component
-<dbs-pgx drug="bendroflumethiazide" model-id="Bendroflumethiazide_Borgstrm1981_reference" status="rejected" stale="true" population="healthy male volunteers" measured-compound="bendroflumethiazide" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="bendroflumethiazide" model-id="Bendroflumethiazide_Borgstrm1981_reference" status="rejected" stale="true" population="healthy male volunteers" measured-compound="bendroflumethiazide" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 2 extracted.

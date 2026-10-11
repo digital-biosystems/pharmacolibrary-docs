@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 ## Citation
 Butz RF et al., Radioimmunoassay and pharmacokinetic pr…, The Journal of pharmacology… (1981)
 
-## Model component
-<dbs-pgx drug="bupropion" model-id="Bupropion_Butz1981_reference" status="rejected" stale="true" population="beagle dogs" measured-compound="bupropion" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="bupropion" model-id="Bupropion_Butz1981_reference" status="rejected" stale="true" population="beagle dogs" measured-compound="bupropion" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 1 extracted.

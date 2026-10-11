@@ -29,8 +29,7 @@ The paper reports no distribution volume and no clearance or elimination rate; i
 Li Y et al., Population pharmacokinetics and dosing…, British journal of clinical… (2023)
   ·  DOI: [10.1111/bcp.15572](https://doi.org/10.1111/bcp.15572)
 
-## Model component
-<dbs-pgx drug="levetiracetam" model-id="Levetiracetam_Li2023_final" status="needs_review" stale="true" population="women with epilepsy during pregnancy" measured-compound="levetiracetam" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="levetiracetam" model-id="Levetiracetam_Li2023_final" status="needs_review" stale="true" population="women with epilepsy during pregnancy" measured-compound="levetiracetam" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 4 extracted.

@@ -23,8 +23,7 @@
 Xu G et al., Population pharmacokinetics of free and…, European journal of clinica… (2024)
   ·  DOI: [10.1007/s00228-024-03711-8](https://doi.org/10.1007/s00228-024-03711-8)
 
-## Model component
-<dbs-pgx drug="mitoxantrone" model-id="Mitoxantrone_Xu2024_reference" status="rejected" stale="false" population="patients with relapsed/refractory lymphoma or small cell lung cancer" measured-compound="liposome-encapsulated mitoxantrone and free mitoxantrone" parameterization="apparent" topology="general_linear"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="mitoxantrone" model-id="Mitoxantrone_Xu2024_reference" status="rejected" stale="false" population="patients with relapsed/refractory lymphoma or small cell lung cancer" measured-compound="liposome-encapsulated mitoxantrone and free mitoxantrone" parameterization="apparent" topology="general_linear"></div>
 
 **Model structure:** general linear; no model was built for this record.  
 **Parameters:** 4 extracted.

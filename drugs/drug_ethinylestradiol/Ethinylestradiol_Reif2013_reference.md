@@ -21,8 +21,7 @@
 Reif S et al., Characterisation of the pharmacokinetic…, The journal of family plann… (2013)
   ·  DOI: [10.1136/jfprhc-2012-100397](https://doi.org/10.1136/jfprhc-2012-100397)
 
-## Model component
-<dbs-pgx drug="ethinylestradiol" model-id="Ethinylestradiol_Reif2013_reference" status="rejected" stale="false" population="healthy young women" measured-compound="ethinylestradiol" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="ethinylestradiol" model-id="Ethinylestradiol_Reif2013_reference" status="rejected" stale="false" population="healthy young women" measured-compound="ethinylestradiol" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 9 extracted.

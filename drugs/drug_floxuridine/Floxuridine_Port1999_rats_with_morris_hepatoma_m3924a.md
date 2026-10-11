@@ -30,8 +30,7 @@ Nothing in the extracted data describes the drug's disposition, so there is no m
 Port R et al., Local disposition kinetics of floxuridi…, Cancer chemotherapy and pha… (1999)
   ·  DOI: [10.1007/s002800050946](https://doi.org/10.1007/s002800050946)
 
-## Model component
-<dbs-pgx drug="floxuridine" model-id="Floxuridine_Port1999_rats_with_morris_hepatoma_m3924a" status="" stale="true" population="rats with Morris hepatoma M3924A" measured-compound="" parameterization="" topology=""></dbs-pgx>
+<div class="pk-model-meta" hidden drug="floxuridine" model-id="Floxuridine_Port1999_rats_with_morris_hepatoma_m3924a" status="" stale="true" population="rats with Morris hepatoma M3924A" measured-compound="" parameterization="" topology=""></div>
 
 **Model structure:** —; no model was built for this record.  
 **Parameters:** 0 extracted.

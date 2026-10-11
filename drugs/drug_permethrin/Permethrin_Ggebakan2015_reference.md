@@ -22,8 +22,7 @@
 Gögebakan T et al., Single-dose toxicokinetics of permethri…, British poultry science (2015)
   ·  DOI: [10.1080/00071668.2015.1085957](https://doi.org/10.1080/00071668.2015.1085957)
 
-## Model component
-<dbs-pgx drug="permethrin" model-id="Permethrin_Ggebakan2015_reference" status="rejected" stale="false" population="broiler chickens" measured-compound="permethrin" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="permethrin" model-id="Permethrin_Ggebakan2015_reference" status="rejected" stale="false" population="broiler chickens" measured-compound="permethrin" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 8 extracted.

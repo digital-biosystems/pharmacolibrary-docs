@@ -22,8 +22,7 @@
 ## Citation
 Watson AD et al., Levamisole pharmacokinetics and bioavai…, Research in veterinary scie… (1988)
 
-## Model component
-<dbs-pgx drug="levamisole" model-id="Levamisole_Watson1988_reference" status="needs_review" stale="false" population="dogs" measured-compound="levamisole" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="levamisole" model-id="Levamisole_Watson1988_reference" status="needs_review" stale="false" population="dogs" measured-compound="levamisole" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 3 extracted.

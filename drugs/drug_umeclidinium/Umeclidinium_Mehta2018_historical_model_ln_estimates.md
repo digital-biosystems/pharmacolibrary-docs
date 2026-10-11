@@ -23,8 +23,7 @@
 Mehta R et al., Population Pharmacokinetic Analysis of…, Journal of clinical pharmac… (2018)
   ·  DOI: [10.1002/jcph.1253](https://doi.org/10.1002/jcph.1253)
 
-## Model component
-<dbs-pgx drug="umeclidinium" model-id="Umeclidinium_Mehta2018_historical_model_ln_estimates" status="rejected" stale="false" population="patients with symptomatic COPD" measured-compound="umeclidinium" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="umeclidinium" model-id="Umeclidinium_Mehta2018_historical_model_ln_estimates" status="rejected" stale="false" population="patients with symptomatic COPD" measured-compound="umeclidinium" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 5 extracted.

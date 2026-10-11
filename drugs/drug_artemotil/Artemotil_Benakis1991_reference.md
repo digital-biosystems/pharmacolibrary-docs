@@ -22,8 +22,7 @@
 Benakis A et al., Pharmacokinetics of arteether in dog, European journal of drug me… (1991)
   ·  DOI: [10.1007/BF03189978](https://doi.org/10.1007/BF03189978)
 
-## Model component
-<dbs-pgx drug="artemotil" model-id="Artemotil_Benakis1991_reference" status="rejected" stale="false" population="beagle dogs" measured-compound="arteether" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="artemotil" model-id="Artemotil_Benakis1991_reference" status="rejected" stale="false" population="beagle dogs" measured-compound="arteether" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 5 extracted.

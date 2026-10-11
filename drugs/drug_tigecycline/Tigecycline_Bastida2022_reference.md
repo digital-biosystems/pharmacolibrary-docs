@@ -21,8 +21,7 @@
 Bastida C et al., Tigecycline population pharmacokinetics…, The Journal of antimicrobia… (2022)
   ·  DOI: [10.1093/jac/dkac036](https://doi.org/10.1093/jac/dkac036)
 
-## Model component
-<dbs-pgx drug="tigecycline" model-id="Tigecycline_Bastida2022_reference" status="extracted" stale="false" population="critically ill patients with decompensated cirrhosis and severe infections" measured-compound="tigecycline" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="tigecycline" model-id="Tigecycline_Bastida2022_reference" status="extracted" stale="false" population="critically ill patients with decompensated cirrhosis and severe infections" measured-compound="tigecycline" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameters:** 3 extracted.

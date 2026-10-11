@@ -23,8 +23,7 @@
 Ivaturi V et al., Exposure-response analysis after subcut…, British journal of clinical… (2017)
   ·  DOI: [10.1111/bcp.13246](https://doi.org/10.1111/bcp.13246)
 
-## Model component
-<dbs-pgx drug="risperidone" model-id="Risperidone_Ivaturi2017_reference" status="rejected" stale="false" population="adults with acute schizophrenia" measured-compound="risperidone + 9-OH risperidone (active moiety)" parameterization="mechanistic" topology="parent_metabolite"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="risperidone" model-id="Risperidone_Ivaturi2017_reference" status="rejected" stale="false" population="adults with acute schizophrenia" measured-compound="risperidone + 9-OH risperidone (active moiety)" parameterization="mechanistic" topology="parent_metabolite"></div>
 
 **Model structure:** parent + metabolite; no model was built for this record.  
 **Parameters:** 0 extracted.

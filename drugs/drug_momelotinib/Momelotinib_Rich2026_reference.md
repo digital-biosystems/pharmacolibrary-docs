@@ -20,8 +20,7 @@
 Rich B et al., Population Pharmacokinetics and Exposur…, Clinical pharmacology and t… (2026)
   ·  DOI: [10.1002/cpt.70076](https://doi.org/10.1002/cpt.70076)
 
-## Model component
-<dbs-pgx drug="momelotinib" model-id="Momelotinib_Rich2026_reference" status="needs_review" stale="false" population="patients with myelofibrosis and healthy or special-population participants" measured-compound="momelotinib" parameterization="apparent" topology="parent_metabolite"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="momelotinib" model-id="Momelotinib_Rich2026_reference" status="needs_review" stale="false" population="patients with myelofibrosis and healthy or special-population participants" measured-compound="momelotinib" parameterization="apparent" topology="parent_metabolite"></div>
 
 **Model structure:** parent + metabolite; no model was built for this record.  
 **Parameters:** 10 extracted, plus 9 covariate effects.

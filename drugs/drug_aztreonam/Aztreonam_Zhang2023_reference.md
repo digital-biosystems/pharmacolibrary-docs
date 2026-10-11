@@ -20,8 +20,7 @@
 Zhang J et al., Pharmacokinetic/Pharmacodynamic Evaluat…, Pharmaceutics (2023)
   ·  DOI: [10.3390/pharmaceutics15010251](https://doi.org/10.3390/pharmaceutics15010251)
 
-## Model component
-<dbs-pgx drug="aztreonam" model-id="Aztreonam_Zhang2023_reference" status="rejected" stale="false" population="patients with renal impairment and complicated intra-abdominal infection" measured-compound="aztreonam" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="aztreonam" model-id="Aztreonam_Zhang2023_reference" status="rejected" stale="false" population="patients with renal impairment and complicated intra-abdominal infection" measured-compound="aztreonam" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

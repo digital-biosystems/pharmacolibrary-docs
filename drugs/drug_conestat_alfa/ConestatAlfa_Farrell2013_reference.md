@@ -30,8 +30,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Farrell C et al., Population pharmacokinetics of recombin…, British journal of clinical… (2013)
   ·  DOI: [10.1111/bcp.12132](https://doi.org/10.1111/bcp.12132)
 
-## Model component
-<dbs-pgx drug="conestat alfa" model-id="ConestatAlfa_Farrell2013_reference" status="needs_review" stale="true" population="healthy volunteers and hereditary angioedema patients" measured-compound="recombinant human C1 inhibitor" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="conestat alfa" model-id="ConestatAlfa_Farrell2013_reference" status="needs_review" stale="true" population="healthy volunteers and hereditary angioedema patients" measured-compound="recombinant human C1 inhibitor" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 3 extracted, plus 3 covariate effects.

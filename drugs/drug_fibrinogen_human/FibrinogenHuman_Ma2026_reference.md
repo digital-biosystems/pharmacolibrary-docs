@@ -27,8 +27,7 @@
 Ma Y et al., Optimizing Colistin Sulfate Dosing in S…, Drug design, development an… (2026)
   ·  DOI: [10.2147/dddt.s600942](https://doi.org/10.2147/dddt.s600942)
 
-## Model component
-<dbs-pgx drug="fibrinogen, human" model-id="FibrinogenHuman_Ma2026_reference" status="extracted" stale="true" population="" measured-compound="fibrinogen_human" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="fibrinogen, human" model-id="FibrinogenHuman_Ma2026_reference" status="extracted" stale="true" population="" measured-compound="fibrinogen_human" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameters:** 2 extracted.

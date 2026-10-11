@@ -21,8 +21,7 @@
 Mulubwa M et al., Amount of Cycloserine Emanating from Te…, Drugs in R&D (2019)
   ·  DOI: [10.1007/s40268-019-00281-4](https://doi.org/10.1007/s40268-019-00281-4)
 
-## Model component
-<dbs-pgx drug="cycloserine" model-id="Cycloserine_Mulubwa2019v2_reference" status="extracted" stale="false" population="" measured-compound="cycloserine" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="cycloserine" model-id="Cycloserine_Mulubwa2019v2_reference" status="extracted" stale="false" population="" measured-compound="cycloserine" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 3 extracted.

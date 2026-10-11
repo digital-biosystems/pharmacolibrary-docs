@@ -29,8 +29,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Kong W et al., Microdose Cocktail Study Reveals the Ac…, Clinical pharmacology and t… (2025)
   ·  DOI: [10.1002/cpt.3546](https://doi.org/10.1002/cpt.3546)
 
-## Model component
-<dbs-pgx drug="atorvastatin" model-id="Atorvastatin_Kong2025_reference" status="needs_review" stale="false" population="healthy volunteers and end-stage renal disease patients" measured-compound="atorvastatin" parameterization="apparent" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="atorvastatin" model-id="Atorvastatin_Kong2025_reference" status="needs_review" stale="false" population="healthy volunteers and end-stage renal disease patients" measured-compound="atorvastatin" parameterization="apparent" topology="2C"></div>
 
 **Model structure:** 2-compartment, oral mammillary model — template `PK_2C_enteral`.  
 **Parameters:** 5 extracted.

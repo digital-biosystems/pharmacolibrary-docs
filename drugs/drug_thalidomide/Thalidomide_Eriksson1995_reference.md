@@ -21,8 +21,7 @@
 Eriksson T et al., Stereospecific determination, chiral in…, Chirality (1995)
   ·  DOI: [10.1002/chir.530070109](https://doi.org/10.1002/chir.530070109)
 
-## Model component
-<dbs-pgx drug="thalidomide" model-id="Thalidomide_Eriksson1995_reference" status="rejected" stale="false" population="healthy male volunteers" measured-compound="thalidomide" parameterization="mechanistic" topology="general_linear"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="thalidomide" model-id="Thalidomide_Eriksson1995_reference" status="rejected" stale="false" population="healthy male volunteers" measured-compound="thalidomide" parameterization="mechanistic" topology="general_linear"></div>
 
 **Model structure:** general linear; no model was built for this record.  
 **Parameters:** 0 extracted.

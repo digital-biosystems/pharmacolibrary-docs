@@ -29,8 +29,7 @@ Independently confirmed by `gpt-oss:120b`.
 Vizza CD et al., Efficacy of 1, 5, and 20 mg oral silden…, BMC pulmonary medicine (2017)
   ·  DOI: [10.1186/s12890-017-0374-x](https://doi.org/10.1186/s12890-017-0374-x)
 
-## Model component
-<dbs-pgx drug="epoprostenol" model-id="Epoprostenol_Vizza2017_reference" status="extracted" stale="true" population="" measured-compound="epoprostenol" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="epoprostenol" model-id="Epoprostenol_Vizza2017_reference" status="extracted" stale="true" population="" measured-compound="epoprostenol" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 3 extracted.

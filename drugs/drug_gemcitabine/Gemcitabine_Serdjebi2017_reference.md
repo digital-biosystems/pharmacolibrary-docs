@@ -21,8 +21,7 @@
 Serdjebi C et al., Population Pharmacokinetics of Gemcitab…, Therapeutic drug monitoring (2017)
   ·  DOI: [10.1097/FTD.0000000000000399](https://doi.org/10.1097/FTD.0000000000000399)
 
-## Model component
-<dbs-pgx drug="gemcitabine" model-id="Gemcitabine_Serdjebi2017_reference" status="extracted" stale="false" population="adults with pancreatic cancer" measured-compound="gemcitabine" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="gemcitabine" model-id="Gemcitabine_Serdjebi2017_reference" status="extracted" stale="false" population="adults with pancreatic cancer" measured-compound="gemcitabine" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment, IV mammillary model — template `PK_2C`.  
 **Parameters:** 4 extracted.

@@ -21,8 +21,7 @@
 Kauv J et al., Population pharmacokinetics of mycophen…, European journal of pharmac… (2025)
   ·  DOI: [10.1016/j.ejps.2025.107290](https://doi.org/10.1016/j.ejps.2025.107290)
 
-## Model component
-<dbs-pgx drug="mycophenolic acid" model-id="MycophenolicAcid_Kauv2025_reference" status="needs_review" stale="false" population="lung transplant adults" measured-compound="mycophenolic acid" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="mycophenolic acid" model-id="MycophenolicAcid_Kauv2025_reference" status="needs_review" stale="false" population="lung transplant adults" measured-compound="mycophenolic acid" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 3 extracted.

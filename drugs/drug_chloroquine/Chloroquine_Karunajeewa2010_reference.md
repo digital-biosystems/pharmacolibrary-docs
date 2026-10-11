@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the val
 Karunajeewa HA et al., Pharmacokinetics of chloroquine and mon…, Antimicrobial agents and ch… (2010)
   ·  DOI: [10.1128/AAC.01269-09](https://doi.org/10.1128/AAC.01269-09)
 
-## Model component
-<dbs-pgx drug="chloroquine" model-id="Chloroquine_Karunajeewa2010_reference" status="rejected" stale="true" population="pregnant and nonpregnant women (Papua New Guinea)" measured-compound="chloroquine" parameterization="apparent" topology="parent_metabolite"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="chloroquine" model-id="Chloroquine_Karunajeewa2010_reference" status="rejected" stale="true" population="pregnant and nonpregnant women (Papua New Guinea)" measured-compound="chloroquine" parameterization="apparent" topology="parent_metabolite"></div>
 
 **Model structure:** parent + metabolite; no model was built for this record.  
 **Parameters:** 3 extracted.

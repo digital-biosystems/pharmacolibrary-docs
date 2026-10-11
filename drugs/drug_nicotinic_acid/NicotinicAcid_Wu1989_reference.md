@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 ## Citation
 Wu Y et al., [Determination of aspirin and nicotinic…, Yao xue xue bao = Acta phar… (1989)
 
-## Model component
-<dbs-pgx drug="nicotinic acid" model-id="NicotinicAcid_Wu1989_reference" status="needs_review" stale="true" population="rabbits" measured-compound="nicotinic acid" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="nicotinic acid" model-id="NicotinicAcid_Wu1989_reference" status="needs_review" stale="true" population="rabbits" measured-compound="nicotinic acid" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 4 extracted.

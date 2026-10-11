@@ -32,8 +32,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Nielsen CB et al., Pinacidil uptake and effects in the iso…, Pharmacology & toxicology (1989)
   ·  DOI: [10.1111/j.1600-0773.1989.tb00592.x](https://doi.org/10.1111/j.1600-0773.1989.tb00592.x)
 
-## Model component
-<dbs-pgx drug="pinacidil" model-id="Pinacidil_Nielsen1989_reference" status="rejected" stale="true" population="isolated rabbit heart" measured-compound="pinacidil" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="pinacidil" model-id="Pinacidil_Nielsen1989_reference" status="rejected" stale="true" population="isolated rabbit heart" measured-compound="pinacidil" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

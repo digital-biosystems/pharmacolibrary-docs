@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on `parame
 Fillastre JP et al., Ofloxacin pharmacokinetics in renal fai…, Antimicrobial agents and ch… (1987)
   ·  DOI: [10.1128/AAC.31.2.156](https://doi.org/10.1128/AAC.31.2.156)
 
-## Model component
-<dbs-pgx drug="ofloxacin" model-id="Ofloxacin_Fillastre1987_reference" status="" stale="true" population="subjects with normal renal function and uremic patients" measured-compound="" parameterization="" topology=""></dbs-pgx>
+<div class="pk-model-meta" hidden drug="ofloxacin" model-id="Ofloxacin_Fillastre1987_reference" status="" stale="true" population="subjects with normal renal function and uremic patients" measured-compound="" parameterization="" topology=""></div>
 
 **Model structure:** —; no model was built for this record.  
 **Parameters:** 0 extracted.

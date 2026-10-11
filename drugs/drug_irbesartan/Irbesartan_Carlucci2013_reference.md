@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on paramet
 Carlucci L et al., Pharmacokinetics and pharmacodynamics (…, Polish journal of veterinar… (2013)
   ·  DOI: [10.2478/pjvs-2013-0088](https://doi.org/10.2478/pjvs-2013-0088)
 
-## Model component
-<dbs-pgx drug="irbesartan" model-id="Irbesartan_Carlucci2013_reference" status="extracted" stale="true" population="healthy Beagle dogs" measured-compound="irbesartan" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="irbesartan" model-id="Irbesartan_Carlucci2013_reference" status="extracted" stale="true" population="healthy Beagle dogs" measured-compound="irbesartan" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameters:** 2 extracted.

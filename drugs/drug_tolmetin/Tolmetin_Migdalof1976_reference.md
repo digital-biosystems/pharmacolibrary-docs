@@ -22,8 +22,7 @@
 ## Citation
 Migdalof BH et al., The time course of tolmetin and its met…, Drug metabolism and disposi… (1976)
 
-## Model component
-<dbs-pgx drug="tolmetin" model-id="Tolmetin_Migdalof1976_reference" status="rejected" stale="false" population="rats and mice" measured-compound="tolmetin" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="tolmetin" model-id="Tolmetin_Migdalof1976_reference" status="rejected" stale="false" population="rats and mice" measured-compound="tolmetin" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 1 extracted.

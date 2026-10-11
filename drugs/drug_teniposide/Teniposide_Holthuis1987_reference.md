@@ -27,8 +27,7 @@ Nothing in the extracted data describes the drug's disposition, so there is no m
 ## Citation
 Holthuis JJ et al., Pharmacokinetics of high-dose teniposide, Cancer treatment reports (1987)
 
-## Model component
-<dbs-pgx drug="teniposide" model-id="Teniposide_Holthuis1987_reference" status="rejected" stale="true" population="cancer patients receiving high-dose teniposide" measured-compound="teniposide" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="teniposide" model-id="Teniposide_Holthuis1987_reference" status="rejected" stale="true" population="cancer patients receiving high-dose teniposide" measured-compound="teniposide" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

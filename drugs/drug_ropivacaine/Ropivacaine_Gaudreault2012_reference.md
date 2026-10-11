@@ -21,8 +21,7 @@
 Gaudreault F et al., A population pharmacokinetic model for…, Journal of pharmacokinetics… (2012)
   ·  DOI: [10.1007/s10928-012-9275-z](https://doi.org/10.1007/s10928-012-9275-z)
 
-## Model component
-<dbs-pgx drug="ropivacaine" model-id="Ropivacaine_Gaudreault2012_reference" status="rejected" stale="false" population="orthopedic patients" measured-compound="ropivacaine" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="ropivacaine" model-id="Ropivacaine_Gaudreault2012_reference" status="rejected" stale="false" population="orthopedic patients" measured-compound="ropivacaine" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

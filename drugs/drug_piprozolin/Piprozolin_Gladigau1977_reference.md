@@ -29,8 +29,7 @@ Independently confirmed by `gpt-oss:120b`.
 ## Citation
 Gladigau V et al., [Metabolism and pharmacokinetics of pip…, Arzneimittel-Forschung (1977)
 
-## Model component
-<dbs-pgx drug="piprozolin" model-id="Piprozolin_Gladigau1977_reference" status="rejected" stale="false" population="rats, dogs, and humans" measured-compound="piprozoline" parameterization="mechanistic" topology="parent_metabolite"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="piprozolin" model-id="Piprozolin_Gladigau1977_reference" status="rejected" stale="false" population="rats, dogs, and humans" measured-compound="piprozoline" parameterization="mechanistic" topology="parent_metabolite"></div>
 
 **Model structure:** parent + metabolite; no model was built for this record.  
 **Parameters:** 0 extracted.

@@ -30,8 +30,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Uematsu T et al., Pharmacokinetics and safety of l-carnit…, European journal of clinica… (1988)
   ·  DOI: [10.1007/BF00614562](https://doi.org/10.1007/BF00614562)
 
-## Model component
-<dbs-pgx drug="levocarnitine" model-id="Levocarnitine_Uematsu1988_reference" status="rejected" stale="true" population="healthy subjects" measured-compound="l-carnitine" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="levocarnitine" model-id="Levocarnitine_Uematsu1988_reference" status="rejected" stale="true" population="healthy subjects" measured-compound="l-carnitine" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

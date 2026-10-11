@@ -29,8 +29,7 @@ No clearance, volume or rate constant of the model is reported in it. No paramet
 Riva E et al., Pharmacokinetics of amiodarone in man, Journal of cardiovascular p… (1982)
   ·  DOI: [10.1097/00005344-198203000-00015](https://doi.org/10.1097/00005344-198203000-00015)
 
-## Model component
-<dbs-pgx drug="amiodarone" model-id="Amiodarone_Riva1982_reference" status="rejected" stale="true" population="healthy volunteers and patients with supraventricular tachycardia" measured-compound="amiodarone" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="amiodarone" model-id="Amiodarone_Riva1982_reference" status="rejected" stale="true" population="healthy volunteers and patients with supraventricular tachycardia" measured-compound="amiodarone" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

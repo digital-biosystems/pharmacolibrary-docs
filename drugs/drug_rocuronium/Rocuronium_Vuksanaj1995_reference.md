@@ -21,8 +21,7 @@
 Vuksanaj D et al., Pharmacokinetics of rocuronium in child…, Anesthesiology (1995)
   ·  DOI: [10.1097/00000542-199505000-00003](https://doi.org/10.1097/00000542-199505000-00003)
 
-## Model component
-<dbs-pgx drug="Rocuronium" model-id="Rocuronium_Vuksanaj1995_reference" status="rejected" stale="false" population="children aged 4-11 years" measured-compound="rocuronium" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="Rocuronium" model-id="Rocuronium_Vuksanaj1995_reference" status="rejected" stale="false" population="children aged 4-11 years" measured-compound="rocuronium" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

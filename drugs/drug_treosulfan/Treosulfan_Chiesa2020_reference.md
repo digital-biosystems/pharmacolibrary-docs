@@ -21,8 +21,7 @@
 Chiesa R et al., Proposed Therapeutic Range of Treosulfa…, Clinical pharmacology and t… (2020)
   ·  DOI: [10.1002/cpt.1715](https://doi.org/10.1002/cpt.1715)
 
-## Model component
-<dbs-pgx drug="treosulfan" model-id="Treosulfan_Chiesa2020_reference" status="extracted" stale="false" population="pediatric patients with hematological diseases (allogeneic HSCT)" measured-compound="treosulfan" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="treosulfan" model-id="Treosulfan_Chiesa2020_reference" status="extracted" stale="false" population="pediatric patients with hematological diseases (allogeneic HSCT)" measured-compound="treosulfan" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment, IV mammillary model — template `PK_2C`.  
 **Parameters:** 4 extracted, plus 1 covariate effect.

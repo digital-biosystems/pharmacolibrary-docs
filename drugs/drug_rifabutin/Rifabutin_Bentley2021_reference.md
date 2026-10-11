@@ -29,8 +29,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on paramet
 Bentley S et al., Clinical pharmacokinetics and dose reco…, The Journal of antimicrobia… (2021)
   ·  DOI: [10.1093/jac/dkab312](https://doi.org/10.1093/jac/dkab312)
 
-## Model component
-<dbs-pgx drug="rifabutin" model-id="Rifabutin_Bentley2021_reference" status="needs_review" stale="false" population="" measured-compound="rifabutin" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="rifabutin" model-id="Rifabutin_Bentley2021_reference" status="needs_review" stale="false" population="" measured-compound="rifabutin" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 3 extracted.

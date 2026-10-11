@@ -29,8 +29,7 @@ Independently confirmed by `gpt-oss:120b`.
 Angeloni E, Azilsartan medoxomil in the management…, Core evidence (2016)
   ·  DOI: [10.2147/CE.S81776](https://doi.org/10.2147/CE.S81776)
 
-## Model component
-<dbs-pgx drug="amlodipine" model-id="Amlodipine_Angeloni2016_reference" status="curated_candidate" stale="false" population="adults with hypertension" measured-compound="amlodipine" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="amlodipine" model-id="Amlodipine_Angeloni2016_reference" status="curated_candidate" stale="false" population="adults with hypertension" measured-compound="amlodipine" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameters:** 2 extracted.

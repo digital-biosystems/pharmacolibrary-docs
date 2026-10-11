@@ -19,8 +19,7 @@
 ## Citation
 Mariño EL et al., Parametrization by non-linear regressio…, International journal of cl… (1987)
 
-## Model component
-<dbs-pgx drug="bentazepam" model-id="Bentazepam_Mario19872_reference" status="rejected" stale="false" population="patients on oral bentazepam multiple-dose regimen" measured-compound="bentazepam" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="bentazepam" model-id="Bentazepam_Mario19872_reference" status="rejected" stale="false" population="patients on oral bentazepam multiple-dose regimen" measured-compound="bentazepam" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

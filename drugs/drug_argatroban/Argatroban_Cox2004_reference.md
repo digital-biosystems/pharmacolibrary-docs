@@ -25,8 +25,7 @@
 Cox DS et al., Pharmacokinetics and pharmacodynamics o…, Journal of clinical pharmac… (2004)
   ·  DOI: [10.1177/0091270004267651](https://doi.org/10.1177/0091270004267651)
 
-## Model component
-<dbs-pgx drug="argatroban" model-id="Argatroban_Cox2004_reference" status="curated_candidate" stale="false" population="patients undergoing percutaneous coronary intervention" measured-compound="argatroban" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="argatroban" model-id="Argatroban_Cox2004_reference" status="curated_candidate" stale="false" population="patients undergoing percutaneous coronary intervention" measured-compound="argatroban" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment, IV mammillary model — template `PK_2C`.  
 **Parameters:** 4 extracted.

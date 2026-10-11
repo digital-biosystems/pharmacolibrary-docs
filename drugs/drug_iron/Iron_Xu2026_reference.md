@@ -29,8 +29,7 @@ The record reports CL/F 0.218 L/day, V1/F 1.54 L, Q/F 0.148 L/day and kabs 0.117
 Xu C et al., Modeling, Simulation, and Extrapolation…, Journal of pharmacokinetics… (2026)
   ·  DOI: [10.1007/s10928-026-10024-z](https://doi.org/10.1007/s10928-026-10024-z)
 
-## Model component
-<dbs-pgx drug="Iron" model-id="Iron_Xu2026_reference" status="extracted" stale="true" population="" measured-compound="iron" parameterization="apparent" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="Iron" model-id="Iron_Xu2026_reference" status="extracted" stale="true" population="" measured-compound="iron" parameterization="apparent" topology="2C"></div>
 
 **Model structure:** 2-compartment, oral mammillary model — template `PK_2C_enteral`.  
 **Parameters:** 4 extracted.

@@ -21,8 +21,7 @@
 Padari H et al., Ampicillin Pharmacokinetics During Firs…, The Pediatric infectious di… (2021)
   ·  DOI: [10.1097/INF.0000000000003061](https://doi.org/10.1097/INF.0000000000003061)
 
-## Model component
-<dbs-pgx drug="ampicillin" model-id="Ampicillin_Padari2021_reference" status="extracted" stale="false" population="preterm and term neonates" measured-compound="ampicillin" parameterization="mechanistic" topology="3C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="ampicillin" model-id="Ampicillin_Padari2021_reference" status="extracted" stale="false" population="preterm and term neonates" measured-compound="ampicillin" parameterization="mechanistic" topology="3C"></div>
 
 **Model structure:** 3-compartment, oral mammillary model — template `PK_3C_enteral`.  
 **Parameters:** 8 extracted.

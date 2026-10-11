@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the val
 Mueller-Schoell A et al., Obesity Alters Endoxifen Plasma Levels…, Clinical pharmacology and t… (2020)
   ·  DOI: [10.1002/cpt.1960](https://doi.org/10.1002/cpt.1960)
 
-## Model component
-<dbs-pgx drug="tamoxifen" model-id="Tamoxifen_MuellerSchoell2020_reference" status="rejected" stale="false" population="breast cancer patients" measured-compound="endoxifen" parameterization="apparent" topology="parent_metabolite"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="tamoxifen" model-id="Tamoxifen_MuellerSchoell2020_reference" status="rejected" stale="false" population="breast cancer patients" measured-compound="endoxifen" parameterization="apparent" topology="parent_metabolite"></div>
 
 **Model structure:** parent + metabolite; no model was built for this record.  
 **Parameters:** 6 extracted, plus 1 covariate effect.

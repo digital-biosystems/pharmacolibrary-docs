@@ -21,8 +21,7 @@
 Lakota EA et al., Population Pharmacokinetic Analyses for…, Antimicrobial agents and ch… (2019)
   ·  DOI: [10.1128/AAC.00267-19](https://doi.org/10.1128/AAC.00267-19)
 
-## Model component
-<dbs-pgx drug="arbekacin" model-id="Arbekacin_Lakota2019_reference" status="rejected" stale="false" population="adults" measured-compound="arbekacin" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="arbekacin" model-id="Arbekacin_Lakota2019_reference" status="rejected" stale="false" population="adults" measured-compound="arbekacin" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

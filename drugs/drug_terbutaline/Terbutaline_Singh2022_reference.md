@@ -21,8 +21,7 @@
 Singh D et al., A Phase 1 study of the long-acting anti…, British journal of clinical… (2022)
   ·  DOI: [10.1111/bcp.15002](https://doi.org/10.1111/bcp.15002)
 
-## Model component
-<dbs-pgx drug="terbutaline" model-id="Terbutaline_Singh2022_reference" status="extracted" stale="false" population="" measured-compound="terbutaline" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="terbutaline" model-id="Terbutaline_Singh2022_reference" status="extracted" stale="false" population="" measured-compound="terbutaline" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 2 extracted.

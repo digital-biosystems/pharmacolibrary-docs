@@ -30,8 +30,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Oishi M et al., Pharmacokinetic behavior of intravitrea…, Japanese journal of ophthal… (2008)
   ·  DOI: [10.1007/s10384-008-0584-0](https://doi.org/10.1007/s10384-008-0584-0)
 
-## Model component
-<dbs-pgx drug="triamcinolone" model-id="Triamcinolone_Oishi2008_reference" status="rejected" stale="false" population="male Wistar rats" measured-compound="triamcinolone acetonide" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="triamcinolone" model-id="Triamcinolone_Oishi2008_reference" status="rejected" stale="false" population="male Wistar rats" measured-compound="triamcinolone acetonide" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 3 extracted.

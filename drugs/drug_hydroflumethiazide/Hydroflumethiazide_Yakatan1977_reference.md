@@ -30,8 +30,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Yakatan GJ et al., Pharmacokinetics of orally administered…, Journal of clinical pharmac… (1977)
   ·  DOI: [10.1002/j.1552-4604.1977.tb04584.x](https://doi.org/10.1002/j.1552-4604.1977.tb04584.x)
 
-## Model component
-<dbs-pgx drug="hydroflumethiazide" model-id="Hydroflumethiazide_Yakatan1977_reference" status="rejected" stale="true" population="healthy adult males" measured-compound="hydroflumethiazide" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="hydroflumethiazide" model-id="Hydroflumethiazide_Yakatan1977_reference" status="rejected" stale="true" population="healthy adult males" measured-compound="hydroflumethiazide" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 3 extracted.

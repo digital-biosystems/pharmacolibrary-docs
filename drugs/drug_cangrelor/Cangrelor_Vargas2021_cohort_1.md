@@ -29,8 +29,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the lin
 Vargas D et al., Cangrelor PK/PD analysis in post-operat…, Journal of thrombosis and h… (2021)
   ·  DOI: [10.1111/jth.15141](https://doi.org/10.1111/jth.15141)
 
-## Model component
-<dbs-pgx drug="cangrelor" model-id="Cangrelor_Vargas2021_cohort_1" status="rejected" stale="false" population="neonates with congenital heart disease" measured-compound="cangrelor" parameterization="mechanistic" topology="parent_metabolite"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="cangrelor" model-id="Cangrelor_Vargas2021_cohort_1" status="rejected" stale="false" population="neonates with congenital heart disease" measured-compound="cangrelor" parameterization="mechanistic" topology="parent_metabolite"></div>
 
 **Model structure:** parent + metabolite; no model was built for this record.  
 **Parameters:** 0 extracted.

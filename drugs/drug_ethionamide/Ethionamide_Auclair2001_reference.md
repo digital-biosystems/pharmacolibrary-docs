@@ -21,8 +21,7 @@
 Auclair B et al., Pharmacokinetics of ethionamide adminis…, Antimicrobial agents and ch… (2001)
   ·  DOI: [10.1128/AAC.45.3.810-814.2001](https://doi.org/10.1128/AAC.45.3.810-814.2001)
 
-## Model component
-<dbs-pgx drug="ethionamide" model-id="Ethionamide_Auclair2001_reference" status="rejected" stale="false" population="healthy volunteers" measured-compound="ethionamide" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="ethionamide" model-id="Ethionamide_Auclair2001_reference" status="rejected" stale="false" population="healthy volunteers" measured-compound="ethionamide" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 3 extracted.

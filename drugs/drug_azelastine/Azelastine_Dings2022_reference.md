@@ -20,8 +20,7 @@
 Dings C et al., Pharmacometric Modeling of the Impact o…, Pharmaceutics (2022)
   ·  DOI: [10.3390/pharmaceutics14102059](https://doi.org/10.3390/pharmaceutics14102059)
 
-## Model component
-<dbs-pgx drug="azelastine" model-id="Azelastine_Dings2022_reference" status="needs_review" stale="false" population="COVID-19 patients (CARVIN study) and healthy volunteers from literature PK studies" measured-compound="azelastine" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="azelastine" model-id="Azelastine_Dings2022_reference" status="needs_review" stale="false" population="COVID-19 patients (CARVIN study) and healthy volunteers from literature PK studies" measured-compound="azelastine" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 3 extracted.

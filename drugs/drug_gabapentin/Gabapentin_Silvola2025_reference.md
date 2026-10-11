@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the val
 Silvola R et al., Population Pharmacokinetics and Transfe…, CPT: pharmacometrics & syst… (2025)
   ·  DOI: [10.1002/psp4.13295](https://doi.org/10.1002/psp4.13295)
 
-## Model component
-<dbs-pgx drug="gabapentin" model-id="Gabapentin_Silvola2025_reference" status="rejected" stale="true" population="healthy adults postpartum" measured-compound="gabapentin" parameterization="mechanistic" topology="manual_model_class"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="gabapentin" model-id="Gabapentin_Silvola2025_reference" status="rejected" stale="true" population="healthy adults postpartum" measured-compound="gabapentin" parameterization="mechanistic" topology="manual_model_class"></div>
 
 **Model structure:** nonlinear / manual; no model was built for this record.  
 **Parameters:** 0 extracted.

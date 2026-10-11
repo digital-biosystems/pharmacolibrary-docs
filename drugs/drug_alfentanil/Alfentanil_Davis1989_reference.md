@@ -21,8 +21,7 @@
 Davis PJ et al., Pharmacokinetics of alfentanil in newbo…, Developmental pharmacology… (1989)
   ·  DOI: [10.1159/000457577](https://doi.org/10.1159/000457577)
 
-## Model component
-<dbs-pgx drug="alfentanil" model-id="Alfentanil_Davis1989_reference" status="extracted" stale="false" population="premature infants and older children" measured-compound="alfentanil" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="alfentanil" model-id="Alfentanil_Davis1989_reference" status="extracted" stale="false" population="premature infants and older children" measured-compound="alfentanil" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 4 extracted.

@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Thompson EJ et al., Population Pharmacokinetics of Doxycycl…, Antimicrobial agents and ch… (2019)
   ·  DOI: [10.1128/AAC.01508-19](https://doi.org/10.1128/AAC.01508-19)
 
-## Model component
-<dbs-pgx drug="doxycycline" model-id="Doxycycline_Thompson2019_reference" status="extracted" stale="true" population="children 0-18 years of age" measured-compound="doxycycline" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="doxycycline" model-id="Doxycycline_Thompson2019_reference" status="extracted" stale="true" population="children 0-18 years of age" measured-compound="doxycycline" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameters:** 3 extracted.

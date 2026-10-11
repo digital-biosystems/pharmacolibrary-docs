@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on paramet
 Courlet P et al., Pharmacokinetic/Pharmacodynamic Modelli…, Clinical pharmacokinetics (2021)
   ·  DOI: [10.1007/s40262-020-00946-3](https://doi.org/10.1007/s40262-020-00946-3)
 
-## Model component
-<dbs-pgx drug="rosuvastatin" model-id="Rosuvastatin_Courlet2021_reference" status="needs_review" stale="true" population="" measured-compound="rosuvastatin" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="rosuvastatin" model-id="Rosuvastatin_Courlet2021_reference" status="needs_review" stale="true" population="" measured-compound="rosuvastatin" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment; no model was built for this record.  
 **Parameters:** 5 extracted.

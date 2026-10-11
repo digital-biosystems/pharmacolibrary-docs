@@ -23,8 +23,7 @@
 Soback S, Pharmacokinetics of single doses of cef…, Journal of veterinary pharm… (1988)
   ·  DOI: [10.1111/j.1365-2885.1988.tb00136.x](https://doi.org/10.1111/j.1365-2885.1988.tb00136.x)
 
-## Model component
-<dbs-pgx drug="cefoxitin" model-id="Cefoxitin_Soback1988_reference" status="extracted" stale="false" population="unweaned calves" measured-compound="cefoxitin" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="cefoxitin" model-id="Cefoxitin_Soback1988_reference" status="extracted" stale="false" population="unweaned calves" measured-compound="cefoxitin" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 7 extracted.

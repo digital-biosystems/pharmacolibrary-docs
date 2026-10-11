@@ -23,8 +23,7 @@
 Sandström M et al., The pharmacokinetics of epirubicin and…, Cancer chemotherapy and pha… (1999)
   ·  DOI: [10.1007/s002800051120](https://doi.org/10.1007/s002800051120)
 
-## Model component
-<dbs-pgx drug="epirubicin" model-id="Epirubicin_Sandstrm1999_reference" status="needs_review" stale="false" population="male Sprague Dawley rats" measured-compound="epirubicin and docetaxel" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="epirubicin" model-id="Epirubicin_Sandstrm1999_reference" status="needs_review" stale="false" population="male Sprague Dawley rats" measured-compound="epirubicin and docetaxel" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 2 extracted.

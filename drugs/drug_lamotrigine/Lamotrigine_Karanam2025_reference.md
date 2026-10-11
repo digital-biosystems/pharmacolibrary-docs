@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the val
 Karanam A et al., Characterization of lamotrigine disposi…, Pharmacotherapy (2025)
   ·  DOI: [10.1002/phar.4640](https://doi.org/10.1002/phar.4640)
 
-## Model component
-<dbs-pgx drug="lamotrigine" model-id="Lamotrigine_Karanam2025_reference" status="needs_review" stale="true" population="women with epilepsy (pregnant and nonpregnant)" measured-compound="lamotrigine" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="lamotrigine" model-id="Lamotrigine_Karanam2025_reference" status="needs_review" stale="true" population="women with epilepsy (pregnant and nonpregnant)" measured-compound="lamotrigine" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 1 extracted.

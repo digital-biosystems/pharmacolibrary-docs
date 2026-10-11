@@ -29,8 +29,7 @@ Only the abstract was available, so reported summary statistics stand in for a f
 Al-Nahari MM et al., Pharmacokinetics of daclatasvir in Egyp…, Antiviral therapy (2020)
   ·  DOI: [10.3851/IMP3357](https://doi.org/10.3851/IMP3357)
 
-## Model component
-<dbs-pgx drug="daclatasvir" model-id="Daclatasvir_AlNahari2020_reference" status="rejected" stale="true" population="adolescents with genotype-4 chronic HCV infection" measured-compound="daclatasvir" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="daclatasvir" model-id="Daclatasvir_AlNahari2020_reference" status="rejected" stale="true" population="adolescents with genotype-4 chronic HCV infection" measured-compound="daclatasvir" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 6 extracted.

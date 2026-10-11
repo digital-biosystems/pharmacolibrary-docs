@@ -22,8 +22,7 @@
 Vlase L et al., Pharmacokinetics and comparative bioava…, Arzneimittel-Forschung (2005)
   ·  DOI: [10.1055/s-0031-1296915](https://doi.org/10.1055/s-0031-1296915)
 
-## Model component
-<dbs-pgx drug="vinpocetine" model-id="Vinpocetine_Vlase2005_reference" status="rejected" stale="false" population="healthy male volunteers" measured-compound="apovincaminic acid" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="vinpocetine" model-id="Vinpocetine_Vlase2005_reference" status="rejected" stale="false" population="healthy male volunteers" measured-compound="apovincaminic acid" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 2 extracted.

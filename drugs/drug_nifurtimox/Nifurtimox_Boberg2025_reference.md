@@ -21,8 +21,7 @@
 Boberg M et al., Pharmacokinetics of Racemic Eflornithin…, The AAPS journal (2025)
   ·  DOI: [10.1208/s12248-025-01123-9](https://doi.org/10.1208/s12248-025-01123-9)
 
-## Model component
-<dbs-pgx drug="nifurtimox" model-id="Nifurtimox_Boberg2025_reference" status="extracted" stale="false" population="" measured-compound="nifurtimox" parameterization="apparent" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="nifurtimox" model-id="Nifurtimox_Boberg2025_reference" status="extracted" stale="false" population="" measured-compound="nifurtimox" parameterization="apparent" topology="2C"></div>
 
 **Model structure:** 2-compartment, oral mammillary model — template `PK_2C_enteral`.  
 **Parameters:** 6 extracted.

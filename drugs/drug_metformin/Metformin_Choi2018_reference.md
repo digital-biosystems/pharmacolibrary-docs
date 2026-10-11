@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Choi S et al., Population pharmacokinetic analysis of…, Translational and clinical… (2018)
   ·  DOI: [10.12793/tcp.2018.26.1.25](https://doi.org/10.12793/tcp.2018.26.1.25)
 
-## Model component
-<dbs-pgx drug="metformin" model-id="Metformin_Choi2018_reference" status="rejected" stale="true" population="Korean healthy adults" measured-compound="metformin" parameterization="apparent" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="metformin" model-id="Metformin_Choi2018_reference" status="rejected" stale="true" population="Korean healthy adults" measured-compound="metformin" parameterization="apparent" topology="2C"></div>
 
 **Model structure:** 2-compartment; no model was built for this record.  
 **Parameters:** 8 extracted.

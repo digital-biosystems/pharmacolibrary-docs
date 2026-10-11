@@ -22,8 +22,7 @@
 Naqvi RH et al., Pharmacokinetics of levonorgestrel in t…, Contraception (1984)
   ·  DOI: [10.1016/0010-7824(84)90081-7](https://doi.org/10.1016/0010-7824(84)90081-7)
 
-## Model component
-<dbs-pgx drug="levonorgestrel" model-id="Levonorgestrel_Naqvi1984_reference" status="rejected" stale="false" population="adult female rats" measured-compound="levonorgestrel" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="levonorgestrel" model-id="Levonorgestrel_Naqvi1984_reference" status="rejected" stale="false" population="adult female rats" measured-compound="levonorgestrel" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

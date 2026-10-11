@@ -21,8 +21,7 @@
 Sinha J et al., Population Pharmacokinetic Modeling of…, Clinical pharmacokinetics (2026)
   ·  DOI: [10.1007/s40262-025-01579-0](https://doi.org/10.1007/s40262-025-01579-0)
 
-## Model component
-<dbs-pgx drug="oxcarbazepine" model-id="Oxcarbazepine_Sinha2026_bsv_estimates_cv" status="rejected" stale="false" population="children and adolescents" measured-compound="oxcarbazepine" parameterization="mechanistic" topology="general_linear"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="oxcarbazepine" model-id="Oxcarbazepine_Sinha2026_bsv_estimates_cv" status="rejected" stale="false" population="children and adolescents" measured-compound="oxcarbazepine" parameterization="mechanistic" topology="general_linear"></div>
 
 **Model structure:** general linear; no model was built for this record.  
 **Parameters:** 0 extracted.

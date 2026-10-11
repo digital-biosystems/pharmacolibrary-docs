@@ -29,8 +29,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on paramet
 Cuomo A et al., A narrative review on trazodone as a mu…, Annals of general psychiatry (2026)
   ·  DOI: [10.1186/s12991-026-00643-8](https://doi.org/10.1186/s12991-026-00643-8)
 
-## Model component
-<dbs-pgx drug="trazodone" model-id="Trazodone_Cuomo2026v2_reference" status="extracted" stale="true" population="" measured-compound="trazodone" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="trazodone" model-id="Trazodone_Cuomo2026v2_reference" status="extracted" stale="true" population="" measured-compound="trazodone" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameters:** 2 extracted.

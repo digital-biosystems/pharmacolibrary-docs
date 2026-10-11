@@ -29,8 +29,7 @@ Independently confirmed by `gpt-oss:120b`.
 ## Citation
 Schran HF et al., Pharmacokinetics of dihydroergotamine f…, International journal of cl… (1985)
 
-## Model component
-<dbs-pgx drug="dihydroergotamine" model-id="Dihydroergotamine_Schran1985_reference" status="needs_review" stale="true" population="healthy volunteers" measured-compound="dihydroergotamine" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="dihydroergotamine" model-id="Dihydroergotamine_Schran1985_reference" status="needs_review" stale="true" population="healthy volunteers" measured-compound="dihydroergotamine" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 3 extracted.

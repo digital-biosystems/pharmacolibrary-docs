@@ -21,8 +21,7 @@
 Niu J et al., Parent-Metabolite Pharmacokinetic Model…, Journal of clinical pharmac… (2017)
   ·  DOI: [10.1002/jcph.892](https://doi.org/10.1002/jcph.892)
 
-## Model component
-<dbs-pgx drug="veliparib" model-id="Veliparib_Niu2017_reference" status="rejected" stale="false" population="patients with BRCA 1/2-mutated cancer or PARP-sensitive tumor types" measured-compound="veliparib" parameterization="mechanistic" topology="parent_metabolite"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="veliparib" model-id="Veliparib_Niu2017_reference" status="rejected" stale="false" population="patients with BRCA 1/2-mutated cancer or PARP-sensitive tumor types" measured-compound="veliparib" parameterization="mechanistic" topology="parent_metabolite"></div>
 
 **Model structure:** parent + metabolite; no model was built for this record.  
 **Parameters:** 2 extracted.

@@ -30,8 +30,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on how the
 Buesa JM et al., Clinical pharmacokinetics of high-dose…, Cancer chemotherapy and pha… (1991)
   ·  DOI: [10.1007/BF00685826](https://doi.org/10.1007/BF00685826)
 
-## Model component
-<dbs-pgx drug="dacarbazine" model-id="Dacarbazine_Buesa1991_reference" status="rejected" stale="true" population="cancer patients" measured-compound="DTIC" parameterization="mechanistic" topology="parent_metabolite"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="dacarbazine" model-id="Dacarbazine_Buesa1991_reference" status="rejected" stale="true" population="cancer patients" measured-compound="DTIC" parameterization="mechanistic" topology="parent_metabolite"></div>
 
 **Model structure:** parent + metabolite; no model was built for this record.  
 **Parameters:** 0 extracted.

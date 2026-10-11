@@ -29,8 +29,7 @@ The record for children &lt;4 years with BH4-responsive phenylketonuria reports 
 Muntau AC et al., Efficacy, safety and population pharmac…, Orphanet journal of rare di… (2017)
   ·  DOI: [10.1186/s13023-017-0600-x](https://doi.org/10.1186/s13023-017-0600-x)
 
-## Model component
-<dbs-pgx drug="sapropterin" model-id="Sapropterin_Muntau2017_reference" status="rejected" stale="true" population="children &lt;4 years with BH4-responsive phenylketonuria or mild hyperphenylalaninemia" measured-compound="sapropterin" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="sapropterin" model-id="Sapropterin_Muntau2017_reference" status="rejected" stale="true" population="children &lt;4 years with BH4-responsive phenylketonuria or mild hyperphenylalaninemia" measured-compound="sapropterin" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 5 extracted, plus 2 covariate effects.

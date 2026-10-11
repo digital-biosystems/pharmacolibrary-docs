@@ -21,8 +21,7 @@
 Shah RV et al., Population Pharmacokinetic Study of Ben…, Antibiotics (Basel, Switzer… (2023)
   ·  DOI: [10.3390/antibiotics12040643](https://doi.org/10.3390/antibiotics12040643)
 
-## Model component
-<dbs-pgx drug="benzylpenicillin" model-id="Benzylpenicillin_Shah2023_reference" status="extracted" stale="false" population="" measured-compound="benzylpenicillin" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="benzylpenicillin" model-id="Benzylpenicillin_Shah2023_reference" status="extracted" stale="false" population="" measured-compound="benzylpenicillin" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment, IV mammillary model — template `PK_2C`.  
 **Parameters:** 4 extracted.

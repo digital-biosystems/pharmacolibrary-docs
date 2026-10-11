@@ -20,8 +20,7 @@
 ## Citation
 Wretlind M et al., Disposition of three benzodiazepines af…, Acta pharmacologica et toxi… (1977)
 
-## Model component
-<dbs-pgx drug="oxazepam" model-id="Oxazepam_Wretlind1977_reference" status="rejected" stale="false" population="healthy volunteers" measured-compound="oxazepam" parameterization="mechanistic" topology="general_linear"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="oxazepam" model-id="Oxazepam_Wretlind1977_reference" status="rejected" stale="false" population="healthy volunteers" measured-compound="oxazepam" parameterization="mechanistic" topology="general_linear"></div>
 
 **Model structure:** general linear; no model was built for this record.  
 **Parameters:** 0 extracted.

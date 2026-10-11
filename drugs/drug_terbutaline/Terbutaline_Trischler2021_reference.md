@@ -21,8 +21,7 @@
 Trischler J et al., Ligelizumab treatment for severe asthma…, Clinical & translational im… (2021)
   ·  DOI: [10.1002/cti2.1255](https://doi.org/10.1002/cti2.1255)
 
-## Model component
-<dbs-pgx drug="terbutaline" model-id="Terbutaline_Trischler2021_reference" status="extracted" stale="false" population="" measured-compound="terbutaline" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="terbutaline" model-id="Terbutaline_Trischler2021_reference" status="extracted" stale="false" population="" measured-compound="terbutaline" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 2 extracted.

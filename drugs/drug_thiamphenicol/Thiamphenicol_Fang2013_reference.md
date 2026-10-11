@@ -22,8 +22,7 @@
 Fang W et al., Pharmacokinetics and tissue distributio…, Journal of aquatic animal h… (2013)
   ·  DOI: [10.1080/08997659.2012.754799](https://doi.org/10.1080/08997659.2012.754799)
 
-## Model component
-<dbs-pgx drug="thiamphenicol" model-id="Thiamphenicol_Fang2013_reference" status="rejected" stale="false" population="Pacific white shrimp (Litopenaeus vannamei) in freshwater" measured-compound="thiamphenicol and florfenicol" parameterization="mechanistic" topology="general_linear"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="thiamphenicol" model-id="Thiamphenicol_Fang2013_reference" status="rejected" stale="false" population="Pacific white shrimp (Litopenaeus vannamei) in freshwater" measured-compound="thiamphenicol and florfenicol" parameterization="mechanistic" topology="general_linear"></div>
 
 **Model structure:** general linear; no model was built for this record.  
 **Parameters:** 7 extracted.

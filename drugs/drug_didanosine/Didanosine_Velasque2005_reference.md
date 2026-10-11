@@ -29,8 +29,7 @@ A volume and a clearance/elimination estimate from this paper are needed to buil
 Velasque LS et al., Estimating the genetic component (RGC)…, AIDS (London, England) 19 S… (2005)
   ·  DOI: [10.1097/01.aids.0000191495.89606.2e](https://doi.org/10.1097/01.aids.0000191495.89606.2e)
 
-## Model component
-<dbs-pgx drug="didanosine" model-id="Didanosine_Velasque2005_reference" status="rejected" stale="true" population="healthy adults" measured-compound="didanosine" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="didanosine" model-id="Didanosine_Velasque2005_reference" status="rejected" stale="true" population="healthy adults" measured-compound="didanosine" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 5 extracted.

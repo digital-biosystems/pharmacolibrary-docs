@@ -29,8 +29,7 @@ No clearance, volume or rate constant of the model is reported in it. No paramet
 Paschier A et al., Tacrolimus population pharmacokinetics…, British journal of clinical… (2023)
   ·  DOI: [10.1111/bcp.15857](https://doi.org/10.1111/bcp.15857)
 
-## Model component
-<dbs-pgx drug="tacrolimus" model-id="Tacrolimus_Paschier2023_reference" status="extracted" stale="true" population="adult heart transplant patients" measured-compound="tacrolimus" parameterization="apparent" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="tacrolimus" model-id="Tacrolimus_Paschier2023_reference" status="extracted" stale="true" population="adult heart transplant patients" measured-compound="tacrolimus" parameterization="apparent" topology="2C"></div>
 
 **Model structure:** 2-compartment, oral mammillary model — template `PK_2C_enteral`.  
 **Parameters:** 4 extracted.

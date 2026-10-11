@@ -21,8 +21,7 @@
 Higashi K et al., Population pharmacokinetics of brexpipr…, Drug metabolism and pharmac… (2025)
   ·  DOI: [10.1016/j.dmpk.2025.101057](https://doi.org/10.1016/j.dmpk.2025.101057)
 
-## Model component
-<dbs-pgx drug="brexpiprazole" model-id="Brexpiprazole_Higashi2025_1_mg_day" status="extracted" stale="false" population="Japanese healthy subjects and patients with schizophrenia" measured-compound="brexpiprazole" parameterization="apparent" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="brexpiprazole" model-id="Brexpiprazole_Higashi2025_1_mg_day" status="extracted" stale="false" population="Japanese healthy subjects and patients with schizophrenia" measured-compound="brexpiprazole" parameterization="apparent" topology="2C"></div>
 
 **Model structure:** 2-compartment, oral mammillary model — template `PK_2C_enteral`.  
 **Parameters:** 7 extracted.

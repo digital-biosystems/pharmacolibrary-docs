@@ -30,8 +30,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Marier JF et al., Population pharmacokinetics of teduglut…, Journal of clinical pharmac… (2010)
   ·  DOI: [10.1177/0091270009342252](https://doi.org/10.1177/0091270009342252)
 
-## Model component
-<dbs-pgx drug="teduglutide" model-id="Teduglutide_Marier2010_reference" status="needs_review" stale="true" population="healthy participants and patients with short bowel syndrome and Crohn&#39;s disease" measured-compound="teduglutide" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="teduglutide" model-id="Teduglutide_Marier2010_reference" status="needs_review" stale="true" population="healthy participants and patients with short bowel syndrome and Crohn&#39;s disease" measured-compound="teduglutide" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 1 extracted.

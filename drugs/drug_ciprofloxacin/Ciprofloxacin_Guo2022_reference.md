@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the val
 Guo T et al., Pooled Population Pharmacokinetic Analy…, Clinical pharmacokinetics (2022)
   ·  DOI: [10.1007/s40262-022-01114-5](https://doi.org/10.1007/s40262-022-01114-5)
 
-## Model component
-<dbs-pgx drug="ciprofloxacin" model-id="Ciprofloxacin_Guo2022_reference" status="extracted" stale="true" population="intensive care patients" measured-compound="ciprofloxacin" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="ciprofloxacin" model-id="Ciprofloxacin_Guo2022_reference" status="extracted" stale="true" population="intensive care patients" measured-compound="ciprofloxacin" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment, oral mammillary model — template `PK_2C_enteral`.  
 **Parameters:** 6 extracted.

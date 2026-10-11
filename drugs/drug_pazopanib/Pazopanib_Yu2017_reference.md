@@ -21,8 +21,7 @@
 Yu H et al., Development of a Pharmacokinetic Model…, Clinical pharmacokinetics (2017)
   ·  DOI: [10.1007/s40262-016-0443-y](https://doi.org/10.1007/s40262-016-0443-y)
 
-## Model component
-<dbs-pgx drug="pazopanib" model-id="Pazopanib_Yu2017_reference" status="needs_review" stale="false" population="cancer patients" measured-compound="pazopanib" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="pazopanib" model-id="Pazopanib_Yu2017_reference" status="needs_review" stale="false" population="cancer patients" measured-compound="pazopanib" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 5 extracted.

@@ -21,8 +21,7 @@
 Methaneethorn J et al., Predictors of sirolimus pharmacokinetic…, Journal of population thera… (2022)
   ·  DOI: [10.47750/jptcp.2022.940](https://doi.org/10.47750/jptcp.2022.940)
 
-## Model component
-<dbs-pgx drug="sirolimus" model-id="Sirolimus_Methaneethorn2022_reference" status="rejected" stale="false" population="transplant and cancer patients" measured-compound="sirolimus" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="sirolimus" model-id="Sirolimus_Methaneethorn2022_reference" status="rejected" stale="false" population="transplant and cancer patients" measured-compound="sirolimus" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

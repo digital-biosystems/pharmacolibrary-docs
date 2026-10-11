@@ -21,8 +21,7 @@
 Panusitthikorn P et al., Pharmacokinetics and pharmacodynamics s…, BMC anesthesiology (2022)
   ·  DOI: [10.1186/s12871-022-01571-2](https://doi.org/10.1186/s12871-022-01571-2)
 
-## Model component
-<dbs-pgx drug="cisatracurium" model-id="Cisatracurium_Panusitthikorn2022_reference" status="rejected" stale="false" population="critically ill patients with respiratory failure" measured-compound="cisatracurium" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="cisatracurium" model-id="Cisatracurium_Panusitthikorn2022_reference" status="rejected" stale="false" population="critically ill patients with respiratory failure" measured-compound="cisatracurium" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

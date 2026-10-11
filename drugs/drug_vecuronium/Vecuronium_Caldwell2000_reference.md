@@ -20,8 +20,7 @@
 Caldwell JE et al., Temperature-dependent pharmacokinetics…, Anesthesiology (2000)
   ·  DOI: [10.1097/00000542-200001000-00018](https://doi.org/10.1097/00000542-200001000-00018)
 
-## Model component
-<dbs-pgx drug="vecuronium" model-id="Vecuronium_Caldwell2000_reference" status="rejected" stale="false" population="healthy volunteers" measured-compound="vecuronium" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="vecuronium" model-id="Vecuronium_Caldwell2000_reference" status="rejected" stale="false" population="healthy volunteers" measured-compound="vecuronium" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

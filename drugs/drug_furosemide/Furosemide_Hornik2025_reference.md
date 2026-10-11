@@ -29,8 +29,7 @@ A model needs both clearance and volume; without the volume it could only be bui
 Hornik CP et al., An Adult Population Pharmacokinetic Mod…, Clinical pharmacokinetics (2025)
   ·  DOI: [10.1007/s40262-025-01515-2](https://doi.org/10.1007/s40262-025-01515-2)
 
-## Model component
-<dbs-pgx drug="furosemide" model-id="Furosemide_Hornik2025_reference" status="extracted" stale="true" population="adults with heart failure" measured-compound="furosemide" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="furosemide" model-id="Furosemide_Hornik2025_reference" status="extracted" stale="true" population="adults with heart failure" measured-compound="furosemide" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment, oral mammillary model — template `PK_2C_enteral`.  
 **Parameters:** 5 extracted, plus 1 covariate effect.

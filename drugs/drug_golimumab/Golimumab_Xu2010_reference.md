@@ -21,8 +21,7 @@
 Xu ZH et al., Population pharmacokinetics of golimuma…, International journal of cl… (2010)
   ·  DOI: [10.5414/cpp48596](https://doi.org/10.5414/cpp48596)
 
-## Model component
-<dbs-pgx drug="golimumab" model-id="Golimumab_Xu2010_reference" status="rejected" stale="false" population="patients with ankylosing spondylitis" measured-compound="golimumab" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="golimumab" model-id="Golimumab_Xu2010_reference" status="rejected" stale="false" population="patients with ankylosing spondylitis" measured-compound="golimumab" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

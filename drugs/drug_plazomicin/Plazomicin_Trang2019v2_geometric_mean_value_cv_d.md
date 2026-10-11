@@ -21,8 +21,7 @@
 Trang M et al., Population Pharmacokinetic Analyses for…, Antimicrobial agents and ch… (2019)
   ·  DOI: [10.1128/AAC.02329-18](https://doi.org/10.1128/AAC.02329-18)
 
-## Model component
-<dbs-pgx drug="plazomicin" model-id="Plazomicin_Trang2019v2_geometric_mean_value_cv_d" status="extracted" stale="false" population="adult patients with cUTI/AP and serious infections caused by CRE" measured-compound="plazomicin" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="plazomicin" model-id="Plazomicin_Trang2019v2_geometric_mean_value_cv_d" status="extracted" stale="false" population="adult patients with cUTI/AP and serious infections caused by CRE" measured-compound="plazomicin" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameters:** 9 extracted.

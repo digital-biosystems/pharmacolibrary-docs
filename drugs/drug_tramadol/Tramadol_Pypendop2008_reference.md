@@ -33,8 +33,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Pypendop BH et al., Pharmacokinetics of tramadol, and its m…, Journal of veterinary pharm… (2008)
   ·  DOI: [10.1111/j.1365-2885.2007.00921.x](https://doi.org/10.1111/j.1365-2885.2007.00921.x)
 
-## Model component
-<dbs-pgx drug="tramadol" model-id="Tramadol_Pypendop2008_reference" status="extracted" stale="true" population="cats" measured-compound="tramadol" parameterization="apparent" topology="parent_metabolite"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="tramadol" model-id="Tramadol_Pypendop2008_reference" status="extracted" stale="true" population="cats" measured-compound="tramadol" parameterization="apparent" topology="parent_metabolite"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 8 extracted.

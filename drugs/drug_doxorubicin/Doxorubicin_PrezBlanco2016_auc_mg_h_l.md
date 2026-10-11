@@ -27,8 +27,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on `parame
 Pérez-Blanco JS et al., Population pharmacokinetics of doxorubi…, British journal of clinical… (2016)
   ·  DOI: [10.1111/bcp.13070](https://doi.org/10.1111/bcp.13070)
 
-## Model component
-<dbs-pgx drug="doxorubicin" model-id="Doxorubicin_PrezBlanco2016_auc_mg_h_l" status="needs_review" stale="false" population="adults with non-Hodgkin&#39;s lymphoma" measured-compound="doxorubicin and doxorubicinol" parameterization="mechanistic" topology="parent_metabolite"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="doxorubicin" model-id="Doxorubicin_PrezBlanco2016_auc_mg_h_l" status="needs_review" stale="false" population="adults with non-Hodgkin&#39;s lymphoma" measured-compound="doxorubicin and doxorubicinol" parameterization="mechanistic" topology="parent_metabolite"></div>
 
 **Model structure:** parent + metabolite; no model was built for this record.  
 **Parameters:** 12 extracted.

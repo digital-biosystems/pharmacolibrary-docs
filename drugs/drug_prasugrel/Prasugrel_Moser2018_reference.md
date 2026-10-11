@@ -30,8 +30,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which m
 Moser BA et al., Population Pharmacokinetic and Exposure…, Clinical pharmacokinetics (2018)
   ·  DOI: [10.1007/s40262-017-0556-y](https://doi.org/10.1007/s40262-017-0556-y)
 
-## Model component
-<dbs-pgx drug="prasugrel" model-id="Prasugrel_Moser2018_reference" status="model_quarantined" stale="false" population="pediatric patients with sickle cell anemia" measured-compound="prasugrel active metabolite" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="prasugrel" model-id="Prasugrel_Moser2018_reference" status="model_quarantined" stale="false" population="pediatric patients with sickle cell anemia" measured-compound="prasugrel active metabolite" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 2 extracted.

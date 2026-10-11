@@ -22,8 +22,7 @@
 Bohanec Grabar P et al., Investigation of the influence of CYP1A…, Drug metabolism and disposi… (2009)
   ·  DOI: [10.1124/dmd.109.027482](https://doi.org/10.1124/dmd.109.027482)
 
-## Model component
-<dbs-pgx drug="leflunomide" model-id="Leflunomide_Bohanec2009_reference" status="rejected" stale="false" population="patients with rheumatoid arthritis" measured-compound="A77 1726" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="leflunomide" model-id="Leflunomide_Bohanec2009_reference" status="rejected" stale="false" population="patients with rheumatoid arthritis" measured-compound="A77 1726" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

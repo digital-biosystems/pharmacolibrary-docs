@@ -21,8 +21,7 @@
 Glatard A et al., Influence of body weight and UGT2B7 pol…, European journal of clinica… (2019)
   ·  DOI: [10.1007/s00228-019-02662-9](https://doi.org/10.1007/s00228-019-02662-9)
 
-## Model component
-<dbs-pgx drug="varenicline" model-id="Varenicline_Glatard2019_reference" status="extracted" stale="false" population="adult smokers from the general population" measured-compound="varenicline" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="varenicline" model-id="Varenicline_Glatard2019_reference" status="extracted" stale="false" population="adult smokers from the general population" measured-compound="varenicline" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 4 extracted.

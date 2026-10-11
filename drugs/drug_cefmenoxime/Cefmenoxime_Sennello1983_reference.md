@@ -20,8 +20,7 @@
 Sennello LT et al., Effect of probenecid on the pharmacokin…, Antimicrobial agents and ch… (1983)
   ·  DOI: [10.1128/AAC.23.6.803](https://doi.org/10.1128/AAC.23.6.803)
 
-## Model component
-<dbs-pgx drug="cefmenoxime" model-id="Cefmenoxime_Sennello1983_reference" status="rejected" stale="false" population="healthy adults" measured-compound="cefmenoxime" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="cefmenoxime" model-id="Cefmenoxime_Sennello1983_reference" status="rejected" stale="false" population="healthy adults" measured-compound="cefmenoxime" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

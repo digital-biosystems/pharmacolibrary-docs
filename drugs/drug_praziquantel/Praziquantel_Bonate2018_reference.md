@@ -21,8 +21,7 @@
 Bonate PL et al., Extrapolation of praziquantel pharmacok…, Journal of pharmacokinetics… (2018)
   ·  DOI: [10.1007/s10928-018-9601-1](https://doi.org/10.1007/s10928-018-9601-1)
 
-## Model component
-<dbs-pgx drug="praziquantel" model-id="Praziquantel_Bonate2018_reference" status="rejected" stale="false" population="healthy adults" measured-compound="praziquantel" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="praziquantel" model-id="Praziquantel_Bonate2018_reference" status="rejected" stale="false" population="healthy adults" measured-compound="praziquantel" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

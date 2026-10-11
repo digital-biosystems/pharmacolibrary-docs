@@ -35,8 +35,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on paramet
 Harashima H et al., Pharmacokinetic/pharmacodynamic modelin…, Advanced drug delivery revi… (1999)
   ·  DOI: [10.1016/s0169-409x(99)00039-3](https://doi.org/10.1016/s0169-409x(99)00039-3)
 
-## Model component
-<dbs-pgx drug="doxorubicin" model-id="Doxorubicin_Harashima1999_reference" status="rejected" stale="true" population="rodents with tumors" measured-compound="doxorubicin" parameterization="apparent" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="doxorubicin" model-id="Doxorubicin_Harashima1999_reference" status="rejected" stale="true" population="rodents with tumors" measured-compound="doxorubicin" parameterization="apparent" topology="2C"></div>
 
 **Model structure:** 2-compartment; no model was built for this record.  
 **Parameters:** 3 extracted.

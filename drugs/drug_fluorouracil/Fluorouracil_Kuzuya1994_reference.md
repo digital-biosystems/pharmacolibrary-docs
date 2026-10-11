@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Kuzuya T et al., Pharmacokinetic characteristics of 5-fl…, The Journal of pharmacy and… (1994)
   ·  DOI: [10.1111/j.2042-7158.1994.tb03883.x](https://doi.org/10.1111/j.2042-7158.1994.tb03883.x)
 
-## Model component
-<dbs-pgx drug="fluorouracil" model-id="Fluorouracil_Kuzuya1994_reference" status="rejected" stale="true" population="patients with peritoneal malignancies" measured-compound="fluorouracil" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="fluorouracil" model-id="Fluorouracil_Kuzuya1994_reference" status="rejected" stale="true" population="patients with peritoneal malignancies" measured-compound="fluorouracil" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

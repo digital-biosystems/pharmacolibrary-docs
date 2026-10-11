@@ -26,8 +26,7 @@
 ## Citation
 not matched (stem Overgaard_2019)
 
-## Model component
-<dbs-pgx drug="semaglutide" model-id="Semaglutide_Overgaard2019_estimate_healthy_subjects_and_subj" status="not_modelled" stale="false" population="healthy subjects and subjects with type 2 diabetes" measured-compound="" parameterization="" topology=""></dbs-pgx>
+<div class="pk-model-meta" hidden drug="semaglutide" model-id="Semaglutide_Overgaard2019_estimate_healthy_subjects_and_subj" status="not_modelled" stale="false" population="healthy subjects and subjects with type 2 diabetes" measured-compound="" parameterization="" topology=""></div>
 
 **Parameterization:** not captured.
 

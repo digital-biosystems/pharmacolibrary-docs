@@ -23,8 +23,7 @@
 Carlos MA et al., Effect of omeprazole on oral and intrav…, Journal of pharmaceutical s… (2002)
   ·  DOI: [10.1002/jps.10031](https://doi.org/10.1002/jps.10031)
 
-## Model component
-<dbs-pgx drug="methadone" model-id="Methadone_Carlos2002_reference" status="rejected" stale="false" population="awake freely moving rats" measured-compound="RS-methadone" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="methadone" model-id="Methadone_Carlos2002_reference" status="rejected" stale="false" population="awake freely moving rats" measured-compound="RS-methadone" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

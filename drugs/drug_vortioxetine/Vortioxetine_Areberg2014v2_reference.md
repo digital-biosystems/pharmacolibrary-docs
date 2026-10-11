@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on how the
 Areberg J et al., Population pharmacokinetic meta-analysi…, Basic & clinical pharmacolo… (2014)
   ·  DOI: [10.1111/bcpt.12256](https://doi.org/10.1111/bcpt.12256)
 
-## Model component
-<dbs-pgx drug="vortioxetine" model-id="Vortioxetine_Areberg2014v2_reference" status="extracted" stale="true" population="healthy adults" measured-compound="vortioxetine" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="vortioxetine" model-id="Vortioxetine_Areberg2014v2_reference" status="extracted" stale="true" population="healthy adults" measured-compound="vortioxetine" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 3 extracted.

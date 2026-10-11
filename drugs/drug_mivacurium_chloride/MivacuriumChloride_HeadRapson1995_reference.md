@@ -20,8 +20,7 @@
 Head-Rapson AG et al., Pharmacokinetics and pharmacodynamics o…, British journal of anaesthe… (1995)
   ·  DOI: [10.1093/bja/75.1.31](https://doi.org/10.1093/bja/75.1.31)
 
-## Model component
-<dbs-pgx drug="mivacurium chloride" model-id="MivacuriumChloride_HeadRapson1995_reference" status="needs_review" stale="false" population="adults with renal impairment" measured-compound="mivacurium_chloride" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="mivacurium chloride" model-id="MivacuriumChloride_HeadRapson1995_reference" status="needs_review" stale="false" population="adults with renal impairment" measured-compound="mivacurium_chloride" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 1 extracted.

@@ -20,8 +20,7 @@
 Conte JE, Pharmacokinetics of cefpiramide in volu…, Antimicrobial agents and ch… (1987)
   ·  DOI: [10.1128/AAC.31.10.1585](https://doi.org/10.1128/AAC.31.10.1585)
 
-## Model component
-<dbs-pgx drug="cefpiramide" model-id="Cefpiramide_Conte1987_reference" status="rejected" stale="false" population="volunteers with normal or impaired renal function" measured-compound="cefpiramide" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="cefpiramide" model-id="Cefpiramide_Conte1987_reference" status="rejected" stale="false" population="volunteers with normal or impaired renal function" measured-compound="cefpiramide" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 2 extracted.

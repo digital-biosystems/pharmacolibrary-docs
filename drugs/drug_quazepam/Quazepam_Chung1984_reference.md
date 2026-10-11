@@ -21,8 +21,7 @@
 Chung M et al., Multiple-dose quazepam kinetics, Clinical pharmacology and t… (1984)
   ·  DOI: [10.1038/clpt.1984.70](https://doi.org/10.1038/clpt.1984.70)
 
-## Model component
-<dbs-pgx drug="quazepam" model-id="Quazepam_Chung1984_reference" status="rejected" stale="false" population="healthy adults" measured-compound="quazepam" parameterization="mechanistic" topology="general_linear"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="quazepam" model-id="Quazepam_Chung1984_reference" status="rejected" stale="false" population="healthy adults" measured-compound="quazepam" parameterization="mechanistic" topology="general_linear"></div>
 
 **Model structure:** general linear; no model was built for this record.  
 **Parameters:** 0 extracted.

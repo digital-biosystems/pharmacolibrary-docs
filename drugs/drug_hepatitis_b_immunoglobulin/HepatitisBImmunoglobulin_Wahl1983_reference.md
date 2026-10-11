@@ -30,8 +30,7 @@ No clearance, volume or rate constant of the model is reported in it. No paramet
 ## Citation
 Wahl M et al., Recovery and turnover rate of hepatitis…, Developments in biological… (1983)
 
-## Model component
-<dbs-pgx drug="hepatitis B immunoglobulin" model-id="HepatitisBImmunoglobulin_Wahl1983_reference" status="rejected" stale="true" population="healthy female volunteers" measured-compound="anti-HBs" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="hepatitis B immunoglobulin" model-id="HepatitisBImmunoglobulin_Wahl1983_reference" status="rejected" stale="true" population="healthy female volunteers" measured-compound="anti-HBs" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

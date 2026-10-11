@@ -32,8 +32,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which m
 Aellig WH et al., Relationship between plasma concentrati…, British journal of clinical… (1986)
   ·  DOI: [10.1111/j.1365-2125.1986.tb02821.x](https://doi.org/10.1111/j.1365-2125.1986.tb02821.x)
 
-## Model component
-<dbs-pgx drug="bopindolol" model-id="Bopindolol_Aellig1986_reference" status="rejected" stale="true" population="healthy male volunteers" measured-compound="hydrolysed bopindolol" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="bopindolol" model-id="Bopindolol_Aellig1986_reference" status="rejected" stale="true" population="healthy male volunteers" measured-compound="hydrolysed bopindolol" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 2 extracted.

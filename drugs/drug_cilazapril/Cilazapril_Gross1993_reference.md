@@ -30,8 +30,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the lin
 Gross V et al., Angiotensin-converting enzyme (ACE)-inh…, Journal of hepatology (1993)
   ·  DOI: [10.1016/s0168-8278(05)80519-7](https://doi.org/10.1016/s0168-8278(05)80519-7)
 
-## Model component
-<dbs-pgx drug="cilazapril" model-id="Cilazapril_Gross1993_reference" status="rejected" stale="true" population="healthy volunteers and patients with compensated cirrhosis" measured-compound="cilazapril" parameterization="mechanistic" topology="general_linear"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="cilazapril" model-id="Cilazapril_Gross1993_reference" status="rejected" stale="true" population="healthy volunteers and patients with compensated cirrhosis" measured-compound="cilazapril" parameterization="mechanistic" topology="general_linear"></div>
 
 **Model structure:** general linear; no model was built for this record.  
 **Parameters:** 4 extracted.

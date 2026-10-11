@@ -21,8 +21,7 @@
 Gupta N et al., Population Pharmacokinetic Analysis of…, Clinical pharmacokinetics (2017)
   ·  DOI: [10.1007/s40262-017-0526-4](https://doi.org/10.1007/s40262-017-0526-4)
 
-## Model component
-<dbs-pgx drug="ixazomib" model-id="Ixazomib_Gupta2017_reference" status="extracted" stale="false" population="adults with multiple myeloma" measured-compound="ixazomib" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="ixazomib" model-id="Ixazomib_Gupta2017_reference" status="extracted" stale="false" population="adults with multiple myeloma" measured-compound="ixazomib" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment, oral mammillary model — template `PK_2C_enteral`.  
 **Parameters:** 9 extracted.

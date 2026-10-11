@@ -21,8 +21,7 @@
 Altcheh J et al., Population pharmacokinetics of benznida…, PLoS neglected tropical dis… (2023)
   ·  DOI: [10.1371/journal.pntd.0010850](https://doi.org/10.1371/journal.pntd.0010850)
 
-## Model component
-<dbs-pgx drug="benznidazole" model-id="Benznidazole_Altcheh2023_reference" status="needs_review" stale="false" population="neonates, infants and children with Chagas disease" measured-compound="benznidazole" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="benznidazole" model-id="Benznidazole_Altcheh2023_reference" status="needs_review" stale="false" population="neonates, infants and children with Chagas disease" measured-compound="benznidazole" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 1 extracted.

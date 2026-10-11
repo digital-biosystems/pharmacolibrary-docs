@@ -27,8 +27,7 @@
 Athanassa Z et al., Population pharmacokinetic model of ora…, The Journal of antimicrobia… (2025)
   ·  DOI: [10.1093/jac/dkaf090](https://doi.org/10.1093/jac/dkaf090)
 
-## Model component
-<dbs-pgx drug="angiotensin II" model-id="AngiotensinIi_Athanassa2025_reference" status="extracted" stale="true" population="" measured-compound="angiotensin_ii" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="angiotensin II" model-id="AngiotensinIi_Athanassa2025_reference" status="extracted" stale="true" population="" measured-compound="angiotensin_ii" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 3 extracted.

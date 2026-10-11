@@ -20,8 +20,7 @@
 Purohit V et al., Leveraging Prior Healthy Participant Ph…, The AAPS journal (2023)
   ·  DOI: [10.1208/s12248-023-00792-8](https://doi.org/10.1208/s12248-023-00792-8)
 
-## Model component
-<dbs-pgx drug="ritlecitinib" model-id="Ritlecitinib_Purohit2023_study_2_50_mg_qd" status="needs_review" stale="false" population="healthy adults and patients with renal or hepatic impairment" measured-compound="ritlecitinib" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="ritlecitinib" model-id="Ritlecitinib_Purohit2023_study_2_50_mg_qd" status="needs_review" stale="false" population="healthy adults and patients with renal or hepatic impairment" measured-compound="ritlecitinib" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 4 extracted.

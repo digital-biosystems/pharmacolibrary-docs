@@ -28,8 +28,7 @@ No clearance, volume or rate constant of the model is reported in it. Only the a
 ## Citation
 Anastasiou-Nana M et al., Pharmacokinetics of amiodarone after in…, International journal of cl… (1982)
 
-## Model component
-<dbs-pgx drug="amiodarone" model-id="Amiodarone_AnastasiouNana1982_reference" status="rejected" stale="true" population="healthy adults" measured-compound="amiodarone" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="amiodarone" model-id="Amiodarone_AnastasiouNana1982_reference" status="rejected" stale="true" population="healthy adults" measured-compound="amiodarone" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

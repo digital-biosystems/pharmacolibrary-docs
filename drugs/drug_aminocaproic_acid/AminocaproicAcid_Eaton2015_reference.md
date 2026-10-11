@@ -29,8 +29,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Eaton MP et al., Pharmacokinetics of ε-Aminocaproic Acid…, Anesthesiology (2015)
   ·  DOI: [10.1097/ALN.0000000000000616](https://doi.org/10.1097/ALN.0000000000000616)
 
-## Model component
-<dbs-pgx drug="aminocaproic acid" model-id="AminocaproicAcid_Eaton2015_reference" status="needs_review" stale="false" population="neonates undergoing cardiac surgery" measured-compound="aminocaproic_acid" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="aminocaproic acid" model-id="AminocaproicAcid_Eaton2015_reference" status="needs_review" stale="false" population="neonates undergoing cardiac surgery" measured-compound="aminocaproic_acid" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 1 extracted.

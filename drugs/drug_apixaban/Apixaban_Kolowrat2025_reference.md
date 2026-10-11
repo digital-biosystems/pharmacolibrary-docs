@@ -28,8 +28,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Kolowrat S et al., Real-World Impact of Amiodarone on Apix…, Clinical and translational… (2025)
   ·  DOI: [10.1111/cts.70392](https://doi.org/10.1111/cts.70392)
 
-## Model component
-<dbs-pgx drug="apixaban" model-id="Apixaban_Kolowrat2025_reference" status="rejected" stale="false" population="hospitalized patients with nonvalvular atrial fibrillation" measured-compound="apixaban" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="apixaban" model-id="Apixaban_Kolowrat2025_reference" status="rejected" stale="false" population="hospitalized patients with nonvalvular atrial fibrillation" measured-compound="apixaban" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 2 extracted.

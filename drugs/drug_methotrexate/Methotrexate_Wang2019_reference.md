@@ -27,8 +27,7 @@ The parameter labelled θ3 Ka is given in h/L, which is dimensionally inconsiste
 Wang Z et al., Influence of the OATP Polymorphism on t…, Current drug metabolism (2019)
   ·  DOI: [10.2174/1389200220666190701094756](https://doi.org/10.2174/1389200220666190701094756)
 
-## Model component
-<dbs-pgx drug="methotrexate" model-id="Methotrexate_Wang2019_reference" status="rejected" stale="false" population="Chinese patients with rheumatoid arthritis" measured-compound="methotrexate" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="methotrexate" model-id="Methotrexate_Wang2019_reference" status="rejected" stale="false" population="Chinese patients with rheumatoid arthritis" measured-compound="methotrexate" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 5 extracted.

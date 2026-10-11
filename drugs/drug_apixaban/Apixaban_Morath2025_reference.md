@@ -28,8 +28,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Morath B et al., Effect of Amiodarone on Apixaban Exposu…, Clinical pharmacokinetics (2025)
   ·  DOI: [10.1007/s40262-025-01534-z](https://doi.org/10.1007/s40262-025-01534-z)
 
-## Model component
-<dbs-pgx drug="apixaban" model-id="Apixaban_Morath2025_reference" status="rejected" stale="false" population="cardiac surgery patients with postoperative atrial fibrillation" measured-compound="apixaban" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="apixaban" model-id="Apixaban_Morath2025_reference" status="rejected" stale="false" population="cardiac surgery patients with postoperative atrial fibrillation" measured-compound="apixaban" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

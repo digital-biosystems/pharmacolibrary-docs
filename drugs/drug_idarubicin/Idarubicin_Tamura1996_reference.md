@@ -20,8 +20,7 @@
 ## Citation
 Tamura K, A phase I study of idarubicin hydrochlo…, Seminars in hematology (1996)
 
-## Model component
-<dbs-pgx drug="idarubicin" model-id="Idarubicin_Tamura1996_reference" status="extracted" stale="false" population="patients with acute leukemia or chronic myelogenous leukemia in blastic crisis" measured-compound="idarubicin" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="idarubicin" model-id="Idarubicin_Tamura1996_reference" status="extracted" stale="false" population="patients with acute leukemia or chronic myelogenous leukemia in blastic crisis" measured-compound="idarubicin" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameters:** 4 extracted.

@@ -22,8 +22,7 @@
 ## Citation
 Wilcke JR et al., Pharmacokinetics of ketoprofen in healt…, American journal of veterin… (1998)
 
-## Model component
-<dbs-pgx drug="ketoprofen" model-id="Ketoprofen_Wilcke1998_reference" status="rejected" stale="false" population="healthy foals less than twenty-four hours old" measured-compound="ketoprofen" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="ketoprofen" model-id="Ketoprofen_Wilcke1998_reference" status="rejected" stale="false" population="healthy foals less than twenty-four hours old" measured-compound="ketoprofen" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

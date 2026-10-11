@@ -21,8 +21,7 @@
 Akashita G et al., PK/PD analysis of biapenem in patients…, Journal of pharmaceutical h… (2015)
   ·  DOI: [10.1186/s40780-015-0031-6](https://doi.org/10.1186/s40780-015-0031-6)
 
-## Model component
-<dbs-pgx drug="biapenem" model-id="Biapenem_Akashita2015_reference" status="extracted" stale="false" population="patients undergoing continuous hemodiafiltration" measured-compound="biapenem" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="biapenem" model-id="Biapenem_Akashita2015_reference" status="extracted" stale="false" population="patients undergoing continuous hemodiafiltration" measured-compound="biapenem" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 8 extracted.

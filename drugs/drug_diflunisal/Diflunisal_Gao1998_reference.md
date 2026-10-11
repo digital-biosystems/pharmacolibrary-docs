@@ -29,8 +29,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 ## Citation
 Gao L et al., [Determination of diflunisal in plasma…, Yao xue xue bao = Acta phar… (1998)
 
-## Model component
-<dbs-pgx drug="diflunisal" model-id="Diflunisal_Gao1998_reference" status="rejected" stale="true" population="healthy adults" measured-compound="diflunisal" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="diflunisal" model-id="Diflunisal_Gao1998_reference" status="rejected" stale="true" population="healthy adults" measured-compound="diflunisal" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 2 extracted.

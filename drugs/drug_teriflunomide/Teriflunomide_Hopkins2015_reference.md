@@ -22,8 +22,7 @@
 Hopkins AM et al., Semiphysiologically Based Pharmacokinet…, CPT: pharmacometrics & syst… (2015)
   ·  DOI: [10.1002/psp4.46](https://doi.org/10.1002/psp4.46)
 
-## Model component
-<dbs-pgx drug="teriflunomide" model-id="Teriflunomide_Hopkins2015_reference" status="rejected" stale="false" population="adults with rheumatoid arthritis" measured-compound="teriflunomide" parameterization="apparent_wrt_Fm" topology="parent_metabolite"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="teriflunomide" model-id="Teriflunomide_Hopkins2015_reference" status="rejected" stale="false" population="adults with rheumatoid arthritis" measured-compound="teriflunomide" parameterization="apparent_wrt_Fm" topology="parent_metabolite"></div>
 
 **Model structure:** parent + metabolite; no model was built for this record.  
 **Parameters:** 0 extracted.

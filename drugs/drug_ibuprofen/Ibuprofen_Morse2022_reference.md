@@ -29,8 +29,7 @@ A second, independent reading of the paper (`gpt-5.6-luna`) disagrees on which c
 JamesDMorse 0000-0001-7500-0062 Department of Pharmacology and Clinical Pharmacology University of Auckland Park Road 1023 Auckland New Zealand Department of Pharmacology and Clinical Pharmacology University of Auckland Park Road 1023 Auckland New Zealand et al., Population Pharmacokinetic Modelling of… (2022)
   ·  DOI: [10.1007/s13318-022-00766-9](https://doi.org/10.1007/s13318-022-00766-9)
 
-## Model component
-<dbs-pgx drug="ibuprofen" model-id="Ibuprofen_Morse2022_reference" status="rejected" stale="false" population="healthy adults" measured-compound="acetaminophen, ibuprofen" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="ibuprofen" model-id="Ibuprofen_Morse2022_reference" status="rejected" stale="false" population="healthy adults" measured-compound="acetaminophen, ibuprofen" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 4 extracted.

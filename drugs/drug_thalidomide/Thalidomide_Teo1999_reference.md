@@ -20,8 +20,7 @@
 ## Citation
 Teo SK et al., Single-dose oral pharmacokinetics of th…, Journal of clinical pharmac… (1999)
 
-## Model component
-<dbs-pgx drug="thalidomide" model-id="Thalidomide_Teo1999_reference" status="rejected" stale="false" population="healthy male volunteers" measured-compound="thalidomide" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="thalidomide" model-id="Thalidomide_Teo1999_reference" status="rejected" stale="false" population="healthy male volunteers" measured-compound="thalidomide" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 3 extracted.

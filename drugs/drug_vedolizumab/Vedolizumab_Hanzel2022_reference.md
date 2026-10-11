@@ -20,8 +20,7 @@
 Hanzel J et al., Pharmacokinetic-Pharmacodynamic Model o…, Inflammatory bowel diseases (2022)
   ·  DOI: [10.1093/ibd/izab143](https://doi.org/10.1093/ibd/izab143)
 
-## Model component
-<dbs-pgx drug="vedolizumab" model-id="Vedolizumab_Hanzel2022_reference" status="rejected" stale="false" population="adults with Crohn disease" measured-compound="vedolizumab" parameterization="mechanistic" topology="manual_model_class"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="vedolizumab" model-id="Vedolizumab_Hanzel2022_reference" status="rejected" stale="false" population="adults with Crohn disease" measured-compound="vedolizumab" parameterization="mechanistic" topology="manual_model_class"></div>
 
 **Model structure:** nonlinear / manual; no model was built for this record.  
 **Parameters:** 0 extracted.

@@ -33,8 +33,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Ueda CT et al., Comparative pharmacokinetics of quinidi…, Journal of pharmaceutical s… (1980)
   ·  DOI: [10.1002/jps.2600691212](https://doi.org/10.1002/jps.2600691212)
 
-## Model component
-<dbs-pgx drug="quinidine" model-id="Quinidine_Ueda1980_reference" status="rejected" stale="true" population="rabbits" measured-compound="quinidine" parameterization="mechanistic" topology="parent_metabolite"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="quinidine" model-id="Quinidine_Ueda1980_reference" status="rejected" stale="true" population="rabbits" measured-compound="quinidine" parameterization="mechanistic" topology="parent_metabolite"></div>
 
 **Model structure:** parent + metabolite; no model was built for this record.  
 **Parameters:** 1 extracted.

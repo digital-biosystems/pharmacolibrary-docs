@@ -29,8 +29,7 @@ No clearance, volume or rate constant of the model is reported in it. Only the a
 Kengo A et al., Dolutegravir pharmacokinetics in Uganda…, Antimicrobial agents and ch… (2023)
   ·  DOI: [10.1128/aac.00430-23](https://doi.org/10.1128/aac.00430-23)
 
-## Model component
-<dbs-pgx drug="dolutegravir" model-id="Dolutegravir_Kengo2023_reference" status="extracted" stale="true" population="adults with TB and HIV" measured-compound="dolutegravir" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="dolutegravir" model-id="Dolutegravir_Kengo2023_reference" status="extracted" stale="true" population="adults with TB and HIV" measured-compound="dolutegravir" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 5 extracted.

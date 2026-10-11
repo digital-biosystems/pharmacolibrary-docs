@@ -29,8 +29,7 @@ A reported unit could not be converted (Km), so that value has no SI equivalent.
 Kruizinga MD et al., Population pharmacokinetics of clonazep…, British journal of clinical… (2022)
   ·  DOI: [10.1111/bcp.15152](https://doi.org/10.1111/bcp.15152)
 
-## Model component
-<dbs-pgx drug="clonazepam" model-id="Clonazepam_Kruizinga2022_reference" status="extracted" stale="true" population="healthy adults" measured-compound="clonazepam" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="clonazepam" model-id="Clonazepam_Kruizinga2022_reference" status="extracted" stale="true" population="healthy adults" measured-compound="clonazepam" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment, IV mammillary model — template `PK_2C`.  
 **Parameters:** 6 extracted.

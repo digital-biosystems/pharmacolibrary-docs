@@ -31,8 +31,7 @@ Independently confirmed by `gpt-oss:120b`.
 Wang Y et al., A picogram BA-ELISA quantification assa…, PLoS neglected tropical dis… (2023)
   ·  DOI: [10.1371/journal.pntd.0011568](https://doi.org/10.1371/journal.pntd.0011568)
 
-## Model component
-<dbs-pgx drug="biotin" model-id="Biotin_Wang2023_reference" status="extracted" stale="true" population="" measured-compound="biotin" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="biotin" model-id="Biotin_Wang2023_reference" status="extracted" stale="true" population="" measured-compound="biotin" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameters:** 2 extracted.

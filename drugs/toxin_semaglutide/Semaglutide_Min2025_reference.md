@@ -23,8 +23,7 @@
 Min JS; Jo SJ; Lee S; Kim DY; Kim DH; Lee CB; Bae SK et al. (2025). Drug design, development and therapy 19
   ·  DOI: [10.2147/dddt.s506957](https://doi.org/10.2147/dddt.s506957)
 
-## Model component
-<dbs-pgx drug="semaglutide" model-id="Semaglutide_Min2025_reference" status="extracted" stale="true" population="unknown" measured-compound="semaglutide" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="semaglutide" model-id="Semaglutide_Min2025_reference" status="extracted" stale="true" population="unknown" measured-compound="semaglutide" parameterization="apparent" topology="1C"></div>
 
 **Parameterization:** CL/F, V/F — apparent, F unknown (apparent — bioavailability not identifiable).
 

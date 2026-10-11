@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Liu Y et al., Population Pharmacokinetics of Tranexam…, Drug design, development an… (2025)
   ·  DOI: [10.2147/DDDT.S493485](https://doi.org/10.2147/DDDT.S493485)
 
-## Model component
-<dbs-pgx drug="tranexamic acid" model-id="TranexamicAcid_Liu2025_estimate_rse" status="rejected" stale="true" population="Chinese adults undergoing cardiac surgery with cardiopulmonary bypass" measured-compound="tranexamic acid" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="tranexamic acid" model-id="TranexamicAcid_Liu2025_estimate_rse" status="rejected" stale="true" population="Chinese adults undergoing cardiac surgery with cardiopulmonary bypass" measured-compound="tranexamic acid" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment; no model was built for this record.  
 **Parameters:** 3 extracted.

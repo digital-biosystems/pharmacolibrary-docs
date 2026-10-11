@@ -32,8 +32,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on bioavai
 Olsson-Gisleskog P et al., Population pharmacokinetics meta-analys…, Clinical pharmacokinetics (2007)
   ·  DOI: [10.2165/00003088-200746020-00004](https://doi.org/10.2165/00003088-200746020-00004)
 
-## Model component
-<dbs-pgx drug="erythropoietin" model-id="Erythropoietin_OlssonGisleskog2007_reference" status="needs_review" stale="true" population="healthy subjects" measured-compound="erythropoietin" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="erythropoietin" model-id="Erythropoietin_OlssonGisleskog2007_reference" status="needs_review" stale="true" population="healthy subjects" measured-compound="erythropoietin" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 1 extracted.

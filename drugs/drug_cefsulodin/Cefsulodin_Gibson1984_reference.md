@@ -20,8 +20,7 @@
 Gibson TP et al., Kinetics of cefsulodin in patients with…, Reviews of infectious disea… (1984)
   ·  DOI: [10.1093/clinids/6.supplement_3.s689](https://doi.org/10.1093/clinids/6.supplement_3.s689)
 
-## Model component
-<dbs-pgx drug="cefsulodin" model-id="Cefsulodin_Gibson1984_reference" status="rejected" stale="false" population="patients with renal impairment" measured-compound="cefsulodin" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="cefsulodin" model-id="Cefsulodin_Gibson1984_reference" status="rejected" stale="false" population="patients with renal impairment" measured-compound="cefsulodin" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

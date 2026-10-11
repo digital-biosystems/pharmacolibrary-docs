@@ -25,8 +25,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Heikkinen H et al., Pharmacokinetics of entacapone, a perip…, European journal of clinica… (2001)
   ·  DOI: [10.1007/s002280000244](https://doi.org/10.1007/s002280000244)
 
-## Model component
-<dbs-pgx drug="entacapone" model-id="Entacapone_Heikkinen2001_reference" status="extracted" stale="false" population="healthy male volunteers" measured-compound="entacapone" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="entacapone" model-id="Entacapone_Heikkinen2001_reference" status="extracted" stale="false" population="healthy male volunteers" measured-compound="entacapone" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 9 extracted.

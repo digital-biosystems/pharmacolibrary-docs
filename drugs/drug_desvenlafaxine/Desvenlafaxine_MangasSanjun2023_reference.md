@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on `parame
 Mangas-Sanjuán V et al., Alternative Pharmacokinetic Metrics in…, Pharmaceutics (2023)
   ·  DOI: [10.3390/pharmaceutics15020409](https://doi.org/10.3390/pharmaceutics15020409)
 
-## Model component
-<dbs-pgx drug="desvenlafaxine" model-id="Desvenlafaxine_MangasSanjun2023_reference" status="extracted" stale="true" population="healthy adults" measured-compound="desvenlafaxine" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="desvenlafaxine" model-id="Desvenlafaxine_MangasSanjun2023_reference" status="extracted" stale="true" population="healthy adults" measured-compound="desvenlafaxine" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 5 extracted.

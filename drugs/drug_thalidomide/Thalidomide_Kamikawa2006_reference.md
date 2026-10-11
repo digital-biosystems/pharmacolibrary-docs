@@ -21,8 +21,7 @@
 Kamikawa R et al., The pharmacokinetics of low-dose thalid…, Biological & pharmaceutical… (2006)
   ·  DOI: [10.1248/bpb.29.2331](https://doi.org/10.1248/bpb.29.2331)
 
-## Model component
-<dbs-pgx drug="thalidomide" model-id="Thalidomide_Kamikawa2006_reference" status="extracted" stale="false" population="adults with refractory multiple myeloma" measured-compound="thalidomide" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="thalidomide" model-id="Thalidomide_Kamikawa2006_reference" status="extracted" stale="false" population="adults with refractory multiple myeloma" measured-compound="thalidomide" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 4 extracted.

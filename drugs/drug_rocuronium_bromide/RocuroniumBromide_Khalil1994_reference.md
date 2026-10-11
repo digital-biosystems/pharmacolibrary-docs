@@ -21,8 +21,7 @@
 Khalil M et al., Pharmacokinetics and pharmacodynamics o…, Anesthesiology (1994)
   ·  DOI: [10.1097/00000542-199406000-00011](https://doi.org/10.1097/00000542-199406000-00011)
 
-## Model component
-<dbs-pgx drug="rocuronium bromide" model-id="RocuroniumBromide_Khalil1994_reference" status="needs_review" stale="false" population="adults with cirrhosis and normal liver function" measured-compound="rocuronium" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="rocuronium bromide" model-id="RocuroniumBromide_Khalil1994_reference" status="needs_review" stale="false" population="adults with cirrhosis and normal liver function" measured-compound="rocuronium" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 4 extracted.

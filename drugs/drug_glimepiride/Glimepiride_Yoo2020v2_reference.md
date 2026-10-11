@@ -33,8 +33,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on paramet
 Yoo H et al., Pharmacokinetic/Pharmacodynamic Interac…, Drug design, development an… (2020)
   ·  DOI: [10.2147/DDDT.S275343](https://doi.org/10.2147/DDDT.S275343)
 
-## Model component
-<dbs-pgx drug="glimepiride" model-id="Glimepiride_Yoo2020v2_reference" status="extracted" stale="true" population="healthy male subjects" measured-compound="glimepiride" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="glimepiride" model-id="Glimepiride_Yoo2020v2_reference" status="extracted" stale="true" population="healthy male subjects" measured-compound="glimepiride" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 2 extracted.

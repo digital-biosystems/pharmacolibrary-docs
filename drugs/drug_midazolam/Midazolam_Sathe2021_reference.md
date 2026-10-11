@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Sathe AG et al., Therapeutic Protein Drug Interaction Po…, Journal of clinical pharmac… (2021)
   ·  DOI: [10.1002/jcph.1744](https://doi.org/10.1002/jcph.1744)
 
-## Model component
-<dbs-pgx drug="midazolam" model-id="Midazolam_Sathe2021_reference" status="needs_review" stale="false" population="healthy adults and adults with moderate to severe psoriasis" measured-compound="midazolam" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="midazolam" model-id="Midazolam_Sathe2021_reference" status="needs_review" stale="false" population="healthy adults and adults with moderate to severe psoriasis" measured-compound="midazolam" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 6 extracted, plus 2 covariate effects.

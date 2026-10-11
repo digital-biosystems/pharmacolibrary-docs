@@ -33,8 +33,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the val
 Mimoz O et al., Nefopam pharmacokinetics in patients wi…, Anesthesia and analgesia (2010)
   ·  DOI: [10.1213/ANE.0b013e3181f33488](https://doi.org/10.1213/ANE.0b013e3181f33488)
 
-## Model component
-<dbs-pgx drug="nefopam" model-id="Nefopam_Mimoz2010_reference" status="rejected" stale="true" population="adults with end-stage renal disease" measured-compound="desmethyl-nefopam" parameterization="mechanistic" topology="parent_metabolite"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="nefopam" model-id="Nefopam_Mimoz2010_reference" status="rejected" stale="true" population="adults with end-stage renal disease" measured-compound="desmethyl-nefopam" parameterization="mechanistic" topology="parent_metabolite"></div>
 
 **Model structure:** parent + metabolite; no model was built for this record.  
 **Parameters:** 0 extracted.

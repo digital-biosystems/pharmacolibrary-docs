@@ -23,8 +23,7 @@
 Anadón A et al., Pharmacokinetics and tissue residues of…, Journal of veterinary pharm… (1995)
   ·  DOI: [10.1111/j.1365-2885.1995.tb00582.x](https://doi.org/10.1111/j.1365-2885.1995.tb00582.x)
 
-## Model component
-<dbs-pgx drug="norfloxacin" model-id="Norfloxacin_Anadn1995_reference" status="needs_review" stale="false" population="healthy pigs" measured-compound="norfloxacin" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="norfloxacin" model-id="Norfloxacin_Anadn1995_reference" status="needs_review" stale="false" population="healthy pigs" measured-compound="norfloxacin" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 6 extracted.

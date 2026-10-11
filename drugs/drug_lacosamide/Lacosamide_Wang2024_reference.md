@@ -21,8 +21,7 @@
 Wang J et al., How to handle a missed or delayed dose…, Epilepsy & behavior : E&B (2024)
   ·  DOI: [10.1016/j.yebeh.2023.109601](https://doi.org/10.1016/j.yebeh.2023.109601)
 
-## Model component
-<dbs-pgx drug="lacosamide" model-id="Lacosamide_Wang2024_reference" status="extracted" stale="false" population="pediatric patients with epilepsy" measured-compound="lacosamide" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="lacosamide" model-id="Lacosamide_Wang2024_reference" status="extracted" stale="false" population="pediatric patients with epilepsy" measured-compound="lacosamide" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 2 extracted.

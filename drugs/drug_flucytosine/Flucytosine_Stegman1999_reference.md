@@ -35,8 +35,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Stegman LD et al., Noninvasive quantitation of cytosine de…, Proceedings of the National… (1999)
   ·  DOI: [10.1073/pnas.96.17.9821](https://doi.org/10.1073/pnas.96.17.9821)
 
-## Model component
-<dbs-pgx drug="flucytosine" model-id="Flucytosine_Stegman1999_reference" status="rejected" stale="true" population="human tumor xenografts in nude mice" measured-compound="5-fluorouracil" parameterization="mechanistic" topology="general_linear"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="flucytosine" model-id="Flucytosine_Stegman1999_reference" status="rejected" stale="true" population="human tumor xenografts in nude mice" measured-compound="5-fluorouracil" parameterization="mechanistic" topology="general_linear"></div>
 
 **Model structure:** general linear; no model was built for this record.  
 **Parameters:** 0 extracted.

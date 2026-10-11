@@ -31,8 +31,7 @@ No clearance, volume or rate constant of the model is reported in it. No paramet
 Geldof M et al., Pharmacokinetic modeling of non-linear…, Pharmaceutical research (2008)
   ·  DOI: [10.1007/s11095-007-9390-5](https://doi.org/10.1007/s11095-007-9390-5)
 
-## Model component
-<dbs-pgx drug="fluvoxamine" model-id="Fluvoxamine_Geldof2008v3_reference" status="rejected" stale="true" population="rats with brain microdialysis" measured-compound="fluvoxamine" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="fluvoxamine" model-id="Fluvoxamine_Geldof2008v3_reference" status="rejected" stale="true" population="rats with brain microdialysis" measured-compound="fluvoxamine" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

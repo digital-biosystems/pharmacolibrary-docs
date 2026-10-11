@@ -29,8 +29,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on paramet
 Goglia U et al., Ianus Bifrons: The Two Faces of Metform…, Cancers (2024)
   ·  DOI: [10.3390/cancers16071287](https://doi.org/10.3390/cancers16071287)
 
-## Model component
-<dbs-pgx drug="metformin" model-id="Metformin_Goglia2024_reference" status="needs_review" stale="false" population="unknown" measured-compound="metformin" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="metformin" model-id="Metformin_Goglia2024_reference" status="needs_review" stale="false" population="unknown" measured-compound="metformin" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 2 extracted.

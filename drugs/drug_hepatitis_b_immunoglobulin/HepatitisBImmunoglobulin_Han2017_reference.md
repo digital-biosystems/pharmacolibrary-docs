@@ -29,8 +29,7 @@ No clearance, volume or rate constant of the model is reported in it. No paramet
 Han S et al., A 6-month mixed-effect pharmacokinetic…, Drug design, development an… (2017)
   ·  DOI: [10.2147/DDDT.S134711](https://doi.org/10.2147/DDDT.S134711)
 
-## Model component
-<dbs-pgx drug="hepatitis B immunoglobulin" model-id="HepatitisBImmunoglobulin_Han2017_reference" status="extracted" stale="true" population="adult liver transplant recipients" measured-compound="hepatitis B immunoglobulin (HBIG)" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="hepatitis B immunoglobulin" model-id="HepatitisBImmunoglobulin_Han2017_reference" status="extracted" stale="true" population="adult liver transplant recipients" measured-compound="hepatitis B immunoglobulin (HBIG)" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameters:** 2 extracted.

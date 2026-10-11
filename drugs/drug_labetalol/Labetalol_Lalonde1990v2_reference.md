@@ -30,8 +30,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the val
 Lalonde RL et al., Labetalol pharmacokinetics and pharmaco…, Clinical pharmacology and t… (1990)
   ·  DOI: [10.1038/clpt.1990.187](https://doi.org/10.1038/clpt.1990.187)
 
-## Model component
-<dbs-pgx drug="labetalol" model-id="Labetalol_Lalonde1990v2_reference" status="needs_review" stale="true" population="healthy adults" measured-compound="labetalol" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="labetalol" model-id="Labetalol_Lalonde1990v2_reference" status="needs_review" stale="true" population="healthy adults" measured-compound="labetalol" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 2 extracted.

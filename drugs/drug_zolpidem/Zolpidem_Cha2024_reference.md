@@ -21,8 +21,7 @@
 Cha HJ et al., Development of a Web Application for Si…, Pharmaceutics (2024)
   ·  DOI: [10.3390/pharmaceutics16050689](https://doi.org/10.3390/pharmaceutics16050689)
 
-## Model component
-<dbs-pgx drug="zolpidem" model-id="Zolpidem_Cha2024_reference" status="extracted" stale="false" population="healthy adults" measured-compound="zolpidem" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="zolpidem" model-id="Zolpidem_Cha2024_reference" status="extracted" stale="false" population="healthy adults" measured-compound="zolpidem" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 4 extracted.

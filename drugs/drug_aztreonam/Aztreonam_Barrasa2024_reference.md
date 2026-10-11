@@ -20,8 +20,7 @@
 Barrasa H et al., Optimizing Antibiotic Therapy for, Antibiotics (Basel, Switzer… (2024)
   ·  DOI: [10.3390/antibiotics13060553](https://doi.org/10.3390/antibiotics13060553)
 
-## Model component
-<dbs-pgx drug="aztreonam" model-id="Aztreonam_Barrasa2024_reference" status="rejected" stale="false" population="" measured-compound="aztreonam" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="aztreonam" model-id="Aztreonam_Barrasa2024_reference" status="rejected" stale="false" population="" measured-compound="aztreonam" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment; no model was built for this record.  
 **Parameters:** 3 extracted.

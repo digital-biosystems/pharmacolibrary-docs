@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Knorr B et al., Pharmacokinetics and safety of monteluk…, Journal of clinical pharmac… (2006)
   ·  DOI: [10.1177/0091270006288324](https://doi.org/10.1177/0091270006288324)
 
-## Model component
-<dbs-pgx drug="montelukast" model-id="Montelukast_Knorr2006_reference" status="needs_review" stale="true" population="children aged 3 to 6 months" measured-compound="montelukast" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="montelukast" model-id="Montelukast_Knorr2006_reference" status="needs_review" stale="true" population="children aged 3 to 6 months" measured-compound="montelukast" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 3 extracted.

@@ -31,8 +31,7 @@ A model needs both clearance and volume; without the clearance it could only be 
 Hampton CE et al., Pharmacokinetics of oral clonazepam in…, Journal of veterinary pharm… (2024)
   ·  DOI: [10.1111/jvp.13451](https://doi.org/10.1111/jvp.13451)
 
-## Model component
-<dbs-pgx drug="clonazepam" model-id="Clonazepam_Hampton2024_reference" status="needs_review" stale="true" population="growing commercial cross pigs" measured-compound="clonazepam" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="clonazepam" model-id="Clonazepam_Hampton2024_reference" status="needs_review" stale="true" population="growing commercial cross pigs" measured-compound="clonazepam" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 3 extracted.

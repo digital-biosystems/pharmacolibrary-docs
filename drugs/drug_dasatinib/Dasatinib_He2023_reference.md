@@ -21,8 +21,7 @@
 He S et al., Population Pharmacokinetics and Pharmac…, Pharmaceutical research (2023)
   ·  DOI: [10.1007/s11095-023-03603-z](https://doi.org/10.1007/s11095-023-03603-z)
 
-## Model component
-<dbs-pgx drug="dasatinib" model-id="Dasatinib_He2023_reference" status="needs_review" stale="false" population="Chinese patients with chronic myeloid leukemia" measured-compound="dasatinib" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="dasatinib" model-id="Dasatinib_He2023_reference" status="needs_review" stale="false" population="Chinese patients with chronic myeloid leukemia" measured-compound="dasatinib" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 1 extracted.

@@ -21,8 +21,7 @@
 Deng R et al., Bayesian Population Model of the Pharma…, Clinical pharmacokinetics (2019)
   ·  DOI: [10.1007/s40262-019-00788-8](https://doi.org/10.1007/s40262-019-00788-8)
 
-## Model component
-<dbs-pgx drug="venetoclax" model-id="Venetoclax_Deng2019_reference" status="rejected" stale="false" population="adults with relapsed/refractory chronic lymphocytic leukemia" measured-compound="venetoclax" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="venetoclax" model-id="Venetoclax_Deng2019_reference" status="rejected" stale="false" population="adults with relapsed/refractory chronic lymphocytic leukemia" measured-compound="venetoclax" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

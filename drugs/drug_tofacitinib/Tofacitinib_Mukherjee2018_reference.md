@@ -21,8 +21,7 @@
 Mukherjee A et al., Exposure-response characterization of t…, British journal of clinical… (2018)
   ·  DOI: [10.1111/bcp.13523](https://doi.org/10.1111/bcp.13523)
 
-## Model component
-<dbs-pgx drug="tofacitinib" model-id="Tofacitinib_Mukherjee2018_reference" status="rejected" stale="false" population="adults with moderate to severe ulcerative colitis" measured-compound="tofacitinib" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="tofacitinib" model-id="Tofacitinib_Mukherjee2018_reference" status="rejected" stale="false" population="adults with moderate to severe ulcerative colitis" measured-compound="tofacitinib" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

@@ -20,8 +20,7 @@
 ## Citation
 Fisher DM et al., Elimination of atracurium in humans: co…, Anesthesiology (1986)
 
-## Model component
-<dbs-pgx drug="atracurium" model-id="Atracurium_Fisher1986_reference" status="needs_review" stale="false" population="unknown" measured-compound="atracurium" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="atracurium" model-id="Atracurium_Fisher1986_reference" status="needs_review" stale="false" population="unknown" measured-compound="atracurium" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 4 extracted.

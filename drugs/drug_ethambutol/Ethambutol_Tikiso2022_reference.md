@@ -21,8 +21,7 @@
 Tikiso T et al., Population pharmacokinetics of ethambut…, The Journal of antimicrobia… (2022)
   ·  DOI: [10.1093/jac/dkac127](https://doi.org/10.1093/jac/dkac127)
 
-## Model component
-<dbs-pgx drug="ethambutol" model-id="Ethambutol_Tikiso2022_reference" status="extracted" stale="false" population="" measured-compound="ethambutol" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="ethambutol" model-id="Ethambutol_Tikiso2022_reference" status="extracted" stale="false" population="" measured-compound="ethambutol" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 3 extracted.

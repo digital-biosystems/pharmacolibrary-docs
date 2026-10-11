@@ -21,8 +21,7 @@
 Srinivasan M et al., Population Pharmacokinetics of Pemetrex…, Journal of clinical pharmac… (2019)
   ·  DOI: [10.1002/jcph.1417](https://doi.org/10.1002/jcph.1417)
 
-## Model component
-<dbs-pgx drug="pemetrexed" model-id="Pemetrexed_Srinivasan2019_reference" status="extracted" stale="false" population="adult patients with non-small cell lung cancer" measured-compound="pemetrexed" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="pemetrexed" model-id="Pemetrexed_Srinivasan2019_reference" status="extracted" stale="false" population="adult patients with non-small cell lung cancer" measured-compound="pemetrexed" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment, IV mammillary model — template `PK_2C`.  
 **Parameters:** 4 extracted.

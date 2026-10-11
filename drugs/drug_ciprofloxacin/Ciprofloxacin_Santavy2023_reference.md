@@ -31,8 +31,7 @@ Independently confirmed by `gpt-oss:120b`.
 Santavy P et al., Population pharmacokinetics of three al…, Biomedical papers of the Me… (2023)
   ·  DOI: [10.5507/bp.2022.033](https://doi.org/10.5507/bp.2022.033)
 
-## Model component
-<dbs-pgx drug="ciprofloxacin" model-id="Ciprofloxacin_Santavy2023_reference" status="extracted" stale="true" population="adults undergoing cardiac surgery with extracorporeal circulation" measured-compound="ciprofloxacin" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="ciprofloxacin" model-id="Ciprofloxacin_Santavy2023_reference" status="extracted" stale="true" population="adults undergoing cardiac surgery with extracorporeal circulation" measured-compound="ciprofloxacin" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment, oral mammillary model — template `PK_2C_enteral`.  
 **Parameters:** 6 extracted.

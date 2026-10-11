@@ -21,8 +21,7 @@
 Guglieri-López B et al., Population pharmacokinetics of lenalido…, Cancer chemotherapy and pha… (2017)
   ·  DOI: [10.1007/s00280-016-3228-y](https://doi.org/10.1007/s00280-016-3228-y)
 
-## Model component
-<dbs-pgx drug="lenalidomide" model-id="Lenalidomide_GuglieriLpez2017_reference" status="rejected" stale="false" population="multiple myeloma patients" measured-compound="lenalidomide" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="lenalidomide" model-id="Lenalidomide_GuglieriLpez2017_reference" status="rejected" stale="false" population="multiple myeloma patients" measured-compound="lenalidomide" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

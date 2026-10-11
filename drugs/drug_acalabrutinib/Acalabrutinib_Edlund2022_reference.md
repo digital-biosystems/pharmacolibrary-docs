@@ -21,8 +21,7 @@
 Edlund H et al., Improved characterization of the pharma…, British journal of clinical… (2022)
   ·  DOI: [10.1111/bcp.14988](https://doi.org/10.1111/bcp.14988)
 
-## Model component
-<dbs-pgx drug="acalabrutinib" model-id="Acalabrutinib_Edlund2022_reference" status="extracted" stale="false" population="adults with B-cell malignancies and healthy subjects" measured-compound="acalabrutinib" parameterization="apparent" topology="parent_metabolite"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="acalabrutinib" model-id="Acalabrutinib_Edlund2022_reference" status="extracted" stale="false" population="adults with B-cell malignancies and healthy subjects" measured-compound="acalabrutinib" parameterization="apparent" topology="parent_metabolite"></div>
 
 **Model structure:** parent–metabolite model: parent with 2 compartment(s); metabolite ACP-5862: 2 compartment(s); formed from the central compartment; oral dose — template `PK_3M_9C`.  
 **Parameters:** 11 extracted.

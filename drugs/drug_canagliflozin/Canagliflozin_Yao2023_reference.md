@@ -29,8 +29,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on `parame
 Yao X et al., A model-based meta analysis study of so…, CPT: pharmacometrics & syst… (2023)
   ·  DOI: [10.1002/psp4.12934](https://doi.org/10.1002/psp4.12934)
 
-## Model component
-<dbs-pgx drug="canagliflozin" model-id="Canagliflozin_Yao2023_reference" status="extracted" stale="true" population="healthy subjects and patients with T2DM" measured-compound="canagliflozin" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="canagliflozin" model-id="Canagliflozin_Yao2023_reference" status="extracted" stale="true" population="healthy subjects and patients with T2DM" measured-compound="canagliflozin" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment, IV mammillary model — template `PK_2C`.  
 **Parameters:** 6 extracted.

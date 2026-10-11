@@ -23,8 +23,7 @@
 Deyme L et al., Population pharmacokinetics of FOLFIRIN…, Cancer chemotherapy and pha… (2019)
   ·  DOI: [10.1007/s00280-018-3722-5](https://doi.org/10.1007/s00280-018-3722-5)
 
-## Model component
-<dbs-pgx drug="oxaliplatin" model-id="Oxaliplatin_Deyme2019_reference" status="extracted" stale="false" population="unknown" measured-compound="oxaliplatin" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="oxaliplatin" model-id="Oxaliplatin_Deyme2019_reference" status="extracted" stale="false" population="unknown" measured-compound="oxaliplatin" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment, IV mammillary model — template `PK_2C`.  
 **Parameters:** 4 extracted.

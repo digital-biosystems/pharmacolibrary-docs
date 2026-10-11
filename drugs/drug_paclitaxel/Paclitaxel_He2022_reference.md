@@ -28,8 +28,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the val
 He J et al., Population pharmacokinetics for oral pa…, CPT: pharmacometrics & syst… (2022)
   ·  DOI: [10.1002/psp4.12799](https://doi.org/10.1002/psp4.12799)
 
-## Model component
-<dbs-pgx drug="paclitaxel" model-id="Paclitaxel_He2022_reference" status="needs_review" stale="false" population="patients with advanced/metastatic solid tumors" measured-compound="paclitaxel" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="paclitaxel" model-id="Paclitaxel_He2022_reference" status="needs_review" stale="false" population="patients with advanced/metastatic solid tumors" measured-compound="paclitaxel" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 6 extracted.

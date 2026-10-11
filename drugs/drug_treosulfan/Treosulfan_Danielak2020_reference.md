@@ -23,8 +23,7 @@
 Danielak D et al., Population pharmacokinetic approach for…, Pharmacological reports : PR (2020)
   ·  DOI: [10.1007/s43440-020-00115-0](https://doi.org/10.1007/s43440-020-00115-0)
 
-## Model component
-<dbs-pgx drug="treosulfan" model-id="Treosulfan_Danielak2020_reference" status="rejected" stale="false" population="Wistar rats" measured-compound="treosulfan" parameterization="apparent" topology="parent_metabolite"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="treosulfan" model-id="Treosulfan_Danielak2020_reference" status="rejected" stale="false" population="Wistar rats" measured-compound="treosulfan" parameterization="apparent" topology="parent_metabolite"></div>
 
 **Model structure:** parent + metabolite; no model was built for this record.  
 **Parameters:** 10 extracted.

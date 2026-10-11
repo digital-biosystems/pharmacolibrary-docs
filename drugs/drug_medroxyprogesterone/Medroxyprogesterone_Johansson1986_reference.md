@@ -21,8 +21,7 @@
 Johansson ED et al., Medroxyprogesterone acetate pharmacokin…, Acta pharmacologica et toxi… (1986)
   ·  DOI: [10.1111/j.1600-0773.1986.tb00115.x](https://doi.org/10.1111/j.1600-0773.1986.tb00115.x)
 
-## Model component
-<dbs-pgx drug="medroxyprogesterone" model-id="Medroxyprogesterone_Johansson1986_reference" status="rejected" stale="false" population="healthy female volunteers" measured-compound="medroxyprogesterone acetate" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="medroxyprogesterone" model-id="Medroxyprogesterone_Johansson1986_reference" status="rejected" stale="false" population="healthy female volunteers" measured-compound="medroxyprogesterone acetate" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

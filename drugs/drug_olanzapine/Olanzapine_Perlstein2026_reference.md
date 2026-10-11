@@ -23,8 +23,7 @@
 Perlstein I et al., Population Pharmacokinetic Model-Based…, Journal of clinical pharmac… (2026)
   ·  DOI: [10.1002/jcph.70144](https://doi.org/10.1002/jcph.70144)
 
-## Model component
-<dbs-pgx drug="olanzapine" model-id="Olanzapine_Perlstein2026_reference" status="rejected" stale="false" population="healthy participants and patients with schizophrenia or schizoaffective disorder" measured-compound="olanzapine" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="olanzapine" model-id="Olanzapine_Perlstein2026_reference" status="rejected" stale="false" population="healthy participants and patients with schizophrenia or schizoaffective disorder" measured-compound="olanzapine" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

@@ -25,8 +25,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on `parame
 ter Laak MA et al., Pharmacokinetics of nifedipine slow-rel…, International journal of cl… (2015)
   ·  DOI: [10.5414/CP202215](https://doi.org/10.5414/CP202215)
 
-## Model component
-<dbs-pgx drug="nifedipine" model-id="Nifedipine_ter2015_reference" status="needs_review" stale="false" population="pregnant women with threatened preterm labor" measured-compound="nifedipine" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="nifedipine" model-id="Nifedipine_ter2015_reference" status="needs_review" stale="false" population="pregnant women with threatened preterm labor" measured-compound="nifedipine" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 3 extracted.

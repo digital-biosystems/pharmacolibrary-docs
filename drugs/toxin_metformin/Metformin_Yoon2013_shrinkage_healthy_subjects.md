@@ -19,8 +19,7 @@
 Yoon H; Cho HY; Yoo HD; Kim SM; Lee YB et al. (2013). The AAPS journal 15
   ·  DOI: [10.1208/s12248-013-9460-z](https://doi.org/10.1208/s12248-013-9460-z)
 
-## Model component
-<dbs-pgx drug="metformin" model-id="Metformin_Yoon2013_shrinkage_healthy_subjects" status="not_reviewed" stale="false" population="healthy subjects" measured-compound="" parameterization="" topology=""></dbs-pgx>
+<div class="pk-model-meta" hidden drug="metformin" model-id="Metformin_Yoon2013_shrinkage_healthy_subjects" status="not_reviewed" stale="false" population="healthy subjects" measured-compound="" parameterization="" topology=""></div>
 
 **Parameterization:** not captured.
 

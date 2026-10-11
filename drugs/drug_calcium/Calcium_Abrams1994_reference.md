@@ -29,8 +29,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the val
 Abrams SA et al., Compartmental analysis of calcium metab…, Pediatric research (1994)
   ·  DOI: [10.1203/00006450-199410000-00002](https://doi.org/10.1203/00006450-199410000-00002)
 
-## Model component
-<dbs-pgx drug="Calcium" model-id="Calcium_Abrams1994_reference" status="rejected" stale="true" population="very-low-birth-weight infants" measured-compound="calcium" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="Calcium" model-id="Calcium_Abrams1994_reference" status="rejected" stale="true" population="very-low-birth-weight infants" measured-compound="calcium" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 4 extracted.

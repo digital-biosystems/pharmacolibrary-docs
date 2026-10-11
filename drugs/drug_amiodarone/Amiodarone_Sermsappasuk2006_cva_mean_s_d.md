@@ -33,8 +33,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Sermsappasuk P et al., Kinetic analysis of myocardial uptake a…, European journal of pharmac… (2006)
   ·  DOI: [10.1016/j.ejps.2006.02.007](https://doi.org/10.1016/j.ejps.2006.02.007)
 
-## Model component
-<dbs-pgx drug="amiodarone" model-id="Amiodarone_Sermsappasuk2006_cva_mean_s_d" status="needs_review" stale="true" population="isolated perfused rat hearts" measured-compound="amiodarone" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="amiodarone" model-id="Amiodarone_Sermsappasuk2006_cva_mean_s_d" status="needs_review" stale="true" population="isolated perfused rat hearts" measured-compound="amiodarone" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 3 extracted.

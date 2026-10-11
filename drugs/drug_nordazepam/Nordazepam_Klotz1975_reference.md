@@ -23,8 +23,7 @@
 Klotz U et al., The effects of age and liver disease on…, The Journal of clinical inv… (1975)
   ·  DOI: [10.1172/JCI107938](https://doi.org/10.1172/JCI107938)
 
-## Model component
-<dbs-pgx drug="nordazepam" model-id="Nordazepam_Klotz1975_reference" status="extracted" stale="false" population="" measured-compound="nordazepam" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="nordazepam" model-id="Nordazepam_Klotz1975_reference" status="extracted" stale="false" population="" measured-compound="nordazepam" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameters:** 2 extracted.

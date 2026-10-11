@@ -29,8 +29,7 @@ Independently confirmed by `gpt-oss:120b`.
 ## Citation
 Li H et al., [Pharmacokinetics of naltrexone hydroch…, Yao xue xue bao = Acta phar… (1996)
 
-## Model component
-<dbs-pgx drug="naltrexone" model-id="Naltrexone_Li1996_reference" status="needs_review" stale="false" population="dogs" measured-compound="naltrexone" parameterization="mechanistic" topology="parent_metabolite"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="naltrexone" model-id="Naltrexone_Li1996_reference" status="needs_review" stale="false" population="dogs" measured-compound="naltrexone" parameterization="mechanistic" topology="parent_metabolite"></div>
 
 **Model structure:** parent + metabolite; no model was built for this record.  
 **Parameters:** 4 extracted.

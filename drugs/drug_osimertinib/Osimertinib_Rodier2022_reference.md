@@ -21,8 +21,7 @@
 Rodier T et al., Exposure-Response Analysis of Osimertin…, Pharmaceutics (2022)
   ·  DOI: [10.3390/pharmaceutics14091844](https://doi.org/10.3390/pharmaceutics14091844)
 
-## Model component
-<dbs-pgx drug="osimertinib" model-id="Osimertinib_Rodier2022_reference" status="extracted" stale="false" population="adults with advanced EGFR-mutant NSCLC" measured-compound="osimertinib" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="osimertinib" model-id="Osimertinib_Rodier2022_reference" status="extracted" stale="false" population="adults with advanced EGFR-mutant NSCLC" measured-compound="osimertinib" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 3 extracted.

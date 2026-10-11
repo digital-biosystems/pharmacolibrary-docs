@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Mielke H et al., 5-Fluorouracil Toxicity: Revisiting the…, Pharmaceuticals (Basel, Swi… (2025)
   ·  DOI: [10.3390/ph18050653](https://doi.org/10.3390/ph18050653)
 
-## Model component
-<dbs-pgx drug="fluorouracil" model-id="Fluorouracil_Mielke2025_reference" status="rejected" stale="true" population="adult cancer patients" measured-compound="5-fluorouracil" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="fluorouracil" model-id="Fluorouracil_Mielke2025_reference" status="rejected" stale="true" population="adult cancer patients" measured-compound="5-fluorouracil" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 7 extracted.

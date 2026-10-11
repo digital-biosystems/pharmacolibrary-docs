@@ -21,8 +21,7 @@
 Olney KB et al., Daptomycin Dose Optimization in Pediatr…, Journal of clinical pharmac… (2024)
   ·  DOI: [10.1002/jcph.2425](https://doi.org/10.1002/jcph.2425)
 
-## Model component
-<dbs-pgx drug="daptomycin" model-id="Daptomycin_Olney2024v2_reference" status="rejected" stale="false" population="pediatric patients with S. aureus bacteremia" measured-compound="daptomycin" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="daptomycin" model-id="Daptomycin_Olney2024v2_reference" status="rejected" stale="false" population="pediatric patients with S. aureus bacteremia" measured-compound="daptomycin" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

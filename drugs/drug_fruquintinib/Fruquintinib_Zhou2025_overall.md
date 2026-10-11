@@ -21,8 +21,7 @@
 Zhou X et al., Population Pharmacokinetics of Fruquint…, Journal of clinical pharmac… (2025)
   ·  DOI: [10.1002/jcph.70001](https://doi.org/10.1002/jcph.70001)
 
-## Model component
-<dbs-pgx drug="fruquintinib" model-id="Fruquintinib_Zhou2025_overall" status="extracted" stale="false" population="patients with refractory metastatic colorectal cancer and healthy volunteers" measured-compound="fruquintinib" parameterization="apparent" topology="parent_metabolite"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="fruquintinib" model-id="Fruquintinib_Zhou2025_overall" status="extracted" stale="false" population="patients with refractory metastatic colorectal cancer and healthy volunteers" measured-compound="fruquintinib" parameterization="apparent" topology="parent_metabolite"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 4 extracted.

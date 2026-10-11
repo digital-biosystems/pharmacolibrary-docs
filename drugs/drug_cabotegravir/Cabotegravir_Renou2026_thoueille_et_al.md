@@ -21,8 +21,7 @@
 Renou Q et al., External Evaluation of Population Pharm…, CPT: pharmacometrics & syst… (2026)
   ·  DOI: [10.1002/psp4.70180](https://doi.org/10.1002/psp4.70180)
 
-## Model component
-<dbs-pgx drug="cabotegravir" model-id="Cabotegravir_Renou2026_thoueille_et_al" status="extracted" stale="false" population="HIV-infected adults (CARLAPOP)" measured-compound="cabotegravir" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="cabotegravir" model-id="Cabotegravir_Renou2026_thoueille_et_al" status="extracted" stale="false" population="HIV-infected adults (CARLAPOP)" measured-compound="cabotegravir" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 3 extracted, plus 2 covariate effects.

@@ -23,8 +23,7 @@
 Nixon E et al., Pharmacokinetic/pharmacodynamic modelin…, Journal of veterinary pharm… (2022)
   ·  DOI: [10.1111/jvp.13083](https://doi.org/10.1111/jvp.13083)
 
-## Model component
-<dbs-pgx drug="ketoprofen" model-id="Ketoprofen_Nixon2022_reference" status="extracted" stale="false" population="6-day-old male piglets" measured-compound="ketoprofen" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="ketoprofen" model-id="Ketoprofen_Nixon2022_reference" status="extracted" stale="false" population="6-day-old male piglets" measured-compound="ketoprofen" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 3 extracted.

@@ -21,8 +21,7 @@
 Lima-Rogel V et al., Population pharmacokinetics of levetira…, Journal of clinical pharmac… (2018)
   ·  DOI: [10.1111/jcpt.12658](https://doi.org/10.1111/jcpt.12658)
 
-## Model component
-<dbs-pgx drug="levetiracetam" model-id="Levetiracetam_LimaRogel2018_reference" status="rejected" stale="false" population="neonates with seizures" measured-compound="levetiracetam" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="levetiracetam" model-id="Levetiracetam_LimaRogel2018_reference" status="rejected" stale="false" population="neonates with seizures" measured-compound="levetiracetam" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

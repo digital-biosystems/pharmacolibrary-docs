@@ -31,8 +31,7 @@ Independently confirmed by `gpt-oss:120b`.
 Fritsch A et al., Clinical Pharmacokinetic and Pharmacody…, Clinical pharmacokinetics (2024)
   ·  DOI: [10.1007/s40262-024-01384-1](https://doi.org/10.1007/s40262-024-01384-1)
 
-## Model component
-<dbs-pgx drug="vericiguat" model-id="Vericiguat_Fritsch2024_reference" status="needs_review" stale="true" population="adults with heart failure with reduced ejection fraction (HFrEF)" measured-compound="vericiguat" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="vericiguat" model-id="Vericiguat_Fritsch2024_reference" status="needs_review" stale="true" population="adults with heart failure with reduced ejection fraction (HFrEF)" measured-compound="vericiguat" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 1 extracted.

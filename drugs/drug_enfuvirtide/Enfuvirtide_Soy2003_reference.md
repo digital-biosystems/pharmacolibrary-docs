@@ -21,8 +21,7 @@
 Soy D et al., Population pharmacokinetics of enfuvirt…, Clinical pharmacology and t… (2003)
   ·  DOI: [10.1016/j.clpt.2003.09.002](https://doi.org/10.1016/j.clpt.2003.09.002)
 
-## Model component
-<dbs-pgx drug="enfuvirtide" model-id="Enfuvirtide_Soy2003_reference" status="extracted" stale="false" population="pediatric patients with human immunodeficiency virus" measured-compound="enfuvirtide" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="enfuvirtide" model-id="Enfuvirtide_Soy2003_reference" status="extracted" stale="false" population="pediatric patients with human immunodeficiency virus" measured-compound="enfuvirtide" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 3 extracted.

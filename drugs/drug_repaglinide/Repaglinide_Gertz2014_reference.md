@@ -30,8 +30,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Gertz M et al., Reduced physiologically-based pharmacok…, Pharmaceutical research (2014)
   ·  DOI: [10.1007/s11095-014-1333-3](https://doi.org/10.1007/s11095-014-1333-3)
 
-## Model component
-<dbs-pgx drug="repaglinide" model-id="Repaglinide_Gertz2014_reference" status="rejected" stale="true" population="adults" measured-compound="repaglinide" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="repaglinide" model-id="Repaglinide_Gertz2014_reference" status="rejected" stale="true" population="adults" measured-compound="repaglinide" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

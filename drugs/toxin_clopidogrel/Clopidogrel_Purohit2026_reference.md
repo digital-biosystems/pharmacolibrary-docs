@@ -21,8 +21,7 @@
 Purohit D; van Wijk R; Kafeero P; Kibengo F; Zimmerman M; D'artois V; Chow FC; Savic RM et al. (2026). Open forum infectious diseases 13
   ·  DOI: [10.1093/ofid/ofag154](https://doi.org/10.1093/ofid/ofag154)
 
-## Model component
-<dbs-pgx drug="clopidogrel" model-id="Clopidogrel_Purohit2026_reference" status="extracted" stale="true" population="" measured-compound="clopidogrel" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="clopidogrel" model-id="Clopidogrel_Purohit2026_reference" status="extracted" stale="true" population="" measured-compound="clopidogrel" parameterization="mechanistic" topology="1C"></div>
 
 **Parameterization:** mechanistic.
 

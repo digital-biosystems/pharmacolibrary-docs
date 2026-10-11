@@ -28,8 +28,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the val
 JingLi jing.li3@sanofi.com et al., Impact of hepatic and renal impairment… (2020)
   ·  DOI: [10.1016/j.ymgme.2019.11.002](https://doi.org/10.1016/j.ymgme.2019.11.002)
 
-## Model component
-<dbs-pgx drug="eliglustat" model-id="Eliglustat_Li2020_84_mg_bid_a" status="needs_review" stale="false" population="adults with Gaucher disease type 1 and hepatic impairment" measured-compound="eliglustat" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="eliglustat" model-id="Eliglustat_Li2020_84_mg_bid_a" status="needs_review" stale="false" population="adults with Gaucher disease type 1 and hepatic impairment" measured-compound="eliglustat" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 1 extracted.

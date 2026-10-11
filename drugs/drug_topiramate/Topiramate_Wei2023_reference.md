@@ -29,8 +29,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Wei S et al., Population pharmacokinetics of topirama…, European journal of clinica… (2023)
   ·  DOI: [10.1007/s00228-023-03549-6](https://doi.org/10.1007/s00228-023-03549-6)
 
-## Model component
-<dbs-pgx drug="topiramate" model-id="Topiramate_Wei2023_reference" status="rejected" stale="false" population="Chinese children with epilepsy" measured-compound="topiramate" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="topiramate" model-id="Topiramate_Wei2023_reference" status="rejected" stale="false" population="Chinese children with epilepsy" measured-compound="topiramate" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

@@ -30,8 +30,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the val
 Nielsen-Kudsk F et al., Myocardial pharmacokinetics and pharmac…, Acta pharmacologica et toxi… (1980)
   ·  DOI: [10.1111/j.1600-0773.1980.tb01559.x](https://doi.org/10.1111/j.1600-0773.1980.tb01559.x)
 
-## Model component
-<dbs-pgx drug="dipyridamole" model-id="Dipyridamole_NielsenKudsk1980_reference" status="rejected" stale="false" population="isolated rabbit hearts" measured-compound="dipyridamole" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="dipyridamole" model-id="Dipyridamole_NielsenKudsk1980_reference" status="rejected" stale="false" population="isolated rabbit hearts" measured-compound="dipyridamole" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

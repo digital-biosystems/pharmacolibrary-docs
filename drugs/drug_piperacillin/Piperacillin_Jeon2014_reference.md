@@ -21,8 +21,7 @@
 Jeon S et al., Population pharmacokinetic analysis of…, Antimicrobial agents and ch… (2014)
   ·  DOI: [10.1128/AAC.02089-13](https://doi.org/10.1128/AAC.02089-13)
 
-## Model component
-<dbs-pgx drug="piperacillin" model-id="Piperacillin_Jeon2014_reference" status="needs_review" stale="false" population="burn patients" measured-compound="piperacillin" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="piperacillin" model-id="Piperacillin_Jeon2014_reference" status="needs_review" stale="false" population="burn patients" measured-compound="piperacillin" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 2 extracted.

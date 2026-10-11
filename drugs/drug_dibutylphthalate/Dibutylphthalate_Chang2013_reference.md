@@ -22,8 +22,7 @@
 Chang LW et al., Pharmacokinetics of dibutyl phthalate (…, International journal of mo… (2013)
   ·  DOI: [10.3390/ijms14010836](https://doi.org/10.3390/ijms14010836)
 
-## Model component
-<dbs-pgx drug="dibutylphthalate" model-id="Dibutylphthalate_Chang2013_reference" status="needs_review" stale="false" population="adult male rats" measured-compound="dibutyl phthalate" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="dibutylphthalate" model-id="Dibutylphthalate_Chang2013_reference" status="needs_review" stale="false" population="adult male rats" measured-compound="dibutyl phthalate" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 8 extracted.

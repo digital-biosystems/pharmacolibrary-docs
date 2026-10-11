@@ -23,8 +23,7 @@
 Wasfi IA et al., Comparative pharmacokinetics of diphenh…, Veterinary research communi… (2003)
   ·  DOI: [10.1023/a:1025789607863](https://doi.org/10.1023/a:1025789607863)
 
-## Model component
-<dbs-pgx drug="diphenhydramine" model-id="Diphenhydramine_Wasfi2003_reference" status="extracted" stale="false" population="camels and horses" measured-compound="diphenhydramine" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="diphenhydramine" model-id="Diphenhydramine_Wasfi2003_reference" status="extracted" stale="false" population="camels and horses" measured-compound="diphenhydramine" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameters:** 5 extracted.

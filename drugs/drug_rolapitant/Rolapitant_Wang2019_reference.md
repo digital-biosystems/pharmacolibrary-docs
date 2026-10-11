@@ -29,8 +29,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Wang X et al., Population Pharmacokinetics of Rolapita…, Clinical pharmacology in dr… (2019)
   ·  DOI: [10.1002/cpdd.733](https://doi.org/10.1002/cpdd.733)
 
-## Model component
-<dbs-pgx drug="rolapitant" model-id="Rolapitant_Wang2019_reference" status="rejected" stale="false" population="patients with chemotherapy-induced nausea and vomiting" measured-compound="rolapitant" parameterization="apparent" topology="parent_metabolite"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="rolapitant" model-id="Rolapitant_Wang2019_reference" status="rejected" stale="false" population="patients with chemotherapy-induced nausea and vomiting" measured-compound="rolapitant" parameterization="apparent" topology="parent_metabolite"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 5 extracted.

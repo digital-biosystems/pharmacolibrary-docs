@@ -33,8 +33,7 @@ Independently confirmed by `gpt-oss:120b`.
 van der Most MA et al., Toxicokinetics of the Antidepressant Fl…, Environmental science & tec… (2024)
   ·  DOI: [10.1021/acs.est.3c07744](https://doi.org/10.1021/acs.est.3c07744)
 
-## Model component
-<dbs-pgx drug="fluoxetine" model-id="Fluoxetine_van2024_reference" status="rejected" stale="true" population="Caenorhabditis elegans nematodes" measured-compound="fluoxetine" parameterization="mechanistic" topology="parent_metabolite"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="fluoxetine" model-id="Fluoxetine_van2024_reference" status="rejected" stale="true" population="Caenorhabditis elegans nematodes" measured-compound="fluoxetine" parameterization="mechanistic" topology="parent_metabolite"></div>
 
 **Model structure:** parent + metabolite; no model was built for this record.  
 **Parameters:** 0 extracted.

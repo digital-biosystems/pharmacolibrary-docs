@@ -21,8 +21,7 @@
 Zang YN et al., Population pharmacokinetics of olanzapi…, Expert opinion on drug meta… (2024)
   ·  DOI: [10.1080/17425255.2024.2380472](https://doi.org/10.1080/17425255.2024.2380472)
 
-## Model component
-<dbs-pgx drug="olanzapine" model-id="Olanzapine_Zang2024_reference" status="extracted" stale="false" population="pediatric Chinese patients with psychiatric disorders" measured-compound="olanzapine" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="olanzapine" model-id="Olanzapine_Zang2024_reference" status="extracted" stale="false" population="pediatric Chinese patients with psychiatric disorders" measured-compound="olanzapine" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 3 extracted.

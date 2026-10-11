@@ -21,8 +21,7 @@
 Liu T et al., Sorafenib Dose Recommendation in Acute…, Clinical and translational… (2018)
   ·  DOI: [10.1111/cts.12555](https://doi.org/10.1111/cts.12555)
 
-## Model component
-<dbs-pgx drug="sorafenib" model-id="Sorafenib_Liu2018_reference" status="extracted" stale="false" population="patients with acute myeloid leukemia" measured-compound="sorafenib" parameterization="mechanistic" topology="parent_metabolite"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="sorafenib" model-id="Sorafenib_Liu2018_reference" status="extracted" stale="false" population="patients with acute myeloid leukemia" measured-compound="sorafenib" parameterization="mechanistic" topology="parent_metabolite"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 5 extracted.

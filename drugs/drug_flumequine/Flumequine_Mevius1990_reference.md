@@ -23,8 +23,7 @@
 Mevius DJ et al., Pharmacokinetics, metabolism and renal…, Journal of veterinary pharm… (1990)
   ·  DOI: [10.1111/j.1365-2885.1990.tb00764.x](https://doi.org/10.1111/j.1365-2885.1990.tb00764.x)
 
-## Model component
-<dbs-pgx drug="flumequine" model-id="Flumequine_Mevius1990_reference" status="extracted" stale="false" population="1-, 5- and 18-week-old veal calves" measured-compound="flumequine" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="flumequine" model-id="Flumequine_Mevius1990_reference" status="extracted" stale="false" population="1-, 5- and 18-week-old veal calves" measured-compound="flumequine" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment, IV mammillary model — template `PK_2C`.  
 **Parameters:** 5 extracted.

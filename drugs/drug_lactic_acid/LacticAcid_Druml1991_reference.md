@@ -20,8 +20,7 @@
 Druml W et al., Lactic acid kinetics in respiratory alk…, Critical care medicine (1991)
   ·  DOI: [10.1097/00003246-199109000-00005](https://doi.org/10.1097/00003246-199109000-00005)
 
-## Model component
-<dbs-pgx drug="lactic acid" model-id="LacticAcid_Druml1991_reference" status="needs_review" stale="false" population="ventilated ICU patients with neurologic or neuromuscular diseases" measured-compound="lactic_acid" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="lactic acid" model-id="LacticAcid_Druml1991_reference" status="needs_review" stale="false" population="ventilated ICU patients with neurologic or neuromuscular diseases" measured-compound="lactic_acid" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 3 extracted.

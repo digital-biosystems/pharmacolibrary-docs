@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the lin
 Hong Y et al., Population exposure-response modeling o…, Journal of clinical pharmac… (2008)
   ·  DOI: [10.1177/0091270008316884](https://doi.org/10.1177/0091270008316884)
 
-## Model component
-<dbs-pgx drug="metformin" model-id="Metformin_Hong2008_reference" status="extracted" stale="true" population="patients with type 2 diabetes mellitus" measured-compound="metformin" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="metformin" model-id="Metformin_Hong2008_reference" status="extracted" stale="true" population="patients with type 2 diabetes mellitus" measured-compound="metformin" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 4 extracted.

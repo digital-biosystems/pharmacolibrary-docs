@@ -22,8 +22,7 @@
 Rajput N et al., Influence of experimentally induced fev…, Environmental toxicology an… (2008)
   ·  DOI: [10.1016/j.etap.2008.06.003](https://doi.org/10.1016/j.etap.2008.06.003)
 
-## Model component
-<dbs-pgx drug="cefpirome" model-id="Cefpirome_Rajput2008_reference" status="needs_review" stale="false" population="febrile buffalo calves" measured-compound="cefpirome" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="cefpirome" model-id="Cefpirome_Rajput2008_reference" status="needs_review" stale="false" population="febrile buffalo calves" measured-compound="cefpirome" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 4 extracted.

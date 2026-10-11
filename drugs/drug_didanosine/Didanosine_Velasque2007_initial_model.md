@@ -29,8 +29,7 @@ The parameter V2 has a value of 11.00 with unit L/h, yet its meaning is the volu
 Velasque LS et al., A new model for the population pharmaco…, Brazilian journal of medica… (2007)
   ·  DOI: [10.1590/s0100-879x2007000100013](https://doi.org/10.1590/s0100-879x2007000100013)
 
-## Model component
-<dbs-pgx drug="didanosine" model-id="Didanosine_Velasque2007_initial_model" status="rejected" stale="true" population="healthy adult volunteers" measured-compound="didanosine" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="didanosine" model-id="Didanosine_Velasque2007_initial_model" status="rejected" stale="true" population="healthy adult volunteers" measured-compound="didanosine" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 9 extracted.

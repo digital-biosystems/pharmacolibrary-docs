@@ -19,8 +19,7 @@
 ## Citation
 Lauven PM et al., [The blood level and a pharmacokinetic…, Regional-Anaesthesie (1990)
 
-## Model component
-<dbs-pgx drug="prilocaine" model-id="Prilocaine_Lauven1990_reference" status="needs_review" stale="false" population="adults undergoing hand surgery" measured-compound="prilocaine" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="prilocaine" model-id="Prilocaine_Lauven1990_reference" status="needs_review" stale="false" population="adults undergoing hand surgery" measured-compound="prilocaine" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 5 extracted.

@@ -21,8 +21,7 @@
 Li J et al., Clinical Pharmacokinetics and Pharmacod…, Clinical pharmacokinetics (2026)
   ·  DOI: [10.1007/s40262-026-01667-9](https://doi.org/10.1007/s40262-026-01667-9)
 
-## Model component
-<dbs-pgx drug="fampridine" model-id="Fampridine_Li2026_reference" status="extracted" stale="false" population="" measured-compound="fampridine" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="fampridine" model-id="Fampridine_Li2026_reference" status="extracted" stale="false" population="" measured-compound="fampridine" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 2 extracted.

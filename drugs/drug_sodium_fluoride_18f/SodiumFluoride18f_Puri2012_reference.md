@@ -24,8 +24,7 @@ Independently confirmed by `gpt-oss:120b`.
 Puri T et al., Comparison of six quantitative methods…, Nuclear medicine communicat… (2012)
   ·  DOI: [10.1097/MNM.0b013e3283512adb](https://doi.org/10.1097/MNM.0b013e3283512adb)
 
-## Model component
-<dbs-pgx drug="sodium fluoride (18F)" model-id="SodiumFluoride18f_Puri2012_reference" status="rejected" stale="false" population="healthy postmenopausal women" measured-compound="sodium_fluoride_18f" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="sodium fluoride (18F)" model-id="SodiumFluoride18f_Puri2012_reference" status="rejected" stale="false" population="healthy postmenopausal women" measured-compound="sodium_fluoride_18f" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

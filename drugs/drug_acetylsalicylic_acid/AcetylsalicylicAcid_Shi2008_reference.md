@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on paramet
 Shi S et al., Clinical use and pharmacological proper…, European journal of clinica… (2008)
   ·  DOI: [10.1007/s00228-007-0400-7](https://doi.org/10.1007/s00228-007-0400-7)
 
-## Model component
-<dbs-pgx drug="acetylsalicylic acid" model-id="AcetylsalicylicAcid_Shi2008_reference" status="needs_review" stale="false" population="unknown" measured-compound="acetylsalicylic_acid" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="acetylsalicylic acid" model-id="AcetylsalicylicAcid_Shi2008_reference" status="needs_review" stale="false" population="unknown" measured-compound="acetylsalicylic_acid" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 2 extracted.

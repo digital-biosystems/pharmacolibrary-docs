@@ -21,8 +21,7 @@
 Alli A et al., Peri-operative pharmacokinetics of cefa…, PloS one (2023)
   ·  DOI: [10.1371/journal.pone.0291425](https://doi.org/10.1371/journal.pone.0291425)
 
-## Model component
-<dbs-pgx drug="cefazolin" model-id="Cefazolin_Alli2023_median" status="rejected" stale="false" population="adults undergoing cardiac valve replacement surgery with cardiopulmonary bypass" measured-compound="cefazolin" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="cefazolin" model-id="Cefazolin_Alli2023_median" status="rejected" stale="false" population="adults undergoing cardiac valve replacement surgery with cardiopulmonary bypass" measured-compound="cefazolin" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment; no model was built for this record.  
 **Parameters:** 7 extracted.

@@ -21,8 +21,7 @@
 Wade JR et al., Population pharmacokinetic analysis of…, Journal of clinical pharmac… (2015)
   ·  DOI: [10.1002/jcph.491](https://doi.org/10.1002/jcph.491)
 
-## Model component
-<dbs-pgx drug="certolizumab pegol" model-id="CertolizumabPegol_Wade2015_reference" status="needs_review" stale="false" population="adults with Crohn&#39;s disease" measured-compound="certolizumab_pegol" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="certolizumab pegol" model-id="CertolizumabPegol_Wade2015_reference" status="needs_review" stale="false" population="adults with Crohn&#39;s disease" measured-compound="certolizumab_pegol" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 5 extracted, plus 5 covariate effects.

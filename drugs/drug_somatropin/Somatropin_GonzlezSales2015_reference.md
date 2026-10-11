@@ -21,8 +21,7 @@
 González-Sales M et al., Population pharmacokinetic analysis of…, Clinical pharmacokinetics (2015)
   ·  DOI: [10.1007/s40262-014-0202-x](https://doi.org/10.1007/s40262-014-0202-x)
 
-## Model component
-<dbs-pgx drug="somatropin" model-id="Somatropin_GonzlezSales2015_reference" status="rejected" stale="false" population="unknown" measured-compound="unknown" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="somatropin" model-id="Somatropin_GonzlezSales2015_reference" status="rejected" stale="false" population="unknown" measured-compound="unknown" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

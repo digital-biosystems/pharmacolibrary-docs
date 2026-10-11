@@ -27,8 +27,7 @@ A volume and a clearance/elimination estimate from this paper are needed to buil
 Djordjevic N et al., ABCB1 Polymorphism Is Associated with H…, Pediatric reports (2025)
   ·  DOI: [10.3390/pediatric17010010](https://doi.org/10.3390/pediatric17010010)
 
-## Model component
-<dbs-pgx drug="carbamazepine" model-id="Carbamazepine_Djordjevic2025_reference" status="needs_review" stale="false" population="pediatric epileptic patients" measured-compound="carbamazepine" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="carbamazepine" model-id="Carbamazepine_Djordjevic2025_reference" status="needs_review" stale="false" population="pediatric epileptic patients" measured-compound="carbamazepine" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 3 extracted, plus 2 covariate effects.

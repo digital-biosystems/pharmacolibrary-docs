@@ -20,8 +20,7 @@
 Nalda-Molina R et al., Population pharmacokinetics meta-analys…, Cancer chemotherapy and pha… (2009)
   ·  DOI: [10.1007/s00280-008-0841-4](https://doi.org/10.1007/s00280-008-0841-4)
 
-## Model component
-<dbs-pgx drug="plitidepsin" model-id="Plitidepsin_NaldaMolina2009_reference" status="rejected" stale="false" population="cancer patients" measured-compound="plitidepsin" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="plitidepsin" model-id="Plitidepsin_NaldaMolina2009_reference" status="rejected" stale="false" population="cancer patients" measured-compound="plitidepsin" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

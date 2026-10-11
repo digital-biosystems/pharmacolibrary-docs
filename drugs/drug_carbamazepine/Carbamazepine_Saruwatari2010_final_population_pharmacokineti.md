@@ -27,8 +27,7 @@ A model needs both clearance and volume; without the volume it could only be bui
 Saruwatari J et al., Update on the Genetic Polymorphisms of…, Pharmaceuticals (Basel, Swi… (2010)
   ·  DOI: [10.3390/ph3082709](https://doi.org/10.3390/ph3082709)
 
-## Model component
-<dbs-pgx drug="carbamazepine" model-id="Carbamazepine_Saruwatari2010_final_population_pharmacokineti" status="needs_review" stale="false" population="patients with epilepsy" measured-compound="antiepileptic drugs" parameterization="mechanistic" topology="parent_metabolite"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="carbamazepine" model-id="Carbamazepine_Saruwatari2010_final_population_pharmacokineti" status="needs_review" stale="false" population="patients with epilepsy" measured-compound="antiepileptic drugs" parameterization="mechanistic" topology="parent_metabolite"></div>
 
 **Model structure:** parent + metabolite; no model was built for this record.  
 **Parameters:** 0 extracted.

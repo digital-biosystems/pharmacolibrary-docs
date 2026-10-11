@@ -26,8 +26,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Nielsen-Kudsk F et al., Bepridil, myocardial accumulation kinet…, Pharmacology & toxicology (1988)
   ·  DOI: [10.1111/j.1600-0773.1988.tb00923.x](https://doi.org/10.1111/j.1600-0773.1988.tb00923.x)
 
-## Model component
-<dbs-pgx drug="bepridil" model-id="Bepridil_NielsenKudsk1988_reference" status="rejected" stale="false" population="isolated rabbit hearts" measured-compound="bepridil" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="bepridil" model-id="Bepridil_NielsenKudsk1988_reference" status="rejected" stale="false" population="isolated rabbit hearts" measured-compound="bepridil" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 2 extracted.

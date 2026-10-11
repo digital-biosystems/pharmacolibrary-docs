@@ -25,8 +25,7 @@
 Zuideveld KP et al., Pharmacokinetic-pharmacodynamic modelin…, The Journal of pharmacology… (2002)
   ·  DOI: [10.1124/jpet.102.036798](https://doi.org/10.1124/jpet.102.036798)
 
-## Model component
-<dbs-pgx drug="buspirone" model-id="Buspirone_Zuideveld2002_reference" status="needs_review" stale="false" population="rats" measured-compound="1-PP" parameterization="apparent" topology="parent_metabolite"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="buspirone" model-id="Buspirone_Zuideveld2002_reference" status="needs_review" stale="false" population="rats" measured-compound="1-PP" parameterization="apparent" topology="parent_metabolite"></div>
 
 **Model structure:** parent + metabolite; no model was built for this record.  
 **Parameters:** 2 extracted.

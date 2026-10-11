@@ -29,8 +29,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the val
 LizanneDe Kock Division of Clinical Pharmacology Faculty of Medicine and Health Sciences Stellenbosch University Cape Town South Africa et al., Pharmacokinetics of para-Aminosalicylic… (2014)
   ·  DOI: [10.1128/AAC.03073-14](https://doi.org/10.1128/AAC.03073-14)
 
-## Model component
-<dbs-pgx drug="4-aminosalicylic acid" model-id="D_4AminosalicylicAcid_de2014_reference" status="curated_candidate" stale="false" population="tuberculosis patients with and without HIV coinfection receiving antiretroviral therapy" measured-compound="para-aminosalicylic acid" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="4-aminosalicylic acid" model-id="D_4AminosalicylicAcid_de2014_reference" status="curated_candidate" stale="false" population="tuberculosis patients with and without HIV coinfection receiving antiretroviral therapy" measured-compound="para-aminosalicylic acid" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 4 extracted.

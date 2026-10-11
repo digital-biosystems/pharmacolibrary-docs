@@ -23,8 +23,7 @@
 Kuhlmann O et al., Pharmacokinetics and toxicity of idarub…, European journal of drug me… (2001)
   ·  DOI: [10.1007/BF03226374](https://doi.org/10.1007/BF03226374)
 
-## Model component
-<dbs-pgx drug="idarubicin" model-id="Idarubicin_Kuhlmann2001_reference" status="extracted" stale="false" population="rats" measured-compound="idarubicin" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="idarubicin" model-id="Idarubicin_Kuhlmann2001_reference" status="extracted" stale="false" population="rats" measured-compound="idarubicin" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameters:** 3 extracted.

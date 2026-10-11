@@ -21,8 +21,7 @@
 Li Y et al., Safety, Tolerability and Pharmacokineti…, Advances in therapy (2023)
   ·  DOI: [10.1007/s12325-022-02424-7](https://doi.org/10.1007/s12325-022-02424-7)
 
-## Model component
-<dbs-pgx drug="mirogabalin" model-id="Mirogabalin_Li2023_reference" status="extracted" stale="false" population="healthy Chinese adults" measured-compound="mirogabalin" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="mirogabalin" model-id="Mirogabalin_Li2023_reference" status="extracted" stale="false" population="healthy Chinese adults" measured-compound="mirogabalin" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 2 extracted.

@@ -29,8 +29,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the val
 Bryson SM et al., Disopyramide serum and pharmacologic ef…, British journal of clinical… (1978)
   ·  DOI: [10.1111/j.1365-2125.1978.tb04605.x](https://doi.org/10.1111/j.1365-2125.1978.tb04605.x)
 
-## Model component
-<dbs-pgx drug="disopyramide" model-id="Disopyramide_Bryson1978_reference" status="extracted" stale="true" population="healthy volunteers" measured-compound="disopyramide" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="disopyramide" model-id="Disopyramide_Bryson1978_reference" status="extracted" stale="true" population="healthy volunteers" measured-compound="disopyramide" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameters:** 2 extracted.

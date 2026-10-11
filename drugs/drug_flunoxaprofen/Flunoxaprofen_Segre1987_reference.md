@@ -19,8 +19,7 @@
 ## Citation
 Segre G et al., Flunoxaprofen pharmacokinetics in elder…, International journal of cl… (1987)
 
-## Model component
-<dbs-pgx drug="flunoxaprofen" model-id="Flunoxaprofen_Segre1987_reference" status="rejected" stale="false" population="elderly patients" measured-compound="flunoxaprofen" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="flunoxaprofen" model-id="Flunoxaprofen_Segre1987_reference" status="rejected" stale="false" population="elderly patients" measured-compound="flunoxaprofen" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 3 extracted.

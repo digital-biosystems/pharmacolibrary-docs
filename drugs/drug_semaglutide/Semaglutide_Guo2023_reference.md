@@ -33,8 +33,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on paramet
 Guo W et al., Discovery of ecnoglutide - A novel, lon…, Molecular metabolism (2023)
   ·  DOI: [10.1016/j.molmet.2023.101762](https://doi.org/10.1016/j.molmet.2023.101762)
 
-## Model component
-<dbs-pgx drug="semaglutide" model-id="Semaglutide_Guo2023_reference" status="rejected" stale="true" population="" measured-compound="semaglutide" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="semaglutide" model-id="Semaglutide_Guo2023_reference" status="rejected" stale="true" population="" measured-compound="semaglutide" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 2 extracted.

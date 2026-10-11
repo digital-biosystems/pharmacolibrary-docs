@@ -24,8 +24,7 @@
 Ailabouni AS; Halpin K; Boone EC; Gaedigk A; Nadai T; Irie K; et al. et al. (2026). Pediatric research
   ·  DOI: [10.1038/s41390-026-04938-0](https://doi.org/10.1038/s41390-026-04938-0)
 
-## Model component
-<dbs-pgx drug="metformin" model-id="Metformin_Ailabouni2026_final_model_estimate_pediatric_patie" status="" stale="true" population="pediatric patients with type 2 diabetes" measured-compound="" parameterization="" topology=""></dbs-pgx>
+<div class="pk-model-meta" hidden drug="metformin" model-id="Metformin_Ailabouni2026_final_model_estimate_pediatric_patie" status="" stale="true" population="pediatric patients with type 2 diabetes" measured-compound="" parameterization="" topology=""></div>
 
 **Parameterization:** not captured.
 

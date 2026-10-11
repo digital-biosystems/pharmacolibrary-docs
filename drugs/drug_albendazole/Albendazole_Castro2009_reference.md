@@ -22,8 +22,7 @@
 ## Citation
 Castro N et al., Population pharmacokinetics of albendaz…, International journal of cl… (2009)
 
-## Model component
-<dbs-pgx drug="albendazole" model-id="Albendazole_Castro2009_reference" status="extracted" stale="false" population="patients with neurocysticercosis" measured-compound="albendazole sulfoxide" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="albendazole" model-id="Albendazole_Castro2009_reference" status="extracted" stale="false" population="patients with neurocysticercosis" measured-compound="albendazole sulfoxide" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 6 extracted.

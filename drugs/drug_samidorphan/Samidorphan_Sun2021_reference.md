@@ -22,8 +22,7 @@
 Sun L et al., Population Pharmacokinetics of Olanzapi…, Journal of clinical pharmac… (2021)
   ·  DOI: [10.1002/jcph.1911](https://doi.org/10.1002/jcph.1911)
 
-## Model component
-<dbs-pgx drug="Samidorphan" model-id="Samidorphan_Sun2021_reference" status="rejected" stale="false" population="healthy subjects and patients with schizophrenia" measured-compound="samidorphan" parameterization="apparent" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="Samidorphan" model-id="Samidorphan_Sun2021_reference" status="rejected" stale="false" population="healthy subjects and patients with schizophrenia" measured-compound="samidorphan" parameterization="apparent" topology="2C"></div>
 
 **Model structure:** 2-compartment; no model was built for this record.  
 **Parameters:** 6 extracted, plus 13 covariate effects.

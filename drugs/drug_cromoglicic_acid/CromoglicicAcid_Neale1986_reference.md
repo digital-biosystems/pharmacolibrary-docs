@@ -30,8 +30,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on `parame
 Neale MG et al., The pharmacokinetics of sodium cromogly…, British journal of clinical… (1986)
   ·  DOI: [10.1111/j.1365-2125.1986.tb02905.x](https://doi.org/10.1111/j.1365-2125.1986.tb02905.x)
 
-## Model component
-<dbs-pgx drug="cromoglicic acid" model-id="CromoglicicAcid_Neale1986_reference" status="needs_review" stale="true" population="healthy volunteers" measured-compound="sodium cromoglycate" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="cromoglicic acid" model-id="CromoglicicAcid_Neale1986_reference" status="needs_review" stale="true" population="healthy volunteers" measured-compound="sodium cromoglycate" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 2 extracted.

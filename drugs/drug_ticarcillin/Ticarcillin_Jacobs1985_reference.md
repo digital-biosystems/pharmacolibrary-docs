@@ -21,8 +21,7 @@
 Jacobs RF et al., Ticarcillin/clavulanic acid pharmacokin…, The Journal of pediatrics (1985)
   ·  DOI: [10.1016/s0022-3476(85)80258-4](https://doi.org/10.1016/s0022-3476(85)80258-4)
 
-## Model component
-<dbs-pgx drug="ticarcillin" model-id="Ticarcillin_Jacobs1985_reference" status="rejected" stale="false" population="children and young adults with cystic fibrosis" measured-compound="ticarcillin" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="ticarcillin" model-id="Ticarcillin_Jacobs1985_reference" status="rejected" stale="false" population="children and young adults with cystic fibrosis" measured-compound="ticarcillin" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

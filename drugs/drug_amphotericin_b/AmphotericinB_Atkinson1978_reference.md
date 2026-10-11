@@ -31,8 +31,7 @@ The model was built, but amphotericin b's volume of distribution had no value, s
 Atkinson AJ et al., Amphotericin B pharmacokinetics in huma…, Antimicrobial agents and ch… (1978)
   ·  DOI: [10.1128/AAC.13.2.271](https://doi.org/10.1128/AAC.13.2.271)
 
-## Model component
-<dbs-pgx drug="amphotericin B" model-id="AmphotericinB_Atkinson1978_reference" status="needs_review" stale="true" population="adults with disseminated histoplasmosis" measured-compound="amphotericin B" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="amphotericin B" model-id="AmphotericinB_Atkinson1978_reference" status="needs_review" stale="true" population="adults with disseminated histoplasmosis" measured-compound="amphotericin B" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 3 extracted.

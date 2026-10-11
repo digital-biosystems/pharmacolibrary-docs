@@ -21,8 +21,7 @@
 Ingwersen SH et al., Population pharmacokinetics of tiagabin…, European journal of pharmac… (2000)
   ·  DOI: [10.1016/s0928-0987(00)00109-3](https://doi.org/10.1016/s0928-0987(00)00109-3)
 
-## Model component
-<dbs-pgx drug="tiagabine" model-id="Tiagabine_Ingwersen2000_reference" status="extracted" stale="false" population="adults with epilepsy on monotherapy" measured-compound="tiagabine" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="tiagabine" model-id="Tiagabine_Ingwersen2000_reference" status="extracted" stale="false" population="adults with epilepsy on monotherapy" measured-compound="tiagabine" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 4 extracted.

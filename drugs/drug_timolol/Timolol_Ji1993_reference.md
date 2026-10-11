@@ -29,8 +29,7 @@ Independently confirmed by `gpt-oss:120b`.
 ## Citation
 Ji XF et al., [The bioavailability of transdermal the…, Yao xue xue bao = Acta phar… (1993)
 
-## Model component
-<dbs-pgx drug="timolol" model-id="Timolol_Ji1993_reference" status="extracted" stale="true" population="healthy volunteers" measured-compound="timolol" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="timolol" model-id="Timolol_Ji1993_reference" status="extracted" stale="true" population="healthy volunteers" measured-compound="timolol" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameters:** 5 extracted.

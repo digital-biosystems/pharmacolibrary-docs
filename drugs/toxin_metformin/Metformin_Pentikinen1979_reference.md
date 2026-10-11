@@ -24,8 +24,7 @@
 Pentikäinen PJ; Neuvonen PJ; Penttilä A et al. (1979). European journal of clinical pharmacology 16
   ·  DOI: [10.1007/BF00562061](https://doi.org/10.1007/BF00562061)
 
-## Model component
-<dbs-pgx drug="metformin" model-id="Metformin_Pentikinen1979_reference" status="not_modelled" stale="false" population="healthy subjects" measured-compound="metformin" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="metformin" model-id="Metformin_Pentikinen1979_reference" status="not_modelled" stale="false" population="healthy subjects" measured-compound="metformin" parameterization="mechanistic" topology="1C"></div>
 
 **Parameterization:** mechanistic.
 

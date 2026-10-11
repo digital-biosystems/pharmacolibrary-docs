@@ -20,8 +20,7 @@
 Jiang X et al., Population pharmacokinetic and exposure…, Clinical and translational… (2021)
   ·  DOI: [10.1111/cts.12959](https://doi.org/10.1111/cts.12959)
 
-## Model component
-<dbs-pgx drug="ivosidenib" model-id="Ivosidenib_Jiang2021_reference" status="needs_review" stale="false" population="patients with IDH1-mutant advanced hematologic malignancies" measured-compound="ivosidenib" parameterization="apparent" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="ivosidenib" model-id="Ivosidenib_Jiang2021_reference" status="needs_review" stale="false" population="patients with IDH1-mutant advanced hematologic malignancies" measured-compound="ivosidenib" parameterization="apparent" topology="2C"></div>
 
 **Model structure:** 2-compartment; no model was built for this record.  
 **Parameters:** 8 extracted, plus 6 covariate effects.

@@ -33,8 +33,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Chae D et al., Mechanistic Model for Blood Pressure an…, Basic & clinical pharmacolo… (2018)
   ·  DOI: [10.1111/bcpt.12856](https://doi.org/10.1111/bcpt.12856)
 
-## Model component
-<dbs-pgx drug="telmisartan" model-id="Telmisartan_Chae2018_reference" status="rejected" stale="true" population="young, healthy volunteers" measured-compound="telmisartan" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="telmisartan" model-id="Telmisartan_Chae2018_reference" status="rejected" stale="true" population="young, healthy volunteers" measured-compound="telmisartan" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

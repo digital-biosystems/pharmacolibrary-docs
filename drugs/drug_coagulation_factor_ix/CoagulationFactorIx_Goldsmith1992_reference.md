@@ -30,8 +30,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Goldsmith JC et al., Coagulation factor IX: successful surgi…, American journal of hematol… (1992)
   ·  DOI: [10.1002/ajh.2830400310](https://doi.org/10.1002/ajh.2830400310)
 
-## Model component
-<dbs-pgx drug="coagulation factor IX" model-id="CoagulationFactorIx_Goldsmith1992_reference" status="rejected" stale="true" population="patients with hemophilia B" measured-compound="coagulation_factor_ix" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="coagulation factor IX" model-id="CoagulationFactorIx_Goldsmith1992_reference" status="rejected" stale="true" population="patients with hemophilia B" measured-compound="coagulation_factor_ix" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 2 extracted.

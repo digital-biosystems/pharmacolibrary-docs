@@ -21,8 +21,7 @@
 Phillips RE et al., Quinine pharmacokinetics and toxicity i…, British journal of clinical… (1986)
   ·  DOI: [10.1111/j.1365-2125.1986.tb05233.x](https://doi.org/10.1111/j.1365-2125.1986.tb05233.x)
 
-## Model component
-<dbs-pgx drug="quinine" model-id="Quinine_Phillips1986_reference" status="extracted" stale="false" population="pregnant and lactating women with falciparum malaria" measured-compound="quinine" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="quinine" model-id="Quinine_Phillips1986_reference" status="extracted" stale="false" population="pregnant and lactating women with falciparum malaria" measured-compound="quinine" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameters:** 3 extracted.

@@ -21,8 +21,7 @@
 Ahmad A et al., Population pharmacokinetic modeling and…, CPT: pharmacometrics & syst… (2021)
   ·  DOI: [10.1002/psp4.12610](https://doi.org/10.1002/psp4.12610)
 
-## Model component
-<dbs-pgx drug="probenecid" model-id="Probenecid_Ahmad2021_reference" status="extracted" stale="false" population="" measured-compound="probenecid" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="probenecid" model-id="Probenecid_Ahmad2021_reference" status="extracted" stale="false" population="" measured-compound="probenecid" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameters:** 2 extracted.

@@ -32,8 +32,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which m
 Novotny JA et al., Vitamin K absorption and kinetics in hu…, The British journal of nutr… (2010)
   ·  DOI: [10.1017/S0007114510001182](https://doi.org/10.1017/S0007114510001182)
 
-## Model component
-<dbs-pgx drug="phytomenadione" model-id="Phytomenadione_Novotny2010_reference" status="rejected" stale="true" population="healthy volunteers" measured-compound="phylloquinone" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="phytomenadione" model-id="Phytomenadione_Novotny2010_reference" status="rejected" stale="true" population="healthy volunteers" measured-compound="phylloquinone" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 1 extracted.

@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the val
 Persson P et al., Pharmacokinetics of midazolam in total…, British journal of anaesthe… (1987)
   ·  DOI: [10.1093/bja/59.5.548](https://doi.org/10.1093/bja/59.5.548)
 
-## Model component
-<dbs-pgx drug="midazolam" model-id="Midazolam_Persson1987_reference" status="needs_review" stale="true" population="adults undergoing major surgery" measured-compound="midazolam" parameterization="apparent" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="midazolam" model-id="Midazolam_Persson1987_reference" status="needs_review" stale="true" population="adults undergoing major surgery" measured-compound="midazolam" parameterization="apparent" topology="2C"></div>
 
 **Model structure:** 2-compartment; no model was built for this record.  
 **Parameters:** 5 extracted.

@@ -27,8 +27,7 @@
 Morath B et al., Effect of Amiodarone on Apixaban Exposu…, Clinical pharmacokinetics (2025)
   ·  DOI: [10.1007/s40262-025-01534-z](https://doi.org/10.1007/s40262-025-01534-z)
 
-## Model component
-<dbs-pgx drug="Metamizole" model-id="Metamizole_Morath2025_reference" status="extracted" stale="true" population="" measured-compound="" parameterization="" topology=""></dbs-pgx>
+<div class="pk-model-meta" hidden drug="Metamizole" model-id="Metamizole_Morath2025_reference" status="extracted" stale="true" population="" measured-compound="" parameterization="" topology=""></div>
 
 **Model structure:** —; no model was built for this record.  
 **Parameters:** 0 extracted.

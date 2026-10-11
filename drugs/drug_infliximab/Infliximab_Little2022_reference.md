@@ -21,8 +21,7 @@
 Little RD et al., Therapeutic Drug Monitoring of Subcutan…, Journal of clinical medicine (2022)
   ·  DOI: [10.3390/jcm11206173](https://doi.org/10.3390/jcm11206173)
 
-## Model component
-<dbs-pgx drug="infliximab" model-id="Infliximab_Little2022_reference" status="extracted" stale="false" population="patients with inflammatory bowel disease" measured-compound="infliximab" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="infliximab" model-id="Infliximab_Little2022_reference" status="extracted" stale="false" population="patients with inflammatory bowel disease" measured-compound="infliximab" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameters:** 2 extracted.

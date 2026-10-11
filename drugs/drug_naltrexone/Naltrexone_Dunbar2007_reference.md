@@ -28,8 +28,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Dunbar JL et al., Population pharmacokinetics of extended…, Journal of studies on alcoh… (2007)
   ·  DOI: [10.15288/jsad.2007.68.862](https://doi.org/10.15288/jsad.2007.68.862)
 
-## Model component
-<dbs-pgx drug="naltrexone" model-id="Naltrexone_Dunbar2007_reference" status="needs_review" stale="false" population="patients with alcohol dependence" measured-compound="naltrexone" parameterization="mechanistic" topology="parent_metabolite"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="naltrexone" model-id="Naltrexone_Dunbar2007_reference" status="needs_review" stale="false" population="patients with alcohol dependence" measured-compound="naltrexone" parameterization="mechanistic" topology="parent_metabolite"></div>
 
 **Model structure:** parent + metabolite; no model was built for this record.  
 **Parameters:** 4 extracted.

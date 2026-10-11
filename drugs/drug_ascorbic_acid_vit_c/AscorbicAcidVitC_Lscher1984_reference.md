@@ -30,8 +30,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Löscher W et al., Pharmacokinetics of ascorbic acid in ho…, Equine veterinary journal (1984)
   ·  DOI: [10.1111/j.2042-3306.1984.tb01855.x](https://doi.org/10.1111/j.2042-3306.1984.tb01855.x)
 
-## Model component
-<dbs-pgx drug="ascorbic acid (vit C)" model-id="AscorbicAcidVitC_Lscher1984_reference" status="needs_review" stale="false" population="horses" measured-compound="ascorbic acid" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="ascorbic acid (vit C)" model-id="AscorbicAcidVitC_Lscher1984_reference" status="needs_review" stale="false" population="horses" measured-compound="ascorbic acid" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 2 extracted.

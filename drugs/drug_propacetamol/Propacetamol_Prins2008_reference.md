@@ -33,8 +33,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the lin
 Prins SA et al., Pharmacokinetics and analgesic effects…, Paediatric anaesthesia (2008)
   ·  DOI: [10.1111/j.1460-9592.2008.02619.x](https://doi.org/10.1111/j.1460-9592.2008.02619.x)
 
-## Model component
-<dbs-pgx drug="propacetamol" model-id="Propacetamol_Prins2008_reference" status="extracted" stale="true" population="infants after craniofacial surgery" measured-compound="paracetamol" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="propacetamol" model-id="Propacetamol_Prins2008_reference" status="extracted" stale="true" population="infants after craniofacial surgery" measured-compound="paracetamol" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameters:** 5 extracted.

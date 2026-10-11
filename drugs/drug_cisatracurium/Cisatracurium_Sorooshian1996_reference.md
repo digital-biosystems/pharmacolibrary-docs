@@ -21,8 +21,7 @@
 Sorooshian SS et al., Pharmacokinetics and pharmacodynamics o…, Anesthesiology (1996)
   ·  DOI: [10.1097/00000542-199605000-00010](https://doi.org/10.1097/00000542-199605000-00010)
 
-## Model component
-<dbs-pgx drug="cisatracurium" model-id="Cisatracurium_Sorooshian1996_reference" status="rejected" stale="false" population="young and elderly adult patients" measured-compound="cisatracurium" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="cisatracurium" model-id="Cisatracurium_Sorooshian1996_reference" status="rejected" stale="false" population="young and elderly adult patients" measured-compound="cisatracurium" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 2 extracted.

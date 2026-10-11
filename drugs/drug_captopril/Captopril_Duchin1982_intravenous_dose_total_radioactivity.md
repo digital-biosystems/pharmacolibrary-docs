@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Duchin KL et al., Captopril kinetics, Clinical pharmacology and t… (1982)
   ·  DOI: [10.1038/clpt.1982.59](https://doi.org/10.1038/clpt.1982.59)
 
-## Model component
-<dbs-pgx drug="captopril" model-id="Captopril_Duchin1982_intravenous_dose_total_radioactivity" status="needs_review" stale="true" population="healthy subjects" measured-compound="captopril" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="captopril" model-id="Captopril_Duchin1982_intravenous_dose_total_radioactivity" status="needs_review" stale="true" population="healthy subjects" measured-compound="captopril" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 3 extracted.

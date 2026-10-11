@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Hawwa AF et al., Prophylactic ranitidine treatment in cr…, British journal of clinical… (2013)
   ·  DOI: [10.1111/j.1365-2125.2012.04473.x](https://doi.org/10.1111/j.1365-2125.2012.04473.x)
 
-## Model component
-<dbs-pgx drug="ranitidine" model-id="Ranitidine_Hawwa2013_reference" status="extracted" stale="true" population="critically ill children" measured-compound="ranitidine" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="ranitidine" model-id="Ranitidine_Hawwa2013_reference" status="extracted" stale="true" population="critically ill children" measured-compound="ranitidine" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 4 extracted.

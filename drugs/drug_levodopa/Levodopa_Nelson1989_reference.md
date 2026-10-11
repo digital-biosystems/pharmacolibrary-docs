@@ -27,8 +27,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Nelson MV et al., Pharmacokinetic and pharmacodynamic mod…, Clinical neuropharmacology (1989)
   ·  DOI: [10.1097/00002826-198904000-00002](https://doi.org/10.1097/00002826-198904000-00002)
 
-## Model component
-<dbs-pgx drug="levodopa" model-id="Levodopa_Nelson1989_reference" status="rejected" stale="false" population="parkinsonian patients" measured-compound="levodopa" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="levodopa" model-id="Levodopa_Nelson1989_reference" status="rejected" stale="false" population="parkinsonian patients" measured-compound="levodopa" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

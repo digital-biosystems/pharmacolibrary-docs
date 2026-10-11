@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on `parame
 Junkert AM et al., Pharmacokinetics of oral ciprofloxacin…, British journal of clinical… (2024)
   ·  DOI: [10.1111/bcp.15933](https://doi.org/10.1111/bcp.15933)
 
-## Model component
-<dbs-pgx drug="ciprofloxacin" model-id="Ciprofloxacin_Junkert2024_reference" status="needs_review" stale="true" population="mixed (healthy, critically ill, ECMO, elderly, osteoarticular infection)" measured-compound="ciprofloxacin" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="ciprofloxacin" model-id="Ciprofloxacin_Junkert2024_reference" status="needs_review" stale="true" population="mixed (healthy, critically ill, ECMO, elderly, osteoarticular infection)" measured-compound="ciprofloxacin" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 4 extracted.

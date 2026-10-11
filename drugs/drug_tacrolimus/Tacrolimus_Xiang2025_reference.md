@@ -27,8 +27,7 @@
 Xiang Q et al., Population Pharmacokinetic/Pharmacodyna…, Drug design, development an… (2025)
   ·  DOI: [10.2147/DDDT.S542786](https://doi.org/10.2147/DDDT.S542786)
 
-## Model component
-<dbs-pgx drug="tacrolimus" model-id="Tacrolimus_Xiang2025_reference" status="" stale="true" population="renal transplant recipients" measured-compound="" parameterization="" topology=""></dbs-pgx>
+<div class="pk-model-meta" hidden drug="tacrolimus" model-id="Tacrolimus_Xiang2025_reference" status="" stale="true" population="renal transplant recipients" measured-compound="" parameterization="" topology=""></div>
 
 **Model structure:** —; no model was built for this record.  
 **Parameters:** 0 extracted.

@@ -31,8 +31,7 @@ Independently confirmed by `gpt-oss:120b`.
 Connolly S et al., Propafenone disposition kinetics in car…, Clinical pharmacology and t… (1984)
   ·  DOI: [10.1038/clpt.1984.157](https://doi.org/10.1038/clpt.1984.157)
 
-## Model component
-<dbs-pgx drug="propafenone" model-id="Propafenone_Connolly1984_reference" status="extracted" stale="true" population="patients with ventricular arrhythmias" measured-compound="propafenone" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="propafenone" model-id="Propafenone_Connolly1984_reference" status="extracted" stale="true" population="patients with ventricular arrhythmias" measured-compound="propafenone" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameters:** 3 extracted.

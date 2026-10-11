@@ -21,8 +21,7 @@
 Fernández Rubio B et al., High-Dose Ceftriaxone in Elderly Patien…, Antibiotics (Basel, Switzer… (2025)
   ·  DOI: [10.3390/antibiotics14050508](https://doi.org/10.3390/antibiotics14050508)
 
-## Model component
-<dbs-pgx drug="ampicillin" model-id="Ampicillin_Fernndez2025_reference" status="rejected" stale="false" population="" measured-compound="ampicillin" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="ampicillin" model-id="Ampicillin_Fernndez2025_reference" status="rejected" stale="false" population="" measured-compound="ampicillin" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment; no model was built for this record.  
 **Parameters:** 3 extracted.

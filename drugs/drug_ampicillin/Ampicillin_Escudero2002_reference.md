@@ -25,8 +25,7 @@
 Escudero E et al., Pharmacokinetics of an ampicillin/sulba…, Journal of veterinary pharm… (2002)
   ·  DOI: [10.1046/j.1365-2885.2002.00412.x](https://doi.org/10.1046/j.1365-2885.2002.00412.x)
 
-## Model component
-<dbs-pgx drug="ampicillin" model-id="Ampicillin_Escudero2002_reference" status="needs_review" stale="false" population="rabbits" measured-compound="ampicillin" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="ampicillin" model-id="Ampicillin_Escudero2002_reference" status="needs_review" stale="false" population="rabbits" measured-compound="ampicillin" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 4 extracted.

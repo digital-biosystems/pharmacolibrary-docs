@@ -25,8 +25,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Shintaku K et al., Kinetic analysis of the transport of sa…, Drug metabolism and disposi… (2007)
   ·  DOI: [10.1124/dmd.106.013029](https://doi.org/10.1124/dmd.106.013029)
 
-## Model component
-<dbs-pgx drug="salicylic acid" model-id="SalicylicAcid_Shintaku2007_reference" status="rejected" stale="false" population="human placenta" measured-compound="salicylic acid" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="salicylic acid" model-id="SalicylicAcid_Shintaku2007_reference" status="rejected" stale="false" population="human placenta" measured-compound="salicylic acid" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

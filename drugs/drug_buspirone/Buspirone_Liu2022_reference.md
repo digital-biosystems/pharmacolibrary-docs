@@ -21,8 +21,7 @@
 Liu S et al., Population pharmacokinetics model for e…, Frontiers in pharmacology (2022)
   ·  DOI: [10.3389/fphar.2022.964758](https://doi.org/10.3389/fphar.2022.964758)
 
-## Model component
-<dbs-pgx drug="buspirone" model-id="Buspirone_Liu2022_reference" status="extracted" stale="false" population="" measured-compound="buspirone" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="buspirone" model-id="Buspirone_Liu2022_reference" status="extracted" stale="false" population="" measured-compound="buspirone" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 2 extracted.

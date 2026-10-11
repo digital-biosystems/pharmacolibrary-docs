@@ -20,8 +20,7 @@
 Calvo A et al., Single and Multiple Dose PK-PD Characte…, Journal of clinical medicine (2022)
   ·  DOI: [10.3390/jcm11030858](https://doi.org/10.3390/jcm11030858)
 
-## Model component
-<dbs-pgx drug="carisoprodol" model-id="Carisoprodol_Calvo2022_reference" status="rejected" stale="false" population="healthy volunteers" measured-compound="carisoprodol" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="carisoprodol" model-id="Carisoprodol_Calvo2022_reference" status="rejected" stale="false" population="healthy volunteers" measured-compound="carisoprodol" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 2 extracted.

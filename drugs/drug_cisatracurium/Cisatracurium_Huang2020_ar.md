@@ -21,8 +21,7 @@
 Huang X et al., Abnormal cisatracurium pharmacodynamics…, BMC anesthesiology (2020)
   ·  DOI: [10.1186/s12871-020-0935-z](https://doi.org/10.1186/s12871-020-0935-z)
 
-## Model component
-<dbs-pgx drug="cisatracurium" model-id="Cisatracurium_Huang2020_ar" status="rejected" stale="false" population="patients with severe aortic regurgitation and control group" measured-compound="cisatracurium" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="cisatracurium" model-id="Cisatracurium_Huang2020_ar" status="rejected" stale="false" population="patients with severe aortic regurgitation and control group" measured-compound="cisatracurium" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment; no model was built for this record.  
 **Parameters:** 6 extracted.

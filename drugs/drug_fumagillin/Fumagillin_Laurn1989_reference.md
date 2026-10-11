@@ -24,8 +24,7 @@
 Laurén DJ et al., Toxicity and pharmacokinetics of the an…, Toxicology and applied phar… (1989)
   ·  DOI: [10.1016/0041-008x(89)90173-7](https://doi.org/10.1016/0041-008x(89)90173-7)
 
-## Model component
-<dbs-pgx drug="fumagillin" model-id="Fumagillin_Laurn1989_reference" status="rejected" stale="false" population="yearling rainbow trout" measured-compound="fumagillin" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="fumagillin" model-id="Fumagillin_Laurn1989_reference" status="rejected" stale="false" population="yearling rainbow trout" measured-compound="fumagillin" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 3 extracted.

@@ -23,8 +23,7 @@
 Lynn AM et al., Ketorolac tromethamine: stereo-specific…, Paediatric anaesthesia (2011)
   ·  DOI: [10.1111/j.1460-9592.2010.03484.x](https://doi.org/10.1111/j.1460-9592.2010.03484.x)
 
-## Model component
-<dbs-pgx drug="ketorolac" model-id="Ketorolac_Lynn2011_reference" status="rejected" stale="false" population="postoperative infants aged 2-18 months" measured-compound="ketorolac (R and S isomers)" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="ketorolac" model-id="Ketorolac_Lynn2011_reference" status="rejected" stale="false" population="postoperative infants aged 2-18 months" measured-compound="ketorolac (R and S isomers)" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment; no model was built for this record.  
 **Parameters:** 4 extracted.

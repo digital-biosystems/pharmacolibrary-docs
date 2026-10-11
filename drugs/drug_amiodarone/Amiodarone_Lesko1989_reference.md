@@ -27,8 +27,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on paramet
 Lesko LJ, Pharmacokinetic drug interactions with…, Clinical pharmacokinetics (1989)
   ·  DOI: [10.2165/00003088-198917020-00005](https://doi.org/10.2165/00003088-198917020-00005)
 
-## Model component
-<dbs-pgx drug="amiodarone" model-id="Amiodarone_Lesko1989_reference" status="curated_candidate" stale="false" population="adults with arrhythmias" measured-compound="amiodarone" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="amiodarone" model-id="Amiodarone_Lesko1989_reference" status="curated_candidate" stale="false" population="adults with arrhythmias" measured-compound="amiodarone" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameters:** 2 extracted.

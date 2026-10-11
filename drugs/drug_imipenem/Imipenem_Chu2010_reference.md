@@ -21,8 +21,7 @@
 Chu YZ et al., Pharmacokinetic-pharmacodynamic profili…, BMC infectious diseases (2010)
   ·  DOI: [10.1186/1471-2334-10-171](https://doi.org/10.1186/1471-2334-10-171)
 
-## Model component
-<dbs-pgx drug="Imipenem" model-id="Imipenem_Chu2010_reference" status="extracted" stale="false" population="" measured-compound="imipenem" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="Imipenem" model-id="Imipenem_Chu2010_reference" status="extracted" stale="false" population="" measured-compound="imipenem" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameters:** 2 extracted.

@@ -32,8 +32,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Ziemniak JA et al., A retrospective analysis of fenoldopam…, Pharmaceutical research (1989)
   ·  DOI: [10.1023/a:1015990506743](https://doi.org/10.1023/a:1015990506743)
 
-## Model component
-<dbs-pgx drug="fenoldopam" model-id="Fenoldopam_Ziemniak1989_reference" status="rejected" stale="true" population="healthy volunteers" measured-compound="fenoldopam" parameterization="mechanistic" topology="general_linear"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="fenoldopam" model-id="Fenoldopam_Ziemniak1989_reference" status="rejected" stale="true" population="healthy volunteers" measured-compound="fenoldopam" parameterization="mechanistic" topology="general_linear"></div>
 
 **Model structure:** general linear; no model was built for this record.  
 **Parameters:** 2 extracted.

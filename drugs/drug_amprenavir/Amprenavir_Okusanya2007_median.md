@@ -27,8 +27,7 @@
 Okusanya O et al., Compartmental pharmacokinetic analysis…, Antimicrobial agents and ch… (2007)
   ·  DOI: [10.1128/AAC.00570-06](https://doi.org/10.1128/AAC.00570-06)
 
-## Model component
-<dbs-pgx drug="amprenavir" model-id="Amprenavir_Okusanya2007_median" status="extracted" stale="true" population="HIV-seronegative healthy adults" measured-compound="amprenavir" parameterization="apparent" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="amprenavir" model-id="Amprenavir_Okusanya2007_median" status="extracted" stale="true" population="HIV-seronegative healthy adults" measured-compound="amprenavir" parameterization="apparent" topology="2C"></div>
 
 **Model structure:** 2-compartment, oral mammillary model — template `PK_2C_enteral`.  
 **Parameters:** 12 extracted.

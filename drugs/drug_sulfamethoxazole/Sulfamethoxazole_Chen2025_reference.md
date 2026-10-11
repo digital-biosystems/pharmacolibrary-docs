@@ -23,8 +23,7 @@
 Chen B et al., Population pharmacokinetics and Monte C…, Antimicrobial agents and ch… (2025)
   ·  DOI: [10.1128/aac.00519-25](https://doi.org/10.1128/aac.00519-25)
 
-## Model component
-<dbs-pgx drug="sulfamethoxazole" model-id="Sulfamethoxazole_Chen2025_reference" status="needs_review" stale="false" population="adults with Pneumocystis jirovecii pneumonia" measured-compound="sulfamethoxazole" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="sulfamethoxazole" model-id="Sulfamethoxazole_Chen2025_reference" status="needs_review" stale="false" population="adults with Pneumocystis jirovecii pneumonia" measured-compound="sulfamethoxazole" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 3 extracted.

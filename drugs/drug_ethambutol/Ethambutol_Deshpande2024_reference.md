@@ -23,8 +23,7 @@
 Deshpande D et al., Antibacterial action of penicillin agai…, IJTLD open (2024)
   ·  DOI: [10.5588/ijtldopen.24.0238](https://doi.org/10.5588/ijtldopen.24.0238)
 
-## Model component
-<dbs-pgx drug="ethambutol" model-id="Ethambutol_Deshpande2024_reference" status="rejected" stale="false" population="" measured-compound="ethambutol" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="ethambutol" model-id="Ethambutol_Deshpande2024_reference" status="rejected" stale="false" population="" measured-compound="ethambutol" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment; no model was built for this record.  
 **Parameters:** 3 extracted.

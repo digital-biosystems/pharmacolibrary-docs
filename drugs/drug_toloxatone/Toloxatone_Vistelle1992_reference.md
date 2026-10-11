@@ -33,8 +33,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the val
 Vistelle R et al., Toloxatone pharmacokinetics in the plas…, The Journal of pharmacy and… (1992)
   ·  DOI: [10.1111/j.2042-7158.1992.tb03576.x](https://doi.org/10.1111/j.2042-7158.1992.tb03576.x)
 
-## Model component
-<dbs-pgx drug="toloxatone" model-id="Toloxatone_Vistelle1992_reference" status="extracted" stale="true" population="anaesthetized rabbits" measured-compound="toloxatone" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="toloxatone" model-id="Toloxatone_Vistelle1992_reference" status="extracted" stale="true" population="anaesthetized rabbits" measured-compound="toloxatone" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameters:** 3 extracted.

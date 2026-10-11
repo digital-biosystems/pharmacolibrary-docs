@@ -27,8 +27,7 @@ The check had no reference to compare the clearance against, so the value is unv
 Diasio RB et al., Clinical pharmacology of 5-fluorouracil, Clinical pharmacokinetics (1989)
   ·  DOI: [10.2165/00003088-198916040-00002](https://doi.org/10.2165/00003088-198916040-00002)
 
-## Model component
-<dbs-pgx drug="fluorouracil" model-id="Fluorouracil_Diasio1989v2_reference" status="needs_review" stale="false" population="unknown" measured-compound="" parameterization="" topology=""></dbs-pgx>
+<div class="pk-model-meta" hidden drug="fluorouracil" model-id="Fluorouracil_Diasio1989v2_reference" status="needs_review" stale="false" population="unknown" measured-compound="" parameterization="" topology=""></div>
 
 **Model structure:** —; no model was built for this record.  
 **Parameters:** 0 extracted.

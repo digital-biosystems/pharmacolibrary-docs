@@ -21,8 +21,7 @@
 Paiboonvong T et al., Population Pharmacokinetics and Pharmac…, Pharmacology research & per… (2025)
   ·  DOI: [10.1002/prp2.70081](https://doi.org/10.1002/prp2.70081)
 
-## Model component
-<dbs-pgx drug="sitafloxacin" model-id="Sitafloxacin_Paiboonvong2025_reference" status="extracted" stale="false" population="critically ill Thai patients with pneumonia" measured-compound="sitafloxacin" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="sitafloxacin" model-id="Sitafloxacin_Paiboonvong2025_reference" status="extracted" stale="false" population="critically ill Thai patients with pneumonia" measured-compound="sitafloxacin" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 5 extracted, plus 1 covariate effect.

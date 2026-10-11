@@ -30,8 +30,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the val
 Taguchi M et al., Nonlinear mixed effects model analysis…, Biological & pharmaceutical… (2004)
   ·  DOI: [10.1248/bpb.27.1642](https://doi.org/10.1248/bpb.27.1642)
 
-## Model component
-<dbs-pgx drug="metoprolol" model-id="Metoprolol_Taguchi2004_reference" status="needs_review" stale="true" population="routinely treated Japanese patients" measured-compound="metoprolol" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="metoprolol" model-id="Metoprolol_Taguchi2004_reference" status="needs_review" stale="true" population="routinely treated Japanese patients" measured-compound="metoprolol" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 3 extracted.

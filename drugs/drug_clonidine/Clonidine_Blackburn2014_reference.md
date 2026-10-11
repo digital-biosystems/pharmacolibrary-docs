@@ -29,8 +29,7 @@ Independently confirmed by `gpt-oss:120b`.
 RashidMKhan et al. (2014)
   ·  DOI: [10.1111/pan.12292](https://doi.org/10.1111/pan.12292)
 
-## Model component
-<dbs-pgx drug="clonidine" model-id="Clonidine_Blackburn2014_reference" status="rejected" stale="false" population="children" measured-compound="clonidine" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="clonidine" model-id="Clonidine_Blackburn2014_reference" status="rejected" stale="false" population="children" measured-compound="clonidine" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

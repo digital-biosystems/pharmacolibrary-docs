@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the val
 da Costa TX et al., Population Pharmacokinetics of Magnesiu…, Drugs in R&D (2020)
   ·  DOI: [10.1007/s40268-020-00315-2](https://doi.org/10.1007/s40268-020-00315-2)
 
-## Model component
-<dbs-pgx drug="magnesium (different salts in combination)" model-id="MagnesiumDifferentSaltsInCombination_da2020_reference" status="extracted" stale="true" population="adults with preeclampsia" measured-compound="magnesium_different_salts_in_combination" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="magnesium (different salts in combination)" model-id="MagnesiumDifferentSaltsInCombination_da2020_reference" status="extracted" stale="true" population="adults with preeclampsia" measured-compound="magnesium_different_salts_in_combination" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameters:** 2 extracted.

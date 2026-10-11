@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Abebe BT et al., Pharmacokinetic Drug-Drug Interactions…, Journal of clinical pharmac… (2020)
   ·  DOI: [10.1002/jcph.1523](https://doi.org/10.1002/jcph.1523)
 
-## Model component
-<dbs-pgx drug="trospium" model-id="Trospium_Abebe2020_reference" status="needs_review" stale="false" population="healthy adults" measured-compound="trospium" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="trospium" model-id="Trospium_Abebe2020_reference" status="needs_review" stale="false" population="healthy adults" measured-compound="trospium" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 2 extracted.

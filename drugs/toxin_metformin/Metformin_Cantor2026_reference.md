@@ -19,8 +19,7 @@
 Cantor SL; Zeng Y; Davis FS; Glaros SB; Macheret NA; Kacker IN; et al. et al. (2026). medRxiv : the preprint server for health sciences
   ·  DOI: [10.64898/2026.05.27.26354152](https://doi.org/10.64898/2026.05.27.26354152)
 
-## Model component
-<dbs-pgx drug="metformin" model-id="Metformin_Cantor2026_reference" status="not_modelled" stale="false" population="youth-onset type 2 diabetes" measured-compound="metformin" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="metformin" model-id="Metformin_Cantor2026_reference" status="not_modelled" stale="false" population="youth-onset type 2 diabetes" measured-compound="metformin" parameterization="apparent" topology="1C"></div>
 
 **Parameterization:** CL/F, V/F — apparent, F unknown (apparent — bioavailability not identifiable).
 

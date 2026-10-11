@@ -21,8 +21,7 @@
 Hemperly A et al., Pharmacokinetics and Exposure-Response…, Journal of clinical medicine (2025)
   ·  DOI: [10.3390/jcm14227968](https://doi.org/10.3390/jcm14227968)
 
-## Model component
-<dbs-pgx drug="infliximab" model-id="Infliximab_Hemperly2025_reference" status="rejected" stale="false" population="pediatric patients with inflammatory bowel disease" measured-compound="infliximab" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="infliximab" model-id="Infliximab_Hemperly2025_reference" status="rejected" stale="false" population="pediatric patients with inflammatory bowel disease" measured-compound="infliximab" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment; no model was built for this record.  
 **Parameters:** 3 extracted, plus 3 covariate effects.

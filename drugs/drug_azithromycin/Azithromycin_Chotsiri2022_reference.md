@@ -23,8 +23,7 @@
 Chotsiri P et al., Pharmacometric and Electrocardiographic…, Clinical pharmacology and t… (2022)
   ·  DOI: [10.1002/cpt.2665](https://doi.org/10.1002/cpt.2665)
 
-## Model component
-<dbs-pgx drug="azithromycin" model-id="Azithromycin_Chotsiri2022_reference" status="rejected" stale="false" population="healthy adults" measured-compound="azithromycin" parameterization="mechanistic" topology="parent_metabolite"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="azithromycin" model-id="Azithromycin_Chotsiri2022_reference" status="rejected" stale="false" population="healthy adults" measured-compound="azithromycin" parameterization="mechanistic" topology="parent_metabolite"></div>
 
 **Model structure:** parent + metabolite; no model was built for this record.  
 **Parameters:** 0 extracted.

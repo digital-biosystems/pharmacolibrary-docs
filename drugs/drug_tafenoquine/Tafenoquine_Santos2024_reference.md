@@ -23,8 +23,7 @@
 Santos LO et al., Pharmacokinetic Models of Tafenoquine:…, Pharmaceutics (2024)
   ·  DOI: [10.3390/pharmaceutics16091124](https://doi.org/10.3390/pharmaceutics16091124)
 
-## Model component
-<dbs-pgx drug="tafenoquine" model-id="Tafenoquine_Santos2024_reference" status="rejected" stale="false" population="adults and paediatric patients with P. vivax malaria / healthy volunteers" measured-compound="tafenoquine" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="tafenoquine" model-id="Tafenoquine_Santos2024_reference" status="rejected" stale="false" population="adults and paediatric patients with P. vivax malaria / healthy volunteers" measured-compound="tafenoquine" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

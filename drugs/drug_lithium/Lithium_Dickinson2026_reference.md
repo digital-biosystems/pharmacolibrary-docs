@@ -21,8 +21,7 @@
 Dickinson L et al., A model-based comparison of dose reduct…, The Journal of antimicrobia… (2026)
   ·  DOI: [10.1093/jac/dkaf445](https://doi.org/10.1093/jac/dkaf445)
 
-## Model component
-<dbs-pgx drug="lithium" model-id="Lithium_Dickinson2026_reference" status="extracted" stale="false" population="" measured-compound="lithium" parameterization="apparent" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="lithium" model-id="Lithium_Dickinson2026_reference" status="extracted" stale="false" population="" measured-compound="lithium" parameterization="apparent" topology="2C"></div>
 
 **Model structure:** 2-compartment, oral mammillary model — template `PK_2C_enteral`.  
 **Parameters:** 6 extracted.

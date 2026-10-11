@@ -29,8 +29,7 @@ Simulated as the paper dosed it, the model's terminal half-life differs from the
 Thoueille P et al., Population Pharmacokinetics of Cabotegr…, Clinical pharmacology and t… (2024)
   ·  DOI: [10.1002/cpt.3240](https://doi.org/10.1002/cpt.3240)
 
-## Model component
-<dbs-pgx drug="cabotegravir" model-id="Cabotegravir_Thoueille2024_reference" status="needs_review" stale="true" population="people with HIV on long-acting cabotegravir/rilpivirine" measured-compound="cabotegravir" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="cabotegravir" model-id="Cabotegravir_Thoueille2024_reference" status="needs_review" stale="true" population="people with HIV on long-acting cabotegravir/rilpivirine" measured-compound="cabotegravir" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 3 extracted.

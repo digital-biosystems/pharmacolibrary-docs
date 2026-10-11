@@ -21,8 +21,7 @@
 Capparelli E et al., Population pharmacokinetics of cefepime…, Antimicrobial agents and ch… (2005)
   ·  DOI: [10.1128/AAC.49.7.2760-2766.2005](https://doi.org/10.1128/AAC.49.7.2760-2766.2005)
 
-## Model component
-<dbs-pgx drug="cefepime" model-id="Cefepime_Capparelli2005_reference" status="rejected" stale="false" population="neonates" measured-compound="cefepime" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="cefepime" model-id="Cefepime_Capparelli2005_reference" status="rejected" stale="false" population="neonates" measured-compound="cefepime" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on paramet
 Wang J et al., Pharmacokinetic Modeling of Ceftiofur S…, Frontiers in veterinary sci… (2019)
   ·  DOI: [10.3389/fvets.2019.00363](https://doi.org/10.3389/fvets.2019.00363)
 
-## Model component
-<dbs-pgx drug="escherichia coli" model-id="EscherichiaColi_Wang2019_reference" status="extracted" stale="true" population="" measured-compound="escherichia_coli" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="escherichia coli" model-id="EscherichiaColi_Wang2019_reference" status="extracted" stale="true" population="" measured-compound="escherichia_coli" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment, IV mammillary model — template `PK_2C`.  
 **Parameters:** 4 extracted.

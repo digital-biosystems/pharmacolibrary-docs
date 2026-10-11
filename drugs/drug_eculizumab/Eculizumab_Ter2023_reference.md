@@ -21,8 +21,7 @@
 Ter Avest M et al., Proposal for individualized dosing of e…, Nephrology, dialysis, trans… (2023)
   ·  DOI: [10.1093/ndt/gfac056](https://doi.org/10.1093/ndt/gfac056)
 
-## Model component
-<dbs-pgx drug="eculizumab" model-id="Eculizumab_Ter2023_reference" status="rejected" stale="false" population="aHUS patients (adults and children)" measured-compound="eculizumab" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="eculizumab" model-id="Eculizumab_Ter2023_reference" status="rejected" stale="false" population="aHUS patients (adults and children)" measured-compound="eculizumab" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 3 extracted, plus 1 covariate effect.

@@ -28,8 +28,7 @@ A model needs both clearance and volume; without the clearance it could only be 
 Graves NM et al., Pharmacokinetics of felbamate, a novel…, Pharmacotherapy (1989)
   ·  DOI: [10.1002/j.1875-9114.1989.tb04151.x](https://doi.org/10.1002/j.1875-9114.1989.tb04151.x)
 
-## Model component
-<dbs-pgx drug="felbamate" model-id="Felbamate_Graves1989_reference" status="needs_review" stale="true" population="adults with epilepsy" measured-compound="felbamate" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="felbamate" model-id="Felbamate_Graves1989_reference" status="needs_review" stale="true" population="adults with epilepsy" measured-compound="felbamate" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 1 extracted.

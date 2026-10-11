@@ -20,8 +20,7 @@
 Michelet R et al., Effects of Food and Pharmaceutical Form…, Clinical pharmacokinetics (2016)
   ·  DOI: [10.1007/s40262-016-0393-4](https://doi.org/10.1007/s40262-016-0393-4)
 
-## Model component
-<dbs-pgx drug="desmopressin" model-id="Desmopressin_Michelet2016_reference" status="needs_review" stale="false" population="children with nocturnal enuresis" measured-compound="desmopressin" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="desmopressin" model-id="Desmopressin_Michelet2016_reference" status="needs_review" stale="false" population="children with nocturnal enuresis" measured-compound="desmopressin" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 1 extracted.

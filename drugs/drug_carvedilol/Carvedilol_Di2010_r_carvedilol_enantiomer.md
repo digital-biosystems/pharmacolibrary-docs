@@ -33,8 +33,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Di Verniero CA et al., Enantioselective pharmacokinetic-pharma…, The Journal of pharmacy and… (2010)
   ·  DOI: [10.1211/jpp.62.07.0010](https://doi.org/10.1211/jpp.62.07.0010)
 
-## Model component
-<dbs-pgx drug="carvedilol" model-id="Carvedilol_Di2010_r_carvedilol_enantiomer" status="rejected" stale="true" population="L-NAME hypertensive rats and control rats" measured-compound="carvedilol" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="carvedilol" model-id="Carvedilol_Di2010_r_carvedilol_enantiomer" status="rejected" stale="true" population="L-NAME hypertensive rats and control rats" measured-compound="carvedilol" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

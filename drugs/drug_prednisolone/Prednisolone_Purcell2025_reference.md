@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Purcell BL et al., Influence of bodyweight on prednisolone…, PloS one (2025)
   ·  DOI: [10.1371/journal.pone.0326586](https://doi.org/10.1371/journal.pone.0326586)
 
-## Model component
-<dbs-pgx drug="prednisolone" model-id="Prednisolone_Purcell2025_reference" status="rejected" stale="false" population="dogs receiving prednisolone for medical reasons" measured-compound="prednisolone" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="prednisolone" model-id="Prednisolone_Purcell2025_reference" status="rejected" stale="false" population="dogs receiving prednisolone for medical reasons" measured-compound="prednisolone" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 4 extracted.

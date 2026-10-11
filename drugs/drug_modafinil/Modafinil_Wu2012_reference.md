@@ -23,8 +23,7 @@
 Wu KH et al., Population pharmacokinetics of modafini…, Acta pharmacologica Sinica (2012)
   ·  DOI: [10.1038/aps.2012.124](https://doi.org/10.1038/aps.2012.124)
 
-## Model component
-<dbs-pgx drug="modafinil" model-id="Modafinil_Wu2012_reference" status="extracted" stale="false" population="healthy volunteers from 5 ethnic groups of China" measured-compound="modafinil acid" parameterization="apparent" topology="parent_metabolite"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="modafinil" model-id="Modafinil_Wu2012_reference" status="extracted" stale="false" population="healthy volunteers from 5 ethnic groups of China" measured-compound="modafinil acid" parameterization="apparent" topology="parent_metabolite"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 7 extracted.

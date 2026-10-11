@@ -32,8 +32,7 @@ Independently confirmed by `gpt-oss:120b`.
 Sherertz RJ et al., Efficacy of antibiotic-coated catheters…, The Journal of infectious d… (1993)
   ·  DOI: [10.1093/infdis/167.1.98](https://doi.org/10.1093/infdis/167.1.98)
 
-## Model component
-<dbs-pgx drug="chlorhexidine" model-id="Chlorhexidine_Sherertz1993_reference" status="rejected" stale="true" population="rabbits" measured-compound="chlorhexidine" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="chlorhexidine" model-id="Chlorhexidine_Sherertz1993_reference" status="rejected" stale="true" population="rabbits" measured-compound="chlorhexidine" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 3 extracted.

@@ -21,8 +21,7 @@
 Kim KM et al., Population pharmacokinetic and pharmaco…, Journal of pharmacokinetics… (2023)
   ·  DOI: [10.1007/s10928-022-09836-6](https://doi.org/10.1007/s10928-022-09836-6)
 
-## Model component
-<dbs-pgx drug="propofol" model-id="Propofol_Kim2023_reference" status="rejected" stale="false" population="Korean elderly subjects" measured-compound="propofol" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="propofol" model-id="Propofol_Kim2023_reference" status="rejected" stale="false" population="Korean elderly subjects" measured-compound="propofol" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment; no model was built for this record.  
 **Parameters:** 6 extracted.

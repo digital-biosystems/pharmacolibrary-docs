@@ -32,8 +32,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Samuel P et al., Effect of neomycin on exchangeable pool…, The Journal of clinical inv… (1968)
   ·  DOI: [10.1172/JCI105870](https://doi.org/10.1172/JCI105870)
 
-## Model component
-<dbs-pgx drug="neomycin" model-id="Neomycin_Samuel1968_placebo" status="rejected" stale="true" population="adults with hypercholesterolemia" measured-compound="cholesterol" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="neomycin" model-id="Neomycin_Samuel1968_placebo" status="rejected" stale="true" population="adults with hypercholesterolemia" measured-compound="cholesterol" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 3 extracted.

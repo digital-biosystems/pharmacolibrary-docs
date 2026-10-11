@@ -21,8 +21,7 @@
 van Beem H et al., Etomidate anaesthesia in patients with…, Anaesthesia 38 Suppl:61–62 (1983)
   ·  DOI: [10.1111/j.1365-2044.1983.tb15181.x](https://doi.org/10.1111/j.1365-2044.1983.tb15181.x)
 
-## Model component
-<dbs-pgx drug="etomidate" model-id="Etomidate_van1983_reference" status="extracted" stale="false" population="patients with cirrhosis of the liver" measured-compound="etomidate" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="etomidate" model-id="Etomidate_van1983_reference" status="extracted" stale="false" population="patients with cirrhosis of the liver" measured-compound="etomidate" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameters:** 3 extracted.

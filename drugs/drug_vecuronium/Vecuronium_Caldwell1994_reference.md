@@ -21,8 +21,7 @@
 ## Citation
 Caldwell JE et al., The pharmacodynamics and pharmacokineti…, The Journal of pharmacology… (1994)
 
-## Model component
-<dbs-pgx drug="vecuronium" model-id="Vecuronium_Caldwell1994_reference" status="rejected" stale="false" population="healthy volunteers" measured-compound="3-desacetylvecuronium" parameterization="mechanistic" topology="parent_metabolite"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="vecuronium" model-id="Vecuronium_Caldwell1994_reference" status="rejected" stale="false" population="healthy volunteers" measured-compound="3-desacetylvecuronium" parameterization="mechanistic" topology="parent_metabolite"></div>
 
 **Model structure:** parent + metabolite; no model was built for this record.  
 **Parameters:** 0 extracted.

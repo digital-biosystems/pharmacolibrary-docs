@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the val
 Monfort A et al., A population pharmacokinetic model for…, British journal of clinical… (2024)
   ·  DOI: [10.1111/bcp.16177](https://doi.org/10.1111/bcp.16177)
 
-## Model component
-<dbs-pgx drug="sertraline" model-id="Sertraline_Monfort2024_reference" status="needs_review" stale="true" population="pregnant and postpartum women (perinatal period)" measured-compound="sertraline" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="sertraline" model-id="Sertraline_Monfort2024_reference" status="needs_review" stale="true" population="pregnant and postpartum women (perinatal period)" measured-compound="sertraline" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 4 extracted, plus 1 covariate effect.

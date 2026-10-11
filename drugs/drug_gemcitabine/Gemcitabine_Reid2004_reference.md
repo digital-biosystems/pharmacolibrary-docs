@@ -21,8 +21,7 @@
 Reid JM et al., Phase I trial and pharmacokinetics of g…, Journal of clinical oncolog… (2004)
   ·  DOI: [10.1200/JCO.2004.10.142](https://doi.org/10.1200/JCO.2004.10.142)
 
-## Model component
-<dbs-pgx drug="gemcitabine" model-id="Gemcitabine_Reid2004_reference" status="needs_review" stale="false" population="children with advanced solid tumors" measured-compound="gemcitabine" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="gemcitabine" model-id="Gemcitabine_Reid2004_reference" status="needs_review" stale="false" population="children with advanced solid tumors" measured-compound="gemcitabine" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 2 extracted.

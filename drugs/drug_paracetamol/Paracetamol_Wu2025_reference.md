@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Wu Y et al., A Novel Maturation Equation for Hepatic…, Journal of clinical pharmac… (2025)
   ·  DOI: [10.1002/jcph.70080](https://doi.org/10.1002/jcph.70080)
 
-## Model component
-<dbs-pgx drug="paracetamol" model-id="Paracetamol_Wu2025_reference" status="rejected" stale="true" population="preterm and term neonates, infants, children, and adults" measured-compound="paracetamol" parameterization="apparent" topology="general_linear"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="paracetamol" model-id="Paracetamol_Wu2025_reference" status="rejected" stale="true" population="preterm and term neonates, infants, children, and adults" measured-compound="paracetamol" parameterization="apparent" topology="general_linear"></div>
 
 **Model structure:** general linear; no model was built for this record.  
 **Parameters:** 3 extracted.

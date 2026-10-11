@@ -20,8 +20,7 @@
 Reddick SJ et al., Pharmacokinetics and safety of erlotini…, Cancer chemotherapy and pha… (2019)
   ·  DOI: [10.1007/s00280-019-03921-3](https://doi.org/10.1007/s00280-019-03921-3)
 
-## Model component
-<dbs-pgx drug="erlotinib" model-id="Erlotinib_Reddick2019_reference" status="needs_review" stale="false" population="infants and children with primary brain tumors" measured-compound="erlotinib" parameterization="apparent" topology="parent_metabolite"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="erlotinib" model-id="Erlotinib_Reddick2019_reference" status="needs_review" stale="false" population="infants and children with primary brain tumors" measured-compound="erlotinib" parameterization="apparent" topology="parent_metabolite"></div>
 
 **Model structure:** parent + metabolite; no model was built for this record.  
 **Parameters:** 4 extracted.

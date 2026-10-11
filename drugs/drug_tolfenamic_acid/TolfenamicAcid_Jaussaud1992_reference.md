@@ -23,8 +23,7 @@
 Jaussaud P et al., Pharmacokinetics of tolfenamic acid in…, Equine veterinary journal.… (1992)
   ·  DOI: [10.1111/j.2042-3306.1992.tb04778.x](https://doi.org/10.1111/j.2042-3306.1992.tb04778.x)
 
-## Model component
-<dbs-pgx drug="tolfenamic acid" model-id="TolfenamicAcid_Jaussaud1992_reference" status="rejected" stale="false" population="ponies and horses" measured-compound="tolfenamic acid" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="tolfenamic acid" model-id="TolfenamicAcid_Jaussaud1992_reference" status="rejected" stale="false" population="ponies and horses" measured-compound="tolfenamic acid" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 3 extracted.

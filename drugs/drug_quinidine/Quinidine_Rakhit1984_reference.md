@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on bioavai
 Rakhit A et al., Pharmacokinetics of quinidine and three…, Journal of pharmacokinetics… (1984)
   ·  DOI: [10.1007/BF01063608](https://doi.org/10.1007/BF01063608)
 
-## Model component
-<dbs-pgx drug="quinidine" model-id="Quinidine_Rakhit1984_reference" status="extracted" stale="true" population="healthy volunteers" measured-compound="quinidine" parameterization="mechanistic" topology="general_linear"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="quinidine" model-id="Quinidine_Rakhit1984_reference" status="extracted" stale="true" population="healthy volunteers" measured-compound="quinidine" parameterization="mechanistic" topology="general_linear"></div>
 
 **Model structure:** 1-compartment general linear model (non-mammillary edges) — template `PK_General_Linear`.  
 **Parameters:** 5 extracted.

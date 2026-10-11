@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Chung M et al., Clinical pharmacokinetics of nifedipine…, The American journal of med… (1987)
   ·  DOI: [10.1016/0002-9343(87)90630-9](https://doi.org/10.1016/0002-9343(87)90630-9)
 
-## Model component
-<dbs-pgx drug="nifedipine" model-id="Nifedipine_Chung1987_reference" status="rejected" stale="true" population="adults" measured-compound="nifedipine" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="nifedipine" model-id="Nifedipine_Chung1987_reference" status="rejected" stale="true" population="adults" measured-compound="nifedipine" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

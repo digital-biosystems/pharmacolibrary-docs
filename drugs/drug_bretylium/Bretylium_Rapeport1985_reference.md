@@ -33,8 +33,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on bioavai
 Rapeport WG, Clinical pharmacokinetics of bretylium, Clinical pharmacokinetics (1985)
   ·  DOI: [10.2165/00003088-198510030-00004](https://doi.org/10.2165/00003088-198510030-00004)
 
-## Model component
-<dbs-pgx drug="Bretylium" model-id="Bretylium_Rapeport1985_reference" status="needs_review" stale="true" population="adults with ventricular tachyarrhythmias" measured-compound="bretylium" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="Bretylium" model-id="Bretylium_Rapeport1985_reference" status="needs_review" stale="true" population="adults with ventricular tachyarrhythmias" measured-compound="bretylium" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 2 extracted.

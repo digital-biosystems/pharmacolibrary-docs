@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the val
 ## Citation
 Schäfer-Korting M, Skin blister fluid--an access to the pe…, Arzneimittel-Forschung (1985)
 
-## Model component
-<dbs-pgx drug="bendroflumethiazide" model-id="Bendroflumethiazide_SchferKorting1985_reference" status="rejected" stale="true" population="rats" measured-compound="bendroflumethiazide" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="bendroflumethiazide" model-id="Bendroflumethiazide_SchferKorting1985_reference" status="rejected" stale="true" population="rats" measured-compound="bendroflumethiazide" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 2 extracted.

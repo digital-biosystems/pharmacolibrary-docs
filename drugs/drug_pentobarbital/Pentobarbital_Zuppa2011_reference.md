@@ -21,8 +21,7 @@
 Zuppa AF et al., Population pharmacokinetics of pentobar…, The Journal of pediatrics (2011)
   ·  DOI: [10.1016/j.jpeds.2011.04.021](https://doi.org/10.1016/j.jpeds.2011.04.021)
 
-## Model component
-<dbs-pgx drug="pentobarbital" model-id="Pentobarbital_Zuppa2011_reference" status="rejected" stale="false" population="neonates, infants, and children after open-heart surgery with congenital heart disease" measured-compound="pentobarbital" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="pentobarbital" model-id="Pentobarbital_Zuppa2011_reference" status="rejected" stale="false" population="neonates, infants, and children after open-heart surgery with congenital heart disease" measured-compound="pentobarbital" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment; no model was built for this record.  
 **Parameters:** 3 extracted.

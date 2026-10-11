@@ -21,8 +21,7 @@
 Choi S; Jeon S; Han S et al. (2018). Translational and clinical pharmacology 26
   ·  DOI: [10.12793/tcp.2018.26.1.25](https://doi.org/10.12793/tcp.2018.26.1.25)
 
-## Model component
-<dbs-pgx drug="metformin" model-id="Metformin_Choi2018_reference" status="rejected" stale="true" population="healthy adults" measured-compound="metformin" parameterization="apparent" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="metformin" model-id="Metformin_Choi2018_reference" status="rejected" stale="true" population="healthy adults" measured-compound="metformin" parameterization="apparent" topology="2C"></div>
 
 **Parameterization:** CL/F, Q/F, V1/F, V2/F — apparent, F unknown (apparent — bioavailability not identifiable).
 

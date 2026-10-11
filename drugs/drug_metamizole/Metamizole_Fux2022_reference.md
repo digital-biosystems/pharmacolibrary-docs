@@ -23,8 +23,7 @@
 Fux D et al., Pharmacokinetics of metamizole (dipyron…, PloS one (2022)
   ·  DOI: [10.1371/journal.pone.0265305](https://doi.org/10.1371/journal.pone.0265305)
 
-## Model component
-<dbs-pgx drug="Metamizole" model-id="Metamizole_Fux2022_reference" status="extracted" stale="false" population="calves undergoing umbilical surgery" measured-compound="metamizole" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="Metamizole" model-id="Metamizole_Fux2022_reference" status="extracted" stale="false" population="calves undergoing umbilical surgery" measured-compound="metamizole" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameters:** 2 extracted.

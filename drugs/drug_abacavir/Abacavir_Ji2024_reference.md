@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on paramet
 Ji Y et al., Use of Pharmacokinetic and Pharmacodyna…, Clinical pharmacokinetics (2024)
   ·  DOI: [10.1007/s40262-023-01338-z](https://doi.org/10.1007/s40262-023-01338-z)
 
-## Model component
-<dbs-pgx drug="abacavir" model-id="Abacavir_Ji2024_reference" status="needs_review" stale="false" population="patients with advanced breast cancer" measured-compound="abacavir" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="abacavir" model-id="Abacavir_Ji2024_reference" status="needs_review" stale="false" population="patients with advanced breast cancer" measured-compound="abacavir" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 2 extracted.

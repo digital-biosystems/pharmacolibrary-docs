@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on `parame
 Hannam JA et al., Modeling adult COX-2 cerebrospinal flui…, Paediatric anaesthesia (2023)
   ·  DOI: [10.1111/pan.14590](https://doi.org/10.1111/pan.14590)
 
-## Model component
-<dbs-pgx drug="celecoxib" model-id="Celecoxib_Hannam2023_reference" status="rejected" stale="true" population="adults" measured-compound="celecoxib" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="celecoxib" model-id="Celecoxib_Hannam2023_reference" status="rejected" stale="true" population="adults" measured-compound="celecoxib" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 7 extracted.

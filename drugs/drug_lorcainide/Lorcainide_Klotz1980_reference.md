@@ -32,8 +32,7 @@ Independently confirmed by `gpt-oss:120b`.
 ## Citation
 Klotz U et al., The pharmacokinetics and tissue distrib…, Arzneimittel-Forschung (1980)
 
-## Model component
-<dbs-pgx drug="lorcainide" model-id="Lorcainide_Klotz1980_reference" status="needs_review" stale="true" population="rats" measured-compound="lorcainide" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="lorcainide" model-id="Lorcainide_Klotz1980_reference" status="needs_review" stale="true" population="rats" measured-compound="lorcainide" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 2 extracted.

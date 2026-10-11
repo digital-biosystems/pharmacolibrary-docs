@@ -20,8 +20,7 @@
 ## Citation
 Arancibia A et al., Disposition kinetics of dibekacin in no…, International journal of cl… (1987)
 
-## Model component
-<dbs-pgx drug="dibekacin" model-id="Dibekacin_Arancibia1987_reference" status="needs_review" stale="false" population="healthy volunteers and patients with renal failure" measured-compound="dibekacin" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="dibekacin" model-id="Dibekacin_Arancibia1987_reference" status="needs_review" stale="false" population="healthy volunteers and patients with renal failure" measured-compound="dibekacin" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 3 extracted.

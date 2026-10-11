@@ -29,8 +29,7 @@ The model was built, but raltitrexed's clearance had no value, so a library plac
 Blair EY et al., Population pharmacokinetics of raltitre…, British journal of clinical… (2004)
   ·  DOI: [10.1111/j.1365-2125.2003.02050.x](https://doi.org/10.1111/j.1365-2125.2003.02050.x)
 
-## Model component
-<dbs-pgx drug="raltitrexed" model-id="Raltitrexed_Blair2004_model_validation" status="extracted" stale="true" population="patients with advanced solid tumours" measured-compound="raltitrexed" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="raltitrexed" model-id="Raltitrexed_Blair2004_model_validation" status="extracted" stale="true" population="patients with advanced solid tumours" measured-compound="raltitrexed" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameters:** 3 extracted.

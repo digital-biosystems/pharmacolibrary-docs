@@ -24,8 +24,7 @@
 Giorgi M et al., Pharmacokinetics of methylphenidate fol…, Veterinary research communi… (2010)
   ·  DOI: [10.1007/s11259-010-9388-z](https://doi.org/10.1007/s11259-010-9388-z)
 
-## Model component
-<dbs-pgx drug="methylphenidate" model-id="Methylphenidate_Giorgi2010_reference" status="rejected" stale="false" population="beagle dogs" measured-compound="methylphenidate" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="methylphenidate" model-id="Methylphenidate_Giorgi2010_reference" status="rejected" stale="false" population="beagle dogs" measured-compound="methylphenidate" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment; no model was built for this record.  
 **Parameters:** 3 extracted.

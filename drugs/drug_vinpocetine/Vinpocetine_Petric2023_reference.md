@@ -22,8 +22,7 @@
 Petric Z et al., Clinical Pharmacology of Vinpocetine: P…, Pharmaceutics (2023)
   ·  DOI: [10.3390/pharmaceutics15102502](https://doi.org/10.3390/pharmaceutics15102502)
 
-## Model component
-<dbs-pgx drug="vinpocetine" model-id="Vinpocetine_Petric2023_reference" status="needs_review" stale="false" population="healthy adults" measured-compound="apovincaminic acid (AVA)" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="vinpocetine" model-id="Vinpocetine_Petric2023_reference" status="needs_review" stale="false" population="healthy adults" measured-compound="apovincaminic acid (AVA)" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 9 extracted.

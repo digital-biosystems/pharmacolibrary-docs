@@ -22,8 +22,7 @@
 Meyler WJ et al., The effect of dantrolene sodium on rat…, European journal of pharmac… (1979)
   ·  DOI: [10.1016/0014-2999(79)90457-6](https://doi.org/10.1016/0014-2999(79)90457-6)
 
-## Model component
-<dbs-pgx drug="dantrolene" model-id="Dantrolene_Meyler1979_reference" status="rejected" stale="false" population="rats" measured-compound="dantrolene sodium" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="dantrolene" model-id="Dantrolene_Meyler1979_reference" status="rejected" stale="false" population="rats" measured-compound="dantrolene sodium" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

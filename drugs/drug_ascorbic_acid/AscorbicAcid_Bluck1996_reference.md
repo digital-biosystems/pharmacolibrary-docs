@@ -30,8 +30,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the val
 Bluck LJ et al., Measurement of ascorbic acid kinetics i…, Journal of mass spectrometr… (1996)
   ·  DOI: [10.1002/(SICI)1096-9888(199607)31:7<741::AID-JMS352>3.0.CO;2-H](https://doi.org/10.1002/(SICI)1096-9888(199607)31:7<741::AID-JMS352>3.0.CO;2-H)
 
-## Model component
-<dbs-pgx drug="ascorbic acid" model-id="AscorbicAcid_Bluck1996_reference" status="rejected" stale="true" population="healthy adults" measured-compound="ascorbic acid" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="ascorbic acid" model-id="AscorbicAcid_Bluck1996_reference" status="rejected" stale="true" population="healthy adults" measured-compound="ascorbic acid" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 1 extracted.

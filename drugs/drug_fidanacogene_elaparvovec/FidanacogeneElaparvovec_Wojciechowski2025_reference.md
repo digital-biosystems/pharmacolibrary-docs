@@ -32,8 +32,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Wojciechowski J et al., Population Modeling of Factor IX Activi…, Clinical pharmacokinetics (2025)
   ·  DOI: [10.1007/s40262-025-01535-y](https://doi.org/10.1007/s40262-025-01535-y)
 
-## Model component
-<dbs-pgx drug="fidanacogene elaparvovec" model-id="FidanacogeneElaparvovec_Wojciechowski2025_reference" status="rejected" stale="true" population="participants with hemophilia B" measured-compound="factor IX" parameterization="apparent_wrt_Fm" topology="parent_metabolite"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="fidanacogene elaparvovec" model-id="FidanacogeneElaparvovec_Wojciechowski2025_reference" status="rejected" stale="true" population="participants with hemophilia B" measured-compound="factor IX" parameterization="apparent_wrt_Fm" topology="parent_metabolite"></div>
 
 **Model structure:** parent + metabolite; no model was built for this record.  
 **Parameters:** 0 extracted.

@@ -23,8 +23,7 @@
 Ji XW et al., Model-Informed Drug Development, Pharma…, Antimicrobial agents and ch… (2020)
   ·  DOI: [10.1128/AAC.01751-19](https://doi.org/10.1128/AAC.01751-19)
 
-## Model component
-<dbs-pgx drug="ertapenem" model-id="Ertapenem_Ji2020_reference" status="rejected" stale="false" population="" measured-compound="ertapenem" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="ertapenem" model-id="Ertapenem_Ji2020_reference" status="rejected" stale="false" population="" measured-compound="ertapenem" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment; no model was built for this record.  
 **Parameters:** 4 extracted.

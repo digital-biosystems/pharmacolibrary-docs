@@ -21,8 +21,7 @@
 Ogawa T et al., Population Pharmacokinetic and Exposure…, Journal of clinical pharmac… (2023)
   ·  DOI: [10.1002/jcph.2200](https://doi.org/10.1002/jcph.2200)
 
-## Model component
-<dbs-pgx drug="ibrutinib" model-id="Ibrutinib_Ogawa2023_reference" status="rejected" stale="false" population="subjects with chronic graft-versus-host disease" measured-compound="ibrutinib" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="ibrutinib" model-id="Ibrutinib_Ogawa2023_reference" status="rejected" stale="false" population="subjects with chronic graft-versus-host disease" measured-compound="ibrutinib" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 1 extracted.

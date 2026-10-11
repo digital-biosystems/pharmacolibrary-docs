@@ -21,8 +21,7 @@
 Gonzalez D et al., Clindamycin Pharmacokinetics and Safety…, Antimicrobial agents and ch… (2016)
   ·  DOI: [10.1128/AAC.03086-15](https://doi.org/10.1128/AAC.03086-15)
 
-## Model component
-<dbs-pgx drug="clindamycin" model-id="Clindamycin_Gonzalez2016_reference" status="rejected" stale="false" population="preterm and term infants" measured-compound="clindamycin" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="clindamycin" model-id="Clindamycin_Gonzalez2016_reference" status="rejected" stale="false" population="preterm and term infants" measured-compound="clindamycin" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

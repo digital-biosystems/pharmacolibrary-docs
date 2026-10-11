@@ -25,8 +25,7 @@
 Jia M; Chai Y; Gao Y; Jing C; Zhu K; Zhu T; Wang L; Sun A; Yang J; Zhu Y; Feng Y; Cao Y; Li J et al. (2026). European journal of clinical pharmacology 82
   ·  DOI: [10.1007/s00228-026-04034-6](https://doi.org/10.1007/s00228-026-04034-6)
 
-## Model component
-<dbs-pgx drug="nickel" model-id="Nickel_Jia2026_reference" status="not_modelled" stale="false" population="" measured-compound="nickel" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="nickel" model-id="Nickel_Jia2026_reference" status="not_modelled" stale="false" population="" measured-compound="nickel" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 4 extracted.

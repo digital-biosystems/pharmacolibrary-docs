@@ -29,8 +29,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the val
 Hagos FT et al., Factors Contributing to Fentanyl Pharma…, Clinical pharmacokinetics (2019)
   ·  DOI: [10.1007/s40262-019-00773-1](https://doi.org/10.1007/s40262-019-00773-1)
 
-## Model component
-<dbs-pgx drug="fentanyl" model-id="Fentanyl_Hagos2019_reference" status="needs_review" stale="false" population="critically ill children" measured-compound="fentanyl" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="fentanyl" model-id="Fentanyl_Hagos2019_reference" status="needs_review" stale="false" population="critically ill children" measured-compound="fentanyl" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted, plus 4 covariate effects.

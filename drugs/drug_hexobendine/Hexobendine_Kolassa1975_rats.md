@@ -29,8 +29,7 @@ Nothing in the extracted data describes the drug's disposition, so there is no m
 ## Citation
 Kolassa N et al., [Studies on the pharmacokinetics of hex…, Arzneimittel-Forschung (1975)
 
-## Model component
-<dbs-pgx drug="hexobendine" model-id="Hexobendine_Kolassa1975_rats" status="" stale="true" population="rats" measured-compound="" parameterization="" topology=""></dbs-pgx>
+<div class="pk-model-meta" hidden drug="hexobendine" model-id="Hexobendine_Kolassa1975_rats" status="" stale="true" population="rats" measured-compound="" parameterization="" topology=""></div>
 
 **Model structure:** —; no model was built for this record.  
 **Parameters:** 0 extracted.

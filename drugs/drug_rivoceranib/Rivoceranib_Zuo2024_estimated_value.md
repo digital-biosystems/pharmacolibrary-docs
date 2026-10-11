@@ -20,8 +20,7 @@
 Zuo L et al., Establishment and validation of a popul…, BMC cancer (2024)
   ·  DOI: [10.1186/s12885-024-13118-4](https://doi.org/10.1186/s12885-024-13118-4)
 
-## Model component
-<dbs-pgx drug="rivoceranib" model-id="Rivoceranib_Zuo2024_estimated_value" status="needs_review" stale="false" population="Chinese oncology patients" measured-compound="apatinib (rivoceranib)" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="rivoceranib" model-id="Rivoceranib_Zuo2024_estimated_value" status="needs_review" stale="false" population="Chinese oncology patients" measured-compound="apatinib (rivoceranib)" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 2 extracted.

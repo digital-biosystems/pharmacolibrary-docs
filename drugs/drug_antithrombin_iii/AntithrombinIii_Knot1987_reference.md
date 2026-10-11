@@ -28,8 +28,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 ## Citation
 Knot EA et al., Antithrombin III: biodistribution in he…, Thrombosis and haemostasis (1987)
 
-## Model component
-<dbs-pgx drug="antithrombin III" model-id="AntithrombinIii_Knot1987_reference" status="rejected" stale="false" population="healthy volunteers" measured-compound="antithrombin_iii" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="antithrombin III" model-id="AntithrombinIii_Knot1987_reference" status="rejected" stale="false" population="healthy volunteers" measured-compound="antithrombin_iii" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

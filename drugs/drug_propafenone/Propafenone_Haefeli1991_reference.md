@@ -25,8 +25,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Haefeli WE et al., Concentration-effect relations of 5-hyd…, The American journal of car… (1991)
   ·  DOI: [10.1016/0002-9149(91)90177-m](https://doi.org/10.1016/0002-9149(91)90177-m)
 
-## Model component
-<dbs-pgx drug="propafenone" model-id="Propafenone_Haefeli1991_reference" status="rejected" stale="false" population="healthy extensive metabolizers of debrisoquine" measured-compound="5-hydroxypropafenone" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="propafenone" model-id="Propafenone_Haefeli1991_reference" status="rejected" stale="false" population="healthy extensive metabolizers of debrisoquine" measured-compound="5-hydroxypropafenone" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

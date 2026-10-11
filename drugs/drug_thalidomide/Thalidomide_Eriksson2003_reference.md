@@ -21,8 +21,7 @@
 Eriksson T et al., Pharmacokinetics of thalidomide in pati…, The Journal of pharmacy and… (2003)
   ·  DOI: [10.1211/0022357022241](https://doi.org/10.1211/0022357022241)
 
-## Model component
-<dbs-pgx drug="thalidomide" model-id="Thalidomide_Eriksson2003_reference" status="rejected" stale="false" population="patients with multiple myeloma and end-stage renal disease" measured-compound="thalidomide" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="thalidomide" model-id="Thalidomide_Eriksson2003_reference" status="rejected" stale="false" population="patients with multiple myeloma and end-stage renal disease" measured-compound="thalidomide" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

@@ -23,8 +23,7 @@
 Soback S et al., Clinical pharmacology of mecillinam in…, Journal of veterinary pharm… (1986)
   ·  DOI: [10.1111/j.1365-2885.1986.tb00059.x](https://doi.org/10.1111/j.1365-2885.1986.tb00059.x)
 
-## Model component
-<dbs-pgx drug="mecillinam" model-id="Mecillinam_Soback1986_reference" status="needs_review" stale="false" population="neonatal calves" measured-compound="mecillinam" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="mecillinam" model-id="Mecillinam_Soback1986_reference" status="needs_review" stale="false" population="neonatal calves" measured-compound="mecillinam" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 5 extracted.

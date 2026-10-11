@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the val
 Overgaard RV et al., Liraglutide 3.0 mg for Weight Managemen…, Clinical pharmacokinetics (2016)
   ·  DOI: [10.1007/s40262-016-0410-7](https://doi.org/10.1007/s40262-016-0410-7)
 
-## Model component
-<dbs-pgx drug="liraglutide" model-id="Liraglutide_Overgaard2016_trial_1" status="needs_review" stale="true" population="overweight and obese adults" measured-compound="liraglutide" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="liraglutide" model-id="Liraglutide_Overgaard2016_trial_1" status="needs_review" stale="true" population="overweight and obese adults" measured-compound="liraglutide" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 1 extracted.

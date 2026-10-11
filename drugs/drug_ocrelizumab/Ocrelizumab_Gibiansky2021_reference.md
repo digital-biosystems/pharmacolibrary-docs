@@ -20,8 +20,7 @@
 Gibiansky E et al., Ocrelizumab in relapsing and primary pr…, British journal of clinical… (2021)
   ·  DOI: [10.1111/bcp.14658](https://doi.org/10.1111/bcp.14658)
 
-## Model component
-<dbs-pgx drug="ocrelizumab" model-id="Ocrelizumab_Gibiansky2021_reference" status="rejected" stale="false" population="patients with relapsing or primary progressive multiple sclerosis" measured-compound="ocrelizumab" parameterization="mechanistic" topology="3C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="ocrelizumab" model-id="Ocrelizumab_Gibiansky2021_reference" status="rejected" stale="false" population="patients with relapsing or primary progressive multiple sclerosis" measured-compound="ocrelizumab" parameterization="mechanistic" topology="3C"></div>
 
 **Model structure:** 3-compartment; no model was built for this record.  
 **Parameters:** 6 extracted.

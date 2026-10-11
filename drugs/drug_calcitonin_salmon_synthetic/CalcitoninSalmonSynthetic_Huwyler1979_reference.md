@@ -20,8 +20,7 @@
 Huwyler R et al., Plasma kinetics and urinary excretion o…, The American journal of phy… (1979)
   ·  DOI: [10.1152/ajpendo.1979.236.1.E15](https://doi.org/10.1152/ajpendo.1979.236.1.E15)
 
-## Model component
-<dbs-pgx drug="calcitonin (salmon synthetic)" model-id="CalcitoninSalmonSynthetic_Huwyler1979_reference" status="needs_review" stale="false" population="healthy adults" measured-compound="calcitonin_salmon_synthetic" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="calcitonin (salmon synthetic)" model-id="CalcitoninSalmonSynthetic_Huwyler1979_reference" status="needs_review" stale="false" population="healthy adults" measured-compound="calcitonin_salmon_synthetic" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 2 extracted.

@@ -23,8 +23,7 @@
 Himstedt A et al., Towards a Quantitative Mechanistic Unde…, Pharmaceutics (2020)
   ·  DOI: [10.3390/pharmaceutics12050408](https://doi.org/10.3390/pharmaceutics12050408)
 
-## Model component
-<dbs-pgx drug="salmeterol" model-id="Salmeterol_Himstedt2020_salmeterol" status="extracted" stale="false" population="rats after intravenous administration" measured-compound="salmeterol" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="salmeterol" model-id="Salmeterol_Himstedt2020_salmeterol" status="extracted" stale="false" population="rats after intravenous administration" measured-compound="salmeterol" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment, oral mammillary model — template `PK_2C_enteral`.  
 **Parameters:** 8 extracted.

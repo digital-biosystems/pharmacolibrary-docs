@@ -23,8 +23,7 @@
 Jaber MM et al., Influence of Renal Function on Phosphor…, Journal of clinical pharmac… (2023)
   ·  DOI: [10.1002/jcph.2144](https://doi.org/10.1002/jcph.2144)
 
-## Model component
-<dbs-pgx drug="cyclophosphamide" model-id="Cyclophosphamide_Jaber2023_reference" status="rejected" stale="false" population="patients undergoing allogeneic hematopoietic cell transplantation" measured-compound="phosphoramide mustard" parameterization="mechanistic" topology="manual_model_class"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="cyclophosphamide" model-id="Cyclophosphamide_Jaber2023_reference" status="rejected" stale="false" population="patients undergoing allogeneic hematopoietic cell transplantation" measured-compound="phosphoramide mustard" parameterization="mechanistic" topology="manual_model_class"></div>
 
 **Model structure:** nonlinear / manual; no model was built for this record.  
 **Parameters:** 0 extracted.

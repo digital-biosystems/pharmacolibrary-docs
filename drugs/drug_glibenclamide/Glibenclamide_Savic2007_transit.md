@@ -27,8 +27,7 @@ The record lists glibenclamide parameters (kel 1.02 1/h, V 3.39 l, ka 0.27 1/h, 
 Savic RM; Jonker DM; Kerbusch T; Karlsson MO et al. (2007). Journal of pharmacokinetics and pharmacodynamics 34
   ·  DOI: [10.1007/s10928-007-9066-0](https://doi.org/10.1007/s10928-007-9066-0)
 
-## Model component
-<dbs-pgx drug="glibenclamide" model-id="Glibenclamide_Savic2007_transit" status="model_quarantined" stale="false" population="healthy volunteers" measured-compound="glibenclamide, furosemide, amiloride, moxonidine" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="glibenclamide" model-id="Glibenclamide_Savic2007_transit" status="model_quarantined" stale="false" population="healthy volunteers" measured-compound="glibenclamide, furosemide, amiloride, moxonidine" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 8 extracted.

@@ -33,8 +33,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the val
 Knych HK et al., Pharmacokinetics and selected pharmacod…, American journal of veterin… (2017)
   ·  DOI: [10.2460/ajvr.78.10.1182](https://doi.org/10.2460/ajvr.78.10.1182)
 
-## Model component
-<dbs-pgx drug="trazodone" model-id="Trazodone_Knych2017_reference" status="needs_review" stale="true" population="Thoroughbred horses in fitness training" measured-compound="trazodone" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="trazodone" model-id="Trazodone_Knych2017_reference" status="needs_review" stale="true" population="Thoroughbred horses in fitness training" measured-compound="trazodone" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 5 extracted.

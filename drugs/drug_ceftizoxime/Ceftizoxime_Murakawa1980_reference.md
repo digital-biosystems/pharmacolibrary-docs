@@ -23,8 +23,7 @@
 Murakawa T et al., Pharmacokinetics of ceftizoxime in anim…, Antimicrobial agents and ch… (1980)
   ·  DOI: [10.1128/AAC.17.2.157](https://doi.org/10.1128/AAC.17.2.157)
 
-## Model component
-<dbs-pgx drug="ceftizoxime" model-id="Ceftizoxime_Murakawa1980_reference" status="rejected" stale="false" population="animals" measured-compound="ceftizoxime" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="ceftizoxime" model-id="Ceftizoxime_Murakawa1980_reference" status="rejected" stale="false" population="animals" measured-compound="ceftizoxime" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 1 extracted.

@@ -33,8 +33,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 de La Coussaye JE et al., Pharmacokinetics of hydroxocobalamin in…, Journal of neurosurgical an… (1994)
   ·  DOI: [10.1097/00008506-199404000-00006](https://doi.org/10.1097/00008506-199404000-00006)
 
-## Model component
-<dbs-pgx drug="hydroxocobalamin" model-id="Hydroxocobalamin_de1994_reference" status="extracted" stale="true" population="conscious dogs" measured-compound="hydroxocobalamin" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="hydroxocobalamin" model-id="Hydroxocobalamin_de1994_reference" status="extracted" stale="true" population="conscious dogs" measured-compound="hydroxocobalamin" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameters:** 3 extracted.

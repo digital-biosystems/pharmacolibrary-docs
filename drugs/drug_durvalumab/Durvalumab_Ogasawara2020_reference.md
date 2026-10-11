@@ -21,8 +21,7 @@
 Ogasawara K et al., Population Pharmacokinetics of an Anti-…, Clinical pharmacokinetics (2020)
   ·  DOI: [10.1007/s40262-019-00804-x](https://doi.org/10.1007/s40262-019-00804-x)
 
-## Model component
-<dbs-pgx drug="durvalumab" model-id="Durvalumab_Ogasawara2020_reference" status="rejected" stale="false" population="patients with hematologic malignancies" measured-compound="durvalumab" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="durvalumab" model-id="Durvalumab_Ogasawara2020_reference" status="rejected" stale="false" population="patients with hematologic malignancies" measured-compound="durvalumab" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment; no model was built for this record.  
 **Parameters:** 5 extracted, plus 4 covariate effects.

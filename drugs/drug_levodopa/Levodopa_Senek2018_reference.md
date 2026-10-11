@@ -27,8 +27,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Senek M et al., Population pharmacokinetics of levodopa…, European journal of clinica… (2018)
   ·  DOI: [10.1007/s00228-018-2497-2](https://doi.org/10.1007/s00228-018-2497-2)
 
-## Model component
-<dbs-pgx drug="levodopa" model-id="Levodopa_Senek2018_reference" status="extracted" stale="false" population="healthy subjects and Parkinson&#39;s disease patients" measured-compound="levodopa" parameterization="apparent" topology="parent_metabolite"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="levodopa" model-id="Levodopa_Senek2018_reference" status="extracted" stale="false" population="healthy subjects and Parkinson&#39;s disease patients" measured-compound="levodopa" parameterization="apparent" topology="parent_metabolite"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 3 extracted.

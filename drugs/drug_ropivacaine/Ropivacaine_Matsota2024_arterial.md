@@ -21,8 +21,7 @@
 Matsota P et al., Ropivacaine pharmacokinetics in the art…, Journal of anaesthesiology,… (2024)
   ·  DOI: [10.4103/joacp.joacp_353_22](https://doi.org/10.4103/joacp.joacp_353_22)
 
-## Model component
-<dbs-pgx drug="ropivacaine" model-id="Ropivacaine_Matsota2024_arterial" status="extracted" stale="false" population="adult patients undergoing open thoracotomy" measured-compound="ropivacaine" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="ropivacaine" model-id="Ropivacaine_Matsota2024_arterial" status="extracted" stale="false" population="adult patients undergoing open thoracotomy" measured-compound="ropivacaine" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 3 extracted.

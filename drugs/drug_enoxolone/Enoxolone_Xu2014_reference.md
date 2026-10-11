@@ -24,8 +24,7 @@
 Xu R et al., A semi-physiologically based pharmacoki…, PloS one (2014)
   ·  DOI: [10.1371/journal.pone.0114049](https://doi.org/10.1371/journal.pone.0114049)
 
-## Model component
-<dbs-pgx drug="enoxolone" model-id="Enoxolone_Xu2014_reference" status="rejected" stale="false" population="virtual elderly population" measured-compound="glycyrrhetic acid (GA; enoxolone)" parameterization="mechanistic" topology="general_linear"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="enoxolone" model-id="Enoxolone_Xu2014_reference" status="rejected" stale="false" population="virtual elderly population" measured-compound="glycyrrhetic acid (GA; enoxolone)" parameterization="mechanistic" topology="general_linear"></div>
 
 **Model structure:** general linear; no model was built for this record.  
 **Parameters:** 11 extracted.

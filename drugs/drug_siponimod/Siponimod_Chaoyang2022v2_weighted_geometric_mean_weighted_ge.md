@@ -21,8 +21,7 @@
 Chaoyang C et al., Pharmacokinetic Characteristics of Sipo…, Frontiers in pharmacology (2022)
   ·  DOI: [10.3389/fphar.2022.824232](https://doi.org/10.3389/fphar.2022.824232)
 
-## Model component
-<dbs-pgx drug="siponimod" model-id="Siponimod_Chaoyang2022v2_weighted_geometric_mean_weighted_ge" status="extracted" stale="false" population="healthy volunteers and patients with multiple sclerosis" measured-compound="siponimod" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="siponimod" model-id="Siponimod_Chaoyang2022v2_weighted_geometric_mean_weighted_ge" status="extracted" stale="false" population="healthy volunteers and patients with multiple sclerosis" measured-compound="siponimod" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 3 extracted.

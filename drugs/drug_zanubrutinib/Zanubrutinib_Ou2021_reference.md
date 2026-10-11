@@ -21,8 +21,7 @@
 Ou YC et al., Population Pharmacokinetic Analysis of…, Clinical and translational… (2021)
   ·  DOI: [10.1111/cts.12948](https://doi.org/10.1111/cts.12948)
 
-## Model component
-<dbs-pgx drug="zanubrutinib" model-id="Zanubrutinib_Ou2021_reference" status="extracted" stale="false" population="healthy volunteers and patients with B-cell malignancies" measured-compound="zanubrutinib" parameterization="apparent" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="zanubrutinib" model-id="Zanubrutinib_Ou2021_reference" status="extracted" stale="false" population="healthy volunteers and patients with B-cell malignancies" measured-compound="zanubrutinib" parameterization="apparent" topology="2C"></div>
 
 **Model structure:** 2-compartment, oral mammillary model — template `PK_2C_enteral`.  
 **Parameters:** 5 extracted.

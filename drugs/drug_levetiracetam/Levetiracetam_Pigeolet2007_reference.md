@@ -21,8 +21,7 @@
 Pigeolet E et al., Population pharmacokinetics of levetira…, Clinical pharmacokinetics (2007)
   ·  DOI: [10.2165/00003088-200746060-00004](https://doi.org/10.2165/00003088-200746060-00004)
 
-## Model component
-<dbs-pgx drug="levetiracetam" model-id="Levetiracetam_Pigeolet2007_reference" status="rejected" stale="false" population="Japanese and Western adults" measured-compound="levetiracetam" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="levetiracetam" model-id="Levetiracetam_Pigeolet2007_reference" status="rejected" stale="false" population="Japanese and Western adults" measured-compound="levetiracetam" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

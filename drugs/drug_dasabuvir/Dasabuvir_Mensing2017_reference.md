@@ -29,8 +29,7 @@ No clearance, volume or rate constant of the model is reported in it. Only the a
 Mensing S et al., Population pharmacokinetics of paritapr…, British journal of clinical… (2017)
   ·  DOI: [10.1111/bcp.13138](https://doi.org/10.1111/bcp.13138)
 
-## Model component
-<dbs-pgx drug="dasabuvir" model-id="Dasabuvir_Mensing2017_reference" status="rejected" stale="true" population="adults with hepatitis C virus genotype 1 infection" measured-compound="dasabuvir" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="dasabuvir" model-id="Dasabuvir_Mensing2017_reference" status="rejected" stale="true" population="adults with hepatitis C virus genotype 1 infection" measured-compound="dasabuvir" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

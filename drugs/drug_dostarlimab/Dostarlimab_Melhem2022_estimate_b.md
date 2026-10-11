@@ -21,8 +21,7 @@
 Melhem M et al., Population pharmacokinetics and exposur…, British journal of clinical… (2022)
   ·  DOI: [10.1111/bcp.15339](https://doi.org/10.1111/bcp.15339)
 
-## Model component
-<dbs-pgx drug="dostarlimab" model-id="Dostarlimab_Melhem2022_estimate_b" status="rejected" stale="false" population="patients with advanced solid tumours" measured-compound="dostarlimab" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="dostarlimab" model-id="Dostarlimab_Melhem2022_estimate_b" status="rejected" stale="false" population="patients with advanced solid tumours" measured-compound="dostarlimab" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment; no model was built for this record.  
 **Parameters:** 5 extracted, plus 3 covariate effects.

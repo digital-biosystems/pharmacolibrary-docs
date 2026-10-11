@@ -25,8 +25,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on paramet
 Huang Z et al., An automated pipeline to generate initi… (2025)
   ·  DOI: [10.21203/rs.3.rs-5806446/v1](https://doi.org/10.21203/rs.3.rs-5806446/v1)
 
-## Model component
-<dbs-pgx drug="diazepam" model-id="Diazepam_Huang2025v2_reference" status="rejected" stale="false" population="" measured-compound="diazepam" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="diazepam" model-id="Diazepam_Huang2025v2_reference" status="rejected" stale="false" population="" measured-compound="diazepam" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 2 extracted.

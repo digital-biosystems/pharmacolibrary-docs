@@ -21,8 +21,7 @@
 Han HH et al., Population pharmacokinetics modelling t…, Frontiers in psychiatry (2025)
   ·  DOI: [10.3389/fpsyt.2025.1664678](https://doi.org/10.3389/fpsyt.2025.1664678)
 
-## Model component
-<dbs-pgx drug="zopiclone" model-id="Zopiclone_Han2025_reference" status="extracted" stale="false" population="" measured-compound="zopiclone" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="zopiclone" model-id="Zopiclone_Han2025_reference" status="extracted" stale="false" population="" measured-compound="zopiclone" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 3 extracted.

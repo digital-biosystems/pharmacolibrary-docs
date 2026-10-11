@@ -23,8 +23,7 @@
 Sano Y et al., Population Pharmacokinetic and Pharmaco…, European journal of drug me… (2023)
   ·  DOI: [10.1007/s13318-023-00818-8](https://doi.org/10.1007/s13318-023-00818-8)
 
-## Model component
-<dbs-pgx drug="tolterodine" model-id="Tolterodine_Sano2023_reference" status="extracted" stale="false" population="pediatric patients with neurogenic detrusor overactivity" measured-compound="5-hydroxymethyl tolterodine" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="tolterodine" model-id="Tolterodine_Sano2023_reference" status="extracted" stale="false" population="pediatric patients with neurogenic detrusor overactivity" measured-compound="5-hydroxymethyl tolterodine" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 5 extracted, plus 5 covariate effects.

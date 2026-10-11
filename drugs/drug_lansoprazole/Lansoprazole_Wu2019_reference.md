@@ -29,8 +29,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on paramet
 Wu L et al., Pharmacokinetic/Pharmacodynamic Evaluat…, Clinical drug investigation (2019)
   ·  DOI: [10.1007/s40261-019-00824-2](https://doi.org/10.1007/s40261-019-00824-2)
 
-## Model component
-<dbs-pgx drug="lansoprazole" model-id="Lansoprazole_Wu2019_reference" status="curated_candidate" stale="false" population="healthy Chinese adults" measured-compound="lansoprazole" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="lansoprazole" model-id="Lansoprazole_Wu2019_reference" status="curated_candidate" stale="false" population="healthy Chinese adults" measured-compound="lansoprazole" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameters:** 2 extracted.

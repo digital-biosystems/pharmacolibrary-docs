@@ -22,8 +22,7 @@
 ## Citation
 Kersten L, [Pharmacokinetics of lithium in rats of…, Acta biologica et medica Ge… (1979)
 
-## Model component
-<dbs-pgx drug="lithium" model-id="Lithium_Kersten1979_reference" status="needs_review" stale="false" population="rats aged 5 to 240 days" measured-compound="lithium" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="lithium" model-id="Lithium_Kersten1979_reference" status="needs_review" stale="false" population="rats aged 5 to 240 days" measured-compound="lithium" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 4 extracted.

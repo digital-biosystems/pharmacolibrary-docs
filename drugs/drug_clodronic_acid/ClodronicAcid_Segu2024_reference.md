@@ -22,8 +22,7 @@
 Seguí Pedrosa B et al., Detection times of clodronic acid in ho…, Journal of veterinary pharm… (2024)
   ·  DOI: [10.1111/jvp.13453](https://doi.org/10.1111/jvp.13453)
 
-## Model component
-<dbs-pgx drug="clodronic acid" model-id="ClodronicAcid_Segu2024_reference" status="rejected" stale="false" population="horses with orthopedic disease" measured-compound="clodronic acid" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="clodronic acid" model-id="ClodronicAcid_Segu2024_reference" status="rejected" stale="false" population="horses with orthopedic disease" measured-compound="clodronic acid" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

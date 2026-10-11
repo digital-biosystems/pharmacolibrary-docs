@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the val
 Zhang C et al., Drug-drug interaction of paroxetine on…, Frontiers in psychiatry (2025)
   ·  DOI: [10.3389/fpsyt.2025.1538996](https://doi.org/10.3389/fpsyt.2025.1538996)
 
-## Model component
-<dbs-pgx drug="olanzapine" model-id="Olanzapine_Zhang2025_reference" status="extracted" stale="true" population="patients with major depressive disorder" measured-compound="olanzapine" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="olanzapine" model-id="Olanzapine_Zhang2025_reference" status="extracted" stale="true" population="patients with major depressive disorder" measured-compound="olanzapine" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 3 extracted.

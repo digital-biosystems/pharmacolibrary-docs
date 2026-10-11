@@ -28,8 +28,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Penland RC et al., Evaluation of the Pharmacokinetics of D…, Journal of clinical pharmac… (2023)
   ·  DOI: [10.1002/jcph.2196](https://doi.org/10.1002/jcph.2196)
 
-## Model component
-<dbs-pgx drug="dapagliflozin" model-id="Dapagliflozin_Penland2023_reference" status="rejected" stale="false" population="adults with CKD with or without T2DM, adults with T2DM, healthy subjects, and pediatric patients with T2DM" measured-compound="dapagliflozin" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="dapagliflozin" model-id="Dapagliflozin_Penland2023_reference" status="rejected" stale="false" population="adults with CKD with or without T2DM, adults with T2DM, healthy subjects, and pediatric patients with T2DM" measured-compound="dapagliflozin" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 2 extracted.

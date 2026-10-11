@@ -21,8 +21,7 @@
 Fernández-Teruel C et al., Integrated exposure-response analysis o…, Cancer chemotherapy and pha… (2022)
   ·  DOI: [10.1007/s00280-021-04366-3](https://doi.org/10.1007/s00280-021-04366-3)
 
-## Model component
-<dbs-pgx drug="lurbinectedin" model-id="Lurbinectedin_FernndezTeruel2022_reference" status="needs_review" stale="false" population="cancer patients" measured-compound="lurbinectedin" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="lurbinectedin" model-id="Lurbinectedin_FernndezTeruel2022_reference" status="needs_review" stale="false" population="cancer patients" measured-compound="lurbinectedin" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 3 extracted.

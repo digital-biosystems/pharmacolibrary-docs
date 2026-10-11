@@ -21,8 +21,7 @@
 Tanaka R et al., Pharmacokinetic/Pharmacodynamic Analysi…, Biological & pharmaceutical… (2017)
   ·  DOI: [10.1248/bpb.b17-00008](https://doi.org/10.1248/bpb.b17-00008)
 
-## Model component
-<dbs-pgx drug="doripenem" model-id="Doripenem_Tanaka2017_based_on_ppk_model" status="extracted" stale="false" population="ICU patients" measured-compound="doripenem" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="doripenem" model-id="Doripenem_Tanaka2017_based_on_ppk_model" status="extracted" stale="false" population="ICU patients" measured-compound="doripenem" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment, IV mammillary model — template `PK_2C`.  
 **Parameters:** 4 extracted.

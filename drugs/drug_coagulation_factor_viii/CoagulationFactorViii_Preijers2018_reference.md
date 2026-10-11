@@ -32,8 +32,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Preijers T et al., Cross-evaluation of Pharmacokinetic-Gui…, Thrombosis and haemostasis (2018)
   ·  DOI: [10.1055/s-0038-1623531](https://doi.org/10.1055/s-0038-1623531)
 
-## Model component
-<dbs-pgx drug="coagulation factor VIII" model-id="CoagulationFactorViii_Preijers2018_reference" status="rejected" stale="true" population="patients with severe or moderate haemophilia A" measured-compound="FVIII" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="coagulation factor VIII" model-id="CoagulationFactorViii_Preijers2018_reference" status="rejected" stale="true" population="patients with severe or moderate haemophilia A" measured-compound="FVIII" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 1 extracted.

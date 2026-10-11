@@ -21,8 +21,7 @@
 Tong X et al., Population Pharmacokinetic and Exposure…, Journal of clinical pharmac… (2019)
   ·  DOI: [10.1002/jcph.1295](https://doi.org/10.1002/jcph.1295)
 
-## Model component
-<dbs-pgx drug="selumetinib" model-id="Selumetinib_Tong2019_reference" status="extracted" stale="false" population="patients with non-small cell lung cancer" measured-compound="selumetinib" parameterization="apparent" topology="parent_metabolite"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="selumetinib" model-id="Selumetinib_Tong2019_reference" status="extracted" stale="false" population="patients with non-small cell lung cancer" measured-compound="selumetinib" parameterization="apparent" topology="parent_metabolite"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 2 extracted.

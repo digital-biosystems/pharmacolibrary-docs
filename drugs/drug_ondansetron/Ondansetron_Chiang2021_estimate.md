@@ -25,8 +25,7 @@
 Chiang MD; Frey K; Lee C; Kharasch ED; Tallchief D; Sawyer C; et al. et al. (2021). British journal of clinical pharmacology 87
   ·  DOI: [10.1111/bcp.14412](https://doi.org/10.1111/bcp.14412)
 
-## Model component
-<dbs-pgx drug="ondansetron" model-id="Ondansetron_Chiang2021_estimate" status="curated_candidate" stale="false" population="adults undergoing elective hip or knee arthroplasty" measured-compound="ondansetron" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="ondansetron" model-id="Ondansetron_Chiang2021_estimate" status="curated_candidate" stale="false" population="adults undergoing elective hip or knee arthroplasty" measured-compound="ondansetron" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment, IV mammillary model — template `PK_2C`.  
 **Parameters:** 6 extracted.

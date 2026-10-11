@@ -21,8 +21,7 @@
 Vincent M et al., Population Pharmacokinetics of Levobupi…, Therapeutic drug monitoring (2020)
   ·  DOI: [10.1097/FTD.0000000000000702](https://doi.org/10.1097/FTD.0000000000000702)
 
-## Model component
-<dbs-pgx drug="levobupivacaine" model-id="Levobupivacaine_Vincent2020_reference" status="extracted" stale="false" population="children" measured-compound="levobupivacaine" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="levobupivacaine" model-id="Levobupivacaine_Vincent2020_reference" status="extracted" stale="false" population="children" measured-compound="levobupivacaine" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 4 extracted, plus 1 covariate effect.

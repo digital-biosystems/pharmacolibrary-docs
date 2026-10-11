@@ -29,8 +29,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on paramet
 Yin Q et al., Population pharmacokinetic modeling and…, Antimicrobial agents and ch… (2026)
   ·  DOI: [10.1128/aac.01810-25](https://doi.org/10.1128/aac.01810-25)
 
-## Model component
-<dbs-pgx drug="escherichia coli" model-id="EscherichiaColi_Yin2026_reference" status="extracted" stale="true" population="" measured-compound="escherichia_coli" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="escherichia coli" model-id="EscherichiaColi_Yin2026_reference" status="extracted" stale="true" population="" measured-compound="escherichia_coli" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameters:** 2 extracted.

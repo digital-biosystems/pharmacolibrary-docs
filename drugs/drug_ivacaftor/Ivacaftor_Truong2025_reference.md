@@ -28,8 +28,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Truong NH et al., Elexacaftor/Tezacaftor/Ivacaftor Popula…, Clinical and translational… (2025)
   ·  DOI: [10.1111/cts.70245](https://doi.org/10.1111/cts.70245)
 
-## Model component
-<dbs-pgx drug="ivacaftor" model-id="Ivacaftor_Truong2025_reference" status="model_quarantined" stale="false" population="pediatric patients with cystic fibrosis" measured-compound="elexacaftor/tezacaftor/ivacaftor" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="ivacaftor" model-id="Ivacaftor_Truong2025_reference" status="model_quarantined" stale="false" population="pediatric patients with cystic fibrosis" measured-compound="elexacaftor/tezacaftor/ivacaftor" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 5 extracted.

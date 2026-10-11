@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Klitgaard T et al., Overview of the human pharmacokinetics…, British journal of clinical… (2008)
   ·  DOI: [10.1111/j.1365-2125.2007.03030.x](https://doi.org/10.1111/j.1365-2125.2007.03030.x)
 
-## Model component
-<dbs-pgx drug="coagulation factor VIIa" model-id="CoagulationFactorViia_Klitgaard2008_japanese_patients_with_h" status="extracted" stale="true" population="healthy volunteers, haemophilia patients, liver surgery, cirrhosis, FVII deficiency, bleeding, trauma" measured-compound="recombinant activated factor VII" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="coagulation factor VIIa" model-id="CoagulationFactorViia_Klitgaard2008_japanese_patients_with_h" status="extracted" stale="true" population="healthy volunteers, haemophilia patients, liver surgery, cirrhosis, FVII deficiency, bleeding, trauma" measured-compound="recombinant activated factor VII" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameters:** 4 extracted.

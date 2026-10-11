@@ -29,8 +29,7 @@ Only the abstract was available, so reported summary statistics stand in for a f
 Aarons L, The kinetics of flurbiprofen in synovia…, Journal of pharmacokinetics… (1991)
   ·  DOI: [10.1007/BF03036250](https://doi.org/10.1007/BF03036250)
 
-## Model component
-<dbs-pgx drug="flurbiprofen" model-id="Flurbiprofen_Aarons1991_reference" status="extracted" stale="true" population="rheumatoid arthritis patients" measured-compound="flurbiprofen" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="flurbiprofen" model-id="Flurbiprofen_Aarons1991_reference" status="extracted" stale="true" population="rheumatoid arthritis patients" measured-compound="flurbiprofen" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameters:** 3 extracted.

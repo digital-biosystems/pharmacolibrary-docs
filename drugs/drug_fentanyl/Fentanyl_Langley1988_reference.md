@@ -29,8 +29,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on paramet
 Langley MS et al., Propofol. A review of its pharmacodynam…, Drugs (1988)
   ·  DOI: [10.2165/00003495-198835040-00002](https://doi.org/10.2165/00003495-198835040-00002)
 
-## Model component
-<dbs-pgx drug="fentanyl" model-id="Fentanyl_Langley1988_reference" status="needs_review" stale="false" population="patients undergoing anaesthesia" measured-compound="" parameterization="" topology=""></dbs-pgx>
+<div class="pk-model-meta" hidden drug="fentanyl" model-id="Fentanyl_Langley1988_reference" status="needs_review" stale="false" population="patients undergoing anaesthesia" measured-compound="" parameterization="" topology=""></div>
 
 **Model structure:** —; no model was built for this record.  
 **Parameters:** 0 extracted.

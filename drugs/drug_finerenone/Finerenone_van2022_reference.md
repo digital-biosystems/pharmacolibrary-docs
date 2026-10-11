@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the val
 van den Berg P et al., Finerenone Dose-Exposure-Response for t…, Clinical pharmacokinetics (2022)
   ·  DOI: [10.1007/s40262-021-01082-2](https://doi.org/10.1007/s40262-021-01082-2)
 
-## Model component
-<dbs-pgx drug="finerenone" model-id="Finerenone_van2022_reference" status="rejected" stale="true" population="patients with chronic kidney disease and type 2 diabetes" measured-compound="finerenone" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="finerenone" model-id="Finerenone_van2022_reference" status="rejected" stale="true" population="patients with chronic kidney disease and type 2 diabetes" measured-compound="finerenone" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

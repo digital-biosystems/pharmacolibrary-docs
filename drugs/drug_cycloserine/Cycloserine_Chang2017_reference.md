@@ -21,8 +21,7 @@
 Chang MJ et al., Population pharmacokinetics of moxiflox…, International journal of an… (2017)
   ·  DOI: [10.1016/j.ijantimicag.2017.01.024](https://doi.org/10.1016/j.ijantimicag.2017.01.024)
 
-## Model component
-<dbs-pgx drug="cycloserine" model-id="Cycloserine_Chang2017_reference" status="rejected" stale="false" population="patients with MDR-TB" measured-compound="cycloserine" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="cycloserine" model-id="Cycloserine_Chang2017_reference" status="rejected" stale="false" population="patients with MDR-TB" measured-compound="cycloserine" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

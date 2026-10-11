@@ -30,8 +30,7 @@ Independently confirmed by `gpt-oss:120b`.
 Jonsson EN et al., Population pharmacokinetics of tanezuma…, British journal of clinical… (2016)
   ·  DOI: [10.1111/bcp.12850](https://doi.org/10.1111/bcp.12850)
 
-## Model component
-<dbs-pgx drug="tanezumab" model-id="Tanezumab_Jonsson2016_reference" status="rejected" stale="true" population="adults with osteoarthritis" measured-compound="tanezumab" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="tanezumab" model-id="Tanezumab_Jonsson2016_reference" status="rejected" stale="true" population="adults with osteoarthritis" measured-compound="tanezumab" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment; no model was built for this record.  
 **Parameters:** 6 extracted, plus 5 covariate effects.

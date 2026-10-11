@@ -30,8 +30,7 @@ The paper reports no distribution volume and no clearance or elimination rate; i
 Zeng L et al., Population pharmacokinetics of acyclovi…, Antimicrobial agents and ch… (2009)
   ·  DOI: [10.1128/AAC.01138-08](https://doi.org/10.1128/AAC.01138-08)
 
-## Model component
-<dbs-pgx drug="valaciclovir" model-id="Valaciclovir_Zeng2009_reference" status="needs_review" stale="true" population="children and young people with malignancy" measured-compound="acyclovir" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="valaciclovir" model-id="Valaciclovir_Zeng2009_reference" status="needs_review" stale="true" population="children and young people with malignancy" measured-compound="acyclovir" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 1 extracted.

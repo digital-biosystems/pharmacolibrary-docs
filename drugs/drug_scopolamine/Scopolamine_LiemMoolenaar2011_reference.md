@@ -29,8 +29,7 @@ The model was built, but scopolamine's clearance had no value, so a library plac
 Liem-Moolenaar M et al., Pharmacokinetic-pharmacodynamic relatio…, British journal of clinical… (2011)
   ·  DOI: [10.1111/j.1365-2125.2011.03936.x](https://doi.org/10.1111/j.1365-2125.2011.03936.x)
 
-## Model component
-<dbs-pgx drug="scopolamine" model-id="Scopolamine_LiemMoolenaar2011_reference" status="needs_review" stale="true" population="healthy male subjects" measured-compound="scopolamine" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="scopolamine" model-id="Scopolamine_LiemMoolenaar2011_reference" status="needs_review" stale="true" population="healthy male subjects" measured-compound="scopolamine" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 4 extracted.

@@ -20,8 +20,7 @@
 Kuzuya T et al., Pharmacokinetic characteristics of 5-fl…, The Journal of pharmacy and… (1994)
   ·  DOI: [10.1111/j.2042-7158.1994.tb03883.x](https://doi.org/10.1111/j.2042-7158.1994.tb03883.x)
 
-## Model component
-<dbs-pgx drug="mitomycin" model-id="Mitomycin_Kuzuya1994_reference" status="rejected" stale="false" population="patients with malignancies confined to the peritoneal space" measured-compound="mitomycin C" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="mitomycin" model-id="Mitomycin_Kuzuya1994_reference" status="rejected" stale="false" population="patients with malignancies confined to the peritoneal space" measured-compound="mitomycin C" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 1 extracted.

@@ -20,8 +20,7 @@
 Conte JE, Pharmacokinetics of intravenous pentami…, The Journal of infectious d… (1991)
   ·  DOI: [10.1093/infdis/163.1.169](https://doi.org/10.1093/infdis/163.1.169)
 
-## Model component
-<dbs-pgx drug="pentamidine isethionate" model-id="PentamidineIsethionate_Conte1991_reference" status="rejected" stale="false" population="patients with normal renal function or receiving hemodialysis" measured-compound="pentamidine" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="pentamidine isethionate" model-id="PentamidineIsethionate_Conte1991_reference" status="rejected" stale="false" population="patients with normal renal function or receiving hemodialysis" measured-compound="pentamidine" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 5 extracted.

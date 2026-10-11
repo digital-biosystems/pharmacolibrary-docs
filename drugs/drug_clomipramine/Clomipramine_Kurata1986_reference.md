@@ -32,8 +32,7 @@ Independently confirmed by `gpt-oss:120b`.
 Kurata K et al., A pharmacokinetic study of clomipramine…, The Japanese journal of psy… (1986)
   ·  DOI: [10.1111/j.1440-1819.1986.tb03178.x](https://doi.org/10.1111/j.1440-1819.1986.tb03178.x)
 
-## Model component
-<dbs-pgx drug="clomipramine" model-id="Clomipramine_Kurata1986_reference" status="rejected" stale="true" population="rats after acute IV clomipramine" measured-compound="clomipramine" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="clomipramine" model-id="Clomipramine_Kurata1986_reference" status="rejected" stale="true" population="rats after acute IV clomipramine" measured-compound="clomipramine" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

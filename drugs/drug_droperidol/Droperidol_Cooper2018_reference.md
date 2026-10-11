@@ -21,8 +21,7 @@
 Cooper I et al., The pharmacokinetics of intranasal drop…, SAGE open medicine (2018)
   ·  DOI: [10.1177/2050312118813283](https://doi.org/10.1177/2050312118813283)
 
-## Model component
-<dbs-pgx drug="droperidol" model-id="Droperidol_Cooper2018_reference" status="rejected" stale="false" population="healthy volunteers" measured-compound="droperidol" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="droperidol" model-id="Droperidol_Cooper2018_reference" status="rejected" stale="false" population="healthy volunteers" measured-compound="droperidol" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment; no model was built for this record.  
 **Parameters:** 5 extracted.

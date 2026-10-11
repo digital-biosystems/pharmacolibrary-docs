@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Chen N et al., Population pharmacokinetics of polymyxi…, Annals of translational med… (2022)
   ·  DOI: [10.21037/atm-22-236](https://doi.org/10.21037/atm-22-236)
 
-## Model component
-<dbs-pgx drug="polymyxin B" model-id="PolymyxinB_Chen2022_reference" status="extracted" stale="true" population="adults with severe infections" measured-compound="polymyxin_b" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="polymyxin B" model-id="PolymyxinB_Chen2022_reference" status="extracted" stale="true" population="adults with severe infections" measured-compound="polymyxin_b" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment, IV mammillary model — template `PK_2C`.  
 **Parameters:** 3 extracted.

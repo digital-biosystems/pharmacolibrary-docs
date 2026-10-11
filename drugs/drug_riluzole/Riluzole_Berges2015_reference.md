@@ -21,8 +21,7 @@
 Berges A et al., Ozanezumab dose selection for amyotroph…, PloS one (2015)
   ·  DOI: [10.1371/journal.pone.0117355](https://doi.org/10.1371/journal.pone.0117355)
 
-## Model component
-<dbs-pgx drug="riluzole" model-id="Riluzole_Berges2015_reference" status="extracted" stale="false" population="" measured-compound="riluzole" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="riluzole" model-id="Riluzole_Berges2015_reference" status="extracted" stale="false" population="" measured-compound="riluzole" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameters:** 2 extracted.

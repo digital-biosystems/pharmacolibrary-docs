@@ -20,8 +20,7 @@
 Wissing H et al., Pharmacokinetics of inhaled anaesthetic…, British journal of anaesthe… (2000)
   ·  DOI: [10.1093/oxfordjournals.bja.a013467](https://doi.org/10.1093/oxfordjournals.bja.a013467)
 
-## Model component
-<dbs-pgx drug="desflurane" model-id="Desflurane_Wissing2000_reference" status="rejected" stale="false" population="patients undergoing maxillofacial surgery" measured-compound="desflurane" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="desflurane" model-id="Desflurane_Wissing2000_reference" status="rejected" stale="false" population="patients undergoing maxillofacial surgery" measured-compound="desflurane" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 2 extracted.

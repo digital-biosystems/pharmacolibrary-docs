@@ -21,8 +21,7 @@
 Oliveira GM et al., Metabolites (2022)
   ·  DOI: [10.3390/metabo12111106](https://doi.org/10.3390/metabo12111106)
 
-## Model component
-<dbs-pgx drug="naproxen" model-id="Naproxen_Oliveira2022v2_reference" status="extracted" stale="false" population="CYP2C9 genotyped volunteers" measured-compound="naproxen" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="naproxen" model-id="Naproxen_Oliveira2022v2_reference" status="extracted" stale="false" population="CYP2C9 genotyped volunteers" measured-compound="naproxen" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 2 extracted.

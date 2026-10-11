@@ -30,8 +30,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the val
 Saleh S et al., Tolerability and kinetics of intravenou…, International clinical psyc… (1990)
   ·  DOI: [10.1097/00004850-199004000-00003](https://doi.org/10.1097/00004850-199004000-00003)
 
-## Model component
-<dbs-pgx drug="medifoxamine" model-id="Medifoxamine_Saleh1990_reference" status="rejected" stale="true" population="healthy adults" measured-compound="medifoxamine" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="medifoxamine" model-id="Medifoxamine_Saleh1990_reference" status="rejected" stale="true" population="healthy adults" measured-compound="medifoxamine" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 4 extracted.

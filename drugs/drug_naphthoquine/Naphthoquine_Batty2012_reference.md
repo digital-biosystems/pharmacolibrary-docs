@@ -22,8 +22,7 @@
 Batty KT et al., Artemisinin-naphthoquine combination th…, Antimicrobial agents and ch… (2012)
   ·  DOI: [10.1128/AAC.06250-11](https://doi.org/10.1128/AAC.06250-11)
 
-## Model component
-<dbs-pgx drug="Naphthoquine" model-id="Naphthoquine_Batty2012_reference" status="needs_review" stale="false" population="Papua New Guinea children with uncomplicated malaria" measured-compound="naphthoquine" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="Naphthoquine" model-id="Naphthoquine_Batty2012_reference" status="needs_review" stale="false" population="Papua New Guinea children with uncomplicated malaria" measured-compound="naphthoquine" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 7 extracted.

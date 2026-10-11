@@ -29,8 +29,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Siao KT et al., Pharmacokinetics of amantadine in cats, Journal of veterinary pharm… (2011)
   ·  DOI: [10.1111/j.1365-2885.2011.01278.x](https://doi.org/10.1111/j.1365-2885.2011.01278.x)
 
-## Model component
-<dbs-pgx drug="amantadine" model-id="Amantadine_Siao2011_reference" status="rejected" stale="false" population="healthy adult domestic shorthair cats" measured-compound="amantadine" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="amantadine" model-id="Amantadine_Siao2011_reference" status="rejected" stale="false" population="healthy adult domestic shorthair cats" measured-compound="amantadine" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 6 extracted.

@@ -33,8 +33,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Carlsson Petri KC et al., Semaglutide s.c. Once-Weekly in Type 2…, Diabetes therapy : research… (2018)
   ·  DOI: [10.1007/s13300-018-0458-5](https://doi.org/10.1007/s13300-018-0458-5)
 
-## Model component
-<dbs-pgx drug="semaglutide" model-id="Semaglutide_Carlsson2018_full" status="extracted" stale="true" population="adults with type 2 diabetes" measured-compound="semaglutide" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="semaglutide" model-id="Semaglutide_Carlsson2018_full" status="extracted" stale="true" population="adults with type 2 diabetes" measured-compound="semaglutide" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 3 extracted, plus 13 covariate effects.

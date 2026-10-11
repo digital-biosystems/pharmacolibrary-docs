@@ -25,8 +25,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Fu C et al., Population Pharmacokinetic Modelling fo…, Drug design, development an… (2022)
   ·  DOI: [10.2147/DDDT.S362607](https://doi.org/10.2147/DDDT.S362607)
 
-## Model component
-<dbs-pgx drug="nifedipine" model-id="Nifedipine_Fu2022_reference" status="extracted" stale="false" population="patients with chronic kidney disease" measured-compound="nifedipine" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="nifedipine" model-id="Nifedipine_Fu2022_reference" status="extracted" stale="false" population="patients with chronic kidney disease" measured-compound="nifedipine" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameters:** 3 extracted.

@@ -21,8 +21,7 @@
 Salem AH et al., Population pharmacokinetic modeling of…, Clinical pharmacokinetics (2014)
   ·  DOI: [10.1007/s40262-013-0130-1](https://doi.org/10.1007/s40262-013-0130-1)
 
-## Model component
-<dbs-pgx drug="veliparib" model-id="Veliparib_Salem2014_reference" status="extracted" stale="false" population="patients with non-hematologic malignancies" measured-compound="veliparib" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="veliparib" model-id="Veliparib_Salem2014_reference" status="extracted" stale="false" population="patients with non-hematologic malignancies" measured-compound="veliparib" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 2 extracted.

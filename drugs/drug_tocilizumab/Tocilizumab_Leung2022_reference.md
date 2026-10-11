@@ -20,8 +20,7 @@
 Leung E et al., Pharmacokinetic/Pharmacodynamic Conside…, Clinical pharmacokinetics (2022)
   ·  DOI: [10.1007/s40262-021-01092-0](https://doi.org/10.1007/s40262-021-01092-0)
 
-## Model component
-<dbs-pgx drug="tocilizumab" model-id="Tocilizumab_Leung2022_reference" status="rejected" stale="false" population="adults with COVID-19" measured-compound="tocilizumab" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="tocilizumab" model-id="Tocilizumab_Leung2022_reference" status="rejected" stale="false" population="adults with COVID-19" measured-compound="tocilizumab" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

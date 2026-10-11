@@ -21,8 +21,7 @@
 Nguyen A et al., Longitudinal Impact of Acute Spinal Cor…, Journal of clinical pharmac… (2021)
   ·  DOI: [10.1002/jcph.1876](https://doi.org/10.1002/jcph.1876)
 
-## Model component
-<dbs-pgx drug="riluzole" model-id="Riluzole_Nguyen2021_reference" status="extracted" stale="false" population="adults with acute spinal cord injury" measured-compound="riluzole" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="riluzole" model-id="Riluzole_Nguyen2021_reference" status="extracted" stale="false" population="adults with acute spinal cord injury" measured-compound="riluzole" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 3 extracted.

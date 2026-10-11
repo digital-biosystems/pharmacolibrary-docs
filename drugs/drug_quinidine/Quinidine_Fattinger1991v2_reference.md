@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Fattinger K et al., Population pharmacokinetics of quinidine, British journal of clinical… (1991)
   ·  DOI: [10.1111/j.1365-2125.1991.tb05531.x](https://doi.org/10.1111/j.1365-2125.1991.tb05531.x)
 
-## Model component
-<dbs-pgx drug="quinidine" model-id="Quinidine_Fattinger1991v2_reference" status="needs_review" stale="true" population="patients with arrhythmias" measured-compound="quinidine" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="quinidine" model-id="Quinidine_Fattinger1991v2_reference" status="needs_review" stale="true" population="patients with arrhythmias" measured-compound="quinidine" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment; no model was built for this record.  
 **Parameters:** 6 extracted, plus 1 covariate effect.

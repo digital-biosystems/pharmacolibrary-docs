@@ -20,8 +20,7 @@
 Rowell FJ et al., Pharmacokinetics of intravenous and ora…, European journal of clinica… (1983)
   ·  DOI: [10.1007/BF01037958](https://doi.org/10.1007/BF01037958)
 
-## Model component
-<dbs-pgx drug="dihydrocodeine" model-id="Dihydrocodeine_Rowell1983_reference" status="rejected" stale="false" population="healthy volunteers and patients" measured-compound="dihydrocodeine" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="dihydrocodeine" model-id="Dihydrocodeine_Rowell1983_reference" status="rejected" stale="false" population="healthy volunteers and patients" measured-compound="dihydrocodeine" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

@@ -27,8 +27,7 @@
 Schaedeli Stark F et al., A population pharmacokinetics model of…, Journal of pharmacokinetics… (2024)
   ·  DOI: [10.1007/s10928-023-09898-0](https://doi.org/10.1007/s10928-023-09898-0)
 
-## Model component
-<dbs-pgx drug="Arginine" model-id="Arginine_Schaedeli2024_reference" status="extracted" stale="true" population="" measured-compound="" parameterization="" topology=""></dbs-pgx>
+<div class="pk-model-meta" hidden drug="Arginine" model-id="Arginine_Schaedeli2024_reference" status="extracted" stale="true" population="" measured-compound="" parameterization="" topology=""></div>
 
 **Model structure:** —; no model was built for this record.  
 **Parameters:** 0 extracted.

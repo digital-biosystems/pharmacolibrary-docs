@@ -22,8 +22,7 @@
 Wang YJ et al., Formulation, preparation and evaluation…, The Journal of pharmacy and… (2007)
   ·  DOI: [10.1211/jpp.59.3.0003](https://doi.org/10.1211/jpp.59.3.0003)
 
-## Model component
-<dbs-pgx drug="flunarizine" model-id="Flunarizine_Wang2007_reference" status="rejected" stale="false" population="rats" measured-compound="flunarizine" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="flunarizine" model-id="Flunarizine_Wang2007_reference" status="rejected" stale="false" population="rats" measured-compound="flunarizine" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 3 extracted.

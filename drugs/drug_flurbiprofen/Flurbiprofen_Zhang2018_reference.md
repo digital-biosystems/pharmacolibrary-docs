@@ -33,8 +33,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the val
 Zhang J et al., Population pharmacokinetic modeling of…, Journal of pain research (2018)
   ·  DOI: [10.2147/JPR.S176475](https://doi.org/10.2147/JPR.S176475)
 
-## Model component
-<dbs-pgx drug="flurbiprofen" model-id="Flurbiprofen_Zhang2018_reference" status="rejected" stale="true" population="Chinese patients with postoperative pain" measured-compound="flurbiprofen" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="flurbiprofen" model-id="Flurbiprofen_Zhang2018_reference" status="rejected" stale="true" population="Chinese patients with postoperative pain" measured-compound="flurbiprofen" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 3 extracted.

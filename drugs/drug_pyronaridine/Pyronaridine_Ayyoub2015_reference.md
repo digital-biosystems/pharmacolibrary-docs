@@ -23,8 +23,7 @@
 Ayyoub A et al., Population Pharmacokinetics of Pyronari…, Antimicrobial agents and ch… (2015)
   ·  DOI: [10.1128/AAC.02004-15](https://doi.org/10.1128/AAC.02004-15)
 
-## Model component
-<dbs-pgx drug="Pyronaridine" model-id="Pyronaridine_Ayyoub2015_reference" status="extracted" stale="false" population="pediatric malaria patients younger than 16 years with uncomplicated malaria" measured-compound="pyronaridine" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="Pyronaridine" model-id="Pyronaridine_Ayyoub2015_reference" status="extracted" stale="false" population="pediatric malaria patients younger than 16 years with uncomplicated malaria" measured-compound="pyronaridine" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 6 extracted, plus 2 covariate effects.

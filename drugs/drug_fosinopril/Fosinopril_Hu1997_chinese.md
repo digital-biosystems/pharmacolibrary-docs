@@ -30,8 +30,7 @@ Independently confirmed by `gpt-oss:120b`.
 Hu OY et al., Pharmacokinetics of fosinoprilat in Chi…, Journal of clinical pharmac… (1997)
   ·  DOI: [10.1002/j.1552-4604.1997.tb05632.x](https://doi.org/10.1002/j.1552-4604.1997.tb05632.x)
 
-## Model component
-<dbs-pgx drug="fosinopril" model-id="Fosinopril_Hu1997_chinese" status="rejected" stale="true" population="healthy Chinese and white men" measured-compound="fosinoprilat" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="fosinopril" model-id="Fosinopril_Hu1997_chinese" status="rejected" stale="true" population="healthy Chinese and white men" measured-compound="fosinoprilat" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 11 extracted.

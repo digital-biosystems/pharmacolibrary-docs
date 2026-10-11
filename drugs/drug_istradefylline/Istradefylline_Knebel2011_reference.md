@@ -20,8 +20,7 @@
 Knebel W et al., Population pharmacokinetic analysis of…, Journal of clinical pharmac… (2011)
   ·  DOI: [10.1177/0091270010363809](https://doi.org/10.1177/0091270010363809)
 
-## Model component
-<dbs-pgx drug="istradefylline" model-id="Istradefylline_Knebel2011_reference" status="rejected" stale="false" population="healthy subjects and patients with Parkinson&#39;s disease" measured-compound="istradefylline" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="istradefylline" model-id="Istradefylline_Knebel2011_reference" status="rejected" stale="false" population="healthy subjects and patients with Parkinson&#39;s disease" measured-compound="istradefylline" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 6 extracted.

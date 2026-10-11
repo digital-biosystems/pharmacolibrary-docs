@@ -20,8 +20,7 @@
 Beliveau M et al., Population pharmacokinetics of tenofovi…, Scientific reports (2026)
   ·  DOI: [10.1038/s41598-026-48746-2](https://doi.org/10.1038/s41598-026-48746-2)
 
-## Model component
-<dbs-pgx drug="tenofovir alafenamide" model-id="TenofovirAlafenamide_Beliveau2026_estimate" status="rejected" stale="false" population="South African women in HIV PrEP trial" measured-compound="tenofovir alafenamide" parameterization="apparent" topology="general_linear"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="tenofovir alafenamide" model-id="TenofovirAlafenamide_Beliveau2026_estimate" status="rejected" stale="false" population="South African women in HIV PrEP trial" measured-compound="tenofovir alafenamide" parameterization="apparent" topology="general_linear"></div>
 
 **Model structure:** general linear; no model was built for this record.  
 **Parameters:** 5 extracted.

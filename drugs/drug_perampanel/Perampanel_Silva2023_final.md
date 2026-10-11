@@ -21,8 +21,7 @@
 Silva R et al., Population Pharmacokinetic Analysis of…, Pharmaceutics (2023)
   ·  DOI: [10.3390/pharmaceutics15061704](https://doi.org/10.3390/pharmaceutics15061704)
 
-## Model component
-<dbs-pgx drug="perampanel" model-id="Perampanel_Silva2023_final" status="extracted" stale="false" population="adults with refractory epilepsy" measured-compound="perampanel" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="perampanel" model-id="Perampanel_Silva2023_final" status="extracted" stale="false" population="adults with refractory epilepsy" measured-compound="perampanel" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameters:** 2 extracted.

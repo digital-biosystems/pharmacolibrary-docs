@@ -30,8 +30,7 @@ Independently confirmed by `gpt-oss:120b`.
 Sheng YC et al., Effect of CYP2C19 genotypes on the phar…, European journal of clinica… (2010)
   ·  DOI: [10.1007/s00228-010-0892-4](https://doi.org/10.1007/s00228-010-0892-4)
 
-## Model component
-<dbs-pgx drug="rabeprazole" model-id="Rabeprazole_Sheng2010_reference" status="rejected" stale="true" population="healthy Chinese adults" measured-compound="rabeprazole" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="rabeprazole" model-id="Rabeprazole_Sheng2010_reference" status="rejected" stale="true" population="healthy Chinese adults" measured-compound="rabeprazole" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

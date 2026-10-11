@@ -21,8 +21,7 @@
 Ouellet D et al., Population pharmacokinetics and exposur…, Cancer chemotherapy and pha… (2016)
   ·  DOI: [10.1007/s00280-016-2993-y](https://doi.org/10.1007/s00280-016-2993-y)
 
-## Model component
-<dbs-pgx drug="trametinib" model-id="Trametinib_Ouellet2016_reference" status="needs_review" stale="false" population="patients with BRAF V600 mutation-positive metastatic melanoma" measured-compound="trametinib" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="trametinib" model-id="Trametinib_Ouellet2016_reference" status="needs_review" stale="false" population="patients with BRAF V600 mutation-positive metastatic melanoma" measured-compound="trametinib" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 1 extracted.

@@ -23,8 +23,7 @@
 ## Citation
 Vereczkey L et al., Pharmacokinetics of apovincaminic acid…, Polish journal of pharmacol… (1987)
 
-## Model component
-<dbs-pgx drug="vinpocetine" model-id="Vinpocetine_Vereczkey1987_reference" status="needs_review" stale="false" population="dogs" measured-compound="apovincaminic acid" parameterization="apparent" topology="parent_metabolite"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="vinpocetine" model-id="Vinpocetine_Vereczkey1987_reference" status="needs_review" stale="false" population="dogs" measured-compound="apovincaminic acid" parameterization="apparent" topology="parent_metabolite"></div>
 
 **Model structure:** parent + metabolite; no model was built for this record.  
 **Parameters:** 3 extracted.

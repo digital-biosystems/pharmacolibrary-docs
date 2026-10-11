@@ -33,8 +33,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on how the
 Siao KT et al., Pharmacokinetics of gabapentin in cats, American journal of veterin… (2010)
   ·  DOI: [10.2460/ajvr.71.7.817](https://doi.org/10.2460/ajvr.71.7.817)
 
-## Model component
-<dbs-pgx drug="gabapentin" model-id="Gabapentin_Siao2010_reference" status="extracted" stale="true" population="healthy adult female cats" measured-compound="gabapentin" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="gabapentin" model-id="Gabapentin_Siao2010_reference" status="extracted" stale="true" population="healthy adult female cats" measured-compound="gabapentin" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 7 extracted.

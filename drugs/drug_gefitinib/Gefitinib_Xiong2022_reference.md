@@ -21,8 +21,7 @@
 Xiong W et al., Population pharmacokinetic analysis of…, Cancer chemotherapy and pha… (2022)
   ·  DOI: [10.1007/s00280-022-04423-5](https://doi.org/10.1007/s00280-022-04423-5)
 
-## Model component
-<dbs-pgx drug="gefitinib" model-id="Gefitinib_Xiong2022_reference" status="extracted" stale="false" population="" measured-compound="gefitinib" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="gefitinib" model-id="Gefitinib_Xiong2022_reference" status="extracted" stale="false" population="" measured-compound="gefitinib" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 2 extracted.

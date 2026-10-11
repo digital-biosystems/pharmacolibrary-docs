@@ -21,8 +21,7 @@
 Antón J et al., PReS-FINAL-2330: Canakinumab treatment…, Pediatric rheumatology onli… (2013)
   ·  DOI: [10.1186/1546-0096-11-s2-p320](https://doi.org/10.1186/1546-0096-11-s2-p320)
 
-## Model component
-<dbs-pgx drug="canakinumab" model-id="Canakinumab_Antn2013_reference" status="needs_review" stale="false" population="patients with HIDS" measured-compound="canakinumab" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="canakinumab" model-id="Canakinumab_Antn2013_reference" status="needs_review" stale="false" population="patients with HIDS" measured-compound="canakinumab" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 3 extracted.

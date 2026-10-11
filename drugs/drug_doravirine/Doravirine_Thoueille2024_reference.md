@@ -31,8 +31,7 @@ The record lacks explicit estimates for bioavailability and lag time, forcing th
 Thoueille P et al., Population pharmacokinetic analysis of…, British journal of clinical… (2024)
   ·  DOI: [10.1111/bcp.15975](https://doi.org/10.1111/bcp.15975)
 
-## Model component
-<dbs-pgx drug="doravirine" model-id="Doravirine_Thoueille2024_reference" status="extracted" stale="true" population="real-world people with HIV" measured-compound="doravirine" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="doravirine" model-id="Doravirine_Thoueille2024_reference" status="extracted" stale="true" population="real-world people with HIV" measured-compound="doravirine" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 3 extracted, plus 1 covariate effect.

@@ -22,8 +22,7 @@
 Zingmark PH et al., Population pharmacokinetics of clomethi…, British journal of clinical… (2003)
   ·  DOI: [10.1046/j.0306-5251.2003.01850.x](https://doi.org/10.1046/j.0306-5251.2003.01850.x)
 
-## Model component
-<dbs-pgx drug="clomethiazole" model-id="Clomethiazole_Zingmark2003_reference" status="rejected" stale="false" population="acute stroke patients" measured-compound="clomethiazole" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="clomethiazole" model-id="Clomethiazole_Zingmark2003_reference" status="rejected" stale="false" population="acute stroke patients" measured-compound="clomethiazole" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

@@ -29,8 +29,7 @@ A model needs both clearance and volume; without the volume it could only be bui
 Li Q et al., Pharmacokinetics, safety, and populatio…, Frontiers in pharmacology (2026)
   ·  DOI: [10.3389/fphar.2026.1833170](https://doi.org/10.3389/fphar.2026.1833170)
 
-## Model component
-<dbs-pgx drug="rolapitant" model-id="Rolapitant_Li2026_moderate_hepatic_impairment" status="needs_review" stale="false" population="Chinese subjects with impaired or normal liver function" measured-compound="rolapitant" parameterization="apparent" topology="parent_metabolite"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="rolapitant" model-id="Rolapitant_Li2026_moderate_hepatic_impairment" status="needs_review" stale="false" population="Chinese subjects with impaired or normal liver function" measured-compound="rolapitant" parameterization="apparent" topology="parent_metabolite"></div>
 
 **Model structure:** parent + metabolite; no model was built for this record.  
 **Parameters:** 5 extracted.

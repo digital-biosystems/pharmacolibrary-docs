@@ -20,8 +20,7 @@
 Rochdi M et al., Pharmacokinetics and absolute bioavaila…, European journal of clinica… (1994)
   ·  DOI: [10.1007/BF00194404](https://doi.org/10.1007/BF00194404)
 
-## Model component
-<dbs-pgx drug="colchicine" model-id="Colchicine_Rochdi1994_reference" status="rejected" stale="false" population="healthy adult males and elderly females" measured-compound="colchicine" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="colchicine" model-id="Colchicine_Rochdi1994_reference" status="rejected" stale="false" population="healthy adult males and elderly females" measured-compound="colchicine" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 7 extracted.

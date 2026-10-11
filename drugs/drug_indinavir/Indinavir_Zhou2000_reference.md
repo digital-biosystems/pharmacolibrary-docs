@@ -21,8 +21,7 @@
 Zhou XJ et al., Plasma population pharmacokinetics and…, AIDS (London, England) (2000)
   ·  DOI: [10.1097/00002030-200012220-00008](https://doi.org/10.1097/00002030-200012220-00008)
 
-## Model component
-<dbs-pgx drug="indinavir" model-id="Indinavir_Zhou2000_reference" status="rejected" stale="false" population="HIV-1-infected adults" measured-compound="indinavir" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="indinavir" model-id="Indinavir_Zhou2000_reference" status="rejected" stale="false" population="HIV-1-infected adults" measured-compound="indinavir" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 8 extracted.

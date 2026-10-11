@@ -21,8 +21,7 @@
 Hirabatake M et al., Everolimus pharmacokinetics and exposur…, Frontiers in pharmacology (2022)
   ·  DOI: [10.3389/fphar.2022.984002](https://doi.org/10.3389/fphar.2022.984002)
 
-## Model component
-<dbs-pgx drug="everolimus" model-id="Everolimus_Hirabatake2022_reference" status="extracted" stale="false" population="Japanese patients with advanced breast cancer" measured-compound="everolimus" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="everolimus" model-id="Everolimus_Hirabatake2022_reference" status="extracted" stale="false" population="Japanese patients with advanced breast cancer" measured-compound="everolimus" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment, IV mammillary model — template `PK_2C`.  
 **Parameters:** 4 extracted.

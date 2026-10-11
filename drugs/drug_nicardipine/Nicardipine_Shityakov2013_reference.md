@@ -27,8 +27,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the lin
 Shityakov S et al., Pharmacokinetic delivery and metabolizi…, TheScientificWorldJournal (2013)
   ·  DOI: [10.1155/2013/131358](https://doi.org/10.1155/2013/131358)
 
-## Model component
-<dbs-pgx drug="nicardipine" model-id="Nicardipine_Shityakov2013_reference" status="rejected" stale="false" population="rabbits" measured-compound="nicardipine" parameterization="mechanistic" topology="parent_metabolite"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="nicardipine" model-id="Nicardipine_Shityakov2013_reference" status="rejected" stale="false" population="rabbits" measured-compound="nicardipine" parameterization="mechanistic" topology="parent_metabolite"></div>
 
 **Model structure:** parent + metabolite; no model was built for this record.  
 **Parameters:** 0 extracted.

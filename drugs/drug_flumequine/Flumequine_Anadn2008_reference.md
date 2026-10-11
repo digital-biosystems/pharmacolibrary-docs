@@ -23,8 +23,7 @@
 Anadón A et al., Oral bioavailability, tissue distributi…, Food and chemical toxicolog… (2008)
   ·  DOI: [10.1016/j.fct.2007.09.086](https://doi.org/10.1016/j.fct.2007.09.086)
 
-## Model component
-<dbs-pgx drug="flumequine" model-id="Flumequine_Anadn2008_reference" status="rejected" stale="false" population="chickens for fattening" measured-compound="flumequine" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="flumequine" model-id="Flumequine_Anadn2008_reference" status="rejected" stale="false" population="chickens for fattening" measured-compound="flumequine" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 3 extracted.

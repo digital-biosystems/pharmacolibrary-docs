@@ -23,8 +23,7 @@
 Fukushi R et al., Population Pharmacokinetics Analysis of…, Clinical therapeutics (2020)
   ·  DOI: [10.1016/j.clinthera.2020.04.006](https://doi.org/10.1016/j.clinthera.2020.04.006)
 
-## Model component
-<dbs-pgx drug="quetiapine" model-id="Quetiapine_Fukushi2020_reference" status="extracted" stale="false" population="Japanese patients with bipolar depression" measured-compound="quetiapine" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="quetiapine" model-id="Quetiapine_Fukushi2020_reference" status="extracted" stale="false" population="Japanese patients with bipolar depression" measured-compound="quetiapine" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 3 extracted.

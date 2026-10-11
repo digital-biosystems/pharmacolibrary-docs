@@ -30,8 +30,7 @@ Independently confirmed by `gpt-oss:120b`.
 Zhang DM et al., Population pharmacokinetics and pharmac…, Acta pharmacologica Sinica (2012)
   ·  DOI: [10.1038/aps.2012.37](https://doi.org/10.1038/aps.2012.37)
 
-## Model component
-<dbs-pgx drug="bivalirudin" model-id="Bivalirudin_Zhang2012_reference" status="rejected" stale="true" population="young healthy Chinese volunteers" measured-compound="bivalirudin" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="bivalirudin" model-id="Bivalirudin_Zhang2012_reference" status="rejected" stale="true" population="young healthy Chinese volunteers" measured-compound="bivalirudin" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment; no model was built for this record.  
 **Parameters:** 4 extracted.

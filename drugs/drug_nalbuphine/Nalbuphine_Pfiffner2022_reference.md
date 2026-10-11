@@ -29,8 +29,7 @@ Simulated as the paper dosed it, the model's terminal half-life differs from the
 Pfiffner M et al., Pharmacometric Analysis of Intranasal a…, Frontiers in pediatrics (2022)
   ·  DOI: [10.3389/fped.2022.837492](https://doi.org/10.3389/fped.2022.837492)
 
-## Model component
-<dbs-pgx drug="nalbuphine" model-id="Nalbuphine_Pfiffner2022_reference" status="needs_review" stale="true" population="infants 1–3 months old" measured-compound="nalbuphine" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="nalbuphine" model-id="Nalbuphine_Pfiffner2022_reference" status="needs_review" stale="true" population="infants 1–3 months old" measured-compound="nalbuphine" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 4 extracted, plus 3 covariate effects.

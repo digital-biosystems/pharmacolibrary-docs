@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the lin
 Narwal R et al., Development of a population pharmacokin…, Clinical pharmacokinetics (2010)
   ·  DOI: [10.2165/11535980-000000000-00000](https://doi.org/10.2165/11535980-000000000-00000)
 
-## Model component
-<dbs-pgx drug="atorvastatin" model-id="Atorvastatin_Narwal2010_reference" status="rejected" stale="false" population="adults with atorvastatin-induced myopathy and healthy controls" measured-compound="atorvastatin acid" parameterization="mechanistic" topology="general_linear"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="atorvastatin" model-id="Atorvastatin_Narwal2010_reference" status="rejected" stale="false" population="adults with atorvastatin-induced myopathy and healthy controls" measured-compound="atorvastatin acid" parameterization="mechanistic" topology="general_linear"></div>
 
 **Model structure:** general linear; no model was built for this record.  
 **Parameters:** 0 extracted.

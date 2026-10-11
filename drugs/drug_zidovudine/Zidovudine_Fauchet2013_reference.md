@@ -21,8 +21,7 @@
 Fauchet F et al., Population pharmacokinetics study of re…, Antimicrobial agents and ch… (2013)
   ·  DOI: [10.1128/AAC.00911-13](https://doi.org/10.1128/AAC.00911-13)
 
-## Model component
-<dbs-pgx drug="zidovudine" model-id="Zidovudine_Fauchet2013_reference" status="extracted" stale="false" population="HIV-1-infected children" measured-compound="zidovudine" parameterization="apparent" topology="parent_metabolite"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="zidovudine" model-id="Zidovudine_Fauchet2013_reference" status="extracted" stale="false" population="HIV-1-infected children" measured-compound="zidovudine" parameterization="apparent" topology="parent_metabolite"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 5 extracted.

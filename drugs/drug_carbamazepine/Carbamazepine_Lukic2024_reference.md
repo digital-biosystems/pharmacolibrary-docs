@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which m
 Lukic V et al., Population toxicokinetics of carbamazep…, Expert opinion on drug meta… (2024)
   ·  DOI: [10.1080/17425255.2024.2381555](https://doi.org/10.1080/17425255.2024.2381555)
 
-## Model component
-<dbs-pgx drug="carbamazepine" model-id="Carbamazepine_Lukic2024_reference" status="rejected" stale="false" population="adults with carbamazepine self-poisoning" measured-compound="carbamazepine and carbamazepine-10,11-epoxide" parameterization="mechanistic" topology="parent_metabolite"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="carbamazepine" model-id="Carbamazepine_Lukic2024_reference" status="rejected" stale="false" population="adults with carbamazepine self-poisoning" measured-compound="carbamazepine and carbamazepine-10,11-epoxide" parameterization="mechanistic" topology="parent_metabolite"></div>
 
 **Model structure:** parent + metabolite; no model was built for this record.  
 **Parameters:** 0 extracted.

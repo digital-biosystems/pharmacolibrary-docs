@@ -23,8 +23,7 @@
 Ho ST et al., Determination of nalbuphine by high-per…, Journal of chromatography.… (1996)
   ·  DOI: [10.1016/0378-4347(95)00477-7](https://doi.org/10.1016/0378-4347(95)00477-7)
 
-## Model component
-<dbs-pgx drug="nalbuphine" model-id="Nalbuphine_Ho1996_reference" status="rejected" stale="false" population="surgical patients and rabbits" measured-compound="nalbuphine" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="nalbuphine" model-id="Nalbuphine_Ho1996_reference" status="rejected" stale="false" population="surgical patients and rabbits" measured-compound="nalbuphine" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

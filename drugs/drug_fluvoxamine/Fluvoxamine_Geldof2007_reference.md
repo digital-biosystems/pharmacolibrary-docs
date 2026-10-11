@@ -33,8 +33,7 @@ Independently confirmed by `gpt-oss:120b`.
 Geldof M et al., Pharmacokinetic-pharmacodynamic modelin…, European journal of pharmac… (2007)
   ·  DOI: [10.1016/j.ejps.2007.07.004](https://doi.org/10.1016/j.ejps.2007.07.004)
 
-## Model component
-<dbs-pgx drug="fluvoxamine" model-id="Fluvoxamine_Geldof2007_reference" status="rejected" stale="true" population="rats" measured-compound="fluvoxamine" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="fluvoxamine" model-id="Fluvoxamine_Geldof2007_reference" status="rejected" stale="true" population="rats" measured-compound="fluvoxamine" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

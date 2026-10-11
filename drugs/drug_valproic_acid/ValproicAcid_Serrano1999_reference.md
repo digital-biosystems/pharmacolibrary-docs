@@ -21,8 +21,7 @@
 Serrano BB et al., Valproate population pharmacokinetics i…, Journal of clinical pharmac… (1999)
   ·  DOI: [10.1046/j.1365-2710.1999.00202.x](https://doi.org/10.1046/j.1365-2710.1999.00202.x)
 
-## Model component
-<dbs-pgx drug="valproic acid" model-id="ValproicAcid_Serrano1999_reference" status="rejected" stale="false" population="children with epilepsy" measured-compound="valproic_acid" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="valproic acid" model-id="ValproicAcid_Serrano1999_reference" status="rejected" stale="false" population="children with epilepsy" measured-compound="valproic_acid" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

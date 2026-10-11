@@ -32,8 +32,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Xue Y et al., High-performance liquid chromatographic…, Journal of analytical toxic… (2009)
   ·  DOI: [10.1093/jat/33.2.85](https://doi.org/10.1093/jat/33.2.85)
 
-## Model component
-<dbs-pgx drug="chlorhexidine" model-id="Chlorhexidine_Xue2009_reference" status="rejected" stale="true" population="rats" measured-compound="chlorhexidine" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="chlorhexidine" model-id="Chlorhexidine_Xue2009_reference" status="rejected" stale="true" population="rats" measured-compound="chlorhexidine" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 3 extracted.

@@ -30,8 +30,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Hendrickx JF et al., Do distribution volumes and clearances…, BMC anesthesiology (2006)
   ·  DOI: [10.1186/1471-2253-6-7](https://doi.org/10.1186/1471-2253-6-7)
 
-## Model component
-<dbs-pgx drug="desflurane" model-id="Desflurane_Hendrickx2006_reference" status="rejected" stale="true" population="virtual adult patients" measured-compound="desflurane" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="desflurane" model-id="Desflurane_Hendrickx2006_reference" status="rejected" stale="true" population="virtual adult patients" measured-compound="desflurane" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

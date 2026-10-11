@@ -33,8 +33,7 @@ Independently confirmed by `gpt-oss:120b`.
 Qiao GL et al., Pharmacokinetic-pharmacodynamic modelli…, Journal of veterinary pharm… (1994)
   ·  DOI: [10.1111/j.1365-2885.1994.tb00222.x](https://doi.org/10.1111/j.1365-2885.1994.tb00222.x)
 
-## Model component
-<dbs-pgx drug="pethidine" model-id="Pethidine_Qiao1994_reference" status="rejected" stale="true" population="goats" measured-compound="meperidine" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="pethidine" model-id="Pethidine_Qiao1994_reference" status="rejected" stale="true" population="goats" measured-compound="meperidine" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

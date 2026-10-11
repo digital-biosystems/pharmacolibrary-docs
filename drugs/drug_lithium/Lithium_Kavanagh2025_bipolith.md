@@ -23,8 +23,7 @@
 Kavanagh ON et al., A one-compartment model provides benchm…, Journal of psychopharmacolo… (2025)
   ·  DOI: [10.1177/02698811251378508](https://doi.org/10.1177/02698811251378508)
 
-## Model component
-<dbs-pgx drug="lithium" model-id="Lithium_Kavanagh2025_bipolith" status="rejected" stale="false" population="adults with bipolar disorder on stable lithium doses" measured-compound="lithium" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="lithium" model-id="Lithium_Kavanagh2025_bipolith" status="rejected" stale="false" population="adults with bipolar disorder on stable lithium doses" measured-compound="lithium" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 5 extracted.

@@ -31,8 +31,7 @@ The paper reports no distribution volume and no clearance or elimination rate; i
 Ahn JE et al., Modeling of the parathyroid hormone res…, The Korean journal of physi… (2014)
   ·  DOI: [10.4196/kjpp.2014.18.3.217](https://doi.org/10.4196/kjpp.2014.18.3.217)
 
-## Model component
-<dbs-pgx drug="calcium carbonate" model-id="CalciumCarbonate_Ahn2014_reference" status="rejected" stale="true" population="healthy subjects" measured-compound="parathyroid hormone" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="calcium carbonate" model-id="CalciumCarbonate_Ahn2014_reference" status="rejected" stale="true" population="healthy subjects" measured-compound="parathyroid hormone" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 2 extracted.

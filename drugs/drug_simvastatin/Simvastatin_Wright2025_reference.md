@@ -29,8 +29,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the val
 Wright DFB et al., The Influence of Patient Factors on the…, Clinical pharmacokinetics (2025)
   ·  DOI: [10.1007/s40262-025-01551-y](https://doi.org/10.1007/s40262-025-01551-y)
 
-## Model component
-<dbs-pgx drug="simvastatin" model-id="Simvastatin_Wright2025_reference" status="needs_review" stale="false" population="" measured-compound="simvastatin" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="simvastatin" model-id="Simvastatin_Wright2025_reference" status="needs_review" stale="false" population="" measured-compound="simvastatin" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment, IV mammillary model — template `PK_2C`.  
 **Parameters:** 3 extracted.

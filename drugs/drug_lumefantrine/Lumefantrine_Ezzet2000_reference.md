@@ -21,8 +21,7 @@
 Ezzet F et al., Pharmacokinetics and pharmacodynamics o…, Antimicrobial agents and ch… (2000)
   ·  DOI: [10.1128/AAC.44.3.697-704.2000](https://doi.org/10.1128/AAC.44.3.697-704.2000)
 
-## Model component
-<dbs-pgx drug="Lumefantrine" model-id="Lumefantrine_Ezzet2000_reference" status="rejected" stale="false" population="Thai patients with acute uncomplicated falciparum malaria" measured-compound="lumefantrine" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="Lumefantrine" model-id="Lumefantrine_Ezzet2000_reference" status="rejected" stale="false" population="Thai patients with acute uncomplicated falciparum malaria" measured-compound="lumefantrine" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 3 extracted.

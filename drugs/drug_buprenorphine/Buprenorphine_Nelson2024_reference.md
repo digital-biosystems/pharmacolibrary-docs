@@ -33,8 +33,7 @@ Independently confirmed by `gpt-oss:120b`.
 Nelson GR et al., Pharmacokinetics, pharmacodynamics and…, Veterinary anaesthesia and… (2024)
   ·  DOI: [10.1016/j.vaa.2024.05.001](https://doi.org/10.1016/j.vaa.2024.05.001)
 
-## Model component
-<dbs-pgx drug="buprenorphine" model-id="Buprenorphine_Nelson2024_reference" status="needs_review" stale="true" population="horses aged 6-12 years" measured-compound="buprenorphine" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="buprenorphine" model-id="Buprenorphine_Nelson2024_reference" status="needs_review" stale="true" population="horses aged 6-12 years" measured-compound="buprenorphine" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 5 extracted.

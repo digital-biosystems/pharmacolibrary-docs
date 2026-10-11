@@ -20,8 +20,7 @@
 Podranski T et al., Compartmental pharmacokinetics of dantr…, Anesthesia and analgesia (2005)
   ·  DOI: [10.1213/01.ANE.0000184184.40504.F3](https://doi.org/10.1213/01.ANE.0000184184.40504.F3)
 
-## Model component
-<dbs-pgx drug="dantrolene" model-id="Dantrolene_Podranski2005_reference" status="rejected" stale="false" population="adults" measured-compound="dantrolene" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="dantrolene" model-id="Dantrolene_Podranski2005_reference" status="rejected" stale="false" population="adults" measured-compound="dantrolene" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment; no model was built for this record.  
 **Parameters:** 3 extracted.

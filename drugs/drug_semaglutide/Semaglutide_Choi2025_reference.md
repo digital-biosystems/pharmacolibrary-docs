@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on paramet
 Choi S et al., Population pharmacokinetics of efpeglen…, Frontiers in pharmacology (2025)
   ·  DOI: [10.3389/fphar.2025.1715585](https://doi.org/10.3389/fphar.2025.1715585)
 
-## Model component
-<dbs-pgx drug="semaglutide" model-id="Semaglutide_Choi2025_reference" status="rejected" stale="true" population="" measured-compound="semaglutide" parameterization="apparent" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="semaglutide" model-id="Semaglutide_Choi2025_reference" status="rejected" stale="true" population="" measured-compound="semaglutide" parameterization="apparent" topology="2C"></div>
 
 **Model structure:** 2-compartment; no model was built for this record.  
 **Parameters:** 4 extracted.

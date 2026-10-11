@@ -32,8 +32,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which m
 Hawwa AF et al., Population pharmacokinetic and pharmaco…, British journal of clinical… (2008)
   ·  DOI: [10.1111/j.1365-2125.2008.03281.x](https://doi.org/10.1111/j.1365-2125.2008.03281.x)
 
-## Model component
-<dbs-pgx drug="mercaptopurine" model-id="Mercaptopurine_Hawwa2008_reference" status="rejected" stale="true" population="paediatric patients with acute lymphoblastic leukaemia" measured-compound="6-thioguanine nucleotides" parameterization="mechanistic" topology="general_linear"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="mercaptopurine" model-id="Mercaptopurine_Hawwa2008_reference" status="rejected" stale="true" population="paediatric patients with acute lymphoblastic leukaemia" measured-compound="6-thioguanine nucleotides" parameterization="mechanistic" topology="general_linear"></div>
 
 **Model structure:** general linear; no model was built for this record.  
 **Parameters:** 0 extracted, plus 1 covariate effect.

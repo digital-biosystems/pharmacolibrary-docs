@@ -21,8 +21,7 @@
 Feng Y et al., Model-based clinical pharmacology profi…, British journal of clinical… (2014)
   ·  DOI: [10.1111/bcp.12323](https://doi.org/10.1111/bcp.12323)
 
-## Model component
-<dbs-pgx drug="ipilimumab" model-id="Ipilimumab_Feng2014_reference" status="needs_review" stale="false" population="patients with unresectable stage III or IV melanoma" measured-compound="ipilimumab" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="ipilimumab" model-id="Ipilimumab_Feng2014_reference" status="needs_review" stale="false" population="patients with unresectable stage III or IV melanoma" measured-compound="ipilimumab" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment; no model was built for this record.  
 **Parameters:** 5 extracted.

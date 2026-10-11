@@ -21,8 +21,7 @@
 van der Stoep MYEC et al., Population pharmacokinetics of treosulf…, British journal of clinical… (2019)
   ·  DOI: [10.1111/bcp.13995](https://doi.org/10.1111/bcp.13995)
 
-## Model component
-<dbs-pgx drug="treosulfan" model-id="Treosulfan_van2019_base" status="extracted" stale="false" population="paediatric patients undergoing hematopoietic stem cell transplantation" measured-compound="treosulfan" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="treosulfan" model-id="Treosulfan_van2019_base" status="extracted" stale="false" population="paediatric patients undergoing hematopoietic stem cell transplantation" measured-compound="treosulfan" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment, IV mammillary model — template `PK_2C`.  
 **Parameters:** 4 extracted.

@@ -21,8 +21,7 @@
 Matsota P et al., Ropivacaine pharmacokinetics in the art…, Journal of anaesthesiology,… (2024)
   ·  DOI: [10.4103/joacp.joacp_353_22](https://doi.org/10.4103/joacp.joacp_353_22)
 
-## Model component
-<dbs-pgx drug="ropivacaine" model-id="Ropivacaine_Matsota2024_from_the_entire_profile" status="rejected" stale="false" population="adult patients undergoing open thoracotomy" measured-compound="ropivacaine" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="ropivacaine" model-id="Ropivacaine_Matsota2024_from_the_entire_profile" status="rejected" stale="false" population="adult patients undergoing open thoracotomy" measured-compound="ropivacaine" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 3 extracted.

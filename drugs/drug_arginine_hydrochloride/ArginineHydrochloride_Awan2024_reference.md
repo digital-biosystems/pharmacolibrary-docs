@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the val
 Awan SF et al., Phase 1 trial evaluating safety and pha…, JCI insight (2024)
   ·  DOI: [10.1172/jci.insight.175375](https://doi.org/10.1172/jci.insight.175375)
 
-## Model component
-<dbs-pgx drug="arginine hydrochloride" model-id="ArginineHydrochloride_Awan2024_reference" status="rejected" stale="true" population="" measured-compound="arginine_hydrochloride" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="arginine hydrochloride" model-id="ArginineHydrochloride_Awan2024_reference" status="rejected" stale="true" population="" measured-compound="arginine_hydrochloride" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 2 extracted.

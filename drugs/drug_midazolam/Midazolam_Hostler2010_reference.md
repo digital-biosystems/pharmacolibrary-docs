@@ -29,8 +29,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Hostler D et al., Mild hypothermia alters midazolam pharm…, Drug metabolism and disposi… (2010)
   ·  DOI: [10.1124/dmd.109.031377](https://doi.org/10.1124/dmd.109.031377)
 
-## Model component
-<dbs-pgx drug="midazolam" model-id="Midazolam_Hostler2010_reference" status="needs_review" stale="false" population="healthy adults" measured-compound="midazolam" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="midazolam" model-id="Midazolam_Hostler2010_reference" status="needs_review" stale="false" population="healthy adults" measured-compound="midazolam" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 4 extracted.

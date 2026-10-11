@@ -31,8 +31,7 @@ Independently confirmed by `gpt-oss:120b`.
 Liu X et al., Escitalopram Personalized Dosing: A Pop…, Drug design, development an… (2023)
   ·  DOI: [10.2147/DDDT.S425654](https://doi.org/10.2147/DDDT.S425654)
 
-## Model component
-<dbs-pgx drug="escitalopram" model-id="Escitalopram_Liu2023_reference" status="needs_review" stale="true" population="virtual adults (repository of published escitalopram PPK models)" measured-compound="escitalopram" parameterization="apparent" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="escitalopram" model-id="Escitalopram_Liu2023_reference" status="needs_review" stale="true" population="virtual adults (repository of published escitalopram PPK models)" measured-compound="escitalopram" parameterization="apparent" topology="2C"></div>
 
 **Model structure:** 2-compartment; no model was built for this record.  
 **Parameters:** 4 extracted, plus 5 covariate effects.

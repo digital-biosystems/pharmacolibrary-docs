@@ -24,8 +24,7 @@
 Jin G; Zheng K; Liu S; Yi H; Wei W; Xu C; et al. et al. (2025). Pharmaceuticals (Basel, Switzerland) 18
   ·  DOI: [10.3390/ph18060927](https://doi.org/10.3390/ph18060927)
 
-## Model component
-<dbs-pgx drug="metformin" model-id="Metformin_Jin2025_reference" status="extracted" stale="true" population="" measured-compound="metformin" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="metformin" model-id="Metformin_Jin2025_reference" status="extracted" stale="true" population="" measured-compound="metformin" parameterization="mechanistic" topology="1C"></div>
 
 **Parameterization:** V/F — mechanistic, F unknown (apparent — bioavailability not identifiable).
 

@@ -21,8 +21,7 @@
 Ravix A et al., Piperacillin dosing in pediatric patien…, The Journal of antimicrobia… (2025)
   ·  DOI: [10.1093/jac/dkaf387](https://doi.org/10.1093/jac/dkaf387)
 
-## Model component
-<dbs-pgx drug="furosemide" model-id="Furosemide_Ravix2025_reference" status="extracted" stale="false" population="" measured-compound="furosemide" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="furosemide" model-id="Furosemide_Ravix2025_reference" status="extracted" stale="false" population="" measured-compound="furosemide" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment, IV mammillary model — template `PK_2C`.  
 **Parameters:** 4 extracted.

@@ -21,8 +21,7 @@
 Barreto EF et al., Population pharmacokinetic model of cef…, Antimicrobial agents and ch… (2023)
   ·  DOI: [10.1128/aac.00810-23](https://doi.org/10.1128/aac.00810-23)
 
-## Model component
-<dbs-pgx drug="cefepime" model-id="Cefepime_Barreto2023_reference" status="rejected" stale="false" population="critically ill adults" measured-compound="cefepime" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="cefepime" model-id="Cefepime_Barreto2023_reference" status="rejected" stale="false" population="critically ill adults" measured-compound="cefepime" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

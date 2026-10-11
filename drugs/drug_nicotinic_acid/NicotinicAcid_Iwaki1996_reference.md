@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 ## Citation
 Iwaki M et al., Acute dose-dependent disposition studie…, Drug metabolism and disposi… (1996)
 
-## Model component
-<dbs-pgx drug="nicotinic acid" model-id="NicotinicAcid_Iwaki1996_reference" status="needs_review" stale="true" population="rats" measured-compound="nicotinic acid" parameterization="mechanistic" topology="parent_metabolite"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="nicotinic acid" model-id="NicotinicAcid_Iwaki1996_reference" status="needs_review" stale="true" population="rats" measured-compound="nicotinic acid" parameterization="mechanistic" topology="parent_metabolite"></div>
 
 **Model structure:** parent + metabolite; no model was built for this record.  
 **Parameters:** 3 extracted.

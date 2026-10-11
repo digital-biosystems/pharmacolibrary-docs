@@ -20,8 +20,7 @@
 Visscher M et al., Personalized parathyroid hormone therap…, British journal of clinical… (2025)
   ·  DOI: [10.1111/bcp.16342](https://doi.org/10.1111/bcp.16342)
 
-## Model component
-<dbs-pgx drug="parathyroid hormone" model-id="ParathyroidHormone_Visscher2025_reference" status="rejected" stale="false" population="adult with hypoparathyroidism" measured-compound="parathyroid_hormone" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="parathyroid hormone" model-id="ParathyroidHormone_Visscher2025_reference" status="rejected" stale="false" population="adult with hypoparathyroidism" measured-compound="parathyroid_hormone" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

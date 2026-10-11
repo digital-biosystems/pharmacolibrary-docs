@@ -31,8 +31,7 @@ The model links enalapril to its measured metabolite enalaprilat via hydrolysis 
 Hockings N et al., Age and the pharmacokinetics of angiote…, British journal of clinical… (1986)
   ·  DOI: [10.1111/j.1365-2125.1986.tb05205.x](https://doi.org/10.1111/j.1365-2125.1986.tb05205.x)
 
-## Model component
-<dbs-pgx drug="enalapril" model-id="Enalapril_Hockings1986_reference" status="needs_review" stale="true" population="young and elderly healthy volunteers" measured-compound="enalaprilat" parameterization="mechanistic" topology="general_linear"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="enalapril" model-id="Enalapril_Hockings1986_reference" status="needs_review" stale="true" population="young and elderly healthy volunteers" measured-compound="enalaprilat" parameterization="mechanistic" topology="general_linear"></div>
 
 **Model structure:** general linear; no model was built for this record.  
 **Parameters:** 4 extracted.

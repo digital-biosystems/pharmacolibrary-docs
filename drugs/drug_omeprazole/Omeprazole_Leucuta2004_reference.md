@@ -29,8 +29,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Leucuta A et al., A pharmacokinetic interaction study bet…, Drug metabolism and drug in… (2004)
   ·  DOI: [10.1515/dmdi.2004.20.4.273](https://doi.org/10.1515/dmdi.2004.20.4.273)
 
-## Model component
-<dbs-pgx drug="omeprazole" model-id="Omeprazole_Leucuta2004_reference" status="needs_review" stale="false" population="healthy male volunteers" measured-compound="omeprazole" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="omeprazole" model-id="Omeprazole_Leucuta2004_reference" status="needs_review" stale="false" population="healthy male volunteers" measured-compound="omeprazole" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 7 extracted.

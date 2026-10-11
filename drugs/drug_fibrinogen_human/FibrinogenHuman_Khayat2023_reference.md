@@ -33,8 +33,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the val
 Khayat CD et al., Pharmacokinetics, efficacy and safety o…, Blood coagulation & fibrino… (2023)
   ·  DOI: [10.1097/MBC.0000000000001182](https://doi.org/10.1097/MBC.0000000000001182)
 
-## Model component
-<dbs-pgx drug="fibrinogen, human" model-id="FibrinogenHuman_Khayat2023_reference" status="needs_review" stale="true" population="pediatric patients with congenital afibrinogenemia" measured-compound="fibrinogen" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="fibrinogen, human" model-id="FibrinogenHuman_Khayat2023_reference" status="needs_review" stale="true" population="pediatric patients with congenital afibrinogenemia" measured-compound="fibrinogen" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 4 extracted.

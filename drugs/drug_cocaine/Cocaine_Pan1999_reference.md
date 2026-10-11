@@ -22,8 +22,7 @@
 Pan WJ et al., Cocaine and alcohol interactions in the…, Journal of pharmaceutical s… (1999)
   ·  DOI: [10.1021/js980282p](https://doi.org/10.1021/js980282p)
 
-## Model component
-<dbs-pgx drug="cocaine" model-id="Cocaine_Pan1999_reference" status="rejected" stale="false" population="awake, freely moving rats" measured-compound="cocaine" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="cocaine" model-id="Cocaine_Pan1999_reference" status="rejected" stale="false" population="awake, freely moving rats" measured-compound="cocaine" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 2 extracted.

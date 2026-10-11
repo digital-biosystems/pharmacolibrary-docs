@@ -20,8 +20,7 @@
 Guidi M et al., Population Pharmacokinetics of Erlotini…, Clinical therapeutics (2020)
   ·  DOI: [10.1016/j.clinthera.2020.05.008](https://doi.org/10.1016/j.clinthera.2020.05.008)
 
-## Model component
-<dbs-pgx drug="erlotinib" model-id="Erlotinib_Guidi2020_reference" status="rejected" stale="false" population="patients with NSCLC" measured-compound="erlotinib" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="erlotinib" model-id="Erlotinib_Guidi2020_reference" status="rejected" stale="false" population="patients with NSCLC" measured-compound="erlotinib" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

@@ -23,8 +23,7 @@
 Yamaoka K et al., Analysis of enterohepatic circulation o…, Journal of pharmacokinetics… (1990)
   ·  DOI: [10.1007/BF01073938](https://doi.org/10.1007/BF01073938)
 
-## Model component
-<dbs-pgx drug="cefixime" model-id="Cefixime_Yamaoka1990_reference" status="rejected" stale="false" population="rats" measured-compound="cefixime" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="cefixime" model-id="Cefixime_Yamaoka1990_reference" status="rejected" stale="false" population="rats" measured-compound="cefixime" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

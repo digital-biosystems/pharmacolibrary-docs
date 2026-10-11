@@ -33,8 +33,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Abadia AR et al., Ciprofloxacin pharmacokinetics in dogs…, Zentralblatt fur Veterinarm… (1995)
   ·  DOI: [10.1111/j.1439-0442.1995.tb00405.x](https://doi.org/10.1111/j.1439-0442.1995.tb00405.x)
 
-## Model component
-<dbs-pgx drug="ciprofloxacin" model-id="Ciprofloxacin_Abadia1995_reference" status="needs_review" stale="true" population="dogs" measured-compound="ciprofloxacin" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="ciprofloxacin" model-id="Ciprofloxacin_Abadia1995_reference" status="needs_review" stale="true" population="dogs" measured-compound="ciprofloxacin" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 4 extracted.

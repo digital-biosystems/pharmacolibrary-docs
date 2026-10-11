@@ -24,8 +24,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the val
 Fuhr LM et al., A Physiologically Based Pharmacokinetic…, Pharmaceutics (2022)
   ·  DOI: [10.3390/pharmaceutics14071474](https://doi.org/10.3390/pharmaceutics14071474)
 
-## Model component
-<dbs-pgx drug="felodipine" model-id="Felodipine_Fuhr2022_reference" status="needs_review" stale="false" population="healthy and hypertensive adults" measured-compound="felodipine" parameterization="mechanistic" topology="parent_metabolite"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="felodipine" model-id="Felodipine_Fuhr2022_reference" status="needs_review" stale="false" population="healthy and hypertensive adults" measured-compound="felodipine" parameterization="mechanistic" topology="parent_metabolite"></div>
 
 **Model structure:** parent + metabolite; no model was built for this record.  
 **Parameters:** 4 extracted, plus 3 covariate effects.

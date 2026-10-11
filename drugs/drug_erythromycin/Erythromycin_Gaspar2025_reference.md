@@ -21,8 +21,7 @@
 Gaspar F et al., Improving Understanding of Fexofenadine…, Clinical pharmacokinetics (2025)
   ·  DOI: [10.1007/s40262-024-01470-4](https://doi.org/10.1007/s40262-024-01470-4)
 
-## Model component
-<dbs-pgx drug="erythromycin" model-id="Erythromycin_Gaspar2025_reference" status="extracted" stale="false" population="" measured-compound="erythromycin" parameterization="apparent" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="erythromycin" model-id="Erythromycin_Gaspar2025_reference" status="extracted" stale="false" population="" measured-compound="erythromycin" parameterization="apparent" topology="2C"></div>
 
 **Model structure:** 2-compartment, oral mammillary model — template `PK_2C_enteral`.  
 **Parameters:** 5 extracted.

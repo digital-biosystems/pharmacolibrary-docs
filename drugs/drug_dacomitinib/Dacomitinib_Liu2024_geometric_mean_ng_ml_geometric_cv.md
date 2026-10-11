@@ -21,8 +21,7 @@
 Liu J et al., Effects of H2-Receptor Antagonists on t…, Pharmaceutics (2024)
   ·  DOI: [10.3390/pharmaceutics16010118](https://doi.org/10.3390/pharmaceutics16010118)
 
-## Model component
-<dbs-pgx drug="dacomitinib" model-id="Dacomitinib_Liu2024_geometric_mean_ng_ml_geometric_cv" status="rejected" stale="false" population="patients with NSCLC (pooled analysis); healthy volunteers (PBPK model)" measured-compound="dacomitinib" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="dacomitinib" model-id="Dacomitinib_Liu2024_geometric_mean_ng_ml_geometric_cv" status="rejected" stale="false" population="patients with NSCLC (pooled analysis); healthy volunteers (PBPK model)" measured-compound="dacomitinib" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 1 extracted.

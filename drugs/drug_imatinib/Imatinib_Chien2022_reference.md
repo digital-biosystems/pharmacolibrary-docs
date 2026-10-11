@@ -21,8 +21,7 @@
 Chien YH et al., Population pharmacokinetic modelling of…, Cancer chemotherapy and pha… (2022)
   ·  DOI: [10.1007/s00280-022-04454-y](https://doi.org/10.1007/s00280-022-04454-y)
 
-## Model component
-<dbs-pgx drug="imatinib" model-id="Imatinib_Chien2022_reference" status="extracted" stale="false" population="healthy volunteers" measured-compound="imatinib" parameterization="apparent" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="imatinib" model-id="Imatinib_Chien2022_reference" status="extracted" stale="false" population="healthy volunteers" measured-compound="imatinib" parameterization="apparent" topology="2C"></div>
 
 **Model structure:** 2-compartment, oral mammillary model — template `PK_2C_enteral`.  
 **Parameters:** 7 extracted.

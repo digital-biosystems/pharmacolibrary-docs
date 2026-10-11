@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 ## Citation
 Guo JA et al., [Pharmacokinetics of sodium selenite in…, Zhongguo yao li xue bao = A… (1991)
 
-## Model component
-<dbs-pgx drug="sodium selenite" model-id="SodiumSelenite_Guo1991_reference" status="needs_review" stale="true" population="healthy adults" measured-compound="selenium" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="sodium selenite" model-id="SodiumSelenite_Guo1991_reference" status="needs_review" stale="true" population="healthy adults" measured-compound="selenium" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 8 extracted.

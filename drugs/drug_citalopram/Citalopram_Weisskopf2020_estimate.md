@@ -23,8 +23,7 @@
 Weisskopf E et al., A population pharmacokinetic model for…, British journal of clinical… (2020)
   ·  DOI: [10.1111/bcp.14278](https://doi.org/10.1111/bcp.14278)
 
-## Model component
-<dbs-pgx drug="citalopram" model-id="Citalopram_Weisskopf2020_estimate" status="needs_review" stale="false" population="lactating women treated with escitalopram or racemic citalopram (perinatal period)" measured-compound="escitalopram (SCIT)" parameterization="mechanistic" topology="parent_metabolite"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="citalopram" model-id="Citalopram_Weisskopf2020_estimate" status="needs_review" stale="false" population="lactating women treated with escitalopram or racemic citalopram (perinatal period)" measured-compound="escitalopram (SCIT)" parameterization="mechanistic" topology="parent_metabolite"></div>
 
 **Model structure:** parent + metabolite; no model was built for this record.  
 **Parameters:** 6 extracted.

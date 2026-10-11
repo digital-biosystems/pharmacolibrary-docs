@@ -30,8 +30,7 @@ Independently confirmed by `gpt-oss:120b`.
 Abduljalil K et al., Assessment of activity levels for CYP2D…, Clinical pharmacology and t… (2010)
   ·  DOI: [10.1038/clpt.2010.137](https://doi.org/10.1038/clpt.2010.137)
 
-## Model component
-<dbs-pgx drug="dextromethorphan" model-id="Dextromethorphan_Abduljalil2010_reference" status="rejected" stale="true" population="healthy Caucasian men" measured-compound="dextromethorphan" parameterization="mechanistic" topology="parent_metabolite"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="dextromethorphan" model-id="Dextromethorphan_Abduljalil2010_reference" status="rejected" stale="true" population="healthy Caucasian men" measured-compound="dextromethorphan" parameterization="mechanistic" topology="parent_metabolite"></div>
 
 **Model structure:** parent + metabolite; no model was built for this record.  
 **Parameters:** 0 extracted.

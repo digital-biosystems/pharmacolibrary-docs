@@ -29,8 +29,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the val
 ## Citation
 Lentzen H et al., [Comparative study of serum levels and…, Arzneimittel-Forschung (1981)
 
-## Model component
-<dbs-pgx drug="neomycin" model-id="Neomycin_Lentzen1981_reference" status="rejected" stale="true" population="healthy volunteers and patients with liver cirrhosis" measured-compound="neomycin" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="neomycin" model-id="Neomycin_Lentzen1981_reference" status="rejected" stale="true" population="healthy volunteers and patients with liver cirrhosis" measured-compound="neomycin" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 2 extracted.

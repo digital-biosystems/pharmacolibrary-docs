@@ -22,8 +22,7 @@
 ## Citation
 Hashem A et al., [The pharmacokinetics and bioavailabili…, DTW. Deutsche tierarztliche… (1992)
 
-## Model component
-<dbs-pgx drug="acepromazine" model-id="Acepromazine_Hashem1992_reference" status="rejected" stale="false" population="dogs" measured-compound="acepromazine" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="acepromazine" model-id="Acepromazine_Hashem1992_reference" status="rejected" stale="false" population="dogs" measured-compound="acepromazine" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 2 extracted.

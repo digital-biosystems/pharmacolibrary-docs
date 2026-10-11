@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on `parame
 Kates RE et al., Lorcainide disposition kinetics in arrh…, Clinical pharmacology and t… (1983)
   ·  DOI: [10.1038/clpt.1983.4](https://doi.org/10.1038/clpt.1983.4)
 
-## Model component
-<dbs-pgx drug="lorcainide" model-id="Lorcainide_Kates1983_reference" status="extracted" stale="true" population="patients with ventricular arrhythmias" measured-compound="lorcainide" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="lorcainide" model-id="Lorcainide_Kates1983_reference" status="extracted" stale="true" population="patients with ventricular arrhythmias" measured-compound="lorcainide" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameters:** 4 extracted.

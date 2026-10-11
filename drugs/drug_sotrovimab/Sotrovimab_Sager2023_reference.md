@@ -21,8 +21,7 @@
 Sager JE et al., Population pharmacokinetics and exposur…, CPT: pharmacometrics & syst… (2023)
   ·  DOI: [10.1002/psp4.12958](https://doi.org/10.1002/psp4.12958)
 
-## Model component
-<dbs-pgx drug="sotrovimab" model-id="Sotrovimab_Sager2023_reference" status="extracted" stale="false" population="patients with mild to moderate COVID-19" measured-compound="sotrovimab" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="sotrovimab" model-id="Sotrovimab_Sager2023_reference" status="extracted" stale="false" population="patients with mild to moderate COVID-19" measured-compound="sotrovimab" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment, IV mammillary model — template `PK_2C`.  
 **Parameters:** 5 extracted, plus 5 covariate effects.

@@ -30,8 +30,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on bioavai
 ## Citation
 Raaflaub J et al., Single-dose pharmacokinetics of the MAO…, Arzneimittel-Forschung (1984)
 
-## Model component
-<dbs-pgx drug="moclobemide" model-id="Moclobemide_Raaflaub1984_reference" status="rejected" stale="true" population="healthy adults" measured-compound="moclobemide" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="moclobemide" model-id="Moclobemide_Raaflaub1984_reference" status="rejected" stale="true" population="healthy adults" measured-compound="moclobemide" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 6 extracted.

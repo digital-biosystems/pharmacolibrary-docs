@@ -32,8 +32,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the val
 Wasfi IA et al., The activity of mixed function oxidases…, Comparative biochemistry an… (1998)
   ·  DOI: [10.1016/s0742-8413(97)00200-4](https://doi.org/10.1016/s0742-8413(97)00200-4)
 
-## Model component
-<dbs-pgx drug="phenazone" model-id="Phenazone_Wasfi1998_reference" status="rejected" stale="true" population="horses and camels" measured-compound="antipyrine" parameterization="apparent" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="phenazone" model-id="Phenazone_Wasfi1998_reference" status="rejected" stale="true" population="horses and camels" measured-compound="antipyrine" parameterization="apparent" topology="2C"></div>
 
 **Model structure:** 2-compartment; no model was built for this record.  
 **Parameters:** 7 extracted.

@@ -26,8 +26,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Pan Y et al., A comparison study of dynamic [, Journal of cancer research… (2024)
   ·  DOI: [10.1007/s00432-024-05688-4](https://doi.org/10.1007/s00432-024-05688-4)
 
-## Model component
-<dbs-pgx drug="methionine (11C)" model-id="Methionine11c_Pan2024_reference" status="rejected" stale="false" population="orthotopic rat models of glioblastoma" measured-compound="methionine_11c" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="methionine (11C)" model-id="Methionine11c_Pan2024_reference" status="rejected" stale="false" population="orthotopic rat models of glioblastoma" measured-compound="methionine_11c" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

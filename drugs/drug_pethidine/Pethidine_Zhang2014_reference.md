@@ -31,8 +31,7 @@ Independently confirmed by `gpt-oss:120b`.
 Zhang C et al., Chronopharmacodynamics and chronopharma…, PloS one (2014)
   ·  DOI: [10.1371/journal.pone.0102054](https://doi.org/10.1371/journal.pone.0102054)
 
-## Model component
-<dbs-pgx drug="pethidine" model-id="Pethidine_Zhang2014_reference" status="needs_review" stale="false" population="" measured-compound="pethidine" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="pethidine" model-id="Pethidine_Zhang2014_reference" status="needs_review" stale="false" population="" measured-compound="pethidine" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 2 extracted.

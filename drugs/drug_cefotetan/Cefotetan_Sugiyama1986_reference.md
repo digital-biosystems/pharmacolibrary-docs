@@ -19,8 +19,7 @@
 ## Citation
 Sugiyama H et al., [Transfer of cefotetan into exudates fr…, The Japanese journal of ant… (1986)
 
-## Model component
-<dbs-pgx drug="cefotetan" model-id="Cefotetan_Sugiyama1986_reference" status="needs_review" stale="false" population="adult patients with excoriated skin wounds" measured-compound="cefotetan" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="cefotetan" model-id="Cefotetan_Sugiyama1986_reference" status="needs_review" stale="false" population="adult patients with excoriated skin wounds" measured-compound="cefotetan" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 5 extracted.

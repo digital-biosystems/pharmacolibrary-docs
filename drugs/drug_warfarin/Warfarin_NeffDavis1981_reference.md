@@ -33,8 +33,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Neff-Davis CA et al., Warfarin in the dog: pharmacokinetics a…, Journal of veterinary pharm… (1981)
   ·  DOI: [10.1111/j.1365-2885.1981.tb00722.x](https://doi.org/10.1111/j.1365-2885.1981.tb00722.x)
 
-## Model component
-<dbs-pgx drug="warfarin" model-id="Warfarin_NeffDavis1981_reference" status="needs_review" stale="true" population="healthy dogs" measured-compound="warfarin" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="warfarin" model-id="Warfarin_NeffDavis1981_reference" status="needs_review" stale="true" population="healthy dogs" measured-compound="warfarin" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 5 extracted.

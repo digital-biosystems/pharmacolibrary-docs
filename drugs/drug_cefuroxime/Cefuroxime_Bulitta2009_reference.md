@@ -23,8 +23,7 @@
 Bulitta JB et al., New semiphysiological absorption model…, Antimicrobial agents and ch… (2009)
   ·  DOI: [10.1128/aac.00054-09](https://doi.org/10.1128/aac.00054-09)
 
-## Model component
-<dbs-pgx drug="cefuroxime" model-id="Cefuroxime_Bulitta2009_reference" status="rejected" stale="false" population="healthy volunteers" measured-compound="cefuroxime" parameterization="mechanistic" topology="general_linear"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="cefuroxime" model-id="Cefuroxime_Bulitta2009_reference" status="rejected" stale="false" population="healthy volunteers" measured-compound="cefuroxime" parameterization="mechanistic" topology="general_linear"></div>
 
 **Model structure:** general linear; no model was built for this record.  
 **Parameters:** 0 extracted.

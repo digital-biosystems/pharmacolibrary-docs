@@ -29,8 +29,7 @@ Nothing in the extracted data describes the drug's disposition, so there is no m
 Yukawa E et al., Pharmacoepidemiologic investigation of…, Journal of clinical psychop… (2001)
   ·  DOI: [10.1097/00004714-200112000-00008](https://doi.org/10.1097/00004714-200112000-00008)
 
-## Model component
-<dbs-pgx drug="clonazepam" model-id="Clonazepam_Yukawa2001_reference" status="rejected" stale="true" population="pediatric and adult epileptic patients" measured-compound="clonazepam" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="clonazepam" model-id="Clonazepam_Yukawa2001_reference" status="rejected" stale="true" population="pediatric and adult epileptic patients" measured-compound="clonazepam" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

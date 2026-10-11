@@ -20,8 +20,7 @@
 Shader RI et al., Population pharmacokinetics of methylph…, Journal of clinical pharmac… (1999)
   ·  DOI: [10.1177/00912709922008425](https://doi.org/10.1177/00912709922008425)
 
-## Model component
-<dbs-pgx drug="methylphenidate" model-id="Methylphenidate_Shader1999_reference" status="needs_review" stale="false" population="children and adolescents with ADHD" measured-compound="methylphenidate" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="methylphenidate" model-id="Methylphenidate_Shader1999_reference" status="needs_review" stale="false" population="children and adolescents with ADHD" measured-compound="methylphenidate" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 2 extracted.

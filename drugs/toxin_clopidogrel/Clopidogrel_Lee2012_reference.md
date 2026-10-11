@@ -23,8 +23,7 @@
 Lee J; Hwang Y; Kang W; Seong SJ; Lim MS; Lee HW; et al. et al. (2012). Journal of clinical pharmacology 52
   ·  DOI: [10.1177/0091270011409228](https://doi.org/10.1177/0091270011409228)
 
-## Model component
-<dbs-pgx drug="clopidogrel" model-id="Clopidogrel_Lee2012_reference" status="extracted" stale="true" population="Korean healthy volunteers and stroke patients" measured-compound="SR26334" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="clopidogrel" model-id="Clopidogrel_Lee2012_reference" status="extracted" stale="true" population="Korean healthy volunteers and stroke patients" measured-compound="SR26334" parameterization="mechanistic" topology="1C"></div>
 
 **Parameterization:** mechanistic.
 

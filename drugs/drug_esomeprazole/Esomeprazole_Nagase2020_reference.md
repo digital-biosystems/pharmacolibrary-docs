@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Nagase M et al., Population pharmacokinetic analysis of…, Journal of clinical pharmac… (2020)
   ·  DOI: [10.1111/jcpt.13129](https://doi.org/10.1111/jcpt.13129)
 
-## Model component
-<dbs-pgx drug="esomeprazole" model-id="Esomeprazole_Nagase2020_reference" status="needs_review" stale="true" population="healthy Japanese male subjects" measured-compound="esomeprazole" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="esomeprazole" model-id="Esomeprazole_Nagase2020_reference" status="needs_review" stale="true" population="healthy Japanese male subjects" measured-compound="esomeprazole" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 2 extracted.

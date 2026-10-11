@@ -20,8 +20,7 @@
 Loprete L et al., Population pharmacokinetic and pharmaco…, Pharmacology research & per… (2016)
   ·  DOI: [10.1002/prp2.251](https://doi.org/10.1002/prp2.251)
 
-## Model component
-<dbs-pgx drug="safinamide" model-id="Safinamide_Loprete2016_reference" status="rejected" stale="false" population="adults with Parkinson&#39;s disease on stable levodopa therapy" measured-compound="safinamide" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="safinamide" model-id="Safinamide_Loprete2016_reference" status="rejected" stale="false" population="adults with Parkinson&#39;s disease on stable levodopa therapy" measured-compound="safinamide" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 4 extracted.

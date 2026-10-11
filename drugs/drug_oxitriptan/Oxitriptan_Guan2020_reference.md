@@ -20,8 +20,7 @@
 Guan Z et al., PK/PD modeling of 5-hydroxytryptophan (…, Pharmacology research & per… (2020)
   ·  DOI: [10.1002/prp2.574](https://doi.org/10.1002/prp2.574)
 
-## Model component
-<dbs-pgx drug="oxitriptan" model-id="Oxitriptan_Guan2020_reference" status="rejected" stale="false" population="healthy adults" measured-compound="5-hydroxytryptophan (oxitriptan)" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="oxitriptan" model-id="Oxitriptan_Guan2020_reference" status="rejected" stale="false" population="healthy adults" measured-compound="5-hydroxytryptophan (oxitriptan)" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

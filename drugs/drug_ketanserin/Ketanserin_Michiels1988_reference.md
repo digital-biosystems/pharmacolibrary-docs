@@ -32,8 +32,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on `parame
 ## Citation
 Michiels M et al., Pharmacokinetics and tissue distributio…, Arzneimittel-Forschung (1988)
 
-## Model component
-<dbs-pgx drug="ketanserin" model-id="Ketanserin_Michiels1988_reference" status="extracted" stale="true" population="male rats, rabbits and dogs" measured-compound="ketanserin" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="ketanserin" model-id="Ketanserin_Michiels1988_reference" status="extracted" stale="true" population="male rats, rabbits and dogs" measured-compound="ketanserin" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameters:** 4 extracted.

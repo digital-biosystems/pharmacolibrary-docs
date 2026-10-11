@@ -21,8 +21,7 @@
 Cleary Y et al., Estimation of FMO3 Ontogeny by Mechanis…, Clinical pharmacokinetics (2023)
   ·  DOI: [10.1007/s40262-023-01241-7](https://doi.org/10.1007/s40262-023-01241-7)
 
-## Model component
-<dbs-pgx drug="risdiplam" model-id="Risdiplam_Cleary2023_reference" status="extracted" stale="false" population="SMA patients and healthy subjects" measured-compound="risdiplam" parameterization="apparent" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="risdiplam" model-id="Risdiplam_Cleary2023_reference" status="extracted" stale="false" population="SMA patients and healthy subjects" measured-compound="risdiplam" parameterization="apparent" topology="2C"></div>
 
 **Model structure:** 2-compartment, oral mammillary model — template `PK_2C_enteral`.  
 **Parameters:** 5 extracted, plus 2 covariate effects.

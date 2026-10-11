@@ -33,8 +33,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on paramet
 Ross J et al., Pharmacokinetics and pharmacodynamics o…, American journal of veterin… (2007)
   ·  DOI: [10.2460/ajvr.68.9.1016](https://doi.org/10.2460/ajvr.68.9.1016)
 
-## Model component
-<dbs-pgx drug="aminocaproic acid" model-id="AminocaproicAcid_Ross2007_reference" status="extracted" stale="true" population="healthy adult horses" measured-compound="aminocaproic_acid" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="aminocaproic acid" model-id="AminocaproicAcid_Ross2007_reference" status="extracted" stale="true" population="healthy adult horses" measured-compound="aminocaproic_acid" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameters:** 2 extracted.

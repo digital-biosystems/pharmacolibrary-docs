@@ -22,8 +22,7 @@
 Thybaud E et al., Uptake and elimination of lindane by Ly…, Ecotoxicology and environme… (1991)
   ·  DOI: [10.1016/0147-6513(91)90075-z](https://doi.org/10.1016/0147-6513(91)90075-z)
 
-## Model component
-<dbs-pgx drug="lindane" model-id="Lindane_Thybaud1991_reference" status="rejected" stale="false" population="adult Lymnaea palustris snails" measured-compound="lindane" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="lindane" model-id="Lindane_Thybaud1991_reference" status="rejected" stale="false" population="adult Lymnaea palustris snails" measured-compound="lindane" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 2 extracted.

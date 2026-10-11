@@ -21,8 +21,7 @@
 Olguín HJ et al., Pharmacokinetics of sildenafil in child…, World journal of pediatrics… (2017)
   ·  DOI: [10.1007/s12519-017-0043-4](https://doi.org/10.1007/s12519-017-0043-4)
 
-## Model component
-<dbs-pgx drug="sildenafil" model-id="Sildenafil_Olgun2017_reference" status="rejected" stale="false" population="children with pulmonary arterial hypertension" measured-compound="sildenafil" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="sildenafil" model-id="Sildenafil_Olgun2017_reference" status="rejected" stale="false" population="children with pulmonary arterial hypertension" measured-compound="sildenafil" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 1 extracted.

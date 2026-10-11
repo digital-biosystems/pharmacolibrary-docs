@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the val
 Šíma M et al., Factors Affecting the Metabolic Convers…, Pharmaceutics (2022)
   ·  DOI: [10.3390/pharmaceutics14081627](https://doi.org/10.3390/pharmaceutics14081627)
 
-## Model component
-<dbs-pgx drug="ciprofloxacin" model-id="Ciprofloxacin_ma2022_reference" status="needs_review" stale="false" population="critically ill patients" measured-compound="desethylene ciprofloxacin" parameterization="mechanistic" topology="parent_metabolite"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="ciprofloxacin" model-id="Ciprofloxacin_ma2022_reference" status="needs_review" stale="false" population="critically ill patients" measured-compound="desethylene ciprofloxacin" parameterization="mechanistic" topology="parent_metabolite"></div>
 
 **Model structure:** parent + metabolite; no model was built for this record.  
 **Parameters:** 7 extracted.

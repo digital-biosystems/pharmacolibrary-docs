@@ -21,8 +21,7 @@
 de Jong BT et al., Clinical Pharmacokinetics and Pharmacod…, Clinical pharmacokinetics (2025)
   ·  DOI: [10.1007/s40262-025-01548-7](https://doi.org/10.1007/s40262-025-01548-7)
 
-## Model component
-<dbs-pgx drug="remimazolam" model-id="Remimazolam_de2025_study_year" status="rejected" stale="false" population="mixed healthy volunteers and surgical/ICU patients (narrative review of popPK models)" measured-compound="remimazolam" parameterization="mechanistic" topology="parent_metabolite"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="remimazolam" model-id="Remimazolam_de2025_study_year" status="rejected" stale="false" population="mixed healthy volunteers and surgical/ICU patients (narrative review of popPK models)" measured-compound="remimazolam" parameterization="mechanistic" topology="parent_metabolite"></div>
 
 **Model structure:** parent + metabolite; no model was built for this record.  
 **Parameters:** 0 extracted.

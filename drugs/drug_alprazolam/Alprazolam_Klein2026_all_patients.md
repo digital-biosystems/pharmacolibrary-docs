@@ -21,8 +21,7 @@
 Klein P et al., Pharmacokinetics and tolerability of si…, Epilepsia (2026)
   ·  DOI: [10.1111/epi.18643](https://doi.org/10.1111/epi.18643)
 
-## Model component
-<dbs-pgx drug="alprazolam" model-id="Alprazolam_Klein2026_all_patients" status="needs_review" stale="false" population="adults and adolescents with epilepsy" measured-compound="alprazolam" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="alprazolam" model-id="Alprazolam_Klein2026_all_patients" status="needs_review" stale="false" population="adults and adolescents with epilepsy" measured-compound="alprazolam" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 3 extracted.

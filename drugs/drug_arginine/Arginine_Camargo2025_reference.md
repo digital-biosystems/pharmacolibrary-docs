@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on paramet
 Camargo S et al., Complexed Linalool with Beta-Cyclodextr…, Pharmaceuticals (Basel, Swi… (2025)
   ·  DOI: [10.3390/ph19010037](https://doi.org/10.3390/ph19010037)
 
-## Model component
-<dbs-pgx drug="Arginine" model-id="Arginine_Camargo2025_reference" status="extracted" stale="true" population="" measured-compound="arginine" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="Arginine" model-id="Arginine_Camargo2025_reference" status="extracted" stale="true" population="" measured-compound="arginine" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 3 extracted.

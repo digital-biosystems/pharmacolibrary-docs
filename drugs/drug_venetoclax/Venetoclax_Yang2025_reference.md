@@ -21,8 +21,7 @@
 Yang J et al., A Population Pharmacokinetics Study of…, Drug design, development an… (2025)
   ·  DOI: [10.2147/DDDT.S514173](https://doi.org/10.2147/DDDT.S514173)
 
-## Model component
-<dbs-pgx drug="venetoclax" model-id="Venetoclax_Yang2025_reference" status="needs_review" stale="false" population="adults with hematologic malignancies" measured-compound="venetoclax" parameterization="apparent" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="venetoclax" model-id="Venetoclax_Yang2025_reference" status="needs_review" stale="false" population="adults with hematologic malignancies" measured-compound="venetoclax" parameterization="apparent" topology="2C"></div>
 
 **Model structure:** 2-compartment; no model was built for this record.  
 **Parameters:** 6 extracted.

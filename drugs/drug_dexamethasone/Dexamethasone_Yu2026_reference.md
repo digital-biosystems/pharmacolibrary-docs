@@ -33,8 +33,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the val
 Yu R et al., Meta-Analysis and Physiologically-Based…, Pharmaceutical research (2026)
   ·  DOI: [10.1007/s11095-026-04120-5](https://doi.org/10.1007/s11095-026-04120-5)
 
-## Model component
-<dbs-pgx drug="dexamethasone" model-id="Dexamethasone_Yu2026_reference" status="rejected" stale="true" population="horses" measured-compound="dexamethasone" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="dexamethasone" model-id="Dexamethasone_Yu2026_reference" status="rejected" stale="true" population="horses" measured-compound="dexamethasone" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 3 extracted.

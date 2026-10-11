@@ -22,8 +22,7 @@
 Goyal N et al., Population pharmacokinetics of inhaled…, Clinical pharmacokinetics (2014)
   ·  DOI: [10.1007/s40262-014-0143-4](https://doi.org/10.1007/s40262-014-0143-4)
 
-## Model component
-<dbs-pgx drug="Vilanterol" model-id="Vilanterol_Goyal2014_reference" status="rejected" stale="false" population="patients with COPD" measured-compound="vilanterol" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="Vilanterol" model-id="Vilanterol_Goyal2014_reference" status="rejected" stale="false" population="patients with COPD" measured-compound="vilanterol" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 2 extracted.

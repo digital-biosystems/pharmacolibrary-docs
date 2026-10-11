@@ -21,8 +21,7 @@
 Tortorici MA et al., Pharmacokinetics of single-agent axitin…, Cancer chemotherapy and pha… (2014)
   ·  DOI: [10.1007/s00280-014-2606-6](https://doi.org/10.1007/s00280-014-2606-6)
 
-## Model component
-<dbs-pgx drug="axitinib" model-id="Axitinib_Tortorici2014_reference" status="extracted" stale="false" population="patients with NSCLC, thyroid cancer, or melanoma and healthy volunteers" measured-compound="axitinib" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="axitinib" model-id="Axitinib_Tortorici2014_reference" status="extracted" stale="false" population="patients with NSCLC, thyroid cancer, or melanoma and healthy volunteers" measured-compound="axitinib" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 5 extracted.

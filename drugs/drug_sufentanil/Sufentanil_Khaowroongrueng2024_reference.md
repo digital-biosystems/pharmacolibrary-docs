@@ -21,8 +21,7 @@
 Khaowroongrueng V et al., Population pharmacokinetic modeling of…, CPT: pharmacometrics & syst… (2024)
   ·  DOI: [10.1002/psp4.13205](https://doi.org/10.1002/psp4.13205)
 
-## Model component
-<dbs-pgx drug="sufentanil" model-id="Sufentanil_Khaowroongrueng2024_reference" status="extracted" stale="false" population="adults undergoing cardiopulmonary bypass surgery" measured-compound="sufentanil" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="sufentanil" model-id="Sufentanil_Khaowroongrueng2024_reference" status="extracted" stale="false" population="adults undergoing cardiopulmonary bypass surgery" measured-compound="sufentanil" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment, IV mammillary model — template `PK_2C`.  
 **Parameters:** 4 extracted.

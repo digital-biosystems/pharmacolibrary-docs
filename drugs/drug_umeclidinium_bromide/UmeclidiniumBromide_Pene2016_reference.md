@@ -23,8 +23,7 @@
 Pene Dumitrescu T et al., A Novel Method for Studying the Pharmac…, Clinical and translational… (2016)
   ·  DOI: [10.1111/cts.12406](https://doi.org/10.1111/cts.12406)
 
-## Model component
-<dbs-pgx drug="umeclidinium bromide" model-id="UmeclidiniumBromide_Pene2016_reference" status="rejected" stale="false" population="healthy males" measured-compound="umeclidinium" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="umeclidinium bromide" model-id="UmeclidiniumBromide_Pene2016_reference" status="rejected" stale="false" population="healthy males" measured-compound="umeclidinium" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment; no model was built for this record.  
 **Parameters:** 7 extracted.

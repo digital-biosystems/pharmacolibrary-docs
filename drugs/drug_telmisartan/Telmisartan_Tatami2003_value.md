@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the val
 Tatami S et al., Population pharmacokinetics of an angio…, Drug metabolism and pharmac… (2003)
   ·  DOI: [10.2133/dmpk.18.203](https://doi.org/10.2133/dmpk.18.203)
 
-## Model component
-<dbs-pgx drug="telmisartan" model-id="Telmisartan_Tatami2003_value" status="rejected" stale="true" population="healthy volunteers and hypertensive patients" measured-compound="telmisartan" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="telmisartan" model-id="Telmisartan_Tatami2003_value" status="rejected" stale="true" population="healthy volunteers and hypertensive patients" measured-compound="telmisartan" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 2 extracted.

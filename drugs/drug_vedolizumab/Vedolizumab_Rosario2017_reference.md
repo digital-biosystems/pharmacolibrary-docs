@@ -20,8 +20,7 @@
 Rosario M et al., A Review of the Clinical Pharmacokineti…, Clinical pharmacokinetics (2017)
   ·  DOI: [10.1007/s40262-017-0546-0](https://doi.org/10.1007/s40262-017-0546-0)
 
-## Model component
-<dbs-pgx drug="vedolizumab" model-id="Vedolizumab_Rosario2017_reference" status="needs_review" stale="false" population="adults with ulcerative colitis or Crohn&#39;s disease and healthy volunteers" measured-compound="vedolizumab" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="vedolizumab" model-id="Vedolizumab_Rosario2017_reference" status="needs_review" stale="false" population="adults with ulcerative colitis or Crohn&#39;s disease and healthy volunteers" measured-compound="vedolizumab" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 8 extracted.

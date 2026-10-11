@@ -33,8 +33,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on paramet
 Singh N et al., Aminoglycosides enhance meropenem/vabor…, Antimicrobial agents and ch… (2026)
   ·  DOI: [10.1128/aac.01365-25](https://doi.org/10.1128/aac.01365-25)
 
-## Model component
-<dbs-pgx drug="diclofenac" model-id="Diclofenac_Singh2026_reference" status="rejected" stale="true" population="" measured-compound="" parameterization="" topology=""></dbs-pgx>
+<div class="pk-model-meta" hidden drug="diclofenac" model-id="Diclofenac_Singh2026_reference" status="rejected" stale="true" population="" measured-compound="" parameterization="" topology=""></div>
 
 **Model structure:** —; no model was built for this record.  
 **Parameters:** 0 extracted.

@@ -23,8 +23,7 @@
 Watkins WM et al., A preliminary pharmacokinetic study of…, The Journal of pharmacy and… (1987)
   ·  DOI: [10.1111/j.2042-7158.1987.tb06263.x](https://doi.org/10.1111/j.2042-7158.1987.tb06263.x)
 
-## Model component
-<dbs-pgx drug="Cycloguanil" model-id="Cycloguanil_Watkins1987_reference" status="rejected" stale="false" population="healthy adults" measured-compound="cycloguanil" parameterization="mechanistic" topology="general_linear"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="Cycloguanil" model-id="Cycloguanil_Watkins1987_reference" status="rejected" stale="false" population="healthy adults" measured-compound="cycloguanil" parameterization="mechanistic" topology="general_linear"></div>
 
 **Model structure:** general linear; no model was built for this record.  
 **Parameters:** 0 extracted.

@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the val
 Maharaj AR et al., Population pharmacokinetics of olanzapi…, British journal of clinical… (2021)
   ·  DOI: [10.1111/bcp.14414](https://doi.org/10.1111/bcp.14414)
 
-## Model component
-<dbs-pgx drug="olanzapine" model-id="Olanzapine_Maharaj2021_reference" status="needs_review" stale="true" population="children receiving olanzapine per standard of care (infants to adolescents)" measured-compound="olanzapine" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="olanzapine" model-id="Olanzapine_Maharaj2021_reference" status="needs_review" stale="true" population="children receiving olanzapine per standard of care (infants to adolescents)" measured-compound="olanzapine" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 3 extracted.

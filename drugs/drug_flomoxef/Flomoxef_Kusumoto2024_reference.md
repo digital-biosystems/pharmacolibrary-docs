@@ -23,8 +23,7 @@
 Kusumoto M et al., Pharmacokinetic and Pharmacodynamic Ana…, International journal of mo… (2024)
   ·  DOI: [10.3390/ijms25021105](https://doi.org/10.3390/ijms25021105)
 
-## Model component
-<dbs-pgx drug="flomoxef" model-id="Flomoxef_Kusumoto2024_reference" status="extracted" stale="false" population="dogs" measured-compound="flomoxef" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="flomoxef" model-id="Flomoxef_Kusumoto2024_reference" status="extracted" stale="false" population="dogs" measured-compound="flomoxef" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameters:** 2 extracted.

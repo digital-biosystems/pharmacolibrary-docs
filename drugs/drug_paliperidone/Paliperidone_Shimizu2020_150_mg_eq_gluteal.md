@@ -23,8 +23,7 @@
 Shimizu H et al., Population Pharmacokinetics of Paliperi…, Clinical pharmacology in dr… (2020)
   ·  DOI: [10.1002/cpdd.737](https://doi.org/10.1002/cpdd.737)
 
-## Model component
-<dbs-pgx drug="paliperidone" model-id="Paliperidone_Shimizu2020_150_mg_eq_gluteal" status="needs_review" stale="false" population="Japanese, Korean, and Taiwanese patients with schizophrenia" measured-compound="paliperidone" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="paliperidone" model-id="Paliperidone_Shimizu2020_150_mg_eq_gluteal" status="needs_review" stale="false" population="Japanese, Korean, and Taiwanese patients with schizophrenia" measured-compound="paliperidone" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 7 extracted.

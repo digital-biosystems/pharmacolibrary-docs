@@ -33,8 +33,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which m
 Brookfield K et al., Magnesium sulfate pharmacokinetics afte…, AJOG global reports (2021)
   ·  DOI: [10.1016/j.xagr.2021.100018](https://doi.org/10.1016/j.xagr.2021.100018)
 
-## Model component
-<dbs-pgx drug="magnesium (different salts in combination)" model-id="MagnesiumDifferentSaltsInCombination_Brookfield2021_referenc" status="rejected" stale="true" population="women with severe preeclampsia" measured-compound="magnesium" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="magnesium (different salts in combination)" model-id="MagnesiumDifferentSaltsInCombination_Brookfield2021_referenc" status="rejected" stale="true" population="women with severe preeclampsia" measured-compound="magnesium" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 2 extracted.

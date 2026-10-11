@@ -21,8 +21,7 @@
 Nie Y et al., Population Pharmacokinetic of Epidural…, Drug design, development an… (2025)
   ·  DOI: [10.2147/dddt.s500189](https://doi.org/10.2147/dddt.s500189)
 
-## Model component
-<dbs-pgx drug="ropivacaine" model-id="Ropivacaine_Nie2025_reference" status="rejected" stale="false" population="" measured-compound="ropivacaine" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="ropivacaine" model-id="Ropivacaine_Nie2025_reference" status="rejected" stale="false" population="" measured-compound="ropivacaine" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment; no model was built for this record.  
 **Parameters:** 4 extracted.

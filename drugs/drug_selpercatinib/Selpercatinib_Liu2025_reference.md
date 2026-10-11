@@ -20,8 +20,7 @@
 Liu D et al., Population Pharmacokinetics Modeling of…, CPT: pharmacometrics & syst… (2025)
   ·  DOI: [10.1002/psp4.70042](https://doi.org/10.1002/psp4.70042)
 
-## Model component
-<dbs-pgx drug="selpercatinib" model-id="Selpercatinib_Liu2025_reference" status="needs_review" stale="false" population="adult and pediatric patients with advanced solid tumors" measured-compound="selpercatinib" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="selpercatinib" model-id="Selpercatinib_Liu2025_reference" status="needs_review" stale="false" population="adult and pediatric patients with advanced solid tumors" measured-compound="selpercatinib" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 2 extracted.

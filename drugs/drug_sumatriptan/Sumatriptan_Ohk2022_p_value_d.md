@@ -24,8 +24,7 @@ Independently confirmed by `gpt-oss:120b`.
 Ohk B et al., Evaluation of sex differences in the ph…, Biopharmaceutics & drug dis… (2022)
   ·  DOI: [10.1002/bdd.2307](https://doi.org/10.1002/bdd.2307)
 
-## Model component
-<dbs-pgx drug="sumatriptan" model-id="Sumatriptan_Ohk2022_p_value_d" status="needs_review" stale="false" population="healthy Korean adults" measured-compound="sumatriptan" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="sumatriptan" model-id="Sumatriptan_Ohk2022_p_value_d" status="needs_review" stale="false" population="healthy Korean adults" measured-compound="sumatriptan" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 6 extracted.

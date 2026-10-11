@@ -21,8 +21,7 @@
 Ikawa K et al., Population pharmacokinetics and pharmac…, Journal of clinical pharmac… (2008)
   ·  DOI: [10.1111/j.1365-2710.2008.00908.x](https://doi.org/10.1111/j.1365-2710.2008.00908.x)
 
-## Model component
-<dbs-pgx drug="biapenem" model-id="Biapenem_Ikawa2008v3_reference" status="rejected" stale="false" population="paediatric patients" measured-compound="biapenem" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="biapenem" model-id="Biapenem_Ikawa2008v3_reference" status="rejected" stale="false" population="paediatric patients" measured-compound="biapenem" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 4 extracted.

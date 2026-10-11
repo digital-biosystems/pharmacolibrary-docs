@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the val
 Cooper JM et al., The pharmacokinetics of sertraline in o…, British journal of clinical… (2015)
   ·  DOI: [10.1111/bcp.12500](https://doi.org/10.1111/bcp.12500)
 
-## Model component
-<dbs-pgx drug="sertraline" model-id="Sertraline_Cooper2015_reference" status="needs_review" stale="true" population="patients with sertraline overdose" measured-compound="sertraline" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="sertraline" model-id="Sertraline_Cooper2015_reference" status="needs_review" stale="true" population="patients with sertraline overdose" measured-compound="sertraline" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 3 extracted.

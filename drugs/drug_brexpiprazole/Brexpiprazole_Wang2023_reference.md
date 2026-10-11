@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Wang Y et al., Population Pharmacokinetic Analysis of…, Journal of clinical pharmac… (2023)
   ·  DOI: [10.1002/jcph.2307](https://doi.org/10.1002/jcph.2307)
 
-## Model component
-<dbs-pgx drug="brexpiprazole" model-id="Brexpiprazole_Wang2023_reference" status="extracted" stale="true" population="adults, adolescents, and children with CNS disorders" measured-compound="brexpiprazole" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="brexpiprazole" model-id="Brexpiprazole_Wang2023_reference" status="extracted" stale="true" population="adults, adolescents, and children with CNS disorders" measured-compound="brexpiprazole" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment, oral mammillary model — template `PK_2C_enteral`.  
 **Parameters:** 8 extracted.

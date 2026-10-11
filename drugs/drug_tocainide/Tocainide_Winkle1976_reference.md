@@ -24,8 +24,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on paramet
 Winkle RA et al., Clinical efficacy and pharmacokinetics…, Circulation (1976)
   ·  DOI: [10.1161/01.cir.54.6.885](https://doi.org/10.1161/01.cir.54.6.885)
 
-## Model component
-<dbs-pgx drug="tocainide" model-id="Tocainide_Winkle1976_reference" status="needs_review" stale="false" population="adults with frequent PVCs" measured-compound="tocainide" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="tocainide" model-id="Tocainide_Winkle1976_reference" status="needs_review" stale="false" population="adults with frequent PVCs" measured-compound="tocainide" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 2 extracted.

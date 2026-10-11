@@ -23,8 +23,7 @@
 Pypendop BH et al., Pharmacokinetics of fentanyl, alfentani…, Journal of veterinary pharm… (2014)
   ·  DOI: [10.1111/jvp.12047](https://doi.org/10.1111/jvp.12047)
 
-## Model component
-<dbs-pgx drug="sufentanil" model-id="Sufentanil_Pypendop2014_reference" status="extracted" stale="false" population="isoflurane-anesthetized cats" measured-compound="sufentanil" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="sufentanil" model-id="Sufentanil_Pypendop2014_reference" status="extracted" stale="false" population="isoflurane-anesthetized cats" measured-compound="sufentanil" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameters:** 4 extracted.

@@ -24,8 +24,7 @@
 Plock N et al., Pharmacokinetic/Pharmacodynamic Modelin…, Clinical and translational… (2017)
   ·  DOI: [10.1111/cts.12436](https://doi.org/10.1111/cts.12436)
 
-## Model component
-<dbs-pgx drug="roflumilast" model-id="Roflumilast_Plock2017_0_35_mg" status="needs_review" stale="false" population="db/db mice" measured-compound="roflumilast and roflumilast-N-oxide" parameterization="mechanistic" topology="parent_metabolite"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="roflumilast" model-id="Roflumilast_Plock2017_0_35_mg" status="needs_review" stale="false" population="db/db mice" measured-compound="roflumilast and roflumilast-N-oxide" parameterization="mechanistic" topology="parent_metabolite"></div>
 
 **Model structure:** parent + metabolite; no model was built for this record.  
 **Parameters:** 5 extracted.

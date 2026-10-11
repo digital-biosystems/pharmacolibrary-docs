@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on `parame
 Garg K et al., Population pharmacokinetics of ciproflo…, Pediatric research (2024)
   ·  DOI: [10.1038/s41390-023-02941-3](https://doi.org/10.1038/s41390-023-02941-3)
 
-## Model component
-<dbs-pgx drug="ciprofloxacin" model-id="Ciprofloxacin_Garg2024_reference" status="extracted" stale="true" population="neonates with early onset sepsis" measured-compound="ciprofloxacin" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="ciprofloxacin" model-id="Ciprofloxacin_Garg2024_reference" status="extracted" stale="true" population="neonates with early onset sepsis" measured-compound="ciprofloxacin" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 4 extracted.

@@ -21,8 +21,7 @@
 Chapagain M et al., Omadacycline efficacy in the hollow fib…, The Journal of antimicrobia… (2022)
   ·  DOI: [10.1093/jac/dkac068](https://doi.org/10.1093/jac/dkac068)
 
-## Model component
-<dbs-pgx drug="omadacycline" model-id="Omadacycline_Chapagain2022_reference" status="extracted" stale="false" population="simulated healthy adults" measured-compound="omadacycline" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="omadacycline" model-id="Omadacycline_Chapagain2022_reference" status="extracted" stale="false" population="simulated healthy adults" measured-compound="omadacycline" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment, IV mammillary model — template `PK_2C`.  
 **Parameters:** 4 extracted.

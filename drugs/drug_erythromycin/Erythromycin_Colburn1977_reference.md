@@ -21,8 +21,7 @@
 Colburn WA et al., Pharmacokinetics of erythromycin on rep…, Journal of clinical pharmac… (1977)
   ·  DOI: [10.1177/009127007701701006](https://doi.org/10.1177/009127007701701006)
 
-## Model component
-<dbs-pgx drug="erythromycin" model-id="Erythromycin_Colburn1977_reference" status="rejected" stale="false" population="healthy adults" measured-compound="erythromycin" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="erythromycin" model-id="Erythromycin_Colburn1977_reference" status="rejected" stale="false" population="healthy adults" measured-compound="erythromycin" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

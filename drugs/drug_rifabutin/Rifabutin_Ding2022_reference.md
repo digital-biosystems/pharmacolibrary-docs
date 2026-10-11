@@ -29,8 +29,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on paramet
 Ding Q et al., A Review of Population Pharmacokinetic…, Drug design, development an… (2022)
   ·  DOI: [10.2147/dddt.s384637](https://doi.org/10.2147/dddt.s384637)
 
-## Model component
-<dbs-pgx drug="rifabutin" model-id="Rifabutin_Ding2022_reference" status="needs_review" stale="false" population="" measured-compound="rifabutin" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="rifabutin" model-id="Rifabutin_Ding2022_reference" status="needs_review" stale="false" population="" measured-compound="rifabutin" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 3 extracted.

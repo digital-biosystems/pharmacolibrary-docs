@@ -29,8 +29,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the val
 Rambiritch V et al., Population pharmacokinetic modeling of…, Clinical pharmacology : adv… (2016)
   ·  DOI: [10.2147/CPAA.S102676](https://doi.org/10.2147/CPAA.S102676)
 
-## Model component
-<dbs-pgx drug="glibenclamide" model-id="Glibenclamide_Rambiritch2016v2_mean" status="needs_review" stale="false" population="poorly controlled South African type 2 diabetic subjects" measured-compound="glibenclamide" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="glibenclamide" model-id="Glibenclamide_Rambiritch2016v2_mean" status="needs_review" stale="false" population="poorly controlled South African type 2 diabetic subjects" measured-compound="glibenclamide" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 7 extracted.

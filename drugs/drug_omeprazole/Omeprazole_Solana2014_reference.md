@@ -29,8 +29,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Solana MJ et al., Population pharmacokinetics of omeprazo…, Therapeutic drug monitoring (2014)
   ·  DOI: [10.1097/FTD.0000000000000033](https://doi.org/10.1097/FTD.0000000000000033)
 
-## Model component
-<dbs-pgx drug="omeprazole" model-id="Omeprazole_Solana2014_reference" status="rejected" stale="false" population="critically ill pediatric patients" measured-compound="omeprazole" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="omeprazole" model-id="Omeprazole_Solana2014_reference" status="rejected" stale="false" population="critically ill pediatric patients" measured-compound="omeprazole" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

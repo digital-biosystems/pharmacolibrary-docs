@@ -30,8 +30,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the lin
 ## Citation
 Aso R et al., Population pharmacokinetics, protein bi…, International journal of cl… (2001)
 
-## Model component
-<dbs-pgx drug="disopyramide" model-id="Disopyramide_Aso2001_reference" status="" stale="true" population="adults with arrhythmia" measured-compound="" parameterization="" topology=""></dbs-pgx>
+<div class="pk-model-meta" hidden drug="disopyramide" model-id="Disopyramide_Aso2001_reference" status="" stale="true" population="adults with arrhythmia" measured-compound="" parameterization="" topology=""></div>
 
 **Model structure:** —; no model was built for this record.  
 **Parameters:** 0 extracted.

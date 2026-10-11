@@ -33,8 +33,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on bioavai
 Hampton CE et al., Pharmacokinetics of oral and compounded…, Journal of veterinary pharm… (2021)
   ·  DOI: [10.1111/jvp.12977](https://doi.org/10.1111/jvp.12977)
 
-## Model component
-<dbs-pgx drug="gabapentin" model-id="Gabapentin_Hampton2021_reference" status="rejected" stale="true" population="healthy adult Duroc pigs" measured-compound="gabapentin" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="gabapentin" model-id="Gabapentin_Hampton2021_reference" status="rejected" stale="true" population="healthy adult Duroc pigs" measured-compound="gabapentin" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 10 extracted.

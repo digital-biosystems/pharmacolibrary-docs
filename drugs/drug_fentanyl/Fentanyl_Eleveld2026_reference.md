@@ -21,8 +21,7 @@
 Eleveld DJ et al., OpenPMX Software for Nonlinear Mixed-Ef…, CPT: pharmacometrics & syst… (2026)
   ·  DOI: [10.1002/psp4.70250](https://doi.org/10.1002/psp4.70250)
 
-## Model component
-<dbs-pgx drug="fentanyl" model-id="Fentanyl_Eleveld2026_reference" status="rejected" stale="false" population="unknown" measured-compound="fentanyl" parameterization="mechanistic" topology="3C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="fentanyl" model-id="Fentanyl_Eleveld2026_reference" status="rejected" stale="false" population="unknown" measured-compound="fentanyl" parameterization="mechanistic" topology="3C"></div>
 
 **Model structure:** 3-compartment; no model was built for this record.  
 **Parameters:** 5 extracted.

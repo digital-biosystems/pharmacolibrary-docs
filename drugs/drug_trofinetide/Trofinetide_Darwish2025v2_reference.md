@@ -21,8 +21,7 @@
 Darwish M et al., Population Pharmacokinetics of Trofinet…, Advances in therapy (2025)
   ·  DOI: [10.1007/s12325-024-03058-7](https://doi.org/10.1007/s12325-024-03058-7)
 
-## Model component
-<dbs-pgx drug="trofinetide" model-id="Trofinetide_Darwish2025v2_reference" status="extracted" stale="false" population="healthy volunteers and pediatric and adult patients with Rett syndrome, TBI, or fragile X syndrome" measured-compound="trofinetide" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="trofinetide" model-id="Trofinetide_Darwish2025v2_reference" status="extracted" stale="false" population="healthy volunteers and pediatric and adult patients with Rett syndrome, TBI, or fragile X syndrome" measured-compound="trofinetide" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment, oral mammillary model — template `PK_2C_enteral`.  
 **Parameters:** 6 extracted, plus 6 covariate effects.

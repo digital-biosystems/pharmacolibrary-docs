@@ -21,8 +21,7 @@
 Kreeftmeijer-Vegter AR et al., Population pharmacokinetics of levamiso…, British journal of clinical… (2015)
   ·  DOI: [10.1111/bcp.12607](https://doi.org/10.1111/bcp.12607)
 
-## Model component
-<dbs-pgx drug="levamisole" model-id="Levamisole_KreeftmeijerVegter2015_reference" status="extracted" stale="false" population="children with steroid-sensitive nephrotic syndrome" measured-compound="levamisole" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="levamisole" model-id="Levamisole_KreeftmeijerVegter2015_reference" status="extracted" stale="false" population="children with steroid-sensitive nephrotic syndrome" measured-compound="levamisole" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 5 extracted.

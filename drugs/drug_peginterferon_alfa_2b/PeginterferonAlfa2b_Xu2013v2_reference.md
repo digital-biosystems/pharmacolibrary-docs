@@ -20,8 +20,7 @@
 Xu C et al., Population pharmacokinetics of peginter…, European journal of clinica… (2013)
   ·  DOI: [10.1007/s00228-013-1574-9](https://doi.org/10.1007/s00228-013-1574-9)
 
-## Model component
-<dbs-pgx drug="peginterferon alfa-2b" model-id="PeginterferonAlfa2b_Xu2013v2_reference" status="rejected" stale="false" population="pediatric patients with chronic hepatitis C" measured-compound="peginterferon_alfa_2b" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="peginterferon alfa-2b" model-id="PeginterferonAlfa2b_Xu2013v2_reference" status="rejected" stale="false" population="pediatric patients with chronic hepatitis C" measured-compound="peginterferon_alfa_2b" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

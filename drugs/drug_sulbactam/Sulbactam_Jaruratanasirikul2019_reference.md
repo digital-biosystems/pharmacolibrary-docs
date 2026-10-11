@@ -21,8 +21,7 @@
 Jaruratanasirikul S et al., Population pharmacokinetics and Monte C…, European journal of pharmac… (2019)
   ·  DOI: [10.1016/j.ejps.2019.05.018](https://doi.org/10.1016/j.ejps.2019.05.018)
 
-## Model component
-<dbs-pgx drug="sulbactam" model-id="Sulbactam_Jaruratanasirikul2019_reference" status="extracted" stale="false" population="patients with ventilator-associated pneumonia" measured-compound="sulbactam" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="sulbactam" model-id="Sulbactam_Jaruratanasirikul2019_reference" status="extracted" stale="false" population="patients with ventilator-associated pneumonia" measured-compound="sulbactam" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 3 extracted.

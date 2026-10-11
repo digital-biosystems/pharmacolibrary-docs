@@ -21,8 +21,7 @@
 van den Berg SPH et al., Pharmacokinetic Model-Informed Precisio…, CPT: pharmacometrics & syst… (2025)
   ·  DOI: [10.1002/psp4.70014](https://doi.org/10.1002/psp4.70014)
 
-## Model component
-<dbs-pgx drug="natalizumab" model-id="Natalizumab_van2025_reference" status="rejected" stale="false" population="patients with multiple sclerosis" measured-compound="natalizumab" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="natalizumab" model-id="Natalizumab_van2025_reference" status="rejected" stale="false" population="patients with multiple sclerosis" measured-compound="natalizumab" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment; no model was built for this record.  
 **Parameters:** 8 extracted, plus 2 covariate effects.

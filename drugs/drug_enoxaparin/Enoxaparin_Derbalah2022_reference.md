@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Derbalah A et al., Optimal dosing of enoxaparin in overwei…, British journal of clinical… (2022)
   ·  DOI: [10.1111/bcp.15459](https://doi.org/10.1111/bcp.15459)
 
-## Model component
-<dbs-pgx drug="enoxaparin" model-id="Enoxaparin_Derbalah2022_reference" status="rejected" stale="false" population="overweight and obese children" measured-compound="anti-Xa activity" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="enoxaparin" model-id="Enoxaparin_Derbalah2022_reference" status="rejected" stale="false" population="overweight and obese children" measured-compound="anti-Xa activity" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

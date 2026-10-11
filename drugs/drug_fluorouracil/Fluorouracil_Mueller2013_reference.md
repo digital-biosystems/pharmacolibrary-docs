@@ -27,8 +27,7 @@ Without a unit the value cannot be converted, so the model cannot use it. Extrac
 Mueller F et al., Gender-specific elimination of continuo…, Cancer chemotherapy and pha… (2013)
   ·  DOI: [10.1007/s00280-012-2018-4](https://doi.org/10.1007/s00280-012-2018-4)
 
-## Model component
-<dbs-pgx drug="fluorouracil" model-id="Fluorouracil_Mueller2013_reference" status="needs_review" stale="false" population="adults with gastrointestinal malignancies" measured-compound="5-fluorouracil" parameterization="mechanistic" topology="parent_metabolite"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="fluorouracil" model-id="Fluorouracil_Mueller2013_reference" status="needs_review" stale="false" population="adults with gastrointestinal malignancies" measured-compound="5-fluorouracil" parameterization="mechanistic" topology="parent_metabolite"></div>
 
 **Model structure:** parent + metabolite; no model was built for this record.  
 **Parameters:** 3 extracted.

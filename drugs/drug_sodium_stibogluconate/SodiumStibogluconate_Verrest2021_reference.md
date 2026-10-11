@@ -21,8 +21,7 @@
 Verrest L et al., Geographical Variability in Paromomycin…, Clinical pharmacokinetics (2021)
   ·  DOI: [10.1007/s40262-021-01036-8](https://doi.org/10.1007/s40262-021-01036-8)
 
-## Model component
-<dbs-pgx drug="sodium stibogluconate" model-id="SodiumStibogluconate_Verrest2021_reference" status="extracted" stale="false" population="" measured-compound="sodium_stibogluconate" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="sodium stibogluconate" model-id="SodiumStibogluconate_Verrest2021_reference" status="extracted" stale="false" population="" measured-compound="sodium_stibogluconate" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 3 extracted.

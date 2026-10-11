@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Taylor T et al., Pharmacokinetics of isosorbide dinitrat…, Biopharmaceutics & drug dis… (1980)
   ·  DOI: [10.1002/bdd.2510010310](https://doi.org/10.1002/bdd.2510010310)
 
-## Model component
-<dbs-pgx drug="isosorbide dinitrate" model-id="IsosorbideDinitrate_Taylor1980_reference" status="needs_review" stale="true" population="normal human subjects" measured-compound="isosorbide dinitrate" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="isosorbide dinitrate" model-id="IsosorbideDinitrate_Taylor1980_reference" status="needs_review" stale="true" population="normal human subjects" measured-compound="isosorbide dinitrate" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 2 extracted.

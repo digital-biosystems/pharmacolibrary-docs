@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Al-Qurain AA et al., Population Pharmacokinetic Model for Tr…, European journal of drug me… (2022)
   ·  DOI: [10.1007/s13318-022-00756-x](https://doi.org/10.1007/s13318-022-00756-x)
 
-## Model component
-<dbs-pgx drug="tramadol" model-id="Tramadol_AlQurain2022_final" status="rejected" stale="true" population="older patients" measured-compound="tramadol" parameterization="apparent" topology="parent_metabolite"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="tramadol" model-id="Tramadol_AlQurain2022_final" status="rejected" stale="true" population="older patients" measured-compound="tramadol" parameterization="apparent" topology="parent_metabolite"></div>
 
 **Model structure:** parent + metabolite; no model was built for this record.  
 **Parameters:** 7 extracted, plus 2 covariate effects.

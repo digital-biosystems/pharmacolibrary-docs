@@ -23,8 +23,7 @@
 Yao T et al., Assessment of ethnic differences in pha…, British journal of clinical… (2025)
   ·  DOI: [10.1002/bcp.70018](https://doi.org/10.1002/bcp.70018)
 
-## Model component
-<dbs-pgx drug="acalabrutinib" model-id="Acalabrutinib_Yao2025_reference" status="rejected" stale="false" population="patients with B-cell malignancies" measured-compound="acalabrutinib and ACP-5862" parameterization="mechanistic" topology="parent_metabolite"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="acalabrutinib" model-id="Acalabrutinib_Yao2025_reference" status="rejected" stale="false" population="patients with B-cell malignancies" measured-compound="acalabrutinib and ACP-5862" parameterization="mechanistic" topology="parent_metabolite"></div>
 
 **Model structure:** parent + metabolite; no model was built for this record.  
 **Parameters:** 0 extracted.

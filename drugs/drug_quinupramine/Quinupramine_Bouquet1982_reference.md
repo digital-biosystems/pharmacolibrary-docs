@@ -29,8 +29,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on how the
 ## Citation
 Bouquet S et al., [Crossover pharmacokinetic study of qui…, L'Encephale (1982)
 
-## Model component
-<dbs-pgx drug="quinupramine" model-id="Quinupramine_Bouquet1982_reference" status="rejected" stale="true" population="healthy adults" measured-compound="quinupramine" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="quinupramine" model-id="Quinupramine_Bouquet1982_reference" status="rejected" stale="true" population="healthy adults" measured-compound="quinupramine" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 5 extracted.

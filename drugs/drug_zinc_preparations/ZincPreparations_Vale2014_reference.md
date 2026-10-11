@@ -30,8 +30,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the val
 Vale SH et al., Zinc pharmacokinetic parameters in the…, European journal of clinica… (2014)
   ·  DOI: [10.1038/ejcn.2013.250](https://doi.org/10.1038/ejcn.2013.250)
 
-## Model component
-<dbs-pgx drug="zinc preparations" model-id="ZincPreparations_Vale2014_reference" status="needs_review" stale="true" population="healthy children" measured-compound="zinc" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="zinc preparations" model-id="ZincPreparations_Vale2014_reference" status="needs_review" stale="true" population="healthy children" measured-compound="zinc" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 1 extracted.

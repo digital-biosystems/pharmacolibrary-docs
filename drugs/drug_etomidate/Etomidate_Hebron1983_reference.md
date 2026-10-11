@@ -21,8 +21,7 @@
 Hebron BS et al., Pharmacokinetics of etomidate associate…, British journal of anaesthe… (1983)
   ·  DOI: [10.1093/bja/55.4.281](https://doi.org/10.1093/bja/55.4.281)
 
-## Model component
-<dbs-pgx drug="etomidate" model-id="Etomidate_Hebron1983_reference" status="needs_review" stale="false" population="post-surgical patients on intermittent positive pressure ventilation" measured-compound="etomidate" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="etomidate" model-id="Etomidate_Hebron1983_reference" status="needs_review" stale="false" population="post-surgical patients on intermittent positive pressure ventilation" measured-compound="etomidate" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 2 extracted.

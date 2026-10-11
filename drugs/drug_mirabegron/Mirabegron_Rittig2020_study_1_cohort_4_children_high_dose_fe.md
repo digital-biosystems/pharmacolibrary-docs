@@ -20,8 +20,7 @@
 Rittig S et al., The pharmacokinetics, safety, and toler…, Journal of pediatric urology (2020)
   ·  DOI: [10.1016/j.jpurol.2019.10.009](https://doi.org/10.1016/j.jpurol.2019.10.009)
 
-## Model component
-<dbs-pgx drug="mirabegron" model-id="Mirabegron_Rittig2020_study_1_cohort_4_children_high_dose_fe" status="needs_review" stale="false" population="children and adolescents with neurogenic detrusor overactivity or idiopathic overactive bladder" measured-compound="mirabegron" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="mirabegron" model-id="Mirabegron_Rittig2020_study_1_cohort_4_children_high_dose_fe" status="needs_review" stale="false" population="children and adolescents with neurogenic detrusor overactivity or idiopathic overactive bladder" measured-compound="mirabegron" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 1 extracted.

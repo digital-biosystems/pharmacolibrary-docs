@@ -27,8 +27,7 @@ Independently confirmed by `gpt-oss:120b`.
 Hammerstad JP et al., L-dopa pharmacokinetics in plasma and c…, Annals of neurology (1990)
   ·  DOI: [10.1002/ana.410270507](https://doi.org/10.1002/ana.410270507)
 
-## Model component
-<dbs-pgx drug="levodopa" model-id="Levodopa_Hammerstad1990_reference" status="needs_review" stale="false" population="Rhesus monkeys" measured-compound="levodopa" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="levodopa" model-id="Levodopa_Hammerstad1990_reference" status="needs_review" stale="false" population="Rhesus monkeys" measured-compound="levodopa" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 3 extracted.

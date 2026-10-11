@@ -21,8 +21,7 @@
 Zheng ZQ et al., Model-informed precision dosing of quet…, Frontiers in psychiatry (2024)
   ·  DOI: [10.3389/fpsyt.2024.1497119](https://doi.org/10.3389/fpsyt.2024.1497119)
 
-## Model component
-<dbs-pgx drug="lorazepam" model-id="Lorazepam_Zheng2024_reference" status="extracted" stale="false" population="" measured-compound="lorazepam" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="lorazepam" model-id="Lorazepam_Zheng2024_reference" status="extracted" stale="false" population="" measured-compound="lorazepam" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 3 extracted.

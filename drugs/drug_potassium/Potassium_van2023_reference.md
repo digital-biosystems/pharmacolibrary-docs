@@ -25,8 +25,7 @@
 van der Meijden A et al., Pharmacokinetic and pharmacodynamic pro…, The Journal of antimicrobia… (2023)
   ·  DOI: [10.1093/jac/dkad022](https://doi.org/10.1093/jac/dkad022)
 
-## Model component
-<dbs-pgx drug="Potassium" model-id="Potassium_van2023_reference" status="extracted" stale="false" population="neutropenic mice" measured-compound="potassium" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="Potassium" model-id="Potassium_van2023_reference" status="extracted" stale="false" population="neutropenic mice" measured-compound="potassium" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 3 extracted.

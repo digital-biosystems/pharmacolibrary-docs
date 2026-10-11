@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Dunn A et al., Evaluating Tranexamic Acid Dosing Strat…, Journal of clinical pharmac… (2025)
   ·  DOI: [10.1002/jcph.70031](https://doi.org/10.1002/jcph.70031)
 
-## Model component
-<dbs-pgx drug="tranexamic acid" model-id="TranexamicAcid_Dunn2025_reference" status="rejected" stale="true" population="pregnant individuals" measured-compound="tranexamic acid" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="tranexamic acid" model-id="TranexamicAcid_Dunn2025_reference" status="rejected" stale="true" population="pregnant individuals" measured-compound="tranexamic acid" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment; no model was built for this record.  
 **Parameters:** 5 extracted, plus 2 covariate effects.

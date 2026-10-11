@@ -24,8 +24,7 @@
 Delbeke FT et al., The disposition of suxibuzone in the ho…, Journal of veterinary pharm… (1993)
   ·  DOI: [10.1111/j.1365-2885.1993.tb00175.x](https://doi.org/10.1111/j.1365-2885.1993.tb00175.x)
 
-## Model component
-<dbs-pgx drug="phenylbutazone" model-id="Phenylbutazone_Delbeke1993_reference" status="rejected" stale="false" population="horses" measured-compound="phenylbutazone" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="phenylbutazone" model-id="Phenylbutazone_Delbeke1993_reference" status="rejected" stale="false" population="horses" measured-compound="phenylbutazone" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

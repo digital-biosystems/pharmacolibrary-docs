@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on paramet
 Bayoumy AB et al., Population Pharmacokinetics Model of Th…, Clinical pharmacokinetics (2025)
   ·  DOI: [10.1007/s40262-025-01532-1](https://doi.org/10.1007/s40262-025-01532-1)
 
-## Model component
-<dbs-pgx drug="acetylsalicylic acid" model-id="AcetylsalicylicAcid_Bayoumy2025_reference" status="needs_review" stale="false" population="adults with inflammatory bowel disease" measured-compound="acetylsalicylic_acid" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="acetylsalicylic acid" model-id="AcetylsalicylicAcid_Bayoumy2025_reference" status="needs_review" stale="false" population="adults with inflammatory bowel disease" measured-compound="acetylsalicylic_acid" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 3 extracted.

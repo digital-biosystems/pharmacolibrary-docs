@@ -28,8 +28,7 @@ The record, built from the abstract of Webb_2001 alone, reports CL/F 43 L/h, V/F
 Webb JA et al., Contribution of dihydrocodeine and dihy…, British journal of clinical… (2001)
   ·  DOI: [10.1046/j.0306-5251.2001.01414.x](https://doi.org/10.1046/j.0306-5251.2001.01414.x)
 
-## Model component
-<dbs-pgx drug="dihydrocodeine" model-id="Dihydrocodeine_Webb2001_reference" status="rejected" stale="true" population="healthy volunteers" measured-compound="dihydrocodeine" parameterization="mechanistic" topology="parent_metabolite"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="dihydrocodeine" model-id="Dihydrocodeine_Webb2001_reference" status="rejected" stale="true" population="healthy volunteers" measured-compound="dihydrocodeine" parameterization="mechanistic" topology="parent_metabolite"></div>
 
 **Model structure:** parent + metabolite; no model was built for this record.  
 **Parameters:** 2 extracted.

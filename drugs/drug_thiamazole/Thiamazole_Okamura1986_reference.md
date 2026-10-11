@@ -21,8 +21,7 @@
 Okamura Y et al., Pharmacokinetics of methimazole in norm…, Endocrinologia japonica (1986)
   ·  DOI: [10.1507/endocrj1954.33.605](https://doi.org/10.1507/endocrj1954.33.605)
 
-## Model component
-<dbs-pgx drug="thiamazole" model-id="Thiamazole_Okamura1986_reference" status="rejected" stale="false" population="normal subjects and hyperthyroid patients" measured-compound="methimazole" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="thiamazole" model-id="Thiamazole_Okamura1986_reference" status="rejected" stale="false" population="normal subjects and hyperthyroid patients" measured-compound="methimazole" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

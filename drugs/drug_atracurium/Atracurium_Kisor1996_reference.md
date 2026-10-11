@@ -21,8 +21,7 @@
 Kisor DF et al., Importance of the organ-independent eli…, Anesthesia and analgesia (1996)
   ·  DOI: [10.1097/00000539-199611000-00029](https://doi.org/10.1097/00000539-199611000-00029)
 
-## Model component
-<dbs-pgx drug="atracurium" model-id="Atracurium_Kisor1996_reference" status="needs_review" stale="false" population="healthy adult surgical patients" measured-compound="cisatracurium" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="atracurium" model-id="Atracurium_Kisor1996_reference" status="needs_review" stale="false" population="healthy adult surgical patients" measured-compound="cisatracurium" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 4 extracted.

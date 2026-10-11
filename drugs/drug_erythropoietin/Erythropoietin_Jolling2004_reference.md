@@ -32,8 +32,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Jolling K et al., Population pharmacokinetic analysis of…, Journal of pharmaceutical s… (2004)
   ·  DOI: [10.1002/jps.20200](https://doi.org/10.1002/jps.20200)
 
-## Model component
-<dbs-pgx drug="erythropoietin" model-id="Erythropoietin_Jolling2004_reference" status="rejected" stale="true" population="Sprague-Dawley rats" measured-compound="pegylated human erythropoietin" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="erythropoietin" model-id="Erythropoietin_Jolling2004_reference" status="rejected" stale="true" population="Sprague-Dawley rats" measured-compound="pegylated human erythropoietin" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

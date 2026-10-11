@@ -29,8 +29,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 ## Citation
 Trenk D et al., Pharmacokinetics and bioavailability of…, Arzneimittel-Forschung (1987)
 
-## Model component
-<dbs-pgx drug="piretanide" model-id="Piretanide_Trenk1987_reference" status="needs_review" stale="true" population="healthy male volunteers" measured-compound="piretanide" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="piretanide" model-id="Piretanide_Trenk1987_reference" status="needs_review" stale="true" population="healthy male volunteers" measured-compound="piretanide" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 5 extracted.

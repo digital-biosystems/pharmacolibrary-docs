@@ -29,8 +29,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on paramet
 Shi S et al., Pharmacokinetics of intravenous oxycodo…, Frontiers in medicine (2026)
   ·  DOI: [10.3389/fmed.2026.1834903](https://doi.org/10.3389/fmed.2026.1834903)
 
-## Model component
-<dbs-pgx drug="oxycodone" model-id="Oxycodone_Shi2026_reference" status="extracted" stale="true" population="perioperative patients with liver cancer" measured-compound="oxycodone" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="oxycodone" model-id="Oxycodone_Shi2026_reference" status="extracted" stale="true" population="perioperative patients with liver cancer" measured-compound="oxycodone" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameters:** 2 extracted.

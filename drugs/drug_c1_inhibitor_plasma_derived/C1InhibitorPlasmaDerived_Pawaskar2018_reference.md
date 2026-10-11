@@ -35,8 +35,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Pawaskar D et al., Population pharmacokinetics of subcutan…, Clinical and experimental a… (2018)
   ·  DOI: [10.1111/cea.13220](https://doi.org/10.1111/cea.13220)
 
-## Model component
-<dbs-pgx drug="c1-inhibitor, plasma derived" model-id="C1InhibitorPlasmaDerived_Pawaskar2018_reference" status="extracted" stale="true" population="healthy volunteers and HAE patients" measured-compound="C1-INH functional activity" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="c1-inhibitor, plasma derived" model-id="C1InhibitorPlasmaDerived_Pawaskar2018_reference" status="extracted" stale="true" population="healthy volunteers and HAE patients" measured-compound="C1-INH functional activity" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 6 extracted.

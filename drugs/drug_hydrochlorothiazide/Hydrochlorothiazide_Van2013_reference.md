@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the val
 Van Wart SA et al., Population-based meta-analysis of hydro…, Biopharmaceutics & drug dis… (2013)
   ·  DOI: [10.1002/bdd.1863](https://doi.org/10.1002/bdd.1863)
 
-## Model component
-<dbs-pgx drug="hydrochlorothiazide" model-id="Hydrochlorothiazide_Van2013_reference" status="needs_review" stale="true" population="healthy subjects and CHF patients" measured-compound="hydrochlorothiazide" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="hydrochlorothiazide" model-id="Hydrochlorothiazide_Van2013_reference" status="needs_review" stale="true" population="healthy subjects and CHF patients" measured-compound="hydrochlorothiazide" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment; no model was built for this record.  
 **Parameters:** 5 extracted, plus 2 covariate effects.

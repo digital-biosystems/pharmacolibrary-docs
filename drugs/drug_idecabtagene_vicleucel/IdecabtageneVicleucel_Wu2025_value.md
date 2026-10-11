@@ -20,8 +20,7 @@
 Wu F et al., Population Cellular Kinetics of Idecabt…, Clinical pharmacokinetics (2025)
   ·  DOI: [10.1007/s40262-025-01531-2](https://doi.org/10.1007/s40262-025-01531-2)
 
-## Model component
-<dbs-pgx drug="idecabtagene vicleucel" model-id="IdecabtageneVicleucel_Wu2025_value" status="rejected" stale="false" population="patients with triple-class-exposed relapsed/refractory multiple myeloma" measured-compound="idecabtagene_vicleucel" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="idecabtagene vicleucel" model-id="IdecabtageneVicleucel_Wu2025_value" status="rejected" stale="false" population="patients with triple-class-exposed relapsed/refractory multiple myeloma" measured-compound="idecabtagene_vicleucel" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 4 extracted.

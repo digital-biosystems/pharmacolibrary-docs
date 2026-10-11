@@ -23,8 +23,7 @@
 Nøhr MK et al., Is oral absorption of vigabatrin carrie…, European journal of pharmac… (2015)
   ·  DOI: [10.1016/j.ejps.2014.12.018](https://doi.org/10.1016/j.ejps.2014.12.018)
 
-## Model component
-<dbs-pgx drug="vigabatrin" model-id="Vigabatrin_Nhr2015_reference" status="rejected" stale="false" population="Sprague Dawley rats" measured-compound="vigabatrin" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="vigabatrin" model-id="Vigabatrin_Nhr2015_reference" status="rejected" stale="false" population="Sprague Dawley rats" measured-compound="vigabatrin" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 3 extracted.

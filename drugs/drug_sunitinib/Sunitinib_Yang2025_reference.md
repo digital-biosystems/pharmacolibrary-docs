@@ -23,8 +23,7 @@
 Yang G et al., Translational Model-Informed Dose Selec…, Clinical and translational… (2025)
   ·  DOI: [10.1111/cts.70287](https://doi.org/10.1111/cts.70287)
 
-## Model component
-<dbs-pgx drug="sunitinib" model-id="Sunitinib_Yang2025_reference" status="extracted" stale="false" population="" measured-compound="sunitinib" parameterization="apparent" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="sunitinib" model-id="Sunitinib_Yang2025_reference" status="extracted" stale="false" population="" measured-compound="sunitinib" parameterization="apparent" topology="2C"></div>
 
 **Model structure:** 2-compartment, oral mammillary model — template `PK_2C_enteral`.  
 **Parameters:** 5 extracted.

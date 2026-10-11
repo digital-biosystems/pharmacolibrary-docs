@@ -21,8 +21,7 @@
 Sánchez-Vidaurre S et al., Population PK Modeling of Denosumab Bio…, Pharmaceutics (2025)
   ·  DOI: [10.3390/pharmaceutics17091146](https://doi.org/10.3390/pharmaceutics17091146)
 
-## Model component
-<dbs-pgx drug="denosumab" model-id="Denosumab_SnchezVidaurre2025_reference" status="rejected" stale="false" population="healthy adult men and postmenopausal women with osteoporosis" measured-compound="denosumab" parameterization="apparent" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="denosumab" model-id="Denosumab_SnchezVidaurre2025_reference" status="rejected" stale="false" population="healthy adult men and postmenopausal women with osteoporosis" measured-compound="denosumab" parameterization="apparent" topology="2C"></div>
 
 **Model structure:** 2-compartment; no model was built for this record.  
 **Parameters:** 7 extracted.

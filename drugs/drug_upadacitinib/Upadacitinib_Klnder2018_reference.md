@@ -20,8 +20,7 @@
 Klünder B et al., Population Pharmacokinetics of Upadacit…, Clinical pharmacokinetics (2018)
   ·  DOI: [10.1007/s40262-017-0605-6](https://doi.org/10.1007/s40262-017-0605-6)
 
-## Model component
-<dbs-pgx drug="upadacitinib" model-id="Upadacitinib_Klnder2018_reference" status="needs_review" stale="false" population="healthy subjects and subjects with rheumatoid arthritis" measured-compound="upadacitinib" parameterization="apparent" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="upadacitinib" model-id="Upadacitinib_Klnder2018_reference" status="needs_review" stale="false" population="healthy subjects and subjects with rheumatoid arthritis" measured-compound="upadacitinib" parameterization="apparent" topology="2C"></div>
 
 **Model structure:** 2-compartment; no model was built for this record.  
 **Parameters:** 7 extracted, plus 2 covariate effects.

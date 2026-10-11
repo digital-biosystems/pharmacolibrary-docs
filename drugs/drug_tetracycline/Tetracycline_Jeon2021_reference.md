@@ -29,8 +29,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on paramet
 Jeon JY et al., Pharmacokinetic Interactions between Te…, Clinical therapeutics (2021)
   ·  DOI: [10.1016/j.clinthera.2021.01.026](https://doi.org/10.1016/j.clinthera.2021.01.026)
 
-## Model component
-<dbs-pgx drug="tetracycline" model-id="Tetracycline_Jeon2021_reference" status="needs_review" stale="false" population="" measured-compound="tetracycline" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="tetracycline" model-id="Tetracycline_Jeon2021_reference" status="needs_review" stale="false" population="" measured-compound="tetracycline" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 2 extracted.

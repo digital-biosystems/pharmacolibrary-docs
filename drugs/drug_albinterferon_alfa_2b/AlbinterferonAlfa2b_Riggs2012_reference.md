@@ -21,8 +21,7 @@
 Riggs MM et al., Population pharmacokinetics and exposur…, Journal of clinical pharmac… (2012)
   ·  DOI: [10.1177/0091270011399576](https://doi.org/10.1177/0091270011399576)
 
-## Model component
-<dbs-pgx drug="albinterferon alfa-2b" model-id="AlbinterferonAlfa2b_Riggs2012_reference" status="extracted" stale="false" population="adults with chronic hepatitis C virus" measured-compound="albinterferon_alfa_2b" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="albinterferon alfa-2b" model-id="AlbinterferonAlfa2b_Riggs2012_reference" status="extracted" stale="false" population="adults with chronic hepatitis C virus" measured-compound="albinterferon_alfa_2b" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 3 extracted.

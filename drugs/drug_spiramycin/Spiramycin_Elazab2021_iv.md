@@ -23,8 +23,7 @@
 Elazab ST et al., Pharmacokinetic/Pharmacodynamic Modelin…, Pathogens (Basel, Switzerla… (2021)
   ·  DOI: [10.3390/pathogens10101238](https://doi.org/10.3390/pathogens10101238)
 
-## Model component
-<dbs-pgx drug="spiramycin" model-id="Spiramycin_Elazab2021_iv" status="extracted" stale="false" population="chickens" measured-compound="spiramycin" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="spiramycin" model-id="Spiramycin_Elazab2021_iv" status="extracted" stale="false" population="chickens" measured-compound="spiramycin" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameters:** 7 extracted.

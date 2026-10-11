@@ -31,8 +31,7 @@ Independently confirmed by `gpt-oss:120b`.
 Palmer M et al., Population pharmacokinetics and dosing…, British journal of clinical… (2025)
   ·  DOI: [10.1111/bcp.70005](https://doi.org/10.1111/bcp.70005)
 
-## Model component
-<dbs-pgx drug="moxifloxacin" model-id="Moxifloxacin_Palmer2025_reference" status="rejected" stale="true" population="children with rifampicin-resistant tuberculosis" measured-compound="moxifloxacin" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="moxifloxacin" model-id="Moxifloxacin_Palmer2025_reference" status="rejected" stale="true" population="children with rifampicin-resistant tuberculosis" measured-compound="moxifloxacin" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 5 extracted.

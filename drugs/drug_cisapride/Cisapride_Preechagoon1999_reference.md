@@ -33,8 +33,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Preechagoon Y et al., Population pharmacokinetics of enterall…, British journal of clinical… (1999)
   ·  DOI: [10.1046/j.1365-2125.1999.00068.x](https://doi.org/10.1046/j.1365-2125.1999.00068.x)
 
-## Model component
-<dbs-pgx drug="cisapride" model-id="Cisapride_Preechagoon1999_reference" status="extracted" stale="true" population="young infants with gastro-oesophageal reflux disease" measured-compound="cisapride" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="cisapride" model-id="Cisapride_Preechagoon1999_reference" status="extracted" stale="true" population="young infants with gastro-oesophageal reflux disease" measured-compound="cisapride" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 3 extracted.

@@ -21,8 +21,7 @@
 Janus A et al., Safety, Tolerability and Pharmacokineti…, Neurology and therapy (2025)
   ·  DOI: [10.1007/s40120-024-00691-w](https://doi.org/10.1007/s40120-024-00691-w)
 
-## Model component
-<dbs-pgx drug="glucose" model-id="Glucose_Janus2025_reference" status="needs_review" stale="false" population="" measured-compound="glucose" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="glucose" model-id="Glucose_Janus2025_reference" status="needs_review" stale="false" population="" measured-compound="glucose" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 2 extracted.

@@ -29,8 +29,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Hurwitz SJ et al., Development of an optimized dose for co…, Antimicrobial agents and ch… (2008)
   ·  DOI: [10.1128/AAC.00054-08](https://doi.org/10.1128/AAC.00054-08)
 
-## Model component
-<dbs-pgx drug="abacavir" model-id="Abacavir_Hurwitz2008_reference" status="needs_review" stale="false" population="HIV-infected individuals" measured-compound="zidovudine" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="abacavir" model-id="Abacavir_Hurwitz2008_reference" status="needs_review" stale="false" population="HIV-infected individuals" measured-compound="zidovudine" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 3 extracted.

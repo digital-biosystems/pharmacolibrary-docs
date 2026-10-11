@@ -21,8 +21,7 @@
 Charles BG et al., Population pharmacokinetics of tafenoqu…, Antimicrobial agents and ch… (2007)
   ·  DOI: [10.1128/AAC.01183-06](https://doi.org/10.1128/AAC.01183-06)
 
-## Model component
-<dbs-pgx drug="tafenoquine" model-id="Tafenoquine_Charles2007_reference" status="needs_review" stale="false" population="healthy adults on malaria prophylaxis (Australian soldiers)" measured-compound="tafenoquine" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="tafenoquine" model-id="Tafenoquine_Charles2007_reference" status="needs_review" stale="false" population="healthy adults on malaria prophylaxis (Australian soldiers)" measured-compound="tafenoquine" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 2 extracted, plus 1 covariate effect.

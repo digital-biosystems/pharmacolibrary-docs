@@ -21,8 +21,7 @@
 Franken LG et al., Pharmacokinetics of Morphine, Morphine-…, Clinical pharmacokinetics (2016)
   ·  DOI: [10.1007/s40262-015-0345-4](https://doi.org/10.1007/s40262-015-0345-4)
 
-## Model component
-<dbs-pgx drug="flunitrazepam" model-id="Flunitrazepam_Franken2016_reference" status="rejected" stale="false" population="" measured-compound="flunitrazepam" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="flunitrazepam" model-id="Flunitrazepam_Franken2016_reference" status="rejected" stale="false" population="" measured-compound="flunitrazepam" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment; no model was built for this record.  
 **Parameters:** 4 extracted.

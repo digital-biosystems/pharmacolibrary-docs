@@ -23,8 +23,7 @@
 García-Agundez MJ et al., Pharmacokinetic parameters from data re…, European journal of drug me… (1992)
   ·  DOI: [10.1007/BF03190141](https://doi.org/10.1007/BF03190141)
 
-## Model component
-<dbs-pgx drug="cefmetazole" model-id="Cefmetazole_GarcaAgundez1992_reference" status="needs_review" stale="false" population="anaesthetized rats" measured-compound="cefmetazole" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="cefmetazole" model-id="Cefmetazole_GarcaAgundez1992_reference" status="needs_review" stale="false" population="anaesthetized rats" measured-compound="cefmetazole" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 3 extracted.

@@ -22,8 +22,7 @@
 Lin KJ et al., Population Pharmacokinetics of Casirivi…, Pharmaceutical research (2024)
   ·  DOI: [10.1007/s11095-024-03764-5](https://doi.org/10.1007/s11095-024-03764-5)
 
-## Model component
-<dbs-pgx drug="Imdevimab" model-id="Imdevimab_Lin2024_reference" status="rejected" stale="false" population="pediatric and adult non-infected individuals, patients infected with SARS-CoV-2, or household contacts" measured-compound="imdevimab" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="Imdevimab" model-id="Imdevimab_Lin2024_reference" status="rejected" stale="false" population="pediatric and adult non-infected individuals, patients infected with SARS-CoV-2, or household contacts" measured-compound="imdevimab" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment; no model was built for this record.  
 **Parameters:** 6 extracted, plus 4 covariate effects.

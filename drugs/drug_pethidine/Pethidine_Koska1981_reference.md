@@ -30,8 +30,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on how the
 ## Citation
 Koska AJ et al., Pharmacokinetics of high-dose meperidin…, Anesthesia and analgesia (1981)
 
-## Model component
-<dbs-pgx drug="pethidine" model-id="Pethidine_Koska1981_reference" status="rejected" stale="true" population="adults with lower abdominal aortic and femoral-popliteal artery surgery" measured-compound="meperidine" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="pethidine" model-id="Pethidine_Koska1981_reference" status="rejected" stale="true" population="adults with lower abdominal aortic and femoral-popliteal artery surgery" measured-compound="meperidine" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

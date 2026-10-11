@@ -22,8 +22,7 @@
 Poapolathep A et al., Sulfadimethoxine in giant freshwater pr…, Journal of veterinary pharm… (2017)
   ·  DOI: [10.1111/jvp.12381](https://doi.org/10.1111/jvp.12381)
 
-## Model component
-<dbs-pgx drug="sulfadimethoxine" model-id="Sulfadimethoxine_Poapolathep2017_reference" status="rejected" stale="false" population="giant freshwater prawns" measured-compound="sulfadimethoxine" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="sulfadimethoxine" model-id="Sulfadimethoxine_Poapolathep2017_reference" status="rejected" stale="false" population="giant freshwater prawns" measured-compound="sulfadimethoxine" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 1 extracted.

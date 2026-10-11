@@ -21,8 +21,7 @@
 Shimizu M et al., Pharmacokinetics of hydroxychloroquine…, Modern rheumatology (2023)
   ·  DOI: [10.1093/mr/roac113](https://doi.org/10.1093/mr/roac113)
 
-## Model component
-<dbs-pgx drug="hydroxychloroquine" model-id="Hydroxychloroquine_Shimizu2023_reference" status="needs_review" stale="false" population="Japanese SLE patients with renal impairment" measured-compound="hydroxychloroquine" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="hydroxychloroquine" model-id="Hydroxychloroquine_Shimizu2023_reference" status="needs_review" stale="false" population="Japanese SLE patients with renal impairment" measured-compound="hydroxychloroquine" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 4 extracted.

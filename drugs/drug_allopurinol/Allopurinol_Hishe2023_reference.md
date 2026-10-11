@@ -29,8 +29,7 @@ No clearance, volume or rate constant of the model is reported in it. No paramet
 Hishe HZ et al., The impact of genetic variability in ur…, Clinical and translational… (2023)
   ·  DOI: [10.1111/cts.13460](https://doi.org/10.1111/cts.13460)
 
-## Model component
-<dbs-pgx drug="allopurinol" model-id="Allopurinol_Hishe2023_reference" status="rejected" stale="false" population="adults with gout" measured-compound="oxypurinol" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="allopurinol" model-id="Allopurinol_Hishe2023_reference" status="rejected" stale="false" population="adults with gout" measured-compound="oxypurinol" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

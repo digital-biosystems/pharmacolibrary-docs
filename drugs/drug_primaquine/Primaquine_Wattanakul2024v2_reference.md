@@ -21,8 +21,7 @@
 Wattanakul T et al., Population pharmacokinetic modelling of…, Nature communications (2024)
   ·  DOI: [10.1038/s41467-024-47908-y](https://doi.org/10.1038/s41467-024-47908-y)
 
-## Model component
-<dbs-pgx drug="primaquine" model-id="Primaquine_Wattanakul2024v2_reference" status="rejected" stale="false" population="lactating women and breastfed infants" measured-compound="primaquine" parameterization="apparent_wrt_Fm" topology="parent_metabolite"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="primaquine" model-id="Primaquine_Wattanakul2024v2_reference" status="rejected" stale="false" population="lactating women and breastfed infants" measured-compound="primaquine" parameterization="apparent_wrt_Fm" topology="parent_metabolite"></div>
 
 **Model structure:** parent + metabolite; no model was built for this record.  
 **Parameters:** 0 extracted.

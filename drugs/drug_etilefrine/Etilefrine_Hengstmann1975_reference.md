@@ -30,8 +30,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on `parame
 Hengstmann JH et al., The physiological disposition of etilef…, European journal of clinica… (1975)
   ·  DOI: [10.1007/BF00614015](https://doi.org/10.1007/BF00614015)
 
-## Model component
-<dbs-pgx drug="etilefrine" model-id="Etilefrine_Hengstmann1975_reference" status="rejected" stale="true" population="man" measured-compound="etilefrine" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="etilefrine" model-id="Etilefrine_Hengstmann1975_reference" status="rejected" stale="true" population="man" measured-compound="etilefrine" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 3 extracted.

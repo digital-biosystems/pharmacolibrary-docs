@@ -20,8 +20,7 @@
 Soehoel A et al., Population Pharmacokinetics of Tralokin…, Clinical pharmacology in dr… (2022)
   ·  DOI: [10.1002/cpdd.1113](https://doi.org/10.1002/cpdd.1113)
 
-## Model component
-<dbs-pgx drug="tralokinumab" model-id="Tralokinumab_Soehoel2022_reference" status="extracted" stale="false" population="adults with atopic dermatitis, asthma, and healthy subjects" measured-compound="tralokinumab" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="tralokinumab" model-id="Tralokinumab_Soehoel2022_reference" status="extracted" stale="false" population="adults with atopic dermatitis, asthma, and healthy subjects" measured-compound="tralokinumab" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 6 extracted.

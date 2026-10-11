@@ -21,8 +21,7 @@
 Salman S et al., Pharmacokinetic properties of azithromy…, Antimicrobial agents and ch… (2010)
   ·  DOI: [10.1128/AAC.00771-09](https://doi.org/10.1128/AAC.00771-09)
 
-## Model component
-<dbs-pgx drug="azithromycin" model-id="Azithromycin_Salman2010_reference" status="needs_review" stale="false" population="pregnant and nonpregnant adults" measured-compound="azithromycin" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="azithromycin" model-id="Azithromycin_Salman2010_reference" status="needs_review" stale="false" population="pregnant and nonpregnant adults" measured-compound="azithromycin" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 4 extracted.

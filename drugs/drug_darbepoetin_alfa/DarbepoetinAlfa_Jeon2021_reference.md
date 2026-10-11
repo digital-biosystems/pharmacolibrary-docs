@@ -27,8 +27,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on paramet
 Jeon I et al., Comparison of Pharmacokinetic, Pharmaco…, Drug design, development an… (2021)
   ·  DOI: [10.2147/DDDT.S303772](https://doi.org/10.2147/DDDT.S303772)
 
-## Model component
-<dbs-pgx drug="darbepoetin alfa" model-id="DarbepoetinAlfa_Jeon2021_reference" status="extracted" stale="false" population="healthy subjects" measured-compound="darbepoetin_alfa" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="darbepoetin alfa" model-id="DarbepoetinAlfa_Jeon2021_reference" status="extracted" stale="false" population="healthy subjects" measured-compound="darbepoetin_alfa" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameters:** 2 extracted.

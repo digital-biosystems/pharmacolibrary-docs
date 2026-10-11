@@ -21,8 +21,7 @@
 Sidbury R et al., Pharmacokinetics, Safety, Efficacy, and…, Dermatology and therapy (2022)
   ·  DOI: [10.1007/s13555-021-00678-7](https://doi.org/10.1007/s13555-021-00678-7)
 
-## Model component
-<dbs-pgx drug="nemolizumab" model-id="Nemolizumab_Sidbury2022_reference" status="rejected" stale="false" population="adolescents with atopic dermatitis" measured-compound="nemolizumab" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="nemolizumab" model-id="Nemolizumab_Sidbury2022_reference" status="rejected" stale="false" population="adolescents with atopic dermatitis" measured-compound="nemolizumab" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 6 extracted.

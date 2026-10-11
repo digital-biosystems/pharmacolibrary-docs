@@ -33,8 +33,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the val
 Giri SN, Pharmacokinetics, subcellular distribut…, Experimental and molecular… (1986)
   ·  DOI: [10.1016/0014-4800(86)90060-2](https://doi.org/10.1016/0014-4800(86)90060-2)
 
-## Model component
-<dbs-pgx drug="bleomycin" model-id="Bleomycin_Giri1986_reference" status="needs_review" stale="true" population="male Golden Syrian hamsters" measured-compound="bleomycin" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="bleomycin" model-id="Bleomycin_Giri1986_reference" status="needs_review" stale="true" population="male Golden Syrian hamsters" measured-compound="bleomycin" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 3 extracted.

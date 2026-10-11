@@ -22,8 +22,7 @@
 Yang W et al., Establishment and Evaluation of a Param…, Pharmaceutics (2023)
   ·  DOI: [10.3390/pharmaceutics15071801](https://doi.org/10.3390/pharmaceutics15071801)
 
-## Model component
-<dbs-pgx drug="valganciclovir" model-id="Valganciclovir_Yang2023_zhou_et_al_19" status="rejected" stale="false" population="neonates, children and adults at risk of or with cytomegalovirus infection" measured-compound="ganciclovir" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="valganciclovir" model-id="Valganciclovir_Yang2023_zhou_et_al_19" status="rejected" stale="false" population="neonates, children and adults at risk of or with cytomegalovirus infection" measured-compound="ganciclovir" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

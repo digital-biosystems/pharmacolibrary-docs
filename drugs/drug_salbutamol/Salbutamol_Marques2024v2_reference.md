@@ -29,8 +29,7 @@ Independently confirmed by `gpt-oss:120b`.
 Marques L et al., Toward Personalized Salbutamol Therapy:…, Pharmaceutics (2024)
   ·  DOI: [10.3390/pharmaceutics16070881](https://doi.org/10.3390/pharmaceutics16070881)
 
-## Model component
-<dbs-pgx drug="salbutamol" model-id="Salbutamol_Marques2024v2_reference" status="extracted" stale="true" population="virtual patients (asthma, inhaled salbutamol DPI)" measured-compound="salbutamol" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="salbutamol" model-id="Salbutamol_Marques2024v2_reference" status="extracted" stale="true" population="virtual patients (asthma, inhaled salbutamol DPI)" measured-compound="salbutamol" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment, oral mammillary model — template `PK_2C_enteral`.  
 **Parameters:** 5 extracted.

@@ -30,8 +30,7 @@ Only one of the three expected pharmacokinetic parameters was covered in the rec
 Dodds MG et al., Population pharmacokinetics of recombin…, The AAPS journal (2005)
   ·  DOI: [10.1208/aapsj070370](https://doi.org/10.1208/aapsj070370)
 
-## Model component
-<dbs-pgx drug="coagulation factor XIII" model-id="CoagulationFactorXiii_Dodds2005_reference" status="" stale="true" population="cynomolgus monkeys" measured-compound="" parameterization="" topology=""></dbs-pgx>
+<div class="pk-model-meta" hidden drug="coagulation factor XIII" model-id="CoagulationFactorXiii_Dodds2005_reference" status="" stale="true" population="cynomolgus monkeys" measured-compound="" parameterization="" topology=""></div>
 
 **Model structure:** —; no model was built for this record.  
 **Parameters:** 0 extracted.

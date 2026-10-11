@@ -21,8 +21,7 @@
 Tachet J et al., Ruxolitinib Pharmacokinetics and Exposu…, Clinical pharmacology and t… (2026)
   ·  DOI: [10.1002/cpt.70367](https://doi.org/10.1002/cpt.70367)
 
-## Model component
-<dbs-pgx drug="ruxolitinib" model-id="Ruxolitinib_Tachet2026_reference" status="rejected" stale="false" population="adults with hematologic malignancies and immune-mediated diseases" measured-compound="ruxolitinib" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="ruxolitinib" model-id="Ruxolitinib_Tachet2026_reference" status="rejected" stale="false" population="adults with hematologic malignancies and immune-mediated diseases" measured-compound="ruxolitinib" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 4 extracted.

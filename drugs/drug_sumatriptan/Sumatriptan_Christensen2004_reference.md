@@ -30,8 +30,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the val
 Christensen ML et al., Pharmacokinetics of sumatriptan nasal s…, Journal of clinical pharmac… (2004)
   ·  DOI: [10.1177/0091270004263467](https://doi.org/10.1177/0091270004263467)
 
-## Model component
-<dbs-pgx drug="sumatriptan" model-id="Sumatriptan_Christensen2004_reference" status="rejected" stale="true" population="children with migraine" measured-compound="sumatriptan" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="sumatriptan" model-id="Sumatriptan_Christensen2004_reference" status="rejected" stale="true" population="children with migraine" measured-compound="sumatriptan" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

@@ -22,8 +22,7 @@
 Kirchheiner J et al., Contributions of CYP2D6, CYP2C9 and CYP…, Pharmacogenetics (2002)
   ·  DOI: [10.1097/00008571-200210000-00010](https://doi.org/10.1097/00008571-200210000-00010)
 
-## Model component
-<dbs-pgx drug="doxepin" model-id="Doxepin_Kirchheiner2002_reference" status="rejected" stale="false" population="healthy volunteers" measured-compound="E- and Z-doxepin" parameterization="apparent" topology="general_linear"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="doxepin" model-id="Doxepin_Kirchheiner2002_reference" status="rejected" stale="false" population="healthy volunteers" measured-compound="E- and Z-doxepin" parameterization="apparent" topology="general_linear"></div>
 
 **Model structure:** general linear; no model was built for this record.  
 **Parameters:** 2 extracted.

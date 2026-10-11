@@ -21,8 +21,7 @@
 Hilbert JM et al., Effect of sleep on quazepam kinetics, Clinical pharmacology and t… (1984)
   ·  DOI: [10.1038/clpt.1984.146](https://doi.org/10.1038/clpt.1984.146)
 
-## Model component
-<dbs-pgx drug="quazepam" model-id="Quazepam_Hilbert1984v2_reference" status="rejected" stale="false" population="healthy adult men" measured-compound="quazepam" parameterization="apparent" topology="general_linear"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="quazepam" model-id="Quazepam_Hilbert1984v2_reference" status="rejected" stale="false" population="healthy adult men" measured-compound="quazepam" parameterization="apparent" topology="general_linear"></div>
 
 **Model structure:** general linear; no model was built for this record.  
 **Parameters:** 4 extracted.

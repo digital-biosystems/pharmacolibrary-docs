@@ -29,8 +29,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the val
 Gao T et al., Published population pharmacokinetic mo…, Frontiers in pharmacology (2025)
   ·  DOI: [10.3389/fphar.2025.1632568](https://doi.org/10.3389/fphar.2025.1632568)
 
-## Model component
-<dbs-pgx drug="omeprazole" model-id="Omeprazole_Gao2025_reference" status="needs_review" stale="false" population="" measured-compound="omeprazole" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="omeprazole" model-id="Omeprazole_Gao2025_reference" status="needs_review" stale="false" population="" measured-compound="omeprazole" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment, oral mammillary model — template `PK_2C_enteral`.  
 **Parameters:** 5 extracted.

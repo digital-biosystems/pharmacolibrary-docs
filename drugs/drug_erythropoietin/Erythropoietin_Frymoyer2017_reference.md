@@ -30,8 +30,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on `parame
 Frymoyer A et al., High-dose erythropoietin population pha…, Pediatric research (2017)
   ·  DOI: [10.1038/pr.2017.15](https://doi.org/10.1038/pr.2017.15)
 
-## Model component
-<dbs-pgx drug="erythropoietin" model-id="Erythropoietin_Frymoyer2017_reference" status="rejected" stale="true" population="neonates with hypoxic-ischemic encephalopathy receiving hypothermia" measured-compound="erythropoietin" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="erythropoietin" model-id="Erythropoietin_Frymoyer2017_reference" status="rejected" stale="true" population="neonates with hypoxic-ischemic encephalopathy receiving hypothermia" measured-compound="erythropoietin" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment; no model was built for this record.  
 **Parameters:** 4 extracted.

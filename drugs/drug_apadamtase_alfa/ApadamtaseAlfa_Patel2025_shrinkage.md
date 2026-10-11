@@ -30,8 +30,7 @@ Nothing in the extracted data describes the drug's disposition, so there is no m
 Patel M et al., Use of PopPK and E-R Analyses toward Ex…, Clinical pharmacology and t… (2025)
   ·  DOI: [10.1002/cpt.3720](https://doi.org/10.1002/cpt.3720)
 
-## Model component
-<dbs-pgx drug="Apadamtase alfa" model-id="ApadamtaseAlfa_Patel2025_shrinkage" status="rejected" stale="true" population="patients with congenital thrombotic thrombocytopenic purpura (cTTP)" measured-compound="ADAMTS13" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="Apadamtase alfa" model-id="ApadamtaseAlfa_Patel2025_shrinkage" status="rejected" stale="true" population="patients with congenital thrombotic thrombocytopenic purpura (cTTP)" measured-compound="ADAMTS13" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

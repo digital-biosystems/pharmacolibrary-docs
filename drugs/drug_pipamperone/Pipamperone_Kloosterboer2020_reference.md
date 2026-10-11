@@ -20,8 +20,7 @@
 Kloosterboer SM et al., Pipamperone Population Pharmacokinetics…, Clinical pharmacokinetics (2020)
   ·  DOI: [10.1007/s40262-020-00894-y](https://doi.org/10.1007/s40262-020-00894-y)
 
-## Model component
-<dbs-pgx drug="pipamperone" model-id="Pipamperone_Kloosterboer2020_reference" status="rejected" stale="false" population="children and adolescents with psychiatric disorders (autism/behavioral problems)" measured-compound="pipamperone" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="pipamperone" model-id="Pipamperone_Kloosterboer2020_reference" status="rejected" stale="false" population="children and adolescents with psychiatric disorders (autism/behavioral problems)" measured-compound="pipamperone" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 3 extracted.

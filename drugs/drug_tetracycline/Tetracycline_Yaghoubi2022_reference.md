@@ -27,8 +27,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on paramet
 Yaghoubi S et al., Tigecycline antibacterial activity, cli…, European journal of clinica… (2022)
   ·  DOI: [10.1007/s10096-020-04121-1](https://doi.org/10.1007/s10096-020-04121-1)
 
-## Model component
-<dbs-pgx drug="tetracycline" model-id="Tetracycline_Yaghoubi2022_reference" status="curated_candidate" stale="false" population="" measured-compound="tetracycline" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="tetracycline" model-id="Tetracycline_Yaghoubi2022_reference" status="curated_candidate" stale="false" population="" measured-compound="tetracycline" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameters:** 2 extracted.

@@ -29,8 +29,7 @@ Nothing in the extracted data describes the drug's disposition, so there is no m
 Igarashi T et al., Population pharmacokinetic model develo…, Cancer chemotherapy and pha… (2021)
   ·  DOI: [10.1007/s00280-020-04220-y](https://doi.org/10.1007/s00280-020-04220-y)
 
-## Model component
-<dbs-pgx drug="vincristine" model-id="Vincristine_Igarashi2021_standard_error_of_the_mean" status="rejected" stale="true" population="unknown" measured-compound="unknown" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="vincristine" model-id="Vincristine_Igarashi2021_standard_error_of_the_mean" status="rejected" stale="true" population="unknown" measured-compound="unknown" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

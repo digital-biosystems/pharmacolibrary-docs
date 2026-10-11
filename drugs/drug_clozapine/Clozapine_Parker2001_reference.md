@@ -23,8 +23,7 @@
 Parker TJ et al., Pharmacokinetic-pharmacodynamic modelli…, British journal of pharmaco… (2001)
   ·  DOI: [10.1038/sj.bjp.0703791](https://doi.org/10.1038/sj.bjp.0703791)
 
-## Model component
-<dbs-pgx drug="clozapine" model-id="Clozapine_Parker2001_reference" status="rejected" stale="false" population="rats (preclinical PK/PD study)" measured-compound="clozapine" parameterization="mechanistic" topology="parent_metabolite"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="clozapine" model-id="Clozapine_Parker2001_reference" status="rejected" stale="false" population="rats (preclinical PK/PD study)" measured-compound="clozapine" parameterization="mechanistic" topology="parent_metabolite"></div>
 
 **Model structure:** parent + metabolite; no model was built for this record.  
 **Parameters:** 5 extracted.

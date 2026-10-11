@@ -23,8 +23,7 @@
 Dias BB et al., Preclinical Modeling and Simulation to…, CPT: pharmacometrics & syst… (2026)
   ·  DOI: [10.1002/psp4.70165](https://doi.org/10.1002/psp4.70165)
 
-## Model component
-<dbs-pgx drug="vildagliptin" model-id="Vildagliptin_Dias2026_reference" status="extracted" stale="false" population="healthy and diabetic rats" measured-compound="vildagliptin" parameterization="apparent" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="vildagliptin" model-id="Vildagliptin_Dias2026_reference" status="extracted" stale="false" population="healthy and diabetic rats" measured-compound="vildagliptin" parameterization="apparent" topology="2C"></div>
 
 **Model structure:** 2-compartment, oral mammillary model — template `PK_2C_enteral`.  
 **Parameters:** 7 extracted.

@@ -21,8 +21,7 @@
 Wang E et al., Population pharmacokinetics-pharmacodyn…, Cancer chemotherapy and pha… (2020)
   ·  DOI: [10.1007/s00280-020-04106-z](https://doi.org/10.1007/s00280-020-04106-z)
 
-## Model component
-<dbs-pgx drug="sunitinib" model-id="Sunitinib_Wang2020_reference" status="extracted" stale="false" population="pediatric patients with solid tumors" measured-compound="sunitinib" parameterization="apparent" topology="parent_metabolite"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="sunitinib" model-id="Sunitinib_Wang2020_reference" status="extracted" stale="false" population="pediatric patients with solid tumors" measured-compound="sunitinib" parameterization="apparent" topology="parent_metabolite"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 7 extracted.

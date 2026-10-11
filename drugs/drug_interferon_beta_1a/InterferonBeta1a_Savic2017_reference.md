@@ -21,8 +21,7 @@
 Savic RM et al., Population Pharmacokinetics of Cladribi…, Clinical pharmacokinetics (2017)
   ·  DOI: [10.1007/s40262-017-0516-6](https://doi.org/10.1007/s40262-017-0516-6)
 
-## Model component
-<dbs-pgx drug="interferon beta-1a" model-id="InterferonBeta1a_Savic2017_reference" status="extracted" stale="false" population="" measured-compound="interferon_beta_1a" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="interferon beta-1a" model-id="InterferonBeta1a_Savic2017_reference" status="extracted" stale="false" population="" measured-compound="interferon_beta_1a" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment, oral mammillary model — template `PK_2C_enteral`.  
 **Parameters:** 5 extracted.

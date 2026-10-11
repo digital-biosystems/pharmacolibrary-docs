@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on `parame
 Pollak PT et al., Population pharmacokinetics of long-ter…, Clinical pharmacology and t… (2000)
   ·  DOI: [10.1067/mcp.2000.107047](https://doi.org/10.1067/mcp.2000.107047)
 
-## Model component
-<dbs-pgx drug="amiodarone" model-id="Amiodarone_Pollak2000_desethylaminodarone" status="" stale="true" population="patients with cardiac arrhythmias" measured-compound="" parameterization="" topology=""></dbs-pgx>
+<div class="pk-model-meta" hidden drug="amiodarone" model-id="Amiodarone_Pollak2000_desethylaminodarone" status="" stale="true" population="patients with cardiac arrhythmias" measured-compound="" parameterization="" topology=""></div>
 
 **Model structure:** —; no model was built for this record.  
 **Parameters:** 0 extracted.

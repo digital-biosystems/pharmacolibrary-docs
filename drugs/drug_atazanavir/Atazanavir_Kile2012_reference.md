@@ -31,8 +31,7 @@ Independently confirmed by `gpt-oss:120b`.
 Kile DA et al., A population pharmacokinetic-pharmacoge…, AIDS research and human ret… (2012)
   ·  DOI: [10.1089/aid.2011.0378](https://doi.org/10.1089/aid.2011.0378)
 
-## Model component
-<dbs-pgx drug="atazanavir" model-id="Atazanavir_Kile2012_reference" status="extracted" stale="true" population="HIV-negative healthy volunteers" measured-compound="atazanavir" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="atazanavir" model-id="Atazanavir_Kile2012_reference" status="extracted" stale="true" population="HIV-negative healthy volunteers" measured-compound="atazanavir" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 4 extracted.

@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the val
 Papathanasiou T et al., Population Pharmacokinetics for Belanta…, Clinical pharmacokinetics (2025)
   ·  DOI: [10.1007/s40262-025-01508-1](https://doi.org/10.1007/s40262-025-01508-1)
 
-## Model component
-<dbs-pgx drug="dexamethasone" model-id="Dexamethasone_Papathanasiou2025_reference" status="rejected" stale="true" population="" measured-compound="dexamethasone" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="dexamethasone" model-id="Dexamethasone_Papathanasiou2025_reference" status="rejected" stale="true" population="" measured-compound="dexamethasone" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment; no model was built for this record.  
 **Parameters:** 3 extracted.

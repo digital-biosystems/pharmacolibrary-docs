@@ -31,8 +31,7 @@ Independently confirmed by `gpt-oss:120b`.
 Martín-Suárez A et al., Digoxin pharmacokinetics in patients wi…, Journal of clinical pharmac… (1993)
   ·  DOI: [10.1111/j.1365-2710.1993.tb00569.x](https://doi.org/10.1111/j.1365-2710.1993.tb00569.x)
 
-## Model component
-<dbs-pgx drug="digoxin" model-id="Digoxin_MartnSurez1993_reference" status="extracted" stale="true" population="patients with high serum digoxin concentrations" measured-compound="digoxin" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="digoxin" model-id="Digoxin_MartnSurez1993_reference" status="extracted" stale="true" population="patients with high serum digoxin concentrations" measured-compound="digoxin" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 3 extracted.

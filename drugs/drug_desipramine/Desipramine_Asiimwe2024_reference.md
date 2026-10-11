@@ -30,8 +30,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the val
 Asiimwe IG et al., Machine-Learning Assisted Screening of…, The AAPS journal (2024)
   ·  DOI: [10.1208/s12248-024-00934-6](https://doi.org/10.1208/s12248-024-00934-6)
 
-## Model component
-<dbs-pgx drug="desipramine" model-id="Desipramine_Asiimwe2024_reference" status="rejected" stale="true" population="healthy adults (desipramine clinical trial dataset)" measured-compound="desipramine" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="desipramine" model-id="Desipramine_Asiimwe2024_reference" status="rejected" stale="true" population="healthy adults (desipramine clinical trial dataset)" measured-compound="desipramine" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment; no model was built for this record.  
 **Parameters:** 4 extracted.

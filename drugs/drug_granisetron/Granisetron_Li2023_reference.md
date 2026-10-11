@@ -30,8 +30,7 @@ Independently confirmed by `gpt-oss:120b`.
 Li J et al., Population pharmacokinetic analysis of…, Frontiers in pharmacology (2023)
   ·  DOI: [10.3389/fphar.2023.1154026](https://doi.org/10.3389/fphar.2023.1154026)
 
-## Model component
-<dbs-pgx drug="granisetron" model-id="Granisetron_Li2023_reference" status="rejected" stale="true" population="healthy adults" measured-compound="granisetron" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="granisetron" model-id="Granisetron_Li2023_reference" status="rejected" stale="true" population="healthy adults" measured-compound="granisetron" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 3 extracted.

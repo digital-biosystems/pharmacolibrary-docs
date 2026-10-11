@@ -22,8 +22,7 @@
 ## Citation
 Koroleva VG et al., [Cephalexin pharmacokinetics], Antibiotiki (1981)
 
-## Model component
-<dbs-pgx drug="cefalexin" model-id="Cefalexin_Koroleva1981_reference" status="rejected" stale="false" population="rats and dogs" measured-compound="cephalexin" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="cefalexin" model-id="Cefalexin_Koroleva1981_reference" status="rejected" stale="false" population="rats and dogs" measured-compound="cephalexin" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 2 extracted.

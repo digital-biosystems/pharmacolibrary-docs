@@ -20,8 +20,7 @@
 Dennis IF et al., Pharmacokinetics of BW12C and mitomycin…, Cancer chemotherapy and pha… (1993)
   ·  DOI: [10.1007/BF00685879](https://doi.org/10.1007/BF00685879)
 
-## Model component
-<dbs-pgx drug="mitomycin" model-id="Mitomycin_Dennis1993_reference" status="rejected" stale="false" population="patients with advanced gastrointestinal cancer" measured-compound="BW12C and mitomycin C" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="mitomycin" model-id="Mitomycin_Dennis1993_reference" status="rejected" stale="false" population="patients with advanced gastrointestinal cancer" measured-compound="BW12C and mitomycin C" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 3 extracted.

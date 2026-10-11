@@ -21,8 +21,7 @@
 Noormohamed FH et al., Pharmacokinetics and hemodynamic effect…, AIDS research and human ret… (1999)
   ·  DOI: [10.1089/088922299310331](https://doi.org/10.1089/088922299310331)
 
-## Model component
-<dbs-pgx drug="thalidomide" model-id="Thalidomide_Noormohamed1999_reference" status="extracted" stale="false" population="asymptomatic HIV-infected subjects" measured-compound="thalidomide" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="thalidomide" model-id="Thalidomide_Noormohamed1999_reference" status="extracted" stale="false" population="asymptomatic HIV-infected subjects" measured-compound="thalidomide" parameterization="apparent" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 7 extracted.

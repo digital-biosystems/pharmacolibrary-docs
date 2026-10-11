@@ -27,8 +27,7 @@ Without a unit the value cannot be converted, so the model cannot use it. Extrac
 Simon N et al., Impact of ABCC2 polymorphisms on high-d…, The pharmacogenomics journal (2013)
   ·  DOI: [10.1038/tpj.2012.37](https://doi.org/10.1038/tpj.2012.37)
 
-## Model component
-<dbs-pgx drug="methotrexate" model-id="Methotrexate_Simon2013_mean_s_e" status="needs_review" stale="false" population="patients with lymphoid malignancy" measured-compound="methotrexate" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="methotrexate" model-id="Methotrexate_Simon2013_mean_s_e" status="needs_review" stale="false" population="patients with lymphoid malignancy" measured-compound="methotrexate" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment; no model was built for this record.  
 **Parameters:** 9 extracted.

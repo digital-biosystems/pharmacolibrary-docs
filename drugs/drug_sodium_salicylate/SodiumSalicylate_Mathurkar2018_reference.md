@@ -30,8 +30,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on paramet
 Mathurkar S et al., Pharmacokinetics of Salicylic Acid Foll…, Animals : an open access jo… (2018)
   ·  DOI: [10.3390/ani8070122](https://doi.org/10.3390/ani8070122)
 
-## Model component
-<dbs-pgx drug="sodium salicylate" model-id="SodiumSalicylate_Mathurkar2018_reference" status="extracted" stale="true" population="sheep" measured-compound="" parameterization="" topology=""></dbs-pgx>
+<div class="pk-model-meta" hidden drug="sodium salicylate" model-id="SodiumSalicylate_Mathurkar2018_reference" status="extracted" stale="true" population="sheep" measured-compound="" parameterization="" topology=""></div>
 
 **Model structure:** —; no model was built for this record.  
 **Parameters:** 0 extracted.

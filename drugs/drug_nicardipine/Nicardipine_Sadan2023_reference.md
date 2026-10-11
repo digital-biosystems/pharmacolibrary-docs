@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 Sadan O et al., Cerebrospinal Fluid Pharmacokinetics of…, medRxiv : the preprint serv… (2023)
   ·  DOI: [10.1101/2023.10.17.23297116](https://doi.org/10.1101/2023.10.17.23297116)
 
-## Model component
-<dbs-pgx drug="nicardipine" model-id="Nicardipine_Sadan2023_reference" status="rejected" stale="true" population="adults with subarachnoid hemorrhage" measured-compound="nicardipine" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="nicardipine" model-id="Nicardipine_Sadan2023_reference" status="rejected" stale="true" population="adults with subarachnoid hemorrhage" measured-compound="nicardipine" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment; no model was built for this record.  
 **Parameters:** 5 extracted.

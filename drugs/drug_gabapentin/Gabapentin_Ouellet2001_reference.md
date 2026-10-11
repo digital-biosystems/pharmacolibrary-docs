@@ -21,8 +21,7 @@
 Ouellet D et al., Population pharmacokinetics of gabapent…, Epilepsy research (2001)
   ·  DOI: [10.1016/s0920-1211(01)00311-4](https://doi.org/10.1016/s0920-1211(01)00311-4)
 
-## Model component
-<dbs-pgx drug="gabapentin" model-id="Gabapentin_Ouellet2001_reference" status="rejected" stale="false" population="infants and children" measured-compound="gabapentin" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="gabapentin" model-id="Gabapentin_Ouellet2001_reference" status="rejected" stale="false" population="infants and children" measured-compound="gabapentin" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.

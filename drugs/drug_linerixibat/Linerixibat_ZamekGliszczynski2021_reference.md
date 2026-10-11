@@ -31,8 +31,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on bioavai
 Zamek-Gliszczynski MJ et al., Pharmacokinetics and ADME Characterizat…, Drug metabolism and disposi… (2021)
   ·  DOI: [10.1124/dmd.121.000595](https://doi.org/10.1124/dmd.121.000595)
 
-## Model component
-<dbs-pgx drug="linerixibat" model-id="Linerixibat_ZamekGliszczynski2021_reference" status="extracted" stale="true" population="healthy male volunteers" measured-compound="linerixibat" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="linerixibat" model-id="Linerixibat_ZamekGliszczynski2021_reference" status="extracted" stale="true" population="healthy male volunteers" measured-compound="linerixibat" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameters:** 5 extracted.
