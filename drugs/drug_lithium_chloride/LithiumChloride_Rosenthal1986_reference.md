@@ -4,7 +4,7 @@
 
 # lithium chloride — `LithiumChloride_Rosenthal1986_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.455). The first reading is what the record holds.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">dog</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.364). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">dog</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -22,7 +22,7 @@
 
 A model needs both clearance and volume; without the clearance it could only be built on a library default, so it was not. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — lithium chloride: t1/2z 21.6 h, V 0.189 l/kg, Fab 78.8 %.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of bioavailability: this record has 78.8, the second reading none; it also differs on 5 more fields. That field does not shape the model.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has lithium chloride, the second reading lithium chloride and lithium carbonate; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -70,23 +70,24 @@ Rosenthal RC et al., Pharmacokinetics of lithium in the dog, Journal of veterina
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
 first reading `glm-5.3-flash` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | partly confirmed | 0.455 (5/11 fields) | 6 |
+| `gpt-oss-120b` | not confirmed | 0.364 (4/11 fields) | 7 |
 
-<details><summary>6 field(s) a reader read differently</summary>
+<details><summary>7 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[apparent specific volume of distribution of the central compartment]` | not captured | 0.189 | only_one_extracted |
 | `gpt-oss-120b` | `parameters[bioavailability]` | 78.8 | not captured | only_one_extracted |
-| `gpt-oss-120b` | `parameters[mean apparent specific volume of distribution of the central compartment]` | not captured | 0.189 | only_one_extracted |
 | `gpt-oss-120b` | `parameters[mean bioavailability]` | not captured | 78.8 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[mean plasma lithium half-life (t1/2) following the single intravenous dose]` | not captured | 21.6 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[mean plasma lithium half-life]` | not captured | 21.6 | only_one_extracted |
 | `gpt-oss-120b` | `parameters[t1/2]` | 21.6 | not captured | only_one_extracted |
 | `gpt-oss-120b` | `parameters[v'c]` | 0.189 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | lithium chloride | lithium chloride and lithium carbonate | mismatch |
 
 </details>
 

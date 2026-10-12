@@ -4,7 +4,7 @@
 
 # deferiprone — `Deferiprone_Bellanti2014_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: partial</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.2). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -20,7 +20,7 @@
 
 The record was built from the paper's abstract only, so summary statistics stood in for a fitted model. The V/F entry for deferiprone carries the value 20 with unit '%', labelled 'Gender differences in the apparent volume of distribution', which is a relative difference and not a volume of distribution adjusted for bioavailability. This dimension mismatch on a structural parameter (C5) caused the rejection. The other reported values, AUC of 45.8 mg·h/L and Cmax of 17.6 mg l(-1), are exposure metrics and not affected by this issue. Extracted — deferiprone: AUC 45.8 mg·h/L, Cmax 17.6 mg l(-1), V/F 20 %.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of apparent volume of distribution: this record has none, the second reading 20; it also differs on 4 more fields. That field does not shape the model.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has deferiprone, the second reading unknown; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by glm-5.3-flash</sub>
 
@@ -68,22 +68,25 @@ Bellanti F et al., Population pharmacokinetics of deferipr…, British journal o
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
 first reading `glm-5.3-flash` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | partly confirmed | 0.5 (5/10 fields) | 5 |
+| `gpt-oss-120b` | not confirmed | 0.2 (2/10 fields) | 8 |
 
-<details><summary>5 field(s) a reader read differently</summary>
+<details><summary>8 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
 | `gpt-oss-120b` | `parameters[apparent volume of distribution]` | not captured | 20 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[dose]` | not captured | 25 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cmax]` | 17.6 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cmax]` | not captured | 17.6 | only_one_extracted |
 | `gpt-oss-120b` | `parameters[gender differences in the apparent volume of distribution]` | 20 | not captured | only_one_extracted |
 | `gpt-oss-120b` | `parameters[mean auc estimates]` | not captured | 45.8 | only_one_extracted |
 | `gpt-oss-120b` | `parameters[mean auc]` | 45.8 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | deferiprone | unknown | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | deferiprone | unknown | mismatch |
 
 </details>
 

@@ -5,7 +5,7 @@
 
 # insulin lispro — `InsulinLispro_Tham2017_reference`
 
-> ## <span class="pk-badge pk-badge--green" title="covariates_not_exercised: the record defines covariate effects (weight on clearance, renal function …) but the engineer simulated only the reference individual, so those scenarios were never run. The base model still reproduces the paper; what is missing is the covariate curves.">accepted (caveats)</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.529). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--green" title="covariates_not_exercised: the record defines covariate effects (weight on clearance, renal function …) but the engineer simulated only the reference individual, so those scenarios were never run. The base model still reproduces the paper; what is missing is the covariate curves.">accepted (caveats)</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -23,7 +23,7 @@
 
 The base model was simulated, not the covariate effects the record defines.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has insulin_lispro, the second reading unknown; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has insulin_lispro, the second reading insulin lispro; it also differs on 8 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -88,20 +88,21 @@ first reading `qwen3.8-27b` — the numbers on this page are its, whatever the r
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.529 (9/17 fields) | 8 |
+| `gpt-oss-120b` | not confirmed | 0.5 (9/18 fields) | 9 |
 
-<details><summary>8 field(s) a reader read differently</summary>
+<details><summary>9 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
 | `gpt-oss-120b` | `parameters[apparent clearance].covariate_forms` | ['linear_fractional'] | [] | mismatch |
 | `gpt-oss-120b` | `parameters[baseline endogenous insulin concentration]` | not captured | 79.7 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[bioavailability, fglar].parameter_id` | Q40 | Q41 | mismatch |
+| `gpt-oss-120b` | `parameters[covariate effect of dose on bioavailability, θ1]` | not captured | -0.300 | only_one_extracted |
 | `gpt-oss-120b` | `parameters[covariate effect of dose on clearance]` | not captured | -0.282 | only_one_extracted |
 | `gpt-oss-120b` | `parameters[covariate_of_body_weight_on_baseline_endogenous_insulin]` | 0.739 | not captured | only_one_extracted |
-| `gpt-oss-120b` | `parameters[duration of 0‐order absorption]` | not captured | 1.06 | only_one_extracted |
 | `gpt-oss-120b` | `parameters[theta_q324_body_weight]` | not captured | 0.739 | only_one_extracted |
-| `gpt-oss-120b` | `screen.dose_compound` | insulin_lispro | unknown | mismatch |
-| `gpt-oss-120b` | `screen.primary_analyte` | insulin_lispro | unknown | mismatch |
+| `gpt-oss-120b` | `screen.dose_compound` | insulin_lispro | insulin lispro | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | insulin_lispro | insulin lispro | mismatch |
 
 </details>
 

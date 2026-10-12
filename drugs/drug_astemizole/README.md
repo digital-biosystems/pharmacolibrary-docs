@@ -28,7 +28,7 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> | [Back_2015_QTc](drugs/drug_astemizole/pd_Back_2015_QTc.md) | QTc interval ← astemizole · direct Emax (saturable) effect | — | Back HM et al., Development of QTc prolongation model i…, Xenobiotica; the fate of fo… (2015) | [10.3109/00498254.2014.991366](https://doi.org/10.3109/00498254.2014.991366) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.714). The first reading is what the record holds.">cross-check: disputed</span> | [Back_2015_QTc](drugs/drug_astemizole/pd_Back_2015_QTc.md) | QTc interval ← astemizole · direct Emax (saturable) effect | — | Back HM et al., Development of QTc prolongation model i…, Xenobiotica; the fate of fo… (2015) | [10.3109/00498254.2014.991366](https://doi.org/10.3109/00498254.2014.991366) |
 
 ## ADME sites
 

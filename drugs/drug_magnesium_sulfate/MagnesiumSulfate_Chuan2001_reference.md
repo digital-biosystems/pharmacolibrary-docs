@@ -5,7 +5,7 @@
 
 # magnesium sulfate — `MagnesiumSulfate_Chuan2001_reference`
 
-> ## <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.091). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.75). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -21,7 +21,7 @@
 
 Only the abstract was available, so reported summary statistics stand in for a fitted model.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has magnesium sulfate, the second reading unknown; it also differs on 9 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has magnesium sulfate, the second reading magnesium_sulfate; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -71,22 +71,14 @@ first reading `qwen3.8-27b` — the numbers on this page are its, whatever the r
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.091 (1/11 fields) | 10 |
+| `gpt-oss-120b` | not confirmed | 0.75 (6/8 fields) | 2 |
 
-<details><summary>10 field(s) a reader read differently</summary>
+<details><summary>2 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss-120b` | `model.links` | [] | [['none', 'none', 'none']] | mismatch |
-| `gpt-oss-120b` | `parameters[average half-life]` | 5.2 | not captured | only_one_extracted |
-| `gpt-oss-120b` | `parameters[average half-life]` | not captured | 5.2 | only_one_extracted |
 | `gpt-oss-120b` | `parameters[baseline concentration]` | not captured | 0.811 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[systemic clearance]` | 4.28 | not captured | only_one_extracted |
-| `gpt-oss-120b` | `parameters[systemic clearance]` | not captured | 4.28 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[volume of distribution]` | 32.3 | not captured | only_one_extracted |
-| `gpt-oss-120b` | `parameters[volume of distribution]` | not captured | 32.3 | only_one_extracted |
-| `gpt-oss-120b` | `screen.dose_compound` | magnesium sulfate | unknown | mismatch |
-| `gpt-oss-120b` | `screen.primary_analyte` | magnesium | unknown | mismatch |
+| `gpt-oss-120b` | `screen.dose_compound` | magnesium sulfate | magnesium_sulfate | mismatch |
 
 </details>
 

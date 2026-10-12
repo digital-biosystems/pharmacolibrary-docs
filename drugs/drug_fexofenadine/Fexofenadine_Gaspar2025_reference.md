@@ -5,7 +5,7 @@
 
 # fexofenadine — `Fexofenadine_Gaspar2025_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by qwen3.8-27b (partly confirmed, agreement 0.8). The first reading is what the record holds.">cross-check: partial</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by qwen3.8-27b (partly confirmed, agreement 0.889). The first reading is what the record holds.">cross-check: partial</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -21,7 +21,7 @@
 
 Although CL means total drug clearance, its reported label identifies mean estimated creatinine clearance rather than fexofenadine or a metabolite. The model also defaulted ka and Tlag and defaulted ka despite it not being reported in the source; it assumed F=1 and Fm=1 with no molar correction, and used first-order depot input. Extracted — fexofenadine: CL 77.2 mL/min, CL/F 115 L/h, V1/F 14.9 L, V2/F 146 L, Q/F 52 L/h.
 
-A second, independent reading of the paper (`qwen3.8-27b`) disagrees on the value of mean estimated creatinine clearance: this record has 77.2, the second reading none; it also differs on 1 more field. That field does not shape the model.
+A second, independent reading of the paper (`qwen3.8-27b`) disagrees on the value of mean estimated creatinine clearance: this record has 77.2, the second reading none. That field does not shape the model.
 
 <sub>reviewed by gpt-6-luna</sub>
 
@@ -97,14 +97,13 @@ first reading `gpt-6-luna` — the numbers on this page are its, whatever the re
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `qwen3.8-27b` | partly confirmed | 0.8 (8/10 fields) | 2 |
+| `qwen3.8-27b` | partly confirmed | 0.889 (8/9 fields) | 1 |
 
-<details><summary>2 field(s) a reader read differently</summary>
+<details><summary>1 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
 | `qwen3.8-27b` | `parameters[mean estimated creatinine clearance]` | 77.2 | not captured | only_one_extracted |
-| `qwen3.8-27b` | `parameters[the mean estimated creatinine clearance, calculated using the cockcroft-gault formula, was]` | not captured | 77.2 | only_one_extracted |
 
 </details>
 

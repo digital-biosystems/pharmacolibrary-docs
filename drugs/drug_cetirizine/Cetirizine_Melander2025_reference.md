@@ -5,7 +5,7 @@
 
 # cetirizine — `Cetirizine_Melander2025_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.769). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.846). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -21,7 +21,7 @@
 
 Simulated as the paper dosed it, the model's peak concentration (Cmax) differs from the value the paper reports by more than the tolerance. A reported unit could not be converted (Cmax), so that value has no SI equivalent. Extracted — cetirizine: kabs 0.095 h−1, CLm/F 25.2 L/h, Vm/F 19.9 L, tmax 2.53 h, Cmax 30.6 μg/L.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has cetirizine, the second reading unknown; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has cetirizine, the second reading cetirizine or levocetirizine; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -83,15 +83,14 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.769 (10/13 fields) | 3 |
+| `gpt-oss-120b` | not confirmed | 0.846 (11/13 fields) | 2 |
 
-<details><summary>3 field(s) a reader read differently</summary>
+<details><summary>2 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss-120b` | `parameters[covariate effect of pumping duration on vm]` | not captured | 3.47 | only_one_extracted |
-| `gpt-oss-120b` | `screen.dose_compound` | cetirizine | unknown | mismatch |
-| `gpt-oss-120b` | `screen.primary_analyte` | cetirizine | unknown | mismatch |
+| `gpt-oss-120b` | `parameters[apparent vm].parameter_id` | Q367 | Q61 | mismatch |
+| `gpt-oss-120b` | `screen.dose_compound` | cetirizine | cetirizine or levocetirizine | mismatch |
 
 </details>
 

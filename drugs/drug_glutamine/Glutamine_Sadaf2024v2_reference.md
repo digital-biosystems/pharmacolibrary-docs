@@ -20,7 +20,7 @@
 
 Simulated as the paper dosed it, the model's time of the peak (tmax) differs from the value the paper reports by more than the tolerance. Simulated as the paper dosed it, the model's terminal half-life differs from the value the paper reports by more than the tolerance. Extracted — glutamine: kabs 0.91 1/h, CL 78.5 L/h/70 kg, V 0.0636 L/kg.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has glutamine, the second reading l-glutamine; it also differs on 8 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has glutamine, the second reading unknown; it also differs on 8 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -82,7 +82,7 @@ Sadaf A et al., A Population Pharmacokinetic Analysis o…, Clinical pharmacokin
 ## Validation
 
 **Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
-first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
+first reading `qwen3.8-27b` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
@@ -94,14 +94,14 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
 | `gpt-oss-120b` | `parameters[ka]` | 0.91 | not captured | only_one_extracted |
-| `gpt-oss-120b` | `parameters[ka]` | not captured | 0.78 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[ka]` | not captured | 0.91 | only_one_extracted |
 | `gpt-oss-120b` | `parameters[v]` | 0.0636 | not captured | only_one_extracted |
-| `gpt-oss-120b` | `parameters[ɵ1]` | not captured | 67.1 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[ɵ1]` | not captured | 78.5 | only_one_extracted |
 | `gpt-oss-120b` | `parameters[ɵ2]` | -0.96 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[ɵ2]` | not captured | -0.96 | only_one_extracted |
 | `gpt-oss-120b` | `parameters[θ3]` | 52.3 | not captured | only_one_extracted |
-| `gpt-oss-120b` | `parameters[θ4]` | not captured | 0.09 | only_one_extracted |
-| `gpt-oss-120b` | `screen.dose_compound` | glutamine | l-glutamine | mismatch |
-| `gpt-oss-120b` | `screen.primary_analyte` | glutamine | l-glutamine | mismatch |
+| `gpt-oss-120b` | `screen.dose_compound` | glutamine | unknown | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | glutamine | unknown | mismatch |
 | `gpt-oss:120b` | `parameters[ka]` | 0.91 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[ka]` | not captured | 0.91 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[ɵ1]` | not captured | 78.5 | only_one_extracted |

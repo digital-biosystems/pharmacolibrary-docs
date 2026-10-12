@@ -21,7 +21,7 @@
 
 Only the abstract was available, so reported summary statistics stand in for a fitted model.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has aminohippuric_acid, the second reading p-aminohippurate; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has aminohippuric_acid, the second reading unknown; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -76,8 +76,8 @@ first reading `glm-5.3-flash` — the numbers on this page are its, whatever the
 | `gpt-oss-120b` | `parameters[cl]` | not captured | 30.7 | only_one_extracted |
 | `gpt-oss-120b` | `parameters[v]` | 10.6 | not captured | only_one_extracted |
 | `gpt-oss-120b` | `parameters[v]` | not captured | 10.6 | only_one_extracted |
-| `gpt-oss-120b` | `screen.dose_compound` | aminohippuric_acid | p-aminohippurate | mismatch |
-| `gpt-oss-120b` | `screen.primary_analyte` | aminohippuric_acid | p-aminohippurate | mismatch |
+| `gpt-oss-120b` | `screen.dose_compound` | aminohippuric_acid | unknown | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | aminohippuric_acid | unknown | mismatch |
 
 </details>
 

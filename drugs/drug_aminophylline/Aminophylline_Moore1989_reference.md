@@ -82,12 +82,12 @@ first reading `glm-5.3-flash` — the numbers on this page are its, whatever the
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss-120b` | `parameters[bioavailability]` | not captured | not captured | only_one_extracted |
 | `gpt-oss-120b` | `parameters[cl]` | not captured | not captured | only_one_extracted |
-| `gpt-oss-120b` | `parameters[cl]` | not captured | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cl]` | not captured | 17.5 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[clearance reduction]` | not captured | 12 | only_one_extracted |
 | `gpt-oss-120b` | `parameters[v]` | 0.858 | not captured | only_one_extracted |
 | `gpt-oss-120b` | `parameters[v]` | not captured | 0.858 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[weight]` | not captured | 17.5 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[weight]` | not captured | 1.28 | only_one_extracted |
 | `gpt-oss-120b` | `screen.dose_compound` | aminophylline | unknown | mismatch |
 | `gpt-oss-120b` | `screen.primary_analyte` | theophylline | unknown | mismatch |
 

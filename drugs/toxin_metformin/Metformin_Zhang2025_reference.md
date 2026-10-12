@@ -22,8 +22,7 @@
 Zhang Y; Wang J; Tian X; Zhang YJ; Li Y; He SM; Zhang C; Chen X; Wang DD et al. (2025). Drug design, development and therapy 19
   ·  DOI: [10.2147/dddt.s557624](https://doi.org/10.2147/dddt.s557624)
 
-## Model component
-<dbs-pgx drug="metformin" model-id="Metformin_Zhang2025_reference" status="not_modelled" stale="false" population="" measured-compound="metformin" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="metformin" model-id="Metformin_Zhang2025_reference" status="not_modelled" stale="false" population="" measured-compound="metformin" parameterization="apparent" topology="1C"></div>
 
 **Parameterization:** CL/F, V/F — apparent, F unknown (apparent — bioavailability not identifiable).
 

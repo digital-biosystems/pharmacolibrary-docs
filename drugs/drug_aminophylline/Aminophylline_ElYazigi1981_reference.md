@@ -5,7 +5,7 @@
 
 # aminophylline — `Aminophylline_ElYazigi1981_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.2). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rabbit), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rabbit</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.25). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rabbit), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rabbit</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -23,7 +23,7 @@
 
 In this one-compartment rabbit model, the terminal half-life t1/2z is 2.8 hr, but the volume of distribution V carries the unit hr instead of a volume unit, so the structural parameter's dimensions do not match its meaning. The record was also built from the paper's abstract alone, meaning the reported summary statistics stood in for a fitted model. Extracted — theophylline: t1/2z 2.8 hr, V 4.4 hr.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has aminophylline, the second reading unknown; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has aminophylline, the second reading unknown; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by glm-5.3-flash</sub>
 
@@ -75,18 +75,16 @@ first reading `glm-5.3-flash` — the numbers on this page are its, whatever the
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.2 (2/10 fields) | 8 |
+| `gpt-oss-120b` | not confirmed | 0.25 (2/8 fields) | 6 |
 
-<details><summary>8 field(s) a reader read differently</summary>
+<details><summary>6 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss-120b` | `parameters[f]` | not captured | not captured | only_one_extracted |
-| `gpt-oss-120b` | `parameters[half-life]` | not captured | 2.8 | only_one_extracted |
 | `gpt-oss-120b` | `parameters[half-life]` | 2.8 | not captured | only_one_extracted |
-| `gpt-oss-120b` | `parameters[the volume of distribution]` | not captured | 4.4 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[vd]` | not captured | 0.708 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[half-life]` | not captured | 2.8 | only_one_extracted |
 | `gpt-oss-120b` | `parameters[volume of distribution]` | 4.4 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[volume of distribution]` | not captured | 4.4 | only_one_extracted |
 | `gpt-oss-120b` | `screen.dose_compound` | aminophylline | unknown | mismatch |
 | `gpt-oss-120b` | `screen.primary_analyte` | theophylline | unknown | mismatch |
 

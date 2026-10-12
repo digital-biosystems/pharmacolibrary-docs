@@ -4,7 +4,7 @@
 
 # mesna — `Mesna_elYazigi1997_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.667). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -19,6 +19,8 @@
 **The metabolite dimesna is disconnected from the dose, and the abstract-only record lacks a specific metabolism rate constant.**
 
 Dimesna has no elimination pathway and zero compartments, making it an orphan metabolite with no path from the administered dose. The link from mesna to dimesna is missing a quantified rate parameter, as the specific link value is undefined. Because the record is abstract-only, these structural gaps were not resolved by fitted parameters. Extracted — mesna: t1/2α 0.12 hours, t1/2β 2.12 hours, V1 0.324 L/kg, Vss 1.09 L/kg, V2 2.09 L/kg, CL 0.755 L/hr.kg, MRT 6.77 hours, t1/2z 1.29 hours, … (+3).
+
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the links between molecules: this record has mesna → dimesna (metabolism), the second reading none; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by qwen3.8-27b</sub>
 
@@ -78,6 +80,32 @@ el-Yazigi A et al., Pharmacokinetics of mesna and dimesna a…, Journal of clini
 - no GROBID TEI available — transcribed from abstract in el-Yazigi_1997_metadata.yaml (14 record(s)); values are summary statistics, not a fitted model
 
 ## Validation
+
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+first reading `qwen3.8-27b` — the numbers on this page are its, whatever the readers say
+
+| second reader | verdict | agreement | disagreements |
+|---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.667 (12/18 fields) | 6 |
+
+<details><summary>6 field(s) a reader read differently</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss-120b` | `model.links` | [['mesna', 'dimesna', 'metabolism']] | [] | mismatch |
+| `gpt-oss-120b` | `parameters[fraction of dose excreted in urine in the form of mesna]` | not captured | 0.361 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[fractions of dose excreted in urine in the form of mesna and dimesna in 20 hours]` | 0.361 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[renal clearance (clr)]` | not captured | 0.244 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[renal clearance]` | 0.244 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[volume of distribution during the postdistributive phase].parameter_id` | Q64 | Q61 | mismatch |
+
+</details>
+
+<details class="legend">
+<summary>Cross-check legend</summary>
+<table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>second reader</code></td><td>a model that re-read the paper independently, always from a different family than the first reading (scholarv2.secondary_for): a qwen primary is checked by gpt-oss:120b, a gpt-oss primary by qwen3.8:27b-mtp-q8_0 — two checkpoints of one family share their misreads, so agreement between them would mean little. A record can have several readers.</td></tr><tr><td><code>agreement</code></td><td>share of the compared fields that reader agreed on.</td></tr><tr><td><code>verdict</code></td><td>per reader: `confirmed` it agrees throughout · `partly confirmed` a non-structural field differs · `not confirmed` a structural one differs (clearance, a volume, ka, a lag) · `primary re-run` the first reading extracted nothing and was given one hinted retry.</td></tr><tr><td><code>combined</code></td><td>the record's verdict over ALL its readers: confirmed only when every reader that answered agrees, disputed as soon as one disagrees on a structural parameter. The most favourable reading is never taken — an extra reader must not be a way to find one that agrees.</td></tr><tr><td><code>kept</code></td><td>which reading the record holds. ALWAYS the first — a disagreement is a signal for a reviewer, never an automatic correction, so the numbers on this page are the first model's either way.</td></tr></tbody></table>
+</details>
+
 
 **Scholar closed-form checks:**
 

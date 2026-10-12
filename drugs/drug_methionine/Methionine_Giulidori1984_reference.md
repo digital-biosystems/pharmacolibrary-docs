@@ -5,7 +5,7 @@
 
 # methionine — `Methionine_Giulidori1984_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.2). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.364). The first reading is what the record holds.">cross-check: partial</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -21,7 +21,7 @@
 
 The paper (read abstract-only, so summary statistics stand in for a fitted model) reports V/F of 407 ml/kg, terminal half-life of 81 min and body clearance of 3.7 L/h for S-adenosyl-L-methionine after a 100 mg dose, but no absorption parameters. The model builder substituted defaults for ka and Tlag and assumed F=1, Fm=1 with no molar correction, giving an apparent (/F) parameterization with first-order extravascular input. The deviations check could not accept the defaulted parameters or the invented absorption, so the record needs review; the ka default affects the simulated profile but is not supported by this paper. Extracted — S-adenosyl-L-methionine: V/F 407 ml/kg, t1/2z 81 min, CLb 3.7 L/h.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has S-adenosyl-L-methionine, the second reading unknown; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of apparent volume of distribution: this record has 407, the second reading none; it also differs on 6 more fields. That field does not shape the model.
 
 <sub>reviewed by glm-5.3-flash</sub>
 
@@ -74,25 +74,24 @@ Giulidori P et al., Pharmacokinetics of S-adenosyl-L-methio…, European journal
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
 first reading `glm-5.3-flash` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.2 (2/10 fields) | 8 |
+| `gpt-oss-120b` | partly confirmed | 0.364 (4/11 fields) | 7 |
 
-<details><summary>8 field(s) a reader read differently</summary>
+<details><summary>7 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
 | `gpt-oss-120b` | `parameters[apparent volume of distribution after the 100 mg dose]` | not captured | 407 | only_one_extracted |
 | `gpt-oss-120b` | `parameters[apparent volume of distribution]` | 407 | not captured | only_one_extracted |
 | `gpt-oss-120b` | `parameters[body clearance after the 100 mg dose]` | not captured | 3.7 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[body clearance after the 500 mg dose]` | not captured | 3.1 | only_one_extracted |
 | `gpt-oss-120b` | `parameters[body clearance]` | 3.7 | not captured | only_one_extracted |
 | `gpt-oss-120b` | `parameters[terminal half-life after the 100 mg dose]` | not captured | 81 | only_one_extracted |
 | `gpt-oss-120b` | `parameters[terminal half-life]` | 81 | not captured | only_one_extracted |
-| `gpt-oss-120b` | `screen.dose_compound` | S-adenosyl-L-methionine | unknown | mismatch |
-| `gpt-oss-120b` | `screen.primary_analyte` | S-adenosyl-L-methionine | unknown | mismatch |
 
 </details>
 

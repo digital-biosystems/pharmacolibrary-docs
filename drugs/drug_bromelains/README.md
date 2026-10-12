@@ -27,7 +27,7 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 0.00).">in vitro</span> | [Hale_2002_proteolytic_effect_of_bromelain](drugs/drug_bromelains/pd_Hale_2002_proteolytic_effect_of_bromelain.md) | proteolytic effect of bromelain ← bromelain · inhibition effect | — | Hale LP et al., Bromelain treatment alters leukocyte ex…, Clinical immunology (Orland… (2002) | [10.1006/clim.2002.5254](https://doi.org/10.1006/clim.2002.5254) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:gpt-oss-120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 0.00).">in vitro</span> | [Hale_2002_proteolytic_effect_of_bromelain](drugs/drug_bromelains/pd_Hale_2002_proteolytic_effect_of_bromelain.md) | proteolytic effect of bromelain ← bromelain · inhibition effect | — | Hale LP et al., Bromelain treatment alters leukocyte ex…, Clinical immunology (Orland… (2002) | [10.1006/clim.2002.5254](https://doi.org/10.1006/clim.2002.5254) |
 
 <details class="legend">
 <summary>Badge legend — what each badge means</summary>

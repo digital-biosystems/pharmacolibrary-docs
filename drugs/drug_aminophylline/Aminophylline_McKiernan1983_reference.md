@@ -83,14 +83,14 @@ first reading `glm-5.3-flash` — the numbers on this page are its, whatever the
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
 | `gpt-oss-120b` | `model.parameterization` | mechanistic | apparent | mismatch |
-| `gpt-oss-120b` | `parameters[absorption half-life]` | not captured | 0.5 | only_one_extracted |
 | `gpt-oss-120b` | `parameters[bioavailability]` | not captured | 96 | only_one_extracted |
 | `gpt-oss-120b` | `parameters[bioavailability]` | 96 | not captured | only_one_extracted |
-| `gpt-oss-120b` | `parameters[mean apparent specific volume of distribution (v'd(area]]` | not captured | 0.46 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[mean plasma theophylline half-life]` | not captured | 7.8 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[t1/2]` | not captured | 7.8 | only_one_extracted |
 | `gpt-oss-120b` | `parameters[t1/2]` | 7.8 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[t1/2ab]` | not captured | 0.5 | only_one_extracted |
 | `gpt-oss-120b` | `parameters[t1/2ab]` | 0.5 | not captured | only_one_extracted |
 | `gpt-oss-120b` | `parameters[v'd(area]` | 0.46 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[v'd(area]]` | not captured | 0.46 | only_one_extracted |
 
 </details>
 

@@ -5,7 +5,7 @@
 
 # flumazenil — `Flumazenil_Jones1993_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.154). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.133). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -21,7 +21,7 @@
 
 A volume and a clearance/elimination estimate from this paper are needed to build its model. Review values from other papers (Cha_2024, Chen_2025) cannot stand in for this paper's evidence. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — flumazenil: t1/2z 107 min, CLnorm 15.4 L/h/70kg, Vss 1.9 litre kg-1, CL 70.3 L/h, kabs 5.41 1/h, tlag 0.394 h.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has flumazenil, the second reading unknown; it also differs on 10 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has flumazenil, the second reading unknown; it also differs on 12 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -80,9 +80,9 @@ first reading `glm-5.3-flash` — the numbers on this page are its, whatever the
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.154 (2/13 fields) | 11 |
+| `gpt-oss-120b` | not confirmed | 0.133 (2/15 fields) | 13 |
 
-<details><summary>11 field(s) a reader read differently</summary>
+<details><summary>13 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
@@ -92,6 +92,8 @@ first reading `glm-5.3-flash` — the numbers on this page are its, whatever the
 | `gpt-oss-120b` | `parameters[clearance]` | 70.3 | not captured | only_one_extracted |
 | `gpt-oss-120b` | `parameters[elimination half-life]` | 107 | not captured | only_one_extracted |
 | `gpt-oss-120b` | `parameters[elimination half-life]` | not captured | 107 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[flumazenil]` | not captured | 10 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[infusion of flumazenil]` | not captured | 5 | only_one_extracted |
 | `gpt-oss-120b` | `parameters[ka]` | 5.41 | not captured | only_one_extracted |
 | `gpt-oss-120b` | `parameters[total body clearance]` | 15.4 | not captured | only_one_extracted |
 | `gpt-oss-120b` | `parameters[total body clearance]` | not captured | 15.4 | only_one_extracted |

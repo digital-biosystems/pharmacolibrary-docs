@@ -23,7 +23,7 @@
 
 All six extracted parameters describe olpasiran, not the target drug lumasiran. Consequently, lumasiran's clearance, volume of distribution, absorption lag time, and central-to-peripheral rate constant had no values. A second reader also disagreed on the specific numerical values for the olpasiran parameters. Extracted — olpasiran: kabs 0.635 1/h, V1/F 27.9 L, V2/F 1.47e+03 L, V3/F 296 L, CL/F 27.7 L/h, Q/F 2.62 L/h.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has GalNAc-siRNAs, the second reading unknown; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has GalNAc-siRNAs, the second reading lumasiran; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by qwen3.8:27b-mtp-q8_0</sub>
 
@@ -76,7 +76,7 @@ Sten S et al., Plasma Pharmacokinetics of N-Acetylgala…, Clinical pharmacokine
 ## Validation
 
 **Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
-first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
+first reading `qwen3.8-27b` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
@@ -87,8 +87,8 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss-120b` | `screen.dose_compound` | GalNAc-siRNAs | unknown | mismatch |
-| `gpt-oss-120b` | `screen.primary_analyte` | GalNAc-siRNAs | unknown | mismatch |
+| `gpt-oss-120b` | `screen.dose_compound` | GalNAc-siRNAs | lumasiran | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | GalNAc-siRNAs | lumasiran | mismatch |
 | `gpt-oss:120b` | `parameters[cl1/f]` | not captured | 23.8 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[cl1/f]` | 27.7 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[cl2/f]` | not captured | 3.02 | only_one_extracted |

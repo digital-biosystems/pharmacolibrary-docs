@@ -5,7 +5,7 @@
 
 # Iron — `Iron_Ekobena2025_reference`
 
-> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.154), gpt-oss:120b (not confirmed, agreement 0.133). The first reading is what the record holds.">cross-check: disputed 0/2</span>
+> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.143), gpt-oss:120b (not confirmed, agreement 0.133). The first reading is what the record holds.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -21,7 +21,7 @@
 
 The record for iron (one-compartment, oral) reports CL/F 0.504 L/h, V 11.6 L, tlag 0.235 h and kabs 2.6 h−1, but the model builder substituted F=1, Fm=1 and no molar correction, an assumption the adjudication judged not acceptable. A second reader also disagreed on several extracted values, reading the absorption rate constant as 0.64 h−1 instead of 2.6 h−1 and reporting values of 22 and 27 where the record has none, while leaving 0.504, 124, 2781, 61 and 1.3 unread. Extracted — iron: CL/F 0.504 L/h, V 11.6 L, tlag 0.235 h, kabs 2.6 h−1.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of CL/F: this record has 0.504, the second reading none; it also differs on 10 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of CL/F: this record has 0.504, the second reading none; it also differs on 11 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by glm-5.3-flash</sub>
 
@@ -68,16 +68,17 @@ first reading `qwen3.8-27b` — the numbers on this page are its, whatever the r
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.154 (2/13 fields) | 11 |
+| `gpt-oss-120b` | not confirmed | 0.143 (2/14 fields) | 12 |
 | `gpt-oss:120b` | not confirmed | 0.133 (2/15 fields) | 13 |
 
-<details><summary>24 field(s) a reader read differently</summary>
+<details><summary>25 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
 | `gpt-oss-120b` | `model.parameterization` | apparent | mechanistic | mismatch |
 | `gpt-oss-120b` | `values[Q27]` | 0.504 | not captured | only_one_extracted |
-| `gpt-oss-120b` | `values[Q312]` | 124 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `values[Q312]` | 124 | 22 | mismatch |
+| `gpt-oss-120b` | `values[Q316]` | not captured | 27 | only_one_extracted |
 | `gpt-oss-120b` | `values[Q37]` | 2781 | not captured | only_one_extracted |
 | `gpt-oss-120b` | `values[Q40]` | 61 | not captured | only_one_extracted |
 | `gpt-oss-120b` | `values[Q44]` | 1.3 | not captured | only_one_extracted |

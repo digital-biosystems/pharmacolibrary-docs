@@ -5,7 +5,7 @@
 
 # nadroparin — `Nadroparin_Piwowarczyk2023_reference`
 
-> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.909), gpt-oss:120b (not confirmed, agreement 0.8). The first reading is what the record holds.">cross-check: disputed 0/2</span>
+> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.833), gpt-oss:120b (not confirmed, agreement 0.8). The first reading is what the record holds.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -88,14 +88,15 @@ first reading `qwen3.8-27b` — the numbers on this page are its, whatever the r
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | partly confirmed | 0.909 (10/11 fields) | 1 |
+| `gpt-oss-120b` | partly confirmed | 0.833 (10/12 fields) | 2 |
 | `gpt-oss:120b` | not confirmed | 0.8 (8/10 fields) | 2 |
 
-<details><summary>3 field(s) a reader read differently</summary>
+<details><summary>4 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
 | `gpt-oss-120b` | `parameters[proportionality constant in group 1, i.u./ug]` | 0.0835 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[proportionality constant in group 3, i.u./ug]` | not captured | 0.229 | only_one_extracted |
 | `gpt-oss:120b` | `screen.dose_compound` | nadroparin | unknown | mismatch |
 | `gpt-oss:120b` | `screen.primary_analyte` | nadroparin | unknown | mismatch |
 

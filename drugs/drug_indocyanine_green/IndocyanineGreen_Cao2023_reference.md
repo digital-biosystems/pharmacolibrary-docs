@@ -5,7 +5,7 @@
 
 # indocyanine green — `IndocyanineGreen_Cao2023_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.565). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.632). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -23,7 +23,7 @@
 
 The record reports indocyanine green parameters from Cao_2023: CL 1.13 L h−1, V1 0.0515 L, V2 4.39 L, and Q 2.26 L h−1. The clearance and central volume of distribution are of implausible magnitude for this compound, which is the stated cause of rejection. The implausibility points to a unit or scale error when the values were extracted from the source text. Extracted — indocyanine green: CL 1.13 L h−1, V1 0.0515 L, V2 4.39 L, Q 2.26 L h−1.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q31: this record has none, the second reading 6.5; it also differs on 9 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q38: this record has none, the second reading 34.8; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by glm-5.3-flash</sub>
 
@@ -67,22 +67,19 @@ first reading `glm-5.3-flash` — the numbers on this page are its, whatever the
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.565 (13/23 fields) | 10 |
+| `gpt-oss-120b` | not confirmed | 0.632 (12/19 fields) | 7 |
 
-<details><summary>10 field(s) a reader read differently</summary>
+<details><summary>7 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss-120b` | `values[Q312]` | not captured | 69.1 | only_one_extracted |
-| `gpt-oss-120b` | `values[Q31]` | not captured | 6.5 | only_one_extracted |
-| `gpt-oss-120b` | `values[Q32]` | not captured | 12.5 | only_one_extracted |
-| `gpt-oss-120b` | `values[Q338]` | not captured | 0.666 | only_one_extracted |
-| `gpt-oss-120b` | `values[Q36]` | not captured | 0.78 | only_one_extracted |
 | `gpt-oss-120b` | `values[Q38]` | not captured | 34.8 | only_one_extracted |
-| `gpt-oss-120b` | `values[Q44]` | not captured | 51.7 | only_one_extracted |
-| `gpt-oss-120b` | `values[Q57]` | 5 | 0.04 | mismatch |
+| `gpt-oss-120b` | `values[Q57]` | 5 | 1.11 | mismatch |
+| `gpt-oss-120b` | `values[Q60]` | not captured | 0.04 | only_one_extracted |
+| `gpt-oss-120b` | `values[Q84]` | not captured | 27.6 | only_one_extracted |
+| `gpt-oss-120b` | `values[Q88]` | 0.8395 | not captured | only_one_extracted |
 | `gpt-oss-120b` | `values[Q900]` | 0.931 | not captured | only_one_extracted |
-| `gpt-oss-120b` | `values[Q99]` | not captured | 2.8 | only_one_extracted |
+| `gpt-oss-120b` | `values[Q99]` | not captured | 2.26 | only_one_extracted |
 
 </details>
 

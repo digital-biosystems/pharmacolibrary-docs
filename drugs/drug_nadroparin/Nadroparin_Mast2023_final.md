@@ -5,7 +5,7 @@
 
 # nadroparin — `Nadroparin_Mast2023_final`
 
-> ## <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: the record defines covariate effects (weight on clearance, renal function …) but the engineer simulated only the reference individual, so those scenarios were never run. The base model still reproduces the paper; what is missing is the covariate curves.">built, not shipped</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.8). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: the record defines covariate effects (weight on clearance, renal function …) but the engineer simulated only the reference individual, so those scenarios were never run. The base model still reproduces the paper; what is missing is the covariate curves.">built, not shipped</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.824). The first reading is what the record holds.">cross-check: partial</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -23,7 +23,7 @@
 
 The record defined no values for the drug's clearance, volume of distribution, or absorption lag time, resulting in a model held back rather than published with invented numbers. Additionally, the covariate scenarios defined in the record were not simulated, meaning only the base model structure was evaluated. Extracted — nadroparin: CL/F 21 L/h, V/F 8.24e+03 mL, Q/F 157 mL/min, ktr 0.0157 min−1.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has nadroparin, the second reading unknown; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of f: this record has none, the second reading none; it also differs on 2 more fields. That field does not shape the model.
 
 <sub>reviewed by qwen3.8-27b</sub>
 
@@ -93,20 +93,20 @@ Mast L et al., The effect of renal impairment and obes…, European journal of c
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
 first reading `qwen3.8-27b` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.8 (12/15 fields) | 3 |
+| `gpt-oss-120b` | partly confirmed | 0.824 (14/17 fields) | 3 |
 
 <details><summary>3 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[bsl (axa iu/ml) in individuals of current study]` | not captured | 0.021 | only_one_extracted |
 | `gpt-oss-120b` | `parameters[bsl anti-xa (iu/ml) in individuals of diepstraten et al. [19]]` | not captured | 0.0226 | only_one_extracted |
-| `gpt-oss-120b` | `screen.dose_compound` | nadroparin | unknown | mismatch |
-| `gpt-oss-120b` | `screen.primary_analyte` | anti-Xa activity | unknown | mismatch |
+| `gpt-oss-120b` | `parameters[f]` | not captured | not captured | only_one_extracted |
 
 </details>
 

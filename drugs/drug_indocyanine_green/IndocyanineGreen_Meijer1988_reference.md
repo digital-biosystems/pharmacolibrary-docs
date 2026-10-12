@@ -5,7 +5,7 @@
 
 # indocyanine green — `IndocyanineGreen_Meijer1988_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.143). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.333). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -21,7 +21,7 @@
 
 The volume of distribution was recorded as 3.01 mL, a magnitude far below any plausible value for indocyanine green, and the clearance of 230 ml.min-1 was flagged as outside the physiological window; both point to a dimension mismatch on a structural parameter, likely from misreading units in the abstract. The record was built from the paper's abstract alone, so reported summary statistics stood in for a fitted model, which limits what could be extracted. Other parameters, such as the terminal half-life of 67.6 min and the biliary excretion half-life of 5 min, were recorded but the implausible clearance and volume caused the rejection. Extracted — indocyanine green: t1/2z 67.6 min, kexcr 5 min, t1/2β 73 min, tmax 1.3 h, CL 230 ml.min-1, V 3.01 mL.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has indocyanine green, the second reading unknown; it also differs on 11 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on `parameters[clearance].value`: this record has 230, the second reading 475; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by glm-5.3-flash</sub>
 
@@ -80,24 +80,20 @@ first reading `glm-5.3-flash` — the numbers on this page are its, whatever the
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.143 (2/14 fields) | 12 |
+| `gpt-oss-120b` | not confirmed | 0.333 (4/12 fields) | 8 |
 
-<details><summary>12 field(s) a reader read differently</summary>
+<details><summary>8 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss-120b` | `parameters[clearance]` | 230 | not captured | only_one_extracted |
-| `gpt-oss-120b` | `parameters[clearance]` | not captured | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[clearance].value` | 230 | 475 | mismatch |
 | `gpt-oss-120b` | `parameters[dose-dependent apparent t1/2]` | 67.6 | not captured | only_one_extracted |
-| `gpt-oss-120b` | `parameters[dose]` | not captured | 0.5 | only_one_extracted |
 | `gpt-oss-120b` | `parameters[mean t1/2 of ascending phase of biliary excretion rate curve]` | 5 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[t1/2 (ascending phase,]` | not captured | 5 | only_one_extracted |
 | `gpt-oss-120b` | `parameters[t1/2 of the descending phase]` | 73 | not captured | only_one_extracted |
 | `gpt-oss-120b` | `parameters[t1/2]` | not captured | not captured | only_one_extracted |
-| `gpt-oss-120b` | `parameters[time of maximal excretion]` | 1.3 | not captured | only_one_extracted |
-| `gpt-oss-120b` | `parameters[time of maximal excretion]` | not captured | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[time of maximal excretion].value` | 1.3 | not captured | mismatch |
 | `gpt-oss-120b` | `parameters[volume of distribution v]` | 3.01 | not captured | only_one_extracted |
-| `gpt-oss-120b` | `screen.dose_compound` | indocyanine green | unknown | mismatch |
-| `gpt-oss-120b` | `screen.primary_analyte` | indocyanine green | unknown | mismatch |
 
 </details>
 

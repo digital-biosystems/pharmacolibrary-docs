@@ -69,8 +69,8 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
 | `gpt-oss-120b` | `model.parameterization` | mechanistic | apparent | mismatch |
-| `gpt-oss-120b` | `parameters[levocetirizine oral clearance]` | not captured | 0.044 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[levocetirizine volume of distribution]` | not captured | 0.639 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[levocetirizine oral clearance would increase by]` | not captured | 0.044 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[levocetirizine volume of distribution would increase by]` | not captured | 0.639 | only_one_extracted |
 
 </details>
 

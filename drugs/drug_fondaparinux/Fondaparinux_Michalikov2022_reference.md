@@ -75,11 +75,11 @@ first reading `qwen3.8-27b` — the numbers on this page are its, whatever the r
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss-120b` | `parameters[cl]` | not captured | 0.05289 | only_one_extracted |
 | `gpt-oss-120b` | `parameters[clearance]` | 0.05289 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[clearance]` | not captured | 0.05289 | only_one_extracted |
 | `gpt-oss-120b` | `parameters[high-flux hd]` | not captured | 2.26 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[vd]` | not captured | 5.55 | only_one_extracted |
 | `gpt-oss-120b` | `parameters[volume of distribution]` | 5.55 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[volume of distribution]` | not captured | 5.55 | only_one_extracted |
 | `gpt-oss-120b` | `screen.dose_compound` | fondaparinux | unknown | mismatch |
 | `gpt-oss-120b` | `screen.primary_analyte` | fondaparinux | unknown | mismatch |
 | `gpt-oss:120b` | `parameters[cl]` | not captured | 0.05289 | only_one_extracted |

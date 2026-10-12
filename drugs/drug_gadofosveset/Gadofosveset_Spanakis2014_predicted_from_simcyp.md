@@ -4,7 +4,7 @@
 
 # gadofosveset — `Gadofosveset_Spanakis2014_predicted_from_simcyp`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by qwen3.8-27b (partly confirmed, agreement 0.667). The first reading is what the record holds.">cross-check: partial</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by qwen3.8-27b (partly confirmed, agreement 0.778). The first reading is what the record holds.">cross-check: partial</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -20,7 +20,7 @@
 
 A model needs both clearance and volume; without the volume it could only be built on a library default, so it was not. Extracted — gadofosveset: fu 0.11, fe 0.94, AUC ratio 1.8, CL 0.5 L/h.
 
-A second, independent reading of the paper (`qwen3.8-27b`) disagrees on the value of auc fold increase in severe renal impairment: this record has none, the second reading 2.25; it also differs on 2 more fields. That field does not shape the model.
+A second, independent reading of the paper (`qwen3.8-27b`) disagrees on the value of cl: this record has none, the second reading 0; it also differs on 1 more field. That field does not shape the model.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -74,14 +74,13 @@ first reading `gpt-6-luna` — the numbers on this page are its, whatever the re
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `qwen3.8-27b` | partly confirmed | 0.667 (6/9 fields) | 3 |
+| `qwen3.8-27b` | partly confirmed | 0.778 (7/9 fields) | 2 |
 
-<details><summary>3 field(s) a reader read differently</summary>
+<details><summary>2 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `qwen3.8-27b` | `parameters[auc fold increase in severe renal impairment]` | not captured | 2.25 | only_one_extracted |
-| `qwen3.8-27b` | `parameters[fu].value` | 0.11 | 0.12 | mismatch |
+| `qwen3.8-27b` | `parameters[cl]` | not captured | 0 | only_one_extracted |
 | `qwen3.8-27b` | `parameters[oncology cl]` | 0.50 | not captured | only_one_extracted |
 
 </details>

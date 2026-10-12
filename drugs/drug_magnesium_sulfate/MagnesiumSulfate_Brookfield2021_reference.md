@@ -21,7 +21,7 @@
 
 The paper reports no distribution volume and no clearance or elimination rate; it is an exposure/outcome paper. Only the abstract was available, so reported summary statistics stand in for a fitted model.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the links between molecules: this record has none, the second reading magnesium sulfate → magnesium (hydrolysis); it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which molecule was measured: this record has magnesium, the second reading magnesium sulfate; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -86,10 +86,10 @@ first reading `qwen3.8-27b` — the numbers on this page are its, whatever the r
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss-120b` | `model.links` | [] | [['magnesium sulfate', 'magnesium', 'hydrolysis']] | mismatch |
 | `gpt-oss-120b` | `parameters[cl].covariate_forms` | [] | ['power'] | mismatch |
-| `gpt-oss-120b` | `parameters[theta_cl_creatinine_power]` | not captured | -0.73 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[serum_creatinine_exponent_for_cl]` | not captured | -0.73 | only_one_extracted |
 | `gpt-oss-120b` | `parameters[theta_q1_creatinine_power]` | -0.73 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `screen.primary_analyte` | magnesium | magnesium sulfate | mismatch |
 | `gpt-oss:120b` | `parameters[absolute bioavailability]` | 0.86 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[absolute bioavailability]` | not captured | 0.86 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[absorption rate constant]` | 0.32 | not captured | only_one_extracted |

@@ -23,8 +23,7 @@
 ## Citation
 not matched (stem Chen_2025)
 
-## Model component
-<dbs-pgx drug="metformin" model-id="Metformin_Chen2025_reference" status="extracted" stale="true" population="" measured-compound="metformin" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="metformin" model-id="Metformin_Chen2025_reference" status="extracted" stale="true" population="" measured-compound="metformin" parameterization="apparent" topology="1C"></div>
 
 **Parameterization:** CL/F, V/F — apparent, F unknown (apparent — bioavailability not identifiable).
 

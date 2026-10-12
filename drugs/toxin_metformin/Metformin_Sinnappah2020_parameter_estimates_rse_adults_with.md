@@ -19,8 +19,7 @@
 Sinnappah KA; Kuan IHS; Thynne TRJ; Doogue MP; Wright DFB et al. (2020). British journal of clinical pharmacology 86
   ·  DOI: [10.1111/bcp.14244](https://doi.org/10.1111/bcp.14244)
 
-## Model component
-<dbs-pgx drug="metformin" model-id="Metformin_Sinnappah2020_parameter_estimates_rse_adults_with" status="not_modelled" stale="false" population="adults with Type 2 diabetes receiving intermittent haemodialysis" measured-compound="" parameterization="" topology=""></dbs-pgx>
+<div class="pk-model-meta" hidden drug="metformin" model-id="Metformin_Sinnappah2020_parameter_estimates_rse_adults_with" status="not_modelled" stale="false" population="adults with Type 2 diabetes receiving intermittent haemodialysis" measured-compound="" parameterization="" topology=""></div>
 
 **Parameterization:** not captured.
 

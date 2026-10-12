@@ -4,7 +4,7 @@
 
 # loratadine — `Loratadine_Salem2010_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.167). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.778). The first reading is what the record holds.">cross-check: partial</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -20,7 +20,7 @@
 
 A model needs both clearance and volume; without the volume it could only be built on a library default, so it was not. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — loratadine: kel 0.19 hour(-1), t1/2z 3.65 hours, kabs 1.31 hours(-1), t1/2ka 0.53 hour.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has loratadine, the second reading unknown; it also differs on 9 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of ke: this record has none, the second reading 0.19; it also differs on 1 more field. That field does not shape the model.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -67,27 +67,19 @@ Salem II et al., A retrospective, open-label analysis of…, Clinical therapeuti
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
 first reading `qwen3.8-27b` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.167 (2/12 fields) | 10 |
+| `gpt-oss-120b` | partly confirmed | 0.778 (7/9 fields) | 2 |
 
-<details><summary>10 field(s) a reader read differently</summary>
+<details><summary>2 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss-120b` | `parameters[absorption rate constant]` | 1.31 | not captured | only_one_extracted |
-| `gpt-oss-120b` | `parameters[absorption rate constant]` | not captured | 1.31 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[absorption t]` | 0.53 | not captured | only_one_extracted |
-| `gpt-oss-120b` | `parameters[absorption t]` | not captured | 0.53 | only_one_extracted |
 | `gpt-oss-120b` | `parameters[ke]` | not captured | 0.19 | only_one_extracted |
 | `gpt-oss-120b` | `parameters[population ke]` | 0.19 | not captured | only_one_extracted |
-| `gpt-oss-120b` | `parameters[t]` | 3.65 | not captured | only_one_extracted |
-| `gpt-oss-120b` | `parameters[t]` | not captured | 3.65 | only_one_extracted |
-| `gpt-oss-120b` | `screen.dose_compound` | loratadine | unknown | mismatch |
-| `gpt-oss-120b` | `screen.primary_analyte` | loratadine | unknown | mismatch |
 
 </details>
 

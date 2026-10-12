@@ -28,7 +28,7 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> | [Kim_1995_photosensitivity](drugs/drug_mequitazine/pd_Kim_1995_photosensitivity.md) | photosensitivity ← mequitazine · stimulation effect | — | Kim TH et al., Two cases of mequitazine-induced photos…, Photodermatology, photoimmu… (1995) | [10.1111/j.1600-0781.1995.tb00161.x](https://doi.org/10.1111/j.1600-0781.1995.tb00161.x) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:gpt-oss-120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [Kim_1995_photosensitivity](drugs/drug_mequitazine/pd_Kim_1995_photosensitivity.md) | photosensitivity ← mequitazine · stimulation effect | — | Kim TH et al., Two cases of mequitazine-induced photos…, Photodermatology, photoimmu… (1995) | [10.1111/j.1600-0781.1995.tb00161.x](https://doi.org/10.1111/j.1600-0781.1995.tb00161.x) |
 
 ## ADME sites
 

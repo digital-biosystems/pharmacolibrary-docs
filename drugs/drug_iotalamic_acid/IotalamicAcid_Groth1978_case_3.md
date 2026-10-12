@@ -5,7 +5,7 @@
 
 # iotalamic acid — `IotalamicAcid_Groth1978_case_3`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.538). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -21,7 +21,7 @@
 
 A volume and a clearance/elimination estimate from this paper are needed to build its model. Review values from other papers (Shin_2015) cannot stand in for this paper's evidence. None of the extracted parameters is iotalamic acid's own; they describe sodium iothalamate. Extracted — sodium iothalamate: k12 0.02 min⁻¹, k21 0.031 min⁻¹, k13 0.0155 min⁻¹, Q2 110 ml/min, V 0.21 L/kg.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has sodium iothalamate, the second reading iotalamic_acid; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on `parameters[clearance k3 v1].parameter_id`: this record has Q99, the second reading Q22; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -87,18 +87,18 @@ first reading `glm-5.3-flash` — the numbers on this page are its, whatever the
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.5 (6/12 fields) | 6 |
+| `gpt-oss-120b` | not confirmed | 0.538 (7/13 fields) | 6 |
 
 <details><summary>6 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
 | `gpt-oss-120b` | `parameters[clearance k3 v1].parameter_id` | Q99 | Q22 | mismatch |
-| `gpt-oss-120b` | `parameters[k1].parameter_id` | Q301 | Q67 | mismatch |
-| `gpt-oss-120b` | `parameters[k3].parameter_id` | Q303 | Q47 | mismatch |
+| `gpt-oss-120b` | `parameters[k1].parameter_id` | Q301 | Q47 | mismatch |
+| `gpt-oss-120b` | `parameters[k2].parameter_id` | Q302 | Q301 | mismatch |
+| `gpt-oss-120b` | `parameters[k3]` | 0.0155 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[nosslin's method "random-walk" model]` | not captured | 107 | only_one_extracted |
 | `gpt-oss-120b` | `parameters[volume of distribution]` | 0.21 | not captured | only_one_extracted |
-| `gpt-oss-120b` | `screen.dose_compound` | sodium iothalamate | iotalamic_acid | mismatch |
-| `gpt-oss-120b` | `screen.primary_analyte` | sodium iothalamate | iotalamic_acid | mismatch |
 
 </details>
 

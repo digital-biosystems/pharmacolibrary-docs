@@ -1,21 +1,42 @@
-<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;ibritumomab_tiuxetan&quot;}]"></div>
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;V10X&quot;,&quot;href&quot;:&quot;atc/V10X.md&quot;},{&quot;label&quot;:&quot;ibritumomab tiuxetan&quot;}]"></div>
 
-# ibritumomab_tiuxetan
+# ibritumomab tiuxetan
 
-- **generic name:** not captured
-- **ATC codes:** not captured
-- **DrugBank:** not captured · **PubChem:** not captured
-- **groups:** not captured
+- **generic name:** ibritumomab tiuxetan
+- **ATC codes:** `V10XX02`
+- **DrugBank:** [DB00078](https://go.drugbank.com/drugs/DB00078) · **PubChem:** not captured
+- **groups:** approved
+
+## About
+
+Ibritumomab tiuxetan is a radioimmunotherapy drug, a monoclonal antibody radiopharmaceutical used to treat follicular lymphoma. It is an approved medication, though its European Union marketing authorisation has lapsed, so its use is now limited mainly to the United States.
+
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q635415](https://www.wikidata.org/wiki/Q635415) and the WHO ATC classification and the EMA medicines list; not checked by a person.</small>
 
 ## Extraction summary
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| not captured | not captured | 0/0/0 | 0/0/0 | 0/0/0 | not captured | not captured | 0 | 0/0 | 0/0 | 0 |
+| 2026-10-07 16:55 | 10:11 | 0/5/0 | 0/0/0 | 0/0/0 | 161,200/26,558 | ollama / qwen3.8:27b-mtp-q8_0 | 3 | 0/3 | 3/0 | 0 |
 
 ## popPK records
 
-_not available_
+| status | detail | model | model structure | params | citation | doi |
+|---|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.833), gpt-oss:120b (not confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: disputed 0/2</span><br><sub>STALE — current validate: rejected</sub><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Morschhauser_2018_f1](drugs/drug_ibritumomab_tiuxetan/IbritumomabTiuxetan_Morschhauser2018_f1.md) | — | 1-compartment (no model) | 6 | Morschhauser F et al., A new pharmacokinetic model for 90Y-ibr…, Scientific reports (2018) | [10.1038/s41598-018-33160-0](https://doi.org/10.1038/s41598-018-33160-0) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.875), gpt-oss:120b (not confirmed, agreement 0.75). The first reading is what the record holds.">cross-check: disputed 0/2</span><br><sub>STALE — current validate: rejected</sub><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Morschhauser_2018_f2](drugs/drug_ibritumomab_tiuxetan/IbritumomabTiuxetan_Morschhauser2018_f2.md) | — | 1-compartment (no model) | 10 | Morschhauser F et al., A new pharmacokinetic model for 90Y-ibr…, Scientific reports (2018) | [10.1038/s41598-018-33160-0](https://doi.org/10.1038/s41598-018-33160-0) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.909), gpt-oss:120b (not confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: disputed 0/2</span><br><sub>STALE — current validate: rejected</sub><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Morschhauser_2018_liver](drugs/drug_ibritumomab_tiuxetan/IbritumomabTiuxetan_Morschhauser2018_liver.md) | — | 1-compartment (no model) | 6 | Morschhauser F et al., A new pharmacokinetic model for 90Y-ibr…, Scientific reports (2018) | [10.1038/s41598-018-33160-0](https://doi.org/10.1038/s41598-018-33160-0) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.909), gpt-oss:120b (not confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: disputed 0/2</span><br><sub>STALE — current validate: rejected</sub><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Morschhauser_2018_lumbar_vertebrae_l2_l4](drugs/drug_ibritumomab_tiuxetan/IbritumomabTiuxetan_Morschhauser2018_lumbar_vertebrae_l2_l4.md) | — | 1-compartment (no model) | 6 | Morschhauser F et al., A new pharmacokinetic model for 90Y-ibr…, Scientific reports (2018) | [10.1038/s41598-018-33160-0](https://doi.org/10.1038/s41598-018-33160-0) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.909), gpt-oss:120b (not confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: disputed 0/2</span><br><sub>STALE — current validate: rejected</sub><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Morschhauser_2018_spleen](drugs/drug_ibritumomab_tiuxetan/IbritumomabTiuxetan_Morschhauser2018_spleen.md) | — | 1-compartment (no model) | 6 | Morschhauser F et al., A new pharmacokinetic model for 90Y-ibr…, Scientific reports (2018) | [10.1038/s41598-018-33160-0](https://doi.org/10.1038/s41598-018-33160-0) |
+
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=ibritumomab_tiuxetan) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+
+<sub>Actors without a tissue in the table: MS4A1 (antibody), MS4A1 (regulator).</sub>
 
 <details class="legend">
 <summary>Badge legend — what each badge means</summary>
@@ -25,10 +46,39 @@ _not available_
 
 ## Coverage
 
-- **PubMed hits:** 0 matched, 0 returned
-- **screened:** 0  ·  **relevant:** 0
-- **records:** 0  ·  extracted 0  ·  needs_review 0  ·  rejected 0  ·  stale 0
+- **PubMed hits:** 17 matched, 12 returned
+- **screened:** 2  ·  **relevant:** 1
+- **records:** 5  ·  extracted 0  ·  needs_review 0  ·  rejected 5  ·  stale 5
 - **scholar-agent fallback query used:** not captured
 
+## Full text wanted
+
+_1 paper(s) judged relevant from the abstract, with no full text on disk — paywalled, or the resolver could not reach them. Follow the DOI, then save the PDF into `papers/` as `&lt;save as&gt;.pdf` and re-run the extraction._
+
+| save as | citation | domain | score | DOI | PubMed | why wanted |
+|---|---|---|---|---|---|---|
+| `Meerkhan_2014.pdf` | Meerkhan SA et al., Testis dosimetry in individual patients…, Physics in medicine and bio… (2014) | popPK | 8 | [10.1088/0031-9155/59/24/7889](https://doi.org/10.1088/0031-9155/59/24/7889) | [25426744](https://pubmed.ncbi.nlm.nih.gov/25426744) | The study applies compartmental pharmacokinetic modeling to ibritumomab tiuxetan in humans, but specific numeric parameter values (CL, V, etc.) are not explicitly listed in the provided abstract text. |
+
+<sub>queue written 2026-10-07T16:46:10.298434+00:00</sub>
+
+## Screened and excluded
+
+| domain | paper | verdict | relevance | extractability | reason |
+|---|---|---|---|---|---|
+| popPK | Auger-Quittet_2014 | irrelevant | 0 | 0 | The paper is a clinical meta-analysis of outcomes (survival, response rates) and does not report pharmacokinetic parameters. |
+| PD | Fisher_2009 | not_relevant | 0 | 0 | The paper reports radiation dosimetry (absorbed dose estimates) and biokinetics, not a pharmacodynamic exposure-response or dose-response relationship with numeric PD parameters like Emax or EC50. |
+| PGx | Galimberti_2019 | not_relevant | 0 | 0 | The paper is a review on minimal residual disease (MRD) detection techniques in lymphomas and does not report pharmacogenomic effects on the PK/PD of ibritumomab tiuxetan. |
+| popPK | Li_2017 | irrelevant | 0 | 0 | The paper is a meta-analysis of progression-free survival in non-Hodgkin lymphoma and does not report pharmacokinetic parameters for ibritumomab tiuxetan. |
+| PD | Li_2017 | not_relevant | 0 | 0 | The paper is a model-based meta-analysis of progression-free survival in NHL using summary-level data and does not report any pharmacokinetic or pharmacodynamic parameters for ibritumomab tiuxetan. |
+| popPK | Meerkhan_2014 | relevant | 8 | 2 | The study applies compartmental pharmacokinetic modeling to ibritumomab tiuxetan in humans, but specific numeric parameter values (CL, V, etc.) are not explicitly listed in the provided abstract text. |
+| PD | Mirick_2004 | not_relevant | 0 | 0 | The paper is a review of human anti-globulin antibody (HAGA) responses to monoclonal antibodies and does not report any pharmacodynamic or exposure-response data for ibritumomab tiuxetan. |
+| popPK | Parrot_2026 | irrelevant | 0 | 0 | The paper is a review on nanoparticle pharmacokinetic modeling and does not contain any data or parameters for ibritumomab tiuxetan. |
+| PD | Parrot_2026 | not_relevant | 0 | 0 | The text is a general review on nanoparticle pharmacokinetic modeling and does not contain any specific data, analysis, or PD parameters for ibritumomab tiuxetan. |
+| popPK | Sinnollareddy_2026 | irrelevant | 0 | 0 | The study reports pharmacokinetic parameters for epcoritamab, not ibritumomab tiuxetan. |
+| PD | Witzig_1999 | not_relevant | 0 | 0 | The paper is a Phase I/II clinical trial reporting safety and efficacy outcomes (response rates, MTD) but does not provide pharmacokinetic data, exposure-response analysis, or numeric PD parameters. |
+| popPK | Woillard_2014 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of ciclosporin, not ibritumomab_tiuxetan. |
+| PD | Woillard_2014 | not_relevant | 0 | 0 | The paper focuses on pharmacokinetic modeling and dose adjustment for ciclosporin, not ibritumomab tiuxetan, and contains no pharmacodynamic or exposure-response analysis. |
+| PD | unknown_2003 | not_relevant | 0 | 0 | The text is a business and regulatory review of Iodine-131 Tositumomab (Bexxar) and does not contain any pharmacokinetic or pharmacodynamic data, models, or numeric parameters. |
+
 ---
-<sub>Generated by `docs.py` (scholarv2)</sub>
+<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-10-07 16:46 UTC</sub>

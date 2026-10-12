@@ -19,8 +19,7 @@
 Chae JW; Baek IH; Lee BY; Cho SK; Kwon KI et al. (2012). British journal of clinical pharmacology 74
   ·  DOI: [10.1111/j.1365-2125.2012.04260.x](https://doi.org/10.1111/j.1365-2125.2012.04260.x)
 
-## Model component
-<dbs-pgx drug="metformin" model-id="Metformin_Chae2012_reference" status="not_modelled" stale="false" population="healthy humans" measured-compound="metformin" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="metformin" model-id="Metformin_Chae2012_reference" status="not_modelled" stale="false" population="healthy humans" measured-compound="metformin" parameterization="mechanistic" topology="1C"></div>
 
 **Parameterization:** mechanistic.
 

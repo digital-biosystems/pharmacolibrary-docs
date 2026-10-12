@@ -5,7 +5,7 @@
 
 # boric acid — `BoricAcid_Usuda1998_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.105). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.143). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -23,7 +23,7 @@
 
 A volume and a clearance/elimination estimate from this paper are needed to build its model. Review values from other papers (Syvänen_2012) cannot stand in for this paper's evidence. Only the abstract was available, so reported summary statistics stand in for a fitted model. None of the extracted parameters is boric acid's own; they describe boron (boric acid). Extracted — boron (boric acid): t1/2α 0.608 h, t1/2z 4.64 h, V 142 L, CLnorm 0.359 L/h, Cmax 2.13 mg/l, tmax 1.76 h, CL 32.1 mL/min.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has sodium tetraborate, the second reading unknown; it also differs on 16 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which molecule was measured: this record has boron (boric acid), the second reading boric_acid; it also differs on 17 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -90,29 +90,30 @@ first reading `glm-5.3-flash` — the numbers on this page are its, whatever the
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.105 (2/19 fields) | 17 |
+| `gpt-oss-120b` | not confirmed | 0.143 (3/21 fields) | 18 |
 
-<details><summary>17 field(s) a reader read differently</summary>
+<details><summary>18 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss-120b` | `parameters[absorption half-life, t1/2a]` | not captured | 0.608 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[boron concentration in solution]` | not captured | 0.4 | only_one_extracted |
 | `gpt-oss-120b` | `parameters[cl]` | 32.1 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cmax]` | not captured | 2.13 | only_one_extracted |
 | `gpt-oss-120b` | `parameters[cmax]` | 2.13 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[ctot]` | not captured | 0.359 | only_one_extracted |
 | `gpt-oss-120b` | `parameters[ctot]` | 0.359 | not captured | only_one_extracted |
-| `gpt-oss-120b` | `parameters[elimination half-life, t1/2]` | not captured | 4.64 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[dose volume]` | not captured | 2 | only_one_extracted |
 | `gpt-oss-120b` | `parameters[f]` | not captured | not captured | only_one_extracted |
-| `gpt-oss-120b` | `parameters[maximum boron concentration in serum after administration]` | not captured | 2.13 | only_one_extracted |
 | `gpt-oss-120b` | `parameters[r]` | 0.999 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[regression coefficient]` | not captured | 0.954 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[t1/2]` | not captured | 4.64 | only_one_extracted |
 | `gpt-oss-120b` | `parameters[t1/2]` | 4.64 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[t1/2a]` | not captured | 0.608 | only_one_extracted |
 | `gpt-oss-120b` | `parameters[t1/2a]` | 0.608 | not captured | only_one_extracted |
-| `gpt-oss-120b` | `parameters[time needed to reach this maximum concentration]` | not captured | 1.76 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[tmax]` | not captured | 1.76 | only_one_extracted |
 | `gpt-oss-120b` | `parameters[tmax]` | 1.76 | not captured | only_one_extracted |
-| `gpt-oss-120b` | `parameters[total clearance, ctot]` | not captured | 0.359 | only_one_extracted |
 | `gpt-oss-120b` | `parameters[vd]` | 142.0 | not captured | only_one_extracted |
-| `gpt-oss-120b` | `parameters[volume of distribution, vd]` | not captured | 142.0 | only_one_extracted |
-| `gpt-oss-120b` | `screen.dose_compound` | sodium tetraborate | unknown | mismatch |
-| `gpt-oss-120b` | `screen.primary_analyte` | boron (boric acid) | unknown | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | boron (boric acid) | boric_acid | mismatch |
 
 </details>
 

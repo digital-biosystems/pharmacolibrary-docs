@@ -26,7 +26,7 @@
 - reference category (θ=0) not captured — must not be inferred
 
 ## Citation
-Sim E; Abuhammad A; Ryan A et al. (2014). British journal of pharmacology 171
+Sim E et al., Arylamine N-acetyltransferases: from dr…, British journal of pharmaco… (2014)
   ·  DOI: [10.1111/bph.12598](https://doi.org/10.1111/bph.12598)
 
 

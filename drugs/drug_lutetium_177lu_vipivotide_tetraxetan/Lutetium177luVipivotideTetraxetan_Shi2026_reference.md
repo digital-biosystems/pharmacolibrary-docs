@@ -5,7 +5,7 @@
 
 # lutetium (177Lu) vipivotide tetraxetan — `Lutetium177luVipivotideTetraxetan_Shi2026_reference`
 
-> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.667). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.667), gpt-oss:120b (not confirmed, agreement 0.667). The first reading is what the record holds.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -19,7 +19,7 @@
 
 **Every check that could be run on this record passed.**
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on parameter Q174: this record has none, the second reading 0.103; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q189: this record has none, the second reading 0.45; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -56,17 +56,23 @@ Shi H et al., A phase II study evaluating pharmacokin…, EJNMMI research (2026)
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.667 (10/15 fields) | 5 |
 | `gpt-oss:120b` | not confirmed | 0.667 (10/15 fields) | 5 |
 
-<details><summary>5 field(s) a reader read differently</summary>
+<details><summary>10 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `values[Q189]` | not captured | 0.45 | only_one_extracted |
+| `gpt-oss-120b` | `values[Q364]` | not captured | 1214 | only_one_extracted |
+| `gpt-oss-120b` | `values[Q414]` | not captured | 3211 | only_one_extracted |
+| `gpt-oss-120b` | `values[Q74]` | 64.4 | 64.4 | mismatch |
+| `gpt-oss-120b` | `values[Q88]` | not captured | 1.8 | only_one_extracted |
 | `gpt-oss:120b` | `values[Q174]` | not captured | 0.103 | only_one_extracted |
 | `gpt-oss:120b` | `values[Q189]` | not captured | 2.0 | only_one_extracted |
 | `gpt-oss:120b` | `values[Q364]` | not captured | 2519 | only_one_extracted |

@@ -5,7 +5,7 @@
 
 # iotalamic acid — `IotalamicAcid_Bck1988_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.286). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.25). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -21,7 +21,7 @@
 
 A volume and a clearance/elimination estimate from this paper are needed to build its model. Review values from other papers (Shin_2015) cannot stand in for this paper's evidence. The check had no reference to compare the clearance against, so the value is unverified rather than shown to be wrong. Extracted — iotalamic acid: CL 191 ml/min, V 0.21 L/kg.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has iothalamic acid (with metrizoate, amidotrizoate, iohexol), the second reading iothalamate; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has iothalamic acid (with metrizoate, amidotrizoate, iohexol), the second reading unknown; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -75,17 +75,18 @@ first reading `glm-5.3-flash` — the numbers on this page are its, whatever the
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.286 (2/7 fields) | 5 |
+| `gpt-oss-120b` | not confirmed | 0.25 (2/8 fields) | 6 |
 
-<details><summary>5 field(s) a reader read differently</summary>
+<details><summary>6 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss-120b` | `parameters[plasma clearance]` | not captured | 191 | only_one_extracted |
 | `gpt-oss-120b` | `parameters[plasma clearance]` | 191 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[plasma clearance]` | not captured | 191 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[single small-dose injection]` | not captured | 5 | only_one_extracted |
 | `gpt-oss-120b` | `parameters[volume of distribution]` | 0.21 | not captured | only_one_extracted |
-| `gpt-oss-120b` | `screen.dose_compound` | iothalamic acid (with metrizoate, amidotrizoate, iohexol) | iothalamate | mismatch |
-| `gpt-oss-120b` | `screen.primary_analyte` | iothalamic acid | iothalamate | mismatch |
+| `gpt-oss-120b` | `screen.dose_compound` | iothalamic acid (with metrizoate, amidotrizoate, iohexol) | unknown | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | iothalamic acid | unknown | mismatch |
 
 </details>
 

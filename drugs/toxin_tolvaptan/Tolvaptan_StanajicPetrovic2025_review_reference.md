@@ -9,8 +9,7 @@
 ## Citation
 not matched (stem Stanajic-Petrovic_2025)
 
-## Model component
-<dbs-pgx drug="tolvaptan" model-id="Tolvaptan_StanajicPetrovic2025_review_reference" status="needs_review" stale="false" population="" measured-compound="" parameterization="" topology=""></dbs-pgx>
+<div class="pk-model-meta" hidden drug="tolvaptan" model-id="Tolvaptan_StanajicPetrovic2025_review_reference" status="needs_review" stale="false" population="" measured-compound="" parameterization="" topology=""></div>
 
 **Parameterization:** not captured.
 

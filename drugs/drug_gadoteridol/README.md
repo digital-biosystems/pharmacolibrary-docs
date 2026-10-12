@@ -28,7 +28,7 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> | [Yuh_1991_lesion_contrast_ratio](drugs/drug_gadoteridol/pd_Yuh_1991_lesion_contrast_ratio.md) | lesion contrast ratio ← gadoteridol · direct linear effect | — | Yuh WT et al., MR evaluation of CNS tumors: dose compa…, Radiology (1991) | [10.1148/radiology.180.2.2068317](https://doi.org/10.1148/radiology.180.2.2068317) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:qwen3.8-27b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [Yuh_1991_lesion_contrast_ratio](drugs/drug_gadoteridol/pd_Yuh_1991_lesion_contrast_ratio.md) | lesion contrast ratio ← gadoteridol · direct linear effect | — | Yuh WT et al., MR evaluation of CNS tumors: dose compa…, Radiology (1991) | [10.1148/radiology.180.2.2068317](https://doi.org/10.1148/radiology.180.2.2068317) |
 
 ## ADME sites
 

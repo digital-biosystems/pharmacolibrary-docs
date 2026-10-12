@@ -5,7 +5,7 @@
 
 # montelukast — `Montelukast_Zhu2024_reference`
 
-> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.625), gpt-oss:120b (not confirmed, agreement 0.417). The first reading is what the record holds.">cross-check: disputed 0/2</span>
+> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.4), gpt-oss:120b (not confirmed, agreement 0.417). The first reading is what the record holds.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -66,14 +66,14 @@ first reading `qwen3.8-27b` — the numbers on this page are its, whatever the r
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | partly confirmed | 0.625 (5/8 fields) | 3 |
+| `gpt-oss-120b` | partly confirmed | 0.4 (2/5 fields) | 3 |
 | `gpt-oss:120b` | not confirmed | 0.417 (5/12 fields) | 7 |
 
 <details><summary>10 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss-120b` | `values[Q32]` | not captured | 10 | only_one_extracted |
+| `gpt-oss-120b` | `values[Q57]` | 18.2 | not captured | only_one_extracted |
 | `gpt-oss-120b` | `values[Q65]` | 4200 | not captured | only_one_extracted |
 | `gpt-oss-120b` | `values[Q76]` | 2570 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `values[Q19]` | 25 | not captured | only_one_extracted |

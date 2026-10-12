@@ -5,7 +5,7 @@
 
 # flumazenil — `Flumazenil_FloresPrez2023_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.667). The first reading is what the record holds.">cross-check: partial</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -21,7 +21,7 @@
 
 For flumazenil, the record reports total clearance of 0.48 mL/min and a central volume of distribution of 23.59 mL, both far below plausible physiological magnitudes for this drug. The peripheral volume (6792.42 mL) and intercompartmental clearance (5091.62 mL/min) are of a different scale than the central parameters, consistent with a unit or scale error in the extracted clearance and central volume. The review flagged the clearance/volume values as outside the physiological window due to this implausible magnitude. Extracted — flumazenil: CL 0.48 mL/min, V1 23.6 mL, V2 6.79e+03 mL, Q 5.09e+03 mL/min.
 
-Independently confirmed by `gpt-oss-120b`.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q312: this record has none, the second reading 2.86; it also differs on 2 more fields. That field does not shape the model.
 
 <sub>reviewed by glm-5.3-flash</sub>
 
@@ -60,14 +60,22 @@ Flores-Pérez C et al., Pharmacokinetic-Pharmacodynamic Modelin…, Pharmaceutic
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--green">cross-checked ✓</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
 first reading `glm-5.3-flash` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | confirmed | 1.0 (6/6 fields) | none |
+| `gpt-oss-120b` | partly confirmed | 0.667 (6/9 fields) | 3 |
 
-_Every reader agrees on every compared field of this record._
+<details><summary>3 field(s) a reader read differently</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss-120b` | `values[Q312]` | not captured | 2.86 | only_one_extracted |
+| `gpt-oss-120b` | `values[Q314]` | not captured | 2.66 | only_one_extracted |
+| `gpt-oss-120b` | `values[Q364]` | not captured | 0.05 | only_one_extracted |
+
+</details>
 
 <details class="legend">
 <summary>Cross-check legend</summary>

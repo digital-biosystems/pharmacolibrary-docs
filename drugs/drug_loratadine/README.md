@@ -32,7 +32,7 @@ Loratadine is a non-sedating antihistamine used to treat allergies such as seaso
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.167). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub><br><sub>route_to: `human_review`</sub> | [Salem_2010_reference](drugs/drug_loratadine/Loratadine_Salem2010_reference.md) | — | 1-compartment (no model) | 4 | Salem II et al., A retrospective, open-label analysis of…, Clinical therapeutics (2010) | [10.1016/j.clinthera.2010.02.001](https://doi.org/10.1016/j.clinthera.2010.02.001) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.778). The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub><br><sub>route_to: `human_review`</sub> | [Salem_2010_reference](drugs/drug_loratadine/Loratadine_Salem2010_reference.md) | — | 1-compartment (no model) | 4 | Salem II et al., A retrospective, open-label analysis of…, Clinical therapeutics (2010) | [10.1016/j.clinthera.2010.02.001](https://doi.org/10.1016/j.clinthera.2010.02.001) |
 
 ## ADME sites
 

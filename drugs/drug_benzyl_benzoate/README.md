@@ -28,7 +28,7 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Raynaud_2000_acaricidal_effect_on_Dermatophagoides_pteronyssinus](drugs/drug_benzyl_benzoate/pd_Raynaud_2000_acaricidal_effect_on_Dermatophagoides_pteronyss.md) | acaricidal effect on Dermatophagoides pteronyssinus ← benzyl benzoate · inhibition effect | — | Raynaud S et al., Squamocin and benzyl benzoate, acaricid…, Planta medica (2000) | [10.1055/s-0029-1243125](https://doi.org/10.1055/s-0029-1243125) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.8). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Raynaud_2000_acaricidal_effect_on_Dermatophagoides_pteronyssinus](drugs/drug_benzyl_benzoate/pd_Raynaud_2000_acaricidal_effect_on_Dermatophagoides_pteronyss.md) | acaricidal effect on Dermatophagoides pteronyssinus ← benzyl benzoate · inhibition effect | — | Raynaud S et al., Squamocin and benzyl benzoate, acaricid…, Planta medica (2000) | [10.1055/s-0029-1243125](https://doi.org/10.1055/s-0029-1243125) |
 
 ## ADME sites
 

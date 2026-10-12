@@ -21,8 +21,7 @@
 Xie P; Abildlund MT; Bækdal TA; He X; Lyauk YK; Patted URH; et al. et al. (2024). Diabetes, obesity & metabolism 26
   ·  DOI: [10.1111/dom.15624](https://doi.org/10.1111/dom.15624)
 
-## Model component
-<dbs-pgx drug="semaglutide" model-id="Semaglutide_Xie2024_reference" status="extracted" stale="true" population="healthy Chinese adults" measured-compound="semaglutide" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="semaglutide" model-id="Semaglutide_Xie2024_reference" status="extracted" stale="true" population="healthy Chinese adults" measured-compound="semaglutide" parameterization="apparent" topology="1C"></div>
 
 **Parameterization:** CL/F, V/F — apparent, F unknown (apparent — bioavailability not identifiable).
 

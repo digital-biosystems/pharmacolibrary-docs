@@ -5,7 +5,7 @@
 
 # Inulin — `Inulin_Haller2003_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.222). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (cat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">cat</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.444). The first reading is what the record holds.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (cat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">cat</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -23,7 +23,7 @@
 
 A volume and a clearance/elimination estimate from this paper are needed to build its model. Review values from other papers (Duong_2021) cannot stand in for this paper's evidence. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — inulin: CLR 35.9 mL/min, CLnorm 46 L/h, V 34.9 L.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has inulin, the second reading unknown; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of cats: this record has none, the second reading 53; it also differs on 4 more fields. That field does not shape the model.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -74,24 +74,22 @@ Haller M et al., Single-injection inulin clearance for r…, Journal of feline m
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
 first reading `glm-5.3-flash` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.222 (2/9 fields) | 7 |
+| `gpt-oss-120b` | partly confirmed | 0.444 (4/9 fields) | 5 |
 
-<details><summary>7 field(s) a reader read differently</summary>
+<details><summary>5 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss-120b` | `parameters[dose]` | not captured | 3000 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[gfr median (ml/min/m(2))]` | not captured | 46.0 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[gfr normal range (ml/min/m(2))]` | not captured | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cats]` | not captured | 53 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[gfr normal upper limit (ml/min/m(2))]` | not captured | 58.5 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[gfr normal upper limit]` | not captured | 3.69 | only_one_extracted |
 | `gpt-oss-120b` | `parameters[gfr]` | 35.9 | not captured | only_one_extracted |
 | `gpt-oss-120b` | `parameters[vd (amikacin,]` | 34.9 | not captured | only_one_extracted |
-| `gpt-oss-120b` | `screen.dose_compound` | inulin | unknown | mismatch |
-| `gpt-oss-120b` | `screen.primary_analyte` | inulin | unknown | mismatch |
 
 </details>
 

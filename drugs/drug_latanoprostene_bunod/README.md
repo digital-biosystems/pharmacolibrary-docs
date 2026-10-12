@@ -28,7 +28,7 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Cavet_2015_cGMP](drugs/drug_latanoprostene_bunod/pd_Cavet_2015_cGMP.md) | cGMP levels ← latanoprostene bunod · direct Emax (saturable) effect | — | Cavet ME et al., Regulation of Endothelin-1-Induced Trab…, Investigative ophthalmology… (2015) | [10.1167/iovs.14-16015](https://doi.org/10.1167/iovs.14-16015) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.4). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Cavet_2015_cGMP](drugs/drug_latanoprostene_bunod/pd_Cavet_2015_cGMP.md) | cGMP levels ← latanoprostene bunod · direct Emax (saturable) effect | — | Cavet ME et al., Regulation of Endothelin-1-Induced Trab…, Investigative ophthalmology… (2015) | [10.1167/iovs.14-16015](https://doi.org/10.1167/iovs.14-16015) |
 
 ## ADME sites
 

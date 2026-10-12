@@ -4,7 +4,7 @@
 
 # glucarpidase — `Glucarpidase_Fukaya2023_original_estimate`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.615). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.818). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -20,7 +20,7 @@
 
 The hydrolysis link from methotrexate to DAMPA carries Vmax/Km with Km = 86 μmol; a Michaelis-Menten affinity constant must have concentration units (e.g. μmol/L), so the check flagged a dimension mismatch on a structural parameter. In addition, the model structure — methotrexate linked to the metabolite DAMPA via glucarpidase-mediated hydrolysis — lies outside the set of structures that can be built, so the record was held back on that ground as well. The remaining glucarpidase parameters (CL 0.0590 L/h, V 0.957 L, Q 0.0778 L/h) are dimensionally consistent and were not at issue. Extracted — glucarpidase: CL 0.059 L/h, V 0.957 L, Q 0.0778 L/h, Km 86 μmol.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which molecule was measured: this record has methotrexate, the second reading glucarpidase; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which molecule was measured: this record has methotrexate, the second reading glucarpidase; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by glm-5.3-flash</sub>
 
@@ -100,16 +100,13 @@ first reading `glm-5.3-flash` — the numbers on this page are its, whatever the
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.615 (8/13 fields) | 5 |
+| `gpt-oss-120b` | not confirmed | 0.818 (9/11 fields) | 2 |
 
-<details><summary>5 field(s) a reader read differently</summary>
+<details><summary>2 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
 | `gpt-oss-120b` | `model.links` | [['methotrexate', 'dampa', 'hydrolysis']] | [['glucarpidase', 'methotrexate', 'hydrolysis']] | mismatch |
-| `gpt-oss-120b` | `parameters[theta_q63_body_weight_vcmtx_l_tvvcmtx_x_bsa_cv_29.1]` | 0.386 | not captured | only_one_extracted |
-| `gpt-oss-120b` | `parameters[theta_v_body_weight_vcmtx_l_tvvcmtx_x_bsa_cv_29.1]` | not captured | 0.386 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[vcpg2 (l)=tvvcpg2 x bsaθ 2].covariate_forms` | [] | ['linear_fractional'] | mismatch |
 | `gpt-oss-120b` | `screen.primary_analyte` | methotrexate | glucarpidase | mismatch |
 
 </details>

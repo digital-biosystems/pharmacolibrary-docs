@@ -27,7 +27,7 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> | [Zambetti_1999_TNR](drugs/drug_histamine_phosphate/pd_Zambetti_1999_TNR.md) | total nasal resistance ← histamine-phosphate · stimulation effect | — | Zambetti G et al., Non-specific nasal provocation test wit…, Rhinology (1999) | — |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--green" title="re-read by einfracz:gpt-oss-120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span> | [Zambetti_1999_TNR](drugs/drug_histamine_phosphate/pd_Zambetti_1999_TNR.md) | total nasal resistance ← histamine-phosphate · stimulation effect | — | Zambetti G et al., Non-specific nasal provocation test wit…, Rhinology (1999) | — |
 
 <details class="legend">
 <summary>Badge legend — what each badge means</summary>

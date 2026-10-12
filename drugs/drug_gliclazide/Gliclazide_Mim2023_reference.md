@@ -5,7 +5,7 @@
 
 # gliclazide — `Gliclazide_Mim2023_reference`
 
-> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.739), gpt-oss:120b (not confirmed, agreement 0.818). The first reading is what the record holds.">cross-check: disputed 0/2</span>
+> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.68), gpt-oss:120b (not confirmed, agreement 0.818). The first reading is what the record holds.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -19,7 +19,7 @@
 
 **Every check that could be run on this record passed.**
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q320: this record has none, the second reading 0.591; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q312: this record has none, the second reading 80.7; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -64,23 +64,25 @@ Mim SR et al., Optimal dosing of gliclazide-A model-ba…, Basic & clinical phar
 ## Validation
 
 **Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
-first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
+first reading `qwen3.8-27b` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.739 (17/23 fields) | 6 |
+| `gpt-oss-120b` | not confirmed | 0.68 (17/25 fields) | 8 |
 | `gpt-oss:120b` | not confirmed | 0.818 (18/22 fields) | 4 |
 
-<details><summary>10 field(s) a reader read differently</summary>
+<details><summary>12 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `values[Q312]` | not captured | 80.7 | only_one_extracted |
+| `gpt-oss-120b` | `values[Q314]` | not captured | 13.5 | only_one_extracted |
 | `gpt-oss-120b` | `values[Q320]` | not captured | 0.591 | only_one_extracted |
-| `gpt-oss-120b` | `values[Q324]` | 11.8 | 14.6 | mismatch |
-| `gpt-oss-120b` | `values[Q325]` | 1.13 | 2.77 | mismatch |
-| `gpt-oss-120b` | `values[Q41]` | not captured | 11.8 | only_one_extracted |
+| `gpt-oss-120b` | `values[Q321]` | 1.92 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `values[Q322]` | not captured | 1.92 | only_one_extracted |
+| `gpt-oss-120b` | `values[Q325]` | 1.13 | 1.62 | mismatch |
 | `gpt-oss-120b` | `values[Q48]` | not captured | 0.965 | only_one_extracted |
-| `gpt-oss-120b` | `values[Q87]` | 0.997 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `values[Q87]` | 0.997 | 0.997 | mismatch |
 | `gpt-oss:120b` | `values[Q320]` | not captured | 0.591 | only_one_extracted |
 | `gpt-oss:120b` | `values[Q325]` | 1.13 | 2.77 | mismatch |
 | `gpt-oss:120b` | `values[Q67]` | not captured | 0.965 | only_one_extracted |

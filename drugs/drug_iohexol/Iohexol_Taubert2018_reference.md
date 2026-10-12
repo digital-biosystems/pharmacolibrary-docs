@@ -5,7 +5,7 @@
 
 # iohexol — `Iohexol_Taubert2018_reference`
 
-> ## <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.364). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.231). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -19,7 +19,7 @@
 
 **Every check that could be run on this record passed.**
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has iohexol, the second reading unknown; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has iohexol, the second reading unknown; it also differs on 9 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -77,19 +77,22 @@ first reading `glm-5.3-flash` — the numbers on this page are its, whatever the
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.364 (4/11 fields) | 7 |
+| `gpt-oss-120b` | not confirmed | 0.231 (3/13 fields) | 10 |
 
-<details><summary>7 field(s) a reader read differently</summary>
+<details><summary>10 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
 | `gpt-oss-120b` | `parameters[inter-compartmental clearance]` | 12.0 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[inter-compartmental clearance]` | not captured | 12.0 | only_one_extracted |
 | `gpt-oss-120b` | `parameters[iohexol clearance]` | not captured | 57.4 | only_one_extracted |
 | `gpt-oss-120b` | `parameters[median population value of iohexol clearance]` | 57.4 | not captured | only_one_extracted |
 | `gpt-oss-120b` | `parameters[peripheral volume]` | 3.3 | not captured | only_one_extracted |
-| `gpt-oss-120b` | `parameters[q]` | not captured | 12.0 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[v].value` | 5.4 | 3.3 | mismatch |
+| `gpt-oss-120b` | `parameters[peripheral volume]` | not captured | 3.3 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[v]` | 5.4 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[v]` | not captured | 5.4 | only_one_extracted |
 | `gpt-oss-120b` | `screen.dose_compound` | iohexol | unknown | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | iohexol | unknown | mismatch |
 
 </details>
 

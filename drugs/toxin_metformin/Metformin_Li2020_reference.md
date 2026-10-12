@@ -24,8 +24,7 @@
 Li L; Guan Z; Li R; Zhao W; Hao G; Yan Y; et al. et al. (2020). Medicine 99
   ·  DOI: [10.1097/MD.0000000000023212](https://doi.org/10.1097/MD.0000000000023212)
 
-## Model component
-<dbs-pgx drug="metformin" model-id="Metformin_Li2020_reference" status="needs_review" stale="false" population="adults with type 2 diabetes mellitus" measured-compound="metformin" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="metformin" model-id="Metformin_Li2020_reference" status="needs_review" stale="false" population="adults with type 2 diabetes mellitus" measured-compound="metformin" parameterization="apparent" topology="1C"></div>
 
 **Parameterization:** CL/F, V/F — apparent, F unknown (apparent — bioavailability not identifiable).
 

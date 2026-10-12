@@ -4,7 +4,7 @@
 
 # levocetirizine — `Levocetirizine_Hussein2005_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.176). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.438). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -20,7 +20,7 @@
 
 The record was built from the abstract alone, so reported summary statistics stood in for a fitted model. The apparent clearance and volume of distribution parameters caused double correction, violating parameter coherence. Fitted pharmacokinetic estimates were unavailable because only the abstract was read. Extracted — levocetirizine: CL/F 0.044 L/h/kg, Vnorm 0.639 l kg(-1), CL 0.6 l h(-1), Frel 0.28 in, AUCSS 1.95e+03 ng·h/mL, AUC/dose 2.04e+03 microg l(-1) h, kabs 0.095 h−1.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has cetirizine, the second reading unknown; it also differs on 13 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of auc: this record has none, the second reading 1952; it also differs on 8 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by qwen3.8-27b</sub>
 
@@ -88,26 +88,21 @@ first reading `qwen3.8-27b` — the numbers on this page are its, whatever the r
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.176 (3/17 fields) | 14 |
+| `gpt-oss-120b` | not confirmed | 0.438 (7/16 fields) | 9 |
 
-<details><summary>14 field(s) a reader read differently</summary>
+<details><summary>9 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss-120b` | `parameters[auc(ss) in compliant subjects]` | not captured | 1952 | only_one_extracted |
 | `gpt-oss-120b` | `parameters[auc(ss), calculated in compliant subjects using posterior estimates of the final model, was]` | 1952 | not captured | only_one_extracted |
-| `gpt-oss-120b` | `parameters[cl/f increased linearly with weight by]` | 0.044 | not captured | only_one_extracted |
-| `gpt-oss-120b` | `parameters[cl/f increased linearly with weight by]` | not captured | 0.044 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[estimated relative bioavailability]` | not captured | 0.28 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[auc]` | not captured | 1952 | only_one_extracted |
 | `gpt-oss-120b` | `parameters[in adults after intake of 5 mg oral solution]` | 2036 | not captured | only_one_extracted |
 | `gpt-oss-120b` | `parameters[intercept of]` | not captured | 0.244 | only_one_extracted |
 | `gpt-oss-120b` | `parameters[ka]` | 0.095 | not captured | only_one_extracted |
 | `gpt-oss-120b` | `parameters[population estimates in children with weights of 8 and 20 kg were]` | 0.6 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[relative bioavailability]` | not captured | 0.28 | only_one_extracted |
 | `gpt-oss-120b` | `parameters[the estimated relative bioavailability was]` | 0.28 | not captured | only_one_extracted |
-| `gpt-oss-120b` | `parameters[v/f increased linearly with weight by]` | 0.639 | not captured | only_one_extracted |
-| `gpt-oss-120b` | `parameters[v/f increased linearly with weight by]` | not captured | 0.639 | only_one_extracted |
-| `gpt-oss-120b` | `screen.dose_compound` | cetirizine | unknown | mismatch |
-| `gpt-oss-120b` | `screen.primary_analyte` | levocetirizine | unknown | mismatch |
+| `gpt-oss-120b` | `parameters[v/f increased linearly with weight by].parameter_id` | Q352 | Q76 | mismatch |
 
 </details>
 

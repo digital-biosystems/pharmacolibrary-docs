@@ -5,7 +5,7 @@
 
 # lutetium (177Lu) oxodotreotide — `Lutetium177luOxodotreotide_Sood2026_estimate_with_study_effe`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.3). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.4), gpt-oss:120b (not confirmed, agreement 0.3). The first reading is what the record holds.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -21,7 +21,7 @@
 
 No clearance, volume or rate constant of the model is reported in it. No parameter values were extracted.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has lutetium_177lu_oxodotreotide, the second reading unknown; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has lutetium_177lu_oxodotreotide, the second reading lutetium-177lu-oxodotreotide; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -78,17 +78,24 @@ Sood M et al., [, Journal of nuclear medicine… (2026)
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.4 (4/10 fields) | 6 |
 | `gpt-oss:120b` | not confirmed | 0.3 (3/10 fields) | 7 |
 
-<details><summary>7 field(s) a reader read differently</summary>
+<details><summary>13 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[b 1]` | not captured | 0.48 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cpop_crcl_effect_on_kidney]` | -0.55 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[epop, activity effect on bone marrow]` | not captured | 0.52 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_q22_crcl]` | not captured | -0.55 | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | lutetium_177lu_oxodotreotide | lutetium-177lu-oxodotreotide | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | lutetium_177lu_oxodotreotide | lutetium-177lu-oxodotreotide | mismatch |
 | `gpt-oss:120b` | `parameters[b 2]` | not captured | 0.63 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[beta_c_study_netter_p_crcl_effect_on_kidney_dosimetry_based_on_adult_or_adolescent_populations]` | 1.58 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[cpop_crcl_effect_on_kidney]` | -0.55 | not captured | only_one_extracted |

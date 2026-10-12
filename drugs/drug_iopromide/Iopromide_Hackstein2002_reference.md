@@ -4,7 +4,7 @@
 
 # iopromide — `Iopromide_Hackstein2002_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.556). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -20,7 +20,7 @@
 
 The only structural parameter extracted, Vss for iopromide, carries the unit Lkg(-1) (per kilogram body weight), which triggered a dimension mismatch on a structural parameter. The record was also built from the paper's abstract alone, so the reported summary statistics stood in for a fitted model rather than a full parameterization. Extracted — iopromide: Vss 0.242 Lkg(-1), Ct 270 mg/L, D1 120 ml.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of iopromide dose: this record has 120, the second reading none; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of iopromide dose: this record has 120, the second reading none; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by glm-5.3-flash</sub>
 
@@ -75,9 +75,9 @@ first reading `glm-5.3-flash` — the numbers on this page are its, whatever the
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.5 (5/10 fields) | 5 |
+| `gpt-oss-120b` | not confirmed | 0.556 (5/9 fields) | 4 |
 
-<details><summary>5 field(s) a reader read differently</summary>
+<details><summary>4 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
@@ -85,7 +85,6 @@ first reading `glm-5.3-flash` — the numbers on this page are its, whatever the
 | `gpt-oss-120b` | `parameters[one-sample clearance time point]` | 270 | not captured | only_one_extracted |
 | `gpt-oss-120b` | `parameters[one-sample clearance]` | not captured | 270 | only_one_extracted |
 | `gpt-oss-120b` | `parameters[total distribution volume of iopromide].parameter_id` | Q65 | Q61 | mismatch |
-| `gpt-oss-120b` | `parameters[up to 8 h postinjection]` | not captured | 8 | only_one_extracted |
 
 </details>
 

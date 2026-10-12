@@ -5,7 +5,7 @@
 
 # aminophylline — `Aminophylline_Goetz1989_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.385). The first reading is what the record holds.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">horse</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.231). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">horse</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -23,7 +23,7 @@
 
 The paper reports only theophylline kel 0.07 h-1, V/F 0.8 l/kg, CL 0.06 l/kg/h and Fab 87% for healthy adult horses; ka and Tlag are absent, and the model builder filled ka with a default rather than an estimate, which the adjudication deemed not acceptable. The record is abstract-only, so summary statistics stood in for a fitted model, and the apparent parameterization assumes F=1 and Fm=1 with no molar correction. The established finding stands: the ka default affects the simulated profile but is not supported by this paper and must be extracted or explicitly justified as a convention. Extracted — theophylline: kel 0.07 h-1, V/F 0.8 l/kg, CL 0.06 l/kg/h, Fab 87 %.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of absolute bioavailability: this record has none, the second reading 87; it also differs on 7 more fields. That field does not shape the model.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has aminophylline, the second reading unknown; it also differs on 9 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by glm-5.3-flash</sub>
 
@@ -77,25 +77,27 @@ Goetz TE et al., Pharmacokinetic disposition of an immed…, Journal of veterina
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
 first reading `glm-5.3-flash` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | partly confirmed | 0.385 (5/13 fields) | 8 |
+| `gpt-oss-120b` | not confirmed | 0.231 (3/13 fields) | 10 |
 
-<details><summary>8 field(s) a reader read differently</summary>
+<details><summary>10 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
 | `gpt-oss-120b` | `parameters[absolute bioavailability]` | not captured | 87 | only_one_extracted |
 | `gpt-oss-120b` | `parameters[absolute bioavailability]` | 87 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[apparent volume of distribution]` | not captured | 0.8 | only_one_extracted |
 | `gpt-oss-120b` | `parameters[apparent volume of distribution]` | 0.8 | not captured | only_one_extracted |
-| `gpt-oss-120b` | `parameters[cl]` | not captured | 0.06 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[clearance]` | not captured | 0.06 | only_one_extracted |
 | `gpt-oss-120b` | `parameters[clearance]` | 0.06 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[elimination rate constant]` | not captured | 0.07 | only_one_extracted |
 | `gpt-oss-120b` | `parameters[elimination rate constant]` | 0.07 | not captured | only_one_extracted |
-| `gpt-oss-120b` | `parameters[lambda z]` | not captured | 0.07 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[vz]` | not captured | 0.80 | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | aminophylline | unknown | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | theophylline | unknown | mismatch |
 
 </details>
 

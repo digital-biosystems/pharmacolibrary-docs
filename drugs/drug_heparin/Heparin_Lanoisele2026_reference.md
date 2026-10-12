@@ -5,7 +5,7 @@
 
 # heparin — `Heparin_Lanoisele2026_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.091), gpt-oss:120b (not confirmed, agreement 0.125). The first reading is what the record holds.">cross-check: disputed 0/2</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.2), gpt-oss:120b (not confirmed, agreement 0.125). The first reading is what the record holds.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -21,7 +21,7 @@
 
 Simulated as the paper dosed it, the model's terminal half-life is 8.77 h against the paper's 0.05, a ratio of 175.4939, far beyond tolerance. Parameter coverage also failed: of 4 expected parameters, only 3 were covered, with Q (intercompartmental clearance, 0.29 L/h) neither emitted nor defaulted. The model builder substituted library defaults for the missing bioavailability F and lag time Tlag. A second reader also disputed the heparin–protamine interconversion link, which this record leaves absent, and could not confirm the values for Q, ka (0.079 h⁻¹), clearance (1.5 L/h) and volume (3661.0 mL). Extracted — heparin: CL 1.5 L h -1, Q 0.29 L h -1, V 3.66e+03 mL, kabs 0.079 h -1.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has heparin, protamine, the second reading UFH; it also differs on 9 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has heparin, protamine, the second reading UFH; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by glm-5.3-flash</sub>
 
@@ -94,15 +94,13 @@ first reading `qwen3.8-27b` — the numbers on this page are its, whatever the r
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.091 (1/11 fields) | 10 |
+| `gpt-oss-120b` | not confirmed | 0.2 (2/10 fields) | 8 |
 | `gpt-oss:120b` | not confirmed | 0.125 (1/8 fields) | 7 |
 
-<details><summary>17 field(s) a reader read differently</summary>
+<details><summary>15 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss-120b` | `model.links` | [] | [['none', 'none', 'none']] | mismatch |
-| `gpt-oss-120b` | `parameters[4]` | not captured | 1 | only_one_extracted |
 | `gpt-oss-120b` | `parameters[intercompartmental clearance]` | not captured | 0.29 | only_one_extracted |
 | `gpt-oss-120b` | `parameters[intercompartmental clearance]` | 0.29 | not captured | only_one_extracted |
 | `gpt-oss-120b` | `parameters[ka]` | 0.079 | not captured | only_one_extracted |

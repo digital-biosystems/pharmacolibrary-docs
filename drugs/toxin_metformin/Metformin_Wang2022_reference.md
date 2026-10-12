@@ -22,8 +22,7 @@
 Wang X; Tang J; Shen C; Wang X; Hu H; Xie H et al. (2022). BioMed research international 2022
   ·  DOI: [10.1155/2022/4071111](https://doi.org/10.1155/2022/4071111)
 
-## Model component
-<dbs-pgx drug="metformin" model-id="Metformin_Wang2022_reference" status="rejected" stale="true" population="" measured-compound="metformin" parameterization="apparent" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="metformin" model-id="Metformin_Wang2022_reference" status="rejected" stale="true" population="" measured-compound="metformin" parameterization="apparent" topology="2C"></div>
 
 **Parameterization:** CL/F, V1/F, V2/F — apparent, F unknown (apparent — bioavailability not identifiable).
 

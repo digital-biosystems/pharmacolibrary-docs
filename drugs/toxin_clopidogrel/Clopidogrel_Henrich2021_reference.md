@@ -21,8 +21,7 @@
 Henrich A; Claussen CH; Dingemanse J; Krause A et al. (2021). CPT: pharmacometrics & systems pharmacology 10
   ·  DOI: [10.1002/psp4.12641](https://doi.org/10.1002/psp4.12641)
 
-## Model component
-<dbs-pgx drug="clopidogrel" model-id="Clopidogrel_Henrich2021_reference" status="extracted" stale="true" population="" measured-compound="clopidogrel" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="clopidogrel" model-id="Clopidogrel_Henrich2021_reference" status="extracted" stale="true" population="" measured-compound="clopidogrel" parameterization="mechanistic" topology="2C"></div>
 
 **Parameterization:** mechanistic.
 

@@ -5,7 +5,7 @@
 
 # ivacaftor — `Ivacaftor_Vonk2025_ivacaftor`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.273). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.417). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -21,7 +21,7 @@
 
 The value 1.76 is labeled as apparent clearance but was recorded as volume of distribution, creating a magnitude error. Additionally, the unit L/h/70 kg could not be converted to standard units, leaving the parameter without a valid SI value for evaluation. Extracted — ivacaftor: AUC 208 mg*h/L, AUC 11.6 mg*h/L, V 1.76 L/h, CL/F 1.76 L/h/70 kg, V/F 59 L/ 70 kg.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has elexacaftor-tezacaftor-ivacaftor, the second reading elexacaftor‑tezacaftor‑ivacaftor; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the links between molecules: this record has none, the second reading elexacaftor → elexacaftor metabolite (metabolism); tezacaftor → tezacaftor metabolite (metabolism); ivacaftor → ivacaftor metabolite (metabolism); it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by qwen3.8-27b</sub>
 
@@ -103,20 +103,19 @@ first reading `qwen3.8-27b` — the numbers on this page are its, whatever the r
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.273 (3/11 fields) | 8 |
+| `gpt-oss-120b` | not confirmed | 0.417 (5/12 fields) | 7 |
 
-<details><summary>8 field(s) a reader read differently</summary>
+<details><summary>7 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss-120b` | `model.links` | [] | [['ivacaftor', 'ivacaftor metabolite', 'metabolism'], ['elexacaftor', 'elexacaftor metabolite', 'metabolism'], ['tezacaftor', 'tezacaftor metabolite', 'metabolism']] | mismatch |
-| `gpt-oss-120b` | `model.parameterization` | apparent | mechanistic | mismatch |
+| `gpt-oss-120b` | `model.links` | [] | [['elexacaftor', 'elexacaftor metabolite', 'metabolism'], ['tezacaftor', 'tezacaftor metabolite', 'metabolism'], ['ivacaftor', 'ivacaftor metabolite', 'metabolism']] | mismatch |
 | `gpt-oss-120b` | `parameters[apparent clearance (cl elx /f) and volume of distribution (v elx /f) normalized for a body weight of 70 kg]` | 1.76 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cl elx /f]` | not captured | 1.76 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cl/f]` | not captured | 1.76 | only_one_extracted |
 | `gpt-oss-120b` | `parameters[corresponding v/f values ... for eti]` | 59.0 | not captured | only_one_extracted |
-| `gpt-oss-120b` | `parameters[dose per mean weight]` | not captured | 5.18 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[dose per mean weight]` | not captured | not captured | only_one_extracted |
 | `gpt-oss-120b` | `parameters[typical values of cl/f ... for eti]` | 1.76 | not captured | only_one_extracted |
-| `gpt-oss-120b` | `screen.dose_compound` | elexacaftor-tezacaftor-ivacaftor | elexacaftor‑tezacaftor‑ivacaftor | mismatch |
+| `gpt-oss-120b` | `parameters[v/f]` | not captured | 59.0 | only_one_extracted |
 
 </details>
 

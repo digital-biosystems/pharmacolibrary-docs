@@ -5,7 +5,7 @@
 
 # aminophylline — `Aminophylline_Kuze1988_iv`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.867). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">dog</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">dog</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -23,7 +23,7 @@
 
 The parameter λ1 (labelled α, value 10.609) carries the verbatim unit 'n=10', which is a sample size, not a unit, so it could not be converted to SI and the model was held back. The structure check also flagged an unreachable/orphan compartment in the three-compartment topology, meaning a compartment has no path from the dose. Other parameters (kel 0.149 1/h, k12 6.013 1/h, k21 4.380 1/h, V1 0.300 L/kg, V2 0.415 L/kg, CL 0.106 L/h/kg) were reported with usable units. Extracted — theophylline: λ1 10.6 n=10, kel 0.149 1/h, k12 6.01 1/h, k21 4.38 1/h, V1 0.3 L/kg, V2 0.415 L/kg, V 0.731 L/kg, CL 0.106 L/h/kg, … (+3).
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has aminophylline, the second reading unknown; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
+Independently confirmed by `gpt-oss-120b`.
 
 <sub>reviewed by glm-5.3-flash</sub>
 
@@ -104,21 +104,14 @@ Kuze T et al., [Theophylline: pharmacokinetics, metabo…, Nihon yakurigaku zass
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--green">cross-checked ✓</span>  
 first reading `glm-5.3-flash` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.867 (13/15 fields) | 2 |
+| `gpt-oss-120b` | confirmed | 1.0 (15/15 fields) | none |
 
-<details><summary>2 field(s) a reader read differently</summary>
-
-| second reader | field | first reading | second reading | agreement |
-|---|---|---|---|---|
-| `gpt-oss-120b` | `screen.dose_compound` | aminophylline | unknown | mismatch |
-| `gpt-oss-120b` | `screen.primary_analyte` | theophylline | unknown | mismatch |
-
-</details>
+_Every reader agrees on every compared field of this record._
 
 <details class="legend">
 <summary>Cross-check legend</summary>

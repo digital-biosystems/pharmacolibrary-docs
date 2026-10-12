@@ -5,7 +5,7 @@
 
 # nadroparin — `Nadroparin_Jaspers2022_reference`
 
-> ## <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: the record defines covariate effects (weight on clearance, renal function …) but the engineer simulated only the reference individual, so those scenarios were never run. The base model still reproduces the paper; what is missing is the covariate curves.">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.917), gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-check: disputed 1/2</span>
+> ## <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: the record defines covariate effects (weight on clearance, renal function …) but the engineer simulated only the reference individual, so those scenarios were never run. The base model still reproduces the paper; what is missing is the covariate curves.">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0), gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓ 2/2</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -23,7 +23,7 @@
 
 The record reports only apparent clearance (7.4 mL/min) and intercompartmental clearance (7.1 mL/min) for nadroparin in hemodialysis patients; clearance, volume of distribution, absorption rate constant and absorption lag time were missing, so placeholder values stood in and the model was held back rather than published with invented numbers. The absorption rate constant was defaulted, not reported in the source, and the first-order depot input reflects an apparent (F=1) parameterization. The covariate effects defined in the record (theta_q290_category 3864.2, theta_q82_category 34554.7) were not exercised: only the reference individual was simulated. Extracted — nadroparin: CL/F 7.4 mL/min, Q 7.1 mL/min.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which molecule was measured: this record has anti-Xa, the second reading anti-Xa level. That field shapes the model, so the record is marked disputed.
+Independently confirmed by `gpt-oss-120b`, `gpt-oss:120b`.
 
 <sub>reviewed by glm-5.3-flash</sub>
 
@@ -74,21 +74,15 @@ Jaspers TCC et al., Optimising the Nadroparin Dose for Thro…, Clinical pharmac
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  1 of 2 readers agree  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--green">cross-checked ✓</span>  ·  2 of 2 readers agree  
 first reading `qwen3.8-27b` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.917 (11/12 fields) | 1 |
+| `gpt-oss-120b` | confirmed | 1.0 (12/12 fields) | none |
 | `gpt-oss:120b` | confirmed | 1.0 (12/12 fields) | none |
 
-<details><summary>1 field(s) a reader read differently</summary>
-
-| second reader | field | first reading | second reading | agreement |
-|---|---|---|---|---|
-| `gpt-oss-120b` | `screen.primary_analyte` | anti-Xa | anti-Xa level | mismatch |
-
-</details>
+_Every reader agrees on every compared field of this record._
 
 <details class="legend">
 <summary>Cross-check legend</summary>

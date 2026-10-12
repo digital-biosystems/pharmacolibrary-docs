@@ -4,7 +4,7 @@
 
 # folic acid — `FolicAcid_Crider2019_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.25). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -20,7 +20,7 @@
 
 No clearance, volume or rate constant of the model is reported in it. No parameter values were extracted.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has folic acid, the second reading unknown; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has folic acid, the second reading folic_acid; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -59,19 +59,18 @@ _No resolved parameters._
 ## Validation
 
 **Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
+first reading `qwen3.8-27b` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.25 (1/4 fields) | 3 |
+| `gpt-oss-120b` | not confirmed | 0.5 (2/4 fields) | 2 |
 
-<details><summary>3 field(s) a reader read differently</summary>
+<details><summary>2 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss-120b` | `model.links` | [['folic acid', 'serum folate', 'metabolism'], ['folic acid', 'plasma folate', 'metabolism'], ['folic acid', 'rbc folate', 'metabolism']] | [['folic_acid', 'serum/plasma_folate', 'metabolism'], ['folic_acid', 'rbc_folate', 'metabolism']] | mismatch |
-| `gpt-oss-120b` | `screen.dose_compound` | folic acid | unknown | mismatch |
-| `gpt-oss-120b` | `screen.primary_analyte` | folate | unknown | mismatch |
+| `gpt-oss-120b` | `model.links` | [['folic acid', 'serum folate', 'metabolism'], ['folic acid', 'plasma folate', 'metabolism'], ['folic acid', 'rbc folate', 'metabolism']] | [] | mismatch |
+| `gpt-oss-120b` | `screen.dose_compound` | folic acid | folic_acid | mismatch |
 
 </details>
 

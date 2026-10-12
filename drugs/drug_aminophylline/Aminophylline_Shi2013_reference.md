@@ -5,7 +5,7 @@
 
 # aminophylline — `Aminophylline_Shi2013_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.182). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.875). The first reading is what the record holds.">cross-check: partial</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -21,7 +21,7 @@
 
 The paper reports clearance 17.88 L/h, apparent volume of distribution 0.93 L/kg, half-life 28.6 h, and covariate coefficients 0.56 (clearance vs days of age) and 0.82 L/kg (volume vs birth weight), but no absorption parameters. The model builder substituted defaults for ka and Tlag and assumed F=1, Fm=1 with no molar correction, giving an apparent parameterization with first-order depot input. The failed check found the defaulted parameters and invented absorption not acceptable; the record was built from the abstract alone, so summary statistics stood in for a fitted model. Extracted — aminophylline: CL 17.9 L/h, V/F 0.93 L/kg, t1/2z 28.6 h, Vnorm 0.82 L/kg.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has aminophylline, the second reading unknown; it also differs on 8 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of related coefficient: this record has 0.56, the second reading none. That field does not shape the model.
 
 <sub>reviewed by glm-5.3-flash</sub>
 
@@ -81,26 +81,18 @@ Shi J et al., [Investigation on pharmacokinetics of a…, Sichuan da xue xue bao
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
 first reading `glm-5.3-flash` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.182 (2/11 fields) | 9 |
+| `gpt-oss-120b` | partly confirmed | 0.875 (7/8 fields) | 1 |
 
-<details><summary>9 field(s) a reader read differently</summary>
+<details><summary>1 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss-120b` | `parameters[apparent volume of distribution]` | 0.93 | not captured | only_one_extracted |
-| `gpt-oss-120b` | `parameters[apparent volume of distribution]` | not captured | 0.93 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[half life time]` | 28.6 | not captured | only_one_extracted |
-| `gpt-oss-120b` | `parameters[half life time]` | not captured | 28.6 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[plasma clearance]` | 17.88 | not captured | only_one_extracted |
-| `gpt-oss-120b` | `parameters[plasma clearance]` | not captured | 17.88 | only_one_extracted |
 | `gpt-oss-120b` | `parameters[related coefficient]` | 0.56 | not captured | only_one_extracted |
-| `gpt-oss-120b` | `screen.dose_compound` | aminophylline | unknown | mismatch |
-| `gpt-oss-120b` | `screen.primary_analyte` | aminophylline | unknown | mismatch |
 
 </details>
 

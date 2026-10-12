@@ -25,8 +25,7 @@
 Zhong G; Lin Z; Liu F; Xie M; Chen R; Tan QG et al. (2024). Environmental science & technology 58
   ·  DOI: [10.1021/acs.est.4c02026](https://doi.org/10.1021/acs.est.4c02026)
 
-## Model component
-<dbs-pgx drug="cadmium" model-id="Cadmium_Zhong2024_reference" status="not_modelled" stale="false" population="six bivalve species (Perna viridis, Mytilus unguiculatus, Mytilus galloprovincialis, Magallana gigas, Magallana hongkongensis, Magallana angulata)" measured-compound="cadmium" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="cadmium" model-id="Cadmium_Zhong2024_reference" status="not_modelled" stale="false" population="six bivalve species (Perna viridis, Mytilus unguiculatus, Mytilus galloprovincialis, Magallana gigas, Magallana hongkongensis, Magallana angulata)" measured-compound="cadmium" parameterization="mechanistic" topology="1C"></div>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 4 extracted.

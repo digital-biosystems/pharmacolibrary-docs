@@ -4,7 +4,7 @@
 
 # iodoxamic acid — `IodoxamicAcid_Lin1978_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.833). The first reading is what the record holds.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (monkey), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">monkey</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.286). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (monkey), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">monkey</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -22,7 +22,7 @@
 
 The record is abstract-only, so reported summary statistics stood in for a fitted model. No distribution volume and no clearance or elimination rate are given, so it is not a compartmental population PK model but an exposure/outcome paper. A dimension mismatch was found on a structural parameter: Km is reported in micrometer, a length unit, rather than a concentration unit. Extracted — iodoxamic acid: Vmax 1.03 mumoles/kg/min.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on `parameters[km].value`: this record has none, the second reading 1.5. That field does not shape the model.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has iodoxamic acid, the second reading unknown; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by glm-5.3-flash</sub>
 
@@ -70,18 +70,22 @@ Lin SK et al., Pharmacokinetics of iodoxamic acid in r…, Journal of pharmaceut
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
 first reading `glm-5.3-flash` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | partly confirmed | 0.833 (5/6 fields) | 1 |
+| `gpt-oss-120b` | not confirmed | 0.286 (2/7 fields) | 5 |
 
-<details><summary>1 field(s) a reader read differently</summary>
+<details><summary>5 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss-120b` | `parameters[km].value` | not captured | 1.5 | mismatch |
+| `gpt-oss-120b` | `parameters[km]` | not captured | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[v max]` | 1.03 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[v max]` | not captured | 1.03 | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | iodoxamic acid | unknown | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | iodoxamic acid | unknown | mismatch |
 
 </details>
 

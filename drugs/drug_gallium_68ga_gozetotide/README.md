@@ -23,7 +23,7 @@ Gallium (68Ga) gozetotide is a diagnostic radiopharmaceutical used for detecting
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Sachpekidis_2016_reference](drugs/drug_gallium_68ga_gozetotide/Gallium68gaGozetotide_Sachpekidis2016_reference.md) | — | 1-compartment (no model) | 0 | Sachpekidis C et al., 68Ga-PSMA-11 Dynamic PET/CT Imaging in…, Clinical nuclear medicine (2016) | [10.1097/RLU.0000000000001349](https://doi.org/10.1097/RLU.0000000000001349) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0), gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓ 2/2</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Sachpekidis_2016_reference](drugs/drug_gallium_68ga_gozetotide/Gallium68gaGozetotide_Sachpekidis2016_reference.md) | — | 1-compartment (no model) | 0 | Sachpekidis C et al., 68Ga-PSMA-11 Dynamic PET/CT Imaging in…, Clinical nuclear medicine (2016) | [10.1097/RLU.0000000000001349](https://doi.org/10.1097/RLU.0000000000001349) |
 
 ## ADME sites
 

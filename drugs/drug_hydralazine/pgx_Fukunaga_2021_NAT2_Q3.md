@@ -26,7 +26,7 @@
 - reference category (θ=0) not captured — must not be inferred
 
 ## Citation
-Fukunaga K; Kato K; Okusaka T; Saito T; Ikeda M; Yoshida T; et al. et al. (2021). Frontiers in genetics 12
+Fukunaga K et al., Functional Characterization of the Effe…, Frontiers in genetics (2021)
   ·  DOI: [10.3389/fgene.2021.652704](https://doi.org/10.3389/fgene.2021.652704)
 
 

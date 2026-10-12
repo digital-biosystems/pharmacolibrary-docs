@@ -5,7 +5,7 @@
 
 # metamizole sodium — `MetamizoleSodium_Blaser2021_naproxen`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.083), gpt-oss:120b (not confirmed, agreement 0.036). The first reading is what the record holds.">cross-check: disputed 0/2</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.071), gpt-oss:120b (not confirmed, agreement 0.036). The first reading is what the record holds.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -21,7 +21,7 @@
 
 Without a unit the value cannot be converted, so the model cannot use it. A reported unit could not be converted (Q and Q), so that value has no SI equivalent. None of the extracted parameters is metamizole sodium's own; they describe 4-methylaminoantipyrine, 4-aminoantipyrine and 4-acetylaminoantipyrine. Extracted — 4-methylaminoantipyrine: kabs 0.538 1/h, V1/F 3.27 L, Q 0.185 n = 7, kfm 1.33 1/h, kel 0.213 1/h, t1/2z 1.71 h; 4-aminoantipyrine: Q 0.009 n = 7, kfm 2.27 1/h, t1/2z 2.14 h; 4-acetylaminoantipyrine: t1/2z 1 h.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which molecule was measured: this record has 4-methylaminoantipyrine, the second reading 4-MAA; it also differs on 21 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which molecule was measured: this record has 4-methylaminoantipyrine, the second reading 4-MAA; it also differs on 25 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -112,32 +112,36 @@ first reading `qwen3.8-27b` — the numbers on this page are its, whatever the r
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.083 (2/24 fields) | 22 |
+| `gpt-oss-120b` | not confirmed | 0.071 (2/28 fields) | 26 |
 | `gpt-oss:120b` | not confirmed | 0.036 (1/28 fields) | 27 |
 
-<details><summary>49 field(s) a reader read differently</summary>
+<details><summary>53 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss-120b` | `model.links` | [['metamizole', '4-methylaminoantipyrine', 'metabolism'], ['4-methylaminoantipyrine', '4-aminoantipyrine', 'metabolism'], ['4-aminoantipyrine', '4-methylaminoantipyrine', 'interconversion'], ['4-aminoantipyrine', '4-acetylaminoantipyrine', 'metabolism'], ['4-aminoantipyrine', '4-formylaminoantipyrine', 'metabolism']] | [] | mismatch |
-| `gpt-oss-120b` | `parameters[k10]` | 0.213 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `model.links` | [['metamizole', '4-methylaminoantipyrine', 'metabolism'], ['4-methylaminoantipyrine', '4-aminoantipyrine', 'metabolism'], ['4-aminoantipyrine', '4-methylaminoantipyrine', 'interconversion'], ['4-aminoantipyrine', '4-acetylaminoantipyrine', 'metabolism'], ['4-aminoantipyrine', '4-formylaminoantipyrine', 'metabolism']] | [['metamizole', '4-maa', 'metabolism'], ['4-maa', '4-aa', 'metabolism'], ['4-aa', '4-faa', 'interconversion'], ['4-aa', '4-aaa', 'interconversion']] | mismatch |
 | `gpt-oss-120b` | `parameters[k10]` | not captured | 0.213 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[k12]` | 0.185 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[k10]` | 0.213 | not captured | only_one_extracted |
 | `gpt-oss-120b` | `parameters[k12]` | not captured | 0.185 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[k14]` | 1.334 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[k12]` | 0.185 | not captured | only_one_extracted |
 | `gpt-oss-120b` | `parameters[k14]` | not captured | 1.334 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[k23]` | 0.009 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[k14]` | 1.334 | not captured | only_one_extracted |
 | `gpt-oss-120b` | `parameters[k23]` | not captured | 0.009 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[k23]` | 0.009 | not captured | only_one_extracted |
 | `gpt-oss-120b` | `parameters[k24]` | 2.275 | not captured | only_one_extracted |
-| `gpt-oss-120b` | `parameters[ka]` | 0.538 | not captured | only_one_extracted |
 | `gpt-oss-120b` | `parameters[ka]` | not captured | 0.538 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[ka]` | 0.538 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[t1/2 4-aa]` | not captured | 2.14 | only_one_extracted |
 | `gpt-oss-120b` | `parameters[t1/2 4-aa]` | 2.14 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[t1/2 4-aaa]` | not captured | 1.00 | only_one_extracted |
 | `gpt-oss-120b` | `parameters[t1/2 4-aaa]` | 1.00 | not captured | only_one_extracted |
 | `gpt-oss-120b` | `parameters[t1/2 4-faa]` | not captured | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[t1/2 4-faa]` | not captured | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[t1/2 4-maa]` | not captured | not captured | only_one_extracted |
 | `gpt-oss-120b` | `parameters[t1/2 k01]` | 1.708 | not captured | only_one_extracted |
 | `gpt-oss-120b` | `parameters[t1/2 k01]` | not captured | 1.708 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[v1/f]` | 3.27 | not captured | only_one_extracted |
 | `gpt-oss-120b` | `parameters[v1/f]` | not captured | 3.27 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[v1/f]` | 3.27 | not captured | only_one_extracted |
 | `gpt-oss-120b` | `parameters[v2/f]` | not captured | not captured | only_one_extracted |
 | `gpt-oss-120b` | `parameters[v2/f]` | not captured | not captured | only_one_extracted |
 | `gpt-oss-120b` | `screen.primary_analyte` | 4-methylaminoantipyrine | 4-MAA | mismatch |

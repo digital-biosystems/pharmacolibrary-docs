@@ -34,7 +34,7 @@ Folic acid, a form of vitamin B9, is used to treat anaemias such as macrocytic a
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.25). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Crider_2019_reference](drugs/drug_folic_acid/FolicAcid_Crider2019_reference.md) | — | general linear (no model) | 0 | Crider KS et al., Systematic Review and Bayesian Meta-ana…, Nutrients (2019) | [10.3390/nu11010071](https://doi.org/10.3390/nu11010071) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Crider_2019_reference](drugs/drug_folic_acid/FolicAcid_Crider2019_reference.md) | — | general linear (no model) | 0 | Crider KS et al., Systematic Review and Bayesian Meta-ana…, Nutrients (2019) | [10.3390/nu11010071](https://doi.org/10.3390/nu11010071) |
 
 ## Pharmacogenomics (PGx)
 

@@ -5,7 +5,7 @@
 
 # indocyanine green — `IndocyanineGreen_Thiessen1984_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.286). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rabbit), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rabbit</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.571). The first reading is what the record holds.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (rabbit), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rabbit</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -23,7 +23,7 @@
 
 The record was built from the paper's abstract alone, so reported summary statistics stood in for a fitted model. The volume of distribution for indocyanine green is listed as 3.01 mL, a magnitude far outside any plausible physiological range for New Zealand white male rabbits, while the total clearance of 17.09 L/h is likewise implausible in combination. The failed physiological-window check flagged this implausible magnitude as a unit or scale extraction error, and the record was rejected. Extracted — indocyanine green: CL 17.1 L/h, V 3.01 mL.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has indocyanine green, the second reading none; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of clearance: this record has none, the second reading 17.09; it also differs on 2 more fields. That field does not shape the model.
 
 <sub>reviewed by glm-5.3-flash</sub>
 
@@ -70,22 +70,20 @@ Thiessen JJ et al., Indocyanine green pharmacokinetics in t…, Canadian journal
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
 first reading `glm-5.3-flash` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.286 (2/7 fields) | 5 |
+| `gpt-oss-120b` | partly confirmed | 0.571 (4/7 fields) | 3 |
 
-<details><summary>5 field(s) a reader read differently</summary>
+<details><summary>3 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
 | `gpt-oss-120b` | `parameters[clearance]` | not captured | 17.09 | only_one_extracted |
 | `gpt-oss-120b` | `parameters[clearances]` | 17.09 | not captured | only_one_extracted |
 | `gpt-oss-120b` | `parameters[volume of distribution v]` | 3.01 | not captured | only_one_extracted |
-| `gpt-oss-120b` | `screen.dose_compound` | indocyanine green | not captured | mismatch |
-| `gpt-oss-120b` | `screen.primary_analyte` | indocyanine green | not captured | mismatch |
 
 </details>
 

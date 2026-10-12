@@ -21,8 +21,7 @@
 Lanke S; Shoaf SE et al. (2019). Journal of clinical pharmacology 59
   ·  DOI: [10.1002/jcph.1370](https://doi.org/10.1002/jcph.1370)
 
-## Model component
-<dbs-pgx drug="tolvaptan" model-id="Tolvaptan_Lanke2019_reference" status="extracted" stale="true" population="adults with autosomal dominant polycystic kidney disease" measured-compound="tolvaptan" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="tolvaptan" model-id="Tolvaptan_Lanke2019_reference" status="extracted" stale="true" population="adults with autosomal dominant polycystic kidney disease" measured-compound="tolvaptan" parameterization="apparent" topology="1C"></div>
 
 **Parameterization:** CL/F, V/F — apparent, F unknown (apparent — bioavailability not identifiable).
 

@@ -1,0 +1,128 @@
+/* ── breadcrumbs ──────────────────────────────────────────────────────────
+   build.py stamps <div class="pk-crumbs" data-crumbs="[…]"> with labels it already
+   knows (generic name, ATC class, paper stem). A plugin that only split the URL could
+   show drug_abacavir but not abacavir, which is why the trail is authored, not parsed. */
+.pk-crumbs { display: none; }
+.markdown-section nav.pk-crumbtrail {
+  display: flex; flex-wrap: wrap; align-items: center; gap: 6px;
+  margin: -8px 0 18px; font-size: 13px; color: #64748b;
+}
+.markdown-section nav.pk-crumbtrail a { color: #64748b; text-decoration: none; }
+.markdown-section nav.pk-crumbtrail a:hover { color: var(--theme-color, #0074d9);
+  text-decoration: underline; }
+.markdown-section nav.pk-crumbtrail .sep { color: #cbd5e1; }
+.markdown-section nav.pk-crumbtrail .here { color: #334155; font-weight: 600; }
+/* ── floating record panel ────────────────────────────────────────────────
+   build.py stamps <div class="pk-recnav" data-items="[…]"> on every page of a drug:
+   the drug's SIMULATABLE records (model + in-browser simulator) — popPK, PD, PGx — one
+   link + status badge each, under a small heading per group. The plugin below renders it
+   as a fixed box top-right, so a reader can hop between a drug's runnable models without
+   returning to the drug page. */
+.pk-recnav { display: none; }
+aside.pk-recpanel {
+  position: fixed; top: 64px; right: 18px; z-index: 30;
+  max-width: 300px; max-height: calc(100vh - 90px); overflow: auto;
+  background: #fff; border: 1px solid #e2e8f0; border-radius: 8px;
+  box-shadow: 0 6px 22px rgba(15, 23, 42, .10);
+  font-size: 12px; line-height: 1.35;
+}
+aside.pk-recpanel > button.hd {
+  display: flex; align-items: center; gap: 6px; width: 100%;
+  padding: 6px 10px; border: 0; background: #f8fafc; cursor: pointer;
+  font: inherit; font-weight: 600; color: #334155; text-align: left;
+  border-bottom: 1px solid #e2e8f0; border-radius: 8px 8px 0 0;
+}
+aside.pk-recpanel > button.hd .n { color: #94a3b8; font-weight: 400; }
+aside.pk-recpanel > button.hd .tg { margin-left: auto; color: #94a3b8; }
+aside.pk-recpanel.closed > ul { display: none; }
+aside.pk-recpanel.closed > button.hd { border-bottom: 0; border-radius: 8px; }
+aside.pk-recpanel > ul { list-style: none; margin: 0; padding: 4px 0; }
+aside.pk-recpanel > ul > li { display: flex; align-items: center; gap: 8px;
+  padding: 3px 10px; white-space: nowrap; }
+aside.pk-recpanel > ul > li.here { background: #eef6ff; }
+aside.pk-recpanel > ul > li.grp { padding: 6px 10px 2px; color: #94a3b8; font-size: 10px;
+  font-weight: 600; letter-spacing: .04em; text-transform: uppercase; }
+aside.pk-recpanel a { color: #334155; text-decoration: none;
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 11.5px;
+  overflow: hidden; text-overflow: ellipsis; flex: 1 1 auto; min-width: 0; }
+aside.pk-recpanel a:hover { color: var(--theme-color, #0074d9); text-decoration: underline; }
+aside.pk-recpanel li.here a { font-weight: 700; }
+aside.pk-recpanel .pk-badge { font-size: 9px; padding: 1px 6px; flex: 0 0 auto; }
+@media (max-width: 1100px) { aside.pk-recpanel { display: none; } }
+/* The panel is fixed over the page, so the content makes room for it: without this it sat
+   over the right edge of whatever was there — the simulator's legend on a ~1300 px window,
+   where a click on the legend followed a record link instead. Collapsed it is only its
+   header, so it needs less room. */
+@media (min-width: 1101px) {
+  body.pk-recpanel-open .content { right: 320px; }
+  body.pk-recpanel-closed .content { right: 200px; }
+}
+/* The search box the official plugin injects at the top of the sidebar. */
+.sidebar .search { margin-bottom: 12px; border-bottom: 1px solid #eaecef; }
+.sidebar .search input { font-size: 14px; padding: 7px 8px; }
+.sidebar .search .results-panel { font-size: 13px; }
+.pk-tab-mark, .pk-tab-end { display: none; }
+.markdown-section .pk-tabbar {
+  display: flex; gap: 4px; border-bottom: 1px solid #e3e7eb;
+  margin: 4px 0 16px; padding: 0;
+}
+.markdown-section .pk-tabbar button {
+  appearance: none; background: none; border: 0; border-bottom: 2px solid transparent;
+  margin-bottom: -1px; padding: 9px 16px; cursor: pointer;
+  font: inherit; font-size: 15px; color: #6b7280;
+}
+.markdown-section .pk-tabbar button:hover { color: var(--theme-color, #0074d9); }
+.markdown-section .pk-tabbar button[aria-selected="true"] {
+  color: var(--theme-color, #0074d9); font-weight: 600;
+  border-bottom-color: var(--theme-color, #0074d9);
+}
+.markdown-section .pk-tabpanel[hidden] { display: none; }
+/* Sites page: paper tabs. Unselected tabs are light-grey cards with a rounded top; the
+   selected one is white like the page and merges with its panel (no line between them —
+   its bottom border is the page colour, over the bar's rule). Pure CSS on aria-selected. */
+.markdown-section .pks-tabs .pk-tabbar {
+  gap: 3px; margin: 14px 0 0; padding: 0 6px; border-bottom: 1px solid #cbd5e1; flex-wrap: wrap; }
+.markdown-section .pks-tabs .pk-tabbar button {
+  background: #eef0f3; color: #475569; font-size: 14px; padding: 7px 16px;
+  border: 1px solid #cbd5e1; border-bottom: 1px solid #cbd5e1; border-radius: 8px 8px 0 0;
+  margin-bottom: -1px; transition: background .12s, color .12s; }
+.markdown-section .pks-tabs .pk-tabbar button:hover { background: #e2e6ea; color: #1e293b; }
+.markdown-section .pks-tabs .pk-tabbar button[aria-selected="true"] {
+  background: var(--pks-page, #fff); color: #1e293b; font-weight: 600;
+  border-bottom-color: var(--pks-page, #fff); }
+.markdown-section .pks-tabs .pk-tabpanel {
+  border: 1px solid #cbd5e1; border-top: 0; border-radius: 0 0 8px 8px; padding: 14px 16px; }
+.markdown-section .pks-help table { font-size: 13px; }
+.markdown-section .pks-help h3 { margin-top: 18px; }
+/* first heading in a panel: the tab bar already provides the separation. The record
+   title lives inside the Information panel (the tab bar is the first thing on the page),
+   so the h1 loses its top margin too. */
+.markdown-section .pk-tabpanel > h1:first-child,
+.markdown-section .pk-tabpanel > h2:first-child { margin-top: 0; }
+/* Models tab: the bundle table beside a bounded diagram; the diagram wraps under the
+   table when the panel is too narrow for both (flex-wrap, table first in the DOM). */
+.markdown-section .pk-models-grid { display: flex; flex-wrap: wrap; gap: 8px 24px;
+  align-items: flex-start; }
+.markdown-section .pk-models-grid .pk-models-table { flex: 1 1 460px; min-width: 0; }
+.markdown-section .pk-models-grid .pk-models-table > p { font-size: 13px; color: #4b5563; }
+.markdown-section .pk-models-grid figure.pk-models-diagram { flex: 0 1 380px;
+  max-width: 380px; margin: 0; }
+.markdown-section .pk-models-grid figure.pk-models-diagram img { display: block;
+  width: 100%; height: auto; max-height: 420px; object-fit: contain;
+  background: #fff; border: 1px solid #e5e7eb; border-radius: 6px; padding: 8px; }
+.markdown-section .pk-models-grid figure.pk-models-diagram figcaption {
+  font-size: 12px; color: #6b7280; margin-top: 6px; }
+/* Simulation tab: the element is the first thing in the panel */
+.markdown-section .pk-tabpanel > dbs-fmusim:first-child { display: block; margin-top: 0; }
+.markdown-section table.pk-models { width: 100%; }
+.markdown-section table.pk-models td:first-child { white-space: nowrap; }
+.markdown-section .pk-missing { color: #9aa1a9; font-style: italic; }
+.markdown-section .pk-size { color: #6b7280; font-size: 13px; }
+
+/* A record from an animal or in-vitro study (docs.build._species_badge): kept, modelled and
+   simulated, but visibly not human data. */
+.pk-badge--species {
+    background: #ece4fb;
+    color: #4b2a86;
+    border: 1px solid #c6b3ee;
+}

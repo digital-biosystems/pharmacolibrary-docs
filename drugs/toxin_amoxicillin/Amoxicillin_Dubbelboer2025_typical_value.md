@@ -12,8 +12,7 @@
 Dubbelboer IR; Olsén L; Pelander L; Lacroix MZ; Claustre L; Roques B; et al. et al. (2025). Journal of veterinary pharmacology and therapeutics 48
   ·  DOI: [10.1111/jvp.70003](https://doi.org/10.1111/jvp.70003)
 
-## Model component
-<dbs-pgx drug="amoxicillin" model-id="Amoxicillin_Dubbelboer2025_typical_value" status="extracted" stale="false" population="healthy cats" measured-compound="amoxicillin" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="amoxicillin" model-id="Amoxicillin_Dubbelboer2025_typical_value" status="extracted" stale="false" population="healthy cats" measured-compound="amoxicillin" parameterization="mechanistic" topology="2C"></div>
 
 **Parameterization:** mechanistic.
 

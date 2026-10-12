@@ -27,7 +27,7 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> | [Gobburu_2001_AChE_inhibition](drugs/drug_cholinesterase/pd_Gobburu_2001_AChE_inhibition.md) | acetylcholinesterase (AChE) activity inhibition ← ZNS 114-666 (NAP 226-90, rivastigmine metabolite) · direct sigmoid Emax (Hill) effect | — | Gobburu JV et al., Pharmacokinetic-pharmacodynamic modelin…, Journal of clinical pharmac… (2001) | [10.1177/00912700122012689](https://doi.org/10.1177/00912700122012689) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.4). The first reading is what the record holds.">cross-check: disputed</span> | [Gobburu_2001_AChE_inhibition](drugs/drug_cholinesterase/pd_Gobburu_2001_AChE_inhibition.md) | acetylcholinesterase (AChE) activity inhibition ← ZNS 114-666 (NAP 226-90, rivastigmine metabolite) · direct sigmoid Emax (Hill) effect | — | Gobburu JV et al., Pharmacokinetic-pharmacodynamic modelin…, Journal of clinical pharmac… (2001) | [10.1177/00912700122012689](https://doi.org/10.1177/00912700122012689) |
 
 <details class="legend">
 <summary>Badge legend — what each badge means</summary>

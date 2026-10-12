@@ -5,7 +5,7 @@
 
 # Inulin — `Inulin_Hwang2021_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.2). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.25). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -23,7 +23,7 @@
 
 A volume and a clearance/elimination estimate from this paper are needed to build its model. Review values from other papers (Duong_2021) cannot stand in for this paper's evidence. Only the abstract was available, so reported summary statistics stand in for a fitted model. None of the extracted parameters is inulin's own; they describe GFR-Vivo 680 (fluorescently labelled inulin). Extracted — GFR-Vivo 680 (fluorescently labelled inulin): CLR 229 μL/min, V 34.9 L.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has GFR-Vivo 680 (fluorescently labelled inulin), the second reading unknown; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has GFR-Vivo 680 (fluorescently labelled inulin), the second reading unknown; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -81,16 +81,14 @@ first reading `glm-5.3-flash` — the numbers on this page are its, whatever the
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.2 (2/10 fields) | 8 |
+| `gpt-oss-120b` | not confirmed | 0.25 (2/8 fields) | 6 |
 
-<details><summary>8 field(s) a reader read differently</summary>
+<details><summary>6 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss-120b` | `parameters[csa]` | not captured | 80 | only_one_extracted |
 | `gpt-oss-120b` | `parameters[gfr values in vehicle-treated mice]` | 229 | not captured | only_one_extracted |
-| `gpt-oss-120b` | `parameters[gfr]` | not captured | 229 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[p]` | not captured | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[gfr values]` | not captured | 229 | only_one_extracted |
 | `gpt-oss-120b` | `parameters[p]` | not captured | not captured | only_one_extracted |
 | `gpt-oss-120b` | `parameters[vd (amikacin,]` | 34.9 | not captured | only_one_extracted |
 | `gpt-oss-120b` | `screen.dose_compound` | GFR-Vivo 680 (fluorescently labelled inulin) | unknown | mismatch |

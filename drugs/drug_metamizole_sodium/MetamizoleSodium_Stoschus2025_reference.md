@@ -5,7 +5,7 @@
 
 # metamizole sodium — `MetamizoleSodium_Stoschus2025_reference`
 
-> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.769), gpt-oss:120b (not confirmed, agreement 0.583). The first reading is what the record holds.">cross-check: disputed 0/2</span>
+> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.6), gpt-oss:120b (not confirmed, agreement 0.583). The first reading is what the record holds.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -68,15 +68,18 @@ first reading `qwen3.8-27b` — the numbers on this page are its, whatever the r
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | partly confirmed | 0.769 (10/13 fields) | 3 |
+| `gpt-oss-120b` | partly confirmed | 0.6 (9/15 fields) | 6 |
 | `gpt-oss:120b` | not confirmed | 0.583 (7/12 fields) | 5 |
 
-<details><summary>8 field(s) a reader read differently</summary>
+<details><summary>11 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
 | `gpt-oss-120b` | `values[Q319]` | 78.5 | not captured | only_one_extracted |
 | `gpt-oss-120b` | `values[Q35]` | not captured | 44.3 | only_one_extracted |
+| `gpt-oss-120b` | `values[Q36]` | not captured | 18 | only_one_extracted |
+| `gpt-oss-120b` | `values[Q57]` | 62.6 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `values[Q60]` | not captured | 62.6 | only_one_extracted |
 | `gpt-oss-120b` | `values[Q75]` | 32.8 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `model.parameterization` | apparent | mechanistic | mismatch |
 | `gpt-oss:120b` | `values[Q27]` | .314 | not captured | only_one_extracted |

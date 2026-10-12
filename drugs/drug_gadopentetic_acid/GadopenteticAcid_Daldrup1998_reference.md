@@ -4,7 +4,7 @@
 
 # gadopentetic acid — `GadopenteticAcid_Daldrup1998_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by qwen3.8-27b (not confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by qwen3.8-27b (not confirmed, agreement 0.75). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -22,7 +22,7 @@
 
 No clearance, volume or rate constant of the model is reported in it. No parameter values were extracted.
 
-A second, independent reading of the paper (`qwen3.8-27b`) disagrees on which compound was dosed: this record has gadopentetate dimeglumine, the second reading gadopentetic_acid; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`qwen3.8-27b`) disagrees on which compound was dosed: this record has gadopentetate dimeglumine, the second reading gadopentetate. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -61,14 +61,13 @@ first reading `gpt-6-luna` — the numbers on this page are its, whatever the re
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `qwen3.8-27b` | not confirmed | 0.5 (2/4 fields) | 2 |
+| `qwen3.8-27b` | not confirmed | 0.75 (3/4 fields) | 1 |
 
-<details><summary>2 field(s) a reader read differently</summary>
+<details><summary>1 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `qwen3.8-27b` | `screen.dose_compound` | gadopentetate dimeglumine | gadopentetic_acid | mismatch |
-| `qwen3.8-27b` | `screen.primary_analyte` | gadopentetate | gadopentetic_acid | mismatch |
+| `qwen3.8-27b` | `screen.dose_compound` | gadopentetate dimeglumine | gadopentetate | mismatch |
 
 </details>
 

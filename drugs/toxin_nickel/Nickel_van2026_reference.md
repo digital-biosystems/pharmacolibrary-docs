@@ -25,8 +25,7 @@
 van der Zeeuw SL; van Tilburg SJ; Jacobs BC; Koch BCP; Dalm VASH; Crombag MBS; Preijers T et al. (2026). Clinical pharmacokinetics 65
   ·  DOI: [10.1007/s40262-026-01641-5](https://doi.org/10.1007/s40262-026-01641-5)
 
-## Model component
-<dbs-pgx drug="nickel" model-id="Nickel_van2026_reference" status="not_modelled" stale="false" population="" measured-compound="nickel" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="nickel" model-id="Nickel_van2026_reference" status="not_modelled" stale="false" population="" measured-compound="nickel" parameterization="mechanistic" topology="2C"></div>
 
 **Model structure:** 2-compartment, IV mammillary model — template `PK_2C`.  
 **Parameters:** 4 extracted.

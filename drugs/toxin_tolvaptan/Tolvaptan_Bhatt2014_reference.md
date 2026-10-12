@@ -19,8 +19,7 @@
 Bhatt PR; McNeely EB; Lin TE; Adams KF; Patterson JH et al. (2014). Journal of clinical medicine 3
   ·  DOI: [10.3390/jcm3041276](https://doi.org/10.3390/jcm3041276)
 
-## Model component
-<dbs-pgx drug="tolvaptan" model-id="Tolvaptan_Bhatt2014_reference" status="not_modelled" stale="false" population="" measured-compound="tolvaptan" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="tolvaptan" model-id="Tolvaptan_Bhatt2014_reference" status="not_modelled" stale="false" population="" measured-compound="tolvaptan" parameterization="apparent" topology="1C"></div>
 
 **Parameterization:** CL/F, V/F — apparent, F unknown (apparent — bioavailability not identifiable).
 

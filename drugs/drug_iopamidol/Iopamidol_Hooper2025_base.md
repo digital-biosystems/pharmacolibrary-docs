@@ -5,7 +5,7 @@
 
 # iopamidol — `Iopamidol_Hooper2025_base`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.8). The first reading is what the record holds.">cross-check: partial</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.75). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -21,7 +21,7 @@
 
 Without a unit the value cannot be converted, so the model cannot use it. Extracted — iopamidol: CL 58.6 mL/min, V1 5e+03 mL, Q 124 mL/min, V2 4.54e+03 mL, CLnorm 0.179.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of beta_cl_logtbsa_mosteller: this record has 0.179, the second reading none; it also differs on 1 more field. That field does not shape the model.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on `parameters[beta_cl_logtbsa_mosteller].parameter_id`: this record has Q354, the second reading Q319; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -91,19 +91,20 @@ Hooper L et al., Pharmacokinetic Characterization of Iop…, Journal of clinical
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
 first reading `glm-5.3-flash` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | partly confirmed | 0.8 (8/10 fields) | 2 |
+| `gpt-oss-120b` | not confirmed | 0.75 (9/12 fields) | 3 |
 
-<details><summary>2 field(s) a reader read differently</summary>
+<details><summary>3 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss-120b` | `parameters[beta_cl_logtbsa_mosteller]` | 0.179 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[beta_cl_logtbsa_mosteller].parameter_id` | Q354 | Q319 | mismatch |
 | `gpt-oss-120b` | `parameters[beta_cl_logtegfr_comb]` | 0.535 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[q_pop].parameter_id` | Q30 | Q54 | mismatch |
 
 </details>
 

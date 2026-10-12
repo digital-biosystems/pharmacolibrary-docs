@@ -4,7 +4,7 @@
 
 # gadodiamide — `Gadodiamide_Scala2018_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by qwen3.8-27b (partly confirmed, agreement 0.667). The first reading is what the record holds.">cross-check: partial</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by qwen3.8-27b (partly confirmed, agreement 0.909). The first reading is what the record holds.">cross-check: partial</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -20,7 +20,7 @@
 
 The record reports V1 as 0.161 L, alongside clearance (CL) of 2.51 L/h and intercompartmental clearance (Q) of 0.335 L/h. The finding flags a clearance/volume magnitude as outside the physiological window and attributes this to a possible unit or scale extraction error. Extracted — gadodiamide: CL 2.51 L/h, V1 0.161 L, Q 0.335 L/h.
 
-A second, independent reading of the paper (`qwen3.8-27b`) disagrees on parameter Q21: this record has none, the second reading 0.62; it also differs on 3 more fields. That field does not shape the model.
+A second, independent reading of the paper (`qwen3.8-27b`) disagrees on parameter Q315: this record has none, the second reading 16. That field does not shape the model.
 
 <sub>reviewed by gpt-6-luna</sub>
 
@@ -63,16 +63,13 @@ first reading `gpt-6-luna` — the numbers on this page are its, whatever the re
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `qwen3.8-27b` | partly confirmed | 0.667 (8/12 fields) | 4 |
+| `qwen3.8-27b` | partly confirmed | 0.909 (10/11 fields) | 1 |
 
-<details><summary>4 field(s) a reader read differently</summary>
+<details><summary>1 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `qwen3.8-27b` | `values[Q21]` | not captured | 0.62 | only_one_extracted |
 | `qwen3.8-27b` | `values[Q315]` | not captured | 16 | only_one_extracted |
-| `qwen3.8-27b` | `values[Q354]` | 0.06 | not captured | only_one_extracted |
-| `qwen3.8-27b` | `values[Q61]` | 0.20 | not captured | only_one_extracted |
 
 </details>
 

@@ -5,7 +5,7 @@
 
 # flumazenil — `Flumazenil_Chen2025_reference`
 
-> ## <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.667). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.643). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -61,17 +61,17 @@ first reading `glm-5.3-flash` — the numbers on this page are its, whatever the
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.667 (10/15 fields) | 5 |
+| `gpt-oss-120b` | not confirmed | 0.643 (9/14 fields) | 5 |
 
 <details><summary>5 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
 | `gpt-oss-120b` | `values[Q26]` | 75.77 | not captured | only_one_extracted |
-| `gpt-oss-120b` | `values[Q336]` | not captured | 3.50 | only_one_extracted |
+| `gpt-oss-120b` | `values[Q310]` | 8.33 | 34.09 | mismatch |
 | `gpt-oss-120b` | `values[Q364]` | 3.5 | not captured | only_one_extracted |
-| `gpt-oss-120b` | `values[Q72]` | not captured | 4 | only_one_extracted |
-| `gpt-oss-120b` | `values[Q75]` | 1.28 | 3.6 | mismatch |
+| `gpt-oss-120b` | `values[Q42]` | not captured | 2.82 | only_one_extracted |
+| `gpt-oss-120b` | `values[Q75]` | 1.28 | 6.65 | mismatch |
 
 </details>
 

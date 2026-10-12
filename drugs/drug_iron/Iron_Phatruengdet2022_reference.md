@@ -5,7 +5,7 @@
 
 # Iron — `Iron_Phatruengdet2022_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.1), gpt-oss:120b (not confirmed, agreement 0.111). The first reading is what the record holds.">cross-check: disputed 0/2</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.091), gpt-oss:120b (not confirmed, agreement 0.111). The first reading is what the record holds.">cross-check: disputed 0/2</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -23,7 +23,7 @@
 
 A volume and a clearance/elimination estimate from this paper are needed to build its model. Review values from other papers (Ekobena_2025) cannot stand in for this paper's evidence. Without a unit the value cannot be converted, so the model cannot use it. A reported unit could not be converted (CLb and CL), so that value has no SI equivalent. None of the extracted parameters is iron's own; they describe iron-tannic nanoparticles. Extracted — iron-tannic nanoparticles: CLb 0.96 hr-1, CL 0.07 hr-1, V 11.6 L, kabs 2.6 h−1, tlag 0.235 h.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has iron-tannic nanoparticles, the second reading unknown; it also differs on 8 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has iron-tannic nanoparticles, the second reading Iron-tannic nanoparticles (FTs); it also differs on 9 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -83,22 +83,23 @@ first reading `qwen3.8-27b` — the numbers on this page are its, whatever the r
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.1 (1/10 fields) | 9 |
+| `gpt-oss-120b` | not confirmed | 0.091 (1/11 fields) | 10 |
 | `gpt-oss:120b` | not confirmed | 0.111 (1/9 fields) | 8 |
 
-<details><summary>17 field(s) a reader read differently</summary>
+<details><summary>18 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss-120b` | `model.links` | [['iron-tannic nanoparticles', 'iron-tannic nanoparticles metabolites', 'metabolism']] | [['iron-tannic nanoparticles (fts)', 'ft metabolites (iron species)', 'metabolism']] | mismatch |
+| `gpt-oss-120b` | `model.links` | [['iron-tannic nanoparticles', 'iron-tannic nanoparticles metabolites', 'metabolism']] | [] | mismatch |
 | `gpt-oss-120b` | `parameters[absorption rate]` | 2.6 | not captured | only_one_extracted |
 | `gpt-oss-120b` | `parameters[apparent distribution volume]` | 11.6 | not captured | only_one_extracted |
-| `gpt-oss-120b` | `parameters[blood clearance rate constant]` | 0.96 | not captured | only_one_extracted |
 | `gpt-oss-120b` | `parameters[blood clearance rate constant]` | not captured | 0.96 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[blood clearance rate constant]` | 0.96 | not captured | only_one_extracted |
 | `gpt-oss-120b` | `parameters[fts metabolites clearance]` | 0.07 | not captured | only_one_extracted |
 | `gpt-oss-120b` | `parameters[lag time]` | 0.235 | not captured | only_one_extracted |
-| `gpt-oss-120b` | `screen.dose_compound` | iron-tannic nanoparticles | unknown | mismatch |
-| `gpt-oss-120b` | `screen.primary_analyte` | iron-tannic nanoparticles | unknown | mismatch |
+| `gpt-oss-120b` | `parameters[rate constant of fts metabolites clearance]` | not captured | 0.07 | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | iron-tannic nanoparticles | Iron-tannic nanoparticles (FTs) | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | iron-tannic nanoparticles | iron | mismatch |
 | `gpt-oss:120b` | `model.links` | [['iron-tannic nanoparticles', 'iron-tannic nanoparticles metabolites', 'metabolism']] | [['iron-tannic nanoparticles (fts)', 'fts metabolites', 'metabolism']] | mismatch |
 | `gpt-oss:120b` | `parameters[absorption rate]` | 2.6 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[apparent distribution volume]` | 11.6 | not captured | only_one_extracted |

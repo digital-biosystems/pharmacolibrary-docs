@@ -24,13 +24,13 @@ Fructose is a fruit sugar used as a carbohydrate nutrient, classified as a gener
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (monkey), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">monkey</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Pettit_1976_reference](drugs/drug_fructose/Fructose_Pettit1976_reference.md) | — | 1-compartment (no model) | 0 | Pettit GW et al., Oral fructose tolerance, gastric emptyi…, Archives internationales de… (1976) | [10.3109/13813457609078567](https://doi.org/10.3109/13813457609078567) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (monkey), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">monkey</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Pettit_1976_reference](drugs/drug_fructose/Fructose_Pettit1976_reference.md) | — | 1-compartment (no model) | 0 | Pettit GW et al., Oral fructose tolerance, gastric emptyi…, Archives internationales de… (1976) | [10.3109/13813457609078567](https://doi.org/10.3109/13813457609078567) |
 
 ## Pharmacodynamics (PD)
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from the LLM relevance screen, p(non-human) 0.60).">human + animal</span> | [Kuhre_2014_GLP_1active](drugs/drug_fructose/pd_Kuhre_2014_GLP_1active.md) | GLP-1 secretion from GLUTag cells (relative GLP-1active levels) ← fructose · direct sigmoid Emax (Hill) effect | — | Kuhre RE et al., Fructose stimulates GLP-1 but not GIP s…, American journal of physiol… (2014) | [10.1152/ajpgi.00372.2013](https://doi.org/10.1152/ajpgi.00372.2013) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.8). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from the LLM relevance screen, p(non-human) 0.60).">human + animal</span> | [Kuhre_2014_GLP_1active](drugs/drug_fructose/pd_Kuhre_2014_GLP_1active.md) | GLP-1 secretion from GLUTag cells (relative GLP-1active levels) ← fructose · direct sigmoid Emax (Hill) effect | — | Kuhre RE et al., Fructose stimulates GLP-1 but not GIP s…, American journal of physiol… (2014) | [10.1152/ajpgi.00372.2013](https://doi.org/10.1152/ajpgi.00372.2013) |
 
 ## ADME sites
 

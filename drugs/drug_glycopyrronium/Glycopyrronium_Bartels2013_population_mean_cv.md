@@ -5,7 +5,7 @@
 
 # glycopyrronium — `Glycopyrronium_Bartels2013_population_mean_cv`
 
-> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.864), gpt-oss:120b (not confirmed, agreement 0.826). The first reading is what the record holds.">cross-check: disputed 0/2</span>
+> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.739), gpt-oss:120b (not confirmed, agreement 0.826). The first reading is what the record holds.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -21,7 +21,7 @@
 
 For glycopyrronium in healthy volunteers, the record's clearance, volume of distribution, absorption rate constant, absorption lag time, central→peripheral rate constant and peripheral→central rate constant had no value extracted from the source, so a library placeholder stood in for each and the model was held back rather than published with invented numbers. The absorption check also failed: the absorption rate constant was defaulted because it was not reported in the source, judged 'invented absorption: not acceptable'. A second reader further disagreed on several absorption half-life entries, reading the fast lung absorption half-life as a different parameter and leaving the intermediate lung absorption half-life (0.45) and the fraction of dose with slow absorption (6.48) unconfirmed against this record. Extracted — glycopyrronium: CL 44.9, V1 11.3, Q 8.23, V2 71.5, Fab 1.11, kabs 0.009, Vss 102, t1/2z 0.45.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on `parameters[fast lung absorption half-life].parameter_id`: this record has Q59, the second reading Q95; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of 0: this record has none, the second reading 5; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by glm-5.3-flash</sub>
 
@@ -100,16 +100,19 @@ first reading `qwen3.8-27b` — the numbers on this page are its, whatever the r
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.864 (19/22 fields) | 3 |
+| `gpt-oss-120b` | not confirmed | 0.739 (17/23 fields) | 6 |
 | `gpt-oss:120b` | not confirmed | 0.826 (19/23 fields) | 4 |
 
-<details><summary>7 field(s) a reader read differently</summary>
+<details><summary>10 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[0]` | not captured | 5 | only_one_extracted |
 | `gpt-oss-120b` | `parameters[fast lung absorption half-life].parameter_id` | Q59 | Q95 | mismatch |
 | `gpt-oss-120b` | `parameters[intermediate lung absorption half-life]` | 0.45 | not captured | only_one_extracted |
 | `gpt-oss-120b` | `parameters[slow lung absorption half-life]` | not captured | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[systemic clearance].value` | 44.9 | 42.5 | mismatch |
+| `gpt-oss-120b` | `parameters[volume of distribution at steady state].value` | 102 | 82.7 | mismatch |
 | `gpt-oss:120b` | `parameters[0]` | not captured | 5 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[fast lung absorption half-life].parameter_id` | Q59 | Q95 | mismatch |
 | `gpt-oss:120b` | `parameters[gi tract absorption half-life]` | not captured | not captured | only_one_extracted |

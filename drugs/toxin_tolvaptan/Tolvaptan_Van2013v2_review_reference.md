@@ -20,8 +20,7 @@
 ## Citation
 not matched (stem Van_2013_2)
 
-## Model component
-<dbs-pgx drug="tolvaptan" model-id="Tolvaptan_Van2013v2_review_reference" status="extracted" stale="true" population="" measured-compound="" parameterization="" topology=""></dbs-pgx>
+<div class="pk-model-meta" hidden drug="tolvaptan" model-id="Tolvaptan_Van2013v2_review_reference" status="extracted" stale="true" population="" measured-compound="" parameterization="" topology=""></div>
 
 **Parameterization:** not captured.
 

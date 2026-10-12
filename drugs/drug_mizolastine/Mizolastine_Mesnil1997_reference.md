@@ -5,7 +5,7 @@
 
 # mizolastine — `Mizolastine_Mesnil1997_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.2). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.4). The first reading is what the record holds.">cross-check: partial</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -21,7 +21,7 @@
 
 The record specifies a one-compartment topology (1C), yet the findings identify an orphan compartment with no path from the dose. Since the data consisted solely of the paper's abstract, the reported summary statistics stand in for a fitted model, masking this structural inconsistency. Extracted — mizolastine: CL 4.9 L/hr, V2/F 89.6 L, t1/2z 12.9 hr.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has mizolastine, the second reading unknown; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of clearance: this record has 4.9, the second reading none; it also differs on 5 more fields. That field does not shape the model.
 
 <sub>reviewed by qwen3.8-27b</sub>
 
@@ -62,14 +62,14 @@ Mesnil F et al., Pharmacokinetic analysis of mizolastine…, Journal of pharmaco
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
 first reading `qwen3.8-27b` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.2 (2/10 fields) | 8 |
+| `gpt-oss-120b` | partly confirmed | 0.4 (4/10 fields) | 6 |
 
-<details><summary>8 field(s) a reader read differently</summary>
+<details><summary>6 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
@@ -79,8 +79,6 @@ first reading `qwen3.8-27b` — the numbers on this page are its, whatever the r
 | `gpt-oss-120b` | `parameters[mean lambda 2-phase apparent volume of distribution]` | not captured | 89.6 | only_one_extracted |
 | `gpt-oss-120b` | `parameters[mean terminal half-life]` | not captured | 12.9 | only_one_extracted |
 | `gpt-oss-120b` | `parameters[terminal half-life]` | 12.9 | not captured | only_one_extracted |
-| `gpt-oss-120b` | `screen.dose_compound` | mizolastine | unknown | mismatch |
-| `gpt-oss-120b` | `screen.primary_analyte` | mizolastine | unknown | mismatch |
 
 </details>
 

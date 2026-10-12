@@ -5,7 +5,7 @@
 
 # fexofenadine — `Fexofenadine_Jang2023_slco1b1_521t_c_genotypes`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by qwen3.8-27b (not confirmed, agreement 0.824). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by qwen3.8-27b (not confirmed, agreement 0.938). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -21,7 +21,7 @@
 
 Simulated as the paper dosed it, the model’s time of peak (tmax) differs from the paper’s reported value by more than the tolerance (paper 2 h, model 2.69 h). The model’s peak concentration (Cmax) also differs by more than the tolerance (paper 0.00045, model 0.000109 kg/m³), as does its terminal half-life (paper 2.45 h, model 2.4 h). The absorption-rate constant ka and lag time Tlag were defaulted rather than reported estimates; absorption was represented as first-order depot input, with F=1, Fm=1, and no molar correction. A reported unit could not be converted to SI, leaving its parameter without an SI value. Extracted — fexofenadine: t1/2z 2.45 h, tmax 2 h, Cmax 450 ng/mL, AUCt 2.5e+03 h·ng/mL, AUC∞ 2.63e+03 h·ng/mL, V/F 259 L, CL/F 75.9 L/h, MRT 4.44 h, … (+2).
 
-A second, independent reading of the paper (`qwen3.8-27b`) disagrees on the value of auc108-120: this record has none, the second reading 2633.14; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`qwen3.8-27b`) disagrees on `parameters[css,mean (ng/ml) a].parameter_id`: this record has Q71, the second reading Q34. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by gpt-6-luna</sub>
 
@@ -90,15 +90,13 @@ first reading `gpt-6-luna` — the numbers on this page are its, whatever the re
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `qwen3.8-27b` | not confirmed | 0.824 (14/17 fields) | 3 |
+| `qwen3.8-27b` | not confirmed | 0.938 (15/16 fields) | 1 |
 
-<details><summary>3 field(s) a reader read differently</summary>
+<details><summary>1 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `qwen3.8-27b` | `parameters[auc108-120]` | not captured | 2633.14 | only_one_extracted |
 | `qwen3.8-27b` | `parameters[css,mean (ng/ml) a].parameter_id` | Q71 | Q34 | mismatch |
-| `qwen3.8-27b` | `parameters[r value a]` | 1.04 | not captured | only_one_extracted |
 
 </details>
 

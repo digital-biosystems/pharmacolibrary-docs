@@ -19,7 +19,7 @@
 
 **Every check that could be run on this record passed.**
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has magnesium_sulfate, the second reading magnesium sulfate; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has magnesium_sulfate, the second reading unknown; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -80,8 +80,8 @@ first reading `qwen3.8-27b` — the numbers on this page are its, whatever the r
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
 | `gpt-oss-120b` | `parameters[beta_v_weith_kg].parameter_id` | Q64 | Q319 | mismatch |
-| `gpt-oss-120b` | `screen.dose_compound` | magnesium_sulfate | magnesium sulfate | mismatch |
-| `gpt-oss-120b` | `screen.primary_analyte` | magnesium_sulfate | magnesium sulfate | mismatch |
+| `gpt-oss-120b` | `screen.dose_compound` | magnesium_sulfate | unknown | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | magnesium_sulfate | unknown | mismatch |
 | `gpt-oss:120b` | `screen.dose_compound` | magnesium_sulfate | unknown | mismatch |
 | `gpt-oss:120b` | `screen.primary_analyte` | magnesium_sulfate | unknown | mismatch |
 

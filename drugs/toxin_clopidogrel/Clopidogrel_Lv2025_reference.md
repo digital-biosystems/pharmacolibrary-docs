@@ -21,8 +21,7 @@
 Lv D; Li S; Li Y; Lin M; Zhai Y; Wu M; Qiu Y; Zhao Q; Liu J et al. (2025). Drug design, development and therapy 19
   ·  DOI: [10.2147/dddt.s517282](https://doi.org/10.2147/dddt.s517282)
 
-## Model component
-<dbs-pgx drug="clopidogrel" model-id="Clopidogrel_Lv2025_reference" status="extracted" stale="true" population="" measured-compound="clopidogrel" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="clopidogrel" model-id="Clopidogrel_Lv2025_reference" status="extracted" stale="true" population="" measured-compound="clopidogrel" parameterization="mechanistic" topology="2C"></div>
 
 **Parameterization:** mechanistic.
 

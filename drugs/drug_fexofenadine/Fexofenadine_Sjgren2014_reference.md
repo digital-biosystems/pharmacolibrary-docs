@@ -5,7 +5,7 @@
 
 # fexofenadine — `Fexofenadine_Sjgren2014_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by qwen3.8-27b (partly confirmed, agreement 0.875). The first reading is what the record holds.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (pig), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">pig</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by qwen3.8-27b (not confirmed, agreement 0.6). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (pig), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">pig</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -23,7 +23,7 @@
 
 The paper reports no distribution volume and no clearance or elimination rate; it is an exposure/outcome paper. Only the abstract was available, so reported summary statistics stand in for a fitted model.
 
-A second, independent reading of the paper (`qwen3.8-27b`) disagrees on the value of bile exposure: this record has 100, the second reading none. That field does not shape the model.
+A second, independent reading of the paper (`qwen3.8-27b`) disagrees on the value of bile exposure: this record has 100, the second reading none; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -71,18 +71,21 @@ Sjögren E et al., Effects of verapamil on the pharmacokin…, European journal 
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
 first reading `gpt-6-luna` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `qwen3.8-27b` | partly confirmed | 0.875 (7/8 fields) | 1 |
+| `qwen3.8-27b` | not confirmed | 0.6 (6/10 fields) | 4 |
 
-<details><summary>1 field(s) a reader read differently</summary>
+<details><summary>4 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
 | `qwen3.8-27b` | `parameters[bile exposure]` | 100 | not captured | only_one_extracted |
+| `qwen3.8-27b` | `parameters[biliary clearance]` | not captured | 53 | only_one_extracted |
+| `qwen3.8-27b` | `parameters[fraction of the administered dose of unchanged fex excreted into the bile]` | 25 | not captured | only_one_extracted |
+| `qwen3.8-27b` | `parameters[liver extraction].parameter_id` | Q39 | Q44 | mismatch |
 
 </details>
 

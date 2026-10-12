@@ -23,7 +23,7 @@ Mepolizumab, a monoclonal antibody, is used to treat asthma, hypereosinophilic s
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.636). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>route_to: `human_review`</sub> | [Smith_2011_reference](drugs/drug_mepolizumab/Mepolizumab_Smith2011_reference.md) | — | 1-compartment (no model) | 0 | Smith DA et al., Pharmacokinetics and pharmacodynamics o…, Clinical pharmacokinetics (2011) | [10.2165/11584340-000000000-00000](https://doi.org/10.2165/11584340-000000000-00000) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.143). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>route_to: `human_review`</sub> | [Smith_2011_reference](drugs/drug_mepolizumab/Mepolizumab_Smith2011_reference.md) | — | 1-compartment (no model) | 0 | Smith DA et al., Pharmacokinetics and pharmacodynamics o…, Clinical pharmacokinetics (2011) | [10.2165/11584340-000000000-00000](https://doi.org/10.2165/11584340-000000000-00000) |
 
 ## ADME sites
 

@@ -21,7 +21,7 @@
 
 **Every check that could be run on this record passed.**
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q54: this record has none, the second reading 2. That field does not shape the model.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q364: this record has none, the second reading 2. That field does not shape the model.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -67,7 +67,7 @@ first reading `qwen3.8-27b` — the numbers on this page are its, whatever the r
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss-120b` | `values[Q54]` | not captured | 2 | only_one_extracted |
+| `gpt-oss-120b` | `values[Q364]` | not captured | 2 | only_one_extracted |
 
 </details>
 

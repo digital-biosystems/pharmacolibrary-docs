@@ -27,7 +27,7 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> | [Zielen_2019_TSS](drugs/drug_grass_pollen/pd_Zielen_2019_TSS.md) | post-treatment Total Symptom Score following conjunctival provocation testing ← PQ Grass · direct Emax (saturable) effect | — | Zielen S et al., Strong dose response after immunotherap…, The World Allergy Organizat… (2019) | [10.1016/j.waojou.2019.100075](https://doi.org/10.1016/j.waojou.2019.100075) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.667). The first reading is what the record holds.">cross-check: disputed</span> | [Zielen_2019_TSS](drugs/drug_grass_pollen/pd_Zielen_2019_TSS.md) | post-treatment Total Symptom Score following conjunctival provocation testing ← PQ Grass · direct Emax (saturable) effect | — | Zielen S et al., Strong dose response after immunotherap…, The World Allergy Organizat… (2019) | [10.1016/j.waojou.2019.100075](https://doi.org/10.1016/j.waojou.2019.100075) |
 
 <details class="legend">
 <summary>Badge legend — what each badge means</summary>

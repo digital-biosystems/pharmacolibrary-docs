@@ -24,8 +24,7 @@
 Charles B; Norris R; Xiao X; Hague W et al. (2006). Therapeutic drug monitoring 28
   ·  DOI: [10.1097/01.ftd.0000184161.52573.0e](https://doi.org/10.1097/01.ftd.0000184161.52573.0e)
 
-## Model component
-<dbs-pgx drug="metformin" model-id="Metformin_Charles2006_reference" status="not_modelled" stale="false" population="women in late pregnancy with gestational diabetes or type 2 diabetes" measured-compound="metformin" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="metformin" model-id="Metformin_Charles2006_reference" status="not_modelled" stale="false" population="women in late pregnancy with gestational diabetes or type 2 diabetes" measured-compound="metformin" parameterization="mechanistic" topology="1C"></div>
 
 **Parameterization:** mechanistic.
 

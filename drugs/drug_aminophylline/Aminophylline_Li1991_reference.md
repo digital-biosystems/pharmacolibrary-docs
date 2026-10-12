@@ -5,7 +5,7 @@
 
 # aminophylline — `Aminophylline_Li1991_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.545). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rabbit), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rabbit</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rabbit), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rabbit</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -23,7 +23,7 @@
 
 A model needs both clearance and volume; without the volume it could only be built on a library default, so it was not. Only the abstract was available, so reported summary statistics stand in for a fitted model. None of the extracted parameters is aminophylline's own; they describe theophylline. Extracted — theophylline: Cmax 23.6 mg/l, kel 0.23 /h, t1/2z 3.04 h, CL 0.26 l/kg/h.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on how the model is parameterised: this record has mechanistic, the second reading apparent; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has aminophylline, the second reading unknown; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -77,17 +77,17 @@ first reading `glm-5.3-flash` — the numbers on this page are its, whatever the
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.545 (6/11 fields) | 5 |
+| `gpt-oss-120b` | not confirmed | 0.5 (5/10 fields) | 5 |
 
 <details><summary>5 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss-120b` | `model.parameterization` | mechanistic | apparent | mismatch |
-| `gpt-oss-120b` | `parameters[atropine]` | not captured | 1 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[cl].parameter_id` | Q22 | Q351 | mismatch |
+| `gpt-oss-120b` | `parameters[aminophylline]` | not captured | 12.5 | only_one_extracted |
 | `gpt-oss-120b` | `parameters[cmax]` | 23.6 | not captured | only_one_extracted |
 | `gpt-oss-120b` | `parameters[maximal serum concentration of theophylline]` | not captured | 23.6 | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | aminophylline | unknown | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | theophylline | unknown | mismatch |
 
 </details>
 

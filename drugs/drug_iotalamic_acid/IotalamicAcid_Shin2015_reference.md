@@ -5,7 +5,7 @@
 
 # iotalamic acid — `IotalamicAcid_Shin2015_reference`
 
-> ## <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.333). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.833). The first reading is what the record holds.">cross-check: partial</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -19,7 +19,7 @@
 
 **Every check that could be run on this record passed.**
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q26: this record has 0.75, the second reading 0.75; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q352: this record has 0.67, the second reading none; it also differs on 1 more field. That field does not shape the model.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -54,24 +54,18 @@ Shin JE et al., Usefulness of serum cystatin C to deter…, Korean journal of pe
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
 first reading `glm-5.3-flash` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.333 (4/12 fields) | 8 |
+| `gpt-oss-120b` | partly confirmed | 0.833 (10/12 fields) | 2 |
 
-<details><summary>8 field(s) a reader read differently</summary>
+<details><summary>2 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss-120b` | `values[Q26]` | 0.75 | 0.75 | mismatch |
-| `gpt-oss-120b` | `values[Q301]` | 1.12 | 1.12 | mismatch |
-| `gpt-oss-120b` | `values[Q302]` | 0.48 | 0.48 | mismatch |
-| `gpt-oss-120b` | `values[Q32]` | 24.65 | 24.65 | mismatch |
 | `gpt-oss-120b` | `values[Q352]` | 0.67 | not captured | only_one_extracted |
-| `gpt-oss-120b` | `values[Q37]` | 8.1 | 8.10 | mismatch |
-| `gpt-oss-120b` | `values[Q57]` | 9.16 | not captured | only_one_extracted |
 | `gpt-oss-120b` | `values[Q900]` | 63.63 | not captured | only_one_extracted |
 
 </details>

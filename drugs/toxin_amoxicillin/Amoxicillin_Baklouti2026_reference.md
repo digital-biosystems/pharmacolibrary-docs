@@ -21,8 +21,7 @@
 Baklouti S; Rigourd V; Panchaud A; Nordeng H; Allegaert K; Annaert P; Huang MC; Monfort A; Guidi M; Gandia P et al. (2026). British journal of clinical pharmacology 92
   ·  DOI: [10.1002/bcp.70434](https://doi.org/10.1002/bcp.70434)
 
-## Model component
-<dbs-pgx drug="amoxicillin" model-id="Amoxicillin_Baklouti2026_reference" status="extracted" stale="true" population="breastfeeding mothers" measured-compound="amoxicillin" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="amoxicillin" model-id="Amoxicillin_Baklouti2026_reference" status="extracted" stale="true" population="breastfeeding mothers" measured-compound="amoxicillin" parameterization="apparent" topology="1C"></div>
 
 **Parameterization:** V/F — apparent, F unknown (apparent — bioavailability not identifiable).
 

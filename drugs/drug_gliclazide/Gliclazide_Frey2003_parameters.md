@@ -5,7 +5,7 @@
 
 # gliclazide — `Gliclazide_Frey2003_parameters`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.583). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.25). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -21,7 +21,7 @@
 
 The reported parameters (AUCt 20 mg.h ml-1, t1/2z 21 day, CL/F 15 ml min-1, V/F 19 l) were extracted, but ka and Tlag had no source values and library placeholders were substituted, which the adjudication judged not acceptable for the invented absorption. The model also assumes F=1 and Fm=1 with no molar correction, giving an apparent (/F) parameterization with first-order depot input for extravascular dosing. Additionally, the AUCt unit mg.h ml-1 could not be converted to SI units, so that parameter was carried without an SI value. Extracted — gliclazide: AUCt 20 mg.h ml -1, t1/2z 21 day, CL/F 15 ml min -1, V/F 19 l.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of absorption rate constant: this record has 1.4, the second reading none; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has gliclazide, the second reading unknown; it also differs on 8 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by glm-5.3-flash</sub>
 
@@ -83,21 +83,25 @@ Frey N et al., Population PKPD modelling of the long-t…, British journal of cl
 ## Validation
 
 **Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
+first reading `qwen3.8-27b` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.583 (7/12 fields) | 5 |
+| `gpt-oss-120b` | not confirmed | 0.25 (3/12 fields) | 9 |
 
-<details><summary>5 field(s) a reader read differently</summary>
+<details><summary>9 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
 | `gpt-oss-120b` | `parameters[absorption rate constant]` | 1.4 | not captured | only_one_extracted |
-| `gpt-oss-120b` | `parameters[equilibration half-life].parameter_id` | Q57 | Q59 | mismatch |
+| `gpt-oss-120b` | `parameters[apparent clearance]` | 15 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[apparent clearance]` | not captured | 15 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[apparent volume of distribution]` | 19 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[apparent volume of distribution]` | not captured | 19 | only_one_extracted |
 | `gpt-oss-120b` | `parameters[gliclazide auc 50].parameter_id` | Q19 | Q88 | mismatch |
 | `gpt-oss-120b` | `parameters[gliclazide auc 50].value` | 20 | 60 | mismatch |
-| `gpt-oss-120b` | `parameters[rate constant of equilibration k eq]` | not captured | 84 | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | gliclazide | unknown | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | gliclazide | unknown | mismatch |
 
 </details>
 

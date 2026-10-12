@@ -5,7 +5,7 @@
 
 # iohexol — `Iohexol_Hooper2025_final`
 
-> ## <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.7). The first reading is what the record holds.">cross-check: partial</span>
+> ## <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.143). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -19,7 +19,7 @@
 
 **Every check that could be run on this record passed.**
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of beta_cl_logtegfr_comb: this record has 0.535, the second reading none; it also differs on 2 more fields. That field does not shape the model.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has iohexol, the second reading unknown; it also differs on 11 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -93,20 +93,29 @@ Hooper L et al., Pharmacokinetic Characterization of Iop…, Journal of clinical
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
 first reading `glm-5.3-flash` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | partly confirmed | 0.7 (7/10 fields) | 3 |
+| `gpt-oss-120b` | not confirmed | 0.143 (2/14 fields) | 12 |
 
-<details><summary>3 field(s) a reader read differently</summary>
+<details><summary>12 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
 | `gpt-oss-120b` | `parameters[beta_cl_logtegfr_comb]` | 0.535 | not captured | only_one_extracted |
 | `gpt-oss-120b` | `parameters[cl_ β_bsa]` | 0.59 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cl_pop]` | 69.69 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cl_pop]` | not captured | 69.69 | only_one_extracted |
 | `gpt-oss-120b` | `parameters[q_pop]` | 167.91 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[q_pop]` | not captured | 167.91 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[v1_pop]` | 5920.61 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[v1_pop]` | not captured | 5920.61 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[v2_pop]` | 6021.42 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[v2_pop]` | not captured | 6021.42 | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | iohexol | unknown | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | iohexol | unknown | mismatch |
 
 </details>
 

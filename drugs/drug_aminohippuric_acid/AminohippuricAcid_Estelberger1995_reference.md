@@ -5,7 +5,7 @@
 
 # aminohippuric acid — `AminohippuricAcid_Estelberger1995_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.154). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.333). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -21,7 +21,7 @@
 
 In this 1-compartment p-aminohippuric acid model for renal patients and healthy controls, five parameters were reported with the unit 'a', an undefined unit that cannot be expressed in SI. Only the volume of distribution (V = 6.31 L) carries a usable unit. The resulting dimension mismatch on a structural parameter led to rejection. Extracted — aminohippuric acid: MRT 64 a, kel 69 a, tlag 28 a, Fab 54 a, V 6.31 L.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has p-aminohippuric acid, the second reading unknown; it also differs on 10 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has p-aminohippuric acid, the second reading aminohippuric_acid; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by glm-5.3-flash</sub>
 
@@ -87,23 +87,20 @@ first reading `glm-5.3-flash` — the numbers on this page are its, whatever the
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.154 (2/13 fields) | 11 |
+| `gpt-oss-120b` | not confirmed | 0.333 (4/12 fields) | 8 |
 
-<details><summary>11 field(s) a reader read differently</summary>
+<details><summary>8 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss-120b` | `parameters[fa**]` | 54 | not captured | only_one_extracted |
-| `gpt-oss-120b` | `parameters[kk*]` | 69 | not captured | only_one_extracted |
-| `gpt-oss-120b` | `parameters[la*]` | not captured | 3.6 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[mh*].parameter_id` | Q53 | Q57 | mismatch |
-| `gpt-oss-120b` | `parameters[mh*].value` | 64 | 4.0 | mismatch |
+| `gpt-oss-120b` | `parameters[la*]` | not captured | 65 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[mh*]` | 64 | not captured | only_one_extracted |
 | `gpt-oss-120b` | `parameters[pa*]` | 35 | not captured | only_one_extracted |
-| `gpt-oss-120b` | `parameters[rj**]` | not captured | 24.5 | only_one_extracted |
 | `gpt-oss-120b` | `parameters[volume]` | 6.31 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[wr*]` | not captured | 54 | only_one_extracted |
 | `gpt-oss-120b` | `parameters[ze**]` | 28 | not captured | only_one_extracted |
-| `gpt-oss-120b` | `screen.dose_compound` | p-aminohippuric acid | unknown | mismatch |
-| `gpt-oss-120b` | `screen.primary_analyte` | p-aminohippuric acid | unknown | mismatch |
+| `gpt-oss-120b` | `screen.dose_compound` | p-aminohippuric acid | aminohippuric_acid | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | p-aminohippuric acid | aminohippuric_acid | mismatch |
 
 </details>
 

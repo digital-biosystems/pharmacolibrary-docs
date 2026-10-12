@@ -5,7 +5,7 @@
 
 # ivacaftor — `Ivacaftor_Truong2025_reference`
 
-> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (confirmed, agreement 1.0), gpt-oss:120b (not confirmed, agreement 0.692). The first reading is what the record holds.">cross-check: disputed 1/2</span>
+> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.7), gpt-oss:120b (not confirmed, agreement 0.692). The first reading is what the record holds.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -21,7 +21,7 @@
 
 The record reports ivacaftor CL/F of 13.4 and V/F of 183 L/70 kg, but clearance, absorption rate constant (ka) and absorption lag time (Tlag) had no values in the source, so placeholder values were substituted and the model was held back rather than published with invented numbers. The builder also assumed F=1 and Fm=1 with no molar correction, giving an apparent (/F) parameterization with first-order depot input, and the defaulted ka was judged an invented absorption term, not acceptable. A second reader further disagreed on the primary analyte (recorded as the combination elexacaftor/tezacaftor/ivacaftor versus unknown) and on the additive error parameter identification, and read no value for the proportional error where 0.278 was recorded. Extracted — ivacaftor: CL/F 13.4, V/F 183 L/70 kg, CL 0.37, add_error 0.131, prop_error 0.278.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has elexacaftor/tezacaftor/ivacaftor, the second reading elexacaftor, tezacaftor, ivacaftor; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has elexacaftor/tezacaftor/ivacaftor, the second reading unknown; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by glm-5.3-flash</sub>
 
@@ -91,18 +91,21 @@ Truong NH et al., Elexacaftor/Tezacaftor/Ivacaftor Popula…, Clinical and trans
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  1 of 2 readers agree  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
 first reading `qwen3.8-27b` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | confirmed | 1.0 (10/10 fields) | none |
+| `gpt-oss-120b` | not confirmed | 0.7 (7/10 fields) | 3 |
 | `gpt-oss:120b` | not confirmed | 0.692 (9/13 fields) | 4 |
 
-<details><summary>4 field(s) a reader read differently</summary>
+<details><summary>7 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `model.links` | [] | [['none', 'none', 'none']] | mismatch |
+| `gpt-oss-120b` | `screen.dose_compound` | elexacaftor/tezacaftor/ivacaftor | unknown | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | ivacaftor | unknown | mismatch |
 | `gpt-oss:120b` | `parameters[σ additive].parameter_id` | Q317 | Q315 | mismatch |
 | `gpt-oss:120b` | `parameters[σ proportional]` | 0.278 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `screen.dose_compound` | elexacaftor/tezacaftor/ivacaftor | elexacaftor, tezacaftor, ivacaftor | mismatch |

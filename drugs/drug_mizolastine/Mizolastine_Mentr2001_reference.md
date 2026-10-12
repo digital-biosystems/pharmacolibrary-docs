@@ -5,7 +5,7 @@
 
 # mizolastine — `Mizolastine_Mentr2001_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.222). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.857). The first reading is what the record holds.">cross-check: partial</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -21,7 +21,7 @@
 
 The source abstract did not report specific values for the absorption rate constant or lag time. Consequently, the model relies on default parameters for these kinetic terms rather than estimates derived from the clinical data. This results in a simulation where absorption is governed by generic assumptions rather than the observed pharmacokinetic profile. Extracted — mizolastine: V/F 0.28 L/kg, CL/F 0.1 L/h.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has mizolastine, the second reading unknown; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of tabs: this record has none, the second reading 0.49. That field does not shape the model.
 
 <sub>reviewed by qwen3.8-27b</sub>
 
@@ -73,24 +73,18 @@ Mentré F et al., Population pharmacokinetic analysis and…, Journal of pharmac
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
 first reading `qwen3.8-27b` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.222 (2/9 fields) | 7 |
+| `gpt-oss-120b` | partly confirmed | 0.857 (6/7 fields) | 1 |
 
-<details><summary>7 field(s) a reader read differently</summary>
+<details><summary>1 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss-120b` | `parameters[cl/f]` | 0.1 | not captured | only_one_extracted |
-| `gpt-oss-120b` | `parameters[cl/f]` | not captured | 0.10 | only_one_extracted |
 | `gpt-oss-120b` | `parameters[tabs]` | not captured | 0.49 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[vc/f]` | 0.28 | not captured | only_one_extracted |
-| `gpt-oss-120b` | `parameters[vc/f]` | not captured | 0.28 | only_one_extracted |
-| `gpt-oss-120b` | `screen.dose_compound` | mizolastine | unknown | mismatch |
-| `gpt-oss-120b` | `screen.primary_analyte` | mizolastine | unknown | mismatch |
 
 </details>
 

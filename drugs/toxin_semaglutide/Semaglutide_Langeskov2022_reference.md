@@ -21,8 +21,7 @@
 Langeskov EK; Kristensen K et al. (2022). Pharmacology research & perspectives 10
   ·  DOI: [10.1002/prp2.962](https://doi.org/10.1002/prp2.962)
 
-## Model component
-<dbs-pgx drug="semaglutide" model-id="Semaglutide_Langeskov2022_reference" status="extracted" stale="true" population="" measured-compound="semaglutide" parameterization="apparent" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="semaglutide" model-id="Semaglutide_Langeskov2022_reference" status="extracted" stale="true" population="" measured-compound="semaglutide" parameterization="apparent" topology="2C"></div>
 
 **Parameterization:** CL/F, Q/F, V1/F, V2/F — apparent, F unknown (apparent — bioavailability not identifiable).
 

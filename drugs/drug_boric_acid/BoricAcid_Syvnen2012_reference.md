@@ -5,7 +5,7 @@
 
 # boric acid — `BoricAcid_Syvnen2012_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.6). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.7). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -23,7 +23,7 @@
 
 The record reports boric acid with total clearance 32.1 mL/min, intercompartmental clearance 66.6 mL/min, a central volume of distribution of 146.0 mL and a peripheral volume of 1840.0 mL. These magnitudes fall outside the physiological window expected for this molecule, which points to a unit or scale error when the values were extracted. The model structure itself is a standard two-compartment disposition with no other deviations noted, so the implausible parameter magnitudes are the sole ground for rejection. Extracted — boric acid: CL 32.1 mL/min, V1 146 mL, V2 1.84e+03 mL, Q 66.6 mL/min.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q315: this record has 0.27, the second reading none; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q40: this record has 0.061, the second reading 0.06; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by glm-5.3-flash</sub>
 
@@ -67,16 +67,15 @@ first reading `glm-5.3-flash` — the numbers on this page are its, whatever the
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.6 (6/10 fields) | 4 |
+| `gpt-oss-120b` | not confirmed | 0.7 (7/10 fields) | 3 |
 
-<details><summary>4 field(s) a reader read differently</summary>
+<details><summary>3 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss-120b` | `values[Q315]` | 0.27 | not captured | only_one_extracted |
 | `gpt-oss-120b` | `values[Q40]` | 0.061 | 0.06 | mismatch |
 | `gpt-oss-120b` | `values[Q64]` | 1840 | 184 | mismatch |
-| `gpt-oss-120b` | `values[Q99]` | not captured | 8.67 | only_one_extracted |
+| `gpt-oss-120b` | `values[Q99]` | not captured | 8.6 | only_one_extracted |
 
 </details>
 

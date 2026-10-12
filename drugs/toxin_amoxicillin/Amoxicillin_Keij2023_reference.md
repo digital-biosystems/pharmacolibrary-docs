@@ -24,8 +24,7 @@
 Keij FM; Schouwenburg S; Kornelisse RF; Preijers T; Mir F; Degraeuwe P; et al. et al. (2023). Clinical infectious diseases : an official publication of the Infectious Diseases Society of America 77
   ·  DOI: [10.1093/cid/ciad432](https://doi.org/10.1093/cid/ciad432)
 
-## Model component
-<dbs-pgx drug="amoxicillin" model-id="Amoxicillin_Keij2023_reference" status="extracted" stale="true" population="neonates" measured-compound="amoxicillin" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="amoxicillin" model-id="Amoxicillin_Keij2023_reference" status="extracted" stale="true" population="neonates" measured-compound="amoxicillin" parameterization="mechanistic" topology="1C"></div>
 
 **Parameterization:** mechanistic.
 

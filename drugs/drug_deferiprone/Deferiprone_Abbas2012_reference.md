@@ -4,7 +4,7 @@
 
 # deferiprone — `Deferiprone_Abbas2012_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.2). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.4). The first reading is what the record holds.">cross-check: partial</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -20,7 +20,7 @@
 
 The paper reports no distribution volume and no clearance or elimination rate; it is an exposure/outcome paper. Only the abstract was available, so reported summary statistics stand in for a fitted model.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has deferiprone, the second reading unknown; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of absorption half-life: this record has 0.62, the second reading none; it also differs on 5 more fields. That field does not shape the model.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -62,14 +62,14 @@ Abbas M et al., Quantitative determination of deferipro…, Pakistan journal of 
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
 first reading `glm-5.3-flash` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.2 (2/10 fields) | 8 |
+| `gpt-oss-120b` | partly confirmed | 0.4 (4/10 fields) | 6 |
 
-<details><summary>8 field(s) a reader read differently</summary>
+<details><summary>6 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
@@ -79,8 +79,6 @@ first reading `glm-5.3-flash` — the numbers on this page are its, whatever the
 | `gpt-oss-120b` | `parameters[average area under the plasma concentration-time curve (auc) of deferiprone]` | not captured | 17.0 | only_one_extracted |
 | `gpt-oss-120b` | `parameters[average elimination half-life]` | not captured | 2.65 | only_one_extracted |
 | `gpt-oss-120b` | `parameters[elimination half-life]` | 2.65 | not captured | only_one_extracted |
-| `gpt-oss-120b` | `screen.dose_compound` | deferiprone | unknown | mismatch |
-| `gpt-oss-120b` | `screen.primary_analyte` | deferiprone | unknown | mismatch |
 
 </details>
 

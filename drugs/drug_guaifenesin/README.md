@@ -28,7 +28,7 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> | [Demirbas_1998_DXP_HBr](drugs/drug_guaifenesin/pd_Demirbas_1998_DXP_HBr.md) | dextromethorphan bioavailability biomarker turnover ← guaifenesin | — | Demirbas S et al., Bioavailability of dextromethorphan (as…, Biopharmaceutics & drug dis… (1998) | [10.1002/(sici)1099-081x(1998110)19:8&lt;541::aid-bdd138&gt;3.0.co;2-8](https://doi.org/10.1002/(sici)1099-081x(1998110)19:8&lt;541::aid-bdd138&gt;3.0.co;2-8) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:gpt-oss-120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [Demirbas_1998_DXP_HBr](drugs/drug_guaifenesin/pd_Demirbas_1998_DXP_HBr.md) | dextromethorphan bioavailability biomarker turnover ← guaifenesin | — | Demirbas S et al., Bioavailability of dextromethorphan (as…, Biopharmaceutics & drug dis… (1998) | [10.1002/(sici)1099-081x(1998110)19:8&lt;541::aid-bdd138&gt;3.0.co;2-8](https://doi.org/10.1002/(sici)1099-081x(1998110)19:8&lt;541::aid-bdd138&gt;3.0.co;2-8) |
 
 ## ADME sites
 

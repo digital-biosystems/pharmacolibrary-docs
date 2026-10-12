@@ -5,7 +5,7 @@
 
 # fexofenadine — `Fexofenadine_Olsn2006_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by qwen3.8-27b (partly confirmed, agreement 0.818). The first reading is what the record holds.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">horse</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by qwen3.8-27b (partly confirmed, agreement 0.9). The first reading is what the record holds.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">horse</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -23,7 +23,7 @@
 
 The finding does not identify which structural parameter or reported value had the dimension mismatch, so its specific cause is inconclusive. The record was built from the abstract alone, and reported summary statistics stood in for a fitted model. Extracted — fexofenadine: t1/2z 2.4 h, V/F 0.8 L/kg, CL 0.8 L/h/kg, Fab 2.6 %, AUC 27 %.
 
-A second, independent reading of the paper (`qwen3.8-27b`) disagrees on the value of area under the plasma concentration-time curve: this record has none, the second reading 27; it also differs on 1 more field. That field does not shape the model.
+A second, independent reading of the paper (`qwen3.8-27b`) disagrees on the value of area under the plasma concentration-time curve decreased: this record has 27, the second reading none. That field does not shape the model.
 
 <sub>reviewed by gpt-6-luna</sub>
 
@@ -76,14 +76,13 @@ first reading `gpt-6-luna` — the numbers on this page are its, whatever the re
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `qwen3.8-27b` | partly confirmed | 0.818 (9/11 fields) | 2 |
+| `qwen3.8-27b` | partly confirmed | 0.9 (9/10 fields) | 1 |
 
-<details><summary>2 field(s) a reader read differently</summary>
+<details><summary>1 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
 | `qwen3.8-27b` | `parameters[area under the plasma concentration-time curve decreased]` | 27 | not captured | only_one_extracted |
-| `qwen3.8-27b` | `parameters[area under the plasma concentration-time curve]` | not captured | 27 | only_one_extracted |
 
 </details>
 

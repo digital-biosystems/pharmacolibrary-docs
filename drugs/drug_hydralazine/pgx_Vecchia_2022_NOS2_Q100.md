@@ -26,7 +26,7 @@
 - reference category (θ=0) not captured — must not be inferred
 
 ## Citation
-Vecchia Genvigir FD; Dagli-Hernandez C; Hirata TDC; Zhou Y; Lauschke VM; Hirata MH; et al. et al. (2022). Endocrine, metabolic & immune disorders drug targets 22
+Vecchia Genvigir FD et al., Pharmacogenomics of Antihypertensive Dr…, Endocrine, metabolic & immu… (2022)
   ·  DOI: [10.2174/1871530322666211222122212](https://doi.org/10.2174/1871530322666211222122212)
 
 

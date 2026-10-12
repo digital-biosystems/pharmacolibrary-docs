@@ -21,8 +21,7 @@
 Kang S; Min KL; Yang S; Hahn J; Kim D; Jin BH; Chae SU; Bae SK; Wi J; Chang MJ et al. (2026). Clinical pharmacology and therapeutics 120
   ·  DOI: [10.1002/cpt.70282](https://doi.org/10.1002/cpt.70282)
 
-## Model component
-<dbs-pgx drug="clopidogrel" model-id="Clopidogrel_Kang2026_reference" status="extracted" stale="true" population="" measured-compound="clopidogrel" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="clopidogrel" model-id="Clopidogrel_Kang2026_reference" status="extracted" stale="true" population="" measured-compound="clopidogrel" parameterization="apparent" topology="1C"></div>
 
 **Parameterization:** CL/F, V/F — apparent, F unknown (apparent — bioavailability not identifiable).
 

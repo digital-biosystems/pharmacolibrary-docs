@@ -21,7 +21,7 @@
 
 Only the abstract was available, so reported summary statistics stand in for a fitted model.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has boric acid, the second reading boric_acid; it also differs on 14 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has boric acid, the second reading unknown; it also differs on 14 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -95,8 +95,8 @@ first reading `glm-5.3-flash` — the numbers on this page are its, whatever the
 | `gpt-oss-120b` | `parameters[v2]` | not captured | 0.456 | only_one_extracted |
 | `gpt-oss-120b` | `parameters[v3]` | 0.34 | not captured | only_one_extracted |
 | `gpt-oss-120b` | `parameters[v3]` | not captured | 0.34 | only_one_extracted |
-| `gpt-oss-120b` | `screen.dose_compound` | boric acid | boric_acid | mismatch |
-| `gpt-oss-120b` | `screen.primary_analyte` | boric acid | boric_acid | mismatch |
+| `gpt-oss-120b` | `screen.dose_compound` | boric acid | unknown | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | boric acid | unknown | mismatch |
 
 </details>
 

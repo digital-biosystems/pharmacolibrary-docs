@@ -28,7 +28,7 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span> | [Du_2022_IC50](drugs/drug_lifitegrast/pd_Du_2022_IC50.md) | Jurkat cell attachment to ICAM-1 (LFA-1/ICAM-1 antagonist activity) ← Lifitegrast · direct sigmoid Emax (Hill) effect | — | Du G et al., Design, synthesis, and LFA-1/ICAM-1 ant…, Medicinal chemistry researc… (2022) | [10.1007/s00044-022-02851-9](https://doi.org/10.1007/s00044-022-02851-9) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.8). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span> | [Du_2022_IC50](drugs/drug_lifitegrast/pd_Du_2022_IC50.md) | Jurkat cell attachment to ICAM-1 (LFA-1/ICAM-1 antagonist activity) ← Lifitegrast · direct sigmoid Emax (Hill) effect | — | Du G et al., Design, synthesis, and LFA-1/ICAM-1 ant…, Medicinal chemistry researc… (2022) | [10.1007/s00044-022-02851-9](https://doi.org/10.1007/s00044-022-02851-9) |
 
 ## ADME sites
 

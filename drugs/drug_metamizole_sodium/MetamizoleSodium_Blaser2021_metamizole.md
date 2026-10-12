@@ -5,7 +5,7 @@
 
 # metamizole sodium — `MetamizoleSodium_Blaser2021_metamizole`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.062), gpt-oss:120b (not confirmed, agreement 0.028). The first reading is what the record holds.">cross-check: disputed 0/2</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.054), gpt-oss:120b (not confirmed, agreement 0.028). The first reading is what the record holds.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -21,7 +21,7 @@
 
 Without a unit the value cannot be converted, so the model cannot use it. A reported unit could not be converted (Q and Q), so that value has no SI equivalent. None of the extracted parameters is metamizole sodium's own; they describe 4-methylaminoantipyrine, 4-aminoantipyrine, 4-acetylaminoantipyrine and 4-formylaminoantipyrine. Extracted — 4-methylaminoantipyrine: kabs 2.53 1/h, V1/F 71.2 L, Q 0.03 n = 8, kfm 0.006 1/h, kel 0.178 1/h, t1/2z 0.36 h; 4-aminoantipyrine: V1/F 35.6 L, Q 0.552 n = 8, kfm 0.033 1/h, kel 0.008 1/h, t1/2z 2.39 h; 4-acetylaminoantipyrine: V1/F 55.1 L, kel 0.074 1/h, t1/2z 10.3 h; 4-formylaminoantipyrine: V1/F 11.5 L, kel 0.567 1/h, t1/2z 6.95 h.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which molecule was measured: this record has 4-methylaminoantipyrine, the second reading 4-MAA; it also differs on 29 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which molecule was measured: this record has 4-methylaminoantipyrine, the second reading 4-MAA; it also differs on 34 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -108,32 +108,37 @@ first reading `qwen3.8-27b` — the numbers on this page are its, whatever the r
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.062 (2/32 fields) | 30 |
+| `gpt-oss-120b` | not confirmed | 0.054 (2/37 fields) | 35 |
 | `gpt-oss:120b` | not confirmed | 0.028 (1/36 fields) | 35 |
 
-<details><summary>65 field(s) a reader read differently</summary>
+<details><summary>70 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss-120b` | `model.links` | [['metamizole', '4-methylaminoantipyrine', 'metabolism'], ['4-methylaminoantipyrine', '4-aminoantipyrine', 'metabolism'], ['4-aminoantipyrine', '4-methylaminoantipyrine', 'interconversion'], ['4-aminoantipyrine', '4-acetylaminoantipyrine', 'metabolism'], ['4-aminoantipyrine', '4-formylaminoantipyrine', 'metabolism']] | [] | mismatch |
+| `gpt-oss-120b` | `model.links` | [['metamizole', '4-methylaminoantipyrine', 'metabolism'], ['4-methylaminoantipyrine', '4-aminoantipyrine', 'metabolism'], ['4-aminoantipyrine', '4-methylaminoantipyrine', 'interconversion'], ['4-aminoantipyrine', '4-acetylaminoantipyrine', 'metabolism'], ['4-aminoantipyrine', '4-formylaminoantipyrine', 'metabolism']] | [['metamizole', '4-maa', 'metabolism'], ['4-maa', '4-aa', 'metabolism'], ['4-aa', '4-faa', 'interconversion'], ['4-aa', '4-aaa', 'interconversion']] | mismatch |
 | `gpt-oss-120b` | `parameters[k10]` | not captured | 0.178 | only_one_extracted |
 | `gpt-oss-120b` | `parameters[k10]` | 0.178 | not captured | only_one_extracted |
 | `gpt-oss-120b` | `parameters[k12]` | not captured | 0.030 | only_one_extracted |
 | `gpt-oss-120b` | `parameters[k12]` | 0.030 | not captured | only_one_extracted |
 | `gpt-oss-120b` | `parameters[k14]` | not captured | 0.006 | only_one_extracted |
 | `gpt-oss-120b` | `parameters[k14]` | 0.006 | not captured | only_one_extracted |
-| `gpt-oss-120b` | `parameters[k20]` | not captured | 0.008 | only_one_extracted |
 | `gpt-oss-120b` | `parameters[k20]` | 0.008 | not captured | only_one_extracted |
 | `gpt-oss-120b` | `parameters[k23]` | not captured | 0.552 | only_one_extracted |
 | `gpt-oss-120b` | `parameters[k23]` | 0.552 | not captured | only_one_extracted |
 | `gpt-oss-120b` | `parameters[k24]` | 0.033 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[k30]` | not captured | 0.074 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[k40]` | not captured | 0.567 | only_one_extracted |
 | `gpt-oss-120b` | `parameters[k40]` | 0.567 | not captured | only_one_extracted |
 | `gpt-oss-120b` | `parameters[ka]` | not captured | 2.528 | only_one_extracted |
 | `gpt-oss-120b` | `parameters[ka]` | 2.528 | not captured | only_one_extracted |
 | `gpt-oss-120b` | `parameters[ke0]` | 0.012 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[t1/2 4-aa]` | not captured | 2.39 | only_one_extracted |
 | `gpt-oss-120b` | `parameters[t1/2 4-aa]` | 2.39 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[t1/2 4-aaa]` | not captured | 10.33 | only_one_extracted |
 | `gpt-oss-120b` | `parameters[t1/2 4-aaa]` | 10.33 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[t1/2 4-faa]` | not captured | 6.95 | only_one_extracted |
 | `gpt-oss-120b` | `parameters[t1/2 4-faa]` | 6.95 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[t1/2 4-maa]` | not captured | 3.43 | only_one_extracted |
 | `gpt-oss-120b` | `parameters[t1/2 k01]` | not captured | 0.36 | only_one_extracted |
 | `gpt-oss-120b` | `parameters[t1/2 k01]` | 0.36 | not captured | only_one_extracted |
 | `gpt-oss-120b` | `parameters[v1/f]` | not captured | 71.2 | only_one_extracted |

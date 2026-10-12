@@ -4,7 +4,7 @@
 
 # lithium chloride — `LithiumChloride_Martin2018_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.125). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">horse</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.8). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">horse</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -22,7 +22,7 @@
 
 The record for lithium in healthy adult horses, built from the abstract of Martin_2018 alone, reports C0 as 2.19 mmol/L while AUClast is given as 550 h*ng/mL; these concentration units do not match, producing a dimension mismatch on a structural parameter. The remaining parameters (t1/2z 25.68 h, CL 0.273 mL/min/kg, MRT 31.22 h, Vss 511 mL/kg) are internally consistent, but the abstract-only source means summary statistics stood in for a fitted model. Extracted — lithium chloride: C0 2.19 mmol/L, t1/2z 25.7 h, AUClast 550 h*ng/mL, CL 0.273 mL/min/kg, MRT 31.2 h, Vss 511 mL/kg.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has lithium chloride, the second reading unknown; it also differs on 13 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has lithium chloride, the second reading lithium_chloride; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by glm-5.3-flash</sub>
 
@@ -80,26 +80,14 @@ first reading `glm-5.3-flash` — the numbers on this page are its, whatever the
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.125 (2/16 fields) | 14 |
+| `gpt-oss-120b` | not confirmed | 0.8 (8/10 fields) | 2 |
 
-<details><summary>14 field(s) a reader read differently</summary>
+<details><summary>2 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss-120b` | `parameters[area under the plasma concentration-time curve from time zero to the limit of quantification]` | 550 | not captured | only_one_extracted |
-| `gpt-oss-120b` | `parameters[area under the plasma concentration-time curve from time zero to the limit of quantification]` | not captured | 550 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[clearance]` | 0.273 | not captured | only_one_extracted |
-| `gpt-oss-120b` | `parameters[clearance]` | not captured | 0.273 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[mean residence time]` | 31.22 | not captured | only_one_extracted |
-| `gpt-oss-120b` | `parameters[mean residence time]` | not captured | 31.22 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[plasma li+ concentration at time zero]` | 2.19 | not captured | only_one_extracted |
-| `gpt-oss-120b` | `parameters[plasma li+ concentration at time zero]` | not captured | 2.19 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[terminal elimination half-life]` | 25.68 | not captured | only_one_extracted |
-| `gpt-oss-120b` | `parameters[terminal elimination half-life]` | not captured | 25.68 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[volume of distribution at steady state]` | 511 | not captured | only_one_extracted |
-| `gpt-oss-120b` | `parameters[volume of distribution at steady state]` | not captured | 511 | only_one_extracted |
-| `gpt-oss-120b` | `screen.dose_compound` | lithium chloride | unknown | mismatch |
-| `gpt-oss-120b` | `screen.primary_analyte` | lithium | unknown | mismatch |
+| `gpt-oss-120b` | `model.links` | [] | [['lithium_chloride', 'lithium', 'interconversion']] | mismatch |
+| `gpt-oss-120b` | `screen.dose_compound` | lithium chloride | lithium_chloride | mismatch |
 
 </details>
 

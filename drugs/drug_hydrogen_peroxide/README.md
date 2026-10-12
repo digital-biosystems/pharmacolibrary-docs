@@ -1,21 +1,50 @@
-<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;hydrogen_peroxide&quot;}]"></div>
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A01A&quot;,&quot;href&quot;:&quot;atc/A01A.md&quot;},{&quot;label&quot;:&quot;hydrogen peroxide&quot;}]"></div>
 
-# hydrogen_peroxide
+# hydrogen peroxide
 
-- **generic name:** not captured
-- **ATC codes:** not captured
-- **DrugBank:** not captured · **PubChem:** not captured
-- **groups:** not captured
+- **generic name:** hydrogen peroxide
+- **ATC codes:** `A01AB02`, `D08AX01`, `D11AX25`, `S02AA06`
+- **DrugBank:** [DB11091](https://go.drugbank.com/drugs/DB11091) · **PubChem:** [CID 784](https://pubchem.ncbi.nlm.nih.gov/compound/784)
+- **molar mass:** 34.0147 g/mol (H2O2) — DrugBank
+- **groups:** approved, investigational, vet_approved
+
+## About
+
+Hydrogen peroxide is an antiseptic used to disinfect wounds and skin, treat mouth and ear infections, and remove seborrheic keratoses. It is widely available as an approved medicine for human use and is also approved for veterinary use, with some investigational applications.
+
+<small>Summary written by `glm-5.3-flash` from [Wikidata Q171877](https://www.wikidata.org/wiki/Q171877) and the WHO ATC classification; not checked by a person.</small>
 
 ## Extraction summary
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| not captured | not captured | 0/0/0 | 0/0/0 | 0/0/0 | not captured | not captured | 0 | 0/0 | 0/0 | 0 |
+| 2026-10-07 19:20 | 5:53 | 0/0/0 | 5/0/1 | 0/0/0 | 816,210/17,290 | einfracz / qwen3.8-27b | 77 | 19/85 | 73/4 | 0 |
 
 ## popPK records
 
 _not available_
+
+## Pharmacodynamics (PD)
+
+| status | detail | about | model | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:gpt-oss-120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">in vitro</span> | [Bundschuh_1995_formazan_production_capacity](drugs/drug_hydrogen_peroxide/pd_Bundschuh_1995_formazan_production_capacity.md) | formazan production capacity ← hydrogen_peroxide · direct sigmoid Emax (Hill) effect | — | Bundschuh DS et al., Isolation and characterization of rat p…, In vitro cellular & develop… (1995) | [10.1007/BF02634089](https://doi.org/10.1007/BF02634089) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.8). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">in vitro</span> | [Hedges_2020_melanogenesis_rate](drugs/drug_hydrogen_peroxide/pd_Hedges_2020_melanogenesis_rate.md) | melanogenesis rate ← hydrogen_peroxide · direct Emax (saturable) effect | — | Hedges DM et al., Spontaneous Formation of Melanin from D…, Antioxidants (Basel, Switze… (2020) | [10.3390/antiox9121285](https://doi.org/10.3390/antiox9121285) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.833). The first reading is what the record holds.">cross-check: disputed</span> | [Hornberger_1989_aggregation](drugs/drug_hydrogen_peroxide/pd_Hornberger_1989_aggregation.md) | aggregation biomarker turnover ← Hydrogen Peroxide | — | Hornberger W et al., Hydrogen peroxide and methyl mercury ar…, Journal of clinical chemist… (1989) | [10.1515/cclm.1989.27.9.567](https://doi.org/10.1515/cclm.1989.27.9.567) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.833). The first reading is what the record holds.">cross-check: disputed</span> | [Hornberger_1989_shape_change](drugs/drug_hydrogen_peroxide/pd_Hornberger_1989_shape_change.md) | shape change biomarker turnover ← Hydrogen Peroxide | — | Hornberger W et al., Hydrogen peroxide and methyl mercury ar…, Journal of clinical chemist… (1989) | [10.1515/cclm.1989.27.9.567](https://doi.org/10.1515/cclm.1989.27.9.567) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:gpt-oss-120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Minhas_1995_TC50](drugs/drug_hydrogen_peroxide/pd_Minhas_1995_TC50.md) | cytotoxicity ← hydrogen_peroxide · inhibition effect | — | Minhas HS et al., Reduced glutathione esters--antidotes t…, Journal of biochemical toxi… (1995) | [10.1002/jbt.2570100504](https://doi.org/10.1002/jbt.2570100504) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by einfracz:gpt-oss-120b (not confirmed, agreement 0.2). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by qwen3.8:27b-mtp-q8_0, p(non-human) 1.00).">in vitro</span> | [Zhong_2021_Arylsulfatase](drugs/drug_hydrogen_peroxide/pd_Zhong_2021_Arylsulfatase.md) | Arylsulfatase biomarker turnover ← hydrogen_peroxide | — | Zhong SS et al., Inhibition Properties of Arylsulfatase…, ACS omega (2021) | [10.1021/acsomega.0c06060](https://doi.org/10.1021/acsomega.0c06060) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:gpt-oss-120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Data from bacteria, fungi or plants, not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">other organism</span> | [Giannuzzi_2021_cpf_dead](drugs/drug_hydrogen_peroxide/pd_Giannuzzi_2021_cpf_dead.md) | cumulative probability of cell death ← hydrogen_peroxide · categorical (graded) response model | — | Giannuzzi L et al., A Stochastic Characterization of Hydrog…, Frontiers in microbiology (2021) | [10.3389/fmicb.2021.636157](https://doi.org/10.3389/fmicb.2021.636157) |
+
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=hydrogen_peroxide) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| metabolism | blood | <sub>named in DrugBank's ADME text</sub> | prose |
+
+<sub>Actors without a tissue in the table: ALPG (inhibitor), CAT (substrate), GPX1 (substrate), PTPN1 (inhibitor).</sub>
 
 <details class="legend">
 <summary>Badge legend — what each badge means</summary>
@@ -25,10 +54,287 @@ _not available_
 
 ## Coverage
 
-- **PubMed hits:** 0 matched, 0 returned
+- **PubMed hits:** 2212 matched, 233 returned
 - **screened:** 0  ·  **relevant:** 0
 - **records:** 0  ·  extracted 0  ·  needs_review 0  ·  rejected 0  ·  stale 0
-- **scholar-agent fallback query used:** not captured
+- **scholar-agent fallback query used:** True
+
+## Full text wanted
+
+_12 paper(s) judged relevant from the abstract, with no full text on disk — paywalled, or the resolver could not reach them. Follow the DOI, then save the PDF into `papers/` as `&lt;save as&gt;.pdf` and re-run the extraction._
+
+| save as | citation | domain | score | DOI | PubMed | why wanted |
+|---|---|---|---|---|---|---|
+| `Asnicar_2026.pdf` | Asnicar D et al., Anti-sea lice products azamethiphos and…, Comparative biochemistry an… (2026) | pd | 5 | [10.1016/j.cbpc.2025.110392](https://doi.org/10.1016/j.cbpc.2025.110392) | [41241283](https://www.ncbi.nlm.nih.gov/pubmed/41241283) | metadata signals extractable PD data (EC50) |
+| `Marín_2018.pdf` | Marín SL et al., Response of Caligus rogercresseyi (Boxs…, Journal of fish diseases (2018) | pd | 5 | [10.1111/jfd.12691](https://doi.org/10.1111/jfd.12691) | [28921553](https://www.ncbi.nlm.nih.gov/pubmed/28921553) | metadata signals extractable PD data (EC50) |
+| `Pawłowska_2016.pdf` | Pawłowska B et al., Evaluation of the effect of tetraethyla…, Chemosphere (2016) | pd | 5 | [10.1016/j.chemosphere.2016.01.072](https://doi.org/10.1016/j.chemosphere.2016.01.072) | [26844662](https://www.ncbi.nlm.nih.gov/pubmed/26844662) | metadata signals extractable PD data (EC50) |
+| `VanIderstine_2021.pdf` | VanIderstine CR et al., Hydrogen peroxide treatment and its imp…, Journal of fish diseases (2021) | pd | 5 | [10.1111/jfd.13299](https://doi.org/10.1111/jfd.13299) | [33146907](https://www.ncbi.nlm.nih.gov/pubmed/33146907) | metadata signals extractable PD data (EC50) |
+| `Yisa_2023.pdf` | Yisa AG et al., Immobilization, oxidative stress and an…, Environmental toxicology an… (2023) | pd | 5 | [10.1016/j.etap.2023.104078](https://doi.org/10.1016/j.etap.2023.104078) | [36740085](https://www.ncbi.nlm.nih.gov/pubmed/36740085) | metadata signals extractable PD data (EC50) |
+| `Chhetri_2019.pdf` | Chhetri RK et al., Acute toxicity and risk evaluation of t…, The Science of the total en… (2019) | pd | 4 | [10.1016/j.scitotenv.2019.04.350](https://doi.org/10.1016/j.scitotenv.2019.04.350) | [31051379](https://www.ncbi.nlm.nih.gov/pubmed/31051379) | metadata signals extractable PD data (EC50) |
+| `Favero_1995.pdf` | Favero TG et al., Hydrogen peroxide stimulates the Ca2+ r…, The Journal of biological c… (1995) | pd | 4 | [10.1074/jbc.270.43.25557](https://doi.org/10.1074/jbc.270.43.25557) | [7592726](https://www.ncbi.nlm.nih.gov/pubmed/7592726) | metadata signals extractable PD data (EC50) |
+| `Luque_2023.pdf` | Luque JV et al., Effect of hydrogen peroxide-based bleac…, The International journal o… (2023) | pd | 4 | [10.11607/ijp.8359](https://doi.org/10.11607/ijp.8359) | [37273183](https://www.ncbi.nlm.nih.gov/pubmed/37273183) | metadata signals extractable PD data (Emax) |
+| `Luque_2024.pdf` | Luque JV et al., Effect of Hydrogen Peroxide-Based Bleac…, The International journal o… (2024) | pd | 4 | [10.11607/ijp.8539](https://doi.org/10.11607/ijp.8539) | [39331580](https://www.ncbi.nlm.nih.gov/pubmed/39331580) | metadata signals extractable PD data (Emax) |
+| `Nakamaru_1994.pdf` | Nakamaru K et al., [Effect of mesalazine, an agent for the…, Nihon yakurigaku zasshi. Fo… (1994) | pd | 4 | [10.1254/fpj.104.447](https://doi.org/10.1254/fpj.104.447) | [7851818](https://www.ncbi.nlm.nih.gov/pubmed/7851818) | metadata signals extractable PD data (IC50) |
+| `Pandareesh_2016.pdf` | Pandareesh MD et al., Cytoprotective propensity of Bacopa mon…, Cytotechnology (2016) | pd | 4 | [10.1007/s10616-014-9767-3](https://doi.org/10.1007/s10616-014-9767-3) | [25062987](https://www.ncbi.nlm.nih.gov/pubmed/25062987) | metadata signals extractable PD data (IC50) |
+| `Sonntag_2019.pdf` | Sonntag Y et al., Identification and characterization of…, The Journal of biological c… (2019) | pd | 4 | [10.1074/jbc.RA118.006083](https://doi.org/10.1074/jbc.RA118.006083) | [30862673](https://www.ncbi.nlm.nih.gov/pubmed/30862673) | metadata signals extractable PD data (IC50) |
+
+<sub>queue written 2026-10-07T19:17:57.601522+00:00</sub>
+
+## Screened and excluded
+
+| domain | paper | verdict | relevance | extractability | reason |
+|---|---|---|---|---|---|
+| PGx | Ahmad_2020 | not_relevant | 0 | 0 | The study investigates plant physiology (Vicia faba) and the effects of arsenic/nitric oxide, not human pharmacogenomics or the pharmacokinetics of hydrogen peroxide as a drug. |
+| popPK | Ahn_2023 | irrelevant | 0 | 0 | This paper is a materials science study on the synthesis of alginate capsules using hydrogen peroxide as a chemical stimulus for degradation, not a pharmacokinetic study. |
+| PGx | Albogami_2021 | not_relevant | 0 | 0 | The paper analyzes gene expression changes in breast cancer tissues following chemotherapy, not the pharmacogenetics of hydrogen peroxide. |
+| popPK | Alsaikhan_2026 | irrelevant | 0 | 0 | This is a systematic review on nanomedicine and phototherapy for cancer, with no pharmacokinetic data for hydrogen peroxide. |
+| PD | Alsaikhan_2026 | not_relevant | 0 | 0 | The paper is a systematic review of nanomedicine phototherapy materials and mechanisms, containing no specific pharmacodynamic or exposure-response data for hydrogen peroxide. |
+| popPK | An_2026 | irrelevant | 0 | 0 | The paper discusses the role of RB1 in hepatocellular carcinoma and drug screening for cancer, with no mention of hydrogen peroxide or pharmacokinetic parameters. |
+| PD | An_2026 | not_relevant | 0 | 0 | The paper focuses on RB1 loss in HCC and screening for synthetic lethal targets (AURKA, KSP, PLK1, PARP inhibitors); it does not report any pharmacodynamic or exposure-response data for hydrogen peroxide. |
+| popPK | Anwar_2022 | irrelevant | 0 | 0 | The study focuses on the in vitro antioxidant properties of Ajwa date extracts against hydrogen peroxide, rather than the pharmacokinetics of hydrogen peroxide as a drug. |
+| PD | Anwar_2022 | not_relevant | 0 | 0 | The paper reports in vitro antioxidant activity of plant extracts (including H2O2 scavenging) but does not report a pharmacodynamic model or exposure-response relationship for hydrogen peroxide as a drug. |
+| popPK | Asnicar_2026 | irrelevant | 0 | 0 | no_text gate: only 98 chars of text extracted (&lt; 400) |
+| popPK | Babbs_1990 | irrelevant | 0 | 0 | The paper is a computational simulation of chemical kinetics (lipid peroxidation) and does not report pharmacokinetic disposition parameters for hydrogen peroxide as a dosed drug. |
+| PGx | Bachmann_2018 | not_relevant | 0 | 0 | The paper investigates enzymatic demethylation (PK) of metamizole by CYPs and MPO but does not report pharmacogenomic effects (gene variants/genotypes) on these parameters. |
+| popPK | Bae_2026 | irrelevant | 0 | 0 | The study analyzes the pharmacokinetics of MIT-001, a ferroptosis inhibitor, not hydrogen_peroxide. |
+| PD | Bae_2026 | not_relevant | 0 | 0 | The paper reports a population pharmacokinetic (PK) model for MIT-001, not hydrogen peroxide, and does not provide any pharmacodynamic (PD) or exposure-response parameters. |
+| PGx | Bann_2019 | not_relevant | 0 | 0 | The study investigates the genetic basis of thyroid cancer risk and hydrogen peroxide metabolism as a disease mechanism, not the pharmacokinetics or pharmacodynamics of exogenous hydrogen peroxide administration. |
+| PGx | Bayliak_2015 | not_relevant | 0 | 0 | The paper investigates the protective effects of alpha-ketoglutarate against toxicity in Drosophila and does not report any gene variants or pharmacogenomic effects on the PK/PD of hydrogen peroxide. |
+| PGx | Bharti_2019 | not_relevant | 0 | 0 | The paper studies salt stress tolerance in chickpea plants, not human pharmacogenomics, and H2O2 is an endogenous ROS, not a drug. |
+| popPK | Biczak_2020 | irrelevant | 0 | 0 | The paper is a botanical study on cucumber phytotoxicity where hydrogen peroxide is only measured as a biomarker of oxidative stress, not as a subject drug with pharmacokinetic parameters. |
+| PD | Biczak_2020 | not_relevant | 0 | 0 | The paper studies the phytotoxicity of ionic liquids on cucumber seedlings; hydrogen peroxide is only mentioned as a biomarker of oxidative stress, not as a drug with a pharmacodynamic exposure-response relationship. |
+| popPK | Biju_2026 | irrelevant | 0 | 0 | The paper is a review on bacterial endophytic metabolites and does not contain pharmacokinetic data for hydrogen peroxide. |
+| PD | Biju_2026 | not_relevant | 0 | 0 | The paper is a review on bacterial endophytic metabolites and does not report any pharmacodynamic or exposure-response data for hydrogen peroxide. |
+| popPK | Bundschuh_1995 | irrelevant | 0 | 0 | The study is an in vitro cytotoxicity assay measuring cell viability (MTT/LDH), not a pharmacokinetic study reporting disposition parameters for hydrogen peroxide. |
+| PGx | Butler_1988 | not_relevant | 0 | 0 | The paper describes genetic differences in endogenous metabolic enzymes (Acyl-CoA oxidase, Catalase) between mouse strains, which is a basic biology study and does not report the effect of a drug on a pharmacokinetic or pharmacodynamic parameter. |
+| PD | Calabrese_2022 | not_relevant | 1 | 0 | The text is a qualitative review summary of hormetic dose responses in stem cells and does not provide specific numeric PD parameters or extractable concentration-effect curves for hydrogen peroxide. |
+| popPK | Cameron_2023 | irrelevant | 0 | 0 | The study evaluates hydrogen peroxide as a topical antiseptic for surgical site healing in fish and does not report any pharmacokinetic parameters. |
+| popPK | Castelli_2025 | irrelevant | 0 | 0 | The paper investigates the anti-aging effects of a saffron extract in an in vitro model and does not contain pharmacokinetic data for hydrogen peroxide. |
+| PD | Castelli_2025 | not_relevant | 0 | 0 | The paper investigates the anti-aging effects of a saffron extract, not hydrogen peroxide, and does not report pharmacodynamic parameters for H2O2. |
+| PD | Chalmers_2018 | not_relevant | 2 | 1 | The study mentions a dose-response test to select a single exposure dose (1800 ppm) but reports only qualitative comparisons of gene expression and physiological markers between ploidy groups at that single dose, without providing numeric PD parameters or a concentration-effect curve. |
+| popPK | Chen_2021 | irrelevant | 0 | 0 | The study investigates the biochemical activities of fucoidan (a polysaccharide), using hydrogen peroxide merely as a reagent for hydrolysis, not as the subject drug. |
+| popPK | Chen_2026 | irrelevant | 0 | 0 | The paper is a mechanistic in vitro study on TRP channel activation by H2O2, reporting no pharmacokinetic parameters. |
+| PGx | Chen_2026_2 | not_relevant | 0 | 0 | The paper reports plant biology effects of glutathione on somatic embryogenesis and hydrogen peroxide levels, not a pharmacogenomic effect on the pharmacokinetics or pharmacodynamics of the drug hydrogen_peroxide in humans or animals. |
+| PGx | Cheng_2009 | not_relevant | 0 | 0 | The paper investigates the toxicity of acetaminophen (APAP), not hydrogen peroxide, and does not report pharmacogenomic effects on the PK/PD of hydrogen peroxide. |
+| popPK | Chhetri_2019 | irrelevant | 0 | 0 | no_text gate: only 161 chars of text extracted (&lt; 400) |
+| PD | Chhetri_2019 | not_relevant | 0 | 0 | The paper focuses on acute toxicity and risk evaluation of disinfectants, likely reporting LD50 or NOAEL values rather than a pharmacodynamic exposure-response model with parameters like Emax or EC50 for hydrogen peroxide. |
+| PGx | Chuesaard_2023 | not_relevant | 0 | 0 | The study is a plant science experiment on rice seed germination, not a pharmacogenomic study in humans or animals involving a drug. |
+| popPK | Conner_2024 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of DUOX1 enzyme kinetics and hydrogen peroxide synthesis rates, not a pharmacokinetic study of hydrogen peroxide disposition in a biological system. |
+| popPK | Cooney_1999 | irrelevant | 0 | 0 | The paper focuses on hyaluronic acid fermentation by bacteria and mentions hydrogen peroxide only as an inhibitory metabolite in the biological process, not as a subject of pharmacokinetic analysis. |
+| popPK | Cortassa_2017 | irrelevant | 0 | 0 | The paper is a mechanistic study of mitochondrial respiration and ROS emission in guinea pigs, treating hydrogen peroxide as a measured byproduct of metabolism rather than the subject drug for pharmacokinetic analysis. |
+| popPK | Cuevas_2026 | irrelevant | 0 | 0 | The study investigates the pharmacological effects of delphinidin-3-glucoside on glioblastoma cells and mice, and mentions hydrogen peroxide only as a reagent for blocking endogenous peroxidase in immunohistochemistry, not as a subject drug for PK analysis. |
+| PGx | Damiani_1980 | not_relevant | 0 | 0 | The paper describes genetic variants in macrophages that affect the endogenous production of hydrogen peroxide as part of immune metabolism, not the pharmacokinetics or pharmacodynamics of hydrogen peroxide as an administered therapeutic drug. |
+| PGx | Danes_2024 | not_relevant | 0 | 0 | The study investigates the toxicological effects of a pesticide on chick embryos, focusing on induced changes in enzyme expression and oxidative stress, but does not report any pharmacogenomic analysis linking specific human or animal gene variants to altered pharmacokinetics or pharmacodynamics of hydrogen peroxide. |
+| PGx | Das_2025 | not_relevant | 0 | 0 | The paper studies plant physiology and aluminum toxicity mitigation in rice, not human pharmacogenomics. |
+| PGx | Deichman_1988 | not_relevant | 0 | 0 | The paper discusses host resistance mechanisms and tumor cell biology (PGE secretion, H2O2 catabolism) but does not report pharmacogenomic effects on pharmacokinetic or pharmacodynamic parameters. |
+| popPK | Dershwitz_1985 | irrelevant | 0 | 0 | The study investigates the mechanism of nitrofurantoin toxicity in vitro, using hydrogen peroxide only as a measured byproduct of oxidative stress, not as a subject drug for pharmacokinetic analysis. |
+| PGx | Ding_2022 | not_relevant | 0 | 0 | The paper describes a nanomedicine system for cancer therapy and does not report any pharmacogenomic or pharmacokinetic/pharmacodynamic effects. |
+| popPK | Dinu_2025 | irrelevant | 0 | 0 | The paper is a review of sulfonamides and antioxidants for diabetes and does not report pharmacokinetic parameters for hydrogen peroxide. |
+| PD | Dinu_2025 | not_relevant | 0 | 0 | The paper is a review of sulfonamides and antioxidants for diabetes and does not report any pharmacodynamic or exposure-response data for hydrogen peroxide. |
+| popPK | Drábková_2007 | irrelevant | 0 | 0 | This is an ecotoxicology study testing the toxicity of hydrogen peroxide to algae and cyanobacteria, not a pharmacokinetic study of the drug's disposition. |
+| PD | ERLANGER_1961 | not_relevant | 0 | 0 | The provided text is only a title and does not contain the full text, data, or numeric parameters required to assess pharmacodynamic relationships. |
+| popPK | El_2024 | irrelevant | 0 | 0 | The study analyzes essential oils using hydrogen peroxide as a reagent for antioxidant assays, not as a drug for pharmacokinetic evaluation. |
+| PD | El_2024 | not_relevant | 0 | 0 | The paper reports in vitro antioxidant activity (IC50) of essential oils against hydrogen peroxide, which is a chemical scavenging assay, not a pharmacodynamic exposure-response relationship for hydrogen peroxide as a drug. |
+| popPK | Farshad_2026 | irrelevant | 0 | 0 | The paper studies the effects of MitoQ on canine sperm quality, where hydrogen peroxide is only measured as a marker of oxidative stress, not as a drug subject to PK analysis. |
+| popPK | Favero_1995 | irrelevant | 0 | 0 | no_text gate: only 97 chars of text extracted (&lt; 400) |
+| popPK | Fels_1987 | irrelevant | 0 | 0 | The paper measures H2O2 release as a marker of cellular activation in macrophages, not the pharmacokinetic disposition of hydrogen peroxide as a drug. |
+| PD | Fernando_2022 | not_relevant | 0 | 0 | The study investigates the antioxidant effects of a plant extract (Sasa borealis) on H2O2-induced stress, not the pharmacodynamics of hydrogen peroxide itself. |
+| popPK | Fukuzumi_2012 | irrelevant | 0 | 0 | The paper is a review on the electrocatalytic production and energy applications of hydrogen peroxide, containing no pharmacokinetic or disposition data. |
+| popPK | Fukuzumi_2016 | irrelevant | 0 | 0 | The paper discusses the artificial photocatalytic production of hydrogen peroxide as a fuel, not its pharmacokinetics in biological systems. |
+| popPK | Fukuzumi_2017 | irrelevant | 0 | 0 | The paper is a review on fuel production from seawater and does not contain pharmacokinetic data for hydrogen peroxide. |
+| popPK | Fukuzumi_2018 | irrelevant | 0 | 0 | The paper discusses the chemical synthesis and production of hydrogen peroxide, not its pharmacokinetics. |
+| PD | Gajurel_2021 | not_relevant | 0 | 0 | The paper reports the antioxidant activity of peanut extracts (IC50 for the extract mixture) and uses hydrogen peroxide only as an elicitor for plant culture, not as the drug subject of a pharmacodynamic or exposure-response analysis. |
+| popPK | Galli_2008 | irrelevant | 0 | 0 | The paper is a mechanistic study on MAPK signal transduction and cysteine oxidation by hydrogen peroxide in tumor cells, not a pharmacokinetic study reporting disposition parameters like clearance or volume for hydrogen peroxide itself. |
+| popPK | Galli_2025 | irrelevant | 0 | 0 | The paper describes the development of a sheep intestinal organoid model for veterinary applications and does not investigate the pharmacokinetics of hydrogen peroxide. |
+| PD | Galli_2025 | not_relevant | 0 | 0 | The paper reports dose-response curves for anthelmintic compounds (tolfenpyrad, octenidine, chalcone), but hydrogen peroxide is used only as a qualitative death control (0.03% v/v) without any associated numeric PD parameters or effect-response analysis. |
+| PGx | Gallin_1991 | not_relevant | 1 | 2 | The paper describes the therapeutic efficacy of interferon-gamma on a disease phenotype (bactericidal activity) in patients with specific genetic defects, rather than reporting how a genotype alters the PK or PD parameters of hydrogen peroxide itself. |
+| PGx | Gardiner_2018 | not_relevant | 0 | 0 | The paper investigates the effect of Huntington disease bioenergetics on ATP levels following a hydrogen peroxide challenge, but hydrogen peroxide is used as an experimental stressor, not a drug, and no pharmacokinetic/pharmacodynamic parameters for it are analyzed. |
+| PGx | Garrido_2021 | not_relevant | 0 | 0 | The paper investigates the enzymatic inactivation of the gene product AOX1 by its metabolic byproducts (H2O2/superoxide), rather than reporting how genetic variants alter the pharmacokinetics or pharmacodynamics of exogenous hydrogen peroxide. |
+| popPK | Giannuzzi_2021 | irrelevant | 0 | 0 | The paper studies the toxicological effects of hydrogen peroxide on cyanobacteria (Microcystis aeruginosa) using dose-response models (EC50) rather than measuring pharmacokinetic parameters like clearance or volume for hydrogen peroxide itself. |
+| PGx | Grifantini_2011 | not_relevant | 0 | 0 | The paper investigates bacterial transcriptomics and peroxide response regulators in Streptococcus, not pharmacogenomic effects on human pharmacokinetics or pharmacodynamics. |
+| popPK | Gu_2026 | irrelevant | 0 | 0 | The study investigates LOXL4-driven ECM stiffening and T cell function in lung cancer using mouse models and acetyldigoxin, with no mention of hydrogen peroxide pharmacokinetics. |
+| PD | Gu_2026 | not_relevant | 0 | 0 | The paper investigates the mechanism of action of acetyldigoxin as a LOXL4 inhibitor and its effect on T cell function, but it does not report any pharmacodynamic (PD) or exposure-response relationship for hydrogen peroxide. |
+| popPK | Guerreiro_2021 | irrelevant | 0 | 0 | The paper studies the antioxidant activity of FucoPol using hydrogen peroxide (H2O2) as a stressor agent in vitro, not the pharmacokinetics of hydrogen peroxide itself. |
+| popPK | Guinea_2008 | irrelevant | 0 | 0 | The paper studies the electrochemical degradation of salicylic acid using hydrogen peroxide as a reactant/oxidant, not the pharmacokinetics of hydrogen peroxide in a biological system. |
+| PGx | Gómez-Tabales_2020 | not_relevant | 0 | 0 | The paper studies the effect of the protein level of cytochrome b5 (using antibodies and recombinant protein) on H2O2 production, but it does not report a pharmacogenomic effect (association between a genetic variant/genotype and the parameter). |
+| popPK | Hamilton_2025 | irrelevant | 0 | 0 | The paper is a systematic review of sanitizer efficacy against bacterial biofilms, not a pharmacokinetic study, and reports no disposition parameters for hydrogen peroxide. |
+| PGx | Hartz_2021 | not_relevant | 0 | 0 | The paper investigates the evolutionary properties of CYP11A1 enzymes and their stability to oxidative stress, but does not report on drug pharmacokinetics or pharmacodynamics. |
+| popPK | Hashimoto_2024 | irrelevant | 0 | 0 | The paper describes the electrocatalytic oxidation of hydrogen peroxide in fuel cells, not pharmacokinetics. |
+| PGx | He_2014 | not_relevant | 0 | 0 | The paper reports a plant physiological response to cadmium and nitric oxide, not a pharmacogenomic effect on the PK/PD of hydrogen peroxide. |
+| popPK | Hedges_2020 | irrelevant | 0 | 0 | The study is an in-vitro/ex-vivo mechanistic investigation of dopamine melanogenesis where hydrogen peroxide is used as a pro-oxidant agent, not as a subject drug for pharmacokinetic analysis. |
+| PGx | Hinojosa_2019 | not_relevant | 0 | 0 | The paper investigates plant physiology (quinoa) under abiotic stress, not human pharmacogenomics or drug metabolism. |
+| popPK | Hornberger_1989 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of hydrogen peroxide's effect on platelet eicosanoid release, not a pharmacokinetic study of hydrogen peroxide disposition. |
+| popPK | Huang_2021 | irrelevant | 0 | 0 | The study is an in vitro investigation of antioxidant effects of a plant extract on cells exposed to hydrogen peroxide, not a pharmacokinetic study of hydrogen peroxide. |
+| popPK | Hulsmann_1994 | irrelevant | 0 | 0 | The study investigates the effect of hydrogen peroxide on airway responsiveness in vitro, which is a pharmacodynamic/mechanistic study, not a pharmacokinetic study reporting disposition parameters like clearance or volume. |
+| popPK | Jach_2026 | irrelevant | 0 | 0 | This paper is a narrative review on probiotics and plant bioactives, with no content regarding the pharmacokinetics of hydrogen peroxide. |
+| PD | Jach_2026 | not_relevant | 0 | 0 | The paper is a narrative review on probiotic-plant bioactive synergy and does not report any specific pharmacodynamic or exposure-response data for hydrogen peroxide. |
+| popPK | Javor_2017 | irrelevant | 0 | 0 | The study focuses on biofuel cell energy harvesting and NADPH oxidase activity in THP-1 cells, not the pharmacokinetic disposition (clearance, volume, half-life) of hydrogen peroxide as a drug. |
+| PGx | Jin_2022 | not_relevant | 2 | 2 | The paper studies the cellular biology of G6PD variants on oxidative stress resistance and metabolism, not pharmacokinetic or pharmacodynamic parameters of hydrogen peroxide as a drug. |
+| popPK | Kartbayeva_2026 | irrelevant | 0 | 0 | The paper is a review of *Cirsium* species and contains no pharmacokinetic data for hydrogen peroxide. |
+| PD | Kartbayeva_2026 | not_relevant | 0 | 0 | The paper is a review of Cirsium species and does not report any pharmacodynamic or exposure-response data for hydrogen peroxide. |
+| PGx | Kaya_2020 | not_relevant | 0 | 0 | The paper investigates stress responses in maize plants and contains no human pharmacogenomic data or PK/PD parameters for hydrogen peroxide. |
+| PGx | Kaya_2020_2 | not_relevant | 0 | 0 | The paper investigates plant physiology (wheat under cadmium stress) and the role of NO/H2S in antioxidant defense, not human pharmacogenomics of hydrogen peroxide. |
+| PGx | Kaya_2021 | not_relevant | 0 | 0 | The paper investigates plant physiology and cadmium toxicity mitigation, containing no human pharmacogenomics or drug PK/PD data. |
+| PGx | Kean_2019 | not_relevant | 0 | 0 | The paper is a structural biology study of lactate monooxygenase from Mycobacterium smegmatis and does not address pharmacogenomic effects on the PK/PD of hydrogen peroxide. |
+| popPK | Kembro_2013 | irrelevant | 0 | 0 | The paper presents a computational model of mitochondrial energetics and ROS production, not a pharmacokinetic study of hydrogen peroxide as a dosed drug. |
+| popPK | Kian_2026 | irrelevant | 0 | 0 | The paper describes the synthesis of inorganic nanoparticles and contains no pharmacokinetic data for hydrogen peroxide. |
+| PD | Kian_2026 | not_relevant | 0 | 0 | The paper focuses on the synthesis and characterization of inorganic nanoparticles; while hydrogen peroxide is used as a reagent in functional assays (e.g., catalase mimetic activity), no pharmacodynamic exposure-response or dose-response relationship for hydrogen peroxide itself is reported. |
+| popPK | Kikuchi_2021 | irrelevant | 0 | 0 | The study is a microbiological investigation of the role of the OxyR transcription factor in *Capnocytophaga ochracea*, using hydrogen peroxide as an oxidative stress agent, and contains no pharmacokinetic data. |
+| popPK | Koo_2026 | irrelevant | 0 | 0 | The study investigates the effect of honokiol on hearing loss in Sirt3 knockout mice and measures cochlear hydrogen peroxide levels as a biomarker of oxidative stress, but does not perform pharmacokinetic analysis of hydrogen peroxide as a drug. |
+| PGx | Kou_2022 | not_relevant | 0 | 0 | The paper investigates the mechanism by which hydrogen peroxide acts as a signaling molecule to modulate gene expression via AhR, not a pharmacogenomic effect on the PK/PD of hydrogen peroxide itself. |
+| PD | Kramer_1987 | not_relevant | 3 | 2 | The study reports qualitative changes in maximum effect and inhibition percentages after a single fixed dose of H2O2, but does not provide a concentration-response curve or numeric PD parameters (e.g., EC50, Emax) for hydrogen peroxide itself. |
+| PGx | Krüger_2022 | not_relevant | 0 | 0 | The paper is about a genetic expression toolbox in Bacillus subtilis for protein overproduction and does not investigate pharmacokinetics or pharmacodynamics of hydrogen peroxide. |
+| PGx | Kumar_2023 | not_relevant | 0 | 0 | The paper describes proteomic profiles in drug-resistant breast cancer cell lines and mentions hydrogen peroxide signaling pathways as part of the resistance mechanism, but does not report a pharmacogenomic effect on a specific PK or PD parameter of hydrogen peroxide itself. |
+| PD | Lachkar_2021 | not_relevant | 0 | 0 | The paper reports in vitro antioxidant activity (H2O2 scavenging percentage) and enzyme inhibition IC50s for plant extracts, but does not report a pharmacodynamic exposure-response or dose-response relationship for hydrogen peroxide itself. |
+| PGx | Laxa_2019 | not_relevant | 0 | 0 | The paper discusses the biological role of hydrogen peroxide in plant drought tolerance, not the pharmacokinetics or pharmacodynamics of hydrogen peroxide as a pharmaceutical agent or its modulation by human gene variants. |
+| PD | Legas_2021 | not_relevant | 3 | 3 | The paper reports IC50 values for hydrogen peroxide scavenging activity of coffee extracts, which is a chemical antioxidant assay, not a pharmacodynamic (drug effect on biological system) or exposure-response relationship for a drug. |
+| popPK | Li_2025 | irrelevant | 0 | 0 | The paper describes a computational model for drug-efficacy prediction in traditional Chinese medicine and does not report pharmacokinetic parameters for hydrogen peroxide. |
+| PD | Li_2025 | not_relevant | 0 | 0 | The paper focuses on a network-based drug efficacy prediction model (Meta-DEP) and does not report any pharmacodynamic or exposure-response analysis for hydrogen peroxide. |
+| popPK | Lind_2015 | irrelevant | 0 | 0 | The study investigates the effect of hydrogen peroxide on glove permeability to resorcinol, which is an in vitro occupational safety study, not a pharmacokinetic study of hydrogen peroxide. |
+| PGx | Liu_2022 | not_relevant | 0 | 0 | The paper discusses plant physiology and stress tolerance mechanisms, not human pharmacogenomics or drug pharmacokinetics. |
+| popPK | Llonch_2024 | irrelevant | 0 | 0 | The study evaluates hydrogen peroxide as a drinking water disinfectant for cattle, measuring water quality and animal health outcomes rather than pharmacokinetic parameters. |
+| PGx | Luklová_2022 | not_relevant | 0 | 0 | The paper is about plant biology (ROS metabolism in Arabidopsis), not human pharmacogenomics or a drug. |
+| popPK | Luque_2023 | irrelevant | 0 | 0 | no_text gate: only 145 chars of text extracted (&lt; 400) |
+| PD | Luque_2023 | not_relevant | 0 | 0 | The paper investigates the material science effects of hydrogen peroxide on dental restorations (color and roughness), not a pharmacodynamic or exposure-response relationship in a biological system. |
+| popPK | Luque_2024 | irrelevant | 0 | 0 | no_text gate: only 145 chars of text extracted (&lt; 400) |
+| PD | Luque_2024 | not_relevant | 0 | 0 | The paper investigates the material science effects of hydrogen peroxide on dental restorations (color and roughness), not a pharmacodynamic or exposure-response relationship in a biological system. |
+| PGx | Ma_2022 | not_relevant | 0 | 0 | The paper is a botany/plant physiology study involving chromium stress in spinach and does not contain any pharmacogenomic data. |
+| popPK | Ma_2026 | irrelevant | 0 | 0 | The paper is a review on chemodynamic therapy nanosystems where hydrogen peroxide is mentioned only as a substrate for Fenton reactions, not as a subject drug for pharmacokinetic modeling. |
+| PD | Ma_2026 | not_relevant | 0 | 0 | The paper is a review of nanosystem-mediated phototherapy and chemodynamic therapy mechanisms, containing no quantitative pharmacodynamic or exposure-response data for hydrogen peroxide. |
+| popPK | Malinouski_2011 | irrelevant | 0 | 0 | The paper is an in-vitro study using a fluorescent biosensor (HyPer) to characterize intracellular hydrogen peroxide dynamics and redox homeostasis, but it does not report pharmacokinetic parameters such as clearance, volume of distribution, or half-life for hydrogen peroxide as a dosed drug. |
+| popPK | Martin_2023 | irrelevant | 0 | 0 | The study is an in-vitro assessment of the antimicrobial efficacy of hydrogen peroxide against a parasite, not a pharmacokinetic study of hydrogen peroxide disposition. |
+| popPK | Martinez-Outschoorn_2012 | irrelevant | 0 | 0 | The study is a mechanistic cell-culture investigation into tumor metabolism and oxidative stress, not a pharmacokinetic study of hydrogen peroxide. |
+| PGx | Martins_1992 | not_relevant | 1 | 5 | The paper describes cellular variants with altered sensitivity to hydrogen peroxide due to gene amplification and chromosomal changes, but it does not report a human pharmacogenomic effect on the PK or PD parameters of hydrogen peroxide as a drug. |
+| popPK | Marín_2018 | irrelevant | 0 | 0 | no_text gate: only 183 chars of text extracted (&lt; 400) |
+| PD | Marín_2018 | not_relevant | 0 | 0 | The paper describes an experimental study on parasite recovery and egg viability but does not report a quantitative exposure-response or dose-response model with numeric PD parameters (e.g., EC50, Emax) for hydrogen peroxide. |
+| PD | Marín_2018_2 | not_relevant | 1 | 0 | The paper is a methodological review on standardizing bioassays for sea lice and does not report specific numeric PD parameters or concentration-effect curves for hydrogen peroxide. |
+| popPK | Mase_2016 | irrelevant | 0 | 0 | The paper describes the photocatalytic production and electrochemical use of hydrogen peroxide as a solar fuel, not its pharmacokinetics. |
+| PGx | Meng_2018 | not_relevant | 0 | 0 | The study investigates the effects of dietary resveratrol supplementation on oxidative stress markers and gene expression in sows, not the impact of a specific gene variant or genotype on the pharmacokinetic or pharmacodynamic parameters of hydrogen peroxide. |
+| popPK | Mesfin_2025 | irrelevant | 0 | 0 | The study focuses on protein-like polymers targeting Keap1/Nrf2 for myocardial infarction and does not report pharmacokinetic parameters for hydrogen peroxide. |
+| PD | Mesfin_2025 | not_relevant | 0 | 0 | The paper studies protein-like polymers (PLPs) targeting Keap1/Nrf2, not hydrogen peroxide; hydrogen peroxide is only used as a stressor in in vitro assays. |
+| PGx | Migliaccio_2026 | not_relevant | 0 | 0 | The paper studies hydrogen peroxide resistance in bacteria as a virulence factor/oxidative stress test, not the pharmacokinetics or pharmacodynamics of hydrogen peroxide as a therapeutic drug in humans. |
+| popPK | Minhas_1995 | irrelevant | 0 | 0 | The study is an in vitro cytotoxicity investigation focusing on antidote efficacy (GSH esters) against hydrogen peroxide-induced cell death, and does not report any pharmacokinetic disposition parameters (CL, V, ka, etc.) for hydrogen peroxide. |
+| PGx | Mishin_2022 | not_relevant | 0 | 0 | The paper studies enzyme kinetics of CYPs using chemical inhibitors, not pharmacogenomic effects of gene variants on hydrogen peroxide PK/PD. |
+| popPK | Mitchell_2026 | irrelevant | 0 | 0 | The paper is a preclinical study on FAK inhibition in a mouse model of neurofibromatosis type 2 and contains no pharmacokinetic data for hydrogen peroxide. |
+| PD | Miyachi_1982 | not_relevant | 4 | 2 | The paper describes dose-response studies for drugs affecting hydrogen peroxide generation, but the provided text is an abstract that lacks specific numeric PD parameters (e.g., IC50, Emax) or detailed concentration-effect data. |
+| popPK | Mukherjee_1982 | irrelevant | 0 | 0 | The paper is an in vitro mechanistic study examining hydrogen peroxide as a signaling molecule in adipocytes, not a pharmacokinetic study of hydrogen peroxide disposition. |
+| popPK | Murcia_2024 | irrelevant | 0 | 0 | The paper is a plant physiology and proteomics study on grape berries, focusing on hydrogen peroxide as a signaling molecule/ROS, not as a drug with pharmacokinetic parameters. |
+| popPK | Myers_2026 | irrelevant | 0 | 0 | The study investigates BMX-001 as a radioprotector and mentions hydrogen peroxide only as a mechanistic byproduct of in vitro assays, without providing any pharmacokinetic parameters for hydrogen peroxide. |
+| PD | Myers_2026 | not_relevant | 2 | 1 | The paper reports tissue concentrations of BMX-001 and qualitative/semi-quantitative effects (tumor volume, histology, protein sulfenylation) but does not provide a concentration-effect curve, dose-response model, or numeric PD parameters (Emax, EC50) for hydrogen peroxide or BMX-001. |
+| popPK | Nakamura_1987 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic analysis of the enzymatic generation of hydrogen peroxide in porcine thyroid membranes, not a pharmacokinetic study of hydrogen peroxide as a drug. |
+| popPK | Nathan_1987 | irrelevant | 0 | 0 | The study measures hydrogen peroxide (H2O2) release/secretion by neutrophils as a product of the respiratory burst, not the pharmacokinetic disposition (absorption, distribution, metabolism, excretion) of H2O2 as a drug subject. |
+| popPK | Nguyen_2026 | irrelevant | 0 | 0 | The study focuses on arsenite absorption and engineered probiotics, with no mention of hydrogen peroxide pharmacokinetics. |
+| PD | Nguyen_2026 | not_relevant | 0 | 0 | The paper describes an engineered probiotic for arsenite sequestration and does not report any pharmacodynamic or exposure-response relationship for hydrogen peroxide. |
+| popPK | Nie_2025 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of uricase (UOX) and immune tolerance strategies, not the pharmacokinetics of hydrogen peroxide. |
+| PD | Nie_2025 | not_relevant | 0 | 0 | The paper focuses on immune tolerance induction and PK of uricase, not hydrogen peroxide, and does not report a concentration-effect or dose-response PD model with numeric parameters for H2O2. |
+| popPK | Niwa_2001 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of hydrogen peroxide-induced changes in endothelial cell permeability, not a pharmacokinetic study. |
+| PGx | Nunvar_2017 | not_relevant | 0 | 0 | The paper analyzes bacterial genetic evolution in cystic fibrosis patients, not human pharmacogenomics regarding the drug hydrogen peroxide. |
+| popPK | Olson_2018 | irrelevant | 0 | 0 | The paper investigates the enzymatic oxidation of hydrogen sulfide by superoxide dismutase in vitro; hydrogen peroxide is mentioned only as a related reactive oxygen species, not as the subject drug with pharmacokinetic parameters. |
+| popPK | Olson_2020 | irrelevant | 0 | 0 | The study investigates the chemical reaction between green tea catechins and hydrogen sulfide, where hydrogen peroxide is a byproduct, and does not contain any pharmacokinetic modeling or disposition parameters for hydrogen peroxide. |
+| popPK | Omar_2017 | irrelevant | 0 | 0 | The paper is an in-vitro study of olive biophenols using hydrogen peroxide as an oxidative stress inducer, not a pharmacokinetic study of hydrogen peroxide. |
+| popPK | Onishi_2018 | irrelevant | 0 | 0 | The paper describes a solar-driven photofuel cell where hydrogen peroxide is used as a chemical fuel/oxidant, not as a subject drug for pharmacokinetic study. |
+| popPK | Ozdemir_2025 | irrelevant | 0 | 0 | The study investigates the prevention of ovarian hyperstimulation syndrome in rats using bazedoxifene and fulvestrant, with no mention or measurement of hydrogen peroxide pharmacokinetics. |
+| PD | Ozdemir_2025 | not_relevant | 0 | 0 | The paper investigates the effect of bazedoxifene and fulvestrant on OHSS in rats and does not mention hydrogen peroxide or report any exposure-response or dose-response PD parameters for it. |
+| popPK | Padhi_2025 | irrelevant | 0 | 0 | The paper studies the pharmacokinetics of levodopa and the bioengineered bacteria EcN_L-DOPA, not hydrogen peroxide. |
+| PD | Padhi_2025 | not_relevant | 4 | 2 | The paper describes a bioengineered bacteria producing L-DOPA and mentions PK/PD studies in canines, but the provided text is an abstract that lacks specific numeric PD parameters (e.g., EC50, Emax) or detailed concentration-effect curves for hydrogen peroxide (which is not the primary drug, L-DOPA is). |
+| PD | Pandareesh_2016 | not_relevant | 0 | 0 | The paper reports IC50 values for Bacopa monniera extract (BME) against radicals and oxidative markers, but does not report a pharmacodynamic or exposure-response relationship for hydrogen peroxide itself. |
+| popPK | Parapob_2026 | irrelevant | 0 | 0 | The paper is a review on the pathogenesis of preeclampsia and oxidative stress; it does not contain pharmacokinetic modeling or quantitative disposition parameters for hydrogen peroxide. |
+| PD | Parapob_2026 | not_relevant | 0 | 0 | The paper is a mechanistic review of preeclampsia pathogenesis and does not report any pharmacodynamic or exposure-response data for hydrogen peroxide. |
+| PGx | Parchment_1992 | not_relevant | 0 | 0 | The paper discusses hydrogen peroxide generation in cell culture environments and its role in cellular evolution, not the pharmacogenomic effects of a drug on its PK/PD parameters. |
+| PD | Park_2018 | not_relevant | 0 | 0 | The paper reports the neuroprotective effect of fucoidan against hydrogen peroxide-induced toxicity, not the pharmacodynamic or dose-response relationship of hydrogen peroxide itself. |
+| popPK | Paul-Chima_2026 | irrelevant | 0 | 0 | The paper is a systematic review of nanotechnology strategies for ROS modulation and does not report pharmacokinetic parameters for hydrogen peroxide. |
+| PD | Paul-Chima_2026 | not_relevant | 1 | 0 | The paper is a systematic review of nanotechnology for ROS modulation and does not report specific pharmacodynamic models or numeric PD parameters for hydrogen peroxide. |
+| popPK | Pawłowska_2016 | irrelevant | 0 | 0 | no_text gate: only 119 chars of text extracted (&lt; 400) |
+| PD | Pawłowska_2016 | not_relevant | 0 | 0 | The paper evaluates the effects of tetraethylammonium bromide and chloride on plants, not hydrogen peroxide. |
+| popPK | Pepper-Tunick_2026 | irrelevant | 0 | 0 | The paper studies antibiotic resistance evolution in Mycobacterium tuberculosis and does not report any pharmacokinetic parameters for hydrogen peroxide. |
+| PD | Pepper-Tunick_2026 | not_relevant | 0 | 0 | The paper focuses on the evolution of antibiotic resistance in mycobacteria and does not report a pharmacodynamic (exposure-response) model or numeric PD parameters for hydrogen peroxide. |
+| PD | Poupard_2017 | not_relevant | 0 | 0 | The paper reports the production of heparin and carrageenan derivatives using hydrogen peroxide as a chemical reagent, not as a drug, and provides no pharmacodynamic or exposure-response data for hydrogen peroxide. |
+| popPK | Pu_2019 | irrelevant | 0 | 0 | The study investigates the catalase-like enzymatic activity of a bacterial protein (DndCDE) on hydrogen peroxide, which is a mechanistic/biochemical study of an enzyme-substrate reaction, not a pharmacokinetic study of hydrogen peroxide as a drug in an organism. |
+| PD | Pu_2019 | not_relevant | 0 | 0 | The paper reports enzyme kinetics (Vmax, K0.5, Hill coefficient) for a protein complex (DndCDE) decomposing hydrogen peroxide, which is a biochemical mechanism study, not a pharmacodynamic exposure-response or dose-response relationship for a drug in a biological system. |
+| PGx | R_2019 | not_relevant | 0 | 0 | The paper reports the effect of gene variants on the production of hydrogen peroxide, a byproduct of the catalytic cycle, not on the pharmacokinetic or pharmacodynamic parameters of hydrogen peroxide itself. |
+| popPK | R_2026 | irrelevant | 0 | 0 | The paper studies the pharmacology and distribution of PARP inhibitors (rucaparib, niraparib, olaparib) in ovarian cancer models, not hydrogen peroxide. |
+| PGx | Rahim_2022 | not_relevant | 0 | 0 | This study focuses on plant physiology (rice) and the effect of sodium nitroprusside on lead toxicity, not human pharmacogenomics or drug metabolism. |
+| PGx | Rajabi_2024 | not_relevant | 0 | 0 | The paper studies plant physiology and agricultural stress mitigation in sorghum, not human pharmacogenomics of hydrogen peroxide. |
+| popPK | Reed_1987 | irrelevant | 0 | 0 | The study focuses on the immunological activation of macrophages by cytokines and their subsequent production of hydrogen peroxide as a reactive oxygen species, rather than the pharmacokinetic disposition of hydrogen peroxide as a drug. |
+| PGx | Rizwan_2018 | not_relevant | 0 | 0 | The paper studies plant physiology (rice) and nickel stress, not human pharmacogenomics or drug response. |
+| popPK | Roman_2026 | irrelevant | 0 | 0 | The paper is a clinical trial evaluating sodium valproate, not a pharmacokinetic study of hydrogen peroxide. |
+| PD | Roman_2026 | not_relevant | 0 | 0 | The paper evaluates sodium valproate, not hydrogen peroxide; H2O2 is only used as a fixed-concentration (100 µM) in vitro stimulus to model injury, with no dose-response or PD parameter analysis for H2O2. |
+| PGx | SANTAGOSTINI_1964 | not_relevant | 0 | 0 | The provided text is empty and contains no information regarding pharmacogenomic effects on hydrogen peroxide PK/PD parameters. |
+| PGx | Saha_2022 | not_relevant | 0 | 0 | The study evaluates the impact of a rice genotype on oxidative stress response (including H2O2 levels) under salinity, not the pharmacokinetic or pharmacodynamic effects of a drug metabolized by that gene variant. |
+| popPK | Santos_2019 | irrelevant | 0 | 0 | The paper reports on the photoelectrocatalytic production of hydrogen peroxide in an in vitro chemical/electrochemical system, not the pharmacokinetics of the drug in a biological species. |
+| popPK | Sarkar_2026 | irrelevant | 0 | 0 | The paper is a review on quercetin for COPD and does not study the pharmacokinetics of hydrogen peroxide. |
+| PD | Sarkar_2026 | not_relevant | 0 | 0 | The paper is a review of quercetin in COPD and does not report any pharmacodynamic or exposure-response data for hydrogen peroxide. |
+| PGx | Sayyadi_2023 | not_relevant | 0 | 0 | The paper studies plant physiology and lead toxicity in rice, focusing on hydrogen peroxide as a stress marker rather than a drug, and does not report pharmacogenomic effects. |
+| PGx | Schott_2017 | not_relevant | 2 | 0 | The study investigates the effect of a nutritional supplement (Seleno-L-methionine) on cells with specific genotypes, not a pharmacokinetic or pharmacodynamic parameter of hydrogen peroxide itself. |
+| PGx | Seyed_2023 | not_relevant | 0 | 0 | The study investigates the effect of biostimulants on plant stress physiology and is unrelated to pharmacogenomics or hydrogen peroxide. |
+| PGx | Shibuya_2020 | not_relevant | 0 | 0 | The paper studies the metabolites and PK of a synthetic drug (K-604), and hydrogen peroxide is used only as a chemical reagent for synthesis, not as the drug being studied for pharmacogenomics. |
+| popPK | Shinohara_2017 | irrelevant | 0 | 0 | The study investigates the toxicokinetics of nickel oxide nanoparticles, and hydrogen peroxide is only used as an in-vitro dissolution medium, not as the subject drug. |
+| PGx | Shumba_2023 | not_relevant | 0 | 0 | The paper describes the effect of hydrogen peroxide on bacterial phenotype (SpeB secretion in Streptococcus pyogenes), which is not a pharmacokinetic or pharmacodynamic parameter of a drug in a human/host context, nor does it involve pharmacogenomic gene variants affecting drug response. |
+| PGx | Siddens_2014 | not_relevant | 1 | 10 | The paper describes H2O2 as an enzymatic byproduct/source of ROS rather than a drug with a defined PK/PD profile influenced by the variant. |
+| popPK | Silva_2019 | irrelevant | 0 | 0 | The study investigates the antimicrobial, antioxidant, and antitumor properties of red propolis extract, using hydrogen peroxide only as a reference standard in the ferric thiocyanate antioxidant assay, rather than as a subject of pharmacokinetic evaluation. |
+| PD | Silva_2019 | not_relevant | 0 | 0 | The paper reports antioxidant activity of a propolis extract, not a pharmacodynamic relationship for hydrogen peroxide; H2O2 is only mentioned as a reference standard or byproduct in assays. |
+| PGx | Singh_2021 | not_relevant | 0 | 0 | The study investigates plant physiology (soybean) and abiotic stress, not human pharmacogenomics or drug metabolism. |
+| PGx | Singh_2022 | not_relevant | 0 | 0 | The study investigates hydrogen peroxide as an exogenous stress mitigant in wheat seedlings, not as a drug subject to human pharmacogenomic analysis of PK/PD parameters. |
+| PGx | Singh_2024 | not_relevant | 0 | 0 | The paper investigates the effect of zinc oxide nanoparticles on plant physiology, not the pharmacogenomics of a drug on human PK/PD parameters. |
+| PD | Sonntag_2019 | not_relevant | 0 | 0 | The paper reports IC50 values for aquaporin inhibitors, not a pharmacodynamic or exposure-response relationship for hydrogen peroxide itself. |
+| PGx | Spitz_1992 | not_relevant | 0 | 0 | The study investigates cellular resistance mechanisms and catalase activity in cell lines, not human pharmacogenomic effects on the pharmacokinetics or pharmacodynamics of hydrogen peroxide as a drug. |
+| PGx | Steelheart_2020 | not_relevant | 0 | 0 | The provided text is software metadata for GROBID and contains no information about hydrogen peroxide, genetics, or pharmacokinetics. |
+| popPK | Su_2026 | irrelevant | 0 | 0 | The paper describes the discovery of novel antifungal polyketides and mentions hydrogen peroxide only as a byproduct of enzyme inhibition in fungi, not as a subject drug for PK analysis. |
+| PD | Su_2026 | not_relevant | 0 | 0 | The paper reports EC50 values for the novel compounds novomycins A and B, not for hydrogen peroxide; hydrogen peroxide is only mentioned as a downstream metabolite accumulating due to enzyme inhibition. |
+| popPK | Subpiramaniyam_2021 | irrelevant | 0 | 0 | The paper is a review of environmental toxicity (aquatic ecotoxicology) of hydrogen peroxide disinfectants, not a pharmacokinetic study of drug disposition. |
+| PD | Subpiramaniyam_2021 | not_relevant | 2 | 2 | The paper is a systematic review comparing environmental toxicity endpoints (LC50, NOEC) to WHO recommended disinfectant concentrations, not a pharmacodynamic analysis of drug exposure-response in a biological system. |
+| popPK | Suleiman_2020 | irrelevant | 0 | 0 | The paper uses hydrogen peroxide (H2O2) as a reagent in an in-vitro antioxidant assay (scavenging) to test plant extracts, not as a subject drug in a pharmacokinetic study. |
+| PD | Suleiman_2020 | not_relevant | 0 | 0 | The paper reports in vitro antioxidant and antimicrobial activities of plant extracts, not a pharmacodynamic (exposure-response) relationship for the drug hydrogen peroxide. |
+| popPK | Szeto_2006 | irrelevant | 0 | 0 | The paper discusses peptide antioxidants that scavenge hydrogen peroxide, but does not report any pharmacokinetic parameters for hydrogen peroxide itself. |
+| PD | Szeto_2006 | not_relevant | 3 | 2 | The text is a review/summary that mentions an EC50 in the nM range qualitatively but does not provide specific numeric values, curves, or a formal PD model for hydrogen peroxide. |
+| PGx | Taj_2024 | not_relevant | 0 | 0 | The study investigates plant physiology (spinach) under heavy metal stress, not human pharmacogenomics of hydrogen peroxide. |
+| popPK | Tartakovsky_2006 | irrelevant | 0 | 0 | The study investigates microbial fuel cells and uses hydrogen peroxide as a cathode oxygenation agent, which is an environmental/engineering application rather than a pharmacokinetic study. |
+| popPK | Ullah_2026 | irrelevant | 0 | 0 | The paper investigates the pharmacological activity of a plant extract (Fingerhuthia africana) and does not involve hydrogen peroxide or pharmacokinetic modeling. |
+| PD | Ullah_2026 | not_relevant | 0 | 0 | The paper evaluates a plant extract (Fingerhuthia africana), not hydrogen peroxide, and reports dose-response data for the extract rather than PD parameters for H2O2. |
+| PD | Ullrich_1989 | not_relevant | 2 | 0 | The text describes qualitative mechanisms and mentions a shift in dose-response curves but provides no numeric PD parameters, concentrations, or quantitative effect data. |
+| PGx | Umićević_2024 | not_relevant | 0 | 0 | The paper studies plant physiology (waterlogging stress in tomato) and H2O2 as an endogenous stress marker, not the pharmacokinetics or pharmacodynamics of H2O2 as a drug in humans. |
+| popPK | VanIderstine_2021 | irrelevant | 0 | 0 | no_text gate: only 112 chars of text extracted (&lt; 400) |
+| PD | VanIderstine_2021 | not_relevant | 0 | 0 | The paper describes the biological impact of hydrogen peroxide on sea lice but does not report a pharmacokinetic/pharmacodynamic model or numeric exposure-response parameters. |
+| popPK | Vasincu_2025 | irrelevant | 0 | 0 | The paper is a review on the neuroprotective potential of Ocimum plant species in Alzheimer's disease and does not report pharmacokinetic parameters for hydrogen peroxide. |
+| PD | Vasincu_2025 | not_relevant | 0 | 0 | The paper is a narrative review of Ocimum species for neuroprotection and does not report any pharmacodynamic or exposure-response data for hydrogen peroxide. |
+| PD | Walsh_1993 | not_relevant | 4 | 2 | The paper describes a qualitative dose-response relationship for t-butyl hydroperoxide (not hydrogen peroxide) on placental lipid peroxide secretion, but the provided text lacks the specific numeric effect values or curve data required to derive PD parameters. |
+| PD | Wang_1984 | not_relevant | 0 | 0 | The paper reports the antiplatelet effect of capsaicin, not hydrogen peroxide; hydrogen peroxide is only mentioned as an agent inducing hemolysis which capsaicin reduces. |
+| PD | Wang_1985 | not_relevant | 0 | 0 | The paper reports pharmacological effects of Hsien-Ho-T'sao (Agrimonia pilosa), not hydrogen peroxide; hydrogen peroxide is only mentioned as a stimulus for hemolysis. |
+| PGx | Wang_2011 | not_relevant | 0 | 0 | The study investigates the physiological response of plants to stress and does not involve gene variants or pharmacogenomics. |
+| PD | Wang_2023 | not_relevant | 3 | 2 | The paper reports IC50 values for radical scavenging and qualitative dose-dependent protection against H2O2, but lacks a formal PK/PD model or numeric exposure-response parameters (e.g., EC50, Emax) for the drug's effect on the biological endpoint. |
+| PGx | Wang_2025 | not_relevant | 0 | 0 | The paper reports a GWAS for Vitamin C content in rapeseed plants, which is not a pharmacogenomic study of drug PK/PD parameters. |
+| popPK | Wapshott-Stehli_2021 | irrelevant | 0 | 0 | The paper studies the enzymatic kinetics and stability of fatty acid peroxygenases, not the pharmacokinetics of hydrogen peroxide as a drug. |
+| PD | Wapshott-Stehli_2021 | not_relevant | 0 | 0 | The paper characterizes the thermal and solvent stability of enzymes, not the pharmacodynamic exposure-response relationship of hydrogen peroxide as a drug. |
+| popPK | Wattanakul_2024 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of primaquine, not hydrogen peroxide. |
+| PD | Wattanakul_2024 | not_relevant | 0 | 0 | The paper focuses on the pharmacokinetics of primaquine and its transfer to breast milk, not on the pharmacodynamics of hydrogen peroxide. |
+| popPK | Weenink_2022 | irrelevant | 0 | 0 | The study is an ecotoxicology assessment of hydrogen peroxide's effect on aquatic organisms (LC50/EC50), not a pharmacokinetic study of drug disposition. |
+| popPK | Wesołowski_2026 | irrelevant | 0 | 0 | The paper is a review of oxidative stress in Acanthamoeba keratitis and does not report any pharmacokinetic parameters for hydrogen peroxide. |
+| PD | Wesołowski_2026 | not_relevant | 0 | 0 | The text is a review of oxidative stress mechanisms in Acanthamoeba keratitis and does not report any pharmacodynamic or exposure-response data for hydrogen peroxide. |
+| popPK | Witkiewicz_2012 | irrelevant | 0 | 0 | This is a prognostic biomarker study regarding the "reverse Warburg effect" where hydrogen peroxide is a mechanistic mediator of oxidative stress, not a drug subject to pharmacokinetic analysis. |
+| popPK | Wołodkiewicz_2025 | irrelevant | 0 | 0 | The paper is a mechanistic in vitro study of polyfluoroalkyl phosphonates in glioblastoma cells, and hydrogen peroxide is only used as a positive control for ROS measurement, with no pharmacokinetic parameters reported. |
+| popPK | Yan_2023 | irrelevant | 0 | 0 | The study analyzes the pharmacokinetics of tafolecimab, not hydrogen peroxide. |
+| popPK | Yang_2023 | irrelevant | 0 | 0 | This paper describes the photoelectrocatalytic synthesis of hydrogen peroxide, which is a chemical engineering/materials science study, not a pharmacokinetic study. |
+| popPK | Yisa_2023 | irrelevant | 0 | 0 | no_text gate: only 107 chars of text extracted (&lt; 400) |
+| PD | Yisa_2023 | not_relevant | 0 | 0 | The paper investigates the effects of Amoxicillin and Ciprofloxacin on Daphnia magna, not hydrogen peroxide. |
+| PD | Yu_1987 | not_relevant | 3 | 1 | The paper mentions hydrogen peroxide as an insulinomimetic agent that enhances phosphorylation and notes a similar dose-response relationship to insulin, but it does not provide specific numeric PD parameters (EC50, Emax) or a quantitative concentration-effect curve for hydrogen peroxide in the provided text. |
+| PGx | Zeng_2021 | not_relevant | 0 | 0 | The paper studies bacterial genetics and metabolism (hydrogen peroxide production by bacteria), not human pharmacogenomics of a drug. |
+| popPK | Zhakipbekov_2026 | irrelevant | 0 | 0 | The paper is a review of the plant Cirsium arvense and does not study the pharmacokinetics of hydrogen peroxide. |
+| PD | Zhakipbekov_2026 | not_relevant | 0 | 0 | The paper is a narrative review of the plant Cirsium arvense and does not report any pharmacodynamic or exposure-response data for hydrogen peroxide. |
+| PGx | Zhang_2021 | not_relevant | 0 | 0 | The paper investigates the nephrotoxic effects of cadmium and molybdenum on autophagy and ROS levels in duck cells, involving no human gene variants or pharmacogenomic analysis. |
+| popPK | Zhang_2021_2 | irrelevant | 0 | 0 | The paper concerns fungicide sensitivity and resistance mechanisms in a fungus, with no pharmacokinetic parameters for hydrogen peroxide. |
+| PD | Zhang_2021_2 | not_relevant | 0 | 0 | The paper focuses on the fungicide pyrimethanil and its resistance mechanisms; hydrogen peroxide is only mentioned qualitatively as a stressor to which resistant mutants show higher tolerance, with no exposure-response or dose-response analysis or numeric PD parameters provided. |
+| popPK | Zhang_2024 | irrelevant | 0 | 0 | The paper focuses on the pharmacokinetics of nedosiran, and hydrogen peroxide is only mentioned as an intermediate product in the enzymatic assay for measuring urinary oxalate. |
+| popPK | Zhang_2025 | irrelevant | 0 | 0 | The paper is a review of hydrogen peroxide fuel cells and electrochemical sensors, focusing on electrode catalysts and electrochemical performance (voltage, power density), not pharmacokinetic parameters. |
+| popPK | Zhao_2010 | irrelevant | 0 | 0 | The study is an in vitro investigation of halophenol antioxidant activity using hydrogen peroxide only as a cytotoxic agent, not as the subject drug for pharmacokinetic modeling. |
+| PGx | Zheng_2021 | not_relevant | 0 | 0 | The paper studies the pathogenicity of a rust fungus (Melampsora larici-populina) and H2O2 levels are measured as a fungal biomarker, not as a pharmacokinetic or pharmacodynamic parameter of a drug response to a genetic variant. |
+| popPK | Zhou_2025 | irrelevant | 0 | 0 | The paper investigates the mechanism of EGFR TKIs and CAR-T efficacy in NSCLC, with no mention of hydrogen peroxide or pharmacokinetic parameters. |
+| PD | Zhou_2025 | not_relevant | 0 | 0 | The paper investigates the mechanism of EGFR TKIs on MUC1 glycosylation and CAR-T efficacy, but does not report any pharmacodynamic or exposure-response relationship for hydrogen peroxide. |
+| PGx | Zhu_2020 | not_relevant | 0 | 0 | The paper reports on a plant gene (bsr-d1) involved in blast resistance, which is a plant-pathogen interaction and not a human pharmacogenomic effect on a drug. |
+| popPK | Zhu_2026 | irrelevant | 0 | 0 | The study investigates a herbal formula and its component rutin in a mouse model of pulmonary fibrosis, with no data on hydrogen peroxide pharmacokinetics. |
+| PD | Zhu_2026 | not_relevant | 2 | 1 | The study investigates the mechanism of action (GLUT1/HIF-1α) using qualitative comparisons and single-point dose groups, explicitly stating that a full dose-response relationship was not established, and provides no numeric PD parameters like Emax or EC50. |
+| popPK | Zhuo_2019 | irrelevant | 0 | 0 | The study investigates the degradation of the pollutant benzo(a)pyrene by hydrogen peroxide in sediment organic matter, which is an environmental chemistry/mechanistic study, not a pharmacokinetic study of hydrogen peroxide as a drug. |
+| PGx | Zschiebsch_2019 | not_relevant | 0 | 0 | The paper investigates the role of endogenous BH4 in itch physiology, not the pharmacokinetics or pharmacodynamics of the compound hydrogen peroxide. |
+| popPK | Évora_2025 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of miRNA-exosome therapeutics in a microfluidic Alzheimer's model where hydrogen peroxide is used as a chemical stressor agent, not as a subject drug for pharmacokinetic analysis. |
 
 ---
 <sub>Generated by `docs.py` (scholarv2)</sub>

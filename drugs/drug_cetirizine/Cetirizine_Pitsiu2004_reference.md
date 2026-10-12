@@ -5,7 +5,7 @@
 
 # cetirizine — `Cetirizine_Pitsiu2004_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.25). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: partial</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -21,7 +21,7 @@
 
 The record lists the apparent volume of distribution (V/F) with a value of 1.4 and a unit of l year(-1). This unit represents a rate rather than a volume, creating a dimension mismatch for a structural parameter. Because the record was built from the abstract alone, these summary statistics stand in for a fitted model. Extracted — cetirizine: CL/F 0.12 L/h, V/F 1.4 l year(-1).
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has cetirizine, the second reading unknown; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of apparent clearance (cl/f) and age with the former increasing by: this record has 0.12, the second reading none; it also differs on 3 more fields. That field does not shape the model.
 
 <sub>reviewed by qwen3.8:27b-mtp-q8_0</sub>
 
@@ -72,23 +72,21 @@ Pitsiu M et al., Retrospective population pharmacokineti…, British journal of 
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.25 (2/8 fields) | 6 |
+| `gpt-oss-120b` | partly confirmed | 0.5 (4/8 fields) | 4 |
 
-<details><summary>6 field(s) a reader read differently</summary>
+<details><summary>4 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
 | `gpt-oss-120b` | `parameters[apparent clearance (cl/f) and age with the former increasing by]` | 0.12 | not captured | only_one_extracted |
-| `gpt-oss-120b` | `parameters[apparent clearance (cl/f) increasing by]` | not captured | 0.12 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[apparent clearance (cl/f) increase per year]` | not captured | 0.12 | only_one_extracted |
 | `gpt-oss-120b` | `parameters[apparent volume of distribution (v/f) and age with the former increasing by]` | 1.4 | not captured | only_one_extracted |
-| `gpt-oss-120b` | `parameters[intercept of v/f]` | not captured | 4.0 | only_one_extracted |
-| `gpt-oss-120b` | `screen.dose_compound` | cetirizine | unknown | mismatch |
-| `gpt-oss-120b` | `screen.primary_analyte` | cetirizine | unknown | mismatch |
+| `gpt-oss-120b` | `parameters[apparent volume of distribution (v/f) increase per year]` | not captured | 1.4 | only_one_extracted |
 
 </details>
 

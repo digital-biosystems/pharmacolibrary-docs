@@ -21,8 +21,7 @@
 Echizen H et al. (2016). Clinical pharmacokinetics 55
   ·  DOI: [10.1007/s40262-015-0326-7](https://doi.org/10.1007/s40262-015-0326-7)
 
-## Model component
-<dbs-pgx drug="amoxicillin" model-id="Amoxicillin_Echizen2016_reference" status="extracted" stale="true" population="" measured-compound="amoxicillin" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="amoxicillin" model-id="Amoxicillin_Echizen2016_reference" status="extracted" stale="true" population="" measured-compound="amoxicillin" parameterization="apparent" topology="1C"></div>
 
 **Parameterization:** CL/F — apparent, F unknown (apparent — bioavailability not identifiable).
 

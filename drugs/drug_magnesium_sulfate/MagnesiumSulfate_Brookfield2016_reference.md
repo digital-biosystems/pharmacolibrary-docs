@@ -5,7 +5,7 @@
 
 # magnesium sulfate — `MagnesiumSulfate_Brookfield2016_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.375). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.25). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -21,7 +21,7 @@
 
 A model needs both clearance and volume; without the volume it could only be built on a library default, so it was not. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — magnesium sulfate: CL 3.98 L/h, Css 7.2 mg/dL.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which molecule was measured: this record has magnesium, the second reading magnesium sulfate; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has magnesium sulfate, the second reading unknown; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -72,9 +72,9 @@ first reading `qwen3.8-27b` — the numbers on this page are its, whatever the r
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.375 (3/8 fields) | 5 |
+| `gpt-oss-120b` | not confirmed | 0.25 (2/8 fields) | 6 |
 
-<details><summary>5 field(s) a reader read differently</summary>
+<details><summary>6 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
@@ -82,7 +82,8 @@ first reading `qwen3.8-27b` — the numbers on this page are its, whatever the r
 | `gpt-oss-120b` | `parameters[magnesium clearance]` | not captured | 3.98 | only_one_extracted |
 | `gpt-oss-120b` | `parameters[steady-state concentration of magnesium]` | 7.2 | not captured | only_one_extracted |
 | `gpt-oss-120b` | `parameters[steady-state concentration of magnesium]` | not captured | 7.2 | only_one_extracted |
-| `gpt-oss-120b` | `screen.primary_analyte` | magnesium | magnesium sulfate | mismatch |
+| `gpt-oss-120b` | `screen.dose_compound` | magnesium sulfate | unknown | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | magnesium | unknown | mismatch |
 
 </details>
 

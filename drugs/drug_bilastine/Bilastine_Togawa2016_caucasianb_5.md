@@ -5,7 +5,7 @@
 
 # bilastine — `Bilastine_Togawa2016_caucasianb_5`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.143). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -21,7 +21,7 @@
 
 The record lacks explicit estimates for bioavailability (F) and lag time (Tlag), forcing the use of placeholder values. These unreported parameters affect the simulated concentration profile but are not supported by the paper's data. Consequently, the model was held back because these critical inputs were not explicitly justified or extracted. Extracted — bilastine: CL 18.1 L/h, V1 59.2 L, Q 1.59 L/h, V2 30.2 L, kabs 1.5 h−1.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has bilastine, the second reading unknown; it also differs on 11 more fields. That field shapes the model, so the record is marked disputed.
+Independently confirmed by `gpt-oss-120b`.
 
 <sub>reviewed by qwen3.8:27b-mtp-q8_0</sub>
 
@@ -75,31 +75,14 @@ Togawa M et al., Pharmacokinetics, Pharmacodynamics and…, Clinical drug invest
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--green">cross-checked ✓</span>  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.143 (2/14 fields) | 12 |
+| `gpt-oss-120b` | confirmed | 1.0 (9/9 fields) | none |
 
-<details><summary>12 field(s) a reader read differently</summary>
-
-| second reader | field | first reading | second reading | agreement |
-|---|---|---|---|---|
-| `gpt-oss-120b` | `parameters[cl]` | 18.1 | not captured | only_one_extracted |
-| `gpt-oss-120b` | `parameters[cl]` | not captured | 18.1 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[ka]` | 1.5 | not captured | only_one_extracted |
-| `gpt-oss-120b` | `parameters[ka]` | not captured | 1.5 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[q]` | 1.59 | not captured | only_one_extracted |
-| `gpt-oss-120b` | `parameters[q]` | not captured | 1.59 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[vc]` | 59.2 | not captured | only_one_extracted |
-| `gpt-oss-120b` | `parameters[vc]` | not captured | 59.2 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[vp]` | 30.2 | not captured | only_one_extracted |
-| `gpt-oss-120b` | `parameters[vp]` | not captured | 30.2 | only_one_extracted |
-| `gpt-oss-120b` | `screen.dose_compound` | bilastine | unknown | mismatch |
-| `gpt-oss-120b` | `screen.primary_analyte` | bilastine | unknown | mismatch |
-
-</details>
+_Every reader agrees on every compared field of this record._
 
 <details class="legend">
 <summary>Cross-check legend</summary>

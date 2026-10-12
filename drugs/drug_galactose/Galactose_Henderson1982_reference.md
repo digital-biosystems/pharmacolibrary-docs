@@ -4,7 +4,7 @@
 
 # galactose — `Galactose_Henderson1982_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.353). The first reading is what the record holds.">cross-check: partial</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.211). The first reading is what the record holds.">cross-check: partial</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -20,7 +20,7 @@
 
 The record describes a one-compartment galactose model in healthy adults and patients with liver disease, with total clearance 1378 ml/min, an 8 % reduction in clearance, 95 % steady-state AUC, a 1.0 min absorption lag time, and a 1-minute zero-order infusion duration. The non-renal extrahepatic clearance by erythrocyte metabolism is reported as 2.3 % and the fraction excreted unchanged in urine as 2 %, so these structural parameters are dimensionless fractions where a clearance in flow units is expected, triggering the dimension mismatch. The record was also built from the paper's abstract alone, so reported summary statistics stood in for a fitted model. Extracted — galactose: AUCSS 95 %, CL_ratio 8 %, fe 2 %, CLNR 2.3 %, CL 1.38e+03 ml/min, tlag 1 min.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of extrahepatic clearance: this record has none, the second reading 2; it also differs on 10 more fields. That field does not shape the model.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of extrahepatic clearance by erythrocyte metabolism: this record has 2.3, the second reading none; it also differs on 14 more fields. That field does not shape the model.
 
 <sub>reviewed by glm-5.3-flash</sub>
 
@@ -85,22 +85,26 @@ first reading `glm-5.3-flash` — the numbers on this page are its, whatever the
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | partly confirmed | 0.353 (6/17 fields) | 11 |
+| `gpt-oss-120b` | partly confirmed | 0.211 (4/19 fields) | 15 |
 
-<details><summary>11 field(s) a reader read differently</summary>
+<details><summary>15 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
 | `gpt-oss-120b` | `parameters[extrahepatic clearance by erythrocyte metabolism]` | 2.3 | not captured | only_one_extracted |
 | `gpt-oss-120b` | `parameters[extrahepatic clearance in the urine]` | 2 | not captured | only_one_extracted |
-| `gpt-oss-120b` | `parameters[extrahepatic clearance]` | not captured | 2 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[extrahepatic clearance in urine]` | not captured | 2 | only_one_extracted |
 | `gpt-oss-120b` | `parameters[infusion duration]` | not captured | 140 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[infusion rate]` | not captured | not captured | only_one_extracted |
 | `gpt-oss-120b` | `parameters[infusion]` | not captured | not captured | only_one_extracted |
 | `gpt-oss-120b` | `parameters[overall mean (+/-sd) clearance in the normal subjects]` | 1378 | not captured | only_one_extracted |
-| `gpt-oss-120b` | `parameters[overall mean clearance]` | not captured | 1378 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[overall mean clearance in the normal subjects]` | not captured | 1378 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[percent of plasma steady state attained]` | not captured | 95 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[plasma concentrations of]` | not captured | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[plasma concentrations]` | not captured | not captured | only_one_extracted |
 | `gpt-oss-120b` | `parameters[plasma steady state]` | 95 | not captured | only_one_extracted |
-| `gpt-oss-120b` | `parameters[time to 95% steady state]` | not captured | 80 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[reduction in clearance at the higher rate]` | not captured | 8 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[reduction in clearance]` | 8 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[time to reach 95% steady state]` | not captured | 80 | only_one_extracted |
 | `gpt-oss-120b` | `parameters[waiting time]` | 1.0 | not captured | only_one_extracted |
 
 </details>

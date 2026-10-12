@@ -5,7 +5,7 @@
 
 # montelukast — `Montelukast_Li2019_slco2b1_c_935ga_and_aa`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.364). The first reading is what the record holds.">cross-check: partial</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.182). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -21,7 +21,7 @@
 
 The record lists a molecular weight of 5 kg, which is physically inconsistent with a small molecule and prevents unit conversion. This dimension mismatch on a structural parameter invalidated the model record. A second reader disagreed on multiple parameters, including montelukast clearance and volumes of distribution, but the primary rejection cause remained the unit error. Extracted — montelukast: MW 5 kg, CL 0.87 L/h, kabs 0.357 h−1.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of cl: this record has none, the second reading 24.2; it also differs on 6 more fields. That field does not shape the model.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has montelukast, the second reading unknown; it also differs on 8 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by qwen3.8-27b</sub>
 
@@ -73,14 +73,14 @@ Li Q et al., Developmental Pharmacogenetics of SLCO2…, Drug design, developmen
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
 first reading `qwen3.8-27b` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | partly confirmed | 0.364 (4/11 fields) | 7 |
+| `gpt-oss-120b` | not confirmed | 0.182 (2/11 fields) | 9 |
 
-<details><summary>7 field(s) a reader read differently</summary>
+<details><summary>9 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
@@ -91,6 +91,8 @@ first reading `qwen3.8-27b` — the numbers on this page are its, whatever the r
 | `gpt-oss-120b` | `parameters[q1]` | not captured | 0.256 | only_one_extracted |
 | `gpt-oss-120b` | `parameters[vc]` | not captured | 14.0 | only_one_extracted |
 | `gpt-oss-120b` | `parameters[vp]` | not captured | 45.4 | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | montelukast | unknown | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | montelukast | unknown | mismatch |
 
 </details>
 

@@ -26,7 +26,7 @@
 - reference category (θ=0) not captured — must not be inferred
 
 ## Citation
-Collins KS; Raviele ALJ; Elchynski AL; Woodcock AM; Zhao Y; Cooper-DeHoff RM; et al. et al. (2020). American journal of nephrology 51
+Collins KS et al., Genotype-Guided Hydralazine Therapy, American journal of nephrol… (2020)
   ·  DOI: [10.1159/000510433](https://doi.org/10.1159/000510433)
 
 

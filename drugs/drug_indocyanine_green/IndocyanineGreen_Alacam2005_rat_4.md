@@ -5,7 +5,7 @@
 
 # indocyanine green — `IndocyanineGreen_Alacam2005_rat_4`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.667). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.6). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -23,7 +23,7 @@
 
 The record describes a two-compartment indocyanine green model with an absorption rate constant kabs of 8.40 1/s, an elimination rate constant kel of 7.77 1/s, and central and peripheral volumes of distribution V1 = 53.0 and V2 = 7.03. The rejection is based on the model structure: one compartment is unreachable or orphan, i.e. it has no path from the administered dose, so the reported topology cannot be reproduced as published. No other parameter-level failures are recorded. Extracted — indocyanine green: kabs 8.4 1/s, kel 7.77 1/s, V1 53, V2 7.03.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has indocyanine green, the second reading indocyanine_green; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has indocyanine green, the second reading unknown; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by glm-5.3-flash</sub>
 
@@ -79,15 +79,16 @@ first reading `glm-5.3-flash` — the numbers on this page are its, whatever the
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.667 (6/9 fields) | 3 |
+| `gpt-oss-120b` | not confirmed | 0.6 (6/10 fields) | 4 |
 
-<details><summary>3 field(s) a reader read differently</summary>
+<details><summary>4 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[k_b(sec^{-1})].parameter_id` | Q47 | Q48 | mismatch |
 | `gpt-oss-120b` | `parameters[v_i].parameter_id` | Q63 | Q61 | mismatch |
-| `gpt-oss-120b` | `screen.dose_compound` | indocyanine green | indocyanine_green | mismatch |
-| `gpt-oss-120b` | `screen.primary_analyte` | indocyanine green | indocyanine_green | mismatch |
+| `gpt-oss-120b` | `screen.dose_compound` | indocyanine green | unknown | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | indocyanine green | unknown | mismatch |
 
 </details>
 

@@ -25,7 +25,7 @@
 - reference category (θ=0) not captured — must not be inferred
 
 ## Citation
-Eadon Michael T; Hein David W; Andersen Michael A; Chapman Arlene B; Cooper-DeHoff Rhonda M; Desta Zeruesenay; Duarte Julio D; Elchynski Amanda L; Gaedigk Andrea; Karol Seth E; Limdi Nita A; Lteif Christelle; Sosinski Laura; Zubiaur Pablo; Whirl-Carrillo Michelle; Klein Teri E; Caudle Kelly E; Donnelly Roseann S; Agúndez José A G et al. (2025). Clinical pharmacology and therapeutics
+Eadon MT et al., Clinical Pharmacogenetics Implementatio…, Clinical pharmacology and t… (2025)
   ·  DOI: [10.1002/cpt.70071](https://doi.org/10.1002/cpt.70071)
 
 

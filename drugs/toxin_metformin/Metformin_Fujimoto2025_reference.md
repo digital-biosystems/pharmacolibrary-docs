@@ -26,8 +26,7 @@
 Fujimoto K; Asari K; Mihara K et al. (2025). Clinical and translational science 18
   ·  DOI: [10.1111/cts.70448](https://doi.org/10.1111/cts.70448)
 
-## Model component
-<dbs-pgx drug="metformin" model-id="Metformin_Fujimoto2025_reference" status="extracted" stale="true" population="simulated data" measured-compound="metformin" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="metformin" model-id="Metformin_Fujimoto2025_reference" status="extracted" stale="true" population="simulated data" measured-compound="metformin" parameterization="apparent" topology="1C"></div>
 
 **Parameterization:** CL/F — apparent, F unknown (apparent — bioavailability not identifiable).
 

@@ -104,8 +104,8 @@ first reading `glm-5.3-flash` — the numbers on this page are its, whatever the
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
 | `gpt-oss-120b` | `parameters[beta_cl_logtegfr_comb]` | 0.535 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[beta_v1_logtbsa_mosteller]` | not captured | 0.908 | only_one_extracted |
 | `gpt-oss-120b` | `parameters[cl_ β_bsa]` | 1.99 | not captured | only_one_extracted |
-| `gpt-oss-120b` | `parameters[cl_β_egfrcr]` | not captured | 0.73 | only_one_extracted |
 
 </details>
 

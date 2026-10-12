@@ -5,7 +5,7 @@
 
 # iotalamic acid — `IotalamicAcid_Naber1989_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.333). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.167). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -21,7 +21,7 @@
 
 The check had no reference to compare the clearance against, so the value is unverified rather than shown to be wrong. Extracted — iotalamic acid: CL 307 ml/min, V 177 L.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q40: this record has 400, the second reading none; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q352: this record has 193, the second reading none; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -63,12 +63,13 @@ first reading `glm-5.3-flash` — the numbers on this page are its, whatever the
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.333 (2/6 fields) | 4 |
+| `gpt-oss-120b` | not confirmed | 0.167 (1/6 fields) | 5 |
 
-<details><summary>4 field(s) a reader read differently</summary>
+<details><summary>5 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `values[Q352]` | 193 | not captured | only_one_extracted |
 | `gpt-oss-120b` | `values[Q40]` | 400 | not captured | only_one_extracted |
 | `gpt-oss-120b` | `values[Q57]` | 6.65 | not captured | only_one_extracted |
 | `gpt-oss-120b` | `values[Q88]` | 22.8 | 512 | mismatch |

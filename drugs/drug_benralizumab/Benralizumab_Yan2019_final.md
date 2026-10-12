@@ -5,7 +5,7 @@
 
 # benralizumab — `Benralizumab_Yan2019_final`
 
-> ## <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: the record defines covariate effects (weight on clearance, renal function …) but the engineer simulated only the reference individual, so those scenarios were never run. The base model still reproduces the paper; what is missing is the covariate curves.">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.722). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: the record defines covariate effects (weight on clearance, renal function …) but the engineer simulated only the reference individual, so those scenarios were never run. The base model still reproduces the paper; what is missing is the covariate curves.">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.571). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -23,7 +23,7 @@
 
 Simulated as the paper dosed it, the model's terminal half-life differs from the value the paper reports by more than the tolerance. The base model was simulated, not the covariate effects the record defines. A reported unit could not be converted (Fab and Frel), so that value has no SI equivalent. Extracted — benralizumab: CL 0.291 L/day, V1 3.13 L, Q 0.738 L/day, V2 2.52 L, t1/2ka 3.54 days, Fab 0.589 Model 9, Frel 0.49 Model 9.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of adas on cl, fraction: this record has none, the second reading 2.24; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has benralizumab, the second reading unknown; it also differs on 8 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -95,17 +95,21 @@ first reading `glm-5.3-flash` — the numbers on this page are its, whatever the
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.722 (13/18 fields) | 5 |
+| `gpt-oss-120b` | not confirmed | 0.571 (12/21 fields) | 9 |
 
-<details><summary>5 field(s) a reader read differently</summary>
+<details><summary>9 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss-120b` | `parameters[adas on cl, fraction]` | not captured | 2.24 | only_one_extracted |
 | `gpt-oss-120b` | `parameters[cl].covariate_forms` | [] | ['power'] | mismatch |
+| `gpt-oss-120b` | `parameters[q].covariate_forms` | [] | ['power'] | mismatch |
 | `gpt-oss-120b` | `parameters[theta_cl_body_weight_power]` | not captured | 0.807 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[theta_v2_body_weight_power]` | 0.528 | not captured | only_one_extracted |
-| `gpt-oss-120b` | `parameters[vp].covariate_forms` | ['power'] | [] | mismatch |
+| `gpt-oss-120b` | `parameters[theta_q319_body_weight_power]` | 0.807 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_q_body_weight_power]` | not captured | 0 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_v1_body_weight_power]` | not captured | 0.803 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[vc].covariate_forms` | [] | ['power'] | mismatch |
+| `gpt-oss-120b` | `screen.dose_compound` | benralizumab | unknown | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | benralizumab | unknown | mismatch |
 
 </details>
 

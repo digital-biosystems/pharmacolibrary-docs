@@ -5,7 +5,7 @@
 
 # indocyanine green — `IndocyanineGreen_Kim2009_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.167). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.182). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -21,7 +21,7 @@
 
 The record was built from the paper's abstract alone, so reported summary statistics stood in for a fitted model. The extracted parameters for indocyanine green — total clearance 117 mL/min and volume of distribution 0.415 L — were judged implausible in magnitude, consistent with a unit or scale extraction error. Other parameters (C0, C(15), kel) carried no values, so no further assessment of them was possible. Extracted — indocyanine green: CL 117 mL/min, V 0.415 L.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has indocyanine green, the second reading unknown; it also differs on 9 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has indocyanine green, the second reading indocyanine_green; it also differs on 8 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by glm-5.3-flash</sub>
 
@@ -80,13 +80,12 @@ first reading `glm-5.3-flash` — the numbers on this page are its, whatever the
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.167 (2/12 fields) | 10 |
+| `gpt-oss-120b` | not confirmed | 0.182 (2/11 fields) | 9 |
 
-<details><summary>10 field(s) a reader read differently</summary>
+<details><summary>9 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss-120b` | `parameters[c]` | not captured | not captured | only_one_extracted |
 | `gpt-oss-120b` | `parameters[c]` | not captured | not captured | only_one_extracted |
 | `gpt-oss-120b` | `parameters[cl]` | 117 | not captured | only_one_extracted |
 | `gpt-oss-120b` | `parameters[cl]` | not captured | not captured | only_one_extracted |
@@ -94,8 +93,8 @@ first reading `glm-5.3-flash` — the numbers on this page are its, whatever the
 | `gpt-oss-120b` | `parameters[k]` | not captured | not captured | only_one_extracted |
 | `gpt-oss-120b` | `parameters[vd]` | 0.415 | not captured | only_one_extracted |
 | `gpt-oss-120b` | `parameters[vd]` | not captured | not captured | only_one_extracted |
-| `gpt-oss-120b` | `screen.dose_compound` | indocyanine green | unknown | mismatch |
-| `gpt-oss-120b` | `screen.primary_analyte` | indocyanine green | unknown | mismatch |
+| `gpt-oss-120b` | `screen.dose_compound` | indocyanine green | indocyanine_green | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | indocyanine green | indocyanine_green | mismatch |
 
 </details>
 

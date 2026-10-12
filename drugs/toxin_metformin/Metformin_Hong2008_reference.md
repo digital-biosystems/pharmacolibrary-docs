@@ -24,8 +24,7 @@
 Hong Y; Rohatagi S; Habtemariam B; Walker JR; Schwartz SL; Mager DE et al. (2008). Journal of clinical pharmacology 48
   ·  DOI: [10.1177/0091270008316884](https://doi.org/10.1177/0091270008316884)
 
-## Model component
-<dbs-pgx drug="metformin" model-id="Metformin_Hong2008_reference" status="not_modelled" stale="false" population="patients with type 2 diabetes mellitus" measured-compound="metformin" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="metformin" model-id="Metformin_Hong2008_reference" status="not_modelled" stale="false" population="patients with type 2 diabetes mellitus" measured-compound="metformin" parameterization="apparent" topology="1C"></div>
 
 **Parameterization:** CL/F — apparent, F unknown (apparent — bioavailability not identifiable).
 

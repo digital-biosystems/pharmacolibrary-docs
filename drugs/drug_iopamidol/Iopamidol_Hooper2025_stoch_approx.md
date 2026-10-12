@@ -5,7 +5,7 @@
 
 # iopamidol — `Iopamidol_Hooper2025_stoch_approx`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. The first reading is what the record holds.">cross-check: partial</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.4). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -20,6 +20,8 @@
 **The iopamidol two-compartment model was rejected because its peripheral compartment (V2 = 350.195 L) is unreachable — no path connects it to the dose, so the published structure is incomplete.**
 
 The record reports iopamidol clearance CL = 2.394 mL/min, central volume V1 = 457.506 L, and peripheral volume V2 = 350.195 L for healthy adults with varying kidney function, with covariate effects on clearance (beta_Cl_logtEGFR_comb = 0.0766; beta_Cl_logtBSA_mosteller = 0.209). The structural check found an unreachable or orphan compartment: the peripheral compartment has no connection from the dose, meaning the two-compartment topology as recorded cannot distribute drug to it. No other failed checks or builder deviations are recorded. Extracted — iopamidol: CL 2.39 mL/min, V1 458 L, V2 350 L, CLnorm 0.209.
+
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of beta_cl_logtbsa_mosteller: this record has 0.209, the second reading none; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by glm-5.3-flash</sub>
 
@@ -82,6 +84,32 @@ Hooper L et al., Pharmacokinetic Characterization of Iop…, Journal of clinical
 - LLM selected parameter table(s) 2, 3, S25, S27
 
 ## Validation
+
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+first reading `glm-5.3-flash` — the numbers on this page are its, whatever the readers say
+
+| second reader | verdict | agreement | disagreements |
+|---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.4 (4/10 fields) | 6 |
+
+<details><summary>6 field(s) a reader read differently</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[beta_cl_logtbsa_mosteller]` | 0.209 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[beta_cl_logtegfr_comb]` | 0.0766 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cl_pop].value` | 2.394 | 1.639 | mismatch |
+| `gpt-oss-120b` | `parameters[q_pop]` | not captured | 15.274 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[v1_pop].value` | 457.506 | 399.26 | mismatch |
+| `gpt-oss-120b` | `parameters[v2_pop].value` | 350.195 | 287.311 | mismatch |
+
+</details>
+
+<details class="legend">
+<summary>Cross-check legend</summary>
+<table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>second reader</code></td><td>a model that re-read the paper independently, always from a different family than the first reading (scholarv2.secondary_for): a qwen primary is checked by gpt-oss:120b, a gpt-oss primary by qwen3.8:27b-mtp-q8_0 — two checkpoints of one family share their misreads, so agreement between them would mean little. A record can have several readers.</td></tr><tr><td><code>agreement</code></td><td>share of the compared fields that reader agreed on.</td></tr><tr><td><code>verdict</code></td><td>per reader: `confirmed` it agrees throughout · `partly confirmed` a non-structural field differs · `not confirmed` a structural one differs (clearance, a volume, ka, a lag) · `primary re-run` the first reading extracted nothing and was given one hinted retry.</td></tr><tr><td><code>combined</code></td><td>the record's verdict over ALL its readers: confirmed only when every reader that answered agrees, disputed as soon as one disagrees on a structural parameter. The most favourable reading is never taken — an extra reader must not be a way to find one that agrees.</td></tr><tr><td><code>kept</code></td><td>which reading the record holds. ALWAYS the first — a disagreement is a signal for a reviewer, never an automatic correction, so the numbers on this page are the first model's either way.</td></tr></tbody></table>
+</details>
+
 
 **Scholar closed-form checks:**
 

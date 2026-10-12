@@ -28,7 +28,7 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> | [Berry_1994_alveolar_arterial_oxygen_gradient](drugs/drug_colfosceril_palmitate/pd_Berry_1994_alveolar_arterial_oxygen_gradient.md) | alveolar-arterial oxygen gradient biomarker turnover ← colfosceril_palmitate | — | Berry DD et al., Comparison of the effect of three doses…, The Journal of pediatrics (1994) | [10.1016/s0022-3476(94)70323-x](https://doi.org/10.1016/s0022-3476(94)70323-x) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by einfracz:gpt-oss-120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [Berry_1994_alveolar_arterial_oxygen_gradient](drugs/drug_colfosceril_palmitate/pd_Berry_1994_alveolar_arterial_oxygen_gradient.md) | alveolar-arterial oxygen gradient biomarker turnover ← colfosceril_palmitate | — | Berry DD et al., Comparison of the effect of three doses…, The Journal of pediatrics (1994) | [10.1016/s0022-3476(94)70323-x](https://doi.org/10.1016/s0022-3476(94)70323-x) |
 
 ## ADME sites
 

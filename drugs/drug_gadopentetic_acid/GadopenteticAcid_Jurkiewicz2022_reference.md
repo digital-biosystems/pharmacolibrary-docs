@@ -4,7 +4,7 @@
 
 # gadopentetic acid — `GadopenteticAcid_Jurkiewicz2022_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by qwen3.8-27b (not confirmed, agreement 0.143). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by qwen3.8-27b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -19,8 +19,6 @@
 **Gadopentetic acid’s peripheral volume of distribution, V2, is 0.06 L/kg in a model with an unreachable or orphan compartment, so the record was rejected.**
 
 The record reports a central volume of distribution of 0.12 L/kg and a peripheral volume of distribution of 0.06 L/kg for gadopentetic acid, with structure 2C. The finding means a compartment has no path from the dose; it does not identify which compartment is unreachable. Extracted — gadopentetic acid: CL 0.12 L/h/kg, V1 0.12 L/kg, V2 0.06 L/kg.
-
-A second, independent reading of the paper (`qwen3.8-27b`) disagrees on the value of CL: this record has 0.12, the second reading 0.1; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by gpt-6-luna</sub>
 
@@ -58,25 +56,14 @@ Jurkiewicz E et al., Pharmacokinetics, Safety, and Efficacy…, Investigative ra
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
 first reading `gpt-6-luna` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `qwen3.8-27b` | not confirmed | 0.143 (1/7 fields) | 6 |
+| `qwen3.8-27b` | secondary_empty | 0.0 | none |
 
-<details><summary>6 field(s) a reader read differently</summary>
-
-| second reader | field | first reading | second reading | agreement |
-|---|---|---|---|---|
-| `qwen3.8-27b` | `model.topology_template` | 2C | 1C | mismatch |
-| `qwen3.8-27b` | `values[Q22]` | 0.12 | 0.1 | mismatch |
-| `qwen3.8-27b` | `values[Q57]` | 1.29 | not captured | only_one_extracted |
-| `qwen3.8-27b` | `values[Q61]` | not captured | 0.06 | only_one_extracted |
-| `qwen3.8-27b` | `values[Q63]` | 0.12 | not captured | only_one_extracted |
-| `qwen3.8-27b` | `values[Q64]` | 0.06 | not captured | only_one_extracted |
-
-</details>
+_Every reader agrees on every compared field of this record._
 
 <details class="legend">
 <summary>Cross-check legend</summary>

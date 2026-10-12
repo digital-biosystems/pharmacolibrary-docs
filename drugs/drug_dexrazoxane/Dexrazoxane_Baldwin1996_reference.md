@@ -4,7 +4,7 @@
 
 # dexrazoxane — `Dexrazoxane_Baldwin1996_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.438). The first reading is what the record holds.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">dog</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.412). The first reading is what the record holds.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">dog</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -22,7 +22,7 @@
 
 The record for dexrazoxane in male beagle dogs (Baldwin_1996) was built from the paper's abstract alone, so reported summary statistics stood in for a fitted model. Among the extracted parameters, the volume of distribution V is given as 14.6 L while the apparent steady-state distribution volume Vss is 0.67 L kg-1, and the review found a dimension mismatch on this structural parameter. Other reported values include a total clearance CL of 0.33, a blood cell to plasma partitioning ratio Kp of 0.517, an unbound fraction fu of 0.95, a hepatic extraction ratio EH of 0.228, and a renal extraction ratio E of 0.184. Extracted — dexrazoxane: Vss 0.67 L kg-1, CL 0.33 CL, AUC/dose 0.999 CL, Kp 0.517 CL, fu 0.95, EH 0.228 CL, E 0.184 CL, V 14.6 L.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of cl was dose independent (anova, p: this record has 0.33, the second reading none; it also differs on 8 more fields. That field does not shape the model.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of cl was dose independent (anova, p: this record has 0.33, the second reading none; it also differs on 9 more fields. That field does not shape the model.
 
 <sub>reviewed by glm-5.3-flash</sub>
 
@@ -89,20 +89,21 @@ first reading `glm-5.3-flash` — the numbers on this page are its, whatever the
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | partly confirmed | 0.438 (7/16 fields) | 9 |
+| `gpt-oss-120b` | partly confirmed | 0.412 (7/17 fields) | 10 |
 
-<details><summary>9 field(s) a reader read differently</summary>
+<details><summary>10 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
 | `gpt-oss-120b` | `parameters[cl was dose independent (anova, p]` | 0.33 | not captured | only_one_extracted |
 | `gpt-oss-120b` | `parameters[directly proportional to the dose (r]` | 0.999 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[dose]` | not captured | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[gfr]` | not captured | not captured | only_one_extracted |
 | `gpt-oss-120b` | `parameters[hepatic drug extraction ratio]` | not captured | 0.228 | only_one_extracted |
 | `gpt-oss-120b` | `parameters[hepatic drug extraction ratios]` | 0.228 | not captured | only_one_extracted |
-| `gpt-oss-120b` | `parameters[renal drug extraction ratio]` | not captured | 0.184 | only_one_extracted |
 | `gpt-oss-120b` | `parameters[renal drug extraction ratios]` | 0.184 | not captured | only_one_extracted |
-| `gpt-oss-120b` | `parameters[systemic clearance]` | not captured | 10.3 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[terminal half-life]` | not captured | 1.1 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[systemic clearance]` | not captured | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[terminal half-life]` | not captured | not captured | only_one_extracted |
 | `gpt-oss-120b` | `parameters[v]` | 14.6 | not captured | only_one_extracted |
 
 </details>

@@ -40,7 +40,7 @@ Desloratadine is a non-sedating antihistamine used to treat allergic rhinitis an
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> | [Peña_2008_flare](drugs/drug_desloratadine/pd_Pe_a_2008_flare.md) | histamine-induced flare reaction ← desloratadine · indirect response — drug inhibits the production of histamine-induced flare reaction | — | Peña J et al., Antihistaminic effects of rupatadine an…, European journal of drug me… (2008) | [10.1007/BF03191027](https://doi.org/10.1007/BF03191027) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--green" title="re-read by einfracz:gpt-oss-120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span> | [Peña_2008_flare](drugs/drug_desloratadine/pd_Pe_a_2008_flare.md) | histamine-induced flare reaction ← desloratadine · indirect response — drug inhibits the production of histamine-induced flare reaction | — | Peña J et al., Antihistaminic effects of rupatadine an…, European journal of drug me… (2008) | [10.1007/BF03191027](https://doi.org/10.1007/BF03191027) |
 
 ## ADME sites
 

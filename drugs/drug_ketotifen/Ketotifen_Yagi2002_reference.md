@@ -4,7 +4,7 @@
 
 # ketotifen — `Ketotifen_Yagi2002_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by qwen3.8-27b (partly confirmed, agreement 0.8). The first reading is what the record holds.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (rabbit), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rabbit</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by qwen3.8-27b (not confirmed, agreement 0.6). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rabbit), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rabbit</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -22,7 +22,7 @@
 
 A model needs both clearance and volume; without the volume it could only be built on a library default, so it was not. Extracted — ketotifen: CL 2.04 l//h/kg.
 
-A second, independent reading of the paper (`qwen3.8-27b`) disagrees on the value of cl: this record has 2.04, the second reading none. That field does not shape the model.
+A second, independent reading of the paper (`qwen3.8-27b`) disagrees on which molecule was measured: this record has ketotifen fumarate, the second reading ketotifen; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -68,18 +68,19 @@ Yagi N et al., Pharmacokinetics of ketotifen fumarate…, Biological & pharmaceu
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
 first reading `gpt-6-luna` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `qwen3.8-27b` | partly confirmed | 0.8 (4/5 fields) | 1 |
+| `qwen3.8-27b` | not confirmed | 0.6 (3/5 fields) | 2 |
 
-<details><summary>1 field(s) a reader read differently</summary>
+<details><summary>2 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
 | `qwen3.8-27b` | `parameters[cl]` | 2.04 | not captured | only_one_extracted |
+| `qwen3.8-27b` | `screen.primary_analyte` | ketotifen fumarate | ketotifen | mismatch |
 
 </details>
 

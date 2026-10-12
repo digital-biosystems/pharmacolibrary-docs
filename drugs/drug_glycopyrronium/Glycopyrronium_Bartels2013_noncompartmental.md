@@ -5,7 +5,7 @@
 
 # glycopyrronium — `Glycopyrronium_Bartels2013_noncompartmental`
 
-> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.636), gpt-oss:120b (not confirmed, agreement 0.636). The first reading is what the record holds.">cross-check: disputed 0/2</span>
+> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.316), gpt-oss:120b (not confirmed, agreement 0.636). The first reading is what the record holds.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -21,7 +21,7 @@
 
 A model needs both clearance and volume; without the volume it could only be built on a library default, so it was not. Extracted — glycopyrronium: CL 42.5, Vss 102, t1/2z 0.45.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on `parameters[fast lung absorption half-life].parameter_id`: this record has Q59, the second reading Q95; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on bioavailability: this record has none, the second reading 1.11; it also differs on 12 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -88,16 +88,25 @@ first reading `qwen3.8-27b` — the numbers on this page are its, whatever the r
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.636 (7/11 fields) | 4 |
+| `gpt-oss-120b` | not confirmed | 0.316 (6/19 fields) | 13 |
 | `gpt-oss:120b` | not confirmed | 0.636 (7/11 fields) | 4 |
 
-<details><summary>8 field(s) a reader read differently</summary>
+<details><summary>17 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `model.bioavailability.theta` | not captured | 1.11 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[0]` | not captured | 5 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[bioavailability after inhalation with concomitant charcoal treatment expressed as odds]` | not captured | 1.11 | only_one_extracted |
 | `gpt-oss-120b` | `parameters[fast lung absorption half-life].parameter_id` | Q59 | Q95 | mismatch |
+| `gpt-oss-120b` | `parameters[intercompartmental clearance]` | not captured | 8.23 | only_one_extracted |
 | `gpt-oss-120b` | `parameters[intermediate lung absorption half-life]` | 0.45 | not captured | only_one_extracted |
 | `gpt-oss-120b` | `parameters[slow lung absorption half-life]` | not captured | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[slow lung absorption rate]` | not captured | 0.009 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[systemic clearance].rse_percent` | not captured | 3.1 | mismatch |
+| `gpt-oss-120b` | `parameters[volume of central plasma compartment]` | not captured | 11.3 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[volume of distribution at steady state].value` | 102 | 82.7 | mismatch |
+| `gpt-oss-120b` | `parameters[volume of peripheral pk compartment]` | not captured | 71.5 | only_one_extracted |
 | `gpt-oss-120b` | `parameters[vz]` | 22.38 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[0]` | not captured | 5 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[fast lung absorption half-life].parameter_id` | Q59 | Q95 | mismatch |

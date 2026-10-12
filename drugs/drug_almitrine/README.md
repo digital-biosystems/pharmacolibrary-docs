@@ -24,7 +24,7 @@ Almitrine is a respiratory stimulant drug used for breathing problems. It has be
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (primary re-run, agreement 0.8). The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Winkelmann_1992_reference](drugs/drug_almitrine/Almitrine_Winkelmann1992_reference.md) | — | 1-compartment (no model) | 0 | Winkelmann BR et al., Acute and chronic effects of low dose a…, The European journal of med… (1992) | — |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (primary re-run, agreement 0.6). The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Winkelmann_1992_reference](drugs/drug_almitrine/Almitrine_Winkelmann1992_reference.md) | — | 1-compartment (no model) | 0 | Winkelmann BR et al., Acute and chronic effects of low dose a…, The European journal of med… (1992) | — |
 
 ## ADME sites
 

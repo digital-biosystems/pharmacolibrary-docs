@@ -24,8 +24,7 @@
 Dong Q; Chen C; Taubert M; Bilal M; Kinzig M; Sörgel F; Scherf-Clavel O; Fuhr U; Dokos C et al. (2024). European journal of clinical pharmacology 80
   ·  DOI: [10.1007/s00228-024-03673-x](https://doi.org/10.1007/s00228-024-03673-x)
 
-## Model component
-<dbs-pgx drug="metformin" model-id="Metformin_Dong2024_reference" status="extracted" stale="true" population="" measured-compound="metformin" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="metformin" model-id="Metformin_Dong2024_reference" status="extracted" stale="true" population="" measured-compound="metformin" parameterization="apparent" topology="1C"></div>
 
 **Parameterization:** CL/F, V/F — apparent, F unknown (apparent — bioavailability not identifiable).
 

@@ -19,8 +19,7 @@
 Plosker GL et al. (2010). Drugs 70
   ·  DOI: [10.2165/11204630-000000000-00000](https://doi.org/10.2165/11204630-000000000-00000)
 
-## Model component
-<dbs-pgx drug="tolvaptan" model-id="Tolvaptan_Plosker2010_reference" status="not_modelled" stale="false" population="" measured-compound="tolvaptan" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="tolvaptan" model-id="Tolvaptan_Plosker2010_reference" status="not_modelled" stale="false" population="" measured-compound="tolvaptan" parameterization="mechanistic" topology="1C"></div>
 
 **Parameterization:** V/F — mechanistic, F unknown (apparent — bioavailability not identifiable).
 

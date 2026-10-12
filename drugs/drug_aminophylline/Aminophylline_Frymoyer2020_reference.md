@@ -5,7 +5,7 @@
 
 # aminophylline — `Aminophylline_Frymoyer2020_reference`
 
-> ## <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: the record defines covariate effects (weight on clearance, renal function …) but the engineer simulated only the reference individual, so those scenarios were never run. The base model still reproduces the paper; what is missing is the covariate curves.">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.364). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: the record defines covariate effects (weight on clearance, renal function …) but the engineer simulated only the reference individual, so those scenarios were never run. The base model still reproduces the paper; what is missing is the covariate curves.">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -23,7 +23,7 @@
 
 Simulated as the paper dosed it, the model's terminal half-life differs from the value the paper reports by more than the tolerance. The base model was simulated, not the covariate effects the record defines. None of the extracted parameters is aminophylline's own; they describe theophylline. Extracted — theophylline: V3 2.7 L, Kp 0.68, CL 0.049 L/h, V 2.7 L.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of clearance: this record has 0.049, the second reading none; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has aminophylline, the second reading unknown; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -101,19 +101,17 @@ first reading `glm-5.3-flash` — the numbers on this page are its, whatever the
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.364 (4/11 fields) | 7 |
+| `gpt-oss-120b` | not confirmed | 0.5 (5/10 fields) | 5 |
 
-<details><summary>7 field(s) a reader read differently</summary>
+<details><summary>5 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss-120b` | `parameters[clearance]` | 0.049 | not captured | only_one_extracted |
 | `gpt-oss-120b` | `parameters[k (rbc/plasma ratio)4].value` | 0.68 | 0.42 | mismatch |
 | `gpt-oss-120b` | `parameters[theta_q22_category]` | not captured | 0.040 | only_one_extracted |
 | `gpt-oss-120b` | `parameters[theta_q354_category]` | 0.048 | not captured | only_one_extracted |
-| `gpt-oss-120b` | `parameters[v (l per 3.3 kg)3].parameter_id` | Q77 | Q61 | mismatch |
 | `gpt-oss-120b` | `parameters[v (l per 3.3 kg)3].value` | 2.70 | 2.38 | mismatch |
-| `gpt-oss-120b` | `parameters[volume]` | 2.7 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | aminophylline | unknown | mismatch |
 
 </details>
 

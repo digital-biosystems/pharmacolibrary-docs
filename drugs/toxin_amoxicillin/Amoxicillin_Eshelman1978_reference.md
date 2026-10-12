@@ -21,8 +21,7 @@
 Eshelman FN; Spyker DA et al. (1978). Antimicrobial agents and chemotherapy 14
   ·  DOI: [10.1128/AAC.14.4.539](https://doi.org/10.1128/AAC.14.4.539)
 
-## Model component
-<dbs-pgx drug="amoxicillin" model-id="Amoxicillin_Eshelman1978_reference" status="extracted" stale="true" population="healthy adults" measured-compound="amoxicillin and ampicillin" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="amoxicillin" model-id="Amoxicillin_Eshelman1978_reference" status="extracted" stale="true" population="healthy adults" measured-compound="amoxicillin and ampicillin" parameterization="mechanistic" topology="1C"></div>
 
 **Parameterization:** mechanistic.
 

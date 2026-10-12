@@ -21,8 +21,7 @@
 Yata M; DeFrancesco TC; Bonagura JD; Papich MG et al. (2026). Journal of veterinary pharmacology and therapeutics 49
   ·  DOI: [10.1111/jvp.70057](https://doi.org/10.1111/jvp.70057)
 
-## Model component
-<dbs-pgx drug="clopidogrel" model-id="Clopidogrel_Yata2026_reference" status="extracted" stale="true" population="" measured-compound="clopidogrel" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="clopidogrel" model-id="Clopidogrel_Yata2026_reference" status="extracted" stale="true" population="" measured-compound="clopidogrel" parameterization="apparent" topology="1C"></div>
 
 **Parameterization:** CL/F, V/F — apparent, F unknown (apparent — bioavailability not identifiable).
 

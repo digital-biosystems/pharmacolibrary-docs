@@ -5,7 +5,7 @@
 
 # flumazenil — `Flumazenil_Cha2024_reference`
 
-> ## <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.75). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -18,8 +18,6 @@
 ### Reviewer guidance
 
 **Every check that could be run on this record passed.**
-
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q312: this record has 158.91, the second reading 158.91; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -59,23 +57,14 @@ Cha HJ et al., Development of a Web Application for Si…, Pharmaceutics (2024)
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
 first reading `glm-5.3-flash` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.75 (12/16 fields) | 4 |
+| `gpt-oss-120b` | secondary_empty | 0.0 | none |
 
-<details><summary>4 field(s) a reader read differently</summary>
-
-| second reader | field | first reading | second reading | agreement |
-|---|---|---|---|---|
-| `gpt-oss-120b` | `values[Q312]` | 158.91 | 158.91 | mismatch |
-| `gpt-oss-120b` | `values[Q314]` | not captured | 22.1 | only_one_extracted |
-| `gpt-oss-120b` | `values[Q342]` | 0.22 | 0.24 | mismatch |
-| `gpt-oss-120b` | `values[Q900]` | 0.853 | not captured | only_one_extracted |
-
-</details>
+_Every reader agrees on every compared field of this record._
 
 <details class="legend">
 <summary>Cross-check legend</summary>

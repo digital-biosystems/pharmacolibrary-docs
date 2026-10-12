@@ -21,8 +21,7 @@
 Lacampagne M; Hervé G; Claustre L; Jourdannaud N; Lacroix M; Roques B et al. (2026). Veterinary and animal science 33
   ·  DOI: [10.1016/j.vas.2026.100698](https://doi.org/10.1016/j.vas.2026.100698)
 
-## Model component
-<dbs-pgx drug="amoxicillin" model-id="Amoxicillin_Lacampagne2026_reference" status="extracted" stale="true" population="post-weaning piglets" measured-compound="amoxicillin" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="amoxicillin" model-id="Amoxicillin_Lacampagne2026_reference" status="extracted" stale="true" population="post-weaning piglets" measured-compound="amoxicillin" parameterization="mechanistic" topology="2C"></div>
 
 **Parameterization:** mechanistic.
 

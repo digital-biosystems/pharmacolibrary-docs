@@ -28,8 +28,7 @@
 ## Citation
 not matched (stem Carceles_1995)
 
-## Model component
-<dbs-pgx drug="amoxicillin" model-id="Amoxicillin_Carceles1995_intravenous_route_w_10_turkeys_and" status="" stale="true" population="turkeys and chickens" measured-compound="" parameterization="" topology=""></dbs-pgx>
+<div class="pk-model-meta" hidden drug="amoxicillin" model-id="Amoxicillin_Carceles1995_intravenous_route_w_10_turkeys_and" status="" stale="true" population="turkeys and chickens" measured-compound="" parameterization="" topology=""></div>
 
 **Parameterization:** not captured.
 

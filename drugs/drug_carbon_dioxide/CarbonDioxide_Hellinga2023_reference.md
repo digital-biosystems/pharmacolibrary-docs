@@ -5,7 +5,7 @@
 
 # carbon dioxide — `CarbonDioxide_Hellinga2023_reference`
 
-> ## <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.529). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.471). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -19,7 +19,7 @@
 
 **Every check that could be run on this record passed.**
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q319: this record has 0.1, the second reading none; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q310: this record has 0.95, the second reading none; it also differs on 8 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -61,20 +61,21 @@ first reading `glm-5.3-flash` — the numbers on this page are its, whatever the
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.529 (9/17 fields) | 8 |
+| `gpt-oss-120b` | not confirmed | 0.471 (8/17 fields) | 9 |
 
-<details><summary>8 field(s) a reader read differently</summary>
+<details><summary>9 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `values[Q310]` | 0.95 | not captured | only_one_extracted |
 | `gpt-oss-120b` | `values[Q319]` | 0.1 | not captured | only_one_extracted |
 | `gpt-oss-120b` | `values[Q321]` | 0.05 | 5 | mismatch |
+| `gpt-oss-120b` | `values[Q324]` | not captured | 0.2 | only_one_extracted |
 | `gpt-oss-120b` | `values[Q326]` | 30 | not captured | only_one_extracted |
-| `gpt-oss-120b` | `values[Q335]` | 1.0 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `values[Q335]` | 1.0 | 0.4 | mismatch |
 | `gpt-oss-120b` | `values[Q362]` | 2 | not captured | only_one_extracted |
-| `gpt-oss-120b` | `values[Q57]` | not captured | 30 | only_one_extracted |
 | `gpt-oss-120b` | `values[Q67]` | 10 | not captured | only_one_extracted |
-| `gpt-oss-120b` | `values[Q900]` | not captured | 0.1 | only_one_extracted |
+| `gpt-oss-120b` | `values[Q83]` | not captured | 0.95 | only_one_extracted |
 
 </details>
 

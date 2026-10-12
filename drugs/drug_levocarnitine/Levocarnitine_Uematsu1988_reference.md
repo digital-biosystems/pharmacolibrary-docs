@@ -56,7 +56,7 @@ _No resolved parameters._
 ## Validation
 
 **Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
-first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
+first reading `qwen3.8-27b` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
@@ -68,12 +68,12 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
 | `gpt-oss-120b` | `parameters[t1/2 gamma]` | not captured | not captured | only_one_extracted |
-| `gpt-oss-120b` | `parameters[total 24 h excretion in urine]` | not captured | 4.6 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[total 24 h excretion in urine]` | not captured | not captured | only_one_extracted |
 | `gpt-oss-120b` | `parameters[urine recovery in 24 h]` | not captured | not captured | only_one_extracted |
-| `gpt-oss-120b` | `parameters[v.]` | not captured | 3.0 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[v.]` | not captured | not captured | only_one_extracted |
 | `gpt-oss-120b` | `parameters[vc]` | not captured | not captured | only_one_extracted |
-| `gpt-oss-120b` | `screen.dose_compound` | l-carnitine | unknown | mismatch |
-| `gpt-oss-120b` | `screen.primary_analyte` | l-carnitine | unknown | mismatch |
+| `gpt-oss-120b` | `screen.dose_compound` | l-carnitine | levocarnitine | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | l-carnitine | levocarnitine | mismatch |
 | `gpt-oss:120b` | `parameters[l-carnitine]` | not captured | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[t1/2 gamma]` | not captured | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[t1/2 gamma]` | not captured | not captured | only_one_extracted |

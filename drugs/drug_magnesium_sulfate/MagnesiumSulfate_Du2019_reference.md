@@ -5,7 +5,7 @@
 
 # magnesium sulfate — `MagnesiumSulfate_Du2019_reference`
 
-> ## <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: the record defines covariate effects (weight on clearance, renal function …) but the engineer simulated only the reference individual, so those scenarios were never run. The base model still reproduces the paper; what is missing is the covariate curves.">built, not shipped</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.818). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: the record defines covariate effects (weight on clearance, renal function …) but the engineer simulated only the reference individual, so those scenarios were never run. The base model still reproduces the paper; what is missing is the covariate curves.">built, not shipped</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.833). The first reading is what the record holds.">cross-check: partial</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -23,7 +23,7 @@
 
 Although the paper reports clearance of 3.72 L/h and central volume of 15.4 L, the model record did not assign these values to the corresponding parameters. Consequently, the system populated clearance, distribution volumes, and intercompartmental transfer with placeholder values rather than the specific estimates from the study. Additionally, the defined covariate effects for serum creatinine and weight were not exercised during simulation. Extracted — magnesium sulfate: CL 3.72 L/h, V1 15.4 L, Q 3.66 L/h, V2 17 L.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has magnesium sulfate, the second reading magnesium_sulfate; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of serum_creatinine_exponent_for_cl: this record has -0.731, the second reading none; it also differs on 1 more field. That field does not shape the model.
 
 <sub>reviewed by qwen3.8-27b</sub>
 
@@ -77,19 +77,19 @@ Du L et al., Population Pharmacokinetic Modeling to…, Journal of clinical phar
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
 first reading `qwen3.8-27b` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.818 (9/11 fields) | 2 |
+| `gpt-oss-120b` | partly confirmed | 0.833 (10/12 fields) | 2 |
 
 <details><summary>2 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss-120b` | `screen.dose_compound` | magnesium sulfate | magnesium_sulfate | mismatch |
-| `gpt-oss-120b` | `screen.primary_analyte` | magnesium | magnesium_sulfate | mismatch |
+| `gpt-oss-120b` | `parameters[serum_creatinine_exponent_for_cl]` | -0.731 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_cl_creatinine_power]` | not captured | -0.731 | only_one_extracted |
 
 </details>
 

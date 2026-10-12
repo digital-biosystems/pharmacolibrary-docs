@@ -5,7 +5,7 @@
 
 # fexofenadine — `Fexofenadine_Jang2023_slco2b1_1457c_t_genotypes`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by qwen3.8-27b (partly confirmed, agreement 0.875). The first reading is what the record holds.">cross-check: partial</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--green" title="re-read by qwen3.8-27b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -21,7 +21,7 @@
 
 The model does not reproduce the paper's time of the peak (tmax) (paper 2, model 2.98). Simulated as the paper dosed it, the model's time of the peak (tmax) differs from the value the paper reports by more than the tolerance. The model does not reproduce the paper's peak concentration (Cmax) (paper 0.00045, model 0.000185), or its terminal half-life (paper 2.45, model 2.99); simulated as the paper dosed it, both differ from the reported values by more than the tolerance. Ka use library defaults, not estimates from this paper; these values affect the simulated profile but are not supported by this paper, and Tlag was also defaulted; the model additionally assumed F=1 and Fm=1 with no molar correction and first-order depot input for extravascular dosing, while a reported unit could not be converted to SI. Extracted — fexofenadine: t1/2z 2.92 h, tmax 1.72 h, Cmax 930 ng/mL, AUCt 5.11e+03 h·ng/mL, AUC∞ 5.62e+03 h·ng/mL, V/F 167 L, CL/F 38.9 L/h, MRT 5.13 h, … (+2).
 
-A second, independent reading of the paper (`qwen3.8-27b`) disagrees on the value of auc108-120: this record has none, the second reading 5615.91; it also differs on 1 more field. That field does not shape the model.
+Independently confirmed by `qwen3.8-27b`.
 
 <sub>reviewed by gpt-6-luna</sub>
 
@@ -85,21 +85,14 @@ Jang JH et al., Quantitative assessment of the relevanc…, Journal of pharmaceu
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--green">cross-checked ✓</span>  
 first reading `gpt-6-luna` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `qwen3.8-27b` | partly confirmed | 0.875 (14/16 fields) | 2 |
+| `qwen3.8-27b` | confirmed | 1.0 (15/15 fields) | none |
 
-<details><summary>2 field(s) a reader read differently</summary>
-
-| second reader | field | first reading | second reading | agreement |
-|---|---|---|---|---|
-| `qwen3.8-27b` | `parameters[auc108-120]` | not captured | 5615.91 | only_one_extracted |
-| `qwen3.8-27b` | `parameters[r value a]` | 1.06 | not captured | only_one_extracted |
-
-</details>
+_Every reader agrees on every compared field of this record._
 
 <details class="legend">
 <summary>Cross-check legend</summary>

@@ -26,8 +26,7 @@
 Arancibia A; Guttmann J; González G; González C et al. (1980). Antimicrobial agents and chemotherapy 17
   ·  DOI: [10.1128/AAC.17.2.199](https://doi.org/10.1128/AAC.17.2.199)
 
-## Model component
-<dbs-pgx drug="amoxicillin" model-id="Amoxicillin_Arancibia1980_reference" status="extracted" stale="true" population="healthy adults" measured-compound="amoxicillin" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="amoxicillin" model-id="Amoxicillin_Arancibia1980_reference" status="extracted" stale="true" population="healthy adults" measured-compound="amoxicillin" parameterization="mechanistic" topology="1C"></div>
 
 **Parameterization:** mechanistic.
 

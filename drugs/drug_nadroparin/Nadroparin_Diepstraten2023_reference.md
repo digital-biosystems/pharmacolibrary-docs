@@ -5,7 +5,7 @@
 
 # nadroparin — `Nadroparin_Diepstraten2023_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.333). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.556). The first reading is what the record holds.">cross-check: partial</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -21,7 +21,7 @@
 
 The record lists a total clearance of 44.7 mL/min and a volume of distribution of 17 mL. These values fall outside the expected physiological range for the drug, indicating a potential extraction error in units or scale. Extracted — anti-Xa: kabs 0.00483 min−1, V 17 mL, CL 44.7 mL/min.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which molecule was measured: this record has anti-Xa, the second reading nadroparin; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of base clearance in patients [not undergoing cvvhd in final model]: this record has none, the second reading 26.7; it also differs on 3 more fields. That field does not shape the model.
 
 <sub>reviewed by qwen3.8-27b</sub>
 
@@ -76,23 +76,21 @@ Diepstraten J et al., Low and Highly Variable Exposure to Pro…, Clinical pharm
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
 first reading `qwen3.8-27b` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.333 (3/9 fields) | 6 |
+| `gpt-oss-120b` | partly confirmed | 0.556 (5/9 fields) | 4 |
 
-<details><summary>6 field(s) a reader read differently</summary>
+<details><summary>4 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss-120b` | `parameters[absorption rate]` | 0.00483 | not captured | only_one_extracted |
-| `gpt-oss-120b` | `parameters[absorption rate]` | not captured | 0.00483 | only_one_extracted |
 | `gpt-oss-120b` | `parameters[base clearance in patients [not undergoing cvvhd in final model] (ml/min)a]` | 44.7 | not captured | only_one_extracted |
-| `gpt-oss-120b` | `parameters[base clearance in patients [not undergoing cvvhd in final model]]` | not captured | 44.7 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[base clearance in patients [not undergoing cvvhd in final model]]` | not captured | 26.7 | only_one_extracted |
 | `gpt-oss-120b` | `parameters[volume of distribution (ml)a]` | 17 | not captured | only_one_extracted |
-| `gpt-oss-120b` | `screen.primary_analyte` | anti-Xa | nadroparin | mismatch |
+| `gpt-oss-120b` | `parameters[volume of distribution]` | not captured | 11300 | only_one_extracted |
 
 </details>
 

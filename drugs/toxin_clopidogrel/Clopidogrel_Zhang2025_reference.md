@@ -20,8 +20,7 @@
 ## Citation
 not matched (stem Zhang_2025)
 
-## Model component
-<dbs-pgx drug="clopidogrel" model-id="Clopidogrel_Zhang2025_reference" status="extracted" stale="true" population="" measured-compound="clopidogrel" parameterization="apparent" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="clopidogrel" model-id="Clopidogrel_Zhang2025_reference" status="extracted" stale="true" population="" measured-compound="clopidogrel" parameterization="apparent" topology="1C"></div>
 
 **Parameterization:** CL/F, V/F — apparent, F unknown (apparent — bioavailability not identifiable).
 

@@ -20,8 +20,7 @@
 ## Citation
 not matched (stem Overgaard_2021_2)
 
-## Model component
-<dbs-pgx drug="semaglutide" model-id="Semaglutide_Overgaard2021v2_reference" status="extracted" stale="true" population="adults with type 2 diabetes" measured-compound="semaglutide" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="semaglutide" model-id="Semaglutide_Overgaard2021v2_reference" status="extracted" stale="true" population="adults with type 2 diabetes" measured-compound="semaglutide" parameterization="mechanistic" topology="1C"></div>
 
 **Parameterization:** mechanistic.
 

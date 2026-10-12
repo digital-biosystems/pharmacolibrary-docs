@@ -12,8 +12,7 @@
 Patel O; Muller CJF; Joubert E; Rosenkranz B; Taylor MJC; Louw J; et al. et al. (2019). Frontiers in pharmacology 10
   ·  DOI: [10.3389/fphar.2019.01243](https://doi.org/10.3389/fphar.2019.01243)
 
-## Model component
-<dbs-pgx drug="metformin" model-id="Metformin_Patel2019_met_grt" status="rejected" stale="false" population="Wistar rats" measured-compound="metformin" parameterization="apparent" topology="3C"></dbs-pgx>
+<div class="pk-model-meta" hidden drug="metformin" model-id="Metformin_Patel2019_met_grt" status="rejected" stale="false" population="Wistar rats" measured-compound="metformin" parameterization="apparent" topology="3C"></div>
 
 **Parameterization:** CL/F, V/F — apparent, F unknown (apparent — bioavailability not identifiable).
 

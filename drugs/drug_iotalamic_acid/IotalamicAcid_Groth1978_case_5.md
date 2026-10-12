@@ -5,7 +5,7 @@
 
 # iotalamic acid — `IotalamicAcid_Groth1978_case_5`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.429). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.533). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -21,7 +21,7 @@
 
 The central compartment volume V1 for sodium iothalamate is recorded as 0.016 ml, far outside any physiological window, and the peripheral volume V2 is 0.082 L; these dimension/scale problems triggered the rejection. One reported unit could not be converted to SI, so the parameter arrived without an SI value. A compartment in the two-compartment structure has no path from the dose, making it unreachable. The remaining parameters (CLR 107 ml/min, kel 0.024 min−1, Vss 11.8 l, V 11.5 l) are not themselves flagged. Extracted — sodium iothalamate: CLR 107 ml/min, kel 0.024 min−1, V1 0.016 ml, CLint 99 ml/min, Vss 11.8 l, V 11.5 l, V2 0.082 L.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has sodium iothalamate, the second reading iotalamic_acid; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on `parameters[clin].parameter_id`: this record has Q3, the second reading Q22; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by glm-5.3-flash</sub>
 
@@ -90,20 +90,19 @@ first reading `glm-5.3-flash` — the numbers on this page are its, whatever the
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.429 (6/14 fields) | 8 |
+| `gpt-oss-120b` | not confirmed | 0.533 (8/15 fields) | 7 |
 
-<details><summary>8 field(s) a reader read differently</summary>
+<details><summary>7 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[clin].parameter_id` | Q3 | Q22 | mismatch |
 | `gpt-oss-120b` | `parameters[extracell. vol. 10% of b.w.]` | 11.5 | not captured | only_one_extracted |
-| `gpt-oss-120b` | `parameters[k2].parameter_id` | Q47 | Q302 | mismatch |
 | `gpt-oss-120b` | `parameters[k3]` | not captured | 0.021 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[nosslin's method "random-walk" model]` | 107 | not captured | only_one_extracted |
-| `gpt-oss-120b` | `parameters[total volume of distr.].parameter_id` | Q65 | Q61 | mismatch |
+| `gpt-oss-120b` | `parameters[nosslin's method "random-walk" model].parameter_id` | Q26 | Q41 | mismatch |
+| `gpt-oss-120b` | `parameters[total volume of distr.]` | 11.8 | not captured | only_one_extracted |
+| `gpt-oss-120b` | `parameters[v1].parameter_id` | Q63 | Q61 | mismatch |
 | `gpt-oss-120b` | `parameters[vpt,bi]` | 0.082 | not captured | only_one_extracted |
-| `gpt-oss-120b` | `screen.dose_compound` | sodium iothalamate | iotalamic_acid | mismatch |
-| `gpt-oss-120b` | `screen.primary_analyte` | sodium iothalamate | iotalamic_acid | mismatch |
 
 </details>
 

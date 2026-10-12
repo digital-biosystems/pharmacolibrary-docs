@@ -21,7 +21,7 @@
 
 The model does not reproduce the paper’s time of peak concentration (tmax): the paper reports 2.0 h and the model predicts 2.693386773547094 h; it also does not reproduce peak concentration (Cmax) (paper 0.00045017 kg/m3, model 0.0001086665312206624 kg/m3). It does not reproduce terminal half-life either: reported values include 1.84 h and 3.38 h, compared with the model’s 2.397564831472877 h. Ka and Tlag were defaulted rather than estimated from the paper; the model also assumed F=1, Fm=1, no molar correction, and first-order depot input. Extracted — fexofenadine: D1 0.45 h, V/F 259 L, CL/F 75.9 L/h.
 
-A second, independent reading of the paper (`qwen3.8-27b`) disagrees on the value of cl/f: this record has none, the second reading 75.87; it also differs on 3 more fields. That field does not shape the model.
+A second, independent reading of the paper (`qwen3.8-27b`) disagrees on the value of relative standard errors (rse) of the typical values of the pharmacokinetic parameters v/f, cl/f, ka, and tlag: this record has none, the second reading 30; it also differs on 3 more fields. That field does not shape the model.
 
 <sub>reviewed by gpt-6-luna</sub>
 
@@ -95,7 +95,7 @@ first reading `gpt-6-luna` — the numbers on this page are its, whatever the re
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `qwen3.8-27b` | `parameters[cl/f]` | not captured | 75.87 | only_one_extracted |
+| `qwen3.8-27b` | `parameters[relative standard errors (rse) of the typical values of the pharmacokinetic parameters v/f, cl/f, ka, and tlag]` | not captured | 30 | only_one_extracted |
 | `qwen3.8-27b` | `parameters[table 1: cl/f (l/h), tt]` | 75.87 | not captured | only_one_extracted |
 | `qwen3.8-27b` | `parameters[table 1: v/f (l), tt]` | 259.19 | not captured | only_one_extracted |
 | `qwen3.8-27b` | `parameters[v/f]` | not captured | 259.19 | only_one_extracted |

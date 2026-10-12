@@ -21,7 +21,7 @@
 
 The model was built, but nadroparin's clearance, volume of distribution and absorption lag time had no value, so a library placeholder stood in and the model was held back rather than published with an invented number. Extracted — nadroparin: CL/F 0.211 L/h, V/F 1.55 L, kabs 0.495 h-1.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which molecule was measured: this record has anti-Xa, the second reading unknown. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which molecule was measured: this record has anti-Xa, the second reading nadroparin. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -82,7 +82,7 @@ first reading `qwen3.8-27b` — the numbers on this page are its, whatever the r
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss-120b` | `screen.primary_analyte` | anti-Xa | unknown | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | anti-Xa | nadroparin | mismatch |
 | `gpt-oss:120b` | `parameters[cl/f].value` | 0.211 | 0.063 | mismatch |
 | `gpt-oss:120b` | `parameters[ka].value` | 0.495 | 0.073 | mismatch |
 | `gpt-oss:120b` | `parameters[vd/f].value` | 1.55 | 0.02 | mismatch |
