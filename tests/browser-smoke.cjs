@@ -15,6 +15,18 @@ const record = '#/drugs/drug_clopidogrel/Clopidogrel_Jung2024';
     page.on('response', r => {if (r.status() >= 400 && r.url().startsWith(base)) failed.push(`${r.status()} ${r.url()}`);});
     await page.goto(base);
     await page.waitForSelector('.pklg .tiles');
+    assert.equal(await page.locator('.pklg .tiles').evaluate(el => getComputedStyle(el).display), 'grid',
+      'homepage tiles must use the ledger grid layout');
+    for (const selector of ['.pklg .tile', '.pklg .cbox']) {
+      const boxes = await page.locator(selector).evaluateAll(elements => elements.map(el => {
+        const style = getComputedStyle(el);
+        return {border: style.borderTopStyle, width: parseFloat(style.borderTopWidth),
+          padding: parseFloat(style.paddingLeft)};
+      }));
+      assert.ok(boxes.length > 0, `homepage must contain ${selector} boxes`);
+      assert.ok(boxes.every(box => box.border === 'solid' && box.width >= 1 && box.padding > 0),
+        `${selector} boxes must have visible borders and padding`);
+    }
     assert.equal(await page.locator('script:not([src])').count(), 0);
     assert.equal(await page.locator('.markdown-section style').count(), 0);
     const heavy = await page.evaluate(() => performance.getEntriesByType('resource').map(r=>r.name).filter(n=>/sqlite|sql-wasm|vendor\/dbs-components|dbs-bundle/.test(n)));

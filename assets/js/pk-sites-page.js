@@ -119,22 +119,67 @@
       draw();
     }).catch(function (e) { status(String(e.message || e), true); });
   }
-  // The page's six views are tabs (sites.md marks them up): one panel shown at a time, the
-  // reader's choice kept for this browser session. Panels are rendered whether shown or not —
-  // nothing in pk-sites.js measures the layout while drawing — so switching costs nothing.
-  function tab(name) {
-    var bs = document.querySelectorAll('.markdown-section [data-pkstab]');
+  // Both layouts reuse the same panels: switching never redraws or resets patient controls.
+  var expanded = false, currentTab = 'heatmap';
+  function tab(name, jump) {
+    var wrap = el('pks-views'); if (!wrap) return;
+    var bs = wrap.querySelectorAll('[data-pkstab]');
     if (!bs.length) return;
     if (!Array.prototype.some.call(bs, function (b) { return b.dataset.pkstab === name; })) name = bs[0].dataset.pkstab;
-    bs.forEach(function (b) { b.setAttribute('aria-selected', String(b.dataset.pkstab === name)); });
-    document.querySelectorAll('.markdown-section [data-pkspanel]').forEach(function (p) { p.hidden = p.dataset.pkspanel !== name; });
-    try { sessionStorage.setItem('pks-tab', name); } catch (e) {}
+    currentTab = name;
+    wrap.classList.toggle('pks-expanded', expanded);
+    var bar = wrap.querySelector('.pk-tabbar');
+    bar.setAttribute('role', expanded ? 'navigation' : 'tablist');
+    bar.setAttribute('aria-label', expanded ? 'Jump to a section' : 'views of this set');
+    bs.forEach(function (old) {
+      var key = old.dataset.pkstab, panel = wrap.querySelector('[data-pkspanel="' + key + '"]');
+      if (!panel) return;
+      var heading = panel.querySelector('.pks-section-heading');
+      if (!heading) {
+        heading = document.createElement('h2');
+        heading.className = 'pks-section-heading';
+        heading.id = 'pks-heading-' + key;
+        heading.tabIndex = -1;
+        heading.textContent = old.textContent;
+        panel.insertBefore(heading, panel.firstChild);
+      }
+      heading.hidden = !expanded;
+      panel.id = 'pks-panel-' + key;
+      panel.hidden = !expanded && key !== name;
+      panel.setAttribute('role', expanded ? 'region' : 'tabpanel');
+      panel.setAttribute('aria-labelledby', expanded ? heading.id : 'pks-tab-' + key);
+      var link = document.createElement(expanded ? 'a' : 'button');
+      link.dataset.pkstab = key;
+      link.id = 'pks-tab-' + key;
+      link.textContent = old.textContent;
+      if (expanded) {
+        link.href = '#' + panel.id;
+        if (key === name) link.setAttribute('aria-current', 'location');
+      } else {
+        link.type = 'button';
+        link.setAttribute('role', 'tab');
+        link.setAttribute('aria-selected', String(key === name));
+        link.setAttribute('aria-controls', panel.id);
+      }
+      old.replaceWith(link);
+    });
+    var toggle = el('pks-view-toggle');
+    if (toggle) {
+      toggle.textContent = expanded ? 'Use tabs' : 'Show all sections';
+      toggle.setAttribute('aria-expanded', String(expanded));
+    }
+    try { sessionStorage.setItem('pks-tab', name); sessionStorage.setItem('pks-view', expanded ? 'expanded' : 'tabs'); } catch (e) {}
+    if (jump && expanded) {
+      var target = wrap.querySelector('[data-pkspanel="' + name + '"] .pks-section-heading');
+      target.focus({preventScroll: true});
+      target.scrollIntoView({block: 'start'});
+    }
   }
   hook.doneEach(function () {
     if (!document.getElementById('pk-sites')) return;      // every other page stops here
     var saved = null;
-    try { saved = sessionStorage.getItem('pks-tab'); } catch (e) {}
-    if (saved) tab(saved);
+    try { saved = sessionStorage.getItem('pks-tab'); expanded = sessionStorage.getItem('pks-view') === 'expanded'; } catch (e) {}
+    tab(saved || currentTab);
     boot();
     if (wired) return;
     wired = true;
@@ -152,8 +197,21 @@
       if (first) { add(first.dataset.add); t.value = ''; el('pks-results').innerHTML = ''; }
     });
     document.addEventListener('click', function (ev) {
-      var tb = ev.target && ev.target.closest && ev.target.closest('button[data-pkstab]');
-      if (tb) { tab(tb.dataset.pkstab); return; }
+      var toggle = ev.target && ev.target.closest && ev.target.closest('#pks-view-toggle');
+      if (toggle) {
+        expanded = !expanded;
+        tab(currentTab);
+        if (!expanded) el('pks-views').scrollIntoView({block: 'start'});
+        return;
+      }
+      var tb = ev.target && ev.target.closest && ev.target.closest('[data-pkstab]');
+      if (tb) {
+        ev.preventDefault();
+        var name = tb.dataset.pkstab;
+        tab(name, true);
+        if (!expanded) el('pks-views').querySelector('[data-pkstab="' + name + '"]').focus({preventScroll: true});
+        return;
+      }
       var t = ev.target; if (!t || !DB) return;
       var b = t.closest && t.closest('button[data-add]');
       if (b) { add(b.dataset.add); var p = el('pks-pick'); if (p) p.value = ''; el('pks-results').innerHTML = ''; return; }

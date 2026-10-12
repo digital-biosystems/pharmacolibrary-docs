@@ -33,8 +33,11 @@ DrugBank's curated actors + a tissue table), downloaded once; nothing is sent an
       <button class="pkq-btn" id="pks-share">copy link to this set</button>
       <span class="pkq-meta" id="pks-meta"></span>
     </p>
-    <div class="pks-evkey"><span><i class="e3"></i>DrugBank actor</span><span><i class="e2"></i>paper PGx gene</span><span><i class="e1"></i>ADME prose</span><span><i class="e0"></i>none</span><span><i class="aff"></i>affected by co-administration</span><span><i class="dot">⊣</i>dot = the perpetrator's colour, ⊣ inhibits · ↑ induces</span><span><span class="shade"><b></b><b></b><b></b><b></b></span>heat-map shade: 0 · 1 · 2 · 3+ interactions at the site (other drugs + patient pharmacogenes)</span></div>
-    <div class="pk-tabs pks-tabs">
+    <div class="pks-evkey"><span><i class="e3"></i>DrugBank actor</span><span><i class="e2"></i>PGx paper</span><span><i class="e1"></i>DrugBank ADME</span><span><i class="e0"></i>none</span><span><i class="dot">⊣</i>dot = the perpetrator's colour, ⊣ inhibits · ↑ induces</span><span><span class="shade"><b></b><b></b><b></b><b></b></span>heat-map shade: 0 · 1 · 2 · 3+ interactions at the site (other drugs + patient pharmacogenes)</span></div>
+    <div class="pks-view-controls">
+      <button type="button" class="pkq-btn" id="pks-view-toggle" aria-expanded="false" aria-controls="pks-views">Show all sections</button>
+    </div>
+    <div class="pk-tabs pks-tabs" id="pks-views">
     <div class="pk-tabbar" role="tablist" aria-label="views of this set">
       <button type="button" role="tab" data-pkstab="heatmap" aria-selected="true">Site heat-map</button>
       <button type="button" role="tab" data-pkstab="ddi" aria-selected="false">Who affects whom</button>

@@ -21,6 +21,8 @@ on-demand resources.
 content. Edit `README-template.md` for the introduction. The generator preserves text
 outside its marked regions. Scientific downloads and database exports remain pipeline
 outputs; correct their source records rather than editing generated numbers here.
+The `{{built_at}}` placeholder in `README-template.md` is replaced with the current UTC
+date and time whenever the generator refreshes the homepage introduction.
 
 ## Preview and checks
 
@@ -36,12 +38,16 @@ installation (`npm install --prefix /tmp/opencode/site-check playwright` followe
 
 ```bash
 NODE_PATH=/tmp/opencode/site-check/node_modules node tests/browser-smoke.cjs
+NODE_PATH=/tmp/opencode/site-check/node_modules node tests/sites-style.cjs
+NODE_PATH=/tmp/opencode/site-check/node_modules node tests/sites-view.cjs
 ```
 
 It checks lazy loading, search, tabs, record navigation, two independent simulator
 instances, query answers, sites controls, route changes and mobile tabs. Set `SITE_URL`
 to test another HTTP origin. The optional `BASELINE_JSON` input compares simulator
 reference rows with a previously captured shadow-root HTML snapshot.
+The focused Sites checks cover evidence styling and the tabbed/expanded layouts,
+including jump navigation, control preservation and session preferences on desktop and mobile.
 
 ## Component upgrades
 

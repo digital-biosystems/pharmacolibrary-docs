@@ -1,14 +1,22 @@
 /* ── sites page ────────────────────────────────────────────────────────────
    Only the /sites route uses these (pk-sites.js + the ADME database, fetched by the
-   plugin below and never on any other page). Evidence tiers are three light hues —
-   cyan (ADME prose), azure (paper PGx gene), violet (DrugBank actor) — each lighter and
-   cooler than every drug colour, so a tier reads apart from its neighbour (the old single
-   blue ramp did not) and from the drug dots drawn on it; the drug colours are the fixed
-   categorical order pk-sites.js carries. */
-:root { --pks-ev0: #f1f0eb; --pks-ev1: #9be3e6; --pks-ev2: #8cc4f7; --pks-ev3: #b9a3f0;
+   plugin below and never on any other page). Evidence tiers use distinct, darker hues —
+   cyan (DrugBank ADME), azure (PGx paper), violet (DrugBank actor). Interaction dots
+   retain the fixed categorical drug colours from pk-sites.js. */
+:root { --pks-ev0: #f1f0eb; --pks-ev1: #55bec4; --pks-ev2: #559de0; --pks-ev3: #9878d9;
   --pks-kid1: #f0a3a3; --pks-kid2: #d94a4a; --pks-kid3: #a3201f;   /* the kidney's and the blood's own ramp on the body */
   --pks-warn: #b4530f; --pks-organ: #e6e4dd; --pks-organ-line: #b9b5aa; --pks-body: #f3f2ed; }
 .pks-results { display: flex; flex-wrap: wrap; gap: 6px; margin: 4px 0 8px; }
+.pks-view-controls { display: flex; justify-content: flex-end; margin: 14px 0 0; }
+.markdown-section .pks-section-heading[hidden] { display: none; }
+.markdown-section .pks-tabs.pks-expanded .pk-tabbar { border-bottom: 0; padding: 0; gap: 6px 14px; }
+.markdown-section .pks-expanded .pk-tabbar a { font-size: 14px; text-decoration: none; }
+.markdown-section .pks-expanded .pk-tabbar a:hover { text-decoration: underline; }
+.markdown-section .pks-expanded .pk-tabbar a[aria-current] { font-weight: 600; }
+.markdown-section .pks-tabs.pks-expanded .pk-tabpanel {
+  border: 1px solid #cbd5e1; border-radius: 8px; margin-top: 18px; scroll-margin-top: 20px; }
+.markdown-section .pks-expanded .pks-section-heading {
+  font-size: 20px; margin: 0 0 14px; scroll-margin-top: 20px; }
 .pks-results button { font: inherit; font-size: 13px; padding: 4px 10px; cursor: pointer;
   border: 1px solid #cbd5e1; border-radius: 999px; background: #fff; color: #334155; }
 .pks-results button:hover { border-color: var(--theme-color, #0074d9); color: var(--theme-color, #0074d9); }
@@ -41,7 +49,6 @@ table.pks-pgx td i { display: inline-block; width: 10px; height: 10px; border-ra
   border: 1px solid #cbd5e1; vertical-align: -2px; margin-right: 4px; }
 .pks-evkey i.e0 { background: var(--pks-ev0); } .pks-evkey i.e1 { background: var(--pks-ev1); }
 .pks-evkey i.e2 { background: var(--pks-ev2); } .pks-evkey i.e3 { background: var(--pks-ev3); }
-.pks-evkey i.aff { box-shadow: inset 0 0 0 2px var(--pks-warn); }
 .pks-evkey i.dot { border-radius: 50%; width: 11px; height: 11px; background: #94a3b8; border: 0;
   color: #000; font: 700 8px/11px system-ui, sans-serif; font-style: normal; text-align: center; }
 .pks-scroll { overflow-x: auto; }
@@ -91,7 +98,8 @@ table.pks-pgx td i { display: inline-block; width: 10px; height: 10px; border-ra
 .pks-evkey .shade b:nth-child(1) { background: color-mix(in srgb, var(--pks-ev3) 38%, #fff); }
 .pks-evkey .shade b:nth-child(3) { background: color-mix(in srgb, var(--pks-ev3) 84%, #1e293b); }
 .pks-evkey .shade b:nth-child(4) { background: color-mix(in srgb, var(--pks-ev3) 68%, #1e293b); }
-.pks-hm td.aff { box-shadow: inset 0 0 0 2px var(--pks-warn); position: relative; }
+/* Co-administration is shown by perpetrator dots, not a second cell outline. */
+.pks-hm td.aff { position: relative; }
 /* perpetrator dots in an affected cell: filled = inhibits, hollow = induces, colour = the drug */
 /* a centred block three dots wide: the first row sits at the bottom of the square, a 4th
    and further dots start a row above it (wrap-reverse), filling toward the middle */

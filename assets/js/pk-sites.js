@@ -728,7 +728,7 @@
   // to the DOI; a DrugBank actor names DrugBank; prose quotes DrugBank's ADME text.
   function evidenceCell(r) {
     if (r.evidence === 'paper_pgx') {
-      var h = 'paper PGx';
+      var h = 'PGx paper';
       if (r.source) h += ' · ' + (r.page ? '<a href="#/' + esc(r.page.replace(/\.md$/, '')) + '" title="the record on this site">' + esc(r.source) + '</a>' : esc(r.source));
       if (r.doi) h += ' <a class="pks-doi" href="https://doi.org/' + esc(r.doi) + '" target="_blank" rel="noopener" title="' + esc(r.doi) + '">doi</a>';
       return h;
@@ -739,7 +739,7 @@
       return r.url ? '<a href="' + esc(r.url) + '" target="_blank" rel="noopener">' + txt + '</a>' : txt;
     }
     if (r.evidence === 'drugbank_actor') return 'DrugBank actor';
-    if (r.evidence === 'drugbank_text') return 'DrugBank ADME prose';
+    if (r.evidence === 'drugbank_text') return 'DrugBank ADME';
     return esc(r.evidence);
   }
   // Per drug, the paper evidence leads: paper PGx, then ClinPGx (clinical annotation, label,

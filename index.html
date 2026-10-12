@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="assets/w3.css">
   <link rel="stylesheet" href="assets/buble.css">
   <link rel="stylesheet" href="assets/sidebar-collapse.min.css">
+  <link rel="stylesheet" href="assets/css/ledger.css">
   <style>
     /* Sidebar legibility: in the generated ATC tree a drug WITH a rendered page is a
        link and one without is plain list text. The buble theme gives .sidebar ul li a
@@ -164,12 +165,10 @@
     }
     /* ── sites page ────────────────────────────────────────────────────────────
        Only the /sites route uses these (pk-sites.js + the ADME database, fetched by the
-       plugin below and never on any other page). Evidence tiers are three light hues —
-       cyan (ADME prose), azure (paper PGx gene), violet (DrugBank actor) — each lighter and
-       cooler than every drug colour, so a tier reads apart from its neighbour (the old single
-       blue ramp did not) and from the drug dots drawn on it; the drug colours are the fixed
-       categorical order pk-sites.js carries. */
-    :root { --pks-ev0: #f1f0eb; --pks-ev1: #9be3e6; --pks-ev2: #8cc4f7; --pks-ev3: #b9a3f0;
+       plugin below and never on any other page). Evidence tiers use distinct, darker hues —
+       cyan (DrugBank ADME), azure (PGx paper), violet (DrugBank actor). Interaction dots
+       retain the fixed categorical drug colours from pk-sites.js. */
+    :root { --pks-ev0: #f1f0eb; --pks-ev1: #55bec4; --pks-ev2: #559de0; --pks-ev3: #9878d9;
       --pks-kid1: #f0a3a3; --pks-kid2: #d94a4a; --pks-kid3: #a3201f;   /* the kidney's and the blood's own ramp on the body */
       --pks-warn: #b4530f; --pks-organ: #e6e4dd; --pks-organ-line: #b9b5aa; --pks-body: #f3f2ed; }
     .pks-results { display: flex; flex-wrap: wrap; gap: 6px; margin: 4px 0 8px; }
@@ -205,7 +204,6 @@
       border: 1px solid #cbd5e1; vertical-align: -2px; margin-right: 4px; }
     .pks-evkey i.e0 { background: var(--pks-ev0); } .pks-evkey i.e1 { background: var(--pks-ev1); }
     .pks-evkey i.e2 { background: var(--pks-ev2); } .pks-evkey i.e3 { background: var(--pks-ev3); }
-    .pks-evkey i.aff { box-shadow: inset 0 0 0 2px var(--pks-warn); }
     .pks-evkey i.dot { border-radius: 50%; width: 11px; height: 11px; background: #94a3b8; border: 0;
       color: #000; font: 700 8px/11px system-ui, sans-serif; font-style: normal; text-align: center; }
     .pks-scroll { overflow-x: auto; }
@@ -255,7 +253,8 @@
     .pks-evkey .shade b:nth-child(1) { background: color-mix(in srgb, var(--pks-ev3) 38%, #fff); }
     .pks-evkey .shade b:nth-child(3) { background: color-mix(in srgb, var(--pks-ev3) 84%, #1e293b); }
     .pks-evkey .shade b:nth-child(4) { background: color-mix(in srgb, var(--pks-ev3) 68%, #1e293b); }
-    .pks-hm td.aff { box-shadow: inset 0 0 0 2px var(--pks-warn); position: relative; }
+    /* Co-administration is shown by perpetrator dots, not a second cell outline. */
+    .pks-hm td.aff { position: relative; }
     /* perpetrator dots in an affected cell: filled = inhibits, hollow = induces, colour = the drug */
     /* a centred block three dots wide: the first row sits at the bottom of the square, a 4th
        and further dots start a row above it (wrap-reverse), filling toward the middle */
@@ -404,6 +403,16 @@
       border-bottom-color: var(--pks-page, #fff); }
     .markdown-section .pks-tabs .pk-tabpanel {
       border: 1px solid #cbd5e1; border-top: 0; border-radius: 0 0 8px 8px; padding: 14px 16px; }
+    .pks-view-controls { display: flex; justify-content: flex-end; margin: 14px 0 0; }
+    .markdown-section .pks-section-heading[hidden] { display: none; }
+    .markdown-section .pks-tabs.pks-expanded .pk-tabbar { border-bottom: 0; padding: 0; gap: 6px 14px; }
+    .markdown-section .pks-expanded .pk-tabbar a { font-size: 14px; text-decoration: none; }
+    .markdown-section .pks-expanded .pk-tabbar a:hover { text-decoration: underline; }
+    .markdown-section .pks-expanded .pk-tabbar a[aria-current] { font-weight: 600; }
+    .markdown-section .pks-tabs.pks-expanded .pk-tabpanel {
+      border: 1px solid #cbd5e1; border-radius: 8px; margin-top: 18px; scroll-margin-top: 20px; }
+    .markdown-section .pks-expanded .pks-section-heading {
+      font-size: 20px; margin: 0 0 14px; scroll-margin-top: 20px; }
     .markdown-section .pks-help table { font-size: 13px; }
     .markdown-section .pks-help h3 { margin-top: 18px; }
     /* first heading in a panel: the tab bar already provides the separation. The record
@@ -1288,22 +1297,67 @@
           draw();
         }).catch(function (e) { status(String(e.message || e), true); });
       }
-      // The page's six views are tabs (sites.md marks them up): one panel shown at a time, the
-      // reader's choice kept for this browser session. Panels are rendered whether shown or not —
-      // nothing in pk-sites.js measures the layout while drawing — so switching costs nothing.
-      function tab(name) {
-        var bs = document.querySelectorAll('.markdown-section [data-pkstab]');
+      // Both layouts reuse the same panels: switching never redraws or resets patient controls.
+      var expanded = false, currentTab = 'heatmap';
+      function tab(name, jump) {
+        var wrap = el('pks-views'); if (!wrap) return;
+        var bs = wrap.querySelectorAll('[data-pkstab]');
         if (!bs.length) return;
         if (!Array.prototype.some.call(bs, function (b) { return b.dataset.pkstab === name; })) name = bs[0].dataset.pkstab;
-        bs.forEach(function (b) { b.setAttribute('aria-selected', String(b.dataset.pkstab === name)); });
-        document.querySelectorAll('.markdown-section [data-pkspanel]').forEach(function (p) { p.hidden = p.dataset.pkspanel !== name; });
-        try { sessionStorage.setItem('pks-tab', name); } catch (e) {}
+        currentTab = name;
+        wrap.classList.toggle('pks-expanded', expanded);
+        var bar = wrap.querySelector('.pk-tabbar');
+        bar.setAttribute('role', expanded ? 'navigation' : 'tablist');
+        bar.setAttribute('aria-label', expanded ? 'Jump to a section' : 'views of this set');
+        bs.forEach(function (old) {
+          var key = old.dataset.pkstab, panel = wrap.querySelector('[data-pkspanel="' + key + '"]');
+          if (!panel) return;
+          var heading = panel.querySelector('.pks-section-heading');
+          if (!heading) {
+            heading = document.createElement('h2');
+            heading.className = 'pks-section-heading';
+            heading.id = 'pks-heading-' + key;
+            heading.tabIndex = -1;
+            heading.textContent = old.textContent;
+            panel.insertBefore(heading, panel.firstChild);
+          }
+          heading.hidden = !expanded;
+          panel.id = 'pks-panel-' + key;
+          panel.hidden = !expanded && key !== name;
+          panel.setAttribute('role', expanded ? 'region' : 'tabpanel');
+          panel.setAttribute('aria-labelledby', expanded ? heading.id : 'pks-tab-' + key);
+          var link = document.createElement(expanded ? 'a' : 'button');
+          link.dataset.pkstab = key;
+          link.id = 'pks-tab-' + key;
+          link.textContent = old.textContent;
+          if (expanded) {
+            link.href = '#' + panel.id;
+            if (key === name) link.setAttribute('aria-current', 'location');
+          } else {
+            link.type = 'button';
+            link.setAttribute('role', 'tab');
+            link.setAttribute('aria-selected', String(key === name));
+            link.setAttribute('aria-controls', panel.id);
+          }
+          old.replaceWith(link);
+        });
+        var toggle = el('pks-view-toggle');
+        if (toggle) {
+          toggle.textContent = expanded ? 'Use tabs' : 'Show all sections';
+          toggle.setAttribute('aria-expanded', String(expanded));
+        }
+        try { sessionStorage.setItem('pks-tab', name); sessionStorage.setItem('pks-view', expanded ? 'expanded' : 'tabs'); } catch (e) {}
+        if (jump && expanded) {
+          var target = wrap.querySelector('[data-pkspanel="' + name + '"] .pks-section-heading');
+          target.focus({preventScroll: true});
+          target.scrollIntoView({block: 'start'});
+        }
       }
       hook.doneEach(function () {
         if (!document.getElementById('pk-sites')) return;      // every other page stops here
         var saved = null;
-        try { saved = sessionStorage.getItem('pks-tab'); } catch (e) {}
-        if (saved) tab(saved);
+        try { saved = sessionStorage.getItem('pks-tab'); expanded = sessionStorage.getItem('pks-view') === 'expanded'; } catch (e) {}
+        tab(saved || currentTab);
         boot();
         if (wired) return;
         wired = true;
@@ -1321,8 +1375,21 @@
           if (first) { add(first.dataset.add); t.value = ''; el('pks-results').innerHTML = ''; }
         });
         document.addEventListener('click', function (ev) {
-          var tb = ev.target && ev.target.closest && ev.target.closest('button[data-pkstab]');
-          if (tb) { tab(tb.dataset.pkstab); return; }
+          var toggle = ev.target && ev.target.closest && ev.target.closest('#pks-view-toggle');
+          if (toggle) {
+            expanded = !expanded;
+            tab(currentTab);
+            if (!expanded) el('pks-views').scrollIntoView({block: 'start'});
+            return;
+          }
+          var tb = ev.target && ev.target.closest && ev.target.closest('[data-pkstab]');
+          if (tb) {
+            ev.preventDefault();
+            var name = tb.dataset.pkstab;
+            tab(name, true);
+            if (!expanded) el('pks-views').querySelector('[data-pkstab="' + name + '"]').focus({preventScroll: true});
+            return;
+          }
           var t = ev.target; if (!t || !DB) return;
           var b = t.closest && t.closest('button[data-add]');
           if (b) { add(b.dataset.add); var p = el('pks-pick'); if (p) p.value = ''; el('pks-results').innerHTML = ''; return; }

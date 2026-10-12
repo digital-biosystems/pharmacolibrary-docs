@@ -1,5 +1,5 @@
 # Pharmacolibrary
-v26.09 (built 06/10/2026)
+v26.09 (built {{built_at}})
 
 **pharmacokinetic (PK), pharmacodynamic (PD) and pharmacogenomic (PGx)** knowledge base extracted from the published literature
 
